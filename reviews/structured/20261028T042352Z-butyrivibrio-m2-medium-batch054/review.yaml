@@ -1,0 +1,1427 @@
+schema_version: 1.0.0
+review_id: 20261028T042352Z-butyrivibrio-m2-medium-batch054
+kind: record
+repository: CultureBotAI/CultureMech
+title: Scientific review of butyrivibrio_m2_medium
+started_at: '2026-10-28T04:00:09.913366Z'
+finished_at: '2026-10-28T04:23:52.054353Z'
+reviewer:
+  identity: Codex independent record reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Fresh review of existing unchanged repository records; this
+    reviewer did not author or curate the selected target/owners. Historical reports
+    were independently reassessed against current exact sources.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: DSM 1310 identity and most provider-normalized masses are supported, but
+  the recipe omits two liquid additions and collapses the sodium-resazurin stock and
+  salt identity. Current preparation already preserves substantial source detail.
+  Both owners require scoped evidence; KOMODO copied provenance and atmosphere metadata
+  remain unresolved.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/BUTYRIVIBRIO_M2_MEDIUM.yaml
+    sha256: 8cc250ace8324c23ac06d332c29db818215d2dedad66afbb66c2fb01b6a34f7f
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_1310_M2_medium.yaml
+    sha256: e231991aedb07a06555574a3ad0375d648e3678ea64f6c296b949530cc199a90
+    role: context
+  - path: data/normalized_yaml/bacterial/butyrivibrio_m2_medium.yaml
+    sha256: b0f3afe5a89c091f253cf4dfa26ecb153ae8618ef626ace387a63e2e4693c812
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/butyrivibrio_m2_medium.yaml.md
+    sha256: f0efd747e9a0f87e467c14a858d69ce6a68c8323d0db9104aad7a3f75183bec5
+    role: context
+  - path: reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/KOMODO_1310_M2_medium.yaml.md
+    sha256: b321979e1ee76572af015747dda962c7b220598247a36fa601299c1225ce91ca
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/BUTYRIVIBRIO_M2_MEDIUM.md
+    sha256: 6802aebe6a0ad8975c8db32379e0afdc24fc4d5f013448d3ab38a6a9be915924
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_1310_M2_medium.md
+    sha256: 3af39f829e6c527cae321f2ee8d342222540d46566c1c4e3038d4ba496a2a69c
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/butyrivibrio_m2_medium.md
+    sha256: de4b3d98a7a945f629e737b54ef6535e49b98cc12d96b04006f0e2db2d7c138e
+    role: context
+  - path: reports/yaml_record_review/20260922T012142Z-BUTYRIVIBRIO_M2_MEDIUM.md
+    sha256: 292f222fe75d5c89c12d3560afe9cbbbffefe5ce155640273e906d464e41b7fc
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+scope:
+  description: Full selected target and maintained owners, every quantity and unchanged
+    claim; separately scoped source dependencies and current writers.
+  selection: Authoritative batch054 selection index 4 at base 9ea7ff33d354e37b791df96a880005153e446ce3.
+    Fresh review, not reconstruction of lost historical bundles.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:000772
+targets:
+- target_id: CultureMech:000772
+  path: data/merge_yaml/merged/BUTYRIVIBRIO_M2_MEDIUM.yaml
+  label: butyrivibrio_m2_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1310_M2_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/butyrivibrio_m2_medium.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:000772
+  command: just validate-schema data/merge_yaml/merged/BUTYRIVIBRIO_M2_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:000772
+  command: just validate-strict data/merge_yaml/merged/BUTYRIVIBRIO_M2_MEDIUM.yaml
+    --workers 1 --out REVIEW_WORK/batch054/record04/strict.tsv
+  exit_code: 0
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:000772
+  command: just validate-terms data/merge_yaml/merged/BUTYRIVIBRIO_M2_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Zero reference checks.
+  target_ids:
+  - CultureMech:000772
+  command: just validate-references data/merge_yaml/merged/BUTYRIVIBRIO_M2_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-references
+evidence:
+- evidence_id: local0
+  kind: record_content
+  reference: data/merge_yaml/merged/BUTYRIVIBRIO_M2_MEDIUM.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T04:13:04.853563Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: 8cc250ace8324c23ac06d332c29db818215d2dedad66afbb66c2fb01b6a34f7f
+- evidence_id: local1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_1310_M2_medium.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T04:13:04.853767Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: e231991aedb07a06555574a3ad0375d648e3678ea64f6c296b949530cc199a90
+- evidence_id: local2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/butyrivibrio_m2_medium.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T04:13:04.853795Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: b0f3afe5a89c091f253cf4dfa26ecb153ae8618ef626ace387a63e2e4693c812
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch054/record04/validate-schema-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T04:00:11.189054Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: 3b9c1618da0aa5d9fe13975b1314a7e12a47bd85bb07075770b4e3a7190322aa
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch054/record04/validate-strict-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T04:00:12.339014Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Strict
+    TSV is header-only.
+  snapshot_sha256: 73dcfc3b6b43ce36a9a38cc68b5a7106f92e8c2200c005b7fe83d4c8e5888580
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch054/record04/validate-terms-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T04:00:13.680941Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: 330c4ba06eb1d45be3906e0f09ce55edc7a30d5f783638e47ae4da4ced1b044b
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch054/record04/validate-references-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T04:00:14.521638Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Zero
+    references checked, not scientific source verification.
+  snapshot_sha256: ff99d5de7b0f6f07ef29c5eafee26f140c1f6f3125366a3c5aaad9c2622c568c
+- evidence_id: dsm1310
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1310.pdf
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T04:00:49.161109Z'
+  support: supports
+  summary: Complete current source read, including exact identity, all formulation
+    rows, units and preparation. It establishes a formulation, not strain-specific
+    growth.
+  snapshot_sha256: ece8baed5f11f52280f90d90dac9d1effccbe3983a2aefc46a0e17c9f59de9d9
+- evidence_id: api1310
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1310
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T04:00:49.161501Z'
+  support: supports
+  summary: Current DSMZ API 1310, complete primary solution and rumen-stock steps
+    read; volume=1000 and explicit g_l are provider normalization, distinct from primary
+    PDF batch amounts.
+  snapshot_sha256: 25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241
+- evidence_id: komodo1310
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1310
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T04:00:49.161583Z'
+  support: unknown
+  summary: 'Actual retrieval HTTP 403, error <HTTPError 403: ''Forbidden''>. This
+    response does not authenticate a recipe.'
+  snapshot_sha256: 1b997524917774027f7c90d1a254b30eb1867edba4978500a006409845a37a09
+- evidence_id: chebi131527
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T04:00:49.161648Z'
+  support: supports
+  summary: OLS current exact CHEBI:131527 = dipotassium hydrogen phosphate; definition
+    ['A potassium salt that is the dipotassium salt of phosphoric acid.']; formula
+    ['HO4P.2K']; mass ['174.174']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi17057
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17057
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T04:00:49.161701Z'
+  support: supports
+  summary: OLS current exact CHEBI:17057 = cellobiose; definition ['A glycosylglucose
+    consisting of two glucose units linked via a β(1→4) bond.']; formula ['C12H22O11'];
+    mass ['342.297']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 3548f79d3274a33683125152944998cffa00bd4fce774c8d872db9003222ed06
+- evidence_id: chebi17306
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17306
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T04:00:49.161770Z'
+  support: supports
+  summary: OLS current exact CHEBI:17306 = maltose; definition ['A glycosylglucose
+    consisting of two <small>D</small>-glucopyranose units connected by an α-(1→4)-linkage.'];
+    formula ['C12H22O11']; mass ['342.297']; obsolete=False. Literal label is distinct
+    from supplied-form equivalence.
+  snapshot_sha256: 3ce67048c1fb5137f13f7effdd8dcb3dee6224ee3886441aa45c873652c0ca66
+- evidence_id: chebi17634
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17634
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T04:00:49.702272Z'
+  support: supports
+  summary: OLS current exact CHEBI:17634 = D-glucose; definition ['A glucose with
+    <small>D</small>-configuration.']; formula ['C6H12O6']; mass ['180.156']; obsolete=False.
+    Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: d11b31a8e91c3fffe7744f612dab69cdb4e02f42068cd2eb1458acee4503a62f
+- evidence_id: chebi26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T04:00:50.518329Z'
+  support: supports
+  summary: OLS current exact CHEBI:26710 = sodium chloride; definition ['An inorganic
+    chloride salt having sodium(1+) as the counterion.']; formula ['Cl.Na']; mass
+    ['58.443']; obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi29377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T04:00:50.622553Z'
+  support: supports
+  summary: OLS current exact CHEBI:29377 = sodium carbonate; definition []; formula
+    ['CO3.2Na']; mass ['105.988']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 21ae6468f9d087fd7930a263fc44728e31a8babde3576135686278a13bc1d6e1
+- evidence_id: chebi31795
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T04:00:50.625567Z'
+  support: supports
+  summary: OLS current exact CHEBI:31795 = magnesium sulfate heptahydrate; definition
+    ['A hydrate that is the heptahydrate form of magnesium sulfate.']; formula ['7H2O.Mg.O4S'];
+    mass ['246.473']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi62946
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T04:00:50.646343Z'
+  support: supports
+  summary: OLS current exact CHEBI:62946 = ammonium sulfate; definition ['An inorganic
+    sulfate salt obtained by reaction of sulfuric acid with two equivalents of ammonia.
+    A high-melting (decomposes above 280°C) white solid which is very soluble in water
+    (70.6 g/100 g water at 0°C; 103.8 g/100 g water at 100°C), it is widely used as
+    a fertilizer for alkaline soils.']; formula ['2H4N.O4S']; mass ['132.141']; obsolete=False.
+    Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 10c25b481047a1fdfbc201104ecc06b15b32d5e72319beed5133e5d5693bede5
+- evidence_id: chebi63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T04:00:50.931602Z'
+  support: supports
+  summary: OLS current exact CHEBI:63036 = potassium dihydrogen phosphate; definition
+    ['A potassium salt in which dihydrogen phosphate(1−) is the counterion.']; formula
+    ['H2O4P.K']; mass ['136.084']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi75228
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75228
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T04:00:50.931748Z'
+  support: supports
+  summary: OLS current exact CHEBI:75228 = sodium lactate; definition ['An organic
+    sodium salt having lactate as the counterion.']; formula ['C3H5O3.Na']; mass ['112.06'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 725fbc04444c481cec25519a6f632470427a7020613af93e84e05b5f23d66ccf
+- evidence_id: chebi76209
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T04:00:51.991211Z'
+  support: supports
+  summary: OLS current exact CHEBI:76209 = sodium sulfide nonahydrate; definition
+    ['A hydrate with formula Na<small><sub>2</sub></small>S·9H<small><sub>2</sub></small>O.'];
+    formula ['9H2O.2Na.S']; mass ['240.182']; obsolete=False. Literal label is distinct
+    from supplied-form equivalence.
+  snapshot_sha256: f74d2c85574a4e28bdf71a78e4263f7e4c211036cd6d63b1f8282aca1d255e5c
+- evidence_id: chebi86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T04:00:52.159926Z'
+  support: supports
+  summary: OLS current exact CHEBI:86158 = calcium chloride dihydrate; definition
+    ['A hydrate that is the dihydrate form of calcium chloride.']; formula ['Ca.2Cl.2H2O'];
+    mass ['147.014']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi8806
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T04:00:52.234877Z'
+  support: supports
+  summary: OLS current exact CHEBI:8806 = Resazurin; definition []; formula ['C12H7NO4'];
+    mass ['229.191']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: chebi91248
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91248
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T04:00:52.466557Z'
+  support: supports
+  summary: OLS current exact CHEBI:91248 = L-cysteine hydrochloride hydrate; definition
+    ['A hydrate that is the monohydrate form of <small>L</small>-cysteine hydrochloride.'];
+    formula ['C3H7NO2S.H2O.HCl']; mass ['175.637']; obsolete=False. Literal label
+    is distinct from supplied-form equivalence.
+  snapshot_sha256: 7ef9e26cec1a5833d216a01df066c0b6a0bfba77bad16db354c690a7a814a683
+- evidence_id: grounding
+  kind: authority
+  reference: REVIEW_WORK/batch054/record04/grounding-inventory.json
+  locator: documents; ols_scientific_projection; mim_index
+  accessed_at: '2026-10-28T04:13:04.860264Z'
+  support: supports
+  summary: Complete selected-layer term slots and current packaged MIM CSV exact-identifier
+    joins with row locators and metadata commit; includes separately scoped dependency
+    context. No fuzzy mapping or historical-validity inference.
+  snapshot_sha256: ba7b3c8537c03a515c7ba261b42578711f6f274e2a503c496f60b16a07d055fb
+- evidence_id: history0
+  kind: prior_review
+  reference: reports/yaml_record_review/20260922T012142Z-BUTYRIVIBRIO_M2_MEDIUM.md
+  locator: entire report
+  accessed_at: '2026-10-28T04:13:04.860307Z'
+  support: supports
+  summary: Entire historical report read, including unresolved and unchanged rows.
+    October reports are derivative assertions with original cited hash/time; their
+    raw payload is not authenticated by the report alone. September narratives are
+    historical leads reassessed against current captures, not fresh review proof.
+  snapshot_sha256: 292f222fe75d5c89c12d3560afe9cbbbffefe5ce155640273e906d464e41b7fc
+- evidence_id: history1
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/butyrivibrio_m2_medium.yaml.md
+  locator: entire report
+  accessed_at: '2026-10-28T04:13:04.860350Z'
+  support: supports
+  summary: Entire historical report read, including unresolved and unchanged rows.
+    The current API1310 capture has SHA256 25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241,
+    exactly matching this report’s cited DSMZ API payload, so the cited API content
+    is authenticated by current bytes. This does not independently authenticate the
+    reported historical access time or the separate KOMODO catalog/mapping payload,
+    and does not establish an independent KOMODO formulation.
+  snapshot_sha256: f0efd747e9a0f87e467c14a858d69ce6a68c8323d0db9104aad7a3f75183bec5
+- evidence_id: history2
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/KOMODO_1310_M2_medium.yaml.md
+  locator: entire report
+  accessed_at: '2026-10-28T04:13:04.860383Z'
+  support: supports
+  summary: Entire historical report read, including unresolved and unchanged rows.
+    The current API1310 capture has SHA256 25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241,
+    exactly matching this report’s cited DSMZ API payload, so the cited API content
+    is authenticated by current bytes. This does not independently authenticate the
+    reported historical access time or the separate KOMODO catalog/mapping payload,
+    and does not establish an independent KOMODO formulation.
+  snapshot_sha256: b321979e1ee76572af015747dda962c7b220598247a36fa601299c1225ce91ca
+- evidence_id: history3
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_1310_M2_medium.md
+  locator: entire report
+  accessed_at: '2026-10-28T04:13:04.860408Z'
+  support: supports
+  summary: Entire historical report read, including unresolved and unchanged rows.
+    October reports are derivative assertions with original cited hash/time; their
+    raw payload is not authenticated by the report alone. September narratives are
+    historical leads reassessed against current captures, not fresh review proof.
+  snapshot_sha256: 3af39f829e6c527cae321f2ee8d342222540d46566c1c4e3038d4ba496a2a69c
+- evidence_id: history4
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/butyrivibrio_m2_medium.md
+  locator: entire report
+  accessed_at: '2026-10-28T04:13:04.860430Z'
+  support: supports
+  summary: Entire historical report read, including unresolved and unchanged rows.
+    October reports are derivative assertions with original cited hash/time; their
+    raw payload is not authenticated by the report alone. September narratives are
+    historical leads reassessed against current captures, not fresh review proof.
+  snapshot_sha256: de4b3d98a7a945f629e737b54ef6535e49b98cc12d96b04006f0e2db2d7c138e
+- evidence_id: history5
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/BUTYRIVIBRIO_M2_MEDIUM.md
+  locator: entire report
+  accessed_at: '2026-10-28T04:13:04.860451Z'
+  support: supports
+  summary: Entire historical report read, including unresolved and unchanged rows.
+    October reports are derivative assertions with original cited hash/time; their
+    raw payload is not authenticated by the report alone. September narratives are
+    historical leads reassessed against current captures, not fresh review proof.
+  snapshot_sha256: 6802aebe6a0ad8975c8db32379e0afdc24fc4d5f013448d3ab38a6a9be915924
+- evidence_id: writer31
+  kind: record_content
+  reference: src/culturemech/import/komodo_web_importer.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T04:13:04.860480Z'
+  support: context_only
+  summary: Current _convert_to_culturemech builds KOMODO identity, is_aerobic notes
+    and initially empty ingredients for later DSMZ enrichment; its strftime format
+    uses literal %f. Read code does not authenticate the past table values or source-copy
+    execution.
+  snapshot_sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+- evidence_id: writer32
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T04:13:04.860513Z'
+  support: context_only
+  summary: Current _parse_api_composition restricts direct ingredients to primary
+    recipe, skips stock additions and water, and prefers provider g_l; _parse_api_solutions
+    preserves referenced/percent stocks. This limits the old flattening attribution;
+    water needs preparation-volume representation and historical run provenance remains
+    separate.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer33
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T04:13:04.860533Z'
+  support: context_only
+  summary: Current formulation_content retains scientific fields, quantities, notes
+    and preparation; merge_formulation_evidence rejects incompatible scientific projections
+    and unions scoped evidence. Ingredient-set similarity does not prove scientific
+    equivalence.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer34
+  kind: record_content
+  reference: src/culturemech/merge/matcher.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T04:13:04.860554Z'
+  support: context_only
+  summary: Current group_formulations uses full formulation fingerprints for compatible
+    automatic merging; broader group_recipes discovers ingredient-set candidates only.
+    Neither grouping path substitutes for source verification.
+  snapshot_sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+- evidence_id: writer35
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T04:13:04.860576Z'
+  support: context_only
+  summary: Current merge_group returns a single owner with routing metadata, and calls
+    conservative merge_formulation_evidence for multiple owners. Current code supports
+    regenerating stale content after owner repair but does not authenticate old generated
+    outputs.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: REVIEW_WORK/batch054/record04/quantity-inventory.json
+  locator: decisions
+  accessed_at: '2026-10-28T04:13:04.871812Z'
+  support: supports
+  summary: Complete explicit decisions with exact current local values, per-layer
+    locators, source quotes/hash/time, stage and arithmetic limits.
+  snapshot_sha256: ecd69583389fa7f2776f3a8d6fdcfb32df5c4d4af254438e14dc3b473c3a7a70
+assessments:
+- assessment_id: a1
+  area: identity
+  topic: DSM 1310 identity and copied KOMODO lineage
+  outcome: concern
+  summary: DSM 1310 directly supports the target identity. Both normalized owners
+    are exact merged_from contributors. KOMODO history explicitly says ingredients
+    were copied from DSM 1310, so identical signatures are not independent confirmation.
+    Current KOMODO HTTP 403 leaves its own formulation/aerobic metadata unresolved;
+    do not convert its Aerobic:Yes note into an instruction.
+  target_ids:
+  - CultureMech:000772
+  evidence_ids:
+  - local0
+  - local1
+  - local2
+  - dsm1310
+  - api1310
+  - komodo1310
+- assessment_id: a2
+  area: quantity
+  topic: Every concentration and source-only amount/stage
+  outcome: concern
+  summary: All 48 selected target/owner concentration fields have explicit decisions;
+    source-only stock, liquid, control and denominator gaps are retained separately.
+  target_ids:
+  - CultureMech:000772
+  evidence_ids:
+  - quantity-inventory
+  details: '{"schema": "private explicit quantity decisions v1", "target_id": "CultureMech:000772",
+    "selected_concentration_field_count": 48, "selected_concentration_fields_covered":
+    48, "decisions": [{"decision_id": "q1", "subject": "Casitone", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/BUTYRIVIBRIO_M2_MEDIUM.yaml", "field_path":
+    "ingredients[0].concentration", "original": {"value": "10", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1310_M2_medium.yaml", "field_path":
+    "ingredients[0].concentration", "original": {"value": "10", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/butyrivibrio_m2_medium.yaml",
+    "field_path": "ingredients[0].concentration", "original": {"value": "10", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe batch; provider-normalized
+    g/L", "interpretation": "Primary PDF reports the listed mass per recipe batch;
+    current MediaDive explicitly supplies this g_l value with main volume 1000. Preserve
+    that provider normalization as such, without claiming the PDF specifies measured
+    final volume. No attached concentration evidence exists in the current selected
+    layers. The PDF/API specify BD Bacto; the selected rows omit the product qualifier.",
+    "sources": [{"locator": "page1 table row 1", "source_key": "dsm1310", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1310.pdf", "source_raw_sha256":
+    "ece8baed5f11f52280f90d90dac9d1effccbe3983a2aefc46a0e17c9f59de9d9", "source_text_sha256":
+    "54a45803c24a0ee50bc30c1d9b428c320ec7a17f4f8e19105a5e49d01ef4ce95", "accessed_at":
+    "2026-10-28T04:00:49.161109Z", "exact_source_quote": "Casitone (BD Bacto)                                    10.00        g",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[0]",
+    "source_key": "api1310", "reference": "https://mediadive.dsmz.de/rest/medium/1310",
+    "source_raw_sha256": "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241",
+    "source_text_sha256": "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241",
+    "accessed_at": "2026-10-28T04:00:49.161501Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Casitone\",\n                        \"compound_id\":
+    84,\n                        \"attribute\": \"BD Bacto\",\n                        \"amount\":
+    10,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    10,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q2", "subject": "Yeast extract", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/BUTYRIVIBRIO_M2_MEDIUM.yaml", "field_path":
+    "ingredients[1].concentration", "original": {"value": "2.5", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1310_M2_medium.yaml", "field_path":
+    "ingredients[1].concentration", "original": {"value": "2.5", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/butyrivibrio_m2_medium.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "2.5", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe batch; provider-normalized
+    g/L", "interpretation": "Primary PDF reports the listed mass per recipe batch;
+    current MediaDive explicitly supplies this g_l value with main volume 1000. Preserve
+    that provider normalization as such, without claiming the PDF specifies measured
+    final volume. No attached concentration evidence exists in the current selected
+    layers. The PDF/API specify BD Bacto; the selected rows omit the product qualifier.",
+    "sources": [{"locator": "page1 table row 2", "source_key": "dsm1310", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1310.pdf", "source_raw_sha256":
+    "ece8baed5f11f52280f90d90dac9d1effccbe3983a2aefc46a0e17c9f59de9d9", "source_text_sha256":
+    "54a45803c24a0ee50bc30c1d9b428c320ec7a17f4f8e19105a5e49d01ef4ce95", "accessed_at":
+    "2026-10-28T04:00:49.161109Z", "exact_source_quote": "Yeast extract (BD Bacto)                                2.50        g",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[1]",
+    "source_key": "api1310", "reference": "https://mediadive.dsmz.de/rest/medium/1310",
+    "source_raw_sha256": "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241",
+    "source_text_sha256": "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241",
+    "accessed_at": "2026-10-28T04:00:49.161501Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\":
+    16,\n                        \"attribute\": \"BD Bacto\",\n                        \"amount\":
+    2.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    2.5,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q3", "subject": "D-Glucose", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/BUTYRIVIBRIO_M2_MEDIUM.yaml", "field_path":
+    "ingredients[2].concentration", "original": {"value": "2", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1310_M2_medium.yaml", "field_path":
+    "ingredients[2].concentration", "original": {"value": "2", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/butyrivibrio_m2_medium.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "2", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe batch; provider-normalized
+    g/L", "interpretation": "Primary PDF reports the listed mass per recipe batch;
+    current MediaDive explicitly supplies this g_l value with main volume 1000. Preserve
+    that provider normalization as such, without claiming the PDF specifies measured
+    final volume. No attached concentration evidence exists in the current selected
+    layers.", "sources": [{"locator": "page1 table row 3", "source_key": "dsm1310",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1310.pdf",
+    "source_raw_sha256": "ece8baed5f11f52280f90d90dac9d1effccbe3983a2aefc46a0e17c9f59de9d9",
+    "source_text_sha256": "54a45803c24a0ee50bc30c1d9b428c320ec7a17f4f8e19105a5e49d01ef4ce95",
+    "accessed_at": "2026-10-28T04:00:49.161109Z", "exact_source_quote": "D-Glucose                                               2.00        g",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[2]",
+    "source_key": "api1310", "reference": "https://mediadive.dsmz.de/rest/medium/1310",
+    "source_raw_sha256": "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241",
+    "source_text_sha256": "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241",
+    "accessed_at": "2026-10-28T04:00:49.161501Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"D-Glucose\",\n                        \"compound_id\":
+    211,\n                        \"amount\": 2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2,\n                        \"mmol_l\":
+    11.1012,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q4", "subject": "Cellobiose", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/BUTYRIVIBRIO_M2_MEDIUM.yaml", "field_path":
+    "ingredients[3].concentration", "original": {"value": "2", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1310_M2_medium.yaml", "field_path":
+    "ingredients[3].concentration", "original": {"value": "2", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/butyrivibrio_m2_medium.yaml",
+    "field_path": "ingredients[3].concentration", "original": {"value": "2", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe batch; provider-normalized
+    g/L", "interpretation": "Primary PDF reports the listed mass per recipe batch;
+    current MediaDive explicitly supplies this g_l value with main volume 1000. Preserve
+    that provider normalization as such, without claiming the PDF specifies measured
+    final volume. No attached concentration evidence exists in the current selected
+    layers.", "sources": [{"locator": "page1 table row 4", "source_key": "dsm1310",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1310.pdf",
+    "source_raw_sha256": "ece8baed5f11f52280f90d90dac9d1effccbe3983a2aefc46a0e17c9f59de9d9",
+    "source_text_sha256": "54a45803c24a0ee50bc30c1d9b428c320ec7a17f4f8e19105a5e49d01ef4ce95",
+    "accessed_at": "2026-10-28T04:00:49.161109Z", "exact_source_quote": "Cellobiose                                              2.00        g",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[3]",
+    "source_key": "api1310", "reference": "https://mediadive.dsmz.de/rest/medium/1310",
+    "source_raw_sha256": "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241",
+    "source_text_sha256": "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241",
+    "accessed_at": "2026-10-28T04:00:49.161501Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Cellobiose\",\n                        \"compound_id\":
+    214,\n                        \"amount\": 2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2,\n                        \"mmol_l\":
+    5.84283,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q5", "subject": "Maltose", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/BUTYRIVIBRIO_M2_MEDIUM.yaml", "field_path":
+    "ingredients[4].concentration", "original": {"value": "2", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1310_M2_medium.yaml", "field_path":
+    "ingredients[4].concentration", "original": {"value": "2", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/butyrivibrio_m2_medium.yaml",
+    "field_path": "ingredients[4].concentration", "original": {"value": "2", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe batch; provider-normalized
+    g/L", "interpretation": "Primary PDF reports the listed mass per recipe batch;
+    current MediaDive explicitly supplies this g_l value with main volume 1000. Preserve
+    that provider normalization as such, without claiming the PDF specifies measured
+    final volume. No attached concentration evidence exists in the current selected
+    layers.", "sources": [{"locator": "page1 table row 5", "source_key": "dsm1310",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1310.pdf",
+    "source_raw_sha256": "ece8baed5f11f52280f90d90dac9d1effccbe3983a2aefc46a0e17c9f59de9d9",
+    "source_text_sha256": "54a45803c24a0ee50bc30c1d9b428c320ec7a17f4f8e19105a5e49d01ef4ce95",
+    "accessed_at": "2026-10-28T04:00:49.161109Z", "exact_source_quote": "Maltose                                                 2.00        g",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[4]",
+    "source_key": "api1310", "reference": "https://mediadive.dsmz.de/rest/medium/1310",
+    "source_raw_sha256": "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241",
+    "source_text_sha256": "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241",
+    "accessed_at": "2026-10-28T04:00:49.161501Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"Maltose\",\n                        \"compound_id\":
+    171,\n                        \"amount\": 2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2,\n                        \"mmol_l\":
+    5.84283,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q6", "subject": "Na-DL-lactate", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/BUTYRIVIBRIO_M2_MEDIUM.yaml", "field_path":
+    "ingredients[5].concentration", "original": {"value": "5", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1310_M2_medium.yaml", "field_path":
+    "ingredients[5].concentration", "original": {"value": "5", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/butyrivibrio_m2_medium.yaml",
+    "field_path": "ingredients[5].concentration", "original": {"value": "5", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe batch; provider-normalized
+    g/L", "interpretation": "Primary PDF reports the listed mass per recipe batch;
+    current MediaDive explicitly supplies this g_l value with main volume 1000. Preserve
+    that provider normalization as such, without claiming the PDF specifies measured
+    final volume. No attached concentration evidence exists in the current selected
+    layers.", "sources": [{"locator": "page1 table row 6", "source_key": "dsm1310",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1310.pdf",
+    "source_raw_sha256": "ece8baed5f11f52280f90d90dac9d1effccbe3983a2aefc46a0e17c9f59de9d9",
+    "source_text_sha256": "54a45803c24a0ee50bc30c1d9b428c320ec7a17f4f8e19105a5e49d01ef4ce95",
+    "accessed_at": "2026-10-28T04:00:49.161109Z", "exact_source_quote": "Na-DL-lactate                                           5.00        g",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[5]",
+    "source_key": "api1310", "reference": "https://mediadive.dsmz.de/rest/medium/1310",
+    "source_raw_sha256": "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241",
+    "source_text_sha256": "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241",
+    "accessed_at": "2026-10-28T04:00:49.161501Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"Na-DL-lactate\",\n                        \"compound_id\":
+    111,\n                        \"amount\": 5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\":
+    44.619,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q7", "subject": "K2HPO4", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/BUTYRIVIBRIO_M2_MEDIUM.yaml", "field_path":
+    "ingredients[6].concentration", "original": {"value": "0.05", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1310_M2_medium.yaml", "field_path":
+    "ingredients[6].concentration", "original": {"value": "0.05", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/butyrivibrio_m2_medium.yaml",
+    "field_path": "ingredients[6].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe batch; provider-normalized
+    g/L", "interpretation": "Primary PDF reports the listed mass per recipe batch;
+    current MediaDive explicitly supplies this g_l value with main volume 1000. Preserve
+    that provider normalization as such, without claiming the PDF specifies measured
+    final volume. No attached concentration evidence exists in the current selected
+    layers.", "sources": [{"locator": "page1 table row 8", "source_key": "dsm1310",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1310.pdf",
+    "source_raw_sha256": "ece8baed5f11f52280f90d90dac9d1effccbe3983a2aefc46a0e17c9f59de9d9",
+    "source_text_sha256": "54a45803c24a0ee50bc30c1d9b428c320ec7a17f4f8e19105a5e49d01ef4ce95",
+    "accessed_at": "2026-10-28T04:00:49.161109Z", "exact_source_quote": "K2HPO4                                                  0.05        g",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]",
+    "source_key": "api1310", "reference": "https://mediadive.dsmz.de/rest/medium/1310",
+    "source_raw_sha256": "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241",
+    "source_text_sha256": "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241",
+    "accessed_at": "2026-10-28T04:00:49.161501Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\":
+    10,\n                        \"amount\": 0.05,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.287066,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q8", "subject": "KH2PO4", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/BUTYRIVIBRIO_M2_MEDIUM.yaml", "field_path":
+    "ingredients[7].concentration", "original": {"value": "0.05", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1310_M2_medium.yaml", "field_path":
+    "ingredients[7].concentration", "original": {"value": "0.05", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/butyrivibrio_m2_medium.yaml",
+    "field_path": "ingredients[7].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe batch; provider-normalized
+    g/L", "interpretation": "Primary PDF reports the listed mass per recipe batch;
+    current MediaDive explicitly supplies this g_l value with main volume 1000. Preserve
+    that provider normalization as such, without claiming the PDF specifies measured
+    final volume. No attached concentration evidence exists in the current selected
+    layers.", "sources": [{"locator": "page1 table row 9", "source_key": "dsm1310",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1310.pdf",
+    "source_raw_sha256": "ece8baed5f11f52280f90d90dac9d1effccbe3983a2aefc46a0e17c9f59de9d9",
+    "source_text_sha256": "54a45803c24a0ee50bc30c1d9b428c320ec7a17f4f8e19105a5e49d01ef4ce95",
+    "accessed_at": "2026-10-28T04:00:49.161109Z", "exact_source_quote": "KH2PO4                                                  0.05        g",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[8]",
+    "source_key": "api1310", "reference": "https://mediadive.dsmz.de/rest/medium/1310",
+    "source_raw_sha256": "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241",
+    "source_text_sha256": "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241",
+    "accessed_at": "2026-10-28T04:00:49.161501Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 0.05,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.367417,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q9", "subject": "(NH4)2SO4", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/BUTYRIVIBRIO_M2_MEDIUM.yaml", "field_path":
+    "ingredients[8].concentration", "original": {"value": "0.1", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1310_M2_medium.yaml", "field_path":
+    "ingredients[8].concentration", "original": {"value": "0.1", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/butyrivibrio_m2_medium.yaml",
+    "field_path": "ingredients[8].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe batch; provider-normalized
+    g/L", "interpretation": "Primary PDF reports the listed mass per recipe batch;
+    current MediaDive explicitly supplies this g_l value with main volume 1000. Preserve
+    that provider normalization as such, without claiming the PDF specifies measured
+    final volume. No attached concentration evidence exists in the current selected
+    layers.", "sources": [{"locator": "page1 table row 10", "source_key": "dsm1310",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1310.pdf",
+    "source_raw_sha256": "ece8baed5f11f52280f90d90dac9d1effccbe3983a2aefc46a0e17c9f59de9d9",
+    "source_text_sha256": "54a45803c24a0ee50bc30c1d9b428c320ec7a17f4f8e19105a5e49d01ef4ce95",
+    "accessed_at": "2026-10-28T04:00:49.161109Z", "exact_source_quote": "(NH4)2SO4                                               0.10        g",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[9]",
+    "source_key": "api1310", "reference": "https://mediadive.dsmz.de/rest/medium/1310",
+    "source_raw_sha256": "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241",
+    "source_text_sha256": "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241",
+    "accessed_at": "2026-10-28T04:00:49.161501Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\":
+    27,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.756773,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q10", "subject": "NaCl", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/BUTYRIVIBRIO_M2_MEDIUM.yaml", "field_path":
+    "ingredients[9].concentration", "original": {"value": "0.1", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1310_M2_medium.yaml", "field_path":
+    "ingredients[9].concentration", "original": {"value": "0.1", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/butyrivibrio_m2_medium.yaml",
+    "field_path": "ingredients[9].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe batch; provider-normalized
+    g/L", "interpretation": "Primary PDF reports the listed mass per recipe batch;
+    current MediaDive explicitly supplies this g_l value with main volume 1000. Preserve
+    that provider normalization as such, without claiming the PDF specifies measured
+    final volume. No attached concentration evidence exists in the current selected
+    layers.", "sources": [{"locator": "page1 table row 11", "source_key": "dsm1310",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1310.pdf",
+    "source_raw_sha256": "ece8baed5f11f52280f90d90dac9d1effccbe3983a2aefc46a0e17c9f59de9d9",
+    "source_text_sha256": "54a45803c24a0ee50bc30c1d9b428c320ec7a17f4f8e19105a5e49d01ef4ce95",
+    "accessed_at": "2026-10-28T04:00:49.161109Z", "exact_source_quote": "NaCl                                                    0.10        g",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[10]",
+    "source_key": "api1310", "reference": "https://mediadive.dsmz.de/rest/medium/1310",
+    "source_raw_sha256": "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241",
+    "source_text_sha256": "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241",
+    "accessed_at": "2026-10-28T04:00:49.161501Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\":
+    43,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    1.71116,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q11", "subject": "CaCl2 x 2 H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/BUTYRIVIBRIO_M2_MEDIUM.yaml", "field_path":
+    "ingredients[10].concentration", "original": {"value": "0.01", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1310_M2_medium.yaml", "field_path":
+    "ingredients[10].concentration", "original": {"value": "0.01", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/butyrivibrio_m2_medium.yaml",
+    "field_path": "ingredients[10].concentration", "original": {"value": "0.01", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe batch; provider-normalized
+    g/L", "interpretation": "Primary PDF reports the listed mass per recipe batch;
+    current MediaDive explicitly supplies this g_l value with main volume 1000. Preserve
+    that provider normalization as such, without claiming the PDF specifies measured
+    final volume. No attached concentration evidence exists in the current selected
+    layers.", "sources": [{"locator": "page1 table row 12", "source_key": "dsm1310",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1310.pdf",
+    "source_raw_sha256": "ece8baed5f11f52280f90d90dac9d1effccbe3983a2aefc46a0e17c9f59de9d9",
+    "source_text_sha256": "54a45803c24a0ee50bc30c1d9b428c320ec7a17f4f8e19105a5e49d01ef4ce95",
+    "accessed_at": "2026-10-28T04:00:49.161109Z", "exact_source_quote": "CaCl2 x 2
+    H2O                                           0.01        g", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[11]", "source_key":
+    "api1310", "reference": "https://mediadive.dsmz.de/rest/medium/1310", "source_raw_sha256":
+    "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241", "source_text_sha256":
+    "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241", "accessed_at":
+    "2026-10-28T04:00:49.161501Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    12,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\":
+    7,\n                        \"amount\": 0.01,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\":
+    0.0680203,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q12", "subject": "MgSO4 x 7 H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/BUTYRIVIBRIO_M2_MEDIUM.yaml", "field_path":
+    "ingredients[11].concentration", "original": {"value": "0.01", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1310_M2_medium.yaml", "field_path":
+    "ingredients[11].concentration", "original": {"value": "0.01", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/butyrivibrio_m2_medium.yaml",
+    "field_path": "ingredients[11].concentration", "original": {"value": "0.01", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe batch; provider-normalized
+    g/L", "interpretation": "Primary PDF reports the listed mass per recipe batch;
+    current MediaDive explicitly supplies this g_l value with main volume 1000. Preserve
+    that provider normalization as such, without claiming the PDF specifies measured
+    final volume. No attached concentration evidence exists in the current selected
+    layers.", "sources": [{"locator": "page1 table row 13", "source_key": "dsm1310",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1310.pdf",
+    "source_raw_sha256": "ece8baed5f11f52280f90d90dac9d1effccbe3983a2aefc46a0e17c9f59de9d9",
+    "source_text_sha256": "54a45803c24a0ee50bc30c1d9b428c320ec7a17f4f8e19105a5e49d01ef4ce95",
+    "accessed_at": "2026-10-28T04:00:49.161109Z", "exact_source_quote": "MgSO4 x 7
+    H2O                                           0.01        g", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[12]", "source_key":
+    "api1310", "reference": "https://mediadive.dsmz.de/rest/medium/1310", "source_raw_sha256":
+    "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241", "source_text_sha256":
+    "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241", "accessed_at":
+    "2026-10-28T04:00:49.161501Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    13,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\":
+    8,\n                        \"amount\": 0.01,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\":
+    0.0405719,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q13", "subject": "Sodium resazurin", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/BUTYRIVIBRIO_M2_MEDIUM.yaml", "field_path":
+    "ingredients[12].concentration", "original": {"value": "0.0005", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1310_M2_medium.yaml", "field_path":
+    "ingredients[12].concentration", "original": {"value": "0.0005", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/butyrivibrio_m2_medium.yaml",
+    "field_path": "ingredients[12].concentration", "original": {"value": "0.0005",
+    "unit": "G_PER_L"}}], "decision": "correct", "stage": "sodium-resazurin stock
+    addition", "interpretation": "PDF explicitly adds 0.50 ml of 0.1% w/v sodium resazurin:
+    0.1 g/100 ml × 0.5 ml = 0.0005 g added. API g_l 0.0005 is provider normalization;
+    PDF alone does not establish final volume. Restore stock strength and dose, and
+    resolve sodium-salt form rather than treating neutral CHEBI:8806 as equivalent.",
+    "sources": [{"locator": "page1 table row 14", "source_key": "dsm1310", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1310.pdf", "source_raw_sha256":
+    "ece8baed5f11f52280f90d90dac9d1effccbe3983a2aefc46a0e17c9f59de9d9", "source_text_sha256":
+    "54a45803c24a0ee50bc30c1d9b428c320ec7a17f4f8e19105a5e49d01ef4ce95", "accessed_at":
+    "2026-10-28T04:00:49.161109Z", "exact_source_quote": "Sodium resazurin (0.1% w/v)                             0.50       ml",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[13]",
+    "source_key": "api1310", "reference": "https://mediadive.dsmz.de/rest/medium/1310",
+    "source_raw_sha256": "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241",
+    "source_text_sha256": "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241",
+    "accessed_at": "2026-10-28T04:00:49.161501Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    14,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\":
+    1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.0005,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q14", "subject": "Na2CO3", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/BUTYRIVIBRIO_M2_MEDIUM.yaml", "field_path":
+    "ingredients[13].concentration", "original": {"value": "4", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1310_M2_medium.yaml", "field_path":
+    "ingredients[13].concentration", "original": {"value": "4", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/butyrivibrio_m2_medium.yaml",
+    "field_path": "ingredients[13].concentration", "original": {"value": "4", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe batch; provider-normalized
+    g/L", "interpretation": "Primary PDF reports the listed mass per recipe batch;
+    current MediaDive explicitly supplies this g_l value with main volume 1000. Preserve
+    that provider normalization as such, without claiming the PDF specifies measured
+    final volume. No attached concentration evidence exists in the current selected
+    layers. This mass is delivered through a separately prepared sterile anoxic stock;
+    its stock concentration and working volume are not supplied. Do not invent them
+    or add the mass twice.", "sources": [{"locator": "page1 table row 15", "source_key":
+    "dsm1310", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1310.pdf",
+    "source_raw_sha256": "ece8baed5f11f52280f90d90dac9d1effccbe3983a2aefc46a0e17c9f59de9d9",
+    "source_text_sha256": "54a45803c24a0ee50bc30c1d9b428c320ec7a17f4f8e19105a5e49d01ef4ce95",
+    "accessed_at": "2026-10-28T04:00:49.161109Z", "exact_source_quote": "Na2CO3                                                  4.00        g",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[14]",
+    "source_key": "api1310", "reference": "https://mediadive.dsmz.de/rest/medium/1310",
+    "source_raw_sha256": "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241",
+    "source_text_sha256": "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241",
+    "accessed_at": "2026-10-28T04:00:49.161501Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    15,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\":
+    32,\n                        \"amount\": 4,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 4,\n                        \"mmol_l\":
+    37.7401,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q15", "subject": "L-Cysteine HCl x H2O",
+    "local_fields": [{"record_path": "data/merge_yaml/merged/BUTYRIVIBRIO_M2_MEDIUM.yaml",
+    "field_path": "ingredients[14].concentration", "original": {"value": "0.3", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_1310_M2_medium.yaml",
+    "field_path": "ingredients[14].concentration", "original": {"value": "0.3", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/butyrivibrio_m2_medium.yaml",
+    "field_path": "ingredients[14].concentration", "original": {"value": "0.3", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe batch; provider-normalized
+    g/L", "interpretation": "Primary PDF reports the listed mass per recipe batch;
+    current MediaDive explicitly supplies this g_l value with main volume 1000. Preserve
+    that provider normalization as such, without claiming the PDF specifies measured
+    final volume. No attached concentration evidence exists in the current selected
+    layers. This mass is delivered through a separately prepared sterile anoxic stock;
+    its stock concentration and working volume are not supplied. Do not invent them
+    or add the mass twice.", "sources": [{"locator": "page1 table row 16", "source_key":
+    "dsm1310", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1310.pdf",
+    "source_raw_sha256": "ece8baed5f11f52280f90d90dac9d1effccbe3983a2aefc46a0e17c9f59de9d9",
+    "source_text_sha256": "54a45803c24a0ee50bc30c1d9b428c320ec7a17f4f8e19105a5e49d01ef4ce95",
+    "accessed_at": "2026-10-28T04:00:49.161109Z", "exact_source_quote": "L-Cysteine
+    HCl x H2O                                    0.30        g", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[15]", "source_key":
+    "api1310", "reference": "https://mediadive.dsmz.de/rest/medium/1310", "source_raw_sha256":
+    "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241", "source_text_sha256":
+    "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241", "accessed_at":
+    "2026-10-28T04:00:49.161501Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    16,\n                        \"compound\": \"L-Cysteine HCl x H2O\",\n                        \"compound_id\":
+    770,\n                        \"amount\": 0.3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.3,\n                        \"mmol_l\":
+    1.70808,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q16", "subject": "Na2S x 9 H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/BUTYRIVIBRIO_M2_MEDIUM.yaml", "field_path":
+    "ingredients[15].concentration", "original": {"value": "0.3", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1310_M2_medium.yaml", "field_path":
+    "ingredients[15].concentration", "original": {"value": "0.3", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/butyrivibrio_m2_medium.yaml",
+    "field_path": "ingredients[15].concentration", "original": {"value": "0.3", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe batch; provider-normalized
+    g/L", "interpretation": "Primary PDF reports the listed mass per recipe batch;
+    current MediaDive explicitly supplies this g_l value with main volume 1000. Preserve
+    that provider normalization as such, without claiming the PDF specifies measured
+    final volume. No attached concentration evidence exists in the current selected
+    layers. This mass is delivered through a separately prepared sterile anoxic stock;
+    its stock concentration and working volume are not supplied. Do not invent them
+    or add the mass twice.", "sources": [{"locator": "page1 table row 17", "source_key":
+    "dsm1310", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1310.pdf",
+    "source_raw_sha256": "ece8baed5f11f52280f90d90dac9d1effccbe3983a2aefc46a0e17c9f59de9d9",
+    "source_text_sha256": "54a45803c24a0ee50bc30c1d9b428c320ec7a17f4f8e19105a5e49d01ef4ce95",
+    "accessed_at": "2026-10-28T04:00:49.161109Z", "exact_source_quote": "Na2S x 9
+    H2O                                            0.30        g", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[16]", "source_key":
+    "api1310", "reference": "https://mediadive.dsmz.de/rest/medium/1310", "source_raw_sha256":
+    "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241", "source_text_sha256":
+    "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241", "accessed_at":
+    "2026-10-28T04:00:49.161501Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    17,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\":
+    54,\n                        \"amount\": 0.3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.3,\n                        \"mmol_l\":
+    1.24905,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q17", "subject": "Clarified rumen fluid",
+    "local_fields": [], "decision": "add", "stage": "main recipe liquid addition",
+    "interpretation": "Missing in all selected ingredient/solution arrays. Source
+    specifies 200ml as a batch addition. Preserve volume and exact source basis; no
+    density conversion or measured final-volume assumption.", "sources": [{"locator":
+    "page1 main table row7", "source_key": "dsm1310", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1310.pdf",
+    "source_raw_sha256": "ece8baed5f11f52280f90d90dac9d1effccbe3983a2aefc46a0e17c9f59de9d9",
+    "source_text_sha256": "54a45803c24a0ee50bc30c1d9b428c320ec7a17f4f8e19105a5e49d01ef4ce95",
+    "accessed_at": "2026-10-28T04:00:49.161109Z", "exact_source_quote": "Clarified
+    rumen fluid                                 200.00       ml", "quote_representation":
+    "captured extracted text"}, {"locator": "raw JSON characters 2789:3117", "source_key":
+    "api1310", "reference": "https://mediadive.dsmz.de/rest/medium/1310", "source_raw_sha256":
+    "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241", "source_text_sha256":
+    "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241", "accessed_at":
+    "2026-10-28T04:00:49.161501Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    7,\n                        \"solution\": \"Clarified rumen fluid\",\n                        \"solution_id\":
+    2618,\n                        \"condition\": \"\",\n                        \"amount\":
+    200,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id":
+    "q18", "subject": "Distilled water", "local_fields": [], "decision": "add", "stage":
+    "main recipe liquid addition", "interpretation": "Missing in all selected ingredient/solution
+    arrays. Source specifies 800ml as a batch addition. Preserve volume and exact
+    source basis; no density conversion or measured final-volume assumption.", "sources":
+    [{"locator": "page1 main table row18", "source_key": "dsm1310", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1310.pdf",
+    "source_raw_sha256": "ece8baed5f11f52280f90d90dac9d1effccbe3983a2aefc46a0e17c9f59de9d9",
+    "source_text_sha256": "54a45803c24a0ee50bc30c1d9b428c320ec7a17f4f8e19105a5e49d01ef4ce95",
+    "accessed_at": "2026-10-28T04:00:49.161109Z", "exact_source_quote": "Distilled
+    water                                       800.00       ml", "quote_representation":
+    "captured extracted text"}, {"locator": "raw JSON characters 6914:7193", "source_key":
+    "api1310", "reference": "https://mediadive.dsmz.de/rest/medium/1310", "source_raw_sha256":
+    "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241", "source_text_sha256":
+    "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241", "accessed_at":
+    "2026-10-28T04:00:49.161501Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    18,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 800,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q19", "subject": "Main sol. 1310 preparation",
+    "local_fields": [{"record_path": "data/merge_yaml/merged/BUTYRIVIBRIO_M2_MEDIUM.yaml",
+    "field_path": "preparation_steps[0].description", "original": "Dissolve ingredients
+    (except carbonate, cysteine and sulfide), boil medium for 1 min, then cool to
+    room temperature under 100% CO2 gas atmosphere. Dispense medium under same gas
+    atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add carbonate
+    from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture.
+    Add cysteine and sulfide form sterile anoxic stock solutions prepared under 100%
+    N2 gas. Adjust pH of the complete medium to 6.5 - 6.8, if necessary."}, {"record_path":
+    "data/normalized_yaml/bacterial/butyrivibrio_m2_medium.yaml", "field_path": "preparation_steps[0].description",
+    "original": "Dissolve ingredients (except carbonate, cysteine and sulfide), boil
+    medium for 1 min, then cool to room temperature under 100% CO2 gas atmosphere.
+    Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum
+    vials and autoclave. Add carbonate from a sterile anoxic stock solution prepared
+    under 80% N2 and 20% CO2 gas mixture. Add cysteine and sulfide form sterile anoxic
+    stock solutions prepared under 100% N2 gas. Adjust pH of the complete medium to
+    6.5 - 6.8, if necessary."}], "decision": "evidence_only", "stage": "main preparation",
+    "interpretation": "DSM owner and generated target retain the main preparation:
+    boil 1 min, cool/dispense under 100% CO2, carbonate stock under 80% N2/20% CO2,
+    cysteine/sulfide stocks under100%N2, pH 6.5–6.8. KOMODO owner lacks these steps
+    and its Aerobic:Yes note is not an equivalent preparation instruction. No carbonate/cysteine/sulfide
+    stock strength or dose is invented.", "sources": [{"locator": "$.data.solutions[0].steps[0]",
+    "source_key": "api1310", "reference": "https://mediadive.dsmz.de/rest/medium/1310",
+    "source_raw_sha256": "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241",
+    "source_text_sha256": "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241",
+    "accessed_at": "2026-10-28T04:00:49.161501Z", "exact_source_quote": "{\n                        \"step\":
+    \"Dissolve ingredients (except carbonate, cysteine and sulfide), boil medium for
+    1 min, then cool to room temperature under 100% CO2 gas atmosphere. Dispense medium
+    under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    Add carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20%
+    CO2 gas mixture. Add cysteine and sulfide form sterile anoxic stock solutions
+    prepared under 100% N2 gas. Adjust pH of the complete medium to 6.5 - 6.8, if
+    necessary.\"\n                    }", "quote_representation": "raw JSON object"}]},
+    {"decision_id": "q20", "subject": "Clarified rumen fluid preparation", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/BUTYRIVIBRIO_M2_MEDIUM.yaml", "field_path":
+    "preparation_steps[1].description", "original": "Rumen fluid from cow or sheep
+    (obtained from fistulated animals or abattoir refuse) is filtered through muslin,
+    autoclaved at 121°C for 15 min and then centrifuged at 27,000 g for 20 min. The
+    supernatant is made anoxic by sparging with 100% N2 gas for 15 min, dispensed
+    under same gas atmosphere into anoxic serum vials to 30% of volume and then stored
+    frozen at -20°C."}, {"record_path": "data/normalized_yaml/bacterial/butyrivibrio_m2_medium.yaml",
+    "field_path": "preparation_steps[1].description", "original": "Rumen fluid from
+    cow or sheep (obtained from fistulated animals or abattoir refuse) is filtered
+    through muslin, autoclaved at 121°C for 15 min and then centrifuged at 27,000
+    g for 20 min. The supernatant is made anoxic by sparging with 100% N2 gas for
+    15 min, dispensed under same gas atmosphere into anoxic serum vials to 30% of
+    volume and then stored frozen at -20°C."}], "decision": "evidence_only", "stage":
+    "rumen-fluid preparation/storage", "interpretation": "DSM owner and target preserve
+    rumen-fluid treatment: 121°C for 15 min, 27000 × g for 20 min, 100% N2 sparging
+    for 15 min, fill 30% of vessel volume, storage at −20°C. These are stock preparation/storage
+    controls, not receiving-medium amounts or incubation conditions. KOMODO owner
+    lacks this process.", "sources": [{"locator": "$.data.solutions[1].steps[0]",
+    "source_key": "api1310", "reference": "https://mediadive.dsmz.de/rest/medium/1310",
+    "source_raw_sha256": "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241",
+    "source_text_sha256": "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241",
+    "accessed_at": "2026-10-28T04:00:49.161501Z", "exact_source_quote": "{\n                        \"step\":
+    \"Rumen fluid from cow or sheep (obtained from fistulated animals or abattoir
+    refuse) is filtered through muslin, autoclaved at 121\\u00b0C for 15 min and then
+    centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging
+    with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum
+    vials to 30% of volume and then stored frozen at -20\\u00b0C.\"\n                    }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q21", "subject":
+    "pH 6.5–6.8", "local_fields": [{"record_path": "data/merge_yaml/merged/BUTYRIVIBRIO_M2_MEDIUM.yaml",
+    "field_path": "ph_range", "original": {"min": 6.5, "max": 6.8}}, {"record_path":
+    "data/normalized_yaml/bacterial/KOMODO_1310_M2_medium.yaml", "field_path": "ph_range",
+    "original": {"min": 6.5, "max": 6.8}}, {"record_path": "data/normalized_yaml/bacterial/butyrivibrio_m2_medium.yaml",
+    "field_path": "ph_range", "original": {"min": 6.5, "max": 6.8}}], "decision":
+    "evidence_only", "stage": "complete medium adjustment", "interpretation": "Current
+    primary preparation and API agree with all selected ranges; source says adjust
+    if necessary. This is not a growth-performance measurement.", "sources": [{"locator":
+    "raw JSON characters 69:359", "source_key": "api1310", "reference": "https://mediadive.dsmz.de/rest/medium/1310",
+    "source_raw_sha256": "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241",
+    "source_text_sha256": "25c036eb22071305a5c10e09740d33a84d1ff5f22d5230d8c00c2ccf8582e241",
+    "accessed_at": "2026-10-28T04:00:49.161501Z", "exact_source_quote": "{\n            \"id\":
+    1310,\n            \"name\": \"BUTYRIVIBRIO M2 MEDIUM\",\n            \"complex_medium\":
+    \"yes\",\n            \"min_pH\": 6.5,\n            \"max_pH\": 6.8,\n            \"source\":
+    \"DSMZ\",\n            \"link\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1310.pdf\"\n        }",
+    "quote_representation": "raw JSON object"}]}], "local_field_census_reference":
+    "REVIEW_WORK/batch054/record04/grounding-inventory.json",
+    "source_only_gaps_are_explicit": true, "note": "Batch amounts, provider normalization,
+    stock composition, working dose and preparation controls are separate. No source
+    edits or automatic curation performed."}'
+- assessment_id: a3
+  area: grounding
+  topic: Primary, secondary and legacy linkage census
+  outcome: concern
+  summary: 'data/merge_yaml/merged/BUTYRIVIBRIO_M2_MEDIUM.yaml: primary 14/16, secondary
+    13/16; data/normalized_yaml/bacterial/KOMODO_1310_M2_medium.yaml: primary 14/16,
+    secondary 13/16; data/normalized_yaml/bacterial/butyrivibrio_m2_medium.yaml: primary
+    14/16, secondary 13/16. Counts are ingredient instances in each selected document,
+    not chemical accuracy. Every asserted CHEBI slot has an exact current OLS label
+    match and a current MIM identifier row; MAPPED and REJECTED alias rows remain
+    distinct. Zero numeric legacy MediaIngredientMech identifiers occur in the complete
+    selected documents; the history placeholder NNNNNN is not an identifier. Chemical-form
+    findings are assessed separately. Complex mixtures are not forced to pure-compound
+    IDs.'
+  target_ids:
+  - CultureMech:000772
+  evidence_ids:
+  - grounding
+- assessment_id: a4
+  area: scope
+  topic: Growth claims and classification
+  outcome: supported
+  summary: The selected source identity is a bacterial cultivation formulation; physical
+    state and undefined complex composition are coherent. No target-organism, strain-growth
+    or performance claim is asserted. Generic application text is not evidence of
+    demonstrated growth; no strain extrapolation or optimization is proposed.
+  target_ids:
+  - CultureMech:000772
+  evidence_ids:
+  - local0
+- assessment_id: a5
+  area: schema
+  topic: Native structural checks
+  outcome: supported
+  summary: All four canonical commands passed once; strict schema TSV contains only
+    its header and reference validation checked zero references on the generated target.
+    This does not certify quantities or chemical forms.
+  target_ids:
+  - CultureMech:000772
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: batch054-04-missing-liquids
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Rumen-fluid dose and water input are missing
+  description: All three selected layers omit the explicit 200 ml clarified-rumen-fluid
+    addition and 800 ml distilled-water input. Retaining rumen-fluid preparation prose
+    alone does not encode its receiving dose. Preserve batch-volume scope and manufacturer-qualified
+    undefined ingredients.
+  target_ids:
+  - CultureMech:000772
+  field_paths:
+  - ingredients
+  - solutions
+  - preparation_steps
+  evidence_ids:
+  - dsm1310
+  - api1310
+  - local0
+  - local1
+  - local2
+  rule_id: source-specific-formulation-fidelity
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1310_M2_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/butyrivibrio_m2_medium.yaml
+    role: maintained normalized contributor
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because two explicit source liquid
+    additions are absent from every selected layer, changing the represented formulation.
+- finding_id: f2
+  issue_key: batch054-04-resazurin-stage-form
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Sodium-resazurin stock is collapsed to neutral resazurin
+  description: The source is 0.50 ml of 0.1% w/v sodium resazurin, while ingredients[12]
+    stores only 0.0005 G_PER_L and CHEBI:8806. OLS8806 formula C12H7NO4 contains no
+    sodium. The API authenticates the numeric g_l as provider normalization, not salt-form
+    equivalence or primary measured final volume.
+  target_ids:
+  - CultureMech:000772
+  field_paths:
+  - ingredients[12].concentration
+  - ingredients[12].term
+  evidence_ids:
+  - dsm1310
+  - api1310
+  - chebi8806
+  rule_id: source-specific-formulation-fidelity
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1310_M2_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/butyrivibrio_m2_medium.yaml
+    role: maintained normalized contributor
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the asserted chemical form
+    and stock representation conflict with the source, although the provider supports
+    the numerical mass conversion.
+- finding_id: f3
+  issue_key: batch054-04-copied-provenance
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: KOMODO atmosphere and malformed import time remain unresolved
+  description: The KOMODO owner says Aerobic:Yes but the represented DSM recipe is
+    prepared anoxically; its copied ingredients do not independently establish source
+    equivalence. Its first timestamp 2026-01-27T01:15:02.fZ is malformed. Preserve
+    historical text as history, document unavailable source and genuine correction
+    time rather than inventing the old fractional second.
+  target_ids:
+  - CultureMech:000772
+  field_paths:
+  - data/normalized_yaml/bacterial/KOMODO_1310_M2_medium.yaml::notes
+  - data/normalized_yaml/bacterial/KOMODO_1310_M2_medium.yaml::curation_history[0].timestamp
+  - data/normalized_yaml/bacterial/KOMODO_1310_M2_medium.yaml::variant_children
+  evidence_ids:
+  - local1
+  - dsm1310
+  - komodo1310
+  rule_id: source-specific-formulation-fidelity
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1310_M2_medium.yaml
+    role: maintained normalized contributor
+  native_severity: P3
+  normalization_reason: P3 is normalized to minor because the atmosphere note and
+    malformed historical timestamp are scoped provenance defects; they do not justify
+    replacing the supported DSM formulation.
+- finding_id: f4
+  issue_key: batch054-04-claim-evidence
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Source URLs and scoped quantity evidence are not attached
+  description: The target and both owners have zero attached evidence claims. All
+    current quantities need source-version/basis/stage annotations; optional growth
+    evidence is not required. Canonical reference check examined zero references on
+    the target.
+  target_ids:
+  - CultureMech:000772
+  field_paths:
+  - references
+  - ingredients[*].evidence
+  - evidence
+  evidence_ids:
+  - local0
+  - grounding
+  - validate-references
+  - api1310
+  rule_id: source-specific-formulation-fidelity
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1310_M2_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/butyrivibrio_m2_medium.yaml
+    role: maintained normalized contributor
+  native_severity: P3
+  normalization_reason: P3 is normalized to minor because missing attached claim evidence
+    limits traceability while the captured source supports review of the represented
+    recipe.
+actions:
+- action_id: action1
+  description: Restore source-scoped liquid additions in both maintained owners, credit
+    the existing DSM preparation, and represent water as preparation volume or an
+    appropriately scoped component without asserting unsupported final volume.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:000772
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1310_M2_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/butyrivibrio_m2_medium.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action2
+  description: Preserve the source stock strength and dose and resolve the exact sodium
+    salt grounding or explicitly record its unresolved form. Do not silently change
+    to an unverified replacement identifier.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:000772
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1310_M2_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/butyrivibrio_m2_medium.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action3
+  description: Reconcile the KOMODO metadata against an exact recoverable source,
+    preserving the copied-DSM lineage and original malformed timestamp with an honest
+    correction event.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:000772
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1310_M2_medium.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action4
+  description: Add structured primary/provider references and narrowly scoped formulation/preparation
+    evidence, distinguishing primary batch amounts from API g_l normalization and
+    preserving all existing history.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:000772
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1310_M2_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/butyrivibrio_m2_medium.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+limitations:
+- KOMODO 1310 current request returned HTTP 403; its independent current formulation
+  was not authenticated. Identical copied-DSM ingredient arrays are not independent
+  source evidence.
+- DSM PDF gives batch amounts and stock additions without explicit measured final
+  volume; API main volume 1000 and g_l remain separately credited provider normalization.
+- Historical reports were read fully. Current API1310 bytes exactly match the source
+  hash cited by the October 7 DSM and October 8 KOMODO reports, authenticating that
+  DSMZ API content but not the reported historical retrieval event or the separate
+  KOMODO catalog/mapping source. Other historical prose remains derivative evidence.
+  No comprehensive literature growth search was performed.
+notes:
+- Read-only scientific review. No source edits, native save, Git mutation or publication.
+  All raw captures, failed access bodies, commands, times and original stdout/stderr
+  remain in the adjacent private evidence directory.

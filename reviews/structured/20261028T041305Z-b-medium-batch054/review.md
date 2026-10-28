@@ -1,0 +1,1552 @@
+# Scientific review of b_medium
+
+- Review: 20261028T041305Z-b-medium-batch054
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T04:00:19.609226Z
+- Finished UTC: 2026-10-28T04:13:05.232466Z
+- Reviewer: Codex independent record reviewer (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The current maintained B-medium owner already contains substantial correct repairs, while its generated target is stale. Current TOGO and MediaDive support the formulation and pH range with distinct provider/batch bases. JCM 458 currently supplies no recipe, so primary confirmation remains unavailable.
+
+## Scope And Provenance
+
+Full selected target and maintained owners, every quantity and unchanged claim; separately scoped source dependencies and current writers.
+
+Selection: Authoritative batch054 selection index 6 at base 9ea7ff33d354e37b791df96a880005153e446ce3. Fresh review, not reconstruction of lost historical bundles.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:009845 | data/merge_yaml/merged/B_MEDIUM.yaml | generated | b_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:009845 | Exit 0; original full stdout/stderr read. Structural check only. |
+| validate-strict | passed | True | CultureMech:009845 | Exit 0; original full stdout/stderr read. Structural check only. |
+| validate-terms | passed | True | CultureMech:009845 | Exit 0; original full stdout/stderr read. Structural check only. |
+| validate-references | passed | True | CultureMech:009845 | Exit 0; original full stdout/stderr read. Zero reference checks. |
+
+## Scientific And Domain Assessments
+
+### B medium source identity and owner credit
+
+identity: supported. Targets: CultureMech:009845.
+
+The selected target derives from the exact TOGO M458 maintained owner, whose original source is JCM 458. Current TOGO and MediaDive J458 agree on the nine components and adjustment instruction. The separate normalized b_medium record is relationship context, not an additional selected owner.
+
+### Existing repair versus stale generated output
+
+provenance: concern. Targets: CultureMech:009845.
+
+The current maintained owner already repaired both liquid units, magnesium and agar linkage, pH, preparation, references and source limits in September. Its exact inspected repair script preserves complex products and guards old/final signatures. The generated target predates these changes. Current merger/formulation guards retain scientific fields and reject incompatible formulations; do not blame current code for the old stale output or repeat completed owner repairs.
+
+### Primary availability and secondary agreement
+
+evidence: unknown. Targets: CultureMech:009845.
+
+The current JCM 458 HTTP 200 response says Nothing found. TOGO and MediaDive supply usable current secondary recipe evidence, including MediaDive g_l and declared volume; their agreement is not independent primary recovery. No sterilization default, incubation condition or strain-growth assertion is supplied by this unavailable primary.
+
+### Every concentration and source-only amount/stage
+
+quantity: concern. Targets: CultureMech:009845.
+
+All 18 selected target/owner concentration fields have explicit decisions; source-only stock, liquid, control and denominator gaps are retained separately.
+
+{"schema": "private explicit quantity decisions v1", "target_id": "CultureMech:009845", "selected_concentration_field_count": 18, "selected_concentration_fields_covered": 18, "decisions": [{"decision_id": "q1", "subject": "Distilled water — generated target", "local_fields": [{"record_path": "data/merge_yaml/merged/B_MEDIUM.yaml", "field_path": "ingredients[0].concentration", "original": {"value": "500", "unit": "G_PER_L"}}], "decision": "correct", "stage": "main recipe; provider-normalized rate", "interpretation": "The generated target retains 500 G_PER_L, but both current providers specify 500 ml. The maintained owner already corrected this to ML_PER_L. Preserve the 500 ml batch addition and its separately declared provider 1000 ml basis; do not infer mass or primary measured final volume.", "sources": [{"locator": "$.components[0].items[0]", "source_key": "togoM458", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458", "source_raw_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "source_text_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "accessed_at": "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 500,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\": \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[8]", "source_key": "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 500,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q2", "subject": "Distilled water — maintained owner", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/TOGO_M458_B_Medium.yaml", "field_path": "ingredients[0].concentration", "original": {"value": "500.0", "unit": "ML_PER_L"}}], "decision": "evidence_only", "stage": "main recipe; provider-normalized rate", "interpretation": "Credit the maintained owner correction to 500 ML_PER_L. Current providers supply a 500 ml batch addition, and MediaDive declares main solution volume 1000. This supports the provider normalization; TOGO alone does not state measured final volume and the unavailable primary cannot independently confirm it.", "sources": [{"locator": "$.components[0].items[0]", "source_key": "togoM458", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458", "source_raw_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "source_text_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "accessed_at": "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 500,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\": \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[8]", "source_key": "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 500,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q3", "subject": "MgSO4・7H2O — generated target", "local_fields": [{"record_path": "data/merge_yaml/merged/B_MEDIUM.yaml", "field_path": "ingredients[1].concentration", "original": {"value": "0.05", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe; provider-normalized rate", "interpretation": "The source batch mass agrees with this field, and current MediaDive explicitly supplies the matching g_l with main solution volume 1000. Credit that provider-normalized rate while retaining TOGO raw batch units separately. Current JCM 458 is unavailable, so this is not fresh primary confirmation.", "sources": [{"locator": "$.components[0].items[1]", "source_key": "togoM458", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458", "source_raw_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "source_text_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "accessed_at": "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\": \"MgSO4・7H2O\",\n          \"volume\": 0.05,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001002\",\n          \"gmo_id\": \"GMO_001002\",\n          \"label\": \"Magnesium sulfate heptahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[5]", "source_key": "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 0.05,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.20286,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q4", "subject": "MgSO4・7H2O — maintained owner", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/TOGO_M458_B_Medium.yaml", "field_path": "ingredients[1].concentration", "original": {"value": "0.05", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe; provider-normalized rate", "interpretation": "The source batch mass agrees with this field, and current MediaDive explicitly supplies the matching g_l with main solution volume 1000. Credit that provider-normalized rate while retaining TOGO raw batch units separately. Current JCM 458 is unavailable, so this is not fresh primary confirmation.", "sources": [{"locator": "$.components[0].items[1]", "source_key": "togoM458", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458", "source_raw_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "source_text_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "accessed_at": "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\": \"MgSO4・7H2O\",\n          \"volume\": 0.05,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001002\",\n          \"gmo_id\": \"GMO_001002\",\n          \"label\": \"Magnesium sulfate heptahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[5]", "source_key": "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 0.05,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.20286,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q5", "subject": "KH2PO4 — generated target", "local_fields": [{"record_path": "data/merge_yaml/merged/B_MEDIUM.yaml", "field_path": "ingredients[2].concentration", "original": {"value": "0.2", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe; provider-normalized rate", "interpretation": "The source batch mass agrees with this field, and current MediaDive explicitly supplies the matching g_l with main solution volume 1000. Credit that provider-normalized rate while retaining TOGO raw batch units separately. Current JCM 458 is unavailable, so this is not fresh primary confirmation.", "sources": [{"locator": "$.components[0].items[2]", "source_key": "togoM458", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458", "source_raw_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "source_text_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "accessed_at": "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\": \"KH2PO4\",\n          \"volume\": 0.2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001006\",\n          \"gmo_id\": \"GMO_001006\",\n          \"label\": \"Potassium phosphate monobasic\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[4]", "source_key": "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 1.46966,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q6", "subject": "KH2PO4 — maintained owner", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/TOGO_M458_B_Medium.yaml", "field_path": "ingredients[2].concentration", "original": {"value": "0.2", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe; provider-normalized rate", "interpretation": "The source batch mass agrees with this field, and current MediaDive explicitly supplies the matching g_l with main solution volume 1000. Credit that provider-normalized rate while retaining TOGO raw batch units separately. Current JCM 458 is unavailable, so this is not fresh primary confirmation.", "sources": [{"locator": "$.components[0].items[2]", "source_key": "togoM458", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458", "source_raw_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "source_text_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "accessed_at": "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\": \"KH2PO4\",\n          \"volume\": 0.2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001006\",\n          \"gmo_id\": \"GMO_001006\",\n          \"label\": \"Potassium phosphate monobasic\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[4]", "source_key": "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 1.46966,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q7", "subject": "Seawater — generated target", "local_fields": [{"record_path": "data/merge_yaml/merged/B_MEDIUM.yaml", "field_path": "ingredients[3].concentration", "original": {"value": "500", "unit": "G_PER_L"}}], "decision": "correct", "stage": "main recipe; provider-normalized rate", "interpretation": "The generated target retains 500 G_PER_L, but both current providers specify 500 ml. The maintained owner already corrected this to ML_PER_L. Preserve the 500 ml batch addition and its separately declared provider 1000 ml basis; do not infer mass or primary measured final volume.", "sources": [{"locator": "$.components[0].items[3]", "source_key": "togoM458", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458", "source_raw_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "source_text_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "accessed_at": "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\": \"Seawater\",\n          \"volume\": 500,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001066\",\n          \"gmo_id\": \"GMO_001066\",\n          \"label\": \"Seawater\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            },\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key": "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Sea water\",\n                        \"compound_id\": 286,\n                        \"amount\": 500,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q8", "subject": "Seawater — maintained owner", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/TOGO_M458_B_Medium.yaml", "field_path": "ingredients[3].concentration", "original": {"value": "500.0", "unit": "ML_PER_L"}}], "decision": "evidence_only", "stage": "main recipe; provider-normalized rate", "interpretation": "Credit the maintained owner correction to 500 ML_PER_L. Current providers supply a 500 ml batch addition, and MediaDive declares main solution volume 1000. This supports the provider normalization; TOGO alone does not state measured final volume and the unavailable primary cannot independently confirm it.", "sources": [{"locator": "$.components[0].items[3]", "source_key": "togoM458", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458", "source_raw_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "source_text_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "accessed_at": "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\": \"Seawater\",\n          \"volume\": 500,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001066\",\n          \"gmo_id\": \"GMO_001066\",\n          \"label\": \"Seawater\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            },\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key": "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Sea water\",\n                        \"compound_id\": 286,\n                        \"amount\": 500,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q9", "subject": "Glucose — generated target", "local_fields": [{"record_path": "data/merge_yaml/merged/B_MEDIUM.yaml", "field_path": "ingredients[4].concentration", "original": {"value": "1", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe; provider-normalized rate", "interpretation": "The source batch mass agrees with this field, and current MediaDive explicitly supplies the matching g_l with main solution volume 1000. Credit that provider-normalized rate while retaining TOGO raw batch units separately. Current JCM 458 is unavailable, so this is not fresh primary confirmation.", "sources": [{"locator": "$.components[0].items[4]", "source_key": "togoM458", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458", "source_raw_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "source_text_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "accessed_at": "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\": \"Glucose\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001815\",\n          \"gmo_id\": \"GMO_001815\",\n          \"label\": \"Glucose\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\": \"Carbon source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[3]", "source_key": "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\": 5,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 5.55062,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q10", "subject": "Glucose — maintained owner", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/TOGO_M458_B_Medium.yaml", "field_path": "ingredients[4].concentration", "original": {"value": "1.0", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe; provider-normalized rate", "interpretation": "The source batch mass agrees with this field, and current MediaDive explicitly supplies the matching g_l with main solution volume 1000. Credit that provider-normalized rate while retaining TOGO raw batch units separately. Current JCM 458 is unavailable, so this is not fresh primary confirmation.", "sources": [{"locator": "$.components[0].items[4]", "source_key": "togoM458", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458", "source_raw_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "source_text_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "accessed_at": "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\": \"Glucose\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001815\",\n          \"gmo_id\": \"GMO_001815\",\n          \"label\": \"Glucose\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\": \"Carbon source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[3]", "source_key": "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\": 5,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 5.55062,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q11", "subject": "Bacto agar (BD-Difco) — generated target", "local_fields": [{"record_path": "data/merge_yaml/merged/B_MEDIUM.yaml", "field_path": "ingredients[5].concentration", "original": {"value": "15", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe; provider-normalized rate", "interpretation": "The source batch mass agrees with this field, and current MediaDive explicitly supplies the matching g_l with main solution volume 1000. Credit that provider-normalized rate while retaining TOGO raw batch units separately. Current JCM 458 is unavailable, so this is not fresh primary confirmation. The source names BD-Difco Bacto agar. The owner already added the generic agar CHEBI:2509/MIM linkage; this does not identify a commercial lot or fixed molecular formula.", "sources": [{"locator": "$.components[0].items[5]", "source_key": "togoM458", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458", "source_raw_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "source_text_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "accessed_at": "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\": \"Bacto agar (BD-Difco)\",\n          \"volume\": 15,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001130\",\n          \"gmo_id\": \"GMO_001130\",\n          \"label\": \"Bacto &amp;trade; Agar\",\n          \"properties\": [],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000048\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000048\",\n              \"label\": \"Solidifying component\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[6]", "source_key": "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n                        \"attribute\": \"BD-Difco, Bacto \",\n                        \"amount\": 15,\n                        \"unit\": \"g\",\n                        \"g_l\": 15,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q12", "subject": "Bacto agar (BD-Difco) — maintained owner", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/TOGO_M458_B_Medium.yaml", "field_path": "ingredients[5].concentration", "original": {"value": "15.0", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe; provider-normalized rate", "interpretation": "The source batch mass agrees with this field, and current MediaDive explicitly supplies the matching g_l with main solution volume 1000. Credit that provider-normalized rate while retaining TOGO raw batch units separately. Current JCM 458 is unavailable, so this is not fresh primary confirmation. The source names BD-Difco Bacto agar. The owner already added the generic agar CHEBI:2509/MIM linkage; this does not identify a commercial lot or fixed molecular formula.", "sources": [{"locator": "$.components[0].items[5]", "source_key": "togoM458", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458", "source_raw_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "source_text_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "accessed_at": "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\": \"Bacto agar (BD-Difco)\",\n          \"volume\": 15,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001130\",\n          \"gmo_id\": \"GMO_001130\",\n          \"label\": \"Bacto &amp;trade; Agar\",\n          \"properties\": [],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000048\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000048\",\n              \"label\": \"Solidifying component\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[6]", "source_key": "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n                        \"attribute\": \"BD-Difco, Bacto \",\n                        \"amount\": 15,\n                        \"unit\": \"g\",\n                        \"g_l\": 15,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q13", "subject": "Yeast extract (BD-Difco) — generated target", "local_fields": [{"record_path": "data/merge_yaml/merged/B_MEDIUM.yaml", "field_path": "ingredients[6].concentration", "original": {"value": "2", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe; provider-normalized rate", "interpretation": "The source batch mass agrees with this field, and current MediaDive explicitly supplies the matching g_l with main solution volume 1000. Credit that provider-normalized rate while retaining TOGO raw batch units separately. Current JCM 458 is unavailable, so this is not fresh primary confirmation. Preserve the named BD-Difco complex product and its opacity; no pure-compound grounding is required.", "sources": [{"locator": "$.components[0].items[6]", "source_key": "togoM458", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458", "source_raw_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "source_text_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "accessed_at": "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\": \"Yeast extract (BD-Difco)\",\n          \"volume\": 2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001018\",\n          \"gmo_id\": \"GMO_001018\",\n          \"label\": \"Bacto &amp;trade; Yeast extract\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[2]", "source_key": "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q14", "subject": "Yeast extract (BD-Difco) — maintained owner", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/TOGO_M458_B_Medium.yaml", "field_path": "ingredients[6].concentration", "original": {"value": "2.0", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe; provider-normalized rate", "interpretation": "The source batch mass agrees with this field, and current MediaDive explicitly supplies the matching g_l with main solution volume 1000. Credit that provider-normalized rate while retaining TOGO raw batch units separately. Current JCM 458 is unavailable, so this is not fresh primary confirmation. Preserve the named BD-Difco complex product and its opacity; no pure-compound grounding is required.", "sources": [{"locator": "$.components[0].items[6]", "source_key": "togoM458", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458", "source_raw_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "source_text_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "accessed_at": "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\": \"Yeast extract (BD-Difco)\",\n          \"volume\": 2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001018\",\n          \"gmo_id\": \"GMO_001018\",\n          \"label\": \"Bacto &amp;trade; Yeast extract\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[2]", "source_key": "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q15", "subject": "Bacto peptone (BD-Difco) — generated target", "local_fields": [{"record_path": "data/merge_yaml/merged/B_MEDIUM.yaml", "field_path": "ingredients[7].concentration", "original": {"value": "2", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe; provider-normalized rate", "interpretation": "The source batch mass agrees with this field, and current MediaDive explicitly supplies the matching g_l with main solution volume 1000. Credit that provider-normalized rate while retaining TOGO raw batch units separately. Current JCM 458 is unavailable, so this is not fresh primary confirmation. Preserve the named BD-Difco complex product and its opacity; no pure-compound grounding is required.", "sources": [{"locator": "$.components[0].items[7]", "source_key": "togoM458", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458", "source_raw_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "source_text_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "accessed_at": "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\": \"Bacto peptone (BD-Difco)\",\n          \"volume\": 2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001089\",\n          \"gmo_id\": \"GMO_001089\",\n          \"label\": \"Bacto &amp;trade; Peptone\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[0]", "source_key": "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Bacto peptone\",\n                        \"compound_id\": 19,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q16", "subject": "Bacto peptone (BD-Difco) — maintained owner", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/TOGO_M458_B_Medium.yaml", "field_path": "ingredients[7].concentration", "original": {"value": "2.0", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe; provider-normalized rate", "interpretation": "The source batch mass agrees with this field, and current MediaDive explicitly supplies the matching g_l with main solution volume 1000. Credit that provider-normalized rate while retaining TOGO raw batch units separately. Current JCM 458 is unavailable, so this is not fresh primary confirmation. Preserve the named BD-Difco complex product and its opacity; no pure-compound grounding is required.", "sources": [{"locator": "$.components[0].items[7]", "source_key": "togoM458", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458", "source_raw_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "source_text_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "accessed_at": "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\": \"Bacto peptone (BD-Difco)\",\n          \"volume\": 2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001089\",\n          \"gmo_id\": \"GMO_001089\",\n          \"label\": \"Bacto &amp;trade; Peptone\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[0]", "source_key": "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Bacto peptone\",\n                        \"compound_id\": 19,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q17", "subject": "Casamino acids (BD-Difco) — generated target", "local_fields": [{"record_path": "data/merge_yaml/merged/B_MEDIUM.yaml", "field_path": "ingredients[8].concentration", "original": {"value": "2", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe; provider-normalized rate", "interpretation": "The source batch mass agrees with this field, and current MediaDive explicitly supplies the matching g_l with main solution volume 1000. Credit that provider-normalized rate while retaining TOGO raw batch units separately. Current JCM 458 is unavailable, so this is not fresh primary confirmation. Preserve the named BD-Difco complex product and its opacity; no pure-compound grounding is required.", "sources": [{"locator": "$.components[0].items[8]", "source_key": "togoM458", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458", "source_raw_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "source_text_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "accessed_at": "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\": \"Casamino acids (BD-Difco)\",\n          \"volume\": 2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001705\",\n          \"gmo_id\": \"GMO_001705\",\n          \"label\": \"Bacto &amp;trade; Casamino acids\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[1]", "source_key": "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Casamino acids\",\n                        \"compound_id\": 101,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q18", "subject": "Casamino acids (BD-Difco) — maintained owner", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/TOGO_M458_B_Medium.yaml", "field_path": "ingredients[8].concentration", "original": {"value": "2.0", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe; provider-normalized rate", "interpretation": "The source batch mass agrees with this field, and current MediaDive explicitly supplies the matching g_l with main solution volume 1000. Credit that provider-normalized rate while retaining TOGO raw batch units separately. Current JCM 458 is unavailable, so this is not fresh primary confirmation. Preserve the named BD-Difco complex product and its opacity; no pure-compound grounding is required.", "sources": [{"locator": "$.components[0].items[8]", "source_key": "togoM458", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458", "source_raw_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "source_text_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "accessed_at": "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\": \"Casamino acids (BD-Difco)\",\n          \"volume\": 2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001705\",\n          \"gmo_id\": \"GMO_001705\",\n          \"label\": \"Bacto &amp;trade; Casamino acids\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[1]", "source_key": "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Casamino acids\",\n                        \"compound_id\": 101,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q19", "subject": "pH range and adjustment already repaired in owner", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/TOGO_M458_B_Medium.yaml", "field_path": "ph_range", "original": {"min": 7.5, "max": 7.8}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M458_B_Medium.yaml", "field_path": "preparation_steps[0].description", "original": "Adjust pH to 7.5-7.8."}], "decision": "evidence_only", "stage": "pH adjustment", "interpretation": "TOGO and the MediaDive preparation step specify 7.5–7.8. Credit the owner range and preparation; regenerate the stale target that omits them. MediaDive medium metadata gives 7.7, a narrower single value, and must not overwrite the explicit preparation range.", "sources": [{"locator": "$.comments[0]", "source_key": "togoM458", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458", "source_raw_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "source_text_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "accessed_at": "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n      \"paragraph_index\": 2,\n      \"comment\": \"Adjust pH to 7.5 -- 7.8.\"\n    }", "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[0].steps[0]", "source_key": "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"step\": \"Adjust pH to 7.5 - 7.8.\"\n                    }", "quote_representation": "raw JSON object"}, {"locator": "$.data.medium", "source_key": "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n            \"id\": \"J458\",\n            \"name\": \"B MEDIUM\",\n            \"complex_medium\": \"yes\",\n            \"min_pH\": 7.7,\n            \"max_pH\": 7.7,\n            \"source\": \"JCM\",\n            \"link\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=458\"\n        }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q20", "subject": "Relationship parent: Distilled water", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/b_medium.yaml", "field_path": "ingredients[0].concentration", "original": {"value": "500.0", "unit": "ML_PER_L"}}], "decision": "evidence_only", "stage": "separate relationship context", "interpretation": "Current parent quantity matches the repaired selected owner and the provider recipe. It is comparison context only; matching values and a historical signature do not independently prove all source formulations or histories equivalent.", "sources": [{"locator": "$.data.solutions[0].recipe[8]", "source_key": "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 500,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q21", "subject": "Relationship parent: MgSO4・7H2O", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/b_medium.yaml", "field_path": "ingredients[1].concentration", "original": {"value": "0.05", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "separate relationship context", "interpretation": "Current parent quantity matches the repaired selected owner and the provider recipe. It is comparison context only; matching values and a historical signature do not independently prove all source formulations or histories equivalent.", "sources": [{"locator": "$.data.solutions[0].recipe[5]", "source_key": "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 0.05,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.20286,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q22", "subject": "Relationship parent: KH2PO4", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/b_medium.yaml", "field_path": "ingredients[2].concentration", "original": {"value": "0.2", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "separate relationship context", "interpretation": "Current parent quantity matches the repaired selected owner and the provider recipe. It is comparison context only; matching values and a historical signature do not independently prove all source formulations or histories equivalent.", "sources": [{"locator": "$.data.solutions[0].recipe[4]", "source_key": "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 1.46966,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q23", "subject": "Relationship parent: Seawater", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/b_medium.yaml", "field_path": "ingredients[3].concentration", "original": {"value": "500.0", "unit": "ML_PER_L"}}], "decision": "evidence_only", "stage": "separate relationship context", "interpretation": "Current parent quantity matches the repaired selected owner and the provider recipe. It is comparison context only; matching values and a historical signature do not independently prove all source formulations or histories equivalent.", "sources": [{"locator": "$.data.solutions[0].recipe[7]", "source_key": "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Sea water\",\n                        \"compound_id\": 286,\n                        \"amount\": 500,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q24", "subject": "Relationship parent: Glucose", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/b_medium.yaml", "field_path": "ingredients[4].concentration", "original": {"value": "1.0", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "separate relationship context", "interpretation": "Current parent quantity matches the repaired selected owner and the provider recipe. It is comparison context only; matching values and a historical signature do not independently prove all source formulations or histories equivalent.", "sources": [{"locator": "$.data.solutions[0].recipe[3]", "source_key": "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\": 5,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 5.55062,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q25", "subject": "Relationship parent: Bacto agar (BD-Difco)", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/b_medium.yaml", "field_path": "ingredients[5].concentration", "original": {"value": "15.0", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "separate relationship context", "interpretation": "Current parent quantity matches the repaired selected owner and the provider recipe. It is comparison context only; matching values and a historical signature do not independently prove all source formulations or histories equivalent.", "sources": [{"locator": "$.data.solutions[0].recipe[6]", "source_key": "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n                        \"attribute\": \"BD-Difco, Bacto \",\n                        \"amount\": 15,\n                        \"unit\": \"g\",\n                        \"g_l\": 15,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q26", "subject": "Relationship parent: Yeast extract (BD-Difco)", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/b_medium.yaml", "field_path": "ingredients[6].concentration", "original": {"value": "2.0", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "separate relationship context", "interpretation": "Current parent quantity matches the repaired selected owner and the provider recipe. It is comparison context only; matching values and a historical signature do not independently prove all source formulations or histories equivalent.", "sources": [{"locator": "$.data.solutions[0].recipe[2]", "source_key": "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q27", "subject": "Relationship parent: Bacto peptone (BD-Difco)", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/b_medium.yaml", "field_path": "ingredients[7].concentration", "original": {"value": "2.0", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "separate relationship context", "interpretation": "Current parent quantity matches the repaired selected owner and the provider recipe. It is comparison context only; matching values and a historical signature do not independently prove all source formulations or histories equivalent.", "sources": [{"locator": "$.data.solutions[0].recipe[0]", "source_key": "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Bacto peptone\",\n                        \"compound_id\": 19,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q28", "subject": "Relationship parent: Casamino acids (BD-Difco)", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/b_medium.yaml", "field_path": "ingredients[8].concentration", "original": {"value": "2.0", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "separate relationship context", "interpretation": "Current parent quantity matches the repaired selected owner and the provider recipe. It is comparison context only; matching values and a historical signature do not independently prove all source formulations or histories equivalent.", "sources": [{"locator": "$.data.solutions[0].recipe[1]", "source_key": "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Casamino acids\",\n                        \"compound_id\": 101,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q29", "subject": "Relationship parent pH", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/b_medium.yaml", "field_path": "ph_range", "original": {"min": 7.5, "max": 7.8}}, {"record_path": "data/normalized_yaml/bacterial/b_medium.yaml", "field_path": "preparation_steps[0].description", "original": "Adjust pH to 7.5-7.8."}], "decision": "evidence_only", "stage": "separate relationship context", "interpretation": "The parent retains the same 7.5–7.8 adjustment range; preserve it as context without changing the exact maintained-owner set.", "sources": [{"locator": "$.comments[0]", "source_key": "togoM458", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458", "source_raw_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "source_text_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "accessed_at": "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n      \"paragraph_index\": 2,\n      \"comment\": \"Adjust pH to 7.5 -- 7.8.\"\n    }", "quote_representation": "raw JSON object"}]}], "local_field_census_reference": "REVIEW_WORK/batch054/record06/grounding-inventory.json", "source_only_gaps_are_explicit": true, "note": "Batch amounts, provider normalization, stock composition, working dose and preparation controls are separate. No source edits or automatic curation performed."}
+
+### Primary, secondary and legacy linkage census
+
+grounding: supported. Targets: CultureMech:009845.
+
+data/merge_yaml/merged/B_MEDIUM.yaml: primary 4/9, secondary 3/9; data/normalized_yaml/bacterial/TOGO_M458_B_Medium.yaml: primary 5/9, secondary 5/9. Counts are ingredient instances in each selected document, not chemical accuracy. Every asserted CHEBI slot has an exact current OLS label match and a current MIM identifier row; MAPPED and REJECTED alias rows remain distinct. Zero numeric legacy MediaIngredientMech identifiers occur in the complete selected documents; the history placeholder NNNNNN is not an identifier. Chemical-form findings are assessed separately. Complex mixtures are not forced to pure-compound IDs.
+
+### Growth claims and classification
+
+scope: supported. Targets: CultureMech:009845.
+
+The selected source identity is a bacterial cultivation formulation; physical state and undefined complex composition are coherent. No target-organism, strain-growth or performance claim is asserted. Generic application text is not evidence of demonstrated growth; no strain extrapolation or optimization is proposed.
+
+### Native structural checks
+
+schema: supported. Targets: CultureMech:009845.
+
+All four canonical commands passed once; strict schema TSV contains only its header and reference validation checked zero references on the generated target. This does not certify quantities or chemical forms.
+
+## Findings
+
+### f1: Generated B medium omits completed owner repairs
+
+major / open / confirmed; issue key: batch054-06-stale-generated.
+
+The generated target still represents water and seawater as 500 G_PER_L and lacks the owner pH range, adjustment step, magnesium secondary linkage, agar linkage and source references. The maintained owner has already corrected these fields; unchanged mass values and commercial-product qualifiers should be retained.
+
+### f2: Recipe claims lack attached source evidence and precise basis
+
+minor / open / confirmed; issue key: batch054-06-claim-evidence.
+
+The owner has useful references, notes and a source-specific repair history, but zero attached formulation evidence claims. Its per-litre presentation should explicitly credit the current MediaDive volume/g_l basis and distinguish TOGO batch units from unavailable primary confirmation. The target lacks the owner references entirely.
+
+## Recommended Actions And Acceptance Checks
+
+### action1
+
+Verify the existing owner repair and regenerate the stale target through the current conservative merge path. Preserve all correct owner data and source limitations; no duplicate owner correction or generated-file hand edit is needed.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+### action2
+
+Attach narrowly scoped current provider excerpts and basis annotations without erasing existing references or repair history. Retain the primary-unavailable limitation and the explicit pH range instead of promoting provider metadata 7.7 to the only supported range.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| local0 | data/merge_yaml/merged/B_MEDIUM.yaml; entire YAML | supports | Entire current selected document, including all ingredients, source notes, history, relationships and preparation. No record edits. |
+| local1 | data/normalized_yaml/bacterial/TOGO_M458_B_Medium.yaml; entire YAML | supports | Entire current selected document, including all ingredients, source notes, history, relationships and preparation. No record edits. |
+| validate-schema | REVIEW_WORK/batch054/record06/validate-schema-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Native bound-slot validation does not authenticate ingredient amounts or all chemical forms. |
+| validate-strict | REVIEW_WORK/batch054/record06/validate-strict-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Strict TSV is header-only. |
+| validate-terms | REVIEW_WORK/batch054/record06/validate-terms-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Native bound-slot validation does not authenticate ingredient amounts or all chemical forms. |
+| validate-references | REVIEW_WORK/batch054/record06/validate-references-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Zero references checked, not scientific source verification. |
+| jcm458 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=458; raw source; exact captured text/DOM/JSON locators in quantity inventory | unknown | Current JCM 458 HTTP 200 body says Nothing found; no recipe or sterilization default transferred from this unavailable primary. |
+| togoM458 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Complete current source read, including exact identity, all formulation rows, units and preparation. It establishes a formulation, not strain-specific growth. |
+| apiJ458 | https://mediadive.dsmz.de/rest/medium/J458; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Current MediaDive J458 recipe rows and steps read. Main volume 1000 and g_l are provider basis. Medium pH metadata 7.7 differs in precision from preparation 7.5–7.8. |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | OLS current exact CHEBI:15377 = water; definition ['An oxygen hydride consisting of an oxygen atom that is covalently bonded to two hydrogen atoms']; formula ['H2O']; mass ['18.015']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi17234 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | OLS current exact CHEBI:17234 = glucose; definition ['An aldohexose used as a source of energy and metabolic intermediate.']; formula ['C6H12O6']; mass ['180.156']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | OLS current exact CHEBI:2509 = agar; definition ['A complex mixture of polysaccharides extracted from species of red algae. Its two main components are agarose and agaropectin. Agarose is the component responsible for the high-strength gelling properties of agar, while agaropectin provides the viscous properties.']; formula None; mass None; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | OLS current exact CHEBI:31795 = magnesium sulfate heptahydrate; definition ['A hydrate that is the heptahydrate form of magnesium sulfate.']; formula ['7H2O.Mg.O4S']; mass ['246.473']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi32599 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32599; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | OLS current exact CHEBI:32599 = magnesium sulfate; definition ['A magnesium salt having sulfate as the counterion.']; formula ['Mg.O4S']; mass ['120.368']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | OLS current exact CHEBI:63036 = potassium dihydrogen phosphate; definition ['A potassium salt in which dihydrogen phosphate(1−) is the counterion.']; formula ['H2O4P.K']; mass ['136.084']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| grounding | REVIEW_WORK/batch054/record06/grounding-inventory.json; documents; ols_scientific_projection; mim_index | supports | Complete selected-layer term slots and current packaged MIM CSV exact-identifier joins with row locators and metadata commit; includes separately scoped dependency context. No fuzzy mapping or historical-validity inference. |
+| history0 | reports/yaml_record_review/20260921T172016Z-B_MEDIUM.md; entire report | supports | Entire historical report read, including unresolved and unchanged rows. October reports are derivative assertions with original cited hash/time; their raw payload is not authenticated by the report alone. September narratives are historical leads reassessed against current captures, not fresh review proof. |
+| history1 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M458_B_Medium.md; entire report | supports | Entire historical report read, including unresolved and unchanged rows. October reports are derivative assertions with original cited hash/time; their raw payload is not authenticated by the report alone. September narratives are historical leads reassessed against current captures, not fresh review proof. |
+| history2 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/B_MEDIUM.md; entire report | supports | Entire historical report read, including unresolved and unchanged rows. October reports are derivative assertions with original cited hash/time; their raw payload is not authenticated by the report alone. September narratives are historical leads reassessed against current captures, not fresh review proof. |
+| writer19 | scripts/repair_togo_m458_score15.py; relevant functions named in summary | context_only | Full repair_togo_m458_score15.py read: guarded exact target/parent signatures, source-specific volume and pH repairs, opaque commercial components and references; _append_curation_event replaces matching events. Current writer supports repair provenance context, not independent authentication of historical source retrieval or a measured final volume. |
+| writer20 | src/culturemech/import/togo_importer.py; relevant functions named in summary | context_only | Current _extract_primary_components/_solution_from_item preserve main versus nested stocks; _parse_unit distinguishes mg/ml and _extract_preparation_steps retains comments. Bare units mapped to per-litre enums still require source-basis review. Current fixed code is not proof of historical execution. |
+| writer21 | src/culturemech/merge/formulation.py; relevant functions named in summary | context_only | Current formulation_content retains scientific fields, quantities, notes and preparation; merge_formulation_evidence rejects incompatible scientific projections and unions scoped evidence. Ingredient-set similarity does not prove scientific equivalence. |
+| writer22 | src/culturemech/merge/matcher.py; relevant functions named in summary | context_only | Current group_formulations uses full formulation fingerprints for compatible automatic merging; broader group_recipes discovers ingredient-set candidates only. Neither grouping path substitutes for source verification. |
+| writer23 | src/culturemech/merge/merger.py; relevant functions named in summary | context_only | Current merge_group returns a single owner with routing metadata, and calls conservative merge_formulation_evidence for multiple owners. Current code supports regenerating stale content after owner repair but does not authenticate old generated outputs. |
+| parent-context | data/normalized_yaml/bacterial/b_medium.yaml; entire YAML | context_only | Entire MediaDive J458 parent read. Same nine current quantities and pH range, with reciprocal relationship metadata; this is relationship context, not another merged_from owner. |
+| quantity-inventory | REVIEW_WORK/batch054/record06/quantity-inventory.json; decisions | supports | Complete explicit decisions with exact current local values, per-layer locators, source quotes/hash/time, stage and arithmetic limits. |
+
+## Limits And Additional Notes
+
+- Current JCM 458 returns HTTP 200 with Nothing found; no primary recipe, generic sterilization instruction or culture condition is inferred from that response.
+- MediaDive explicitly supplies main volume 1000 and g_l values; these are provider normalization, not a measured final-volume statement from TOGO or an authenticated current JCM recipe.
+- Historical reports and repair code were read as provenance and reassessed with current captures; no historical raw authenticity or strain-growth claim is inferred. Current index membership does not establish past mapping validity.
+- Read-only scientific review. No source edits, native save, Git mutation or publication. All raw captures, failed access bodies, commands, times and original stdout/stderr remain in the adjacent private evidence directory.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T041305Z-b-medium-batch054
+kind: record
+repository: CultureBotAI/CultureMech
+title: Scientific review of b_medium
+started_at: '2026-10-28T04:00:19.609226Z'
+finished_at: '2026-10-28T04:13:05.232466Z'
+reviewer:
+  identity: Codex independent record reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Fresh review of existing unchanged repository records; this
+    reviewer did not author or curate the selected target/owners. Historical reports
+    were independently reassessed against current exact sources.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The current maintained B-medium owner already contains substantial correct
+  repairs, while its generated target is stale. Current TOGO and MediaDive support
+  the formulation and pH range with distinct provider/batch bases. JCM 458 currently
+  supplies no recipe, so primary confirmation remains unavailable.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/B_MEDIUM.yaml
+    sha256: f94a830a2e1d52fd934b1a269dfdf8316c84930d0a55872d0f8e42fd27fa10db
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M458_B_Medium.yaml
+    sha256: f5f7ce91b46650a224b6e82ca746ce62be21da5c0d6c3eb886e706510e17da2d
+    role: context
+  - path: data/normalized_yaml/bacterial/b_medium.yaml
+    sha256: 4ac8d6f3d904b6a43f4dff1f2a3c8d71f33750addb36f40ef8e2ece73a9d1d02
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/B_MEDIUM.md
+    sha256: 978fb85dc62f17c8d6cc0f08bd385f9c05481a66aa6b693913ed0110b82829d5
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M458_B_Medium.md
+    sha256: adb5c7c07409a793f757ae66467fc83f6c7fb8bcd7d88a1959020570450bb6b2
+    role: context
+  - path: reports/yaml_record_review/20260921T172016Z-B_MEDIUM.md
+    sha256: 4e9523bf6d9243114dc9e199fabfb9afe8e24014650e8445eb81980d210075da
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/repair_togo_m458_score15.py
+    sha256: 87db653f33c231f59e1ccbd72a93b1d3ccc95eb97280115a342eaa8ff90942c2
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+scope:
+  description: Full selected target and maintained owners, every quantity and unchanged
+    claim; separately scoped source dependencies and current writers.
+  selection: Authoritative batch054 selection index 6 at base 9ea7ff33d354e37b791df96a880005153e446ce3.
+    Fresh review, not reconstruction of lost historical bundles.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:009845
+targets:
+- target_id: CultureMech:009845
+  path: data/merge_yaml/merged/B_MEDIUM.yaml
+  label: b_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M458_B_Medium.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:009845
+  command: just validate-schema data/merge_yaml/merged/B_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:009845
+  command: just validate-strict data/merge_yaml/merged/B_MEDIUM.yaml --workers 1 --out
+    REVIEW_WORK/batch054/record06/strict.tsv
+  exit_code: 0
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:009845
+  command: just validate-terms data/merge_yaml/merged/B_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Zero reference checks.
+  target_ids:
+  - CultureMech:009845
+  command: just validate-references data/merge_yaml/merged/B_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-references
+evidence:
+- evidence_id: local0
+  kind: record_content
+  reference: data/merge_yaml/merged/B_MEDIUM.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T04:13:05.179470Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: f94a830a2e1d52fd934b1a269dfdf8316c84930d0a55872d0f8e42fd27fa10db
+- evidence_id: local1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M458_B_Medium.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T04:13:05.179696Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: f5f7ce91b46650a224b6e82ca746ce62be21da5c0d6c3eb886e706510e17da2d
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch054/record06/validate-schema-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T04:00:21.047502Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: 177d4b2c45d4cbd2aacae53d550ccd6b322a85a41b09218d352820404330ef8d
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch054/record06/validate-strict-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T04:00:22.198808Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Strict
+    TSV is header-only.
+  snapshot_sha256: 167799fbe1ac0a49e7778d413bfc85d9a20529b37b6e64f78eb361993f987f22
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch054/record06/validate-terms-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T04:00:23.456177Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: 0a70f7dee55cb8a6bc9818aba9ce9b345bba85cdef9ae4d40a92562bbf0c692a
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch054/record06/validate-references-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T04:00:24.286035Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Zero
+    references checked, not scientific source verification.
+  snapshot_sha256: ef7d1587ef6965cc5e104a6f366d62ccaf096c55444f832c6baca439bd92fe06
+- evidence_id: jcm458
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=458
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T04:00:57.993582Z'
+  support: unknown
+  summary: Current JCM 458 HTTP 200 body says Nothing found; no recipe or sterilization
+    default transferred from this unavailable primary.
+  snapshot_sha256: dd063b14e6ac054cb536bc0b0a2166dd9f1eb1f1235f256f9899e4db20778fae
+- evidence_id: togoM458
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T04:00:58.198002Z'
+  support: supports
+  summary: Complete current source read, including exact identity, all formulation
+    rows, units and preparation. It establishes a formulation, not strain-specific
+    growth.
+  snapshot_sha256: f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d
+- evidence_id: apiJ458
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J458
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T04:00:58.214462Z'
+  support: supports
+  summary: Current MediaDive J458 recipe rows and steps read. Main volume 1000 and
+    g_l are provider basis. Medium pH metadata 7.7 differs in precision from preparation
+    7.5–7.8.
+  snapshot_sha256: 6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4
+- evidence_id: chebi15377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T04:00:58.340596Z'
+  support: supports
+  summary: OLS current exact CHEBI:15377 = water; definition ['An oxygen hydride consisting
+    of an oxygen atom that is covalently bonded to two hydrogen atoms']; formula ['H2O'];
+    mass ['18.015']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi17234
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T04:00:58.508170Z'
+  support: supports
+  summary: OLS current exact CHEBI:17234 = glucose; definition ['An aldohexose used
+    as a source of energy and metabolic intermediate.']; formula ['C6H12O6']; mass
+    ['180.156']; obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: e3b9cbcd7b1e08bb05564cf82f924b29c554767e9b40bf1e4c85ab1bce09330f
+- evidence_id: chebi2509
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T04:00:58.518294Z'
+  support: supports
+  summary: OLS current exact CHEBI:2509 = agar; definition ['A complex mixture of
+    polysaccharides extracted from species of red algae. Its two main components are
+    agarose and agaropectin. Agarose is the component responsible for the high-strength
+    gelling properties of agar, while agaropectin provides the viscous properties.'];
+    formula None; mass None; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: chebi31795
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T04:00:58.712308Z'
+  support: supports
+  summary: OLS current exact CHEBI:31795 = magnesium sulfate heptahydrate; definition
+    ['A hydrate that is the heptahydrate form of magnesium sulfate.']; formula ['7H2O.Mg.O4S'];
+    mass ['246.473']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32599
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32599
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T04:00:58.917141Z'
+  support: supports
+  summary: OLS current exact CHEBI:32599 = magnesium sulfate; definition ['A magnesium
+    salt having sulfate as the counterion.']; formula ['Mg.O4S']; mass ['120.368'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 5da4e37c63d52d06c19a75da5c03a8ba42e81db8b537a053285d895de8f2b9ff
+- evidence_id: chebi63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T04:00:58.938268Z'
+  support: supports
+  summary: OLS current exact CHEBI:63036 = potassium dihydrogen phosphate; definition
+    ['A potassium salt in which dihydrogen phosphate(1−) is the counterion.']; formula
+    ['H2O4P.K']; mass ['136.084']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: grounding
+  kind: authority
+  reference: REVIEW_WORK/batch054/record06/grounding-inventory.json
+  locator: documents; ols_scientific_projection; mim_index
+  accessed_at: '2026-10-28T04:13:05.185427Z'
+  support: supports
+  summary: Complete selected-layer term slots and current packaged MIM CSV exact-identifier
+    joins with row locators and metadata commit; includes separately scoped dependency
+    context. No fuzzy mapping or historical-validity inference.
+  snapshot_sha256: 2ad64532cbc291984c62c88af128845c1e0cc00b6683c536232047f3100b9c5b
+- evidence_id: history0
+  kind: prior_review
+  reference: reports/yaml_record_review/20260921T172016Z-B_MEDIUM.md
+  locator: entire report
+  accessed_at: '2026-10-28T04:13:05.185464Z'
+  support: supports
+  summary: Entire historical report read, including unresolved and unchanged rows.
+    October reports are derivative assertions with original cited hash/time; their
+    raw payload is not authenticated by the report alone. September narratives are
+    historical leads reassessed against current captures, not fresh review proof.
+  snapshot_sha256: 4e9523bf6d9243114dc9e199fabfb9afe8e24014650e8445eb81980d210075da
+- evidence_id: history1
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M458_B_Medium.md
+  locator: entire report
+  accessed_at: '2026-10-28T04:13:05.185498Z'
+  support: supports
+  summary: Entire historical report read, including unresolved and unchanged rows.
+    October reports are derivative assertions with original cited hash/time; their
+    raw payload is not authenticated by the report alone. September narratives are
+    historical leads reassessed against current captures, not fresh review proof.
+  snapshot_sha256: adb5c7c07409a793f757ae66467fc83f6c7fb8bcd7d88a1959020570450bb6b2
+- evidence_id: history2
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/B_MEDIUM.md
+  locator: entire report
+  accessed_at: '2026-10-28T04:13:05.185525Z'
+  support: supports
+  summary: Entire historical report read, including unresolved and unchanged rows.
+    October reports are derivative assertions with original cited hash/time; their
+    raw payload is not authenticated by the report alone. September narratives are
+    historical leads reassessed against current captures, not fresh review proof.
+  snapshot_sha256: 978fb85dc62f17c8d6cc0f08bd385f9c05481a66aa6b693913ed0110b82829d5
+- evidence_id: writer19
+  kind: record_content
+  reference: scripts/repair_togo_m458_score15.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T04:13:05.185558Z'
+  support: context_only
+  summary: 'Full repair_togo_m458_score15.py read: guarded exact target/parent signatures,
+    source-specific volume and pH repairs, opaque commercial components and references;
+    _append_curation_event replaces matching events. Current writer supports repair
+    provenance context, not independent authentication of historical source retrieval
+    or a measured final volume.'
+  snapshot_sha256: 87db653f33c231f59e1ccbd72a93b1d3ccc95eb97280115a342eaa8ff90942c2
+- evidence_id: writer20
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T04:13:05.185598Z'
+  support: context_only
+  summary: Current _extract_primary_components/_solution_from_item preserve main versus
+    nested stocks; _parse_unit distinguishes mg/ml and _extract_preparation_steps
+    retains comments. Bare units mapped to per-litre enums still require source-basis
+    review. Current fixed code is not proof of historical execution.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: writer21
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T04:13:05.185621Z'
+  support: context_only
+  summary: Current formulation_content retains scientific fields, quantities, notes
+    and preparation; merge_formulation_evidence rejects incompatible scientific projections
+    and unions scoped evidence. Ingredient-set similarity does not prove scientific
+    equivalence.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer22
+  kind: record_content
+  reference: src/culturemech/merge/matcher.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T04:13:05.185644Z'
+  support: context_only
+  summary: Current group_formulations uses full formulation fingerprints for compatible
+    automatic merging; broader group_recipes discovers ingredient-set candidates only.
+    Neither grouping path substitutes for source verification.
+  snapshot_sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+- evidence_id: writer23
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T04:13:05.185667Z'
+  support: context_only
+  summary: Current merge_group returns a single owner with routing metadata, and calls
+    conservative merge_formulation_evidence for multiple owners. Current code supports
+    regenerating stale content after owner repair but does not authenticate old generated
+    outputs.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: parent-context
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/b_medium.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T04:13:05.191872Z'
+  support: context_only
+  summary: Entire MediaDive J458 parent read. Same nine current quantities and pH
+    range, with reciprocal relationship metadata; this is relationship context, not
+    another merged_from owner.
+  snapshot_sha256: 4ac8d6f3d904b6a43f4dff1f2a3c8d71f33750addb36f40ef8e2ece73a9d1d02
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: REVIEW_WORK/batch054/record06/quantity-inventory.json
+  locator: decisions
+  accessed_at: '2026-10-28T04:13:05.232272Z'
+  support: supports
+  summary: Complete explicit decisions with exact current local values, per-layer
+    locators, source quotes/hash/time, stage and arithmetic limits.
+  snapshot_sha256: 030afe70dd7dbe9da1aa302f986b941d11e04b181865c1a5e542ae15b61e8631
+assessments:
+- assessment_id: a1
+  area: identity
+  topic: B medium source identity and owner credit
+  outcome: supported
+  summary: The selected target derives from the exact TOGO M458 maintained owner,
+    whose original source is JCM 458. Current TOGO and MediaDive J458 agree on the
+    nine components and adjustment instruction. The separate normalized b_medium record
+    is relationship context, not an additional selected owner.
+  target_ids:
+  - CultureMech:009845
+  evidence_ids:
+  - local0
+  - local1
+  - parent-context
+  - togoM458
+  - apiJ458
+- assessment_id: a2
+  area: provenance
+  topic: Existing repair versus stale generated output
+  outcome: concern
+  summary: The current maintained owner already repaired both liquid units, magnesium
+    and agar linkage, pH, preparation, references and source limits in September.
+    Its exact inspected repair script preserves complex products and guards old/final
+    signatures. The generated target predates these changes. Current merger/formulation
+    guards retain scientific fields and reject incompatible formulations; do not blame
+    current code for the old stale output or repeat completed owner repairs.
+  target_ids:
+  - CultureMech:009845
+  evidence_ids:
+  - local0
+  - local1
+  - parent-context
+  - history0
+- assessment_id: a3
+  area: evidence
+  topic: Primary availability and secondary agreement
+  outcome: unknown
+  summary: The current JCM 458 HTTP 200 response says Nothing found. TOGO and MediaDive
+    supply usable current secondary recipe evidence, including MediaDive g_l and declared
+    volume; their agreement is not independent primary recovery. No sterilization
+    default, incubation condition or strain-growth assertion is supplied by this unavailable
+    primary.
+  target_ids:
+  - CultureMech:009845
+  evidence_ids:
+  - jcm458
+  - togoM458
+  - apiJ458
+- assessment_id: a4
+  area: quantity
+  topic: Every concentration and source-only amount/stage
+  outcome: concern
+  summary: All 18 selected target/owner concentration fields have explicit decisions;
+    source-only stock, liquid, control and denominator gaps are retained separately.
+  target_ids:
+  - CultureMech:009845
+  evidence_ids:
+  - quantity-inventory
+  details: '{"schema": "private explicit quantity decisions v1", "target_id": "CultureMech:009845",
+    "selected_concentration_field_count": 18, "selected_concentration_fields_covered":
+    18, "decisions": [{"decision_id": "q1", "subject": "Distilled water — generated
+    target", "local_fields": [{"record_path": "data/merge_yaml/merged/B_MEDIUM.yaml",
+    "field_path": "ingredients[0].concentration", "original": {"value": "500", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "main recipe; provider-normalized
+    rate", "interpretation": "The generated target retains 500 G_PER_L, but both current
+    providers specify 500 ml. The maintained owner already corrected this to ML_PER_L.
+    Preserve the 500 ml batch addition and its separately declared provider 1000 ml
+    basis; do not infer mass or primary measured final volume.", "sources": [{"locator":
+    "$.components[0].items[0]", "source_key": "togoM458", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458",
+    "source_raw_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d",
+    "source_text_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d",
+    "accessed_at": "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Distilled water\",\n          \"volume\": 500,\n          \"unit\": \"ml\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\":
+    \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "$.data.solutions[0].recipe[8]", "source_key": "apiJ458",
+    "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at":
+    "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 500,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q2", "subject": "Distilled water — maintained
+    owner", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/TOGO_M458_B_Medium.yaml",
+    "field_path": "ingredients[0].concentration", "original": {"value": "500.0", "unit":
+    "ML_PER_L"}}], "decision": "evidence_only", "stage": "main recipe; provider-normalized
+    rate", "interpretation": "Credit the maintained owner correction to 500 ML_PER_L.
+    Current providers supply a 500 ml batch addition, and MediaDive declares main
+    solution volume 1000. This supports the provider normalization; TOGO alone does
+    not state measured final volume and the unavailable primary cannot independently
+    confirm it.", "sources": [{"locator": "$.components[0].items[0]", "source_key":
+    "togoM458", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458",
+    "source_raw_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d",
+    "source_text_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d",
+    "accessed_at": "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Distilled water\",\n          \"volume\": 500,\n          \"unit\": \"ml\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\":
+    \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "$.data.solutions[0].recipe[8]", "source_key": "apiJ458",
+    "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at":
+    "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 500,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q3", "subject": "MgSO4・7H2O — generated
+    target", "local_fields": [{"record_path": "data/merge_yaml/merged/B_MEDIUM.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe; provider-normalized
+    rate", "interpretation": "The source batch mass agrees with this field, and current
+    MediaDive explicitly supplies the matching g_l with main solution volume 1000.
+    Credit that provider-normalized rate while retaining TOGO raw batch units separately.
+    Current JCM 458 is unavailable, so this is not fresh primary confirmation.", "sources":
+    [{"locator": "$.components[0].items[1]", "source_key": "togoM458", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458", "source_raw_sha256":
+    "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "source_text_sha256":
+    "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "accessed_at":
+    "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\":
+    \"MgSO4・7H2O\",\n          \"volume\": 0.05,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001002\",\n          \"gmo_id\": \"GMO_001002\",\n          \"label\":
+    \"Magnesium sulfate heptahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\":
+    \"Mineral source\"\n            }\n          ]\n        }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[5]", "source_key":
+    "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at":
+    "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\":
+    8,\n                        \"amount\": 0.05,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.20286,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q4", "subject": "MgSO4・7H2O — maintained
+    owner", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/TOGO_M458_B_Medium.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe; provider-normalized
+    rate", "interpretation": "The source batch mass agrees with this field, and current
+    MediaDive explicitly supplies the matching g_l with main solution volume 1000.
+    Credit that provider-normalized rate while retaining TOGO raw batch units separately.
+    Current JCM 458 is unavailable, so this is not fresh primary confirmation.", "sources":
+    [{"locator": "$.components[0].items[1]", "source_key": "togoM458", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458", "source_raw_sha256":
+    "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "source_text_sha256":
+    "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "accessed_at":
+    "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\":
+    \"MgSO4・7H2O\",\n          \"volume\": 0.05,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001002\",\n          \"gmo_id\": \"GMO_001002\",\n          \"label\":
+    \"Magnesium sulfate heptahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\":
+    \"Mineral source\"\n            }\n          ]\n        }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[5]", "source_key":
+    "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at":
+    "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\":
+    8,\n                        \"amount\": 0.05,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.20286,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q5", "subject": "KH2PO4 — generated target",
+    "local_fields": [{"record_path": "data/merge_yaml/merged/B_MEDIUM.yaml", "field_path":
+    "ingredients[2].concentration", "original": {"value": "0.2", "unit": "G_PER_L"}}],
+    "decision": "evidence_only", "stage": "main recipe; provider-normalized rate",
+    "interpretation": "The source batch mass agrees with this field, and current MediaDive
+    explicitly supplies the matching g_l with main solution volume 1000. Credit that
+    provider-normalized rate while retaining TOGO raw batch units separately. Current
+    JCM 458 is unavailable, so this is not fresh primary confirmation.", "sources":
+    [{"locator": "$.components[0].items[2]", "source_key": "togoM458", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458", "source_raw_sha256":
+    "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "source_text_sha256":
+    "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "accessed_at":
+    "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\":
+    \"KH2PO4\",\n          \"volume\": 0.2,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001006\",\n          \"gmo_id\": \"GMO_001006\",\n          \"label\":
+    \"Potassium phosphate monobasic\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\":
+    \"Buffer\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "$.data.solutions[0].recipe[4]", "source_key": "apiJ458",
+    "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at":
+    "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 0.2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\":
+    1.46966,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q6", "subject": "KH2PO4 — maintained owner",
+    "local_fields": [{"record_path": "data/normalized_yaml/bacterial/TOGO_M458_B_Medium.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "0.2", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe; provider-normalized
+    rate", "interpretation": "The source batch mass agrees with this field, and current
+    MediaDive explicitly supplies the matching g_l with main solution volume 1000.
+    Credit that provider-normalized rate while retaining TOGO raw batch units separately.
+    Current JCM 458 is unavailable, so this is not fresh primary confirmation.", "sources":
+    [{"locator": "$.components[0].items[2]", "source_key": "togoM458", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458", "source_raw_sha256":
+    "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "source_text_sha256":
+    "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "accessed_at":
+    "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\":
+    \"KH2PO4\",\n          \"volume\": 0.2,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001006\",\n          \"gmo_id\": \"GMO_001006\",\n          \"label\":
+    \"Potassium phosphate monobasic\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\":
+    \"Buffer\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "$.data.solutions[0].recipe[4]", "source_key": "apiJ458",
+    "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at":
+    "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 0.2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\":
+    1.46966,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q7", "subject": "Seawater — generated target",
+    "local_fields": [{"record_path": "data/merge_yaml/merged/B_MEDIUM.yaml", "field_path":
+    "ingredients[3].concentration", "original": {"value": "500", "unit": "G_PER_L"}}],
+    "decision": "correct", "stage": "main recipe; provider-normalized rate", "interpretation":
+    "The generated target retains 500 G_PER_L, but both current providers specify
+    500 ml. The maintained owner already corrected this to ML_PER_L. Preserve the
+    500 ml batch addition and its separately declared provider 1000 ml basis; do not
+    infer mass or primary measured final volume.", "sources": [{"locator": "$.components[0].items[3]",
+    "source_key": "togoM458", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458",
+    "source_raw_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d",
+    "source_text_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d",
+    "accessed_at": "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Seawater\",\n          \"volume\": 500,\n          \"unit\": \"ml\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001066\",\n          \"gmo_id\": \"GMO_001066\",\n          \"label\":
+    \"Seawater\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\":
+    \"Undefined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\":
+    \"Mineral source\"\n            },\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key": "apiJ458",
+    "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at":
+    "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Sea water\",\n                        \"compound_id\":
+    286,\n                        \"amount\": 500,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q8", "subject": "Seawater — maintained
+    owner", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/TOGO_M458_B_Medium.yaml",
+    "field_path": "ingredients[3].concentration", "original": {"value": "500.0", "unit":
+    "ML_PER_L"}}], "decision": "evidence_only", "stage": "main recipe; provider-normalized
+    rate", "interpretation": "Credit the maintained owner correction to 500 ML_PER_L.
+    Current providers supply a 500 ml batch addition, and MediaDive declares main
+    solution volume 1000. This supports the provider normalization; TOGO alone does
+    not state measured final volume and the unavailable primary cannot independently
+    confirm it.", "sources": [{"locator": "$.components[0].items[3]", "source_key":
+    "togoM458", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458",
+    "source_raw_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d",
+    "source_text_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d",
+    "accessed_at": "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Seawater\",\n          \"volume\": 500,\n          \"unit\": \"ml\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001066\",\n          \"gmo_id\": \"GMO_001066\",\n          \"label\":
+    \"Seawater\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\":
+    \"Undefined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\":
+    \"Mineral source\"\n            },\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key": "apiJ458",
+    "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at":
+    "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Sea water\",\n                        \"compound_id\":
+    286,\n                        \"amount\": 500,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q9", "subject": "Glucose — generated target",
+    "local_fields": [{"record_path": "data/merge_yaml/merged/B_MEDIUM.yaml", "field_path":
+    "ingredients[4].concentration", "original": {"value": "1", "unit": "G_PER_L"}}],
+    "decision": "evidence_only", "stage": "main recipe; provider-normalized rate",
+    "interpretation": "The source batch mass agrees with this field, and current MediaDive
+    explicitly supplies the matching g_l with main solution volume 1000. Credit that
+    provider-normalized rate while retaining TOGO raw batch units separately. Current
+    JCM 458 is unavailable, so this is not fresh primary confirmation.", "sources":
+    [{"locator": "$.components[0].items[4]", "source_key": "togoM458", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458", "source_raw_sha256":
+    "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "source_text_sha256":
+    "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "accessed_at":
+    "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Glucose\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001815\",\n          \"gmo_id\": \"GMO_001815\",\n          \"label\":
+    \"Glucose\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\":
+    \"Carbon source\"\n            }\n          ]\n        }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[3]", "source_key":
+    "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at":
+    "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\":
+    5,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\":
+    5.55062,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q10", "subject": "Glucose — maintained
+    owner", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/TOGO_M458_B_Medium.yaml",
+    "field_path": "ingredients[4].concentration", "original": {"value": "1.0", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe; provider-normalized
+    rate", "interpretation": "The source batch mass agrees with this field, and current
+    MediaDive explicitly supplies the matching g_l with main solution volume 1000.
+    Credit that provider-normalized rate while retaining TOGO raw batch units separately.
+    Current JCM 458 is unavailable, so this is not fresh primary confirmation.", "sources":
+    [{"locator": "$.components[0].items[4]", "source_key": "togoM458", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458", "source_raw_sha256":
+    "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "source_text_sha256":
+    "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "accessed_at":
+    "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Glucose\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001815\",\n          \"gmo_id\": \"GMO_001815\",\n          \"label\":
+    \"Glucose\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\":
+    \"Carbon source\"\n            }\n          ]\n        }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[3]", "source_key":
+    "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at":
+    "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\":
+    5,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\":
+    5.55062,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q11", "subject": "Bacto agar (BD-Difco)
+    — generated target", "local_fields": [{"record_path": "data/merge_yaml/merged/B_MEDIUM.yaml",
+    "field_path": "ingredients[5].concentration", "original": {"value": "15", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe; provider-normalized
+    rate", "interpretation": "The source batch mass agrees with this field, and current
+    MediaDive explicitly supplies the matching g_l with main solution volume 1000.
+    Credit that provider-normalized rate while retaining TOGO raw batch units separately.
+    Current JCM 458 is unavailable, so this is not fresh primary confirmation. The
+    source names BD-Difco Bacto agar. The owner already added the generic agar CHEBI:2509/MIM
+    linkage; this does not identify a commercial lot or fixed molecular formula.",
+    "sources": [{"locator": "$.components[0].items[5]", "source_key": "togoM458",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458",
+    "source_raw_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d",
+    "source_text_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d",
+    "accessed_at": "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Bacto agar (BD-Difco)\",\n          \"volume\": 15,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001130\",\n          \"gmo_id\": \"GMO_001130\",\n          \"label\":
+    \"Bacto &trade; Agar\",\n          \"properties\": [],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000048\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000048\",\n              \"label\":
+    \"Solidifying component\"\n            }\n          ]\n        }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[6]", "source_key":
+    "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at":
+    "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Agar\",\n                        \"compound_id\":
+    3,\n                        \"attribute\": \"BD-Difco, Bacto \",\n                        \"amount\":
+    15,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    15,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q12", "subject": "Bacto agar (BD-Difco)
+    — maintained owner", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/TOGO_M458_B_Medium.yaml",
+    "field_path": "ingredients[5].concentration", "original": {"value": "15.0", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe; provider-normalized
+    rate", "interpretation": "The source batch mass agrees with this field, and current
+    MediaDive explicitly supplies the matching g_l with main solution volume 1000.
+    Credit that provider-normalized rate while retaining TOGO raw batch units separately.
+    Current JCM 458 is unavailable, so this is not fresh primary confirmation. The
+    source names BD-Difco Bacto agar. The owner already added the generic agar CHEBI:2509/MIM
+    linkage; this does not identify a commercial lot or fixed molecular formula.",
+    "sources": [{"locator": "$.components[0].items[5]", "source_key": "togoM458",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458",
+    "source_raw_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d",
+    "source_text_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d",
+    "accessed_at": "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Bacto agar (BD-Difco)\",\n          \"volume\": 15,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001130\",\n          \"gmo_id\": \"GMO_001130\",\n          \"label\":
+    \"Bacto &trade; Agar\",\n          \"properties\": [],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000048\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000048\",\n              \"label\":
+    \"Solidifying component\"\n            }\n          ]\n        }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[6]", "source_key":
+    "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at":
+    "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Agar\",\n                        \"compound_id\":
+    3,\n                        \"attribute\": \"BD-Difco, Bacto \",\n                        \"amount\":
+    15,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    15,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q13", "subject": "Yeast extract (BD-Difco)
+    — generated target", "local_fields": [{"record_path": "data/merge_yaml/merged/B_MEDIUM.yaml",
+    "field_path": "ingredients[6].concentration", "original": {"value": "2", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe; provider-normalized
+    rate", "interpretation": "The source batch mass agrees with this field, and current
+    MediaDive explicitly supplies the matching g_l with main solution volume 1000.
+    Credit that provider-normalized rate while retaining TOGO raw batch units separately.
+    Current JCM 458 is unavailable, so this is not fresh primary confirmation. Preserve
+    the named BD-Difco complex product and its opacity; no pure-compound grounding
+    is required.", "sources": [{"locator": "$.components[0].items[6]", "source_key":
+    "togoM458", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458",
+    "source_raw_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d",
+    "source_text_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d",
+    "accessed_at": "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Yeast extract (BD-Difco)\",\n          \"volume\": 2,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001018\",\n          \"gmo_id\": \"GMO_001018\",\n          \"label\":
+    \"Bacto &trade; Yeast extract\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\":
+    \"Undefined component\"\n            }\n          ],\n          \"roles\": []\n        }",
+    "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[2]",
+    "source_key": "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458",
+    "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4",
+    "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4",
+    "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\":
+    16,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\":
+    2,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    2,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q14", "subject": "Yeast extract (BD-Difco)
+    — maintained owner", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/TOGO_M458_B_Medium.yaml",
+    "field_path": "ingredients[6].concentration", "original": {"value": "2.0", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe; provider-normalized
+    rate", "interpretation": "The source batch mass agrees with this field, and current
+    MediaDive explicitly supplies the matching g_l with main solution volume 1000.
+    Credit that provider-normalized rate while retaining TOGO raw batch units separately.
+    Current JCM 458 is unavailable, so this is not fresh primary confirmation. Preserve
+    the named BD-Difco complex product and its opacity; no pure-compound grounding
+    is required.", "sources": [{"locator": "$.components[0].items[6]", "source_key":
+    "togoM458", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458",
+    "source_raw_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d",
+    "source_text_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d",
+    "accessed_at": "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Yeast extract (BD-Difco)\",\n          \"volume\": 2,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001018\",\n          \"gmo_id\": \"GMO_001018\",\n          \"label\":
+    \"Bacto &trade; Yeast extract\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\":
+    \"Undefined component\"\n            }\n          ],\n          \"roles\": []\n        }",
+    "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[2]",
+    "source_key": "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458",
+    "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4",
+    "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4",
+    "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\":
+    16,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\":
+    2,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    2,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q15", "subject": "Bacto peptone (BD-Difco)
+    — generated target", "local_fields": [{"record_path": "data/merge_yaml/merged/B_MEDIUM.yaml",
+    "field_path": "ingredients[7].concentration", "original": {"value": "2", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe; provider-normalized
+    rate", "interpretation": "The source batch mass agrees with this field, and current
+    MediaDive explicitly supplies the matching g_l with main solution volume 1000.
+    Credit that provider-normalized rate while retaining TOGO raw batch units separately.
+    Current JCM 458 is unavailable, so this is not fresh primary confirmation. Preserve
+    the named BD-Difco complex product and its opacity; no pure-compound grounding
+    is required.", "sources": [{"locator": "$.components[0].items[7]", "source_key":
+    "togoM458", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458",
+    "source_raw_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d",
+    "source_text_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d",
+    "accessed_at": "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Bacto peptone (BD-Difco)\",\n          \"volume\": 2,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001089\",\n          \"gmo_id\": \"GMO_001089\",\n          \"label\":
+    \"Bacto &trade; Peptone\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\":
+    \"Undefined component\"\n            }\n          ],\n          \"roles\": []\n        }",
+    "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[0]",
+    "source_key": "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458",
+    "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4",
+    "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4",
+    "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Bacto peptone\",\n                        \"compound_id\":
+    19,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\":
+    2,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    2,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q16", "subject": "Bacto peptone (BD-Difco)
+    — maintained owner", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/TOGO_M458_B_Medium.yaml",
+    "field_path": "ingredients[7].concentration", "original": {"value": "2.0", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe; provider-normalized
+    rate", "interpretation": "The source batch mass agrees with this field, and current
+    MediaDive explicitly supplies the matching g_l with main solution volume 1000.
+    Credit that provider-normalized rate while retaining TOGO raw batch units separately.
+    Current JCM 458 is unavailable, so this is not fresh primary confirmation. Preserve
+    the named BD-Difco complex product and its opacity; no pure-compound grounding
+    is required.", "sources": [{"locator": "$.components[0].items[7]", "source_key":
+    "togoM458", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458",
+    "source_raw_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d",
+    "source_text_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d",
+    "accessed_at": "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Bacto peptone (BD-Difco)\",\n          \"volume\": 2,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001089\",\n          \"gmo_id\": \"GMO_001089\",\n          \"label\":
+    \"Bacto &trade; Peptone\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\":
+    \"Undefined component\"\n            }\n          ],\n          \"roles\": []\n        }",
+    "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[0]",
+    "source_key": "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458",
+    "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4",
+    "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4",
+    "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Bacto peptone\",\n                        \"compound_id\":
+    19,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\":
+    2,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    2,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q17", "subject": "Casamino acids (BD-Difco)
+    — generated target", "local_fields": [{"record_path": "data/merge_yaml/merged/B_MEDIUM.yaml",
+    "field_path": "ingredients[8].concentration", "original": {"value": "2", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe; provider-normalized
+    rate", "interpretation": "The source batch mass agrees with this field, and current
+    MediaDive explicitly supplies the matching g_l with main solution volume 1000.
+    Credit that provider-normalized rate while retaining TOGO raw batch units separately.
+    Current JCM 458 is unavailable, so this is not fresh primary confirmation. Preserve
+    the named BD-Difco complex product and its opacity; no pure-compound grounding
+    is required.", "sources": [{"locator": "$.components[0].items[8]", "source_key":
+    "togoM458", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458",
+    "source_raw_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d",
+    "source_text_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d",
+    "accessed_at": "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Casamino acids (BD-Difco)\",\n          \"volume\": 2,\n          \"unit\":
+    \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001705\",\n          \"gmo_id\":
+    \"GMO_001705\",\n          \"label\": \"Bacto &trade; Casamino acids\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined
+    component\"\n            }\n          ],\n          \"roles\": []\n        }",
+    "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[1]",
+    "source_key": "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458",
+    "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4",
+    "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4",
+    "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Casamino acids\",\n                        \"compound_id\":
+    101,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\":
+    2,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    2,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q18", "subject": "Casamino acids (BD-Difco)
+    — maintained owner", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/TOGO_M458_B_Medium.yaml",
+    "field_path": "ingredients[8].concentration", "original": {"value": "2.0", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main recipe; provider-normalized
+    rate", "interpretation": "The source batch mass agrees with this field, and current
+    MediaDive explicitly supplies the matching g_l with main solution volume 1000.
+    Credit that provider-normalized rate while retaining TOGO raw batch units separately.
+    Current JCM 458 is unavailable, so this is not fresh primary confirmation. Preserve
+    the named BD-Difco complex product and its opacity; no pure-compound grounding
+    is required.", "sources": [{"locator": "$.components[0].items[8]", "source_key":
+    "togoM458", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458",
+    "source_raw_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d",
+    "source_text_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d",
+    "accessed_at": "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Casamino acids (BD-Difco)\",\n          \"volume\": 2,\n          \"unit\":
+    \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001705\",\n          \"gmo_id\":
+    \"GMO_001705\",\n          \"label\": \"Bacto &trade; Casamino acids\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined
+    component\"\n            }\n          ],\n          \"roles\": []\n        }",
+    "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[1]",
+    "source_key": "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458",
+    "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4",
+    "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4",
+    "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Casamino acids\",\n                        \"compound_id\":
+    101,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\":
+    2,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    2,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q19", "subject": "pH range and adjustment
+    already repaired in owner", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/TOGO_M458_B_Medium.yaml",
+    "field_path": "ph_range", "original": {"min": 7.5, "max": 7.8}}, {"record_path":
+    "data/normalized_yaml/bacterial/TOGO_M458_B_Medium.yaml", "field_path": "preparation_steps[0].description",
+    "original": "Adjust pH to 7.5-7.8."}], "decision": "evidence_only", "stage": "pH
+    adjustment", "interpretation": "TOGO and the MediaDive preparation step specify
+    7.5–7.8. Credit the owner range and preparation; regenerate the stale target that
+    omits them. MediaDive medium metadata gives 7.7, a narrower single value, and
+    must not overwrite the explicit preparation range.", "sources": [{"locator": "$.comments[0]",
+    "source_key": "togoM458", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458",
+    "source_raw_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d",
+    "source_text_sha256": "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d",
+    "accessed_at": "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n      \"paragraph_index\":
+    2,\n      \"comment\": \"Adjust pH to 7.5 -- 7.8.\"\n    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[0].steps[0]", "source_key":
+    "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at":
+    "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"step\":
+    \"Adjust pH to 7.5 - 7.8.\"\n                    }", "quote_representation": "raw
+    JSON object"}, {"locator": "$.data.medium", "source_key": "apiJ458", "reference":
+    "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4",
+    "source_text_sha256": "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4",
+    "accessed_at": "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n            \"id\":
+    \"J458\",\n            \"name\": \"B MEDIUM\",\n            \"complex_medium\":
+    \"yes\",\n            \"min_pH\": 7.7,\n            \"max_pH\": 7.7,\n            \"source\":
+    \"JCM\",\n            \"link\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=458\"\n        }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q20", "subject":
+    "Relationship parent: Distilled water", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/b_medium.yaml",
+    "field_path": "ingredients[0].concentration", "original": {"value": "500.0", "unit":
+    "ML_PER_L"}}], "decision": "evidence_only", "stage": "separate relationship context",
+    "interpretation": "Current parent quantity matches the repaired selected owner
+    and the provider recipe. It is comparison context only; matching values and a
+    historical signature do not independently prove all source formulations or histories
+    equivalent.", "sources": [{"locator": "$.data.solutions[0].recipe[8]", "source_key":
+    "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at":
+    "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 500,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q21", "subject": "Relationship parent:
+    MgSO4・7H2O", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/b_medium.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "separate relationship context",
+    "interpretation": "Current parent quantity matches the repaired selected owner
+    and the provider recipe. It is comparison context only; matching values and a
+    historical signature do not independently prove all source formulations or histories
+    equivalent.", "sources": [{"locator": "$.data.solutions[0].recipe[5]", "source_key":
+    "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at":
+    "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\":
+    8,\n                        \"amount\": 0.05,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.20286,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q22", "subject": "Relationship parent:
+    KH2PO4", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/b_medium.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "0.2", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "separate relationship context",
+    "interpretation": "Current parent quantity matches the repaired selected owner
+    and the provider recipe. It is comparison context only; matching values and a
+    historical signature do not independently prove all source formulations or histories
+    equivalent.", "sources": [{"locator": "$.data.solutions[0].recipe[4]", "source_key":
+    "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at":
+    "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 0.2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\":
+    1.46966,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q23", "subject": "Relationship parent:
+    Seawater", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/b_medium.yaml",
+    "field_path": "ingredients[3].concentration", "original": {"value": "500.0", "unit":
+    "ML_PER_L"}}], "decision": "evidence_only", "stage": "separate relationship context",
+    "interpretation": "Current parent quantity matches the repaired selected owner
+    and the provider recipe. It is comparison context only; matching values and a
+    historical signature do not independently prove all source formulations or histories
+    equivalent.", "sources": [{"locator": "$.data.solutions[0].recipe[7]", "source_key":
+    "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at":
+    "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Sea water\",\n                        \"compound_id\":
+    286,\n                        \"amount\": 500,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q24", "subject": "Relationship parent:
+    Glucose", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/b_medium.yaml",
+    "field_path": "ingredients[4].concentration", "original": {"value": "1.0", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "separate relationship context",
+    "interpretation": "Current parent quantity matches the repaired selected owner
+    and the provider recipe. It is comparison context only; matching values and a
+    historical signature do not independently prove all source formulations or histories
+    equivalent.", "sources": [{"locator": "$.data.solutions[0].recipe[3]", "source_key":
+    "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at":
+    "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\":
+    5,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\":
+    5.55062,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q25", "subject": "Relationship parent:
+    Bacto agar (BD-Difco)", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/b_medium.yaml",
+    "field_path": "ingredients[5].concentration", "original": {"value": "15.0", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "separate relationship context",
+    "interpretation": "Current parent quantity matches the repaired selected owner
+    and the provider recipe. It is comparison context only; matching values and a
+    historical signature do not independently prove all source formulations or histories
+    equivalent.", "sources": [{"locator": "$.data.solutions[0].recipe[6]", "source_key":
+    "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at":
+    "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Agar\",\n                        \"compound_id\":
+    3,\n                        \"attribute\": \"BD-Difco, Bacto \",\n                        \"amount\":
+    15,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    15,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q26", "subject": "Relationship parent:
+    Yeast extract (BD-Difco)", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/b_medium.yaml",
+    "field_path": "ingredients[6].concentration", "original": {"value": "2.0", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "separate relationship context",
+    "interpretation": "Current parent quantity matches the repaired selected owner
+    and the provider recipe. It is comparison context only; matching values and a
+    historical signature do not independently prove all source formulations or histories
+    equivalent.", "sources": [{"locator": "$.data.solutions[0].recipe[2]", "source_key":
+    "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at":
+    "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\":
+    16,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\":
+    2,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    2,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q27", "subject": "Relationship parent:
+    Bacto peptone (BD-Difco)", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/b_medium.yaml",
+    "field_path": "ingredients[7].concentration", "original": {"value": "2.0", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "separate relationship context",
+    "interpretation": "Current parent quantity matches the repaired selected owner
+    and the provider recipe. It is comparison context only; matching values and a
+    historical signature do not independently prove all source formulations or histories
+    equivalent.", "sources": [{"locator": "$.data.solutions[0].recipe[0]", "source_key":
+    "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at":
+    "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Bacto peptone\",\n                        \"compound_id\":
+    19,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\":
+    2,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    2,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q28", "subject": "Relationship parent:
+    Casamino acids (BD-Difco)", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/b_medium.yaml",
+    "field_path": "ingredients[8].concentration", "original": {"value": "2.0", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "separate relationship context",
+    "interpretation": "Current parent quantity matches the repaired selected owner
+    and the provider recipe. It is comparison context only; matching values and a
+    historical signature do not independently prove all source formulations or histories
+    equivalent.", "sources": [{"locator": "$.data.solutions[0].recipe[1]", "source_key":
+    "apiJ458", "reference": "https://mediadive.dsmz.de/rest/medium/J458", "source_raw_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "source_text_sha256":
+    "6dc07f434f95f1ef449d52b9e46124fb16a41cabafca94f2cce90a8a283327a4", "accessed_at":
+    "2026-10-28T04:00:58.214462Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Casamino acids\",\n                        \"compound_id\":
+    101,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\":
+    2,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    2,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q29", "subject": "Relationship parent pH",
+    "local_fields": [{"record_path": "data/normalized_yaml/bacterial/b_medium.yaml",
+    "field_path": "ph_range", "original": {"min": 7.5, "max": 7.8}}, {"record_path":
+    "data/normalized_yaml/bacterial/b_medium.yaml", "field_path": "preparation_steps[0].description",
+    "original": "Adjust pH to 7.5-7.8."}], "decision": "evidence_only", "stage": "separate
+    relationship context", "interpretation": "The parent retains the same 7.5–7.8
+    adjustment range; preserve it as context without changing the exact maintained-owner
+    set.", "sources": [{"locator": "$.comments[0]", "source_key": "togoM458", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M458", "source_raw_sha256":
+    "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "source_text_sha256":
+    "f7559e9b97db747aeefc55571acee8fe77ab3d49ccebce9b0873ef919bc9ff1d", "accessed_at":
+    "2026-10-28T04:00:58.198002Z", "exact_source_quote": "{\n      \"paragraph_index\":
+    2,\n      \"comment\": \"Adjust pH to 7.5 -- 7.8.\"\n    }", "quote_representation":
+    "raw JSON object"}]}], "local_field_census_reference": "REVIEW_WORK/batch054/record06/grounding-inventory.json",
+    "source_only_gaps_are_explicit": true, "note": "Batch amounts, provider normalization,
+    stock composition, working dose and preparation controls are separate. No source
+    edits or automatic curation performed."}'
+- assessment_id: a5
+  area: grounding
+  topic: Primary, secondary and legacy linkage census
+  outcome: supported
+  summary: 'data/merge_yaml/merged/B_MEDIUM.yaml: primary 4/9, secondary 3/9; data/normalized_yaml/bacterial/TOGO_M458_B_Medium.yaml:
+    primary 5/9, secondary 5/9. Counts are ingredient instances in each selected document,
+    not chemical accuracy. Every asserted CHEBI slot has an exact current OLS label
+    match and a current MIM identifier row; MAPPED and REJECTED alias rows remain
+    distinct. Zero numeric legacy MediaIngredientMech identifiers occur in the complete
+    selected documents; the history placeholder NNNNNN is not an identifier. Chemical-form
+    findings are assessed separately. Complex mixtures are not forced to pure-compound
+    IDs.'
+  target_ids:
+  - CultureMech:009845
+  evidence_ids:
+  - grounding
+- assessment_id: a6
+  area: scope
+  topic: Growth claims and classification
+  outcome: supported
+  summary: The selected source identity is a bacterial cultivation formulation; physical
+    state and undefined complex composition are coherent. No target-organism, strain-growth
+    or performance claim is asserted. Generic application text is not evidence of
+    demonstrated growth; no strain extrapolation or optimization is proposed.
+  target_ids:
+  - CultureMech:009845
+  evidence_ids:
+  - local0
+- assessment_id: a7
+  area: schema
+  topic: Native structural checks
+  outcome: supported
+  summary: All four canonical commands passed once; strict schema TSV contains only
+    its header and reference validation checked zero references on the generated target.
+    This does not certify quantities or chemical forms.
+  target_ids:
+  - CultureMech:009845
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: batch054-06-stale-generated
+  category: provenance
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generated B medium omits completed owner repairs
+  description: The generated target still represents water and seawater as 500 G_PER_L
+    and lacks the owner pH range, adjustment step, magnesium secondary linkage, agar
+    linkage and source references. The maintained owner has already corrected these
+    fields; unchanged mass values and commercial-product qualifiers should be retained.
+  target_ids:
+  - CultureMech:009845
+  field_paths:
+  - ingredients[0].concentration
+  - ingredients[3].concentration
+  - ingredients[1].mediaingredientmech_chebi_term
+  - ingredients[5].term
+  - ingredients[5].mediaingredientmech_chebi_term
+  - ph_range
+  - preparation_steps
+  - references
+  evidence_ids:
+  - local0
+  - local1
+  - togoM458
+  - apiJ458
+  - grounding
+  rule_id: generated-record-freshness
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M458_B_Medium.yaml
+    role: maintained normalized contributor
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the generated target retains
+    wrong liquid units and omits completed, source-supported owner repairs across
+    preparation, pH, grounding and references.
+- finding_id: f2
+  issue_key: batch054-06-claim-evidence
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Recipe claims lack attached source evidence and precise basis
+  description: The owner has useful references, notes and a source-specific repair
+    history, but zero attached formulation evidence claims. Its per-litre presentation
+    should explicitly credit the current MediaDive volume/g_l basis and distinguish
+    TOGO batch units from unavailable primary confirmation. The target lacks the owner
+    references entirely.
+  target_ids:
+  - CultureMech:009845
+  field_paths:
+  - ingredients[*].evidence
+  - references
+  - notes
+  evidence_ids:
+  - local1
+  - grounding
+  - togoM458
+  - apiJ458
+  - jcm458
+  rule_id: source-specific-formulation-fidelity
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M458_B_Medium.yaml
+    role: maintained normalized contributor
+  native_severity: P3
+  normalization_reason: P3 is normalized to minor because missing attached claim evidence
+    and basis annotations limit traceability; useful current owner references and
+    repair history are retained.
+actions:
+- action_id: action1
+  description: Verify the existing owner repair and regenerate the stale target through
+    the current conservative merge path. Preserve all correct owner data and source
+    limitations; no duplicate owner correction or generated-file hand edit is needed.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:009845
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M458_B_Medium.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action2
+  description: Attach narrowly scoped current provider excerpts and basis annotations
+    without erasing existing references or repair history. Retain the primary-unavailable
+    limitation and the explicit pH range instead of promoting provider metadata 7.7
+    to the only supported range.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:009845
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M458_B_Medium.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+limitations:
+- Current JCM 458 returns HTTP 200 with Nothing found; no primary recipe, generic
+  sterilization instruction or culture condition is inferred from that response.
+- MediaDive explicitly supplies main volume 1000 and g_l values; these are provider
+  normalization, not a measured final-volume statement from TOGO or an authenticated
+  current JCM recipe.
+- Historical reports and repair code were read as provenance and reassessed with current
+  captures; no historical raw authenticity or strain-growth claim is inferred. Current
+  index membership does not establish past mapping validity.
+notes:
+- Read-only scientific review. No source edits, native save, Git mutation or publication.
+  All raw captures, failed access bodies, commands, times and original stdout/stderr
+  remain in the adjacent private evidence directory.
+```
