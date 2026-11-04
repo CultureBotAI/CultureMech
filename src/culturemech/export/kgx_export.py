@@ -272,6 +272,21 @@ def transform(
                 seen_protein_edge_ids.add(edge_id)
             yield edge
 
+    # Edge Type 12: Curated Growth-Media Causal Graphs (#658)
+    seen_causal_edge_ids: set[str] = set()
+    for causal_edge, inherited_organism_id in _iter_causal_edges_for_export(record):
+        for edge in causal_edge_to_edges(
+            medium_id,
+            causal_edge,
+            inherited_organism_id=inherited_organism_id,
+        ):
+            edge_id = edge.get("id")
+            if edge_id in seen_causal_edge_ids:
+                continue
+            if edge_id:
+                seen_causal_edge_ids.add(edge_id)
+            yield edge
+
 
 # ================================================================
 # NODE EXTRACTION (#294)
@@ -494,6 +509,22 @@ def nodes(record: dict[str, Any]) -> Iterator[dict[str, Any]]:
                     name=str(uniprot_label or uniprot_id),
                 )
             )
+
+    for causal_edge, _organism_id in _iter_causal_edges_for_export(record):
+        for pt in causal_edge.get("protein_terms") or []:
+            if not isinstance(pt, dict):
+                continue
+            uniprot_id = pt.get("id")
+            uniprot_label = pt.get("label")
+            if uniprot_id and uniprot_id not in seen_proteins:
+                seen_proteins.add(uniprot_id)
+                yield asdict(
+                    Node(
+                        id=uniprot_id,
+                        category=[PROTEIN],
+                        name=str(uniprot_label or uniprot_id),
+                    )
+                )
 
 
 # ================================================================
@@ -1034,6 +1065,141 @@ def protein_example_to_edges(
             ],
             publications=publications,
         )
+
+
+_CAUSAL_PREDICATE_MAP = {
+    "CAUSES": "biolink:causes",
+    "POSITIVELY_REGULATES": "biolink:positively_regulates",
+    "NEGATIVELY_REGULATES": "biolink:negatively_regulates",
+    "ENABLES_GROWTH": "biolink:positively_regulates",
+    "INHIBITS_GROWTH": "biolink:negatively_regulates",
+    "PROVIDES_COFACTOR_FOR": "biolink:positively_regulates",
+    "TRANSPORTS_SUBSTRATE": "biolink:positively_regulates",
+    "AFFECTS": "biolink:affects",
+}
+
+
+def _iter_causal_edges_for_export(
+    record: dict[str, Any],
+) -> Iterator[tuple[dict[str, Any], str | None]]:
+    """Yield (causal_edge_dict, inherited_organism_id) across a record."""
+    for edge in record.get("causal_graphs") or []:
+        if isinstance(edge, dict):
+            yield edge, None
+
+    for organism in record.get("target_organisms") or []:
+        if not isinstance(organism, dict):
+            continue
+        org_id = _get_term_id(organism, ["term", "id"])
+        for edge in organism.get("causal_graphs") or []:
+            if isinstance(edge, dict):
+                yield edge, org_id
+
+
+def causal_edge_to_edges(
+    medium_id: str,
+    causal_edge: dict[str, Any],
+    *,
+    inherited_organism_id: str | None = None,
+) -> Iterator[dict[str, Any]]:
+    """Emit KGX edges for a curated CausalEdge (#658).
+
+    Emits:
+    - Subject (subject_term.id) -> biolink causal predicate -> Object (object_term.id)
+    - Medium (CultureMech) -> biolink:related_to -> Subject (subject_term.id)
+    - Subject (subject_term.id) -> biolink:affects -> Organism (NCBITaxon), when organism context is distinct
+    - Subject (subject_term.id) -> biolink:interacts_with -> Protein (UniProtKB), for any protein_terms
+    - Protein (UniProtKB) -> biolink:in_taxon -> Organism (NCBITaxon), when organism context is present
+    """
+    subject_id = _get_term_id(causal_edge, ["subject_term", "id"])
+    object_id = _get_term_id(causal_edge, ["object_term", "id"])
+    predicate_token = causal_edge.get("predicate")
+    if not (subject_id and object_id and predicate_token):
+        return
+
+    biolink_pred = _CAUSAL_PREDICATE_MAP.get(str(predicate_token), "biolink:affects")
+    organism_id = _get_term_id(causal_edge, ["organism_term", "id"]) or inherited_organism_id
+
+    pubs, _ = _format_evidence(causal_edge.get("evidence"))
+    publications = pubs if pubs else None
+
+    context_qualifiers: list[dict[str, str]] = []
+    condition_context = causal_edge.get("condition_context")
+    if isinstance(condition_context, str) and condition_context.strip():
+        context_qualifiers.append(
+            {"qualifier_type_id": "biolink:role", "qualifier_value": condition_context.strip()}
+        )
+
+    yield _make_association(
+        subject=subject_id,
+        predicate=biolink_pred,
+        obj=object_id,
+        qualifiers=[
+            {
+                "qualifier_type_id": "biolink:relationship_type",
+                "qualifier_value": f"causal_edge:{predicate_token}",
+            },
+            *context_qualifiers,
+        ],
+        publications=publications,
+    )
+
+    yield _make_association(
+        subject=medium_id,
+        predicate="biolink:related_to",
+        obj=subject_id,
+        qualifiers=[
+            {
+                "qualifier_type_id": "biolink:relationship_type",
+                "qualifier_value": "causal_mechanism_component",
+            },
+            *context_qualifiers,
+        ],
+        publications=publications,
+    )
+
+    if organism_id and organism_id not in (subject_id, object_id):
+        yield _make_association(
+            subject=subject_id,
+            predicate="biolink:affects",
+            obj=organism_id,
+            qualifiers=[
+                {
+                    "qualifier_type_id": "biolink:relationship_type",
+                    "qualifier_value": "causal_edge_organism_context",
+                },
+                *context_qualifiers,
+            ],
+            publications=publications,
+        )
+
+    for pt in causal_edge.get("protein_terms") or []:
+        if not isinstance(pt, dict):
+            continue
+        uniprot_id = pt.get("id")
+        if not uniprot_id:
+            continue
+        yield _make_association(
+            subject=subject_id,
+            predicate="biolink:interacts_with",
+            obj=uniprot_id,
+            qualifiers=[
+                {
+                    "qualifier_type_id": "biolink:relationship_type",
+                    "qualifier_value": "causal_edge_protein_mediator",
+                },
+                *context_qualifiers,
+            ],
+            publications=publications,
+        )
+        if organism_id:
+            yield _make_association(
+                subject=uniprot_id,
+                predicate="biolink:in_taxon",
+                obj=organism_id,
+                qualifiers=context_qualifiers if context_qualifiers else None,
+                publications=publications,
+            )
 
 
 # ================================================================

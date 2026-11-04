@@ -274,6 +274,12 @@ just apply-protein-examples proposals.yaml data/normalized_yaml --dry-run
 just validate-protein-examples data/normalized_yaml
 ```
 
+For curated growth-media causal mechanism edges (`causal_graphs` on `MediaRecipe` or `OrganismDescriptor`), use the maintained writer and validator:
+```bash
+just apply-causal-graphs proposals.yaml data/normalized_yaml --dry-run
+just validate-causal-graphs data/normalized_yaml
+```
+
 ---
 
 ## Validation

@@ -1,5 +1,5 @@
 # Auto generated from culturemech.yaml by pythongen.py version: 0.0.1
-# Generation date: 2026-10-24T22:28:48
+# Generation date: 2026-11-04T02:20:34
 # Schema: culturemech
 #
 # id: https://w3id.org/culturemech
@@ -69,21 +69,26 @@ ATCC = CurieNamespace('ATCC', 'https://www.atcc.org/products/')
 BIOSAMPLE = CurieNamespace('BioSample', 'https://www.ncbi.nlm.nih.gov/biosample/')
 CCAP = CurieNamespace('CCAP', 'https://www.ccap.ac.uk/catalogue/strain-')
 CHEBI = CurieNamespace('CHEBI', 'http://purl.obolibrary.org/obo/CHEBI_')
+CAUSALEDGE = CurieNamespace('CausalEdge', 'https://w3id.org/culturemech/CausalEdge/')
 CULTUREMECH = CurieNamespace('CultureMech', 'https://w3id.org/culturemech/')
 DOI = CurieNamespace('DOI', 'https://doi.org/')
 DSMZ = CurieNamespace('DSMZ', 'https://mediadive.dsmz.de/medium/')
 EC = CurieNamespace('EC', 'https://enzyme.expasy.org/EC/')
 ENVO = CurieNamespace('ENVO', 'http://purl.obolibrary.org/obo/ENVO_')
 FOODON = CurieNamespace('FOODON', 'http://purl.obolibrary.org/obo/FOODON_')
+GO = CurieNamespace('GO', 'http://purl.obolibrary.org/obo/GO_')
 GTDB = CurieNamespace('GTDB', 'https://gtdb.ecogenomic.org/genome?gid=')
 GENBANK = CurieNamespace('GenBank', 'https://www.ncbi.nlm.nih.gov/assembly/')
 KEGG = CurieNamespace('KEGG', 'https://www.genome.jp/entry/')
+METPO = CurieNamespace('METPO', 'http://purl.obolibrary.org/obo/METPO_')
 MICRO = CurieNamespace('MICRO', 'http://example.org/UNKNOWN/MICRO/')
 MEDIAINGREDIENTMECH = CurieNamespace('MediaIngredientMech', 'http://example.org/UNKNOWN/MediaIngredientMech/')
 NCBITAXON = CurieNamespace('NCBITaxon', 'http://purl.obolibrary.org/obo/NCBITaxon_')
 NCIT = CurieNamespace('NCIT', 'http://purl.obolibrary.org/obo/NCIT_')
 OBI = CurieNamespace('OBI', 'http://purl.obolibrary.org/obo/OBI_')
+PATO = CurieNamespace('PATO', 'http://purl.obolibrary.org/obo/PATO_')
 PMID = CurieNamespace('PMID', 'http://www.ncbi.nlm.nih.gov/pubmed/')
+RO = CurieNamespace('RO', 'http://purl.obolibrary.org/obo/RO_')
 REFSEQ = CurieNamespace('RefSeq', 'https://www.ncbi.nlm.nih.gov/datasets/genome/')
 SAG = CurieNamespace('SAG', 'https://sagdb.uni-goettingen.de/detailedList.php?str_number=')
 TOGO = CurieNamespace('TOGO', 'http://togodb.org/db/medium/')
@@ -133,6 +138,10 @@ class EvidenceItemReference(extended_str):
     pass
 
 
+class CausalEdgeId(extended_str):
+    pass
+
+
 class ChemicalEntityTermId(TermId):
     pass
 
@@ -170,6 +179,10 @@ class EnvironmentTermId(TermId):
 
 
 class UniProtTermId(TermId):
+    pass
+
+
+class CausalTermId(TermId):
     pass
 
 
@@ -245,6 +258,7 @@ class MediaRecipe(YAMLRoot):
     incubation_atmosphere: Optional[Union[str, "AtmosphereEnum"]] = None
     source_data: Optional[Union[dict, "SourceData"]] = None
     protein_examples: Optional[Union[Union[dict, "ProteinExample"], list[Union[dict, "ProteinExample"]]]] = empty_list()
+    causal_graphs: Optional[Union[dict[Union[str, CausalEdgeId], Union[dict, "CausalEdge"]], list[Union[dict, "CausalEdge"]]]] = empty_dict()
 
     def __post_init__(self, *_: str, **kwargs: Any):
         if self._is_empty(self.id):
@@ -431,6 +445,8 @@ class MediaRecipe(YAMLRoot):
         if not isinstance(self.protein_examples, list):
             self.protein_examples = [self.protein_examples] if self.protein_examples is not None else []
         self.protein_examples = [v if isinstance(v, ProteinExample) else ProteinExample(**as_dict(v)) for v in self.protein_examples]
+
+        self._normalize_inlined_as_list(slot_name="causal_graphs", slot_type=CausalEdge, key_name="id", keyed=True)
 
         super().__post_init__(**kwargs)
 
@@ -941,6 +957,7 @@ class OrganismDescriptor(Descriptor):
     evidence: Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]], list[Union[dict, "EvidenceItem"]]]] = empty_dict()
     strain_modifications: Optional[Union[Union[dict, "StrainModification"], list[Union[dict, "StrainModification"]]]] = empty_list()
     protein_examples: Optional[Union[Union[dict, "ProteinExample"], list[Union[dict, "ProteinExample"]]]] = empty_list()
+    causal_graphs: Optional[Union[dict[Union[str, CausalEdgeId], Union[dict, "CausalEdge"]], list[Union[dict, "CausalEdge"]]]] = empty_dict()
 
     def __post_init__(self, *_: str, **kwargs: Any):
         if self._is_empty(self.preferred_term):
@@ -993,6 +1010,8 @@ class OrganismDescriptor(Descriptor):
         if not isinstance(self.protein_examples, list):
             self.protein_examples = [self.protein_examples] if self.protein_examples is not None else []
         self.protein_examples = [v if isinstance(v, ProteinExample) else ProteinExample(**as_dict(v)) for v in self.protein_examples]
+
+        self._normalize_inlined_as_list(slot_name="causal_graphs", slot_type=CausalEdge, key_name="id", keyed=True)
 
         super().__post_init__(**kwargs)
 
@@ -2160,6 +2179,69 @@ class ProteinExample(YAMLRoot):
 
 
 @dataclass(repr=False)
+class CausalEdge(YAMLRoot):
+    """
+    A directed, evidence-backed causal mechanism edge describing how a growth-medium ingredient, cofactor,
+    environmental condition, or genetic perturbation causally enables, regulates, or inhibits organism growth,
+    transport, or physiology in the context of a medium formulation.
+    """
+    _inherited_slots: ClassVar[list[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = CULTUREMECH["CausalEdge"]
+    class_class_curie: ClassVar[str] = "culturemech:CausalEdge"
+    class_name: ClassVar[str] = "CausalEdge"
+    class_model_uri: ClassVar[URIRef] = CULTUREMECH.CausalEdge
+
+    id: Union[str, CausalEdgeId] = None
+    subject_term: Union[dict, "CausalTerm"] = None
+    predicate: Union[str, "CausalPredicateEnum"] = None
+    object_term: Union[dict, "CausalTerm"] = None
+    evidence: Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]] = empty_dict()
+    organism_term: Optional[Union[dict, "OrganismTerm"]] = None
+    protein_terms: Optional[Union[dict[Union[str, UniProtTermId], Union[dict, "UniProtTerm"]], list[Union[dict, "UniProtTerm"]]]] = empty_dict()
+    condition_context: Optional[str] = None
+    notes: Optional[str] = None
+
+    def __post_init__(self, *_: str, **kwargs: Any):
+        if self._is_empty(self.id):
+            self.MissingRequiredField("id")
+        if not isinstance(self.id, CausalEdgeId):
+            self.id = CausalEdgeId(self.id)
+
+        if self._is_empty(self.subject_term):
+            self.MissingRequiredField("subject_term")
+        if not isinstance(self.subject_term, CausalTerm):
+            self.subject_term = CausalTerm(**as_dict(self.subject_term))
+
+        if self._is_empty(self.predicate):
+            self.MissingRequiredField("predicate")
+        if not isinstance(self.predicate, CausalPredicateEnum):
+            self.predicate = CausalPredicateEnum(self.predicate)
+
+        if self._is_empty(self.object_term):
+            self.MissingRequiredField("object_term")
+        if not isinstance(self.object_term, CausalTerm):
+            self.object_term = CausalTerm(**as_dict(self.object_term))
+
+        if self._is_empty(self.evidence):
+            self.MissingRequiredField("evidence")
+        self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
+
+        if self.organism_term is not None and not isinstance(self.organism_term, OrganismTerm):
+            self.organism_term = OrganismTerm(**as_dict(self.organism_term))
+
+        self._normalize_inlined_as_list(slot_name="protein_terms", slot_type=UniProtTerm, key_name="id", keyed=True)
+
+        if self.condition_context is not None and not isinstance(self.condition_context, str):
+            self.condition_context = str(self.condition_context)
+
+        if self.notes is not None and not isinstance(self.notes, str):
+            self.notes = str(self.notes)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass(repr=False)
 class ChemicalEntityTerm(Term):
     """
     A term identifying a chemical or biological ingredient. Primarily CHEBI, with FOODON / UBERON / ENVO accepted for
@@ -2401,6 +2483,38 @@ class UniProtTerm(Term):
             self.MissingRequiredField("id")
         if not isinstance(self.id, UniProtTermId):
             self.id = UniProtTermId(self.id)
+
+        if self._is_empty(self.label):
+            self.MissingRequiredField("label")
+        if not isinstance(self.label, str):
+            self.label = str(self.label)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass(repr=False)
+class CausalTerm(Term):
+    """
+    An ontology-grounded entity participating as subject_term or object_term in a growth-medium CausalEdge. Accepts
+    chemical/ingredient terms (CHEBI, FOODON, MICRO), organism taxa (NCBITaxon), biological processes and molecular
+    functions (GO), proteins and enzymes (UniProtKB, EC), pathways (KEGG), and phenotype/environment descriptors
+    (METPO, ENVO, PATO, NCIT, UBERON, CultureMech, MediaIngredientMech).
+    """
+    _inherited_slots: ClassVar[list[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = CULTUREMECH["CausalTerm"]
+    class_class_curie: ClassVar[str] = "culturemech:CausalTerm"
+    class_name: ClassVar[str] = "CausalTerm"
+    class_model_uri: ClassVar[URIRef] = CULTUREMECH.CausalTerm
+
+    id: Union[str, CausalTermId] = None
+    label: str = None
+
+    def __post_init__(self, *_: str, **kwargs: Any):
+        if self._is_empty(self.id):
+            self.MissingRequiredField("id")
+        if not isinstance(self.id, CausalTermId):
+            self.id = CausalTermId(self.id)
 
         if self._is_empty(self.label):
             self.MissingRequiredField("label")
@@ -3797,6 +3911,49 @@ class SynonymTypeEnum(EnumDefinitionImpl):
         description="Type of synonym relationship for an IngredientSynonym.",
     )
 
+class CausalPredicateEnum(EnumDefinitionImpl):
+    """
+    Constrained causal predicate vocabulary for growth-medium CausalEdge assertions, mapped to Relation Ontology (RO)
+    and Biolink predicates.
+    """
+    CAUSES = PermissibleValue(
+        text="CAUSES",
+        description="""Subject causally produces or brings about the object state, process, or phenotype in the medium.""",
+        meaning=RO["0002410"])
+    POSITIVELY_REGULATES = PermissibleValue(
+        text="POSITIVELY_REGULATES",
+        description="""Subject increases the rate, frequency, or extent of the object process or activity in the medium.""",
+        meaning=RO["0002213"])
+    NEGATIVELY_REGULATES = PermissibleValue(
+        text="NEGATIVELY_REGULATES",
+        description="""Subject decreases or represses the rate, frequency, or extent of the object process or activity in the medium.""",
+        meaning=RO["0002212"])
+    ENABLES_GROWTH = PermissibleValue(
+        text="ENABLES_GROWTH",
+        description="""Subject nutrient, cofactor, or condition causally enables or rescues growth of the target organism in the medium.""",
+        meaning=RO["0002327"])
+    INHIBITS_GROWTH = PermissibleValue(
+        text="INHIBITS_GROWTH",
+        description="""Subject selective agent, inhibitor, or condition causally suppresses or prevents growth of the target organism in the medium.""",
+        meaning=RO["0002449"])
+    PROVIDES_COFACTOR_FOR = PermissibleValue(
+        text="PROVIDES_COFACTOR_FOR",
+        description="""Subject medium ingredient or precursor supplies the essential cofactor required for the object enzyme, pathway, or organism growth.""",
+        meaning=RO["0002411"])
+    TRANSPORTS_SUBSTRATE = PermissibleValue(
+        text="TRANSPORTS_SUBSTRATE",
+        description="""Subject transporter or uptake system mediates transport of the object medium nutrient across the cell envelope.""",
+        meaning=RO["0002313"])
+    AFFECTS = PermissibleValue(
+        text="AFFECTS",
+        description="""Subject causally alters or modulates the object state, growth metric, or physiological response in the medium.""",
+        meaning=BIOLINK["affects"])
+
+    _defn = EnumDefinition(
+        name="CausalPredicateEnum",
+        description="""Constrained causal predicate vocabulary for growth-medium CausalEdge assertions, mapped to Relation Ontology (RO) and Biolink predicates.""",
+    )
+
 class DiscussionKindEnum(EnumDefinitionImpl):
     """
     Kind of unresolved / in-progress item captured by a Discussion. Knowledge gaps are represented as a discussion
@@ -4351,6 +4508,9 @@ slots.mediaRecipe__source_data = Slot(uri=CULTUREMECH.source_data, name="mediaRe
 slots.mediaRecipe__protein_examples = Slot(uri=CULTUREMECH.protein_examples, name="mediaRecipe__protein_examples", curie=CULTUREMECH.curie('protein_examples'),
                    model_uri=CULTUREMECH.mediaRecipe__protein_examples, domain=None, range=Optional[Union[Union[dict, ProteinExample], list[Union[dict, ProteinExample]]]])
 
+slots.mediaRecipe__causal_graphs = Slot(uri=CULTUREMECH.causal_graphs, name="mediaRecipe__causal_graphs", curie=CULTUREMECH.curie('causal_graphs'),
+                   model_uri=CULTUREMECH.mediaRecipe__causal_graphs, domain=None, range=Optional[Union[dict[Union[str, CausalEdgeId], Union[dict, CausalEdge]], list[Union[dict, CausalEdge]]]])
+
 slots.solutionRecipe__id = Slot(uri=CULTUREMECH.id, name="solutionRecipe__id", curie=CULTUREMECH.curie('id'),
                    model_uri=CULTUREMECH.solutionRecipe__id, domain=None, range=URIRef,
                    pattern=re.compile(r'^CultureMech:(?!000000)\d{6}$'))
@@ -4650,6 +4810,9 @@ slots.organismDescriptor__strain_modifications = Slot(uri=CULTUREMECH.strain_mod
 
 slots.organismDescriptor__protein_examples = Slot(uri=CULTUREMECH.protein_examples, name="organismDescriptor__protein_examples", curie=CULTUREMECH.curie('protein_examples'),
                    model_uri=CULTUREMECH.organismDescriptor__protein_examples, domain=None, range=Optional[Union[Union[dict, ProteinExample], list[Union[dict, ProteinExample]]]])
+
+slots.organismDescriptor__causal_graphs = Slot(uri=CULTUREMECH.causal_graphs, name="organismDescriptor__causal_graphs", curie=CULTUREMECH.curie('causal_graphs'),
+                   model_uri=CULTUREMECH.organismDescriptor__causal_graphs, domain=None, range=Optional[Union[dict[Union[str, CausalEdgeId], Union[dict, CausalEdge]], list[Union[dict, CausalEdge]]]])
 
 slots.sourceEnvironmentDescriptor__preferred_term = Slot(uri=CULTUREMECH.preferred_term, name="sourceEnvironmentDescriptor__preferred_term", curie=CULTUREMECH.curie('preferred_term'),
                    model_uri=CULTUREMECH.sourceEnvironmentDescriptor__preferred_term, domain=None, range=str)
@@ -5115,6 +5278,34 @@ slots.proteinExample__evidence = Slot(uri=CULTUREMECH.evidence, name="proteinExa
 slots.proteinExample__notes = Slot(uri=CULTUREMECH.notes, name="proteinExample__notes", curie=CULTUREMECH.curie('notes'),
                    model_uri=CULTUREMECH.proteinExample__notes, domain=None, range=Optional[str])
 
+slots.causalEdge__id = Slot(uri=CULTUREMECH.id, name="causalEdge__id", curie=CULTUREMECH.curie('id'),
+                   model_uri=CULTUREMECH.causalEdge__id, domain=None, range=URIRef,
+                   pattern=re.compile(r'^(edge_[A-Za-z0-9_.-]+|CausalEdge:[A-Za-z0-9_.-]+)$'))
+
+slots.causalEdge__subject_term = Slot(uri=CULTUREMECH.subject_term, name="causalEdge__subject_term", curie=CULTUREMECH.curie('subject_term'),
+                   model_uri=CULTUREMECH.causalEdge__subject_term, domain=None, range=Union[dict, CausalTerm])
+
+slots.causalEdge__predicate = Slot(uri=CULTUREMECH.predicate, name="causalEdge__predicate", curie=CULTUREMECH.curie('predicate'),
+                   model_uri=CULTUREMECH.causalEdge__predicate, domain=None, range=Union[str, "CausalPredicateEnum"])
+
+slots.causalEdge__object_term = Slot(uri=CULTUREMECH.object_term, name="causalEdge__object_term", curie=CULTUREMECH.curie('object_term'),
+                   model_uri=CULTUREMECH.causalEdge__object_term, domain=None, range=Union[dict, CausalTerm])
+
+slots.causalEdge__organism_term = Slot(uri=CULTUREMECH.organism_term, name="causalEdge__organism_term", curie=CULTUREMECH.curie('organism_term'),
+                   model_uri=CULTUREMECH.causalEdge__organism_term, domain=None, range=Optional[Union[dict, OrganismTerm]])
+
+slots.causalEdge__protein_terms = Slot(uri=CULTUREMECH.protein_terms, name="causalEdge__protein_terms", curie=CULTUREMECH.curie('protein_terms'),
+                   model_uri=CULTUREMECH.causalEdge__protein_terms, domain=None, range=Optional[Union[dict[Union[str, UniProtTermId], Union[dict, UniProtTerm]], list[Union[dict, UniProtTerm]]]])
+
+slots.causalEdge__condition_context = Slot(uri=CULTUREMECH.condition_context, name="causalEdge__condition_context", curie=CULTUREMECH.curie('condition_context'),
+                   model_uri=CULTUREMECH.causalEdge__condition_context, domain=None, range=Optional[str])
+
+slots.causalEdge__evidence = Slot(uri=CULTUREMECH.evidence, name="causalEdge__evidence", curie=CULTUREMECH.curie('evidence'),
+                   model_uri=CULTUREMECH.causalEdge__evidence, domain=None, range=Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]])
+
+slots.causalEdge__notes = Slot(uri=CULTUREMECH.notes, name="causalEdge__notes", curie=CULTUREMECH.curie('notes'),
+                   model_uri=CULTUREMECH.causalEdge__notes, domain=None, range=Optional[str])
+
 slots.importMetadata__source_database = Slot(uri=CULTUREMECH.source_database, name="importMetadata__source_database", curie=CULTUREMECH.curie('source_database'),
                    model_uri=CULTUREMECH.importMetadata__source_database, domain=None, range=Union[str, "SourceDatabaseEnum"])
 
@@ -5336,5 +5527,13 @@ slots.UniProtTerm_id = Slot(uri=CULTUREMECH.id, name="UniProtTerm_id", curie=CUL
 
 slots.UniProtTerm_label = Slot(uri=CULTUREMECH.label, name="UniProtTerm_label", curie=CULTUREMECH.curie('label'),
                    model_uri=CULTUREMECH.UniProtTerm_label, domain=UniProtTerm, range=str,
+                   pattern=re.compile(r'\S'))
+
+slots.CausalTerm_id = Slot(uri=CULTUREMECH.id, name="CausalTerm_id", curie=CULTUREMECH.curie('id'),
+                   model_uri=CULTUREMECH.CausalTerm_id, domain=CausalTerm, range=Union[str, CausalTermId],
+                   pattern=re.compile(r'^(CHEBI|NCBITaxon|GO|UniProtKB|EC|KEGG|METPO|ENVO|PATO|NCIT|FOODON|UBERON|MICRO|CultureMech|MediaIngredientMech):[A-Za-z0-9_.-]+$'))
+
+slots.CausalTerm_label = Slot(uri=CULTUREMECH.label, name="CausalTerm_label", curie=CULTUREMECH.curie('label'),
+                   model_uri=CULTUREMECH.CausalTerm_label, domain=CausalTerm, range=str,
                    pattern=re.compile(r'\S'))
 

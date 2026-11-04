@@ -79,6 +79,13 @@ ignored_prefixes:
   - TOGO                   # TogoMedia ids
   - GTDB                   # GTDB taxa (not in NCBITaxon namespace)
   - UniProtKB              # UniProtKB protein accessions (validated by UniProtTerm pattern + protein_examples validator)
+  - GO                     # Gene Ontology terms in CausalEdge (no local OAK SQLite adapter; validated by causal_graphs validator)
+  - RO                     # Relation Ontology terms in CausalEdge
+  - METPO                  # Microbial & Environmental Trait and Phenotype Ontology terms in CausalEdge
+  - PATO                   # Phenotype And Trait Ontology terms in CausalEdge
+  - EC                     # Enzyme Commission identifiers in CausalEdge
+  - KEGG                   # KEGG compound/orthology/pathway identifiers in CausalEdge
+  - CausalEdge             # Stable CausalEdge record identifiers (CausalEdge:<slug>)
 
 synonym_scope: exact_related
 

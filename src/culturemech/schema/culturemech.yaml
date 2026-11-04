@@ -45,6 +45,12 @@ prefixes:
   EC: https://enzyme.expasy.org/EC/
   # Proteins
   UniProtKB: https://www.uniprot.org/uniprotkb/
+  # Biological processes, relations, and phenotypes (for CausalEdge / CausalTerm)
+  GO: http://purl.obolibrary.org/obo/GO_
+  RO: http://purl.obolibrary.org/obo/RO_
+  METPO: http://purl.obolibrary.org/obo/METPO_
+  PATO: http://purl.obolibrary.org/obo/PATO_
+  CausalEdge: https://w3id.org/culturemech/CausalEdge/
   # Data repositories
   geo: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=
   sra: https://www.ncbi.nlm.nih.gov/sra/
@@ -524,6 +530,18 @@ classes:
           Typed, organism-specific UniProtKB protein examples supported by
           claim-scoped evidence for this medium formulation.
         range: ProteinExample
+        multivalued: true
+        inlined_as_list: true
+
+      causal_graphs:
+        description: >-
+          Directed, evidence-backed causal mechanism edges describing how
+          media ingredients, cofactors, perturbations, or strain modifications
+          causally support, limit, or alter organism growth, nutrient uptake,
+          or physiology in this medium formulation. Distinct from static
+          composition/role facet assignments and from intracellular pathway
+          graphs owned by PathwayMech or EnzymeMech.
+        range: CausalEdge
         multivalued: true
         inlined_as_list: true
 
@@ -1212,6 +1230,16 @@ classes:
           Typed UniProtKB protein examples (enzymes, transporters, or
           regulatory proteins) specific to this target organism on the medium.
         range: ProteinExample
+        multivalued: true
+        inlined_as_list: true
+
+      causal_graphs:
+        description: >-
+          Directed, evidence-backed causal mechanism edges specific to this
+          target organism on the medium (for example, cofactor-dependent
+          growth, substrate transport, selective inhibition, or auxotrophy
+          rescue).
+        range: CausalEdge
         multivalued: true
         inlined_as_list: true
 
@@ -2195,6 +2223,86 @@ classes:
         description: Additional curation notes or caveats
         range: string
 
+  CausalEdge:
+    description: >-
+      A directed, evidence-backed causal mechanism edge describing how a
+      growth-medium ingredient, cofactor, environmental condition, or genetic
+      perturbation causally enables, regulates, or inhibits organism growth,
+      transport, or physiology in the context of a medium formulation.
+    attributes:
+      id:
+        description: >-
+          Stable record-local or CURIE identifier for this causal edge (for
+          example, edge_cobalamin_enables_growth or CausalEdge:0001), used by
+          Discussion.attaches_to anchors (causal_graphs#edge_x).
+        range: string
+        identifier: true
+        required: true
+        pattern: "^(edge_[A-Za-z0-9_.-]+|CausalEdge:[A-Za-z0-9_.-]+)$"
+
+      subject_term:
+        description: >-
+          Ontology-grounded causal subject (for example, a CHEBI ingredient or
+          cofactor, UniProtKB transporter/enzyme, GO biological process, or
+          ENVO condition).
+        range: CausalTerm
+        required: true
+        inlined: true
+
+      predicate:
+        description: >-
+          Constrained causal relationship predicate connecting subject_term to
+          object_term in the medium context.
+        range: CausalPredicateEnum
+        required: true
+
+      object_term:
+        description: >-
+          Ontology-grounded causal target (for example, an NCBITaxon organism,
+          GO biological process, CHEBI metabolite/cofactor, UniProtKB protein,
+          or PATO/METPO phenotype).
+        range: CausalTerm
+        required: true
+        inlined: true
+
+      organism_term:
+        description: >-
+          Explicit NCBITaxon organism context for this causal mechanism when
+          scoped to a specific organism or strain.
+        range: OrganismTerm
+        inlined: true
+        bindings:
+          - binds_value_of: id
+            obligation_level: REQUIRED
+
+      protein_terms:
+        description: >-
+          Optional typed UniProtKB protein actors mediating this causal edge,
+          linking Stage 2 causal mechanisms to Stage 3 protein examples.
+        range: UniProtTerm
+        multivalued: true
+        inlined_as_list: true
+
+      condition_context:
+        description: >-
+          Medium condition, concentration threshold, or perturbation context
+          under which this causal relationship holds.
+        range: string
+
+      evidence:
+        description: >-
+          Claim-scoped literature evidence supporting this directed causal
+          relationship in the growth medium context.
+        range: EvidenceItem
+        required: true
+        minimum_cardinality: 1
+        multivalued: true
+        inlined_as_list: true
+
+      notes:
+        description: Additional curation notes or caveats
+        range: string
+
 # ================================================================
 # ONTOLOGY TERM CLASSES
 # ================================================================
@@ -2336,6 +2444,39 @@ classes:
         pattern: "\\S"
     id_prefixes:
       - UniProtKB
+
+  CausalTerm:
+    is_a: Term
+    description: >-
+      An ontology-grounded entity participating as subject_term or object_term
+      in a growth-medium CausalEdge. Accepts chemical/ingredient terms (CHEBI,
+      FOODON, MICRO), organism taxa (NCBITaxon), biological processes and
+      molecular functions (GO), proteins and enzymes (UniProtKB, EC),
+      pathways (KEGG), and phenotype/environment descriptors (METPO, ENVO,
+      PATO, NCIT, UBERON, CultureMech, MediaIngredientMech).
+    slot_usage:
+      id:
+        required: true
+        pattern: "^(CHEBI|NCBITaxon|GO|UniProtKB|EC|KEGG|METPO|ENVO|PATO|NCIT|FOODON|UBERON|MICRO|CultureMech|MediaIngredientMech):[A-Za-z0-9_.-]+$"
+      label:
+        required: true
+        pattern: "\\S"
+    id_prefixes:
+      - CHEBI
+      - NCBITaxon
+      - GO
+      - UniProtKB
+      - EC
+      - KEGG
+      - METPO
+      - ENVO
+      - PATO
+      - NCIT
+      - FOODON
+      - UBERON
+      - MICRO
+      - CultureMech
+      - MediaIngredientMech
 
   ImportMetadata:
     description: >-
@@ -3077,3 +3218,49 @@ enums:
         description: Narrower concept.
       ABBREVIATION:
         description: Abbreviation or shorthand (e.g. "TSB" for "Tryptic Soy Broth").
+
+  CausalPredicateEnum:
+    description: >-
+      Constrained causal predicate vocabulary for growth-medium CausalEdge
+      assertions, mapped to Relation Ontology (RO) and Biolink predicates.
+    permissible_values:
+      CAUSES:
+        description: >-
+          Subject causally produces or brings about the object state, process,
+          or phenotype in the medium.
+        meaning: RO:0002410
+      POSITIVELY_REGULATES:
+        description: >-
+          Subject increases the rate, frequency, or extent of the object
+          process or activity in the medium.
+        meaning: RO:0002213
+      NEGATIVELY_REGULATES:
+        description: >-
+          Subject decreases or represses the rate, frequency, or extent of the
+          object process or activity in the medium.
+        meaning: RO:0002212
+      ENABLES_GROWTH:
+        description: >-
+          Subject nutrient, cofactor, or condition causally enables or rescues
+          growth of the target organism in the medium.
+        meaning: RO:0002327
+      INHIBITS_GROWTH:
+        description: >-
+          Subject selective agent, inhibitor, or condition causally suppresses
+          or prevents growth of the target organism in the medium.
+        meaning: RO:0002449
+      PROVIDES_COFACTOR_FOR:
+        description: >-
+          Subject medium ingredient or precursor supplies the essential
+          cofactor required for the object enzyme, pathway, or organism growth.
+        meaning: RO:0002411
+      TRANSPORTS_SUBSTRATE:
+        description: >-
+          Subject transporter or uptake system mediates transport of the object
+          medium nutrient across the cell envelope.
+        meaning: RO:0002313
+      AFFECTS:
+        description: >-
+          Subject causally alters or modulates the object state, growth metric,
+          or physiological response in the medium.
+        meaning: biolink:affects

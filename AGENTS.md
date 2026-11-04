@@ -126,6 +126,9 @@ arguments or `CMM_AUTOMATION_DATA_DIR`, `MICROBE_MEDIA_PARAM_DIR`, and
 - Recipe QA: `review-recipes`; broad schema/pipeline audits:
   `audit-schema-gaps`; quick diagnosis: `schema-gap-analysis`.
 - Single-record scientific curation: `curate-yaml-record`.
+- Growth-media causal mechanism edges (`causal_graphs`) and UniProtKB protein
+  examples (`protein_examples`): `curate-causal-graphs` and
+  `curate-protein-examples`.
 - Add a DOI/PMID paper to an existing record, with variant and organism
   taxonomy accounting: `culturemech-add-paper-citation`.
 - Ingredient concentrations, units, and DOI/PURL-backed amount evidence:

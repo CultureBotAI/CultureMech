@@ -43,6 +43,16 @@ ontology_adapters:
   PMID: ""
   DOI: ""
   UniProtKB: ""
+  GO: ""
+  RO: ""
+  METPO: ""
+  PATO: ""
+  EC: ""
+  KEGG: ""
+  MICRO: ""
+  CultureMech: ""
+  MediaIngredientMech: ""
+  CausalEdge: ""
 
   # Suppliers - Skip validation
   sigma: ""
