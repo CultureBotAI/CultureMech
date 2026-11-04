@@ -1,0 +1,1058 @@
+# Source and formulation review: 404 (CultureMech:007493)
+
+- Review: 20261021T082011Z-culturemech-007493-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T08:09:20Z
+- Finished UTC: 2026-10-21T08:20:11Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+Official NBRC Medium 403, the import provenance and the repaired normalized owner identify this record despite its local 404 name. The generated target remains a collapsed table string plus an empty ingredient with a nonnumeric concentration, omitting ten recovered source rows, the source term, pH and references already present in the owner. Both layers also carry an importer-default autoclaving instruction absent from the inspected source, with action DISSOLVE. All four documented diagnostics pass; they do not establish usable formulation semantics.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 99; batch 010 item 9 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding nine task batches contain 90 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c contains 40 validated baseline bundles covering 2 current merged paths. Unioning all prior lists with this baseline covers 92 of 6320 current merged paths, including 2 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 24a1d277eb7f0437af53af0d178a30f9bfa6374c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:007493 | data/merge_yaml/merged/404.yaml | generated | 404 |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:007493 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:007493 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-010/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch010/099/strict.tsv |
+| validate-terms | passed | True | CultureMech:007493 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:007493 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:007493 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Target and owner timestamp syntax and timezone scope | passed | False | CultureMech:007493 | All 14 target/owner history timestamps parse with explicit timezones; provenance and later owner repairs are preserved, not rewritten. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:007493.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Source 403 provenance despite local 404 name
+
+identity: supported. Targets: CultureMech:007493.
+
+Import history, recovered owner, current repair writer and live source 403 agree. The generated label 404 is a local/imported naming artifact; source 404 is explicitly a different medium. No neighbor recipe substitution or new source identity is justified.
+
+### All two target rows versus ten source and owner rows
+
+quantity: concern. Targets: CultureMech:007493.
+
+Target ingredients[0] is an entire collapsed composition table with VARIABLE concentration; ingredients[1] is an empty name with K2HPO4 as itsg/L value. The source and owner provide nine dry ingredient amounts plus 1 L water, with optional 15 g agar. All ten source-row correspondences are recorded below.
+
+[{"owner_field": "ingredients[0].concentration", "name": "K2HPO4", "owner_value": "0.5", "owner_unit": "G_PER_L", "source_amount": "0.5", "source_unit": "g", "source_basis": "table recipe with1L distilled water", "source_locator": "Medium Composition row1", "decision": "verified source row; nominal recipe basis", "target_correspondence": "Only embedded in collapsed ingredients[0].preferred_term; no equivalent usable ingredient row"}, {"owner_field": "ingredients[1].concentration", "name": "KH2PO4", "owner_value": "0.6", "owner_unit": "G_PER_L", "source_amount": "0.6", "source_unit": "g", "source_basis": "table recipe with1L distilled water", "source_locator": "Medium Composition row2", "decision": "verified source row; nominal recipe basis", "target_correspondence": "Only embedded in collapsed ingredients[0].preferred_term; no equivalent usable ingredient row"}, {"owner_field": "ingredients[2].concentration", "name": "MgSO4·7H2O", "owner_value": "0.2", "owner_unit": "G_PER_L", "source_amount": "0.2", "source_unit": "g", "source_basis": "table recipe with1L distilled water", "source_locator": "Medium Composition row3", "decision": "verified source row; nominal recipe basis", "target_correspondence": "Only embedded in collapsed ingredients[0].preferred_term; no equivalent usable ingredient row"}, {"owner_field": "ingredients[3].concentration", "name": "NaCl", "owner_value": "0.1", "owner_unit": "G_PER_L", "source_amount": "0.1", "source_unit": "g", "source_basis": "table recipe with1L distilled water", "source_locator": "Medium Composition row4", "decision": "verified source row; nominal recipe basis", "target_correspondence": "Only embedded in collapsed ingredients[0].preferred_term; no equivalent usable ingredient row"}, {"owner_field": "ingredients[4].concentration", "name": "CaCO3", "owner_value": "3", "owner_unit": "G_PER_L", "source_amount": "3", "source_unit": "g", "source_basis": "table recipe with1L distilled water", "source_locator": "Medium Composition row5", "decision": "verified source row; nominal recipe basis", "target_correspondence": "Only embedded in collapsed ingredients[0].preferred_term; no equivalent usable ingredient row"}, {"owner_field": "ingredients[5].concentration", "name": "Yeast extract", "owner_value": "0.6", "owner_unit": "G_PER_L", "source_amount": "0.6", "source_unit": "g", "source_basis": "table recipe with1L distilled water", "source_locator": "Medium Composition row6", "decision": "verified source row; nominal recipe basis", "target_correspondence": "Only embedded in collapsed ingredients[0].preferred_term; no equivalent usable ingredient row"}, {"owner_field": "ingredients[6].concentration", "name": "Arabinose", "owner_value": "4", "owner_unit": "G_PER_L", "source_amount": "4", "source_unit": "g", "source_basis": "table recipe with1L distilled water", "source_locator": "Medium Composition row7", "decision": "verified source row; nominal recipe basis", "target_correspondence": "Only embedded in collapsed ingredients[0].preferred_term; no equivalent usable ingredient row"}, {"owner_field": "ingredients[7].concentration", "name": "Sodium glutamate", "owner_value": "6", "owner_unit": "G_PER_L", "source_amount": "6", "source_unit": "g", "source_basis": "table recipe with1L distilled water", "source_locator": "Medium Composition row8", "decision": "verified source row; nominal recipe basis", "target_correspondence": "Only embedded in collapsed ingredients[0].preferred_term; no equivalent usable ingredient row"}, {"owner_field": "ingredients[8].concentration", "name": "Agar (if needed)", "owner_value": "15", "owner_unit": "G_PER_L", "source_amount": "15", "source_unit": "g", "source_basis": "table recipe with1L distilled water", "source_locator": "Medium Composition row9", "decision": "verified source row; conditional agar retained", "target_correspondence": "Only embedded in collapsed ingredients[0].preferred_term; no equivalent usable ingredient row"}, {"owner_field": "ingredients[9].concentration", "name": "Distilled water", "owner_value": "1", "owner_unit": "L", "source_amount": "1", "source_unit": "L", "source_basis": "table recipe with1L distilled water", "source_locator": "Medium Composition row10", "decision": "verified source row; nominal recipe basis", "target_correspondence": "Only embedded in collapsed ingredients[0].preferred_term; no equivalent usable ingredient row"}]
+
+### Generated versus owner linkage
+
+grounding: concern. Targets: CultureMech:007493.
+
+Target has 0/2 direct ingredient instances with a primary CHEBI identifier and 0/2 with a current secondary key (0% on a 0–100 linkage scale). Owner has 9/10 primary canonical CHEBI labels resolving against OLS and 9/10 secondary CHEBI keys with exact live MAPPED/preferred_term rows in the pinned packaged index (90% each), with yeast extract retained as an undefined mixture. These separate denominators do not imply chemical validity of the two malformed generated rows.
+
+[{"owner_field": "ingredients[0]", "id": "CHEBI:131527", "canonical_label": "dipotassium hydrogen phosphate", "source_key": "chebi131527", "current_secondary_index_hits": [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"owner_field": "ingredients[1]", "id": "CHEBI:63036", "canonical_label": "potassium dihydrogen phosphate", "source_key": "chebi63036", "current_secondary_index_hits": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"owner_field": "ingredients[2]", "id": "CHEBI:31795", "canonical_label": "magnesium sulfate heptahydrate", "source_key": "chebi31795", "current_secondary_index_hits": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"owner_field": "ingredients[3]", "id": "CHEBI:26710", "canonical_label": "sodium chloride", "source_key": "chebi26710", "current_secondary_index_hits": [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"owner_field": "ingredients[4]", "id": "CHEBI:3311", "canonical_label": "calcium carbonate", "source_key": "chebi3311", "current_secondary_index_hits": [{"label": "CaCO3", "match_type": "preferred_term", "identifier": "CHEBI:3311", "preferred_term": "CaCO3", "ontology_id": "CHEBI:3311", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"owner_field": "ingredients[6]", "id": "CHEBI:22599", "canonical_label": "arabinose", "source_key": "chebi22599", "current_secondary_index_hits": [{"label": "Arabinose", "match_type": "preferred_term", "identifier": "CHEBI:22599", "preferred_term": "Arabinose", "ontology_id": "CHEBI:22599", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"owner_field": "ingredients[7]", "id": "CHEBI:64220", "canonical_label": "monosodium glutamate", "source_key": "chebi64220", "current_secondary_index_hits": [{"label": "Na glutamate", "match_type": "preferred_term", "identifier": "CHEBI:64220", "preferred_term": "Na glutamate", "ontology_id": "CHEBI:64220", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"owner_field": "ingredients[8]", "id": "CHEBI:2509", "canonical_label": "agar", "source_key": "chebi2509", "current_secondary_index_hits": [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"owner_field": "ingredients[9]", "id": "CHEBI:15377", "canonical_label": "water", "source_key": "chebi15377", "current_secondary_index_hits": [{"label": "Distilled water", "match_type": "preferred_term", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}]}]
+
+### pH, agar condition and preparation
+
+consistency: concern. Targets: CultureMech:007493.
+
+Source pH 6.7±0.2 is correctly represented by owner range 6.5–6.9 but absent from the generated target. Source agar is conditional; retain the optional agar branch when regenerating rather than implying every 403 formulation is agar. Both layers contain three generic steps; their autoclaving instruction is not supported by this inspected source and its action DISSOLVE contradicts its text. No temperature/time is supplied.
+
+### Classification and biological claims
+
+scope: supported. Targets: CultureMech:007493.
+
+Complex/undefined composition is consistent with yeast extract. A solid agar branch is source-supported only when optional agar is used; a liquid alternative remains possible. No target organism, taxon, genome or variant accession is asserted, and the neighboring 404 organism is excluded from this review’s growth evidence.
+
+### Recovered owner versus stale merged output
+
+ownership: concern. Targets: CultureMech:007493.
+
+The owner already contains the ten source rows, nine primary and secondary ontology pairs, pH, official source 403 term/reference and recovery/repair history absent from the August 6 merged target. The safe follow-up is source-aware owner verification followed by regeneration, not hand editing the generated YAML or duplicating owner repairs.
+
+### Source support and provenance placement
+
+evidence: concern. Targets: CultureMech:007493.
+
+Generated provenance retains the historical source 403 URL in import history but no structured references. Owner adds the official reference and source term. Regeneration must preserve them; ingredient-level amount evidence can be strengthened without inventing a publication or claiming that record history experimentally verifies the recipe.
+
+## Findings
+
+### f1: Merged target omits the recovered ten-row NBRC403 formulation
+
+blocker / open / confirmed; issue key: cm007493-stale-collapsed-source403-formula.
+
+The generated recipe consists of a whole-table ingredient string and an empty ingredient whose g/L value is K2HPO4. It also omits source 403 identity, pH 6.5–6.9, canonical ingredient links and official reference already present in the maintained owner. The two fake ingredient rows cannot represent a usable named formulation: this blocks scientific use and faithful export of the asserted medium. Severity is native P1 for unusable formula identity/representation, not P1.1 or a claimed schema validation failure; all four documented recipes actually exit 0.
+
+### f2: Importer-default autoclaving is unsupported and action-mismatched
+
+major / open / confirmed; issue key: cm007493-default-autoclave-procedure.
+
+The exact 403 composition page contains no detailed preparation protocol. Both local layers nevertheless assert Sterilize by autoclaving with action DISSOLVE, matching the current importer’s generated fallback and keyword-classification behavior. The neighboring 404 anaerobic protocol is not evidence for 403.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Verify the already recovered normalized owner against official 403, retain optional agar and nominal 1 L recipe basis, then regenerate the derived target and confirm all ten rows, source identity, pH, links and reference survive.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Separate source-stated pH/formulation from unverified generic preparation. Obtain exact 403 protocol support or mark/remove unsupported default instructions in a separately authorized curation; only assert a matching sterilization action when its procedure is supported.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/404.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/NBRC_404.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/404.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/404.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch010/099/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-010/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch010/099/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/404.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/404.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| nbrc403 | https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=403; Medium No.403; complete Medium Composition table; Comment section | supports | Read the complete official source 403 page. Its composition table supplies ten rows and pH 6.7±0.2, with agar explicitly conditional. It contains no detailed preparation or autoclaving instruction. |
+| nbrc403legacy | http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=403; Complete retrieved response | supports | The exact legacy URL retained by the import history is accessible and resolves source 403; current official HTTPS is the stable readable citation used for follow-up. |
+| nbrc404 | https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=404; Medium No.404; title, full composition and preparation | context_only | Official source 404 is a distinct Oceanithermus profundus medium with different ingredients and preparation. It was inspected to distinguish neighboring accessions, not to supply growth or preparation evidence for this target. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; Exact OLS identifier, label and obsolete flag | supports | CHEBI:131527 resolves to dipotassium hydrogen phosphate and is not obsolete. This supports the owner’s asserted canonical label, not a chemical composition for the malformed generated row. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS identifier, label and obsolete flag | supports | CHEBI:63036 resolves to potassium dihydrogen phosphate and is not obsolete. This supports the owner’s asserted canonical label, not a chemical composition for the malformed generated row. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS identifier, label and obsolete flag | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate and is not obsolete. This supports the owner’s asserted canonical label, not a chemical composition for the malformed generated row. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact OLS identifier, label and obsolete flag | supports | CHEBI:26710 resolves to sodium chloride and is not obsolete. This supports the owner’s asserted canonical label, not a chemical composition for the malformed generated row. |
+| chebi3311 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_3311; Exact OLS identifier, label and obsolete flag | supports | CHEBI:3311 resolves to calcium carbonate and is not obsolete. This supports the owner’s asserted canonical label, not a chemical composition for the malformed generated row. |
+| chebi22599 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_22599; Exact OLS identifier, label and obsolete flag | supports | CHEBI:22599 resolves to arabinose and is not obsolete. This supports the owner’s asserted canonical label, not a chemical composition for the malformed generated row. |
+| chebi64220 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64220; Exact OLS identifier, label and obsolete flag | supports | CHEBI:64220 resolves to monosodium glutamate and is not obsolete. This supports the owner’s asserted canonical label, not a chemical composition for the malformed generated row. |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509; Exact OLS identifier, label and obsolete flag | supports | CHEBI:2509 resolves to agar and is not obsolete. This supports the owner’s asserted canonical label, not a chemical composition for the malformed generated row. |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377; Exact OLS identifier, label and obsolete flag | supports | CHEBI:15377 resolves to water and is not obsolete. This supports the owner’s asserted canonical label, not a chemical composition for the malformed generated row. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; All nine owner secondary identifiers; pinned metadata inspected | context_only | [{"owner_field": "ingredients[0]", "id": "CHEBI:131527", "canonical_label": "dipotassium hydrogen phosphate", "source_key": "chebi131527", "current_secondary_index_hits": [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"owner_field": "ingredients[1]", "id": "CHEBI:63036", "canonical_label": "potassium dihydrogen phosphate", "source_key": "chebi63036", "current_secondary_index_hits": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"owner_field": "ingredients[2]", "id": "CHEBI:31795", "canonical_label": "magnesium sulfate heptahydrate", "source_key": "chebi31795", "current_secondary_index_hits": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"owner_field": "ingredients[3]", "id": "CHEBI:26710", "canonical_label": "sodium chloride", "source_key": "chebi26710", "current_secondary_index_hits": [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"owner_field": "ingredients[4]", "id": "CHEBI:3311", "canonical_label": "calcium carbonate", "source_key": "chebi3311", "current_secondary_index_hits": [{"label": "CaCO3", "match_type": "preferred_term", "identifier": "CHEBI:3311", "preferred_term": "CaCO3", "ontology_id": "CHEBI:3311", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"owner_field": "ingredients[6]", "id": "CHEBI:22599", "canonical_label": "arabinose", "source_key": "chebi22599", "current_secondary_index_hits": [{"label": "Arabinose", "match_type": "preferred_term", "identifier": "CHEBI:22599", "preferred_term": "Arabinose", "ontology_id": "CHEBI:22599", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"owner_field": "ingredients[7]", "id": "CHEBI:64220", "canonical_label": "monosodium glutamate", "source_key": "chebi64220", "current_secondary_index_hits": [{"label": "Na glutamate", "match_type": "preferred_term", "identifier": "CHEBI:64220", "preferred_term": "Na glutamate", "ontology_id": "CHEBI:64220", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"owner_field": "ingredients[8]", "id": "CHEBI:2509", "canonical_label": "agar", "source_key": "chebi2509", "current_secondary_index_hits": [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"owner_field": "ingredients[9]", "id": "CHEBI:15377", "canonical_label": "water", "source_key": "chebi15377", "current_secondary_index_hits": [{"label": "Distilled water", "match_type": "preferred_term", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}]}] |
+| repair | scripts/repair_nbrc_404_score15.py; TARGET_PATH, TARGET_ID, IMPORTED_INGREDIENT_SIGNATURE, NBRC_URL, repair_document | context_only | Exact writer pins CM007493 at NBRC_404.yaml to source 403, requires the recovered ten-row signature, adds source term and pH 6.5–6.9, grounds known ingredients and records the official reference. This code was read only. |
+| importer | src/culturemech/import/nbrc_importer.py; _map_ingredients; _map_preparation_steps | context_only | When no preparation text is supplied, importer creates dissolve/adjust-pH/autoclaving default prose. Action classification looks for autoclave, while the emitted word autoclaving does not contain that exact substring, leaving the default DISSOLVE action. This accounts for the local inconsistency without treating the generated text as primary-source evidence. |
+| history | data/merge_yaml/merged/404.yaml; Every timestamp in target and sole normalized owner | supports | [{"path": "data/merge_yaml/merged/404.yaml", "field": "curation_history[0].timestamp", "value": "2026-02-20T00:22:35.959767Z", "timezone_aware": true}, {"path": "data/merge_yaml/merged/404.yaml", "field": "curation_history[1].timestamp", "value": "2026-03-13T03:09:20.830923Z", "timezone_aware": true}, {"path": "data/merge_yaml/merged/404.yaml", "field": "curation_history[2].timestamp", "value": "2026-03-13T06:19:49.248371Z", "timezone_aware": true}, {"path": "data/merge_yaml/merged/404.yaml", "field": "curation_history[3].timestamp", "value": "2026-03-14T00:00:00+00:00", "timezone_aware": true}, {"path": "data/merge_yaml/merged/404.yaml", "field": "curation_history[4].timestamp", "value": "2026-05-16T09:03:06.703980+00:00", "timezone_aware": true}, {"path": "data/merge_yaml/merged/404.yaml", "field": "curation_history[5].timestamp", "value": "2026-08-06T03:05:04.683526+00:00", "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/NBRC_404.yaml", "field": "curation_history[0].timestamp", "value": "2026-02-20T00:22:35.959767Z", "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/NBRC_404.yaml", "field": "curation_history[1].timestamp", "value": "2026-03-13T03:09:20.830923Z", "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/NBRC_404.yaml", "field": "curation_history[2].timestamp", "value": "2026-03-13T06:19:49.248371Z", "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/NBRC_404.yaml", "field": "curation_history[3].timestamp", "value": "2026-03-14T00:00:00+00:00", "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/NBRC_404.yaml", "field": "curation_history[4].timestamp", "value": "2026-05-16T09:03:06.703980+00:00", "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/NBRC_404.yaml", "field": "curation_history[5].timestamp", "value": "2026-08-19T21:54:22.939384+00:00", "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/NBRC_404.yaml", "field": "curation_history[6].timestamp", "value": "2026-08-20T19:01:16.039626+00:00", "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/NBRC_404.yaml", "field": "curation_history[7].timestamp", "value": "2026-09-11T00:00:00-07:00", "timezone_aware": true}] |
+
+## Limits And Additional Notes
+
+- The NBRC composition table states ingredient masses and 1 L distilled water. Owner g/L values are interpreted on that nominal source recipe basis; the page does not state an independently measured post-addition final volume.
+- No organism, taxon, assembly, DOI or PMID is asserted by the target. NBRC404 was retrieved only as an identity countercheck; its Oceanithermus profundus title and cultivation protocol must not be transferred to source 403.
+- The inspected source 403 composition page supplies no detailed sterilization procedure, time or temperature. No generic recommended protocol was invented.
+- Existing owner recovery/history is read as local provenance. No recovery script, corpus regeneration or formal review validator was executed.
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T082011Z-culturemech-007493-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: 404 (CultureMech:007493)'
+started_at: '2026-10-21T08:09:20Z'
+finished_at: '2026-10-21T08:20:11Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: Official NBRC Medium 403, the import provenance and the repaired normalized
+  owner identify this record despite its local 404 name. The generated target remains
+  a collapsed table string plus an empty ingredient with a nonnumeric concentration,
+  omitting ten recovered source rows, the source term, pH and references already present
+  in the owner. Both layers also carry an importer-default autoclaving instruction
+  absent from the inspected source, with action DISSOLVE. All four documented diagnostics
+  pass; they do not establish usable formulation semantics.
+source:
+  git_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/404.yaml
+    sha256: 028eb99ed543b803ab9e1f520b3d508ff04f9f7344d48553375e17fe69206d29
+    role: target
+  - path: data/normalized_yaml/bacterial/NBRC_404.yaml
+    sha256: 59a1a247e64bcf4525b743aced452d3f88e9d9ee8a5ee612ba5726aafb141eda
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_nbrc_404_score15.py
+    sha256: c3a0c3d23bf13d08f3c1a7d912783b5136f17f688850aa4ce65c8708ce56bc3e
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/nbrc_raw_yaml.py
+    sha256: de5654d4eed2e01a2383dcf417b7d8e2779dbb622de9351c28373fb691812ec1
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/fetch/nbrc_scraper.py
+    sha256: 5c5bbda489abe0b6d000b9318a76913ab5496ee83aff58b530c2b42b5989d1e3
+    role: context
+  - path: src/culturemech/import/nbrc_importer.py
+    sha256: 857b7e0ac88aef783ce4bc9b35c4c6a3d9fc38824a5d463010a6046ac4180924
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 99; batch 010 item 9 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding nine task batches contain
+    90 ledger-owned validated record reviews; their complete validated lists also
+    retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+    contains 40 validated baseline bundles covering 2 current merged paths. Unioning
+    all prior lists with this baseline covers 92 of 6320 current merged paths, including
+    2 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:007493
+targets:
+- target_id: CultureMech:007493
+  path: data/merge_yaml/merged/404.yaml
+  label: '404'
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/NBRC_404.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/404.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:007493
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/404.yaml --workers 1 --out
+    /private/tmp/culturemech-review-work-batch010/099/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-010/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch010/099/strict.tsv"
+  target_ids:
+  - CultureMech:007493
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/404.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:007493
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/404.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:007493
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:007493
+- check_id: scoped-history-timestamps
+  name: Target and owner timestamp syntax and timezone scope
+  required: false
+  status: passed
+  summary: All 14 target/owner history timestamps parse with explicit timezones; provenance
+    and later owner repairs are preserved, not rewritten.
+  target_ids:
+  - CultureMech:007493
+  evidence_ids:
+  - history
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/404.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T08:20:11Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/NBRC_404.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T08:20:11Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/404.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:10:13.266444Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/404.yaml --workers 1 --out
+    /private/tmp/culturemech-review-work-batch010/099/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:10:14.930793Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-010/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch010/099/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/404.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:10:19.896303Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/404.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:10:21.358072Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: nbrc403
+  kind: primary_source
+  reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=403
+  locator: Medium No.403; complete Medium Composition table; Comment section
+  accessed_at: '2026-10-21T08:04:45.466939Z'
+  support: supports
+  summary: Read the complete official source 403 page. Its composition table supplies
+    ten rows and pH 6.7±0.2, with agar explicitly conditional. It contains no detailed
+    preparation or autoclaving instruction.
+  snapshot_sha256: b0fbcba65d60961f44c731b6191d919fb19935d81f5c2f44ff65c409548a7035
+- evidence_id: nbrc403legacy
+  kind: primary_source
+  reference: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=403
+  locator: Complete retrieved response
+  accessed_at: '2026-10-21T08:04:42.157555Z'
+  support: supports
+  summary: The exact legacy URL retained by the import history is accessible and resolves
+    source 403; current official HTTPS is the stable readable citation used for follow-up.
+  snapshot_sha256: b0fbcba65d60961f44c731b6191d919fb19935d81f5c2f44ff65c409548a7035
+- evidence_id: nbrc404
+  kind: primary_source
+  reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=404
+  locator: Medium No.404; title, full composition and preparation
+  accessed_at: '2026-10-21T08:04:45.807166Z'
+  support: context_only
+  summary: Official source 404 is a distinct Oceanithermus profundus medium with different
+    ingredients and preparation. It was inspected to distinguish neighboring accessions,
+    not to supply growth or preparation evidence for this target.
+  snapshot_sha256: 8435cf944b88edb246c16499145d84b2a9b85e8f09fe1290d6069adc30f19ea9
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS identifier, label and obsolete flag
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate and is not obsolete.
+    This supports the owner’s asserted canonical label, not a chemical composition
+    for the malformed generated row.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS identifier, label and obsolete flag
+  accessed_at: '2026-10-20T04:02:35.727546Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate and is not obsolete.
+    This supports the owner’s asserted canonical label, not a chemical composition
+    for the malformed generated row.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS identifier, label and obsolete flag
+  accessed_at: '2026-10-20T03:57:34.006322Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate and is not obsolete.
+    This supports the owner’s asserted canonical label, not a chemical composition
+    for the malformed generated row.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS identifier, label and obsolete flag
+  accessed_at: '2026-10-20T06:54:57.767507Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride and is not obsolete. This supports
+    the owner’s asserted canonical label, not a chemical composition for the malformed
+    generated row.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi3311
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_3311
+  locator: Exact OLS identifier, label and obsolete flag
+  accessed_at: '2026-10-21T07:31:17.266318Z'
+  support: supports
+  summary: CHEBI:3311 resolves to calcium carbonate and is not obsolete. This supports
+    the owner’s asserted canonical label, not a chemical composition for the malformed
+    generated row.
+  snapshot_sha256: 5413cec912ec253d62ba7a3f4ce7f0a9312ba8d1cb756713003f77a6e849d4b2
+- evidence_id: chebi22599
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_22599
+  locator: Exact OLS identifier, label and obsolete flag
+  accessed_at: '2026-10-21T08:04:43.835606Z'
+  support: supports
+  summary: CHEBI:22599 resolves to arabinose and is not obsolete. This supports the
+    owner’s asserted canonical label, not a chemical composition for the malformed
+    generated row.
+  snapshot_sha256: ee79c430a1cf064bf3c3d9248cffbdeee285ab4668d21581b34e627e2f01373a
+- evidence_id: chebi64220
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64220
+  locator: Exact OLS identifier, label and obsolete flag
+  accessed_at: '2026-10-21T06:49:18.590575Z'
+  support: supports
+  summary: CHEBI:64220 resolves to monosodium glutamate and is not obsolete. This
+    supports the owner’s asserted canonical label, not a chemical composition for
+    the malformed generated row.
+  snapshot_sha256: f365c8a94dc3b7bb63e10235e8728f2333b34fb60943ea59c357ebd3456fb25b
+- evidence_id: chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: Exact OLS identifier, label and obsolete flag
+  accessed_at: '2026-10-20T03:57:34.697126Z'
+  support: supports
+  summary: CHEBI:2509 resolves to agar and is not obsolete. This supports the owner’s
+    asserted canonical label, not a chemical composition for the malformed generated
+    row.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact OLS identifier, label and obsolete flag
+  accessed_at: '2026-10-20T04:00:00.223561Z'
+  support: supports
+  summary: CHEBI:15377 resolves to water and is not obsolete. This supports the owner’s
+    asserted canonical label, not a chemical composition for the malformed generated
+    row.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: All nine owner secondary identifiers; pinned metadata inspected
+  accessed_at: '2026-10-21T08:20:11Z'
+  support: context_only
+  summary: '[{"owner_field": "ingredients[0]", "id": "CHEBI:131527", "canonical_label":
+    "dipotassium hydrogen phosphate", "source_key": "chebi131527", "current_secondary_index_hits":
+    [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527",
+    "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}]}, {"owner_field": "ingredients[1]", "id": "CHEBI:63036",
+    "canonical_label": "potassium dihydrogen phosphate", "source_key": "chebi63036",
+    "current_secondary_index_hits": [{"label": "KH2PO4", "match_type": "preferred_term",
+    "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"owner_field": "ingredients[2]",
+    "id": "CHEBI:31795", "canonical_label": "magnesium sulfate heptahydrate", "source_key":
+    "chebi31795", "current_secondary_index_hits": [{"label": "MgSO4 x 7 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}, {"owner_field": "ingredients[3]", "id": "CHEBI:26710",
+    "canonical_label": "sodium chloride", "source_key": "chebi26710", "current_secondary_index_hits":
+    [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710",
+    "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}]}, {"owner_field": "ingredients[4]", "id": "CHEBI:3311",
+    "canonical_label": "calcium carbonate", "source_key": "chebi3311", "current_secondary_index_hits":
+    [{"label": "CaCO3", "match_type": "preferred_term", "identifier": "CHEBI:3311",
+    "preferred_term": "CaCO3", "ontology_id": "CHEBI:3311", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}]}, {"owner_field": "ingredients[6]", "id": "CHEBI:22599",
+    "canonical_label": "arabinose", "source_key": "chebi22599", "current_secondary_index_hits":
+    [{"label": "Arabinose", "match_type": "preferred_term", "identifier": "CHEBI:22599",
+    "preferred_term": "Arabinose", "ontology_id": "CHEBI:22599", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}, {"owner_field": "ingredients[7]", "id": "CHEBI:64220",
+    "canonical_label": "monosodium glutamate", "source_key": "chebi64220", "current_secondary_index_hits":
+    [{"label": "Na glutamate", "match_type": "preferred_term", "identifier": "CHEBI:64220",
+    "preferred_term": "Na glutamate", "ontology_id": "CHEBI:64220", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}, {"owner_field": "ingredients[8]", "id": "CHEBI:2509",
+    "canonical_label": "agar", "source_key": "chebi2509", "current_secondary_index_hits":
+    [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509",
+    "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}]}, {"owner_field": "ingredients[9]", "id": "CHEBI:15377",
+    "canonical_label": "water", "source_key": "chebi15377", "current_secondary_index_hits":
+    [{"label": "Distilled water", "match_type": "preferred_term", "identifier": "CHEBI:15377",
+    "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}]'
+- evidence_id: repair
+  kind: record_content
+  reference: scripts/repair_nbrc_404_score15.py
+  locator: TARGET_PATH, TARGET_ID, IMPORTED_INGREDIENT_SIGNATURE, NBRC_URL, repair_document
+  accessed_at: '2026-10-21T08:20:11Z'
+  support: context_only
+  summary: Exact writer pins CM007493 at NBRC_404.yaml to source 403, requires the
+    recovered ten-row signature, adds source term and pH 6.5–6.9, grounds known ingredients
+    and records the official reference. This code was read only.
+- evidence_id: importer
+  kind: record_content
+  reference: src/culturemech/import/nbrc_importer.py
+  locator: _map_ingredients; _map_preparation_steps
+  accessed_at: '2026-10-21T08:20:11Z'
+  support: context_only
+  summary: When no preparation text is supplied, importer creates dissolve/adjust-pH/autoclaving
+    default prose. Action classification looks for autoclave, while the emitted word
+    autoclaving does not contain that exact substring, leaving the default DISSOLVE
+    action. This accounts for the local inconsistency without treating the generated
+    text as primary-source evidence.
+- evidence_id: history
+  kind: record_content
+  reference: data/merge_yaml/merged/404.yaml
+  locator: Every timestamp in target and sole normalized owner
+  accessed_at: '2026-10-21T08:20:11Z'
+  support: supports
+  summary: '[{"path": "data/merge_yaml/merged/404.yaml", "field": "curation_history[0].timestamp",
+    "value": "2026-02-20T00:22:35.959767Z", "timezone_aware": true}, {"path": "data/merge_yaml/merged/404.yaml",
+    "field": "curation_history[1].timestamp", "value": "2026-03-13T03:09:20.830923Z",
+    "timezone_aware": true}, {"path": "data/merge_yaml/merged/404.yaml", "field":
+    "curation_history[2].timestamp", "value": "2026-03-13T06:19:49.248371Z", "timezone_aware":
+    true}, {"path": "data/merge_yaml/merged/404.yaml", "field": "curation_history[3].timestamp",
+    "value": "2026-03-14T00:00:00+00:00", "timezone_aware": true}, {"path": "data/merge_yaml/merged/404.yaml",
+    "field": "curation_history[4].timestamp", "value": "2026-05-16T09:03:06.703980+00:00",
+    "timezone_aware": true}, {"path": "data/merge_yaml/merged/404.yaml", "field":
+    "curation_history[5].timestamp", "value": "2026-08-06T03:05:04.683526+00:00",
+    "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/NBRC_404.yaml",
+    "field": "curation_history[0].timestamp", "value": "2026-02-20T00:22:35.959767Z",
+    "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/NBRC_404.yaml",
+    "field": "curation_history[1].timestamp", "value": "2026-03-13T03:09:20.830923Z",
+    "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/NBRC_404.yaml",
+    "field": "curation_history[2].timestamp", "value": "2026-03-13T06:19:49.248371Z",
+    "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/NBRC_404.yaml",
+    "field": "curation_history[3].timestamp", "value": "2026-03-14T00:00:00+00:00",
+    "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/NBRC_404.yaml",
+    "field": "curation_history[4].timestamp", "value": "2026-05-16T09:03:06.703980+00:00",
+    "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/NBRC_404.yaml",
+    "field": "curation_history[5].timestamp", "value": "2026-08-19T21:54:22.939384+00:00",
+    "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/NBRC_404.yaml",
+    "field": "curation_history[6].timestamp", "value": "2026-08-20T19:01:16.039626+00:00",
+    "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/NBRC_404.yaml",
+    "field": "curation_history[7].timestamp", "value": "2026-09-11T00:00:00-07:00",
+    "timezone_aware": true}]'
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:007493
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: Source 403 provenance despite local 404 name
+  outcome: supported
+  summary: Import history, recovered owner, current repair writer and live source
+    403 agree. The generated label 404 is a local/imported naming artifact; source
+    404 is explicitly a different medium. No neighbor recipe substitution or new source
+    identity is justified.
+  target_ids:
+  - CultureMech:007493
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc403
+  - nbrc404
+  - repair
+- assessment_id: amounts
+  area: quantity
+  topic: All two target rows versus ten source and owner rows
+  outcome: concern
+  summary: Target ingredients[0] is an entire collapsed composition table with VARIABLE
+    concentration; ingredients[1] is an empty name with K2HPO4 as itsg/L value. The
+    source and owner provide nine dry ingredient amounts plus 1 L water, with optional
+    15 g agar. All ten source-row correspondences are recorded below.
+  target_ids:
+  - CultureMech:007493
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc403
+  - repair
+  details: '[{"owner_field": "ingredients[0].concentration", "name": "K2HPO4", "owner_value":
+    "0.5", "owner_unit": "G_PER_L", "source_amount": "0.5", "source_unit": "g", "source_basis":
+    "table recipe with1L distilled water", "source_locator": "Medium Composition row1",
+    "decision": "verified source row; nominal recipe basis", "target_correspondence":
+    "Only embedded in collapsed ingredients[0].preferred_term; no equivalent usable
+    ingredient row"}, {"owner_field": "ingredients[1].concentration", "name": "KH2PO4",
+    "owner_value": "0.6", "owner_unit": "G_PER_L", "source_amount": "0.6", "source_unit":
+    "g", "source_basis": "table recipe with1L distilled water", "source_locator":
+    "Medium Composition row2", "decision": "verified source row; nominal recipe basis",
+    "target_correspondence": "Only embedded in collapsed ingredients[0].preferred_term;
+    no equivalent usable ingredient row"}, {"owner_field": "ingredients[2].concentration",
+    "name": "MgSO4·7H2O", "owner_value": "0.2", "owner_unit": "G_PER_L", "source_amount":
+    "0.2", "source_unit": "g", "source_basis": "table recipe with1L distilled water",
+    "source_locator": "Medium Composition row3", "decision": "verified source row;
+    nominal recipe basis", "target_correspondence": "Only embedded in collapsed ingredients[0].preferred_term;
+    no equivalent usable ingredient row"}, {"owner_field": "ingredients[3].concentration",
+    "name": "NaCl", "owner_value": "0.1", "owner_unit": "G_PER_L", "source_amount":
+    "0.1", "source_unit": "g", "source_basis": "table recipe with1L distilled water",
+    "source_locator": "Medium Composition row4", "decision": "verified source row;
+    nominal recipe basis", "target_correspondence": "Only embedded in collapsed ingredients[0].preferred_term;
+    no equivalent usable ingredient row"}, {"owner_field": "ingredients[4].concentration",
+    "name": "CaCO3", "owner_value": "3", "owner_unit": "G_PER_L", "source_amount":
+    "3", "source_unit": "g", "source_basis": "table recipe with1L distilled water",
+    "source_locator": "Medium Composition row5", "decision": "verified source row;
+    nominal recipe basis", "target_correspondence": "Only embedded in collapsed ingredients[0].preferred_term;
+    no equivalent usable ingredient row"}, {"owner_field": "ingredients[5].concentration",
+    "name": "Yeast extract", "owner_value": "0.6", "owner_unit": "G_PER_L", "source_amount":
+    "0.6", "source_unit": "g", "source_basis": "table recipe with1L distilled water",
+    "source_locator": "Medium Composition row6", "decision": "verified source row;
+    nominal recipe basis", "target_correspondence": "Only embedded in collapsed ingredients[0].preferred_term;
+    no equivalent usable ingredient row"}, {"owner_field": "ingredients[6].concentration",
+    "name": "Arabinose", "owner_value": "4", "owner_unit": "G_PER_L", "source_amount":
+    "4", "source_unit": "g", "source_basis": "table recipe with1L distilled water",
+    "source_locator": "Medium Composition row7", "decision": "verified source row;
+    nominal recipe basis", "target_correspondence": "Only embedded in collapsed ingredients[0].preferred_term;
+    no equivalent usable ingredient row"}, {"owner_field": "ingredients[7].concentration",
+    "name": "Sodium glutamate", "owner_value": "6", "owner_unit": "G_PER_L", "source_amount":
+    "6", "source_unit": "g", "source_basis": "table recipe with1L distilled water",
+    "source_locator": "Medium Composition row8", "decision": "verified source row;
+    nominal recipe basis", "target_correspondence": "Only embedded in collapsed ingredients[0].preferred_term;
+    no equivalent usable ingredient row"}, {"owner_field": "ingredients[8].concentration",
+    "name": "Agar (if needed)", "owner_value": "15", "owner_unit": "G_PER_L", "source_amount":
+    "15", "source_unit": "g", "source_basis": "table recipe with1L distilled water",
+    "source_locator": "Medium Composition row9", "decision": "verified source row;
+    conditional agar retained", "target_correspondence": "Only embedded in collapsed
+    ingredients[0].preferred_term; no equivalent usable ingredient row"}, {"owner_field":
+    "ingredients[9].concentration", "name": "Distilled water", "owner_value": "1",
+    "owner_unit": "L", "source_amount": "1", "source_unit": "L", "source_basis": "table
+    recipe with1L distilled water", "source_locator": "Medium Composition row10",
+    "decision": "verified source row; nominal recipe basis", "target_correspondence":
+    "Only embedded in collapsed ingredients[0].preferred_term; no equivalent usable
+    ingredient row"}]'
+- assessment_id: grounding
+  area: grounding
+  topic: Generated versus owner linkage
+  outcome: concern
+  summary: Target has 0/2 direct ingredient instances with a primary CHEBI identifier
+    and 0/2 with a current secondary key (0% on a 0–100 linkage scale). Owner has
+    9/10 primary canonical CHEBI labels resolving against OLS and 9/10 secondary CHEBI
+    keys with exact live MAPPED/preferred_term rows in the pinned packaged index (90%
+    each), with yeast extract retained as an undefined mixture. These separate denominators
+    do not imply chemical validity of the two malformed generated rows.
+  target_ids:
+  - CultureMech:007493
+  evidence_ids:
+  - record
+  - owner-0
+  - mim
+  - chebi131527
+  - chebi63036
+  - chebi31795
+  - chebi26710
+  - chebi3311
+  - chebi22599
+  - chebi64220
+  - chebi2509
+  - chebi15377
+  details: '[{"owner_field": "ingredients[0]", "id": "CHEBI:131527", "canonical_label":
+    "dipotassium hydrogen phosphate", "source_key": "chebi131527", "current_secondary_index_hits":
+    [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527",
+    "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}]}, {"owner_field": "ingredients[1]", "id": "CHEBI:63036",
+    "canonical_label": "potassium dihydrogen phosphate", "source_key": "chebi63036",
+    "current_secondary_index_hits": [{"label": "KH2PO4", "match_type": "preferred_term",
+    "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"owner_field": "ingredients[2]",
+    "id": "CHEBI:31795", "canonical_label": "magnesium sulfate heptahydrate", "source_key":
+    "chebi31795", "current_secondary_index_hits": [{"label": "MgSO4 x 7 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}, {"owner_field": "ingredients[3]", "id": "CHEBI:26710",
+    "canonical_label": "sodium chloride", "source_key": "chebi26710", "current_secondary_index_hits":
+    [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710",
+    "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}]}, {"owner_field": "ingredients[4]", "id": "CHEBI:3311",
+    "canonical_label": "calcium carbonate", "source_key": "chebi3311", "current_secondary_index_hits":
+    [{"label": "CaCO3", "match_type": "preferred_term", "identifier": "CHEBI:3311",
+    "preferred_term": "CaCO3", "ontology_id": "CHEBI:3311", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}]}, {"owner_field": "ingredients[6]", "id": "CHEBI:22599",
+    "canonical_label": "arabinose", "source_key": "chebi22599", "current_secondary_index_hits":
+    [{"label": "Arabinose", "match_type": "preferred_term", "identifier": "CHEBI:22599",
+    "preferred_term": "Arabinose", "ontology_id": "CHEBI:22599", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}, {"owner_field": "ingredients[7]", "id": "CHEBI:64220",
+    "canonical_label": "monosodium glutamate", "source_key": "chebi64220", "current_secondary_index_hits":
+    [{"label": "Na glutamate", "match_type": "preferred_term", "identifier": "CHEBI:64220",
+    "preferred_term": "Na glutamate", "ontology_id": "CHEBI:64220", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}, {"owner_field": "ingredients[8]", "id": "CHEBI:2509",
+    "canonical_label": "agar", "source_key": "chebi2509", "current_secondary_index_hits":
+    [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509",
+    "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}]}, {"owner_field": "ingredients[9]", "id": "CHEBI:15377",
+    "canonical_label": "water", "source_key": "chebi15377", "current_secondary_index_hits":
+    [{"label": "Distilled water", "match_type": "preferred_term", "identifier": "CHEBI:15377",
+    "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}]'
+- assessment_id: conditions
+  area: consistency
+  topic: pH, agar condition and preparation
+  outcome: concern
+  summary: Source pH 6.7±0.2 is correctly represented by owner range 6.5–6.9 but absent
+    from the generated target. Source agar is conditional; retain the optional agar
+    branch when regenerating rather than implying every 403 formulation is agar. Both
+    layers contain three generic steps; their autoclaving instruction is not supported
+    by this inspected source and its action DISSOLVE contradicts its text. No temperature/time
+    is supplied.
+  target_ids:
+  - CultureMech:007493
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc403
+  - importer
+- assessment_id: classification
+  area: scope
+  topic: Classification and biological claims
+  outcome: supported
+  summary: Complex/undefined composition is consistent with yeast extract. A solid
+    agar branch is source-supported only when optional agar is used; a liquid alternative
+    remains possible. No target organism, taxon, genome or variant accession is asserted,
+    and the neighboring 404 organism is excluded from this review’s growth evidence.
+  target_ids:
+  - CultureMech:007493
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc403
+  - nbrc404
+- assessment_id: owner-correspondence
+  area: ownership
+  topic: Recovered owner versus stale merged output
+  outcome: concern
+  summary: The owner already contains the ten source rows, nine primary and secondary
+    ontology pairs, pH, official source 403 term/reference and recovery/repair history
+    absent from the August 6 merged target. The safe follow-up is source-aware owner
+    verification followed by regeneration, not hand editing the generated YAML or
+    duplicating owner repairs.
+  target_ids:
+  - CultureMech:007493
+  evidence_ids:
+  - record
+  - owner-0
+  - repair
+  - nbrc403
+- assessment_id: evidence
+  area: evidence
+  topic: Source support and provenance placement
+  outcome: concern
+  summary: Generated provenance retains the historical source 403 URL in import history
+    but no structured references. Owner adds the official reference and source term.
+    Regeneration must preserve them; ingredient-level amount evidence can be strengthened
+    without inventing a publication or claiming that record history experimentally
+    verifies the recipe.
+  target_ids:
+  - CultureMech:007493
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc403
+  - repair
+findings:
+- finding_id: f1
+  issue_key: cm007493-stale-collapsed-source403-formula
+  category: representation
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Merged target omits the recovered ten-row NBRC403 formulation
+  description: 'The generated recipe consists of a whole-table ingredient string and
+    an empty ingredient whose g/L value is K2HPO4. It also omits source 403 identity,
+    pH 6.5–6.9, canonical ingredient links and official reference already present
+    in the maintained owner. The two fake ingredient rows cannot represent a usable
+    named formulation: this blocks scientific use and faithful export of the asserted
+    medium. Severity is native P1 for unusable formula identity/representation, not
+    P1.1 or a claimed schema validation failure; all four documented recipes actually
+    exit 0.'
+  target_ids:
+  - CultureMech:007493
+  field_paths:
+  - ingredients
+  - media_term
+  - ph_range
+  - references
+  - curation_history
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc403
+  - repair
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/NBRC_404.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: cm007493-default-autoclave-procedure
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Importer-default autoclaving is unsupported and action-mismatched
+  description: The exact 403 composition page contains no detailed preparation protocol.
+    Both local layers nevertheless assert Sterilize by autoclaving with action DISSOLVE,
+    matching the current importer’s generated fallback and keyword-classification
+    behavior. The neighboring 404 anaerobic protocol is not evidence for 403.
+  target_ids:
+  - CultureMech:007493
+  field_paths:
+  - preparation_steps[2].action
+  - preparation_steps[2].description
+  - preparation_steps
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc403
+  - nbrc404
+  - importer
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/NBRC_404.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+actions:
+- action_id: a1
+  description: Verify the already recovered normalized owner against official 403,
+    retain optional agar and nominal 1 L recipe basis, then regenerate the derived
+    target and confirm all ten rows, source identity, pH, links and reference survive.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:007493
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/NBRC_404.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Separate source-stated pH/formulation from unverified generic preparation.
+    Obtain exact 403 protocol support or mark/remove unsupported default instructions
+    in a separately authorized curation; only assert a matching sterilization action
+    when its procedure is supported.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:007493
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/NBRC_404.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- The NBRC composition table states ingredient masses and 1 L distilled water. Owner
+  g/L values are interpreted on that nominal source recipe basis; the page does not
+  state an independently measured post-addition final volume.
+- No organism, taxon, assembly, DOI or PMID is asserted by the target. NBRC404 was
+  retrieved only as an identity countercheck; its Oceanithermus profundus title and
+  cultivation protocol must not be transferred to source 403.
+- The inspected source 403 composition page supplies no detailed sterilization procedure,
+  time or temperature. No generic recommended protocol was invented.
+- Existing owner recovery/history is read as local provenance. No recovery script,
+  corpus regeneration or formal review validator was executed.
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+tags:
+- unreviewed-records
+- batch-010
+- generated-medium
+```
