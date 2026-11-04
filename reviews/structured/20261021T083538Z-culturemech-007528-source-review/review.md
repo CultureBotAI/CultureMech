@@ -1,0 +1,1260 @@
+# Source and formulation review: 480g_medium (CultureMech:007528)
+
+- Review: 20261021T083538Z-culturemech-007528-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T08:29:10Z
+- Finished UTC: 2026-10-21T08:35:38Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+JCM 964/TOGO M1014 identity is recoverable, but the generated 480G formulation conflates main medium and A5 stock, corrupts mass/volume units, and omits the anaerobic preparation. The maintained owner only collapses the duplicate water value; source stage and unit corrections remain necessary.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 101; batch 011 item 1 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding ten task batches contain 100 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c contains 40 validated baseline bundles covering 2 current merged paths. Unioning all prior lists with this baseline covers 102 of 6320 current merged paths, including 2 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 24a1d277eb7f0437af53af0d178a30f9bfa6374c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:007528 | data/merge_yaml/merged/480g_medium__e94698e7.yaml | generated | 480g_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:007528 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:007528 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-011/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch011/101/strict.tsv |
+| validate-terms | passed | True | CultureMech:007528 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:007528 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:007528 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:007528.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### All asserted primary and current secondary ingredient identifiers
+
+grounding: supported. Targets: CultureMech:007528.
+
+15 primary CHEBI identities resolve with matching labels; 7 of 7 current secondary keys have live pinned-index rows. Unresolved keys: [].
+
+17 direct ingredient instances; CHEBI-primary instance linkage 15/17 (88.24%), verified secondary coverage 7/17 (41.18%). Percentages use a 0–100 linkage scale, not a scientific correctness score. Complex mixtures without asserted IDs remain ungrounded rather than receiving invented pure-molecule identities.
+
+### Exact generated target and maintained/source identity
+
+identity: supported. Targets: CultureMech:007528.
+
+CultureMech 007528 resolves to one maintained TOGO_M1014 owner and generated 480G target. TOGO M1014 and MediaDive J964 both explicitly cross-reference JCM 964. One-source merge provenance is traceable; a fingerprint is not formulation validation.
+
+### Every direct amount, stock dose and separate stock boundary
+
+quantity: concern. Targets: CultureMech:007528.
+
+The source main recipe and A5 stock are distinct. Source masses and volume units expose water/resazurin/sulfide errors and four mg-to-g stock errors; even the two A5 solutes retaining numerical g values occur at the wrong stage. Eight other base-solute mass values agree nominally, with final-volume scope explicitly unresolved.
+
+[{"field_path": "ingredients[0].concentration", "ingredient": "Distilled water", "record_value": {"value": "2.0", "unit": "G_PER_L"}, "source_key": "togoM1014api", "source_locator": "$.components[0].items[0]", "source_name": "Distilled water", "original_source_amount": 1, "original_source_unit": "L", "stage": "main recipe preparation", "decision": "correct", "explanation": "Main medium water is1 L, with another 1 L solely for A5 stock. Target 2 g/L and owner 1 g/L are not either source volume; preserve both preparation stages."}, {"field_path": "ingredients[1].concentration", "ingredient": "Yeast extract", "record_value": {"value": "0.5", "unit": "G_PER_L"}, "source_key": "togoM1014api", "source_locator": "$.components[0].items[1]", "source_name": "Yeast extract", "original_source_amount": 0.5, "original_source_unit": "g", "stage": "main recipe preparation", "decision": "evidence_only", "explanation": "Source mass matches nominal base-recipe amount; G_PER_L requires its stated basis. JCM specifies1 L water, while MediaDive declares 1005 ml after the 5 ml addition; these are not interchangeable measured final-volume claims."}, {"field_path": "ingredients[2].concentration", "ingredient": "NaCl", "record_value": {"value": "0.5", "unit": "G_PER_L"}, "source_key": "togoM1014api", "source_locator": "$.components[0].items[2]", "source_name": "NaCl", "original_source_amount": 0.5, "original_source_unit": "g", "stage": "main recipe preparation", "decision": "evidence_only", "explanation": "Source mass matches nominal base-recipe amount; G_PER_L requires its stated basis. JCM specifies1 L water, while MediaDive declares 1005 ml after the 5 ml addition; these are not interchangeable measured final-volume claims."}, {"field_path": "ingredients[3].concentration", "ingredient": "CaCl2・2H2O", "record_value": {"value": "0.15", "unit": "G_PER_L"}, "source_key": "togoM1014api", "source_locator": "$.components[0].items[3]", "source_name": "CaCl2・2H2O", "original_source_amount": 0.15, "original_source_unit": "g", "stage": "main recipe preparation", "decision": "evidence_only", "explanation": "Source mass matches nominal base-recipe amount; G_PER_L requires its stated basis. JCM specifies1 L water, while MediaDive declares 1005 ml after the 5 ml addition; these are not interchangeable measured final-volume claims."}, {"field_path": "ingredients[4].concentration", "ingredient": "KH2PO4", "record_value": {"value": "0.3", "unit": "G_PER_L"}, "source_key": "togoM1014api", "source_locator": "$.components[0].items[4]", "source_name": "KH2PO4", "original_source_amount": 0.3, "original_source_unit": "g", "stage": "main recipe preparation", "decision": "evidence_only", "explanation": "Source mass matches nominal base-recipe amount; G_PER_L requires its stated basis. JCM specifies1 L water, while MediaDive declares 1005 ml after the 5 ml addition; these are not interchangeable measured final-volume claims."}, {"field_path": "ingredients[5].concentration", "ingredient": "NH4Cl", "record_value": {"value": "0.33", "unit": "G_PER_L"}, "source_key": "togoM1014api", "source_locator": "$.components[0].items[5]", "source_name": "NH4Cl", "original_source_amount": 0.33, "original_source_unit": "g", "stage": "main recipe preparation", "decision": "evidence_only", "explanation": "Source mass matches nominal base-recipe amount; G_PER_L requires its stated basis. JCM specifies1 L water, while MediaDive declares 1005 ml after the 5 ml addition; these are not interchangeable measured final-volume claims."}, {"field_path": "ingredients[6].concentration", "ingredient": "Resazurin", "record_value": {"value": "1", "unit": "G_PER_L"}, "source_key": "togoM1014api", "source_locator": "$.components[0].items[6]", "source_name": "Resazurin", "original_source_amount": 1, "original_source_unit": "mg", "stage": "main recipe preparation", "decision": "correct", "explanation": "Source is1 mg resazurin for the base recipe, not 1 g/L. On a nominal 1 L basis the mass number differs1000-fold; actual final-volume normalization remains separately scoped."}, {"field_path": "ingredients[7].concentration", "ingredient": "MgCl2・6H2O", "record_value": {"value": "0.35", "unit": "G_PER_L"}, "source_key": "togoM1014api", "source_locator": "$.components[0].items[7]", "source_name": "MgCl2・6H2O", "original_source_amount": 0.35, "original_source_unit": "g", "stage": "main recipe preparation", "decision": "evidence_only", "explanation": "Source mass matches nominal base-recipe amount; G_PER_L requires its stated basis. JCM specifies1 L water, while MediaDive declares 1005 ml after the 5 ml addition; these are not interchangeable measured final-volume claims."}, {"field_path": "ingredients[8].concentration", "ingredient": "KCl", "record_value": {"value": "0.3", "unit": "G_PER_L"}, "source_key": "togoM1014api", "source_locator": "$.components[0].items[8]", "source_name": "KCl", "original_source_amount": 0.3, "original_source_unit": "g", "stage": "main recipe preparation", "decision": "evidence_only", "explanation": "Source mass matches nominal base-recipe amount; G_PER_L requires its stated basis. JCM specifies1 L water, while MediaDive declares 1005 ml after the 5 ml addition; these are not interchangeable measured final-volume claims."}, {"field_path": "ingredients[9].concentration", "ingredient": "Casitone (BD-Difco)", "record_value": {"value": "1", "unit": "G_PER_L"}, "source_key": "togoM1014api", "source_locator": "$.components[0].items[9]", "source_name": "Casitone (BD-Difco)", "original_source_amount": 1, "original_source_unit": "g", "stage": "main recipe preparation", "decision": "evidence_only", "explanation": "Source mass matches nominal base-recipe amount; G_PER_L requires its stated basis. JCM specifies1 L water, while MediaDive declares 1005 ml after the 5 ml addition; these are not interchangeable measured final-volume claims."}, {"field_path": "ingredients[10].concentration", "ingredient": "N2", "record_value": {"value": "variable", "unit": "VARIABLE"}, "source_key": "togoM1014api", "source_locator": "$.components[0].items[11]", "source_name": "N2", "original_source_amount": null, "original_source_unit": null, "stage": "N2 atmosphere", "decision": "not_quantified", "explanation": "N2 is an autoclaving/storage atmosphere, without a numerical ingredient dose; VARIABLE must not imply a quantified dissolved-gas amount."}, {"field_path": "ingredients[11].concentration", "ingredient": "Na2MoO4・2H2O", "record_value": {"value": "39", "unit": "G_PER_L"}, "source_key": "togoM1014api", "source_locator": "$.components[2].items[1]", "source_name": "Na2MoO4・2H2O", "original_source_amount": 39, "original_source_unit": "mg", "stage": "A5 stock preparation", "decision": "correct", "explanation": "This is an A5-stock solute, not a direct full-strength broth ingredient. Preserve its original stock-batch mass and hydrate; do not flatten or calculate contribution from the literal 1 g A5 dose without density and final-volume evidence."}, {"field_path": "ingredients[12].concentration", "ingredient": "H3BO3", "record_value": {"value": "0.286", "unit": "G_PER_L"}, "source_key": "togoM1014api", "source_locator": "$.components[2].items[2]", "source_name": "H3BO3", "original_source_amount": 0.286, "original_source_unit": "g", "stage": "A5 stock preparation", "decision": "correct", "explanation": "This is an A5-stock solute, not a direct full-strength broth ingredient. Preserve its original stock-batch mass and hydrate; do not flatten or calculate contribution from the literal 1 g A5 dose without density and final-volume evidence."}, {"field_path": "ingredients[13].concentration", "ingredient": "MnCl2・4H2O", "record_value": {"value": "0.181", "unit": "G_PER_L"}, "source_key": "togoM1014api", "source_locator": "$.components[2].items[3]", "source_name": "MnCl2・4H2O", "original_source_amount": 0.181, "original_source_unit": "g", "stage": "A5 stock preparation", "decision": "correct", "explanation": "This is an A5-stock solute, not a direct full-strength broth ingredient. Preserve its original stock-batch mass and hydrate; do not flatten or calculate contribution from the literal 1 g A5 dose without density and final-volume evidence."}, {"field_path": "ingredients[14].concentration", "ingredient": "ZnSO4・7H2O", "record_value": {"value": "22.2", "unit": "G_PER_L"}, "source_key": "togoM1014api", "source_locator": "$.components[2].items[4]", "source_name": "ZnSO4・7H2O", "original_source_amount": 22.2, "original_source_unit": "mg", "stage": "A5 stock preparation", "decision": "correct", "explanation": "This is an A5-stock solute, not a direct full-strength broth ingredient. Preserve its original stock-batch mass and hydrate; do not flatten or calculate contribution from the literal 1 g A5 dose without density and final-volume evidence."}, {"field_path": "ingredients[15].concentration", "ingredient": "CuSO4・5H2O", "record_value": {"value": "7.9", "unit": "G_PER_L"}, "source_key": "togoM1014api", "source_locator": "$.components[2].items[5]", "source_name": "CuSO4・5H2O", "original_source_amount": 7.9, "original_source_unit": "mg", "stage": "A5 stock preparation", "decision": "correct", "explanation": "This is an A5-stock solute, not a direct full-strength broth ingredient. Preserve its original stock-batch mass and hydrate; do not flatten or calculate contribution from the literal 1 g A5 dose without density and final-volume evidence."}, {"field_path": "ingredients[16].concentration", "ingredient": "Co(NO3)2・6H2O", "record_value": {"value": "4.94", "unit": "G_PER_L"}, "source_key": "togoM1014api", "source_locator": "$.components[2].items[6]", "source_name": "Co(NO3)2・6H2O", "original_source_amount": 4.94, "original_source_unit": "mg", "stage": "A5 stock preparation", "decision": "correct", "explanation": "This is an A5-stock solute, not a direct full-strength broth ingredient. Preserve its original stock-batch mass and hydrate; do not flatten or calculate contribution from the literal 1 g A5 dose without density and final-volume evidence."}, {"field_path": "solutions[0].concentration", "ingredient": "A5 solution (see below)", "record_value": {"value": "1", "unit": "G_PER_L"}, "source_key": "togoM1014api", "source_locator": "$.components[0].items[10]", "original_source_amount": 1, "original_source_unit": "g", "stage": "stock addition to main recipe", "decision": "correct", "explanation": "A5 literal 1 g stock dose needs its separate composition and explicit basis; no 1 ml substitution or density is justified."}, {"field_path": "solutions[1].concentration", "ingredient": "5% Na2S・9H2O solution", "record_value": {"value": "5", "unit": "G_PER_L"}, "source_key": "togoM1014api", "source_locator": "$.components[1].items[0]", "original_source_amount": 5, "original_source_unit": "ml", "stage": "stock addition to main recipe", "decision": "correct", "explanation": "Sulfide dose is 5 ml after cooling per liter, not5 g/L. The5% stock label lacks an explicit mass/volume basis; no0.25 g/L final claim is derived."}, {"field_path": "solutions[0].composition (source-only solvent)", "ingredient": "Distilled water", "source_key": "togoM1014api", "source_locator": "$.components[2].items[0]", "original_source_amount": 1, "original_source_unit": "L", "stage": "A5 stock preparation", "decision": "add", "explanation": "Restore separate A5 stock solvent context; it is not another direct broth ingredient and cannot be collapsed with main-recipe water."}]
+
+### Inline A5 and sulfide representations
+
+completeness: concern. Targets: CultureMech:007528.
+
+Both target solutions are empty Unknown solution placeholders without stable solution references. A5 source has six solutes plus 1 L water, already incorrectly flattened into direct ingredients; sulfide has a 5% label and 5 ml working dose. These are incomplete inline representations, not a demonstrated nonexistent referenced CultureMech ID.
+
+### Atmosphere, sterilization, cooling and stock addition
+
+evidence: concern. Targets: CultureMech:007528.
+
+Target and owner omit preparation and sterilization despite explicit N2 autoclaving, separately autoclaved/stored N2 sulfide and post-cooling addition. JCM page-wide 121 C for 15 min is scoped to this recipe unless otherwise stated. N2 alone as a VARIABLE ingredient cannot encode the ordered protocol.
+
+### Material classes, growth and unasserted fields
+
+scope: supported. Targets: CultureMech:007528.
+
+Complex/undefined liquid classification agrees with yeast extract, Casitone and no agar in the source. Mineral/gas/redox-role notes preserve TOGO annotations; they do not establish nutrient effects for an organism. Neither target nor owner asserts target-organism IDs, native variants, parent link, KG match or gene context. No pH, incubation, temperature optimum, organism growth or density is invented from this general recipe.
+
+### Append-only events and observed generated-owner difference
+
+provenance: concern. Targets: CultureMech:007528.
+
+All 13 target and 13 owner timestamps parse with timezones. Their first 12 events agree; target ends with August 6 merge while owner ends with September 2 duplicate repair. Owner 1 g/L water remains wrong despite the target 2 g/L difference. No historical replay or generator rerun was used.
+
+### Claim-level support and validator coverage
+
+evidence: concern. Targets: CultureMech:007528.
+
+Target and owner identify TOGO/JCM in notes and source terms but attach no structured recipe references or claim excerpts. The reference validator checked 0 excerpts; direct primary/API and ontology comparisons supplied the independent source assessment. Current importer supports better stage/unit handling, so exact future regeneration must be tested after owner correction.
+
+## Findings
+
+### f1: Main medium and A5 stock are conflated with wrong units
+
+blocker / open / confirmed; issue key: CM007528-stock-and-unit-corruption.
+
+Water becomes 2 g/L instead of separate 1 L main/stock volumes; resazurin 1 mg becomes 1 g/L; sulfide 5 ml becomes 5 g/L; six A5 solutes are direct broth ingredients, including four original mg amounts stored as G_PER_L. The literal 1 g A5 addition and empty placeholders do not supply the missing stock boundary or density. These errors change the represented formulation despite passing schema checks.
+
+### f2: Source preparation and sterilization are missing
+
+major / open / confirmed; issue key: CM007528-anaerobic-preparation-missing.
+
+Neither layer preserves the source N2 autoclaving, cooling, separately autoclaved/stored N2 sulfide and ordered addition. The omissions materially change preparation of this reducing medium; native P3.5 is normalized to major for that impact.
+
+### f3: Source notes lack narrow structured evidence
+
+minor / open / confirmed; issue key: CM007528-claim-evidence-gap.
+
+Source URLs and accessions in notes identify the recipe but are not ingredient-amount, stock-dose or preparation excerpts. Validator 0 reference checks did not test those claims.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Correct maintained source units and separate A5 composition from broth; retain literalA5 mass dose and unresolved conversion. Preserve separate solvent volumes and 5 mlsulfide addition, attach stage-scoped evidence, then regenerate.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Add source-backed ordered preparation and page-wide sterilization with exact scope; represent N2 as atmosphere without an invented dose.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Add exact primary references and short field-scoped excerpts in ingredient evidence and root evidence for solution doses; preserve actual retrieval metadata and unresolved source ambiguities.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/480g_medium__e94698e7.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/TOGO_M1014_480G_Medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/480g_medium__e94698e7.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/480g_medium__e94698e7.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch011/101/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-011/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch011/101/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/480g_medium__e94698e7.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/480g_medium__e94698e7.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/480g_medium__e94698e7.yaml:1:id: CultureMech:007528<br>./data/normalized_yaml/bacterial/TOGO_M1014_480G_Medium.yaml:1:id: CultureMech:007528<br> |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:15377 resolves to water and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi17997 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17997; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:17997 resolves to dinitrogen and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:26710 resolves to sodium chloride and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:31206 resolves to ammonium chloride and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi31440 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:31440 resolves to copper(II) sulfate pentahydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi32312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:32312 resolves to zinc sulfate heptahydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:32588 resolves to potassium chloride and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:33118 resolves to boric acid and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:63036 resolves to potassium dihydrogen phosphate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:75213 resolves to sodium molybdate dihydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:86158 resolves to calcium chloride dihydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi86214 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86214; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:86214 resolves to cobalt dinitrate hexahydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:86345 resolves to magnesium dichloride hexahydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:86368 resolves to manganese(II) chloride tetrahydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:8806 resolves to Resazurin and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; All live preferred-term rows for asserted secondary CHEBI keys; metadata captured | supports | {"CHEBI:15377": [{"label": "Distilled water", "match_type": "preferred_term", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31206": [{"label": "NH4Cl", "match_type": "preferred_term", "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:8806": [{"label": "Resazurin", "match_type": "preferred_term", "identifier": "CHEBI:8806", "preferred_term": "Resazurin", "ontology_id": "CHEBI:8806", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32588": [{"label": "KCl", "match_type": "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}]} |
+| jcm | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=964; JCM 964 composition, A5 stock block, preparation and page-wide sterilization instruction | supports | Exact primary480G recipe read: base solutes, 1 L water, 1 mg resazurin, A5 dose 1 g, then5 ml 5%sulfide solution; A5 solutes have their own 1 L water. Autoclave under N2; separately autoclaved/stored sulfide under N2 is added after cooling. Default 121 C for 15 min applies unless stated otherwise. |
+| togo | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1014; $.meta; $.components[0:3]; $.comments[0] | supports | TOGO M1014 explicitly identifies JCM_M964 and preserves main solution1, main solution2 and separateA5 section; original quantities and group boundaries were checked directly. |
+| mediadive | https://mediadive.dsmz.de/rest/medium/J964; $.data.medium; $.data.solutions[0:2] | supports | MediaDive J964 reports main volume 1005 ml and A5 volume 1000 ml. Its g_l values normalize within each provider solution; they are not proof of measured final volume or permission to flatten A5 into broth. |
+| writer | src/culturemech/import/togo_importer.py; _extract_primary_components; _solution_from_item; _parse_unit; import recipe branch | context_only | Current importer distinguishes primary/stock sections and supports mg, ml, L; it may retain ambiguous local stock composition unresolved. This is current implementation context, not a replay or proof of the historical writer execution. |
+| migration | scripts/migrate_solutions_from_ingredients.py; _resolve_solution and unresolved-stub branch | context_only | Migration can copy a pre-existing concentration to an empty solution stub; this does not recover its source unit or stock composition. |
+| duplicate-repair | scripts/repair_merged_duplicates.py; repair_ingredient; owner final curation event | context_only | Current duplicate repair collapses identical numerical parts. The observed owner water is1.0 G_PER_L with collapsed-duplicate note; the generated target remains2.0 G_PER_L. Equal numerical parts did not establish that main-water and A5-stock water were duplicates. |
+| quantities | /private/tmp/culturemech-review-work-batch011/101/quantity-inventory.json; All 17 direct ingredient amounts, 2 stock doses, and source-only A5 solvent | context_only | Twenty explicit concentration decisions retain original source amounts, units and preparation stage; arithmetic and unresolved denominators are separate from source statements. |
+
+## Limits And Additional Notes
+
+- JCM 964 literally doses A5 solution as 1.0 g. No density or mass-to-volume conversion is supplied, so its final contribution remains unresolved; this review does not replace that dose with 1 ml.
+- Source 5% sodium sulfide stock lacks an explicit percent basis, and1 L water plus later5mlstock does not independently specify a measured final volume. No final-stock concentration or density is guessed.
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T083538Z-culturemech-007528-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: 480g_medium (CultureMech:007528)'
+started_at: '2026-10-21T08:29:10Z'
+finished_at: '2026-10-21T08:35:38Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: JCM 964/TOGO M1014 identity is recoverable, but the generated 480G formulation
+  conflates main medium and A5 stock, corrupts mass/volume units, and omits the anaerobic
+  preparation. The maintained owner only collapses the duplicate water value; source
+  stage and unit corrections remain necessary.
+source:
+  git_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/480g_medium__e94698e7.yaml
+    sha256: 6d971c062f9f2ec0c6fd843fc6fbe2f62e0f8be9cbb21c5fb9d9768f6c9c842a
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M1014_480G_Medium.yaml
+    sha256: c74205bf8fb5be2b418d67edd5d8f655ea5f88e76338c5300850ccc84e0778b6
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/dedupe_identical_ingredients.py
+    sha256: 1aa07dbcab409f8b1efa9bfac027827dc75ca2acb3a54c4aabda349564804120
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/togo_raw_yaml.py
+    sha256: ce5e73545c9ecde54724259d2fd475676c0f3cb44dcfd283950e89fd49c10993
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/fetch/togo_fetcher.py
+    sha256: 7aac40fe1d47e30810ae0be02f6e369ddb9bf657d630072595c62f46fb0bf339
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 101; batch 011 item 1 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding ten task batches contain
+    100 ledger-owned validated record reviews; their complete validated lists also
+    retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+    contains 40 validated baseline bundles covering 2 current merged paths. Unioning
+    all prior lists with this baseline covers 102 of 6320 current merged paths, including
+    2 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:007528
+targets:
+- target_id: CultureMech:007528
+  path: data/merge_yaml/merged/480g_medium__e94698e7.yaml
+  label: 480g_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1014_480G_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/480g_medium__e94698e7.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:007528
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/480g_medium__e94698e7.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch011/101/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-011/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch011/101/strict.tsv"
+  target_ids:
+  - CultureMech:007528
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/480g_medium__e94698e7.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:007528
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/480g_medium__e94698e7.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:007528
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:007528
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/480g_medium__e94698e7.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T08:35:36Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M1014_480G_Medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T08:35:36Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/480g_medium__e94698e7.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:30:07.946872Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/480g_medium__e94698e7.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch011/101/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:30:12.118273Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-011/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch011/101/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/480g_medium__e94698e7.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:30:21.052566Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/480g_medium__e94698e7.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:30:24.087780Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T08:35:36Z'
+  support: supports
+  summary: './data/merge_yaml/merged/480g_medium__e94698e7.yaml:1:id: CultureMech:007528
+
+    ./data/normalized_yaml/bacterial/TOGO_M1014_480G_Medium.yaml:1:id: CultureMech:007528
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:17:26.097802Z'
+  support: supports
+  summary: CHEBI:15377 resolves to water and is not obsolete. This verifies the asserted
+    generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond
+    the record is inferred.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi17997
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17997
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:17:27.385647Z'
+  support: supports
+  summary: CHEBI:17997 resolves to dinitrogen and is not obsolete. This verifies the
+    asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: ea4b3f90994884c49607689e3f3939cfec804c7d17905bbeecfc0ef7f80ead43
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:17:28.023873Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride and is not obsolete. This verifies
+    the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi31206
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:17:28.439407Z'
+  support: supports
+  summary: CHEBI:31206 resolves to ammonium chloride and is not obsolete. This verifies
+    the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi31440
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:17:28.489501Z'
+  support: supports
+  summary: CHEBI:31440 resolves to copper(II) sulfate pentahydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: e8ac76313670beb01b2eea5bf76bd0e4a341d0798c99d947484fbdd280d297f9
+- evidence_id: chebi32312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:17:28.879505Z'
+  support: supports
+  summary: CHEBI:32312 resolves to zinc sulfate heptahydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: chebi32588
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:17:29.045588Z'
+  support: supports
+  summary: CHEBI:32588 resolves to potassium chloride and is not obsolete. This verifies
+    the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:17:29.364390Z'
+  support: supports
+  summary: CHEBI:33118 resolves to boric acid and is not obsolete. This verifies the
+    asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: CHEBI:75213 resolves to sodium molybdate dihydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86214
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86214
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:17:30.123051Z'
+  support: supports
+  summary: CHEBI:86214 resolves to cobalt dinitrate hexahydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 90cf3337643bc22bd3940bfbdee70a144b13af549ea12534184385f036b4633c
+- evidence_id: chebi86345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:17:30.382026Z'
+  support: supports
+  summary: CHEBI:86345 resolves to magnesium dichloride hexahydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: chebi86368
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:17:30.657545Z'
+  support: supports
+  summary: CHEBI:86368 resolves to manganese(II) chloride tetrahydrate and is not
+    obsolete. This verifies the asserted generic chemical identity; no source grade,
+    salt, hydrate or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: chebi8806
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:17:30.774007Z'
+  support: supports
+  summary: CHEBI:8806 resolves to Resazurin and is not obsolete. This verifies the
+    asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: All live preferred-term rows for asserted secondary CHEBI keys; metadata
+    captured
+  accessed_at: '2026-10-21T08:35:36Z'
+  support: supports
+  summary: '{"CHEBI:15377": [{"label": "Distilled water", "match_type": "preferred_term",
+    "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id":
+    "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26710":
+    [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710",
+    "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term",
+    "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31206": [{"label":
+    "NH4Cl", "match_type": "preferred_term", "identifier": "CHEBI:31206", "preferred_term":
+    "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:8806": [{"label": "Resazurin", "match_type": "preferred_term",
+    "identifier": "CHEBI:8806", "preferred_term": "Resazurin", "ontology_id": "CHEBI:8806",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32588": [{"label":
+    "KCl", "match_type": "preferred_term", "identifier": "CHEBI:32588", "preferred_term":
+    "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type": "preferred_term",
+    "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}'
+- evidence_id: jcm
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=964
+  locator: JCM 964 composition, A5 stock block, preparation and page-wide sterilization
+    instruction
+  accessed_at: '2026-10-21T08:17:31.505699Z'
+  support: supports
+  summary: 'Exact primary480G recipe read: base solutes, 1 L water, 1 mg resazurin,
+    A5 dose 1 g, then5 ml 5%sulfide solution; A5 solutes have their own 1 L water.
+    Autoclave under N2; separately autoclaved/stored sulfide under N2 is added after
+    cooling. Default 121 C for 15 min applies unless stated otherwise.'
+  snapshot_sha256: 01248513258223a3d112bb88ce29768c2e0c2b5c9bb6931f0464ec871c27497a
+- evidence_id: togo
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1014
+  locator: $.meta; $.components[0:3]; $.comments[0]
+  accessed_at: '2026-10-21T08:17:24.990083Z'
+  support: supports
+  summary: TOGO M1014 explicitly identifies JCM_M964 and preserves main solution1,
+    main solution2 and separateA5 section; original quantities and group boundaries
+    were checked directly.
+  snapshot_sha256: a8c242c37409078a3ce7956ef14ad6a012cc8c1cccdf327daaa1e59b3f602a70
+- evidence_id: mediadive
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J964
+  locator: $.data.medium; $.data.solutions[0:2]
+  accessed_at: '2026-10-21T08:17:24.391112Z'
+  support: supports
+  summary: MediaDive J964 reports main volume 1005 ml and A5 volume 1000 ml. Its g_l
+    values normalize within each provider solution; they are not proof of measured
+    final volume or permission to flatten A5 into broth.
+  snapshot_sha256: d87f41d44d0e086f2cae9648445e21b1edc76da0e6eb18b535097383cb119529
+- evidence_id: writer
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: _extract_primary_components; _solution_from_item; _parse_unit; import recipe
+    branch
+  accessed_at: '2026-10-21T08:35:36Z'
+  support: context_only
+  summary: Current importer distinguishes primary/stock sections and supports mg,
+    ml, L; it may retain ambiguous local stock composition unresolved. This is current
+    implementation context, not a replay or proof of the historical writer execution.
+- evidence_id: migration
+  kind: record_content
+  reference: scripts/migrate_solutions_from_ingredients.py
+  locator: _resolve_solution and unresolved-stub branch
+  accessed_at: '2026-10-21T08:35:36Z'
+  support: context_only
+  summary: Migration can copy a pre-existing concentration to an empty solution stub;
+    this does not recover its source unit or stock composition.
+- evidence_id: duplicate-repair
+  kind: record_content
+  reference: scripts/repair_merged_duplicates.py
+  locator: repair_ingredient; owner final curation event
+  accessed_at: '2026-10-21T08:35:36Z'
+  support: context_only
+  summary: Current duplicate repair collapses identical numerical parts. The observed
+    owner water is1.0 G_PER_L with collapsed-duplicate note; the generated target
+    remains2.0 G_PER_L. Equal numerical parts did not establish that main-water and
+    A5-stock water were duplicates.
+- evidence_id: quantities
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch011/101/quantity-inventory.json
+  locator: All 17 direct ingredient amounts, 2 stock doses, and source-only A5 solvent
+  accessed_at: '2026-10-21T08:35:36Z'
+  support: context_only
+  summary: Twenty explicit concentration decisions retain original source amounts,
+    units and preparation stage; arithmetic and unresolved denominators are separate
+    from source statements.
+  snapshot_sha256: 5defcf83a3eec33af094edb1f916d8b048f2f6b02cae34e92c0d057089c5becf
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:007528
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: All asserted primary and current secondary ingredient identifiers
+  outcome: supported
+  summary: '15 primary CHEBI identities resolve with matching labels; 7 of 7 current
+    secondary keys have live pinned-index rows. Unresolved keys: [].'
+  target_ids:
+  - CultureMech:007528
+  evidence_ids:
+  - record
+  - mim
+  - chebi15377
+  - chebi17997
+  - chebi26710
+  - chebi31206
+  - chebi31440
+  - chebi32312
+  - chebi32588
+  - chebi33118
+  - chebi63036
+  - chebi75213
+  - chebi86158
+  - chebi86214
+  - chebi86345
+  - chebi86368
+  - chebi8806
+  details: 17 direct ingredient instances; CHEBI-primary instance linkage 15/17 (88.24%),
+    verified secondary coverage 7/17 (41.18%). Percentages use a 0–100 linkage scale,
+    not a scientific correctness score. Complex mixtures without asserted IDs remain
+    ungrounded rather than receiving invented pure-molecule identities.
+- assessment_id: identity
+  area: identity
+  topic: Exact generated target and maintained/source identity
+  outcome: supported
+  summary: CultureMech 007528 resolves to one maintained TOGO_M1014 owner and generated
+    480G target. TOGO M1014 and MediaDive J964 both explicitly cross-reference JCM
+    964. One-source merge provenance is traceable; a fingerprint is not formulation
+    validation.
+  target_ids:
+  - CultureMech:007528
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - togo
+  - jcm
+  - mediadive
+- assessment_id: amounts
+  area: quantity
+  topic: Every direct amount, stock dose and separate stock boundary
+  outcome: concern
+  summary: The source main recipe and A5 stock are distinct. Source masses and volume
+    units expose water/resazurin/sulfide errors and four mg-to-g stock errors; even
+    the two A5 solutes retaining numerical g values occur at the wrong stage. Eight
+    other base-solute mass values agree nominally, with final-volume scope explicitly
+    unresolved.
+  target_ids:
+  - CultureMech:007528
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - togo
+  - mediadive
+  - quantities
+  details: '[{"field_path": "ingredients[0].concentration", "ingredient": "Distilled
+    water", "record_value": {"value": "2.0", "unit": "G_PER_L"}, "source_key": "togoM1014api",
+    "source_locator": "$.components[0].items[0]", "source_name": "Distilled water",
+    "original_source_amount": 1, "original_source_unit": "L", "stage": "main recipe
+    preparation", "decision": "correct", "explanation": "Main medium water is1 L,
+    with another 1 L solely for A5 stock. Target 2 g/L and owner 1 g/L are not either
+    source volume; preserve both preparation stages."}, {"field_path": "ingredients[1].concentration",
+    "ingredient": "Yeast extract", "record_value": {"value": "0.5", "unit": "G_PER_L"},
+    "source_key": "togoM1014api", "source_locator": "$.components[0].items[1]", "source_name":
+    "Yeast extract", "original_source_amount": 0.5, "original_source_unit": "g", "stage":
+    "main recipe preparation", "decision": "evidence_only", "explanation": "Source
+    mass matches nominal base-recipe amount; G_PER_L requires its stated basis. JCM
+    specifies1 L water, while MediaDive declares 1005 ml after the 5 ml addition;
+    these are not interchangeable measured final-volume claims."}, {"field_path":
+    "ingredients[2].concentration", "ingredient": "NaCl", "record_value": {"value":
+    "0.5", "unit": "G_PER_L"}, "source_key": "togoM1014api", "source_locator": "$.components[0].items[2]",
+    "source_name": "NaCl", "original_source_amount": 0.5, "original_source_unit":
+    "g", "stage": "main recipe preparation", "decision": "evidence_only", "explanation":
+    "Source mass matches nominal base-recipe amount; G_PER_L requires its stated basis.
+    JCM specifies1 L water, while MediaDive declares 1005 ml after the 5 ml addition;
+    these are not interchangeable measured final-volume claims."}, {"field_path":
+    "ingredients[3].concentration", "ingredient": "CaCl2・2H2O", "record_value": {"value":
+    "0.15", "unit": "G_PER_L"}, "source_key": "togoM1014api", "source_locator": "$.components[0].items[3]",
+    "source_name": "CaCl2・2H2O", "original_source_amount": 0.15, "original_source_unit":
+    "g", "stage": "main recipe preparation", "decision": "evidence_only", "explanation":
+    "Source mass matches nominal base-recipe amount; G_PER_L requires its stated basis.
+    JCM specifies1 L water, while MediaDive declares 1005 ml after the 5 ml addition;
+    these are not interchangeable measured final-volume claims."}, {"field_path":
+    "ingredients[4].concentration", "ingredient": "KH2PO4", "record_value": {"value":
+    "0.3", "unit": "G_PER_L"}, "source_key": "togoM1014api", "source_locator": "$.components[0].items[4]",
+    "source_name": "KH2PO4", "original_source_amount": 0.3, "original_source_unit":
+    "g", "stage": "main recipe preparation", "decision": "evidence_only", "explanation":
+    "Source mass matches nominal base-recipe amount; G_PER_L requires its stated basis.
+    JCM specifies1 L water, while MediaDive declares 1005 ml after the 5 ml addition;
+    these are not interchangeable measured final-volume claims."}, {"field_path":
+    "ingredients[5].concentration", "ingredient": "NH4Cl", "record_value": {"value":
+    "0.33", "unit": "G_PER_L"}, "source_key": "togoM1014api", "source_locator": "$.components[0].items[5]",
+    "source_name": "NH4Cl", "original_source_amount": 0.33, "original_source_unit":
+    "g", "stage": "main recipe preparation", "decision": "evidence_only", "explanation":
+    "Source mass matches nominal base-recipe amount; G_PER_L requires its stated basis.
+    JCM specifies1 L water, while MediaDive declares 1005 ml after the 5 ml addition;
+    these are not interchangeable measured final-volume claims."}, {"field_path":
+    "ingredients[6].concentration", "ingredient": "Resazurin", "record_value": {"value":
+    "1", "unit": "G_PER_L"}, "source_key": "togoM1014api", "source_locator": "$.components[0].items[6]",
+    "source_name": "Resazurin", "original_source_amount": 1, "original_source_unit":
+    "mg", "stage": "main recipe preparation", "decision": "correct", "explanation":
+    "Source is1 mg resazurin for the base recipe, not 1 g/L. On a nominal 1 L basis
+    the mass number differs1000-fold; actual final-volume normalization remains separately
+    scoped."}, {"field_path": "ingredients[7].concentration", "ingredient": "MgCl2・6H2O",
+    "record_value": {"value": "0.35", "unit": "G_PER_L"}, "source_key": "togoM1014api",
+    "source_locator": "$.components[0].items[7]", "source_name": "MgCl2・6H2O", "original_source_amount":
+    0.35, "original_source_unit": "g", "stage": "main recipe preparation", "decision":
+    "evidence_only", "explanation": "Source mass matches nominal base-recipe amount;
+    G_PER_L requires its stated basis. JCM specifies1 L water, while MediaDive declares
+    1005 ml after the 5 ml addition; these are not interchangeable measured final-volume
+    claims."}, {"field_path": "ingredients[8].concentration", "ingredient": "KCl",
+    "record_value": {"value": "0.3", "unit": "G_PER_L"}, "source_key": "togoM1014api",
+    "source_locator": "$.components[0].items[8]", "source_name": "KCl", "original_source_amount":
+    0.3, "original_source_unit": "g", "stage": "main recipe preparation", "decision":
+    "evidence_only", "explanation": "Source mass matches nominal base-recipe amount;
+    G_PER_L requires its stated basis. JCM specifies1 L water, while MediaDive declares
+    1005 ml after the 5 ml addition; these are not interchangeable measured final-volume
+    claims."}, {"field_path": "ingredients[9].concentration", "ingredient": "Casitone
+    (BD-Difco)", "record_value": {"value": "1", "unit": "G_PER_L"}, "source_key":
+    "togoM1014api", "source_locator": "$.components[0].items[9]", "source_name": "Casitone
+    (BD-Difco)", "original_source_amount": 1, "original_source_unit": "g", "stage":
+    "main recipe preparation", "decision": "evidence_only", "explanation": "Source
+    mass matches nominal base-recipe amount; G_PER_L requires its stated basis. JCM
+    specifies1 L water, while MediaDive declares 1005 ml after the 5 ml addition;
+    these are not interchangeable measured final-volume claims."}, {"field_path":
+    "ingredients[10].concentration", "ingredient": "N2", "record_value": {"value":
+    "variable", "unit": "VARIABLE"}, "source_key": "togoM1014api", "source_locator":
+    "$.components[0].items[11]", "source_name": "N2", "original_source_amount": null,
+    "original_source_unit": null, "stage": "N2 atmosphere", "decision": "not_quantified",
+    "explanation": "N2 is an autoclaving/storage atmosphere, without a numerical ingredient
+    dose; VARIABLE must not imply a quantified dissolved-gas amount."}, {"field_path":
+    "ingredients[11].concentration", "ingredient": "Na2MoO4・2H2O", "record_value":
+    {"value": "39", "unit": "G_PER_L"}, "source_key": "togoM1014api", "source_locator":
+    "$.components[2].items[1]", "source_name": "Na2MoO4・2H2O", "original_source_amount":
+    39, "original_source_unit": "mg", "stage": "A5 stock preparation", "decision":
+    "correct", "explanation": "This is an A5-stock solute, not a direct full-strength
+    broth ingredient. Preserve its original stock-batch mass and hydrate; do not flatten
+    or calculate contribution from the literal 1 g A5 dose without density and final-volume
+    evidence."}, {"field_path": "ingredients[12].concentration", "ingredient": "H3BO3",
+    "record_value": {"value": "0.286", "unit": "G_PER_L"}, "source_key": "togoM1014api",
+    "source_locator": "$.components[2].items[2]", "source_name": "H3BO3", "original_source_amount":
+    0.286, "original_source_unit": "g", "stage": "A5 stock preparation", "decision":
+    "correct", "explanation": "This is an A5-stock solute, not a direct full-strength
+    broth ingredient. Preserve its original stock-batch mass and hydrate; do not flatten
+    or calculate contribution from the literal 1 g A5 dose without density and final-volume
+    evidence."}, {"field_path": "ingredients[13].concentration", "ingredient": "MnCl2・4H2O",
+    "record_value": {"value": "0.181", "unit": "G_PER_L"}, "source_key": "togoM1014api",
+    "source_locator": "$.components[2].items[3]", "source_name": "MnCl2・4H2O", "original_source_amount":
+    0.181, "original_source_unit": "g", "stage": "A5 stock preparation", "decision":
+    "correct", "explanation": "This is an A5-stock solute, not a direct full-strength
+    broth ingredient. Preserve its original stock-batch mass and hydrate; do not flatten
+    or calculate contribution from the literal 1 g A5 dose without density and final-volume
+    evidence."}, {"field_path": "ingredients[14].concentration", "ingredient": "ZnSO4・7H2O",
+    "record_value": {"value": "22.2", "unit": "G_PER_L"}, "source_key": "togoM1014api",
+    "source_locator": "$.components[2].items[4]", "source_name": "ZnSO4・7H2O", "original_source_amount":
+    22.2, "original_source_unit": "mg", "stage": "A5 stock preparation", "decision":
+    "correct", "explanation": "This is an A5-stock solute, not a direct full-strength
+    broth ingredient. Preserve its original stock-batch mass and hydrate; do not flatten
+    or calculate contribution from the literal 1 g A5 dose without density and final-volume
+    evidence."}, {"field_path": "ingredients[15].concentration", "ingredient": "CuSO4・5H2O",
+    "record_value": {"value": "7.9", "unit": "G_PER_L"}, "source_key": "togoM1014api",
+    "source_locator": "$.components[2].items[5]", "source_name": "CuSO4・5H2O", "original_source_amount":
+    7.9, "original_source_unit": "mg", "stage": "A5 stock preparation", "decision":
+    "correct", "explanation": "This is an A5-stock solute, not a direct full-strength
+    broth ingredient. Preserve its original stock-batch mass and hydrate; do not flatten
+    or calculate contribution from the literal 1 g A5 dose without density and final-volume
+    evidence."}, {"field_path": "ingredients[16].concentration", "ingredient": "Co(NO3)2・6H2O",
+    "record_value": {"value": "4.94", "unit": "G_PER_L"}, "source_key": "togoM1014api",
+    "source_locator": "$.components[2].items[6]", "source_name": "Co(NO3)2・6H2O",
+    "original_source_amount": 4.94, "original_source_unit": "mg", "stage": "A5 stock
+    preparation", "decision": "correct", "explanation": "This is an A5-stock solute,
+    not a direct full-strength broth ingredient. Preserve its original stock-batch
+    mass and hydrate; do not flatten or calculate contribution from the literal 1
+    g A5 dose without density and final-volume evidence."}, {"field_path": "solutions[0].concentration",
+    "ingredient": "A5 solution (see below)", "record_value": {"value": "1", "unit":
+    "G_PER_L"}, "source_key": "togoM1014api", "source_locator": "$.components[0].items[10]",
+    "original_source_amount": 1, "original_source_unit": "g", "stage": "stock addition
+    to main recipe", "decision": "correct", "explanation": "A5 literal 1 g stock dose
+    needs its separate composition and explicit basis; no 1 ml substitution or density
+    is justified."}, {"field_path": "solutions[1].concentration", "ingredient": "5%
+    Na2S・9H2O solution", "record_value": {"value": "5", "unit": "G_PER_L"}, "source_key":
+    "togoM1014api", "source_locator": "$.components[1].items[0]", "original_source_amount":
+    5, "original_source_unit": "ml", "stage": "stock addition to main recipe", "decision":
+    "correct", "explanation": "Sulfide dose is 5 ml after cooling per liter, not5
+    g/L. The5% stock label lacks an explicit mass/volume basis; no0.25 g/L final claim
+    is derived."}, {"field_path": "solutions[0].composition (source-only solvent)",
+    "ingredient": "Distilled water", "source_key": "togoM1014api", "source_locator":
+    "$.components[2].items[0]", "original_source_amount": 1, "original_source_unit":
+    "L", "stage": "A5 stock preparation", "decision": "add", "explanation": "Restore
+    separate A5 stock solvent context; it is not another direct broth ingredient and
+    cannot be collapsed with main-recipe water."}]'
+- assessment_id: stocks
+  area: completeness
+  topic: Inline A5 and sulfide representations
+  outcome: concern
+  summary: Both target solutions are empty Unknown solution placeholders without stable
+    solution references. A5 source has six solutes plus 1 L water, already incorrectly
+    flattened into direct ingredients; sulfide has a 5% label and 5 ml working dose.
+    These are incomplete inline representations, not a demonstrated nonexistent referenced
+    CultureMech ID.
+  target_ids:
+  - CultureMech:007528
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - togo
+  - migration
+- assessment_id: preparation
+  area: evidence
+  topic: Atmosphere, sterilization, cooling and stock addition
+  outcome: concern
+  summary: Target and owner omit preparation and sterilization despite explicit N2
+    autoclaving, separately autoclaved/stored N2 sulfide and post-cooling addition.
+    JCM page-wide 121 C for 15 min is scoped to this recipe unless otherwise stated.
+    N2 alone as a VARIABLE ingredient cannot encode the ordered protocol.
+  target_ids:
+  - CultureMech:007528
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - togo
+  - writer
+- assessment_id: classification
+  area: scope
+  topic: Material classes, growth and unasserted fields
+  outcome: supported
+  summary: Complex/undefined liquid classification agrees with yeast extract, Casitone
+    and no agar in the source. Mineral/gas/redox-role notes preserve TOGO annotations;
+    they do not establish nutrient effects for an organism. Neither target nor owner
+    asserts target-organism IDs, native variants, parent link, KG match or gene context.
+    No pH, incubation, temperature optimum, organism growth or density is invented
+    from this general recipe.
+  target_ids:
+  - CultureMech:007528
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - togo
+- assessment_id: history
+  area: provenance
+  topic: Append-only events and observed generated-owner difference
+  outcome: concern
+  summary: All 13 target and 13 owner timestamps parse with timezones. Their first
+    12 events agree; target ends with August 6 merge while owner ends with September
+    2 duplicate repair. Owner 1 g/L water remains wrong despite the target 2 g/L difference.
+    No historical replay or generator rerun was used.
+  target_ids:
+  - CultureMech:007528
+  evidence_ids:
+  - record
+  - owner-0
+  - duplicate-repair
+- assessment_id: evidence
+  area: evidence
+  topic: Claim-level support and validator coverage
+  outcome: concern
+  summary: Target and owner identify TOGO/JCM in notes and source terms but attach
+    no structured recipe references or claim excerpts. The reference validator checked
+    0 excerpts; direct primary/API and ontology comparisons supplied the independent
+    source assessment. Current importer supports better stage/unit handling, so exact
+    future regeneration must be tested after owner correction.
+  target_ids:
+  - CultureMech:007528
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - togo
+  - writer
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: CM007528-stock-and-unit-corruption
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Main medium and A5 stock are conflated with wrong units
+  description: Water becomes 2 g/L instead of separate 1 L main/stock volumes; resazurin
+    1 mg becomes 1 g/L; sulfide 5 ml becomes 5 g/L; six A5 solutes are direct broth
+    ingredients, including four original mg amounts stored as G_PER_L. The literal
+    1 g A5 addition and empty placeholders do not supply the missing stock boundary
+    or density. These errors change the represented formulation despite passing schema
+    checks.
+  target_ids:
+  - CultureMech:007528
+  field_paths:
+  - ingredients[0]
+  - ingredients[6]
+  - ingredients[11:17]
+  - solutions[0]
+  - solutions[1]
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - togo
+  - mediadive
+  - quantities
+  - migration
+  - duplicate-repair
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1014_480G_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: CM007528-anaerobic-preparation-missing
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source preparation and sterilization are missing
+  description: Neither layer preserves the source N2 autoclaving, cooling, separately
+    autoclaved/stored N2 sulfide and ordered addition. The omissions materially change
+    preparation of this reducing medium; native P3.5 is normalized to major for that
+    impact.
+  target_ids:
+  - CultureMech:007528
+  field_paths:
+  - preparation_steps
+  - sterilization
+  - ingredients[10]
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - togo
+  - writer
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1014_480G_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.5
+  native_severity: P3
+  normalization_reason: P3 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: CM007528-claim-evidence-gap
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Source notes lack narrow structured evidence
+  description: Source URLs and accessions in notes identify the recipe but are not
+    ingredient-amount, stock-dose or preparation excerpts. Validator 0 reference checks
+    did not test those claims.
+  target_ids:
+  - CultureMech:007528
+  field_paths:
+  - references
+  - ingredients[*].evidence
+  - evidence
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - togo
+  - validate-references
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1014_480G_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Correct maintained source units and separate A5 composition from broth;
+    retain literalA5 mass dose and unresolved conversion. Preserve separate solvent
+    volumes and 5 mlsulfide addition, attach stage-scoped evidence, then regenerate.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:007528
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1014_480G_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Add source-backed ordered preparation and page-wide sterilization with
+    exact scope; represent N2 as atmosphere without an invented dose.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:007528
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1014_480G_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Add exact primary references and short field-scoped excerpts in ingredient
+    evidence and root evidence for solution doses; preserve actual retrieval metadata
+    and unresolved source ambiguities.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:007528
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1014_480G_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- JCM 964 literally doses A5 solution as 1.0 g. No density or mass-to-volume conversion
+  is supplied, so its final contribution remains unresolved; this review does not
+  replace that dose with 1 ml.
+- Source 5% sodium sulfide stock lacks an explicit percent basis, and1 L water plus
+  later5mlstock does not independently specify a measured final volume. No final-stock
+  concentration or density is guessed.
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+tags:
+- unreviewed-records
+- batch-011
+- generated-medium
+```
