@@ -1,0 +1,2036 @@
+# Source and formulation review: abm (CultureMech:000040)
+
+- Review: 20261021T094516Z-culturemech-000040-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T09:35:30Z
+- Finished UTC: 2026-10-21T09:45:16Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The exact current CCAP ABM source is a complete acidic medium with nine stock preparations and a direct ammonium-sulfate addition. The target and maintained owner instead contain only the six PIV trace-stock chemicals at stock strength, omit the remaining formulation and pH/preparation, and retain generic importer light/temperature recommendations. The current source version and earlier local expansion are distinguished. All four documented diagnostics pass; the scientific representation is incomplete and changes the named medium.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 136; batch 014 item 6 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding thirteen task batches contain 130 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c contains 40 validated baseline bundles covering 2 current merged paths. Unioning all prior lists with this baseline covers 132 of 6320 current merged paths, including 2 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 24a1d277eb7f0437af53af0d178a30f9bfa6374c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:000040 | data/merge_yaml/merged/ABM.yaml | generated | abm |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:000040 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:000040 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-014/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch014/136/strict.tsv |
+| validate-terms | passed | True | CultureMech:000040 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:000040 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:000040 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Scoped timestamp syntax and timezone inspection | failed | False | CultureMech:000040 | 30 timestamps inspected, 16 invalid or timezone-naive; old provenance remains unchanged. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:000040.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### ABM accession and current source version
+
+identity: supported. Targets: CultureMech:000040.
+
+The stable ID, exact CCAP:ABM reference, PDF URL, maintained sources entry and import event identify Acidic Bold-Basal Medium with Vitamins; modified. The April expansion of six ingredients predates the captured May revision. The current source version is assessed explicitly, without claiming identical historical bytes. The source PIV block is only stock 7 within ABM, not the whole named medium.
+
+### Primary labels/forms and pinned secondary correspondence
+
+grounding: supported. Targets: CultureMech:000040.
+
+Layer-specific counts are {"target": {"ingredient_instances": 6, "primary_CHEBI_instances": 6, "secondary_current_asserted_instances": 0, "secondary_current_verified_instances": 0, "legacy_secondary_instances": 0, "primary_CHEBI_percent": 100.0, "secondary_verified_percent": 0.0}, "owner": {"ingredient_instances": 6, "primary_CHEBI_instances": 6, "secondary_current_asserted_instances": 0, "secondary_current_verified_instances": 0, "legacy_secondary_instances": 0, "primary_CHEBI_percent": 100.0, "secondary_verified_percent": 0.0}}. Percentages are 0–100 linkage coverage over direct ingredient instances, not scientific accuracy. The 0 legacy link instances across both layers are unverified by the current CHEBI-keyed snapshot; absence here does not prove historical invalidity. Current secondary keys without a live preferred-term row are []. No secondary linked-set percentage is invented for an empty set.
+
+{"label_drift": [], "legacy": [], "missing_current_secondary": []}
+
+### All six asserted forms and missing source components
+
+grounding: concern. Targets: CultureMech:000040.
+
+The five mineral salt IDs and canonical labels match the explicit source salts/hydrates. Na2EDTA identifies a disodium salt but does not explicitly establish hydration; CHEBI:64734 is anhydrous, so that specificity remains limited. The missing major-stock phosphate is explicitly K2HPO4·3H2O, and source vitamins are thiamine hydrochloride and cyanocobalamin. These source names must not be replaced by adjacent forms during recovery. All six direct primary links resolve; no secondary links are asserted. Mapping confidence 0.95–1.0 is automated metadata, not source verification.
+
+### Stock-specific processing and acidic final medium
+
+consistency: concern. Targets: CultureMech:000040.
+
+Both local layers lack preparation and pH. The current source requires ordered PIV additions, then autoclaving that stock at 15 psi for 15 min; thiamine is filter sterile, and B12 undergoes its 1 mL + 99 mL dilution then filtration. The final medium is made up to 1 L, adjusted to pH 3.0 using 1 M NaOH or 1 M HCl, and autoclaved at 15 psi for 15 min. Do not invent a 121°C equivalence or post-autoclave vitamin timing that the source does not state.
+
+### Composition type and unsupported culture conditions
+
+scope: concern. Targets: CultureMech:000040.
+
+The exact current source is a quantitatively specified salt/vitamin medium, with no complex extract or hydrolysate supporting local COMPLEX/UNDEFINED. Reassess classification against this full formulation. LIQUID is consistent with no gelling agent. The current PDF supplies no 50–100 µmol photons m−2 s−1, 12:12 or 16:8 light cycle, 15–30°C incubation range or broad freshwater-suitability claim; current importer defaults explain those statements, not their source validity. Algae filing and broad applications remain catalogue scope rather than strain-specific growth.
+
+### Six-row expansion and later provenance-only owner repair
+
+ownership: concern. Targets: CultureMech:000040.
+
+All six ingredient identities and amounts are shared by owner and target. The owner additionally records sources and a September provenance-normalization event absent from the generated target. Neither the source slot nor ingredients_curated/mapping flags demonstrate that full ABM was recovered. Compare the explicitly current source version, correct maintained formulation and unsupported defaults, then regenerate; do not edit the derived file.
+
+### Append-only history and timestamp interpretation
+
+provenance: concern. Targets: CultureMech:000040.
+
+30 exact timestamp instances were examined; 16 lack valid syntax or explicit timezone. No local timestamp was assumed UTC or rewritten. Process and confidence annotations are not independent scientific evidence.
+
+[{"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "curation_history[2].timestamp", "value": "2026-02-03T11:26:43.445566", "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "curation_history[5].timestamp", "value": "2026-04-04T12:54:54.802411", "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "ingredients[0].curation_metadata.curation_date", "value": "2026-04-04T12:54:54.802384", "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "ingredients[1].curation_metadata.curation_date", "value": "2026-04-04T12:54:54.802398", "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "ingredients[2].curation_metadata.curation_date", "value": "2026-04-04T12:54:54.802400", "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "ingredients[3].curation_metadata.curation_date", "value": "2026-04-04T12:54:54.802402", "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "ingredients[4].curation_metadata.curation_date", "value": "2026-04-04T12:54:54.802404", "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "ingredients[5].curation_metadata.curation_date", "value": "2026-04-04T12:54:54.802407", "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "curation_history[2].timestamp", "value": "2026-02-03T11:26:43.445566", "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "curation_history[5].timestamp", "value": "2026-04-04T12:54:54.802411", "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "ingredients[0].curation_metadata.curation_date", "value": "2026-04-04T12:54:54.802384", "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "ingredients[1].curation_metadata.curation_date", "value": "2026-04-04T12:54:54.802398", "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "ingredients[2].curation_metadata.curation_date", "value": "2026-04-04T12:54:54.802400", "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "ingredients[3].curation_metadata.curation_date", "value": "2026-04-04T12:54:54.802402", "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "ingredients[4].curation_metadata.curation_date", "value": "2026-04-04T12:54:54.802404", "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "ingredients[5].curation_metadata.curation_date", "value": "2026-04-04T12:54:54.802407", "valid_ISO_datetime": true, "timezone_aware": false}]
+
+### Every stored ingredient/stock quantity and source-stage dependency
+
+quantity: concern. Targets: CultureMech:000040.
+
+Thirty decisions cover all six current PIV quantities, all other source stock/direct constituents, nine stock doses, both intermediate B12 aliquots, final volume, pH and titrant strengths. Explicit stock and final-volume bases support the displayed arithmetic; fixed titrant volumes remain not quantified. No source version or chemical form is silently substituted.
+
+[{"field_path": "ingredients[0].concentration", "name": "Na EDTA", "current": {"value": "0.75", "unit": "G_PER_L"}, "decision": "correct", "source_key": "ccapABM", "source_quote": "Na2EDTA      0.75 g", "source_locator": "page 1, stock 7 PIV row 1; header per litre", "preparation_stage": "PIV stock 7", "decision_rationale": "The local mass-per-liter number matches PIV stock strength, but its placement as a direct ABM concentration is wrong. The receiving medium uses 6 mL PIV and is made up to 1 L.", "evidence_id": "quantity-1", "arithmetic_separate_from_quote": "0.75 g/L stock ×0.006L /1L final medium = 0.0045 g/L; source dose and final basis are separately quoted in the inventory."}, {"field_path": "ingredients[1].concentration", "name": "FeCl3 x 6 H2O", "current": {"value": "0.097", "unit": "G_PER_L"}, "decision": "correct", "source_key": "ccapABM", "source_quote": "FeCl3.6H2O      0.097 g", "source_locator": "page 1, stock 7 PIV row 2; header per litre", "preparation_stage": "PIV stock 7", "decision_rationale": "The local mass-per-liter number matches PIV stock strength, but its placement as a direct ABM concentration is wrong. The receiving medium uses 6 mL PIV and is made up to 1 L.", "evidence_id": "quantity-2", "arithmetic_separate_from_quote": "0.097 g/L stock ×0.006L /1L final medium = 0.000582 g/L; source dose and final basis are separately quoted in the inventory."}, {"field_path": "ingredients[2].concentration", "name": "MnCl2 x 4 H2O", "current": {"value": "0.041", "unit": "G_PER_L"}, "decision": "correct", "source_key": "ccapABM", "source_quote": "MnCl2.4H2O      0.041 g", "source_locator": "page 1, stock 7 PIV row 3; header per litre", "preparation_stage": "PIV stock 7", "decision_rationale": "The local mass-per-liter number matches PIV stock strength, but its placement as a direct ABM concentration is wrong. The receiving medium uses 6 mL PIV and is made up to 1 L.", "evidence_id": "quantity-3", "arithmetic_separate_from_quote": "0.041 g/L stock ×0.006L /1L final medium = 0.000246 g/L; source dose and final basis are separately quoted in the inventory."}, {"field_path": "ingredients[3].concentration", "name": "ZnCl2", "current": {"value": "0.005", "unit": "G_PER_L"}, "decision": "correct", "source_key": "ccapABM", "source_quote": "ZnCl2       0.005 g", "source_locator": "page 1, stock 7 PIV row 4; header per litre", "preparation_stage": "PIV stock 7", "decision_rationale": "The local mass-per-liter number matches PIV stock strength, but its placement as a direct ABM concentration is wrong. The receiving medium uses 6 mL PIV and is made up to 1 L.", "evidence_id": "quantity-4", "arithmetic_separate_from_quote": "0.005 g/L stock ×0.006L /1L final medium = 0.00003 g/L; source dose and final basis are separately quoted in the inventory."}, {"field_path": "ingredients[4].concentration", "name": "CoCl2 x 6 H2O", "current": {"value": "0.002", "unit": "G_PER_L"}, "decision": "correct", "source_key": "ccapABM", "source_quote": "CoCl2.6H2O      0.002 g", "source_locator": "page 1, stock 7 PIV row 5; header per litre", "preparation_stage": "PIV stock 7", "decision_rationale": "The local mass-per-liter number matches PIV stock strength, but its placement as a direct ABM concentration is wrong. The receiving medium uses 6 mL PIV and is made up to 1 L.", "evidence_id": "quantity-5", "arithmetic_separate_from_quote": "0.002 g/L stock ×0.006L /1L final medium = 0.000012 g/L; source dose and final basis are separately quoted in the inventory."}, {"field_path": "ingredients[5].concentration", "name": "Na2MoO4 x 2 H2O", "current": {"value": "0.004", "unit": "G_PER_L"}, "decision": "correct", "source_key": "ccapABM", "source_quote": "Na2MoO4.2H2O     0.004 g", "source_locator": "page 1, stock 7 PIV row 6; header per litre", "preparation_stage": "PIV stock 7", "decision_rationale": "The local mass-per-liter number matches PIV stock strength, but its placement as a direct ABM concentration is wrong. The receiving medium uses 6 mL PIV and is made up to 1 L.", "evidence_id": "quantity-6", "arithmetic_separate_from_quote": "0.004 g/L stock ×0.006L /1L final medium = 0.000024 g/L; source dose and final basis are separately quoted in the inventory."}, {"field_path": "solutions[source stock 1].composition (missing)", "name": "(1) NaNO3", "current": null, "decision": "add", "source_key": "ccapABM", "source_quote": "(1) NaNO3       7.5 g", "source_locator": "page 1, stock 1 under Stocks per 100 ml", "preparation_stage": "separate major-ion stock", "decision_rationale": "Restore the literal source stock and its separately listed addition dose. Preserve named hydrates, including K2HPO4·3H2O, rather than substituting an anhydrous mass.", "evidence_id": "quantity-7", "arithmetic_separate_from_quote": "7.5g/0.1L stock ×.01L/1L medium = .75g/L final. This is reviewer arithmetic, not quoted text."}, {"field_path": "solutions[source stock 2].composition (missing)", "name": "(2) CaCl2.2H2O", "current": null, "decision": "add", "source_key": "ccapABM", "source_quote": "(2) CaCl2.2H2O      2.5 g", "source_locator": "page 1, stock 2 under Stocks per 100 ml", "preparation_stage": "separate major-ion stock", "decision_rationale": "Restore the literal source stock and its separately listed addition dose. Preserve named hydrates, including K2HPO4·3H2O, rather than substituting an anhydrous mass.", "evidence_id": "quantity-8", "arithmetic_separate_from_quote": "2.5g/0.1L stock ×.001L/1L medium = .025g/L final. This is reviewer arithmetic, not quoted text."}, {"field_path": "solutions[source stock 3].composition (missing)", "name": "(3) MgSO4.7H2O", "current": null, "decision": "add", "source_key": "ccapABM", "source_quote": "(3) MgSO4.7H2O      7.5 g", "source_locator": "page 1, stock 3 under Stocks per 100 ml", "preparation_stage": "separate major-ion stock", "decision_rationale": "Restore the literal source stock and its separately listed addition dose. Preserve named hydrates, including K2HPO4·3H2O, rather than substituting an anhydrous mass.", "evidence_id": "quantity-9", "arithmetic_separate_from_quote": "7.5g/0.1L stock ×.001L/1L medium = .075g/L final. This is reviewer arithmetic, not quoted text."}, {"field_path": "solutions[source stock 4].composition (missing)", "name": "(4) K2HPO4.3H2O", "current": null, "decision": "add", "source_key": "ccapABM", "source_quote": "(4) K2HPO4.3H2O      7.5 g", "source_locator": "page 1, stock 4 under Stocks per 100 ml", "preparation_stage": "separate major-ion stock", "decision_rationale": "Restore the literal source stock and its separately listed addition dose. Preserve named hydrates, including K2HPO4·3H2O, rather than substituting an anhydrous mass.", "evidence_id": "quantity-10", "arithmetic_separate_from_quote": "7.5g/0.1L stock ×.001L/1L medium = .075g/L final. This is reviewer arithmetic, not quoted text."}, {"field_path": "solutions[source stock 5].composition (missing)", "name": "(5) KH2PO4", "current": null, "decision": "add", "source_key": "ccapABM", "source_quote": "(5) KH2PO4      17.5 g", "source_locator": "page 1, stock 5 under Stocks per 100 ml", "preparation_stage": "separate major-ion stock", "decision_rationale": "Restore the literal source stock and its separately listed addition dose. Preserve named hydrates, including K2HPO4·3H2O, rather than substituting an anhydrous mass.", "evidence_id": "quantity-11", "arithmetic_separate_from_quote": "17.5g/0.1L stock ×.001L/1L medium = .175g/L final. This is reviewer arithmetic, not quoted text."}, {"field_path": "solutions[source stock 6].composition (missing)", "name": "(6) NaCl", "current": null, "decision": "add", "source_key": "ccapABM", "source_quote": "(6) NaCl       2.5 g", "source_locator": "page 1, stock 6 under Stocks per 100 ml", "preparation_stage": "separate major-ion stock", "decision_rationale": "Restore the literal source stock and its separately listed addition dose. Preserve named hydrates, including K2HPO4·3H2O, rather than substituting an anhydrous mass.", "evidence_id": "quantity-12", "arithmetic_separate_from_quote": "2.5g/0.1L stock ×.001L/1L medium = .025g/L final. This is reviewer arithmetic, not quoted text."}, {"field_path": "solutions[source stock 8].composition (missing)", "name": "Thiamine hydrochloride", "current": null, "decision": "add", "source_key": "ccapABM", "source_quote": "(8) Vitamin B1 (Thiamine hydrochloride)  0.12 g", "source_locator": "page 1, vitamin stock 8 under per 100 ml", "preparation_stage": "stock 8", "decision_rationale": "Source specifies 0.12 g thiamine hydrochloride per 100 mL, filter sterilized; the final dose is 1 mL.", "evidence_id": "quantity-13", "arithmetic_separate_from_quote": "0.12g/0.1L ×0.001L/1L =0.0012g/L (1.2mg/L)."}, {"field_path": "solutions[source stock 9].composition (missing)", "name": "Cyanocobalamin", "current": null, "decision": "add", "source_key": "ccapABM", "source_quote": "(9) Vitamin B12 (Cyanocobalamin)   0.1 g", "source_locator": "page 1, vitamin stock 9 under per 100 ml", "preparation_stage": "initial stock 9", "decision_rationale": "Source specifies 0.1 g cyanocobalamin per 100 mL, then a distinct 1:100 dilution before the 1 mL main-medium dose.", "evidence_id": "quantity-14", "arithmetic_separate_from_quote": "0.1g/0.1L=1g/L initial stock;1mL+99mL gives0.01g/L working stock;1mL into 1 L gives0.00001g/L=10µg/L."}, {"field_path": "B12 intermediate aliquot", "name": "Initial stock 9", "current": null, "decision": "add", "source_key": "ccapABM", "source_quote": "Take 1 ml of this solution and add 99 ml deionised water. Filter sterile.", "source_locator": "page 1, instruction immediately after stock 9", "preparation_stage": "B12 intermediate dilution", "decision_rationale": "Preserve the source 1mL addition and resulting intermediate working stock before final dosing. Filter sterilization applies as written; do not skip this dilution.", "evidence_id": "quantity-15"}, {"field_path": "B12 intermediate diluent", "name": "Deionised water", "current": null, "decision": "add", "source_key": "ccapABM", "source_quote": "Take 1 ml of this solution and add 99 ml deionised water. Filter sterile.", "source_locator": "page 1, instruction immediately after stock 9", "preparation_stage": "B12 intermediate dilution", "decision_rationale": "Preserve the source 99mL addition and resulting intermediate working stock before final dosing. Filter sterilization applies as written; do not skip this dilution.", "evidence_id": "quantity-16"}, {"field_path": "ingredients[source ammonium sulfate] (missing)", "name": "Ammonium sulphate", "current": null, "decision": "add", "source_key": "ccapABM", "source_quote": "(NH4)2SO4 (Ammonium sulphate)    0.25 g", "source_locator": "page 1, first Medium per litre row", "preparation_stage": "main direct addition", "decision_rationale": "Source explicitly requires 0.25 g ammonium sulfate per final litre, absent from both local layers.", "evidence_id": "quantity-17", "arithmetic_separate_from_quote": "0.25g/1L final =0.25g/L."}, {"field_path": "solutions[source stock 1].concentration (missing)", "name": "Stock1", "current": null, "decision": "add", "source_key": "ccapABM", "source_quote": "Stock solution 1      10 ml", "source_locator": "page 1, Medium per litre stock-dose row applicable to stock 1", "preparation_stage": "main stock addition", "decision_rationale": "Retain literal dose 10mL per final litre with the named stock boundary.", "evidence_id": "quantity-18"}, {"field_path": "solutions[source stock 2].concentration (missing)", "name": "Stock2", "current": null, "decision": "add", "source_key": "ccapABM", "source_quote": "Stock solutions 2 – 6     1 ml each", "source_locator": "page 1, Medium per litre stock-dose row applicable to stock 2", "preparation_stage": "main stock addition", "decision_rationale": "Retain literal dose 1mL per final litre with the named stock boundary.", "evidence_id": "quantity-19"}, {"field_path": "solutions[source stock 3].concentration (missing)", "name": "Stock3", "current": null, "decision": "add", "source_key": "ccapABM", "source_quote": "Stock solutions 2 – 6     1 ml each", "source_locator": "page 1, Medium per litre stock-dose row applicable to stock 3", "preparation_stage": "main stock addition", "decision_rationale": "Retain literal dose 1mL per final litre with the named stock boundary.", "evidence_id": "quantity-20"}, {"field_path": "solutions[source stock 4].concentration (missing)", "name": "Stock4", "current": null, "decision": "add", "source_key": "ccapABM", "source_quote": "Stock solutions 2 – 6     1 ml each", "source_locator": "page 1, Medium per litre stock-dose row applicable to stock 4", "preparation_stage": "main stock addition", "decision_rationale": "Retain literal dose 1mL per final litre with the named stock boundary.", "evidence_id": "quantity-21"}, {"field_path": "solutions[source stock 5].concentration (missing)", "name": "Stock5", "current": null, "decision": "add", "source_key": "ccapABM", "source_quote": "Stock solutions 2 – 6     1 ml each", "source_locator": "page 1, Medium per litre stock-dose row applicable to stock 5", "preparation_stage": "main stock addition", "decision_rationale": "Retain literal dose 1mL per final litre with the named stock boundary.", "evidence_id": "quantity-22"}, {"field_path": "solutions[source stock 6].concentration (missing)", "name": "Stock6", "current": null, "decision": "add", "source_key": "ccapABM", "source_quote": "Stock solutions 2 – 6     1 ml each", "source_locator": "page 1, Medium per litre stock-dose row applicable to stock 6", "preparation_stage": "main stock addition", "decision_rationale": "Retain literal dose 1mL per final litre with the named stock boundary.", "evidence_id": "quantity-23"}, {"field_path": "solutions[source stock 7].concentration (missing)", "name": "Stock7", "current": null, "decision": "add", "source_key": "ccapABM", "source_quote": "Stock solution 7 (Trace elements)   6 ml", "source_locator": "page 1, Medium per litre stock-dose row applicable to stock 7", "preparation_stage": "main stock addition", "decision_rationale": "Retain literal dose 6mL per final litre with the named stock boundary.", "evidence_id": "quantity-24"}, {"field_path": "solutions[source stock 8].concentration (missing)", "name": "Stock8", "current": null, "decision": "add", "source_key": "ccapABM", "source_quote": "Stock solutions 8 - 9     1 ml each", "source_locator": "page 1, Medium per litre stock-dose row applicable to stock 8", "preparation_stage": "main stock addition", "decision_rationale": "Retain literal dose 1mL per final litre with the named stock boundary.", "evidence_id": "quantity-25"}, {"field_path": "solutions[source stock 9].concentration (missing)", "name": "Stock9", "current": null, "decision": "add", "source_key": "ccapABM", "source_quote": "Stock solutions 8 - 9     1 ml each", "source_locator": "page 1, Medium per litre stock-dose row applicable to stock 9", "preparation_stage": "main stock addition", "decision_rationale": "Retain literal dose 1mL per final litre. Stock9 means the explicitly diluted B12 working stock, not its initial 1 g/L solution.", "evidence_id": "quantity-26"}, {"field_path": "final solvent volume (missing)", "name": "Deionised water", "current": null, "decision": "add", "source_key": "ccapABM", "source_quote": "The stock solutions are those for 3N-BBM+V. Make up to 1 litre with deionised water and adjust", "source_locator": "page 1, final-medium make-up sentence", "preparation_stage": "main final-volume adjustment", "decision_rationale": "Make up to 1 litre with deionised water. This is an explicit receiving final volume, unlike a mere listed water addition; no fixed water mass or exact water aliquot is inferred.", "evidence_id": "quantity-27"}, {"field_path": "ph_value (missing)", "name": "pH 3.0", "current": null, "decision": "add", "source_key": "ccapABM", "source_quote": "the pH to 3.0 with 1M NaOH or 1M HCl. Autoclave at 15 psi for 15 minutes.", "source_locator": "page 1, final preparation sentence", "preparation_stage": "main pH adjustment", "decision_rationale": "Retain source pH 3.0 and the stated 1 M titrant options. The source does not quantify titrant addition volumes; no fixed amount or replacement reagent is inferred.", "evidence_id": "quantity-28"}, {"field_path": "pH adjustment NaOH strength (missing)", "name": "1M NaOH", "current": null, "decision": "add", "source_key": "ccapABM", "source_quote": "the pH to 3.0 with 1M NaOH or 1M HCl. Autoclave at 15 psi for 15 minutes.", "source_locator": "page 1, final preparation sentence", "preparation_stage": "main pH adjustment", "decision_rationale": "Retain source pH 3.0 and the stated 1 M titrant options. The source does not quantify titrant addition volumes; no fixed amount or replacement reagent is inferred.", "evidence_id": "quantity-29"}, {"field_path": "pH adjustment HCl strength (missing)", "name": "1M HCl", "current": null, "decision": "add", "source_key": "ccapABM", "source_quote": "the pH to 3.0 with 1M NaOH or 1M HCl. Autoclave at 15 psi for 15 minutes.", "source_locator": "page 1, final preparation sentence", "preparation_stage": "main pH adjustment", "decision_rationale": "Retain source pH 3.0 and the stated 1 M titrant options. The source does not quantify titrant addition volumes; no fixed amount or replacement reagent is inferred.", "evidence_id": "quantity-30"}]
+
+### Claim-level evidence and reference diagnostic coverage
+
+evidence: concern. Targets: CultureMech:000040.
+
+Source citations/notes identify provenance but do not place exact quantity evidence on the local ingredient or stock claims. The reference validator actually checked zero evidence references; its passing result does not authenticate source amounts. This review provides literal snippets and locators for all assessed quantities. Follow-up should attach narrow amount evidence and source metadata without inventing new schema slots.
+
+### Bounded biological claims and absent optional entities
+
+scope: not_applicable. Targets: CultureMech:000040.
+
+Neither reviewed layer asserts organism/strain identifiers, assemblies, DOI/PMID citations, growth outcomes, variants, parent-media relationships or KG-Microbe matches. Catalogue use and generic applications do not establish strain-specific growth or optimal conditions. No organisms or variants are added merely to fill optional slots.
+
+## Findings
+
+### f1: The named ABM medium contains only undiluted PIV stock
+
+blocker / open / confirmed; issue key: cm000040-piv-stock-misrepresented-as-abm.
+
+Both local layers retain only the six ingredients of source stock 7 at their stock-strength values. The complete current ABM requires six major-ion stocks, two vitamin stocks with an intermediate B12 dilution, 0.25 g/L direct ammonium sulfate and only 6 mL/L PIV. Missing these constituents and boundaries makes the represented formulation denote only a subordinate stock rather than the named medium. COMPLEX/UNDEFINED also lacks support in the full current salt/vitamin recipe. Current-source revision is explicit; no historical PDF equivalence is asserted.
+
+### f2: Generic light and temperature recommendations lack ABM evidence
+
+major / open / confirmed; issue key: cm000040-generic-culture-conditions-unsupported.
+
+The local 50–100 µmol photons m−2 s−1 intensity, 12:12/16:8 cycles and 15–30°C range are absent from the exact current source and appear as literal generic defaults in the CCAP importer. The freshwater suitability sentence is also a default. These fields must not be presented as ABM-specific growth guidance; the adaptation citation does not verify them without its methods.
+
+### f3: Acidic pH and exact stock-processing instructions are missing
+
+major / open / confirmed; issue key: cm000040-source-acidic-preparation-omitted.
+
+The current source explicitly requires pH 3.0, 1 M titrant options, ordered PIV assembly, stock/final autoclaving at 15 psi for 15 min, and separate vitamin filtration including B12 dilution. Neither layer records these instructions. The omitted acidic pH and processing materially impair reproduction of this named formulation.
+
+### f4: Inherited curation timestamps lack timezone information
+
+minor / open / confirmed; issue key: cm000040-naive-provenance-timestamps.
+
+Two history events and six ingredient-curation dates in each layer lack timezone, for 16 instances across target and owner. They cannot establish unambiguous historical instants. The independent source capture and review chronology remain explicit UTC.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Reconstruct the complete current source formulation in the normalized owner with all stock strengths/doses, nested B12 dilution, direct ammonium sulfate and exact forms; reassess classification/quality flags and preserve the source-version distinction. Attach narrow evidence, then regenerate only with separate authorization.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Remove or explicitly scope unsupported generic defaults in the maintained owner/transform unless exact ABM-specific evidence is obtained. Preserve catalogue identity without inventing organism performance.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Recover the exact source sequence, stock boundaries and pH while retaining its pressure/time units and unspecified titrant amounts. Do not substitute inferred temperature, storage or post-autoclave timing.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Preserve old raw timestamps. Append an evidenced clarification only if an independent source establishes the timezone; do not rewrite history or assume local time was UTC.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ABM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/algae/abm.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ABM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ABM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch014/136/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-014/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch014/136/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ABM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ABM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| source-catalog | /private/tmp/culturemech-review-work-batch014/source-preflight-bound/136/source-catalog.json; Complete bound per-record catalog, raw/text/metadata hashes and actual original capture times | context_only | [{"key": "ccapABM", "url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf", "status": 200, "accessed_at": "2026-10-21T09:28:25.640005Z", "sha256": "4aeb7f85f4b4e8b9d1729d0582b8c9e7e53da415c29b2438e1fa5f27e1944d96", "metadata_sha256": "6a42c79e62db06eb2b41193bd922ea8ea3492009385c2e4e2c9fdcda238dde33", "content_limit": "Exact source capture for later source-scoped review; no final scientific assessment made.", "reused_capture_from": null}, {"key": "chebi49976", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976", "status": 200, "accessed_at": "2026-10-21T08:04:44.168295Z", "sha256": "d27644ae0df5935f8f18a28faa1ba6096fefeb9d0cb951b39751d442c92bd321", "metadata_sha256": "5b2d3ef46f61f04fc8f6508c0e7853eb83627a33b1374e270a6fe5bba8334398", "content_limit": "Exact source capture for later source-scoped review; no final scientific assessment made.", "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch013-tail/130/chebi49976.json"}, {"key": "chebi53503", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503", "status": 200, "accessed_at": "2026-10-21T08:04:44.349630Z", "sha256": "c33e304a0a565068c592ba0970e501052981599ef69cd2cb901e88f27931389d", "metadata_sha256": "f101ed2a17ab85e19053461ad167b4b1b72f263323f675a6385eba03260c79a6", "content_limit": "Exact source capture for later source-scoped review; no final scientific assessment made.", "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch013-tail/130/chebi53503.json"}, {"key": "chebi64734", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64734", "status": 200, "accessed_at": "2026-10-21T08:04:44.449302Z", "sha256": "95b7557b1867dcce37a69714dbad0a6a6a6c11c66dde39c6793a2307a7fb0e1c", "metadata_sha256": "0153e4eb598887bf22415116f4591ad6c3612c21d6dd027f07f6693e7c989840", "content_limit": "Exact source capture for later source-scoped review; no final scientific assessment made.", "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch010-tail/097/chebi64734.json"}, {"key": "chebi75213", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213", "status": 200, "accessed_at": "2026-10-21T08:17:29.756647Z", "sha256": "b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083", "metadata_sha256": "ad92f785faffc38467953acc9cff05a5bc336f158d417699997176641fbc6185", "content_limit": "Exact source capture for later source-scoped review; no final scientific assessment made.", "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch013-tail/130/chebi75213.json"}, {"key": "chebi86254", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86254", "status": 200, "accessed_at": "2026-10-21T08:17:30.289392Z", "sha256": "89afba545ad02f24a850933df154af25dee37357b583f82de13866b44f18d683", "metadata_sha256": "1c819b3f8509dddf263b4c9af7ea3fac21e2942a2575d303c3cbbf1a30758fa5", "content_limit": "Exact source capture for later source-scoped review; no final scientific assessment made.", "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch012-tail/119/chebi86254.json"}, {"key": "chebi86368", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368", "status": 200, "accessed_at": "2026-10-21T08:17:30.657545Z", "sha256": "286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f", "metadata_sha256": "61b507a840ffb9e92cdf30fe260b87f7b97b4cb32dfc234c1e7fc8db5f11d6d3", "content_limit": "Exact source capture for later source-scoped review; no final scientific assessment made.", "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch012-tail/119/chebi86368.json"}] |
+| ccapABM | https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf; page 1, complete document, headers and Reference section | supports | Entire one-page current CCAP recipe visually inspected: revision 002 / 29 May 2026, ABM title, all nine stocks, the PIV order, B12 intermediate dilution, complete main formula, pH and sterilization. Publication citation remains source metadata only. |
+| stock-basis | https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf; page 1, stock section headers | supports | Stocks 1–6 have a per 100 mL basis. Stock7 separately uses per litre; vitamins 8–9 return to per 100 mL. These headers scope the amounts below. |
+| final-basis | https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf; page 1, sentence following main-medium rows | supports | The receiving medium is explicitly made up to 1 litre; source doses can therefore be compared on that final basis. |
+| quantity-1 | https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf; page 1, stock 7 PIV row 1; header per litre | context_only | The local mass-per-liter number matches PIV stock strength, but its placement as a direct ABM concentration is wrong. The receiving medium uses 6 mL PIV and is made up to 1 L. |
+| quantity-2 | https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf; page 1, stock 7 PIV row 2; header per litre | context_only | The local mass-per-liter number matches PIV stock strength, but its placement as a direct ABM concentration is wrong. The receiving medium uses 6 mL PIV and is made up to 1 L. |
+| quantity-3 | https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf; page 1, stock 7 PIV row 3; header per litre | context_only | The local mass-per-liter number matches PIV stock strength, but its placement as a direct ABM concentration is wrong. The receiving medium uses 6 mL PIV and is made up to 1 L. |
+| quantity-4 | https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf; page 1, stock 7 PIV row 4; header per litre | context_only | The local mass-per-liter number matches PIV stock strength, but its placement as a direct ABM concentration is wrong. The receiving medium uses 6 mL PIV and is made up to 1 L. |
+| quantity-5 | https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf; page 1, stock 7 PIV row 5; header per litre | context_only | The local mass-per-liter number matches PIV stock strength, but its placement as a direct ABM concentration is wrong. The receiving medium uses 6 mL PIV and is made up to 1 L. |
+| quantity-6 | https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf; page 1, stock 7 PIV row 6; header per litre | context_only | The local mass-per-liter number matches PIV stock strength, but its placement as a direct ABM concentration is wrong. The receiving medium uses 6 mL PIV and is made up to 1 L. |
+| quantity-7 | https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf; page 1, stock 1 under Stocks per 100 ml | supports | Restore the literal source stock and its separately listed addition dose. Preserve named hydrates, including K2HPO4·3H2O, rather than substituting an anhydrous mass. |
+| quantity-8 | https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf; page 1, stock 2 under Stocks per 100 ml | supports | Restore the literal source stock and its separately listed addition dose. Preserve named hydrates, including K2HPO4·3H2O, rather than substituting an anhydrous mass. |
+| quantity-9 | https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf; page 1, stock 3 under Stocks per 100 ml | supports | Restore the literal source stock and its separately listed addition dose. Preserve named hydrates, including K2HPO4·3H2O, rather than substituting an anhydrous mass. |
+| quantity-10 | https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf; page 1, stock 4 under Stocks per 100 ml | supports | Restore the literal source stock and its separately listed addition dose. Preserve named hydrates, including K2HPO4·3H2O, rather than substituting an anhydrous mass. |
+| quantity-11 | https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf; page 1, stock 5 under Stocks per 100 ml | supports | Restore the literal source stock and its separately listed addition dose. Preserve named hydrates, including K2HPO4·3H2O, rather than substituting an anhydrous mass. |
+| quantity-12 | https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf; page 1, stock 6 under Stocks per 100 ml | supports | Restore the literal source stock and its separately listed addition dose. Preserve named hydrates, including K2HPO4·3H2O, rather than substituting an anhydrous mass. |
+| quantity-13 | https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf; page 1, vitamin stock 8 under per 100 ml | supports | Source specifies 0.12 g thiamine hydrochloride per 100 mL, filter sterilized; the final dose is 1 mL. |
+| quantity-14 | https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf; page 1, vitamin stock 9 under per 100 ml | supports | Source specifies 0.1 g cyanocobalamin per 100 mL, then a distinct 1:100 dilution before the 1 mL main-medium dose. |
+| quantity-15 | https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf; page 1, instruction immediately after stock 9 | supports | Preserve the source 1mL addition and resulting intermediate working stock before final dosing. Filter sterilization applies as written; do not skip this dilution. |
+| quantity-16 | https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf; page 1, instruction immediately after stock 9 | supports | Preserve the source 99mL addition and resulting intermediate working stock before final dosing. Filter sterilization applies as written; do not skip this dilution. |
+| quantity-17 | https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf; page 1, first Medium per litre row | supports | Source explicitly requires 0.25 g ammonium sulfate per final litre, absent from both local layers. |
+| quantity-18 | https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf; page 1, Medium per litre stock-dose row applicable to stock 1 | supports | Retain literal dose 10mL per final litre with the named stock boundary. |
+| quantity-19 | https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf; page 1, Medium per litre stock-dose row applicable to stock 2 | supports | Retain literal dose 1mL per final litre with the named stock boundary. |
+| quantity-20 | https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf; page 1, Medium per litre stock-dose row applicable to stock 3 | supports | Retain literal dose 1mL per final litre with the named stock boundary. |
+| quantity-21 | https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf; page 1, Medium per litre stock-dose row applicable to stock 4 | supports | Retain literal dose 1mL per final litre with the named stock boundary. |
+| quantity-22 | https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf; page 1, Medium per litre stock-dose row applicable to stock 5 | supports | Retain literal dose 1mL per final litre with the named stock boundary. |
+| quantity-23 | https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf; page 1, Medium per litre stock-dose row applicable to stock 6 | supports | Retain literal dose 1mL per final litre with the named stock boundary. |
+| quantity-24 | https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf; page 1, Medium per litre stock-dose row applicable to stock 7 | supports | Retain literal dose 6mL per final litre with the named stock boundary. |
+| quantity-25 | https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf; page 1, Medium per litre stock-dose row applicable to stock 8 | supports | Retain literal dose 1mL per final litre with the named stock boundary. |
+| quantity-26 | https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf; page 1, Medium per litre stock-dose row applicable to stock 9 | supports | Retain literal dose 1mL per final litre. Stock9 means the explicitly diluted B12 working stock, not its initial 1 g/L solution. |
+| quantity-27 | https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf; page 1, final-medium make-up sentence | supports | Make up to 1 litre with deionised water. This is an explicit receiving final volume, unlike a mere listed water addition; no fixed water mass or exact water aliquot is inferred. |
+| quantity-28 | https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf; page 1, final preparation sentence | supports | Retain source pH 3.0 and the stated 1 M titrant options. The source does not quantify titrant addition volumes; no fixed amount or replacement reagent is inferred. |
+| quantity-29 | https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf; page 1, final preparation sentence | supports | Retain source pH 3.0 and the stated 1 M titrant options. The source does not quantify titrant addition volumes; no fixed amount or replacement reagent is inferred. |
+| quantity-30 | https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf; page 1, final preparation sentence | supports | Retain source pH 3.0 and the stated 1 M titrant options. The source does not quantify titrant addition volumes; no fixed amount or replacement reagent is inferred. |
+| chebi64734 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64734; $._embedded.terms[0] | supports | CHEBI:64734 resolves to EDTA disodium salt (anhydrous) and is not obsolete. Available definitions, formulae, structures and synonyms were inspected; recipe amounts and supplied forms are assessed separately. |
+| chebi86254 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86254; $._embedded.terms[0] | supports | CHEBI:86254 resolves to iron trichloride hexahydrate and is not obsolete. Available definitions, formulae, structures and synonyms were inspected; recipe amounts and supplied forms are assessed separately. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368; $._embedded.terms[0] | supports | CHEBI:86368 resolves to manganese(II) chloride tetrahydrate and is not obsolete. Available definitions, formulae, structures and synonyms were inspected; recipe amounts and supplied forms are assessed separately. |
+| chebi49976 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976; $._embedded.terms[0] | supports | CHEBI:49976 resolves to zinc dichloride and is not obsolete. Available definitions, formulae, structures and synonyms were inspected; recipe amounts and supplied forms are assessed separately. |
+| chebi53503 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503; $._embedded.terms[0] | supports | CHEBI:53503 resolves to cobalt chloride hexahydrate and is not obsolete. Available definitions, formulae, structures and synonyms were inspected; recipe amounts and supplied forms are assessed separately. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; $._embedded.terms[0] | supports | CHEBI:75213 resolves to sodium molybdate dihydrate and is not obsolete. Available definitions, formulae, structures and synonyms were inspected; recipe amounts and supplied forms are assessed separately. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Entire pinned snapshot; exact MAPPED/preferred_term rows for asserted CHEBI keys and exact legacy-key lookup | supports | {"metadata": {"byte_count": 824387, "consumer_contract_version": 1, "data_row_count": 9077, "header": ["label", "match_type", "identifier", "preferred_term", "ontology_id", "mapping_status", "ambiguity"], "repository": "https://github.com/CultureBotAI/MediaIngredientMech", "sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "source_path": "docs/data/label_index.csv"}, "counts": {"target": {"ingredient_instances": 6, "primary_CHEBI_instances": 6, "secondary_current_asserted_instances": 0, "secondary_current_verified_instances": 0, "legacy_secondary_instances": 0, "primary_CHEBI_percent": 100.0, "secondary_verified_percent": 0.0}, "owner": {"ingredient_instances": 6, "primary_CHEBI_instances": 6, "secondary_current_asserted_instances": 0, "secondary_current_verified_instances": 0, "legacy_secondary_instances": 0, "primary_CHEBI_percent": 100.0, "secondary_verified_percent": 0.0}}, "instances": [{"layer": "target", "path": "data/merge_yaml/merged/ABM.yaml", "field": "ingredients[0]", "name": "Na EDTA", "primary": {"id": "CHEBI:64734", "label": "EDTA disodium salt (anhydrous)"}, "canonical_label": "EDTA disodium salt (anhydrous)", "label_equal": true, "definition": ["An organic sodium salt that is the anhydrous form of the disodium salt of ethylenediaminetetraacetic acid (EDTA)."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:139-33-3", "kegg.drug:D03945", "reaxys:3822669"], "generalized_empirical_formula": ["C10H14N2O8.2Na"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:64734"], "inchi_key_string": ["ZGTMUACCHSMWAC-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/C10H16N2O8.2Na/c13-7(14)3-11(4-8(15)16)1-2-12(5-9(17)18)6-10(19)20;;/h1-6H2,(H,13,14)(H,15,16)(H,17,18)(H,19,20);;/q;2*+1/p-2"], "mass": ["336.208"], "monoisotopic_mass": ["336.05455"], "smiles_string": ["O=C([O-])C[NH+](CC[NH+](CC(=O)[O-])CC(=O)[O-])CC(=O)[O-].[Na+].[Na+]"]}, "synonyms": ["EDTA disodium (anh.)", "EDTA disodium (anhydrous)", "EDTA disodium salt (anh.)", "EDTA disodium", "Edetate disodium anhydrous", "N,N'-1,2-ethanediylbis[N-(carboxymethyl)glycine], disodium salt", "Na2-EDTA", "Na2H2EDTA", "disodium 2,2',2'',2'''-(ethane-1,2-diyldiammonio)tetraacetate", "disodium 2,2',2'',2'''-(ethane-1,2-diyldiammonio)tetraacetate", "disodium EDTA (anh.)", "disodium EDTA (anhydrous)", "disodium EDTA", "disodium edetate (anh.)", "disodium edetate (anhydrous)", "disodium edetate", "edetate disodium (anh.)", "edetate disodium (anhydrous)", "edetate disodium", "ethylenebis(iminodiacetic acid) disoidum salt"]}, {"layer": "target", "path": "data/merge_yaml/merged/ABM.yaml", "field": "ingredients[1]", "name": "FeCl3 x 6 H2O", "primary": {"id": "CHEBI:86254", "label": "iron trichloride hexahydrate"}, "canonical_label": "iron trichloride hexahydrate", "label_equal": true, "definition": ["A hydrate that is the hexahydrate form of iron trichloride."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:10025-77-1", "reaxys:11334004", "wikipedia.en:Iron(III)_chloride"], "generalized_empirical_formula": ["Cl3Fe.6H2O"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:86254"], "inchi_key_string": ["NQXWGWZJXJUMQB-UHFFFAOYSA-K"], "inchi_string": ["InChI=1S/3ClH.Fe.6H2O/h3*1H;;6*1H2/q;;;+3;;;;;;/p-3"], "mass": ["270.294"], "monoisotopic_mass": ["268.90488"], "smiles_string": ["O.O.O.O.O.O.[Cl][Fe]([Cl])[Cl]"]}, "synonyms": ["FeCl3.6H2O", "Ferric chloride hexahydrate", "Ferric trichloride hexahydrate", "Iron (III) chloride hexahydrate", "Iron(3+) chloride hexahydrate", "trichloroiron--water (1/6)", "trichloroiron--water (1/6)"]}, {"layer": "target", "path": "data/merge_yaml/merged/ABM.yaml", "field": "ingredients[2]", "name": "MnCl2 x 4 H2O", "primary": {"id": "CHEBI:86368", "label": "manganese(II) chloride tetrahydrate"}, "canonical_label": "manganese(II) chloride tetrahydrate", "label_equal": true, "definition": ["A hydrate that is the tetrahydrate form of manganese(II) chloride."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:13446-34-9", "kegg.drug:D04852", "reaxys:24949298", "wikipedia.en:Manganese(II)_chloride"], "generalized_empirical_formula": ["Cl2Mn.4H2O"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:86368"], "inchi_key_string": ["CNFDGXZLMLFIJV-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/2ClH.Mn.4H2O/h2*1H;;4*1H2/q;;+2;;;;/p-2"], "mass": ["197.904"], "monoisotopic_mass": ["196.91801"], "smiles_string": ["O.O.O.O.[Cl][Mn][Cl]"]}, "synonyms": ["Lumenhance", "Manganese chloride tetrahydrate", "Manganese chloride", "Manganese dichloride tetrahydrate", "Manganous chloride tetrahydrate", "dichloromanganese--water (1/4)", "dichloromanganese--water (1/4)", "manganese(2+) chloride tetrahydrate", "manganese(2+) chloride--water (1/4)", "manganese(2+) chloride--water (1/4)"]}, {"layer": "target", "path": "data/merge_yaml/merged/ABM.yaml", "field": "ingredients[3]", "name": "ZnCl2", "primary": {"id": "CHEBI:49976", "label": "zinc dichloride"}, "canonical_label": "zinc dichloride", "label_equal": true, "definition": ["A compound of zinc and chloride ions in the ratio 1:2. It exists in four crystalline forms, in each of which the Zn&lt;small&gt;&lt;sup&gt;2+&lt;/small&gt;&lt;/sup&gt; ions are trigonal planar coordinated to four chloride ions."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:7646-85-7", "gmelin:430396", "kegg.drug:D02058", "molbase:1125", "pubmed:23021350", "pubmed:23399499", "pubmed:23471775", "pubmed:23514640", "pubmed:23546181", "pubmed:23574241", "pubmed:23739012", "pubmed:23761032", "pubmed:23763136", "pubmed:29079364", "pubmed:7615984", "pubmed:9730919", "wikipedia.en:Zinc_Chloride"], "generalized_empirical_formula": ["2Cl.Zn"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:49976"], "inchi_key_string": ["JIAARYAFYJHUJI-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/2ClH.Zn/h2*1H;/q;;+2/p-2"], "mass": ["136.296"], "monoisotopic_mass": ["133.86685"], "smiles_string": ["[Cl-].[Cl-].[Zn+2]"]}, "synonyms": ["Zinkchlorid", "ZnCl2", "butter of zinc", "chlorure de zinc", "dichlorozinc", "zinc chloride", "zinc chloride, anhydrous", "zinc dichloride", "zinc dichloride", "zinc(2+) chloride", "zinc(2+) chloride", "zinc(II) chloride", "zinc(II) chloride"]}, {"layer": "target", "path": "data/merge_yaml/merged/ABM.yaml", "field": "ingredients[4]", "name": "CoCl2 x 6 H2O", "primary": {"id": "CHEBI:53503", "label": "cobalt chloride hexahydrate"}, "canonical_label": "cobalt chloride hexahydrate", "label_equal": true, "definition": ["A hydrate of cobalt chloride containing cobalt (in +2 oxidation state), chloride and water moieties in the ratio 1:2:6."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:7791-13-1", "gmelin:16833", "patent:CN101077120", "pubmed:11207315", "pubmed:16870561", "pubmed:2025398", "pubmed:21721333", "pubmed:8404951", "pubmed:8857117", "pubmed:9106780", "reaxys:11403444"], "generalized_empirical_formula": ["2Cl.Co.6H2O"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:53503"], "inchi_key_string": ["GFHNAMRJFCEERV-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/2ClH.Co.6H2O/h2*1H;;6*1H2/q;;+2;;;;;;/p-2"], "mass": ["237.929"], "monoisotopic_mass": ["236.93429"], "smiles_string": ["O.O.O.O.O.O.[Cl-].[Cl-].[Co+2]"]}, "synonyms": ["Cobalt chloride hexahydrate", "Cobalt dichloride hexahydrate", "Cobalt(II) chloride hexahydrate", "Cobalt(II) chloride--water (1/7)", "Cobalt(II) chloride--water (1/7)", "cobalt (II) chloride hexahydrate", "cobalt chloride hydrate", "cobalt(2+) dichloride hexahydrate", "cobalt(2+) dichloride hexahydrate"]}, {"layer": "target", "path": "data/merge_yaml/merged/ABM.yaml", "field": "ingredients[5]", "name": "Na2MoO4 x 2 H2O", "primary": {"id": "CHEBI:75213", "label": "sodium molybdate dihydrate"}, "canonical_label": "sodium molybdate dihydrate", "label_equal": true, "definition": ["A hydrate that is the dihydrate form of sodium molybdate."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:10102-40-6", "pubmed:20645132", "pubmed:20813395", "pubmed:22663766", "pubmed:3382795", "reaxys:19032996", "wikipedia.en:Sodium_molybdate"], "generalized_empirical_formula": ["2H2O.MoO4.2Na"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:75213"], "inchi_key_string": ["FDEIWTXVNPKYDL-UHFFFAOYSA-N"], "inchi_string": ["InChI=1S/Mo.2Na.2H2O.4O/h;;;2*1H2;;;;/q;2*+1;;;;;2*-1"], "mass": ["241.946"], "monoisotopic_mass": ["243.88573"], "smiles_string": ["O.O.[Na+].[Na+].[O]=[Mo](=[O])([O-])[O-]"]}, "synonyms": ["Disodium molybdate dihydrate", "Molybdic acid, disodium salt, dihydrate", "Na2MoO4.2H2O", "Sodium molybdate(VI) dihydrate", "sodium dioxido(dioxo)molybdenum--water (1/2)", "sodium dioxido(dioxo)molybdenum--water (1/2)", "sodium orthomolybdate dihydrate"]}, {"layer": "owner", "path": "data/normalized_yaml/algae/abm.yaml", "field": "ingredients[0]", "name": "Na EDTA", "primary": {"id": "CHEBI:64734", "label": "EDTA disodium salt (anhydrous)"}, "canonical_label": "EDTA disodium salt (anhydrous)", "label_equal": true, "definition": ["An organic sodium salt that is the anhydrous form of the disodium salt of ethylenediaminetetraacetic acid (EDTA)."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:139-33-3", "kegg.drug:D03945", "reaxys:3822669"], "generalized_empirical_formula": ["C10H14N2O8.2Na"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:64734"], "inchi_key_string": ["ZGTMUACCHSMWAC-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/C10H16N2O8.2Na/c13-7(14)3-11(4-8(15)16)1-2-12(5-9(17)18)6-10(19)20;;/h1-6H2,(H,13,14)(H,15,16)(H,17,18)(H,19,20);;/q;2*+1/p-2"], "mass": ["336.208"], "monoisotopic_mass": ["336.05455"], "smiles_string": ["O=C([O-])C[NH+](CC[NH+](CC(=O)[O-])CC(=O)[O-])CC(=O)[O-].[Na+].[Na+]"]}, "synonyms": ["EDTA disodium (anh.)", "EDTA disodium (anhydrous)", "EDTA disodium salt (anh.)", "EDTA disodium", "Edetate disodium anhydrous", "N,N'-1,2-ethanediylbis[N-(carboxymethyl)glycine], disodium salt", "Na2-EDTA", "Na2H2EDTA", "disodium 2,2',2'',2'''-(ethane-1,2-diyldiammonio)tetraacetate", "disodium 2,2',2'',2'''-(ethane-1,2-diyldiammonio)tetraacetate", "disodium EDTA (anh.)", "disodium EDTA (anhydrous)", "disodium EDTA", "disodium edetate (anh.)", "disodium edetate (anhydrous)", "disodium edetate", "edetate disodium (anh.)", "edetate disodium (anhydrous)", "edetate disodium", "ethylenebis(iminodiacetic acid) disoidum salt"]}, {"layer": "owner", "path": "data/normalized_yaml/algae/abm.yaml", "field": "ingredients[1]", "name": "FeCl3 x 6 H2O", "primary": {"id": "CHEBI:86254", "label": "iron trichloride hexahydrate"}, "canonical_label": "iron trichloride hexahydrate", "label_equal": true, "definition": ["A hydrate that is the hexahydrate form of iron trichloride."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:10025-77-1", "reaxys:11334004", "wikipedia.en:Iron(III)_chloride"], "generalized_empirical_formula": ["Cl3Fe.6H2O"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:86254"], "inchi_key_string": ["NQXWGWZJXJUMQB-UHFFFAOYSA-K"], "inchi_string": ["InChI=1S/3ClH.Fe.6H2O/h3*1H;;6*1H2/q;;;+3;;;;;;/p-3"], "mass": ["270.294"], "monoisotopic_mass": ["268.90488"], "smiles_string": ["O.O.O.O.O.O.[Cl][Fe]([Cl])[Cl]"]}, "synonyms": ["FeCl3.6H2O", "Ferric chloride hexahydrate", "Ferric trichloride hexahydrate", "Iron (III) chloride hexahydrate", "Iron(3+) chloride hexahydrate", "trichloroiron--water (1/6)", "trichloroiron--water (1/6)"]}, {"layer": "owner", "path": "data/normalized_yaml/algae/abm.yaml", "field": "ingredients[2]", "name": "MnCl2 x 4 H2O", "primary": {"id": "CHEBI:86368", "label": "manganese(II) chloride tetrahydrate"}, "canonical_label": "manganese(II) chloride tetrahydrate", "label_equal": true, "definition": ["A hydrate that is the tetrahydrate form of manganese(II) chloride."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:13446-34-9", "kegg.drug:D04852", "reaxys:24949298", "wikipedia.en:Manganese(II)_chloride"], "generalized_empirical_formula": ["Cl2Mn.4H2O"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:86368"], "inchi_key_string": ["CNFDGXZLMLFIJV-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/2ClH.Mn.4H2O/h2*1H;;4*1H2/q;;+2;;;;/p-2"], "mass": ["197.904"], "monoisotopic_mass": ["196.91801"], "smiles_string": ["O.O.O.O.[Cl][Mn][Cl]"]}, "synonyms": ["Lumenhance", "Manganese chloride tetrahydrate", "Manganese chloride", "Manganese dichloride tetrahydrate", "Manganous chloride tetrahydrate", "dichloromanganese--water (1/4)", "dichloromanganese--water (1/4)", "manganese(2+) chloride tetrahydrate", "manganese(2+) chloride--water (1/4)", "manganese(2+) chloride--water (1/4)"]}, {"layer": "owner", "path": "data/normalized_yaml/algae/abm.yaml", "field": "ingredients[3]", "name": "ZnCl2", "primary": {"id": "CHEBI:49976", "label": "zinc dichloride"}, "canonical_label": "zinc dichloride", "label_equal": true, "definition": ["A compound of zinc and chloride ions in the ratio 1:2. It exists in four crystalline forms, in each of which the Zn&lt;small&gt;&lt;sup&gt;2+&lt;/small&gt;&lt;/sup&gt; ions are trigonal planar coordinated to four chloride ions."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:7646-85-7", "gmelin:430396", "kegg.drug:D02058", "molbase:1125", "pubmed:23021350", "pubmed:23399499", "pubmed:23471775", "pubmed:23514640", "pubmed:23546181", "pubmed:23574241", "pubmed:23739012", "pubmed:23761032", "pubmed:23763136", "pubmed:29079364", "pubmed:7615984", "pubmed:9730919", "wikipedia.en:Zinc_Chloride"], "generalized_empirical_formula": ["2Cl.Zn"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:49976"], "inchi_key_string": ["JIAARYAFYJHUJI-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/2ClH.Zn/h2*1H;/q;;+2/p-2"], "mass": ["136.296"], "monoisotopic_mass": ["133.86685"], "smiles_string": ["[Cl-].[Cl-].[Zn+2]"]}, "synonyms": ["Zinkchlorid", "ZnCl2", "butter of zinc", "chlorure de zinc", "dichlorozinc", "zinc chloride", "zinc chloride, anhydrous", "zinc dichloride", "zinc dichloride", "zinc(2+) chloride", "zinc(2+) chloride", "zinc(II) chloride", "zinc(II) chloride"]}, {"layer": "owner", "path": "data/normalized_yaml/algae/abm.yaml", "field": "ingredients[4]", "name": "CoCl2 x 6 H2O", "primary": {"id": "CHEBI:53503", "label": "cobalt chloride hexahydrate"}, "canonical_label": "cobalt chloride hexahydrate", "label_equal": true, "definition": ["A hydrate of cobalt chloride containing cobalt (in +2 oxidation state), chloride and water moieties in the ratio 1:2:6."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:7791-13-1", "gmelin:16833", "patent:CN101077120", "pubmed:11207315", "pubmed:16870561", "pubmed:2025398", "pubmed:21721333", "pubmed:8404951", "pubmed:8857117", "pubmed:9106780", "reaxys:11403444"], "generalized_empirical_formula": ["2Cl.Co.6H2O"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:53503"], "inchi_key_string": ["GFHNAMRJFCEERV-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/2ClH.Co.6H2O/h2*1H;;6*1H2/q;;+2;;;;;;/p-2"], "mass": ["237.929"], "monoisotopic_mass": ["236.93429"], "smiles_string": ["O.O.O.O.O.O.[Cl-].[Cl-].[Co+2]"]}, "synonyms": ["Cobalt chloride hexahydrate", "Cobalt dichloride hexahydrate", "Cobalt(II) chloride hexahydrate", "Cobalt(II) chloride--water (1/7)", "Cobalt(II) chloride--water (1/7)", "cobalt (II) chloride hexahydrate", "cobalt chloride hydrate", "cobalt(2+) dichloride hexahydrate", "cobalt(2+) dichloride hexahydrate"]}, {"layer": "owner", "path": "data/normalized_yaml/algae/abm.yaml", "field": "ingredients[5]", "name": "Na2MoO4 x 2 H2O", "primary": {"id": "CHEBI:75213", "label": "sodium molybdate dihydrate"}, "canonical_label": "sodium molybdate dihydrate", "label_equal": true, "definition": ["A hydrate that is the dihydrate form of sodium molybdate."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:10102-40-6", "pubmed:20645132", "pubmed:20813395", "pubmed:22663766", "pubmed:3382795", "reaxys:19032996", "wikipedia.en:Sodium_molybdate"], "generalized_empirical_formula": ["2H2O.MoO4.2Na"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:75213"], "inchi_key_string": ["FDEIWTXVNPKYDL-UHFFFAOYSA-N"], "inchi_string": ["InChI=1S/Mo.2Na.2H2O.4O/h;;;2*1H2;;;;/q;2*+1;;;;;2*-1"], "mass": ["241.946"], "monoisotopic_mass": ["243.88573"], "smiles_string": ["O.O.[Na+].[Na+].[O]=[Mo](=[O])([O-])[O-]"]}, "synonyms": ["Disodium molybdate dihydrate", "Molybdic acid, disodium salt, dihydrate", "Na2MoO4.2H2O", "Sodium molybdate(VI) dihydrate", "sodium dioxido(dioxo)molybdenum--water (1/2)", "sodium dioxido(dioxo)molybdenum--water (1/2)", "sodium orthomolybdate dihydrate"]}], "legacy": []} |
+| importer | src/culturemech/import/ccap_importer.py; convert_recipe; _determine_salinity_type; _extract_ingredients_from_text; _extract_preparation_from_text | context_only | Current importer hard-codes generic light, cycle and temperature prose, defaults complex medium and freshwater use, and applies broad text-extraction heuristics. These fields are not recovered ABM-specific experimental evidence. Current code is context, not proof of the exact historical April expansion route. |
+| provenance-repair | scripts/repair_ccap_sources_score10.py; _require_target; _ensure_source; _ensure_event | context_only | Current repair copies matching CCAP reference/import-event identity into sources and records that normalization. It does not recover formulation or verify the source chemical quantities. The September owner event is later than the generated merge. |
+| history | data/merge_yaml/merged/ABM.yaml; All target/owner history and ingredient curation timestamps | refutes | [{"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "curation_history[0].timestamp", "value": "2026-01-28T00:00:00+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "curation_history[1].timestamp", "value": "2026-02-03T00:00:00+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "curation_history[2].timestamp", "value": "2026-02-03T11:26:43.445566", "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "curation_history[3].timestamp", "value": "2026-03-13T06:18:52.997682Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "curation_history[4].timestamp", "value": "2026-03-17T19:45:03.955067+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "curation_history[5].timestamp", "value": "2026-04-04T12:54:54.802411", "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "curation_history[6].timestamp", "value": "2026-05-16T08:57:02.052422+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "curation_history[7].timestamp", "value": "2026-05-16T09:02:56.194092+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "curation_history[8].timestamp", "value": "2026-08-06T03:04:19.587470+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "ingredients[0].curation_metadata.curation_date", "value": "2026-04-04T12:54:54.802384", "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "ingredients[1].curation_metadata.curation_date", "value": "2026-04-04T12:54:54.802398", "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "ingredients[2].curation_metadata.curation_date", "value": "2026-04-04T12:54:54.802400", "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "ingredients[3].curation_metadata.curation_date", "value": "2026-04-04T12:54:54.802402", "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "ingredients[4].curation_metadata.curation_date", "value": "2026-04-04T12:54:54.802404", "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "ingredients[5].curation_metadata.curation_date", "value": "2026-04-04T12:54:54.802407", "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "curation_history[0].timestamp", "value": "2026-01-28T00:00:00+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "curation_history[1].timestamp", "value": "2026-02-03T00:00:00+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "curation_history[2].timestamp", "value": "2026-02-03T11:26:43.445566", "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "curation_history[3].timestamp", "value": "2026-03-13T06:18:52.997682Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "curation_history[4].timestamp", "value": "2026-03-17T19:45:03.955067+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "curation_history[5].timestamp", "value": "2026-04-04T12:54:54.802411", "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "curation_history[6].timestamp", "value": "2026-05-16T08:57:02.052422+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "curation_history[7].timestamp", "value": "2026-05-16T09:02:56.194092+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "curation_history[8].timestamp", "value": "2026-09-13T00:00:00-07:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "ingredients[0].curation_metadata.curation_date", "value": "2026-04-04T12:54:54.802384", "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "ingredients[1].curation_metadata.curation_date", "value": "2026-04-04T12:54:54.802398", "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "ingredients[2].curation_metadata.curation_date", "value": "2026-04-04T12:54:54.802400", "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "ingredients[3].curation_metadata.curation_date", "value": "2026-04-04T12:54:54.802402", "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "ingredients[4].curation_metadata.curation_date", "value": "2026-04-04T12:54:54.802404", "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "ingredients[5].curation_metadata.curation_date", "value": "2026-04-04T12:54:54.802407", "valid_ISO_datetime": true, "timezone_aware": false}] |
+| merge | src/culturemech/merge/merger.py; RecipeMerger and merge record construction | context_only | The target is a generated merge with the exact normalized owner declared in the inspection. Merge fingerprints are ingredient-identity sets, not concentration or source-recipe equivalence. Fix maintained inputs and regenerate only with separate authorization. |
+| exporter | src/culturemech/export/kgx_export.py; medium_to_ingredient_edge; medium_to_solution_edge; _resolved_ingredient_id; _quantity | context_only | Current export consumes structured ingredient, solution, type and stored-quantity claims and resolves ingredients through the pinned MIM index before fallback. It does not independently recover omitted source stages or prove final-volume basis. No export was run and no resulting edge count is asserted. |
+
+## Limits And Additional Notes
+
+- The inspected PDF is revision 002, approved/reviewed 29 May 2026. Local expansion occurred 4 April 2026. Current-source disagreement does not establish the contents of the earlier PDF or prove exactly how the historical extraction occurred.
+- CCAP identifies this as an adaptation of the Pollio et al. 2005 paper. That paper was not independently retrieved or used for recipe, strain or growth claims; no DOI/PMID or taxon was inferred from its title.
+- The current PDF fully specifies the stocks it calls those for 3N-BBM+V. No historical or other-source 3N-BBM formulation was silently substituted, and no internal stock ID is invented.
+- Explicit stock masses, stock bases, nested B12 dilution, addition doses and final make-up volume are separate. Source pH-titrant strengths do not specify their eventual added volumes.
+- Na2EDTA does not explicitly state hydration; the asserted term is anhydrous. Preserve that material-form limit instead of inventing a hydrate or mass correction. Confidence 1.0 is an automated annotation, not proof of chemical/source accuracy.
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T094516Z-culturemech-000040-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: abm (CultureMech:000040)'
+started_at: '2026-10-21T09:35:30Z'
+finished_at: '2026-10-21T09:45:16Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The exact current CCAP ABM source is a complete acidic medium with nine stock
+  preparations and a direct ammonium-sulfate addition. The target and maintained owner
+  instead contain only the six PIV trace-stock chemicals at stock strength, omit the
+  remaining formulation and pH/preparation, and retain generic importer light/temperature
+  recommendations. The current source version and earlier local expansion are distinguished.
+  All four documented diagnostics pass; the scientific representation is incomplete
+  and changes the named medium.
+source:
+  git_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ABM.yaml
+    sha256: 15519005957fd218ab78eaeccb189d6b3419b64704368877cae4a22fec89ba2f
+    role: target
+  - path: data/normalized_yaml/algae/abm.yaml
+    sha256: 98049de216beeed47933bdf3b51c45b159eb4690617f75be65745415a1f5daee
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_ccap_sources_score10.py
+    sha256: f518688ae99e154f490af337dab30b9038657a814db72861e0b53658a2541ae6
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/import/ccap_importer.py
+    sha256: c579c1d8fb62b96e739e5ee5c963453753ebca0bbf50996fb0f0d6eedd75c9ac
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 136; batch 014 item 6 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirteen task batches
+    contain 130 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+    contains 40 validated baseline bundles covering 2 current merged paths. Unioning
+    all prior lists with this baseline covers 132 of 6320 current merged paths, including
+    2 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:000040
+targets:
+- target_id: CultureMech:000040
+  path: data/merge_yaml/merged/ABM.yaml
+  label: abm
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/abm.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ABM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:000040
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ABM.yaml --workers 1 --out
+    /private/tmp/culturemech-review-work-batch014/136/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-014/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch014/136/strict.tsv"
+  target_ids:
+  - CultureMech:000040
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ABM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:000040
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ABM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:000040
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:000040
+- check_id: scoped-history
+  name: Scoped timestamp syntax and timezone inspection
+  required: false
+  status: failed
+  summary: 30 timestamps inspected, 16 invalid or timezone-naive; old provenance remains
+    unchanged.
+  target_ids:
+  - CultureMech:000040
+  evidence_ids:
+  - history
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ABM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T09:45:16Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/algae/abm.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T09:45:16Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ABM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T09:36:11.685934Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ABM.yaml --workers 1 --out
+    /private/tmp/culturemech-review-work-batch014/136/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T09:36:14.301441Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-014/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch014/136/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ABM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T09:36:17.427941Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ABM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T09:36:19.479216Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: source-catalog
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch014/source-preflight-bound/136/source-catalog.json
+  locator: Complete bound per-record catalog, raw/text/metadata hashes and actual
+    original capture times
+  accessed_at: '2026-10-21T09:45:16Z'
+  support: context_only
+  summary: '[{"key": "ccapABM", "url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf",
+    "status": 200, "accessed_at": "2026-10-21T09:28:25.640005Z", "sha256": "4aeb7f85f4b4e8b9d1729d0582b8c9e7e53da415c29b2438e1fa5f27e1944d96",
+    "metadata_sha256": "6a42c79e62db06eb2b41193bd922ea8ea3492009385c2e4e2c9fdcda238dde33",
+    "content_limit": "Exact source capture for later source-scoped review; no final
+    scientific assessment made.", "reused_capture_from": null}, {"key": "chebi49976",
+    "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976",
+    "status": 200, "accessed_at": "2026-10-21T08:04:44.168295Z", "sha256": "d27644ae0df5935f8f18a28faa1ba6096fefeb9d0cb951b39751d442c92bd321",
+    "metadata_sha256": "5b2d3ef46f61f04fc8f6508c0e7853eb83627a33b1374e270a6fe5bba8334398",
+    "content_limit": "Exact source capture for later source-scoped review; no final
+    scientific assessment made.", "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch013-tail/130/chebi49976.json"},
+    {"key": "chebi53503", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503",
+    "status": 200, "accessed_at": "2026-10-21T08:04:44.349630Z", "sha256": "c33e304a0a565068c592ba0970e501052981599ef69cd2cb901e88f27931389d",
+    "metadata_sha256": "f101ed2a17ab85e19053461ad167b4b1b72f263323f675a6385eba03260c79a6",
+    "content_limit": "Exact source capture for later source-scoped review; no final
+    scientific assessment made.", "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch013-tail/130/chebi53503.json"},
+    {"key": "chebi64734", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64734",
+    "status": 200, "accessed_at": "2026-10-21T08:04:44.449302Z", "sha256": "95b7557b1867dcce37a69714dbad0a6a6a6c11c66dde39c6793a2307a7fb0e1c",
+    "metadata_sha256": "0153e4eb598887bf22415116f4591ad6c3612c21d6dd027f07f6693e7c989840",
+    "content_limit": "Exact source capture for later source-scoped review; no final
+    scientific assessment made.", "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch010-tail/097/chebi64734.json"},
+    {"key": "chebi75213", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213",
+    "status": 200, "accessed_at": "2026-10-21T08:17:29.756647Z", "sha256": "b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083",
+    "metadata_sha256": "ad92f785faffc38467953acc9cff05a5bc336f158d417699997176641fbc6185",
+    "content_limit": "Exact source capture for later source-scoped review; no final
+    scientific assessment made.", "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch013-tail/130/chebi75213.json"},
+    {"key": "chebi86254", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86254",
+    "status": 200, "accessed_at": "2026-10-21T08:17:30.289392Z", "sha256": "89afba545ad02f24a850933df154af25dee37357b583f82de13866b44f18d683",
+    "metadata_sha256": "1c819b3f8509dddf263b4c9af7ea3fac21e2942a2575d303c3cbbf1a30758fa5",
+    "content_limit": "Exact source capture for later source-scoped review; no final
+    scientific assessment made.", "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch012-tail/119/chebi86254.json"},
+    {"key": "chebi86368", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368",
+    "status": 200, "accessed_at": "2026-10-21T08:17:30.657545Z", "sha256": "286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f",
+    "metadata_sha256": "61b507a840ffb9e92cdf30fe260b87f7b97b4cb32dfc234c1e7fc8db5f11d6d3",
+    "content_limit": "Exact source capture for later source-scoped review; no final
+    scientific assessment made.", "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch012-tail/119/chebi86368.json"}]'
+  snapshot_sha256: 8be555cb81f87cfa4f5a9513953389fedfc89b79e6fbf4b0e3583db1a8416d2f
+- evidence_id: ccapABM
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf
+  locator: page 1, complete document, headers and Reference section
+  accessed_at: '2026-10-21T09:28:25.640005Z'
+  support: supports
+  summary: 'Entire one-page current CCAP recipe visually inspected: revision 002 /
+    29 May 2026, ABM title, all nine stocks, the PIV order, B12 intermediate dilution,
+    complete main formula, pH and sterilization. Publication citation remains source
+    metadata only.'
+  snapshot_sha256: 4aeb7f85f4b4e8b9d1729d0582b8c9e7e53da415c29b2438e1fa5f27e1944d96
+- evidence_id: stock-basis
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf
+  locator: page 1, stock section headers
+  accessed_at: '2026-10-21T09:28:25.640005Z'
+  support: supports
+  summary: Stocks 1–6 have a per 100 mL basis. Stock7 separately uses per litre; vitamins
+    8–9 return to per 100 mL. These headers scope the amounts below.
+  quote: Stocks        per 100 ml
+  snapshot_sha256: 4aeb7f85f4b4e8b9d1729d0582b8c9e7e53da415c29b2438e1fa5f27e1944d96
+- evidence_id: final-basis
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf
+  locator: page 1, sentence following main-medium rows
+  accessed_at: '2026-10-21T09:28:25.640005Z'
+  support: supports
+  summary: The receiving medium is explicitly made up to 1 litre; source doses can
+    therefore be compared on that final basis.
+  quote: The stock solutions are those for 3N-BBM+V. Make up to 1 litre with deionised
+    water and adjust
+  snapshot_sha256: 4aeb7f85f4b4e8b9d1729d0582b8c9e7e53da415c29b2438e1fa5f27e1944d96
+- evidence_id: quantity-1
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf
+  locator: page 1, stock 7 PIV row 1; header per litre
+  accessed_at: '2026-10-21T09:28:25.640005Z'
+  support: context_only
+  summary: The local mass-per-liter number matches PIV stock strength, but its placement
+    as a direct ABM concentration is wrong. The receiving medium uses 6 mL PIV and
+    is made up to 1 L.
+  quote: Na2EDTA      0.75 g
+  snapshot_sha256: 4aeb7f85f4b4e8b9d1729d0582b8c9e7e53da415c29b2438e1fa5f27e1944d96
+- evidence_id: quantity-2
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf
+  locator: page 1, stock 7 PIV row 2; header per litre
+  accessed_at: '2026-10-21T09:28:25.640005Z'
+  support: context_only
+  summary: The local mass-per-liter number matches PIV stock strength, but its placement
+    as a direct ABM concentration is wrong. The receiving medium uses 6 mL PIV and
+    is made up to 1 L.
+  quote: FeCl3.6H2O      0.097 g
+  snapshot_sha256: 4aeb7f85f4b4e8b9d1729d0582b8c9e7e53da415c29b2438e1fa5f27e1944d96
+- evidence_id: quantity-3
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf
+  locator: page 1, stock 7 PIV row 3; header per litre
+  accessed_at: '2026-10-21T09:28:25.640005Z'
+  support: context_only
+  summary: The local mass-per-liter number matches PIV stock strength, but its placement
+    as a direct ABM concentration is wrong. The receiving medium uses 6 mL PIV and
+    is made up to 1 L.
+  quote: MnCl2.4H2O      0.041 g
+  snapshot_sha256: 4aeb7f85f4b4e8b9d1729d0582b8c9e7e53da415c29b2438e1fa5f27e1944d96
+- evidence_id: quantity-4
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf
+  locator: page 1, stock 7 PIV row 4; header per litre
+  accessed_at: '2026-10-21T09:28:25.640005Z'
+  support: context_only
+  summary: The local mass-per-liter number matches PIV stock strength, but its placement
+    as a direct ABM concentration is wrong. The receiving medium uses 6 mL PIV and
+    is made up to 1 L.
+  quote: ZnCl2       0.005 g
+  snapshot_sha256: 4aeb7f85f4b4e8b9d1729d0582b8c9e7e53da415c29b2438e1fa5f27e1944d96
+- evidence_id: quantity-5
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf
+  locator: page 1, stock 7 PIV row 5; header per litre
+  accessed_at: '2026-10-21T09:28:25.640005Z'
+  support: context_only
+  summary: The local mass-per-liter number matches PIV stock strength, but its placement
+    as a direct ABM concentration is wrong. The receiving medium uses 6 mL PIV and
+    is made up to 1 L.
+  quote: CoCl2.6H2O      0.002 g
+  snapshot_sha256: 4aeb7f85f4b4e8b9d1729d0582b8c9e7e53da415c29b2438e1fa5f27e1944d96
+- evidence_id: quantity-6
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf
+  locator: page 1, stock 7 PIV row 6; header per litre
+  accessed_at: '2026-10-21T09:28:25.640005Z'
+  support: context_only
+  summary: The local mass-per-liter number matches PIV stock strength, but its placement
+    as a direct ABM concentration is wrong. The receiving medium uses 6 mL PIV and
+    is made up to 1 L.
+  quote: Na2MoO4.2H2O     0.004 g
+  snapshot_sha256: 4aeb7f85f4b4e8b9d1729d0582b8c9e7e53da415c29b2438e1fa5f27e1944d96
+- evidence_id: quantity-7
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf
+  locator: page 1, stock 1 under Stocks per 100 ml
+  accessed_at: '2026-10-21T09:28:25.640005Z'
+  support: supports
+  summary: Restore the literal source stock and its separately listed addition dose.
+    Preserve named hydrates, including K2HPO4·3H2O, rather than substituting an anhydrous
+    mass.
+  quote: (1) NaNO3       7.5 g
+  snapshot_sha256: 4aeb7f85f4b4e8b9d1729d0582b8c9e7e53da415c29b2438e1fa5f27e1944d96
+- evidence_id: quantity-8
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf
+  locator: page 1, stock 2 under Stocks per 100 ml
+  accessed_at: '2026-10-21T09:28:25.640005Z'
+  support: supports
+  summary: Restore the literal source stock and its separately listed addition dose.
+    Preserve named hydrates, including K2HPO4·3H2O, rather than substituting an anhydrous
+    mass.
+  quote: (2) CaCl2.2H2O      2.5 g
+  snapshot_sha256: 4aeb7f85f4b4e8b9d1729d0582b8c9e7e53da415c29b2438e1fa5f27e1944d96
+- evidence_id: quantity-9
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf
+  locator: page 1, stock 3 under Stocks per 100 ml
+  accessed_at: '2026-10-21T09:28:25.640005Z'
+  support: supports
+  summary: Restore the literal source stock and its separately listed addition dose.
+    Preserve named hydrates, including K2HPO4·3H2O, rather than substituting an anhydrous
+    mass.
+  quote: (3) MgSO4.7H2O      7.5 g
+  snapshot_sha256: 4aeb7f85f4b4e8b9d1729d0582b8c9e7e53da415c29b2438e1fa5f27e1944d96
+- evidence_id: quantity-10
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf
+  locator: page 1, stock 4 under Stocks per 100 ml
+  accessed_at: '2026-10-21T09:28:25.640005Z'
+  support: supports
+  summary: Restore the literal source stock and its separately listed addition dose.
+    Preserve named hydrates, including K2HPO4·3H2O, rather than substituting an anhydrous
+    mass.
+  quote: (4) K2HPO4.3H2O      7.5 g
+  snapshot_sha256: 4aeb7f85f4b4e8b9d1729d0582b8c9e7e53da415c29b2438e1fa5f27e1944d96
+- evidence_id: quantity-11
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf
+  locator: page 1, stock 5 under Stocks per 100 ml
+  accessed_at: '2026-10-21T09:28:25.640005Z'
+  support: supports
+  summary: Restore the literal source stock and its separately listed addition dose.
+    Preserve named hydrates, including K2HPO4·3H2O, rather than substituting an anhydrous
+    mass.
+  quote: (5) KH2PO4      17.5 g
+  snapshot_sha256: 4aeb7f85f4b4e8b9d1729d0582b8c9e7e53da415c29b2438e1fa5f27e1944d96
+- evidence_id: quantity-12
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf
+  locator: page 1, stock 6 under Stocks per 100 ml
+  accessed_at: '2026-10-21T09:28:25.640005Z'
+  support: supports
+  summary: Restore the literal source stock and its separately listed addition dose.
+    Preserve named hydrates, including K2HPO4·3H2O, rather than substituting an anhydrous
+    mass.
+  quote: (6) NaCl       2.5 g
+  snapshot_sha256: 4aeb7f85f4b4e8b9d1729d0582b8c9e7e53da415c29b2438e1fa5f27e1944d96
+- evidence_id: quantity-13
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf
+  locator: page 1, vitamin stock 8 under per 100 ml
+  accessed_at: '2026-10-21T09:28:25.640005Z'
+  support: supports
+  summary: Source specifies 0.12 g thiamine hydrochloride per 100 mL, filter sterilized;
+    the final dose is 1 mL.
+  quote: (8) Vitamin B1 (Thiamine hydrochloride)  0.12 g
+  snapshot_sha256: 4aeb7f85f4b4e8b9d1729d0582b8c9e7e53da415c29b2438e1fa5f27e1944d96
+- evidence_id: quantity-14
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf
+  locator: page 1, vitamin stock 9 under per 100 ml
+  accessed_at: '2026-10-21T09:28:25.640005Z'
+  support: supports
+  summary: Source specifies 0.1 g cyanocobalamin per 100 mL, then a distinct 1:100
+    dilution before the 1 mL main-medium dose.
+  quote: (9) Vitamin B12 (Cyanocobalamin)   0.1 g
+  snapshot_sha256: 4aeb7f85f4b4e8b9d1729d0582b8c9e7e53da415c29b2438e1fa5f27e1944d96
+- evidence_id: quantity-15
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf
+  locator: page 1, instruction immediately after stock 9
+  accessed_at: '2026-10-21T09:28:25.640005Z'
+  support: supports
+  summary: Preserve the source 1mL addition and resulting intermediate working stock
+    before final dosing. Filter sterilization applies as written; do not skip this
+    dilution.
+  quote: Take 1 ml of this solution and add 99 ml deionised water. Filter sterile.
+  snapshot_sha256: 4aeb7f85f4b4e8b9d1729d0582b8c9e7e53da415c29b2438e1fa5f27e1944d96
+- evidence_id: quantity-16
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf
+  locator: page 1, instruction immediately after stock 9
+  accessed_at: '2026-10-21T09:28:25.640005Z'
+  support: supports
+  summary: Preserve the source 99mL addition and resulting intermediate working stock
+    before final dosing. Filter sterilization applies as written; do not skip this
+    dilution.
+  quote: Take 1 ml of this solution and add 99 ml deionised water. Filter sterile.
+  snapshot_sha256: 4aeb7f85f4b4e8b9d1729d0582b8c9e7e53da415c29b2438e1fa5f27e1944d96
+- evidence_id: quantity-17
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf
+  locator: page 1, first Medium per litre row
+  accessed_at: '2026-10-21T09:28:25.640005Z'
+  support: supports
+  summary: Source explicitly requires 0.25 g ammonium sulfate per final litre, absent
+    from both local layers.
+  quote: (NH4)2SO4 (Ammonium sulphate)    0.25 g
+  snapshot_sha256: 4aeb7f85f4b4e8b9d1729d0582b8c9e7e53da415c29b2438e1fa5f27e1944d96
+- evidence_id: quantity-18
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf
+  locator: page 1, Medium per litre stock-dose row applicable to stock 1
+  accessed_at: '2026-10-21T09:28:25.640005Z'
+  support: supports
+  summary: Retain literal dose 10mL per final litre with the named stock boundary.
+  quote: Stock solution 1      10 ml
+  snapshot_sha256: 4aeb7f85f4b4e8b9d1729d0582b8c9e7e53da415c29b2438e1fa5f27e1944d96
+- evidence_id: quantity-19
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf
+  locator: page 1, Medium per litre stock-dose row applicable to stock 2
+  accessed_at: '2026-10-21T09:28:25.640005Z'
+  support: supports
+  summary: Retain literal dose 1mL per final litre with the named stock boundary.
+  quote: Stock solutions 2 – 6     1 ml each
+  snapshot_sha256: 4aeb7f85f4b4e8b9d1729d0582b8c9e7e53da415c29b2438e1fa5f27e1944d96
+- evidence_id: quantity-20
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf
+  locator: page 1, Medium per litre stock-dose row applicable to stock 3
+  accessed_at: '2026-10-21T09:28:25.640005Z'
+  support: supports
+  summary: Retain literal dose 1mL per final litre with the named stock boundary.
+  quote: Stock solutions 2 – 6     1 ml each
+  snapshot_sha256: 4aeb7f85f4b4e8b9d1729d0582b8c9e7e53da415c29b2438e1fa5f27e1944d96
+- evidence_id: quantity-21
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf
+  locator: page 1, Medium per litre stock-dose row applicable to stock 4
+  accessed_at: '2026-10-21T09:28:25.640005Z'
+  support: supports
+  summary: Retain literal dose 1mL per final litre with the named stock boundary.
+  quote: Stock solutions 2 – 6     1 ml each
+  snapshot_sha256: 4aeb7f85f4b4e8b9d1729d0582b8c9e7e53da415c29b2438e1fa5f27e1944d96
+- evidence_id: quantity-22
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf
+  locator: page 1, Medium per litre stock-dose row applicable to stock 5
+  accessed_at: '2026-10-21T09:28:25.640005Z'
+  support: supports
+  summary: Retain literal dose 1mL per final litre with the named stock boundary.
+  quote: Stock solutions 2 – 6     1 ml each
+  snapshot_sha256: 4aeb7f85f4b4e8b9d1729d0582b8c9e7e53da415c29b2438e1fa5f27e1944d96
+- evidence_id: quantity-23
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf
+  locator: page 1, Medium per litre stock-dose row applicable to stock 6
+  accessed_at: '2026-10-21T09:28:25.640005Z'
+  support: supports
+  summary: Retain literal dose 1mL per final litre with the named stock boundary.
+  quote: Stock solutions 2 – 6     1 ml each
+  snapshot_sha256: 4aeb7f85f4b4e8b9d1729d0582b8c9e7e53da415c29b2438e1fa5f27e1944d96
+- evidence_id: quantity-24
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf
+  locator: page 1, Medium per litre stock-dose row applicable to stock 7
+  accessed_at: '2026-10-21T09:28:25.640005Z'
+  support: supports
+  summary: Retain literal dose 6mL per final litre with the named stock boundary.
+  quote: Stock solution 7 (Trace elements)   6 ml
+  snapshot_sha256: 4aeb7f85f4b4e8b9d1729d0582b8c9e7e53da415c29b2438e1fa5f27e1944d96
+- evidence_id: quantity-25
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf
+  locator: page 1, Medium per litre stock-dose row applicable to stock 8
+  accessed_at: '2026-10-21T09:28:25.640005Z'
+  support: supports
+  summary: Retain literal dose 1mL per final litre with the named stock boundary.
+  quote: Stock solutions 8 - 9     1 ml each
+  snapshot_sha256: 4aeb7f85f4b4e8b9d1729d0582b8c9e7e53da415c29b2438e1fa5f27e1944d96
+- evidence_id: quantity-26
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf
+  locator: page 1, Medium per litre stock-dose row applicable to stock 9
+  accessed_at: '2026-10-21T09:28:25.640005Z'
+  support: supports
+  summary: Retain literal dose 1mL per final litre. Stock9 means the explicitly diluted
+    B12 working stock, not its initial 1 g/L solution.
+  quote: Stock solutions 8 - 9     1 ml each
+  snapshot_sha256: 4aeb7f85f4b4e8b9d1729d0582b8c9e7e53da415c29b2438e1fa5f27e1944d96
+- evidence_id: quantity-27
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf
+  locator: page 1, final-medium make-up sentence
+  accessed_at: '2026-10-21T09:28:25.640005Z'
+  support: supports
+  summary: Make up to 1 litre with deionised water. This is an explicit receiving
+    final volume, unlike a mere listed water addition; no fixed water mass or exact
+    water aliquot is inferred.
+  quote: The stock solutions are those for 3N-BBM+V. Make up to 1 litre with deionised
+    water and adjust
+  snapshot_sha256: 4aeb7f85f4b4e8b9d1729d0582b8c9e7e53da415c29b2438e1fa5f27e1944d96
+- evidence_id: quantity-28
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf
+  locator: page 1, final preparation sentence
+  accessed_at: '2026-10-21T09:28:25.640005Z'
+  support: supports
+  summary: Retain source pH 3.0 and the stated 1 M titrant options. The source does
+    not quantify titrant addition volumes; no fixed amount or replacement reagent
+    is inferred.
+  quote: the pH to 3.0 with 1M NaOH or 1M HCl. Autoclave at 15 psi for 15 minutes.
+  snapshot_sha256: 4aeb7f85f4b4e8b9d1729d0582b8c9e7e53da415c29b2438e1fa5f27e1944d96
+- evidence_id: quantity-29
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf
+  locator: page 1, final preparation sentence
+  accessed_at: '2026-10-21T09:28:25.640005Z'
+  support: supports
+  summary: Retain source pH 3.0 and the stated 1 M titrant options. The source does
+    not quantify titrant addition volumes; no fixed amount or replacement reagent
+    is inferred.
+  quote: the pH to 3.0 with 1M NaOH or 1M HCl. Autoclave at 15 psi for 15 minutes.
+  snapshot_sha256: 4aeb7f85f4b4e8b9d1729d0582b8c9e7e53da415c29b2438e1fa5f27e1944d96
+- evidence_id: quantity-30
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf
+  locator: page 1, final preparation sentence
+  accessed_at: '2026-10-21T09:28:25.640005Z'
+  support: supports
+  summary: Retain source pH 3.0 and the stated 1 M titrant options. The source does
+    not quantify titrant addition volumes; no fixed amount or replacement reagent
+    is inferred.
+  quote: the pH to 3.0 with 1M NaOH or 1M HCl. Autoclave at 15 psi for 15 minutes.
+  snapshot_sha256: 4aeb7f85f4b4e8b9d1729d0582b8c9e7e53da415c29b2438e1fa5f27e1944d96
+- evidence_id: chebi64734
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64734
+  locator: $._embedded.terms[0]
+  accessed_at: '2026-10-21T08:04:44.449302Z'
+  support: supports
+  summary: CHEBI:64734 resolves to EDTA disodium salt (anhydrous) and is not obsolete.
+    Available definitions, formulae, structures and synonyms were inspected; recipe
+    amounts and supplied forms are assessed separately.
+  snapshot_sha256: 95b7557b1867dcce37a69714dbad0a6a6a6c11c66dde39c6793a2307a7fb0e1c
+- evidence_id: chebi86254
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86254
+  locator: $._embedded.terms[0]
+  accessed_at: '2026-10-21T08:17:30.289392Z'
+  support: supports
+  summary: CHEBI:86254 resolves to iron trichloride hexahydrate and is not obsolete.
+    Available definitions, formulae, structures and synonyms were inspected; recipe
+    amounts and supplied forms are assessed separately.
+  snapshot_sha256: 89afba545ad02f24a850933df154af25dee37357b583f82de13866b44f18d683
+- evidence_id: chebi86368
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  locator: $._embedded.terms[0]
+  accessed_at: '2026-10-21T08:17:30.657545Z'
+  support: supports
+  summary: CHEBI:86368 resolves to manganese(II) chloride tetrahydrate and is not
+    obsolete. Available definitions, formulae, structures and synonyms were inspected;
+    recipe amounts and supplied forms are assessed separately.
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: chebi49976
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976
+  locator: $._embedded.terms[0]
+  accessed_at: '2026-10-21T08:04:44.168295Z'
+  support: supports
+  summary: CHEBI:49976 resolves to zinc dichloride and is not obsolete. Available
+    definitions, formulae, structures and synonyms were inspected; recipe amounts
+    and supplied forms are assessed separately.
+  snapshot_sha256: d27644ae0df5935f8f18a28faa1ba6096fefeb9d0cb951b39751d442c92bd321
+- evidence_id: chebi53503
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503
+  locator: $._embedded.terms[0]
+  accessed_at: '2026-10-21T08:04:44.349630Z'
+  support: supports
+  summary: CHEBI:53503 resolves to cobalt chloride hexahydrate and is not obsolete.
+    Available definitions, formulae, structures and synonyms were inspected; recipe
+    amounts and supplied forms are assessed separately.
+  snapshot_sha256: c33e304a0a565068c592ba0970e501052981599ef69cd2cb901e88f27931389d
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: $._embedded.terms[0]
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: CHEBI:75213 resolves to sodium molybdate dihydrate and is not obsolete.
+    Available definitions, formulae, structures and synonyms were inspected; recipe
+    amounts and supplied forms are assessed separately.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Entire pinned snapshot; exact MAPPED/preferred_term rows for asserted CHEBI
+    keys and exact legacy-key lookup
+  accessed_at: '2026-10-21T09:45:16Z'
+  support: supports
+  summary: '{"metadata": {"byte_count": 824387, "consumer_contract_version": 1, "data_row_count":
+    9077, "header": ["label", "match_type", "identifier", "preferred_term", "ontology_id",
+    "mapping_status", "ambiguity"], "repository": "https://github.com/CultureBotAI/MediaIngredientMech",
+    "sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5",
+    "source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "source_path": "docs/data/label_index.csv"},
+    "counts": {"target": {"ingredient_instances": 6, "primary_CHEBI_instances": 6,
+    "secondary_current_asserted_instances": 0, "secondary_current_verified_instances":
+    0, "legacy_secondary_instances": 0, "primary_CHEBI_percent": 100.0, "secondary_verified_percent":
+    0.0}, "owner": {"ingredient_instances": 6, "primary_CHEBI_instances": 6, "secondary_current_asserted_instances":
+    0, "secondary_current_verified_instances": 0, "legacy_secondary_instances": 0,
+    "primary_CHEBI_percent": 100.0, "secondary_verified_percent": 0.0}}, "instances":
+    [{"layer": "target", "path": "data/merge_yaml/merged/ABM.yaml", "field": "ingredients[0]",
+    "name": "Na EDTA", "primary": {"id": "CHEBI:64734", "label": "EDTA disodium salt
+    (anhydrous)"}, "canonical_label": "EDTA disodium salt (anhydrous)", "label_equal":
+    true, "definition": ["An organic sodium salt that is the anhydrous form of the
+    disodium salt of ethylenediaminetetraacetic acid (EDTA)."], "annotations": {"charge":
+    [0.0], "database_cross_reference": ["cas:139-33-3", "kegg.drug:D03945", "reaxys:3822669"],
+    "generalized_empirical_formula": ["C10H14N2O8.2Na"], "has_obo_namespace": ["chebi_ontology"],
+    "id": ["CHEBI:64734"], "inchi_key_string": ["ZGTMUACCHSMWAC-UHFFFAOYSA-L"], "inchi_string":
+    ["InChI=1S/C10H16N2O8.2Na/c13-7(14)3-11(4-8(15)16)1-2-12(5-9(17)18)6-10(19)20;;/h1-6H2,(H,13,14)(H,15,16)(H,17,18)(H,19,20);;/q;2*+1/p-2"],
+    "mass": ["336.208"], "monoisotopic_mass": ["336.05455"], "smiles_string": ["O=C([O-])C[NH+](CC[NH+](CC(=O)[O-])CC(=O)[O-])CC(=O)[O-].[Na+].[Na+]"]},
+    "synonyms": ["EDTA disodium (anh.)", "EDTA disodium (anhydrous)", "EDTA disodium
+    salt (anh.)", "EDTA disodium", "Edetate disodium anhydrous", "N,N''-1,2-ethanediylbis[N-(carboxymethyl)glycine],
+    disodium salt", "Na2-EDTA", "Na2H2EDTA", "disodium 2,2'',2'''',2''''''-(ethane-1,2-diyldiammonio)tetraacetate",
+    "disodium 2,2'',2'''',2''''''-(ethane-1,2-diyldiammonio)tetraacetate", "disodium
+    EDTA (anh.)", "disodium EDTA (anhydrous)", "disodium EDTA", "disodium edetate
+    (anh.)", "disodium edetate (anhydrous)", "disodium edetate", "edetate disodium
+    (anh.)", "edetate disodium (anhydrous)", "edetate disodium", "ethylenebis(iminodiacetic
+    acid) disoidum salt"]}, {"layer": "target", "path": "data/merge_yaml/merged/ABM.yaml",
+    "field": "ingredients[1]", "name": "FeCl3 x 6 H2O", "primary": {"id": "CHEBI:86254",
+    "label": "iron trichloride hexahydrate"}, "canonical_label": "iron trichloride
+    hexahydrate", "label_equal": true, "definition": ["A hydrate that is the hexahydrate
+    form of iron trichloride."], "annotations": {"charge": [0.0], "database_cross_reference":
+    ["cas:10025-77-1", "reaxys:11334004", "wikipedia.en:Iron(III)_chloride"], "generalized_empirical_formula":
+    ["Cl3Fe.6H2O"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:86254"],
+    "inchi_key_string": ["NQXWGWZJXJUMQB-UHFFFAOYSA-K"], "inchi_string": ["InChI=1S/3ClH.Fe.6H2O/h3*1H;;6*1H2/q;;;+3;;;;;;/p-3"],
+    "mass": ["270.294"], "monoisotopic_mass": ["268.90488"], "smiles_string": ["O.O.O.O.O.O.[Cl][Fe]([Cl])[Cl]"]},
+    "synonyms": ["FeCl3.6H2O", "Ferric chloride hexahydrate", "Ferric trichloride
+    hexahydrate", "Iron (III) chloride hexahydrate", "Iron(3+) chloride hexahydrate",
+    "trichloroiron--water (1/6)", "trichloroiron--water (1/6)"]}, {"layer": "target",
+    "path": "data/merge_yaml/merged/ABM.yaml", "field": "ingredients[2]", "name":
+    "MnCl2 x 4 H2O", "primary": {"id": "CHEBI:86368", "label": "manganese(II) chloride
+    tetrahydrate"}, "canonical_label": "manganese(II) chloride tetrahydrate", "label_equal":
+    true, "definition": ["A hydrate that is the tetrahydrate form of manganese(II)
+    chloride."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:13446-34-9",
+    "kegg.drug:D04852", "reaxys:24949298", "wikipedia.en:Manganese(II)_chloride"],
+    "generalized_empirical_formula": ["Cl2Mn.4H2O"], "has_obo_namespace": ["chebi_ontology"],
+    "id": ["CHEBI:86368"], "inchi_key_string": ["CNFDGXZLMLFIJV-UHFFFAOYSA-L"], "inchi_string":
+    ["InChI=1S/2ClH.Mn.4H2O/h2*1H;;4*1H2/q;;+2;;;;/p-2"], "mass": ["197.904"], "monoisotopic_mass":
+    ["196.91801"], "smiles_string": ["O.O.O.O.[Cl][Mn][Cl]"]}, "synonyms": ["Lumenhance",
+    "Manganese chloride tetrahydrate", "Manganese chloride", "Manganese dichloride
+    tetrahydrate", "Manganous chloride tetrahydrate", "dichloromanganese--water (1/4)",
+    "dichloromanganese--water (1/4)", "manganese(2+) chloride tetrahydrate", "manganese(2+)
+    chloride--water (1/4)", "manganese(2+) chloride--water (1/4)"]}, {"layer": "target",
+    "path": "data/merge_yaml/merged/ABM.yaml", "field": "ingredients[3]", "name":
+    "ZnCl2", "primary": {"id": "CHEBI:49976", "label": "zinc dichloride"}, "canonical_label":
+    "zinc dichloride", "label_equal": true, "definition": ["A compound of zinc and
+    chloride ions in the ratio 1:2. It exists in four crystalline forms, in each of
+    which the Zn<small><sup>2+</small></sup> ions are trigonal planar coordinated
+    to four chloride ions."], "annotations": {"charge": [0.0], "database_cross_reference":
+    ["cas:7646-85-7", "gmelin:430396", "kegg.drug:D02058", "molbase:1125", "pubmed:23021350",
+    "pubmed:23399499", "pubmed:23471775", "pubmed:23514640", "pubmed:23546181", "pubmed:23574241",
+    "pubmed:23739012", "pubmed:23761032", "pubmed:23763136", "pubmed:29079364", "pubmed:7615984",
+    "pubmed:9730919", "wikipedia.en:Zinc_Chloride"], "generalized_empirical_formula":
+    ["2Cl.Zn"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:49976"], "inchi_key_string":
+    ["JIAARYAFYJHUJI-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/2ClH.Zn/h2*1H;/q;;+2/p-2"],
+    "mass": ["136.296"], "monoisotopic_mass": ["133.86685"], "smiles_string": ["[Cl-].[Cl-].[Zn+2]"]},
+    "synonyms": ["Zinkchlorid", "ZnCl2", "butter of zinc", "chlorure de zinc", "dichlorozinc",
+    "zinc chloride", "zinc chloride, anhydrous", "zinc dichloride", "zinc dichloride",
+    "zinc(2+) chloride", "zinc(2+) chloride", "zinc(II) chloride", "zinc(II) chloride"]},
+    {"layer": "target", "path": "data/merge_yaml/merged/ABM.yaml", "field": "ingredients[4]",
+    "name": "CoCl2 x 6 H2O", "primary": {"id": "CHEBI:53503", "label": "cobalt chloride
+    hexahydrate"}, "canonical_label": "cobalt chloride hexahydrate", "label_equal":
+    true, "definition": ["A hydrate of cobalt chloride containing cobalt (in +2 oxidation
+    state), chloride and water moieties in the ratio 1:2:6."], "annotations": {"charge":
+    [0.0], "database_cross_reference": ["cas:7791-13-1", "gmelin:16833", "patent:CN101077120",
+    "pubmed:11207315", "pubmed:16870561", "pubmed:2025398", "pubmed:21721333", "pubmed:8404951",
+    "pubmed:8857117", "pubmed:9106780", "reaxys:11403444"], "generalized_empirical_formula":
+    ["2Cl.Co.6H2O"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:53503"],
+    "inchi_key_string": ["GFHNAMRJFCEERV-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/2ClH.Co.6H2O/h2*1H;;6*1H2/q;;+2;;;;;;/p-2"],
+    "mass": ["237.929"], "monoisotopic_mass": ["236.93429"], "smiles_string": ["O.O.O.O.O.O.[Cl-].[Cl-].[Co+2]"]},
+    "synonyms": ["Cobalt chloride hexahydrate", "Cobalt dichloride hexahydrate", "Cobalt(II)
+    chloride hexahydrate", "Cobalt(II) chloride--water (1/7)", "Cobalt(II) chloride--water
+    (1/7)", "cobalt (II) chloride hexahydrate", "cobalt chloride hydrate", "cobalt(2+)
+    dichloride hexahydrate", "cobalt(2+) dichloride hexahydrate"]}, {"layer": "target",
+    "path": "data/merge_yaml/merged/ABM.yaml", "field": "ingredients[5]", "name":
+    "Na2MoO4 x 2 H2O", "primary": {"id": "CHEBI:75213", "label": "sodium molybdate
+    dihydrate"}, "canonical_label": "sodium molybdate dihydrate", "label_equal": true,
+    "definition": ["A hydrate that is the dihydrate form of sodium molybdate."], "annotations":
+    {"charge": [0.0], "database_cross_reference": ["cas:10102-40-6", "pubmed:20645132",
+    "pubmed:20813395", "pubmed:22663766", "pubmed:3382795", "reaxys:19032996", "wikipedia.en:Sodium_molybdate"],
+    "generalized_empirical_formula": ["2H2O.MoO4.2Na"], "has_obo_namespace": ["chebi_ontology"],
+    "id": ["CHEBI:75213"], "inchi_key_string": ["FDEIWTXVNPKYDL-UHFFFAOYSA-N"], "inchi_string":
+    ["InChI=1S/Mo.2Na.2H2O.4O/h;;;2*1H2;;;;/q;2*+1;;;;;2*-1"], "mass": ["241.946"],
+    "monoisotopic_mass": ["243.88573"], "smiles_string": ["O.O.[Na+].[Na+].[O]=[Mo](=[O])([O-])[O-]"]},
+    "synonyms": ["Disodium molybdate dihydrate", "Molybdic acid, disodium salt, dihydrate",
+    "Na2MoO4.2H2O", "Sodium molybdate(VI) dihydrate", "sodium dioxido(dioxo)molybdenum--water
+    (1/2)", "sodium dioxido(dioxo)molybdenum--water (1/2)", "sodium orthomolybdate
+    dihydrate"]}, {"layer": "owner", "path": "data/normalized_yaml/algae/abm.yaml",
+    "field": "ingredients[0]", "name": "Na EDTA", "primary": {"id": "CHEBI:64734",
+    "label": "EDTA disodium salt (anhydrous)"}, "canonical_label": "EDTA disodium
+    salt (anhydrous)", "label_equal": true, "definition": ["An organic sodium salt
+    that is the anhydrous form of the disodium salt of ethylenediaminetetraacetic
+    acid (EDTA)."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:139-33-3",
+    "kegg.drug:D03945", "reaxys:3822669"], "generalized_empirical_formula": ["C10H14N2O8.2Na"],
+    "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:64734"], "inchi_key_string":
+    ["ZGTMUACCHSMWAC-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/C10H16N2O8.2Na/c13-7(14)3-11(4-8(15)16)1-2-12(5-9(17)18)6-10(19)20;;/h1-6H2,(H,13,14)(H,15,16)(H,17,18)(H,19,20);;/q;2*+1/p-2"],
+    "mass": ["336.208"], "monoisotopic_mass": ["336.05455"], "smiles_string": ["O=C([O-])C[NH+](CC[NH+](CC(=O)[O-])CC(=O)[O-])CC(=O)[O-].[Na+].[Na+]"]},
+    "synonyms": ["EDTA disodium (anh.)", "EDTA disodium (anhydrous)", "EDTA disodium
+    salt (anh.)", "EDTA disodium", "Edetate disodium anhydrous", "N,N''-1,2-ethanediylbis[N-(carboxymethyl)glycine],
+    disodium salt", "Na2-EDTA", "Na2H2EDTA", "disodium 2,2'',2'''',2''''''-(ethane-1,2-diyldiammonio)tetraacetate",
+    "disodium 2,2'',2'''',2''''''-(ethane-1,2-diyldiammonio)tetraacetate", "disodium
+    EDTA (anh.)", "disodium EDTA (anhydrous)", "disodium EDTA", "disodium edetate
+    (anh.)", "disodium edetate (anhydrous)", "disodium edetate", "edetate disodium
+    (anh.)", "edetate disodium (anhydrous)", "edetate disodium", "ethylenebis(iminodiacetic
+    acid) disoidum salt"]}, {"layer": "owner", "path": "data/normalized_yaml/algae/abm.yaml",
+    "field": "ingredients[1]", "name": "FeCl3 x 6 H2O", "primary": {"id": "CHEBI:86254",
+    "label": "iron trichloride hexahydrate"}, "canonical_label": "iron trichloride
+    hexahydrate", "label_equal": true, "definition": ["A hydrate that is the hexahydrate
+    form of iron trichloride."], "annotations": {"charge": [0.0], "database_cross_reference":
+    ["cas:10025-77-1", "reaxys:11334004", "wikipedia.en:Iron(III)_chloride"], "generalized_empirical_formula":
+    ["Cl3Fe.6H2O"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:86254"],
+    "inchi_key_string": ["NQXWGWZJXJUMQB-UHFFFAOYSA-K"], "inchi_string": ["InChI=1S/3ClH.Fe.6H2O/h3*1H;;6*1H2/q;;;+3;;;;;;/p-3"],
+    "mass": ["270.294"], "monoisotopic_mass": ["268.90488"], "smiles_string": ["O.O.O.O.O.O.[Cl][Fe]([Cl])[Cl]"]},
+    "synonyms": ["FeCl3.6H2O", "Ferric chloride hexahydrate", "Ferric trichloride
+    hexahydrate", "Iron (III) chloride hexahydrate", "Iron(3+) chloride hexahydrate",
+    "trichloroiron--water (1/6)", "trichloroiron--water (1/6)"]}, {"layer": "owner",
+    "path": "data/normalized_yaml/algae/abm.yaml", "field": "ingredients[2]", "name":
+    "MnCl2 x 4 H2O", "primary": {"id": "CHEBI:86368", "label": "manganese(II) chloride
+    tetrahydrate"}, "canonical_label": "manganese(II) chloride tetrahydrate", "label_equal":
+    true, "definition": ["A hydrate that is the tetrahydrate form of manganese(II)
+    chloride."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:13446-34-9",
+    "kegg.drug:D04852", "reaxys:24949298", "wikipedia.en:Manganese(II)_chloride"],
+    "generalized_empirical_formula": ["Cl2Mn.4H2O"], "has_obo_namespace": ["chebi_ontology"],
+    "id": ["CHEBI:86368"], "inchi_key_string": ["CNFDGXZLMLFIJV-UHFFFAOYSA-L"], "inchi_string":
+    ["InChI=1S/2ClH.Mn.4H2O/h2*1H;;4*1H2/q;;+2;;;;/p-2"], "mass": ["197.904"], "monoisotopic_mass":
+    ["196.91801"], "smiles_string": ["O.O.O.O.[Cl][Mn][Cl]"]}, "synonyms": ["Lumenhance",
+    "Manganese chloride tetrahydrate", "Manganese chloride", "Manganese dichloride
+    tetrahydrate", "Manganous chloride tetrahydrate", "dichloromanganese--water (1/4)",
+    "dichloromanganese--water (1/4)", "manganese(2+) chloride tetrahydrate", "manganese(2+)
+    chloride--water (1/4)", "manganese(2+) chloride--water (1/4)"]}, {"layer": "owner",
+    "path": "data/normalized_yaml/algae/abm.yaml", "field": "ingredients[3]", "name":
+    "ZnCl2", "primary": {"id": "CHEBI:49976", "label": "zinc dichloride"}, "canonical_label":
+    "zinc dichloride", "label_equal": true, "definition": ["A compound of zinc and
+    chloride ions in the ratio 1:2. It exists in four crystalline forms, in each of
+    which the Zn<small><sup>2+</small></sup> ions are trigonal planar coordinated
+    to four chloride ions."], "annotations": {"charge": [0.0], "database_cross_reference":
+    ["cas:7646-85-7", "gmelin:430396", "kegg.drug:D02058", "molbase:1125", "pubmed:23021350",
+    "pubmed:23399499", "pubmed:23471775", "pubmed:23514640", "pubmed:23546181", "pubmed:23574241",
+    "pubmed:23739012", "pubmed:23761032", "pubmed:23763136", "pubmed:29079364", "pubmed:7615984",
+    "pubmed:9730919", "wikipedia.en:Zinc_Chloride"], "generalized_empirical_formula":
+    ["2Cl.Zn"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:49976"], "inchi_key_string":
+    ["JIAARYAFYJHUJI-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/2ClH.Zn/h2*1H;/q;;+2/p-2"],
+    "mass": ["136.296"], "monoisotopic_mass": ["133.86685"], "smiles_string": ["[Cl-].[Cl-].[Zn+2]"]},
+    "synonyms": ["Zinkchlorid", "ZnCl2", "butter of zinc", "chlorure de zinc", "dichlorozinc",
+    "zinc chloride", "zinc chloride, anhydrous", "zinc dichloride", "zinc dichloride",
+    "zinc(2+) chloride", "zinc(2+) chloride", "zinc(II) chloride", "zinc(II) chloride"]},
+    {"layer": "owner", "path": "data/normalized_yaml/algae/abm.yaml", "field": "ingredients[4]",
+    "name": "CoCl2 x 6 H2O", "primary": {"id": "CHEBI:53503", "label": "cobalt chloride
+    hexahydrate"}, "canonical_label": "cobalt chloride hexahydrate", "label_equal":
+    true, "definition": ["A hydrate of cobalt chloride containing cobalt (in +2 oxidation
+    state), chloride and water moieties in the ratio 1:2:6."], "annotations": {"charge":
+    [0.0], "database_cross_reference": ["cas:7791-13-1", "gmelin:16833", "patent:CN101077120",
+    "pubmed:11207315", "pubmed:16870561", "pubmed:2025398", "pubmed:21721333", "pubmed:8404951",
+    "pubmed:8857117", "pubmed:9106780", "reaxys:11403444"], "generalized_empirical_formula":
+    ["2Cl.Co.6H2O"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:53503"],
+    "inchi_key_string": ["GFHNAMRJFCEERV-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/2ClH.Co.6H2O/h2*1H;;6*1H2/q;;+2;;;;;;/p-2"],
+    "mass": ["237.929"], "monoisotopic_mass": ["236.93429"], "smiles_string": ["O.O.O.O.O.O.[Cl-].[Cl-].[Co+2]"]},
+    "synonyms": ["Cobalt chloride hexahydrate", "Cobalt dichloride hexahydrate", "Cobalt(II)
+    chloride hexahydrate", "Cobalt(II) chloride--water (1/7)", "Cobalt(II) chloride--water
+    (1/7)", "cobalt (II) chloride hexahydrate", "cobalt chloride hydrate", "cobalt(2+)
+    dichloride hexahydrate", "cobalt(2+) dichloride hexahydrate"]}, {"layer": "owner",
+    "path": "data/normalized_yaml/algae/abm.yaml", "field": "ingredients[5]", "name":
+    "Na2MoO4 x 2 H2O", "primary": {"id": "CHEBI:75213", "label": "sodium molybdate
+    dihydrate"}, "canonical_label": "sodium molybdate dihydrate", "label_equal": true,
+    "definition": ["A hydrate that is the dihydrate form of sodium molybdate."], "annotations":
+    {"charge": [0.0], "database_cross_reference": ["cas:10102-40-6", "pubmed:20645132",
+    "pubmed:20813395", "pubmed:22663766", "pubmed:3382795", "reaxys:19032996", "wikipedia.en:Sodium_molybdate"],
+    "generalized_empirical_formula": ["2H2O.MoO4.2Na"], "has_obo_namespace": ["chebi_ontology"],
+    "id": ["CHEBI:75213"], "inchi_key_string": ["FDEIWTXVNPKYDL-UHFFFAOYSA-N"], "inchi_string":
+    ["InChI=1S/Mo.2Na.2H2O.4O/h;;;2*1H2;;;;/q;2*+1;;;;;2*-1"], "mass": ["241.946"],
+    "monoisotopic_mass": ["243.88573"], "smiles_string": ["O.O.[Na+].[Na+].[O]=[Mo](=[O])([O-])[O-]"]},
+    "synonyms": ["Disodium molybdate dihydrate", "Molybdic acid, disodium salt, dihydrate",
+    "Na2MoO4.2H2O", "Sodium molybdate(VI) dihydrate", "sodium dioxido(dioxo)molybdenum--water
+    (1/2)", "sodium dioxido(dioxo)molybdenum--water (1/2)", "sodium orthomolybdate
+    dihydrate"]}], "legacy": []}'
+- evidence_id: importer
+  kind: record_content
+  reference: src/culturemech/import/ccap_importer.py
+  locator: convert_recipe; _determine_salinity_type; _extract_ingredients_from_text;
+    _extract_preparation_from_text
+  accessed_at: '2026-10-21T09:45:16Z'
+  support: context_only
+  summary: Current importer hard-codes generic light, cycle and temperature prose,
+    defaults complex medium and freshwater use, and applies broad text-extraction
+    heuristics. These fields are not recovered ABM-specific experimental evidence.
+    Current code is context, not proof of the exact historical April expansion route.
+- evidence_id: provenance-repair
+  kind: record_content
+  reference: scripts/repair_ccap_sources_score10.py
+  locator: _require_target; _ensure_source; _ensure_event
+  accessed_at: '2026-10-21T09:45:16Z'
+  support: context_only
+  summary: Current repair copies matching CCAP reference/import-event identity into
+    sources and records that normalization. It does not recover formulation or verify
+    the source chemical quantities. The September owner event is later than the generated
+    merge.
+- evidence_id: history
+  kind: record_content
+  reference: data/merge_yaml/merged/ABM.yaml
+  locator: All target/owner history and ingredient curation timestamps
+  accessed_at: '2026-10-21T09:45:16Z'
+  support: refutes
+  summary: '[{"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "curation_history[0].timestamp",
+    "value": "2026-01-28T00:00:00+00:00", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "curation_history[1].timestamp",
+    "value": "2026-02-03T00:00:00+00:00", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "curation_history[2].timestamp",
+    "value": "2026-02-03T11:26:43.445566", "valid_ISO_datetime": true, "timezone_aware":
+    false}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "curation_history[3].timestamp",
+    "value": "2026-03-13T06:18:52.997682Z", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "curation_history[4].timestamp",
+    "value": "2026-03-17T19:45:03.955067+00:00", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "curation_history[5].timestamp",
+    "value": "2026-04-04T12:54:54.802411", "valid_ISO_datetime": true, "timezone_aware":
+    false}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "curation_history[6].timestamp",
+    "value": "2026-05-16T08:57:02.052422+00:00", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "curation_history[7].timestamp",
+    "value": "2026-05-16T09:02:56.194092+00:00", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "curation_history[8].timestamp",
+    "value": "2026-08-06T03:04:19.587470+00:00", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "ingredients[0].curation_metadata.curation_date",
+    "value": "2026-04-04T12:54:54.802384", "valid_ISO_datetime": true, "timezone_aware":
+    false}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "ingredients[1].curation_metadata.curation_date",
+    "value": "2026-04-04T12:54:54.802398", "valid_ISO_datetime": true, "timezone_aware":
+    false}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "ingredients[2].curation_metadata.curation_date",
+    "value": "2026-04-04T12:54:54.802400", "valid_ISO_datetime": true, "timezone_aware":
+    false}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "ingredients[3].curation_metadata.curation_date",
+    "value": "2026-04-04T12:54:54.802402", "valid_ISO_datetime": true, "timezone_aware":
+    false}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "ingredients[4].curation_metadata.curation_date",
+    "value": "2026-04-04T12:54:54.802404", "valid_ISO_datetime": true, "timezone_aware":
+    false}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "ingredients[5].curation_metadata.curation_date",
+    "value": "2026-04-04T12:54:54.802407", "valid_ISO_datetime": true, "timezone_aware":
+    false}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "curation_history[0].timestamp",
+    "value": "2026-01-28T00:00:00+00:00", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "curation_history[1].timestamp",
+    "value": "2026-02-03T00:00:00+00:00", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "curation_history[2].timestamp",
+    "value": "2026-02-03T11:26:43.445566", "valid_ISO_datetime": true, "timezone_aware":
+    false}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "curation_history[3].timestamp",
+    "value": "2026-03-13T06:18:52.997682Z", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "curation_history[4].timestamp",
+    "value": "2026-03-17T19:45:03.955067+00:00", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "curation_history[5].timestamp",
+    "value": "2026-04-04T12:54:54.802411", "valid_ISO_datetime": true, "timezone_aware":
+    false}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "curation_history[6].timestamp",
+    "value": "2026-05-16T08:57:02.052422+00:00", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "curation_history[7].timestamp",
+    "value": "2026-05-16T09:02:56.194092+00:00", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "curation_history[8].timestamp",
+    "value": "2026-09-13T00:00:00-07:00", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "ingredients[0].curation_metadata.curation_date",
+    "value": "2026-04-04T12:54:54.802384", "valid_ISO_datetime": true, "timezone_aware":
+    false}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "ingredients[1].curation_metadata.curation_date",
+    "value": "2026-04-04T12:54:54.802398", "valid_ISO_datetime": true, "timezone_aware":
+    false}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "ingredients[2].curation_metadata.curation_date",
+    "value": "2026-04-04T12:54:54.802400", "valid_ISO_datetime": true, "timezone_aware":
+    false}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "ingredients[3].curation_metadata.curation_date",
+    "value": "2026-04-04T12:54:54.802402", "valid_ISO_datetime": true, "timezone_aware":
+    false}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "ingredients[4].curation_metadata.curation_date",
+    "value": "2026-04-04T12:54:54.802404", "valid_ISO_datetime": true, "timezone_aware":
+    false}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "ingredients[5].curation_metadata.curation_date",
+    "value": "2026-04-04T12:54:54.802407", "valid_ISO_datetime": true, "timezone_aware":
+    false}]'
+- evidence_id: merge
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: RecipeMerger and merge record construction
+  accessed_at: '2026-10-21T09:45:16Z'
+  support: context_only
+  summary: The target is a generated merge with the exact normalized owner declared
+    in the inspection. Merge fingerprints are ingredient-identity sets, not concentration
+    or source-recipe equivalence. Fix maintained inputs and regenerate only with separate
+    authorization.
+- evidence_id: exporter
+  kind: record_content
+  reference: src/culturemech/export/kgx_export.py
+  locator: medium_to_ingredient_edge; medium_to_solution_edge; _resolved_ingredient_id;
+    _quantity
+  accessed_at: '2026-10-21T09:45:16Z'
+  support: context_only
+  summary: Current export consumes structured ingredient, solution, type and stored-quantity
+    claims and resolves ingredients through the pinned MIM index before fallback.
+    It does not independently recover omitted source stages or prove final-volume
+    basis. No export was run and no resulting edge count is asserted.
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:000040
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: ABM accession and current source version
+  outcome: supported
+  summary: The stable ID, exact CCAP:ABM reference, PDF URL, maintained sources entry
+    and import event identify Acidic Bold-Basal Medium with Vitamins; modified. The
+    April expansion of six ingredients predates the captured May revision. The current
+    source version is assessed explicitly, without claiming identical historical bytes.
+    The source PIV block is only stock 7 within ABM, not the whole named medium.
+  target_ids:
+  - CultureMech:000040
+  evidence_ids:
+  - record
+  - owner-0
+  - ccapABM
+- assessment_id: grounding
+  area: grounding
+  topic: Primary labels/forms and pinned secondary correspondence
+  outcome: supported
+  summary: 'Layer-specific counts are {"target": {"ingredient_instances": 6, "primary_CHEBI_instances":
+    6, "secondary_current_asserted_instances": 0, "secondary_current_verified_instances":
+    0, "legacy_secondary_instances": 0, "primary_CHEBI_percent": 100.0, "secondary_verified_percent":
+    0.0}, "owner": {"ingredient_instances": 6, "primary_CHEBI_instances": 6, "secondary_current_asserted_instances":
+    0, "secondary_current_verified_instances": 0, "legacy_secondary_instances": 0,
+    "primary_CHEBI_percent": 100.0, "secondary_verified_percent": 0.0}}. Percentages
+    are 0–100 linkage coverage over direct ingredient instances, not scientific accuracy.
+    The 0 legacy link instances across both layers are unverified by the current CHEBI-keyed
+    snapshot; absence here does not prove historical invalidity. Current secondary
+    keys without a live preferred-term row are []. No secondary linked-set percentage
+    is invented for an empty set.'
+  target_ids:
+  - CultureMech:000040
+  evidence_ids:
+  - record
+  - owner-0
+  - mim
+  - chebi64734
+  - chebi86254
+  - chebi86368
+  - chebi49976
+  - chebi53503
+  - chebi75213
+  details: '{"label_drift": [], "legacy": [], "missing_current_secondary": []}'
+- assessment_id: forms
+  area: grounding
+  topic: All six asserted forms and missing source components
+  outcome: concern
+  summary: The five mineral salt IDs and canonical labels match the explicit source
+    salts/hydrates. Na2EDTA identifies a disodium salt but does not explicitly establish
+    hydration; CHEBI:64734 is anhydrous, so that specificity remains limited. The
+    missing major-stock phosphate is explicitly K2HPO4·3H2O, and source vitamins are
+    thiamine hydrochloride and cyanocobalamin. These source names must not be replaced
+    by adjacent forms during recovery. All six direct primary links resolve; no secondary
+    links are asserted. Mapping confidence 0.95–1.0 is automated metadata, not source
+    verification.
+  target_ids:
+  - CultureMech:000040
+  evidence_ids:
+  - record
+  - owner-0
+  - ccapABM
+  - chebi64734
+  - chebi86254
+  - chebi86368
+  - chebi49976
+  - chebi53503
+  - chebi75213
+- assessment_id: preparation
+  area: consistency
+  topic: Stock-specific processing and acidic final medium
+  outcome: concern
+  summary: Both local layers lack preparation and pH. The current source requires
+    ordered PIV additions, then autoclaving that stock at 15 psi for 15 min; thiamine
+    is filter sterile, and B12 undergoes its 1 mL + 99 mL dilution then filtration.
+    The final medium is made up to 1 L, adjusted to pH 3.0 using 1 M NaOH or 1 M HCl,
+    and autoclaved at 15 psi for 15 min. Do not invent a 121°C equivalence or post-autoclave
+    vitamin timing that the source does not state.
+  target_ids:
+  - CultureMech:000040
+  evidence_ids:
+  - record
+  - owner-0
+  - ccapABM
+  - stock-basis
+  - final-basis
+- assessment_id: classification
+  area: scope
+  topic: Composition type and unsupported culture conditions
+  outcome: concern
+  summary: The exact current source is a quantitatively specified salt/vitamin medium,
+    with no complex extract or hydrolysate supporting local COMPLEX/UNDEFINED. Reassess
+    classification against this full formulation. LIQUID is consistent with no gelling
+    agent. The current PDF supplies no 50–100 µmol photons m−2 s−1, 12:12 or 16:8
+    light cycle, 15–30°C incubation range or broad freshwater-suitability claim; current
+    importer defaults explain those statements, not their source validity. Algae filing
+    and broad applications remain catalogue scope rather than strain-specific growth.
+  target_ids:
+  - CultureMech:000040
+  evidence_ids:
+  - record
+  - owner-0
+  - ccapABM
+  - importer
+- assessment_id: ownership
+  area: ownership
+  topic: Six-row expansion and later provenance-only owner repair
+  outcome: concern
+  summary: All six ingredient identities and amounts are shared by owner and target.
+    The owner additionally records sources and a September provenance-normalization
+    event absent from the generated target. Neither the source slot nor ingredients_curated/mapping
+    flags demonstrate that full ABM was recovered. Compare the explicitly current
+    source version, correct maintained formulation and unsupported defaults, then
+    regenerate; do not edit the derived file.
+  target_ids:
+  - CultureMech:000040
+  evidence_ids:
+  - record
+  - owner-0
+  - ccapABM
+  - provenance-repair
+  - importer
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp interpretation
+  outcome: concern
+  summary: 30 exact timestamp instances were examined; 16 lack valid syntax or explicit
+    timezone. No local timestamp was assumed UTC or rewritten. Process and confidence
+    annotations are not independent scientific evidence.
+  target_ids:
+  - CultureMech:000040
+  evidence_ids:
+  - record
+  - owner-0
+  - history
+  details: '[{"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "curation_history[2].timestamp",
+    "value": "2026-02-03T11:26:43.445566", "valid_ISO_datetime": true, "timezone_aware":
+    false}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "curation_history[5].timestamp",
+    "value": "2026-04-04T12:54:54.802411", "valid_ISO_datetime": true, "timezone_aware":
+    false}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "ingredients[0].curation_metadata.curation_date",
+    "value": "2026-04-04T12:54:54.802384", "valid_ISO_datetime": true, "timezone_aware":
+    false}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "ingredients[1].curation_metadata.curation_date",
+    "value": "2026-04-04T12:54:54.802398", "valid_ISO_datetime": true, "timezone_aware":
+    false}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "ingredients[2].curation_metadata.curation_date",
+    "value": "2026-04-04T12:54:54.802400", "valid_ISO_datetime": true, "timezone_aware":
+    false}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "ingredients[3].curation_metadata.curation_date",
+    "value": "2026-04-04T12:54:54.802402", "valid_ISO_datetime": true, "timezone_aware":
+    false}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "ingredients[4].curation_metadata.curation_date",
+    "value": "2026-04-04T12:54:54.802404", "valid_ISO_datetime": true, "timezone_aware":
+    false}, {"path": "data/merge_yaml/merged/ABM.yaml", "field_path": "ingredients[5].curation_metadata.curation_date",
+    "value": "2026-04-04T12:54:54.802407", "valid_ISO_datetime": true, "timezone_aware":
+    false}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "curation_history[2].timestamp",
+    "value": "2026-02-03T11:26:43.445566", "valid_ISO_datetime": true, "timezone_aware":
+    false}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "curation_history[5].timestamp",
+    "value": "2026-04-04T12:54:54.802411", "valid_ISO_datetime": true, "timezone_aware":
+    false}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "ingredients[0].curation_metadata.curation_date",
+    "value": "2026-04-04T12:54:54.802384", "valid_ISO_datetime": true, "timezone_aware":
+    false}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "ingredients[1].curation_metadata.curation_date",
+    "value": "2026-04-04T12:54:54.802398", "valid_ISO_datetime": true, "timezone_aware":
+    false}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "ingredients[2].curation_metadata.curation_date",
+    "value": "2026-04-04T12:54:54.802400", "valid_ISO_datetime": true, "timezone_aware":
+    false}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "ingredients[3].curation_metadata.curation_date",
+    "value": "2026-04-04T12:54:54.802402", "valid_ISO_datetime": true, "timezone_aware":
+    false}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "ingredients[4].curation_metadata.curation_date",
+    "value": "2026-04-04T12:54:54.802404", "valid_ISO_datetime": true, "timezone_aware":
+    false}, {"path": "data/normalized_yaml/algae/abm.yaml", "field_path": "ingredients[5].curation_metadata.curation_date",
+    "value": "2026-04-04T12:54:54.802407", "valid_ISO_datetime": true, "timezone_aware":
+    false}]'
+- assessment_id: quantities
+  area: quantity
+  topic: Every stored ingredient/stock quantity and source-stage dependency
+  outcome: concern
+  summary: Thirty decisions cover all six current PIV quantities, all other source
+    stock/direct constituents, nine stock doses, both intermediate B12 aliquots, final
+    volume, pH and titrant strengths. Explicit stock and final-volume bases support
+    the displayed arithmetic; fixed titrant volumes remain not quantified. No source
+    version or chemical form is silently substituted.
+  target_ids:
+  - CultureMech:000040
+  evidence_ids:
+  - record
+  - owner-0
+  - quantity-1
+  - quantity-2
+  - quantity-3
+  - quantity-4
+  - quantity-5
+  - quantity-6
+  - quantity-7
+  - quantity-8
+  - quantity-9
+  - quantity-10
+  - quantity-11
+  - quantity-12
+  - quantity-13
+  - quantity-14
+  - quantity-15
+  - quantity-16
+  - quantity-17
+  - quantity-18
+  - quantity-19
+  - quantity-20
+  - quantity-21
+  - quantity-22
+  - quantity-23
+  - quantity-24
+  - quantity-25
+  - quantity-26
+  - quantity-27
+  - quantity-28
+  - quantity-29
+  - quantity-30
+  details: '[{"field_path": "ingredients[0].concentration", "name": "Na EDTA", "current":
+    {"value": "0.75", "unit": "G_PER_L"}, "decision": "correct", "source_key": "ccapABM",
+    "source_quote": "Na2EDTA      0.75 g", "source_locator": "page 1, stock 7 PIV
+    row 1; header per litre", "preparation_stage": "PIV stock 7", "decision_rationale":
+    "The local mass-per-liter number matches PIV stock strength, but its placement
+    as a direct ABM concentration is wrong. The receiving medium uses 6 mL PIV and
+    is made up to 1 L.", "evidence_id": "quantity-1", "arithmetic_separate_from_quote":
+    "0.75 g/L stock ×0.006L /1L final medium = 0.0045 g/L; source dose and final basis
+    are separately quoted in the inventory."}, {"field_path": "ingredients[1].concentration",
+    "name": "FeCl3 x 6 H2O", "current": {"value": "0.097", "unit": "G_PER_L"}, "decision":
+    "correct", "source_key": "ccapABM", "source_quote": "FeCl3.6H2O      0.097 g",
+    "source_locator": "page 1, stock 7 PIV row 2; header per litre", "preparation_stage":
+    "PIV stock 7", "decision_rationale": "The local mass-per-liter number matches
+    PIV stock strength, but its placement as a direct ABM concentration is wrong.
+    The receiving medium uses 6 mL PIV and is made up to 1 L.", "evidence_id": "quantity-2",
+    "arithmetic_separate_from_quote": "0.097 g/L stock ×0.006L /1L final medium =
+    0.000582 g/L; source dose and final basis are separately quoted in the inventory."},
+    {"field_path": "ingredients[2].concentration", "name": "MnCl2 x 4 H2O", "current":
+    {"value": "0.041", "unit": "G_PER_L"}, "decision": "correct", "source_key": "ccapABM",
+    "source_quote": "MnCl2.4H2O      0.041 g", "source_locator": "page 1, stock 7
+    PIV row 3; header per litre", "preparation_stage": "PIV stock 7", "decision_rationale":
+    "The local mass-per-liter number matches PIV stock strength, but its placement
+    as a direct ABM concentration is wrong. The receiving medium uses 6 mL PIV and
+    is made up to 1 L.", "evidence_id": "quantity-3", "arithmetic_separate_from_quote":
+    "0.041 g/L stock ×0.006L /1L final medium = 0.000246 g/L; source dose and final
+    basis are separately quoted in the inventory."}, {"field_path": "ingredients[3].concentration",
+    "name": "ZnCl2", "current": {"value": "0.005", "unit": "G_PER_L"}, "decision":
+    "correct", "source_key": "ccapABM", "source_quote": "ZnCl2       0.005 g", "source_locator":
+    "page 1, stock 7 PIV row 4; header per litre", "preparation_stage": "PIV stock
+    7", "decision_rationale": "The local mass-per-liter number matches PIV stock strength,
+    but its placement as a direct ABM concentration is wrong. The receiving medium
+    uses 6 mL PIV and is made up to 1 L.", "evidence_id": "quantity-4", "arithmetic_separate_from_quote":
+    "0.005 g/L stock ×0.006L /1L final medium = 0.00003 g/L; source dose and final
+    basis are separately quoted in the inventory."}, {"field_path": "ingredients[4].concentration",
+    "name": "CoCl2 x 6 H2O", "current": {"value": "0.002", "unit": "G_PER_L"}, "decision":
+    "correct", "source_key": "ccapABM", "source_quote": "CoCl2.6H2O      0.002 g",
+    "source_locator": "page 1, stock 7 PIV row 5; header per litre", "preparation_stage":
+    "PIV stock 7", "decision_rationale": "The local mass-per-liter number matches
+    PIV stock strength, but its placement as a direct ABM concentration is wrong.
+    The receiving medium uses 6 mL PIV and is made up to 1 L.", "evidence_id": "quantity-5",
+    "arithmetic_separate_from_quote": "0.002 g/L stock ×0.006L /1L final medium =
+    0.000012 g/L; source dose and final basis are separately quoted in the inventory."},
+    {"field_path": "ingredients[5].concentration", "name": "Na2MoO4 x 2 H2O", "current":
+    {"value": "0.004", "unit": "G_PER_L"}, "decision": "correct", "source_key": "ccapABM",
+    "source_quote": "Na2MoO4.2H2O     0.004 g", "source_locator": "page 1, stock 7
+    PIV row 6; header per litre", "preparation_stage": "PIV stock 7", "decision_rationale":
+    "The local mass-per-liter number matches PIV stock strength, but its placement
+    as a direct ABM concentration is wrong. The receiving medium uses 6 mL PIV and
+    is made up to 1 L.", "evidence_id": "quantity-6", "arithmetic_separate_from_quote":
+    "0.004 g/L stock ×0.006L /1L final medium = 0.000024 g/L; source dose and final
+    basis are separately quoted in the inventory."}, {"field_path": "solutions[source
+    stock 1].composition (missing)", "name": "(1) NaNO3", "current": null, "decision":
+    "add", "source_key": "ccapABM", "source_quote": "(1) NaNO3       7.5 g", "source_locator":
+    "page 1, stock 1 under Stocks per 100 ml", "preparation_stage": "separate major-ion
+    stock", "decision_rationale": "Restore the literal source stock and its separately
+    listed addition dose. Preserve named hydrates, including K2HPO4·3H2O, rather than
+    substituting an anhydrous mass.", "evidence_id": "quantity-7", "arithmetic_separate_from_quote":
+    "7.5g/0.1L stock ×.01L/1L medium = .75g/L final. This is reviewer arithmetic,
+    not quoted text."}, {"field_path": "solutions[source stock 2].composition (missing)",
+    "name": "(2) CaCl2.2H2O", "current": null, "decision": "add", "source_key": "ccapABM",
+    "source_quote": "(2) CaCl2.2H2O      2.5 g", "source_locator": "page 1, stock
+    2 under Stocks per 100 ml", "preparation_stage": "separate major-ion stock", "decision_rationale":
+    "Restore the literal source stock and its separately listed addition dose. Preserve
+    named hydrates, including K2HPO4·3H2O, rather than substituting an anhydrous mass.",
+    "evidence_id": "quantity-8", "arithmetic_separate_from_quote": "2.5g/0.1L stock
+    ×.001L/1L medium = .025g/L final. This is reviewer arithmetic, not quoted text."},
+    {"field_path": "solutions[source stock 3].composition (missing)", "name": "(3)
+    MgSO4.7H2O", "current": null, "decision": "add", "source_key": "ccapABM", "source_quote":
+    "(3) MgSO4.7H2O      7.5 g", "source_locator": "page 1, stock 3 under Stocks per
+    100 ml", "preparation_stage": "separate major-ion stock", "decision_rationale":
+    "Restore the literal source stock and its separately listed addition dose. Preserve
+    named hydrates, including K2HPO4·3H2O, rather than substituting an anhydrous mass.",
+    "evidence_id": "quantity-9", "arithmetic_separate_from_quote": "7.5g/0.1L stock
+    ×.001L/1L medium = .075g/L final. This is reviewer arithmetic, not quoted text."},
+    {"field_path": "solutions[source stock 4].composition (missing)", "name": "(4)
+    K2HPO4.3H2O", "current": null, "decision": "add", "source_key": "ccapABM", "source_quote":
+    "(4) K2HPO4.3H2O      7.5 g", "source_locator": "page 1, stock 4 under Stocks
+    per 100 ml", "preparation_stage": "separate major-ion stock", "decision_rationale":
+    "Restore the literal source stock and its separately listed addition dose. Preserve
+    named hydrates, including K2HPO4·3H2O, rather than substituting an anhydrous mass.",
+    "evidence_id": "quantity-10", "arithmetic_separate_from_quote": "7.5g/0.1L stock
+    ×.001L/1L medium = .075g/L final. This is reviewer arithmetic, not quoted text."},
+    {"field_path": "solutions[source stock 5].composition (missing)", "name": "(5)
+    KH2PO4", "current": null, "decision": "add", "source_key": "ccapABM", "source_quote":
+    "(5) KH2PO4      17.5 g", "source_locator": "page 1, stock 5 under Stocks per
+    100 ml", "preparation_stage": "separate major-ion stock", "decision_rationale":
+    "Restore the literal source stock and its separately listed addition dose. Preserve
+    named hydrates, including K2HPO4·3H2O, rather than substituting an anhydrous mass.",
+    "evidence_id": "quantity-11", "arithmetic_separate_from_quote": "17.5g/0.1L stock
+    ×.001L/1L medium = .175g/L final. This is reviewer arithmetic, not quoted text."},
+    {"field_path": "solutions[source stock 6].composition (missing)", "name": "(6)
+    NaCl", "current": null, "decision": "add", "source_key": "ccapABM", "source_quote":
+    "(6) NaCl       2.5 g", "source_locator": "page 1, stock 6 under Stocks per 100
+    ml", "preparation_stage": "separate major-ion stock", "decision_rationale": "Restore
+    the literal source stock and its separately listed addition dose. Preserve named
+    hydrates, including K2HPO4·3H2O, rather than substituting an anhydrous mass.",
+    "evidence_id": "quantity-12", "arithmetic_separate_from_quote": "2.5g/0.1L stock
+    ×.001L/1L medium = .025g/L final. This is reviewer arithmetic, not quoted text."},
+    {"field_path": "solutions[source stock 8].composition (missing)", "name": "Thiamine
+    hydrochloride", "current": null, "decision": "add", "source_key": "ccapABM", "source_quote":
+    "(8) Vitamin B1 (Thiamine hydrochloride)  0.12 g", "source_locator": "page 1,
+    vitamin stock 8 under per 100 ml", "preparation_stage": "stock 8", "decision_rationale":
+    "Source specifies 0.12 g thiamine hydrochloride per 100 mL, filter sterilized;
+    the final dose is 1 mL.", "evidence_id": "quantity-13", "arithmetic_separate_from_quote":
+    "0.12g/0.1L ×0.001L/1L =0.0012g/L (1.2mg/L)."}, {"field_path": "solutions[source
+    stock 9].composition (missing)", "name": "Cyanocobalamin", "current": null, "decision":
+    "add", "source_key": "ccapABM", "source_quote": "(9) Vitamin B12 (Cyanocobalamin)   0.1
+    g", "source_locator": "page 1, vitamin stock 9 under per 100 ml", "preparation_stage":
+    "initial stock 9", "decision_rationale": "Source specifies 0.1 g cyanocobalamin
+    per 100 mL, then a distinct 1:100 dilution before the 1 mL main-medium dose.",
+    "evidence_id": "quantity-14", "arithmetic_separate_from_quote": "0.1g/0.1L=1g/L
+    initial stock;1mL+99mL gives0.01g/L working stock;1mL into 1 L gives0.00001g/L=10µg/L."},
+    {"field_path": "B12 intermediate aliquot", "name": "Initial stock 9", "current":
+    null, "decision": "add", "source_key": "ccapABM", "source_quote": "Take 1 ml of
+    this solution and add 99 ml deionised water. Filter sterile.", "source_locator":
+    "page 1, instruction immediately after stock 9", "preparation_stage": "B12 intermediate
+    dilution", "decision_rationale": "Preserve the source 1mL addition and resulting
+    intermediate working stock before final dosing. Filter sterilization applies as
+    written; do not skip this dilution.", "evidence_id": "quantity-15"}, {"field_path":
+    "B12 intermediate diluent", "name": "Deionised water", "current": null, "decision":
+    "add", "source_key": "ccapABM", "source_quote": "Take 1 ml of this solution and
+    add 99 ml deionised water. Filter sterile.", "source_locator": "page 1, instruction
+    immediately after stock 9", "preparation_stage": "B12 intermediate dilution",
+    "decision_rationale": "Preserve the source 99mL addition and resulting intermediate
+    working stock before final dosing. Filter sterilization applies as written; do
+    not skip this dilution.", "evidence_id": "quantity-16"}, {"field_path": "ingredients[source
+    ammonium sulfate] (missing)", "name": "Ammonium sulphate", "current": null, "decision":
+    "add", "source_key": "ccapABM", "source_quote": "(NH4)2SO4 (Ammonium sulphate)    0.25
+    g", "source_locator": "page 1, first Medium per litre row", "preparation_stage":
+    "main direct addition", "decision_rationale": "Source explicitly requires 0.25
+    g ammonium sulfate per final litre, absent from both local layers.", "evidence_id":
+    "quantity-17", "arithmetic_separate_from_quote": "0.25g/1L final =0.25g/L."},
+    {"field_path": "solutions[source stock 1].concentration (missing)", "name": "Stock1",
+    "current": null, "decision": "add", "source_key": "ccapABM", "source_quote": "Stock
+    solution 1      10 ml", "source_locator": "page 1, Medium per litre stock-dose
+    row applicable to stock 1", "preparation_stage": "main stock addition", "decision_rationale":
+    "Retain literal dose 10mL per final litre with the named stock boundary.", "evidence_id":
+    "quantity-18"}, {"field_path": "solutions[source stock 2].concentration (missing)",
+    "name": "Stock2", "current": null, "decision": "add", "source_key": "ccapABM",
+    "source_quote": "Stock solutions 2 – 6     1 ml each", "source_locator": "page
+    1, Medium per litre stock-dose row applicable to stock 2", "preparation_stage":
+    "main stock addition", "decision_rationale": "Retain literal dose 1mL per final
+    litre with the named stock boundary.", "evidence_id": "quantity-19"}, {"field_path":
+    "solutions[source stock 3].concentration (missing)", "name": "Stock3", "current":
+    null, "decision": "add", "source_key": "ccapABM", "source_quote": "Stock solutions
+    2 – 6     1 ml each", "source_locator": "page 1, Medium per litre stock-dose row
+    applicable to stock 3", "preparation_stage": "main stock addition", "decision_rationale":
+    "Retain literal dose 1mL per final litre with the named stock boundary.", "evidence_id":
+    "quantity-20"}, {"field_path": "solutions[source stock 4].concentration (missing)",
+    "name": "Stock4", "current": null, "decision": "add", "source_key": "ccapABM",
+    "source_quote": "Stock solutions 2 – 6     1 ml each", "source_locator": "page
+    1, Medium per litre stock-dose row applicable to stock 4", "preparation_stage":
+    "main stock addition", "decision_rationale": "Retain literal dose 1mL per final
+    litre with the named stock boundary.", "evidence_id": "quantity-21"}, {"field_path":
+    "solutions[source stock 5].concentration (missing)", "name": "Stock5", "current":
+    null, "decision": "add", "source_key": "ccapABM", "source_quote": "Stock solutions
+    2 – 6     1 ml each", "source_locator": "page 1, Medium per litre stock-dose row
+    applicable to stock 5", "preparation_stage": "main stock addition", "decision_rationale":
+    "Retain literal dose 1mL per final litre with the named stock boundary.", "evidence_id":
+    "quantity-22"}, {"field_path": "solutions[source stock 6].concentration (missing)",
+    "name": "Stock6", "current": null, "decision": "add", "source_key": "ccapABM",
+    "source_quote": "Stock solutions 2 – 6     1 ml each", "source_locator": "page
+    1, Medium per litre stock-dose row applicable to stock 6", "preparation_stage":
+    "main stock addition", "decision_rationale": "Retain literal dose 1mL per final
+    litre with the named stock boundary.", "evidence_id": "quantity-23"}, {"field_path":
+    "solutions[source stock 7].concentration (missing)", "name": "Stock7", "current":
+    null, "decision": "add", "source_key": "ccapABM", "source_quote": "Stock solution
+    7 (Trace elements)   6 ml", "source_locator": "page 1, Medium per litre stock-dose
+    row applicable to stock 7", "preparation_stage": "main stock addition", "decision_rationale":
+    "Retain literal dose 6mL per final litre with the named stock boundary.", "evidence_id":
+    "quantity-24"}, {"field_path": "solutions[source stock 8].concentration (missing)",
+    "name": "Stock8", "current": null, "decision": "add", "source_key": "ccapABM",
+    "source_quote": "Stock solutions 8 - 9     1 ml each", "source_locator": "page
+    1, Medium per litre stock-dose row applicable to stock 8", "preparation_stage":
+    "main stock addition", "decision_rationale": "Retain literal dose 1mL per final
+    litre with the named stock boundary.", "evidence_id": "quantity-25"}, {"field_path":
+    "solutions[source stock 9].concentration (missing)", "name": "Stock9", "current":
+    null, "decision": "add", "source_key": "ccapABM", "source_quote": "Stock solutions
+    8 - 9     1 ml each", "source_locator": "page 1, Medium per litre stock-dose row
+    applicable to stock 9", "preparation_stage": "main stock addition", "decision_rationale":
+    "Retain literal dose 1mL per final litre. Stock9 means the explicitly diluted
+    B12 working stock, not its initial 1 g/L solution.", "evidence_id": "quantity-26"},
+    {"field_path": "final solvent volume (missing)", "name": "Deionised water", "current":
+    null, "decision": "add", "source_key": "ccapABM", "source_quote": "The stock solutions
+    are those for 3N-BBM+V. Make up to 1 litre with deionised water and adjust", "source_locator":
+    "page 1, final-medium make-up sentence", "preparation_stage": "main final-volume
+    adjustment", "decision_rationale": "Make up to 1 litre with deionised water. This
+    is an explicit receiving final volume, unlike a mere listed water addition; no
+    fixed water mass or exact water aliquot is inferred.", "evidence_id": "quantity-27"},
+    {"field_path": "ph_value (missing)", "name": "pH 3.0", "current": null, "decision":
+    "add", "source_key": "ccapABM", "source_quote": "the pH to 3.0 with 1M NaOH or
+    1M HCl. Autoclave at 15 psi for 15 minutes.", "source_locator": "page 1, final
+    preparation sentence", "preparation_stage": "main pH adjustment", "decision_rationale":
+    "Retain source pH 3.0 and the stated 1 M titrant options. The source does not
+    quantify titrant addition volumes; no fixed amount or replacement reagent is inferred.",
+    "evidence_id": "quantity-28"}, {"field_path": "pH adjustment NaOH strength (missing)",
+    "name": "1M NaOH", "current": null, "decision": "add", "source_key": "ccapABM",
+    "source_quote": "the pH to 3.0 with 1M NaOH or 1M HCl. Autoclave at 15 psi for
+    15 minutes.", "source_locator": "page 1, final preparation sentence", "preparation_stage":
+    "main pH adjustment", "decision_rationale": "Retain source pH 3.0 and the stated
+    1 M titrant options. The source does not quantify titrant addition volumes; no
+    fixed amount or replacement reagent is inferred.", "evidence_id": "quantity-29"},
+    {"field_path": "pH adjustment HCl strength (missing)", "name": "1M HCl", "current":
+    null, "decision": "add", "source_key": "ccapABM", "source_quote": "the pH to 3.0
+    with 1M NaOH or 1M HCl. Autoclave at 15 psi for 15 minutes.", "source_locator":
+    "page 1, final preparation sentence", "preparation_stage": "main pH adjustment",
+    "decision_rationale": "Retain source pH 3.0 and the stated 1 M titrant options.
+    The source does not quantify titrant addition volumes; no fixed amount or replacement
+    reagent is inferred.", "evidence_id": "quantity-30"}]'
+- assessment_id: evidence
+  area: evidence
+  topic: Claim-level evidence and reference diagnostic coverage
+  outcome: concern
+  summary: Source citations/notes identify provenance but do not place exact quantity
+    evidence on the local ingredient or stock claims. The reference validator actually
+    checked zero evidence references; its passing result does not authenticate source
+    amounts. This review provides literal snippets and locators for all assessed quantities.
+    Follow-up should attach narrow amount evidence and source metadata without inventing
+    new schema slots.
+  target_ids:
+  - CultureMech:000040
+  evidence_ids:
+  - record
+  - owner-0
+  - validate-references
+  - source-catalog
+- assessment_id: organisms
+  area: scope
+  topic: Bounded biological claims and absent optional entities
+  outcome: not_applicable
+  summary: Neither reviewed layer asserts organism/strain identifiers, assemblies,
+    DOI/PMID citations, growth outcomes, variants, parent-media relationships or KG-Microbe
+    matches. Catalogue use and generic applications do not establish strain-specific
+    growth or optimal conditions. No organisms or variants are added merely to fill
+    optional slots.
+  target_ids:
+  - CultureMech:000040
+  evidence_ids:
+  - record
+  - owner-0
+findings:
+- finding_id: f1
+  issue_key: cm000040-piv-stock-misrepresented-as-abm
+  category: representation
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: The named ABM medium contains only undiluted PIV stock
+  description: Both local layers retain only the six ingredients of source stock 7
+    at their stock-strength values. The complete current ABM requires six major-ion
+    stocks, two vitamin stocks with an intermediate B12 dilution, 0.25 g/L direct
+    ammonium sulfate and only 6 mL/L PIV. Missing these constituents and boundaries
+    makes the represented formulation denote only a subordinate stock rather than
+    the named medium. COMPLEX/UNDEFINED also lacks support in the full current salt/vitamin
+    recipe. Current-source revision is explicit; no historical PDF equivalence is
+    asserted.
+  target_ids:
+  - CultureMech:000040
+  field_paths:
+  - ingredients
+  - solutions
+  - medium_type
+  - composition_type
+  - data_quality_flags
+  evidence_ids:
+  - record
+  - owner-0
+  - ccapABM
+  - stock-basis
+  - final-basis
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/abm.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P1
+  normalization_reason: Native P1 reflects a materially wrong scientific representation
+    of the named medium as only one subordinate stock. All four deterministic checks
+    pass, so this is not a P1.1 schema failure.
+- finding_id: f2
+  issue_key: cm000040-generic-culture-conditions-unsupported
+  category: scope
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generic light and temperature recommendations lack ABM evidence
+  description: The local 50–100 µmol photons m−2 s−1 intensity, 12:12/16:8 cycles
+    and 15–30°C range are absent from the exact current source and appear as literal
+    generic defaults in the CCAP importer. The freshwater suitability sentence is
+    also a default. These fields must not be presented as ABM-specific growth guidance;
+    the adaptation citation does not verify them without its methods.
+  target_ids:
+  - CultureMech:000040
+  field_paths:
+  - light_intensity
+  - light_cycle
+  - temperature_range
+  - description
+  evidence_ids:
+  - record
+  - owner-0
+  - ccapABM
+  - importer
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/abm.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: cm000040-source-acidic-preparation-omitted
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Acidic pH and exact stock-processing instructions are missing
+  description: The current source explicitly requires pH 3.0, 1 M titrant options,
+    ordered PIV assembly, stock/final autoclaving at 15 psi for 15 min, and separate
+    vitamin filtration including B12 dilution. Neither layer records these instructions.
+    The omitted acidic pH and processing materially impair reproduction of this named
+    formulation.
+  target_ids:
+  - CultureMech:000040
+  field_paths:
+  - ph_value
+  - preparation_steps
+  - solutions
+  evidence_ids:
+  - record
+  - owner-0
+  - ccapABM
+  - final-basis
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/abm.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.5
+  native_severity: P3
+  normalization_reason: P3.5 is normalized to major because a concrete available source
+    protocol and defining acidic pH are omitted, impairing reproducibility. P3.4 is
+    the related missing-preparation rule; no generic sterilization recommendation
+    is being substituted.
+- finding_id: f4
+  issue_key: cm000040-naive-provenance-timestamps
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Inherited curation timestamps lack timezone information
+  description: Two history events and six ingredient-curation dates in each layer
+    lack timezone, for 16 instances across target and owner. They cannot establish
+    unambiguous historical instants. The independent source capture and review chronology
+    remain explicit UTC.
+  target_ids:
+  - CultureMech:000040
+  field_paths:
+  - curation_history[2].timestamp
+  - curation_history[5].timestamp
+  - ingredients[].curation_metadata.curation_date
+  evidence_ids:
+  - record
+  - owner-0
+  - history
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/abm.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Reconstruct the complete current source formulation in the normalized
+    owner with all stock strengths/doses, nested B12 dilution, direct ammonium sulfate
+    and exact forms; reassess classification/quality flags and preserve the source-version
+    distinction. Attach narrow evidence, then regenerate only with separate authorization.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:000040
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/abm.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Remove or explicitly scope unsupported generic defaults in the maintained
+    owner/transform unless exact ABM-specific evidence is obtained. Preserve catalogue
+    identity without inventing organism performance.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:000040
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/abm.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Recover the exact source sequence, stock boundaries and pH while retaining
+    its pressure/time units and unspecified titrant amounts. Do not substitute inferred
+    temperature, storage or post-autoclave timing.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:000040
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/abm.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Preserve old raw timestamps. Append an evidenced clarification only
+    if an independent source establishes the timezone; do not rewrite history or assume
+    local time was UTC.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:000040
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/abm.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- The inspected PDF is revision 002, approved/reviewed 29 May 2026. Local expansion
+  occurred 4 April 2026. Current-source disagreement does not establish the contents
+  of the earlier PDF or prove exactly how the historical extraction occurred.
+- CCAP identifies this as an adaptation of the Pollio et al. 2005 paper. That paper
+  was not independently retrieved or used for recipe, strain or growth claims; no
+  DOI/PMID or taxon was inferred from its title.
+- The current PDF fully specifies the stocks it calls those for 3N-BBM+V. No historical
+  or other-source 3N-BBM formulation was silently substituted, and no internal stock
+  ID is invented.
+- Explicit stock masses, stock bases, nested B12 dilution, addition doses and final
+  make-up volume are separate. Source pH-titrant strengths do not specify their eventual
+  added volumes.
+- Na2EDTA does not explicitly state hydration; the asserted term is anhydrous. Preserve
+  that material-form limit instead of inventing a hydrate or mass correction. Confidence
+  1.0 is an automated annotation, not proof of chemical/source accuracy.
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+tags:
+- unreviewed-records
+- batch-014
+- generated-medium
+```
