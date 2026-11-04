@@ -21,8 +21,8 @@ Curate typed, evidence-backed growth-media causal mechanism edges (`CausalEdge`)
 
 1. **Authoritative input layer**: Write only to `data/normalized_yaml/` via `scripts/apply_causal_graphs.py` (which validates via `src/culturemech/validation/write_validated.py` and appends a `curation_history` event). Never edit `data/merge_yaml/`, `app/`, `pages/`, or `output/kgx/` directly.
 2. **Ontology-grounded causal endpoints**:
-   - `id` MUST be a unique non-empty edge identifier within the record (e.g., `CultureMech:001645_causal_1`).
-   - `subject_term` and `object_term` MUST be `CausalTerm` mappings (`id` + non-empty `label`) using an allowed CURIE prefix (`CHEBI`, `NCBITaxon`, `GO`, `RO`, `METPO`, `ENVO`, `PATO`, `UBERON`, `FOODON`, `NCIT`, `UniProtKB`, `EC`, `KEGG`, `MICRO`, `CultureMech`, `MediaIngredientMech`).
+   - `id` MUST be a unique non-empty edge identifier within the record matching `^(edge_[A-Za-z0-9_.-]+|CausalEdge:[A-Za-z0-9_.-]+)$` (e.g., `edge_methane_enables_growth`).
+   - `subject_term` and `object_term` MUST be `CausalTerm` mappings (`id` + non-empty `label`) using an allowed CURIE prefix (`CHEBI`, `NCBITaxon`, `GO`, `UniProtKB`, `EC`, `KEGG`, `METPO`, `ENVO`, `PATO`, `NCIT`, `FOODON`, `UBERON`, `MICRO`, `CultureMech`, `MediaIngredientMech`).
    - Self-loops (`subject_term.id == object_term.id`) and bare ingredient-role enum tokens (`CARBON_SOURCE`, `BUFFER`, etc.) are rejected.
    - For ontologies with local OAK SQLite adapters (`CHEBI`, `NCBITaxon`, `ENVO`, `UBERON`, `NCIT`, `FOODON`), `label` MUST match the canonical ontology label (verified by `scripts/validate_id_label_correspondence.py`).
 3. **Organism and protein scoping**:
@@ -43,7 +43,7 @@ Curate typed, evidence-backed growth-media causal mechanism edges (`CausalEdge`)
 ### Example `CausalEdge` Entry
 
 ```yaml
-id: CultureMech:001645_causal_1
+id: edge_methane_enables_growth
 subject_term:
   id: CHEBI:16183
   label: methane
@@ -78,7 +78,7 @@ proposals:
     organism_taxon_id: NCBITaxon:414
     source_note: PMID:2113044 methane growth mechanism in NMS medium
     causal_edge:
-      id: CultureMech:001645_causal_1
+      id: edge_methane_enables_growth
       subject_term:
         id: CHEBI:16183
         label: methane

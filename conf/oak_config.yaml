@@ -52,6 +52,7 @@ ontology_adapters:
   MICRO: ""
   CultureMech: ""
   MediaIngredientMech: ""
+  CausalEdge: ""
 
   # Suppliers - Skip validation
   sigma: ""

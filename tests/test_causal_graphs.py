@@ -473,6 +473,91 @@ def test_id_label_targets_and_oak_config_cover_causal_graph_prefixes() -> None:
     ignored = set(targets.get("ignored_prefixes") or [])
     adapters = set((oak_cfg.get("ontology_adapters") or {}).keys())
 
-    for prefix in ("GO", "RO", "METPO", "PATO", "EC", "KEGG", "UniProtKB"):
+    for prefix in ("GO", "RO", "METPO", "PATO", "EC", "KEGG", "UniProtKB", "CausalEdge"):
         assert prefix in ignored
         assert prefix in adapters
+
+
+def test_apply_causal_graphs_organism_scope_fallback_and_dedup(tmp_path: Path) -> None:
+    yaml_dir = tmp_path / "data" / "normalized_yaml" / "bacterial"
+    yaml_dir.mkdir(parents=True)
+    recipe_path = yaml_dir / "test_multi_org_recipe.yaml"
+    recipe = _minimal_recipe()
+    recipe["target_organisms"] = [
+        {
+            "preferred_term": "Bacillus subtilis",
+            "term": {"id": "NCBITaxon:1423", "label": "Bacillus subtilis"},
+        },
+        {
+            "preferred_term": "Escherichia coli K-12",
+            "term": {"id": "NCBITaxon:83333", "label": "Escherichia coli K-12"},
+        },
+    ]
+    recipe_path.write_text(yaml.safe_dump(recipe, sort_keys=False), encoding="utf-8")
+
+    # 1. Organism-scoped proposal omitting organism_taxon_id resolves via causal_edge.organism_term.id
+    #    to target_organisms[1] (NCBITaxon:83333), not target_organisms[0].
+    proposals_fallback = [
+        {
+            "recipe_id": "CultureMech:000001",
+            "target_scope": "organism",
+            "source_note": "PMID:12345678 organism fallback test",
+            "causal_edge": _valid_causal_edge(edge_id="CausalEdge:glucose_pos_reg_growth"),
+        }
+    ]
+    touched, written = apply_causal_graphs.apply_proposals_to_directory(
+        proposals_fallback, yaml_dir, dry_run=False
+    )
+    assert (touched, written) == (1, 1)
+
+    reloaded = yaml.safe_load(recipe_path.read_text(encoding="utf-8"))
+    assert "causal_graphs" not in reloaded["target_organisms"][0]
+    assert len(reloaded["target_organisms"][1]["causal_graphs"]) == 1
+    assert (
+        reloaded["target_organisms"][1]["causal_graphs"][0]["id"]
+        == "CausalEdge:glucose_pos_reg_growth"
+    )
+
+    # 2. Deduplication matches when a second proposal has a different id but identical
+    #    (subject, predicate, object, organism) tuple, and _dedup_append also treats an
+    #    existing entry without organism_term as inheriting enclosing_org.
+    same_tuple_edge = _valid_causal_edge(edge_id="edge_different_id_same_tuple")
+    proposals_dedup = [
+        {
+            "recipe_id": "CultureMech:000001",
+            "target_scope": "organism",
+            "organism_taxon_id": "NCBITaxon:83333",
+            "causal_edge": same_tuple_edge,
+        }
+    ]
+    touched2, written2 = apply_causal_graphs.apply_proposals_to_directory(
+        proposals_dedup, yaml_dir, dry_run=False
+    )
+    assert (touched2, written2) == (0, 0)
+
+    inherited_existing = _valid_causal_edge(edge_id="edge_inherited_org", organism_id=None)
+    bucket_with_inherited = [inherited_existing]
+    assert (
+        apply_causal_graphs._dedup_append(
+            bucket_with_inherited,
+            same_tuple_edge,
+            enclosing_org="NCBITaxon:83333",
+        )
+        is False
+    )
+
+    # 3. Organism-scoped proposal omitting both organism_taxon_id and causal_edge.organism_term.id fails.
+    proposals_missing_both = [
+        {
+            "recipe_id": "CultureMech:000001",
+            "target_scope": "organism",
+            "causal_edge": inherited_existing,
+        }
+    ]
+    with pytest.raises(
+        ValueError,
+        match="requires 'organism_taxon_id' or 'causal_edge.organism_term.id'",
+    ):
+        apply_causal_graphs.apply_proposals_to_directory(
+            proposals_missing_both, yaml_dir, dry_run=True
+        )

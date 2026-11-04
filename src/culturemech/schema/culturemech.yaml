@@ -50,6 +50,7 @@ prefixes:
   RO: http://purl.obolibrary.org/obo/RO_
   METPO: http://purl.obolibrary.org/obo/METPO_
   PATO: http://purl.obolibrary.org/obo/PATO_
+  CausalEdge: https://w3id.org/culturemech/CausalEdge/
   # Data repositories
   geo: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=
   sra: https://www.ncbi.nlm.nih.gov/sra/

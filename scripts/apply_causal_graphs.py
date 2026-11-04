@@ -15,7 +15,7 @@ Input batch YAML format:
       organism_taxon_id: NCBITaxon:83333
       source_note: PMID:12345678 causal mechanism curation
       causal_edge:
-        id: CultureMech:001234_causal_1
+        id: edge_glucose_enables_growth
         subject_term:
           id: CHEBI:17234
           label: D-glucose
@@ -84,7 +84,9 @@ def _assert_normalized_yaml_scope(yaml_dir: Path) -> None:
         )
 
 
-def _edge_signature(ce: dict[str, Any]) -> tuple[str | None, str | None, str | None, str | None]:
+def _edge_signature(
+    ce: dict[str, Any], enclosing_org: str | None = None
+) -> tuple[str | None, str | None, str | None, str | None]:
     st = ce.get("subject_term") or {}
     ot = ce.get("object_term") or {}
     org = ce.get("organism_term") or {}
@@ -92,18 +94,25 @@ def _edge_signature(ce: dict[str, Any]) -> tuple[str | None, str | None, str | N
         st.get("id") if isinstance(st, dict) else None,
         ce.get("predicate"),
         ot.get("id") if isinstance(ot, dict) else None,
-        org.get("id") if isinstance(org, dict) else None,
+        (org.get("id") if isinstance(org, dict) else None) or enclosing_org,
     )
 
 
-def _dedup_append(target_list: list[dict[str, Any]], ce: dict[str, Any]) -> bool:
+def _dedup_append(
+    target_list: list[dict[str, Any]],
+    ce: dict[str, Any],
+    enclosing_org: str | None = None,
+) -> bool:
     """Append `ce` to `target_list` if neither `id` nor `(subject, predicate, object, organism)` is present."""
     new_id = ce.get("id")
-    new_sig = _edge_signature(ce)
+    new_sig = _edge_signature(ce, enclosing_org=enclosing_org)
     for existing in target_list:
         if not isinstance(existing, dict):
             continue
-        if existing.get("id") == new_id or _edge_signature(existing) == new_sig:
+        if (
+            existing.get("id") == new_id
+            or _edge_signature(existing, enclosing_org=enclosing_org) == new_sig
+        ):
             return False
     target_list.append(copy.deepcopy(ce))
     return True
@@ -120,6 +129,15 @@ def _apply_proposal_to_recipe(recipe: dict[str, Any], proposal: dict[str, Any]) 
 
     if scope not in ("recipe", "organism"):
         raise ValueError(f"Unsupported target_scope={scope!r}; expected 'recipe' or 'organism'.")
+
+    if scope == "organism" and not org_taxon:
+        org_term = ce.get("organism_term")
+        if isinstance(org_term, dict):
+            org_taxon = org_term.get("id")
+        if not org_taxon:
+            raise ValueError(
+                "Organism-scoped proposal requires 'organism_taxon_id' or 'causal_edge.organism_term.id'."
+            )
 
     enclosing_org = org_taxon if scope == "organism" else None
     issues = validate_causal_edge_entry(
@@ -145,11 +163,11 @@ def _apply_proposal_to_recipe(recipe: dict[str, Any], proposal: dict[str, Any]) 
         if not isinstance(org, dict):
             continue
         term = org.get("term") or {}
-        if org_taxon and term.get("id") != org_taxon:
+        if term.get("id") != org_taxon:
             continue
 
         bucket = org.setdefault("causal_graphs", [])
-        if _dedup_append(bucket, ce):
+        if _dedup_append(bucket, ce, enclosing_org=org_taxon):
             return (
                 f"Added target_organisms ({term.get('id')}) causal_graphs entry "
                 f"{edge_id} ({subj_id} {pred} {obj_id})"

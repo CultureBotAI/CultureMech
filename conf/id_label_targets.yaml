@@ -85,6 +85,7 @@ ignored_prefixes:
   - PATO                   # Phenotype And Trait Ontology terms in CausalEdge
   - EC                     # Enzyme Commission identifiers in CausalEdge
   - KEGG                   # KEGG compound/orthology/pathway identifiers in CausalEdge
+  - CausalEdge             # Stable CausalEdge record identifiers (CausalEdge:<slug>)
 
 synonym_scope: exact_related
 
