@@ -1,0 +1,1586 @@
+# Source and formulation review: 1650_medium_for_strain_j5b (CultureMech:001132)
+
+- Review: 20261020T033754Z-culturemech-001132-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-19T23:40:57Z
+- Finished UTC: 2026-10-20T03:37:54Z
+- Reviewer: OpenAI Codex with delegated source and validator checks (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+DSMZ 1650 identity is resolved, but five stock formulations have been flattened into direct medium ingredients at stock strength. Additional findings concern nickel hydration, an unsupported acid mass conversion, an unresolved source acetate-strength conflict, and preparation statements detached from their stocks. Completion is partial because the asserted legacy nitrate identifier could not be verified against an authoritative historical registry.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Record 24 in Python lexicographic repository-relative path order of the initially uncovered merged corpus; Batch 003 selects ordinals 21-30 after the first two reserved batches; saved bundles are published locally in path order. On fresh origin/main at this batch base, scripts/record_review.py list validated 34 existing bundles and none listed this target path or ID. This bundle selects only the named record; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 7c568537897ee4bba1b8e97f8172133c1572aec0.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:001132 | data/merge_yaml/merged/1650_medium_for_strain_j5b.yaml | generated | 1650_medium_for_strain_j5b |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:001132 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:001132 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-003/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch003/024/strict.tsv |
+| validate-terms | passed | True | CultureMech:001132 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:001132 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:001132 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Historical MIM identifier verification | unavailable | True | CultureMech:001132 | Authoritative historical resolution of MediaIngredientMech:000171 unavailable in inspected registry and bounded search. The separately verified primary sodium nitrate CHEBI ID does not prove legacy-ID equivalence. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:001132.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Exact medium accession and source variant
+
+identity: supported. Targets: CultureMech:001132.
+
+CultureMech:001132 denotes DSMZ 1650, Medium for Strain J5B, with one maintained source and matching source URL. The name J5B is source naming context, not a resolved organism accession or an asserted experimental growth result.
+
+### Every direct amount, stock boundary and volume basis
+
+quantity: concern. Targets: CultureMech:001132.
+
+Seven main component values agree with provider main-solution g_l; 24 other values are stock-level quantities incorrectly flattened into the medium. Every direct amount is accounted for below.
+
+ingredients[0] Na2S2O3 x 5 H2O: verified within provider main-recipe scope. Stored 2.5 G_PER_L equals API $.data.solutions[0].recipe[0].g_l; source amount 2.5 g; API solution id=3414, reported volume=1000 mL. No receiving-medium normalization follows solely from that equality.
+ingredients[1] NaNO3: verified within provider main-recipe scope. Stored 0.85 G_PER_L equals API $.data.solutions[0].recipe[1].g_l; source amount 0.85 g; API solution id=3414, reported volume=1000 mL. No receiving-medium normalization follows solely from that equality.
+ingredients[2] MgSO4 x 7 H2O: verified within provider main-recipe scope. Stored 0.5 G_PER_L equals API $.data.solutions[0].recipe[2].g_l; source amount 0.5 g; API solution id=3414, reported volume=1000 mL. No receiving-medium normalization follows solely from that equality.
+ingredients[3] CaCl2 x 2 H2O: verified within provider main-recipe scope. Stored 0.1 G_PER_L equals API $.data.solutions[0].recipe[3].g_l; source amount 0.1 g; API solution id=3414, reported volume=1000 mL. No receiving-medium normalization follows solely from that equality.
+ingredients[4] KH2PO4: verified within provider main-recipe scope. Stored 0.1 G_PER_L equals API $.data.solutions[0].recipe[4].g_l; source amount 0.1 g; API solution id=3414, reported volume=1000 mL. No receiving-medium normalization follows solely from that equality.
+ingredients[5] NH4Cl: verified within provider main-recipe scope. Stored 0.1 G_PER_L equals API $.data.solutions[0].recipe[5].g_l; source amount 0.1 g; API solution id=3414, reported volume=1000 mL. No receiving-medium normalization follows solely from that equality.
+ingredients[6] KCl: verified within provider main-recipe scope. Stored 0.1 G_PER_L equals API $.data.solutions[0].recipe[6].g_l; source amount 0.1 g; API solution id=3414, reported volume=1000 mL. No receiving-medium normalization follows solely from that equality.
+ingredients[7] HCl: correct scope: stock-only value incorrectly asserted as direct medium concentration. Stored 3.125 G_PER_L equals API $.data.solutions[1].recipe[0].g_l; source amount 12.5 ml; API solution id=3415, reported volume=1012 mL. No receiving-medium normalization follows solely from that equality.
+ingredients[8] FeSO4 x 7 H2O: correct scope: stock-only value incorrectly asserted as direct medium concentration. Stored 2.0751 G_PER_L equals API $.data.solutions[1].recipe[1].g_l; source amount 2.1 g; API solution id=3415, reported volume=1012 mL. No receiving-medium normalization follows solely from that equality.
+ingredients[9] ZnSO4 x 7 H2O: correct scope: stock-only value incorrectly asserted as direct medium concentration. Stored 0.142292 G_PER_L equals API $.data.solutions[1].recipe[2].g_l; source amount 0.144 g; API solution id=3415, reported volume=1012 mL. No receiving-medium normalization follows solely from that equality.
+ingredients[10] MnCl2 x 4 H2O: correct scope: stock-only value incorrectly asserted as direct medium concentration. Stored 0.0988142 G_PER_L equals API $.data.solutions[1].recipe[3].g_l; source amount 0.1 g; API solution id=3415, reported volume=1012 mL. No receiving-medium normalization follows solely from that equality.
+ingredients[11] H3BO3: correct scope: stock-only value incorrectly asserted as direct medium concentration. Stored 0.0296443 G_PER_L equals API $.data.solutions[1].recipe[4].g_l; source amount 0.03 g; API solution id=3415, reported volume=1012 mL. No receiving-medium normalization follows solely from that equality.
+ingredients[12] CoCl2 x 6 H2O: correct scope: stock-only value incorrectly asserted as direct medium concentration. Stored 0.187747 G_PER_L equals API $.data.solutions[1].recipe[5].g_l; source amount 0.19 g; API solution id=3415, reported volume=1012 mL. No receiving-medium normalization follows solely from that equality.
+ingredients[13] CuCl2 x 2 H2O: correct scope: stock-only value incorrectly asserted as direct medium concentration. Stored 0.00197628 G_PER_L equals API $.data.solutions[1].recipe[6].g_l; source amount 2 mg; API solution id=3415, reported volume=1012 mL. No receiving-medium normalization follows solely from that equality.
+ingredients[14] NiCl2 x 6 H2O: correct scope: stock-only value incorrectly asserted as direct medium concentration. Stored 0.0237154 G_PER_L equals API $.data.solutions[1].recipe[7].g_l; source amount 0.024 g; API solution id=3415, reported volume=1012 mL. No receiving-medium normalization follows solely from that equality.
+ingredients[15] Na2MoO4 x 2 H2O: correct scope: stock-only value incorrectly asserted as direct medium concentration. Stored 0.0355731 G_PER_L equals API $.data.solutions[1].recipe[8].g_l; source amount 0.036 g; API solution id=3415, reported volume=1012 mL. No receiving-medium normalization follows solely from that equality.
+ingredients[16] NaOH: correct scope: stock-only value incorrectly asserted as direct medium concentration. Stored 0.4 G_PER_L equals API $.data.solutions[2].recipe[0].g_l; source amount 0.4 g; API solution id=4172, reported volume=1000 mL. No receiving-medium normalization follows solely from that equality.
+ingredients[17] Na2SeO3 x 5 H2O: correct scope: stock-only value incorrectly asserted as direct medium concentration. Stored 0.006 G_PER_L equals API $.data.solutions[2].recipe[1].g_l; source amount 6 mg; API solution id=4172, reported volume=1000 mL. No receiving-medium normalization follows solely from that equality.
+ingredients[18] Na2WO4 x 2 H2O: correct scope: stock-only value incorrectly asserted as direct medium concentration. Stored 0.008 G_PER_L equals API $.data.solutions[2].recipe[2].g_l; source amount 8 mg; API solution id=4172, reported volume=1000 mL. No receiving-medium normalization follows solely from that equality.
+ingredients[19] Sodium acetate trihydrate: correct scope: stock-only value incorrectly asserted as direct medium concentration. Stored 13.6 G_PER_L equals API $.data.solutions[3].recipe[0].g_l; source amount 13.6 g; API solution id=3417, reported volume=1000 mL. No receiving-medium normalization follows solely from that equality.
+ingredients[20] NaHCO3: correct scope: stock-only value incorrectly asserted as direct medium concentration. Stored 84 G_PER_L equals API $.data.solutions[4].recipe[0].g_l; source amount 8.4 g; API solution id=3418, reported volume=100 mL. No receiving-medium normalization follows solely from that equality.
+ingredients[21] Biotin: correct scope: stock-only value incorrectly asserted as direct medium concentration. Stored 0.002 G_PER_L equals API $.data.solutions[5].recipe[0].g_l; source amount 2 mg; API solution id=3419, reported volume=1000 mL. No receiving-medium normalization follows solely from that equality.
+ingredients[22] Folic acid: correct scope: stock-only value incorrectly asserted as direct medium concentration. Stored 0.002 G_PER_L equals API $.data.solutions[5].recipe[1].g_l; source amount 2 mg; API solution id=3419, reported volume=1000 mL. No receiving-medium normalization follows solely from that equality.
+ingredients[23] Pyridoxine hydrochloride: correct scope: stock-only value incorrectly asserted as direct medium concentration. Stored 0.01 G_PER_L equals API $.data.solutions[5].recipe[2].g_l; source amount 10 mg; API solution id=3419, reported volume=1000 mL. No receiving-medium normalization follows solely from that equality.
+ingredients[24] Thiamine-HCl x 2 H2O: correct scope: stock-only value incorrectly asserted as direct medium concentration. Stored 0.005 G_PER_L equals API $.data.solutions[5].recipe[3].g_l; source amount 5 mg; API solution id=3419, reported volume=1000 mL. No receiving-medium normalization follows solely from that equality.
+ingredients[25] Riboflavin: correct scope: stock-only value incorrectly asserted as direct medium concentration. Stored 0.005 G_PER_L equals API $.data.solutions[5].recipe[4].g_l; source amount 5 mg; API solution id=3419, reported volume=1000 mL. No receiving-medium normalization follows solely from that equality.
+ingredients[26] Nicotinic acid: correct scope: stock-only value incorrectly asserted as direct medium concentration. Stored 0.005 G_PER_L equals API $.data.solutions[5].recipe[5].g_l; source amount 5 mg; API solution id=3419, reported volume=1000 mL. No receiving-medium normalization follows solely from that equality.
+ingredients[27] D-Calcium pantothenate: correct scope: stock-only value incorrectly asserted as direct medium concentration. Stored 0.005 G_PER_L equals API $.data.solutions[5].recipe[6].g_l; source amount 5 mg; API solution id=3419, reported volume=1000 mL. No receiving-medium normalization follows solely from that equality.
+ingredients[28] Vitamin B12: correct scope: stock-only value incorrectly asserted as direct medium concentration. Stored 0.0001 G_PER_L equals API $.data.solutions[5].recipe[7].g_l; source amount 0.1 mg; API solution id=3419, reported volume=1000 mL. No receiving-medium normalization follows solely from that equality.
+ingredients[29] 4-Aminobenzoic Acid: correct scope: stock-only value incorrectly asserted as direct medium concentration. Stored 0.005 G_PER_L equals API $.data.solutions[5].recipe[8].g_l; source amount 5 mg; API solution id=3419, reported volume=1000 mL. No receiving-medium normalization follows solely from that equality.
+ingredients[30] Lipoic acid: correct scope: stock-only value incorrectly asserted as direct medium concentration. Stored 0.005 G_PER_L equals API $.data.solutions[5].recipe[9].g_l; source amount 5 mg; API solution id=3419, reported volume=1000 mL. No receiving-medium normalization follows solely from that equality.
+Trace stock 3415: source addition 1 mL to main batch. Its eight weighed salts use provider normalization by 1.012 L; literal source adds 1000 mL water plus 12.5 mL acid, not an explicit measured stock final volume. Provider values and literal batch amounts must remain distinguishable. HCl mass conversion is separately unsupported.
+Selenite-tungstate 4172: source addition 1 mL; mg-to-g conversions within stock are dimensionally consistent, but stock concentrations are not direct medium concentrations.
+Acetate 3417: source addition 1 mL, named 1 M; stock amount and API 99.9412 mmol/L conflict with that name. Keep both assertions pending source clarification.
+Bicarbonate 3418: source stock amount 8.4 g with 100 mL water, provider g_l=84; source later addition 30 mL. It is not 84 g/L in the receiving medium.
+Vitamin 3419: source later addition 1 mL; ten component mg quantities map to stock g_l using provider 1000 mL. They are not undiluted direct-medium quantities.
+Five stock additions total 34 mL in source wording. Main water is 1000 mL but API main volume is also 1000 mL. Neither simply summing volumes nor treating additions as included establishes measured final volume. No corrected full medium is synthesized here.
+
+### Primary terms, exact forms and secondary keys
+
+grounding: concern. Targets: CultureMech:001132.
+
+All 31 primary CHEBI IDs resolve, but nickel hexahydrate is assigned anhydrous CHEBI:34887 in both primary and secondary fields. Other inspected forms agree at source specificity; HCl identity alone does not represent its aqueous strength. D-calcium pantothenate is a synonym with stereochemical structure in CHEBI:31345, so its generic display name is not a mismatch. Vitamin B12 class matches unspecified source vitamer. Primary linkage coverage=31/31 (100%); secondary key presence=31/31, but only 30/31 resolve in current index and one of those is wrong supplied form. These are linkage measures, not accuracy scores.
+
+### Main versus stock preparation scope
+
+representation: concern. Targets: CultureMech:001132.
+
+Main pH range and atmosphere/vessel/post-sterilization instructions are retained in prose. Later steps 3 and 4 come from acetate and bicarbonate stock sections but lose those subjects when inserted into one main sequence; the vitamin filtering step names its subject. A whole-medium sequential reading is unsupported.
+
+### Defined liquid medium and growth scope
+
+scope: supported. Targets: CultureMech:001132.
+
+The source is a defined liquid formulation without complex nutrient extract or agar; DEFINED/DEFINED/LIQUID and pH 7.0–7.2 match the source. The unresolved acetate strength limits exact formulation, not the classification as chemically defined. Generic microbial cultivation and source name do not constitute verified strain growth; no taxon or new growth outcome is inferred.
+
+### Maintained source and stock-context leads
+
+ownership: supported. Targets: CultureMech:001132.
+
+Target and maintained medium owner share the formulation and preparation defects. Local solution IDs resolve as source-accession leads, but the target asserts no structured references to them. Do not claim broken local links or certify these stock records based on key matches. Future medium changes belong in the normalized owner, followed by separately authorized regeneration; current merge code is not proven to have originated the import flattening.
+
+## Findings
+
+### f1: Five stock formulations are flattened at stock strength
+
+blocker / open / confirmed; issue key: culturemech-001132-flattened-stock-formulations.
+
+The target exposes 24 stock components as direct medium ingredients, alongside seven actual main components. The source instead defines five separately dosed stocks. Some doses survive in prose, but neither scoped stock composition nor receiving-medium concentrations are represented. The encoded composition therefore denotes a materially different formulation.
+
+### f2: Nickel hexahydrate is grounded to anhydrous nickel chloride
+
+major / open / confirmed; issue key: culturemech-001132-nickel-hydrate-grounding.
+
+Source and preferred_term specify NiCl2 x 6 H2O. CHEBI:34887 has formula Cl2Ni and represents nickel dichloride without the six waters, in both asserted primary and secondary keys. The term label is canonical for the wrong supplied form.
+
+### f3: Acid volume and percentage are replaced by an unsupported mass concentration
+
+major / open / confirmed; issue key: culturemech-001132-hcl-percent-volume-conversion.
+
+Source trace recipe specifies HCl (25%) as 12.5 mL. The target copies API 3.125 g/L but loses concentration attribute and stock scope. Source does not establish percentage basis or density required to derive an acid mass from that volume. API numerical presence does not supply the missing chemical conversion evidence.
+
+### f4: Source acetate strength conflict is not disclosed
+
+major / open / confirmed; issue key: culturemech-001132-source-acetate-strength-conflict.
+
+The preparation text repeats the source 1 M acetate label, while the source stock recipe specifies trihydrate amount corresponding to approximately 0.1 M under the API volume convention; API reports 99.9412 mmol/L. This conflict originates in inspected source content and is carried into the record without qualification. Flattening is a separate defect.
+
+### f5: Stock preparation instructions lose their solution subjects
+
+major / open / confirmed; issue key: culturemech-001132-unscoped-stock-preparation.
+
+Preparation steps 3 and 4 are taken from acetate and bicarbonate stock sections respectively, but appear as generic later main-medium steps. This can imply extra treatment of the receiving medium. The main paragraph and named vitamin filtering remain present; the issue is lost section scope, not wholesale missing preparation.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore source stock boundaries and dose context in the normalized medium, verifying any candidate local stock independently before linking. Preserve original batch amounts and volume uncertainty; do not treat provider stock g_l as final medium g_l. Regenerate only after authorized curation.
+
+- Compare repaired maintained medium and generated output against exact source stock boundaries, literal amounts and unresolved source conflicts.
+- Run all four documented target validation recipes and inspect actual evidence coverage.
+- After separately authorized regeneration, run merge freshness and merge verification gates.
+
+### a2
+
+Verify and use the exact nickel chloride hexahydrate identity for both fields during authorized curation. Preserve the hydrated source mass; do not substitute an anhydrous amount or merely rename the existing ID.
+
+- Compare repaired maintained medium and generated output against exact source stock boundaries, literal amounts and unresolved source conflicts.
+- Run all four documented target validation recipes and inspect actual evidence coverage.
+- After separately authorized regeneration, run merge freshness and merge verification gates.
+
+### a3
+
+Preserve source acid volume and percentage as source-qualified quantities in the stock. Leave derived mass unsupported until concentration basis, density and stock volume are verified; do not guess a replacement.
+
+- Compare repaired maintained medium and generated output against exact source stock boundaries, literal amounts and unresolved source conflicts.
+- Run all four documented target validation recipes and inspect actual evidence coverage.
+- After separately authorized regeneration, run merge freshness and merge verification gates.
+
+### a4
+
+Represent both source assertions and flag the unresolved discrepancy in the maintained owner. Seek a primary-source correction before choosing a strength; do not silently change the mass or label to manufacture agreement.
+
+- Compare repaired maintained medium and generated output against exact source stock boundaries, literal amounts and unresolved source conflicts.
+- Run all four documented target validation recipes and inspect actual evidence coverage.
+- After separately authorized regeneration, run merge freshness and merge verification gates.
+
+### a5
+
+Keep each source stock instruction attached to its identified stock, separate from main-medium assembly. Retain the source order and existing main instructions without extrapolating unspecified stock handling.
+
+- Compare repaired maintained medium and generated output against exact source stock boundaries, literal amounts and unresolved source conflicts.
+- Run all four documented target validation recipes and inspect actual evidence coverage.
+- After separately authorized regeneration, run merge freshness and merge verification gates.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/1650_medium_for_strain_j5b.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/1650_medium_for_strain_j5b.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/1650_medium_for_strain_j5b.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/1650_medium_for_strain_j5b.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch003/024/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-003/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch003/024/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/1650_medium_for_strain_j5b.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/1650_medium_for_strain_j5b.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| dsmz | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1650.pdf; Pages 1–2, main recipe and five stock sections | supports | Original DSMZ 1650 PDF has seven main ingredients, two initial stock additions, water, three later stock additions, and five separate stock recipes. It contains an acetate heading/amount conflict; stock preparation paragraphs belong under their respective headings. |
+| api | https://mediadive.dsmz.de/rest/medium/1650; $.data.medium; $.data.solutions[0:6] | supports | Accession 1650 and source link resolve. API separates main solution 3414 from stocks 3415, 4172, 3417, 3418 and 3419. Main volume is reported as 1000 mL; trace stock volume 1012 mL; other stock volumes follow their separate recipe scopes. Copied g_l values belong to those scopes. |
+| chebi-131361 | https://www.ebi.ac.uk/chebi/CHEBI:131361; ChEBI ID, name, formula and supplied-form context | supports | Resolved CHEBI:131361 to disodium selenite pentahydrate; formula 5H2O.2Na.O3Se. Resolution does not establish matching supplied form; nickel is assessed separately. |
+| chebi-132751 | https://www.ebi.ac.uk/chebi/CHEBI:132751; ChEBI ID, name, formula and supplied-form context | supports | Resolved CHEBI:132751 to thiamine hydrochloride dihydrate; formula C12H18N4OS.2Cl.2H2O. Resolution does not establish matching supplied form; nickel is assessed separately. |
+| chebi-15940 | https://www.ebi.ac.uk/chebi/CHEBI:15940; ChEBI ID, name, formula and supplied-form context | supports | Resolved CHEBI:15940 to nicotinic acid; formula C6H5NO2. Resolution does not establish matching supplied form; nickel is assessed separately. |
+| chebi-15956 | https://www.ebi.ac.uk/chebi/CHEBI:15956; ChEBI ID, name, formula and supplied-form context | supports | Resolved CHEBI:15956 to biotin; formula C10H16N2O3S. Resolution does not establish matching supplied form; nickel is assessed separately. |
+| chebi-16494 | https://www.ebi.ac.uk/chebi/CHEBI:16494; ChEBI ID, name, formula and supplied-form context | supports | Resolved CHEBI:16494 to lipoic acid; formula C8H14O2S2. Resolution does not establish matching supplied form; nickel is assessed separately. |
+| chebi-17015 | https://www.ebi.ac.uk/chebi/CHEBI:17015; ChEBI ID, name, formula and supplied-form context | supports | Resolved CHEBI:17015 to riboflavin; formula C17H20N4O6. Resolution does not establish matching supplied form; nickel is assessed separately. |
+| chebi-176843 | https://www.ebi.ac.uk/chebi/CHEBI:176843; ChEBI ID, name, formula and supplied-form context | supports | Resolved CHEBI:176843 to vitamin B 12; vitamin B12 class, no single formula. Resolution does not establish matching supplied form; nickel is assessed separately. |
+| chebi-17883 | https://www.ebi.ac.uk/chebi/CHEBI:17883; ChEBI ID, name, formula and supplied-form context | supports | Resolved CHEBI:17883 to hydrogen chloride; formula HCl. Resolution does not establish matching supplied form; nickel is assessed separately. |
+| chebi-27470 | https://www.ebi.ac.uk/chebi/CHEBI:27470; ChEBI ID, name, formula and supplied-form context | supports | Resolved CHEBI:27470 to folic acid; formula C19H19N7O6. Resolution does not establish matching supplied form; nickel is assessed separately. |
+| chebi-30753 | https://www.ebi.ac.uk/chebi/CHEBI:30753; ChEBI ID, name, formula and supplied-form context | supports | Resolved CHEBI:30753 to 4-aminobenzoic acid; formula C7H7NO2. Resolution does not establish matching supplied form; nickel is assessed separately. |
+| chebi-30961 | https://www.ebi.ac.uk/chebi/CHEBI:30961; ChEBI ID, name, formula and supplied-form context | supports | Resolved CHEBI:30961 to pyridoxine hydrochloride; formula C8H11NO3.HCl. Resolution does not establish matching supplied form; nickel is assessed separately. |
+| chebi-31206 | https://www.ebi.ac.uk/chebi/CHEBI:31206; ChEBI ID, name, formula and supplied-form context | supports | Resolved CHEBI:31206 to ammonium chloride; formula Cl.H4N. Resolution does not establish matching supplied form; nickel is assessed separately. |
+| chebi-31345 | https://www.ebi.ac.uk/chebi/CHEBI:31345; ChEBI ID, name, formula and supplied-form context | supports | Resolved CHEBI:31345 to Calcium pantothenate; formula 2C9H16NO5.Ca. Resolution does not establish matching supplied form; nickel is assessed separately. |
+| chebi-31795 | https://www.ebi.ac.uk/chebi/CHEBI:31795; ChEBI ID, name, formula and supplied-form context | supports | Resolved CHEBI:31795 to magnesium sulfate heptahydrate; formula 7H2O.Mg.O4S. Resolution does not establish matching supplied form; nickel is assessed separately. |
+| chebi-32138 | https://www.ebi.ac.uk/chebi/CHEBI:32138; ChEBI ID, name, formula and supplied-form context | supports | Resolved CHEBI:32138 to sodium acetate trihydrate; formula C2H3O2.3H2O.Na. Resolution does not establish matching supplied form; nickel is assessed separately. |
+| chebi-32139 | https://www.ebi.ac.uk/chebi/CHEBI:32139; ChEBI ID, name, formula and supplied-form context | supports | Resolved CHEBI:32139 to sodium hydrogencarbonate; formula CHO3.Na. Resolution does not establish matching supplied form; nickel is assessed separately. |
+| chebi-32145 | https://www.ebi.ac.uk/chebi/CHEBI:32145; ChEBI ID, name, formula and supplied-form context | supports | Resolved CHEBI:32145 to sodium hydroxide; formula HO.Na. Resolution does not establish matching supplied form; nickel is assessed separately. |
+| chebi-32150 | https://www.ebi.ac.uk/chebi/CHEBI:32150; ChEBI ID, name, formula and supplied-form context | supports | Resolved CHEBI:32150 to sodium thiosulfate pentahydrate; formula 5H2O.2Na.O3S2. Resolution does not establish matching supplied form; nickel is assessed separately. |
+| chebi-32312 | https://www.ebi.ac.uk/chebi/CHEBI:32312; ChEBI ID, name, formula and supplied-form context | supports | Resolved CHEBI:32312 to zinc sulfate heptahydrate; formula 7H2O.O4S.Zn. Resolution does not establish matching supplied form; nickel is assessed separately. |
+| chebi-32588 | https://www.ebi.ac.uk/chebi/CHEBI:32588; ChEBI ID, name, formula and supplied-form context | supports | Resolved CHEBI:32588 to potassium chloride; formula Cl.K. Resolution does not establish matching supplied form; nickel is assessed separately. |
+| chebi-33118 | https://www.ebi.ac.uk/chebi/CHEBI:33118; ChEBI ID, name, formula and supplied-form context | supports | Resolved CHEBI:33118 to boric acid; formula H3BO3. Resolution does not establish matching supplied form; nickel is assessed separately. |
+| chebi-34887 | https://www.ebi.ac.uk/chebi/CHEBI:34887; ChEBI ID, name, formula and supplied-form context | supports | Resolved CHEBI:34887 to nickel dichloride; formula Cl2Ni. Resolution does not establish matching supplied form; nickel is assessed separately. |
+| chebi-53503 | https://www.ebi.ac.uk/chebi/CHEBI:53503; ChEBI ID, name, formula and supplied-form context | supports | Resolved CHEBI:53503 to cobalt chloride hexahydrate; formula 2Cl.Co.6H2O. Resolution does not establish matching supplied form; nickel is assessed separately. |
+| chebi-63005 | https://www.ebi.ac.uk/chebi/CHEBI:63005; ChEBI ID, name, formula and supplied-form context | supports | Resolved CHEBI:63005 to sodium nitrate; formula NO3.Na. Resolution does not establish matching supplied form; nickel is assessed separately. |
+| chebi-63036 | https://www.ebi.ac.uk/chebi/CHEBI:63036; ChEBI ID, name, formula and supplied-form context | supports | Resolved CHEBI:63036 to potassium dihydrogen phosphate; formula H2O4P.K. Resolution does not establish matching supplied form; nickel is assessed separately. |
+| chebi-63939 | https://www.ebi.ac.uk/chebi/CHEBI:63939; ChEBI ID, name, formula and supplied-form context | supports | Resolved CHEBI:63939 to sodium tungstate dihydrate; formula 2H2O.2Na.O4W. Resolution does not establish matching supplied form; nickel is assessed separately. |
+| chebi-75213 | https://www.ebi.ac.uk/chebi/CHEBI:75213; ChEBI ID, name, formula and supplied-form context | supports | Resolved CHEBI:75213 to sodium molybdate dihydrate; formula 2H2O.MoO4.2Na. Resolution does not establish matching supplied form; nickel is assessed separately. |
+| chebi-75836 | https://www.ebi.ac.uk/chebi/CHEBI:75836; ChEBI ID, name, formula and supplied-form context | supports | Resolved CHEBI:75836 to iron(2+) sulfate heptahydrate; formula Fe.7H2O.O4S. Resolution does not establish matching supplied form; nickel is assessed separately. |
+| chebi-86158 | https://www.ebi.ac.uk/chebi/CHEBI:86158; ChEBI ID, name, formula and supplied-form context | supports | Resolved CHEBI:86158 to calcium chloride dihydrate; formula Ca.2Cl.2H2O. Resolution does not establish matching supplied form; nickel is assessed separately. |
+| chebi-86318 | https://www.ebi.ac.uk/chebi/CHEBI:86318; ChEBI ID, name, formula and supplied-form context | supports | Resolved CHEBI:86318 to copper(II) chloride dihydrate; formula Cl2Cu.2H2O. Resolution does not establish matching supplied form; nickel is assessed separately. |
+| chebi-86368 | https://www.ebi.ac.uk/chebi/CHEBI:86368; ChEBI ID, name, formula and supplied-form context | supports | Resolved CHEBI:86368 to manganese(II) chloride tetrahydrate; formula Cl2Mn.4H2O. Resolution does not establish matching supplied form; nickel is assessed separately. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Thirty asserted CHEBI keys and one legacy key; companion metadata | partial | All 30 asserted secondary CHEBI keys have MAPPED preferred rows in the packaged index. Nickel key resolves to NiCl2, not its supplied hexahydrate. Legacy MediaIngredientMech:000171 has no mapping row. Snapshot commit 6643131b0f12ab40b66f98135245fca04027e0e9; CSV SHA256 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5. Key presence is not chemistry certification. |
+| legacy-search | MediaIngredientMech:000171; Whole-checkout exact-ID occurrence search and packaged registry check | unknown | 476 matching file paths contain the legacy token; repeated local assertions do not verify its original identity. No packaged index row resolves the ID. Historical registry verification remains unavailable. |
+| local-3414 | data/normalized_yaml/bacterial/mediadive_3414_Main_sol_1650.yaml; id, external solution accession, composition, preparation_notes and quality flags | context_only | Context-only inspected local CultureMech:012551 / mediadive.solution:3414. Identity matches the API solution accession. Local composition/preparation fields preserve that stock grouping, but placeholders and quality flags remain; several water fields use unsupported percent units. These are follow-up candidates, not certified link targets. |
+| local-3415 | data/normalized_yaml/bacterial/mediadive_3415_Trace_Element_Solution.yaml; id, external solution accession, composition, preparation_notes and quality flags | context_only | Context-only inspected local CultureMech:012552 / mediadive.solution:3415. Identity matches the API solution accession. Local composition/preparation fields preserve that stock grouping, but placeholders and quality flags remain; several water fields use unsupported percent units. These are follow-up candidates, not certified link targets. |
+| local-3417 | data/normalized_yaml/bacterial/mediadive_3417_1M_Acetate_solution_13_6_g_L.yaml; id, external solution accession, composition, preparation_notes and quality flags | context_only | Context-only inspected local CultureMech:012553 / mediadive.solution:3417. Identity matches the API solution accession. Local composition/preparation fields preserve that stock grouping, but placeholders and quality flags remain; several water fields use unsupported percent units. These are follow-up candidates, not certified link targets. |
+| local-3418 | data/normalized_yaml/bacterial/mediadive_3418_Bicarbonate_solution_84_0_g_L.yaml; id, external solution accession, composition, preparation_notes and quality flags | context_only | Context-only inspected local CultureMech:012554 / mediadive.solution:3418. Identity matches the API solution accession. Local composition/preparation fields preserve that stock grouping, but placeholders and quality flags remain; several water fields use unsupported percent units. These are follow-up candidates, not certified link targets. |
+| local-3419 | data/normalized_yaml/bacterial/mediadive_3419_Vitamin_solution.yaml; id, external solution accession, composition, preparation_notes and quality flags | context_only | Context-only inspected local CultureMech:012555 / mediadive.solution:3419. Identity matches the API solution accession. Local composition/preparation fields preserve that stock grouping, but placeholders and quality flags remain; several water fields use unsupported percent units. These are follow-up candidates, not certified link targets. |
+| local-4172 | data/normalized_yaml/bacterial/mediadive_4172_Selenite-tungstate_solution.yaml; id, external solution accession, composition, preparation_notes and quality flags | context_only | Context-only inspected local CultureMech:013201 / mediadive.solution:4172. Identity matches the API solution accession. Local composition/preparation fields preserve that stock grouping, but placeholders and quality flags remain; several water fields use unsupported percent units. These are follow-up candidates, not certified link targets. |
+
+## Limits And Additional Notes
+
+- Required verification of MediaIngredientMech:000171 remains unavailable: current packaged index and whole-checkout occurrence search do not establish a historical mapping. This is not evidence the identifier never existed.
+- Source stock names, literal amounts and provider volume conventions are preserved as distinct claims. No measured final receiving-medium volume is available; this review does not invent final concentration corrections.
+- Local stock records were inspected as context at identity, composition, preparation and quality-flag fields. They are not targets of this review and were not independently certified as reusable recipes. A combined full-file display was truncated, so no complete stock-record review is claimed.
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261020T033754Z-culturemech-001132-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: 1650_medium_for_strain_j5b (CultureMech:001132)'
+started_at: '2026-10-19T23:40:57Z'
+finished_at: '2026-10-20T03:37:54Z'
+reviewer:
+  identity: OpenAI Codex with delegated source and validator checks
+  kind: agent
+  independence: independent
+  independence_basis: Review team did not author or edit the assessed recipe bytes;
+    findings were assessed against the frozen checkout and inspected source documents.
+    This is an agent review, not experimental verification.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: DSMZ 1650 identity is resolved, but five stock formulations have been flattened
+  into direct medium ingredients at stock strength. Additional findings concern nickel
+  hydration, an unsupported acid mass conversion, an unresolved source acetate-strength
+  conflict, and preparation statements detached from their stocks. Completion is partial
+  because the asserted legacy nitrate identifier could not be verified against an
+  authoritative historical registry.
+source:
+  git_revision: 7c568537897ee4bba1b8e97f8172133c1572aec0
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/1650_medium_for_strain_j5b.yaml
+    sha256: 5ea1952e0b6866056bf410a572d9788c3a2cbc7fe22715c5e1988238dcbcd1e8
+    role: target
+  - path: data/normalized_yaml/bacterial/1650_medium_for_strain_j5b.yaml
+    sha256: fc05c5b7424298482c728932e1a351c3c00462c941880308df9cabc5395ef0e6
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_3414_Main_sol_1650.yaml
+    sha256: 55a9aac4af8258344573cc88cb0848ffef0732587852a9788127f1f757ac65a1
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_3415_Trace_Element_Solution.yaml
+    sha256: ae061d62f1381d6d86fe4bcffd01b4e4b274eb660d3656b7c4b26c21f02fa8cc
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_3417_1M_Acetate_solution_13_6_g_L.yaml
+    sha256: 285361d7fbfeb818383dc743d55834c42a45b513e1cfe92a82d612befde2e127
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_3418_Bicarbonate_solution_84_0_g_L.yaml
+    sha256: 44322000ea1f60c7f72ae9616ffbe1315a7e9d3906b8372d91a8a2fccdfafbb5
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_3419_Vitamin_solution.yaml
+    sha256: 1deee0ea96b4c9c1d3c754b2d320b830123287827c71a820f8e4ffeee23499d2
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_4172_Selenite-tungstate_solution.yaml
+    sha256: 550d2d55fa756a0e4b44b5b8731dcb3629781e609fc153554bc2a06adf9d5bd9
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: scripts/apply_cocktail_nesting.py
+    sha256: a1914a040ca02c86633aae11ed8a52a0ea91ba157a8240da2232c4ae652d61ab
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/fetch_mediadive_solution_volumes.py
+    sha256: 408cdfa3f5c446e8f9c32ac98d7ea8a3a36553b23c032f3b7551f6a1661fd39a
+    role: context
+  - path: scripts/import_mediadive_solutions.py
+    sha256: f97db7607d76c46b75d2d2428e8a425a5735e52beb3a9c28fd0af03ab5b31aa8
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Record 24 in Python lexicographic repository-relative path order of the
+    initially uncovered merged corpus; Batch 003 selects ordinals 21-30 after the
+    first two reserved batches; saved bundles are published locally in path order.
+    On fresh origin/main at this batch base, scripts/record_review.py list validated
+    34 existing bundles and none listed this target path or ID. This bundle selects
+    only the named record; no sampling or fleet-wide scientific claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:001132
+targets:
+- target_id: CultureMech:001132
+  path: data/merge_yaml/merged/1650_medium_for_strain_j5b.yaml
+  label: 1650_medium_for_strain_j5b
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1650_medium_for_strain_j5b.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/1650_medium_for_strain_j5b.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:001132
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/1650_medium_for_strain_j5b.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch003/024/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-003/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch003/024/strict.tsv"
+  target_ids:
+  - CultureMech:001132
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/1650_medium_for_strain_j5b.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:001132
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/1650_medium_for_strain_j5b.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:001132
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:001132
+- check_id: legacy-mim-registry
+  name: Historical MIM identifier verification
+  required: true
+  status: unavailable
+  summary: Authoritative historical resolution of MediaIngredientMech:000171 unavailable
+    in inspected registry and bounded search. The separately verified primary sodium
+    nitrate CHEBI ID does not prove legacy-ID equivalence.
+  target_ids:
+  - CultureMech:001132
+  evidence_ids:
+  - legacy-search
+  - mim
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/1650_medium_for_strain_j5b.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-20T03:37:54Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/1650_medium_for_strain_j5b.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-20T03:37:54Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/1650_medium_for_strain_j5b.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-19T23:41:49.072141Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/1650_medium_for_strain_j5b.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch003/024/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-19T23:41:52.068523Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-003/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch003/024/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/1650_medium_for_strain_j5b.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-19T23:41:55.068703Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/1650_medium_for_strain_j5b.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-19T23:41:56.989347Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: dsmz
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1650.pdf
+  locator: Pages 1–2, main recipe and five stock sections
+  accessed_at: '2026-10-19T23:37:50.305608Z'
+  support: supports
+  summary: Original DSMZ 1650 PDF has seven main ingredients, two initial stock additions,
+    water, three later stock additions, and five separate stock recipes. It contains
+    an acetate heading/amount conflict; stock preparation paragraphs belong under
+    their respective headings.
+  snapshot_sha256: a04f48516878d72e9e613d2f754ab091622b37c9859f7d3ab425287061c50e23
+- evidence_id: api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1650
+  locator: $.data.medium; $.data.solutions[0:6]
+  accessed_at: '2026-10-19T23:37:50.246137Z'
+  support: supports
+  summary: Accession 1650 and source link resolve. API separates main solution 3414
+    from stocks 3415, 4172, 3417, 3418 and 3419. Main volume is reported as 1000 mL;
+    trace stock volume 1012 mL; other stock volumes follow their separate recipe scopes.
+    Copied g_l values belong to those scopes.
+  snapshot_sha256: a2b885a00cd56fd36c41e5b1b16e9511dd57e3c570141c9643e195ee2181b31d
+- evidence_id: chebi-131361
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:131361
+  locator: ChEBI ID, name, formula and supplied-form context
+  accessed_at: '2026-10-19T23:42:29.035702Z'
+  support: supports
+  summary: Resolved CHEBI:131361 to disodium selenite pentahydrate; formula 5H2O.2Na.O3Se.
+    Resolution does not establish matching supplied form; nickel is assessed separately.
+  snapshot_sha256: 68a6c8ae77d777a85fe7cf49620516526a92b5dbd52bf7f2d98dfb88ec384149
+- evidence_id: chebi-132751
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:132751
+  locator: ChEBI ID, name, formula and supplied-form context
+  accessed_at: '2026-10-19T23:42:29.015891Z'
+  support: supports
+  summary: Resolved CHEBI:132751 to thiamine hydrochloride dihydrate; formula C12H18N4OS.2Cl.2H2O.
+    Resolution does not establish matching supplied form; nickel is assessed separately.
+  snapshot_sha256: 1cbdee501e18ded6e87f289fe99ade465c40ef2b9495930981100ccc05eaf094
+- evidence_id: chebi-15940
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:15940
+  locator: ChEBI ID, name, formula and supplied-form context
+  accessed_at: '2026-10-19T23:42:29.138170Z'
+  support: supports
+  summary: Resolved CHEBI:15940 to nicotinic acid; formula C6H5NO2. Resolution does
+    not establish matching supplied form; nickel is assessed separately.
+  snapshot_sha256: ec926f5c47c6df2e780b5595bbe2beb89abf074919ac39ac839b9624026e710b
+- evidence_id: chebi-15956
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:15956
+  locator: ChEBI ID, name, formula and supplied-form context
+  accessed_at: '2026-10-19T23:42:30.551926Z'
+  support: supports
+  summary: Resolved CHEBI:15956 to biotin; formula C10H16N2O3S. Resolution does not
+    establish matching supplied form; nickel is assessed separately.
+  snapshot_sha256: 85c2d79923962296f5fe91dedd1cc6b6773bb71e129d65fe1ce7ab73082b605b
+- evidence_id: chebi-16494
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:16494
+  locator: ChEBI ID, name, formula and supplied-form context
+  accessed_at: '2026-10-19T23:42:30.510444Z'
+  support: supports
+  summary: Resolved CHEBI:16494 to lipoic acid; formula C8H14O2S2. Resolution does
+    not establish matching supplied form; nickel is assessed separately.
+  snapshot_sha256: 4fc11ef3dfe1488e28c722c6627fc99cc48edc5afdac1565dddfae4c53e27918
+- evidence_id: chebi-17015
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:17015
+  locator: ChEBI ID, name, formula and supplied-form context
+  accessed_at: '2026-10-19T23:42:30.811553Z'
+  support: supports
+  summary: Resolved CHEBI:17015 to riboflavin; formula C17H20N4O6. Resolution does
+    not establish matching supplied form; nickel is assessed separately.
+  snapshot_sha256: 8d246c2c6096b124c9368e90029cd3bf51d953a09fc17fcf927a4c42d97a5473
+- evidence_id: chebi-176843
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:176843
+  locator: ChEBI ID, name, formula and supplied-form context
+  accessed_at: '2026-10-19T23:42:31.989459Z'
+  support: supports
+  summary: Resolved CHEBI:176843 to vitamin B 12; vitamin B12 class, no single formula.
+    Resolution does not establish matching supplied form; nickel is assessed separately.
+  snapshot_sha256: e5ba9cfa69b6bd39be1855a3dcb3ffeb62753d9156b80d6ca057bd17d94ae1c6
+- evidence_id: chebi-17883
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:17883
+  locator: ChEBI ID, name, formula and supplied-form context
+  accessed_at: '2026-10-19T23:42:32.261688Z'
+  support: supports
+  summary: Resolved CHEBI:17883 to hydrogen chloride; formula HCl. Resolution does
+    not establish matching supplied form; nickel is assessed separately.
+  snapshot_sha256: 3ebaecde8288501d9437465158bf314c4fae553dca794aaf648e246c00441898
+- evidence_id: chebi-27470
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:27470
+  locator: ChEBI ID, name, formula and supplied-form context
+  accessed_at: '2026-10-19T23:42:32.844490Z'
+  support: supports
+  summary: Resolved CHEBI:27470 to folic acid; formula C19H19N7O6. Resolution does
+    not establish matching supplied form; nickel is assessed separately.
+  snapshot_sha256: af2d9189982893120ea884fcd0bbb4453481c9071acaf98460d35d1faff5034f
+- evidence_id: chebi-30753
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:30753
+  locator: ChEBI ID, name, formula and supplied-form context
+  accessed_at: '2026-10-19T23:42:33.694294Z'
+  support: supports
+  summary: Resolved CHEBI:30753 to 4-aminobenzoic acid; formula C7H7NO2. Resolution
+    does not establish matching supplied form; nickel is assessed separately.
+  snapshot_sha256: b46224c532995747f6890b791861ffe3b90c0f2a3de8075746d66b037d3dfdeb
+- evidence_id: chebi-30961
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:30961
+  locator: ChEBI ID, name, formula and supplied-form context
+  accessed_at: '2026-10-19T23:42:33.747198Z'
+  support: supports
+  summary: Resolved CHEBI:30961 to pyridoxine hydrochloride; formula C8H11NO3.HCl.
+    Resolution does not establish matching supplied form; nickel is assessed separately.
+  snapshot_sha256: ea9ffdf401b9aab5d4b9b8305a42acb6c649784ec65c068126bf697a8bb62afb
+- evidence_id: chebi-31206
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:31206
+  locator: ChEBI ID, name, formula and supplied-form context
+  accessed_at: '2026-10-19T23:42:34.327004Z'
+  support: supports
+  summary: Resolved CHEBI:31206 to ammonium chloride; formula Cl.H4N. Resolution does
+    not establish matching supplied form; nickel is assessed separately.
+  snapshot_sha256: a86cf94a541b2db3a9ac7fcabe8576d2cdc0e7158b9c4f1bfc503bc3dfaa3334
+- evidence_id: chebi-31345
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:31345
+  locator: ChEBI ID, name, formula and supplied-form context
+  accessed_at: '2026-10-19T23:42:35.168410Z'
+  support: supports
+  summary: Resolved CHEBI:31345 to Calcium pantothenate; formula 2C9H16NO5.Ca. Resolution
+    does not establish matching supplied form; nickel is assessed separately.
+  snapshot_sha256: 0fa45653c7183e7b58839d32f28f01d690e462f010208bdef4ad2026bebfaa9e
+- evidence_id: chebi-31795
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:31795
+  locator: ChEBI ID, name, formula and supplied-form context
+  accessed_at: '2026-10-19T23:32:12.808273Z'
+  support: supports
+  summary: Resolved CHEBI:31795 to magnesium sulfate heptahydrate; formula 7H2O.Mg.O4S.
+    Resolution does not establish matching supplied form; nickel is assessed separately.
+  snapshot_sha256: 3ce9de4739bdf41bafd0b99fb9db23c45dfe90cf5ccc0ac3f59e5b2e351f8981
+- evidence_id: chebi-32138
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:32138
+  locator: ChEBI ID, name, formula and supplied-form context
+  accessed_at: '2026-10-19T23:42:35.217845Z'
+  support: supports
+  summary: Resolved CHEBI:32138 to sodium acetate trihydrate; formula C2H3O2.3H2O.Na.
+    Resolution does not establish matching supplied form; nickel is assessed separately.
+  snapshot_sha256: ed766824cca9f30d00434a42168881bd4e5686481befdb3fed59531771446f47
+- evidence_id: chebi-32139
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:32139
+  locator: ChEBI ID, name, formula and supplied-form context
+  accessed_at: '2026-10-19T07:35:41.058859Z'
+  support: supports
+  summary: Resolved CHEBI:32139 to sodium hydrogencarbonate; formula CHO3.Na. Resolution
+    does not establish matching supplied form; nickel is assessed separately.
+  snapshot_sha256: 9c890ba478b78dfc699a10ead1ae2e71a5596286046d1ae6994b23aad7f69929
+- evidence_id: chebi-32145
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:32145
+  locator: ChEBI ID, name, formula and supplied-form context
+  accessed_at: '2026-10-19T23:42:35.809133Z'
+  support: supports
+  summary: Resolved CHEBI:32145 to sodium hydroxide; formula HO.Na. Resolution does
+    not establish matching supplied form; nickel is assessed separately.
+  snapshot_sha256: abc3151b2b4b64f6d9ffb1ccf5cd0dd85f0a3d0cec9ae3f299b00ac5a9645f1d
+- evidence_id: chebi-32150
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:32150
+  locator: ChEBI ID, name, formula and supplied-form context
+  accessed_at: '2026-10-19T23:42:36.641979Z'
+  support: supports
+  summary: Resolved CHEBI:32150 to sodium thiosulfate pentahydrate; formula 5H2O.2Na.O3S2.
+    Resolution does not establish matching supplied form; nickel is assessed separately.
+  snapshot_sha256: d2f7c8d34a3fa136d629fe00f772b60134d1403c9d42fcdd5d704338fec6a30d
+- evidence_id: chebi-32312
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:32312
+  locator: ChEBI ID, name, formula and supplied-form context
+  accessed_at: '2026-10-19T07:35:43.150782Z'
+  support: supports
+  summary: Resolved CHEBI:32312 to zinc sulfate heptahydrate; formula 7H2O.O4S.Zn.
+    Resolution does not establish matching supplied form; nickel is assessed separately.
+  snapshot_sha256: eedd67fbc71945af9f7f2807aab72b85a32ef47ffefe6f6e34e65824f22459f0
+- evidence_id: chebi-32588
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:32588
+  locator: ChEBI ID, name, formula and supplied-form context
+  accessed_at: '2026-10-19T23:32:12.858281Z'
+  support: supports
+  summary: Resolved CHEBI:32588 to potassium chloride; formula Cl.K. Resolution does
+    not establish matching supplied form; nickel is assessed separately.
+  snapshot_sha256: 135d8318fe8cde9dc1b0ead7c50c12650a3d09d69cf4aa8541a1da01fc7abdce
+- evidence_id: chebi-33118
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:33118
+  locator: ChEBI ID, name, formula and supplied-form context
+  accessed_at: '2026-10-19T07:35:51.337449Z'
+  support: supports
+  summary: Resolved CHEBI:33118 to boric acid; formula H3BO3. Resolution does not
+    establish matching supplied form; nickel is assessed separately.
+  snapshot_sha256: e6ea5a9802ccf07e8d32e55942416aed8b01643d38ce1ff4eddbcde491eb1784
+- evidence_id: chebi-34887
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:34887
+  locator: ChEBI ID, name, formula and supplied-form context
+  accessed_at: '2026-10-19T23:42:36.758701Z'
+  support: supports
+  summary: Resolved CHEBI:34887 to nickel dichloride; formula Cl2Ni. Resolution does
+    not establish matching supplied form; nickel is assessed separately.
+  snapshot_sha256: 8b3275a80768f4af8809464fcd2ce474c3b33c5706967e16b90fd0753ef54b3c
+- evidence_id: chebi-53503
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:53503
+  locator: ChEBI ID, name, formula and supplied-form context
+  accessed_at: '2026-10-19T23:42:37.278349Z'
+  support: supports
+  summary: Resolved CHEBI:53503 to cobalt chloride hexahydrate; formula 2Cl.Co.6H2O.
+    Resolution does not establish matching supplied form; nickel is assessed separately.
+  snapshot_sha256: 9fc4384774eb8644d80ca0a2107089c517fe5b0b3df4444292797a8b6074f32f
+- evidence_id: chebi-63005
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:63005
+  locator: ChEBI ID, name, formula and supplied-form context
+  accessed_at: '2026-10-19T23:42:38.105039Z'
+  support: supports
+  summary: Resolved CHEBI:63005 to sodium nitrate; formula NO3.Na. Resolution does
+    not establish matching supplied form; nickel is assessed separately.
+  snapshot_sha256: 49f2f829d03606196e006fbd887581f2a5ed8c22593402abf2685da971bb93f8
+- evidence_id: chebi-63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:63036
+  locator: ChEBI ID, name, formula and supplied-form context
+  accessed_at: '2026-10-19T07:35:58.460228Z'
+  support: supports
+  summary: Resolved CHEBI:63036 to potassium dihydrogen phosphate; formula H2O4P.K.
+    Resolution does not establish matching supplied form; nickel is assessed separately.
+  snapshot_sha256: 7f59ea7835ed69b5701f6678706fb16794fdabc27c193b74e658279d466144ee
+- evidence_id: chebi-63939
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:63939
+  locator: ChEBI ID, name, formula and supplied-form context
+  accessed_at: '2026-10-19T23:42:38.234759Z'
+  support: supports
+  summary: Resolved CHEBI:63939 to sodium tungstate dihydrate; formula 2H2O.2Na.O4W.
+    Resolution does not establish matching supplied form; nickel is assessed separately.
+  snapshot_sha256: 7c6a6dc05adcd09803b1570ea580bfa9f5508cdc50261f11e8aeccf19ced2e1d
+- evidence_id: chebi-75213
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:75213
+  locator: ChEBI ID, name, formula and supplied-form context
+  accessed_at: '2026-10-19T23:42:38.974155Z'
+  support: supports
+  summary: Resolved CHEBI:75213 to sodium molybdate dihydrate; formula 2H2O.MoO4.2Na.
+    Resolution does not establish matching supplied form; nickel is assessed separately.
+  snapshot_sha256: f3ae939a81b70982619fadc03805caa1095497f9b2cff84a417421b7da16bd99
+- evidence_id: chebi-75836
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:75836
+  locator: ChEBI ID, name, formula and supplied-form context
+  accessed_at: '2026-10-19T07:36:02.216120Z'
+  support: supports
+  summary: Resolved CHEBI:75836 to iron(2+) sulfate heptahydrate; formula Fe.7H2O.O4S.
+    Resolution does not establish matching supplied form; nickel is assessed separately.
+  snapshot_sha256: 430069facbcf0adea7542008573574a848badc1ce488ce7f60db91eb1bbeb322
+- evidence_id: chebi-86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:86158
+  locator: ChEBI ID, name, formula and supplied-form context
+  accessed_at: '2026-10-19T23:42:39.567097Z'
+  support: supports
+  summary: Resolved CHEBI:86158 to calcium chloride dihydrate; formula Ca.2Cl.2H2O.
+    Resolution does not establish matching supplied form; nickel is assessed separately.
+  snapshot_sha256: c051447e79dbc7701ddd3bde680e7e8513986d4714e2f3704513b049bb10cd91
+- evidence_id: chebi-86318
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:86318
+  locator: ChEBI ID, name, formula and supplied-form context
+  accessed_at: '2026-10-19T23:42:39.747987Z'
+  support: supports
+  summary: Resolved CHEBI:86318 to copper(II) chloride dihydrate; formula Cl2Cu.2H2O.
+    Resolution does not establish matching supplied form; nickel is assessed separately.
+  snapshot_sha256: 8bc753fe5422e9d90fdc10736c0449158068302521b73a707a722872da356748
+- evidence_id: chebi-86368
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:86368
+  locator: ChEBI ID, name, formula and supplied-form context
+  accessed_at: '2026-10-19T23:42:40.470997Z'
+  support: supports
+  summary: Resolved CHEBI:86368 to manganese(II) chloride tetrahydrate; formula Cl2Mn.4H2O.
+    Resolution does not establish matching supplied form; nickel is assessed separately.
+  snapshot_sha256: 6c660cee7219539218783cebde4da497a3c6be33449298170730611b4696b4f2
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Thirty asserted CHEBI keys and one legacy key; companion metadata
+  accessed_at: '2026-10-20T03:37:54Z'
+  support: partial
+  summary: All 30 asserted secondary CHEBI keys have MAPPED preferred rows in the
+    packaged index. Nickel key resolves to NiCl2, not its supplied hexahydrate. Legacy
+    MediaIngredientMech:000171 has no mapping row. Snapshot commit 6643131b0f12ab40b66f98135245fca04027e0e9;
+    CSV SHA256 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5. Key
+    presence is not chemistry certification.
+- evidence_id: legacy-search
+  kind: search
+  reference: MediaIngredientMech:000171
+  locator: Whole-checkout exact-ID occurrence search and packaged registry check
+  accessed_at: '2026-10-20T03:36:02.126505Z'
+  support: unknown
+  summary: 476 matching file paths contain the legacy token; repeated local assertions
+    do not verify its original identity. No packaged index row resolves the ID. Historical
+    registry verification remains unavailable.
+  search_scope: rg --no-ignore --hidden -l -F MediaIngredientMech:000171 . across
+    the isolated whole checkout, including ignored and hidden files, plus parsed packaged
+    label-index lookup. No claim about all remote archives.
+- evidence_id: local-3414
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_3414_Main_sol_1650.yaml
+  locator: id, external solution accession, composition, preparation_notes and quality
+    flags
+  accessed_at: '2026-10-20T03:37:54Z'
+  support: context_only
+  summary: Context-only inspected local CultureMech:012551 / mediadive.solution:3414.
+    Identity matches the API solution accession. Local composition/preparation fields
+    preserve that stock grouping, but placeholders and quality flags remain; several
+    water fields use unsupported percent units. These are follow-up candidates, not
+    certified link targets.
+- evidence_id: local-3415
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_3415_Trace_Element_Solution.yaml
+  locator: id, external solution accession, composition, preparation_notes and quality
+    flags
+  accessed_at: '2026-10-20T03:37:54Z'
+  support: context_only
+  summary: Context-only inspected local CultureMech:012552 / mediadive.solution:3415.
+    Identity matches the API solution accession. Local composition/preparation fields
+    preserve that stock grouping, but placeholders and quality flags remain; several
+    water fields use unsupported percent units. These are follow-up candidates, not
+    certified link targets.
+- evidence_id: local-3417
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_3417_1M_Acetate_solution_13_6_g_L.yaml
+  locator: id, external solution accession, composition, preparation_notes and quality
+    flags
+  accessed_at: '2026-10-20T03:37:54Z'
+  support: context_only
+  summary: Context-only inspected local CultureMech:012553 / mediadive.solution:3417.
+    Identity matches the API solution accession. Local composition/preparation fields
+    preserve that stock grouping, but placeholders and quality flags remain; several
+    water fields use unsupported percent units. These are follow-up candidates, not
+    certified link targets.
+- evidence_id: local-3418
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_3418_Bicarbonate_solution_84_0_g_L.yaml
+  locator: id, external solution accession, composition, preparation_notes and quality
+    flags
+  accessed_at: '2026-10-20T03:37:54Z'
+  support: context_only
+  summary: Context-only inspected local CultureMech:012554 / mediadive.solution:3418.
+    Identity matches the API solution accession. Local composition/preparation fields
+    preserve that stock grouping, but placeholders and quality flags remain; several
+    water fields use unsupported percent units. These are follow-up candidates, not
+    certified link targets.
+- evidence_id: local-3419
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_3419_Vitamin_solution.yaml
+  locator: id, external solution accession, composition, preparation_notes and quality
+    flags
+  accessed_at: '2026-10-20T03:37:54Z'
+  support: context_only
+  summary: Context-only inspected local CultureMech:012555 / mediadive.solution:3419.
+    Identity matches the API solution accession. Local composition/preparation fields
+    preserve that stock grouping, but placeholders and quality flags remain; several
+    water fields use unsupported percent units. These are follow-up candidates, not
+    certified link targets.
+- evidence_id: local-4172
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_4172_Selenite-tungstate_solution.yaml
+  locator: id, external solution accession, composition, preparation_notes and quality
+    flags
+  accessed_at: '2026-10-20T03:37:54Z'
+  support: context_only
+  summary: Context-only inspected local CultureMech:013201 / mediadive.solution:4172.
+    Identity matches the API solution accession. Local composition/preparation fields
+    preserve that stock grouping, but placeholders and quality flags remain; several
+    water fields use unsupported percent units. These are follow-up candidates, not
+    certified link targets.
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:001132
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: Exact medium accession and source variant
+  outcome: supported
+  summary: CultureMech:001132 denotes DSMZ 1650, Medium for Strain J5B, with one maintained
+    source and matching source URL. The name J5B is source naming context, not a resolved
+    organism accession or an asserted experimental growth result.
+  target_ids:
+  - CultureMech:001132
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz
+  - api
+- assessment_id: amounts
+  area: quantity
+  topic: Every direct amount, stock boundary and volume basis
+  outcome: concern
+  summary: Seven main component values agree with provider main-solution g_l; 24 other
+    values are stock-level quantities incorrectly flattened into the medium. Every
+    direct amount is accounted for below.
+  target_ids:
+  - CultureMech:001132
+  evidence_ids:
+  - record
+  - dsmz
+  - api
+  details: 'ingredients[0] Na2S2O3 x 5 H2O: verified within provider main-recipe scope.
+    Stored 2.5 G_PER_L equals API $.data.solutions[0].recipe[0].g_l; source amount
+    2.5 g; API solution id=3414, reported volume=1000 mL. No receiving-medium normalization
+    follows solely from that equality.
+
+    ingredients[1] NaNO3: verified within provider main-recipe scope. Stored 0.85
+    G_PER_L equals API $.data.solutions[0].recipe[1].g_l; source amount 0.85 g; API
+    solution id=3414, reported volume=1000 mL. No receiving-medium normalization follows
+    solely from that equality.
+
+    ingredients[2] MgSO4 x 7 H2O: verified within provider main-recipe scope. Stored
+    0.5 G_PER_L equals API $.data.solutions[0].recipe[2].g_l; source amount 0.5 g;
+    API solution id=3414, reported volume=1000 mL. No receiving-medium normalization
+    follows solely from that equality.
+
+    ingredients[3] CaCl2 x 2 H2O: verified within provider main-recipe scope. Stored
+    0.1 G_PER_L equals API $.data.solutions[0].recipe[3].g_l; source amount 0.1 g;
+    API solution id=3414, reported volume=1000 mL. No receiving-medium normalization
+    follows solely from that equality.
+
+    ingredients[4] KH2PO4: verified within provider main-recipe scope. Stored 0.1
+    G_PER_L equals API $.data.solutions[0].recipe[4].g_l; source amount 0.1 g; API
+    solution id=3414, reported volume=1000 mL. No receiving-medium normalization follows
+    solely from that equality.
+
+    ingredients[5] NH4Cl: verified within provider main-recipe scope. Stored 0.1 G_PER_L
+    equals API $.data.solutions[0].recipe[5].g_l; source amount 0.1 g; API solution
+    id=3414, reported volume=1000 mL. No receiving-medium normalization follows solely
+    from that equality.
+
+    ingredients[6] KCl: verified within provider main-recipe scope. Stored 0.1 G_PER_L
+    equals API $.data.solutions[0].recipe[6].g_l; source amount 0.1 g; API solution
+    id=3414, reported volume=1000 mL. No receiving-medium normalization follows solely
+    from that equality.
+
+    ingredients[7] HCl: correct scope: stock-only value incorrectly asserted as direct
+    medium concentration. Stored 3.125 G_PER_L equals API $.data.solutions[1].recipe[0].g_l;
+    source amount 12.5 ml; API solution id=3415, reported volume=1012 mL. No receiving-medium
+    normalization follows solely from that equality.
+
+    ingredients[8] FeSO4 x 7 H2O: correct scope: stock-only value incorrectly asserted
+    as direct medium concentration. Stored 2.0751 G_PER_L equals API $.data.solutions[1].recipe[1].g_l;
+    source amount 2.1 g; API solution id=3415, reported volume=1012 mL. No receiving-medium
+    normalization follows solely from that equality.
+
+    ingredients[9] ZnSO4 x 7 H2O: correct scope: stock-only value incorrectly asserted
+    as direct medium concentration. Stored 0.142292 G_PER_L equals API $.data.solutions[1].recipe[2].g_l;
+    source amount 0.144 g; API solution id=3415, reported volume=1012 mL. No receiving-medium
+    normalization follows solely from that equality.
+
+    ingredients[10] MnCl2 x 4 H2O: correct scope: stock-only value incorrectly asserted
+    as direct medium concentration. Stored 0.0988142 G_PER_L equals API $.data.solutions[1].recipe[3].g_l;
+    source amount 0.1 g; API solution id=3415, reported volume=1012 mL. No receiving-medium
+    normalization follows solely from that equality.
+
+    ingredients[11] H3BO3: correct scope: stock-only value incorrectly asserted as
+    direct medium concentration. Stored 0.0296443 G_PER_L equals API $.data.solutions[1].recipe[4].g_l;
+    source amount 0.03 g; API solution id=3415, reported volume=1012 mL. No receiving-medium
+    normalization follows solely from that equality.
+
+    ingredients[12] CoCl2 x 6 H2O: correct scope: stock-only value incorrectly asserted
+    as direct medium concentration. Stored 0.187747 G_PER_L equals API $.data.solutions[1].recipe[5].g_l;
+    source amount 0.19 g; API solution id=3415, reported volume=1012 mL. No receiving-medium
+    normalization follows solely from that equality.
+
+    ingredients[13] CuCl2 x 2 H2O: correct scope: stock-only value incorrectly asserted
+    as direct medium concentration. Stored 0.00197628 G_PER_L equals API $.data.solutions[1].recipe[6].g_l;
+    source amount 2 mg; API solution id=3415, reported volume=1012 mL. No receiving-medium
+    normalization follows solely from that equality.
+
+    ingredients[14] NiCl2 x 6 H2O: correct scope: stock-only value incorrectly asserted
+    as direct medium concentration. Stored 0.0237154 G_PER_L equals API $.data.solutions[1].recipe[7].g_l;
+    source amount 0.024 g; API solution id=3415, reported volume=1012 mL. No receiving-medium
+    normalization follows solely from that equality.
+
+    ingredients[15] Na2MoO4 x 2 H2O: correct scope: stock-only value incorrectly asserted
+    as direct medium concentration. Stored 0.0355731 G_PER_L equals API $.data.solutions[1].recipe[8].g_l;
+    source amount 0.036 g; API solution id=3415, reported volume=1012 mL. No receiving-medium
+    normalization follows solely from that equality.
+
+    ingredients[16] NaOH: correct scope: stock-only value incorrectly asserted as
+    direct medium concentration. Stored 0.4 G_PER_L equals API $.data.solutions[2].recipe[0].g_l;
+    source amount 0.4 g; API solution id=4172, reported volume=1000 mL. No receiving-medium
+    normalization follows solely from that equality.
+
+    ingredients[17] Na2SeO3 x 5 H2O: correct scope: stock-only value incorrectly asserted
+    as direct medium concentration. Stored 0.006 G_PER_L equals API $.data.solutions[2].recipe[1].g_l;
+    source amount 6 mg; API solution id=4172, reported volume=1000 mL. No receiving-medium
+    normalization follows solely from that equality.
+
+    ingredients[18] Na2WO4 x 2 H2O: correct scope: stock-only value incorrectly asserted
+    as direct medium concentration. Stored 0.008 G_PER_L equals API $.data.solutions[2].recipe[2].g_l;
+    source amount 8 mg; API solution id=4172, reported volume=1000 mL. No receiving-medium
+    normalization follows solely from that equality.
+
+    ingredients[19] Sodium acetate trihydrate: correct scope: stock-only value incorrectly
+    asserted as direct medium concentration. Stored 13.6 G_PER_L equals API $.data.solutions[3].recipe[0].g_l;
+    source amount 13.6 g; API solution id=3417, reported volume=1000 mL. No receiving-medium
+    normalization follows solely from that equality.
+
+    ingredients[20] NaHCO3: correct scope: stock-only value incorrectly asserted as
+    direct medium concentration. Stored 84 G_PER_L equals API $.data.solutions[4].recipe[0].g_l;
+    source amount 8.4 g; API solution id=3418, reported volume=100 mL. No receiving-medium
+    normalization follows solely from that equality.
+
+    ingredients[21] Biotin: correct scope: stock-only value incorrectly asserted as
+    direct medium concentration. Stored 0.002 G_PER_L equals API $.data.solutions[5].recipe[0].g_l;
+    source amount 2 mg; API solution id=3419, reported volume=1000 mL. No receiving-medium
+    normalization follows solely from that equality.
+
+    ingredients[22] Folic acid: correct scope: stock-only value incorrectly asserted
+    as direct medium concentration. Stored 0.002 G_PER_L equals API $.data.solutions[5].recipe[1].g_l;
+    source amount 2 mg; API solution id=3419, reported volume=1000 mL. No receiving-medium
+    normalization follows solely from that equality.
+
+    ingredients[23] Pyridoxine hydrochloride: correct scope: stock-only value incorrectly
+    asserted as direct medium concentration. Stored 0.01 G_PER_L equals API $.data.solutions[5].recipe[2].g_l;
+    source amount 10 mg; API solution id=3419, reported volume=1000 mL. No receiving-medium
+    normalization follows solely from that equality.
+
+    ingredients[24] Thiamine-HCl x 2 H2O: correct scope: stock-only value incorrectly
+    asserted as direct medium concentration. Stored 0.005 G_PER_L equals API $.data.solutions[5].recipe[3].g_l;
+    source amount 5 mg; API solution id=3419, reported volume=1000 mL. No receiving-medium
+    normalization follows solely from that equality.
+
+    ingredients[25] Riboflavin: correct scope: stock-only value incorrectly asserted
+    as direct medium concentration. Stored 0.005 G_PER_L equals API $.data.solutions[5].recipe[4].g_l;
+    source amount 5 mg; API solution id=3419, reported volume=1000 mL. No receiving-medium
+    normalization follows solely from that equality.
+
+    ingredients[26] Nicotinic acid: correct scope: stock-only value incorrectly asserted
+    as direct medium concentration. Stored 0.005 G_PER_L equals API $.data.solutions[5].recipe[5].g_l;
+    source amount 5 mg; API solution id=3419, reported volume=1000 mL. No receiving-medium
+    normalization follows solely from that equality.
+
+    ingredients[27] D-Calcium pantothenate: correct scope: stock-only value incorrectly
+    asserted as direct medium concentration. Stored 0.005 G_PER_L equals API $.data.solutions[5].recipe[6].g_l;
+    source amount 5 mg; API solution id=3419, reported volume=1000 mL. No receiving-medium
+    normalization follows solely from that equality.
+
+    ingredients[28] Vitamin B12: correct scope: stock-only value incorrectly asserted
+    as direct medium concentration. Stored 0.0001 G_PER_L equals API $.data.solutions[5].recipe[7].g_l;
+    source amount 0.1 mg; API solution id=3419, reported volume=1000 mL. No receiving-medium
+    normalization follows solely from that equality.
+
+    ingredients[29] 4-Aminobenzoic Acid: correct scope: stock-only value incorrectly
+    asserted as direct medium concentration. Stored 0.005 G_PER_L equals API $.data.solutions[5].recipe[8].g_l;
+    source amount 5 mg; API solution id=3419, reported volume=1000 mL. No receiving-medium
+    normalization follows solely from that equality.
+
+    ingredients[30] Lipoic acid: correct scope: stock-only value incorrectly asserted
+    as direct medium concentration. Stored 0.005 G_PER_L equals API $.data.solutions[5].recipe[9].g_l;
+    source amount 5 mg; API solution id=3419, reported volume=1000 mL. No receiving-medium
+    normalization follows solely from that equality.
+
+    Trace stock 3415: source addition 1 mL to main batch. Its eight weighed salts
+    use provider normalization by 1.012 L; literal source adds 1000 mL water plus
+    12.5 mL acid, not an explicit measured stock final volume. Provider values and
+    literal batch amounts must remain distinguishable. HCl mass conversion is separately
+    unsupported.
+
+    Selenite-tungstate 4172: source addition 1 mL; mg-to-g conversions within stock
+    are dimensionally consistent, but stock concentrations are not direct medium concentrations.
+
+    Acetate 3417: source addition 1 mL, named 1 M; stock amount and API 99.9412 mmol/L
+    conflict with that name. Keep both assertions pending source clarification.
+
+    Bicarbonate 3418: source stock amount 8.4 g with 100 mL water, provider g_l=84;
+    source later addition 30 mL. It is not 84 g/L in the receiving medium.
+
+    Vitamin 3419: source later addition 1 mL; ten component mg quantities map to stock
+    g_l using provider 1000 mL. They are not undiluted direct-medium quantities.
+
+    Five stock additions total 34 mL in source wording. Main water is 1000 mL but
+    API main volume is also 1000 mL. Neither simply summing volumes nor treating additions
+    as included establishes measured final volume. No corrected full medium is synthesized
+    here.'
+- assessment_id: grounding
+  area: grounding
+  topic: Primary terms, exact forms and secondary keys
+  outcome: concern
+  summary: All 31 primary CHEBI IDs resolve, but nickel hexahydrate is assigned anhydrous
+    CHEBI:34887 in both primary and secondary fields. Other inspected forms agree
+    at source specificity; HCl identity alone does not represent its aqueous strength.
+    D-calcium pantothenate is a synonym with stereochemical structure in CHEBI:31345,
+    so its generic display name is not a mismatch. Vitamin B12 class matches unspecified
+    source vitamer. Primary linkage coverage=31/31 (100%); secondary key presence=31/31,
+    but only 30/31 resolve in current index and one of those is wrong supplied form.
+    These are linkage measures, not accuracy scores.
+  target_ids:
+  - CultureMech:001132
+  evidence_ids:
+  - record
+  - mim
+  - legacy-search
+  - dsmz
+  - chebi-131361
+  - chebi-132751
+  - chebi-15940
+  - chebi-15956
+  - chebi-16494
+  - chebi-17015
+  - chebi-176843
+  - chebi-17883
+  - chebi-27470
+  - chebi-30753
+  - chebi-30961
+  - chebi-31206
+  - chebi-31345
+  - chebi-31795
+  - chebi-32138
+  - chebi-32139
+  - chebi-32145
+  - chebi-32150
+  - chebi-32312
+  - chebi-32588
+  - chebi-33118
+  - chebi-34887
+  - chebi-53503
+  - chebi-63005
+  - chebi-63036
+  - chebi-63939
+  - chebi-75213
+  - chebi-75836
+  - chebi-86158
+  - chebi-86318
+  - chebi-86368
+- assessment_id: prep
+  area: representation
+  topic: Main versus stock preparation scope
+  outcome: concern
+  summary: Main pH range and atmosphere/vessel/post-sterilization instructions are
+    retained in prose. Later steps 3 and 4 come from acetate and bicarbonate stock
+    sections but lose those subjects when inserted into one main sequence; the vitamin
+    filtering step names its subject. A whole-medium sequential reading is unsupported.
+  target_ids:
+  - CultureMech:001132
+  evidence_ids:
+  - record
+  - dsmz
+  - api
+- assessment_id: classification
+  area: scope
+  topic: Defined liquid medium and growth scope
+  outcome: supported
+  summary: The source is a defined liquid formulation without complex nutrient extract
+    or agar; DEFINED/DEFINED/LIQUID and pH 7.0–7.2 match the source. The unresolved
+    acetate strength limits exact formulation, not the classification as chemically
+    defined. Generic microbial cultivation and source name do not constitute verified
+    strain growth; no taxon or new growth outcome is inferred.
+  target_ids:
+  - CultureMech:001132
+  evidence_ids:
+  - record
+  - dsmz
+  - api
+- assessment_id: ownership
+  area: ownership
+  topic: Maintained source and stock-context leads
+  outcome: supported
+  summary: Target and maintained medium owner share the formulation and preparation
+    defects. Local solution IDs resolve as source-accession leads, but the target
+    asserts no structured references to them. Do not claim broken local links or certify
+    these stock records based on key matches. Future medium changes belong in the
+    normalized owner, followed by separately authorized regeneration; current merge
+    code is not proven to have originated the import flattening.
+  target_ids:
+  - CultureMech:001132
+  evidence_ids:
+  - record
+  - owner-0
+  - api
+  - local-3414
+  - local-3415
+  - local-4172
+  - local-3417
+  - local-3418
+  - local-3419
+findings:
+- finding_id: f1
+  issue_key: culturemech-001132-flattened-stock-formulations
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Five stock formulations are flattened at stock strength
+  description: The target exposes 24 stock components as direct medium ingredients,
+    alongside seven actual main components. The source instead defines five separately
+    dosed stocks. Some doses survive in prose, but neither scoped stock composition
+    nor receiving-medium concentrations are represented. The encoded composition therefore
+    denotes a materially different formulation.
+  target_ids:
+  - CultureMech:001132
+  field_paths:
+  - ingredients
+  - solutions
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz
+  - api
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1650_medium_for_strain_j5b.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f2
+  issue_key: culturemech-001132-nickel-hydrate-grounding
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Nickel hexahydrate is grounded to anhydrous nickel chloride
+  description: Source and preferred_term specify NiCl2 x 6 H2O. CHEBI:34887 has formula
+    Cl2Ni and represents nickel dichloride without the six waters, in both asserted
+    primary and secondary keys. The term label is canonical for the wrong supplied
+    form.
+  target_ids:
+  - CultureMech:001132
+  field_paths:
+  - ingredients[14].term
+  - ingredients[14].mediaingredientmech_chebi_term
+  evidence_ids:
+  - record
+  - dsmz
+  - chebi-34887
+  - mim
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1650_medium_for_strain_j5b.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f3
+  issue_key: culturemech-001132-hcl-percent-volume-conversion
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Acid volume and percentage are replaced by an unsupported mass concentration
+  description: Source trace recipe specifies HCl (25%) as 12.5 mL. The target copies
+    API 3.125 g/L but loses concentration attribute and stock scope. Source does not
+    establish percentage basis or density required to derive an acid mass from that
+    volume. API numerical presence does not supply the missing chemical conversion
+    evidence.
+  target_ids:
+  - CultureMech:001132
+  field_paths:
+  - ingredients[7].concentration
+  - ingredients[7].preferred_term
+  evidence_ids:
+  - record
+  - dsmz
+  - api
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1650_medium_for_strain_j5b.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f4
+  issue_key: culturemech-001132-source-acetate-strength-conflict
+  category: consistency
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source acetate strength conflict is not disclosed
+  description: The preparation text repeats the source 1 M acetate label, while the
+    source stock recipe specifies trihydrate amount corresponding to approximately
+    0.1 M under the API volume convention; API reports 99.9412 mmol/L. This conflict
+    originates in inspected source content and is carried into the record without
+    qualification. Flattening is a separate defect.
+  target_ids:
+  - CultureMech:001132
+  field_paths:
+  - ingredients[19]
+  - preparation_steps[1].description
+  evidence_ids:
+  - record
+  - dsmz
+  - api
+  - chebi-32138
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1650_medium_for_strain_j5b.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f5
+  issue_key: culturemech-001132-unscoped-stock-preparation
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Stock preparation instructions lose their solution subjects
+  description: Preparation steps 3 and 4 are taken from acetate and bicarbonate stock
+    sections respectively, but appear as generic later main-medium steps. This can
+    imply extra treatment of the receiving medium. The main paragraph and named vitamin
+    filtering remain present; the issue is lost section scope, not wholesale missing
+    preparation.
+  target_ids:
+  - CultureMech:001132
+  field_paths:
+  - preparation_steps[2]
+  - preparation_steps[3]
+  evidence_ids:
+  - record
+  - dsmz
+  - api
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1650_medium_for_strain_j5b.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+actions:
+- action_id: a1
+  description: Restore source stock boundaries and dose context in the normalized
+    medium, verifying any candidate local stock independently before linking. Preserve
+    original batch amounts and volume uncertainty; do not treat provider stock g_l
+    as final medium g_l. Regenerate only after authorized curation.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:001132
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1650_medium_for_strain_j5b.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Compare repaired maintained medium and generated output against exact source stock
+    boundaries, literal amounts and unresolved source conflicts.
+  - Run all four documented target validation recipes and inspect actual evidence
+    coverage.
+  - After separately authorized regeneration, run merge freshness and merge verification
+    gates.
+- action_id: a2
+  description: Verify and use the exact nickel chloride hexahydrate identity for both
+    fields during authorized curation. Preserve the hydrated source mass; do not substitute
+    an anhydrous amount or merely rename the existing ID.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:001132
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1650_medium_for_strain_j5b.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Compare repaired maintained medium and generated output against exact source stock
+    boundaries, literal amounts and unresolved source conflicts.
+  - Run all four documented target validation recipes and inspect actual evidence
+    coverage.
+  - After separately authorized regeneration, run merge freshness and merge verification
+    gates.
+- action_id: a3
+  description: Preserve source acid volume and percentage as source-qualified quantities
+    in the stock. Leave derived mass unsupported until concentration basis, density
+    and stock volume are verified; do not guess a replacement.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:001132
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1650_medium_for_strain_j5b.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Compare repaired maintained medium and generated output against exact source stock
+    boundaries, literal amounts and unresolved source conflicts.
+  - Run all four documented target validation recipes and inspect actual evidence
+    coverage.
+  - After separately authorized regeneration, run merge freshness and merge verification
+    gates.
+- action_id: a4
+  description: Represent both source assertions and flag the unresolved discrepancy
+    in the maintained owner. Seek a primary-source correction before choosing a strength;
+    do not silently change the mass or label to manufacture agreement.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:001132
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1650_medium_for_strain_j5b.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Compare repaired maintained medium and generated output against exact source stock
+    boundaries, literal amounts and unresolved source conflicts.
+  - Run all four documented target validation recipes and inspect actual evidence
+    coverage.
+  - After separately authorized regeneration, run merge freshness and merge verification
+    gates.
+- action_id: a5
+  description: Keep each source stock instruction attached to its identified stock,
+    separate from main-medium assembly. Retain the source order and existing main
+    instructions without extrapolating unspecified stock handling.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:001132
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1650_medium_for_strain_j5b.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Compare repaired maintained medium and generated output against exact source stock
+    boundaries, literal amounts and unresolved source conflicts.
+  - Run all four documented target validation recipes and inspect actual evidence
+    coverage.
+  - After separately authorized regeneration, run merge freshness and merge verification
+    gates.
+limitations:
+- 'Required verification of MediaIngredientMech:000171 remains unavailable: current
+  packaged index and whole-checkout occurrence search do not establish a historical
+  mapping. This is not evidence the identifier never existed.'
+- Source stock names, literal amounts and provider volume conventions are preserved
+  as distinct claims. No measured final receiving-medium volume is available; this
+  review does not invent final concentration corrections.
+- Local stock records were inspected as context at identity, composition, preparation
+  and quality-flag fields. They are not targets of this review and were not independently
+  certified as reusable recipes. A combined full-file display was truncated, so no
+  complete stock-record review is claimed.
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+tags:
+- unreviewed-records
+- batch-003
+- generated-medium
+```
