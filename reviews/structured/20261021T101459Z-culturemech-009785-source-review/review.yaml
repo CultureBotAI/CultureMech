@@ -1,0 +1,1726 @@
+schema_version: 1.0.0
+review_id: 20261021T101459Z-culturemech-009785-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: acetobacterium_submarinus_medium (CultureMech:009785)'
+started_at: '2026-10-21T09:56:59Z'
+finished_at: '2026-10-21T10:14:59Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The exact TOGO M401/JCM 403 formulation and referenced trace-element stock
+  are available, but local units, stock stages and preparation are materially wrong
+  or missing. A surviving legacy MediaIngredientMech identifier cannot be historically
+  resolved from the pinned current artifacts; this required correspondence check keeps
+  the scientific review partial.
+source:
+  git_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ACETOBACTERIUM_SUBMARINUS_MEDIUM.yaml
+    sha256: e9a9762c0c354fe7c42d097432efa8d147a41fa65585d3dd729f2dfef022b232
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M401_Acetobacterium_Submarinus_Medium.yaml
+    sha256: 16bfd52c74b4968fb71d19de9eeec863417b8f1e5711a8e1413b7b0917cae25c
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: The complete target and maintained owner were inspected for source
+    formulation, all amounts/forms, preparation, claims and history. Historical correspondence
+    for the surviving legacy MediaIngredientMech identifier remains unavailable; no
+    replacement identity is inferred.
+  selection: Task review 149; batch 015 item 9 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding fourteen task batches
+    contain 140 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+    contains 40 validated baseline bundles covering 2 current merged paths. Unioning
+    all prior lists with this baseline covers 142 of 6320 current merged paths, including
+    2 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:009785
+targets:
+- target_id: CultureMech:009785
+  path: data/merge_yaml/merged/ACETOBACTERIUM_SUBMARINUS_MEDIUM.yaml
+  label: acetobacterium_submarinus_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M401_Acetobacterium_Submarinus_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ACETOBACTERIUM_SUBMARINUS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:009785
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ACETOBACTERIUM_SUBMARINUS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch015/149/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-015/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch015/149/strict.tsv"
+  target_ids:
+  - CultureMech:009785
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ACETOBACTERIUM_SUBMARINUS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:009785
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ACETOBACTERIUM_SUBMARINUS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:009785
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:009785
+- check_id: legacy-mim-correspondence
+  name: Historical legacy MIM identifier correspondence
+  required: true
+  status: unavailable
+  summary: Current pinned index, catalogue and repository tree are accessible, but
+    no archived crosswalk establishing MediaIngredientMech:000926 was available. Required
+    exact historical mapping remains unresolved; this is not a source-access failure
+    for JCM 403.
+  target_ids:
+  - CultureMech:009785
+  evidence_ids:
+  - legacy-audit
+  - mim-tree
+  - mim-catalogue
+  - mim
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ACETOBACTERIUM_SUBMARINUS_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T10:14:58Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M401_Acetobacterium_Submarinus_Medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T10:14:58Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ACETOBACTERIUM_SUBMARINUS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T09:58:15.670222Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ACETOBACTERIUM_SUBMARINUS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch015/149/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T09:58:18.758133Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-015/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch015/149/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ACETOBACTERIUM_SUBMARINUS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T09:58:23.307627Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ACETOBACTERIUM_SUBMARINUS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T09:58:25.940073Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T10:14:58Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ACETOBACTERIUM_SUBMARINUS_MEDIUM.yaml:1:id: CultureMech:009785
+
+    ./data/normalized_yaml/bacterial/TOGO_M401_Acetobacterium_Submarinus_Medium.yaml:1:id:
+    CultureMech:009785
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch015/source-preflight-bound/149/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T10:14:58Z'
+  support: supports
+  summary: 27 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 0f6651e2506b1ac3fc10d500eece4c62221ab3a366355e4fbc26f2ded18ebc51
+- evidence_id: togo
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401
+  locator: $.meta, all four component sections, comments and source annotations
+  accessed_at: '2026-10-21T09:49:54.063479Z'
+  support: supports
+  summary: M401 explicitly maps to JCM_M403 and its exact collection URL. Main ingredients,
+    three local stocks, four additions and gas entries are separate provider objects.
+  snapshot_sha256: 380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1
+- evidence_id: jcm
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=403
+  locator: Complete JCM 403 medium, three local stock tables and preparation
+  accessed_at: '2026-10-21T09:49:56.169277Z'
+  support: supports
+  summary: Exact current collection source agrees with provider batch quantities and
+    specifies preparation and pH. Its current accessibility does not resolve an unrelated
+    historical MIM identifier.
+  snapshot_sha256: b28331b54771accff48da1b68077398dd7450ee8746eaf1aec1b4ef7a055bd61
+- evidence_id: trace-provider
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M296
+  locator: $.meta and $.components[1] Trace element solution only
+  accessed_at: '2026-10-21T09:49:53.887201Z'
+  support: supports
+  summary: M296 maps to JCM 301; only its Trace element solution is the dependency
+    used by M401. Parent-medium and growth-factor formulations are excluded.
+  snapshot_sha256: 62533d646c5edfdc7de898066d9725d992267bf71b560442900ea6860e329757
+- evidence_id: trace-primary
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=301
+  locator: Trace element solution subsection and its immediately following preparation
+    paragraph only
+  accessed_at: '2026-10-21T09:51:04.603093Z'
+  support: supports
+  summary: The named trace stock is fully available. Its printed Zn2SO4 formula is
+    retained as a source ambiguity, without silently changing it to a chosen zinc
+    salt.
+  snapshot_sha256: 995f52ddc6ecf823a1e2612fc2bcf785d08cab3c81a81182446b6e83920bfc10
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch015/149/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T10:14:58Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: ad687cf984610c6bb701397eaf9b91ecb1bbcdf0925a525585c573e5ccfbc18e
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.097802Z'
+  support: supports
+  summary: CHEBI:15377 resolves to water. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi15940
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:11.874279Z'
+  support: supports
+  summary: CHEBI:15940 resolves to nicotinic acid. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 3330ed782e73526a087fb250ed5895ff232f117a896d45d541dff431e5c1f0e1
+- evidence_id: chebi15956
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:30.425993Z'
+  support: supports
+  summary: CHEBI:15956 resolves to biotin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: d2d51887df4de92642b66e9d15086ef82eccbc476dd4077d514ca709181ab4bd
+- evidence_id: chebi16526
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16526
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.337128Z'
+  support: supports
+  summary: CHEBI:16526 resolves to carbon dioxide. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 19b976653e14322f23a21b90b537bfcd19bb4e73d8d0de96446a25888cd3caf6
+- evidence_id: chebi16830
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16830
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T09:49:55.028850Z'
+  support: supports
+  summary: CHEBI:16830 resolves to methylamine. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 5dc27e6af26413ba06572ee07c4596c60d31b61e391b2f3a09a89677784c929a
+- evidence_id: chebi176843
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.997779Z'
+  support: supports
+  summary: CHEBI:176843 resolves to vitamin B12. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: b535c3de88f47e93aed8909c58ff4e2d054a6845dea3bc9a048c18df12b371a9
+- evidence_id: chebi17790
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17790
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:00:47.448030Z'
+  support: supports
+  summary: CHEBI:17790 resolves to methanol. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 9954cafff5982d415d5fbed82fa4630ac9958247ed636b3c770976752ebd50de
+- evidence_id: chebi17997
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17997
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:27.385647Z'
+  support: supports
+  summary: CHEBI:17997 resolves to dinitrogen. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: ea4b3f90994884c49607689e3f3939cfec804c7d17905bbeecfc0ef7f80ead43
+- evidence_id: chebi18276
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_18276
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:27.615173Z'
+  support: supports
+  summary: CHEBI:18276 resolves to dihydrogen. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 47a32d9cfe41e3759385a0e4e002e9fa208fe1511d84e3d0d1f9f1ca9ce6e86d
+- evidence_id: chebi30753
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:12.829785Z'
+  support: supports
+  summary: CHEBI:30753 resolves to 4-aminobenzoic acid. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 97ea54b8020d3bcda2478182be115d2bc632249ee22b197b0575a4a9fd5fe21a
+- evidence_id: chebi30961
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:44.571163Z'
+  support: supports
+  summary: CHEBI:30961 resolves to pyridoxine hydrochloride. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: f1c95b83f5396067c3959c20ee4715c78f7895f5084dd214b3a4bf01e064f21d
+- evidence_id: chebi31206
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.439407Z'
+  support: supports
+  summary: CHEBI:31206 resolves to ammonium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi32139
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:16:24.226823Z'
+  support: supports
+  summary: CHEBI:32139 resolves to sodium hydrogencarbonate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 2a41873aa455dc8563a47d36add836fffb6fb758ce7a2d1c28295e77646315fe
+- evidence_id: chebi32954
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32954
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:00:48.206583Z'
+  support: supports
+  summary: CHEBI:32954 resolves to sodium acetate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 573cba85f57c363463610a20b17be618893d6432ba239604fbd8aa562f98161b
+- evidence_id: chebi49105
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:10.911379Z'
+  support: supports
+  summary: CHEBI:49105 resolves to thiamine hydrochloride. Identifier existence and
+    label metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 0b923c215888606038af1e3f0c1b1bcc35e4ab84966d1733a91fdfcbee8f2ae4
+- evidence_id: chebi62965
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62965
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T09:49:55.570542Z'
+  support: supports
+  summary: CHEBI:62965 resolves to sodium formate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: f36b7c1107922c948bf6387ce77e0468c3fcdf76ce80969b5411b600e051910d
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi63939
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:09.796192Z'
+  support: supports
+  summary: CHEBI:63939 resolves to sodium tungstate dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 987144fa0342502834f116860a4b4f71696f62c18e7b701301667c15e588562a
+- evidence_id: chebi76209
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:04.847843Z'
+  support: supports
+  summary: CHEBI:76209 resolves to sodium sulfide nonahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: f74d2c85574a4e28bdf71a78e4263f7e4c211036cd6d63b1f8282aca1d255e5c
+- evidence_id: chebi77775
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_77775
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:09.354177Z'
+  support: supports
+  summary: CHEBI:77775 resolves to sodium selenate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: a1a4ab87bbf08908fef7df53a788a85d9f6eee32350f082895e0563d6344c908
+- evidence_id: chebi8806
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.774007Z'
+  support: supports
+  summary: CHEBI:8806 resolves to Resazurin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T10:14:58Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:15377":
+    [{"label": "Distilled water", "match_type": "preferred_term", "identifier": "CHEBI:15377",
+    "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:15940": [{"label": "Nicotinic acid",
+    "match_type": "preferred_term", "identifier": "CHEBI:15940", "preferred_term":
+    "Nicotinic acid", "ontology_id": "CHEBI:15940", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:15956": [{"label": "Biotin", "match_type": "preferred_term",
+    "identifier": "CHEBI:15956", "preferred_term": "Biotin", "ontology_id": "CHEBI:15956",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:16830": [{"label":
+    "Methylamine", "match_type": "preferred_term", "identifier": "CHEBI:16830", "preferred_term":
+    "Methylamine", "ontology_id": "CHEBI:16830", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:176843": [{"label": "Vitamin B12", "match_type": "preferred_term",
+    "identifier": "CHEBI:176843", "preferred_term": "Vitamin B12", "ontology_id":
+    "CHEBI:176843", "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}], "CHEBI:17790":
+    [{"label": "Methanol", "match_type": "preferred_term", "identifier": "CHEBI:17790",
+    "preferred_term": "Methanol", "ontology_id": "CHEBI:17790", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:30753": [{"label": "p-Aminobenzoic acid",
+    "match_type": "preferred_term", "identifier": "CHEBI:30753", "preferred_term":
+    "p-Aminobenzoic acid", "ontology_id": "CHEBI:30753", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:31206": [{"label": "NH4Cl", "match_type": "preferred_term",
+    "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32139": [{"label":
+    "NaHCO3", "match_type": "preferred_term", "identifier": "CHEBI:32139", "preferred_term":
+    "NaHCO3", "ontology_id": "CHEBI:32139", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:32954": [{"label": "Na-acetate", "match_type": "preferred_term",
+    "identifier": "CHEBI:32954", "preferred_term": "Na-acetate", "ontology_id": "CHEBI:32954",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:62965": [{"label":
+    "Na-formate", "match_type": "preferred_term", "identifier": "CHEBI:62965", "preferred_term":
+    "Na-formate", "ontology_id": "CHEBI:62965", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term",
+    "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:77775": [{"label":
+    "Na2SeO4", "match_type": "preferred_term", "identifier": "CHEBI:77775", "preferred_term":
+    "Na2SeO4", "ontology_id": "CHEBI:77775", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:8806": [{"label": "Resazurin", "match_type": "preferred_term",
+    "identifier": "CHEBI:8806", "preferred_term": "Resazurin", "ontology_id": "CHEBI:8806",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: mim-tree
+  kind: database
+  reference: https://api.github.com/repos/CultureBotAI/MediaIngredientMech/git/trees/6643131b0f12ab40b66f98135245fca04027e0e9?recursive=1
+  locator: Pinned commit 6643131b0f12ab40b66f98135245fca04027e0e9; complete tree path
+    listing
+  accessed_at: '2026-10-21T09:51:04.602158Z'
+  support: supports
+  summary: The pinned repository tree is accessible and not truncated. This establishes
+    repository snapshot structure, not historical legacy identifier correspondence.
+  snapshot_sha256: 71721421c6e8100b080d4ee3140f6e0bb4bcd21b57964ceeb61399ca4a2844ec
+- evidence_id: mim-catalogue
+  kind: database
+  reference: https://raw.githubusercontent.com/CultureBotAI/MediaIngredientMech/6643131b0f12ab40b66f98135245fca04027e0e9/docs/data/all_ingredients.json
+  locator: All 2953 current catalogue entries searched for exact legacy token
+  accessed_at: '2026-10-21T09:52:30.606764Z'
+  support: supports
+  summary: The exact legacy token is absent from this current catalogue. Generic pantothenate
+    labels or synonyms do not establish its historical ID mapping.
+  snapshot_sha256: 474ff60bd51606ef6e272b8b22d421bbe51d9f78567a114f94e59d04fe51acc7
+- evidence_id: legacy-audit
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch015/149/legacy-correspondence-audit.json
+  locator: Exact-token searches of complete pinned index and catalogue; bounded tree
+    metadata
+  accessed_at: '2026-10-21T10:14:58Z'
+  support: context_only
+  summary: The local legacy link remains historically unresolved. Current indexed
+    CHEBI links are a separate verified population.
+  snapshot_sha256: b8f78650d65fdb5c42bde5d5380c29e495cd13fc8946feda93affab42de8c62a
+  search_scope: Complete pinned index and complete current catalogue contents were
+    read, independent of gitignore; tree inspection covers paths only. No claim of
+    exhaustive historical Git content search.
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T10:14:58Z'
+  support: context_only
+  summary: The current parser separates primary and stock sections, preserves names
+    and source comments, and handles explicit units/gas variables. Its top-level pH
+    reader differs from meta.ph, and its generic unit mapping is not proof of a final-volume
+    basis. These are current-code observations; historical flattened fields do not
+    establish a present replay of the same defect.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ACETOBACTERIUM_SUBMARINUS_MEDIUM.yaml; data/normalized_yaml/bacterial/TOGO_M401_Acetobacterium_Submarinus_Medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T10:14:58Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 14, "timestamp_issues": []}, {"input":
+    "data/normalized_yaml/bacterial/TOGO_M401_Acetobacterium_Submarinus_Medium.yaml",
+    "events": 13, "timestamp_issues": []}]'
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:009785
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: Target, maintained owner and exact source dependencies
+  outcome: supported
+  summary: CultureMech:009785 resolves to the TOGO M401 owner and exact JCM 403 source.
+    The generated record differs only by merge metadata/event. The M296 reference
+    resolves to JCM 301 Trace element solution, not the entire JCM 301 medium.
+  target_ids:
+  - CultureMech:009785
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - togo
+  - jcm
+  - trace-provider
+  - trace-primary
+- assessment_id: quantities
+  area: quantity
+  topic: All direct rows, stock additions, referenced-stock entries and quantified
+    preparation contexts
+  outcome: concern
+  summary: 48 native decisions retain exact source units, stages and quantified preparation
+    contexts. Water combines incompatible volume numerals; three main milligram masses
+    become gram concentrations; methanol and buffer volumes become mass concentrations;
+    local vitamin-stock rows are flattened. Main gram numerals alone do not establish
+    final G_PER_L. No percentage basis or final-volume arithmetic is invented.
+  target_ids:
+  - CultureMech:009785
+  evidence_ids:
+  - record
+  - owner-0
+  - togo
+  - jcm
+  - trace-provider
+  - trace-primary
+  - quantity-inventory
+  details: '[{"field_path": "ingredients[0].concentration", "name": "Distilled water",
+    "stored": {"value": "101.0", "unit": "G_PER_L"}, "decision": "correct", "source_stage":
+    "$.components[0]", "rationale": "Stored 101 G_PER_L sums the numeric values of
+    1 L main water and 100 ml B12-stock water, conflating units and stages. Neither
+    is a solute mass. Restore separate solvent contexts without assuming density or
+    final medium volume.", "source_snippets": [{"source_key": "togoM401", "source_url":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401", "source_locator":
+    "$.components[0].items[0]", "exact_source_quote": "\"component_name\": \"Distilled
+    water\",\n          \"volume\": 1,\n          \"unit\": \"L\"", "snapshot_sha256":
+    "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}, {"source_key":
+    "togoM401", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401",
+    "source_locator": "$.components[3].items[0]", "exact_source_quote": "\"component_name\":
+    \"Distilled water\",\n          \"volume\": 100,\n          \"unit\": \"ml\"",
+    "snapshot_sha256": "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]},
+    {"field_path": "ingredients[1].concentration", "name": "KH2PO4", "stored": {"value":
+    "0.2", "unit": "G_PER_L"}, "decision": "unsupported", "source_stage": "$.components[0]",
+    "rationale": "The original gram batch amount matches the stored numeral. The source
+    gives 1 L water plus later liquid additions, not an explicit receiving final volume;
+    G_PER_L is therefore not independently verified as final concentration.", "source_snippets":
+    [{"source_key": "togoM401", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401",
+    "source_locator": "$.components[0].items[1]", "exact_source_quote": "\"component_name\":
+    \"KH2PO4\",\n          \"volume\": 0.2,\n          \"unit\": \"g\"", "snapshot_sha256":
+    "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]}, {"field_path":
+    "ingredients[2].concentration", "name": "NH4Cl", "stored": {"value": "0.27", "unit":
+    "G_PER_L"}, "decision": "unsupported", "source_stage": "$.components[0]", "rationale":
+    "The original gram batch amount matches the stored numeral. The source gives 1
+    L water plus later liquid additions, not an explicit receiving final volume; G_PER_L
+    is therefore not independently verified as final concentration.", "source_snippets":
+    [{"source_key": "togoM401", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401",
+    "source_locator": "$.components[0].items[2]", "exact_source_quote": "\"component_name\":
+    \"NH4Cl\",\n          \"volume\": 0.27,\n          \"unit\": \"g\"", "snapshot_sha256":
+    "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]}, {"field_path":
+    "ingredients[3].concentration", "name": "Resazurin", "stored": {"value": "0.5",
+    "unit": "G_PER_L"}, "decision": "correct", "source_stage": "$.components[0]",
+    "rationale": "The source unit is mg, whereas the same numeral is stored as G_PER_L.
+    Preserve the original batch mass and establish the receiving-volume basis separately;
+    no final concentration is calculated here.", "source_snippets": [{"source_key":
+    "togoM401", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401",
+    "source_locator": "$.components[0].items[3]", "exact_source_quote": "\"component_name\":
+    \"Resazurin\",\n          \"volume\": 0.5,\n          \"unit\": \"mg\"", "snapshot_sha256":
+    "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]}, {"field_path":
+    "ingredients[4].concentration", "name": "Na2S・9H2O", "stored": {"value": "0.5",
+    "unit": "G_PER_L"}, "decision": "unsupported", "source_stage": "$.components[0]",
+    "rationale": "The original gram batch amount matches the stored numeral. The source
+    gives 1 L water plus later liquid additions, not an explicit receiving final volume;
+    G_PER_L is therefore not independently verified as final concentration.", "source_snippets":
+    [{"source_key": "togoM401", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401",
+    "source_locator": "$.components[0].items[4]", "exact_source_quote": "\"component_name\":
+    \"Na2S・9H2O\",\n          \"volume\": 0.5,\n          \"unit\": \"g\"", "snapshot_sha256":
+    "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]}, {"field_path":
+    "ingredients[5].concentration", "name": "NaHCO3", "stored": {"value": "1.26",
+    "unit": "G_PER_L"}, "decision": "unsupported", "source_stage": "$.components[0]",
+    "rationale": "The original gram batch amount matches the stored numeral. The source
+    gives 1 L water plus later liquid additions, not an explicit receiving final volume;
+    G_PER_L is therefore not independently verified as final concentration.", "source_snippets":
+    [{"source_key": "togoM401", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401",
+    "source_locator": "$.components[0].items[5]", "exact_source_quote": "\"component_name\":
+    \"NaHCO3\",\n          \"volume\": 1.26,\n          \"unit\": \"g\"", "snapshot_sha256":
+    "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]}, {"field_path":
+    "ingredients[6].concentration", "name": "Sodium acetate", "stored": {"value":
+    "1", "unit": "G_PER_L"}, "decision": "unsupported", "source_stage": "$.components[0]",
+    "rationale": "The original gram batch amount matches the stored numeral. The source
+    gives 1 L water plus later liquid additions, not an explicit receiving final volume;
+    G_PER_L is therefore not independently verified as final concentration. Sodium
+    acetate hydration is unspecified in the source; the asserted anhydrous identity
+    is narrower than verified source form.", "source_snippets": [{"source_key": "togoM401",
+    "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401",
+    "source_locator": "$.components[0].items[6]", "exact_source_quote": "\"component_name\":
+    \"Sodium acetate\",\n          \"volume\": 1,\n          \"unit\": \"g\"", "snapshot_sha256":
+    "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]}, {"field_path":
+    "ingredients[7].concentration", "name": "Na2WO4・2H2O", "stored": {"value": "30",
+    "unit": "G_PER_L"}, "decision": "correct", "source_stage": "$.components[0]",
+    "rationale": "The source unit is mg, whereas the same numeral is stored as G_PER_L.
+    Preserve the original batch mass and establish the receiving-volume basis separately;
+    no final concentration is calculated here.", "source_snippets": [{"source_key":
+    "togoM401", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401",
+    "source_locator": "$.components[0].items[7]", "exact_source_quote": "\"component_name\":
+    \"Na2WO4・2H2O\",\n          \"volume\": 30,\n          \"unit\": \"mg\"", "snapshot_sha256":
+    "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]}, {"field_path":
+    "ingredients[8].concentration", "name": "Methanol", "stored": {"value": "5", "unit":
+    "G_PER_L"}, "decision": "correct", "source_stage": "$.components[0]", "rationale":
+    "The source supplies 5 ml methanol, not 5 g/L. No density, purity or final-volume
+    assumption supports the stored mass concentration.", "source_snippets": [{"source_key":
+    "togoM401", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401",
+    "source_locator": "$.components[0].items[8]", "exact_source_quote": "\"component_name\":
+    \"Methanol\",\n          \"volume\": 5,\n          \"unit\": \"ml\"", "snapshot_sha256":
+    "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]}, {"field_path":
+    "ingredients[9].concentration", "name": "Sea salts (Sigma)", "stored": {"value":
+    "30", "unit": "G_PER_L"}, "decision": "unsupported", "source_stage": "$.components[0]",
+    "rationale": "The original gram batch amount matches the stored numeral. The source
+    gives 1 L water plus later liquid additions, not an explicit receiving final volume;
+    G_PER_L is therefore not independently verified as final concentration.", "source_snippets":
+    [{"source_key": "togoM401", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401",
+    "source_locator": "$.components[0].items[9]", "exact_source_quote": "\"component_name\":
+    \"Sea salts (Sigma)\",\n          \"volume\": 30,\n          \"unit\": \"g\"",
+    "snapshot_sha256": "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]},
+    {"field_path": "ingredients[10].concentration", "name": "Methylamine", "stored":
+    {"value": "2", "unit": "G_PER_L"}, "decision": "unsupported", "source_stage":
+    "$.components[0]", "rationale": "The original gram batch amount matches the stored
+    numeral. The source gives 1 L water plus later liquid additions, not an explicit
+    receiving final volume; G_PER_L is therefore not independently verified as final
+    concentration.", "source_snippets": [{"source_key": "togoM401", "source_url":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401", "source_locator":
+    "$.components[0].items[10]", "exact_source_quote": "\"component_name\": \"Methylamine\",\n          \"volume\":
+    2,\n          \"unit\": \"g\"", "snapshot_sha256": "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]},
+    {"field_path": "ingredients[11].concentration", "name": "Na2SeO4", "stored": {"value":
+    "0.5", "unit": "G_PER_L"}, "decision": "correct", "source_stage": "$.components[0]",
+    "rationale": "The source unit is mg, whereas the same numeral is stored as G_PER_L.
+    Preserve the original batch mass and establish the receiving-volume basis separately;
+    no final concentration is calculated here.", "source_snippets": [{"source_key":
+    "togoM401", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401",
+    "source_locator": "$.components[0].items[11]", "exact_source_quote": "\"component_name\":
+    \"Na2SeO4\",\n          \"volume\": 0.5,\n          \"unit\": \"mg\"", "snapshot_sha256":
+    "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]}, {"field_path":
+    "ingredients[12].concentration", "name": "Yeast extract (BD-Difco)", "stored":
+    {"value": "0.1", "unit": "G_PER_L"}, "decision": "unsupported", "source_stage":
+    "$.components[0]", "rationale": "The original gram batch amount matches the stored
+    numeral. The source gives 1 L water plus later liquid additions, not an explicit
+    receiving final volume; G_PER_L is therefore not independently verified as final
+    concentration.", "source_snippets": [{"source_key": "togoM401", "source_url":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401", "source_locator":
+    "$.components[0].items[12]", "exact_source_quote": "\"component_name\": \"Yeast
+    extract (BD-Difco)\",\n          \"volume\": 0.1,\n          \"unit\": \"g\"",
+    "snapshot_sha256": "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]},
+    {"field_path": "ingredients[13].concentration", "name": "Sodium formate", "stored":
+    {"value": "5", "unit": "G_PER_L"}, "decision": "unsupported", "source_stage":
+    "$.components[0]", "rationale": "The original gram batch amount matches the stored
+    numeral. The source gives 1 L water plus later liquid additions, not an explicit
+    receiving final volume; G_PER_L is therefore not independently verified as final
+    concentration.", "source_snippets": [{"source_key": "togoM401", "source_url":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401", "source_locator":
+    "$.components[0].items[13]", "exact_source_quote": "\"component_name\": \"Sodium
+    formate\",\n          \"volume\": 5,\n          \"unit\": \"g\"", "snapshot_sha256":
+    "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]}, {"field_path":
+    "ingredients[14].concentration", "name": "Carbon dioxide gas", "stored": {"value":
+    "variable", "unit": "VARIABLE"}, "decision": "not_quantified", "source_stage":
+    "$.components[0]", "rationale": "The source gas object has no scalar dose; VARIABLE
+    preserves that uncertainty. Gas identity alone does not retain the atmosphere,
+    mixture ratio, sequence or pressure in the separate source preparation.", "source_snippets":
+    [{"source_key": "togoM401", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401",
+    "source_locator": "$.components[0].items[18]", "exact_source_quote": "\"component_name\":
+    \"Carbon dioxide gas\"", "snapshot_sha256": "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]},
+    {"field_path": "ingredients[15].concentration", "name": "N2", "stored": {"value":
+    "variable", "unit": "VARIABLE"}, "decision": "not_quantified", "source_stage":
+    "$.components[0]", "rationale": "The source gas object has no scalar dose; VARIABLE
+    preserves that uncertainty. Gas identity alone does not retain the atmosphere,
+    mixture ratio, sequence or pressure in the separate source preparation.", "source_snippets":
+    [{"source_key": "togoM401", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401",
+    "source_locator": "$.components[0].items[19]", "exact_source_quote": "\"component_name\":
+    \"N2\"", "snapshot_sha256": "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]},
+    {"field_path": "ingredients[16].concentration", "name": "Hydrogen gas", "stored":
+    {"value": "variable", "unit": "VARIABLE"}, "decision": "not_quantified", "source_stage":
+    "$.components[0]", "rationale": "The source gas object has no scalar dose; VARIABLE
+    preserves that uncertainty. Gas identity alone does not retain the atmosphere,
+    mixture ratio, sequence or pressure in the separate source preparation.", "source_snippets":
+    [{"source_key": "togoM401", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401",
+    "source_locator": "$.components[0].items[20]", "exact_source_quote": "\"component_name\":
+    \"Hydrogen gas\"", "snapshot_sha256": "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]},
+    {"field_path": "ingredients[17].concentration", "name": "Biotin", "stored": {"value":
+    "1", "unit": "G_PER_L"}, "decision": "correct", "source_stage": "$.components[1]",
+    "rationale": "This row belongs to a named local stock, not the receiving-medium
+    direct ingredients. Milligram masses and millilitre buffer volumes were copied
+    as G_PER_L. Restore the source stock and its separate 1 ml addition; no final
+    concentration or unreported stock makeup volume is inferred.", "source_snippets":
+    [{"source_key": "togoM401", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401",
+    "source_locator": "$.components[1].items[0]", "exact_source_quote": "\"component_name\":
+    \"Biotin\",\n          \"volume\": 1,\n          \"unit\": \"mg\"", "snapshot_sha256":
+    "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]}, {"field_path":
+    "ingredients[18].concentration", "name": "p--Aminobenzoic acid", "stored": {"value":
+    "4", "unit": "G_PER_L"}, "decision": "correct", "source_stage": "$.components[1]",
+    "rationale": "This row belongs to a named local stock, not the receiving-medium
+    direct ingredients. Milligram masses and millilitre buffer volumes were copied
+    as G_PER_L. Restore the source stock and its separate 1 ml addition; no final
+    concentration or unreported stock makeup volume is inferred.", "source_snippets":
+    [{"source_key": "togoM401", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401",
+    "source_locator": "$.components[1].items[1]", "exact_source_quote": "\"component_name\":
+    \"p--Aminobenzoic acid\",\n          \"volume\": 4,\n          \"unit\": \"mg\"",
+    "snapshot_sha256": "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]},
+    {"field_path": "ingredients[19].concentration", "name": "Pyridoxine・HCl", "stored":
+    {"value": "10", "unit": "G_PER_L"}, "decision": "correct", "source_stage": "$.components[1]",
+    "rationale": "This row belongs to a named local stock, not the receiving-medium
+    direct ingredients. Milligram masses and millilitre buffer volumes were copied
+    as G_PER_L. Restore the source stock and its separate 1 ml addition; no final
+    concentration or unreported stock makeup volume is inferred.", "source_snippets":
+    [{"source_key": "togoM401", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401",
+    "source_locator": "$.components[1].items[2]", "exact_source_quote": "\"component_name\":
+    \"Pyridoxine・HCl\",\n          \"volume\": 10,\n          \"unit\": \"mg\"", "snapshot_sha256":
+    "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]}, {"field_path":
+    "ingredients[20].concentration", "name": "Nicotinic acid", "stored": {"value":
+    "10", "unit": "G_PER_L"}, "decision": "correct", "source_stage": "$.components[1]",
+    "rationale": "This row belongs to a named local stock, not the receiving-medium
+    direct ingredients. Milligram masses and millilitre buffer volumes were copied
+    as G_PER_L. Restore the source stock and its separate 1 ml addition; no final
+    concentration or unreported stock makeup volume is inferred.", "source_snippets":
+    [{"source_key": "togoM401", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401",
+    "source_locator": "$.components[1].items[3]", "exact_source_quote": "\"component_name\":
+    \"Nicotinic acid\",\n          \"volume\": 10,\n          \"unit\": \"mg\"", "snapshot_sha256":
+    "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]}, {"field_path":
+    "ingredients[21].concentration", "name": "Sodium phosphate buffer (10 mM, pH 7.1)",
+    "stored": {"value": "100", "unit": "G_PER_L"}, "decision": "correct", "source_stage":
+    "$.components[1]", "rationale": "This row belongs to a named local stock, not
+    the receiving-medium direct ingredients. Milligram masses and millilitre buffer
+    volumes were copied as G_PER_L. Restore the source stock and its separate 1 ml
+    addition; no final concentration or unreported stock makeup volume is inferred.
+    Preserve the exact buffer molarity and pH in its stock identity, without treating
+    the buffer as a pure compound or its volume as mass.", "source_snippets": [{"source_key":
+    "togoM401", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401",
+    "source_locator": "$.components[1].items[4]", "exact_source_quote": "\"component_name\":
+    \"Sodium phosphate buffer (10 mM, pH 7.1)\",\n          \"volume\": 100,\n          \"unit\":
+    \"ml\"", "snapshot_sha256": "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]},
+    {"field_path": "ingredients[22].concentration", "name": "DL--Calcium pantothenate",
+    "stored": {"value": "5", "unit": "G_PER_L"}, "decision": "correct", "source_stage":
+    "$.components[1]", "rationale": "This row belongs to a named local stock, not
+    the receiving-medium direct ingredients. Milligram masses and millilitre buffer
+    volumes were copied as G_PER_L. Restore the source stock and its separate 1 ml
+    addition; no final concentration or unreported stock makeup volume is inferred.
+    The source explicitly specifies DL-calcium pantothenate. The surviving legacy
+    identifier remains unresolved; a current stereospecific CHEBI term or synonym
+    is not a validated replacement.", "source_snippets": [{"source_key": "togoM401",
+    "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401",
+    "source_locator": "$.components[1].items[5]", "exact_source_quote": "\"component_name\":
+    \"DL--Calcium pantothenate\",\n          \"volume\": 5,\n          \"unit\": \"mg\"",
+    "snapshot_sha256": "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]},
+    {"field_path": "ingredients[23].concentration", "name": "Thiamine・HCl", "stored":
+    {"value": "10", "unit": "G_PER_L"}, "decision": "correct", "source_stage": "$.components[2]",
+    "rationale": "This row belongs to a named local stock, not the receiving-medium
+    direct ingredients. Milligram masses and millilitre buffer volumes were copied
+    as G_PER_L. Restore the source stock and its separate 1 ml addition; no final
+    concentration or unreported stock makeup volume is inferred.", "source_snippets":
+    [{"source_key": "togoM401", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401",
+    "source_locator": "$.components[2].items[0]", "exact_source_quote": "\"component_name\":
+    \"Thiamine・HCl\",\n          \"volume\": 10,\n          \"unit\": \"mg\"", "snapshot_sha256":
+    "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]}, {"field_path":
+    "ingredients[24].concentration", "name": "Sodium phosphate buffer (25 mM, pH 3.4)",
+    "stored": {"value": "100", "unit": "G_PER_L"}, "decision": "correct", "source_stage":
+    "$.components[2]", "rationale": "This row belongs to a named local stock, not
+    the receiving-medium direct ingredients. Milligram masses and millilitre buffer
+    volumes were copied as G_PER_L. Restore the source stock and its separate 1 ml
+    addition; no final concentration or unreported stock makeup volume is inferred.
+    Preserve the exact buffer molarity and pH in its stock identity, without treating
+    the buffer as a pure compound or its volume as mass.", "source_snippets": [{"source_key":
+    "togoM401", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401",
+    "source_locator": "$.components[2].items[1]", "exact_source_quote": "\"component_name\":
+    \"Sodium phosphate buffer (25 mM, pH 3.4)\",\n          \"volume\": 100,\n          \"unit\":
+    \"ml\"", "snapshot_sha256": "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]},
+    {"field_path": "ingredients[25].concentration", "name": "Vitamin B12", "stored":
+    {"value": "5", "unit": "G_PER_L"}, "decision": "correct", "source_stage": "$.components[3]",
+    "rationale": "This row belongs to a named local stock, not the receiving-medium
+    direct ingredients. Milligram masses and millilitre buffer volumes were copied
+    as G_PER_L. Restore the source stock and its separate 1 ml addition; no final
+    concentration or unreported stock makeup volume is inferred.", "source_snippets":
+    [{"source_key": "togoM401", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401",
+    "source_locator": "$.components[3].items[1]", "exact_source_quote": "\"component_name\":
+    \"Vitamin B12\",\n          \"volume\": 5,\n          \"unit\": \"mg\"", "snapshot_sha256":
+    "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]}, {"field_path":
+    "solutions[0].concentration", "name": "Trace element solution (see Medium [M296])",
+    "stored": {"value": "1", "unit": "G_PER_L"}, "decision": "correct", "rationale":
+    "The source gives a 1 ml addition of this named stock. It is not 1 g/L, and no
+    final ml/L is inferred. Preserve the exact identity and source-local composition
+    instead of the empty Unknown solution representation.", "source_snippets": [{"source_key":
+    "togoM401", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401",
+    "source_locator": "$.components[0].items[14]", "exact_source_quote": "\"component_name\":
+    \"Trace element solution (see Medium [M296])\",\n          \"volume\": 1,\n          \"unit\":
+    \"ml\"", "snapshot_sha256": "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]},
+    {"field_path": "solutions[1].concentration", "name": "Vitamin solution (see below)",
+    "stored": {"value": "1", "unit": "G_PER_L"}, "decision": "correct", "rationale":
+    "The source gives a 1 ml addition of this named stock. It is not 1 g/L, and no
+    final ml/L is inferred. Preserve the exact identity and source-local composition
+    instead of the empty Unknown solution representation.", "source_snippets": [{"source_key":
+    "togoM401", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401",
+    "source_locator": "$.components[0].items[15]", "exact_source_quote": "\"component_name\":
+    \"Vitamin solution (see below)\",\n          \"volume\": 1,\n          \"unit\":
+    \"ml\"", "snapshot_sha256": "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]},
+    {"field_path": "solutions[2].concentration", "name": "Thiamine solution (see below)",
+    "stored": {"value": "1", "unit": "G_PER_L"}, "decision": "correct", "rationale":
+    "The source gives a 1 ml addition of this named stock. It is not 1 g/L, and no
+    final ml/L is inferred. Preserve the exact identity and source-local composition
+    instead of the empty Unknown solution representation.", "source_snippets": [{"source_key":
+    "togoM401", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401",
+    "source_locator": "$.components[0].items[16]", "exact_source_quote": "\"component_name\":
+    \"Thiamine solution (see below)\",\n          \"volume\": 1,\n          \"unit\":
+    \"ml\"", "snapshot_sha256": "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]},
+    {"field_path": "solutions[3].concentration", "name": "Vitamin B12 solution (see
+    below)", "stored": {"value": "1", "unit": "G_PER_L"}, "decision": "correct", "rationale":
+    "The source gives a 1 ml addition of this named stock. It is not 1 g/L, and no
+    final ml/L is inferred. Preserve the exact identity and source-local composition
+    instead of the empty Unknown solution representation.", "source_snippets": [{"source_key":
+    "togoM401", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401",
+    "source_locator": "$.components[0].items[17]", "exact_source_quote": "\"component_name\":
+    \"Vitamin B12 solution (see below)\",\n          \"volume\": 1,\n          \"unit\":
+    \"ml\"", "snapshot_sha256": "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]},
+    {"field_path": "solutions[0].composition", "source_component_index": 0, "name":
+    "Distilled water", "stored": [], "decision": "add", "rationale": "The provider
+    water entry is 1 L; the primary specifies starting with 800 ml and making the
+    stock up to 1 L. Preserve those separate preparation roles; final volume is explicit
+    for this stock only.", "source_snippets": [{"source_key": "togoM296", "source_url":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M296", "source_locator":
+    "$.components[1].items[0]", "exact_source_quote": "\"component_name\": \"Distilled
+    water\",\n          \"volume\": 1,\n          \"unit\": \"L\"", "snapshot_sha256":
+    "62533d646c5edfdc7de898066d9725d992267bf71b560442900ea6860e329757"}, {"source_key":
+    "jcm301", "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=301",
+    "source_locator": "Trace element solution preparation, first clause", "exact_source_quote":
+    "Dissolve nitrilotriacetic acid in 800 ml distilled water", "snapshot_sha256":
+    "995f52ddc6ecf823a1e2612fc2bcf785d08cab3c81a81182446b6e83920bfc10", "parsed_text_sha256":
+    "e3cb07d35006d951c7a07aeafe861ade3cf19050f1c8b3832c514a3045e7d915"}, {"source_key":
+    "jcm301", "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=301",
+    "source_locator": "Trace element solution preparation, final clause", "exact_source_quote":
+    "bring volume to 1.0 L.", "snapshot_sha256": "995f52ddc6ecf823a1e2612fc2bcf785d08cab3c81a81182446b6e83920bfc10",
+    "parsed_text_sha256": "e3cb07d35006d951c7a07aeafe861ade3cf19050f1c8b3832c514a3045e7d915"}]},
+    {"field_path": "solutions[0].composition", "source_component_index": 1, "name":
+    "Na2MoO4・2H2O", "stored": [], "decision": "add", "rationale": "Restore this exact
+    constituent in the referenced trace-element stock, retaining original form and
+    batch unit. Do not copy its stock amount into the receiving medium.", "source_snippets":
+    [{"source_key": "togoM296", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M296",
+    "source_locator": "$.components[1].items[1]", "exact_source_quote": "\"component_name\":
+    \"Na2MoO4・2H2O\",\n          \"volume\": 0.01,\n          \"unit\": \"g\"", "snapshot_sha256":
+    "62533d646c5edfdc7de898066d9725d992267bf71b560442900ea6860e329757"}]}, {"field_path":
+    "solutions[0].composition", "source_component_index": 2, "name": "H3BO3", "stored":
+    [], "decision": "add", "rationale": "Restore this exact constituent in the referenced
+    trace-element stock, retaining original form and batch unit. Do not copy its stock
+    amount into the receiving medium.", "source_snippets": [{"source_key": "togoM296",
+    "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M296",
+    "source_locator": "$.components[1].items[2]", "exact_source_quote": "\"component_name\":
+    \"H3BO3\",\n          \"volume\": 0.01,\n          \"unit\": \"g\"", "snapshot_sha256":
+    "62533d646c5edfdc7de898066d9725d992267bf71b560442900ea6860e329757"}]}, {"field_path":
+    "solutions[0].composition", "source_component_index": 3, "name": "FeSO4・7H2O",
+    "stored": [], "decision": "add", "rationale": "Restore this exact constituent
+    in the referenced trace-element stock, retaining original form and batch unit.
+    Do not copy its stock amount into the receiving medium.", "source_snippets": [{"source_key":
+    "togoM296", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M296",
+    "source_locator": "$.components[1].items[3]", "exact_source_quote": "\"component_name\":
+    \"FeSO4・7H2O\",\n          \"volume\": 0.42,\n          \"unit\": \"g\"", "snapshot_sha256":
+    "62533d646c5edfdc7de898066d9725d992267bf71b560442900ea6860e329757"}]}, {"field_path":
+    "solutions[0].composition", "source_component_index": 4, "name": "MnCl2・4H2O",
+    "stored": [], "decision": "add", "rationale": "Restore this exact constituent
+    in the referenced trace-element stock, retaining original form and batch unit.
+    Do not copy its stock amount into the receiving medium.", "source_snippets": [{"source_key":
+    "togoM296", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M296",
+    "source_locator": "$.components[1].items[4]", "exact_source_quote": "\"component_name\":
+    \"MnCl2・4H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\"", "snapshot_sha256":
+    "62533d646c5edfdc7de898066d9725d992267bf71b560442900ea6860e329757"}]}, {"field_path":
+    "solutions[0].composition", "source_component_index": 5, "name": "CoCl2・6H2O",
+    "stored": [], "decision": "add", "rationale": "Restore this exact constituent
+    in the referenced trace-element stock, retaining original form and batch unit.
+    Do not copy its stock amount into the receiving medium.", "source_snippets": [{"source_key":
+    "togoM296", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M296",
+    "source_locator": "$.components[1].items[5]", "exact_source_quote": "\"component_name\":
+    \"CoCl2・6H2O\",\n          \"volume\": 0.17,\n          \"unit\": \"g\"", "snapshot_sha256":
+    "62533d646c5edfdc7de898066d9725d992267bf71b560442900ea6860e329757"}]}, {"field_path":
+    "solutions[0].composition", "source_component_index": 6, "name": "Zn2SO4・7H2O",
+    "stored": [], "decision": "add", "rationale": "Restore this exact constituent
+    in the referenced trace-element stock, retaining original form and batch unit.
+    Do not copy its stock amount into the receiving medium. The source component_name
+    literally says Zn2SO4·7H2O while its provider label says zinc sulfate heptahydrate.
+    The primary also prints Zn2SO4; preserve this ambiguity and resolve supplied identity
+    before any molecular conversion.", "source_snippets": [{"source_key": "togoM296",
+    "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M296",
+    "source_locator": "$.components[1].items[6]", "exact_source_quote": "\"component_name\":
+    \"Zn2SO4・7H2O\",\n          \"volume\": 0.21,\n          \"unit\": \"g\"", "snapshot_sha256":
+    "62533d646c5edfdc7de898066d9725d992267bf71b560442900ea6860e329757"}]}, {"field_path":
+    "solutions[0].composition", "source_component_index": 7, "name": "CuCl2・2H2O",
+    "stored": [], "decision": "add", "rationale": "Restore this exact constituent
+    in the referenced trace-element stock, retaining original form and batch unit.
+    Do not copy its stock amount into the receiving medium.", "source_snippets": [{"source_key":
+    "togoM296", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M296",
+    "source_locator": "$.components[1].items[7]", "exact_source_quote": "\"component_name\":
+    \"CuCl2・2H2O\",\n          \"volume\": 0.02,\n          \"unit\": \"g\"", "snapshot_sha256":
+    "62533d646c5edfdc7de898066d9725d992267bf71b560442900ea6860e329757"}]}, {"field_path":
+    "solutions[0].composition", "source_component_index": 8, "name": "Nitrilotriacetic
+    acid", "stored": [], "decision": "add", "rationale": "Restore this exact constituent
+    in the referenced trace-element stock, retaining original form and batch unit.
+    Do not copy its stock amount into the receiving medium.", "source_snippets": [{"source_key":
+    "togoM296", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M296",
+    "source_locator": "$.components[1].items[8]", "exact_source_quote": "\"component_name\":
+    \"Nitrilotriacetic acid\",\n          \"volume\": 12.8,\n          \"unit\": \"g\"",
+    "snapshot_sha256": "62533d646c5edfdc7de898066d9725d992267bf71b560442900ea6860e329757"}]},
+    {"field_path": "solutions[0].composition", "source_component_index": 9, "name":
+    "NaOH", "stored": [], "decision": "not_quantified", "rationale": "NaOH is an unquantified
+    stock adjustment reagent. Preserve NTA-first adjustment to pH 6.5 followed by
+    minerals and final makeup, without inventing NaOH dose or strength.", "source_snippets":
+    [{"source_key": "togoM296", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M296",
+    "source_locator": "$.components[1].items[9]", "exact_source_quote": "\"component_name\":
+    \"NaOH\"", "snapshot_sha256": "62533d646c5edfdc7de898066d9725d992267bf71b560442900ea6860e329757"},
+    {"source_key": "togoM296", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M296",
+    "source_locator": "$.comments[1].comment", "exact_source_quote": "adjust pH to
+    6.5 with NaOH", "snapshot_sha256": "62533d646c5edfdc7de898066d9725d992267bf71b560442900ea6860e329757"}]},
+    {"field_path": "preparation_steps", "name": "Sulfide preparation stock", "stored":
+    null, "decision": "add", "rationale": "Retain the source stock-strength label
+    and its separate sterilization/storage context. The bare percent basis is unspecified;
+    no w/v, w/w, v/v, density or added volume is inferred from the label.", "source_snippets":
+    [{"source_key": "togoM401", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401",
+    "source_locator": "$.comments[0].comment", "exact_source_quote": "5% Na2S・9H2O
+    solution", "snapshot_sha256": "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]},
+    {"field_path": "preparation_steps", "name": "Bicarbonate preparation stock", "stored":
+    null, "decision": "add", "rationale": "Retain the source stock-strength label
+    and its separate sterilization/storage context. The bare percent basis is unspecified;
+    no w/v, w/w, v/v, density or added volume is inferred from the label.", "source_snippets":
+    [{"source_key": "togoM401", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401",
+    "source_locator": "$.comments[0].comment", "exact_source_quote": "8% NaHCO3 solution",
+    "snapshot_sha256": "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]},
+    {"field_path": "preparation_steps", "name": "Example vessel volumes", "stored":
+    null, "decision": "add", "rationale": "Retain the explicit example qualifier.
+    These volumes are not a universal batch size or concentration denominator.", "source_snippets":
+    [{"source_key": "togoM401", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401",
+    "source_locator": "$.comments[0].comment", "exact_source_quote": "e.g., 20 ml
+    of the medium in 120 ml serum bottles", "snapshot_sha256": "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]},
+    {"field_path": "preparation_steps", "name": "Receiving-stage gas mixture", "stored":
+    null, "decision": "add", "rationale": "Retain the stated receiving-stage mixture
+    and v/v basis without converting gas ratios into dissolved concentrations.", "source_snippets":
+    [{"source_key": "togoM401", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401",
+    "source_locator": "$.comments[0].comment", "exact_source_quote": "under a stream
+    of H2--CO2 (4:1, v/v) gas mixture", "snapshot_sha256": "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]},
+    {"field_path": "preparation_steps", "name": "Bicarbonate storage atmosphere",
+    "stored": null, "decision": "add", "rationale": "This nitrogen/carbon-dioxide
+    ratio belongs to bicarbonate stock storage, not the hydrogen/carbon-dioxide receiving
+    stage.", "source_snippets": [{"source_key": "togoM401", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401",
+    "source_locator": "$.comments[0].comment", "exact_source_quote": "store under
+    a N2--CO2 (4:1, v/v) gas mixture", "snapshot_sha256": "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]},
+    {"field_path": "preparation_steps", "name": "Conditional pH adjustment", "stored":
+    null, "decision": "add", "rationale": "Preserve the if-necessary qualifier and
+    its late preparation stage; no optimal growth pH is inferred.", "source_snippets":
+    [{"source_key": "togoM401", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401",
+    "source_locator": "$.comments[0].comment", "exact_source_quote": "readjust pH
+    to 7.0, if necessary", "snapshot_sha256": "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]},
+    {"field_path": "preparation_steps", "name": "Source pressure and gas mixture",
+    "stored": null, "decision": "add", "rationale": "Preserve pressure and mixture
+    as source-stage context. The source does not specify gauge versus absolute pressure;
+    do not add that assumption.", "source_snippets": [{"source_key": "togoM401", "source_url":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M401", "source_locator":
+    "$.comments[0].comment", "exact_source_quote": "200 kPa H2--CO2 (4:1, v/v)", "snapshot_sha256":
+    "380cb064612f29e5a94e95b7c145b3bc13608fe38de5a6defa50cdcf2bc746f1"}]}, {"field_path":
+    "preparation_steps", "name": "JCM default sterilization context", "stored": null,
+    "decision": "add", "rationale": "Retain the unless-otherwise-stated collection
+    default; distinguish stock-specific sterilization exceptions and do not treat
+    it as incubation.", "source_snippets": [{"source_key": "jcm403", "source_url":
+    "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=403", "source_locator": "Page
+    introduction, default sterilization statement", "exact_source_quote": "121°C for
+    15 min.", "snapshot_sha256": "b28331b54771accff48da1b68077398dd7450ee8746eaf1aec1b4ef7a055bd61",
+    "parsed_text_sha256": "c065cdb99c5fa0703169502db2b68dfda5127d9731695a0b1bd075e0869922a1"}]}]'
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and pinned secondary identifier metadata
+  outcome: concern
+  summary: '21 distinct asserted primary/secondary IDs resolve to matching nonobsolete
+    labels in all inspected layers. Target linkage: 21/26 primary and 14/26 secondary
+    instances; all asserted secondary keys have exact pinned MIM rows. Exact supplied-form
+    mismatch is addressed separately; valid IDs and labels do not establish correct
+    source grounding.'
+  target_ids:
+  - CultureMech:009785
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi15377
+  - chebi15940
+  - chebi15956
+  - chebi16526
+  - chebi16830
+  - chebi176843
+  - chebi17790
+  - chebi17997
+  - chebi18276
+  - chebi30753
+  - chebi30961
+  - chebi31206
+  - chebi32139
+  - chebi32954
+  - chebi49105
+  - chebi62965
+  - chebi63036
+  - chebi63939
+  - chebi76209
+  - chebi77775
+  - chebi8806
+  details: 'Instance coverage on a 0–100 percent scale, denominator 26: primary 80.77%;
+    secondary 53.85%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: legacy
+  area: provenance
+  topic: Historical identity of surviving legacy MIM link
+  outcome: unknown
+  summary: The surviving MediaIngredientMech:000926 link is neither validated nor
+    proved invalid by the accessible current artifacts. The 14 migrated CHEBI secondary
+    links have separate exact pinned rows; no current pantothenate name match replaces
+    the missing historical crosswalk. This required correspondence check remains unavailable
+    and limits completion.
+  target_ids:
+  - CultureMech:009785
+  evidence_ids:
+  - record
+  - owner-0
+  - legacy-audit
+  - mim-tree
+  - mim-catalogue
+  - mim
+- assessment_id: forms
+  area: grounding
+  topic: Chemical forms, mixtures and ungrounded stock identity
+  outcome: concern
+  summary: Asserted current CHEBI labels resolve, including sodium selenate rather
+    than selenite and generic B12 rather than an assumed vitamer. Generic source sodium
+    acetate does not establish the anhydrous form encoded by CHEBI:32954. DL-calcium
+    pantothenate is explicit in the source and has no asserted CHEBI term; historical
+    identity remains unresolved. Sea salts and yeast extract are mixtures with supplier
+    names but no exact product catalogue number. The two phosphate buffers are distinct
+    stock preparations, not pure-molecule identities. The referenced trace-stock zinc
+    formula remains ambiguous as printed.
+  target_ids:
+  - CultureMech:009785
+  evidence_ids:
+  - record
+  - owner-0
+  - togo
+  - jcm
+  - trace-provider
+  - trace-primary
+  - legacy-audit
+  - chebi15377
+  - chebi15940
+  - chebi15956
+  - chebi16526
+  - chebi16830
+  - chebi176843
+  - chebi17790
+  - chebi17997
+  - chebi18276
+  - chebi30753
+  - chebi30961
+  - chebi31206
+  - chebi32139
+  - chebi32954
+  - chebi49105
+  - chebi62965
+  - chebi63036
+  - chebi63939
+  - chebi76209
+  - chebi77775
+  - chebi8806
+- assessment_id: stocks
+  area: representation
+  topic: Named stocks and empty solution containers
+  outcome: concern
+  summary: Four source additions retain preferred terms but all local solution names
+    are Unknown solution and compositions are empty. The three local stock definitions
+    are scattered among direct ingredients; the external trace stock is omitted entirely.
+    Restore stock identity, preparation scope and original source amounts, retaining
+    solvent/buffer and unquantified adjustment roles.
+  target_ids:
+  - CultureMech:009785
+  evidence_ids:
+  - record
+  - owner-0
+  - togo
+  - jcm
+  - trace-provider
+  - trace-primary
+  - quantity-inventory
+- assessment_id: preparation
+  area: completeness
+  topic: Source preparation, pH and staged atmospheres
+  outcome: concern
+  summary: Both local layers omit preparation and pH despite TOGO meta.ph 7.0 and
+    the exact primary narrative. Source distinctions include initial nitrogen handling,
+    a separate hydrogen/carbon-dioxide stage, separately autoclaved sulfide, filter-sterilized
+    bicarbonate with its stated storage atmosphere, later addition, conditional readjustment
+    to pH 7.0 and source vessel-pressure context. The vessel volumes are an example,
+    not a universal batch or dilution denominator. The JCM default autoclave context
+    is available. Trace-stock preparation starts NTA in 800 ml, adjusts pH with NaOH,
+    adds minerals and makes up to 1 L. No parent JCM 301 cultivation procedure is
+    transferred.
+  target_ids:
+  - CultureMech:009785
+  evidence_ids:
+  - record
+  - owner-0
+  - togo
+  - jcm
+  - trace-primary
+  - quantity-inventory
+- assessment_id: classification
+  area: scope
+  topic: Broad class, high-metal flag and provider annotations
+  outcome: concern
+  summary: Liquid, complex/undefined composition is compatible with the recipe and
+    yeast extract/sea-salt mixtures. high_metal:true lacks source-level support; source
+    tungsten is 30 mg per batch, while the record misstates it as 30 g/L. The flag
+    must be reassessed after unit/stage repair without claiming its causal origin
+    or assigning a new threshold. TOGO role/property annotations are imported database
+    classifications, not independent evidence of mechanism or growth. No strain-level
+    claim is added.
+  target_ids:
+  - CultureMech:009785
+  evidence_ids:
+  - record
+  - owner-0
+  - togo
+  - jcm
+  - quantity-inventory
+- assessment_id: evidence
+  area: evidence
+  topic: Claim-level provenance and source boundaries
+  outcome: concern
+  summary: Free-text source notes resolve accessions but do not supply field-level
+    quantity evidence. The reference validator checked zero references. Preserve direct
+    evidence for each unit, stock and preparation claim; do not substitute live JCM
+    source validity for missing historical MIM correspondence. Current import improvements
+    must be considered before choosing a repair path.
+  target_ids:
+  - CultureMech:009785
+  evidence_ids:
+  - record
+  - owner-0
+  - togo
+  - jcm
+  - trace-primary
+  - writer-0
+  - validate-references
+  - legacy-audit
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 27 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:009785
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+findings:
+- finding_id: f1
+  issue_key: m401-dimensional-and-stage-corruption
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Mixed units and stock flattening change the formulation
+  description: Water sums 1 L and 100 ml numerals into 101 G_PER_L; milligrams and
+    liquid volumes become gram concentrations; local stock constituents are direct
+    ingredients; four 1 ml stock doses are stored as G_PER_L. These combined defects
+    prevent the record from denoting the cited formulation. high_metal is unsupported
+    in the presence of the tungsten-unit error.
+  target_ids:
+  - CultureMech:009785
+  field_paths:
+  - ingredients
+  - solutions
+  - high_metal
+  evidence_ids:
+  - record
+  - owner-0
+  - togo
+  - jcm
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M401_Acetobacterium_Submarinus_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+  rule_id: P1
+- finding_id: f2
+  issue_key: m401-stock-identity-and-composition-omissions
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Four empty stock containers lose source identities and definitions
+  description: Preferred terms retain named stocks but every solution name is Unknown
+    solution with empty composition. The exact three local definitions and externally
+    referenced trace stock are available. The trace source contains a printed zinc-form
+    ambiguity that must not be silently normalized.
+  target_ids:
+  - CultureMech:009785
+  field_paths:
+  - solutions
+  - ingredients[17]
+  - ingredients[25]
+  evidence_ids:
+  - record
+  - owner-0
+  - togo
+  - jcm
+  - trace-provider
+  - trace-primary
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M401_Acetobacterium_Submarinus_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+  rule_id: P2
+- finding_id: f3
+  issue_key: m401-preparation-and-ph-missing
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source pH and essential staged preparation are omitted
+  description: Both local layers omit the full source preparation, including distinct
+    sterilization/storage contexts and conditional pH adjustment. VARIABLE gas entries
+    and supplier/role notes do not preserve these operational distinctions.
+  target_ids:
+  - CultureMech:009785
+  field_paths:
+  - preparation_steps
+  - ph_value
+  - ingredients[14]
+  - ingredients[15]
+  - ingredients[16]
+  evidence_ids:
+  - record
+  - owner-0
+  - togo
+  - jcm
+  - trace-primary
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M401_Acetobacterium_Submarinus_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.5
+  native_severity: P3
+  normalization_reason: P3.5 is promoted to major because the whole staged preparation
+    and pH context is missing, including distinct sterilization and storage assignments,
+    rather than a minor formatting omission.
+- finding_id: f4
+  issue_key: m401-legacy-mim-correspondence-unresolved
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Historical legacy identifier correspondence remains unresolved
+  description: The surviving MediaIngredientMech:000926 link cannot be verified from
+    the accessible current pinned index/catalogue. Exact-token absence is not proof
+    of invalidity, and a current calcium-pantothenate synonym is not a historical
+    crosswalk.
+  target_ids:
+  - CultureMech:009785
+  field_paths:
+  - ingredients[22].mediaingredientmech_term
+  - curation_history
+  evidence_ids:
+  - record
+  - owner-0
+  - legacy-audit
+  - mim-tree
+  - mim-catalogue
+  - mim
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M401_Acetobacterium_Submarinus_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+  rule_id: P3
+- finding_id: f5
+  issue_key: m401-sodium-acetate-form-unresolved
+  category: grounding
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Generic sodium acetate source does not establish anhydrous form
+  description: The source names sodium acetate without hydration specification, while
+    both CHEBI:32954 slots encode the anhydrous form. The present evidence does not
+    prove the source supplied that exact form or any alternative hydrate.
+  target_ids:
+  - CultureMech:009785
+  field_paths:
+  - ingredients[6].term
+  - ingredients[6].mediaingredientmech_chebi_term
+  evidence_ids:
+  - record
+  - owner-0
+  - togo
+  - jcm
+  - chebi32954
+  - mim
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M401_Acetobacterium_Submarinus_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+  rule_id: P3
+actions:
+- action_id: a1
+  description: Correct the TOGO owner using original source units and separate batch/stock
+    stages. Restore solvent roles and stock doses, establish any final-volume denominator
+    before asserting concentrations, and reassess high_metal from source evidence.
+    Preserve old repair history and append a clarification after authorized curation.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:009785
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M401_Acetobacterium_Submarinus_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Restore source-specific stock containers and full original compositions
+    in the maintained owner. Scope the JCM 301 dependency to Trace element solution
+    only, preserve NTA/NaOH/makeup sequence, and document the printed zinc identity
+    uncertainty before assigning an exact molecular form.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:009785
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M401_Acetobacterium_Submarinus_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Restore the exact receiving-medium preparation and pH with narrow source
+    evidence in the owner, keeping all stock handling in its proper scope. Preserve
+    the example-vessel qualifier, separate atmosphere stages and bare-percent uncertainty;
+    do not import procedures from the trace-stock parent medium.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:009785
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M401_Acetobacterium_Submarinus_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Obtain an archived authoritative ID-to-record crosswalk before replacing
+    or retiring the legacy link. Preserve explicit DL source identity and append a
+    provenance clarification; keep the required historical correspondence check unavailable
+    until resolved.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:009785
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M401_Acetobacterium_Submarinus_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a5
+  description: Retain the source mass without hydrate conversion and mark exact supplied
+    form unresolved until supported. Do not choose an alternative hydrate merely from
+    common usage.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:009785
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M401_Acetobacterium_Submarinus_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Partial completion is specifically due to the required unavailable historical correspondence
+  for MediaIngredientMech:000926. Exact current JCM 403 and its trace-stock dependency
+  are accessible and were assessed; their availability cannot validate legacy MIM
+  history.
+- The referenced JCM 301 parent basal medium, growth-stimulating factors and organism-specific
+  cultivation context are excluded. No new growth assertion, supplier catalogue identity,
+  percent basis or final-medium volume is inferred.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-015
+- generated-medium
