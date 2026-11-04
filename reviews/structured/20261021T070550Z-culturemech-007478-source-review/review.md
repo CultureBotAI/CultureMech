@@ -1,0 +1,931 @@
+# Source and formulation review: 219 (CultureMech:007478)
+
+- Review: 20261021T070550Z-culturemech-007478-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T06:57:08Z
+- Finished UTC: 2026-10-21T07:05:50Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The numeric label219 resolves through import provenance to NBRC214, whose two-row skim-milk formulation is available. The generated record still contains concatenated ingredient text and a blank-name row with an ingredient string as its concentration. Its normalized owner has recovered the ingredients, but retains unsupported generic preparation and an overprecise final-volume statement.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 65; batch 007 item 5 of 10, selected in Python lexicographic repository-relative path order from the current uncovered merged corpus. The prior six validated batch lists contain 60 distinct merged target paths. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c has 40 validated baseline bundles covering 2 current merged paths. The union with prior batches covers 62 of 6320 current merged paths before this batch. This target path occurs in neither set. Task ordinals continue the saved-review sequence, not global path ranks after upstream corpus or coverage changes. This bundle selects only the named record; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 24a1d277eb7f0437af53af0d178a30f9bfa6374c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:007478 | data/merge_yaml/merged/219.yaml | generated | 219 |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:007478 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:007478 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-007/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch007/065/strict.tsv |
+| validate-terms | passed | True | CultureMech:007478 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:007478 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:007478 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:007478.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### All asserted primary and current secondary ingredient identifiers
+
+grounding: supported. Targets: CultureMech:007478.
+
+0 primary CHEBI identities resolve with matching labels; 0 of 0 current secondary keys have live pinned-index rows. Unresolved keys: [].
+
+2 direct ingredient instances; CHEBI-primary instance linkage 0/2 (0.00%), verified secondary coverage 0/2 (0.00%). Percentages use a 0–100 linkage scale, not a scientific correctness score. Complex mixtures without asserted IDs remain ungrounded rather than receiving invented pure-molecule identities.
+
+### Numeric local label and original accession
+
+identity: supported. Targets: CultureMech:007478.
+
+Despite local name219, description and import provenance consistently identify NBRC214. The exact legacy URL resolves to that accession. Its current primary title is empty, so no official medium title is invented from the local scrape label.
+
+### ingredients[0]
+
+quantity: concern. Targets: CultureMech:007478.
+
+correct: a concatenation of both ingredient names, quantities and units is stored as one variable ingredient. The source has two separate rows and the owner has recovered them. VARIABLE is not a source-explicit unspecified dose here.
+
+### ingredients[1]
+
+quantity: concern. Targets: CultureMech:007478.
+
+correct: preferred_term is empty and the concentration value is the ingredient name Skim milk. Schema-valid strings do not constitute a supported amount or material identity.
+
+### Maintained source recovery and batch basis
+
+quantity: concern. Targets: CultureMech:007478.
+
+The owner restores the source skim-milk mass numeral and literal water volume. Its note says brought to1L, but the inspected current table states a water amount rather than an explicit make-up instruction. Retain source batch wording and do not treat the nominal G_PER_L value as an independently verified final-volume concentration.
+
+### Unsupported generic source attribution
+
+evidence: concern. Targets: CultureMech:007478.
+
+The primary recipe contains no pH or sterilization procedure. All three local preparation descriptions match importer defaults; the last also combines an autoclaving description with DISSOLVE. Neither the copied owner nor a passing schema check makes those source-backed instructions.
+
+### Complex material and physical-state limits
+
+scope: supported. Targets: CultureMech:007478.
+
+Recovered skim milk supports COMPLEX/UNDEFINED; the water-based, agar-free recipe is consistent with the liquid classification. No organism-specific application, growth condition, pH value or storage statement is inferred.
+
+### Current ingredient linkage
+
+grounding: concern. Targets: CultureMech:007478.
+
+The target has0/2 primary and0/2 secondary linked direct rows (0% each, a 0–100 linkage metric), but its two rows are malformed and cannot be interpreted as two correctly identified source ingredients. Recover identity before enrichment. Owner water resolves; skim milk remains a mixture without a guessed molecule.
+
+### Maintained recovery versus generated snapshot
+
+evidence: concern. Targets: CultureMech:007478.
+
+The owner documents source-table recovery and later metadata updates absent from the target. History timestamps parse with timezones. The target reference checker examined zero excerpts, and the owner has a source URL without narrow evidence.
+
+## Findings
+
+### f1: Generated ingredient rows do not represent the source formula
+
+blocker / open / confirmed; issue key: CM007478-malformed-formulation.
+
+The source two-row formula appears as a concatenated variable ingredient plus an empty-name row whose concentration is an ingredient string. The maintained owner has recovered the components, but its final-volume wording still needs source review before regeneration.
+
+### f2: Generic importer instructions appear as source preparation
+
+major / open / confirmed; issue key: CM007478-imported-preparation-defaults.
+
+The primary table supplies no preparation/pH protocol, while the record retains three generic defaults. Autoclaving is also mislabeled DISSOLVE because of the classifier substring mismatch.
+
+### f3: Numeric display label obscures the supported source accession
+
+minor / open / confirmed; issue key: CM007478-source-identity-display.
+
+The generated label219 is not the source accession214. Import provenance permits resolution, but the owner source term and references have not propagated to the generated target. The primary page does not provide a title.
+
+### f4: Recovered quantities lack narrow source evidence
+
+minor / open / confirmed; issue key: CM007478-claim-evidence-gap.
+
+The owner source link and recovery history do not attach exact support to each quantity and batch-volume claim.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Recheck the recovered owner rows against the original table and preserve literal batch-water wording; remove unsupported make-up-to claims, then regenerate the derived recipe and confirm each ingredient/amount remains separate.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Remove or explicitly quarantine unsupported default instructions in the maintained record and inspect the importer fallback/action classifier before any authorized reimport. Add preparation only from an inspected source.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Preserve permanent IDs and original import history; expose the verified NBRC214 accession and, if desired, a clearly descriptive display label without inventing an official title.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Add scoped source excerpts to the recovered owner rows and retain explicit source silence for pH/preparation.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/219.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/NBRC_219.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/219.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/219.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch007/065/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-007/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch007/065/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/219.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/219.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/219.yaml:1:id: CultureMech:007478<br>./data/normalized_yaml/bacterial/NBRC_219.yaml:1:id: CultureMech:007478<br> |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; All live preferred-term rows for asserted secondary CHEBI keys; metadata captured | supports | {} |
+| nbrc | https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=214; Medium No.214; Medium title; Composition; Comment | supports | Complete source table and empty title/comment fields inspected: two ingredients with quantities, no source pH or preparation procedure. The published medium number is214, not the local numeric label219. |
+| legacy | http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=214; HTTP redirect metadata and resulting medium detail | supports | The exact historical HTTP source URL in curation history redirects to the current NBRC214 page and returns the same two-row composition. |
+| owner-water | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377; Exact maintained water identifier | supports | The maintained owner water identifier resolves canonically. The generated malformed rows assert no ontology IDs. |
+| importer | src/culturemech/import/nbrc_importer.py; _map_preparation_steps | supports | When preparation is missing but ingredients exist, the method inserts the three generic descriptions found in this record. It tests autoclave as a substring; autoclaving does not contain that substring and falls through to DISSOLVE. Current code explains the pattern but is not proof of exact historical runtime bytes. |
+| context | Full target and maintained owner; Literal malformed-field checks, preparation equality and timestamp parsing | supports | {"target_ingredients": [{"preferred_term": "Skim milk100gDistilled water1L", "concentration": {"value": "variable", "unit": "VARIABLE"}}, {"preferred_term": "", "concentration": {"value": "Skim milk", "unit": "G_PER_L"}}], "owner_ingredients": [{"preferred_term": "Skim milk", "concentration": {"value": "100", "unit": "G_PER_L"}}, {"preferred_term": "Distilled water", "concentration": {"value": "1", "unit": "L"}, "term": {"id": "CHEBI:15377", "label": "water"}}], "generic_preparation_equal": true, "autoclave_substring_matches_autoclaving": false, "timezone_bearing_history_counts": [6, 8]} |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- No historical raw scrape or historical importer executable was reconstructed; the current primary page and current maintained inputs were assessed.
+- No official source title, make-up-to final volume, sterilization cycle or pH condition was invented.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T070550Z-culturemech-007478-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: 219 (CultureMech:007478)'
+started_at: '2026-10-21T06:57:08Z'
+finished_at: '2026-10-21T07:05:50Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The numeric label219 resolves through import provenance to NBRC214, whose
+  two-row skim-milk formulation is available. The generated record still contains
+  concatenated ingredient text and a blank-name row with an ingredient string as its
+  concentration. Its normalized owner has recovered the ingredients, but retains unsupported
+  generic preparation and an overprecise final-volume statement.
+source:
+  git_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/219.yaml
+    sha256: a224f83863755e078c24563cfe666037cf295539687f6bc8dd172a00be5df461
+    role: target
+  - path: data/normalized_yaml/bacterial/NBRC_219.yaml
+    sha256: 4623a740fc81990c131ce7e88dc8b71575642fd01d54e8f79a115983fecdf451
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/nbrc_raw_yaml.py
+    sha256: de5654d4eed2e01a2383dcf417b7d8e2779dbb622de9351c28373fb691812ec1
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/fetch/nbrc_scraper.py
+    sha256: 5c5bbda489abe0b6d000b9318a76913ab5496ee83aff58b530c2b42b5989d1e3
+    role: context
+  - path: src/culturemech/import/nbrc_importer.py
+    sha256: 857b7e0ac88aef783ce4bc9b35c4c6a3d9fc38824a5d463010a6046ac4180924
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 65; batch 007 item 5 of 10, selected in Python lexicographic
+    repository-relative path order from the current uncovered merged corpus. The prior
+    six validated batch lists contain 60 distinct merged target paths. Fresh origin/main
+    at 24a1d277eb7f0437af53af0d178a30f9bfa6374c has 40 validated baseline bundles
+    covering 2 current merged paths. The union with prior batches covers 62 of 6320
+    current merged paths before this batch. This target path occurs in neither set.
+    Task ordinals continue the saved-review sequence, not global path ranks after
+    upstream corpus or coverage changes. This bundle selects only the named record;
+    no sampling or fleet-wide scientific claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:007478
+targets:
+- target_id: CultureMech:007478
+  path: data/merge_yaml/merged/219.yaml
+  label: '219'
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/NBRC_219.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/219.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:007478
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/219.yaml --workers 1 --out
+    /private/tmp/culturemech-review-work-batch007/065/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-007/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch007/065/strict.tsv"
+  target_ids:
+  - CultureMech:007478
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/219.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:007478
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/219.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:007478
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:007478
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/219.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T07:05:49Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/NBRC_219.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T07:05:49Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/219.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T06:58:12.267815Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/219.yaml --workers 1 --out
+    /private/tmp/culturemech-review-work-batch007/065/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T06:58:16.914484Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-007/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch007/065/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/219.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T06:58:22.335483Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/219.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T06:58:25.554736Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T07:05:49Z'
+  support: supports
+  summary: './data/merge_yaml/merged/219.yaml:1:id: CultureMech:007478
+
+    ./data/normalized_yaml/bacterial/NBRC_219.yaml:1:id: CultureMech:007478
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: All live preferred-term rows for asserted secondary CHEBI keys; metadata
+    captured
+  accessed_at: '2026-10-21T07:05:49Z'
+  support: supports
+  summary: '{}'
+- evidence_id: nbrc
+  kind: primary_source
+  reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=214
+  locator: Medium No.214; Medium title; Composition; Comment
+  accessed_at: '2026-10-21T06:57:49.883188Z'
+  support: supports
+  summary: 'Complete source table and empty title/comment fields inspected: two ingredients
+    with quantities, no source pH or preparation procedure. The published medium number
+    is214, not the local numeric label219.'
+  quote: Skim milk 100 g Distilled water 1 L
+  snapshot_sha256: 43da97e0720e480046628ca91b9f754552ee6d02c07c6d05a9f292d23b3a6bc9
+- evidence_id: legacy
+  kind: primary_source
+  reference: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=214
+  locator: HTTP redirect metadata and resulting medium detail
+  accessed_at: '2026-10-21T06:57:44.860412Z'
+  support: supports
+  summary: The exact historical HTTP source URL in curation history redirects to the
+    current NBRC214 page and returns the same two-row composition.
+  snapshot_sha256: 43da97e0720e480046628ca91b9f754552ee6d02c07c6d05a9f292d23b3a6bc9
+- evidence_id: owner-water
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact maintained water identifier
+  accessed_at: '2026-10-20T04:00:00.223561Z'
+  support: supports
+  summary: The maintained owner water identifier resolves canonically. The generated
+    malformed rows assert no ontology IDs.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: importer
+  kind: record_content
+  reference: src/culturemech/import/nbrc_importer.py
+  locator: _map_preparation_steps
+  accessed_at: '2026-10-21T07:05:49Z'
+  support: supports
+  summary: When preparation is missing but ingredients exist, the method inserts the
+    three generic descriptions found in this record. It tests autoclave as a substring;
+    autoclaving does not contain that substring and falls through to DISSOLVE. Current
+    code explains the pattern but is not proof of exact historical runtime bytes.
+- evidence_id: context
+  kind: validation
+  reference: Full target and maintained owner
+  locator: Literal malformed-field checks, preparation equality and timestamp parsing
+  accessed_at: '2026-10-21T07:05:49Z'
+  support: supports
+  summary: '{"target_ingredients": [{"preferred_term": "Skim milk100gDistilled water1L",
+    "concentration": {"value": "variable", "unit": "VARIABLE"}}, {"preferred_term":
+    "", "concentration": {"value": "Skim milk", "unit": "G_PER_L"}}], "owner_ingredients":
+    [{"preferred_term": "Skim milk", "concentration": {"value": "100", "unit": "G_PER_L"}},
+    {"preferred_term": "Distilled water", "concentration": {"value": "1", "unit":
+    "L"}, "term": {"id": "CHEBI:15377", "label": "water"}}], "generic_preparation_equal":
+    true, "autoclave_substring_matches_autoclaving": false, "timezone_bearing_history_counts":
+    [6, 8]}'
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:007478
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: All asserted primary and current secondary ingredient identifiers
+  outcome: supported
+  summary: '0 primary CHEBI identities resolve with matching labels; 0 of 0 current
+    secondary keys have live pinned-index rows. Unresolved keys: [].'
+  target_ids:
+  - CultureMech:007478
+  evidence_ids:
+  - record
+  - mim
+  details: 2 direct ingredient instances; CHEBI-primary instance linkage 0/2 (0.00%),
+    verified secondary coverage 0/2 (0.00%). Percentages use a 0–100 linkage scale,
+    not a scientific correctness score. Complex mixtures without asserted IDs remain
+    ungrounded rather than receiving invented pure-molecule identities.
+- assessment_id: identity
+  area: identity
+  topic: Numeric local label and original accession
+  outcome: supported
+  summary: Despite local name219, description and import provenance consistently identify
+    NBRC214. The exact legacy URL resolves to that accession. Its current primary
+    title is empty, so no official medium title is invented from the local scrape
+    label.
+  target_ids:
+  - CultureMech:007478
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - nbrc
+  - legacy
+- assessment_id: quantity-0
+  area: quantity
+  topic: ingredients[0]
+  outcome: concern
+  summary: 'correct: a concatenation of both ingredient names, quantities and units
+    is stored as one variable ingredient. The source has two separate rows and the
+    owner has recovered them. VARIABLE is not a source-explicit unspecified dose here.'
+  target_ids:
+  - CultureMech:007478
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - context
+- assessment_id: quantity-1
+  area: quantity
+  topic: ingredients[1]
+  outcome: concern
+  summary: 'correct: preferred_term is empty and the concentration value is the ingredient
+    name Skim milk. Schema-valid strings do not constitute a supported amount or material
+    identity.'
+  target_ids:
+  - CultureMech:007478
+  evidence_ids:
+  - record
+  - nbrc
+  - context
+  - validate-schema
+  - validate-strict
+- assessment_id: owner-quantities
+  area: quantity
+  topic: Maintained source recovery and batch basis
+  outcome: concern
+  summary: The owner restores the source skim-milk mass numeral and literal water
+    volume. Its note says brought to1L, but the inspected current table states a water
+    amount rather than an explicit make-up instruction. Retain source batch wording
+    and do not treat the nominal G_PER_L value as an independently verified final-volume
+    concentration.
+  target_ids:
+  - CultureMech:007478
+  evidence_ids:
+  - owner-0
+  - nbrc
+  - legacy
+  - context
+- assessment_id: preparation
+  area: evidence
+  topic: Unsupported generic source attribution
+  outcome: concern
+  summary: The primary recipe contains no pH or sterilization procedure. All three
+    local preparation descriptions match importer defaults; the last also combines
+    an autoclaving description with DISSOLVE. Neither the copied owner nor a passing
+    schema check makes those source-backed instructions.
+  target_ids:
+  - CultureMech:007478
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - importer
+  - context
+- assessment_id: classification
+  area: scope
+  topic: Complex material and physical-state limits
+  outcome: supported
+  summary: Recovered skim milk supports COMPLEX/UNDEFINED; the water-based, agar-free
+    recipe is consistent with the liquid classification. No organism-specific application,
+    growth condition, pH value or storage statement is inferred.
+  target_ids:
+  - CultureMech:007478
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+- assessment_id: mapping
+  area: grounding
+  topic: Current ingredient linkage
+  outcome: concern
+  summary: The target has0/2 primary and0/2 secondary linked direct rows (0% each,
+    a 0–100 linkage metric), but its two rows are malformed and cannot be interpreted
+    as two correctly identified source ingredients. Recover identity before enrichment.
+    Owner water resolves; skim milk remains a mixture without a guessed molecule.
+  target_ids:
+  - CultureMech:007478
+  evidence_ids:
+  - record
+  - owner-0
+  - context
+  - owner-water
+- assessment_id: audit
+  area: evidence
+  topic: Maintained recovery versus generated snapshot
+  outcome: concern
+  summary: The owner documents source-table recovery and later metadata updates absent
+    from the target. History timestamps parse with timezones. The target reference
+    checker examined zero excerpts, and the owner has a source URL without narrow
+    evidence.
+  target_ids:
+  - CultureMech:007478
+  evidence_ids:
+  - record
+  - owner-0
+  - context
+  - nbrc
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: CM007478-malformed-formulation
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Generated ingredient rows do not represent the source formula
+  description: The source two-row formula appears as a concatenated variable ingredient
+    plus an empty-name row whose concentration is an ingredient string. The maintained
+    owner has recovered the components, but its final-volume wording still needs source
+    review before regeneration.
+  target_ids:
+  - CultureMech:007478
+  field_paths:
+  - ingredients
+  - curation_history
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - context
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/NBRC_219.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f2
+  issue_key: CM007478-imported-preparation-defaults
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generic importer instructions appear as source preparation
+  description: The primary table supplies no preparation/pH protocol, while the record
+    retains three generic defaults. Autoclaving is also mislabeled DISSOLVE because
+    of the classifier substring mismatch.
+  target_ids:
+  - CultureMech:007478
+  field_paths:
+  - preparation_steps
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - importer
+  - context
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/NBRC_219.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f3
+  issue_key: CM007478-source-identity-display
+  category: completeness
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Numeric display label obscures the supported source accession
+  description: The generated label219 is not the source accession214. Import provenance
+    permits resolution, but the owner source term and references have not propagated
+    to the generated target. The primary page does not provide a title.
+  target_ids:
+  - CultureMech:007478
+  field_paths:
+  - name
+  - description
+  - media_term
+  - references
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - legacy
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/NBRC_219.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f4
+  issue_key: CM007478-claim-evidence-gap
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Recovered quantities lack narrow source evidence
+  description: The owner source link and recovery history do not attach exact support
+    to each quantity and batch-volume claim.
+  target_ids:
+  - CultureMech:007478
+  field_paths:
+  - ingredients[*].evidence
+  - evidence
+  - references
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - legacy
+  - validate-references
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/NBRC_219.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+actions:
+- action_id: a1
+  description: Recheck the recovered owner rows against the original table and preserve
+    literal batch-water wording; remove unsupported make-up-to claims, then regenerate
+    the derived recipe and confirm each ingredient/amount remains separate.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:007478
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/NBRC_219.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Remove or explicitly quarantine unsupported default instructions in
+    the maintained record and inspect the importer fallback/action classifier before
+    any authorized reimport. Add preparation only from an inspected source.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:007478
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/NBRC_219.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Preserve permanent IDs and original import history; expose the verified
+    NBRC214 accession and, if desired, a clearly descriptive display label without
+    inventing an official title.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:007478
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/NBRC_219.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Add scoped source excerpts to the recovered owner rows and retain explicit
+    source silence for pH/preparation.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:007478
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/NBRC_219.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- No historical raw scrape or historical importer executable was reconstructed; the
+  current primary page and current maintained inputs were assessed.
+- No official source title, make-up-to final volume, sterilization cycle or pH condition
+  was invented.
+tags:
+- unreviewed-records
+- batch-007
+- generated-medium
+```
