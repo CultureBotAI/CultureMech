@@ -2882,4 +2882,22 @@ apply-protein-examples input_file normalized_dir="data/normalized_yaml" mode="--
 validate-protein-examples path="data/normalized_yaml":
     uv run python scripts/validate_protein_examples.py "{{path}}"
 
+# =============================================================================
+# CURATED CAUSAL GRAPHS (#658)
+# =============================================================================
+
+# Apply or preview curated growth-media causal_graphs on normalized_yaml records (dry-run by default)
+[group('Enrichment')]
+apply-causal-graphs input_file normalized_dir="data/normalized_yaml" mode="--dry-run":
+    uv run python scripts/apply_causal_graphs.py \
+        --input "{{input_file}}" \
+        --normalized-dir "{{normalized_dir}}" \
+        {{mode}}
+
+# Validate growth-media causal_graphs across normalized_yaml records
+[group('QC')]
+validate-causal-graphs path="data/normalized_yaml":
+    uv run python scripts/validate_causal_graphs.py "{{path}}"
+
+
 

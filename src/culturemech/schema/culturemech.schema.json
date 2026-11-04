@@ -23,6 +23,129 @@
             "title": "CategoryEnum",
             "type": "string"
         },
+        "CausalEdge": {
+            "additionalProperties": false,
+            "description": "A directed, evidence-backed causal mechanism edge describing how a growth-medium ingredient, cofactor, environmental condition, or genetic perturbation causally enables, regulates, or inhibits organism growth, transport, or physiology in the context of a medium formulation.",
+            "properties": {
+                "condition_context": {
+                    "description": "Medium condition, concentration threshold, or perturbation context under which this causal relationship holds.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "evidence": {
+                    "description": "Claim-scoped literature evidence supporting this directed causal relationship in the growth medium context.",
+                    "items": {
+                        "$ref": "#/$defs/EvidenceItem"
+                    },
+                    "minItems": 1,
+                    "type": "array"
+                },
+                "id": {
+                    "description": "Stable record-local or CURIE identifier for this causal edge (for example, edge_cobalamin_enables_growth or CausalEdge:0001), used by Discussion.attaches_to anchors (causal_graphs#edge_x).",
+                    "pattern": "^(edge_[A-Za-z0-9_.-]+|CausalEdge:[A-Za-z0-9_.-]+)$",
+                    "type": "string"
+                },
+                "notes": {
+                    "description": "Additional curation notes or caveats",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "object_term": {
+                    "$ref": "#/$defs/CausalTerm",
+                    "description": "Ontology-grounded causal target (for example, an NCBITaxon organism, GO biological process, CHEBI metabolite/cofactor, UniProtKB protein, or PATO/METPO phenotype)."
+                },
+                "organism_term": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/OrganismTerm"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Explicit NCBITaxon organism context for this causal mechanism when scoped to a specific organism or strain."
+                },
+                "predicate": {
+                    "$ref": "#/$defs/CausalPredicateEnum",
+                    "description": "Constrained causal relationship predicate connecting subject_term to object_term in the medium context."
+                },
+                "protein_terms": {
+                    "description": "Optional typed UniProtKB protein actors mediating this causal edge, linking Stage 2 causal mechanisms to Stage 3 protein examples.",
+                    "items": {
+                        "$ref": "#/$defs/UniProtTerm"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "subject_term": {
+                    "$ref": "#/$defs/CausalTerm",
+                    "description": "Ontology-grounded causal subject (for example, a CHEBI ingredient or cofactor, UniProtKB transporter/enzyme, GO biological process, or ENVO condition)."
+                }
+            },
+            "required": [
+                "id",
+                "subject_term",
+                "predicate",
+                "object_term",
+                "evidence"
+            ],
+            "title": "CausalEdge",
+            "type": "object"
+        },
+        "CausalPredicateEnum": {
+            "description": "Constrained causal predicate vocabulary for growth-medium CausalEdge assertions, mapped to Relation Ontology (RO) and Biolink predicates.",
+            "enum": [
+                "CAUSES",
+                "POSITIVELY_REGULATES",
+                "NEGATIVELY_REGULATES",
+                "ENABLES_GROWTH",
+                "INHIBITS_GROWTH",
+                "PROVIDES_COFACTOR_FOR",
+                "TRANSPORTS_SUBSTRATE",
+                "AFFECTS"
+            ],
+            "title": "CausalPredicateEnum",
+            "type": "string"
+        },
+        "CausalTerm": {
+            "additionalProperties": false,
+            "description": "An ontology-grounded entity participating as subject_term or object_term in a growth-medium CausalEdge. Accepts chemical/ingredient terms (CHEBI, FOODON, MICRO), organism taxa (NCBITaxon), biological processes and molecular functions (GO), proteins and enzymes (UniProtKB, EC), pathways (KEGG), and phenotype/environment descriptors (METPO, ENVO, PATO, NCIT, UBERON, CultureMech, MediaIngredientMech).",
+            "properties": {
+                "confidence": {
+                    "description": "Confidence score for the mapping (0.0-1.0). Populated by automated grounding pipelines.",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "Ontology identifier (CURIE)",
+                    "pattern": "^(CHEBI|NCBITaxon|GO|UniProtKB|EC|KEGG|METPO|ENVO|PATO|NCIT|FOODON|UBERON|MICRO|CultureMech|MediaIngredientMech):[A-Za-z0-9_.-]+$",
+                    "type": "string"
+                },
+                "label": {
+                    "description": "CANONICAL ontology label for `id` (e.g. \"magnesium sulfate\" for CHEBI:32599). Verified against the ontology by the id\u2194label gate; the sibling `preferred_term` holds the free/source name.",
+                    "pattern": "\\S",
+                    "type": "string"
+                },
+                "match_type": {
+                    "$ref": "#/$defs/TermMatchTypeEnum",
+                    "description": "Provenance/method of the term mapping (e.g. \"kg_fallback\", \"exact\", \"manual_curated\")."
+                }
+            },
+            "required": [
+                "id",
+                "label"
+            ],
+            "title": "CausalTerm",
+            "type": "object"
+        },
         "CellularMetabolicRoleEnum": {
             "description": "Role of the ingredient inside or on the cultured microbe(s) \u2014 the compound's metabolic fate or biochemical function at the cell level. One of three orthogonal role facets (with NutritionalRoleEnum and PhysicochemicalRoleEnum). Values in this facet are often organism-conditional (e.g. ELECTRON_DONOR applies only for organisms that oxidize the compound for energy; methanol is an electron donor for methylotrophs but only a carbon source for others).",
             "enum": [
@@ -1590,6 +1713,16 @@
                     "$ref": "#/$defs/CategoryEnum",
                     "description": "Broad category for organization"
                 },
+                "causal_graphs": {
+                    "description": "Directed, evidence-backed causal mechanism edges describing how media ingredients, cofactors, perturbations, or strain modifications causally support, limit, or alter organism growth, nutrient uptake, or physiology in this medium formulation. Distinct from static composition/role facet assignments and from intracellular pathway graphs owned by PathwayMech or EnzymeMech.",
+                    "items": {
+                        "$ref": "#/$defs/CausalEdge"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "chemical_fingerprint": {
                     "description": "SHA256 hash using parent ingredients (hierarchy-aware)",
                     "type": [
@@ -2413,6 +2546,16 @@
             "additionalProperties": false,
             "description": "Target organism for the medium",
             "properties": {
+                "causal_graphs": {
+                    "description": "Directed, evidence-backed causal mechanism edges specific to this target organism on the medium (for example, cofactor-dependent growth, substrate transport, selective inhibition, or auxotrophy rescue).",
+                    "items": {
+                        "$ref": "#/$defs/CausalEdge"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "cofactor_requirements": {
                     "description": "Cofactors required by this organism",
                     "items": {
@@ -4170,7 +4313,7 @@
     "$id": "https://w3id.org/culturemech",
     "$schema": "https://json-schema.org/draft/2019-09/schema",
     "additionalProperties": true,
-    "metamodel_version": "1.11.0",
+    "metamodel_version": "1.12.0",
     "title": "culturemech",
     "type": "object",
     "version": null

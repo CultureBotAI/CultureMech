@@ -41,19 +41,19 @@ tasks:
   disposition: Resolved in PR #632 (commit 377d68c67960b43fe622c68f28e25f4194e4420e) by adding P3.1 placeholder checks and chebi_term/preferred_term placeholder coverage to _validate_solution() with unit tests in tests/test_batch_review_recipes.py.
 - task_id: culturemech-infra-0002
   summary: Define Stage 2 (causal_graphs) native schema class/slot, validator targets, maintained writer, KGX causal-edge exporter, and curation skill (or reclassify stage scope)
-  status: open
+  status: resolved
   issue_url: https://github.com/CultureBotAI/CultureMech/issues/658
-  disposition: Open prerequisite for Stage 2 (causal_graphs); assessed in reviews/structured/20261023T073000Z-cycle2-stage2-stage3-prerequisite-assessment/review.yaml and queued for Stage 6 (infra_implementation) or parent workflow scope reclassification.
+  disposition: Resolved for #658 by defining the CultureMech growth-media causal mechanism domain boundary (distinct from static role diagrams in scripts/render_media_role_graph.py and intracellular pathways in PathwayMech/EnzymeMech) and implementing CausalEdge/CausalTerm/CausalPredicateEnum in src/culturemech/schema/culturemech.yaml, semantic validator src/culturemech/validation/causal_graphs.py + scripts/validate_causal_graphs.py, maintained writer scripts/apply_causal_graphs.py, KGX causal-edge export in src/culturemech/export/kgx_export.py, .claude/skills/curate-causal-graphs/SKILL.md, and tests/test_causal_graphs.py.
 - task_id: culturemech-infra-0003
   summary: Define Stage 3 (protein_examples) UniProtKB prefix, typed ProteinExample schema class, OAK/id-label validator configuration, reference cofactor ChEBI cleanup, writer, KGX exporter, and curation skill
-  status: open
+  status: resolved
   issue_url: https://github.com/CultureBotAI/CultureMech/issues/659
-  disposition: Open prerequisite for Stage 3 (protein_examples); assessed in reviews/structured/20261023T073000Z-cycle2-stage2-stage3-prerequisite-assessment/review.yaml and queued for Stage 6 (infra_implementation).
+  disposition: Resolved in PR #663 (commit a74dd489720c9df96cc073ffd11568d407d3c06c) by implementing UniProtKB prefix, UniProtTerm, ProteinExample, semantic validator src/culturemech/validation/protein_examples.py + scripts/validate_protein_examples.py, maintained writer scripts/apply_protein_examples.py, KGX biolink:Protein export, data/reference/cofactors.yaml ChEBI collision fix, .claude/skills/curate-protein-examples/SKILL.md, and tests/test_protein_examples.py.
 - task_id: culturemech-infra-0004
   summary: Coordinate Cycle 2 blocked-stage advancement past Stages 2-3 and between-cycle profile reload migration under reload_profile_between_cycles_only
   status: deferred
   issue_url: https://github.com/CultureBotAI/CultureMech/issues/660
-  disposition: Blocked on external session coordinator advancement for active Cycle 2 (goal-4672) and on completion of culturemech-infra-0002 (#658) and culturemech-infra-0003 (#659) before between-cycle profile reload in Cycle 3+.
+  disposition: Repository prerequisites culturemech-infra-0002 (#658) and culturemech-infra-0003 (#659) are resolved; remains deferred on external session coordinator advancement for active Cycle 2 (goal-4672) and between-cycle profile reload in Cycle 3+.
 ```
 <!-- mech-infra-tasks:end -->
 
@@ -76,29 +76,40 @@ tasks:
 
 - **Originating run / cycle / stage**: `mech-goal-sequence-20261019`, cycle `2`, stage `2` prerequisite assessment (`goal-4672`)
 - **Issue**: https://github.com/CultureBotAI/CultureMech/issues/658
-- **Status**: `open`
+- **Status**: `resolved`
 - **Priority**: `P1` (blocking prerequisite for Stage 2 `causal_graphs`)
 - **Dependencies**: Parent Mech / KG-Microbe domain boundary decision on whether growth-media recipes carry directed causal mechanism edges or remain composition/role-only.
-- **Observation**: CultureMech natively represents media compositions, stock solutions, preparation steps, sterilization, organism growth metrics, perturbations (`3/15,915` records), strain modifications (`2/15,915`), nutrient overrides (`2/15,915`), and three-facet ingredient roles (`nutritional_roles` in `217`, `physicochemical_roles` in `249`, `cellular_metabolic_roles` in `5`), rendered as bipartite Mermaid composition/role diagrams by `scripts/render_media_role_graph.py` and exported via 12 `*_to_edge` functions (lines 468–833 of `src/culturemech/export/kgx_export.py`) emitting 7 predicates (`METPO:2000517`, `biolink:has_part`, `biolink:has_attribute`, `biolink:related_to`, `biolink:same_as`, `biolink:subclass_of`, and `biolink:has_dataset`). Across all `15,915` normalized YAML records and git-ignored directories (`data/merge_yaml/merged/`, `data/curation/`, `data/reference/`, `workspace/`, `tmp/`), no native `CausalEdge` / `MechanismGraph` schema class or `MediaRecipe` slot, causal-edge writer, KGX causal-predicate exporter, or `.claude/skills/` causal-graph curation skill exists (`mech_shared.yaml` mentions `causal_graphs#edge_x` only in the shared `Discussion.attaches_to` docstring, and `scripts/repair_top_causal_graph_score15.py` only curates composition/roles/preparation).
-- **Desired outcome**: Either (A) implement a typed `CausalEdge` class (with ontology-grounded subject/object, constrained causal predicate enum, organism/condition context, and mandatory claim-scoped `EvidenceItem`), `conf/id_label_targets.yaml` validation rules, a `curation_history`-appending writer, KGX causal-edge export in `src/culturemech/export/kgx_export.py`, unit tests, and a `.claude/skills/` curation skill, **or** (B) formally reclassify Stage 2 as `not_applicable` for composition-centric growth-media repositories in the parent workflow contract.
+- **Observation**: CultureMech natively represents media compositions, stock solutions, preparation steps, sterilization, organism growth metrics, perturbations (`3/15,915` records), strain modifications (`2/15,915`), nutrient overrides (`2/15,915`), and three-facet ingredient roles (`nutritional_roles` in `217`, `physicochemical_roles` in `249`, `cellular_metabolic_roles` in `5`), rendered as bipartite Mermaid composition/role diagrams by `scripts/render_media_role_graph.py` and exported via 12 `*_to_edge` functions (lines 468–833 of `src/culturemech/export/kgx_export.py`) emitting 7 predicates (`METPO:2000517`, `biolink:has_part`, `biolink:has_attribute`, `biolink:related_to`, `biolink:same_as`, `biolink:subclass_of`, and `biolink:has_dataset`). Across all `15,915` normalized YAML records and git-ignored directories (`data/merge_yaml/merged/`, `data/curation/`, `data/reference/`, `workspace/`, `tmp/`), no native `CausalEdge` / `MechanismGraph` schema class or `MediaRecipe` slot, causal-edge writer, KGX causal-predicate exporter, or `.claude/skills/` causal-graph curation skill existed (`mech_shared.yaml` mentions `causal_graphs#edge_x` only in the shared `Discussion.attaches_to` docstring, and `scripts/repair_top_causal_graph_score15.py` only curates composition/roles/preparation).
+- **Domain/ownership decision**: CultureMech owns evidence-backed growth-media causal mechanisms (`CausalEdge` on `MediaRecipe.causal_graphs` and `OrganismDescriptor.causal_graphs`) that link a medium ingredient, stock solution, cofactor, perturbation, or strain modification in a specific growth medium to organism growth, survival, substrate transport, cofactor provisioning, or physiological response (`ENABLES_GROWTH`, `INHIBITS_GROWTH`, `PROVIDES_COFACTOR_FOR`, `TRANSPORTS_SUBSTRATE`, `POSITIVELY_REGULATES`, `NEGATIVELY_REGULATES`, `CAUSES`, `AFFECTS`). Static formulation/ingredient-role visualizations (`scripts/render_media_role_graph.py` over `nutritional_roles`, `physicochemical_roles`, `cellular_metabolic_roles`) are not causal graphs, and multi-step intracellular metabolic pathway topologies or stoichiometric enzyme reactions remain owned by `PathwayMech`, `EnzymeMech`, and `MediaIngredientMech`.
+- **Desired outcome**: Implement a typed `CausalEdge` class (with ontology-grounded `CausalTerm` subject/object, constrained `CausalPredicateEnum`, optional `NCBITaxonTerm` organism and `UniProtTerm` protein mediators, condition context, and mandatory claim-scoped `EvidenceItem`), `conf/id_label_targets.yaml` and `conf/oak_config.yaml` validation rules, a `curation_history`-appending writer (`scripts/apply_causal_graphs.py`), KGX causal-edge export in `src/culturemech/export/kgx_export.py`, unit tests (`tests/test_causal_graphs.py`), and a `.claude/skills/curate-causal-graphs/SKILL.md` curation skill.
 - **Evidence paths**:
   - `src/culturemech/schema/culturemech.yaml`
-  - `src/culturemech/schema/mim_roles.yaml`
-  - `src/culturemech/schema/mech_shared.yaml`
+  - `src/culturemech/schema/culturemech_dataclasses.py`
+  - `src/culturemech/schema/culturemech.schema.json`
+  - `src/culturemech/validation/causal_graphs.py`
+  - `src/culturemech/validation/write_validated.py`
+  - `scripts/validate_causal_graphs.py`
+  - `scripts/validate_strict.py`
+  - `scripts/apply_causal_graphs.py`
+  - `project.justfile`
+  - `conf/id_label_targets.yaml`
+  - `conf/oak_config.yaml`
   - `src/culturemech/export/kgx_export.py`
-  - `scripts/render_media_role_graph.py`
-  - `scripts/repair_top_causal_graph_score15.py`
+  - `docs/KGX_SEMANTIC_MODEL.md`
+  - `docs/ENRICHMENT_GUIDE.md`
+  - `.claude/skills/curate-causal-graphs/SKILL.md`
+  - `tests/test_causal_graphs.py`
   - `workflow/mech-workflow.yaml`
   - `reviews/structured/20261023T073000Z-cycle2-stage2-stage3-prerequisite-assessment/review.yaml`
-- **Disposition**: Open prerequisite tracked in https://github.com/CultureBotAI/CultureMech/issues/658 for Stage 6 (`infra_implementation`) execution.
+- **Disposition**: Implemented in auxiliary prerequisite checkpoint for https://github.com/CultureBotAI/CultureMech/issues/658 (`CausalEdge`, `CausalTerm`, `CausalPredicateEnum`, semantic validator `src/culturemech/validation/causal_graphs.py` + `scripts/validate_causal_graphs.py`, maintained writer `scripts/apply_causal_graphs.py`, KGX causal-edge export, `.claude/skills/curate-causal-graphs/SKILL.md`, and `tests/test_causal_graphs.py`). Cycle 2 Stage 2 and Stage 3 remain `blocked` pending coordinator activation (`#660`).
 
 ### `culturemech-infra-0003` — Define Stage 3 (`protein_examples`) `UniProtKB` prefix, typed `ProteinExample` schema class, OAK/id-label validator configuration, writer, and skill prerequisites
 
 - **Originating run / cycle / stage**: `mech-goal-sequence-20261019`, cycle `2`, stage `2` prerequisite assessment (`goal-4672`)
 - **Issue**: https://github.com/CultureBotAI/CultureMech/issues/659
-- **Status**: `completed`
+- **Status**: `resolved`
 - **Priority**: `P1` (blocking prerequisite for Stage 3 `protein_examples`)
-- **Dependencies**: None for schema/validator/writer implementation; coordinator activation tracked separately in `culturemech-infra-0004` (#660) before `workflow/mech-workflow.yaml` Stage 3 transitions from `blocked` to `applicable`.
+- **Dependencies**: None for schema/validator/writer implementation; coordinator activation tracked separately in `culturemech-infra-0004` (#660) before `workflow/mech-workflow.yaml` Stage 3 transitions from `blocked` to `enabled`.
 - **Observation**: `src/culturemech/schema/culturemech.yaml` previously declared 31 prefixes without `UniProt` or `UniProtKB` and defined only untyped `range: string` slots (`CofactorDescriptor.enzyme_examples`, `CofactorDescriptor.biosynthesis_genes`, `StrainModification.target`, `CofactorRequirement.genes`, `TransporterAnnotation.genes`), with `0` populated cofactor/transporter/enzyme instances across `15,915` normalized records. `data/reference/cofactors.yaml` stored generic enzyme family names in `enzyme_examples` with a duplicate `CHEBI:60052` mapping across `heme C` and `heme d1`; `docs/ENRICHMENT_GUIDE.md` referenced a non-existent `Nitrate_Mineral_Salts_Medium_(NMS)_ENRICHED_EXAMPLE.yaml`. Furthermore, `conf/oak_config.yaml` and `conf/id_label_targets.yaml` had no `UniProtKB` handling, `src/culturemech/export/kgx_export.py` emitted no protein nodes/edges, and no repository-local protein-example curation skill existed.
 - **Desired outcome**: Add `UniProtKB` prefix, `UniProtTerm` (validated accession pattern + canonical protein label), and `ProteinExample` class (binding `uniprot_term`, explicit `NCBITaxonTerm` organism, optional gene/EC/isoform scope, and mandatory claim-scoped `EvidenceItem`) to `src/culturemech/schema/culturemech.yaml`; configure `conf/id_label_targets.yaml` and `scripts/validate_strict.py`; fix `data/reference/cofactors.yaml` ChEBI collisions and `docs/ENRICHMENT_GUIDE.md` example path; add a `curation_history`-appending writer, KGX protein export, unit tests, and a `.claude/skills/` protein-example curation skill.
 - **Evidence paths**:
@@ -121,7 +132,7 @@ tasks:
   - `tests/test_protein_examples.py`
   - `workflow/mech-workflow.yaml`
   - `reviews/structured/20261023T073000Z-cycle2-stage2-stage3-prerequisite-assessment/review.yaml`
-- **Disposition**: Implemented in auxiliary prerequisite checkpoint for https://github.com/CultureBotAI/CultureMech/issues/659 (`UniProtKB` prefix, `UniProtTerm`, `ProteinExample`, semantic validator `src/culturemech/validation/protein_examples.py` + `scripts/validate_protein_examples.py`, maintained writer `scripts/apply_protein_examples.py`, KGX `biolink:Protein` export, `data/reference/cofactors.yaml` ChEBI collision fix, `docs/ENRICHMENT_GUIDE.md` path fix, `.claude/skills/curate-protein-examples/SKILL.md`, and `tests/test_protein_examples.py`). Cycle 2 Stage 2 and Stage 3 remain `blocked` pending `#658` and coordinator activation `#660`.
+- **Disposition**: Resolved in PR #663 (`a74dd489720c9df96cc073ffd11568d407d3c06c`) for https://github.com/CultureBotAI/CultureMech/issues/659 (`UniProtKB` prefix, `UniProtTerm`, `ProteinExample`, semantic validator `src/culturemech/validation/protein_examples.py` + `scripts/validate_protein_examples.py`, maintained writer `scripts/apply_protein_examples.py`, KGX `biolink:Protein` export, `data/reference/cofactors.yaml` ChEBI collision fix, `docs/ENRICHMENT_GUIDE.md` path fix, `.claude/skills/curate-protein-examples/SKILL.md`, and `tests/test_protein_examples.py`). Cycle 2 Stage 2 and Stage 3 remain `blocked` pending coordinator activation `#660`.
 
 ### `culturemech-infra-0004` — Coordinate Cycle 2 blocked-stage advancement and between-cycle profile reload migration
 
@@ -129,14 +140,14 @@ tasks:
 - **Issue**: https://github.com/CultureBotAI/CultureMech/issues/660
 - **Status**: `deferred`
 - **Priority**: `P1` (active cycle coordination blocker)
-- **Dependencies**: External session coordinator (`culturebotai-claw` / `kg_microbe_progress`) for active Cycle 2 stage advancement; `culturemech-infra-0002` (#658) and `culturemech-infra-0003` (#659) for next-cycle profile unblocking.
+- **Dependencies**: External session coordinator (`culturebotai-claw` / `kg_microbe_progress`) for active Cycle 2 stage advancement and Cycle 3+ profile reload (`culturemech-infra-0002` #658 and `culturemech-infra-0003` #659 are now resolved).
 - **Observation**: In `mech-goal-sequence-20261019`, Cycle 2 pinned `effective-workflow.json` (`workflow_sha256: 22e8c558fe158db19d847bc478901422f5697a48760bb6a9d852de8254ae4071`) with Stages 2 (`causal_graphs`) and 3 (`protein_examples`) set to `applicability: "blocked"` and `skill_paths: []` under `cycle_policy.reload_profile_between_cycles_only: true`. Candidate edits in `workflow/mech-workflow.yaml` take effect only at the next cycle boundary (`next_profile_path`) and cannot mutate or unblock active Cycle 2 (`status.json` `goal-4672`, `phase: "blocked"`, `stage: 2`).
-- **Desired outcome**: Preserve coordinator runtime state integrity (`effective-workflow.json`, `status.json`, `completion.json` untouched by repository agent); have the external coordinator advance active Cycle 2 past blocked Stages 2 and 3 to Stage 4 (`record_review`) using the verified prerequisite assessment (`20261023T073000Z-cycle2-stage2-stage3-prerequisite-assessment`), and reload `workflow/mech-workflow.yaml` at a subsequent cycle boundary only after `culturemech-infra-0002` and `culturemech-infra-0003` are implemented and validated at Stage 6 (`infra_implementation`).
+- **Desired outcome**: Preserve coordinator runtime state integrity (`effective-workflow.json`, `status.json`, `completion.json` untouched by repository agent); have the external coordinator advance active Cycle 2 past blocked Stages 2 and 3 to Stage 4 (`record_review`) using the verified prerequisite assessment (`20261023T073000Z-cycle2-stage2-stage3-prerequisite-assessment`), and reload `workflow/mech-workflow.yaml` at a subsequent cycle boundary now that `culturemech-infra-0002` (#658) and `culturemech-infra-0003` (#659) are implemented and validated.
 - **Evidence paths**:
   - `workflow/mech-workflow.yaml`
   - `workflow/parent/mech-cycle.yaml`
   - `reviews/structured/20261023T073000Z-cycle2-stage2-stage3-prerequisite-assessment/review.yaml`
-- **Disposition**: Deferred on external coordinator advancement for active Cycle 2 and on Stage 6 implementation of `culturemech-infra-0002` (#658) and `culturemech-infra-0003` (#659); tracked in https://github.com/CultureBotAI/CultureMech/issues/660.
+- **Disposition**: Repository prerequisites `culturemech-infra-0002` (#658) and `culturemech-infra-0003` (#659) are resolved; remains deferred on external coordinator advancement for active Cycle 2 (`goal-4672`) and between-cycle profile reload in Cycle 3+; tracked in https://github.com/CultureBotAI/CultureMech/issues/660.
 
 ## Cycle 2 Stage 2–3 Prerequisite Dependency, Acceptance & Validation Plan
 

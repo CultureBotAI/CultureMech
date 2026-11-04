@@ -36,6 +36,7 @@ from linkml.validator import Validator
 from linkml.validator.plugins import JsonschemaValidationPlugin
 from linkml.validator.report import Severity, ValidationResult
 
+from culturemech.validation.causal_graphs import causal_graph_validation_results
 from culturemech.validation.protein_examples import protein_example_validation_results
 
 DEFAULT_SCHEMA_PATH = Path(__file__).resolve().parents[1] / "schema" / "culturemech.yaml"
@@ -111,6 +112,7 @@ def validate_recipe(
     report = validator.validate(recipe, target_class=tc)
     errors = [r for r in report.results if r.severity == Severity.ERROR]
     errors.extend(protein_example_validation_results(recipe))
+    errors.extend(causal_graph_validation_results(recipe))
     return errors
 
 

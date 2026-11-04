@@ -47,6 +47,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 sys.path.insert(0, str(_REPO_ROOT / "src"))
 from record_kinds import has_solution_shape  # noqa: E402  -- shared medium/solution rule
 
+from culturemech.validation.causal_graphs import validate_recipe_causal_graphs  # noqa: E402
 from culturemech.validation.protein_examples import validate_recipe_protein_examples  # noqa: E402
 
 
@@ -180,6 +181,17 @@ def validate_one(path: Path) -> list[dict]:
                 "detail": pe_issue.detail,
                 "path": pe_issue.path,
                 "message": pe_issue.message[:300],
+            }
+        )
+    for cg_issue in validate_recipe_causal_graphs(instance):
+        rows.append(
+            {
+                "file": str(path),
+                "layer": "causal_graphs",
+                "category": cg_issue.category,
+                "detail": cg_issue.detail,
+                "path": cg_issue.path,
+                "message": cg_issue.message[:300],
             }
         )
     return rows

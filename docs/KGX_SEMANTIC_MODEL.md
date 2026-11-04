@@ -233,6 +233,8 @@ These edges are maintained for backward compatibility with existing KG-Microbe i
 8. **Dataset → Medium**: Links omics datasets to media used
 9. **Medium → Database Reference**: Links to authoritative source databases
 10. **Variant → Base Medium**: Links media variants to parent formulations
+11. **Curated UniProt Protein Examples (`protein_examples`, #659)**: Links media, organisms (`biolink:in_taxon`), cofactors, and substrates (`biolink:interacts_with`) to curated `UniProtKB` protein nodes (`biolink:Protein`).
+12. **Curated Growth-Media Causal Graphs (`causal_graphs`, #658)**: Exports directed, evidence-backed causal mechanism edges (`biolink:causes`, `biolink:positively_regulates`, `biolink:negatively_regulates`, `biolink:affects` with `relationship_type = causal_edge:<predicate>`) linking medium ingredients, cofactors, perturbations, or strain modifications to organism growth/physiological responses in the medium, plus medium linkage (`causal_mechanism_component`) and optional protein mediators (`causal_edge_protein_mediator`). Distinct from static composition/role diagrams (`scripts/render_media_role_graph.py`) and from intracellular metabolic pathway reactions owned by `PathwayMech`/`EnzymeMech`.
 
 ## Comparison with cmm-ai-automation
 
