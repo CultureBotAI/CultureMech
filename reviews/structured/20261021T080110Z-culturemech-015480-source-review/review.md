@@ -1,0 +1,1956 @@
+# Source and formulation review: 2x UGA defined nocarbon (CultureMech:015480)
+
+- Review: 20261021T080110Z-culturemech-015480-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T07:45:38Z
+- Finished UTC: 2026-10-21T08:01:10Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+Public Berkeley Lab FEBA tables resolve the exact medium name and support every one of the 32 stored concentrations, including the two-fold mineral/vitamin expansions. They also contain a vitamin-mix phosphate contribution absent from both local layers. The records omit the mix factors and recoverable claim-level source trace. Calcium pantothenate molecular-weight and sodium phosphate CAS notes conflict with their correctly labeled CHEBI terms; the unmapped-ingredient flag is stale. Completion is partial because the exact historical CultureBotHT generated source YAML and import-version correspondence remain unverified, despite recovery of a public authoritative formula.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 90; batch 009 item 10 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding eight task batches contain 80 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c contains 40 validated baseline bundles covering 2 current merged paths. Unioning all prior lists with this baseline covers 82 of 6320 current merged paths, including 2 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 24a1d277eb7f0437af53af0d178a30f9bfa6374c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:015480 | data/merge_yaml/merged/2x_UGA_defined_nocarbon.yaml | generated | 2x UGA defined nocarbon |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:015480 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:015480 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-009/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch009/090/strict.tsv |
+| validate-terms | passed | True | CultureMech:015480 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:015480 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:015480 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact original CultureBotHT source YAML and import-version correspondence | unavailable | True | CultureMech:015480 | Current public FEBA formula recovered; precise historical generated source and version equivalence remain unavailable. No original file contents or historical execution is claimed. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:015480.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### All asserted primary and current secondary ingredient identifiers
+
+grounding: supported. Targets: CultureMech:015480.
+
+29 primary CHEBI identities resolve with matching labels; 0 of 0 current secondary keys have live pinned-index rows. Unresolved keys: [].
+
+32 direct ingredient instances; CHEBI-primary instance linkage 32/32 (100.00%), verified secondary coverage 0/32 (0.00%). Percentages use a 0–100 linkage scale, not a scientific correctness score. Complex mixtures without asserted IDs remain ungrounded rather than receiving invented pure-molecule identities.
+
+### Exact-name source, owner and historical provenance
+
+identity: concern. Targets: CultureMech:015480.
+
+One stable generated ID and one normalized owner resolve. The public FEBA title and description exactly match, but precise historical CultureBotHT YAML/version correspondence remains unverified. Preserve that source distinction.
+
+### All32 concentrations and unmatched source contribution
+
+quantity: concern. Targets: CultureMech:015480.
+
+Seven direct amounts, fifteen mineral-mix amounts and ten vitamin amounts match public direct concentrations or 2/1 factors exactly. Public vitamin mix also contributes phosphate 1.8g/L, which is absent alongside the retained direct 10mM phosphate. Do not deduplicate separate Mg, Ca or NaCl base/mix contributions.
+
+[{"name": "Ammonium Chloride", "value": "2.68", "unit": "MILLIMOLAR", "line": 3139, "source": "feba_media", "field_path": "ingredients[0].concentration", "record": {"value": "2.68", "unit": "MILLIMOLAR"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Magnesium sulfate heptahydrate", "value": "4.00", "unit": "MILLIMOLAR", "line": 3141, "source": "feba_media", "field_path": "ingredients[1].concentration", "record": {"value": "4.00", "unit": "MILLIMOLAR"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Calcium chloride dihydrate", "value": "0.20", "unit": "MILLIMOLAR", "line": 3142, "source": "feba_media", "field_path": "ingredients[2].concentration", "record": {"value": "0.20", "unit": "MILLIMOLAR"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Sodium Chloride", "value": "0.34", "unit": "MILLIMOLAR", "line": 3143, "source": "feba_media", "field_path": "ingredients[3].concentration", "record": {"value": "0.34", "unit": "MILLIMOLAR"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Monopotassium phosphate", "value": "10.00", "unit": "MILLIMOLAR", "line": 3144, "source": "feba_media", "field_path": "ingredients[4].concentration", "record": {"value": "10.00", "unit": "MILLIMOLAR"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "EDTA", "value": "10.00", "unit": "MG_PER_L", "base_value": "5", "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe's mineral mix", "line": 886, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[5].concentration", "record": {"value": "10.0", "unit": "MG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Magnesium Sulfate Heptahydrate", "value": "6.00", "unit": "MG_PER_L", "base_value": "3", "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe's mineral mix", "line": 887, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[6].concentration", "record": {"value": "6.0", "unit": "MG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Manganese (II) sulfate monohydrate", "value": "10.00", "unit": "MG_PER_L", "base_value": "5", "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe's mineral mix", "line": 888, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[7].concentration", "record": {"value": "10.0", "unit": "MG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Sodium Chloride", "value": "20.00", "unit": "MG_PER_L", "base_value": "10", "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe's mineral mix", "line": 889, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[8].concentration", "record": {"value": "20.0", "unit": "MG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Iron (II) sulfate heptahydrate", "value": "2.00", "unit": "MG_PER_L", "base_value": "1", "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe's mineral mix", "line": 890, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[9].concentration", "record": {"value": "2.0", "unit": "MG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Cobalt(II) nitrate hexahydrate", "value": "2.00", "unit": "MG_PER_L", "base_value": "1", "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe's mineral mix", "line": 891, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[10].concentration", "record": {"value": "2.0", "unit": "MG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Calcium Chloride Dihydrate", "value": "2.00", "unit": "MG_PER_L", "base_value": "1", "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe's mineral mix", "line": 892, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[11].concentration", "record": {"value": "2.0", "unit": "MG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Zinc sulfate heptahydrate", "value": "2.00", "unit": "MG_PER_L", "base_value": "1", "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe's mineral mix", "line": 893, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[12].concentration", "record": {"value": "2.0", "unit": "MG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Copper (II) sulfate pentahydrate", "value": "0.200", "unit": "MG_PER_L", "base_value": "0.1", "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe's mineral mix", "line": 894, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[13].concentration", "record": {"value": "0.2", "unit": "MG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Aluminum potassium sulfate dodecahydrate", "value": "0.200", "unit": "MG_PER_L", "base_value": "0.1", "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe's mineral mix", "line": 895, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[14].concentration", "record": {"value": "0.2", "unit": "MG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Boric Acid", "value": "0.200", "unit": "MG_PER_L", "base_value": "0.1", "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe's mineral mix", "line": 896, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[15].concentration", "record": {"value": "0.2", "unit": "MG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Sodium Molybdate Dihydrate", "value": "0.200", "unit": "MG_PER_L", "base_value": "0.1", "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe's mineral mix", "line": 897, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[16].concentration", "record": {"value": "0.2", "unit": "MG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Sodium selenite pentahydrate", "value": "0.0200", "unit": "MG_PER_L", "base_value": "0.01", "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe's mineral mix", "line": 898, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[17].concentration", "record": {"value": "0.02", "unit": "MG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Sodium tungstate dihydrate", "value": "0.200", "unit": "MG_PER_L", "base_value": "0.1", "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe's mineral mix", "line": 899, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[18].concentration", "record": {"value": "0.2", "unit": "MG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Nickel (II) chloride hexahydrate", "value": "0.400", "unit": "MG_PER_L", "base_value": "0.2", "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe's mineral mix", "line": 900, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[19].concentration", "record": {"value": "0.4", "unit": "MG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Folic Acid", "value": "40.00", "unit": "MICROG_PER_L", "base_value": "20", "base_unit": "ug/L", "factor": "2.00/1", "mix": "ATCC Wolfe's vitamin mix", "line": 855, "medium_line": 3146, "source": "feba_mixes", "field_path": "ingredients[20].concentration", "record": {"value": "40.0", "unit": "MICROG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Pyridoxine HCl", "value": "200.00", "unit": "MICROG_PER_L", "base_value": "100", "base_unit": "ug/L", "factor": "2.00/1", "mix": "ATCC Wolfe's vitamin mix", "line": 856, "medium_line": 3146, "source": "feba_mixes", "field_path": "ingredients[21].concentration", "record": {"value": "200.0", "unit": "MICROG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Riboflavin", "value": "100.00", "unit": "MICROG_PER_L", "base_value": "50", "base_unit": "ug/L", "factor": "2.00/1", "mix": "ATCC Wolfe's vitamin mix", "line": 857, "medium_line": 3146, "source": "feba_mixes", "field_path": "ingredients[22].concentration", "record": {"value": "100.0", "unit": "MICROG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "biotin", "value": "40.00", "unit": "MICROG_PER_L", "base_value": "20", "base_unit": "ug/L", "factor": "2.00/1", "mix": "ATCC Wolfe's vitamin mix", "line": 858, "medium_line": 3146, "source": "feba_mixes", "field_path": "ingredients[23].concentration", "record": {"value": "40.0", "unit": "MICROG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Thiamine HCl", "value": "100.00", "unit": "MICROG_PER_L", "base_value": "50", "base_unit": "ug/L", "factor": "2.00/1", "mix": "ATCC Wolfe's vitamin mix", "line": 859, "medium_line": 3146, "source": "feba_mixes", "field_path": "ingredients[24].concentration", "record": {"value": "100.0", "unit": "MICROG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Nicotinic Acid", "value": "100.00", "unit": "MICROG_PER_L", "base_value": "50", "base_unit": "ug/L", "factor": "2.00/1", "mix": "ATCC Wolfe's vitamin mix", "line": 860, "medium_line": 3146, "source": "feba_mixes", "field_path": "ingredients[25].concentration", "record": {"value": "100.0", "unit": "MICROG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "calcium pantothenate", "value": "100.00", "unit": "MICROG_PER_L", "base_value": "50", "base_unit": "ug/L", "factor": "2.00/1", "mix": "ATCC Wolfe's vitamin mix", "line": 861, "medium_line": 3146, "source": "feba_mixes", "field_path": "ingredients[26].concentration", "record": {"value": "100.0", "unit": "MICROG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Cyanocobalamin", "value": "2.00", "unit": "MICROG_PER_L", "base_value": "1", "base_unit": "ug/L", "factor": "2.00/1", "mix": "ATCC Wolfe's vitamin mix", "line": 862, "medium_line": 3146, "source": "feba_mixes", "field_path": "ingredients[27].concentration", "record": {"value": "2.0", "unit": "MICROG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "4-Aminobenzoic acid", "value": "100.00", "unit": "MICROG_PER_L", "base_value": "50", "base_unit": "ug/L", "factor": "2.00/1", "mix": "ATCC Wolfe's vitamin mix", "line": 863, "medium_line": 3146, "source": "feba_mixes", "field_path": "ingredients[28].concentration", "record": {"value": "100.0", "unit": "MICROG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Lipoic acid", "value": "100.00", "unit": "MICROG_PER_L", "base_value": "50", "base_unit": "ug/L", "factor": "2.00/1", "mix": "ATCC Wolfe's vitamin mix", "line": 864, "medium_line": 3146, "source": "feba_mixes", "field_path": "ingredients[29].concentration", "record": {"value": "100.0", "unit": "MICROG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Sodium phosphate dibasic", "value": "8.10", "unit": "MILLIMOLAR", "line": 3147, "source": "feba_media", "field_path": "ingredients[30].concentration", "record": {"value": "8.10", "unit": "MILLIMOLAR"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Sodium phosphate monobasic", "value": "1.90", "unit": "MILLIMOLAR", "line": 3148, "source": "feba_media", "field_path": "ingredients[31].concentration", "record": {"value": "1.90", "unit": "MILLIMOLAR"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}]
+
+### Relative mix factors and batch/preparation basis
+
+representation: concern. Targets: CultureMech:015480.
+
+FEBA declares two ATCC mixes at 2X and supplies their 1X composition. Local rows retain only From-mix notes. These numbers are supported expanded final contributions, not unscaled physical stock concentrations. No stock mL, final batch volume or additional two-fold dilution is established. Blank KCl cannot support a numeric quantity.
+
+### All note-level CAS and molecular weights
+
+grounding: concern. Targets: CultureMech:015480.
+
+All 29 primary identifiers and labels are canonical;27 ingredient rows contain CAS/MW notes.25 CAS annotations match OLS; sodium phosphate has a clear missing digit and lipoic acid is unresolved. Calcium pantothenate MW is half the formula-unit mass. Five other small MW differences are consistent with source precision/atomic-weight choices and do not establish wrong chemical form. No source concentrations were converted using these notes.
+
+### Primary identifiers versus stale flag and optional secondary links
+
+consistency: concern. Targets: CultureMech:015480.
+
+All 32 direct ingredient instances have primary CHEBI terms:100% linkage on a 0–100 scale. None has an asserted secondary MIM key, so secondary linkage is 0/32; all 29 distinct CHEBI identities nevertheless have live preferred-term rows in the pinned index. has_unmapped_ingredients is stale under the local importer primary-term rule. Neither percentage is a correctness score.
+
+### Defined formulation, no-carbon label and aerobic description
+
+scope: supported. Targets: CultureMech:015480.
+
+Named chemicals and no solidifier are consistent with DEFINED/LIQUID. specialized is a fallback category, not a taxon assertion. The aerobic-growth description is exact FEBA metadata, not strain-specific experimental evidence. nocarbon does not mean absence of elemental carbon: vitamins and EDTA remain. No missing bulk carbon substrate is inferred.
+
+### pH, sterilization, solvent, stock preparation and growth
+
+completeness: unknown. Targets: CultureMech:015480.
+
+Neither local layer nor the selected public source sections supplies detailed preparation, pH, incubation time/temperature, measured final volume or growth evidence. No organism targets or optimization claims are asserted. These limits do not license default preparation, use of unrelated UGA variants or adoption of another ATCC product recipe.
+
+### Claim evidence, append-only history and generated correspondence
+
+provenance: concern. Targets: CultureMech:015480.
+
+Both layers contain only repository-level source tracking and FEBA/mix notes, with no references or claim evidence. The reference check examined zero excerpts. All owner history is preserved in the target, all timestamps are timezone-aware, and substantive content agrees; there is no omitted later owner curation. Current M9 repair code is unrelated.
+
+## Findings
+
+### f1: An additional vitamin-mix phosphate contribution is absent relative to public FEBA
+
+major / open / confirmed; issue key: CM015480-source-phosphate-discrepancy.
+
+Exact-name public FEBA medium uses 2X ATCC vitamin mix. That mix declares 1X and potassium phosphate monobasic 0.9g/L, giving 1.8g/L at 2X. Neither local layer has that contribution; its sole monopotassium phosphate row remains the separate direct 10mM. All other 32 quantified source rows match. Historical import-version correspondence remains unresolved, so this discrepancy does not by itself prove when or why it arose.
+
+### f2: Expanded mixture contributions lack factors and claim-level source trace
+
+major / open / confirmed; issue key: CM015480-mix-trace.
+
+All stored amounts are supported by the recovered FEBA comparison, but notes omit the two 2X-to 1X expansion factors and no claim-level evidence/reference identifies the exact medium and mix versions. Repeated base/mix chemicals can be mistaken for accidental duplicates, and the blank source KCl row is unrepresented.
+
+### f3: Calcium pantothenate MW note is half its formula-unit mass
+
+major / open / confirmed; issue key: CM015480-pantothenate-molecular-weight.
+
+ingredients[26] correctly names CHEBI31345 and CAS137-08-6 but its MW238.27 conflicts with ontology formula 2C9H16NO5.Ca and mass 476.536. Using that note as formula-unit molar mass would double a derived molarity. The stored 100microgram/L amount is independently consistent with the source and is not corrected by doubling or halving it.
+
+### f4: Sodium dihydrogenphosphate CAS note lacks a digit
+
+minor / open / confirmed; issue key: CM015480-phosphate-cas-note.
+
+ingredients[31] notes 558-80-7 while its correctly labeled CHEBI37585 lists 7558-80-7. The ingredient name,119.98MW approximation and primary term agree with sodium dihydrogenphosphate; the discrepancy is in the note-level CAS identifier.
+
+### f5: Unmapped-ingredient flag contradicts complete primary linkage
+
+minor / open / confirmed; issue key: CM015480-stale-unmapped-flag.
+
+Both inputs retain has_unmapped_ingredients although every one of 32 direct ingredients has a canonical primary CHEBI term. The inspected importer uses missing primary terms for this flag; absence of optional secondary fields does not explain it.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Establish the intended source version and whether an explicit phosphate-free vitamin variant was intended. If this exact public FEBA definition is the intended formulation, restore the separately sourced 1.8g/L contribution or an explicitly evidenced equivalent total without double counting the existing 10mM. Otherwise document the actual variant and evidence. Do not silently substitute another mix or infer a KCl amount.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Add public commit-pinned medium/mix provenance, exact field-linked source excerpts and 2/1 arithmetic to the maintained owner. Preserve separate direct and mixture contributions and an explicit unresolved blank KCl source row. A faithful expanded representation is acceptable; do not add stock volumes, apply a second dilution or remove additive duplicate chemical rows.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Correct or explicitly qualify the MW note against the selected chemical form, using 476.536g/mol (476.54 at 2decimal places) for this formula unit. Preserve the independently supported mass concentration; do not infer product grade or revise source quantity from a metadata error.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Correct the note-level CAS to 7558-80-7 with ontology evidence while retaining CHEBI37585 and the supported 1.90mM source concentration. Do not change the term or infer a hydrate.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a5
+
+Reassess the flag under its documented primary-linkage semantics and remove the stale flag only in a separately authorized maintained-input curation with append-only history. Keep genuine provenance, formulation and chemical-note issues distinct from linkage coverage.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/2x_UGA_defined_nocarbon.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/specialized/2x_uga_defined_nocarbon.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/2x_UGA_defined_nocarbon.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/2x_UGA_defined_nocarbon.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch009/090/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-009/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch009/090/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/2x_UGA_defined_nocarbon.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/2x_UGA_defined_nocarbon.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/normalized_yaml/specialized/2x_uga_defined_nocarbon.yaml:1:id: CultureMech:015480<br>./data/merge_yaml/merged/2x_UGA_defined_nocarbon.yaml:1:id: CultureMech:015480<br> |
+| chebi131361 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:131361 resolves to disodium selenite pentahydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi15940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:15940 resolves to nicotinic acid and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:15956 resolves to biotin and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi16494 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:16494 resolves to lipoic acid and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi17015 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:17015 resolves to riboflavin and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi17439 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17439; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:17439 resolves to cyanocob(III)alamin and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:26710 resolves to sodium chloride and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi27470 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:27470 resolves to folic acid and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:30753 resolves to 4-aminobenzoic acid and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi30961 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:30961 resolves to pyridoxine hydrochloride and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:31206 resolves to ammonium chloride and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi31345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:31345 resolves to Calcium pantothenate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi31440 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:31440 resolves to copper(II) sulfate pentahydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi32312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:32312 resolves to zinc sulfate heptahydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:33118 resolves to boric acid and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi34683 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34683; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:34683 resolves to disodium hydrogenphosphate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi37585 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_37585; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:37585 resolves to sodium dihydrogenphosphate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi4735 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_4735; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:4735 resolves to ethylenediaminetetraacetic acid and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi49105 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:49105 resolves to thiamine hydrochloride and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi53542 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53542; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:53542 resolves to nickel chloride hexahydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:63036 resolves to potassium dihydrogen phosphate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi63939 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:63939 resolves to sodium tungstate dihydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:75213 resolves to sodium molybdate dihydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi75836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:75836 resolves to iron(2+) sulfate heptahydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:86158 resolves to calcium chloride dihydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi86214 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86214; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:86214 resolves to cobalt dinitrate hexahydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi86364 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86364; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:86364 resolves to manganese(II) sulfate monohydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi86465 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86465; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:86465 resolves to potassium aluminium sulfate dodecahydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; All live preferred-term rows for asserted secondary CHEBI keys; metadata captured | supports | {} |
+| feba_media | https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media; Exact-name medium section lines3135–3148 | supports | Public Berkeley Lab FEBA metadata at commit803273865ea9e83fab770ec4f13670db80e1180b, retrieved without authentication. The medium has seven quantified direct rows, one blank KCl row and two ATCC mixes at2X. Each selected mix declares a1X basis. These are dataset formula assertions, not experimental growth results. |
+| feba_mixes | https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes; ATCC vitamin mix lines851–865 and mineral mix lines882–900 | supports | Public Berkeley Lab FEBA metadata at commit803273865ea9e83fab770ec4f13670db80e1180b, retrieved without authentication. The medium has seven quantified direct rows, one blank KCl row and two ATCC mixes at2X. Each selected mix declares a1X basis. These are dataset formula assertions, not experimental growth results. |
+| amount-trace | Public FEBA medium and ATCC mix sections; unchanged target and owner; All32 concentration nodes and the unmatched33rd quantified source contribution | supports | {"matched": [{"name": "Ammonium Chloride", "value": "2.68", "unit": "MILLIMOLAR", "line": 3139, "source": "feba_media", "field_path": "ingredients[0].concentration", "record": {"value": "2.68", "unit": "MILLIMOLAR"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Magnesium sulfate heptahydrate", "value": "4.00", "unit": "MILLIMOLAR", "line": 3141, "source": "feba_media", "field_path": "ingredients[1].concentration", "record": {"value": "4.00", "unit": "MILLIMOLAR"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Calcium chloride dihydrate", "value": "0.20", "unit": "MILLIMOLAR", "line": 3142, "source": "feba_media", "field_path": "ingredients[2].concentration", "record": {"value": "0.20", "unit": "MILLIMOLAR"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Sodium Chloride", "value": "0.34", "unit": "MILLIMOLAR", "line": 3143, "source": "feba_media", "field_path": "ingredients[3].concentration", "record": {"value": "0.34", "unit": "MILLIMOLAR"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Monopotassium phosphate", "value": "10.00", "unit": "MILLIMOLAR", "line": 3144, "source": "feba_media", "field_path": "ingredients[4].concentration", "record": {"value": "10.00", "unit": "MILLIMOLAR"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "EDTA", "value": "10.00", "unit": "MG_PER_L", "base_value": "5", "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe's mineral mix", "line": 886, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[5].concentration", "record": {"value": "10.0", "unit": "MG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Magnesium Sulfate Heptahydrate", "value": "6.00", "unit": "MG_PER_L", "base_value": "3", "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe's mineral mix", "line": 887, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[6].concentration", "record": {"value": "6.0", "unit": "MG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Manganese (II) sulfate monohydrate", "value": "10.00", "unit": "MG_PER_L", "base_value": "5", "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe's mineral mix", "line": 888, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[7].concentration", "record": {"value": "10.0", "unit": "MG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Sodium Chloride", "value": "20.00", "unit": "MG_PER_L", "base_value": "10", "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe's mineral mix", "line": 889, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[8].concentration", "record": {"value": "20.0", "unit": "MG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Iron (II) sulfate heptahydrate", "value": "2.00", "unit": "MG_PER_L", "base_value": "1", "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe's mineral mix", "line": 890, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[9].concentration", "record": {"value": "2.0", "unit": "MG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Cobalt(II) nitrate hexahydrate", "value": "2.00", "unit": "MG_PER_L", "base_value": "1", "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe's mineral mix", "line": 891, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[10].concentration", "record": {"value": "2.0", "unit": "MG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Calcium Chloride Dihydrate", "value": "2.00", "unit": "MG_PER_L", "base_value": "1", "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe's mineral mix", "line": 892, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[11].concentration", "record": {"value": "2.0", "unit": "MG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Zinc sulfate heptahydrate", "value": "2.00", "unit": "MG_PER_L", "base_value": "1", "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe's mineral mix", "line": 893, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[12].concentration", "record": {"value": "2.0", "unit": "MG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Copper (II) sulfate pentahydrate", "value": "0.200", "unit": "MG_PER_L", "base_value": "0.1", "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe's mineral mix", "line": 894, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[13].concentration", "record": {"value": "0.2", "unit": "MG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Aluminum potassium sulfate dodecahydrate", "value": "0.200", "unit": "MG_PER_L", "base_value": "0.1", "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe's mineral mix", "line": 895, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[14].concentration", "record": {"value": "0.2", "unit": "MG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Boric Acid", "value": "0.200", "unit": "MG_PER_L", "base_value": "0.1", "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe's mineral mix", "line": 896, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[15].concentration", "record": {"value": "0.2", "unit": "MG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Sodium Molybdate Dihydrate", "value": "0.200", "unit": "MG_PER_L", "base_value": "0.1", "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe's mineral mix", "line": 897, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[16].concentration", "record": {"value": "0.2", "unit": "MG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Sodium selenite pentahydrate", "value": "0.0200", "unit": "MG_PER_L", "base_value": "0.01", "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe's mineral mix", "line": 898, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[17].concentration", "record": {"value": "0.02", "unit": "MG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Sodium tungstate dihydrate", "value": "0.200", "unit": "MG_PER_L", "base_value": "0.1", "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe's mineral mix", "line": 899, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[18].concentration", "record": {"value": "0.2", "unit": "MG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Nickel (II) chloride hexahydrate", "value": "0.400", "unit": "MG_PER_L", "base_value": "0.2", "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe's mineral mix", "line": 900, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[19].concentration", "record": {"value": "0.4", "unit": "MG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Folic Acid", "value": "40.00", "unit": "MICROG_PER_L", "base_value": "20", "base_unit": "ug/L", "factor": "2.00/1", "mix": "ATCC Wolfe's vitamin mix", "line": 855, "medium_line": 3146, "source": "feba_mixes", "field_path": "ingredients[20].concentration", "record": {"value": "40.0", "unit": "MICROG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Pyridoxine HCl", "value": "200.00", "unit": "MICROG_PER_L", "base_value": "100", "base_unit": "ug/L", "factor": "2.00/1", "mix": "ATCC Wolfe's vitamin mix", "line": 856, "medium_line": 3146, "source": "feba_mixes", "field_path": "ingredients[21].concentration", "record": {"value": "200.0", "unit": "MICROG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Riboflavin", "value": "100.00", "unit": "MICROG_PER_L", "base_value": "50", "base_unit": "ug/L", "factor": "2.00/1", "mix": "ATCC Wolfe's vitamin mix", "line": 857, "medium_line": 3146, "source": "feba_mixes", "field_path": "ingredients[22].concentration", "record": {"value": "100.0", "unit": "MICROG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "biotin", "value": "40.00", "unit": "MICROG_PER_L", "base_value": "20", "base_unit": "ug/L", "factor": "2.00/1", "mix": "ATCC Wolfe's vitamin mix", "line": 858, "medium_line": 3146, "source": "feba_mixes", "field_path": "ingredients[23].concentration", "record": {"value": "40.0", "unit": "MICROG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Thiamine HCl", "value": "100.00", "unit": "MICROG_PER_L", "base_value": "50", "base_unit": "ug/L", "factor": "2.00/1", "mix": "ATCC Wolfe's vitamin mix", "line": 859, "medium_line": 3146, "source": "feba_mixes", "field_path": "ingredients[24].concentration", "record": {"value": "100.0", "unit": "MICROG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Nicotinic Acid", "value": "100.00", "unit": "MICROG_PER_L", "base_value": "50", "base_unit": "ug/L", "factor": "2.00/1", "mix": "ATCC Wolfe's vitamin mix", "line": 860, "medium_line": 3146, "source": "feba_mixes", "field_path": "ingredients[25].concentration", "record": {"value": "100.0", "unit": "MICROG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "calcium pantothenate", "value": "100.00", "unit": "MICROG_PER_L", "base_value": "50", "base_unit": "ug/L", "factor": "2.00/1", "mix": "ATCC Wolfe's vitamin mix", "line": 861, "medium_line": 3146, "source": "feba_mixes", "field_path": "ingredients[26].concentration", "record": {"value": "100.0", "unit": "MICROG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Cyanocobalamin", "value": "2.00", "unit": "MICROG_PER_L", "base_value": "1", "base_unit": "ug/L", "factor": "2.00/1", "mix": "ATCC Wolfe's vitamin mix", "line": 862, "medium_line": 3146, "source": "feba_mixes", "field_path": "ingredients[27].concentration", "record": {"value": "2.0", "unit": "MICROG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "4-Aminobenzoic acid", "value": "100.00", "unit": "MICROG_PER_L", "base_value": "50", "base_unit": "ug/L", "factor": "2.00/1", "mix": "ATCC Wolfe's vitamin mix", "line": 863, "medium_line": 3146, "source": "feba_mixes", "field_path": "ingredients[28].concentration", "record": {"value": "100.0", "unit": "MICROG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Lipoic acid", "value": "100.00", "unit": "MICROG_PER_L", "base_value": "50", "base_unit": "ug/L", "factor": "2.00/1", "mix": "ATCC Wolfe's vitamin mix", "line": 864, "medium_line": 3146, "source": "feba_mixes", "field_path": "ingredients[29].concentration", "record": {"value": "100.0", "unit": "MICROG_PER_L"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Sodium phosphate dibasic", "value": "8.10", "unit": "MILLIMOLAR", "line": 3147, "source": "feba_media", "field_path": "ingredients[30].concentration", "record": {"value": "8.10", "unit": "MILLIMOLAR"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}, {"name": "Sodium phosphate monobasic", "value": "1.90", "unit": "MILLIMOLAR", "line": 3148, "source": "feba_media", "field_path": "ingredients[31].concentration", "record": {"value": "1.90", "unit": "MILLIMOLAR"}, "decision": "verified against public source direct amount or explicit2/1 mix expansion"}], "unmatched": [{"name": "Potassium phosphate monobasic", "value": "1.800", "unit": "G_PER_L", "base_value": "0.9", "base_unit": "g/L", "factor": "2.00/1", "mix": "ATCC Wolfe's vitamin mix", "line": 865, "medium_line": 3146, "source": "feba_mixes"}], "blank_source_row": {"line": 3140, "name": "Potassium Chloride", "amount": "", "unit": "mM"}} |
+| chemical-note-trace | Exact OLS responses for all29 asserted CHEBI terms; All32 ingredient notes; annotation.mass, generalized_empirical_formula and database_cross_reference | supports | [{"index": 0, "term": "CHEBI:31206", "record_cas": null, "record_mw": null, "ontology_cas": ["12125-02-9"], "ontology_mass": ["53.492"], "formula": ["Cl.H4N"]}, {"index": 1, "term": "CHEBI:31795", "record_cas": null, "record_mw": null, "ontology_cas": ["10034-99-8"], "ontology_mass": ["246.473"], "formula": ["7H2O.Mg.O4S"]}, {"index": 2, "term": "CHEBI:86158", "record_cas": "10035-04-8", "record_mw": "147.01", "ontology_cas": ["10035-04-8"], "ontology_mass": ["147.014"], "formula": ["Ca.2Cl.2H2O"]}, {"index": 3, "term": "CHEBI:26710", "record_cas": "7647-14-5", "record_mw": "58.44", "ontology_cas": ["7647-14-5"], "ontology_mass": ["58.443"], "formula": ["Cl.Na"]}, {"index": 4, "term": "CHEBI:63036", "record_cas": null, "record_mw": null, "ontology_cas": ["7778-77-0"], "ontology_mass": ["136.084"], "formula": ["H2O4P.K"]}, {"index": 5, "term": "CHEBI:4735", "record_cas": "60-00-4", "record_mw": "292.24", "ontology_cas": ["60-00-4"], "ontology_mass": ["292.244"], "formula": ["C10H16N2O8"]}, {"index": 6, "term": "CHEBI:31795", "record_cas": "10034-99-8", "record_mw": "246.47", "ontology_cas": ["10034-99-8"], "ontology_mass": ["246.473"], "formula": ["7H2O.Mg.O4S"]}, {"index": 7, "term": "CHEBI:86364", "record_cas": "10034-96-5", "record_mw": "169.02", "ontology_cas": ["10034-96-5"], "ontology_mass": ["169.016"], "formula": ["H2O.Mn.O4S"]}, {"index": 8, "term": "CHEBI:26710", "record_cas": "7647-14-5", "record_mw": "58.44", "ontology_cas": ["7647-14-5"], "ontology_mass": ["58.443"], "formula": ["Cl.Na"]}, {"index": 9, "term": "CHEBI:75836", "record_cas": "7782-63-0", "record_mw": "278.01", "ontology_cas": ["7782-63-0"], "ontology_mass": ["278.013"], "formula": ["Fe.7H2O.O4S"]}, {"index": 10, "term": "CHEBI:86214", "record_cas": "10026-22-9", "record_mw": "291.03", "ontology_cas": ["10026-22-9"], "ontology_mass": ["291.031"], "formula": ["Co.6H2O.2NO3"]}, {"index": 11, "term": "CHEBI:86158", "record_cas": null, "record_mw": null, "ontology_cas": ["10035-04-8"], "ontology_mass": ["147.014"], "formula": ["Ca.2Cl.2H2O"]}, {"index": 12, "term": "CHEBI:32312", "record_cas": "7446-20-0", "record_mw": "287.56", "ontology_cas": ["7446-20-0"], "ontology_mass": ["287.558"], "formula": ["7H2O.O4S.Zn"]}, {"index": 13, "term": "CHEBI:31440", "record_cas": "7758-99-8", "record_mw": "249.69", "ontology_cas": ["7758-99-8"], "ontology_mass": ["249.684"], "formula": ["Cu.5H2O.O4S"]}, {"index": 14, "term": "CHEBI:86465", "record_cas": "7784-24-9", "record_mw": "474.39", "ontology_cas": ["7784-24-9"], "ontology_mass": ["474.386"], "formula": ["Al.12H2O.K.2O4S"]}, {"index": 15, "term": "CHEBI:33118", "record_cas": "10043-35-3", "record_mw": "61.83", "ontology_cas": ["10043-35-3", "11113-50-1"], "ontology_mass": ["61.833"], "formula": ["H3BO3"]}, {"index": 16, "term": "CHEBI:75213", "record_cas": "10102-40-6", "record_mw": "241.95", "ontology_cas": ["10102-40-6"], "ontology_mass": ["241.946"], "formula": ["2H2O.MoO4.2Na"]}, {"index": 17, "term": "CHEBI:131361", "record_cas": "26970-82-1", "record_mw": "263.01", "ontology_cas": ["26970-82-1"], "ontology_mass": ["263.012"], "formula": ["5H2O.2Na.O3Se"]}, {"index": 18, "term": "CHEBI:63939", "record_cas": "10213-10-2", "record_mw": "329.85", "ontology_cas": ["10213-10-2"], "ontology_mass": ["329.846"], "formula": ["2H2O.2Na.O4W"]}, {"index": 19, "term": "CHEBI:53542", "record_cas": "7791-20-0", "record_mw": "237.69", "ontology_cas": ["7791-20-0"], "ontology_mass": ["237.689"], "formula": ["2Cl.6H2O.Ni"]}, {"index": 20, "term": "CHEBI:27470", "record_cas": "59-30-3", "record_mw": "441.4", "ontology_cas": ["59-30-3"], "ontology_mass": ["441.404"], "formula": ["C19H19N7O6"]}, {"index": 21, "term": "CHEBI:30961", "record_cas": "58-56-0", "record_mw": "205.64", "ontology_cas": ["58-56-0"], "ontology_mass": ["205.641"], "formula": ["C8H11NO3.HCl"]}, {"index": 22, "term": "CHEBI:17015", "record_cas": "83-88-5", "record_mw": "376.36", "ontology_cas": ["83-88-5"], "ontology_mass": ["376.369"], "formula": ["C17H20N4O6"]}, {"index": 23, "term": "CHEBI:15956", "record_cas": "58-85-5", "record_mw": "244.31", "ontology_cas": ["58-85-5"], "ontology_mass": ["244.316"], "formula": ["C10H16N2O3S"]}, {"index": 24, "term": "CHEBI:49105", "record_cas": "67-03-8", "record_mw": "337.27", "ontology_cas": ["67-03-8"], "ontology_mass": ["337.276"], "formula": ["C12H17N4OS.Cl.HCl"]}, {"index": 25, "term": "CHEBI:15940", "record_cas": "59-67-6", "record_mw": "123.11", "ontology_cas": ["59-67-6"], "ontology_mass": ["123.111"], "formula": ["C6H5NO2"]}, {"index": 26, "term": "CHEBI:31345", "record_cas": "137-08-6", "record_mw": "238.27", "ontology_cas": ["137-08-6"], "ontology_mass": ["476.536"], "formula": ["2C9H16NO5.Ca"]}, {"index": 27, "term": "CHEBI:17439", "record_cas": "68-19-9", "record_mw": "1355.37", "ontology_cas": ["68-19-9"], "ontology_mass": ["1355.388"], "formula": ["C63H88CoN14O14P"]}, {"index": 28, "term": "CHEBI:30753", "record_cas": "150-13-0", "record_mw": "137.14", "ontology_cas": ["150-13-0"], "ontology_mass": ["137.138"], "formula": ["C7H7NO2"]}, {"index": 29, "term": "CHEBI:16494", "record_cas": "1077-28-7", "record_mw": "206.33", "ontology_cas": ["62-46-4"], "ontology_mass": ["206.332"], "formula": ["C8H14O2S2"]}, {"index": 30, "term": "CHEBI:34683", "record_cas": null, "record_mw": null, "ontology_cas": ["7558-79-4"], "ontology_mass": ["141.958"], "formula": ["HO4P.2Na"]}, {"index": 31, "term": "CHEBI:37585", "record_cas": "558-80-7", "record_mw": "119.98", "ontology_cas": ["7558-80-7"], "ontology_mass": ["119.976"], "formula": ["H2O4P.Na"]}] |
+| chebi31345-notes | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345; annotation database_cross_reference, mass and generalized_empirical_formula | supports | CHEBI31345 explicitly gives formula2C9H16NO5.Ca and mass476.536; the local MW238.27 is approximately half that formula-unit mass. |
+| chebi37585-notes | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_37585; annotation database_cross_reference, mass and generalized_empirical_formula | supports | CHEBI37585 lists CAS7558-80-7 for sodium dihydrogenphosphate; local558-80-7 omits its first digit. |
+| chebi16494-notes | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494; annotation database_cross_reference, mass and generalized_empirical_formula | supports | CHEBI16494 is generic lipoic acid and lists CAS62-46-4. Local1077-28-7 is not confirmed by this response; absence of a cross-reference is not proof of invalidity or wrong identity. |
+| mim-available | src/culturemech/data/mediaingredientmech/label_index.csv; src/culturemech/data/mediaingredientmech/label_index.metadata.json; Preferred-term rows for all29 exact identifiers (30 rows) and complete pinned metadata | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:37585": [{"label": "NaH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:37585", "preferred_term": "NaH2PO4", "ontology_id": "CHEBI:37585", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:53542": [{"label": "Nickel (II) chloride hexahydrate", "match_type": "preferred_term", "identifier": "CHEBI:53542", "preferred_term": "Nickel (II) chloride hexahydrate", "ontology_id": "CHEBI:53542", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31206": [{"label": "NH4Cl", "match_type": "preferred_term", "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31440": [{"label": "CuSO4 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86465": [{"label": "AlK(SO4)2 x 12 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86465", "preferred_term": "AlK(SO4)2 x 12 H2O", "ontology_id": "CHEBI:86465", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75836": [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:30753": [{"label": "p-Aminobenzoic acid", "match_type": "preferred_term", "identifier": "CHEBI:30753", "preferred_term": "p-Aminobenzoic acid", "ontology_id": "CHEBI:30753", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:16494": [{"label": "(DL)-alpha-Lipoic acid", "match_type": "preferred_term", "identifier": "CHEBI:16494", "preferred_term": "(DL)-alpha-Lipoic acid", "ontology_id": "CHEBI:16494", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15940": [{"label": "Nicotinic acid", "match_type": "preferred_term", "identifier": "CHEBI:15940", "preferred_term": "Nicotinic acid", "ontology_id": "CHEBI:15940", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:4735": [{"label": "EDTA", "match_type": "preferred_term", "identifier": "CHEBI:4735", "preferred_term": "EDTA", "ontology_id": "CHEBI:4735", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31345": [{"label": "Calcium pantothenate", "match_type": "preferred_term", "identifier": "CHEBI:31345", "preferred_term": "Calcium pantothenate", "ontology_id": "CHEBI:31345", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15956": [{"label": "Biotin", "match_type": "preferred_term", "identifier": "CHEBI:15956", "preferred_term": "Biotin", "ontology_id": "CHEBI:15956", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:131361": [{"label": "Na2SeO3 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:131361", "preferred_term": "Na2SeO3 x 5 H2O", "ontology_id": "CHEBI:131361", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17439": [{"label": "Cyanocobalamin", "match_type": "preferred_term", "identifier": "CHEBI:17439", "preferred_term": "Cyanocobalamin", "ontology_id": "CHEBI:17439", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:30961": [{"label": "Pyridoxine hydrochloride", "match_type": "preferred_term", "identifier": "CHEBI:30961", "preferred_term": "Pyridoxine hydrochloride", "ontology_id": "CHEBI:30961", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86214": [{"label": "Co(NO3)2 x 6 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86214", "preferred_term": "Co(NO3)2 x 6 H2O", "ontology_id": "CHEBI:86214", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32312": [{"label": "ZnSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17015": [{"label": "Riboflavin", "match_type": "preferred_term", "identifier": "CHEBI:17015", "preferred_term": "Riboflavin", "ontology_id": "CHEBI:17015", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:34683": [{"label": "Na2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:34683", "preferred_term": "Na2HPO4", "ontology_id": "CHEBI:34683", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4\u00b7H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4\u00b7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:49105": [{"label": "Thiamine HCl", "match_type": "preferred_term", "identifier": "CHEBI:49105", "preferred_term": "Thiamine HCl", "ontology_id": "CHEBI:49105", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86364": [{"label": "MnSO4 x H2O", "match_type": "preferred_term", "identifier": "CHEBI:86364", "preferred_term": "MnSO4 x H2O", "ontology_id": "CHEBI:86364", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63939": [{"label": "Na2WO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:27470": [{"label": "Folic acid", "match_type": "preferred_term", "identifier": "CHEBI:27470", "preferred_term": "Folic acid", "ontology_id": "CHEBI:27470", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| source-recovery | https://github.com/CultureBotAI/CultureBotHT; Exact source file, complete current tree and two bounded path-history lookups | unknown | Initial public404 was superseded by authenticated repository access. The named media_yaml/2x_UGA_defined_nocarbon.yaml was not recovered; two exact path-history queries returned empty lists. Public FEBA medium/mix tables were then recovered independently. The public formula is inspectable, but precise historical generated-file equivalence is not established. The access time records the terminal bounded history-query completion; individual earlier attempts retain their own local capture timestamps. |
+| code-import_from_culturebotht | scripts/import_from_culturebotht.py; CultureBotHTImporter.transform_medium and infer_category | context_only | Current local importer copies source ingredients, adds repository-level provenance and infers specialized by fallback. It does not independently validate FEBA source quantities and only appends has_unmapped_ingredients when a primary term is missing; no removal of stale flags is shown. |
+| code-repair_culturebotht_m9_score15 | scripts/repair_culturebotht_m9_score15.py; EXPECTED_ID, TARGET, _require_target | context_only | This narrowly guarded provenance repair targets CM015542 specialized/m9.yaml, not the reviewed UGA record; it is not source-formulation authority for UGA. |
+
+## Limits And Additional Notes
+
+- The original CultureBotHT generated YAML named by the import event was not recovered. Public unauthenticated requests returned 404; an authenticated repository lookup succeeded, but the exact historical file path returned 404, a complete current tree had no matching UGA path, and two bounded path-history queries returned empty lists. This does not establish that the source never existed or exclude ignored/untracked files, other paths or historical branches.
+- The published formulation analysis below relies on unauthenticated, commit-pinned public Berkeley Lab FEBA tables. Private repository archives were useful discovery leads only; no signed URLs, raw API request objects, private table contents or private code are reproduced as publication evidence.
+- The current public FEBA exact-name entry is not proof of the precise March 2026 import snapshot. The missing-phosphate finding is a confirmed discrepancy against that public definition; establish source version or an explicit variant before applying a correction.
+- FEBA lists potassium chloride with an empty concentration. Its amount, inclusion and purpose are unresolved; no zero, typical dose, or stock volume is inferred. X factors identify relative mixture strengths, not physical dispensing volumes.
+- Chemical ontology labels and formula masses do not establish supplier grade, actual reagent form, stock preparation, measured concentration or growth. The lipoic-acid CAS cross-reference difference remains unresolved rather than being called an incorrect chemical identity.
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- The pinned MIM index contains two preferred rows sharing CHEBI:31795, labeled MgSO4x7H2O and MgSO4·H2O. Identifier availability does not uniquely validate hydrate identity; exact OLS identity/form supports the record heptahydrate. No secondary MIM linkage is asserted in this record.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T080110Z-culturemech-015480-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: 2x UGA defined nocarbon (CultureMech:015480)'
+started_at: '2026-10-21T07:45:38Z'
+finished_at: '2026-10-21T08:01:10Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: Public Berkeley Lab FEBA tables resolve the exact medium name and support
+  every one of the 32 stored concentrations, including the two-fold mineral/vitamin
+  expansions. They also contain a vitamin-mix phosphate contribution absent from both
+  local layers. The records omit the mix factors and recoverable claim-level source
+  trace. Calcium pantothenate molecular-weight and sodium phosphate CAS notes conflict
+  with their correctly labeled CHEBI terms; the unmapped-ingredient flag is stale.
+  Completion is partial because the exact historical CultureBotHT generated source
+  YAML and import-version correspondence remain unverified, despite recovery of a
+  public authoritative formula.
+source:
+  git_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/2x_UGA_defined_nocarbon.yaml
+    sha256: b47e1f751f79f0507e2fd7f7ea7522ac35ade4ad3488961d7d0cf68f367d3883
+    role: target
+  - path: data/normalized_yaml/specialized/2x_uga_defined_nocarbon.yaml
+    sha256: 9b63eb14efa4b45717f4b2df419d7f6aa9ec88c6adeda52a04e5a3aaf13f9396
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/import_from_culturebotht.py
+    sha256: d835addf5fff423a9b0b1231848ed3103c5b2d97015c1c294365970d15be0fe1
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_culturebotht_m9_score15.py
+    sha256: 1cc7cb311afbfbf2edde93995486d66b24fbd7dd089435fc7f0139b9bfa803b8
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 90; batch 009 item 10 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding eight task batches contain
+    80 ledger-owned validated record reviews; their complete validated lists also
+    retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+    contains 40 validated baseline bundles covering 2 current merged paths. Unioning
+    all prior lists with this baseline covers 82 of 6320 current merged paths, including
+    2 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:015480
+targets:
+- target_id: CultureMech:015480
+  path: data/merge_yaml/merged/2x_UGA_defined_nocarbon.yaml
+  label: 2x UGA defined nocarbon
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/2x_uga_defined_nocarbon.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/2x_UGA_defined_nocarbon.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:015480
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/2x_UGA_defined_nocarbon.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch009/090/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-009/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch009/090/strict.tsv"
+  target_ids:
+  - CultureMech:015480
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/2x_UGA_defined_nocarbon.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:015480
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/2x_UGA_defined_nocarbon.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:015480
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:015480
+- check_id: historical-source-correspondence
+  name: Exact original CultureBotHT source YAML and import-version correspondence
+  required: true
+  status: unavailable
+  summary: Current public FEBA formula recovered; precise historical generated source
+    and version equivalence remain unavailable. No original file contents or historical
+    execution is claimed.
+  target_ids:
+  - CultureMech:015480
+  evidence_ids:
+  - source-recovery
+  - feba_media
+  - feba_mixes
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/2x_UGA_defined_nocarbon.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T08:01:07Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/specialized/2x_uga_defined_nocarbon.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T08:01:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/2x_UGA_defined_nocarbon.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T07:48:34.632868Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/2x_UGA_defined_nocarbon.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch009/090/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T07:48:36.354225Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-009/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch009/090/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/2x_UGA_defined_nocarbon.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T07:48:38.498832Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/2x_UGA_defined_nocarbon.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T07:48:39.779020Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T08:01:07Z'
+  support: supports
+  summary: './data/normalized_yaml/specialized/2x_uga_defined_nocarbon.yaml:1:id:
+    CultureMech:015480
+
+    ./data/merge_yaml/merged/2x_UGA_defined_nocarbon.yaml:1:id: CultureMech:015480
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: chebi131361
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T07:33:27.980786Z'
+  support: supports
+  summary: CHEBI:131361 resolves to disodium selenite pentahydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 643fefa89a2c0afeb2a00a0dd6149dbbf86cc4824369c58bde1c6ea6d4316d10
+- evidence_id: chebi15940
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T06:55:11.874279Z'
+  support: supports
+  summary: CHEBI:15940 resolves to nicotinic acid and is not obsolete. This verifies
+    the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: 3330ed782e73526a087fb250ed5895ff232f117a896d45d541dff431e5c1f0e1
+- evidence_id: chebi15956
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T06:55:10.040495Z'
+  support: supports
+  summary: CHEBI:15956 resolves to biotin and is not obsolete. This verifies the asserted
+    generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond
+    the record is inferred.
+  snapshot_sha256: d2d51887df4de92642b66e9d15086ef82eccbc476dd4077d514ca709181ab4bd
+- evidence_id: chebi16494
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T06:55:13.001958Z'
+  support: supports
+  summary: CHEBI:16494 resolves to lipoic acid and is not obsolete. This verifies
+    the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: aa3c1003d6266cc48f19a4d1d9527edd6844b96094a911e9a3c4f6a8851444e1
+- evidence_id: chebi17015
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T06:55:11.583596Z'
+  support: supports
+  summary: CHEBI:17015 resolves to riboflavin and is not obsolete. This verifies the
+    asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: f42bc5bbd29b208bfd3062acb11dfa63ccebf81f77ffd72ab596de863cb68aa4
+- evidence_id: chebi17439
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17439
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T07:16:23.574834Z'
+  support: supports
+  summary: CHEBI:17439 resolves to cyanocob(III)alamin and is not obsolete. This verifies
+    the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: 210a9fbc1db1c75e6053f4e23d098851ad5c63f087c736061f7664d9a393dbdd
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T07:31:15.881003Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride and is not obsolete. This verifies
+    the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi27470
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T06:55:10.450814Z'
+  support: supports
+  summary: CHEBI:27470 resolves to folic acid and is not obsolete. This verifies the
+    asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: fe3e4a2f0f0fa51f94efe6bbf0fa8883d43eafef8db73cfd37bc25ce15fdd12f
+- evidence_id: chebi30753
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T06:55:12.829785Z'
+  support: supports
+  summary: CHEBI:30753 resolves to 4-aminobenzoic acid and is not obsolete. This verifies
+    the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: 97ea54b8020d3bcda2478182be115d2bc632249ee22b197b0575a4a9fd5fe21a
+- evidence_id: chebi30961
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T06:55:10.799046Z'
+  support: supports
+  summary: CHEBI:30961 resolves to pyridoxine hydrochloride and is not obsolete. This
+    verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: f1c95b83f5396067c3959c20ee4715c78f7895f5084dd214b3a4bf01e064f21d
+- evidence_id: chebi31206
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T06:55:05.220665Z'
+  support: supports
+  summary: CHEBI:31206 resolves to ammonium chloride and is not obsolete. This verifies
+    the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi31345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T06:55:12.450283Z'
+  support: supports
+  summary: CHEBI:31345 resolves to Calcium pantothenate and is not obsolete. This
+    verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 56fc4b33c78d82faf317e131ae936f2e00eab0c369b2a9d8be86eddff6fd616d
+- evidence_id: chebi31440
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T06:55:07.786285Z'
+  support: supports
+  summary: CHEBI:31440 resolves to copper(II) sulfate pentahydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: e8ac76313670beb01b2eea5bf76bd0e4a341d0798c99d947484fbdd280d297f9
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T07:31:16.624783Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T06:55:07.609898Z'
+  support: supports
+  summary: CHEBI:32312 resolves to zinc sulfate heptahydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T06:55:02.761234Z'
+  support: supports
+  summary: CHEBI:33118 resolves to boric acid and is not obsolete. This verifies the
+    asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi34683
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34683
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T07:31:17.292713Z'
+  support: supports
+  summary: CHEBI:34683 resolves to disodium hydrogenphosphate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 288ee6eaa066e7579840122d3411df9987889818425faea2b7203724bbc41fd2
+- evidence_id: chebi37585
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_37585
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T07:33:28.640347Z'
+  support: supports
+  summary: CHEBI:37585 resolves to sodium dihydrogenphosphate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 41dce71ee822e488298c467569974159cbd109700160a5863720dd3ae3213b13
+- evidence_id: chebi4735
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_4735
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T07:33:28.659368Z'
+  support: supports
+  summary: CHEBI:4735 resolves to ethylenediaminetetraacetic acid and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: ef8713e257a5e52aa813d8a43a26ed321ff04a475591ff238c00a47758f96717
+- evidence_id: chebi49105
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T06:55:10.911379Z'
+  support: supports
+  summary: CHEBI:49105 resolves to thiamine hydrochloride and is not obsolete. This
+    verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 0b923c215888606038af1e3f0c1b1bcc35e4ab84966d1733a91fdfcbee8f2ae4
+- evidence_id: chebi53542
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53542
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T07:33:31.075912Z'
+  support: supports
+  summary: CHEBI:53542 resolves to nickel chloride hexahydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 423c21fd3715257bbccc1ad83ef3b8e438ffe20f02418e2b202886237c4ea112
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T07:31:17.924011Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi63939
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T06:55:09.796192Z'
+  support: supports
+  summary: CHEBI:63939 resolves to sodium tungstate dihydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 987144fa0342502834f116860a4b4f71696f62c18e7b701301667c15e588562a
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T06:55:08.404288Z'
+  support: supports
+  summary: CHEBI:75213 resolves to sodium molybdate dihydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi75836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T07:31:18.402233Z'
+  support: supports
+  summary: CHEBI:75836 resolves to iron(2+) sulfate heptahydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T06:55:01.682554Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86214
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86214
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T07:33:34.945310Z'
+  support: supports
+  summary: CHEBI:86214 resolves to cobalt dinitrate hexahydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 90cf3337643bc22bd3940bfbdee70a144b13af549ea12534184385f036b4633c
+- evidence_id: chebi86364
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86364
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T07:33:35.036768Z'
+  support: supports
+  summary: CHEBI:86364 resolves to manganese(II) sulfate monohydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: f1da0a281e1fa2263226a8548afc0bf76db61dd36828240b47d83431bd182069
+- evidence_id: chebi86465
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86465
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T06:55:08.054799Z'
+  support: supports
+  summary: CHEBI:86465 resolves to potassium aluminium sulfate dodecahydrate and is
+    not obsolete. This verifies the asserted generic chemical identity; no source
+    grade, salt, hydrate or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 5e74b8136b972b18b427c70e758e12dfe013a6ca671501cddc936038299f7c2c
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: All live preferred-term rows for asserted secondary CHEBI keys; metadata
+    captured
+  accessed_at: '2026-10-21T08:01:07Z'
+  support: supports
+  summary: '{}'
+- evidence_id: feba_media
+  kind: primary_source
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media
+  locator: Exact-name medium section lines3135–3148
+  accessed_at: '2026-10-21T07:58:53.930003Z'
+  support: supports
+  summary: Public Berkeley Lab FEBA metadata at commit803273865ea9e83fab770ec4f13670db80e1180b,
+    retrieved without authentication. The medium has seven quantified direct rows,
+    one blank KCl row and two ATCC mixes at2X. Each selected mix declares a1X basis.
+    These are dataset formula assertions, not experimental growth results.
+  snapshot_sha256: a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848
+- evidence_id: feba_mixes
+  kind: primary_source
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes
+  locator: ATCC vitamin mix lines851–865 and mineral mix lines882–900
+  accessed_at: '2026-10-21T07:58:53.930648Z'
+  support: supports
+  summary: Public Berkeley Lab FEBA metadata at commit803273865ea9e83fab770ec4f13670db80e1180b,
+    retrieved without authentication. The medium has seven quantified direct rows,
+    one blank KCl row and two ATCC mixes at2X. Each selected mix declares a1X basis.
+    These are dataset formula assertions, not experimental growth results.
+  snapshot_sha256: b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4
+- evidence_id: amount-trace
+  kind: validation
+  reference: Public FEBA medium and ATCC mix sections; unchanged target and owner
+  locator: All32 concentration nodes and the unmatched33rd quantified source contribution
+  accessed_at: '2026-10-21T08:01:07Z'
+  support: supports
+  summary: '{"matched": [{"name": "Ammonium Chloride", "value": "2.68", "unit": "MILLIMOLAR",
+    "line": 3139, "source": "feba_media", "field_path": "ingredients[0].concentration",
+    "record": {"value": "2.68", "unit": "MILLIMOLAR"}, "decision": "verified against
+    public source direct amount or explicit2/1 mix expansion"}, {"name": "Magnesium
+    sulfate heptahydrate", "value": "4.00", "unit": "MILLIMOLAR", "line": 3141, "source":
+    "feba_media", "field_path": "ingredients[1].concentration", "record": {"value":
+    "4.00", "unit": "MILLIMOLAR"}, "decision": "verified against public source direct
+    amount or explicit2/1 mix expansion"}, {"name": "Calcium chloride dihydrate",
+    "value": "0.20", "unit": "MILLIMOLAR", "line": 3142, "source": "feba_media", "field_path":
+    "ingredients[2].concentration", "record": {"value": "0.20", "unit": "MILLIMOLAR"},
+    "decision": "verified against public source direct amount or explicit2/1 mix expansion"},
+    {"name": "Sodium Chloride", "value": "0.34", "unit": "MILLIMOLAR", "line": 3143,
+    "source": "feba_media", "field_path": "ingredients[3].concentration", "record":
+    {"value": "0.34", "unit": "MILLIMOLAR"}, "decision": "verified against public
+    source direct amount or explicit2/1 mix expansion"}, {"name": "Monopotassium phosphate",
+    "value": "10.00", "unit": "MILLIMOLAR", "line": 3144, "source": "feba_media",
+    "field_path": "ingredients[4].concentration", "record": {"value": "10.00", "unit":
+    "MILLIMOLAR"}, "decision": "verified against public source direct amount or explicit2/1
+    mix expansion"}, {"name": "EDTA", "value": "10.00", "unit": "MG_PER_L", "base_value":
+    "5", "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe''s mineral mix",
+    "line": 886, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[5].concentration",
+    "record": {"value": "10.0", "unit": "MG_PER_L"}, "decision": "verified against
+    public source direct amount or explicit2/1 mix expansion"}, {"name": "Magnesium
+    Sulfate Heptahydrate", "value": "6.00", "unit": "MG_PER_L", "base_value": "3",
+    "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe''s mineral mix", "line":
+    887, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[6].concentration",
+    "record": {"value": "6.0", "unit": "MG_PER_L"}, "decision": "verified against
+    public source direct amount or explicit2/1 mix expansion"}, {"name": "Manganese
+    (II) sulfate monohydrate", "value": "10.00", "unit": "MG_PER_L", "base_value":
+    "5", "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe''s mineral mix",
+    "line": 888, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[7].concentration",
+    "record": {"value": "10.0", "unit": "MG_PER_L"}, "decision": "verified against
+    public source direct amount or explicit2/1 mix expansion"}, {"name": "Sodium Chloride",
+    "value": "20.00", "unit": "MG_PER_L", "base_value": "10", "base_unit": "mg/L",
+    "factor": "2.00/1", "mix": "ATCC Wolfe''s mineral mix", "line": 889, "medium_line":
+    3145, "source": "feba_mixes", "field_path": "ingredients[8].concentration", "record":
+    {"value": "20.0", "unit": "MG_PER_L"}, "decision": "verified against public source
+    direct amount or explicit2/1 mix expansion"}, {"name": "Iron (II) sulfate heptahydrate",
+    "value": "2.00", "unit": "MG_PER_L", "base_value": "1", "base_unit": "mg/L", "factor":
+    "2.00/1", "mix": "ATCC Wolfe''s mineral mix", "line": 890, "medium_line": 3145,
+    "source": "feba_mixes", "field_path": "ingredients[9].concentration", "record":
+    {"value": "2.0", "unit": "MG_PER_L"}, "decision": "verified against public source
+    direct amount or explicit2/1 mix expansion"}, {"name": "Cobalt(II) nitrate hexahydrate",
+    "value": "2.00", "unit": "MG_PER_L", "base_value": "1", "base_unit": "mg/L", "factor":
+    "2.00/1", "mix": "ATCC Wolfe''s mineral mix", "line": 891, "medium_line": 3145,
+    "source": "feba_mixes", "field_path": "ingredients[10].concentration", "record":
+    {"value": "2.0", "unit": "MG_PER_L"}, "decision": "verified against public source
+    direct amount or explicit2/1 mix expansion"}, {"name": "Calcium Chloride Dihydrate",
+    "value": "2.00", "unit": "MG_PER_L", "base_value": "1", "base_unit": "mg/L", "factor":
+    "2.00/1", "mix": "ATCC Wolfe''s mineral mix", "line": 892, "medium_line": 3145,
+    "source": "feba_mixes", "field_path": "ingredients[11].concentration", "record":
+    {"value": "2.0", "unit": "MG_PER_L"}, "decision": "verified against public source
+    direct amount or explicit2/1 mix expansion"}, {"name": "Zinc sulfate heptahydrate",
+    "value": "2.00", "unit": "MG_PER_L", "base_value": "1", "base_unit": "mg/L", "factor":
+    "2.00/1", "mix": "ATCC Wolfe''s mineral mix", "line": 893, "medium_line": 3145,
+    "source": "feba_mixes", "field_path": "ingredients[12].concentration", "record":
+    {"value": "2.0", "unit": "MG_PER_L"}, "decision": "verified against public source
+    direct amount or explicit2/1 mix expansion"}, {"name": "Copper (II) sulfate pentahydrate",
+    "value": "0.200", "unit": "MG_PER_L", "base_value": "0.1", "base_unit": "mg/L",
+    "factor": "2.00/1", "mix": "ATCC Wolfe''s mineral mix", "line": 894, "medium_line":
+    3145, "source": "feba_mixes", "field_path": "ingredients[13].concentration", "record":
+    {"value": "0.2", "unit": "MG_PER_L"}, "decision": "verified against public source
+    direct amount or explicit2/1 mix expansion"}, {"name": "Aluminum potassium sulfate
+    dodecahydrate", "value": "0.200", "unit": "MG_PER_L", "base_value": "0.1", "base_unit":
+    "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe''s mineral mix", "line": 895, "medium_line":
+    3145, "source": "feba_mixes", "field_path": "ingredients[14].concentration", "record":
+    {"value": "0.2", "unit": "MG_PER_L"}, "decision": "verified against public source
+    direct amount or explicit2/1 mix expansion"}, {"name": "Boric Acid", "value":
+    "0.200", "unit": "MG_PER_L", "base_value": "0.1", "base_unit": "mg/L", "factor":
+    "2.00/1", "mix": "ATCC Wolfe''s mineral mix", "line": 896, "medium_line": 3145,
+    "source": "feba_mixes", "field_path": "ingredients[15].concentration", "record":
+    {"value": "0.2", "unit": "MG_PER_L"}, "decision": "verified against public source
+    direct amount or explicit2/1 mix expansion"}, {"name": "Sodium Molybdate Dihydrate",
+    "value": "0.200", "unit": "MG_PER_L", "base_value": "0.1", "base_unit": "mg/L",
+    "factor": "2.00/1", "mix": "ATCC Wolfe''s mineral mix", "line": 897, "medium_line":
+    3145, "source": "feba_mixes", "field_path": "ingredients[16].concentration", "record":
+    {"value": "0.2", "unit": "MG_PER_L"}, "decision": "verified against public source
+    direct amount or explicit2/1 mix expansion"}, {"name": "Sodium selenite pentahydrate",
+    "value": "0.0200", "unit": "MG_PER_L", "base_value": "0.01", "base_unit": "mg/L",
+    "factor": "2.00/1", "mix": "ATCC Wolfe''s mineral mix", "line": 898, "medium_line":
+    3145, "source": "feba_mixes", "field_path": "ingredients[17].concentration", "record":
+    {"value": "0.02", "unit": "MG_PER_L"}, "decision": "verified against public source
+    direct amount or explicit2/1 mix expansion"}, {"name": "Sodium tungstate dihydrate",
+    "value": "0.200", "unit": "MG_PER_L", "base_value": "0.1", "base_unit": "mg/L",
+    "factor": "2.00/1", "mix": "ATCC Wolfe''s mineral mix", "line": 899, "medium_line":
+    3145, "source": "feba_mixes", "field_path": "ingredients[18].concentration", "record":
+    {"value": "0.2", "unit": "MG_PER_L"}, "decision": "verified against public source
+    direct amount or explicit2/1 mix expansion"}, {"name": "Nickel (II) chloride hexahydrate",
+    "value": "0.400", "unit": "MG_PER_L", "base_value": "0.2", "base_unit": "mg/L",
+    "factor": "2.00/1", "mix": "ATCC Wolfe''s mineral mix", "line": 900, "medium_line":
+    3145, "source": "feba_mixes", "field_path": "ingredients[19].concentration", "record":
+    {"value": "0.4", "unit": "MG_PER_L"}, "decision": "verified against public source
+    direct amount or explicit2/1 mix expansion"}, {"name": "Folic Acid", "value":
+    "40.00", "unit": "MICROG_PER_L", "base_value": "20", "base_unit": "ug/L", "factor":
+    "2.00/1", "mix": "ATCC Wolfe''s vitamin mix", "line": 855, "medium_line": 3146,
+    "source": "feba_mixes", "field_path": "ingredients[20].concentration", "record":
+    {"value": "40.0", "unit": "MICROG_PER_L"}, "decision": "verified against public
+    source direct amount or explicit2/1 mix expansion"}, {"name": "Pyridoxine HCl",
+    "value": "200.00", "unit": "MICROG_PER_L", "base_value": "100", "base_unit": "ug/L",
+    "factor": "2.00/1", "mix": "ATCC Wolfe''s vitamin mix", "line": 856, "medium_line":
+    3146, "source": "feba_mixes", "field_path": "ingredients[21].concentration", "record":
+    {"value": "200.0", "unit": "MICROG_PER_L"}, "decision": "verified against public
+    source direct amount or explicit2/1 mix expansion"}, {"name": "Riboflavin", "value":
+    "100.00", "unit": "MICROG_PER_L", "base_value": "50", "base_unit": "ug/L", "factor":
+    "2.00/1", "mix": "ATCC Wolfe''s vitamin mix", "line": 857, "medium_line": 3146,
+    "source": "feba_mixes", "field_path": "ingredients[22].concentration", "record":
+    {"value": "100.0", "unit": "MICROG_PER_L"}, "decision": "verified against public
+    source direct amount or explicit2/1 mix expansion"}, {"name": "biotin", "value":
+    "40.00", "unit": "MICROG_PER_L", "base_value": "20", "base_unit": "ug/L", "factor":
+    "2.00/1", "mix": "ATCC Wolfe''s vitamin mix", "line": 858, "medium_line": 3146,
+    "source": "feba_mixes", "field_path": "ingredients[23].concentration", "record":
+    {"value": "40.0", "unit": "MICROG_PER_L"}, "decision": "verified against public
+    source direct amount or explicit2/1 mix expansion"}, {"name": "Thiamine HCl",
+    "value": "100.00", "unit": "MICROG_PER_L", "base_value": "50", "base_unit": "ug/L",
+    "factor": "2.00/1", "mix": "ATCC Wolfe''s vitamin mix", "line": 859, "medium_line":
+    3146, "source": "feba_mixes", "field_path": "ingredients[24].concentration", "record":
+    {"value": "100.0", "unit": "MICROG_PER_L"}, "decision": "verified against public
+    source direct amount or explicit2/1 mix expansion"}, {"name": "Nicotinic Acid",
+    "value": "100.00", "unit": "MICROG_PER_L", "base_value": "50", "base_unit": "ug/L",
+    "factor": "2.00/1", "mix": "ATCC Wolfe''s vitamin mix", "line": 860, "medium_line":
+    3146, "source": "feba_mixes", "field_path": "ingredients[25].concentration", "record":
+    {"value": "100.0", "unit": "MICROG_PER_L"}, "decision": "verified against public
+    source direct amount or explicit2/1 mix expansion"}, {"name": "calcium pantothenate",
+    "value": "100.00", "unit": "MICROG_PER_L", "base_value": "50", "base_unit": "ug/L",
+    "factor": "2.00/1", "mix": "ATCC Wolfe''s vitamin mix", "line": 861, "medium_line":
+    3146, "source": "feba_mixes", "field_path": "ingredients[26].concentration", "record":
+    {"value": "100.0", "unit": "MICROG_PER_L"}, "decision": "verified against public
+    source direct amount or explicit2/1 mix expansion"}, {"name": "Cyanocobalamin",
+    "value": "2.00", "unit": "MICROG_PER_L", "base_value": "1", "base_unit": "ug/L",
+    "factor": "2.00/1", "mix": "ATCC Wolfe''s vitamin mix", "line": 862, "medium_line":
+    3146, "source": "feba_mixes", "field_path": "ingredients[27].concentration", "record":
+    {"value": "2.0", "unit": "MICROG_PER_L"}, "decision": "verified against public
+    source direct amount or explicit2/1 mix expansion"}, {"name": "4-Aminobenzoic
+    acid", "value": "100.00", "unit": "MICROG_PER_L", "base_value": "50", "base_unit":
+    "ug/L", "factor": "2.00/1", "mix": "ATCC Wolfe''s vitamin mix", "line": 863, "medium_line":
+    3146, "source": "feba_mixes", "field_path": "ingredients[28].concentration", "record":
+    {"value": "100.0", "unit": "MICROG_PER_L"}, "decision": "verified against public
+    source direct amount or explicit2/1 mix expansion"}, {"name": "Lipoic acid", "value":
+    "100.00", "unit": "MICROG_PER_L", "base_value": "50", "base_unit": "ug/L", "factor":
+    "2.00/1", "mix": "ATCC Wolfe''s vitamin mix", "line": 864, "medium_line": 3146,
+    "source": "feba_mixes", "field_path": "ingredients[29].concentration", "record":
+    {"value": "100.0", "unit": "MICROG_PER_L"}, "decision": "verified against public
+    source direct amount or explicit2/1 mix expansion"}, {"name": "Sodium phosphate
+    dibasic", "value": "8.10", "unit": "MILLIMOLAR", "line": 3147, "source": "feba_media",
+    "field_path": "ingredients[30].concentration", "record": {"value": "8.10", "unit":
+    "MILLIMOLAR"}, "decision": "verified against public source direct amount or explicit2/1
+    mix expansion"}, {"name": "Sodium phosphate monobasic", "value": "1.90", "unit":
+    "MILLIMOLAR", "line": 3148, "source": "feba_media", "field_path": "ingredients[31].concentration",
+    "record": {"value": "1.90", "unit": "MILLIMOLAR"}, "decision": "verified against
+    public source direct amount or explicit2/1 mix expansion"}], "unmatched": [{"name":
+    "Potassium phosphate monobasic", "value": "1.800", "unit": "G_PER_L", "base_value":
+    "0.9", "base_unit": "g/L", "factor": "2.00/1", "mix": "ATCC Wolfe''s vitamin mix",
+    "line": 865, "medium_line": 3146, "source": "feba_mixes"}], "blank_source_row":
+    {"line": 3140, "name": "Potassium Chloride", "amount": "", "unit": "mM"}}'
+- evidence_id: chemical-note-trace
+  kind: validation
+  reference: Exact OLS responses for all29 asserted CHEBI terms
+  locator: All32 ingredient notes; annotation.mass, generalized_empirical_formula
+    and database_cross_reference
+  accessed_at: '2026-10-21T08:01:07Z'
+  support: supports
+  summary: '[{"index": 0, "term": "CHEBI:31206", "record_cas": null, "record_mw":
+    null, "ontology_cas": ["12125-02-9"], "ontology_mass": ["53.492"], "formula":
+    ["Cl.H4N"]}, {"index": 1, "term": "CHEBI:31795", "record_cas": null, "record_mw":
+    null, "ontology_cas": ["10034-99-8"], "ontology_mass": ["246.473"], "formula":
+    ["7H2O.Mg.O4S"]}, {"index": 2, "term": "CHEBI:86158", "record_cas": "10035-04-8",
+    "record_mw": "147.01", "ontology_cas": ["10035-04-8"], "ontology_mass": ["147.014"],
+    "formula": ["Ca.2Cl.2H2O"]}, {"index": 3, "term": "CHEBI:26710", "record_cas":
+    "7647-14-5", "record_mw": "58.44", "ontology_cas": ["7647-14-5"], "ontology_mass":
+    ["58.443"], "formula": ["Cl.Na"]}, {"index": 4, "term": "CHEBI:63036", "record_cas":
+    null, "record_mw": null, "ontology_cas": ["7778-77-0"], "ontology_mass": ["136.084"],
+    "formula": ["H2O4P.K"]}, {"index": 5, "term": "CHEBI:4735", "record_cas": "60-00-4",
+    "record_mw": "292.24", "ontology_cas": ["60-00-4"], "ontology_mass": ["292.244"],
+    "formula": ["C10H16N2O8"]}, {"index": 6, "term": "CHEBI:31795", "record_cas":
+    "10034-99-8", "record_mw": "246.47", "ontology_cas": ["10034-99-8"], "ontology_mass":
+    ["246.473"], "formula": ["7H2O.Mg.O4S"]}, {"index": 7, "term": "CHEBI:86364",
+    "record_cas": "10034-96-5", "record_mw": "169.02", "ontology_cas": ["10034-96-5"],
+    "ontology_mass": ["169.016"], "formula": ["H2O.Mn.O4S"]}, {"index": 8, "term":
+    "CHEBI:26710", "record_cas": "7647-14-5", "record_mw": "58.44", "ontology_cas":
+    ["7647-14-5"], "ontology_mass": ["58.443"], "formula": ["Cl.Na"]}, {"index": 9,
+    "term": "CHEBI:75836", "record_cas": "7782-63-0", "record_mw": "278.01", "ontology_cas":
+    ["7782-63-0"], "ontology_mass": ["278.013"], "formula": ["Fe.7H2O.O4S"]}, {"index":
+    10, "term": "CHEBI:86214", "record_cas": "10026-22-9", "record_mw": "291.03",
+    "ontology_cas": ["10026-22-9"], "ontology_mass": ["291.031"], "formula": ["Co.6H2O.2NO3"]},
+    {"index": 11, "term": "CHEBI:86158", "record_cas": null, "record_mw": null, "ontology_cas":
+    ["10035-04-8"], "ontology_mass": ["147.014"], "formula": ["Ca.2Cl.2H2O"]}, {"index":
+    12, "term": "CHEBI:32312", "record_cas": "7446-20-0", "record_mw": "287.56", "ontology_cas":
+    ["7446-20-0"], "ontology_mass": ["287.558"], "formula": ["7H2O.O4S.Zn"]}, {"index":
+    13, "term": "CHEBI:31440", "record_cas": "7758-99-8", "record_mw": "249.69", "ontology_cas":
+    ["7758-99-8"], "ontology_mass": ["249.684"], "formula": ["Cu.5H2O.O4S"]}, {"index":
+    14, "term": "CHEBI:86465", "record_cas": "7784-24-9", "record_mw": "474.39", "ontology_cas":
+    ["7784-24-9"], "ontology_mass": ["474.386"], "formula": ["Al.12H2O.K.2O4S"]},
+    {"index": 15, "term": "CHEBI:33118", "record_cas": "10043-35-3", "record_mw":
+    "61.83", "ontology_cas": ["10043-35-3", "11113-50-1"], "ontology_mass": ["61.833"],
+    "formula": ["H3BO3"]}, {"index": 16, "term": "CHEBI:75213", "record_cas": "10102-40-6",
+    "record_mw": "241.95", "ontology_cas": ["10102-40-6"], "ontology_mass": ["241.946"],
+    "formula": ["2H2O.MoO4.2Na"]}, {"index": 17, "term": "CHEBI:131361", "record_cas":
+    "26970-82-1", "record_mw": "263.01", "ontology_cas": ["26970-82-1"], "ontology_mass":
+    ["263.012"], "formula": ["5H2O.2Na.O3Se"]}, {"index": 18, "term": "CHEBI:63939",
+    "record_cas": "10213-10-2", "record_mw": "329.85", "ontology_cas": ["10213-10-2"],
+    "ontology_mass": ["329.846"], "formula": ["2H2O.2Na.O4W"]}, {"index": 19, "term":
+    "CHEBI:53542", "record_cas": "7791-20-0", "record_mw": "237.69", "ontology_cas":
+    ["7791-20-0"], "ontology_mass": ["237.689"], "formula": ["2Cl.6H2O.Ni"]}, {"index":
+    20, "term": "CHEBI:27470", "record_cas": "59-30-3", "record_mw": "441.4", "ontology_cas":
+    ["59-30-3"], "ontology_mass": ["441.404"], "formula": ["C19H19N7O6"]}, {"index":
+    21, "term": "CHEBI:30961", "record_cas": "58-56-0", "record_mw": "205.64", "ontology_cas":
+    ["58-56-0"], "ontology_mass": ["205.641"], "formula": ["C8H11NO3.HCl"]}, {"index":
+    22, "term": "CHEBI:17015", "record_cas": "83-88-5", "record_mw": "376.36", "ontology_cas":
+    ["83-88-5"], "ontology_mass": ["376.369"], "formula": ["C17H20N4O6"]}, {"index":
+    23, "term": "CHEBI:15956", "record_cas": "58-85-5", "record_mw": "244.31", "ontology_cas":
+    ["58-85-5"], "ontology_mass": ["244.316"], "formula": ["C10H16N2O3S"]}, {"index":
+    24, "term": "CHEBI:49105", "record_cas": "67-03-8", "record_mw": "337.27", "ontology_cas":
+    ["67-03-8"], "ontology_mass": ["337.276"], "formula": ["C12H17N4OS.Cl.HCl"]},
+    {"index": 25, "term": "CHEBI:15940", "record_cas": "59-67-6", "record_mw": "123.11",
+    "ontology_cas": ["59-67-6"], "ontology_mass": ["123.111"], "formula": ["C6H5NO2"]},
+    {"index": 26, "term": "CHEBI:31345", "record_cas": "137-08-6", "record_mw": "238.27",
+    "ontology_cas": ["137-08-6"], "ontology_mass": ["476.536"], "formula": ["2C9H16NO5.Ca"]},
+    {"index": 27, "term": "CHEBI:17439", "record_cas": "68-19-9", "record_mw": "1355.37",
+    "ontology_cas": ["68-19-9"], "ontology_mass": ["1355.388"], "formula": ["C63H88CoN14O14P"]},
+    {"index": 28, "term": "CHEBI:30753", "record_cas": "150-13-0", "record_mw": "137.14",
+    "ontology_cas": ["150-13-0"], "ontology_mass": ["137.138"], "formula": ["C7H7NO2"]},
+    {"index": 29, "term": "CHEBI:16494", "record_cas": "1077-28-7", "record_mw": "206.33",
+    "ontology_cas": ["62-46-4"], "ontology_mass": ["206.332"], "formula": ["C8H14O2S2"]},
+    {"index": 30, "term": "CHEBI:34683", "record_cas": null, "record_mw": null, "ontology_cas":
+    ["7558-79-4"], "ontology_mass": ["141.958"], "formula": ["HO4P.2Na"]}, {"index":
+    31, "term": "CHEBI:37585", "record_cas": "558-80-7", "record_mw": "119.98", "ontology_cas":
+    ["7558-80-7"], "ontology_mass": ["119.976"], "formula": ["H2O4P.Na"]}]'
+- evidence_id: chebi31345-notes
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345
+  locator: annotation database_cross_reference, mass and generalized_empirical_formula
+  accessed_at: '2026-10-20T06:55:12.450283Z'
+  support: supports
+  summary: CHEBI31345 explicitly gives formula2C9H16NO5.Ca and mass476.536; the local
+    MW238.27 is approximately half that formula-unit mass.
+  snapshot_sha256: 56fc4b33c78d82faf317e131ae936f2e00eab0c369b2a9d8be86eddff6fd616d
+- evidence_id: chebi37585-notes
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_37585
+  locator: annotation database_cross_reference, mass and generalized_empirical_formula
+  accessed_at: '2026-10-21T07:33:28.640347Z'
+  support: supports
+  summary: CHEBI37585 lists CAS7558-80-7 for sodium dihydrogenphosphate; local558-80-7
+    omits its first digit.
+  snapshot_sha256: 41dce71ee822e488298c467569974159cbd109700160a5863720dd3ae3213b13
+- evidence_id: chebi16494-notes
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494
+  locator: annotation database_cross_reference, mass and generalized_empirical_formula
+  accessed_at: '2026-10-20T06:55:13.001958Z'
+  support: supports
+  summary: CHEBI16494 is generic lipoic acid and lists CAS62-46-4. Local1077-28-7
+    is not confirmed by this response; absence of a cross-reference is not proof of
+    invalidity or wrong identity.
+  snapshot_sha256: aa3c1003d6266cc48f19a4d1d9527edd6844b96094a911e9a3c4f6a8851444e1
+- evidence_id: mim-available
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv; src/culturemech/data/mediaingredientmech/label_index.metadata.json
+  locator: Preferred-term rows for all29 exact identifiers (30 rows) and complete
+    pinned metadata
+  accessed_at: '2026-10-21T08:01:07Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:37585":
+    [{"label": "NaH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:37585",
+    "preferred_term": "NaH2PO4", "ontology_id": "CHEBI:37585", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term",
+    "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75213": [{"label":
+    "Na2MoO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75213",
+    "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:53542": [{"label": "Nickel (II) chloride
+    hexahydrate", "match_type": "preferred_term", "identifier": "CHEBI:53542", "preferred_term":
+    "Nickel (II) chloride hexahydrate", "ontology_id": "CHEBI:53542", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:31206": [{"label": "NH4Cl", "match_type":
+    "preferred_term", "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id":
+    "CHEBI:31206", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31440":
+    [{"label": "CuSO4 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31440",
+    "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:86465": [{"label": "AlK(SO4)2 x 12 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:86465", "preferred_term":
+    "AlK(SO4)2 x 12 H2O", "ontology_id": "CHEBI:86465", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:75836": [{"label": "FeSO4 x 7 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O",
+    "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:30753": [{"label": "p-Aminobenzoic acid", "match_type": "preferred_term",
+    "identifier": "CHEBI:30753", "preferred_term": "p-Aminobenzoic acid", "ontology_id":
+    "CHEBI:30753", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:16494":
+    [{"label": "(DL)-alpha-Lipoic acid", "match_type": "preferred_term", "identifier":
+    "CHEBI:16494", "preferred_term": "(DL)-alpha-Lipoic acid", "ontology_id": "CHEBI:16494",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label":
+    "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158",
+    "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:15940": [{"label": "Nicotinic acid",
+    "match_type": "preferred_term", "identifier": "CHEBI:15940", "preferred_term":
+    "Nicotinic acid", "ontology_id": "CHEBI:15940", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:4735": [{"label": "EDTA", "match_type": "preferred_term", "identifier":
+    "CHEBI:4735", "preferred_term": "EDTA", "ontology_id": "CHEBI:4735", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type":
+    "preferred_term", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id":
+    "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31345":
+    [{"label": "Calcium pantothenate", "match_type": "preferred_term", "identifier":
+    "CHEBI:31345", "preferred_term": "Calcium pantothenate", "ontology_id": "CHEBI:31345",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15956": [{"label":
+    "Biotin", "match_type": "preferred_term", "identifier": "CHEBI:15956", "preferred_term":
+    "Biotin", "ontology_id": "CHEBI:15956", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:131361": [{"label": "Na2SeO3 x 5 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:131361", "preferred_term": "Na2SeO3 x 5 H2O", "ontology_id":
+    "CHEBI:131361", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17439":
+    [{"label": "Cyanocobalamin", "match_type": "preferred_term", "identifier": "CHEBI:17439",
+    "preferred_term": "Cyanocobalamin", "ontology_id": "CHEBI:17439", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:30961": [{"label": "Pyridoxine hydrochloride",
+    "match_type": "preferred_term", "identifier": "CHEBI:30961", "preferred_term":
+    "Pyridoxine hydrochloride", "ontology_id": "CHEBI:30961", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:86214": [{"label": "Co(NO3)2 x 6 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:86214", "preferred_term": "Co(NO3)2 x 6
+    H2O", "ontology_id": "CHEBI:86214", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:32312": [{"label": "ZnSO4 x 7 H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label":
+    "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term":
+    "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:17015": [{"label": "Riboflavin", "match_type": "preferred_term",
+    "identifier": "CHEBI:17015", "preferred_term": "Riboflavin", "ontology_id": "CHEBI:17015",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:34683": [{"label":
+    "Na2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:34683", "preferred_term":
+    "Na2HPO4", "ontology_id": "CHEBI:34683", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4\u00b7H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4\u00b7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:49105": [{"label": "Thiamine HCl", "match_type": "preferred_term",
+    "identifier": "CHEBI:49105", "preferred_term": "Thiamine HCl", "ontology_id":
+    "CHEBI:49105", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86364":
+    [{"label": "MnSO4 x H2O", "match_type": "preferred_term", "identifier": "CHEBI:86364",
+    "preferred_term": "MnSO4 x H2O", "ontology_id": "CHEBI:86364", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:63939": [{"label": "Na2WO4 x 2 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:63939", "preferred_term":
+    "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:27470": [{"label": "Folic acid", "match_type": "preferred_term",
+    "identifier": "CHEBI:27470", "preferred_term": "Folic acid", "ontology_id": "CHEBI:27470",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}}'
+- evidence_id: source-recovery
+  kind: search
+  reference: https://github.com/CultureBotAI/CultureBotHT
+  locator: Exact source file, complete current tree and two bounded path-history lookups
+  accessed_at: '2026-10-21T07:56:00.197218Z'
+  support: unknown
+  summary: Initial public404 was superseded by authenticated repository access. The
+    named media_yaml/2x_UGA_defined_nocarbon.yaml was not recovered; two exact path-history
+    queries returned empty lists. Public FEBA medium/mix tables were then recovered
+    independently. The public formula is inspectable, but precise historical generated-file
+    equivalence is not established. The access time records the terminal bounded history-query
+    completion; individual earlier attempts retain their own local capture timestamps.
+  search_scope: Exact cited repository; historical media_yaml path and nested CultureBotHT/media_yaml
+    alternative; complete current tracked tree. This is not a search of all refs or
+    ignored/untracked upstream files.
+- evidence_id: code-import_from_culturebotht
+  kind: record_content
+  reference: scripts/import_from_culturebotht.py
+  locator: CultureBotHTImporter.transform_medium and infer_category
+  accessed_at: '2026-10-21T08:01:07Z'
+  support: context_only
+  summary: Current local importer copies source ingredients, adds repository-level
+    provenance and infers specialized by fallback. It does not independently validate
+    FEBA source quantities and only appends has_unmapped_ingredients when a primary
+    term is missing; no removal of stale flags is shown.
+  snapshot_sha256: d835addf5fff423a9b0b1231848ed3103c5b2d97015c1c294365970d15be0fe1
+- evidence_id: code-repair_culturebotht_m9_score15
+  kind: record_content
+  reference: scripts/repair_culturebotht_m9_score15.py
+  locator: EXPECTED_ID, TARGET, _require_target
+  accessed_at: '2026-10-21T08:01:07Z'
+  support: context_only
+  summary: This narrowly guarded provenance repair targets CM015542 specialized/m9.yaml,
+    not the reviewed UGA record; it is not source-formulation authority for UGA.
+  snapshot_sha256: 1cc7cb311afbfbf2edde93995486d66b24fbd7dd089435fc7f0139b9bfa803b8
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:015480
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: All asserted primary and current secondary ingredient identifiers
+  outcome: supported
+  summary: '29 primary CHEBI identities resolve with matching labels; 0 of 0 current
+    secondary keys have live pinned-index rows. Unresolved keys: [].'
+  target_ids:
+  - CultureMech:015480
+  evidence_ids:
+  - record
+  - mim
+  - chebi131361
+  - chebi15940
+  - chebi15956
+  - chebi16494
+  - chebi17015
+  - chebi17439
+  - chebi26710
+  - chebi27470
+  - chebi30753
+  - chebi30961
+  - chebi31206
+  - chebi31345
+  - chebi31440
+  - chebi31795
+  - chebi32312
+  - chebi33118
+  - chebi34683
+  - chebi37585
+  - chebi4735
+  - chebi49105
+  - chebi53542
+  - chebi63036
+  - chebi63939
+  - chebi75213
+  - chebi75836
+  - chebi86158
+  - chebi86214
+  - chebi86364
+  - chebi86465
+  details: 32 direct ingredient instances; CHEBI-primary instance linkage 32/32 (100.00%),
+    verified secondary coverage 0/32 (0.00%). Percentages use a 0–100 linkage scale,
+    not a scientific correctness score. Complex mixtures without asserted IDs remain
+    ungrounded rather than receiving invented pure-molecule identities.
+- assessment_id: identity
+  area: identity
+  topic: Exact-name source, owner and historical provenance
+  outcome: concern
+  summary: One stable generated ID and one normalized owner resolve. The public FEBA
+    title and description exactly match, but precise historical CultureBotHT YAML/version
+    correspondence remains unverified. Preserve that source distinction.
+  target_ids:
+  - CultureMech:015480
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - feba_media
+  - source-recovery
+- assessment_id: quantities
+  area: quantity
+  topic: All32 concentrations and unmatched source contribution
+  outcome: concern
+  summary: Seven direct amounts, fifteen mineral-mix amounts and ten vitamin amounts
+    match public direct concentrations or 2/1 factors exactly. Public vitamin mix
+    also contributes phosphate 1.8g/L, which is absent alongside the retained direct
+    10mM phosphate. Do not deduplicate separate Mg, Ca or NaCl base/mix contributions.
+  target_ids:
+  - CultureMech:015480
+  evidence_ids:
+  - record
+  - owner-0
+  - feba_media
+  - feba_mixes
+  - amount-trace
+  details: '[{"name": "Ammonium Chloride", "value": "2.68", "unit": "MILLIMOLAR",
+    "line": 3139, "source": "feba_media", "field_path": "ingredients[0].concentration",
+    "record": {"value": "2.68", "unit": "MILLIMOLAR"}, "decision": "verified against
+    public source direct amount or explicit2/1 mix expansion"}, {"name": "Magnesium
+    sulfate heptahydrate", "value": "4.00", "unit": "MILLIMOLAR", "line": 3141, "source":
+    "feba_media", "field_path": "ingredients[1].concentration", "record": {"value":
+    "4.00", "unit": "MILLIMOLAR"}, "decision": "verified against public source direct
+    amount or explicit2/1 mix expansion"}, {"name": "Calcium chloride dihydrate",
+    "value": "0.20", "unit": "MILLIMOLAR", "line": 3142, "source": "feba_media", "field_path":
+    "ingredients[2].concentration", "record": {"value": "0.20", "unit": "MILLIMOLAR"},
+    "decision": "verified against public source direct amount or explicit2/1 mix expansion"},
+    {"name": "Sodium Chloride", "value": "0.34", "unit": "MILLIMOLAR", "line": 3143,
+    "source": "feba_media", "field_path": "ingredients[3].concentration", "record":
+    {"value": "0.34", "unit": "MILLIMOLAR"}, "decision": "verified against public
+    source direct amount or explicit2/1 mix expansion"}, {"name": "Monopotassium phosphate",
+    "value": "10.00", "unit": "MILLIMOLAR", "line": 3144, "source": "feba_media",
+    "field_path": "ingredients[4].concentration", "record": {"value": "10.00", "unit":
+    "MILLIMOLAR"}, "decision": "verified against public source direct amount or explicit2/1
+    mix expansion"}, {"name": "EDTA", "value": "10.00", "unit": "MG_PER_L", "base_value":
+    "5", "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe''s mineral mix",
+    "line": 886, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[5].concentration",
+    "record": {"value": "10.0", "unit": "MG_PER_L"}, "decision": "verified against
+    public source direct amount or explicit2/1 mix expansion"}, {"name": "Magnesium
+    Sulfate Heptahydrate", "value": "6.00", "unit": "MG_PER_L", "base_value": "3",
+    "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe''s mineral mix", "line":
+    887, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[6].concentration",
+    "record": {"value": "6.0", "unit": "MG_PER_L"}, "decision": "verified against
+    public source direct amount or explicit2/1 mix expansion"}, {"name": "Manganese
+    (II) sulfate monohydrate", "value": "10.00", "unit": "MG_PER_L", "base_value":
+    "5", "base_unit": "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe''s mineral mix",
+    "line": 888, "medium_line": 3145, "source": "feba_mixes", "field_path": "ingredients[7].concentration",
+    "record": {"value": "10.0", "unit": "MG_PER_L"}, "decision": "verified against
+    public source direct amount or explicit2/1 mix expansion"}, {"name": "Sodium Chloride",
+    "value": "20.00", "unit": "MG_PER_L", "base_value": "10", "base_unit": "mg/L",
+    "factor": "2.00/1", "mix": "ATCC Wolfe''s mineral mix", "line": 889, "medium_line":
+    3145, "source": "feba_mixes", "field_path": "ingredients[8].concentration", "record":
+    {"value": "20.0", "unit": "MG_PER_L"}, "decision": "verified against public source
+    direct amount or explicit2/1 mix expansion"}, {"name": "Iron (II) sulfate heptahydrate",
+    "value": "2.00", "unit": "MG_PER_L", "base_value": "1", "base_unit": "mg/L", "factor":
+    "2.00/1", "mix": "ATCC Wolfe''s mineral mix", "line": 890, "medium_line": 3145,
+    "source": "feba_mixes", "field_path": "ingredients[9].concentration", "record":
+    {"value": "2.0", "unit": "MG_PER_L"}, "decision": "verified against public source
+    direct amount or explicit2/1 mix expansion"}, {"name": "Cobalt(II) nitrate hexahydrate",
+    "value": "2.00", "unit": "MG_PER_L", "base_value": "1", "base_unit": "mg/L", "factor":
+    "2.00/1", "mix": "ATCC Wolfe''s mineral mix", "line": 891, "medium_line": 3145,
+    "source": "feba_mixes", "field_path": "ingredients[10].concentration", "record":
+    {"value": "2.0", "unit": "MG_PER_L"}, "decision": "verified against public source
+    direct amount or explicit2/1 mix expansion"}, {"name": "Calcium Chloride Dihydrate",
+    "value": "2.00", "unit": "MG_PER_L", "base_value": "1", "base_unit": "mg/L", "factor":
+    "2.00/1", "mix": "ATCC Wolfe''s mineral mix", "line": 892, "medium_line": 3145,
+    "source": "feba_mixes", "field_path": "ingredients[11].concentration", "record":
+    {"value": "2.0", "unit": "MG_PER_L"}, "decision": "verified against public source
+    direct amount or explicit2/1 mix expansion"}, {"name": "Zinc sulfate heptahydrate",
+    "value": "2.00", "unit": "MG_PER_L", "base_value": "1", "base_unit": "mg/L", "factor":
+    "2.00/1", "mix": "ATCC Wolfe''s mineral mix", "line": 893, "medium_line": 3145,
+    "source": "feba_mixes", "field_path": "ingredients[12].concentration", "record":
+    {"value": "2.0", "unit": "MG_PER_L"}, "decision": "verified against public source
+    direct amount or explicit2/1 mix expansion"}, {"name": "Copper (II) sulfate pentahydrate",
+    "value": "0.200", "unit": "MG_PER_L", "base_value": "0.1", "base_unit": "mg/L",
+    "factor": "2.00/1", "mix": "ATCC Wolfe''s mineral mix", "line": 894, "medium_line":
+    3145, "source": "feba_mixes", "field_path": "ingredients[13].concentration", "record":
+    {"value": "0.2", "unit": "MG_PER_L"}, "decision": "verified against public source
+    direct amount or explicit2/1 mix expansion"}, {"name": "Aluminum potassium sulfate
+    dodecahydrate", "value": "0.200", "unit": "MG_PER_L", "base_value": "0.1", "base_unit":
+    "mg/L", "factor": "2.00/1", "mix": "ATCC Wolfe''s mineral mix", "line": 895, "medium_line":
+    3145, "source": "feba_mixes", "field_path": "ingredients[14].concentration", "record":
+    {"value": "0.2", "unit": "MG_PER_L"}, "decision": "verified against public source
+    direct amount or explicit2/1 mix expansion"}, {"name": "Boric Acid", "value":
+    "0.200", "unit": "MG_PER_L", "base_value": "0.1", "base_unit": "mg/L", "factor":
+    "2.00/1", "mix": "ATCC Wolfe''s mineral mix", "line": 896, "medium_line": 3145,
+    "source": "feba_mixes", "field_path": "ingredients[15].concentration", "record":
+    {"value": "0.2", "unit": "MG_PER_L"}, "decision": "verified against public source
+    direct amount or explicit2/1 mix expansion"}, {"name": "Sodium Molybdate Dihydrate",
+    "value": "0.200", "unit": "MG_PER_L", "base_value": "0.1", "base_unit": "mg/L",
+    "factor": "2.00/1", "mix": "ATCC Wolfe''s mineral mix", "line": 897, "medium_line":
+    3145, "source": "feba_mixes", "field_path": "ingredients[16].concentration", "record":
+    {"value": "0.2", "unit": "MG_PER_L"}, "decision": "verified against public source
+    direct amount or explicit2/1 mix expansion"}, {"name": "Sodium selenite pentahydrate",
+    "value": "0.0200", "unit": "MG_PER_L", "base_value": "0.01", "base_unit": "mg/L",
+    "factor": "2.00/1", "mix": "ATCC Wolfe''s mineral mix", "line": 898, "medium_line":
+    3145, "source": "feba_mixes", "field_path": "ingredients[17].concentration", "record":
+    {"value": "0.02", "unit": "MG_PER_L"}, "decision": "verified against public source
+    direct amount or explicit2/1 mix expansion"}, {"name": "Sodium tungstate dihydrate",
+    "value": "0.200", "unit": "MG_PER_L", "base_value": "0.1", "base_unit": "mg/L",
+    "factor": "2.00/1", "mix": "ATCC Wolfe''s mineral mix", "line": 899, "medium_line":
+    3145, "source": "feba_mixes", "field_path": "ingredients[18].concentration", "record":
+    {"value": "0.2", "unit": "MG_PER_L"}, "decision": "verified against public source
+    direct amount or explicit2/1 mix expansion"}, {"name": "Nickel (II) chloride hexahydrate",
+    "value": "0.400", "unit": "MG_PER_L", "base_value": "0.2", "base_unit": "mg/L",
+    "factor": "2.00/1", "mix": "ATCC Wolfe''s mineral mix", "line": 900, "medium_line":
+    3145, "source": "feba_mixes", "field_path": "ingredients[19].concentration", "record":
+    {"value": "0.4", "unit": "MG_PER_L"}, "decision": "verified against public source
+    direct amount or explicit2/1 mix expansion"}, {"name": "Folic Acid", "value":
+    "40.00", "unit": "MICROG_PER_L", "base_value": "20", "base_unit": "ug/L", "factor":
+    "2.00/1", "mix": "ATCC Wolfe''s vitamin mix", "line": 855, "medium_line": 3146,
+    "source": "feba_mixes", "field_path": "ingredients[20].concentration", "record":
+    {"value": "40.0", "unit": "MICROG_PER_L"}, "decision": "verified against public
+    source direct amount or explicit2/1 mix expansion"}, {"name": "Pyridoxine HCl",
+    "value": "200.00", "unit": "MICROG_PER_L", "base_value": "100", "base_unit": "ug/L",
+    "factor": "2.00/1", "mix": "ATCC Wolfe''s vitamin mix", "line": 856, "medium_line":
+    3146, "source": "feba_mixes", "field_path": "ingredients[21].concentration", "record":
+    {"value": "200.0", "unit": "MICROG_PER_L"}, "decision": "verified against public
+    source direct amount or explicit2/1 mix expansion"}, {"name": "Riboflavin", "value":
+    "100.00", "unit": "MICROG_PER_L", "base_value": "50", "base_unit": "ug/L", "factor":
+    "2.00/1", "mix": "ATCC Wolfe''s vitamin mix", "line": 857, "medium_line": 3146,
+    "source": "feba_mixes", "field_path": "ingredients[22].concentration", "record":
+    {"value": "100.0", "unit": "MICROG_PER_L"}, "decision": "verified against public
+    source direct amount or explicit2/1 mix expansion"}, {"name": "biotin", "value":
+    "40.00", "unit": "MICROG_PER_L", "base_value": "20", "base_unit": "ug/L", "factor":
+    "2.00/1", "mix": "ATCC Wolfe''s vitamin mix", "line": 858, "medium_line": 3146,
+    "source": "feba_mixes", "field_path": "ingredients[23].concentration", "record":
+    {"value": "40.0", "unit": "MICROG_PER_L"}, "decision": "verified against public
+    source direct amount or explicit2/1 mix expansion"}, {"name": "Thiamine HCl",
+    "value": "100.00", "unit": "MICROG_PER_L", "base_value": "50", "base_unit": "ug/L",
+    "factor": "2.00/1", "mix": "ATCC Wolfe''s vitamin mix", "line": 859, "medium_line":
+    3146, "source": "feba_mixes", "field_path": "ingredients[24].concentration", "record":
+    {"value": "100.0", "unit": "MICROG_PER_L"}, "decision": "verified against public
+    source direct amount or explicit2/1 mix expansion"}, {"name": "Nicotinic Acid",
+    "value": "100.00", "unit": "MICROG_PER_L", "base_value": "50", "base_unit": "ug/L",
+    "factor": "2.00/1", "mix": "ATCC Wolfe''s vitamin mix", "line": 860, "medium_line":
+    3146, "source": "feba_mixes", "field_path": "ingredients[25].concentration", "record":
+    {"value": "100.0", "unit": "MICROG_PER_L"}, "decision": "verified against public
+    source direct amount or explicit2/1 mix expansion"}, {"name": "calcium pantothenate",
+    "value": "100.00", "unit": "MICROG_PER_L", "base_value": "50", "base_unit": "ug/L",
+    "factor": "2.00/1", "mix": "ATCC Wolfe''s vitamin mix", "line": 861, "medium_line":
+    3146, "source": "feba_mixes", "field_path": "ingredients[26].concentration", "record":
+    {"value": "100.0", "unit": "MICROG_PER_L"}, "decision": "verified against public
+    source direct amount or explicit2/1 mix expansion"}, {"name": "Cyanocobalamin",
+    "value": "2.00", "unit": "MICROG_PER_L", "base_value": "1", "base_unit": "ug/L",
+    "factor": "2.00/1", "mix": "ATCC Wolfe''s vitamin mix", "line": 862, "medium_line":
+    3146, "source": "feba_mixes", "field_path": "ingredients[27].concentration", "record":
+    {"value": "2.0", "unit": "MICROG_PER_L"}, "decision": "verified against public
+    source direct amount or explicit2/1 mix expansion"}, {"name": "4-Aminobenzoic
+    acid", "value": "100.00", "unit": "MICROG_PER_L", "base_value": "50", "base_unit":
+    "ug/L", "factor": "2.00/1", "mix": "ATCC Wolfe''s vitamin mix", "line": 863, "medium_line":
+    3146, "source": "feba_mixes", "field_path": "ingredients[28].concentration", "record":
+    {"value": "100.0", "unit": "MICROG_PER_L"}, "decision": "verified against public
+    source direct amount or explicit2/1 mix expansion"}, {"name": "Lipoic acid", "value":
+    "100.00", "unit": "MICROG_PER_L", "base_value": "50", "base_unit": "ug/L", "factor":
+    "2.00/1", "mix": "ATCC Wolfe''s vitamin mix", "line": 864, "medium_line": 3146,
+    "source": "feba_mixes", "field_path": "ingredients[29].concentration", "record":
+    {"value": "100.0", "unit": "MICROG_PER_L"}, "decision": "verified against public
+    source direct amount or explicit2/1 mix expansion"}, {"name": "Sodium phosphate
+    dibasic", "value": "8.10", "unit": "MILLIMOLAR", "line": 3147, "source": "feba_media",
+    "field_path": "ingredients[30].concentration", "record": {"value": "8.10", "unit":
+    "MILLIMOLAR"}, "decision": "verified against public source direct amount or explicit2/1
+    mix expansion"}, {"name": "Sodium phosphate monobasic", "value": "1.90", "unit":
+    "MILLIMOLAR", "line": 3148, "source": "feba_media", "field_path": "ingredients[31].concentration",
+    "record": {"value": "1.90", "unit": "MILLIMOLAR"}, "decision": "verified against
+    public source direct amount or explicit2/1 mix expansion"}]'
+- assessment_id: stocks
+  area: representation
+  topic: Relative mix factors and batch/preparation basis
+  outcome: concern
+  summary: FEBA declares two ATCC mixes at 2X and supplies their 1X composition. Local
+    rows retain only From-mix notes. These numbers are supported expanded final contributions,
+    not unscaled physical stock concentrations. No stock mL, final batch volume or
+    additional two-fold dilution is established. Blank KCl cannot support a numeric
+    quantity.
+  target_ids:
+  - CultureMech:015480
+  evidence_ids:
+  - record
+  - owner-0
+  - feba_media
+  - feba_mixes
+  - amount-trace
+- assessment_id: chemical-notes
+  area: grounding
+  topic: All note-level CAS and molecular weights
+  outcome: concern
+  summary: All 29 primary identifiers and labels are canonical;27 ingredient rows
+    contain CAS/MW notes.25 CAS annotations match OLS; sodium phosphate has a clear
+    missing digit and lipoic acid is unresolved. Calcium pantothenate MW is half the
+    formula-unit mass. Five other small MW differences are consistent with source
+    precision/atomic-weight choices and do not establish wrong chemical form. No source
+    concentrations were converted using these notes.
+  target_ids:
+  - CultureMech:015480
+  evidence_ids:
+  - record
+  - owner-0
+  - chemical-note-trace
+  - chebi31345-notes
+  - chebi37585-notes
+  - chebi16494-notes
+- assessment_id: coverage-flags
+  area: consistency
+  topic: Primary identifiers versus stale flag and optional secondary links
+  outcome: concern
+  summary: All 32 direct ingredient instances have primary CHEBI terms:100% linkage
+    on a 0–100 scale. None has an asserted secondary MIM key, so secondary linkage
+    is 0/32; all 29 distinct CHEBI identities nevertheless have live preferred-term
+    rows in the pinned index. has_unmapped_ingredients is stale under the local importer
+    primary-term rule. Neither percentage is a correctness score.
+  target_ids:
+  - CultureMech:015480
+  evidence_ids:
+  - record
+  - owner-0
+  - mim-available
+  - code-import_from_culturebotht
+- assessment_id: classification-context
+  area: scope
+  topic: Defined formulation, no-carbon label and aerobic description
+  outcome: supported
+  summary: 'Named chemicals and no solidifier are consistent with DEFINED/LIQUID.
+    specialized is a fallback category, not a taxon assertion. The aerobic-growth
+    description is exact FEBA metadata, not strain-specific experimental evidence.
+    nocarbon does not mean absence of elemental carbon: vitamins and EDTA remain.
+    No missing bulk carbon substrate is inferred.'
+  target_ids:
+  - CultureMech:015480
+  evidence_ids:
+  - record
+  - owner-0
+  - feba_media
+  - feba_mixes
+  - code-import_from_culturebotht
+- assessment_id: preparation
+  area: completeness
+  topic: pH, sterilization, solvent, stock preparation and growth
+  outcome: unknown
+  summary: Neither local layer nor the selected public source sections supplies detailed
+    preparation, pH, incubation time/temperature, measured final volume or growth
+    evidence. No organism targets or optimization claims are asserted. These limits
+    do not license default preparation, use of unrelated UGA variants or adoption
+    of another ATCC product recipe.
+  target_ids:
+  - CultureMech:015480
+  evidence_ids:
+  - record
+  - owner-0
+  - feba_media
+  - feba_mixes
+- assessment_id: evidence-history
+  area: provenance
+  topic: Claim evidence, append-only history and generated correspondence
+  outcome: concern
+  summary: Both layers contain only repository-level source tracking and FEBA/mix
+    notes, with no references or claim evidence. The reference check examined zero
+    excerpts. All owner history is preserved in the target, all timestamps are timezone-aware,
+    and substantive content agrees; there is no omitted later owner curation. Current
+    M9 repair code is unrelated.
+  target_ids:
+  - CultureMech:015480
+  evidence_ids:
+  - record
+  - owner-0
+  - validate-references
+  - code-repair_culturebotht_m9_score15
+  - feba_media
+  - feba_mixes
+findings:
+- finding_id: f1
+  issue_key: CM015480-source-phosphate-discrepancy
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: An additional vitamin-mix phosphate contribution is absent relative to public
+    FEBA
+  description: Exact-name public FEBA medium uses 2X ATCC vitamin mix. That mix declares
+    1X and potassium phosphate monobasic 0.9g/L, giving 1.8g/L at 2X. Neither local
+    layer has that contribution; its sole monopotassium phosphate row remains the
+    separate direct 10mM. All other 32 quantified source rows match. Historical import-version
+    correspondence remains unresolved, so this discrepancy does not by itself prove
+    when or why it arose.
+  target_ids:
+  - CultureMech:015480
+  field_paths:
+  - ingredients
+  - ingredients[4].concentration
+  - sources
+  evidence_ids:
+  - record
+  - owner-0
+  - feba_media
+  - feba_mixes
+  - amount-trace
+  - source-recovery
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/2x_uga_defined_nocarbon.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f2
+  issue_key: CM015480-mix-trace
+  category: provenance
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Expanded mixture contributions lack factors and claim-level source trace
+  description: All stored amounts are supported by the recovered FEBA comparison,
+    but notes omit the two 2X-to 1X expansion factors and no claim-level evidence/reference
+    identifies the exact medium and mix versions. Repeated base/mix chemicals can
+    be mistaken for accidental duplicates, and the blank source KCl row is unrepresented.
+  target_ids:
+  - CultureMech:015480
+  field_paths:
+  - references
+  - ingredients[*].evidence
+  - ingredients[*].notes
+  - sources
+  evidence_ids:
+  - record
+  - owner-0
+  - feba_media
+  - feba_mixes
+  - amount-trace
+  - validate-references
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/2x_uga_defined_nocarbon.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f3
+  issue_key: CM015480-pantothenate-molecular-weight
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Calcium pantothenate MW note is half its formula-unit mass
+  description: ingredients[26] correctly names CHEBI31345 and CAS137-08-6 but its
+    MW238.27 conflicts with ontology formula 2C9H16NO5.Ca and mass 476.536. Using
+    that note as formula-unit molar mass would double a derived molarity. The stored
+    100microgram/L amount is independently consistent with the source and is not corrected
+    by doubling or halving it.
+  target_ids:
+  - CultureMech:015480
+  field_paths:
+  - ingredients[26].notes
+  evidence_ids:
+  - record
+  - owner-0
+  - chebi31345-notes
+  - chemical-note-trace
+  - amount-trace
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/2x_uga_defined_nocarbon.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f4
+  issue_key: CM015480-phosphate-cas-note
+  category: grounding
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Sodium dihydrogenphosphate CAS note lacks a digit
+  description: ingredients[31] notes 558-80-7 while its correctly labeled CHEBI37585
+    lists 7558-80-7. The ingredient name,119.98MW approximation and primary term agree
+    with sodium dihydrogenphosphate; the discrepancy is in the note-level CAS identifier.
+  target_ids:
+  - CultureMech:015480
+  field_paths:
+  - ingredients[31].notes
+  evidence_ids:
+  - record
+  - owner-0
+  - chebi37585-notes
+  - chemical-note-trace
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/2x_uga_defined_nocarbon.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f5
+  issue_key: CM015480-stale-unmapped-flag
+  category: consistency
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Unmapped-ingredient flag contradicts complete primary linkage
+  description: Both inputs retain has_unmapped_ingredients although every one of 32
+    direct ingredients has a canonical primary CHEBI term. The inspected importer
+    uses missing primary terms for this flag; absence of optional secondary fields
+    does not explain it.
+  target_ids:
+  - CultureMech:015480
+  field_paths:
+  - data_quality_flags
+  evidence_ids:
+  - record
+  - owner-0
+  - mim-available
+  - code-import_from_culturebotht
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/2x_uga_defined_nocarbon.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+actions:
+- action_id: a1
+  description: Establish the intended source version and whether an explicit phosphate-free
+    vitamin variant was intended. If this exact public FEBA definition is the intended
+    formulation, restore the separately sourced 1.8g/L contribution or an explicitly
+    evidenced equivalent total without double counting the existing 10mM. Otherwise
+    document the actual variant and evidence. Do not silently substitute another mix
+    or infer a KCl amount.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:015480
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/2x_uga_defined_nocarbon.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Add public commit-pinned medium/mix provenance, exact field-linked
+    source excerpts and 2/1 arithmetic to the maintained owner. Preserve separate
+    direct and mixture contributions and an explicit unresolved blank KCl source row.
+    A faithful expanded representation is acceptable; do not add stock volumes, apply
+    a second dilution or remove additive duplicate chemical rows.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:015480
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/2x_uga_defined_nocarbon.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Correct or explicitly qualify the MW note against the selected chemical
+    form, using 476.536g/mol (476.54 at 2decimal places) for this formula unit. Preserve
+    the independently supported mass concentration; do not infer product grade or
+    revise source quantity from a metadata error.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:015480
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/2x_uga_defined_nocarbon.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Correct the note-level CAS to 7558-80-7 with ontology evidence while
+    retaining CHEBI37585 and the supported 1.90mM source concentration. Do not change
+    the term or infer a hydrate.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:015480
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/2x_uga_defined_nocarbon.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a5
+  description: Reassess the flag under its documented primary-linkage semantics and
+    remove the stale flag only in a separately authorized maintained-input curation
+    with append-only history. Keep genuine provenance, formulation and chemical-note
+    issues distinct from linkage coverage.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:015480
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/2x_uga_defined_nocarbon.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- The original CultureBotHT generated YAML named by the import event was not recovered.
+  Public unauthenticated requests returned 404; an authenticated repository lookup
+  succeeded, but the exact historical file path returned 404, a complete current tree
+  had no matching UGA path, and two bounded path-history queries returned empty lists.
+  This does not establish that the source never existed or exclude ignored/untracked
+  files, other paths or historical branches.
+- The published formulation analysis below relies on unauthenticated, commit-pinned
+  public Berkeley Lab FEBA tables. Private repository archives were useful discovery
+  leads only; no signed URLs, raw API request objects, private table contents or private
+  code are reproduced as publication evidence.
+- The current public FEBA exact-name entry is not proof of the precise March 2026
+  import snapshot. The missing-phosphate finding is a confirmed discrepancy against
+  that public definition; establish source version or an explicit variant before applying
+  a correction.
+- FEBA lists potassium chloride with an empty concentration. Its amount, inclusion
+  and purpose are unresolved; no zero, typical dose, or stock volume is inferred.
+  X factors identify relative mixture strengths, not physical dispensing volumes.
+- Chemical ontology labels and formula masses do not establish supplier grade, actual
+  reagent form, stock preparation, measured concentration or growth. The lipoic-acid
+  CAS cross-reference difference remains unresolved rather than being called an incorrect
+  chemical identity.
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- The pinned MIM index contains two preferred rows sharing CHEBI:31795, labeled MgSO4x7H2O
+  and MgSO4·H2O. Identifier availability does not uniquely validate hydrate identity;
+  exact OLS identity/form supports the record heptahydrate. No secondary MIM linkage
+  is asserted in this record.
+tags:
+- unreviewed-records
+- batch-009
+- generated-medium
+```
