@@ -46,7 +46,7 @@ relative to the checkout, not the installed skill directory.
    publication identity separately from disputed metadata; do not silently
    reorder authors or describe a disputed value as corrected.
 4. Retrieve the relevant methods, tables, supplements, or explicit abstract
-   statement. Record the inspected version, stable URL, access date, and text
+   statement. Use `scripts/fulltext_access.py` (`uv run python scripts/fulltext_access.py --doi <DOI> --fetch-to .temp/fulltext/<slug>.xml` or `--pmid <PMID>`) to resolve legal full text across local Zotero (`$ZOTERO_DATA_DIR`), Europe PMC OA, OpenAlex OA, bioRxiv/medRxiv, DOE OSTI.gov, LBNL publisher TDM APIs (`$ELSEVIER_API_KEY`, `$SPRINGER_API_KEY`, `$WILEY_TDM_TOKEN`), and CORE (`$CORE_API_KEY`); keep non-OA publisher TDM downloads staged in gitignored `.temp/` or `workspace/`, never committed to the repository. Record the inspected version, stable URL, access date, and text
    locator. Search snippets, generated reports, and metadata alone are not
    scientific evidence. With metadata-only access, a relevant bibliography
    entry may be added with that limitation; formulation/growth claims remain
