@@ -106,6 +106,7 @@ docs/schema/
 *.tmp
 *.bak
 .cache/
+.temp/
 
 # Runtime CHEBI/term cache (regenerated at runtime, not source)
 cache/
