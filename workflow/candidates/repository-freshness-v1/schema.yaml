@@ -1,0 +1,34 @@
+id: https://w3id.org/culturebotai/repository-freshness
+name: repository_freshness
+version: 1.0.0
+title: Repository freshness execution policy
+prefixes:
+  linkml: https://w3id.org/linkml/
+default_prefix: https://w3id.org/culturebotai/repository-freshness/
+default_range: string
+types:
+  string:
+    uri: xsd:string
+    base: str
+  boolean:
+    uri: xsd:boolean
+    base: Bool
+classes:
+  RepositoryFreshnessContract:
+    tree_root: true
+    attributes:
+      schema_version: {required: true, pattern: '^1\.0\.0$'}
+      id: {required: true, pattern: '^repository-freshness$'}
+      version: {required: true, pattern: '^1\.0\.0$'}
+      pre_goal_before_inventory: {required: true, range: boolean}
+      post_merge_before_closure: {required: true, range: boolean}
+      no_change_goals: {required: true, range: boolean}
+      canonical_remote_only: {required: true, range: boolean}
+      clean_default_branch_only: {required: true, range: boolean}
+      actual_merge_ancestry: {required: true, range: boolean}
+      verify_fetched_revision: {required: true, range: boolean}
+      bounded_ref_race: {required: true, range: boolean}
+      preserve_frozen_workflow: {required: true, range: boolean}
+      live_control_requires_deployment: {required: true, range: boolean}
+      activation_boundary: {required: true, pattern: '^verified_cycle_boundary$'}
+      candidate_authority: {required: true, pattern: '^proposal_only$'}
