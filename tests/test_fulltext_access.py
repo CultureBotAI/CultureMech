@@ -246,3 +246,48 @@ def test_fetch_to_staging_attaches_tdm_headers(
         k.lower() == "wiley-tdm-client-token" and v == "wiley-tok-888"
         for k, v in captured_headers[-1].items()
     )
+
+
+def test_try_acs_figshare_si_resolves_handle(monkeypatch: pytest.MonkeyPatch) -> None:
+    def fake_get_json(url: str, headers: dict | None = None):
+        if "doi.org/api/handles/10.1021/acssynbio.5b00123.s001" in url:
+            return {
+                "responseCode": 1,
+                "values": [
+                    {
+                        "type": "URL",
+                        "data": {
+                            "value": (
+                                "https://figshare.com/articles/journal_contribution/"
+                                "Supporting_Information/12345678"
+                            )
+                        },
+                    }
+                ],
+            }
+        if "api.figshare.com/v2/articles/12345678" in url:
+            return {
+                "files": [
+                    {
+                        "name": "sb5b00123_si_002.xlsx",
+                        "download_url": "https://ndownloader.figshare.com/files/99999998",
+                    },
+                    {
+                        "name": "sb5b00123_si_001.pdf",
+                        "download_url": "https://ndownloader.figshare.com/files/99999999",
+                    },
+                ]
+            }
+        return {}
+
+    monkeypatch.setattr(fulltext_access, "_get_json", fake_get_json)
+    assert fulltext_access.try_acs_figshare_si("10.1038/s41586-024-00001-1") is None
+    assert (
+        fulltext_access.try_acs_figshare_si("https://doi.org/10.1021/acssynbio.5b00123")
+        == "https://ndownloader.figshare.com/files/99999999"
+    )
+    assert (
+        fulltext_access.try_acs_figshare_si("10.1021/acssynbio.5b00123.s001")
+        == "https://ndownloader.figshare.com/files/99999999"
+    )
+
