@@ -290,4 +290,3 @@ def test_try_acs_figshare_si_resolves_handle(monkeypatch: pytest.MonkeyPatch) ->
         fulltext_access.try_acs_figshare_si("10.1021/acssynbio.5b00123.s001")
         == "https://ndownloader.figshare.com/files/99999999"
     )
-

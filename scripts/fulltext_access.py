@@ -378,7 +378,7 @@ def try_acs_figshare_si(doi: str | None) -> str | None:
                     break
         if not target_url:
             continue
-        m = re.search(r"figshare\.com/articles/[^/]+/[^/]+/(\d+)", target_url)
+        m = re.search(r"figshare\.com/articles/[^?#]+/(\d+)(?:[/?#]|$)", target_url, re.I)
         if m:
             article_id = m.group(1)
             meta = _get_json(f"https://api.figshare.com/v2/articles/{article_id}")
