@@ -1,0 +1,15 @@
+schema_version: 1.0.0
+id: repository-freshness
+version: 1.0.0
+pre_goal_before_inventory: true
+post_merge_before_closure: true
+no_change_goals: true
+canonical_remote_only: true
+clean_default_branch_only: true
+actual_merge_ancestry: true
+verify_fetched_revision: true
+bounded_ref_race: true
+preserve_frozen_workflow: true
+live_control_requires_deployment: true
+activation_boundary: verified_cycle_boundary
+candidate_authority: proposal_only
