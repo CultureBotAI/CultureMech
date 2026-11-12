@@ -357,6 +357,46 @@ def try_core(doi: str | None, title: str | None) -> str | None:
     return None
 
 
+def try_acs_figshare_si(doi: str | None) -> str | None:
+    """Resolve open-access ACS Supporting Information on Figshare (10.1021/<suffix>.s001)."""
+    clean_doi = _clean_doi(doi)
+    if not clean_doi or not clean_doi.startswith("10.1021/"):
+        return None
+    base_doi = re.sub(r"\.s\d{3}$", "", clean_doi, flags=re.IGNORECASE)
+    for suffix in (".s001", ".s002"):
+        si_doi = f"{base_doi}{suffix}"
+        handle_url = "https://doi.org/api/handles/" + urllib.parse.quote(si_doi, safe="/")
+        handle_data = _get_json(handle_url)
+        if not isinstance(handle_data, dict) or handle_data.get("responseCode") != 1:
+            continue
+        target_url = None
+        for val in handle_data.get("values") or []:
+            if isinstance(val, dict) and val.get("type") == "URL":
+                data_val = (val.get("data") or {}).get("value")
+                if isinstance(data_val, str) and data_val.startswith("https://"):
+                    target_url = data_val
+                    break
+        if not target_url:
+            continue
+        m = re.search(r"figshare\.com/articles/[^?#]+/(\d+)(?:[/?#]|$)", target_url, re.I)
+        if m:
+            article_id = m.group(1)
+            meta = _get_json(f"https://api.figshare.com/v2/articles/{article_id}")
+            if isinstance(meta, dict):
+                files = [f for f in (meta.get("files") or []) if isinstance(f, dict)]
+                for f in files:
+                    dl = f.get("download_url")
+                    name = str(f.get("name") or "").lower()
+                    if isinstance(dl, str) and dl.startswith("https://") and name.endswith(".pdf"):
+                        return dl
+                for f in files:
+                    dl = f.get("download_url")
+                    if isinstance(dl, str) and dl.startswith("https://"):
+                        return dl
+        return target_url
+    return None
+
+
 def access_ladder(
     rec: dict,
     doi: str | None,
@@ -376,6 +416,7 @@ def access_ladder(
         ("springer_tdm", lambda: try_springer_tdm(resolved_doi)),
         ("wiley_tdm", lambda: try_wiley_tdm(resolved_doi)),
         ("core", lambda: try_core(resolved_doi, title)),
+        ("acs_figshare_si", lambda: try_acs_figshare_si(resolved_doi)),
     ):
         url = fn()
         if url:
