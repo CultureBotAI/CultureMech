@@ -1,0 +1,1905 @@
+# Source and formulation review: alkaline_xylan_agar (CultureMech:010340)
+
+- Review: 20261021T130831Z-culturemech-010340-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T13:04:56Z
+- Finished UTC: 2026-10-21T13:08:31Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+Exact JCM 99 and TOGO M91 identify this alkaline xylan agar. The six local solid masses match the captured provider formulation, while 1 L water is incorrectly represented as 1 g/L. The record omits pH 10.0, the post-autoclave carbonate adjustment and the displayed JCM sterilization default. Current JCM product labels differ from the provider/local version; no product equivalence, historical change date or unspecified carbonate percentage basis is inferred.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 215; batch 022 item 5 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding twenty-one task batches contain 210 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 213 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:010340 | data/merge_yaml/merged/ALKALINE_XYLAN_AGAR.yaml | generated | alkaline_xylan_agar |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:010340 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:010340 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-022/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch022/215/strict.tsv |
+| validate-terms | passed | True | CultureMech:010340 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:010340 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:010340 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:010340.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Asserted ontology and pinned secondary identifier metadata
+
+grounding: supported. Targets: CultureMech:010340.
+
+4 distinct asserted primary/secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 4/7 primary and 3/7 secondary instances; all asserted secondary keys have exact pinned MIM rows. Source forms are assessed separately.
+
+Instance coverage on a 0–100 percent scale, denominator 7: primary 57.14%; secondary 42.86%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:010340.
+
+11 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "ingredient_or_context": "Distilled water",
+    "field_path": "ingredients[0].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "1",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM91",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M91",
+        "source_locator": "$.components[0].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "92d707a73752225f810f106992cb8727c7c0d8af20308313f47c1c217500d0fb"
+      },
+      {
+        "source_key": "mediadiveJ99api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J99",
+        "source_locator": "$.data.solutions[0].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "563c1003b6f6e8457f78bedfc015dea1ad27e9496aa7f9e3b6c7cd41c6d67bb8"
+      }
+    ],
+    "rationale": "The source lists 1 L distilled water, not 1 g/L. Preserve solvent volume in preparation without density conversion.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "1 L = 1000 mL of listed solvent; no mass conversion."
+  },
+  {
+    "ingredient_or_context": "MgSO4・7H2O",
+    "field_path": "ingredients[1].concentration",
+    "decision": "evidence_only",
+    "local": {
+      "value": "0.2",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM91",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M91",
+        "source_locator": "$.components[0].items[1]",
+        "exact_source_quote": "\"component_name\": \"MgSO4・7H2O\",\n          \"volume\": 0.2,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "92d707a73752225f810f106992cb8727c7c0d8af20308313f47c1c217500d0fb"
+      },
+      {
+        "source_key": "mediadiveJ99api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J99",
+        "source_locator": "$.data.solutions[0].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 0.811438,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "563c1003b6f6e8457f78bedfc015dea1ad27e9496aa7f9e3b6c7cd41c6d67bb8"
+      }
+    ],
+    "rationale": "The local value agrees with the provider-declared 1000 mL basis, but no matching amount evidence is attached in either layer. Product identity/version is assessed separately; matching mass does not prove current JCM product equivalence.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "arithmetic": "Source mass / provider-declared 1 L gives the same numerical g/L value; the unknown carbonate addition prevents an independently established final-volume denominator."
+  },
+  {
+    "ingredient_or_context": "Yeast extract",
+    "field_path": "ingredients[2].concentration",
+    "decision": "evidence_only",
+    "local": {
+      "value": "5",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM91",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M91",
+        "source_locator": "$.components[0].items[2]",
+        "exact_source_quote": "\"component_name\": \"Yeast extract\",\n          \"volume\": 5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "92d707a73752225f810f106992cb8727c7c0d8af20308313f47c1c217500d0fb"
+      },
+      {
+        "source_key": "mediadiveJ99api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J99",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "563c1003b6f6e8457f78bedfc015dea1ad27e9496aa7f9e3b6c7cd41c6d67bb8"
+      }
+    ],
+    "rationale": "The local value agrees with the provider-declared 1000 mL basis, but no matching amount evidence is attached in either layer. Product identity/version is assessed separately; matching mass does not prove current JCM product equivalence.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "arithmetic": "Source mass / provider-declared 1 L gives the same numerical g/L value; the unknown carbonate addition prevents an independently established final-volume denominator."
+  },
+  {
+    "ingredient_or_context": "K2HPO4",
+    "field_path": "ingredients[3].concentration",
+    "decision": "evidence_only",
+    "local": {
+      "value": "1",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM91",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M91",
+        "source_locator": "$.components[0].items[3]",
+        "exact_source_quote": "\"component_name\": \"K2HPO4\",\n          \"volume\": 1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "92d707a73752225f810f106992cb8727c7c0d8af20308313f47c1c217500d0fb"
+      },
+      {
+        "source_key": "mediadiveJ99api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J99",
+        "source_locator": "$.data.solutions[0].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 5.74132,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "563c1003b6f6e8457f78bedfc015dea1ad27e9496aa7f9e3b6c7cd41c6d67bb8"
+      }
+    ],
+    "rationale": "The local value agrees with the provider-declared 1000 mL basis, but no matching amount evidence is attached in either layer. Product identity/version is assessed separately; matching mass does not prove current JCM product equivalence.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "arithmetic": "Source mass / provider-declared 1 L gives the same numerical g/L value; the unknown carbonate addition prevents an independently established final-volume denominator."
+  },
+  {
+    "ingredient_or_context": "Larchwood xylan (Sigma)",
+    "field_path": "ingredients[4].concentration",
+    "decision": "evidence_only",
+    "local": {
+      "value": "10",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM91",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M91",
+        "source_locator": "$.components[0].items[4]",
+        "exact_source_quote": "\"component_name\": \"Larchwood xylan (Sigma)\",\n          \"volume\": 10,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "92d707a73752225f810f106992cb8727c7c0d8af20308313f47c1c217500d0fb"
+      },
+      {
+        "source_key": "mediadiveJ99api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J99",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Larchwood xylan\",\n                        \"compound_id\": 1624,\n                        \"attribute\": \"Sigma\",\n                        \"amount\": 10,\n                        \"unit\": \"g\",\n                        \"g_l\": 10,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "563c1003b6f6e8457f78bedfc015dea1ad27e9496aa7f9e3b6c7cd41c6d67bb8"
+      }
+    ],
+    "rationale": "The local value agrees with the provider-declared 1000 mL basis, but no matching amount evidence is attached in either layer. Product identity/version is assessed separately; matching mass does not prove current JCM product equivalence.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "arithmetic": "Source mass / provider-declared 1 L gives the same numerical g/L value; the unknown carbonate addition prevents an independently established final-volume denominator."
+  },
+  {
+    "ingredient_or_context": "Agar",
+    "field_path": "ingredients[5].concentration",
+    "decision": "evidence_only",
+    "local": {
+      "value": "15",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM91",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M91",
+        "source_locator": "$.components[0].items[5]",
+        "exact_source_quote": "\"component_name\": \"Agar\",\n          \"volume\": 15,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "92d707a73752225f810f106992cb8727c7c0d8af20308313f47c1c217500d0fb"
+      },
+      {
+        "source_key": "mediadiveJ99api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J99",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n                        \"amount\": 15,\n                        \"unit\": \"g\",\n                        \"g_l\": 15,\n                        \"mmol_l\": 44.5991,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "563c1003b6f6e8457f78bedfc015dea1ad27e9496aa7f9e3b6c7cd41c6d67bb8"
+      }
+    ],
+    "rationale": "The local value agrees with the provider-declared 1000 mL basis, but no matching amount evidence is attached in either layer. Product identity/version is assessed separately; matching mass does not prove current JCM product equivalence.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "arithmetic": "Source mass / provider-declared 1 L gives the same numerical g/L value; the unknown carbonate addition prevents an independently established final-volume denominator."
+  },
+  {
+    "ingredient_or_context": "Polypepton (Nihon Pharm. Co.)",
+    "field_path": "ingredients[6].concentration",
+    "decision": "evidence_only",
+    "local": {
+      "value": "5",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM91",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M91",
+        "source_locator": "$.components[0].items[6]",
+        "exact_source_quote": "\"component_name\": \"Polypepton (Nihon Pharm. Co.)\",\n          \"volume\": 5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "92d707a73752225f810f106992cb8727c7c0d8af20308313f47c1c217500d0fb"
+      },
+      {
+        "source_key": "mediadiveJ99api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J99",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Polypeptone\",\n                        \"compound_id\": 442,\n                        \"attribute\": \"Nihon Pharm. Co.\",\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "563c1003b6f6e8457f78bedfc015dea1ad27e9496aa7f9e3b6c7cd41c6d67bb8"
+      }
+    ],
+    "rationale": "The local value agrees with the provider-declared 1000 mL basis, but no matching amount evidence is attached in either layer. Product identity/version is assessed separately; matching mass does not prove current JCM product equivalence.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "arithmetic": "Source mass / provider-declared 1 L gives the same numerical g/L value; the unknown carbonate addition prevents an independently established final-volume denominator."
+  },
+  {
+    "ingredient_or_context": "Carbonate adjustment stock strength",
+    "field_path": "solutions[0].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "variable",
+      "unit": "VARIABLE"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM91",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M91",
+        "source_locator": "$.components[0].items[7]",
+        "exact_source_quote": "\"component_name\": \"Na2CO3 solution\",\n          \"conc_value\": 10,\n          \"conc_unit\": \"%\"",
+        "snapshot_sha256": "92d707a73752225f810f106992cb8727c7c0d8af20308313f47c1c217500d0fb"
+      },
+      {
+        "source_key": "togoM91",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M91",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "After autoclaving, adjust pH to 10.0 with sterilized 10% Na2CO3 solution.",
+        "snapshot_sha256": "92d707a73752225f810f106992cb8727c7c0d8af20308313f47c1c217500d0fb"
+      }
+    ],
+    "rationale": "The empty VARIABLE stub omits the source-explicit 10% strength and adjustment stage. Percent basis is not stated; retain the literal strength in scoped preparation notes without inventing w/v or a final concentration.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "target",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "correct"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Carbonate receiving dose",
+    "field_path": "preparation.carbonate_dose",
+    "decision": "not_quantified",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "togoM91",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M91",
+        "source_locator": "$.components[0].items[7]",
+        "exact_source_quote": "\"component_name\": \"Na2CO3 solution\",\n          \"conc_value\": 10,\n          \"conc_unit\": \"%\"",
+        "snapshot_sha256": "92d707a73752225f810f106992cb8727c7c0d8af20308313f47c1c217500d0fb"
+      }
+    ],
+    "rationale": "The source specifies a pH endpoint but no fixed stock volume. VARIABLE is not evidence for a numeric dose; preserve the endpoint-based adjustment and unknown dose.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "pH after autoclaving",
+    "field_path": "ph_value",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "togoM91",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M91",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "After autoclaving, adjust pH to 10.0 with sterilized 10% Na2CO3 solution.",
+        "snapshot_sha256": "92d707a73752225f810f106992cb8727c7c0d8af20308313f47c1c217500d0fb"
+      }
+    ],
+    "rationale": "Restore pH 10.0 at the explicit post-autoclave adjustment stage with a sterile carbonate stock; do not move the adjustment before autoclaving.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ph_value",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml",
+        "field_path": "ph_value",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Collection sterilization default",
+    "field_path": "preparation.autoclaving",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "jcm99",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=99",
+        "source_locator": "Displayed default immediately before exact medium 99",
+        "exact_source_quote": "Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.",
+        "snapshot_sha256": "0a7114ec596240e0e1e53c342d328165335c1f3d6f89268c2c7842e016047c60",
+        "parsed_text_sha256": "e70c35959a739390223a140dad5ec71ae971f80035ed374f8472c7e6b1086bad"
+      }
+    ],
+    "rationale": "The exact page supplies this conditional 121°C, 15 min default. No contrary cycle appears; preserve it separately from the carbonate preparation, whose sterilization method is not further specified.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ]
+  }
+]
+
+### Exact accession, generated owner and source versions
+
+identity: supported. Targets: CultureMech:010340.
+
+CultureMech:010340 is generated from the one explicitly named TOGO M91 owner, which links JCM 99. The current primary and providers share the medium identity and mass framework; their product qualifiers are retained as distinct source versions rather than silently substituted.
+
+### Every amount and source denominator
+
+consistency: concern. Targets: CultureMech:010340.
+
+All seven direct quantities and the one solution concentration are assessed. Six masses agree with the provider nominal basis. Water has a wrong physical unit, and the carbonate stock has no fixed receiving dose or stated percent basis. No final dilution is calculated from the 1 L water item or VARIABLE placeholder.
+
+### Source forms and differing product identities
+
+grounding: concern. Targets: CultureMech:010340.
+
+The named magnesium sulfate heptahydrate and dipotassium hydrogen phosphate match their source forms and OLS identities. Current JCM lists Xylan and Hipolypepton (FUJIFILM Wako); local/TOGO/MediaDive specify larchwood xylan (Sigma) and Polypepton/Polypeptone (Nihon Pharm. Co.). These differences do not prove either product substitution or equivalence, nor establish when the source changed. Mixture IDs are not invented.
+
+### Sterilization, carbonate stock and final pH
+
+completeness: concern. Targets: CultureMech:010340.
+
+Neither layer has preparation steps or pH 10.0. The exact primary requires autoclaving, then adjusting with sterile 10% Na2CO3, and displays the 121°C/15 min default. The local stock is named Unknown solution despite the known sodium-carbonate identity. Stock percentage basis and dose remain unresolved and must not be guessed.
+
+### Agar formulation and biological claims
+
+scope: supported. Targets: CultureMech:010340.
+
+COMPLEX/UNDEFINED is supported by yeast extract and peptone, and SOLID_AGAR by the explicit 15 g agar formulation. No strain, taxon, genome, DOI/PMID, organism growth claim, stock identifier, parent or variant reference is asserted. Cultivation application alone does not establish growth or optimum pH.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:010340.
+
+25 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Source parsing, copied stock placeholders and derived output
+
+provenance: concern. Targets: CultureMech:010340.
+
+Target and owner retain the same water/unit and empty-stock defects. Current TOGO code distinguishes adjustment solutions, parses original units and preserves source comments; migration code copies an existing concentration into a solution stub. Those current functions explain representation responsibilities but were not executed or treated as the historical cause.
+
+## Findings
+
+### f1: One liter of water is represented as one gram per liter
+
+major / open / confirmed; issue key: culturemech.010340.water-unit.
+
+Both layers encode the source 1 L solvent as 1 G_PER_L. This is a physical-unit error, not a supported density conversion; it loses the explicit batch preparation quantity.
+
+### f2: The alkaline adjustment and sterilization sequence is omitted
+
+major / open / confirmed; issue key: culturemech.010340.preparation-scope.
+
+Both layers omit the explicit pH 10.0 endpoint, post-autoclave timing, sterile 10% carbonate strength and displayed 121°C/15 min default. An empty Unknown solution with VARIABLE concentration cannot reproduce this source-specific preparation.
+
+### f3: Current primary and provider product labels differ without version qualification
+
+minor / open / confirmed; issue key: culturemech.010340.source-product-version.
+
+The current JCM page names generic Xylan and Hipolypepton (FUJIFILM Wako), while the local/provider version specifies larchwood xylan (Sigma) and Polypepton (Nihon Pharm. Co.). Shared amounts cannot authenticate product equivalence or the historical sequence. No ingredient-level evidence or reference qualifies these source versions.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore the exact 1 L solvent preparation quantity with evidence and remove the unsupported mass-concentration representation in the maintained input. Keep final medium volume separate from the unspecified carbonate dose.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Preserve the complete source-specific preparation and named adjustment reagent with claim-level evidence. Keep the 10% basis and fixed receiving dose unresolved; do not invent a numerical carbonate concentration in the final medium.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Attach the exact provider-version evidence and preserve the separately observed current JCM labels and retrieval dates. Resolve intended product scope before any substitution; do not silently blend source versions or infer a change date.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ALKALINE_XYLAN_AGAR.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ALKALINE_XYLAN_AGAR.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ALKALINE_XYLAN_AGAR.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch022/215/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-022/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch022/215/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ALKALINE_XYLAN_AGAR.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ALKALINE_XYLAN_AGAR.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/ALKALINE_XYLAN_AGAR.yaml:1:id: CultureMech:010340<br>./data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml:1:id: CultureMech:010340<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch022/source-preflight-bound/215/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 7 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| bound-context | /private/tmp/culturemech-review-work-batch022/source-preflight-bound/215/evidence-context-original.json; Complete frozen source context rebound to every fresh native input | context_only | All context input hashes match the fresh native inspection. The preflight remains historical preparation; this assessment uses the current bound record catalog and native input hashes. |
+| jcm99 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=99; Entire captured source; exact accession and all formulation/preparation fields | supports | Full current JCM 99 formula, displayed 121°C/15 min default and post-autoclave pH 10.0 adjustment with sterilized 10% carbonate; current xylan and Hipolypepton supplier labels retained. |
+| togoM91 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M91; Entire captured source; exact accession and all formulation/preparation fields | supports | Exact M91 metadata links JCM 99; full eight ingredient/adjustment rows and comment read, with original L/g units and unspecified percentage basis. |
+| mediadiveJ99api | https://mediadive.dsmz.de/rest/medium/J99; Entire captured source; exact accession and all formulation/preparation fields | supports | Complete main 3729; six g/L mass claims on declared 1000 mL basis, water item and carbonate-adjustment step. Provider-specific product labels remain distinct from current JCM. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:15377 resolves to water. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:2509 resolves to agar. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131527": [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15377": [{"label": "Distilled water", "match_type": "preferred_term", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:2509": [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch022/215/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| quantity-local-fields | /private/tmp/culturemech-review-work-batch022/215/quantity-local-field-audit.json; All quantity layer paths and exact stored values against full inspected YAML | context_only | Every local concentration is covered; every layer locator resolves to its exact stored value or explicitly absent intended container. Source locators remain in source_snippets. |
+| writer-context-0 | src/culturemech/merge/formulation.py; formulation_content lines 48–70; merge_formulation_evidence lines 92–128 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| writer-context-1 | src/culturemech/import/mediadive_importer.py; _parse_api_composition lines 455–537; _is_api_stock_addition lines 563–570; _parse_api_solutions lines 593–621; _normalize_unit lines 623–651; _parse_preparation_steps lines 653–721 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| writer-context-2 | scripts/cleanup_media_quality.py; normalize_name lines 76–82; _merge_ingredient_group lines 148–216 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| writer-context-3 | src/culturemech/import/togo_importer.py; _ingredient_from_item lines 273–339; _extract_primary_components lines 587–641; _extract_preparation_steps lines 644–668; _parse_unit lines 713–746; _extract_ph lines 748–775 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| writer-context-4 | scripts/migrate_solutions_from_ingredients.py; _extract_medium_reference lines 108–125; _resolve_solution lines 127–199 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| history-metadata | data/merge_yaml/merged/ALKALINE_XYLAN_AGAR.yaml; data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 13, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml", "events": 12, "timestamp_issues": []}] |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- The 10% carbonate percentage basis and receiving dose are not stated. The final volume after adjustment is not established.
+- No source supplies evidence that FUJIFILM Wako and Nihon Pharm. Co. products are interchangeable, or a dated history of the product-label differences.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T130831Z-culturemech-010340-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: alkaline_xylan_agar (CultureMech:010340)'
+started_at: '2026-10-21T13:04:56Z'
+finished_at: '2026-10-21T13:08:31Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: Exact JCM 99 and TOGO M91 identify this alkaline xylan agar. The six local
+  solid masses match the captured provider formulation, while 1 L water is incorrectly
+  represented as 1 g/L. The record omits pH 10.0, the post-autoclave carbonate adjustment
+  and the displayed JCM sterilization default. Current JCM product labels differ from
+  the provider/local version; no product equivalence, historical change date or unspecified
+  carbonate percentage basis is inferred.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ALKALINE_XYLAN_AGAR.yaml
+    sha256: 999936aec2890b8c8a46605118cdf6523e155350245d04b5d54867c8b4214018
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml
+    sha256: 95fcafec0c190b4c1ada68a07ffdb44798b090755f7fc713ef8eff0c4dbb9203
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/convert/togo_raw_yaml.py
+    sha256: ce5e73545c9ecde54724259d2fd475676c0f3cb44dcfd283950e89fd49c10993
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/fetch/togo_fetcher.py
+    sha256: 7aac40fe1d47e30810ae0be02f6e369ddb9bf657d630072595c62f46fb0bf339
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 215; batch 022 item 5 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding twenty-one task batches
+    contain 210 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 213 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:010340
+targets:
+- target_id: CultureMech:010340
+  path: data/merge_yaml/merged/ALKALINE_XYLAN_AGAR.yaml
+  label: alkaline_xylan_agar
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ALKALINE_XYLAN_AGAR.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:010340
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ALKALINE_XYLAN_AGAR.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch022/215/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-022/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch022/215/strict.tsv"
+  target_ids:
+  - CultureMech:010340
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ALKALINE_XYLAN_AGAR.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:010340
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ALKALINE_XYLAN_AGAR.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:010340
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:010340
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ALKALINE_XYLAN_AGAR.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T13:08:29Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:08:29Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ALKALINE_XYLAN_AGAR.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T13:05:38.510112Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ALKALINE_XYLAN_AGAR.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch022/215/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T13:05:40.477489Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-022/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch022/215/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ALKALINE_XYLAN_AGAR.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T13:05:43.340926Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ALKALINE_XYLAN_AGAR.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T13:05:45.127017Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T13:08:29Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ALKALINE_XYLAN_AGAR.yaml:1:id: CultureMech:010340
+
+    ./data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml:1:id: CultureMech:010340
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch022/source-preflight-bound/215/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T13:08:29Z'
+  support: supports
+  summary: 7 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: dcb12c58b08c47effb3c8fab6f6f3bd46f3f8cf5bf4589bc92df87928f41e8b6
+- evidence_id: bound-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch022/source-preflight-bound/215/evidence-context-original.json
+  locator: Complete frozen source context rebound to every fresh native input
+  accessed_at: '2026-10-21T13:08:29Z'
+  support: context_only
+  summary: All context input hashes match the fresh native inspection. The preflight
+    remains historical preparation; this assessment uses the current bound record
+    catalog and native input hashes.
+  snapshot_sha256: 704b9ac07e499722f314afb4f0c329ecad7b7f9f23da3f56304bb3e300bf3131
+- evidence_id: jcm99
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=99
+  locator: Entire captured source; exact accession and all formulation/preparation
+    fields
+  accessed_at: '2026-10-21T12:52:19.409641Z'
+  support: supports
+  summary: Full current JCM 99 formula, displayed 121°C/15 min default and post-autoclave
+    pH 10.0 adjustment with sterilized 10% carbonate; current xylan and Hipolypepton
+    supplier labels retained.
+  snapshot_sha256: 0a7114ec596240e0e1e53c342d328165335c1f3d6f89268c2c7842e016047c60
+- evidence_id: togoM91
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M91
+  locator: Entire captured source; exact accession and all formulation/preparation
+    fields
+  accessed_at: '2026-10-21T12:52:18.445852Z'
+  support: supports
+  summary: Exact M91 metadata links JCM 99; full eight ingredient/adjustment rows
+    and comment read, with original L/g units and unspecified percentage basis.
+  snapshot_sha256: 92d707a73752225f810f106992cb8727c7c0d8af20308313f47c1c217500d0fb
+- evidence_id: mediadiveJ99api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J99
+  locator: Entire captured source; exact accession and all formulation/preparation
+    fields
+  accessed_at: '2026-10-21T12:52:17.906933Z'
+  support: supports
+  summary: Complete main 3729; six g/L mass claims on declared 1000 mL basis, water
+    item and carbonate-adjustment step. Provider-specific product labels remain distinct
+    from current JCM.
+  snapshot_sha256: 563c1003b6f6e8457f78bedfc015dea1ad27e9496aa7f9e3b6c7cd41c6d67bb8
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.097802Z'
+  support: supports
+  summary: CHEBI:15377 resolves to water. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:27.847373Z'
+  support: supports
+  summary: CHEBI:2509 resolves to agar. Identifier existence and label metadata do
+    not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T13:08:29Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131527":
+    [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527",
+    "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:15377": [{"label": "Distilled water", "match_type":
+    "preferred_term", "identifier": "CHEBI:15377", "preferred_term": "Distilled water",
+    "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:2509": [{"label": "Agar", "match_type": "preferred_term", "identifier":
+    "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch022/215/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T13:08:29Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 05c68be73052ef754083af286200d0875005f1448cd4c8e0822d1b1d984f33f6
+- evidence_id: quantity-local-fields
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch022/215/quantity-local-field-audit.json
+  locator: All quantity layer paths and exact stored values against full inspected
+    YAML
+  accessed_at: '2026-10-21T13:08:29Z'
+  support: context_only
+  summary: Every local concentration is covered; every layer locator resolves to its
+    exact stored value or explicitly absent intended container. Source locators remain
+    in source_snippets.
+  snapshot_sha256: fb0a6b28fae226e68131c621689a0901f660c72b22f39cf074afa894273ef0ef
+- evidence_id: writer-context-0
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content lines 48–70; merge_formulation_evidence lines 92–128
+  accessed_at: '2026-10-21T13:08:29Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-context-1
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition lines 455–537; _is_api_stock_addition lines 563–570;
+    _parse_api_solutions lines 593–621; _normalize_unit lines 623–651; _parse_preparation_steps
+    lines 653–721
+  accessed_at: '2026-10-21T13:08:29Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-context-2
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: normalize_name lines 76–82; _merge_ingredient_group lines 148–216
+  accessed_at: '2026-10-21T13:08:29Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer-context-3
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: _ingredient_from_item lines 273–339; _extract_primary_components lines
+    587–641; _extract_preparation_steps lines 644–668; _parse_unit lines 713–746;
+    _extract_ph lines 748–775
+  accessed_at: '2026-10-21T13:08:29Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: writer-context-4
+  kind: record_content
+  reference: scripts/migrate_solutions_from_ingredients.py
+  locator: _extract_medium_reference lines 108–125; _resolve_solution lines 127–199
+  accessed_at: '2026-10-21T13:08:29Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ALKALINE_XYLAN_AGAR.yaml; data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T13:08:29Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 13, "timestamp_issues": []}, {"input":
+    "data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml", "events":
+    12, "timestamp_issues": []}]'
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:010340
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and pinned secondary identifier metadata
+  outcome: supported
+  summary: '4 distinct asserted primary/secondary IDs resolve to matching nonobsolete
+    labels in all inspected layers. Target linkage: 4/7 primary and 3/7 secondary
+    instances; all asserted secondary keys have exact pinned MIM rows. Source forms
+    are assessed separately.'
+  target_ids:
+  - CultureMech:010340
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi131527
+  - chebi15377
+  - chebi2509
+  - chebi31795
+  details: 'Instance coverage on a 0–100 percent scale, denominator 7: primary 57.14%;
+    secondary 42.86%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 11 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:010340
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"ingredient_or_context\": \"Distilled water\",\n    \"field_path\"\
+    : \"ingredients[0].concentration\",\n    \"decision\": \"correct\",\n    \"local\"\
+    : {\n      \"value\": \"1\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM91\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M91\",\n      \
+    \  \"source_locator\": \"$.components[0].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"92d707a73752225f810f106992cb8727c7c0d8af20308313f47c1c217500d0fb\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ99api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J99\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"Distilled water\\\",\\n                        \\\"compound_id\\\
+    \": 4,\\n                        \\\"amount\\\": 1000,\\n                    \
+    \    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"563c1003b6f6e8457f78bedfc015dea1ad27e9496aa7f9e3b6c7cd41c6d67bb8\"\
+    \n      }\n    ],\n    \"rationale\": \"The source lists 1 L distilled water,\
+    \ not 1 g/L. Preserve solvent volume in preparation without density conversion.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[0].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"1\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"1 L\
+    \ = 1000 mL of listed solvent; no mass conversion.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"MgSO4・7H2O\",\n    \"field_path\": \"ingredients[1].concentration\",\n   \
+    \ \"decision\": \"evidence_only\",\n    \"local\": {\n      \"value\": \"0.2\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"togoM91\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M91\"\
+    ,\n        \"source_locator\": \"$.components[0].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MgSO4・7H2O\\\",\\n          \\\"volume\\\": 0.2,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"92d707a73752225f810f106992cb8727c7c0d8af20308313f47c1c217500d0fb\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ99api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J99\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"MgSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 8,\\n                        \\\"amount\\\": 0.2,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.2,\\n  \
+    \                      \\\"mmol_l\\\": 0.811438,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"563c1003b6f6e8457f78bedfc015dea1ad27e9496aa7f9e3b6c7cd41c6d67bb8\"\
+    \n      }\n    ],\n    \"rationale\": \"The local value agrees with the provider-declared\
+    \ 1000 mL basis, but no matching amount evidence is attached in either layer.\
+    \ Product identity/version is assessed separately; matching mass does not prove\
+    \ current JCM product equivalence.\",\n    \"action_taken\": \"Review only; no\
+    \ recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[1].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"evidence_only\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"Source mass / provider-declared 1 L gives the same numerical g/L value; the\
+    \ unknown carbonate addition prevents an independently established final-volume\
+    \ denominator.\"\n  },\n  {\n    \"ingredient_or_context\": \"Yeast extract\"\
+    ,\n    \"field_path\": \"ingredients[2].concentration\",\n    \"decision\": \"\
+    evidence_only\",\n    \"local\": {\n      \"value\": \"5\",\n      \"unit\": \"\
+    G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM91\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M91\"\
+    ,\n        \"source_locator\": \"$.components[0].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Yeast extract\\\",\\n          \\\"volume\\\"\
+    : 5,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"92d707a73752225f810f106992cb8727c7c0d8af20308313f47c1c217500d0fb\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ99api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J99\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"Yeast extract\\\",\\n                        \\\"compound_id\\\
+    \": 16,\\n                        \\\"amount\\\": 5,\\n                      \
+    \  \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 5,\\n     \
+    \                   \\\"optional\\\": 0\\n                    }\",\n        \"\
+    snapshot_sha256\": \"563c1003b6f6e8457f78bedfc015dea1ad27e9496aa7f9e3b6c7cd41c6d67bb8\"\
+    \n      }\n    ],\n    \"rationale\": \"The local value agrees with the provider-declared\
+    \ 1000 mL basis, but no matching amount evidence is attached in either layer.\
+    \ Product identity/version is assessed separately; matching mass does not prove\
+    \ current JCM product equivalence.\",\n    \"action_taken\": \"Review only; no\
+    \ recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[2].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"evidence_only\"\n      },\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"Source mass / provider-declared 1 L gives the same numerical g/L value; the\
+    \ unknown carbonate addition prevents an independently established final-volume\
+    \ denominator.\"\n  },\n  {\n    \"ingredient_or_context\": \"K2HPO4\",\n    \"\
+    field_path\": \"ingredients[3].concentration\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local\": {\n      \"value\": \"1\",\n      \"unit\": \"G_PER_L\"\n  \
+    \  },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM91\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M91\"\
+    ,\n        \"source_locator\": \"$.components[0].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"K2HPO4\\\",\\n          \\\"volume\\\": 1,\\n\
+    \          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"92d707a73752225f810f106992cb8727c7c0d8af20308313f47c1c217500d0fb\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ99api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J99\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"K2HPO4\\\",\\n                        \\\"compound_id\\\": 10,\\\
+    n                        \\\"amount\\\": 1,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 1,\\n                  \
+    \      \\\"mmol_l\\\": 5.74132,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"563c1003b6f6e8457f78bedfc015dea1ad27e9496aa7f9e3b6c7cd41c6d67bb8\"\
+    \n      }\n    ],\n    \"rationale\": \"The local value agrees with the provider-declared\
+    \ 1000 mL basis, but no matching amount evidence is attached in either layer.\
+    \ Product identity/version is assessed separately; matching mass does not prove\
+    \ current JCM product equivalence.\",\n    \"action_taken\": \"Review only; no\
+    \ recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[3].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"evidence_only\"\n      },\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"Source mass / provider-declared 1 L gives the same numerical g/L value; the\
+    \ unknown carbonate addition prevents an independently established final-volume\
+    \ denominator.\"\n  },\n  {\n    \"ingredient_or_context\": \"Larchwood xylan\
+    \ (Sigma)\",\n    \"field_path\": \"ingredients[4].concentration\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local\": {\n      \"value\": \"10\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM91\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M91\"\
+    ,\n        \"source_locator\": \"$.components[0].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Larchwood xylan (Sigma)\\\",\\n          \\\"\
+    volume\\\": 10,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\"\
+    : \"92d707a73752225f810f106992cb8727c7c0d8af20308313f47c1c217500d0fb\"\n     \
+    \ },\n      {\n        \"source_key\": \"mediadiveJ99api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J99\",\n        \"source_locator\":\
+    \ \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"Larchwood xylan\\\",\\n                        \\\"compound_id\\\
+    \": 1624,\\n                        \\\"attribute\\\": \\\"Sigma\\\",\\n     \
+    \                   \\\"amount\\\": 10,\\n                        \\\"unit\\\"\
+    : \\\"g\\\",\\n                        \\\"g_l\\\": 10,\\n                   \
+    \     \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"563c1003b6f6e8457f78bedfc015dea1ad27e9496aa7f9e3b6c7cd41c6d67bb8\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The local value agrees with the provider-declared\
+    \ 1000 mL basis, but no matching amount evidence is attached in either layer.\
+    \ Product identity/version is assessed separately; matching mass does not prove\
+    \ current JCM product equivalence.\",\n    \"action_taken\": \"Review only; no\
+    \ recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[4].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"evidence_only\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"Source mass / provider-declared 1 L gives the same numerical g/L value; the\
+    \ unknown carbonate addition prevents an independently established final-volume\
+    \ denominator.\"\n  },\n  {\n    \"ingredient_or_context\": \"Agar\",\n    \"\
+    field_path\": \"ingredients[5].concentration\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local\": {\n      \"value\": \"15\",\n      \"unit\": \"G_PER_L\"\n \
+    \   },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM91\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M91\"\
+    ,\n        \"source_locator\": \"$.components[0].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Agar\\\",\\n          \\\"volume\\\": 15,\\n \
+    \         \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"92d707a73752225f810f106992cb8727c7c0d8af20308313f47c1c217500d0fb\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ99api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J99\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"Agar\\\",\\n                        \\\"compound_id\\\": 3,\\\
+    n                        \\\"amount\\\": 15,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 15,\\n                 \
+    \       \\\"mmol_l\\\": 44.5991,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"563c1003b6f6e8457f78bedfc015dea1ad27e9496aa7f9e3b6c7cd41c6d67bb8\"\
+    \n      }\n    ],\n    \"rationale\": \"The local value agrees with the provider-declared\
+    \ 1000 mL basis, but no matching amount evidence is attached in either layer.\
+    \ Product identity/version is assessed separately; matching mass does not prove\
+    \ current JCM product equivalence.\",\n    \"action_taken\": \"Review only; no\
+    \ recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[5].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"evidence_only\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"Source mass / provider-declared 1 L gives the same numerical g/L value; the\
+    \ unknown carbonate addition prevents an independently established final-volume\
+    \ denominator.\"\n  },\n  {\n    \"ingredient_or_context\": \"Polypepton (Nihon\
+    \ Pharm. Co.)\",\n    \"field_path\": \"ingredients[6].concentration\",\n    \"\
+    decision\": \"evidence_only\",\n    \"local\": {\n      \"value\": \"5\",\n  \
+    \    \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n    \
+    \    \"source_key\": \"togoM91\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M91\"\
+    ,\n        \"source_locator\": \"$.components[0].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Polypepton (Nihon Pharm. Co.)\\\",\\n        \
+    \  \\\"volume\\\": 5,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\"\
+    : \"92d707a73752225f810f106992cb8727c7c0d8af20308313f47c1c217500d0fb\"\n     \
+    \ },\n      {\n        \"source_key\": \"mediadiveJ99api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J99\",\n        \"source_locator\":\
+    \ \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"Polypeptone\\\",\\n                        \\\"compound_id\\\
+    \": 442,\\n                        \\\"attribute\\\": \\\"Nihon Pharm. Co.\\\"\
+    ,\\n                        \\\"amount\\\": 5,\\n                        \\\"\
+    unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 5,\\n            \
+    \            \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"563c1003b6f6e8457f78bedfc015dea1ad27e9496aa7f9e3b6c7cd41c6d67bb8\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The local value agrees with the provider-declared\
+    \ 1000 mL basis, but no matching amount evidence is attached in either layer.\
+    \ Product identity/version is assessed separately; matching mass does not prove\
+    \ current JCM product equivalence.\",\n    \"action_taken\": \"Review only; no\
+    \ recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[6].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"evidence_only\"\n      },\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"Source mass / provider-declared 1 L gives the same numerical g/L value; the\
+    \ unknown carbonate addition prevents an independently established final-volume\
+    \ denominator.\"\n  },\n  {\n    \"ingredient_or_context\": \"Carbonate adjustment\
+    \ stock strength\",\n    \"field_path\": \"solutions[0].concentration\",\n   \
+    \ \"decision\": \"correct\",\n    \"local\": {\n      \"value\": \"variable\"\
+    ,\n      \"unit\": \"VARIABLE\"\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"togoM91\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M91\"\
+    ,\n        \"source_locator\": \"$.components[0].items[7]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2CO3 solution\\\",\\n          \\\"conc_value\\\
+    \": 10,\\n          \\\"conc_unit\\\": \\\"%\\\"\",\n        \"snapshot_sha256\"\
+    : \"92d707a73752225f810f106992cb8727c7c0d8af20308313f47c1c217500d0fb\"\n     \
+    \ },\n      {\n        \"source_key\": \"togoM91\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M91\",\n      \
+    \  \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"After autoclaving, adjust pH to 10.0 with sterilized 10% Na2CO3 solution.\"\
+    ,\n        \"snapshot_sha256\": \"92d707a73752225f810f106992cb8727c7c0d8af20308313f47c1c217500d0fb\"\
+    \n      }\n    ],\n    \"rationale\": \"The empty VARIABLE stub omits the source-explicit\
+    \ 10% strength and adjustment stage. Percent basis is not stated; retain the literal\
+    \ strength in scoped preparation notes without inventing w/v or a final concentration.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"solutions[0].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"variable\",\n          \"unit\"\
+    : \"VARIABLE\"\n        },\n        \"decision\": \"correct\"\n      },\n    \
+    \  {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"solutions[0].composition\",\n       \
+    \ \"stored\": [],\n        \"decision\": \"correct\"\n      },\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"correct\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Carbonate receiving dose\",\n    \"field_path\": \"preparation.carbonate_dose\"\
+    ,\n    \"decision\": \"not_quantified\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM91\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M91\",\n      \
+    \  \"source_locator\": \"$.components[0].items[7]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2CO3 solution\\\",\\n          \\\"conc_value\\\
+    \": 10,\\n          \\\"conc_unit\\\": \\\"%\\\"\",\n        \"snapshot_sha256\"\
+    : \"92d707a73752225f810f106992cb8727c7c0d8af20308313f47c1c217500d0fb\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The source specifies a pH endpoint but no fixed\
+    \ stock volume. VARIABLE is not evidence for a numeric dose; preserve the endpoint-based\
+    \ adjustment and unknown dose.\",\n    \"action_taken\": \"Review only; no recipe\
+    \ change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"not_quantified\"\n      },\n      {\n     \
+    \   \"input\": \"data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"not_quantified\"\n      }\n    ]\n  },\n  {\n\
+    \    \"ingredient_or_context\": \"pH after autoclaving\",\n    \"field_path\"\
+    : \"ph_value\",\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM91\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M91\",\n      \
+    \  \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"After autoclaving, adjust pH to 10.0 with sterilized 10% Na2CO3 solution.\"\
+    ,\n        \"snapshot_sha256\": \"92d707a73752225f810f106992cb8727c7c0d8af20308313f47c1c217500d0fb\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore pH 10.0 at the explicit post-autoclave\
+    \ adjustment stage with a sterile carbonate stock; do not move the adjustment\
+    \ before autoclaving.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ph_value\",\n        \"stored\": null,\n        \"decision\"\
+    : \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\"\n      },\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n      \
+    \  \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Collection sterilization default\",\n    \"field_path\": \"preparation.autoclaving\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"jcm99\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=99\"\
+    ,\n        \"source_locator\": \"Displayed default immediately before exact medium\
+    \ 99\",\n        \"exact_source_quote\": \"Unless otherwise stated, sterilize\
+    \ media by autoclaving at 121°C for 15 min.\",\n        \"snapshot_sha256\": \"\
+    0a7114ec596240e0e1e53c342d328165335c1f3d6f89268c2c7842e016047c60\",\n        \"\
+    parsed_text_sha256\": \"e70c35959a739390223a140dad5ec71ae971f80035ed374f8472c7e6b1086bad\"\
+    \n      }\n    ],\n    \"rationale\": \"The exact page supplies this conditional\
+    \ 121°C, 15 min default. No contrary cycle appears; preserve it separately from\
+    \ the carbonate preparation, whose sterilization method is not further specified.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"preparation_steps\"\
+    ,\n        \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ]\n  }\n]"
+- assessment_id: identity
+  area: identity
+  topic: Exact accession, generated owner and source versions
+  outcome: supported
+  summary: CultureMech:010340 is generated from the one explicitly named TOGO M91
+    owner, which links JCM 99. The current primary and providers share the medium
+    identity and mass framework; their product qualifiers are retained as distinct
+    source versions rather than silently substituted.
+  target_ids:
+  - CultureMech:010340
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - jcm99
+  - togoM91
+  - mediadiveJ99api
+- assessment_id: source-stage-consistency
+  area: consistency
+  topic: Every amount and source denominator
+  outcome: concern
+  summary: All seven direct quantities and the one solution concentration are assessed.
+    Six masses agree with the provider nominal basis. Water has a wrong physical unit,
+    and the carbonate stock has no fixed receiving dose or stated percent basis. No
+    final dilution is calculated from the 1 L water item or VARIABLE placeholder.
+  target_ids:
+  - CultureMech:010340
+  evidence_ids:
+  - quantity-inventory
+  - quantity-local-fields
+  - jcm99
+  - togoM91
+  - mediadiveJ99api
+- assessment_id: forms-and-versions
+  area: grounding
+  topic: Source forms and differing product identities
+  outcome: concern
+  summary: The named magnesium sulfate heptahydrate and dipotassium hydrogen phosphate
+    match their source forms and OLS identities. Current JCM lists Xylan and Hipolypepton
+    (FUJIFILM Wako); local/TOGO/MediaDive specify larchwood xylan (Sigma) and Polypepton/Polypeptone
+    (Nihon Pharm. Co.). These differences do not prove either product substitution
+    or equivalence, nor establish when the source changed. Mixture IDs are not invented.
+  target_ids:
+  - CultureMech:010340
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm99
+  - togoM91
+  - mediadiveJ99api
+  - chebi31795
+  - chebi131527
+- assessment_id: preparation
+  area: completeness
+  topic: Sterilization, carbonate stock and final pH
+  outcome: concern
+  summary: Neither layer has preparation steps or pH 10.0. The exact primary requires
+    autoclaving, then adjusting with sterile 10% Na2CO3, and displays the 121°C/15
+    min default. The local stock is named Unknown solution despite the known sodium-carbonate
+    identity. Stock percentage basis and dose remain unresolved and must not be guessed.
+  target_ids:
+  - CultureMech:010340
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm99
+  - togoM91
+  - quantity-inventory
+- assessment_id: classification
+  area: scope
+  topic: Agar formulation and biological claims
+  outcome: supported
+  summary: COMPLEX/UNDEFINED is supported by yeast extract and peptone, and SOLID_AGAR
+    by the explicit 15 g agar formulation. No strain, taxon, genome, DOI/PMID, organism
+    growth claim, stock identifier, parent or variant reference is asserted. Cultivation
+    application alone does not establish growth or optimum pH.
+  target_ids:
+  - CultureMech:010340
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm99
+  - togoM91
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 25 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:010340
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: generation
+  area: provenance
+  topic: Source parsing, copied stock placeholders and derived output
+  outcome: concern
+  summary: Target and owner retain the same water/unit and empty-stock defects. Current
+    TOGO code distinguishes adjustment solutions, parses original units and preserves
+    source comments; migration code copies an existing concentration into a solution
+    stub. Those current functions explain representation responsibilities but were
+    not executed or treated as the historical cause.
+  target_ids:
+  - CultureMech:010340
+  evidence_ids:
+  - record
+  - owner-0
+  - history-metadata
+  - writer-context-0
+  - writer-context-1
+  - writer-context-2
+  - writer-context-3
+  - writer-context-4
+findings:
+- finding_id: f1
+  issue_key: culturemech.010340.water-unit
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: One liter of water is represented as one gram per liter
+  description: Both layers encode the source 1 L solvent as 1 G_PER_L. This is a physical-unit
+    error, not a supported density conversion; it loses the explicit batch preparation
+    quantity.
+  target_ids:
+  - CultureMech:010340
+  field_paths:
+  - ingredients[0].concentration
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm99
+  - togoM91
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.3
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.010340.preparation-scope
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The alkaline adjustment and sterilization sequence is omitted
+  description: Both layers omit the explicit pH 10.0 endpoint, post-autoclave timing,
+    sterile 10% carbonate strength and displayed 121°C/15 min default. An empty Unknown
+    solution with VARIABLE concentration cannot reproduce this source-specific preparation.
+  target_ids:
+  - CultureMech:010340
+  field_paths:
+  - preparation_steps
+  - ph_value
+  - solutions[0]
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm99
+  - togoM91
+  - mediadiveJ99api
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.5
+  native_severity: P3
+  normalization_reason: P3.5 is normalized to major because the omitted sterilization
+    and post-autoclave pH adjustment are explicit requirements for reproducing this
+    alkaline formulation, not a generic request for a cycle.
+- finding_id: f3
+  issue_key: culturemech.010340.source-product-version
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Current primary and provider product labels differ without version qualification
+  description: The current JCM page names generic Xylan and Hipolypepton (FUJIFILM
+    Wako), while the local/provider version specifies larchwood xylan (Sigma) and
+    Polypepton (Nihon Pharm. Co.). Shared amounts cannot authenticate product equivalence
+    or the historical sequence. No ingredient-level evidence or reference qualifies
+    these source versions.
+  target_ids:
+  - CultureMech:010340
+  field_paths:
+  - ingredients[4].preferred_term
+  - ingredients[6].preferred_term
+  - references
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm99
+  - togoM91
+  - mediadiveJ99api
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4.3
+  native_severity: P4
+  normalization_reason: P4 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Restore the exact 1 L solvent preparation quantity with evidence and
+    remove the unsupported mass-concentration representation in the maintained input.
+    Keep final medium volume separate from the unspecified carbonate dose.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:010340
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Preserve the complete source-specific preparation and named adjustment
+    reagent with claim-level evidence. Keep the 10% basis and fixed receiving dose
+    unresolved; do not invent a numerical carbonate concentration in the final medium.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:010340
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Attach the exact provider-version evidence and preserve the separately
+    observed current JCM labels and retrieval dates. Resolve intended product scope
+    before any substitution; do not silently blend source versions or infer a change
+    date.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:010340
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M91_Alkaline_Xylan_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- The 10% carbonate percentage basis and receiving dose are not stated. The final
+  volume after adjustment is not established.
+- No source supplies evidence that FUJIFILM Wako and Nihon Pharm. Co. products are
+  interchangeable, or a dated history of the product-label differences.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-022
+- generated-medium
+```
