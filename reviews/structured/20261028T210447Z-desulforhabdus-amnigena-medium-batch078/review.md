@@ -1,0 +1,3763 @@
+# Scientific review of desulforhabdus_amnigena_medium
+
+- Review: 20261028T210447Z-desulforhabdus-amnigena-medium-batch078
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T20:57:53.453172Z
+- Finished UTC: 2026-10-28T21:04:47.527806Z
+- Reviewer: Codex independent record reviewer (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The maintained owners already separate ten stock components, but the generated target still sums four vitamin pairs and all layers retain incomplete stock structure. Eleven main provider rates, pH and DSM main preparation are supported. Stock placement, dose denominators, two supplied-form identifiers and KOMODO atmosphere/provenance need bounded curation.
+
+## Scope And Provenance
+
+Full selected target and maintained owners, every quantity and unchanged claim, embedded source stocks and current writers.
+
+Selection: Authoritative batch078 selection index 5 at base 9ea7ff33d354e37b791df96a880005153e446ce3. Fresh review, not reconstruction of lost historical bundles.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:001845 | data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml | generated | desulforhabdus_amnigena_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:001845 | Exit 0; original full stdout/stderr read. Structural check only. |
+| validate-strict | passed | True | CultureMech:001845 | Exit 0; original full stdout/stderr read. Structural check only. |
+| validate-terms | passed | True | CultureMech:001845 | Exit 0; original full stdout/stderr read. Structural check only. |
+| validate-references | passed | True | CultureMech:001845 | Exit 0; original full stdout/stderr read. Zero reference checks. |
+
+## Scientific And Domain Assessments
+
+### Exact maintained source branches
+
+identity: concern. Targets: CultureMech:001845.
+
+DSM708 and current API708 establish the exact primary formulation. DSM10338 collection identity ties strain ASRB1 to this source, without new growth evidence. The second maintained contributor identifies KOMODO708; exact current retrieval returned 403. Its identity/inference limitations remain distinct from supported current DSM batches.
+
+### Credit existing owner repairs and classification
+
+consistency: supported. Targets: CultureMech:001845.
+
+Both owners already retain ten correctly scoped stock components, separating four formerly summed vitamin pairs. The generated target still has four summed values and no stocks. Eleven main rates, pH 7.2–7.6, DSM main preparation, DEFINED and LIQUID are supported with current source/provider scope. Incomplete owner reconstruction and unsupported dose denominators must be resolved before regeneration.
+
+### Supplied forms and spelling-specific MIM status
+
+grounding: concern. Targets: CultureMech:001845.
+
+Nickel hexahydrate uses anhydrous 34887 and sodium resazurin uses neutral 8806. Other exact hydrates, sodium propionate, thiamine hydrochloride dihydrate and calcium pantothenate formulas agree with their source scopes. MIM preferred CoCl2 x 6 H2O is REJECTED while Cobalt chloride hexahydrate is MAPPED for correct 53503; preferred Ca-pantothenate and Calcium D-Pantothenate are REJECTED whereas Calcium pantothenate is MAPPED for correct 31345. These label-status distinctions do not make those supplied-form IDs wrong. Vitamin B12 remains a class.
+
+### Historical assertions and current writers
+
+provenance: concern. Targets: CultureMech:001845.
+
+All five complete historical reports and two exact selected parent rows (193 claims) were read. Both parent source digests equal current API708; 102 source objects match literally and as decoded objects. Existing ten-component nesting and unresolved candidate counterevidence are credited independently of the old blanket topology conflicts. There are no attached formulation claims in any current layer; current source equality does not prove historical access/execution. Current conservative merging preserves scientific fields and rejects incompatible formulations. Inspected writer behavior is described separately by exact file and function; it does not prove historical execution.
+
+### Every concentration and source-only amount/stage
+
+quantity: concern. Targets: CultureMech:001845.
+
+All 119 selected target/owner concentration fields have explicit decisions; source-only stock, liquid, control and denominator gaps are retained separately.
+
+{"schema": "private explicit quantity decisions v1", "target_id": "CultureMech:001845", "selected_concentration_field_count": 119, "selected_concentration_fields_covered": 119, "decisions": [{"decision_id": "q1", "subject": "Na2HPO4 x 2 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[0].concentration", "original": {"value": "0.527888", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "ingredients[0].concentration", "original": {"value": "0.527888", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "ingredients[0].concentration", "original": {"value": "0.527888", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM708 provider main-medium normalization", "interpretation": "All three current layers retain the explicit provider g_l=0.527888. This is its declared nominal 1004 ml recipe basis, not an independently measured final-volume conclusion from the primary 1000 ml water. Preserve the exact primary batch amount, provider attribution and separate preparation stages. No attached claim exists. ", "sources": [{"locator": "extracted-text physical LF lines 3-3", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Na2HPO4 x 2 H2O                                            0.53         g", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[0]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Na2HPO4 x 2 H2O\",\n                        \"compound_id\": 181,\n                        \"amount\": 0.53,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.527888,\n                        \"mmol_l\": 3.7186,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q2", "subject": "KH2PO4", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[1].concentration", "original": {"value": "0.408367", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "ingredients[1].concentration", "original": {"value": "0.408367", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "ingredients[1].concentration", "original": {"value": "0.408367", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM708 provider main-medium normalization", "interpretation": "All three current layers retain the explicit provider g_l=0.408367. This is its declared nominal 1004 ml recipe basis, not an independently measured final-volume conclusion from the primary 1000 ml water. Preserve the exact primary batch amount, provider attribution and separate preparation stages. No attached claim exists. ", "sources": [{"locator": "extracted-text physical LF lines 4-4", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   KH2PO4                                                     0.41         g", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[1]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.41,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.408367,\n                        \"mmol_l\": 3.00082,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q3", "subject": "NH4Cl", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[2].concentration", "original": {"value": "0.298805", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "ingredients[2].concentration", "original": {"value": "0.298805", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "ingredients[2].concentration", "original": {"value": "0.298805", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM708 provider main-medium normalization", "interpretation": "All three current layers retain the explicit provider g_l=0.298805. This is its declared nominal 1004 ml recipe basis, not an independently measured final-volume conclusion from the primary 1000 ml water. Preserve the exact primary batch amount, provider attribution and separate preparation stages. No attached claim exists. ", "sources": [{"locator": "extracted-text physical LF lines 5-5", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   NH4Cl                                                      0.30         g", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[2]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\": 0.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.298805,\n                        \"mmol_l\": 5.58618,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q4", "subject": "CaCl2 x 2 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[3].concentration", "original": {"value": "0.109562", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "ingredients[3].concentration", "original": {"value": "0.109562", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "ingredients[3].concentration", "original": {"value": "0.109562", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM708 provider main-medium normalization", "interpretation": "All three current layers retain the explicit provider g_l=0.109562. This is its declared nominal 1004 ml recipe basis, not an independently measured final-volume conclusion from the primary 1000 ml water. Preserve the exact primary batch amount, provider attribution and separate preparation stages. No attached claim exists. ", "sources": [{"locator": "extracted-text physical LF lines 6-6", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   CaCl2 x 2 H2O                                              0.11         g", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[3]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.11,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.109562,\n                        \"mmol_l\": 0.745242,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q5", "subject": "MgCl2 x 6 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[4].concentration", "original": {"value": "0.0996016", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "ingredients[4].concentration", "original": {"value": "0.0996016", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "ingredients[4].concentration", "original": {"value": "0.0996016", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM708 provider main-medium normalization", "interpretation": "All three current layers retain the explicit provider g_l=0.0996016. This is its declared nominal 1004 ml recipe basis, not an independently measured final-volume conclusion from the primary 1000 ml water. Preserve the exact primary batch amount, provider attribution and separate preparation stages. No attached claim exists. ", "sources": [{"locator": "extracted-text physical LF lines 7-7", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   MgCl2 x 6 H2O                                              0.10         g", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[4]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.0996016,\n                        \"mmol_l\": 0.489917,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q6", "subject": "Na2SO4", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[5].concentration", "original": {"value": "2.78884", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "ingredients[5].concentration", "original": {"value": "2.78884", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "ingredients[5].concentration", "original": {"value": "2.78884", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM708 provider main-medium normalization", "interpretation": "All three current layers retain the explicit provider g_l=2.78884. This is its declared nominal 1004 ml recipe basis, not an independently measured final-volume conclusion from the primary 1000 ml water. Preserve the exact primary batch amount, provider attribution and separate preparation stages. No attached claim exists. ", "sources": [{"locator": "extracted-text physical LF lines 8-8", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Na2SO4                                                     2.80         g", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[5]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Na2SO4\",\n                        \"compound_id\": 110,\n                        \"amount\": 2.8,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.78884,\n                        \"mmol_l\": 19.6342,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q7", "subject": "NaCl", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[6].concentration", "original": {"value": "0.298805", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "ingredients[6].concentration", "original": {"value": "0.298805", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "ingredients[6].concentration", "original": {"value": "0.298805", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM708 provider main-medium normalization", "interpretation": "All three current layers retain the explicit provider g_l=0.298805. This is its declared nominal 1004 ml recipe basis, not an independently measured final-volume conclusion from the primary 1000 ml water. Preserve the exact primary batch amount, provider attribution and separate preparation stages. No attached claim exists. ", "sources": [{"locator": "extracted-text physical LF lines 9-9", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   NaCl                                                       0.30         g", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[6]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 0.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.298805,\n                        \"mmol_l\": 5.11302,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q8", "subject": "Sodium resazurin", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[7].concentration", "original": {"value": "0.000498008", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "ingredients[7].concentration", "original": {"value": "0.000498008", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "ingredients[7].concentration", "original": {"value": "0.000498008", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM708 provider main-medium normalization", "interpretation": "All three current layers retain the explicit provider g_l=0.000498008. This is its declared nominal 1004 ml recipe basis, not an independently measured final-volume conclusion from the primary 1000 ml water. Preserve the exact primary batch amount, provider attribution and separate preparation stages. No attached claim exists. The primary resazurin reagent is explicitly 0.1% w/v, added as 0.5 ml.", "sources": [{"locator": "extracted-text physical LF lines 12-12", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Sodium resazurin (0.1% w/v)                                0.50        ml", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[9]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.000498008,\n                        \"mmol_l\": 0.00198275,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q9", "subject": "Na2CO3", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[8].concentration", "original": {"value": "1.49402", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "ingredients[8].concentration", "original": {"value": "1.49402", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "ingredients[8].concentration", "original": {"value": "1.49402", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM708 provider main-medium normalization", "interpretation": "All three current layers retain the explicit provider g_l=1.49402. This is its declared nominal 1004 ml recipe basis, not an independently measured final-volume conclusion from the primary 1000 ml water. Preserve the exact primary batch amount, provider attribution and separate preparation stages. No attached claim exists. ", "sources": [{"locator": "extracted-text physical LF lines 13-13", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Na2CO3                                                     1.50         g", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[10]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.49402,\n                        \"mmol_l\": 14.0962,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q10", "subject": "Na-propionate", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[9].concentration", "original": {"value": "1.99203", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "ingredients[9].concentration", "original": {"value": "1.99203", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "ingredients[9].concentration", "original": {"value": "1.99203", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM708 provider main-medium normalization", "interpretation": "All three current layers retain the explicit provider g_l=1.99203. This is its declared nominal 1004 ml recipe basis, not an independently measured final-volume conclusion from the primary 1000 ml water. Preserve the exact primary batch amount, provider attribution and separate preparation stages. No attached claim exists. ", "sources": [{"locator": "extracted-text physical LF lines 16-16", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Na-propionate                                              2.00         g", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[13]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Na-propionate\",\n                        \"compound_id\": 301,\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.99203,\n                        \"mmol_l\": 20.7374,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q11", "subject": "Na2S x 9 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[10].concentration", "original": {"value": "0.498008", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "ingredients[10].concentration", "original": {"value": "0.498008", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "ingredients[10].concentration", "original": {"value": "0.498008", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM708 provider main-medium normalization", "interpretation": "All three current layers retain the explicit provider g_l=0.498008. This is its declared nominal 1004 ml recipe basis, not an independently measured final-volume conclusion from the primary 1000 ml water. Preserve the exact primary batch amount, provider attribution and separate preparation stages. No attached claim exists. ", "sources": [{"locator": "extracted-text physical LF lines 17-17", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Na2S x 9 H2O                                               0.50         g", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[14]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 15,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.498008,\n                        \"mmol_l\": 2.07346,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q12", "subject": "HCl", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[11].concentration", "original": {"value": "2.5", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "ingredients[11].concentration", "original": {"value": "2.5", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "ingredients[11].concentration", "original": {"value": "2.5", "unit": "G_PER_L"}}], "decision": "correct", "stage": "separate Trace element solution SL-10", "interpretation": "This explicit stock component g_l=2.5 is wrongly represented at root/main scope. Restore the distinct stock rather than treating the rate as a final-medium amount. The primary gives 10 ml HCl (25%) without percentage basis or density. Provider 2.5 g/L is only a provider assertion; pure-HCl mass is not independently derived.", "sources": [{"locator": "extracted-text physical LF lines 32-32", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   HCl (25%)                                                  10.00      ml", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[1].recipe[0]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"HCl\",\n                        \"compound_id\": 68,\n                        \"attribute\": \"25%\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"g_l\": 2.5,\n                        \"mmol_l\": 68.5683,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 43-44", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q13", "subject": "FeCl2 x 4 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[12].concentration", "original": {"value": "1.5", "unit": "G_PER_L"}}], "decision": "correct", "stage": "separate Trace element solution SL-10", "interpretation": "This explicit stock component g_l=1.5 is wrongly represented at root/main scope. Restore the distinct stock rather than treating the rate as a final-medium amount. Primary SL-10 explicitly makes up to 1000 ml.", "sources": [{"locator": "extracted-text physical LF lines 33-33", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   FeCl2 x 4 H2O                                               1.50       g", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[1].recipe[1]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"FeCl2 x 4 H2O\",\n                        \"compound_id\": 260,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\": 7.54482,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 43-44", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q14", "subject": "FeCl2 x 4 H2O already nested", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "solutions[0].composition[0].concentration", "original": {"value": "1.5", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "solutions[0].composition[0].concentration", "original": {"value": "1.5", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "retained Trace element solution SL-10", "interpretation": "The maintained owners already preserve this component at the correct stock scope and value g_l=1.5; credit that partial repair. It does not make the incomplete stock composition or receiving denominator complete. Primary SL-10 explicitly makes up to 1000 ml.", "sources": [{"locator": "extracted-text physical LF lines 33-33", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   FeCl2 x 4 H2O                                               1.50       g", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[1].recipe[1]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"FeCl2 x 4 H2O\",\n                        \"compound_id\": 260,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\": 7.54482,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 43-44", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q15", "subject": "ZnCl2", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[13].concentration", "original": {"value": "0.07", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "ingredients[12].concentration", "original": {"value": "0.07", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "ingredients[12].concentration", "original": {"value": "0.07", "unit": "G_PER_L"}}], "decision": "correct", "stage": "separate Trace element solution SL-10", "interpretation": "This explicit stock component g_l=0.07 is wrongly represented at root/main scope. Restore the distinct stock rather than treating the rate as a final-medium amount. Primary SL-10 explicitly makes up to 1000 ml.", "sources": [{"locator": "extracted-text physical LF lines 34-34", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   ZnCl2                                                      70.00      mg", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[1].recipe[2]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"ZnCl2\",\n                        \"compound_id\": 64,\n                        \"amount\": 70,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.07,\n                        \"mmol_l\": 0.513573,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 43-44", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q16", "subject": "MnCl2 x 4 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[14].concentration", "original": {"value": "0.1", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "ingredients[13].concentration", "original": {"value": "0.1", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "ingredients[13].concentration", "original": {"value": "0.1", "unit": "G_PER_L"}}], "decision": "correct", "stage": "separate Trace element solution SL-10", "interpretation": "This explicit stock component g_l=0.1 is wrongly represented at root/main scope. Restore the distinct stock rather than treating the rate as a final-medium amount. Primary SL-10 explicitly makes up to 1000 ml.", "sources": [{"locator": "extracted-text physical LF lines 35-35", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   MnCl2 x 4 H2O                                             100.00      mg", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[1].recipe[3]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\": 36,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.505293,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 43-44", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q17", "subject": "H3BO3", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[15].concentration", "original": {"value": "0.006", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "ingredients[14].concentration", "original": {"value": "0.006", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "ingredients[14].concentration", "original": {"value": "0.006", "unit": "G_PER_L"}}], "decision": "correct", "stage": "separate Trace element solution SL-10", "interpretation": "This explicit stock component g_l=0.006 is wrongly represented at root/main scope. Restore the distinct stock rather than treating the rate as a final-medium amount. Primary SL-10 explicitly makes up to 1000 ml.", "sources": [{"locator": "extracted-text physical LF lines 36-36", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   H3BO3                                                       6.00      mg", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[1].recipe[4]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\": 6,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.006,\n                        \"mmol_l\": 0.0970246,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 43-44", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q18", "subject": "CoCl2 x 6 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[16].concentration", "original": {"value": "0.19", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "ingredients[15].concentration", "original": {"value": "0.19", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "ingredients[15].concentration", "original": {"value": "0.19", "unit": "G_PER_L"}}], "decision": "correct", "stage": "separate Trace element solution SL-10", "interpretation": "This explicit stock component g_l=0.19 is wrongly represented at root/main scope. Restore the distinct stock rather than treating the rate as a final-medium amount. Primary SL-10 explicitly makes up to 1000 ml.", "sources": [{"locator": "extracted-text physical LF lines 37-37", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   CoCl2 x 6 H2O                                             190.00      mg", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[1].recipe[5]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\": 38,\n                        \"amount\": 190,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.19,\n                        \"mmol_l\": 1.46335,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 43-44", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q19", "subject": "CuCl2 x 2 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[17].concentration", "original": {"value": "0.002", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "ingredients[16].concentration", "original": {"value": "0.002", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "ingredients[16].concentration", "original": {"value": "0.002", "unit": "G_PER_L"}}], "decision": "correct", "stage": "separate Trace element solution SL-10", "interpretation": "This explicit stock component g_l=0.002 is wrongly represented at root/main scope. Restore the distinct stock rather than treating the rate as a final-medium amount. Primary SL-10 explicitly makes up to 1000 ml.", "sources": [{"locator": "extracted-text physical LF lines 38-38", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   CuCl2 x 2 H2O                                               2.00      mg", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[1].recipe[6]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"CuCl2 x 2 H2O\",\n                        \"compound_id\": 39,\n                        \"amount\": 2,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\": 0.0117314,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 43-44", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q20", "subject": "NiCl2 x 6 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[18].concentration", "original": {"value": "0.024", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "ingredients[17].concentration", "original": {"value": "0.024", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "ingredients[17].concentration", "original": {"value": "0.024", "unit": "G_PER_L"}}], "decision": "correct", "stage": "separate Trace element solution SL-10", "interpretation": "This explicit stock component g_l=0.024 is wrongly represented at root/main scope. Restore the distinct stock rather than treating the rate as a final-medium amount. Primary SL-10 explicitly makes up to 1000 ml.", "sources": [{"locator": "extracted-text physical LF lines 39-39", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   NiCl2 x 6 H2O                                              24.00      mg", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[1].recipe[7]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\": 40,\n                        \"amount\": 24,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.024,\n                        \"mmol_l\": 0.185187,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 43-44", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q21", "subject": "Na2MoO4 x 2 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[19].concentration", "original": {"value": "0.036", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "ingredients[18].concentration", "original": {"value": "0.036", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "ingredients[18].concentration", "original": {"value": "0.036", "unit": "G_PER_L"}}], "decision": "correct", "stage": "separate Trace element solution SL-10", "interpretation": "This explicit stock component g_l=0.036 is wrongly represented at root/main scope. Restore the distinct stock rather than treating the rate as a final-medium amount. Primary SL-10 explicitly makes up to 1000 ml.", "sources": [{"locator": "extracted-text physical LF lines 40-40", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Na2MoO4 x 2 H2O                                            36.00      mg", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[1].recipe[8]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\": 36,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.036,\n                        \"mmol_l\": 0.148791,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 43-44", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q22", "subject": "NaOH", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[20].concentration", "original": {"value": "0.5", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "ingredients[19].concentration", "original": {"value": "0.5", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "ingredients[19].concentration", "original": {"value": "0.5", "unit": "G_PER_L"}}], "decision": "correct", "stage": "separate Selenite-tungstate solution", "interpretation": "This explicit stock component g_l=0.5 is wrongly represented at root/main scope. Restore the distinct stock rather than treating the rate as a final-medium amount. Provider stock g_l is explicit; the listed 1000 ml stock water is a batch input, not independently measured final volume.", "sources": [{"locator": "extracted-text physical LF lines 56-56", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   NaOH                                        0.50    g", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[2].recipe[0]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"NaOH\",\n                        \"compound_id\": 256,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 12.5009,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q23", "subject": "Na2SeO3 x 5 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[21].concentration", "original": {"value": "0.003", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "ingredients[20].concentration", "original": {"value": "0.003", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "ingredients[20].concentration", "original": {"value": "0.003", "unit": "G_PER_L"}}], "decision": "correct", "stage": "separate Selenite-tungstate solution", "interpretation": "This explicit stock component g_l=0.003 is wrongly represented at root/main scope. Restore the distinct stock rather than treating the rate as a final-medium amount. Provider stock g_l is explicit; the listed 1000 ml stock water is a batch input, not independently measured final volume.", "sources": [{"locator": "extracted-text physical LF lines 57-57", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Na2SeO3 x 5 H2O                             3.00   mg", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[2].recipe[1]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Na2SeO3 x 5 H2O\",\n                        \"compound_id\": 107,\n                        \"amount\": 3,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.003,\n                        \"mmol_l\": 0.0114062,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q24", "subject": "Na2WO4 x 2 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[22].concentration", "original": {"value": "0.004", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "ingredients[21].concentration", "original": {"value": "0.004", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "ingredients[21].concentration", "original": {"value": "0.004", "unit": "G_PER_L"}}], "decision": "correct", "stage": "separate Selenite-tungstate solution", "interpretation": "This explicit stock component g_l=0.004 is wrongly represented at root/main scope. Restore the distinct stock rather than treating the rate as a final-medium amount. Provider stock g_l is explicit; the listed 1000 ml stock water is a batch input, not independently measured final volume.", "sources": [{"locator": "extracted-text physical LF lines 58-58", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Na2WO4 x 2 H2O                              4.00   mg", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[2].recipe[2]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Na2WO4 x 2 H2O\",\n                        \"compound_id\": 249,\n                        \"amount\": 4,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.004,\n                        \"mmol_l\": 0.0121267,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q25", "subject": "Biotin", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[23].concentration", "original": {"value": "0.02", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "ingredients[22].concentration", "original": {"value": "0.02", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "ingredients[22].concentration", "original": {"value": "0.02", "unit": "G_PER_L"}}], "decision": "correct", "stage": "separate Wolin's vitamin solution (10x)", "interpretation": "This explicit stock component g_l=0.02 is wrongly represented at root/main scope. Restore the distinct stock rather than treating the rate as a final-medium amount. Provider stock g_l is explicit; the listed 1000 ml stock water is a batch input, not independently measured final volume.", "sources": [{"locator": "extracted-text physical LF lines 64-64", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Biotin                                     20.00   mg", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[3].recipe[0]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Biotin\",\n                        \"compound_id\": 46,\n                        \"amount\": 20,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0818632,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q26", "subject": "Folic acid", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[24].concentration", "original": {"value": "0.02", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "ingredients[23].concentration", "original": {"value": "0.02", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "ingredients[23].concentration", "original": {"value": "0.02", "unit": "G_PER_L"}}], "decision": "correct", "stage": "separate Wolin's vitamin solution (10x)", "interpretation": "This explicit stock component g_l=0.02 is wrongly represented at root/main scope. Restore the distinct stock rather than treating the rate as a final-medium amount. Provider stock g_l is explicit; the listed 1000 ml stock water is a batch input, not independently measured final volume.", "sources": [{"locator": "extracted-text physical LF lines 65-65", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Folic acid                                 20.00   mg", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[3].recipe[1]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Folic acid\",\n                        \"compound_id\": 138,\n                        \"amount\": 20,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0453104,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q27", "subject": "Pyridoxine hydrochloride already nested", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "solutions[2].composition[2].concentration", "original": {"value": "0.1", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "solutions[2].composition[2].concentration", "original": {"value": "0.1", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "retained Wolin's vitamin solution (10x)", "interpretation": "The maintained owners already preserve this component at the correct stock scope and value g_l=0.1; credit that partial repair. It does not make the incomplete stock composition or receiving denominator complete. Provider stock g_l is explicit; the listed 1000 ml stock water is a batch input, not independently measured final volume.", "sources": [{"locator": "extracted-text physical LF lines 66-66", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Pyridoxine hydrochloride                  100.00   mg", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[3].recipe[2]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\": 519,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.486287,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q28", "subject": "Thiamine HCl", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[26].concentration", "original": {"value": "0.05", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "ingredients[24].concentration", "original": {"value": "0.05", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "ingredients[24].concentration", "original": {"value": "0.05", "unit": "G_PER_L"}}], "decision": "correct", "stage": "separate Wolin's vitamin solution (10x)", "interpretation": "This explicit stock component g_l=0.05 is wrongly represented at root/main scope. Restore the distinct stock rather than treating the rate as a final-medium amount. Provider stock g_l is explicit; the listed 1000 ml stock water is a batch input, not independently measured final volume.", "sources": [{"locator": "extracted-text physical LF lines 67-67", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Thiamine HCl                               50.00   mg", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[3].recipe[3]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Thiamine HCl\",\n                        \"compound_id\": 1207,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.148236,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q29", "subject": "Riboflavin", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[27].concentration", "original": {"value": "0.05", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "ingredients[25].concentration", "original": {"value": "0.05", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "ingredients[25].concentration", "original": {"value": "0.05", "unit": "G_PER_L"}}], "decision": "correct", "stage": "separate Wolin's vitamin solution (10x)", "interpretation": "This explicit stock component g_l=0.05 is wrongly represented at root/main scope. Restore the distinct stock rather than treating the rate as a final-medium amount. Provider stock g_l is explicit; the listed 1000 ml stock water is a batch input, not independently measured final volume.", "sources": [{"locator": "extracted-text physical LF lines 68-68", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Riboflavin                                 50.00   mg", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[3].recipe[4]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Riboflavin\",\n                        \"compound_id\": 136,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.132837,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q30", "subject": "Nicotinic acid already nested", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "solutions[2].composition[0].concentration", "original": {"value": "0.05", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "solutions[2].composition[0].concentration", "original": {"value": "0.05", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "retained Wolin's vitamin solution (10x)", "interpretation": "The maintained owners already preserve this component at the correct stock scope and value g_l=0.05; credit that partial repair. It does not make the incomplete stock composition or receiving denominator complete. Provider stock g_l is explicit; the listed 1000 ml stock water is a batch input, not independently measured final volume.", "sources": [{"locator": "extracted-text physical LF lines 69-69", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Nicotinic acid                             50.00   mg", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[3].recipe[5]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\": 139,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.406141,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q31", "subject": "Calcium D-(+)-pantothenate", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[29].concentration", "original": {"value": "0.05", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "ingredients[26].concentration", "original": {"value": "0.05", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "ingredients[26].concentration", "original": {"value": "0.05", "unit": "G_PER_L"}}], "decision": "correct", "stage": "separate Wolin's vitamin solution (10x)", "interpretation": "This explicit stock component g_l=0.05 is wrongly represented at root/main scope. Restore the distinct stock rather than treating the rate as a final-medium amount. Provider stock g_l is explicit; the listed 1000 ml stock water is a batch input, not independently measured final volume.", "sources": [{"locator": "extracted-text physical LF lines 70-70", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Calcium D-(+)-pantothenate                 50.00   mg", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[3].recipe[6]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Calcium D-(+)-pantothenate\",\n                        \"compound_id\": 1512,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.209846,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q32", "subject": "Vitamin B12 already nested", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "solutions[2].composition[3].concentration", "original": {"value": "0.001", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "solutions[2].composition[3].concentration", "original": {"value": "0.001", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "retained Wolin's vitamin solution (10x)", "interpretation": "The maintained owners already preserve this component at the correct stock scope and value g_l=0.001; credit that partial repair. It does not make the incomplete stock composition or receiving denominator complete. Provider stock g_l is explicit; the listed 1000 ml stock water is a batch input, not independently measured final volume.", "sources": [{"locator": "extracted-text physical LF lines 71-71", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Vitamin B12                                 1.00   mg", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[3].recipe[7]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\": 18,\n                        \"amount\": 1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\": 0.00073779,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q33", "subject": "p-Aminobenzoic acid already nested", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "solutions[2].composition[1].concentration", "original": {"value": "0.05", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "solutions[2].composition[1].concentration", "original": {"value": "0.05", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "retained Wolin's vitamin solution (10x)", "interpretation": "The maintained owners already preserve this component at the correct stock scope and value g_l=0.05; credit that partial repair. It does not make the incomplete stock composition or receiving denominator complete. Provider stock g_l is explicit; the listed 1000 ml stock water is a batch input, not independently measured final volume.", "sources": [{"locator": "extracted-text physical LF lines 72-72", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   p-Aminobenzoic acid                        50.00   mg", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[3].recipe[8]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\": 47,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.364591,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q34", "subject": "(DL)-alpha-Lipoic acid", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[32].concentration", "original": {"value": "0.05", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "ingredients[27].concentration", "original": {"value": "0.05", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "ingredients[27].concentration", "original": {"value": "0.05", "unit": "G_PER_L"}}], "decision": "correct", "stage": "separate Wolin's vitamin solution (10x)", "interpretation": "This explicit stock component g_l=0.05 is wrongly represented at root/main scope. Restore the distinct stock rather than treating the rate as a final-medium amount. Provider stock g_l is explicit; the listed 1000 ml stock water is a batch input, not independently measured final volume.", "sources": [{"locator": "extracted-text physical LF lines 73-73", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   (DL)-alpha-Lipoic acid                     50.00   mg", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[3].recipe[9]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"(DL)-alpha-Lipoic acid\",\n                        \"compound_id\": 252,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.24233,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q35", "subject": "Vitamin B12 already nested", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "solutions[1].composition[4].concentration", "original": {"value": "0.1", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "solutions[1].composition[4].concentration", "original": {"value": "0.1", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "retained Seven vitamins solution", "interpretation": "The maintained owners already preserve this component at the correct stock scope and value g_l=0.1; credit that partial repair. It does not make the incomplete stock composition or receiving denominator complete. Provider stock g_l is explicit; the listed 1000 ml stock water is a batch input, not independently measured final volume.", "sources": [{"locator": "extracted-text physical LF lines 79-79", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Vitamin B12                               100.00   mg", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[4].recipe[0]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\": 18,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.073779,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q36", "subject": "p-Aminobenzoic acid already nested", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "solutions[1].composition[2].concentration", "original": {"value": "0.08", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "solutions[1].composition[2].concentration", "original": {"value": "0.08", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "retained Seven vitamins solution", "interpretation": "The maintained owners already preserve this component at the correct stock scope and value g_l=0.08; credit that partial repair. It does not make the incomplete stock composition or receiving denominator complete. Provider stock g_l is explicit; the listed 1000 ml stock water is a batch input, not independently measured final volume.", "sources": [{"locator": "extracted-text physical LF lines 80-80", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   p-Aminobenzoic acid                        80.00   mg", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[4].recipe[1]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\": 47,\n                        \"amount\": 80,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.08,\n                        \"mmol_l\": 0.583345,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q37", "subject": "D-(+)-biotin", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[33].concentration", "original": {"value": "0.02", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "ingredients[28].concentration", "original": {"value": "0.02", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "ingredients[28].concentration", "original": {"value": "0.02", "unit": "G_PER_L"}}], "decision": "correct", "stage": "separate Seven vitamins solution", "interpretation": "This explicit stock component g_l=0.02 is wrongly represented at root/main scope. Restore the distinct stock rather than treating the rate as a final-medium amount. Provider stock g_l is explicit; the listed 1000 ml stock water is a batch input, not independently measured final volume.", "sources": [{"locator": "extracted-text physical LF lines 81-81", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   D-(+)-biotin                               20.00   mg", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[4].recipe[2]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"D-(+)-biotin\",\n                        \"compound_id\": 1359,\n                        \"amount\": 20,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0818632,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q38", "subject": "Nicotinic acid already nested", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "solutions[1].composition[1].concentration", "original": {"value": "0.2", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "solutions[1].composition[1].concentration", "original": {"value": "0.2", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "retained Seven vitamins solution", "interpretation": "The maintained owners already preserve this component at the correct stock scope and value g_l=0.2; credit that partial repair. It does not make the incomplete stock composition or receiving denominator complete. Provider stock g_l is explicit; the listed 1000 ml stock water is a batch input, not independently measured final volume.", "sources": [{"locator": "extracted-text physical LF lines 82-82", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Nicotinic acid                            200.00   mg", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[4].recipe[3]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\": 139,\n                        \"amount\": 200,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 1.62456,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q39", "subject": "Calcium pantothenate", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[34].concentration", "original": {"value": "0.1", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "ingredients[29].concentration", "original": {"value": "0.1", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "ingredients[29].concentration", "original": {"value": "0.1", "unit": "G_PER_L"}}], "decision": "correct", "stage": "separate Seven vitamins solution", "interpretation": "This explicit stock component g_l=0.1 is wrongly represented at root/main scope. Restore the distinct stock rather than treating the rate as a final-medium amount. Provider stock g_l is explicit; the listed 1000 ml stock water is a batch input, not independently measured final volume.", "sources": [{"locator": "extracted-text physical LF lines 83-83", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Calcium pantothenate                      100.00   mg", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[4].recipe[4]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Calcium pantothenate\",\n                        \"compound_id\": 518,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.209849,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q40", "subject": "Pyridoxine hydrochloride already nested", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "solutions[1].composition[3].concentration", "original": {"value": "0.3", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "solutions[1].composition[3].concentration", "original": {"value": "0.3", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "retained Seven vitamins solution", "interpretation": "The maintained owners already preserve this component at the correct stock scope and value g_l=0.3; credit that partial repair. It does not make the incomplete stock composition or receiving denominator complete. Provider stock g_l is explicit; the listed 1000 ml stock water is a batch input, not independently measured final volume.", "sources": [{"locator": "extracted-text physical LF lines 84-84", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Pyridoxine hydrochloride                  300.00   mg", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[4].recipe[5]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\": 519,\n                        \"amount\": 300,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.3,\n                        \"mmol_l\": 1.45886,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q41", "subject": "Thiamine-HCl x 2 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[35].concentration", "original": {"value": "0.2", "unit": "G_PER_L"}}], "decision": "correct", "stage": "separate Seven vitamins solution", "interpretation": "This explicit stock component g_l=0.2 is wrongly represented at root/main scope. Restore the distinct stock rather than treating the rate as a final-medium amount. Provider stock g_l is explicit; the listed 1000 ml stock water is a batch input, not independently measured final volume.", "sources": [{"locator": "extracted-text physical LF lines 85-85", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Thiamine-HCl x 2 H2O                      200.00   mg", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[4].recipe[6]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Thiamine-HCl x 2 H2O\",\n                        \"compound_id\": 77,\n                        \"amount\": 200,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 0.535761,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q42", "subject": "Thiamine-HCl x 2 H2O already nested", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "solutions[1].composition[0].concentration", "original": {"value": "0.2", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "solutions[1].composition[0].concentration", "original": {"value": "0.2", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "retained Seven vitamins solution", "interpretation": "The maintained owners already preserve this component at the correct stock scope and value g_l=0.2; credit that partial repair. It does not make the incomplete stock composition or receiving denominator complete. Provider stock g_l is explicit; the listed 1000 ml stock water is a batch input, not independently measured final volume.", "sources": [{"locator": "extracted-text physical LF lines 85-85", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Thiamine-HCl x 2 H2O                      200.00   mg", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[4].recipe[6]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Thiamine-HCl x 2 H2O\",\n                        \"compound_id\": 77,\n                        \"amount\": 200,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 0.535761,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q43", "subject": "Pyridoxine hydrochloride summed target value", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[25].concentration", "original": {"value": "0.4", "unit": "G_PER_L"}}], "decision": "correct", "stage": "two independent vitamin stocks", "interpretation": "Target 0.4 g/L is the sum of Wolin 0.1 and seven-vitamin 0.3 stock rates. Adding stock concentrations is not a receiving-medium calculation. Both maintained owners already separate these two exact components, and that repair is credited; regenerate only after completing the remaining source reconstruction.", "sources": [{"locator": "extracted-text physical LF lines 66-66", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Pyridoxine hydrochloride                  100.00   mg", "quote_representation": "captured extracted text"}, {"locator": "extracted-text physical LF lines 84-84", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Pyridoxine hydrochloride                  300.00   mg", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[3].recipe[2]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\": 519,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.486287,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[4].recipe[5]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\": 519,\n                        \"amount\": 300,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.3,\n                        \"mmol_l\": 1.45886,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q44", "subject": "Nicotinic acid summed target value", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[28].concentration", "original": {"value": "0.25", "unit": "G_PER_L"}}], "decision": "correct", "stage": "two independent vitamin stocks", "interpretation": "Target 0.25 g/L is the sum of Wolin 0.05 and seven-vitamin 0.2 stock rates. Adding stock concentrations is not a receiving-medium calculation. Both maintained owners already separate these two exact components, and that repair is credited; regenerate only after completing the remaining source reconstruction.", "sources": [{"locator": "extracted-text physical LF lines 69-69", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Nicotinic acid                             50.00   mg", "quote_representation": "captured extracted text"}, {"locator": "extracted-text physical LF lines 82-82", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Nicotinic acid                            200.00   mg", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[3].recipe[5]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\": 139,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.406141,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[4].recipe[3]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\": 139,\n                        \"amount\": 200,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 1.62456,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q45", "subject": "Vitamin B12 summed target value", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[30].concentration", "original": {"value": "0.101", "unit": "G_PER_L"}}], "decision": "correct", "stage": "two independent vitamin stocks", "interpretation": "Target 0.101 g/L is the sum of Wolin 0.001 and seven-vitamin 0.1 stock rates. Adding stock concentrations is not a receiving-medium calculation. Both maintained owners already separate these two exact components, and that repair is credited; regenerate only after completing the remaining source reconstruction.", "sources": [{"locator": "extracted-text physical LF lines 71-71", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Vitamin B12                                 1.00   mg", "quote_representation": "captured extracted text"}, {"locator": "extracted-text physical LF lines 79-79", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Vitamin B12                               100.00   mg", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[3].recipe[7]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\": 18,\n                        \"amount\": 1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\": 0.00073779,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[4].recipe[0]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\": 18,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.073779,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q46", "subject": "p-Aminobenzoic acid summed target value", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ingredients[31].concentration", "original": {"value": "0.13", "unit": "G_PER_L"}}], "decision": "correct", "stage": "two independent vitamin stocks", "interpretation": "Target 0.13 g/L is the sum of Wolin 0.05 and seven-vitamin 0.08 stock rates. Adding stock concentrations is not a receiving-medium calculation. Both maintained owners already separate these two exact components, and that repair is credited; regenerate only after completing the remaining source reconstruction.", "sources": [{"locator": "extracted-text physical LF lines 72-72", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   p-Aminobenzoic acid                        50.00   mg", "quote_representation": "captured extracted text"}, {"locator": "extracted-text physical LF lines 80-80", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   p-Aminobenzoic acid                        80.00   mg", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[3].recipe[8]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\": 47,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.364591,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[4].recipe[1]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\": 47,\n                        \"amount\": 80,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.08,\n                        \"mmol_l\": 0.583345,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q47", "subject": "DSM maintained Trace element solution SL-10 dose", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "solutions[0].concentration", "original": {"value": "1", "unit": "ML_PER_L"}}], "decision": "unsupported", "stage": "receiving addition denominator", "interpretation": "The primary supports 1 ml in the named batch, while the maintained DSM owner asserts 1 ML_PER_L. API main volume is nominal 1004 ml; neither source independently supports exactly one final litre. Preserve the source 1 ml batch amount, resolve the denominator explicitly and do not silently accept or replace it with a calculated final dose.", "sources": [{"locator": "extracted-text physical LF lines 10-10", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Trace element solution SL-10                               1.00        ml", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\": 595,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q48", "subject": "KOMODO unasserted Trace element solution SL-10 dose candidate", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "solutions[0].concentration_candidates[0]", "original": {"value": "1", "unit": "ML_PER_L", "basis": "CROSS_MEDIUM_INFERENCE", "support": "KOMODO 708 resolves to DSMZ/MediaDive medium 708 both structurally and via the KOMODO-&gt;DSMZ export; volume read from that medium's recipe.", "counterevidence": "Not confirmed as medium 708: 89% of the 36 shared compounds carry the same value (11 shared with that medium's main solution). A record that IS the medium scores 100%, with at least 5 main-solution compounds. A stock's addition volume varies by citing medium: MediaDive medium 142 adds 'Trace element solution (Vishniac &amp; Santer)' at 0.2 ml and medium 69 adds the same stock at 5 ml.", "proposed_by": "apply_cocktail_nesting.py"}}], "decision": "unsupported", "stage": "unasserted cross-medium candidate", "interpretation": "This remains CROSS_MEDIUM_INFERENCE with explicit 89% composition counterevidence, not an asserted concentration. Exact KOMODO access is 403. Current DSM batch support does not automatically promote the candidate or authenticate a per-litre denominator.", "sources": [{"locator": "extracted-text physical LF lines 10-10", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Trace element solution SL-10                               1.00        ml", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\": 595,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q49", "subject": "Trace element solution SL-10 retained numeric note", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "solutions[0].preparation_notes", "original": "Stock prepared in 1000 ml; added at 1 ml per litre of medium. Composition and volume from MediaDive (#150)."}], "decision": "unsupported", "stage": "stock volume and receiving-dose note", "interpretation": "The retained 1000 ml stock note has source context: SL-10 has explicit make-up; the vitamin stocks list 1000 ml water/provider volume. The separate 1 ml/l statement or proposal lacks an independently verified final-litre basis. KOMODO wording that composition is not asserted does not cancel its actual nested concentration fields. Retain supported stock context, qualify or correct the dose wording, and preserve its historical inference provenance.", "sources": [{"locator": "extracted-text physical LF lines 10-10", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Trace element solution SL-10                               1.00        ml", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\": 595,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 43-44", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q50", "subject": "Trace element solution SL-10 retained numeric note", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "solutions[0].preparation_notes", "original": "Stock prepared in 1000 ml. Composition and addition volume NOT asserted: proposed as 1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates (#150)."}], "decision": "unsupported", "stage": "stock volume and receiving-dose note", "interpretation": "The retained 1000 ml stock note has source context: SL-10 has explicit make-up; the vitamin stocks list 1000 ml water/provider volume. The separate 1 ml/l statement or proposal lacks an independently verified final-litre basis. KOMODO wording that composition is not asserted does not cancel its actual nested concentration fields. Retain supported stock context, qualify or correct the dose wording, and preserve its historical inference provenance.", "sources": [{"locator": "extracted-text physical LF lines 10-10", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Trace element solution SL-10                               1.00        ml", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\": 595,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 43-44", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q51", "subject": "Target missing Trace element solution SL-10 batch addition", "local_fields": [], "decision": "add", "stage": "target receiving stage", "interpretation": "Target has no structured stock dose; restore the exact 1 ml batch addition independently from constituent stock rates, with its denominator qualification.", "sources": [{"locator": "extracted-text physical LF lines 10-10", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Trace element solution SL-10                               1.00        ml", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\": 595,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q52", "subject": "DSM maintained Seven vitamins solution dose", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "solutions[1].concentration", "original": {"value": "1", "unit": "ML_PER_L"}}], "decision": "unsupported", "stage": "receiving addition denominator", "interpretation": "The primary supports 1 ml in the named batch, while the maintained DSM owner asserts 1 ML_PER_L. API main volume is nominal 1004 ml; neither source independently supports exactly one final litre. Preserve the source 1 ml batch amount, resolve the denominator explicitly and do not silently accept or replace it with a calculated final dose.", "sources": [{"locator": "extracted-text physical LF lines 15-15", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Seven vitamins solution                                    1.00        ml", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[12]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 13,\n                        \"solution\": \"Seven vitamins solution\",\n                        \"solution_id\": 1038,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q53", "subject": "KOMODO unasserted Seven vitamins solution dose candidate", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "solutions[1].concentration_candidates[0]", "original": {"value": "1", "unit": "ML_PER_L", "basis": "CROSS_MEDIUM_INFERENCE", "support": "KOMODO 708 resolves to DSMZ/MediaDive medium 708 both structurally and via the KOMODO-&gt;DSMZ export; volume read from that medium's recipe.", "counterevidence": "Not confirmed as medium 708: 89% of the 36 shared compounds carry the same value (11 shared with that medium's main solution). A record that IS the medium scores 100%, with at least 5 main-solution compounds. A stock's addition volume varies by citing medium: MediaDive medium 142 adds 'Trace element solution (Vishniac &amp; Santer)' at 0.2 ml and medium 69 adds the same stock at 5 ml.", "proposed_by": "apply_cocktail_nesting.py"}}], "decision": "unsupported", "stage": "unasserted cross-medium candidate", "interpretation": "This remains CROSS_MEDIUM_INFERENCE with explicit 89% composition counterevidence, not an asserted concentration. Exact KOMODO access is 403. Current DSM batch support does not automatically promote the candidate or authenticate a per-litre denominator.", "sources": [{"locator": "extracted-text physical LF lines 15-15", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Seven vitamins solution                                    1.00        ml", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[12]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 13,\n                        \"solution\": \"Seven vitamins solution\",\n                        \"solution_id\": 1038,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q54", "subject": "Seven vitamins solution retained numeric note", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "solutions[1].preparation_notes", "original": "Stock prepared in 1000 ml; added at 1 ml per litre of medium. Composition and volume from MediaDive (#150)."}], "decision": "unsupported", "stage": "stock volume and receiving-dose note", "interpretation": "The retained 1000 ml stock note has source context: SL-10 has explicit make-up; the vitamin stocks list 1000 ml water/provider volume. The separate 1 ml/l statement or proposal lacks an independently verified final-litre basis. KOMODO wording that composition is not asserted does not cancel its actual nested concentration fields. Retain supported stock context, qualify or correct the dose wording, and preserve its historical inference provenance.", "sources": [{"locator": "extracted-text physical LF lines 15-15", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Seven vitamins solution                                    1.00        ml", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[12]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 13,\n                        \"solution\": \"Seven vitamins solution\",\n                        \"solution_id\": 1038,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 86-86", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Distilled water                          1000.00   ml", "quote_representation": "captured extracted text"}]}, {"decision_id": "q55", "subject": "Seven vitamins solution retained numeric note", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "solutions[1].preparation_notes", "original": "Stock prepared in 1000 ml. Composition and addition volume NOT asserted: proposed as 1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates (#150)."}], "decision": "unsupported", "stage": "stock volume and receiving-dose note", "interpretation": "The retained 1000 ml stock note has source context: SL-10 has explicit make-up; the vitamin stocks list 1000 ml water/provider volume. The separate 1 ml/l statement or proposal lacks an independently verified final-litre basis. KOMODO wording that composition is not asserted does not cancel its actual nested concentration fields. Retain supported stock context, qualify or correct the dose wording, and preserve its historical inference provenance.", "sources": [{"locator": "extracted-text physical LF lines 15-15", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Seven vitamins solution                                    1.00        ml", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[12]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 13,\n                        \"solution\": \"Seven vitamins solution\",\n                        \"solution_id\": 1038,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 86-86", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Distilled water                          1000.00   ml", "quote_representation": "captured extracted text"}]}, {"decision_id": "q56", "subject": "Target missing Seven vitamins solution batch addition", "local_fields": [], "decision": "add", "stage": "target receiving stage", "interpretation": "Target has no structured stock dose; restore the exact 1 ml batch addition independently from constituent stock rates, with its denominator qualification.", "sources": [{"locator": "extracted-text physical LF lines 15-15", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Seven vitamins solution                                    1.00        ml", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[12]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 13,\n                        \"solution\": \"Seven vitamins solution\",\n                        \"solution_id\": 1038,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q57", "subject": "DSM maintained Wolin's vitamin solution (10x) dose", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "solutions[2].concentration", "original": {"value": "1", "unit": "ML_PER_L"}}], "decision": "unsupported", "stage": "receiving addition denominator", "interpretation": "The primary supports 1 ml in the named batch, while the maintained DSM owner asserts 1 ML_PER_L. API main volume is nominal 1004 ml; neither source independently supports exactly one final litre. Preserve the source 1 ml batch amount, resolve the denominator explicitly and do not silently accept or replace it with a calculated final dose.", "sources": [{"locator": "extracted-text physical LF lines 14-14", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Wolin's vitamin solution (10x)                             1.00        ml", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[11]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 12,\n                        \"solution\": \"Wolin's vitamin solution (10x)\",\n                        \"solution_id\": 5980,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q58", "subject": "KOMODO unasserted Wolin's vitamin solution (10x) dose candidate", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "solutions[2].concentration_candidates[0]", "original": {"value": "1", "unit": "ML_PER_L", "basis": "CROSS_MEDIUM_INFERENCE", "support": "KOMODO 708 resolves to DSMZ/MediaDive medium 708 both structurally and via the KOMODO-&gt;DSMZ export; volume read from that medium's recipe.", "counterevidence": "Not confirmed as medium 708: 89% of the 36 shared compounds carry the same value (11 shared with that medium's main solution). A record that IS the medium scores 100%, with at least 5 main-solution compounds. A stock's addition volume varies by citing medium: MediaDive medium 142 adds 'Trace element solution (Vishniac &amp; Santer)' at 0.2 ml and medium 69 adds the same stock at 5 ml.", "proposed_by": "apply_cocktail_nesting.py"}}], "decision": "unsupported", "stage": "unasserted cross-medium candidate", "interpretation": "This remains CROSS_MEDIUM_INFERENCE with explicit 89% composition counterevidence, not an asserted concentration. Exact KOMODO access is 403. Current DSM batch support does not automatically promote the candidate or authenticate a per-litre denominator.", "sources": [{"locator": "extracted-text physical LF lines 14-14", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Wolin's vitamin solution (10x)                             1.00        ml", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[11]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 12,\n                        \"solution\": \"Wolin's vitamin solution (10x)\",\n                        \"solution_id\": 5980,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q59", "subject": "Wolin's vitamin solution (10x) retained numeric note", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "solutions[2].preparation_notes", "original": "Stock prepared in 1000 ml; added at 1 ml per litre of medium. Composition and volume from MediaDive (#150)."}], "decision": "unsupported", "stage": "stock volume and receiving-dose note", "interpretation": "The retained 1000 ml stock note has source context: SL-10 has explicit make-up; the vitamin stocks list 1000 ml water/provider volume. The separate 1 ml/l statement or proposal lacks an independently verified final-litre basis. KOMODO wording that composition is not asserted does not cancel its actual nested concentration fields. Retain supported stock context, qualify or correct the dose wording, and preserve its historical inference provenance.", "sources": [{"locator": "extracted-text physical LF lines 14-14", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Wolin's vitamin solution (10x)                             1.00        ml", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[11]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 12,\n                        \"solution\": \"Wolin's vitamin solution (10x)\",\n                        \"solution_id\": 5980,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 74-74", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Distilled water                          1000.00   ml", "quote_representation": "captured extracted text"}]}, {"decision_id": "q60", "subject": "Wolin's vitamin solution (10x) retained numeric note", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "solutions[2].preparation_notes", "original": "Stock prepared in 1000 ml. Composition and addition volume NOT asserted: proposed as 1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates (#150)."}], "decision": "unsupported", "stage": "stock volume and receiving-dose note", "interpretation": "The retained 1000 ml stock note has source context: SL-10 has explicit make-up; the vitamin stocks list 1000 ml water/provider volume. The separate 1 ml/l statement or proposal lacks an independently verified final-litre basis. KOMODO wording that composition is not asserted does not cancel its actual nested concentration fields. Retain supported stock context, qualify or correct the dose wording, and preserve its historical inference provenance.", "sources": [{"locator": "extracted-text physical LF lines 14-14", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Wolin's vitamin solution (10x)                             1.00        ml", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[11]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 12,\n                        \"solution\": \"Wolin's vitamin solution (10x)\",\n                        \"solution_id\": 5980,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 74-74", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Distilled water                          1000.00   ml", "quote_representation": "captured extracted text"}]}, {"decision_id": "q61", "subject": "Target missing Wolin's vitamin solution (10x) batch addition", "local_fields": [], "decision": "add", "stage": "target receiving stage", "interpretation": "Target has no structured stock dose; restore the exact 1 ml batch addition independently from constituent stock rates, with its denominator qualification.", "sources": [{"locator": "extracted-text physical LF lines 14-14", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Wolin's vitamin solution (10x)                             1.00        ml", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[11]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 12,\n                        \"solution\": \"Wolin's vitamin solution (10x)\",\n                        \"solution_id\": 5980,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q62", "subject": "Missing selenite-tungstate addition", "local_fields": [], "decision": "add", "stage": "all layers receiving stage", "interpretation": "All layers lack the distinct 1 ml selenium-tungstate stock addition. Restore it as the source batch amount, not an unsupported final-litre concentration.", "sources": [{"locator": "extracted-text physical LF lines 11-11", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Selenite-tungstate solution                                1.00        ml", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[8]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"solution\": \"Selenite-tungstate solution\",\n                        \"solution_id\": 777,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q63", "subject": "Water for Main sol. 708", "local_fields": [], "decision": "add", "stage": "distinct batch water", "interpretation": "The exact water input belongs to this main batch or stock. Stock preparation water is not an extra receiving input; only SL-10 separately has explicit make-up to 1000 ml. Main 1004 ml and other stock volumes are provider normalization.", "sources": [{"locator": "extracted-text physical LF lines 18-18", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Distilled water                                         1000.00        ml", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[15]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 16,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q64", "subject": "Water for Trace element solution SL-10", "local_fields": [], "decision": "add", "stage": "distinct batch water", "interpretation": "The exact water input belongs to this main batch or stock. Stock preparation water is not an extra receiving input; only SL-10 separately has explicit make-up to 1000 ml. Main 1004 ml and other stock volumes are provider normalization.", "sources": [{"locator": "extracted-text physical LF lines 41-41", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Distilled water                                           990.00      ml", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[1].recipe[9]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 990,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q65", "subject": "Water for Selenite-tungstate solution", "local_fields": [], "decision": "add", "stage": "distinct batch water", "interpretation": "The exact water input belongs to this main batch or stock. Stock preparation water is not an extra receiving input; only SL-10 separately has explicit make-up to 1000 ml. Main 1004 ml and other stock volumes are provider normalization.", "sources": [{"locator": "extracted-text physical LF lines 59-59", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Distilled water                          1000.00   ml", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[2].recipe[3]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q66", "subject": "Water for Wolin's vitamin solution (10x)", "local_fields": [], "decision": "add", "stage": "distinct batch water", "interpretation": "The exact water input belongs to this main batch or stock. Stock preparation water is not an extra receiving input; only SL-10 separately has explicit make-up to 1000 ml. Main 1004 ml and other stock volumes are provider normalization.", "sources": [{"locator": "extracted-text physical LF lines 74-74", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Distilled water                          1000.00   ml", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[3].recipe[10]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q67", "subject": "Water for Seven vitamins solution", "local_fields": [], "decision": "add", "stage": "distinct batch water", "interpretation": "The exact water input belongs to this main batch or stock. Stock preparation water is not an extra receiving input; only SL-10 separately has explicit make-up to 1000 ml. Main 1004 ml and other stock volumes are provider normalization.", "sources": [{"locator": "extracted-text physical LF lines 86-86", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Distilled water                          1000.00   ml", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[4].recipe[7]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q68", "subject": "Main complete denominator", "local_fields": [], "decision": "unsupported", "stage": "main-volume claim", "interpretation": "Primary lists 1000 ml water and four 1 ml stocks. Provider declares 1004 ml and explicit main g_l; those values are credited with provider attribution, not as independently measured final volume.", "sources": [{"locator": "extracted-text physical LF lines 10-18", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Trace element solution SL-10                               1.00        ml\n   Selenite-tungstate solution                                1.00        ml\n   Sodium resazurin (0.1% w/v)                                0.50        ml\n   Na2CO3                                                     1.50         g\n   Wolin's vitamin solution (10x)                             1.00        ml\n   Seven vitamins solution                                    1.00        ml\n   Na-propionate                                              2.00         g\n   Na2S x 9 H2O                                               0.50         g\n   Distilled water                                         1000.00        ml", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                \"id\": 1458,\n                \"name\": \"Main sol. 708\",\n                \"volume\": 1004,\n                \"recipe\": [\n                    {\n                        \"recipe_order\": 1,\n                        \"compound\": \"Na2HPO4 x 2 H2O\",\n                        \"compound_id\": 181,\n                        \"amount\": 0.53,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.527888,\n                        \"mmol_l\": 3.7186,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 2,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.41,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.408367,\n                        \"mmol_l\": 3.00082,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 3,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\": 0.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.298805,\n                        \"mmol_l\": 5.58618,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 4,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.11,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.109562,\n                        \"mmol_l\": 0.745242,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 5,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.0996016,\n                        \"mmol_l\": 0.489917,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 6,\n                        \"compound\": \"Na2SO4\",\n                        \"compound_id\": 110,\n                        \"amount\": 2.8,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.78884,\n                        \"mmol_l\": 19.6342,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 7,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 0.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.298805,\n                        \"mmol_l\": 5.11302,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 8,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\": 595,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 9,\n                        \"solution\": \"Selenite-tungstate solution\",\n                        \"solution_id\": 777,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 10,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.000498008,\n                        \"mmol_l\": 0.00198275,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 11,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.49402,\n                        \"mmol_l\": 14.0962,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 12,\n                        \"solution\": \"Wolin's vitamin solution (10x)\",\n                        \"solution_id\": 5980,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 13,\n                        \"solution\": \"Seven vitamins solution\",\n                        \"solution_id\": 1038,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 14,\n                        \"compound\": \"Na-propionate\",\n                        \"compound_id\": 301,\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.99203,\n                        \"mmol_l\": 20.7374,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 15,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.498008,\n                        \"mmol_l\": 2.07346,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 16,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }\n                ],\n                \"steps\": [\n                    {\n                        \"step\": \"Dissolve ingredients except carbonate, vitamins, propionate and sulfide. Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add vitamins, propionate and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Vitamins should be sterilized by filtration. The pH of the complete medium should be 7.2 - 7.6.\"\n                    }\n                ],\n                \"equipment\": {\n                    \"1144\": \"Hungate tubes\",\n                    \"2194\": \"Filter\",\n                    \"2928\": \"Autoclave\",\n                    \"4383\": \"Gassing station\"\n                }\n            }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q69", "subject": "Retained main pH and DSM procedure", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "ph_range", "original": {"min": 7.2, "max": 7.6}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "ph_range", "original": {"min": 7.2, "max": 7.6}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml", "field_path": "ph_range", "original": {"min": 7.2, "max": 7.6}}, {"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "preparation_steps[0].description", "original": "Dissolve ingredients except carbonate, vitamins, propionate and sulfide. Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add vitamins, propionate and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Vitamins should be sterilized by filtration. The pH of the complete medium should be 7.2 - 7.6."}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "preparation_steps[0].description", "original": "Dissolve ingredients except carbonate, vitamins, propionate and sulfide. Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add vitamins, propionate and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Vitamins should be sterilized by filtration. The pH of the complete medium should be 7.2 - 7.6."}], "decision": "evidence_only", "stage": "main staged preparation", "interpretation": "Keep pH 7.2–7.6 in every layer and the correct DSM/target main sequence: 80% N2/20% CO2 for 30–45 min, separately prepared additions, 100% N2 for the specified stocks, and vitamin filtration. The broad AUTOCLAVE action does not replace those separate stages.", "sources": [{"locator": "extracted-text physical LF lines 20-26", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "Dissolve ingredients except carbonate, vitamins, propionate and sulfide. Sparge medium\nwith 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense\nunder same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.\nAdd vitamins, propionate and sulfide from sterile anoxic stock solutions prepared under\n100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2\nand 20% CO2 gas mixture. Vitamins should be sterilized by filtration. The pH of the\ncomplete medium should be 7.2 - 7.6.", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].steps[0]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"step\": \"Dissolve ingredients except carbonate, vitamins, propionate and sulfide. Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add vitamins, propionate and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Vitamins should be sterilized by filtration. The pH of the complete medium should be 7.2 - 7.6.\"\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q70", "subject": "KOMODO missing main procedure", "local_fields": [], "decision": "add", "stage": "KOMODO maintained branch", "interpretation": "The maintained KOMODO owner lacks preparation and retains Aerobic: Yes in notes, conflicting with current exact DSM anoxic handling. Reconcile source identity and attach evidence without representing the failed endpoint as a newly read KOMODO recipe.", "sources": [{"locator": "extracted-text physical LF lines 20-26", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "Dissolve ingredients except carbonate, vitamins, propionate and sulfide. Sparge medium\nwith 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense\nunder same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.\nAdd vitamins, propionate and sulfide from sterile anoxic stock solutions prepared under\n100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2\nand 20% CO2 gas mixture. Vitamins should be sterilized by filtration. The pH of the\ncomplete medium should be 7.2 - 7.6.", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].steps[0]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"step\": \"Dissolve ingredients except carbonate, vitamins, propionate and sulfide. Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add vitamins, propionate and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Vitamins should be sterilized by filtration. The pH of the complete medium should be 7.2 - 7.6.\"\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q71", "subject": "SL-10 preparation wrongly at main scope", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "preparation_steps[1].description", "original": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml."}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path": "preparation_steps[1].description", "original": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml."}], "decision": "correct", "stage": "stock only", "interpretation": "The instruction to dissolve FeCl2 in HCl and make up to 1000 ml is correct for SL-10. Move this retained numeric instruction from main preparation_steps[1] into that stock, preserving main pH and separate stages.", "sources": [{"locator": "extracted-text physical LF lines 43-44", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[1].steps[0]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"step\": \"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml.\"\n                    }", "quote_representation": "raw JSON object"}]}], "local_field_census_reference": "REVIEW_WORK/batch078/record05/grounding-inventory.json", "source_only_gaps_are_explicit": true, "note": "Batch amounts, provider normalization, stock composition, working dose and preparation controls are separate. No source edits or automatic curation performed."}
+
+### Primary, secondary and legacy linkage census
+
+grounding: concern. Targets: CultureMech:001845.
+
+data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml: primary 36/36, secondary 34/36; data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml: primary 30/30, secondary 28/30; data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml: primary 30/30, secondary 28/30. These are ingredient-instance linkage fractions, not accuracy scores. Solution terms are audited separately. Every actually asserted CHEBI term is joined to its exact current OLS object and packaged MIM CSV rows. 0 numeric legacy MediaIngredientMech mentions occur across the complete selected documents, with exact locators in the inventory; NNNNNN is a historical placeholder, not an ID. Complex commercial/product components are not forced to pure-compound IDs.
+
+### Scope and source limits
+
+scope: supported. Targets: CultureMech:001845.
+
+Complete selected target and every exact maintained contributor reviewed. All stocks assessed here are embedded in the exact named DSM source. No external dependency or unrelated medium formulation transfers. Collection identity pages establish association only.
+
+### Native structural checks
+
+schema: supported. Targets: CultureMech:001845.
+
+All four canonical commands passed once; strict schema TSV contains only its header and reference validation checked zero references on the generated target. This does not certify quantities or chemical forms.
+
+## Findings
+
+### f1: Four stocks remain incomplete and the target still sums independent vitamin rates
+
+major / open / confirmed; issue key: culturemech-001845-stock-topology-and-stale-target.
+
+The generated target flattens all stocks and sums four separate vitamin pairs. Maintained owners repair ten components but leave nineteen stock rates at root, omit the selenium-tungstate stock and water, and retain incomplete other stocks. Three DSM doses assert a per-litre basis not independently established; KOMODO equivalents remain explicitly unasserted candidates.
+
+### f2: Trace-stock makeup and KOMODO atmosphere need distinct scopes
+
+major / open / confirmed; issue key: culturemech-001845-preparation-stage.
+
+The correct SL-10 make-up instruction sits at main preparation_steps[1] in the target and DSM owner. The KOMODO contributor lacks main preparation and retains Aerobic: Yes in notes, unlike current DSM anoxic preparation.
+
+### f3: Nickel hydrate and sodium resazurin carry different-form identifiers
+
+major / open / confirmed; issue key: culturemech-001845-supplied-forms.
+
+The selected target nickel index18 and both owner nickel index17 assert CHEBI:34887 in primary and secondary slots, despite source hexahydrate. Sodium resazurin index7 has neutral CHEBI:8806 in the primary slot only. Canonical labels and passing term validation do not establish supplied-form equivalence.
+
+### f4: Current claims lack attached evidence and provenance contains malformed or offset-less times
+
+minor / open / confirmed; issue key: culturemech-001845-claim-provenance.
+
+Source pointers, old reports and current raw matches do not attach claim-level evidence. KOMODO history stores 2026-01-27T01:15:03.fZ; present importer uses unsupported %f, while the resolver emits naive time. Neither current behavior authenticates old execution.
+
+## Recommended Actions And Acceptance Checks
+
+### action1
+
+Complete all four exact embedded stocks and separate their source 1 ml batch additions. Preserve ten supported nested owner components, all eleven main provider rates and the unasserted status/counterevidence of KOMODO candidates. Regenerate the target only after source and denominator reconciliation.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+### action2
+
+Move the SL-10 instruction into its stock. Preserve pH and the correct DSM main procedure, and resolve the KOMODO atmosphere/procedure with explicit source limits.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+### action3
+
+Use verified source-specific hydrate and sodium-salt mappings or keep precise source names with unresolved mapping; preserve amounts and do not infer molar equivalence from the wrong forms.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+### action4
+
+Attach exact evidence at valid scopes while preserving current repairs and original history. Correct future timestamp writers with actual UTC time and append verified context instead of rewriting past execution.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+- Importer/resolver future timestamps must be timezone-aware UTC with no literal formatting tokens; original history and unasserted candidate provenance remain preserved.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| local0 | data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml; entire YAML | supports | Entire current selected document, including all ingredients, source notes, history, relationships and preparation. No record edits. |
+| local1 | data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml; entire YAML | supports | Entire current selected document, including all ingredients, source notes, history, relationships and preparation. No record edits. |
+| local2 | data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml; entire YAML | supports | Entire current selected document, including all ingredients, source notes, history, relationships and preparation. No record edits. |
+| validate-schema | REVIEW_WORK/batch078/record05/validate-schema-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Native bound-slot validation does not authenticate ingredient amounts or all chemical forms. |
+| validate-strict | REVIEW_WORK/batch078/record05/validate-strict-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Strict TSV is header-only. |
+| validate-terms | REVIEW_WORK/batch078/record05/validate-terms-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Native bound-slot validation does not authenticate ingredient amounts or all chemical forms. |
+| validate-references | REVIEW_WORK/batch078/record05/validate-references-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Zero references checked, not scientific source verification. |
+| dsm708 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Complete exact DSM primary PDF text and all rendered pages read, including the main recipe, embedded stock tables and staged procedures. Physical LF locators refer to preserved pdftototext output; no page-wide or stock instruction is transferred to another stage. |
+| api708 | https://mediadive.dsmz.de/rest/medium/708; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Complete current provider identity, solution tables and preparation read. Explicit g_l and declared volumes are credited only on their named provider stock or recipe basis; they are not independent measured final volumes. Provider mmol_l values are not adopted as chemical-form authority. |
+| komodo708 | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=708; raw source; exact captured text/DOM/JSON locators in quantity inventory | unknown | Actual HTTP 403 response, not formulation evidence. |
+| dsm10338Identity | https://www.dsmz.de/collection/catalogue/details/culture/DSM-10338; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Current official collection identity, strain synonyms, environmental isolation and exact medium association only. The page is not a recipe or a new experimental growth assertion. |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:8806; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:8806 = Resazurin; definition []; formula ['C12H7NO4']; mass ['229.191']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi15940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15940; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:15940 = nicotinic acid; definition ['A pyridinemonocarboxylic acid that is pyridine in which the hydrogen at position 3 is replaced by a carboxy group.']; formula ['C6H5NO2']; mass ['123.111']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15956; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:15956 = biotin; definition ['An organic heterobicyclic compound that consists of 2-oxohexahydro-1&lt;em&gt;H&lt;/em&gt;-thieno[3,4-&lt;em&gt;d&lt;/em&gt;]imidazole having a valeric acid substituent attached to the tetrahydrothiophene ring. The parent of the class of biotins.']; formula ['C10H16N2O3S']; mass ['244.316']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi16494 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:16494; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:16494 = lipoic acid; definition ['A heterocyclic thia fatty acid comprising pentanoic acid with a 1,2-dithiolan-3-yl group at the 5-position.']; formula ['C8H14O2S2']; mass ['206.332']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi17015 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17015; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:17015 = riboflavin; definition ['&lt;small&gt;D&lt;/small&gt;-Ribitol in which the hydroxy group at position 5 is substituted by a 7,8-dimethyl-2,4-dioxo-3,4-dihydrobenzo[&lt;em&gt;g&lt;/em&gt;]pteridin-10(2&lt;em&gt;H&lt;/em&gt;)-yl moiety. It is a nutritional factor found in milk, eggs, malted barley, liver, kidney, heart, and leafy vegetables, but the richest natural source is yeast. The free form occurs only in the retina of the eye, in whey, and in urine; its principal forms in tissues and cells are as flavin mononucleotide and flavin-adenine dinucleotide.']; formula ['C17H20N4O6']; mass ['376.369']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi17883 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17883; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:17883 = hydrogen chloride; definition ['A mononuclear parent hydride consisting of covalently bonded hydrogen and chlorine atoms.']; formula ['HCl']; mass ['36.461']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:26710; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:26710 = sodium chloride; definition ['An inorganic chloride salt having sodium(1+) as the counterion.']; formula ['Cl.Na']; mass ['58.443']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi27470 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:27470; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:27470 = folic acid; definition ['An &lt;em&gt;N&lt;/em&gt;-acyl-amino acid that is a form of the water-soluble vitamin B&lt;small&gt;&lt;sub&gt;9&lt;/sub&gt;&lt;/small&gt;. Its biologically active forms (tetrahydrofolate and others) are essential for nucleotide biosynthesis and homocysteine remethylation.']; formula ['C19H19N7O6']; mass ['441.404']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:29377; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:29377 = sodium carbonate; definition []; formula ['CO3.2Na']; mass ['105.988']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30753; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:30753 = 4-aminobenzoic acid; definition ['An aminobenzoic acid in which the amino group is &lt;em&gt;para&lt;/em&gt; to the carboxy group.']; formula ['C7H7NO2']; mass ['137.138']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi30961 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30961; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:30961 = pyridoxine hydrochloride; definition ['The hydrochloride salt of pyridoxine.']; formula ['C8H11NO3.HCl']; mass ['205.641']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31206; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:31206 = ammonium chloride; definition ['An inorganic chloride having ammonium as the counterion.']; formula ['Cl.H4N']; mass ['53.492']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi31345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31345; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:31345 = Calcium pantothenate; definition []; formula ['2C9H16NO5.Ca']; mass ['476.536']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi32145 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32145; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:32145 = sodium hydroxide; definition []; formula ['HO.Na']; mass ['39.997']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi32149 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32149; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:32149 = sodium sulfate; definition []; formula ['2Na.O4S']; mass ['142.043']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:33118; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:33118 = boric acid; definition []; formula ['H3BO3']; mass ['61.833']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:34887; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:34887 = nickel dichloride; definition ['A compound of nickel and chloride in which the ratio of nickel (in the +2 oxidation state) to chloride is 1:2.']; formula ['Cl2Ni']; mass ['129.599']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi49105 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:49105; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:49105 = thiamine hydrochloride; definition ['A hydrochloride obtained by combining thiamine chloride with one molar equivalent of hydrochloric acid.']; formula ['C12H17N4OS.Cl.HCl']; mass ['337.276']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi49976 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:49976; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:49976 = zinc dichloride; definition ['A compound of zinc and chloride ions in the ratio 1:2. It exists in four crystalline forms, in each of which the Zn&lt;small&gt;&lt;sup&gt;2+&lt;/small&gt;&lt;/sup&gt; ions are trigonal planar coordinated to four chloride ions.']; formula ['2Cl.Zn']; mass ['136.296']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi53503 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:53503; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:53503 = cobalt chloride hexahydrate; definition ['A hydrate of cobalt chloride containing cobalt (in +2 oxidation state), chloride and water moieties in the ratio 1:2:6.']; formula ['2Cl.Co.6H2O']; mass ['237.929']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63036; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:63036 = potassium dihydrogen phosphate; definition ['A potassium salt in which dihydrogen phosphate(1−) is the counterion.']; formula ['H2O4P.K']; mass ['136.084']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi63939 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63939; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:63939 = sodium tungstate dihydrate; definition ['A hydrate that is the dihydrate form of sodium tungstate. Combines with hydrogen peroxide for the oxidation of secondary amines to nitrones']; formula ['2H2O.2Na.O4W']; mass ['329.846']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:75213; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:75213 = sodium molybdate dihydrate; definition ['A hydrate that is the dihydrate form of sodium molybdate.']; formula ['2H2O.MoO4.2Na']; mass ['241.946']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi76209 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:76209; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:76209 = sodium sulfide nonahydrate; definition ['A hydrate with formula Na&lt;small&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/small&gt;S·9H&lt;small&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/small&gt;O.']; formula ['9H2O.2Na.S']; mass ['240.182']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86158; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:86158 = calcium chloride dihydrate; definition ['A hydrate that is the dihydrate form of calcium chloride.']; formula ['Ca.2Cl.2H2O']; mass ['147.014']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi86249 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86249; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:86249 = iron dichloride tetrahydrate; definition ['A hydrate that is the tetrahydrate form of iron dichloride.']; formula ['Cl2Fe.4H2O']; mass ['198.811']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi86318 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86318; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:86318 = copper(II) chloride dihydrate; definition ['A hydrate that is the dihydrate form of copper(II) chloride. It occurs naturally as the mineral eriochalcite.']; formula ['Cl2Cu.2H2O']; mass ['170.482']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86345; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:86345 = magnesium dichloride hexahydrate; definition ['A hydrate that is the hexahydrate form of magnesium dichloride.']; formula ['2Cl.6H2O.Mg']; mass ['203.301']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86368; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:86368 = manganese(II) chloride tetrahydrate; definition ['A hydrate that is the tetrahydrate form of manganese(II) chloride.']; formula ['Cl2Mn.4H2O']; mass ['197.904']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi91258 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:91258; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:91258 = disodium hydrogenphosphate dihydrate; definition ['A hydrate that is the dihydrate form of disodium hydrogenphosphate']; formula ['2H2O.HO4P.2Na']; mass ['177.988']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi131361 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:131361; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:131361 = disodium selenite pentahydrate; definition ['A hydrate that is the pentahydrate form of disodium selenite.']; formula ['5H2O.2Na.O3Se']; mass ['263.012']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi132106 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:132106; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:132106 = sodium propionate; definition ['An organic sodium salt comprising equal numbers of sodium and propionate ions.']; formula ['C3H5O2.Na']; mass ['96.061']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi132751 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:132751; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:132751 = thiamine hydrochloride dihydrate; definition ['A hydrate that is the dihydrate form of thiamine hydrochloride.']; formula ['C12H18N4OS.2Cl.2H2O']; mass ['373.306']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi176843 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:176843; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:176843 = vitamin B12; definition ['Any member of a group of cobalamin vitamers that exhibit biological activity against vitamin B&lt;small&gt;&lt;sub&gt;12&lt;/sub&gt;&lt;/small&gt; deficiency. Vitamin B&lt;small&gt;&lt;sub&gt;12&lt;/sub&gt;&lt;/small&gt; deficiency is associated with low red blood cell count and anemia. The vitamers are found in foods such as cereals, meat, fish, and poultry. The vitamers include adenosylcobalamin, hydroxocobalamin, cyanocobalamin, aquacobalamin, nitritocobalamin and methylcobabalamin (also includes their ionized, salt and phosphate derivatives).']; formula None; mass None; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| grounding | REVIEW_WORK/batch078/record05/grounding-inventory.json; documents; ols_scientific_projection; mim_index | supports | Complete selected term slots and current packaged MIM CSV exact-identifier joins with row locators and metadata commit; No external dependency is included. No fuzzy mapping or historical-validity inference. |
+| history0 | reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/desulforhabdus_amnigenus_medium.yaml.md; entire report; lossless historical reader; exact selected parent rows | supports | Complete report body read and losslessly retained. Zero-source-check diagnostics are historical structure only. Exact selected historical parent rows and current byte matches are separately joined; same-label unselected siblings and unrelated dependency parent recipes remain context-only. Old report conclusions are reassessed against the exact current source rather than automatically adopted; dates and historical execution are not authenticated. |
+| history1 | reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/desulforhabdus_amnigena_medium.yaml.md; entire report; lossless historical reader; exact selected parent rows | supports | Complete report body read and losslessly retained. Zero-source-check diagnostics are historical structure only. Exact selected historical parent rows and current byte matches are separately joined; same-label unselected siblings and unrelated dependency parent recipes remain context-only. Old report conclusions are reassessed against the exact current source rather than automatically adopted; dates and historical execution are not authenticated. |
+| history2 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.md; entire report; lossless historical reader; exact selected parent rows | supports | Complete report body read and losslessly retained. Zero-source-check diagnostics are historical structure only. Exact selected historical parent rows and current byte matches are separately joined; same-label unselected siblings and unrelated dependency parent recipes remain context-only. Old report conclusions are reassessed against the exact current source rather than automatically adopted; dates and historical execution are not authenticated. |
+| history3 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.md; entire report; lossless historical reader; exact selected parent rows | supports | Complete report body read and losslessly retained. Zero-source-check diagnostics are historical structure only. Exact selected historical parent rows and current byte matches are separately joined; same-label unselected siblings and unrelated dependency parent recipes remain context-only. Old report conclusions are reassessed against the exact current source rather than automatically adopted; dates and historical execution are not authenticated. |
+| history4 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.md; entire report; lossless historical reader; exact selected parent rows | supports | Complete report body read and losslessly retained. Zero-source-check diagnostics are historical structure only. Exact selected historical parent rows and current byte matches are separately joined; same-label unselected siblings and unrelated dependency parent recipes remain context-only. Old report conclusions are reassessed against the exact current source rather than automatically adopted; dates and historical execution are not authenticated. |
+| history-auth | REVIEW_WORK/batch078/record05/historical-authentication.json; attached_claims; historical_plan_claims | supports | Actual attached claims and historical parent-plan claims are separate populations. Current raw-digest equality and literal or normalized-HTML excerpt equality are independently recorded. No attached formulation claims occur on the selected target or its maintained contributors. Current byte matches do not authenticate historical execution or access dates. |
+| historical-current-joins | REVIEW_WORK/batch078/record05/historical-current-joins.json; all selected parents and claims | supports | Exact selected historical parent rows, source raw digest and all literal/decoded source-object joins. These are separate from absent attached formulation evidence and do not authenticate historical dates. |
+| writer53 | scripts/apply_cocktail_nesting.py; match_components; match_stock_signature; plan_record; apply_plan | context_only | Current match_components and match_stock_signature use exact ingredient signatures; plan_record reconstructs source-scoped stocks, separates retained constituent concentrations, and distinguishes direct doses from CROSS_MEDIUM_INFERENCE candidates. apply_plan applies the approved structure. Existing partial nesting is credited, while missing components and a copied per-litre denominator still need exact source support. Current code does not authenticate historical execution. |
+| writer54 | scripts/apply_mim_groundings.py; target_slot; groundable; apply_to_record | context_only | Current target_slot preserves existing CHEBI assertions; groundable excludes conflicting corpus opinions, and apply_to_record fills ungrounded entries from proposals. This writer does not authenticate source amounts or automatically repair an existing wrong supplied-form ID. |
+| writer55 | scripts/assign_culturemech_ids.py; assign_ids; _assign_id_to_file | context_only | Current assign_ids selects records with missing IDs; _assign_id_to_file checks new-ID collisions and appends identifier provenance. Identifier assignment does not authenticate recipe content or demonstrate historical source access. |
+| writer56 | scripts/cleanup_media_quality.py; _merge_ingredient_group | context_only | Current _merge_ingredient_group collapses equal duplicate values without summing them and retains the first conflicting value with a flag. This behavior is distinct from historical summed-amount artifacts and does not authenticate source-specific stock or product structure. |
+| writer57 | scripts/cleanup_recipe_ingredients.py; merge_duplicate_ingredients; merge_ingredient_group | context_only | Current merge_duplicate_ingredients groups normalized names; merge_ingredient_group retains the first concentration, flags differing values and selects the first CHEBI. It cannot establish source stages or justify collapsing independent supplemental and product-contained components. |
+| writer58 | scripts/migrate_legacy_mim_to_chebi.py; _resolve_chebi; _rewrite_entry | context_only | Current _resolve_chebi reuses current primary CHEBI where available and considers bounded exact-name/synonym matches with a stereo-prefix guard; _rewrite_entry retains unresolved links. Current-row presence is distinct from historical validity and from source-specific supplied-form equivalence. |
+| writer59 | scripts/migrate_ph_range.py; parse_ph_range; migrate_one | context_only | Current parse_ph_range retains qualifiers in notes and migrate_one converts only string-valued pH ranges, recording provenance. No particular source range is authenticated by this writer. |
+| writer60 | scripts/promote_komodo_volume_candidates.py; promote_doc; main | context_only | Current promote_doc uses imported composition_confirms, fills only absent solution concentrations from CROSS_MEDIUM_INFERENCE candidates and records composition-match provenance. main retrieves the resolved provider source and computes agreement through imported helpers. Matching copied composition does not independently authenticate source identity or an assembled-medium denominator; those helper internals are separately scoped if inspected. |
+| writer61 | scripts/refill_term_labels.py; refill_text | context_only | Current refill_text replaces term labels using the current exact identifier lookup while preserving other text. Canonical label correspondence is not an independent choice of the correct chemical form for the supplied source reagent. |
+| writer62 | scripts/repair_merged_duplicates.py; repair_ingredient; repair_record | context_only | Current repair_ingredient and repair_record act on parsed IDENTICAL_PARTS duplicate notes. This bounded repair is not a general solution for product decomposition, stock flattening or differing source formulations. |
+| writer63 | src/culturemech/enrich/dsmz_resolver.py; DSMZCompositionResolver.merge_composition; _is_placeholder; _add_enrichment_metadata | context_only | Current DSMZCompositionResolver.merge_composition copies ingredients and solutions, fills pH when absent and copies physical/medium type, but does not copy preparation steps. _add_enrichment_metadata records a naive current timestamp. This explains a present omission risk, not historical execution. |
+| writer64 | src/culturemech/import/komodo_web_importer.py; _convert_to_culturemech | context_only | Current _convert_to_culturemech constructs source notes and default LIQUID with empty ingredients. Its time.strftime format contains %f, which is unsupported here and is consistent with literal .fZ in stored import events. Current code does not authenticate the original retrieval or justify rewriting historical time. |
+| writer65 | src/culturemech/import/mediadive_importer.py; _parse_api_composition; _is_api_stock_addition; _parse_api_solutions; _parse_preparation_steps | context_only | Current _parse_api_composition considers the primary recipe, prefers provider g_l when available and excludes four recognized water labels; tap water is not among those exclusions; _is_api_stock_addition distinguishes stock additions. _parse_api_solutions retains separate stock structure. _parse_preparation_steps collects solution prose. These present behaviors do not establish historical execution and cannot justify interpreting flattened stock rates as final-medium concentrations. |
+| writer66 | src/culturemech/match/kg_media_matcher.py; extract_recipe_ingredients; find_matches; find_exact_match | context_only | Current extract_recipe_ingredients collects asserted CHEBI/FOODON IDs, find_matches compares set Jaccard and find_exact_match selects the first exact identifier set. Quantities, preparation and ungrounded ingredients are not compared, so an exact set match does not establish formulation identity. |
+| writer67 | src/culturemech/merge/formulation.py; formulation_content; merge_formulation_evidence | context_only | Current formulation_content retains exact scientific quantities, preparation and other scientific fields; merge_formulation_evidence rejects incompatible projections and unions evidence at matching scopes. A source-equivalence claim is not established by shared ingredient identities. |
+| writer68 | src/culturemech/merge/matcher.py; group_formulations; group_recipes | context_only | Current group_formulations calls group_recipes with fail_on_invalid=True and FormulationFingerprinter. Expected standalone or unfingerprintable records are excluded; malformed or unexpected inputs raise. Valid records are grouped by full scientific content. This guard does not retrieve or authenticate source recipes. |
+| writer69 | src/culturemech/merge/merger.py; merge_group | context_only | Current merge_group routes a single maintained owner with merge metadata; multiple owners pass through conservative merge_formulation_evidence. Regenerating from an unrepaired owner retains its defects. Current conservative behavior is credited and does not establish how the old generated record was produced. |
+| writer70 | src/culturemech/validation/schema_defaulter.py; apply_defaults; _fix_ingredient; _fix_solution | context_only | Current apply_defaults, _fix_ingredient and _fix_solution can insert VARIABLE amounts and placeholder names for structural completeness. A default is not evidence for a dose, composition, solution identity or denominator; existing default-history events remain contextual. |
+| quantity-inventory | REVIEW_WORK/batch078/record05/quantity-inventory.json; decisions | supports | Complete explicit decisions with exact current local values, per-layer locators, source quotes/hash/time, stage and arithmetic limits. |
+
+## Limits And Additional Notes
+
+- Exact KOMODO708 returned HTTP 403; current DSM evidence does not establish a newly retrieved KOMODO formulation.
+- Provider nominal main volume 1004 ml and stock g_l are explicitly attributed; listed water is not independently measured final volume. HCl 25% has no verified percentage basis or density.
+- Historical source equality does not authenticate access dates or execution. No source recipe was edited and collection identity is not a new growth assertion.
+- Read-only scientific review. No source edits, native save, Git mutation or publication. All raw captures, failed access bodies, commands, times and original stdout/stderr remain in the adjacent private evidence directory.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T210447Z-desulforhabdus-amnigena-medium-batch078
+kind: record
+repository: CultureBotAI/CultureMech
+title: Scientific review of desulforhabdus_amnigena_medium
+started_at: '2026-10-28T20:57:53.453172Z'
+finished_at: '2026-10-28T21:04:47.527806Z'
+reviewer:
+  identity: Codex independent record reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Fresh review of existing unchanged repository records; this
+    reviewer did not author or curate the selected target/owners. Historical reports
+    were independently reassessed against current exact sources.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The maintained owners already separate ten stock components, but the generated
+  target still sums four vitamin pairs and all layers retain incomplete stock structure.
+  Eleven main provider rates, pH and DSM main preparation are supported. Stock placement,
+  dose denominators, two supplied-form identifiers and KOMODO atmosphere/provenance
+  need bounded curation.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml
+    sha256: 66048638f38c6f07884ca3db5fb0ca14490ef494f81fd8a127e904f9ccef6966
+    role: target
+  - path: data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml
+    sha256: c2396ea448d40b80413de41df39c28310d39651561ad9abc2480efe633bae85a
+    role: context
+  - path: data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml
+    sha256: 640de56ddc46ae9438d761745e3f533bbffac9ec544cc19b1d0813e0578a2785
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/inspected-candidate-context.json
+    sha256: 65c1b3085c5b2101fd274a184820f9de1dd1fa7f7f7d7d0068d6acb67b587934
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/plan.json
+    sha256: f5827bda6e5f7caf5fdb9faddc5f36e3955ee048fa0a066cc40e04ff3e1c4823
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/desulforhabdus_amnigenus_medium.yaml.md
+    sha256: 15cd3f5b0c6717cee3e90dfb7022b7a9e06cc06c77826919d891b861123af4b1
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/plan.json
+    sha256: bc8c96d09770525e6b6ba6dc0c7680354cf9bc6baa5249e79e82b65328203147
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/desulforhabdus_amnigena_medium.yaml.md
+    sha256: 01277d6530bd79826272f87fe9015060c51c9f5d1b58e30a208795e8fdfd1fc8
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.md
+    sha256: a8dc3fa57a63daa8b4df220271957fd8ca9f09263870852ad1acf82c5faa68f9
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.md
+    sha256: 3c81077956463b974cdfcf092aa0e5a4a53442ca458a9b5a2e968fc5f7d81cab
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.md
+    sha256: ee7ab17cc6256bdfea12f210575c9969f43c220deea368dcdb0665f177c369a5
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_cocktail_nesting.py
+    sha256: a1914a040ca02c86633aae11ed8a52a0ea91ba157a8240da2232c4ae652d61ab
+    role: context
+  - path: scripts/apply_media_variant_links.py
+    sha256: 2931b0c5d4374cdaa6d256aed8f65f564a8b285bba741ec914f3a516eed50c07
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/assign_culturemech_ids.py
+    sha256: 81ed213c52804ae98a8add02730d757595e3287fa7b01bc88aee0e587bbb01e1
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/enrich_with_chebi.py
+    sha256: f18dd6e4317de76cb7379f6c9c6227f9af884c27a0761d7f64143aaf74d8e1dc
+    role: context
+  - path: scripts/enrich_with_mediaingredientmech.py
+    sha256: 6357c9d621c3d6e32b28b2982afedfaed384830cea1602a775b0a5f0852c015e
+    role: context
+  - path: scripts/fetch_mediadive_solution_volumes.py
+    sha256: 408cdfa3f5c446e8f9c32ac98d7ea8a3a36553b23c032f3b7551f6a1661fd39a
+    role: context
+  - path: scripts/import_from_culturebotht.py
+    sha256: d835addf5fff423a9b0b1231848ed3103c5b2d97015c1c294365970d15be0fe1
+    role: context
+  - path: scripts/import_mediadive_solutions.py
+    sha256: f97db7607d76c46b75d2d2428e8a425a5735e52beb3a9c28fd0af03ab5b31aa8
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_mgso4_heptahydrate_term.py
+    sha256: 6acb9d5164ad381c288f031fb34045036e3fd2283e559f1ad8ccd1a4687fb4ce
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/promote_komodo_volume_candidates.py
+    sha256: 2423b7e2e04011b31d21eac939714a2db4380f033a69094325dc567e44929cd2
+    role: context
+  - path: scripts/propose_cocktail_nesting.py
+    sha256: e886c446a8398f08f1cc735b1c3a9812c5fc6371a36b69ef5325f1c53f14e6c0
+    role: context
+  - path: scripts/propose_media_variant_links.py
+    sha256: bd5b0b86c9457e42ca52ba2b253e5842c7f414093ba15aaeb4f9f0d682b5f4c2
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/refill_term_labels.py
+    sha256: 8eee4532e4a71d120532db511733bde974ab1b179e50cb1ea51d66c3870f3cb9
+    role: context
+  - path: scripts/repair_jcm_stock_preparations.py
+    sha256: 7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a
+    role: context
+  - path: scripts/repair_mediadive_jcm_structure.py
+    sha256: 5bff4c2d1900051bdea1b8e0f655049147c85cc9c61da4c348a6d60a8d0fd509
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/review_komodo_concentration_evidence.py
+    sha256: 4470019965d068a53587be3668c3872daedc1505dab1bc6e2d1ed937ba409658
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/match/kg_media_matcher.py
+    sha256: 43f01f4b6e9285a60db437d7903646545ad6a6548e6b85f4478eb9b0e1b74e33
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: Full selected target and maintained owners, every quantity and unchanged
+    claim, embedded source stocks and current writers.
+  selection: Authoritative batch078 selection index 5 at base 9ea7ff33d354e37b791df96a880005153e446ce3.
+    Fresh review, not reconstruction of lost historical bundles.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:001845
+targets:
+- target_id: CultureMech:001845
+  path: data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml
+  label: desulforhabdus_amnigena_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:001845
+  command: just validate-schema data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:001845
+  command: just validate-strict data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml
+    --workers 1 --out REVIEW_WORK/batch078/record05/strict.tsv
+  exit_code: 0
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:001845
+  command: just validate-terms data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Zero reference checks.
+  target_ids:
+  - CultureMech:001845
+  command: just validate-references data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-references
+evidence:
+- evidence_id: local0
+  kind: record_content
+  reference: data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T21:04:47.427495Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: 66048638f38c6f07884ca3db5fb0ca14490ef494f81fd8a127e904f9ccef6966
+- evidence_id: local1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T21:04:47.427714Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: c2396ea448d40b80413de41df39c28310d39651561ad9abc2480efe633bae85a
+- evidence_id: local2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T21:04:47.427748Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: 640de56ddc46ae9438d761745e3f533bbffac9ec544cc19b1d0813e0578a2785
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch078/record05/validate-schema-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T20:57:54.579039Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: bfb5ed3d687b0484e5b8be64892421adcdf8cf4e4a942dded4ce6a24108d77b6
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch078/record05/validate-strict-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T20:57:55.567106Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Strict
+    TSV is header-only.
+  snapshot_sha256: 6c052fb40ff92329b5c61112beeefd5caaca542462d49507dce9eb33193e5d9c
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch078/record05/validate-terms-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T20:57:56.669187Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: 95c4efc3a21145d694a511030be595f959d40550705692469d19c8df09ccae7d
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch078/record05/validate-references-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T20:57:57.475507Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Zero
+    references checked, not scientific source verification.
+  snapshot_sha256: f98c8add4fd541fde82018135ec2475b37db437d72214e026db37457ee5c0b67
+- evidence_id: dsm708
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T20:57:49.518934Z'
+  support: supports
+  summary: Complete exact DSM primary PDF text and all rendered pages read, including
+    the main recipe, embedded stock tables and staged procedures. Physical LF locators
+    refer to preserved pdftototext output; no page-wide or stock instruction is transferred
+    to another stage.
+  snapshot_sha256: 9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730
+- evidence_id: api708
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/708
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T20:57:49.518995Z'
+  support: supports
+  summary: Complete current provider identity, solution tables and preparation read.
+    Explicit g_l and declared volumes are credited only on their named provider stock
+    or recipe basis; they are not independent measured final volumes. Provider mmol_l
+    values are not adopted as chemical-form authority.
+  snapshot_sha256: 18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf
+- evidence_id: komodo708
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=708
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T20:57:50.241552Z'
+  support: unknown
+  summary: Actual HTTP 403 response, not formulation evidence.
+  snapshot_sha256: 89d8f4a4d7a74071cc874692d0d95a872f290845f9cfb4636cbb3b2f3b6dbdc7
+- evidence_id: dsm10338Identity
+  kind: primary_source
+  reference: https://www.dsmz.de/collection/catalogue/details/culture/DSM-10338
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T20:57:50.366692Z'
+  support: supports
+  summary: Current official collection identity, strain synonyms, environmental isolation
+    and exact medium association only. The page is not a recipe or a new experimental
+    growth assertion.
+  snapshot_sha256: e2b706d2557833f97b0b05b0ec3235248d822303b62ec5f918bd3ca8c4567e5d
+- evidence_id: chebi8806
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:8806
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:18.896332Z'
+  support: supports
+  summary: OLS current exact CHEBI:8806 = Resazurin; definition []; formula ['C12H7NO4'];
+    mass ['229.191']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: f2530ec9c15f59a3d132a466c9c3a899497bab0f85b996d3e27bef8612f89982
+- evidence_id: chebi15940
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15940
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:18.896620Z'
+  support: supports
+  summary: OLS current exact CHEBI:15940 = nicotinic acid; definition ['A pyridinemonocarboxylic
+    acid that is pyridine in which the hydrogen at position 3 is replaced by a carboxy
+    group.']; formula ['C6H5NO2']; mass ['123.111']; obsolete=False. Literal label
+    is distinct from supplied-form equivalence.
+  snapshot_sha256: c291a1c1bb0d6af05ac4005af0957534f430db47e7df9cec874f8a94d961dba1
+- evidence_id: chebi15956
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15956
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:18.896704Z'
+  support: supports
+  summary: OLS current exact CHEBI:15956 = biotin; definition ['An organic heterobicyclic
+    compound that consists of 2-oxohexahydro-1<em>H</em>-thieno[3,4-<em>d</em>]imidazole
+    having a valeric acid substituent attached to the tetrahydrothiophene ring. The
+    parent of the class of biotins.']; formula ['C10H16N2O3S']; mass ['244.316'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 5135a39e8b52c878896db22443f00507125db80e5ce4bb1dcc97914b9bdd7316
+- evidence_id: chebi16494
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:16494
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:18.896775Z'
+  support: supports
+  summary: OLS current exact CHEBI:16494 = lipoic acid; definition ['A heterocyclic
+    thia fatty acid comprising pentanoic acid with a 1,2-dithiolan-3-yl group at the
+    5-position.']; formula ['C8H14O2S2']; mass ['206.332']; obsolete=False. Literal
+    label is distinct from supplied-form equivalence.
+  snapshot_sha256: 192c51f672f633c6071a3397d5785fb2bca6eaf8f9b787f7aaaa6c2aeb3b1a2f
+- evidence_id: chebi17015
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17015
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:18.896835Z'
+  support: supports
+  summary: OLS current exact CHEBI:17015 = riboflavin; definition ['<small>D</small>-Ribitol
+    in which the hydroxy group at position 5 is substituted by a 7,8-dimethyl-2,4-dioxo-3,4-dihydrobenzo[<em>g</em>]pteridin-10(2<em>H</em>)-yl
+    moiety. It is a nutritional factor found in milk, eggs, malted barley, liver,
+    kidney, heart, and leafy vegetables, but the richest natural source is yeast.
+    The free form occurs only in the retina of the eye, in whey, and in urine; its
+    principal forms in tissues and cells are as flavin mononucleotide and flavin-adenine
+    dinucleotide.']; formula ['C17H20N4O6']; mass ['376.369']; obsolete=False. Literal
+    label is distinct from supplied-form equivalence.
+  snapshot_sha256: 17f7ac7c03d75b85a96f951321902906266f3ce8fa44faea4814fac46560e3e6
+- evidence_id: chebi17883
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17883
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:18.896878Z'
+  support: supports
+  summary: OLS current exact CHEBI:17883 = hydrogen chloride; definition ['A mononuclear
+    parent hydride consisting of covalently bonded hydrogen and chlorine atoms.'];
+    formula ['HCl']; mass ['36.461']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: e5ab164ef9ff955da1a504ca34ab4d3b69539d9bf721936c9dd563ccbbd0e3b0
+- evidence_id: chebi26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:26710
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:19.628135Z'
+  support: supports
+  summary: OLS current exact CHEBI:26710 = sodium chloride; definition ['An inorganic
+    chloride salt having sodium(1+) as the counterion.']; formula ['Cl.Na']; mass
+    ['58.443']; obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 70cf14c35e06f40427c1a2aa30e99794518eda976b5e5b3c86610efc28b7f25a
+- evidence_id: chebi27470
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:27470
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:19.653114Z'
+  support: supports
+  summary: OLS current exact CHEBI:27470 = folic acid; definition ['An <em>N</em>-acyl-amino
+    acid that is a form of the water-soluble vitamin B<small><sub>9</sub></small>.
+    Its biologically active forms (tetrahydrofolate and others) are essential for
+    nucleotide biosynthesis and homocysteine remethylation.']; formula ['C19H19N7O6'];
+    mass ['441.404']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: e1820a7a704794fa20995eea5037e03c2b22b847817c28bb2f45f80762c275d1
+- evidence_id: chebi29377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:29377
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:19.661385Z'
+  support: supports
+  summary: OLS current exact CHEBI:29377 = sodium carbonate; definition []; formula
+    ['CO3.2Na']; mass ['105.988']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: e0c2a85ab7be9313c564f96ee47b87e1bf3e01ad1e9fd627d1dbddced5d068c4
+- evidence_id: chebi30753
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30753
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:19.697139Z'
+  support: supports
+  summary: OLS current exact CHEBI:30753 = 4-aminobenzoic acid; definition ['An aminobenzoic
+    acid in which the amino group is <em>para</em> to the carboxy group.']; formula
+    ['C7H7NO2']; mass ['137.138']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 1340e054634ce960494b9388f6e3fd231d9e7d66969c3c11932ee2058171fd2c
+- evidence_id: chebi30961
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30961
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:19.760461Z'
+  support: supports
+  summary: OLS current exact CHEBI:30961 = pyridoxine hydrochloride; definition ['The
+    hydrochloride salt of pyridoxine.']; formula ['C8H11NO3.HCl']; mass ['205.641'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 855ea2cf0e89d25ab4a560ab1c2dab6ac861d215bc5473cb4d3a0a2d4cdff438
+- evidence_id: chebi31206
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31206
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:19.804930Z'
+  support: supports
+  summary: OLS current exact CHEBI:31206 = ammonium chloride; definition ['An inorganic
+    chloride having ammonium as the counterion.']; formula ['Cl.H4N']; mass ['53.492'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 645112dbfa7f1c565489070586f5d4018429259ff0400500ca10dfe6e43a5449
+- evidence_id: chebi31345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31345
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:20.231810Z'
+  support: supports
+  summary: OLS current exact CHEBI:31345 = Calcium pantothenate; definition []; formula
+    ['2C9H16NO5.Ca']; mass ['476.536']; obsolete=False. Literal label is distinct
+    from supplied-form equivalence.
+  snapshot_sha256: c3341e7cf8a7ea0768d505265376c1514f161c9048b6e878314e204341d702eb
+- evidence_id: chebi32145
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32145
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:20.334041Z'
+  support: supports
+  summary: OLS current exact CHEBI:32145 = sodium hydroxide; definition []; formula
+    ['HO.Na']; mass ['39.997']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 089212e8c86e2d4a4b145366c8bc67e0056565ef6970dcdc3df63ad20dac234d
+- evidence_id: chebi32149
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32149
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:20.338532Z'
+  support: supports
+  summary: OLS current exact CHEBI:32149 = sodium sulfate; definition []; formula
+    ['2Na.O4S']; mass ['142.043']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 96b73aef765e4edc893460a376cfedd136930f253bbeac639827b1daddb65d71
+- evidence_id: chebi33118
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:33118
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:20.419186Z'
+  support: supports
+  summary: OLS current exact CHEBI:33118 = boric acid; definition []; formula ['H3BO3'];
+    mass ['61.833']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: eef160dcdcd93f231064bc7b59da1e05a2efe1f96089b9cd2fdbdf68a9a4e5fc
+- evidence_id: chebi34887
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:34887
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:20.849805Z'
+  support: supports
+  summary: OLS current exact CHEBI:34887 = nickel dichloride; definition ['A compound
+    of nickel and chloride in which the ratio of nickel (in the +2 oxidation state)
+    to chloride is 1:2.']; formula ['Cl2Ni']; mass ['129.599']; obsolete=False. Literal
+    label is distinct from supplied-form equivalence.
+  snapshot_sha256: 3a37ef35991d24faf578286a7d7557ee1b0646c286dd3f8a555d833e6bf82a57
+- evidence_id: chebi49105
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:49105
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:20.879786Z'
+  support: supports
+  summary: OLS current exact CHEBI:49105 = thiamine hydrochloride; definition ['A
+    hydrochloride obtained by combining thiamine chloride with one molar equivalent
+    of hydrochloric acid.']; formula ['C12H17N4OS.Cl.HCl']; mass ['337.276']; obsolete=False.
+    Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: f9dbae8cd2dcbd38d914abb99730e341ff280d3a44f20f95b2663e47664780cf
+- evidence_id: chebi49976
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:49976
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:20.931497Z'
+  support: supports
+  summary: OLS current exact CHEBI:49976 = zinc dichloride; definition ['A compound
+    of zinc and chloride ions in the ratio 1:2. It exists in four crystalline forms,
+    in each of which the Zn<small><sup>2+</small></sup> ions are trigonal planar coordinated
+    to four chloride ions.']; formula ['2Cl.Zn']; mass ['136.296']; obsolete=False.
+    Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: d3bdc4c6f01d01422fafe433df4e4011e01cf7e55e0329ab341a60ece780946f
+- evidence_id: chebi53503
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:53503
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:20.936976Z'
+  support: supports
+  summary: OLS current exact CHEBI:53503 = cobalt chloride hexahydrate; definition
+    ['A hydrate of cobalt chloride containing cobalt (in +2 oxidation state), chloride
+    and water moieties in the ratio 1:2:6.']; formula ['2Cl.Co.6H2O']; mass ['237.929'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: a626d2aa210aafd9572221d4893cd206310d5df507e474e1528997048f522250
+- evidence_id: chebi63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63036
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:20.957833Z'
+  support: supports
+  summary: OLS current exact CHEBI:63036 = potassium dihydrogen phosphate; definition
+    ['A potassium salt in which dihydrogen phosphate(1−) is the counterion.']; formula
+    ['H2O4P.K']; mass ['136.084']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 07dec38373731d2125348c574d0f9f2df977e458974100383d3f69c8849a84e0
+- evidence_id: chebi63939
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63939
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:21.027718Z'
+  support: supports
+  summary: OLS current exact CHEBI:63939 = sodium tungstate dihydrate; definition
+    ['A hydrate that is the dihydrate form of sodium tungstate. Combines with hydrogen
+    peroxide for the oxidation of secondary amines to nitrones']; formula ['2H2O.2Na.O4W'];
+    mass ['329.846']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 01f41117ab89dbd1d514a894850dc06afd5d95c0bee7fd89f7dfdb54c309c514
+- evidence_id: chebi75213
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:75213
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:21.446979Z'
+  support: supports
+  summary: OLS current exact CHEBI:75213 = sodium molybdate dihydrate; definition
+    ['A hydrate that is the dihydrate form of sodium molybdate.']; formula ['2H2O.MoO4.2Na'];
+    mass ['241.946']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: f99a2d8b28ac44913a666745dd70098c5d5f21c9513fee921a35f0fd18f2c445
+- evidence_id: chebi76209
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:76209
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:21.561689Z'
+  support: supports
+  summary: OLS current exact CHEBI:76209 = sodium sulfide nonahydrate; definition
+    ['A hydrate with formula Na<small><sub>2</sub></small>S·9H<small><sub>2</sub></small>O.'];
+    formula ['9H2O.2Na.S']; mass ['240.182']; obsolete=False. Literal label is distinct
+    from supplied-form equivalence.
+  snapshot_sha256: 4896ec517123ebeb1afcbac7bc30a7103976f03891af0c86c992196b5f0db969
+- evidence_id: chebi86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86158
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:21.562858Z'
+  support: supports
+  summary: OLS current exact CHEBI:86158 = calcium chloride dihydrate; definition
+    ['A hydrate that is the dihydrate form of calcium chloride.']; formula ['Ca.2Cl.2H2O'];
+    mass ['147.014']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: eacf58308fa876cb17661b82d08a64d9be24814fde8014ac82da7696b3684841
+- evidence_id: chebi86249
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86249
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:21.569110Z'
+  support: supports
+  summary: OLS current exact CHEBI:86249 = iron dichloride tetrahydrate; definition
+    ['A hydrate that is the tetrahydrate form of iron dichloride.']; formula ['Cl2Fe.4H2O'];
+    mass ['198.811']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 4d7f48f88badcba85a62e59842c6ec921f5478eb76695098b17847ed62c8530a
+- evidence_id: chebi86318
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86318
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:21.647139Z'
+  support: supports
+  summary: OLS current exact CHEBI:86318 = copper(II) chloride dihydrate; definition
+    ['A hydrate that is the dihydrate form of copper(II) chloride. It occurs naturally
+    as the mineral eriochalcite.']; formula ['Cl2Cu.2H2O']; mass ['170.482']; obsolete=False.
+    Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: bd88e1499f370a9f474b29fa7a9a83aa5c42c69d0b6772ece8c89d646dfda8d8
+- evidence_id: chebi86345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86345
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:22.040098Z'
+  support: supports
+  summary: OLS current exact CHEBI:86345 = magnesium dichloride hexahydrate; definition
+    ['A hydrate that is the hexahydrate form of magnesium dichloride.']; formula ['2Cl.6H2O.Mg'];
+    mass ['203.301']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 94b600ced6e98743e2d1b02c73e1756f8f81b639407a8fdd080c96d8fa563c70
+- evidence_id: chebi86368
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86368
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:22.118640Z'
+  support: supports
+  summary: OLS current exact CHEBI:86368 = manganese(II) chloride tetrahydrate; definition
+    ['A hydrate that is the tetrahydrate form of manganese(II) chloride.']; formula
+    ['Cl2Mn.4H2O']; mass ['197.904']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 2d5685a4a03c5d730876514b4a7664fb477f63682a60cc7e13d7776a250f68e3
+- evidence_id: chebi91258
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:91258
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:22.157515Z'
+  support: supports
+  summary: OLS current exact CHEBI:91258 = disodium hydrogenphosphate dihydrate; definition
+    ['A hydrate that is the dihydrate form of disodium hydrogenphosphate']; formula
+    ['2H2O.HO4P.2Na']; mass ['177.988']; obsolete=False. Literal label is distinct
+    from supplied-form equivalence.
+  snapshot_sha256: e14e1a91519d14765d91d25ca145a56376d176814c62df304f78116dd4ad9278
+- evidence_id: chebi131361
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:131361
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:22.168972Z'
+  support: supports
+  summary: OLS current exact CHEBI:131361 = disodium selenite pentahydrate; definition
+    ['A hydrate that is the pentahydrate form of disodium selenite.']; formula ['5H2O.2Na.O3Se'];
+    mass ['263.012']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: d88b30f797a300c3935e550a4770cb598bbed342a9c2a343f77bdce496e99db9
+- evidence_id: chebi132106
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:132106
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:22.244585Z'
+  support: supports
+  summary: OLS current exact CHEBI:132106 = sodium propionate; definition ['An organic
+    sodium salt comprising equal numbers of sodium and propionate ions.']; formula
+    ['C3H5O2.Na']; mass ['96.061']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: d3b82c73f0c2e39278ef715ec98ad323e3f0bec01062eca60f47c7715486ca0b
+- evidence_id: chebi132751
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:132751
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:22.662843Z'
+  support: supports
+  summary: OLS current exact CHEBI:132751 = thiamine hydrochloride dihydrate; definition
+    ['A hydrate that is the dihydrate form of thiamine hydrochloride.']; formula ['C12H18N4OS.2Cl.2H2O'];
+    mass ['373.306']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 1d5eefc753b4fbbffd69d169aa7ca7be16df737b6c8c0e1833917806ac0607e5
+- evidence_id: chebi176843
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:176843
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:22.711906Z'
+  support: supports
+  summary: OLS current exact CHEBI:176843 = vitamin B12; definition ['Any member of
+    a group of cobalamin vitamers that exhibit biological activity against vitamin
+    B<small><sub>12</sub></small> deficiency. Vitamin B<small><sub>12</sub></small>
+    deficiency is associated with low red blood cell count and anemia. The vitamers
+    are found in foods such as cereals, meat, fish, and poultry. The vitamers include
+    adenosylcobalamin, hydroxocobalamin, cyanocobalamin, aquacobalamin, nitritocobalamin
+    and methylcobabalamin (also includes their ionized, salt and phosphate derivatives).'];
+    formula None; mass None; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 9c73ea31864abce6b9ed6328e9ed491bc1cad2ba27f40adb5c00f0f192838e63
+- evidence_id: grounding
+  kind: authority
+  reference: REVIEW_WORK/batch078/record05/grounding-inventory.json
+  locator: documents; ols_scientific_projection; mim_index
+  accessed_at: '2026-10-28T21:04:47.433334Z'
+  support: supports
+  summary: Complete selected term slots and current packaged MIM CSV exact-identifier
+    joins with row locators and metadata commit; No external dependency is included.
+    No fuzzy mapping or historical-validity inference.
+  snapshot_sha256: f21ab5d127acee0d5382a319d3ac2b3b9be7908a0be5613a17a652935710c5d4
+- evidence_id: history0
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/desulforhabdus_amnigenus_medium.yaml.md
+  locator: entire report; lossless historical reader; exact selected parent rows
+  accessed_at: '2026-10-28T21:04:47.472390Z'
+  support: supports
+  summary: Complete report body read and losslessly retained. Zero-source-check diagnostics
+    are historical structure only. Exact selected historical parent rows and current
+    byte matches are separately joined; same-label unselected siblings and unrelated
+    dependency parent recipes remain context-only. Old report conclusions are reassessed
+    against the exact current source rather than automatically adopted; dates and
+    historical execution are not authenticated.
+  snapshot_sha256: 15cd3f5b0c6717cee3e90dfb7022b7a9e06cc06c77826919d891b861123af4b1
+- evidence_id: history1
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/desulforhabdus_amnigena_medium.yaml.md
+  locator: entire report; lossless historical reader; exact selected parent rows
+  accessed_at: '2026-10-28T21:04:47.472439Z'
+  support: supports
+  summary: Complete report body read and losslessly retained. Zero-source-check diagnostics
+    are historical structure only. Exact selected historical parent rows and current
+    byte matches are separately joined; same-label unselected siblings and unrelated
+    dependency parent recipes remain context-only. Old report conclusions are reassessed
+    against the exact current source rather than automatically adopted; dates and
+    historical execution are not authenticated.
+  snapshot_sha256: 01277d6530bd79826272f87fe9015060c51c9f5d1b58e30a208795e8fdfd1fc8
+- evidence_id: history2
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.md
+  locator: entire report; lossless historical reader; exact selected parent rows
+  accessed_at: '2026-10-28T21:04:47.472467Z'
+  support: supports
+  summary: Complete report body read and losslessly retained. Zero-source-check diagnostics
+    are historical structure only. Exact selected historical parent rows and current
+    byte matches are separately joined; same-label unselected siblings and unrelated
+    dependency parent recipes remain context-only. Old report conclusions are reassessed
+    against the exact current source rather than automatically adopted; dates and
+    historical execution are not authenticated.
+  snapshot_sha256: a8dc3fa57a63daa8b4df220271957fd8ca9f09263870852ad1acf82c5faa68f9
+- evidence_id: history3
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.md
+  locator: entire report; lossless historical reader; exact selected parent rows
+  accessed_at: '2026-10-28T21:04:47.472493Z'
+  support: supports
+  summary: Complete report body read and losslessly retained. Zero-source-check diagnostics
+    are historical structure only. Exact selected historical parent rows and current
+    byte matches are separately joined; same-label unselected siblings and unrelated
+    dependency parent recipes remain context-only. Old report conclusions are reassessed
+    against the exact current source rather than automatically adopted; dates and
+    historical execution are not authenticated.
+  snapshot_sha256: 3c81077956463b974cdfcf092aa0e5a4a53442ca458a9b5a2e968fc5f7d81cab
+- evidence_id: history4
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.md
+  locator: entire report; lossless historical reader; exact selected parent rows
+  accessed_at: '2026-10-28T21:04:47.472516Z'
+  support: supports
+  summary: Complete report body read and losslessly retained. Zero-source-check diagnostics
+    are historical structure only. Exact selected historical parent rows and current
+    byte matches are separately joined; same-label unselected siblings and unrelated
+    dependency parent recipes remain context-only. Old report conclusions are reassessed
+    against the exact current source rather than automatically adopted; dates and
+    historical execution are not authenticated.
+  snapshot_sha256: ee7ab17cc6256bdfea12f210575c9969f43c220deea368dcdb0665f177c369a5
+- evidence_id: history-auth
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record05/historical-authentication.json
+  locator: attached_claims; historical_plan_claims
+  accessed_at: '2026-10-28T21:04:47.472583Z'
+  support: supports
+  summary: Actual attached claims and historical parent-plan claims are separate populations.
+    Current raw-digest equality and literal or normalized-HTML excerpt equality are
+    independently recorded. No attached formulation claims occur on the selected target
+    or its maintained contributors. Current byte matches do not authenticate historical
+    execution or access dates.
+  snapshot_sha256: f9c52fb961ff1d4db5f4530e9d2447a91c1295920e8af1742de444a4dff86069
+- evidence_id: historical-current-joins
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record05/historical-current-joins.json
+  locator: all selected parents and claims
+  accessed_at: '2026-10-28T21:04:47.472651Z'
+  support: supports
+  summary: Exact selected historical parent rows, source raw digest and all literal/decoded
+    source-object joins. These are separate from absent attached formulation evidence
+    and do not authenticate historical dates.
+  snapshot_sha256: f29e74937dc55d97d026e219d6e394f3c004a9003d4c75e695b31d970f25a012
+- evidence_id: writer53
+  kind: record_content
+  reference: scripts/apply_cocktail_nesting.py
+  locator: match_components; match_stock_signature; plan_record; apply_plan
+  accessed_at: '2026-10-28T21:04:47.472726Z'
+  support: context_only
+  summary: Current match_components and match_stock_signature use exact ingredient
+    signatures; plan_record reconstructs source-scoped stocks, separates retained
+    constituent concentrations, and distinguishes direct doses from CROSS_MEDIUM_INFERENCE
+    candidates. apply_plan applies the approved structure. Existing partial nesting
+    is credited, while missing components and a copied per-litre denominator still
+    need exact source support. Current code does not authenticate historical execution.
+  snapshot_sha256: a1914a040ca02c86633aae11ed8a52a0ea91ba157a8240da2232c4ae652d61ab
+- evidence_id: writer54
+  kind: record_content
+  reference: scripts/apply_mim_groundings.py
+  locator: target_slot; groundable; apply_to_record
+  accessed_at: '2026-10-28T21:04:47.472751Z'
+  support: context_only
+  summary: Current target_slot preserves existing CHEBI assertions; groundable excludes
+    conflicting corpus opinions, and apply_to_record fills ungrounded entries from
+    proposals. This writer does not authenticate source amounts or automatically repair
+    an existing wrong supplied-form ID.
+  snapshot_sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+- evidence_id: writer55
+  kind: record_content
+  reference: scripts/assign_culturemech_ids.py
+  locator: assign_ids; _assign_id_to_file
+  accessed_at: '2026-10-28T21:04:47.472775Z'
+  support: context_only
+  summary: Current assign_ids selects records with missing IDs; _assign_id_to_file
+    checks new-ID collisions and appends identifier provenance. Identifier assignment
+    does not authenticate recipe content or demonstrate historical source access.
+  snapshot_sha256: 81ed213c52804ae98a8add02730d757595e3287fa7b01bc88aee0e587bbb01e1
+- evidence_id: writer56
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: _merge_ingredient_group
+  accessed_at: '2026-10-28T21:04:47.472797Z'
+  support: context_only
+  summary: Current _merge_ingredient_group collapses equal duplicate values without
+    summing them and retains the first conflicting value with a flag. This behavior
+    is distinct from historical summed-amount artifacts and does not authenticate
+    source-specific stock or product structure.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer57
+  kind: record_content
+  reference: scripts/cleanup_recipe_ingredients.py
+  locator: merge_duplicate_ingredients; merge_ingredient_group
+  accessed_at: '2026-10-28T21:04:47.472820Z'
+  support: context_only
+  summary: Current merge_duplicate_ingredients groups normalized names; merge_ingredient_group
+    retains the first concentration, flags differing values and selects the first
+    CHEBI. It cannot establish source stages or justify collapsing independent supplemental
+    and product-contained components.
+  snapshot_sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+- evidence_id: writer58
+  kind: record_content
+  reference: scripts/migrate_legacy_mim_to_chebi.py
+  locator: _resolve_chebi; _rewrite_entry
+  accessed_at: '2026-10-28T21:04:47.472850Z'
+  support: context_only
+  summary: Current _resolve_chebi reuses current primary CHEBI where available and
+    considers bounded exact-name/synonym matches with a stereo-prefix guard; _rewrite_entry
+    retains unresolved links. Current-row presence is distinct from historical validity
+    and from source-specific supplied-form equivalence.
+  snapshot_sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+- evidence_id: writer59
+  kind: record_content
+  reference: scripts/migrate_ph_range.py
+  locator: parse_ph_range; migrate_one
+  accessed_at: '2026-10-28T21:04:47.472871Z'
+  support: context_only
+  summary: Current parse_ph_range retains qualifiers in notes and migrate_one converts
+    only string-valued pH ranges, recording provenance. No particular source range
+    is authenticated by this writer.
+  snapshot_sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+- evidence_id: writer60
+  kind: record_content
+  reference: scripts/promote_komodo_volume_candidates.py
+  locator: promote_doc; main
+  accessed_at: '2026-10-28T21:04:47.472894Z'
+  support: context_only
+  summary: Current promote_doc uses imported composition_confirms, fills only absent
+    solution concentrations from CROSS_MEDIUM_INFERENCE candidates and records composition-match
+    provenance. main retrieves the resolved provider source and computes agreement
+    through imported helpers. Matching copied composition does not independently authenticate
+    source identity or an assembled-medium denominator; those helper internals are
+    separately scoped if inspected.
+  snapshot_sha256: 2423b7e2e04011b31d21eac939714a2db4380f033a69094325dc567e44929cd2
+- evidence_id: writer61
+  kind: record_content
+  reference: scripts/refill_term_labels.py
+  locator: refill_text
+  accessed_at: '2026-10-28T21:04:47.472918Z'
+  support: context_only
+  summary: Current refill_text replaces term labels using the current exact identifier
+    lookup while preserving other text. Canonical label correspondence is not an independent
+    choice of the correct chemical form for the supplied source reagent.
+  snapshot_sha256: 8eee4532e4a71d120532db511733bde974ab1b179e50cb1ea51d66c3870f3cb9
+- evidence_id: writer62
+  kind: record_content
+  reference: scripts/repair_merged_duplicates.py
+  locator: repair_ingredient; repair_record
+  accessed_at: '2026-10-28T21:04:47.472945Z'
+  support: context_only
+  summary: Current repair_ingredient and repair_record act on parsed IDENTICAL_PARTS
+    duplicate notes. This bounded repair is not a general solution for product decomposition,
+    stock flattening or differing source formulations.
+  snapshot_sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+- evidence_id: writer63
+  kind: record_content
+  reference: src/culturemech/enrich/dsmz_resolver.py
+  locator: DSMZCompositionResolver.merge_composition; _is_placeholder; _add_enrichment_metadata
+  accessed_at: '2026-10-28T21:04:47.472979Z'
+  support: context_only
+  summary: Current DSMZCompositionResolver.merge_composition copies ingredients and
+    solutions, fills pH when absent and copies physical/medium type, but does not
+    copy preparation steps. _add_enrichment_metadata records a naive current timestamp.
+    This explains a present omission risk, not historical execution.
+  snapshot_sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+- evidence_id: writer64
+  kind: record_content
+  reference: src/culturemech/import/komodo_web_importer.py
+  locator: _convert_to_culturemech
+  accessed_at: '2026-10-28T21:04:47.473003Z'
+  support: context_only
+  summary: Current _convert_to_culturemech constructs source notes and default LIQUID
+    with empty ingredients. Its time.strftime format contains %f, which is unsupported
+    here and is consistent with literal .fZ in stored import events. Current code
+    does not authenticate the original retrieval or justify rewriting historical time.
+  snapshot_sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+- evidence_id: writer65
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition; _is_api_stock_addition; _parse_api_solutions; _parse_preparation_steps
+  accessed_at: '2026-10-28T21:04:47.473034Z'
+  support: context_only
+  summary: Current _parse_api_composition considers the primary recipe, prefers provider
+    g_l when available and excludes four recognized water labels; tap water is not
+    among those exclusions; _is_api_stock_addition distinguishes stock additions.
+    _parse_api_solutions retains separate stock structure. _parse_preparation_steps
+    collects solution prose. These present behaviors do not establish historical execution
+    and cannot justify interpreting flattened stock rates as final-medium concentrations.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer66
+  kind: record_content
+  reference: src/culturemech/match/kg_media_matcher.py
+  locator: extract_recipe_ingredients; find_matches; find_exact_match
+  accessed_at: '2026-10-28T21:04:47.473066Z'
+  support: context_only
+  summary: Current extract_recipe_ingredients collects asserted CHEBI/FOODON IDs,
+    find_matches compares set Jaccard and find_exact_match selects the first exact
+    identifier set. Quantities, preparation and ungrounded ingredients are not compared,
+    so an exact set match does not establish formulation identity.
+  snapshot_sha256: 43f01f4b6e9285a60db437d7903646545ad6a6548e6b85f4478eb9b0e1b74e33
+- evidence_id: writer67
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content; merge_formulation_evidence
+  accessed_at: '2026-10-28T21:04:47.473089Z'
+  support: context_only
+  summary: Current formulation_content retains exact scientific quantities, preparation
+    and other scientific fields; merge_formulation_evidence rejects incompatible projections
+    and unions evidence at matching scopes. A source-equivalence claim is not established
+    by shared ingredient identities.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer68
+  kind: record_content
+  reference: src/culturemech/merge/matcher.py
+  locator: group_formulations; group_recipes
+  accessed_at: '2026-10-28T21:04:47.473115Z'
+  support: context_only
+  summary: Current group_formulations calls group_recipes with fail_on_invalid=True
+    and FormulationFingerprinter. Expected standalone or unfingerprintable records
+    are excluded; malformed or unexpected inputs raise. Valid records are grouped
+    by full scientific content. This guard does not retrieve or authenticate source
+    recipes.
+  snapshot_sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+- evidence_id: writer69
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: merge_group
+  accessed_at: '2026-10-28T21:04:47.473137Z'
+  support: context_only
+  summary: Current merge_group routes a single maintained owner with merge metadata;
+    multiple owners pass through conservative merge_formulation_evidence. Regenerating
+    from an unrepaired owner retains its defects. Current conservative behavior is
+    credited and does not establish how the old generated record was produced.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer70
+  kind: record_content
+  reference: src/culturemech/validation/schema_defaulter.py
+  locator: apply_defaults; _fix_ingredient; _fix_solution
+  accessed_at: '2026-10-28T21:04:47.473160Z'
+  support: context_only
+  summary: Current apply_defaults, _fix_ingredient and _fix_solution can insert VARIABLE
+    amounts and placeholder names for structural completeness. A default is not evidence
+    for a dose, composition, solution identity or denominator; existing default-history
+    events remain contextual.
+  snapshot_sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record05/quantity-inventory.json
+  locator: decisions
+  accessed_at: '2026-10-28T21:04:47.527409Z'
+  support: supports
+  summary: Complete explicit decisions with exact current local values, per-layer
+    locators, source quotes/hash/time, stage and arithmetic limits.
+  snapshot_sha256: 019396bdbf9d36c2598027b06a1838af4155ad68c8fb786c70c63d159385f044
+assessments:
+- assessment_id: a1
+  area: identity
+  topic: Exact maintained source branches
+  outcome: concern
+  summary: DSM708 and current API708 establish the exact primary formulation. DSM10338
+    collection identity ties strain ASRB1 to this source, without new growth evidence.
+    The second maintained contributor identifies KOMODO708; exact current retrieval
+    returned 403. Its identity/inference limitations remain distinct from supported
+    current DSM batches.
+  target_ids:
+  - CultureMech:001845
+  evidence_ids:
+  - local0
+  - local1
+  - local2
+  - dsm708
+  - api708
+  - dsm10338Identity
+  - komodo708
+- assessment_id: a2
+  area: consistency
+  topic: Credit existing owner repairs and classification
+  outcome: supported
+  summary: Both owners already retain ten correctly scoped stock components, separating
+    four formerly summed vitamin pairs. The generated target still has four summed
+    values and no stocks. Eleven main rates, pH 7.2–7.6, DSM main preparation, DEFINED
+    and LIQUID are supported with current source/provider scope. Incomplete owner
+    reconstruction and unsupported dose denominators must be resolved before regeneration.
+  target_ids:
+  - CultureMech:001845
+  evidence_ids:
+  - local0
+  - local1
+  - local2
+  - dsm708
+  - api708
+- assessment_id: a3
+  area: grounding
+  topic: Supplied forms and spelling-specific MIM status
+  outcome: concern
+  summary: Nickel hexahydrate uses anhydrous 34887 and sodium resazurin uses neutral
+    8806. Other exact hydrates, sodium propionate, thiamine hydrochloride dihydrate
+    and calcium pantothenate formulas agree with their source scopes. MIM preferred
+    CoCl2 x 6 H2O is REJECTED while Cobalt chloride hexahydrate is MAPPED for correct
+    53503; preferred Ca-pantothenate and Calcium D-Pantothenate are REJECTED whereas
+    Calcium pantothenate is MAPPED for correct 31345. These label-status distinctions
+    do not make those supplied-form IDs wrong. Vitamin B12 remains a class.
+  target_ids:
+  - CultureMech:001845
+  evidence_ids:
+  - grounding
+  - chebi34887
+  - chebi8806
+  - chebi53503
+  - chebi31345
+  - chebi132751
+  - chebi132106
+  - chebi91258
+- assessment_id: a4
+  area: provenance
+  topic: Historical assertions and current writers
+  outcome: concern
+  summary: All five complete historical reports and two exact selected parent rows
+    (193 claims) were read. Both parent source digests equal current API708; 102 source
+    objects match literally and as decoded objects. Existing ten-component nesting
+    and unresolved candidate counterevidence are credited independently of the old
+    blanket topology conflicts. There are no attached formulation claims in any current
+    layer; current source equality does not prove historical access/execution. Current
+    conservative merging preserves scientific fields and rejects incompatible formulations.
+    Inspected writer behavior is described separately by exact file and function;
+    it does not prove historical execution.
+  target_ids:
+  - CultureMech:001845
+  evidence_ids:
+  - history-auth
+  - historical-current-joins
+  - writer53
+  - writer54
+  - writer55
+  - writer56
+  - writer57
+  - writer58
+  - writer59
+  - writer60
+  - writer61
+  - writer62
+  - writer63
+  - writer64
+  - writer65
+  - writer66
+  - writer67
+  - writer68
+  - writer69
+  - writer70
+- assessment_id: a5
+  area: quantity
+  topic: Every concentration and source-only amount/stage
+  outcome: concern
+  summary: All 119 selected target/owner concentration fields have explicit decisions;
+    source-only stock, liquid, control and denominator gaps are retained separately.
+  target_ids:
+  - CultureMech:001845
+  evidence_ids:
+  - quantity-inventory
+  details: '{"schema": "private explicit quantity decisions v1", "target_id": "CultureMech:001845",
+    "selected_concentration_field_count": 119, "selected_concentration_fields_covered":
+    119, "decisions": [{"decision_id": "q1", "subject": "Na2HPO4 x 2 H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[0].concentration", "original": {"value": "0.527888",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "ingredients[0].concentration", "original": {"value": "0.527888",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "ingredients[0].concentration", "original": {"value": "0.527888",
+    "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM708 provider main-medium
+    normalization", "interpretation": "All three current layers retain the explicit
+    provider g_l=0.527888. This is its declared nominal 1004 ml recipe basis, not
+    an independently measured final-volume conclusion from the primary 1000 ml water.
+    Preserve the exact primary batch amount, provider attribution and separate preparation
+    stages. No attached claim exists. ", "sources": [{"locator": "extracted-text physical
+    LF lines 3-3", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Na2HPO4
+    x 2 H2O                                            0.53         g", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[0]", "source_key":
+    "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Na2HPO4 x 2 H2O\",\n                        \"compound_id\":
+    181,\n                        \"amount\": 0.53,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.527888,\n                        \"mmol_l\":
+    3.7186,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q2", "subject": "KH2PO4", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "0.408367",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "0.408367",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "0.408367",
+    "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM708 provider main-medium
+    normalization", "interpretation": "All three current layers retain the explicit
+    provider g_l=0.408367. This is its declared nominal 1004 ml recipe basis, not
+    an independently measured final-volume conclusion from the primary 1000 ml water.
+    Preserve the exact primary batch amount, provider attribution and separate preparation
+    stages. No attached claim exists. ", "sources": [{"locator": "extracted-text physical
+    LF lines 4-4", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   KH2PO4                                                     0.41         g",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[1]",
+    "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708",
+    "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 0.41,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.408367,\n                        \"mmol_l\":
+    3.00082,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q3", "subject": "NH4Cl", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "0.298805",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "0.298805",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "0.298805",
+    "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM708 provider main-medium
+    normalization", "interpretation": "All three current layers retain the explicit
+    provider g_l=0.298805. This is its declared nominal 1004 ml recipe basis, not
+    an independently measured final-volume conclusion from the primary 1000 ml water.
+    Preserve the exact primary batch amount, provider attribution and separate preparation
+    stages. No attached claim exists. ", "sources": [{"locator": "extracted-text physical
+    LF lines 5-5", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   NH4Cl                                                      0.30         g",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[2]",
+    "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708",
+    "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\":
+    42,\n                        \"amount\": 0.3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.298805,\n                        \"mmol_l\":
+    5.58618,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q4", "subject": "CaCl2 x 2 H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[3].concentration", "original": {"value": "0.109562",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "ingredients[3].concentration", "original": {"value": "0.109562",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "ingredients[3].concentration", "original": {"value": "0.109562",
+    "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM708 provider main-medium
+    normalization", "interpretation": "All three current layers retain the explicit
+    provider g_l=0.109562. This is its declared nominal 1004 ml recipe basis, not
+    an independently measured final-volume conclusion from the primary 1000 ml water.
+    Preserve the exact primary batch amount, provider attribution and separate preparation
+    stages. No attached claim exists. ", "sources": [{"locator": "extracted-text physical
+    LF lines 6-6", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   CaCl2
+    x 2 H2O                                              0.11         g", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[3]", "source_key":
+    "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\":
+    7,\n                        \"amount\": 0.11,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.109562,\n                        \"mmol_l\":
+    0.745242,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q5", "subject": "MgCl2 x 6 H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[4].concentration", "original": {"value": "0.0996016",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "ingredients[4].concentration", "original": {"value": "0.0996016",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "ingredients[4].concentration", "original": {"value": "0.0996016",
+    "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM708 provider main-medium
+    normalization", "interpretation": "All three current layers retain the explicit
+    provider g_l=0.0996016. This is its declared nominal 1004 ml recipe basis, not
+    an independently measured final-volume conclusion from the primary 1000 ml water.
+    Preserve the exact primary batch amount, provider attribution and separate preparation
+    stages. No attached claim exists. ", "sources": [{"locator": "extracted-text physical
+    LF lines 7-7", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   MgCl2
+    x 6 H2O                                              0.10         g", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[4]", "source_key":
+    "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\":
+    79,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.0996016,\n                        \"mmol_l\":
+    0.489917,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q6", "subject": "Na2SO4", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[5].concentration", "original": {"value": "2.78884",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "ingredients[5].concentration", "original": {"value": "2.78884",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "ingredients[5].concentration", "original": {"value": "2.78884",
+    "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM708 provider main-medium
+    normalization", "interpretation": "All three current layers retain the explicit
+    provider g_l=2.78884. This is its declared nominal 1004 ml recipe basis, not an
+    independently measured final-volume conclusion from the primary 1000 ml water.
+    Preserve the exact primary batch amount, provider attribution and separate preparation
+    stages. No attached claim exists. ", "sources": [{"locator": "extracted-text physical
+    LF lines 8-8", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Na2SO4                                                     2.80         g",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[5]",
+    "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708",
+    "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"Na2SO4\",\n                        \"compound_id\":
+    110,\n                        \"amount\": 2.8,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2.78884,\n                        \"mmol_l\":
+    19.6342,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q7", "subject": "NaCl", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[6].concentration", "original": {"value": "0.298805",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "ingredients[6].concentration", "original": {"value": "0.298805",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "ingredients[6].concentration", "original": {"value": "0.298805",
+    "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM708 provider main-medium
+    normalization", "interpretation": "All three current layers retain the explicit
+    provider g_l=0.298805. This is its declared nominal 1004 ml recipe basis, not
+    an independently measured final-volume conclusion from the primary 1000 ml water.
+    Preserve the exact primary batch amount, provider attribution and separate preparation
+    stages. No attached claim exists. ", "sources": [{"locator": "extracted-text physical
+    LF lines 9-9", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   NaCl                                                       0.30         g",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[6]",
+    "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708",
+    "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\":
+    43,\n                        \"amount\": 0.3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.298805,\n                        \"mmol_l\":
+    5.11302,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q8", "subject": "Sodium resazurin", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[7].concentration", "original": {"value": "0.000498008",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "ingredients[7].concentration", "original": {"value": "0.000498008",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "ingredients[7].concentration", "original": {"value": "0.000498008",
+    "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM708 provider main-medium
+    normalization", "interpretation": "All three current layers retain the explicit
+    provider g_l=0.000498008. This is its declared nominal 1004 ml recipe basis, not
+    an independently measured final-volume conclusion from the primary 1000 ml water.
+    Preserve the exact primary batch amount, provider attribution and separate preparation
+    stages. No attached claim exists. The primary resazurin reagent is explicitly
+    0.1% w/v, added as 0.5 ml.", "sources": [{"locator": "extracted-text physical
+    LF lines 12-12", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Sodium
+    resazurin (0.1% w/v)                                0.50        ml", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[9]", "source_key":
+    "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\":
+    1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.000498008,\n                        \"mmol_l\": 0.00198275,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id":
+    "q9", "subject": "Na2CO3", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[8].concentration", "original": {"value": "1.49402",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "ingredients[8].concentration", "original": {"value": "1.49402",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "ingredients[8].concentration", "original": {"value": "1.49402",
+    "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM708 provider main-medium
+    normalization", "interpretation": "All three current layers retain the explicit
+    provider g_l=1.49402. This is its declared nominal 1004 ml recipe basis, not an
+    independently measured final-volume conclusion from the primary 1000 ml water.
+    Preserve the exact primary batch amount, provider attribution and separate preparation
+    stages. No attached claim exists. ", "sources": [{"locator": "extracted-text physical
+    LF lines 13-13", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Na2CO3                                                     1.50         g",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[10]",
+    "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708",
+    "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\":
+    32,\n                        \"amount\": 1.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.49402,\n                        \"mmol_l\":
+    14.0962,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q10", "subject": "Na-propionate", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[9].concentration", "original": {"value": "1.99203",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "ingredients[9].concentration", "original": {"value": "1.99203",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "ingredients[9].concentration", "original": {"value": "1.99203",
+    "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM708 provider main-medium
+    normalization", "interpretation": "All three current layers retain the explicit
+    provider g_l=1.99203. This is its declared nominal 1004 ml recipe basis, not an
+    independently measured final-volume conclusion from the primary 1000 ml water.
+    Preserve the exact primary batch amount, provider attribution and separate preparation
+    stages. No attached claim exists. ", "sources": [{"locator": "extracted-text physical
+    LF lines 16-16", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Na-propionate                                              2.00         g",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[13]",
+    "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708",
+    "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    14,\n                        \"compound\": \"Na-propionate\",\n                        \"compound_id\":
+    301,\n                        \"amount\": 2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.99203,\n                        \"mmol_l\":
+    20.7374,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q11", "subject": "Na2S x 9 H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[10].concentration", "original": {"value": "0.498008",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "ingredients[10].concentration", "original": {"value": "0.498008",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "ingredients[10].concentration", "original": {"value": "0.498008",
+    "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM708 provider main-medium
+    normalization", "interpretation": "All three current layers retain the explicit
+    provider g_l=0.498008. This is its declared nominal 1004 ml recipe basis, not
+    an independently measured final-volume conclusion from the primary 1000 ml water.
+    Preserve the exact primary batch amount, provider attribution and separate preparation
+    stages. No attached claim exists. ", "sources": [{"locator": "extracted-text physical
+    LF lines 17-17", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Na2S x
+    9 H2O                                               0.50         g", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[14]", "source_key":
+    "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    15,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\":
+    54,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.498008,\n                        \"mmol_l\":
+    2.07346,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q12", "subject": "HCl", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[11].concentration", "original": {"value": "2.5", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "ingredients[11].concentration", "original": {"value": "2.5", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "ingredients[11].concentration", "original": {"value": "2.5", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "separate Trace element solution
+    SL-10", "interpretation": "This explicit stock component g_l=2.5 is wrongly represented
+    at root/main scope. Restore the distinct stock rather than treating the rate as
+    a final-medium amount. The primary gives 10 ml HCl (25%) without percentage basis
+    or density. Provider 2.5 g/L is only a provider assertion; pure-HCl mass is not
+    independently derived.", "sources": [{"locator": "extracted-text physical LF lines
+    32-32", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   HCl (25%)                                                  10.00      ml",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[1].recipe[0]",
+    "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708",
+    "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"HCl\",\n                        \"compound_id\":
+    68,\n                        \"attribute\": \"25%\",\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    2.5,\n                        \"mmol_l\": 68.5683,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "extracted-text physical LF lines 43-44", "source_key": "dsm708", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256":
+    "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256":
+    "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at":
+    "2026-10-28T20:57:49.518934Z", "exact_source_quote": "First dissolve FeCl2 in
+    the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake
+    up to 1000.00 ml.", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q13", "subject": "FeCl2 x 4 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[12].concentration", "original": {"value": "1.5", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "separate Trace element solution
+    SL-10", "interpretation": "This explicit stock component g_l=1.5 is wrongly represented
+    at root/main scope. Restore the distinct stock rather than treating the rate as
+    a final-medium amount. Primary SL-10 explicitly makes up to 1000 ml.", "sources":
+    [{"locator": "extracted-text physical LF lines 33-33", "source_key": "dsm708",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   FeCl2
+    x 4 H2O                                               1.50       g", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[1].recipe[1]", "source_key":
+    "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"FeCl2 x 4 H2O\",\n                        \"compound_id\":
+    260,\n                        \"amount\": 1.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\":
+    7.54482,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 43-44", "source_key":
+    "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "First dissolve
+    FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake
+    up to 1000.00 ml.", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q14", "subject": "FeCl2 x 4 H2O already nested", "local_fields": [{"record_path":
+    "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path":
+    "solutions[0].composition[0].concentration", "original": {"value": "1.5", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "solutions[0].composition[0].concentration", "original": {"value":
+    "1.5", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "retained Trace
+    element solution SL-10", "interpretation": "The maintained owners already preserve
+    this component at the correct stock scope and value g_l=1.5; credit that partial
+    repair. It does not make the incomplete stock composition or receiving denominator
+    complete. Primary SL-10 explicitly makes up to 1000 ml.", "sources": [{"locator":
+    "extracted-text physical LF lines 33-33", "source_key": "dsm708", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256":
+    "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256":
+    "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at":
+    "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   FeCl2 x 4 H2O                                               1.50       g",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[1].recipe[1]",
+    "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708",
+    "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"FeCl2 x 4 H2O\",\n                        \"compound_id\":
+    260,\n                        \"amount\": 1.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\":
+    7.54482,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 43-44", "source_key":
+    "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "First dissolve
+    FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake
+    up to 1000.00 ml.", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q15", "subject": "ZnCl2", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[13].concentration", "original": {"value": "0.07", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "ingredients[12].concentration", "original": {"value": "0.07", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "ingredients[12].concentration", "original": {"value": "0.07", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "separate Trace element solution
+    SL-10", "interpretation": "This explicit stock component g_l=0.07 is wrongly represented
+    at root/main scope. Restore the distinct stock rather than treating the rate as
+    a final-medium amount. Primary SL-10 explicitly makes up to 1000 ml.", "sources":
+    [{"locator": "extracted-text physical LF lines 34-34", "source_key": "dsm708",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   ZnCl2                                                      70.00      mg",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[1].recipe[2]",
+    "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708",
+    "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"ZnCl2\",\n                        \"compound_id\":
+    64,\n                        \"amount\": 70,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.07,\n                        \"mmol_l\":
+    0.513573,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 43-44", "source_key":
+    "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "First dissolve
+    FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake
+    up to 1000.00 ml.", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q16", "subject": "MnCl2 x 4 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[14].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "ingredients[13].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "ingredients[13].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "separate Trace element solution
+    SL-10", "interpretation": "This explicit stock component g_l=0.1 is wrongly represented
+    at root/main scope. Restore the distinct stock rather than treating the rate as
+    a final-medium amount. Primary SL-10 explicitly makes up to 1000 ml.", "sources":
+    [{"locator": "extracted-text physical LF lines 35-35", "source_key": "dsm708",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   MnCl2
+    x 4 H2O                                             100.00      mg", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[1].recipe[3]", "source_key":
+    "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\":
+    36,\n                        \"amount\": 100,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.505293,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 43-44", "source_key":
+    "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "First dissolve
+    FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake
+    up to 1000.00 ml.", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q17", "subject": "H3BO3", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[15].concentration", "original": {"value": "0.006",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "ingredients[14].concentration", "original": {"value": "0.006",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "ingredients[14].concentration", "original": {"value": "0.006",
+    "unit": "G_PER_L"}}], "decision": "correct", "stage": "separate Trace element
+    solution SL-10", "interpretation": "This explicit stock component g_l=0.006 is
+    wrongly represented at root/main scope. Restore the distinct stock rather than
+    treating the rate as a final-medium amount. Primary SL-10 explicitly makes up
+    to 1000 ml.", "sources": [{"locator": "extracted-text physical LF lines 36-36",
+    "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   H3BO3                                                       6.00      mg",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[1].recipe[4]",
+    "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708",
+    "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\":
+    37,\n                        \"amount\": 6,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.006,\n                        \"mmol_l\":
+    0.0970246,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 43-44", "source_key":
+    "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "First dissolve
+    FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake
+    up to 1000.00 ml.", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q18", "subject": "CoCl2 x 6 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[16].concentration", "original": {"value": "0.19", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "ingredients[15].concentration", "original": {"value": "0.19", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "ingredients[15].concentration", "original": {"value": "0.19", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "separate Trace element solution
+    SL-10", "interpretation": "This explicit stock component g_l=0.19 is wrongly represented
+    at root/main scope. Restore the distinct stock rather than treating the rate as
+    a final-medium amount. Primary SL-10 explicitly makes up to 1000 ml.", "sources":
+    [{"locator": "extracted-text physical LF lines 37-37", "source_key": "dsm708",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   CoCl2
+    x 6 H2O                                             190.00      mg", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[1].recipe[5]", "source_key":
+    "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\":
+    38,\n                        \"amount\": 190,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.19,\n                        \"mmol_l\":
+    1.46335,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 43-44", "source_key":
+    "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "First dissolve
+    FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake
+    up to 1000.00 ml.", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q19", "subject": "CuCl2 x 2 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[17].concentration", "original": {"value": "0.002",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "ingredients[16].concentration", "original": {"value": "0.002",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "ingredients[16].concentration", "original": {"value": "0.002",
+    "unit": "G_PER_L"}}], "decision": "correct", "stage": "separate Trace element
+    solution SL-10", "interpretation": "This explicit stock component g_l=0.002 is
+    wrongly represented at root/main scope. Restore the distinct stock rather than
+    treating the rate as a final-medium amount. Primary SL-10 explicitly makes up
+    to 1000 ml.", "sources": [{"locator": "extracted-text physical LF lines 38-38",
+    "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   CuCl2
+    x 2 H2O                                               2.00      mg", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[1].recipe[6]", "source_key":
+    "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"CuCl2 x 2 H2O\",\n                        \"compound_id\":
+    39,\n                        \"amount\": 2,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\":
+    0.0117314,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 43-44", "source_key":
+    "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "First dissolve
+    FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake
+    up to 1000.00 ml.", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q20", "subject": "NiCl2 x 6 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[18].concentration", "original": {"value": "0.024",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "ingredients[17].concentration", "original": {"value": "0.024",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "ingredients[17].concentration", "original": {"value": "0.024",
+    "unit": "G_PER_L"}}], "decision": "correct", "stage": "separate Trace element
+    solution SL-10", "interpretation": "This explicit stock component g_l=0.024 is
+    wrongly represented at root/main scope. Restore the distinct stock rather than
+    treating the rate as a final-medium amount. Primary SL-10 explicitly makes up
+    to 1000 ml.", "sources": [{"locator": "extracted-text physical LF lines 39-39",
+    "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   NiCl2
+    x 6 H2O                                              24.00      mg", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[1].recipe[7]", "source_key":
+    "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\":
+    40,\n                        \"amount\": 24,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.024,\n                        \"mmol_l\":
+    0.185187,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 43-44", "source_key":
+    "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "First dissolve
+    FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake
+    up to 1000.00 ml.", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q21", "subject": "Na2MoO4 x 2 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[19].concentration", "original": {"value": "0.036",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "ingredients[18].concentration", "original": {"value": "0.036",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "ingredients[18].concentration", "original": {"value": "0.036",
+    "unit": "G_PER_L"}}], "decision": "correct", "stage": "separate Trace element
+    solution SL-10", "interpretation": "This explicit stock component g_l=0.036 is
+    wrongly represented at root/main scope. Restore the distinct stock rather than
+    treating the rate as a final-medium amount. Primary SL-10 explicitly makes up
+    to 1000 ml.", "sources": [{"locator": "extracted-text physical LF lines 40-40",
+    "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Na2MoO4
+    x 2 H2O                                            36.00      mg", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[1].recipe[8]", "source_key":
+    "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\":
+    9,\n                        \"amount\": 36,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.036,\n                        \"mmol_l\":
+    0.148791,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 43-44", "source_key":
+    "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "First dissolve
+    FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake
+    up to 1000.00 ml.", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q22", "subject": "NaOH", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[20].concentration", "original": {"value": "0.5", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "ingredients[19].concentration", "original": {"value": "0.5", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "ingredients[19].concentration", "original": {"value": "0.5", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "separate Selenite-tungstate solution",
+    "interpretation": "This explicit stock component g_l=0.5 is wrongly represented
+    at root/main scope. Restore the distinct stock rather than treating the rate as
+    a final-medium amount. Provider stock g_l is explicit; the listed 1000 ml stock
+    water is a batch input, not independently measured final volume.", "sources":
+    [{"locator": "extracted-text physical LF lines 56-56", "source_key": "dsm708",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   NaOH                                        0.50    g",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[2].recipe[0]",
+    "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708",
+    "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"NaOH\",\n                        \"compound_id\":
+    256,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\":
+    12.5009,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q23", "subject": "Na2SeO3 x 5 H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[21].concentration", "original": {"value": "0.003",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "ingredients[20].concentration", "original": {"value": "0.003",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "ingredients[20].concentration", "original": {"value": "0.003",
+    "unit": "G_PER_L"}}], "decision": "correct", "stage": "separate Selenite-tungstate
+    solution", "interpretation": "This explicit stock component g_l=0.003 is wrongly
+    represented at root/main scope. Restore the distinct stock rather than treating
+    the rate as a final-medium amount. Provider stock g_l is explicit; the listed
+    1000 ml stock water is a batch input, not independently measured final volume.",
+    "sources": [{"locator": "extracted-text physical LF lines 57-57", "source_key":
+    "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Na2SeO3
+    x 5 H2O                             3.00   mg", "quote_representation": "captured
+    extracted text"}, {"locator": "$.data.solutions[2].recipe[1]", "source_key": "api708",
+    "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Na2SeO3 x 5 H2O\",\n                        \"compound_id\":
+    107,\n                        \"amount\": 3,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.003,\n                        \"mmol_l\":
+    0.0114062,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q24", "subject": "Na2WO4 x 2 H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[22].concentration", "original": {"value": "0.004",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "ingredients[21].concentration", "original": {"value": "0.004",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "ingredients[21].concentration", "original": {"value": "0.004",
+    "unit": "G_PER_L"}}], "decision": "correct", "stage": "separate Selenite-tungstate
+    solution", "interpretation": "This explicit stock component g_l=0.004 is wrongly
+    represented at root/main scope. Restore the distinct stock rather than treating
+    the rate as a final-medium amount. Provider stock g_l is explicit; the listed
+    1000 ml stock water is a batch input, not independently measured final volume.",
+    "sources": [{"locator": "extracted-text physical LF lines 58-58", "source_key":
+    "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Na2WO4
+    x 2 H2O                              4.00   mg", "quote_representation": "captured
+    extracted text"}, {"locator": "$.data.solutions[2].recipe[2]", "source_key": "api708",
+    "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Na2WO4 x 2 H2O\",\n                        \"compound_id\":
+    249,\n                        \"amount\": 4,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.004,\n                        \"mmol_l\":
+    0.0121267,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q25", "subject": "Biotin", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[23].concentration", "original": {"value": "0.02", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "ingredients[22].concentration", "original": {"value": "0.02", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "ingredients[22].concentration", "original": {"value": "0.02", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "separate Wolin''s vitamin solution
+    (10x)", "interpretation": "This explicit stock component g_l=0.02 is wrongly represented
+    at root/main scope. Restore the distinct stock rather than treating the rate as
+    a final-medium amount. Provider stock g_l is explicit; the listed 1000 ml stock
+    water is a batch input, not independently measured final volume.", "sources":
+    [{"locator": "extracted-text physical LF lines 64-64", "source_key": "dsm708",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Biotin                                     20.00   mg",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[3].recipe[0]",
+    "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708",
+    "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Biotin\",\n                        \"compound_id\":
+    46,\n                        \"amount\": 20,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\":
+    0.0818632,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q26", "subject": "Folic acid", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[24].concentration", "original": {"value": "0.02", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "ingredients[23].concentration", "original": {"value": "0.02", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "ingredients[23].concentration", "original": {"value": "0.02", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "separate Wolin''s vitamin solution
+    (10x)", "interpretation": "This explicit stock component g_l=0.02 is wrongly represented
+    at root/main scope. Restore the distinct stock rather than treating the rate as
+    a final-medium amount. Provider stock g_l is explicit; the listed 1000 ml stock
+    water is a batch input, not independently measured final volume.", "sources":
+    [{"locator": "extracted-text physical LF lines 65-65", "source_key": "dsm708",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Folic
+    acid                                 20.00   mg", "quote_representation": "captured
+    extracted text"}, {"locator": "$.data.solutions[3].recipe[1]", "source_key": "api708",
+    "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Folic acid\",\n                        \"compound_id\":
+    138,\n                        \"amount\": 20,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\":
+    0.0453104,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q27", "subject": "Pyridoxine hydrochloride
+    already nested", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "solutions[2].composition[2].concentration", "original": {"value":
+    "0.1", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "solutions[2].composition[2].concentration", "original": {"value":
+    "0.1", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "retained Wolin''s
+    vitamin solution (10x)", "interpretation": "The maintained owners already preserve
+    this component at the correct stock scope and value g_l=0.1; credit that partial
+    repair. It does not make the incomplete stock composition or receiving denominator
+    complete. Provider stock g_l is explicit; the listed 1000 ml stock water is a
+    batch input, not independently measured final volume.", "sources": [{"locator":
+    "extracted-text physical LF lines 66-66", "source_key": "dsm708", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256":
+    "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256":
+    "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at":
+    "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Pyridoxine hydrochloride                  100.00   mg",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[3].recipe[2]",
+    "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708",
+    "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\":
+    519,\n                        \"amount\": 100,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.486287,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q28", "subject": "Thiamine HCl", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[26].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "ingredients[24].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "ingredients[24].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "separate Wolin''s vitamin solution
+    (10x)", "interpretation": "This explicit stock component g_l=0.05 is wrongly represented
+    at root/main scope. Restore the distinct stock rather than treating the rate as
+    a final-medium amount. Provider stock g_l is explicit; the listed 1000 ml stock
+    water is a batch input, not independently measured final volume.", "sources":
+    [{"locator": "extracted-text physical LF lines 67-67", "source_key": "dsm708",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Thiamine
+    HCl                               50.00   mg", "quote_representation": "captured
+    extracted text"}, {"locator": "$.data.solutions[3].recipe[3]", "source_key": "api708",
+    "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Thiamine HCl\",\n                        \"compound_id\":
+    1207,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.148236,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q29", "subject": "Riboflavin", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[27].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "ingredients[25].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "ingredients[25].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "separate Wolin''s vitamin solution
+    (10x)", "interpretation": "This explicit stock component g_l=0.05 is wrongly represented
+    at root/main scope. Restore the distinct stock rather than treating the rate as
+    a final-medium amount. Provider stock g_l is explicit; the listed 1000 ml stock
+    water is a batch input, not independently measured final volume.", "sources":
+    [{"locator": "extracted-text physical LF lines 68-68", "source_key": "dsm708",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Riboflavin                                 50.00   mg",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[3].recipe[4]",
+    "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708",
+    "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"Riboflavin\",\n                        \"compound_id\":
+    136,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.132837,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q30", "subject": "Nicotinic acid already
+    nested", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "solutions[2].composition[0].concentration", "original": {"value":
+    "0.05", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "solutions[2].composition[0].concentration", "original": {"value":
+    "0.05", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "retained
+    Wolin''s vitamin solution (10x)", "interpretation": "The maintained owners already
+    preserve this component at the correct stock scope and value g_l=0.05; credit
+    that partial repair. It does not make the incomplete stock composition or receiving
+    denominator complete. Provider stock g_l is explicit; the listed 1000 ml stock
+    water is a batch input, not independently measured final volume.", "sources":
+    [{"locator": "extracted-text physical LF lines 69-69", "source_key": "dsm708",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Nicotinic
+    acid                             50.00   mg", "quote_representation": "captured
+    extracted text"}, {"locator": "$.data.solutions[3].recipe[5]", "source_key": "api708",
+    "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\":
+    139,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.406141,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q31", "subject": "Calcium D-(+)-pantothenate",
+    "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[29].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "ingredients[26].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "ingredients[26].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "separate Wolin''s vitamin solution
+    (10x)", "interpretation": "This explicit stock component g_l=0.05 is wrongly represented
+    at root/main scope. Restore the distinct stock rather than treating the rate as
+    a final-medium amount. Provider stock g_l is explicit; the listed 1000 ml stock
+    water is a batch input, not independently measured final volume.", "sources":
+    [{"locator": "extracted-text physical LF lines 70-70", "source_key": "dsm708",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Calcium
+    D-(+)-pantothenate                 50.00   mg", "quote_representation": "captured
+    extracted text"}, {"locator": "$.data.solutions[3].recipe[6]", "source_key": "api708",
+    "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Calcium D-(+)-pantothenate\",\n                        \"compound_id\":
+    1512,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.209846,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q32", "subject": "Vitamin B12 already nested",
+    "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "solutions[2].composition[3].concentration", "original": {"value":
+    "0.001", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "solutions[2].composition[3].concentration", "original": {"value":
+    "0.001", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "retained
+    Wolin''s vitamin solution (10x)", "interpretation": "The maintained owners already
+    preserve this component at the correct stock scope and value g_l=0.001; credit
+    that partial repair. It does not make the incomplete stock composition or receiving
+    denominator complete. Provider stock g_l is explicit; the listed 1000 ml stock
+    water is a batch input, not independently measured final volume.", "sources":
+    [{"locator": "extracted-text physical LF lines 71-71", "source_key": "dsm708",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Vitamin
+    B12                                 1.00   mg", "quote_representation": "captured
+    extracted text"}, {"locator": "$.data.solutions[3].recipe[7]", "source_key": "api708",
+    "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\":
+    18,\n                        \"amount\": 1,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\":
+    0.00073779,\n                        \"optional\": 0\n                    }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q33", "subject":
+    "p-Aminobenzoic acid already nested", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "solutions[2].composition[1].concentration", "original": {"value":
+    "0.05", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "solutions[2].composition[1].concentration", "original": {"value":
+    "0.05", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "retained
+    Wolin''s vitamin solution (10x)", "interpretation": "The maintained owners already
+    preserve this component at the correct stock scope and value g_l=0.05; credit
+    that partial repair. It does not make the incomplete stock composition or receiving
+    denominator complete. Provider stock g_l is explicit; the listed 1000 ml stock
+    water is a batch input, not independently measured final volume.", "sources":
+    [{"locator": "extracted-text physical LF lines 72-72", "source_key": "dsm708",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   p-Aminobenzoic
+    acid                        50.00   mg", "quote_representation": "captured extracted
+    text"}, {"locator": "$.data.solutions[3].recipe[8]", "source_key": "api708", "reference":
+    "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\":
+    47,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.364591,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q34", "subject": "(DL)-alpha-Lipoic acid",
+    "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[32].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "ingredients[27].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "ingredients[27].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "separate Wolin''s vitamin solution
+    (10x)", "interpretation": "This explicit stock component g_l=0.05 is wrongly represented
+    at root/main scope. Restore the distinct stock rather than treating the rate as
+    a final-medium amount. Provider stock g_l is explicit; the listed 1000 ml stock
+    water is a batch input, not independently measured final volume.", "sources":
+    [{"locator": "extracted-text physical LF lines 73-73", "source_key": "dsm708",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   (DL)-alpha-Lipoic
+    acid                     50.00   mg", "quote_representation": "captured extracted
+    text"}, {"locator": "$.data.solutions[3].recipe[9]", "source_key": "api708", "reference":
+    "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"(DL)-alpha-Lipoic acid\",\n                        \"compound_id\":
+    252,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.24233,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q35", "subject": "Vitamin B12 already nested",
+    "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "solutions[1].composition[4].concentration", "original": {"value":
+    "0.1", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "solutions[1].composition[4].concentration", "original": {"value":
+    "0.1", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "retained Seven
+    vitamins solution", "interpretation": "The maintained owners already preserve
+    this component at the correct stock scope and value g_l=0.1; credit that partial
+    repair. It does not make the incomplete stock composition or receiving denominator
+    complete. Provider stock g_l is explicit; the listed 1000 ml stock water is a
+    batch input, not independently measured final volume.", "sources": [{"locator":
+    "extracted-text physical LF lines 79-79", "source_key": "dsm708", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256":
+    "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256":
+    "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at":
+    "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Vitamin B12                               100.00   mg",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[4].recipe[0]",
+    "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708",
+    "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\":
+    18,\n                        \"amount\": 100,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.073779,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q36", "subject": "p-Aminobenzoic acid already
+    nested", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "solutions[1].composition[2].concentration", "original": {"value":
+    "0.08", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "solutions[1].composition[2].concentration", "original": {"value":
+    "0.08", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "retained
+    Seven vitamins solution", "interpretation": "The maintained owners already preserve
+    this component at the correct stock scope and value g_l=0.08; credit that partial
+    repair. It does not make the incomplete stock composition or receiving denominator
+    complete. Provider stock g_l is explicit; the listed 1000 ml stock water is a
+    batch input, not independently measured final volume.", "sources": [{"locator":
+    "extracted-text physical LF lines 80-80", "source_key": "dsm708", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256":
+    "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256":
+    "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at":
+    "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   p-Aminobenzoic acid                        80.00   mg",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[4].recipe[1]",
+    "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708",
+    "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\":
+    47,\n                        \"amount\": 80,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.08,\n                        \"mmol_l\":
+    0.583345,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q37", "subject": "D-(+)-biotin", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[33].concentration", "original": {"value": "0.02", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "ingredients[28].concentration", "original": {"value": "0.02", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "ingredients[28].concentration", "original": {"value": "0.02", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "separate Seven vitamins solution",
+    "interpretation": "This explicit stock component g_l=0.02 is wrongly represented
+    at root/main scope. Restore the distinct stock rather than treating the rate as
+    a final-medium amount. Provider stock g_l is explicit; the listed 1000 ml stock
+    water is a batch input, not independently measured final volume.", "sources":
+    [{"locator": "extracted-text physical LF lines 81-81", "source_key": "dsm708",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   D-(+)-biotin                               20.00   mg",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[4].recipe[2]",
+    "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708",
+    "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"D-(+)-biotin\",\n                        \"compound_id\":
+    1359,\n                        \"amount\": 20,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\":
+    0.0818632,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q38", "subject": "Nicotinic acid already
+    nested", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "solutions[1].composition[1].concentration", "original": {"value":
+    "0.2", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "solutions[1].composition[1].concentration", "original": {"value":
+    "0.2", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "retained Seven
+    vitamins solution", "interpretation": "The maintained owners already preserve
+    this component at the correct stock scope and value g_l=0.2; credit that partial
+    repair. It does not make the incomplete stock composition or receiving denominator
+    complete. Provider stock g_l is explicit; the listed 1000 ml stock water is a
+    batch input, not independently measured final volume.", "sources": [{"locator":
+    "extracted-text physical LF lines 82-82", "source_key": "dsm708", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256":
+    "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256":
+    "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at":
+    "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Nicotinic acid                            200.00   mg",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[4].recipe[3]",
+    "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708",
+    "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\":
+    139,\n                        \"amount\": 200,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\":
+    1.62456,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q39", "subject": "Calcium pantothenate",
+    "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[34].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "ingredients[29].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "ingredients[29].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "separate Seven vitamins solution",
+    "interpretation": "This explicit stock component g_l=0.1 is wrongly represented
+    at root/main scope. Restore the distinct stock rather than treating the rate as
+    a final-medium amount. Provider stock g_l is explicit; the listed 1000 ml stock
+    water is a batch input, not independently measured final volume.", "sources":
+    [{"locator": "extracted-text physical LF lines 83-83", "source_key": "dsm708",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Calcium
+    pantothenate                      100.00   mg", "quote_representation": "captured
+    extracted text"}, {"locator": "$.data.solutions[4].recipe[4]", "source_key": "api708",
+    "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"Calcium pantothenate\",\n                        \"compound_id\":
+    518,\n                        \"amount\": 100,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.209849,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q40", "subject": "Pyridoxine hydrochloride
+    already nested", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "solutions[1].composition[3].concentration", "original": {"value":
+    "0.3", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "solutions[1].composition[3].concentration", "original": {"value":
+    "0.3", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "retained Seven
+    vitamins solution", "interpretation": "The maintained owners already preserve
+    this component at the correct stock scope and value g_l=0.3; credit that partial
+    repair. It does not make the incomplete stock composition or receiving denominator
+    complete. Provider stock g_l is explicit; the listed 1000 ml stock water is a
+    batch input, not independently measured final volume.", "sources": [{"locator":
+    "extracted-text physical LF lines 84-84", "source_key": "dsm708", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256":
+    "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256":
+    "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at":
+    "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Pyridoxine hydrochloride                  300.00   mg",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[4].recipe[5]",
+    "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708",
+    "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\":
+    519,\n                        \"amount\": 300,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.3,\n                        \"mmol_l\":
+    1.45886,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q41", "subject": "Thiamine-HCl x 2 H2O",
+    "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[35].concentration", "original": {"value": "0.2", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "separate Seven vitamins solution",
+    "interpretation": "This explicit stock component g_l=0.2 is wrongly represented
+    at root/main scope. Restore the distinct stock rather than treating the rate as
+    a final-medium amount. Provider stock g_l is explicit; the listed 1000 ml stock
+    water is a batch input, not independently measured final volume.", "sources":
+    [{"locator": "extracted-text physical LF lines 85-85", "source_key": "dsm708",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Thiamine-HCl
+    x 2 H2O                      200.00   mg", "quote_representation": "captured extracted
+    text"}, {"locator": "$.data.solutions[4].recipe[6]", "source_key": "api708", "reference":
+    "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Thiamine-HCl x 2 H2O\",\n                        \"compound_id\":
+    77,\n                        \"amount\": 200,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\":
+    0.535761,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q42", "subject": "Thiamine-HCl x 2 H2O
+    already nested", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "solutions[1].composition[0].concentration", "original": {"value":
+    "0.2", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "solutions[1].composition[0].concentration", "original": {"value":
+    "0.2", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "retained Seven
+    vitamins solution", "interpretation": "The maintained owners already preserve
+    this component at the correct stock scope and value g_l=0.2; credit that partial
+    repair. It does not make the incomplete stock composition or receiving denominator
+    complete. Provider stock g_l is explicit; the listed 1000 ml stock water is a
+    batch input, not independently measured final volume.", "sources": [{"locator":
+    "extracted-text physical LF lines 85-85", "source_key": "dsm708", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256":
+    "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256":
+    "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at":
+    "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Thiamine-HCl x 2 H2O                      200.00   mg",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[4].recipe[6]",
+    "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708",
+    "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Thiamine-HCl x 2 H2O\",\n                        \"compound_id\":
+    77,\n                        \"amount\": 200,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\":
+    0.535761,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q43", "subject": "Pyridoxine hydrochloride
+    summed target value", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[25].concentration", "original": {"value": "0.4", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "two independent vitamin stocks",
+    "interpretation": "Target 0.4 g/L is the sum of Wolin 0.1 and seven-vitamin 0.3
+    stock rates. Adding stock concentrations is not a receiving-medium calculation.
+    Both maintained owners already separate these two exact components, and that repair
+    is credited; regenerate only after completing the remaining source reconstruction.",
+    "sources": [{"locator": "extracted-text physical LF lines 66-66", "source_key":
+    "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Pyridoxine
+    hydrochloride                  100.00   mg", "quote_representation": "captured
+    extracted text"}, {"locator": "extracted-text physical LF lines 84-84", "source_key":
+    "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Pyridoxine
+    hydrochloride                  300.00   mg", "quote_representation": "captured
+    extracted text"}, {"locator": "$.data.solutions[3].recipe[2]", "source_key": "api708",
+    "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\":
+    519,\n                        \"amount\": 100,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.486287,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[4].recipe[5]", "source_key":
+    "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\":
+    519,\n                        \"amount\": 300,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.3,\n                        \"mmol_l\":
+    1.45886,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q44", "subject": "Nicotinic acid summed
+    target value", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[28].concentration", "original": {"value": "0.25", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "two independent vitamin stocks",
+    "interpretation": "Target 0.25 g/L is the sum of Wolin 0.05 and seven-vitamin
+    0.2 stock rates. Adding stock concentrations is not a receiving-medium calculation.
+    Both maintained owners already separate these two exact components, and that repair
+    is credited; regenerate only after completing the remaining source reconstruction.",
+    "sources": [{"locator": "extracted-text physical LF lines 69-69", "source_key":
+    "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Nicotinic
+    acid                             50.00   mg", "quote_representation": "captured
+    extracted text"}, {"locator": "extracted-text physical LF lines 82-82", "source_key":
+    "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Nicotinic
+    acid                            200.00   mg", "quote_representation": "captured
+    extracted text"}, {"locator": "$.data.solutions[3].recipe[5]", "source_key": "api708",
+    "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\":
+    139,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.406141,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[4].recipe[3]", "source_key":
+    "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\":
+    139,\n                        \"amount\": 200,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\":
+    1.62456,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q45", "subject": "Vitamin B12 summed target
+    value", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[30].concentration", "original": {"value": "0.101",
+    "unit": "G_PER_L"}}], "decision": "correct", "stage": "two independent vitamin
+    stocks", "interpretation": "Target 0.101 g/L is the sum of Wolin 0.001 and seven-vitamin
+    0.1 stock rates. Adding stock concentrations is not a receiving-medium calculation.
+    Both maintained owners already separate these two exact components, and that repair
+    is credited; regenerate only after completing the remaining source reconstruction.",
+    "sources": [{"locator": "extracted-text physical LF lines 71-71", "source_key":
+    "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Vitamin
+    B12                                 1.00   mg", "quote_representation": "captured
+    extracted text"}, {"locator": "extracted-text physical LF lines 79-79", "source_key":
+    "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Vitamin
+    B12                               100.00   mg", "quote_representation": "captured
+    extracted text"}, {"locator": "$.data.solutions[3].recipe[7]", "source_key": "api708",
+    "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\":
+    18,\n                        \"amount\": 1,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\":
+    0.00073779,\n                        \"optional\": 0\n                    }",
+    "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[4].recipe[0]",
+    "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708",
+    "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\":
+    18,\n                        \"amount\": 100,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.073779,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q46", "subject": "p-Aminobenzoic acid summed
+    target value", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ingredients[31].concentration", "original": {"value": "0.13", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "two independent vitamin stocks",
+    "interpretation": "Target 0.13 g/L is the sum of Wolin 0.05 and seven-vitamin
+    0.08 stock rates. Adding stock concentrations is not a receiving-medium calculation.
+    Both maintained owners already separate these two exact components, and that repair
+    is credited; regenerate only after completing the remaining source reconstruction.",
+    "sources": [{"locator": "extracted-text physical LF lines 72-72", "source_key":
+    "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   p-Aminobenzoic
+    acid                        50.00   mg", "quote_representation": "captured extracted
+    text"}, {"locator": "extracted-text physical LF lines 80-80", "source_key": "dsm708",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   p-Aminobenzoic
+    acid                        80.00   mg", "quote_representation": "captured extracted
+    text"}, {"locator": "$.data.solutions[3].recipe[8]", "source_key": "api708", "reference":
+    "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\":
+    47,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.364591,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[4].recipe[1]", "source_key":
+    "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\":
+    47,\n                        \"amount\": 80,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.08,\n                        \"mmol_l\":
+    0.583345,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q47", "subject": "DSM maintained Trace
+    element solution SL-10 dose", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "solutions[0].concentration", "original": {"value": "1", "unit":
+    "ML_PER_L"}}], "decision": "unsupported", "stage": "receiving addition denominator",
+    "interpretation": "The primary supports 1 ml in the named batch, while the maintained
+    DSM owner asserts 1 ML_PER_L. API main volume is nominal 1004 ml; neither source
+    independently supports exactly one final litre. Preserve the source 1 ml batch
+    amount, resolve the denominator explicitly and do not silently accept or replace
+    it with a calculated final dose.", "sources": [{"locator": "extracted-text physical
+    LF lines 10-10", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Trace
+    element solution SL-10                               1.00        ml", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key":
+    "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\":
+    595,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q48", "subject": "KOMODO unasserted Trace
+    element solution SL-10 dose candidate", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "solutions[0].concentration_candidates[0]", "original": {"value":
+    "1", "unit": "ML_PER_L", "basis": "CROSS_MEDIUM_INFERENCE", "support": "KOMODO
+    708 resolves to DSMZ/MediaDive medium 708 both structurally and via the KOMODO->DSMZ
+    export; volume read from that medium''s recipe.", "counterevidence": "Not confirmed
+    as medium 708: 89% of the 36 shared compounds carry the same value (11 shared
+    with that medium''s main solution). A record that IS the medium scores 100%, with
+    at least 5 main-solution compounds. A stock''s addition volume varies by citing
+    medium: MediaDive medium 142 adds ''Trace element solution (Vishniac & Santer)''
+    at 0.2 ml and medium 69 adds the same stock at 5 ml.", "proposed_by": "apply_cocktail_nesting.py"}}],
+    "decision": "unsupported", "stage": "unasserted cross-medium candidate", "interpretation":
+    "This remains CROSS_MEDIUM_INFERENCE with explicit 89% composition counterevidence,
+    not an asserted concentration. Exact KOMODO access is 403. Current DSM batch support
+    does not automatically promote the candidate or authenticate a per-litre denominator.",
+    "sources": [{"locator": "extracted-text physical LF lines 10-10", "source_key":
+    "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Trace
+    element solution SL-10                               1.00        ml", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key":
+    "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\":
+    595,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q49", "subject": "Trace element solution
+    SL-10 retained numeric note", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "solutions[0].preparation_notes", "original": "Stock prepared in
+    1000 ml; added at 1 ml per litre of medium. Composition and volume from MediaDive
+    (#150)."}], "decision": "unsupported", "stage": "stock volume and receiving-dose
+    note", "interpretation": "The retained 1000 ml stock note has source context:
+    SL-10 has explicit make-up; the vitamin stocks list 1000 ml water/provider volume.
+    The separate 1 ml/l statement or proposal lacks an independently verified final-litre
+    basis. KOMODO wording that composition is not asserted does not cancel its actual
+    nested concentration fields. Retain supported stock context, qualify or correct
+    the dose wording, and preserve its historical inference provenance.", "sources":
+    [{"locator": "extracted-text physical LF lines 10-10", "source_key": "dsm708",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Trace
+    element solution SL-10                               1.00        ml", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key":
+    "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\":
+    595,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 43-44", "source_key":
+    "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "First dissolve
+    FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake
+    up to 1000.00 ml.", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q50", "subject": "Trace element solution SL-10 retained numeric note", "local_fields":
+    [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "solutions[0].preparation_notes", "original": "Stock prepared in
+    1000 ml. Composition and addition volume NOT asserted: proposed as 1 ml/l on basis
+    CROSS_MEDIUM_INFERENCE; see concentration_candidates (#150)."}], "decision": "unsupported",
+    "stage": "stock volume and receiving-dose note", "interpretation": "The retained
+    1000 ml stock note has source context: SL-10 has explicit make-up; the vitamin
+    stocks list 1000 ml water/provider volume. The separate 1 ml/l statement or proposal
+    lacks an independently verified final-litre basis. KOMODO wording that composition
+    is not asserted does not cancel its actual nested concentration fields. Retain
+    supported stock context, qualify or correct the dose wording, and preserve its
+    historical inference provenance.", "sources": [{"locator": "extracted-text physical
+    LF lines 10-10", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Trace
+    element solution SL-10                               1.00        ml", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key":
+    "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\":
+    595,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 43-44", "source_key":
+    "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "First dissolve
+    FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake
+    up to 1000.00 ml.", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q51", "subject": "Target missing Trace element solution SL-10 batch addition",
+    "local_fields": [], "decision": "add", "stage": "target receiving stage", "interpretation":
+    "Target has no structured stock dose; restore the exact 1 ml batch addition independently
+    from constituent stock rates, with its denominator qualification.", "sources":
+    [{"locator": "extracted-text physical LF lines 10-10", "source_key": "dsm708",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Trace
+    element solution SL-10                               1.00        ml", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key":
+    "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\":
+    595,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q52", "subject": "DSM maintained Seven
+    vitamins solution dose", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "solutions[1].concentration", "original": {"value": "1", "unit":
+    "ML_PER_L"}}], "decision": "unsupported", "stage": "receiving addition denominator",
+    "interpretation": "The primary supports 1 ml in the named batch, while the maintained
+    DSM owner asserts 1 ML_PER_L. API main volume is nominal 1004 ml; neither source
+    independently supports exactly one final litre. Preserve the source 1 ml batch
+    amount, resolve the denominator explicitly and do not silently accept or replace
+    it with a calculated final dose.", "sources": [{"locator": "extracted-text physical
+    LF lines 15-15", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Seven
+    vitamins solution                                    1.00        ml", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[12]", "source_key":
+    "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    13,\n                        \"solution\": \"Seven vitamins solution\",\n                        \"solution_id\":
+    1038,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q53", "subject": "KOMODO unasserted Seven
+    vitamins solution dose candidate", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "solutions[1].concentration_candidates[0]", "original": {"value":
+    "1", "unit": "ML_PER_L", "basis": "CROSS_MEDIUM_INFERENCE", "support": "KOMODO
+    708 resolves to DSMZ/MediaDive medium 708 both structurally and via the KOMODO->DSMZ
+    export; volume read from that medium''s recipe.", "counterevidence": "Not confirmed
+    as medium 708: 89% of the 36 shared compounds carry the same value (11 shared
+    with that medium''s main solution). A record that IS the medium scores 100%, with
+    at least 5 main-solution compounds. A stock''s addition volume varies by citing
+    medium: MediaDive medium 142 adds ''Trace element solution (Vishniac & Santer)''
+    at 0.2 ml and medium 69 adds the same stock at 5 ml.", "proposed_by": "apply_cocktail_nesting.py"}}],
+    "decision": "unsupported", "stage": "unasserted cross-medium candidate", "interpretation":
+    "This remains CROSS_MEDIUM_INFERENCE with explicit 89% composition counterevidence,
+    not an asserted concentration. Exact KOMODO access is 403. Current DSM batch support
+    does not automatically promote the candidate or authenticate a per-litre denominator.",
+    "sources": [{"locator": "extracted-text physical LF lines 15-15", "source_key":
+    "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Seven
+    vitamins solution                                    1.00        ml", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[12]", "source_key":
+    "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    13,\n                        \"solution\": \"Seven vitamins solution\",\n                        \"solution_id\":
+    1038,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q54", "subject": "Seven vitamins solution
+    retained numeric note", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "solutions[1].preparation_notes", "original": "Stock prepared in
+    1000 ml; added at 1 ml per litre of medium. Composition and volume from MediaDive
+    (#150)."}], "decision": "unsupported", "stage": "stock volume and receiving-dose
+    note", "interpretation": "The retained 1000 ml stock note has source context:
+    SL-10 has explicit make-up; the vitamin stocks list 1000 ml water/provider volume.
+    The separate 1 ml/l statement or proposal lacks an independently verified final-litre
+    basis. KOMODO wording that composition is not asserted does not cancel its actual
+    nested concentration fields. Retain supported stock context, qualify or correct
+    the dose wording, and preserve its historical inference provenance.", "sources":
+    [{"locator": "extracted-text physical LF lines 15-15", "source_key": "dsm708",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Seven
+    vitamins solution                                    1.00        ml", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[12]", "source_key":
+    "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    13,\n                        \"solution\": \"Seven vitamins solution\",\n                        \"solution_id\":
+    1038,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 86-86", "source_key":
+    "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Distilled
+    water                          1000.00   ml", "quote_representation": "captured
+    extracted text"}]}, {"decision_id": "q55", "subject": "Seven vitamins solution
+    retained numeric note", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "solutions[1].preparation_notes", "original": "Stock prepared in
+    1000 ml. Composition and addition volume NOT asserted: proposed as 1 ml/l on basis
+    CROSS_MEDIUM_INFERENCE; see concentration_candidates (#150)."}], "decision": "unsupported",
+    "stage": "stock volume and receiving-dose note", "interpretation": "The retained
+    1000 ml stock note has source context: SL-10 has explicit make-up; the vitamin
+    stocks list 1000 ml water/provider volume. The separate 1 ml/l statement or proposal
+    lacks an independently verified final-litre basis. KOMODO wording that composition
+    is not asserted does not cancel its actual nested concentration fields. Retain
+    supported stock context, qualify or correct the dose wording, and preserve its
+    historical inference provenance.", "sources": [{"locator": "extracted-text physical
+    LF lines 15-15", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Seven
+    vitamins solution                                    1.00        ml", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[12]", "source_key":
+    "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    13,\n                        \"solution\": \"Seven vitamins solution\",\n                        \"solution_id\":
+    1038,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 86-86", "source_key":
+    "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Distilled
+    water                          1000.00   ml", "quote_representation": "captured
+    extracted text"}]}, {"decision_id": "q56", "subject": "Target missing Seven vitamins
+    solution batch addition", "local_fields": [], "decision": "add", "stage": "target
+    receiving stage", "interpretation": "Target has no structured stock dose; restore
+    the exact 1 ml batch addition independently from constituent stock rates, with
+    its denominator qualification.", "sources": [{"locator": "extracted-text physical
+    LF lines 15-15", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Seven
+    vitamins solution                                    1.00        ml", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[12]", "source_key":
+    "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    13,\n                        \"solution\": \"Seven vitamins solution\",\n                        \"solution_id\":
+    1038,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q57", "subject": "DSM maintained Wolin''s
+    vitamin solution (10x) dose", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "solutions[2].concentration", "original": {"value": "1", "unit":
+    "ML_PER_L"}}], "decision": "unsupported", "stage": "receiving addition denominator",
+    "interpretation": "The primary supports 1 ml in the named batch, while the maintained
+    DSM owner asserts 1 ML_PER_L. API main volume is nominal 1004 ml; neither source
+    independently supports exactly one final litre. Preserve the source 1 ml batch
+    amount, resolve the denominator explicitly and do not silently accept or replace
+    it with a calculated final dose.", "sources": [{"locator": "extracted-text physical
+    LF lines 14-14", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Wolin''s
+    vitamin solution (10x)                             1.00        ml", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[11]", "source_key":
+    "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    12,\n                        \"solution\": \"Wolin''s vitamin solution (10x)\",\n                        \"solution_id\":
+    5980,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q58", "subject": "KOMODO unasserted Wolin''s
+    vitamin solution (10x) dose candidate", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "solutions[2].concentration_candidates[0]", "original": {"value":
+    "1", "unit": "ML_PER_L", "basis": "CROSS_MEDIUM_INFERENCE", "support": "KOMODO
+    708 resolves to DSMZ/MediaDive medium 708 both structurally and via the KOMODO->DSMZ
+    export; volume read from that medium''s recipe.", "counterevidence": "Not confirmed
+    as medium 708: 89% of the 36 shared compounds carry the same value (11 shared
+    with that medium''s main solution). A record that IS the medium scores 100%, with
+    at least 5 main-solution compounds. A stock''s addition volume varies by citing
+    medium: MediaDive medium 142 adds ''Trace element solution (Vishniac & Santer)''
+    at 0.2 ml and medium 69 adds the same stock at 5 ml.", "proposed_by": "apply_cocktail_nesting.py"}}],
+    "decision": "unsupported", "stage": "unasserted cross-medium candidate", "interpretation":
+    "This remains CROSS_MEDIUM_INFERENCE with explicit 89% composition counterevidence,
+    not an asserted concentration. Exact KOMODO access is 403. Current DSM batch support
+    does not automatically promote the candidate or authenticate a per-litre denominator.",
+    "sources": [{"locator": "extracted-text physical LF lines 14-14", "source_key":
+    "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Wolin''s
+    vitamin solution (10x)                             1.00        ml", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[11]", "source_key":
+    "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    12,\n                        \"solution\": \"Wolin''s vitamin solution (10x)\",\n                        \"solution_id\":
+    5980,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q59", "subject": "Wolin''s vitamin solution
+    (10x) retained numeric note", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "solutions[2].preparation_notes", "original": "Stock prepared in
+    1000 ml; added at 1 ml per litre of medium. Composition and volume from MediaDive
+    (#150)."}], "decision": "unsupported", "stage": "stock volume and receiving-dose
+    note", "interpretation": "The retained 1000 ml stock note has source context:
+    SL-10 has explicit make-up; the vitamin stocks list 1000 ml water/provider volume.
+    The separate 1 ml/l statement or proposal lacks an independently verified final-litre
+    basis. KOMODO wording that composition is not asserted does not cancel its actual
+    nested concentration fields. Retain supported stock context, qualify or correct
+    the dose wording, and preserve its historical inference provenance.", "sources":
+    [{"locator": "extracted-text physical LF lines 14-14", "source_key": "dsm708",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Wolin''s
+    vitamin solution (10x)                             1.00        ml", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[11]", "source_key":
+    "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    12,\n                        \"solution\": \"Wolin''s vitamin solution (10x)\",\n                        \"solution_id\":
+    5980,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 74-74", "source_key":
+    "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Distilled
+    water                          1000.00   ml", "quote_representation": "captured
+    extracted text"}]}, {"decision_id": "q60", "subject": "Wolin''s vitamin solution
+    (10x) retained numeric note", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "solutions[2].preparation_notes", "original": "Stock prepared in
+    1000 ml. Composition and addition volume NOT asserted: proposed as 1 ml/l on basis
+    CROSS_MEDIUM_INFERENCE; see concentration_candidates (#150)."}], "decision": "unsupported",
+    "stage": "stock volume and receiving-dose note", "interpretation": "The retained
+    1000 ml stock note has source context: SL-10 has explicit make-up; the vitamin
+    stocks list 1000 ml water/provider volume. The separate 1 ml/l statement or proposal
+    lacks an independently verified final-litre basis. KOMODO wording that composition
+    is not asserted does not cancel its actual nested concentration fields. Retain
+    supported stock context, qualify or correct the dose wording, and preserve its
+    historical inference provenance.", "sources": [{"locator": "extracted-text physical
+    LF lines 14-14", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Wolin''s
+    vitamin solution (10x)                             1.00        ml", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[11]", "source_key":
+    "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    12,\n                        \"solution\": \"Wolin''s vitamin solution (10x)\",\n                        \"solution_id\":
+    5980,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 74-74", "source_key":
+    "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Distilled
+    water                          1000.00   ml", "quote_representation": "captured
+    extracted text"}]}, {"decision_id": "q61", "subject": "Target missing Wolin''s
+    vitamin solution (10x) batch addition", "local_fields": [], "decision": "add",
+    "stage": "target receiving stage", "interpretation": "Target has no structured
+    stock dose; restore the exact 1 ml batch addition independently from constituent
+    stock rates, with its denominator qualification.", "sources": [{"locator": "extracted-text
+    physical LF lines 14-14", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Wolin''s
+    vitamin solution (10x)                             1.00        ml", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[11]", "source_key":
+    "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    12,\n                        \"solution\": \"Wolin''s vitamin solution (10x)\",\n                        \"solution_id\":
+    5980,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q62", "subject": "Missing selenite-tungstate
+    addition", "local_fields": [], "decision": "add", "stage": "all layers receiving
+    stage", "interpretation": "All layers lack the distinct 1 ml selenium-tungstate
+    stock addition. Restore it as the source batch amount, not an unsupported final-litre
+    concentration.", "sources": [{"locator": "extracted-text physical LF lines 11-11",
+    "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Selenite-tungstate
+    solution                                1.00        ml", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[8]", "source_key":
+    "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    9,\n                        \"solution\": \"Selenite-tungstate solution\",\n                        \"solution_id\":
+    777,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q63", "subject": "Water for Main sol. 708",
+    "local_fields": [], "decision": "add", "stage": "distinct batch water", "interpretation":
+    "The exact water input belongs to this main batch or stock. Stock preparation
+    water is not an extra receiving input; only SL-10 separately has explicit make-up
+    to 1000 ml. Main 1004 ml and other stock volumes are provider normalization.",
+    "sources": [{"locator": "extracted-text physical LF lines 18-18", "source_key":
+    "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Distilled
+    water                                         1000.00        ml", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[15]", "source_key":
+    "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    16,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q64", "subject": "Water for Trace element
+    solution SL-10", "local_fields": [], "decision": "add", "stage": "distinct batch
+    water", "interpretation": "The exact water input belongs to this main batch or
+    stock. Stock preparation water is not an extra receiving input; only SL-10 separately
+    has explicit make-up to 1000 ml. Main 1004 ml and other stock volumes are provider
+    normalization.", "sources": [{"locator": "extracted-text physical LF lines 41-41",
+    "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Distilled
+    water                                           990.00      ml", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[1].recipe[9]", "source_key":
+    "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 990,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q65", "subject": "Water for Selenite-tungstate
+    solution", "local_fields": [], "decision": "add", "stage": "distinct batch water",
+    "interpretation": "The exact water input belongs to this main batch or stock.
+    Stock preparation water is not an extra receiving input; only SL-10 separately
+    has explicit make-up to 1000 ml. Main 1004 ml and other stock volumes are provider
+    normalization.", "sources": [{"locator": "extracted-text physical LF lines 59-59",
+    "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Distilled
+    water                          1000.00   ml", "quote_representation": "captured
+    extracted text"}, {"locator": "$.data.solutions[2].recipe[3]", "source_key": "api708",
+    "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q66", "subject": "Water for Wolin''s vitamin
+    solution (10x)", "local_fields": [], "decision": "add", "stage": "distinct batch
+    water", "interpretation": "The exact water input belongs to this main batch or
+    stock. Stock preparation water is not an extra receiving input; only SL-10 separately
+    has explicit make-up to 1000 ml. Main 1004 ml and other stock volumes are provider
+    normalization.", "sources": [{"locator": "extracted-text physical LF lines 74-74",
+    "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Distilled
+    water                          1000.00   ml", "quote_representation": "captured
+    extracted text"}, {"locator": "$.data.solutions[3].recipe[10]", "source_key":
+    "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q67", "subject": "Water for Seven vitamins
+    solution", "local_fields": [], "decision": "add", "stage": "distinct batch water",
+    "interpretation": "The exact water input belongs to this main batch or stock.
+    Stock preparation water is not an extra receiving input; only SL-10 separately
+    has explicit make-up to 1000 ml. Main 1004 ml and other stock volumes are provider
+    normalization.", "sources": [{"locator": "extracted-text physical LF lines 86-86",
+    "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Distilled
+    water                          1000.00   ml", "quote_representation": "captured
+    extracted text"}, {"locator": "$.data.solutions[4].recipe[7]", "source_key": "api708",
+    "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q68", "subject": "Main complete denominator",
+    "local_fields": [], "decision": "unsupported", "stage": "main-volume claim", "interpretation":
+    "Primary lists 1000 ml water and four 1 ml stocks. Provider declares 1004 ml and
+    explicit main g_l; those values are credited with provider attribution, not as
+    independently measured final volume.", "sources": [{"locator": "extracted-text
+    physical LF lines 10-18", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "   Trace
+    element solution SL-10                               1.00        ml\n   Selenite-tungstate
+    solution                                1.00        ml\n   Sodium resazurin (0.1%
+    w/v)                                0.50        ml\n   Na2CO3                                                     1.50         g\n   Wolin''s
+    vitamin solution (10x)                             1.00        ml\n   Seven vitamins
+    solution                                    1.00        ml\n   Na-propionate                                              2.00         g\n   Na2S
+    x 9 H2O                                               0.50         g\n   Distilled
+    water                                         1000.00        ml", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0]", "source_key": "api708",
+    "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                \"id\":
+    1458,\n                \"name\": \"Main sol. 708\",\n                \"volume\":
+    1004,\n                \"recipe\": [\n                    {\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Na2HPO4 x 2 H2O\",\n                        \"compound_id\":
+    181,\n                        \"amount\": 0.53,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.527888,\n                        \"mmol_l\":
+    3.7186,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 0.41,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.408367,\n                        \"mmol_l\":
+    3.00082,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\":
+    42,\n                        \"amount\": 0.3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.298805,\n                        \"mmol_l\":
+    5.58618,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\":
+    7,\n                        \"amount\": 0.11,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.109562,\n                        \"mmol_l\":
+    0.745242,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\":
+    79,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.0996016,\n                        \"mmol_l\":
+    0.489917,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"Na2SO4\",\n                        \"compound_id\":
+    110,\n                        \"amount\": 2.8,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2.78884,\n                        \"mmol_l\":
+    19.6342,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\":
+    43,\n                        \"amount\": 0.3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.298805,\n                        \"mmol_l\":
+    5.11302,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    8,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\":
+    595,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    9,\n                        \"solution\": \"Selenite-tungstate solution\",\n                        \"solution_id\":
+    777,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\":
+    1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.000498008,\n                        \"mmol_l\": 0.00198275,\n                        \"optional\":
+    0\n                    },\n                    {\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\":
+    32,\n                        \"amount\": 1.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.49402,\n                        \"mmol_l\":
+    14.0962,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    12,\n                        \"solution\": \"Wolin''s vitamin solution (10x)\",\n                        \"solution_id\":
+    5980,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    13,\n                        \"solution\": \"Seven vitamins solution\",\n                        \"solution_id\":
+    1038,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    14,\n                        \"compound\": \"Na-propionate\",\n                        \"compound_id\":
+    301,\n                        \"amount\": 2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.99203,\n                        \"mmol_l\":
+    20.7374,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    15,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\":
+    54,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.498008,\n                        \"mmol_l\":
+    2.07346,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    16,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }\n                ],\n                \"steps\":
+    [\n                    {\n                        \"step\": \"Dissolve ingredients
+    except carbonate, vitamins, propionate and sulfide. Sparge medium with 80% N2
+    and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense under
+    same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    Add vitamins, propionate and sulfide from sterile anoxic stock solutions prepared
+    under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared
+    under 80% N2 and 20% CO2 gas mixture. Vitamins should be sterilized by filtration.
+    The pH of the complete medium should be 7.2 - 7.6.\"\n                    }\n                ],\n                \"equipment\":
+    {\n                    \"1144\": \"Hungate tubes\",\n                    \"2194\":
+    \"Filter\",\n                    \"2928\": \"Autoclave\",\n                    \"4383\":
+    \"Gassing station\"\n                }\n            }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q69", "subject": "Retained main pH and
+    DSM procedure", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "ph_range", "original": {"min": 7.2, "max": 7.6}}, {"record_path":
+    "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml", "field_path":
+    "ph_range", "original": {"min": 7.2, "max": 7.6}}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml",
+    "field_path": "ph_range", "original": {"min": 7.2, "max": 7.6}}, {"record_path":
+    "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml", "field_path": "preparation_steps[0].description",
+    "original": "Dissolve ingredients except carbonate, vitamins, propionate and sulfide.
+    Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic,
+    then dispense under same gas atmosphere into anoxic Hungate-type tubes or serum
+    vials and autoclave. Add vitamins, propionate and sulfide from sterile anoxic
+    stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic
+    stock solution prepared under 80% N2 and 20% CO2 gas mixture. Vitamins should
+    be sterilized by filtration. The pH of the complete medium should be 7.2 - 7.6."},
+    {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "preparation_steps[0].description", "original": "Dissolve ingredients
+    except carbonate, vitamins, propionate and sulfide. Sparge medium with 80% N2
+    and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense under
+    same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    Add vitamins, propionate and sulfide from sterile anoxic stock solutions prepared
+    under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared
+    under 80% N2 and 20% CO2 gas mixture. Vitamins should be sterilized by filtration.
+    The pH of the complete medium should be 7.2 - 7.6."}], "decision": "evidence_only",
+    "stage": "main staged preparation", "interpretation": "Keep pH 7.2–7.6 in every
+    layer and the correct DSM/target main sequence: 80% N2/20% CO2 for 30–45 min,
+    separately prepared additions, 100% N2 for the specified stocks, and vitamin filtration.
+    The broad AUTOCLAVE action does not replace those separate stages.", "sources":
+    [{"locator": "extracted-text physical LF lines 20-26", "source_key": "dsm708",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "Dissolve
+    ingredients except carbonate, vitamins, propionate and sulfide. Sparge medium\nwith
+    80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense\nunder
+    same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.\nAdd
+    vitamins, propionate and sulfide from sterile anoxic stock solutions prepared
+    under\n100% N2 gas and carbonate from a sterile anoxic stock solution prepared
+    under 80% N2\nand 20% CO2 gas mixture. Vitamins should be sterilized by filtration.
+    The pH of the\ncomplete medium should be 7.2 - 7.6.", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].steps[0]", "source_key":
+    "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"step\":
+    \"Dissolve ingredients except carbonate, vitamins, propionate and sulfide. Sparge
+    medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic,
+    then dispense under same gas atmosphere into anoxic Hungate-type tubes or serum
+    vials and autoclave. Add vitamins, propionate and sulfide from sterile anoxic
+    stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic
+    stock solution prepared under 80% N2 and 20% CO2 gas mixture. Vitamins should
+    be sterilized by filtration. The pH of the complete medium should be 7.2 - 7.6.\"\n                    }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q70", "subject":
+    "KOMODO missing main procedure", "local_fields": [], "decision": "add", "stage":
+    "KOMODO maintained branch", "interpretation": "The maintained KOMODO owner lacks
+    preparation and retains Aerobic: Yes in notes, conflicting with current exact
+    DSM anoxic handling. Reconcile source identity and attach evidence without representing
+    the failed endpoint as a newly read KOMODO recipe.", "sources": [{"locator": "extracted-text
+    physical LF lines 20-26", "source_key": "dsm708", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf",
+    "source_raw_sha256": "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730",
+    "source_text_sha256": "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94",
+    "accessed_at": "2026-10-28T20:57:49.518934Z", "exact_source_quote": "Dissolve
+    ingredients except carbonate, vitamins, propionate and sulfide. Sparge medium\nwith
+    80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense\nunder
+    same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.\nAdd
+    vitamins, propionate and sulfide from sterile anoxic stock solutions prepared
+    under\n100% N2 gas and carbonate from a sterile anoxic stock solution prepared
+    under 80% N2\nand 20% CO2 gas mixture. Vitamins should be sterilized by filtration.
+    The pH of the\ncomplete medium should be 7.2 - 7.6.", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].steps[0]", "source_key":
+    "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708", "source_raw_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "source_text_sha256":
+    "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf", "accessed_at":
+    "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"step\":
+    \"Dissolve ingredients except carbonate, vitamins, propionate and sulfide. Sparge
+    medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic,
+    then dispense under same gas atmosphere into anoxic Hungate-type tubes or serum
+    vials and autoclave. Add vitamins, propionate and sulfide from sterile anoxic
+    stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic
+    stock solution prepared under 80% N2 and 20% CO2 gas mixture. Vitamins should
+    be sterilized by filtration. The pH of the complete medium should be 7.2 - 7.6.\"\n                    }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q71", "subject":
+    "SL-10 preparation wrongly at main scope", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml",
+    "field_path": "preparation_steps[1].description", "original": "First dissolve
+    FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally
+    make up to 1000.00 ml."}, {"record_path": "data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml",
+    "field_path": "preparation_steps[1].description", "original": "First dissolve
+    FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally
+    make up to 1000.00 ml."}], "decision": "correct", "stage": "stock only", "interpretation":
+    "The instruction to dissolve FeCl2 in HCl and make up to 1000 ml is correct for
+    SL-10. Move this retained numeric instruction from main preparation_steps[1] into
+    that stock, preserving main pH and separate stages.", "sources": [{"locator":
+    "extracted-text physical LF lines 43-44", "source_key": "dsm708", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium708.pdf", "source_raw_sha256":
+    "9b4875dc7d2bb0812a4ce477005cad6ff1ed47ba90b0a1e32c2cfe1c81027730", "source_text_sha256":
+    "99c0ff89dd38de23be914e3f923a995ea93d6aef38dc7005aa5f99b3f444fb94", "accessed_at":
+    "2026-10-28T20:57:49.518934Z", "exact_source_quote": "First dissolve FeCl2 in
+    the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake
+    up to 1000.00 ml.", "quote_representation": "captured extracted text"}, {"locator":
+    "$.data.solutions[1].steps[0]", "source_key": "api708", "reference": "https://mediadive.dsmz.de/rest/medium/708",
+    "source_raw_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "source_text_sha256": "18c993bc6e5475f850a00d67583440e6faa35663ba66bab681d2a6d5d5c39caf",
+    "accessed_at": "2026-10-28T20:57:49.518995Z", "exact_source_quote": "{\n                        \"step\":
+    \"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the
+    other salts. Finally make up to 1000.00 ml.\"\n                    }", "quote_representation":
+    "raw JSON object"}]}], "local_field_census_reference": "REVIEW_WORK/batch078/record05/grounding-inventory.json",
+    "source_only_gaps_are_explicit": true, "note": "Batch amounts, provider normalization,
+    stock composition, working dose and preparation controls are separate. No source
+    edits or automatic curation performed."}'
+- assessment_id: a6
+  area: grounding
+  topic: Primary, secondary and legacy linkage census
+  outcome: concern
+  summary: 'data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml: primary 36/36,
+    secondary 34/36; data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml:
+    primary 30/30, secondary 28/30; data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml:
+    primary 30/30, secondary 28/30. These are ingredient-instance linkage fractions,
+    not accuracy scores. Solution terms are audited separately. Every actually asserted
+    CHEBI term is joined to its exact current OLS object and packaged MIM CSV rows.
+    0 numeric legacy MediaIngredientMech mentions occur across the complete selected
+    documents, with exact locators in the inventory; NNNNNN is a historical placeholder,
+    not an ID. Complex commercial/product components are not forced to pure-compound
+    IDs.'
+  target_ids:
+  - CultureMech:001845
+  evidence_ids:
+  - grounding
+- assessment_id: a7
+  area: scope
+  topic: Scope and source limits
+  outcome: supported
+  summary: Complete selected target and every exact maintained contributor reviewed.
+    All stocks assessed here are embedded in the exact named DSM source. No external
+    dependency or unrelated medium formulation transfers. Collection identity pages
+    establish association only.
+  target_ids:
+  - CultureMech:001845
+  evidence_ids:
+  - local0
+- assessment_id: a8
+  area: schema
+  topic: Native structural checks
+  outcome: supported
+  summary: All four canonical commands passed once; strict schema TSV contains only
+    its header and reference validation checked zero references on the generated target.
+    This does not certify quantities or chemical forms.
+  target_ids:
+  - CultureMech:001845
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: culturemech-001845-stock-topology-and-stale-target
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Four stocks remain incomplete and the target still sums independent vitamin
+    rates
+  description: The generated target flattens all stocks and sums four separate vitamin
+    pairs. Maintained owners repair ten components but leave nineteen stock rates
+    at root, omit the selenium-tungstate stock and water, and retain incomplete other
+    stocks. Three DSM doses assert a per-litre basis not independently established;
+    KOMODO equivalents remain explicitly unasserted candidates.
+  target_ids:
+  - CultureMech:001845
+  field_paths:
+  - ingredients
+  - solutions
+  evidence_ids:
+  - dsm708
+  - api708
+  - local1
+  - local2
+  - quantity-inventory
+  rule_id: source-specific-formulation-fidelity
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml
+    role: maintained normalized contributor
+- finding_id: f2
+  issue_key: culturemech-001845-preparation-stage
+  category: consistency
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Trace-stock makeup and KOMODO atmosphere need distinct scopes
+  description: 'The correct SL-10 make-up instruction sits at main preparation_steps[1]
+    in the target and DSM owner. The KOMODO contributor lacks main preparation and
+    retains Aerobic: Yes in notes, unlike current DSM anoxic preparation.'
+  target_ids:
+  - CultureMech:001845
+  field_paths:
+  - data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml::preparation_steps[1].description
+  - data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml::preparation_steps[1].description
+  - data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml::notes
+  evidence_ids:
+  - dsm708
+  - api708
+  - local2
+  rule_id: source-preparation-stage-placement
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml
+    role: maintained normalized contributor
+- finding_id: f3
+  issue_key: culturemech-001845-supplied-forms
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Nickel hydrate and sodium resazurin carry different-form identifiers
+  description: The selected target nickel index18 and both owner nickel index17 assert
+    CHEBI:34887 in primary and secondary slots, despite source hexahydrate. Sodium
+    resazurin index7 has neutral CHEBI:8806 in the primary slot only. Canonical labels
+    and passing term validation do not establish supplied-form equivalence.
+  target_ids:
+  - CultureMech:001845
+  field_paths:
+  - data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml::ingredients[18].term
+  - data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml::ingredients[18].mediaingredientmech_chebi_term
+  - data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml::ingredients[17].term
+  - data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml::ingredients[17].term
+  - data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml::ingredients[17].mediaingredientmech_chebi_term
+  - data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml::ingredients[17].mediaingredientmech_chebi_term
+  - data/merge_yaml/merged/DESULFORHABDUS_AMNIGENA_MEDIUM.yaml::ingredients[7].term
+  - data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml::ingredients[7].term
+  - data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml::ingredients[7].term
+  evidence_ids:
+  - dsm708
+  - chebi34887
+  - chebi8806
+  - grounding
+  rule_id: supplied-chemical-form-correspondence
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml
+    role: maintained normalized contributor
+- finding_id: f4
+  issue_key: culturemech-001845-claim-provenance
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Current claims lack attached evidence and provenance contains malformed or
+    offset-less times
+  description: Source pointers, old reports and current raw matches do not attach
+    claim-level evidence. KOMODO history stores 2026-01-27T01:15:03.fZ; present importer
+    uses unsupported %f, while the resolver emits naive time. Neither current behavior
+    authenticates old execution.
+  target_ids:
+  - CultureMech:001845
+  field_paths:
+  - ingredients[*]
+  - solutions
+  - curation_history
+  evidence_ids:
+  - history-auth
+  - historical-current-joins
+  - writer53
+  - writer54
+  - writer55
+  - writer56
+  - writer57
+  - writer58
+  - writer59
+  - writer60
+  - writer61
+  - writer62
+  - writer63
+  - writer64
+  - writer65
+  - writer66
+  - writer67
+  - writer68
+  - writer69
+  - writer70
+  rule_id: claim-scoped-source-provenance
+  native_severity: P3
+  normalization_reason: P3 is normalized to minor because this is a bounded completeness,
+    traceability or presentation gap without a contradicted source recipe.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/import/komodo_web_importer.py
+    role: current import timestamp writer
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/enrich/dsmz_resolver.py
+    role: current enrichment timestamp and preparation propagation writer
+actions:
+- action_id: action1
+  description: Complete all four exact embedded stocks and separate their source 1
+    ml batch additions. Preserve ten supported nested owner components, all eleven
+    main provider rates and the unasserted status/counterevidence of KOMODO candidates.
+    Regenerate the target only after source and denominator reconciliation.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:001845
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action2
+  description: Move the SL-10 instruction into its stock. Preserve pH and the correct
+    DSM main procedure, and resolve the KOMODO atmosphere/procedure with explicit
+    source limits.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:001845
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action3
+  description: Use verified source-specific hydrate and sodium-salt mappings or keep
+    precise source names with unresolved mapping; preserve amounts and do not infer
+    molar equivalence from the wrong forms.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:001845
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action4
+  description: Attach exact evidence at valid scopes while preserving current repairs
+    and original history. Correct future timestamp writers with actual UTC time and
+    append verified context instead of rewriting past execution.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:001845
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulforhabdus_amnigenus_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/import/komodo_web_importer.py
+    role: current import timestamp writer
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/enrich/dsmz_resolver.py
+    role: current enrichment timestamp and preparation propagation writer
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+  - Importer/resolver future timestamps must be timezone-aware UTC with no literal
+    formatting tokens; original history and unasserted candidate provenance remain
+    preserved.
+limitations:
+- Exact KOMODO708 returned HTTP 403; current DSM evidence does not establish a newly
+  retrieved KOMODO formulation.
+- Provider nominal main volume 1004 ml and stock g_l are explicitly attributed; listed
+  water is not independently measured final volume. HCl 25% has no verified percentage
+  basis or density.
+- Historical source equality does not authenticate access dates or execution. No source
+  recipe was edited and collection identity is not a new growth assertion.
+notes:
+- Read-only scientific review. No source edits, native save, Git mutation or publication.
+  All raw captures, failed access bodies, commands, times and original stdout/stderr
+  remain in the adjacent private evidence directory.
+```
