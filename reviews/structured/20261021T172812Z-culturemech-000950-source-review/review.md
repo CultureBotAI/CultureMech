@@ -1,0 +1,2570 @@
+# Source and formulation review: arhodomonas_medium_rs91 (CultureMech:000950)
+
+- Review: 20261021T172812Z-culturemech-000950-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T17:21:18Z
+- Finished UTC: 2026-10-21T17:28:12Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+DSMZ 1482 supports the twelve ingredient amounts as batch masses, the missing 1000 mL water input and pH 6.5–7.5. Exact supplier strings are more specific than the local generic mixture names. Nine later owner concentration quotations match local derivative reports, but their original raw API response is unavailable; the historical legacy diammonium-phosphate key is also unresolved despite a valid primary CHEBI term. Current quantities are not declared numerically false merely because a measured final-volume basis is absent. Review remains partial for those historical checks.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 304; batch 031 item 4 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding thirty task batches contain 300 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 303 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:000950 | data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml | generated | arhodomonas_medium_rs91 |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:000950 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:000950 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-031/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch031/304/strict.tsv |
+| validate-terms | passed | True | CultureMech:000950 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:000950 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:000950 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: mediadive1482api | unavailable | False | CultureMech:000950 | Exact optional attempt mediadive1482api returned HTTP 503. The current collection source remains usable; this does not justify replacing supplier identity or authenticating historical raw bytes. |
+| Exact source content access: mediadive1482api_retry | unavailable | False | CultureMech:000950 | Exact optional attempt mediadive1482api_retry returned HTTP 503. The current collection source remains usable; this does not justify replacing supplier identity or authenticating historical raw bytes. |
+| Exact source content access: bdManualIdentity | unavailable | False | CultureMech:000950 | Exact optional attempt bdManualIdentity returned HTTP 404. The current collection source remains usable; this does not justify replacing supplier identity or authenticating historical raw bytes. |
+| Required source-scope verification | unavailable | True | CultureMech:000950 | Required original-response authentication for nine historical owner concentration claims remains unavailable after the bounded ignored-inclusive search. Local report equality is derivative corroboration only. |
+| Required source-scope verification | unavailable | True | CultureMech:000950 | Required historical correspondence of MediaIngredientMech:000385 remains unresolved. Exact absence from current pinned resources is a completed negative lookup, not the unavailable historical check itself. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:000950.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:000950.
+
+14 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "quantity_id": "q1",
+    "component_or_context": "NaCl batch amount",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "100",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "100",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": {
+      "batch_amount_g": "100.0",
+      "source_water_input_ml": 1000,
+      "measured_final_volume_ml": null,
+      "supplier": null
+    },
+    "rationale": "The number matches the primary batch mass. Water input alone does not establish the stored final-litre basis. Nine owner claims retain a provider-declared basis only through historical derivatives; none is newly authenticated raw evidence. Preserve the current values pending source-basis clarification and add the exact primary amount and supplied product identity without inventing a rate.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1482",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf",
+        "source_locator": "Page 1, formula row 1",
+        "exact_source_quote": "NaCl 100.0 g",
+        "snapshot_sha256": "65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e",
+        "parsed_text_sha256": "5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3",
+        "accessed_at": "2026-10-21T17:04:21.622458Z"
+      },
+      {
+        "source_key": "dsmz1482",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf",
+        "source_locator": "Page 1, final table row",
+        "exact_source_quote": "Distilled water 1000.0 ml",
+        "snapshot_sha256": "65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e",
+        "parsed_text_sha256": "5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3",
+        "accessed_at": "2026-10-21T17:04:21.622458Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q2",
+    "component_or_context": "MgCl2 x 6 H2O batch amount",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": {
+      "batch_amount_g": "10.0",
+      "source_water_input_ml": 1000,
+      "measured_final_volume_ml": null,
+      "supplier": null
+    },
+    "rationale": "The number matches the primary batch mass. Water input alone does not establish the stored final-litre basis. Nine owner claims retain a provider-declared basis only through historical derivatives; none is newly authenticated raw evidence. Preserve the current values pending source-basis clarification and add the exact primary amount and supplied product identity without inventing a rate.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1482",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf",
+        "source_locator": "Page 1, formula row 2",
+        "exact_source_quote": "MgCl2 x 6 H2O 10.0 g",
+        "snapshot_sha256": "65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e",
+        "parsed_text_sha256": "5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3",
+        "accessed_at": "2026-10-21T17:04:21.622458Z"
+      },
+      {
+        "source_key": "dsmz1482",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf",
+        "source_locator": "Page 1, final table row",
+        "exact_source_quote": "Distilled water 1000.0 ml",
+        "snapshot_sha256": "65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e",
+        "parsed_text_sha256": "5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3",
+        "accessed_at": "2026-10-21T17:04:21.622458Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q3",
+    "component_or_context": "KCl batch amount",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": {
+      "batch_amount_g": "1.5",
+      "source_water_input_ml": 1000,
+      "measured_final_volume_ml": null,
+      "supplier": null
+    },
+    "rationale": "The number matches the primary batch mass. Water input alone does not establish the stored final-litre basis. Nine owner claims retain a provider-declared basis only through historical derivatives; none is newly authenticated raw evidence. Preserve the current values pending source-basis clarification and add the exact primary amount and supplied product identity without inventing a rate.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1482",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf",
+        "source_locator": "Page 1, formula row 3",
+        "exact_source_quote": "KCl 1.5 g",
+        "snapshot_sha256": "65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e",
+        "parsed_text_sha256": "5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3",
+        "accessed_at": "2026-10-21T17:04:21.622458Z"
+      },
+      {
+        "source_key": "dsmz1482",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf",
+        "source_locator": "Page 1, final table row",
+        "exact_source_quote": "Distilled water 1000.0 ml",
+        "snapshot_sha256": "65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e",
+        "parsed_text_sha256": "5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3",
+        "accessed_at": "2026-10-21T17:04:21.622458Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q4",
+    "component_or_context": "CaCl2 x 2 H2O batch amount",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": {
+      "batch_amount_g": "0.2",
+      "source_water_input_ml": 1000,
+      "measured_final_volume_ml": null,
+      "supplier": null
+    },
+    "rationale": "The number matches the primary batch mass. Water input alone does not establish the stored final-litre basis. Nine owner claims retain a provider-declared basis only through historical derivatives; none is newly authenticated raw evidence. Preserve the current values pending source-basis clarification and add the exact primary amount and supplied product identity without inventing a rate.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1482",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf",
+        "source_locator": "Page 1, formula row 4",
+        "exact_source_quote": "CaCl2 x 2 H2O 0.2 g",
+        "snapshot_sha256": "65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e",
+        "parsed_text_sha256": "5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3",
+        "accessed_at": "2026-10-21T17:04:21.622458Z"
+      },
+      {
+        "source_key": "dsmz1482",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf",
+        "source_locator": "Page 1, final table row",
+        "exact_source_quote": "Distilled water 1000.0 ml",
+        "snapshot_sha256": "65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e",
+        "parsed_text_sha256": "5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3",
+        "accessed_at": "2026-10-21T17:04:21.622458Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q5",
+    "component_or_context": "MgSO4 x 7 H2O batch amount",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": {
+      "batch_amount_g": "2.0",
+      "source_water_input_ml": 1000,
+      "measured_final_volume_ml": null,
+      "supplier": null
+    },
+    "rationale": "The number matches the primary batch mass. Water input alone does not establish the stored final-litre basis. Nine owner claims retain a provider-declared basis only through historical derivatives; none is newly authenticated raw evidence. Preserve the current values pending source-basis clarification and add the exact primary amount and supplied product identity without inventing a rate.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1482",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf",
+        "source_locator": "Page 1, formula row 5",
+        "exact_source_quote": "MgSO4 x 7 H2O 2.0 g",
+        "snapshot_sha256": "65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e",
+        "parsed_text_sha256": "5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3",
+        "accessed_at": "2026-10-21T17:04:21.622458Z"
+      },
+      {
+        "source_key": "dsmz1482",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf",
+        "source_locator": "Page 1, final table row",
+        "exact_source_quote": "Distilled water 1000.0 ml",
+        "snapshot_sha256": "65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e",
+        "parsed_text_sha256": "5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3",
+        "accessed_at": "2026-10-21T17:04:21.622458Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q6",
+    "component_or_context": "(NH4)2HPO4 batch amount",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": {
+      "batch_amount_g": "0.5",
+      "source_water_input_ml": 1000,
+      "measured_final_volume_ml": null,
+      "supplier": null
+    },
+    "rationale": "The number matches the primary batch mass. Water input alone does not establish the stored final-litre basis. Nine owner claims retain a provider-declared basis only through historical derivatives; none is newly authenticated raw evidence. Preserve the current values pending source-basis clarification and add the exact primary amount and supplied product identity without inventing a rate.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1482",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf",
+        "source_locator": "Page 1, formula row 6",
+        "exact_source_quote": "(NH4)2HPO4 0.5 g",
+        "snapshot_sha256": "65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e",
+        "parsed_text_sha256": "5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3",
+        "accessed_at": "2026-10-21T17:04:21.622458Z"
+      },
+      {
+        "source_key": "dsmz1482",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf",
+        "source_locator": "Page 1, final table row",
+        "exact_source_quote": "Distilled water 1000.0 ml",
+        "snapshot_sha256": "65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e",
+        "parsed_text_sha256": "5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3",
+        "accessed_at": "2026-10-21T17:04:21.622458Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q7",
+    "component_or_context": "Na pyruvate batch amount",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.4",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.4",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": {
+      "batch_amount_g": "0.4",
+      "source_water_input_ml": 1000,
+      "measured_final_volume_ml": null,
+      "supplier": null
+    },
+    "rationale": "The number matches the primary batch mass. Water input alone does not establish the stored final-litre basis. Nine owner claims retain a provider-declared basis only through historical derivatives; none is newly authenticated raw evidence. Preserve the current values pending source-basis clarification and add the exact primary amount and supplied product identity without inventing a rate.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1482",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf",
+        "source_locator": "Page 1, formula row 7",
+        "exact_source_quote": "Na pyruvate 0.4 g",
+        "snapshot_sha256": "65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e",
+        "parsed_text_sha256": "5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3",
+        "accessed_at": "2026-10-21T17:04:21.622458Z"
+      },
+      {
+        "source_key": "dsmz1482",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf",
+        "source_locator": "Page 1, final table row",
+        "exact_source_quote": "Distilled water 1000.0 ml",
+        "snapshot_sha256": "65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e",
+        "parsed_text_sha256": "5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3",
+        "accessed_at": "2026-10-21T17:04:21.622458Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q8",
+    "component_or_context": "Na acetate batch amount",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.8",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.8",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": {
+      "batch_amount_g": "0.8",
+      "source_water_input_ml": 1000,
+      "measured_final_volume_ml": null,
+      "supplier": null
+    },
+    "rationale": "The number matches the primary batch mass. Water input alone does not establish the stored final-litre basis. Nine owner claims retain a provider-declared basis only through historical derivatives; none is newly authenticated raw evidence. Preserve the current values pending source-basis clarification and add the exact primary amount and supplied product identity without inventing a rate.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1482",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf",
+        "source_locator": "Page 1, formula row 8",
+        "exact_source_quote": "Na acetate 0.8 g",
+        "snapshot_sha256": "65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e",
+        "parsed_text_sha256": "5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3",
+        "accessed_at": "2026-10-21T17:04:21.622458Z"
+      },
+      {
+        "source_key": "dsmz1482",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf",
+        "source_locator": "Page 1, final table row",
+        "exact_source_quote": "Distilled water 1000.0 ml",
+        "snapshot_sha256": "65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e",
+        "parsed_text_sha256": "5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3",
+        "accessed_at": "2026-10-21T17:04:21.622458Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q9",
+    "component_or_context": "Casein hydrolysate (Oxoid LP0041) batch amount",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.4",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.4",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": {
+      "batch_amount_g": "0.4",
+      "source_water_input_ml": 1000,
+      "measured_final_volume_ml": null,
+      "supplier": "Oxoid LP0041"
+    },
+    "rationale": "The number matches the primary batch mass. Water input alone does not establish the stored final-litre basis. Nine owner claims retain a provider-declared basis only through historical derivatives; none is newly authenticated raw evidence. Preserve the current values pending source-basis clarification and add the exact primary amount and supplied product identity without inventing a rate.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1482",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf",
+        "source_locator": "Page 1, formula row 9",
+        "exact_source_quote": "Casein hydrolysate (Oxoid LP0041) 0.4 g",
+        "snapshot_sha256": "65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e",
+        "parsed_text_sha256": "5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3",
+        "accessed_at": "2026-10-21T17:04:21.622458Z"
+      },
+      {
+        "source_key": "dsmz1482",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf",
+        "source_locator": "Page 1, final table row",
+        "exact_source_quote": "Distilled water 1000.0 ml",
+        "snapshot_sha256": "65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e",
+        "parsed_text_sha256": "5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3",
+        "accessed_at": "2026-10-21T17:04:21.622458Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q10",
+    "component_or_context": "Yeast extract (BD212750) batch amount",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": {
+      "batch_amount_g": "0.3",
+      "source_water_input_ml": 1000,
+      "measured_final_volume_ml": null,
+      "supplier": "BD212750"
+    },
+    "rationale": "The number matches the primary batch mass. Water input alone does not establish the stored final-litre basis. Nine owner claims retain a provider-declared basis only through historical derivatives; none is newly authenticated raw evidence. Preserve the current values pending source-basis clarification and add the exact primary amount and supplied product identity without inventing a rate.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1482",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf",
+        "source_locator": "Page 1, formula row 10",
+        "exact_source_quote": "Yeast extract (BD212750) 0.3 g",
+        "snapshot_sha256": "65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e",
+        "parsed_text_sha256": "5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3",
+        "accessed_at": "2026-10-21T17:04:21.622458Z"
+      },
+      {
+        "source_key": "dsmz1482",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf",
+        "source_locator": "Page 1, final table row",
+        "exact_source_quote": "Distilled water 1000.0 ml",
+        "snapshot_sha256": "65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e",
+        "parsed_text_sha256": "5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3",
+        "accessed_at": "2026-10-21T17:04:21.622458Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q11",
+    "component_or_context": "Tryptone (BD211921) batch amount",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.6",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.6",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": {
+      "batch_amount_g": "0.6",
+      "source_water_input_ml": 1000,
+      "measured_final_volume_ml": null,
+      "supplier": "BD211921"
+    },
+    "rationale": "The number matches the primary batch mass. Water input alone does not establish the stored final-litre basis. Nine owner claims retain a provider-declared basis only through historical derivatives; none is newly authenticated raw evidence. Preserve the current values pending source-basis clarification and add the exact primary amount and supplied product identity without inventing a rate.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1482",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf",
+        "source_locator": "Page 1, formula row 11",
+        "exact_source_quote": "Tryptone (BD211921) 0.6 g",
+        "snapshot_sha256": "65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e",
+        "parsed_text_sha256": "5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3",
+        "accessed_at": "2026-10-21T17:04:21.622458Z"
+      },
+      {
+        "source_key": "dsmz1482",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf",
+        "source_locator": "Page 1, final table row",
+        "exact_source_quote": "Distilled water 1000.0 ml",
+        "snapshot_sha256": "65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e",
+        "parsed_text_sha256": "5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3",
+        "accessed_at": "2026-10-21T17:04:21.622458Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q12",
+    "component_or_context": "Agar batch amount",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": {
+      "batch_amount_g": "20.0",
+      "source_water_input_ml": 1000,
+      "measured_final_volume_ml": null,
+      "supplier": null
+    },
+    "rationale": "The number matches the primary batch mass. Water input alone does not establish the stored final-litre basis. Nine owner claims retain a provider-declared basis only through historical derivatives; none is newly authenticated raw evidence. Preserve the current values pending source-basis clarification and add the exact primary amount and supplied product identity without inventing a rate.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1482",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf",
+        "source_locator": "Page 1, formula row 12",
+        "exact_source_quote": "Agar 20.0 g",
+        "snapshot_sha256": "65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e",
+        "parsed_text_sha256": "5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3",
+        "accessed_at": "2026-10-21T17:04:21.622458Z"
+      },
+      {
+        "source_key": "dsmz1482",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf",
+        "source_locator": "Page 1, final table row",
+        "exact_source_quote": "Distilled water 1000.0 ml",
+        "snapshot_sha256": "65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e",
+        "parsed_text_sha256": "5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3",
+        "accessed_at": "2026-10-21T17:04:21.622458Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q13",
+    "component_or_context": "Source water input",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "water_input_ml": 1000,
+      "measured_final_volume_ml": null
+    },
+    "rationale": "Recover the missing source solvent amount in a supported representation. The locator is a proposed absent row; a water input must not become a mass concentration or a final-volume assertion.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1482",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf",
+        "source_locator": "Page 1, last table row",
+        "exact_source_quote": "Distilled water 1000.0 ml",
+        "snapshot_sha256": "65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e",
+        "parsed_text_sha256": "5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3",
+        "accessed_at": "2026-10-21T17:04:21.622458Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q14",
+    "component_or_context": "Main pH range",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml",
+        "field_path": "ph_range",
+        "stored": {
+          "min": 6.5,
+          "max": 7.5
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml",
+        "field_path": "ph_range",
+        "stored": {
+          "min": 6.5,
+          "max": 7.5
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Adjust to pH 6.5-7.5",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Adjust to pH 6.5-7.5",
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": {
+      "pH_range": [
+        6.5,
+        7.5
+      ],
+      "stage": "Preparation adjustment"
+    },
+    "rationale": "Both the structured range and prose match the source. Add exact evidence and retain preparation scope; this is not a growth optimum.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1482",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf",
+        "source_locator": "Page 1, final sentence",
+        "exact_source_quote": "Adjust to pH 6.5-7.5",
+        "snapshot_sha256": "65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e",
+        "parsed_text_sha256": "5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3",
+        "accessed_at": "2026-10-21T17:04:21.622458Z"
+      }
+    ]
+  }
+]
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: concern. Targets: CultureMech:000950.
+
+9 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 9/12 primary and 8/12 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Source forms are assessed separately. The separate legacy MediaIngredientMech:000385 assertion is unresolved historically and is not included in the current CHEBI-key success count.
+
+Instance coverage on a 0–100 percent scale, denominator 12: primary 75.00%; secondary 66.67%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:000950.
+
+18 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Historical legacy link versus current primary identity
+
+grounding: concern. Targets: CultureMech:000950.
+
+The primary term CHEBI:63051 is diammonium hydrogen phosphate and matches the supplied formula. The separate legacy MediaIngredientMech:000385 key is absent from the inspected current index/catalog/tree; that completed negative lookup cannot determine its historical meaning. Do not classify the ingredient as chemically wrong on that basis.
+
+### Exact medium and source products
+
+identity: supported. Targets: CultureMech:000950.
+
+The generated record and one maintained owner resolve to CultureMech:000950 and DSMZ 1482. The collection explicitly supplies Oxoid LP0041, BD212750 and BD211921. Official LP0041 identity corroborates acid casein hydrolysate; unavailable BD manufacturer detail does not erase the primary supplier strings or authorize substitution.
+
+### Current primary amounts and later owner evidence
+
+evidence: concern. Targets: CultureMech:000950.
+
+All twelve source batch masses numerically match local values, but no measured final volume is declared. Nine later owner claims retain exact derivative quotations and historical source hash 5e3c30e503e007e9744d29d9f00da59e6ee9915f82f34567271e117bb7e9833e; original raw bytes are not recovered. Target has none of those later objects. Preserve the historical scope rather than silently treating current primary water as confirmation of the older provider denominator.
+
+### Chemical forms and undefined mixture identities
+
+grounding: supported. Targets: CultureMech:000950.
+
+Explicit salt hydrates agree with captured terms. Sodium acetate hydration is unqualified, so no unsupported hydrate or mass/molar conversion is selected. Agar, casein hydrolysate, yeast extract and tryptone are mixtures; no single-molecule identity or recipe is inferred. Manufacturer QC conditions and suggested substitutes are not source formulation evidence.
+
+### Source-limited pH and typed action
+
+completeness: concern. Targets: CultureMech:000950.
+
+The source supports pH 6.5–7.5, retained in both layers, but the action is typed MIX instead of reflecting its explicit adjustment. No sterilization method, temperature or duration is supplied by the medium page; unrelated manufacturer QC methods cannot fill that gap.
+
+### Solid mixture and growth scope
+
+scope: supported. Targets: CultureMech:000950.
+
+Agar is explicitly present and supports SOLID_AGAR. Hydrolysate, yeast extract and tryptone support COMPLEX/UNDEFINED. A g/L representation is not automatically invalid for agar preparation; the concern here is source basis and evidence. No phenotype or growth target is inferred from the name or supplier QC tests.
+
+### Current writers and follow-up ownership
+
+provenance: concern. Targets: CultureMech:000950.
+
+Current MediaDive preparation classification is keyword-based and water is omitted from direct composition; preserve a faithful solvent/preparation representation and claim evidence in maintained input. Current code is not proof of the historical run. Keep later owner evidence/history, and regenerate only after authorized corrections.
+
+## Findings
+
+### f1: Water and quantity-evidence scope are incomplete
+
+major / open / confirmed; issue key: culturemech.000950.source-basis-evidence.
+
+Both layers omit the primary 1000 mL water input. Twelve values match source batch masses but are stored as final-litre rates; nine owner-only historical quotations retain a provider basis whose original raw response cannot currently be authenticated. This is not proof that those numerical values are false.
+
+### f2: Generic mixture names omit source supplier identities
+
+minor / open / confirmed; issue key: culturemech.000950.supplier-identity-detail.
+
+Casein hydrolysate, yeast extract and tryptone omit the exact primary supplier codes. LP0041 is independently identified as acid hydrolysate; other BD product substitutions or manufacturer formula reconstructions are unverified.
+
+### f3: Legacy diammonium-phosphate correspondence remains unresolved
+
+minor / open / confirmed; issue key: culturemech.000950.legacy-correspondence.
+
+Both layers retain MediaIngredientMech:000385. The current exact lookup is negative, while the primary CHEBI identity remains supported. Historical invalidity is not established.
+
+### f4: Typed preparation action obscures pH adjustment
+
+minor / open / confirmed; issue key: culturemech.000950.ph-action-type.
+
+Both layers type the only preparation step as MIX although its complete description and source specify a pH adjustment.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Recover the explicit water input and attach current primary batch-amount evidence with exact scope. Preserve the nine historical claims, source hashes and limitations; resolve final-volume interpretation before asserting new rates, then regenerate supported evidence.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Retain all three literal supplier strings and the supported LP0041 hydrolysis type in maintained ingredient notes/evidence. Do not substitute similarly named products or import unrelated manufacturer recommendations.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Resolve the historical legacy mapping or append an explicit provenance limit before a separately authorized migration. Keep the valid source chemical identity and do not manufacture an old catalog match.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Align the typed action with the supported pH-adjustment meaning while preserving the exact range and source-limited procedure. Do not add a guessed sterilization cycle.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch031/304/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-031/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch031/304/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml:1:id: CultureMech:000950<br>./data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml:1:id: CultureMech:000950<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch031/source-preflight-bound/304/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 16 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| bound-owner-context | /private/tmp/culturemech-review-work-batch031/source-preflight-bound/304/evidence-context-original.json; Whole target, all maintained owners and scoped dependencies | context_only | All frozen local-record objects match fresh inspected YAML. Source interpretations are separately checked against actual bound raw/text bytes. |
+| primary | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf; Page 1 complete formula, supplier strings, water and pH | supports | Exact source has twelve solute/mixture rows, one water row and a pH range. It does not state measured final volume, incubation temperature or a sterilization cycle. |
+| supplier-identity | https://documents.thermofisher.com/TFS-Assets/MBD/Specification-Sheets/PS-LP0041-V5.pdf; Page 1 title and first description sentence only | supports | Official LP0041 specification identifies acid casein hydrolysate. General manufacturer use levels, substitution suggestions and quality-control organism/assay procedures are outside this medium and do not transfer. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch031/304/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:2509 resolves to agar. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:26710 resolves to sodium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32588 resolves to potassium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32954 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32954; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32954 resolves to sodium acetate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi50144 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_50144; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:50144 resolves to sodium pyruvate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi63051 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63051; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:63051 resolves to diammonium hydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86345 resolves to magnesium dichloride hexahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:2509": [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32588": [{"label": "KCl", "match_type": "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32954": [{"label": "Na-acetate", "match_type": "preferred_term", "identifier": "CHEBI:32954", "preferred_term": "Na-acetate", "ontology_id": "CHEBI:32954", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:50144": [{"label": "Na-pyruvate", "match_type": "preferred_term", "identifier": "CHEBI:50144", "preferred_term": "Na-pyruvate", "ontology_id": "CHEBI:50144", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86345": [{"label": "Magnesium chloride", "match_type": "preferred_term", "identifier": "CHEBI:86345", "preferred_term": "Magnesium chloride", "ontology_id": "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgCl2 x 6 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86345", "preferred_term": "MgCl2 x 6 H2O", "ontology_id": "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| history-metadata | data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml; data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 9, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml", "events": 9, "timestamp_issues": []}] |
+| mimPinnedCatalog | https://raw.githubusercontent.com/CultureBotAI/MediaIngredientMech/6643131b0f12ab40b66f98135245fca04027e0e9/docs/data/all_ingredients.json; Complete pinned current catalog/tree exact legacy-key lookup | context_only | Exact current negative lookup is complete. It does not disprove the historical label correspondence or authenticate its original source. |
+| mimPinnedTree | https://api.github.com/repos/CultureBotAI/MediaIngredientMech/git/trees/6643131b0f12ab40b66f98135245fca04027e0e9?recursive=1; Complete pinned current catalog/tree exact legacy-key lookup | context_only | Exact current negative lookup is complete. It does not disprove the historical label correspondence or authenticate its original source. |
+| historical-derivatives | reports/ingredient_concentration_curation/20261007-mediadive-media-1500-2000/records/bacterial/arhodomonas_medium_rs91.yaml.md; Whole local derivative report and all nine attached owner snippets; literal &lt;br&gt;-decoded equality | context_only | {"claims": [{"field_path": "ingredients[0].evidence[0]", "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 100,\n                        \"unit\": \"g\",\n                        \"g_l\": 100,\n                        \"mmol_l\": 1711.16,\n                        \"optional\": 0\n                    }", "explanation": "Concentration evidence for ingredients[0].concentration (NaCl) in MediaDive medium 1482; locator=$.data.solutions[0].recipe[0]. Provider explicitly reports g_l=100; check: 100 g * 1 g/g / (1000 ml / 1000 ml per L) = 100 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:42:28.174265+00:00; response SHA256=5e3c30e503e007e9744d29d9f00da59e6ee9915f82f34567271e117bb7e9833e."}, {"field_path": "ingredients[1].evidence[0]", "snippet": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\": 10,\n                        \"unit\": \"g\",\n                        \"g_l\": 10,\n                        \"mmol_l\": 49.1877,\n                        \"optional\": 0\n                    }", "explanation": "Concentration evidence for ingredients[1].concentration (MgCl2 x 6 H2O) in MediaDive medium 1482; locator=$.data.solutions[0].recipe[1]. Provider explicitly reports g_l=10; check: 10 g * 1 g/g / (1000 ml / 1000 ml per L) = 10 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:42:28.174265+00:00; response SHA256=5e3c30e503e007e9744d29d9f00da59e6ee9915f82f34567271e117bb7e9833e."}, {"field_path": "ingredients[2].evidence[0]", "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\": 20.1207,\n                        \"optional\": 0\n                    }", "explanation": "Concentration evidence for ingredients[2].concentration (KCl) in MediaDive medium 1482; locator=$.data.solutions[0].recipe[2]. Provider explicitly reports g_l=1.5; check: 1.5 g * 1 g/g / (1000 ml / 1000 ml per L) = 1.5 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:42:28.174265+00:00; response SHA256=5e3c30e503e007e9744d29d9f00da59e6ee9915f82f34567271e117bb7e9833e."}, {"field_path": "ingredients[3].evidence[0]", "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 1.36041,\n                        \"optional\": 0\n                    }", "explanation": "Concentration evidence for ingredients[3].concentration (CaCl2 x 2 H2O) in MediaDive medium 1482; locator=$.data.solutions[0].recipe[3]. Provider explicitly reports g_l=0.2; check: 0.2 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.2 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:42:28.174265+00:00; response SHA256=5e3c30e503e007e9744d29d9f00da59e6ee9915f82f34567271e117bb7e9833e."}, {"field_path": "ingredients[4].evidence[0]", "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2,\n                        \"mmol_l\": 8.11438,\n                        \"optional\": 0\n                    }", "explanation": "Concentration evidence for ingredients[4].concentration (MgSO4 x 7 H2O) in MediaDive medium 1482; locator=$.data.solutions[0].recipe[4]. Provider explicitly reports g_l=2; check: 2 g * 1 g/g / (1000 ml / 1000 ml per L) = 2 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:42:28.174265+00:00; response SHA256=5e3c30e503e007e9744d29d9f00da59e6ee9915f82f34567271e117bb7e9833e."}, {"field_path": "ingredients[5].evidence[0]", "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"(NH4)2HPO4\",\n                        \"compound_id\": 257,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 3.78616,\n                        \"optional\": 0\n                    }", "explanation": "Concentration evidence for ingredients[5].concentration ((NH4)2HPO4) in MediaDive medium 1482; locator=$.data.solutions[0].recipe[5]. Provider explicitly reports g_l=0.5; check: 0.5 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.5 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:42:28.174265+00:00; response SHA256=5e3c30e503e007e9744d29d9f00da59e6ee9915f82f34567271e117bb7e9833e."}, {"field_path": "ingredients[6].evidence[0]", "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Na pyruvate\",\n                        \"compound_id\": 762,\n                        \"amount\": 0.4,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.4,\n                        \"mmol_l\": 3.63491,\n                        \"optional\": 0\n                    }", "explanation": "Concentration evidence for ingredients[6].concentration (Na pyruvate) in MediaDive medium 1482; locator=$.data.solutions[0].recipe[6]. Provider explicitly reports g_l=0.4; check: 0.4 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.4 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:42:28.174265+00:00; response SHA256=5e3c30e503e007e9744d29d9f00da59e6ee9915f82f34567271e117bb7e9833e."}, {"field_path": "ingredients[7].evidence[0]", "snippet": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Na acetate\",\n                        \"compound_id\": 401,\n                        \"amount\": 0.8,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.8,\n                        \"mmol_l\": 9.75208,\n                        \"optional\": 0\n                    }", "explanation": "Concentration evidence for ingredients[7].concentration (Na acetate) in MediaDive medium 1482; locator=$.data.solutions[0].recipe[7]. Provider explicitly reports g_l=0.8; check: 0.8 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.8 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:42:28.174265+00:00; response SHA256=5e3c30e503e007e9744d29d9f00da59e6ee9915f82f34567271e117bb7e9833e."}, {"field_path": "ingredients[11].evidence[0]", "snippet": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n                        \"amount\": 20,\n                        \"unit\": \"g\",\n                        \"g_l\": 20,\n                        \"mmol_l\": 59.4654,\n                        \"optional\": 0\n                    }", "explanation": "Concentration evidence for ingredients[11].concentration (Agar) in MediaDive medium 1482; locator=$.data.solutions[0].recipe[11]. Provider explicitly reports g_l=20; check: 20 g * 1 g/g / (1000 ml / 1000 ml per L) = 20 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:42:28.174265+00:00; response SHA256=5e3c30e503e007e9744d29d9f00da59e6ee9915f82f34567271e117bb7e9833e."}], "raw_search": {"receipt_path": "/private/tmp/culturemech-review-source-preflight-batch031/historical-1521-1482-search.json", "receipt_sha256": "88203761e99c7dca822676e95b916c7c099d15cf3b2d4112153f6ca0ad138388", "result": "No exact raw or embedded body matches among4590 candidates across107 owned roots, ignored/hidden included. Candidate scope only; no universal absence claim."}, "limit": "Exact derivative quotation equality only; original raw response unavailable."} |
+| current-code-0 | src/culturemech/import/mediadive_importer.py; Current scoped code; no historical-version inference | context_only | Current MediaDive preparation classification is keyword-based and water is omitted from direct composition; preserve a faithful solvent/preparation representation and claim evidence in maintained input. Current code is not proof of the historical run. Keep later owner evidence/history, and regenerate only after authorized corrections. |
+| current-code-1 | src/culturemech/merge/merge_recipes.py; Current scoped code; no historical-version inference | context_only | Current MediaDive preparation classification is keyword-based and water is omitted from direct composition; preserve a faithful solvent/preparation representation and claim evidence in maintained input. Current code is not proof of the historical run. Keep later owner evidence/history, and regenerate only after authorized corrections. |
+| mediadive1482api-attempt | https://mediadive.dsmz.de/rest/medium/1482; Preserved exact public retrieval result | context_only | Exact optional attempt mediadive1482api returned HTTP 503. The current collection source remains usable; this does not justify replacing supplier identity or authenticating historical raw bytes. |
+| mediadive1482api_retry-attempt | https://mediadive.dsmz.de/rest/medium/1482; Preserved exact public retrieval result | context_only | Exact optional attempt mediadive1482api_retry returned HTTP 503. The current collection source remains usable; this does not justify replacing supplier identity or authenticating historical raw bytes. |
+| bdManualIdentity-attempt | https://static.bd.com/assets/product/Documents/Integrated%20Diagnostic%20Solutions%20%28IDS%29/DS_CM_Difco-and-BBL-culture-media-manual_UG_EN.pdf; Preserved exact public retrieval result | context_only | Exact optional attempt bdManualIdentity returned HTTP 404. The current collection source remains usable; this does not justify replacing supplier identity or authenticating historical raw bytes. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Exact optional attempt mediadive1482api returned HTTP 503. The current collection source remains usable; this does not justify replacing supplier identity or authenticating historical raw bytes.
+- Exact optional attempt mediadive1482api_retry returned HTTP 503. The current collection source remains usable; this does not justify replacing supplier identity or authenticating historical raw bytes.
+- Exact optional attempt bdManualIdentity returned HTTP 404. The current collection source remains usable; this does not justify replacing supplier identity or authenticating historical raw bytes.
+- Required original-response authentication for nine historical owner concentration claims remains unavailable after the bounded ignored-inclusive search. Local report equality is derivative corroboration only.
+- Required historical correspondence of MediaIngredientMech:000385 remains unresolved. Exact absence from current pinned resources is a completed negative lookup, not the unavailable historical check itself.
+- Exact BD product/lot/version equivalence is unverified beyond the collection supplier strings; the official manual request failed. No supplier substitute, general use percentage, QC organism or QC procedure is transferred into this medium.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T172812Z-culturemech-000950-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: arhodomonas_medium_rs91 (CultureMech:000950)'
+started_at: '2026-10-21T17:21:18Z'
+finished_at: '2026-10-21T17:28:12Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: DSMZ 1482 supports the twelve ingredient amounts as batch masses, the missing
+  1000 mL water input and pH 6.5–7.5. Exact supplier strings are more specific than
+  the local generic mixture names. Nine later owner concentration quotations match
+  local derivative reports, but their original raw API response is unavailable; the
+  historical legacy diammonium-phosphate key is also unresolved despite a valid primary
+  CHEBI term. Current quantities are not declared numerically false merely because
+  a measured final-volume basis is absent. Review remains partial for those historical
+  checks.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml
+    sha256: 391478a9988cd581d636feb47b01f72ad2dd852d50630ab99aff0c386f347792
+    role: target
+  - path: data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml
+    sha256: 8ed23b74d4be5640909a101b4578c1e6bbac2ab7ee2443f36f93dc2d44280f5a
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1500-2000/plan.json
+    sha256: 087b43514367d268b48e568b66203c146b81601303e5c8e3508f3c91e0fcbf26
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1500-2000/records/bacterial/arhodomonas_medium_rs91.yaml.md
+    sha256: 6df1bd9a5b2b01d449098c44657c25f28284c6bef271fcc043f157a5f089caf9
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-medium-source-fetch-1500-2000.json
+    sha256: b6856e96be7c57a5ae4f670acf8869af50abbd0b8b52aa087ebe850b48fc7472
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 304; batch 031 item 4 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirty task batches contain
+    300 ledger-owned validated record reviews; their complete validated lists also
+    retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 303 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:000950
+targets:
+- target_id: CultureMech:000950
+  path: data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml
+  label: arhodomonas_medium_rs91
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:000950
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch031/304/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-031/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch031/304/strict.tsv"
+  target_ids:
+  - CultureMech:000950
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:000950
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:000950
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:000950
+- check_id: mediadive1482api-source-access
+  name: 'Exact source content access: mediadive1482api'
+  required: false
+  status: unavailable
+  summary: Exact optional attempt mediadive1482api returned HTTP 503. The current
+    collection source remains usable; this does not justify replacing supplier identity
+    or authenticating historical raw bytes.
+  target_ids:
+  - CultureMech:000950
+  evidence_ids:
+  - mediadive1482api-attempt
+- check_id: mediadive1482api_retry-source-access
+  name: 'Exact source content access: mediadive1482api_retry'
+  required: false
+  status: unavailable
+  summary: Exact optional attempt mediadive1482api_retry returned HTTP 503. The current
+    collection source remains usable; this does not justify replacing supplier identity
+    or authenticating historical raw bytes.
+  target_ids:
+  - CultureMech:000950
+  evidence_ids:
+  - mediadive1482api_retry-attempt
+- check_id: bdManualIdentity-source-access
+  name: 'Exact source content access: bdManualIdentity'
+  required: false
+  status: unavailable
+  summary: Exact optional attempt bdManualIdentity returned HTTP 404. The current
+    collection source remains usable; this does not justify replacing supplier identity
+    or authenticating historical raw bytes.
+  target_ids:
+  - CultureMech:000950
+  evidence_ids:
+  - bdManualIdentity-attempt
+- check_id: historical-raw-authentication
+  name: Required source-scope verification
+  required: true
+  status: unavailable
+  summary: Required original-response authentication for nine historical owner concentration
+    claims remains unavailable after the bounded ignored-inclusive search. Local report
+    equality is derivative corroboration only.
+  target_ids:
+  - CultureMech:000950
+  evidence_ids:
+  - historical-derivatives
+- check_id: legacy-historical-correspondence
+  name: Required source-scope verification
+  required: true
+  status: unavailable
+  summary: Required historical correspondence of MediaIngredientMech:000385 remains
+    unresolved. Exact absence from current pinned resources is a completed negative
+    lookup, not the unavailable historical check itself.
+  target_ids:
+  - CultureMech:000950
+  evidence_ids:
+  - mimPinnedCatalog
+  - mimPinnedTree
+  - record
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T17:28:12Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T17:28:12Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:21:44.738512Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch031/304/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:21:46.065812Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-031/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch031/304/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:21:47.342021Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:21:48.241311Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T17:28:12Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml:1:id: CultureMech:000950
+
+    ./data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml:1:id: CultureMech:000950
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch031/source-preflight-bound/304/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T17:28:12Z'
+  support: supports
+  summary: 16 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 6f1763ac90ec6c227b751eeca89c2fb8e22cb0001f5fb4995c905075848b49de
+- evidence_id: bound-owner-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch031/source-preflight-bound/304/evidence-context-original.json
+  locator: Whole target, all maintained owners and scoped dependencies
+  accessed_at: '2026-10-21T17:28:12Z'
+  support: context_only
+  summary: All frozen local-record objects match fresh inspected YAML. Source interpretations
+    are separately checked against actual bound raw/text bytes.
+  snapshot_sha256: 66ba51a0708eb01bda408c949029467eb4e1dd94cbc3b919df635d645db00ca7
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf
+  locator: Page 1 complete formula, supplier strings, water and pH
+  accessed_at: '2026-10-21T17:04:21.622458Z'
+  support: supports
+  summary: Exact source has twelve solute/mixture rows, one water row and a pH range.
+    It does not state measured final volume, incubation temperature or a sterilization
+    cycle.
+  snapshot_sha256: 65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e
+- evidence_id: supplier-identity
+  kind: database
+  reference: https://documents.thermofisher.com/TFS-Assets/MBD/Specification-Sheets/PS-LP0041-V5.pdf
+  locator: Page 1 title and first description sentence only
+  accessed_at: '2026-10-21T17:06:06.871024Z'
+  support: supports
+  summary: Official LP0041 specification identifies acid casein hydrolysate. General
+    manufacturer use levels, substitution suggestions and quality-control organism/assay
+    procedures are outside this medium and do not transfer.
+  quote: CASEIN HYDROLYSATE (ACID) LP0041
+  snapshot_sha256: 2f58413ff2d1eee638220e6e5044cb52151259cf0a6637b8fa55d9e32fff6f56
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch031/304/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T17:28:12Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 2b39cd00f1379a8b59bf1c04acbd01307ad696cc18994668d62ffa7d97101393
+- evidence_id: chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:27.847373Z'
+  support: supports
+  summary: CHEBI:2509 resolves to agar. Identifier existence and label metadata do
+    not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32588
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.045588Z'
+  support: supports
+  summary: CHEBI:32588 resolves to potassium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi32954
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32954
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:00:48.206583Z'
+  support: supports
+  summary: CHEBI:32954 resolves to sodium acetate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 573cba85f57c363463610a20b17be618893d6432ba239604fbd8aa562f98161b
+- evidence_id: chebi50144
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_50144
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:22:07.440767Z'
+  support: supports
+  summary: CHEBI:50144 resolves to sodium pyruvate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 457ed29adfdea68c420ea0c094d7d75593958fc70f908f6809348e4e12e7e15d
+- evidence_id: chebi63051
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63051
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T17:04:23.306517Z'
+  support: supports
+  summary: CHEBI:63051 resolves to diammonium hydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: d463939ff68b0686dd62097e1ed8578ca61de590f460afb0ecddef1c74a95afa
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.382026Z'
+  support: supports
+  summary: CHEBI:86345 resolves to magnesium dichloride hexahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T17:28:12Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:2509":
+    [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509",
+    "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term",
+    "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label":
+    "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32588": [{"label":
+    "KCl", "match_type": "preferred_term", "identifier": "CHEBI:32588", "preferred_term":
+    "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:32954": [{"label": "Na-acetate", "match_type": "preferred_term",
+    "identifier": "CHEBI:32954", "preferred_term": "Na-acetate", "ontology_id": "CHEBI:32954",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:50144": [{"label":
+    "Na-pyruvate", "match_type": "preferred_term", "identifier": "CHEBI:50144", "preferred_term":
+    "Na-pyruvate", "ontology_id": "CHEBI:50144", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id":
+    "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86345":
+    [{"label": "Magnesium chloride", "match_type": "preferred_term", "identifier":
+    "CHEBI:86345", "preferred_term": "Magnesium chloride", "ontology_id": "CHEBI:86345",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgCl2 x 6 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:86345", "preferred_term":
+    "MgCl2 x 6 H2O", "ontology_id": "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml; data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T17:28:12Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 9, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml",
+    "events": 9, "timestamp_issues": []}]'
+- evidence_id: mimPinnedCatalog
+  kind: database
+  reference: https://raw.githubusercontent.com/CultureBotAI/MediaIngredientMech/6643131b0f12ab40b66f98135245fca04027e0e9/docs/data/all_ingredients.json
+  locator: Complete pinned current catalog/tree exact legacy-key lookup
+  accessed_at: '2026-10-21T09:52:30.606764Z'
+  support: context_only
+  summary: Exact current negative lookup is complete. It does not disprove the historical
+    label correspondence or authenticate its original source.
+  snapshot_sha256: 474ff60bd51606ef6e272b8b22d421bbe51d9f78567a114f94e59d04fe51acc7
+- evidence_id: mimPinnedTree
+  kind: database
+  reference: https://api.github.com/repos/CultureBotAI/MediaIngredientMech/git/trees/6643131b0f12ab40b66f98135245fca04027e0e9?recursive=1
+  locator: Complete pinned current catalog/tree exact legacy-key lookup
+  accessed_at: '2026-10-21T09:51:04.602158Z'
+  support: context_only
+  summary: Exact current negative lookup is complete. It does not disprove the historical
+    label correspondence or authenticate its original source.
+  snapshot_sha256: 71721421c6e8100b080d4ee3140f6e0bb4bcd21b57964ceeb61399ca4a2844ec
+- evidence_id: historical-derivatives
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-1500-2000/records/bacterial/arhodomonas_medium_rs91.yaml.md
+  locator: Whole local derivative report and all nine attached owner snippets; literal
+    <br>-decoded equality
+  accessed_at: '2026-10-21T17:28:12Z'
+  support: context_only
+  summary: '{"claims": [{"field_path": "ingredients[0].evidence[0]", "snippet": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\":
+    43,\n                        \"amount\": 100,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 100,\n                        \"mmol_l\":
+    1711.16,\n                        \"optional\": 0\n                    }", "explanation":
+    "Concentration evidence for ingredients[0].concentration (NaCl) in MediaDive medium
+    1482; locator=$.data.solutions[0].recipe[0]. Provider explicitly reports g_l=100;
+    check: 100 g * 1 g/g / (1000 ml / 1000 ml per L) = 100 g/L. This supports the
+    provider-declared main-recipe concentration, not an independently measured final
+    volume, a stock composition, or a downstream assay dilution. Water alone does
+    not establish final volume. Exact source ingredient labels/forms are matched;
+    secondary ontology mappings are not validated by this evidence. Additional exact
+    value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:42:28.174265+00:00;
+    response SHA256=5e3c30e503e007e9744d29d9f00da59e6ee9915f82f34567271e117bb7e9833e."},
+    {"field_path": "ingredients[1].evidence[0]", "snippet": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\":
+    79,\n                        \"amount\": 10,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 10,\n                        \"mmol_l\":
+    49.1877,\n                        \"optional\": 0\n                    }", "explanation":
+    "Concentration evidence for ingredients[1].concentration (MgCl2 x 6 H2O) in MediaDive
+    medium 1482; locator=$.data.solutions[0].recipe[1]. Provider explicitly reports
+    g_l=10; check: 10 g * 1 g/g / (1000 ml / 1000 ml per L) = 10 g/L. This supports
+    the provider-declared main-recipe concentration, not an independently measured
+    final volume, a stock composition, or a downstream assay dilution. Water alone
+    does not establish final volume. Exact source ingredient labels/forms are matched;
+    secondary ontology mappings are not validated by this evidence. Additional exact
+    value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:42:28.174265+00:00;
+    response SHA256=5e3c30e503e007e9744d29d9f00da59e6ee9915f82f34567271e117bb7e9833e."},
+    {"field_path": "ingredients[2].evidence[0]", "snippet": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"KCl\",\n                        \"compound_id\":
+    61,\n                        \"amount\": 1.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\":
+    20.1207,\n                        \"optional\": 0\n                    }", "explanation":
+    "Concentration evidence for ingredients[2].concentration (KCl) in MediaDive medium
+    1482; locator=$.data.solutions[0].recipe[2]. Provider explicitly reports g_l=1.5;
+    check: 1.5 g * 1 g/g / (1000 ml / 1000 ml per L) = 1.5 g/L. This supports the
+    provider-declared main-recipe concentration, not an independently measured final
+    volume, a stock composition, or a downstream assay dilution. Water alone does
+    not establish final volume. Exact source ingredient labels/forms are matched;
+    secondary ontology mappings are not validated by this evidence. Additional exact
+    value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:42:28.174265+00:00;
+    response SHA256=5e3c30e503e007e9744d29d9f00da59e6ee9915f82f34567271e117bb7e9833e."},
+    {"field_path": "ingredients[3].evidence[0]", "snippet": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\":
+    7,\n                        \"amount\": 0.2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\":
+    1.36041,\n                        \"optional\": 0\n                    }", "explanation":
+    "Concentration evidence for ingredients[3].concentration (CaCl2 x 2 H2O) in MediaDive
+    medium 1482; locator=$.data.solutions[0].recipe[3]. Provider explicitly reports
+    g_l=0.2; check: 0.2 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.2 g/L. This supports
+    the provider-declared main-recipe concentration, not an independently measured
+    final volume, a stock composition, or a downstream assay dilution. Water alone
+    does not establish final volume. Exact source ingredient labels/forms are matched;
+    secondary ontology mappings are not validated by this evidence. Additional exact
+    value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:42:28.174265+00:00;
+    response SHA256=5e3c30e503e007e9744d29d9f00da59e6ee9915f82f34567271e117bb7e9833e."},
+    {"field_path": "ingredients[4].evidence[0]", "snippet": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\":
+    8,\n                        \"amount\": 2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2,\n                        \"mmol_l\":
+    8.11438,\n                        \"optional\": 0\n                    }", "explanation":
+    "Concentration evidence for ingredients[4].concentration (MgSO4 x 7 H2O) in MediaDive
+    medium 1482; locator=$.data.solutions[0].recipe[4]. Provider explicitly reports
+    g_l=2; check: 2 g * 1 g/g / (1000 ml / 1000 ml per L) = 2 g/L. This supports the
+    provider-declared main-recipe concentration, not an independently measured final
+    volume, a stock composition, or a downstream assay dilution. Water alone does
+    not establish final volume. Exact source ingredient labels/forms are matched;
+    secondary ontology mappings are not validated by this evidence. Additional exact
+    value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:42:28.174265+00:00;
+    response SHA256=5e3c30e503e007e9744d29d9f00da59e6ee9915f82f34567271e117bb7e9833e."},
+    {"field_path": "ingredients[5].evidence[0]", "snippet": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"(NH4)2HPO4\",\n                        \"compound_id\":
+    257,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\":
+    3.78616,\n                        \"optional\": 0\n                    }", "explanation":
+    "Concentration evidence for ingredients[5].concentration ((NH4)2HPO4) in MediaDive
+    medium 1482; locator=$.data.solutions[0].recipe[5]. Provider explicitly reports
+    g_l=0.5; check: 0.5 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.5 g/L. This supports
+    the provider-declared main-recipe concentration, not an independently measured
+    final volume, a stock composition, or a downstream assay dilution. Water alone
+    does not establish final volume. Exact source ingredient labels/forms are matched;
+    secondary ontology mappings are not validated by this evidence. Additional exact
+    value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:42:28.174265+00:00;
+    response SHA256=5e3c30e503e007e9744d29d9f00da59e6ee9915f82f34567271e117bb7e9833e."},
+    {"field_path": "ingredients[6].evidence[0]", "snippet": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Na pyruvate\",\n                        \"compound_id\":
+    762,\n                        \"amount\": 0.4,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.4,\n                        \"mmol_l\":
+    3.63491,\n                        \"optional\": 0\n                    }", "explanation":
+    "Concentration evidence for ingredients[6].concentration (Na pyruvate) in MediaDive
+    medium 1482; locator=$.data.solutions[0].recipe[6]. Provider explicitly reports
+    g_l=0.4; check: 0.4 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.4 g/L. This supports
+    the provider-declared main-recipe concentration, not an independently measured
+    final volume, a stock composition, or a downstream assay dilution. Water alone
+    does not establish final volume. Exact source ingredient labels/forms are matched;
+    secondary ontology mappings are not validated by this evidence. Additional exact
+    value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:42:28.174265+00:00;
+    response SHA256=5e3c30e503e007e9744d29d9f00da59e6ee9915f82f34567271e117bb7e9833e."},
+    {"field_path": "ingredients[7].evidence[0]", "snippet": "{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Na acetate\",\n                        \"compound_id\":
+    401,\n                        \"amount\": 0.8,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.8,\n                        \"mmol_l\":
+    9.75208,\n                        \"optional\": 0\n                    }", "explanation":
+    "Concentration evidence for ingredients[7].concentration (Na acetate) in MediaDive
+    medium 1482; locator=$.data.solutions[0].recipe[7]. Provider explicitly reports
+    g_l=0.8; check: 0.8 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.8 g/L. This supports
+    the provider-declared main-recipe concentration, not an independently measured
+    final volume, a stock composition, or a downstream assay dilution. Water alone
+    does not establish final volume. Exact source ingredient labels/forms are matched;
+    secondary ontology mappings are not validated by this evidence. Additional exact
+    value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:42:28.174265+00:00;
+    response SHA256=5e3c30e503e007e9744d29d9f00da59e6ee9915f82f34567271e117bb7e9833e."},
+    {"field_path": "ingredients[11].evidence[0]", "snippet": "{\n                        \"recipe_order\":
+    12,\n                        \"compound\": \"Agar\",\n                        \"compound_id\":
+    3,\n                        \"amount\": 20,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 20,\n                        \"mmol_l\":
+    59.4654,\n                        \"optional\": 0\n                    }", "explanation":
+    "Concentration evidence for ingredients[11].concentration (Agar) in MediaDive
+    medium 1482; locator=$.data.solutions[0].recipe[11]. Provider explicitly reports
+    g_l=20; check: 20 g * 1 g/g / (1000 ml / 1000 ml per L) = 20 g/L. This supports
+    the provider-declared main-recipe concentration, not an independently measured
+    final volume, a stock composition, or a downstream assay dilution. Water alone
+    does not establish final volume. Exact source ingredient labels/forms are matched;
+    secondary ontology mappings are not validated by this evidence. Additional exact
+    value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:42:28.174265+00:00;
+    response SHA256=5e3c30e503e007e9744d29d9f00da59e6ee9915f82f34567271e117bb7e9833e."}],
+    "raw_search": {"receipt_path": "/private/tmp/culturemech-review-source-preflight-batch031/historical-1521-1482-search.json",
+    "receipt_sha256": "88203761e99c7dca822676e95b916c7c099d15cf3b2d4112153f6ca0ad138388",
+    "result": "No exact raw or embedded body matches among4590 candidates across107
+    owned roots, ignored/hidden included. Candidate scope only; no universal absence
+    claim."}, "limit": "Exact derivative quotation equality only; original raw response
+    unavailable."}'
+  snapshot_sha256: 6df1bd9a5b2b01d449098c44657c25f28284c6bef271fcc043f157a5f089caf9
+- evidence_id: current-code-0
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current scoped code; no historical-version inference
+  accessed_at: '2026-10-21T17:28:12Z'
+  support: context_only
+  summary: Current MediaDive preparation classification is keyword-based and water
+    is omitted from direct composition; preserve a faithful solvent/preparation representation
+    and claim evidence in maintained input. Current code is not proof of the historical
+    run. Keep later owner evidence/history, and regenerate only after authorized corrections.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: current-code-1
+  kind: record_content
+  reference: src/culturemech/merge/merge_recipes.py
+  locator: Current scoped code; no historical-version inference
+  accessed_at: '2026-10-21T17:28:12Z'
+  support: context_only
+  summary: Current MediaDive preparation classification is keyword-based and water
+    is omitted from direct composition; preserve a faithful solvent/preparation representation
+    and claim evidence in maintained input. Current code is not proof of the historical
+    run. Keep later owner evidence/history, and regenerate only after authorized corrections.
+  snapshot_sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+- evidence_id: mediadive1482api-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1482
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T17:04:20.931152Z'
+  support: context_only
+  summary: Exact optional attempt mediadive1482api returned HTTP 503. The current
+    collection source remains usable; this does not justify replacing supplier identity
+    or authenticating historical raw bytes.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadive1482api_retry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1482
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T17:05:12.222828Z'
+  support: context_only
+  summary: Exact optional attempt mediadive1482api_retry returned HTTP 503. The current
+    collection source remains usable; this does not justify replacing supplier identity
+    or authenticating historical raw bytes.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: bdManualIdentity-attempt
+  kind: database
+  reference: https://static.bd.com/assets/product/Documents/Integrated%20Diagnostic%20Solutions%20%28IDS%29/DS_CM_Difco-and-BBL-culture-media-manual_UG_EN.pdf
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T17:06:06.871145Z'
+  support: context_only
+  summary: Exact optional attempt bdManualIdentity returned HTTP 404. The current
+    collection source remains usable; this does not justify replacing supplier identity
+    or authenticating historical raw bytes.
+  snapshot_sha256: 493fda53120050f85836032324409be6c6484f90a0755ae0c6a673ba7626818b
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:000950
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 14 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:000950
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"component_or_context\": \"\
+    NaCl batch amount\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"100\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml\",\n        \"\
+    field_path\": \"ingredients[0].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"100\",\n          \"unit\": \"G_PER_L\"\n        },\n     \
+    \   \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"batch_amount_g\": \"100.0\",\n      \"source_water_input_ml\": 1000,\n\
+    \      \"measured_final_volume_ml\": null,\n      \"supplier\": null\n    },\n\
+    \    \"rationale\": \"The number matches the primary batch mass. Water input alone\
+    \ does not establish the stored final-litre basis. Nine owner claims retain a\
+    \ provider-declared basis only through historical derivatives; none is newly authenticated\
+    \ raw evidence. Preserve the current values pending source-basis clarification\
+    \ and add the exact primary amount and supplied product identity without inventing\
+    \ a rate.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1482\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, formula row 1\",\n        \"exact_source_quote\"\
+    : \"NaCl 100.0 g\",\n        \"snapshot_sha256\": \"65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e\"\
+    ,\n        \"parsed_text_sha256\": \"5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.622458Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1482\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, final table row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.0 ml\",\n        \"snapshot_sha256\": \"65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e\"\
+    ,\n        \"parsed_text_sha256\": \"5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.622458Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q2\",\n    \"component_or_context\": \"MgCl2\
+    \ x 6 H2O batch amount\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml\",\n        \"\
+    field_path\": \"ingredients[1].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n      \
+    \  \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"batch_amount_g\": \"10.0\",\n      \"source_water_input_ml\": 1000,\n\
+    \      \"measured_final_volume_ml\": null,\n      \"supplier\": null\n    },\n\
+    \    \"rationale\": \"The number matches the primary batch mass. Water input alone\
+    \ does not establish the stored final-litre basis. Nine owner claims retain a\
+    \ provider-declared basis only through historical derivatives; none is newly authenticated\
+    \ raw evidence. Preserve the current values pending source-basis clarification\
+    \ and add the exact primary amount and supplied product identity without inventing\
+    \ a rate.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1482\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, formula row 2\",\n        \"exact_source_quote\"\
+    : \"MgCl2 x 6 H2O 10.0 g\",\n        \"snapshot_sha256\": \"65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e\"\
+    ,\n        \"parsed_text_sha256\": \"5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.622458Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1482\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, final table row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.0 ml\",\n        \"snapshot_sha256\": \"65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e\"\
+    ,\n        \"parsed_text_sha256\": \"5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.622458Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q3\",\n    \"component_or_context\": \"KCl\
+    \ batch amount\",\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml\",\n        \"\
+    field_path\": \"ingredients[2].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n     \
+    \   \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"batch_amount_g\": \"1.5\",\n      \"source_water_input_ml\": 1000,\n\
+    \      \"measured_final_volume_ml\": null,\n      \"supplier\": null\n    },\n\
+    \    \"rationale\": \"The number matches the primary batch mass. Water input alone\
+    \ does not establish the stored final-litre basis. Nine owner claims retain a\
+    \ provider-declared basis only through historical derivatives; none is newly authenticated\
+    \ raw evidence. Preserve the current values pending source-basis clarification\
+    \ and add the exact primary amount and supplied product identity without inventing\
+    \ a rate.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1482\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, formula row 3\",\n        \"exact_source_quote\"\
+    : \"KCl 1.5 g\",\n        \"snapshot_sha256\": \"65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e\"\
+    ,\n        \"parsed_text_sha256\": \"5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.622458Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1482\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, final table row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.0 ml\",\n        \"snapshot_sha256\": \"65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e\"\
+    ,\n        \"parsed_text_sha256\": \"5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.622458Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q4\",\n    \"component_or_context\": \"CaCl2\
+    \ x 2 H2O batch amount\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml\",\n        \"\
+    field_path\": \"ingredients[3].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n     \
+    \   \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"batch_amount_g\": \"0.2\",\n      \"source_water_input_ml\": 1000,\n\
+    \      \"measured_final_volume_ml\": null,\n      \"supplier\": null\n    },\n\
+    \    \"rationale\": \"The number matches the primary batch mass. Water input alone\
+    \ does not establish the stored final-litre basis. Nine owner claims retain a\
+    \ provider-declared basis only through historical derivatives; none is newly authenticated\
+    \ raw evidence. Preserve the current values pending source-basis clarification\
+    \ and add the exact primary amount and supplied product identity without inventing\
+    \ a rate.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1482\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, formula row 4\",\n        \"exact_source_quote\"\
+    : \"CaCl2 x 2 H2O 0.2 g\",\n        \"snapshot_sha256\": \"65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e\"\
+    ,\n        \"parsed_text_sha256\": \"5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.622458Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1482\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, final table row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.0 ml\",\n        \"snapshot_sha256\": \"65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e\"\
+    ,\n        \"parsed_text_sha256\": \"5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.622458Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q5\",\n    \"component_or_context\": \"MgSO4\
+    \ x 7 H2O batch amount\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml\",\n        \"\
+    field_path\": \"ingredients[4].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n       \
+    \ \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"batch_amount_g\": \"2.0\",\n      \"source_water_input_ml\": 1000,\n\
+    \      \"measured_final_volume_ml\": null,\n      \"supplier\": null\n    },\n\
+    \    \"rationale\": \"The number matches the primary batch mass. Water input alone\
+    \ does not establish the stored final-litre basis. Nine owner claims retain a\
+    \ provider-declared basis only through historical derivatives; none is newly authenticated\
+    \ raw evidence. Preserve the current values pending source-basis clarification\
+    \ and add the exact primary amount and supplied product identity without inventing\
+    \ a rate.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1482\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, formula row 5\",\n        \"exact_source_quote\"\
+    : \"MgSO4 x 7 H2O 2.0 g\",\n        \"snapshot_sha256\": \"65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e\"\
+    ,\n        \"parsed_text_sha256\": \"5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.622458Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1482\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, final table row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.0 ml\",\n        \"snapshot_sha256\": \"65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e\"\
+    ,\n        \"parsed_text_sha256\": \"5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.622458Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q6\",\n    \"component_or_context\": \"(NH4)2HPO4\
+    \ batch amount\",\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml\",\n        \"\
+    field_path\": \"ingredients[5].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n     \
+    \   \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"batch_amount_g\": \"0.5\",\n      \"source_water_input_ml\": 1000,\n\
+    \      \"measured_final_volume_ml\": null,\n      \"supplier\": null\n    },\n\
+    \    \"rationale\": \"The number matches the primary batch mass. Water input alone\
+    \ does not establish the stored final-litre basis. Nine owner claims retain a\
+    \ provider-declared basis only through historical derivatives; none is newly authenticated\
+    \ raw evidence. Preserve the current values pending source-basis clarification\
+    \ and add the exact primary amount and supplied product identity without inventing\
+    \ a rate.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1482\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, formula row 6\",\n        \"exact_source_quote\"\
+    : \"(NH4)2HPO4 0.5 g\",\n        \"snapshot_sha256\": \"65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e\"\
+    ,\n        \"parsed_text_sha256\": \"5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.622458Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1482\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, final table row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.0 ml\",\n        \"snapshot_sha256\": \"65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e\"\
+    ,\n        \"parsed_text_sha256\": \"5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.622458Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q7\",\n    \"component_or_context\": \"Na pyruvate\
+    \ batch amount\",\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.4\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml\",\n        \"\
+    field_path\": \"ingredients[6].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"0.4\",\n          \"unit\": \"G_PER_L\"\n        },\n     \
+    \   \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"batch_amount_g\": \"0.4\",\n      \"source_water_input_ml\": 1000,\n\
+    \      \"measured_final_volume_ml\": null,\n      \"supplier\": null\n    },\n\
+    \    \"rationale\": \"The number matches the primary batch mass. Water input alone\
+    \ does not establish the stored final-litre basis. Nine owner claims retain a\
+    \ provider-declared basis only through historical derivatives; none is newly authenticated\
+    \ raw evidence. Preserve the current values pending source-basis clarification\
+    \ and add the exact primary amount and supplied product identity without inventing\
+    \ a rate.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1482\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, formula row 7\",\n        \"exact_source_quote\"\
+    : \"Na pyruvate 0.4 g\",\n        \"snapshot_sha256\": \"65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e\"\
+    ,\n        \"parsed_text_sha256\": \"5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.622458Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1482\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, final table row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.0 ml\",\n        \"snapshot_sha256\": \"65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e\"\
+    ,\n        \"parsed_text_sha256\": \"5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.622458Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q8\",\n    \"component_or_context\": \"Na acetate\
+    \ batch amount\",\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.8\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml\",\n        \"\
+    field_path\": \"ingredients[7].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"0.8\",\n          \"unit\": \"G_PER_L\"\n        },\n     \
+    \   \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"batch_amount_g\": \"0.8\",\n      \"source_water_input_ml\": 1000,\n\
+    \      \"measured_final_volume_ml\": null,\n      \"supplier\": null\n    },\n\
+    \    \"rationale\": \"The number matches the primary batch mass. Water input alone\
+    \ does not establish the stored final-litre basis. Nine owner claims retain a\
+    \ provider-declared basis only through historical derivatives; none is newly authenticated\
+    \ raw evidence. Preserve the current values pending source-basis clarification\
+    \ and add the exact primary amount and supplied product identity without inventing\
+    \ a rate.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1482\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, formula row 8\",\n        \"exact_source_quote\"\
+    : \"Na acetate 0.8 g\",\n        \"snapshot_sha256\": \"65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e\"\
+    ,\n        \"parsed_text_sha256\": \"5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.622458Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1482\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, final table row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.0 ml\",\n        \"snapshot_sha256\": \"65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e\"\
+    ,\n        \"parsed_text_sha256\": \"5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.622458Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q9\",\n    \"component_or_context\": \"Casein\
+    \ hydrolysate (Oxoid LP0041) batch amount\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.4\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml\",\n        \"\
+    field_path\": \"ingredients[8].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"0.4\",\n          \"unit\": \"G_PER_L\"\n        },\n     \
+    \   \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"batch_amount_g\": \"0.4\",\n      \"source_water_input_ml\": 1000,\n\
+    \      \"measured_final_volume_ml\": null,\n      \"supplier\": \"Oxoid LP0041\"\
+    \n    },\n    \"rationale\": \"The number matches the primary batch mass. Water\
+    \ input alone does not establish the stored final-litre basis. Nine owner claims\
+    \ retain a provider-declared basis only through historical derivatives; none is\
+    \ newly authenticated raw evidence. Preserve the current values pending source-basis\
+    \ clarification and add the exact primary amount and supplied product identity\
+    \ without inventing a rate.\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1482\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, formula row 9\",\n        \"exact_source_quote\"\
+    : \"Casein hydrolysate (Oxoid LP0041) 0.4 g\",\n        \"snapshot_sha256\": \"\
+    65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e\",\n        \"\
+    parsed_text_sha256\": \"5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.622458Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1482\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, final table row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.0 ml\",\n        \"snapshot_sha256\": \"65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e\"\
+    ,\n        \"parsed_text_sha256\": \"5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.622458Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q10\",\n    \"component_or_context\": \"Yeast\
+    \ extract (BD212750) batch amount\",\n    \"decision\": \"unsupported\",\n   \
+    \ \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml\",\n        \"\
+    field_path\": \"ingredients[9].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        },\n     \
+    \   \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"batch_amount_g\": \"0.3\",\n      \"source_water_input_ml\": 1000,\n\
+    \      \"measured_final_volume_ml\": null,\n      \"supplier\": \"BD212750\"\n\
+    \    },\n    \"rationale\": \"The number matches the primary batch mass. Water\
+    \ input alone does not establish the stored final-litre basis. Nine owner claims\
+    \ retain a provider-declared basis only through historical derivatives; none is\
+    \ newly authenticated raw evidence. Preserve the current values pending source-basis\
+    \ clarification and add the exact primary amount and supplied product identity\
+    \ without inventing a rate.\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1482\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, formula row 10\",\n        \"exact_source_quote\"\
+    : \"Yeast extract (BD212750) 0.3 g\",\n        \"snapshot_sha256\": \"65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e\"\
+    ,\n        \"parsed_text_sha256\": \"5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.622458Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1482\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, final table row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.0 ml\",\n        \"snapshot_sha256\": \"65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e\"\
+    ,\n        \"parsed_text_sha256\": \"5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.622458Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q11\",\n    \"component_or_context\": \"Tryptone\
+    \ (BD211921) batch amount\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.6\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml\",\n        \"\
+    field_path\": \"ingredients[10].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.6\",\n          \"unit\": \"G_PER_L\"\n        },\n    \
+    \    \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"batch_amount_g\": \"0.6\",\n      \"source_water_input_ml\": 1000,\n\
+    \      \"measured_final_volume_ml\": null,\n      \"supplier\": \"BD211921\"\n\
+    \    },\n    \"rationale\": \"The number matches the primary batch mass. Water\
+    \ input alone does not establish the stored final-litre basis. Nine owner claims\
+    \ retain a provider-declared basis only through historical derivatives; none is\
+    \ newly authenticated raw evidence. Preserve the current values pending source-basis\
+    \ clarification and add the exact primary amount and supplied product identity\
+    \ without inventing a rate.\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1482\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, formula row 11\",\n        \"exact_source_quote\"\
+    : \"Tryptone (BD211921) 0.6 g\",\n        \"snapshot_sha256\": \"65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e\"\
+    ,\n        \"parsed_text_sha256\": \"5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.622458Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1482\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, final table row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.0 ml\",\n        \"snapshot_sha256\": \"65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e\"\
+    ,\n        \"parsed_text_sha256\": \"5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.622458Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q12\",\n    \"component_or_context\": \"Agar\
+    \ batch amount\",\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml\",\n        \"\
+    field_path\": \"ingredients[11].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        },\n     \
+    \   \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"batch_amount_g\": \"20.0\",\n      \"source_water_input_ml\": 1000,\n\
+    \      \"measured_final_volume_ml\": null,\n      \"supplier\": null\n    },\n\
+    \    \"rationale\": \"The number matches the primary batch mass. Water input alone\
+    \ does not establish the stored final-litre basis. Nine owner claims retain a\
+    \ provider-declared basis only through historical derivatives; none is newly authenticated\
+    \ raw evidence. Preserve the current values pending source-basis clarification\
+    \ and add the exact primary amount and supplied product identity without inventing\
+    \ a rate.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1482\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, formula row 12\",\n        \"exact_source_quote\"\
+    : \"Agar 20.0 g\",\n        \"snapshot_sha256\": \"65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e\"\
+    ,\n        \"parsed_text_sha256\": \"5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.622458Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1482\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, final table row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.0 ml\",\n        \"snapshot_sha256\": \"65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e\"\
+    ,\n        \"parsed_text_sha256\": \"5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.622458Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q13\",\n    \"component_or_context\": \"Source\
+    \ water input\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml\",\n\
+    \        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml\",\n        \"\
+    field_path\": \"ingredients[12].concentration\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"water_input_ml\": 1000,\n      \"measured_final_volume_ml\": null\n\
+    \    },\n    \"rationale\": \"Recover the missing source solvent amount in a supported\
+    \ representation. The locator is a proposed absent row; a water input must not\
+    \ become a mass concentration or a final-volume assertion.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1482\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf\",\n       \
+    \ \"source_locator\": \"Page 1, last table row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.0 ml\",\n        \"snapshot_sha256\": \"65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e\"\
+    ,\n        \"parsed_text_sha256\": \"5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.622458Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q14\",\n    \"component_or_context\": \"Main\
+    \ pH range\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml\"\
+    ,\n        \"field_path\": \"ph_range\",\n        \"stored\": {\n          \"\
+    min\": 6.5,\n          \"max\": 7.5\n        },\n        \"decision\": \"evidence_only\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml\"\
+    ,\n        \"field_path\": \"ph_range\",\n        \"stored\": {\n          \"\
+    min\": 6.5,\n          \"max\": 7.5\n        },\n        \"decision\": \"evidence_only\"\
+    \n      },\n      {\n        \"input\": \"data/merge_yaml/merged/ARHODOMONAS_MEDIUM_RS91.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Adjust to pH 6.5-7.5\",\n        \"decision\": \"evidence_only\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Adjust to pH 6.5-7.5\",\n        \"decision\": \"evidence_only\"\n      }\n\
+    \    ],\n    \"proposed_source_representation\": {\n      \"pH_range\": [\n  \
+    \      6.5,\n        7.5\n      ],\n      \"stage\": \"Preparation adjustment\"\
+    \n    },\n    \"rationale\": \"Both the structured range and prose match the source.\
+    \ Add exact evidence and retain preparation scope; this is not a growth optimum.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1482\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, final sentence\",\n        \"exact_source_quote\"\
+    : \"Adjust to pH 6.5-7.5\",\n        \"snapshot_sha256\": \"65bb2448c3bf6fa80c8c9c67513c3a80d12ca8b966ea4873e8d583177d0f927e\"\
+    ,\n        \"parsed_text_sha256\": \"5be89c1411892f855b522bff4d33612e2a3cfb3ee8bef47c2fd189f9351f7cb3\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:04:21.622458Z\"\n      }\n    ]\n\
+    \  }\n]"
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: concern
+  summary: '9 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 9/12 primary
+    and 8/12 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Source forms are assessed separately. The separate legacy MediaIngredientMech:000385
+    assertion is unresolved historically and is not included in the current CHEBI-key
+    success count.'
+  target_ids:
+  - CultureMech:000950
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi2509
+  - chebi26710
+  - chebi31795
+  - chebi32588
+  - chebi32954
+  - chebi50144
+  - chebi63051
+  - chebi86158
+  - chebi86345
+  details: 'Instance coverage on a 0–100 percent scale, denominator 12: primary 75.00%;
+    secondary 66.67%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 18 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:000950
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: legacy-link
+  area: grounding
+  topic: Historical legacy link versus current primary identity
+  outcome: concern
+  summary: The primary term CHEBI:63051 is diammonium hydrogen phosphate and matches
+    the supplied formula. The separate legacy MediaIngredientMech:000385 key is absent
+    from the inspected current index/catalog/tree; that completed negative lookup
+    cannot determine its historical meaning. Do not classify the ingredient as chemically
+    wrong on that basis.
+  target_ids:
+  - CultureMech:000950
+  evidence_ids:
+  - record
+  - owner-0
+  - mim
+  - mimPinnedCatalog
+  - mimPinnedTree
+  - chebi63051
+- assessment_id: identity
+  area: identity
+  topic: Exact medium and source products
+  outcome: supported
+  summary: The generated record and one maintained owner resolve to CultureMech:000950
+    and DSMZ 1482. The collection explicitly supplies Oxoid LP0041, BD212750 and BD211921.
+    Official LP0041 identity corroborates acid casein hydrolysate; unavailable BD
+    manufacturer detail does not erase the primary supplier strings or authorize substitution.
+  target_ids:
+  - CultureMech:000950
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - supplier-identity
+- assessment_id: historical-evidence
+  area: evidence
+  topic: Current primary amounts and later owner evidence
+  outcome: concern
+  summary: All twelve source batch masses numerically match local values, but no measured
+    final volume is declared. Nine later owner claims retain exact derivative quotations
+    and historical source hash 5e3c30e503e007e9744d29d9f00da59e6ee9915f82f34567271e117bb7e9833e;
+    original raw bytes are not recovered. Target has none of those later objects.
+    Preserve the historical scope rather than silently treating current primary water
+    as confirmation of the older provider denominator.
+  target_ids:
+  - CultureMech:000950
+  evidence_ids:
+  - primary
+  - historical-derivatives
+  - record
+  - owner-0
+- assessment_id: forms
+  area: grounding
+  topic: Chemical forms and undefined mixture identities
+  outcome: supported
+  summary: Explicit salt hydrates agree with captured terms. Sodium acetate hydration
+    is unqualified, so no unsupported hydrate or mass/molar conversion is selected.
+    Agar, casein hydrolysate, yeast extract and tryptone are mixtures; no single-molecule
+    identity or recipe is inferred. Manufacturer QC conditions and suggested substitutes
+    are not source formulation evidence.
+  target_ids:
+  - CultureMech:000950
+  evidence_ids:
+  - primary
+  - supplier-identity
+  - chebi32954
+  - chebi2509
+- assessment_id: preparation
+  area: completeness
+  topic: Source-limited pH and typed action
+  outcome: concern
+  summary: The source supports pH 6.5–7.5, retained in both layers, but the action
+    is typed MIX instead of reflecting its explicit adjustment. No sterilization method,
+    temperature or duration is supplied by the medium page; unrelated manufacturer
+    QC methods cannot fill that gap.
+  target_ids:
+  - CultureMech:000950
+  evidence_ids:
+  - primary
+  - record
+  - owner-0
+- assessment_id: classification
+  area: scope
+  topic: Solid mixture and growth scope
+  outcome: supported
+  summary: Agar is explicitly present and supports SOLID_AGAR. Hydrolysate, yeast
+    extract and tryptone support COMPLEX/UNDEFINED. A g/L representation is not automatically
+    invalid for agar preparation; the concern here is source basis and evidence. No
+    phenotype or growth target is inferred from the name or supplier QC tests.
+  target_ids:
+  - CultureMech:000950
+  evidence_ids:
+  - primary
+  - supplier-identity
+  - record
+- assessment_id: current-writers
+  area: provenance
+  topic: Current writers and follow-up ownership
+  outcome: concern
+  summary: Current MediaDive preparation classification is keyword-based and water
+    is omitted from direct composition; preserve a faithful solvent/preparation representation
+    and claim evidence in maintained input. Current code is not proof of the historical
+    run. Keep later owner evidence/history, and regenerate only after authorized corrections.
+  target_ids:
+  - CultureMech:000950
+  evidence_ids:
+  - record
+  - current-code-0
+  - current-code-1
+findings:
+- finding_id: f1
+  issue_key: culturemech.000950.source-basis-evidence
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Water and quantity-evidence scope are incomplete
+  description: Both layers omit the primary 1000 mL water input. Twelve values match
+    source batch masses but are stored as final-litre rates; nine owner-only historical
+    quotations retain a provider basis whose original raw response cannot currently
+    be authenticated. This is not proof that those numerical values are false.
+  target_ids:
+  - CultureMech:000950
+  field_paths:
+  - ingredients
+  - preparation_steps
+  evidence_ids:
+  - primary
+  - quantity-inventory
+  - historical-derivatives
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.000950.supplier-identity-detail
+  category: identity
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Generic mixture names omit source supplier identities
+  description: Casein hydrolysate, yeast extract and tryptone omit the exact primary
+    supplier codes. LP0041 is independently identified as acid hydrolysate; other
+    BD product substitutions or manufacturer formula reconstructions are unverified.
+  target_ids:
+  - CultureMech:000950
+  field_paths:
+  - ingredients[8]
+  - ingredients[9]
+  - ingredients[10]
+  evidence_ids:
+  - primary
+  - supplier-identity
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.000950.legacy-correspondence
+  category: grounding
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Legacy diammonium-phosphate correspondence remains unresolved
+  description: Both layers retain MediaIngredientMech:000385. The current exact lookup
+    is negative, while the primary CHEBI identity remains supported. Historical invalidity
+    is not established.
+  target_ids:
+  - CultureMech:000950
+  field_paths:
+  - ingredients[5].mediaingredientmech_term
+  evidence_ids:
+  - mimPinnedCatalog
+  - mimPinnedTree
+  - mim
+  - chebi63051
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: culturemech.000950.ph-action-type
+  category: representation
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Typed preparation action obscures pH adjustment
+  description: Both layers type the only preparation step as MIX although its complete
+    description and source specify a pH adjustment.
+  target_ids:
+  - CultureMech:000950
+  field_paths:
+  - preparation_steps[0].action
+  evidence_ids:
+  - primary
+  - record
+  - owner-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Recover the explicit water input and attach current primary batch-amount
+    evidence with exact scope. Preserve the nine historical claims, source hashes
+    and limitations; resolve final-volume interpretation before asserting new rates,
+    then regenerate supported evidence.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:000950
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Retain all three literal supplier strings and the supported LP0041
+    hydrolysis type in maintained ingredient notes/evidence. Do not substitute similarly
+    named products or import unrelated manufacturer recommendations.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:000950
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Resolve the historical legacy mapping or append an explicit provenance
+    limit before a separately authorized migration. Keep the valid source chemical
+    identity and do not manufacture an old catalog match.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:000950
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Align the typed action with the supported pH-adjustment meaning while
+    preserving the exact range and source-limited procedure. Do not add a guessed
+    sterilization cycle.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:000950
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/arhodomonas_medium_rs91.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Exact optional attempt mediadive1482api returned HTTP 503. The current collection
+  source remains usable; this does not justify replacing supplier identity or authenticating
+  historical raw bytes.
+- Exact optional attempt mediadive1482api_retry returned HTTP 503. The current collection
+  source remains usable; this does not justify replacing supplier identity or authenticating
+  historical raw bytes.
+- Exact optional attempt bdManualIdentity returned HTTP 404. The current collection
+  source remains usable; this does not justify replacing supplier identity or authenticating
+  historical raw bytes.
+- Required original-response authentication for nine historical owner concentration
+  claims remains unavailable after the bounded ignored-inclusive search. Local report
+  equality is derivative corroboration only.
+- Required historical correspondence of MediaIngredientMech:000385 remains unresolved.
+  Exact absence from current pinned resources is a completed negative lookup, not
+  the unavailable historical check itself.
+- Exact BD product/lot/version equivalence is unverified beyond the collection supplier
+  strings; the official manual request failed. No supplier substitute, general use
+  percentage, QC organism or QC procedure is transferred into this medium.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-031
+- generated-medium
+```
