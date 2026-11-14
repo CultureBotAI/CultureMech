@@ -1,0 +1,3435 @@
+# Source and formulation review: actinobacteria_medium (CultureMech:001170)
+
+- Review: 20261021T114915Z-culturemech-001170-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T11:43:21Z
+- Finished UTC: 2026-10-21T11:49:15Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The generated ACTINOBACTERIA record combines distinct DSMZ 1688 and 1627 formulations. Its stable DSMZ 1688 owner now has eight source-supported amounts with attached evidence, but the target retains mostly DSMZ 1627 stock-strength values and loses that evidence. The separate ACIDIBACTER owner still needs its 20 ml salt-stock boundary restored.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 183; batch 019 item 3 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding eighteen task batches contain 180 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c contains 40 validated baseline bundles covering 2 current merged paths. Unioning all prior lists with this baseline covers 182 of 6320 current merged paths, including 2 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 24a1d277eb7f0437af53af0d178a30f9bfa6374c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:001170 | data/merge_yaml/merged/ACTINOBACTERIA_MEDIUM.yaml | generated | actinobacteria_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:001170 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:001170 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-019/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch019/183/strict.tsv |
+| validate-terms | passed | True | CultureMech:001170 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:001170 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:001170 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:001170.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Two exact accessions are distinct formulations
+
+identity: concern. Targets: CultureMech:001170.
+
+Both stable owner IDs and DSMZ accessions resolve, and both explicit merge contributors were inspected. They are not formulation synonyms: DSMZ 1688 has yeast extract 0.100 g and pH 3.0; DSMZ 1627 has yeast extract 0.20 g and pH 5.0, with a salt stock. Under its provider volume, the latter supplies sodium sulfate 0.07 g/L and calcium nitrate tetrahydrate 0.014 g/L, whereas DSMZ 1688 declares 0.15 and 0.015 g/L. Similar ingredients do not establish identity.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:001170.
+
+35 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "decision": "evidence_only",
+    "local_input": "target",
+    "field_path": "ingredients[0].concentration",
+    "ingredient": "Glucose",
+    "stored": {
+      "value": "0.9",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": 0.9,
+      "unit": "G_PER_L",
+      "scope": "provider-declared main recipe",
+      "provider_volume_ml": 1000,
+      "original_source_amount": 0.9,
+      "original_source_unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1688",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf",
+        "source_locator": "Page 1 main recipe: Glucose",
+        "exact_source_quote": "glucose 0.900 g",
+        "snapshot_sha256": "eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735",
+        "parsed_text_sha256": "1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66"
+      },
+      {
+        "source_key": "mediadive1688api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1688",
+        "source_locator": "$.data.solutions[0].recipe[7]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\": 5,\n                        \"amount\": 0.9,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.9,\n                        \"mmol_l\": 4.99556,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53"
+      }
+    ],
+    "explanation": "Existing amount and unit match this exact accession and provider basis, but this local layer lacks attached matching evidence."
+  },
+  {
+    "decision": "correct",
+    "local_input": "target",
+    "field_path": "ingredients[1].concentration",
+    "ingredient": "Yeast extract",
+    "stored": {
+      "value": "0.2",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": 0.1,
+      "unit": "G_PER_L",
+      "scope": "provider-declared main recipe",
+      "provider_volume_ml": 1000,
+      "original_source_amount": 0.1,
+      "original_source_unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1688",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf",
+        "source_locator": "Page 1 main recipe: Yeast extract",
+        "exact_source_quote": "yeast extract 0.100 g",
+        "snapshot_sha256": "eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735",
+        "parsed_text_sha256": "1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66"
+      },
+      {
+        "source_key": "mediadive1688api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1688",
+        "source_locator": "$.data.solutions[0].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53"
+      }
+    ],
+    "explanation": "The generated target declares DSMZ 1688 but this amount does not match its exact main recipe or current maintained owner. Restore the source-specific target only after splitting the distinct DSMZ 1627 contributor; do not change the already correct DSMZ 1688 owner value."
+  },
+  {
+    "decision": "correct",
+    "local_input": "target",
+    "field_path": "ingredients[2].concentration",
+    "ingredient": "Na2SO4",
+    "stored": {
+      "value": "3.5",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": 0.15,
+      "unit": "G_PER_L",
+      "scope": "provider-declared main recipe",
+      "provider_volume_ml": 1000,
+      "original_source_amount": 0.15,
+      "original_source_unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1688",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf",
+        "source_locator": "Page 1 main recipe: Na2SO4",
+        "exact_source_quote": "Na2SO4 0.150 g",
+        "snapshot_sha256": "eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735",
+        "parsed_text_sha256": "1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66"
+      },
+      {
+        "source_key": "mediadive1688api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1688",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Na2SO4\",\n                        \"compound_id\": 110,\n                        \"amount\": 0.15,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.15,\n                        \"mmol_l\": 1.05604,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53"
+      }
+    ],
+    "explanation": "The generated target declares DSMZ 1688 but this amount does not match its exact main recipe or current maintained owner. Restore the source-specific target only after splitting the distinct DSMZ 1627 contributor; do not change the already correct DSMZ 1688 owner value."
+  },
+  {
+    "decision": "correct",
+    "local_input": "target",
+    "field_path": "ingredients[3].concentration",
+    "ingredient": "(NH4)2SO4",
+    "stored": {
+      "value": "22.5",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": 0.45,
+      "unit": "G_PER_L",
+      "scope": "provider-declared main recipe",
+      "provider_volume_ml": 1000,
+      "original_source_amount": 0.45,
+      "original_source_unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1688",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf",
+        "source_locator": "Page 1 main recipe: (NH4)2SO4",
+        "exact_source_quote": "(NH4)2SO4 0.450 g",
+        "snapshot_sha256": "eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735",
+        "parsed_text_sha256": "1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66"
+      },
+      {
+        "source_key": "mediadive1688api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1688",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\": 0.45,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.45,\n                        \"mmol_l\": 3.40548,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53"
+      }
+    ],
+    "explanation": "The generated target declares DSMZ 1688 but this amount does not match its exact main recipe or current maintained owner. Restore the source-specific target only after splitting the distinct DSMZ 1627 contributor; do not change the already correct DSMZ 1688 owner value."
+  },
+  {
+    "decision": "correct",
+    "local_input": "target",
+    "field_path": "ingredients[4].concentration",
+    "ingredient": "KCl",
+    "stored": {
+      "value": "2.5",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": 0.05,
+      "unit": "G_PER_L",
+      "scope": "provider-declared main recipe",
+      "provider_volume_ml": 1000,
+      "original_source_amount": 0.05,
+      "original_source_unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1688",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf",
+        "source_locator": "Page 1 main recipe: KCl",
+        "exact_source_quote": "KCl 0.050 g",
+        "snapshot_sha256": "eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735",
+        "parsed_text_sha256": "1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66"
+      },
+      {
+        "source_key": "mediadive1688api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1688",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\": 0.05,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.670691,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53"
+      }
+    ],
+    "explanation": "The generated target declares DSMZ 1688 but this amount does not match its exact main recipe or current maintained owner. Restore the source-specific target only after splitting the distinct DSMZ 1627 contributor; do not change the already correct DSMZ 1688 owner value."
+  },
+  {
+    "decision": "correct",
+    "local_input": "target",
+    "field_path": "ingredients[5].concentration",
+    "ingredient": "MgSO4 x 7 H2O",
+    "stored": {
+      "value": "25",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": 0.5,
+      "unit": "G_PER_L",
+      "scope": "provider-declared main recipe",
+      "provider_volume_ml": 1000,
+      "original_source_amount": 0.5,
+      "original_source_unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1688",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf",
+        "source_locator": "Page 1 main recipe: MgSO4 x 7 H2O",
+        "exact_source_quote": "MgSO4 x 7 H2O 0.500 g",
+        "snapshot_sha256": "eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735",
+        "parsed_text_sha256": "1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66"
+      },
+      {
+        "source_key": "mediadive1688api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1688",
+        "source_locator": "$.data.solutions[0].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 2.02859,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53"
+      }
+    ],
+    "explanation": "The generated target declares DSMZ 1688 but this amount does not match its exact main recipe or current maintained owner. Restore the source-specific target only after splitting the distinct DSMZ 1627 contributor; do not change the already correct DSMZ 1688 owner value."
+  },
+  {
+    "decision": "correct",
+    "local_input": "target",
+    "field_path": "ingredients[6].concentration",
+    "ingredient": "KH2PO4",
+    "stored": {
+      "value": "2.5",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": 0.05,
+      "unit": "G_PER_L",
+      "scope": "provider-declared main recipe",
+      "provider_volume_ml": 1000,
+      "original_source_amount": 0.05,
+      "original_source_unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1688",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf",
+        "source_locator": "Page 1 main recipe: KH2PO4",
+        "exact_source_quote": "KH\n2PO4 0.050 g",
+        "snapshot_sha256": "eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735",
+        "parsed_text_sha256": "1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66"
+      },
+      {
+        "source_key": "mediadive1688api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1688",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.05,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.367417,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53"
+      }
+    ],
+    "explanation": "The generated target declares DSMZ 1688 but this amount does not match its exact main recipe or current maintained owner. Restore the source-specific target only after splitting the distinct DSMZ 1627 contributor; do not change the already correct DSMZ 1688 owner value."
+  },
+  {
+    "decision": "correct",
+    "local_input": "target",
+    "field_path": "ingredients[7].concentration",
+    "ingredient": "Ca(NO3)2 x 4 H2O",
+    "stored": {
+      "value": "0.7",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": 0.015,
+      "unit": "G_PER_L",
+      "scope": "provider-declared main recipe",
+      "provider_volume_ml": 1000,
+      "original_source_amount": 0.015,
+      "original_source_unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1688",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf",
+        "source_locator": "Page 1 main recipe: Ca(NO3)2 x 4 H2O",
+        "exact_source_quote": "Ca(NO3)2 x 4 H2O 0.015 g",
+        "snapshot_sha256": "eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735",
+        "parsed_text_sha256": "1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66"
+      },
+      {
+        "source_key": "mediadive1688api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1688",
+        "source_locator": "$.data.solutions[0].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Ca(NO3)2 x 4 H2O\",\n                        \"compound_id\": 213,\n                        \"amount\": 0.015,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.015,\n                        \"mmol_l\": 0.0635192,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53"
+      }
+    ],
+    "explanation": "The generated target declares DSMZ 1688 but this amount does not match its exact main recipe or current maintained owner. Restore the source-specific target only after splitting the distinct DSMZ 1627 contributor; do not change the already correct DSMZ 1688 owner value."
+  },
+  {
+    "decision": "verified",
+    "local_input": "data/normalized_yaml/bacterial/actinobacteria_medium.yaml",
+    "field_path": "ingredients[0].concentration",
+    "ingredient": "KH2PO4",
+    "stored": {
+      "value": "0.05",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": 0.05,
+      "unit": "G_PER_L",
+      "scope": "provider-declared main recipe",
+      "provider_volume_ml": 1000,
+      "original_source_amount": 0.05,
+      "original_source_unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1688",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf",
+        "source_locator": "Page 1 main recipe: KH2PO4",
+        "exact_source_quote": "KH\n2PO4 0.050 g",
+        "snapshot_sha256": "eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735",
+        "parsed_text_sha256": "1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66"
+      },
+      {
+        "source_key": "mediadive1688api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1688",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.05,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.367417,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53"
+      }
+    ],
+    "explanation": "Only this maintained owner has attached exact source evidence. Existing value, unit, provider 1000 ml basis, literal JSON object and recorded response hash all match. This status does not transfer to the generated target."
+  },
+  {
+    "decision": "verified",
+    "local_input": "data/normalized_yaml/bacterial/actinobacteria_medium.yaml",
+    "field_path": "ingredients[1].concentration",
+    "ingredient": "Na2SO4",
+    "stored": {
+      "value": "0.15",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": 0.15,
+      "unit": "G_PER_L",
+      "scope": "provider-declared main recipe",
+      "provider_volume_ml": 1000,
+      "original_source_amount": 0.15,
+      "original_source_unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1688",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf",
+        "source_locator": "Page 1 main recipe: Na2SO4",
+        "exact_source_quote": "Na2SO4 0.150 g",
+        "snapshot_sha256": "eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735",
+        "parsed_text_sha256": "1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66"
+      },
+      {
+        "source_key": "mediadive1688api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1688",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Na2SO4\",\n                        \"compound_id\": 110,\n                        \"amount\": 0.15,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.15,\n                        \"mmol_l\": 1.05604,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53"
+      }
+    ],
+    "explanation": "Only this maintained owner has attached exact source evidence. Existing value, unit, provider 1000 ml basis, literal JSON object and recorded response hash all match. This status does not transfer to the generated target."
+  },
+  {
+    "decision": "verified",
+    "local_input": "data/normalized_yaml/bacterial/actinobacteria_medium.yaml",
+    "field_path": "ingredients[2].concentration",
+    "ingredient": "(NH4)2SO4",
+    "stored": {
+      "value": "0.45",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": 0.45,
+      "unit": "G_PER_L",
+      "scope": "provider-declared main recipe",
+      "provider_volume_ml": 1000,
+      "original_source_amount": 0.45,
+      "original_source_unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1688",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf",
+        "source_locator": "Page 1 main recipe: (NH4)2SO4",
+        "exact_source_quote": "(NH4)2SO4 0.450 g",
+        "snapshot_sha256": "eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735",
+        "parsed_text_sha256": "1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66"
+      },
+      {
+        "source_key": "mediadive1688api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1688",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\": 0.45,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.45,\n                        \"mmol_l\": 3.40548,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53"
+      }
+    ],
+    "explanation": "Only this maintained owner has attached exact source evidence. Existing value, unit, provider 1000 ml basis, literal JSON object and recorded response hash all match. This status does not transfer to the generated target."
+  },
+  {
+    "decision": "verified",
+    "local_input": "data/normalized_yaml/bacterial/actinobacteria_medium.yaml",
+    "field_path": "ingredients[3].concentration",
+    "ingredient": "MgSO4 x 7 H2O",
+    "stored": {
+      "value": "0.5",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": 0.5,
+      "unit": "G_PER_L",
+      "scope": "provider-declared main recipe",
+      "provider_volume_ml": 1000,
+      "original_source_amount": 0.5,
+      "original_source_unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1688",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf",
+        "source_locator": "Page 1 main recipe: MgSO4 x 7 H2O",
+        "exact_source_quote": "MgSO4 x 7 H2O 0.500 g",
+        "snapshot_sha256": "eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735",
+        "parsed_text_sha256": "1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66"
+      },
+      {
+        "source_key": "mediadive1688api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1688",
+        "source_locator": "$.data.solutions[0].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 2.02859,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53"
+      }
+    ],
+    "explanation": "Only this maintained owner has attached exact source evidence. Existing value, unit, provider 1000 ml basis, literal JSON object and recorded response hash all match. This status does not transfer to the generated target."
+  },
+  {
+    "decision": "verified",
+    "local_input": "data/normalized_yaml/bacterial/actinobacteria_medium.yaml",
+    "field_path": "ingredients[4].concentration",
+    "ingredient": "Ca(NO3)2 x 4 H2O",
+    "stored": {
+      "value": "0.015",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": 0.015,
+      "unit": "G_PER_L",
+      "scope": "provider-declared main recipe",
+      "provider_volume_ml": 1000,
+      "original_source_amount": 0.015,
+      "original_source_unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1688",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf",
+        "source_locator": "Page 1 main recipe: Ca(NO3)2 x 4 H2O",
+        "exact_source_quote": "Ca(NO3)2 x 4 H2O 0.015 g",
+        "snapshot_sha256": "eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735",
+        "parsed_text_sha256": "1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66"
+      },
+      {
+        "source_key": "mediadive1688api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1688",
+        "source_locator": "$.data.solutions[0].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Ca(NO3)2 x 4 H2O\",\n                        \"compound_id\": 213,\n                        \"amount\": 0.015,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.015,\n                        \"mmol_l\": 0.0635192,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53"
+      }
+    ],
+    "explanation": "Only this maintained owner has attached exact source evidence. Existing value, unit, provider 1000 ml basis, literal JSON object and recorded response hash all match. This status does not transfer to the generated target."
+  },
+  {
+    "decision": "verified",
+    "local_input": "data/normalized_yaml/bacterial/actinobacteria_medium.yaml",
+    "field_path": "ingredients[5].concentration",
+    "ingredient": "KCl",
+    "stored": {
+      "value": "0.05",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": 0.05,
+      "unit": "G_PER_L",
+      "scope": "provider-declared main recipe",
+      "provider_volume_ml": 1000,
+      "original_source_amount": 0.05,
+      "original_source_unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1688",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf",
+        "source_locator": "Page 1 main recipe: KCl",
+        "exact_source_quote": "KCl 0.050 g",
+        "snapshot_sha256": "eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735",
+        "parsed_text_sha256": "1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66"
+      },
+      {
+        "source_key": "mediadive1688api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1688",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\": 0.05,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.670691,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53"
+      }
+    ],
+    "explanation": "Only this maintained owner has attached exact source evidence. Existing value, unit, provider 1000 ml basis, literal JSON object and recorded response hash all match. This status does not transfer to the generated target."
+  },
+  {
+    "decision": "verified",
+    "local_input": "data/normalized_yaml/bacterial/actinobacteria_medium.yaml",
+    "field_path": "ingredients[6].concentration",
+    "ingredient": "Yeast extract",
+    "stored": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": 0.1,
+      "unit": "G_PER_L",
+      "scope": "provider-declared main recipe",
+      "provider_volume_ml": 1000,
+      "original_source_amount": 0.1,
+      "original_source_unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1688",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf",
+        "source_locator": "Page 1 main recipe: Yeast extract",
+        "exact_source_quote": "yeast extract 0.100 g",
+        "snapshot_sha256": "eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735",
+        "parsed_text_sha256": "1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66"
+      },
+      {
+        "source_key": "mediadive1688api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1688",
+        "source_locator": "$.data.solutions[0].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53"
+      }
+    ],
+    "explanation": "Only this maintained owner has attached exact source evidence. Existing value, unit, provider 1000 ml basis, literal JSON object and recorded response hash all match. This status does not transfer to the generated target."
+  },
+  {
+    "decision": "verified",
+    "local_input": "data/normalized_yaml/bacterial/actinobacteria_medium.yaml",
+    "field_path": "ingredients[7].concentration",
+    "ingredient": "Glucose",
+    "stored": {
+      "value": "0.9",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": 0.9,
+      "unit": "G_PER_L",
+      "scope": "provider-declared main recipe",
+      "provider_volume_ml": 1000,
+      "original_source_amount": 0.9,
+      "original_source_unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1688",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf",
+        "source_locator": "Page 1 main recipe: Glucose",
+        "exact_source_quote": "glucose 0.900 g",
+        "snapshot_sha256": "eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735",
+        "parsed_text_sha256": "1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66"
+      },
+      {
+        "source_key": "mediadive1688api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1688",
+        "source_locator": "$.data.solutions[0].recipe[7]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\": 5,\n                        \"amount\": 0.9,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.9,\n                        \"mmol_l\": 4.99556,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53"
+      }
+    ],
+    "explanation": "Only this maintained owner has attached exact source evidence. Existing value, unit, provider 1000 ml basis, literal JSON object and recorded response hash all match. This status does not transfer to the generated target."
+  },
+  {
+    "decision": "evidence_only",
+    "local_input": "data/normalized_yaml/bacterial/acidibacter_medium.yaml",
+    "field_path": "ingredients[0].concentration",
+    "ingredient": "Glucose",
+    "stored": {
+      "value": "0.9",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": 0.9,
+      "unit": "G_PER_L",
+      "scope": "provider-declared main recipe",
+      "provider_volume_ml": 1000,
+      "original_source_amount": 0.9,
+      "original_source_unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1627",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1627.pdf",
+        "source_locator": "Page 1 main recipe: Glucose",
+        "exact_source_quote": "Glucose 0.90 g",
+        "snapshot_sha256": "a66ff9b53cdb17153690607df82259c94cb19380c777c6e1ec2e7923c35cc529",
+        "parsed_text_sha256": "bd08f66c214dc20cd621af6fda607fa3799520d531cefafdd6f8c46fd88623f5"
+      },
+      {
+        "source_key": "mediadive1627api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1627",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\": 5,\n                        \"amount\": 0.9,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.9,\n                        \"mmol_l\": 4.99556,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2ac35d0a239dc21a2e3472f6b85b1191add42b1986f8d5a14f40a584651b78b6"
+      }
+    ],
+    "explanation": "Existing amount and unit match this exact accession and provider basis, but this local layer lacks attached matching evidence."
+  },
+  {
+    "decision": "evidence_only",
+    "local_input": "data/normalized_yaml/bacterial/acidibacter_medium.yaml",
+    "field_path": "ingredients[1].concentration",
+    "ingredient": "Yeast extract",
+    "stored": {
+      "value": "0.2",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": 0.2,
+      "unit": "G_PER_L",
+      "scope": "provider-declared main recipe",
+      "provider_volume_ml": 1000,
+      "original_source_amount": 0.2,
+      "original_source_unit": "g"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1627",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1627.pdf",
+        "source_locator": "Page 1 main recipe: Yeast extract",
+        "exact_source_quote": "Yeast extract 0.20 g",
+        "snapshot_sha256": "a66ff9b53cdb17153690607df82259c94cb19380c777c6e1ec2e7923c35cc529",
+        "parsed_text_sha256": "bd08f66c214dc20cd621af6fda607fa3799520d531cefafdd6f8c46fd88623f5"
+      },
+      {
+        "source_key": "mediadive1627api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1627",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2ac35d0a239dc21a2e3472f6b85b1191add42b1986f8d5a14f40a584651b78b6"
+      }
+    ],
+    "explanation": "Existing amount and unit match this exact accession and provider basis, but this local layer lacks attached matching evidence."
+  },
+  {
+    "decision": "correct",
+    "local_input": "data/normalized_yaml/bacterial/acidibacter_medium.yaml",
+    "field_path": "ingredients[2].concentration",
+    "ingredient": "Na2SO4",
+    "stored": {
+      "value": "3.5",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": 3.5,
+      "unit": "G_PER_L",
+      "scope": "salt stock only",
+      "provider_volume_ml": 100,
+      "original_source_amount": 0.35,
+      "original_source_unit": "g",
+      "stock_addition_ml_per_source_batch": 20,
+      "main_provider_volume_ml": 1000,
+      "derived_transfer_g_per_provider_L": 0.07
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1627",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1627.pdf",
+        "source_locator": "Page 1 Salt solution subsection: Na2SO4",
+        "exact_source_quote": "Na\n2SO4 0.35 g",
+        "snapshot_sha256": "a66ff9b53cdb17153690607df82259c94cb19380c777c6e1ec2e7923c35cc529",
+        "parsed_text_sha256": "bd08f66c214dc20cd621af6fda607fa3799520d531cefafdd6f8c46fd88623f5"
+      },
+      {
+        "source_key": "mediadive1627api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1627",
+        "source_locator": "$.data.solutions[1].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Na2SO4\",\n                        \"compound_id\": 110,\n                        \"amount\": 0.35,\n                        \"unit\": \"g\",\n                        \"g_l\": 3.5,\n                        \"mmol_l\": 24.6409,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2ac35d0a239dc21a2e3472f6b85b1191add42b1986f8d5a14f40a584651b78b6"
+      }
+    ],
+    "explanation": "This value is the stock strength for 100 ml stock, now flattened into main ingredients. Preserve the original stock mass, separate the 20 ml addition, and avoid reading the undiluted strength as a final-medium quantity."
+  },
+  {
+    "decision": "correct",
+    "local_input": "data/normalized_yaml/bacterial/acidibacter_medium.yaml",
+    "field_path": "ingredients[3].concentration",
+    "ingredient": "(NH4)2SO4",
+    "stored": {
+      "value": "22.5",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": 22.5,
+      "unit": "G_PER_L",
+      "scope": "salt stock only",
+      "provider_volume_ml": 100,
+      "original_source_amount": 2.25,
+      "original_source_unit": "g",
+      "stock_addition_ml_per_source_batch": 20,
+      "main_provider_volume_ml": 1000,
+      "derived_transfer_g_per_provider_L": 0.45
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1627",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1627.pdf",
+        "source_locator": "Page 1 Salt solution subsection: (NH4)2SO4",
+        "exact_source_quote": "(NH4)2SO4 2.25 g",
+        "snapshot_sha256": "a66ff9b53cdb17153690607df82259c94cb19380c777c6e1ec2e7923c35cc529",
+        "parsed_text_sha256": "bd08f66c214dc20cd621af6fda607fa3799520d531cefafdd6f8c46fd88623f5"
+      },
+      {
+        "source_key": "mediadive1627api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1627",
+        "source_locator": "$.data.solutions[1].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\": 2.25,\n                        \"unit\": \"g\",\n                        \"g_l\": 22.5,\n                        \"mmol_l\": 170.274,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2ac35d0a239dc21a2e3472f6b85b1191add42b1986f8d5a14f40a584651b78b6"
+      }
+    ],
+    "explanation": "This value is the stock strength for 100 ml stock, now flattened into main ingredients. Preserve the original stock mass, separate the 20 ml addition, and avoid reading the undiluted strength as a final-medium quantity."
+  },
+  {
+    "decision": "correct",
+    "local_input": "data/normalized_yaml/bacterial/acidibacter_medium.yaml",
+    "field_path": "ingredients[4].concentration",
+    "ingredient": "KCl",
+    "stored": {
+      "value": "2.5",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": 2.5,
+      "unit": "G_PER_L",
+      "scope": "salt stock only",
+      "provider_volume_ml": 100,
+      "original_source_amount": 0.25,
+      "original_source_unit": "g",
+      "stock_addition_ml_per_source_batch": 20,
+      "main_provider_volume_ml": 1000,
+      "derived_transfer_g_per_provider_L": 0.05
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1627",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1627.pdf",
+        "source_locator": "Page 1 Salt solution subsection: KCl",
+        "exact_source_quote": "KCl 0.25 g",
+        "snapshot_sha256": "a66ff9b53cdb17153690607df82259c94cb19380c777c6e1ec2e7923c35cc529",
+        "parsed_text_sha256": "bd08f66c214dc20cd621af6fda607fa3799520d531cefafdd6f8c46fd88623f5"
+      },
+      {
+        "source_key": "mediadive1627api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1627",
+        "source_locator": "$.data.solutions[1].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\": 0.25,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.5,\n                        \"mmol_l\": 33.5345,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2ac35d0a239dc21a2e3472f6b85b1191add42b1986f8d5a14f40a584651b78b6"
+      }
+    ],
+    "explanation": "This value is the stock strength for 100 ml stock, now flattened into main ingredients. Preserve the original stock mass, separate the 20 ml addition, and avoid reading the undiluted strength as a final-medium quantity."
+  },
+  {
+    "decision": "correct",
+    "local_input": "data/normalized_yaml/bacterial/acidibacter_medium.yaml",
+    "field_path": "ingredients[5].concentration",
+    "ingredient": "MgSO4 x 7 H2O",
+    "stored": {
+      "value": "25",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": 25,
+      "unit": "G_PER_L",
+      "scope": "salt stock only",
+      "provider_volume_ml": 100,
+      "original_source_amount": 2.5,
+      "original_source_unit": "g",
+      "stock_addition_ml_per_source_batch": 20,
+      "main_provider_volume_ml": 1000,
+      "derived_transfer_g_per_provider_L": 0.5
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1627",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1627.pdf",
+        "source_locator": "Page 1 Salt solution subsection: MgSO4 x 7 H2O",
+        "exact_source_quote": "MgSO4 x 7 H2O 2.50 g",
+        "snapshot_sha256": "a66ff9b53cdb17153690607df82259c94cb19380c777c6e1ec2e7923c35cc529",
+        "parsed_text_sha256": "bd08f66c214dc20cd621af6fda607fa3799520d531cefafdd6f8c46fd88623f5"
+      },
+      {
+        "source_key": "mediadive1627api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1627",
+        "source_locator": "$.data.solutions[1].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 2.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 25,\n                        \"mmol_l\": 101.43,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2ac35d0a239dc21a2e3472f6b85b1191add42b1986f8d5a14f40a584651b78b6"
+      }
+    ],
+    "explanation": "This value is the stock strength for 100 ml stock, now flattened into main ingredients. Preserve the original stock mass, separate the 20 ml addition, and avoid reading the undiluted strength as a final-medium quantity."
+  },
+  {
+    "decision": "correct",
+    "local_input": "data/normalized_yaml/bacterial/acidibacter_medium.yaml",
+    "field_path": "ingredients[6].concentration",
+    "ingredient": "KH2PO4",
+    "stored": {
+      "value": "2.5",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": 2.5,
+      "unit": "G_PER_L",
+      "scope": "salt stock only",
+      "provider_volume_ml": 100,
+      "original_source_amount": 0.25,
+      "original_source_unit": "g",
+      "stock_addition_ml_per_source_batch": 20,
+      "main_provider_volume_ml": 1000,
+      "derived_transfer_g_per_provider_L": 0.05
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1627",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1627.pdf",
+        "source_locator": "Page 1 Salt solution subsection: KH2PO4",
+        "exact_source_quote": "KH2PO4 0.25 g",
+        "snapshot_sha256": "a66ff9b53cdb17153690607df82259c94cb19380c777c6e1ec2e7923c35cc529",
+        "parsed_text_sha256": "bd08f66c214dc20cd621af6fda607fa3799520d531cefafdd6f8c46fd88623f5"
+      },
+      {
+        "source_key": "mediadive1627api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1627",
+        "source_locator": "$.data.solutions[1].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.25,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.5,\n                        \"mmol_l\": 18.3709,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2ac35d0a239dc21a2e3472f6b85b1191add42b1986f8d5a14f40a584651b78b6"
+      }
+    ],
+    "explanation": "This value is the stock strength for 100 ml stock, now flattened into main ingredients. Preserve the original stock mass, separate the 20 ml addition, and avoid reading the undiluted strength as a final-medium quantity."
+  },
+  {
+    "decision": "correct",
+    "local_input": "data/normalized_yaml/bacterial/acidibacter_medium.yaml",
+    "field_path": "ingredients[7].concentration",
+    "ingredient": "Ca(NO3)2 x 4 H2O",
+    "stored": {
+      "value": "0.7",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": 0.7,
+      "unit": "G_PER_L",
+      "scope": "salt stock only",
+      "provider_volume_ml": 100,
+      "original_source_amount": 0.07,
+      "original_source_unit": "g",
+      "stock_addition_ml_per_source_batch": 20,
+      "main_provider_volume_ml": 1000,
+      "derived_transfer_g_per_provider_L": 0.013999999999999999
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1627",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1627.pdf",
+        "source_locator": "Page 1 Salt solution subsection: Ca(NO3)2 x 4 H2O",
+        "exact_source_quote": "Ca(NO3)2 x 4 H2O 0.07 g",
+        "snapshot_sha256": "a66ff9b53cdb17153690607df82259c94cb19380c777c6e1ec2e7923c35cc529",
+        "parsed_text_sha256": "bd08f66c214dc20cd621af6fda607fa3799520d531cefafdd6f8c46fd88623f5"
+      },
+      {
+        "source_key": "mediadive1627api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1627",
+        "source_locator": "$.data.solutions[1].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Ca(NO3)2 x 4 H2O\",\n                        \"compound_id\": 213,\n                        \"amount\": 0.07,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.7,\n                        \"mmol_l\": 2.96423,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2ac35d0a239dc21a2e3472f6b85b1191add42b1986f8d5a14f40a584651b78b6"
+      }
+    ],
+    "explanation": "This value is the stock strength for 100 ml stock, now flattened into main ingredients. Preserve the original stock mass, separate the 20 ml addition, and avoid reading the undiluted strength as a final-medium quantity."
+  },
+  {
+    "decision": "add",
+    "local_input": "target",
+    "field_path": "preparation_steps",
+    "stored": [
+      {
+        "step_number": 1,
+        "action": "ADJUST_PH",
+        "description": "Adjust the pH to 3.0 with H2SO4 or HCl."
+      }
+    ],
+    "ingredient": "Main source water quantity",
+    "proposed": {
+      "amount": 1000,
+      "unit": "ml",
+      "scope": "Exact accession listed main solvent amount"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1688",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf",
+        "source_locator": "Page 1 main recipe: Distilled water",
+        "exact_source_quote": "Distilled water add 1000.000 ml",
+        "snapshot_sha256": "eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735",
+        "parsed_text_sha256": "1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66"
+      },
+      {
+        "source_key": "mediadive1688api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1688",
+        "source_locator": "$.data.solutions[0].recipe[8]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53"
+      }
+    ],
+    "explanation": "Retain the primary wording and source accession. The provider declares 1000 ml main volume; listed water is not itself a measured final volume."
+  },
+  {
+    "decision": "evidence_only",
+    "local_input": "target",
+    "field_path": "ph_value",
+    "stored": 3.0,
+    "ingredient": "Exact source target pH",
+    "proposed": 3.0,
+    "source_snippets": [
+      {
+        "source_key": "dsmz1688",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf",
+        "source_locator": "Page 1 pH preparation sentence",
+        "exact_source_quote": "Adjust the pH to 3.0 with H\n2SO4 or HCl.",
+        "snapshot_sha256": "eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735",
+        "parsed_text_sha256": "1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66"
+      }
+    ],
+    "explanation": "The existing scalar and preparation match this accession. The distinct pH values are evidence against treating the two formulations as synonyms; attach narrow evidence without harmonizing them."
+  },
+  {
+    "decision": "not_quantified",
+    "local_input": "target",
+    "field_path": "preparation_steps[0].description",
+    "stored": "Adjust the pH to 3.0 with H2SO4 or HCl.",
+    "ingredient": "pH-adjustment acid amount and strength",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1688",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf",
+        "source_locator": "Page 1 accession-specific titration instruction",
+        "exact_source_quote": "Adjust the pH to 3.0 with H\n2SO4 or HCl.",
+        "snapshot_sha256": "eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735",
+        "parsed_text_sha256": "1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66"
+      }
+    ],
+    "explanation": "Source specifies an endpoint and acid identity/alternatives, but no fixed acid amount or strength. Do not infer one or transfer the DSMZ 1627 pre-autoclave sequence to DSMZ 1688."
+  },
+  {
+    "decision": "add",
+    "local_input": "data/normalized_yaml/bacterial/actinobacteria_medium.yaml",
+    "field_path": "preparation_steps",
+    "stored": [
+      {
+        "step_number": 1,
+        "action": "ADJUST_PH",
+        "description": "Adjust the pH to 3.0 with H2SO4 or HCl."
+      }
+    ],
+    "ingredient": "Main source water quantity",
+    "proposed": {
+      "amount": 1000,
+      "unit": "ml",
+      "scope": "Exact accession listed main solvent amount"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1688",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf",
+        "source_locator": "Page 1 main recipe: Distilled water",
+        "exact_source_quote": "Distilled water add 1000.000 ml",
+        "snapshot_sha256": "eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735",
+        "parsed_text_sha256": "1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66"
+      },
+      {
+        "source_key": "mediadive1688api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1688",
+        "source_locator": "$.data.solutions[0].recipe[8]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53"
+      }
+    ],
+    "explanation": "Retain the primary wording and source accession. The provider declares 1000 ml main volume; listed water is not itself a measured final volume."
+  },
+  {
+    "decision": "evidence_only",
+    "local_input": "data/normalized_yaml/bacterial/actinobacteria_medium.yaml",
+    "field_path": "ph_value",
+    "stored": 3.0,
+    "ingredient": "Exact source target pH",
+    "proposed": 3.0,
+    "source_snippets": [
+      {
+        "source_key": "dsmz1688",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf",
+        "source_locator": "Page 1 pH preparation sentence",
+        "exact_source_quote": "Adjust the pH to 3.0 with H\n2SO4 or HCl.",
+        "snapshot_sha256": "eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735",
+        "parsed_text_sha256": "1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66"
+      }
+    ],
+    "explanation": "The existing scalar and preparation match this accession. The distinct pH values are evidence against treating the two formulations as synonyms; attach narrow evidence without harmonizing them."
+  },
+  {
+    "decision": "not_quantified",
+    "local_input": "data/normalized_yaml/bacterial/actinobacteria_medium.yaml",
+    "field_path": "preparation_steps[0].description",
+    "stored": "Adjust the pH to 3.0 with H2SO4 or HCl.",
+    "ingredient": "pH-adjustment acid amount and strength",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1688",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf",
+        "source_locator": "Page 1 accession-specific titration instruction",
+        "exact_source_quote": "Adjust the pH to 3.0 with H\n2SO4 or HCl.",
+        "snapshot_sha256": "eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735",
+        "parsed_text_sha256": "1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66"
+      }
+    ],
+    "explanation": "Source specifies an endpoint and acid identity/alternatives, but no fixed acid amount or strength. Do not infer one or transfer the DSMZ 1627 pre-autoclave sequence to DSMZ 1688."
+  },
+  {
+    "decision": "add",
+    "local_input": "data/normalized_yaml/bacterial/acidibacter_medium.yaml",
+    "field_path": "preparation_steps",
+    "stored": [
+      {
+        "step_number": 1,
+        "action": "ADJUST_PH",
+        "description": "Adjust pH to 5.0 with sulfuric acid before autoclaving."
+      }
+    ],
+    "ingredient": "Main source water quantity",
+    "proposed": {
+      "amount": 980,
+      "unit": "ml",
+      "scope": "Exact accession listed main solvent amount"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1627",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1627.pdf",
+        "source_locator": "Page 1 main recipe: Distilled water",
+        "exact_source_quote": "Distilled water 980.00 ml",
+        "snapshot_sha256": "a66ff9b53cdb17153690607df82259c94cb19380c777c6e1ec2e7923c35cc529",
+        "parsed_text_sha256": "bd08f66c214dc20cd621af6fda607fa3799520d531cefafdd6f8c46fd88623f5"
+      },
+      {
+        "source_key": "mediadive1627api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1627",
+        "source_locator": "$.data.solutions[0].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 980,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2ac35d0a239dc21a2e3472f6b85b1191add42b1986f8d5a14f40a584651b78b6"
+      }
+    ],
+    "explanation": "Retain the primary wording and source accession. The provider declares 1000 ml main volume; listed water is not itself a measured final volume."
+  },
+  {
+    "decision": "evidence_only",
+    "local_input": "data/normalized_yaml/bacterial/acidibacter_medium.yaml",
+    "field_path": "ph_value",
+    "stored": 5.0,
+    "ingredient": "Exact source target pH",
+    "proposed": 5.0,
+    "source_snippets": [
+      {
+        "source_key": "dsmz1627",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1627.pdf",
+        "source_locator": "Page 1 pH preparation sentence",
+        "exact_source_quote": "Adjust pH to 5.0 with sulfuric acid before autoclaving.",
+        "snapshot_sha256": "a66ff9b53cdb17153690607df82259c94cb19380c777c6e1ec2e7923c35cc529",
+        "parsed_text_sha256": "bd08f66c214dc20cd621af6fda607fa3799520d531cefafdd6f8c46fd88623f5"
+      }
+    ],
+    "explanation": "The existing scalar and preparation match this accession. The distinct pH values are evidence against treating the two formulations as synonyms; attach narrow evidence without harmonizing them."
+  },
+  {
+    "decision": "not_quantified",
+    "local_input": "data/normalized_yaml/bacterial/acidibacter_medium.yaml",
+    "field_path": "preparation_steps[0].description",
+    "stored": "Adjust pH to 5.0 with sulfuric acid before autoclaving.",
+    "ingredient": "pH-adjustment acid amount and strength",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1627",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1627.pdf",
+        "source_locator": "Page 1 accession-specific titration instruction",
+        "exact_source_quote": "Adjust pH to 5.0 with sulfuric acid before autoclaving.",
+        "snapshot_sha256": "a66ff9b53cdb17153690607df82259c94cb19380c777c6e1ec2e7923c35cc529",
+        "parsed_text_sha256": "bd08f66c214dc20cd621af6fda607fa3799520d531cefafdd6f8c46fd88623f5"
+      }
+    ],
+    "explanation": "Source specifies an endpoint and acid identity/alternatives, but no fixed acid amount or strength. Do not infer one or transfer the DSMZ 1627 pre-autoclave sequence to DSMZ 1688."
+  },
+  {
+    "decision": "add",
+    "local_input": "data/normalized_yaml/bacterial/acidibacter_medium.yaml",
+    "field_path": "solutions",
+    "stored": null,
+    "ingredient": "Salt solution addition",
+    "proposed": {
+      "amount": 20,
+      "unit": "ml",
+      "basis": "DSMZ 1627 listed batch; provider main volume 1000 ml"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1627",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1627.pdf",
+        "source_locator": "Page 1 main recipe: Salt solution",
+        "exact_source_quote": "Salt solution 20.0 ml",
+        "snapshot_sha256": "a66ff9b53cdb17153690607df82259c94cb19380c777c6e1ec2e7923c35cc529",
+        "parsed_text_sha256": "bd08f66c214dc20cd621af6fda607fa3799520d531cefafdd6f8c46fd88623f5"
+      },
+      {
+        "source_key": "mediadive1627api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1627",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"solution\": \"Salt solution\",\n                        \"solution_id\": 3379,\n                        \"amount\": 20,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2ac35d0a239dc21a2e3472f6b85b1191add42b1986f8d5a14f40a584651b78b6"
+      }
+    ],
+    "explanation": "The ACIDIBACTER owner omits the source stock addition. This stock belongs to DSMZ 1627 only and must not be added to the independently specified DSMZ 1688 main recipe."
+  },
+  {
+    "decision": "add",
+    "local_input": "data/normalized_yaml/bacterial/acidibacter_medium.yaml",
+    "field_path": "solutions",
+    "stored": null,
+    "ingredient": "Salt solution water",
+    "proposed": {
+      "amount": 100,
+      "unit": "ml",
+      "scope": "DSMZ 1627 stock preparation only"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1627",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1627.pdf",
+        "source_locator": "Page 1 Salt solution subsection: Distilled water",
+        "exact_source_quote": "Distilled water 100.00 ml",
+        "snapshot_sha256": "a66ff9b53cdb17153690607df82259c94cb19380c777c6e1ec2e7923c35cc529",
+        "parsed_text_sha256": "bd08f66c214dc20cd621af6fda607fa3799520d531cefafdd6f8c46fd88623f5"
+      },
+      {
+        "source_key": "mediadive1627api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1627",
+        "source_locator": "$.data.solutions[1].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 100,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2ac35d0a239dc21a2e3472f6b85b1191add42b1986f8d5a14f40a584651b78b6"
+      }
+    ],
+    "explanation": "The provider explicitly declares a 100 ml stock volume. This water is not another 100 ml added to the receiving medium."
+  }
+]
+
+### Identifier metadata, exact secondary keys and supplied-form scope
+
+grounding: concern. Targets: CultureMech:001170.
+
+7 distinct primary/current-secondary identifiers resolve. 0 label instances differ from current canonical labels; 0 asserted current secondary keys lack an exact pinned index row. Legacy numeric links are assessed separately and are not established by CHEBI correspondence. Target linkage is 7/8 primary and 7/8 secondary ingredient instances; this measures presence, not source validity.
+
+{"label_drift": [], "missing_secondary_keys": [], "legacy_instances": [], "coverage_scale": "0–100 percent; each ingredient instance counted once", "denominator": 8, "primary_percent": 87.5, "secondary_percent": 87.5}
+
+### All asserted supplied forms
+
+grounding: supported. Targets: CultureMech:001170.
+
+All seven distinct asserted CHEBI identities and their current secondary keys resolve. Explicit magnesium heptahydrate and calcium nitrate tetrahydrate match source forms. The source says glucose without stereochemistry; the generic glucose term does not impose an unverified D-specific form. Yeast extract remains an unmapped complex mixture rather than an invented pure chemical.
+
+### Source-specific preparation, classifications and evidence placement
+
+completeness: concern. Targets: CultureMech:001170.
+
+Each local pH value and corresponding preparation instruction is retained for its own source identity, but the target mixes DSMZ 1688 pH with DSMZ 1627-derived quantities. Source water and the DSMZ 1627 stock addition are missing. Liquid/complex/semi-defined classifications are consistent with yeast extract and mineral salts; there are no asserted organism/strain growth claims. The exact primary sources do not give sterilization time/temperature, so none is inferred.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:001170.
+
+21 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+## Findings
+
+### f1: DSMZ 1688 and 1627 are represented as formulation synonyms
+
+blocker / open / confirmed; issue key: CM001170-distinct-formulations-merged.
+
+The target declares ACTINOBACTERIA/1688 and pH 3.0 but carries ACIDIBACTER/1627 yeast extract and six undiluted salt-stock strengths. Exact sources differ in pH, yeast amount, sodium sulfate and calcium nitrate contribution even after stock dilution. The eight current DSMZ 1688 owner quantities are independently supported; copying the merged ingredient set is not valid recipe equivalence.
+
+### f2: The ACIDIBACTER contributor still flattens a 20 ml salt stock
+
+blocker / open / confirmed; issue key: CM001170-acidibacter-stock-scope.
+
+Six owner values are strengths of a 100 ml stock, not final-medium concentrations. The exact source supplies a 20 ml stock addition to 980 ml water; that structure is absent. On provider bases, stock strength times 0.020 L gives transferred mass per provider litre, including sodium sulfate 0.07 g and calcium nitrate tetrahydrate 0.014 g.
+
+### f3: Generated output omits eight verified owner amount claims
+
+major / open / confirmed; issue key: CM001170-generated-evidence-loss.
+
+The current DSMZ 1688 owner has eight literal, hash-matching amount evidence objects and its source reference. The target omits them, retains seven differing amounts, and has no claim-level amount evidence. Correct but unevidenced DSMZ 1627 main quantities and all source-only preparation quantities remain separately inventoried.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Retain the permanent owner identities and separate the two source formulations in generated output; preserve the already correct DSMZ 1688 owner quantities and evidence.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Restore the exact salt stock, its 100 ml basis and 20 ml addition only in the ACIDIBACTER maintained owner; do not transplant that stock into DSMZ 1688.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Preserve the verified eight owner claims during source-separated regeneration; add exact evidence and missing solvent/preparation context only where needed.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ACTINOBACTERIA_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/actinobacteria_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-1 | data/normalized_yaml/bacterial/acidibacter_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ACTINOBACTERIA_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ACTINOBACTERIA_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch019/183/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-019/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch019/183/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ACTINOBACTERIA_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ACTINOBACTERIA_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/ACTINOBACTERIA_MEDIUM.yaml:1:id: CultureMech:001170<br>./data/normalized_yaml/bacterial/actinobacteria_medium.yaml:1:id: CultureMech:001170<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch019/source-preflight-bound/183/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 12 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| dsmz1688 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf; Page 1 complete recipe and final pH instruction | supports | Exact ACTINOBACTERIA formulation with eight main amounts and pH 3.0; the water row says add 1000 ml, not an independently measured final volume. |
+| mediadive1688api | https://mediadive.dsmz.de/rest/medium/1688; $.data.medium and complete $.data.solutions[0] | supports | Exact medium 1688 provider main volume 1000 ml and all eight amounts; matched against attached owner evidence. |
+| dsmz1627 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1627.pdf; Page 1 main recipe and Salt solution subsection | supports | Distinct ACIDIBACTER formulation: glucose and yeast extract, 20 ml salt solution, 980 ml water and pH 5.0. |
+| mediadive1627api | https://mediadive.dsmz.de/rest/medium/1627; $.data.medium and complete $.data.solutions[0:2] | supports | Provider main volume 1000 ml, six-component salt stock volume 100 ml and exact 20 ml addition. |
+| solution3379 | https://mediadive.dsmz.de/rest/solution/3379; $.data complete exact stock solution 3379 | supports | Independent salt-stock endpoint confirms six original masses and the 100 ml stock basis. |
+| existing-owner-evidence | data/normalized_yaml/bacterial/actinobacteria_medium.yaml; All eight ingredients[*].evidence[0] objects; literal parsed source objects and response hashes | supports | [{"input": "data/normalized_yaml/bacterial/actinobacteria_medium.yaml", "field_path": "ingredients[0].evidence[0]", "source_sha256": "0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53", "exact_parsed_snippet_equal": true, "value_unit_basis_equal": true}, {"input": "data/normalized_yaml/bacterial/actinobacteria_medium.yaml", "field_path": "ingredients[1].evidence[0]", "source_sha256": "0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53", "exact_parsed_snippet_equal": true, "value_unit_basis_equal": true}, {"input": "data/normalized_yaml/bacterial/actinobacteria_medium.yaml", "field_path": "ingredients[2].evidence[0]", "source_sha256": "0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53", "exact_parsed_snippet_equal": true, "value_unit_basis_equal": true}, {"input": "data/normalized_yaml/bacterial/actinobacteria_medium.yaml", "field_path": "ingredients[3].evidence[0]", "source_sha256": "0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53", "exact_parsed_snippet_equal": true, "value_unit_basis_equal": true}, {"input": "data/normalized_yaml/bacterial/actinobacteria_medium.yaml", "field_path": "ingredients[4].evidence[0]", "source_sha256": "0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53", "exact_parsed_snippet_equal": true, "value_unit_basis_equal": true}, {"input": "data/normalized_yaml/bacterial/actinobacteria_medium.yaml", "field_path": "ingredients[5].evidence[0]", "source_sha256": "0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53", "exact_parsed_snippet_equal": true, "value_unit_basis_equal": true}, {"input": "data/normalized_yaml/bacterial/actinobacteria_medium.yaml", "field_path": "ingredients[6].evidence[0]", "source_sha256": "0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53", "exact_parsed_snippet_equal": true, "value_unit_basis_equal": true}, {"input": "data/normalized_yaml/bacterial/actinobacteria_medium.yaml", "field_path": "ingredients[7].evidence[0]", "source_sha256": "0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53", "exact_parsed_snippet_equal": true, "value_unit_basis_equal": true}] |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch019/183/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| chebi17234 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:17234 resolves to glucose. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi32149 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32149; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:32149 resolves to sodium sulfate. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:32588 resolves to potassium chloride. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi62946 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:62946 resolves to ammonium sulfate. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:63036 resolves to potassium dihydrogen phosphate. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi86159 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86159; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:86159 resolves to calcium nitrate tetrahydrate. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Entire pinned index exact identifier lookup; adjacent source revision/hash | context_only | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "asserted_secondary_rows": {"CHEBI:17234": [{"label": "(2R,3S,4R,5R)-2,3,4,5,6-pentahydroxyhexanal", "match_type": "synonym", "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "aldehydo-D-gluco-hexose", "match_type": "synonym", "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "aldehydo-D-gluco-hexose", "match_type": "synonym", "identifier": "CHEBI:17234", "preferred_term": "glucose", "ontology_id": "CHEBI:17234", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "D-glucose", "match_type": "synonym", "identifier": "CHEBI:17234", "preferred_term": "glucose", "ontology_id": "CHEBI:17234", "mapping_status": "REJECTED", "ambiguity": "resolved:owned"}, {"label": "D-GLUCOSE IN LINEAR FORM", "match_type": "synonym", "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "DL-glucose", "match_type": "synonym", "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "D­glucose", "match_type": "synonym", "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Glc", "match_type": "synonym", "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "gluco-hexose", "match_type": "synonym", "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Glucose", "match_type": "preferred_term", "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "glucose", "match_type": "preferred_term", "identifier": "CHEBI:17234", "preferred_term": "glucose", "ontology_id": "CHEBI:17234", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "glucose", "match_type": "synonym", "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Glukose", "match_type": "synonym", "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": ".MgSO4", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": ".MgSO4", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": ".MgSO4", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": ".MgSO4 x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": ".MgSO4 x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "bitter salt", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "epsom salt", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "epsomite", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "magnesium sulfate (1:1) heptahydrate", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulfate (1:1) heptahydrate", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulfate anhydrous", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Magnesium sulfate heptahydrate", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulfate heptahydrate", "match_type": "ontology_label", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulfate heptahydrate", "match_type": "ontology_label", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "magnesium sulfate heptahydrate", "match_type": "ontology_label", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "magnesium sulfate--water (1/7)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulfate--water (1/7)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulfate--water (1/7)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "magnesium sulphate", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulphate heptahydrate", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulphate heptahydrate", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium(II) sulfate", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO .7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO 4", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO 4", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO 4 x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO 4 x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO2", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO2", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO2 x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO2 x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO2·7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4 . 7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 . H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x 7 H20", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4 x 7 H20", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4 x 7 H2O (0.1% w/v)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x 7 H2O (100 mM)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x 7 H2O solution (25%)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x 7 H2O to 15.0 g).", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x 7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 · 7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 ·7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4.7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4.7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO47H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO47H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4x7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4x7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·7H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4·7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4•7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4•7H2O (Sigma 230391)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4•7H2O (Sigma 230391)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4•7H2O(CAS: 10034-99-8)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4•7H2O(CAS: 10034-99-8)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4•7H2O(Sigma 230391)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4•7H2O(Sigma 230391)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sulfuric acid magnesium salt", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sulfuric acid magnesium salt heptahydrate", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sulfuric acid magnesium salt heptahydrate", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sulphate of magnesia", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32149": [{"label": "disodium sulfate", "match_type": "synonym", "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "disodium sulphate", "match_type": "synonym", "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Glauber's salt", "match_type": "synonym", "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Glaubersalz", "match_type": "synonym", "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2SO4", "match_type": "preferred_term", "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "NaSO4", "match_type": "synonym", "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Natriumsulfat", "match_type": "synonym", "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "salt cake", "match_type": "synonym", "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium Sulfate", "match_type": "synonym", "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sodium sulphate", "match_type": "synonym", "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32588": [{"label": "[KCl]", "match_type": "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Kaliumchlorid", "match_type": "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Kaon-Cl 10", "match_type": "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "KCl", "match_type": "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "KCl (Fisher P 217)", "match_type": "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "KCl(CAS: 7447-40-7)", "match_type": "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "KCl(CAS:7447-40-7)", "match_type": "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "KCl(Fisher P 217)", "match_type": "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Klor-con", "match_type": "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Klotrix", "match_type": "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Monopotassium chloride", "match_type": "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "muriate of potash", "match_type": "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Potassium Chloride", "match_type": "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sylvite", "match_type": "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:62946": [{"label": "(NH4)2 SO4", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "(NH4)2S4", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "(NH4)2SO4", "match_type": "preferred_term", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "(NH4)2SO4(Fisher A 702)", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Ammonium Sulfate", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ammonium sulfate (2:1)", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ammonium sulphate", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "diammonium sulfate", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "diazanium sulfate", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "mascagnite", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sulfuric acid ammonium salt (1:2)", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sulfuric acid, diammonium salt", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sulphate of ammonia", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH PO", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "KH2PO4 (0.4 g/l)", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "KH2PO4 (7% w/v)", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "KH2PO4(Sigma P 0662)", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MKP", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Monopotassium dihydrogen phosphate", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Monopotassium monophosphate", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Monopotassium orthophosphate", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Monopotassium phosphate", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Orthophosphoric acid, monopotassium salt", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Phosphoric acid, monopotassium salt", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Phosphoric acid, potassium salt (1:1)", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Potassium acid phosphate", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Potassium dihydrogen orthophosphate", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Potassium dihydrogen phosphate", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Potassium Phosphate", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Potassium phosphate monobasic", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sorensen's potassium phosphate", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86159": [{"label": "(1)  Ca(NO3)2", "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "(1)  Ca(NO3)2.4H2O", "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Ca(NO3)2 x 4 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Ca(NO3)2 x 4 H2O (0.1% w/v)", "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Ca(NO3)2 · 4H2O", "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Ca(NO3)2.4H2O", "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Ca(NO3)2x4H2O", "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Ca(NO3)2·4H2O", "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Ca(NO3)2•4H2O", "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Ca(NO3)2•4H2O(CAS: 13477-34-4)", "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Ca(NO3)2・4H2O", "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Calcium dinitrate tetrahydrate", "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Calcium nitrate tetrahydrate", "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "calcium nitrate--water (1/4)", "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, "missing_current_keys": [], "legacy_instances": []} |
+| history-metadata | data/merge_yaml/merged/ACTINOBACTERIA_MEDIUM.yaml; data/normalized_yaml/bacterial/actinobacteria_medium.yaml; data/normalized_yaml/bacterial/acidibacter_medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 8, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/actinobacteria_medium.yaml", "events": 7, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/acidibacter_medium.yaml", "events": 6, "timestamp_issues": []}] |
+| writer-0 | src/culturemech/import/mediadive_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current importer separates main ingredients and stock references; current formulation merge requires matching scientific fields rather than only ingredient similarity. October owner evidence explicitly restricts itself to provider main amounts and leaves stock/variant follow-up open. The saved August generated target is assessed directly; current guards are not asserted to have created its historical mixture. |
+| writer-1 | src/culturemech/merge/formulation.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current importer separates main ingredients and stock references; current formulation merge requires matching scientific fields rather than only ingredient similarity. October owner evidence explicitly restricts itself to provider main amounts and leaves stock/variant follow-up open. The saved August generated target is assessed directly; current guards are not asserted to have created its historical mixture. |
+| writer-2 | src/culturemech/merge/merger.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current importer separates main ingredients and stock references; current formulation merge requires matching scientific fields rather than only ingredient similarity. October owner evidence explicitly restricts itself to provider main amounts and leaves stock/variant follow-up open. The saved August generated target is assessed directly; current guards are not asserted to have created its historical mixture. |
+| writer-3 | scripts/review_medium_concentration_evidence.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current importer separates main ingredients and stock references; current formulation merge requires matching scientific fields rather than only ingredient similarity. October owner evidence explicitly restricts itself to provider main amounts and leaves stock/variant follow-up open. The saved August generated target is assessed directly; current guards are not asserted to have created its historical mixture. |
+| writer-4 | scripts/repair_mediadive_stock_concentration_evidence.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current importer separates main ingredients and stock references; current formulation merge requires matching scientific fields rather than only ingredient similarity. October owner evidence explicitly restricts itself to provider main amounts and leaves stock/variant follow-up open. The saved August generated target is assessed directly; current guards are not asserted to have created its historical mixture. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- All concentration arithmetic is explicitly tied to provider-declared volumes; water rows do not establish independently measured final volumes. No experimental growth equivalence or taxon-wide applicability is inferred from recipe labels. Existing October owner evidence is verified in its own layer, not inherited by the target.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T114915Z-culturemech-001170-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: actinobacteria_medium (CultureMech:001170)'
+started_at: '2026-10-21T11:43:21Z'
+finished_at: '2026-10-21T11:49:15Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The generated ACTINOBACTERIA record combines distinct DSMZ 1688 and 1627
+  formulations. Its stable DSMZ 1688 owner now has eight source-supported amounts
+  with attached evidence, but the target retains mostly DSMZ 1627 stock-strength values
+  and loses that evidence. The separate ACIDIBACTER owner still needs its 20 ml salt-stock
+  boundary restored.
+source:
+  git_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ACTINOBACTERIA_MEDIUM.yaml
+    sha256: 3326c843c30a1058f909c331f3ab904b234410db0005eefdfcbcdba0fffd3b95
+    role: target
+  - path: data/normalized_yaml/bacterial/acidibacter_medium.yaml
+    sha256: 057b0258f821398ab159fe6ee036f85cb97f3c67f9cb818f02cbe64fa529a851
+    role: context
+  - path: data/normalized_yaml/bacterial/actinobacteria_medium.yaml
+    sha256: fb05bfcf8f725560428caaad02988a2f94359dba3c772299769e4768d09308ba
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 183; batch 019 item 3 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding eighteen task batches
+    contain 180 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+    contains 40 validated baseline bundles covering 2 current merged paths. Unioning
+    all prior lists with this baseline covers 182 of 6320 current merged paths, including
+    2 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:001170
+targets:
+- target_id: CultureMech:001170
+  path: data/merge_yaml/merged/ACTINOBACTERIA_MEDIUM.yaml
+  label: actinobacteria_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/actinobacteria_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acidibacter_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ACTINOBACTERIA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:001170
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ACTINOBACTERIA_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch019/183/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-019/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch019/183/strict.tsv"
+  target_ids:
+  - CultureMech:001170
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ACTINOBACTERIA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:001170
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ACTINOBACTERIA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:001170
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:001170
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ACTINOBACTERIA_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T11:49:14Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/actinobacteria_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T11:49:14Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/acidibacter_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T11:49:14Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ACTINOBACTERIA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T11:43:52.442659Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ACTINOBACTERIA_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch019/183/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T11:43:54.086922Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-019/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch019/183/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ACTINOBACTERIA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T11:43:56.156430Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ACTINOBACTERIA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T11:43:59.195284Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T11:49:14Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ACTINOBACTERIA_MEDIUM.yaml:1:id: CultureMech:001170
+
+    ./data/normalized_yaml/bacterial/actinobacteria_medium.yaml:1:id: CultureMech:001170
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch019/source-preflight-bound/183/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T11:49:14Z'
+  support: supports
+  summary: 12 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 41c11d071992598231b5ae0ea282e0a533b45c5e76a640d0e978c2fede8f6a8e
+- evidence_id: dsmz1688
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf
+  locator: Page 1 complete recipe and final pH instruction
+  accessed_at: '2026-10-21T11:29:07.981391Z'
+  support: supports
+  summary: Exact ACTINOBACTERIA formulation with eight main amounts and pH 3.0; the
+    water row says add 1000 ml, not an independently measured final volume.
+  snapshot_sha256: eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735
+- evidence_id: mediadive1688api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1688
+  locator: $.data.medium and complete $.data.solutions[0]
+  accessed_at: '2026-10-21T11:29:07.135144Z'
+  support: supports
+  summary: Exact medium 1688 provider main volume 1000 ml and all eight amounts; matched
+    against attached owner evidence.
+  snapshot_sha256: 0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53
+- evidence_id: dsmz1627
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1627.pdf
+  locator: Page 1 main recipe and Salt solution subsection
+  accessed_at: '2026-10-21T11:29:07.663135Z'
+  support: supports
+  summary: 'Distinct ACIDIBACTER formulation: glucose and yeast extract, 20 ml salt
+    solution, 980 ml water and pH 5.0.'
+  snapshot_sha256: a66ff9b53cdb17153690607df82259c94cb19380c777c6e1ec2e7923c35cc529
+- evidence_id: mediadive1627api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1627
+  locator: $.data.medium and complete $.data.solutions[0:2]
+  accessed_at: '2026-10-21T11:29:06.756951Z'
+  support: supports
+  summary: Provider main volume 1000 ml, six-component salt stock volume 100 ml and
+    exact 20 ml addition.
+  snapshot_sha256: 2ac35d0a239dc21a2e3472f6b85b1191add42b1986f8d5a14f40a584651b78b6
+- evidence_id: solution3379
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/3379
+  locator: $.data complete exact stock solution 3379
+  accessed_at: '2026-10-21T11:29:45.589949Z'
+  support: supports
+  summary: Independent salt-stock endpoint confirms six original masses and the 100
+    ml stock basis.
+  snapshot_sha256: e356d1fc069d9350f30b8dc13ba980512f14dd0f99eb2da41150e2c8e1887718
+- evidence_id: existing-owner-evidence
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/actinobacteria_medium.yaml
+  locator: All eight ingredients[*].evidence[0] objects; literal parsed source objects
+    and response hashes
+  accessed_at: '2026-10-21T11:49:14Z'
+  support: supports
+  summary: '[{"input": "data/normalized_yaml/bacterial/actinobacteria_medium.yaml",
+    "field_path": "ingredients[0].evidence[0]", "source_sha256": "0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53",
+    "exact_parsed_snippet_equal": true, "value_unit_basis_equal": true}, {"input":
+    "data/normalized_yaml/bacterial/actinobacteria_medium.yaml", "field_path": "ingredients[1].evidence[0]",
+    "source_sha256": "0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53",
+    "exact_parsed_snippet_equal": true, "value_unit_basis_equal": true}, {"input":
+    "data/normalized_yaml/bacterial/actinobacteria_medium.yaml", "field_path": "ingredients[2].evidence[0]",
+    "source_sha256": "0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53",
+    "exact_parsed_snippet_equal": true, "value_unit_basis_equal": true}, {"input":
+    "data/normalized_yaml/bacterial/actinobacteria_medium.yaml", "field_path": "ingredients[3].evidence[0]",
+    "source_sha256": "0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53",
+    "exact_parsed_snippet_equal": true, "value_unit_basis_equal": true}, {"input":
+    "data/normalized_yaml/bacterial/actinobacteria_medium.yaml", "field_path": "ingredients[4].evidence[0]",
+    "source_sha256": "0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53",
+    "exact_parsed_snippet_equal": true, "value_unit_basis_equal": true}, {"input":
+    "data/normalized_yaml/bacterial/actinobacteria_medium.yaml", "field_path": "ingredients[5].evidence[0]",
+    "source_sha256": "0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53",
+    "exact_parsed_snippet_equal": true, "value_unit_basis_equal": true}, {"input":
+    "data/normalized_yaml/bacterial/actinobacteria_medium.yaml", "field_path": "ingredients[6].evidence[0]",
+    "source_sha256": "0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53",
+    "exact_parsed_snippet_equal": true, "value_unit_basis_equal": true}, {"input":
+    "data/normalized_yaml/bacterial/actinobacteria_medium.yaml", "field_path": "ingredients[7].evidence[0]",
+    "source_sha256": "0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53",
+    "exact_parsed_snippet_equal": true, "value_unit_basis_equal": true}]'
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch019/183/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T11:49:14Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: b0acba938f04ef0c3afcfbfce6668459295373151b19c43660ed58067da52e21
+- evidence_id: chebi17234
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:26.738243Z'
+  support: supports
+  summary: CHEBI:17234 resolves to glucose. Identity/label existence is separate from
+    exact supplied form and source-specific ingredient support.
+  snapshot_sha256: e3b9cbcd7b1e08bb05564cf82f924b29c554767e9b40bf1e4c85ab1bce09330f
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identity/label
+    existence is separate from exact supplied form and source-specific ingredient
+    support.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32149
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32149
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-20T07:18:34.792120Z'
+  support: supports
+  summary: CHEBI:32149 resolves to sodium sulfate. Identity/label existence is separate
+    from exact supplied form and source-specific ingredient support.
+  snapshot_sha256: 49c4b3ee63a59ea3acba0006afd53c6050dd13cd2210a15e3395b100bc6749b8
+- evidence_id: chebi32588
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:29.045588Z'
+  support: supports
+  summary: CHEBI:32588 resolves to potassium chloride. Identity/label existence is
+    separate from exact supplied form and source-specific ingredient support.
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi62946
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-21T08:43:02.566401Z'
+  support: supports
+  summary: CHEBI:62946 resolves to ammonium sulfate. Identity/label existence is separate
+    from exact supplied form and source-specific ingredient support.
+  snapshot_sha256: 10c25b481047a1fdfbc201104ecc06b15b32d5e72319beed5133e5d5693bede5
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate. Identity/label
+    existence is separate from exact supplied form and source-specific ingredient
+    support.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi86159
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86159
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-21T10:35:29.712666Z'
+  support: supports
+  summary: CHEBI:86159 resolves to calcium nitrate tetrahydrate. Identity/label existence
+    is separate from exact supplied form and source-specific ingredient support.
+  snapshot_sha256: d2b0e9caef5876c00ed00136113d600d34a071b137bdd8c661c734ad5435682f
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Entire pinned index exact identifier lookup; adjacent source revision/hash
+  accessed_at: '2026-10-21T11:49:14Z'
+  support: context_only
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "asserted_secondary_rows":
+    {"CHEBI:17234": [{"label": "(2R,3S,4R,5R)-2,3,4,5,6-pentahydroxyhexanal", "match_type":
+    "synonym", "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id":
+    "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "aldehydo-D-gluco-hexose",
+    "match_type": "synonym", "identifier": "CHEBI:17234", "preferred_term": "Glucose",
+    "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "aldehydo-D-gluco-hexose", "match_type": "synonym", "identifier": "CHEBI:17234",
+    "preferred_term": "glucose", "ontology_id": "CHEBI:17234", "mapping_status": "REJECTED",
+    "ambiguity": "unique"}, {"label": "D-glucose", "match_type": "synonym", "identifier":
+    "CHEBI:17234", "preferred_term": "glucose", "ontology_id": "CHEBI:17234", "mapping_status":
+    "REJECTED", "ambiguity": "resolved:owned"}, {"label": "D-GLUCOSE IN LINEAR FORM",
+    "match_type": "synonym", "identifier": "CHEBI:17234", "preferred_term": "Glucose",
+    "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "DL-glucose", "match_type": "synonym", "identifier": "CHEBI:17234",
+    "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "D­glucose", "match_type": "synonym", "identifier":
+    "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Glc", "match_type": "synonym", "identifier":
+    "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "gluco-hexose", "match_type": "synonym",
+    "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Glucose", "match_type":
+    "preferred_term", "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id":
+    "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "glucose",
+    "match_type": "preferred_term", "identifier": "CHEBI:17234", "preferred_term":
+    "glucose", "ontology_id": "CHEBI:17234", "mapping_status": "REJECTED", "ambiguity":
+    "unique"}, {"label": "glucose", "match_type": "synonym", "identifier": "CHEBI:17234",
+    "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "Glukose", "match_type": "synonym", "identifier":
+    "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": ".MgSO4", "match_type":
+    "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": ".MgSO4",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": ".MgSO4", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity":
+    "unique"}, {"label": ".MgSO4 x 7 H2O", "match_type": "synonym", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": ".MgSO4 x 7 H2O",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "bitter salt", "match_type": "synonym", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}, {"label": "epsom salt", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "epsomite", "match_type":
+    "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label":
+    "magnesium sulfate (1:1) heptahydrate", "match_type": "synonym", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulfate
+    (1:1) heptahydrate", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "magnesium sulfate anhydrous", "match_type": "synonym", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Magnesium sulfate
+    heptahydrate", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "magnesium sulfate heptahydrate", "match_type": "ontology_label",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulfate
+    heptahydrate", "match_type": "ontology_label", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity":
+    "unique"}, {"label": "magnesium sulfate heptahydrate", "match_type": "ontology_label",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "magnesium sulfate--water
+    (1/7)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "magnesium sulfate--water (1/7)", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulfate--water
+    (1/7)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity":
+    "unique"}, {"label": "magnesium sulphate", "match_type": "synonym", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulphate
+    heptahydrate", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "magnesium sulphate heptahydrate", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium(II) sulfate",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4
+    x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO", "match_type": "synonym", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "MgSO", "match_type": "synonym", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}, {"label": "MgSO .7H2O", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO
+    4", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4
+    x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO 4", "match_type": "synonym", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}, {"label": "MgSO 4 x 7 H2O", "match_type":
+    "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO
+    4 x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "MgSO x 7 H2O", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO2", "match_type":
+    "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO2",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"},
+    {"label": "MgSO2 x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "MgSO2 x 7 H2O", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO2·7H2O", "match_type":
+    "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4
+    . 7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity":
+    "unique"}, {"label": "MgSO4 . H2O", "match_type": "synonym", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x 7 H20", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4
+    x 7 H20", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity":
+    "unique"}, {"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4 x 7 H2O (0.1%
+    w/v)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity":
+    "unique"}, {"label": "MgSO4 x 7 H2O (100 mM)", "match_type": "synonym", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x 7 H2O solution (25%)",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"},
+    {"label": "MgSO4 x 7 H2O to 15.0 g).", "match_type": "synonym", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x 7H2O", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x H2O",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"},
+    {"label": "MgSO4 x7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x7H2O", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 · 7H2O",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"},
+    {"label": "MgSO4 ·7H2O", "match_type": "synonym", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4.7H2O", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4.7H2O",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "MgSO47H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}, {"label": "MgSO47H2O", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4x7H2O",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4
+    x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO4x7H2O", "match_type": "synonym", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·7H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4·7H2O",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4
+    x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4•7H2O",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4
+    x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO4•7H2O (Sigma 230391)", "match_type": "synonym", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4•7H2O (Sigma
+    230391)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO4•7H2O(CAS: 10034-99-8)", "match_type": "synonym", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4•7H2O(CAS:
+    10034-99-8)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO4•7H2O(Sigma 230391)", "match_type": "synonym", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4•7H2O(Sigma
+    230391)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "sulfuric acid magnesium salt", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sulfuric
+    acid magnesium salt heptahydrate", "match_type": "synonym", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "sulfuric acid magnesium salt heptahydrate",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "sulphate of magnesia", "match_type": "synonym", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:32149": [{"label": "disodium sulfate",
+    "match_type": "synonym", "identifier": "CHEBI:32149", "preferred_term": "Na2SO4",
+    "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "disodium sulphate", "match_type": "synonym", "identifier": "CHEBI:32149",
+    "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "Glauber''s salt", "match_type": "synonym",
+    "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Glaubersalz", "match_type":
+    "synonym", "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id":
+    "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2SO4",
+    "match_type": "preferred_term", "identifier": "CHEBI:32149", "preferred_term":
+    "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "NaSO4", "match_type": "synonym", "identifier": "CHEBI:32149",
+    "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "Natriumsulfat", "match_type": "synonym", "identifier":
+    "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "salt cake", "match_type": "synonym",
+    "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium Sulfate",
+    "match_type": "synonym", "identifier": "CHEBI:32149", "preferred_term": "Na2SO4",
+    "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "sodium sulphate", "match_type": "synonym", "identifier": "CHEBI:32149",
+    "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:32588": [{"label": "[KCl]", "match_type": "synonym",
+    "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Kaliumchlorid",
+    "match_type": "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl",
+    "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "Kaon-Cl 10", "match_type": "synonym", "identifier": "CHEBI:32588",
+    "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "KCl", "match_type": "preferred_term", "identifier":
+    "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "KCl (Fisher P 217)", "match_type":
+    "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id":
+    "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "KCl(CAS:
+    7447-40-7)", "match_type": "synonym", "identifier": "CHEBI:32588", "preferred_term":
+    "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "KCl(CAS:7447-40-7)", "match_type": "synonym", "identifier":
+    "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "KCl(Fisher P 217)", "match_type":
+    "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id":
+    "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Klor-con",
+    "match_type": "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl",
+    "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "Klotrix", "match_type": "synonym", "identifier": "CHEBI:32588", "preferred_term":
+    "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Monopotassium chloride", "match_type": "synonym", "identifier":
+    "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "muriate of potash", "match_type":
+    "synonym", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id":
+    "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Potassium
+    Chloride", "match_type": "synonym", "identifier": "CHEBI:32588", "preferred_term":
+    "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "sylvite", "match_type": "synonym", "identifier": "CHEBI:32588",
+    "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:62946": [{"label": "(NH4)2 SO4", "match_type":
+    "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id":
+    "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "(NH4)2S4",
+    "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4",
+    "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "(NH4)2SO4", "match_type": "preferred_term", "identifier": "CHEBI:62946",
+    "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "(NH4)2SO4(Fisher A 702)", "match_type":
+    "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id":
+    "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Ammonium
+    Sulfate", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term":
+    "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "ammonium sulfate (2:1)", "match_type": "synonym", "identifier":
+    "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "ammonium sulphate", "match_type":
+    "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id":
+    "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "diammonium
+    sulfate", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term":
+    "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "diazanium sulfate", "match_type": "synonym", "identifier":
+    "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "mascagnite", "match_type": "synonym",
+    "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sulfuric acid ammonium
+    salt (1:2)", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term":
+    "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "sulfuric acid, diammonium salt", "match_type": "synonym",
+    "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sulphate of ammonia",
+    "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4",
+    "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:63036": [{"label": "KH PO", "match_type": "synonym", "identifier": "CHEBI:63036",
+    "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "KH2PO4", "match_type": "preferred_term", "identifier":
+    "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "KH2PO4 (0.4 g/l)", "match_type":
+    "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id":
+    "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "KH2PO4
+    (7% w/v)", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term":
+    "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "KH2PO4(Sigma P 0662)", "match_type": "synonym", "identifier":
+    "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "MKP", "match_type": "synonym", "identifier":
+    "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Monopotassium dihydrogen phosphate",
+    "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4",
+    "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "Monopotassium monophosphate", "match_type": "synonym", "identifier":
+    "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Monopotassium orthophosphate", "match_type":
+    "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id":
+    "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Monopotassium
+    phosphate", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term":
+    "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Orthophosphoric acid, monopotassium salt", "match_type":
+    "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id":
+    "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Phosphoric
+    acid, monopotassium salt", "match_type": "synonym", "identifier": "CHEBI:63036",
+    "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "Phosphoric acid, potassium salt (1:1)", "match_type":
+    "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id":
+    "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Potassium
+    acid phosphate", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term":
+    "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Potassium dihydrogen orthophosphate", "match_type": "synonym",
+    "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Potassium dihydrogen
+    phosphate", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term":
+    "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Potassium Phosphate", "match_type": "synonym", "identifier":
+    "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Potassium phosphate monobasic", "match_type":
+    "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id":
+    "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sorensen''s
+    potassium phosphate", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term":
+    "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:86159": [{"label": "(1)  Ca(NO3)2", "match_type": "synonym",
+    "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id":
+    "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "(1)  Ca(NO3)2.4H2O",
+    "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2
+    x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Ca(NO3)2 x 4 H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Ca(NO3)2 x 4 H2O
+    (0.1% w/v)", "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term":
+    "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "Ca(NO3)2 · 4H2O", "match_type": "synonym",
+    "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id":
+    "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Ca(NO3)2.4H2O",
+    "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2
+    x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Ca(NO3)2x4H2O", "match_type": "synonym", "identifier": "CHEBI:86159",
+    "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Ca(NO3)2·4H2O", "match_type": "synonym",
+    "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id":
+    "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Ca(NO3)2•4H2O",
+    "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2
+    x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Ca(NO3)2•4H2O(CAS: 13477-34-4)", "match_type": "synonym",
+    "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id":
+    "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Ca(NO3)2・4H2O",
+    "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2
+    x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Calcium dinitrate tetrahydrate", "match_type": "synonym",
+    "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O", "ontology_id":
+    "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Calcium
+    nitrate tetrahydrate", "match_type": "synonym", "identifier": "CHEBI:86159", "preferred_term":
+    "Ca(NO3)2 x 4 H2O", "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "calcium nitrate--water (1/4)", "match_type":
+    "synonym", "identifier": "CHEBI:86159", "preferred_term": "Ca(NO3)2 x 4 H2O",
+    "ontology_id": "CHEBI:86159", "mapping_status": "MAPPED", "ambiguity": "unique"}]},
+    "missing_current_keys": [], "legacy_instances": []}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ACTINOBACTERIA_MEDIUM.yaml; data/normalized_yaml/bacterial/actinobacteria_medium.yaml;
+    data/normalized_yaml/bacterial/acidibacter_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T11:49:14Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 8, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/actinobacteria_medium.yaml",
+    "events": 7, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/acidibacter_medium.yaml",
+    "events": 6, "timestamp_issues": []}]'
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T11:49:14Z'
+  support: context_only
+  summary: Current importer separates main ingredients and stock references; current
+    formulation merge requires matching scientific fields rather than only ingredient
+    similarity. October owner evidence explicitly restricts itself to provider main
+    amounts and leaves stock/variant follow-up open. The saved August generated target
+    is assessed directly; current guards are not asserted to have created its historical
+    mixture.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T11:49:14Z'
+  support: context_only
+  summary: Current importer separates main ingredients and stock references; current
+    formulation merge requires matching scientific fields rather than only ingredient
+    similarity. October owner evidence explicitly restricts itself to provider main
+    amounts and leaves stock/variant follow-up open. The saved August generated target
+    is assessed directly; current guards are not asserted to have created its historical
+    mixture.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T11:49:14Z'
+  support: context_only
+  summary: Current importer separates main ingredients and stock references; current
+    formulation merge requires matching scientific fields rather than only ingredient
+    similarity. October owner evidence explicitly restricts itself to provider main
+    amounts and leaves stock/variant follow-up open. The saved August generated target
+    is assessed directly; current guards are not asserted to have created its historical
+    mixture.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-3
+  kind: record_content
+  reference: scripts/review_medium_concentration_evidence.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T11:49:14Z'
+  support: context_only
+  summary: Current importer separates main ingredients and stock references; current
+    formulation merge requires matching scientific fields rather than only ingredient
+    similarity. October owner evidence explicitly restricts itself to provider main
+    amounts and leaves stock/variant follow-up open. The saved August generated target
+    is assessed directly; current guards are not asserted to have created its historical
+    mixture.
+  snapshot_sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+- evidence_id: writer-4
+  kind: record_content
+  reference: scripts/repair_mediadive_stock_concentration_evidence.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T11:49:14Z'
+  support: context_only
+  summary: Current importer separates main ingredients and stock references; current
+    formulation merge requires matching scientific fields rather than only ingredient
+    similarity. October owner evidence explicitly restricts itself to provider main
+    amounts and leaves stock/variant follow-up open. The saved August generated target
+    is assessed directly; current guards are not asserted to have created its historical
+    mixture.
+  snapshot_sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:001170
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: Two exact accessions are distinct formulations
+  outcome: concern
+  summary: 'Both stable owner IDs and DSMZ accessions resolve, and both explicit merge
+    contributors were inspected. They are not formulation synonyms: DSMZ 1688 has
+    yeast extract 0.100 g and pH 3.0; DSMZ 1627 has yeast extract 0.20 g and pH 5.0,
+    with a salt stock. Under its provider volume, the latter supplies sodium sulfate
+    0.07 g/L and calcium nitrate tetrahydrate 0.014 g/L, whereas DSMZ 1688 declares
+    0.15 and 0.015 g/L. Similar ingredients do not establish identity.'
+  target_ids:
+  - CultureMech:001170
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz1688
+  - dsmz1627
+  - mediadive1688api
+  - mediadive1627api
+  - id-search
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 35 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:001170
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"decision\": \"evidence_only\",\n    \"local_input\": \"\
+    target\",\n    \"field_path\": \"ingredients[0].concentration\",\n    \"ingredient\"\
+    : \"Glucose\",\n    \"stored\": {\n      \"value\": \"0.9\",\n      \"unit\":\
+    \ \"G_PER_L\"\n    },\n    \"proposed\": {\n      \"value\": 0.9,\n      \"unit\"\
+    : \"G_PER_L\",\n      \"scope\": \"provider-declared main recipe\",\n      \"\
+    provider_volume_ml\": 1000,\n      \"original_source_amount\": 0.9,\n      \"\
+    original_source_unit\": \"g\"\n    },\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"dsmz1688\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main recipe: Glucose\",\n        \"exact_source_quote\"\
+    : \"glucose 0.900 g\",\n        \"snapshot_sha256\": \"eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735\"\
+    ,\n        \"parsed_text_sha256\": \"1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1688api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1688\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[7]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 8,\\n                        \\\"\
+    compound\\\": \\\"Glucose\\\",\\n                        \\\"compound_id\\\":\
+    \ 5,\\n                        \\\"amount\\\": 0.9,\\n                       \
+    \ \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.9,\\n    \
+    \                    \\\"mmol_l\\\": 4.99556,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53\"\
+    \n      }\n    ],\n    \"explanation\": \"Existing amount and unit match this\
+    \ exact accession and provider basis, but this local layer lacks attached matching\
+    \ evidence.\"\n  },\n  {\n    \"decision\": \"correct\",\n    \"local_input\"\
+    : \"target\",\n    \"field_path\": \"ingredients[1].concentration\",\n    \"ingredient\"\
+    : \"Yeast extract\",\n    \"stored\": {\n      \"value\": \"0.2\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"proposed\": {\n      \"value\": 0.1,\n      \"unit\"\
+    : \"G_PER_L\",\n      \"scope\": \"provider-declared main recipe\",\n      \"\
+    provider_volume_ml\": 1000,\n      \"original_source_amount\": 0.1,\n      \"\
+    original_source_unit\": \"g\"\n    },\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"dsmz1688\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main recipe: Yeast extract\",\n      \
+    \  \"exact_source_quote\": \"yeast extract 0.100 g\",\n        \"snapshot_sha256\"\
+    : \"eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735\",\n    \
+    \    \"parsed_text_sha256\": \"1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1688api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1688\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"Yeast extract\\\",\\n                        \\\"compound_id\\\
+    \": 16,\\n                        \\\"amount\\\": 0.1,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n \
+    \                       \\\"optional\\\": 0\\n                    }\",\n     \
+    \   \"snapshot_sha256\": \"0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53\"\
+    \n      }\n    ],\n    \"explanation\": \"The generated target declares DSMZ 1688\
+    \ but this amount does not match its exact main recipe or current maintained owner.\
+    \ Restore the source-specific target only after splitting the distinct DSMZ 1627\
+    \ contributor; do not change the already correct DSMZ 1688 owner value.\"\n  },\n\
+    \  {\n    \"decision\": \"correct\",\n    \"local_input\": \"target\",\n    \"\
+    field_path\": \"ingredients[2].concentration\",\n    \"ingredient\": \"Na2SO4\"\
+    ,\n    \"stored\": {\n      \"value\": \"3.5\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"proposed\": {\n      \"value\": 0.15,\n      \"unit\": \"G_PER_L\"\
+    ,\n      \"scope\": \"provider-declared main recipe\",\n      \"provider_volume_ml\"\
+    : 1000,\n      \"original_source_amount\": 0.15,\n      \"original_source_unit\"\
+    : \"g\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\":\
+    \ \"dsmz1688\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main recipe: Na2SO4\",\n        \"exact_source_quote\"\
+    : \"Na2SO4 0.150 g\",\n        \"snapshot_sha256\": \"eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735\"\
+    ,\n        \"parsed_text_sha256\": \"1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1688api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1688\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"Na2SO4\\\",\\n                        \\\"compound_id\\\": 110,\\\
+    n                        \\\"amount\\\": 0.15,\\n                        \\\"\
+    unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.15,\\n         \
+    \               \\\"mmol_l\\\": 1.05604,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53\"\
+    \n      }\n    ],\n    \"explanation\": \"The generated target declares DSMZ 1688\
+    \ but this amount does not match its exact main recipe or current maintained owner.\
+    \ Restore the source-specific target only after splitting the distinct DSMZ 1627\
+    \ contributor; do not change the already correct DSMZ 1688 owner value.\"\n  },\n\
+    \  {\n    \"decision\": \"correct\",\n    \"local_input\": \"target\",\n    \"\
+    field_path\": \"ingredients[3].concentration\",\n    \"ingredient\": \"(NH4)2SO4\"\
+    ,\n    \"stored\": {\n      \"value\": \"22.5\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"proposed\": {\n      \"value\": 0.45,\n      \"unit\": \"G_PER_L\"\
+    ,\n      \"scope\": \"provider-declared main recipe\",\n      \"provider_volume_ml\"\
+    : 1000,\n      \"original_source_amount\": 0.45,\n      \"original_source_unit\"\
+    : \"g\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\":\
+    \ \"dsmz1688\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main recipe: (NH4)2SO4\",\n        \"\
+    exact_source_quote\": \"(NH4)2SO4 0.450 g\",\n        \"snapshot_sha256\": \"\
+    eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735\",\n        \"\
+    parsed_text_sha256\": \"1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1688api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1688\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"(NH4)2SO4\\\",\\n                        \\\"compound_id\\\"\
+    : 27,\\n                        \\\"amount\\\": 0.45,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.45,\\n \
+    \                       \\\"mmol_l\\\": 3.40548,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53\"\
+    \n      }\n    ],\n    \"explanation\": \"The generated target declares DSMZ 1688\
+    \ but this amount does not match its exact main recipe or current maintained owner.\
+    \ Restore the source-specific target only after splitting the distinct DSMZ 1627\
+    \ contributor; do not change the already correct DSMZ 1688 owner value.\"\n  },\n\
+    \  {\n    \"decision\": \"correct\",\n    \"local_input\": \"target\",\n    \"\
+    field_path\": \"ingredients[4].concentration\",\n    \"ingredient\": \"KCl\",\n\
+    \    \"stored\": {\n      \"value\": \"2.5\",\n      \"unit\": \"G_PER_L\"\n \
+    \   },\n    \"proposed\": {\n      \"value\": 0.05,\n      \"unit\": \"G_PER_L\"\
+    ,\n      \"scope\": \"provider-declared main recipe\",\n      \"provider_volume_ml\"\
+    : 1000,\n      \"original_source_amount\": 0.05,\n      \"original_source_unit\"\
+    : \"g\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\":\
+    \ \"dsmz1688\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main recipe: KCl\",\n        \"exact_source_quote\"\
+    : \"KCl 0.050 g\",\n        \"snapshot_sha256\": \"eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735\"\
+    ,\n        \"parsed_text_sha256\": \"1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1688api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1688\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"KCl\\\",\\n                        \\\"compound_id\\\": 61,\\\
+    n                        \\\"amount\\\": 0.05,\\n                        \\\"\
+    unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.05,\\n         \
+    \               \\\"mmol_l\\\": 0.670691,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53\"\
+    \n      }\n    ],\n    \"explanation\": \"The generated target declares DSMZ 1688\
+    \ but this amount does not match its exact main recipe or current maintained owner.\
+    \ Restore the source-specific target only after splitting the distinct DSMZ 1627\
+    \ contributor; do not change the already correct DSMZ 1688 owner value.\"\n  },\n\
+    \  {\n    \"decision\": \"correct\",\n    \"local_input\": \"target\",\n    \"\
+    field_path\": \"ingredients[5].concentration\",\n    \"ingredient\": \"MgSO4 x\
+    \ 7 H2O\",\n    \"stored\": {\n      \"value\": \"25\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"proposed\": {\n      \"value\": 0.5,\n      \"unit\": \"G_PER_L\"\
+    ,\n      \"scope\": \"provider-declared main recipe\",\n      \"provider_volume_ml\"\
+    : 1000,\n      \"original_source_amount\": 0.5,\n      \"original_source_unit\"\
+    : \"g\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\":\
+    \ \"dsmz1688\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main recipe: MgSO4 x 7 H2O\",\n      \
+    \  \"exact_source_quote\": \"MgSO4 x 7 H2O 0.500 g\",\n        \"snapshot_sha256\"\
+    : \"eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735\",\n    \
+    \    \"parsed_text_sha256\": \"1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1688api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1688\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"MgSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 8,\\n                        \\\"amount\\\": 0.5,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.5,\\n  \
+    \                      \\\"mmol_l\\\": 2.02859,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53\"\
+    \n      }\n    ],\n    \"explanation\": \"The generated target declares DSMZ 1688\
+    \ but this amount does not match its exact main recipe or current maintained owner.\
+    \ Restore the source-specific target only after splitting the distinct DSMZ 1627\
+    \ contributor; do not change the already correct DSMZ 1688 owner value.\"\n  },\n\
+    \  {\n    \"decision\": \"correct\",\n    \"local_input\": \"target\",\n    \"\
+    field_path\": \"ingredients[6].concentration\",\n    \"ingredient\": \"KH2PO4\"\
+    ,\n    \"stored\": {\n      \"value\": \"2.5\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"proposed\": {\n      \"value\": 0.05,\n      \"unit\": \"G_PER_L\"\
+    ,\n      \"scope\": \"provider-declared main recipe\",\n      \"provider_volume_ml\"\
+    : 1000,\n      \"original_source_amount\": 0.05,\n      \"original_source_unit\"\
+    : \"g\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\":\
+    \ \"dsmz1688\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main recipe: KH2PO4\",\n        \"exact_source_quote\"\
+    : \"KH\\n2PO4 0.050 g\",\n        \"snapshot_sha256\": \"eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735\"\
+    ,\n        \"parsed_text_sha256\": \"1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1688api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1688\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"KH2PO4\\\",\\n                        \\\"compound_id\\\": 11,\\\
+    n                        \\\"amount\\\": 0.05,\\n                        \\\"\
+    unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.05,\\n         \
+    \               \\\"mmol_l\\\": 0.367417,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53\"\
+    \n      }\n    ],\n    \"explanation\": \"The generated target declares DSMZ 1688\
+    \ but this amount does not match its exact main recipe or current maintained owner.\
+    \ Restore the source-specific target only after splitting the distinct DSMZ 1627\
+    \ contributor; do not change the already correct DSMZ 1688 owner value.\"\n  },\n\
+    \  {\n    \"decision\": \"correct\",\n    \"local_input\": \"target\",\n    \"\
+    field_path\": \"ingredients[7].concentration\",\n    \"ingredient\": \"Ca(NO3)2\
+    \ x 4 H2O\",\n    \"stored\": {\n      \"value\": \"0.7\",\n      \"unit\": \"\
+    G_PER_L\"\n    },\n    \"proposed\": {\n      \"value\": 0.015,\n      \"unit\"\
+    : \"G_PER_L\",\n      \"scope\": \"provider-declared main recipe\",\n      \"\
+    provider_volume_ml\": 1000,\n      \"original_source_amount\": 0.015,\n      \"\
+    original_source_unit\": \"g\"\n    },\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"dsmz1688\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main recipe: Ca(NO3)2 x 4 H2O\",\n   \
+    \     \"exact_source_quote\": \"Ca(NO3)2 x 4 H2O 0.015 g\",\n        \"snapshot_sha256\"\
+    : \"eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735\",\n    \
+    \    \"parsed_text_sha256\": \"1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1688api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1688\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"Ca(NO3)2 x 4 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 213,\\n                        \\\"amount\\\": 0.015,\\n                 \
+    \       \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.015,\\\
+    n                        \\\"mmol_l\\\": 0.0635192,\\n                       \
+    \ \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53\"\n     \
+    \ }\n    ],\n    \"explanation\": \"The generated target declares DSMZ 1688 but\
+    \ this amount does not match its exact main recipe or current maintained owner.\
+    \ Restore the source-specific target only after splitting the distinct DSMZ 1627\
+    \ contributor; do not change the already correct DSMZ 1688 owner value.\"\n  },\n\
+    \  {\n    \"decision\": \"verified\",\n    \"local_input\": \"data/normalized_yaml/bacterial/actinobacteria_medium.yaml\"\
+    ,\n    \"field_path\": \"ingredients[0].concentration\",\n    \"ingredient\":\
+    \ \"KH2PO4\",\n    \"stored\": {\n      \"value\": \"0.05\",\n      \"unit\":\
+    \ \"G_PER_L\"\n    },\n    \"proposed\": {\n      \"value\": 0.05,\n      \"unit\"\
+    : \"G_PER_L\",\n      \"scope\": \"provider-declared main recipe\",\n      \"\
+    provider_volume_ml\": 1000,\n      \"original_source_amount\": 0.05,\n      \"\
+    original_source_unit\": \"g\"\n    },\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"dsmz1688\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main recipe: KH2PO4\",\n        \"exact_source_quote\"\
+    : \"KH\\n2PO4 0.050 g\",\n        \"snapshot_sha256\": \"eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735\"\
+    ,\n        \"parsed_text_sha256\": \"1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1688api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1688\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"KH2PO4\\\",\\n                        \\\"compound_id\\\": 11,\\\
+    n                        \\\"amount\\\": 0.05,\\n                        \\\"\
+    unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.05,\\n         \
+    \               \\\"mmol_l\\\": 0.367417,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53\"\
+    \n      }\n    ],\n    \"explanation\": \"Only this maintained owner has attached\
+    \ exact source evidence. Existing value, unit, provider 1000 ml basis, literal\
+    \ JSON object and recorded response hash all match. This status does not transfer\
+    \ to the generated target.\"\n  },\n  {\n    \"decision\": \"verified\",\n   \
+    \ \"local_input\": \"data/normalized_yaml/bacterial/actinobacteria_medium.yaml\"\
+    ,\n    \"field_path\": \"ingredients[1].concentration\",\n    \"ingredient\":\
+    \ \"Na2SO4\",\n    \"stored\": {\n      \"value\": \"0.15\",\n      \"unit\":\
+    \ \"G_PER_L\"\n    },\n    \"proposed\": {\n      \"value\": 0.15,\n      \"unit\"\
+    : \"G_PER_L\",\n      \"scope\": \"provider-declared main recipe\",\n      \"\
+    provider_volume_ml\": 1000,\n      \"original_source_amount\": 0.15,\n      \"\
+    original_source_unit\": \"g\"\n    },\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"dsmz1688\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main recipe: Na2SO4\",\n        \"exact_source_quote\"\
+    : \"Na2SO4 0.150 g\",\n        \"snapshot_sha256\": \"eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735\"\
+    ,\n        \"parsed_text_sha256\": \"1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1688api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1688\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"Na2SO4\\\",\\n                        \\\"compound_id\\\": 110,\\\
+    n                        \\\"amount\\\": 0.15,\\n                        \\\"\
+    unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.15,\\n         \
+    \               \\\"mmol_l\\\": 1.05604,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53\"\
+    \n      }\n    ],\n    \"explanation\": \"Only this maintained owner has attached\
+    \ exact source evidence. Existing value, unit, provider 1000 ml basis, literal\
+    \ JSON object and recorded response hash all match. This status does not transfer\
+    \ to the generated target.\"\n  },\n  {\n    \"decision\": \"verified\",\n   \
+    \ \"local_input\": \"data/normalized_yaml/bacterial/actinobacteria_medium.yaml\"\
+    ,\n    \"field_path\": \"ingredients[2].concentration\",\n    \"ingredient\":\
+    \ \"(NH4)2SO4\",\n    \"stored\": {\n      \"value\": \"0.45\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"proposed\": {\n      \"value\": 0.45,\n      \"unit\"\
+    : \"G_PER_L\",\n      \"scope\": \"provider-declared main recipe\",\n      \"\
+    provider_volume_ml\": 1000,\n      \"original_source_amount\": 0.45,\n      \"\
+    original_source_unit\": \"g\"\n    },\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"dsmz1688\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main recipe: (NH4)2SO4\",\n        \"\
+    exact_source_quote\": \"(NH4)2SO4 0.450 g\",\n        \"snapshot_sha256\": \"\
+    eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735\",\n        \"\
+    parsed_text_sha256\": \"1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1688api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1688\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"(NH4)2SO4\\\",\\n                        \\\"compound_id\\\"\
+    : 27,\\n                        \\\"amount\\\": 0.45,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.45,\\n \
+    \                       \\\"mmol_l\\\": 3.40548,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53\"\
+    \n      }\n    ],\n    \"explanation\": \"Only this maintained owner has attached\
+    \ exact source evidence. Existing value, unit, provider 1000 ml basis, literal\
+    \ JSON object and recorded response hash all match. This status does not transfer\
+    \ to the generated target.\"\n  },\n  {\n    \"decision\": \"verified\",\n   \
+    \ \"local_input\": \"data/normalized_yaml/bacterial/actinobacteria_medium.yaml\"\
+    ,\n    \"field_path\": \"ingredients[3].concentration\",\n    \"ingredient\":\
+    \ \"MgSO4 x 7 H2O\",\n    \"stored\": {\n      \"value\": \"0.5\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"proposed\": {\n      \"value\": 0.5,\n      \"unit\"\
+    : \"G_PER_L\",\n      \"scope\": \"provider-declared main recipe\",\n      \"\
+    provider_volume_ml\": 1000,\n      \"original_source_amount\": 0.5,\n      \"\
+    original_source_unit\": \"g\"\n    },\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"dsmz1688\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main recipe: MgSO4 x 7 H2O\",\n      \
+    \  \"exact_source_quote\": \"MgSO4 x 7 H2O 0.500 g\",\n        \"snapshot_sha256\"\
+    : \"eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735\",\n    \
+    \    \"parsed_text_sha256\": \"1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1688api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1688\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"MgSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 8,\\n                        \\\"amount\\\": 0.5,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.5,\\n  \
+    \                      \\\"mmol_l\\\": 2.02859,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53\"\
+    \n      }\n    ],\n    \"explanation\": \"Only this maintained owner has attached\
+    \ exact source evidence. Existing value, unit, provider 1000 ml basis, literal\
+    \ JSON object and recorded response hash all match. This status does not transfer\
+    \ to the generated target.\"\n  },\n  {\n    \"decision\": \"verified\",\n   \
+    \ \"local_input\": \"data/normalized_yaml/bacterial/actinobacteria_medium.yaml\"\
+    ,\n    \"field_path\": \"ingredients[4].concentration\",\n    \"ingredient\":\
+    \ \"Ca(NO3)2 x 4 H2O\",\n    \"stored\": {\n      \"value\": \"0.015\",\n    \
+    \  \"unit\": \"G_PER_L\"\n    },\n    \"proposed\": {\n      \"value\": 0.015,\n\
+    \      \"unit\": \"G_PER_L\",\n      \"scope\": \"provider-declared main recipe\"\
+    ,\n      \"provider_volume_ml\": 1000,\n      \"original_source_amount\": 0.015,\n\
+    \      \"original_source_unit\": \"g\"\n    },\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"dsmz1688\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main recipe: Ca(NO3)2 x 4 H2O\",\n   \
+    \     \"exact_source_quote\": \"Ca(NO3)2 x 4 H2O 0.015 g\",\n        \"snapshot_sha256\"\
+    : \"eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735\",\n    \
+    \    \"parsed_text_sha256\": \"1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1688api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1688\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"Ca(NO3)2 x 4 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 213,\\n                        \\\"amount\\\": 0.015,\\n                 \
+    \       \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.015,\\\
+    n                        \\\"mmol_l\\\": 0.0635192,\\n                       \
+    \ \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53\"\n     \
+    \ }\n    ],\n    \"explanation\": \"Only this maintained owner has attached exact\
+    \ source evidence. Existing value, unit, provider 1000 ml basis, literal JSON\
+    \ object and recorded response hash all match. This status does not transfer to\
+    \ the generated target.\"\n  },\n  {\n    \"decision\": \"verified\",\n    \"\
+    local_input\": \"data/normalized_yaml/bacterial/actinobacteria_medium.yaml\",\n\
+    \    \"field_path\": \"ingredients[5].concentration\",\n    \"ingredient\": \"\
+    KCl\",\n    \"stored\": {\n      \"value\": \"0.05\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"proposed\": {\n      \"value\": 0.05,\n      \"unit\": \"G_PER_L\"\
+    ,\n      \"scope\": \"provider-declared main recipe\",\n      \"provider_volume_ml\"\
+    : 1000,\n      \"original_source_amount\": 0.05,\n      \"original_source_unit\"\
+    : \"g\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\":\
+    \ \"dsmz1688\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main recipe: KCl\",\n        \"exact_source_quote\"\
+    : \"KCl 0.050 g\",\n        \"snapshot_sha256\": \"eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735\"\
+    ,\n        \"parsed_text_sha256\": \"1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1688api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1688\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"KCl\\\",\\n                        \\\"compound_id\\\": 61,\\\
+    n                        \\\"amount\\\": 0.05,\\n                        \\\"\
+    unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.05,\\n         \
+    \               \\\"mmol_l\\\": 0.670691,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53\"\
+    \n      }\n    ],\n    \"explanation\": \"Only this maintained owner has attached\
+    \ exact source evidence. Existing value, unit, provider 1000 ml basis, literal\
+    \ JSON object and recorded response hash all match. This status does not transfer\
+    \ to the generated target.\"\n  },\n  {\n    \"decision\": \"verified\",\n   \
+    \ \"local_input\": \"data/normalized_yaml/bacterial/actinobacteria_medium.yaml\"\
+    ,\n    \"field_path\": \"ingredients[6].concentration\",\n    \"ingredient\":\
+    \ \"Yeast extract\",\n    \"stored\": {\n      \"value\": \"0.1\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"proposed\": {\n      \"value\": 0.1,\n      \"unit\"\
+    : \"G_PER_L\",\n      \"scope\": \"provider-declared main recipe\",\n      \"\
+    provider_volume_ml\": 1000,\n      \"original_source_amount\": 0.1,\n      \"\
+    original_source_unit\": \"g\"\n    },\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"dsmz1688\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main recipe: Yeast extract\",\n      \
+    \  \"exact_source_quote\": \"yeast extract 0.100 g\",\n        \"snapshot_sha256\"\
+    : \"eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735\",\n    \
+    \    \"parsed_text_sha256\": \"1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1688api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1688\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"Yeast extract\\\",\\n                        \\\"compound_id\\\
+    \": 16,\\n                        \\\"amount\\\": 0.1,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n \
+    \                       \\\"optional\\\": 0\\n                    }\",\n     \
+    \   \"snapshot_sha256\": \"0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53\"\
+    \n      }\n    ],\n    \"explanation\": \"Only this maintained owner has attached\
+    \ exact source evidence. Existing value, unit, provider 1000 ml basis, literal\
+    \ JSON object and recorded response hash all match. This status does not transfer\
+    \ to the generated target.\"\n  },\n  {\n    \"decision\": \"verified\",\n   \
+    \ \"local_input\": \"data/normalized_yaml/bacterial/actinobacteria_medium.yaml\"\
+    ,\n    \"field_path\": \"ingredients[7].concentration\",\n    \"ingredient\":\
+    \ \"Glucose\",\n    \"stored\": {\n      \"value\": \"0.9\",\n      \"unit\":\
+    \ \"G_PER_L\"\n    },\n    \"proposed\": {\n      \"value\": 0.9,\n      \"unit\"\
+    : \"G_PER_L\",\n      \"scope\": \"provider-declared main recipe\",\n      \"\
+    provider_volume_ml\": 1000,\n      \"original_source_amount\": 0.9,\n      \"\
+    original_source_unit\": \"g\"\n    },\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"dsmz1688\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main recipe: Glucose\",\n        \"exact_source_quote\"\
+    : \"glucose 0.900 g\",\n        \"snapshot_sha256\": \"eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735\"\
+    ,\n        \"parsed_text_sha256\": \"1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1688api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1688\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[7]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 8,\\n                        \\\"\
+    compound\\\": \\\"Glucose\\\",\\n                        \\\"compound_id\\\":\
+    \ 5,\\n                        \\\"amount\\\": 0.9,\\n                       \
+    \ \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.9,\\n    \
+    \                    \\\"mmol_l\\\": 4.99556,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53\"\
+    \n      }\n    ],\n    \"explanation\": \"Only this maintained owner has attached\
+    \ exact source evidence. Existing value, unit, provider 1000 ml basis, literal\
+    \ JSON object and recorded response hash all match. This status does not transfer\
+    \ to the generated target.\"\n  },\n  {\n    \"decision\": \"evidence_only\",\n\
+    \    \"local_input\": \"data/normalized_yaml/bacterial/acidibacter_medium.yaml\"\
+    ,\n    \"field_path\": \"ingredients[0].concentration\",\n    \"ingredient\":\
+    \ \"Glucose\",\n    \"stored\": {\n      \"value\": \"0.9\",\n      \"unit\":\
+    \ \"G_PER_L\"\n    },\n    \"proposed\": {\n      \"value\": 0.9,\n      \"unit\"\
+    : \"G_PER_L\",\n      \"scope\": \"provider-declared main recipe\",\n      \"\
+    provider_volume_ml\": 1000,\n      \"original_source_amount\": 0.9,\n      \"\
+    original_source_unit\": \"g\"\n    },\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"dsmz1627\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1627.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main recipe: Glucose\",\n        \"exact_source_quote\"\
+    : \"Glucose 0.90 g\",\n        \"snapshot_sha256\": \"a66ff9b53cdb17153690607df82259c94cb19380c777c6e1ec2e7923c35cc529\"\
+    ,\n        \"parsed_text_sha256\": \"bd08f66c214dc20cd621af6fda607fa3799520d531cefafdd6f8c46fd88623f5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1627api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1627\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"Glucose\\\",\\n                        \\\"compound_id\\\":\
+    \ 5,\\n                        \\\"amount\\\": 0.9,\\n                       \
+    \ \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.9,\\n    \
+    \                    \\\"mmol_l\\\": 4.99556,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"2ac35d0a239dc21a2e3472f6b85b1191add42b1986f8d5a14f40a584651b78b6\"\
+    \n      }\n    ],\n    \"explanation\": \"Existing amount and unit match this\
+    \ exact accession and provider basis, but this local layer lacks attached matching\
+    \ evidence.\"\n  },\n  {\n    \"decision\": \"evidence_only\",\n    \"local_input\"\
+    : \"data/normalized_yaml/bacterial/acidibacter_medium.yaml\",\n    \"field_path\"\
+    : \"ingredients[1].concentration\",\n    \"ingredient\": \"Yeast extract\",\n\
+    \    \"stored\": {\n      \"value\": \"0.2\",\n      \"unit\": \"G_PER_L\"\n \
+    \   },\n    \"proposed\": {\n      \"value\": 0.2,\n      \"unit\": \"G_PER_L\"\
+    ,\n      \"scope\": \"provider-declared main recipe\",\n      \"provider_volume_ml\"\
+    : 1000,\n      \"original_source_amount\": 0.2,\n      \"original_source_unit\"\
+    : \"g\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\":\
+    \ \"dsmz1627\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1627.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main recipe: Yeast extract\",\n      \
+    \  \"exact_source_quote\": \"Yeast extract 0.20 g\",\n        \"snapshot_sha256\"\
+    : \"a66ff9b53cdb17153690607df82259c94cb19380c777c6e1ec2e7923c35cc529\",\n    \
+    \    \"parsed_text_sha256\": \"bd08f66c214dc20cd621af6fda607fa3799520d531cefafdd6f8c46fd88623f5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1627api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1627\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"Yeast extract\\\",\\n                        \\\"compound_id\\\
+    \": 16,\\n                        \\\"amount\\\": 0.2,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.2,\\n \
+    \                       \\\"optional\\\": 0\\n                    }\",\n     \
+    \   \"snapshot_sha256\": \"2ac35d0a239dc21a2e3472f6b85b1191add42b1986f8d5a14f40a584651b78b6\"\
+    \n      }\n    ],\n    \"explanation\": \"Existing amount and unit match this\
+    \ exact accession and provider basis, but this local layer lacks attached matching\
+    \ evidence.\"\n  },\n  {\n    \"decision\": \"correct\",\n    \"local_input\"\
+    : \"data/normalized_yaml/bacterial/acidibacter_medium.yaml\",\n    \"field_path\"\
+    : \"ingredients[2].concentration\",\n    \"ingredient\": \"Na2SO4\",\n    \"stored\"\
+    : {\n      \"value\": \"3.5\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"proposed\"\
+    : {\n      \"value\": 3.5,\n      \"unit\": \"G_PER_L\",\n      \"scope\": \"\
+    salt stock only\",\n      \"provider_volume_ml\": 100,\n      \"original_source_amount\"\
+    : 0.35,\n      \"original_source_unit\": \"g\",\n      \"stock_addition_ml_per_source_batch\"\
+    : 20,\n      \"main_provider_volume_ml\": 1000,\n      \"derived_transfer_g_per_provider_L\"\
+    : 0.07\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1627\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1627.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 Salt solution subsection: Na2SO4\",\n\
+    \        \"exact_source_quote\": \"Na\\n2SO4 0.35 g\",\n        \"snapshot_sha256\"\
+    : \"a66ff9b53cdb17153690607df82259c94cb19380c777c6e1ec2e7923c35cc529\",\n    \
+    \    \"parsed_text_sha256\": \"bd08f66c214dc20cd621af6fda607fa3799520d531cefafdd6f8c46fd88623f5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1627api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1627\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"Na2SO4\\\",\\n                        \\\"compound_id\\\": 110,\\\
+    n                        \\\"amount\\\": 0.35,\\n                        \\\"\
+    unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 3.5,\\n          \
+    \              \\\"mmol_l\\\": 24.6409,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"2ac35d0a239dc21a2e3472f6b85b1191add42b1986f8d5a14f40a584651b78b6\"\
+    \n      }\n    ],\n    \"explanation\": \"This value is the stock strength for\
+    \ 100 ml stock, now flattened into main ingredients. Preserve the original stock\
+    \ mass, separate the 20 ml addition, and avoid reading the undiluted strength\
+    \ as a final-medium quantity.\"\n  },\n  {\n    \"decision\": \"correct\",\n \
+    \   \"local_input\": \"data/normalized_yaml/bacterial/acidibacter_medium.yaml\"\
+    ,\n    \"field_path\": \"ingredients[3].concentration\",\n    \"ingredient\":\
+    \ \"(NH4)2SO4\",\n    \"stored\": {\n      \"value\": \"22.5\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"proposed\": {\n      \"value\": 22.5,\n      \"unit\"\
+    : \"G_PER_L\",\n      \"scope\": \"salt stock only\",\n      \"provider_volume_ml\"\
+    : 100,\n      \"original_source_amount\": 2.25,\n      \"original_source_unit\"\
+    : \"g\",\n      \"stock_addition_ml_per_source_batch\": 20,\n      \"main_provider_volume_ml\"\
+    : 1000,\n      \"derived_transfer_g_per_provider_L\": 0.45\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1627\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1627.pdf\",\n       \
+    \ \"source_locator\": \"Page 1 Salt solution subsection: (NH4)2SO4\",\n      \
+    \  \"exact_source_quote\": \"(NH4)2SO4 2.25 g\",\n        \"snapshot_sha256\"\
+    : \"a66ff9b53cdb17153690607df82259c94cb19380c777c6e1ec2e7923c35cc529\",\n    \
+    \    \"parsed_text_sha256\": \"bd08f66c214dc20cd621af6fda607fa3799520d531cefafdd6f8c46fd88623f5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1627api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1627\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"(NH4)2SO4\\\",\\n                        \\\"compound_id\\\"\
+    : 27,\\n                        \\\"amount\\\": 2.25,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 22.5,\\n \
+    \                       \\\"mmol_l\\\": 170.274,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"2ac35d0a239dc21a2e3472f6b85b1191add42b1986f8d5a14f40a584651b78b6\"\
+    \n      }\n    ],\n    \"explanation\": \"This value is the stock strength for\
+    \ 100 ml stock, now flattened into main ingredients. Preserve the original stock\
+    \ mass, separate the 20 ml addition, and avoid reading the undiluted strength\
+    \ as a final-medium quantity.\"\n  },\n  {\n    \"decision\": \"correct\",\n \
+    \   \"local_input\": \"data/normalized_yaml/bacterial/acidibacter_medium.yaml\"\
+    ,\n    \"field_path\": \"ingredients[4].concentration\",\n    \"ingredient\":\
+    \ \"KCl\",\n    \"stored\": {\n      \"value\": \"2.5\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"proposed\": {\n      \"value\": 2.5,\n      \"unit\": \"G_PER_L\"\
+    ,\n      \"scope\": \"salt stock only\",\n      \"provider_volume_ml\": 100,\n\
+    \      \"original_source_amount\": 0.25,\n      \"original_source_unit\": \"g\"\
+    ,\n      \"stock_addition_ml_per_source_batch\": 20,\n      \"main_provider_volume_ml\"\
+    : 1000,\n      \"derived_transfer_g_per_provider_L\": 0.05\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1627\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1627.pdf\",\n       \
+    \ \"source_locator\": \"Page 1 Salt solution subsection: KCl\",\n        \"exact_source_quote\"\
+    : \"KCl 0.25 g\",\n        \"snapshot_sha256\": \"a66ff9b53cdb17153690607df82259c94cb19380c777c6e1ec2e7923c35cc529\"\
+    ,\n        \"parsed_text_sha256\": \"bd08f66c214dc20cd621af6fda607fa3799520d531cefafdd6f8c46fd88623f5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1627api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1627\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"KCl\\\",\\n                        \\\"compound_id\\\": 61,\\\
+    n                        \\\"amount\\\": 0.25,\\n                        \\\"\
+    unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 2.5,\\n          \
+    \              \\\"mmol_l\\\": 33.5345,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"2ac35d0a239dc21a2e3472f6b85b1191add42b1986f8d5a14f40a584651b78b6\"\
+    \n      }\n    ],\n    \"explanation\": \"This value is the stock strength for\
+    \ 100 ml stock, now flattened into main ingredients. Preserve the original stock\
+    \ mass, separate the 20 ml addition, and avoid reading the undiluted strength\
+    \ as a final-medium quantity.\"\n  },\n  {\n    \"decision\": \"correct\",\n \
+    \   \"local_input\": \"data/normalized_yaml/bacterial/acidibacter_medium.yaml\"\
+    ,\n    \"field_path\": \"ingredients[5].concentration\",\n    \"ingredient\":\
+    \ \"MgSO4 x 7 H2O\",\n    \"stored\": {\n      \"value\": \"25\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"proposed\": {\n      \"value\": 25,\n      \"unit\"\
+    : \"G_PER_L\",\n      \"scope\": \"salt stock only\",\n      \"provider_volume_ml\"\
+    : 100,\n      \"original_source_amount\": 2.5,\n      \"original_source_unit\"\
+    : \"g\",\n      \"stock_addition_ml_per_source_batch\": 20,\n      \"main_provider_volume_ml\"\
+    : 1000,\n      \"derived_transfer_g_per_provider_L\": 0.5\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1627\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1627.pdf\",\n       \
+    \ \"source_locator\": \"Page 1 Salt solution subsection: MgSO4 x 7 H2O\",\n  \
+    \      \"exact_source_quote\": \"MgSO4 x 7 H2O 2.50 g\",\n        \"snapshot_sha256\"\
+    : \"a66ff9b53cdb17153690607df82259c94cb19380c777c6e1ec2e7923c35cc529\",\n    \
+    \    \"parsed_text_sha256\": \"bd08f66c214dc20cd621af6fda607fa3799520d531cefafdd6f8c46fd88623f5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1627api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1627\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"MgSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 8,\\n                        \\\"amount\\\": 2.5,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 25,\\n   \
+    \                     \\\"mmol_l\\\": 101.43,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"2ac35d0a239dc21a2e3472f6b85b1191add42b1986f8d5a14f40a584651b78b6\"\
+    \n      }\n    ],\n    \"explanation\": \"This value is the stock strength for\
+    \ 100 ml stock, now flattened into main ingredients. Preserve the original stock\
+    \ mass, separate the 20 ml addition, and avoid reading the undiluted strength\
+    \ as a final-medium quantity.\"\n  },\n  {\n    \"decision\": \"correct\",\n \
+    \   \"local_input\": \"data/normalized_yaml/bacterial/acidibacter_medium.yaml\"\
+    ,\n    \"field_path\": \"ingredients[6].concentration\",\n    \"ingredient\":\
+    \ \"KH2PO4\",\n    \"stored\": {\n      \"value\": \"2.5\",\n      \"unit\": \"\
+    G_PER_L\"\n    },\n    \"proposed\": {\n      \"value\": 2.5,\n      \"unit\"\
+    : \"G_PER_L\",\n      \"scope\": \"salt stock only\",\n      \"provider_volume_ml\"\
+    : 100,\n      \"original_source_amount\": 0.25,\n      \"original_source_unit\"\
+    : \"g\",\n      \"stock_addition_ml_per_source_batch\": 20,\n      \"main_provider_volume_ml\"\
+    : 1000,\n      \"derived_transfer_g_per_provider_L\": 0.05\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1627\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1627.pdf\",\n       \
+    \ \"source_locator\": \"Page 1 Salt solution subsection: KH2PO4\",\n        \"\
+    exact_source_quote\": \"KH2PO4 0.25 g\",\n        \"snapshot_sha256\": \"a66ff9b53cdb17153690607df82259c94cb19380c777c6e1ec2e7923c35cc529\"\
+    ,\n        \"parsed_text_sha256\": \"bd08f66c214dc20cd621af6fda607fa3799520d531cefafdd6f8c46fd88623f5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1627api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1627\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"KH2PO4\\\",\\n                        \\\"compound_id\\\": 11,\\\
+    n                        \\\"amount\\\": 0.25,\\n                        \\\"\
+    unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 2.5,\\n          \
+    \              \\\"mmol_l\\\": 18.3709,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"2ac35d0a239dc21a2e3472f6b85b1191add42b1986f8d5a14f40a584651b78b6\"\
+    \n      }\n    ],\n    \"explanation\": \"This value is the stock strength for\
+    \ 100 ml stock, now flattened into main ingredients. Preserve the original stock\
+    \ mass, separate the 20 ml addition, and avoid reading the undiluted strength\
+    \ as a final-medium quantity.\"\n  },\n  {\n    \"decision\": \"correct\",\n \
+    \   \"local_input\": \"data/normalized_yaml/bacterial/acidibacter_medium.yaml\"\
+    ,\n    \"field_path\": \"ingredients[7].concentration\",\n    \"ingredient\":\
+    \ \"Ca(NO3)2 x 4 H2O\",\n    \"stored\": {\n      \"value\": \"0.7\",\n      \"\
+    unit\": \"G_PER_L\"\n    },\n    \"proposed\": {\n      \"value\": 0.7,\n    \
+    \  \"unit\": \"G_PER_L\",\n      \"scope\": \"salt stock only\",\n      \"provider_volume_ml\"\
+    : 100,\n      \"original_source_amount\": 0.07,\n      \"original_source_unit\"\
+    : \"g\",\n      \"stock_addition_ml_per_source_batch\": 20,\n      \"main_provider_volume_ml\"\
+    : 1000,\n      \"derived_transfer_g_per_provider_L\": 0.013999999999999999\n \
+    \   },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1627\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1627.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 Salt solution subsection: Ca(NO3)2 x 4\
+    \ H2O\",\n        \"exact_source_quote\": \"Ca(NO3)2 x 4 H2O 0.07 g\",\n     \
+    \   \"snapshot_sha256\": \"a66ff9b53cdb17153690607df82259c94cb19380c777c6e1ec2e7923c35cc529\"\
+    ,\n        \"parsed_text_sha256\": \"bd08f66c214dc20cd621af6fda607fa3799520d531cefafdd6f8c46fd88623f5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1627api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1627\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"Ca(NO3)2 x 4 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 213,\\n                        \\\"amount\\\": 0.07,\\n                  \
+    \      \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.7,\\\
+    n                        \\\"mmol_l\\\": 2.96423,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    2ac35d0a239dc21a2e3472f6b85b1191add42b1986f8d5a14f40a584651b78b6\"\n      }\n\
+    \    ],\n    \"explanation\": \"This value is the stock strength for 100 ml stock,\
+    \ now flattened into main ingredients. Preserve the original stock mass, separate\
+    \ the 20 ml addition, and avoid reading the undiluted strength as a final-medium\
+    \ quantity.\"\n  },\n  {\n    \"decision\": \"add\",\n    \"local_input\": \"\
+    target\",\n    \"field_path\": \"preparation_steps\",\n    \"stored\": [\n   \
+    \   {\n        \"step_number\": 1,\n        \"action\": \"ADJUST_PH\",\n     \
+    \   \"description\": \"Adjust the pH to 3.0 with H2SO4 or HCl.\"\n      }\n  \
+    \  ],\n    \"ingredient\": \"Main source water quantity\",\n    \"proposed\":\
+    \ {\n      \"amount\": 1000,\n      \"unit\": \"ml\",\n      \"scope\": \"Exact\
+    \ accession listed main solvent amount\"\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz1688\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main recipe: Distilled water\",\n    \
+    \    \"exact_source_quote\": \"Distilled water add 1000.000 ml\",\n        \"\
+    snapshot_sha256\": \"eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735\"\
+    ,\n        \"parsed_text_sha256\": \"1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1688api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1688\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[8]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 9,\\n                        \\\"\
+    compound\\\": \\\"Distilled water\\\",\\n                        \\\"compound_id\\\
+    \": 4,\\n                        \\\"amount\\\": 1000,\\n                    \
+    \    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53\"\
+    \n      }\n    ],\n    \"explanation\": \"Retain the primary wording and source\
+    \ accession. The provider declares 1000 ml main volume; listed water is not itself\
+    \ a measured final volume.\"\n  },\n  {\n    \"decision\": \"evidence_only\",\n\
+    \    \"local_input\": \"target\",\n    \"field_path\": \"ph_value\",\n    \"stored\"\
+    : 3.0,\n    \"ingredient\": \"Exact source target pH\",\n    \"proposed\": 3.0,\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1688\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 pH preparation sentence\",\n        \"\
+    exact_source_quote\": \"Adjust the pH to 3.0 with H\\n2SO4 or HCl.\",\n      \
+    \  \"snapshot_sha256\": \"eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735\"\
+    ,\n        \"parsed_text_sha256\": \"1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66\"\
+    \n      }\n    ],\n    \"explanation\": \"The existing scalar and preparation\
+    \ match this accession. The distinct pH values are evidence against treating the\
+    \ two formulations as synonyms; attach narrow evidence without harmonizing them.\"\
+    \n  },\n  {\n    \"decision\": \"not_quantified\",\n    \"local_input\": \"target\"\
+    ,\n    \"field_path\": \"preparation_steps[0].description\",\n    \"stored\":\
+    \ \"Adjust the pH to 3.0 with H2SO4 or HCl.\",\n    \"ingredient\": \"pH-adjustment\
+    \ acid amount and strength\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1688\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 accession-specific titration instruction\"\
+    ,\n        \"exact_source_quote\": \"Adjust the pH to 3.0 with H\\n2SO4 or HCl.\"\
+    ,\n        \"snapshot_sha256\": \"eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735\"\
+    ,\n        \"parsed_text_sha256\": \"1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66\"\
+    \n      }\n    ],\n    \"explanation\": \"Source specifies an endpoint and acid\
+    \ identity/alternatives, but no fixed acid amount or strength. Do not infer one\
+    \ or transfer the DSMZ 1627 pre-autoclave sequence to DSMZ 1688.\"\n  },\n  {\n\
+    \    \"decision\": \"add\",\n    \"local_input\": \"data/normalized_yaml/bacterial/actinobacteria_medium.yaml\"\
+    ,\n    \"field_path\": \"preparation_steps\",\n    \"stored\": [\n      {\n  \
+    \      \"step_number\": 1,\n        \"action\": \"ADJUST_PH\",\n        \"description\"\
+    : \"Adjust the pH to 3.0 with H2SO4 or HCl.\"\n      }\n    ],\n    \"ingredient\"\
+    : \"Main source water quantity\",\n    \"proposed\": {\n      \"amount\": 1000,\n\
+    \      \"unit\": \"ml\",\n      \"scope\": \"Exact accession listed main solvent\
+    \ amount\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1688\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main recipe: Distilled water\",\n    \
+    \    \"exact_source_quote\": \"Distilled water add 1000.000 ml\",\n        \"\
+    snapshot_sha256\": \"eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735\"\
+    ,\n        \"parsed_text_sha256\": \"1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1688api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1688\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[8]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 9,\\n                        \\\"\
+    compound\\\": \\\"Distilled water\\\",\\n                        \\\"compound_id\\\
+    \": 4,\\n                        \\\"amount\\\": 1000,\\n                    \
+    \    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0f7867440b3a2d2f9d758d5307cf58ad0f48be17855383a602e5d56a0a03ce53\"\
+    \n      }\n    ],\n    \"explanation\": \"Retain the primary wording and source\
+    \ accession. The provider declares 1000 ml main volume; listed water is not itself\
+    \ a measured final volume.\"\n  },\n  {\n    \"decision\": \"evidence_only\",\n\
+    \    \"local_input\": \"data/normalized_yaml/bacterial/actinobacteria_medium.yaml\"\
+    ,\n    \"field_path\": \"ph_value\",\n    \"stored\": 3.0,\n    \"ingredient\"\
+    : \"Exact source target pH\",\n    \"proposed\": 3.0,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1688\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf\",\n       \
+    \ \"source_locator\": \"Page 1 pH preparation sentence\",\n        \"exact_source_quote\"\
+    : \"Adjust the pH to 3.0 with H\\n2SO4 or HCl.\",\n        \"snapshot_sha256\"\
+    : \"eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735\",\n    \
+    \    \"parsed_text_sha256\": \"1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66\"\
+    \n      }\n    ],\n    \"explanation\": \"The existing scalar and preparation\
+    \ match this accession. The distinct pH values are evidence against treating the\
+    \ two formulations as synonyms; attach narrow evidence without harmonizing them.\"\
+    \n  },\n  {\n    \"decision\": \"not_quantified\",\n    \"local_input\": \"data/normalized_yaml/bacterial/actinobacteria_medium.yaml\"\
+    ,\n    \"field_path\": \"preparation_steps[0].description\",\n    \"stored\":\
+    \ \"Adjust the pH to 3.0 with H2SO4 or HCl.\",\n    \"ingredient\": \"pH-adjustment\
+    \ acid amount and strength\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1688\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1688.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 accession-specific titration instruction\"\
+    ,\n        \"exact_source_quote\": \"Adjust the pH to 3.0 with H\\n2SO4 or HCl.\"\
+    ,\n        \"snapshot_sha256\": \"eeb9ead283a0112534a893a69da2daf1dbecf8aded5392d82da263e0b0c44735\"\
+    ,\n        \"parsed_text_sha256\": \"1d0db938ca84240488a6daf620044a4538706b31f3983123bccf1f602032ce66\"\
+    \n      }\n    ],\n    \"explanation\": \"Source specifies an endpoint and acid\
+    \ identity/alternatives, but no fixed acid amount or strength. Do not infer one\
+    \ or transfer the DSMZ 1627 pre-autoclave sequence to DSMZ 1688.\"\n  },\n  {\n\
+    \    \"decision\": \"add\",\n    \"local_input\": \"data/normalized_yaml/bacterial/acidibacter_medium.yaml\"\
+    ,\n    \"field_path\": \"preparation_steps\",\n    \"stored\": [\n      {\n  \
+    \      \"step_number\": 1,\n        \"action\": \"ADJUST_PH\",\n        \"description\"\
+    : \"Adjust pH to 5.0 with sulfuric acid before autoclaving.\"\n      }\n    ],\n\
+    \    \"ingredient\": \"Main source water quantity\",\n    \"proposed\": {\n  \
+    \    \"amount\": 980,\n      \"unit\": \"ml\",\n      \"scope\": \"Exact accession\
+    \ listed main solvent amount\"\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz1627\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1627.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main recipe: Distilled water\",\n    \
+    \    \"exact_source_quote\": \"Distilled water 980.00 ml\",\n        \"snapshot_sha256\"\
+    : \"a66ff9b53cdb17153690607df82259c94cb19380c777c6e1ec2e7923c35cc529\",\n    \
+    \    \"parsed_text_sha256\": \"bd08f66c214dc20cd621af6fda607fa3799520d531cefafdd6f8c46fd88623f5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1627api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1627\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"Distilled water\\\",\\n                        \\\"compound_id\\\
+    \": 4,\\n                        \\\"amount\\\": 980,\\n                     \
+    \   \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"2ac35d0a239dc21a2e3472f6b85b1191add42b1986f8d5a14f40a584651b78b6\"\
+    \n      }\n    ],\n    \"explanation\": \"Retain the primary wording and source\
+    \ accession. The provider declares 1000 ml main volume; listed water is not itself\
+    \ a measured final volume.\"\n  },\n  {\n    \"decision\": \"evidence_only\",\n\
+    \    \"local_input\": \"data/normalized_yaml/bacterial/acidibacter_medium.yaml\"\
+    ,\n    \"field_path\": \"ph_value\",\n    \"stored\": 5.0,\n    \"ingredient\"\
+    : \"Exact source target pH\",\n    \"proposed\": 5.0,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1627\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1627.pdf\",\n       \
+    \ \"source_locator\": \"Page 1 pH preparation sentence\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 5.0 with sulfuric acid before autoclaving.\",\n        \"snapshot_sha256\"\
+    : \"a66ff9b53cdb17153690607df82259c94cb19380c777c6e1ec2e7923c35cc529\",\n    \
+    \    \"parsed_text_sha256\": \"bd08f66c214dc20cd621af6fda607fa3799520d531cefafdd6f8c46fd88623f5\"\
+    \n      }\n    ],\n    \"explanation\": \"The existing scalar and preparation\
+    \ match this accession. The distinct pH values are evidence against treating the\
+    \ two formulations as synonyms; attach narrow evidence without harmonizing them.\"\
+    \n  },\n  {\n    \"decision\": \"not_quantified\",\n    \"local_input\": \"data/normalized_yaml/bacterial/acidibacter_medium.yaml\"\
+    ,\n    \"field_path\": \"preparation_steps[0].description\",\n    \"stored\":\
+    \ \"Adjust pH to 5.0 with sulfuric acid before autoclaving.\",\n    \"ingredient\"\
+    : \"pH-adjustment acid amount and strength\",\n    \"source_snippets\": [\n  \
+    \    {\n        \"source_key\": \"dsmz1627\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1627.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 accession-specific titration instruction\"\
+    ,\n        \"exact_source_quote\": \"Adjust pH to 5.0 with sulfuric acid before\
+    \ autoclaving.\",\n        \"snapshot_sha256\": \"a66ff9b53cdb17153690607df82259c94cb19380c777c6e1ec2e7923c35cc529\"\
+    ,\n        \"parsed_text_sha256\": \"bd08f66c214dc20cd621af6fda607fa3799520d531cefafdd6f8c46fd88623f5\"\
+    \n      }\n    ],\n    \"explanation\": \"Source specifies an endpoint and acid\
+    \ identity/alternatives, but no fixed acid amount or strength. Do not infer one\
+    \ or transfer the DSMZ 1627 pre-autoclave sequence to DSMZ 1688.\"\n  },\n  {\n\
+    \    \"decision\": \"add\",\n    \"local_input\": \"data/normalized_yaml/bacterial/acidibacter_medium.yaml\"\
+    ,\n    \"field_path\": \"solutions\",\n    \"stored\": null,\n    \"ingredient\"\
+    : \"Salt solution addition\",\n    \"proposed\": {\n      \"amount\": 20,\n  \
+    \    \"unit\": \"ml\",\n      \"basis\": \"DSMZ 1627 listed batch; provider main\
+    \ volume 1000 ml\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1627\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1627.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main recipe: Salt solution\",\n      \
+    \  \"exact_source_quote\": \"Salt solution 20.0 ml\",\n        \"snapshot_sha256\"\
+    : \"a66ff9b53cdb17153690607df82259c94cb19380c777c6e1ec2e7923c35cc529\",\n    \
+    \    \"parsed_text_sha256\": \"bd08f66c214dc20cd621af6fda607fa3799520d531cefafdd6f8c46fd88623f5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1627api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1627\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    solution\\\": \\\"Salt solution\\\",\\n                        \\\"solution_id\\\
+    \": 3379,\\n                        \\\"amount\\\": 20,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"2ac35d0a239dc21a2e3472f6b85b1191add42b1986f8d5a14f40a584651b78b6\"\
+    \n      }\n    ],\n    \"explanation\": \"The ACIDIBACTER owner omits the source\
+    \ stock addition. This stock belongs to DSMZ 1627 only and must not be added to\
+    \ the independently specified DSMZ 1688 main recipe.\"\n  },\n  {\n    \"decision\"\
+    : \"add\",\n    \"local_input\": \"data/normalized_yaml/bacterial/acidibacter_medium.yaml\"\
+    ,\n    \"field_path\": \"solutions\",\n    \"stored\": null,\n    \"ingredient\"\
+    : \"Salt solution water\",\n    \"proposed\": {\n      \"amount\": 100,\n    \
+    \  \"unit\": \"ml\",\n      \"scope\": \"DSMZ 1627 stock preparation only\"\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1627\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1627.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 Salt solution subsection: Distilled water\"\
+    ,\n        \"exact_source_quote\": \"Distilled water 100.00 ml\",\n        \"\
+    snapshot_sha256\": \"a66ff9b53cdb17153690607df82259c94cb19380c777c6e1ec2e7923c35cc529\"\
+    ,\n        \"parsed_text_sha256\": \"bd08f66c214dc20cd621af6fda607fa3799520d531cefafdd6f8c46fd88623f5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1627api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1627\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"Distilled water\\\",\\n                        \\\"compound_id\\\
+    \": 4,\\n                        \\\"amount\\\": 100,\\n                     \
+    \   \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"2ac35d0a239dc21a2e3472f6b85b1191add42b1986f8d5a14f40a584651b78b6\"\
+    \n      }\n    ],\n    \"explanation\": \"The provider explicitly declares a 100\
+    \ ml stock volume. This water is not another 100 ml added to the receiving medium.\"\
+    \n  }\n]"
+- assessment_id: grounding
+  area: grounding
+  topic: Identifier metadata, exact secondary keys and supplied-form scope
+  outcome: concern
+  summary: 7 distinct primary/current-secondary identifiers resolve. 0 label instances
+    differ from current canonical labels; 0 asserted current secondary keys lack an
+    exact pinned index row. Legacy numeric links are assessed separately and are not
+    established by CHEBI correspondence. Target linkage is 7/8 primary and 7/8 secondary
+    ingredient instances; this measures presence, not source validity.
+  target_ids:
+  - CultureMech:001170
+  evidence_ids:
+  - record
+  - mim
+  - chebi17234
+  - chebi31795
+  - chebi32149
+  - chebi32588
+  - chebi62946
+  - chebi63036
+  - chebi86159
+  details: '{"label_drift": [], "missing_secondary_keys": [], "legacy_instances":
+    [], "coverage_scale": "0–100 percent; each ingredient instance counted once",
+    "denominator": 8, "primary_percent": 87.5, "secondary_percent": 87.5}'
+- assessment_id: chemical-forms
+  area: grounding
+  topic: All asserted supplied forms
+  outcome: supported
+  summary: All seven distinct asserted CHEBI identities and their current secondary
+    keys resolve. Explicit magnesium heptahydrate and calcium nitrate tetrahydrate
+    match source forms. The source says glucose without stereochemistry; the generic
+    glucose term does not impose an unverified D-specific form. Yeast extract remains
+    an unmapped complex mixture rather than an invented pure chemical.
+  target_ids:
+  - CultureMech:001170
+  evidence_ids:
+  - record
+  - dsmz1688
+  - dsmz1627
+  - mim
+  - chebi17234
+  - chebi31795
+  - chebi32149
+  - chebi32588
+  - chebi62946
+  - chebi63036
+  - chebi86159
+- assessment_id: preparation
+  area: completeness
+  topic: Source-specific preparation, classifications and evidence placement
+  outcome: concern
+  summary: Each local pH value and corresponding preparation instruction is retained
+    for its own source identity, but the target mixes DSMZ 1688 pH with DSMZ 1627-derived
+    quantities. Source water and the DSMZ 1627 stock addition are missing. Liquid/complex/semi-defined
+    classifications are consistent with yeast extract and mineral salts; there are
+    no asserted organism/strain growth claims. The exact primary sources do not give
+    sterilization time/temperature, so none is inferred.
+  target_ids:
+  - CultureMech:001170
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz1688
+  - dsmz1627
+  - quantity-inventory
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 21 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:001170
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+  - owner-1
+findings:
+- finding_id: f1
+  issue_key: CM001170-distinct-formulations-merged
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: DSMZ 1688 and 1627 are represented as formulation synonyms
+  description: The target declares ACTINOBACTERIA/1688 and pH 3.0 but carries ACIDIBACTER/1627
+    yeast extract and six undiluted salt-stock strengths. Exact sources differ in
+    pH, yeast amount, sodium sulfate and calcium nitrate contribution even after stock
+    dilution. The eight current DSMZ 1688 owner quantities are independently supported;
+    copying the merged ingredient set is not valid recipe equivalence.
+  target_ids:
+  - CultureMech:001170
+  field_paths:
+  - synonyms
+  - merged_from
+  - ingredients
+  - ph_value
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz1688
+  - dsmz1627
+  - mediadive1688api
+  - mediadive1627api
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/actinobacteria_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acidibacter_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: CM001170-acidibacter-stock-scope
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: The ACIDIBACTER contributor still flattens a 20 ml salt stock
+  description: Six owner values are strengths of a 100 ml stock, not final-medium
+    concentrations. The exact source supplies a 20 ml stock addition to 980 ml water;
+    that structure is absent. On provider bases, stock strength times 0.020 L gives
+    transferred mass per provider litre, including sodium sulfate 0.07 g and calcium
+    nitrate tetrahydrate 0.014 g.
+  target_ids:
+  - CultureMech:001170
+  field_paths:
+  - ingredients[2:8].concentration
+  - solutions
+  evidence_ids:
+  - owner-1
+  - dsmz1627
+  - mediadive1627api
+  - solution3379
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/actinobacteria_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acidibacter_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: CM001170-generated-evidence-loss
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generated output omits eight verified owner amount claims
+  description: The current DSMZ 1688 owner has eight literal, hash-matching amount
+    evidence objects and its source reference. The target omits them, retains seven
+    differing amounts, and has no claim-level amount evidence. Correct but unevidenced
+    DSMZ 1627 main quantities and all source-only preparation quantities remain separately
+    inventoried.
+  target_ids:
+  - CultureMech:001170
+  field_paths:
+  - ingredients[*].evidence
+  - references
+  - preparation_steps
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - existing-owner-evidence
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/actinobacteria_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acidibacter_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Retain the permanent owner identities and separate the two source formulations
+    in generated output; preserve the already correct DSMZ 1688 owner quantities and
+    evidence.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:001170
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/actinobacteria_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acidibacter_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Restore the exact salt stock, its 100 ml basis and 20 ml addition only
+    in the ACIDIBACTER maintained owner; do not transplant that stock into DSMZ 1688.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:001170
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/actinobacteria_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acidibacter_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Preserve the verified eight owner claims during source-separated regeneration;
+    add exact evidence and missing solvent/preparation context only where needed.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:001170
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/actinobacteria_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acidibacter_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- All concentration arithmetic is explicitly tied to provider-declared volumes; water
+  rows do not establish independently measured final volumes. No experimental growth
+  equivalence or taxon-wide applicability is inferred from recipe labels. Existing
+  October owner evidence is verified in its own layer, not inherited by the target.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-019
+- generated-medium
+```
