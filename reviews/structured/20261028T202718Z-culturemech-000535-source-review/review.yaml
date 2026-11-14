@@ -1,0 +1,1807 @@
+schema_version: 1.0.0
+review_id: 20261028T202718Z-culturemech-000535-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Scientific review: DESULFONATRONUM ZHILINAE MEDIUM'
+started_at: '2026-10-28T20:15:25.655273Z'
+finished_at: '2026-10-28T20:27:18.861266Z'
+reviewer:
+  identity: Codex tsb_source_check
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Read-only independent review of maintained source records, fresh
+    sources and original diagnostics.
+skill: review-yaml-record
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The exact primary supports the nine main-medium rates and retained preparation,
+  but generated flattening, partial owner stocks, incompatible receiving-dose denominators
+  and an unscoped stock pH require curation. Nickel hydrate mapping is contradicted;
+  generic pantothenate stereochemistry remains unresolved. All current quantities
+  and unchanged fields are explicitly assessed.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: c0ef0808662f57dc2f57ce9b405485830503653aceee1451c9e1dae42f9e7021
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/culturemech_id_registry.tsv
+    sha256: 0d059720f5c474b63daff8d5010fc56942a5a3ac30761ee75ce9e84801d555a5
+    role: context
+  - path: data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml
+    sha256: 498702ca61ce2457eb3072f0ab10bd967502e777ce877ad8f4ed3ea1feb7f190
+    role: target
+  - path: data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml
+    sha256: e5ba4ff80c5f131fd04171bb9ee7ba3f7f760501f5be370deea3547d37737668
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/plan.json
+    sha256: 94e89303f14558d9b0d485aa6cb4eb646050837864ab920d759763a3a483b94f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/desulfonatronum_zhilinae_medium.yaml.md
+    sha256: 2321edb1fdd9157c9aa147cb4e97f55b721ce270e75c1346630bd9cd2492f129
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.md
+    sha256: 61bf3d553e9718e06f28ef9cbd6d945a8112dc4bcdc99dda1a057dafd7cfed87
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.md
+    sha256: d11032052433471bb850525610a6924b5f6d0c6ea52b912c75ef4d90e6e41f7c
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_cocktail_nesting.py
+    sha256: a1914a040ca02c86633aae11ed8a52a0ea91ba157a8240da2232c4ae652d61ab
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/assign_culturemech_ids.py
+    sha256: 81ed213c52804ae98a8add02730d757595e3287fa7b01bc88aee0e587bbb01e1
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/enrich_with_chebi.py
+    sha256: f18dd6e4317de76cb7379f6c9c6227f9af884c27a0761d7f64143aaf74d8e1dc
+    role: context
+  - path: scripts/enrich_with_mediaingredientmech.py
+    sha256: 6357c9d621c3d6e32b28b2982afedfaed384830cea1602a775b0a5f0852c015e
+    role: context
+  - path: scripts/fetch_komodo_base_volumes.py
+    sha256: 9dad49c380422b2e7d3f40b4ff713d59360d22f6eec9b55068e050099cb9cffa
+    role: context
+  - path: scripts/import_from_culturebotht.py
+    sha256: d835addf5fff423a9b0b1231848ed3103c5b2d97015c1c294365970d15be0fe1
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_mgso4_heptahydrate_term.py
+    sha256: 6acb9d5164ad381c288f031fb34045036e3fd2283e559f1ad8ccd1a4687fb4ce
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/propose_media_variant_links.py
+    sha256: bd5b0b86c9457e42ca52ba2b253e5842c7f414093ba15aaeb4f9f0d682b5f4c2
+    role: context
+  - path: scripts/record_io.py
+    sha256: bff4715f85d7ff2ff681b88f0a2de2667e5767d7a2c196bd50a37d5d329957ac
+    role: context
+  - path: scripts/refill_term_labels.py
+    sha256: 8eee4532e4a71d120532db511733bde974ab1b179e50cb1ea51d66c3870f3cb9
+    role: context
+  - path: scripts/remove_invalid_chebi_ids.py
+    sha256: a6c2f7577812081230fd5fe008182c09eace4ef7818857f8026ec8d5e0b760e0
+    role: context
+  - path: scripts/repair_jcm_stock_preparations.py
+    sha256: 7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/resolve_komodo_compositions.py
+    sha256: f45bc52a8efaa66c9a93c109a40c7d2763ac9f49c9009d92a4c0a0a41b7c28da
+    role: context
+  - path: scripts/review_komodo_concentration_evidence.py
+    sha256: 4470019965d068a53587be3668c3872daedc1505dab1bc6e2d1ed937ba409658
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadb_importer.py
+    sha256: 5c2d98caf450ee8bb2f73f112e4edab7c3e0f2fa5f2aa7bd2a34e6fd2fdfd4d0
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: Whole exact target/owner with explicit scoped dependencies, current
+    sources and historical claims.
+  selection: Authoritative batch077 index 07
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:000535
+targets:
+- target_id: CultureMech:000535
+  path: data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml
+  label: desulfonatronum_zhilinae_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml
+    role: maintained source
+  ownership_note: Exact declared maintained contributors resolved against stable identity;
+    stocks and other source variants remain scoped comparisons.
+checks:
+- check_id: schema
+  name: Canonical schema
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:000535
+  command: just validate-schema data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-schema
+- check_id: strict
+  name: Canonical strict
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:000535
+  command: just validate-strict data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml
+    --out REVIEW_WORK/batch077/record07/strict.tsv
+    --workers 1 --quiet
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-strict
+- check_id: terms
+  name: Canonical terms
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:000535
+  command: just validate-terms data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-terms
+- check_id: references
+  name: Canonical references
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:000535
+  command: just validate-references data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-references
+evidence:
+- evidence_id: dsm1101a
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf
+  accessed_at: '2026-10-28T20:15:18.513013Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/dsm1101a.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact primary 1101a; source identity screened first; embedded stock sections
+    and conditional variants retain distinct scopes.
+  snapshot_sha256: 6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4
+- evidence_id: api1101a
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1101a
+  accessed_at: '2026-10-28T20:15:18.172123Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/api1101a.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current provider 1101a; explicit stage-specific rates do not establish
+    received final-medium amounts.
+  snapshot_sha256: d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5
+- evidence_id: chebi53542
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53542
+  accessed_at: '2026-10-28T20:15:23.948263Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi53542.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 423c21fd3715257bbccc1ad83ef3b8e438ffe20f02418e2b202886237c4ea112
+- evidence_id: target
+  kind: record_content
+  reference: data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T20:21:07.099226Z'
+  support: context_only
+  summary: Complete generated target.
+  snapshot_sha256: 498702ca61ce2457eb3072f0ab10bd967502e777ce877ad8f4ed3ea1feb7f190
+- evidence_id: owner
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T20:21:07.099394Z'
+  support: context_only
+  summary: Complete exact maintained owner.
+  snapshot_sha256: e5ba4ff80c5f131fd04171bb9ee7ba3f7f760501f5be370deea3547d37737668
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Complete file
+  accessed_at: '2026-10-28T20:21:07.099421Z'
+  support: context_only
+  summary: Exact packaged current identifier/ontology_id and preferred-term rows.
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: mim-meta
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+  locator: Complete file
+  accessed_at: '2026-10-28T20:21:07.099753Z'
+  support: context_only
+  summary: Exact packaged snapshot version and checksum.
+  snapshot_sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+- evidence_id: writer-formulation
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Full formulation comparison
+  accessed_at: '2026-10-28T20:21:07.099776Z'
+  support: context_only
+  summary: Current scientific-field equality includes quantities, stocks and notes;
+    no chemical equivalence is inferred.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-merger
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: RecipeMerger.merge_group
+  accessed_at: '2026-10-28T20:21:07.099797Z'
+  support: context_only
+  summary: Current merge_group copies singletons and rejects incompatible multiple
+    formulations. Generated staleness is not evidence that current code permits ingredient-only
+    merging.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: report-17
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/plan.json
+  locator: Exact selected row locators in historical-selected-parent-rows.json
+  accessed_at: '2026-10-28T20:21:07.099822Z'
+  support: context_only
+  summary: Historical repository parent; only exact selected record objects are joined.
+    Decoded data is not itself original external raw evidence.
+  snapshot_sha256: 94e89303f14558d9b0d485aa6cb4eb646050837864ab920d759763a3a483b94f
+- evidence_id: report-18
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/desulfonatronum_zhilinae_medium.yaml.md
+  locator: Complete report
+  accessed_at: '2026-10-28T20:21:07.105714Z'
+  support: context_only
+  summary: Historical report; exact headers are retained in the reading sidecar and
+    neighboring-record mentions remain comparison-only. Old source/check claims are
+    not newly executed.
+  snapshot_sha256: 2321edb1fdd9157c9aa147cb4e97f55b721ce270e75c1346630bd9cd2492f129
+- evidence_id: report-19
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.md
+  locator: Complete report
+  accessed_at: '2026-10-28T20:21:07.105775Z'
+  support: context_only
+  summary: Historical report; exact headers are retained in the reading sidecar and
+    neighboring-record mentions remain comparison-only. Old source/check claims are
+    not newly executed.
+  snapshot_sha256: 61bf3d553e9718e06f28ef9cbd6d945a8112dc4bcdc99dda1a057dafd7cfed87
+- evidence_id: report-20
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.md
+  locator: Complete report
+  accessed_at: '2026-10-28T20:21:07.105806Z'
+  support: context_only
+  summary: Historical report; exact headers are retained in the reading sidecar and
+    neighboring-record mentions remain comparison-only. Old source/check claims are
+    not newly executed.
+  snapshot_sha256: d11032052433471bb850525610a6924b5f6d0c6ea52b912c75ef4d90e6e41f7c
+- evidence_id: writer-nesting
+  kind: record_content
+  reference: scripts/apply_cocktail_nesting.py
+  locator: plan_record, match_stock_signature, apply_plan
+  accessed_at: '2026-10-28T20:21:07.111958Z'
+  support: context_only
+  summary: Current plan_record skips records with any existing solutions. apply_plan
+    retains partial matched components and can write source ml additions as ML_PER_L
+    without reconciling receiving final volume; exact current behavior is not proof
+    of historical execution.
+  snapshot_sha256: a1914a040ca02c86633aae11ed8a52a0ea91ba157a8240da2232c4ae652d61ab
+- evidence_id: historical-reading
+  kind: record_content
+  reference: REVIEW_WORK/batch077/record07/historical-reading.json
+  accessed_at: '2026-10-28T20:21:07.113674Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Lossless exact report cells and independently joined current decoded source
+    objects.
+  snapshot_sha256: 52eb3881778f9c88e12220c0a538f8ac46eecdb80a6cdd3a52b3ba5d270a57d8
+- evidence_id: historical-selected-parent-rows
+  kind: record_content
+  reference: REVIEW_WORK/batch077/record07/historical-selected-parent-rows.json
+  accessed_at: '2026-10-28T20:21:07.113718Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Exact selected historical parent objects; parent provenance only, not automatic
+    original source authentication.
+  snapshot_sha256: dead6c5a619108b6cf9bfe38672946a6afe08695cdb674aca276d384e9404852
+- evidence_id: complete-document-reader
+  kind: record_content
+  reference: REVIEW_WORK/batch077/record07/complete-document-reader.json
+  accessed_at: '2026-10-28T20:21:07.113923Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Complete exact target and owner parsed documents with lossless long-string
+    pooling.
+  snapshot_sha256: 6463ffd965add1b58c06ec038bdfc7d559eaf4c45bb9f57e3ca72ccbbd38eb3f
+- evidence_id: writer-mediadive
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition, _is_api_stock_addition, _api_stock_name, _parse_api_solutions,
+    _normalize_unit, _classify_preparation_action
+  accessed_at: '2026-10-28T20:21:07.113956Z'
+  support: context_only
+  summary: Current parser excludes percent-stock additions from primary ingredients,
+    preserves referenced stock amounts/attributes separately and prioritizes explicit
+    provider g_l. It skips source water; bare units alone do not establish a final-volume
+    basis. Current code is not historical execution proof.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-matcher
+  kind: record_content
+  reference: src/culturemech/merge/matcher.py
+  locator: group_formulations
+  accessed_at: '2026-10-28T20:21:07.113990Z'
+  support: context_only
+  summary: Current group_formulations uses conservative FormulationFingerprinter;
+    ingredient similarity is only candidate discovery.
+  snapshot_sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+- evidence_id: historical-object-joins
+  kind: prior_review
+  reference: REVIEW_WORK/batch077/record07/historical-current-object-joins.json
+  accessed_at: '2026-10-28T20:21:07.114017Z'
+  locator: Complete exact decoded-object comparisons
+  support: context_only
+  summary: Historical object correspondence is distinct from raw-response authentication.
+  snapshot_sha256: efe33cff0dd4a7226e98ce338a016765e5d596e193f011b26519dda58c961c43
+- evidence_id: chebi26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  accessed_at: '2026-10-28T20:15:21.951307Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi26710.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi131527
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  accessed_at: '2026-10-28T20:15:20.731920Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi131527.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi32149
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32149
+  accessed_at: '2026-10-28T20:15:23.142587Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi32149.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 49c4b3ee63a59ea3acba0006afd53c6050dd13cd2210a15e3395b100bc6749b8
+- evidence_id: chebi32139
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139
+  accessed_at: '2026-10-28T20:15:22.673130Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi32139.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 2a41873aa455dc8563a47d36add836fffb6fb758ce7a2d1c28295e77646315fe
+- evidence_id: chebi29377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377
+  accessed_at: '2026-10-28T20:15:22.051139Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi29377.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 21ae6468f9d087fd7930a263fc44728e31a8babde3576135686278a13bc1d6e1
+- evidence_id: chebi86345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  accessed_at: '2026-10-28T20:15:25.149053Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi86345.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: chebi232798
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_232798
+  accessed_at: '2026-10-28T20:15:21.440007Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi232798.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 9babe942a39eb91a513ec202dbae4289fda9f5586836aaee58192b4795ce7344
+- evidence_id: chebi76209
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209
+  accessed_at: '2026-10-28T20:15:24.966183Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi76209.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: f74d2c85574a4e28bdf71a78e4263f7e4c211036cd6d63b1f8282aca1d255e5c
+- evidence_id: chebi4735
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_4735
+  accessed_at: '2026-10-28T20:15:23.768570Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi4735.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: ef8713e257a5e52aa813d8a43a26ed321ff04a475591ff238c00a47758f96717
+- evidence_id: chebi75836
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  accessed_at: '2026-10-28T20:15:24.559467Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi75836.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: chebi32312
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  accessed_at: '2026-10-28T20:15:23.230514Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi32312.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: chebi86368
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  accessed_at: '2026-10-28T20:15:25.592115Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi86368.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: chebi33118
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  accessed_at: '2026-10-28T20:15:23.259312Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi33118.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi53503
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503
+  accessed_at: '2026-10-28T20:15:23.887095Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi53503.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: c33e304a0a565068c592ba0970e501052981599ef69cd2cb901e88f27931389d
+- evidence_id: chebi86318
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318
+  accessed_at: '2026-10-28T20:15:25.114132Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi86318.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 9bbecfe37d67d923ee070067aebdf1abf21048cdb2cbdff9de0e3d21f68ea1ae
+- evidence_id: chebi34887
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  accessed_at: '2026-10-28T20:15:23.354506Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi34887.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: chebi75213
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  accessed_at: '2026-10-28T20:15:24.516192Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi75213.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi32145
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32145
+  accessed_at: '2026-10-28T20:15:22.662179Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi32145.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: db4eb7586e3b04f5b2ae39b47bae7c1c533316f9bce15ee2829bf6967ca352f1
+- evidence_id: chebi131361
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361
+  accessed_at: '2026-10-28T20:15:20.674537Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi131361.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 643fefa89a2c0afeb2a00a0dd6149dbbf86cc4824369c58bde1c6ea6d4316d10
+- evidence_id: chebi63939
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939
+  accessed_at: '2026-10-28T20:15:24.491660Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi63939.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 987144fa0342502834f116860a4b4f71696f62c18e7b701301667c15e588562a
+- evidence_id: chebi176843
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843
+  accessed_at: '2026-10-28T20:15:21.310428Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi176843.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: b535c3de88f47e93aed8909c58ff4e2d054a6845dea3bc9a048c18df12b371a9
+- evidence_id: chebi30753
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753
+  accessed_at: '2026-10-28T20:15:22.072398Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi30753.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 97ea54b8020d3bcda2478182be115d2bc632249ee22b197b0575a4a9fd5fe21a
+- evidence_id: chebi15956
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956
+  accessed_at: '2026-10-28T20:15:20.802391Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi15956.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: d2d51887df4de92642b66e9d15086ef82eccbc476dd4077d514ca709181ab4bd
+- evidence_id: chebi15940
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940
+  accessed_at: '2026-10-28T20:15:20.855753Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi15940.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 3330ed782e73526a087fb250ed5895ff232f117a896d45d541dff431e5c1f0e1
+- evidence_id: chebi31345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345
+  accessed_at: '2026-10-28T20:15:22.756511Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi31345.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 56fc4b33c78d82faf317e131ae936f2e00eab0c369b2a9d8be86eddff6fd616d
+- evidence_id: chebi30961
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961
+  accessed_at: '2026-10-28T20:15:22.074441Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi30961.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: f1c95b83f5396067c3959c20ee4715c78f7895f5084dd214b3a4bf01e064f21d
+- evidence_id: chebi132751
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_132751
+  accessed_at: '2026-10-28T20:15:20.735998Z'
+  locator: REVIEW_WORK/batch077/source07-08-10/chebi132751.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 509a9cc0fafffbbccf4801dc30121b1cf3d5d176746d0003356be395faf625e9
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch077/record07/quantity-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T20:21:07.212537Z'
+  support: supports
+  summary: Complete source-stage quantity decisions.
+  snapshot_sha256: ef45176706e8c686f3b9fdbd8e16538a0318341eca818fc63f96c87b29a25abd
+- evidence_id: groundings
+  kind: record_content
+  reference: REVIEW_WORK/batch077/record07/grounding-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T20:21:07.212609Z'
+  support: supports
+  summary: Exact slots, raw OLS scientific objects and current MIM rows.
+  snapshot_sha256: 186aa13788542f6eb373b640852891239a2a794e0717499b36d7b7ca927cbddc
+- evidence_id: census
+  kind: record_content
+  reference: REVIEW_WORK/batch077/record07/field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T20:21:07.212725Z'
+  support: supports
+  summary: Complete scalar census with explicit dependency exclusions.
+  snapshot_sha256: bbaf5125c5ec025c6338e51cd5624e2f054db643c17613d76b73e169e8d24e26
+- evidence_id: numeric-census
+  kind: record_content
+  reference: REVIEW_WORK/batch077/record07/numeric-field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T20:21:07.212777Z'
+  support: supports
+  summary: Numeric/text assertions and quantity joins.
+  snapshot_sha256: 8a692f93aaeea87a33f3ccfe15569fd9bcd366fcab645bc12da1f61b1a1fae1d
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch077/record07/history-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T20:21:07.212824Z'
+  support: supports
+  summary: Current exact histories, without replay.
+  snapshot_sha256: 1c7581c89e27d1639712bec77286abba480b56eeacd3b495dfb917b0d5e99152
+- evidence_id: old-reports
+  kind: record_content
+  reference: REVIEW_WORK/batch077/record07/history-report-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T20:21:07.212844Z'
+  support: supports
+  summary: Exact historical report scopes.
+  snapshot_sha256: f3533c070da1d95b361dc38995b4efdaedd4636cd5bb75fdcf4e3775495ec364
+- evidence_id: old-claims
+  kind: record_content
+  reference: REVIEW_WORK/batch077/record07/existing-claim-authentication.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T20:21:07.212863Z'
+  support: context_only
+  summary: No attached claims in this scoped sidecar; historical object joins are
+    separate evidence.
+  snapshot_sha256: 37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570
+- evidence_id: check-schema
+  kind: validation
+  reference: REVIEW_WORK/batch077/record07/schema-result.json
+  accessed_at: '2026-10-28T20:15:26.705463Z'
+  support: supports
+  summary: Original once-only canonical schema with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: 397a4f0c8f174664bfa24fb1828c577471cbc134c6d40dd83b3f575c7472649e
+- evidence_id: check-strict
+  kind: validation
+  reference: REVIEW_WORK/batch077/record07/strict-result.json
+  accessed_at: '2026-10-28T20:15:27.646609Z'
+  support: supports
+  summary: Original once-only canonical strict with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: d1363552afd2d6035476ebf7b258b2a290dc4c3822521beaae53c3faf0609e11
+- evidence_id: check-terms
+  kind: validation
+  reference: REVIEW_WORK/batch077/record07/terms-result.json
+  accessed_at: '2026-10-28T20:15:28.667911Z'
+  support: supports
+  summary: Original once-only canonical terms with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: 3d0f19a51dfc81838a2f87fb204cd2208f16cebe93d9bb83fa9efaf7b7ba0f93
+- evidence_id: check-references
+  kind: validation
+  reference: REVIEW_WORK/batch077/record07/references-result.json
+  accessed_at: '2026-10-28T20:15:29.406923Z'
+  support: supports
+  summary: Original once-only canonical references with complete argv/time/streams;
+    reference count zero does not verify sources.
+  snapshot_sha256: 690de36a93eec4272ea9cb58156e8358660e1005e78700c0348549be1de9814e
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Exact DSM1101a identity
+  outcome: supported
+  summary: The whole selected target and its single maintained owner name DSM1101a;
+    the fresh primary and provider have the exact matching identity. No sibling medium
+    or organism growth claim is substituted.
+  target_ids:
+  - CultureMech:000535
+  evidence_ids:
+  - target
+  - owner
+  - dsm1101a
+  - api1101a
+- assessment_id: classification
+  area: consistency
+  topic: Category and physical/composition classification
+  outcome: supported
+  summary: Bacterial, liquid, complex/semi-defined classification is consistent with
+    the source recipe containing yeast extract. The alkaline final pH range is supported.
+  target_ids:
+  - CultureMech:000535
+  evidence_ids:
+  - target
+  - owner
+  - dsm1101a
+  - api1101a
+- assessment_id: schema
+  area: schema
+  topic: Original native shape and reference diagnostics
+  outcome: supported
+  summary: All four original checks exited zero. The reference validator checked zero
+    references; these diagnostics do not authenticate source identity or stock topology.
+  target_ids:
+  - CultureMech:000535
+  evidence_ids:
+  - check-schema
+  - check-strict
+  - check-terms
+  - check-references
+- assessment_id: quantities
+  area: quantity
+  topic: Complete amounts, units and preparation stages
+  outcome: concern
+  summary: 58 current concentration fields are covered by 40 decisions, including
+    unchanged support and explicit source-only conditions.
+  target_ids:
+  - CultureMech:000535
+  evidence_ids:
+  - quantities
+  - numeric-census
+  details: '{"schema":"fresh-b077-quantity-inventory-v1","target":"data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml","quantity_field_count":58,"decisions":[{"quantity_id":"q1","label":"NaCl","local_fields":[{"path":"data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml","field_path":"ingredients[0].concentration","stored":{"value":"24.9252","unit":"G_PER_L"},"decision":"evidence_only"},{"path":"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"24.9252","unit":"G_PER_L"},"decision":"evidence_only"}],"decision":"evidence_only","rationale":"The
+    exact primary states final volume 1003 ml. Its batch mass and explicit provider
+    main-solution g_l support the rounded stored rate. No attached local source claim
+    exists; this is new evidence support, not verification of an existing citation.","source_stage":"Complete
+    medium, explicit final volume 1003 ml","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 7-7","quote":"NaCl                                                  25.00        g","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 4-4","quote":"Final volume: 1003 ml","quote_basis":"derivative text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[0].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\":
+    43,\n                        \"amount\": 25,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 24.9252,\n                        \"mmol_l\":
+    426.51,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q2","label":"K2HPO4","local_fields":[{"path":"data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml","field_path":"ingredients[1].concentration","stored":{"value":"0.498504","unit":"G_PER_L"},"decision":"evidence_only"},{"path":"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml","field_path":"ingredients[1].concentration","stored":{"value":"0.498504","unit":"G_PER_L"},"decision":"evidence_only"}],"decision":"evidence_only","rationale":"The
+    exact primary states final volume 1003 ml. Its batch mass and explicit provider
+    main-solution g_l support the rounded stored rate. No attached local source claim
+    exists; this is new evidence support, not verification of an existing citation.","source_stage":"Complete
+    medium, explicit final volume 1003 ml","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 8-8","quote":"K2HPO4                                                 0.50        g","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 4-4","quote":"Final volume: 1003 ml","quote_basis":"derivative text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[0].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\":
+    10,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.498504,\n                        \"mmol_l\":
+    2.86207,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q3","label":"Yeast extract","local_fields":[{"path":"data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml","field_path":"ingredients[2].concentration","stored":{"value":"0.199402","unit":"G_PER_L"},"decision":"evidence_only"},{"path":"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml","field_path":"ingredients[2].concentration","stored":{"value":"0.199402","unit":"G_PER_L"},"decision":"evidence_only"}],"decision":"evidence_only","rationale":"The
+    exact primary states final volume 1003 ml. Its batch mass and explicit provider
+    main-solution g_l support the rounded stored rate. No attached local source claim
+    exists; this is new evidence support, not verification of an existing citation.","source_stage":"Complete
+    medium, explicit final volume 1003 ml","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 9-9","quote":"Yeast extract                                          0.20        g","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 4-4","quote":"Final volume: 1003 ml","quote_basis":"derivative text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[0].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\":
+    16,\n                        \"amount\": 0.2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.199402,\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q4","label":"Na2SO4","local_fields":[{"path":"data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml","field_path":"ingredients[3].concentration","stored":{"value":"2.99103","unit":"G_PER_L"},"decision":"evidence_only"},{"path":"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml","field_path":"ingredients[3].concentration","stored":{"value":"2.99103","unit":"G_PER_L"},"decision":"evidence_only"}],"decision":"evidence_only","rationale":"The
+    exact primary states final volume 1003 ml. Its batch mass and explicit provider
+    main-solution g_l support the rounded stored rate. No attached local source claim
+    exists; this is new evidence support, not verification of an existing citation.","source_stage":"Complete
+    medium, explicit final volume 1003 ml","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 10-10","quote":"Na2SO4                                                 3.00        g","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 4-4","quote":"Final volume: 1003 ml","quote_basis":"derivative text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[0].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Na2SO4\",\n                        \"compound_id\":
+    110,\n                        \"amount\": 3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2.99103,\n                        \"mmol_l\":
+    21.0576,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q5","label":"NaHCO3","local_fields":[{"path":"data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml","field_path":"ingredients[4].concentration","stored":{"value":"1.84447","unit":"G_PER_L"},"decision":"evidence_only"},{"path":"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml","field_path":"ingredients[4].concentration","stored":{"value":"1.84447","unit":"G_PER_L"},"decision":"evidence_only"}],"decision":"evidence_only","rationale":"The
+    exact primary states final volume 1003 ml. Its batch mass and explicit provider
+    main-solution g_l support the rounded stored rate. No attached local source claim
+    exists; this is new evidence support, not verification of an existing citation.","source_stage":"Complete
+    medium, explicit final volume 1003 ml","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 11-11","quote":"NaHCO3                                                 1.85        g","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 4-4","quote":"Final volume: 1003 ml","quote_basis":"derivative text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[0].recipe[4]","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"NaHCO3\",\n                        \"compound_id\":
+    55,\n                        \"amount\": 1.85,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.84447,\n                        \"mmol_l\":
+    21.9561,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q6","label":"Na2CO3","local_fields":[{"path":"data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml","field_path":"ingredients[5].concentration","stored":{"value":"1.19641","unit":"G_PER_L"},"decision":"evidence_only"},{"path":"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml","field_path":"ingredients[5].concentration","stored":{"value":"1.19641","unit":"G_PER_L"},"decision":"evidence_only"}],"decision":"evidence_only","rationale":"The
+    exact primary states final volume 1003 ml. Its batch mass and explicit provider
+    main-solution g_l support the rounded stored rate. No attached local source claim
+    exists; this is new evidence support, not verification of an existing citation.","source_stage":"Complete
+    medium, explicit final volume 1003 ml","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 12-12","quote":"Na2CO3                                                 1.20        g","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 4-4","quote":"Final volume: 1003 ml","quote_basis":"derivative text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[0].recipe[5]","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\":
+    32,\n                        \"amount\": 1.2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.19641,\n                        \"mmol_l\":
+    11.2882,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q7","label":"MgCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.0997009","unit":"G_PER_L"},"decision":"evidence_only"},{"path":"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.0997009","unit":"G_PER_L"},"decision":"evidence_only"}],"decision":"evidence_only","rationale":"The
+    exact primary states final volume 1003 ml. Its batch mass and explicit provider
+    main-solution g_l support the rounded stored rate. No attached local source claim
+    exists; this is new evidence support, not verification of an existing citation.","source_stage":"Complete
+    medium, explicit final volume 1003 ml","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 13-13","quote":"MgCl2 x 6 H2O                                          0.10        g","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 4-4","quote":"Final volume: 1003 ml","quote_basis":"derivative text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[0].recipe[6]","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\":
+    79,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.0997009,\n                        \"mmol_l\":
+    0.490405,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q8","label":"Na-L-lactate","local_fields":[{"path":"data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml","field_path":"ingredients[7].concentration","stored":{"value":"2.19342","unit":"G_PER_L"},"decision":"evidence_only"},{"path":"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"2.19342","unit":"G_PER_L"},"decision":"evidence_only"}],"decision":"evidence_only","rationale":"The
+    exact primary states final volume 1003 ml. Its batch mass and explicit provider
+    main-solution g_l support the rounded stored rate. No attached local source claim
+    exists; this is new evidence support, not verification of an existing citation.","source_stage":"Complete
+    medium, explicit final volume 1003 ml","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 16-16","quote":"Na-L-lactate                                           2.20        g","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 4-4","quote":"Final volume: 1003 ml","quote_basis":"derivative text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[0].recipe[9]","quote":"{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Na-L-lactate\",\n                        \"compound_id\":
+    265,\n                        \"amount\": 2.2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2.19342,\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q9","label":"Na2S
+    x 9 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.498504","unit":"G_PER_L"},"decision":"evidence_only"},{"path":"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.498504","unit":"G_PER_L"},"decision":"evidence_only"}],"decision":"evidence_only","rationale":"The
+    exact primary states final volume 1003 ml. Its batch mass and explicit provider
+    main-solution g_l support the rounded stored rate. No attached local source claim
+    exists; this is new evidence support, not verification of an existing citation.","source_stage":"Complete
+    medium, explicit final volume 1003 ml","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 18-18","quote":"Na2S x 9 H2O                                           0.50        g","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 4-4","quote":"Final volume: 1003 ml","quote_basis":"derivative text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[0].recipe[11]","quote":"{\n                        \"recipe_order\":
+    12,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\":
+    54,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.498504,\n                        \"mmol_l\":
+    2.07553,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q10","label":"EDTA","local_fields":[{"path":"data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml","field_path":"ingredients[9].concentration","stored":{"value":"5","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml","field_path":"ingredients[9].concentration","stored":{"value":"5","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    primary batch mass and explicit provider g_l support this stock strength on the
+    provider-declared stock basis. Listed water alone is not measured final stock
+    volume. Correct each root-level placement into the named stock; the already nested
+    owner component, where present, is supported without an attached claim. Do not
+    use the stock rate as a final-medium concentration.","source_stage":"Trace elements
+    solution (Pfennig, 1965)","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 33-33","quote":"EDTA                                                   5.00        g","quote_basis":"derivative
+    text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[1].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"EDTA\",\n                        \"compound_id\":
+    271,\n                        \"amount\": 5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\":
+    17.1092,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q11","label":"FeSO4 x 7 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml","field_path":"ingredients[10].concentration","stored":{"value":"2.2","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml","field_path":"solutions[0].composition[0].concentration","stored":{"value":"2.2","unit":"G_PER_L"},"decision":"evidence_only"}],"decision":"mixed","rationale":"The
+    primary batch mass and explicit provider g_l support this stock strength on the
+    provider-declared stock basis. Listed water alone is not measured final stock
+    volume. Correct each root-level placement into the named stock; the already nested
+    owner component, where present, is supported without an attached claim. Do not
+    use the stock rate as a final-medium concentration.","source_stage":"Trace elements
+    solution (Pfennig, 1965)","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 34-34","quote":"FeSO4 x 7 H2O                                          2.20        g","quote_basis":"derivative
+    text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[1].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\":
+    12,\n                        \"amount\": 2.2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2.2,\n                        \"mmol_l\":
+    7.91324,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q12","label":"ZnSO4 x 7 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.1","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml","field_path":"ingredients[10].concentration","stored":{"value":"0.1","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    primary batch mass and explicit provider g_l support this stock strength on the
+    provider-declared stock basis. Listed water alone is not measured final stock
+    volume. Correct each root-level placement into the named stock; the already nested
+    owner component, where present, is supported without an attached claim. Do not
+    use the stock rate as a final-medium concentration.","source_stage":"Trace elements
+    solution (Pfennig, 1965)","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 35-35","quote":"ZnSO4 x 7 H2O                                          0.10        g","quote_basis":"derivative
+    text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[1].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"ZnSO4 x 7 H2O\",\n                        \"compound_id\":
+    35,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.347752,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q13","label":"MnCl2 x 4 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml","field_path":"ingredients[12].concentration","stored":{"value":"0.03","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.03","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    primary batch mass and explicit provider g_l support this stock strength on the
+    provider-declared stock basis. Listed water alone is not measured final stock
+    volume. Correct each root-level placement into the named stock; the already nested
+    owner component, where present, is supported without an attached claim. Do not
+    use the stock rate as a final-medium concentration.","source_stage":"Trace elements
+    solution (Pfennig, 1965)","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 36-36","quote":"MnCl2 x 4 H2O                                          0.03        g","quote_basis":"derivative
+    text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[1].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\":
+    36,\n                        \"amount\": 0.03,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\":
+    0.151588,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q14","label":"H3BO3","local_fields":[{"path":"data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml","field_path":"ingredients[13].concentration","stored":{"value":"0.03","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml","field_path":"ingredients[12].concentration","stored":{"value":"0.03","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    primary batch mass and explicit provider g_l support this stock strength on the
+    provider-declared stock basis. Listed water alone is not measured final stock
+    volume. Correct each root-level placement into the named stock; the already nested
+    owner component, where present, is supported without an attached claim. Do not
+    use the stock rate as a final-medium concentration.","source_stage":"Trace elements
+    solution (Pfennig, 1965)","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 37-37","quote":"H3BO3                                                  0.03        g","quote_basis":"derivative
+    text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[1].recipe[4]","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\":
+    37,\n                        \"amount\": 0.03,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\":
+    0.485123,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q15","label":"CoCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.2","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml","field_path":"ingredients[13].concentration","stored":{"value":"0.2","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    primary batch mass and explicit provider g_l support this stock strength on the
+    provider-declared stock basis. Listed water alone is not measured final stock
+    volume. Correct each root-level placement into the named stock; the already nested
+    owner component, where present, is supported without an attached claim. Do not
+    use the stock rate as a final-medium concentration.","source_stage":"Trace elements
+    solution (Pfennig, 1965)","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 38-38","quote":"CoCl2 x 6 H2O                                          0.20        g","quote_basis":"derivative
+    text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[1].recipe[5]","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\":
+    38,\n                        \"amount\": 0.2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\":
+    1.54037,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q16","label":"CuCl2 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.03","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.03","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    primary batch mass and explicit provider g_l support this stock strength on the
+    provider-declared stock basis. Listed water alone is not measured final stock
+    volume. Correct each root-level placement into the named stock; the already nested
+    owner component, where present, is supported without an attached claim. Do not
+    use the stock rate as a final-medium concentration.","source_stage":"Trace elements
+    solution (Pfennig, 1965)","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 39-39","quote":"CuCl2 x 2 H2O                                          0.03        g","quote_basis":"derivative
+    text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[1].recipe[6]","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"CuCl2 x 2 H2O\",\n                        \"compound_id\":
+    39,\n                        \"amount\": 0.03,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\":
+    0.175971,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q17","label":"NiCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.03","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.03","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    primary batch mass and explicit provider g_l support this stock strength on the
+    provider-declared stock basis. Listed water alone is not measured final stock
+    volume. Correct each root-level placement into the named stock; the already nested
+    owner component, where present, is supported without an attached claim. Do not
+    use the stock rate as a final-medium concentration.","source_stage":"Trace elements
+    solution (Pfennig, 1965)","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 40-40","quote":"NiCl2 x 6 H2O                                          0.03        g","quote_basis":"derivative
+    text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[1].recipe[7]","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\":
+    40,\n                        \"amount\": 0.03,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\":
+    0.231483,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q18","label":"Na2MoO4 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.03","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.03","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    primary batch mass and explicit provider g_l support this stock strength on the
+    provider-declared stock basis. Listed water alone is not measured final stock
+    volume. Correct each root-level placement into the named stock; the already nested
+    owner component, where present, is supported without an attached claim. Do not
+    use the stock rate as a final-medium concentration.","source_stage":"Trace elements
+    solution (Pfennig, 1965)","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 41-41","quote":"Na2MoO4 x 2 H2O                                        0.03        g","quote_basis":"derivative
+    text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[1].recipe[8]","quote":"{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\":
+    9,\n                        \"amount\": 0.03,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\":
+    0.123993,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q19","label":"NaOH","local_fields":[{"path":"data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.5","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.5","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    primary batch mass and explicit provider g_l support this stock strength on the
+    provider-declared stock basis. Listed water alone is not measured final stock
+    volume. Correct each root-level placement into the named stock; the already nested
+    owner component, where present, is supported without an attached claim. Do not
+    use the stock rate as a final-medium concentration.","source_stage":"Selenite-tungstate
+    solution","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 57-57","quote":"NaOH                                        0.50    g","quote_basis":"derivative
+    text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[2].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"NaOH\",\n                        \"compound_id\":
+    256,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\":
+    12.5009,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q20","label":"Na2SeO3 x 5 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.003","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.003","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    primary batch mass and explicit provider g_l support this stock strength on the
+    provider-declared stock basis. Listed water alone is not measured final stock
+    volume. Correct each root-level placement into the named stock; the already nested
+    owner component, where present, is supported without an attached claim. Do not
+    use the stock rate as a final-medium concentration.","source_stage":"Selenite-tungstate
+    solution","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 58-58","quote":"Na2SeO3 x 5 H2O                             3.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[2].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Na2SeO3 x 5 H2O\",\n                        \"compound_id\":
+    107,\n                        \"amount\": 3,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.003,\n                        \"mmol_l\":
+    0.0114062,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q21","label":"Na2WO4 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.004","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.004","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    primary batch mass and explicit provider g_l support this stock strength on the
+    provider-declared stock basis. Listed water alone is not measured final stock
+    volume. Correct each root-level placement into the named stock; the already nested
+    owner component, where present, is supported without an attached claim. Do not
+    use the stock rate as a final-medium concentration.","source_stage":"Selenite-tungstate
+    solution","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 59-59","quote":"Na2WO4 x 2 H2O                              4.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[2].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Na2WO4 x 2 H2O\",\n                        \"compound_id\":
+    249,\n                        \"amount\": 4,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.004,\n                        \"mmol_l\":
+    0.0121267,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q22","label":"Vitamin B12","local_fields":[{"path":"data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.1","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml","field_path":"solutions[1].composition[0].concentration","stored":{"value":"0.1","unit":"G_PER_L"},"decision":"evidence_only"}],"decision":"mixed","rationale":"The
+    primary batch mass and explicit provider g_l support this stock strength on the
+    provider-declared stock basis. Listed water alone is not measured final stock
+    volume. Correct each root-level placement into the named stock; the already nested
+    owner component, where present, is supported without an attached claim. Do not
+    use the stock rate as a final-medium concentration.","source_stage":"Seven vitamins
+    solution","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 65-65","quote":"Vitamin B12                               100.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[3].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\":
+    18,\n                        \"amount\": 100,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.073779,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q23","label":"p-Aminobenzoic acid","local_fields":[{"path":"data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.08","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.08","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    primary batch mass and explicit provider g_l support this stock strength on the
+    provider-declared stock basis. Listed water alone is not measured final stock
+    volume. Correct each root-level placement into the named stock; the already nested
+    owner component, where present, is supported without an attached claim. Do not
+    use the stock rate as a final-medium concentration.","source_stage":"Seven vitamins
+    solution","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 66-66","quote":"p-Aminobenzoic acid                        80.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[3].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\":
+    47,\n                        \"amount\": 80,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.08,\n                        \"mmol_l\":
+    0.583345,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q24","label":"D-(+)-biotin","local_fields":[{"path":"data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.02","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.02","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    primary batch mass and explicit provider g_l support this stock strength on the
+    provider-declared stock basis. Listed water alone is not measured final stock
+    volume. Correct each root-level placement into the named stock; the already nested
+    owner component, where present, is supported without an attached claim. Do not
+    use the stock rate as a final-medium concentration.","source_stage":"Seven vitamins
+    solution","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 67-67","quote":"D-(+)-biotin                               20.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[3].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"D-(+)-biotin\",\n                        \"compound_id\":
+    1359,\n                        \"amount\": 20,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\":
+    0.0818632,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q25","label":"Nicotinic acid","local_fields":[{"path":"data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.2","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml","field_path":"solutions[1].composition[1].concentration","stored":{"value":"0.2","unit":"G_PER_L"},"decision":"evidence_only"}],"decision":"mixed","rationale":"The
+    primary batch mass and explicit provider g_l support this stock strength on the
+    provider-declared stock basis. Listed water alone is not measured final stock
+    volume. Correct each root-level placement into the named stock; the already nested
+    owner component, where present, is supported without an attached claim. Do not
+    use the stock rate as a final-medium concentration.","source_stage":"Seven vitamins
+    solution","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 68-68","quote":"Nicotinic acid                            200.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[3].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\":
+    139,\n                        \"amount\": 200,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\":
+    1.62456,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q26","label":"Calcium pantothenate","local_fields":[{"path":"data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml","field_path":"ingredients[25].concentration","stored":{"value":"0.1","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.1","unit":"G_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    primary batch mass and explicit provider g_l support this stock strength on the
+    provider-declared stock basis. Listed water alone is not measured final stock
+    volume. Correct each root-level placement into the named stock; the already nested
+    owner component, where present, is supported without an attached claim. Do not
+    use the stock rate as a final-medium concentration.","source_stage":"Seven vitamins
+    solution","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 69-69","quote":"Calcium pantothenate                      100.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[3].recipe[4]","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"Calcium pantothenate\",\n                        \"compound_id\":
+    518,\n                        \"amount\": 100,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.209849,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q27","label":"Pyridoxine hydrochloride","local_fields":[{"path":"data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml","field_path":"ingredients[26].concentration","stored":{"value":"0.3","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml","field_path":"solutions[1].composition[2].concentration","stored":{"value":"0.3","unit":"G_PER_L"},"decision":"evidence_only"}],"decision":"mixed","rationale":"The
+    primary batch mass and explicit provider g_l support this stock strength on the
+    provider-declared stock basis. Listed water alone is not measured final stock
+    volume. Correct each root-level placement into the named stock; the already nested
+    owner component, where present, is supported without an attached claim. Do not
+    use the stock rate as a final-medium concentration.","source_stage":"Seven vitamins
+    solution","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 70-70","quote":"Pyridoxine hydrochloride                  300.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[3].recipe[5]","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\":
+    519,\n                        \"amount\": 300,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.3,\n                        \"mmol_l\":
+    1.45886,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q28","label":"Thiamine-HCl x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml","field_path":"ingredients[27].concentration","stored":{"value":"0.2","unit":"G_PER_L"},"decision":"correct"},{"path":"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml","field_path":"solutions[1].composition[3].concentration","stored":{"value":"0.2","unit":"G_PER_L"},"decision":"evidence_only"}],"decision":"mixed","rationale":"The
+    primary batch mass and explicit provider g_l support this stock strength on the
+    provider-declared stock basis. Listed water alone is not measured final stock
+    volume. Correct each root-level placement into the named stock; the already nested
+    owner component, where present, is supported without an attached claim. Do not
+    use the stock rate as a final-medium concentration.","source_stage":"Seven vitamins
+    solution","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 71-71","quote":"Thiamine-HCl x 2 H2O                      200.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[3].recipe[6]","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Thiamine-HCl x 2 H2O\",\n                        \"compound_id\":
+    77,\n                        \"amount\": 200,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\":
+    0.535761,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q29","label":"Retained Trace elements solution (Pfennig,
+    1965) receiving dose","local_fields":[{"path":"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml","field_path":"solutions[0].concentration","stored":{"value":"1","unit":"ML_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    primary adds 1 ml to the stated 1003 ml final batch, not 1 ml per final litre.
+    Preserve the exact batch dose and denominator; the present 1 ML_PER_L assertion
+    and accompanying per-litre claim require correction.","source_stage":"Main batch
+    receiving dose","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 14-14","quote":"Trace elements solution (Pfennig, 1965)                1.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 4-4","quote":"Final volume: 1003 ml","quote_basis":"derivative text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[0].recipe[7]","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"solution\": \"Trace elements solution (Pfennig,
+    1965)\",\n                        \"solution_id\": 2762,\n                        \"amount\":
+    1,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q30","label":"Retained
+    stock preparation note 0","local_fields":[{"path":"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml","field_path":"solutions[0].preparation_notes","stored":"Stock
+    prepared in 1000 ml; added at 1 ml per litre of medium. Composition and volume
+    from MediaDive (#150).","decision":"correct"}],"decision":"correct","rationale":"The
+    provider stock volume 1000 ml is explicit metadata and its stock rates are supported.
+    The note also claims addition per litre, which conflicts with the 1 ml dose into
+    final 1003 ml. Separate those two facts; do not erase the supported stock-volume
+    metadata.","source_stage":"Stock metadata versus receiving denominator","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 14-14","quote":"Trace elements solution (Pfennig, 1965)                1.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 4-4","quote":"Final volume: 1003 ml","quote_basis":"derivative text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[1]","quote":"{\n                \"id\":
+    2762,\n                \"name\": \"Trace elements solution (Pfennig, 1965)\",\n                \"volume\":
+    1000,\n                \"recipe\": [\n                    {\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"EDTA\",\n                        \"compound_id\":
+    271,\n                        \"amount\": 5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\":
+    17.1092,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\":
+    12,\n                        \"amount\": 2.2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2.2,\n                        \"mmol_l\":
+    7.91324,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"ZnSO4 x 7 H2O\",\n                        \"compound_id\":
+    35,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.347752,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\":
+    36,\n                        \"amount\": 0.03,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\":
+    0.151588,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\":
+    37,\n                        \"amount\": 0.03,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\":
+    0.485123,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\":
+    38,\n                        \"amount\": 0.2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\":
+    1.54037,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"CuCl2 x 2 H2O\",\n                        \"compound_id\":
+    39,\n                        \"amount\": 0.03,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\":
+    0.175971,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\":
+    40,\n                        \"amount\": 0.03,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\":
+    0.231483,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\":
+    9,\n                        \"amount\": 0.03,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\":
+    0.123993,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }\n                ],\n                \"steps\":
+    [\n                    {\n                        \"step\": \"pH 3.0-4.0\"\n                    }\n                ]\n            }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q31","label":"Retained Seven vitamins solution receiving
+    dose","local_fields":[{"path":"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml","field_path":"solutions[1].concentration","stored":{"value":"1","unit":"ML_PER_L"},"decision":"correct"}],"decision":"correct","rationale":"The
+    primary adds 1 ml to the stated 1003 ml final batch, not 1 ml per final litre.
+    Preserve the exact batch dose and denominator; the present 1 ML_PER_L assertion
+    and accompanying per-litre claim require correction.","source_stage":"Main batch
+    receiving dose","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 17-17","quote":"Seven vitamins solution                                1.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 4-4","quote":"Final volume: 1003 ml","quote_basis":"derivative text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[0].recipe[10]","quote":"{\n                        \"recipe_order\":
+    11,\n                        \"solution\": \"Seven vitamins solution\",\n                        \"solution_id\":
+    1038,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q32","label":"Retained stock preparation note 1","local_fields":[{"path":"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml","field_path":"solutions[1].preparation_notes","stored":"Stock
+    prepared in 1000 ml; added at 1 ml per litre of medium. Composition and volume
+    from MediaDive (#150).","decision":"correct"}],"decision":"correct","rationale":"The
+    provider stock volume 1000 ml is explicit metadata and its stock rates are supported.
+    The note also claims addition per litre, which conflicts with the 1 ml dose into
+    final 1003 ml. Separate those two facts; do not erase the supported stock-volume
+    metadata.","source_stage":"Stock metadata versus receiving denominator","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 17-17","quote":"Seven vitamins solution                                1.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 4-4","quote":"Final volume: 1003 ml","quote_basis":"derivative text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[3]","quote":"{\n                \"id\":
+    1038,\n                \"name\": \"Seven vitamins solution\",\n                \"volume\":
+    1000,\n                \"recipe\": [\n                    {\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\":
+    18,\n                        \"amount\": 100,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.073779,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\":
+    47,\n                        \"amount\": 80,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.08,\n                        \"mmol_l\":
+    0.583345,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"D-(+)-biotin\",\n                        \"compound_id\":
+    1359,\n                        \"amount\": 20,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\":
+    0.0818632,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\":
+    139,\n                        \"amount\": 200,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\":
+    1.62456,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"Calcium pantothenate\",\n                        \"compound_id\":
+    518,\n                        \"amount\": 100,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.209849,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\":
+    519,\n                        \"amount\": 300,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.3,\n                        \"mmol_l\":
+    1.45886,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Thiamine-HCl x 2 H2O\",\n                        \"compound_id\":
+    77,\n                        \"amount\": 200,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\":
+    0.535761,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }\n                ]\n            }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q33","label":"Missing Se/W receiving descriptor","local_fields":[],"decision":"correct","rationale":"The
+    exact primary and provider prescribe a separate 1 ml Se/W addition; all three
+    component rates currently appear at root and no structured Se/W dose remains.","source_stage":"Main
+    batch receiving dose","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 15-15","quote":"Selenite-tungstate solution                            1.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 4-4","quote":"Final volume: 1003 ml","quote_basis":"derivative text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[0].recipe[8]","quote":"{\n                        \"recipe_order\":
+    9,\n                        \"solution\": \"Selenite-tungstate solution\",\n                        \"solution_id\":
+    777,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q34","label":"Water input: Main sol. 1101a","local_fields":[],"decision":"evidence_only","rationale":"Retain
+    the printed water input at its own stage. The main final volume is separately
+    explicit; stock water input does not by itself prove measured final stock volume.
+    No water concentration is fabricated.","source_stage":"Main sol. 1101a","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 19-19","quote":"Distilled water                                     1000.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[0].recipe[12]","quote":"{\n                        \"recipe_order\":
+    13,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q35","label":"Water input: Trace elements solution (Pfennig,
+    1965)","local_fields":[],"decision":"evidence_only","rationale":"Retain the printed
+    water input at its own stage. The main final volume is separately explicit; stock
+    water input does not by itself prove measured final stock volume. No water concentration
+    is fabricated.","source_stage":"Trace elements solution (Pfennig, 1965)","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 42-42","quote":"Distilled water                                     1000.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[1].recipe[9]","quote":"{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q36","label":"Water input: Selenite-tungstate solution","local_fields":[],"decision":"evidence_only","rationale":"Retain
+    the printed water input at its own stage. The main final volume is separately
+    explicit; stock water input does not by itself prove measured final stock volume.
+    No water concentration is fabricated.","source_stage":"Selenite-tungstate solution","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 60-60","quote":"Distilled water                          1000.00   ml","quote_basis":"derivative
+    text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[2].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q37","label":"Water input: Seven vitamins solution","local_fields":[],"decision":"evidence_only","rationale":"Retain
+    the printed water input at its own stage. The main final volume is separately
+    explicit; stock water input does not by itself prove measured final stock volume.
+    No water concentration is fabricated.","source_stage":"Seven vitamins solution","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 72-72","quote":"Distilled water                          1000.00   ml","quote_basis":"derivative
+    text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[3].recipe[7]","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q38","label":"Retained main preparation and numeric
+    controls","local_fields":[{"path":"data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml","field_path":"preparation_steps[0]","stored":{"step_number":1,"action":"AUTOCLAVE","description":"Dissolve
+    ingredients except carbonates, magnesium chloride, trace elements, lactate, vitamins
+    and sulfide, then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic.
+    Then add and dissolve carbonates, adjust pH to 9.0, dispense under 100% N2 gas
+    atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After
+    sterilization add magnesium chloride, trace elements, lactate, vitamins and sulfide
+    from sterile anoxic stock solution prepared under 100% N2 gas. The vitamin solution
+    should be sterilized by filtration. Adjust pH of complete medium to 9.0 - 9.5,
+    if necessary."}},{"path":"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml","field_path":"preparation_steps[0]","stored":{"step_number":1,"action":"AUTOCLAVE","description":"Dissolve
+    ingredients except carbonates, magnesium chloride, trace elements, lactate, vitamins
+    and sulfide, then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic.
+    Then add and dissolve carbonates, adjust pH to 9.0, dispense under 100% N2 gas
+    atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After
+    sterilization add magnesium chloride, trace elements, lactate, vitamins and sulfide
+    from sterile anoxic stock solution prepared under 100% N2 gas. The vitamin solution
+    should be sterilized by filtration. Adjust pH of complete medium to 9.0 - 9.5,
+    if necessary."}}],"decision":"evidence_only","rationale":"The complete retained
+    main method matches the current provider verbatim and the primary: staged anoxic
+    additions, nitrogen atmosphere, 30–45 min sparging, initial pH 9.0 and final 9.0–9.5,
+    plus separate vitamin filtration. Credit this existing text; a single AUTOCLAVE
+    tag does not enumerate all subordinate actions.","source_stage":"Main preparation","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 21-27","quote":"Dissolve ingredients except carbonates, magnesium chloride,
+    trace elements, lactate,\nvitamins and sulfide, then sparge medium with 100% N2
+    gas for 30 - 45 min to make it\nanoxic. Then add and dissolve carbonates, adjust
+    pH to 9.0, dispense under 100% N2 gas\natmosphere into anoxic Hungate-type tubes
+    or serum vials and autoclave. After\nsterilization add magnesium chloride, trace
+    elements, lactate, vitamins and sulfide from\nsterile anoxic stock solution prepared
+    under 100% N2 gas. The vitamin solution should be\nsterilized by filtration. Adjust
+    pH of complete medium to 9.0 - 9.5, if necessary.","quote_basis":"derivative text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"step\":
+    \"Dissolve ingredients except carbonates, magnesium chloride, trace elements,
+    lactate, vitamins and sulfide, then sparge medium with 100% N2 gas for 30 - 45
+    min to make it anoxic. Then add and dissolve carbonates, adjust pH to 9.0, dispense
+    under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and
+    autoclave. After sterilization add magnesium chloride, trace elements, lactate,
+    vitamins and sulfide from sterile anoxic stock solution prepared under 100% N2
+    gas. The vitamin solution should be sterilized by filtration. Adjust pH of complete
+    medium to 9.0 - 9.5, if necessary.\"\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q39","label":"Retained final pH range","local_fields":[{"path":"data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml","field_path":"ph_range","stored":{"min":9.0,"max":9.5}},{"path":"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml","field_path":"ph_range","stored":{"min":9.0,"max":9.5}}],"decision":"evidence_only","rationale":"Both
+    stored endpoints match the explicit final-medium range; this is separate from
+    the acidic trace-stock pH.","source_stage":"Complete medium","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 3-3","quote":"Final pH: 9.0 - 9.5","quote_basis":"derivative text"},{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 27-27","quote":"sterilized by filtration. Adjust pH of complete medium to
+    9.0 - 9.5, if necessary.","quote_basis":"derivative text"}]},{"quantity_id":"q40","label":"Trace-stock
+    pH text at main preparation level","local_fields":[{"path":"data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml","field_path":"preparation_steps[1]","stored":{"step_number":2,"action":"MIX","description":"pH
+    3.0-4.0"}},{"path":"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml","field_path":"preparation_steps[1]","stored":{"step_number":2,"action":"MIX","description":"pH
+    3.0-4.0"}}],"decision":"correct","rationale":"The numeric text pH 3.0–4.0 is supported
+    for the trace stock. Its current unqualified main-step placement is misleading
+    beside final medium pH 9.0–9.5; attach the retained text to the trace stock without
+    changing the numbers or inventing a titrant.","source_stage":"Trace elements solution
+    only","sources":[{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 32-32","quote":"Trace elements solution (Pfennig, 1965) (from medium 1369)","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1101a","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101a.pdf","raw_path":"REVIEW_WORK/batch077/source07-08-10/dsm1101a.raw","raw_sha256":"6b96c68b17ad661d3c8c769b23f913558a52e290a26df8e03f3e72583e815ac4","text_sha256":"42dd68bbfd3698f06f4df01b710b603ae065a44af513f39789b4ab41abf646ed","accessed_at":"2026-10-28T20:15:18.513013Z","locator":"dsm1101a.txt
+    lines 44-44","quote":"pH 3.0-4.0","quote_basis":"derivative text"},{"evidence_id":"api1101a","reference":"https://mediadive.dsmz.de/rest/medium/1101a","raw_path":"REVIEW_WORK/batch077/source07-08-10/api1101a.raw","raw_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","text_sha256":"d18451a74ad897d7069e220fc54f55f4c6edb978fdb0d1b4a2e0dcb2eff50cb5","accessed_at":"2026-10-28T20:15:18.172123Z","locator":"data.solutions[1].steps[0]","quote":"{\n                        \"step\":
+    \"pH 3.0-4.0\"\n                    }","quote_basis":"raw UTF-8"}]}],"document_scopes":{"data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml":null,"data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml":null},"scope":"Every
+    selected target/owner concentration plus explicit dependency fields; source-only
+    rows/conditions and unchanged claims distinguished. Excluded parent quantities
+    are not transferred."}'
+- assessment_id: grounding
+  area: grounding
+  topic: Supplied forms and current ontology/MIM scope
+  outcome: concern
+  summary: Every asserted slot and exact preferred-term/current-MIM lookup is inventoried.
+    Most salt hydrates, D-biotin and sodium L-lactate match their supplied forms.
+    Nickel hexahydrate is contradicted by the anhydrous ID; generic calcium pantothenate
+    has unresolved D specificity. Vitamin B12 remains a vitamer class, so no molecular
+    conversion is certified. Present secondary links, exact current row membership
+    and canonical-label agreement use distinct populations; none alone proves supplied
+    form. Exact MIM NiCl2 x 6 H2O rows are REJECTED despite identifying CHEBI:53542;
+    the proposed hydrate is supported independently by primary formula and fresh OLS,
+    not certified by that mapping status. CoCl2 x 6 H2O also has REJECTED spelling
+    rows but MAPPED cobalt-hexahydrate rows; both retain the chemically matching CHEBI:53503.
+    Mixed D/DL pantothenate aliases do not resolve stereochemistry.
+  target_ids:
+  - CultureMech:000535
+  evidence_ids:
+  - groundings
+  - mim
+  - mim-meta
+- assessment_id: history
+  area: provenance
+  topic: Existing repair credit and writer limits
+  outcome: concern
+  summary: Three complete reports and the exact selected parent row were read. All
+    37 unique decoded historical source objects match fresh API1101a content, whose
+    full raw digest also matches the historical digest; this authenticates content,
+    not the original access event. Null concentration snippets remain unsupported
+    historical claims. The maintained partial nesting and current before/after bytes
+    are credited, but fourteen stock components and both receiving denominators remain
+    unresolved. Current conservative formulation/merge and first-solution importer
+    behavior are distinguished from old generated flattening; current nesting skips
+    any already-nested record.
+  target_ids:
+  - CultureMech:000535
+  evidence_ids:
+  - history
+  - old-reports
+  - old-claims
+  - historical-object-joins
+  - writer-mediadive
+  - writer-formulation
+  - writer-merger
+  - historical-selected-parent-rows
+  - writer-nesting
+findings:
+- finding_id: f1
+  issue_key: culturemech-000535-incomplete-stock-topology
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Restore the three distinct stock stages while retaining existing repairs
+  description: The generated target flattens all 19 stock components. The maintained
+    owner correctly nests five components but leaves 14 at root, and omits a structured
+    Se/W receiving descriptor. Complete all three exact source stocks and preserve
+    their separate rates and receiving doses. Keep the nine supported main-medium
+    rates unchanged. Current cocktail nesting skips already-nested records, so the
+    existing partial repair needs an explicit completion path.
+  target_ids:
+  - CultureMech:000535
+  field_paths:
+  - ingredients
+  - solutions
+  evidence_ids:
+  - dsm1101a
+  - api1101a
+  - target
+  - owner
+  - writer-nesting
+  - writer-mediadive
+  rule_id: review-ingredient-concentrations/evidence-contract
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: scripts/apply_cocktail_nesting.py
+    role: maintained stage/denominator writer
+- finding_id: f2
+  issue_key: culturemech-000535-receiving-dose-denominator
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Separate 1 ml batch additions from per-litre rates
+  description: Both owner stock descriptors assert 1 ML_PER_L and notes say 1 ml per
+    litre. The source adds 1 ml of each to an explicitly final 1003 ml batch. Preserve
+    the batch dose and stated denominator; correct the per-litre assertions without
+    discarding the provider stock-volume metadata.
+  target_ids:
+  - CultureMech:000535
+  field_paths:
+  - data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml::solutions[0].concentration
+  - data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml::solutions[1].concentration
+  - data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml::solutions[0].preparation_notes
+  - data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml::solutions[1].preparation_notes
+  evidence_ids:
+  - dsm1101a
+  - api1101a
+  - owner
+  - writer-nesting
+  rule_id: review-ingredient-concentrations/evidence-contract
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: scripts/apply_cocktail_nesting.py
+    role: maintained stage/denominator writer
+- finding_id: f3
+  issue_key: culturemech-000535-stock-ph-scope
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Scope the retained acidic pH to its trace stock
+  description: Both documents retain pH 3.0–4.0 as an unqualified main preparation
+    step beside the alkaline final-medium method. The exact primary and provider place
+    it in the trace stock. Reattach the unchanged numeric text to that stock and preserve
+    the complete existing main preparation. Current importer flattens all solution
+    steps and does not carry their stage context.
+  target_ids:
+  - CultureMech:000535
+  field_paths:
+  - preparation_steps[1]
+  - solutions
+  evidence_ids:
+  - dsm1101a
+  - api1101a
+  - writer-mediadive
+  rule_id: review-yaml-record/representation
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/import/mediadive_importer.py
+    role: maintained stage/denominator writer
+- finding_id: f4
+  issue_key: culturemech-000535-nickel-supplied-form
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Use the stated nickel hexahydrate identity
+  description: The source and local preferred term specify nickel chloride hexahydrate,
+    but primary and secondary slots assert anhydrous CHEBI:34887 (Cl2Ni). Fresh CHEBI:53542
+    explicitly represents Cl2Ni·6H2O. Reconcile both asserted slots to the supplied
+    hydrate, preserving the source mass and stock stage; label agreement alone cannot
+    validate the current ID.
+  target_ids:
+  - CultureMech:000535
+  field_paths:
+  - ingredients[16].term
+  - ingredients[16].mediaingredientmech_chebi_term
+  - data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml::ingredients[15].term
+  - data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml::ingredients[15].mediaingredientmech_chebi_term
+  evidence_ids:
+  - dsm1101a
+  - api1101a
+  - chebi34887
+  - chebi53542
+  - groundings
+  rule_id: review-yaml-record/grounding
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml
+    role: maintained source
+- finding_id: f5
+  issue_key: culturemech-000535-pantothenate-specificity
+  category: grounding
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Retain unresolved calcium-pantothenate stereochemistry
+  description: The source states generic calcium pantothenate, while CHEBI:31345 has
+    explicit D stereochemistry in its InChI and SMILES. The shared canonical label
+    does not establish the supplied stereoisomer. Preserve the source mass and name,
+    resolve the exact form before certifying that mapping, and attach claim-level
+    support for retained quantities.
+  target_ids:
+  - CultureMech:000535
+  field_paths:
+  - data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml::ingredients[25].term
+  - data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml::ingredients[22].term
+  - data/merge_yaml/merged/DESULFONATRONUM_ZHILINAE_MEDIUM.yaml::ingredients[25].mediaingredientmech_chebi_term
+  - data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml::ingredients[22].mediaingredientmech_chebi_term
+  evidence_ids:
+  - dsm1101a
+  - api1101a
+  - chebi31345
+  - groundings
+  rule_id: review-yaml-record/grounding
+  native_severity: P3
+  normalization_reason: Bounded metadata, provenance or unresolved grounding follow-up;
+    no critical scientific failure is inferred.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml
+    role: maintained source
+actions:
+- action_id: a1
+  description: The generated target flattens all 19 stock components. The maintained
+    owner correctly nests five components but leaves 14 at root, and omits a structured
+    Se/W receiving descriptor. Complete all three exact source stocks and preserve
+    their separate rates and receiving doses. Keep the nine supported main-medium
+    rates unchanged. Current cocktail nesting skips already-nested records, so the
+    existing partial repair needs an explicit completion path.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:000535
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: scripts/apply_cocktail_nesting.py
+    role: maintained stage/denominator writer
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  - Inspect the named current writer with the exact source stage and denominator;
+    any future code change must preserve existing correct main and nested-stock quantities.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a2
+  description: Both owner stock descriptors assert 1 ML_PER_L and notes say 1 ml per
+    litre. The source adds 1 ml of each to an explicitly final 1003 ml batch. Preserve
+    the batch dose and stated denominator; correct the per-litre assertions without
+    discarding the provider stock-volume metadata.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:000535
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: scripts/apply_cocktail_nesting.py
+    role: maintained stage/denominator writer
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  - Inspect the named current writer with the exact source stage and denominator;
+    any future code change must preserve existing correct main and nested-stock quantities.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a3
+  description: Both documents retain pH 3.0–4.0 as an unqualified main preparation
+    step beside the alkaline final-medium method. The exact primary and provider place
+    it in the trace stock. Reattach the unchanged numeric text to that stock and preserve
+    the complete existing main preparation. Current importer flattens all solution
+    steps and does not carry their stage context.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:000535
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/import/mediadive_importer.py
+    role: maintained stage/denominator writer
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  - Inspect the named current writer with the exact source stage and denominator;
+    any future code change must preserve existing correct main and nested-stock quantities.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a4
+  description: The source and local preferred term specify nickel chloride hexahydrate,
+    but primary and secondary slots assert anhydrous CHEBI:34887 (Cl2Ni). Fresh CHEBI:53542
+    explicitly represents Cl2Ni·6H2O. Reconcile both asserted slots to the supplied
+    hydrate, preserving the source mass and stock stage; label agreement alone cannot
+    validate the current ID.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:000535
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a5
+  description: The source states generic calcium pantothenate, while CHEBI:31345 has
+    explicit D stereochemistry in its InChI and SMILES. The shared canonical label
+    does not establish the supplied stereoisomer. Preserve the source mass and name,
+    resolve the exact form before certifying that mapping, and attach claim-level
+    support for retained quantities.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:000535
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfonatronum_zhilinae_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+limitations:
+- The primary gives final medium volume 1003 ml, but stock water listings are not
+  independent final-volume measurements. Explicit provider stock g_l is credited only
+  as a declared stock basis.
+- No attached local ingredient source claims exist. New source support is evidence_only,
+  not a retroactive verified historical citation.
+- Fresh OLS and the packaged MIM snapshot were inspected; no mass-to-molar conversion
+  based on provider mmol_l was adopted.
+- No strain-growth claim, optimization or experimental recommendation is inferred
+  from the medium name or general source identity.
+- The MIM snapshot commit is 6643131b0f12ab40b66f98135245fca04027e0e9; present/absent
+  rows do not establish a historical or live-catalog result.
+- Input water is not measured final volume. Explicit provider g_l rates are assessed
+  only on their declared normalization basis; unspecified percent bases and hydrate
+  numbers remain unresolved.
+- No source changes, formal review validation/save, Git mutation or publication was
+  performed by this author.
