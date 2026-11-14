@@ -1,0 +1,5242 @@
+# Source and formulation review: alkaliphilus_lacv_medium (CultureMech:007669)
+
+- Review: 20261021T133215Z-culturemech-007669-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T13:27:12Z
+- Finished UTC: 2026-10-21T13:32:15Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The generated record merges two distinct formulations: JCM 1077 LACV and JCM 1078 3B differ in water, NaCl, thiosulfate and yeast-stock dose. Both maintained contributors also encode liquid additions and 1 mg resazurin as g/L, omit source preparation and leave four stock placeholders. Keep the formulations separate and restore source stages without inventing a final volume or percentage basis.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 224; batch 023 item 4 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding twenty-two task batches contain 220 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 223 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:007669 | data/merge_yaml/merged/ALKALIPHILUS_LACV_MEDIUM.yaml | generated | alkaliphilus_lacv_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:007669 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:007669 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-023/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch023/224/strict.tsv |
+| validate-terms | passed | True | CultureMech:007669 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:007669 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:007669 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:007669.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Asserted ontology and pinned secondary identifier metadata
+
+grounding: supported. Targets: CultureMech:007669.
+
+13 distinct asserted primary/secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 13/14 primary and 9/14 secondary instances; all asserted mediaingredientmech_chebi_term keys have exact pinned MIM rows. Source forms are assessed separately.
+
+Instance coverage on a 0–100 percent scale, denominator 14: primary 92.86%; secondary 64.29%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:007669.
+
+62 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "ingredient_or_context": "LACV Distilled water",
+    "field_path": "ingredients[0].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "940",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1146",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146",
+        "source_locator": "$.components[0].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 940,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed"
+      },
+      {
+        "source_key": "mediadiveJ1077api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1077",
+        "source_locator": "$.data.solutions[0].recipe[10]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 940,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66"
+      }
+    ],
+    "rationale": "Source water is a preparation volume in mL, not mass concentration. Retain this formulation’s distinct water amount.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "940",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "940",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "No density conversion or measured final volume is established."
+  },
+  {
+    "ingredient_or_context": "LACV NaCl",
+    "field_path": "ingredients[1].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "10",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1146",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146",
+        "source_locator": "$.components[0].items[1]",
+        "exact_source_quote": "\"component_name\": \"NaCl\",\n          \"volume\": 10,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed"
+      },
+      {
+        "source_key": "mediadiveJ1077api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1077",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 10,\n                        \"unit\": \"g\",\n                        \"g_l\": 9.93049,\n                        \"mmol_l\": 169.926,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66"
+      }
+    ],
+    "rationale": "The number preserves this source’s batch mass but local G_PER_L lacks the source batch/stage basis. Restore the mass and documented basis; do not assert that the 1007 mL provider declaration is a measured final volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Source 10 g; conditional provider nominal g/L = 10 / 1.007. Other formulation quantities are not substituted."
+  },
+  {
+    "ingredient_or_context": "LACV KH2PO4",
+    "field_path": "ingredients[2].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1146",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146",
+        "source_locator": "$.components[0].items[2]",
+        "exact_source_quote": "\"component_name\": \"KH2PO4\",\n          \"volume\": 0.1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed"
+      },
+      {
+        "source_key": "mediadiveJ1077api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1077",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.0993049,\n                        \"mmol_l\": 0.729721,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66"
+      }
+    ],
+    "rationale": "The number preserves this source’s batch mass but local G_PER_L lacks the source batch/stage basis. Restore the mass and documented basis; do not assert that the 1007 mL provider declaration is a measured final volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Source 0.1 g; conditional provider nominal g/L = 0.1 / 1.007. Other formulation quantities are not substituted."
+  },
+  {
+    "ingredient_or_context": "LACV NH4Cl",
+    "field_path": "ingredients[3].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "1",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1146",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146",
+        "source_locator": "$.components[0].items[3]",
+        "exact_source_quote": "\"component_name\": \"NH4Cl\",\n          \"volume\": 1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed"
+      },
+      {
+        "source_key": "mediadiveJ1077api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1077",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.993049,\n                        \"mmol_l\": 18.5651,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66"
+      }
+    ],
+    "rationale": "The number preserves this source’s batch mass but local G_PER_L lacks the source batch/stage basis. Restore the mass and documented basis; do not assert that the 1007 mL provider declaration is a measured final volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Source 1 g; conditional provider nominal g/L = 1 / 1.007. Other formulation quantities are not substituted."
+  },
+  {
+    "ingredient_or_context": "LACV K2HPO4",
+    "field_path": "ingredients[4].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1146",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146",
+        "source_locator": "$.components[0].items[4]",
+        "exact_source_quote": "\"component_name\": \"K2HPO4\",\n          \"volume\": 0.1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed"
+      },
+      {
+        "source_key": "mediadiveJ1077api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1077",
+        "source_locator": "$.data.solutions[0].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.0993049,\n                        \"mmol_l\": 0.570141,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66"
+      }
+    ],
+    "rationale": "The number preserves this source’s batch mass but local G_PER_L lacks the source batch/stage basis. Restore the mass and documented basis; do not assert that the 1007 mL provider declaration is a measured final volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Source 0.1 g; conditional provider nominal g/L = 0.1 / 1.007. Other formulation quantities are not substituted."
+  },
+  {
+    "ingredient_or_context": "LACV Resazurin",
+    "field_path": "ingredients[5].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "1",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1146",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146",
+        "source_locator": "$.components[0].items[5]",
+        "exact_source_quote": "\"component_name\": \"Resazurin\",\n          \"volume\": 1,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed"
+      },
+      {
+        "source_key": "mediadiveJ1077api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1077",
+        "source_locator": "$.data.solutions[0].recipe[9]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Resazurin\",\n                        \"compound_id\": 25,\n                        \"amount\": 1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.000993049,\n                        \"mmol_l\": 0.00433286,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66"
+      }
+    ],
+    "rationale": "Source resazurin is 1 mg per listed batch; 1 g/L is a unit error. Restore source mass and explicit nominal basis separately.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "1 mg = 0.001 g. Conditional provider normalization: 0.001 g / 1.007 L = 0.000993048659 g/L; this is not measured final volume."
+  },
+  {
+    "ingredient_or_context": "LACV MgCl2・6H2O",
+    "field_path": "ingredients[6].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1146",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146",
+        "source_locator": "$.components[0].items[6]",
+        "exact_source_quote": "\"component_name\": \"MgCl2・6H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed"
+      },
+      {
+        "source_key": "mediadiveJ1077api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1077",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.0993049,\n                        \"mmol_l\": 0.488457,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66"
+      }
+    ],
+    "rationale": "The number preserves this source’s batch mass but local G_PER_L lacks the source batch/stage basis. Restore the mass and documented basis; do not assert that the 1007 mL provider declaration is a measured final volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Source 0.1 g; conditional provider nominal g/L = 0.1 / 1.007. Other formulation quantities are not substituted."
+  },
+  {
+    "ingredient_or_context": "LACV KCl",
+    "field_path": "ingredients[7].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1146",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146",
+        "source_locator": "$.components[0].items[7]",
+        "exact_source_quote": "\"component_name\": \"KCl\",\n          \"volume\": 0.1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed"
+      },
+      {
+        "source_key": "mediadiveJ1077api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1077",
+        "source_locator": "$.data.solutions[0].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.0993049,\n                        \"mmol_l\": 1.33206,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66"
+      }
+    ],
+    "rationale": "The number preserves this source’s batch mass but local G_PER_L lacks the source batch/stage basis. Restore the mass and documented basis; do not assert that the 1007 mL provider declaration is a measured final volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Source 0.1 g; conditional provider nominal g/L = 0.1 / 1.007. Other formulation quantities are not substituted."
+  },
+  {
+    "ingredient_or_context": "LACV Tris base",
+    "field_path": "ingredients[8].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "3",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1146",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146",
+        "source_locator": "$.components[0].items[8]",
+        "exact_source_quote": "\"component_name\": \"Tris base\",\n          \"volume\": 3,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed"
+      },
+      {
+        "source_key": "mediadiveJ1077api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1077",
+        "source_locator": "$.data.solutions[0].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Tris base\",\n                        \"compound_id\": 1698,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.97915,\n                        \"mmol_l\": 24.5926,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66"
+      }
+    ],
+    "rationale": "The number preserves this source’s batch mass but local G_PER_L lacks the source batch/stage basis. Restore the mass and documented basis; do not assert that the 1007 mL provider declaration is a measured final volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Source 3 g; conditional provider nominal g/L = 3 / 1.007. Other formulation quantities are not substituted."
+  },
+  {
+    "ingredient_or_context": "LACV Na2S2O3・5H2O",
+    "field_path": "ingredients[9].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "3",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1146",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146",
+        "source_locator": "$.components[0].items[9]",
+        "exact_source_quote": "\"component_name\": \"Na2S2O3・5H2O\",\n          \"volume\": 3,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed"
+      },
+      {
+        "source_key": "mediadiveJ1077api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1077",
+        "source_locator": "$.data.solutions[0].recipe[7]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Na2S2O3 x 5 H2O\",\n                        \"compound_id\": 65,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.97915,\n                        \"mmol_l\": 12.0037,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66"
+      }
+    ],
+    "rationale": "The number preserves this source’s batch mass but local G_PER_L lacks the source batch/stage basis. Restore the mass and documented basis; do not assert that the 1007 mL provider declaration is a measured final volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Source 3 g; conditional provider nominal g/L = 3 / 1.007. Other formulation quantities are not substituted."
+  },
+  {
+    "ingredient_or_context": "LACV NaOH",
+    "field_path": "ingredients[10].concentration",
+    "decision": "not_quantified",
+    "local": {
+      "value": "variable",
+      "unit": "VARIABLE"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1146",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146",
+        "source_locator": "$.components[0].items[11]",
+        "exact_source_quote": "\"component_name\": \"NaOH\"",
+        "snapshot_sha256": "38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed"
+      }
+    ],
+    "rationale": "The source supplies no fixed titrant or gas amount. Retain unquantified status while restoring the separate pH endpoint, gas ratio and preparation stages.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "LACV Carbon dioxide gas",
+    "field_path": "ingredients[11].concentration",
+    "decision": "not_quantified",
+    "local": {
+      "value": "variable",
+      "unit": "VARIABLE"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1146",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146",
+        "source_locator": "$.components[0].items[12]",
+        "exact_source_quote": "\"component_name\": \"Carbon dioxide gas\"",
+        "snapshot_sha256": "38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed"
+      }
+    ],
+    "rationale": "The source supplies no fixed titrant or gas amount. Retain unquantified status while restoring the separate pH endpoint, gas ratio and preparation stages.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "LACV N2",
+    "field_path": "ingredients[12].concentration",
+    "decision": "not_quantified",
+    "local": {
+      "value": "variable",
+      "unit": "VARIABLE"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1146",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146",
+        "source_locator": "$.components[0].items[13]",
+        "exact_source_quote": "\"component_name\": \"N2\"",
+        "snapshot_sha256": "38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed"
+      }
+    ],
+    "rationale": "The source supplies no fixed titrant or gas amount. Retain unquantified status while restoring the separate pH endpoint, gas ratio and preparation stages.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "LACV 0.5 M Crotonic acid (pH 7.0)",
+    "field_path": "ingredients[13].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "20",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1146",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146",
+        "source_locator": "$.components[1].items[3]",
+        "exact_source_quote": "\"component_name\": \"0.5 M Crotonic acid (pH 7.0)\",\n          \"volume\": 20,\n          \"unit\": \"ml\",\n          \"conc_value\": 0.5,\n          \"conc_unit\": \"M\"",
+        "snapshot_sha256": "38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed"
+      },
+      {
+        "source_key": "mediadiveJ1077api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1077",
+        "source_locator": "$.data.solutions[0].recipe[12]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"Crotonic acid\",\n                        \"compound_id\": 255,\n                        \"attribute\": \"pH 7.0, 0.5 M\",\n                        \"amount\": 20,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66"
+      }
+    ],
+    "rationale": "20 mL of 0.5 M crotonic-acid stock at pH 7.0 is an addition volume, not 20 g/L neat acid.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "0.020 L × 0.5 mol/L = 0.010 mol delivered; final molarity is not established."
+  },
+  {
+    "ingredient_or_context": "LACV Trace element solution (see Medium [M439])",
+    "field_path": "solutions[0].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "1",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1146",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146",
+        "source_locator": "$.components[0].items[10]",
+        "exact_source_quote": "\"component_name\": \"Trace element solution (see Medium [M439])\",\n          \"volume\": 1,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed"
+      },
+      {
+        "source_key": "mediadiveJ1077api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1077",
+        "source_locator": "$.data.solutions[0].recipe[8]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"solution\": \"Trace element solution\",\n                        \"solution_id\": 4186,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66"
+      }
+    ],
+    "rationale": "The source specifies a stock-addition volume in mL, not g/L. Retain the exact source-specific dose and separate composition, strength and receiving stage.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "LACV 8% Na2CO3 solution",
+    "field_path": "solutions[1].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "20",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1146",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146",
+        "source_locator": "$.components[1].items[0]",
+        "exact_source_quote": "\"component_name\": \"8% Na2CO3 solution\",\n          \"volume\": 20,\n          \"unit\": \"ml\",\n          \"conc_value\": 8,\n          \"conc_unit\": \"%\"",
+        "snapshot_sha256": "38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed"
+      },
+      {
+        "source_key": "mediadiveJ1077api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1077",
+        "source_locator": "$.data.solutions[0].recipe[13]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"attribute\": \"8%\",\n                        \"amount\": 20,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66"
+      }
+    ],
+    "rationale": "The source specifies a stock-addition volume in mL, not g/L. Retain the exact source-specific dose and separate composition, strength and receiving stage.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[1].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "solutions[1].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "LACV 10% (w/v) Yeast extract solution",
+    "field_path": "solutions[2].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "20",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1146",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146",
+        "source_locator": "$.components[1].items[1]",
+        "exact_source_quote": "\"component_name\": \"10% (w/v) Yeast extract solution\",\n          \"volume\": 20,\n          \"unit\": \"ml\",\n          \"conc_value\": 10,\n          \"conc_unit\": \"(w/v)\"",
+        "snapshot_sha256": "38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed"
+      },
+      {
+        "source_key": "mediadiveJ1077api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1077",
+        "source_locator": "$.data.solutions[0].recipe[11]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"attribute\": \"w/v, 10%\",\n                        \"amount\": 20,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66"
+      }
+    ],
+    "rationale": "The source specifies a stock-addition volume in mL, not g/L. Retain the exact source-specific dose and separate composition, strength and receiving stage.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[2].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "solutions[2].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "LACV 5% Na2S・9H2O solution",
+    "field_path": "solutions[3].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "6",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1146",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146",
+        "source_locator": "$.components[1].items[2]",
+        "exact_source_quote": "\"component_name\": \"5% Na2S・9H2O solution\",\n          \"volume\": 6,\n          \"unit\": \"ml\",\n          \"conc_value\": 5,\n          \"conc_unit\": \"%\"",
+        "snapshot_sha256": "38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed"
+      },
+      {
+        "source_key": "mediadiveJ1077api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1077",
+        "source_locator": "$.data.solutions[0].recipe[14]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 15,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"attribute\": \"5%\",\n                        \"amount\": 6,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66"
+      }
+    ],
+    "rationale": "The source specifies a stock-addition volume in mL, not g/L. Retain the exact source-specific dose and separate composition, strength and receiving stage.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[3].concentration",
+        "stored": {
+          "value": "6",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "solutions[3].concentration",
+        "stored": {
+          "value": "6",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "LACV Crotonic acid strength and pH",
+    "field_path": "ingredients[13].preferred_term",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "jcm1077",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1077",
+        "source_locator": "Later sterile anaerobic stock table",
+        "exact_source_quote": "0.5 M Crotonic acid (pH 7.0) 20.0 ml",
+        "snapshot_sha256": "03ee6fa181d53b8860293521df949a4750a7204b5d32e4437729ceb2876cf1b9",
+        "parsed_text_sha256": "c0afdce5d6522a9bcddb4a1b3f4a043cca481aa07b9b925cce8d5207add82b2d"
+      }
+    ],
+    "rationale": "The label preserves strength and pH, but a supported stock representation and claim evidence are missing.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[13].preferred_term",
+        "stored": "0.5 M Crotonic acid (pH 7.0)",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "ingredients[13].preferred_term",
+        "stored": "0.5 M Crotonic acid (pH 7.0)",
+        "decision": "evidence_only"
+      }
+    ],
+    "arithmetic": "0.5 M and 20 mL yield 10 mmol; no final concentration inferred."
+  },
+  {
+    "ingredient_or_context": "LACV Yeast-extract stock strength",
+    "field_path": "solutions[2].preferred_term",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "jcm1077",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1077",
+        "source_locator": "Later sterile anaerobic stock table",
+        "exact_source_quote": "10% (w/v) Yeast extract solution 20.0 ml",
+        "snapshot_sha256": "03ee6fa181d53b8860293521df949a4750a7204b5d32e4437729ceb2876cf1b9",
+        "parsed_text_sha256": "c0afdce5d6522a9bcddb4a1b3f4a043cca481aa07b9b925cce8d5207add82b2d"
+      }
+    ],
+    "rationale": "The label preserves explicit w/v strength without claim evidence. Preserve different 20/50 mL doses.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[2].preferred_term",
+        "stored": "10% (w/v) Yeast extract solution",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "solutions[2].preferred_term",
+        "stored": "10% (w/v) Yeast extract solution",
+        "decision": "evidence_only"
+      }
+    ],
+    "arithmetic": "10 g/100 mL × 20 mL = 2 g yeast extract delivered."
+  },
+  {
+    "ingredient_or_context": "LACV Carbonate stock strength",
+    "field_path": "solutions[1].preferred_term",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "jcm1077",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1077",
+        "source_locator": "Later sterile anaerobic stock table",
+        "exact_source_quote": "8% Na 2 CO 3 solution 20.0 ml",
+        "snapshot_sha256": "03ee6fa181d53b8860293521df949a4750a7204b5d32e4437729ceb2876cf1b9",
+        "parsed_text_sha256": "c0afdce5d6522a9bcddb4a1b3f4a043cca481aa07b9b925cce8d5207add82b2d"
+      }
+    ],
+    "rationale": "Preserve literal 8% with unspecified percentage basis; do not assume w/v or compute delivered grams.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[1].preferred_term",
+        "stored": "8% Na2CO3 solution",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "solutions[1].preferred_term",
+        "stored": "8% Na2CO3 solution",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "LACV Sulfide stock strength",
+    "field_path": "solutions[3].preferred_term",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "jcm1077",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1077",
+        "source_locator": "Later sterile anaerobic stock table",
+        "exact_source_quote": "5% Na 2 S·9H 2 O solution 6.0 ml",
+        "snapshot_sha256": "03ee6fa181d53b8860293521df949a4750a7204b5d32e4437729ceb2876cf1b9",
+        "parsed_text_sha256": "c0afdce5d6522a9bcddb4a1b3f4a043cca481aa07b9b925cce8d5207add82b2d"
+      }
+    ],
+    "rationale": "Preserve literal 5% and nonahydrate; percentage basis is unspecified and blocks mass conversion.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[3].preferred_term",
+        "stored": "5% Na2S・9H2O solution",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "solutions[3].preferred_term",
+        "stored": "5% Na2S・9H2O solution",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "LACV Initial pH",
+    "field_path": "preparation.Initial_pH",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "jcm1077",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1077",
+        "source_locator": "Exact medium page preparation or displayed default",
+        "exact_source_quote": "adjust pH to 9.0 with NaOH",
+        "snapshot_sha256": "03ee6fa181d53b8860293521df949a4750a7204b5d32e4437729ceb2876cf1b9",
+        "parsed_text_sha256": "c0afdce5d6522a9bcddb4a1b3f4a043cca481aa07b9b925cce8d5207add82b2d"
+      }
+    ],
+    "rationale": "Restore this exact source-stage context with evidence. Initial pH, final approximate pH, gas ratio and conditional cycle are not interchangeable with stock concentrations.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "LACV Final pH",
+    "field_path": "preparation.Final_pH",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "jcm1077",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1077",
+        "source_locator": "Exact medium page preparation or displayed default",
+        "exact_source_quote": "Check final pH be around 8.5.",
+        "snapshot_sha256": "03ee6fa181d53b8860293521df949a4750a7204b5d32e4437729ceb2876cf1b9",
+        "parsed_text_sha256": "c0afdce5d6522a9bcddb4a1b3f4a043cca481aa07b9b925cce8d5207add82b2d"
+      }
+    ],
+    "rationale": "Restore this exact source-stage context with evidence. Initial pH, final approximate pH, gas ratio and conditional cycle are not interchangeable with stock concentrations.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ph_value",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "ph_value",
+        "stored": null,
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "LACV Gas replacement ratio",
+    "field_path": "preparation.Gas_replacement_ratio",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "jcm1077",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1077",
+        "source_locator": "Exact medium page preparation or displayed default",
+        "exact_source_quote": "N 2 -CO 2 (4:1, v/v) gas mixture",
+        "snapshot_sha256": "03ee6fa181d53b8860293521df949a4750a7204b5d32e4437729ceb2876cf1b9",
+        "parsed_text_sha256": "c0afdce5d6522a9bcddb4a1b3f4a043cca481aa07b9b925cce8d5207add82b2d"
+      }
+    ],
+    "rationale": "Restore this exact source-stage context with evidence. Initial pH, final approximate pH, gas ratio and conditional cycle are not interchangeable with stock concentrations.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "LACV Conditional sterilization cycle",
+    "field_path": "preparation.Conditional_sterilization_cycle",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "jcm1077",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1077",
+        "source_locator": "Exact medium page preparation or displayed default",
+        "exact_source_quote": "Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.",
+        "snapshot_sha256": "03ee6fa181d53b8860293521df949a4750a7204b5d32e4437729ceb2876cf1b9",
+        "parsed_text_sha256": "c0afdce5d6522a9bcddb4a1b3f4a043cca481aa07b9b925cce8d5207add82b2d"
+      }
+    ],
+    "rationale": "Restore this exact source-stage context with evidence. Initial pH, final approximate pH, gas ratio and conditional cycle are not interchangeable with stock concentrations.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "3B Distilled water",
+    "field_path": "ingredients[0].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "910",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1147",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147",
+        "source_locator": "$.components[0].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 910,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c"
+      },
+      {
+        "source_key": "mediadiveJ1078api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1078",
+        "source_locator": "$.data.solutions[0].recipe[10]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 910,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "20edccd4225379e1204d7aea905c40f7e44443a72cf78f299fdb3db3399915f1"
+      }
+    ],
+    "rationale": "Source water is a preparation volume in mL, not mass concentration. Retain this formulation’s distinct water amount.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "910",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "No density conversion or measured final volume is established."
+  },
+  {
+    "ingredient_or_context": "3B NaCl",
+    "field_path": "ingredients[1].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "1",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1147",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147",
+        "source_locator": "$.components[0].items[1]",
+        "exact_source_quote": "\"component_name\": \"NaCl\",\n          \"volume\": 1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c"
+      },
+      {
+        "source_key": "mediadiveJ1078api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1078",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.993049,\n                        \"mmol_l\": 16.9926,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "20edccd4225379e1204d7aea905c40f7e44443a72cf78f299fdb3db3399915f1"
+      }
+    ],
+    "rationale": "The number preserves this source’s batch mass but local G_PER_L lacks the source batch/stage basis. Restore the mass and documented basis; do not assert that the 1007 mL provider declaration is a measured final volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Source 1 g; conditional provider nominal g/L = 1 / 1.007. Other formulation quantities are not substituted."
+  },
+  {
+    "ingredient_or_context": "3B KH2PO4",
+    "field_path": "ingredients[2].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1147",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147",
+        "source_locator": "$.components[0].items[2]",
+        "exact_source_quote": "\"component_name\": \"KH2PO4\",\n          \"volume\": 0.1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c"
+      },
+      {
+        "source_key": "mediadiveJ1078api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1078",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.0993049,\n                        \"mmol_l\": 0.729721,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "20edccd4225379e1204d7aea905c40f7e44443a72cf78f299fdb3db3399915f1"
+      }
+    ],
+    "rationale": "The number preserves this source’s batch mass but local G_PER_L lacks the source batch/stage basis. Restore the mass and documented basis; do not assert that the 1007 mL provider declaration is a measured final volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Source 0.1 g; conditional provider nominal g/L = 0.1 / 1.007. Other formulation quantities are not substituted."
+  },
+  {
+    "ingredient_or_context": "3B NH4Cl",
+    "field_path": "ingredients[3].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "1",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1147",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147",
+        "source_locator": "$.components[0].items[3]",
+        "exact_source_quote": "\"component_name\": \"NH4Cl\",\n          \"volume\": 1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c"
+      },
+      {
+        "source_key": "mediadiveJ1078api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1078",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.993049,\n                        \"mmol_l\": 18.5651,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "20edccd4225379e1204d7aea905c40f7e44443a72cf78f299fdb3db3399915f1"
+      }
+    ],
+    "rationale": "The number preserves this source’s batch mass but local G_PER_L lacks the source batch/stage basis. Restore the mass and documented basis; do not assert that the 1007 mL provider declaration is a measured final volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Source 1 g; conditional provider nominal g/L = 1 / 1.007. Other formulation quantities are not substituted."
+  },
+  {
+    "ingredient_or_context": "3B K2HPO4",
+    "field_path": "ingredients[4].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1147",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147",
+        "source_locator": "$.components[0].items[4]",
+        "exact_source_quote": "\"component_name\": \"K2HPO4\",\n          \"volume\": 0.1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c"
+      },
+      {
+        "source_key": "mediadiveJ1078api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1078",
+        "source_locator": "$.data.solutions[0].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.0993049,\n                        \"mmol_l\": 0.570141,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "20edccd4225379e1204d7aea905c40f7e44443a72cf78f299fdb3db3399915f1"
+      }
+    ],
+    "rationale": "The number preserves this source’s batch mass but local G_PER_L lacks the source batch/stage basis. Restore the mass and documented basis; do not assert that the 1007 mL provider declaration is a measured final volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Source 0.1 g; conditional provider nominal g/L = 0.1 / 1.007. Other formulation quantities are not substituted."
+  },
+  {
+    "ingredient_or_context": "3B Resazurin",
+    "field_path": "ingredients[5].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "1",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1147",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147",
+        "source_locator": "$.components[0].items[5]",
+        "exact_source_quote": "\"component_name\": \"Resazurin\",\n          \"volume\": 1,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c"
+      },
+      {
+        "source_key": "mediadiveJ1078api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1078",
+        "source_locator": "$.data.solutions[0].recipe[9]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Resazurin\",\n                        \"compound_id\": 25,\n                        \"amount\": 1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.000993049,\n                        \"mmol_l\": 0.00433286,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "20edccd4225379e1204d7aea905c40f7e44443a72cf78f299fdb3db3399915f1"
+      }
+    ],
+    "rationale": "Source resazurin is 1 mg per listed batch; 1 g/L is a unit error. Restore source mass and explicit nominal basis separately.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "1 mg = 0.001 g. Conditional provider normalization: 0.001 g / 1.007 L = 0.000993048659 g/L; this is not measured final volume."
+  },
+  {
+    "ingredient_or_context": "3B MgCl2・6H2O",
+    "field_path": "ingredients[6].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1147",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147",
+        "source_locator": "$.components[0].items[6]",
+        "exact_source_quote": "\"component_name\": \"MgCl2・6H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c"
+      },
+      {
+        "source_key": "mediadiveJ1078api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1078",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.0993049,\n                        \"mmol_l\": 0.488457,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "20edccd4225379e1204d7aea905c40f7e44443a72cf78f299fdb3db3399915f1"
+      }
+    ],
+    "rationale": "The number preserves this source’s batch mass but local G_PER_L lacks the source batch/stage basis. Restore the mass and documented basis; do not assert that the 1007 mL provider declaration is a measured final volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Source 0.1 g; conditional provider nominal g/L = 0.1 / 1.007. Other formulation quantities are not substituted."
+  },
+  {
+    "ingredient_or_context": "3B KCl",
+    "field_path": "ingredients[7].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1147",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147",
+        "source_locator": "$.components[0].items[7]",
+        "exact_source_quote": "\"component_name\": \"KCl\",\n          \"volume\": 0.1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c"
+      },
+      {
+        "source_key": "mediadiveJ1078api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1078",
+        "source_locator": "$.data.solutions[0].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.0993049,\n                        \"mmol_l\": 1.33206,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "20edccd4225379e1204d7aea905c40f7e44443a72cf78f299fdb3db3399915f1"
+      }
+    ],
+    "rationale": "The number preserves this source’s batch mass but local G_PER_L lacks the source batch/stage basis. Restore the mass and documented basis; do not assert that the 1007 mL provider declaration is a measured final volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Source 0.1 g; conditional provider nominal g/L = 0.1 / 1.007. Other formulation quantities are not substituted."
+  },
+  {
+    "ingredient_or_context": "3B Tris base",
+    "field_path": "ingredients[8].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "3",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1147",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147",
+        "source_locator": "$.components[0].items[8]",
+        "exact_source_quote": "\"component_name\": \"Tris base\",\n          \"volume\": 3,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c"
+      },
+      {
+        "source_key": "mediadiveJ1078api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1078",
+        "source_locator": "$.data.solutions[0].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Tris base\",\n                        \"compound_id\": 1698,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.97915,\n                        \"mmol_l\": 24.5926,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "20edccd4225379e1204d7aea905c40f7e44443a72cf78f299fdb3db3399915f1"
+      }
+    ],
+    "rationale": "The number preserves this source’s batch mass but local G_PER_L lacks the source batch/stage basis. Restore the mass and documented basis; do not assert that the 1007 mL provider declaration is a measured final volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Source 3 g; conditional provider nominal g/L = 3 / 1.007. Other formulation quantities are not substituted."
+  },
+  {
+    "ingredient_or_context": "3B Na2S2O3・5H2O",
+    "field_path": "ingredients[9].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "1.5",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1147",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147",
+        "source_locator": "$.components[0].items[9]",
+        "exact_source_quote": "\"component_name\": \"Na2S2O3・5H2O\",\n          \"volume\": 1.5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c"
+      },
+      {
+        "source_key": "mediadiveJ1078api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1078",
+        "source_locator": "$.data.solutions[0].recipe[7]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Na2S2O3 x 5 H2O\",\n                        \"compound_id\": 65,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.48957,\n                        \"mmol_l\": 6.00184,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "20edccd4225379e1204d7aea905c40f7e44443a72cf78f299fdb3db3399915f1"
+      }
+    ],
+    "rationale": "The number preserves this source’s batch mass but local G_PER_L lacks the source batch/stage basis. Restore the mass and documented basis; do not assert that the 1007 mL provider declaration is a measured final volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Source 1.5 g; conditional provider nominal g/L = 1.5 / 1.007. Other formulation quantities are not substituted."
+  },
+  {
+    "ingredient_or_context": "3B NaOH",
+    "field_path": "ingredients[10].concentration",
+    "decision": "not_quantified",
+    "local": {
+      "value": "variable",
+      "unit": "VARIABLE"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1147",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147",
+        "source_locator": "$.components[0].items[11]",
+        "exact_source_quote": "\"component_name\": \"NaOH\"",
+        "snapshot_sha256": "02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c"
+      }
+    ],
+    "rationale": "The source supplies no fixed titrant or gas amount. Retain unquantified status while restoring the separate pH endpoint, gas ratio and preparation stages.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "3B Carbon dioxide gas",
+    "field_path": "ingredients[11].concentration",
+    "decision": "not_quantified",
+    "local": {
+      "value": "variable",
+      "unit": "VARIABLE"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1147",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147",
+        "source_locator": "$.components[0].items[12]",
+        "exact_source_quote": "\"component_name\": \"Carbon dioxide gas\"",
+        "snapshot_sha256": "02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c"
+      }
+    ],
+    "rationale": "The source supplies no fixed titrant or gas amount. Retain unquantified status while restoring the separate pH endpoint, gas ratio and preparation stages.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "3B N2",
+    "field_path": "ingredients[12].concentration",
+    "decision": "not_quantified",
+    "local": {
+      "value": "variable",
+      "unit": "VARIABLE"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1147",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147",
+        "source_locator": "$.components[0].items[13]",
+        "exact_source_quote": "\"component_name\": \"N2\"",
+        "snapshot_sha256": "02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c"
+      }
+    ],
+    "rationale": "The source supplies no fixed titrant or gas amount. Retain unquantified status while restoring the separate pH endpoint, gas ratio and preparation stages.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "3B 0.5 M Crotonic acid (pH 7.0)",
+    "field_path": "ingredients[13].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "20",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1147",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147",
+        "source_locator": "$.components[1].items[3]",
+        "exact_source_quote": "\"component_name\": \"0.5 M Crotonic acid (pH 7.0)\",\n          \"volume\": 20,\n          \"unit\": \"ml\",\n          \"conc_value\": 0.5,\n          \"conc_unit\": \"M\"",
+        "snapshot_sha256": "02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c"
+      },
+      {
+        "source_key": "mediadiveJ1078api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1078",
+        "source_locator": "$.data.solutions[0].recipe[12]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"Crotonic acid\",\n                        \"compound_id\": 255,\n                        \"attribute\": \"pH 7.0, 0.5 M\",\n                        \"amount\": 20,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "20edccd4225379e1204d7aea905c40f7e44443a72cf78f299fdb3db3399915f1"
+      }
+    ],
+    "rationale": "20 mL of 0.5 M crotonic-acid stock at pH 7.0 is an addition volume, not 20 g/L neat acid.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "0.020 L × 0.5 mol/L = 0.010 mol delivered; final molarity is not established."
+  },
+  {
+    "ingredient_or_context": "3B Trace element solution (see Medium [M439])",
+    "field_path": "solutions[0].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "1",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1147",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147",
+        "source_locator": "$.components[0].items[10]",
+        "exact_source_quote": "\"component_name\": \"Trace element solution (see Medium [M439])\",\n          \"volume\": 1,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c"
+      },
+      {
+        "source_key": "mediadiveJ1078api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1078",
+        "source_locator": "$.data.solutions[0].recipe[8]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"solution\": \"Trace element solution\",\n                        \"solution_id\": 4186,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "20edccd4225379e1204d7aea905c40f7e44443a72cf78f299fdb3db3399915f1"
+      }
+    ],
+    "rationale": "The source specifies a stock-addition volume in mL, not g/L. Retain the exact source-specific dose and separate composition, strength and receiving stage.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "3B 8% Na2CO3 solution",
+    "field_path": "solutions[1].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "20",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1147",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147",
+        "source_locator": "$.components[1].items[0]",
+        "exact_source_quote": "\"component_name\": \"8% Na2CO3 solution\",\n          \"volume\": 20,\n          \"unit\": \"ml\",\n          \"conc_value\": 8,\n          \"conc_unit\": \"%\"",
+        "snapshot_sha256": "02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c"
+      },
+      {
+        "source_key": "mediadiveJ1078api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1078",
+        "source_locator": "$.data.solutions[0].recipe[13]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"attribute\": \"8%\",\n                        \"amount\": 20,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "20edccd4225379e1204d7aea905c40f7e44443a72cf78f299fdb3db3399915f1"
+      }
+    ],
+    "rationale": "The source specifies a stock-addition volume in mL, not g/L. Retain the exact source-specific dose and separate composition, strength and receiving stage.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "solutions[1].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "3B 10% (w/v) Yeast extract solution",
+    "field_path": "solutions[2].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "50",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1147",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147",
+        "source_locator": "$.components[1].items[1]",
+        "exact_source_quote": "\"component_name\": \"10% (w/v) Yeast extract solution\",\n          \"volume\": 50,\n          \"unit\": \"ml\",\n          \"conc_value\": 10,\n          \"conc_unit\": \"(w/v)\"",
+        "snapshot_sha256": "02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c"
+      },
+      {
+        "source_key": "mediadiveJ1078api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1078",
+        "source_locator": "$.data.solutions[0].recipe[11]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"attribute\": \"w/v, 10%\",\n                        \"amount\": 50,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "20edccd4225379e1204d7aea905c40f7e44443a72cf78f299fdb3db3399915f1"
+      }
+    ],
+    "rationale": "The source specifies a stock-addition volume in mL, not g/L. Retain the exact source-specific dose and separate composition, strength and receiving stage.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "solutions[2].concentration",
+        "stored": {
+          "value": "50",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "3B 5% Na2S・9H2O solution",
+    "field_path": "solutions[3].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "6",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1147",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147",
+        "source_locator": "$.components[1].items[2]",
+        "exact_source_quote": "\"component_name\": \"5% Na2S・9H2O solution\",\n          \"volume\": 6,\n          \"unit\": \"ml\",\n          \"conc_value\": 5,\n          \"conc_unit\": \"%\"",
+        "snapshot_sha256": "02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c"
+      },
+      {
+        "source_key": "mediadiveJ1078api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1078",
+        "source_locator": "$.data.solutions[0].recipe[14]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 15,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"attribute\": \"5%\",\n                        \"amount\": 6,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "20edccd4225379e1204d7aea905c40f7e44443a72cf78f299fdb3db3399915f1"
+      }
+    ],
+    "rationale": "The source specifies a stock-addition volume in mL, not g/L. Retain the exact source-specific dose and separate composition, strength and receiving stage.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "solutions[3].concentration",
+        "stored": {
+          "value": "6",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "3B Crotonic acid strength and pH",
+    "field_path": "ingredients[13].preferred_term",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "jcm1078",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1078",
+        "source_locator": "Later sterile anaerobic stock table",
+        "exact_source_quote": "0.5 M Crotonic acid (pH 7.0) 20.0 ml",
+        "snapshot_sha256": "c5405b19033eb2456a48b85ed49d2da9e6919a93f575bb20571fc2bebb5d3d20",
+        "parsed_text_sha256": "6c1d90d6abd02fa4004c4a651baf00b6d82ed75df3c5ced2ab8a38795b526b6d"
+      }
+    ],
+    "rationale": "The label preserves strength and pH, but a supported stock representation and claim evidence are missing.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "ingredients[13].preferred_term",
+        "stored": "0.5 M Crotonic acid (pH 7.0)",
+        "decision": "evidence_only"
+      }
+    ],
+    "arithmetic": "0.5 M and 20 mL yield 10 mmol; no final concentration inferred."
+  },
+  {
+    "ingredient_or_context": "3B Yeast-extract stock strength",
+    "field_path": "solutions[2].preferred_term",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "jcm1078",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1078",
+        "source_locator": "Later sterile anaerobic stock table",
+        "exact_source_quote": "10% (w/v) Yeast extract solution 50.0 ml",
+        "snapshot_sha256": "c5405b19033eb2456a48b85ed49d2da9e6919a93f575bb20571fc2bebb5d3d20",
+        "parsed_text_sha256": "6c1d90d6abd02fa4004c4a651baf00b6d82ed75df3c5ced2ab8a38795b526b6d"
+      }
+    ],
+    "rationale": "The label preserves explicit w/v strength without claim evidence. Preserve different 20/50 mL doses.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "solutions[2].preferred_term",
+        "stored": "10% (w/v) Yeast extract solution",
+        "decision": "evidence_only"
+      }
+    ],
+    "arithmetic": "10 g/100 mL × 50 mL = 5 g yeast extract delivered."
+  },
+  {
+    "ingredient_or_context": "3B Carbonate stock strength",
+    "field_path": "solutions[1].preferred_term",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "jcm1078",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1078",
+        "source_locator": "Later sterile anaerobic stock table",
+        "exact_source_quote": "8% Na 2 CO 3 solution 20.0 ml",
+        "snapshot_sha256": "c5405b19033eb2456a48b85ed49d2da9e6919a93f575bb20571fc2bebb5d3d20",
+        "parsed_text_sha256": "6c1d90d6abd02fa4004c4a651baf00b6d82ed75df3c5ced2ab8a38795b526b6d"
+      }
+    ],
+    "rationale": "Preserve literal 8% with unspecified percentage basis; do not assume w/v or compute delivered grams.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "solutions[1].preferred_term",
+        "stored": "8% Na2CO3 solution",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "3B Sulfide stock strength",
+    "field_path": "solutions[3].preferred_term",
+    "decision": "evidence_only",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "jcm1078",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1078",
+        "source_locator": "Later sterile anaerobic stock table",
+        "exact_source_quote": "5% Na 2 S·9H 2 O solution 6.0 ml",
+        "snapshot_sha256": "c5405b19033eb2456a48b85ed49d2da9e6919a93f575bb20571fc2bebb5d3d20",
+        "parsed_text_sha256": "6c1d90d6abd02fa4004c4a651baf00b6d82ed75df3c5ced2ab8a38795b526b6d"
+      }
+    ],
+    "rationale": "Preserve literal 5% and nonahydrate; percentage basis is unspecified and blocks mass conversion.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "solutions[3].preferred_term",
+        "stored": "5% Na2S・9H2O solution",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "3B Initial pH",
+    "field_path": "preparation.Initial_pH",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "jcm1078",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1078",
+        "source_locator": "Exact medium page preparation or displayed default",
+        "exact_source_quote": "adjust pH to 9.0 with NaOH",
+        "snapshot_sha256": "c5405b19033eb2456a48b85ed49d2da9e6919a93f575bb20571fc2bebb5d3d20",
+        "parsed_text_sha256": "6c1d90d6abd02fa4004c4a651baf00b6d82ed75df3c5ced2ab8a38795b526b6d"
+      }
+    ],
+    "rationale": "Restore this exact source-stage context with evidence. Initial pH, final approximate pH, gas ratio and conditional cycle are not interchangeable with stock concentrations.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "3B Final pH",
+    "field_path": "preparation.Final_pH",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "jcm1078",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1078",
+        "source_locator": "Exact medium page preparation or displayed default",
+        "exact_source_quote": "Check final pH be around 8.5.",
+        "snapshot_sha256": "c5405b19033eb2456a48b85ed49d2da9e6919a93f575bb20571fc2bebb5d3d20",
+        "parsed_text_sha256": "6c1d90d6abd02fa4004c4a651baf00b6d82ed75df3c5ced2ab8a38795b526b6d"
+      }
+    ],
+    "rationale": "Restore this exact source-stage context with evidence. Initial pH, final approximate pH, gas ratio and conditional cycle are not interchangeable with stock concentrations.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "ph_value",
+        "stored": null,
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "3B Gas replacement ratio",
+    "field_path": "preparation.Gas_replacement_ratio",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "jcm1078",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1078",
+        "source_locator": "Exact medium page preparation or displayed default",
+        "exact_source_quote": "N 2 -CO 2 (4:1, v/v) gas mixture",
+        "snapshot_sha256": "c5405b19033eb2456a48b85ed49d2da9e6919a93f575bb20571fc2bebb5d3d20",
+        "parsed_text_sha256": "6c1d90d6abd02fa4004c4a651baf00b6d82ed75df3c5ced2ab8a38795b526b6d"
+      }
+    ],
+    "rationale": "Restore this exact source-stage context with evidence. Initial pH, final approximate pH, gas ratio and conditional cycle are not interchangeable with stock concentrations.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "3B Conditional sterilization cycle",
+    "field_path": "preparation.Conditional_sterilization_cycle",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "jcm1078",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1078",
+        "source_locator": "Exact medium page preparation or displayed default",
+        "exact_source_quote": "Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.",
+        "snapshot_sha256": "c5405b19033eb2456a48b85ed49d2da9e6919a93f575bb20571fc2bebb5d3d20",
+        "parsed_text_sha256": "6c1d90d6abd02fa4004c4a651baf00b6d82ed75df3c5ced2ab8a38795b526b6d"
+      }
+    ],
+    "rationale": "Restore this exact source-stage context with evidence. Initial pH, final approximate pH, gas ratio and conditional cycle are not interchangeable with stock concentrations.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Shared trace stock HCl",
+    "field_path": "solutions[0].composition",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ1077api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1077",
+        "source_locator": "$.data.solutions[1].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"HCl\",\n                        \"compound_id\": 68,\n                        \"attribute\": \"25%\",\n                        \"amount\": 12.5,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66"
+      },
+      {
+        "source_key": "jcm439",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=439",
+        "source_locator": "Trace element solution subsection row 1",
+        "exact_source_quote": "HCl (25%) 12.5 ml",
+        "snapshot_sha256": "2a71115d17d54beb8454d4106e93dd60364885a914eee9d1c434ee15f510ceda",
+        "parsed_text_sha256": "d678d0e3ec848ea6d029f04800693f55fdbfab8dbb3b45924645cfff6e24b74b"
+      }
+    ],
+    "rationale": "Restore the exact trace-stock batch quantity in the empty composition, separate from its 1 mL receiving dose. 25% HCl has unspecified basis. Listed liquids total 999.5 mL whereas the provider declares 1000 mL; retain this limit rather than inventing makeup.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Shared trace stock FeSO4 x 7 H2O",
+    "field_path": "solutions[0].composition",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ1077api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1077",
+        "source_locator": "$.data.solutions[1].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\": 12,\n                        \"amount\": 2.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.1,\n                        \"mmol_l\": 7.55355,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66"
+      },
+      {
+        "source_key": "jcm439",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=439",
+        "source_locator": "Trace element solution subsection row 2",
+        "exact_source_quote": "FeSO 4 ·7H 2 O 2.1 g",
+        "snapshot_sha256": "2a71115d17d54beb8454d4106e93dd60364885a914eee9d1c434ee15f510ceda",
+        "parsed_text_sha256": "d678d0e3ec848ea6d029f04800693f55fdbfab8dbb3b45924645cfff6e24b74b"
+      }
+    ],
+    "rationale": "Restore the exact trace-stock batch quantity in the empty composition, separate from its 1 mL receiving dose. 25% HCl has unspecified basis. Listed liquids total 999.5 mL whereas the provider declares 1000 mL; retain this limit rather than inventing makeup.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Shared trace stock H3BO3",
+    "field_path": "solutions[0].composition",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ1077api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1077",
+        "source_locator": "$.data.solutions[1].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\": 30,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\": 0.485123,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66"
+      },
+      {
+        "source_key": "jcm439",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=439",
+        "source_locator": "Trace element solution subsection row 3",
+        "exact_source_quote": "H 3 BO 3 30.0 mg",
+        "snapshot_sha256": "2a71115d17d54beb8454d4106e93dd60364885a914eee9d1c434ee15f510ceda",
+        "parsed_text_sha256": "d678d0e3ec848ea6d029f04800693f55fdbfab8dbb3b45924645cfff6e24b74b"
+      }
+    ],
+    "rationale": "Restore the exact trace-stock batch quantity in the empty composition, separate from its 1 mL receiving dose. 25% HCl has unspecified basis. Listed liquids total 999.5 mL whereas the provider declares 1000 mL; retain this limit rather than inventing makeup.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Shared trace stock MnCl2 x 4 H2O",
+    "field_path": "solutions[0].composition",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ1077api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1077",
+        "source_locator": "$.data.solutions[1].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\": 36,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66"
+      },
+      {
+        "source_key": "jcm439",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=439",
+        "source_locator": "Trace element solution subsection row 4",
+        "exact_source_quote": "MnCl 2 ·4H 2 O 100.0 mg",
+        "snapshot_sha256": "2a71115d17d54beb8454d4106e93dd60364885a914eee9d1c434ee15f510ceda",
+        "parsed_text_sha256": "d678d0e3ec848ea6d029f04800693f55fdbfab8dbb3b45924645cfff6e24b74b"
+      }
+    ],
+    "rationale": "Restore the exact trace-stock batch quantity in the empty composition, separate from its 1 mL receiving dose. 25% HCl has unspecified basis. Listed liquids total 999.5 mL whereas the provider declares 1000 mL; retain this limit rather than inventing makeup.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Shared trace stock CoCl2 x 6 H2O",
+    "field_path": "solutions[0].composition",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ1077api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1077",
+        "source_locator": "$.data.solutions[1].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\": 38,\n                        \"amount\": 190,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.19,\n                        \"mmol_l\": 1.46335,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66"
+      },
+      {
+        "source_key": "jcm439",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=439",
+        "source_locator": "Trace element solution subsection row 5",
+        "exact_source_quote": "CoCl 2 ·6H 2 O 190.0 mg",
+        "snapshot_sha256": "2a71115d17d54beb8454d4106e93dd60364885a914eee9d1c434ee15f510ceda",
+        "parsed_text_sha256": "d678d0e3ec848ea6d029f04800693f55fdbfab8dbb3b45924645cfff6e24b74b"
+      }
+    ],
+    "rationale": "Restore the exact trace-stock batch quantity in the empty composition, separate from its 1 mL receiving dose. 25% HCl has unspecified basis. Listed liquids total 999.5 mL whereas the provider declares 1000 mL; retain this limit rather than inventing makeup.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Shared trace stock NiCl2 x 6 H2O",
+    "field_path": "solutions[0].composition",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ1077api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1077",
+        "source_locator": "$.data.solutions[1].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\": 40,\n                        \"amount\": 24,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.024,\n                        \"mmol_l\": 0.185187,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66"
+      },
+      {
+        "source_key": "jcm439",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=439",
+        "source_locator": "Trace element solution subsection row 6",
+        "exact_source_quote": "NiCl 2 ·6H 2 O 24.0 mg",
+        "snapshot_sha256": "2a71115d17d54beb8454d4106e93dd60364885a914eee9d1c434ee15f510ceda",
+        "parsed_text_sha256": "d678d0e3ec848ea6d029f04800693f55fdbfab8dbb3b45924645cfff6e24b74b"
+      }
+    ],
+    "rationale": "Restore the exact trace-stock batch quantity in the empty composition, separate from its 1 mL receiving dose. 25% HCl has unspecified basis. Listed liquids total 999.5 mL whereas the provider declares 1000 mL; retain this limit rather than inventing makeup.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Shared trace stock CuCl2 x 2 H2O",
+    "field_path": "solutions[0].composition",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ1077api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1077",
+        "source_locator": "$.data.solutions[1].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"CuCl2 x 2 H2O\",\n                        \"compound_id\": 39,\n                        \"amount\": 2,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\": 0.0117314,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66"
+      },
+      {
+        "source_key": "jcm439",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=439",
+        "source_locator": "Trace element solution subsection row 7",
+        "exact_source_quote": "CuCl 2 ·2H 2 O 2.0 mg",
+        "snapshot_sha256": "2a71115d17d54beb8454d4106e93dd60364885a914eee9d1c434ee15f510ceda",
+        "parsed_text_sha256": "d678d0e3ec848ea6d029f04800693f55fdbfab8dbb3b45924645cfff6e24b74b"
+      }
+    ],
+    "rationale": "Restore the exact trace-stock batch quantity in the empty composition, separate from its 1 mL receiving dose. 25% HCl has unspecified basis. Listed liquids total 999.5 mL whereas the provider declares 1000 mL; retain this limit rather than inventing makeup.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Shared trace stock ZnSO4 x 7 H2O",
+    "field_path": "solutions[0].composition",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ1077api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1077",
+        "source_locator": "$.data.solutions[1].recipe[7]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"ZnSO4 x 7 H2O\",\n                        \"compound_id\": 35,\n                        \"amount\": 144,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.144,\n                        \"mmol_l\": 0.500763,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66"
+      },
+      {
+        "source_key": "jcm439",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=439",
+        "source_locator": "Trace element solution subsection row 8",
+        "exact_source_quote": "ZnSO 4 ·7H 2 O 144.0 mg",
+        "snapshot_sha256": "2a71115d17d54beb8454d4106e93dd60364885a914eee9d1c434ee15f510ceda",
+        "parsed_text_sha256": "d678d0e3ec848ea6d029f04800693f55fdbfab8dbb3b45924645cfff6e24b74b"
+      }
+    ],
+    "rationale": "Restore the exact trace-stock batch quantity in the empty composition, separate from its 1 mL receiving dose. 25% HCl has unspecified basis. Listed liquids total 999.5 mL whereas the provider declares 1000 mL; retain this limit rather than inventing makeup.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Shared trace stock Na2MoO4 x 2 H2O",
+    "field_path": "solutions[0].composition",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ1077api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1077",
+        "source_locator": "$.data.solutions[1].recipe[8]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\": 36,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.036,\n                        \"mmol_l\": 0.148791,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66"
+      },
+      {
+        "source_key": "jcm439",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=439",
+        "source_locator": "Trace element solution subsection row 9",
+        "exact_source_quote": "Na 2 MoO 4 ·2H 2 O 36.0 mg",
+        "snapshot_sha256": "2a71115d17d54beb8454d4106e93dd60364885a914eee9d1c434ee15f510ceda",
+        "parsed_text_sha256": "d678d0e3ec848ea6d029f04800693f55fdbfab8dbb3b45924645cfff6e24b74b"
+      }
+    ],
+    "rationale": "Restore the exact trace-stock batch quantity in the empty composition, separate from its 1 mL receiving dose. 25% HCl has unspecified basis. Listed liquids total 999.5 mL whereas the provider declares 1000 mL; retain this limit rather than inventing makeup.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Shared trace stock Distilled water",
+    "field_path": "solutions[0].composition",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ1077api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1077",
+        "source_locator": "$.data.solutions[1].recipe[9]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 987,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66"
+      },
+      {
+        "source_key": "jcm439",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=439",
+        "source_locator": "Trace element solution subsection row 10",
+        "exact_source_quote": "Distilled water 987.0 ml",
+        "snapshot_sha256": "2a71115d17d54beb8454d4106e93dd60364885a914eee9d1c434ee15f510ceda",
+        "parsed_text_sha256": "d678d0e3ec848ea6d029f04800693f55fdbfab8dbb3b45924645cfff6e24b74b"
+      }
+    ],
+    "rationale": "Restore the exact trace-stock batch quantity in the empty composition, separate from its 1 mL receiving dose. 25% HCl has unspecified basis. Listed liquids total 999.5 mL whereas the provider declares 1000 mL; retain this limit rather than inventing makeup.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ]
+  }
+]
+
+### Two explicitly different maintained source formulations
+
+identity: concern. Targets: CultureMech:007669.
+
+CM007669/M1146/JCM1077 and CM007670/M1147/JCM1078 are exact distinct contributors. LACV uses 940 mL water, 10 g NaCl, 3 g thiosulfate pentahydrate and 20 mL 10% w/v yeast stock; 3B uses 910 mL, 1 g, 1.5 g and 50 mL. The target retains LACV quantities while listing 3B as a synonym and merged source. Ingredient-set identity does not establish formulation equivalence.
+
+### Batch masses, additions, stock definitions and denominators
+
+consistency: concern. Targets: CultureMech:007669.
+
+Every concentration in all three layers is covered separately by source version. Resazurin mg and all liquid mL entries were copied into g/L. Even numeric gram rows require explicit batch basis: both sources list 1007 mL of liquids, and both provider declarations are 1007 mL; neither proves measured final volume after titration and dissolution. Crotonic acid gives 10 mmol delivered, and yeast stock gives 2 g versus 5 g, without an inferred final denominator.
+
+### Exact M439 trace subsection and four empty stock stubs
+
+completeness: concern. Targets: CultureMech:007669.
+
+The full local CM009824 dependency was inspected and its current primary/provider identities resolved. Only its ten-row trace subsection is relevant here. Its main medium, lactate and M431/M401 references are not inherited. The four Unknown solution entries have empty compositions and wrong addition units; trace acid percentage basis and the 999.5-versus-1000 mL stock basis remain explicit limits.
+
+### Source-specific order, gas atmosphere and pH
+
+completeness: concern. Targets: CultureMech:007669.
+
+Both owners and target omit preparation and pH. The exact sources specify initial pH 9.0 with NaOH, autoclaving under N2, cooling before replacement by N2/CO2 4:1 v/v, later anaerobic stocks autoclaved and stored under N2, and final pH around 8.5. Each exact page displays the conditional 121°C/15 min default. No absolute gas amount, titrant dose or unspecified percentage basis is supplied.
+
+### Chemical form, classification and biological claim limits
+
+scope: supported. Targets: CultureMech:007669.
+
+Asserted direct hydrate terms match magnesium hexahydrate and thiosulfate pentahydrate; no chemical identifier is invented for the crotonic-acid stock or unresolved stock placeholders. COMPLEX/UNDEFINED and LIQUID fit yeast extract and the liquid formulation. The medium names do not assert a specific strain, taxon, assembly, DOI/PMID or experimentally verified growth claim. Transferred trace-stock chemistry remains stock-scoped; the parent medium is not a growth claim for this target.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:007669.
+
+35 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Maintained contributors and current transform responsibilities
+
+provenance: concern. Targets: CultureMech:007669.
+
+The target reproduces LACV while retaining a distinct 3B contributor as a synonym. Current formulation merging rejects incompatible content rather than accepting ingredient-set similarity; current TOGO parsing separates stocks/comments and distinguishes mg/mL, while migration can preserve unresolved stubs and copied concentrations. Current code is not a replay proving historical execution. Corrections belong in both maintained owners plus a bounded merge-identity decision before regeneration.
+
+## Findings
+
+### f1: Distinct LACV and 3B formulations are merged as synonyms
+
+blocker / open / confirmed; issue key: culturemech.007669.distinct-formulations.
+
+Four exact source quantities differ between JCM1077 and JCM1078, including a tenfold NaCl difference and 20 versus 50 mL yeast stock. The target preserves one formulation while claiming the second as its synonym/merged contributor.
+
+### f2: Liquid stock additions and resazurin mass are represented as g/L
+
+blocker / open / confirmed; issue key: culturemech.007669.units-and-stocks.
+
+Both owners and the generated target turn water and five liquid additions into mass concentrations, including 20 g/L crotonic acid instead of 20 mL 0.5 M stock and 1 g/L resazurin instead of 1 mg per listed batch. Four stock definitions remain empty. These combined unit/stage errors make the represented medium materially different from either named source.
+
+### f3: The source-specific pH and anaerobic preparation are omitted
+
+major / open / confirmed; issue key: culturemech.007669.preparation.
+
+Neither owner nor target retains initial/final pH, gas replacement ratio, separate anaerobic stock preparation or the exact page sterilization default. These conditions are needed to reproduce the named formulations.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Separate the two source formulations through an explicit maintained-input and merge decision, preserving both stable IDs and source-specific quantities. Do not average or overwrite either formulation; regenerate only after authorized identity reconciliation.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Restore exact source masses, solvent volumes, stock strengths, dose units and trace-stock composition in each maintained owner with claim-level snippets. Keep the two formulations and unresolved percentage/final-volume bases separate.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Restore the exact source-scoped sequence and quantitative preparation contexts with evidence, retaining unquantified titration/gas amounts and approximate final pH. Do not insert a generic protocol.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ALKALIPHILUS_LACV_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-1 | data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ALKALIPHILUS_LACV_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ALKALIPHILUS_LACV_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch023/224/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-023/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch023/224/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ALKALIPHILUS_LACV_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ALKALIPHILUS_LACV_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/ALKALIPHILUS_LACV_MEDIUM.yaml:1:id: CultureMech:007669<br>./data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml:1:id: CultureMech:007669<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch023/source-preflight-bound/224/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 33 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| bound-context | /private/tmp/culturemech-review-work-batch023/source-preflight-bound/224/evidence-context-original.json; Complete frozen source context rebound to every fresh native input | context_only | All context input hashes match the fresh native inspection. The preflight remains historical preparation; this assessment uses the current bound record catalog and native input hashes. |
+| jcm1077 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1077; Complete exact formulation, source identity, all rows and preparation | supports | Independent formulation identity and stage-scoped quantities; LACV and 3B are not interchangeable. |
+| jcm1078 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1078; Complete exact formulation, source identity, all rows and preparation | supports | Independent formulation identity and stage-scoped quantities; LACV and 3B are not interchangeable. |
+| togoM1146 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146; Complete exact formulation, source identity, all rows and preparation | supports | Independent formulation identity and stage-scoped quantities; LACV and 3B are not interchangeable. |
+| togoM1147 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147; Complete exact formulation, source identity, all rows and preparation | supports | Independent formulation identity and stage-scoped quantities; LACV and 3B are not interchangeable. |
+| mediadiveJ1077api | https://mediadive.dsmz.de/rest/medium/J1077; Complete exact formulation, source identity, all rows and preparation | supports | Independent formulation identity and stage-scoped quantities; LACV and 3B are not interchangeable. |
+| mediadiveJ1078api | https://mediadive.dsmz.de/rest/medium/J1078; Complete exact formulation, source identity, all rows and preparation | supports | Independent formulation identity and stage-scoped quantities; LACV and 3B are not interchangeable. |
+| jcm439 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=439; Trace-element subsection / solution 4186 only | supports | Ten-row trace-element stock transferred by the explicit M439/JCM439 reference. The parent main medium and its other referenced stocks are excluded. |
+| togoM439 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M439; Trace-element subsection / solution 4186 only | supports | Ten-row trace-element stock transferred by the explicit M439/JCM439 reference. The parent main medium and its other referenced stocks are excluded. |
+| mediadiveJ439api | https://mediadive.dsmz.de/rest/medium/J439; Trace-element subsection / solution 4186 only | supports | Ten-row trace-element stock transferred by the explicit M439/JCM439 reference. The parent main medium and its other referenced stocks are excluded. |
+| solution4186 | https://mediadive.dsmz.de/rest/solution/4186; Trace-element subsection / solution 4186 only | supports | Ten-row trace-element stock transferred by the explicit M439/JCM439 reference. The parent main medium and its other referenced stocks are excluded. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:15377 resolves to water. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi16526 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16526; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:16526 resolves to carbon dioxide. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi17997 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17997; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:17997 resolves to dinitrogen. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:26710 resolves to sodium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31206 resolves to ammonium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32145 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32145; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32145 resolves to sodium hydroxide. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32150 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32150; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32150 resolves to sodium thiosulfate pentahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32588 resolves to potassium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86345 resolves to magnesium dichloride hexahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:8806 resolves to Resazurin. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi9754 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_9754; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:9754 resolves to tris. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131527": [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15377": [{"label": "Distilled water", "match_type": "preferred_term", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31206": [{"label": "NH4Cl", "match_type": "preferred_term", "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32145": [{"label": "NaOH", "match_type": "preferred_term", "identifier": "CHEBI:32145", "preferred_term": "NaOH", "ontology_id": "CHEBI:32145", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32588": [{"label": "KCl", "match_type": "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:8806": [{"label": "Resazurin", "match_type": "preferred_term", "identifier": "CHEBI:8806", "preferred_term": "Resazurin", "ontology_id": "CHEBI:8806", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:9754": [{"label": "Tris base", "match_type": "preferred_term", "identifier": "CHEBI:9754", "preferred_term": "Tris base", "ontology_id": "CHEBI:9754", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch023/224/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| quantity-local-fields | /private/tmp/culturemech-review-work-batch023/224/quantity-local-field-audit.json; All quantity layer paths and exact stored values against full inspected YAML | context_only | Every local concentration is covered; every layer locator resolves to its exact stored value or explicitly absent intended container. Source locators remain in source_snippets. |
+| writer-context-0 | src/culturemech/merge/formulation.py; formulation_content lines 48–70; merge_formulation_evidence lines 92–128 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| writer-context-1 | src/culturemech/import/mediadive_importer.py; _parse_api_composition lines 455–537; _is_api_stock_addition lines 563–570; _parse_api_solutions lines 593–621; _normalize_unit lines 623–651; _parse_preparation_steps lines 653–721 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| writer-context-2 | scripts/cleanup_media_quality.py; normalize_name lines 76–82; _merge_ingredient_group lines 148–216 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| writer-context-3 | src/culturemech/import/togo_importer.py; _ingredient_from_item lines 273–339; _extract_primary_components lines 587–641; _extract_preparation_steps lines 644–668; _parse_unit lines 713–746; _extract_ph lines 748–775 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| writer-context-4 | scripts/migrate_solutions_from_ingredients.py; _extract_medium_reference lines 108–125; _resolve_solution lines 127–199 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| history-metadata | data/merge_yaml/merged/ALKALIPHILUS_LACV_MEDIUM.yaml; data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml; data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 13, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml", "events": 11, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml", "events": 11, "timestamp_issues": []}] |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Final measured medium volume is not established by the 1007 mL sum/provider declaration. Trace-stock listed liquids total 999.5 mL versus a 1000 mL provider declaration; no missing makeup is invented.
+- Carbonate 8%, sulfide 5% and trace-stock HCl 25% lack an explicit percent basis. Absolute gas and NaOH titrant doses are unquantified. Parent M439 main-medium quantities and other stock references are excluded from transfer.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T133215Z-culturemech-007669-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: alkaliphilus_lacv_medium (CultureMech:007669)'
+started_at: '2026-10-21T13:27:12Z'
+finished_at: '2026-10-21T13:32:15Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: 'The generated record merges two distinct formulations: JCM 1077 LACV and
+  JCM 1078 3B differ in water, NaCl, thiosulfate and yeast-stock dose. Both maintained
+  contributors also encode liquid additions and 1 mg resazurin as g/L, omit source
+  preparation and leave four stock placeholders. Keep the formulations separate and
+  restore source stages without inventing a final volume or percentage basis.'
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ALKALIPHILUS_LACV_MEDIUM.yaml
+    sha256: 5f99ee25ce96ba74e63f3c8c3b8d50f4c33257567e0a53c396a119782d08b8dc
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml
+    sha256: 403d86cc591979de3a82d97ca3561da2ae29a32117f938d4acfa1a82d08c6418
+    role: context
+  - path: data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml
+    sha256: a39801f1764aceadf05b6e7ee948fbf0f34016a87741aa0cb4b97faad7861b6b
+    role: context
+  - path: data/normalized_yaml/bacterial/TOGO_M439_Desulfovibrio_Aerotolerans_DVO5_Medium.yaml
+    sha256: 61b72e39e60ca8f44e869309dd78d47a3277760d3bf16ffaaaac30da77fab6b0
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/convert/togo_raw_yaml.py
+    sha256: ce5e73545c9ecde54724259d2fd475676c0f3cb44dcfd283950e89fd49c10993
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/fetch/togo_fetcher.py
+    sha256: 7aac40fe1d47e30810ae0be02f6e369ddb9bf657d630072595c62f46fb0bf339
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 224; batch 023 item 4 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding twenty-two task batches
+    contain 220 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 223 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:007669
+targets:
+- target_id: CultureMech:007669
+  path: data/merge_yaml/merged/ALKALIPHILUS_LACV_MEDIUM.yaml
+  label: alkaliphilus_lacv_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ALKALIPHILUS_LACV_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:007669
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ALKALIPHILUS_LACV_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch023/224/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-023/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch023/224/strict.tsv"
+  target_ids:
+  - CultureMech:007669
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ALKALIPHILUS_LACV_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:007669
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ALKALIPHILUS_LACV_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:007669
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:007669
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ALKALIPHILUS_LACV_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T13:32:13Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:32:13Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:32:13Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ALKALIPHILUS_LACV_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T13:27:42.289202Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ALKALIPHILUS_LACV_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch023/224/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T13:27:43.946399Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-023/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch023/224/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ALKALIPHILUS_LACV_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T13:27:46.053391Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ALKALIPHILUS_LACV_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T13:27:47.293357Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T13:32:13Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ALKALIPHILUS_LACV_MEDIUM.yaml:1:id: CultureMech:007669
+
+    ./data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml:1:id:
+    CultureMech:007669
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch023/source-preflight-bound/224/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T13:32:13Z'
+  support: supports
+  summary: 33 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 49056515a22926bfd3a350ad41d340119ae4bfd076788d1846aa1e277b9ae318
+- evidence_id: bound-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch023/source-preflight-bound/224/evidence-context-original.json
+  locator: Complete frozen source context rebound to every fresh native input
+  accessed_at: '2026-10-21T13:32:13Z'
+  support: context_only
+  summary: All context input hashes match the fresh native inspection. The preflight
+    remains historical preparation; this assessment uses the current bound record
+    catalog and native input hashes.
+  snapshot_sha256: 9ae54725400bf6407ef1895bda8c4678b027d920a1d6a3d82db89bd123671ebc
+- evidence_id: jcm1077
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1077
+  locator: Complete exact formulation, source identity, all rows and preparation
+  accessed_at: '2026-10-21T13:13:22.248049Z'
+  support: supports
+  summary: Independent formulation identity and stage-scoped quantities; LACV and
+    3B are not interchangeable.
+  snapshot_sha256: 03ee6fa181d53b8860293521df949a4750a7204b5d32e4437729ceb2876cf1b9
+- evidence_id: jcm1078
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1078
+  locator: Complete exact formulation, source identity, all rows and preparation
+  accessed_at: '2026-10-21T13:13:22.252078Z'
+  support: supports
+  summary: Independent formulation identity and stage-scoped quantities; LACV and
+    3B are not interchangeable.
+  snapshot_sha256: c5405b19033eb2456a48b85ed49d2da9e6919a93f575bb20571fc2bebb5d3d20
+- evidence_id: togoM1146
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146
+  locator: Complete exact formulation, source identity, all rows and preparation
+  accessed_at: '2026-10-21T13:13:19.212517Z'
+  support: supports
+  summary: Independent formulation identity and stage-scoped quantities; LACV and
+    3B are not interchangeable.
+  snapshot_sha256: 38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed
+- evidence_id: togoM1147
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147
+  locator: Complete exact formulation, source identity, all rows and preparation
+  accessed_at: '2026-10-21T13:13:19.593359Z'
+  support: supports
+  summary: Independent formulation identity and stage-scoped quantities; LACV and
+    3B are not interchangeable.
+  snapshot_sha256: 02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c
+- evidence_id: mediadiveJ1077api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J1077
+  locator: Complete exact formulation, source identity, all rows and preparation
+  accessed_at: '2026-10-21T13:13:18.387655Z'
+  support: supports
+  summary: Independent formulation identity and stage-scoped quantities; LACV and
+    3B are not interchangeable.
+  snapshot_sha256: 1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66
+- evidence_id: mediadiveJ1078api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J1078
+  locator: Complete exact formulation, source identity, all rows and preparation
+  accessed_at: '2026-10-21T13:13:19.035473Z'
+  support: supports
+  summary: Independent formulation identity and stage-scoped quantities; LACV and
+    3B are not interchangeable.
+  snapshot_sha256: 20edccd4225379e1204d7aea905c40f7e44443a72cf78f299fdb3db3399915f1
+- evidence_id: jcm439
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=439
+  locator: Trace-element subsection / solution 4186 only
+  accessed_at: '2026-10-21T13:13:22.895121Z'
+  support: supports
+  summary: Ten-row trace-element stock transferred by the explicit M439/JCM439 reference.
+    The parent main medium and its other referenced stocks are excluded.
+  snapshot_sha256: 2a71115d17d54beb8454d4106e93dd60364885a914eee9d1c434ee15f510ceda
+- evidence_id: togoM439
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M439
+  locator: Trace-element subsection / solution 4186 only
+  accessed_at: '2026-10-21T13:13:19.779835Z'
+  support: supports
+  summary: Ten-row trace-element stock transferred by the explicit M439/JCM439 reference.
+    The parent main medium and its other referenced stocks are excluded.
+  snapshot_sha256: 8f66c42a9c785a07759e4c017d8253f0acb25d377dce0f49e79a7c9b800ba35c
+- evidence_id: mediadiveJ439api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J439
+  locator: Trace-element subsection / solution 4186 only
+  accessed_at: '2026-10-21T13:13:19.051451Z'
+  support: supports
+  summary: Ten-row trace-element stock transferred by the explicit M439/JCM439 reference.
+    The parent main medium and its other referenced stocks are excluded.
+  snapshot_sha256: bd88506b6949b572a8d75aab9c15e5b089094d91cc937ac8d75e5d4e6915c86b
+- evidence_id: solution4186
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/4186
+  locator: Trace-element subsection / solution 4186 only
+  accessed_at: '2026-10-21T13:16:27.281710Z'
+  support: supports
+  summary: Ten-row trace-element stock transferred by the explicit M439/JCM439 reference.
+    The parent main medium and its other referenced stocks are excluded.
+  snapshot_sha256: 104475acbfd9e199735303c55a1b511736ad3e5675d752d771afb58d0fa151c0
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.097802Z'
+  support: supports
+  summary: CHEBI:15377 resolves to water. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi16526
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16526
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.337128Z'
+  support: supports
+  summary: CHEBI:16526 resolves to carbon dioxide. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 19b976653e14322f23a21b90b537bfcd19bb4e73d8d0de96446a25888cd3caf6
+- evidence_id: chebi17997
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17997
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:27.385647Z'
+  support: supports
+  summary: CHEBI:17997 resolves to dinitrogen. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: ea4b3f90994884c49607689e3f3939cfec804c7d17905bbeecfc0ef7f80ead43
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi31206
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.439407Z'
+  support: supports
+  summary: CHEBI:31206 resolves to ammonium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi32145
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32145
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:33:28.263004Z'
+  support: supports
+  summary: CHEBI:32145 resolves to sodium hydroxide. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: db4eb7586e3b04f5b2ae39b47bae7c1c533316f9bce15ee2829bf6967ca352f1
+- evidence_id: chebi32150
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32150
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T11:01:47.429763Z'
+  support: supports
+  summary: CHEBI:32150 resolves to sodium thiosulfate pentahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 910d65eb9be29c9371cb79a32bcbe81bdb57d8143d21fbf7c4a1a915b5a79999
+- evidence_id: chebi32588
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.045588Z'
+  support: supports
+  summary: CHEBI:32588 resolves to potassium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi86345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.382026Z'
+  support: supports
+  summary: CHEBI:86345 resolves to magnesium dichloride hexahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: chebi8806
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.774007Z'
+  support: supports
+  summary: CHEBI:8806 resolves to Resazurin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: chebi9754
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_9754
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:43:13.713319Z'
+  support: supports
+  summary: CHEBI:9754 resolves to tris. Identifier existence and label metadata do
+    not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: b9f921dfa34f343d4ef51ee217fc47702a8f03e2b9a8353effa10de89e9c6659
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T13:32:13Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131527":
+    [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527",
+    "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:15377": [{"label": "Distilled water", "match_type":
+    "preferred_term", "identifier": "CHEBI:15377", "preferred_term": "Distilled water",
+    "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier":
+    "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:31206": [{"label": "NH4Cl", "match_type":
+    "preferred_term", "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id":
+    "CHEBI:31206", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32145":
+    [{"label": "NaOH", "match_type": "preferred_term", "identifier": "CHEBI:32145",
+    "preferred_term": "NaOH", "ontology_id": "CHEBI:32145", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:32588": [{"label": "KCl", "match_type": "preferred_term",
+    "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label":
+    "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term":
+    "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:8806": [{"label": "Resazurin", "match_type": "preferred_term",
+    "identifier": "CHEBI:8806", "preferred_term": "Resazurin", "ontology_id": "CHEBI:8806",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:9754": [{"label":
+    "Tris base", "match_type": "preferred_term", "identifier": "CHEBI:9754", "preferred_term":
+    "Tris base", "ontology_id": "CHEBI:9754", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch023/224/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T13:32:13Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: fbdba6fdec9de1a8343d80a7279c4ee0b6d5a8c3d5b53369358162422dca0d36
+- evidence_id: quantity-local-fields
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch023/224/quantity-local-field-audit.json
+  locator: All quantity layer paths and exact stored values against full inspected
+    YAML
+  accessed_at: '2026-10-21T13:32:13Z'
+  support: context_only
+  summary: Every local concentration is covered; every layer locator resolves to its
+    exact stored value or explicitly absent intended container. Source locators remain
+    in source_snippets.
+  snapshot_sha256: 252a8bbd1ffcdb9df7b7c8d901e0fa47d34d084ffdcda4a06554e3bc3139fea7
+- evidence_id: writer-context-0
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content lines 48–70; merge_formulation_evidence lines 92–128
+  accessed_at: '2026-10-21T13:32:13Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-context-1
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition lines 455–537; _is_api_stock_addition lines 563–570;
+    _parse_api_solutions lines 593–621; _normalize_unit lines 623–651; _parse_preparation_steps
+    lines 653–721
+  accessed_at: '2026-10-21T13:32:13Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-context-2
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: normalize_name lines 76–82; _merge_ingredient_group lines 148–216
+  accessed_at: '2026-10-21T13:32:13Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer-context-3
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: _ingredient_from_item lines 273–339; _extract_primary_components lines
+    587–641; _extract_preparation_steps lines 644–668; _parse_unit lines 713–746;
+    _extract_ph lines 748–775
+  accessed_at: '2026-10-21T13:32:13Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: writer-context-4
+  kind: record_content
+  reference: scripts/migrate_solutions_from_ingredients.py
+  locator: _extract_medium_reference lines 108–125; _resolve_solution lines 127–199
+  accessed_at: '2026-10-21T13:32:13Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ALKALIPHILUS_LACV_MEDIUM.yaml; data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml;
+    data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T13:32:13Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 13, "timestamp_issues": []}, {"input":
+    "data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml", "events":
+    11, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml",
+    "events": 11, "timestamp_issues": []}]'
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:007669
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and pinned secondary identifier metadata
+  outcome: supported
+  summary: '13 distinct asserted primary/secondary IDs resolve to matching nonobsolete
+    labels in all inspected layers. Target linkage: 13/14 primary and 9/14 secondary
+    instances; all asserted mediaingredientmech_chebi_term keys have exact pinned
+    MIM rows. Source forms are assessed separately.'
+  target_ids:
+  - CultureMech:007669
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - owner-1
+  - chebi131527
+  - chebi15377
+  - chebi16526
+  - chebi17997
+  - chebi26710
+  - chebi31206
+  - chebi32145
+  - chebi32150
+  - chebi32588
+  - chebi63036
+  - chebi86345
+  - chebi8806
+  - chebi9754
+  details: 'Instance coverage on a 0–100 percent scale, denominator 14: primary 92.86%;
+    secondary 64.29%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 62 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:007669
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"ingredient_or_context\": \"LACV Distilled water\",\n   \
+    \ \"field_path\": \"ingredients[0].concentration\",\n    \"decision\": \"correct\"\
+    ,\n    \"local\": {\n      \"value\": \"940\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM1146\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146\"\
+    ,\n        \"source_locator\": \"$.components[0].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 940,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\": \"\
+    38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed\"\n      },\n\
+    \      {\n        \"source_key\": \"mediadiveJ1077api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J1077\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[10]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 11,\\n                        \\\
+    \"compound\\\": \\\"Distilled water\\\",\\n                        \\\"compound_id\\\
+    \": 4,\\n                        \\\"amount\\\": 940,\\n                     \
+    \   \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66\"\
+    \n      }\n    ],\n    \"rationale\": \"Source water is a preparation volume in\
+    \ mL, not mass concentration. Retain this formulation’s distinct water amount.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[0].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"940\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"940\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"No\
+    \ density conversion or measured final volume is established.\"\n  },\n  {\n \
+    \   \"ingredient_or_context\": \"LACV NaCl\",\n    \"field_path\": \"ingredients[1].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": {\n      \"value\": \"10\",\n\
+    \      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"togoM1146\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146\"\
+    ,\n        \"source_locator\": \"$.components[0].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NaCl\\\",\\n          \\\"volume\\\": 10,\\n \
+    \         \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1077api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J1077\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"NaCl\\\",\\n                        \\\"compound_id\\\": 43,\\\
+    n                        \\\"amount\\\": 10,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 9.93049,\\n            \
+    \            \\\"mmol_l\\\": 169.926,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66\"\
+    \n      }\n    ],\n    \"rationale\": \"The number preserves this source’s batch\
+    \ mass but local G_PER_L lacks the source batch/stage basis. Restore the mass\
+    \ and documented basis; do not assert that the 1007 mL provider declaration is\
+    \ a measured final volume.\",\n    \"action_taken\": \"Review only; no recipe\
+    \ change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"Source\
+    \ 10 g; conditional provider nominal g/L = 10 / 1.007. Other formulation quantities\
+    \ are not substituted.\"\n  },\n  {\n    \"ingredient_or_context\": \"LACV KH2PO4\"\
+    ,\n    \"field_path\": \"ingredients[2].concentration\",\n    \"decision\": \"\
+    correct\",\n    \"local\": {\n      \"value\": \"0.1\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM1146\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146\"\
+    ,\n        \"source_locator\": \"$.components[0].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"KH2PO4\\\",\\n          \\\"volume\\\": 0.1,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1077api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J1077\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"KH2PO4\\\",\\n                        \\\"compound_id\\\": 11,\\\
+    n                        \\\"amount\\\": 0.1,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 0.0993049,\\n          \
+    \              \\\"mmol_l\\\": 0.729721,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66\"\
+    \n      }\n    ],\n    \"rationale\": \"The number preserves this source’s batch\
+    \ mass but local G_PER_L lacks the source batch/stage basis. Restore the mass\
+    \ and documented basis; do not assert that the 1007 mL provider declaration is\
+    \ a measured final volume.\",\n    \"action_taken\": \"Review only; no recipe\
+    \ change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"Source\
+    \ 0.1 g; conditional provider nominal g/L = 0.1 / 1.007. Other formulation quantities\
+    \ are not substituted.\"\n  },\n  {\n    \"ingredient_or_context\": \"LACV NH4Cl\"\
+    ,\n    \"field_path\": \"ingredients[3].concentration\",\n    \"decision\": \"\
+    correct\",\n    \"local\": {\n      \"value\": \"1\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM1146\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146\"\
+    ,\n        \"source_locator\": \"$.components[0].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NH4Cl\\\",\\n          \\\"volume\\\": 1,\\n \
+    \         \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1077api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J1077\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"NH4Cl\\\",\\n                        \\\"compound_id\\\": 42,\\\
+    n                        \\\"amount\\\": 1,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 0.993049,\\n           \
+    \             \\\"mmol_l\\\": 18.5651,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66\"\
+    \n      }\n    ],\n    \"rationale\": \"The number preserves this source’s batch\
+    \ mass but local G_PER_L lacks the source batch/stage basis. Restore the mass\
+    \ and documented basis; do not assert that the 1007 mL provider declaration is\
+    \ a measured final volume.\",\n    \"action_taken\": \"Review only; no recipe\
+    \ change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"Source\
+    \ 1 g; conditional provider nominal g/L = 1 / 1.007. Other formulation quantities\
+    \ are not substituted.\"\n  },\n  {\n    \"ingredient_or_context\": \"LACV K2HPO4\"\
+    ,\n    \"field_path\": \"ingredients[4].concentration\",\n    \"decision\": \"\
+    correct\",\n    \"local\": {\n      \"value\": \"0.1\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM1146\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146\"\
+    ,\n        \"source_locator\": \"$.components[0].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"K2HPO4\\\",\\n          \\\"volume\\\": 0.1,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1077api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J1077\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"K2HPO4\\\",\\n                        \\\"compound_id\\\": 10,\\\
+    n                        \\\"amount\\\": 0.1,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 0.0993049,\\n          \
+    \              \\\"mmol_l\\\": 0.570141,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66\"\
+    \n      }\n    ],\n    \"rationale\": \"The number preserves this source’s batch\
+    \ mass but local G_PER_L lacks the source batch/stage basis. Restore the mass\
+    \ and documented basis; do not assert that the 1007 mL provider declaration is\
+    \ a measured final volume.\",\n    \"action_taken\": \"Review only; no recipe\
+    \ change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"Source\
+    \ 0.1 g; conditional provider nominal g/L = 0.1 / 1.007. Other formulation quantities\
+    \ are not substituted.\"\n  },\n  {\n    \"ingredient_or_context\": \"LACV Resazurin\"\
+    ,\n    \"field_path\": \"ingredients[5].concentration\",\n    \"decision\": \"\
+    correct\",\n    \"local\": {\n      \"value\": \"1\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM1146\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146\"\
+    ,\n        \"source_locator\": \"$.components[0].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Resazurin\\\",\\n          \\\"volume\\\": 1,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1077api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J1077\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[9]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 10,\\n                        \\\
+    \"compound\\\": \\\"Resazurin\\\",\\n                        \\\"compound_id\\\
+    \": 25,\\n                        \\\"amount\\\": 1,\\n                      \
+    \  \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.000993049,\\\
+    n                        \\\"mmol_l\\\": 0.00433286,\\n                      \
+    \  \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Source resazurin is 1 mg per listed batch; 1\
+    \ g/L is a unit error. Restore source mass and explicit nominal basis separately.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[5].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"1\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"1 mg\
+    \ = 0.001 g. Conditional provider normalization: 0.001 g / 1.007 L = 0.000993048659\
+    \ g/L; this is not measured final volume.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"LACV MgCl2・6H2O\",\n    \"field_path\": \"ingredients[6].concentration\",\n\
+    \    \"decision\": \"correct\",\n    \"local\": {\n      \"value\": \"0.1\",\n\
+    \      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"togoM1146\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146\"\
+    ,\n        \"source_locator\": \"$.components[0].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MgCl2・6H2O\\\",\\n          \\\"volume\\\": 0.1,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1077api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J1077\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"MgCl2 x 6 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 79,\\n                        \\\"amount\\\": 0.1,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.0993049,\\\
+    n                        \\\"mmol_l\\\": 0.488457,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66\"\n      }\n\
+    \    ],\n    \"rationale\": \"The number preserves this source’s batch mass but\
+    \ local G_PER_L lacks the source batch/stage basis. Restore the mass and documented\
+    \ basis; do not assert that the 1007 mL provider declaration is a measured final\
+    \ volume.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"\
+    layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"field_path\"\
+    : \"ingredients[6].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"Source\
+    \ 0.1 g; conditional provider nominal g/L = 0.1 / 1.007. Other formulation quantities\
+    \ are not substituted.\"\n  },\n  {\n    \"ingredient_or_context\": \"LACV KCl\"\
+    ,\n    \"field_path\": \"ingredients[7].concentration\",\n    \"decision\": \"\
+    correct\",\n    \"local\": {\n      \"value\": \"0.1\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM1146\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146\"\
+    ,\n        \"source_locator\": \"$.components[0].items[7]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"KCl\\\",\\n          \\\"volume\\\": 0.1,\\n \
+    \         \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1077api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J1077\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"KCl\\\",\\n                        \\\"compound_id\\\": 61,\\\
+    n                        \\\"amount\\\": 0.1,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 0.0993049,\\n          \
+    \              \\\"mmol_l\\\": 1.33206,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66\"\
+    \n      }\n    ],\n    \"rationale\": \"The number preserves this source’s batch\
+    \ mass but local G_PER_L lacks the source batch/stage basis. Restore the mass\
+    \ and documented basis; do not assert that the 1007 mL provider declaration is\
+    \ a measured final volume.\",\n    \"action_taken\": \"Review only; no recipe\
+    \ change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"Source\
+    \ 0.1 g; conditional provider nominal g/L = 0.1 / 1.007. Other formulation quantities\
+    \ are not substituted.\"\n  },\n  {\n    \"ingredient_or_context\": \"LACV Tris\
+    \ base\",\n    \"field_path\": \"ingredients[8].concentration\",\n    \"decision\"\
+    : \"correct\",\n    \"local\": {\n      \"value\": \"3\",\n      \"unit\": \"\
+    G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM1146\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146\"\
+    ,\n        \"source_locator\": \"$.components[0].items[8]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Tris base\\\",\\n          \\\"volume\\\": 3,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1077api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J1077\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"Tris base\\\",\\n                        \\\"compound_id\\\"\
+    : 1698,\\n                        \\\"amount\\\": 3,\\n                      \
+    \  \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 2.97915,\\\
+    n                        \\\"mmol_l\\\": 24.5926,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66\"\n      }\n\
+    \    ],\n    \"rationale\": \"The number preserves this source’s batch mass but\
+    \ local G_PER_L lacks the source batch/stage basis. Restore the mass and documented\
+    \ basis; do not assert that the 1007 mL provider declaration is a measured final\
+    \ volume.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"\
+    layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"field_path\"\
+    : \"ingredients[8].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"3\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\": \"\
+    correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"Source\
+    \ 3 g; conditional provider nominal g/L = 3 / 1.007. Other formulation quantities\
+    \ are not substituted.\"\n  },\n  {\n    \"ingredient_or_context\": \"LACV Na2S2O3・5H2O\"\
+    ,\n    \"field_path\": \"ingredients[9].concentration\",\n    \"decision\": \"\
+    correct\",\n    \"local\": {\n      \"value\": \"3\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM1146\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146\"\
+    ,\n        \"source_locator\": \"$.components[0].items[9]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2S2O3・5H2O\\\",\\n          \\\"volume\\\":\
+    \ 3,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1077api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J1077\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[7]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 8,\\n                        \\\"\
+    compound\\\": \\\"Na2S2O3 x 5 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 65,\\n                        \\\"amount\\\": 3,\\n                      \
+    \  \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 2.97915,\\\
+    n                        \\\"mmol_l\\\": 12.0037,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66\"\n      }\n\
+    \    ],\n    \"rationale\": \"The number preserves this source’s batch mass but\
+    \ local G_PER_L lacks the source batch/stage basis. Restore the mass and documented\
+    \ basis; do not assert that the 1007 mL provider declaration is a measured final\
+    \ volume.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"\
+    layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"field_path\"\
+    : \"ingredients[9].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"3\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\": \"\
+    correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"Source\
+    \ 3 g; conditional provider nominal g/L = 3 / 1.007. Other formulation quantities\
+    \ are not substituted.\"\n  },\n  {\n    \"ingredient_or_context\": \"LACV NaOH\"\
+    ,\n    \"field_path\": \"ingredients[10].concentration\",\n    \"decision\": \"\
+    not_quantified\",\n    \"local\": {\n      \"value\": \"variable\",\n      \"\
+    unit\": \"VARIABLE\"\n    },\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"togoM1146\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146\"\
+    ,\n        \"source_locator\": \"$.components[0].items[11]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NaOH\\\"\",\n        \"snapshot_sha256\": \"38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed\"\
+    \n      }\n    ],\n    \"rationale\": \"The source supplies no fixed titrant or\
+    \ gas amount. Retain unquantified status while restoring the separate pH endpoint,\
+    \ gas ratio and preparation stages.\",\n    \"action_taken\": \"Review only; no\
+    \ recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[10].concentration\",\n      \
+    \  \"stored\": {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\
+    \n        },\n        \"decision\": \"not_quantified\"\n      },\n      {\n  \
+    \      \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"not_quantified\"\n      }\n    ]\n  },\n  {\n\
+    \    \"ingredient_or_context\": \"LACV Carbon dioxide gas\",\n    \"field_path\"\
+    : \"ingredients[11].concentration\",\n    \"decision\": \"not_quantified\",\n\
+    \    \"local\": {\n      \"value\": \"variable\",\n      \"unit\": \"VARIABLE\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM1146\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146\"\
+    ,\n        \"source_locator\": \"$.components[0].items[12]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Carbon dioxide gas\\\"\",\n        \"snapshot_sha256\"\
+    : \"38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The source supplies no fixed titrant or gas\
+    \ amount. Retain unquantified status while restoring the separate pH endpoint,\
+    \ gas ratio and preparation stages.\",\n    \"action_taken\": \"Review only; no\
+    \ recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[11].concentration\",\n      \
+    \  \"stored\": {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\
+    \n        },\n        \"decision\": \"not_quantified\"\n      },\n      {\n  \
+    \      \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"not_quantified\"\n      }\n    ]\n  },\n  {\n\
+    \    \"ingredient_or_context\": \"LACV N2\",\n    \"field_path\": \"ingredients[12].concentration\"\
+    ,\n    \"decision\": \"not_quantified\",\n    \"local\": {\n      \"value\": \"\
+    variable\",\n      \"unit\": \"VARIABLE\"\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM1146\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146\"\
+    ,\n        \"source_locator\": \"$.components[0].items[13]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"N2\\\"\",\n        \"snapshot_sha256\": \"38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed\"\
+    \n      }\n    ],\n    \"rationale\": \"The source supplies no fixed titrant or\
+    \ gas amount. Retain unquantified status while restoring the separate pH endpoint,\
+    \ gas ratio and preparation stages.\",\n    \"action_taken\": \"Review only; no\
+    \ recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[12].concentration\",\n      \
+    \  \"stored\": {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\
+    \n        },\n        \"decision\": \"not_quantified\"\n      },\n      {\n  \
+    \      \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"not_quantified\"\n      }\n    ]\n  },\n  {\n\
+    \    \"ingredient_or_context\": \"LACV 0.5 M Crotonic acid (pH 7.0)\",\n    \"\
+    field_path\": \"ingredients[13].concentration\",\n    \"decision\": \"correct\"\
+    ,\n    \"local\": {\n      \"value\": \"20\",\n      \"unit\": \"G_PER_L\"\n \
+    \   },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM1146\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146\"\
+    ,\n        \"source_locator\": \"$.components[1].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"0.5 M Crotonic acid (pH 7.0)\\\",\\n         \
+    \ \\\"volume\\\": 20,\\n          \\\"unit\\\": \\\"ml\\\",\\n          \\\"conc_value\\\
+    \": 0.5,\\n          \\\"conc_unit\\\": \\\"M\\\"\",\n        \"snapshot_sha256\"\
+    : \"38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed\"\n     \
+    \ },\n      {\n        \"source_key\": \"mediadiveJ1077api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J1077\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[12]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 13,\\n                        \\\
+    \"compound\\\": \\\"Crotonic acid\\\",\\n                        \\\"compound_id\\\
+    \": 255,\\n                        \\\"attribute\\\": \\\"pH 7.0, 0.5 M\\\",\\\
+    n                        \\\"amount\\\": 20,\\n                        \\\"unit\\\
+    \": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\n             \
+    \       }\",\n        \"snapshot_sha256\": \"1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66\"\
+    \n      }\n    ],\n    \"rationale\": \"20 mL of 0.5 M crotonic-acid stock at\
+    \ pH 7.0 is an addition volume, not 20 g/L neat acid.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"ingredients[13].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"20\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"0.020\
+    \ L × 0.5 mol/L = 0.010 mol delivered; final molarity is not established.\"\n\
+    \  },\n  {\n    \"ingredient_or_context\": \"LACV Trace element solution (see\
+    \ Medium [M439])\",\n    \"field_path\": \"solutions[0].concentration\",\n   \
+    \ \"decision\": \"correct\",\n    \"local\": {\n      \"value\": \"1\",\n    \
+    \  \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n      \
+    \  \"source_key\": \"togoM1146\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146\"\
+    ,\n        \"source_locator\": \"$.components[0].items[10]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace element solution (see Medium [M439])\\\"\
+    ,\\n          \\\"volume\\\": 1,\\n          \\\"unit\\\": \\\"ml\\\"\",\n   \
+    \     \"snapshot_sha256\": \"38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1077api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J1077\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[8]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 9,\\n                        \\\"\
+    solution\\\": \\\"Trace element solution\\\",\\n                        \\\"solution_id\\\
+    \": 4186,\\n                        \\\"amount\\\": 1,\\n                    \
+    \    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66\"\
+    \n      }\n    ],\n    \"rationale\": \"The source specifies a stock-addition\
+    \ volume in mL, not g/L. Retain the exact source-specific dose and separate composition,\
+    \ strength and receiving stage.\",\n    \"action_taken\": \"Review only; no recipe\
+    \ change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"LACV 8% Na2CO3 solution\",\n    \"field_path\": \"solutions[1].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": {\n      \"value\": \"20\",\n\
+    \      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"togoM1146\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146\"\
+    ,\n        \"source_locator\": \"$.components[1].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"8% Na2CO3 solution\\\",\\n          \\\"volume\\\
+    \": 20,\\n          \\\"unit\\\": \\\"ml\\\",\\n          \\\"conc_value\\\":\
+    \ 8,\\n          \\\"conc_unit\\\": \\\"%\\\"\",\n        \"snapshot_sha256\"\
+    : \"38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed\"\n     \
+    \ },\n      {\n        \"source_key\": \"mediadiveJ1077api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J1077\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[13]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 14,\\n                        \\\
+    \"compound\\\": \\\"Na2CO3\\\",\\n                        \\\"compound_id\\\"\
+    : 32,\\n                        \\\"attribute\\\": \\\"8%\\\",\\n            \
+    \            \\\"amount\\\": 20,\\n                        \\\"unit\\\": \\\"\
+    ml\\\",\\n                        \\\"optional\\\": 0\\n                    }\"\
+    ,\n        \"snapshot_sha256\": \"1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66\"\
+    \n      }\n    ],\n    \"rationale\": \"The source specifies a stock-addition\
+    \ volume in mL, not g/L. Retain the exact source-specific dose and separate composition,\
+    \ strength and receiving stage.\",\n    \"action_taken\": \"Review only; no recipe\
+    \ change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"solutions[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"LACV 10% (w/v) Yeast extract solution\",\n    \"field_path\": \"solutions[2].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": {\n      \"value\": \"20\",\n\
+    \      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"togoM1146\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146\"\
+    ,\n        \"source_locator\": \"$.components[1].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"10% (w/v) Yeast extract solution\\\",\\n     \
+    \     \\\"volume\\\": 20,\\n          \\\"unit\\\": \\\"ml\\\",\\n          \\\
+    \"conc_value\\\": 10,\\n          \\\"conc_unit\\\": \\\"(w/v)\\\"\",\n      \
+    \  \"snapshot_sha256\": \"38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1077api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J1077\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[11]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 12,\\n                        \\\
+    \"compound\\\": \\\"Yeast extract\\\",\\n                        \\\"compound_id\\\
+    \": 16,\\n                        \\\"attribute\\\": \\\"w/v, 10%\\\",\\n    \
+    \                    \\\"amount\\\": 20,\\n                        \\\"unit\\\"\
+    : \\\"ml\\\",\\n                        \\\"optional\\\": 0\\n               \
+    \     }\",\n        \"snapshot_sha256\": \"1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66\"\
+    \n      }\n    ],\n    \"rationale\": \"The source specifies a stock-addition\
+    \ volume in mL, not g/L. Retain the exact source-specific dose and separate composition,\
+    \ strength and receiving stage.\",\n    \"action_taken\": \"Review only; no recipe\
+    \ change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"solutions[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"LACV 5% Na2S・9H2O solution\",\n    \"field_path\": \"solutions[3].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": {\n      \"value\": \"6\",\n\
+    \      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"togoM1146\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1146\"\
+    ,\n        \"source_locator\": \"$.components[1].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"5% Na2S・9H2O solution\\\",\\n          \\\"volume\\\
+    \": 6,\\n          \\\"unit\\\": \\\"ml\\\",\\n          \\\"conc_value\\\": 5,\\\
+    n          \\\"conc_unit\\\": \\\"%\\\"\",\n        \"snapshot_sha256\": \"38f599a122ce00aabf2f44b00f00eac9ab8faebc66aac34f5656cd724296d5ed\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1077api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J1077\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[14]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 15,\\n                        \\\
+    \"compound\\\": \\\"Na2S x 9 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 54,\\n                        \\\"attribute\\\": \\\"5%\\\",\\n          \
+    \              \\\"amount\\\": 6,\\n                        \\\"unit\\\": \\\"\
+    ml\\\",\\n                        \\\"optional\\\": 0\\n                    }\"\
+    ,\n        \"snapshot_sha256\": \"1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66\"\
+    \n      }\n    ],\n    \"rationale\": \"The source specifies a stock-addition\
+    \ volume in mL, not g/L. Retain the exact source-specific dose and separate composition,\
+    \ strength and receiving stage.\",\n    \"action_taken\": \"Review only; no recipe\
+    \ change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"solutions[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"6\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"6\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"LACV Crotonic acid strength and pH\",\n    \"field_path\": \"ingredients[13].preferred_term\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1077\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1077\",\n        \"source_locator\"\
+    : \"Later sterile anaerobic stock table\",\n        \"exact_source_quote\": \"\
+    0.5 M Crotonic acid (pH 7.0) 20.0 ml\",\n        \"snapshot_sha256\": \"03ee6fa181d53b8860293521df949a4750a7204b5d32e4437729ceb2876cf1b9\"\
+    ,\n        \"parsed_text_sha256\": \"c0afdce5d6522a9bcddb4a1b3f4a043cca481aa07b9b925cce8d5207add82b2d\"\
+    \n      }\n    ],\n    \"rationale\": \"The label preserves strength and pH, but\
+    \ a supported stock representation and claim evidence are missing.\",\n    \"\
+    action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[13].preferred_term\"\
+    ,\n        \"stored\": \"0.5 M Crotonic acid (pH 7.0)\",\n        \"decision\"\
+    : \"evidence_only\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].preferred_term\",\n        \"stored\"\
+    : \"0.5 M Crotonic acid (pH 7.0)\",\n        \"decision\": \"evidence_only\"\n\
+    \      }\n    ],\n    \"arithmetic\": \"0.5 M and 20 mL yield 10 mmol; no final\
+    \ concentration inferred.\"\n  },\n  {\n    \"ingredient_or_context\": \"LACV\
+    \ Yeast-extract stock strength\",\n    \"field_path\": \"solutions[2].preferred_term\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1077\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1077\",\n        \"source_locator\"\
+    : \"Later sterile anaerobic stock table\",\n        \"exact_source_quote\": \"\
+    10% (w/v) Yeast extract solution 20.0 ml\",\n        \"snapshot_sha256\": \"03ee6fa181d53b8860293521df949a4750a7204b5d32e4437729ceb2876cf1b9\"\
+    ,\n        \"parsed_text_sha256\": \"c0afdce5d6522a9bcddb4a1b3f4a043cca481aa07b9b925cce8d5207add82b2d\"\
+    \n      }\n    ],\n    \"rationale\": \"The label preserves explicit w/v strength\
+    \ without claim evidence. Preserve different 20/50 mL doses.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"solutions[2].preferred_term\"\
+    ,\n        \"stored\": \"10% (w/v) Yeast extract solution\",\n        \"decision\"\
+    : \"evidence_only\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[2].preferred_term\",\n        \"stored\"\
+    : \"10% (w/v) Yeast extract solution\",\n        \"decision\": \"evidence_only\"\
+    \n      }\n    ],\n    \"arithmetic\": \"10 g/100 mL × 20 mL = 2 g yeast extract\
+    \ delivered.\"\n  },\n  {\n    \"ingredient_or_context\": \"LACV Carbonate stock\
+    \ strength\",\n    \"field_path\": \"solutions[1].preferred_term\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local\": null,\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"jcm1077\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1077\"\
+    ,\n        \"source_locator\": \"Later sterile anaerobic stock table\",\n    \
+    \    \"exact_source_quote\": \"8% Na 2 CO 3 solution 20.0 ml\",\n        \"snapshot_sha256\"\
+    : \"03ee6fa181d53b8860293521df949a4750a7204b5d32e4437729ceb2876cf1b9\",\n    \
+    \    \"parsed_text_sha256\": \"c0afdce5d6522a9bcddb4a1b3f4a043cca481aa07b9b925cce8d5207add82b2d\"\
+    \n      }\n    ],\n    \"rationale\": \"Preserve literal 8% with unspecified percentage\
+    \ basis; do not assume w/v or compute delivered grams.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"solutions[1].preferred_term\"\
+    ,\n        \"stored\": \"8% Na2CO3 solution\",\n        \"decision\": \"evidence_only\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].preferred_term\",\n        \"stored\"\
+    : \"8% Na2CO3 solution\",\n        \"decision\": \"evidence_only\"\n      }\n\
+    \    ]\n  },\n  {\n    \"ingredient_or_context\": \"LACV Sulfide stock strength\"\
+    ,\n    \"field_path\": \"solutions[3].preferred_term\",\n    \"decision\": \"\
+    evidence_only\",\n    \"local\": null,\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"jcm1077\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1077\"\
+    ,\n        \"source_locator\": \"Later sterile anaerobic stock table\",\n    \
+    \    \"exact_source_quote\": \"5% Na 2 S·9H 2 O solution 6.0 ml\",\n        \"\
+    snapshot_sha256\": \"03ee6fa181d53b8860293521df949a4750a7204b5d32e4437729ceb2876cf1b9\"\
+    ,\n        \"parsed_text_sha256\": \"c0afdce5d6522a9bcddb4a1b3f4a043cca481aa07b9b925cce8d5207add82b2d\"\
+    \n      }\n    ],\n    \"rationale\": \"Preserve literal 5% and nonahydrate; percentage\
+    \ basis is unspecified and blocks mass conversion.\",\n    \"action_taken\": \"\
+    Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n     \
+    \   \"input\": \"target\",\n        \"field_path\": \"solutions[3].preferred_term\"\
+    ,\n        \"stored\": \"5% Na2S・9H2O solution\",\n        \"decision\": \"evidence_only\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[3].preferred_term\",\n        \"stored\"\
+    : \"5% Na2S・9H2O solution\",\n        \"decision\": \"evidence_only\"\n      }\n\
+    \    ]\n  },\n  {\n    \"ingredient_or_context\": \"LACV Initial pH\",\n    \"\
+    field_path\": \"preparation.Initial_pH\",\n    \"decision\": \"add\",\n    \"\
+    local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    jcm1077\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1077\"\
+    ,\n        \"source_locator\": \"Exact medium page preparation or displayed default\"\
+    ,\n        \"exact_source_quote\": \"adjust pH to 9.0 with NaOH\",\n        \"\
+    snapshot_sha256\": \"03ee6fa181d53b8860293521df949a4750a7204b5d32e4437729ceb2876cf1b9\"\
+    ,\n        \"parsed_text_sha256\": \"c0afdce5d6522a9bcddb4a1b3f4a043cca481aa07b9b925cce8d5207add82b2d\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore this exact source-stage context\
+    \ with evidence. Initial pH, final approximate pH, gas ratio and conditional cycle\
+    \ are not interchangeable with stock concentrations.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"preparation_steps\"\
+    ,\n        \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"LACV Final pH\",\n    \"field_path\": \"preparation.Final_pH\",\n    \"decision\"\
+    : \"add\",\n    \"local\": null,\n    \"source_snippets\": [\n      {\n      \
+    \  \"source_key\": \"jcm1077\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1077\"\
+    ,\n        \"source_locator\": \"Exact medium page preparation or displayed default\"\
+    ,\n        \"exact_source_quote\": \"Check final pH be around 8.5.\",\n      \
+    \  \"snapshot_sha256\": \"03ee6fa181d53b8860293521df949a4750a7204b5d32e4437729ceb2876cf1b9\"\
+    ,\n        \"parsed_text_sha256\": \"c0afdce5d6522a9bcddb4a1b3f4a043cca481aa07b9b925cce8d5207add82b2d\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore this exact source-stage context\
+    \ with evidence. Initial pH, final approximate pH, gas ratio and conditional cycle\
+    \ are not interchangeable with stock concentrations.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"ph_value\",\n      \
+    \  \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n     \
+    \   \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"LACV Gas replacement ratio\",\n    \"field_path\": \"preparation.Gas_replacement_ratio\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"jcm1077\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1077\",\n        \"source_locator\"\
+    : \"Exact medium page preparation or displayed default\",\n        \"exact_source_quote\"\
+    : \"N 2 -CO 2 (4:1, v/v) gas mixture\",\n        \"snapshot_sha256\": \"03ee6fa181d53b8860293521df949a4750a7204b5d32e4437729ceb2876cf1b9\"\
+    ,\n        \"parsed_text_sha256\": \"c0afdce5d6522a9bcddb4a1b3f4a043cca481aa07b9b925cce8d5207add82b2d\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore this exact source-stage context\
+    \ with evidence. Initial pH, final approximate pH, gas ratio and conditional cycle\
+    \ are not interchangeable with stock concentrations.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"preparation_steps\"\
+    ,\n        \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"LACV Conditional sterilization cycle\",\n    \"field_path\": \"preparation.Conditional_sterilization_cycle\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"jcm1077\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1077\",\n        \"source_locator\"\
+    : \"Exact medium page preparation or displayed default\",\n        \"exact_source_quote\"\
+    : \"Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.\"\
+    ,\n        \"snapshot_sha256\": \"03ee6fa181d53b8860293521df949a4750a7204b5d32e4437729ceb2876cf1b9\"\
+    ,\n        \"parsed_text_sha256\": \"c0afdce5d6522a9bcddb4a1b3f4a043cca481aa07b9b925cce8d5207add82b2d\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore this exact source-stage context\
+    \ with evidence. Initial pH, final approximate pH, gas ratio and conditional cycle\
+    \ are not interchangeable with stock concentrations.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"preparation_steps\"\
+    ,\n        \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"3B Distilled water\",\n    \"field_path\": \"ingredients[0].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": {\n      \"value\": \"910\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"togoM1147\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147\"\
+    ,\n        \"source_locator\": \"$.components[0].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 910,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\": \"\
+    02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c\"\n      },\n\
+    \      {\n        \"source_key\": \"mediadiveJ1078api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J1078\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[10]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 11,\\n                        \\\
+    \"compound\\\": \\\"Distilled water\\\",\\n                        \\\"compound_id\\\
+    \": 4,\\n                        \\\"amount\\\": 910,\\n                     \
+    \   \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"20edccd4225379e1204d7aea905c40f7e44443a72cf78f299fdb3db3399915f1\"\
+    \n      }\n    ],\n    \"rationale\": \"Source water is a preparation volume in\
+    \ mL, not mass concentration. Retain this formulation’s distinct water amount.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"910\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"No\
+    \ density conversion or measured final volume is established.\"\n  },\n  {\n \
+    \   \"ingredient_or_context\": \"3B NaCl\",\n    \"field_path\": \"ingredients[1].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": {\n      \"value\": \"1\",\n\
+    \      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"togoM1147\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147\"\
+    ,\n        \"source_locator\": \"$.components[0].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NaCl\\\",\\n          \\\"volume\\\": 1,\\n  \
+    \        \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1078api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J1078\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"NaCl\\\",\\n                        \\\"compound_id\\\": 43,\\\
+    n                        \\\"amount\\\": 1,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 0.993049,\\n           \
+    \             \\\"mmol_l\\\": 16.9926,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"20edccd4225379e1204d7aea905c40f7e44443a72cf78f299fdb3db3399915f1\"\
+    \n      }\n    ],\n    \"rationale\": \"The number preserves this source’s batch\
+    \ mass but local G_PER_L lacks the source batch/stage basis. Restore the mass\
+    \ and documented basis; do not assert that the 1007 mL provider declaration is\
+    \ a measured final volume.\",\n    \"action_taken\": \"Review only; no recipe\
+    \ change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"Source\
+    \ 1 g; conditional provider nominal g/L = 1 / 1.007. Other formulation quantities\
+    \ are not substituted.\"\n  },\n  {\n    \"ingredient_or_context\": \"3B KH2PO4\"\
+    ,\n    \"field_path\": \"ingredients[2].concentration\",\n    \"decision\": \"\
+    correct\",\n    \"local\": {\n      \"value\": \"0.1\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM1147\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147\"\
+    ,\n        \"source_locator\": \"$.components[0].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"KH2PO4\\\",\\n          \\\"volume\\\": 0.1,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1078api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J1078\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"KH2PO4\\\",\\n                        \\\"compound_id\\\": 11,\\\
+    n                        \\\"amount\\\": 0.1,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 0.0993049,\\n          \
+    \              \\\"mmol_l\\\": 0.729721,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"20edccd4225379e1204d7aea905c40f7e44443a72cf78f299fdb3db3399915f1\"\
+    \n      }\n    ],\n    \"rationale\": \"The number preserves this source’s batch\
+    \ mass but local G_PER_L lacks the source batch/stage basis. Restore the mass\
+    \ and documented basis; do not assert that the 1007 mL provider declaration is\
+    \ a measured final volume.\",\n    \"action_taken\": \"Review only; no recipe\
+    \ change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"Source\
+    \ 0.1 g; conditional provider nominal g/L = 0.1 / 1.007. Other formulation quantities\
+    \ are not substituted.\"\n  },\n  {\n    \"ingredient_or_context\": \"3B NH4Cl\"\
+    ,\n    \"field_path\": \"ingredients[3].concentration\",\n    \"decision\": \"\
+    correct\",\n    \"local\": {\n      \"value\": \"1\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM1147\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147\"\
+    ,\n        \"source_locator\": \"$.components[0].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NH4Cl\\\",\\n          \\\"volume\\\": 1,\\n \
+    \         \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1078api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J1078\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"NH4Cl\\\",\\n                        \\\"compound_id\\\": 42,\\\
+    n                        \\\"amount\\\": 1,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 0.993049,\\n           \
+    \             \\\"mmol_l\\\": 18.5651,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"20edccd4225379e1204d7aea905c40f7e44443a72cf78f299fdb3db3399915f1\"\
+    \n      }\n    ],\n    \"rationale\": \"The number preserves this source’s batch\
+    \ mass but local G_PER_L lacks the source batch/stage basis. Restore the mass\
+    \ and documented basis; do not assert that the 1007 mL provider declaration is\
+    \ a measured final volume.\",\n    \"action_taken\": \"Review only; no recipe\
+    \ change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"Source\
+    \ 1 g; conditional provider nominal g/L = 1 / 1.007. Other formulation quantities\
+    \ are not substituted.\"\n  },\n  {\n    \"ingredient_or_context\": \"3B K2HPO4\"\
+    ,\n    \"field_path\": \"ingredients[4].concentration\",\n    \"decision\": \"\
+    correct\",\n    \"local\": {\n      \"value\": \"0.1\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM1147\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147\"\
+    ,\n        \"source_locator\": \"$.components[0].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"K2HPO4\\\",\\n          \\\"volume\\\": 0.1,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1078api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J1078\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"K2HPO4\\\",\\n                        \\\"compound_id\\\": 10,\\\
+    n                        \\\"amount\\\": 0.1,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 0.0993049,\\n          \
+    \              \\\"mmol_l\\\": 0.570141,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"20edccd4225379e1204d7aea905c40f7e44443a72cf78f299fdb3db3399915f1\"\
+    \n      }\n    ],\n    \"rationale\": \"The number preserves this source’s batch\
+    \ mass but local G_PER_L lacks the source batch/stage basis. Restore the mass\
+    \ and documented basis; do not assert that the 1007 mL provider declaration is\
+    \ a measured final volume.\",\n    \"action_taken\": \"Review only; no recipe\
+    \ change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"Source\
+    \ 0.1 g; conditional provider nominal g/L = 0.1 / 1.007. Other formulation quantities\
+    \ are not substituted.\"\n  },\n  {\n    \"ingredient_or_context\": \"3B Resazurin\"\
+    ,\n    \"field_path\": \"ingredients[5].concentration\",\n    \"decision\": \"\
+    correct\",\n    \"local\": {\n      \"value\": \"1\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM1147\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147\"\
+    ,\n        \"source_locator\": \"$.components[0].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Resazurin\\\",\\n          \\\"volume\\\": 1,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1078api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J1078\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[9]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 10,\\n                        \\\
+    \"compound\\\": \\\"Resazurin\\\",\\n                        \\\"compound_id\\\
+    \": 25,\\n                        \\\"amount\\\": 1,\\n                      \
+    \  \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.000993049,\\\
+    n                        \\\"mmol_l\\\": 0.00433286,\\n                      \
+    \  \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"20edccd4225379e1204d7aea905c40f7e44443a72cf78f299fdb3db3399915f1\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Source resazurin is 1 mg per listed batch; 1\
+    \ g/L is a unit error. Restore source mass and explicit nominal basis separately.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"1 mg\
+    \ = 0.001 g. Conditional provider normalization: 0.001 g / 1.007 L = 0.000993048659\
+    \ g/L; this is not measured final volume.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"3B MgCl2・6H2O\",\n    \"field_path\": \"ingredients[6].concentration\",\n\
+    \    \"decision\": \"correct\",\n    \"local\": {\n      \"value\": \"0.1\",\n\
+    \      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"togoM1147\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147\"\
+    ,\n        \"source_locator\": \"$.components[0].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MgCl2・6H2O\\\",\\n          \\\"volume\\\": 0.1,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1078api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J1078\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"MgCl2 x 6 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 79,\\n                        \\\"amount\\\": 0.1,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.0993049,\\\
+    n                        \\\"mmol_l\\\": 0.488457,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    20edccd4225379e1204d7aea905c40f7e44443a72cf78f299fdb3db3399915f1\"\n      }\n\
+    \    ],\n    \"rationale\": \"The number preserves this source’s batch mass but\
+    \ local G_PER_L lacks the source batch/stage basis. Restore the mass and documented\
+    \ basis; do not assert that the 1007 mL provider declaration is a measured final\
+    \ volume.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"\
+    layer_decisions\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"Source\
+    \ 0.1 g; conditional provider nominal g/L = 0.1 / 1.007. Other formulation quantities\
+    \ are not substituted.\"\n  },\n  {\n    \"ingredient_or_context\": \"3B KCl\"\
+    ,\n    \"field_path\": \"ingredients[7].concentration\",\n    \"decision\": \"\
+    correct\",\n    \"local\": {\n      \"value\": \"0.1\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM1147\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147\"\
+    ,\n        \"source_locator\": \"$.components[0].items[7]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"KCl\\\",\\n          \\\"volume\\\": 0.1,\\n \
+    \         \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1078api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J1078\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"KCl\\\",\\n                        \\\"compound_id\\\": 61,\\\
+    n                        \\\"amount\\\": 0.1,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 0.0993049,\\n          \
+    \              \\\"mmol_l\\\": 1.33206,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"20edccd4225379e1204d7aea905c40f7e44443a72cf78f299fdb3db3399915f1\"\
+    \n      }\n    ],\n    \"rationale\": \"The number preserves this source’s batch\
+    \ mass but local G_PER_L lacks the source batch/stage basis. Restore the mass\
+    \ and documented basis; do not assert that the 1007 mL provider declaration is\
+    \ a measured final volume.\",\n    \"action_taken\": \"Review only; no recipe\
+    \ change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"Source\
+    \ 0.1 g; conditional provider nominal g/L = 0.1 / 1.007. Other formulation quantities\
+    \ are not substituted.\"\n  },\n  {\n    \"ingredient_or_context\": \"3B Tris\
+    \ base\",\n    \"field_path\": \"ingredients[8].concentration\",\n    \"decision\"\
+    : \"correct\",\n    \"local\": {\n      \"value\": \"3\",\n      \"unit\": \"\
+    G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM1147\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147\"\
+    ,\n        \"source_locator\": \"$.components[0].items[8]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Tris base\\\",\\n          \\\"volume\\\": 3,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1078api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J1078\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"Tris base\\\",\\n                        \\\"compound_id\\\"\
+    : 1698,\\n                        \\\"amount\\\": 3,\\n                      \
+    \  \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 2.97915,\\\
+    n                        \\\"mmol_l\\\": 24.5926,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    20edccd4225379e1204d7aea905c40f7e44443a72cf78f299fdb3db3399915f1\"\n      }\n\
+    \    ],\n    \"rationale\": \"The number preserves this source’s batch mass but\
+    \ local G_PER_L lacks the source batch/stage basis. Restore the mass and documented\
+    \ basis; do not assert that the 1007 mL provider declaration is a measured final\
+    \ volume.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"\
+    layer_decisions\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"Source\
+    \ 3 g; conditional provider nominal g/L = 3 / 1.007. Other formulation quantities\
+    \ are not substituted.\"\n  },\n  {\n    \"ingredient_or_context\": \"3B Na2S2O3・5H2O\"\
+    ,\n    \"field_path\": \"ingredients[9].concentration\",\n    \"decision\": \"\
+    correct\",\n    \"local\": {\n      \"value\": \"1.5\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM1147\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147\"\
+    ,\n        \"source_locator\": \"$.components[0].items[9]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2S2O3・5H2O\\\",\\n          \\\"volume\\\":\
+    \ 1.5,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"\
+    02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c\"\n      },\n\
+    \      {\n        \"source_key\": \"mediadiveJ1078api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J1078\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[7]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 8,\\n                        \\\"\
+    compound\\\": \\\"Na2S2O3 x 5 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 65,\\n                        \\\"amount\\\": 1.5,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 1.48957,\\\
+    n                        \\\"mmol_l\\\": 6.00184,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    20edccd4225379e1204d7aea905c40f7e44443a72cf78f299fdb3db3399915f1\"\n      }\n\
+    \    ],\n    \"rationale\": \"The number preserves this source’s batch mass but\
+    \ local G_PER_L lacks the source batch/stage basis. Restore the mass and documented\
+    \ basis; do not assert that the 1007 mL provider declaration is a measured final\
+    \ volume.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"\
+    layer_decisions\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"Source\
+    \ 1.5 g; conditional provider nominal g/L = 1.5 / 1.007. Other formulation quantities\
+    \ are not substituted.\"\n  },\n  {\n    \"ingredient_or_context\": \"3B NaOH\"\
+    ,\n    \"field_path\": \"ingredients[10].concentration\",\n    \"decision\": \"\
+    not_quantified\",\n    \"local\": {\n      \"value\": \"variable\",\n      \"\
+    unit\": \"VARIABLE\"\n    },\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"togoM1147\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147\"\
+    ,\n        \"source_locator\": \"$.components[0].items[11]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NaOH\\\"\",\n        \"snapshot_sha256\": \"02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c\"\
+    \n      }\n    ],\n    \"rationale\": \"The source supplies no fixed titrant or\
+    \ gas amount. Retain unquantified status while restoring the separate pH endpoint,\
+    \ gas ratio and preparation stages.\",\n    \"action_taken\": \"Review only; no\
+    \ recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\",\n   \
+    \     \"field_path\": \"ingredients[10].concentration\",\n        \"stored\":\
+    \ {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"not_quantified\"\n      }\n    ]\n  },\n  {\n\
+    \    \"ingredient_or_context\": \"3B Carbon dioxide gas\",\n    \"field_path\"\
+    : \"ingredients[11].concentration\",\n    \"decision\": \"not_quantified\",\n\
+    \    \"local\": {\n      \"value\": \"variable\",\n      \"unit\": \"VARIABLE\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM1147\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147\"\
+    ,\n        \"source_locator\": \"$.components[0].items[12]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Carbon dioxide gas\\\"\",\n        \"snapshot_sha256\"\
+    : \"02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The source supplies no fixed titrant or gas\
+    \ amount. Retain unquantified status while restoring the separate pH endpoint,\
+    \ gas ratio and preparation stages.\",\n    \"action_taken\": \"Review only; no\
+    \ recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\",\n   \
+    \     \"field_path\": \"ingredients[11].concentration\",\n        \"stored\":\
+    \ {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"not_quantified\"\n      }\n    ]\n  },\n  {\n\
+    \    \"ingredient_or_context\": \"3B N2\",\n    \"field_path\": \"ingredients[12].concentration\"\
+    ,\n    \"decision\": \"not_quantified\",\n    \"local\": {\n      \"value\": \"\
+    variable\",\n      \"unit\": \"VARIABLE\"\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM1147\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147\"\
+    ,\n        \"source_locator\": \"$.components[0].items[13]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"N2\\\"\",\n        \"snapshot_sha256\": \"02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c\"\
+    \n      }\n    ],\n    \"rationale\": \"The source supplies no fixed titrant or\
+    \ gas amount. Retain unquantified status while restoring the separate pH endpoint,\
+    \ gas ratio and preparation stages.\",\n    \"action_taken\": \"Review only; no\
+    \ recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\",\n   \
+    \     \"field_path\": \"ingredients[12].concentration\",\n        \"stored\":\
+    \ {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"not_quantified\"\n      }\n    ]\n  },\n  {\n\
+    \    \"ingredient_or_context\": \"3B 0.5 M Crotonic acid (pH 7.0)\",\n    \"field_path\"\
+    : \"ingredients[13].concentration\",\n    \"decision\": \"correct\",\n    \"local\"\
+    : {\n      \"value\": \"20\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM1147\",\n        \"source_url\":\
+    \ \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147\",\n\
+    \        \"source_locator\": \"$.components[1].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"0.5 M Crotonic acid (pH 7.0)\\\",\\n         \
+    \ \\\"volume\\\": 20,\\n          \\\"unit\\\": \\\"ml\\\",\\n          \\\"conc_value\\\
+    \": 0.5,\\n          \\\"conc_unit\\\": \\\"M\\\"\",\n        \"snapshot_sha256\"\
+    : \"02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c\"\n     \
+    \ },\n      {\n        \"source_key\": \"mediadiveJ1078api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J1078\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[12]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 13,\\n                        \\\
+    \"compound\\\": \\\"Crotonic acid\\\",\\n                        \\\"compound_id\\\
+    \": 255,\\n                        \\\"attribute\\\": \\\"pH 7.0, 0.5 M\\\",\\\
+    n                        \\\"amount\\\": 20,\\n                        \\\"unit\\\
+    \": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\n             \
+    \       }\",\n        \"snapshot_sha256\": \"20edccd4225379e1204d7aea905c40f7e44443a72cf78f299fdb3db3399915f1\"\
+    \n      }\n    ],\n    \"rationale\": \"20 mL of 0.5 M crotonic-acid stock at\
+    \ pH 7.0 is an addition volume, not 20 g/L neat acid.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"0.020\
+    \ L × 0.5 mol/L = 0.010 mol delivered; final molarity is not established.\"\n\
+    \  },\n  {\n    \"ingredient_or_context\": \"3B Trace element solution (see Medium\
+    \ [M439])\",\n    \"field_path\": \"solutions[0].concentration\",\n    \"decision\"\
+    : \"correct\",\n    \"local\": {\n      \"value\": \"1\",\n      \"unit\": \"\
+    G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM1147\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147\"\
+    ,\n        \"source_locator\": \"$.components[0].items[10]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace element solution (see Medium [M439])\\\"\
+    ,\\n          \\\"volume\\\": 1,\\n          \\\"unit\\\": \\\"ml\\\"\",\n   \
+    \     \"snapshot_sha256\": \"02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1078api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J1078\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[8]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 9,\\n                        \\\"\
+    solution\\\": \\\"Trace element solution\\\",\\n                        \\\"solution_id\\\
+    \": 4186,\\n                        \\\"amount\\\": 1,\\n                    \
+    \    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"20edccd4225379e1204d7aea905c40f7e44443a72cf78f299fdb3db3399915f1\"\
+    \n      }\n    ],\n    \"rationale\": \"The source specifies a stock-addition\
+    \ volume in mL, not g/L. Retain the exact source-specific dose and separate composition,\
+    \ strength and receiving stage.\",\n    \"action_taken\": \"Review only; no recipe\
+    \ change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"3B 8% Na2CO3 solution\",\n    \"field_path\": \"solutions[1].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": {\n      \"value\": \"20\",\n\
+    \      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"togoM1147\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147\"\
+    ,\n        \"source_locator\": \"$.components[1].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"8% Na2CO3 solution\\\",\\n          \\\"volume\\\
+    \": 20,\\n          \\\"unit\\\": \\\"ml\\\",\\n          \\\"conc_value\\\":\
+    \ 8,\\n          \\\"conc_unit\\\": \\\"%\\\"\",\n        \"snapshot_sha256\"\
+    : \"02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c\"\n     \
+    \ },\n      {\n        \"source_key\": \"mediadiveJ1078api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J1078\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[13]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 14,\\n                        \\\
+    \"compound\\\": \\\"Na2CO3\\\",\\n                        \\\"compound_id\\\"\
+    : 32,\\n                        \\\"attribute\\\": \\\"8%\\\",\\n            \
+    \            \\\"amount\\\": 20,\\n                        \\\"unit\\\": \\\"\
+    ml\\\",\\n                        \\\"optional\\\": 0\\n                    }\"\
+    ,\n        \"snapshot_sha256\": \"20edccd4225379e1204d7aea905c40f7e44443a72cf78f299fdb3db3399915f1\"\
+    \n      }\n    ],\n    \"rationale\": \"The source specifies a stock-addition\
+    \ volume in mL, not g/L. Retain the exact source-specific dose and separate composition,\
+    \ strength and receiving stage.\",\n    \"action_taken\": \"Review only; no recipe\
+    \ change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"3B 10% (w/v) Yeast extract solution\",\n    \"field_path\": \"solutions[2].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": {\n      \"value\": \"50\",\n\
+    \      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"togoM1147\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147\"\
+    ,\n        \"source_locator\": \"$.components[1].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"10% (w/v) Yeast extract solution\\\",\\n     \
+    \     \\\"volume\\\": 50,\\n          \\\"unit\\\": \\\"ml\\\",\\n          \\\
+    \"conc_value\\\": 10,\\n          \\\"conc_unit\\\": \\\"(w/v)\\\"\",\n      \
+    \  \"snapshot_sha256\": \"02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1078api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J1078\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[11]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 12,\\n                        \\\
+    \"compound\\\": \\\"Yeast extract\\\",\\n                        \\\"compound_id\\\
+    \": 16,\\n                        \\\"attribute\\\": \\\"w/v, 10%\\\",\\n    \
+    \                    \\\"amount\\\": 50,\\n                        \\\"unit\\\"\
+    : \\\"ml\\\",\\n                        \\\"optional\\\": 0\\n               \
+    \     }\",\n        \"snapshot_sha256\": \"20edccd4225379e1204d7aea905c40f7e44443a72cf78f299fdb3db3399915f1\"\
+    \n      }\n    ],\n    \"rationale\": \"The source specifies a stock-addition\
+    \ volume in mL, not g/L. Retain the exact source-specific dose and separate composition,\
+    \ strength and receiving stage.\",\n    \"action_taken\": \"Review only; no recipe\
+    \ change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"50\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"3B 5% Na2S・9H2O solution\",\n    \"field_path\": \"solutions[3].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": {\n      \"value\": \"6\",\n\
+    \      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"togoM1147\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1147\"\
+    ,\n        \"source_locator\": \"$.components[1].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"5% Na2S・9H2O solution\\\",\\n          \\\"volume\\\
+    \": 6,\\n          \\\"unit\\\": \\\"ml\\\",\\n          \\\"conc_value\\\": 5,\\\
+    n          \\\"conc_unit\\\": \\\"%\\\"\",\n        \"snapshot_sha256\": \"02af105ace06c66626b3d60ed02661d08f62f8eb02fd84ebac04aed5b1cf343c\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ1078api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J1078\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[14]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 15,\\n                        \\\
+    \"compound\\\": \\\"Na2S x 9 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 54,\\n                        \\\"attribute\\\": \\\"5%\\\",\\n          \
+    \              \\\"amount\\\": 6,\\n                        \\\"unit\\\": \\\"\
+    ml\\\",\\n                        \\\"optional\\\": 0\\n                    }\"\
+    ,\n        \"snapshot_sha256\": \"20edccd4225379e1204d7aea905c40f7e44443a72cf78f299fdb3db3399915f1\"\
+    \n      }\n    ],\n    \"rationale\": \"The source specifies a stock-addition\
+    \ volume in mL, not g/L. Retain the exact source-specific dose and separate composition,\
+    \ strength and receiving stage.\",\n    \"action_taken\": \"Review only; no recipe\
+    \ change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"6\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"3B Crotonic acid strength and pH\",\n    \"field_path\": \"ingredients[13].preferred_term\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1078\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1078\",\n        \"source_locator\"\
+    : \"Later sterile anaerobic stock table\",\n        \"exact_source_quote\": \"\
+    0.5 M Crotonic acid (pH 7.0) 20.0 ml\",\n        \"snapshot_sha256\": \"c5405b19033eb2456a48b85ed49d2da9e6919a93f575bb20571fc2bebb5d3d20\"\
+    ,\n        \"parsed_text_sha256\": \"6c1d90d6abd02fa4004c4a651baf00b6d82ed75df3c5ced2ab8a38795b526b6d\"\
+    \n      }\n    ],\n    \"rationale\": \"The label preserves strength and pH, but\
+    \ a supported stock representation and claim evidence are missing.\",\n    \"\
+    action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].preferred_term\",\n        \"stored\"\
+    : \"0.5 M Crotonic acid (pH 7.0)\",\n        \"decision\": \"evidence_only\"\n\
+    \      }\n    ],\n    \"arithmetic\": \"0.5 M and 20 mL yield 10 mmol; no final\
+    \ concentration inferred.\"\n  },\n  {\n    \"ingredient_or_context\": \"3B Yeast-extract\
+    \ stock strength\",\n    \"field_path\": \"solutions[2].preferred_term\",\n  \
+    \  \"decision\": \"evidence_only\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1078\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1078\",\n        \"source_locator\"\
+    : \"Later sterile anaerobic stock table\",\n        \"exact_source_quote\": \"\
+    10% (w/v) Yeast extract solution 50.0 ml\",\n        \"snapshot_sha256\": \"c5405b19033eb2456a48b85ed49d2da9e6919a93f575bb20571fc2bebb5d3d20\"\
+    ,\n        \"parsed_text_sha256\": \"6c1d90d6abd02fa4004c4a651baf00b6d82ed75df3c5ced2ab8a38795b526b6d\"\
+    \n      }\n    ],\n    \"rationale\": \"The label preserves explicit w/v strength\
+    \ without claim evidence. Preserve different 20/50 mL doses.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[2].preferred_term\",\n        \"stored\"\
+    : \"10% (w/v) Yeast extract solution\",\n        \"decision\": \"evidence_only\"\
+    \n      }\n    ],\n    \"arithmetic\": \"10 g/100 mL × 50 mL = 5 g yeast extract\
+    \ delivered.\"\n  },\n  {\n    \"ingredient_or_context\": \"3B Carbonate stock\
+    \ strength\",\n    \"field_path\": \"solutions[1].preferred_term\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local\": null,\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"jcm1078\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1078\"\
+    ,\n        \"source_locator\": \"Later sterile anaerobic stock table\",\n    \
+    \    \"exact_source_quote\": \"8% Na 2 CO 3 solution 20.0 ml\",\n        \"snapshot_sha256\"\
+    : \"c5405b19033eb2456a48b85ed49d2da9e6919a93f575bb20571fc2bebb5d3d20\",\n    \
+    \    \"parsed_text_sha256\": \"6c1d90d6abd02fa4004c4a651baf00b6d82ed75df3c5ced2ab8a38795b526b6d\"\
+    \n      }\n    ],\n    \"rationale\": \"Preserve literal 8% with unspecified percentage\
+    \ basis; do not assume w/v or compute delivered grams.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].preferred_term\",\n        \"stored\"\
+    : \"8% Na2CO3 solution\",\n        \"decision\": \"evidence_only\"\n      }\n\
+    \    ]\n  },\n  {\n    \"ingredient_or_context\": \"3B Sulfide stock strength\"\
+    ,\n    \"field_path\": \"solutions[3].preferred_term\",\n    \"decision\": \"\
+    evidence_only\",\n    \"local\": null,\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"jcm1078\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1078\"\
+    ,\n        \"source_locator\": \"Later sterile anaerobic stock table\",\n    \
+    \    \"exact_source_quote\": \"5% Na 2 S·9H 2 O solution 6.0 ml\",\n        \"\
+    snapshot_sha256\": \"c5405b19033eb2456a48b85ed49d2da9e6919a93f575bb20571fc2bebb5d3d20\"\
+    ,\n        \"parsed_text_sha256\": \"6c1d90d6abd02fa4004c4a651baf00b6d82ed75df3c5ced2ab8a38795b526b6d\"\
+    \n      }\n    ],\n    \"rationale\": \"Preserve literal 5% and nonahydrate; percentage\
+    \ basis is unspecified and blocks mass conversion.\",\n    \"action_taken\": \"\
+    Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n     \
+    \   \"input\": \"data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[3].preferred_term\",\n        \"stored\"\
+    : \"5% Na2S・9H2O solution\",\n        \"decision\": \"evidence_only\"\n      }\n\
+    \    ]\n  },\n  {\n    \"ingredient_or_context\": \"3B Initial pH\",\n    \"field_path\"\
+    : \"preparation.Initial_pH\",\n    \"decision\": \"add\",\n    \"local\": null,\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm1078\",\n \
+    \       \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1078\"\
+    ,\n        \"source_locator\": \"Exact medium page preparation or displayed default\"\
+    ,\n        \"exact_source_quote\": \"adjust pH to 9.0 with NaOH\",\n        \"\
+    snapshot_sha256\": \"c5405b19033eb2456a48b85ed49d2da9e6919a93f575bb20571fc2bebb5d3d20\"\
+    ,\n        \"parsed_text_sha256\": \"6c1d90d6abd02fa4004c4a651baf00b6d82ed75df3c5ced2ab8a38795b526b6d\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore this exact source-stage context\
+    \ with evidence. Initial pH, final approximate pH, gas ratio and conditional cycle\
+    \ are not interchangeable with stock concentrations.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"3B Final pH\",\n    \"field_path\": \"preparation.Final_pH\",\n    \"decision\"\
+    : \"add\",\n    \"local\": null,\n    \"source_snippets\": [\n      {\n      \
+    \  \"source_key\": \"jcm1078\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1078\"\
+    ,\n        \"source_locator\": \"Exact medium page preparation or displayed default\"\
+    ,\n        \"exact_source_quote\": \"Check final pH be around 8.5.\",\n      \
+    \  \"snapshot_sha256\": \"c5405b19033eb2456a48b85ed49d2da9e6919a93f575bb20571fc2bebb5d3d20\"\
+    ,\n        \"parsed_text_sha256\": \"6c1d90d6abd02fa4004c4a651baf00b6d82ed75df3c5ced2ab8a38795b526b6d\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore this exact source-stage context\
+    \ with evidence. Initial pH, final approximate pH, gas ratio and conditional cycle\
+    \ are not interchangeable with stock concentrations.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"3B Gas replacement ratio\",\n    \"field_path\": \"preparation.Gas_replacement_ratio\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"jcm1078\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1078\",\n        \"source_locator\"\
+    : \"Exact medium page preparation or displayed default\",\n        \"exact_source_quote\"\
+    : \"N 2 -CO 2 (4:1, v/v) gas mixture\",\n        \"snapshot_sha256\": \"c5405b19033eb2456a48b85ed49d2da9e6919a93f575bb20571fc2bebb5d3d20\"\
+    ,\n        \"parsed_text_sha256\": \"6c1d90d6abd02fa4004c4a651baf00b6d82ed75df3c5ced2ab8a38795b526b6d\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore this exact source-stage context\
+    \ with evidence. Initial pH, final approximate pH, gas ratio and conditional cycle\
+    \ are not interchangeable with stock concentrations.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"3B Conditional sterilization cycle\",\n    \"field_path\": \"preparation.Conditional_sterilization_cycle\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"jcm1078\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1078\",\n        \"source_locator\"\
+    : \"Exact medium page preparation or displayed default\",\n        \"exact_source_quote\"\
+    : \"Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.\"\
+    ,\n        \"snapshot_sha256\": \"c5405b19033eb2456a48b85ed49d2da9e6919a93f575bb20571fc2bebb5d3d20\"\
+    ,\n        \"parsed_text_sha256\": \"6c1d90d6abd02fa4004c4a651baf00b6d82ed75df3c5ced2ab8a38795b526b6d\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore this exact source-stage context\
+    \ with evidence. Initial pH, final approximate pH, gas ratio and conditional cycle\
+    \ are not interchangeable with stock concentrations.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Shared trace stock HCl\",\n    \"field_path\": \"solutions[0].composition\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"mediadiveJ1077api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J1077\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"HCl\\\",\\n                        \\\"compound_id\\\": 68,\\\
+    n                        \\\"attribute\\\": \\\"25%\\\",\\n                  \
+    \      \\\"amount\\\": 12.5,\\n                        \\\"unit\\\": \\\"ml\\\"\
+    ,\\n                        \\\"optional\\\": 0\\n                    }\",\n \
+    \       \"snapshot_sha256\": \"1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66\"\
+    \n      },\n      {\n        \"source_key\": \"jcm439\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=439\",\n        \"source_locator\"\
+    : \"Trace element solution subsection row 1\",\n        \"exact_source_quote\"\
+    : \"HCl (25%) 12.5 ml\",\n        \"snapshot_sha256\": \"2a71115d17d54beb8454d4106e93dd60364885a914eee9d1c434ee15f510ceda\"\
+    ,\n        \"parsed_text_sha256\": \"d678d0e3ec848ea6d029f04800693f55fdbfab8dbb3b45924645cfff6e24b74b\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore the exact trace-stock batch quantity\
+    \ in the empty composition, separate from its 1 mL receiving dose. 25% HCl has\
+    \ unspecified basis. Listed liquids total 999.5 mL whereas the provider declares\
+    \ 1000 mL; retain this limit rather than inventing makeup.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"solutions[0].composition\"\
+    ,\n        \"stored\": [],\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\",\n   \
+    \     \"field_path\": \"solutions[0].composition\",\n        \"stored\": [],\n\
+    \        \"decision\": \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Shared trace stock FeSO4 x 7 H2O\",\n    \"field_path\": \"solutions[0].composition\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"mediadiveJ1077api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J1077\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"FeSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 12,\\n                        \\\"amount\\\": 2.1,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 2.1,\\n \
+    \                       \\\"mmol_l\\\": 7.55355,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66\"\
+    \n      },\n      {\n        \"source_key\": \"jcm439\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=439\",\n        \"source_locator\"\
+    : \"Trace element solution subsection row 2\",\n        \"exact_source_quote\"\
+    : \"FeSO 4 ·7H 2 O 2.1 g\",\n        \"snapshot_sha256\": \"2a71115d17d54beb8454d4106e93dd60364885a914eee9d1c434ee15f510ceda\"\
+    ,\n        \"parsed_text_sha256\": \"d678d0e3ec848ea6d029f04800693f55fdbfab8dbb3b45924645cfff6e24b74b\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore the exact trace-stock batch quantity\
+    \ in the empty composition, separate from its 1 mL receiving dose. 25% HCl has\
+    \ unspecified basis. Listed liquids total 999.5 mL whereas the provider declares\
+    \ 1000 mL; retain this limit rather than inventing makeup.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"solutions[0].composition\"\
+    ,\n        \"stored\": [],\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\",\n   \
+    \     \"field_path\": \"solutions[0].composition\",\n        \"stored\": [],\n\
+    \        \"decision\": \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Shared trace stock H3BO3\",\n    \"field_path\": \"solutions[0].composition\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"mediadiveJ1077api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J1077\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"H3BO3\\\",\\n                        \\\"compound_id\\\": 37,\\\
+    n                        \\\"amount\\\": 30,\\n                        \\\"unit\\\
+    \": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.03,\\n              \
+    \          \\\"mmol_l\\\": 0.485123,\\n                        \\\"optional\\\"\
+    : 0\\n                    }\",\n        \"snapshot_sha256\": \"1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66\"\
+    \n      },\n      {\n        \"source_key\": \"jcm439\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=439\",\n        \"source_locator\"\
+    : \"Trace element solution subsection row 3\",\n        \"exact_source_quote\"\
+    : \"H 3 BO 3 30.0 mg\",\n        \"snapshot_sha256\": \"2a71115d17d54beb8454d4106e93dd60364885a914eee9d1c434ee15f510ceda\"\
+    ,\n        \"parsed_text_sha256\": \"d678d0e3ec848ea6d029f04800693f55fdbfab8dbb3b45924645cfff6e24b74b\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore the exact trace-stock batch quantity\
+    \ in the empty composition, separate from its 1 mL receiving dose. 25% HCl has\
+    \ unspecified basis. Listed liquids total 999.5 mL whereas the provider declares\
+    \ 1000 mL; retain this limit rather than inventing makeup.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"solutions[0].composition\"\
+    ,\n        \"stored\": [],\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\",\n   \
+    \     \"field_path\": \"solutions[0].composition\",\n        \"stored\": [],\n\
+    \        \"decision\": \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Shared trace stock MnCl2 x 4 H2O\",\n    \"field_path\": \"solutions[0].composition\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"mediadiveJ1077api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J1077\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"MnCl2 x 4 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 36,\\n                        \\\"amount\\\": 100,\\n                    \
+    \    \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.1,\\n\
+    \                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66\"\
+    \n      },\n      {\n        \"source_key\": \"jcm439\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=439\",\n        \"source_locator\"\
+    : \"Trace element solution subsection row 4\",\n        \"exact_source_quote\"\
+    : \"MnCl 2 ·4H 2 O 100.0 mg\",\n        \"snapshot_sha256\": \"2a71115d17d54beb8454d4106e93dd60364885a914eee9d1c434ee15f510ceda\"\
+    ,\n        \"parsed_text_sha256\": \"d678d0e3ec848ea6d029f04800693f55fdbfab8dbb3b45924645cfff6e24b74b\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore the exact trace-stock batch quantity\
+    \ in the empty composition, separate from its 1 mL receiving dose. 25% HCl has\
+    \ unspecified basis. Listed liquids total 999.5 mL whereas the provider declares\
+    \ 1000 mL; retain this limit rather than inventing makeup.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"solutions[0].composition\"\
+    ,\n        \"stored\": [],\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\",\n   \
+    \     \"field_path\": \"solutions[0].composition\",\n        \"stored\": [],\n\
+    \        \"decision\": \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Shared trace stock CoCl2 x 6 H2O\",\n    \"field_path\": \"solutions[0].composition\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"mediadiveJ1077api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J1077\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"CoCl2 x 6 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 38,\\n                        \\\"amount\\\": 190,\\n                    \
+    \    \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.19,\\\
+    n                        \\\"mmol_l\\\": 1.46335,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66\"\n      },\n\
+    \      {\n        \"source_key\": \"jcm439\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=439\"\
+    ,\n        \"source_locator\": \"Trace element solution subsection row 5\",\n\
+    \        \"exact_source_quote\": \"CoCl 2 ·6H 2 O 190.0 mg\",\n        \"snapshot_sha256\"\
+    : \"2a71115d17d54beb8454d4106e93dd60364885a914eee9d1c434ee15f510ceda\",\n    \
+    \    \"parsed_text_sha256\": \"d678d0e3ec848ea6d029f04800693f55fdbfab8dbb3b45924645cfff6e24b74b\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore the exact trace-stock batch quantity\
+    \ in the empty composition, separate from its 1 mL receiving dose. 25% HCl has\
+    \ unspecified basis. Listed liquids total 999.5 mL whereas the provider declares\
+    \ 1000 mL; retain this limit rather than inventing makeup.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"solutions[0].composition\"\
+    ,\n        \"stored\": [],\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\",\n   \
+    \     \"field_path\": \"solutions[0].composition\",\n        \"stored\": [],\n\
+    \        \"decision\": \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Shared trace stock NiCl2 x 6 H2O\",\n    \"field_path\": \"solutions[0].composition\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"mediadiveJ1077api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J1077\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"NiCl2 x 6 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 40,\\n                        \\\"amount\\\": 24,\\n                     \
+    \   \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.024,\\\
+    n                        \\\"mmol_l\\\": 0.185187,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66\"\n      },\n\
+    \      {\n        \"source_key\": \"jcm439\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=439\"\
+    ,\n        \"source_locator\": \"Trace element solution subsection row 6\",\n\
+    \        \"exact_source_quote\": \"NiCl 2 ·6H 2 O 24.0 mg\",\n        \"snapshot_sha256\"\
+    : \"2a71115d17d54beb8454d4106e93dd60364885a914eee9d1c434ee15f510ceda\",\n    \
+    \    \"parsed_text_sha256\": \"d678d0e3ec848ea6d029f04800693f55fdbfab8dbb3b45924645cfff6e24b74b\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore the exact trace-stock batch quantity\
+    \ in the empty composition, separate from its 1 mL receiving dose. 25% HCl has\
+    \ unspecified basis. Listed liquids total 999.5 mL whereas the provider declares\
+    \ 1000 mL; retain this limit rather than inventing makeup.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"solutions[0].composition\"\
+    ,\n        \"stored\": [],\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\",\n   \
+    \     \"field_path\": \"solutions[0].composition\",\n        \"stored\": [],\n\
+    \        \"decision\": \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Shared trace stock CuCl2 x 2 H2O\",\n    \"field_path\": \"solutions[0].composition\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"mediadiveJ1077api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J1077\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"CuCl2 x 2 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 39,\\n                        \\\"amount\\\": 2,\\n                      \
+    \  \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.002,\\n\
+    \                        \\\"mmol_l\\\": 0.0117314,\\n                       \
+    \ \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66\"\n     \
+    \ },\n      {\n        \"source_key\": \"jcm439\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=439\",\n        \"source_locator\"\
+    : \"Trace element solution subsection row 7\",\n        \"exact_source_quote\"\
+    : \"CuCl 2 ·2H 2 O 2.0 mg\",\n        \"snapshot_sha256\": \"2a71115d17d54beb8454d4106e93dd60364885a914eee9d1c434ee15f510ceda\"\
+    ,\n        \"parsed_text_sha256\": \"d678d0e3ec848ea6d029f04800693f55fdbfab8dbb3b45924645cfff6e24b74b\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore the exact trace-stock batch quantity\
+    \ in the empty composition, separate from its 1 mL receiving dose. 25% HCl has\
+    \ unspecified basis. Listed liquids total 999.5 mL whereas the provider declares\
+    \ 1000 mL; retain this limit rather than inventing makeup.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"solutions[0].composition\"\
+    ,\n        \"stored\": [],\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\",\n   \
+    \     \"field_path\": \"solutions[0].composition\",\n        \"stored\": [],\n\
+    \        \"decision\": \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Shared trace stock ZnSO4 x 7 H2O\",\n    \"field_path\": \"solutions[0].composition\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"mediadiveJ1077api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J1077\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[7]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 8,\\n                        \\\"\
+    compound\\\": \\\"ZnSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 35,\\n                        \\\"amount\\\": 144,\\n                    \
+    \    \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.144,\\\
+    n                        \\\"mmol_l\\\": 0.500763,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66\"\n      },\n\
+    \      {\n        \"source_key\": \"jcm439\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=439\"\
+    ,\n        \"source_locator\": \"Trace element solution subsection row 8\",\n\
+    \        \"exact_source_quote\": \"ZnSO 4 ·7H 2 O 144.0 mg\",\n        \"snapshot_sha256\"\
+    : \"2a71115d17d54beb8454d4106e93dd60364885a914eee9d1c434ee15f510ceda\",\n    \
+    \    \"parsed_text_sha256\": \"d678d0e3ec848ea6d029f04800693f55fdbfab8dbb3b45924645cfff6e24b74b\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore the exact trace-stock batch quantity\
+    \ in the empty composition, separate from its 1 mL receiving dose. 25% HCl has\
+    \ unspecified basis. Listed liquids total 999.5 mL whereas the provider declares\
+    \ 1000 mL; retain this limit rather than inventing makeup.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"solutions[0].composition\"\
+    ,\n        \"stored\": [],\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\",\n   \
+    \     \"field_path\": \"solutions[0].composition\",\n        \"stored\": [],\n\
+    \        \"decision\": \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Shared trace stock Na2MoO4 x 2 H2O\",\n    \"field_path\": \"solutions[0].composition\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"mediadiveJ1077api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J1077\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[8]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 9,\\n                        \\\"\
+    compound\\\": \\\"Na2MoO4 x 2 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 9,\\n                        \\\"amount\\\": 36,\\n                      \
+    \  \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.036,\\n\
+    \                        \\\"mmol_l\\\": 0.148791,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66\"\n      },\n\
+    \      {\n        \"source_key\": \"jcm439\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=439\"\
+    ,\n        \"source_locator\": \"Trace element solution subsection row 9\",\n\
+    \        \"exact_source_quote\": \"Na 2 MoO 4 ·2H 2 O 36.0 mg\",\n        \"snapshot_sha256\"\
+    : \"2a71115d17d54beb8454d4106e93dd60364885a914eee9d1c434ee15f510ceda\",\n    \
+    \    \"parsed_text_sha256\": \"d678d0e3ec848ea6d029f04800693f55fdbfab8dbb3b45924645cfff6e24b74b\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore the exact trace-stock batch quantity\
+    \ in the empty composition, separate from its 1 mL receiving dose. 25% HCl has\
+    \ unspecified basis. Listed liquids total 999.5 mL whereas the provider declares\
+    \ 1000 mL; retain this limit rather than inventing makeup.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"solutions[0].composition\"\
+    ,\n        \"stored\": [],\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\",\n   \
+    \     \"field_path\": \"solutions[0].composition\",\n        \"stored\": [],\n\
+    \        \"decision\": \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Shared trace stock Distilled water\",\n    \"field_path\": \"solutions[0].composition\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"mediadiveJ1077api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J1077\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[9]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 10,\\n                        \\\
+    \"compound\\\": \\\"Distilled water\\\",\\n                        \\\"compound_id\\\
+    \": 4,\\n                        \\\"amount\\\": 987,\\n                     \
+    \   \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"1ea78ed0d57df8fb975cfaac306e6af318bd35faa4637afa300d267b50a6fc66\"\
+    \n      },\n      {\n        \"source_key\": \"jcm439\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=439\",\n        \"source_locator\"\
+    : \"Trace element solution subsection row 10\",\n        \"exact_source_quote\"\
+    : \"Distilled water 987.0 ml\",\n        \"snapshot_sha256\": \"2a71115d17d54beb8454d4106e93dd60364885a914eee9d1c434ee15f510ceda\"\
+    ,\n        \"parsed_text_sha256\": \"d678d0e3ec848ea6d029f04800693f55fdbfab8dbb3b45924645cfff6e24b74b\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore the exact trace-stock batch quantity\
+    \ in the empty composition, separate from its 1 mL receiving dose. 25% HCl has\
+    \ unspecified basis. Listed liquids total 999.5 mL whereas the provider declares\
+    \ 1000 mL; retain this limit rather than inventing makeup.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"solutions[0].composition\"\
+    ,\n        \"stored\": [],\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml\",\n   \
+    \     \"field_path\": \"solutions[0].composition\",\n        \"stored\": [],\n\
+    \        \"decision\": \"add\"\n      }\n    ]\n  }\n]"
+- assessment_id: identity
+  area: identity
+  topic: Two explicitly different maintained source formulations
+  outcome: concern
+  summary: CM007669/M1146/JCM1077 and CM007670/M1147/JCM1078 are exact distinct contributors.
+    LACV uses 940 mL water, 10 g NaCl, 3 g thiosulfate pentahydrate and 20 mL 10%
+    w/v yeast stock; 3B uses 910 mL, 1 g, 1.5 g and 50 mL. The target retains LACV
+    quantities while listing 3B as a synonym and merged source. Ingredient-set identity
+    does not establish formulation equivalence.
+  target_ids:
+  - CultureMech:007669
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - id-search
+  - jcm1077
+  - jcm1078
+  - quantity-inventory
+- assessment_id: source-stage-consistency
+  area: consistency
+  topic: Batch masses, additions, stock definitions and denominators
+  outcome: concern
+  summary: 'Every concentration in all three layers is covered separately by source
+    version. Resazurin mg and all liquid mL entries were copied into g/L. Even numeric
+    gram rows require explicit batch basis: both sources list 1007 mL of liquids,
+    and both provider declarations are 1007 mL; neither proves measured final volume
+    after titration and dissolution. Crotonic acid gives 10 mmol delivered, and yeast
+    stock gives 2 g versus 5 g, without an inferred final denominator.'
+  target_ids:
+  - CultureMech:007669
+  evidence_ids:
+  - quantity-inventory
+  - quantity-local-fields
+  - jcm1077
+  - jcm1078
+  - mediadiveJ1077api
+  - mediadiveJ1078api
+- assessment_id: stock-reference
+  area: completeness
+  topic: Exact M439 trace subsection and four empty stock stubs
+  outcome: concern
+  summary: The full local CM009824 dependency was inspected and its current primary/provider
+    identities resolved. Only its ten-row trace subsection is relevant here. Its main
+    medium, lactate and M431/M401 references are not inherited. The four Unknown solution
+    entries have empty compositions and wrong addition units; trace acid percentage
+    basis and the 999.5-versus-1000 mL stock basis remain explicit limits.
+  target_ids:
+  - CultureMech:007669
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - jcm439
+  - togoM439
+  - mediadiveJ439api
+  - solution4186
+  - bound-context
+- assessment_id: preparation
+  area: completeness
+  topic: Source-specific order, gas atmosphere and pH
+  outcome: concern
+  summary: Both owners and target omit preparation and pH. The exact sources specify
+    initial pH 9.0 with NaOH, autoclaving under N2, cooling before replacement by
+    N2/CO2 4:1 v/v, later anaerobic stocks autoclaved and stored under N2, and final
+    pH around 8.5. Each exact page displays the conditional 121°C/15 min default.
+    No absolute gas amount, titrant dose or unspecified percentage basis is supplied.
+  target_ids:
+  - CultureMech:007669
+  evidence_ids:
+  - jcm1077
+  - jcm1078
+  - quantity-inventory
+  - record
+  - owner-0
+  - owner-1
+- assessment_id: forms-and-scope
+  area: scope
+  topic: Chemical form, classification and biological claim limits
+  outcome: supported
+  summary: Asserted direct hydrate terms match magnesium hexahydrate and thiosulfate
+    pentahydrate; no chemical identifier is invented for the crotonic-acid stock or
+    unresolved stock placeholders. COMPLEX/UNDEFINED and LIQUID fit yeast extract
+    and the liquid formulation. The medium names do not assert a specific strain,
+    taxon, assembly, DOI/PMID or experimentally verified growth claim. Transferred
+    trace-stock chemistry remains stock-scoped; the parent medium is not a growth
+    claim for this target.
+  target_ids:
+  - CultureMech:007669
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - jcm1077
+  - jcm1078
+  - chebi86345
+  - chebi32150
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 35 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:007669
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+  - owner-1
+- assessment_id: generation
+  area: provenance
+  topic: Maintained contributors and current transform responsibilities
+  outcome: concern
+  summary: The target reproduces LACV while retaining a distinct 3B contributor as
+    a synonym. Current formulation merging rejects incompatible content rather than
+    accepting ingredient-set similarity; current TOGO parsing separates stocks/comments
+    and distinguishes mg/mL, while migration can preserve unresolved stubs and copied
+    concentrations. Current code is not a replay proving historical execution. Corrections
+    belong in both maintained owners plus a bounded merge-identity decision before
+    regeneration.
+  target_ids:
+  - CultureMech:007669
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - history-metadata
+  - writer-context-0
+  - writer-context-1
+  - writer-context-2
+  - writer-context-3
+  - writer-context-4
+findings:
+- finding_id: f1
+  issue_key: culturemech.007669.distinct-formulations
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Distinct LACV and 3B formulations are merged as synonyms
+  description: Four exact source quantities differ between JCM1077 and JCM1078, including
+    a tenfold NaCl difference and 20 versus 50 mL yeast stock. The target preserves
+    one formulation while claiming the second as its synonym/merged contributor.
+  target_ids:
+  - CultureMech:007669
+  field_paths:
+  - synonyms
+  - merged_from
+  - ingredients[0]
+  - ingredients[1]
+  - ingredients[9]
+  - solutions[2]
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - jcm1077
+  - jcm1078
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.007669.units-and-stocks
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Liquid stock additions and resazurin mass are represented as g/L
+  description: Both owners and the generated target turn water and five liquid additions
+    into mass concentrations, including 20 g/L crotonic acid instead of 20 mL 0.5
+    M stock and 1 g/L resazurin instead of 1 mg per listed batch. Four stock definitions
+    remain empty. These combined unit/stage errors make the represented medium materially
+    different from either named source.
+  target_ids:
+  - CultureMech:007669
+  field_paths:
+  - ingredients[0].concentration
+  - ingredients[5].concentration
+  - ingredients[13]
+  - solutions
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - jcm1077
+  - jcm1078
+  - jcm439
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.007669.preparation
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The source-specific pH and anaerobic preparation are omitted
+  description: Neither owner nor target retains initial/final pH, gas replacement
+    ratio, separate anaerobic stock preparation or the exact page sterilization default.
+    These conditions are needed to reproduce the named formulations.
+  target_ids:
+  - CultureMech:007669
+  field_paths:
+  - preparation_steps
+  - ph_value
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - jcm1077
+  - jcm1078
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.5
+  native_severity: P3
+  normalization_reason: P3.5 is normalized to major because source-specific gas, pH,
+    order and sterilization omissions prevent faithful preparation of these formulations.
+actions:
+- action_id: a1
+  description: Separate the two source formulations through an explicit maintained-input
+    and merge decision, preserving both stable IDs and source-specific quantities.
+    Do not average or overwrite either formulation; regenerate only after authorized
+    identity reconciliation.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:007669
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Restore exact source masses, solvent volumes, stock strengths, dose
+    units and trace-stock composition in each maintained owner with claim-level snippets.
+    Keep the two formulations and unresolved percentage/final-volume bases separate.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:007669
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Restore the exact source-scoped sequence and quantitative preparation
+    contexts with evidence, retaining unquantified titration/gas amounts and approximate
+    final pH. Do not insert a generic protocol.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:007669
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Final measured medium volume is not established by the 1007 mL sum/provider declaration.
+  Trace-stock listed liquids total 999.5 mL versus a 1000 mL provider declaration;
+  no missing makeup is invented.
+- Carbonate 8%, sulfide 5% and trace-stock HCl 25% lack an explicit percent basis.
+  Absolute gas and NaOH titrant doses are unquantified. Parent M439 main-medium quantities
+  and other stock references are excluded from transfer.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-023
+- generated-medium
+```
