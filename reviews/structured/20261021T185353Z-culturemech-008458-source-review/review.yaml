@@ -1,0 +1,1947 @@
+schema_version: 1.0.0
+review_id: 20261021T185353Z-culturemech-008458-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: acidianus_medium (CultureMech:008458)'
+started_at: '2026-10-21T18:47:08Z'
+finished_at: '2026-10-21T18:53:53Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: NBRC 1128 and TOGO M1884 resolve the current formulation, but eight milligram
+  amounts, water units and omitted staged preparation require curation. Borax structural
+  metadata is inconsistent with the printed formula. The asserted historical sulfur
+  identifier remains unresolved.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/Acidianus_medium.yaml
+    sha256: 4df0e4f03d8a7acde4390f89b8655c309d1b9b31a0bd70ce2879d4ec4df04da4
+    role: target
+  - path: data/normalized_yaml/archaea/acidianus_medium.yaml
+    sha256: 1279dbbed1dd58bad25c5350c969c49461ed613f684237b93d244855dcd8d2b5
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/togo_raw_yaml.py
+    sha256: ce5e73545c9ecde54724259d2fd475676c0f3cb44dcfd283950e89fd49c10993
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/togo_fetcher.py
+    sha256: 7aac40fe1d47e30810ae0be02f6e369ddb9bf657d630072595c62f46fb0bf339
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 339; batch 034 item 9 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirty-three task batches
+    contain 330 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 333 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:008458
+targets:
+- target_id: CultureMech:008458
+  path: data/merge_yaml/merged/Acidianus_medium.yaml
+  label: acidianus_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidianus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/Acidianus_medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:008458
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/Acidianus_medium.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch034/339/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-034/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch034/339/strict.tsv"
+  target_ids:
+  - CultureMech:008458
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/Acidianus_medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:008458
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/Acidianus_medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:008458
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:008458
+- check_id: historical-sulfur-identity
+  name: Historical MediaIngredientMech:001072 correspondence
+  required: true
+  status: unavailable
+  summary: The asserted legacy sulfur identifier cannot be authenticated historically
+    from the available current snapshots. A completed current negative lookup is preserved
+    separately; no historical equivalence or replacement is inferred.
+  target_ids:
+  - CultureMech:008458
+  evidence_ids:
+  - legacy-search
+  - mimPinnedCatalog
+  - mimPinnedTree
+- check_id: togoM1884-source-access
+  name: 'Exact source content access: togoM1884'
+  required: false
+  status: unavailable
+  summary: The alternate TOGO mediumapi request failed DNS and is retained. Exact
+    original TOGO and NBRC 1128 sources are usable; this optional failure is not the
+    reason for partial completion.
+  target_ids:
+  - CultureMech:008458
+  evidence_ids:
+  - togoM1884-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/Acidianus_medium.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T18:53:52Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/archaea/acidianus_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T18:53:52Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/Acidianus_medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T18:47:52.536544Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/Acidianus_medium.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch034/339/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T18:47:53.729754Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-034/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch034/339/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/Acidianus_medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T18:47:55.109867Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/Acidianus_medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T18:47:56.096914Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T18:53:52Z'
+  support: supports
+  summary: './data/normalized_yaml/archaea/acidianus_medium.yaml:1:id: CultureMech:008458
+
+    ./data/merge_yaml/merged/Acidianus_medium.yaml:1:id: CultureMech:008458
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch034/source-preflight-bound/339/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T18:53:52Z'
+  support: supports
+  summary: 26 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: c0141fcde00121e907c2fbb126c720c39f9c3107f6d6869c2d9acd97d1f4010c
+- evidence_id: primary-identity
+  kind: primary_source
+  reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128
+  locator: NBRC medium number and title
+  accessed_at: '2026-10-21T18:28:14.699846Z'
+  support: supports
+  summary: Exact accession and title match the maintained owner and generated target.
+  quote: Medium No. 1128 Medium Acidianus medium
+  snapshot_sha256: 95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04
+- evidence_id: primary-formulation
+  kind: primary_source
+  reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128
+  locator: NBRC 1128 complete composition table
+  accessed_at: '2026-10-21T18:28:14.699846Z'
+  support: supports
+  summary: The table retains original g, mg and L quantities; staged additions are
+    described separately below it.
+  quote: (NH 4 ) 2 SO 4 1.3 g KH 2 PO 4 0.28 g MgSO 4 ·7H 2 O 0.25 g CaCl 2 ·2H 2
+    O 0.07 g FeCl 3 ·6H 2 O 0.02 g MnCl 2 ·4H 2 O 1.8 mg Na 2 B 4 O 7 ·10H 2 O 4.5
+    mg ZnSO 4 ·7H 2 O 0.22 mg CuCl 2 ·2H 2 O 0.05 mg Na 2 MoO 4 ·2H 2 O 0.03 mg VOSO
+    4 ·xH 2 O 0.03 mg CoSO 4 ·7H 2 O 0.01 mg Bacto Yeast Extract (Difco) 0.5 g Sulfur
+    (powder) 1 g Resazurin 1 mg Na 2 S·9H 2 O 0.5 g Distilled water 1 L
+  snapshot_sha256: 95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04
+- evidence_id: primary-preparation
+  kind: primary_source
+  reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128
+  locator: NBRC 1128 entire preparation paragraph
+  accessed_at: '2026-10-21T18:28:14.699846Z'
+  support: supports
+  summary: pH, delayed additions, two 5% stocks, gas ratio, sulfur heat treatment
+    and pressure retain their exact stages and unresolved qualifiers.
+  quote: Mix ingredients except for Bacto Yeast Extract, sulfur and Na 2 S·9H 2 O,
+    and adjust pH to 2.0 with H 2 SO 4 . Dispense the medium into suitable culture
+    vessels under a stream of H 2 /CO 2 (80/20) and seal with butyl rubber stoppers.  Separately
+    autoclave Bacto Yeast Extract and Na 2 S·9H 2 O as 5% solutions under a N 2 atmosphere.
+    Sulfur is sterilized separately by autoclaving for 60 min at 105°C on each of
+    successive days. Prior to inoculation, add Bacto Yeast Extract, sulfur and Na
+    2 S·9H 2 O, and pressurize the inoculated vessels to 150 kPa with H 2 /CO 2 .
+  snapshot_sha256: 95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04
+- evidence_id: provider-identity
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1884
+  locator: $.meta, $.components[0] and $.comments[1]
+  accessed_at: '2026-10-21T18:28:13.811644Z'
+  support: supports
+  summary: TOGO M1884 identifies NBRC_M1128 and reproduces the source amounts and
+    preparation; provider metadata is not a replacement for the primary.
+  quote: '"original_media_id": "NBRC_M1128"'
+  snapshot_sha256: 39e9cbb378bb409a5ab805addf4565889ad736b430ec3acea0070841bd1a7587
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch034/339/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T18:53:52Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: a4cc1e39efcc9fd795d95b587e99e5f1dc8cb803ef1c6c11c27f4bf8ccc7d7da
+- evidence_id: chebi131366
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131366
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T11:30:39.793244Z'
+  support: supports
+  summary: CHEBI:131366 resolves to disodium tetraborate decahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 1ea4119e009b41d70522d7bdea7b79b0d2a0c8d774d32606f281ade14be31d5d
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.097802Z'
+  support: supports
+  summary: CHEBI:15377 resolves to water. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi16526
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16526
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.337128Z'
+  support: supports
+  summary: CHEBI:16526 resolves to carbon dioxide. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 19b976653e14322f23a21b90b537bfcd19bb4e73d8d0de96446a25888cd3caf6
+- evidence_id: chebi17997
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17997
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:27.385647Z'
+  support: supports
+  summary: CHEBI:17997 resolves to dinitrogen. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: ea4b3f90994884c49607689e3f3939cfec804c7d17905bbeecfc0ef7f80ead43
+- evidence_id: chebi18276
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_18276
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:27.615173Z'
+  support: supports
+  summary: CHEBI:18276 resolves to dihydrogen. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 47a32d9cfe41e3759385a0e4e002e9fa208fe1511d84e3d0d1f9f1ca9ce6e86d
+- evidence_id: chebi26836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26836
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:29:13.222926Z'
+  support: supports
+  summary: CHEBI:26836 resolves to sulfuric acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 19e202cd697eed2be3130d5b0b29cc0c1d18575ad103110877303ee678779737
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.879505Z'
+  support: supports
+  summary: CHEBI:32312 resolves to zinc sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: chebi33403
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33403
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:26:28.748668Z'
+  support: supports
+  summary: CHEBI:33403 resolves to elemental sulfur. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: b349493be5d8cb371d1e71751510f9205880ab9d0a14f560191e05606c127a60
+- evidence_id: chebi62946
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:43:02.566401Z'
+  support: supports
+  summary: CHEBI:62946 resolves to ammonium sulfate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 10c25b481047a1fdfbc201104ecc06b15b32d5e72319beed5133e5d5693bede5
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi76209
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:04.847843Z'
+  support: supports
+  summary: CHEBI:76209 resolves to sodium sulfide nonahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: f74d2c85574a4e28bdf71a78e4263f7e4c211036cd6d63b1f8282aca1d255e5c
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86254
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86254
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.289392Z'
+  support: supports
+  summary: CHEBI:86254 resolves to iron trichloride hexahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 89afba545ad02f24a850933df154af25dee37357b583f82de13866b44f18d683
+- evidence_id: chebi86318
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:43:12.592415Z'
+  support: supports
+  summary: CHEBI:86318 resolves to copper(II) chloride dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 9bbecfe37d67d923ee070067aebdf1abf21048cdb2cbdff9de0e3d21f68ea1ae
+- evidence_id: chebi86368
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.657545Z'
+  support: supports
+  summary: CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Identifier
+    existence and label metadata do not establish source-specific hydrate, stereochemistry
+    or product identity.
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: chebi87020
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_87020
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T11:31:25.172458Z'
+  support: supports
+  summary: CHEBI:87020 resolves to vanadyl sulfate hydrate. Identifier existence and
+    label metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: f95552b25b2f452d828c90399dc0d24f7f2be2015694c824fac408e0ea353660
+- evidence_id: chebi8806
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.774007Z'
+  support: supports
+  summary: CHEBI:8806 resolves to Resazurin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: chebi91244
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91244
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:07.079384Z'
+  support: supports
+  summary: CHEBI:91244 resolves to cobalt(2+) sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: dd763e0620a8afe61626951123a4de5d100bfa4534ee26ba0a39dad4e7e9bcaa
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T18:53:52Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:15377":
+    [{"label": "Distilled water", "match_type": "preferred_term", "identifier": "CHEBI:15377",
+    "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:26836": [{"label": "H2SO4", "match_type":
+    "preferred_term", "identifier": "CHEBI:26836", "preferred_term": "H2SO4", "ontology_id":
+    "CHEBI:26836", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795":
+    [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32312": [{"label":
+    "ZnSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:32312",
+    "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:62946": [{"label": "(NH4)2SO4", "match_type":
+    "preferred_term", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4",
+    "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier":
+    "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:75213", "preferred_term":
+    "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:76209": [{"label": "Na2S x 9 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:76209", "preferred_term": "Na2S x 9 H2O", "ontology_id":
+    "CHEBI:76209", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86158":
+    [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158",
+    "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:86254": [{"label": "FeCl3 x 6 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:86254", "preferred_term":
+    "FeCl3 x 6 H2O", "ontology_id": "CHEBI:86254", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:86318": [{"label": "CuCl2 x 2 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:86318", "preferred_term": "CuCl2 x 2 H2O", "ontology_id":
+    "CHEBI:86318", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:87020":
+    [{"label": "VOSO4 x n H2O", "match_type": "preferred_term", "identifier": "CHEBI:87020",
+    "preferred_term": "VOSO4 x n H2O", "ontology_id": "CHEBI:87020", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:8806": [{"label": "Resazurin", "match_type":
+    "preferred_term", "identifier": "CHEBI:8806", "preferred_term": "Resazurin", "ontology_id":
+    "CHEBI:8806", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: mimPinnedCatalog
+  kind: database
+  reference: https://raw.githubusercontent.com/CultureBotAI/MediaIngredientMech/6643131b0f12ab40b66f98135245fca04027e0e9/docs/data/all_ingredients.json
+  locator: Complete pinned current catalogue or recursive tree; exact legacy token
+    001072
+  accessed_at: '2026-10-21T09:52:30.606764Z'
+  support: supports
+  summary: Completed exact-token negative lookup across the complete captured current
+    source. Current absence does not establish historical invalidity or historical
+    identity correspondence.
+  snapshot_sha256: 474ff60bd51606ef6e272b8b22d421bbe51d9f78567a114f94e59d04fe51acc7
+- evidence_id: mimPinnedTree
+  kind: database
+  reference: https://api.github.com/repos/CultureBotAI/MediaIngredientMech/git/trees/6643131b0f12ab40b66f98135245fca04027e0e9?recursive=1
+  locator: Complete pinned current catalogue or recursive tree; exact legacy token
+    001072
+  accessed_at: '2026-10-21T09:51:04.602158Z'
+  support: supports
+  summary: Completed exact-token negative lookup across the complete captured current
+    source. Current absence does not establish historical invalidity or historical
+    identity correspondence.
+  snapshot_sha256: 71721421c6e8100b080d4ee3140f6e0bb4bcd21b57964ceeb61399ca4a2844ec
+- evidence_id: legacy-search
+  kind: search
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Entire 9,077-row pinned index, full current catalogue and non-truncated
+    recursive Git tree
+  accessed_at: '2026-10-21T18:53:52Z'
+  support: context_only
+  summary: MediaIngredientMech:001072 has no current index row, catalogue token or
+    tree-path hit. This is a completed current lookup, not a failed source access;
+    the historical record correspondence remains unavailable.
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+  search_scope: Exact legacy full ID and numeric suffix across the full pinned label
+    index, all_ingredients JSON and non-truncated recursive tree, including hidden
+    and ignored paths represented by the complete tree. Local identity search also
+    includes ignored files; local assertions are derivative, not historical MIM source
+    bytes.
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/Acidianus_medium.yaml; data/normalized_yaml/archaea/acidianus_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T18:53:52Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 12, "timestamp_issues": []}, {"input":
+    "data/normalized_yaml/archaea/acidianus_medium.yaml", "events": 11, "timestamp_issues":
+    []}]'
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T18:53:52Z'
+  support: context_only
+  summary: Current unit parsing, comment extraction and formulation-equality merging
+    were inspected. Plain g is promoted to G_PER_L; mg and L have distinct current
+    mappings. These current functions and nonchronological history order do not establish
+    the original causal implementation or justify rewriting history.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T18:53:52Z'
+  support: context_only
+  summary: Current unit parsing, comment extraction and formulation-equality merging
+    were inspected. Plain g is promoted to G_PER_L; mg and L have distinct current
+    mappings. These current functions and nonchronological history order do not establish
+    the original causal implementation or justify rewriting history.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: togoM1884-attempt
+  kind: database
+  reference: https://mediumapi.dbcls.jp/medium/M1884
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T18:28:10.999586Z'
+  support: context_only
+  summary: The alternate TOGO mediumapi request failed DNS and is retained. Exact
+    original TOGO and NBRC 1128 sources are usable; this optional failure is not the
+    reason for partial completion.
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:008458
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: Exact recipe identity and asserted identifiers
+  outcome: concern
+  summary: NBRC 1128 and TOGO M1884 resolve the current recipe identity. The generated
+    record has one exact maintained owner. The separate legacy MediaIngredientMech:001072
+    sulfur assertion cannot be authenticated historically from the current pinned
+    catalogue and tree. No strain accession, DOI or KG match is asserted.
+  target_ids:
+  - CultureMech:008458
+  evidence_ids:
+  - record
+  - owner-0
+  - primary-identity
+  - provider-identity
+- assessment_id: ownership
+  area: ownership
+  topic: Maintained source and generated correspondence
+  outcome: supported
+  summary: The complete merge event, merged_from and exact stable ID identify one
+    maintained archaea record. Its scientific fields agree with the generated target.
+    Both layers need the same owner-first scientific corrections; a merge fingerprint
+    does not authenticate the external formulation.
+  target_ids:
+  - CultureMech:008458
+  evidence_ids:
+  - record
+  - owner-0
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 34 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:008458
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"decision_id\": \"q1\",\n    \"ingredient\": \"Distilled\
+    \ water\",\n    \"decision\": \"correct\",\n    \"stage\": \"Main recipe batch\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1128\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128\"\
+    ,\n        \"source_locator\": \"NBRC 1128; Main recipe batch; Distilled water\"\
+    ,\n        \"exact_source_quote\": \"Distilled water 1 L\",\n        \"snapshot_sha256\"\
+    : \"95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04\",\n    \
+    \    \"parsed_text_sha256\": \"4a7b9d051027cac66c92530fa46526973de695427004468e21ea6d71f6b2daf3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1884original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1884\"\
+    ,\n        \"source_locator\": \"$.components[0].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"39e9cbb378bb409a5ab805addf4565889ad736b430ec3acea0070841bd1a7587\"\
+    \n      }\n    ],\n    \"interpretation\": \"Both layers store 1 G_PER_L, whereas\
+    \ the source specifies 1 L of water. Preserve the volume as preparation water,\
+    \ not a mass or measured final-medium denominator.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q2\",\n    \"ingredient\": \"MgSO4·7H2O\",\n    \"decision\": \"correct\"\
+    ,\n    \"stage\": \"Main recipe batch\",\n    \"local_fields\": [\n      {\n \
+    \       \"input\": \"data/merge_yaml/merged/Acidianus_medium.yaml\",\n       \
+    \ \"field_path\": \"ingredients[1].concentration\",\n        \"stored\": {\n \
+    \         \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n        }\n \
+    \     },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1128\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128\"\
+    ,\n        \"source_locator\": \"NBRC 1128; Main recipe batch; MgSO4·7H2O\",\n\
+    \        \"exact_source_quote\": \"MgSO 4 ·7H 2 O 0.25 g\",\n        \"snapshot_sha256\"\
+    : \"95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04\",\n    \
+    \    \"parsed_text_sha256\": \"4a7b9d051027cac66c92530fa46526973de695427004468e21ea6d71f6b2daf3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1884original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1884\"\
+    ,\n        \"source_locator\": \"$.components[0].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MgSO4·7H2O\\\",\\n          \\\"volume\\\": 0.25,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"39e9cbb378bb409a5ab805addf4565889ad736b430ec3acea0070841bd1a7587\"\
+    \n      }\n    ],\n    \"interpretation\": \"The original gram amount agrees numerically\
+    \ but is labelled G_PER_L locally. Preserve batch grams and their source stage\
+    \ with evidence, while qualifying the unproven final-volume denominator. Neither\
+    \ layer has attached amount evidence.\"\n  },\n  {\n    \"decision_id\": \"q3\"\
+    ,\n    \"ingredient\": \"CaCl2·2H2O\",\n    \"decision\": \"correct\",\n    \"\
+    stage\": \"Main recipe batch\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/Acidianus_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[2].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.07\",\n          \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/archaea/acidianus_medium.yaml\",\n \
+    \       \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.07\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1128\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128\"\
+    ,\n        \"source_locator\": \"NBRC 1128; Main recipe batch; CaCl2·2H2O\",\n\
+    \        \"exact_source_quote\": \"CaCl 2 ·2H 2 O 0.07 g\",\n        \"snapshot_sha256\"\
+    : \"95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04\",\n    \
+    \    \"parsed_text_sha256\": \"4a7b9d051027cac66c92530fa46526973de695427004468e21ea6d71f6b2daf3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1884original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1884\"\
+    ,\n        \"source_locator\": \"$.components[0].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CaCl2·2H2O\\\",\\n          \\\"volume\\\": 0.07,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"39e9cbb378bb409a5ab805addf4565889ad736b430ec3acea0070841bd1a7587\"\
+    \n      }\n    ],\n    \"interpretation\": \"The original gram amount agrees numerically\
+    \ but is labelled G_PER_L locally. Preserve batch grams and their source stage\
+    \ with evidence, while qualifying the unproven final-volume denominator. Neither\
+    \ layer has attached amount evidence.\"\n  },\n  {\n    \"decision_id\": \"q4\"\
+    ,\n    \"ingredient\": \"KH2PO4\",\n    \"decision\": \"correct\",\n    \"stage\"\
+    : \"Main recipe batch\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/Acidianus_medium.yaml\",\n        \"field_path\": \"\
+    ingredients[3].concentration\",\n        \"stored\": {\n          \"value\": \"\
+    0.28\",\n          \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n     \
+    \   \"input\": \"data/normalized_yaml/archaea/acidianus_medium.yaml\",\n     \
+    \   \"field_path\": \"ingredients[3].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.28\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1128\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128\"\
+    ,\n        \"source_locator\": \"NBRC 1128; Main recipe batch; KH2PO4\",\n   \
+    \     \"exact_source_quote\": \"KH 2 PO 4 0.28 g\",\n        \"snapshot_sha256\"\
+    : \"95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04\",\n    \
+    \    \"parsed_text_sha256\": \"4a7b9d051027cac66c92530fa46526973de695427004468e21ea6d71f6b2daf3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1884original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1884\"\
+    ,\n        \"source_locator\": \"$.components[0].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"KH2PO4\\\",\\n          \\\"volume\\\": 0.28,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"39e9cbb378bb409a5ab805addf4565889ad736b430ec3acea0070841bd1a7587\"\
+    \n      }\n    ],\n    \"interpretation\": \"The original gram amount agrees numerically\
+    \ but is labelled G_PER_L locally. Preserve batch grams and their source stage\
+    \ with evidence, while qualifying the unproven final-volume denominator. Neither\
+    \ layer has attached amount evidence.\"\n  },\n  {\n    \"decision_id\": \"q5\"\
+    ,\n    \"ingredient\": \"Na2MoO4·2H2O\",\n    \"decision\": \"correct\",\n   \
+    \ \"stage\": \"Main recipe batch\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/merge_yaml/merged/Acidianus_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[4].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.03\",\n          \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/archaea/acidianus_medium.yaml\",\n \
+    \       \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1128\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128\"\
+    ,\n        \"source_locator\": \"NBRC 1128; Main recipe batch; Na2MoO4·2H2O\"\
+    ,\n        \"exact_source_quote\": \"Na 2 MoO 4 ·2H 2 O 0.03 mg\",\n        \"\
+    snapshot_sha256\": \"95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04\"\
+    ,\n        \"parsed_text_sha256\": \"4a7b9d051027cac66c92530fa46526973de695427004468e21ea6d71f6b2daf3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1884original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1884\"\
+    ,\n        \"source_locator\": \"$.components[0].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2MoO4·2H2O\\\",\\n          \\\"volume\\\":\
+    \ 0.03,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\":\
+    \ \"39e9cbb378bb409a5ab805addf4565889ad736b430ec3acea0070841bd1a7587\"\n     \
+    \ }\n    ],\n    \"interpretation\": \"The source and provider print 0.03 mg,\
+    \ but both layers store that number in G_PER_L. Restore the milligram batch amount\
+    \ and evidence; do not assume a measured final 1 L.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q6\",\n    \"ingredient\": \"Resazurin\",\n    \"decision\": \"correct\",\n\
+    \    \"stage\": \"Main recipe batch\",\n    \"local_fields\": [\n      {\n   \
+    \     \"input\": \"data/merge_yaml/merged/Acidianus_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[5].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        }\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/archaea/acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1128\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128\"\
+    ,\n        \"source_locator\": \"NBRC 1128; Main recipe batch; Resazurin\",\n\
+    \        \"exact_source_quote\": \"Resazurin 1 mg\",\n        \"snapshot_sha256\"\
+    : \"95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04\",\n    \
+    \    \"parsed_text_sha256\": \"4a7b9d051027cac66c92530fa46526973de695427004468e21ea6d71f6b2daf3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1884original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1884\"\
+    ,\n        \"source_locator\": \"$.components[0].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Resazurin\\\",\\n          \\\"volume\\\": 1,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"39e9cbb378bb409a5ab805addf4565889ad736b430ec3acea0070841bd1a7587\"\
+    \n      }\n    ],\n    \"interpretation\": \"The source and provider print 1 mg,\
+    \ but both layers store that number in G_PER_L. Restore the milligram batch amount\
+    \ and evidence; do not assume a measured final 1 L.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q7\",\n    \"ingredient\": \"Na2S·9H2O\",\n    \"decision\": \"correct\",\n\
+    \    \"stage\": \"Listed batch contribution, added after separate preparation\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1128\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128\"\
+    ,\n        \"source_locator\": \"NBRC 1128; Listed batch contribution, added after\
+    \ separate preparation; Na2S·9H2O\",\n        \"exact_source_quote\": \"Na 2 S·9H\
+    \ 2 O 0.5 g\",\n        \"snapshot_sha256\": \"95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04\"\
+    ,\n        \"parsed_text_sha256\": \"4a7b9d051027cac66c92530fa46526973de695427004468e21ea6d71f6b2daf3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1884original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1884\"\
+    ,\n        \"source_locator\": \"$.components[0].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2S·9H2O\\\",\\n          \\\"volume\\\": 0.5,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"39e9cbb378bb409a5ab805addf4565889ad736b430ec3acea0070841bd1a7587\"\
+    \n      }\n    ],\n    \"interpretation\": \"The original gram amount agrees numerically\
+    \ but is labelled G_PER_L locally. Preserve batch grams and their source stage\
+    \ with evidence, while qualifying the unproven final-volume denominator. Neither\
+    \ layer has attached amount evidence. The primary excludes this material from\
+    \ the initial mix and adds it later; do not combine its separate preparation with\
+    \ the initial basal mixture.\"\n  },\n  {\n    \"decision_id\": \"q8\",\n    \"\
+    ingredient\": \"MnCl2·4H2O\",\n    \"decision\": \"correct\",\n    \"stage\":\
+    \ \"Main recipe batch\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/Acidianus_medium.yaml\",\n        \"field_path\": \"\
+    ingredients[7].concentration\",\n        \"stored\": {\n          \"value\": \"\
+    1.8\",\n          \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/archaea/acidianus_medium.yaml\",\n      \
+    \  \"field_path\": \"ingredients[7].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"1.8\",\n          \"unit\": \"G_PER_L\"\n        }\n \
+    \     }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\":\
+    \ \"nbrc1128\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128\"\
+    ,\n        \"source_locator\": \"NBRC 1128; Main recipe batch; MnCl2·4H2O\",\n\
+    \        \"exact_source_quote\": \"MnCl 2 ·4H 2 O 1.8 mg\",\n        \"snapshot_sha256\"\
+    : \"95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04\",\n    \
+    \    \"parsed_text_sha256\": \"4a7b9d051027cac66c92530fa46526973de695427004468e21ea6d71f6b2daf3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1884original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1884\"\
+    ,\n        \"source_locator\": \"$.components[0].items[7]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MnCl2·4H2O\\\",\\n          \\\"volume\\\": 1.8,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"39e9cbb378bb409a5ab805addf4565889ad736b430ec3acea0070841bd1a7587\"\
+    \n      }\n    ],\n    \"interpretation\": \"The source and provider print 1.8\
+    \ mg, but both layers store that number in G_PER_L. Restore the milligram batch\
+    \ amount and evidence; do not assume a measured final 1 L.\"\n  },\n  {\n    \"\
+    decision_id\": \"q9\",\n    \"ingredient\": \"ZnSO4·7H2O\",\n    \"decision\"\
+    : \"correct\",\n    \"stage\": \"Main recipe batch\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/Acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.22\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.22\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1128\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128\"\
+    ,\n        \"source_locator\": \"NBRC 1128; Main recipe batch; ZnSO4·7H2O\",\n\
+    \        \"exact_source_quote\": \"ZnSO 4 ·7H 2 O 0.22 mg\",\n        \"snapshot_sha256\"\
+    : \"95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04\",\n    \
+    \    \"parsed_text_sha256\": \"4a7b9d051027cac66c92530fa46526973de695427004468e21ea6d71f6b2daf3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1884original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1884\"\
+    ,\n        \"source_locator\": \"$.components[0].items[8]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"ZnSO4·7H2O\\\",\\n          \\\"volume\\\": 0.22,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"39e9cbb378bb409a5ab805addf4565889ad736b430ec3acea0070841bd1a7587\"\
+    \n      }\n    ],\n    \"interpretation\": \"The source and provider print 0.22\
+    \ mg, but both layers store that number in G_PER_L. Restore the milligram batch\
+    \ amount and evidence; do not assume a measured final 1 L.\"\n  },\n  {\n    \"\
+    decision_id\": \"q10\",\n    \"ingredient\": \"CuCl2·2H2O\",\n    \"decision\"\
+    : \"correct\",\n    \"stage\": \"Main recipe batch\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/Acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1128\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128\"\
+    ,\n        \"source_locator\": \"NBRC 1128; Main recipe batch; CuCl2·2H2O\",\n\
+    \        \"exact_source_quote\": \"CuCl 2 ·2H 2 O 0.05 mg\",\n        \"snapshot_sha256\"\
+    : \"95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04\",\n    \
+    \    \"parsed_text_sha256\": \"4a7b9d051027cac66c92530fa46526973de695427004468e21ea6d71f6b2daf3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1884original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1884\"\
+    ,\n        \"source_locator\": \"$.components[0].items[9]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CuCl2·2H2O\\\",\\n          \\\"volume\\\": 0.05,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"39e9cbb378bb409a5ab805addf4565889ad736b430ec3acea0070841bd1a7587\"\
+    \n      }\n    ],\n    \"interpretation\": \"The source and provider print 0.05\
+    \ mg, but both layers store that number in G_PER_L. Restore the milligram batch\
+    \ amount and evidence; do not assume a measured final 1 L.\"\n  },\n  {\n    \"\
+    decision_id\": \"q11\",\n    \"ingredient\": \"(NH4)2SO4\",\n    \"decision\"\
+    : \"correct\",\n    \"stage\": \"Main recipe batch\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/Acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1128\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128\"\
+    ,\n        \"source_locator\": \"NBRC 1128; Main recipe batch; (NH4)2SO4\",\n\
+    \        \"exact_source_quote\": \"(NH 4 ) 2 SO 4 1.3 g\",\n        \"snapshot_sha256\"\
+    : \"95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04\",\n    \
+    \    \"parsed_text_sha256\": \"4a7b9d051027cac66c92530fa46526973de695427004468e21ea6d71f6b2daf3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1884original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1884\"\
+    ,\n        \"source_locator\": \"$.components[0].items[10]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"(NH4)2SO4\\\",\\n          \\\"volume\\\": 1.3,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"39e9cbb378bb409a5ab805addf4565889ad736b430ec3acea0070841bd1a7587\"\
+    \n      }\n    ],\n    \"interpretation\": \"The original gram amount agrees numerically\
+    \ but is labelled G_PER_L locally. Preserve batch grams and their source stage\
+    \ with evidence, while qualifying the unproven final-volume denominator. Neither\
+    \ layer has attached amount evidence.\"\n  },\n  {\n    \"decision_id\": \"q12\"\
+    ,\n    \"ingredient\": \"FeCl3·6H2O\",\n    \"decision\": \"correct\",\n    \"\
+    stage\": \"Main recipe batch\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/Acidianus_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[11].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.02\",\n          \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/archaea/acidianus_medium.yaml\",\n \
+    \       \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1128\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128\"\
+    ,\n        \"source_locator\": \"NBRC 1128; Main recipe batch; FeCl3·6H2O\",\n\
+    \        \"exact_source_quote\": \"FeCl 3 ·6H 2 O 0.02 g\",\n        \"snapshot_sha256\"\
+    : \"95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04\",\n    \
+    \    \"parsed_text_sha256\": \"4a7b9d051027cac66c92530fa46526973de695427004468e21ea6d71f6b2daf3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1884original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1884\"\
+    ,\n        \"source_locator\": \"$.components[0].items[11]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"FeCl3·6H2O\\\",\\n          \\\"volume\\\": 0.02,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"39e9cbb378bb409a5ab805addf4565889ad736b430ec3acea0070841bd1a7587\"\
+    \n      }\n    ],\n    \"interpretation\": \"The original gram amount agrees numerically\
+    \ but is labelled G_PER_L locally. Preserve batch grams and their source stage\
+    \ with evidence, while qualifying the unproven final-volume denominator. Neither\
+    \ layer has attached amount evidence.\"\n  },\n  {\n    \"decision_id\": \"q13\"\
+    ,\n    \"ingredient\": \"CoSO4·7H2O\",\n    \"decision\": \"correct\",\n    \"\
+    stage\": \"Main recipe batch\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/Acidianus_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[12].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.01\",\n          \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/archaea/acidianus_medium.yaml\",\n \
+    \       \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1128\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128\"\
+    ,\n        \"source_locator\": \"NBRC 1128; Main recipe batch; CoSO4·7H2O\",\n\
+    \        \"exact_source_quote\": \"CoSO 4 ·7H 2 O 0.01 mg\",\n        \"snapshot_sha256\"\
+    : \"95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04\",\n    \
+    \    \"parsed_text_sha256\": \"4a7b9d051027cac66c92530fa46526973de695427004468e21ea6d71f6b2daf3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1884original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1884\"\
+    ,\n        \"source_locator\": \"$.components[0].items[12]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CoSO4·7H2O\\\",\\n          \\\"volume\\\": 0.01,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"39e9cbb378bb409a5ab805addf4565889ad736b430ec3acea0070841bd1a7587\"\
+    \n      }\n    ],\n    \"interpretation\": \"The source and provider print 0.01\
+    \ mg, but both layers store that number in G_PER_L. Restore the milligram batch\
+    \ amount and evidence; do not assume a measured final 1 L.\"\n  },\n  {\n    \"\
+    decision_id\": \"q14\",\n    \"ingredient\": \"Sulfur (powder)\",\n    \"decision\"\
+    : \"correct\",\n    \"stage\": \"Listed batch contribution, added after separate\
+    \ preparation\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1128\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128\"\
+    ,\n        \"source_locator\": \"NBRC 1128; Listed batch contribution, added after\
+    \ separate preparation; Sulfur (powder)\",\n        \"exact_source_quote\": \"\
+    Sulfur (powder) 1 g\",\n        \"snapshot_sha256\": \"95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04\"\
+    ,\n        \"parsed_text_sha256\": \"4a7b9d051027cac66c92530fa46526973de695427004468e21ea6d71f6b2daf3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1884original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1884\"\
+    ,\n        \"source_locator\": \"$.components[0].items[13]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Sulfur (powder)\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"39e9cbb378bb409a5ab805addf4565889ad736b430ec3acea0070841bd1a7587\"\
+    \n      }\n    ],\n    \"interpretation\": \"The original gram amount agrees numerically\
+    \ but is labelled G_PER_L locally. Preserve batch grams and their source stage\
+    \ with evidence, while qualifying the unproven final-volume denominator. Neither\
+    \ layer has attached amount evidence. The primary excludes this material from\
+    \ the initial mix and adds it later; do not combine its separate preparation with\
+    \ the initial basal mixture.\"\n  },\n  {\n    \"decision_id\": \"q15\",\n   \
+    \ \"ingredient\": \"VOSO4·xH2O\",\n    \"decision\": \"correct\",\n    \"stage\"\
+    : \"Main recipe batch\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/Acidianus_medium.yaml\",\n        \"field_path\": \"\
+    ingredients[14].concentration\",\n        \"stored\": {\n          \"value\":\
+    \ \"0.03\",\n          \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/archaea/acidianus_medium.yaml\",\n \
+    \       \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1128\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128\"\
+    ,\n        \"source_locator\": \"NBRC 1128; Main recipe batch; VOSO4·xH2O\",\n\
+    \        \"exact_source_quote\": \"VOSO 4 ·xH 2 O 0.03 mg\",\n        \"snapshot_sha256\"\
+    : \"95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04\",\n    \
+    \    \"parsed_text_sha256\": \"4a7b9d051027cac66c92530fa46526973de695427004468e21ea6d71f6b2daf3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1884original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1884\"\
+    ,\n        \"source_locator\": \"$.components[0].items[14]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"VOSO4·xH2O\\\",\\n          \\\"volume\\\": 0.03,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"39e9cbb378bb409a5ab805addf4565889ad736b430ec3acea0070841bd1a7587\"\
+    \n      }\n    ],\n    \"interpretation\": \"The source and provider print 0.03\
+    \ mg, but both layers store that number in G_PER_L. Restore the milligram batch\
+    \ amount and evidence; do not assume a measured final 1 L. The source hydration\
+    \ number x is unspecified; use the original mass without a molar conversion.\"\
+    \n  },\n  {\n    \"decision_id\": \"q16\",\n    \"ingredient\": \"Na2B4O7·10H2O\"\
+    ,\n    \"decision\": \"correct\",\n    \"stage\": \"Main recipe batch\",\n   \
+    \ \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"4.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"4.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1128\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128\"\
+    ,\n        \"source_locator\": \"NBRC 1128; Main recipe batch; Na2B4O7·10H2O\"\
+    ,\n        \"exact_source_quote\": \"Na 2 B 4 O 7 ·10H 2 O 4.5 mg\",\n       \
+    \ \"snapshot_sha256\": \"95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04\"\
+    ,\n        \"parsed_text_sha256\": \"4a7b9d051027cac66c92530fa46526973de695427004468e21ea6d71f6b2daf3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1884original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1884\"\
+    ,\n        \"source_locator\": \"$.components[0].items[15]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2B4O7·10H2O\\\",\\n          \\\"volume\\\"\
+    : 4.5,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    39e9cbb378bb409a5ab805addf4565889ad736b430ec3acea0070841bd1a7587\"\n      }\n\
+    \    ],\n    \"interpretation\": \"The source and provider print 4.5 mg, but both\
+    \ layers store that number in G_PER_L. Restore the milligram batch amount and\
+    \ evidence; do not assume a measured final 1 L. The source formula is Na2B4O7·10H2O;\
+    \ the OLS label match does not resolve its inconsistent structural formula/mass\
+    \ metadata.\"\n  },\n  {\n    \"decision_id\": \"q17\",\n    \"ingredient\": \"\
+    Bacto Yeast Extract (Difco)\",\n    \"decision\": \"correct\",\n    \"stage\"\
+    : \"Listed batch contribution, added after separate preparation\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1128\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128\"\
+    ,\n        \"source_locator\": \"NBRC 1128; Listed batch contribution, added after\
+    \ separate preparation; Bacto Yeast Extract (Difco)\",\n        \"exact_source_quote\"\
+    : \"Bacto Yeast Extract (Difco) 0.5 g\",\n        \"snapshot_sha256\": \"95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04\"\
+    ,\n        \"parsed_text_sha256\": \"4a7b9d051027cac66c92530fa46526973de695427004468e21ea6d71f6b2daf3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1884original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1884\"\
+    ,\n        \"source_locator\": \"$.components[0].items[16]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Bacto Yeast Extract (Difco)\\\",\\n          \\\
+    \"volume\\\": 0.5,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\"\
+    : \"39e9cbb378bb409a5ab805addf4565889ad736b430ec3acea0070841bd1a7587\"\n     \
+    \ }\n    ],\n    \"interpretation\": \"The original gram amount agrees numerically\
+    \ but is labelled G_PER_L locally. Preserve batch grams and their source stage\
+    \ with evidence, while qualifying the unproven final-volume denominator. Neither\
+    \ layer has attached amount evidence. The primary excludes this material from\
+    \ the initial mix and adds it later; do not combine its separate preparation with\
+    \ the initial basal mixture.\"\n  },\n  {\n    \"decision_id\": \"q18\",\n   \
+    \ \"ingredient\": \"H2SO4\",\n    \"decision\": \"not_quantified\",\n    \"stage\"\
+    : \"Initial pH adjustment\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/Acidianus_medium.yaml\",\n        \"field_path\": \"\
+    ingredients[17].concentration\",\n        \"stored\": {\n          \"value\":\
+    \ \"variable\",\n          \"unit\": \"VARIABLE\"\n        }\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/archaea/acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1128\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128\"\
+    ,\n        \"source_locator\": \"NBRC 1128; Initial pH adjustment; H2SO4\",\n\
+    \        \"exact_source_quote\": \"adjust pH to 2.0 with H 2 SO 4 .\",\n     \
+    \   \"snapshot_sha256\": \"95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04\"\
+    ,\n        \"parsed_text_sha256\": \"4a7b9d051027cac66c92530fa46526973de695427004468e21ea6d71f6b2daf3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1884original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1884\"\
+    ,\n        \"source_locator\": \"$.components[0].items[17]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"H2SO4\\\"\",\n        \"snapshot_sha256\": \"\
+    39e9cbb378bb409a5ab805addf4565889ad736b430ec3acea0070841bd1a7587\"\n      }\n\
+    \    ],\n    \"interpretation\": \"The VARIABLE placeholder has no numerical acid\
+    \ amount or stock strength in the source. Retain the reagent and explicit pH 2.0\
+    \ target; no acid dose is inferred.\"\n  },\n  {\n    \"decision_id\": \"q19\"\
+    ,\n    \"ingredient\": \"Carbon dioxide gas\",\n    \"decision\": \"correct\"\
+    ,\n    \"stage\": \"Vessel gas atmosphere and later pressurization\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      }\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1128\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128\"\
+    ,\n        \"source_locator\": \"NBRC 1128; Vessel gas atmosphere and later pressurization;\
+    \ Carbon dioxide gas\",\n        \"exact_source_quote\": \"Dispense the medium\
+    \ into suitable culture vessels under a stream of H 2 /CO 2 (80/20) and seal with\
+    \ butyl rubber stoppers.\",\n        \"snapshot_sha256\": \"95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04\"\
+    ,\n        \"parsed_text_sha256\": \"4a7b9d051027cac66c92530fa46526973de695427004468e21ea6d71f6b2daf3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1884original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1884\"\
+    ,\n        \"source_locator\": \"$.components[0].items[18]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Carbon dioxide gas\\\"\",\n        \"snapshot_sha256\"\
+    : \"39e9cbb378bb409a5ab805addf4565889ad736b430ec3acea0070841bd1a7587\"\n     \
+    \ }\n    ],\n    \"interpretation\": \"The flat VARIABLE ingredient does not record\
+    \ the source gas-mixture context. Retain H2/CO2 (80/20) and later 150 kPa as separate\
+    \ preparation claims; no dissolved gas concentration, gas volume, ratio basis\
+    \ or pressure reference is inferred.\"\n  },\n  {\n    \"decision_id\": \"q20\"\
+    ,\n    \"ingredient\": \"N2\",\n    \"decision\": \"correct\",\n    \"stage\"\
+    : \"Separate yeast-extract and sulfide stock atmosphere\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      }\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1128\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128\"\
+    ,\n        \"source_locator\": \"NBRC 1128; Separate yeast-extract and sulfide\
+    \ stock atmosphere; N2\",\n        \"exact_source_quote\": \"Separately autoclave\
+    \ Bacto Yeast Extract and Na 2 S·9H 2 O as 5% solutions under a N 2 atmosphere.\"\
+    ,\n        \"snapshot_sha256\": \"95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04\"\
+    ,\n        \"parsed_text_sha256\": \"4a7b9d051027cac66c92530fa46526973de695427004468e21ea6d71f6b2daf3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1884original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1884\"\
+    ,\n        \"source_locator\": \"$.components[0].items[19]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"N2\\\"\",\n        \"snapshot_sha256\": \"39e9cbb378bb409a5ab805addf4565889ad736b430ec3acea0070841bd1a7587\"\
+    \n      }\n    ],\n    \"interpretation\": \"The source assigns N2 to the separately\
+    \ autoclaved stocks, not a numerical main-medium concentration. Preserve that\
+    \ scope while leaving the N2 amount, purity and pressure unspecified.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q21\",\n    \"ingredient\": \"Hydrogen gas\",\n \
+    \   \"decision\": \"correct\",\n    \"stage\": \"Vessel gas atmosphere and later\
+    \ pressurization\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      }\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1128\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128\"\
+    ,\n        \"source_locator\": \"NBRC 1128; Vessel gas atmosphere and later pressurization;\
+    \ Hydrogen gas\",\n        \"exact_source_quote\": \"Dispense the medium into\
+    \ suitable culture vessels under a stream of H 2 /CO 2 (80/20) and seal with butyl\
+    \ rubber stoppers.\",\n        \"snapshot_sha256\": \"95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04\"\
+    ,\n        \"parsed_text_sha256\": \"4a7b9d051027cac66c92530fa46526973de695427004468e21ea6d71f6b2daf3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1884original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1884\"\
+    ,\n        \"source_locator\": \"$.components[0].items[20]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Hydrogen gas\\\"\",\n        \"snapshot_sha256\"\
+    : \"39e9cbb378bb409a5ab805addf4565889ad736b430ec3acea0070841bd1a7587\"\n     \
+    \ }\n    ],\n    \"interpretation\": \"The flat VARIABLE ingredient does not record\
+    \ the source gas-mixture context. Retain H2/CO2 (80/20) and later 150 kPa as separate\
+    \ preparation claims; no dissolved gas concentration, gas volume, ratio basis\
+    \ or pressure reference is inferred.\"\n  },\n  {\n    \"decision_id\": \"q22\"\
+    ,\n    \"ingredient\": \"Initial pH\",\n    \"decision\": \"add\",\n    \"stage\"\
+    : \"Basal mixture before vessel dispensing\",\n    \"local_fields\": [\n     \
+    \ {\n        \"input\": \"data/merge_yaml/merged/Acidianus_medium.yaml\",\n  \
+    \      \"field_path\": \"ph_value\",\n        \"stored\": null\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/archaea/acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"nbrc1128\"\
+    ,\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128\"\
+    ,\n        \"source_locator\": \"NBRC 1128; Basal mixture before vessel dispensing;\
+    \ Initial pH\",\n        \"exact_source_quote\": \"adjust pH to 2.0 with H 2 SO\
+    \ 4 .\",\n        \"snapshot_sha256\": \"95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04\"\
+    ,\n        \"parsed_text_sha256\": \"4a7b9d051027cac66c92530fa46526973de695427004468e21ea6d71f6b2daf3\"\
+    \n      }\n    ],\n    \"interpretation\": \"Add target pH 2.0 with its preparation\
+    \ stage and evidence. This is not a measured final or growth pH.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q23\",\n    \"ingredient\": \"H2/CO2 ratio\",\n    \"\
+    decision\": \"add\",\n    \"stage\": \"Dispensing and sealed-vessel atmosphere\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1128\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128\"\
+    ,\n        \"source_locator\": \"NBRC 1128; Dispensing and sealed-vessel atmosphere;\
+    \ H2/CO2 ratio\",\n        \"exact_source_quote\": \"Dispense the medium into\
+    \ suitable culture vessels under a stream of H 2 /CO 2 (80/20) and seal with butyl\
+    \ rubber stoppers.\",\n        \"snapshot_sha256\": \"95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04\"\
+    ,\n        \"parsed_text_sha256\": \"4a7b9d051027cac66c92530fa46526973de695427004468e21ea6d71f6b2daf3\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain the literal ratio 80/20 and\
+    \ component order. The source does not state a volume or mole basis, so do not\
+    \ silently label it v/v or calculate gas doses.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q24\",\n    \"ingredient\": \"Yeast-extract stock strength\",\n    \"decision\"\
+    : \"add\",\n    \"stage\": \"Separate stock sterilization\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/archaea/acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"nbrc1128\"\
+    ,\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128\"\
+    ,\n        \"source_locator\": \"NBRC 1128; Separate stock sterilization; Yeast-extract\
+    \ stock strength\",\n        \"exact_source_quote\": \"Separately autoclave Bacto\
+    \ Yeast Extract and Na 2 S·9H 2 O as 5% solutions under a N 2 atmosphere.\",\n\
+    \        \"snapshot_sha256\": \"95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04\"\
+    ,\n        \"parsed_text_sha256\": \"4a7b9d051027cac66c92530fa46526973de695427004468e21ea6d71f6b2daf3\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain 5% for the yeast-extract stock.\
+    \ Percentage basis, stock preparation volume and dose are unspecified; do not\
+    \ assume w/v or derive a 10 mL addition.\"\n  },\n  {\n    \"decision_id\": \"\
+    q25\",\n    \"ingredient\": \"Sulfide stock strength\",\n    \"decision\": \"\
+    add\",\n    \"stage\": \"Separate stock sterilization\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/archaea/acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"nbrc1128\"\
+    ,\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128\"\
+    ,\n        \"source_locator\": \"NBRC 1128; Separate stock sterilization; Sulfide\
+    \ stock strength\",\n        \"exact_source_quote\": \"Separately autoclave Bacto\
+    \ Yeast Extract and Na 2 S·9H 2 O as 5% solutions under a N 2 atmosphere.\",\n\
+    \        \"snapshot_sha256\": \"95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04\"\
+    ,\n        \"parsed_text_sha256\": \"4a7b9d051027cac66c92530fa46526973de695427004468e21ea6d71f6b2daf3\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain 5% for the Na2S·9H2O stock\
+    \ independently of the yeast-extract stock. Percentage basis, stock preparation\
+    \ volume and dose are unspecified; no inferred dilution is proposed.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q26\",\n    \"ingredient\": \"Stock atmosphere\"\
+    ,\n    \"decision\": \"not_quantified\",\n    \"stage\": \"Both separately autoclaved\
+    \ stocks\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1128\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128\"\
+    ,\n        \"source_locator\": \"NBRC 1128; Both separately autoclaved stocks;\
+    \ Stock atmosphere\",\n        \"exact_source_quote\": \"Separately autoclave\
+    \ Bacto Yeast Extract and Na 2 S·9H 2 O as 5% solutions under a N 2 atmosphere.\"\
+    ,\n        \"snapshot_sha256\": \"95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04\"\
+    ,\n        \"parsed_text_sha256\": \"4a7b9d051027cac66c92530fa46526973de695427004468e21ea6d71f6b2daf3\"\
+    \n      }\n    ],\n    \"interpretation\": \"N2 is named without purity, fraction,\
+    \ flow or pressure. No 100% value is inferred.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q27\",\n    \"ingredient\": \"Sulfur heat-treatment duration\",\n    \"decision\"\
+    : \"add\",\n    \"stage\": \"Separate sulfur sterilization on each specified day\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1128\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128\"\
+    ,\n        \"source_locator\": \"NBRC 1128; Separate sulfur sterilization on each\
+    \ specified day; Sulfur heat-treatment duration\",\n        \"exact_source_quote\"\
+    : \"Sulfur is sterilized separately by autoclaving for 60 min at 105°C on each\
+    \ of successive days.\",\n        \"snapshot_sha256\": \"95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04\"\
+    ,\n        \"parsed_text_sha256\": \"4a7b9d051027cac66c92530fa46526973de695427004468e21ea6d71f6b2daf3\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain 60 min per described sulfur\
+    \ treatment, not a duration for the basal medium or either stock.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q28\",\n    \"ingredient\": \"Sulfur heat-treatment temperature\"\
+    ,\n    \"decision\": \"add\",\n    \"stage\": \"Separate sulfur sterilization\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1128\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128\"\
+    ,\n        \"source_locator\": \"NBRC 1128; Separate sulfur sterilization; Sulfur\
+    \ heat-treatment temperature\",\n        \"exact_source_quote\": \"Sulfur is sterilized\
+    \ separately by autoclaving for 60 min at 105°C on each of successive days.\"\
+    ,\n        \"snapshot_sha256\": \"95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04\"\
+    ,\n        \"parsed_text_sha256\": \"4a7b9d051027cac66c92530fa46526973de695427004468e21ea6d71f6b2daf3\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain 105°C specifically for sulfur;\
+    \ do not apply a default 121°C cycle or transfer this temperature to the basal\
+    \ mixture.\"\n  },\n  {\n    \"decision_id\": \"q29\",\n    \"ingredient\": \"\
+    Number of sulfur treatment days\",\n    \"decision\": \"not_quantified\",\n  \
+    \  \"stage\": \"Successive-day sulfur treatment\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/Acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1128\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128\"\
+    ,\n        \"source_locator\": \"NBRC 1128; Successive-day sulfur treatment; Number\
+    \ of sulfur treatment days\",\n        \"exact_source_quote\": \"Sulfur is sterilized\
+    \ separately by autoclaving for 60 min at 105°C on each of successive days.\"\
+    ,\n        \"snapshot_sha256\": \"95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04\"\
+    ,\n        \"parsed_text_sha256\": \"4a7b9d051027cac66c92530fa46526973de695427004468e21ea6d71f6b2daf3\"\
+    \n      }\n    ],\n    \"interpretation\": \"The source says successive days but\
+    \ provides no count. Preserve the literal qualification and do not supply a customary\
+    \ number.\"\n  },\n  {\n    \"decision_id\": \"q30\",\n    \"ingredient\": \"\
+    Post-inoculation pressure\",\n    \"decision\": \"add\",\n    \"stage\": \"Pressurization\
+    \ of inoculated vessels\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/Acidianus_medium.yaml\",\n        \"field_path\": \"\
+    preparation_steps\",\n        \"stored\": null\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/archaea/acidianus_medium.yaml\",\n        \"field_path\"\
+    : \"preparation_steps\",\n        \"stored\": null\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"nbrc1128\",\n        \"source_url\": \"\
+    https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128\",\n   \
+    \     \"source_locator\": \"NBRC 1128; Pressurization of inoculated vessels; Post-inoculation\
+    \ pressure\",\n        \"exact_source_quote\": \"Prior to inoculation, add Bacto\
+    \ Yeast Extract, sulfur and Na 2 S·9H 2 O, and pressurize the inoculated vessels\
+    \ to 150 kPa with H 2 /CO 2 .\",\n        \"snapshot_sha256\": \"95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04\"\
+    ,\n        \"parsed_text_sha256\": \"4a7b9d051027cac66c92530fa46526973de695427004468e21ea6d71f6b2daf3\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain 150 kPa with H2/CO2 and the\
+    \ stated inoculated-vessel stage. Absolute versus gauge pressure is unspecified,\
+    \ so no conversion or inferred gas volume is justified.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q31\",\n    \"ingredient\": \"Delayed addition timing\",\n    \"decision\"\
+    : \"add\",\n    \"stage\": \"Before inoculation, followed by pressure step\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1128\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128\"\
+    ,\n        \"source_locator\": \"NBRC 1128; Before inoculation, followed by pressure\
+    \ step; Delayed addition timing\",\n        \"exact_source_quote\": \"Prior to\
+    \ inoculation, add Bacto Yeast Extract, sulfur and Na 2 S·9H 2 O, and pressurize\
+    \ the inoculated vessels to 150 kPa with H 2 /CO 2 .\",\n        \"snapshot_sha256\"\
+    : \"95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04\",\n    \
+    \    \"parsed_text_sha256\": \"4a7b9d051027cac66c92530fa46526973de695427004468e21ea6d71f6b2daf3\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve separate addition of yeast\
+    \ extract, sulfur and sulfide before inoculation, followed by pressurization of\
+    \ inoculated vessels. Do not treat all ingredients as one initial autoclave batch.\"\
+    \n  },\n  {\n    \"decision_id\": \"q32\",\n    \"ingredient\": \"Stock dose and\
+    \ dilution\",\n    \"decision\": \"not_quantified\",\n    \"stage\": \"5% stocks\
+    \ relative to listed recipe contributions\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/Acidianus_medium.yaml\",\n      \
+    \  \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/archaea/acidianus_medium.yaml\",\n\
+    \        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n \
+    \   ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"nbrc1128\"\
+    ,\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128\"\
+    ,\n        \"source_locator\": \"NBRC 1128; 5% stocks relative to listed recipe\
+    \ contributions; Stock dose and dilution\",\n        \"exact_source_quote\": \"\
+    Separately autoclave Bacto Yeast Extract and Na 2 S·9H 2 O as 5% solutions under\
+    \ a N 2 atmosphere.\",\n        \"snapshot_sha256\": \"95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04\"\
+    ,\n        \"parsed_text_sha256\": \"4a7b9d051027cac66c92530fa46526973de695427004468e21ea6d71f6b2daf3\"\
+    \n      }\n    ],\n    \"interpretation\": \"No stock volumes or doses are printed.\
+    \ Listed 0.5 g batch contributions and unspecified-basis 5% stocks do not independently\
+    \ establish a measured final concentration or an exact liquid addition.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q33\",\n    \"ingredient\": \"Final medium volume\"\
+    ,\n    \"decision\": \"not_quantified\",\n    \"stage\": \"After acid adjustment\
+    \ and staged additions\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/Acidianus_medium.yaml\",\n        \"field_path\": \"\
+    preparation_steps\",\n        \"stored\": null\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/archaea/acidianus_medium.yaml\",\n        \"field_path\"\
+    : \"preparation_steps\",\n        \"stored\": null\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"nbrc1128\",\n        \"source_url\": \"\
+    https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128\",\n   \
+    \     \"source_locator\": \"NBRC 1128; After acid adjustment and staged additions;\
+    \ Final medium volume\",\n        \"exact_source_quote\": \"Distilled water 1\
+    \ L\",\n        \"snapshot_sha256\": \"95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04\"\
+    ,\n        \"parsed_text_sha256\": \"4a7b9d051027cac66c92530fa46526973de695427004468e21ea6d71f6b2daf3\"\
+    \n      }\n    ],\n    \"interpretation\": \"The source gives 1 L preparation\
+    \ water, followed by unquantified acid and separately prepared additions. No final\
+    \ make-up volume or measurement is stated.\"\n  },\n  {\n    \"decision_id\":\
+    \ \"q34\",\n    \"ingredient\": \"Other sterilization cycles\",\n    \"decision\"\
+    : \"not_quantified\",\n    \"stage\": \"Basal medium and separate yeast-extract/sulfide\
+    \ stocks\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidianus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1128\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1128\"\
+    ,\n        \"source_locator\": \"NBRC 1128; Basal medium and separate yeast-extract/sulfide\
+    \ stocks; Other sterilization cycles\",\n        \"exact_source_quote\": \"Separately\
+    \ autoclave Bacto Yeast Extract and Na 2 S·9H 2 O as 5% solutions under a N 2\
+    \ atmosphere.\",\n        \"snapshot_sha256\": \"95b5149aa0c338bac7f09cc935880142f05d3275db9d570347efda03f34a1c04\"\
+    ,\n        \"parsed_text_sha256\": \"4a7b9d051027cac66c92530fa46526973de695427004468e21ea6d71f6b2daf3\"\
+    \n      }\n    ],\n    \"interpretation\": \"Autoclaving is explicit for the two\
+    \ stocks but no temperature or duration is provided for them. The sulfur-specific\
+    \ 105°C/60 min treatment cannot fill those gaps; no basal-medium cycle is inferred.\"\
+    \n  }\n]"
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: concern
+  summary: '20 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 20/21
+    primary and 13/21 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Exact supplied-form mismatch is addressed separately; valid IDs and labels do
+    not establish correct source grounding.'
+  target_ids:
+  - CultureMech:008458
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi131366
+  - chebi15377
+  - chebi16526
+  - chebi17997
+  - chebi18276
+  - chebi26836
+  - chebi31795
+  - chebi32312
+  - chebi33403
+  - chebi62946
+  - chebi63036
+  - chebi75213
+  - chebi76209
+  - chebi86158
+  - chebi86254
+  - chebi86318
+  - chebi86368
+  - chebi87020
+  - chebi8806
+  - chebi91244
+  details: 'Instance coverage on a 0–100 percent scale, denominator 21: primary 95.24%;
+    secondary 61.90%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: forms
+  area: grounding
+  topic: Hydrates, borax structural inconsistency and mixtures
+  outcome: concern
+  summary: The specified Mg, Ca, Mn, Zn, Cu, Fe, Co and sodium molybdate/sulfide hydrates
+    match the asserted ontology forms. VOSO4·xH2O remains a variable hydrate without
+    a supported molar conversion. CHEBI:131366 has the matching borax label and CAS
+    synonym, but its exact bound formula 10H2O.H4B4O9.2Na and mass 417.401 do not
+    agree with the source-printed Na2B4O7·10H2O stoichiometry. Preserve that ontology/source
+    inconsistency rather than silently adopting its mass or inventing a replacement
+    ID. Elemental sulfur is broadly grounded without an allotrope claim; the Bacto/Difco
+    yeast extract remains an undefined commercial mixture.
+  target_ids:
+  - CultureMech:008458
+  evidence_ids:
+  - primary-formulation
+  - chebi131366
+  - chebi87020
+  - chebi33403
+  - mim
+- assessment_id: legacy
+  area: grounding
+  topic: Legacy secondary sulfur identity
+  outcome: concern
+  summary: Both layers assert MediaIngredientMech:001072 on sulfur. The exact current
+    lookup completed negatively, while original historical correspondence remains
+    unverified. This required unresolved assertion makes the review partial. CHEBI:33403
+    resolves independently and must not be invalidated or treated as a verified legacy
+    replacement.
+  target_ids:
+  - CultureMech:008458
+  evidence_ids:
+  - record
+  - owner-0
+  - legacy-search
+  - mimPinnedCatalog
+  - mimPinnedTree
+  - chebi33403
+- assessment_id: preparation
+  area: completeness
+  topic: Scoped preparation and source limits
+  outcome: concern
+  summary: 'Both layers omit the complete source preparation: pH 2.0, H2/CO2 (80/20),
+    stock separation under N2, sulfur-specific 60 min at 105°C on unspecified successive
+    days, delayed additions and 150 kPa pressurization. The source does not state
+    the percentage basis, day count or pressure reference. These unknowns remain explicit;
+    no stock dose or final volume is fabricated.'
+  target_ids:
+  - CultureMech:008458
+  evidence_ids:
+  - primary-preparation
+  - quantity-inventory
+  - record
+  - owner-0
+- assessment_id: classification
+  area: scope
+  topic: Composition and biological scope
+  outcome: supported
+  summary: Yeast extract supports COMPLEX/UNDEFINED classification and no agar is
+    listed, consistent with LIQUID. The recipe title and archaea grouping are not
+    a strain-specific growth experiment. No structured target organism or taxonomy
+    identifier is asserted; no taxonomic identity or successful cultivation claim
+    is added.
+  target_ids:
+  - CultureMech:008458
+  evidence_ids:
+  - primary-identity
+  - primary-formulation
+  - record
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 23 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:008458
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: provenance
+  area: evidence
+  topic: Attached evidence and history boundaries
+  outcome: concern
+  summary: The target and owner carry accession notes and enrichment history but no
+    attached quantity or preparation evidence. History includes a later term-repair
+    event ahead of earlier events; timestamps are valid and are preserved without
+    claiming their array order proves causation. Current source captures support exact
+    claims while the asserted legacy sulfur history remains unresolved.
+  target_ids:
+  - CultureMech:008458
+  evidence_ids:
+  - record
+  - owner-0
+  - primary-formulation
+  - primary-preparation
+  - history-metadata
+  - writer-0
+  - writer-1
+findings:
+- finding_id: f1
+  issue_key: wrong-source-units
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Eight milligram rows and water have wrong units
+  description: Eight primary milligram amounts are stored as the same numeric values
+    in G_PER_L in both layers; water is 1 L in the source but 1 G_PER_L locally. Other
+    gram amounts also need their batch and delayed-addition basis preserved. This
+    changes the represented formulation materially.
+  target_ids:
+  - CultureMech:008458
+  field_paths:
+  - ingredients
+  evidence_ids:
+  - primary-formulation
+  - quantity-inventory
+  - record
+  - owner-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidianus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: missing-staged-preparation
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Critical preparation stages and pH are absent
+  description: Flat ingredient placeholders do not preserve pH 2.0, the H2/CO2 atmosphere,
+    separate 5% stocks under N2, sulfur-specific heat treatment, delayed additions
+    and the 150 kPa pressure stage.
+  target_ids:
+  - CultureMech:008458
+  field_paths:
+  - ph_value
+  - preparation_steps
+  - solutions
+  - ingredients[17]
+  - ingredients[18]
+  - ingredients[19]
+  - ingredients[20]
+  evidence_ids:
+  - primary-preparation
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidianus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: borax-structure-inconsistency
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Matching borax label conceals a structural metadata inconsistency
+  description: CHEBI:131366 resolves to disodium tetraborate decahydrate, but its
+    captured formula and mass are inconsistent with the primary Na2B4O7·10H2O formula.
+    A matching canonical label does not establish exact chemical correspondence or
+    authorize using that mass for conversion.
+  target_ids:
+  - CultureMech:008458
+  field_paths:
+  - ingredients[15].term
+  - ingredients[15].preferred_term
+  evidence_ids:
+  - primary-formulation
+  - chebi131366
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidianus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: legacy-sulfur-unresolved
+  category: grounding
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Historical sulfur secondary correspondence remains unresolved
+  description: MediaIngredientMech:001072 is absent from the complete pinned current
+    index/catalogue/tree. Its historical correspondence is unavailable; that is distinct
+    from the valid current CHEBI:33403 primary identifier.
+  target_ids:
+  - CultureMech:008458
+  field_paths:
+  - ingredients[13].mediaingredientmech_term
+  evidence_ids:
+  - legacy-search
+  - mimPinnedCatalog
+  - mimPinnedTree
+  - chebi33403
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidianus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f5
+  issue_key: claim-evidence-gap
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Import notes do not authenticate individual scientific claims
+  description: Neither layer attaches source evidence to amounts, chemical forms or
+    preparation. Enrichment statements and label matches cannot supply those missing
+    claim-level supports.
+  target_ids:
+  - CultureMech:008458
+  field_paths:
+  - ingredients
+  - notes
+  - preparation_steps
+  evidence_ids:
+  - record
+  - owner-0
+  - primary-formulation
+  - primary-preparation
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidianus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Correct the maintained owner using original mg, g and L quantities
+    with exact source evidence and stage-specific representation; do not infer a measured
+    final 1 L or unknown stock doses.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:008458
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidianus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Add the literal staged preparation with evidence. Preserve unspecified
+    percentage basis, day count, pressure reference, stock volume/dose and non-sulfur
+    sterilization parameters as unknown.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:008458
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidianus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Resolve and document the source-versus-ontology structural inconsistency
+    before accepting form-specific grounding or conversions. Retain the source mass
+    and printed formula; do not guess a replacement.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:008458
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidianus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Retain the historical limitation until exact original MIM evidence
+    is recovered or a separately verified current mapping is curated. Do not infer
+    replacement or historical invalidity from current absence.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:008458
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidianus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a5
+  description: Attach exact primary excerpts and original capture metadata to retained
+    and corrected claims, preserving history and the unresolved legacy limitation.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:008458
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidianus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- The alternate TOGO mediumapi request failed DNS and is retained. Exact original
+  TOGO and NBRC 1128 sources are usable; this optional failure is not the reason for
+  partial completion.
+- Partial completion is specifically due to required historical MediaIngredientMech:001072
+  correspondence. Current negative lookup is complete. Source 5% basis, number of
+  successive days, pressure reference, stock volumes/doses and final-volume measurement
+  remain unspecified; no values or replacement identities are invented.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-034
+- generated-medium
