@@ -1,0 +1,2174 @@
+# CLOSTRIDIUM CHARTATABIDUM medium: preserve source stocks and owner preparation
+
+- Review: 20261028T103524Z-batch063-record02-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T10:18:35.728607Z
+- Finished UTC: 2026-10-28T10:35:24.256915Z
+- Reviewer: Codex independent source reviewer (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The selected DSM523/KOMODO523 merge retains provider main-row numbers but flattens mineral and haemin stock components, misrepresents the NaOH input, and loses the DSM owner preparation and pH range. Sodium resazurin is grounded to the neutral compound. Exact current primary and provider sources support scoped corrections; inaccessible KOMODO routes keep the review partial.
+
+## Scope And Provenance
+
+Full selected record and exact maintained contributors; explicitly scoped dependency and external-source limits retained.
+
+Selection: Actual batch063 native selection index 02.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:005885 | data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml | generated | clostridium_chartatabidum_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:005885 | Original once-only canonical command exited 0; full stdout/stderr retained and read. |
+| validate-strict | passed | True | CultureMech:005885 | Original once-only canonical command exited 0; full stdout/stderr retained and read. |
+| validate-terms | passed | True | CultureMech:005885 | Original once-only canonical command exited 0; full stdout/stderr retained and read. |
+| validate-references | passed | True | CultureMech:005885 | Native reference checker performed zero reference checks; this is not claim authentication. |
+
+## Scientific And Domain Assessments
+
+### Exact record and source identity
+
+identity: concern. Targets: CultureMech:005885.
+
+Two exact maintained contributors resolve generated lineage. DSM523 title and current API agree with the DSM owner. The KOMODO523 mapping is explicit in local notes and a historical captured row, but its current accession and catalogue routes are inaccessible; no current catalogue authentication is claimed.
+
+### Preserve current owner credit and source stages
+
+completeness: concern. Targets: CultureMech:005885.
+
+The DSM owner already retains all three preparation paragraphs and pH6.7–6.8; those are lost from the generated target and absent from KOMODO. Both owners still lack the mineral, clarified-rumen and haemin solution objects and doses. COMPLEX/UNDEFINED and LIQUID fit the observed mixed formulation without proving growth.
+
+### Quantity scope and inventory
+
+quantity: concern. Targets: CultureMech:005885.
+
+Every selected target/owner concentration field has an explicit disposition; scoped dependency fields and source-only preparation are separate from receiving-medium rates.
+
+[{"quantity_id": "q1", "topic": "K2HPO4 — provider main declaration", "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904", "locator": "$.data.solutions[0].recipe[2]", "accessed_at": "2026-10-28T10:19:16.917116Z", "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 0.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.3,\n                        \"mmol_l\": 1.7224,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 3, "compound": "K2HPO4", "compound_id": 10, "amount": 0.3, "unit": "g", "g_l": 0.3, "mmol_l": 1.7224, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm523", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf", "raw_path": "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91", "locator": "PDF extracted line 5; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z", "quote": "   K2HPO4                                                   0.30        g"}], "decision": "evidence_only", "rationale": "Exact API main-solution g_l=0.3 supports the stored provider-declared rate; primary batch amount and source form are retained. This is not independent final-volume authentication and does not replace source stock/preparation scope.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml", "field_path": "ingredients[0].concentration", "stored_value": {"value": "0.3", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution g_l=0.3 supports the stored provider-declared rate; primary batch amount and source form are retained. This is not independent final-volume authentication and does not replace source stock/preparation scope."}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml", "field_path": "ingredients[0].concentration", "stored_value": {"value": "0.3", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution g_l=0.3 supports the stored provider-declared rate; primary batch amount and source form are retained. This is not independent final-volume authentication and does not replace source stock/preparation scope."}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml", "field_path": "ingredients[0].concentration", "stored_value": {"value": "0.3", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution g_l=0.3 supports the stored provider-declared rate; primary batch amount and source form are retained. This is not independent final-volume authentication and does not replace source stock/preparation scope."}]}, {"quantity_id": "q2", "topic": "Trypticase peptone — provider main declaration", "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904", "locator": "$.data.solutions[0].recipe[3]", "accessed_at": "2026-10-28T10:19:16.917116Z", "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Trypticase peptone\",\n                        \"compound_id\": 124,\n                        \"attribute\": \"BD BBL\",\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 4, "compound": "Trypticase peptone", "compound_id": 124, "attribute": "BD BBL", "amount": 2, "unit": "g", "g_l": 2, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm523", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf", "raw_path": "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91", "locator": "PDF extracted line 6; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z", "quote": "   Trypticase peptone (BD BBL)                              2.00        g"}], "decision": "evidence_only", "rationale": "Exact API main-solution g_l=2 supports the stored provider-declared rate; primary batch amount and source form are retained. This is not independent final-volume authentication and does not replace source stock/preparation scope.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml", "field_path": "ingredients[1].concentration", "stored_value": {"value": "2", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution g_l=2 supports the stored provider-declared rate; primary batch amount and source form are retained. This is not independent final-volume authentication and does not replace source stock/preparation scope."}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml", "field_path": "ingredients[1].concentration", "stored_value": {"value": "2", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution g_l=2 supports the stored provider-declared rate; primary batch amount and source form are retained. This is not independent final-volume authentication and does not replace source stock/preparation scope."}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml", "field_path": "ingredients[1].concentration", "stored_value": {"value": "2", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution g_l=2 supports the stored provider-declared rate; primary batch amount and source form are retained. This is not independent final-volume authentication and does not replace source stock/preparation scope."}]}, {"quantity_id": "q3", "topic": "Yeast extract — provider main declaration", "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904", "locator": "$.data.solutions[0].recipe[4]", "accessed_at": "2026-10-28T10:19:16.917116Z", "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"attribute\": \"OXOID\",\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 5, "compound": "Yeast extract", "compound_id": 16, "attribute": "OXOID", "amount": 0.5, "unit": "g", "g_l": 0.5, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm523", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf", "raw_path": "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91", "locator": "PDF extracted line 7; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z", "quote": "   Yeast extract (OXOID)                                    0.50        g"}], "decision": "evidence_only", "rationale": "Exact API main-solution g_l=0.5 supports the stored provider-declared rate; primary batch amount and source form are retained. This is not independent final-volume authentication and does not replace source stock/preparation scope.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml", "field_path": "ingredients[2].concentration", "stored_value": {"value": "0.5", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution g_l=0.5 supports the stored provider-declared rate; primary batch amount and source form are retained. This is not independent final-volume authentication and does not replace source stock/preparation scope."}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml", "field_path": "ingredients[2].concentration", "stored_value": {"value": "0.5", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution g_l=0.5 supports the stored provider-declared rate; primary batch amount and source form are retained. This is not independent final-volume authentication and does not replace source stock/preparation scope."}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml", "field_path": "ingredients[2].concentration", "stored_value": {"value": "0.5", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution g_l=0.5 supports the stored provider-declared rate; primary batch amount and source form are retained. This is not independent final-volume authentication and does not replace source stock/preparation scope."}]}, {"quantity_id": "q4", "topic": "Sodium resazurin — provider main declaration", "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904", "locator": "$.data.solutions[0].recipe[6]", "accessed_at": "2026-10-28T10:19:16.917116Z", "quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.0005,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 7, "compound": "Sodium resazurin", "compound_id": 1852, "attribute": "0.1% w/v", "amount": 0.5, "unit": "ml", "g_l": 0.0005, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm523", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf", "raw_path": "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91", "locator": "PDF extracted line 9; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z", "quote": "   Sodium resazurin (0.1% w/v)                              0.50       ml"}], "decision": "evidence_only", "rationale": "Exact API main-solution g_l=0.0005 supports the stored provider-declared rate; primary batch amount and source form are retained. This is not independent final-volume authentication and does not replace source stock/preparation scope. The source specifies0.5 ml of0.1% w/v sodium-resazurin stock; its salt identity remains a separate defect.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml", "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.0005", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution g_l=0.0005 supports the stored provider-declared rate; primary batch amount and source form are retained. This is not independent final-volume authentication and does not replace source stock/preparation scope. The source specifies0.5 ml of0.1% w/v sodium-resazurin stock; its salt identity remains a separate defect."}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml", "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.0005", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution g_l=0.0005 supports the stored provider-declared rate; primary batch amount and source form are retained. This is not independent final-volume authentication and does not replace source stock/preparation scope. The source specifies0.5 ml of0.1% w/v sodium-resazurin stock; its salt identity remains a separate defect."}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml", "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.0005", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution g_l=0.0005 supports the stored provider-declared rate; primary batch amount and source form are retained. This is not independent final-volume authentication and does not replace source stock/preparation scope. The source specifies0.5 ml of0.1% w/v sodium-resazurin stock; its salt identity remains a separate defect."}]}, {"quantity_id": "q5", "topic": "Na2CO3 — provider main declaration", "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904", "locator": "$.data.solutions[0].recipe[7]", "accessed_at": "2026-10-28T10:19:16.917116Z", "quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\": 4,\n                        \"unit\": \"g\",\n                        \"g_l\": 4,\n                        \"mmol_l\": 37.7401,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 8, "compound": "Na2CO3", "compound_id": 32, "amount": 4, "unit": "g", "g_l": 4, "mmol_l": 37.7401, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm523", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf", "raw_path": "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91", "locator": "PDF extracted line 10; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z", "quote": "   Na2CO3                                                   4.00        g"}], "decision": "evidence_only", "rationale": "Exact API main-solution g_l=4 supports the stored provider-declared rate; primary batch amount and source form are retained. This is not independent final-volume authentication and does not replace source stock/preparation scope.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml", "field_path": "ingredients[4].concentration", "stored_value": {"value": "4", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution g_l=4 supports the stored provider-declared rate; primary batch amount and source form are retained. This is not independent final-volume authentication and does not replace source stock/preparation scope."}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml", "field_path": "ingredients[4].concentration", "stored_value": {"value": "4", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution g_l=4 supports the stored provider-declared rate; primary batch amount and source form are retained. This is not independent final-volume authentication and does not replace source stock/preparation scope."}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml", "field_path": "ingredients[4].concentration", "stored_value": {"value": "4", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution g_l=4 supports the stored provider-declared rate; primary batch amount and source form are retained. This is not independent final-volume authentication and does not replace source stock/preparation scope."}]}, {"quantity_id": "q6", "topic": "Cellobiose — provider main declaration", "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904", "locator": "$.data.solutions[0].recipe[8]", "accessed_at": "2026-10-28T10:19:16.917116Z", "quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Cellobiose\",\n                        \"compound_id\": 214,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\": 14.6071,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 9, "compound": "Cellobiose", "compound_id": 214, "amount": 5, "unit": "g", "g_l": 5, "mmol_l": 14.6071, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm523", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf", "raw_path": "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91", "locator": "PDF extracted line 11; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z", "quote": "   Cellobiose                                               5.00        g"}], "decision": "evidence_only", "rationale": "Exact API main-solution g_l=5 supports the stored provider-declared rate; primary batch amount and source form are retained. This is not independent final-volume authentication and does not replace source stock/preparation scope.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml", "field_path": "ingredients[5].concentration", "stored_value": {"value": "5", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution g_l=5 supports the stored provider-declared rate; primary batch amount and source form are retained. This is not independent final-volume authentication and does not replace source stock/preparation scope."}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml", "field_path": "ingredients[5].concentration", "stored_value": {"value": "5", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution g_l=5 supports the stored provider-declared rate; primary batch amount and source form are retained. This is not independent final-volume authentication and does not replace source stock/preparation scope."}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml", "field_path": "ingredients[5].concentration", "stored_value": {"value": "5", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution g_l=5 supports the stored provider-declared rate; primary batch amount and source form are retained. This is not independent final-volume authentication and does not replace source stock/preparation scope."}]}, {"quantity_id": "q7", "topic": "L-Cysteine HCl x H2O — provider main declaration", "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904", "locator": "$.data.solutions[0].recipe[9]", "accessed_at": "2026-10-28T10:19:16.917116Z", "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"L-Cysteine HCl x H2O\",\n                        \"compound_id\": 770,\n                        \"amount\": 0.25,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.25,\n                        \"mmol_l\": 1.4234,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 10, "compound": "L-Cysteine HCl x H2O", "compound_id": 770, "amount": 0.25, "unit": "g", "g_l": 0.25, "mmol_l": 1.4234, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm523", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf", "raw_path": "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91", "locator": "PDF extracted line 12; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z", "quote": "   L-Cysteine HCl x H2O                                     0.25        g"}], "decision": "evidence_only", "rationale": "Exact API main-solution g_l=0.25 supports the stored provider-declared rate; primary batch amount and source form are retained. This is not independent final-volume authentication and does not replace source stock/preparation scope.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml", "field_path": "ingredients[6].concentration", "stored_value": {"value": "0.25", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution g_l=0.25 supports the stored provider-declared rate; primary batch amount and source form are retained. This is not independent final-volume authentication and does not replace source stock/preparation scope."}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml", "field_path": "ingredients[6].concentration", "stored_value": {"value": "0.25", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution g_l=0.25 supports the stored provider-declared rate; primary batch amount and source form are retained. This is not independent final-volume authentication and does not replace source stock/preparation scope."}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml", "field_path": "ingredients[6].concentration", "stored_value": {"value": "0.25", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution g_l=0.25 supports the stored provider-declared rate; primary batch amount and source form are retained. This is not independent final-volume authentication and does not replace source stock/preparation scope."}]}, {"quantity_id": "q8", "topic": "Na2S x 9 H2O — provider main declaration", "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904", "locator": "$.data.solutions[0].recipe[10]", "accessed_at": "2026-10-28T10:19:16.917116Z", "quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\": 0.25,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.25,\n                        \"mmol_l\": 1.04088,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 11, "compound": "Na2S x 9 H2O", "compound_id": 54, "amount": 0.25, "unit": "g", "g_l": 0.25, "mmol_l": 1.04088, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm523", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf", "raw_path": "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91", "locator": "PDF extracted line 13; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z", "quote": "   Na2S x 9 H2O                                             0.25        g"}], "decision": "evidence_only", "rationale": "Exact API main-solution g_l=0.25 supports the stored provider-declared rate; primary batch amount and source form are retained. This is not independent final-volume authentication and does not replace source stock/preparation scope.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml", "field_path": "ingredients[7].concentration", "stored_value": {"value": "0.25", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution g_l=0.25 supports the stored provider-declared rate; primary batch amount and source form are retained. This is not independent final-volume authentication and does not replace source stock/preparation scope."}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml", "field_path": "ingredients[7].concentration", "stored_value": {"value": "0.25", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution g_l=0.25 supports the stored provider-declared rate; primary batch amount and source form are retained. This is not independent final-volume authentication and does not replace source stock/preparation scope."}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml", "field_path": "ingredients[7].concentration", "stored_value": {"value": "0.25", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution g_l=0.25 supports the stored provider-declared rate; primary batch amount and source form are retained. This is not independent final-volume authentication and does not replace source stock/preparation scope."}]}, {"quantity_id": "q9", "topic": "KH2PO4 — mineral stock", "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904", "locator": "$.data.solutions[1].recipe[0]", "accessed_at": "2026-10-28T10:19:16.917116Z", "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 6,\n                        \"unit\": \"g\",\n                        \"g_l\": 6,\n                        \"mmol_l\": 44.0901,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 1, "compound": "KH2PO4", "compound_id": 11, "amount": 6, "unit": "g", "g_l": 6, "mmol_l": 44.0901, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm523", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf", "raw_path": "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91", "locator": "PDF extracted line 28; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z", "quote": "   KH2PO4                                                  6.00         g"}], "decision": "conflict", "rationale": "The primary labels this as the mineral stock from medium330; API g_l=6 is a stock concentration, not a direct main-medium rate. Restore the stock and its separately quoted38 ml receiving amount; no automatic final concentration is derived.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml", "field_path": "ingredients[8].concentration", "stored_value": {"value": "6", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The primary labels this as the mineral stock from medium330; API g_l=6 is a stock concentration, not a direct main-medium rate. Restore the stock and its separately quoted38 ml receiving amount; no automatic final concentration is derived."}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml", "field_path": "ingredients[8].concentration", "stored_value": {"value": "6", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The primary labels this as the mineral stock from medium330; API g_l=6 is a stock concentration, not a direct main-medium rate. Restore the stock and its separately quoted38 ml receiving amount; no automatic final concentration is derived."}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml", "field_path": "ingredients[8].concentration", "stored_value": {"value": "6", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The primary labels this as the mineral stock from medium330; API g_l=6 is a stock concentration, not a direct main-medium rate. Restore the stock and its separately quoted38 ml receiving amount; no automatic final concentration is derived."}]}, {"quantity_id": "q10", "topic": "NaCl — mineral stock", "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904", "locator": "$.data.solutions[1].recipe[1]", "accessed_at": "2026-10-28T10:19:16.917116Z", "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 12,\n                        \"unit\": \"g\",\n                        \"g_l\": 12,\n                        \"mmol_l\": 205.339,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 2, "compound": "NaCl", "compound_id": 43, "amount": 12, "unit": "g", "g_l": 12, "mmol_l": 205.339, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm523", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf", "raw_path": "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91", "locator": "PDF extracted line 29; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z", "quote": "   NaCl                                                   12.00         g"}], "decision": "conflict", "rationale": "The primary labels this as the mineral stock from medium330; API g_l=12 is a stock concentration, not a direct main-medium rate. Restore the stock and its separately quoted38 ml receiving amount; no automatic final concentration is derived.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml", "field_path": "ingredients[9].concentration", "stored_value": {"value": "12", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The primary labels this as the mineral stock from medium330; API g_l=12 is a stock concentration, not a direct main-medium rate. Restore the stock and its separately quoted38 ml receiving amount; no automatic final concentration is derived."}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml", "field_path": "ingredients[9].concentration", "stored_value": {"value": "12", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The primary labels this as the mineral stock from medium330; API g_l=12 is a stock concentration, not a direct main-medium rate. Restore the stock and its separately quoted38 ml receiving amount; no automatic final concentration is derived."}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml", "field_path": "ingredients[9].concentration", "stored_value": {"value": "12", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The primary labels this as the mineral stock from medium330; API g_l=12 is a stock concentration, not a direct main-medium rate. Restore the stock and its separately quoted38 ml receiving amount; no automatic final concentration is derived."}]}, {"quantity_id": "q11", "topic": "(NH4)2SO4 — mineral stock", "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904", "locator": "$.data.solutions[1].recipe[2]", "accessed_at": "2026-10-28T10:19:16.917116Z", "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\": 6,\n                        \"unit\": \"g\",\n                        \"g_l\": 6,\n                        \"mmol_l\": 45.4064,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 3, "compound": "(NH4)2SO4", "compound_id": 27, "amount": 6, "unit": "g", "g_l": 6, "mmol_l": 45.4064, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm523", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf", "raw_path": "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91", "locator": "PDF extracted line 30; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z", "quote": "   (NH4)2SO4                                               6.00         g"}], "decision": "conflict", "rationale": "The primary labels this as the mineral stock from medium330; API g_l=6 is a stock concentration, not a direct main-medium rate. Restore the stock and its separately quoted38 ml receiving amount; no automatic final concentration is derived.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml", "field_path": "ingredients[10].concentration", "stored_value": {"value": "6", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The primary labels this as the mineral stock from medium330; API g_l=6 is a stock concentration, not a direct main-medium rate. Restore the stock and its separately quoted38 ml receiving amount; no automatic final concentration is derived."}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml", "field_path": "ingredients[10].concentration", "stored_value": {"value": "6", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The primary labels this as the mineral stock from medium330; API g_l=6 is a stock concentration, not a direct main-medium rate. Restore the stock and its separately quoted38 ml receiving amount; no automatic final concentration is derived."}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml", "field_path": "ingredients[10].concentration", "stored_value": {"value": "6", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The primary labels this as the mineral stock from medium330; API g_l=6 is a stock concentration, not a direct main-medium rate. Restore the stock and its separately quoted38 ml receiving amount; no automatic final concentration is derived."}]}, {"quantity_id": "q12", "topic": "CaCl2 x 2 H2O — mineral stock", "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904", "locator": "$.data.solutions[1].recipe[3]", "accessed_at": "2026-10-28T10:19:16.917116Z", "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 1.6,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.6,\n                        \"mmol_l\": 10.8832,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 4, "compound": "CaCl2 x 2 H2O", "compound_id": 7, "amount": 1.6, "unit": "g", "g_l": 1.6, "mmol_l": 10.8832, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm523", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf", "raw_path": "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91", "locator": "PDF extracted line 31; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z", "quote": "   CaCl2 x 2 H2O                                           1.60         g"}], "decision": "conflict", "rationale": "The primary labels this as the mineral stock from medium330; API g_l=1.6 is a stock concentration, not a direct main-medium rate. Restore the stock and its separately quoted38 ml receiving amount; no automatic final concentration is derived.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml", "field_path": "ingredients[11].concentration", "stored_value": {"value": "1.6", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The primary labels this as the mineral stock from medium330; API g_l=1.6 is a stock concentration, not a direct main-medium rate. Restore the stock and its separately quoted38 ml receiving amount; no automatic final concentration is derived."}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml", "field_path": "ingredients[11].concentration", "stored_value": {"value": "1.6", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The primary labels this as the mineral stock from medium330; API g_l=1.6 is a stock concentration, not a direct main-medium rate. Restore the stock and its separately quoted38 ml receiving amount; no automatic final concentration is derived."}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml", "field_path": "ingredients[11].concentration", "stored_value": {"value": "1.6", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The primary labels this as the mineral stock from medium330; API g_l=1.6 is a stock concentration, not a direct main-medium rate. Restore the stock and its separately quoted38 ml receiving amount; no automatic final concentration is derived."}]}, {"quantity_id": "q13", "topic": "MgSO4 x 7 H2O — mineral stock", "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904", "locator": "$.data.solutions[1].recipe[4]", "accessed_at": "2026-10-28T10:19:16.917116Z", "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 2.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.5,\n                        \"mmol_l\": 10.143,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 5, "compound": "MgSO4 x 7 H2O", "compound_id": 8, "amount": 2.5, "unit": "g", "g_l": 2.5, "mmol_l": 10.143, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm523", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf", "raw_path": "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91", "locator": "PDF extracted line 32; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z", "quote": "   MgSO4 x 7 H2O                                           2.50         g"}], "decision": "conflict", "rationale": "The primary labels this as the mineral stock from medium330; API g_l=2.5 is a stock concentration, not a direct main-medium rate. Restore the stock and its separately quoted38 ml receiving amount; no automatic final concentration is derived.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml", "field_path": "ingredients[12].concentration", "stored_value": {"value": "2.5", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The primary labels this as the mineral stock from medium330; API g_l=2.5 is a stock concentration, not a direct main-medium rate. Restore the stock and its separately quoted38 ml receiving amount; no automatic final concentration is derived."}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml", "field_path": "ingredients[12].concentration", "stored_value": {"value": "2.5", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The primary labels this as the mineral stock from medium330; API g_l=2.5 is a stock concentration, not a direct main-medium rate. Restore the stock and its separately quoted38 ml receiving amount; no automatic final concentration is derived."}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml", "field_path": "ingredients[12].concentration", "stored_value": {"value": "2.5", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The primary labels this as the mineral stock from medium330; API g_l=2.5 is a stock concentration, not a direct main-medium rate. Restore the stock and its separately quoted38 ml receiving amount; no automatic final concentration is derived."}]}, {"quantity_id": "q14", "topic": "Haemin stock versus main", "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904", "locator": "$.data.solutions[3].recipe[0]", "accessed_at": "2026-10-28T10:19:16.917116Z", "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Haemin\",\n                        \"compound_id\": 149,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 0.766989,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 1, "compound": "Haemin", "compound_id": 149, "amount": 50, "unit": "mg", "g_l": 0.5, "mmol_l": 0.766989, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm523", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf", "raw_path": "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91", "locator": "PDF extracted line 46; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z", "quote": "   Haemin                                                  50.00      mg"}, {"evidence_id": "dsm523", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf", "raw_path": "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91", "locator": "Exact visually checked PDF section", "accessed_at": "2026-10-28T10:19:17.235431Z", "quote": "Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled water and filter\nsterilize. Store refrigerated."}], "decision": "conflict", "rationale": "50 mg made up to100 ml supports0.5 g/L in the haemin stock only. Its receiving amount is2 ml; the direct main ingredient at stock strength is a placement error, not an unsupported stock value.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml", "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.5", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "50 mg made up to100 ml supports0.5 g/L in the haemin stock only. Its receiving amount is2 ml; the direct main ingredient at stock strength is a placement error, not an unsupported stock value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml", "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.5", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "50 mg made up to100 ml supports0.5 g/L in the haemin stock only. Its receiving amount is2 ml; the direct main ingredient at stock strength is a placement error, not an unsupported stock value."}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml", "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.5", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "50 mg made up to100 ml supports0.5 g/L in the haemin stock only. Its receiving amount is2 ml; the direct main ingredient at stock strength is a placement error, not an unsupported stock value."}]}, {"quantity_id": "q15", "topic": "NaOH input unit and stock stage", "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904", "locator": "$.data.solutions[3].recipe[1]", "accessed_at": "2026-10-28T10:19:16.917116Z", "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"NaOH\",\n                        \"compound_id\": 256,\n                        \"attribute\": \"1 N\",\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 2, "compound": "NaOH", "compound_id": 256, "attribute": "1 N", "amount": 1, "unit": "ml", "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm523", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf", "raw_path": "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91", "locator": "PDF extracted line 47; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z", "quote": "   NaOH (1 N)                                               1.00      ml"}, {"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904", "locator": "$.data.solutions[3].steps[0]", "accessed_at": "2026-10-28T10:19:16.917116Z", "quote": "{\n                        \"step\": \"Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled water and filter sterilize. Store refrigerated.\"\n                    }", "exact_decoded_object": {"step": "Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled water and filter sterilize. Store refrigerated."}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}], "decision": "correct", "rationale": "The source is1 ml of1 N NaOH used in the100 ml haemin-stock preparation. The current direct1 g/L conflates volume/strength and preparation stage. Retain the source amount and normality; no unverified mass or main-medium dilution is proposed.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml", "field_path": "ingredients[14].concentration", "stored_value": {"value": "1", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The source is1 ml of1 N NaOH used in the100 ml haemin-stock preparation. The current direct1 g/L conflates volume/strength and preparation stage. Retain the source amount and normality; no unverified mass or main-medium dilution is proposed."}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml", "field_path": "ingredients[14].concentration", "stored_value": {"value": "1", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The source is1 ml of1 N NaOH used in the100 ml haemin-stock preparation. The current direct1 g/L conflates volume/strength and preparation stage. Retain the source amount and normality; no unverified mass or main-medium dilution is proposed."}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml", "field_path": "ingredients[14].concentration", "stored_value": {"value": "1", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The source is1 ml of1 N NaOH used in the100 ml haemin-stock preparation. The current direct1 g/L conflates volume/strength and preparation stage. Retain the source amount and normality; no unverified mass or main-medium dilution is proposed."}]}, {"quantity_id": "q16", "topic": "Mineral solution missing receiving stock", "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904", "locator": "$.data.solutions[0].recipe[0]", "accessed_at": "2026-10-28T10:19:16.917116Z", "quote": "{\n                        \"recipe_order\": 1,\n                        \"solution\": \"Mineral solution\",\n                        \"solution_id\": 607,\n                        \"amount\": 38,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 1, "solution": "Mineral solution", "solution_id": 607, "amount": 38, "unit": "ml", "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm523", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf", "raw_path": "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91", "locator": "PDF extracted line 3; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z", "quote": "   Mineral solution                                        38.00       ml"}], "decision": "add", "rationale": "Create the missing source-specific solution descriptor with its quoted batch addition and exact stock identity. The provider main-volume declaration does not justify silently converting this into an independently established final-medium dose.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Create the missing source-specific solution descriptor with its quoted batch addition and exact stock identity. The provider main-volume declaration does not justify silently converting this into an independently established final-medium dose.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Create the missing source-specific solution descriptor with its quoted batch addition and exact stock identity. The provider main-volume declaration does not justify silently converting this into an independently established final-medium dose.", "missing": true}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Create the missing source-specific solution descriptor with its quoted batch addition and exact stock identity. The provider main-volume declaration does not justify silently converting this into an independently established final-medium dose.", "missing": true}]}, {"quantity_id": "q17", "topic": "Clarified rumen fluid missing receiving stock", "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904", "locator": "$.data.solutions[0].recipe[1]", "accessed_at": "2026-10-28T10:19:16.917116Z", "quote": "{\n                        \"recipe_order\": 2,\n                        \"solution\": \"Clarified rumen fluid\",\n                        \"solution_id\": 2618,\n                        \"condition\": \"\",\n                        \"amount\": 200,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 2, "solution": "Clarified rumen fluid", "solution_id": 2618, "condition": "", "amount": 200, "unit": "ml", "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm523", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf", "raw_path": "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91", "locator": "PDF extracted line 4; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z", "quote": "   Clarified rumen fluid                                  200.00       ml"}], "decision": "add", "rationale": "Create the missing source-specific solution descriptor with its quoted batch addition and exact stock identity. The provider main-volume declaration does not justify silently converting this into an independently established final-medium dose.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Create the missing source-specific solution descriptor with its quoted batch addition and exact stock identity. The provider main-volume declaration does not justify silently converting this into an independently established final-medium dose.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Create the missing source-specific solution descriptor with its quoted batch addition and exact stock identity. The provider main-volume declaration does not justify silently converting this into an independently established final-medium dose.", "missing": true}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Create the missing source-specific solution descriptor with its quoted batch addition and exact stock identity. The provider main-volume declaration does not justify silently converting this into an independently established final-medium dose.", "missing": true}]}, {"quantity_id": "q18", "topic": "Haemin solution missing receiving stock", "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904", "locator": "$.data.solutions[0].recipe[5]", "accessed_at": "2026-10-28T10:19:16.917116Z", "quote": "{\n                        \"recipe_order\": 6,\n                        \"solution\": \"Haemin solution\",\n                        \"solution_id\": 124,\n                        \"attribute\": \"0.05% w/v\",\n                        \"amount\": 2,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 6, "solution": "Haemin solution", "solution_id": 124, "attribute": "0.05% w/v", "amount": 2, "unit": "ml", "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm523", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf", "raw_path": "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91", "locator": "PDF extracted line 8; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z", "quote": "   Haemin solution (0.05% w/v)                              2.00       ml"}], "decision": "add", "rationale": "Create the missing source-specific solution descriptor with its quoted batch addition and exact stock identity. The provider main-volume declaration does not justify silently converting this into an independently established final-medium dose.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Create the missing source-specific solution descriptor with its quoted batch addition and exact stock identity. The provider main-volume declaration does not justify silently converting this into an independently established final-medium dose.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Create the missing source-specific solution descriptor with its quoted batch addition and exact stock identity. The provider main-volume declaration does not justify silently converting this into an independently established final-medium dose.", "missing": true}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Create the missing source-specific solution descriptor with its quoted batch addition and exact stock identity. The provider main-volume declaration does not justify silently converting this into an independently established final-medium dose.", "missing": true}]}, {"quantity_id": "q19", "topic": "Water scope 0", "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904", "locator": "$.data.solutions[0].recipe[11]", "accessed_at": "2026-10-28T10:19:16.917116Z", "quote": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 760,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 12, "compound": "Distilled water", "compound_id": 4, "amount": 760, "unit": "ml", "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}], "decision": "add", "rationale": "Source water input belongs only to Main sol. 523. Preserve its amount in root evidence/preparation and its own stage. Water volume alone is not a final-volume declaration.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml", "field_path": "evidence", "stored_value": null, "decision": "add", "rationale": "Source water input belongs only to Main sol. 523. Preserve its amount in root evidence/preparation and its own stage. Water volume alone is not a final-volume declaration.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml", "field_path": "evidence", "stored_value": null, "decision": "add", "rationale": "Source water input belongs only to Main sol. 523. Preserve its amount in root evidence/preparation and its own stage. Water volume alone is not a final-volume declaration.", "missing": true}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml", "field_path": "evidence", "stored_value": null, "decision": "add", "rationale": "Source water input belongs only to Main sol. 523. Preserve its amount in root evidence/preparation and its own stage. Water volume alone is not a final-volume declaration.", "missing": true}]}, {"quantity_id": "q20", "topic": "Water scope 1", "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904", "locator": "$.data.solutions[1].recipe[5]", "accessed_at": "2026-10-28T10:19:16.917116Z", "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 6, "compound": "Distilled water", "compound_id": 4, "amount": 1000, "unit": "ml", "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}], "decision": "add", "rationale": "Source water input belongs only to Mineral solution. Preserve its amount in root evidence/preparation and its own stage. Water volume alone is not a final-volume declaration.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml", "field_path": "evidence", "stored_value": null, "decision": "add", "rationale": "Source water input belongs only to Mineral solution. Preserve its amount in root evidence/preparation and its own stage. Water volume alone is not a final-volume declaration.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml", "field_path": "evidence", "stored_value": null, "decision": "add", "rationale": "Source water input belongs only to Mineral solution. Preserve its amount in root evidence/preparation and its own stage. Water volume alone is not a final-volume declaration.", "missing": true}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml", "field_path": "evidence", "stored_value": null, "decision": "add", "rationale": "Source water input belongs only to Mineral solution. Preserve its amount in root evidence/preparation and its own stage. Water volume alone is not a final-volume declaration.", "missing": true}]}, {"quantity_id": "q21", "topic": "Water scope 3", "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904", "locator": "$.data.solutions[3].recipe[2]", "accessed_at": "2026-10-28T10:19:16.917116Z", "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 100,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 3, "compound": "Distilled water", "compound_id": 4, "amount": 100, "unit": "ml", "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}], "decision": "add", "rationale": "Source water input belongs only to Haemin solution. Preserve its amount in root evidence/preparation and its own stage. The separate haemin instruction explicitly makes up to100 ml.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml", "field_path": "evidence", "stored_value": null, "decision": "add", "rationale": "Source water input belongs only to Haemin solution. Preserve its amount in root evidence/preparation and its own stage. The separate haemin instruction explicitly makes up to100 ml.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml", "field_path": "evidence", "stored_value": null, "decision": "add", "rationale": "Source water input belongs only to Haemin solution. Preserve its amount in root evidence/preparation and its own stage. The separate haemin instruction explicitly makes up to100 ml.", "missing": true}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml", "field_path": "evidence", "stored_value": null, "decision": "add", "rationale": "Source water input belongs only to Haemin solution. Preserve its amount in root evidence/preparation and its own stage. The separate haemin instruction explicitly makes up to100 ml.", "missing": true}]}, {"quantity_id": "q22", "topic": "Main preparation and late stocks", "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904", "locator": "$.data.solutions[0].steps[0]", "accessed_at": "2026-10-28T10:19:16.917116Z", "quote": "{\n                        \"step\": \"Dissolve ingredients (except carbonate, cellobiose, cysteine and sulfide), bring medium to the boil, then cool to room temperature under 100% CO2 gas atmosphere. Add the carbonate and equilibrate the medium with the CO2 gas to pH 6.8. Distribute under CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add cellobiose, cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Cellobiose has to be sterilized by filtration. Adjust pH of complete medium to 6.7 - 6.8, if necessary.\"\n                    }", "exact_decoded_object": {"step": "Dissolve ingredients (except carbonate, cellobiose, cysteine and sulfide), bring medium to the boil, then cool to room temperature under 100% CO2 gas atmosphere. Add the carbonate and equilibrate the medium with the CO2 gas to pH 6.8. Distribute under CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add cellobiose, cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Cellobiose has to be sterilized by filtration. Adjust pH of complete medium to 6.7 - 6.8, if necessary."}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}], "decision": "mixed", "rationale": "The DSM owner already retains the exact source instruction; credit it and add claim-level root evidence. Generated/KOMODO preparation is missing. Keep every number attached to this named stage; do not infer additional strengths, temperatures or durations.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml", "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale": "The DSM owner already retains the exact source instruction; credit it and add claim-level root evidence. Generated/KOMODO preparation is missing. Keep every number attached to this named stage; do not infer additional strengths, temperatures or durations.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml", "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale": "The DSM owner already retains the exact source instruction; credit it and add claim-level root evidence. Generated/KOMODO preparation is missing. Keep every number attached to this named stage; do not infer additional strengths, temperatures or durations.", "missing": true}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml", "field_path": "preparation_steps[0].description", "stored_value": "Dissolve ingredients (except carbonate, cellobiose, cysteine and sulfide), bring medium to the boil, then cool to room temperature under 100% CO2 gas atmosphere. Add the carbonate and equilibrate the medium with the CO2 gas to pH 6.8. Distribute under CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add cellobiose, cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Cellobiose has to be sterilized by filtration. Adjust pH of complete medium to 6.7 - 6.8, if necessary.", "decision": "evidence_only", "rationale": "The DSM owner already retains the exact source instruction; credit it and add claim-level root evidence. Generated/KOMODO preparation is missing. Keep every number attached to this named stage; do not infer additional strengths, temperatures or durations."}]}, {"quantity_id": "q23", "topic": "Clarified rumen preparation", "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904", "locator": "$.data.solutions[2].steps[0]", "accessed_at": "2026-10-28T10:19:16.917116Z", "quote": "{\n                        \"step\": \"Rumen fluid from cow or sheep (obtained from fistulated animals or abattoir refuse) is filtered through muslin, autoclaved at 121\\u00b0C for 15 min and then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum vials to 30% of volume and then stored frozen at -20\\u00b0C.\"\n                    }", "exact_decoded_object": {"step": "Rumen fluid from cow or sheep (obtained from fistulated animals or abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum vials to 30% of volume and then stored frozen at -20°C."}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}], "decision": "mixed", "rationale": "The DSM owner already retains the exact source instruction; credit it and add claim-level root evidence. Generated/KOMODO preparation is missing. Keep every number attached to this named stage; do not infer additional strengths, temperatures or durations.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml", "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale": "The DSM owner already retains the exact source instruction; credit it and add claim-level root evidence. Generated/KOMODO preparation is missing. Keep every number attached to this named stage; do not infer additional strengths, temperatures or durations.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml", "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale": "The DSM owner already retains the exact source instruction; credit it and add claim-level root evidence. Generated/KOMODO preparation is missing. Keep every number attached to this named stage; do not infer additional strengths, temperatures or durations.", "missing": true}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml", "field_path": "preparation_steps[1].description", "stored_value": "Rumen fluid from cow or sheep (obtained from fistulated animals or abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum vials to 30% of volume and then stored frozen at -20°C.", "decision": "evidence_only", "rationale": "The DSM owner already retains the exact source instruction; credit it and add claim-level root evidence. Generated/KOMODO preparation is missing. Keep every number attached to this named stage; do not infer additional strengths, temperatures or durations."}]}, {"quantity_id": "q24", "topic": "Haemin stock preparation", "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904", "locator": "$.data.solutions[3].steps[0]", "accessed_at": "2026-10-28T10:19:16.917116Z", "quote": "{\n                        \"step\": \"Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled water and filter sterilize. Store refrigerated.\"\n                    }", "exact_decoded_object": {"step": "Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled water and filter sterilize. Store refrigerated."}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}], "decision": "mixed", "rationale": "The DSM owner already retains the exact source instruction; credit it and add claim-level root evidence. Generated/KOMODO preparation is missing. Keep every number attached to this named stage; do not infer additional strengths, temperatures or durations.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml", "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale": "The DSM owner already retains the exact source instruction; credit it and add claim-level root evidence. Generated/KOMODO preparation is missing. Keep every number attached to this named stage; do not infer additional strengths, temperatures or durations.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml", "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale": "The DSM owner already retains the exact source instruction; credit it and add claim-level root evidence. Generated/KOMODO preparation is missing. Keep every number attached to this named stage; do not infer additional strengths, temperatures or durations.", "missing": true}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml", "field_path": "preparation_steps[2].description", "stored_value": "Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled water and filter sterilize. Store refrigerated.", "decision": "evidence_only", "rationale": "The DSM owner already retains the exact source instruction; credit it and add claim-level root evidence. Generated/KOMODO preparation is missing. Keep every number attached to this named stage; do not infer additional strengths, temperatures or durations."}]}, {"quantity_id": "q25", "topic": "ph_range.min", "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904", "locator": "$.data.solutions[0].steps[0]", "accessed_at": "2026-10-28T10:19:16.917116Z", "quote": "{\n                        \"step\": \"Dissolve ingredients (except carbonate, cellobiose, cysteine and sulfide), bring medium to the boil, then cool to room temperature under 100% CO2 gas atmosphere. Add the carbonate and equilibrate the medium with the CO2 gas to pH 6.8. Distribute under CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add cellobiose, cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Cellobiose has to be sterilized by filtration. Adjust pH of complete medium to 6.7 - 6.8, if necessary.\"\n                    }", "exact_decoded_object": {"step": "Dissolve ingredients (except carbonate, cellobiose, cysteine and sulfide), bring medium to the boil, then cool to room temperature under 100% CO2 gas atmosphere. Add the carbonate and equilibrate the medium with the CO2 gas to pH 6.8. Distribute under CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add cellobiose, cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Cellobiose has to be sterilized by filtration. Adjust pH of complete medium to 6.7 - 6.8, if necessary."}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}], "decision": "mixed", "rationale": "The current DSM owner range6.7–6.8 matches the complete-medium instruction; generated/KOMODO lack the range. Initial carbonate equilibration at6.8 is a distinct stage.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml", "field_path": "ph_range.min", "stored_value": 6.7, "decision": "evidence_only", "rationale": "The current DSM owner range6.7–6.8 matches the complete-medium instruction; generated/KOMODO lack the range. Initial carbonate equilibration at6.8 is a distinct stage."}, {"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml", "field_path": "ph_range", "stored_value": null, "decision": "add", "rationale": "The current DSM owner range6.7–6.8 matches the complete-medium instruction; generated/KOMODO lack the range. Initial carbonate equilibration at6.8 is a distinct stage.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml", "field_path": "ph_range", "stored_value": null, "decision": "add", "rationale": "The current DSM owner range6.7–6.8 matches the complete-medium instruction; generated/KOMODO lack the range. Initial carbonate equilibration at6.8 is a distinct stage.", "missing": true}]}, {"quantity_id": "q26", "topic": "ph_range.max", "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904", "locator": "$.data.solutions[0].steps[0]", "accessed_at": "2026-10-28T10:19:16.917116Z", "quote": "{\n                        \"step\": \"Dissolve ingredients (except carbonate, cellobiose, cysteine and sulfide), bring medium to the boil, then cool to room temperature under 100% CO2 gas atmosphere. Add the carbonate and equilibrate the medium with the CO2 gas to pH 6.8. Distribute under CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add cellobiose, cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Cellobiose has to be sterilized by filtration. Adjust pH of complete medium to 6.7 - 6.8, if necessary.\"\n                    }", "exact_decoded_object": {"step": "Dissolve ingredients (except carbonate, cellobiose, cysteine and sulfide), bring medium to the boil, then cool to room temperature under 100% CO2 gas atmosphere. Add the carbonate and equilibrate the medium with the CO2 gas to pH 6.8. Distribute under CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add cellobiose, cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Cellobiose has to be sterilized by filtration. Adjust pH of complete medium to 6.7 - 6.8, if necessary."}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}], "decision": "mixed", "rationale": "The current DSM owner range6.7–6.8 matches the complete-medium instruction; generated/KOMODO lack the range. Initial carbonate equilibration at6.8 is a distinct stage.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml", "field_path": "ph_range.max", "stored_value": 6.8, "decision": "evidence_only", "rationale": "The current DSM owner range6.7–6.8 matches the complete-medium instruction; generated/KOMODO lack the range. Initial carbonate equilibration at6.8 is a distinct stage."}, {"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml", "field_path": "ph_range", "stored_value": null, "decision": "add", "rationale": "The current DSM owner range6.7–6.8 matches the complete-medium instruction; generated/KOMODO lack the range. Initial carbonate equilibration at6.8 is a distinct stage.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml", "field_path": "ph_range", "stored_value": null, "decision": "add", "rationale": "The current DSM owner range6.7–6.8 matches the complete-medium instruction; generated/KOMODO lack the range. Initial carbonate equilibration at6.8 is a distinct stage.", "missing": true}]}, {"quantity_id": "q27", "topic": "Unquantified late stock strengths and normalization boundary", "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904", "locator": "$.data.solutions[0].steps[0]", "accessed_at": "2026-10-28T10:19:16.917116Z", "quote": "{\n                        \"step\": \"Dissolve ingredients (except carbonate, cellobiose, cysteine and sulfide), bring medium to the boil, then cool to room temperature under 100% CO2 gas atmosphere. Add the carbonate and equilibrate the medium with the CO2 gas to pH 6.8. Distribute under CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add cellobiose, cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Cellobiose has to be sterilized by filtration. Adjust pH of complete medium to 6.7 - 6.8, if necessary.\"\n                    }", "exact_decoded_object": {"step": "Dissolve ingredients (except carbonate, cellobiose, cysteine and sulfide), bring medium to the boil, then cool to room temperature under 100% CO2 gas atmosphere. Add the carbonate and equilibrate the medium with the CO2 gas to pH 6.8. Distribute under CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add cellobiose, cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Cellobiose has to be sterilized by filtration. Adjust pH of complete medium to 6.7 - 6.8, if necessary."}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904", "locator": "$.data.solutions[0].recipe[11]", "accessed_at": "2026-10-28T10:19:16.917116Z", "quote": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 760,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 12, "compound": "Distilled water", "compound_id": 4, "amount": 760, "unit": "ml", "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}], "decision": "not_quantified", "rationale": "Cellobiose, cysteine and sulfide stock strengths and their added volumes are not stated; preserve their quoted batch solute amounts. API volume1000 ml coexists with main listed liquid additions totaling1000.5 ml before unspecified late stocks. Do not infer a measured final volume or a complete-medium stock dilution.", "layer_assessments": []}]
+
+### Current ontology and MIM correspondence
+
+grounding: concern. Targets: CultureMech:005885.
+
+All asserted chemical identifiers resolve and label correspondence is retained. Sodium resazurin nevertheless points to neutral8806; mixtures such as trypticase and yeast remain ungrounded, without fabricated replacements. Current MIM exact and ontology-linked preferred rows and all synonym rows are preserved as present catalog facts, not old-event authentication.
+
+### History and evidence scope
+
+provenance: concern. Targets: CultureMech:005885.
+
+Current source bytes, complete histories and scoped historical reports were read. Missing claim-level linkage and any malformed historical metadata are distinguished from authenticated source bytes; originals remain append-only.
+
+### Growth and taxonomic evidence
+
+scope: unknown. Targets: CultureMech:005885.
+
+Generic cultivation applications and bacterial filing are not strain-level growth evidence. No organism-specific growth, temperature or atmosphere is inferred from names or source catalog identifiers.
+
+### Canonical diagnostics
+
+schema: supported. Targets: CultureMech:005885.
+
+All four original canonical diagnostics passed. Reference checks were zero; structural and term diagnostics do not establish formulation accuracy.
+
+## Findings
+
+### f1: Restore the mineral and haemin stock structure
+
+major / open / confirmed; issue key: culturemech-005885-restore-the-mineral-and-haemin-stock-structure.
+
+Five mineral constituents and haemin appear directly at stock strength; the mineral38 ml, clarified rumen fluid200 ml and haemin2 ml additions are absent. NaOH is specifically1 ml of1 N solution within haemin preparation, not the stored1 g/L main ingredient. Keep supported provider main values and explicit stock amounts separate; preserve the primary final-volume uncertainty.
+
+### f2: Retain the DSM owner preparation and pH range
+
+major / open / confirmed; issue key: culturemech-005885-retain-the-dsm-owner-preparation-and-ph-range.
+
+The DSM owner already holds full main, rumen and haemin preparation plus pH6.7–6.8. Generated and KOMODO records omit them. Current resolver copies ph_value but not ph_range or preparation, while the present merger rejects unequal formulations; current code is context, not proof of the historic loss.
+
+### f3: Resolve sodium resazurin supplied form
+
+major / open / confirmed; issue key: culturemech-005885-resolve-sodium-resazurin-supplied-form.
+
+The primary explicitly uses sodium resazurin while valid CHEBI8806 represents neutral Resazurin with formulaC12H7NO4 and no sodium. Its exact current MIM synonym mapping does not establish the source salt identity. Existing other CHEBI labels and hydrate forms were checked; mixtures lacking ontology terms remain unresolved rather than guessed.
+
+### f4: Preserve and qualify historical event metadata
+
+minor / open / confirmed; issue key: culturemech-005885-preserve-and-qualify-historical-event-metadata.
+
+KOMODO import events contain a literal .fZ timestamp and resolver events omit a UTC offset. Historical concentration reports preserve unresolved claims and exact source mappings, but are not independent proof of those historical retrieval events. The current API response matches the historical source digest and literal objects, but no corresponding current KOMODO catalogue body was recovered.
+
+## Recommended Actions And Acceptance Checks
+
+### action1
+
+Represent the three source stocks and receiving amounts in maintained owners, move stock components to their correct scope, and replace the NaOH unit/stage claim with exact source evidence. Preserve main provider declarations with their normalization limits; regenerate only compatible formulations.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+### action2
+
+Credit and retain the DSM instructions, add exact root evidence, and reconcile the KOMODO contributor before regeneration. Keep rumen-processing quantities and haemin stock preparation scoped; do not replace known information with invented defaults.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+### action3
+
+Resolve the exact sodium-salt identifier and canonical label from an authority, preserve the supported provider amount and0.1% w/v stock scope, and record the primary provenance. Do not transfer neutral-resazurin molecular-weight assumptions.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+### action4
+
+Retain every original event byte-for-byte. If authoritative provenance is recovered, append a verified correction or context event; never invent or overwrite its timestamp. Link fresh source evidence separately and preserve unresolved accession limitations.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| local-target | data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml; Complete document | context_only | Complete selected generated record; no changes made. |
+| owner-1 | data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml; Complete document | context_only | Complete maintained contributor including current curation history, evidence, quantities and preparation; no changes made. |
+| owner-2 | data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml; Complete document | context_only | Complete maintained contributor including current curation history, evidence, quantities and preparation; no changes made. |
+| identity-search | REVIEW_WORK/batch063/record02/identity-search.json | supports | Exact generated lineage resolves every maintained contributor; no filename-only transfer from neighboring variants. |
+| writer-mediadive | src/culturemech/import/mediadive_importer.py; _parse_api_composition, _parse_api_solutions, _parse_preparation_steps | context_only | Current composition parser restricts ingredients to the primary solution, excludes solvent and recognized stock additions, and retains explicit g_l. The solution parser preserves referenced or percent-defined stocks and source attributes. Preparation parsing still concatenates all solution steps into root preparation_steps; source-stage annotation remains important. These present functions do not prove the historical execution that produced this record. |
+| writer-merge | src/culturemech/merge/merger.py; merge_group | context_only | Current merge_group copies a sole contributor with merge metadata. For multiple contributors it passes records to merge_formulation_evidence, which checks compatibility; it does not authorize merging different preparation assertions. |
+| writer-formulation | src/culturemech/merge/formulation.py; formulation_content, merge_formulation_evidence | context_only | Current compatibility preserves scientific fields and list order and rejects unequal formulations; only specified provenance/evidence lists are unioned. It performs no concentration conversion or stock expansion and does not authenticate historical merges. |
+| writer-cleanup | scripts/cleanup_recipe_ingredients.py; merge_duplicate_ingredients, merge_ingredient_group | context_only | Current cleanup groups identical normalized names, keeps the first entry as a base, flags differing concentrations and combines a warning note; it does not sum concentrations. It can still discard distinctions when names repeat, so source stage must be retained. Current behavior does not establish the historical cause of an existing discrepancy. |
+| writer-resolver | src/culturemech/enrich/dsmz_resolver.py; DSMZCompositionResolver.merge_composition | context_only | Current merge_composition copies nonplaceholder ingredients and available solutions, ph_value when absent, physical_state and medium_type. It does not copy preparation_steps or ph_range; present behavior is not proof of historical execution. |
+| writer-komodo | src/culturemech/import/komodo_web_importer.py; _convert_to_culturemech | context_only | Current _convert_to_culturemech builds KOMODO identity, source mapping and aerobic notes from table flags and emits placeholder ingredients. It uses time.strftime with %f, which does not itself establish a valid fractional timestamp. Existing malformed events remain original evidence, not a license to rewrite history. |
+| historical-1 | reports/archive/media_variant_dsmz_komodo_source_duplicate_review.md; Exact selected-owner matching rows, if present, plus report purpose/method and validation claims only; all other pair-specific conclusions outside scope. | context_only | Historical source-duplicate report: only exact selected-owner rows, where present, and its stated signature method are in scope. Similarity does not prove complete preparation identity; no assertion about absent exact pairs is inferred. |
+| historical-2 | reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml.md; Complete exact-header report, including unchanged/unsupported claims, source objects and narrative; repeated literal rows compared losslessly. | context_only | Current independent capture exactly matches the cited old response digest; 24 historical literal/decoded objects join. Access-event provenance remains historical. |
+| historical-3 | reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/clostridium_chartatabidum_medium.yaml.md; Complete exact-header report, including unchanged/unsupported claims, source objects and narrative; repeated literal rows compared losslessly. | context_only | Current independent capture exactly matches the cited old response digest; 24 historical literal/decoded objects join. Access-event provenance remains historical. |
+| historical-4 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.md; Complete exact-header report, including unchanged/unsupported claims, source objects and narrative; repeated literal rows compared losslessly. | context_only | Historical derivative context; current response does not authenticate the old full raw digest. Exact object matches and differences are recorded separately; old conclusions are reassessed. |
+| historical-5 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.md; Complete exact-header report, including unchanged/unsupported claims, source objects and narrative; repeated literal rows compared losslessly. | context_only | Historical derivative context; current response does not authenticate the old full raw digest. Exact object matches and differences are recorded separately; old conclusions are reassessed. |
+| historical-6 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/clostridium_chartatabidum_medium.md; Complete exact-header report, including unchanged/unsupported claims, source objects and narrative; repeated literal rows compared losslessly. | context_only | Historical derivative context; current response does not authenticate the old full raw digest. Exact object matches and differences are recorded separately; old conclusions are reassessed. |
+| historical-reader | REVIEW_WORK/batch063/record02/historical-reader.json | context_only | Full exact-header historical texts and scoped large report, with literal/decoded current-source joins and explicit mismatches. Historical access events are not reauthenticated. |
+| attached-evidence-joins | REVIEW_WORK/batch063/record02/attached-evidence-joins.json | context_only | Every existing attached evidence claim is preserved and compared to the exact freshly captured response. Matching snippets do not authenticate historical access times. |
+| complete-source-rows | REVIEW_WORK/batch063/record02/complete-source-rows.json | context_only | Every source recipe row and preparation object, with exact raw substring and decoded JSON locator, kept in its own solution stage. No biological recommendation follows from provider equipment metadata. |
+| dsm523 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf; Exact source identity and scoped formulation/preparation | supports | Complete two-page primary DSM523 recipe, all three stock sections and their preparation visually read. Haemin stock alone explicitly makes up to100 ml; main and mineral water inputs do not establish final volume. |
+| api523 | https://mediadive.dsmz.de/rest/medium/523; Exact source identity and scoped formulation/preparation | supports | Complete current DSMZ API523 medium identity and four solution objects, all recipe rows, volume declarations and preparation read. Provider g_l supports named stages; it is not proof of a measured final volume. |
+| komodo523 | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=523; Exact source identity and scoped formulation/preparation | unknown | Exact historical MediaInfo=523 route returns403; challenge text provides no recipe or fresh mapping authentication. |
+| komodoList | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; Exact source identity and scoped formulation/preparation | unknown | Exact historical MediaList route returns403. The report mapping row remains derivative evidence. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_131527; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_8806; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_29377; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi17057 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_17057; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi91248 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_91248; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi76209 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_76209; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_63036; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_26710; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi62946 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_62946; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86158; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_31795; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi50385 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_50385; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi32145 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_32145; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| quantities | REVIEW_WORK/batch063/record02/quantity-inventory.json | context_only | Complete local concentration and source-stage decision inventory; includes exact local paths and source failure limits. |
+| grounding | REVIEW_WORK/batch063/record02/grounding-inventory.json | context_only | All recursive asserted identifier/label slots, exact current OLS objects and current packaged MIM preferred-row joins. |
+| history | REVIEW_WORK/batch063/record02/history-and-evidence-inventory.json | context_only | Complete current history, references and attached evidence; source-specific claims are assessed without authenticating historical execution from code. |
+| scalars | REVIEW_WORK/batch063/record02/scalar-census.json | context_only | Lossless scalar census of the selected target and all maintained contributors. |
+| validate-schema | REVIEW_WORK/batch063/record02/validate-schema.json | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed<br> |
+| validate-strict | REVIEW_WORK/batch063/record02/validate-strict.json | supports | Validating 1 files with 1 workers; layers=schema; schema=src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                REVIEW_WORK/batch063/record02/strict.tsv<br> |
+| validate-terms | REVIEW_WORK/batch063/record02/validate-terms.json | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed<br> |
+| validate-references | REVIEW_WORK/batch063/record02/validate-references.json | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed<br> |
+
+## Limits And Additional Notes
+
+- The exact KOMODO523 accession and catalogue requests returned403, so source identity authentication is partial; historical captured rows remain explicitly derivative.
+- DSM523 does not explicitly state the final main/mineral volume. Provider g_l values are scoped declarations; no measured-volume or missing-stock dilution is inferred.
+- Rumen fluid is undefined; no chemical composition or strain-level growth is inferred. Late cellobiose/cysteine/sulfide stock strengths and addition volumes are unquantified.
+- The haemin/mineral/rumen subsections embedded in DSM523 are reviewed in that receiving-medium scope; other formulations in media78/330/1310 are not transferred.
+- No authoritative sodium-resazurin replacement identifier is guessed. Source names and generic applications do not establish a species or strain growth claim.
+- Fresh review; historical lost snapshots were not reconstructed. All inspected source files remain unchanged.
+- No formal review validation/save, Git mutation or publication was performed by this author.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T103524Z-batch063-record02-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'CLOSTRIDIUM CHARTATABIDUM medium: preserve source stocks and owner preparation'
+started_at: '2026-10-28T10:18:35.728607Z'
+finished_at: '2026-10-28T10:35:24.256915Z'
+reviewer:
+  identity: Codex independent source reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Fresh assessment of the inspected checkout and newly captured
+    primary/provider/ontology evidence; no reconstruction of lost reviews and no record
+    edits.
+skill: .claude/skills/review-yaml-record/SKILL.md; .claude/skills/review-ingredient-concentrations/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The selected DSM523/KOMODO523 merge retains provider main-row numbers but
+  flattens mineral and haemin stock components, misrepresents the NaOH input, and
+  loses the DSM owner preparation and pH range. Sodium resazurin is grounded to the
+  neutral compound. Exact current primary and provider sources support scoped corrections;
+  inaccessible KOMODO routes keep the review partial.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/culturemech_id_registry.tsv
+    sha256: 0d059720f5c474b63daff8d5010fc56942a5a3ac30761ee75ce9e84801d555a5
+    role: context
+  - path: data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml
+    sha256: 4ea0e42222873646a008d7a85490d1506e700438028104b2bb44eb232a95975c
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml
+    sha256: 1f01c42771ddbbd425bf6c444a69f254a4a706eb75a5799d84b846b3a89e3c98
+    role: context
+  - path: data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml
+    sha256: 12bf5d11d656b384e8160d36182bfd91a4c3556a2a7ebda1f6814315825dcd77
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/archive/media_variant_dsmz_komodo_source_duplicate_review.md
+    sha256: a723d4b7950bf4ac296a8a7fe4890d4d0881199a5d17c12a5fe39c2afbc40a10
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml.md
+    sha256: 5f962b2dc752c8a972bcd8c03c0b8e9390f6b2b778766a8ac507ae25fc7724d4
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/clostridium_chartatabidum_medium.yaml.md
+    sha256: 637705d2a958ceaeb53b4ea3c4c9d3bfb25d8fdc64d3eae6e76048db228f2efa
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.md
+    sha256: d423abb9522426843c4259bfef43da85206e8ecdd7032f2e8308eaf3dc0e4ff7
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.md
+    sha256: 1aec5f217de463207d9aee38f61a744d043d551d575a1f8690ddbe621b39d67d
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/clostridium_chartatabidum_medium.md
+    sha256: 3c0780153309f6177e1cd318c8602ad2e033c9091195050c03ae19038fb63bde
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_media_variant_links.py
+    sha256: 2931b0c5d4374cdaa6d256aed8f65f564a8b285bba741ec914f3a516eed50c07
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/record_target_class.py
+    sha256: 468fcbfd2362ca08b7066d6f21adf85c04f21ab40f80e60995522b4edc0f6349
+    role: context
+  - path: scripts/validate_media_variant_links.py
+    sha256: d18ef71320a0c50abe085e151d0d0d4d963007d1e1c9afbefab97581a983e31e
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: 6116d95493b8f91faed19956301291a73d090a3b83671303650a561798933456
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+scope:
+  description: Full selected record and exact maintained contributors; explicitly
+    scoped dependency and external-source limits retained.
+  selection: Actual batch063 native selection index 02.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:005885
+targets:
+- target_id: CultureMech:005885
+  path: data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml
+  label: clostridium_chartatabidum_medium
+  kind: generated
+  record_class: MediaRecipe
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:005885
+  command: just validate-schema data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-schema
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-strict
+  name: validate-strict
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:005885
+  command: just validate-strict data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml
+    --out REVIEW_WORK/batch063/record02/strict.tsv --workers 1 --quiet
+  exit_code: 0
+  evidence_ids:
+  - validate-strict
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-terms
+  name: validate-terms
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:005885
+  command: just validate-terms data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-terms
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-references
+  name: validate-references
+  status: passed
+  required: true
+  summary: Native reference checker performed zero reference checks; this is not claim
+    authentication.
+  target_ids:
+  - CultureMech:005885
+  command: just validate-references data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-references
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+evidence:
+- evidence_id: local-target
+  kind: record_content
+  reference: data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T10:25:09.428950Z'
+  support: context_only
+  summary: Complete selected generated record; no changes made.
+  snapshot_sha256: 4ea0e42222873646a008d7a85490d1506e700438028104b2bb44eb232a95975c
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T10:25:09.428950Z'
+  support: context_only
+  summary: Complete maintained contributor including current curation history, evidence,
+    quantities and preparation; no changes made.
+  snapshot_sha256: 1f01c42771ddbbd425bf6c444a69f254a4a706eb75a5799d84b846b3a89e3c98
+- evidence_id: owner-2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T10:25:09.428950Z'
+  support: context_only
+  summary: Complete maintained contributor including current curation history, evidence,
+    quantities and preparation; no changes made.
+  snapshot_sha256: 12bf5d11d656b384e8160d36182bfd91a4c3556a2a7ebda1f6814315825dcd77
+- evidence_id: identity-search
+  kind: search
+  reference: REVIEW_WORK/batch063/record02/identity-search.json
+  accessed_at: '2026-10-28T10:25:09.480753Z'
+  support: supports
+  summary: Exact generated lineage resolves every maintained contributor; no filename-only
+    transfer from neighboring variants.
+  search_scope: Complete recursive normalized YAML filename census including ignored
+    and hidden paths; exact merged_from stems and stable identity resolve the owner;
+    excluded namesakes are retained in the census. Similar names and source accessions
+    are not promoted to owners.
+  snapshot_sha256: c8b619ab541b51620b37bed6a9c979c75e1693cc1bca4585b2a425bcca2d44cb
+- evidence_id: writer-mediadive
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition, _parse_api_solutions, _parse_preparation_steps
+  accessed_at: '2026-10-28T10:25:09.428950Z'
+  support: context_only
+  summary: Current composition parser restricts ingredients to the primary solution,
+    excludes solvent and recognized stock additions, and retains explicit g_l. The
+    solution parser preserves referenced or percent-defined stocks and source attributes.
+    Preparation parsing still concatenates all solution steps into root preparation_steps;
+    source-stage annotation remains important. These present functions do not prove
+    the historical execution that produced this record.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-merge
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: merge_group
+  accessed_at: '2026-10-28T10:25:09.428950Z'
+  support: context_only
+  summary: Current merge_group copies a sole contributor with merge metadata. For
+    multiple contributors it passes records to merge_formulation_evidence, which checks
+    compatibility; it does not authorize merging different preparation assertions.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-formulation
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content, merge_formulation_evidence
+  accessed_at: '2026-10-28T10:25:09.428950Z'
+  support: context_only
+  summary: Current compatibility preserves scientific fields and list order and rejects
+    unequal formulations; only specified provenance/evidence lists are unioned. It
+    performs no concentration conversion or stock expansion and does not authenticate
+    historical merges.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-cleanup
+  kind: record_content
+  reference: scripts/cleanup_recipe_ingredients.py
+  locator: merge_duplicate_ingredients, merge_ingredient_group
+  accessed_at: '2026-10-28T10:25:09.428950Z'
+  support: context_only
+  summary: Current cleanup groups identical normalized names, keeps the first entry
+    as a base, flags differing concentrations and combines a warning note; it does
+    not sum concentrations. It can still discard distinctions when names repeat, so
+    source stage must be retained. Current behavior does not establish the historical
+    cause of an existing discrepancy.
+  snapshot_sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+- evidence_id: writer-resolver
+  kind: record_content
+  reference: src/culturemech/enrich/dsmz_resolver.py
+  locator: DSMZCompositionResolver.merge_composition
+  accessed_at: '2026-10-28T10:25:09.428950Z'
+  support: context_only
+  summary: Current merge_composition copies nonplaceholder ingredients and available
+    solutions, ph_value when absent, physical_state and medium_type. It does not copy
+    preparation_steps or ph_range; present behavior is not proof of historical execution.
+  snapshot_sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+- evidence_id: writer-komodo
+  kind: record_content
+  reference: src/culturemech/import/komodo_web_importer.py
+  locator: _convert_to_culturemech
+  accessed_at: '2026-10-28T10:25:09.428950Z'
+  support: context_only
+  summary: Current _convert_to_culturemech builds KOMODO identity, source mapping
+    and aerobic notes from table flags and emits placeholder ingredients. It uses
+    time.strftime with %f, which does not itself establish a valid fractional timestamp.
+    Existing malformed events remain original evidence, not a license to rewrite history.
+  snapshot_sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+- evidence_id: historical-1
+  kind: record_content
+  reference: reports/archive/media_variant_dsmz_komodo_source_duplicate_review.md
+  locator: Exact selected-owner matching rows, if present, plus report purpose/method
+    and validation claims only; all other pair-specific conclusions outside scope.
+  accessed_at: '2026-10-28T10:25:09.428950Z'
+  support: context_only
+  summary: 'Historical source-duplicate report: only exact selected-owner rows, where
+    present, and its stated signature method are in scope. Similarity does not prove
+    complete preparation identity; no assertion about absent exact pairs is inferred.'
+  snapshot_sha256: a723d4b7950bf4ac296a8a7fe4890d4d0881199a5d17c12a5fe39c2afbc40a10
+- evidence_id: historical-2
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml.md
+  locator: Complete exact-header report, including unchanged/unsupported claims, source
+    objects and narrative; repeated literal rows compared losslessly.
+  accessed_at: '2026-10-28T10:25:09.428950Z'
+  support: context_only
+  summary: Current independent capture exactly matches the cited old response digest;
+    24 historical literal/decoded objects join. Access-event provenance remains historical.
+  snapshot_sha256: 5f962b2dc752c8a972bcd8c03c0b8e9390f6b2b778766a8ac507ae25fc7724d4
+- evidence_id: historical-3
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/clostridium_chartatabidum_medium.yaml.md
+  locator: Complete exact-header report, including unchanged/unsupported claims, source
+    objects and narrative; repeated literal rows compared losslessly.
+  accessed_at: '2026-10-28T10:25:09.428950Z'
+  support: context_only
+  summary: Current independent capture exactly matches the cited old response digest;
+    24 historical literal/decoded objects join. Access-event provenance remains historical.
+  snapshot_sha256: 637705d2a958ceaeb53b4ea3c4c9d3bfb25d8fdc64d3eae6e76048db228f2efa
+- evidence_id: historical-4
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.md
+  locator: Complete exact-header report, including unchanged/unsupported claims, source
+    objects and narrative; repeated literal rows compared losslessly.
+  accessed_at: '2026-10-28T10:25:09.428950Z'
+  support: context_only
+  summary: Historical derivative context; current response does not authenticate the
+    old full raw digest. Exact object matches and differences are recorded separately;
+    old conclusions are reassessed.
+  snapshot_sha256: d423abb9522426843c4259bfef43da85206e8ecdd7032f2e8308eaf3dc0e4ff7
+- evidence_id: historical-5
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.md
+  locator: Complete exact-header report, including unchanged/unsupported claims, source
+    objects and narrative; repeated literal rows compared losslessly.
+  accessed_at: '2026-10-28T10:25:09.428950Z'
+  support: context_only
+  summary: Historical derivative context; current response does not authenticate the
+    old full raw digest. Exact object matches and differences are recorded separately;
+    old conclusions are reassessed.
+  snapshot_sha256: 1aec5f217de463207d9aee38f61a744d043d551d575a1f8690ddbe621b39d67d
+- evidence_id: historical-6
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/clostridium_chartatabidum_medium.md
+  locator: Complete exact-header report, including unchanged/unsupported claims, source
+    objects and narrative; repeated literal rows compared losslessly.
+  accessed_at: '2026-10-28T10:25:09.428950Z'
+  support: context_only
+  summary: Historical derivative context; current response does not authenticate the
+    old full raw digest. Exact object matches and differences are recorded separately;
+    old conclusions are reassessed.
+  snapshot_sha256: 3c0780153309f6177e1cd318c8602ad2e033c9091195050c03ae19038fb63bde
+- evidence_id: historical-reader
+  kind: record_content
+  reference: REVIEW_WORK/batch063/record02/historical-reader.json
+  accessed_at: '2026-10-28T10:25:09.484581Z'
+  support: context_only
+  summary: Full exact-header historical texts and scoped large report, with literal/decoded
+    current-source joins and explicit mismatches. Historical access events are not
+    reauthenticated.
+  snapshot_sha256: 43c3c31281a78fb151b9e380e89bc17c619869a1c3580404c005524e1641da07
+- evidence_id: attached-evidence-joins
+  kind: record_content
+  reference: REVIEW_WORK/batch063/record02/attached-evidence-joins.json
+  accessed_at: '2026-10-28T10:25:09.484879Z'
+  support: context_only
+  summary: Every existing attached evidence claim is preserved and compared to the
+    exact freshly captured response. Matching snippets do not authenticate historical
+    access times.
+  snapshot_sha256: 37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570
+- evidence_id: complete-source-rows
+  kind: record_content
+  reference: REVIEW_WORK/batch063/record02/complete-source-rows.json
+  accessed_at: '2026-10-28T10:25:09.487835Z'
+  support: context_only
+  summary: Every source recipe row and preparation object, with exact raw substring
+    and decoded JSON locator, kept in its own solution stage. No biological recommendation
+    follows from provider equipment metadata.
+  snapshot_sha256: 9e4689c75f684628e0ae6110d04635e58ee50f971a74a43e4d1cfdcba6cb134b
+- evidence_id: dsm523
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf
+  locator: Exact source identity and scoped formulation/preparation
+  accessed_at: '2026-10-28T10:19:17.235431Z'
+  support: supports
+  summary: Complete two-page primary DSM523 recipe, all three stock sections and their
+    preparation visually read. Haemin stock alone explicitly makes up to100 ml; main
+    and mineral water inputs do not establish final volume.
+  snapshot_sha256: 85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91
+- evidence_id: api523
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/523
+  locator: Exact source identity and scoped formulation/preparation
+  accessed_at: '2026-10-28T10:19:16.917116Z'
+  support: supports
+  summary: Complete current DSMZ API523 medium identity and four solution objects,
+    all recipe rows, volume declarations and preparation read. Provider g_l supports
+    named stages; it is not proof of a measured final volume.
+  snapshot_sha256: 794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904
+- evidence_id: komodo523
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=523
+  locator: Exact source identity and scoped formulation/preparation
+  accessed_at: '2026-10-28T10:19:16.457450Z'
+  support: unknown
+  summary: Exact historical MediaInfo=523 route returns403; challenge text provides
+    no recipe or fresh mapping authentication.
+  snapshot_sha256: ec8a98dc443b8f1fe8d099a9cff1614324ec71debcdf85c0ca5f6226f5bfc976
+- evidence_id: komodoList
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Exact source identity and scoped formulation/preparation
+  accessed_at: '2026-10-28T10:19:16.392827Z'
+  support: unknown
+  summary: Exact historical MediaList route returns403. The report mapping row remains
+    derivative evidence.
+  snapshot_sha256: f131cc2773375f470395ba0d7679083e86252b979a38be9f63eaef76965df8e8
+- evidence_id: chebi131527
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_131527
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T10:19:17.865139Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 97e9c2b05f3937c5beeebb4e6338aa6730f9e422ee0e7570a6c622dda8d97a86
+- evidence_id: chebi8806
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_8806
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T10:19:22.081630Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: ceb05e9dd7fba3802d28b34c50bbb604ded87951e4ea3a812739824a84648d72
+- evidence_id: chebi29377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_29377
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T10:19:18.708962Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: dee64859233d0b0898eba91901a001f1faaa5eaab37f7beb7e98318ab8c19569
+- evidence_id: chebi17057
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_17057
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T10:19:18.122057Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: d8316efd6b721c17fedfab7c84433253c14c440dac0dfe410f06186f0e7664d4
+- evidence_id: chebi91248
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_91248
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T10:19:22.132547Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 98a5682728cfda4162de150a88ae8c4b3a70c2d7c248634a5108be50a888a692
+- evidence_id: chebi76209
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_76209
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T10:19:21.042314Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 3eece7d96d2433ff020ece90db55323d138c5c828b78198f91d26b3eafa91f9f
+- evidence_id: chebi63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_63036
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T10:19:20.440293Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 913baf38abc38dd61f05c5d636fd6532b70a668673a1f5762f290d2b67270164
+- evidence_id: chebi26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_26710
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T10:19:18.505520Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: b145f4ff9b90ebb993ff576d9ab35a6c10b7c42a3b99e18feffcc8d75c0e1e50
+- evidence_id: chebi62946
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_62946
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T10:19:20.431720Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: b52cb60c424f5c8262c2b335bf4b428324d0e53dc8b9cbfbd77494460877275d
+- evidence_id: chebi86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86158
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T10:19:21.481144Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: df8f702eb5b9d3e50209bfa2b0c4b6f1db30c116e56a58e348cbd4bf3bc0ebc1
+- evidence_id: chebi31795
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_31795
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T10:19:19.149380Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 1635f67d01e00cabdef4ed0d9ef6d5383787c56bd0447051deb90ad353b499a2
+- evidence_id: chebi50385
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_50385
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T10:19:19.799293Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 9531274295a20e5b89ae5c0a87c0772ec355c40948c99661eacec8d887712a8a
+- evidence_id: chebi32145
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_32145
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T10:19:19.092414Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 1f39a220b091088af20782dd27577fb7ca89e037d2b0ea83e76075fb8d77b797
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch063/record02/quantity-inventory.json
+  accessed_at: '2026-10-28T10:25:09.518309Z'
+  support: context_only
+  summary: Complete local concentration and source-stage decision inventory; includes
+    exact local paths and source failure limits.
+  snapshot_sha256: 52330a298cae18c6f76a43e94d2ac8e179322414f00b205acb64809c9e03a63f
+- evidence_id: grounding
+  kind: record_content
+  reference: REVIEW_WORK/batch063/record02/grounding-inventory.json
+  accessed_at: '2026-10-28T10:25:09.518374Z'
+  support: context_only
+  summary: All recursive asserted identifier/label slots, exact current OLS objects
+    and current packaged MIM preferred-row joins.
+  snapshot_sha256: 0959f5ab700e41cc7cd4003fa57fab795a872829f63c736c7fcee6f61c183238
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch063/record02/history-and-evidence-inventory.json
+  accessed_at: '2026-10-28T10:25:09.518643Z'
+  support: context_only
+  summary: Complete current history, references and attached evidence; source-specific
+    claims are assessed without authenticating historical execution from code.
+  snapshot_sha256: afbb26de2a7b1eec339590e2b174346fa6e49133e35c233aceb1bad389622f11
+- evidence_id: scalars
+  kind: record_content
+  reference: REVIEW_WORK/batch063/record02/scalar-census.json
+  accessed_at: '2026-10-28T10:25:09.518667Z'
+  support: context_only
+  summary: Lossless scalar census of the selected target and all maintained contributors.
+  snapshot_sha256: 68d3b562a94cc2210730976a3260fbe0974f37662fdd4c49836d28e3c32f208f
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch063/record02/validate-schema.json
+  accessed_at: '2026-10-28T10:18:36.812423Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed
+
+    '
+  snapshot_sha256: afa772e907b1238b5d9b57cfda627d4b16970662f6b57195d9e027966057b5ae
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch063/record02/validate-strict.json
+  accessed_at: '2026-10-28T10:18:37.797880Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         REVIEW_WORK/batch063/record02/strict.tsv\n"
+  snapshot_sha256: 3d5d399938275a0dd47892d580e4dec51b89b5cca4d0215dd9c3f98e9522bb6b
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch063/record02/validate-terms.json
+  accessed_at: '2026-10-28T10:18:38.866253Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed
+
+    '
+  snapshot_sha256: 19c4882261d4e1b254b7db562ba519a86eaee58346fcf2dca22a67b6d8ab300e
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch063/record02/validate-references.json
+  accessed_at: '2026-10-28T10:18:39.585896Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed
+
+    '
+  snapshot_sha256: ee7415326e1a100e3b54d8e26b6eb11e8646aa61d62b7f68a357f5300e27d412
+assessments:
+- assessment_id: a1
+  area: identity
+  topic: Exact record and source identity
+  outcome: concern
+  summary: Two exact maintained contributors resolve generated lineage. DSM523 title
+    and current API agree with the DSM owner. The KOMODO523 mapping is explicit in
+    local notes and a historical captured row, but its current accession and catalogue
+    routes are inaccessible; no current catalogue authentication is claimed.
+  target_ids:
+  - CultureMech:005885
+  evidence_ids:
+  - local-target
+  - owner-1
+  - owner-2
+  - identity-search
+  - dsm523
+  - api523
+  - historical-reader
+  - komodo523
+- assessment_id: a2
+  area: completeness
+  topic: Preserve current owner credit and source stages
+  outcome: concern
+  summary: The DSM owner already retains all three preparation paragraphs and pH6.7–6.8;
+    those are lost from the generated target and absent from KOMODO. Both owners still
+    lack the mineral, clarified-rumen and haemin solution objects and doses. COMPLEX/UNDEFINED
+    and LIQUID fit the observed mixed formulation without proving growth.
+  target_ids:
+  - CultureMech:005885
+  evidence_ids:
+  - owner-2
+  - dsm523
+  - api523
+  - writer-mediadive
+  - writer-resolver
+  - writer-formulation
+- assessment_id: a3
+  area: quantity
+  topic: Quantity scope and inventory
+  outcome: concern
+  summary: Every selected target/owner concentration field has an explicit disposition;
+    scoped dependency fields and source-only preparation are separate from receiving-medium
+    rates.
+  target_ids:
+  - CultureMech:005885
+  evidence_ids:
+  - quantities
+  details: '[{"quantity_id": "q1", "topic": "K2HPO4 — provider main declaration",
+    "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523",
+    "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904",
+    "locator": "$.data.solutions[0].recipe[2]", "accessed_at": "2026-10-28T10:19:16.917116Z",
+    "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\":
+    0.3,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.3,\n                        \"mmol_l\": 1.7224,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 3, "compound":
+    "K2HPO4", "compound_id": 10, "amount": 0.3, "unit": "g", "g_l": 0.3, "mmol_l":
+    1.7224, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm523",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf",
+    "raw_path": "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91",
+    "locator": "PDF extracted line 5; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z",
+    "quote": "   K2HPO4                                                   0.30        g"}],
+    "decision": "evidence_only", "rationale": "Exact API main-solution g_l=0.3 supports
+    the stored provider-declared rate; primary batch amount and source form are retained.
+    This is not independent final-volume authentication and does not replace source
+    stock/preparation scope.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml",
+    "field_path": "ingredients[0].concentration", "stored_value": {"value": "0.3",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution
+    g_l=0.3 supports the stored provider-declared rate; primary batch amount and source
+    form are retained. This is not independent final-volume authentication and does
+    not replace source stock/preparation scope."}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml",
+    "field_path": "ingredients[0].concentration", "stored_value": {"value": "0.3",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution
+    g_l=0.3 supports the stored provider-declared rate; primary batch amount and source
+    form are retained. This is not independent final-volume authentication and does
+    not replace source stock/preparation scope."}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml",
+    "field_path": "ingredients[0].concentration", "stored_value": {"value": "0.3",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution
+    g_l=0.3 supports the stored provider-declared rate; primary batch amount and source
+    form are retained. This is not independent final-volume authentication and does
+    not replace source stock/preparation scope."}]}, {"quantity_id": "q2", "topic":
+    "Trypticase peptone — provider main declaration", "source": [{"evidence_id": "api523",
+    "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin",
+    "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904",
+    "locator": "$.data.solutions[0].recipe[3]", "accessed_at": "2026-10-28T10:19:16.917116Z",
+    "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"Trypticase peptone\",\n                        \"compound_id\": 124,\n                        \"attribute\":
+    \"BD BBL\",\n                        \"amount\": 2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 4, "compound":
+    "Trypticase peptone", "compound_id": 124, "attribute": "BD BBL", "amount": 2,
+    "unit": "g", "g_l": 2, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "dsm523", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf",
+    "raw_path": "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91",
+    "locator": "PDF extracted line 6; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z",
+    "quote": "   Trypticase peptone (BD BBL)                              2.00        g"}],
+    "decision": "evidence_only", "rationale": "Exact API main-solution g_l=2 supports
+    the stored provider-declared rate; primary batch amount and source form are retained.
+    This is not independent final-volume authentication and does not replace source
+    stock/preparation scope.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml",
+    "field_path": "ingredients[1].concentration", "stored_value": {"value": "2", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution
+    g_l=2 supports the stored provider-declared rate; primary batch amount and source
+    form are retained. This is not independent final-volume authentication and does
+    not replace source stock/preparation scope."}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml",
+    "field_path": "ingredients[1].concentration", "stored_value": {"value": "2", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution
+    g_l=2 supports the stored provider-declared rate; primary batch amount and source
+    form are retained. This is not independent final-volume authentication and does
+    not replace source stock/preparation scope."}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml",
+    "field_path": "ingredients[1].concentration", "stored_value": {"value": "2", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution
+    g_l=2 supports the stored provider-declared rate; primary batch amount and source
+    form are retained. This is not independent final-volume authentication and does
+    not replace source stock/preparation scope."}]}, {"quantity_id": "q3", "topic":
+    "Yeast extract — provider main declaration", "source": [{"evidence_id": "api523",
+    "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin",
+    "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904",
+    "locator": "$.data.solutions[0].recipe[4]", "accessed_at": "2026-10-28T10:19:16.917116Z",
+    "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"attribute\":
+    \"OXOID\",\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.5,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 5, "compound":
+    "Yeast extract", "compound_id": 16, "attribute": "OXOID", "amount": 0.5, "unit":
+    "g", "g_l": 0.5, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm523",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf",
+    "raw_path": "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91",
+    "locator": "PDF extracted line 7; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z",
+    "quote": "   Yeast extract (OXOID)                                    0.50        g"}],
+    "decision": "evidence_only", "rationale": "Exact API main-solution g_l=0.5 supports
+    the stored provider-declared rate; primary batch amount and source form are retained.
+    This is not independent final-volume authentication and does not replace source
+    stock/preparation scope.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml",
+    "field_path": "ingredients[2].concentration", "stored_value": {"value": "0.5",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution
+    g_l=0.5 supports the stored provider-declared rate; primary batch amount and source
+    form are retained. This is not independent final-volume authentication and does
+    not replace source stock/preparation scope."}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml",
+    "field_path": "ingredients[2].concentration", "stored_value": {"value": "0.5",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution
+    g_l=0.5 supports the stored provider-declared rate; primary batch amount and source
+    form are retained. This is not independent final-volume authentication and does
+    not replace source stock/preparation scope."}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml",
+    "field_path": "ingredients[2].concentration", "stored_value": {"value": "0.5",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution
+    g_l=0.5 supports the stored provider-declared rate; primary batch amount and source
+    form are retained. This is not independent final-volume authentication and does
+    not replace source stock/preparation scope."}]}, {"quantity_id": "q4", "topic":
+    "Sodium resazurin — provider main declaration", "source": [{"evidence_id": "api523",
+    "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin",
+    "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904",
+    "locator": "$.data.solutions[0].recipe[6]", "accessed_at": "2026-10-28T10:19:16.917116Z",
+    "quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\":
+    \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"ml\",\n                        \"g_l\": 0.0005,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 7, "compound":
+    "Sodium resazurin", "compound_id": 1852, "attribute": "0.1% w/v", "amount": 0.5,
+    "unit": "ml", "g_l": 0.0005, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "dsm523", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf",
+    "raw_path": "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91",
+    "locator": "PDF extracted line 9; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z",
+    "quote": "   Sodium resazurin (0.1% w/v)                              0.50       ml"}],
+    "decision": "evidence_only", "rationale": "Exact API main-solution g_l=0.0005
+    supports the stored provider-declared rate; primary batch amount and source form
+    are retained. This is not independent final-volume authentication and does not
+    replace source stock/preparation scope. The source specifies0.5 ml of0.1% w/v
+    sodium-resazurin stock; its salt identity remains a separate defect.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml", "field_path":
+    "ingredients[3].concentration", "stored_value": {"value": "0.0005", "unit": "G_PER_L"},
+    "decision": "evidence_only", "rationale": "Exact API main-solution g_l=0.0005
+    supports the stored provider-declared rate; primary batch amount and source form
+    are retained. This is not independent final-volume authentication and does not
+    replace source stock/preparation scope. The source specifies0.5 ml of0.1% w/v
+    sodium-resazurin stock; its salt identity remains a separate defect."}, {"path":
+    "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml",
+    "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.0005",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution
+    g_l=0.0005 supports the stored provider-declared rate; primary batch amount and
+    source form are retained. This is not independent final-volume authentication
+    and does not replace source stock/preparation scope. The source specifies0.5 ml
+    of0.1% w/v sodium-resazurin stock; its salt identity remains a separate defect."},
+    {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml",
+    "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.0005",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution
+    g_l=0.0005 supports the stored provider-declared rate; primary batch amount and
+    source form are retained. This is not independent final-volume authentication
+    and does not replace source stock/preparation scope. The source specifies0.5 ml
+    of0.1% w/v sodium-resazurin stock; its salt identity remains a separate defect."}]},
+    {"quantity_id": "q5", "topic": "Na2CO3 — provider main declaration", "source":
+    [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523",
+    "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904",
+    "locator": "$.data.solutions[0].recipe[7]", "accessed_at": "2026-10-28T10:19:16.917116Z",
+    "quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\":
+    4,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    4,\n                        \"mmol_l\": 37.7401,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 8, "compound":
+    "Na2CO3", "compound_id": 32, "amount": 4, "unit": "g", "g_l": 4, "mmol_l": 37.7401,
+    "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded
+    object independently equals exact JSON locator."}, {"evidence_id": "dsm523", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf", "raw_path":
+    "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91",
+    "locator": "PDF extracted line 10; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z",
+    "quote": "   Na2CO3                                                   4.00        g"}],
+    "decision": "evidence_only", "rationale": "Exact API main-solution g_l=4 supports
+    the stored provider-declared rate; primary batch amount and source form are retained.
+    This is not independent final-volume authentication and does not replace source
+    stock/preparation scope.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml",
+    "field_path": "ingredients[4].concentration", "stored_value": {"value": "4", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution
+    g_l=4 supports the stored provider-declared rate; primary batch amount and source
+    form are retained. This is not independent final-volume authentication and does
+    not replace source stock/preparation scope."}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml",
+    "field_path": "ingredients[4].concentration", "stored_value": {"value": "4", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution
+    g_l=4 supports the stored provider-declared rate; primary batch amount and source
+    form are retained. This is not independent final-volume authentication and does
+    not replace source stock/preparation scope."}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml",
+    "field_path": "ingredients[4].concentration", "stored_value": {"value": "4", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution
+    g_l=4 supports the stored provider-declared rate; primary batch amount and source
+    form are retained. This is not independent final-volume authentication and does
+    not replace source stock/preparation scope."}]}, {"quantity_id": "q6", "topic":
+    "Cellobiose — provider main declaration", "source": [{"evidence_id": "api523",
+    "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin",
+    "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904",
+    "locator": "$.data.solutions[0].recipe[8]", "accessed_at": "2026-10-28T10:19:16.917116Z",
+    "quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\":
+    \"Cellobiose\",\n                        \"compound_id\": 214,\n                        \"amount\":
+    5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    5,\n                        \"mmol_l\": 14.6071,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 9, "compound":
+    "Cellobiose", "compound_id": 214, "amount": 5, "unit": "g", "g_l": 5, "mmol_l":
+    14.6071, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm523",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf",
+    "raw_path": "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91",
+    "locator": "PDF extracted line 11; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z",
+    "quote": "   Cellobiose                                               5.00        g"}],
+    "decision": "evidence_only", "rationale": "Exact API main-solution g_l=5 supports
+    the stored provider-declared rate; primary batch amount and source form are retained.
+    This is not independent final-volume authentication and does not replace source
+    stock/preparation scope.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml",
+    "field_path": "ingredients[5].concentration", "stored_value": {"value": "5", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution
+    g_l=5 supports the stored provider-declared rate; primary batch amount and source
+    form are retained. This is not independent final-volume authentication and does
+    not replace source stock/preparation scope."}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml",
+    "field_path": "ingredients[5].concentration", "stored_value": {"value": "5", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution
+    g_l=5 supports the stored provider-declared rate; primary batch amount and source
+    form are retained. This is not independent final-volume authentication and does
+    not replace source stock/preparation scope."}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml",
+    "field_path": "ingredients[5].concentration", "stored_value": {"value": "5", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution
+    g_l=5 supports the stored provider-declared rate; primary batch amount and source
+    form are retained. This is not independent final-volume authentication and does
+    not replace source stock/preparation scope."}]}, {"quantity_id": "q7", "topic":
+    "L-Cysteine HCl x H2O — provider main declaration", "source": [{"evidence_id":
+    "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path":
+    "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904",
+    "locator": "$.data.solutions[0].recipe[9]", "accessed_at": "2026-10-28T10:19:16.917116Z",
+    "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\":
+    \"L-Cysteine HCl x H2O\",\n                        \"compound_id\": 770,\n                        \"amount\":
+    0.25,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.25,\n                        \"mmol_l\": 1.4234,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 10, "compound":
+    "L-Cysteine HCl x H2O", "compound_id": 770, "amount": 0.25, "unit": "g", "g_l":
+    0.25, "mmol_l": 1.4234, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "dsm523", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf",
+    "raw_path": "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91",
+    "locator": "PDF extracted line 12; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z",
+    "quote": "   L-Cysteine HCl x H2O                                     0.25        g"}],
+    "decision": "evidence_only", "rationale": "Exact API main-solution g_l=0.25 supports
+    the stored provider-declared rate; primary batch amount and source form are retained.
+    This is not independent final-volume authentication and does not replace source
+    stock/preparation scope.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml",
+    "field_path": "ingredients[6].concentration", "stored_value": {"value": "0.25",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution
+    g_l=0.25 supports the stored provider-declared rate; primary batch amount and
+    source form are retained. This is not independent final-volume authentication
+    and does not replace source stock/preparation scope."}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml",
+    "field_path": "ingredients[6].concentration", "stored_value": {"value": "0.25",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution
+    g_l=0.25 supports the stored provider-declared rate; primary batch amount and
+    source form are retained. This is not independent final-volume authentication
+    and does not replace source stock/preparation scope."}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml",
+    "field_path": "ingredients[6].concentration", "stored_value": {"value": "0.25",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution
+    g_l=0.25 supports the stored provider-declared rate; primary batch amount and
+    source form are retained. This is not independent final-volume authentication
+    and does not replace source stock/preparation scope."}]}, {"quantity_id": "q8",
+    "topic": "Na2S x 9 H2O — provider main declaration", "source": [{"evidence_id":
+    "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path":
+    "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904",
+    "locator": "$.data.solutions[0].recipe[10]", "accessed_at": "2026-10-28T10:19:16.917116Z",
+    "quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\":
+    \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\":
+    0.25,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.25,\n                        \"mmol_l\": 1.04088,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 11, "compound":
+    "Na2S x 9 H2O", "compound_id": 54, "amount": 0.25, "unit": "g", "g_l": 0.25, "mmol_l":
+    1.04088, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm523",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf",
+    "raw_path": "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91",
+    "locator": "PDF extracted line 13; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z",
+    "quote": "   Na2S x 9 H2O                                             0.25        g"}],
+    "decision": "evidence_only", "rationale": "Exact API main-solution g_l=0.25 supports
+    the stored provider-declared rate; primary batch amount and source form are retained.
+    This is not independent final-volume authentication and does not replace source
+    stock/preparation scope.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml",
+    "field_path": "ingredients[7].concentration", "stored_value": {"value": "0.25",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution
+    g_l=0.25 supports the stored provider-declared rate; primary batch amount and
+    source form are retained. This is not independent final-volume authentication
+    and does not replace source stock/preparation scope."}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml",
+    "field_path": "ingredients[7].concentration", "stored_value": {"value": "0.25",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution
+    g_l=0.25 supports the stored provider-declared rate; primary batch amount and
+    source form are retained. This is not independent final-volume authentication
+    and does not replace source stock/preparation scope."}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml",
+    "field_path": "ingredients[7].concentration", "stored_value": {"value": "0.25",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Exact API main-solution
+    g_l=0.25 supports the stored provider-declared rate; primary batch amount and
+    source form are retained. This is not independent final-volume authentication
+    and does not replace source stock/preparation scope."}]}, {"quantity_id": "q9",
+    "topic": "KH2PO4 — mineral stock", "source": [{"evidence_id": "api523", "reference":
+    "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin",
+    "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904",
+    "locator": "$.data.solutions[1].recipe[0]", "accessed_at": "2026-10-28T10:19:16.917116Z",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\":
+    6,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    6,\n                        \"mmol_l\": 44.0901,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 1, "compound":
+    "KH2PO4", "compound_id": 11, "amount": 6, "unit": "g", "g_l": 6, "mmol_l": 44.0901,
+    "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded
+    object independently equals exact JSON locator."}, {"evidence_id": "dsm523", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf", "raw_path":
+    "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91",
+    "locator": "PDF extracted line 28; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z",
+    "quote": "   KH2PO4                                                  6.00         g"}],
+    "decision": "conflict", "rationale": "The primary labels this as the mineral stock
+    from medium330; API g_l=6 is a stock concentration, not a direct main-medium rate.
+    Restore the stock and its separately quoted38 ml receiving amount; no automatic
+    final concentration is derived.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml",
+    "field_path": "ingredients[8].concentration", "stored_value": {"value": "6", "unit":
+    "G_PER_L"}, "decision": "conflict", "rationale": "The primary labels this as the
+    mineral stock from medium330; API g_l=6 is a stock concentration, not a direct
+    main-medium rate. Restore the stock and its separately quoted38 ml receiving amount;
+    no automatic final concentration is derived."}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml",
+    "field_path": "ingredients[8].concentration", "stored_value": {"value": "6", "unit":
+    "G_PER_L"}, "decision": "conflict", "rationale": "The primary labels this as the
+    mineral stock from medium330; API g_l=6 is a stock concentration, not a direct
+    main-medium rate. Restore the stock and its separately quoted38 ml receiving amount;
+    no automatic final concentration is derived."}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml",
+    "field_path": "ingredients[8].concentration", "stored_value": {"value": "6", "unit":
+    "G_PER_L"}, "decision": "conflict", "rationale": "The primary labels this as the
+    mineral stock from medium330; API g_l=6 is a stock concentration, not a direct
+    main-medium rate. Restore the stock and its separately quoted38 ml receiving amount;
+    no automatic final concentration is derived."}]}, {"quantity_id": "q10", "topic":
+    "NaCl — mineral stock", "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523",
+    "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904",
+    "locator": "$.data.solutions[1].recipe[1]", "accessed_at": "2026-10-28T10:19:16.917116Z",
+    "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\":
+    12,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    12,\n                        \"mmol_l\": 205.339,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 2, "compound":
+    "NaCl", "compound_id": 43, "amount": 12, "unit": "g", "g_l": 12, "mmol_l": 205.339,
+    "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded
+    object independently equals exact JSON locator."}, {"evidence_id": "dsm523", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf", "raw_path":
+    "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91",
+    "locator": "PDF extracted line 29; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z",
+    "quote": "   NaCl                                                   12.00         g"}],
+    "decision": "conflict", "rationale": "The primary labels this as the mineral stock
+    from medium330; API g_l=12 is a stock concentration, not a direct main-medium
+    rate. Restore the stock and its separately quoted38 ml receiving amount; no automatic
+    final concentration is derived.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml",
+    "field_path": "ingredients[9].concentration", "stored_value": {"value": "12",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The primary labels this
+    as the mineral stock from medium330; API g_l=12 is a stock concentration, not
+    a direct main-medium rate. Restore the stock and its separately quoted38 ml receiving
+    amount; no automatic final concentration is derived."}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml",
+    "field_path": "ingredients[9].concentration", "stored_value": {"value": "12",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The primary labels this
+    as the mineral stock from medium330; API g_l=12 is a stock concentration, not
+    a direct main-medium rate. Restore the stock and its separately quoted38 ml receiving
+    amount; no automatic final concentration is derived."}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml",
+    "field_path": "ingredients[9].concentration", "stored_value": {"value": "12",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The primary labels this
+    as the mineral stock from medium330; API g_l=12 is a stock concentration, not
+    a direct main-medium rate. Restore the stock and its separately quoted38 ml receiving
+    amount; no automatic final concentration is derived."}]}, {"quantity_id": "q11",
+    "topic": "(NH4)2SO4 — mineral stock", "source": [{"evidence_id": "api523", "reference":
+    "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin",
+    "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904",
+    "locator": "$.data.solutions[1].recipe[2]", "accessed_at": "2026-10-28T10:19:16.917116Z",
+    "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\":
+    6,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    6,\n                        \"mmol_l\": 45.4064,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 3, "compound":
+    "(NH4)2SO4", "compound_id": 27, "amount": 6, "unit": "g", "g_l": 6, "mmol_l":
+    45.4064, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm523",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf",
+    "raw_path": "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91",
+    "locator": "PDF extracted line 30; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z",
+    "quote": "   (NH4)2SO4                                               6.00         g"}],
+    "decision": "conflict", "rationale": "The primary labels this as the mineral stock
+    from medium330; API g_l=6 is a stock concentration, not a direct main-medium rate.
+    Restore the stock and its separately quoted38 ml receiving amount; no automatic
+    final concentration is derived.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml",
+    "field_path": "ingredients[10].concentration", "stored_value": {"value": "6",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The primary labels this
+    as the mineral stock from medium330; API g_l=6 is a stock concentration, not a
+    direct main-medium rate. Restore the stock and its separately quoted38 ml receiving
+    amount; no automatic final concentration is derived."}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml",
+    "field_path": "ingredients[10].concentration", "stored_value": {"value": "6",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The primary labels this
+    as the mineral stock from medium330; API g_l=6 is a stock concentration, not a
+    direct main-medium rate. Restore the stock and its separately quoted38 ml receiving
+    amount; no automatic final concentration is derived."}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml",
+    "field_path": "ingredients[10].concentration", "stored_value": {"value": "6",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The primary labels this
+    as the mineral stock from medium330; API g_l=6 is a stock concentration, not a
+    direct main-medium rate. Restore the stock and its separately quoted38 ml receiving
+    amount; no automatic final concentration is derived."}]}, {"quantity_id": "q12",
+    "topic": "CaCl2 x 2 H2O — mineral stock", "source": [{"evidence_id": "api523",
+    "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin",
+    "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904",
+    "locator": "$.data.solutions[1].recipe[3]", "accessed_at": "2026-10-28T10:19:16.917116Z",
+    "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\":
+    1.6,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    1.6,\n                        \"mmol_l\": 10.8832,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 4, "compound":
+    "CaCl2 x 2 H2O", "compound_id": 7, "amount": 1.6, "unit": "g", "g_l": 1.6, "mmol_l":
+    10.8832, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm523",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf",
+    "raw_path": "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91",
+    "locator": "PDF extracted line 31; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z",
+    "quote": "   CaCl2 x 2 H2O                                           1.60         g"}],
+    "decision": "conflict", "rationale": "The primary labels this as the mineral stock
+    from medium330; API g_l=1.6 is a stock concentration, not a direct main-medium
+    rate. Restore the stock and its separately quoted38 ml receiving amount; no automatic
+    final concentration is derived.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml",
+    "field_path": "ingredients[11].concentration", "stored_value": {"value": "1.6",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The primary labels this
+    as the mineral stock from medium330; API g_l=1.6 is a stock concentration, not
+    a direct main-medium rate. Restore the stock and its separately quoted38 ml receiving
+    amount; no automatic final concentration is derived."}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml",
+    "field_path": "ingredients[11].concentration", "stored_value": {"value": "1.6",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The primary labels this
+    as the mineral stock from medium330; API g_l=1.6 is a stock concentration, not
+    a direct main-medium rate. Restore the stock and its separately quoted38 ml receiving
+    amount; no automatic final concentration is derived."}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml",
+    "field_path": "ingredients[11].concentration", "stored_value": {"value": "1.6",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The primary labels this
+    as the mineral stock from medium330; API g_l=1.6 is a stock concentration, not
+    a direct main-medium rate. Restore the stock and its separately quoted38 ml receiving
+    amount; no automatic final concentration is derived."}]}, {"quantity_id": "q13",
+    "topic": "MgSO4 x 7 H2O — mineral stock", "source": [{"evidence_id": "api523",
+    "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin",
+    "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904",
+    "locator": "$.data.solutions[1].recipe[4]", "accessed_at": "2026-10-28T10:19:16.917116Z",
+    "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\":
+    2.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    2.5,\n                        \"mmol_l\": 10.143,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 5, "compound":
+    "MgSO4 x 7 H2O", "compound_id": 8, "amount": 2.5, "unit": "g", "g_l": 2.5, "mmol_l":
+    10.143, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm523",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf",
+    "raw_path": "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91",
+    "locator": "PDF extracted line 32; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z",
+    "quote": "   MgSO4 x 7 H2O                                           2.50         g"}],
+    "decision": "conflict", "rationale": "The primary labels this as the mineral stock
+    from medium330; API g_l=2.5 is a stock concentration, not a direct main-medium
+    rate. Restore the stock and its separately quoted38 ml receiving amount; no automatic
+    final concentration is derived.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml",
+    "field_path": "ingredients[12].concentration", "stored_value": {"value": "2.5",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The primary labels this
+    as the mineral stock from medium330; API g_l=2.5 is a stock concentration, not
+    a direct main-medium rate. Restore the stock and its separately quoted38 ml receiving
+    amount; no automatic final concentration is derived."}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml",
+    "field_path": "ingredients[12].concentration", "stored_value": {"value": "2.5",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The primary labels this
+    as the mineral stock from medium330; API g_l=2.5 is a stock concentration, not
+    a direct main-medium rate. Restore the stock and its separately quoted38 ml receiving
+    amount; no automatic final concentration is derived."}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml",
+    "field_path": "ingredients[12].concentration", "stored_value": {"value": "2.5",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The primary labels this
+    as the mineral stock from medium330; API g_l=2.5 is a stock concentration, not
+    a direct main-medium rate. Restore the stock and its separately quoted38 ml receiving
+    amount; no automatic final concentration is derived."}]}, {"quantity_id": "q14",
+    "topic": "Haemin stock versus main", "source": [{"evidence_id": "api523", "reference":
+    "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin",
+    "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904",
+    "locator": "$.data.solutions[3].recipe[0]", "accessed_at": "2026-10-28T10:19:16.917116Z",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"Haemin\",\n                        \"compound_id\": 149,\n                        \"amount\":
+    50,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.5,\n                        \"mmol_l\": 0.766989,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 1, "compound":
+    "Haemin", "compound_id": 149, "amount": 50, "unit": "mg", "g_l": 0.5, "mmol_l":
+    0.766989, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm523",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf",
+    "raw_path": "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91",
+    "locator": "PDF extracted line 46; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z",
+    "quote": "   Haemin                                                  50.00      mg"},
+    {"evidence_id": "dsm523", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf",
+    "raw_path": "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91",
+    "locator": "Exact visually checked PDF section", "accessed_at": "2026-10-28T10:19:17.235431Z",
+    "quote": "Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled
+    water and filter\nsterilize. Store refrigerated."}], "decision": "conflict", "rationale":
+    "50 mg made up to100 ml supports0.5 g/L in the haemin stock only. Its receiving
+    amount is2 ml; the direct main ingredient at stock strength is a placement error,
+    not an unsupported stock value.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml",
+    "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.5",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "50 mg made up to100
+    ml supports0.5 g/L in the haemin stock only. Its receiving amount is2 ml; the
+    direct main ingredient at stock strength is a placement error, not an unsupported
+    stock value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml",
+    "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.5",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "50 mg made up to100
+    ml supports0.5 g/L in the haemin stock only. Its receiving amount is2 ml; the
+    direct main ingredient at stock strength is a placement error, not an unsupported
+    stock value."}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml",
+    "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.5",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "50 mg made up to100
+    ml supports0.5 g/L in the haemin stock only. Its receiving amount is2 ml; the
+    direct main ingredient at stock strength is a placement error, not an unsupported
+    stock value."}]}, {"quantity_id": "q15", "topic": "NaOH input unit and stock stage",
+    "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523",
+    "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904",
+    "locator": "$.data.solutions[3].recipe[1]", "accessed_at": "2026-10-28T10:19:16.917116Z",
+    "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"NaOH\",\n                        \"compound_id\": 256,\n                        \"attribute\":
+    \"1 N\",\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "exact_decoded_object":
+    {"recipe_order": 2, "compound": "NaOH", "compound_id": 256, "attribute": "1 N",
+    "amount": 1, "unit": "ml", "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "dsm523", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf",
+    "raw_path": "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91",
+    "locator": "PDF extracted line 47; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z",
+    "quote": "   NaOH (1 N)                                               1.00      ml"},
+    {"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523",
+    "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904",
+    "locator": "$.data.solutions[3].steps[0]", "accessed_at": "2026-10-28T10:19:16.917116Z",
+    "quote": "{\n                        \"step\": \"Dissolve 50 mg haemin in 1 ml
+    1 N NaOH; make up to 100 ml with distilled water and filter sterilize. Store refrigerated.\"\n                    }",
+    "exact_decoded_object": {"step": "Dissolve 50 mg haemin in 1 ml 1 N NaOH; make
+    up to 100 ml with distilled water and filter sterilize. Store refrigerated."},
+    "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}], "decision": "correct", "rationale": "The source
+    is1 ml of1 N NaOH used in the100 ml haemin-stock preparation. The current direct1
+    g/L conflates volume/strength and preparation stage. Retain the source amount
+    and normality; no unverified mass or main-medium dilution is proposed.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml", "field_path":
+    "ingredients[14].concentration", "stored_value": {"value": "1", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "The source is1 ml of1 N NaOH used in the100
+    ml haemin-stock preparation. The current direct1 g/L conflates volume/strength
+    and preparation stage. Retain the source amount and normality; no unverified mass
+    or main-medium dilution is proposed."}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml",
+    "field_path": "ingredients[14].concentration", "stored_value": {"value": "1",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The source is1 ml of1
+    N NaOH used in the100 ml haemin-stock preparation. The current direct1 g/L conflates
+    volume/strength and preparation stage. Retain the source amount and normality;
+    no unverified mass or main-medium dilution is proposed."}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml",
+    "field_path": "ingredients[14].concentration", "stored_value": {"value": "1",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The source is1 ml of1
+    N NaOH used in the100 ml haemin-stock preparation. The current direct1 g/L conflates
+    volume/strength and preparation stage. Retain the source amount and normality;
+    no unverified mass or main-medium dilution is proposed."}]}, {"quantity_id": "q16",
+    "topic": "Mineral solution missing receiving stock", "source": [{"evidence_id":
+    "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path":
+    "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904",
+    "locator": "$.data.solutions[0].recipe[0]", "accessed_at": "2026-10-28T10:19:16.917116Z",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"solution\":
+    \"Mineral solution\",\n                        \"solution_id\": 607,\n                        \"amount\":
+    38,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 1, "solution":
+    "Mineral solution", "solution_id": 607, "amount": 38, "unit": "ml", "optional":
+    0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}, {"evidence_id": "dsm523", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf",
+    "raw_path": "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91",
+    "locator": "PDF extracted line 3; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z",
+    "quote": "   Mineral solution                                        38.00       ml"}],
+    "decision": "add", "rationale": "Create the missing source-specific solution descriptor
+    with its quoted batch addition and exact stock identity. The provider main-volume
+    declaration does not justify silently converting this into an independently established
+    final-medium dose.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Create the missing source-specific solution descriptor with its quoted batch
+    addition and exact stock identity. The provider main-volume declaration does not
+    justify silently converting this into an independently established final-medium
+    dose.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Create the missing source-specific solution descriptor with its quoted batch
+    addition and exact stock identity. The provider main-volume declaration does not
+    justify silently converting this into an independently established final-medium
+    dose.", "missing": true}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Create the missing source-specific solution descriptor with its quoted batch
+    addition and exact stock identity. The provider main-volume declaration does not
+    justify silently converting this into an independently established final-medium
+    dose.", "missing": true}]}, {"quantity_id": "q17", "topic": "Clarified rumen fluid
+    missing receiving stock", "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523",
+    "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904",
+    "locator": "$.data.solutions[0].recipe[1]", "accessed_at": "2026-10-28T10:19:16.917116Z",
+    "quote": "{\n                        \"recipe_order\": 2,\n                        \"solution\":
+    \"Clarified rumen fluid\",\n                        \"solution_id\": 2618,\n                        \"condition\":
+    \"\",\n                        \"amount\": 200,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "exact_decoded_object":
+    {"recipe_order": 2, "solution": "Clarified rumen fluid", "solution_id": 2618,
+    "condition": "", "amount": 200, "unit": "ml", "optional": 0}, "quote_basis": "Literal
+    UTF-8 raw-response substring; decoded object independently equals exact JSON locator."},
+    {"evidence_id": "dsm523", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf",
+    "raw_path": "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91",
+    "locator": "PDF extracted line 4; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z",
+    "quote": "   Clarified rumen fluid                                  200.00       ml"}],
+    "decision": "add", "rationale": "Create the missing source-specific solution descriptor
+    with its quoted batch addition and exact stock identity. The provider main-volume
+    declaration does not justify silently converting this into an independently established
+    final-medium dose.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Create the missing source-specific solution descriptor with its quoted batch
+    addition and exact stock identity. The provider main-volume declaration does not
+    justify silently converting this into an independently established final-medium
+    dose.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Create the missing source-specific solution descriptor with its quoted batch
+    addition and exact stock identity. The provider main-volume declaration does not
+    justify silently converting this into an independently established final-medium
+    dose.", "missing": true}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Create the missing source-specific solution descriptor with its quoted batch
+    addition and exact stock identity. The provider main-volume declaration does not
+    justify silently converting this into an independently established final-medium
+    dose.", "missing": true}]}, {"quantity_id": "q18", "topic": "Haemin solution missing
+    receiving stock", "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523",
+    "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904",
+    "locator": "$.data.solutions[0].recipe[5]", "accessed_at": "2026-10-28T10:19:16.917116Z",
+    "quote": "{\n                        \"recipe_order\": 6,\n                        \"solution\":
+    \"Haemin solution\",\n                        \"solution_id\": 124,\n                        \"attribute\":
+    \"0.05% w/v\",\n                        \"amount\": 2,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "exact_decoded_object":
+    {"recipe_order": 6, "solution": "Haemin solution", "solution_id": 124, "attribute":
+    "0.05% w/v", "amount": 2, "unit": "ml", "optional": 0}, "quote_basis": "Literal
+    UTF-8 raw-response substring; decoded object independently equals exact JSON locator."},
+    {"evidence_id": "dsm523", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium523.pdf",
+    "raw_path": "REVIEW_WORK/batch063/source02-04/dsm523.bin", "raw_sha256": "85d6990499699a92b12522835ecd027a8d86884dd1b45136e7458a95a8979f91",
+    "locator": "PDF extracted line 8; visually checked page", "accessed_at": "2026-10-28T10:19:17.235431Z",
+    "quote": "   Haemin solution (0.05% w/v)                              2.00       ml"}],
+    "decision": "add", "rationale": "Create the missing source-specific solution descriptor
+    with its quoted batch addition and exact stock identity. The provider main-volume
+    declaration does not justify silently converting this into an independently established
+    final-medium dose.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Create the missing source-specific solution descriptor with its quoted batch
+    addition and exact stock identity. The provider main-volume declaration does not
+    justify silently converting this into an independently established final-medium
+    dose.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Create the missing source-specific solution descriptor with its quoted batch
+    addition and exact stock identity. The provider main-volume declaration does not
+    justify silently converting this into an independently established final-medium
+    dose.", "missing": true}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Create the missing source-specific solution descriptor with its quoted batch
+    addition and exact stock identity. The provider main-volume declaration does not
+    justify silently converting this into an independently established final-medium
+    dose.", "missing": true}]}, {"quantity_id": "q19", "topic": "Water scope 0", "source":
+    [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523",
+    "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904",
+    "locator": "$.data.solutions[0].recipe[11]", "accessed_at": "2026-10-28T10:19:16.917116Z",
+    "quote": "{\n                        \"recipe_order\": 12,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    760,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 12, "compound":
+    "Distilled water", "compound_id": 4, "amount": 760, "unit": "ml", "optional":
+    0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}], "decision": "add", "rationale": "Source water input
+    belongs only to Main sol. 523. Preserve its amount in root evidence/preparation
+    and its own stage. Water volume alone is not a final-volume declaration.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml", "field_path":
+    "evidence", "stored_value": null, "decision": "add", "rationale": "Source water
+    input belongs only to Main sol. 523. Preserve its amount in root evidence/preparation
+    and its own stage. Water volume alone is not a final-volume declaration.", "missing":
+    true}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml",
+    "field_path": "evidence", "stored_value": null, "decision": "add", "rationale":
+    "Source water input belongs only to Main sol. 523. Preserve its amount in root
+    evidence/preparation and its own stage. Water volume alone is not a final-volume
+    declaration.", "missing": true}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml",
+    "field_path": "evidence", "stored_value": null, "decision": "add", "rationale":
+    "Source water input belongs only to Main sol. 523. Preserve its amount in root
+    evidence/preparation and its own stage. Water volume alone is not a final-volume
+    declaration.", "missing": true}]}, {"quantity_id": "q20", "topic": "Water scope
+    1", "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523",
+    "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904",
+    "locator": "$.data.solutions[1].recipe[5]", "accessed_at": "2026-10-28T10:19:16.917116Z",
+    "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    1000,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 6, "compound":
+    "Distilled water", "compound_id": 4, "amount": 1000, "unit": "ml", "optional":
+    0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}], "decision": "add", "rationale": "Source water input
+    belongs only to Mineral solution. Preserve its amount in root evidence/preparation
+    and its own stage. Water volume alone is not a final-volume declaration.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml", "field_path":
+    "evidence", "stored_value": null, "decision": "add", "rationale": "Source water
+    input belongs only to Mineral solution. Preserve its amount in root evidence/preparation
+    and its own stage. Water volume alone is not a final-volume declaration.", "missing":
+    true}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml",
+    "field_path": "evidence", "stored_value": null, "decision": "add", "rationale":
+    "Source water input belongs only to Mineral solution. Preserve its amount in root
+    evidence/preparation and its own stage. Water volume alone is not a final-volume
+    declaration.", "missing": true}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml",
+    "field_path": "evidence", "stored_value": null, "decision": "add", "rationale":
+    "Source water input belongs only to Mineral solution. Preserve its amount in root
+    evidence/preparation and its own stage. Water volume alone is not a final-volume
+    declaration.", "missing": true}]}, {"quantity_id": "q21", "topic": "Water scope
+    3", "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523",
+    "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904",
+    "locator": "$.data.solutions[3].recipe[2]", "accessed_at": "2026-10-28T10:19:16.917116Z",
+    "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    100,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 3, "compound":
+    "Distilled water", "compound_id": 4, "amount": 100, "unit": "ml", "optional":
+    0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}], "decision": "add", "rationale": "Source water input
+    belongs only to Haemin solution. Preserve its amount in root evidence/preparation
+    and its own stage. The separate haemin instruction explicitly makes up to100 ml.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml",
+    "field_path": "evidence", "stored_value": null, "decision": "add", "rationale":
+    "Source water input belongs only to Haemin solution. Preserve its amount in root
+    evidence/preparation and its own stage. The separate haemin instruction explicitly
+    makes up to100 ml.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml",
+    "field_path": "evidence", "stored_value": null, "decision": "add", "rationale":
+    "Source water input belongs only to Haemin solution. Preserve its amount in root
+    evidence/preparation and its own stage. The separate haemin instruction explicitly
+    makes up to100 ml.", "missing": true}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml",
+    "field_path": "evidence", "stored_value": null, "decision": "add", "rationale":
+    "Source water input belongs only to Haemin solution. Preserve its amount in root
+    evidence/preparation and its own stage. The separate haemin instruction explicitly
+    makes up to100 ml.", "missing": true}]}, {"quantity_id": "q22", "topic": "Main
+    preparation and late stocks", "source": [{"evidence_id": "api523", "reference":
+    "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin",
+    "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904",
+    "locator": "$.data.solutions[0].steps[0]", "accessed_at": "2026-10-28T10:19:16.917116Z",
+    "quote": "{\n                        \"step\": \"Dissolve ingredients (except
+    carbonate, cellobiose, cysteine and sulfide), bring medium to the boil, then cool
+    to room temperature under 100% CO2 gas atmosphere. Add the carbonate and equilibrate
+    the medium with the CO2 gas to pH 6.8. Distribute under CO2 gas atmosphere into
+    anoxic Hungate-type tubes or serum vials and autoclave. Add cellobiose, cysteine
+    and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Cellobiose
+    has to be sterilized by filtration. Adjust pH of complete medium to 6.7 - 6.8,
+    if necessary.\"\n                    }", "exact_decoded_object": {"step": "Dissolve
+    ingredients (except carbonate, cellobiose, cysteine and sulfide), bring medium
+    to the boil, then cool to room temperature under 100% CO2 gas atmosphere. Add
+    the carbonate and equilibrate the medium with the CO2 gas to pH 6.8. Distribute
+    under CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    Add cellobiose, cysteine and sulfide from sterile anoxic stock solutions prepared
+    under 100% N2 gas. Cellobiose has to be sterilized by filtration. Adjust pH of
+    complete medium to 6.7 - 6.8, if necessary."}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}], "decision":
+    "mixed", "rationale": "The DSM owner already retains the exact source instruction;
+    credit it and add claim-level root evidence. Generated/KOMODO preparation is missing.
+    Keep every number attached to this named stage; do not infer additional strengths,
+    temperatures or durations.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml",
+    "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale":
+    "The DSM owner already retains the exact source instruction; credit it and add
+    claim-level root evidence. Generated/KOMODO preparation is missing. Keep every
+    number attached to this named stage; do not infer additional strengths, temperatures
+    or durations.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml",
+    "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale":
+    "The DSM owner already retains the exact source instruction; credit it and add
+    claim-level root evidence. Generated/KOMODO preparation is missing. Keep every
+    number attached to this named stage; do not infer additional strengths, temperatures
+    or durations.", "missing": true}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml",
+    "field_path": "preparation_steps[0].description", "stored_value": "Dissolve ingredients
+    (except carbonate, cellobiose, cysteine and sulfide), bring medium to the boil,
+    then cool to room temperature under 100% CO2 gas atmosphere. Add the carbonate
+    and equilibrate the medium with the CO2 gas to pH 6.8. Distribute under CO2 gas
+    atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add cellobiose,
+    cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2
+    gas. Cellobiose has to be sterilized by filtration. Adjust pH of complete medium
+    to 6.7 - 6.8, if necessary.", "decision": "evidence_only", "rationale": "The DSM
+    owner already retains the exact source instruction; credit it and add claim-level
+    root evidence. Generated/KOMODO preparation is missing. Keep every number attached
+    to this named stage; do not infer additional strengths, temperatures or durations."}]},
+    {"quantity_id": "q23", "topic": "Clarified rumen preparation", "source": [{"evidence_id":
+    "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path":
+    "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904",
+    "locator": "$.data.solutions[2].steps[0]", "accessed_at": "2026-10-28T10:19:16.917116Z",
+    "quote": "{\n                        \"step\": \"Rumen fluid from cow or sheep
+    (obtained from fistulated animals or abattoir refuse) is filtered through muslin,
+    autoclaved at 121\\u00b0C for 15 min and then centrifuged at 27,000 g for 20 min.
+    The supernatant is made anoxic by sparging with 100% N2 gas for 15 min, dispensed
+    under same gas atmosphere into anoxic serum vials to 30% of volume and then stored
+    frozen at -20\\u00b0C.\"\n                    }", "exact_decoded_object": {"step":
+    "Rumen fluid from cow or sheep (obtained from fistulated animals or abattoir refuse)
+    is filtered through muslin, autoclaved at 121°C for 15 min and then centrifuged
+    at 27,000 g for 20 min. The supernatant is made anoxic by sparging with 100% N2
+    gas for 15 min, dispensed under same gas atmosphere into anoxic serum vials to
+    30% of volume and then stored frozen at -20°C."}, "quote_basis": "Literal UTF-8
+    raw-response substring; decoded object independently equals exact JSON locator."}],
+    "decision": "mixed", "rationale": "The DSM owner already retains the exact source
+    instruction; credit it and add claim-level root evidence. Generated/KOMODO preparation
+    is missing. Keep every number attached to this named stage; do not infer additional
+    strengths, temperatures or durations.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml",
+    "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale":
+    "The DSM owner already retains the exact source instruction; credit it and add
+    claim-level root evidence. Generated/KOMODO preparation is missing. Keep every
+    number attached to this named stage; do not infer additional strengths, temperatures
+    or durations.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml",
+    "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale":
+    "The DSM owner already retains the exact source instruction; credit it and add
+    claim-level root evidence. Generated/KOMODO preparation is missing. Keep every
+    number attached to this named stage; do not infer additional strengths, temperatures
+    or durations.", "missing": true}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml",
+    "field_path": "preparation_steps[1].description", "stored_value": "Rumen fluid
+    from cow or sheep (obtained from fistulated animals or abattoir refuse) is filtered
+    through muslin, autoclaved at 121°C for 15 min and then centrifuged at 27,000
+    g for 20 min. The supernatant is made anoxic by sparging with 100% N2 gas for
+    15 min, dispensed under same gas atmosphere into anoxic serum vials to 30% of
+    volume and then stored frozen at -20°C.", "decision": "evidence_only", "rationale":
+    "The DSM owner already retains the exact source instruction; credit it and add
+    claim-level root evidence. Generated/KOMODO preparation is missing. Keep every
+    number attached to this named stage; do not infer additional strengths, temperatures
+    or durations."}]}, {"quantity_id": "q24", "topic": "Haemin stock preparation",
+    "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523",
+    "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904",
+    "locator": "$.data.solutions[3].steps[0]", "accessed_at": "2026-10-28T10:19:16.917116Z",
+    "quote": "{\n                        \"step\": \"Dissolve 50 mg haemin in 1 ml
+    1 N NaOH; make up to 100 ml with distilled water and filter sterilize. Store refrigerated.\"\n                    }",
+    "exact_decoded_object": {"step": "Dissolve 50 mg haemin in 1 ml 1 N NaOH; make
+    up to 100 ml with distilled water and filter sterilize. Store refrigerated."},
+    "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}], "decision": "mixed", "rationale": "The DSM owner
+    already retains the exact source instruction; credit it and add claim-level root
+    evidence. Generated/KOMODO preparation is missing. Keep every number attached
+    to this named stage; do not infer additional strengths, temperatures or durations.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml",
+    "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale":
+    "The DSM owner already retains the exact source instruction; credit it and add
+    claim-level root evidence. Generated/KOMODO preparation is missing. Keep every
+    number attached to this named stage; do not infer additional strengths, temperatures
+    or durations.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml",
+    "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale":
+    "The DSM owner already retains the exact source instruction; credit it and add
+    claim-level root evidence. Generated/KOMODO preparation is missing. Keep every
+    number attached to this named stage; do not infer additional strengths, temperatures
+    or durations.", "missing": true}, {"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml",
+    "field_path": "preparation_steps[2].description", "stored_value": "Dissolve 50
+    mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled water and filter
+    sterilize. Store refrigerated.", "decision": "evidence_only", "rationale": "The
+    DSM owner already retains the exact source instruction; credit it and add claim-level
+    root evidence. Generated/KOMODO preparation is missing. Keep every number attached
+    to this named stage; do not infer additional strengths, temperatures or durations."}]},
+    {"quantity_id": "q25", "topic": "ph_range.min", "source": [{"evidence_id": "api523",
+    "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin",
+    "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904",
+    "locator": "$.data.solutions[0].steps[0]", "accessed_at": "2026-10-28T10:19:16.917116Z",
+    "quote": "{\n                        \"step\": \"Dissolve ingredients (except
+    carbonate, cellobiose, cysteine and sulfide), bring medium to the boil, then cool
+    to room temperature under 100% CO2 gas atmosphere. Add the carbonate and equilibrate
+    the medium with the CO2 gas to pH 6.8. Distribute under CO2 gas atmosphere into
+    anoxic Hungate-type tubes or serum vials and autoclave. Add cellobiose, cysteine
+    and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Cellobiose
+    has to be sterilized by filtration. Adjust pH of complete medium to 6.7 - 6.8,
+    if necessary.\"\n                    }", "exact_decoded_object": {"step": "Dissolve
+    ingredients (except carbonate, cellobiose, cysteine and sulfide), bring medium
+    to the boil, then cool to room temperature under 100% CO2 gas atmosphere. Add
+    the carbonate and equilibrate the medium with the CO2 gas to pH 6.8. Distribute
+    under CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    Add cellobiose, cysteine and sulfide from sterile anoxic stock solutions prepared
+    under 100% N2 gas. Cellobiose has to be sterilized by filtration. Adjust pH of
+    complete medium to 6.7 - 6.8, if necessary."}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}], "decision":
+    "mixed", "rationale": "The current DSM owner range6.7–6.8 matches the complete-medium
+    instruction; generated/KOMODO lack the range. Initial carbonate equilibration
+    at6.8 is a distinct stage.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml",
+    "field_path": "ph_range.min", "stored_value": 6.7, "decision": "evidence_only",
+    "rationale": "The current DSM owner range6.7–6.8 matches the complete-medium instruction;
+    generated/KOMODO lack the range. Initial carbonate equilibration at6.8 is a distinct
+    stage."}, {"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml",
+    "field_path": "ph_range", "stored_value": null, "decision": "add", "rationale":
+    "The current DSM owner range6.7–6.8 matches the complete-medium instruction; generated/KOMODO
+    lack the range. Initial carbonate equilibration at6.8 is a distinct stage.", "missing":
+    true}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml",
+    "field_path": "ph_range", "stored_value": null, "decision": "add", "rationale":
+    "The current DSM owner range6.7–6.8 matches the complete-medium instruction; generated/KOMODO
+    lack the range. Initial carbonate equilibration at6.8 is a distinct stage.", "missing":
+    true}]}, {"quantity_id": "q26", "topic": "ph_range.max", "source": [{"evidence_id":
+    "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path":
+    "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904",
+    "locator": "$.data.solutions[0].steps[0]", "accessed_at": "2026-10-28T10:19:16.917116Z",
+    "quote": "{\n                        \"step\": \"Dissolve ingredients (except
+    carbonate, cellobiose, cysteine and sulfide), bring medium to the boil, then cool
+    to room temperature under 100% CO2 gas atmosphere. Add the carbonate and equilibrate
+    the medium with the CO2 gas to pH 6.8. Distribute under CO2 gas atmosphere into
+    anoxic Hungate-type tubes or serum vials and autoclave. Add cellobiose, cysteine
+    and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Cellobiose
+    has to be sterilized by filtration. Adjust pH of complete medium to 6.7 - 6.8,
+    if necessary.\"\n                    }", "exact_decoded_object": {"step": "Dissolve
+    ingredients (except carbonate, cellobiose, cysteine and sulfide), bring medium
+    to the boil, then cool to room temperature under 100% CO2 gas atmosphere. Add
+    the carbonate and equilibrate the medium with the CO2 gas to pH 6.8. Distribute
+    under CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    Add cellobiose, cysteine and sulfide from sterile anoxic stock solutions prepared
+    under 100% N2 gas. Cellobiose has to be sterilized by filtration. Adjust pH of
+    complete medium to 6.7 - 6.8, if necessary."}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}], "decision":
+    "mixed", "rationale": "The current DSM owner range6.7–6.8 matches the complete-medium
+    instruction; generated/KOMODO lack the range. Initial carbonate equilibration
+    at6.8 is a distinct stage.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml",
+    "field_path": "ph_range.max", "stored_value": 6.8, "decision": "evidence_only",
+    "rationale": "The current DSM owner range6.7–6.8 matches the complete-medium instruction;
+    generated/KOMODO lack the range. Initial carbonate equilibration at6.8 is a distinct
+    stage."}, {"path": "data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml",
+    "field_path": "ph_range", "stored_value": null, "decision": "add", "rationale":
+    "The current DSM owner range6.7–6.8 matches the complete-medium instruction; generated/KOMODO
+    lack the range. Initial carbonate equilibration at6.8 is a distinct stage.", "missing":
+    true}, {"path": "data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml",
+    "field_path": "ph_range", "stored_value": null, "decision": "add", "rationale":
+    "The current DSM owner range6.7–6.8 matches the complete-medium instruction; generated/KOMODO
+    lack the range. Initial carbonate equilibration at6.8 is a distinct stage.", "missing":
+    true}]}, {"quantity_id": "q27", "topic": "Unquantified late stock strengths and
+    normalization boundary", "source": [{"evidence_id": "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523",
+    "raw_path": "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904",
+    "locator": "$.data.solutions[0].steps[0]", "accessed_at": "2026-10-28T10:19:16.917116Z",
+    "quote": "{\n                        \"step\": \"Dissolve ingredients (except
+    carbonate, cellobiose, cysteine and sulfide), bring medium to the boil, then cool
+    to room temperature under 100% CO2 gas atmosphere. Add the carbonate and equilibrate
+    the medium with the CO2 gas to pH 6.8. Distribute under CO2 gas atmosphere into
+    anoxic Hungate-type tubes or serum vials and autoclave. Add cellobiose, cysteine
+    and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Cellobiose
+    has to be sterilized by filtration. Adjust pH of complete medium to 6.7 - 6.8,
+    if necessary.\"\n                    }", "exact_decoded_object": {"step": "Dissolve
+    ingredients (except carbonate, cellobiose, cysteine and sulfide), bring medium
+    to the boil, then cool to room temperature under 100% CO2 gas atmosphere. Add
+    the carbonate and equilibrate the medium with the CO2 gas to pH 6.8. Distribute
+    under CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    Add cellobiose, cysteine and sulfide from sterile anoxic stock solutions prepared
+    under 100% N2 gas. Cellobiose has to be sterilized by filtration. Adjust pH of
+    complete medium to 6.7 - 6.8, if necessary."}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "api523", "reference": "https://mediadive.dsmz.de/rest/medium/523", "raw_path":
+    "REVIEW_WORK/batch063/source02-04/api523.bin", "raw_sha256": "794dbc820cff6a4b0055ebfb1e290c294a76a7d8e17031eceed43ec160c88904",
+    "locator": "$.data.solutions[0].recipe[11]", "accessed_at": "2026-10-28T10:19:16.917116Z",
+    "quote": "{\n                        \"recipe_order\": 12,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    760,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 12, "compound":
+    "Distilled water", "compound_id": 4, "amount": 760, "unit": "ml", "optional":
+    0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}], "decision": "not_quantified", "rationale": "Cellobiose,
+    cysteine and sulfide stock strengths and their added volumes are not stated; preserve
+    their quoted batch solute amounts. API volume1000 ml coexists with main listed
+    liquid additions totaling1000.5 ml before unspecified late stocks. Do not infer
+    a measured final volume or a complete-medium stock dilution.", "layer_assessments":
+    []}]'
+- assessment_id: a4
+  area: grounding
+  topic: Current ontology and MIM correspondence
+  outcome: concern
+  summary: All asserted chemical identifiers resolve and label correspondence is retained.
+    Sodium resazurin nevertheless points to neutral8806; mixtures such as trypticase
+    and yeast remain ungrounded, without fabricated replacements. Current MIM exact
+    and ontology-linked preferred rows and all synonym rows are preserved as present
+    catalog facts, not old-event authentication.
+  target_ids:
+  - CultureMech:005885
+  evidence_ids:
+  - grounding
+- assessment_id: a5
+  area: provenance
+  topic: History and evidence scope
+  outcome: concern
+  summary: Current source bytes, complete histories and scoped historical reports
+    were read. Missing claim-level linkage and any malformed historical metadata are
+    distinguished from authenticated source bytes; originals remain append-only.
+  target_ids:
+  - CultureMech:005885
+  evidence_ids:
+  - history
+  - scalars
+- assessment_id: a6
+  area: scope
+  topic: Growth and taxonomic evidence
+  outcome: unknown
+  summary: Generic cultivation applications and bacterial filing are not strain-level
+    growth evidence. No organism-specific growth, temperature or atmosphere is inferred
+    from names or source catalog identifiers.
+  target_ids:
+  - CultureMech:005885
+  evidence_ids:
+  - local-target
+- assessment_id: a7
+  area: schema
+  topic: Canonical diagnostics
+  outcome: supported
+  summary: All four original canonical diagnostics passed. Reference checks were zero;
+    structural and term diagnostics do not establish formulation accuracy.
+  target_ids:
+  - CultureMech:005885
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: culturemech-005885-restore-the-mineral-and-haemin-stock-structure
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Restore the mineral and haemin stock structure
+  description: Five mineral constituents and haemin appear directly at stock strength;
+    the mineral38 ml, clarified rumen fluid200 ml and haemin2 ml additions are absent.
+    NaOH is specifically1 ml of1 N solution within haemin preparation, not the stored1
+    g/L main ingredient. Keep supported provider main values and explicit stock amounts
+    separate; preserve the primary final-volume uncertainty.
+  target_ids:
+  - CultureMech:005885
+  field_paths:
+  - ingredients[8]
+  - ingredients[9]
+  - ingredients[10]
+  - ingredients[11]
+  - ingredients[12]
+  - ingredients[13]
+  - ingredients[14]
+  - solutions
+  evidence_ids:
+  - dsm523
+  - api523
+  - quantities
+  - writer-mediadive
+  rule_id: custom-source-stock-stage-and-unit
+  native_severity: P2
+  normalization_reason: 'Major: direct medium composition contains stock concentrations
+    and a volume/strength-to-mass substitution; this generalizes quantitative interpretation
+    beyond the native P2.3 physical-state example.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f2
+  issue_key: culturemech-005885-retain-the-dsm-owner-preparation-and-ph-range
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Retain the DSM owner preparation and pH range
+  description: The DSM owner already holds full main, rumen and haemin preparation
+    plus pH6.7–6.8. Generated and KOMODO records omit them. Current resolver copies
+    ph_value but not ph_range or preparation, while the present merger rejects unequal
+    formulations; current code is context, not proof of the historic loss.
+  target_ids:
+  - CultureMech:005885
+  field_paths:
+  - preparation_steps
+  - ph_range
+  evidence_ids:
+  - owner-2
+  - dsm523
+  - writer-resolver
+  - writer-formulation
+  rule_id: custom-preparation-and-generated-retention
+  native_severity: P3
+  normalization_reason: Normalized major from the P3.4 preparation-omission class
+    because the complete source preparation and stock-stage boundaries are absent
+    from the generated record; the existing owner information must remain credited.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f3
+  issue_key: culturemech-005885-resolve-sodium-resazurin-supplied-form
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Resolve sodium resazurin supplied form
+  description: The primary explicitly uses sodium resazurin while valid CHEBI8806
+    represents neutral Resazurin with formulaC12H7NO4 and no sodium. Its exact current
+    MIM synonym mapping does not establish the source salt identity. Existing other
+    CHEBI labels and hydrate forms were checked; mixtures lacking ontology terms remain
+    unresolved rather than guessed.
+  target_ids:
+  - CultureMech:005885
+  field_paths:
+  - ingredients[3].term
+  evidence_ids:
+  - dsm523
+  - api523
+  - chebi8806
+  - grounding
+  rule_id: custom-supplied-form-grounding
+  native_severity: P2
+  normalization_reason: 'Major: a valid identifier denotes a different supplied chemical
+    form; native P2.2 invalid-ID wording would be inaccurate.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f4
+  issue_key: culturemech-005885-preserve-and-qualify-historical-event-metadata
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Preserve and qualify historical event metadata
+  description: KOMODO import events contain a literal .fZ timestamp and resolver events
+    omit a UTC offset. Historical concentration reports preserve unresolved claims
+    and exact source mappings, but are not independent proof of those historical retrieval
+    events. The current API response matches the historical source digest and literal
+    objects, but no corresponding current KOMODO catalogue body was recovered.
+  target_ids:
+  - CultureMech:005885
+  field_paths:
+  - data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml::curation_history[0].timestamp
+  - data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml::curation_history[0].timestamp
+  - data/merge_yaml/merged/CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml::curation_history[1].timestamp
+  - data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml::curation_history[1].timestamp
+  evidence_ids:
+  - history
+  - historical-reader
+  - writer-komodo
+  rule_id: custom-event-metadata-provenance
+  native_severity: P3
+  normalization_reason: 'Minor: malformed or timezone-unspecified historical event
+    metadata limits auditability without changing any recipe quantity; native P4.4
+    only covers a one-event history and is not invoked.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+actions:
+- action_id: action1
+  description: Represent the three source stocks and receiving amounts in maintained
+    owners, move stock components to their correct scope, and replace the NaOH unit/stage
+    claim with exact source evidence. Preserve main provider declarations with their
+    normalization limits; regenerate only compatible formulations.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:005885
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action2
+  description: Credit and retain the DSM instructions, add exact root evidence, and
+    reconcile the KOMODO contributor before regeneration. Keep rumen-processing quantities
+    and haemin stock preparation scoped; do not replace known information with invented
+    defaults.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:005885
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action3
+  description: Resolve the exact sodium-salt identifier and canonical label from an
+    authority, preserve the supported provider amount and0.1% w/v stock scope, and
+    record the primary provenance. Do not transfer neutral-resazurin molecular-weight
+    assumptions.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:005885
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action4
+  description: Retain every original event byte-for-byte. If authoritative provenance
+    is recovered, append a verified correction or context event; never invent or overwrite
+    its timestamp. Link fresh source evidence separately and preserve unresolved accession
+    limitations.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:005885
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/clostridium_chartatabidum_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+limitations:
+- The exact KOMODO523 accession and catalogue requests returned403, so source identity
+  authentication is partial; historical captured rows remain explicitly derivative.
+- DSM523 does not explicitly state the final main/mineral volume. Provider g_l values
+  are scoped declarations; no measured-volume or missing-stock dilution is inferred.
+- Rumen fluid is undefined; no chemical composition or strain-level growth is inferred.
+  Late cellobiose/cysteine/sulfide stock strengths and addition volumes are unquantified.
+- The haemin/mineral/rumen subsections embedded in DSM523 are reviewed in that receiving-medium
+  scope; other formulations in media78/330/1310 are not transferred.
+- No authoritative sodium-resazurin replacement identifier is guessed. Source names
+  and generic applications do not establish a species or strain growth claim.
+notes:
+- Fresh review; historical lost snapshots were not reconstructed. All inspected source
+  files remain unchanged.
+- No formal review validation/save, Git mutation or publication was performed by this
+  author.
+```

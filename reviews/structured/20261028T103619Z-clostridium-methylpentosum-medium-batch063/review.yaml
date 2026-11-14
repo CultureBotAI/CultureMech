@@ -1,0 +1,2186 @@
+schema_version: 1.0.0
+review_id: 20261028T103619Z-clostridium-methylpentosum-medium-batch063
+kind: record
+repository: CultureBotAI/CultureMech
+title: Scientific review of clostridium_methylpentosum_medium
+started_at: '2026-10-28T10:19:05.757391Z'
+finished_at: '2026-10-28T10:36:19.060251Z'
+reviewer:
+  identity: Codex independent record reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Fresh review of existing unchanged repository records; this
+    reviewer did not author or curate the selected target/owners. Historical reports
+    were independently reassessed against current exact sources.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: DSM 492 defines five separately prepared solutions, but target and maintained
+  KOMODO owner flatten their stock rates and omit assembly doses, preparation and
+  carrier-acid details. The aerobic annotation and two supplied-form mappings conflict
+  with the primary; existingfinalpH6.8 and unquantified KOH receive bounded credit.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml
+    sha256: 49110481b4f2bf3535274db744c85c0671b34f559a438a8f519a9f58fd68f04b
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml
+    sha256: 5b1fe4b6efeb63f1cf9d477b05feda182df31e02374d4804a492ebcfa5493149
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-1500-2000/records/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml.md
+    sha256: 6178647616085990c8c36686a800c90035d9460c8a7c5a185a03026334123354
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.md
+    sha256: 290355afedb0cf7b877a579b48c26309cc4b6a7f53281affabf597bfc31a7670
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.md
+    sha256: 3eb268179c5b582c140133c7bffb722705baa6833beaa7b9e89156da4d7461bb
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_mgso4_heptahydrate_term.py
+    sha256: 6acb9d5164ad381c288f031fb34045036e3fd2283e559f1ad8ccd1a4687fb4ce
+    role: context
+  - path: scripts/resolve_komodo_compositions.py
+    sha256: f45bc52a8efaa66c9a93c109a40c7d2763ac9f49c9009d92a4c0a0a41b7c28da
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+scope:
+  description: Full selected target and maintained owners, every quantity and unchanged
+    claim; separately scoped source dependencies and current writers.
+  selection: Authoritative batch063 selection index 7 at base 9ea7ff33d354e37b791df96a880005153e446ce3.
+    Fresh review, not reconstruction of lost historical bundles.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:005620
+targets:
+- target_id: CultureMech:005620
+  path: data/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml
+  label: clostridium_methylpentosum_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:005620
+  command: just validate-schema data/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:005620
+  command: just validate-strict data/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml
+    --workers 1 --out REVIEW_WORK/batch063/record07/strict.tsv
+  exit_code: 0
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:005620
+  command: just validate-terms data/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Zero reference checks.
+  target_ids:
+  - CultureMech:005620
+  command: just validate-references data/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-references
+evidence:
+- evidence_id: local0
+  kind: record_content
+  reference: data/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T10:36:19.032117Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: 49110481b4f2bf3535274db744c85c0671b34f559a438a8f519a9f58fd68f04b
+- evidence_id: local1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T10:36:19.032273Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: 5b1fe4b6efeb63f1cf9d477b05feda182df31e02374d4804a492ebcfa5493149
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch063/record07/validate-schema-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T10:19:06.832664Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: 60e6ee32a758a93aa086177856a4653331c581372617a0f8eb36450ed7613a5b
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch063/record07/validate-strict-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T10:19:07.817042Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Strict
+    TSV is header-only.
+  snapshot_sha256: 21ad7c606a392899c80c7672becda00a7385321bf0238d2d6cc456431f07896f
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch063/record07/validate-terms-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T10:19:08.901460Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: 3af5f065c615dcac04560c13923a6f7da327ef6be7303e5c09e0ed9c29348464
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch063/record07/validate-references-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T10:19:09.655356Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Zero
+    references checked, not scientific source verification.
+  snapshot_sha256: 465db5d13040e61c298985c5871da7e3e812d1927e4875841bb89cbbd8d573f3
+- evidence_id: dsmz492
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium492.pdf
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T10:19:30.745138Z'
+  support: supports
+  summary: 'Complete current primary captured text and available rendered PDF pages
+    read: exact main recipe, separate stock tables, preparation and any strain-specific
+    prescriptions. A source formulation is distinct from experimental growth evidence.'
+  snapshot_sha256: 655e7cc7c47bc0c6e06909b29d0be8343a932b68fca986ca64c54debc601b84a
+- evidence_id: api492
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/492
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T10:19:30.721778Z'
+  support: supports
+  summary: Complete current MediaDive API identity, primary recipe, separate stock
+    recipes and preparation read. Explicit g_l values are provider normalization;
+    solution volume metadata and listed water do not establish a measured final medium
+    volume. Supplied mass/form takes priority over unverified mmol_l conversions.
+  snapshot_sha256: 908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935
+- evidence_id: komodo492
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=492
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T10:19:30.706976Z'
+  support: unknown
+  summary: 'Actual retrieval HTTP 403, error <HTTPError 403: ''Forbidden''>. This
+    response does not authenticate a recipe.'
+  snapshot_sha256: 0282a50bc3374e99d3a8f1f1be1b207981911de4e1afc64b180f6325d2d98e00
+- evidence_id: chebi15940
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T10:19:30.689442Z'
+  support: supports
+  summary: OLS current exact CHEBI:15940 = nicotinic acid; definition ['A pyridinemonocarboxylic
+    acid that is pyridine in which the hydrogen at position 3 is replaced by a carboxy
+    group.']; formula ['C6H5NO2']; mass ['123.111']; obsolete=False. Literal label
+    is distinct from supplied-form equivalence.
+  snapshot_sha256: 3330ed782e73526a087fb250ed5895ff232f117a896d45d541dff431e5c1f0e1
+- evidence_id: chebi15956
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T10:19:30.141987Z'
+  support: supports
+  summary: OLS current exact CHEBI:15956 = biotin; definition ['An organic heterobicyclic
+    compound that consists of 2-oxohexahydro-1<em>H</em>-thieno[3,4-<em>d</em>]imidazole
+    having a valeric acid substituent attached to the tetrahydrothiophene ring. The
+    parent of the class of biotins.']; formula ['C10H16N2O3S']; mass ['244.316'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: d2d51887df4de92642b66e9d15086ef82eccbc476dd4077d514ca709181ab4bd
+- evidence_id: chebi16494
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T10:19:30.123858Z'
+  support: supports
+  summary: OLS current exact CHEBI:16494 = lipoic acid; definition ['A heterocyclic
+    thia fatty acid comprising pentanoic acid with a 1,2-dithiolan-3-yl group at the
+    5-position.']; formula ['C8H14O2S2']; mass ['206.332']; obsolete=False. Literal
+    label is distinct from supplied-form equivalence.
+  snapshot_sha256: aa3c1003d6266cc48f19a4d1d9527edd6844b96094a911e9a3c4f6a8851444e1
+- evidence_id: chebi17015
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T10:19:30.096183Z'
+  support: supports
+  summary: OLS current exact CHEBI:17015 = riboflavin; definition ['<small>D</small>-Ribitol
+    in which the hydroxy group at position 5 is substituted by a 7,8-dimethyl-2,4-dioxo-3,4-dihydrobenzo[<em>g</em>]pteridin-10(2<em>H</em>)-yl
+    moiety. It is a nutritional factor found in milk, eggs, malted barley, liver,
+    kidney, heart, and leafy vegetables, but the richest natural source is yeast.
+    The free form occurs only in the retina of the eye, in whey, and in urine; its
+    principal forms in tissues and cells are as flavin mononucleotide and flavin-adenine
+    dinucleotide.']; formula ['C17H20N4O6']; mass ['376.369']; obsolete=False. Literal
+    label is distinct from supplied-form equivalence.
+  snapshot_sha256: f42bc5bbd29b208bfd3062acb11dfa63ccebf81f77ffd72ab596de863cb68aa4
+- evidence_id: chebi176843
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T10:19:30.086070Z'
+  support: supports
+  summary: OLS current exact CHEBI:176843 = vitamin B12; definition ['Any member of
+    a group of cobalamin vitamers that exhibit biological activity against vitamin
+    B<small><sub>12</sub></small> deficiency. Vitamin B<small><sub>12</sub></small>
+    deficiency is associated with low red blood cell count and anemia. The vitamers
+    are found in foods such as cereals, meat, fish, and poultry. The vitamers include
+    adenosylcobalamin, hydroxocobalamin, cyanocobalamin, aquacobalamin, nitritocobalamin
+    and methylcobabalamin (also includes their ionized, salt and phosphate derivatives).'];
+    formula None; mass None; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: b535c3de88f47e93aed8909c58ff4e2d054a6845dea3bc9a048c18df12b371a9
+- evidence_id: chebi23414
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_23414
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T10:19:30.085156Z'
+  support: supports
+  summary: OLS current exact CHEBI:23414 = copper(II) sulfate; definition ['A metal
+    sulfate compound having copper(2+) as the metal ion.']; formula ['Cu.O4S']; mass
+    ['159.609']; obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 7f9d81f59ca2cbe7614d7e0dd3f85cb578000bf273b1b93968e74054e475fee1
+- evidence_id: chebi26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T10:19:30.066279Z'
+  support: supports
+  summary: OLS current exact CHEBI:26710 = sodium chloride; definition ['An inorganic
+    chloride salt having sodium(1+) as the counterion.']; formula ['Cl.Na']; mass
+    ['58.443']; obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi27470
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T10:19:29.493185Z'
+  support: supports
+  summary: OLS current exact CHEBI:27470 = folic acid; definition ['An <em>N</em>-acyl-amino
+    acid that is a form of the water-soluble vitamin B<small><sub>9</sub></small>.
+    Its biologically active forms (tetrahydrofolate and others) are essential for
+    nucleotide biosynthesis and homocysteine remethylation.']; formula ['C19H19N7O6'];
+    mass ['441.404']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: fe3e4a2f0f0fa51f94efe6bbf0fa8883d43eafef8db73cfd37bc25ce15fdd12f
+- evidence_id: chebi30753
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T10:19:29.483875Z'
+  support: supports
+  summary: OLS current exact CHEBI:30753 = 4-aminobenzoic acid; definition ['An aminobenzoic
+    acid in which the amino group is <em>para</em> to the carboxy group.']; formula
+    ['C7H7NO2']; mass ['137.138']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 97ea54b8020d3bcda2478182be115d2bc632249ee22b197b0575a4a9fd5fe21a
+- evidence_id: chebi30961
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T10:19:29.483808Z'
+  support: supports
+  summary: OLS current exact CHEBI:30961 = pyridoxine hydrochloride; definition ['The
+    hydrochloride salt of pyridoxine.']; formula ['C8H11NO3.HCl']; mass ['205.641'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: f1c95b83f5396067c3959c20ee4715c78f7895f5084dd214b3a4bf01e064f21d
+- evidence_id: chebi31206
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T10:19:29.464528Z'
+  support: supports
+  summary: OLS current exact CHEBI:31206 = ammonium chloride; definition ['An inorganic
+    chloride having ammonium as the counterion.']; formula ['Cl.H4N']; mass ['53.492'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi31345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T10:19:29.454963Z'
+  support: supports
+  summary: OLS current exact CHEBI:31345 = Calcium pantothenate; definition []; formula
+    ['2C9H16NO5.Ca']; mass ['476.536']; obsolete=False. Literal label is distinct
+    from supplied-form equivalence.
+  snapshot_sha256: 56fc4b33c78d82faf317e131ae936f2e00eab0c369b2a9d8be86eddff6fd616d
+- evidence_id: chebi31795
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T10:19:29.439234Z'
+  support: supports
+  summary: OLS current exact CHEBI:31795 = magnesium sulfate heptahydrate; definition
+    ['A hydrate that is the heptahydrate form of magnesium sulfate.']; formula ['7H2O.Mg.O4S'];
+    mass ['246.473']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32035
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32035
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T10:19:28.878105Z'
+  support: supports
+  summary: OLS current exact CHEBI:32035 = potassium hydroxide; definition []; formula
+    ['HO.K']; mass ['56.105']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 6ed3df00965b4707265cfced80411c4b1937b727f8c2093addbc467f88ce2ec8
+- evidence_id: chebi32139
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T10:19:28.870056Z'
+  support: supports
+  summary: OLS current exact CHEBI:32139 = sodium hydrogencarbonate; definition [];
+    formula ['CHO3.Na']; mass ['84.006']; obsolete=False. Literal label is distinct
+    from supplied-form equivalence.
+  snapshot_sha256: 2a41873aa455dc8563a47d36add836fffb6fb758ce7a2d1c28295e77646315fe
+- evidence_id: chebi32312
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T10:19:28.861496Z'
+  support: supports
+  summary: OLS current exact CHEBI:32312 = zinc sulfate heptahydrate; definition ['A
+    hydrate that is the heptahydrate form of zinc sulfate.']; formula ['7H2O.O4S.Zn'];
+    mass ['287.558']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: chebi49105
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T10:19:28.857969Z'
+  support: supports
+  summary: OLS current exact CHEBI:49105 = thiamine hydrochloride; definition ['A
+    hydrochloride obtained by combining thiamine chloride with one molar equivalent
+    of hydrochloric acid.']; formula ['C12H17N4OS.Cl.HCl']; mass ['337.276']; obsolete=False.
+    Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 0b923c215888606038af1e3f0c1b1bcc35e4ab84966d1733a91fdfcbee8f2ae4
+- evidence_id: chebi53503
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T10:19:28.851616Z'
+  support: supports
+  summary: OLS current exact CHEBI:53503 = cobalt chloride hexahydrate; definition
+    ['A hydrate of cobalt chloride containing cobalt (in +2 oxidation state), chloride
+    and water moieties in the ratio 1:2:6.']; formula ['2Cl.Co.6H2O']; mass ['237.929'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: c33e304a0a565068c592ba0970e501052981599ef69cd2cb901e88f27931389d
+- evidence_id: chebi62345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62345
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T10:19:28.842293Z'
+  support: supports
+  summary: OLS current exact CHEBI:62345 = L-rhamnose; definition ['Any rhamnose having
+    <small>L</small>-configuration. L-rhamnose occurs naturally in many plant glycosides
+    and some gram-negative bacterial lipopolysaccharides.']; formula None; mass None;
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 545cce7e8589227b930f0754eea18145f7ae868ec7b07d30f4962f3906a83537
+- evidence_id: chebi63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T10:19:28.097973Z'
+  support: supports
+  summary: OLS current exact CHEBI:63036 = potassium dihydrogen phosphate; definition
+    ['A potassium salt in which dihydrogen phosphate(1−) is the counterion.']; formula
+    ['H2O4P.K']; mass ['136.084']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi75836
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T10:19:28.097934Z'
+  support: supports
+  summary: OLS current exact CHEBI:75836 = iron(2+) sulfate heptahydrate; definition
+    ['A hydrate that is the heptahydrate form of iron(2+) sulfate. It is used as a
+    source of iron in the treatment of iron-deficiency anaemia (generally in liquid-dosage
+    treatments; for solid-dosage treatments, the monohydrate is normally used).'];
+    formula ['Fe.7H2O.O4S']; mass ['278.013']; obsolete=False. Literal label is distinct
+    from supplied-form equivalence.
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: chebi86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T10:19:28.097888Z'
+  support: supports
+  summary: OLS current exact CHEBI:86158 = calcium chloride dihydrate; definition
+    ['A hydrate that is the dihydrate form of calcium chloride.']; formula ['Ca.2Cl.2H2O'];
+    mass ['147.014']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86368
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T10:19:28.097826Z'
+  support: supports
+  summary: OLS current exact CHEBI:86368 = manganese(II) chloride tetrahydrate; definition
+    ['A hydrate that is the tetrahydrate form of manganese(II) chloride.']; formula
+    ['Cl2Mn.4H2O']; mass ['197.904']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: chebi8806
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T10:19:28.097736Z'
+  support: supports
+  summary: OLS current exact CHEBI:8806 = Resazurin; definition []; formula ['C12H7NO4'];
+    mass ['229.191']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: chebi91248
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91248
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T10:19:28.097486Z'
+  support: supports
+  summary: OLS current exact CHEBI:91248 = L-cysteine hydrochloride hydrate; definition
+    ['A hydrate that is the monohydrate form of <small>L</small>-cysteine hydrochloride.'];
+    formula ['C3H7NO2S.H2O.HCl']; mass ['175.637']; obsolete=False. Literal label
+    is distinct from supplied-form equivalence.
+  snapshot_sha256: 7ef9e26cec1a5833d216a01df066c0b6a0bfba77bad16db354c690a7a814a683
+- evidence_id: grounding
+  kind: authority
+  reference: REVIEW_WORK/batch063/record07/grounding-inventory.json
+  locator: documents; ols_scientific_projection; mim_index
+  accessed_at: '2026-10-28T10:36:19.041813Z'
+  support: supports
+  summary: Complete selected-layer term slots and current packaged MIM CSV exact-identifier
+    joins with row locators and metadata commit; includes separately scoped dependency
+    context. No fuzzy mapping or historical-validity inference.
+  snapshot_sha256: a49306cfd456d2ffdbb0dd83c38b96e8a37d7779f5385d965898f79b847029ce
+- evidence_id: history0
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-komodo-media-1500-2000/records/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T10:36:19.042561Z'
+  support: supports
+  summary: Entire historical report read, including every unchanged and unresolved
+    field. Current api492 raw bytes exactly match the cited historical SHA, and 37
+    quoted objects match both decoded locators and literal current raw substrings.
+    This authenticates the cited API payload and excerpts, not the reported historical
+    access time, execution or separate KOMODO catalogue/page.
+  snapshot_sha256: 6178647616085990c8c36686a800c90035d9460c8a7c5a185a03026334123354
+- evidence_id: history1
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T10:36:19.042583Z'
+  support: supports
+  summary: Entire historical report read, including every unchanged and unresolved
+    field. This narrative or zero-source-check report is a derivative lead, not new
+    primary-source authentication.
+  snapshot_sha256: 3eb268179c5b582c140133c7bffb722705baa6833beaa7b9e89156da4d7461bb
+- evidence_id: history2
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T10:36:19.042603Z'
+  support: supports
+  summary: Entire historical report read, including every unchanged and unresolved
+    field. This narrative or zero-source-check report is a derivative lead, not new
+    primary-source authentication.
+  snapshot_sha256: 290355afedb0cf7b877a579b48c26309cc4b6a7f53281affabf597bfc31a7670
+- evidence_id: history-auth
+  kind: record_content
+  reference: REVIEW_WORK/batch063/record07/historical-authentication.json
+  locator: reports
+  accessed_at: '2026-10-28T10:36:19.042623Z'
+  support: supports
+  summary: Exact report headers, source digest and every quoted API object reconciled;
+    all reports fully read with duplicate cells pooled. Current primary sources independently
+    govern scientific decisions.
+  snapshot_sha256: 4232bd57eb8fa85920bb1a3752c732306c8316285d4cfa63e06a2b5b3f699c1d
+- evidence_id: writer39
+  kind: record_content
+  reference: scripts/apply_mim_groundings.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T10:36:19.042647Z'
+  support: context_only
+  summary: target_slot preserves existing CHEBI assertions, groundable excludes conflicting
+    corpus opinions and apply_to_record fills only ungrounded names. This current
+    CHEBI-only writer does not automatically replace legacy secondary MIM links or
+    authenticate quantities.
+  snapshot_sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+- evidence_id: writer40
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T10:36:19.042670Z'
+  support: context_only
+  summary: Current merge_duplicate_ingredients/_merge_ingredient_group collapses identical
+    quantities and flags conflicting quantities rather than summing them. Persisted
+    old duplicate sums require independent source review; they do not establish that
+    this current implementation still sums unequal stages.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer41
+  kind: record_content
+  reference: scripts/migrate_chebi_regrounding.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T10:36:19.042691Z'
+  support: context_only
+  summary: Current rewrite_entry applies exact from-ID plus ingredient-label remaps
+    across primary and secondary slots, while migrate_file appends a change-specific
+    history event. The generic nickel chloride remap does not distinguish its hydrate;
+    current mappings require independent supplied-form review. This read does not
+    establish historical execution.
+  snapshot_sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+- evidence_id: writer42
+  kind: record_content
+  reference: scripts/migrate_legacy_mim_to_chebi.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T10:36:19.042709Z'
+  support: context_only
+  summary: Full _resolve_chebi/_rewrite_entry/migrate_file read. Existing primary
+    CHEBI is reused if present in MIM; exact-name/synonym resolution is limited by
+    a stereo-prefix guard, and unresolved links remain. The code does not prove chemical
+    equivalence or historical validity merely because an ID has a current row.
+  snapshot_sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+- evidence_id: writer43
+  kind: record_content
+  reference: scripts/migrate_mgso4_heptahydrate_term.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T10:36:19.042726Z'
+  support: context_only
+  summary: iter_ingredients and main make a label-conditional primary-term-only 32599
+    to 31795 repair; secondary annotations are untouched. The current primary is credited
+    while stale secondary linkage requires separate review.
+  snapshot_sha256: 6acb9d5164ad381c288f031fb34045036e3fd2283e559f1ad8ccd1a4687fb4ce
+- evidence_id: writer44
+  kind: record_content
+  reference: scripts/resolve_komodo_compositions.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T10:36:19.042742Z'
+  support: context_only
+  summary: 'Full CLI wrapper read: it delegates empty KOMODO ingredient enrichment
+    to DSMZCompositionResolver and exposes dry-run/report modes. The wrapper documents
+    copied ingredients/solutions but does not independently authenticate a particular
+    past execution or variant. The underlying resolver is an inspected input and is
+    assessed separately.'
+  snapshot_sha256: f45bc52a8efaa66c9a93c109a40c7d2763ac9f49c9009d92a4c0a0a41b7c28da
+- evidence_id: writer45
+  kind: record_content
+  reference: src/culturemech/enrich/dsmz_resolver.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T10:36:19.042766Z'
+  support: context_only
+  summary: Current DSMZCompositionResolver.merge_composition copies ingredients, solutions,
+    pH, physical state and medium type; it does not copy preparation or independently
+    establish source equivalence. resolve_recipe skips already populated ingredient
+    lists. Current behavior does not authenticate the historical enrichment execution.
+  snapshot_sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+- evidence_id: writer46
+  kind: record_content
+  reference: src/culturemech/import/komodo_web_importer.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T10:36:19.042786Z'
+  support: context_only
+  summary: Current _convert_to_culturemech builds KOMODO identity, is_aerobic notes
+    and initially empty ingredients for later DSMZ enrichment; its strftime format
+    uses literal %f. Read code does not authenticate the past table values or source-copy
+    execution.
+  snapshot_sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+- evidence_id: writer47
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T10:36:19.042806Z'
+  support: context_only
+  summary: Current formulation_content retains scientific fields, quantities, notes
+    and preparation; merge_formulation_evidence rejects incompatible scientific projections
+    and unions scoped evidence. Ingredient-set similarity does not prove scientific
+    equivalence.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer48
+  kind: record_content
+  reference: src/culturemech/merge/matcher.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T10:36:19.042824Z'
+  support: context_only
+  summary: Current group_formulations uses full formulation fingerprints for compatible
+    automatic merging; broader group_recipes discovers ingredient-set candidates only.
+    Neither grouping path substitutes for source verification.
+  snapshot_sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+- evidence_id: writer49
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T10:36:19.042843Z'
+  support: context_only
+  summary: Current merge_group returns a single owner with routing metadata, and calls
+    conservative merge_formulation_evidence for multiple owners. Current code supports
+    regenerating stale content after owner repair but does not authenticate old generated
+    outputs.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: REVIEW_WORK/batch063/record07/quantity-inventory.json
+  locator: decisions
+  accessed_at: '2026-10-28T10:36:19.059972Z'
+  support: supports
+  summary: Complete explicit decisions with exact current local values, per-layer
+    locators, source quotes/hash/time, stage and arithmetic limits.
+  snapshot_sha256: 7fd46281242f8a3f9b416ce69f67fcdbe8e88813a8e54ca45faba78e16c7aff0
+assessments:
+- assessment_id: a1
+  area: identity
+  topic: Exact DSM 492 source and maintained KOMODO lineage
+  outcome: concern
+  summary: The selected generated record has one exact maintained KOMODO 492 contributor
+    and an explicit DSM 492 reference. Current DSM/API identities agree; the exact
+    KOMODO route returned403, so historical mapping remains separately bounded. No
+    same-name recipe or organism-growth assertion substitutes for this identity.
+  target_ids:
+  - CultureMech:005620
+  evidence_ids:
+  - local0
+  - local1
+  - dsmz492
+  - api492
+  - komodo492
+- assessment_id: a2
+  area: provenance
+  topic: Historical assertions and current writers
+  outcome: concern
+  summary: All three exact historical reports were read and their current raw/object
+    joins checked. Old blanket conflict labels do not prove the already-allowed finalpH6.8
+    is wrong. Current source stages govern quantity decisions; no attached formulation
+    claims exist, so supported KOH/pH observations are evidence_only. Current importer/resolver/cleanup
+    and conservative merger behavior are contextual, not proof of the historical run.
+    Current conservative merging preserves scientific fields and rejects incompatible
+    formulations. Inspected writer behavior is described separately by exact file
+    and function; it does not prove historical execution.
+  target_ids:
+  - CultureMech:005620
+  evidence_ids:
+  - history-auth
+  - writer39
+  - writer40
+  - writer41
+  - writer42
+  - writer43
+  - writer44
+  - writer45
+  - writer46
+  - writer47
+  - writer48
+  - writer49
+- assessment_id: a3
+  area: quantity
+  topic: Every concentration and source-only amount/stage
+  outcome: concern
+  summary: All 50 selected target/owner concentration fields have explicit decisions;
+    source-only stock, liquid, control and denominator gaps are retained separately.
+  target_ids:
+  - CultureMech:005620
+  evidence_ids:
+  - quantity-inventory
+  details: '{"schema": "private explicit quantity decisions v1", "target_id": "CultureMech:005620",
+    "selected_concentration_field_count": 50, "selected_concentration_fields_covered":
+    50, "decisions": [{"decision_id": "q1", "subject": "NH4Cl", "local_fields": [{"record_path":
+    "data/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml", "field_path":
+    "ingredients[0].concentration", "original": {"value": "0.943396", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[0].concentration", "original": {"value": "0.943396",
+    "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Solution A component or
+    inner stock addition, not unqualified final medium", "interpretation": "The current
+    number equals provider Solution A g_l=0.943396, calculated using its declared954
+    ml volume. It belongs to Solution A, which is then added as954 ml with Solutions
+    B–E. Preserve source0.9 g and its stage; the PDF gives no complete-medium final-volume
+    instruction, so do not invent a corrected final g/L. ", "sources": [{"locator":
+    "$.data.solutions[1].recipe[0]", "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\":
+    42,\n                        \"amount\": 0.9,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.943396,\n                        \"mmol_l\":
+    17.6369,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[0]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"solution\": \"Solution A\",\n                        \"solution_id\":
+    999,\n                        \"amount\": 954,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q2", "subject": "KH2PO4", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "0.943396",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "0.943396",
+    "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Solution A component or
+    inner stock addition, not unqualified final medium", "interpretation": "The current
+    number equals provider Solution A g_l=0.943396, calculated using its declared954
+    ml volume. It belongs to Solution A, which is then added as954 ml with Solutions
+    B–E. Preserve source0.9 g and its stage; the PDF gives no complete-medium final-volume
+    instruction, so do not invent a corrected final g/L. ", "sources": [{"locator":
+    "$.data.solutions[1].recipe[1]", "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 0.9,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.943396,\n                        \"mmol_l\":
+    6.9324,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[0]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"solution\": \"Solution A\",\n                        \"solution_id\":
+    999,\n                        \"amount\": 954,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q3", "subject": "NaCl", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "0.943396",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "0.943396",
+    "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Solution A component or
+    inner stock addition, not unqualified final medium", "interpretation": "The current
+    number equals provider Solution A g_l=0.943396, calculated using its declared954
+    ml volume. It belongs to Solution A, which is then added as954 ml with Solutions
+    B–E. Preserve source0.9 g and its stage; the PDF gives no complete-medium final-volume
+    instruction, so do not invent a corrected final g/L. ", "sources": [{"locator":
+    "$.data.solutions[1].recipe[2]", "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\":
+    43,\n                        \"amount\": 0.9,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.943396,\n                        \"mmol_l\":
+    16.143,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[0]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"solution\": \"Solution A\",\n                        \"solution_id\":
+    999,\n                        \"amount\": 954,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q4", "subject": "CaCl2 x 2 H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[3].concentration", "original": {"value": "0.0209644",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[3].concentration", "original": {"value": "0.0209644",
+    "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Solution A component or
+    inner stock addition, not unqualified final medium", "interpretation": "The current
+    number equals provider Solution A g_l=0.0209644, calculated using its declared954
+    ml volume. It belongs to Solution A, which is then added as954 ml with Solutions
+    B–E. Preserve source20 mg and its stage; the PDF gives no complete-medium final-volume
+    instruction, so do not invent a corrected final g/L. ", "sources": [{"locator":
+    "$.data.solutions[1].recipe[3]", "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\":
+    7,\n                        \"amount\": 20,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.0209644,\n                        \"mmol_l\":
+    0.1426,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[0]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"solution\": \"Solution A\",\n                        \"solution_id\":
+    999,\n                        \"amount\": 954,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q5", "subject": "MnCl2 x 4 H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[4].concentration", "original": {"value": "0.0209644",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[4].concentration", "original": {"value": "0.0209644",
+    "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Solution A component or
+    inner stock addition, not unqualified final medium", "interpretation": "The current
+    number equals provider Solution A g_l=0.0209644, calculated using its declared954
+    ml volume. It belongs to Solution A, which is then added as954 ml with Solutions
+    B–E. Preserve source20 mg and its stage; the PDF gives no complete-medium final-volume
+    instruction, so do not invent a corrected final g/L. ", "sources": [{"locator":
+    "$.data.solutions[1].recipe[4]", "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\":
+    36,\n                        \"amount\": 20,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.0209644,\n                        \"mmol_l\":
+    0.105931,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[0]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"solution\": \"Solution A\",\n                        \"solution_id\":
+    999,\n                        \"amount\": 954,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q6", "subject": "MgSO4 x 7 H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[5].concentration", "original": {"value": "0.0209644",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[5].concentration", "original": {"value": "0.0209644",
+    "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Solution A component or
+    inner stock addition, not unqualified final medium", "interpretation": "The current
+    number equals provider Solution A g_l=0.0209644, calculated using its declared954
+    ml volume. It belongs to Solution A, which is then added as954 ml with Solutions
+    B–E. Preserve source20 mg and its stage; the PDF gives no complete-medium final-volume
+    instruction, so do not invent a corrected final g/L. ", "sources": [{"locator":
+    "$.data.solutions[1].recipe[5]", "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\":
+    8,\n                        \"amount\": 20,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.0209644,\n                        \"mmol_l\":
+    0.0850564,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[0]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"solution\": \"Solution A\",\n                        \"solution_id\":
+    999,\n                        \"amount\": 954,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q7", "subject": "CoCl2 x 6 H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[6].concentration", "original": {"value": "0.00524109",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[6].concentration", "original": {"value": "0.00524109",
+    "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Solution A component or
+    inner stock addition, not unqualified final medium", "interpretation": "The current
+    number equals provider Solution A g_l=0.00524109, calculated using its declared954
+    ml volume. It belongs to Solution A, which is then added as954 ml with Solutions
+    B–E. Preserve source5 ml and its stage; the PDF gives no complete-medium final-volume
+    instruction, so do not invent a corrected final g/L. The supplied reagent is a0.1%
+    w/v stock, with its absolute addition and hydrate retained. ", "sources": [{"locator":
+    "$.data.solutions[1].recipe[6]", "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\":
+    38,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.00524109,\n                        \"mmol_l\": 0.0403661,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "$.data.solutions[0].recipe[0]", "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"solution\": \"Solution A\",\n                        \"solution_id\":
+    999,\n                        \"amount\": 954,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q8", "subject": "FeSO4 x 7 H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[7].concentration", "original": {"value": "0.00524109",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[7].concentration", "original": {"value": "0.00524109",
+    "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Solution A component or
+    inner stock addition, not unqualified final medium", "interpretation": "The current
+    number equals provider Solution A g_l=0.00524109, calculated using its declared954
+    ml volume. It belongs to Solution A, which is then added as954 ml with Solutions
+    B–E. Preserve source5 ml and its stage; the PDF gives no complete-medium final-volume
+    instruction, so do not invent a corrected final g/L. The supplied reagent is a0.1%
+    w/v stock, with its absolute addition and hydrate retained. The iron stock is
+    specifically in0.1 N H2SO4; this carrier acid is absent from the current record
+    and must remain source-scoped rather than silently omitted.", "sources": [{"locator":
+    "$.data.solutions[1].recipe[7]", "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\":
+    12,\n                        \"attribute\": \"0.1% w/v in 0.1 N H2SO4\",\n                        \"amount\":
+    5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.00524109,\n                        \"mmol_l\": 0.0188518,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "$.data.solutions[0].recipe[0]", "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"solution\": \"Solution A\",\n                        \"solution_id\":
+    999,\n                        \"amount\": 954,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q9", "subject": "ZnSO4 x 7 H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[8].concentration", "original": {"value": "0.00209644",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[8].concentration", "original": {"value": "0.00209644",
+    "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Solution A component or
+    inner stock addition, not unqualified final medium", "interpretation": "The current
+    number equals provider Solution A g_l=0.00209644, calculated using its declared954
+    ml volume. It belongs to Solution A, which is then added as954 ml with Solutions
+    B–E. Preserve source2 ml and its stage; the PDF gives no complete-medium final-volume
+    instruction, so do not invent a corrected final g/L. The supplied reagent is a0.1%
+    w/v stock, with its absolute addition and hydrate retained. ", "sources": [{"locator":
+    "$.data.solutions[1].recipe[8]", "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"ZnSO4 x 7 H2O\",\n                        \"compound_id\":
+    35,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    2,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.00209644,\n                        \"mmol_l\": 0.0072904,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "$.data.solutions[0].recipe[0]", "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"solution\": \"Solution A\",\n                        \"solution_id\":
+    999,\n                        \"amount\": 954,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q10", "subject": "CuSO4 x H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[9].concentration", "original": {"value": "0.00209644",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[9].concentration", "original": {"value": "0.00209644",
+    "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Solution A component or
+    inner stock addition, not unqualified final medium", "interpretation": "The current
+    number equals provider Solution A g_l=0.00209644, calculated using its declared954
+    ml volume. It belongs to Solution A, which is then added as954 ml with Solutions
+    B–E. Preserve source2 ml and its stage; the PDF gives no complete-medium final-volume
+    instruction, so do not invent a corrected final g/L. The supplied reagent is a0.1%
+    w/v stock, with its absolute addition and hydrate retained. The named copper sulfate
+    monohydrate is not authenticated by generic anhydrous CHEBI:23414.", "sources":
+    [{"locator": "$.data.solutions[1].recipe[9]", "source_key": "api492", "reference":
+    "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"CuSO4 x H2O\",\n                        \"compound_id\":
+    509,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    2,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.00209644,\n                        \"mmol_l\": 0.0131347,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "$.data.solutions[0].recipe[0]", "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"solution\": \"Solution A\",\n                        \"solution_id\":
+    999,\n                        \"amount\": 954,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q11", "subject": "Sodium resazurin", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[10].concentration", "original": {"value": "0.000524109",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[10].concentration", "original": {"value": "0.000524109",
+    "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Solution A component or
+    inner stock addition, not unqualified final medium", "interpretation": "The current
+    number equals provider Solution A g_l=0.000524109, calculated using its declared954
+    ml volume. It belongs to Solution A, which is then added as954 ml with Solutions
+    B–E. Preserve source0.5 ml and its stage; the PDF gives no complete-medium final-volume
+    instruction, so do not invent a corrected final g/L. The supplied reagent is a0.1%
+    w/v stock, with its absolute addition and hydrate retained. The source sodium
+    salt is not neutral CHEBI:8806.", "sources": [{"locator": "$.data.solutions[1].recipe[10]",
+    "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\":
+    1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.000524109,\n                        \"mmol_l\": 0.00208667,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "$.data.solutions[0].recipe[0]", "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"solution\": \"Solution A\",\n                        \"solution_id\":
+    999,\n                        \"amount\": 954,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q12", "subject": "NaHCO3", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[11].concentration", "original": {"value": "50", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[11].concentration", "original": {"value": "50", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Solution B stock stage", "interpretation":
+    "Source1 g with 20 ml water definesSolution B; provider g_l=50 is a stock rate,
+    not an established final-medium rate. The main source adds this named solution
+    separately. Keep batch mass/water, absolute receiving dose and sterilization stage
+    distinct; no final normalization is invented.", "sources": [{"locator": "$.data.solutions[2].recipe[0]",
+    "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"NaHCO3\",\n                        \"compound_id\":
+    55,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 50,\n                        \"mmol_l\":
+    595.188,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[2].recipe[1]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 20,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[1]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"solution\": \"Solution B\",\n                        \"solution_id\":
+    1000,\n                        \"amount\": 20,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q13", "subject": "L-Rhamnose", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[12].concentration", "original": {"value": "200", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[12].concentration", "original": {"value": "200", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Solution C stock stage", "interpretation":
+    "Source2 g with 10 ml water definesSolution C; provider g_l=200 is a stock rate,
+    not an established final-medium rate. The main source adds this named solution
+    separately. Keep batch mass/water, absolute receiving dose and sterilization stage
+    distinct; no final normalization is invented.", "sources": [{"locator": "$.data.solutions[3].recipe[0]",
+    "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"L-Rhamnose\",\n                        \"compound_id\":
+    510,\n                        \"amount\": 2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 200,\n                        \"mmol_l\":
+    1218.32,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[3].recipe[1]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[2]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"solution\": \"Solution C\",\n                        \"solution_id\":
+    1001,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q14", "subject": "L-Cysteine HCl x H2O",
+    "local_fields": [{"record_path": "data/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[13].concentration", "original": {"value": "50", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[13].concentration", "original": {"value": "50", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Solution E stock stage", "interpretation":
+    "Source1 g with 20 ml water definesSolution E; provider g_l=50 is a stock rate,
+    not an established final-medium rate. The main source adds this named solution
+    separately. Keep batch mass/water, absolute receiving dose and sterilization stage
+    distinct; no final normalization is invented.", "sources": [{"locator": "$.data.solutions[5].recipe[0]",
+    "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"L-Cysteine HCl x H2O\",\n                        \"compound_id\":
+    770,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 50,\n                        \"mmol_l\":
+    284.68,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[5].recipe[1]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 20,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[4]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    5,\n                        \"solution\": \"Solution E\",\n                        \"solution_id\":
+    1003,\n                        \"amount\": 20,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q15", "subject": "Biotin", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[14].concentration", "original": {"value": "0.02", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[14].concentration", "original": {"value": "0.02", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Wolin vitamin stock, via Solution
+    D", "interpretation": "Source20 mg and provider stock g_l=0.02 belong to the 10x
+    vitamin solution, not directly to the final medium. Solution D comprises1 ml of
+    that stock and the main recipe adds1 ml Solution D; this nested identity must
+    not be mistaken for two independent additions or an extra dilution. Restore source
+    stock composition and its single receiving route.", "sources": [{"locator": "$.data.solutions[6].recipe[0]",
+    "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Biotin\",\n                        \"compound_id\":
+    46,\n                        \"amount\": 20,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\":
+    0.0818632,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[4].recipe[0]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"solution\": \"Wolin''s vitamin solution (10x)\",\n                        \"solution_id\":
+    5980,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[3]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"solution\": \"Solution D\",\n                        \"solution_id\":
+    1002,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[6].recipe[10]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q16", "subject": "Folic acid", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[15].concentration", "original": {"value": "0.02", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[15].concentration", "original": {"value": "0.02", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Wolin vitamin stock, via Solution
+    D", "interpretation": "Source20 mg and provider stock g_l=0.02 belong to the 10x
+    vitamin solution, not directly to the final medium. Solution D comprises1 ml of
+    that stock and the main recipe adds1 ml Solution D; this nested identity must
+    not be mistaken for two independent additions or an extra dilution. Restore source
+    stock composition and its single receiving route.", "sources": [{"locator": "$.data.solutions[6].recipe[1]",
+    "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Folic acid\",\n                        \"compound_id\":
+    138,\n                        \"amount\": 20,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\":
+    0.0453104,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[4].recipe[0]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"solution\": \"Wolin''s vitamin solution (10x)\",\n                        \"solution_id\":
+    5980,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[3]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"solution\": \"Solution D\",\n                        \"solution_id\":
+    1002,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[6].recipe[10]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q17", "subject": "Pyridoxine hydrochloride",
+    "local_fields": [{"record_path": "data/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[16].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[16].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Wolin vitamin stock, via Solution
+    D", "interpretation": "Source100 mg and provider stock g_l=0.1 belong to the 10x
+    vitamin solution, not directly to the final medium. Solution D comprises1 ml of
+    that stock and the main recipe adds1 ml Solution D; this nested identity must
+    not be mistaken for two independent additions or an extra dilution. Restore source
+    stock composition and its single receiving route.", "sources": [{"locator": "$.data.solutions[6].recipe[2]",
+    "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\":
+    519,\n                        \"amount\": 100,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.486287,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[4].recipe[0]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"solution\": \"Wolin''s vitamin solution (10x)\",\n                        \"solution_id\":
+    5980,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[3]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"solution\": \"Solution D\",\n                        \"solution_id\":
+    1002,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[6].recipe[10]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q18", "subject": "Thiamine HCl", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[17].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[17].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Wolin vitamin stock, via Solution
+    D", "interpretation": "Source50 mg and provider stock g_l=0.05 belong to the 10x
+    vitamin solution, not directly to the final medium. Solution D comprises1 ml of
+    that stock and the main recipe adds1 ml Solution D; this nested identity must
+    not be mistaken for two independent additions or an extra dilution. Restore source
+    stock composition and its single receiving route.", "sources": [{"locator": "$.data.solutions[6].recipe[3]",
+    "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Thiamine HCl\",\n                        \"compound_id\":
+    1207,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.148236,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[4].recipe[0]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"solution\": \"Wolin''s vitamin solution (10x)\",\n                        \"solution_id\":
+    5980,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[3]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"solution\": \"Solution D\",\n                        \"solution_id\":
+    1002,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[6].recipe[10]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q19", "subject": "Riboflavin", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[18].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[18].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Wolin vitamin stock, via Solution
+    D", "interpretation": "Source50 mg and provider stock g_l=0.05 belong to the 10x
+    vitamin solution, not directly to the final medium. Solution D comprises1 ml of
+    that stock and the main recipe adds1 ml Solution D; this nested identity must
+    not be mistaken for two independent additions or an extra dilution. Restore source
+    stock composition and its single receiving route.", "sources": [{"locator": "$.data.solutions[6].recipe[4]",
+    "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"Riboflavin\",\n                        \"compound_id\":
+    136,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.132837,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[4].recipe[0]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"solution\": \"Wolin''s vitamin solution (10x)\",\n                        \"solution_id\":
+    5980,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[3]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"solution\": \"Solution D\",\n                        \"solution_id\":
+    1002,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[6].recipe[10]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q20", "subject": "Nicotinic acid", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[19].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[19].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Wolin vitamin stock, via Solution
+    D", "interpretation": "Source50 mg and provider stock g_l=0.05 belong to the 10x
+    vitamin solution, not directly to the final medium. Solution D comprises1 ml of
+    that stock and the main recipe adds1 ml Solution D; this nested identity must
+    not be mistaken for two independent additions or an extra dilution. Restore source
+    stock composition and its single receiving route.", "sources": [{"locator": "$.data.solutions[6].recipe[5]",
+    "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\":
+    139,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.406141,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[4].recipe[0]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"solution\": \"Wolin''s vitamin solution (10x)\",\n                        \"solution_id\":
+    5980,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[3]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"solution\": \"Solution D\",\n                        \"solution_id\":
+    1002,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[6].recipe[10]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q21", "subject": "Calcium D-(+)-pantothenate",
+    "local_fields": [{"record_path": "data/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[20].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[20].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Wolin vitamin stock, via Solution
+    D", "interpretation": "Source50 mg and provider stock g_l=0.05 belong to the 10x
+    vitamin solution, not directly to the final medium. Solution D comprises1 ml of
+    that stock and the main recipe adds1 ml Solution D; this nested identity must
+    not be mistaken for two independent additions or an extra dilution. Restore source
+    stock composition and its single receiving route.", "sources": [{"locator": "$.data.solutions[6].recipe[6]",
+    "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Calcium D-(+)-pantothenate\",\n                        \"compound_id\":
+    1512,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.209846,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[4].recipe[0]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"solution\": \"Wolin''s vitamin solution (10x)\",\n                        \"solution_id\":
+    5980,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[3]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"solution\": \"Solution D\",\n                        \"solution_id\":
+    1002,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[6].recipe[10]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q22", "subject": "Vitamin B12", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[21].concentration", "original": {"value": "0.001",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[21].concentration", "original": {"value": "0.001",
+    "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Wolin vitamin stock, via
+    Solution D", "interpretation": "Source1 mg and provider stock g_l=0.001 belong
+    to the 10x vitamin solution, not directly to the final medium. Solution D comprises1
+    ml of that stock and the main recipe adds1 ml Solution D; this nested identity
+    must not be mistaken for two independent additions or an extra dilution. Restore
+    source stock composition and its single receiving route.", "sources": [{"locator":
+    "$.data.solutions[6].recipe[7]", "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\":
+    18,\n                        \"amount\": 1,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\":
+    0.00073779,\n                        \"optional\": 0\n                    }",
+    "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[4].recipe[0]",
+    "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"solution\": \"Wolin''s vitamin solution (10x)\",\n                        \"solution_id\":
+    5980,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[3]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"solution\": \"Solution D\",\n                        \"solution_id\":
+    1002,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[6].recipe[10]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q23", "subject": "p-Aminobenzoic acid",
+    "local_fields": [{"record_path": "data/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[22].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[22].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Wolin vitamin stock, via Solution
+    D", "interpretation": "Source50 mg and provider stock g_l=0.05 belong to the 10x
+    vitamin solution, not directly to the final medium. Solution D comprises1 ml of
+    that stock and the main recipe adds1 ml Solution D; this nested identity must
+    not be mistaken for two independent additions or an extra dilution. Restore source
+    stock composition and its single receiving route.", "sources": [{"locator": "$.data.solutions[6].recipe[8]",
+    "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\":
+    47,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.364591,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[4].recipe[0]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"solution\": \"Wolin''s vitamin solution (10x)\",\n                        \"solution_id\":
+    5980,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[3]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"solution\": \"Solution D\",\n                        \"solution_id\":
+    1002,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[6].recipe[10]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q24", "subject": "(DL)-alpha-Lipoic acid",
+    "local_fields": [{"record_path": "data/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[23].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[23].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Wolin vitamin stock, via Solution
+    D", "interpretation": "Source50 mg and provider stock g_l=0.05 belong to the 10x
+    vitamin solution, not directly to the final medium. Solution D comprises1 ml of
+    that stock and the main recipe adds1 ml Solution D; this nested identity must
+    not be mistaken for two independent additions or an extra dilution. Restore source
+    stock composition and its single receiving route.", "sources": [{"locator": "$.data.solutions[6].recipe[9]",
+    "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"(DL)-alpha-Lipoic acid\",\n                        \"compound_id\":
+    252,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.24233,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[4].recipe[0]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"solution\": \"Wolin''s vitamin solution (10x)\",\n                        \"solution_id\":
+    5980,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[3]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"solution\": \"Solution D\",\n                        \"solution_id\":
+    1002,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[6].recipe[10]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q25", "subject": "KOH variable amount",
+    "local_fields": [{"record_path": "data/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[24].concentration", "original": {"value": "variable",
+    "unit": "VARIABLE"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ingredients[24].concentration", "original": {"value": "variable",
+    "unit": "VARIABLE"}}], "decision": "evidence_only", "stage": "Solution A pH adjustment
+    only", "interpretation": "VARIABLE correctly avoids inventing an amount for KOH,
+    which the source uses to adjust Solution A topH6.5. Retain the unquantified amount
+    but move its context from a generic direct-medium ingredient to this source stage.
+    It is not evidence for finalpH6.8–7.0 adjustment with a quantified KOH dose.",
+    "sources": [{"locator": "$.data.solutions[1].steps[0]", "source_key": "api492",
+    "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"step\":
+    \"Adjust pH to 6.5 with KOH.\"\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q26", "subject": "Solution A receiving
+    addition", "local_fields": [], "decision": "add", "stage": "Main five-solution
+    assembly", "interpretation": "The primary lists 954 ml ofSolution A. Preserve
+    the absolute source addition and its exact solution definition. These five doses
+    sum1005 ml nominally, matching API main volume, but the PDF does not state an
+    explicit final-medium make-up volume.", "sources": [{"locator": "$.data.solutions[0].recipe[0]",
+    "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"solution\": \"Solution A\",\n                        \"solution_id\":
+    999,\n                        \"amount\": 954,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 3-3", "source_key": "dsmz492",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium492.pdf",
+    "source_raw_sha256": "655e7cc7c47bc0c6e06909b29d0be8343a932b68fca986ca64c54debc601b84a",
+    "source_text_sha256": "245323bfd6c5db3490f1f9be470fda2b71d7d20999a35af3435658132358caa1",
+    "accessed_at": "2026-10-28T10:19:30.745138Z", "exact_source_quote": "Solution
+    A                                             954.00       ml", "quote_representation":
+    "captured extracted text"}]}, {"decision_id": "q27", "subject": "Solution B receiving
+    addition", "local_fields": [], "decision": "add", "stage": "Main five-solution
+    assembly", "interpretation": "The primary lists 20 ml ofSolution B. Preserve the
+    absolute source addition and its exact solution definition. These five doses sum1005
+    ml nominally, matching API main volume, but the PDF does not state an explicit
+    final-medium make-up volume.", "sources": [{"locator": "$.data.solutions[0].recipe[1]",
+    "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"solution\": \"Solution B\",\n                        \"solution_id\":
+    1000,\n                        \"amount\": 20,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 4-4", "source_key": "dsmz492",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium492.pdf",
+    "source_raw_sha256": "655e7cc7c47bc0c6e06909b29d0be8343a932b68fca986ca64c54debc601b84a",
+    "source_text_sha256": "245323bfd6c5db3490f1f9be470fda2b71d7d20999a35af3435658132358caa1",
+    "accessed_at": "2026-10-28T10:19:30.745138Z", "exact_source_quote": "Solution
+    B                                              20.00       ml", "quote_representation":
+    "captured extracted text"}]}, {"decision_id": "q28", "subject": "Solution C receiving
+    addition", "local_fields": [], "decision": "add", "stage": "Main five-solution
+    assembly", "interpretation": "The primary lists 10 ml ofSolution C. Preserve the
+    absolute source addition and its exact solution definition. These five doses sum1005
+    ml nominally, matching API main volume, but the PDF does not state an explicit
+    final-medium make-up volume.", "sources": [{"locator": "$.data.solutions[0].recipe[2]",
+    "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"solution\": \"Solution C\",\n                        \"solution_id\":
+    1001,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 5-5", "source_key": "dsmz492",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium492.pdf",
+    "source_raw_sha256": "655e7cc7c47bc0c6e06909b29d0be8343a932b68fca986ca64c54debc601b84a",
+    "source_text_sha256": "245323bfd6c5db3490f1f9be470fda2b71d7d20999a35af3435658132358caa1",
+    "accessed_at": "2026-10-28T10:19:30.745138Z", "exact_source_quote": "Solution
+    C                                              10.00       ml", "quote_representation":
+    "captured extracted text"}]}, {"decision_id": "q29", "subject": "Solution D receiving
+    addition", "local_fields": [], "decision": "add", "stage": "Main five-solution
+    assembly", "interpretation": "The primary lists 1 ml ofSolution D. Preserve the
+    absolute source addition and its exact solution definition. These five doses sum1005
+    ml nominally, matching API main volume, but the PDF does not state an explicit
+    final-medium make-up volume.", "sources": [{"locator": "$.data.solutions[0].recipe[3]",
+    "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"solution\": \"Solution D\",\n                        \"solution_id\":
+    1002,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 6-6", "source_key": "dsmz492",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium492.pdf",
+    "source_raw_sha256": "655e7cc7c47bc0c6e06909b29d0be8343a932b68fca986ca64c54debc601b84a",
+    "source_text_sha256": "245323bfd6c5db3490f1f9be470fda2b71d7d20999a35af3435658132358caa1",
+    "accessed_at": "2026-10-28T10:19:30.745138Z", "exact_source_quote": "Solution
+    D                                               1.00       ml", "quote_representation":
+    "captured extracted text"}]}, {"decision_id": "q30", "subject": "Solution E receiving
+    addition", "local_fields": [], "decision": "add", "stage": "Main five-solution
+    assembly", "interpretation": "The primary lists 20 ml ofSolution E. Preserve the
+    absolute source addition and its exact solution definition. These five doses sum1005
+    ml nominally, matching API main volume, but the PDF does not state an explicit
+    final-medium make-up volume.", "sources": [{"locator": "$.data.solutions[0].recipe[4]",
+    "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    5,\n                        \"solution\": \"Solution E\",\n                        \"solution_id\":
+    1003,\n                        \"amount\": 20,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 7-7", "source_key": "dsmz492",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium492.pdf",
+    "source_raw_sha256": "655e7cc7c47bc0c6e06909b29d0be8343a932b68fca986ca64c54debc601b84a",
+    "source_text_sha256": "245323bfd6c5db3490f1f9be470fda2b71d7d20999a35af3435658132358caa1",
+    "accessed_at": "2026-10-28T10:19:30.745138Z", "exact_source_quote": "Solution
+    E                                              20.00       ml", "quote_representation":
+    "captured extracted text"}]}, {"decision_id": "q31", "subject": "Solution A water",
+    "local_fields": [], "decision": "add", "stage": "Separate source batch solvent",
+    "interpretation": "Preserve940 ml water withinSolution A. This is an absolute
+    source solvent input, not a measured final volume or an ingredient mass concentration.",
+    "sources": [{"locator": "$.data.solutions[1].recipe[11]", "source_key": "api492",
+    "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    12,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 940,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q32", "subject": "Solution B water", "local_fields":
+    [], "decision": "add", "stage": "Separate source batch solvent", "interpretation":
+    "Preserve20 ml water withinSolution B. This is an absolute source solvent input,
+    not a measured final volume or an ingredient mass concentration.", "sources":
+    [{"locator": "$.data.solutions[2].recipe[1]", "source_key": "api492", "reference":
+    "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 20,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q33", "subject": "Solution C water", "local_fields":
+    [], "decision": "add", "stage": "Separate source batch solvent", "interpretation":
+    "Preserve10 ml water withinSolution C. This is an absolute source solvent input,
+    not a measured final volume or an ingredient mass concentration.", "sources":
+    [{"locator": "$.data.solutions[3].recipe[1]", "source_key": "api492", "reference":
+    "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q34", "subject": "Solution E water", "local_fields":
+    [], "decision": "add", "stage": "Separate source batch solvent", "interpretation":
+    "Preserve20 ml water withinSolution E. This is an absolute source solvent input,
+    not a measured final volume or an ingredient mass concentration.", "sources":
+    [{"locator": "$.data.solutions[5].recipe[1]", "source_key": "api492", "reference":
+    "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 20,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q35", "subject": "Wolin''s vitamin solution
+    (10x) water", "local_fields": [], "decision": "add", "stage": "Separate source
+    batch solvent", "interpretation": "Preserve1000 ml water withinWolin''s vitamin
+    solution (10x). This is an absolute source solvent input, not a measured final
+    volume or an ingredient mass concentration.", "sources": [{"locator": "$.data.solutions[6].recipe[10]",
+    "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q36", "subject": "Solution A pH and iron-stock
+    carrier acid", "local_fields": [], "decision": "add", "stage": "Source-only preparation
+    details", "interpretation": "Solution A is adjusted topH6.5 with an unquantified
+    KOH amount. Its iron sulfate heptahydrate0.1% w/v stock is in0.1 N H2SO4; retain
+    that exact carrier normality and 5 ml stock addition. Do not infer a final acid
+    concentration or replace the supplied iron hydrate.", "sources": [{"locator":
+    "$.data.solutions[1].steps[0]", "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"step\":
+    \"Adjust pH to 6.5 with KOH.\"\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[1].recipe[7]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\":
+    12,\n                        \"attribute\": \"0.1% w/v in 0.1 N H2SO4\",\n                        \"amount\":
+    5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.00524109,\n                        \"mmol_l\": 0.0188518,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id":
+    "q37", "subject": "Final medium pH", "local_fields": [{"record_path": "data/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ph_value", "original": 6.8}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
+    "field_path": "ph_value", "original": 6.8}], "decision": "evidence_only", "stage":
+    "Complete medium, separate from Solution A", "interpretation": "The stored6.8
+    lies within the primary6.8–7.0 final range. It is supported as an allowed value,
+    not a contradiction; retain that credit while adding the full range and exact
+    source evidence. Solution A pH 6.5 is a separate earlier control.", "sources":
+    [{"locator": "$.data.solutions[0].steps[0]", "source_key": "api492", "reference":
+    "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"step\":
+    \"Sparge solution A with 100% N2 gas for at least 30 - 45 min to make it anoxic,
+    then dispense medium under same gas atmosphere into anoxic Hungate-type tubes
+    or serum vials and autoclave. Solution B is autoclaved under 80% N2 and 20% CO2
+    gas atmosphere. Solutions C and D are prepared under 100% N2 gas atmosphere and
+    sterilized by filtration. Solution E is autoclaved separately under 100% N2 gas.
+    Solutions B to E are added to the sterile solution A in the sequence as indicated.
+    Final pH of the medium should be 6.8 - 7.0.\"\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[1].steps[0]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"step\":
+    \"Adjust pH to 6.5 with KOH.\"\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q38", "subject": "Assembly preparation
+    and atmosphere", "local_fields": [], "decision": "add", "stage": "Solution-specific
+    sterilization and final assembly", "interpretation": "Restore100% N2 sparging
+    of A for at least30–45 min, anaerobic dispensing/autoclaving, B under 80% N2/20%
+    CO2, filter sterilization of C/D under 100% N2, separate autoclaving of E under
+    100% N2, and addition inB–E sequence. Aerobic:Yes contradicts this source context.
+    No autoclave temperature/duration absent from the source is invented.", "sources":
+    [{"locator": "$.data.solutions[0].steps[0]", "source_key": "api492", "reference":
+    "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"step\":
+    \"Sparge solution A with 100% N2 gas for at least 30 - 45 min to make it anoxic,
+    then dispense medium under same gas atmosphere into anoxic Hungate-type tubes
+    or serum vials and autoclave. Solution B is autoclaved under 80% N2 and 20% CO2
+    gas atmosphere. Solutions C and D are prepared under 100% N2 gas atmosphere and
+    sterilized by filtration. Solution E is autoclaved separately under 100% N2 gas.
+    Solutions B to E are added to the sterile solution A in the sequence as indicated.
+    Final pH of the medium should be 6.8 - 7.0.\"\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q39", "subject": "Nominal volume mismatch
+    remains explicit", "local_fields": [], "decision": "evidence_only", "stage": "Provider
+    metadata and listed liquid inputs", "interpretation": "Main doses total1005 ml,
+    but that sum is not a measured final-volume declaration. Solution A water 940
+    ml plus5+5+2+2+0.5 ml inner stocks totals954.5 ml, whereas the source main dose
+    and API Solution A volume are954 ml. Preserve both statements without silently
+    correcting either denominator or deriving a definitive final composition.", "sources":
+    [{"locator": "$.data.solutions[0].recipe[0]", "source_key": "api492", "reference":
+    "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"solution\": \"Solution A\",\n                        \"solution_id\":
+    999,\n                        \"amount\": 954,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[1].recipe[6]", "source_key":
+    "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492", "source_raw_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "source_text_sha256":
+    "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935", "accessed_at":
+    "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\":
+    38,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.00524109,\n                        \"mmol_l\": 0.0403661,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "$.data.solutions[1].recipe[7]", "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\":
+    12,\n                        \"attribute\": \"0.1% w/v in 0.1 N H2SO4\",\n                        \"amount\":
+    5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.00524109,\n                        \"mmol_l\": 0.0188518,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "$.data.solutions[1].recipe[8]", "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"ZnSO4 x 7 H2O\",\n                        \"compound_id\":
+    35,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    2,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.00209644,\n                        \"mmol_l\": 0.0072904,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "$.data.solutions[1].recipe[9]", "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"CuSO4 x H2O\",\n                        \"compound_id\":
+    509,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    2,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.00209644,\n                        \"mmol_l\": 0.0131347,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "$.data.solutions[1].recipe[10]", "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\":
+    1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.000524109,\n                        \"mmol_l\": 0.00208667,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "$.data.solutions[1].recipe[11]", "source_key": "api492", "reference": "https://mediadive.dsmz.de/rest/medium/492",
+    "source_raw_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "source_text_sha256": "908354fbbb36b2fb724a58f3ad64848a458213d82f69d2d579f3dc55f889c935",
+    "accessed_at": "2026-10-28T10:19:30.721778Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    12,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 940,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}], "local_field_census_reference": "REVIEW_WORK/batch063/record07/grounding-inventory.json",
+    "source_only_gaps_are_explicit": true, "note": "Batch amounts, provider normalization,
+    stock composition, working dose and preparation controls are separate. No source
+    edits or automatic curation performed."}'
+- assessment_id: a4
+  area: grounding
+  topic: Primary, secondary and legacy linkage census
+  outcome: concern
+  summary: 'data/merge_yaml/merged/CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml: primary
+    25/25, secondary 23/25; data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml:
+    primary 25/25, secondary 23/25. These are ingredient-instance linkage fractions,
+    not accuracy scores. Solution terms are audited separately. Every actually asserted
+    CHEBI term is joined to its exact current OLS object and packaged MIM CSV rows.
+    0 numeric legacy MediaIngredientMech mentions occur across the complete selected
+    documents, with exact locators in the inventory; NNNNNN is a historical placeholder,
+    not an ID. Complex commercial/product components are not forced to pure-compound
+    IDs.'
+  target_ids:
+  - CultureMech:005620
+  evidence_ids:
+  - grounding
+- assessment_id: a5
+  area: scope
+  topic: Scope and source limits
+  outcome: supported
+  summary: Complete selected target and exact maintained owners reviewed. Dependencies
+    transfer only their explicitly named stock subsection; unrelated parent media
+    and source prescriptions are not growth evidence.
+  target_ids:
+  - CultureMech:005620
+  evidence_ids:
+  - local0
+- assessment_id: a6
+  area: schema
+  topic: Native structural checks
+  outcome: supported
+  summary: All four canonical commands passed once; strict schema TSV contains only
+    its header and reference validation checked zero references on the generated target.
+    This does not certify quantities or chemical forms.
+  target_ids:
+  - CultureMech:005620
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: culturemech-005620-five-solution-assembly-lost
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Five source solutions are flattened into direct ingredient rates
+  description: The source assembles Solutions A–E and routes its vitamin stock through
+    D. Current direct rates match individual stock normalization, including bicarbonate50
+    g/L, rhamnose200 g/L and cysteine50 g/L, rather than an independently established
+    final-medium formulation. Stock additions, water scopes and inner percentage stocks
+    are missing. The numerical final-volume basis remains unresolved; the confirmed
+    defect is lost stage/assembly.
+  target_ids:
+  - CultureMech:005620
+  field_paths:
+  - ingredients
+  - solutions
+  - evidence
+  evidence_ids:
+  - dsmz492
+  - api492
+  rule_id: review-yaml-record/solution-assembly-and-stock-stage
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml
+    role: maintained normalized contributor
+- finding_id: f2
+  issue_key: culturemech-005620-missing-preparation-and-conflicting-atmosphere
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source assembly controls are absent and aerobic notes conflict
+  description: Neither target nor owner retains preparation, while Aerobic:Yes contradicts
+    the source anoxic workflow. The different sterilization routes, addition order,
+    Solution A pH 6.5 and iron-stock 0.1 N H2SO4 carrier are lost. StoredfinalpH6.8
+    is within the source range and is not itself wrong.
+  target_ids:
+  - CultureMech:005620
+  field_paths:
+  - preparation_steps
+  - notes
+  - evidence
+  - ph_range
+  evidence_ids:
+  - dsmz492
+  - api492
+  rule_id: review-yaml-record/staged-preparation-and-atmosphere
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml
+    role: maintained normalized contributor
+- finding_id: f3
+  issue_key: culturemech-005620-copper-hydrate-and-resazurin-form
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Copper monohydrate and sodium resazurin have incompatible generic mappings
+  description: Source CuSO4 x H2O is mapped to generic copper(II) sulfate CHEBI:23414
+    in both slots; sodium resazurin is mapped to neutralCHEBI8806. Other supplied
+    hydrate forms and explicitly named calciumD-pantothenate are supported; valid
+    canonical labels alone do not resolve the two source-form mismatches.
+  target_ids:
+  - CultureMech:005620
+  field_paths:
+  - ingredients[9].term
+  - ingredients[9].mediaingredientmech_chebi_term
+  - ingredients[10].term
+  evidence_ids:
+  - dsmz492
+  - chebi23414
+  - chebi8806
+  - chebi31345
+  - grounding
+  rule_id: review-yaml-record/exact-supplied-form
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml
+    role: maintained normalized contributor
+- finding_id: f4
+  issue_key: culturemech-005620-malformed-import-history
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Historical event timestamps remain malformed or timezone-unspecified
+  description: The import timestamp contains literal .fZ and the resolver event omits
+    an offset. Existing API-matching historical reports authenticate payload bytes
+    where the digest joins, but cannot authenticate historical access events or current
+    KOMODO content.
+  target_ids:
+  - CultureMech:005620
+  field_paths:
+  - curation_history[0].timestamp
+  - curation_history[1].timestamp
+  - data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml::curation_history[0].timestamp
+  evidence_ids:
+  - local0
+  - local1
+  - history-auth
+  rule_id: review-yaml-record/append-only-provenance
+  native_severity: P3
+  normalization_reason: P3 is normalized to minor because this is a bounded completeness,
+    traceability or presentation gap without a contradicted source recipe.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml
+    role: maintained normalized contributor
+actions:
+- action_id: action1
+  description: Restore the exact five-solution structure, component stages and absolute
+    doses. Preserve the source/provider954 versus954.5 ml and nominal1005 ml boundaries.
+    Do not automatically replace direct values with inferred final concentrations.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:005620
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action2
+  description: Add source-scoped preparation and root evidence, reconcile the aerobic
+    note, and preserve the complete6.8–7.0 range while crediting the existing6.8 value.
+    Keep KOH unquantified and confined to its stated Solution A stage.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:005620
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action3
+  description: Resolve exact supplied monohydrate and sodium-salt identifiers from
+    authorities while retaining source stock amounts and units. Do not import unrelated
+    pentahydrate assumptions or neutral-form molar masses.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:005620
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action4
+  description: Preserve original event bytes and append any verified corrective/context
+    event with the actual current curation date. Correct future timestamp generation
+    without rewriting historical timestamps or treating current source access as old
+    access.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:005620
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+limitations:
+- The exact KOMODO 492 endpoint returnedHTTP 403; historic mapping and API payload
+  authentication do not establish a fresh KOMODO recipe.
+- No explicit complete-medium final volume is given. Nominal doses sum1005 ml; Solution
+  A listed inner liquids total954.5 ml versus its stated954 ml dose/provider volume.
+  No definitive final concentration or measured volume is inferred.
+- Vitamin stock D is an identity-preserving route to the 10x stock, not evidence for
+  double dosing. No strain-specific growth assertion, source-unstated autoclave settings
+  or replacement hydrate is invented.
+- The current MIM snapshot and exact OLS labels are present-day correspondence evidence,
+  not proof of historical catalog validity. No source records were edited.
+notes:
+- Read-only scientific review. No source edits, native save, Git mutation or publication.
+  All raw captures, failed access bodies, commands, times and original stdout/stderr
+  remain in the adjacent private evidence directory.
