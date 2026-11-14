@@ -1,0 +1,1247 @@
+# Non-operational review: Columbia blood medium
+
+- Review: 20261028T114051Z-culturemech-006311-nonoperational-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T11:32:57.753164Z
+- Finished UTC: 2026-10-28T11:40:51.049174Z
+- Reviewer: Codex root (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: false
+
+## Summary
+
+Partial non-operational identity, lineage, provenance and structural review. Thirteen strain-specific accessions have unverified synonym scope, and historical timestamps have provenance defects. No operational recipe or culture correction is proposed.
+
+## Scope And Provenance
+
+Non-operational identity/lineage/provenance/schema only; existing operational content unassessed.
+
+Selection: Authoritative batch065 selection index09
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:006311 | data/merge_yaml/merged/COLUMBIA_BLOOD_MEDIUM.yaml | generated | columbia_blood_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Canonical schema | passed | True | CultureMech:006311 | Actual exit0. References diagnostic checked zero references; manual metadata joins are separate. |
+| Canonical strict | passed | True | CultureMech:006311 | Actual exit0. References diagnostic checked zero references; manual metadata joins are separate. |
+| Canonical terms | passed | True | CultureMech:006311 | Actual exit0. References diagnostic checked zero references; manual metadata joins are separate. |
+| Canonical references | passed | True | CultureMech:006311 | Actual exit0. References diagnostic checked zero references; manual metadata joins are separate. |
+
+## Scientific And Domain Assessments
+
+### Exact target, lineage and collection identity
+
+identity: concern. Targets: CultureMech:006311.
+
+The selected persistent ID and fifteen declared contributors resolve exactly. Thirteen source-variant accessions remain distinct identities, even though the generated synonym list combines their names. DSM13661 and ATCC43300 identify the same named S. aureus strain in the freshly inspected authoritative metadata; this is not a formulation or growth assertion.
+
+### Maintained relationships and historical observations
+
+provenance: concern. Targets: CultureMech:006311.
+
+Existing reciprocal base-source duplicate links and the September TOGO relationship update are credited as recorded provenance; local referenced paths, IDs and names resolve. No operational equivalence is authenticated. Thirty-two exact historical report headers were read as provenance only; their quantitative claims and recommendations remain unassessed. Current code observations do not establish historical execution.
+
+### Restricted review boundary
+
+scope: not_applicable. Targets: CultureMech:006311.
+
+One explicitly merged contributor names a strain identified by the authority as MRSA. This partial review is limited to identity, lineage, provenance and schema. Operational formulation, culture conditions, supplied forms, resistance assays and experimental results are excluded.
+
+### Private unchanged quantity census
+
+quantity: not_applicable. Targets: CultureMech:006311.
+
+240 existing concentration fields across the target and fifteen contributors are preserved privately and marked not_assessed. No amounts, calculations, stock strengths or corrective culture instructions are reproduced in the public review.
+
+### Structural identifier preservation
+
+grounding: unknown. Targets: CultureMech:006311.
+
+Existing identifier slots are retained with exact membership joins to the pinned packaged MIM snapshot. No external chemical-form validation, replacement or historical-ID certification is performed. Native term success and current row membership are not scientific validation.
+
+### Original structural diagnostics
+
+schema: supported. Targets: CultureMech:006311.
+
+All four original canonical diagnostics passed once. The strict check reported zero errors and the references check examined zero references. Their full streams are preserved; manual local metadata joins provide separate bounded evidence.
+
+## Findings
+
+### f1: Strain-specific source accessions are presented as synonyms without authenticated equivalence
+
+major / open / confirmed; issue key: culturemech-006311-unverified-strain-synonym-scope.
+
+The generated target lists thirteen distinctly accessioned strain-specific medium wrappers as synonyms of one generic medium. Their labels explicitly say modified for DSM strains, but exact source equivalence has not been authenticated. The current KOMODO detail/catalogue endpoints are inaccessible. Existing base-source duplicate links and historical import statements do not establish equivalence for those thirteen accessions. This is a metadata-scope finding; no difference in formulation, suitability or growth is asserted.
+
+### f2: Historical import timestamps are malformed or lack a timezone
+
+minor / open / confirmed; issue key: culturemech-006311-history-timestamp-provenance.
+
+The selected target and KOMODO contributors retain an import timestamp ending in .fZ and a later resolver timestamp without a timezone. These strings do not establish an unambiguous UTC event time. Preserve the historical entries unchanged and distinguish any new corrective observation from the unavailable historical instant. The current KOMODO writer still uses time.strftime with a %f directive; this is a present writer observation, not historical execution proof.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Keep each strain-specific source accession and stable record identity explicitly distinct until a separately scoped identity review establishes the relationship. A metadata-only follow-up should qualify the unverified synonym scope and preserve existing source-duplicate provenance. Do not transfer or repair formulations, derive culture variants, or blanket-regenerate this target as part of that follow-up.
+
+- All thirteen source accessions and stable owner IDs remain separately traceable; no unverified equivalence is promoted.
+- Any metadata correction preserves every operational field byte-for-byte and records unresolved source access honestly.
+- No organism-growth, chemical-form, recipe, stock, dose or preparation assertion is introduced or certified.
+
+### a2
+
+Correct future history timestamp generation in the maintained KOMODO writer to emit actual timezone-aware UTC instants. Preserve prior records and append a truthful clarification where needed; do not infer or rewrite an unavailable historical timestamp.
+
+- A focused timestamp check verifies a parseable timezone-aware UTC string for a newly generated event.
+- Existing history remains append-only and every operational field remains unchanged.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| target | data/merge_yaml/merged/COLUMBIA_BLOOD_MEDIUM.yaml; Exact non-operational metadata scope | context_only | Entire selected target read; only identity, lineage, provenance and structure assessed. Operational assertions excluded. |
+| owner-1 | data/normalized_yaml/bacterial/KOMODO_693_COLUMBIA_BLOOD_medium.yaml; Exact non-operational metadata scope | context_only | Exact maintained contributor identity and full history metadata read; operational quantities remain unchanged and unassessed. |
+| owner-2 | data/normalized_yaml/bacterial/columbia_blood_medium.yaml; Exact non-operational metadata scope | context_only | Exact maintained contributor identity and full history metadata read; operational quantities remain unchanged and unassessed. |
+| owner-3 | data/normalized_yaml/bacterial/medium_693_modified_for_dsm_13661.yaml; Exact non-operational metadata scope | context_only | Exact maintained contributor identity and full history metadata read; operational quantities remain unchanged and unassessed. |
+| owner-4 | data/normalized_yaml/bacterial/medium_693_modified_for_dsm_13760.yaml; Exact non-operational metadata scope | context_only | Exact maintained contributor identity and full history metadata read; operational quantities remain unchanged and unassessed. |
+| owner-5 | data/normalized_yaml/bacterial/medium_693_modified_for_dsm_18826.yaml; Exact non-operational metadata scope | context_only | Exact maintained contributor identity and full history metadata read; operational quantities remain unchanged and unassessed. |
+| owner-6 | data/normalized_yaml/bacterial/medium_693_modified_for_dsm_19736.yaml; Exact non-operational metadata scope | context_only | Exact maintained contributor identity and full history metadata read; operational quantities remain unchanged and unassessed. |
+| owner-7 | data/normalized_yaml/bacterial/medium_693_modified_for_dsm_20600.yaml; Exact non-operational metadata scope | context_only | Exact maintained contributor identity and full history metadata read; operational quantities remain unchanged and unassessed. |
+| owner-8 | data/normalized_yaml/bacterial/medium_693_modified_for_dsm_21031.yaml; Exact non-operational metadata scope | context_only | Exact maintained contributor identity and full history metadata read; operational quantities remain unchanged and unassessed. |
+| owner-9 | data/normalized_yaml/bacterial/medium_693_modified_for_dsm_21825.yaml; Exact non-operational metadata scope | context_only | Exact maintained contributor identity and full history metadata read; operational quantities remain unchanged and unassessed. |
+| owner-10 | data/normalized_yaml/bacterial/medium_693_modified_for_dsm_21843.yaml; Exact non-operational metadata scope | context_only | Exact maintained contributor identity and full history metadata read; operational quantities remain unchanged and unassessed. |
+| owner-11 | data/normalized_yaml/bacterial/medium_693_modified_for_dsm_21845.yaml; Exact non-operational metadata scope | context_only | Exact maintained contributor identity and full history metadata read; operational quantities remain unchanged and unassessed. |
+| owner-12 | data/normalized_yaml/bacterial/medium_693_modified_for_dsm_22221.yaml; Exact non-operational metadata scope | context_only | Exact maintained contributor identity and full history metadata read; operational quantities remain unchanged and unassessed. |
+| owner-13 | data/normalized_yaml/bacterial/medium_693_modified_for_dsm_22886.yaml; Exact non-operational metadata scope | context_only | Exact maintained contributor identity and full history metadata read; operational quantities remain unchanged and unassessed. |
+| owner-14 | data/normalized_yaml/bacterial/medium_693_modified_for_dsm_22909.yaml; Exact non-operational metadata scope | context_only | Exact maintained contributor identity and full history metadata read; operational quantities remain unchanged and unassessed. |
+| owner-15 | data/normalized_yaml/bacterial/medium_693_modified_for_dsm_23385.yaml; Exact non-operational metadata scope | context_only | Exact maintained contributor identity and full history metadata read; operational quantities remain unchanged and unassessed. |
+| dependency | data/normalized_yaml/bacterial/TOGO_M2582_Columbia_Blood_Medium.yaml; Exact non-operational metadata scope | context_only | Existing source-duplicate relationship metadata and history read; this sibling is not a declared merged contributor and its operational content is excluded. |
+| quantities | REVIEW_WORK/batch065/record09/quantity-inventory.json; Exact non-operational metadata scope | context_only | Exact private structural/provenance inventory within declared restricted scope; operational values are not endorsed or reproduced in the review. |
+| scalars | REVIEW_WORK/batch065/record09/field-census.json; Exact non-operational metadata scope | context_only | Exact private structural/provenance inventory within declared restricted scope; operational values are not endorsed or reproduced in the review. |
+| numeric | REVIEW_WORK/batch065/record09/numeric-field-census.json; Exact non-operational metadata scope | context_only | Exact private structural/provenance inventory within declared restricted scope; operational values are not endorsed or reproduced in the review. |
+| groundings | REVIEW_WORK/batch065/record09/grounding-inventory.json; Exact non-operational metadata scope | context_only | Exact private structural/provenance inventory within declared restricted scope; operational values are not endorsed or reproduced in the review. |
+| history | REVIEW_WORK/batch065/record09/history-inventory.json; Exact non-operational metadata scope | context_only | Exact private structural/provenance inventory within declared restricted scope; operational values are not endorsed or reproduced in the review. |
+| metadata | REVIEW_WORK/batch065/record09/metadata-reader.json; Exact non-operational metadata scope | context_only | Exact private structural/provenance inventory within declared restricted scope; operational values are not endorsed or reproduced in the review. |
+| links | REVIEW_WORK/batch065/record09/internal-reference-joins.json; Exact non-operational metadata scope | context_only | Exact private structural/provenance inventory within declared restricted scope; operational values are not endorsed or reproduced in the review. |
+| old-reports | REVIEW_WORK/batch065/record09/historical-report-scope.json; Exact non-operational metadata scope | context_only | Exact private structural/provenance inventory within declared restricted scope; operational values are not endorsed or reproduced in the review. |
+| identity | REVIEW_WORK/batch065/record09/identity-and-scope.json; Exact non-operational metadata scope | context_only | Exact private structural/provenance inventory within declared restricted scope; operational values are not endorsed or reproduced in the review. |
+| lineage-search | REVIEW_WORK/batch065/record09/local-inventory.json; Exact non-operational metadata scope | context_only | Exact private structural/provenance inventory within declared restricted scope; operational values are not endorsed or reproduced in the review. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Exact matching rows recorded privately | context_only | Current packaged ID-row membership only; not chemical correctness. |
+| mim-meta | src/culturemech/data/mediaingredientmech/label_index.metadata.json; Complete metadata | context_only | Packaged row count, checksum and source commit verified. |
+| writer-merger | src/culturemech/merge/merger.py; merge_group; _build_synonyms; _extract_source_id | context_only | Current merge_group invokes conservative compatibility before combining multiple records. _build_synonyms carries differing names and source identifiers into synonyms; that code alone does not authenticate source equivalence or historical execution. |
+| writer-formulation | src/culturemech/merge/formulation.py; Complete file | context_only | Current required-field equality and provenance unions preserve assertions without certifying them. No merge/regeneration or source-equivalence inference was run. |
+| writer-komodo | src/culturemech/import/komodo_web_importer.py; _convert_to_culturemech | context_only | Current converter preserves source identifiers, but builds its history timestamp using time.strftime with %f. Current code is not proof of the historical execution that produced the observed malformed values. |
+| dsm13661 | https://www.dsmz.de/collection/catalogue/details/culture/DSM-13661; Name, collection accession and strain designation only | supports | Collection identity metadata only; operational source sections excluded. |
+| bacdive14464 | https://bacdive.dsmz.de/strain/14464; Name, collection accession and strain designation only | supports | Collection identity metadata only; operational source sections excluded. |
+| komodo693 | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=693; Actual HTTP error response | unknown | HTTP403 prevents exact source-catalogue authentication; not negative evidence for existence. |
+| komodoList | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; Actual HTTP error response | unknown | HTTP403 prevents exact source-catalogue authentication; not negative evidence for existence. |
+| check-schema | REVIEW_WORK/batch065/record09/validate-schema.json | supports | Original canonical result, exact argv and complete stdout/stderr retained. Scientific and operational content not certified. |
+| check-strict | REVIEW_WORK/batch065/record09/validate-strict.json | supports | Original canonical result, exact argv and complete stdout/stderr retained. Scientific and operational content not certified. |
+| check-terms | REVIEW_WORK/batch065/record09/validate-terms.json | supports | Original canonical result, exact argv and complete stdout/stderr retained. Scientific and operational content not certified. |
+| check-references | REVIEW_WORK/batch065/record09/validate-references.json | supports | Original canonical result, exact argv and complete stdout/stderr retained. Scientific and operational content not certified. |
+
+## Limits And Additional Notes
+
+- Explicit partial, non-operational review with scientific_review:false. All formulation, concentration, stock, preparation, growth, chemical-form and experimental content is unchanged and unassessed.
+- The entire selected target and main DSMZ owner were initially read before the accession triage completed. Subsequent owner/dependency reading was restricted to identity and provenance/history metadata. Operational fields are mechanically preserved, not scientifically assessed.
+- Fresh DSMZ and BacDive pages were used only for collection identity and the scope boundary. No operational recipe or cultivation data were extracted from those captures; KOMODO detail/catalogue requests returned HTTP403. No MediaDive recipe/API or DSMZ formulation PDF was requested. Other strain identities are not taxonomically authenticated, and no strain-specific cultivation changes are proposed.
+- Exact KOMODO catalogue/detail access returned HTTP403. Historical source-access events, thirteen source-variant equivalence claims and the original source-to-formulation joins remain unresolved.
+- The dependency TOGO M2582 is not a declared contributor to this merge. Its local relationship metadata is checked; operational content and source assertions are not adopted.
+- All thirty-two historical report headers were read for record identity and provenance; their operational tables, source objects and recommendations were excluded. No prior concentration verdict is promoted to fresh scientific review.
+- The historical repair_columbia_blood_score40.py filename was not found in a full checkout recursive search including hidden and ignored paths. Its recorded event is retained; absence of the current file does not disprove the historical event.
+- Current MIM snapshot commit 6643131b0f12ab40b66f98135245fca04027e0e9 only. No chemical ontology or growth inference follows from structural ID-row matches.
+- No formal review validate/save, recipe edit, Git mutation, provider spending or publication was performed by the author. Corpus-only checks and scientific validation are outside this restricted observation.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T114051Z-culturemech-006311-nonoperational-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Non-operational review: Columbia blood medium'
+started_at: '2026-10-28T11:32:57.753164Z'
+finished_at: '2026-10-28T11:40:51.049174Z'
+reviewer:
+  identity: Codex root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Read-only identity/provenance review of the exact record and
+    source metadata; no authoring or curation of its scientific content.
+skill: review-yaml-record
+completion: partial
+verdict: needs_curation
+scientific_review: false
+summary: Partial non-operational identity, lineage, provenance and structural review.
+  Thirteen strain-specific accessions have unverified synonym scope, and historical
+  timestamps have provenance defects. No operational recipe or culture correction
+  is proposed.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/culturemech_id_registry.tsv
+    sha256: 0d059720f5c474b63daff8d5010fc56942a5a3ac30761ee75ce9e84801d555a5
+    role: context
+  - path: data/merge_yaml/merged/COLUMBIA_BLOOD_MEDIUM.yaml
+    sha256: 29f120361641715eed90bcdff5e36d8cf4cca3f1200a86a8bc0040bcf353c77a
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_693_COLUMBIA_BLOOD_medium.yaml
+    sha256: 4cafb6d2a3ac56b17ddabc0ea9052b12bf26d4839fd9dcad4bc2e95e58cdd57b
+    role: context
+  - path: data/normalized_yaml/bacterial/TOGO_M2582_Columbia_Blood_Medium.yaml
+    sha256: 1650713011b19ac6f84826a5d09c87327511650bab2960eeb0d875f685b786e6
+    role: context
+  - path: data/normalized_yaml/bacterial/columbia_blood_medium.yaml
+    sha256: c3ccf89f1e981e9e163da02dfbe9195ed16ecd93e4b2413d2d49ab8853fef5e4
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_13661.yaml
+    sha256: 2a73ccd3001ce7715b5f4384a63ed77610f45a52af354f8c700cbf7e16e2511a
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_13760.yaml
+    sha256: 0835c78c67990f9c53499606760a831dc05be9cebbcf64bb76f7a477124622d1
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_18826.yaml
+    sha256: 790bbab3914bbfc7ad2cb092db1ffe57bd8d4667350e93442867235493af948a
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_19736.yaml
+    sha256: b95bb79e305625eb07eb47afd368831c7721d3ba19ac506f0880ee4329bf0e91
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_20600.yaml
+    sha256: c0372b4333c43aa6efd2343c02f7ec321a646f0ad7af341fddd3271e7667b705
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_21031.yaml
+    sha256: a4bb8fa6af205ae2303be50c8f2b86c7022caeaed8d40228f3e6665ee3ad6a86
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_21825.yaml
+    sha256: 5771a34383d03c060f3520f516daa46fcd44e2075832ccb63301521bfb9964f2
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_21843.yaml
+    sha256: 4356b6cbb2f23b266b0e21b0e79f50ac7532b047acacf11aadb7926e3472d0ee
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_21845.yaml
+    sha256: 05043ff954113f83c7853da0cc1d1d706f03ec44e5f6d888e039889ffaee1c06
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_22221.yaml
+    sha256: eac85db6583904f69491f3d9b9de0dd22f007758107437e1795f56355b4dd8be
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_22886.yaml
+    sha256: 9a0acd05933853521d1efd8c7fff9e69bf81c871ae61a2529f78d789d2da6a4a
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_22909.yaml
+    sha256: 91bf16871b5e2524f66925a47155431e133eb8b6b01af8036785cc9ee35fc2c5
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_23385.yaml
+    sha256: 7d6627f47e8c2707ba2faf10e89896d6ddc06cd1c0b566155e13242c32250387
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/KOMODO_693_COLUMBIA_BLOOD_medium.yaml.md
+    sha256: 27485c13d64a731786f67cd9bf767a5477f62275c1548ad3cd3fa44ee4970645
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/medium_693_modified_for_dsm_13661.yaml.md
+    sha256: ffb1d28b3c60c5e53450fa0e39e5f8a8a859c13e7d02889df8ceb038b5c8f6a2
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/medium_693_modified_for_dsm_13760.yaml.md
+    sha256: 8fc644d4d130ad0627139dc6e047dad17c4bd3870b6c458390afa830665c98e4
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/medium_693_modified_for_dsm_18826.yaml.md
+    sha256: 0c95e61aa0327b3b0b7979747d60ce73766e444d92e554c22822dd5241e5d164
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/medium_693_modified_for_dsm_19736.yaml.md
+    sha256: cab90edc0415cff87c8c14b27b16087b7bd047f794591a57c5874f51156c2201
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/medium_693_modified_for_dsm_20600.yaml.md
+    sha256: 01a45c4b520bc1d93358ca2d47c20970db22a92f7e1b67247d7bcb97b5ad0867
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/medium_693_modified_for_dsm_21031.yaml.md
+    sha256: 04fda301a8ca42a71062dd2bd5c5613cf1e9c7263dc7efd04d3b79b197589b8b
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/medium_693_modified_for_dsm_21825.yaml.md
+    sha256: 184ce0598dc354197a1bb1fb0739ff3b9563e4ba461395ceea17bf87625f94d3
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/medium_693_modified_for_dsm_21843.yaml.md
+    sha256: c4e50782bd93ec7f7aefff2b74178c40a36b5500572e7ec1f6f0076c1a9b1fe7
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/medium_693_modified_for_dsm_21845.yaml.md
+    sha256: 77d2822d496cf32ec51d8c3030db87a77ec71a8176d0e0d9bee547a9b40edeca
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/medium_693_modified_for_dsm_22221.yaml.md
+    sha256: 7374455004203e412303d7be5295d2c244a2b9c91a8a2c927b55cd1ae6ad11ab
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/medium_693_modified_for_dsm_22886.yaml.md
+    sha256: 2a0e5056784aae2b3dffacc25249de29951c238fa75d68f2e63758c9d601a72f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/medium_693_modified_for_dsm_22909.yaml.md
+    sha256: 0d594ea9b1224550a581d5e9d394adff6f59280e6431e494d35b45071777f615
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/medium_693_modified_for_dsm_23385.yaml.md
+    sha256: d63c261ad236a6f3c49ab9910b189b0b322b0b98074eccae030db70357ba6d55
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/columbia_blood_medium.yaml.md
+    sha256: 98aa06b3bb570421c772c48e09e255c1435c738b3065dba66e5af514d5309213
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/COLUMBIA_BLOOD_MEDIUM.md
+    sha256: b681b21a313af36c16679b6f6ccd504a5745cd7a1f3c5af96743f5ae71898527
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_693_COLUMBIA_BLOOD_medium.md
+    sha256: be33724b69c3dee8ebbd2145ca3d47edbd7f8754912857cc0626247a007006ed
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M2582_Columbia_Blood_Medium.md
+    sha256: f484a647ad35820a794f3f5e4c6690244577e9296c5fc5542dcbfe6f15866e2c
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/columbia_blood_medium.md
+    sha256: 3559f13a4a003ccb9064b76467823ff5722a952f5705c389699dad6bd489c4eb
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/medium_693_modified_for_dsm_13661.md
+    sha256: 7af730e8f423f5587aeb89aa970a726bae2aa758448559bc4dc46a9b5d3b799c
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/medium_693_modified_for_dsm_13760.md
+    sha256: 1d331886b78353fbd9329bf1f6f0207dff592b967b7b53ccec747f082a4e7e68
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/medium_693_modified_for_dsm_18826.md
+    sha256: e67aeb96ff8de9de5973a52add55557ecfe695ce3f1698c21777768792779e31
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/medium_693_modified_for_dsm_19736.md
+    sha256: b833d7af4cd4c5d8b804969bb8a784035dbb446164b3e63c355b83f333cce0b5
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/medium_693_modified_for_dsm_20600.md
+    sha256: 9aeb642bbeae88f26cc8d19bee3b1791a44fd97354a0285d03c06cfc0053657c
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/medium_693_modified_for_dsm_21031.md
+    sha256: 5be80d113568628facad41990a3301df172f453853a7d96ea93c193851b16e97
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/medium_693_modified_for_dsm_21825.md
+    sha256: eb64f5e0052892b3875b1fe7965ef69322e313eb0ce2f66c6b15563a20ab165c
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/medium_693_modified_for_dsm_21843.md
+    sha256: 4f72dbe74e2ec29b49cc7be9559946de433ceca9b6ab77008c5c2b945dea4610
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/medium_693_modified_for_dsm_21845.md
+    sha256: 2350c4f519c0d3ed0767e0c4fd9679cec336f5905484daa8c4314010694c2274
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/medium_693_modified_for_dsm_22221.md
+    sha256: 04512aee07f10f0fcbd9493e8d3a6c68207162baa1bd023060c92e7645ce0827
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/medium_693_modified_for_dsm_22886.md
+    sha256: deccc4d8d6b246dd8fa78b06d3fe84030c127c35fa382b038deed596911ed016
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/medium_693_modified_for_dsm_22909.md
+    sha256: d174aac4d8dec3c15c462feff2db1d9e63cffc16846af5ab3954b73817e5de17
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/medium_693_modified_for_dsm_23385.md
+    sha256: 0594a16d464b4ad6f4025fbbf437c7f6250a11d46ffad21330559c86b4150c2f
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/assign_culturemech_ids.py
+    sha256: 81ed213c52804ae98a8add02730d757595e3287fa7b01bc88aee0e587bbb01e1
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/record_target_class.py
+    sha256: 468fcbfd2362ca08b7066d6f21adf85c04f21ab40f80e60995522b4edc0f6349
+    role: context
+  - path: scripts/repair_komodo_strain_backlinks.py
+    sha256: 06d56149f4e8333f31ae6dd7e4b9127881227810bc957429c849ba00de21c963
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/resolve_komodo_compositions.py
+    sha256: f45bc52a8efaa66c9a93c109a40c7d2763ac9f49c9009d92a4c0a0a41b7c28da
+    role: context
+  - path: scripts/review_komodo_concentration_evidence.py
+    sha256: 4470019965d068a53587be3668c3872daedc1505dab1bc6e2d1ed937ba409658
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: 6116d95493b8f91faed19956301291a73d090a3b83671303650a561798933456
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/komodo_importer.py
+    sha256: 702733bd580e4ba28f77e183e1e8268f17ea2c1041cf7b3addd92919624f2706
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+scope:
+  description: Non-operational identity/lineage/provenance/schema only; existing operational
+    content unassessed.
+  selection: Authoritative batch065 selection index09
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:006311
+targets:
+- target_id: CultureMech:006311
+  path: data/merge_yaml/merged/COLUMBIA_BLOOD_MEDIUM.yaml
+  label: columbia_blood_medium
+  kind: generated
+  record_class: MediaRecipe
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_693_COLUMBIA_BLOOD_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/columbia_blood_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_13661.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_13760.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_18826.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_19736.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_20600.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_21031.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_21825.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_21843.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_21845.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_22221.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_22886.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_22909.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_23385.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: schema
+  name: Canonical schema
+  status: passed
+  required: true
+  summary: Actual exit0. References diagnostic checked zero references; manual metadata
+    joins are separate.
+  target_ids:
+  - CultureMech:006311
+  command: just validate-schema data/merge_yaml/merged/COLUMBIA_BLOOD_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-schema
+- check_id: strict
+  name: Canonical strict
+  status: passed
+  required: true
+  summary: Actual exit0. References diagnostic checked zero references; manual metadata
+    joins are separate.
+  target_ids:
+  - CultureMech:006311
+  command: just validate-strict data/merge_yaml/merged/COLUMBIA_BLOOD_MEDIUM.yaml
+    --out REVIEW_WORK/batch065/record09/strict.tsv --workers 1 --quiet
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-strict
+- check_id: terms
+  name: Canonical terms
+  status: passed
+  required: true
+  summary: Actual exit0. References diagnostic checked zero references; manual metadata
+    joins are separate.
+  target_ids:
+  - CultureMech:006311
+  command: just validate-terms data/merge_yaml/merged/COLUMBIA_BLOOD_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-terms
+- check_id: references
+  name: Canonical references
+  status: passed
+  required: true
+  summary: Actual exit0. References diagnostic checked zero references; manual metadata
+    joins are separate.
+  target_ids:
+  - CultureMech:006311
+  command: just validate-references data/merge_yaml/merged/COLUMBIA_BLOOD_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-references
+evidence:
+- evidence_id: target
+  kind: record_content
+  reference: data/merge_yaml/merged/COLUMBIA_BLOOD_MEDIUM.yaml
+  locator: Exact non-operational metadata scope
+  accessed_at: '2026-10-28T11:39:32.082351Z'
+  support: context_only
+  summary: Entire selected target read; only identity, lineage, provenance and structure
+    assessed. Operational assertions excluded.
+  snapshot_sha256: 29f120361641715eed90bcdff5e36d8cf4cca3f1200a86a8bc0040bcf353c77a
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_693_COLUMBIA_BLOOD_medium.yaml
+  locator: Exact non-operational metadata scope
+  accessed_at: '2026-10-28T11:39:32.082534Z'
+  support: context_only
+  summary: Exact maintained contributor identity and full history metadata read; operational
+    quantities remain unchanged and unassessed.
+  snapshot_sha256: 4cafb6d2a3ac56b17ddabc0ea9052b12bf26d4839fd9dcad4bc2e95e58cdd57b
+- evidence_id: owner-2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/columbia_blood_medium.yaml
+  locator: Exact non-operational metadata scope
+  accessed_at: '2026-10-28T11:39:32.082560Z'
+  support: context_only
+  summary: Exact maintained contributor identity and full history metadata read; operational
+    quantities remain unchanged and unassessed.
+  snapshot_sha256: c3ccf89f1e981e9e163da02dfbe9195ed16ecd93e4b2413d2d49ab8853fef5e4
+- evidence_id: owner-3
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_13661.yaml
+  locator: Exact non-operational metadata scope
+  accessed_at: '2026-10-28T11:39:32.082581Z'
+  support: context_only
+  summary: Exact maintained contributor identity and full history metadata read; operational
+    quantities remain unchanged and unassessed.
+  snapshot_sha256: 2a73ccd3001ce7715b5f4384a63ed77610f45a52af354f8c700cbf7e16e2511a
+- evidence_id: owner-4
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_13760.yaml
+  locator: Exact non-operational metadata scope
+  accessed_at: '2026-10-28T11:39:32.082604Z'
+  support: context_only
+  summary: Exact maintained contributor identity and full history metadata read; operational
+    quantities remain unchanged and unassessed.
+  snapshot_sha256: 0835c78c67990f9c53499606760a831dc05be9cebbcf64bb76f7a477124622d1
+- evidence_id: owner-5
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_18826.yaml
+  locator: Exact non-operational metadata scope
+  accessed_at: '2026-10-28T11:39:32.082627Z'
+  support: context_only
+  summary: Exact maintained contributor identity and full history metadata read; operational
+    quantities remain unchanged and unassessed.
+  snapshot_sha256: 790bbab3914bbfc7ad2cb092db1ffe57bd8d4667350e93442867235493af948a
+- evidence_id: owner-6
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_19736.yaml
+  locator: Exact non-operational metadata scope
+  accessed_at: '2026-10-28T11:39:32.082649Z'
+  support: context_only
+  summary: Exact maintained contributor identity and full history metadata read; operational
+    quantities remain unchanged and unassessed.
+  snapshot_sha256: b95bb79e305625eb07eb47afd368831c7721d3ba19ac506f0880ee4329bf0e91
+- evidence_id: owner-7
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_20600.yaml
+  locator: Exact non-operational metadata scope
+  accessed_at: '2026-10-28T11:39:32.082671Z'
+  support: context_only
+  summary: Exact maintained contributor identity and full history metadata read; operational
+    quantities remain unchanged and unassessed.
+  snapshot_sha256: c0372b4333c43aa6efd2343c02f7ec321a646f0ad7af341fddd3271e7667b705
+- evidence_id: owner-8
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_21031.yaml
+  locator: Exact non-operational metadata scope
+  accessed_at: '2026-10-28T11:39:32.082693Z'
+  support: context_only
+  summary: Exact maintained contributor identity and full history metadata read; operational
+    quantities remain unchanged and unassessed.
+  snapshot_sha256: a4bb8fa6af205ae2303be50c8f2b86c7022caeaed8d40228f3e6665ee3ad6a86
+- evidence_id: owner-9
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_21825.yaml
+  locator: Exact non-operational metadata scope
+  accessed_at: '2026-10-28T11:39:32.082714Z'
+  support: context_only
+  summary: Exact maintained contributor identity and full history metadata read; operational
+    quantities remain unchanged and unassessed.
+  snapshot_sha256: 5771a34383d03c060f3520f516daa46fcd44e2075832ccb63301521bfb9964f2
+- evidence_id: owner-10
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_21843.yaml
+  locator: Exact non-operational metadata scope
+  accessed_at: '2026-10-28T11:39:32.082737Z'
+  support: context_only
+  summary: Exact maintained contributor identity and full history metadata read; operational
+    quantities remain unchanged and unassessed.
+  snapshot_sha256: 4356b6cbb2f23b266b0e21b0e79f50ac7532b047acacf11aadb7926e3472d0ee
+- evidence_id: owner-11
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_21845.yaml
+  locator: Exact non-operational metadata scope
+  accessed_at: '2026-10-28T11:39:32.082758Z'
+  support: context_only
+  summary: Exact maintained contributor identity and full history metadata read; operational
+    quantities remain unchanged and unassessed.
+  snapshot_sha256: 05043ff954113f83c7853da0cc1d1d706f03ec44e5f6d888e039889ffaee1c06
+- evidence_id: owner-12
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_22221.yaml
+  locator: Exact non-operational metadata scope
+  accessed_at: '2026-10-28T11:39:32.082784Z'
+  support: context_only
+  summary: Exact maintained contributor identity and full history metadata read; operational
+    quantities remain unchanged and unassessed.
+  snapshot_sha256: eac85db6583904f69491f3d9b9de0dd22f007758107437e1795f56355b4dd8be
+- evidence_id: owner-13
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_22886.yaml
+  locator: Exact non-operational metadata scope
+  accessed_at: '2026-10-28T11:39:32.082808Z'
+  support: context_only
+  summary: Exact maintained contributor identity and full history metadata read; operational
+    quantities remain unchanged and unassessed.
+  snapshot_sha256: 9a0acd05933853521d1efd8c7fff9e69bf81c871ae61a2529f78d789d2da6a4a
+- evidence_id: owner-14
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_22909.yaml
+  locator: Exact non-operational metadata scope
+  accessed_at: '2026-10-28T11:39:32.082827Z'
+  support: context_only
+  summary: Exact maintained contributor identity and full history metadata read; operational
+    quantities remain unchanged and unassessed.
+  snapshot_sha256: 91bf16871b5e2524f66925a47155431e133eb8b6b01af8036785cc9ee35fc2c5
+- evidence_id: owner-15
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_23385.yaml
+  locator: Exact non-operational metadata scope
+  accessed_at: '2026-10-28T11:39:32.082845Z'
+  support: context_only
+  summary: Exact maintained contributor identity and full history metadata read; operational
+    quantities remain unchanged and unassessed.
+  snapshot_sha256: 7d6627f47e8c2707ba2faf10e89896d6ddc06cd1c0b566155e13242c32250387
+- evidence_id: dependency
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M2582_Columbia_Blood_Medium.yaml
+  locator: Exact non-operational metadata scope
+  accessed_at: '2026-10-28T11:39:32.082863Z'
+  support: context_only
+  summary: Existing source-duplicate relationship metadata and history read; this
+    sibling is not a declared merged contributor and its operational content is excluded.
+  snapshot_sha256: 1650713011b19ac6f84826a5d09c87327511650bab2960eeb0d875f685b786e6
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch065/record09/quantity-inventory.json
+  locator: Exact non-operational metadata scope
+  accessed_at: '2026-10-28T11:39:32.082884Z'
+  support: context_only
+  summary: Exact private structural/provenance inventory within declared restricted
+    scope; operational values are not endorsed or reproduced in the review.
+  snapshot_sha256: c771b3d75038751d549f5c98d02927561c9d1aa8242ff09a517e21714b71db6e
+- evidence_id: scalars
+  kind: record_content
+  reference: REVIEW_WORK/batch065/record09/field-census.json
+  locator: Exact non-operational metadata scope
+  accessed_at: '2026-10-28T11:39:32.082946Z'
+  support: context_only
+  summary: Exact private structural/provenance inventory within declared restricted
+    scope; operational values are not endorsed or reproduced in the review.
+  snapshot_sha256: 8f13f0ba4ef9bf9cb0baa4105824c9b8caa4ef9bc72035693b654f8b23dcd1c5
+- evidence_id: numeric
+  kind: record_content
+  reference: REVIEW_WORK/batch065/record09/numeric-field-census.json
+  locator: Exact non-operational metadata scope
+  accessed_at: '2026-10-28T11:39:32.083120Z'
+  support: context_only
+  summary: Exact private structural/provenance inventory within declared restricted
+    scope; operational values are not endorsed or reproduced in the review.
+  snapshot_sha256: 69e49b030a4a68b42c6e81a9942dee4d56978f43783c02bfa42de413967cbc2a
+- evidence_id: groundings
+  kind: record_content
+  reference: REVIEW_WORK/batch065/record09/grounding-inventory.json
+  locator: Exact non-operational metadata scope
+  accessed_at: '2026-10-28T11:39:32.083229Z'
+  support: context_only
+  summary: Exact private structural/provenance inventory within declared restricted
+    scope; operational values are not endorsed or reproduced in the review.
+  snapshot_sha256: ddfa4c20bcbb5c2b7e485d677b14e56ec514e891dc6a144d1a0b08f21bccbf7e
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch065/record09/history-inventory.json
+  locator: Exact non-operational metadata scope
+  accessed_at: '2026-10-28T11:39:32.083369Z'
+  support: context_only
+  summary: Exact private structural/provenance inventory within declared restricted
+    scope; operational values are not endorsed or reproduced in the review.
+  snapshot_sha256: 6c306908654f1032e8c5f6ee5e79abf09446d554254cac29a6f0aad4f5b38b90
+- evidence_id: metadata
+  kind: record_content
+  reference: REVIEW_WORK/batch065/record09/metadata-reader.json
+  locator: Exact non-operational metadata scope
+  accessed_at: '2026-10-28T11:39:32.083406Z'
+  support: context_only
+  summary: Exact private structural/provenance inventory within declared restricted
+    scope; operational values are not endorsed or reproduced in the review.
+  snapshot_sha256: e8e0ea3a9219d2c8f6ce82f0054552b9d116a3f2b07ce79b5fed5c29a0da890a
+- evidence_id: links
+  kind: record_content
+  reference: REVIEW_WORK/batch065/record09/internal-reference-joins.json
+  locator: Exact non-operational metadata scope
+  accessed_at: '2026-10-28T11:39:32.083444Z'
+  support: context_only
+  summary: Exact private structural/provenance inventory within declared restricted
+    scope; operational values are not endorsed or reproduced in the review.
+  snapshot_sha256: 5d2aa12276eea2a4e040fc59406103cd20493677e6d142208f2abe869e43cc17
+- evidence_id: old-reports
+  kind: record_content
+  reference: REVIEW_WORK/batch065/record09/historical-report-scope.json
+  locator: Exact non-operational metadata scope
+  accessed_at: '2026-10-28T11:39:32.083462Z'
+  support: context_only
+  summary: Exact private structural/provenance inventory within declared restricted
+    scope; operational values are not endorsed or reproduced in the review.
+  snapshot_sha256: d495377614a9d6b8f5d9fe6d0f4f3eed25e048b706289191dd284f1e2a26f82b
+- evidence_id: identity
+  kind: record_content
+  reference: REVIEW_WORK/batch065/record09/identity-and-scope.json
+  locator: Exact non-operational metadata scope
+  accessed_at: '2026-10-28T11:39:32.083488Z'
+  support: context_only
+  summary: Exact private structural/provenance inventory within declared restricted
+    scope; operational values are not endorsed or reproduced in the review.
+  snapshot_sha256: 6e39f964b8110cc4a3bfb59ca49bff2da2b71908a8b6edb40ea0bff93ea23d3c
+- evidence_id: lineage-search
+  kind: record_content
+  reference: REVIEW_WORK/batch065/record09/local-inventory.json
+  locator: Exact non-operational metadata scope
+  accessed_at: '2026-10-28T11:39:32.083508Z'
+  support: context_only
+  summary: Exact private structural/provenance inventory within declared restricted
+    scope; operational values are not endorsed or reproduced in the review.
+  snapshot_sha256: a6c1781cc8713e1d78265b5fa2f39b08b8fb27c69297ef613925273831f6d6f7
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Exact matching rows recorded privately
+  accessed_at: '2026-10-28T11:39:32.083530Z'
+  support: context_only
+  summary: Current packaged ID-row membership only; not chemical correctness.
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: mim-meta
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+  locator: Complete metadata
+  accessed_at: '2026-10-28T11:39:32.083822Z'
+  support: context_only
+  summary: Packaged row count, checksum and source commit verified.
+  snapshot_sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+- evidence_id: writer-merger
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: merge_group; _build_synonyms; _extract_source_id
+  accessed_at: '2026-10-28T11:39:32.083840Z'
+  support: context_only
+  summary: Current merge_group invokes conservative compatibility before combining
+    multiple records. _build_synonyms carries differing names and source identifiers
+    into synonyms; that code alone does not authenticate source equivalence or historical
+    execution.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-formulation
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Complete file
+  accessed_at: '2026-10-28T11:39:32.083862Z'
+  support: context_only
+  summary: Current required-field equality and provenance unions preserve assertions
+    without certifying them. No merge/regeneration or source-equivalence inference
+    was run.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-komodo
+  kind: record_content
+  reference: src/culturemech/import/komodo_web_importer.py
+  locator: _convert_to_culturemech
+  accessed_at: '2026-10-28T11:39:32.083880Z'
+  support: context_only
+  summary: Current converter preserves source identifiers, but builds its history
+    timestamp using time.strftime with %f. Current code is not proof of the historical
+    execution that produced the observed malformed values.
+  snapshot_sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+- evidence_id: dsm13661
+  kind: authority
+  reference: https://www.dsmz.de/collection/catalogue/details/culture/DSM-13661
+  locator: Name, collection accession and strain designation only
+  accessed_at: '2026-10-28T11:34:49.389740Z'
+  support: supports
+  summary: Collection identity metadata only; operational source sections excluded.
+  snapshot_sha256: 2f5c1475b57cce035e907424d61cc8eaab94ca21005587a459cf8f126eb9491c
+- evidence_id: bacdive14464
+  kind: authority
+  reference: https://bacdive.dsmz.de/strain/14464
+  locator: Name, collection accession and strain designation only
+  accessed_at: '2026-10-28T11:34:51.181034Z'
+  support: supports
+  summary: Collection identity metadata only; operational source sections excluded.
+  snapshot_sha256: b4f7b20e2ba3fc1b3aa6b18d8e0d5633d9ca76e0aa4bbddbb979eca2105230a6
+- evidence_id: komodo693
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=693
+  locator: Actual HTTP error response
+  accessed_at: '2026-10-28T11:34:51.234978Z'
+  support: unknown
+  summary: HTTP403 prevents exact source-catalogue authentication; not negative evidence
+    for existence.
+  snapshot_sha256: a04a6ba811a378ad4c20b6c9b4bf38f0cb6021dd7f5f061f936bfdbe0a9660e1
+- evidence_id: komodoList
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Actual HTTP error response
+  accessed_at: '2026-10-28T11:34:51.334746Z'
+  support: unknown
+  summary: HTTP403 prevents exact source-catalogue authentication; not negative evidence
+    for existence.
+  snapshot_sha256: 2c9c55dd9733a39ee69c6e9ac298ddcffc1271c97bc7edc7b85ab56ee872c9c1
+- evidence_id: check-schema
+  kind: validation
+  reference: REVIEW_WORK/batch065/record09/validate-schema.json
+  accessed_at: '2026-10-28T11:32:58.858938Z'
+  support: supports
+  summary: Original canonical result, exact argv and complete stdout/stderr retained.
+    Scientific and operational content not certified.
+  snapshot_sha256: 5154346e0fd7c188b462b601cb481a1e99b172c9ec4824a22cca7ac1468a7cca
+- evidence_id: check-strict
+  kind: validation
+  reference: REVIEW_WORK/batch065/record09/validate-strict.json
+  accessed_at: '2026-10-28T11:32:59.815140Z'
+  support: supports
+  summary: Original canonical result, exact argv and complete stdout/stderr retained.
+    Scientific and operational content not certified.
+  snapshot_sha256: ebb9c68d4dec4ff31b687082b1ef2e64ff4bf2b2a477d389799cad420da90d34
+- evidence_id: check-terms
+  kind: validation
+  reference: REVIEW_WORK/batch065/record09/validate-terms.json
+  accessed_at: '2026-10-28T11:33:00.826793Z'
+  support: supports
+  summary: Original canonical result, exact argv and complete stdout/stderr retained.
+    Scientific and operational content not certified.
+  snapshot_sha256: abed989f578990269953e210cdf8d830c3c5f504471c5f286cb2ce99618b8d5f
+- evidence_id: check-references
+  kind: validation
+  reference: REVIEW_WORK/batch065/record09/validate-references.json
+  accessed_at: '2026-10-28T11:33:01.520935Z'
+  support: supports
+  summary: Original canonical result, exact argv and complete stdout/stderr retained.
+    Scientific and operational content not certified.
+  snapshot_sha256: 8f5e0427b47ec6c1358bcfc16e30bbf6ba657628937277b0bfd14d665ba0d85c
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Exact target, lineage and collection identity
+  outcome: concern
+  summary: The selected persistent ID and fifteen declared contributors resolve exactly.
+    Thirteen source-variant accessions remain distinct identities, even though the
+    generated synonym list combines their names. DSM13661 and ATCC43300 identify the
+    same named S. aureus strain in the freshly inspected authoritative metadata; this
+    is not a formulation or growth assertion.
+  target_ids:
+  - CultureMech:006311
+  evidence_ids:
+  - target
+  - metadata
+  - lineage-search
+  - identity
+  - dsm13661
+  - bacdive14464
+- assessment_id: provenance
+  area: provenance
+  topic: Maintained relationships and historical observations
+  outcome: concern
+  summary: Existing reciprocal base-source duplicate links and the September TOGO
+    relationship update are credited as recorded provenance; local referenced paths,
+    IDs and names resolve. No operational equivalence is authenticated. Thirty-two
+    exact historical report headers were read as provenance only; their quantitative
+    claims and recommendations remain unassessed. Current code observations do not
+    establish historical execution.
+  target_ids:
+  - CultureMech:006311
+  evidence_ids:
+  - metadata
+  - links
+  - history
+  - old-reports
+  - writer-merger
+  - writer-formulation
+  - writer-komodo
+- assessment_id: scope
+  area: scope
+  topic: Restricted review boundary
+  outcome: not_applicable
+  summary: One explicitly merged contributor names a strain identified by the authority
+    as MRSA. This partial review is limited to identity, lineage, provenance and schema.
+    Operational formulation, culture conditions, supplied forms, resistance assays
+    and experimental results are excluded.
+  target_ids:
+  - CultureMech:006311
+  evidence_ids:
+  - identity
+  - dsm13661
+  - target
+- assessment_id: quantities
+  area: quantity
+  topic: Private unchanged quantity census
+  outcome: not_applicable
+  summary: 240 existing concentration fields across the target and fifteen contributors
+    are preserved privately and marked not_assessed. No amounts, calculations, stock
+    strengths or corrective culture instructions are reproduced in the public review.
+  target_ids:
+  - CultureMech:006311
+  evidence_ids:
+  - quantities
+  - numeric
+- assessment_id: grounding
+  area: grounding
+  topic: Structural identifier preservation
+  outcome: unknown
+  summary: Existing identifier slots are retained with exact membership joins to the
+    pinned packaged MIM snapshot. No external chemical-form validation, replacement
+    or historical-ID certification is performed. Native term success and current row
+    membership are not scientific validation.
+  target_ids:
+  - CultureMech:006311
+  evidence_ids:
+  - groundings
+  - mim
+  - mim-meta
+  - check-terms
+- assessment_id: schema
+  area: schema
+  topic: Original structural diagnostics
+  outcome: supported
+  summary: All four original canonical diagnostics passed once. The strict check reported
+    zero errors and the references check examined zero references. Their full streams
+    are preserved; manual local metadata joins provide separate bounded evidence.
+  target_ids:
+  - CultureMech:006311
+  evidence_ids:
+  - check-schema
+  - check-strict
+  - check-terms
+  - check-references
+  - links
+findings:
+- finding_id: f1
+  issue_key: culturemech-006311-unverified-strain-synonym-scope
+  category: scope
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Strain-specific source accessions are presented as synonyms without authenticated
+    equivalence
+  description: The generated target lists thirteen distinctly accessioned strain-specific
+    medium wrappers as synonyms of one generic medium. Their labels explicitly say
+    modified for DSM strains, but exact source equivalence has not been authenticated.
+    The current KOMODO detail/catalogue endpoints are inaccessible. Existing base-source
+    duplicate links and historical import statements do not establish equivalence
+    for those thirteen accessions. This is a metadata-scope finding; no difference
+    in formulation, suitability or growth is asserted.
+  field_paths:
+  - synonyms
+  - merged_from
+  target_ids:
+  - CultureMech:006311
+  evidence_ids:
+  - target
+  - metadata
+  - lineage-search
+  - identity
+  - komodo693
+  - komodoList
+  - writer-merger
+  - writer-formulation
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_13661.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_13760.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_18826.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_19736.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_20600.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_21031.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_21825.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_21843.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_21845.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_22221.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_22886.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_22909.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_23385.yaml
+    role: maintained normalized contributor
+  rule_id: review-yaml-record/source-identity-scope
+  native_severity: P2
+  normalization_reason: 'Major: source-variant identity is broadened into an unverified
+    synonym relationship. No operational recipe defect or growth claim is adjudicated.'
+- finding_id: f2
+  issue_key: culturemech-006311-history-timestamp-provenance
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Historical import timestamps are malformed or lack a timezone
+  description: The selected target and KOMODO contributors retain an import timestamp
+    ending in .fZ and a later resolver timestamp without a timezone. These strings
+    do not establish an unambiguous UTC event time. Preserve the historical entries
+    unchanged and distinguish any new corrective observation from the unavailable
+    historical instant. The current KOMODO writer still uses time.strftime with a
+    %f directive; this is a present writer observation, not historical execution proof.
+  field_paths:
+  - curation_history[0].timestamp
+  - curation_history[1].timestamp
+  target_ids:
+  - CultureMech:006311
+  evidence_ids:
+  - target
+  - history
+  - metadata
+  - writer-komodo
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/import/komodo_web_importer.py
+    role: maintained import writer; timestamp construction
+  rule_id: review-yaml-record/history-provenance
+  native_severity: P3
+  normalization_reason: 'Minor: bounded provenance representation defect; no operational
+    assertions or earlier events are changed.'
+actions:
+- action_id: a1
+  description: Keep each strain-specific source accession and stable record identity
+    explicitly distinct until a separately scoped identity review establishes the
+    relationship. A metadata-only follow-up should qualify the unverified synonym
+    scope and preserve existing source-duplicate provenance. Do not transfer or repair
+    formulations, derive culture variants, or blanket-regenerate this target as part
+    of that follow-up.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:006311
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_13661.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_13760.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_18826.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_19736.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_20600.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_21031.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_21825.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_21843.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_21845.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_22221.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_22886.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_22909.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_693_modified_for_dsm_23385.yaml
+    role: maintained normalized contributor
+  acceptance_checks:
+  - All thirteen source accessions and stable owner IDs remain separately traceable;
+    no unverified equivalence is promoted.
+  - Any metadata correction preserves every operational field byte-for-byte and records
+    unresolved source access honestly.
+  - No organism-growth, chemical-form, recipe, stock, dose or preparation assertion
+    is introduced or certified.
+  generator: Explicit metadata-only reconciliation; no whole-recipe regeneration
+- action_id: a2
+  description: Correct future history timestamp generation in the maintained KOMODO
+    writer to emit actual timezone-aware UTC instants. Preserve prior records and
+    append a truthful clarification where needed; do not infer or rewrite an unavailable
+    historical timestamp.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:006311
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/import/komodo_web_importer.py
+    role: maintained import writer; timestamp construction
+  acceptance_checks:
+  - A focused timestamp check verifies a parseable timezone-aware UTC string for a
+    newly generated event.
+  - Existing history remains append-only and every operational field remains unchanged.
+  generator: src/culturemech/import/komodo_web_importer.py::_convert_to_culturemech
+limitations:
+- Explicit partial, non-operational review with scientific_review:false. All formulation,
+  concentration, stock, preparation, growth, chemical-form and experimental content
+  is unchanged and unassessed.
+- The entire selected target and main DSMZ owner were initially read before the accession
+  triage completed. Subsequent owner/dependency reading was restricted to identity
+  and provenance/history metadata. Operational fields are mechanically preserved,
+  not scientifically assessed.
+- Fresh DSMZ and BacDive pages were used only for collection identity and the scope
+  boundary. No operational recipe or cultivation data were extracted from those captures;
+  KOMODO detail/catalogue requests returned HTTP403. No MediaDive recipe/API or DSMZ
+  formulation PDF was requested. Other strain identities are not taxonomically authenticated,
+  and no strain-specific cultivation changes are proposed.
+- Exact KOMODO catalogue/detail access returned HTTP403. Historical source-access
+  events, thirteen source-variant equivalence claims and the original source-to-formulation
+  joins remain unresolved.
+- The dependency TOGO M2582 is not a declared contributor to this merge. Its local
+  relationship metadata is checked; operational content and source assertions are
+  not adopted.
+- All thirty-two historical report headers were read for record identity and provenance;
+  their operational tables, source objects and recommendations were excluded. No prior
+  concentration verdict is promoted to fresh scientific review.
+- The historical repair_columbia_blood_score40.py filename was not found in a full
+  checkout recursive search including hidden and ignored paths. Its recorded event
+  is retained; absence of the current file does not disprove the historical event.
+- Current MIM snapshot commit 6643131b0f12ab40b66f98135245fca04027e0e9 only. No chemical
+  ontology or growth inference follows from structural ID-row matches.
+- No formal review validate/save, recipe edit, Git mutation, provider spending or
+  publication was performed by the author. Corpus-only checks and scientific validation
+  are outside this restricted observation.
+```

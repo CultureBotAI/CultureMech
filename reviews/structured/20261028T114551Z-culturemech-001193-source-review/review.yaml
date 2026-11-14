@@ -1,0 +1,1654 @@
+schema_version: 1.0.0
+review_id: 20261028T114551Z-culturemech-001193-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Scientific review: CONEXIVISPHAERA MEDIUM'
+started_at: '2026-10-28T11:32:30.618562Z'
+finished_at: '2026-10-28T11:45:51.493123Z'
+reviewer:
+  identity: Codex tsb_source_check
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Read-only independent review of maintained source records, fresh
+    sources and original diagnostics.
+skill: review-yaml-record
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: Exact DSM1714 source identity and retained main preparation/pH are supported.
+  Both local layers flatten Allen and Wolin stock rates and lose the Allen preparation
+  scope; source evidence and the borate formula annotation require bounded follow-up.
+  Every local concentration and explicit source-only control is covered without inventing
+  a final-volume conversion.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: c0ef0808662f57dc2f57ce9b405485830503653aceee1451c9e1dae42f9e7021
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/culturemech_id_registry.tsv
+    sha256: 0d059720f5c474b63daff8d5010fc56942a5a3ac30761ee75ce9e84801d555a5
+    role: context
+  - path: data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml
+    sha256: e327d6bb9b449bf5c5858fcb6177a24855351fa15b9d4e3218321bd7f43ce40a
+    role: target
+  - path: data/normalized_yaml/archaea/conexivisphaera_medium.yaml
+    sha256: 4c1c81ab091227d4662e1979fbc295b32d1c1f422919a718ac9f6cdc193b9120
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1500-2000/plan.json
+    sha256: 087b43514367d268b48e568b66203c146b81601303e5c8e3508f3c91e0fcbf26
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1500-2000/records/archaea/conexivisphaera_medium.yaml.md
+    sha256: 2c91dd9ec46c02bf162ed7f627b9fe531bd124ad6bda38e805047f9a189f6a1c
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.md
+    sha256: 07ba0362fa7cd75b06ffd59900f206fb83fd6fa19a91c87ef6db386151d68e95
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/archaea/conexivisphaera_medium.md
+    sha256: e68dc9a38359da3eabc05d6703901f31b78bb1c5d1b4e629eb9768b348c939ab
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/assign_culturemech_ids.py
+    sha256: 81ed213c52804ae98a8add02730d757595e3287fa7b01bc88aee0e587bbb01e1
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/enrich_with_chebi.py
+    sha256: f18dd6e4317de76cb7379f6c9c6227f9af884c27a0761d7f64143aaf74d8e1dc
+    role: context
+  - path: scripts/enrich_with_mediaingredientmech.py
+    sha256: 6357c9d621c3d6e32b28b2982afedfaed384830cea1602a775b0a5f0852c015e
+    role: context
+  - path: scripts/import_from_culturebotht.py
+    sha256: d835addf5fff423a9b0b1231848ed3103c5b2d97015c1c294365970d15be0fe1
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/record_io.py
+    sha256: bff4715f85d7ff2ff681b88f0a2de2667e5767d7a2c196bd50a37d5d329957ac
+    role: context
+  - path: scripts/refill_term_labels.py
+    sha256: 8eee4532e4a71d120532db511733bde974ab1b179e50cb1ea51d66c3870f3cb9
+    role: context
+  - path: scripts/remove_invalid_chebi_ids.py
+    sha256: a6c2f7577812081230fd5fe008182c09eace4ef7818857f8026ec8d5e0b760e0
+    role: context
+  - path: scripts/repair_dsmz_1551_687_score15.py
+    sha256: 8d6df8debee25199456cb7b8bde62e265b78864396fe01259a924ad22a183745
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: Whole exact target/owner with explicit scoped dependencies, current
+    sources and historical claims.
+  selection: Authoritative batch065 index 10
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:001193
+targets:
+- target_id: CultureMech:001193
+  path: data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml
+  label: conexivisphaera_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/conexivisphaera_medium.yaml
+    role: maintained source
+  ownership_note: Exact declared maintained contributors resolved against stable identity;
+    stocks and other source variants remain scoped comparisons.
+checks:
+- check_id: schema
+  name: Canonical schema
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:001193
+  command: just validate-schema data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-schema
+- check_id: strict
+  name: Canonical strict
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:001193
+  command: just validate-strict data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml
+    --out REVIEW_WORK/batch065/record10/strict.tsv
+    --workers 1 --quiet
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-strict
+- check_id: terms
+  name: Canonical terms
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:001193
+  command: just validate-terms data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-terms
+- check_id: references
+  name: Canonical references
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:001193
+  command: just validate-references data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-references
+evidence:
+- evidence_id: dsm1714
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf
+  accessed_at: '2026-10-28T11:33:15.783470Z'
+  locator: REVIEW_WORK/batch065/source07-08-10/dsm1714.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: 10 exact DSM1714 primary recipe and printed stocks; ordinary environmental-medium
+    scope.
+  snapshot_sha256: 31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3
+- evidence_id: api1714
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1714
+  accessed_at: '2026-10-28T11:33:15.414234Z'
+  locator: REVIEW_WORK/batch065/source07-08-10/api1714.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: 10 exact provider1714 complete stages; explicit rates distinguished from
+    physical final-volume proof.
+  snapshot_sha256: cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7
+- evidence_id: target
+  kind: record_content
+  reference: data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T11:45:51.387208Z'
+  support: context_only
+  summary: Complete generated target.
+  snapshot_sha256: e327d6bb9b449bf5c5858fcb6177a24855351fa15b9d4e3218321bd7f43ce40a
+- evidence_id: owner
+  kind: record_content
+  reference: data/normalized_yaml/archaea/conexivisphaera_medium.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T11:45:51.387394Z'
+  support: context_only
+  summary: Complete exact maintained owner.
+  snapshot_sha256: 4c1c81ab091227d4662e1979fbc295b32d1c1f422919a718ac9f6cdc193b9120
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Complete file
+  accessed_at: '2026-10-28T11:45:51.387421Z'
+  support: context_only
+  summary: Exact packaged current identifier/ontology_id and preferred-term rows.
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: mim-meta
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+  locator: Complete file
+  accessed_at: '2026-10-28T11:45:51.387734Z'
+  support: context_only
+  summary: Exact packaged snapshot version and checksum.
+  snapshot_sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+- evidence_id: writer-formulation
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Full formulation comparison
+  accessed_at: '2026-10-28T11:45:51.387758Z'
+  support: context_only
+  summary: Current scientific-field equality includes quantities, stocks and notes;
+    no chemical equivalence is inferred.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-merger
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: RecipeMerger.merge_group
+  accessed_at: '2026-10-28T11:45:51.387779Z'
+  support: context_only
+  summary: Current merge_group copies singletons and rejects incompatible multiple
+    formulations. Generated staleness is not evidence that current code permits ingredient-only
+    merging.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: report-17
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-1500-2000/plan.json
+  locator: Exact selected row locators in historical-selected-parent-rows.json
+  accessed_at: '2026-10-28T11:45:51.387805Z'
+  support: context_only
+  summary: Historical repository parent; only exact selected record objects are joined.
+    Decoded data is not itself original external raw evidence.
+  snapshot_sha256: 087b43514367d268b48e568b66203c146b81601303e5c8e3508f3c91e0fcbf26
+- evidence_id: report-18
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-1500-2000/records/archaea/conexivisphaera_medium.yaml.md
+  locator: Complete report
+  accessed_at: '2026-10-28T11:45:51.393562Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: 2c91dd9ec46c02bf162ed7f627b9fe531bd124ad6bda38e805047f9a189f6a1c
+- evidence_id: report-19
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.md
+  locator: Complete report
+  accessed_at: '2026-10-28T11:45:51.393624Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: 07ba0362fa7cd75b06ffd59900f206fb83fd6fa19a91c87ef6db386151d68e95
+- evidence_id: report-20
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/archaea/conexivisphaera_medium.md
+  locator: Complete report
+  accessed_at: '2026-10-28T11:45:51.393655Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: e68dc9a38359da3eabc05d6703901f31b78bb1c5d1b4e629eb9768b348c939ab
+- evidence_id: historical-reading
+  kind: record_content
+  reference: REVIEW_WORK/batch065/record10/historical-reading.json
+  accessed_at: '2026-10-28T11:45:51.394268Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Lossless exact report cells and independently joined current decoded source
+    objects.
+  snapshot_sha256: 4e3b4f396be2ede1e7ee424b3851fb1db4ef84a9263cf2e520763ea939ad3f43
+- evidence_id: historical-selected-parent-rows
+  kind: record_content
+  reference: REVIEW_WORK/batch065/record10/historical-selected-parent-rows.json
+  accessed_at: '2026-10-28T11:45:51.394494Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Exact selected historical parent objects; parent provenance only, not automatic
+    original source authentication.
+  snapshot_sha256: d0622eb0233512e96971633a57b59fc56ce9133756926152d8b7c885b1b9178f
+- evidence_id: complete-document-reader
+  kind: record_content
+  reference: REVIEW_WORK/batch065/record10/complete-document-reader.json
+  accessed_at: '2026-10-28T11:45:51.395622Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Complete exact target and owner parsed documents with lossless long-string
+    pooling.
+  snapshot_sha256: 98b527fbc8b5645e6c065570050022747db9bb65a7df2a91515a62bcd6206bc4
+- evidence_id: writer-mediadive
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition, _is_api_stock_addition, _api_stock_name, _parse_api_solutions,
+    _normalize_unit, _classify_preparation_action
+  accessed_at: '2026-10-28T11:45:51.395657Z'
+  support: context_only
+  summary: Current parser keeps only primary compounds and separately preserves referenced
+    stocks. It still prioritizes provider g_l and normalizes bare g/ml/% to per-litre/w-v
+    enums without independently establishing the basis; the action classifier tests
+    temperature before cool. Current behavior is not historical execution proof.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-matcher
+  kind: record_content
+  reference: src/culturemech/merge/matcher.py
+  locator: group_formulations
+  accessed_at: '2026-10-28T11:45:51.395694Z'
+  support: context_only
+  summary: Current group_formulations uses conservative FormulationFingerprinter;
+    ingredient similarity is only candidate discovery.
+  snapshot_sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+- evidence_id: writer-preparation
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_preparation_steps, _classify_preparation_action
+  accessed_at: '2026-10-28T11:45:51.395723Z'
+  support: context_only
+  summary: Current _parse_preparation_steps concatenates steps from all API solutions
+    into one medium-level list. This directly explains a present stage-scope risk,
+    not proof that the current code executed at the historical import time.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: chebi131366
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:131366
+  accessed_at: '2026-10-28T11:33:16.051998Z'
+  locator: REVIEW_WORK/batch065/source07-08-10/chebi131366.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object for ordinary07/10; no operational grounding
+    assessment08.
+  snapshot_sha256: cf1148474ddf9abb89520f2918d84427f4422aaa0877c9ed215fb1953cfdc01b
+- evidence_id: chebi62946
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:62946
+  accessed_at: '2026-10-28T11:33:18.447708Z'
+  locator: REVIEW_WORK/batch065/source07-08-10/chebi62946.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object for ordinary07/10; no operational grounding
+    assessment08.
+  snapshot_sha256: e035a92736c0b968363e9db17da9a4a81390ab174a65e689f6ae45c326324b44
+- evidence_id: chebi63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63036
+  accessed_at: '2026-10-28T11:33:18.769394Z'
+  locator: REVIEW_WORK/batch065/source07-08-10/chebi63036.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object for ordinary07/10; no operational grounding
+    assessment08.
+  snapshot_sha256: 07dec38373731d2125348c574d0f9f2df977e458974100383d3f69c8849a84e0
+- evidence_id: chebi32150
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32150
+  accessed_at: '2026-10-28T11:33:18.277062Z'
+  locator: REVIEW_WORK/batch065/source07-08-10/chebi32150.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object for ordinary07/10; no operational grounding
+    assessment08.
+  snapshot_sha256: de317b7c2a67b08783f4123e1f5b67de75d34e2090c25525f45fe2c45f3dcbb2
+- evidence_id: chebi31795
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31795
+  accessed_at: '2026-10-28T11:33:18.063899Z'
+  locator: REVIEW_WORK/batch065/source07-08-10/chebi31795.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object for ordinary07/10; no operational grounding
+    assessment08.
+  snapshot_sha256: ceb0c93d1964844e99454d74730971855710441d92eec74aff5c873c833e324a
+- evidence_id: chebi86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86158
+  accessed_at: '2026-10-28T11:33:19.003617Z'
+  locator: REVIEW_WORK/batch065/source07-08-10/chebi86158.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object for ordinary07/10; no operational grounding
+    assessment08.
+  snapshot_sha256: eacf58308fa876cb17661b82d08a64d9be24814fde8014ac82da7696b3684841
+- evidence_id: chebi91248
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:91248
+  accessed_at: '2026-10-28T11:33:19.603573Z'
+  locator: REVIEW_WORK/batch065/source07-08-10/chebi91248.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object for ordinary07/10; no operational grounding
+    assessment08.
+  snapshot_sha256: d0959ac455ece32a6e94c13fd8e592403109201b6c61144dccfe0d58f1916380
+- evidence_id: chebi86249
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86249
+  accessed_at: '2026-10-28T11:33:18.946973Z'
+  locator: REVIEW_WORK/batch065/source07-08-10/chebi86249.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object for ordinary07/10; no operational grounding
+    assessment08.
+  snapshot_sha256: 4d7f48f88badcba85a62e59842c6ec921f5478eb76695098b17847ed62c8530a
+- evidence_id: chebi86368
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86368
+  accessed_at: '2026-10-28T11:33:19.376565Z'
+  locator: REVIEW_WORK/batch065/source07-08-10/chebi86368.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object for ordinary07/10; no operational grounding
+    assessment08.
+  snapshot_sha256: 2d5685a4a03c5d730876514b4a7664fb477f63682a60cc7e13d7776a250f68e3
+- evidence_id: chebi32312
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32312
+  accessed_at: '2026-10-28T11:33:18.334642Z'
+  locator: REVIEW_WORK/batch065/source07-08-10/chebi32312.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object for ordinary07/10; no operational grounding
+    assessment08.
+  snapshot_sha256: 19bbc18dfc582e76457c6f08d51bb777a2f7a2cbd2f810cb3b58bdb0004b4d60
+- evidence_id: chebi86318
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86318
+  accessed_at: '2026-10-28T11:33:19.055157Z'
+  locator: REVIEW_WORK/batch065/source07-08-10/chebi86318.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object for ordinary07/10; no operational grounding
+    assessment08.
+  snapshot_sha256: bd88e1499f370a9f474b29fa7a9a83aa5c42c69d0b6772ece8c89d646dfda8d8
+- evidence_id: chebi75213
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:75213
+  accessed_at: '2026-10-28T11:33:18.920287Z'
+  locator: REVIEW_WORK/batch065/source07-08-10/chebi75213.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object for ordinary07/10; no operational grounding
+    assessment08.
+  snapshot_sha256: f99a2d8b28ac44913a666745dd70098c5d5f21c9513fee921a35f0fd18f2c445
+- evidence_id: chebi87009
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:87009
+  accessed_at: '2026-10-28T11:33:19.546163Z'
+  locator: REVIEW_WORK/batch065/source07-08-10/chebi87009.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object for ordinary07/10; no operational grounding
+    assessment08.
+  snapshot_sha256: e31b8779215516eb6854a426550fee27caff365bb634ff490e0ccbc1a7066daf
+- evidence_id: chebi91244
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:91244
+  accessed_at: '2026-10-28T11:33:19.544316Z'
+  locator: REVIEW_WORK/batch065/source07-08-10/chebi91244.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object for ordinary07/10; no operational grounding
+    assessment08.
+  snapshot_sha256: c8bf30f1c2b4e9c2bcc10bd256b68a090795c083c207baf2d9d9ebb201d0d3c5
+- evidence_id: chebi15956
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15956
+  accessed_at: '2026-10-28T11:33:16.462365Z'
+  locator: REVIEW_WORK/batch065/source07-08-10/chebi15956.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object for ordinary07/10; no operational grounding
+    assessment08.
+  snapshot_sha256: 5135a39e8b52c878896db22443f00507125db80e5ce4bb1dcc97914b9bdd7316
+- evidence_id: chebi27470
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:27470
+  accessed_at: '2026-10-28T11:33:17.377250Z'
+  locator: REVIEW_WORK/batch065/source07-08-10/chebi27470.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object for ordinary07/10; no operational grounding
+    assessment08.
+  snapshot_sha256: e1820a7a704794fa20995eea5037e03c2b22b847817c28bb2f45f80762c275d1
+- evidence_id: chebi30961
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30961
+  accessed_at: '2026-10-28T11:33:17.687779Z'
+  locator: REVIEW_WORK/batch065/source07-08-10/chebi30961.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object for ordinary07/10; no operational grounding
+    assessment08.
+  snapshot_sha256: 855ea2cf0e89d25ab4a560ab1c2dab6ac861d215bc5473cb4d3a0a2d4cdff438
+- evidence_id: chebi49105
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:49105
+  accessed_at: '2026-10-28T11:33:18.328737Z'
+  locator: REVIEW_WORK/batch065/source07-08-10/chebi49105.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object for ordinary07/10; no operational grounding
+    assessment08.
+  snapshot_sha256: f9dbae8cd2dcbd38d914abb99730e341ff280d3a44f20f95b2663e47664780cf
+- evidence_id: chebi17015
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17015
+  accessed_at: '2026-10-28T11:33:17.079895Z'
+  locator: REVIEW_WORK/batch065/source07-08-10/chebi17015.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object for ordinary07/10; no operational grounding
+    assessment08.
+  snapshot_sha256: 17f7ac7c03d75b85a96f951321902906266f3ce8fa44faea4814fac46560e3e6
+- evidence_id: chebi15940
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15940
+  accessed_at: '2026-10-28T11:33:16.567772Z'
+  locator: REVIEW_WORK/batch065/source07-08-10/chebi15940.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object for ordinary07/10; no operational grounding
+    assessment08.
+  snapshot_sha256: c291a1c1bb0d6af05ac4005af0957534f430db47e7df9cec874f8a94d961dba1
+- evidence_id: chebi31345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31345
+  accessed_at: '2026-10-28T11:33:17.840367Z'
+  locator: REVIEW_WORK/batch065/source07-08-10/chebi31345.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object for ordinary07/10; no operational grounding
+    assessment08.
+  snapshot_sha256: c3341e7cf8a7ea0768d505265376c1514f161c9048b6e878314e204341d702eb
+- evidence_id: chebi176843
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:176843
+  accessed_at: '2026-10-28T11:33:17.066116Z'
+  locator: REVIEW_WORK/batch065/source07-08-10/chebi176843.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object for ordinary07/10; no operational grounding
+    assessment08.
+  snapshot_sha256: 9c73ea31864abce6b9ed6328e9ed491bc1cad2ba27f40adb5c00f0f192838e63
+- evidence_id: chebi30753
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30753
+  accessed_at: '2026-10-28T11:33:17.693619Z'
+  locator: REVIEW_WORK/batch065/source07-08-10/chebi30753.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object for ordinary07/10; no operational grounding
+    assessment08.
+  snapshot_sha256: 1340e054634ce960494b9388f6e3fd231d9e7d66969c3c11932ee2058171fd2c
+- evidence_id: chebi16494
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:16494
+  accessed_at: '2026-10-28T11:33:16.688220Z'
+  locator: REVIEW_WORK/batch065/source07-08-10/chebi16494.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current ontology object for ordinary07/10; no operational grounding
+    assessment08.
+  snapshot_sha256: 192c51f672f633c6071a3397d5785fb2bca6eaf8f9b787f7aaaa6c2aeb3b1a2f
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch065/record10/quantity-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T11:45:51.491364Z'
+  support: supports
+  summary: Complete source-stage quantity decisions.
+  snapshot_sha256: 9a4e9d60fc3e8a43698438ab19109c4da906db85518d5a81931003f2221084b4
+- evidence_id: groundings
+  kind: record_content
+  reference: REVIEW_WORK/batch065/record10/grounding-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T11:45:51.491444Z'
+  support: supports
+  summary: Exact slots, raw OLS scientific objects and current MIM rows.
+  snapshot_sha256: c78dcd57006e02639f0fe49e03ac3e91cdf52115032d456ec5f6c8c1e3bdb766
+- evidence_id: census
+  kind: record_content
+  reference: REVIEW_WORK/batch065/record10/field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T11:45:51.491567Z'
+  support: supports
+  summary: Complete scalar census with explicit dependency exclusions.
+  snapshot_sha256: cdf36adb6b5f6e7c5d64d2a20dd121601bfc20134d5dbe3d186de831bacd4dd0
+- evidence_id: numeric-census
+  kind: record_content
+  reference: REVIEW_WORK/batch065/record10/numeric-field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T11:45:51.491618Z'
+  support: supports
+  summary: Numeric/text assertions and quantity joins.
+  snapshot_sha256: a3436b57e4b558d0b7158d1b4f089f68a355a1270b247846049e471dc33b5fd9
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch065/record10/history-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T11:45:51.491660Z'
+  support: supports
+  summary: Current exact histories, without replay.
+  snapshot_sha256: 24d8e570d3313aaa439e9467f7f20e9d62068344bb2212a863f5a93ca570cbac
+- evidence_id: old-reports
+  kind: record_content
+  reference: REVIEW_WORK/batch065/record10/history-report-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T11:45:51.491680Z'
+  support: supports
+  summary: Exact historical report scopes.
+  snapshot_sha256: 4e35814a2070af3df4e541fadbd64734acd044ad0a1a949f82ef7a4f43dc7c64
+- evidence_id: old-claims
+  kind: record_content
+  reference: REVIEW_WORK/batch065/record10/existing-claim-authentication.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T11:45:51.491697Z'
+  support: supports
+  summary: Existing literal and raw-digest matches; current content authentication
+    is separate from original retrieval provenance.
+  snapshot_sha256: 37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570
+- evidence_id: check-schema
+  kind: validation
+  reference: REVIEW_WORK/batch065/record10/schema-result.json
+  accessed_at: '2026-10-28T11:32:31.715124Z'
+  support: supports
+  summary: Original once-only canonical schema with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: 87484d28fed44ae407ad0947b175b23b66d98cfb00d7470b7a305e2cdbf581d4
+- evidence_id: check-strict
+  kind: validation
+  reference: REVIEW_WORK/batch065/record10/strict-result.json
+  accessed_at: '2026-10-28T11:32:32.702753Z'
+  support: supports
+  summary: Original once-only canonical strict with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: b3011529229607af82ab2d609283b4b189cc1d8a63c4c2ff8a1fc700fa3de34e
+- evidence_id: check-terms
+  kind: validation
+  reference: REVIEW_WORK/batch065/record10/terms-result.json
+  accessed_at: '2026-10-28T11:32:33.778599Z'
+  support: supports
+  summary: Original once-only canonical terms with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: 512174f359d77af9f45830633de236f0f9e8f22da5734d324595fe98593aaf94
+- evidence_id: check-references
+  kind: validation
+  reference: REVIEW_WORK/batch065/record10/references-result.json
+  accessed_at: '2026-10-28T11:32:34.532342Z'
+  support: supports
+  summary: Original once-only canonical references with complete argv/time/streams;
+    reference count zero does not verify sources.
+  snapshot_sha256: 2283894904439fd2e9bae6761379423e9ce9a2435b97df7d2452a26e74e0f161
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Exact DSM1714 identity
+  outcome: supported
+  summary: The printed primary title, API medium1714 and target/owner provider identity
+    agree. Embedded Allen155 and Wolin5980 are assessed only as components of this
+    exact source; no external whole parent-medium variant is substituted.
+  target_ids:
+  - CultureMech:001193
+  evidence_ids:
+  - dsm1714
+  - api1714
+  - target
+  - owner
+- assessment_id: classification
+  area: consistency
+  topic: Complex liquid medium and supplied forms
+  outcome: supported
+  summary: Complex/semi-defined liquid representation is consistent with the source
+    using yeast extract. No named strain or specific growth claim is inferred from
+    the title or generic cultivation application.
+  target_ids:
+  - CultureMech:001193
+  evidence_ids:
+  - dsm1714
+  - api1714
+  - target
+  - owner
+- assessment_id: schema
+  area: schema
+  topic: Original canonical diagnostics
+  outcome: supported
+  summary: All four once-only diagnostics exited zero, strict had zero errors and
+    references examined zero checks. Scientific stage/basis errors are not excluded
+    by native shape success.
+  target_ids:
+  - CultureMech:001193
+  evidence_ids:
+  - check-schema
+  - check-strict
+  - check-terms
+  - check-references
+- assessment_id: quantities
+  area: quantity
+  topic: Complete amounts, units and preparation stages
+  outcome: concern
+  summary: 50 current concentration fields are covered by 36 decisions, including
+    unchanged support and explicit source-only conditions.
+  target_ids:
+  - CultureMech:001193
+  evidence_ids:
+  - quantities
+  - numeric-census
+  details: '{"schema":"fresh-b065-quantity-inventory-v1","target":"data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml","quantity_field_count":50,"decisions":[{"quantity_id":"q1","label":"(NH4)2SO4","local_fields":[{"path":"data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml","field_path":"ingredients[0].concentration","stored":{"value":"0.197824","unit":"G_PER_L"}},{"path":"data/normalized_yaml/archaea/conexivisphaera_medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"0.197824","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    current amount exactly matches this primary-solution API g_l field on the provider
+    volume=1011 normalization. The primary instead prints a batch mass with input
+    water and named stock additions. Preserve this explicit provider-basis rate with
+    attached source evidence; it does not establish a measured final complete-medium
+    volume or justify silently replacing the value with the printed mass per litre.","source_stage":"Main
+    solution: explicit provider normalization, not independently measured final volume","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 3-3","quote":"(NH4)2SO4                                                  0.20         g","quote_basis":"derivative
+    text"},{"evidence_id":"api1714","reference":"https://mediadive.dsmz.de/rest/medium/1714","raw_path":"REVIEW_WORK/batch065/source07-08-10/api1714.raw","raw_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","text_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","accessed_at":"2026-10-28T11:33:15.414234Z","locator":"data.solutions[0].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\":
+    27,\n                        \"amount\": 0.2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.197824,\n                        \"mmol_l\":
+    1.49708,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q2","label":"KH2PO4","local_fields":[{"path":"data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml","field_path":"ingredients[1].concentration","stored":{"value":"2.96736","unit":"G_PER_L"}},{"path":"data/normalized_yaml/archaea/conexivisphaera_medium.yaml","field_path":"ingredients[1].concentration","stored":{"value":"2.96736","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    current amount exactly matches this primary-solution API g_l field on the provider
+    volume=1011 normalization. The primary instead prints a batch mass with input
+    water and named stock additions. Preserve this explicit provider-basis rate with
+    attached source evidence; it does not establish a measured final complete-medium
+    volume or justify silently replacing the value with the printed mass per litre.","source_stage":"Main
+    solution: explicit provider normalization, not independently measured final volume","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 4-4","quote":"KH2PO4                                                     3.00         g","quote_basis":"derivative
+    text"},{"evidence_id":"api1714","reference":"https://mediadive.dsmz.de/rest/medium/1714","raw_path":"REVIEW_WORK/batch065/source07-08-10/api1714.raw","raw_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","text_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","accessed_at":"2026-10-28T11:33:15.414234Z","locator":"data.solutions[0].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2.96736,\n                        \"mmol_l\":
+    21.8052,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q3","label":"Na2S2O3 x 5 H2O","local_fields":[{"path":"data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml","field_path":"ingredients[2].concentration","stored":{"value":"2.4728","unit":"G_PER_L"}},{"path":"data/normalized_yaml/archaea/conexivisphaera_medium.yaml","field_path":"ingredients[2].concentration","stored":{"value":"2.4728","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    current amount exactly matches this primary-solution API g_l field on the provider
+    volume=1011 normalization. The primary instead prints a batch mass with input
+    water and named stock additions. Preserve this explicit provider-basis rate with
+    attached source evidence; it does not establish a measured final complete-medium
+    volume or justify silently replacing the value with the printed mass per litre.","source_stage":"Main
+    solution: explicit provider normalization, not independently measured final volume","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 6-6","quote":"Na2S2O3 x 5 H2O                                            2.50         g","quote_basis":"derivative
+    text"},{"evidence_id":"api1714","reference":"https://mediadive.dsmz.de/rest/medium/1714","raw_path":"REVIEW_WORK/batch065/source07-08-10/api1714.raw","raw_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","text_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","accessed_at":"2026-10-28T11:33:15.414234Z","locator":"data.solutions[0].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Na2S2O3 x 5 H2O\",\n                        \"compound_id\":
+    65,\n                        \"amount\": 2.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2.4728,\n                        \"mmol_l\":
+    9.96349,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q4","label":"MgSO4 x 7 H2O","local_fields":[{"path":"data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.49456","unit":"G_PER_L"}},{"path":"data/normalized_yaml/archaea/conexivisphaera_medium.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.49456","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    current amount exactly matches this primary-solution API g_l field on the provider
+    volume=1011 normalization. The primary instead prints a batch mass with input
+    water and named stock additions. Preserve this explicit provider-basis rate with
+    attached source evidence; it does not establish a measured final complete-medium
+    volume or justify silently replacing the value with the printed mass per litre.","source_stage":"Main
+    solution: explicit provider normalization, not independently measured final volume","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 7-7","quote":"MgSO4 x 7 H2O                                              0.50         g","quote_basis":"derivative
+    text"},{"evidence_id":"api1714","reference":"https://mediadive.dsmz.de/rest/medium/1714","raw_path":"REVIEW_WORK/batch065/source07-08-10/api1714.raw","raw_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","text_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","accessed_at":"2026-10-28T11:33:15.414234Z","locator":"data.solutions[0].recipe[4]","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\":
+    8,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.49456,\n                        \"mmol_l\":
+    2.00652,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q5","label":"CaCl2 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.24728","unit":"G_PER_L"}},{"path":"data/normalized_yaml/archaea/conexivisphaera_medium.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.24728","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    current amount exactly matches this primary-solution API g_l field on the provider
+    volume=1011 normalization. The primary instead prints a batch mass with input
+    water and named stock additions. Preserve this explicit provider-basis rate with
+    attached source evidence; it does not establish a measured final complete-medium
+    volume or justify silently replacing the value with the printed mass per litre.","source_stage":"Main
+    solution: explicit provider normalization, not independently measured final volume","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 8-8","quote":"CaCl2 x 2 H2O                                              0.25         g","quote_basis":"derivative
+    text"},{"evidence_id":"api1714","reference":"https://mediadive.dsmz.de/rest/medium/1714","raw_path":"REVIEW_WORK/batch065/source07-08-10/api1714.raw","raw_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","text_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","accessed_at":"2026-10-28T11:33:15.414234Z","locator":"data.solutions[0].recipe[5]","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\":
+    7,\n                        \"amount\": 0.25,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.24728,\n                        \"mmol_l\":
+    1.682,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q6","label":"Yeast extract","local_fields":[{"path":"data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.49456","unit":"G_PER_L"}},{"path":"data/normalized_yaml/archaea/conexivisphaera_medium.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.49456","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    current amount exactly matches this primary-solution API g_l field on the provider
+    volume=1011 normalization. The primary instead prints a batch mass with input
+    water and named stock additions. Preserve this explicit provider-basis rate with
+    attached source evidence; it does not establish a measured final complete-medium
+    volume or justify silently replacing the value with the printed mass per litre.","source_stage":"Main
+    solution: explicit provider normalization, not independently measured final volume","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 9-9","quote":"Yeast extract (OXOID)                                      0.50         g","quote_basis":"derivative
+    text"},{"evidence_id":"api1714","reference":"https://mediadive.dsmz.de/rest/medium/1714","raw_path":"REVIEW_WORK/batch065/source07-08-10/api1714.raw","raw_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","text_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","accessed_at":"2026-10-28T11:33:15.414234Z","locator":"data.solutions[0].recipe[6]","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\":
+    16,\n                        \"attribute\": \"OXOID\",\n                        \"amount\":
+    0.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.49456,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q7","label":"L-Cysteine HCl x H2O","local_fields":[{"path":"data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.049456","unit":"G_PER_L"}},{"path":"data/normalized_yaml/archaea/conexivisphaera_medium.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.049456","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    current amount exactly matches this primary-solution API g_l field on the provider
+    volume=1011 normalization. The primary instead prints a batch mass with input
+    water and named stock additions. Preserve this explicit provider-basis rate with
+    attached source evidence; it does not establish a measured final complete-medium
+    volume or justify silently replacing the value with the printed mass per litre.","source_stage":"Main
+    solution: explicit provider normalization, not independently measured final volume","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 11-11","quote":"L-Cysteine HCl x H2O                                       0.05         g","quote_basis":"derivative
+    text"},{"evidence_id":"api1714","reference":"https://mediadive.dsmz.de/rest/medium/1714","raw_path":"REVIEW_WORK/batch065/source07-08-10/api1714.raw","raw_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","text_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","accessed_at":"2026-10-28T11:33:15.414234Z","locator":"data.solutions[0].recipe[8]","quote":"{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"L-Cysteine HCl x H2O\",\n                        \"compound_id\":
+    770,\n                        \"amount\": 0.05,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.049456,\n                        \"mmol_l\":
+    0.281582,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q8","label":"FeCl2 x 4 H2O","local_fields":[{"path":"data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml","field_path":"ingredients[7].concentration","stored":{"value":"0.24728","unit":"G_PER_L"}},{"path":"data/normalized_yaml/archaea/conexivisphaera_medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"0.24728","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    current amount exactly matches this primary-solution API g_l field on the provider
+    volume=1011 normalization. The primary instead prints a batch mass with input
+    water and named stock additions. Preserve this explicit provider-basis rate with
+    attached source evidence; it does not establish a measured final complete-medium
+    volume or justify silently replacing the value with the printed mass per litre.","source_stage":"Main
+    solution: explicit provider normalization, not independently measured final volume","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 12-12","quote":"FeCl2 x 4 H2O                                              0.25         g","quote_basis":"derivative
+    text"},{"evidence_id":"api1714","reference":"https://mediadive.dsmz.de/rest/medium/1714","raw_path":"REVIEW_WORK/batch065/source07-08-10/api1714.raw","raw_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","text_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","accessed_at":"2026-10-28T11:33:15.414234Z","locator":"data.solutions[0].recipe[9]","quote":"{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"FeCl2 x 4 H2O\",\n                        \"compound_id\":
+    260,\n                        \"amount\": 0.25,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.24728,\n                        \"mmol_l\":
+    1.24379,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q9","label":"MnCl2 x 4 H2O","local_fields":[{"path":"data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.18","unit":"G_PER_L"}},{"path":"data/normalized_yaml/archaea/conexivisphaera_medium.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.18","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    local direct-medium value equals the provider Allen stock g_l, not a supported
+    final-medium concentration. The printed batch mass and stock identity are supported,
+    but the primary supplies stock input water rather than a measured final makeup.
+    Restore the separate stock and receiving-addition stage; retain provider normalization
+    as such and do not calculate a final-medium dilution with an assumed denominator.","source_stage":"Allen''s
+    trace stock, separately added to main solution","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 26-26","quote":"Allen''s trace element solution (from medium 88)","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 27-27","quote":"MnCl2 x 4 H2O                                            180.00       mg","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 34-34","quote":"Distilled water                                         1000.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 5-5","quote":"Allen''s trace element solution                            10.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"api1714","reference":"https://mediadive.dsmz.de/rest/medium/1714","raw_path":"REVIEW_WORK/batch065/source07-08-10/api1714.raw","raw_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","text_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","accessed_at":"2026-10-28T11:33:15.414234Z","locator":"data.solutions[1].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\":
+    36,\n                        \"amount\": 180,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.18,\n                        \"mmol_l\":
+    0.909527,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q10","label":"Na2B4O7 x 10 H2O","local_fields":[{"path":"data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.45","unit":"G_PER_L"}},{"path":"data/normalized_yaml/archaea/conexivisphaera_medium.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.45","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    local direct-medium value equals the provider Allen stock g_l, not a supported
+    final-medium concentration. The printed batch mass and stock identity are supported,
+    but the primary supplies stock input water rather than a measured final makeup.
+    Restore the separate stock and receiving-addition stage; retain provider normalization
+    as such and do not calculate a final-medium dilution with an assumed denominator.","source_stage":"Allen''s
+    trace stock, separately added to main solution","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 26-26","quote":"Allen''s trace element solution (from medium 88)","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 28-28","quote":"Na2B4O7 x 10 H2O                                         450.00       mg","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 34-34","quote":"Distilled water                                         1000.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 5-5","quote":"Allen''s trace element solution                            10.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"api1714","reference":"https://mediadive.dsmz.de/rest/medium/1714","raw_path":"REVIEW_WORK/batch065/source07-08-10/api1714.raw","raw_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","text_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","accessed_at":"2026-10-28T11:33:15.414234Z","locator":"data.solutions[1].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Na2B4O7 x 10 H2O\",\n                        \"compound_id\":
+    196,\n                        \"amount\": 450,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.45,\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q11","label":"ZnSO4
+    x 7 H2O","local_fields":[{"path":"data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml","field_path":"ingredients[10].concentration","stored":{"value":"0.022","unit":"G_PER_L"}},{"path":"data/normalized_yaml/archaea/conexivisphaera_medium.yaml","field_path":"ingredients[10].concentration","stored":{"value":"0.022","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    local direct-medium value equals the provider Allen stock g_l, not a supported
+    final-medium concentration. The printed batch mass and stock identity are supported,
+    but the primary supplies stock input water rather than a measured final makeup.
+    Restore the separate stock and receiving-addition stage; retain provider normalization
+    as such and do not calculate a final-medium dilution with an assumed denominator.","source_stage":"Allen''s
+    trace stock, separately added to main solution","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 26-26","quote":"Allen''s trace element solution (from medium 88)","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 29-29","quote":"ZnSO4 x 7 H2O                                             22.00       mg","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 34-34","quote":"Distilled water                                         1000.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 5-5","quote":"Allen''s trace element solution                            10.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"api1714","reference":"https://mediadive.dsmz.de/rest/medium/1714","raw_path":"REVIEW_WORK/batch065/source07-08-10/api1714.raw","raw_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","text_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","accessed_at":"2026-10-28T11:33:15.414234Z","locator":"data.solutions[1].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"ZnSO4 x 7 H2O\",\n                        \"compound_id\":
+    35,\n                        \"amount\": 22,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.022,\n                        \"mmol_l\":
+    0.0765055,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q12","label":"CuCl2 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.005","unit":"G_PER_L"}},{"path":"data/normalized_yaml/archaea/conexivisphaera_medium.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.005","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    local direct-medium value equals the provider Allen stock g_l, not a supported
+    final-medium concentration. The printed batch mass and stock identity are supported,
+    but the primary supplies stock input water rather than a measured final makeup.
+    Restore the separate stock and receiving-addition stage; retain provider normalization
+    as such and do not calculate a final-medium dilution with an assumed denominator.","source_stage":"Allen''s
+    trace stock, separately added to main solution","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 26-26","quote":"Allen''s trace element solution (from medium 88)","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 30-30","quote":"CuCl2 x 2 H2O                                              5.00       mg","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 34-34","quote":"Distilled water                                         1000.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 5-5","quote":"Allen''s trace element solution                            10.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"api1714","reference":"https://mediadive.dsmz.de/rest/medium/1714","raw_path":"REVIEW_WORK/batch065/source07-08-10/api1714.raw","raw_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","text_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","accessed_at":"2026-10-28T11:33:15.414234Z","locator":"data.solutions[1].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"CuCl2 x 2 H2O\",\n                        \"compound_id\":
+    39,\n                        \"amount\": 5,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.005,\n                        \"mmol_l\":
+    0.0293284,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q13","label":"Na2MoO4 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml","field_path":"ingredients[12].concentration","stored":{"value":"0.003","unit":"G_PER_L"}},{"path":"data/normalized_yaml/archaea/conexivisphaera_medium.yaml","field_path":"ingredients[12].concentration","stored":{"value":"0.003","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    local direct-medium value equals the provider Allen stock g_l, not a supported
+    final-medium concentration. The printed batch mass and stock identity are supported,
+    but the primary supplies stock input water rather than a measured final makeup.
+    Restore the separate stock and receiving-addition stage; retain provider normalization
+    as such and do not calculate a final-medium dilution with an assumed denominator.","source_stage":"Allen''s
+    trace stock, separately added to main solution","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 26-26","quote":"Allen''s trace element solution (from medium 88)","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 31-31","quote":"Na2MoO4 x 2 H2O                                            3.00       mg","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 34-34","quote":"Distilled water                                         1000.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 5-5","quote":"Allen''s trace element solution                            10.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"api1714","reference":"https://mediadive.dsmz.de/rest/medium/1714","raw_path":"REVIEW_WORK/batch065/source07-08-10/api1714.raw","raw_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","text_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","accessed_at":"2026-10-28T11:33:15.414234Z","locator":"data.solutions[1].recipe[4]","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\":
+    9,\n                        \"amount\": 3,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.003,\n                        \"mmol_l\":
+    0.0123993,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q14","label":"VOSO4 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml","field_path":"ingredients[13].concentration","stored":{"value":"0.003","unit":"G_PER_L"}},{"path":"data/normalized_yaml/archaea/conexivisphaera_medium.yaml","field_path":"ingredients[13].concentration","stored":{"value":"0.003","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    local direct-medium value equals the provider Allen stock g_l, not a supported
+    final-medium concentration. The printed batch mass and stock identity are supported,
+    but the primary supplies stock input water rather than a measured final makeup.
+    Restore the separate stock and receiving-addition stage; retain provider normalization
+    as such and do not calculate a final-medium dilution with an assumed denominator.","source_stage":"Allen''s
+    trace stock, separately added to main solution","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 26-26","quote":"Allen''s trace element solution (from medium 88)","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 32-32","quote":"VOSO4 x 2 H2O                                              3.00       mg","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 34-34","quote":"Distilled water                                         1000.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 5-5","quote":"Allen''s trace element solution                            10.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"api1714","reference":"https://mediadive.dsmz.de/rest/medium/1714","raw_path":"REVIEW_WORK/batch065/source07-08-10/api1714.raw","raw_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","text_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","accessed_at":"2026-10-28T11:33:15.414234Z","locator":"data.solutions[1].recipe[5]","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"VOSO4 x 2 H2O\",\n                        \"compound_id\":
+    197,\n                        \"amount\": 3,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.003,\n                        \"mmol_l\":
+    0.0150728,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q15","label":"CoSO4 x 7 H2O","local_fields":[{"path":"data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.001","unit":"G_PER_L"}},{"path":"data/normalized_yaml/archaea/conexivisphaera_medium.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.001","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    local direct-medium value equals the provider Allen stock g_l, not a supported
+    final-medium concentration. The printed batch mass and stock identity are supported,
+    but the primary supplies stock input water rather than a measured final makeup.
+    Restore the separate stock and receiving-addition stage; retain provider normalization
+    as such and do not calculate a final-medium dilution with an assumed denominator.","source_stage":"Allen''s
+    trace stock, separately added to main solution","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 26-26","quote":"Allen''s trace element solution (from medium 88)","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 33-33","quote":"CoSO4 x 7 H2O                                              1.00       mg","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 34-34","quote":"Distilled water                                         1000.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 5-5","quote":"Allen''s trace element solution                            10.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"api1714","reference":"https://mediadive.dsmz.de/rest/medium/1714","raw_path":"REVIEW_WORK/batch065/source07-08-10/api1714.raw","raw_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","text_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","accessed_at":"2026-10-28T11:33:15.414234Z","locator":"data.solutions[1].recipe[6]","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"CoSO4 x 7 H2O\",\n                        \"compound_id\":
+    198,\n                        \"amount\": 1,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\":
+    0.00645178,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q16","label":"Biotin","local_fields":[{"path":"data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/archaea/conexivisphaera_medium.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.02","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    local direct-medium value equals the provider Wolin stock g_l, while the source
+    names a separate 10x stock and receiving dose. Its printed mass belongs to that
+    stock, not directly to the finished medium. Preserve the source batch, input water,
+    10x designation and explicit provider-basis rate separately; no undocumented dilution,
+    final makeup or particular B12 vitamer is inferred.","source_stage":"Wolin''s
+    vitamin stock (10x), separately added","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 40-40","quote":"Wolin''s vitamin solution (10x) (from medium 120)","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 41-41","quote":"Biotin                                                    20.00       mg","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 59-59","quote":"Distilled water                  1000.00   ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 10-10","quote":"Wolin''s vitamin solution (10x)                             1.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"api1714","reference":"https://mediadive.dsmz.de/rest/medium/1714","raw_path":"REVIEW_WORK/batch065/source07-08-10/api1714.raw","raw_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","text_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","accessed_at":"2026-10-28T11:33:15.414234Z","locator":"data.solutions[2].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Biotin\",\n                        \"compound_id\":
+    46,\n                        \"amount\": 20,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\":
+    0.0818632,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q17","label":"Folic acid","local_fields":[{"path":"data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/archaea/conexivisphaera_medium.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.02","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    local direct-medium value equals the provider Wolin stock g_l, while the source
+    names a separate 10x stock and receiving dose. Its printed mass belongs to that
+    stock, not directly to the finished medium. Preserve the source batch, input water,
+    10x designation and explicit provider-basis rate separately; no undocumented dilution,
+    final makeup or particular B12 vitamer is inferred.","source_stage":"Wolin''s
+    vitamin stock (10x), separately added","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 40-40","quote":"Wolin''s vitamin solution (10x) (from medium 120)","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 42-42","quote":"Folic acid                                                20.00       mg","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 59-59","quote":"Distilled water                  1000.00   ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 10-10","quote":"Wolin''s vitamin solution (10x)                             1.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"api1714","reference":"https://mediadive.dsmz.de/rest/medium/1714","raw_path":"REVIEW_WORK/batch065/source07-08-10/api1714.raw","raw_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","text_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","accessed_at":"2026-10-28T11:33:15.414234Z","locator":"data.solutions[2].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Folic acid\",\n                        \"compound_id\":
+    138,\n                        \"amount\": 20,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\":
+    0.0453104,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q18","label":"Pyridoxine hydrochloride","local_fields":[{"path":"data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/archaea/conexivisphaera_medium.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    local direct-medium value equals the provider Wolin stock g_l, while the source
+    names a separate 10x stock and receiving dose. Its printed mass belongs to that
+    stock, not directly to the finished medium. Preserve the source batch, input water,
+    10x designation and explicit provider-basis rate separately; no undocumented dilution,
+    final makeup or particular B12 vitamer is inferred.","source_stage":"Wolin''s
+    vitamin stock (10x), separately added","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 40-40","quote":"Wolin''s vitamin solution (10x) (from medium 120)","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 43-43","quote":"Pyridoxine hydrochloride                                 100.00       mg","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 59-59","quote":"Distilled water                  1000.00   ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 10-10","quote":"Wolin''s vitamin solution (10x)                             1.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"api1714","reference":"https://mediadive.dsmz.de/rest/medium/1714","raw_path":"REVIEW_WORK/batch065/source07-08-10/api1714.raw","raw_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","text_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","accessed_at":"2026-10-28T11:33:15.414234Z","locator":"data.solutions[2].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\":
+    519,\n                        \"amount\": 100,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.486287,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q19","label":"Thiamine HCl","local_fields":[{"path":"data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/archaea/conexivisphaera_medium.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    local direct-medium value equals the provider Wolin stock g_l, while the source
+    names a separate 10x stock and receiving dose. Its printed mass belongs to that
+    stock, not directly to the finished medium. Preserve the source batch, input water,
+    10x designation and explicit provider-basis rate separately; no undocumented dilution,
+    final makeup or particular B12 vitamer is inferred.","source_stage":"Wolin''s
+    vitamin stock (10x), separately added","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 40-40","quote":"Wolin''s vitamin solution (10x) (from medium 120)","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 44-44","quote":"Thiamine HCl                                              50.00       mg","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 59-59","quote":"Distilled water                  1000.00   ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 10-10","quote":"Wolin''s vitamin solution (10x)                             1.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"api1714","reference":"https://mediadive.dsmz.de/rest/medium/1714","raw_path":"REVIEW_WORK/batch065/source07-08-10/api1714.raw","raw_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","text_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","accessed_at":"2026-10-28T11:33:15.414234Z","locator":"data.solutions[2].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Thiamine HCl\",\n                        \"compound_id\":
+    1207,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.148236,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q20","label":"Riboflavin","local_fields":[{"path":"data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/archaea/conexivisphaera_medium.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    local direct-medium value equals the provider Wolin stock g_l, while the source
+    names a separate 10x stock and receiving dose. Its printed mass belongs to that
+    stock, not directly to the finished medium. Preserve the source batch, input water,
+    10x designation and explicit provider-basis rate separately; no undocumented dilution,
+    final makeup or particular B12 vitamer is inferred.","source_stage":"Wolin''s
+    vitamin stock (10x), separately added","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 40-40","quote":"Wolin''s vitamin solution (10x) (from medium 120)","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 45-45","quote":"Riboflavin                                                50.00       mg","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 59-59","quote":"Distilled water                  1000.00   ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 10-10","quote":"Wolin''s vitamin solution (10x)                             1.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"api1714","reference":"https://mediadive.dsmz.de/rest/medium/1714","raw_path":"REVIEW_WORK/batch065/source07-08-10/api1714.raw","raw_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","text_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","accessed_at":"2026-10-28T11:33:15.414234Z","locator":"data.solutions[2].recipe[4]","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"Riboflavin\",\n                        \"compound_id\":
+    136,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.132837,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q21","label":"Nicotinic acid","local_fields":[{"path":"data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/archaea/conexivisphaera_medium.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    local direct-medium value equals the provider Wolin stock g_l, while the source
+    names a separate 10x stock and receiving dose. Its printed mass belongs to that
+    stock, not directly to the finished medium. Preserve the source batch, input water,
+    10x designation and explicit provider-basis rate separately; no undocumented dilution,
+    final makeup or particular B12 vitamer is inferred.","source_stage":"Wolin''s
+    vitamin stock (10x), separately added","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 40-40","quote":"Wolin''s vitamin solution (10x) (from medium 120)","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 46-46","quote":"Nicotinic acid                                            50.00       mg","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 59-59","quote":"Distilled water                  1000.00   ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 10-10","quote":"Wolin''s vitamin solution (10x)                             1.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"api1714","reference":"https://mediadive.dsmz.de/rest/medium/1714","raw_path":"REVIEW_WORK/batch065/source07-08-10/api1714.raw","raw_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","text_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","accessed_at":"2026-10-28T11:33:15.414234Z","locator":"data.solutions[2].recipe[5]","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\":
+    139,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.406141,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q22","label":"Calcium D-(+)-pantothenate","local_fields":[{"path":"data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/archaea/conexivisphaera_medium.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    local direct-medium value equals the provider Wolin stock g_l, while the source
+    names a separate 10x stock and receiving dose. Its printed mass belongs to that
+    stock, not directly to the finished medium. Preserve the source batch, input water,
+    10x designation and explicit provider-basis rate separately; no undocumented dilution,
+    final makeup or particular B12 vitamer is inferred.","source_stage":"Wolin''s
+    vitamin stock (10x), separately added","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 40-40","quote":"Wolin''s vitamin solution (10x) (from medium 120)","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 47-47","quote":"Calcium D-(+)-pantothenate                                50.00       mg","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 59-59","quote":"Distilled water                  1000.00   ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 10-10","quote":"Wolin''s vitamin solution (10x)                             1.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"api1714","reference":"https://mediadive.dsmz.de/rest/medium/1714","raw_path":"REVIEW_WORK/batch065/source07-08-10/api1714.raw","raw_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","text_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","accessed_at":"2026-10-28T11:33:15.414234Z","locator":"data.solutions[2].recipe[6]","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Calcium D-(+)-pantothenate\",\n                        \"compound_id\":
+    1512,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.209846,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q23","label":"Vitamin B12","local_fields":[{"path":"data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.001","unit":"G_PER_L"}},{"path":"data/normalized_yaml/archaea/conexivisphaera_medium.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.001","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    local direct-medium value equals the provider Wolin stock g_l, while the source
+    names a separate 10x stock and receiving dose. Its printed mass belongs to that
+    stock, not directly to the finished medium. Preserve the source batch, input water,
+    10x designation and explicit provider-basis rate separately; no undocumented dilution,
+    final makeup or particular B12 vitamer is inferred.","source_stage":"Wolin''s
+    vitamin stock (10x), separately added","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 40-40","quote":"Wolin''s vitamin solution (10x) (from medium 120)","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 56-56","quote":"Vitamin B12                         1.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 59-59","quote":"Distilled water                  1000.00   ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 10-10","quote":"Wolin''s vitamin solution (10x)                             1.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"api1714","reference":"https://mediadive.dsmz.de/rest/medium/1714","raw_path":"REVIEW_WORK/batch065/source07-08-10/api1714.raw","raw_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","text_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","accessed_at":"2026-10-28T11:33:15.414234Z","locator":"data.solutions[2].recipe[7]","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\":
+    18,\n                        \"amount\": 1,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\":
+    0.00073779,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q24","label":"p-Aminobenzoic acid","local_fields":[{"path":"data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/archaea/conexivisphaera_medium.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    local direct-medium value equals the provider Wolin stock g_l, while the source
+    names a separate 10x stock and receiving dose. Its printed mass belongs to that
+    stock, not directly to the finished medium. Preserve the source batch, input water,
+    10x designation and explicit provider-basis rate separately; no undocumented dilution,
+    final makeup or particular B12 vitamer is inferred.","source_stage":"Wolin''s
+    vitamin stock (10x), separately added","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 40-40","quote":"Wolin''s vitamin solution (10x) (from medium 120)","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 57-57","quote":"p-Aminobenzoic acid                50.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 59-59","quote":"Distilled water                  1000.00   ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 10-10","quote":"Wolin''s vitamin solution (10x)                             1.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"api1714","reference":"https://mediadive.dsmz.de/rest/medium/1714","raw_path":"REVIEW_WORK/batch065/source07-08-10/api1714.raw","raw_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","text_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","accessed_at":"2026-10-28T11:33:15.414234Z","locator":"data.solutions[2].recipe[8]","quote":"{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\":
+    47,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.364591,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q25","label":"(DL)-alpha-Lipoic acid","local_fields":[{"path":"data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/archaea/conexivisphaera_medium.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    local direct-medium value equals the provider Wolin stock g_l, while the source
+    names a separate 10x stock and receiving dose. Its printed mass belongs to that
+    stock, not directly to the finished medium. Preserve the source batch, input water,
+    10x designation and explicit provider-basis rate separately; no undocumented dilution,
+    final makeup or particular B12 vitamer is inferred.","source_stage":"Wolin''s
+    vitamin stock (10x), separately added","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 40-40","quote":"Wolin''s vitamin solution (10x) (from medium 120)","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 58-58","quote":"(DL)-alpha-Lipoic acid             50.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 59-59","quote":"Distilled water                  1000.00   ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 10-10","quote":"Wolin''s vitamin solution (10x)                             1.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"api1714","reference":"https://mediadive.dsmz.de/rest/medium/1714","raw_path":"REVIEW_WORK/batch065/source07-08-10/api1714.raw","raw_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","text_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","accessed_at":"2026-10-28T11:33:15.414234Z","locator":"data.solutions[2].recipe[9]","quote":"{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"(DL)-alpha-Lipoic acid\",\n                        \"compound_id\":
+    252,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.24233,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q26","label":"Main input water","local_fields":[],"decision":"evidence_only","rationale":"Source-only
+    solvent input is absent locally and must remain tied to this source stage. Input
+    water is not an explicit measured final-volume instruction; do not substitute
+    a final-medium per-litre denominator.","source_stage":"Main input water","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 13-13","quote":"Distilled water                                         1000.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"api1714","reference":"https://mediadive.dsmz.de/rest/medium/1714","raw_path":"REVIEW_WORK/batch065/source07-08-10/api1714.raw","raw_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","text_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","accessed_at":"2026-10-28T11:33:15.414234Z","locator":"data.solutions[0].recipe[10]","quote":"{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q27","label":"Allen input water","local_fields":[],"decision":"evidence_only","rationale":"Source-only
+    solvent input is absent locally and must remain tied to this source stage. Input
+    water is not an explicit measured final-volume instruction; do not substitute
+    a final-medium per-litre denominator.","source_stage":"Allen input water","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 34-34","quote":"Distilled water                                         1000.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"api1714","reference":"https://mediadive.dsmz.de/rest/medium/1714","raw_path":"REVIEW_WORK/batch065/source07-08-10/api1714.raw","raw_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","text_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","accessed_at":"2026-10-28T11:33:15.414234Z","locator":"data.solutions[1].recipe[7]","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q28","label":"Wolin input water","local_fields":[],"decision":"evidence_only","rationale":"Source-only
+    solvent input is absent locally and must remain tied to this source stage. Input
+    water is not an explicit measured final-volume instruction; do not substitute
+    a final-medium per-litre denominator.","source_stage":"Wolin input water","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 59-59","quote":"Distilled water                  1000.00   ml","quote_basis":"derivative
+    text"},{"evidence_id":"api1714","reference":"https://mediadive.dsmz.de/rest/medium/1714","raw_path":"REVIEW_WORK/batch065/source07-08-10/api1714.raw","raw_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","text_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","accessed_at":"2026-10-28T11:33:15.414234Z","locator":"data.solutions[2].recipe[10]","quote":"{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q29","label":"Allen receiving addition","local_fields":[],"decision":"evidence_only","rationale":"This
+    exact source receiving amount is distinct from stock strength and from a per-final-litre
+    rate. It is missing as a structured local stock addition; restore its batch context
+    without borrowing a denominator from input water.","source_stage":"Main receiving
+    batch","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 5-5","quote":"Allen''s trace element solution                            10.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"api1714","reference":"https://mediadive.dsmz.de/rest/medium/1714","raw_path":"REVIEW_WORK/batch065/source07-08-10/api1714.raw","raw_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","text_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","accessed_at":"2026-10-28T11:33:15.414234Z","locator":"data.solutions[0].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"solution\": \"Allen''s trace element solution\",\n                        \"solution_id\":
+    155,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q30","label":"Wolin receiving addition","local_fields":[],"decision":"evidence_only","rationale":"This
+    exact source receiving amount is distinct from stock strength and from a per-final-litre
+    rate. It is missing as a structured local stock addition; restore its batch context
+    without borrowing a denominator from input water.","source_stage":"Main receiving
+    batch","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 10-10","quote":"Wolin''s vitamin solution (10x)                             1.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"api1714","reference":"https://mediadive.dsmz.de/rest/medium/1714","raw_path":"REVIEW_WORK/batch065/source07-08-10/api1714.raw","raw_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","text_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","accessed_at":"2026-10-28T11:33:15.414234Z","locator":"data.solutions[0].recipe[7]","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"solution\": \"Wolin''s vitamin solution (10x)\",\n                        \"solution_id\":
+    5980,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q31","label":"Complete-medium pH range","local_fields":[{"path":"data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml","field_path":"ph_range","stored":{"min":5.0,"max":5.2}},{"path":"data/normalized_yaml/archaea/conexivisphaera_medium.yaml","field_path":"ph_range","stored":{"min":5.0,"max":5.2}}],"decision":"evidence_only","rationale":"Both
+    local ranges agree with the complete-medium range in the source and API. Preserve
+    them; do not confuse this with the initial adjustment or Allen stock pH.","source_stage":"Complete
+    medium","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 20-21","quote":"sterile anoxic stock solutions prepared under 100% N2 gas.
+    Adjust pH of complete medium\nto 5.0 - 5.2, if necessary.","quote_basis":"derivative
+    text"},{"evidence_id":"api1714","reference":"https://mediadive.dsmz.de/rest/medium/1714","raw_path":"REVIEW_WORK/batch065/source07-08-10/api1714.raw","raw_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","text_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","accessed_at":"2026-10-28T11:33:15.414234Z","locator":"data.medium","quote":"{\n            \"id\":
+    1714,\n            \"name\": \"CONEXIVISPHAERA MEDIUM\",\n            \"complex_medium\":
+    \"yes\",\n            \"min_pH\": 5,\n            \"max_pH\": 5.2,\n            \"source\":
+    \"DSMZ\",\n            \"link\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf\"\n        }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q32","label":"Retained main preparation description","local_fields":[{"path":"data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml","field_path":"preparation_steps[0].description","stored":"Dissolve
+    ammonium sulfate, potassium phosphate and trace elements, adjust pH to 5.2 using
+    10 N H2SO4 and sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min
+    to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. Add magnesium sulfate, calcium chloride, yeast
+    extract, vitamins (sterilized by filtration), cysteine and ferrous chloride from
+    sterile anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete
+    medium to 5.0 - 5.2, if necessary."},{"path":"data/normalized_yaml/archaea/conexivisphaera_medium.yaml","field_path":"preparation_steps[0].description","stored":"Dissolve
+    ammonium sulfate, potassium phosphate and trace elements, adjust pH to 5.2 using
+    10 N H2SO4 and sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min
+    to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. Add magnesium sulfate, calcium chloride, yeast
+    extract, vitamins (sterilized by filtration), cysteine and ferrous chloride from
+    sterile anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete
+    medium to 5.0 - 5.2, if necessary."}],"decision":"evidence_only","rationale":"The
+    complete main narrative already preserves the initial acid strength/pH, sparging
+    mixture and duration, dispensing atmosphere, separate sterile stock additions,
+    vitamin filtration and final pH. Credit it rather than saying these conditions
+    are wholly missing. AUTOCLAVE is only a coarse label for a multiaction description;
+    preserve separate stages if structured further.","source_stage":"Existing main
+    preparation narrative","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 15-21","quote":"Dissolve ammonium sulfate, potassium phosphate and trace
+    elements, adjust pH to 5.2\nusing 10 N H2SO4 and sparge medium with 80% N2 and
+    20% CO2 gas mixture for 30 - 45\nmin to make it anoxic. Dispense medium under
+    same gas atmosphere into anoxic\nHungate-type tubes or serum vials and autoclave.
+    Add magnesium sulfate, calcium\nchloride, yeast extract, vitamins (sterilized
+    by filtration), cysteine and ferrous chloride from\nsterile anoxic stock solutions
+    prepared under 100% N2 gas. Adjust pH of complete medium\nto 5.0 - 5.2, if necessary.","quote_basis":"derivative
+    text"},{"evidence_id":"api1714","reference":"https://mediadive.dsmz.de/rest/medium/1714","raw_path":"REVIEW_WORK/batch065/source07-08-10/api1714.raw","raw_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","text_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","accessed_at":"2026-10-28T11:33:15.414234Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"step\":
+    \"Dissolve ammonium sulfate, potassium phosphate and trace elements, adjust pH
+    to 5.2 using 10 N H2SO4 and sparge medium with 80% N2 and 20% CO2 gas mixture
+    for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials and autoclave. Add magnesium sulfate,
+    calcium chloride, yeast extract, vitamins (sterilized by filtration), cysteine
+    and ferrous chloride from sterile anoxic stock solutions prepared under 100% N2
+    gas. Adjust pH of complete medium to 5.0 - 5.2, if necessary.\"\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q33","label":"Misplaced Allen stock preparation","local_fields":[{"path":"data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml","field_path":"preparation_steps[1].description","stored":"Adjust
+    pH of final solution to 2 with 1 N HCl."},{"path":"data/normalized_yaml/archaea/conexivisphaera_medium.yaml","field_path":"preparation_steps[1].description","stored":"Adjust
+    pH of final solution to 2 with 1 N HCl."}],"decision":"correct","rationale":"The
+    text and its ADJUST_PH action are supported for the Allen stock, but the medium-level
+    position loses that scope and can be mistaken for a second final-medium pH instruction.
+    Move or explicitly qualify the stock stage; preserve the exact description, source
+    acid strength and unquantified acid dose.","source_stage":"Allen stock preparation,
+    not complete-medium pH","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 26-26","quote":"Allen''s trace element solution (from medium 88)","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 36-36","quote":"Adjust pH of final solution to 2 with 1 N HCl.","quote_basis":"derivative
+    text"},{"evidence_id":"api1714","reference":"https://mediadive.dsmz.de/rest/medium/1714","raw_path":"REVIEW_WORK/batch065/source07-08-10/api1714.raw","raw_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","text_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","accessed_at":"2026-10-28T11:33:15.414234Z","locator":"data.solutions[1].steps[0]","quote":"{\n                        \"step\":
+    \"Adjust pH of final solution to 2 with 1 N HCl.\"\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q34","label":"Main gas and timing controls","local_fields":[],"decision":"evidence_only","rationale":"The
+    stated main-gas mixture and sparging duration are explicit source conditions already
+    retained in prose. The distinct stock-preparation atmosphere is separately stated.
+    No growth-condition inference or alternative gas profile is proposed.","source_stage":"Source-only
+    structured controls; retained narrative credited","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 15-21","quote":"Dissolve ammonium sulfate, potassium phosphate and trace
+    elements, adjust pH to 5.2\nusing 10 N H2SO4 and sparge medium with 80% N2 and
+    20% CO2 gas mixture for 30 - 45\nmin to make it anoxic. Dispense medium under
+    same gas atmosphere into anoxic\nHungate-type tubes or serum vials and autoclave.
+    Add magnesium sulfate, calcium\nchloride, yeast extract, vitamins (sterilized
+    by filtration), cysteine and ferrous chloride from\nsterile anoxic stock solutions
+    prepared under 100% N2 gas. Adjust pH of complete medium\nto 5.0 - 5.2, if necessary.","quote_basis":"derivative
+    text"},{"evidence_id":"api1714","reference":"https://mediadive.dsmz.de/rest/medium/1714","raw_path":"REVIEW_WORK/batch065/source07-08-10/api1714.raw","raw_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","text_sha256":"cc4e24e8d3982dd37c26d5375e6d233f03585ed552f46599faecdeaaa55a12a7","accessed_at":"2026-10-28T11:33:15.414234Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"step\":
+    \"Dissolve ammonium sulfate, potassium phosphate and trace elements, adjust pH
+    to 5.2 using 10 N H2SO4 and sparge medium with 80% N2 and 20% CO2 gas mixture
+    for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials and autoclave. Add magnesium sulfate,
+    calcium chloride, yeast extract, vitamins (sterilized by filtration), cysteine
+    and ferrous chloride from sterile anoxic stock solutions prepared under 100% N2
+    gas. Adjust pH of complete medium to 5.0 - 5.2, if necessary.\"\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q35","label":"Acid strengths with unquantified additions","local_fields":[],"decision":"not_quantified","rationale":"The
+    source supplies acid identities and normalities for two different stages, but
+    no fixed acid addition volume. Preserve those distinctions and pH endpoints; no
+    acid mass, stock dose or conversion is calculated.","source_stage":"Separate main
+    and Allen adjustments","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 15-16","quote":"Dissolve ammonium sulfate, potassium phosphate and trace
+    elements, adjust pH to 5.2\nusing 10 N H2SO4 and sparge medium with 80% N2 and
+    20% CO2 gas mixture for 30 - 45","quote_basis":"derivative text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 36-36","quote":"Adjust pH of final solution to 2 with 1 N HCl.","quote_basis":"derivative
+    text"}]},{"quantity_id":"q36","label":"Vitamin stock 10x designation","local_fields":[],"decision":"evidence_only","rationale":"The
+    explicit 10x stock name is retained as source identity, not a licence to multiply
+    or divide the listed stock table again. The table and receiving dose are the direct
+    source statements.","source_stage":"Source stock designation","sources":[{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 10-10","quote":"Wolin''s vitamin solution (10x)                             1.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1714","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1714.pdf","raw_path":"REVIEW_WORK/batch065/source07-08-10/dsm1714.raw","raw_sha256":"31b7fff6a2dbaf6927a87c7c2d9a8f6efe3e93c5f8e32c26b52c98cc13b1a3f3","text_sha256":"6fd3a5d9e6d36da8e643ca1a2052aada89e075c437e24ef0dca2d85a2aa9a497","accessed_at":"2026-10-28T11:33:15.783470Z","locator":"dsm1714.txt
+    lines 40-40","quote":"Wolin''s vitamin solution (10x) (from medium 120)","quote_basis":"derivative
+    text"}]}],"document_scopes":{"data/merge_yaml/merged/CONEXIVISPHAERA_MEDIUM.yaml":null,"data/normalized_yaml/archaea/conexivisphaera_medium.yaml":null},"scope":"Every
+    selected target/owner concentration plus explicit dependency fields; source-only
+    rows/conditions and unchanged claims distinguished. Excluded parent quantities
+    are not transferred."}'
+- assessment_id: grounding
+  area: grounding
+  topic: Supplied forms and current ontology/MIM scope
+  outcome: concern
+  summary: All asserted IDs have current exact OLS objects and canonical labels; source
+    hydrates and salt forms were checked individually. CHEBI91248 explicitly defines
+    the monohydrate, CHEBI31345 carries D-calcium-pantothenate stereochemistry, and
+    CHEBI16494 leaves lipoic-acid stereochemistry unspecified while local/source DL
+    wording is retained. Generic B12 is not forced to cyanocobalamin. CHEBI131366
+    label agrees but its formula annotation has the stated hydration inconsistency.
+    Current MIM row presence and linkage counts are separate from exact chemical/formulation
+    validity; absent exact preferred pantothenate text is a bounded snapshot result,
+    not an invalid chemical ID.
+  target_ids:
+  - CultureMech:001193
+  evidence_ids:
+  - groundings
+  - mim
+  - mim-meta
+- assessment_id: history
+  area: provenance
+  topic: Existing repair credit and writer limits
+  outcome: supported
+  summary: Three complete exact historical reports and their selected plan row were
+    read with lossless pooling. Current API1714 bytes match the October7 cited digest
+    and all historical literal recipe/step objects; original retrieval time remains
+    historical. October5 had no source-checked quantities. Existing stable-ID, name,
+    pH-range and primary-label repairs are credited. Current primary/stock parser
+    improvements and conservative singleton merger do not authenticate the earlier
+    import execution; current all-solution preparation concatenation remains directly
+    observable.
+  target_ids:
+  - CultureMech:001193
+  evidence_ids:
+  - history
+  - old-reports
+  - old-claims
+  - writer-formulation
+  - writer-merger
+findings:
+- finding_id: f1
+  issue_key: culturemech-001193-flattened-stocks
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Both local layers flatten two source stocks into direct ingredients
+  description: Seventeen trace/vitamin components carry their stock-basis provider
+    g_l as direct medium concentrations. Neither local layer represents the two named
+    stock additions or their solvent inputs. Restore main/Allen/Wolin source stages,
+    retaining the original batch masses and explicit provider-rate basis; do not calculate
+    a final-medium dilution from input water. The eight main rates already match provider
+    g_l and are credited as provider-normalized statements, not as measured final-volume
+    evidence. Current _parse_api_composition and _parse_api_solutions preserve primary
+    compounds and stock references, so the old flattening is not attributed to an
+    unchanged current parser.
+  target_ids:
+  - CultureMech:001193
+  field_paths:
+  - ingredients
+  - solutions
+  evidence_ids:
+  - target
+  - owner
+  - dsm1714
+  - api1714
+  - writer-mediadive
+  rule_id: review-ingredient-concentrations/evidence-contract
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/conexivisphaera_medium.yaml
+    role: maintained source
+- finding_id: f2
+  issue_key: culturemech-001193-stock-preparation-scope
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Allen stock pH instruction is placed at medium level
+  description: The second medium preparation description belongs to Allen stock and
+    must not override the correctly retained complete-medium pH range. The full first
+    description already retains main sparging, sterile anoxic additions and vitamin
+    filtration; credit those details. Current _parse_preparation_steps still concatenates
+    all solution steps without a source-stage wrapper. Preserve the existing wording
+    but scope it to the stock, and make the current importer retain that stage in
+    future output.
+  target_ids:
+  - CultureMech:001193
+  field_paths:
+  - preparation_steps[1]
+  - ph_range
+  evidence_ids:
+  - target
+  - owner
+  - dsm1714
+  - api1714
+  - writer-preparation
+  rule_id: review-yaml-record/representation
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/conexivisphaera_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/import/mediadive_importer.py
+    role: scoped dependency
+- finding_id: f3
+  issue_key: culturemech-001193-claim-evidence
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Supported source statements and brand qualifier need exact evidence
+  description: Neither layer attaches literal EvidenceItems to the current amounts
+    and preparation statements. Add scoped primary/API evidence and preserve the explicit
+    OXOID yeast-extract qualifier; generic yeast extract ontology or MIM linkage would
+    not certify that product grade. Retain the source mixture and stock distinctions
+    and the complete existing main preparation description.
+  target_ids:
+  - CultureMech:001193
+  field_paths:
+  - ingredients
+  - preparation_steps
+  - evidence
+  evidence_ids:
+  - target
+  - owner
+  - dsm1714
+  - api1714
+  rule_id: review-yaml-record/evidence
+  native_severity: P3
+  normalization_reason: Bounded metadata, provenance or unresolved grounding follow-up;
+    no critical scientific failure is inferred.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/conexivisphaera_medium.yaml
+    role: maintained source
+- finding_id: f4
+  issue_key: culturemech-001193-borate-annotation-limit
+  category: grounding
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Borate ontology label agrees but formula annotation requires caution
+  description: CHEBI:131366 has the expected disodium tetraborate decahydrate label
+    and MIM mapping, but its returned formula annotation 10H2O.H4B4O9.2Na does not
+    have the same elemental water count as the source Na2B4O7 x10 H2O. This is a bounded
+    annotation inconsistency, not proof that the intended borate identity is wrong.
+    Retain the source hydrate wording, document the ambiguity and resolve the authority
+    annotation before any formula-based molar conversion; do not invent a replacement
+    ID.
+  target_ids:
+  - CultureMech:001193
+  field_paths:
+  - ingredients[9].term
+  evidence_ids:
+  - dsm1714
+  - chebi131366
+  - mim
+  rule_id: review-yaml-record/grounding
+  native_severity: P3
+  normalization_reason: Bounded metadata, provenance or unresolved grounding follow-up;
+    no critical scientific failure is inferred.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/conexivisphaera_medium.yaml
+    role: maintained source
+actions:
+- action_id: a1
+  description: Seventeen trace/vitamin components carry their stock-basis provider
+    g_l as direct medium concentrations. Neither local layer represents the two named
+    stock additions or their solvent inputs. Restore main/Allen/Wolin source stages,
+    retaining the original batch masses and explicit provider-rate basis; do not calculate
+    a final-medium dilution from input water. The eight main rates already match provider
+    g_l and are credited as provider-normalized statements, not as measured final-volume
+    evidence. Current _parse_api_composition and _parse_api_solutions preserve primary
+    compounds and stock references, so the old flattening is not attributed to an
+    unchanged current parser.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:001193
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/conexivisphaera_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a2
+  description: The second medium preparation description belongs to Allen stock and
+    must not override the correctly retained complete-medium pH range. The full first
+    description already retains main sparging, sterile anoxic additions and vitamin
+    filtration; credit those details. Current _parse_preparation_steps still concatenates
+    all solution steps without a source-stage wrapper. Preserve the existing wording
+    but scope it to the stock, and make the current importer retain that stage in
+    future output.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:001193
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/conexivisphaera_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/import/mediadive_importer.py
+    role: scoped dependency
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained recipe stage curation and _parse_preparation_steps source-stage
+    preservation
+- action_id: a3
+  description: Neither layer attaches literal EvidenceItems to the current amounts
+    and preparation statements. Add scoped primary/API evidence and preserve the explicit
+    OXOID yeast-extract qualifier; generic yeast extract ontology or MIM linkage would
+    not certify that product grade. Retain the source mixture and stock distinctions
+    and the complete existing main preparation description.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:001193
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/conexivisphaera_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a4
+  description: Retain the exact source borate decahydrate wording and document the
+    returned ontology formula discrepancy. Verify the authority annotation before
+    using that formula in calculations; no replacement identifier or amount conversion
+    is proposed.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:001193
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/conexivisphaera_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Canonical label agreement is recorded separately from the formula/hydration discrepancy.
+  - Any eventual formula-based calculation uses a separately verified supplied form;
+    no unsupported identifier substitution.
+  generator: Scoped maintained grounding annotation review
+limitations:
+- Both complete primary PDF pages were read visually and as indexed text. Text line
+  locators use Python splitlines, which counts the page form-feed boundary separately.
+- Primary water is a solvent input, including for both stocks; the phrase final solution
+  in the stock pH instruction is not a volumetric make-up instruction. Provider volume1011
+  and stock volume1000 are explicitly cataloged normalization fields, not independent
+  measured-final-volume proof.
+- The source does not give strengths/volumes for every separately sterilized stock
+  mentioned in prose, or fixed acid doses. None are reverse-engineered.
+- CHEBI131366 authority formula inconsistency is explicitly unresolved despite canonical
+  label agreement. The generic B12 and lipoic-acid IDs do not independently certify
+  a particular commercial vitamer or racemate purity.
+- Ignored-inclusive exact target/owner/report and current-writer searches define the
+  provenance scope; no global literature absence claim is made.
+- No strain-growth claim, optimization or experimental recommendation is inferred
+  from the medium name or general source identity.
+- The MIM snapshot commit is 6643131b0f12ab40b66f98135245fca04027e0e9; present/absent
+  rows do not establish a historical or live-catalog result.
+- Input water is not measured final volume. Explicit provider g_l rates are assessed
+  only on their declared normalization basis; unspecified percent bases and hydrate
+  numbers remain unresolved.
+- No source changes, formal review validation/save, Git mutation or publication was
+  performed by this author.
