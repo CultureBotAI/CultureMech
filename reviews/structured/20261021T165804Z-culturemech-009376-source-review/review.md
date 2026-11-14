@@ -1,0 +1,1677 @@
+# Source and formulation review: api_50_chb_e_medium (CultureMech:009376)
+
+- Review: 20261021T165804Z-culturemech-009376-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T16:49:31Z
+- Finished UTC: 2026-10-21T16:58:04Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+TOGO M2832 identifies one liter of API 50 CHB/E product, while the generated record stores 1 g/L and the maintained owner stores 1000 mL/L. The owner retains a provider assay temperature without its full scope. A separate official REF 50430 formula is available, but its edition and lot equivalence to the historical TOGO material are unestablished; no product expansion or generic growth claim is justified.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 291; batch 030 item 1 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding twenty-nine task batches contain 290 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 293 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:009376 | data/merge_yaml/merged/API_50_CHB_E_Medium.yaml | generated | api_50_chb_e_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:009376 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:009376 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-030/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch030/291/strict.tsv |
+| validate-terms | passed | True | CultureMech:009376 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:009376 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:009376 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Required source-scope verification | unavailable | True | CultureMech:009376 | Required historical source/product correspondence remains unavailable: TOGO has no upstream URL, manufacturer reference, edition or lot. The official REF 50430 edition is available and assessed, but its internal formula cannot be established as the exact historical TOGO material. This is the reason for partial coverage, not a claim that the official formula is inaccessible. |
+| Exact source content access: togoM2832page | unavailable | False | CultureMech:009376 | The cited public page returns a JavaScript shell. The exact TOGO JSON was available and independently inspected; the shell is not a separate formulation source. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:009376.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:009376.
+
+13 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "quantity_id": "q1",
+    "component_or_context": "Named product amount",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/API_50_CHB_E_Medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1000",
+          "unit": "ML_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": {
+      "product_amount": 1,
+      "unit": "L",
+      "equivalent_volume_ml": 1000,
+      "finished_medium_denominator": null
+    },
+    "rationale": "The source gives a product volume, not dry mass. One liter equals 1000 mL. The owner 1000 mL/L is a plausible neat-product normalization for this single finished product, not a confirmed erroneous rate; retain its literal one-liter note and add claim-level evidence plus the normalization rationale. Correct the generated mass unit.",
+    "source_snippets": [
+      {
+        "source_key": "togoM2832",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2832",
+        "source_locator": "$.components[0].items[0]",
+        "exact_source_quote": "\"component_name\": \"API 50 CHB/E Medium\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "204ff240d13d10c331e3f0884d8700e4c620e9f0d90eab5b7830df5c0b7083bb"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q2",
+    "component_or_context": "Provider assay temperature",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/API_50_CHB_E_Medium.yaml",
+        "field_path": "temperature_value",
+        "stored": null,
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml",
+        "field_path": "temperature_value",
+        "stored": 28.0,
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "temperature_C": 28,
+      "scope": "TOGO reported test-strip context only",
+      "generic_growth_temperature": null
+    },
+    "rationale": "The owner stores 28 degrees without an attached claim-level source or typed assay scope. Retain the reported context, not an optimum or generic medium growth condition; the target lacks this field, and no generic temperature insertion is proposed; retain 28 degrees only in an explicitly scoped note or evidence.",
+    "source_snippets": [
+      {
+        "source_key": "togoM2832",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2832",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "The fermentation test strips were inoculated with UCMB5113 resuspended in API 50 CHB/E Medium and was incubated for 24–48 hours at 28°C under aerobic conditions.",
+        "snapshot_sha256": "204ff240d13d10c331e3f0884d8700e4c620e9f0d90eab5b7830df5c0b7083bb",
+        "parsed_text_sha256": "09f807c47f5fe8dd0a23837a4b566b01f74e4b0d18bb24ad12e35b4e8f77827d",
+        "accessed_at": "2026-10-21T16:33:42.557948Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q3",
+    "component_or_context": "Provider assay duration",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/API_50_CHB_E_Medium.yaml",
+        "field_path": "notes",
+        "stored": "Source: https://togomedium.org/medium/M2832",
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml",
+        "field_path": "notes",
+        "stored": "TOGO M2832 records one liter of API 50 CHB/E Medium incubated at 28 C for 24-48 h; the source does not disclose the product's internal formulation.",
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": {
+      "duration_hours": [
+        24,
+        48
+      ],
+      "scope": "Specific TOGO assay context"
+    },
+    "rationale": "The owner already reports this range in notes; the generated target does not. Restore scoped source context only if needed for product provenance, without adding organism growth assertions.",
+    "source_snippets": [
+      {
+        "source_key": "togoM2832",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2832",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "The fermentation test strips were inoculated with UCMB5113 resuspended in API 50 CHB/E Medium and was incubated for 24–48 hours at 28°C under aerobic conditions.",
+        "snapshot_sha256": "204ff240d13d10c331e3f0884d8700e4c620e9f0d90eab5b7830df5c0b7083bb",
+        "parsed_text_sha256": "09f807c47f5fe8dd0a23837a4b566b01f74e4b0d18bb24ad12e35b4e8f77827d",
+        "accessed_at": "2026-10-21T16:33:42.557948Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q4",
+    "component_or_context": "Edition-specific manufacturer formula: Ammonium sulfate 2 g",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/API_50_CHB_E_Medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_value": 2,
+      "source_unit": "g",
+      "scope": "Manufacturer edition only",
+      "TOGO_formula_transfer": null,
+      "per_10_ml_ampoule": null
+    },
+    "rationale": "The formula row is authentic for this manufacturer edition. The 10 mL presentation is separate; no lot/version equivalence or final-volume/density calculation establishes that this row can replace the opaque TOGO ingredient. Preserve as version-qualified external context.",
+    "source_snippets": [
+      {
+        "source_key": "biomerieux_api50chbe_ifu",
+        "source_url": "https://info.biomerieux.com/rs/315-VKA-657/images/API%C2%AE%2050%20CHB-E%20Medium.pdf?version=0",
+        "source_locator": "Page 1 composition table; REF 50430 / 07964-H-ja-2020-10",
+        "exact_source_quote": "Ammonium sulfate 2 g",
+        "snapshot_sha256": "1fe8e6a6b86e7b6178ca5c636bef5778d60b6b88bef439625a4886f446a78fa7",
+        "parsed_text_sha256": "52054b0151603078c4ee470a86b7b90413b11e88a55e8ba10bdd9471b9de5fe5",
+        "accessed_at": "2026-10-21T16:34:39.382290Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q5",
+    "component_or_context": "Edition-specific manufacturer formula: Yeast extract 0.5 g",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/API_50_CHB_E_Medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_value": 0.5,
+      "source_unit": "g",
+      "scope": "Manufacturer edition only",
+      "TOGO_formula_transfer": null,
+      "per_10_ml_ampoule": null
+    },
+    "rationale": "The formula row is authentic for this manufacturer edition. The 10 mL presentation is separate; no lot/version equivalence or final-volume/density calculation establishes that this row can replace the opaque TOGO ingredient. Preserve as version-qualified external context.",
+    "source_snippets": [
+      {
+        "source_key": "biomerieux_api50chbe_ifu",
+        "source_url": "https://info.biomerieux.com/rs/315-VKA-657/images/API%C2%AE%2050%20CHB-E%20Medium.pdf?version=0",
+        "source_locator": "Page 1 composition table; REF 50430 / 07964-H-ja-2020-10",
+        "exact_source_quote": "Yeast extract 0.5 g",
+        "snapshot_sha256": "1fe8e6a6b86e7b6178ca5c636bef5778d60b6b88bef439625a4886f446a78fa7",
+        "parsed_text_sha256": "52054b0151603078c4ee470a86b7b90413b11e88a55e8ba10bdd9471b9de5fe5",
+        "accessed_at": "2026-10-21T16:34:39.382290Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q6",
+    "component_or_context": "Edition-specific manufacturer formula: Tryptone (bovine/porcine origin) 1 g",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/API_50_CHB_E_Medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_value": 1,
+      "source_unit": "g",
+      "scope": "Manufacturer edition only",
+      "TOGO_formula_transfer": null,
+      "per_10_ml_ampoule": null
+    },
+    "rationale": "The formula row is authentic for this manufacturer edition. The 10 mL presentation is separate; no lot/version equivalence or final-volume/density calculation establishes that this row can replace the opaque TOGO ingredient. Preserve as version-qualified external context.",
+    "source_snippets": [
+      {
+        "source_key": "biomerieux_api50chbe_ifu",
+        "source_url": "https://info.biomerieux.com/rs/315-VKA-657/images/API%C2%AE%2050%20CHB-E%20Medium.pdf?version=0",
+        "source_locator": "Page 1 composition table; REF 50430 / 07964-H-ja-2020-10",
+        "exact_source_quote": "Tryptone (bovine/porcine origin) 1 g",
+        "snapshot_sha256": "1fe8e6a6b86e7b6178ca5c636bef5778d60b6b88bef439625a4886f446a78fa7",
+        "parsed_text_sha256": "52054b0151603078c4ee470a86b7b90413b11e88a55e8ba10bdd9471b9de5fe5",
+        "accessed_at": "2026-10-21T16:34:39.382290Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q7",
+    "component_or_context": "Edition-specific manufacturer formula: Disodium phosphate 3.22 g",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/API_50_CHB_E_Medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_value": 3.22,
+      "source_unit": "g",
+      "scope": "Manufacturer edition only",
+      "TOGO_formula_transfer": null,
+      "per_10_ml_ampoule": null
+    },
+    "rationale": "The formula row is authentic for this manufacturer edition. The 10 mL presentation is separate; no lot/version equivalence or final-volume/density calculation establishes that this row can replace the opaque TOGO ingredient. Preserve as version-qualified external context.",
+    "source_snippets": [
+      {
+        "source_key": "biomerieux_api50chbe_ifu",
+        "source_url": "https://info.biomerieux.com/rs/315-VKA-657/images/API%C2%AE%2050%20CHB-E%20Medium.pdf?version=0",
+        "source_locator": "Page 1 composition table; REF 50430 / 07964-H-ja-2020-10",
+        "exact_source_quote": "Disodium phosphate 3.22 g",
+        "snapshot_sha256": "1fe8e6a6b86e7b6178ca5c636bef5778d60b6b88bef439625a4886f446a78fa7",
+        "parsed_text_sha256": "52054b0151603078c4ee470a86b7b90413b11e88a55e8ba10bdd9471b9de5fe5",
+        "accessed_at": "2026-10-21T16:34:39.382290Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q8",
+    "component_or_context": "Edition-specific manufacturer formula: Monopotassium phosphate 0.12 g",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/API_50_CHB_E_Medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_value": 0.12,
+      "source_unit": "g",
+      "scope": "Manufacturer edition only",
+      "TOGO_formula_transfer": null,
+      "per_10_ml_ampoule": null
+    },
+    "rationale": "The formula row is authentic for this manufacturer edition. The 10 mL presentation is separate; no lot/version equivalence or final-volume/density calculation establishes that this row can replace the opaque TOGO ingredient. Preserve as version-qualified external context.",
+    "source_snippets": [
+      {
+        "source_key": "biomerieux_api50chbe_ifu",
+        "source_url": "https://info.biomerieux.com/rs/315-VKA-657/images/API%C2%AE%2050%20CHB-E%20Medium.pdf?version=0",
+        "source_locator": "Page 1 composition table; REF 50430 / 07964-H-ja-2020-10",
+        "exact_source_quote": "Monopotassium phosphate 0.12 g",
+        "snapshot_sha256": "1fe8e6a6b86e7b6178ca5c636bef5778d60b6b88bef439625a4886f446a78fa7",
+        "parsed_text_sha256": "52054b0151603078c4ee470a86b7b90413b11e88a55e8ba10bdd9471b9de5fe5",
+        "accessed_at": "2026-10-21T16:34:39.382290Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q9",
+    "component_or_context": "Edition-specific manufacturer formula: Trace elements 10 mL",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/API_50_CHB_E_Medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_value": 10,
+      "source_unit": "mL",
+      "scope": "Manufacturer edition only",
+      "TOGO_formula_transfer": null,
+      "per_10_ml_ampoule": null
+    },
+    "rationale": "The formula row is authentic for this manufacturer edition. The 10 mL presentation is separate; no lot/version equivalence or final-volume/density calculation establishes that this row can replace the opaque TOGO ingredient. Preserve as version-qualified external context.",
+    "source_snippets": [
+      {
+        "source_key": "biomerieux_api50chbe_ifu",
+        "source_url": "https://info.biomerieux.com/rs/315-VKA-657/images/API%C2%AE%2050%20CHB-E%20Medium.pdf?version=0",
+        "source_locator": "Page 1 composition table; REF 50430 / 07964-H-ja-2020-10",
+        "exact_source_quote": "Trace elements 10 mL",
+        "snapshot_sha256": "1fe8e6a6b86e7b6178ca5c636bef5778d60b6b88bef439625a4886f446a78fa7",
+        "parsed_text_sha256": "52054b0151603078c4ee470a86b7b90413b11e88a55e8ba10bdd9471b9de5fe5",
+        "accessed_at": "2026-10-21T16:34:39.382290Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q10",
+    "component_or_context": "Edition-specific manufacturer formula: Phenol red 0.17 g",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/API_50_CHB_E_Medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_value": 0.17,
+      "source_unit": "g",
+      "scope": "Manufacturer edition only",
+      "TOGO_formula_transfer": null,
+      "per_10_ml_ampoule": null
+    },
+    "rationale": "The formula row is authentic for this manufacturer edition. The 10 mL presentation is separate; no lot/version equivalence or final-volume/density calculation establishes that this row can replace the opaque TOGO ingredient. Preserve as version-qualified external context.",
+    "source_snippets": [
+      {
+        "source_key": "biomerieux_api50chbe_ifu",
+        "source_url": "https://info.biomerieux.com/rs/315-VKA-657/images/API%C2%AE%2050%20CHB-E%20Medium.pdf?version=0",
+        "source_locator": "Page 1 composition table; REF 50430 / 07964-H-ja-2020-10",
+        "exact_source_quote": "Phenol red 0.17 g",
+        "snapshot_sha256": "1fe8e6a6b86e7b6178ca5c636bef5778d60b6b88bef439625a4886f446a78fa7",
+        "parsed_text_sha256": "52054b0151603078c4ee470a86b7b90413b11e88a55e8ba10bdd9471b9de5fe5",
+        "accessed_at": "2026-10-21T16:34:39.382290Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q11",
+    "component_or_context": "Edition-specific manufacturer formula: Demineralized water 1000 mL",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/API_50_CHB_E_Medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_value": 1000,
+      "source_unit": "mL",
+      "scope": "Manufacturer edition only",
+      "TOGO_formula_transfer": null,
+      "per_10_ml_ampoule": null
+    },
+    "rationale": "The formula row is authentic for this manufacturer edition. The 10 mL presentation is separate; no lot/version equivalence or final-volume/density calculation establishes that this row can replace the opaque TOGO ingredient. Preserve as version-qualified external context.",
+    "source_snippets": [
+      {
+        "source_key": "biomerieux_api50chbe_ifu",
+        "source_url": "https://info.biomerieux.com/rs/315-VKA-657/images/API%C2%AE%2050%20CHB-E%20Medium.pdf?version=0",
+        "source_locator": "Page 1 composition table; REF 50430 / 07964-H-ja-2020-10",
+        "exact_source_quote": "Demineralized water 1000 mL",
+        "snapshot_sha256": "1fe8e6a6b86e7b6178ca5c636bef5778d60b6b88bef439625a4886f446a78fa7",
+        "parsed_text_sha256": "52054b0151603078c4ee470a86b7b90413b11e88a55e8ba10bdd9471b9de5fe5",
+        "accessed_at": "2026-10-21T16:34:39.382290Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q12",
+    "component_or_context": "Manufacturer presentation volume",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/API_50_CHB_E_Medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": {
+      "presentation_ml": 10,
+      "formula_basis_is_presentation": false
+    },
+    "rationale": "Do not apply the ingredient table masses to a 10 mL ampoule or scale the TOGO liter from a presentation quantity.",
+    "source_snippets": [
+      {
+        "source_key": "biomerieux_api50chbe_ifu",
+        "source_url": "https://info.biomerieux.com/rs/315-VKA-657/images/API%C2%AE%2050%20CHB-E%20Medium.pdf?version=0",
+        "source_locator": "Page 1 product presentation, before composition table",
+        "exact_source_quote": "10 mL",
+        "snapshot_sha256": "1fe8e6a6b86e7b6178ca5c636bef5778d60b6b88bef439625a4886f446a78fa7",
+        "parsed_text_sha256": "52054b0151603078c4ee470a86b7b90413b11e88a55e8ba10bdd9471b9de5fe5",
+        "accessed_at": "2026-10-21T16:34:39.382290Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q13",
+    "component_or_context": "Manufacturer pH specification and measurement temperature",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/API_50_CHB_E_Medium.yaml",
+        "field_path": "ph_range",
+        "stored": null,
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml",
+        "field_path": "ph_range",
+        "stored": null,
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": {
+      "pH_range": [
+        7.4,
+        7.8
+      ],
+      "measurement_temperature_C": [
+        20,
+        25
+      ],
+      "scope": "REF 50430 edition only"
+    },
+    "rationale": "Neither local layer has this pH specification. Preserve as manufacturer-edition context; it is not verified for the historical TOGO lot and is not a cultivation temperature.",
+    "source_snippets": [
+      {
+        "source_key": "biomerieux_api50chbe_ifu",
+        "source_url": "https://info.biomerieux.com/rs/315-VKA-657/images/API%C2%AE%2050%20CHB-E%20Medium.pdf?version=0",
+        "source_locator": "Page 1 composition table footer",
+        "exact_source_quote": "pH: 7.4-7.8 at +20°C/+25°C",
+        "snapshot_sha256": "1fe8e6a6b86e7b6178ca5c636bef5778d60b6b88bef439625a4886f446a78fa7",
+        "parsed_text_sha256": "52054b0151603078c4ee470a86b7b90413b11e88a55e8ba10bdd9471b9de5fe5",
+        "accessed_at": "2026-10-21T16:34:39.382290Z"
+      }
+    ]
+  }
+]
+
+### Exact product and source accession
+
+identity: supported. Targets: CultureMech:009376.
+
+The target and its one maintained owner resolve to the same stable ID and exact TOGO M2832 named product. The official supplier document independently supports API 50 CHB/E identity; it does not establish that TOGO used REF 50430 of the captured edition or a specific lot.
+
+### Opaque product identity and absence of asserted chemical links
+
+grounding: supported. Targets: CultureMech:009376.
+
+Neither layer asserts ingredient CHEBI or MediaIngredientMech fields. There are zero asserted primary and zero asserted secondary chemical links; no universal MIM validation is claimed. An opaque commercial mixture must not be given a pure-molecule replacement identifier. TOGO:M2832 is verified separately.
+
+### Product presentation and assay-context scope
+
+completeness: concern. Targets: CultureMech:009376.
+
+The manufacturer describes a prepared product. The reviewed formulation page does not justify inventing a sterilization procedure or transferring other IFU assay instructions. Owner notes omit the test-strip and named-strain scope of the provider conditions; the temperature should not be a generic growth claim.
+
+### Composition, physical state and biological claims
+
+scope: supported. Targets: CultureMech:009376.
+
+A liquid commercial mixture is consistent with the supplied product and manufacturer composition containing yeast extract and tryptone. COMPLEX and UNDEFINED are appropriate; no target-organism or growth assertion follows from the product title, generic application, or the provider assay mention.
+
+### Maintained-owner and generated-target divergence
+
+ownership: concern. Targets: CultureMech:009376.
+
+The generated ingredient retains the older mass representation. The maintained owner has a later volume repair and temperature note, but neither layer attaches an exact amount snippet. Preserve permanent ID and historical events; apply any follow-up only to the maintained input, then regenerate.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:009376.
+
+8 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Current writers and follow-up ownership
+
+provenance: concern. Targets: CultureMech:009376.
+
+Current TOGO unit parsing explicitly maps l to L and has separate stock logic; it cannot be blamed for the historical generated 1 g/L merely from this snapshot. The available score-20 repair targets other records and is not the owner history named score-40 writer. The latter was not found by the frozen ignored-inclusive lookup. The maintained owner and merge generator own a future correction, with historical events preserved.
+
+## Findings
+
+### f1: Generated product volume is represented as mass
+
+major / open / confirmed; issue key: culturemech.009376.product-quantity-basis.
+
+Target ingredients[0] stores 1 G_PER_L, while the source specifies one liter of finished product. The maintained owner retains a literal one-liter note and 1000 ML_PER_L, a plausible neat-product normalization whose rationale and exact claim-level evidence need attaching. The owner rate is not established as false.
+
+### f2: Owner assay context is exposed as a general temperature
+
+major / open / confirmed; issue key: culturemech.009376.assay-scope.
+
+The maintained owner temperature_value and shortened notes retain the provider temperature and duration but omit the specific test-strip context. The generated target has no temperature field. This is an owner-scoped generalization, not evidence for an optimum or broad growth condition.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Preserve the named product and owner literal one-liter note. Attach the exact TOGO excerpt and explicitly document the plausible neat-product normalization or retain the absolute amount. Regenerate the stale target to remove the confirmed mass-unit defect after maintained-input verification.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Keep the provider observation explicitly scoped in notes/evidence; do not export the owner temperature as generic growth support. Do not infer target taxa or import unrelated IFU application procedures.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/API_50_CHB_E_Medium.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/API_50_CHB_E_Medium.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/API_50_CHB_E_Medium.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch030/291/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-030/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch030/291/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/API_50_CHB_E_Medium.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/API_50_CHB_E_Medium.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/API_50_CHB_E_Medium.yaml:1:id: CultureMech:009376<br>./data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml:1:id: CultureMech:009376<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch030/source-preflight-bound/291/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 3 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| bound-owner-context | /private/tmp/culturemech-review-work-batch030/source-preflight-bound/291/evidence-context-original.json; Whole target, all maintained owners and scoped dependencies | context_only | All frozen local-record objects match fresh inspected YAML. Source interpretations are separately checked against actual bound raw/text bytes. |
+| provider | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2832; $.meta; $.components[0].items[0]; $.comments[0] | supports | Exact TOGO M2832 supplies one liter of the named finished product and a specific test-strip context. Its upstream source URL is empty and no manufacturer reference, lot or internal formula is supplied. |
+| manufacturer | https://info.biomerieux.com/rs/315-VKA-657/images/API%C2%AE%2050%20CHB-E%20Medium.pdf?version=0; Page 1, REF 50430, revision 07964-H-ja-2020-10; product composition and footnote | supports | The official named-product document lists a 10 mL presentation separately from formula quantities including 1000 mL demineralized water. Formula quantities may be adjusted for raw-material potency. This supports this edition only; the undisclosed trace mixture and historical TOGO product equivalence remain unresolved. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch030/291/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| history-metadata | data/merge_yaml/merged/API_50_CHB_E_Medium.yaml; data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 4, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml", "events": 4, "timestamp_issues": []}] |
+| current-code-0 | src/culturemech/import/togo_importer.py; Current scoped code; no historical-version inference | context_only | Current TOGO unit parsing explicitly maps l to L and has separate stock logic; it cannot be blamed for the historical generated 1 g/L merely from this snapshot. The available score-20 repair targets other records and is not the owner history named score-40 writer. The latter was not found by the frozen ignored-inclusive lookup. The maintained owner and merge generator own a future correction, with historical events preserved. |
+| current-code-1 | scripts/repair_jcm_togo_water_products_score20.py; Current scoped code; no historical-version inference | context_only | Current TOGO unit parsing explicitly maps l to L and has separate stock logic; it cannot be blamed for the historical generated 1 g/L merely from this snapshot. The available score-20 repair targets other records and is not the owner history named score-40 writer. The latter was not found by the frozen ignored-inclusive lookup. The maintained owner and merge generator own a future correction, with historical events preserved. |
+| current-code-2 | src/culturemech/merge/merge_recipes.py; Current scoped code; no historical-version inference | context_only | Current TOGO unit parsing explicitly maps l to L and has separate stock logic; it cannot be blamed for the historical generated 1 g/L merely from this snapshot. The available score-20 repair targets other records and is not the owner history named score-40 writer. The latter was not found by the frozen ignored-inclusive lookup. The maintained owner and merge generator own a future correction, with historical events preserved. |
+| togoM2832page-attempt | https://togomedium.org/medium/M2832; Preserved exact public retrieval result | context_only | The cited public page returns a JavaScript shell. The exact TOGO JSON was available and independently inspected; the shell is not a separate formulation source. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Required historical source/product correspondence remains unavailable: TOGO has no upstream URL, manufacturer reference, edition or lot. The official REF 50430 edition is available and assessed, but its internal formula cannot be established as the exact historical TOGO material. This is the reason for partial coverage, not a claim that the official formula is inaccessible.
+- The cited public page returns a JavaScript shell. The exact TOGO JSON was available and independently inspected; the shell is not a separate formulation source.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T165804Z-culturemech-009376-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: api_50_chb_e_medium (CultureMech:009376)'
+started_at: '2026-10-21T16:49:31Z'
+finished_at: '2026-10-21T16:58:04Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: TOGO M2832 identifies one liter of API 50 CHB/E product, while the generated
+  record stores 1 g/L and the maintained owner stores 1000 mL/L. The owner retains
+  a provider assay temperature without its full scope. A separate official REF 50430
+  formula is available, but its edition and lot equivalence to the historical TOGO
+  material are unestablished; no product expansion or generic growth claim is justified.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/API_50_CHB_E_Medium.yaml
+    sha256: 6be9265d6227ce97055a8dc86de3d6d0f045303366ee6578224bcfa400a8a57b
+    role: target
+  - path: data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml
+    sha256: fbace69d9355589c06c767e45a2332775df7b69c5b4c5831da1c2e6dc6608ff1
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_jcm_togo_water_products_score20.py
+    sha256: 251d24509f9a76f6612c43eeddd58a3244c3c769d708311ab7306df8439a5d42
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/convert/togo_raw_yaml.py
+    sha256: ce5e73545c9ecde54724259d2fd475676c0f3cb44dcfd283950e89fd49c10993
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/fetch/togo_fetcher.py
+    sha256: 7aac40fe1d47e30810ae0be02f6e369ddb9bf657d630072595c62f46fb0bf339
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 291; batch 030 item 1 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding twenty-nine task batches
+    contain 290 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 293 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:009376
+targets:
+- target_id: CultureMech:009376
+  path: data/merge_yaml/merged/API_50_CHB_E_Medium.yaml
+  label: api_50_chb_e_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/API_50_CHB_E_Medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:009376
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/API_50_CHB_E_Medium.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch030/291/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-030/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch030/291/strict.tsv"
+  target_ids:
+  - CultureMech:009376
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/API_50_CHB_E_Medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:009376
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/API_50_CHB_E_Medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:009376
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:009376
+- check_id: historical-product-correspondence
+  name: Required source-scope verification
+  required: true
+  status: unavailable
+  summary: 'Required historical source/product correspondence remains unavailable:
+    TOGO has no upstream URL, manufacturer reference, edition or lot. The official
+    REF 50430 edition is available and assessed, but its internal formula cannot be
+    established as the exact historical TOGO material. This is the reason for partial
+    coverage, not a claim that the official formula is inaccessible.'
+  target_ids:
+  - CultureMech:009376
+  evidence_ids:
+  - provider
+  - manufacturer
+- check_id: togoM2832page-source-access
+  name: 'Exact source content access: togoM2832page'
+  required: false
+  status: unavailable
+  summary: The cited public page returns a JavaScript shell. The exact TOGO JSON was
+    available and independently inspected; the shell is not a separate formulation
+    source.
+  target_ids:
+  - CultureMech:009376
+  evidence_ids:
+  - togoM2832page-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/API_50_CHB_E_Medium.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T16:58:03Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T16:58:03Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/API_50_CHB_E_Medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T16:49:50.454058Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/API_50_CHB_E_Medium.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch030/291/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T16:49:52.469228Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-030/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch030/291/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/API_50_CHB_E_Medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T16:49:55.521851Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/API_50_CHB_E_Medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T16:49:57.125232Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T16:58:03Z'
+  support: supports
+  summary: './data/merge_yaml/merged/API_50_CHB_E_Medium.yaml:1:id: CultureMech:009376
+
+    ./data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml:1:id: CultureMech:009376
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch030/source-preflight-bound/291/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T16:58:03Z'
+  support: supports
+  summary: 3 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 6989cf8674daec21494aafa8aa916a39090872f3ed15faa6e3fa79d2080360f1
+- evidence_id: bound-owner-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch030/source-preflight-bound/291/evidence-context-original.json
+  locator: Whole target, all maintained owners and scoped dependencies
+  accessed_at: '2026-10-21T16:58:03Z'
+  support: context_only
+  summary: All frozen local-record objects match fresh inspected YAML. Source interpretations
+    are separately checked against actual bound raw/text bytes.
+  snapshot_sha256: c0484403bb7ea357d6801804029f75d987b8e8bef76026f14cb9d102dc22131b
+- evidence_id: provider
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2832
+  locator: $.meta; $.components[0].items[0]; $.comments[0]
+  accessed_at: '2026-10-21T16:33:42.557948Z'
+  support: supports
+  summary: Exact TOGO M2832 supplies one liter of the named finished product and a
+    specific test-strip context. Its upstream source URL is empty and no manufacturer
+    reference, lot or internal formula is supplied.
+  snapshot_sha256: 204ff240d13d10c331e3f0884d8700e4c620e9f0d90eab5b7830df5c0b7083bb
+- evidence_id: manufacturer
+  kind: primary_source
+  reference: https://info.biomerieux.com/rs/315-VKA-657/images/API%C2%AE%2050%20CHB-E%20Medium.pdf?version=0
+  locator: Page 1, REF 50430, revision 07964-H-ja-2020-10; product composition and
+    footnote
+  accessed_at: '2026-10-21T16:34:39.382290Z'
+  support: supports
+  summary: The official named-product document lists a 10 mL presentation separately
+    from formula quantities including 1000 mL demineralized water. Formula quantities
+    may be adjusted for raw-material potency. This supports this edition only; the
+    undisclosed trace mixture and historical TOGO product equivalence remain unresolved.
+  snapshot_sha256: 1fe8e6a6b86e7b6178ca5c636bef5778d60b6b88bef439625a4886f446a78fa7
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch030/291/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T16:58:03Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 15775af74f695b98075570fed06765ee0d0f46d135dc2806c8a0061d350c0daa
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/API_50_CHB_E_Medium.yaml; data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T16:58:03Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 4, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml",
+    "events": 4, "timestamp_issues": []}]'
+- evidence_id: current-code-0
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: Current scoped code; no historical-version inference
+  accessed_at: '2026-10-21T16:58:03Z'
+  support: context_only
+  summary: Current TOGO unit parsing explicitly maps l to L and has separate stock
+    logic; it cannot be blamed for the historical generated 1 g/L merely from this
+    snapshot. The available score-20 repair targets other records and is not the owner
+    history named score-40 writer. The latter was not found by the frozen ignored-inclusive
+    lookup. The maintained owner and merge generator own a future correction, with
+    historical events preserved.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: current-code-1
+  kind: record_content
+  reference: scripts/repair_jcm_togo_water_products_score20.py
+  locator: Current scoped code; no historical-version inference
+  accessed_at: '2026-10-21T16:58:03Z'
+  support: context_only
+  summary: Current TOGO unit parsing explicitly maps l to L and has separate stock
+    logic; it cannot be blamed for the historical generated 1 g/L merely from this
+    snapshot. The available score-20 repair targets other records and is not the owner
+    history named score-40 writer. The latter was not found by the frozen ignored-inclusive
+    lookup. The maintained owner and merge generator own a future correction, with
+    historical events preserved.
+  snapshot_sha256: 251d24509f9a76f6612c43eeddd58a3244c3c769d708311ab7306df8439a5d42
+- evidence_id: current-code-2
+  kind: record_content
+  reference: src/culturemech/merge/merge_recipes.py
+  locator: Current scoped code; no historical-version inference
+  accessed_at: '2026-10-21T16:58:03Z'
+  support: context_only
+  summary: Current TOGO unit parsing explicitly maps l to L and has separate stock
+    logic; it cannot be blamed for the historical generated 1 g/L merely from this
+    snapshot. The available score-20 repair targets other records and is not the owner
+    history named score-40 writer. The latter was not found by the frozen ignored-inclusive
+    lookup. The maintained owner and merge generator own a future correction, with
+    historical events preserved.
+  snapshot_sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+- evidence_id: togoM2832page-attempt
+  kind: database
+  reference: https://togomedium.org/medium/M2832
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T16:33:42.538928Z'
+  support: context_only
+  summary: The cited public page returns a JavaScript shell. The exact TOGO JSON was
+    available and independently inspected; the shell is not a separate formulation
+    source.
+  snapshot_sha256: 78669d85db93e40276577aaf5073aa0bc2420fe5b7be6212de5619e445da93aa
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:009376
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 13 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:009376
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"component_or_context\": \"\
+    Named product amount\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/API_50_CHB_E_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1000\",\n          \"unit\": \"ML_PER_L\"\n      \
+    \  },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"product_amount\": 1,\n      \"unit\": \"L\",\n      \"equivalent_volume_ml\"\
+    : 1000,\n      \"finished_medium_denominator\": null\n    },\n    \"rationale\"\
+    : \"The source gives a product volume, not dry mass. One liter equals 1000 mL.\
+    \ The owner 1000 mL/L is a plausible neat-product normalization for this single\
+    \ finished product, not a confirmed erroneous rate; retain its literal one-liter\
+    \ note and add claim-level evidence plus the normalization rationale. Correct\
+    \ the generated mass unit.\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"togoM2832\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2832\"\
+    ,\n        \"source_locator\": \"$.components[0].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"API 50 CHB/E Medium\\\",\\n          \\\"volume\\\
+    \": 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"\
+    204ff240d13d10c331e3f0884d8700e4c620e9f0d90eab5b7830df5c0b7083bb\"\n      }\n\
+    \    ]\n  },\n  {\n    \"quantity_id\": \"q2\",\n    \"component_or_context\"\
+    : \"Provider assay temperature\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/API_50_CHB_E_Medium.yaml\"\
+    ,\n        \"field_path\": \"temperature_value\",\n        \"stored\": null,\n\
+    \        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml\",\n        \"field_path\"\
+    : \"temperature_value\",\n        \"stored\": 28.0,\n        \"decision\": \"\
+    correct\"\n      }\n    ],\n    \"proposed_source_representation\": {\n      \"\
+    temperature_C\": 28,\n      \"scope\": \"TOGO reported test-strip context only\"\
+    ,\n      \"generic_growth_temperature\": null\n    },\n    \"rationale\": \"The\
+    \ owner stores 28 degrees without an attached claim-level source or typed assay\
+    \ scope. Retain the reported context, not an optimum or generic medium growth\
+    \ condition; the target lacks this field, and no generic temperature insertion\
+    \ is proposed; retain 28 degrees only in an explicitly scoped note or evidence.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM2832\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2832\"\
+    ,\n        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"The fermentation test strips were inoculated with UCMB5113 resuspended in\
+    \ API 50 CHB/E Medium and was incubated for 24–48 hours at 28°C under aerobic\
+    \ conditions.\",\n        \"snapshot_sha256\": \"204ff240d13d10c331e3f0884d8700e4c620e9f0d90eab5b7830df5c0b7083bb\"\
+    ,\n        \"parsed_text_sha256\": \"09f807c47f5fe8dd0a23837a4b566b01f74e4b0d18bb24ad12e35b4e8f77827d\"\
+    ,\n        \"accessed_at\": \"2026-10-21T16:33:42.557948Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q3\",\n    \"component_or_context\": \"Provider\
+    \ assay duration\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n   \
+    \   {\n        \"input\": \"data/merge_yaml/merged/API_50_CHB_E_Medium.yaml\"\
+    ,\n        \"field_path\": \"notes\",\n        \"stored\": \"Source: https://togomedium.org/medium/M2832\"\
+    ,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml\"\
+    ,\n        \"field_path\": \"notes\",\n        \"stored\": \"TOGO M2832 records\
+    \ one liter of API 50 CHB/E Medium incubated at 28 C for 24-48 h; the source does\
+    \ not disclose the product's internal formulation.\",\n        \"decision\": \"\
+    evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\": {\n\
+    \      \"duration_hours\": [\n        24,\n        48\n      ],\n      \"scope\"\
+    : \"Specific TOGO assay context\"\n    },\n    \"rationale\": \"The owner already\
+    \ reports this range in notes; the generated target does not. Restore scoped source\
+    \ context only if needed for product provenance, without adding organism growth\
+    \ assertions.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM2832\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2832\"\
+    ,\n        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"The fermentation test strips were inoculated with UCMB5113 resuspended in\
+    \ API 50 CHB/E Medium and was incubated for 24–48 hours at 28°C under aerobic\
+    \ conditions.\",\n        \"snapshot_sha256\": \"204ff240d13d10c331e3f0884d8700e4c620e9f0d90eab5b7830df5c0b7083bb\"\
+    ,\n        \"parsed_text_sha256\": \"09f807c47f5fe8dd0a23837a4b566b01f74e4b0d18bb24ad12e35b4e8f77827d\"\
+    ,\n        \"accessed_at\": \"2026-10-21T16:33:42.557948Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q4\",\n    \"component_or_context\": \"Edition-specific\
+    \ manufacturer formula: Ammonium sulfate 2 g\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/API_50_CHB_E_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"unsupported\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_value\": 2,\n      \"source_unit\": \"g\",\n      \"scope\"\
+    : \"Manufacturer edition only\",\n      \"TOGO_formula_transfer\": null,\n   \
+    \   \"per_10_ml_ampoule\": null\n    },\n    \"rationale\": \"The formula row\
+    \ is authentic for this manufacturer edition. The 10 mL presentation is separate;\
+    \ no lot/version equivalence or final-volume/density calculation establishes that\
+    \ this row can replace the opaque TOGO ingredient. Preserve as version-qualified\
+    \ external context.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"biomerieux_api50chbe_ifu\",\n        \"source_url\": \"https://info.biomerieux.com/rs/315-VKA-657/images/API%C2%AE%2050%20CHB-E%20Medium.pdf?version=0\"\
+    ,\n        \"source_locator\": \"Page 1 composition table; REF 50430 / 07964-H-ja-2020-10\"\
+    ,\n        \"exact_source_quote\": \"Ammonium sulfate 2 g\",\n        \"snapshot_sha256\"\
+    : \"1fe8e6a6b86e7b6178ca5c636bef5778d60b6b88bef439625a4886f446a78fa7\",\n    \
+    \    \"parsed_text_sha256\": \"52054b0151603078c4ee470a86b7b90413b11e88a55e8ba10bdd9471b9de5fe5\"\
+    ,\n        \"accessed_at\": \"2026-10-21T16:34:39.382290Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q5\",\n    \"component_or_context\": \"Edition-specific\
+    \ manufacturer formula: Yeast extract 0.5 g\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/API_50_CHB_E_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"unsupported\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_value\": 0.5,\n      \"source_unit\": \"g\",\n      \"scope\"\
+    : \"Manufacturer edition only\",\n      \"TOGO_formula_transfer\": null,\n   \
+    \   \"per_10_ml_ampoule\": null\n    },\n    \"rationale\": \"The formula row\
+    \ is authentic for this manufacturer edition. The 10 mL presentation is separate;\
+    \ no lot/version equivalence or final-volume/density calculation establishes that\
+    \ this row can replace the opaque TOGO ingredient. Preserve as version-qualified\
+    \ external context.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"biomerieux_api50chbe_ifu\",\n        \"source_url\": \"https://info.biomerieux.com/rs/315-VKA-657/images/API%C2%AE%2050%20CHB-E%20Medium.pdf?version=0\"\
+    ,\n        \"source_locator\": \"Page 1 composition table; REF 50430 / 07964-H-ja-2020-10\"\
+    ,\n        \"exact_source_quote\": \"Yeast extract 0.5 g\",\n        \"snapshot_sha256\"\
+    : \"1fe8e6a6b86e7b6178ca5c636bef5778d60b6b88bef439625a4886f446a78fa7\",\n    \
+    \    \"parsed_text_sha256\": \"52054b0151603078c4ee470a86b7b90413b11e88a55e8ba10bdd9471b9de5fe5\"\
+    ,\n        \"accessed_at\": \"2026-10-21T16:34:39.382290Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q6\",\n    \"component_or_context\": \"Edition-specific\
+    \ manufacturer formula: Tryptone (bovine/porcine origin) 1 g\",\n    \"decision\"\
+    : \"unsupported\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/API_50_CHB_E_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"unsupported\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_value\": 1,\n      \"source_unit\": \"g\",\n      \"scope\"\
+    : \"Manufacturer edition only\",\n      \"TOGO_formula_transfer\": null,\n   \
+    \   \"per_10_ml_ampoule\": null\n    },\n    \"rationale\": \"The formula row\
+    \ is authentic for this manufacturer edition. The 10 mL presentation is separate;\
+    \ no lot/version equivalence or final-volume/density calculation establishes that\
+    \ this row can replace the opaque TOGO ingredient. Preserve as version-qualified\
+    \ external context.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"biomerieux_api50chbe_ifu\",\n        \"source_url\": \"https://info.biomerieux.com/rs/315-VKA-657/images/API%C2%AE%2050%20CHB-E%20Medium.pdf?version=0\"\
+    ,\n        \"source_locator\": \"Page 1 composition table; REF 50430 / 07964-H-ja-2020-10\"\
+    ,\n        \"exact_source_quote\": \"Tryptone (bovine/porcine origin) 1 g\",\n\
+    \        \"snapshot_sha256\": \"1fe8e6a6b86e7b6178ca5c636bef5778d60b6b88bef439625a4886f446a78fa7\"\
+    ,\n        \"parsed_text_sha256\": \"52054b0151603078c4ee470a86b7b90413b11e88a55e8ba10bdd9471b9de5fe5\"\
+    ,\n        \"accessed_at\": \"2026-10-21T16:34:39.382290Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q7\",\n    \"component_or_context\": \"Edition-specific\
+    \ manufacturer formula: Disodium phosphate 3.22 g\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/API_50_CHB_E_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"unsupported\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_value\": 3.22,\n      \"source_unit\": \"g\",\n      \"scope\"\
+    : \"Manufacturer edition only\",\n      \"TOGO_formula_transfer\": null,\n   \
+    \   \"per_10_ml_ampoule\": null\n    },\n    \"rationale\": \"The formula row\
+    \ is authentic for this manufacturer edition. The 10 mL presentation is separate;\
+    \ no lot/version equivalence or final-volume/density calculation establishes that\
+    \ this row can replace the opaque TOGO ingredient. Preserve as version-qualified\
+    \ external context.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"biomerieux_api50chbe_ifu\",\n        \"source_url\": \"https://info.biomerieux.com/rs/315-VKA-657/images/API%C2%AE%2050%20CHB-E%20Medium.pdf?version=0\"\
+    ,\n        \"source_locator\": \"Page 1 composition table; REF 50430 / 07964-H-ja-2020-10\"\
+    ,\n        \"exact_source_quote\": \"Disodium phosphate 3.22 g\",\n        \"\
+    snapshot_sha256\": \"1fe8e6a6b86e7b6178ca5c636bef5778d60b6b88bef439625a4886f446a78fa7\"\
+    ,\n        \"parsed_text_sha256\": \"52054b0151603078c4ee470a86b7b90413b11e88a55e8ba10bdd9471b9de5fe5\"\
+    ,\n        \"accessed_at\": \"2026-10-21T16:34:39.382290Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q8\",\n    \"component_or_context\": \"Edition-specific\
+    \ manufacturer formula: Monopotassium phosphate 0.12 g\",\n    \"decision\": \"\
+    unsupported\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/API_50_CHB_E_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"unsupported\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_value\": 0.12,\n      \"source_unit\": \"g\",\n      \"scope\"\
+    : \"Manufacturer edition only\",\n      \"TOGO_formula_transfer\": null,\n   \
+    \   \"per_10_ml_ampoule\": null\n    },\n    \"rationale\": \"The formula row\
+    \ is authentic for this manufacturer edition. The 10 mL presentation is separate;\
+    \ no lot/version equivalence or final-volume/density calculation establishes that\
+    \ this row can replace the opaque TOGO ingredient. Preserve as version-qualified\
+    \ external context.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"biomerieux_api50chbe_ifu\",\n        \"source_url\": \"https://info.biomerieux.com/rs/315-VKA-657/images/API%C2%AE%2050%20CHB-E%20Medium.pdf?version=0\"\
+    ,\n        \"source_locator\": \"Page 1 composition table; REF 50430 / 07964-H-ja-2020-10\"\
+    ,\n        \"exact_source_quote\": \"Monopotassium phosphate 0.12 g\",\n     \
+    \   \"snapshot_sha256\": \"1fe8e6a6b86e7b6178ca5c636bef5778d60b6b88bef439625a4886f446a78fa7\"\
+    ,\n        \"parsed_text_sha256\": \"52054b0151603078c4ee470a86b7b90413b11e88a55e8ba10bdd9471b9de5fe5\"\
+    ,\n        \"accessed_at\": \"2026-10-21T16:34:39.382290Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q9\",\n    \"component_or_context\": \"Edition-specific\
+    \ manufacturer formula: Trace elements 10 mL\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/API_50_CHB_E_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"unsupported\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_value\": 10,\n      \"source_unit\": \"mL\",\n      \"scope\"\
+    : \"Manufacturer edition only\",\n      \"TOGO_formula_transfer\": null,\n   \
+    \   \"per_10_ml_ampoule\": null\n    },\n    \"rationale\": \"The formula row\
+    \ is authentic for this manufacturer edition. The 10 mL presentation is separate;\
+    \ no lot/version equivalence or final-volume/density calculation establishes that\
+    \ this row can replace the opaque TOGO ingredient. Preserve as version-qualified\
+    \ external context.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"biomerieux_api50chbe_ifu\",\n        \"source_url\": \"https://info.biomerieux.com/rs/315-VKA-657/images/API%C2%AE%2050%20CHB-E%20Medium.pdf?version=0\"\
+    ,\n        \"source_locator\": \"Page 1 composition table; REF 50430 / 07964-H-ja-2020-10\"\
+    ,\n        \"exact_source_quote\": \"Trace elements 10 mL\",\n        \"snapshot_sha256\"\
+    : \"1fe8e6a6b86e7b6178ca5c636bef5778d60b6b88bef439625a4886f446a78fa7\",\n    \
+    \    \"parsed_text_sha256\": \"52054b0151603078c4ee470a86b7b90413b11e88a55e8ba10bdd9471b9de5fe5\"\
+    ,\n        \"accessed_at\": \"2026-10-21T16:34:39.382290Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q10\",\n    \"component_or_context\": \"Edition-specific\
+    \ manufacturer formula: Phenol red 0.17 g\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/API_50_CHB_E_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"unsupported\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_value\": 0.17,\n      \"source_unit\": \"g\",\n      \"scope\"\
+    : \"Manufacturer edition only\",\n      \"TOGO_formula_transfer\": null,\n   \
+    \   \"per_10_ml_ampoule\": null\n    },\n    \"rationale\": \"The formula row\
+    \ is authentic for this manufacturer edition. The 10 mL presentation is separate;\
+    \ no lot/version equivalence or final-volume/density calculation establishes that\
+    \ this row can replace the opaque TOGO ingredient. Preserve as version-qualified\
+    \ external context.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"biomerieux_api50chbe_ifu\",\n        \"source_url\": \"https://info.biomerieux.com/rs/315-VKA-657/images/API%C2%AE%2050%20CHB-E%20Medium.pdf?version=0\"\
+    ,\n        \"source_locator\": \"Page 1 composition table; REF 50430 / 07964-H-ja-2020-10\"\
+    ,\n        \"exact_source_quote\": \"Phenol red 0.17 g\",\n        \"snapshot_sha256\"\
+    : \"1fe8e6a6b86e7b6178ca5c636bef5778d60b6b88bef439625a4886f446a78fa7\",\n    \
+    \    \"parsed_text_sha256\": \"52054b0151603078c4ee470a86b7b90413b11e88a55e8ba10bdd9471b9de5fe5\"\
+    ,\n        \"accessed_at\": \"2026-10-21T16:34:39.382290Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q11\",\n    \"component_or_context\": \"Edition-specific\
+    \ manufacturer formula: Demineralized water 1000 mL\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/API_50_CHB_E_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"unsupported\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_value\": 1000,\n      \"source_unit\": \"mL\",\n      \"scope\"\
+    : \"Manufacturer edition only\",\n      \"TOGO_formula_transfer\": null,\n   \
+    \   \"per_10_ml_ampoule\": null\n    },\n    \"rationale\": \"The formula row\
+    \ is authentic for this manufacturer edition. The 10 mL presentation is separate;\
+    \ no lot/version equivalence or final-volume/density calculation establishes that\
+    \ this row can replace the opaque TOGO ingredient. Preserve as version-qualified\
+    \ external context.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"biomerieux_api50chbe_ifu\",\n        \"source_url\": \"https://info.biomerieux.com/rs/315-VKA-657/images/API%C2%AE%2050%20CHB-E%20Medium.pdf?version=0\"\
+    ,\n        \"source_locator\": \"Page 1 composition table; REF 50430 / 07964-H-ja-2020-10\"\
+    ,\n        \"exact_source_quote\": \"Demineralized water 1000 mL\",\n        \"\
+    snapshot_sha256\": \"1fe8e6a6b86e7b6178ca5c636bef5778d60b6b88bef439625a4886f446a78fa7\"\
+    ,\n        \"parsed_text_sha256\": \"52054b0151603078c4ee470a86b7b90413b11e88a55e8ba10bdd9471b9de5fe5\"\
+    ,\n        \"accessed_at\": \"2026-10-21T16:34:39.382290Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q12\",\n    \"component_or_context\": \"Manufacturer\
+    \ presentation volume\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/API_50_CHB_E_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"unsupported\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"presentation_ml\": 10,\n      \"formula_basis_is_presentation\":\
+    \ false\n    },\n    \"rationale\": \"Do not apply the ingredient table masses\
+    \ to a 10 mL ampoule or scale the TOGO liter from a presentation quantity.\",\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"biomerieux_api50chbe_ifu\"\
+    ,\n        \"source_url\": \"https://info.biomerieux.com/rs/315-VKA-657/images/API%C2%AE%2050%20CHB-E%20Medium.pdf?version=0\"\
+    ,\n        \"source_locator\": \"Page 1 product presentation, before composition\
+    \ table\",\n        \"exact_source_quote\": \"10 mL\",\n        \"snapshot_sha256\"\
+    : \"1fe8e6a6b86e7b6178ca5c636bef5778d60b6b88bef439625a4886f446a78fa7\",\n    \
+    \    \"parsed_text_sha256\": \"52054b0151603078c4ee470a86b7b90413b11e88a55e8ba10bdd9471b9de5fe5\"\
+    ,\n        \"accessed_at\": \"2026-10-21T16:34:39.382290Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q13\",\n    \"component_or_context\": \"Manufacturer\
+    \ pH specification and measurement temperature\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/API_50_CHB_E_Medium.yaml\"\
+    ,\n        \"field_path\": \"ph_range\",\n        \"stored\": null,\n        \"\
+    decision\": \"unsupported\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_range\",\n        \"stored\": null,\n        \"\
+    decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"pH_range\": [\n        7.4,\n        7.8\n      ],\n      \"measurement_temperature_C\"\
+    : [\n        20,\n        25\n      ],\n      \"scope\": \"REF 50430 edition only\"\
+    \n    },\n    \"rationale\": \"Neither local layer has this pH specification.\
+    \ Preserve as manufacturer-edition context; it is not verified for the historical\
+    \ TOGO lot and is not a cultivation temperature.\",\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"biomerieux_api50chbe_ifu\",\n        \"\
+    source_url\": \"https://info.biomerieux.com/rs/315-VKA-657/images/API%C2%AE%2050%20CHB-E%20Medium.pdf?version=0\"\
+    ,\n        \"source_locator\": \"Page 1 composition table footer\",\n        \"\
+    exact_source_quote\": \"pH: 7.4-7.8 at +20°C/+25°C\",\n        \"snapshot_sha256\"\
+    : \"1fe8e6a6b86e7b6178ca5c636bef5778d60b6b88bef439625a4886f446a78fa7\",\n    \
+    \    \"parsed_text_sha256\": \"52054b0151603078c4ee470a86b7b90413b11e88a55e8ba10bdd9471b9de5fe5\"\
+    ,\n        \"accessed_at\": \"2026-10-21T16:34:39.382290Z\"\n      }\n    ]\n\
+    \  }\n]"
+- assessment_id: identity
+  area: identity
+  topic: Exact product and source accession
+  outcome: supported
+  summary: The target and its one maintained owner resolve to the same stable ID and
+    exact TOGO M2832 named product. The official supplier document independently supports
+    API 50 CHB/E identity; it does not establish that TOGO used REF 50430 of the captured
+    edition or a specific lot.
+  target_ids:
+  - CultureMech:009376
+  evidence_ids:
+  - record
+  - owner-0
+  - provider
+  - manufacturer
+- assessment_id: grounding
+  area: grounding
+  topic: Opaque product identity and absence of asserted chemical links
+  outcome: supported
+  summary: Neither layer asserts ingredient CHEBI or MediaIngredientMech fields. There
+    are zero asserted primary and zero asserted secondary chemical links; no universal
+    MIM validation is claimed. An opaque commercial mixture must not be given a pure-molecule
+    replacement identifier. TOGO:M2832 is verified separately.
+  target_ids:
+  - CultureMech:009376
+  evidence_ids:
+  - record
+  - owner-0
+  - provider
+  - manufacturer
+- assessment_id: preparation
+  area: completeness
+  topic: Product presentation and assay-context scope
+  outcome: concern
+  summary: The manufacturer describes a prepared product. The reviewed formulation
+    page does not justify inventing a sterilization procedure or transferring other
+    IFU assay instructions. Owner notes omit the test-strip and named-strain scope
+    of the provider conditions; the temperature should not be a generic growth claim.
+  target_ids:
+  - CultureMech:009376
+  evidence_ids:
+  - provider
+  - manufacturer
+  - owner-0
+- assessment_id: classification
+  area: scope
+  topic: Composition, physical state and biological claims
+  outcome: supported
+  summary: A liquid commercial mixture is consistent with the supplied product and
+    manufacturer composition containing yeast extract and tryptone. COMPLEX and UNDEFINED
+    are appropriate; no target-organism or growth assertion follows from the product
+    title, generic application, or the provider assay mention.
+  target_ids:
+  - CultureMech:009376
+  evidence_ids:
+  - record
+  - provider
+  - manufacturer
+- assessment_id: ownership
+  area: ownership
+  topic: Maintained-owner and generated-target divergence
+  outcome: concern
+  summary: The generated ingredient retains the older mass representation. The maintained
+    owner has a later volume repair and temperature note, but neither layer attaches
+    an exact amount snippet. Preserve permanent ID and historical events; apply any
+    follow-up only to the maintained input, then regenerate.
+  target_ids:
+  - CultureMech:009376
+  evidence_ids:
+  - record
+  - owner-0
+  - provider
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 8 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:009376
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: current-writers
+  area: provenance
+  topic: Current writers and follow-up ownership
+  outcome: concern
+  summary: Current TOGO unit parsing explicitly maps l to L and has separate stock
+    logic; it cannot be blamed for the historical generated 1 g/L merely from this
+    snapshot. The available score-20 repair targets other records and is not the owner
+    history named score-40 writer. The latter was not found by the frozen ignored-inclusive
+    lookup. The maintained owner and merge generator own a future correction, with
+    historical events preserved.
+  target_ids:
+  - CultureMech:009376
+  evidence_ids:
+  - record
+  - current-code-0
+  - current-code-1
+  - current-code-2
+findings:
+- finding_id: f1
+  issue_key: culturemech.009376.product-quantity-basis
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generated product volume is represented as mass
+  description: Target ingredients[0] stores 1 G_PER_L, while the source specifies
+    one liter of finished product. The maintained owner retains a literal one-liter
+    note and 1000 ML_PER_L, a plausible neat-product normalization whose rationale
+    and exact claim-level evidence need attaching. The owner rate is not established
+    as false.
+  target_ids:
+  - CultureMech:009376
+  field_paths:
+  - ingredients[0].concentration
+  evidence_ids:
+  - provider
+  - quantity-inventory
+  - owner-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.3
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.009376.assay-scope
+  category: scope
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Owner assay context is exposed as a general temperature
+  description: The maintained owner temperature_value and shortened notes retain the
+    provider temperature and duration but omit the specific test-strip context. The
+    generated target has no temperature field. This is an owner-scoped generalization,
+    not evidence for an optimum or broad growth condition.
+  target_ids:
+  - CultureMech:009376
+  field_paths:
+  - notes
+  - applications
+  evidence_ids:
+  - provider
+  - owner-0
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Preserve the named product and owner literal one-liter note. Attach
+    the exact TOGO excerpt and explicitly document the plausible neat-product normalization
+    or retain the absolute amount. Regenerate the stale target to remove the confirmed
+    mass-unit defect after maintained-input verification.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:009376
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Keep the provider observation explicitly scoped in notes/evidence;
+    do not export the owner temperature as generic growth support. Do not infer target
+    taxa or import unrelated IFU application procedures.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:009376
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/api_50_chb_e_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- 'Required historical source/product correspondence remains unavailable: TOGO has
+  no upstream URL, manufacturer reference, edition or lot. The official REF 50430
+  edition is available and assessed, but its internal formula cannot be established
+  as the exact historical TOGO material. This is the reason for partial coverage,
+  not a claim that the official formula is inaccessible.'
+- The cited public page returns a JavaScript shell. The exact TOGO JSON was available
+  and independently inspected; the shell is not a separate formulation source.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-030
+- generated-medium
+```
