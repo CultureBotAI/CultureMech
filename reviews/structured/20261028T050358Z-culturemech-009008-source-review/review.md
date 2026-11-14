@@ -1,0 +1,1323 @@
+# Scientific review: Brain Heart Infusion Agar
+
+- Review: 20261028T050358Z-culturemech-009008-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T04:33:11.613786Z
+- Finished UTC: 2026-10-28T05:03:58.140683Z
+- Reviewer: Codex tsb_source_check (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+Fresh ATCC44/JCM28/TOGO evidence supports exact source routes and credits existing owner preparation. The generated target is stale, water and batch denominators need correction, and the duplicate graph plus linked parent commercial decomposition exceed the authenticated product evidence. Every target, owner and linked-parent quantity is explicitly assessed; all four native checks passed.
+
+## Scope And Provenance
+
+Complete target and exact maintained owner, with explicitly scoped dependency/source comparisons.
+
+Selection: Authoritative batch055 selection index 09
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:009008 | data/merge_yaml/merged/Brain_Heart_Infusion_Agar.yaml | generated | brain_heart_infusion_agar |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Canonical schema | passed | True | CultureMech:009008 | Actual exit0; complete original argv/timestamps/stdout/stderr retained. |
+| Canonical strict | passed | True | CultureMech:009008 | Actual exit0; complete original argv/timestamps/stdout/stderr retained. |
+| Canonical terms | passed | True | CultureMech:009008 | Actual exit0; complete original argv/timestamps/stdout/stderr retained. |
+| Canonical references | passed | True | CultureMech:009008 | Actual exit0; complete original argv/timestamps/stdout/stderr retained. |
+
+## Scientific And Domain Assessments
+
+### Exact product and source identity
+
+identity: supported. Targets: CultureMech:009008.
+
+TOGO M2425 points to ATCC44 agar and the exact BD211065 product identifier. The related M21 points to JCM28 and BD-Difco broth plus agar. Current sources identify these routes, but do not establish their commercial compositional equality. No organism or strain growth claim is inferred.
+
+### Physical state and complex composition
+
+representation: supported. Targets: CultureMech:009008.
+
+Agar and the opaque animal-derived commercial/infusion materials support SOLID_AGAR, COMPLEX and UNDEFINED. A generic tissue ontology label does not identify a species-specific material or recovered mass. The parent’s canonical ontology labels are already correct for the broad asserted classes.
+
+### Exact inspected inputs and bounded unavailable writer
+
+provenance: supported. Targets: CultureMech:009008.
+
+The native inspection includes the selected target, exact maintained owner, full linked M21 dependency, current importer/merger/grounding writers and exact historical reports. The historical repair_atcc_score40.py is not an inspected input because it was absent from the bounded ignored-inclusive current scripts/src search. The preparer’s initial path assertion occurred before record09 native inspection and was preserved; the first actual inspection and four canonical commands all succeeded.
+
+### Complete quantities and preparation stages
+
+quantity: concern. Targets: CultureMech:009008.
+
+12 local concentration fields covered by 21 decisions. Source-only conditions, unchanged values and unsupported normalizations are retained explicitly.
+
+{"schema":"fresh-b055-scoped-quantity-inventory-v1","target":"data/merge_yaml/merged/Brain_Heart_Infusion_Agar.yaml","quantity_field_count":12,"decisions":[{"quantity_id":"q1","label":"ATCC commercial agar powder","local_fields":[{"path":"data/merge_yaml/merged/Brain_Heart_Infusion_Agar.yaml","field_path":"ingredients[1].concentration","stored":{"value":"52","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml","field_path":"ingredients[0].concentration","stored":{"value":"52","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"ATCC44 explicitly lists 52 g of BD211065 with 1000 mL input water. It does not state measured final volume or an explicit g/L declaration. Preserve batch mass and product identity; no commercial constituent expansion or equality with BD237500 plus agar is established.","source_stage":"ATCC44 commercial agar batch","sources":[{"evidence_id":"atcc44","reference":"https://www.atcc.org/~/media/45E208A3191F4C7EA9B7E1063EB55303.ashx","raw_path":"REVIEW_WORK/batch055/source07-09/atcc44.raw","raw_sha256":"0d494bdb3bf7f1a710b2f0dce26e183df8b4c67e9d5b316bf4a9113bc4a2607a","text_sha256":"ddeb24487e4cb35de28f08b4cd74e02c365797aef1fdf2fff109fa7c22c7c2e8","accessed_at":"2026-10-28T04:32:41.965038Z","locator":"atcc44.txt lines 3-5","quote":"Agar Medium\nBrain Heart Infusion Agar (BD 211065)…………………..52 g\nDI Water……………………...………………………………1000 ml"}]},{"quantity_id":"q2","label":"ATCC input water","local_fields":[{"path":"data/merge_yaml/merged/Brain_Heart_Infusion_Agar.yaml","field_path":"ingredients[0].concentration","stored":{"value":"1000","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml","field_path":"ingredients[1].concentration","stored":{"value":"1000","unit":"ML_PER_L"}}],"decision":"correct","rationale":"The source gives a liquid input of 1000 mL. The owner already corrects mass to volume, but ML_PER_L still adds an unstated final-volume denominator. The schema L unit can represent the input volume without density or measured-final-volume assumptions.","source_stage":"ATCC44 commercial agar input","sources":[{"evidence_id":"atcc44","reference":"https://www.atcc.org/~/media/45E208A3191F4C7EA9B7E1063EB55303.ashx","raw_path":"REVIEW_WORK/batch055/source07-09/atcc44.raw","raw_sha256":"0d494bdb3bf7f1a710b2f0dce26e183df8b4c67e9d5b316bf4a9113bc4a2607a","text_sha256":"ddeb24487e4cb35de28f08b4cd74e02c365797aef1fdf2fff109fa7c22c7c2e8","accessed_at":"2026-10-28T04:32:41.965038Z","locator":"atcc44.txt lines 5-5","quote":"DI Water……………………...………………………………1000 ml"}]},{"quantity_id":"q3","label":"Existing nominal pH and source interval","local_fields":[{"path":"data/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml","field_path":"ph_value","stored":7.4}],"decision":"correct","rationale":"The existing nominal 7.4 lies within TOGO M2425’s explicit 7.2–7.6 interval, which should be retained with the nominal value. ATCC44 prints 7.4 ±0.2 in the separate scratch-composition block; that block is not evidence of measured commercial product pH. Do not promote the stored scalar to an exact measurement.","source_stage":"TOGO medium metadata; distinct from ATCC scratch block","sources":[{"evidence_id":"togo2425","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2425","raw_path":"REVIEW_WORK/batch055/source07-09/togo2425.raw","raw_sha256":"371756c015922c25e62bc14e36a062ab1cf48ba7f31d16c33bbebec40e6181d3","text_sha256":"371756c015922c25e62bc14e36a062ab1cf48ba7f31d16c33bbebec40e6181d3","accessed_at":"2026-10-28T04:32:41.882060Z","locator":"togo2425.txt lines 6-6","quote":"\"ph\": \"7.2 - 7.6\""}]},{"quantity_id":"q4","label":"Existing powder/water preparation","local_fields":[{"path":"data/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml","field_path":"preparation_steps[0].description","stored":"Dissolve 52 g Brain Heart Infusion Agar (BD 211065) in 1000 mL DI water."}],"decision":"evidence_only","rationale":"The already repaired owner accurately preserves the named commercial powder batch and input water. Retain this positive preparation credit.","source_stage":"ATCC44 agar preparation","sources":[{"evidence_id":"atcc44","reference":"https://www.atcc.org/~/media/45E208A3191F4C7EA9B7E1063EB55303.ashx","raw_path":"REVIEW_WORK/batch055/source07-09/atcc44.raw","raw_sha256":"0d494bdb3bf7f1a710b2f0dce26e183df8b4c67e9d5b316bf4a9113bc4a2607a","text_sha256":"ddeb24487e4cb35de28f08b4cd74e02c365797aef1fdf2fff109fa7c22c7c2e8","accessed_at":"2026-10-28T04:32:41.965038Z","locator":"atcc44.txt lines 3-5","quote":"Agar Medium\nBrain Heart Infusion Agar (BD 211065)…………………..52 g\nDI Water……………………...………………………………1000 ml"}]},{"quantity_id":"q5","label":"Existing autoclave temperature","local_fields":[{"path":"data/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml","field_path":"preparation_steps[1].description","stored":"Autoclave at 121 C."}],"decision":"evidence_only","rationale":"121°C is explicitly stated. ATCC44 gives no duration here; do not transfer JCM28’s generic 15-minute default to this product formulation.","source_stage":"ATCC44 agar preparation","sources":[{"evidence_id":"atcc44","reference":"https://www.atcc.org/~/media/45E208A3191F4C7EA9B7E1063EB55303.ashx","raw_path":"REVIEW_WORK/batch055/source07-09/atcc44.raw","raw_sha256":"0d494bdb3bf7f1a710b2f0dce26e183df8b4c67e9d5b316bf4a9113bc4a2607a","text_sha256":"ddeb24487e4cb35de28f08b4cd74e02c365797aef1fdf2fff109fa7c22c7c2e8","accessed_at":"2026-10-28T04:32:41.965038Z","locator":"atcc44.txt lines 7-7","quote":"Autoclave at 121ºC."}]},{"quantity_id":"q6","label":"Owner batch narrative","local_fields":[{"path":"data/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml","field_path":"notes","stored":"TOGO M2425 cites ATCC Medium 44; ATCC Medium 44 lists 52 g Brain Heart Infusion Agar (BD 211065) per 1000 mL DI water."},{"path":"data/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml","field_path":"ingredients[0].notes","stored":"ATCC Medium 44 lists 52 g Brain Heart Infusion Agar (BD 211065) per 1000 mL DI water."},{"path":"data/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml","field_path":"ingredients[1].notes","stored":"ATCC Medium 44 lists 1000 mL DI water."}],"decision":"evidence_only","rationale":"These current source notes preserve powder mass and water input. They do not independently support the concentration-field denominator or the duplicate relationship.","source_stage":"ATCC44 owner source prose","sources":[{"evidence_id":"atcc44","reference":"https://www.atcc.org/~/media/45E208A3191F4C7EA9B7E1063EB55303.ashx","raw_path":"REVIEW_WORK/batch055/source07-09/atcc44.raw","raw_sha256":"0d494bdb3bf7f1a710b2f0dce26e183df8b4c67e9d5b316bf4a9113bc4a2607a","text_sha256":"ddeb24487e4cb35de28f08b4cd74e02c365797aef1fdf2fff109fa7c22c7c2e8","accessed_at":"2026-10-28T04:32:41.965038Z","locator":"atcc44.txt lines 3-5","quote":"Agar Medium\nBrain Heart Infusion Agar (BD 211065)…………………..52 g\nDI Water……………………...………………………………1000 ml"}]},{"quantity_id":"q7","label":"M21 input water","local_fields":[{"path":"data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml","field_path":"ingredients[0].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"correct","rationale":"JCM28 explicitly lists 1 L water. The dependency’s 1 G_PER_L is a dimensional error; use the source input-volume representation, not a retained mass or inferred final volume.","source_stage":"M21/JCM28 receiving recipe","sources":[{"evidence_id":"jcm28","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=28","raw_path":"REVIEW_WORK/batch055/source07-09/jcm28.raw","raw_sha256":"4b88ed256f2e87ccdafa84ee5d30695b0b8fdc99b9a24d38b6b23d00f62c5071","text_sha256":"6c39f130134d078f178f82ddd669b77feb777a82bc2eeedcab30149c5ee3d113","accessed_at":"2026-10-28T04:32:42.630526Z","locator":"jcm28.txt lines 12-14","quote":"Distilled water\n1.0\nL"}]},{"quantity_id":"q8","label":"M21 agar","local_fields":[{"path":"data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml","field_path":"ingredients[1].concentration","stored":{"value":"15","unit":"G_PER_L"}}],"decision":"mixed","rationale":"JCM28 lists 15 g agar in the recipe with 1 L water; this alone is batch mass. The cited generic MicrobeNotes table explicitly declares 15 g/L, supporting its own declared table basis. That article is not proof of manufacturer composition or equivalence to BD211065. Preserve both scopes rather than transferring the article basis into a product-equivalence claim.","source_stage":"M21 recipe versus generic article table","sources":[{"evidence_id":"jcm28","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=28","raw_path":"REVIEW_WORK/batch055/source07-09/jcm28.raw","raw_sha256":"4b88ed256f2e87ccdafa84ee5d30695b0b8fdc99b9a24d38b6b23d00f62c5071","text_sha256":"6c39f130134d078f178f82ddd669b77feb777a82bc2eeedcab30149c5ee3d113","accessed_at":"2026-10-28T04:32:42.630526Z","locator":"jcm28.txt lines 9-14","quote":"Agar\n15.0\ng\nDistilled water\n1.0\nL"},{"evidence_id":"bhiArticle","reference":"https://microbenotes.com/brain-heart-infusion-bhi-agar/","raw_path":"REVIEW_WORK/batch055/source07-09/bhiArticle.raw","raw_sha256":"39873c93291f575a5337e3a92e910ccd2da27845bf74e1419288088d9e3a2634","text_sha256":"cf8ba9003c5b7ee94497d77cdf5e727c8e7b55ffd605ae671b1b3fd6c7661274","accessed_at":"2026-10-28T04:32:42.240055Z","locator":"bhiArticle.txt lines 79-80","quote":"Ingredients\nGms/liter"},{"evidence_id":"bhiArticle","reference":"https://microbenotes.com/brain-heart-infusion-bhi-agar/","raw_path":"REVIEW_WORK/batch055/source07-09/bhiArticle.raw","raw_sha256":"39873c93291f575a5337e3a92e910ccd2da27845bf74e1419288088d9e3a2634","text_sha256":"cf8ba9003c5b7ee94497d77cdf5e727c8e7b55ffd605ae671b1b3fd6c7661274","accessed_at":"2026-10-28T04:32:42.240055Z","locator":"bhiArticle.txt lines 94-95","quote":"Agar\n15.000"}],"layer_decisions":{"JCM28_batch_basis":"unsupported","article_declared_rate":"evidence_only"}},{"quantity_id":"q9","label":"Calf-brain infusion variable amount","local_fields":[{"path":"data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml","field_path":"ingredients[2].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"evidence_only","rationale":"The retained infusion mass is not quantified by these sources. Keeping it unquantified is honest; VARIABLE must not be read as a source-specified dosing instruction. ATCC44 gives a starting tissue mass in a separate scratch alternative, not recovered solids or authenticated BD237500 composition.","source_stage":"Unquantified infusion material; scratch input comparison only","sources":[{"evidence_id":"atcc44","reference":"https://www.atcc.org/~/media/45E208A3191F4C7EA9B7E1063EB55303.ashx","raw_path":"REVIEW_WORK/batch055/source07-09/atcc44.raw","raw_sha256":"0d494bdb3bf7f1a710b2f0dce26e183df8b4c67e9d5b316bf4a9113bc4a2607a","text_sha256":"ddeb24487e4cb35de28f08b4cd74e02c365797aef1fdf2fff109fa7c22c7c2e8","accessed_at":"2026-10-28T04:32:41.965038Z","locator":"atcc44.txt lines 17-21","quote":"To make medium from scratch, follow formulation below:\n\nBrain Heart Infusion Composition\nCalf Brains, infusion from…………………………………..200 g\nBeef Hearts, infusion from………………………………….250 g"},{"evidence_id":"bhiArticle","reference":"https://microbenotes.com/brain-heart-infusion-bhi-agar/","raw_path":"REVIEW_WORK/batch055/source07-09/bhiArticle.raw","raw_sha256":"39873c93291f575a5337e3a92e910ccd2da27845bf74e1419288088d9e3a2634","text_sha256":"cf8ba9003c5b7ee94497d77cdf5e727c8e7b55ffd605ae671b1b3fd6c7661274","accessed_at":"2026-10-28T04:32:42.240055Z","locator":"bhiArticle.txt lines 81-84","quote":"HM infusion powder\n12.500\nBHI powder\n5.000"}]},{"quantity_id":"q10","label":"Calf-brain infusion tissue-input note","local_fields":[{"path":"data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml","field_path":"ingredients[2].notes","stored":"infusion from 200 g/L; Tissue infusion - source material is calf brain tissue; Constituent of Brain Heart Infusion commercial product"}],"decision":"correct","rationale":"The ATCC scratch input is a tissue starting mass, not g/L of retained infusion and not manufacturer-authenticated composition. The current cited article lists HM infusion powder and BHI powder instead. Correct the attribution and stage while retaining the uncertainty in recovered infusion mass.","source_stage":"M21 supplier-attribution note versus separate scratch formulation","sources":[{"evidence_id":"atcc44","reference":"https://www.atcc.org/~/media/45E208A3191F4C7EA9B7E1063EB55303.ashx","raw_path":"REVIEW_WORK/batch055/source07-09/atcc44.raw","raw_sha256":"0d494bdb3bf7f1a710b2f0dce26e183df8b4c67e9d5b316bf4a9113bc4a2607a","text_sha256":"ddeb24487e4cb35de28f08b4cd74e02c365797aef1fdf2fff109fa7c22c7c2e8","accessed_at":"2026-10-28T04:32:41.965038Z","locator":"atcc44.txt lines 17-21","quote":"To make medium from scratch, follow formulation below:\n\nBrain Heart Infusion Composition\nCalf Brains, infusion from…………………………………..200 g\nBeef Hearts, infusion from………………………………….250 g"},{"evidence_id":"bhiArticle","reference":"https://microbenotes.com/brain-heart-infusion-bhi-agar/","raw_path":"REVIEW_WORK/batch055/source07-09/bhiArticle.raw","raw_sha256":"39873c93291f575a5337e3a92e910ccd2da27845bf74e1419288088d9e3a2634","text_sha256":"cf8ba9003c5b7ee94497d77cdf5e727c8e7b55ffd605ae671b1b3fd6c7661274","accessed_at":"2026-10-28T04:32:42.240055Z","locator":"bhiArticle.txt lines 81-84","quote":"HM infusion powder\n12.500\nBHI powder\n5.000"}]},{"quantity_id":"q11","label":"Beef-heart infusion variable amount","local_fields":[{"path":"data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml","field_path":"ingredients[3].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"evidence_only","rationale":"The retained infusion mass is not quantified by these sources. Keeping it unquantified is honest; VARIABLE must not be read as a source-specified dosing instruction. ATCC44 gives a starting tissue mass in a separate scratch alternative, not recovered solids or authenticated BD237500 composition.","source_stage":"Unquantified infusion material; scratch input comparison only","sources":[{"evidence_id":"atcc44","reference":"https://www.atcc.org/~/media/45E208A3191F4C7EA9B7E1063EB55303.ashx","raw_path":"REVIEW_WORK/batch055/source07-09/atcc44.raw","raw_sha256":"0d494bdb3bf7f1a710b2f0dce26e183df8b4c67e9d5b316bf4a9113bc4a2607a","text_sha256":"ddeb24487e4cb35de28f08b4cd74e02c365797aef1fdf2fff109fa7c22c7c2e8","accessed_at":"2026-10-28T04:32:41.965038Z","locator":"atcc44.txt lines 17-21","quote":"To make medium from scratch, follow formulation below:\n\nBrain Heart Infusion Composition\nCalf Brains, infusion from…………………………………..200 g\nBeef Hearts, infusion from………………………………….250 g"},{"evidence_id":"bhiArticle","reference":"https://microbenotes.com/brain-heart-infusion-bhi-agar/","raw_path":"REVIEW_WORK/batch055/source07-09/bhiArticle.raw","raw_sha256":"39873c93291f575a5337e3a92e910ccd2da27845bf74e1419288088d9e3a2634","text_sha256":"cf8ba9003c5b7ee94497d77cdf5e727c8e7b55ffd605ae671b1b3fd6c7661274","accessed_at":"2026-10-28T04:32:42.240055Z","locator":"bhiArticle.txt lines 81-84","quote":"HM infusion powder\n12.500\nBHI powder\n5.000"}]},{"quantity_id":"q12","label":"Beef-heart infusion tissue-input note","local_fields":[{"path":"data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml","field_path":"ingredients[3].notes","stored":"infusion from 250 g/L; Tissue infusion - source material is beef/ox heart tissue; Constituent of Brain Heart Infusion commercial product"}],"decision":"correct","rationale":"The ATCC scratch input is a tissue starting mass, not g/L of retained infusion and not manufacturer-authenticated composition. The current cited article lists HM infusion powder and BHI powder instead. Correct the attribution and stage while retaining the uncertainty in recovered infusion mass.","source_stage":"M21 supplier-attribution note versus separate scratch formulation","sources":[{"evidence_id":"atcc44","reference":"https://www.atcc.org/~/media/45E208A3191F4C7EA9B7E1063EB55303.ashx","raw_path":"REVIEW_WORK/batch055/source07-09/atcc44.raw","raw_sha256":"0d494bdb3bf7f1a710b2f0dce26e183df8b4c67e9d5b316bf4a9113bc4a2607a","text_sha256":"ddeb24487e4cb35de28f08b4cd74e02c365797aef1fdf2fff109fa7c22c7c2e8","accessed_at":"2026-10-28T04:32:41.965038Z","locator":"atcc44.txt lines 17-21","quote":"To make medium from scratch, follow formulation below:\n\nBrain Heart Infusion Composition\nCalf Brains, infusion from…………………………………..200 g\nBeef Hearts, infusion from………………………………….250 g"},{"evidence_id":"bhiArticle","reference":"https://microbenotes.com/brain-heart-infusion-bhi-agar/","raw_path":"REVIEW_WORK/batch055/source07-09/bhiArticle.raw","raw_sha256":"39873c93291f575a5337e3a92e910ccd2da27845bf74e1419288088d9e3a2634","text_sha256":"cf8ba9003c5b7ee94497d77cdf5e727c8e7b55ffd605ae671b1b3fd6c7661274","accessed_at":"2026-10-28T04:32:42.240055Z","locator":"bhiArticle.txt lines 81-84","quote":"HM infusion powder\n12.500\nBHI powder\n5.000"}]},{"quantity_id":"q13","label":"M21 Proteose peptone","local_fields":[{"path":"data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml","field_path":"ingredients[4].concentration","stored":{"value":"10.0","unit":"G_PER_L"}}],"decision":"mixed","rationale":"The value and g/L unit are explicitly present in the currently cited generic article table; attach scoped evidence for that declared basis. ATCC44 reports the same numeric batch mass in a separate scratch alternative. Neither source authenticates this as the composition of the named BD237500 product, so the supplier-product attribution remains unsupported.","source_stage":"Generic declared article rate versus ATCC scratch batch","sources":[{"evidence_id":"bhiArticle","reference":"https://microbenotes.com/brain-heart-infusion-bhi-agar/","raw_path":"REVIEW_WORK/batch055/source07-09/bhiArticle.raw","raw_sha256":"39873c93291f575a5337e3a92e910ccd2da27845bf74e1419288088d9e3a2634","text_sha256":"cf8ba9003c5b7ee94497d77cdf5e727c8e7b55ffd605ae671b1b3fd6c7661274","accessed_at":"2026-10-28T04:32:42.240055Z","locator":"bhiArticle.txt lines 79-80","quote":"Ingredients\nGms/liter"},{"evidence_id":"bhiArticle","reference":"https://microbenotes.com/brain-heart-infusion-bhi-agar/","raw_path":"REVIEW_WORK/batch055/source07-09/bhiArticle.raw","raw_sha256":"39873c93291f575a5337e3a92e910ccd2da27845bf74e1419288088d9e3a2634","text_sha256":"cf8ba9003c5b7ee94497d77cdf5e727c8e7b55ffd605ae671b1b3fd6c7661274","accessed_at":"2026-10-28T04:32:42.240055Z","locator":"bhiArticle.txt lines 85-87","quote":"Proteose\npeptone\n10.000"},{"evidence_id":"atcc44","reference":"https://www.atcc.org/~/media/45E208A3191F4C7EA9B7E1063EB55303.ashx","raw_path":"REVIEW_WORK/batch055/source07-09/atcc44.raw","raw_sha256":"0d494bdb3bf7f1a710b2f0dce26e183df8b4c67e9d5b316bf4a9113bc4a2607a","text_sha256":"ddeb24487e4cb35de28f08b4cd74e02c365797aef1fdf2fff109fa7c22c7c2e8","accessed_at":"2026-10-28T04:32:41.965038Z","locator":"atcc44.txt lines 22-22","quote":"Proteose Peptone…………………………………...………10.0 g"}],"layer_decisions":{"article_value_and_unit":"evidence_only","BD237500_product_attribution":"unsupported"}},{"quantity_id":"q14","label":"M21 Dextrose","local_fields":[{"path":"data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml","field_path":"ingredients[5].concentration","stored":{"value":"2.0","unit":"G_PER_L"}}],"decision":"mixed","rationale":"The value and g/L unit are explicitly present in the currently cited generic article table; attach scoped evidence for that declared basis. ATCC44 reports the same numeric batch mass in a separate scratch alternative. Neither source authenticates this as the composition of the named BD237500 product, so the supplier-product attribution remains unsupported.","source_stage":"Generic declared article rate versus ATCC scratch batch","sources":[{"evidence_id":"bhiArticle","reference":"https://microbenotes.com/brain-heart-infusion-bhi-agar/","raw_path":"REVIEW_WORK/batch055/source07-09/bhiArticle.raw","raw_sha256":"39873c93291f575a5337e3a92e910ccd2da27845bf74e1419288088d9e3a2634","text_sha256":"cf8ba9003c5b7ee94497d77cdf5e727c8e7b55ffd605ae671b1b3fd6c7661274","accessed_at":"2026-10-28T04:32:42.240055Z","locator":"bhiArticle.txt lines 79-80","quote":"Ingredients\nGms/liter"},{"evidence_id":"bhiArticle","reference":"https://microbenotes.com/brain-heart-infusion-bhi-agar/","raw_path":"REVIEW_WORK/batch055/source07-09/bhiArticle.raw","raw_sha256":"39873c93291f575a5337e3a92e910ccd2da27845bf74e1419288088d9e3a2634","text_sha256":"cf8ba9003c5b7ee94497d77cdf5e727c8e7b55ffd605ae671b1b3fd6c7661274","accessed_at":"2026-10-28T04:32:42.240055Z","locator":"bhiArticle.txt lines 88-89","quote":"Dextrose (Glucose)\n2.000"},{"evidence_id":"atcc44","reference":"https://www.atcc.org/~/media/45E208A3191F4C7EA9B7E1063EB55303.ashx","raw_path":"REVIEW_WORK/batch055/source07-09/atcc44.raw","raw_sha256":"0d494bdb3bf7f1a710b2f0dce26e183df8b4c67e9d5b316bf4a9113bc4a2607a","text_sha256":"ddeb24487e4cb35de28f08b4cd74e02c365797aef1fdf2fff109fa7c22c7c2e8","accessed_at":"2026-10-28T04:32:41.965038Z","locator":"atcc44.txt lines 23-23","quote":"Dextrose……………………………………………..………..2.0 g"}],"layer_decisions":{"article_value_and_unit":"evidence_only","BD237500_product_attribution":"unsupported"}},{"quantity_id":"q15","label":"M21 Sodium chloride","local_fields":[{"path":"data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml","field_path":"ingredients[6].concentration","stored":{"value":"5.0","unit":"G_PER_L"}}],"decision":"mixed","rationale":"The value and g/L unit are explicitly present in the currently cited generic article table; attach scoped evidence for that declared basis. ATCC44 reports the same numeric batch mass in a separate scratch alternative. Neither source authenticates this as the composition of the named BD237500 product, so the supplier-product attribution remains unsupported.","source_stage":"Generic declared article rate versus ATCC scratch batch","sources":[{"evidence_id":"bhiArticle","reference":"https://microbenotes.com/brain-heart-infusion-bhi-agar/","raw_path":"REVIEW_WORK/batch055/source07-09/bhiArticle.raw","raw_sha256":"39873c93291f575a5337e3a92e910ccd2da27845bf74e1419288088d9e3a2634","text_sha256":"cf8ba9003c5b7ee94497d77cdf5e727c8e7b55ffd605ae671b1b3fd6c7661274","accessed_at":"2026-10-28T04:32:42.240055Z","locator":"bhiArticle.txt lines 79-80","quote":"Ingredients\nGms/liter"},{"evidence_id":"bhiArticle","reference":"https://microbenotes.com/brain-heart-infusion-bhi-agar/","raw_path":"REVIEW_WORK/batch055/source07-09/bhiArticle.raw","raw_sha256":"39873c93291f575a5337e3a92e910ccd2da27845bf74e1419288088d9e3a2634","text_sha256":"cf8ba9003c5b7ee94497d77cdf5e727c8e7b55ffd605ae671b1b3fd6c7661274","accessed_at":"2026-10-28T04:32:42.240055Z","locator":"bhiArticle.txt lines 90-91","quote":"Sodium chloride\n5.000"},{"evidence_id":"atcc44","reference":"https://www.atcc.org/~/media/45E208A3191F4C7EA9B7E1063EB55303.ashx","raw_path":"REVIEW_WORK/batch055/source07-09/atcc44.raw","raw_sha256":"0d494bdb3bf7f1a710b2f0dce26e183df8b4c67e9d5b316bf4a9113bc4a2607a","text_sha256":"ddeb24487e4cb35de28f08b4cd74e02c365797aef1fdf2fff109fa7c22c7c2e8","accessed_at":"2026-10-28T04:32:41.965038Z","locator":"atcc44.txt lines 24-24","quote":"NaCl…………………………………………………...………5.0 g"}],"layer_decisions":{"article_value_and_unit":"evidence_only","BD237500_product_attribution":"unsupported"}},{"quantity_id":"q16","label":"M21 Disodium phosphate","local_fields":[{"path":"data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml","field_path":"ingredients[7].concentration","stored":{"value":"2.5","unit":"G_PER_L"}}],"decision":"mixed","rationale":"The value and g/L unit are explicitly present in the currently cited generic article table; attach scoped evidence for that declared basis. ATCC44 reports the same numeric batch mass in a separate scratch alternative. Neither source authenticates this as the composition of the named BD237500 product, so the supplier-product attribution remains unsupported.","source_stage":"Generic declared article rate versus ATCC scratch batch","sources":[{"evidence_id":"bhiArticle","reference":"https://microbenotes.com/brain-heart-infusion-bhi-agar/","raw_path":"REVIEW_WORK/batch055/source07-09/bhiArticle.raw","raw_sha256":"39873c93291f575a5337e3a92e910ccd2da27845bf74e1419288088d9e3a2634","text_sha256":"cf8ba9003c5b7ee94497d77cdf5e727c8e7b55ffd605ae671b1b3fd6c7661274","accessed_at":"2026-10-28T04:32:42.240055Z","locator":"bhiArticle.txt lines 79-80","quote":"Ingredients\nGms/liter"},{"evidence_id":"bhiArticle","reference":"https://microbenotes.com/brain-heart-infusion-bhi-agar/","raw_path":"REVIEW_WORK/batch055/source07-09/bhiArticle.raw","raw_sha256":"39873c93291f575a5337e3a92e910ccd2da27845bf74e1419288088d9e3a2634","text_sha256":"cf8ba9003c5b7ee94497d77cdf5e727c8e7b55ffd605ae671b1b3fd6c7661274","accessed_at":"2026-10-28T04:32:42.240055Z","locator":"bhiArticle.txt lines 92-93","quote":"Disodium phosphate\n2.500"},{"evidence_id":"atcc44","reference":"https://www.atcc.org/~/media/45E208A3191F4C7EA9B7E1063EB55303.ashx","raw_path":"REVIEW_WORK/batch055/source07-09/atcc44.raw","raw_sha256":"0d494bdb3bf7f1a710b2f0dce26e183df8b4c67e9d5b316bf4a9113bc4a2607a","text_sha256":"ddeb24487e4cb35de28f08b4cd74e02c365797aef1fdf2fff109fa7c22c7c2e8","accessed_at":"2026-10-28T04:32:41.965038Z","locator":"atcc44.txt lines 25-25","quote":"Na2HPO4…………………………………………...………...2.5 g"}],"layer_decisions":{"article_value_and_unit":"evidence_only","BD237500_product_attribution":"unsupported"}},{"quantity_id":"q17","label":"M21 existing pH note","local_fields":[{"path":"data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml","field_path":"ingredients[7].notes","stored":"pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial product"}],"decision":"evidence_only","rationale":"The existing note already preserves pH 7.4 ±0.2, so pH is not wholly missing. This agrees with the generic article table, which specifies 25°C, and the separate ATCC scratch block. It is not evidence that this ingredient alone establishes pH or that a specific commercial product has been authenticated.","source_stage":"Generic formula pH context, not ingredient dose","sources":[{"evidence_id":"bhiArticle","reference":"https://microbenotes.com/brain-heart-infusion-bhi-agar/","raw_path":"REVIEW_WORK/batch055/source07-09/bhiArticle.raw","raw_sha256":"39873c93291f575a5337e3a92e910ccd2da27845bf74e1419288088d9e3a2634","text_sha256":"cf8ba9003c5b7ee94497d77cdf5e727c8e7b55ffd605ae671b1b3fd6c7661274","accessed_at":"2026-10-28T04:32:42.240055Z","locator":"bhiArticle.txt lines 96-96","quote":"Final pH (at 25°C): 7.4±0.2"},{"evidence_id":"atcc44","reference":"https://www.atcc.org/~/media/45E208A3191F4C7EA9B7E1063EB55303.ashx","raw_path":"REVIEW_WORK/batch055/source07-09/atcc44.raw","raw_sha256":"0d494bdb3bf7f1a710b2f0dce26e183df8b4c67e9d5b316bf4a9113bc4a2607a","text_sha256":"ddeb24487e4cb35de28f08b4cd74e02c365797aef1fdf2fff109fa7c22c7c2e8","accessed_at":"2026-10-28T04:32:41.965038Z","locator":"atcc44.txt lines 28-28","quote":"Final pH 7.4 +/- 0.2"}]},{"quantity_id":"q18","label":"Source-only JCM commercial broth dose","local_fields":[],"decision":"evidence_only","rationale":"JCM28 explicitly calls for 37 g BD-Difco BHI broth plus separately listed agar. The current parent decomposes this premix. Recover its opaque product representation unless exact product composition is independently established; 37 + 15 = 52 is not chemical equivalence proof.","source_stage":"M21/JCM28 commercial broth and agar recipe","sources":[{"evidence_id":"jcm28","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=28","raw_path":"REVIEW_WORK/batch055/source07-09/jcm28.raw","raw_sha256":"4b88ed256f2e87ccdafa84ee5d30695b0b8fdc99b9a24d38b6b23d00f62c5071","text_sha256":"6c39f130134d078f178f82ddd669b77feb777a82bc2eeedcab30149c5ee3d113","accessed_at":"2026-10-28T04:32:42.630526Z","locator":"jcm28.txt lines 6-14","quote":"Brain heart infusion broth (BD-Difco)\n37.0\ng\nAgar\n15.0\ng\nDistilled water\n1.0\nL"}]},{"quantity_id":"q19","label":"Source-only JCM sterilization default","local_fields":[],"decision":"evidence_only","rationale":"JCM28 states this generic default for its own media. Keep it source-scoped; it does not supply a missing ATCC44 duration.","source_stage":"JCM28 default only","sources":[{"evidence_id":"jcm28","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=28","raw_path":"REVIEW_WORK/batch055/source07-09/jcm28.raw","raw_sha256":"4b88ed256f2e87ccdafa84ee5d30695b0b8fdc99b9a24d38b6b23d00f62c5071","text_sha256":"6c39f130134d078f178f82ddd669b77feb777a82bc2eeedcab30149c5ee3d113","accessed_at":"2026-10-28T04:32:42.630526Z","locator":"jcm28.txt lines 4-4","quote":"Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min."}]},{"quantity_id":"q20","label":"Source-only article infusion powders","local_fields":[],"decision":"evidence_only","rationale":"These are the article’s current explicitly declared table entries. They are retained solely to assess the existing article attribution; they are not proposed manufacturer replacement values or organism-specific culture instructions.","source_stage":"Generic article composition comparison","sources":[{"evidence_id":"bhiArticle","reference":"https://microbenotes.com/brain-heart-infusion-bhi-agar/","raw_path":"REVIEW_WORK/batch055/source07-09/bhiArticle.raw","raw_sha256":"39873c93291f575a5337e3a92e910ccd2da27845bf74e1419288088d9e3a2634","text_sha256":"cf8ba9003c5b7ee94497d77cdf5e727c8e7b55ffd605ae671b1b3fd6c7661274","accessed_at":"2026-10-28T04:32:42.240055Z","locator":"bhiArticle.txt lines 79-84","quote":"Ingredients\nGms/liter\nHM infusion powder\n12.500\nBHI powder\n5.000"}]},{"quantity_id":"q21","label":"Source-only ATCC storage guidance","local_fields":[],"decision":"evidence_only","rationale":"This is product storage guidance, not an organism incubation temperature or an asserted local field. Keep its scope distinct.","source_stage":"ATCC product-storage note","sources":[{"evidence_id":"atcc44","reference":"https://www.atcc.org/~/media/45E208A3191F4C7EA9B7E1063EB55303.ashx","raw_path":"REVIEW_WORK/batch055/source07-09/atcc44.raw","raw_sha256":"0d494bdb3bf7f1a710b2f0dce26e183df8b4c67e9d5b316bf4a9113bc4a2607a","text_sha256":"ddeb24487e4cb35de28f08b4cd74e02c365797aef1fdf2fff109fa7c22c7c2e8","accessed_at":"2026-10-28T04:32:41.965038Z","locator":"atcc44.txt lines 34-34","quote":" Recommended storage temperature: 2-8ºC."}]}],"scope":"Every target/maintained-owner concentration, plus scoped dependency quantities and all numeric preparation assertions; derivative historical quantities are not endorsed."}
+
+### Ontology identity, supplied forms and current MIM
+
+grounding: supported. Targets: CultureMech:009008.
+
+Target direct-ingredient linkage counts are 0/2 primary and 0/2 secondary. These are linkage metrics, not scientific accuracy. All scoped CHEBI/MICRO/UBERON objects were inspected. Any case-only MICRO:0000180 mismatch is reported only for an actually differing asserted label; the BHI parent already uses canonical proteose peptone. No wrong ID follows from typography. UBERON tissue/blood terms do not encode species, processing or retained infusion mass.
+
+### Repair credit and current writer limits
+
+provenance: supported. Targets: CultureMech:009008.
+
+Current target/owner and scoped dependency histories, all selected September/October reports and relevant current writer code were read. The October reports had zero source-checked rows; old review per-litre assumptions are not adopted. Current code is evidence of current behavior only.
+
+## Findings
+
+### f1: The generated target omits existing source and preparation repairs
+
+major / open / confirmed; issue key: culturemech-009008-generated-repair-staleness.
+
+The maintained owner already corrects the commercial product name, restores water volume/grounding, pH context, preparation, sterilization, references and its repair history. The generated target retains the old water mass and shortened product name and omits those fields. Credit those repairs; regenerate only after resolving the remaining denominator and graph claims. Current singleton merge copying and conservative formulation comparison do not prove this target is fresh.
+
+### f2: Input water and batch masses are represented as final concentrations
+
+major / open / confirmed; issue key: culturemech-009008-input-volume-and-main-basis.
+
+The target water G_PER_L is dimensionally wrong; the owner’s ML_PER_L improves dimensionality but still invents a final-volume denominator. ATCC44 states 52 g product and 1000 mL input water without final makeup. The M21 dependency separately stores its JCM28 1 L water as 1 G_PER_L. Preserve exact source inputs, distinguish the article’s explicit g/L table from batch masses, and retain TOGO’s 7.2–7.6 pH interval alongside the existing nominal 7.4.
+
+### f3: The reciprocal duplicate graph assumes unverified commercial equivalence
+
+major / open / confirmed; issue key: culturemech-009008-unproved-commercial-duplicate.
+
+M2425 is ATCC44’s 52 g BD211065 commercial agar recipe; M21/JCM28 is 37 g BD-Difco BHI broth plus 15 g agar. Their sum does not establish product composition equivalence. The reciprocal SOURCE_DUPLICATE relationship and CultureMech:008793 pointer on the commercial ingredient currently treat a complete medium recipe as product identity. Keep the relationship unresolved or qualify it until exact product evidence establishes equivalence; do not expand this ingredient through the parent solely from its label.
+
+### f4: The parent conflates commercial powder with a scratch infusion alternative
+
+major / open / confirmed; issue key: culturemech-009008-parent-product-composition-attribution.
+
+The parent attributes 200/250 g tissue-input notes and constituent rates to BD237500 via a generic article. The current article instead lists HM infusion powder and BHI powder; ATCC44’s tissue inputs belong to an explicitly separate scratch alternative. Neither authenticates commercial product composition. Keep retained tissue infusion amounts unquantified, preserve supported article-declared values only within their source basis, and restore or explicitly account for the JCM commercial premix rather than silently treating scratch inputs as its retained constituents.
+
+### f5: Current source claims need exact scope and bounded writer provenance
+
+minor / open / confirmed; issue key: culturemech-009008-scoped-evidence-and-historical-writer.
+
+Root references and product URLs do not supply amount-specific attached evidence. Add short exact support after resolving source/product stages, preserving existing pH and preparation credit. The named historical repair_atcc_score40.py was not found in an ignored-inclusive search of current scripts/src Python files and filenames; this bounded absence does not prove that it never existed or ran. Preserve the old event and inspect current paths before any future repair, rather than claiming knowledge of that unavailable historical implementation.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+The maintained owner already corrects the commercial product name, restores water volume/grounding, pH context, preparation, sterilization, references and its repair history. The generated target retains the old water mass and shortened product name and omits those fields. Credit those repairs; regenerate only after resolving the remaining denominator and graph claims. Current singleton merge copying and conservative formulation comparison do not prove this target is fresh.
+
+- Curate only the named maintained inputs; preserve source version, stage, original history and a new actual curation event. Do not rerun a historical repair blindly.
+- Attach exact scoped evidence and recheck all affected quantities, units, stock boundaries and ontology labels; leave unsupported final-volume or product-equivalence claims unresolved.
+- Regenerate this target through current repository merge workflow, check freshness, and rerun schema, strict, terms and references checks.
+
+### a2
+
+The target water G_PER_L is dimensionally wrong; the owner’s ML_PER_L improves dimensionality but still invents a final-volume denominator. ATCC44 states 52 g product and 1000 mL input water without final makeup. The M21 dependency separately stores its JCM28 1 L water as 1 G_PER_L. Preserve exact source inputs, distinguish the article’s explicit g/L table from batch masses, and retain TOGO’s 7.2–7.6 pH interval alongside the existing nominal 7.4.
+
+- Curate only the named maintained inputs; preserve source version, stage, original history and a new actual curation event. Do not rerun a historical repair blindly.
+- Attach exact scoped evidence and recheck all affected quantities, units, stock boundaries and ontology labels; leave unsupported final-volume or product-equivalence claims unresolved.
+- Regenerate this target through current repository merge workflow, check freshness, and rerun schema, strict, terms and references checks.
+
+### a3
+
+M2425 is ATCC44’s 52 g BD211065 commercial agar recipe; M21/JCM28 is 37 g BD-Difco BHI broth plus 15 g agar. Their sum does not establish product composition equivalence. The reciprocal SOURCE_DUPLICATE relationship and CultureMech:008793 pointer on the commercial ingredient currently treat a complete medium recipe as product identity. Keep the relationship unresolved or qualify it until exact product evidence establishes equivalence; do not expand this ingredient through the parent solely from its label.
+
+- Curate only the named maintained inputs; preserve source version, stage, original history and a new actual curation event. Do not rerun a historical repair blindly.
+- Attach exact scoped evidence and recheck all affected quantities, units, stock boundaries and ontology labels; leave unsupported final-volume or product-equivalence claims unresolved.
+- Regenerate this target through current repository merge workflow, check freshness, and rerun schema, strict, terms and references checks.
+
+### a4
+
+The parent attributes 200/250 g tissue-input notes and constituent rates to BD237500 via a generic article. The current article instead lists HM infusion powder and BHI powder; ATCC44’s tissue inputs belong to an explicitly separate scratch alternative. Neither authenticates commercial product composition. Keep retained tissue infusion amounts unquantified, preserve supported article-declared values only within their source basis, and restore or explicitly account for the JCM commercial premix rather than silently treating scratch inputs as its retained constituents.
+
+- Curate only the named maintained inputs; preserve source version, stage, original history and a new actual curation event. Do not rerun a historical repair blindly.
+- Attach exact scoped evidence and recheck all affected quantities, units, stock boundaries and ontology labels; leave unsupported final-volume or product-equivalence claims unresolved.
+- Regenerate this target through current repository merge workflow, check freshness, and rerun schema, strict, terms and references checks.
+
+### a5
+
+Root references and product URLs do not supply amount-specific attached evidence. Add short exact support after resolving source/product stages, preserving existing pH and preparation credit. The named historical repair_atcc_score40.py was not found in an ignored-inclusive search of current scripts/src Python files and filenames; this bounded absence does not prove that it never existed or ran. Preserve the old event and inspect current paths before any future repair, rather than claiming knowledge of that unavailable historical implementation.
+
+- Curate only the named maintained inputs; preserve source version, stage, original history and a new actual curation event. Do not rerun a historical repair blindly.
+- Attach exact scoped evidence and recheck all affected quantities, units, stock boundaries and ontology labels; leave unsupported final-volume or product-equivalence claims unresolved.
+- Regenerate this target through current repository merge workflow, check freshness, and rerun schema, strict, terms and references checks.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| atcc44 | https://www.atcc.org/~/media/45E208A3191F4C7EA9B7E1063EB55303.ashx; REVIEW_WORK/batch055/source07-09/atcc44.json; full raw and derivative text paths/hashes | context_only | Primary ATCC44 commercial agar and broth/scratch alternatives retained separately |
+| togo2425 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2425; REVIEW_WORK/batch055/source07-09/togo2425.json; full raw and derivative text paths/hashes | context_only | Exact primary accession/provider transcription |
+| togo21 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M21; REVIEW_WORK/batch055/source07-09/togo21.json; full raw and derivative text paths/hashes | context_only | Parent relationship/source identity comparison |
+| jcm28 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=28; REVIEW_WORK/batch055/source07-09/jcm28.json; full raw and derivative text paths/hashes | context_only | Parent JCM28 source comparison only; no preparation transfer |
+| bhiArticle | https://microbenotes.com/brain-heart-infusion-bhi-agar/; REVIEW_WORK/batch055/source07-09/bhiArticle.json; full raw and derivative text paths/hashes | context_only | Explicit current parent commercial-constituent citation; secondary source, not manufacturer specification |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15377; REVIEW_WORK/batch055/source07-09/chebi15377.json; full raw and derivative text paths/hashes | context_only | Exact ontology ID/label/definition/formula only; not formulation or preparation evidence |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:2509; REVIEW_WORK/batch055/source07-09/chebi2509.json; full raw and derivative text paths/hashes | context_only | Exact ontology ID/label/definition/formula only; not formulation or preparation evidence |
+| chebi17634 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17634; REVIEW_WORK/batch055/source07-09/chebi17634.json; full raw and derivative text paths/hashes | context_only | Exact ontology ID/label/definition/formula only; not formulation or preparation evidence |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:26710; REVIEW_WORK/batch055/source07-09/chebi26710.json; full raw and derivative text paths/hashes | context_only | Exact ontology ID/label/definition/formula only; not formulation or preparation evidence |
+| chebi34683 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:34683; REVIEW_WORK/batch055/source07-09/chebi34683.json; full raw and derivative text paths/hashes | context_only | Exact ontology ID/label/definition/formula only; not formulation or preparation evidence |
+| micro0000180 | https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?obo_id=MICRO:0000180; REVIEW_WORK/batch055/source07-09/micro0000180.json; full raw and derivative text paths/hashes | context_only | Exact ontology ID/label/definition/formula only; not formulation or preparation evidence |
+| uberon0000955 | https://www.ebi.ac.uk/ols4/api/ontologies/uberon/terms?obo_id=UBERON:0000955; REVIEW_WORK/batch055/source07-09/uberon0000955.json; full raw and derivative text paths/hashes | context_only | Exact ontology ID/label/definition/formula only; not formulation or preparation evidence |
+| uberon0000948 | https://www.ebi.ac.uk/ols4/api/ontologies/uberon/terms?obo_id=UBERON:0000948; REVIEW_WORK/batch055/source07-09/uberon0000948.json; full raw and derivative text paths/hashes | context_only | Exact ontology ID/label/definition/formula only; not formulation or preparation evidence |
+| target | data/merge_yaml/merged/Brain_Heart_Infusion_Agar.yaml; Complete document | context_only | Complete generated target with all assertions and history. |
+| owner | data/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml; Complete document | context_only | Complete exact maintained owner, including existing repairs, quantities, preparation and history. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; 9077 rows, exact identifier/ontology_id and preferred-term comparisons | context_only | Exact current packaged snapshot, not a live or historical MIM release. |
+| mim-meta | src/culturemech/data/mediaingredientmech/label_index.metadata.json; Complete metadata | context_only | Packaged source commit and CSV checksum/row count. |
+| writer-togo | src/culturemech/import/togo_importer.py; _ingredient_from_item, _extract_primary_components, _solution_from_item, _parse_unit, _convert_to_culturemech | context_only | Current importer separates primary sections and stock references; ml maps to ML_PER_L and l to L. Its batch/stock inference and fallback remain distinct from an authenticated historical execution. |
+| writer-formulation | src/culturemech/merge/formulation.py; Full body; formulation_content and merge_formulation_evidence | context_only | Current formulation equality includes scientific fields, quantities, stocks and notes; no chemical equivalence is inferred. |
+| writer-merger | src/culturemech/merge/merger.py; RecipeMerger.merge_group | context_only | Current merge_group copies a singleton and rejects incompatible multiple formulations through the conservative comparison. Generated staleness does not prove a current ingredient-only merge permission. |
+| history-report-16 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Brain_Heart_Infusion_Agar.md; Full report; record path/header scope preserved | context_only | Complete exact-header historical report. Derivative prior assessment only; old command results and source claims are not fresh verification. |
+| history-report-17 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.md; Full report; record path/header scope preserved | context_only | Complete exact-header historical report. Derivative prior assessment only; old command results and source claims are not fresh verification. |
+| history-report-18 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.md; Full report; record path/header scope preserved | context_only | Complete exact-header historical report. Derivative prior assessment only; old command results and source claims are not fresh verification. |
+| history-report-19 | reports/yaml_record_review/20260921T233228Z-Brain_Heart_Infusion_Agar.md; Full report; record path/header scope preserved | context_only | Complete exact-header historical report. Derivative prior assessment only; old command results and source claims are not fresh verification. |
+| parent | data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml; Full document | context_only | Complete explicitly linked M21 parent: commercial broth plus agar in the original JCM source, later expanded ingredients, current source attribution, reciprocal child relation and history. It is a scoped dependency, not an additional selected target. |
+| quantities | REVIEW_WORK/batch055/record09/quantity-inventory.json; Complete sidecar | supports | Complete local quantity/stage decisions and exact source quotes. |
+| groundings | REVIEW_WORK/batch055/record09/grounding-inventory.json; Complete sidecar | supports | All asserted ontology slots and exact current CSV rows; supplied-form and case distinctions explicit. |
+| census | REVIEW_WORK/batch055/record09/field-census.json; Complete sidecar | supports | Complete recursive scalar census. |
+| numeric-census | REVIEW_WORK/batch055/record09/numeric-field-census.json; Complete sidecar | supports | All numeric scalars/text and their scientific versus historical identity scope. |
+| history | REVIEW_WORK/batch055/record09/history-inventory.json; Complete sidecar | supports | Complete current curation history; no old commands replayed or backdated. |
+| check-schema | REVIEW_WORK/batch055/record09/schema-result.json | supports | Original once-only canonical schema command and complete output; zero reference checks does not authenticate sources. |
+| check-strict | REVIEW_WORK/batch055/record09/strict-result.json | supports | Original once-only canonical strict command and complete output; zero reference checks does not authenticate sources. |
+| check-terms | REVIEW_WORK/batch055/record09/terms-result.json | supports | Original once-only canonical terms command and complete output; zero reference checks does not authenticate sources. |
+| check-references | REVIEW_WORK/batch055/record09/references-result.json | supports | Original once-only canonical references command and complete output; zero reference checks does not authenticate sources. |
+
+## Limits And Additional Notes
+
+- No authenticated manufacturer formula was available to this review. Search/catalog identity leads and failed manufacturer retrievals are not adopted as constituent evidence; the commercial equivalence and decomposition remain unresolved.
+- The generic article is used only to assess its currently cited composition table. Its organism-specific uses, supplements, selective conditions and incubation guidance are excluded from assessment and recommendations.
+- No all-inclusive historical execution search was performed. The missing-writer statement is limited to ignored-inclusive current scripts/src Python filenames and relevant repair identifiers; prior reports remain derivative context.
+- No organism-specific growth, supplementation, incubation optimization or universal strain applicability is inferred from medium names or general-purpose source descriptions.
+- OLS objects establish term identity, not formulation quantities or processing grade; the MIM commit is 6643131b0f12ab40b66f98135245fca04027e0e9.
+- Listed input liquids are not a measured final volume. Any explicit stock makeup applies only to that stock.
+- No experiment, source edit, formal review validation/save, Git mutation or publication was performed by this author. Root controls formal acceptance and ordered persistence.
+- All source outcomes used here are preserved in the capture metadata; inaccessible manufacturer leads do not authenticate a commercial formulation.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T050358Z-culturemech-009008-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Scientific review: Brain Heart Infusion Agar'
+started_at: '2026-10-28T04:33:11.613786Z'
+finished_at: '2026-10-28T05:03:58.140683Z'
+reviewer:
+  identity: Codex tsb_source_check
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Read-only review of maintained source records not authored by
+    this reviewer; fresh primary captures and original native diagnostics.
+skill: review-yaml-record
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: Fresh ATCC44/JCM28/TOGO evidence supports exact source routes and credits
+  existing owner preparation. The generated target is stale, water and batch denominators
+  need correction, and the duplicate graph plus linked parent commercial decomposition
+  exceed the authenticated product evidence. Every target, owner and linked-parent
+  quantity is explicitly assessed; all four native checks passed.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: c0ef0808662f57dc2f57ce9b405485830503653aceee1451c9e1dae42f9e7021
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/Brain_Heart_Infusion_Agar.yaml
+    sha256: b8df851992888232e0090c7043478f9f50a4fb597fdf881b6ed261c40c4dc72b
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml
+    sha256: 18bf904f04a7b5a96f70a404050a4120af124e2e0ab919186841484794c62746
+    role: context
+  - path: data/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml
+    sha256: a95f60c039ba04f20565e60d909223a0c98b541407b9fabb69ea169a1915eac9
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Brain_Heart_Infusion_Agar.md
+    sha256: 8c6a13f4a1f71db406ceaea1580ff99ec298f6ee280b9d29d6756a00a881f2e3
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.md
+    sha256: 62ff734f5894f40c206ca2793deb32cf32937528c531e6615f850da234b90720
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.md
+    sha256: 7eee61b3acb44bc87ef5b7632be7e1110fb099cdf71f0d60f87a0567b0adcf00
+    role: context
+  - path: reports/yaml_record_review/20260921T233228Z-Brain_Heart_Infusion_Agar.md
+    sha256: 4e43ff6240510a8cf4b8fef48a0a97b115635f86ec2a4129e0bf304a9d220ec6
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+scope:
+  description: Complete target and exact maintained owner, with explicitly scoped
+    dependency/source comparisons.
+  selection: Authoritative batch055 selection index 09
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:009008
+targets:
+- target_id: CultureMech:009008
+  path: data/merge_yaml/merged/Brain_Heart_Infusion_Agar.yaml
+  label: brain_heart_infusion_agar
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml
+    role: maintained source
+  ownership_note: Exact maintained contributor identified from merged_from and current
+    record identity; generated YAML is not a curation owner.
+checks:
+- check_id: schema
+  name: Canonical schema
+  status: passed
+  required: true
+  summary: Actual exit0; complete original argv/timestamps/stdout/stderr retained.
+  target_ids:
+  - CultureMech:009008
+  command: just validate-schema data/merge_yaml/merged/Brain_Heart_Infusion_Agar.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-schema
+- check_id: strict
+  name: Canonical strict
+  status: passed
+  required: true
+  summary: Actual exit0; complete original argv/timestamps/stdout/stderr retained.
+  target_ids:
+  - CultureMech:009008
+  command: just validate-strict data/merge_yaml/merged/Brain_Heart_Infusion_Agar.yaml
+    --out REVIEW_WORK/batch055/record09/strict.tsv --workers 1 --quiet
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-strict
+- check_id: terms
+  name: Canonical terms
+  status: passed
+  required: true
+  summary: Actual exit0; complete original argv/timestamps/stdout/stderr retained.
+  target_ids:
+  - CultureMech:009008
+  command: just validate-terms data/merge_yaml/merged/Brain_Heart_Infusion_Agar.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-terms
+- check_id: references
+  name: Canonical references
+  status: passed
+  required: true
+  summary: Actual exit0; complete original argv/timestamps/stdout/stderr retained.
+  target_ids:
+  - CultureMech:009008
+  command: just validate-references data/merge_yaml/merged/Brain_Heart_Infusion_Agar.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-references
+evidence:
+- evidence_id: atcc44
+  kind: primary_source
+  reference: https://www.atcc.org/~/media/45E208A3191F4C7EA9B7E1063EB55303.ashx
+  accessed_at: '2026-10-28T04:32:41.965038Z'
+  locator: REVIEW_WORK/batch055/source07-09/atcc44.json; full raw and derivative text
+    paths/hashes
+  support: context_only
+  summary: Primary ATCC44 commercial agar and broth/scratch alternatives retained
+    separately
+  snapshot_sha256: 0d494bdb3bf7f1a710b2f0dce26e183df8b4c67e9d5b316bf4a9113bc4a2607a
+- evidence_id: togo2425
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2425
+  accessed_at: '2026-10-28T04:32:41.882060Z'
+  locator: REVIEW_WORK/batch055/source07-09/togo2425.json; full raw and derivative
+    text paths/hashes
+  support: context_only
+  summary: Exact primary accession/provider transcription
+  snapshot_sha256: 371756c015922c25e62bc14e36a062ab1cf48ba7f31d16c33bbebec40e6181d3
+- evidence_id: togo21
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M21
+  accessed_at: '2026-10-28T04:32:42.262028Z'
+  locator: REVIEW_WORK/batch055/source07-09/togo21.json; full raw and derivative text
+    paths/hashes
+  support: context_only
+  summary: Parent relationship/source identity comparison
+  snapshot_sha256: a919bd46ec062aa2f28bc3a00352a79c4b438f16b9798151abf7ea19da2d5cfd
+- evidence_id: jcm28
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=28
+  accessed_at: '2026-10-28T04:32:42.630526Z'
+  locator: REVIEW_WORK/batch055/source07-09/jcm28.json; full raw and derivative text
+    paths/hashes
+  support: context_only
+  summary: Parent JCM28 source comparison only; no preparation transfer
+  snapshot_sha256: 4b88ed256f2e87ccdafa84ee5d30695b0b8fdc99b9a24d38b6b23d00f62c5071
+- evidence_id: bhiArticle
+  kind: authority
+  reference: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  accessed_at: '2026-10-28T04:32:42.240055Z'
+  locator: REVIEW_WORK/batch055/source07-09/bhiArticle.json; full raw and derivative
+    text paths/hashes
+  support: context_only
+  summary: Explicit current parent commercial-constituent citation; secondary source,
+    not manufacturer specification
+  snapshot_sha256: 39873c93291f575a5337e3a92e910ccd2da27845bf74e1419288088d9e3a2634
+- evidence_id: chebi15377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15377
+  accessed_at: '2026-10-28T04:32:43.047173Z'
+  locator: REVIEW_WORK/batch055/source07-09/chebi15377.json; full raw and derivative
+    text paths/hashes
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; not formulation or preparation
+    evidence
+  snapshot_sha256: a5ab66402b598c137daa8e5c8ba95811f1619db3e0f8b4f9bd0214161bafa0fe
+- evidence_id: chebi2509
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:2509
+  accessed_at: '2026-10-28T04:32:43.295237Z'
+  locator: REVIEW_WORK/batch055/source07-09/chebi2509.json; full raw and derivative
+    text paths/hashes
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; not formulation or preparation
+    evidence
+  snapshot_sha256: e3f17ac3223021a957a5e3fffb5b118a0854f9ddbc537f51f70dd61ae23ff7a7
+- evidence_id: chebi17634
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17634
+  accessed_at: '2026-10-28T04:32:42.942616Z'
+  locator: REVIEW_WORK/batch055/source07-09/chebi17634.json; full raw and derivative
+    text paths/hashes
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; not formulation or preparation
+    evidence
+  snapshot_sha256: 04060738e01fe33b9fc8e5bf54807590127ce391eb8a962d1d013002502169b2
+- evidence_id: chebi26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:26710
+  accessed_at: '2026-10-28T04:32:43.770057Z'
+  locator: REVIEW_WORK/batch055/source07-09/chebi26710.json; full raw and derivative
+    text paths/hashes
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; not formulation or preparation
+    evidence
+  snapshot_sha256: 70cf14c35e06f40427c1a2aa30e99794518eda976b5e5b3c86610efc28b7f25a
+- evidence_id: chebi34683
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:34683
+  accessed_at: '2026-10-28T04:32:43.785018Z'
+  locator: REVIEW_WORK/batch055/source07-09/chebi34683.json; full raw and derivative
+    text paths/hashes
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; not formulation or preparation
+    evidence
+  snapshot_sha256: 77f17276e9ef67f5b284232543dcfb3c01546658eb9e93fad4cbd1a5374bfb56
+- evidence_id: micro0000180
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?obo_id=MICRO:0000180
+  accessed_at: '2026-10-28T04:32:43.955314Z'
+  locator: REVIEW_WORK/batch055/source07-09/micro0000180.json; full raw and derivative
+    text paths/hashes
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; not formulation or preparation
+    evidence
+  snapshot_sha256: e2cfec827d07f0e5ad5179fc485c318dde2163b4899a6bd27393eda8e500d13e
+- evidence_id: uberon0000955
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/uberon/terms?obo_id=UBERON:0000955
+  accessed_at: '2026-10-28T04:32:44.594914Z'
+  locator: REVIEW_WORK/batch055/source07-09/uberon0000955.json; full raw and derivative
+    text paths/hashes
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; not formulation or preparation
+    evidence
+  snapshot_sha256: 5ce0c4b433c6ee28fe6cc5bc2ed433fb483d3d10a3653931b323a6fa6e7aa90d
+- evidence_id: uberon0000948
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/uberon/terms?obo_id=UBERON:0000948
+  accessed_at: '2026-10-28T04:32:44.783035Z'
+  locator: REVIEW_WORK/batch055/source07-09/uberon0000948.json; full raw and derivative
+    text paths/hashes
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; not formulation or preparation
+    evidence
+  snapshot_sha256: 8972a29debfa58d4b0fdf02eec59cc5636ba0e1f0de028925b001a99d0aea419
+- evidence_id: target
+  kind: record_content
+  reference: data/merge_yaml/merged/Brain_Heart_Infusion_Agar.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T04:42:42.840724Z'
+  support: context_only
+  summary: Complete generated target with all assertions and history.
+  snapshot_sha256: b8df851992888232e0090c7043478f9f50a4fb597fdf881b6ed261c40c4dc72b
+- evidence_id: owner
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T04:42:42.840963Z'
+  support: context_only
+  summary: Complete exact maintained owner, including existing repairs, quantities,
+    preparation and history.
+  snapshot_sha256: a95f60c039ba04f20565e60d909223a0c98b541407b9fabb69ea169a1915eac9
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: 9077 rows, exact identifier/ontology_id and preferred-term comparisons
+  accessed_at: '2026-10-28T04:42:42.841004Z'
+  support: context_only
+  summary: Exact current packaged snapshot, not a live or historical MIM release.
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: mim-meta
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+  locator: Complete metadata
+  accessed_at: '2026-10-28T04:42:42.841387Z'
+  support: context_only
+  summary: Packaged source commit and CSV checksum/row count.
+  snapshot_sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+- evidence_id: writer-togo
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: _ingredient_from_item, _extract_primary_components, _solution_from_item,
+    _parse_unit, _convert_to_culturemech
+  accessed_at: '2026-10-28T04:42:42.841428Z'
+  support: context_only
+  summary: Current importer separates primary sections and stock references; ml maps
+    to ML_PER_L and l to L. Its batch/stock inference and fallback remain distinct
+    from an authenticated historical execution.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: writer-formulation
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Full body; formulation_content and merge_formulation_evidence
+  accessed_at: '2026-10-28T04:42:42.841466Z'
+  support: context_only
+  summary: Current formulation equality includes scientific fields, quantities, stocks
+    and notes; no chemical equivalence is inferred.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-merger
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: RecipeMerger.merge_group
+  accessed_at: '2026-10-28T04:42:42.841492Z'
+  support: context_only
+  summary: Current merge_group copies a singleton and rejects incompatible multiple
+    formulations through the conservative comparison. Generated staleness does not
+    prove a current ingredient-only merge permission.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: history-report-16
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Brain_Heart_Infusion_Agar.md
+  locator: Full report; record path/header scope preserved
+  accessed_at: '2026-10-28T04:42:42.841527Z'
+  support: context_only
+  summary: Complete exact-header historical report. Derivative prior assessment only;
+    old command results and source claims are not fresh verification.
+  snapshot_sha256: 8c6a13f4a1f71db406ceaea1580ff99ec298f6ee280b9d29d6756a00a881f2e3
+- evidence_id: history-report-17
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.md
+  locator: Full report; record path/header scope preserved
+  accessed_at: '2026-10-28T04:42:42.841561Z'
+  support: context_only
+  summary: Complete exact-header historical report. Derivative prior assessment only;
+    old command results and source claims are not fresh verification.
+  snapshot_sha256: 62ff734f5894f40c206ca2793deb32cf32937528c531e6615f850da234b90720
+- evidence_id: history-report-18
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.md
+  locator: Full report; record path/header scope preserved
+  accessed_at: '2026-10-28T04:42:42.841593Z'
+  support: context_only
+  summary: Complete exact-header historical report. Derivative prior assessment only;
+    old command results and source claims are not fresh verification.
+  snapshot_sha256: 7eee61b3acb44bc87ef5b7632be7e1110fb099cdf71f0d60f87a0567b0adcf00
+- evidence_id: history-report-19
+  kind: record_content
+  reference: reports/yaml_record_review/20260921T233228Z-Brain_Heart_Infusion_Agar.md
+  locator: Full report; record path/header scope preserved
+  accessed_at: '2026-10-28T04:42:42.841625Z'
+  support: context_only
+  summary: Complete exact-header historical report. Derivative prior assessment only;
+    old command results and source claims are not fresh verification.
+  snapshot_sha256: 4e43ff6240510a8cf4b8fef48a0a97b115635f86ec2a4129e0bf304a9d220ec6
+- evidence_id: parent
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml
+  locator: Full document
+  accessed_at: '2026-10-28T04:42:42.845435Z'
+  support: context_only
+  summary: 'Complete explicitly linked M21 parent: commercial broth plus agar in the
+    original JCM source, later expanded ingredients, current source attribution, reciprocal
+    child relation and history. It is a scoped dependency, not an additional selected
+    target.'
+  snapshot_sha256: 18bf904f04a7b5a96f70a404050a4120af124e2e0ab919186841484794c62746
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch055/record09/quantity-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T04:42:42.865664Z'
+  support: supports
+  summary: Complete local quantity/stage decisions and exact source quotes.
+  snapshot_sha256: c7df264ffbd36ac15fc28492faa08776bb1fee19c7c8c6522c92b5c6e7227db2
+- evidence_id: groundings
+  kind: record_content
+  reference: REVIEW_WORK/batch055/record09/grounding-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T04:42:42.865743Z'
+  support: supports
+  summary: All asserted ontology slots and exact current CSV rows; supplied-form and
+    case distinctions explicit.
+  snapshot_sha256: 916c4c9c3e82d55783984911aa6954367826a72c42727d6e1491bdf6c7987fc2
+- evidence_id: census
+  kind: record_content
+  reference: REVIEW_WORK/batch055/record09/field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T04:42:42.865792Z'
+  support: supports
+  summary: Complete recursive scalar census.
+  snapshot_sha256: 5ec347263f9b3289e4b6c3046cebe8feb16c662fe8212817af4184bb49f33fed
+- evidence_id: numeric-census
+  kind: record_content
+  reference: REVIEW_WORK/batch055/record09/numeric-field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T04:42:42.865836Z'
+  support: supports
+  summary: All numeric scalars/text and their scientific versus historical identity
+    scope.
+  snapshot_sha256: cf331c40180770abc0f500f5b5a11be45e40a8a36fb75453bf56b4acfc7761dc
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch055/record09/history-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T04:42:42.865874Z'
+  support: supports
+  summary: Complete current curation history; no old commands replayed or backdated.
+  snapshot_sha256: 9bb88c0afcdce1563d9b7ea33db39415e3147625d6f8127ddc87eac06b20777b
+- evidence_id: check-schema
+  kind: validation
+  reference: REVIEW_WORK/batch055/record09/schema-result.json
+  accessed_at: '2026-10-28T04:33:13.077958Z'
+  support: supports
+  summary: Original once-only canonical schema command and complete output; zero reference
+    checks does not authenticate sources.
+  snapshot_sha256: 92e700c2bfede951ea32ff89e4172517de0c6d2853b58c1169edfc5062b5cf15
+- evidence_id: check-strict
+  kind: validation
+  reference: REVIEW_WORK/batch055/record09/strict-result.json
+  accessed_at: '2026-10-28T04:33:14.368715Z'
+  support: supports
+  summary: Original once-only canonical strict command and complete output; zero reference
+    checks does not authenticate sources.
+  snapshot_sha256: 3997c1f0c4f5fe019763e0ba41443e98e22dc91b0389bc62d693b6ecff9d4f5f
+- evidence_id: check-terms
+  kind: validation
+  reference: REVIEW_WORK/batch055/record09/terms-result.json
+  accessed_at: '2026-10-28T04:33:15.775685Z'
+  support: supports
+  summary: Original once-only canonical terms command and complete output; zero reference
+    checks does not authenticate sources.
+  snapshot_sha256: 42c31805005195521cd3a4a7a41462f515a9c80098827c825674cd2bd2b52f06
+- evidence_id: check-references
+  kind: validation
+  reference: REVIEW_WORK/batch055/record09/references-result.json
+  accessed_at: '2026-10-28T04:33:16.641268Z'
+  support: supports
+  summary: Original once-only canonical references command and complete output; zero
+    reference checks does not authenticate sources.
+  snapshot_sha256: a689208b5e5de9c655882c7db98cdf93a7cccb27244deb5783f3ca9d8c7eeb07
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Exact product and source identity
+  outcome: supported
+  summary: TOGO M2425 points to ATCC44 agar and the exact BD211065 product identifier.
+    The related M21 points to JCM28 and BD-Difco broth plus agar. Current sources
+    identify these routes, but do not establish their commercial compositional equality.
+    No organism or strain growth claim is inferred.
+  target_ids:
+  - CultureMech:009008
+  evidence_ids:
+  - togo2425
+  - atcc44
+  - togo21
+  - jcm28
+- assessment_id: classification
+  area: representation
+  topic: Physical state and complex composition
+  outcome: supported
+  summary: Agar and the opaque animal-derived commercial/infusion materials support
+    SOLID_AGAR, COMPLEX and UNDEFINED. A generic tissue ontology label does not identify
+    a species-specific material or recovered mass. The parent’s canonical ontology
+    labels are already correct for the broad asserted classes.
+  target_ids:
+  - CultureMech:009008
+  evidence_ids:
+  - atcc44
+  - jcm28
+  - parent
+  - uberon0000955
+  - uberon0000948
+- assessment_id: native-input-scope
+  area: provenance
+  topic: Exact inspected inputs and bounded unavailable writer
+  outcome: supported
+  summary: The native inspection includes the selected target, exact maintained owner,
+    full linked M21 dependency, current importer/merger/grounding writers and exact
+    historical reports. The historical repair_atcc_score40.py is not an inspected
+    input because it was absent from the bounded ignored-inclusive current scripts/src
+    search. The preparer’s initial path assertion occurred before record09 native
+    inspection and was preserved; the first actual inspection and four canonical commands
+    all succeeded.
+  target_ids:
+  - CultureMech:009008
+  evidence_ids:
+  - owner
+  - parent
+  - writer-togo
+  - writer-formulation
+  - writer-merger
+- assessment_id: quantity
+  area: quantity
+  topic: Complete quantities and preparation stages
+  outcome: concern
+  summary: 12 local concentration fields covered by 21 decisions. Source-only conditions,
+    unchanged values and unsupported normalizations are retained explicitly.
+  target_ids:
+  - CultureMech:009008
+  evidence_ids:
+  - quantities
+  - numeric-census
+  details: '{"schema":"fresh-b055-scoped-quantity-inventory-v1","target":"data/merge_yaml/merged/Brain_Heart_Infusion_Agar.yaml","quantity_field_count":12,"decisions":[{"quantity_id":"q1","label":"ATCC
+    commercial agar powder","local_fields":[{"path":"data/merge_yaml/merged/Brain_Heart_Infusion_Agar.yaml","field_path":"ingredients[1].concentration","stored":{"value":"52","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml","field_path":"ingredients[0].concentration","stored":{"value":"52","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"ATCC44
+    explicitly lists 52 g of BD211065 with 1000 mL input water. It does not state
+    measured final volume or an explicit g/L declaration. Preserve batch mass and
+    product identity; no commercial constituent expansion or equality with BD237500
+    plus agar is established.","source_stage":"ATCC44 commercial agar batch","sources":[{"evidence_id":"atcc44","reference":"https://www.atcc.org/~/media/45E208A3191F4C7EA9B7E1063EB55303.ashx","raw_path":"REVIEW_WORK/batch055/source07-09/atcc44.raw","raw_sha256":"0d494bdb3bf7f1a710b2f0dce26e183df8b4c67e9d5b316bf4a9113bc4a2607a","text_sha256":"ddeb24487e4cb35de28f08b4cd74e02c365797aef1fdf2fff109fa7c22c7c2e8","accessed_at":"2026-10-28T04:32:41.965038Z","locator":"atcc44.txt
+    lines 3-5","quote":"Agar Medium\nBrain Heart Infusion Agar (BD 211065)…………………..52
+    g\nDI Water……………………...………………………………1000 ml"}]},{"quantity_id":"q2","label":"ATCC
+    input water","local_fields":[{"path":"data/merge_yaml/merged/Brain_Heart_Infusion_Agar.yaml","field_path":"ingredients[0].concentration","stored":{"value":"1000","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml","field_path":"ingredients[1].concentration","stored":{"value":"1000","unit":"ML_PER_L"}}],"decision":"correct","rationale":"The
+    source gives a liquid input of 1000 mL. The owner already corrects mass to volume,
+    but ML_PER_L still adds an unstated final-volume denominator. The schema L unit
+    can represent the input volume without density or measured-final-volume assumptions.","source_stage":"ATCC44
+    commercial agar input","sources":[{"evidence_id":"atcc44","reference":"https://www.atcc.org/~/media/45E208A3191F4C7EA9B7E1063EB55303.ashx","raw_path":"REVIEW_WORK/batch055/source07-09/atcc44.raw","raw_sha256":"0d494bdb3bf7f1a710b2f0dce26e183df8b4c67e9d5b316bf4a9113bc4a2607a","text_sha256":"ddeb24487e4cb35de28f08b4cd74e02c365797aef1fdf2fff109fa7c22c7c2e8","accessed_at":"2026-10-28T04:32:41.965038Z","locator":"atcc44.txt
+    lines 5-5","quote":"DI Water……………………...………………………………1000 ml"}]},{"quantity_id":"q3","label":"Existing
+    nominal pH and source interval","local_fields":[{"path":"data/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml","field_path":"ph_value","stored":7.4}],"decision":"correct","rationale":"The
+    existing nominal 7.4 lies within TOGO M2425’s explicit 7.2–7.6 interval, which
+    should be retained with the nominal value. ATCC44 prints 7.4 ±0.2 in the separate
+    scratch-composition block; that block is not evidence of measured commercial product
+    pH. Do not promote the stored scalar to an exact measurement.","source_stage":"TOGO
+    medium metadata; distinct from ATCC scratch block","sources":[{"evidence_id":"togo2425","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2425","raw_path":"REVIEW_WORK/batch055/source07-09/togo2425.raw","raw_sha256":"371756c015922c25e62bc14e36a062ab1cf48ba7f31d16c33bbebec40e6181d3","text_sha256":"371756c015922c25e62bc14e36a062ab1cf48ba7f31d16c33bbebec40e6181d3","accessed_at":"2026-10-28T04:32:41.882060Z","locator":"togo2425.txt
+    lines 6-6","quote":"\"ph\": \"7.2 - 7.6\""}]},{"quantity_id":"q4","label":"Existing
+    powder/water preparation","local_fields":[{"path":"data/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml","field_path":"preparation_steps[0].description","stored":"Dissolve
+    52 g Brain Heart Infusion Agar (BD 211065) in 1000 mL DI water."}],"decision":"evidence_only","rationale":"The
+    already repaired owner accurately preserves the named commercial powder batch
+    and input water. Retain this positive preparation credit.","source_stage":"ATCC44
+    agar preparation","sources":[{"evidence_id":"atcc44","reference":"https://www.atcc.org/~/media/45E208A3191F4C7EA9B7E1063EB55303.ashx","raw_path":"REVIEW_WORK/batch055/source07-09/atcc44.raw","raw_sha256":"0d494bdb3bf7f1a710b2f0dce26e183df8b4c67e9d5b316bf4a9113bc4a2607a","text_sha256":"ddeb24487e4cb35de28f08b4cd74e02c365797aef1fdf2fff109fa7c22c7c2e8","accessed_at":"2026-10-28T04:32:41.965038Z","locator":"atcc44.txt
+    lines 3-5","quote":"Agar Medium\nBrain Heart Infusion Agar (BD 211065)…………………..52
+    g\nDI Water……………………...………………………………1000 ml"}]},{"quantity_id":"q5","label":"Existing
+    autoclave temperature","local_fields":[{"path":"data/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml","field_path":"preparation_steps[1].description","stored":"Autoclave
+    at 121 C."}],"decision":"evidence_only","rationale":"121°C is explicitly stated.
+    ATCC44 gives no duration here; do not transfer JCM28’s generic 15-minute default
+    to this product formulation.","source_stage":"ATCC44 agar preparation","sources":[{"evidence_id":"atcc44","reference":"https://www.atcc.org/~/media/45E208A3191F4C7EA9B7E1063EB55303.ashx","raw_path":"REVIEW_WORK/batch055/source07-09/atcc44.raw","raw_sha256":"0d494bdb3bf7f1a710b2f0dce26e183df8b4c67e9d5b316bf4a9113bc4a2607a","text_sha256":"ddeb24487e4cb35de28f08b4cd74e02c365797aef1fdf2fff109fa7c22c7c2e8","accessed_at":"2026-10-28T04:32:41.965038Z","locator":"atcc44.txt
+    lines 7-7","quote":"Autoclave at 121ºC."}]},{"quantity_id":"q6","label":"Owner
+    batch narrative","local_fields":[{"path":"data/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml","field_path":"notes","stored":"TOGO
+    M2425 cites ATCC Medium 44; ATCC Medium 44 lists 52 g Brain Heart Infusion Agar
+    (BD 211065) per 1000 mL DI water."},{"path":"data/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml","field_path":"ingredients[0].notes","stored":"ATCC
+    Medium 44 lists 52 g Brain Heart Infusion Agar (BD 211065) per 1000 mL DI water."},{"path":"data/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml","field_path":"ingredients[1].notes","stored":"ATCC
+    Medium 44 lists 1000 mL DI water."}],"decision":"evidence_only","rationale":"These
+    current source notes preserve powder mass and water input. They do not independently
+    support the concentration-field denominator or the duplicate relationship.","source_stage":"ATCC44
+    owner source prose","sources":[{"evidence_id":"atcc44","reference":"https://www.atcc.org/~/media/45E208A3191F4C7EA9B7E1063EB55303.ashx","raw_path":"REVIEW_WORK/batch055/source07-09/atcc44.raw","raw_sha256":"0d494bdb3bf7f1a710b2f0dce26e183df8b4c67e9d5b316bf4a9113bc4a2607a","text_sha256":"ddeb24487e4cb35de28f08b4cd74e02c365797aef1fdf2fff109fa7c22c7c2e8","accessed_at":"2026-10-28T04:32:41.965038Z","locator":"atcc44.txt
+    lines 3-5","quote":"Agar Medium\nBrain Heart Infusion Agar (BD 211065)…………………..52
+    g\nDI Water……………………...………………………………1000 ml"}]},{"quantity_id":"q7","label":"M21
+    input water","local_fields":[{"path":"data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml","field_path":"ingredients[0].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"correct","rationale":"JCM28
+    explicitly lists 1 L water. The dependency’s 1 G_PER_L is a dimensional error;
+    use the source input-volume representation, not a retained mass or inferred final
+    volume.","source_stage":"M21/JCM28 receiving recipe","sources":[{"evidence_id":"jcm28","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=28","raw_path":"REVIEW_WORK/batch055/source07-09/jcm28.raw","raw_sha256":"4b88ed256f2e87ccdafa84ee5d30695b0b8fdc99b9a24d38b6b23d00f62c5071","text_sha256":"6c39f130134d078f178f82ddd669b77feb777a82bc2eeedcab30149c5ee3d113","accessed_at":"2026-10-28T04:32:42.630526Z","locator":"jcm28.txt
+    lines 12-14","quote":"Distilled water\n1.0\nL"}]},{"quantity_id":"q8","label":"M21
+    agar","local_fields":[{"path":"data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml","field_path":"ingredients[1].concentration","stored":{"value":"15","unit":"G_PER_L"}}],"decision":"mixed","rationale":"JCM28
+    lists 15 g agar in the recipe with 1 L water; this alone is batch mass. The cited
+    generic MicrobeNotes table explicitly declares 15 g/L, supporting its own declared
+    table basis. That article is not proof of manufacturer composition or equivalence
+    to BD211065. Preserve both scopes rather than transferring the article basis into
+    a product-equivalence claim.","source_stage":"M21 recipe versus generic article
+    table","sources":[{"evidence_id":"jcm28","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=28","raw_path":"REVIEW_WORK/batch055/source07-09/jcm28.raw","raw_sha256":"4b88ed256f2e87ccdafa84ee5d30695b0b8fdc99b9a24d38b6b23d00f62c5071","text_sha256":"6c39f130134d078f178f82ddd669b77feb777a82bc2eeedcab30149c5ee3d113","accessed_at":"2026-10-28T04:32:42.630526Z","locator":"jcm28.txt
+    lines 9-14","quote":"Agar\n15.0\ng\nDistilled water\n1.0\nL"},{"evidence_id":"bhiArticle","reference":"https://microbenotes.com/brain-heart-infusion-bhi-agar/","raw_path":"REVIEW_WORK/batch055/source07-09/bhiArticle.raw","raw_sha256":"39873c93291f575a5337e3a92e910ccd2da27845bf74e1419288088d9e3a2634","text_sha256":"cf8ba9003c5b7ee94497d77cdf5e727c8e7b55ffd605ae671b1b3fd6c7661274","accessed_at":"2026-10-28T04:32:42.240055Z","locator":"bhiArticle.txt
+    lines 79-80","quote":"Ingredients\nGms/liter"},{"evidence_id":"bhiArticle","reference":"https://microbenotes.com/brain-heart-infusion-bhi-agar/","raw_path":"REVIEW_WORK/batch055/source07-09/bhiArticle.raw","raw_sha256":"39873c93291f575a5337e3a92e910ccd2da27845bf74e1419288088d9e3a2634","text_sha256":"cf8ba9003c5b7ee94497d77cdf5e727c8e7b55ffd605ae671b1b3fd6c7661274","accessed_at":"2026-10-28T04:32:42.240055Z","locator":"bhiArticle.txt
+    lines 94-95","quote":"Agar\n15.000"}],"layer_decisions":{"JCM28_batch_basis":"unsupported","article_declared_rate":"evidence_only"}},{"quantity_id":"q9","label":"Calf-brain
+    infusion variable amount","local_fields":[{"path":"data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml","field_path":"ingredients[2].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"evidence_only","rationale":"The
+    retained infusion mass is not quantified by these sources. Keeping it unquantified
+    is honest; VARIABLE must not be read as a source-specified dosing instruction.
+    ATCC44 gives a starting tissue mass in a separate scratch alternative, not recovered
+    solids or authenticated BD237500 composition.","source_stage":"Unquantified infusion
+    material; scratch input comparison only","sources":[{"evidence_id":"atcc44","reference":"https://www.atcc.org/~/media/45E208A3191F4C7EA9B7E1063EB55303.ashx","raw_path":"REVIEW_WORK/batch055/source07-09/atcc44.raw","raw_sha256":"0d494bdb3bf7f1a710b2f0dce26e183df8b4c67e9d5b316bf4a9113bc4a2607a","text_sha256":"ddeb24487e4cb35de28f08b4cd74e02c365797aef1fdf2fff109fa7c22c7c2e8","accessed_at":"2026-10-28T04:32:41.965038Z","locator":"atcc44.txt
+    lines 17-21","quote":"To make medium from scratch, follow formulation below:\n\nBrain
+    Heart Infusion Composition\nCalf Brains, infusion from…………………………………..200 g\nBeef
+    Hearts, infusion from………………………………….250 g"},{"evidence_id":"bhiArticle","reference":"https://microbenotes.com/brain-heart-infusion-bhi-agar/","raw_path":"REVIEW_WORK/batch055/source07-09/bhiArticle.raw","raw_sha256":"39873c93291f575a5337e3a92e910ccd2da27845bf74e1419288088d9e3a2634","text_sha256":"cf8ba9003c5b7ee94497d77cdf5e727c8e7b55ffd605ae671b1b3fd6c7661274","accessed_at":"2026-10-28T04:32:42.240055Z","locator":"bhiArticle.txt
+    lines 81-84","quote":"HM infusion powder\n12.500\nBHI powder\n5.000"}]},{"quantity_id":"q10","label":"Calf-brain
+    infusion tissue-input note","local_fields":[{"path":"data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml","field_path":"ingredients[2].notes","stored":"infusion
+    from 200 g/L; Tissue infusion - source material is calf brain tissue; Constituent
+    of Brain Heart Infusion commercial product"}],"decision":"correct","rationale":"The
+    ATCC scratch input is a tissue starting mass, not g/L of retained infusion and
+    not manufacturer-authenticated composition. The current cited article lists HM
+    infusion powder and BHI powder instead. Correct the attribution and stage while
+    retaining the uncertainty in recovered infusion mass.","source_stage":"M21 supplier-attribution
+    note versus separate scratch formulation","sources":[{"evidence_id":"atcc44","reference":"https://www.atcc.org/~/media/45E208A3191F4C7EA9B7E1063EB55303.ashx","raw_path":"REVIEW_WORK/batch055/source07-09/atcc44.raw","raw_sha256":"0d494bdb3bf7f1a710b2f0dce26e183df8b4c67e9d5b316bf4a9113bc4a2607a","text_sha256":"ddeb24487e4cb35de28f08b4cd74e02c365797aef1fdf2fff109fa7c22c7c2e8","accessed_at":"2026-10-28T04:32:41.965038Z","locator":"atcc44.txt
+    lines 17-21","quote":"To make medium from scratch, follow formulation below:\n\nBrain
+    Heart Infusion Composition\nCalf Brains, infusion from…………………………………..200 g\nBeef
+    Hearts, infusion from………………………………….250 g"},{"evidence_id":"bhiArticle","reference":"https://microbenotes.com/brain-heart-infusion-bhi-agar/","raw_path":"REVIEW_WORK/batch055/source07-09/bhiArticle.raw","raw_sha256":"39873c93291f575a5337e3a92e910ccd2da27845bf74e1419288088d9e3a2634","text_sha256":"cf8ba9003c5b7ee94497d77cdf5e727c8e7b55ffd605ae671b1b3fd6c7661274","accessed_at":"2026-10-28T04:32:42.240055Z","locator":"bhiArticle.txt
+    lines 81-84","quote":"HM infusion powder\n12.500\nBHI powder\n5.000"}]},{"quantity_id":"q11","label":"Beef-heart
+    infusion variable amount","local_fields":[{"path":"data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml","field_path":"ingredients[3].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"evidence_only","rationale":"The
+    retained infusion mass is not quantified by these sources. Keeping it unquantified
+    is honest; VARIABLE must not be read as a source-specified dosing instruction.
+    ATCC44 gives a starting tissue mass in a separate scratch alternative, not recovered
+    solids or authenticated BD237500 composition.","source_stage":"Unquantified infusion
+    material; scratch input comparison only","sources":[{"evidence_id":"atcc44","reference":"https://www.atcc.org/~/media/45E208A3191F4C7EA9B7E1063EB55303.ashx","raw_path":"REVIEW_WORK/batch055/source07-09/atcc44.raw","raw_sha256":"0d494bdb3bf7f1a710b2f0dce26e183df8b4c67e9d5b316bf4a9113bc4a2607a","text_sha256":"ddeb24487e4cb35de28f08b4cd74e02c365797aef1fdf2fff109fa7c22c7c2e8","accessed_at":"2026-10-28T04:32:41.965038Z","locator":"atcc44.txt
+    lines 17-21","quote":"To make medium from scratch, follow formulation below:\n\nBrain
+    Heart Infusion Composition\nCalf Brains, infusion from…………………………………..200 g\nBeef
+    Hearts, infusion from………………………………….250 g"},{"evidence_id":"bhiArticle","reference":"https://microbenotes.com/brain-heart-infusion-bhi-agar/","raw_path":"REVIEW_WORK/batch055/source07-09/bhiArticle.raw","raw_sha256":"39873c93291f575a5337e3a92e910ccd2da27845bf74e1419288088d9e3a2634","text_sha256":"cf8ba9003c5b7ee94497d77cdf5e727c8e7b55ffd605ae671b1b3fd6c7661274","accessed_at":"2026-10-28T04:32:42.240055Z","locator":"bhiArticle.txt
+    lines 81-84","quote":"HM infusion powder\n12.500\nBHI powder\n5.000"}]},{"quantity_id":"q12","label":"Beef-heart
+    infusion tissue-input note","local_fields":[{"path":"data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml","field_path":"ingredients[3].notes","stored":"infusion
+    from 250 g/L; Tissue infusion - source material is beef/ox heart tissue; Constituent
+    of Brain Heart Infusion commercial product"}],"decision":"correct","rationale":"The
+    ATCC scratch input is a tissue starting mass, not g/L of retained infusion and
+    not manufacturer-authenticated composition. The current cited article lists HM
+    infusion powder and BHI powder instead. Correct the attribution and stage while
+    retaining the uncertainty in recovered infusion mass.","source_stage":"M21 supplier-attribution
+    note versus separate scratch formulation","sources":[{"evidence_id":"atcc44","reference":"https://www.atcc.org/~/media/45E208A3191F4C7EA9B7E1063EB55303.ashx","raw_path":"REVIEW_WORK/batch055/source07-09/atcc44.raw","raw_sha256":"0d494bdb3bf7f1a710b2f0dce26e183df8b4c67e9d5b316bf4a9113bc4a2607a","text_sha256":"ddeb24487e4cb35de28f08b4cd74e02c365797aef1fdf2fff109fa7c22c7c2e8","accessed_at":"2026-10-28T04:32:41.965038Z","locator":"atcc44.txt
+    lines 17-21","quote":"To make medium from scratch, follow formulation below:\n\nBrain
+    Heart Infusion Composition\nCalf Brains, infusion from…………………………………..200 g\nBeef
+    Hearts, infusion from………………………………….250 g"},{"evidence_id":"bhiArticle","reference":"https://microbenotes.com/brain-heart-infusion-bhi-agar/","raw_path":"REVIEW_WORK/batch055/source07-09/bhiArticle.raw","raw_sha256":"39873c93291f575a5337e3a92e910ccd2da27845bf74e1419288088d9e3a2634","text_sha256":"cf8ba9003c5b7ee94497d77cdf5e727c8e7b55ffd605ae671b1b3fd6c7661274","accessed_at":"2026-10-28T04:32:42.240055Z","locator":"bhiArticle.txt
+    lines 81-84","quote":"HM infusion powder\n12.500\nBHI powder\n5.000"}]},{"quantity_id":"q13","label":"M21
+    Proteose peptone","local_fields":[{"path":"data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml","field_path":"ingredients[4].concentration","stored":{"value":"10.0","unit":"G_PER_L"}}],"decision":"mixed","rationale":"The
+    value and g/L unit are explicitly present in the currently cited generic article
+    table; attach scoped evidence for that declared basis. ATCC44 reports the same
+    numeric batch mass in a separate scratch alternative. Neither source authenticates
+    this as the composition of the named BD237500 product, so the supplier-product
+    attribution remains unsupported.","source_stage":"Generic declared article rate
+    versus ATCC scratch batch","sources":[{"evidence_id":"bhiArticle","reference":"https://microbenotes.com/brain-heart-infusion-bhi-agar/","raw_path":"REVIEW_WORK/batch055/source07-09/bhiArticle.raw","raw_sha256":"39873c93291f575a5337e3a92e910ccd2da27845bf74e1419288088d9e3a2634","text_sha256":"cf8ba9003c5b7ee94497d77cdf5e727c8e7b55ffd605ae671b1b3fd6c7661274","accessed_at":"2026-10-28T04:32:42.240055Z","locator":"bhiArticle.txt
+    lines 79-80","quote":"Ingredients\nGms/liter"},{"evidence_id":"bhiArticle","reference":"https://microbenotes.com/brain-heart-infusion-bhi-agar/","raw_path":"REVIEW_WORK/batch055/source07-09/bhiArticle.raw","raw_sha256":"39873c93291f575a5337e3a92e910ccd2da27845bf74e1419288088d9e3a2634","text_sha256":"cf8ba9003c5b7ee94497d77cdf5e727c8e7b55ffd605ae671b1b3fd6c7661274","accessed_at":"2026-10-28T04:32:42.240055Z","locator":"bhiArticle.txt
+    lines 85-87","quote":"Proteose\npeptone\n10.000"},{"evidence_id":"atcc44","reference":"https://www.atcc.org/~/media/45E208A3191F4C7EA9B7E1063EB55303.ashx","raw_path":"REVIEW_WORK/batch055/source07-09/atcc44.raw","raw_sha256":"0d494bdb3bf7f1a710b2f0dce26e183df8b4c67e9d5b316bf4a9113bc4a2607a","text_sha256":"ddeb24487e4cb35de28f08b4cd74e02c365797aef1fdf2fff109fa7c22c7c2e8","accessed_at":"2026-10-28T04:32:41.965038Z","locator":"atcc44.txt
+    lines 22-22","quote":"Proteose Peptone…………………………………...………10.0 g"}],"layer_decisions":{"article_value_and_unit":"evidence_only","BD237500_product_attribution":"unsupported"}},{"quantity_id":"q14","label":"M21
+    Dextrose","local_fields":[{"path":"data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml","field_path":"ingredients[5].concentration","stored":{"value":"2.0","unit":"G_PER_L"}}],"decision":"mixed","rationale":"The
+    value and g/L unit are explicitly present in the currently cited generic article
+    table; attach scoped evidence for that declared basis. ATCC44 reports the same
+    numeric batch mass in a separate scratch alternative. Neither source authenticates
+    this as the composition of the named BD237500 product, so the supplier-product
+    attribution remains unsupported.","source_stage":"Generic declared article rate
+    versus ATCC scratch batch","sources":[{"evidence_id":"bhiArticle","reference":"https://microbenotes.com/brain-heart-infusion-bhi-agar/","raw_path":"REVIEW_WORK/batch055/source07-09/bhiArticle.raw","raw_sha256":"39873c93291f575a5337e3a92e910ccd2da27845bf74e1419288088d9e3a2634","text_sha256":"cf8ba9003c5b7ee94497d77cdf5e727c8e7b55ffd605ae671b1b3fd6c7661274","accessed_at":"2026-10-28T04:32:42.240055Z","locator":"bhiArticle.txt
+    lines 79-80","quote":"Ingredients\nGms/liter"},{"evidence_id":"bhiArticle","reference":"https://microbenotes.com/brain-heart-infusion-bhi-agar/","raw_path":"REVIEW_WORK/batch055/source07-09/bhiArticle.raw","raw_sha256":"39873c93291f575a5337e3a92e910ccd2da27845bf74e1419288088d9e3a2634","text_sha256":"cf8ba9003c5b7ee94497d77cdf5e727c8e7b55ffd605ae671b1b3fd6c7661274","accessed_at":"2026-10-28T04:32:42.240055Z","locator":"bhiArticle.txt
+    lines 88-89","quote":"Dextrose (Glucose)\n2.000"},{"evidence_id":"atcc44","reference":"https://www.atcc.org/~/media/45E208A3191F4C7EA9B7E1063EB55303.ashx","raw_path":"REVIEW_WORK/batch055/source07-09/atcc44.raw","raw_sha256":"0d494bdb3bf7f1a710b2f0dce26e183df8b4c67e9d5b316bf4a9113bc4a2607a","text_sha256":"ddeb24487e4cb35de28f08b4cd74e02c365797aef1fdf2fff109fa7c22c7c2e8","accessed_at":"2026-10-28T04:32:41.965038Z","locator":"atcc44.txt
+    lines 23-23","quote":"Dextrose……………………………………………..………..2.0 g"}],"layer_decisions":{"article_value_and_unit":"evidence_only","BD237500_product_attribution":"unsupported"}},{"quantity_id":"q15","label":"M21
+    Sodium chloride","local_fields":[{"path":"data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml","field_path":"ingredients[6].concentration","stored":{"value":"5.0","unit":"G_PER_L"}}],"decision":"mixed","rationale":"The
+    value and g/L unit are explicitly present in the currently cited generic article
+    table; attach scoped evidence for that declared basis. ATCC44 reports the same
+    numeric batch mass in a separate scratch alternative. Neither source authenticates
+    this as the composition of the named BD237500 product, so the supplier-product
+    attribution remains unsupported.","source_stage":"Generic declared article rate
+    versus ATCC scratch batch","sources":[{"evidence_id":"bhiArticle","reference":"https://microbenotes.com/brain-heart-infusion-bhi-agar/","raw_path":"REVIEW_WORK/batch055/source07-09/bhiArticle.raw","raw_sha256":"39873c93291f575a5337e3a92e910ccd2da27845bf74e1419288088d9e3a2634","text_sha256":"cf8ba9003c5b7ee94497d77cdf5e727c8e7b55ffd605ae671b1b3fd6c7661274","accessed_at":"2026-10-28T04:32:42.240055Z","locator":"bhiArticle.txt
+    lines 79-80","quote":"Ingredients\nGms/liter"},{"evidence_id":"bhiArticle","reference":"https://microbenotes.com/brain-heart-infusion-bhi-agar/","raw_path":"REVIEW_WORK/batch055/source07-09/bhiArticle.raw","raw_sha256":"39873c93291f575a5337e3a92e910ccd2da27845bf74e1419288088d9e3a2634","text_sha256":"cf8ba9003c5b7ee94497d77cdf5e727c8e7b55ffd605ae671b1b3fd6c7661274","accessed_at":"2026-10-28T04:32:42.240055Z","locator":"bhiArticle.txt
+    lines 90-91","quote":"Sodium chloride\n5.000"},{"evidence_id":"atcc44","reference":"https://www.atcc.org/~/media/45E208A3191F4C7EA9B7E1063EB55303.ashx","raw_path":"REVIEW_WORK/batch055/source07-09/atcc44.raw","raw_sha256":"0d494bdb3bf7f1a710b2f0dce26e183df8b4c67e9d5b316bf4a9113bc4a2607a","text_sha256":"ddeb24487e4cb35de28f08b4cd74e02c365797aef1fdf2fff109fa7c22c7c2e8","accessed_at":"2026-10-28T04:32:41.965038Z","locator":"atcc44.txt
+    lines 24-24","quote":"NaCl…………………………………………………...………5.0 g"}],"layer_decisions":{"article_value_and_unit":"evidence_only","BD237500_product_attribution":"unsupported"}},{"quantity_id":"q16","label":"M21
+    Disodium phosphate","local_fields":[{"path":"data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml","field_path":"ingredients[7].concentration","stored":{"value":"2.5","unit":"G_PER_L"}}],"decision":"mixed","rationale":"The
+    value and g/L unit are explicitly present in the currently cited generic article
+    table; attach scoped evidence for that declared basis. ATCC44 reports the same
+    numeric batch mass in a separate scratch alternative. Neither source authenticates
+    this as the composition of the named BD237500 product, so the supplier-product
+    attribution remains unsupported.","source_stage":"Generic declared article rate
+    versus ATCC scratch batch","sources":[{"evidence_id":"bhiArticle","reference":"https://microbenotes.com/brain-heart-infusion-bhi-agar/","raw_path":"REVIEW_WORK/batch055/source07-09/bhiArticle.raw","raw_sha256":"39873c93291f575a5337e3a92e910ccd2da27845bf74e1419288088d9e3a2634","text_sha256":"cf8ba9003c5b7ee94497d77cdf5e727c8e7b55ffd605ae671b1b3fd6c7661274","accessed_at":"2026-10-28T04:32:42.240055Z","locator":"bhiArticle.txt
+    lines 79-80","quote":"Ingredients\nGms/liter"},{"evidence_id":"bhiArticle","reference":"https://microbenotes.com/brain-heart-infusion-bhi-agar/","raw_path":"REVIEW_WORK/batch055/source07-09/bhiArticle.raw","raw_sha256":"39873c93291f575a5337e3a92e910ccd2da27845bf74e1419288088d9e3a2634","text_sha256":"cf8ba9003c5b7ee94497d77cdf5e727c8e7b55ffd605ae671b1b3fd6c7661274","accessed_at":"2026-10-28T04:32:42.240055Z","locator":"bhiArticle.txt
+    lines 92-93","quote":"Disodium phosphate\n2.500"},{"evidence_id":"atcc44","reference":"https://www.atcc.org/~/media/45E208A3191F4C7EA9B7E1063EB55303.ashx","raw_path":"REVIEW_WORK/batch055/source07-09/atcc44.raw","raw_sha256":"0d494bdb3bf7f1a710b2f0dce26e183df8b4c67e9d5b316bf4a9113bc4a2607a","text_sha256":"ddeb24487e4cb35de28f08b4cd74e02c365797aef1fdf2fff109fa7c22c7c2e8","accessed_at":"2026-10-28T04:32:41.965038Z","locator":"atcc44.txt
+    lines 25-25","quote":"Na2HPO4…………………………………………...………...2.5 g"}],"layer_decisions":{"article_value_and_unit":"evidence_only","BD237500_product_attribution":"unsupported"}},{"quantity_id":"q17","label":"M21
+    existing pH note","local_fields":[{"path":"data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml","field_path":"ingredients[7].notes","stored":"pH
+    buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial product"}],"decision":"evidence_only","rationale":"The
+    existing note already preserves pH 7.4 ±0.2, so pH is not wholly missing. This
+    agrees with the generic article table, which specifies 25°C, and the separate
+    ATCC scratch block. It is not evidence that this ingredient alone establishes
+    pH or that a specific commercial product has been authenticated.","source_stage":"Generic
+    formula pH context, not ingredient dose","sources":[{"evidence_id":"bhiArticle","reference":"https://microbenotes.com/brain-heart-infusion-bhi-agar/","raw_path":"REVIEW_WORK/batch055/source07-09/bhiArticle.raw","raw_sha256":"39873c93291f575a5337e3a92e910ccd2da27845bf74e1419288088d9e3a2634","text_sha256":"cf8ba9003c5b7ee94497d77cdf5e727c8e7b55ffd605ae671b1b3fd6c7661274","accessed_at":"2026-10-28T04:32:42.240055Z","locator":"bhiArticle.txt
+    lines 96-96","quote":"Final pH (at 25°C): 7.4±0.2"},{"evidence_id":"atcc44","reference":"https://www.atcc.org/~/media/45E208A3191F4C7EA9B7E1063EB55303.ashx","raw_path":"REVIEW_WORK/batch055/source07-09/atcc44.raw","raw_sha256":"0d494bdb3bf7f1a710b2f0dce26e183df8b4c67e9d5b316bf4a9113bc4a2607a","text_sha256":"ddeb24487e4cb35de28f08b4cd74e02c365797aef1fdf2fff109fa7c22c7c2e8","accessed_at":"2026-10-28T04:32:41.965038Z","locator":"atcc44.txt
+    lines 28-28","quote":"Final pH 7.4 +/- 0.2"}]},{"quantity_id":"q18","label":"Source-only
+    JCM commercial broth dose","local_fields":[],"decision":"evidence_only","rationale":"JCM28
+    explicitly calls for 37 g BD-Difco BHI broth plus separately listed agar. The
+    current parent decomposes this premix. Recover its opaque product representation
+    unless exact product composition is independently established; 37 + 15 = 52 is
+    not chemical equivalence proof.","source_stage":"M21/JCM28 commercial broth and
+    agar recipe","sources":[{"evidence_id":"jcm28","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=28","raw_path":"REVIEW_WORK/batch055/source07-09/jcm28.raw","raw_sha256":"4b88ed256f2e87ccdafa84ee5d30695b0b8fdc99b9a24d38b6b23d00f62c5071","text_sha256":"6c39f130134d078f178f82ddd669b77feb777a82bc2eeedcab30149c5ee3d113","accessed_at":"2026-10-28T04:32:42.630526Z","locator":"jcm28.txt
+    lines 6-14","quote":"Brain heart infusion broth (BD-Difco)\n37.0\ng\nAgar\n15.0\ng\nDistilled
+    water\n1.0\nL"}]},{"quantity_id":"q19","label":"Source-only JCM sterilization
+    default","local_fields":[],"decision":"evidence_only","rationale":"JCM28 states
+    this generic default for its own media. Keep it source-scoped; it does not supply
+    a missing ATCC44 duration.","source_stage":"JCM28 default only","sources":[{"evidence_id":"jcm28","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=28","raw_path":"REVIEW_WORK/batch055/source07-09/jcm28.raw","raw_sha256":"4b88ed256f2e87ccdafa84ee5d30695b0b8fdc99b9a24d38b6b23d00f62c5071","text_sha256":"6c39f130134d078f178f82ddd669b77feb777a82bc2eeedcab30149c5ee3d113","accessed_at":"2026-10-28T04:32:42.630526Z","locator":"jcm28.txt
+    lines 4-4","quote":"Unless otherwise stated, sterilize media by autoclaving at
+    121°C for 15 min."}]},{"quantity_id":"q20","label":"Source-only article infusion
+    powders","local_fields":[],"decision":"evidence_only","rationale":"These are the
+    article’s current explicitly declared table entries. They are retained solely
+    to assess the existing article attribution; they are not proposed manufacturer
+    replacement values or organism-specific culture instructions.","source_stage":"Generic
+    article composition comparison","sources":[{"evidence_id":"bhiArticle","reference":"https://microbenotes.com/brain-heart-infusion-bhi-agar/","raw_path":"REVIEW_WORK/batch055/source07-09/bhiArticle.raw","raw_sha256":"39873c93291f575a5337e3a92e910ccd2da27845bf74e1419288088d9e3a2634","text_sha256":"cf8ba9003c5b7ee94497d77cdf5e727c8e7b55ffd605ae671b1b3fd6c7661274","accessed_at":"2026-10-28T04:32:42.240055Z","locator":"bhiArticle.txt
+    lines 79-84","quote":"Ingredients\nGms/liter\nHM infusion powder\n12.500\nBHI
+    powder\n5.000"}]},{"quantity_id":"q21","label":"Source-only ATCC storage guidance","local_fields":[],"decision":"evidence_only","rationale":"This
+    is product storage guidance, not an organism incubation temperature or an asserted
+    local field. Keep its scope distinct.","source_stage":"ATCC product-storage note","sources":[{"evidence_id":"atcc44","reference":"https://www.atcc.org/~/media/45E208A3191F4C7EA9B7E1063EB55303.ashx","raw_path":"REVIEW_WORK/batch055/source07-09/atcc44.raw","raw_sha256":"0d494bdb3bf7f1a710b2f0dce26e183df8b4c67e9d5b316bf4a9113bc4a2607a","text_sha256":"ddeb24487e4cb35de28f08b4cd74e02c365797aef1fdf2fff109fa7c22c7c2e8","accessed_at":"2026-10-28T04:32:41.965038Z","locator":"atcc44.txt
+    lines 34-34","quote":" Recommended storage temperature: 2-8ºC."}]}],"scope":"Every
+    target/maintained-owner concentration, plus scoped dependency quantities and all
+    numeric preparation assertions; derivative historical quantities are not endorsed."}'
+- assessment_id: grounding
+  area: grounding
+  topic: Ontology identity, supplied forms and current MIM
+  outcome: supported
+  summary: Target direct-ingredient linkage counts are 0/2 primary and 0/2 secondary.
+    These are linkage metrics, not scientific accuracy. All scoped CHEBI/MICRO/UBERON
+    objects were inspected. Any case-only MICRO:0000180 mismatch is reported only
+    for an actually differing asserted label; the BHI parent already uses canonical
+    proteose peptone. No wrong ID follows from typography. UBERON tissue/blood terms
+    do not encode species, processing or retained infusion mass.
+  target_ids:
+  - CultureMech:009008
+  evidence_ids:
+  - groundings
+  - mim
+  - mim-meta
+- assessment_id: history
+  area: provenance
+  topic: Repair credit and current writer limits
+  outcome: supported
+  summary: Current target/owner and scoped dependency histories, all selected September/October
+    reports and relevant current writer code were read. The October reports had zero
+    source-checked rows; old review per-litre assumptions are not adopted. Current
+    code is evidence of current behavior only.
+  target_ids:
+  - CultureMech:009008
+  evidence_ids:
+  - history
+  - owner
+  - writer-togo
+  - writer-formulation
+  - writer-merger
+findings:
+- finding_id: f1
+  issue_key: culturemech-009008-generated-repair-staleness
+  category: provenance
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The generated target omits existing source and preparation repairs
+  description: The maintained owner already corrects the commercial product name,
+    restores water volume/grounding, pH context, preparation, sterilization, references
+    and its repair history. The generated target retains the old water mass and shortened
+    product name and omits those fields. Credit those repairs; regenerate only after
+    resolving the remaining denominator and graph claims. Current singleton merge
+    copying and conservative formulation comparison do not prove this target is fresh.
+  target_ids:
+  - CultureMech:009008
+  field_paths:
+  - ingredients
+  - ph_value
+  - preparation_steps
+  - sterilization
+  - references
+  - curation_history
+  evidence_ids:
+  - target
+  - owner
+  - atcc44
+  - togo2425
+  - writer-merger
+  rule_id: review-yaml-record/provenance
+  native_severity: P2
+  normalization_reason: Material claim, supplied-form, source-scope or generated-state
+    issue; native shape checks pass and no schema blocker is claimed.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml
+    role: maintained source
+- finding_id: f2
+  issue_key: culturemech-009008-input-volume-and-main-basis
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Input water and batch masses are represented as final concentrations
+  description: The target water G_PER_L is dimensionally wrong; the owner’s ML_PER_L
+    improves dimensionality but still invents a final-volume denominator. ATCC44 states
+    52 g product and 1000 mL input water without final makeup. The M21 dependency
+    separately stores its JCM28 1 L water as 1 G_PER_L. Preserve exact source inputs,
+    distinguish the article’s explicit g/L table from batch masses, and retain TOGO’s
+    7.2–7.6 pH interval alongside the existing nominal 7.4.
+  target_ids:
+  - CultureMech:009008
+  field_paths:
+  - ingredients
+  - ph_value
+  - data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml::ingredients[0].concentration
+  evidence_ids:
+  - atcc44
+  - togo2425
+  - jcm28
+  - parent
+  rule_id: review-ingredient-concentrations/evidence-contract
+  native_severity: P2
+  normalization_reason: Material claim, supplied-form, source-scope or generated-state
+    issue; native shape checks pass and no schema blocker is claimed.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml
+    role: scoped dependency owner; M21 formulation and reciprocal graph only
+- finding_id: f3
+  issue_key: culturemech-009008-unproved-commercial-duplicate
+  category: identity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The reciprocal duplicate graph assumes unverified commercial equivalence
+  description: M2425 is ATCC44’s 52 g BD211065 commercial agar recipe; M21/JCM28 is
+    37 g BD-Difco BHI broth plus 15 g agar. Their sum does not establish product composition
+    equivalence. The reciprocal SOURCE_DUPLICATE relationship and CultureMech:008793
+    pointer on the commercial ingredient currently treat a complete medium recipe
+    as product identity. Keep the relationship unresolved or qualify it until exact
+    product evidence establishes equivalence; do not expand this ingredient through
+    the parent solely from its label.
+  target_ids:
+  - CultureMech:009008
+  field_paths:
+  - data/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml::ingredients[0].culturemech_term
+  - data/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml::parent_media
+  - data/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml::variant_relationship
+  - data/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml::variant_modifications
+  - data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml::variant_children
+  evidence_ids:
+  - owner
+  - parent
+  - atcc44
+  - jcm28
+  - togo21
+  rule_id: review-yaml-record/identity
+  native_severity: P2
+  normalization_reason: Material claim, supplied-form, source-scope or generated-state
+    issue; native shape checks pass and no schema blocker is claimed.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml
+    role: scoped dependency owner; M21 formulation and reciprocal graph only
+- finding_id: f4
+  issue_key: culturemech-009008-parent-product-composition-attribution
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The parent conflates commercial powder with a scratch infusion alternative
+  description: The parent attributes 200/250 g tissue-input notes and constituent
+    rates to BD237500 via a generic article. The current article instead lists HM
+    infusion powder and BHI powder; ATCC44’s tissue inputs belong to an explicitly
+    separate scratch alternative. Neither authenticates commercial product composition.
+    Keep retained tissue infusion amounts unquantified, preserve supported article-declared
+    values only within their source basis, and restore or explicitly account for the
+    JCM commercial premix rather than silently treating scratch inputs as its retained
+    constituents.
+  target_ids:
+  - CultureMech:009008
+  field_paths:
+  - data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml::ingredients
+  - data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml::notes
+  evidence_ids:
+  - parent
+  - bhiArticle
+  - atcc44
+  - jcm28
+  rule_id: review-yaml-record/evidence
+  native_severity: P2
+  normalization_reason: Material claim, supplied-form, source-scope or generated-state
+    issue; native shape checks pass and no schema blocker is claimed.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml
+    role: scoped dependency owner; M21 formulation and reciprocal graph only
+- finding_id: f5
+  issue_key: culturemech-009008-scoped-evidence-and-historical-writer
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Current source claims need exact scope and bounded writer provenance
+  description: Root references and product URLs do not supply amount-specific attached
+    evidence. Add short exact support after resolving source/product stages, preserving
+    existing pH and preparation credit. The named historical repair_atcc_score40.py
+    was not found in an ignored-inclusive search of current scripts/src Python files
+    and filenames; this bounded absence does not prove that it never existed or ran.
+    Preserve the old event and inspect current paths before any future repair, rather
+    than claiming knowledge of that unavailable historical implementation.
+  target_ids:
+  - CultureMech:009008
+  field_paths:
+  - ingredients
+  - references
+  - curation_history
+  - data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml::curation_history
+  evidence_ids:
+  - owner
+  - parent
+  - atcc44
+  - jcm28
+  - bhiArticle
+  rule_id: review-yaml-record/evidence
+  native_severity: P3
+  normalization_reason: Bounded label or evidence/provenance issue; no wrong chemical
+    identity is inferred from typography.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml
+    role: scoped dependency owner; M21 formulation and reciprocal graph only
+actions:
+- action_id: a1
+  description: The maintained owner already corrects the commercial product name,
+    restores water volume/grounding, pH context, preparation, sterilization, references
+    and its repair history. The generated target retains the old water mass and shortened
+    product name and omits those fields. Credit those repairs; regenerate only after
+    resolving the remaining denominator and graph claims. Current singleton merge
+    copying and conservative formulation comparison do not prove this target is fresh.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:009008
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only the named maintained inputs; preserve source version, stage, original
+    history and a new actual curation event. Do not rerun a historical repair blindly.
+  - Attach exact scoped evidence and recheck all affected quantities, units, stock
+    boundaries and ontology labels; leave unsupported final-volume or product-equivalence
+    claims unresolved.
+  - Regenerate this target through current repository merge workflow, check freshness,
+    and rerun schema, strict, terms and references checks.
+  generator: Maintained-input curation followed by repository merge regeneration and
+    freshness checks
+- action_id: a2
+  description: The target water G_PER_L is dimensionally wrong; the owner’s ML_PER_L
+    improves dimensionality but still invents a final-volume denominator. ATCC44 states
+    52 g product and 1000 mL input water without final makeup. The M21 dependency
+    separately stores its JCM28 1 L water as 1 G_PER_L. Preserve exact source inputs,
+    distinguish the article’s explicit g/L table from batch masses, and retain TOGO’s
+    7.2–7.6 pH interval alongside the existing nominal 7.4.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:009008
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml
+    role: scoped dependency owner; M21 formulation and reciprocal graph only
+  acceptance_checks:
+  - Curate only the named maintained inputs; preserve source version, stage, original
+    history and a new actual curation event. Do not rerun a historical repair blindly.
+  - Attach exact scoped evidence and recheck all affected quantities, units, stock
+    boundaries and ontology labels; leave unsupported final-volume or product-equivalence
+    claims unresolved.
+  - Regenerate this target through current repository merge workflow, check freshness,
+    and rerun schema, strict, terms and references checks.
+  generator: Maintained-input curation followed by repository merge regeneration and
+    freshness checks
+- action_id: a3
+  description: M2425 is ATCC44’s 52 g BD211065 commercial agar recipe; M21/JCM28 is
+    37 g BD-Difco BHI broth plus 15 g agar. Their sum does not establish product composition
+    equivalence. The reciprocal SOURCE_DUPLICATE relationship and CultureMech:008793
+    pointer on the commercial ingredient currently treat a complete medium recipe
+    as product identity. Keep the relationship unresolved or qualify it until exact
+    product evidence establishes equivalence; do not expand this ingredient through
+    the parent solely from its label.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:009008
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml
+    role: scoped dependency owner; M21 formulation and reciprocal graph only
+  acceptance_checks:
+  - Curate only the named maintained inputs; preserve source version, stage, original
+    history and a new actual curation event. Do not rerun a historical repair blindly.
+  - Attach exact scoped evidence and recheck all affected quantities, units, stock
+    boundaries and ontology labels; leave unsupported final-volume or product-equivalence
+    claims unresolved.
+  - Regenerate this target through current repository merge workflow, check freshness,
+    and rerun schema, strict, terms and references checks.
+  generator: Maintained-input curation followed by repository merge regeneration and
+    freshness checks
+- action_id: a4
+  description: The parent attributes 200/250 g tissue-input notes and constituent
+    rates to BD237500 via a generic article. The current article instead lists HM
+    infusion powder and BHI powder; ATCC44’s tissue inputs belong to an explicitly
+    separate scratch alternative. Neither authenticates commercial product composition.
+    Keep retained tissue infusion amounts unquantified, preserve supported article-declared
+    values only within their source basis, and restore or explicitly account for the
+    JCM commercial premix rather than silently treating scratch inputs as its retained
+    constituents.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:009008
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml
+    role: scoped dependency owner; M21 formulation and reciprocal graph only
+  acceptance_checks:
+  - Curate only the named maintained inputs; preserve source version, stage, original
+    history and a new actual curation event. Do not rerun a historical repair blindly.
+  - Attach exact scoped evidence and recheck all affected quantities, units, stock
+    boundaries and ontology labels; leave unsupported final-volume or product-equivalence
+    claims unresolved.
+  - Regenerate this target through current repository merge workflow, check freshness,
+    and rerun schema, strict, terms and references checks.
+  generator: Maintained-input curation followed by repository merge regeneration and
+    freshness checks
+- action_id: a5
+  description: Root references and product URLs do not supply amount-specific attached
+    evidence. Add short exact support after resolving source/product stages, preserving
+    existing pH and preparation credit. The named historical repair_atcc_score40.py
+    was not found in an ignored-inclusive search of current scripts/src Python files
+    and filenames; this bounded absence does not prove that it never existed or ran.
+    Preserve the old event and inspect current paths before any future repair, rather
+    than claiming knowledge of that unavailable historical implementation.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:009008
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2425_Brain_Heart_Infusion_Agar.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml
+    role: scoped dependency owner; M21 formulation and reciprocal graph only
+  acceptance_checks:
+  - Curate only the named maintained inputs; preserve source version, stage, original
+    history and a new actual curation event. Do not rerun a historical repair blindly.
+  - Attach exact scoped evidence and recheck all affected quantities, units, stock
+    boundaries and ontology labels; leave unsupported final-volume or product-equivalence
+    claims unresolved.
+  - Regenerate this target through current repository merge workflow, check freshness,
+    and rerun schema, strict, terms and references checks.
+  generator: Maintained-input curation followed by repository merge regeneration and
+    freshness checks
+limitations:
+- No authenticated manufacturer formula was available to this review. Search/catalog
+  identity leads and failed manufacturer retrievals are not adopted as constituent
+  evidence; the commercial equivalence and decomposition remain unresolved.
+- The generic article is used only to assess its currently cited composition table.
+  Its organism-specific uses, supplements, selective conditions and incubation guidance
+  are excluded from assessment and recommendations.
+- No all-inclusive historical execution search was performed. The missing-writer statement
+  is limited to ignored-inclusive current scripts/src Python filenames and relevant
+  repair identifiers; prior reports remain derivative context.
+- No organism-specific growth, supplementation, incubation optimization or universal
+  strain applicability is inferred from medium names or general-purpose source descriptions.
+- OLS objects establish term identity, not formulation quantities or processing grade;
+  the MIM commit is 6643131b0f12ab40b66f98135245fca04027e0e9.
+- Listed input liquids are not a measured final volume. Any explicit stock makeup
+  applies only to that stock.
+- No experiment, source edit, formal review validation/save, Git mutation or publication
+  was performed by this author. Root controls formal acceptance and ordered persistence.
+- All source outcomes used here are preserved in the capture metadata; inaccessible
+  manufacturer leads do not authenticate a commercial formulation.
+```
