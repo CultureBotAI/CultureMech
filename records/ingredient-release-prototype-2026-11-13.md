@@ -135,3 +135,31 @@ not change the producer or its source/artifact hashes.
 Generated products remain ignored; the committed producer and candidate manifest
 retain the reproducible recipe. The downstream integration checklist is
 [issue 687](https://github.com/CultureBotAI/CultureMech/issues/687).
+
+## Additional adversarial review before merge
+
+The requested fresh review of PR #684 filed two findings before fixes:
+
+- #688: Python's default CSV field-size limit rejected valid native descriptors
+  containing large quoted notes. The reader now lifts that limit while parsing
+  each row and restores it before yielding or propagating an error. The CLI
+  reports CSV errors as controlled failures.
+- #689: a staging-directory cleanup failure occurred after manifest publication,
+  allowing a failed build to leave an accepted candidate. Cleanup now completes
+  before the acceptance manifest is installed; failure diagnostics identify
+  surviving artifact directories.
+
+The fixes preserve the native extraction and identity semantics. Regression
+coverage exercises a real native build with a quoted descriptor exceeding
+128 KiB, process-global CSV limit restoration, CSV failure, injected cleanup
+failure and failure while writing the manifest. The separate read-only diff
+review found no additional substantive issue.
+
+The actual one-record canary was rebuilt with these fixes in
+`output/ingredient-release-canary-688-689/`: 25 groups, 25 occurrences and zero
+errors. Pinned verification passed against manifest SHA256
+`9b964d3c4e2bf3bb59a613b66cbf3835e8ab4506e1ce7b805f2f8f8a953f4525`.
+It proves the changed producer's one-record persistence and accounting path;
+full-catalog validation and final-head CI are recorded with the PR's merge
+receipt. The earlier full bundle above remains historical evidence from its
+recorded producer commit, rather than being relabeled as a new-code build.

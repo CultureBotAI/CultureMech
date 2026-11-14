@@ -2,8 +2,10 @@
 
 from __future__ import annotations
 
+import csv
 import json
 import shutil
+from pathlib import Path
 
 import ingredient_release_bundle as bundle
 import pytest
@@ -273,3 +275,97 @@ def test_recorded_subset_is_never_promoted_by_destination(inputs, candidate, mon
     monkeypatch.setattr(bundle, "DEFAULT_INPUT", inputs)
     pin = bundle.fingerprint(output / "manifest.json")["sha256"]
     assert bundle.verify(output, inputs, expected_manifest_sha256=pin)["scope"] == "subset"
+
+
+def test_native_long_quoted_notes_build_and_verify_losslessly(inputs, tmp_path):
+    path = inputs / "bacterial" / "medium.yaml"
+    record = yaml.safe_load(path.read_text(encoding="utf-8"))
+    notes = 'A large quoted note: "salt"\tand a newline\n' * 5000
+    record["ingredients"][0]["notes"] = notes
+    path.write_text(yaml.safe_dump(record), encoding="utf-8")
+    output = tmp_path / "long-notes"
+    original_limit = csv.field_size_limit()
+    manifest = bundle.build(inputs, output)
+    assert csv.field_size_limit() == original_limit
+    rows = list(bundle._rows(output / "ingredient_occurrences.tsv"))
+    descriptor = json.loads(rows[0]["ingredient_json"])
+    assert len(rows[0]["ingredient_json"]) > 128 * 1024
+    assert descriptor["notes"] == notes
+    pin = bundle.fingerprint(output / "manifest.json")["sha256"]
+    assert bundle.verify(output, inputs, expected_manifest_sha256=pin)["counts"] == (
+        manifest["counts"]
+    )
+    assert csv.field_size_limit() == original_limit
+
+
+def test_csv_limit_is_restored_before_yield_and_after_close(candidate):
+    output, _ = candidate
+    original_limit = csv.field_size_limit(32)
+    try:
+        rows = bundle._rows(output / "ingredient_occurrences.tsv")
+        assert len(next(rows)["ingredient_json"]) > 32
+        assert csv.field_size_limit() == 32
+        rows.close()
+        assert csv.field_size_limit() == 32
+    finally:
+        csv.field_size_limit(original_limit)
+
+
+def test_csv_error_restores_reader_limit_and_cli_reports_failure(candidate, monkeypatch, capsys):
+    output, _ = candidate
+
+    class UnreadableRows:
+        def __next__(self):
+            raise csv.Error("malformed fixture CSV")
+
+    def unreadable_rows(*args, **kwargs):
+        return UnreadableRows()
+
+    monkeypatch.setattr(bundle.csv, "DictReader", unreadable_rows)
+    original_limit = csv.field_size_limit(64)
+    try:
+        assert bundle.main(["verify", "--bundle-dir", str(output)]) == 1
+        assert csv.field_size_limit() == 64
+        assert "malformed fixture CSV" in capsys.readouterr().err
+    finally:
+        csv.field_size_limit(original_limit)
+
+
+def test_stage_cleanup_failure_never_publishes_acceptance_manifest(inputs, tmp_path, monkeypatch):
+    original_rmdir = Path.rmdir
+
+    def fail_owned_stage(path):
+        if path.name.startswith(".cleanup-failure.incomplete-"):
+            raise OSError("injected stage cleanup failure")
+        return original_rmdir(path)
+
+    monkeypatch.setattr(Path, "rmdir", fail_owned_stage)
+    output = tmp_path / "cleanup-failure"
+    with pytest.raises(bundle.BundleError, match="injected stage cleanup failure") as error:
+        bundle.build(inputs, output)
+    assert not (output / "manifest.json").exists()
+    assert all((output / name).is_file() for name in bundle.PRODUCTS)
+    stages = list(tmp_path.glob(".cleanup-failure.incomplete-*"))
+    assert len(stages) == 1
+    assert str(output) in str(error.value)
+    assert str(stages[0]) in str(error.value)
+    with pytest.raises(FileNotFoundError):
+        bundle.verify(output, inputs)
+
+
+def test_manifest_write_failure_reports_surviving_output_evidence(inputs, tmp_path, monkeypatch):
+    original_write = Path.write_text
+
+    def fail_manifest_write(path, *args, **kwargs):
+        if path.name == ".manifest.incomplete":
+            raise OSError("injected manifest write failure")
+        return original_write(path, *args, **kwargs)
+
+    monkeypatch.setattr(Path, "write_text", fail_manifest_write)
+    output = tmp_path / "write-failure"
+    with pytest.raises(bundle.BundleError, match="injected manifest write failure") as error:
+        bundle.build(inputs, output)
+    assert not (output / "manifest.json").exists()
+    assert not list(tmp_path.glob(".write-failure.incomplete-*"))
+    assert str(output) in str(error.value)
+    assert ".write-failure.incomplete-" not in str(error.value)

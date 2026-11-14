@@ -4,6 +4,7 @@
 Inputs: normalized YAML, native aggregator/schema and packaged MIM label index.
 Outputs: existing five aggregation products plus a manifest in a new directory.
 Serves issue #682 and review fixes #685 (manifest pin) / #686 (relocation).
+Also covers #688 (large CSV fields) and #689 (publication cleanup boundary).
 Never publishes a MIM release.
 """
 
@@ -112,7 +113,20 @@ def environment() -> dict[str, Any]:
 
 def _rows(path: Path):
     with path.open(encoding="utf-8", newline="") as stream:
-        yield from csv.DictReader(stream, delimiter="\t")
+        reader = csv.DictReader(stream, delimiter="\t")
+        while True:
+            # Native ingredient_json includes uncapped schema-valid notes. Lift
+            # csv's default 128 KiB cap only while reading a row, restoring the
+            # caller's process-global limit before yielding or propagating errors.
+            previous_limit = csv.field_size_limit()
+            try:
+                csv.field_size_limit(sys.maxsize)
+                row = next(reader)
+            except StopIteration:
+                return
+            finally:
+                csv.field_size_limit(previous_limit)
+            yield row
 
 
 def artifact_accounting(directory: Path, corpus: dict[str, Any]) -> dict[str, Any]:
@@ -234,6 +248,7 @@ def build(input_dir: Path, output_dir: Path | None, *, plan: bool = False) -> di
     assert output_dir is not None
     output_dir.parent.mkdir(parents=True, exist_ok=True)
     stage = Path(tempfile.mkdtemp(prefix=f".{output_dir.name}.incomplete-", dir=output_dir.parent))
+    output_reserved = False
     try:
         if _aggregate(input_dir, stage):
             raise BundleError("Native ingredient aggregation failed")
@@ -271,18 +286,23 @@ def build(input_dir: Path, output_dir: Path | None, *, plan: bool = False) -> di
         # mkdir is the exclusive no-overwrite reservation. A manifest is installed
         # last; interrupted/failed publication never has an acceptance manifest.
         output_dir.mkdir()
+        output_reserved = True
         for name in PRODUCTS:
             (stage / name).rename(output_dir / name)
+        stage.rmdir()  # Empty owned stage; cleanup must succeed before acceptance.
         manifest_path = output_dir / "manifest.json"
         temporary = output_dir / ".manifest.incomplete"
         temporary.write_text(
             json.dumps(manifest, indent=2, sort_keys=True) + "\n", encoding="utf-8"
         )
         temporary.rename(manifest_path)
-        stage.rmdir()  # Empty directory created by this invocation only.
         return manifest
     except Exception as exc:
-        raise BundleError(f"{exc}; incomplete evidence retained at {stage}") from exc
+        retained = [stage] if stage.exists() else []
+        if output_reserved and output_dir.exists():
+            retained.append(output_dir)
+        locations = ", ".join(str(path) for path in retained) or "no surviving artifact directory"
+        raise BundleError(f"{exc}; incomplete evidence retained at {locations}") from exc
 
 
 def verify(
@@ -401,6 +421,7 @@ def main(argv: list[str] | None = None) -> int:
         KeyError,
         TypeError,
         ValueError,
+        csv.Error,
         subprocess.CalledProcessError,
     ) as exc:
         print(f"Ingredient candidate failed: {exc}", file=sys.stderr)
