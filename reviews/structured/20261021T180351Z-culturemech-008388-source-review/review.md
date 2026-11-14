@@ -1,0 +1,4900 @@
+# Source and formulation review: as_medium (CultureMech:008388)
+
+- Review: 20261021T180351Z-culturemech-008388-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T17:54:29Z
+- Finished UTC: 2026-10-21T18:03:51Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+NBRC 1049 and TOGO M1817 identify AS medium, but main, trace and vitamin stages are flattened, milligrams and liquid doses are misrepresented, and calcium/boron/water were combined across stages. Both asserted stock links identify different recipes. The owner only repaired one water duplicate value; its unit and source scope remain wrong. Required historical sulfur MIM correspondence and original 6129 evidence remain unavailable, making this review partial.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 319; batch 032 item 9 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding thirty-one task batches contain 310 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 313 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:008388 | data/merge_yaml/merged/AS_medium.yaml | generated | as_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:008388 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:008388 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-032/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch032/319/strict.tsv |
+| validate-terms | passed | True | CultureMech:008388 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:008388 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:008388 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Historical identity of asserted MediaIngredientMech:001072 | unavailable | True | CultureMech:008388 | Current bounded lookup completed with no exact row. Original historical identity/correspondence was not recovered; primary chemical identity is a separate claim. |
+| Exact source content access: solution6129 | unavailable | True | CultureMech:008388 | The exact current6129 endpoint returned503, and an ignored-inclusive source search recovered derivative reports but not the cited historical raw response. Five attached stock-context claims are locally consistent but cannot be authenticated as historical original bytes. This unresolved asserted dependency contributes to partial coverage. |
+| Exact source content access: togoM1817 | unavailable | False | CultureMech:008388 | The alternate TOGO API endpoint failed DNS; the original TOGO endpoint and exact NBRC1049 primary both succeeded. The preserved failed request does not imply absent source content. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:008388.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### All asserted primary and current secondary chemical identifiers
+
+grounding: concern. Targets: CultureMech:008388.
+
+36 distinct primary/current-secondary IDs resolve to nonobsolete terms; exact stored/canonical labels are recorded separately in each term evidence item. Target direct-ingredient linkage is 36/39 primary (92.31%) and 32/39 current CHEBI-based secondary (82.05%), on a 0–100 linkage scale, not an accuracy score. Current secondary keys without pinned index rows: ['CHEBI:29032']. Legacy slot count 1 is separate and does not enter that current-key claim. Supplied-form correspondence is assessed separately.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:008388.
+
+32 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Exact accession and single source owner
+
+identity: supported. Targets: CultureMech:008388.
+
+The exact original TOGO M1817 metadata names NBRC_M1049 and links the captured NBRC1049 primary. The sole maintained bacterial/as_medium owner matches CultureMech:008388. No inferred equivalence to a similarly named AS medium is needed.
+
+### Hydrate and salt identity
+
+grounding: concern. Targets: CultureMech:008388.
+
+Cobalt and nickel chloride hexahydrates are linked to anhydrous CHEBI:35696 and CHEBI:34887. Calcium pantothenate is linked to the R-pantothenate anion, CHEBI:29032, losing calcium and adding unstated stereochemical specificity. Other asserted main/stock chemical names match at the printed form level, including hydrated magnesium/calcium/strontium/manganese/iron salts, anhydrous tungstate/selenite/aluminium potassium sulfate and generic vitamin B12. Elemental-sulfur grounding does not authenticate the legacy MIM label. Three named main components lack primary terms; no replacement IDs are guessed.
+
+### Complex medium and growth scope
+
+scope: supported. Targets: CultureMech:008388.
+
+Yeast extract supports complex/undefined classification, and the source recipe is liquid with no agar. The exact page does not establish a taxon, growth optimum or measured final volume. Gas atmosphere is a preparation condition, not an independently verified oxygen phenotype.
+
+### Asserted stocks are compositionally different
+
+identity: concern. Targets: CultureMech:008388.
+
+Local stock6129 is a five-component zinc/manganese/molybdenum/copper/cobalt-nitrate solution, with five derivative-only historical amount claims. Stock6241 is a 100 ml three-vitamin solution with two exact current-raw-matched attached claims. Neither is the NBRC1049 stock. Stable names alone do not establish formulation identity, and their placeholder quality flags and context-only quantities are not target evidence.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:008388.
+
+52 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "decision_id": "q1",
+    "label": "MgSO4·7H2O",
+    "decision": "correct",
+    "source_stage": "Main NBRC1049 batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "6",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "6",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[6], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "MgSO 4 ·7H 2 O 6 g",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "Preserve the printed main-batch quantity and original unit. The source lists 1 L water plus separate stock additions, not a measured final litre; attach the basis rather than silently equate grams per batch with final G_PER_L."
+  },
+  {
+    "decision_id": "q2",
+    "label": "NaCl",
+    "decision": "correct",
+    "source_stage": "Main NBRC1049 batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[3], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "NaCl 20 g",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "Preserve the printed main-batch quantity and original unit. The source lists 1 L water plus separate stock additions, not a measured final litre; attach the basis rather than silently equate grams per batch with final G_PER_L."
+  },
+  {
+    "decision_id": "q3",
+    "label": "KH2PO4",
+    "decision": "correct",
+    "source_stage": "Main NBRC1049 batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[9], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "KH 2 PO 4 0.2 g",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "Preserve the printed main-batch quantity and original unit. The source lists 1 L water plus separate stock additions, not a measured final litre; attach the basis rather than silently equate grams per batch with final G_PER_L."
+  },
+  {
+    "decision_id": "q4",
+    "label": "Resazurin",
+    "decision": "correct",
+    "source_stage": "Main NBRC1049 batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[18], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Resazurin 1 mg",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "The source is 1 mg resazurin, not the stored 1 g/L. Preserve milligrams and the main-batch basis; no final measured volume is given."
+  },
+  {
+    "decision_id": "q5",
+    "label": "MgCl2·6H2O",
+    "decision": "correct",
+    "source_stage": "Main NBRC1049 batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[5], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "MgCl 2 ·6H 2 O 3 g",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "Preserve the printed main-batch quantity and original unit. The source lists 1 L water plus separate stock additions, not a measured final litre; attach the basis rather than silently equate grams per batch with final G_PER_L."
+  },
+  {
+    "decision_id": "q6",
+    "label": "Na2S·9H2O",
+    "decision": "correct",
+    "source_stage": "Main NBRC1049 batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[20], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Na 2 S·9H 2 O 0.3 g",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "Preserve the printed main-batch quantity and original unit. The source lists 1 L water plus separate stock additions, not a measured final litre; attach the basis rather than silently equate grams per batch with final G_PER_L. This sulfide amount is added separately from the main autoclave, using the separately described 5% stock."
+  },
+  {
+    "decision_id": "q7",
+    "label": "KCl",
+    "decision": "correct",
+    "source_stage": "Main NBRC1049 batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[10], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "KCl 0.5 g",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "Preserve the printed main-batch quantity and original unit. The source lists 1 L water plus separate stock additions, not a measured final litre; attach the basis rather than silently equate grams per batch with final G_PER_L."
+  },
+  {
+    "decision_id": "q8",
+    "label": "(NH4)2SO4",
+    "decision": "correct",
+    "source_stage": "Main NBRC1049 batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[7], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "(NH 4 ) 2 SO 4 1 g",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "Preserve the printed main-batch quantity and original unit. The source lists 1 L water plus separate stock additions, not a measured final litre; attach the basis rather than silently equate grams per batch with final G_PER_L."
+  },
+  {
+    "decision_id": "q9",
+    "label": "Sulfur (powder)",
+    "decision": "correct",
+    "source_stage": "Main NBRC1049 batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[19], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Sulfur (powder) 10 g",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "Preserve the printed main-batch quantity and original unit. The source lists 1 L water plus separate stock additions, not a measured final litre; attach the basis rather than silently equate grams per batch with final G_PER_L."
+  },
+  {
+    "decision_id": "q10",
+    "label": "NaBr",
+    "decision": "correct",
+    "source_stage": "Main NBRC1049 batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[11], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "NaBr 0.05 g",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "Preserve the printed main-batch quantity and original unit. The source lists 1 L water plus separate stock additions, not a measured final litre; attach the basis rather than silently equate grams per batch with final G_PER_L."
+  },
+  {
+    "decision_id": "q11",
+    "label": "SrCl2·6H2O",
+    "decision": "correct",
+    "source_stage": "Main NBRC1049 batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[13], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "SrCl 2 ·6H 2 O 0.02 g",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "Preserve the printed main-batch quantity and original unit. The source lists 1 L water plus separate stock additions, not a measured final litre; attach the basis rather than silently equate grams per batch with final G_PER_L."
+  },
+  {
+    "decision_id": "q12",
+    "label": "Fe(III) ammonium citrate",
+    "decision": "correct",
+    "source_stage": "Main NBRC1049 batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[14], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Fe(III) ammonium citrate 0.01 g",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "Preserve the printed main-batch quantity and original unit. The source lists 1 L water plus separate stock additions, not a measured final litre; attach the basis rather than silently equate grams per batch with final G_PER_L."
+  },
+  {
+    "decision_id": "q13",
+    "label": "Bis Tris Propane",
+    "decision": "correct",
+    "source_stage": "Main NBRC1049 batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "2.25",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "2.25",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[15], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Bis Tris Propane 2.25 g",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "Preserve the printed main-batch quantity and original unit. The source lists 1 L water plus separate stock additions, not a measured final litre; attach the basis rather than silently equate grams per batch with final G_PER_L."
+  },
+  {
+    "decision_id": "q14",
+    "label": "Bacto Yeast Extract (Difco)",
+    "decision": "correct",
+    "source_stage": "Main NBRC1049 batch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[4], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Bacto Yeast Extract (Difco) 2 g",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "Preserve the printed main-batch quantity and original unit. The source lists 1 L water plus separate stock additions, not a measured final litre; attach the basis rather than silently equate grams per batch with final G_PER_L."
+  },
+  {
+    "decision_id": "q15",
+    "label": "CaCl2·2H2O cross-stage sum",
+    "decision": "correct",
+    "source_stage": "Main versus trace stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.318",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[3].notes",
+        "stored": "Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component [Merged 2 duplicates: 0.3, 0.018]"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.318",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[3].notes",
+        "stored": "Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component [Merged 2 duplicates: 0.3, 0.018]"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[8], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "CaCl 2 ·2H 2 O 0.3 g",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      },
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[30], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "CaCl 2 ·2H 2 O 0.018 g",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "Undo the sum of a main-batch addition and the full trace-stock recipe amount. Preserve both quantities at their own stages, with the separate 10 ml trace dose; do not add whole stock preparation quantities to final medium."
+  },
+  {
+    "decision_id": "q16",
+    "label": "H3BO3 cross-stage sum",
+    "decision": "correct",
+    "source_stage": "Main versus trace stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.042",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[8].notes",
+        "stored": "Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component [Merged 2 duplicates: 0.025, 0.017]"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.042",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[8].notes",
+        "stored": "Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component [Merged 2 duplicates: 0.025, 0.017]"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[12], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "H 3 BO 3 0.025 g",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      },
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[32], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "H 3 BO 3 0.017 g",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "Undo the sum of a main-batch addition and the full trace-stock recipe amount. Preserve both quantities at their own stages, with the separate 10 ml trace dose; do not add whole stock preparation quantities to final medium."
+  },
+  {
+    "decision_id": "q17",
+    "label": "Water representation in target",
+    "decision": "correct",
+    "source_stage": "Separate main, trace and vitamin waters",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "3.0",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[0].notes",
+        "stored": "Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component [Merged 3 duplicates: 1.0, 1.0, 1.0]"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[21], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Distilled water 1 L",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      },
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[38], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Distilled water 1 L",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      },
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[52], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Distilled water 1 L",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "The target 3 g/L and owner 1 g/L both misrepresent three distinct 1 L water entries: one main batch and two stock preparations. The owner’s duplicate repair does not authenticate the unit or collapse the stock identities."
+  },
+  {
+    "decision_id": "q18",
+    "label": "Water representation in owner",
+    "decision": "correct",
+    "source_stage": "Separate main, trace and vitamin waters",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1.0",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[0].notes",
+        "stored": "Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component [Collapsed 3 identical duplicates: 1.0, 1.0, 1.0]"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[21], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Distilled water 1 L",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      },
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[38], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Distilled water 1 L",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      },
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[52], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Distilled water 1 L",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "The target 3 g/L and owner 1 g/L both misrepresent three distinct 1 L water entries: one main batch and two stock preparations. The owner’s duplicate repair does not authenticate the unit or collapse the stock identities."
+  },
+  {
+    "decision_id": "q19",
+    "label": "Named NBRC stock addition",
+    "decision": "correct",
+    "source_stage": "Main stock addition",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "solutions[0].term",
+        "stored": {
+          "id": "mediadive.solution:6129",
+          "label": "Trace elements solution"
+        }
+      },
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "solutions[0].name",
+        "stored": "Unknown solution"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "solutions[0].term",
+        "stored": {
+          "id": "mediadive.solution:6129",
+          "label": "Trace elements solution"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "solutions[0].name",
+        "stored": "Unknown solution"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[16], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Trace elements solution* 10 ml",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "The source adds 10 ml of its locally defined NBRC stock, not 10 g/L of a namesake MediaDive stock. Retain the exact source-defined identity and dose; Unknown solution does not repair this mismatch."
+  },
+  {
+    "decision_id": "q20",
+    "label": "Named NBRC stock addition",
+    "decision": "correct",
+    "source_stage": "Main stock addition",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "solutions[1].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "solutions[1].term",
+        "stored": {
+          "id": "mediadive.solution:6241",
+          "label": "Vitamin solution"
+        }
+      },
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "solutions[1].name",
+        "stored": "Unknown solution"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "solutions[1].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "solutions[1].term",
+        "stored": {
+          "id": "mediadive.solution:6241",
+          "label": "Vitamin solution"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "solutions[1].name",
+        "stored": "Unknown solution"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[17], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Vitamin solution** 10 ml",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "The source adds 10 ml of its locally defined NBRC stock, not 10 g/L of a namesake MediaDive stock. Retain the exact source-defined identity and dose; Unknown solution does not repair this mismatch."
+  },
+  {
+    "decision_id": "q21",
+    "label": "Na2MoO4·2H2O trace-stock quantity",
+    "decision": "correct",
+    "source_stage": "NBRC trace stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.009",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.009",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[33], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Na 2 MoO 4 ·2H 2 O 0.009 g",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      },
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[38], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Distilled water 1 L",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "This is a trace-stock recipe amount with its own 1 L water, not a direct final-medium ingredient. Preserve mg where printed (tungstate, selenite and aluminium potassium sulfate), then represent only the 10 ml stock addition."
+  },
+  {
+    "decision_id": "q22",
+    "label": "MnCl2·4H2O trace-stock quantity",
+    "decision": "correct",
+    "source_stage": "NBRC trace stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.09",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.09",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[28], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "MnCl 2 ·4H 2 O 0.09 g",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      },
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[38], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Distilled water 1 L",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "This is a trace-stock recipe amount with its own 1 L water, not a direct final-medium ingredient. Preserve mg where printed (tungstate, selenite and aluminium potassium sulfate), then represent only the 10 ml stock addition."
+  },
+  {
+    "decision_id": "q23",
+    "label": "CoCl2·6H2O trace-stock quantity",
+    "decision": "correct",
+    "source_stage": "NBRC trace stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.15",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[29], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "CoCl 2 ·6H 2 O 0.15 g",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      },
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[38], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Distilled water 1 L",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "This is a trace-stock recipe amount with its own 1 L water, not a direct final-medium ingredient. Preserve mg where printed (tungstate, selenite and aluminium potassium sulfate), then represent only the 10 ml stock addition."
+  },
+  {
+    "decision_id": "q24",
+    "label": "NiCl2·6H2O trace-stock quantity",
+    "decision": "correct",
+    "source_stage": "NBRC trace stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.018",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.018",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[34], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "NiCl 2 ·6H 2 O 0.018 g",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      },
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[38], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Distilled water 1 L",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "This is a trace-stock recipe amount with its own 1 L water, not a direct final-medium ingredient. Preserve mg where printed (tungstate, selenite and aluminium potassium sulfate), then represent only the 10 ml stock addition."
+  },
+  {
+    "decision_id": "q25",
+    "label": "ZnCl2 trace-stock quantity",
+    "decision": "correct",
+    "source_stage": "NBRC trace stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.09",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.09",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[31], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "ZnCl 2 0.09 g",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      },
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[38], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Distilled water 1 L",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "This is a trace-stock recipe amount with its own 1 L water, not a direct final-medium ingredient. Preserve mg where printed (tungstate, selenite and aluminium potassium sulfate), then represent only the 10 ml stock addition."
+  },
+  {
+    "decision_id": "q26",
+    "label": "FeCl3·6H2O trace-stock quantity",
+    "decision": "correct",
+    "source_stage": "NBRC trace stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.36",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.36",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[27], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "FeCl 3 ·6H 2 O 0.36 g",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      },
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[38], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Distilled water 1 L",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "This is a trace-stock recipe amount with its own 1 L water, not a direct final-medium ingredient. Preserve mg where printed (tungstate, selenite and aluminium potassium sulfate), then represent only the 10 ml stock addition."
+  },
+  {
+    "decision_id": "q27",
+    "label": "Nitrilotriacetic acid (NTA) trace-stock quantity",
+    "decision": "correct",
+    "source_stage": "NBRC trace stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "4.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "4.1",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[26], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Nitrilotriacetic acid (NTA) 4.1 g",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      },
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[38], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Distilled water 1 L",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "This is a trace-stock recipe amount with its own 1 L water, not a direct final-medium ingredient. Preserve mg where printed (tungstate, selenite and aluminium potassium sulfate), then represent only the 10 ml stock addition."
+  },
+  {
+    "decision_id": "q28",
+    "label": "Na2WO4 trace-stock quantity",
+    "decision": "correct",
+    "source_stage": "NBRC trace stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "1.6",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "1.6",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[36], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Na 2 WO 4 1.6 mg",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      },
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[38], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Distilled water 1 L",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "This is a trace-stock recipe amount with its own 1 L water, not a direct final-medium ingredient. Preserve mg where printed (tungstate, selenite and aluminium potassium sulfate), then represent only the 10 ml stock addition."
+  },
+  {
+    "decision_id": "q29",
+    "label": "AlK(SO4)2 trace-stock quantity",
+    "decision": "correct",
+    "source_stage": "NBRC trace stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[37], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "AlK(SO 4 ) 2 5 mg",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      },
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[38], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Distilled water 1 L",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "This is a trace-stock recipe amount with its own 1 L water, not a direct final-medium ingredient. Preserve mg where printed (tungstate, selenite and aluminium potassium sulfate), then represent only the 10 ml stock addition."
+  },
+  {
+    "decision_id": "q30",
+    "label": "Na2SeO3 trace-stock quantity",
+    "decision": "correct",
+    "source_stage": "NBRC trace stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[28].concentration",
+        "stored": {
+          "value": "1.6",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[28].concentration",
+        "stored": {
+          "value": "1.6",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[35], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Na 2 SeO 3 1.6 mg",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      },
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[38], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Distilled water 1 L",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "This is a trace-stock recipe amount with its own 1 L water, not a direct final-medium ingredient. Preserve mg where printed (tungstate, selenite and aluminium potassium sulfate), then represent only the 10 ml stock addition."
+  },
+  {
+    "decision_id": "q31",
+    "label": "Biotin vitamin-stock amount",
+    "decision": "correct",
+    "source_stage": "NBRC vitamin stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[30].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[30].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[43], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Biotin 2 mg",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      },
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[52], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Distilled water 1 L",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "Preserve the source milligrams in the vitamin stock with its own 1 L water, followed by the separate 10 ml stock dose. Stored numeric G_PER_L values lose both the mg conversion and the stock stage."
+  },
+  {
+    "decision_id": "q32",
+    "label": "p-Aminobenzoic acid vitamin-stock amount",
+    "decision": "correct",
+    "source_stage": "NBRC vitamin stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[31].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[31].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[50], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "p -Aminobenzoic acid 1 mg",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      },
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[52], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Distilled water 1 L",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "Preserve the source milligrams in the vitamin stock with its own 1 L water, followed by the separate 10 ml stock dose. Stored numeric G_PER_L values lose both the mg conversion and the stock stage."
+  },
+  {
+    "decision_id": "q33",
+    "label": "Thiamine-HCl vitamin-stock amount",
+    "decision": "correct",
+    "source_stage": "NBRC vitamin stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[32].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[32].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[46], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Thiamine-HCl 5 mg",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      },
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[52], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Distilled water 1 L",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "Preserve the source milligrams in the vitamin stock with its own 1 L water, followed by the separate 10 ml stock dose. Stored numeric G_PER_L values lose both the mg conversion and the stock stage."
+  },
+  {
+    "decision_id": "q34",
+    "label": "Ca-pantothenate vitamin-stock amount",
+    "decision": "correct",
+    "source_stage": "NBRC vitamin stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[33].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[33].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[49], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Ca-pantothenate 5 mg",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      },
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[52], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Distilled water 1 L",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "Preserve the source milligrams in the vitamin stock with its own 1 L water, followed by the separate 10 ml stock dose. Stored numeric G_PER_L values lose both the mg conversion and the stock stage."
+  },
+  {
+    "decision_id": "q35",
+    "label": "Pyridoxine-HCl vitamin-stock amount",
+    "decision": "correct",
+    "source_stage": "NBRC vitamin stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[34].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[34].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[45], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Pyridoxine-HCl 10 mg",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      },
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[52], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Distilled water 1 L",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "Preserve the source milligrams in the vitamin stock with its own 1 L water, followed by the separate 10 ml stock dose. Stored numeric G_PER_L values lose both the mg conversion and the stock stage."
+  },
+  {
+    "decision_id": "q36",
+    "label": "Folic acid vitamin-stock amount",
+    "decision": "correct",
+    "source_stage": "NBRC vitamin stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[35].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[35].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[44], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Folic acid 2 mg",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      },
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[52], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Distilled water 1 L",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "Preserve the source milligrams in the vitamin stock with its own 1 L water, followed by the separate 10 ml stock dose. Stored numeric G_PER_L values lose both the mg conversion and the stock stage."
+  },
+  {
+    "decision_id": "q37",
+    "label": "Vitamin B12 vitamin-stock amount",
+    "decision": "correct",
+    "source_stage": "NBRC vitamin stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[36].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[36].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[51], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Vitamin B 12 0.01 mg",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      },
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[52], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Distilled water 1 L",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "Preserve the source milligrams in the vitamin stock with its own 1 L water, followed by the separate 10 ml stock dose. Stored numeric G_PER_L values lose both the mg conversion and the stock stage."
+  },
+  {
+    "decision_id": "q38",
+    "label": "Riboflavin vitamin-stock amount",
+    "decision": "correct",
+    "source_stage": "NBRC vitamin stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[37].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[37].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[47], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Riboflavin 5 mg",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      },
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[52], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Distilled water 1 L",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "Preserve the source milligrams in the vitamin stock with its own 1 L water, followed by the separate 10 ml stock dose. Stored numeric G_PER_L values lose both the mg conversion and the stock stage."
+  },
+  {
+    "decision_id": "q39",
+    "label": "Nicotinic acid vitamin-stock amount",
+    "decision": "correct",
+    "source_stage": "NBRC vitamin stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[38].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[38].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[48], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Nicotinic acid 5 mg",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      },
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[52], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Distilled water 1 L",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "Preserve the source milligrams in the vitamin stock with its own 1 L water, followed by the separate 10 ml stock dose. Stored numeric G_PER_L values lose both the mg conversion and the stock stage."
+  },
+  {
+    "decision_id": "q40",
+    "label": "H2SO4",
+    "decision": "not_quantified",
+    "source_stage": "Main H2SO4 titration",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[23], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Mix ingredients except for vitamin, sulfur and Na 2 S·9H 2 O, adjust pH to 7 with H 2 SO 4 , and autoclave under a N 2 atmosphere. Sulfur is separately sterilized by autoclaving for 60 min at 105°C on each of 3 successive days. Separately autoclave Na 2 S·9H 2 O as 5% solution under a N 2 atmosphere. Anaerobically add filter-sterile vitamin, sulfur and Na 2 S·9H 2 O.",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "The source does not give an addition amount or concentration for this reagent/gas. Retain its exact preparation role without inventing titrant strength, gas percentage or flow. "
+  },
+  {
+    "decision_id": "q41",
+    "label": "N2",
+    "decision": "not_quantified",
+    "source_stage": "Main and sulfide nitrogen atmosphere",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[23], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Mix ingredients except for vitamin, sulfur and Na 2 S·9H 2 O, adjust pH to 7 with H 2 SO 4 , and autoclave under a N 2 atmosphere. Sulfur is separately sterilized by autoclaving for 60 min at 105°C on each of 3 successive days. Separately autoclave Na 2 S·9H 2 O as 5% solution under a N 2 atmosphere. Anaerobically add filter-sterile vitamin, sulfur and Na 2 S·9H 2 O.",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "The source does not give an addition amount or concentration for this reagent/gas. Retain its exact preparation role without inventing titrant strength, gas percentage or flow. "
+  },
+  {
+    "decision_id": "q42",
+    "label": "NaOH",
+    "decision": "not_quantified",
+    "source_stage": "Trace-stock NaOH titration",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "ingredients[29].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "ingredients[29].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[40], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "First dissolve nitrilotriacetic acid and adjust pH to 6.5 with NaOH, and then add other minerals. Final pH 7.0.",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "The source does not give an addition amount or concentration for this reagent/gas. Retain its exact preparation role without inventing titrant strength, gas percentage or flow. "
+  },
+  {
+    "decision_id": "q43",
+    "label": "Main pH and separate additions",
+    "decision": "add",
+    "source_stage": "Source-specific preparation",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "presence": "absent"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "presence": "absent"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[23], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Mix ingredients except for vitamin, sulfur and Na 2 S·9H 2 O, adjust pH to 7 with H 2 SO 4 , and autoclave under a N 2 atmosphere. Sulfur is separately sterilized by autoclaving for 60 min at 105°C on each of 3 successive days. Separately autoclave Na 2 S·9H 2 O as 5% solution under a N 2 atmosphere. Anaerobically add filter-sterile vitamin, sulfur and Na 2 S·9H 2 O.",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "Restore main pH 7 with H2SO4, main autoclaving under N2 excluding vitamins/sulfur/sulfide, and anaerobic separate additions."
+  },
+  {
+    "decision_id": "q44",
+    "label": "Sulfur sterilization",
+    "decision": "add",
+    "source_stage": "Source-specific preparation",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "presence": "absent"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "presence": "absent"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[23], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Mix ingredients except for vitamin, sulfur and Na 2 S·9H 2 O, adjust pH to 7 with H 2 SO 4 , and autoclave under a N 2 atmosphere. Sulfur is separately sterilized by autoclaving for 60 min at 105°C on each of 3 successive days. Separately autoclave Na 2 S·9H 2 O as 5% solution under a N 2 atmosphere. Anaerobically add filter-sterile vitamin, sulfur and Na 2 S·9H 2 O.",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "Preserve 60 minutes at 105°C on each of three successive days, specifically for sulfur."
+  },
+  {
+    "decision_id": "q45",
+    "label": "Sulfide stock strength",
+    "decision": "add",
+    "source_stage": "Source-specific preparation",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "presence": "absent"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "presence": "absent"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[23], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Mix ingredients except for vitamin, sulfur and Na 2 S·9H 2 O, adjust pH to 7 with H 2 SO 4 , and autoclave under a N 2 atmosphere. Sulfur is separately sterilized by autoclaving for 60 min at 105°C on each of 3 successive days. Separately autoclave Na 2 S·9H 2 O as 5% solution under a N 2 atmosphere. Anaerobically add filter-sterile vitamin, sulfur and Na 2 S·9H 2 O.",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "Preserve the printed 5% solution and separate autoclaving under N2. Its percent basis and resulting dose volume are not supplied; do not assert w/v or calculate a dose from an assumed basis."
+  },
+  {
+    "decision_id": "q46",
+    "label": "Trace pH sequence",
+    "decision": "add",
+    "source_stage": "Source-specific preparation",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AS_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "presence": "absent"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/as_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "presence": "absent"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[40], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "First dissolve nitrilotriacetic acid and adjust pH to 6.5 with NaOH, and then add other minerals. Final pH 7.0.",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "Dissolve NTA first, adjust to pH 6.5 with NaOH, add the remaining minerals, then adjust stock to pH 7.0. Neither is a growth optimum."
+  },
+  {
+    "decision_id": "q47",
+    "label": "Main final-volume and unspecified cycle limits",
+    "decision": "not_quantified",
+    "source_stage": "Main medium source limits",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[21], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Distilled water 1 L",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      },
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[16], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Trace elements solution* 10 ml",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      },
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[17], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Vitamin solution** 10 ml",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      },
+      {
+        "source_key": "nbrc1049",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049",
+        "source_locator": "NBRC1049 document table row[23], parsed text; source stage explicitly named in decision",
+        "exact_source_quote": "Mix ingredients except for vitamin, sulfur and Na 2 S·9H 2 O, adjust pH to 7 with H 2 SO 4 , and autoclave under a N 2 atmosphere. Sulfur is separately sterilized by autoclaving for 60 min at 105°C on each of 3 successive days. Separately autoclave Na 2 S·9H 2 O as 5% solution under a N 2 atmosphere. Anaerobically add filter-sterile vitamin, sulfur and Na 2 S·9H 2 O.",
+        "snapshot_sha256": "18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05",
+        "parsed_text_sha256": "964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8"
+      }
+    ],
+    "interpretation": "The main recipe has 1 L water plus two 10 ml stocks, but no measured final-volume declaration. Main and sulfide autoclave temperature/duration are not supplied; the separate sulfur schedule cannot fill those gaps."
+  },
+  {
+    "decision_id": "q48",
+    "label": "6241 dependency Cyanocobalamine",
+    "decision": "verified",
+    "source_stage": "Asserted 6241 identity context only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/mediadive_6241_Vitamin_solution.yaml",
+        "field_path": "composition[0].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "solution6241",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/6241",
+        "source_locator": "$.data.recipe[0]",
+        "exact_source_quote": "{\n                \"recipe_order\": 2,\n                \"compound\": \"Cyanocobalamine\",\n                \"compound_id\": 847,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 10,\n                \"unit\": \"mg\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.073779,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1"
+      }
+    ],
+    "interpretation": "Existing attached stock-only evidence matches exact source bytes and 0.1 g/L within the declared 100 ml stock. This does not verify the target or establish NBRC equivalence."
+  },
+  {
+    "decision_id": "q49",
+    "label": "6241 dependency Thiamine HCl",
+    "decision": "verified",
+    "source_stage": "Asserted 6241 identity context only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/mediadive_6241_Vitamin_solution.yaml",
+        "field_path": "composition[1].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "solution6241",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/6241",
+        "source_locator": "$.data.recipe[1]",
+        "exact_source_quote": "{\n                \"recipe_order\": 3,\n                \"compound\": \"Thiamine HCl\",\n                \"compound_id\": 1207,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 10,\n                \"unit\": \"mg\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.296472,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1"
+      }
+    ],
+    "interpretation": "Existing attached stock-only evidence matches exact source bytes and 0.1 g/L within the declared 100 ml stock. This does not verify the target or establish NBRC equivalence."
+  },
+  {
+    "decision_id": "q50",
+    "label": "6241 dependency Biotin",
+    "decision": "correct",
+    "source_stage": "Asserted 6241 identity context only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/mediadive_6241_Vitamin_solution.yaml",
+        "field_path": "composition[2].concentration",
+        "stored": {
+          "value": "2000.0",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "solution6241",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/6241",
+        "source_locator": "$.data.recipe[2]",
+        "exact_source_quote": "{\n                \"recipe_order\": 4,\n                \"compound\": \"Biotin\",\n                \"compound_id\": 46,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 200,\n                \"unit\": \"\\u03bcg\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1"
+      }
+    ],
+    "interpretation": "The unrelated stock itself contains a 200 µg biotin amount or 100 ml water make-up, not its stored 2000 g/L biotin or 1000 percent water. This bounded dependency observation must not be transferred into NBRC1049."
+  },
+  {
+    "decision_id": "q51",
+    "label": "6241 dependency Distilled water",
+    "decision": "correct",
+    "source_stage": "Asserted 6241 identity context only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/mediadive_6241_Vitamin_solution.yaml",
+        "field_path": "composition[3].concentration",
+        "stored": {
+          "value": "1000.0",
+          "unit": "PERCENT_V_V"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "solution6241",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/6241",
+        "source_locator": "$.data.recipe[3]",
+        "exact_source_quote": "{\n                \"recipe_order\": 5,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 100,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1"
+      }
+    ],
+    "interpretation": "The unrelated stock itself contains a 200 µg biotin amount or 100 ml water make-up, not its stored 2000 g/L biotin or 1000 percent water. This bounded dependency observation must not be transferred into NBRC1049."
+  },
+  {
+    "decision_id": "q52",
+    "label": "6241 stock make-up",
+    "decision": "evidence_only",
+    "source_stage": "6241 context only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/mediadive_6241_Vitamin_solution.yaml",
+        "field_path": "preparation_notes",
+        "stored": "Make up to 100 ml with distilled water.\n\nOriginal volume: 100 mL"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "solution6241",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/6241",
+        "source_locator": "$.data.steps[0]",
+        "exact_source_quote": "{\n                \"recipe_order\": null,\n                \"step\": \"Make up to 100 ml with distilled water.\"\n            }",
+        "snapshot_sha256": "d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1"
+      }
+    ],
+    "interpretation": "Existing 100 ml stock make-up agrees with this unrelated stock’s source. No target claim or NBRC stock equivalence is established."
+  }
+]
+
+## Findings
+
+### f1: Main and stock quantities are combined with incorrect units
+
+blocker / open / confirmed; issue key: cm008388-stage-units.
+
+Main water, two stock waters, calcium and boron are collapsed across distinct stages. Stock ingredients remain flat; resazurin, three trace constituents and all vitamins retain mg numbers as G_PER_L. Both 10 ml doses are stored as 10 G_PER_L.
+
+### f2: Both named stock references select different formulations
+
+major / open / confirmed; issue key: cm008388-stock-identity.
+
+MediaDive6129 and6241 are namesakes with different component sets and quantities. Exact6241 source and full local6129 context refute using them as the NBRC-defined stocks; missing6129 raw does not justify substitution.
+
+### f3: Stage-specific pH and sterilization are missing
+
+major / open / confirmed; issue key: cm008388-preparation.
+
+Both layers omit main pH7, separate sulfur105°C/60min/three-day treatment, unqualified5% sulfide stock, anaerobic additions and trace pH6.5→7 sequence.
+
+### f4: Two hydrate forms and calcium-pantothenate identity are mismatched
+
+major / open / confirmed; issue key: cm008388-forms.
+
+The source hexahydrates have anhydrous cobalt/nickel chloride identifiers. The source calcium salt has a pantothenate anion identifier and unverified R specificity.
+
+### f5: Current secondary mapping gap and historical provenance are distinct
+
+minor / open / confirmed; issue key: cm008388-evidence.
+
+The current pinned MIM lookup is complete and has no CHEBI:29032 row; the ontology term itself exists. Legacy001072 historical correspondence remains unavailable. Target/owner quantity claims lack attached source evidence; dependency claims cannot supply it.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Reconstruct source main and stock formulations with original units, dose relationships and explicit unresolved final-volume basis; repair the maintained owner before generated output.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Replace or qualify the crosslinks using exact source-defined stock identity, without modifying the unrelated stock records as part of this review.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Add exact scoped preparation, preserve missing cycle parameters and percent-basis limits, and avoid importing parent/default conditions.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Reconcile exact salt/hydrate forms using verified terms; do not infer replacements from label-index matches alone.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a5
+
+Document the current mapping gap separately from historical unavailability and attach exact primary source claims after authorized curation.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/AS_medium.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/as_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/AS_medium.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/AS_medium.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch032/319/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-032/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch032/319/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/AS_medium.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/AS_medium.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/AS_medium.yaml:1:id: CultureMech:008388<br>./data/normalized_yaml/bacterial/as_medium.yaml:1:id: CultureMech:008388<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch032/source-preflight-bound/319/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 48 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| primary | https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049; Complete exact NBRC medium1049: main, trace, vitamins and preparation | supports | The primary directly specifies all three stages and original units. |
+| provider | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1817; $.meta; all three components and comments | supports | Original TOGO endpoint independently identifies NBRC1049. Its main, trace and vitamin component sections are separate; no final measured volume is declared. |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:15377 resolves to water. Stored labels: ['water']. Exact label correspondence is separate from source chemical-form support. |
+| chebi15940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:15940 resolves to nicotinic acid. Stored labels: ['nicotinic acid']. Exact label correspondence is separate from source chemical-form support. |
+| chebi15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:15956 resolves to biotin. Stored labels: ['biotin']. Exact label correspondence is separate from source chemical-form support. |
+| chebi17015 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:17015 resolves to riboflavin. Stored labels: ['riboflavin']. Exact label correspondence is separate from source chemical-form support. |
+| chebi176843 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:176843 resolves to vitamin B12. Stored labels: ['vitamin B12']. Exact label correspondence is separate from source chemical-form support. |
+| chebi17997 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17997; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:17997 resolves to dinitrogen. Stored labels: ['dinitrogen']. Exact label correspondence is separate from source chemical-form support. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:26710 resolves to sodium chloride. Stored labels: ['sodium chloride']. Exact label correspondence is separate from source chemical-form support. |
+| chebi26836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26836; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:26836 resolves to sulfuric acid. Stored labels: ['sulfuric acid']. Exact label correspondence is separate from source chemical-form support. |
+| chebi27470 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:27470 resolves to folic acid. Stored labels: ['folic acid']. Exact label correspondence is separate from source chemical-form support. |
+| chebi29032 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29032; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:29032 resolves to (R)-pantothenate. Stored labels: ['(R)-pantothenate']. Exact label correspondence is separate from source chemical-form support. |
+| chebi30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:30753 resolves to 4-aminobenzoic acid. Stored labels: ['4-aminobenzoic acid']. Exact label correspondence is separate from source chemical-form support. |
+| chebi30961 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:30961 resolves to pyridoxine hydrochloride. Stored labels: ['pyridoxine hydrochloride']. Exact label correspondence is separate from source chemical-form support. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate. Stored labels: ['magnesium sulfate heptahydrate']. Exact label correspondence is separate from source chemical-form support. |
+| chebi32145 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32145; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:32145 resolves to sodium hydroxide. Stored labels: ['sodium hydroxide']. Exact label correspondence is separate from source chemical-form support. |
+| chebi32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:32588 resolves to potassium chloride. Stored labels: ['potassium chloride']. Exact label correspondence is separate from source chemical-form support. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:33118 resolves to boric acid. Stored labels: ['boric acid']. Exact label correspondence is separate from source chemical-form support. |
+| chebi33403 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33403; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:33403 resolves to elemental sulfur. Stored labels: ['elemental sulfur']. Exact label correspondence is separate from source chemical-form support. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:34887 resolves to nickel dichloride. Stored labels: ['nickel dichloride']. Exact label correspondence is separate from source chemical-form support. |
+| chebi35696 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_35696; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:35696 resolves to cobalt dichloride. Stored labels: ['cobalt dichloride']. Exact label correspondence is separate from source chemical-form support. |
+| chebi36385 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_36385; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:36385 resolves to strontium dichloride hexahydrate. Stored labels: ['strontium dichloride hexahydrate']. Exact label correspondence is separate from source chemical-form support. |
+| chebi44557 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_44557; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:44557 resolves to nitrilotriacetic acid. Stored labels: ['nitrilotriacetic acid']. Exact label correspondence is separate from source chemical-form support. |
+| chebi48843 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_48843; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:48843 resolves to disodium selenite. Stored labels: ['disodium selenite']. Exact label correspondence is separate from source chemical-form support. |
+| chebi49105 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:49105 resolves to thiamine hydrochloride. Stored labels: ['thiamine hydrochloride']. Exact label correspondence is separate from source chemical-form support. |
+| chebi49976 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:49976 resolves to zinc dichloride. Stored labels: ['zinc dichloride']. Exact label correspondence is separate from source chemical-form support. |
+| chebi62946 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:62946 resolves to ammonium sulfate. Stored labels: ['ammonium sulfate']. Exact label correspondence is separate from source chemical-form support. |
+| chebi63004 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63004; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:63004 resolves to sodium bromide. Stored labels: ['sodium bromide']. Exact label correspondence is separate from source chemical-form support. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:63036 resolves to potassium dihydrogen phosphate. Stored labels: ['potassium dihydrogen phosphate']. Exact label correspondence is separate from source chemical-form support. |
+| chebi63940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63940; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:63940 resolves to sodium tungstate. Stored labels: ['sodium tungstate']. Exact label correspondence is separate from source chemical-form support. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:75213 resolves to sodium molybdate dihydrate. Stored labels: ['sodium molybdate dihydrate']. Exact label correspondence is separate from source chemical-form support. |
+| chebi76209 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:76209 resolves to sodium sulfide nonahydrate. Stored labels: ['sodium sulfide nonahydrate']. Exact label correspondence is separate from source chemical-form support. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:86158 resolves to calcium chloride dihydrate. Stored labels: ['calcium chloride dihydrate']. Exact label correspondence is separate from source chemical-form support. |
+| chebi86254 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86254; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:86254 resolves to iron trichloride hexahydrate. Stored labels: ['iron trichloride hexahydrate']. Exact label correspondence is separate from source chemical-form support. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:86345 resolves to magnesium dichloride hexahydrate. Stored labels: ['magnesium dichloride hexahydrate']. Exact label correspondence is separate from source chemical-form support. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Stored labels: ['manganese(II) chloride tetrahydrate']. Exact label correspondence is separate from source chemical-form support. |
+| chebi86463 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86463; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:86463 resolves to potassium aluminium sulfate. Stored labels: ['potassium aluminium sulfate']. Exact label correspondence is separate from source chemical-form support. |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:8806 resolves to Resazurin. Stored labels: ['Resazurin']. Exact label correspondence is separate from source chemical-form support. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Entire pinned index exact identifier lookup; adjacent snapshot metadata | context_only | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "rows": {"CHEBI:15377": [{"label": "Distilled water", "match_type": "preferred_term", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15940": [{"label": "Nicotinic acid", "match_type": "preferred_term", "identifier": "CHEBI:15940", "preferred_term": "Nicotinic acid", "ontology_id": "CHEBI:15940", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15956": [{"label": "Biotin", "match_type": "preferred_term", "identifier": "CHEBI:15956", "preferred_term": "Biotin", "ontology_id": "CHEBI:15956", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17015": [{"label": "Riboflavin", "match_type": "preferred_term", "identifier": "CHEBI:17015", "preferred_term": "Riboflavin", "ontology_id": "CHEBI:17015", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:176843": [{"label": "Vitamin B12", "match_type": "preferred_term", "identifier": "CHEBI:176843", "preferred_term": "Vitamin B12", "ontology_id": "CHEBI:176843", "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26836": [{"label": "H2SO4", "match_type": "preferred_term", "identifier": "CHEBI:26836", "preferred_term": "H2SO4", "ontology_id": "CHEBI:26836", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:27470": [{"label": "Folic acid", "match_type": "preferred_term", "identifier": "CHEBI:27470", "preferred_term": "Folic acid", "ontology_id": "CHEBI:27470", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:29032": [], "CHEBI:30753": [{"label": "p-Aminobenzoic acid", "match_type": "preferred_term", "identifier": "CHEBI:30753", "preferred_term": "p-Aminobenzoic acid", "ontology_id": "CHEBI:30753", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:30961": [{"label": "Pyridoxine hydrochloride", "match_type": "preferred_term", "identifier": "CHEBI:30961", "preferred_term": "Pyridoxine hydrochloride", "ontology_id": "CHEBI:30961", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4\u00b7H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4\u00b7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32145": [{"label": "NaOH", "match_type": "preferred_term", "identifier": "CHEBI:32145", "preferred_term": "NaOH", "ontology_id": "CHEBI:32145", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32588": [{"label": "KCl", "match_type": "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:34887": [{"label": "NiCl2", "match_type": "preferred_term", "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:36385": [{"label": "SrCl2 x 6 H2O", "match_type": "preferred_term", "identifier": "CHEBI:36385", "preferred_term": "SrCl2 x 6 H2O", "ontology_id": "CHEBI:36385", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:44557": [{"label": "Nitrilotriacetic acid", "match_type": "preferred_term", "identifier": "CHEBI:44557", "preferred_term": "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:48843": [{"label": "Na2SeO3", "match_type": "preferred_term", "identifier": "CHEBI:48843", "preferred_term": "Na2SeO3", "ontology_id": "CHEBI:48843", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:49105": [{"label": "Thiamine HCl", "match_type": "preferred_term", "identifier": "CHEBI:49105", "preferred_term": "Thiamine HCl", "ontology_id": "CHEBI:49105", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:49976": [{"label": "ZnCl2", "match_type": "preferred_term", "identifier": "CHEBI:49976", "preferred_term": "ZnCl2", "ontology_id": "CHEBI:49976", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:62946": [{"label": "(NH4)2SO4", "match_type": "preferred_term", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63004": [{"label": "NaBr", "match_type": "preferred_term", "identifier": "CHEBI:63004", "preferred_term": "NaBr", "ontology_id": "CHEBI:63004", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63940": [{"label": "Na2WO4", "match_type": "preferred_term", "identifier": "CHEBI:63940", "preferred_term": "Na2WO4", "ontology_id": "CHEBI:63940", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:76209": [{"label": "Na2S x 9 H2O", "match_type": "preferred_term", "identifier": "CHEBI:76209", "preferred_term": "Na2S x 9 H2O", "ontology_id": "CHEBI:76209", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86254": [{"label": "FeCl3 x 6 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86254", "preferred_term": "FeCl3 x 6 H2O", "ontology_id": "CHEBI:86254", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86345": [{"label": "Magnesium chloride", "match_type": "preferred_term", "identifier": "CHEBI:86345", "preferred_term": "Magnesium chloride", "ontology_id": "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgCl2 x 6 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86345", "preferred_term": "MgCl2 x 6 H2O", "ontology_id": "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86463": [{"label": "AlK(SO4)2", "match_type": "preferred_term", "identifier": "CHEBI:86463", "preferred_term": "AlK(SO4)2", "ontology_id": "CHEBI:86463", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:8806": [{"label": "Resazurin", "match_type": "preferred_term", "identifier": "CHEBI:8806", "preferred_term": "Resazurin", "ontology_id": "CHEBI:8806", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, "missing_current_keys": ["CHEBI:29032"]} |
+| history-metadata | data/merge_yaml/merged/AS_medium.yaml; data/normalized_yaml/bacterial/as_medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 16, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/as_medium.yaml", "events": 16, "timestamp_issues": []}] |
+| mimPinnedCatalog | https://raw.githubusercontent.com/CultureBotAI/MediaIngredientMech/6643131b0f12ab40b66f98135245fca04027e0e9/docs/data/all_ingredients.json; Complete pinned current catalogue/tree searched for exact legacy identifier | supports | MediaIngredientMech:001072 has no exact current row/path. This is a completed bounded current lookup, not evidence about historical identity. |
+| mimPinnedTree | https://api.github.com/repos/CultureBotAI/MediaIngredientMech/git/trees/6643131b0f12ab40b66f98135245fca04027e0e9?recursive=1; Complete pinned current catalogue/tree searched for exact legacy identifier | supports | MediaIngredientMech:001072 has no exact current row/path. This is a completed bounded current lookup, not evidence about historical identity. |
+| legacy-lookup | /private/tmp/culturemech-review-work-batch032/source-preflight-bound/319/evidence-context-original.json; Exact legacy lookup, full current catalogue and untruncated tree; current index all rows | context_only | {"identifier": "MediaIngredientMech:001072", "lookup_status": "completed_current_snapshot_lookup", "index_rows": [], "catalog_rows": 2953, "catalog_matches": [], "tree_entries": 7384, "tree_path_matches": [], "tree_truncated": false, "catalog_sha256": "474ff60bd51606ef6e272b8b22d421bbe51d9f78567a114f94e59d04fe51acc7", "tree_sha256": "71721421c6e8100b080d4ee3140f6e0bb4bcd21b57964ceeb61399ca4a2844ec", "limit": "Completed current lookup is distinct from unavailable historical correspondence; no validity or replacement inferred."} |
+| writer-0 | src/culturemech/merge/formulation.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current TOGO stage-aware import, solution matching, duplicate cleanup and merge code read. Numeric duplicate repair changes water 3 to 1 only, not its unit or stock-stage identity; current code is not proof of historical execution. |
+| writer-1 | scripts/cleanup_media_quality.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current TOGO stage-aware import, solution matching, duplicate cleanup and merge code read. Numeric duplicate repair changes water 3 to 1 only, not its unit or stock-stage identity; current code is not proof of historical execution. |
+| writer-2 | src/culturemech/import/mediadive_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current TOGO stage-aware import, solution matching, duplicate cleanup and merge code read. Numeric duplicate repair changes water 3 to 1 only, not its unit or stock-stage identity; current code is not proof of historical execution. |
+| writer-3 | src/culturemech/import/togo_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current TOGO stage-aware import, solution matching, duplicate cleanup and merge code read. Numeric duplicate repair changes water 3 to 1 only, not its unit or stock-stage identity; current code is not proof of historical execution. |
+| writer-4 | scripts/migrate_solutions_from_ingredients.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current TOGO stage-aware import, solution matching, duplicate cleanup and merge code read. Numeric duplicate repair changes water 3 to 1 only, not its unit or stock-stage identity; current code is not proof of historical execution. |
+| dep-6129 | data/normalized_yaml/bacterial/mediadive_6129_Trace_elements_solution.yaml; Full stock identity, composition, evidence, preparation, references and history | context_only | Asserted dependency inspected separately from the target; no stock evidence is inherited by the medium. |
+| dep-6241 | data/normalized_yaml/bacterial/mediadive_6241_Vitamin_solution.yaml; Full stock identity, composition, evidence, preparation, references and history | context_only | Asserted dependency inspected separately from the target; no stock evidence is inherited by the medium. |
+| stock6241 | https://mediadive.dsmz.de/rest/solution/6241; $.data complete stock response | supports | Exact stock6241 has 100 ml basis, cyanocobalamin, thiamine HCl and biotin. It differs from the nine-vitamin NBRC1049 stock. |
+| historical6129 | reports/ingredient_concentration_curation/20261007-mediadive-solutions-4500-4770/records/bacterial/mediadive_6129_Trace_elements_solution.yaml.md; Five exact decoded derivative rows; original response SHA 4ee096d7… not recovered | context_only | All five attached local claims match their pinned derivative report after decoding line breaks. This does not authenticate the missing historical original response or NBRC stock correspondence. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch032/319/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| solution6129-attempt | https://mediadive.dsmz.de/rest/solution/6129; Preserved exact public retrieval result | context_only | The exact current6129 endpoint returned503, and an ignored-inclusive source search recovered derivative reports but not the cited historical raw response. Five attached stock-context claims are locally consistent but cannot be authenticated as historical original bytes. This unresolved asserted dependency contributes to partial coverage. |
+| togoM1817-attempt | https://mediumapi.dbcls.jp/medium/M1817; Preserved exact public retrieval result | context_only | The alternate TOGO API endpoint failed DNS; the original TOGO endpoint and exact NBRC1049 primary both succeeded. The preserved failed request does not imply absent source content. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Historical correspondence of asserted MediaIngredientMech:001072 remains unavailable. A current-index miss does not prove original validity, invalidity or a replacement mapping.
+- The exact current6129 endpoint returned503, and an ignored-inclusive source search recovered derivative reports but not the cited historical raw response. Five attached stock-context claims are locally consistent but cannot be authenticated as historical original bytes. This unresolved asserted dependency contributes to partial coverage.
+- The alternate TOGO API endpoint failed DNS; the original TOGO endpoint and exact NBRC1049 primary both succeeded. The preserved failed request does not imply absent source content.
+- Full source quantities are preserved by batch and stock stage; source water inputs do not establish measured final volume. Sulfide 5% basis, gas flow/percentage and unspecified main autoclave parameters remain unknown. No unrelated stock evidence is inherited by the medium.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T180351Z-culturemech-008388-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: as_medium (CultureMech:008388)'
+started_at: '2026-10-21T17:54:29Z'
+finished_at: '2026-10-21T18:03:51Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: NBRC 1049 and TOGO M1817 identify AS medium, but main, trace and vitamin
+  stages are flattened, milligrams and liquid doses are misrepresented, and calcium/boron/water
+  were combined across stages. Both asserted stock links identify different recipes.
+  The owner only repaired one water duplicate value; its unit and source scope remain
+  wrong. Required historical sulfur MIM correspondence and original 6129 evidence
+  remain unavailable, making this review partial.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/AS_medium.yaml
+    sha256: b8666560632857b6bc692d2cd203f51d14173cee5821017123142f447afb895f
+    role: target
+  - path: data/normalized_yaml/bacterial/as_medium.yaml
+    sha256: 32f6cd9ceb9d74ef376bab342f898257b1e6e836bb9658b9e338d60c189d4ff1
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_6129_Trace_elements_solution.yaml
+    sha256: f8dc196d75f0176cd99b8125f6ca3f9d8377422a189e6808d16c04340109cd05
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_6241_Vitamin_solution.yaml
+    sha256: 993f6c076ae708ef824e3637f0b5a8eb9afb742877a80f5c6dc445c376efc43f
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-solutions-4500-4770/plan.json
+    sha256: 2679e61f2f0f09cc4becc645dea566cd0c93feb1b0d7f13d7e197411d2051cd3
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-solutions-4500-4770/records/bacterial/mediadive_6129_Trace_elements_solution.yaml.md
+    sha256: 6329f7f95876e28ae96ba1f6856876696b1d82132fa11b2368d1b84535ec16d3
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/convert/togo_raw_yaml.py
+    sha256: ce5e73545c9ecde54724259d2fd475676c0f3cb44dcfd283950e89fd49c10993
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/fetch/togo_fetcher.py
+    sha256: 7aac40fe1d47e30810ae0be02f6e369ddb9bf657d630072595c62f46fb0bf339
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 319; batch 032 item 9 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirty-one task batches
+    contain 310 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 313 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:008388
+targets:
+- target_id: CultureMech:008388
+  path: data/merge_yaml/merged/AS_medium.yaml
+  label: as_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/as_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/AS_medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:008388
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/AS_medium.yaml --workers 1
+    --out /private/tmp/culturemech-review-work-batch032/319/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-032/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch032/319/strict.tsv"
+  target_ids:
+  - CultureMech:008388
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/AS_medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:008388
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/AS_medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:008388
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:008388
+- check_id: legacy-historical-correspondence
+  name: Historical identity of asserted MediaIngredientMech:001072
+  required: true
+  status: unavailable
+  summary: Current bounded lookup completed with no exact row. Original historical
+    identity/correspondence was not recovered; primary chemical identity is a separate
+    claim.
+  target_ids:
+  - CultureMech:008388
+  evidence_ids:
+  - legacy-lookup
+  - mimPinnedCatalog
+  - mimPinnedTree
+- check_id: solution6129-source-access
+  name: 'Exact source content access: solution6129'
+  required: true
+  status: unavailable
+  summary: The exact current6129 endpoint returned503, and an ignored-inclusive source
+    search recovered derivative reports but not the cited historical raw response.
+    Five attached stock-context claims are locally consistent but cannot be authenticated
+    as historical original bytes. This unresolved asserted dependency contributes
+    to partial coverage.
+  target_ids:
+  - CultureMech:008388
+  evidence_ids:
+  - solution6129-attempt
+- check_id: togoM1817-source-access
+  name: 'Exact source content access: togoM1817'
+  required: false
+  status: unavailable
+  summary: The alternate TOGO API endpoint failed DNS; the original TOGO endpoint
+    and exact NBRC1049 primary both succeeded. The preserved failed request does not
+    imply absent source content.
+  target_ids:
+  - CultureMech:008388
+  evidence_ids:
+  - togoM1817-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/AS_medium.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T18:03:49Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/as_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T18:03:49Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/AS_medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:55:29.736727Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/AS_medium.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch032/319/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:55:30.926381Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-032/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch032/319/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/AS_medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:55:32.113615Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/AS_medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:55:32.973320Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T18:03:49Z'
+  support: supports
+  summary: './data/merge_yaml/merged/AS_medium.yaml:1:id: CultureMech:008388
+
+    ./data/normalized_yaml/bacterial/as_medium.yaml:1:id: CultureMech:008388
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch032/source-preflight-bound/319/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T18:03:49Z'
+  support: supports
+  summary: 48 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 894800da1898c1a8f716ce1c84fdd4e454e2e6f28125bcd82ceedcfd7145b851
+- evidence_id: primary
+  kind: database
+  reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049
+  locator: 'Complete exact NBRC medium1049: main, trace, vitamins and preparation'
+  accessed_at: '2026-10-21T17:38:22.039628Z'
+  support: supports
+  summary: The primary directly specifies all three stages and original units.
+  quote: Medium No. 1049 Medium AS medium
+  snapshot_sha256: 18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05
+- evidence_id: provider
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1817
+  locator: $.meta; all three components and comments
+  accessed_at: '2026-10-21T17:38:19.999877Z'
+  support: supports
+  summary: Original TOGO endpoint independently identifies NBRC1049. Its main, trace
+    and vitamin component sections are separate; no final measured volume is declared.
+  snapshot_sha256: f1c83defa4c683267d175a4c73133ced0e7551b9af7ff1f99353b3488055fdca
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:26.097802Z'
+  support: supports
+  summary: 'CHEBI:15377 resolves to water. Stored labels: [''water'']. Exact label
+    correspondence is separate from source chemical-form support.'
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi15940
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-20T06:55:11.874279Z'
+  support: supports
+  summary: 'CHEBI:15940 resolves to nicotinic acid. Stored labels: [''nicotinic acid''].
+    Exact label correspondence is separate from source chemical-form support.'
+  snapshot_sha256: 3330ed782e73526a087fb250ed5895ff232f117a896d45d541dff431e5c1f0e1
+- evidence_id: chebi15956
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:42:30.425993Z'
+  support: supports
+  summary: 'CHEBI:15956 resolves to biotin. Stored labels: [''biotin'']. Exact label
+    correspondence is separate from source chemical-form support.'
+  snapshot_sha256: d2d51887df4de92642b66e9d15086ef82eccbc476dd4077d514ca709181ab4bd
+- evidence_id: chebi17015
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-20T06:55:11.583596Z'
+  support: supports
+  summary: 'CHEBI:17015 resolves to riboflavin. Stored labels: [''riboflavin'']. Exact
+    label correspondence is separate from source chemical-form support.'
+  snapshot_sha256: f42bc5bbd29b208bfd3062acb11dfa63ccebf81f77ffd72ab596de863cb68aa4
+- evidence_id: chebi176843
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:26.997779Z'
+  support: supports
+  summary: 'CHEBI:176843 resolves to vitamin B12. Stored labels: [''vitamin B12''].
+    Exact label correspondence is separate from source chemical-form support.'
+  snapshot_sha256: b535c3de88f47e93aed8909c58ff4e2d054a6845dea3bc9a048c18df12b371a9
+- evidence_id: chebi17997
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17997
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:27.385647Z'
+  support: supports
+  summary: 'CHEBI:17997 resolves to dinitrogen. Stored labels: [''dinitrogen'']. Exact
+    label correspondence is separate from source chemical-form support.'
+  snapshot_sha256: ea4b3f90994884c49607689e3f3939cfec804c7d17905bbeecfc0ef7f80ead43
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: 'CHEBI:26710 resolves to sodium chloride. Stored labels: [''sodium chloride''].
+    Exact label correspondence is separate from source chemical-form support.'
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi26836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26836
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-20T07:29:13.222926Z'
+  support: supports
+  summary: 'CHEBI:26836 resolves to sulfuric acid. Stored labels: [''sulfuric acid''].
+    Exact label correspondence is separate from source chemical-form support.'
+  snapshot_sha256: 19e202cd697eed2be3130d5b0b29cc0c1d18575ad103110877303ee678779737
+- evidence_id: chebi27470
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-20T06:55:10.450814Z'
+  support: supports
+  summary: 'CHEBI:27470 resolves to folic acid. Stored labels: [''folic acid'']. Exact
+    label correspondence is separate from source chemical-form support.'
+  snapshot_sha256: fe3e4a2f0f0fa51f94efe6bbf0fa8883d43eafef8db73cfd37bc25ce15fdd12f
+- evidence_id: chebi29032
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29032
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T16:01:40.896676Z'
+  support: supports
+  summary: 'CHEBI:29032 resolves to (R)-pantothenate. Stored labels: [''(R)-pantothenate''].
+    Exact label correspondence is separate from source chemical-form support.'
+  snapshot_sha256: 09b8e88386839f2c0111bf74dfd64335371f99f9e069def6ef7e28d88d0e0d48
+- evidence_id: chebi30753
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-20T06:55:12.829785Z'
+  support: supports
+  summary: 'CHEBI:30753 resolves to 4-aminobenzoic acid. Stored labels: [''4-aminobenzoic
+    acid'']. Exact label correspondence is separate from source chemical-form support.'
+  snapshot_sha256: 97ea54b8020d3bcda2478182be115d2bc632249ee22b197b0575a4a9fd5fe21a
+- evidence_id: chebi30961
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:42:44.571163Z'
+  support: supports
+  summary: 'CHEBI:30961 resolves to pyridoxine hydrochloride. Stored labels: [''pyridoxine
+    hydrochloride'']. Exact label correspondence is separate from source chemical-form
+    support.'
+  snapshot_sha256: f1c95b83f5396067c3959c20ee4715c78f7895f5084dd214b3a4bf01e064f21d
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: 'CHEBI:31795 resolves to magnesium sulfate heptahydrate. Stored labels:
+    [''magnesium sulfate heptahydrate'']. Exact label correspondence is separate from
+    source chemical-form support.'
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32145
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32145
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T07:33:28.263004Z'
+  support: supports
+  summary: 'CHEBI:32145 resolves to sodium hydroxide. Stored labels: [''sodium hydroxide''].
+    Exact label correspondence is separate from source chemical-form support.'
+  snapshot_sha256: db4eb7586e3b04f5b2ae39b47bae7c1c533316f9bce15ee2829bf6967ca352f1
+- evidence_id: chebi32588
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:29.045588Z'
+  support: supports
+  summary: 'CHEBI:32588 resolves to potassium chloride. Stored labels: [''potassium
+    chloride'']. Exact label correspondence is separate from source chemical-form
+    support.'
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:29.364390Z'
+  support: supports
+  summary: 'CHEBI:33118 resolves to boric acid. Stored labels: [''boric acid'']. Exact
+    label correspondence is separate from source chemical-form support.'
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi33403
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33403
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-20T07:26:28.748668Z'
+  support: supports
+  summary: 'CHEBI:33403 resolves to elemental sulfur. Stored labels: [''elemental
+    sulfur'']. Exact label correspondence is separate from source chemical-form support.'
+  snapshot_sha256: b349493be5d8cb371d1e71751510f9205880ab9d0a14f560191e05606c127a60
+- evidence_id: chebi34887
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:04:44.093348Z'
+  support: supports
+  summary: 'CHEBI:34887 resolves to nickel dichloride. Stored labels: [''nickel dichloride''].
+    Exact label correspondence is separate from source chemical-form support.'
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: chebi35696
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_35696
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T06:57:48.030715Z'
+  support: supports
+  summary: 'CHEBI:35696 resolves to cobalt dichloride. Stored labels: [''cobalt dichloride''].
+    Exact label correspondence is separate from source chemical-form support.'
+  snapshot_sha256: d9d394d79450b1671c699eaa08d3ef5d66d1f14909f1bd9c464b3d457e37a7ca
+- evidence_id: chebi36385
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_36385
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-20T07:22:12.205299Z'
+  support: supports
+  summary: 'CHEBI:36385 resolves to strontium dichloride hexahydrate. Stored labels:
+    [''strontium dichloride hexahydrate'']. Exact label correspondence is separate
+    from source chemical-form support.'
+  snapshot_sha256: a81397c907aeb36242c9f0a2aa24979df4b9aad2f624e8991ccd87a4ff9428b5
+- evidence_id: chebi44557
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_44557
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:46:15.250117Z'
+  support: supports
+  summary: 'CHEBI:44557 resolves to nitrilotriacetic acid. Stored labels: [''nitrilotriacetic
+    acid'']. Exact label correspondence is separate from source chemical-form support.'
+  snapshot_sha256: de62dde44d3e28362211eddd4e16e41f6b748508618c828ac760036f8024f6c2
+- evidence_id: chebi48843
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_48843
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T10:07:16.976958Z'
+  support: supports
+  summary: 'CHEBI:48843 resolves to disodium selenite. Stored labels: [''disodium
+    selenite'']. Exact label correspondence is separate from source chemical-form
+    support.'
+  snapshot_sha256: f8b54c90292c3ea1c215cbb96e7b9302304ba97f07c586c66f09b6689b9f2d91
+- evidence_id: chebi49105
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-20T06:55:10.911379Z'
+  support: supports
+  summary: 'CHEBI:49105 resolves to thiamine hydrochloride. Stored labels: [''thiamine
+    hydrochloride'']. Exact label correspondence is separate from source chemical-form
+    support.'
+  snapshot_sha256: 0b923c215888606038af1e3f0c1b1bcc35e4ab84966d1733a91fdfcbee8f2ae4
+- evidence_id: chebi49976
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:04:44.168295Z'
+  support: supports
+  summary: 'CHEBI:49976 resolves to zinc dichloride. Stored labels: [''zinc dichloride''].
+    Exact label correspondence is separate from source chemical-form support.'
+  snapshot_sha256: d27644ae0df5935f8f18a28faa1ba6096fefeb9d0cb951b39751d442c92bd321
+- evidence_id: chebi62946
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:43:02.566401Z'
+  support: supports
+  summary: 'CHEBI:62946 resolves to ammonium sulfate. Stored labels: [''ammonium sulfate''].
+    Exact label correspondence is separate from source chemical-form support.'
+  snapshot_sha256: 10c25b481047a1fdfbc201104ecc06b15b32d5e72319beed5133e5d5693bede5
+- evidence_id: chebi63004
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63004
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T07:16:25.403149Z'
+  support: supports
+  summary: 'CHEBI:63004 resolves to sodium bromide. Stored labels: [''sodium bromide''].
+    Exact label correspondence is separate from source chemical-form support.'
+  snapshot_sha256: 2665f3a4301ab51b67b814a8694bc906c1a13c9b301c85a4416891d3f9412c90
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: 'CHEBI:63036 resolves to potassium dihydrogen phosphate. Stored labels:
+    [''potassium dihydrogen phosphate'']. Exact label correspondence is separate from
+    source chemical-form support.'
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi63940
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63940
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T10:07:18.442988Z'
+  support: supports
+  summary: 'CHEBI:63940 resolves to sodium tungstate. Stored labels: [''sodium tungstate''].
+    Exact label correspondence is separate from source chemical-form support.'
+  snapshot_sha256: c40f4b9c14d073989f58af77af0f1ffe969948e21d2bbe05a08c919f776aaf5c
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: 'CHEBI:75213 resolves to sodium molybdate dihydrate. Stored labels: [''sodium
+    molybdate dihydrate'']. Exact label correspondence is separate from source chemical-form
+    support.'
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi76209
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-20T06:55:04.847843Z'
+  support: supports
+  summary: 'CHEBI:76209 resolves to sodium sulfide nonahydrate. Stored labels: [''sodium
+    sulfide nonahydrate'']. Exact label correspondence is separate from source chemical-form
+    support.'
+  snapshot_sha256: f74d2c85574a4e28bdf71a78e4263f7e4c211036cd6d63b1f8282aca1d255e5c
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: 'CHEBI:86158 resolves to calcium chloride dihydrate. Stored labels: [''calcium
+    chloride dihydrate'']. Exact label correspondence is separate from source chemical-form
+    support.'
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86254
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86254
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:30.289392Z'
+  support: supports
+  summary: 'CHEBI:86254 resolves to iron trichloride hexahydrate. Stored labels: [''iron
+    trichloride hexahydrate'']. Exact label correspondence is separate from source
+    chemical-form support.'
+  snapshot_sha256: 89afba545ad02f24a850933df154af25dee37357b583f82de13866b44f18d683
+- evidence_id: chebi86345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:30.382026Z'
+  support: supports
+  summary: 'CHEBI:86345 resolves to magnesium dichloride hexahydrate. Stored labels:
+    [''magnesium dichloride hexahydrate'']. Exact label correspondence is separate
+    from source chemical-form support.'
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: chebi86368
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:30.657545Z'
+  support: supports
+  summary: 'CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Stored labels:
+    [''manganese(II) chloride tetrahydrate'']. Exact label correspondence is separate
+    from source chemical-form support.'
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: chebi86463
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86463
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T11:01:47.791068Z'
+  support: supports
+  summary: 'CHEBI:86463 resolves to potassium aluminium sulfate. Stored labels: [''potassium
+    aluminium sulfate'']. Exact label correspondence is separate from source chemical-form
+    support.'
+  snapshot_sha256: 59060418cddd95e8401be3d2518a69fbcd26a4f4e6f0597b2c8c03834a87812e
+- evidence_id: chebi8806
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:30.774007Z'
+  support: supports
+  summary: 'CHEBI:8806 resolves to Resazurin. Stored labels: [''Resazurin'']. Exact
+    label correspondence is separate from source chemical-form support.'
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Entire pinned index exact identifier lookup; adjacent snapshot metadata
+  accessed_at: '2026-10-21T18:03:49Z'
+  support: context_only
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "rows":
+    {"CHEBI:15377": [{"label": "Distilled water", "match_type": "preferred_term",
+    "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id":
+    "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15940":
+    [{"label": "Nicotinic acid", "match_type": "preferred_term", "identifier": "CHEBI:15940",
+    "preferred_term": "Nicotinic acid", "ontology_id": "CHEBI:15940", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:15956": [{"label": "Biotin", "match_type":
+    "preferred_term", "identifier": "CHEBI:15956", "preferred_term": "Biotin", "ontology_id":
+    "CHEBI:15956", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17015":
+    [{"label": "Riboflavin", "match_type": "preferred_term", "identifier": "CHEBI:17015",
+    "preferred_term": "Riboflavin", "ontology_id": "CHEBI:17015", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:176843": [{"label": "Vitamin B12", "match_type":
+    "preferred_term", "identifier": "CHEBI:176843", "preferred_term": "Vitamin B12",
+    "ontology_id": "CHEBI:176843", "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}],
+    "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier":
+    "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:26836": [{"label": "H2SO4", "match_type":
+    "preferred_term", "identifier": "CHEBI:26836", "preferred_term": "H2SO4", "ontology_id":
+    "CHEBI:26836", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:27470":
+    [{"label": "Folic acid", "match_type": "preferred_term", "identifier": "CHEBI:27470",
+    "preferred_term": "Folic acid", "ontology_id": "CHEBI:27470", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:29032": [], "CHEBI:30753": [{"label":
+    "p-Aminobenzoic acid", "match_type": "preferred_term", "identifier": "CHEBI:30753",
+    "preferred_term": "p-Aminobenzoic acid", "ontology_id": "CHEBI:30753", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:30961": [{"label": "Pyridoxine hydrochloride",
+    "match_type": "preferred_term", "identifier": "CHEBI:30961", "preferred_term":
+    "Pyridoxine hydrochloride", "ontology_id": "CHEBI:30961", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "MgSO4\u00b7H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4\u00b7H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:32145": [{"label": "NaOH", "match_type":
+    "preferred_term", "identifier": "CHEBI:32145", "preferred_term": "NaOH", "ontology_id":
+    "CHEBI:32145", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32588":
+    [{"label": "KCl", "match_type": "preferred_term", "identifier": "CHEBI:32588",
+    "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type": "preferred_term",
+    "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:34887": [{"label":
+    "NiCl2", "match_type": "preferred_term", "identifier": "CHEBI:34887", "preferred_term":
+    "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:36385": [{"label": "SrCl2 x 6 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:36385", "preferred_term": "SrCl2 x 6 H2O", "ontology_id":
+    "CHEBI:36385", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:44557":
+    [{"label": "Nitrilotriacetic acid", "match_type": "preferred_term", "identifier":
+    "CHEBI:44557", "preferred_term": "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:48843": [{"label":
+    "Na2SeO3", "match_type": "preferred_term", "identifier": "CHEBI:48843", "preferred_term":
+    "Na2SeO3", "ontology_id": "CHEBI:48843", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:49105": [{"label": "Thiamine HCl", "match_type": "preferred_term",
+    "identifier": "CHEBI:49105", "preferred_term": "Thiamine HCl", "ontology_id":
+    "CHEBI:49105", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:49976":
+    [{"label": "ZnCl2", "match_type": "preferred_term", "identifier": "CHEBI:49976",
+    "preferred_term": "ZnCl2", "ontology_id": "CHEBI:49976", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:62946": [{"label": "(NH4)2SO4", "match_type":
+    "preferred_term", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4",
+    "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:63004": [{"label": "NaBr", "match_type": "preferred_term", "identifier":
+    "CHEBI:63004", "preferred_term": "NaBr", "ontology_id": "CHEBI:63004", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type":
+    "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id":
+    "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63940":
+    [{"label": "Na2WO4", "match_type": "preferred_term", "identifier": "CHEBI:63940",
+    "preferred_term": "Na2WO4", "ontology_id": "CHEBI:63940", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2
+    H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:76209": [{"label": "Na2S x 9 H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:76209", "preferred_term": "Na2S x 9 H2O", "ontology_id": "CHEBI:76209",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label":
+    "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158",
+    "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:86254": [{"label": "FeCl3 x 6 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:86254", "preferred_term":
+    "FeCl3 x 6 H2O", "ontology_id": "CHEBI:86254", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:86345": [{"label": "Magnesium chloride", "match_type": "preferred_term",
+    "identifier": "CHEBI:86345", "preferred_term": "Magnesium chloride", "ontology_id":
+    "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgCl2
+    x 6 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86345", "preferred_term":
+    "MgCl2 x 6 H2O", "ontology_id": "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:86463": [{"label": "AlK(SO4)2", "match_type": "preferred_term",
+    "identifier": "CHEBI:86463", "preferred_term": "AlK(SO4)2", "ontology_id": "CHEBI:86463",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:8806": [{"label":
+    "Resazurin", "match_type": "preferred_term", "identifier": "CHEBI:8806", "preferred_term":
+    "Resazurin", "ontology_id": "CHEBI:8806", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}, "missing_current_keys": ["CHEBI:29032"]}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/AS_medium.yaml; data/normalized_yaml/bacterial/as_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T18:03:49Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 16, "timestamp_issues": []}, {"input":
+    "data/normalized_yaml/bacterial/as_medium.yaml", "events": 16, "timestamp_issues":
+    []}]'
+- evidence_id: mimPinnedCatalog
+  kind: database
+  reference: https://raw.githubusercontent.com/CultureBotAI/MediaIngredientMech/6643131b0f12ab40b66f98135245fca04027e0e9/docs/data/all_ingredients.json
+  locator: Complete pinned current catalogue/tree searched for exact legacy identifier
+  accessed_at: '2026-10-21T09:52:30.606764Z'
+  support: supports
+  summary: MediaIngredientMech:001072 has no exact current row/path. This is a completed
+    bounded current lookup, not evidence about historical identity.
+  snapshot_sha256: 474ff60bd51606ef6e272b8b22d421bbe51d9f78567a114f94e59d04fe51acc7
+- evidence_id: mimPinnedTree
+  kind: database
+  reference: https://api.github.com/repos/CultureBotAI/MediaIngredientMech/git/trees/6643131b0f12ab40b66f98135245fca04027e0e9?recursive=1
+  locator: Complete pinned current catalogue/tree searched for exact legacy identifier
+  accessed_at: '2026-10-21T09:51:04.602158Z'
+  support: supports
+  summary: MediaIngredientMech:001072 has no exact current row/path. This is a completed
+    bounded current lookup, not evidence about historical identity.
+  snapshot_sha256: 71721421c6e8100b080d4ee3140f6e0bb4bcd21b57964ceeb61399ca4a2844ec
+- evidence_id: legacy-lookup
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch032/source-preflight-bound/319/evidence-context-original.json
+  locator: Exact legacy lookup, full current catalogue and untruncated tree; current
+    index all rows
+  accessed_at: '2026-10-21T18:03:49Z'
+  support: context_only
+  summary: '{"identifier": "MediaIngredientMech:001072", "lookup_status": "completed_current_snapshot_lookup",
+    "index_rows": [], "catalog_rows": 2953, "catalog_matches": [], "tree_entries":
+    7384, "tree_path_matches": [], "tree_truncated": false, "catalog_sha256": "474ff60bd51606ef6e272b8b22d421bbe51d9f78567a114f94e59d04fe51acc7",
+    "tree_sha256": "71721421c6e8100b080d4ee3140f6e0bb4bcd21b57964ceeb61399ca4a2844ec",
+    "limit": "Completed current lookup is distinct from unavailable historical correspondence;
+    no validity or replacement inferred."}'
+  snapshot_sha256: 7e0e2307664e361ce9b7fc6bdddedc2cb52fe8019beb577fbd05f40ed4a4f6c2
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T18:03:49Z'
+  support: context_only
+  summary: Current TOGO stage-aware import, solution matching, duplicate cleanup and
+    merge code read. Numeric duplicate repair changes water 3 to 1 only, not its unit
+    or stock-stage identity; current code is not proof of historical execution.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-1
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T18:03:49Z'
+  support: context_only
+  summary: Current TOGO stage-aware import, solution matching, duplicate cleanup and
+    merge code read. Numeric duplicate repair changes water 3 to 1 only, not its unit
+    or stock-stage identity; current code is not proof of historical execution.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T18:03:49Z'
+  support: context_only
+  summary: Current TOGO stage-aware import, solution matching, duplicate cleanup and
+    merge code read. Numeric duplicate repair changes water 3 to 1 only, not its unit
+    or stock-stage identity; current code is not proof of historical execution.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-3
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T18:03:49Z'
+  support: context_only
+  summary: Current TOGO stage-aware import, solution matching, duplicate cleanup and
+    merge code read. Numeric duplicate repair changes water 3 to 1 only, not its unit
+    or stock-stage identity; current code is not proof of historical execution.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: writer-4
+  kind: record_content
+  reference: scripts/migrate_solutions_from_ingredients.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T18:03:49Z'
+  support: context_only
+  summary: Current TOGO stage-aware import, solution matching, duplicate cleanup and
+    merge code read. Numeric duplicate repair changes water 3 to 1 only, not its unit
+    or stock-stage identity; current code is not proof of historical execution.
+  snapshot_sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+- evidence_id: dep-6129
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_6129_Trace_elements_solution.yaml
+  locator: Full stock identity, composition, evidence, preparation, references and
+    history
+  accessed_at: '2026-10-21T18:03:49Z'
+  support: context_only
+  summary: Asserted dependency inspected separately from the target; no stock evidence
+    is inherited by the medium.
+  snapshot_sha256: f8dc196d75f0176cd99b8125f6ca3f9d8377422a189e6808d16c04340109cd05
+- evidence_id: dep-6241
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_6241_Vitamin_solution.yaml
+  locator: Full stock identity, composition, evidence, preparation, references and
+    history
+  accessed_at: '2026-10-21T18:03:49Z'
+  support: context_only
+  summary: Asserted dependency inspected separately from the target; no stock evidence
+    is inherited by the medium.
+  snapshot_sha256: 993f6c076ae708ef824e3637f0b5a8eb9afb742877a80f5c6dc445c376efc43f
+- evidence_id: stock6241
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/6241
+  locator: $.data complete stock response
+  accessed_at: '2026-10-21T09:46:49.463537Z'
+  support: supports
+  summary: Exact stock6241 has 100 ml basis, cyanocobalamin, thiamine HCl and biotin.
+    It differs from the nine-vitamin NBRC1049 stock.
+  snapshot_sha256: d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1
+- evidence_id: historical6129
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-solutions-4500-4770/records/bacterial/mediadive_6129_Trace_elements_solution.yaml.md
+  locator: Five exact decoded derivative rows; original response SHA 4ee096d7… not
+    recovered
+  accessed_at: '2026-10-21T18:03:49Z'
+  support: context_only
+  summary: All five attached local claims match their pinned derivative report after
+    decoding line breaks. This does not authenticate the missing historical original
+    response or NBRC stock correspondence.
+  snapshot_sha256: 6329f7f95876e28ae96ba1f6856876696b1d82132fa11b2368d1b84535ec16d3
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch032/319/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T18:03:49Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 523c9b597376deebe0ee7793839ceca7c6527d192493cc5818f5ccae1d4fe292
+- evidence_id: solution6129-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/6129
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T17:38:19.476751Z'
+  support: context_only
+  summary: The exact current6129 endpoint returned503, and an ignored-inclusive source
+    search recovered derivative reports but not the cited historical raw response.
+    Five attached stock-context claims are locally consistent but cannot be authenticated
+    as historical original bytes. This unresolved asserted dependency contributes
+    to partial coverage.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: togoM1817-attempt
+  kind: database
+  reference: https://mediumapi.dbcls.jp/medium/M1817
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T17:38:19.551467Z'
+  support: context_only
+  summary: The alternate TOGO API endpoint failed DNS; the original TOGO endpoint
+    and exact NBRC1049 primary both succeeded. The preserved failed request does not
+    imply absent source content.
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:008388
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: All asserted primary and current secondary chemical identifiers
+  outcome: concern
+  summary: '36 distinct primary/current-secondary IDs resolve to nonobsolete terms;
+    exact stored/canonical labels are recorded separately in each term evidence item.
+    Target direct-ingredient linkage is 36/39 primary (92.31%) and 32/39 current CHEBI-based
+    secondary (82.05%), on a 0–100 linkage scale, not an accuracy score. Current secondary
+    keys without pinned index rows: [''CHEBI:29032'']. Legacy slot count 1 is separate
+    and does not enter that current-key claim. Supplied-form correspondence is assessed
+    separately.'
+  target_ids:
+  - CultureMech:008388
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi15377
+  - chebi15940
+  - chebi15956
+  - chebi17015
+  - chebi176843
+  - chebi17997
+  - chebi26710
+  - chebi26836
+  - chebi27470
+  - chebi29032
+  - chebi30753
+  - chebi30961
+  - chebi31795
+  - chebi32145
+  - chebi32588
+  - chebi33118
+  - chebi33403
+  - chebi34887
+  - chebi35696
+  - chebi36385
+  - chebi44557
+  - chebi48843
+  - chebi49105
+  - chebi49976
+  - chebi62946
+  - chebi63004
+  - chebi63036
+  - chebi63940
+  - chebi75213
+  - chebi76209
+  - chebi86158
+  - chebi86254
+  - chebi86345
+  - chebi86368
+  - chebi86463
+  - chebi8806
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 32 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:008388
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: identity
+  area: identity
+  topic: Exact accession and single source owner
+  outcome: supported
+  summary: The exact original TOGO M1817 metadata names NBRC_M1049 and links the captured
+    NBRC1049 primary. The sole maintained bacterial/as_medium owner matches CultureMech:008388.
+    No inferred equivalence to a similarly named AS medium is needed.
+  target_ids:
+  - CultureMech:008388
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - provider
+- assessment_id: forms
+  area: grounding
+  topic: Hydrate and salt identity
+  outcome: concern
+  summary: Cobalt and nickel chloride hexahydrates are linked to anhydrous CHEBI:35696
+    and CHEBI:34887. Calcium pantothenate is linked to the R-pantothenate anion, CHEBI:29032,
+    losing calcium and adding unstated stereochemical specificity. Other asserted
+    main/stock chemical names match at the printed form level, including hydrated
+    magnesium/calcium/strontium/manganese/iron salts, anhydrous tungstate/selenite/aluminium
+    potassium sulfate and generic vitamin B12. Elemental-sulfur grounding does not
+    authenticate the legacy MIM label. Three named main components lack primary terms;
+    no replacement IDs are guessed.
+  target_ids:
+  - CultureMech:008388
+  evidence_ids:
+  - primary
+  - chebi35696
+  - chebi34887
+  - chebi29032
+  - chebi176843
+  - chebi33403
+  - mim
+- assessment_id: classification
+  area: scope
+  topic: Complex medium and growth scope
+  outcome: supported
+  summary: Yeast extract supports complex/undefined classification, and the source
+    recipe is liquid with no agar. The exact page does not establish a taxon, growth
+    optimum or measured final volume. Gas atmosphere is a preparation condition, not
+    an independently verified oxygen phenotype.
+  target_ids:
+  - CultureMech:008388
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: dependencies
+  area: identity
+  topic: Asserted stocks are compositionally different
+  outcome: concern
+  summary: Local stock6129 is a five-component zinc/manganese/molybdenum/copper/cobalt-nitrate
+    solution, with five derivative-only historical amount claims. Stock6241 is a 100
+    ml three-vitamin solution with two exact current-raw-matched attached claims.
+    Neither is the NBRC1049 stock. Stable names alone do not establish formulation
+    identity, and their placeholder quality flags and context-only quantities are
+    not target evidence.
+  target_ids:
+  - CultureMech:008388
+  evidence_ids:
+  - primary
+  - dep-6129
+  - dep-6241
+  - stock6241
+  - historical6129
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 52 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:008388
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"decision_id\": \"q1\",\n    \"label\": \"MgSO4·7H2O\",\n\
+    \    \"decision\": \"correct\",\n    \"source_stage\": \"Main NBRC1049 batch\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/AS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"6\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"6\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[6], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"MgSO 4 ·7H 2 O 6 g\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the printed main-batch quantity\
+    \ and original unit. The source lists 1 L water plus separate stock additions,\
+    \ not a measured final litre; attach the basis rather than silently equate grams\
+    \ per batch with final G_PER_L.\"\n  },\n  {\n    \"decision_id\": \"q2\",\n \
+    \   \"label\": \"NaCl\",\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"Main NBRC1049 batch\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/AS_medium.yaml\",\n        \"field_path\": \"ingredients[2].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"20\",\n          \"unit\": \"\
+    G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[3], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"NaCl 20 g\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the printed main-batch quantity\
+    \ and original unit. The source lists 1 L water plus separate stock additions,\
+    \ not a measured final litre; attach the basis rather than silently equate grams\
+    \ per batch with final G_PER_L.\"\n  },\n  {\n    \"decision_id\": \"q3\",\n \
+    \   \"label\": \"KH2PO4\",\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"Main NBRC1049 batch\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/AS_medium.yaml\",\n        \"field_path\": \"ingredients[4].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.2\",\n          \"unit\": \"\
+    G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[9], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"KH 2 PO 4 0.2 g\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the printed main-batch quantity\
+    \ and original unit. The source lists 1 L water plus separate stock additions,\
+    \ not a measured final litre; attach the basis rather than silently equate grams\
+    \ per batch with final G_PER_L.\"\n  },\n  {\n    \"decision_id\": \"q4\",\n \
+    \   \"label\": \"Resazurin\",\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"Main NBRC1049 batch\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/AS_medium.yaml\",\n        \"field_path\": \"ingredients[5].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"1\",\n          \"unit\": \"\
+    G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[18], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"Resazurin 1 mg\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"The source is 1 mg resazurin, not\
+    \ the stored 1 g/L. Preserve milligrams and the main-batch basis; no final measured\
+    \ volume is given.\"\n  },\n  {\n    \"decision_id\": \"q5\",\n    \"label\":\
+    \ \"MgCl2·6H2O\",\n    \"decision\": \"correct\",\n    \"source_stage\": \"Main\
+    \ NBRC1049 batch\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/AS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[5], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"MgCl 2 ·6H 2 O 3 g\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the printed main-batch quantity\
+    \ and original unit. The source lists 1 L water plus separate stock additions,\
+    \ not a measured final litre; attach the basis rather than silently equate grams\
+    \ per batch with final G_PER_L.\"\n  },\n  {\n    \"decision_id\": \"q6\",\n \
+    \   \"label\": \"Na2S·9H2O\",\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"Main NBRC1049 batch\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/AS_medium.yaml\",\n        \"field_path\": \"ingredients[7].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.3\",\n          \"unit\": \"\
+    G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[20], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"Na 2 S·9H 2 O 0.3 g\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the printed main-batch quantity\
+    \ and original unit. The source lists 1 L water plus separate stock additions,\
+    \ not a measured final litre; attach the basis rather than silently equate grams\
+    \ per batch with final G_PER_L. This sulfide amount is added separately from the\
+    \ main autoclave, using the separately described 5% stock.\"\n  },\n  {\n    \"\
+    decision_id\": \"q7\",\n    \"label\": \"KCl\",\n    \"decision\": \"correct\"\
+    ,\n    \"source_stage\": \"Main NBRC1049 batch\",\n    \"local_fields\": [\n \
+    \     {\n        \"input\": \"data/merge_yaml/merged/AS_medium.yaml\",\n     \
+    \   \"field_path\": \"ingredients[9].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n \
+    \     },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[10], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"KCl 0.5 g\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the printed main-batch quantity\
+    \ and original unit. The source lists 1 L water plus separate stock additions,\
+    \ not a measured final litre; attach the basis rather than silently equate grams\
+    \ per batch with final G_PER_L.\"\n  },\n  {\n    \"decision_id\": \"q8\",\n \
+    \   \"label\": \"(NH4)2SO4\",\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"Main NBRC1049 batch\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/AS_medium.yaml\",\n        \"field_path\": \"ingredients[10].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"1\",\n          \"unit\": \"\
+    G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[7], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"(NH 4 ) 2 SO 4 1 g\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the printed main-batch quantity\
+    \ and original unit. The source lists 1 L water plus separate stock additions,\
+    \ not a measured final litre; attach the basis rather than silently equate grams\
+    \ per batch with final G_PER_L.\"\n  },\n  {\n    \"decision_id\": \"q9\",\n \
+    \   \"label\": \"Sulfur (powder)\",\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"Main NBRC1049 batch\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/AS_medium.yaml\",\n        \"field_path\": \"ingredients[11].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"10\",\n          \"unit\": \"\
+    G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[19], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"Sulfur (powder) 10 g\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the printed main-batch quantity\
+    \ and original unit. The source lists 1 L water plus separate stock additions,\
+    \ not a measured final litre; attach the basis rather than silently equate grams\
+    \ per batch with final G_PER_L.\"\n  },\n  {\n    \"decision_id\": \"q10\",\n\
+    \    \"label\": \"NaBr\",\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"Main NBRC1049 batch\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/AS_medium.yaml\",\n        \"field_path\": \"ingredients[12].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.05\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[11], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"NaBr 0.05 g\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the printed main-batch quantity\
+    \ and original unit. The source lists 1 L water plus separate stock additions,\
+    \ not a measured final litre; attach the basis rather than silently equate grams\
+    \ per batch with final G_PER_L.\"\n  },\n  {\n    \"decision_id\": \"q11\",\n\
+    \    \"label\": \"SrCl2·6H2O\",\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"Main NBRC1049 batch\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/AS_medium.yaml\",\n        \"field_path\": \"ingredients[13].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.02\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[13], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"SrCl 2 ·6H 2 O 0.02 g\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the printed main-batch quantity\
+    \ and original unit. The source lists 1 L water plus separate stock additions,\
+    \ not a measured final litre; attach the basis rather than silently equate grams\
+    \ per batch with final G_PER_L.\"\n  },\n  {\n    \"decision_id\": \"q12\",\n\
+    \    \"label\": \"Fe(III) ammonium citrate\",\n    \"decision\": \"correct\",\n\
+    \    \"source_stage\": \"Main NBRC1049 batch\",\n    \"local_fields\": [\n   \
+    \   {\n        \"input\": \"data/merge_yaml/merged/AS_medium.yaml\",\n       \
+    \ \"field_path\": \"ingredients[14].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[14], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"Fe(III) ammonium citrate 0.01 g\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the printed main-batch quantity\
+    \ and original unit. The source lists 1 L water plus separate stock additions,\
+    \ not a measured final litre; attach the basis rather than silently equate grams\
+    \ per batch with final G_PER_L.\"\n  },\n  {\n    \"decision_id\": \"q13\",\n\
+    \    \"label\": \"Bis Tris Propane\",\n    \"decision\": \"correct\",\n    \"\
+    source_stage\": \"Main NBRC1049 batch\",\n    \"local_fields\": [\n      {\n \
+    \       \"input\": \"data/merge_yaml/merged/AS_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[15].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"2.25\",\n          \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\",\n      \
+    \  \"field_path\": \"ingredients[15].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"2.25\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[15], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"Bis Tris Propane 2.25 g\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the printed main-batch quantity\
+    \ and original unit. The source lists 1 L water plus separate stock additions,\
+    \ not a measured final litre; attach the basis rather than silently equate grams\
+    \ per batch with final G_PER_L.\"\n  },\n  {\n    \"decision_id\": \"q14\",\n\
+    \    \"label\": \"Bacto Yeast Extract (Difco)\",\n    \"decision\": \"correct\"\
+    ,\n    \"source_stage\": \"Main NBRC1049 batch\",\n    \"local_fields\": [\n \
+    \     {\n        \"input\": \"data/merge_yaml/merged/AS_medium.yaml\",\n     \
+    \   \"field_path\": \"ingredients[16].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n   \
+    \   },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[4], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"Bacto Yeast Extract (Difco) 2 g\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the printed main-batch quantity\
+    \ and original unit. The source lists 1 L water plus separate stock additions,\
+    \ not a measured final litre; attach the basis rather than silently equate grams\
+    \ per batch with final G_PER_L.\"\n  },\n  {\n    \"decision_id\": \"q15\",\n\
+    \    \"label\": \"CaCl2·2H2O cross-stage sum\",\n    \"decision\": \"correct\"\
+    ,\n    \"source_stage\": \"Main versus trace stock\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/AS_medium.yaml\",\n    \
+    \    \"field_path\": \"ingredients[3].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.318\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/merge_yaml/merged/AS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].notes\",\n        \"stored\": \"Role:\
+    \ Mineral source; Properties: Inorganic compound, Defined component, Simple component\
+    \ [Merged 2 duplicates: 0.3, 0.018]\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/as_medium.yaml\",\n        \"field_path\": \"ingredients[3].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.318\",\n          \"unit\"\
+    : \"G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].notes\",\n        \"stored\": \"Role:\
+    \ Mineral source; Properties: Inorganic compound, Defined component, Simple component\
+    \ [Merged 2 duplicates: 0.3, 0.018]\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"nbrc1049\",\n        \"source_url\": \"\
+    https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\",\n   \
+    \     \"source_locator\": \"NBRC1049 document table row[8], parsed text; source\
+    \ stage explicitly named in decision\",\n        \"exact_source_quote\": \"CaCl\
+    \ 2 ·2H 2 O 0.3 g\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      },\n      {\n        \"source_key\": \"nbrc1049\",\n        \"source_url\"\
+    : \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\",\n\
+    \        \"source_locator\": \"NBRC1049 document table row[30], parsed text; source\
+    \ stage explicitly named in decision\",\n        \"exact_source_quote\": \"CaCl\
+    \ 2 ·2H 2 O 0.018 g\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"Undo the sum of a main-batch addition\
+    \ and the full trace-stock recipe amount. Preserve both quantities at their own\
+    \ stages, with the separate 10 ml trace dose; do not add whole stock preparation\
+    \ quantities to final medium.\"\n  },\n  {\n    \"decision_id\": \"q16\",\n  \
+    \  \"label\": \"H3BO3 cross-stage sum\",\n    \"decision\": \"correct\",\n   \
+    \ \"source_stage\": \"Main versus trace stock\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/merge_yaml/merged/AS_medium.yaml\",\n      \
+    \  \"field_path\": \"ingredients[8].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.042\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/merge_yaml/merged/AS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].notes\",\n        \"stored\": \"Role:\
+    \ Mineral source; Properties: Inorganic compound, Defined component, Simple component\
+    \ [Merged 2 duplicates: 0.025, 0.017]\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/as_medium.yaml\",\n        \"field_path\":\
+    \ \"ingredients[8].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.042\",\n          \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\",\n     \
+    \   \"field_path\": \"ingredients[8].notes\",\n        \"stored\": \"Role: Mineral\
+    \ source; Properties: Inorganic compound, Defined component, Simple component\
+    \ [Merged 2 duplicates: 0.025, 0.017]\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"nbrc1049\",\n        \"source_url\": \"\
+    https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\",\n   \
+    \     \"source_locator\": \"NBRC1049 document table row[12], parsed text; source\
+    \ stage explicitly named in decision\",\n        \"exact_source_quote\": \"H 3\
+    \ BO 3 0.025 g\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      },\n      {\n        \"source_key\": \"nbrc1049\",\n        \"source_url\"\
+    : \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\",\n\
+    \        \"source_locator\": \"NBRC1049 document table row[32], parsed text; source\
+    \ stage explicitly named in decision\",\n        \"exact_source_quote\": \"H 3\
+    \ BO 3 0.017 g\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"Undo the sum of a main-batch addition\
+    \ and the full trace-stock recipe amount. Preserve both quantities at their own\
+    \ stages, with the separate 10 ml trace dose; do not add whole stock preparation\
+    \ quantities to final medium.\"\n  },\n  {\n    \"decision_id\": \"q17\",\n  \
+    \  \"label\": \"Water representation in target\",\n    \"decision\": \"correct\"\
+    ,\n    \"source_stage\": \"Separate main, trace and vitamin waters\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/AS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3.0\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/merge_yaml/merged/AS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].notes\",\n        \"stored\": \"Role:\
+    \ Solvating media; Properties: Inorganic compound, Defined component, Simple component\
+    \ [Merged 3 duplicates: 1.0, 1.0, 1.0]\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"nbrc1049\",\n        \"source_url\": \"\
+    https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\",\n   \
+    \     \"source_locator\": \"NBRC1049 document table row[21], parsed text; source\
+    \ stage explicitly named in decision\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1 L\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      },\n      {\n        \"source_key\": \"nbrc1049\",\n        \"source_url\"\
+    : \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\",\n\
+    \        \"source_locator\": \"NBRC1049 document table row[38], parsed text; source\
+    \ stage explicitly named in decision\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1 L\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      },\n      {\n        \"source_key\": \"nbrc1049\",\n        \"source_url\"\
+    : \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\",\n\
+    \        \"source_locator\": \"NBRC1049 document table row[52], parsed text; source\
+    \ stage explicitly named in decision\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1 L\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"The target 3 g/L and owner 1 g/L\
+    \ both misrepresent three distinct 1 L water entries: one main batch and two stock\
+    \ preparations. The owner’s duplicate repair does not authenticate the unit or\
+    \ collapse the stock identities.\"\n  },\n  {\n    \"decision_id\": \"q18\",\n\
+    \    \"label\": \"Water representation in owner\",\n    \"decision\": \"correct\"\
+    ,\n    \"source_stage\": \"Separate main, trace and vitamin waters\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.0\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].notes\",\n        \"stored\": \"Role:\
+    \ Solvating media; Properties: Inorganic compound, Defined component, Simple component\
+    \ [Collapsed 3 identical duplicates: 1.0, 1.0, 1.0]\"\n      }\n    ],\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"nbrc1049\",\n       \
+    \ \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[21], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1 L\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      },\n      {\n        \"source_key\": \"nbrc1049\",\n        \"source_url\"\
+    : \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\",\n\
+    \        \"source_locator\": \"NBRC1049 document table row[38], parsed text; source\
+    \ stage explicitly named in decision\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1 L\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      },\n      {\n        \"source_key\": \"nbrc1049\",\n        \"source_url\"\
+    : \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\",\n\
+    \        \"source_locator\": \"NBRC1049 document table row[52], parsed text; source\
+    \ stage explicitly named in decision\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1 L\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"The target 3 g/L and owner 1 g/L\
+    \ both misrepresent three distinct 1 L water entries: one main batch and two stock\
+    \ preparations. The owner’s duplicate repair does not authenticate the unit or\
+    \ collapse the stock identities.\"\n  },\n  {\n    \"decision_id\": \"q19\",\n\
+    \    \"label\": \"Named NBRC stock addition\",\n    \"decision\": \"correct\"\
+    ,\n    \"source_stage\": \"Main stock addition\",\n    \"local_fields\": [\n \
+    \     {\n        \"input\": \"data/merge_yaml/merged/AS_medium.yaml\",\n     \
+    \   \"field_path\": \"solutions[0].concentration\",\n        \"stored\": {\n \
+    \         \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        }\n   \
+    \   },\n      {\n        \"input\": \"data/merge_yaml/merged/AS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].term\",\n        \"stored\": {\n   \
+    \       \"id\": \"mediadive.solution:6129\",\n          \"label\": \"Trace elements\
+    \ solution\"\n        }\n      },\n      {\n        \"input\": \"data/merge_yaml/merged/AS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].name\",\n        \"stored\": \"Unknown\
+    \ solution\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].term\",\n        \"stored\": {\n   \
+    \       \"id\": \"mediadive.solution:6129\",\n          \"label\": \"Trace elements\
+    \ solution\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].name\",\n        \"stored\": \"Unknown\
+    \ solution\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[16], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"Trace elements solution* 10 ml\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"The source adds 10 ml of its locally\
+    \ defined NBRC stock, not 10 g/L of a namesake MediaDive stock. Retain the exact\
+    \ source-defined identity and dose; Unknown solution does not repair this mismatch.\"\
+    \n  },\n  {\n    \"decision_id\": \"q20\",\n    \"label\": \"Named NBRC stock\
+    \ addition\",\n    \"decision\": \"correct\",\n    \"source_stage\": \"Main stock\
+    \ addition\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/AS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/merge_yaml/merged/AS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].term\",\n        \"stored\": {\n   \
+    \       \"id\": \"mediadive.solution:6241\",\n          \"label\": \"Vitamin solution\"\
+    \n        }\n      },\n      {\n        \"input\": \"data/merge_yaml/merged/AS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].name\",\n        \"stored\": \"Unknown\
+    \ solution\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].term\",\n        \"stored\": {\n   \
+    \       \"id\": \"mediadive.solution:6241\",\n          \"label\": \"Vitamin solution\"\
+    \n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].name\",\n        \"stored\": \"Unknown\
+    \ solution\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[17], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"Vitamin solution** 10 ml\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"The source adds 10 ml of its locally\
+    \ defined NBRC stock, not 10 g/L of a namesake MediaDive stock. Retain the exact\
+    \ source-defined identity and dose; Unknown solution does not repair this mismatch.\"\
+    \n  },\n  {\n    \"decision_id\": \"q21\",\n    \"label\": \"Na2MoO4·2H2O trace-stock\
+    \ quantity\",\n    \"decision\": \"correct\",\n    \"source_stage\": \"NBRC trace\
+    \ stock\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/AS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.009\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.009\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[33], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"Na 2 MoO 4 ·2H 2 O 0.009 g\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      },\n      {\n        \"source_key\": \"nbrc1049\",\n        \"source_url\"\
+    : \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\",\n\
+    \        \"source_locator\": \"NBRC1049 document table row[38], parsed text; source\
+    \ stage explicitly named in decision\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1 L\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"This is a trace-stock recipe amount\
+    \ with its own 1 L water, not a direct final-medium ingredient. Preserve mg where\
+    \ printed (tungstate, selenite and aluminium potassium sulfate), then represent\
+    \ only the 10 ml stock addition.\"\n  },\n  {\n    \"decision_id\": \"q22\",\n\
+    \    \"label\": \"MnCl2·4H2O trace-stock quantity\",\n    \"decision\": \"correct\"\
+    ,\n    \"source_stage\": \"NBRC trace stock\",\n    \"local_fields\": [\n    \
+    \  {\n        \"input\": \"data/merge_yaml/merged/AS_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[20].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.09\",\n          \"unit\": \"G_PER_L\"\n        }\n    \
+    \  },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.09\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[28], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"MnCl 2 ·4H 2 O 0.09 g\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      },\n      {\n        \"source_key\": \"nbrc1049\",\n        \"source_url\"\
+    : \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\",\n\
+    \        \"source_locator\": \"NBRC1049 document table row[38], parsed text; source\
+    \ stage explicitly named in decision\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1 L\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"This is a trace-stock recipe amount\
+    \ with its own 1 L water, not a direct final-medium ingredient. Preserve mg where\
+    \ printed (tungstate, selenite and aluminium potassium sulfate), then represent\
+    \ only the 10 ml stock addition.\"\n  },\n  {\n    \"decision_id\": \"q23\",\n\
+    \    \"label\": \"CoCl2·6H2O trace-stock quantity\",\n    \"decision\": \"correct\"\
+    ,\n    \"source_stage\": \"NBRC trace stock\",\n    \"local_fields\": [\n    \
+    \  {\n        \"input\": \"data/merge_yaml/merged/AS_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[21].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.15\",\n          \"unit\": \"G_PER_L\"\n        }\n    \
+    \  },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.15\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[29], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"CoCl 2 ·6H 2 O 0.15 g\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      },\n      {\n        \"source_key\": \"nbrc1049\",\n        \"source_url\"\
+    : \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\",\n\
+    \        \"source_locator\": \"NBRC1049 document table row[38], parsed text; source\
+    \ stage explicitly named in decision\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1 L\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"This is a trace-stock recipe amount\
+    \ with its own 1 L water, not a direct final-medium ingredient. Preserve mg where\
+    \ printed (tungstate, selenite and aluminium potassium sulfate), then represent\
+    \ only the 10 ml stock addition.\"\n  },\n  {\n    \"decision_id\": \"q24\",\n\
+    \    \"label\": \"NiCl2·6H2O trace-stock quantity\",\n    \"decision\": \"correct\"\
+    ,\n    \"source_stage\": \"NBRC trace stock\",\n    \"local_fields\": [\n    \
+    \  {\n        \"input\": \"data/merge_yaml/merged/AS_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[22].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.018\",\n          \"unit\": \"G_PER_L\"\n        }\n   \
+    \   },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[22].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.018\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[34], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"NiCl 2 ·6H 2 O 0.018 g\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      },\n      {\n        \"source_key\": \"nbrc1049\",\n        \"source_url\"\
+    : \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\",\n\
+    \        \"source_locator\": \"NBRC1049 document table row[38], parsed text; source\
+    \ stage explicitly named in decision\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1 L\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"This is a trace-stock recipe amount\
+    \ with its own 1 L water, not a direct final-medium ingredient. Preserve mg where\
+    \ printed (tungstate, selenite and aluminium potassium sulfate), then represent\
+    \ only the 10 ml stock addition.\"\n  },\n  {\n    \"decision_id\": \"q25\",\n\
+    \    \"label\": \"ZnCl2 trace-stock quantity\",\n    \"decision\": \"correct\"\
+    ,\n    \"source_stage\": \"NBRC trace stock\",\n    \"local_fields\": [\n    \
+    \  {\n        \"input\": \"data/merge_yaml/merged/AS_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[23].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.09\",\n          \"unit\": \"G_PER_L\"\n        }\n    \
+    \  },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[23].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.09\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[31], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"ZnCl 2 0.09 g\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      },\n      {\n        \"source_key\": \"nbrc1049\",\n        \"source_url\"\
+    : \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\",\n\
+    \        \"source_locator\": \"NBRC1049 document table row[38], parsed text; source\
+    \ stage explicitly named in decision\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1 L\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"This is a trace-stock recipe amount\
+    \ with its own 1 L water, not a direct final-medium ingredient. Preserve mg where\
+    \ printed (tungstate, selenite and aluminium potassium sulfate), then represent\
+    \ only the 10 ml stock addition.\"\n  },\n  {\n    \"decision_id\": \"q26\",\n\
+    \    \"label\": \"FeCl3·6H2O trace-stock quantity\",\n    \"decision\": \"correct\"\
+    ,\n    \"source_stage\": \"NBRC trace stock\",\n    \"local_fields\": [\n    \
+    \  {\n        \"input\": \"data/merge_yaml/merged/AS_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[24].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.36\",\n          \"unit\": \"G_PER_L\"\n        }\n    \
+    \  },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[24].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.36\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[27], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"FeCl 3 ·6H 2 O 0.36 g\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      },\n      {\n        \"source_key\": \"nbrc1049\",\n        \"source_url\"\
+    : \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\",\n\
+    \        \"source_locator\": \"NBRC1049 document table row[38], parsed text; source\
+    \ stage explicitly named in decision\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1 L\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"This is a trace-stock recipe amount\
+    \ with its own 1 L water, not a direct final-medium ingredient. Preserve mg where\
+    \ printed (tungstate, selenite and aluminium potassium sulfate), then represent\
+    \ only the 10 ml stock addition.\"\n  },\n  {\n    \"decision_id\": \"q27\",\n\
+    \    \"label\": \"Nitrilotriacetic acid (NTA) trace-stock quantity\",\n    \"\
+    decision\": \"correct\",\n    \"source_stage\": \"NBRC trace stock\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/AS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[25].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"4.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[25].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"4.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[26], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"Nitrilotriacetic acid (NTA) 4.1 g\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      },\n      {\n        \"source_key\": \"nbrc1049\",\n        \"source_url\"\
+    : \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\",\n\
+    \        \"source_locator\": \"NBRC1049 document table row[38], parsed text; source\
+    \ stage explicitly named in decision\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1 L\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"This is a trace-stock recipe amount\
+    \ with its own 1 L water, not a direct final-medium ingredient. Preserve mg where\
+    \ printed (tungstate, selenite and aluminium potassium sulfate), then represent\
+    \ only the 10 ml stock addition.\"\n  },\n  {\n    \"decision_id\": \"q28\",\n\
+    \    \"label\": \"Na2WO4 trace-stock quantity\",\n    \"decision\": \"correct\"\
+    ,\n    \"source_stage\": \"NBRC trace stock\",\n    \"local_fields\": [\n    \
+    \  {\n        \"input\": \"data/merge_yaml/merged/AS_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[26].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"1.6\",\n          \"unit\": \"G_PER_L\"\n        }\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[26].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.6\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[36], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"Na 2 WO 4 1.6 mg\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      },\n      {\n        \"source_key\": \"nbrc1049\",\n        \"source_url\"\
+    : \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\",\n\
+    \        \"source_locator\": \"NBRC1049 document table row[38], parsed text; source\
+    \ stage explicitly named in decision\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1 L\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"This is a trace-stock recipe amount\
+    \ with its own 1 L water, not a direct final-medium ingredient. Preserve mg where\
+    \ printed (tungstate, selenite and aluminium potassium sulfate), then represent\
+    \ only the 10 ml stock addition.\"\n  },\n  {\n    \"decision_id\": \"q29\",\n\
+    \    \"label\": \"AlK(SO4)2 trace-stock quantity\",\n    \"decision\": \"correct\"\
+    ,\n    \"source_stage\": \"NBRC trace stock\",\n    \"local_fields\": [\n    \
+    \  {\n        \"input\": \"data/merge_yaml/merged/AS_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[27].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[27].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[37], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"AlK(SO 4 ) 2 5 mg\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      },\n      {\n        \"source_key\": \"nbrc1049\",\n        \"source_url\"\
+    : \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\",\n\
+    \        \"source_locator\": \"NBRC1049 document table row[38], parsed text; source\
+    \ stage explicitly named in decision\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1 L\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"This is a trace-stock recipe amount\
+    \ with its own 1 L water, not a direct final-medium ingredient. Preserve mg where\
+    \ printed (tungstate, selenite and aluminium potassium sulfate), then represent\
+    \ only the 10 ml stock addition.\"\n  },\n  {\n    \"decision_id\": \"q30\",\n\
+    \    \"label\": \"Na2SeO3 trace-stock quantity\",\n    \"decision\": \"correct\"\
+    ,\n    \"source_stage\": \"NBRC trace stock\",\n    \"local_fields\": [\n    \
+    \  {\n        \"input\": \"data/merge_yaml/merged/AS_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[28].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"1.6\",\n          \"unit\": \"G_PER_L\"\n        }\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[28].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.6\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[35], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"Na 2 SeO 3 1.6 mg\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      },\n      {\n        \"source_key\": \"nbrc1049\",\n        \"source_url\"\
+    : \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\",\n\
+    \        \"source_locator\": \"NBRC1049 document table row[38], parsed text; source\
+    \ stage explicitly named in decision\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1 L\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"This is a trace-stock recipe amount\
+    \ with its own 1 L water, not a direct final-medium ingredient. Preserve mg where\
+    \ printed (tungstate, selenite and aluminium potassium sulfate), then represent\
+    \ only the 10 ml stock addition.\"\n  },\n  {\n    \"decision_id\": \"q31\",\n\
+    \    \"label\": \"Biotin vitamin-stock amount\",\n    \"decision\": \"correct\"\
+    ,\n    \"source_stage\": \"NBRC vitamin stock\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/merge_yaml/merged/AS_medium.yaml\",\n      \
+    \  \"field_path\": \"ingredients[30].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n   \
+    \   },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[30].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[43], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"Biotin 2 mg\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      },\n      {\n        \"source_key\": \"nbrc1049\",\n        \"source_url\"\
+    : \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\",\n\
+    \        \"source_locator\": \"NBRC1049 document table row[52], parsed text; source\
+    \ stage explicitly named in decision\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1 L\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the source milligrams in\
+    \ the vitamin stock with its own 1 L water, followed by the separate 10 ml stock\
+    \ dose. Stored numeric G_PER_L values lose both the mg conversion and the stock\
+    \ stage.\"\n  },\n  {\n    \"decision_id\": \"q32\",\n    \"label\": \"p-Aminobenzoic\
+    \ acid vitamin-stock amount\",\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"NBRC vitamin stock\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/AS_medium.yaml\",\n        \"field_path\": \"ingredients[31].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"1\",\n          \"unit\": \"\
+    G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[31].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[50], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"p -Aminobenzoic acid 1 mg\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      },\n      {\n        \"source_key\": \"nbrc1049\",\n        \"source_url\"\
+    : \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\",\n\
+    \        \"source_locator\": \"NBRC1049 document table row[52], parsed text; source\
+    \ stage explicitly named in decision\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1 L\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the source milligrams in\
+    \ the vitamin stock with its own 1 L water, followed by the separate 10 ml stock\
+    \ dose. Stored numeric G_PER_L values lose both the mg conversion and the stock\
+    \ stage.\"\n  },\n  {\n    \"decision_id\": \"q33\",\n    \"label\": \"Thiamine-HCl\
+    \ vitamin-stock amount\",\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"NBRC vitamin stock\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/AS_medium.yaml\",\n        \"field_path\": \"ingredients[32].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"5\",\n          \"unit\": \"\
+    G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[32].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[46], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"Thiamine-HCl 5 mg\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      },\n      {\n        \"source_key\": \"nbrc1049\",\n        \"source_url\"\
+    : \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\",\n\
+    \        \"source_locator\": \"NBRC1049 document table row[52], parsed text; source\
+    \ stage explicitly named in decision\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1 L\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the source milligrams in\
+    \ the vitamin stock with its own 1 L water, followed by the separate 10 ml stock\
+    \ dose. Stored numeric G_PER_L values lose both the mg conversion and the stock\
+    \ stage.\"\n  },\n  {\n    \"decision_id\": \"q34\",\n    \"label\": \"Ca-pantothenate\
+    \ vitamin-stock amount\",\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"NBRC vitamin stock\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/AS_medium.yaml\",\n        \"field_path\": \"ingredients[33].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"5\",\n          \"unit\": \"\
+    G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[33].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[49], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"Ca-pantothenate 5 mg\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      },\n      {\n        \"source_key\": \"nbrc1049\",\n        \"source_url\"\
+    : \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\",\n\
+    \        \"source_locator\": \"NBRC1049 document table row[52], parsed text; source\
+    \ stage explicitly named in decision\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1 L\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the source milligrams in\
+    \ the vitamin stock with its own 1 L water, followed by the separate 10 ml stock\
+    \ dose. Stored numeric G_PER_L values lose both the mg conversion and the stock\
+    \ stage.\"\n  },\n  {\n    \"decision_id\": \"q35\",\n    \"label\": \"Pyridoxine-HCl\
+    \ vitamin-stock amount\",\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"NBRC vitamin stock\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/AS_medium.yaml\",\n        \"field_path\": \"ingredients[34].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"10\",\n          \"unit\": \"\
+    G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[34].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[45], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"Pyridoxine-HCl 10 mg\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      },\n      {\n        \"source_key\": \"nbrc1049\",\n        \"source_url\"\
+    : \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\",\n\
+    \        \"source_locator\": \"NBRC1049 document table row[52], parsed text; source\
+    \ stage explicitly named in decision\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1 L\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the source milligrams in\
+    \ the vitamin stock with its own 1 L water, followed by the separate 10 ml stock\
+    \ dose. Stored numeric G_PER_L values lose both the mg conversion and the stock\
+    \ stage.\"\n  },\n  {\n    \"decision_id\": \"q36\",\n    \"label\": \"Folic acid\
+    \ vitamin-stock amount\",\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"NBRC vitamin stock\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/AS_medium.yaml\",\n        \"field_path\": \"ingredients[35].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"2\",\n          \"unit\": \"\
+    G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[35].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[44], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"Folic acid 2 mg\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      },\n      {\n        \"source_key\": \"nbrc1049\",\n        \"source_url\"\
+    : \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\",\n\
+    \        \"source_locator\": \"NBRC1049 document table row[52], parsed text; source\
+    \ stage explicitly named in decision\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1 L\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the source milligrams in\
+    \ the vitamin stock with its own 1 L water, followed by the separate 10 ml stock\
+    \ dose. Stored numeric G_PER_L values lose both the mg conversion and the stock\
+    \ stage.\"\n  },\n  {\n    \"decision_id\": \"q37\",\n    \"label\": \"Vitamin\
+    \ B12 vitamin-stock amount\",\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"NBRC vitamin stock\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/AS_medium.yaml\",\n        \"field_path\": \"ingredients[36].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.01\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[36].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[51], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"Vitamin B 12 0.01 mg\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      },\n      {\n        \"source_key\": \"nbrc1049\",\n        \"source_url\"\
+    : \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\",\n\
+    \        \"source_locator\": \"NBRC1049 document table row[52], parsed text; source\
+    \ stage explicitly named in decision\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1 L\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the source milligrams in\
+    \ the vitamin stock with its own 1 L water, followed by the separate 10 ml stock\
+    \ dose. Stored numeric G_PER_L values lose both the mg conversion and the stock\
+    \ stage.\"\n  },\n  {\n    \"decision_id\": \"q38\",\n    \"label\": \"Riboflavin\
+    \ vitamin-stock amount\",\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"NBRC vitamin stock\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/AS_medium.yaml\",\n        \"field_path\": \"ingredients[37].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"5\",\n          \"unit\": \"\
+    G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[37].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[47], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"Riboflavin 5 mg\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      },\n      {\n        \"source_key\": \"nbrc1049\",\n        \"source_url\"\
+    : \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\",\n\
+    \        \"source_locator\": \"NBRC1049 document table row[52], parsed text; source\
+    \ stage explicitly named in decision\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1 L\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the source milligrams in\
+    \ the vitamin stock with its own 1 L water, followed by the separate 10 ml stock\
+    \ dose. Stored numeric G_PER_L values lose both the mg conversion and the stock\
+    \ stage.\"\n  },\n  {\n    \"decision_id\": \"q39\",\n    \"label\": \"Nicotinic\
+    \ acid vitamin-stock amount\",\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"NBRC vitamin stock\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/AS_medium.yaml\",\n        \"field_path\": \"ingredients[38].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"5\",\n          \"unit\": \"\
+    G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[38].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[48], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"Nicotinic acid 5 mg\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      },\n      {\n        \"source_key\": \"nbrc1049\",\n        \"source_url\"\
+    : \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\",\n\
+    \        \"source_locator\": \"NBRC1049 document table row[52], parsed text; source\
+    \ stage explicitly named in decision\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1 L\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the source milligrams in\
+    \ the vitamin stock with its own 1 L water, followed by the separate 10 ml stock\
+    \ dose. Stored numeric G_PER_L values lose both the mg conversion and the stock\
+    \ stage.\"\n  },\n  {\n    \"decision_id\": \"q40\",\n    \"label\": \"H2SO4\"\
+    ,\n    \"decision\": \"not_quantified\",\n    \"source_stage\": \"Main H2SO4 titration\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/AS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[23], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"Mix ingredients except for vitamin, sulfur and Na 2 S·9H 2 O, adjust pH to\
+    \ 7 with H 2 SO 4 , and autoclave under a N 2 atmosphere. Sulfur is separately\
+    \ sterilized by autoclaving for 60 min at 105°C on each of 3 successive days.\
+    \ Separately autoclave Na 2 S·9H 2 O as 5% solution under a N 2 atmosphere. Anaerobically\
+    \ add filter-sterile vitamin, sulfur and Na 2 S·9H 2 O.\",\n        \"snapshot_sha256\"\
+    : \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\",\n    \
+    \    \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"The source does not give an addition\
+    \ amount or concentration for this reagent/gas. Retain its exact preparation role\
+    \ without inventing titrant strength, gas percentage or flow. \"\n  },\n  {\n\
+    \    \"decision_id\": \"q41\",\n    \"label\": \"N2\",\n    \"decision\": \"not_quantified\"\
+    ,\n    \"source_stage\": \"Main and sulfide nitrogen atmosphere\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/AS_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[23], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"Mix ingredients except for vitamin, sulfur and Na 2 S·9H 2 O, adjust pH to\
+    \ 7 with H 2 SO 4 , and autoclave under a N 2 atmosphere. Sulfur is separately\
+    \ sterilized by autoclaving for 60 min at 105°C on each of 3 successive days.\
+    \ Separately autoclave Na 2 S·9H 2 O as 5% solution under a N 2 atmosphere. Anaerobically\
+    \ add filter-sterile vitamin, sulfur and Na 2 S·9H 2 O.\",\n        \"snapshot_sha256\"\
+    : \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\",\n    \
+    \    \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"The source does not give an addition\
+    \ amount or concentration for this reagent/gas. Retain its exact preparation role\
+    \ without inventing titrant strength, gas percentage or flow. \"\n  },\n  {\n\
+    \    \"decision_id\": \"q42\",\n    \"label\": \"NaOH\",\n    \"decision\": \"\
+    not_quantified\",\n    \"source_stage\": \"Trace-stock NaOH titration\",\n   \
+    \ \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/AS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[29].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[29].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[40], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"First dissolve nitrilotriacetic acid and adjust pH to 6.5 with NaOH, and then\
+    \ add other minerals. Final pH 7.0.\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"The source does not give an addition\
+    \ amount or concentration for this reagent/gas. Retain its exact preparation role\
+    \ without inventing titrant strength, gas percentage or flow. \"\n  },\n  {\n\
+    \    \"decision_id\": \"q43\",\n    \"label\": \"Main pH and separate additions\"\
+    ,\n    \"decision\": \"add\",\n    \"source_stage\": \"Source-specific preparation\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/AS_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"presence\": \"absent\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"presence\": \"absent\"\n      }\n    ],\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[23], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"Mix ingredients except for vitamin, sulfur and Na 2 S·9H 2 O, adjust pH to\
+    \ 7 with H 2 SO 4 , and autoclave under a N 2 atmosphere. Sulfur is separately\
+    \ sterilized by autoclaving for 60 min at 105°C on each of 3 successive days.\
+    \ Separately autoclave Na 2 S·9H 2 O as 5% solution under a N 2 atmosphere. Anaerobically\
+    \ add filter-sterile vitamin, sulfur and Na 2 S·9H 2 O.\",\n        \"snapshot_sha256\"\
+    : \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\",\n    \
+    \    \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"Restore main pH 7 with H2SO4, main\
+    \ autoclaving under N2 excluding vitamins/sulfur/sulfide, and anaerobic separate\
+    \ additions.\"\n  },\n  {\n    \"decision_id\": \"q44\",\n    \"label\": \"Sulfur\
+    \ sterilization\",\n    \"decision\": \"add\",\n    \"source_stage\": \"Source-specific\
+    \ preparation\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/AS_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"presence\": \"absent\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"presence\": \"absent\"\n      }\n    ],\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[23], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"Mix ingredients except for vitamin, sulfur and Na 2 S·9H 2 O, adjust pH to\
+    \ 7 with H 2 SO 4 , and autoclave under a N 2 atmosphere. Sulfur is separately\
+    \ sterilized by autoclaving for 60 min at 105°C on each of 3 successive days.\
+    \ Separately autoclave Na 2 S·9H 2 O as 5% solution under a N 2 atmosphere. Anaerobically\
+    \ add filter-sterile vitamin, sulfur and Na 2 S·9H 2 O.\",\n        \"snapshot_sha256\"\
+    : \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\",\n    \
+    \    \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve 60 minutes at 105°C on each\
+    \ of three successive days, specifically for sulfur.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q45\",\n    \"label\": \"Sulfide stock strength\",\n    \"decision\": \"add\"\
+    ,\n    \"source_stage\": \"Source-specific preparation\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/AS_medium.yaml\",\n\
+    \        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n \
+    \       \"presence\": \"absent\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"presence\": \"absent\"\n      }\n    ],\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[23], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"Mix ingredients except for vitamin, sulfur and Na 2 S·9H 2 O, adjust pH to\
+    \ 7 with H 2 SO 4 , and autoclave under a N 2 atmosphere. Sulfur is separately\
+    \ sterilized by autoclaving for 60 min at 105°C on each of 3 successive days.\
+    \ Separately autoclave Na 2 S·9H 2 O as 5% solution under a N 2 atmosphere. Anaerobically\
+    \ add filter-sterile vitamin, sulfur and Na 2 S·9H 2 O.\",\n        \"snapshot_sha256\"\
+    : \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\",\n    \
+    \    \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the printed 5% solution\
+    \ and separate autoclaving under N2. Its percent basis and resulting dose volume\
+    \ are not supplied; do not assert w/v or calculate a dose from an assumed basis.\"\
+    \n  },\n  {\n    \"decision_id\": \"q46\",\n    \"label\": \"Trace pH sequence\"\
+    ,\n    \"decision\": \"add\",\n    \"source_stage\": \"Source-specific preparation\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/AS_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"presence\": \"absent\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/as_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"presence\": \"absent\"\n      }\n    ],\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"nbrc1049\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[40], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"First dissolve nitrilotriacetic acid and adjust pH to 6.5 with NaOH, and then\
+    \ add other minerals. Final pH 7.0.\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"Dissolve NTA first, adjust to pH\
+    \ 6.5 with NaOH, add the remaining minerals, then adjust stock to pH 7.0. Neither\
+    \ is a growth optimum.\"\n  },\n  {\n    \"decision_id\": \"q47\",\n    \"label\"\
+    : \"Main final-volume and unspecified cycle limits\",\n    \"decision\": \"not_quantified\"\
+    ,\n    \"source_stage\": \"Main medium source limits\",\n    \"local_fields\"\
+    : [],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"nbrc1049\"\
+    ,\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\"\
+    ,\n        \"source_locator\": \"NBRC1049 document table row[21], parsed text;\
+    \ source stage explicitly named in decision\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1 L\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      },\n      {\n        \"source_key\": \"nbrc1049\",\n        \"source_url\"\
+    : \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\",\n\
+    \        \"source_locator\": \"NBRC1049 document table row[16], parsed text; source\
+    \ stage explicitly named in decision\",\n        \"exact_source_quote\": \"Trace\
+    \ elements solution* 10 ml\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      },\n      {\n        \"source_key\": \"nbrc1049\",\n        \"source_url\"\
+    : \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\",\n\
+    \        \"source_locator\": \"NBRC1049 document table row[17], parsed text; source\
+    \ stage explicitly named in decision\",\n        \"exact_source_quote\": \"Vitamin\
+    \ solution** 10 ml\",\n        \"snapshot_sha256\": \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\"\
+    ,\n        \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      },\n      {\n        \"source_key\": \"nbrc1049\",\n        \"source_url\"\
+    : \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1049\",\n\
+    \        \"source_locator\": \"NBRC1049 document table row[23], parsed text; source\
+    \ stage explicitly named in decision\",\n        \"exact_source_quote\": \"Mix\
+    \ ingredients except for vitamin, sulfur and Na 2 S·9H 2 O, adjust pH to 7 with\
+    \ H 2 SO 4 , and autoclave under a N 2 atmosphere. Sulfur is separately sterilized\
+    \ by autoclaving for 60 min at 105°C on each of 3 successive days. Separately\
+    \ autoclave Na 2 S·9H 2 O as 5% solution under a N 2 atmosphere. Anaerobically\
+    \ add filter-sterile vitamin, sulfur and Na 2 S·9H 2 O.\",\n        \"snapshot_sha256\"\
+    : \"18b22dec8383d9f42b7ad812def0ab1c1d4cfb6b010734712f0706f23d287e05\",\n    \
+    \    \"parsed_text_sha256\": \"964d7ddb13011353281620ff18e4aa7885dc4795ad05295201c611dd31cf11d8\"\
+    \n      }\n    ],\n    \"interpretation\": \"The main recipe has 1 L water plus\
+    \ two 10 ml stocks, but no measured final-volume declaration. Main and sulfide\
+    \ autoclave temperature/duration are not supplied; the separate sulfur schedule\
+    \ cannot fill those gaps.\"\n  },\n  {\n    \"decision_id\": \"q48\",\n    \"\
+    label\": \"6241 dependency Cyanocobalamine\",\n    \"decision\": \"verified\"\
+    ,\n    \"source_stage\": \"Asserted 6241 identity context only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/mediadive_6241_Vitamin_solution.yaml\"\
+    ,\n        \"field_path\": \"composition[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"solution6241\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/solution/6241\"\
+    ,\n        \"source_locator\": \"$.data.recipe[0]\",\n        \"exact_source_quote\"\
+    : \"{\\n                \\\"recipe_order\\\": 2,\\n                \\\"compound\\\
+    \": \\\"Cyanocobalamine\\\",\\n                \\\"compound_id\\\": 847,\\n  \
+    \              \\\"solution\\\": null,\\n                \\\"solution_id\\\":\
+    \ null,\\n                \\\"condition\\\": null,\\n                \\\"attribute\\\
+    \": null,\\n                \\\"amount\\\": 10,\\n                \\\"unit\\\"\
+    : \\\"mg\\\",\\n                \\\"g_l\\\": 0.1,\\n                \\\"mmol_l\\\
+    \": 0.073779,\\n                \\\"optional\\\": 0\\n            }\",\n     \
+    \   \"snapshot_sha256\": \"d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Existing attached stock-only evidence\
+    \ matches exact source bytes and 0.1 g/L within the declared 100 ml stock. This\
+    \ does not verify the target or establish NBRC equivalence.\"\n  },\n  {\n   \
+    \ \"decision_id\": \"q49\",\n    \"label\": \"6241 dependency Thiamine HCl\",\n\
+    \    \"decision\": \"verified\",\n    \"source_stage\": \"Asserted 6241 identity\
+    \ context only\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/mediadive_6241_Vitamin_solution.yaml\"\
+    ,\n        \"field_path\": \"composition[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"solution6241\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/solution/6241\"\
+    ,\n        \"source_locator\": \"$.data.recipe[1]\",\n        \"exact_source_quote\"\
+    : \"{\\n                \\\"recipe_order\\\": 3,\\n                \\\"compound\\\
+    \": \\\"Thiamine HCl\\\",\\n                \\\"compound_id\\\": 1207,\\n    \
+    \            \\\"solution\\\": null,\\n                \\\"solution_id\\\": null,\\\
+    n                \\\"condition\\\": null,\\n                \\\"attribute\\\"\
+    : null,\\n                \\\"amount\\\": 10,\\n                \\\"unit\\\":\
+    \ \\\"mg\\\",\\n                \\\"g_l\\\": 0.1,\\n                \\\"mmol_l\\\
+    \": 0.296472,\\n                \\\"optional\\\": 0\\n            }\",\n     \
+    \   \"snapshot_sha256\": \"d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Existing attached stock-only evidence\
+    \ matches exact source bytes and 0.1 g/L within the declared 100 ml stock. This\
+    \ does not verify the target or establish NBRC equivalence.\"\n  },\n  {\n   \
+    \ \"decision_id\": \"q50\",\n    \"label\": \"6241 dependency Biotin\",\n    \"\
+    decision\": \"correct\",\n    \"source_stage\": \"Asserted 6241 identity context\
+    \ only\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/mediadive_6241_Vitamin_solution.yaml\"\
+    ,\n        \"field_path\": \"composition[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2000.0\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"solution6241\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/solution/6241\"\
+    ,\n        \"source_locator\": \"$.data.recipe[2]\",\n        \"exact_source_quote\"\
+    : \"{\\n                \\\"recipe_order\\\": 4,\\n                \\\"compound\\\
+    \": \\\"Biotin\\\",\\n                \\\"compound_id\\\": 46,\\n            \
+    \    \\\"solution\\\": null,\\n                \\\"solution_id\\\": null,\\n \
+    \               \\\"condition\\\": null,\\n                \\\"attribute\\\":\
+    \ null,\\n                \\\"amount\\\": 200,\\n                \\\"unit\\\"\
+    : \\\"\\\\u03bcg\\\",\\n                \\\"g_l\\\": null,\\n                \\\
+    \"mmol_l\\\": null,\\n                \\\"optional\\\": 0\\n            }\",\n\
+    \        \"snapshot_sha256\": \"d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1\"\
+    \n      }\n    ],\n    \"interpretation\": \"The unrelated stock itself contains\
+    \ a 200 µg biotin amount or 100 ml water make-up, not its stored 2000 g/L biotin\
+    \ or 1000 percent water. This bounded dependency observation must not be transferred\
+    \ into NBRC1049.\"\n  },\n  {\n    \"decision_id\": \"q51\",\n    \"label\": \"\
+    6241 dependency Distilled water\",\n    \"decision\": \"correct\",\n    \"source_stage\"\
+    : \"Asserted 6241 identity context only\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/mediadive_6241_Vitamin_solution.yaml\"\
+    ,\n        \"field_path\": \"composition[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1000.0\",\n          \"unit\": \"PERCENT_V_V\"\n \
+    \       }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"solution6241\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/solution/6241\"\
+    ,\n        \"source_locator\": \"$.data.recipe[3]\",\n        \"exact_source_quote\"\
+    : \"{\\n                \\\"recipe_order\\\": 5,\\n                \\\"compound\\\
+    \": \\\"Distilled water\\\",\\n                \\\"compound_id\\\": 4,\\n    \
+    \            \\\"solution\\\": null,\\n                \\\"solution_id\\\": null,\\\
+    n                \\\"condition\\\": null,\\n                \\\"attribute\\\"\
+    : null,\\n                \\\"amount\\\": 100,\\n                \\\"unit\\\"\
+    : \\\"ml\\\",\\n                \\\"g_l\\\": null,\\n                \\\"mmol_l\\\
+    \": null,\\n                \\\"optional\\\": 0\\n            }\",\n        \"\
+    snapshot_sha256\": \"d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1\"\
+    \n      }\n    ],\n    \"interpretation\": \"The unrelated stock itself contains\
+    \ a 200 µg biotin amount or 100 ml water make-up, not its stored 2000 g/L biotin\
+    \ or 1000 percent water. This bounded dependency observation must not be transferred\
+    \ into NBRC1049.\"\n  },\n  {\n    \"decision_id\": \"q52\",\n    \"label\": \"\
+    6241 stock make-up\",\n    \"decision\": \"evidence_only\",\n    \"source_stage\"\
+    : \"6241 context only\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/mediadive_6241_Vitamin_solution.yaml\",\n \
+    \       \"field_path\": \"preparation_notes\",\n        \"stored\": \"Make up\
+    \ to 100 ml with distilled water.\\n\\nOriginal volume: 100 mL\"\n      }\n  \
+    \  ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"solution6241\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/solution/6241\",\n\
+    \        \"source_locator\": \"$.data.steps[0]\",\n        \"exact_source_quote\"\
+    : \"{\\n                \\\"recipe_order\\\": null,\\n                \\\"step\\\
+    \": \\\"Make up to 100 ml with distilled water.\\\"\\n            }\",\n     \
+    \   \"snapshot_sha256\": \"d3f3868c63c222e602cc1c7d6fa8c0bc395005f8ed2f91f9c92e9fc782d26ab1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Existing 100 ml stock make-up agrees\
+    \ with this unrelated stock’s source. No target claim or NBRC stock equivalence\
+    \ is established.\"\n  }\n]"
+findings:
+- finding_id: f1
+  issue_key: cm008388-stage-units
+  category: representation
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Main and stock quantities are combined with incorrect units
+  description: Main water, two stock waters, calcium and boron are collapsed across
+    distinct stages. Stock ingredients remain flat; resazurin, three trace constituents
+    and all vitamins retain mg numbers as G_PER_L. Both 10 ml doses are stored as
+    10 G_PER_L.
+  target_ids:
+  - CultureMech:008388
+  field_paths:
+  - ingredients
+  - solutions[*].concentration
+  evidence_ids:
+  - primary
+  - provider
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/as_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: cm008388-stock-identity
+  category: identity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Both named stock references select different formulations
+  description: MediaDive6129 and6241 are namesakes with different component sets and
+    quantities. Exact6241 source and full local6129 context refute using them as the
+    NBRC-defined stocks; missing6129 raw does not justify substitution.
+  target_ids:
+  - CultureMech:008388
+  field_paths:
+  - solutions[*].term
+  - solutions[*].name
+  evidence_ids:
+  - primary
+  - dep-6129
+  - dep-6241
+  - stock6241
+  - historical6129
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/as_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: cm008388-preparation
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Stage-specific pH and sterilization are missing
+  description: Both layers omit main pH7, separate sulfur105°C/60min/three-day treatment,
+    unqualified5% sulfide stock, anaerobic additions and trace pH6.5→7 sequence.
+  target_ids:
+  - CultureMech:008388
+  field_paths:
+  - preparation_steps
+  - ph_value
+  evidence_ids:
+  - primary
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/as_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: cm008388-forms
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Two hydrate forms and calcium-pantothenate identity are mismatched
+  description: The source hexahydrates have anhydrous cobalt/nickel chloride identifiers.
+    The source calcium salt has a pantothenate anion identifier and unverified R specificity.
+  target_ids:
+  - CultureMech:008388
+  field_paths:
+  - ingredients[21].term
+  - ingredients[22].term
+  - ingredients[33].term
+  - ingredients[33].mediaingredientmech_chebi_term
+  evidence_ids:
+  - primary
+  - chebi35696
+  - chebi34887
+  - chebi29032
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/as_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f5
+  issue_key: cm008388-evidence
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Current secondary mapping gap and historical provenance are distinct
+  description: The current pinned MIM lookup is complete and has no CHEBI:29032 row;
+    the ontology term itself exists. Legacy001072 historical correspondence remains
+    unavailable. Target/owner quantity claims lack attached source evidence; dependency
+    claims cannot supply it.
+  target_ids:
+  - CultureMech:008388
+  field_paths:
+  - ingredients[*].evidence
+  - ingredients[33].mediaingredientmech_chebi_term
+  - ingredients[11].mediaingredientmech_term
+  evidence_ids:
+  - mim
+  - legacy-lookup
+  - historical6129
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/as_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Reconstruct source main and stock formulations with original units,
+    dose relationships and explicit unresolved final-volume basis; repair the maintained
+    owner before generated output.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:008388
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/as_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Replace or qualify the crosslinks using exact source-defined stock
+    identity, without modifying the unrelated stock records as part of this review.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:008388
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/as_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Add exact scoped preparation, preserve missing cycle parameters and
+    percent-basis limits, and avoid importing parent/default conditions.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:008388
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/as_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Reconcile exact salt/hydrate forms using verified terms; do not infer
+    replacements from label-index matches alone.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:008388
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/as_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a5
+  description: Document the current mapping gap separately from historical unavailability
+    and attach exact primary source claims after authorized curation.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:008388
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/as_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Historical correspondence of asserted MediaIngredientMech:001072 remains unavailable.
+  A current-index miss does not prove original validity, invalidity or a replacement
+  mapping.
+- The exact current6129 endpoint returned503, and an ignored-inclusive source search
+  recovered derivative reports but not the cited historical raw response. Five attached
+  stock-context claims are locally consistent but cannot be authenticated as historical
+  original bytes. This unresolved asserted dependency contributes to partial coverage.
+- The alternate TOGO API endpoint failed DNS; the original TOGO endpoint and exact
+  NBRC1049 primary both succeeded. The preserved failed request does not imply absent
+  source content.
+- Full source quantities are preserved by batch and stock stage; source water inputs
+  do not establish measured final volume. Sulfide 5% basis, gas flow/percentage and
+  unspecified main autoclave parameters remain unknown. No unrelated stock evidence
+  is inherited by the medium.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-032
+- generated-medium
+```

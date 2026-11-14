@@ -1,0 +1,2207 @@
+# Source and formulation review: aswp (CultureMech:000051)
+
+- Review: 20261021T180142Z-culturemech-000051-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T17:54:28Z
+- Finished UTC: 2026-10-21T18:01:42Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The exact CCAP ASWP formulation is identifiable, but both layers flatten three stock strengths, omit their 3.75 ml dose, omit 50 ml SE2 and 33.6 g Instant Ocean, and misground nitrate as Azimilide. The maintained owner correctly restores final make-up, pH and sterilization; the generated target still treats an instruction as a 1 M ingredient. Imported algae-growth defaults and a natural-seawater alternative are not established by this protozoa-specific source.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 318; batch 032 item 8 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding thirty-one task batches contain 310 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 313 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:000051 | data/merge_yaml/merged/ASWP.yaml | generated | aswp |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:000051 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:000051 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-032/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch032/318/strict.tsv |
+| validate-terms | passed | True | CultureMech:000051 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:000051 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:000051 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: ccapSE2 | unavailable | False | CultureMech:000051 | The old SE2 candidate URL returned 404, preserved separately from the official-index-linked successful current SE2 PDF; required stock content is available. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:000051.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### All asserted primary and current secondary chemical identifiers
+
+grounding: concern. Targets: CultureMech:000051.
+
+4 distinct primary/current-secondary IDs resolve to nonobsolete terms; exact stored/canonical labels are recorded separately in each term evidence item. Target direct-ingredient linkage is 4/5 primary (80.00%) and 0/5 current CHEBI-based secondary (0.00%), on a 0–100 linkage scale, not an accuracy score. Current secondary keys without pinned index rows: []. Legacy slot count 0 is separate and does not enter that current-key claim. Supplied-form correspondence is assessed separately.
+
+### Append-only history and timestamp shape
+
+provenance: concern. Targets: CultureMech:000051.
+
+19 timestamp instances inspected; 4 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Exact source and owner membership
+
+identity: supported. Targets: CultureMech:000051.
+
+CCAP:ASWP and MR_ASWP identify Artificial Seawater for Protozoa. The single matching stable-ID owner is algae/aswp.yaml; the bacterial namesake is excluded. The salt stock is named ASW Stock 1, but this does not import ASW vitamins or its natural-seawater branch.
+
+### Source formula versus correct canonical labels
+
+grounding: concern. Targets: CultureMech:000051.
+
+CHEBI:34545 canonically denotes Azimilide, which does not represent the printed NaNO3. The two phosphate formulas and tricine match the source at its stated level; no additional hydrate or commercial-salt constituent identity is inferred. Both layers assert zero current or legacy secondary MIM slots.
+
+### Protozoa source and growth conditions
+
+scope: concern. Targets: CultureMech:000051.
+
+Complex/undefined liquid character is consistent with soil extract and commercial sea salts. The source explicitly says for Protozoa; the algae category and generic phytoplankton applications need qualification. Neither growth temperature/light defaults nor a natural-seawater alternative is specified here. No strain growth claim is inferred from the title.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:000051.
+
+26 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "decision_id": "q1",
+    "label": "NaNO3 stock strength",
+    "decision": "correct",
+    "source_stage": "Extra-salt stock 1",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ASWP.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "15.00",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/algae/aswp.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "15.00",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "ccapASWP",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf",
+        "source_locator": "Stock-table heading",
+        "exact_source_quote": "Stocks         per litre",
+        "snapshot_sha256": "93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926",
+        "parsed_text_sha256": "6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267"
+      },
+      {
+        "source_key": "ccapASWP",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf",
+        "source_locator": "Extra-salt stock exact ingredient row",
+        "exact_source_quote": "NaNO3       15.00 g",
+        "snapshot_sha256": "93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926",
+        "parsed_text_sha256": "6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267"
+      }
+    ],
+    "interpretation": "Retain the printed amount per litre of stock. The existing G_PER_L value is in a direct-ingredient slot but applies to the separately dosed stock, not final medium."
+  },
+  {
+    "decision_id": "q2",
+    "label": "Na2HPO4 stock strength",
+    "decision": "correct",
+    "source_stage": "Extra-salt stock 1",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ASWP.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.60",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/algae/aswp.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.60",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "ccapASWP",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf",
+        "source_locator": "Stock-table heading",
+        "exact_source_quote": "Stocks         per litre",
+        "snapshot_sha256": "93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926",
+        "parsed_text_sha256": "6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267"
+      },
+      {
+        "source_key": "ccapASWP",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf",
+        "source_locator": "Extra-salt stock exact ingredient row",
+        "exact_source_quote": "Na2HPO4      0.60 g",
+        "snapshot_sha256": "93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926",
+        "parsed_text_sha256": "6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267"
+      }
+    ],
+    "interpretation": "Retain the printed amount per litre of stock. The existing G_PER_L value is in a direct-ingredient slot but applies to the separately dosed stock, not final medium."
+  },
+  {
+    "decision_id": "q3",
+    "label": "K2HPO4 stock strength",
+    "decision": "correct",
+    "source_stage": "Extra-salt stock 1",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ASWP.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.50",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/algae/aswp.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.50",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "ccapASWP",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf",
+        "source_locator": "Stock-table heading",
+        "exact_source_quote": "Stocks         per litre",
+        "snapshot_sha256": "93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926",
+        "parsed_text_sha256": "6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267"
+      },
+      {
+        "source_key": "ccapASWP",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf",
+        "source_locator": "Extra-salt stock exact ingredient row",
+        "exact_source_quote": "K2HPO4       0.50 g",
+        "snapshot_sha256": "93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926",
+        "parsed_text_sha256": "6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267"
+      }
+    ],
+    "interpretation": "Retain the printed amount per litre of stock. The existing G_PER_L value is in a direct-ingredient slot but applies to the separately dosed stock, not final medium."
+  },
+  {
+    "decision_id": "q4",
+    "label": "Tricine",
+    "decision": "evidence_only",
+    "source_stage": "Final medium",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ASWP.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/algae/aswp.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "ccapASWP",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf",
+        "source_locator": "Final-medium heading",
+        "exact_source_quote": "Medium         per litre",
+        "snapshot_sha256": "93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926",
+        "parsed_text_sha256": "6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267"
+      },
+      {
+        "source_key": "ccapASWP",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf",
+        "source_locator": "Final-medium tricine row",
+        "exact_source_quote": "Tricine       0.5 g",
+        "snapshot_sha256": "93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926",
+        "parsed_text_sha256": "6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267"
+      }
+    ],
+    "interpretation": "The stored 0.5 g/L matches the main-medium table; neither layer attaches amount evidence."
+  },
+  {
+    "decision_id": "q5",
+    "label": "Extra-salt stock 3.75 ml per litre",
+    "decision": "add",
+    "source_stage": "Final-medium stock addition",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ASWP.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "presence": "absent"
+      },
+      {
+        "input": "data/normalized_yaml/algae/aswp.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "presence": "absent"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "ccapASWP",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf",
+        "source_locator": "Medium per litre exact stock addition",
+        "exact_source_quote": "Stock solution 1      3.75 ml",
+        "snapshot_sha256": "93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926",
+        "parsed_text_sha256": "6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267"
+      }
+    ],
+    "interpretation": "Restore this explicit dose and its own stock identity. ASW vitamin stock is not part of this source formulation."
+  },
+  {
+    "decision_id": "q6",
+    "label": "SE2 50 ml per litre",
+    "decision": "add",
+    "source_stage": "Final-medium stock addition",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ASWP.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "presence": "absent"
+      },
+      {
+        "input": "data/normalized_yaml/algae/aswp.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "presence": "absent"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "ccapASWP",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf",
+        "source_locator": "Medium per litre exact stock addition",
+        "exact_source_quote": "Stock solution 2 (SE2)     50.0 ml",
+        "snapshot_sha256": "93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926",
+        "parsed_text_sha256": "6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267"
+      }
+    ],
+    "interpretation": "Restore this explicit dose and its own stock identity. ASW vitamin stock is not part of this source formulation."
+  },
+  {
+    "decision_id": "q7",
+    "label": "Instant Ocean sea salts",
+    "decision": "add",
+    "source_stage": "Final medium",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "ccapASWP",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf",
+        "source_locator": "Medium per litre sea-salt row",
+        "exact_source_quote": "\"Instant Ocean\" sea salts     33.6 g",
+        "snapshot_sha256": "93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926",
+        "parsed_text_sha256": "6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267"
+      }
+    ],
+    "interpretation": "Add the explicit commercial sea-salt amount of 33.6 g per litre as its own component, without guessing its constituent formula. This is not an optional alternative in ASWP."
+  },
+  {
+    "decision_id": "q8",
+    "label": "Target instruction as 1 M ingredient",
+    "decision": "correct",
+    "source_stage": "Final make-up and titration",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ASWP.yaml",
+        "field_path": "ingredients[4].preferred_term",
+        "stored": "Make up to 1 litre with deionised water and adjust pH to 7.6 - 7.8 with"
+      },
+      {
+        "input": "data/merge_yaml/merged/ASWP.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "MOLAR"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "ccapASWP",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf",
+        "source_locator": "Final make-up and pH sentence",
+        "exact_source_quote": "Make up to 1 litre with deionised water and adjust pH to 7.6 - 7.8 with 1M NaOH or 1M HCl.",
+        "snapshot_sha256": "93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926",
+        "parsed_text_sha256": "6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267"
+      }
+    ],
+    "interpretation": "The target combines the 1 L make-up, pH 7.6–7.8 and titrant phrase as a 1 M ingredient. Remove this representation and retain separate preparation stages; 1 M describes NaOH or HCl, not the medium."
+  },
+  {
+    "decision_id": "q9",
+    "label": "Owner final make-up",
+    "decision": "evidence_only",
+    "source_stage": "Final volume",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/aswp.yaml",
+        "field_path": "preparation_steps[0]",
+        "stored": {
+          "step_number": 1,
+          "action": "MIX",
+          "description": "Bring to 1 L with deionised water."
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "ccapASWP",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf",
+        "source_locator": "Final make-up sentence",
+        "exact_source_quote": "Make up to 1 litre with deionised water and adjust pH to 7.6 - 7.8 with 1M NaOH or 1M HCl.",
+        "snapshot_sha256": "93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926",
+        "parsed_text_sha256": "6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267"
+      }
+    ],
+    "interpretation": "The owner correctly makes up to 1 L with deionized water. Do not replace this with a 1 L addition after stocks."
+  },
+  {
+    "decision_id": "q10",
+    "label": "Owner pH and titrant strengths",
+    "decision": "evidence_only",
+    "source_stage": "Final-medium titration",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/aswp.yaml",
+        "field_path": "preparation_steps[1]",
+        "stored": {
+          "step_number": 2,
+          "action": "ADJUST_PH",
+          "description": "Adjust pH to 7.6-7.8 with 1 M NaOH or 1 M HCl before autoclaving."
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "ccapASWP",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf",
+        "source_locator": "pH and titrant sentence",
+        "exact_source_quote": "Make up to 1 litre with deionised water and adjust pH to 7.6 - 7.8 with 1M NaOH or 1M HCl.",
+        "snapshot_sha256": "93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926",
+        "parsed_text_sha256": "6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267"
+      }
+    ],
+    "interpretation": "The existing pH 7.6–7.8 and 1 M NaOH or 1 M HCl are source-supported preparation values. Attach narrow evidence; no titrant volume is supplied."
+  },
+  {
+    "decision_id": "q11",
+    "label": "Target restored preparation",
+    "decision": "add",
+    "source_stage": "Main preparation",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ASWP.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "presence": "absent"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "ccapASWP",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf",
+        "source_locator": "Make-up and pH sentence",
+        "exact_source_quote": "Make up to 1 litre with deionised water and adjust pH to 7.6 - 7.8 with 1M NaOH or 1M HCl.",
+        "snapshot_sha256": "93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926",
+        "parsed_text_sha256": "6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267"
+      },
+      {
+        "source_key": "ccapASWP",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf",
+        "source_locator": "Main-medium sterilization sentence",
+        "exact_source_quote": "Autoclave at 15 psi for 15 minutes.",
+        "snapshot_sha256": "93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926",
+        "parsed_text_sha256": "6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267"
+      }
+    ],
+    "interpretation": "Restore the owner’s already-correct preparation structure in generated output through the normal authorized regeneration path. Keep 1 L, pH 7.6–7.8, both 1 M alternatives and 15 psi for 15 minutes separate."
+  },
+  {
+    "decision_id": "q12",
+    "label": "Owner sterilization",
+    "decision": "evidence_only",
+    "source_stage": "Main-medium sterilization",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/aswp.yaml",
+        "field_path": "preparation_steps[2]",
+        "stored": {
+          "step_number": 3,
+          "action": "AUTOCLAVE",
+          "description": "Autoclave at 15 psi for 15 minutes."
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "ccapASWP",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf",
+        "source_locator": "Main-medium sterilization sentence",
+        "exact_source_quote": "Autoclave at 15 psi for 15 minutes.",
+        "snapshot_sha256": "93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926",
+        "parsed_text_sha256": "6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267"
+      }
+    ],
+    "interpretation": "The owner correctly preserves 15 psi for 15 minutes. The main source gives no temperature or gauge/absolute basis; do not copy SE2 cycle temperature here."
+  },
+  {
+    "decision_id": "q13",
+    "label": "Unquantified titrant doses and cycle limits",
+    "decision": "not_quantified",
+    "source_stage": "Main-medium source limits",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "ccapASWP",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf",
+        "source_locator": "pH sentence",
+        "exact_source_quote": "Make up to 1 litre with deionised water and adjust pH to 7.6 - 7.8 with 1M NaOH or 1M HCl.",
+        "snapshot_sha256": "93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926",
+        "parsed_text_sha256": "6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267"
+      },
+      {
+        "source_key": "ccapASWP",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf",
+        "source_locator": "Sterilization sentence",
+        "exact_source_quote": "Autoclave at 15 psi for 15 minutes.",
+        "snapshot_sha256": "93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926",
+        "parsed_text_sha256": "6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267"
+      }
+    ],
+    "interpretation": "No titrant volumes, main-cycle temperature or pressure reference are stated. Preserve these limits rather than infer values from stock strengths or soil processing."
+  },
+  {
+    "decision_id": "q14",
+    "label": "Unsupported temperature_range",
+    "decision": "unsupported",
+    "source_stage": "Unsupported growth conditions",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ASWP.yaml",
+        "field_path": "temperature_range",
+        "stored": "15-30°C depending on species"
+      },
+      {
+        "input": "data/normalized_yaml/algae/aswp.yaml",
+        "field_path": "temperature_range",
+        "stored": "15-30°C depending on species"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "ccapASWP",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf",
+        "source_locator": "Exact source identity; full page searched for growth conditions",
+        "exact_source_quote": "ASWP (Artificial Seawater for Protozoa)",
+        "snapshot_sha256": "93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926",
+        "parsed_text_sha256": "6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267"
+      }
+    ],
+    "interpretation": "The exact source provides no corresponding organism-growth value. Importer defaults are not evidence; do not equate soil-processing conditions with culture conditions."
+  },
+  {
+    "decision_id": "q15",
+    "label": "Unsupported light_intensity",
+    "decision": "unsupported",
+    "source_stage": "Unsupported growth conditions",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ASWP.yaml",
+        "field_path": "light_intensity",
+        "stored": "Varies by species; typically 50-100 µmol photons m⁻² s⁻¹"
+      },
+      {
+        "input": "data/normalized_yaml/algae/aswp.yaml",
+        "field_path": "light_intensity",
+        "stored": "Varies by species; typically 50-100 µmol photons m⁻² s⁻¹"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "ccapASWP",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf",
+        "source_locator": "Exact source identity; full page searched for growth conditions",
+        "exact_source_quote": "ASWP (Artificial Seawater for Protozoa)",
+        "snapshot_sha256": "93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926",
+        "parsed_text_sha256": "6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267"
+      }
+    ],
+    "interpretation": "The exact source provides no corresponding organism-growth value. Importer defaults are not evidence; do not equate soil-processing conditions with culture conditions."
+  },
+  {
+    "decision_id": "q16",
+    "label": "Unsupported light_cycle",
+    "decision": "unsupported",
+    "source_stage": "Unsupported growth conditions",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ASWP.yaml",
+        "field_path": "light_cycle",
+        "stored": "Varies by species; commonly 12:12 or 16:8 light:dark"
+      },
+      {
+        "input": "data/normalized_yaml/algae/aswp.yaml",
+        "field_path": "light_cycle",
+        "stored": "Varies by species; commonly 12:12 or 16:8 light:dark"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "ccapASWP",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf",
+        "source_locator": "Exact source identity; full page searched for growth conditions",
+        "exact_source_quote": "ASWP (Artificial Seawater for Protozoa)",
+        "snapshot_sha256": "93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926",
+        "parsed_text_sha256": "6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267"
+      }
+    ],
+    "interpretation": "The exact source provides no corresponding organism-growth value. Importer defaults are not evidence; do not equate soil-processing conditions with culture conditions."
+  },
+  {
+    "decision_id": "q17",
+    "label": "SE2 approximate extract pH",
+    "decision": "add",
+    "source_stage": "SE2 stock pH",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "ccapSE2current",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_SE2_Freshwater.pdf",
+        "source_locator": "SE2 soil selection and final extract pH",
+        "exact_source_quote": "slightly alkaline (the final pH of this  extract should be ~7.1) . Site selection for a good soil is",
+        "snapshot_sha256": "63b8f356f55aae82c10f2400f5698b224518dac2a81914d46a10162979275572",
+        "parsed_text_sha256": "ca7743b78774c81abf136d378891dcf11a19aa31f31c41efae98520c5f59fab1"
+      }
+    ],
+    "interpretation": "Retain approximately pH 7.1 for the soil extract, distinct from final ASWP pH 7.6–7.8. Do not require a silently invented titrant dose."
+  },
+  {
+    "decision_id": "q18",
+    "label": "SE2 Initial sieve",
+    "decision": "add",
+    "source_stage": "SE2 preparation",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "ccapSE2current",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_SE2_Freshwater.pdf",
+        "source_locator": "SE2 Initial sieve sentence",
+        "exact_source_quote": "invertebrates should be removed during an initial sieving through a 1 cm mesh. The sieved soil",
+        "snapshot_sha256": "63b8f356f55aae82c10f2400f5698b224518dac2a81914d46a10162979275572",
+        "parsed_text_sha256": "ca7743b78774c81abf136d378891dcf11a19aa31f31c41efae98520c5f59fab1"
+      }
+    ],
+    "interpretation": "Retain the 1 cm mesh for soil. This is the referenced stock process only."
+  },
+  {
+    "decision_id": "q19",
+    "label": "SE2 Optional drying",
+    "decision": "add",
+    "source_stage": "SE2 preparation",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "ccapSE2current",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_SE2_Freshwater.pdf",
+        "source_locator": "SE2 Optional drying sentence",
+        "exact_source_quote": "should be spread to air dry  or placed in a drying oven at around 50 °C. When dry, the soil is",
+        "snapshot_sha256": "63b8f356f55aae82c10f2400f5698b224518dac2a81914d46a10162979275572",
+        "parsed_text_sha256": "ca7743b78774c81abf136d378891dcf11a19aa31f31c41efae98520c5f59fab1"
+      }
+    ],
+    "interpretation": "Around 50°C is optional soil drying. This is the referenced stock process only."
+  },
+  {
+    "decision_id": "q20",
+    "label": "SE2 Second sieve",
+    "decision": "add",
+    "source_stage": "SE2 preparation",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "ccapSE2current",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_SE2_Freshwater.pdf",
+        "source_locator": "SE2 Second sieve sentence",
+        "exact_source_quote": "sieved again through a finer mesh (2-4 mm) and stored in an airtight container away from light",
+        "snapshot_sha256": "63b8f356f55aae82c10f2400f5698b224518dac2a81914d46a10162979275572",
+        "parsed_text_sha256": "ca7743b78774c81abf136d378891dcf11a19aa31f31c41efae98520c5f59fab1"
+      }
+    ],
+    "interpretation": "Retain the 2–4 mm sieve. This is the referenced stock process only."
+  },
+  {
+    "decision_id": "q21",
+    "label": "SE2 Soil/water ratio",
+    "decision": "add",
+    "source_stage": "SE2 preparation",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "ccapSE2current",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_SE2_Freshwater.pdf",
+        "source_locator": "SE2 Soil/water ratio sentence",
+        "exact_source_quote": "Soil is prepared as above. Dried soil and twice its volume of supernatant d eionised water are",
+        "snapshot_sha256": "63b8f356f55aae82c10f2400f5698b224518dac2a81914d46a10162979275572",
+        "parsed_text_sha256": "ca7743b78774c81abf136d378891dcf11a19aa31f31c41efae98520c5f59fab1"
+      }
+    ],
+    "interpretation": "Retain the twice-soil-volume water ratio, not a guessed soil mass concentration. This is the referenced stock process only."
+  },
+  {
+    "decision_id": "q22",
+    "label": "SE2 First cycle",
+    "decision": "add",
+    "source_stage": "SE2 preparation",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "ccapSE2current",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_SE2_Freshwater.pdf",
+        "source_locator": "SE2 First cycle sentence",
+        "exact_source_quote": "autoclaved together at 15 psi and 126°C for 20 minutes. After the mixture has cooled, it is then",
+        "snapshot_sha256": "63b8f356f55aae82c10f2400f5698b224518dac2a81914d46a10162979275572",
+        "parsed_text_sha256": "ca7743b78774c81abf136d378891dcf11a19aa31f31c41efae98520c5f59fab1"
+      }
+    ],
+    "interpretation": "Preserve the exact printed 15 psi, 126°C and 20 minutes. This is the referenced stock process only."
+  },
+  {
+    "decision_id": "q23",
+    "label": "SE2 Second cycle",
+    "decision": "add",
+    "source_stage": "SE2 preparation",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "ccapSE2current",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_SE2_Freshwater.pdf",
+        "source_locator": "SE2 Second cycle sentence",
+        "exact_source_quote": "autoclaved for a second time at 15 psi and 126°C for 20 minutes. After the mixture has cooled,",
+        "snapshot_sha256": "63b8f356f55aae82c10f2400f5698b224518dac2a81914d46a10162979275572",
+        "parsed_text_sha256": "ca7743b78774c81abf136d378891dcf11a19aa31f31c41efae98520c5f59fab1"
+      }
+    ],
+    "interpretation": "Preserve the repeated cycle after cooling. This is the referenced stock process only."
+  },
+  {
+    "decision_id": "q24",
+    "label": "SE2 Settling",
+    "decision": "add",
+    "source_stage": "SE2 preparation",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "ccapSE2current",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_SE2_Freshwater.pdf",
+        "source_locator": "SE2 Settling sentence",
+        "exact_source_quote": "the bottle is sealed with parafilm and left undisturbed on a shelf for around two to three weeks",
+        "snapshot_sha256": "63b8f356f55aae82c10f2400f5698b224518dac2a81914d46a10162979275572",
+        "parsed_text_sha256": "ca7743b78774c81abf136d378891dcf11a19aa31f31c41efae98520c5f59fab1"
+      }
+    ],
+    "interpretation": "Around two to three weeks concerns sediment settling. This is the referenced stock process only."
+  },
+  {
+    "decision_id": "q25",
+    "label": "SE2 Final cycle",
+    "decision": "add",
+    "source_stage": "SE2 preparation",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "ccapSE2current",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_SE2_Freshwater.pdf",
+        "source_locator": "SE2 Final cycle sentence",
+        "exact_source_quote": "After decanting, the final soil extract is autoclaved for a third time at 15 psi and 121 °C for 15 \nminutes. After the soil extract has cooled, the bottle is sealed with parafilm and stored in the",
+        "snapshot_sha256": "63b8f356f55aae82c10f2400f5698b224518dac2a81914d46a10162979275572",
+        "parsed_text_sha256": "ca7743b78774c81abf136d378891dcf11a19aa31f31c41efae98520c5f59fab1"
+      }
+    ],
+    "interpretation": "Preserve the final 15 psi, 121°C and 15-minute cycle without silently reconciling the printed pairs. This is the referenced stock process only."
+  },
+  {
+    "decision_id": "q26",
+    "label": "Soil strength and storage temperature",
+    "decision": "not_quantified",
+    "source_stage": "SE2 stock limits",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "ccapSE2current",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_SE2_Freshwater.pdf",
+        "source_locator": "SE2 soil-water ratio",
+        "exact_source_quote": "Soil is prepared as above. Dried soil and twice its volume of supernatant d eionised water are",
+        "snapshot_sha256": "63b8f356f55aae82c10f2400f5698b224518dac2a81914d46a10162979275572",
+        "parsed_text_sha256": "ca7743b78774c81abf136d378891dcf11a19aa31f31c41efae98520c5f59fab1"
+      },
+      {
+        "source_key": "ccapSE2current",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_SE2_Freshwater.pdf",
+        "source_locator": "SE2 storage",
+        "exact_source_quote": "fridge.",
+        "snapshot_sha256": "63b8f356f55aae82c10f2400f5698b224518dac2a81914d46a10162979275572",
+        "parsed_text_sha256": "ca7743b78774c81abf136d378891dcf11a19aa31f31c41efae98520c5f59fab1"
+      }
+    ],
+    "interpretation": "No soil g/L or numerical refrigerator temperature is given. Preserve calcareous garden-loam selection, cooling, aseptic decanting and refrigerated storage without inventing strengths."
+  }
+]
+
+## Findings
+
+### f1: ASWP stock doses and commercial salt are missing
+
+blocker / open / confirmed; issue key: cm000051-stocks.
+
+The three stock strengths are flattened into final ingredients, while 3.75 ml stock, 50 ml SE2 and 33.6 g Instant Ocean per litre are absent. This materially changes the represented formulation.
+
+### f2: NaNO3 is grounded to Azimilide
+
+major / open / confirmed; issue key: cm000051-nitrate.
+
+Both layers store NaNO and CHEBI:34545 Azimilide, an unrelated organic drug. A correct canonical label is not a source identity check.
+
+### f3: Generated instruction row is stale and stock preparation is absent
+
+major / open / confirmed; issue key: cm000051-instructions.
+
+The owner already restores make-up, pH and sterilization, but the target keeps these as a 1 M pseudo-ingredient. Neither layer retains the distinct SE2 process and its approximate pH.
+
+### f4: Generic algae metadata exceeds the protozoa recipe source
+
+major / open / confirmed; issue key: cm000051-scope.
+
+The exact source is Artificial Seawater for Protozoa and prescribes deionized water plus Instant Ocean. Generic algae applications, light/temperature numbers and a natural-seawater alternative are not authenticated by this page.
+
+### f5: Curation confidence and general references do not support individual claims
+
+minor / open / confirmed; issue key: cm000051-provenance.
+
+No concentration or preparation claim has an exact attached excerpt. LLM confidence and historical quality flags are not scientific verification; several timestamps lack a timezone.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore the complete source formulation with separate stock composition/doses, soil extract and commercial sea salts, preserving original units and stage boundaries.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Correct source identity with independently verified sodium-nitrate grounding; no unverified replacement identifier is proposed here.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Preserve valid owner preparation and attach evidence, represent the referenced soil stock and repair generated staleness only through authorized regeneration.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Reconcile organism/use metadata with the source and remove or qualify unsupported growth recommendations and alternative solvent scope.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a5
+
+Add exact version/stage evidence and preserve old history while appending supported provenance clarification.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ASWP.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/algae/aswp.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ASWP.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ASWP.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch032/318/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-032/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch032/318/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ASWP.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ASWP.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/normalized_yaml/algae/aswp.yaml:1:id: CultureMech:000051<br>./data/merge_yaml/merged/ASWP.yaml:1:id: CultureMech:000051<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch032/source-preflight-bound/318/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 10 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| primary | https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf; Complete one-page revision 002 stock and final-medium tables | supports | Exact ASWP primary visually inspected. It specifies a stock dose, soil extract and artificial sea salts. |
+| soil | https://www.ccap.ac.uk/wp-content/uploads/MR_SE2_Freshwater.pdf; Full SE2 preparing-soil and Medium sections | supports | The referenced SE2 is garden/calcareous loam extract, distinct from ASW SE1. |
+| soil-index | https://www.ccap.ac.uk/index.php/media-recipes/; Official current recipe index ASWP and SE2 links | supports | The official index resolves the successful current SE2 PDF separately from the preserved old-URL 404. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:131527 resolves to dipotassium hydrogen phosphate. Stored labels: ['dipotassium hydrogen phosphate']. Exact label correspondence is separate from source chemical-form support. |
+| chebi34545 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34545; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:34545 resolves to Azimilide. Stored labels: ['Azimilide']. Exact label correspondence is separate from source chemical-form support. |
+| chebi34683 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34683; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:34683 resolves to disodium hydrogenphosphate. Stored labels: ['disodium hydrogenphosphate']. Exact label correspondence is separate from source chemical-form support. |
+| chebi46760 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_46760; Exact OLS ID, canonical label, obsolete flag and supplied-form annotations | supports | CHEBI:46760 resolves to tricine. Stored labels: ['tricine']. Exact label correspondence is separate from source chemical-form support. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Entire pinned index exact identifier lookup; adjacent snapshot metadata | context_only | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "rows": {}, "missing_current_keys": []} |
+| history-metadata | data/merge_yaml/merged/ASWP.yaml; data/normalized_yaml/algae/aswp.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 9, "timestamp_issues": [{"index": 2, "issue": "timezone absent", "value": "2026-02-03T11:26:43.467066"}, {"index": 5, "issue": "timezone absent", "value": "2026-04-04T20:18:55.033745"}]}, {"input": "data/normalized_yaml/algae/aswp.yaml", "events": 10, "timestamp_issues": [{"index": 2, "issue": "timezone absent", "value": "2026-02-03T11:26:43.467066"}, {"index": 5, "issue": "timezone absent", "value": "2026-04-04T20:18:55.033745"}]}] |
+| writer-0 | src/culturemech/merge/formulation.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current exact importer defaults, instruction repair, source normalization and merge functions read; the repair excludes stock-strength remediation. These are current context, not proof of historical execution. |
+| writer-1 | scripts/cleanup_media_quality.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current exact importer defaults, instruction repair, source normalization and merge functions read; the repair excludes stock-strength remediation. These are current context, not proof of historical execution. |
+| writer-2 | scripts/repair_ccap_instruction_rows.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current exact importer defaults, instruction repair, source normalization and merge functions read; the repair excludes stock-strength remediation. These are current context, not proof of historical execution. |
+| writer-3 | scripts/repair_ccap_sources_score10.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current exact importer defaults, instruction repair, source normalization and merge functions read; the repair excludes stock-strength remediation. These are current context, not proof of historical execution. |
+| writer-4 | src/culturemech/import/ccap_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current exact importer defaults, instruction repair, source normalization and merge functions read; the repair excludes stock-strength remediation. These are current context, not proof of historical execution. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch032/318/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| ccapSE2-attempt | https://www.ccap.ac.uk/wp-content/uploads/MR_SE2.pdf; Preserved exact public retrieval result | context_only | The old SE2 candidate URL returned 404, preserved separately from the official-index-linked successful current SE2 PDF; required stock content is available. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- The old SE2 candidate URL returned 404, preserved separately from the official-index-linked successful current SE2 PDF; required stock content is available.
+- Assessment uses the captured current CCAP adaptation. No historical PDF byte equivalence, commercial ingredient breakdown, unprinted main-cycle temperature or strain-specific growth is inferred. ASW vitamin and natural-seawater variants are not imported into ASWP.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T180142Z-culturemech-000051-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: aswp (CultureMech:000051)'
+started_at: '2026-10-21T17:54:28Z'
+finished_at: '2026-10-21T18:01:42Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The exact CCAP ASWP formulation is identifiable, but both layers flatten
+  three stock strengths, omit their 3.75 ml dose, omit 50 ml SE2 and 33.6 g Instant
+  Ocean, and misground nitrate as Azimilide. The maintained owner correctly restores
+  final make-up, pH and sterilization; the generated target still treats an instruction
+  as a 1 M ingredient. Imported algae-growth defaults and a natural-seawater alternative
+  are not established by this protozoa-specific source.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ASWP.yaml
+    sha256: 63fd00fbf822f7ebd61042261a90787e2a47a97cda893daa3f965fd3a98fecc0
+    role: target
+  - path: data/normalized_yaml/algae/aswp.yaml
+    sha256: ebca663e9ba27583fbf59e7cce2203dca0c38d5f066900de5be315ee65928ca2
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_ccap_instruction_rows.py
+    sha256: eb1a4c8c46eb45dcdde6a5d2f0f6833792dd0802c45603eefa1b63a3ff96fca5
+    role: context
+  - path: scripts/repair_ccap_sources_score10.py
+    sha256: f518688ae99e154f490af337dab30b9038657a814db72861e0b53658a2541ae6
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/ccap_raw_yaml.py
+    sha256: f2c119c4f67bd245c9fbd2b7480c1c6454a64b79922599cb583203628f476a8c
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/ccap_fetcher.py
+    sha256: 09e297722639216f5211096bcac559fae674a03a46e0d324f8360996836368e8
+    role: context
+  - path: src/culturemech/import/ccap_importer.py
+    sha256: c579c1d8fb62b96e739e5ee5c963453753ebca0bbf50996fb0f0d6eedd75c9ac
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 318; batch 032 item 8 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirty-one task batches
+    contain 310 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 313 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:000051
+targets:
+- target_id: CultureMech:000051
+  path: data/merge_yaml/merged/ASWP.yaml
+  label: aswp
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/aswp.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ASWP.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:000051
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ASWP.yaml --workers 1 --out
+    /private/tmp/culturemech-review-work-batch032/318/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-032/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch032/318/strict.tsv"
+  target_ids:
+  - CultureMech:000051
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ASWP.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:000051
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ASWP.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:000051
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:000051
+- check_id: ccapSE2-source-access
+  name: 'Exact source content access: ccapSE2'
+  required: false
+  status: unavailable
+  summary: The old SE2 candidate URL returned 404, preserved separately from the official-index-linked
+    successful current SE2 PDF; required stock content is available.
+  target_ids:
+  - CultureMech:000051
+  evidence_ids:
+  - ccapSE2-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ASWP.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T18:01:41Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/algae/aswp.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T18:01:41Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ASWP.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:55:26.059026Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ASWP.yaml --workers 1 --out
+    /private/tmp/culturemech-review-work-batch032/318/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:55:27.077076Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-032/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch032/318/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ASWP.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:55:28.261296Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ASWP.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:55:28.994086Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T18:01:41Z'
+  support: supports
+  summary: './data/normalized_yaml/algae/aswp.yaml:1:id: CultureMech:000051
+
+    ./data/merge_yaml/merged/ASWP.yaml:1:id: CultureMech:000051
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch032/source-preflight-bound/318/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T18:01:41Z'
+  support: supports
+  summary: 10 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: e75401ebe508d40518e7f78487c0603f368a690c1595b937d1b59bef562b0c83
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf
+  locator: Complete one-page revision 002 stock and final-medium tables
+  accessed_at: '2026-10-21T17:38:20.734740Z'
+  support: supports
+  summary: Exact ASWP primary visually inspected. It specifies a stock dose, soil
+    extract and artificial sea salts.
+  quote: Stock solution 1      3.75 ml
+  snapshot_sha256: 93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926
+- evidence_id: soil
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_SE2_Freshwater.pdf
+  locator: Full SE2 preparing-soil and Medium sections
+  accessed_at: '2026-10-21T17:40:19.056330Z'
+  support: supports
+  summary: The referenced SE2 is garden/calcareous loam extract, distinct from ASW
+    SE1.
+  quote: slightly alkaline (the final pH of this  extract should be ~7.1) . Site selection
+    for a good soil is
+  snapshot_sha256: 63b8f356f55aae82c10f2400f5698b224518dac2a81914d46a10162979275572
+- evidence_id: soil-index
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/index.php/media-recipes/
+  locator: Official current recipe index ASWP and SE2 links
+  accessed_at: '2026-10-21T17:40:19.055901Z'
+  support: supports
+  summary: The official index resolves the successful current SE2 PDF separately from
+    the preserved old-URL 404.
+  snapshot_sha256: 4b852c1459cfe0aa8c80d91a3282b6aef37c3a979be6dd9a49268afa286a0a38
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: 'CHEBI:131527 resolves to dipotassium hydrogen phosphate. Stored labels:
+    [''dipotassium hydrogen phosphate'']. Exact label correspondence is separate from
+    source chemical-form support.'
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi34545
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34545
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T17:38:21.396213Z'
+  support: supports
+  summary: 'CHEBI:34545 resolves to Azimilide. Stored labels: [''Azimilide'']. Exact
+    label correspondence is separate from source chemical-form support.'
+  snapshot_sha256: 7428ebe8819bde10a59ec0490021b3d056e688351b91e01e783e037de23ade79
+- evidence_id: chebi34683
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34683
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T08:42:46.851695Z'
+  support: supports
+  summary: 'CHEBI:34683 resolves to disodium hydrogenphosphate. Stored labels: [''disodium
+    hydrogenphosphate'']. Exact label correspondence is separate from source chemical-form
+    support.'
+  snapshot_sha256: 288ee6eaa066e7579840122d3411df9987889818425faea2b7203724bbc41fd2
+- evidence_id: chebi46760
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_46760
+  locator: Exact OLS ID, canonical label, obsolete flag and supplied-form annotations
+  accessed_at: '2026-10-21T07:16:24.837633Z'
+  support: supports
+  summary: 'CHEBI:46760 resolves to tricine. Stored labels: [''tricine'']. Exact label
+    correspondence is separate from source chemical-form support.'
+  snapshot_sha256: 209acf0fe4e8f79f96615834a69b6a113baf59b37f08ecedb1a154b6ada66c27
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Entire pinned index exact identifier lookup; adjacent snapshot metadata
+  accessed_at: '2026-10-21T18:01:41Z'
+  support: context_only
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "rows":
+    {}, "missing_current_keys": []}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ASWP.yaml; data/normalized_yaml/algae/aswp.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T18:01:41Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 9, "timestamp_issues": [{"index": 2, "issue":
+    "timezone absent", "value": "2026-02-03T11:26:43.467066"}, {"index": 5, "issue":
+    "timezone absent", "value": "2026-04-04T20:18:55.033745"}]}, {"input": "data/normalized_yaml/algae/aswp.yaml",
+    "events": 10, "timestamp_issues": [{"index": 2, "issue": "timezone absent", "value":
+    "2026-02-03T11:26:43.467066"}, {"index": 5, "issue": "timezone absent", "value":
+    "2026-04-04T20:18:55.033745"}]}]'
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T18:01:41Z'
+  support: context_only
+  summary: Current exact importer defaults, instruction repair, source normalization
+    and merge functions read; the repair excludes stock-strength remediation. These
+    are current context, not proof of historical execution.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-1
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T18:01:41Z'
+  support: context_only
+  summary: Current exact importer defaults, instruction repair, source normalization
+    and merge functions read; the repair excludes stock-strength remediation. These
+    are current context, not proof of historical execution.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer-2
+  kind: record_content
+  reference: scripts/repair_ccap_instruction_rows.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T18:01:41Z'
+  support: context_only
+  summary: Current exact importer defaults, instruction repair, source normalization
+    and merge functions read; the repair excludes stock-strength remediation. These
+    are current context, not proof of historical execution.
+  snapshot_sha256: eb1a4c8c46eb45dcdde6a5d2f0f6833792dd0802c45603eefa1b63a3ff96fca5
+- evidence_id: writer-3
+  kind: record_content
+  reference: scripts/repair_ccap_sources_score10.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T18:01:41Z'
+  support: context_only
+  summary: Current exact importer defaults, instruction repair, source normalization
+    and merge functions read; the repair excludes stock-strength remediation. These
+    are current context, not proof of historical execution.
+  snapshot_sha256: f518688ae99e154f490af337dab30b9038657a814db72861e0b53658a2541ae6
+- evidence_id: writer-4
+  kind: record_content
+  reference: src/culturemech/import/ccap_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T18:01:41Z'
+  support: context_only
+  summary: Current exact importer defaults, instruction repair, source normalization
+    and merge functions read; the repair excludes stock-strength remediation. These
+    are current context, not proof of historical execution.
+  snapshot_sha256: c579c1d8fb62b96e739e5ee5c963453753ebca0bbf50996fb0f0d6eedd75c9ac
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch032/318/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T18:01:41Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 118950450b0c7329b64c509b5dc455a7fb7f4f918662a899f0f663bbfe9b6be9
+- evidence_id: ccapSE2-attempt
+  kind: database
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_SE2.pdf
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T17:39:19.133547Z'
+  support: context_only
+  summary: The old SE2 candidate URL returned 404, preserved separately from the official-index-linked
+    successful current SE2 PDF; required stock content is available.
+  snapshot_sha256: 6c9ed553795e8fdafd185a49c1c04ff672b9b9aa4b41a44e8299789fff510090
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:000051
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: All asserted primary and current secondary chemical identifiers
+  outcome: concern
+  summary: '4 distinct primary/current-secondary IDs resolve to nonobsolete terms;
+    exact stored/canonical labels are recorded separately in each term evidence item.
+    Target direct-ingredient linkage is 4/5 primary (80.00%) and 0/5 current CHEBI-based
+    secondary (0.00%), on a 0–100 linkage scale, not an accuracy score. Current secondary
+    keys without pinned index rows: []. Legacy slot count 0 is separate and does not
+    enter that current-key claim. Supplied-form correspondence is assessed separately.'
+  target_ids:
+  - CultureMech:000051
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi131527
+  - chebi34545
+  - chebi34683
+  - chebi46760
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: concern
+  summary: 19 timestamp instances inspected; 4 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:000051
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: identity
+  area: identity
+  topic: Exact source and owner membership
+  outcome: supported
+  summary: CCAP:ASWP and MR_ASWP identify Artificial Seawater for Protozoa. The single
+    matching stable-ID owner is algae/aswp.yaml; the bacterial namesake is excluded.
+    The salt stock is named ASW Stock 1, but this does not import ASW vitamins or
+    its natural-seawater branch.
+  target_ids:
+  - CultureMech:000051
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - soil-index
+- assessment_id: forms
+  area: grounding
+  topic: Source formula versus correct canonical labels
+  outcome: concern
+  summary: CHEBI:34545 canonically denotes Azimilide, which does not represent the
+    printed NaNO3. The two phosphate formulas and tricine match the source at its
+    stated level; no additional hydrate or commercial-salt constituent identity is
+    inferred. Both layers assert zero current or legacy secondary MIM slots.
+  target_ids:
+  - CultureMech:000051
+  evidence_ids:
+  - primary
+  - chebi34545
+  - chebi34683
+  - chebi131527
+  - chebi46760
+  - mim
+- assessment_id: classification
+  area: scope
+  topic: Protozoa source and growth conditions
+  outcome: concern
+  summary: Complex/undefined liquid character is consistent with soil extract and
+    commercial sea salts. The source explicitly says for Protozoa; the algae category
+    and generic phytoplankton applications need qualification. Neither growth temperature/light
+    defaults nor a natural-seawater alternative is specified here. No strain growth
+    claim is inferred from the title.
+  target_ids:
+  - CultureMech:000051
+  evidence_ids:
+  - record
+  - primary
+  - soil
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 26 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:000051
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"decision_id\": \"q1\",\n    \"label\": \"NaNO3 stock strength\"\
+    ,\n    \"decision\": \"correct\",\n    \"source_stage\": \"Extra-salt stock 1\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ASWP.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15.00\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/algae/aswp.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15.00\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"ccapASWP\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf\"\
+    ,\n        \"source_locator\": \"Stock-table heading\",\n        \"exact_source_quote\"\
+    : \"Stocks         per litre\",\n        \"snapshot_sha256\": \"93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926\"\
+    ,\n        \"parsed_text_sha256\": \"6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267\"\
+    \n      },\n      {\n        \"source_key\": \"ccapASWP\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf\",\n        \"source_locator\"\
+    : \"Extra-salt stock exact ingredient row\",\n        \"exact_source_quote\":\
+    \ \"NaNO3       15.00 g\",\n        \"snapshot_sha256\": \"93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926\"\
+    ,\n        \"parsed_text_sha256\": \"6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain the printed amount per litre\
+    \ of stock. The existing G_PER_L value is in a direct-ingredient slot but applies\
+    \ to the separately dosed stock, not final medium.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q2\",\n    \"label\": \"Na2HPO4 stock strength\",\n    \"decision\": \"correct\"\
+    ,\n    \"source_stage\": \"Extra-salt stock 1\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/merge_yaml/merged/ASWP.yaml\",\n        \"field_path\"\
+    : \"ingredients[1].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.60\",\n          \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/algae/aswp.yaml\",\n        \"field_path\"\
+    : \"ingredients[1].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.60\",\n          \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n   \
+    \ \"source_snippets\": [\n      {\n        \"source_key\": \"ccapASWP\",\n   \
+    \     \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf\"\
+    ,\n        \"source_locator\": \"Stock-table heading\",\n        \"exact_source_quote\"\
+    : \"Stocks         per litre\",\n        \"snapshot_sha256\": \"93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926\"\
+    ,\n        \"parsed_text_sha256\": \"6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267\"\
+    \n      },\n      {\n        \"source_key\": \"ccapASWP\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf\",\n        \"source_locator\"\
+    : \"Extra-salt stock exact ingredient row\",\n        \"exact_source_quote\":\
+    \ \"Na2HPO4      0.60 g\",\n        \"snapshot_sha256\": \"93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926\"\
+    ,\n        \"parsed_text_sha256\": \"6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain the printed amount per litre\
+    \ of stock. The existing G_PER_L value is in a direct-ingredient slot but applies\
+    \ to the separately dosed stock, not final medium.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q3\",\n    \"label\": \"K2HPO4 stock strength\",\n    \"decision\": \"correct\"\
+    ,\n    \"source_stage\": \"Extra-salt stock 1\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/merge_yaml/merged/ASWP.yaml\",\n        \"field_path\"\
+    : \"ingredients[2].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.50\",\n          \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/algae/aswp.yaml\",\n        \"field_path\"\
+    : \"ingredients[2].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.50\",\n          \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n   \
+    \ \"source_snippets\": [\n      {\n        \"source_key\": \"ccapASWP\",\n   \
+    \     \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf\"\
+    ,\n        \"source_locator\": \"Stock-table heading\",\n        \"exact_source_quote\"\
+    : \"Stocks         per litre\",\n        \"snapshot_sha256\": \"93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926\"\
+    ,\n        \"parsed_text_sha256\": \"6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267\"\
+    \n      },\n      {\n        \"source_key\": \"ccapASWP\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf\",\n        \"source_locator\"\
+    : \"Extra-salt stock exact ingredient row\",\n        \"exact_source_quote\":\
+    \ \"K2HPO4       0.50 g\",\n        \"snapshot_sha256\": \"93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926\"\
+    ,\n        \"parsed_text_sha256\": \"6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain the printed amount per litre\
+    \ of stock. The existing G_PER_L value is in a direct-ingredient slot but applies\
+    \ to the separately dosed stock, not final medium.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q4\",\n    \"label\": \"Tricine\",\n    \"decision\": \"evidence_only\",\n\
+    \    \"source_stage\": \"Final medium\",\n    \"local_fields\": [\n      {\n \
+    \       \"input\": \"data/merge_yaml/merged/ASWP.yaml\",\n        \"field_path\"\
+    : \"ingredients[3].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n  \
+    \      \"input\": \"data/normalized_yaml/algae/aswp.yaml\",\n        \"field_path\"\
+    : \"ingredients[3].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"ccapASWP\",\n       \
+    \ \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf\",\n\
+    \        \"source_locator\": \"Final-medium heading\",\n        \"exact_source_quote\"\
+    : \"Medium         per litre\",\n        \"snapshot_sha256\": \"93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926\"\
+    ,\n        \"parsed_text_sha256\": \"6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267\"\
+    \n      },\n      {\n        \"source_key\": \"ccapASWP\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf\",\n        \"source_locator\"\
+    : \"Final-medium tricine row\",\n        \"exact_source_quote\": \"Tricine   \
+    \    0.5 g\",\n        \"snapshot_sha256\": \"93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926\"\
+    ,\n        \"parsed_text_sha256\": \"6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267\"\
+    \n      }\n    ],\n    \"interpretation\": \"The stored 0.5 g/L matches the main-medium\
+    \ table; neither layer attaches amount evidence.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q5\",\n    \"label\": \"Extra-salt stock 3.75 ml per litre\",\n    \"decision\"\
+    : \"add\",\n    \"source_stage\": \"Final-medium stock addition\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ASWP.yaml\",\n     \
+    \   \"field_path\": \"solutions\",\n        \"stored\": null,\n        \"presence\"\
+    : \"absent\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/algae/aswp.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"presence\": \"absent\"\n      }\n    ],\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"ccapASWP\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf\"\
+    ,\n        \"source_locator\": \"Medium per litre exact stock addition\",\n  \
+    \      \"exact_source_quote\": \"Stock solution 1      3.75 ml\",\n        \"\
+    snapshot_sha256\": \"93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926\"\
+    ,\n        \"parsed_text_sha256\": \"6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267\"\
+    \n      }\n    ],\n    \"interpretation\": \"Restore this explicit dose and its\
+    \ own stock identity. ASW vitamin stock is not part of this source formulation.\"\
+    \n  },\n  {\n    \"decision_id\": \"q6\",\n    \"label\": \"SE2 50 ml per litre\"\
+    ,\n    \"decision\": \"add\",\n    \"source_stage\": \"Final-medium stock addition\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ASWP.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"presence\": \"absent\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/algae/aswp.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"presence\": \"absent\"\n      }\n    ],\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"ccapASWP\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf\"\
+    ,\n        \"source_locator\": \"Medium per litre exact stock addition\",\n  \
+    \      \"exact_source_quote\": \"Stock solution 2 (SE2)     50.0 ml\",\n     \
+    \   \"snapshot_sha256\": \"93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926\"\
+    ,\n        \"parsed_text_sha256\": \"6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267\"\
+    \n      }\n    ],\n    \"interpretation\": \"Restore this explicit dose and its\
+    \ own stock identity. ASW vitamin stock is not part of this source formulation.\"\
+    \n  },\n  {\n    \"decision_id\": \"q7\",\n    \"label\": \"Instant Ocean sea\
+    \ salts\",\n    \"decision\": \"add\",\n    \"source_stage\": \"Final medium\"\
+    ,\n    \"local_fields\": [],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"ccapASWP\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf\"\
+    ,\n        \"source_locator\": \"Medium per litre sea-salt row\",\n        \"\
+    exact_source_quote\": \"\\\"Instant Ocean\\\" sea salts     33.6 g\",\n      \
+    \  \"snapshot_sha256\": \"93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926\"\
+    ,\n        \"parsed_text_sha256\": \"6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267\"\
+    \n      }\n    ],\n    \"interpretation\": \"Add the explicit commercial sea-salt\
+    \ amount of 33.6 g per litre as its own component, without guessing its constituent\
+    \ formula. This is not an optional alternative in ASWP.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q8\",\n    \"label\": \"Target instruction as 1 M ingredient\",\n    \"decision\"\
+    : \"correct\",\n    \"source_stage\": \"Final make-up and titration\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ASWP.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].preferred_term\",\n        \"stored\"\
+    : \"Make up to 1 litre with deionised water and adjust pH to 7.6 - 7.8 with\"\n\
+    \      },\n      {\n        \"input\": \"data/merge_yaml/merged/ASWP.yaml\",\n\
+    \        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"MOLAR\"\n        }\n \
+    \     }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\":\
+    \ \"ccapASWP\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf\"\
+    ,\n        \"source_locator\": \"Final make-up and pH sentence\",\n        \"\
+    exact_source_quote\": \"Make up to 1 litre with deionised water and adjust pH\
+    \ to 7.6 - 7.8 with 1M NaOH or 1M HCl.\",\n        \"snapshot_sha256\": \"93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926\"\
+    ,\n        \"parsed_text_sha256\": \"6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267\"\
+    \n      }\n    ],\n    \"interpretation\": \"The target combines the 1 L make-up,\
+    \ pH 7.6–7.8 and titrant phrase as a 1 M ingredient. Remove this representation\
+    \ and retain separate preparation stages; 1 M describes NaOH or HCl, not the medium.\"\
+    \n  },\n  {\n    \"decision_id\": \"q9\",\n    \"label\": \"Owner final make-up\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_stage\": \"Final volume\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/algae/aswp.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0]\",\n        \"stored\": {\n\
+    \          \"step_number\": 1,\n          \"action\": \"MIX\",\n          \"description\"\
+    : \"Bring to 1 L with deionised water.\"\n        }\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"ccapASWP\",\n        \"source_url\": \"\
+    https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf\",\n        \"source_locator\"\
+    : \"Final make-up sentence\",\n        \"exact_source_quote\": \"Make up to 1\
+    \ litre with deionised water and adjust pH to 7.6 - 7.8 with 1M NaOH or 1M HCl.\"\
+    ,\n        \"snapshot_sha256\": \"93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926\"\
+    ,\n        \"parsed_text_sha256\": \"6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267\"\
+    \n      }\n    ],\n    \"interpretation\": \"The owner correctly makes up to 1\
+    \ L with deionized water. Do not replace this with a 1 L addition after stocks.\"\
+    \n  },\n  {\n    \"decision_id\": \"q10\",\n    \"label\": \"Owner pH and titrant\
+    \ strengths\",\n    \"decision\": \"evidence_only\",\n    \"source_stage\": \"\
+    Final-medium titration\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/normalized_yaml/algae/aswp.yaml\",\n        \"field_path\": \"preparation_steps[1]\"\
+    ,\n        \"stored\": {\n          \"step_number\": 2,\n          \"action\"\
+    : \"ADJUST_PH\",\n          \"description\": \"Adjust pH to 7.6-7.8 with 1 M NaOH\
+    \ or 1 M HCl before autoclaving.\"\n        }\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"ccapASWP\",\n        \"source_url\": \"\
+    https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf\",\n        \"source_locator\"\
+    : \"pH and titrant sentence\",\n        \"exact_source_quote\": \"Make up to 1\
+    \ litre with deionised water and adjust pH to 7.6 - 7.8 with 1M NaOH or 1M HCl.\"\
+    ,\n        \"snapshot_sha256\": \"93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926\"\
+    ,\n        \"parsed_text_sha256\": \"6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267\"\
+    \n      }\n    ],\n    \"interpretation\": \"The existing pH 7.6–7.8 and 1 M NaOH\
+    \ or 1 M HCl are source-supported preparation values. Attach narrow evidence;\
+    \ no titrant volume is supplied.\"\n  },\n  {\n    \"decision_id\": \"q11\",\n\
+    \    \"label\": \"Target restored preparation\",\n    \"decision\": \"add\",\n\
+    \    \"source_stage\": \"Main preparation\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/ASWP.yaml\",\n        \"field_path\"\
+    : \"preparation_steps\",\n        \"stored\": null,\n        \"presence\": \"\
+    absent\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"ccapASWP\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf\"\
+    ,\n        \"source_locator\": \"Make-up and pH sentence\",\n        \"exact_source_quote\"\
+    : \"Make up to 1 litre with deionised water and adjust pH to 7.6 - 7.8 with 1M\
+    \ NaOH or 1M HCl.\",\n        \"snapshot_sha256\": \"93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926\"\
+    ,\n        \"parsed_text_sha256\": \"6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267\"\
+    \n      },\n      {\n        \"source_key\": \"ccapASWP\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf\",\n        \"source_locator\"\
+    : \"Main-medium sterilization sentence\",\n        \"exact_source_quote\": \"\
+    Autoclave at 15 psi for 15 minutes.\",\n        \"snapshot_sha256\": \"93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926\"\
+    ,\n        \"parsed_text_sha256\": \"6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267\"\
+    \n      }\n    ],\n    \"interpretation\": \"Restore the owner’s already-correct\
+    \ preparation structure in generated output through the normal authorized regeneration\
+    \ path. Keep 1 L, pH 7.6–7.8, both 1 M alternatives and 15 psi for 15 minutes\
+    \ separate.\"\n  },\n  {\n    \"decision_id\": \"q12\",\n    \"label\": \"Owner\
+    \ sterilization\",\n    \"decision\": \"evidence_only\",\n    \"source_stage\"\
+    : \"Main-medium sterilization\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/normalized_yaml/algae/aswp.yaml\",\n        \"field_path\": \"\
+    preparation_steps[2]\",\n        \"stored\": {\n          \"step_number\": 3,\n\
+    \          \"action\": \"AUTOCLAVE\",\n          \"description\": \"Autoclave\
+    \ at 15 psi for 15 minutes.\"\n        }\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"ccapASWP\",\n        \"source_url\": \"\
+    https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf\",\n        \"source_locator\"\
+    : \"Main-medium sterilization sentence\",\n        \"exact_source_quote\": \"\
+    Autoclave at 15 psi for 15 minutes.\",\n        \"snapshot_sha256\": \"93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926\"\
+    ,\n        \"parsed_text_sha256\": \"6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267\"\
+    \n      }\n    ],\n    \"interpretation\": \"The owner correctly preserves 15\
+    \ psi for 15 minutes. The main source gives no temperature or gauge/absolute basis;\
+    \ do not copy SE2 cycle temperature here.\"\n  },\n  {\n    \"decision_id\": \"\
+    q13\",\n    \"label\": \"Unquantified titrant doses and cycle limits\",\n    \"\
+    decision\": \"not_quantified\",\n    \"source_stage\": \"Main-medium source limits\"\
+    ,\n    \"local_fields\": [],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"ccapASWP\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf\"\
+    ,\n        \"source_locator\": \"pH sentence\",\n        \"exact_source_quote\"\
+    : \"Make up to 1 litre with deionised water and adjust pH to 7.6 - 7.8 with 1M\
+    \ NaOH or 1M HCl.\",\n        \"snapshot_sha256\": \"93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926\"\
+    ,\n        \"parsed_text_sha256\": \"6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267\"\
+    \n      },\n      {\n        \"source_key\": \"ccapASWP\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf\",\n        \"source_locator\"\
+    : \"Sterilization sentence\",\n        \"exact_source_quote\": \"Autoclave at\
+    \ 15 psi for 15 minutes.\",\n        \"snapshot_sha256\": \"93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926\"\
+    ,\n        \"parsed_text_sha256\": \"6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267\"\
+    \n      }\n    ],\n    \"interpretation\": \"No titrant volumes, main-cycle temperature\
+    \ or pressure reference are stated. Preserve these limits rather than infer values\
+    \ from stock strengths or soil processing.\"\n  },\n  {\n    \"decision_id\":\
+    \ \"q14\",\n    \"label\": \"Unsupported temperature_range\",\n    \"decision\"\
+    : \"unsupported\",\n    \"source_stage\": \"Unsupported growth conditions\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ASWP.yaml\"\
+    ,\n        \"field_path\": \"temperature_range\",\n        \"stored\": \"15-30°C\
+    \ depending on species\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/algae/aswp.yaml\"\
+    ,\n        \"field_path\": \"temperature_range\",\n        \"stored\": \"15-30°C\
+    \ depending on species\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"ccapASWP\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf\"\
+    ,\n        \"source_locator\": \"Exact source identity; full page searched for\
+    \ growth conditions\",\n        \"exact_source_quote\": \"ASWP (Artificial Seawater\
+    \ for Protozoa)\",\n        \"snapshot_sha256\": \"93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926\"\
+    ,\n        \"parsed_text_sha256\": \"6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267\"\
+    \n      }\n    ],\n    \"interpretation\": \"The exact source provides no corresponding\
+    \ organism-growth value. Importer defaults are not evidence; do not equate soil-processing\
+    \ conditions with culture conditions.\"\n  },\n  {\n    \"decision_id\": \"q15\"\
+    ,\n    \"label\": \"Unsupported light_intensity\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"source_stage\": \"Unsupported growth conditions\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ASWP.yaml\",\n     \
+    \   \"field_path\": \"light_intensity\",\n        \"stored\": \"Varies by species;\
+    \ typically 50-100 µmol photons m⁻² s⁻¹\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/algae/aswp.yaml\",\n        \"field_path\": \"light_intensity\"\
+    ,\n        \"stored\": \"Varies by species; typically 50-100 µmol photons m⁻²\
+    \ s⁻¹\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"ccapASWP\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf\"\
+    ,\n        \"source_locator\": \"Exact source identity; full page searched for\
+    \ growth conditions\",\n        \"exact_source_quote\": \"ASWP (Artificial Seawater\
+    \ for Protozoa)\",\n        \"snapshot_sha256\": \"93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926\"\
+    ,\n        \"parsed_text_sha256\": \"6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267\"\
+    \n      }\n    ],\n    \"interpretation\": \"The exact source provides no corresponding\
+    \ organism-growth value. Importer defaults are not evidence; do not equate soil-processing\
+    \ conditions with culture conditions.\"\n  },\n  {\n    \"decision_id\": \"q16\"\
+    ,\n    \"label\": \"Unsupported light_cycle\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"source_stage\": \"Unsupported growth conditions\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ASWP.yaml\",\n     \
+    \   \"field_path\": \"light_cycle\",\n        \"stored\": \"Varies by species;\
+    \ commonly 12:12 or 16:8 light:dark\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/algae/aswp.yaml\",\n        \"field_path\": \"light_cycle\"\
+    ,\n        \"stored\": \"Varies by species; commonly 12:12 or 16:8 light:dark\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"ccapASWP\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_ASWP.pdf\"\
+    ,\n        \"source_locator\": \"Exact source identity; full page searched for\
+    \ growth conditions\",\n        \"exact_source_quote\": \"ASWP (Artificial Seawater\
+    \ for Protozoa)\",\n        \"snapshot_sha256\": \"93e01896ad2bff39be29afa5a1da3ff9f3215a03b964202ee0a16e563289f926\"\
+    ,\n        \"parsed_text_sha256\": \"6b7fb2ec5622a28173fd27d9b1c566cbe3977b73fb86950eb4fbe67a97714267\"\
+    \n      }\n    ],\n    \"interpretation\": \"The exact source provides no corresponding\
+    \ organism-growth value. Importer defaults are not evidence; do not equate soil-processing\
+    \ conditions with culture conditions.\"\n  },\n  {\n    \"decision_id\": \"q17\"\
+    ,\n    \"label\": \"SE2 approximate extract pH\",\n    \"decision\": \"add\",\n\
+    \    \"source_stage\": \"SE2 stock pH\",\n    \"local_fields\": [],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"ccapSE2current\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_SE2_Freshwater.pdf\",\n     \
+    \   \"source_locator\": \"SE2 soil selection and final extract pH\",\n       \
+    \ \"exact_source_quote\": \"slightly alkaline (the final pH of this  extract should\
+    \ be ~7.1) . Site selection for a good soil is\",\n        \"snapshot_sha256\"\
+    : \"63b8f356f55aae82c10f2400f5698b224518dac2a81914d46a10162979275572\",\n    \
+    \    \"parsed_text_sha256\": \"ca7743b78774c81abf136d378891dcf11a19aa31f31c41efae98520c5f59fab1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain approximately pH 7.1 for the\
+    \ soil extract, distinct from final ASWP pH 7.6–7.8. Do not require a silently\
+    \ invented titrant dose.\"\n  },\n  {\n    \"decision_id\": \"q18\",\n    \"label\"\
+    : \"SE2 Initial sieve\",\n    \"decision\": \"add\",\n    \"source_stage\": \"\
+    SE2 preparation\",\n    \"local_fields\": [],\n    \"source_snippets\": [\n  \
+    \    {\n        \"source_key\": \"ccapSE2current\",\n        \"source_url\": \"\
+    https://www.ccap.ac.uk/wp-content/uploads/MR_SE2_Freshwater.pdf\",\n        \"\
+    source_locator\": \"SE2 Initial sieve sentence\",\n        \"exact_source_quote\"\
+    : \"invertebrates should be removed during an initial sieving through a 1 cm mesh.\
+    \ The sieved soil\",\n        \"snapshot_sha256\": \"63b8f356f55aae82c10f2400f5698b224518dac2a81914d46a10162979275572\"\
+    ,\n        \"parsed_text_sha256\": \"ca7743b78774c81abf136d378891dcf11a19aa31f31c41efae98520c5f59fab1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain the 1 cm mesh for soil. This\
+    \ is the referenced stock process only.\"\n  },\n  {\n    \"decision_id\": \"\
+    q19\",\n    \"label\": \"SE2 Optional drying\",\n    \"decision\": \"add\",\n\
+    \    \"source_stage\": \"SE2 preparation\",\n    \"local_fields\": [],\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"ccapSE2current\",\n \
+    \       \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_SE2_Freshwater.pdf\"\
+    ,\n        \"source_locator\": \"SE2 Optional drying sentence\",\n        \"exact_source_quote\"\
+    : \"should be spread to air dry  or placed in a drying oven at around 50 °C. When\
+    \ dry, the soil is\",\n        \"snapshot_sha256\": \"63b8f356f55aae82c10f2400f5698b224518dac2a81914d46a10162979275572\"\
+    ,\n        \"parsed_text_sha256\": \"ca7743b78774c81abf136d378891dcf11a19aa31f31c41efae98520c5f59fab1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Around 50°C is optional soil drying.\
+    \ This is the referenced stock process only.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q20\",\n    \"label\": \"SE2 Second sieve\",\n    \"decision\": \"add\",\n\
+    \    \"source_stage\": \"SE2 preparation\",\n    \"local_fields\": [],\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"ccapSE2current\",\n \
+    \       \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_SE2_Freshwater.pdf\"\
+    ,\n        \"source_locator\": \"SE2 Second sieve sentence\",\n        \"exact_source_quote\"\
+    : \"sieved again through a finer mesh (2-4 mm) and stored in an airtight container\
+    \ away from light\",\n        \"snapshot_sha256\": \"63b8f356f55aae82c10f2400f5698b224518dac2a81914d46a10162979275572\"\
+    ,\n        \"parsed_text_sha256\": \"ca7743b78774c81abf136d378891dcf11a19aa31f31c41efae98520c5f59fab1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain the 2–4 mm sieve. This is\
+    \ the referenced stock process only.\"\n  },\n  {\n    \"decision_id\": \"q21\"\
+    ,\n    \"label\": \"SE2 Soil/water ratio\",\n    \"decision\": \"add\",\n    \"\
+    source_stage\": \"SE2 preparation\",\n    \"local_fields\": [],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"ccapSE2current\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_SE2_Freshwater.pdf\",\n     \
+    \   \"source_locator\": \"SE2 Soil/water ratio sentence\",\n        \"exact_source_quote\"\
+    : \"Soil is prepared as above. Dried soil and twice its volume of supernatant\
+    \ d eionised water are\",\n        \"snapshot_sha256\": \"63b8f356f55aae82c10f2400f5698b224518dac2a81914d46a10162979275572\"\
+    ,\n        \"parsed_text_sha256\": \"ca7743b78774c81abf136d378891dcf11a19aa31f31c41efae98520c5f59fab1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain the twice-soil-volume water\
+    \ ratio, not a guessed soil mass concentration. This is the referenced stock process\
+    \ only.\"\n  },\n  {\n    \"decision_id\": \"q22\",\n    \"label\": \"SE2 First\
+    \ cycle\",\n    \"decision\": \"add\",\n    \"source_stage\": \"SE2 preparation\"\
+    ,\n    \"local_fields\": [],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"ccapSE2current\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_SE2_Freshwater.pdf\"\
+    ,\n        \"source_locator\": \"SE2 First cycle sentence\",\n        \"exact_source_quote\"\
+    : \"autoclaved together at 15 psi and 126°C for 20 minutes. After the mixture\
+    \ has cooled, it is then\",\n        \"snapshot_sha256\": \"63b8f356f55aae82c10f2400f5698b224518dac2a81914d46a10162979275572\"\
+    ,\n        \"parsed_text_sha256\": \"ca7743b78774c81abf136d378891dcf11a19aa31f31c41efae98520c5f59fab1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the exact printed 15 psi,\
+    \ 126°C and 20 minutes. This is the referenced stock process only.\"\n  },\n \
+    \ {\n    \"decision_id\": \"q23\",\n    \"label\": \"SE2 Second cycle\",\n   \
+    \ \"decision\": \"add\",\n    \"source_stage\": \"SE2 preparation\",\n    \"local_fields\"\
+    : [],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"ccapSE2current\"\
+    ,\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_SE2_Freshwater.pdf\"\
+    ,\n        \"source_locator\": \"SE2 Second cycle sentence\",\n        \"exact_source_quote\"\
+    : \"autoclaved for a second time at 15 psi and 126°C for 20 minutes. After the\
+    \ mixture has cooled,\",\n        \"snapshot_sha256\": \"63b8f356f55aae82c10f2400f5698b224518dac2a81914d46a10162979275572\"\
+    ,\n        \"parsed_text_sha256\": \"ca7743b78774c81abf136d378891dcf11a19aa31f31c41efae98520c5f59fab1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the repeated cycle after\
+    \ cooling. This is the referenced stock process only.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q24\",\n    \"label\": \"SE2 Settling\",\n    \"decision\": \"add\",\n   \
+    \ \"source_stage\": \"SE2 preparation\",\n    \"local_fields\": [],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"ccapSE2current\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_SE2_Freshwater.pdf\",\n     \
+    \   \"source_locator\": \"SE2 Settling sentence\",\n        \"exact_source_quote\"\
+    : \"the bottle is sealed with parafilm and left undisturbed on a shelf for around\
+    \ two to three weeks\",\n        \"snapshot_sha256\": \"63b8f356f55aae82c10f2400f5698b224518dac2a81914d46a10162979275572\"\
+    ,\n        \"parsed_text_sha256\": \"ca7743b78774c81abf136d378891dcf11a19aa31f31c41efae98520c5f59fab1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Around two to three weeks concerns\
+    \ sediment settling. This is the referenced stock process only.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q25\",\n    \"label\": \"SE2 Final cycle\",\n    \"decision\"\
+    : \"add\",\n    \"source_stage\": \"SE2 preparation\",\n    \"local_fields\":\
+    \ [],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"ccapSE2current\"\
+    ,\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_SE2_Freshwater.pdf\"\
+    ,\n        \"source_locator\": \"SE2 Final cycle sentence\",\n        \"exact_source_quote\"\
+    : \"After decanting, the final soil extract is autoclaved for a third time at\
+    \ 15 psi and 121 °C for 15 \\nminutes. After the soil extract has cooled, the\
+    \ bottle is sealed with parafilm and stored in the\",\n        \"snapshot_sha256\"\
+    : \"63b8f356f55aae82c10f2400f5698b224518dac2a81914d46a10162979275572\",\n    \
+    \    \"parsed_text_sha256\": \"ca7743b78774c81abf136d378891dcf11a19aa31f31c41efae98520c5f59fab1\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the final 15 psi, 121°C\
+    \ and 15-minute cycle without silently reconciling the printed pairs. This is\
+    \ the referenced stock process only.\"\n  },\n  {\n    \"decision_id\": \"q26\"\
+    ,\n    \"label\": \"Soil strength and storage temperature\",\n    \"decision\"\
+    : \"not_quantified\",\n    \"source_stage\": \"SE2 stock limits\",\n    \"local_fields\"\
+    : [],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"ccapSE2current\"\
+    ,\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_SE2_Freshwater.pdf\"\
+    ,\n        \"source_locator\": \"SE2 soil-water ratio\",\n        \"exact_source_quote\"\
+    : \"Soil is prepared as above. Dried soil and twice its volume of supernatant\
+    \ d eionised water are\",\n        \"snapshot_sha256\": \"63b8f356f55aae82c10f2400f5698b224518dac2a81914d46a10162979275572\"\
+    ,\n        \"parsed_text_sha256\": \"ca7743b78774c81abf136d378891dcf11a19aa31f31c41efae98520c5f59fab1\"\
+    \n      },\n      {\n        \"source_key\": \"ccapSE2current\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_SE2_Freshwater.pdf\",\n     \
+    \   \"source_locator\": \"SE2 storage\",\n        \"exact_source_quote\": \"fridge.\"\
+    ,\n        \"snapshot_sha256\": \"63b8f356f55aae82c10f2400f5698b224518dac2a81914d46a10162979275572\"\
+    ,\n        \"parsed_text_sha256\": \"ca7743b78774c81abf136d378891dcf11a19aa31f31c41efae98520c5f59fab1\"\
+    \n      }\n    ],\n    \"interpretation\": \"No soil g/L or numerical refrigerator\
+    \ temperature is given. Preserve calcareous garden-loam selection, cooling, aseptic\
+    \ decanting and refrigerated storage without inventing strengths.\"\n  }\n]"
+findings:
+- finding_id: f1
+  issue_key: cm000051-stocks
+  category: representation
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: ASWP stock doses and commercial salt are missing
+  description: The three stock strengths are flattened into final ingredients, while
+    3.75 ml stock, 50 ml SE2 and 33.6 g Instant Ocean per litre are absent. This materially
+    changes the represented formulation.
+  target_ids:
+  - CultureMech:000051
+  field_paths:
+  - ingredients
+  - solutions
+  evidence_ids:
+  - primary
+  - soil
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/aswp.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: cm000051-nitrate
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: NaNO3 is grounded to Azimilide
+  description: Both layers store NaNO and CHEBI:34545 Azimilide, an unrelated organic
+    drug. A correct canonical label is not a source identity check.
+  target_ids:
+  - CultureMech:000051
+  field_paths:
+  - ingredients[0].preferred_term
+  - ingredients[0].term
+  evidence_ids:
+  - primary
+  - chebi34545
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/aswp.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: cm000051-instructions
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generated instruction row is stale and stock preparation is absent
+  description: The owner already restores make-up, pH and sterilization, but the target
+    keeps these as a 1 M pseudo-ingredient. Neither layer retains the distinct SE2
+    process and its approximate pH.
+  target_ids:
+  - CultureMech:000051
+  field_paths:
+  - ingredients
+  - preparation_steps
+  - solutions
+  evidence_ids:
+  - owner-0
+  - primary
+  - soil
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/aswp.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: cm000051-scope
+  category: scope
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generic algae metadata exceeds the protozoa recipe source
+  description: The exact source is Artificial Seawater for Protozoa and prescribes
+    deionized water plus Instant Ocean. Generic algae applications, light/temperature
+    numbers and a natural-seawater alternative are not authenticated by this page.
+  target_ids:
+  - CultureMech:000051
+  field_paths:
+  - category
+  - description
+  - applications
+  - salinity
+  - light_intensity
+  - light_cycle
+  - temperature_range
+  evidence_ids:
+  - record
+  - primary
+  - writer-4
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/aswp.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f5
+  issue_key: cm000051-provenance
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Curation confidence and general references do not support individual claims
+  description: No concentration or preparation claim has an exact attached excerpt.
+    LLM confidence and historical quality flags are not scientific verification; several
+    timestamps lack a timezone.
+  target_ids:
+  - CultureMech:000051
+  field_paths:
+  - ingredients[*].curation_metadata
+  - ingredients[*].evidence
+  - curation_history
+  evidence_ids:
+  - primary
+  - history-metadata
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/aswp.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Restore the complete source formulation with separate stock composition/doses,
+    soil extract and commercial sea salts, preserving original units and stage boundaries.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:000051
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/aswp.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Correct source identity with independently verified sodium-nitrate
+    grounding; no unverified replacement identifier is proposed here.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:000051
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/aswp.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Preserve valid owner preparation and attach evidence, represent the
+    referenced soil stock and repair generated staleness only through authorized regeneration.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:000051
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/aswp.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Reconcile organism/use metadata with the source and remove or qualify
+    unsupported growth recommendations and alternative solvent scope.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:000051
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/aswp.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a5
+  description: Add exact version/stage evidence and preserve old history while appending
+    supported provenance clarification.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:000051
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/aswp.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- The old SE2 candidate URL returned 404, preserved separately from the official-index-linked
+  successful current SE2 PDF; required stock content is available.
+- Assessment uses the captured current CCAP adaptation. No historical PDF byte equivalence,
+  commercial ingredient breakdown, unprinted main-cycle temperature or strain-specific
+  growth is inferred. ASW vitamin and natural-seawater variants are not imported into
+  ASWP.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-032
+- generated-medium
+```

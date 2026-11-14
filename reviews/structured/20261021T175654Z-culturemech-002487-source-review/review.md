@@ -1,0 +1,2281 @@
+# Source and formulation review: artificial_pilot_plant_water_medium (CultureMech:002487)
+
+- Review: 20261021T175654Z-culturemech-002487-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T17:54:18Z
+- Finished UTC: 2026-10-21T17:56:54Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The exact JCM 1323 primary is unavailable and both current MediaDive requests failed. Nine later maintained-owner amount claims match decoded local historical derivatives, but their original response bytes remain unrecovered. The generated record lacks those later evidence objects. All ten amounts and preparation quantities are retained with explicit source limits; the ninth ingredient MnCl4 x 6 H2O remains unresolved without an invented chloride formula or hydrate. This is a partial scientific review, not confirmation that the inherited values are false.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 311; batch 032 item 1 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding thirty-one task batches contain 310 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 313 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:002487 | data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml | generated | artificial_pilot_plant_water_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:002487 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:002487 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-032/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch032/311/strict.tsv |
+| validate-terms | passed | True | CultureMech:002487 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:002487 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:002487 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: jcm1323 | unavailable | True | CultureMech:002487 | Exact JCM 1323 content is unavailable: HTTP 200 body says Nothing found. |
+| Exact source content access: mediadiveJ1323api | unavailable | False | CultureMech:002487 | Exact current MediaDive J1323 request returned HTTP 503; retained as an access limitation, not a scientific amount defect. |
+| Exact source content access: mediadiveJ1323api_retry | unavailable | False | CultureMech:002487 | Exact current MediaDive J1323 request returned HTTP 503; retained as an access limitation, not a scientific amount defect. |
+| Authenticate historical J1323 response | unavailable | True | CultureMech:002487 | The nine attached amount quotations and remaining derivative rows cannot be checked against the claimed original response SHA596fc5fb31b2f0ff60533720f819f45e07f8860fa4725dade74bc995f4be6de5 after the bounded ignored-inclusive search. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:002487.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:002487.
+
+14 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "quantity_id": "q1",
+    "component_or_context": "Na2SO4",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.022",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.022",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "historical-plan-derivative",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1323",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Na2SO4\",\n                        \"compound_id\": 110,\n                        \"amount\": 0.022,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.022,\n                        \"mmol_l\": 0.154886,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0feddb0e29b8d792f45eb6ab2c888dbd9ca91c53678fb3787e75731973bfbe54",
+        "local_derivative_path": "reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/plan.json",
+        "local_derivative_locator": "$.records[312].claims[0]",
+        "quote_status": "exact decoded local derivative; historical original raw unavailable",
+        "historical_claimed_response_sha256": "596fc5fb31b2f0ff60533720f819f45e07f8860fa4725dade74bc995f4be6de5",
+        "historical_claimed_accessed_at": "2026-10-07T15:22:26.941430+00:00"
+      }
+    ],
+    "proposed_source_representation": {
+      "unchanged_local_concentration": {
+        "value": "0.022",
+        "unit": "G_PER_L"
+      },
+      "historically_reported_amount": 0.022,
+      "historically_reported_unit": "g",
+      "historically_reported_g_l": 0.022,
+      "original_raw_authentication": "unavailable"
+    },
+    "rationale": "Both layers retain the same rate. The owner already has this quotation; the generated target does not. Evidence-only here preserves and qualifies the historical claim while seeking authentic source support; it is not a newly verified source concentration. The nine original snippets remain intact. No replacement number or independently measured final volume is established."
+  },
+  {
+    "quantity_id": "q2",
+    "component_or_context": "K2SO4",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.024",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.024",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "historical-plan-derivative",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1323",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"K2SO4\",\n                        \"compound_id\": 382,\n                        \"amount\": 0.024,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.024,\n                        \"mmol_l\": 0.137725,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0feddb0e29b8d792f45eb6ab2c888dbd9ca91c53678fb3787e75731973bfbe54",
+        "local_derivative_path": "reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/plan.json",
+        "local_derivative_locator": "$.records[312].claims[1]",
+        "quote_status": "exact decoded local derivative; historical original raw unavailable",
+        "historical_claimed_response_sha256": "596fc5fb31b2f0ff60533720f819f45e07f8860fa4725dade74bc995f4be6de5",
+        "historical_claimed_accessed_at": "2026-10-07T15:22:26.941430+00:00"
+      }
+    ],
+    "proposed_source_representation": {
+      "unchanged_local_concentration": {
+        "value": "0.024",
+        "unit": "G_PER_L"
+      },
+      "historically_reported_amount": 0.024,
+      "historically_reported_unit": "g",
+      "historically_reported_g_l": 0.024,
+      "original_raw_authentication": "unavailable"
+    },
+    "rationale": "Both layers retain the same rate. The owner already has this quotation; the generated target does not. Evidence-only here preserves and qualifies the historical claim while seeking authentic source support; it is not a newly verified source concentration. The nine original snippets remain intact. No replacement number or independently measured final volume is established."
+  },
+  {
+    "quantity_id": "q3",
+    "component_or_context": "MgSO4 x 7 H2O",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "3.24",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "3.24",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "historical-plan-derivative",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1323",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 3.24,\n                        \"unit\": \"g\",\n                        \"g_l\": 3.24,\n                        \"mmol_l\": 13.1453,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0feddb0e29b8d792f45eb6ab2c888dbd9ca91c53678fb3787e75731973bfbe54",
+        "local_derivative_path": "reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/plan.json",
+        "local_derivative_locator": "$.records[312].claims[2]",
+        "quote_status": "exact decoded local derivative; historical original raw unavailable",
+        "historical_claimed_response_sha256": "596fc5fb31b2f0ff60533720f819f45e07f8860fa4725dade74bc995f4be6de5",
+        "historical_claimed_accessed_at": "2026-10-07T15:22:26.941430+00:00"
+      }
+    ],
+    "proposed_source_representation": {
+      "unchanged_local_concentration": {
+        "value": "3.24",
+        "unit": "G_PER_L"
+      },
+      "historically_reported_amount": 3.24,
+      "historically_reported_unit": "g",
+      "historically_reported_g_l": 3.24,
+      "original_raw_authentication": "unavailable"
+    },
+    "rationale": "Both layers retain the same rate. The owner already has this quotation; the generated target does not. Evidence-only here preserves and qualifies the historical claim while seeking authentic source support; it is not a newly verified source concentration. The nine original snippets remain intact. No replacement number or independently measured final volume is established."
+  },
+  {
+    "quantity_id": "q4",
+    "component_or_context": "CaSO4 x 2 H2O",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.515",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.515",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "historical-plan-derivative",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1323",
+        "source_locator": "$.data.solutions[0].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"CaSO4 x 2 H2O\",\n                        \"compound_id\": 190,\n                        \"amount\": 0.515,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.515,\n                        \"mmol_l\": 2.99119,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0feddb0e29b8d792f45eb6ab2c888dbd9ca91c53678fb3787e75731973bfbe54",
+        "local_derivative_path": "reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/plan.json",
+        "local_derivative_locator": "$.records[312].claims[3]",
+        "quote_status": "exact decoded local derivative; historical original raw unavailable",
+        "historical_claimed_response_sha256": "596fc5fb31b2f0ff60533720f819f45e07f8860fa4725dade74bc995f4be6de5",
+        "historical_claimed_accessed_at": "2026-10-07T15:22:26.941430+00:00"
+      }
+    ],
+    "proposed_source_representation": {
+      "unchanged_local_concentration": {
+        "value": "0.515",
+        "unit": "G_PER_L"
+      },
+      "historically_reported_amount": 0.515,
+      "historically_reported_unit": "g",
+      "historically_reported_g_l": 0.515,
+      "original_raw_authentication": "unavailable"
+    },
+    "rationale": "Both layers retain the same rate. The owner already has this quotation; the generated target does not. Evidence-only here preserves and qualifies the historical claim while seeking authentic source support; it is not a newly verified source concentration. The nine original snippets remain intact. No replacement number or independently measured final volume is established."
+  },
+  {
+    "quantity_id": "q5",
+    "component_or_context": "NaHCO3",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.058",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.058",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "historical-plan-derivative",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1323",
+        "source_locator": "$.data.solutions[0].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"NaHCO3\",\n                        \"compound_id\": 55,\n                        \"amount\": 0.058,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.058,\n                        \"mmol_l\": 0.690419,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0feddb0e29b8d792f45eb6ab2c888dbd9ca91c53678fb3787e75731973bfbe54",
+        "local_derivative_path": "reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/plan.json",
+        "local_derivative_locator": "$.records[312].claims[4]",
+        "quote_status": "exact decoded local derivative; historical original raw unavailable",
+        "historical_claimed_response_sha256": "596fc5fb31b2f0ff60533720f819f45e07f8860fa4725dade74bc995f4be6de5",
+        "historical_claimed_accessed_at": "2026-10-07T15:22:26.941430+00:00"
+      }
+    ],
+    "proposed_source_representation": {
+      "unchanged_local_concentration": {
+        "value": "0.058",
+        "unit": "G_PER_L"
+      },
+      "historically_reported_amount": 0.058,
+      "historically_reported_unit": "g",
+      "historically_reported_g_l": 0.058,
+      "original_raw_authentication": "unavailable"
+    },
+    "rationale": "Both layers retain the same rate. The owner already has this quotation; the generated target does not. Evidence-only here preserves and qualifies the historical claim while seeking authentic source support; it is not a newly verified source concentration. The nine original snippets remain intact. No replacement number or independently measured final volume is established."
+  },
+  {
+    "quantity_id": "q6",
+    "component_or_context": "NH4Cl",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "historical-plan-derivative",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1323",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.186951,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0feddb0e29b8d792f45eb6ab2c888dbd9ca91c53678fb3787e75731973bfbe54",
+        "local_derivative_path": "reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/plan.json",
+        "local_derivative_locator": "$.records[312].claims[5]",
+        "quote_status": "exact decoded local derivative; historical original raw unavailable",
+        "historical_claimed_response_sha256": "596fc5fb31b2f0ff60533720f819f45e07f8860fa4725dade74bc995f4be6de5",
+        "historical_claimed_accessed_at": "2026-10-07T15:22:26.941430+00:00"
+      }
+    ],
+    "proposed_source_representation": {
+      "unchanged_local_concentration": {
+        "value": "0.01",
+        "unit": "G_PER_L"
+      },
+      "historically_reported_amount": 0.01,
+      "historically_reported_unit": "g",
+      "historically_reported_g_l": 0.01,
+      "original_raw_authentication": "unavailable"
+    },
+    "rationale": "Both layers retain the same rate. The owner already has this quotation; the generated target does not. Evidence-only here preserves and qualifies the historical claim while seeking authentic source support; it is not a newly verified source concentration. The nine original snippets remain intact. No replacement number or independently measured final volume is established."
+  },
+  {
+    "quantity_id": "q7",
+    "component_or_context": "Al2(SO4)3 x 18 H2O",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.014",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.014",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "historical-plan-derivative",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1323",
+        "source_locator": "$.data.solutions[0].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Al2(SO4)3 x 18 H2O\",\n                        \"compound_id\": 2070,\n                        \"amount\": 0.014,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.014,\n                        \"mmol_l\": 0.0210076,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0feddb0e29b8d792f45eb6ab2c888dbd9ca91c53678fb3787e75731973bfbe54",
+        "local_derivative_path": "reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/plan.json",
+        "local_derivative_locator": "$.records[312].claims[6]",
+        "quote_status": "exact decoded local derivative; historical original raw unavailable",
+        "historical_claimed_response_sha256": "596fc5fb31b2f0ff60533720f819f45e07f8860fa4725dade74bc995f4be6de5",
+        "historical_claimed_accessed_at": "2026-10-07T15:22:26.941430+00:00"
+      }
+    ],
+    "proposed_source_representation": {
+      "unchanged_local_concentration": {
+        "value": "0.014",
+        "unit": "G_PER_L"
+      },
+      "historically_reported_amount": 0.014,
+      "historically_reported_unit": "g",
+      "historically_reported_g_l": 0.014,
+      "original_raw_authentication": "unavailable"
+    },
+    "rationale": "Both layers retain the same rate. The owner already has this quotation; the generated target does not. Evidence-only here preserves and qualifies the historical claim while seeking authentic source support; it is not a newly verified source concentration. The nine original snippets remain intact. No replacement number or independently measured final volume is established."
+  },
+  {
+    "quantity_id": "q8",
+    "component_or_context": "FeSO4 x 7 H2O",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "1.344",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "1.344",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "historical-plan-derivative",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1323",
+        "source_locator": "$.data.solutions[0].recipe[7]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\": 12,\n                        \"amount\": 1.344,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.344,\n                        \"mmol_l\": 4.83427,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0feddb0e29b8d792f45eb6ab2c888dbd9ca91c53678fb3787e75731973bfbe54",
+        "local_derivative_path": "reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/plan.json",
+        "local_derivative_locator": "$.records[312].claims[7]",
+        "quote_status": "exact decoded local derivative; historical original raw unavailable",
+        "historical_claimed_response_sha256": "596fc5fb31b2f0ff60533720f819f45e07f8860fa4725dade74bc995f4be6de5",
+        "historical_claimed_accessed_at": "2026-10-07T15:22:26.941430+00:00"
+      }
+    ],
+    "proposed_source_representation": {
+      "unchanged_local_concentration": {
+        "value": "1.344",
+        "unit": "G_PER_L"
+      },
+      "historically_reported_amount": 1.344,
+      "historically_reported_unit": "g",
+      "historically_reported_g_l": 1.344,
+      "original_raw_authentication": "unavailable"
+    },
+    "rationale": "Both layers retain the same rate. The owner already has this quotation; the generated target does not. Evidence-only here preserves and qualifies the historical claim while seeking authentic source support; it is not a newly verified source concentration. The nine original snippets remain intact. No replacement number or independently measured final volume is established."
+  },
+  {
+    "quantity_id": "q9",
+    "component_or_context": "MnCl4 x 6 H2O",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.023",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.023",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "historical-plan-derivative",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1323",
+        "source_locator": "$.data.solutions[0].recipe[8]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"MnCl4 x 6 H2O\",\n                        \"compound_id\": 2071,\n                        \"amount\": 0.023,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.023,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0feddb0e29b8d792f45eb6ab2c888dbd9ca91c53678fb3787e75731973bfbe54",
+        "local_derivative_path": "reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/plan.json",
+        "local_derivative_locator": "$.records[312].claims[10]",
+        "quote_status": "exact decoded local derivative; historical original raw unavailable",
+        "historical_claimed_response_sha256": "596fc5fb31b2f0ff60533720f819f45e07f8860fa4725dade74bc995f4be6de5",
+        "historical_claimed_accessed_at": "2026-10-07T15:22:26.941430+00:00"
+      }
+    ],
+    "proposed_source_representation": {
+      "retain_literal_formula": "MnCl4 x 6 H2O",
+      "retained_unverified_value": {
+        "value": "0.023",
+        "unit": "G_PER_L"
+      },
+      "replacement_formula": null
+    },
+    "rationale": "The derivative row reports 0.023 g and g_l 0.023, but the exact chemical identity was withheld in the earlier report and remains unresolved. This is the ninth local row. Do not infer MnCl2, a hydrate count, a molecular weight or a replacement amount."
+  },
+  {
+    "quantity_id": "q10",
+    "component_or_context": "ZnCl2",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.0004",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.0004",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "historical-plan-derivative",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1323",
+        "source_locator": "$.data.solutions[0].recipe[9]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"ZnCl2\",\n                        \"compound_id\": 64,\n                        \"amount\": 0.4,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0004,\n                        \"mmol_l\": 0.0029347,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0feddb0e29b8d792f45eb6ab2c888dbd9ca91c53678fb3787e75731973bfbe54",
+        "local_derivative_path": "reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/plan.json",
+        "local_derivative_locator": "$.records[312].claims[9]",
+        "quote_status": "exact decoded local derivative; historical original raw unavailable",
+        "historical_claimed_response_sha256": "596fc5fb31b2f0ff60533720f819f45e07f8860fa4725dade74bc995f4be6de5",
+        "historical_claimed_accessed_at": "2026-10-07T15:22:26.941430+00:00"
+      }
+    ],
+    "proposed_source_representation": {
+      "unchanged_local_concentration": {
+        "value": "0.0004",
+        "unit": "G_PER_L"
+      },
+      "historically_reported_amount": 0.4,
+      "historically_reported_unit": "mg",
+      "historically_reported_g_l": 0.0004,
+      "original_raw_authentication": "unavailable"
+    },
+    "rationale": "Both layers retain the same rate. The owner already has this quotation; the generated target does not. Evidence-only here preserves and qualifies the historical claim while seeking authentic source support; it is not a newly verified source concentration. The nine original snippets remain intact. The derivative arithmetic 0.4 mg × 0.001 g/mg = 0.0004 g for its stated 1 L provider basis is internally consistent, but does not authenticate original bytes."
+  },
+  {
+    "quantity_id": "q11",
+    "component_or_context": "Historical source-only distilled water",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "FILTER_STERILIZE",
+            "description": "Mix components thoroughly, adjust pH 3.0 with H2SO4 and filter-sterilize."
+          }
+        ],
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "FILTER_STERILIZE",
+            "description": "Mix components thoroughly, adjust pH 3.0 with H2SO4 and filter-sterilize."
+          }
+        ],
+        "decision": "unsupported"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "historical-plan-derivative",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1323",
+        "source_locator": "$.data.solutions[0].recipe[10]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0feddb0e29b8d792f45eb6ab2c888dbd9ca91c53678fb3787e75731973bfbe54",
+        "local_derivative_path": "reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/plan.json",
+        "local_derivative_locator": "$.records[312].claims[11]",
+        "quote_status": "exact decoded local derivative; historical original raw unavailable",
+        "historical_claimed_response_sha256": "596fc5fb31b2f0ff60533720f819f45e07f8860fa4725dade74bc995f4be6de5",
+        "historical_claimed_accessed_at": "2026-10-07T15:22:26.941430+00:00"
+      }
+    ],
+    "proposed_source_representation": {
+      "historically_reported_water_ml": 1000,
+      "authenticated_source_water_volume_ml": null,
+      "measured_final_volume_ml": null
+    },
+    "rationale": "The derivative includes 1000 mL water, which is absent from both local preparation arrays. Preserve the lead; do not add an asserted volume before authenticating the source, and do not treat water alone as measured final volume."
+  },
+  {
+    "quantity_id": "q12",
+    "component_or_context": "Historical provider normalization denominator",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "FILTER_STERILIZE",
+            "description": "Mix components thoroughly, adjust pH 3.0 with H2SO4 and filter-sterilize."
+          }
+        ],
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "FILTER_STERILIZE",
+            "description": "Mix components thoroughly, adjust pH 3.0 with H2SO4 and filter-sterilize."
+          }
+        ],
+        "decision": "unsupported"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "historical-plan-derivative",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1323",
+        "source_locator": "$.data.solutions[0].recipe[0]; historical explanation of $.data.solutions[0].volume",
+        "exact_source_quote": "Additional exact value at $.data.solutions[0].volume (ml): 1000.",
+        "snapshot_sha256": "0feddb0e29b8d792f45eb6ab2c888dbd9ca91c53678fb3787e75731973bfbe54",
+        "local_derivative_path": "reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/plan.json",
+        "local_derivative_locator": "$.records[312].claims[0]",
+        "quote_status": "exact decoded local derivative; historical original raw unavailable",
+        "historical_claimed_response_sha256": "596fc5fb31b2f0ff60533720f819f45e07f8860fa4725dade74bc995f4be6de5",
+        "historical_claimed_accessed_at": "2026-10-07T15:22:26.941430+00:00"
+      }
+    ],
+    "proposed_source_representation": {
+      "historically_claimed_provider_volume_ml": 1000,
+      "measured_final_volume_ml": null
+    },
+    "rationale": "The owner explanations cite a provider-declared 1000 mL normalization basis. Its claimed provenance is retained, but this review has not authenticated the original response and cannot upgrade the claim to a measured final volume."
+  },
+  {
+    "quantity_id": "q13",
+    "component_or_context": "Preparation pH",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Mix components thoroughly, adjust pH 3.0 with H2SO4 and filter-sterilize.",
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Mix components thoroughly, adjust pH 3.0 with H2SO4 and filter-sterilize.",
+        "decision": "unsupported"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "historical-plan-derivative",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1323",
+        "source_locator": "$.data.solutions[0].steps[0]",
+        "exact_source_quote": "{\n                        \"step\": \"Mix components thoroughly, adjust pH 3.0 with H2SO4 and filter-sterilize.\"\n                    }",
+        "snapshot_sha256": "0feddb0e29b8d792f45eb6ab2c888dbd9ca91c53678fb3787e75731973bfbe54",
+        "local_derivative_path": "reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/plan.json",
+        "local_derivative_locator": "$.records[312].claims[12]",
+        "quote_status": "exact decoded local derivative; historical original raw unavailable",
+        "historical_claimed_response_sha256": "596fc5fb31b2f0ff60533720f819f45e07f8860fa4725dade74bc995f4be6de5",
+        "historical_claimed_accessed_at": "2026-10-07T15:22:26.941430+00:00"
+      }
+    ],
+    "proposed_source_representation": {
+      "local_preparation_pH": 3.0,
+      "source_authentication": "unavailable"
+    },
+    "rationale": "Both layers retain pH 3.0 within mixing/filter-sterilization prose. The derivative agrees, but no current primary or authenticated original source confirms the instruction. Preserve this scope without inventing incubation pH or promoting an independently verified scalar."
+  },
+  {
+    "quantity_id": "q14",
+    "component_or_context": "Sulfuric-acid adjustment amount",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Mix components thoroughly, adjust pH 3.0 with H2SO4 and filter-sterilize.",
+        "decision": "not_quantified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Mix components thoroughly, adjust pH 3.0 with H2SO4 and filter-sterilize.",
+        "decision": "not_quantified"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "historical-plan-derivative",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J1323",
+        "source_locator": "$.data.solutions[0].steps[0]",
+        "exact_source_quote": "{\n                        \"step\": \"Mix components thoroughly, adjust pH 3.0 with H2SO4 and filter-sterilize.\"\n                    }",
+        "snapshot_sha256": "0feddb0e29b8d792f45eb6ab2c888dbd9ca91c53678fb3787e75731973bfbe54",
+        "local_derivative_path": "reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/plan.json",
+        "local_derivative_locator": "$.records[312].claims[12]",
+        "quote_status": "exact decoded local derivative; historical original raw unavailable",
+        "historical_claimed_response_sha256": "596fc5fb31b2f0ff60533720f819f45e07f8860fa4725dade74bc995f4be6de5",
+        "historical_claimed_accessed_at": "2026-10-07T15:22:26.941430+00:00"
+      }
+    ],
+    "proposed_source_representation": {
+      "acid": "H2SO4",
+      "amount": null,
+      "stock_strength": null
+    },
+    "rationale": "The retained instruction names H2SO4 only; no mass, volume or stock strength is supplied even by the derivative. An unquantified adjustment is not zero and must not receive a typical concentration."
+  }
+]
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: supported. Targets: CultureMech:002487.
+
+9 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 9/10 primary and 9/10 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Source forms are assessed separately.
+
+Instance coverage on a 0–100 percent scale, denominator 10: primary 90.00%; secondary 90.00%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:002487.
+
+14 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Stable identity and collection/provider separation
+
+identity: supported. Targets: CultureMech:002487.
+
+CultureMech:002487 resolves to the exact generated record and one maintained owner. JCM accession 1323 is the original collection identity and MediaDive J1323 is the provider accession. Their current failure responses do not establish that the medium never existed or belongs to another accession. No internal solution/variant reference is asserted.
+
+### Source-specific formulas and unresolved manganese entry
+
+grounding: concern. Targets: CultureMech:002487.
+
+All nine asserted primary CHEBI terms and nine current secondary keys match current labels; their formulas agree with the locally named salts/hydrates. That metadata does not authenticate the unavailable recipe. MnCl4 x 6 H2O has neither a primary nor secondary ID and its identity remains unresolved; no plausible substitute is assigned.
+
+### Later owner evidence versus generated state
+
+evidence: concern. Targets: CultureMech:002487.
+
+All nine owner amount quotations match the pinned historical plan/report. The generated target predates the October 7 evidence addition and contains none of those objects or the later reference. Preserve the owner evidence and chronology, while stating that original raw authentication is unavailable. The difference is observed generated staleness; it does not prove the current merge implementation drops evidence.
+
+### Preparation and quantitative source boundaries
+
+completeness: unknown. Targets: CultureMech:002487.
+
+Mixing, pH 3.0 with sulfuric acid and filter sterilization survive in both layers and the derivative. There is no local numeric filter setting, acid dose or temperature, and none is invented. Water and the provider normalization basis are derivative-only leads. Source completeness, missing components and variants cannot be settled from the unavailable complete recipe.
+
+### Composition, physical state and organism claims
+
+scope: supported. Targets: CultureMech:002487.
+
+The listed inorganic salts are compatible with the local DEFINED/DEFINED and LIQUID classifications. This is a local compositional assessment, not independent confirmation of the whole source recipe. The generic cultivation application and title do not establish an organism, growth result, oxygen requirement or optimum. Missing optional organism fields do not justify invented taxonomy.
+
+### Maintained correction and generated evidence provenance
+
+ownership: supported. Targets: CultureMech:002487.
+
+The normalized artificial_pilot_plant_water_medium.yaml is the maintained owner; the merged path is generated. Current code distinguishes primary versus stocks and preserves compatible formulation evidence, so do not blame a current code path without reproducing a defect. Future corrections require verified owner evidence, append-only history and separate regeneration.
+
+## Findings
+
+### f1: Manganese entry lacks established supplied identity
+
+major / open / confirmed; issue key: culturemech.002487.manganese-identity-unresolved.
+
+The ninth ingredient ingredients[8] retains MnCl4 x 6 H2O at 0.023 G_PER_L. The historical report explicitly withheld source identity support, current primary content is unavailable, and no replacement formula or hydrate is established. This is an unresolved chemical identity, not evidence for a guessed corrected chloride.
+
+### f2: Generated record lacks the nine later owner evidence objects
+
+minor / open / confirmed; issue key: culturemech.002487.generated-evidence-stale.
+
+The target retains its August merge event while the maintained owner adds nine amount quotations, a reference and an October evidence history event. Their derivative matches are confirmed, but original source authentication remains unavailable.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Resolve the literal manganese formula and amount against authentic JCM 1323 or the exact historical provider response. Keep the unresolved identity explicit until then; do not substitute a chemically familiar salt or invent an ontology ID.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Preserve all later owner evidence and its historical source hash/time; explicitly document authentication limits. After source verification and any authorized owner updates, regenerate the target and confirm all nine narrow evidence objects and bibliography survive without changing original history.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch032/311/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-032/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch032/311/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml:1:id: CultureMech:002487<br>./data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml:1:id: CultureMech:002487<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch032/source-preflight-bound/311/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 14 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| bound-context | /private/tmp/culturemech-review-work-batch032/source-preflight-bound/311/evidence-context-original.json; Complete frozen target/owner context, historical search and derivative comparisons | context_only | All captured local records match fresh inspected bytes. Frozen prose calls Mn the tenth row; exact target/owner establish ingredients[8], the ninth row, and Zn is tenth. |
+| historical-derivatives | reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/plan.json; $.records[312]; all 13 claims and nine exact owner evidence strings | context_only | Nine attached owner quotations equal the decoded plan strings and the decoded report quotations. These are historical derivative matches, not original-response authentication. The reported October 7 access time and response SHA remain attributed historical metadata. |
+| historical-report | reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/records/bacterial/artificial_pilot_plant_water_medium.yaml.md; Entire per-record October 7 concentration report | context_only | The earlier report explicitly withheld Mn identity support, retained a source-only water row and preparation context, and limited nine accepted amount claims to provider-declared main rates. No prior structured finding is closed by this review. |
+| raw-search | /private/tmp/culturemech-review-source-preflight-batch032/historical-search.json; Bounded ignored-inclusive candidate search for exact historical response hash | context_only | The exact 596fc5fb31b2f0ff60533720f819f45e07f8860fa4725dade74bc995f4be6de5 response was not recovered in the recorded candidate scope. This is not universal absence. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch032/311/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31206 resolves to ammonium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32036; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32036 resolves to potassium sulfate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32139 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32139 resolves to sodium hydrogencarbonate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32149 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32149; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32149 resolves to sodium sulfate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32583 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32583; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32583 resolves to calcium sulfate dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi49976 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:49976 resolves to zinc dichloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi74779 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_74779; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:74779 resolves to aluminium sulfate octadecahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi75836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:75836 resolves to iron(2+) sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:31206": [{"label": "NH4Cl", "match_type": "preferred_term", "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32036": [{"label": "K2SO4", "match_type": "preferred_term", "identifier": "CHEBI:32036", "preferred_term": "K2SO4", "ontology_id": "CHEBI:32036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32139": [{"label": "NaHCO3", "match_type": "preferred_term", "identifier": "CHEBI:32139", "preferred_term": "NaHCO3", "ontology_id": "CHEBI:32139", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32149": [{"label": "Na2SO4", "match_type": "preferred_term", "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32583": [{"label": "CaSO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:32583", "preferred_term": "CaSO4 x 2 H2O", "ontology_id": "CHEBI:32583", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:49976": [{"label": "ZnCl2", "match_type": "preferred_term", "identifier": "CHEBI:49976", "preferred_term": "ZnCl2", "ontology_id": "CHEBI:49976", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:74779": [{"label": "Al2(SO4)3 x 18 H2O", "match_type": "preferred_term", "identifier": "CHEBI:74779", "preferred_term": "Al2(SO4)3 x 18 H2O", "ontology_id": "CHEBI:74779", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75836": [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| history-metadata | data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml; data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 7, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml", "events": 7, "timestamp_issues": []}] |
+| jcm1323-attempt | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1323; Preserved exact public retrieval result | context_only | Exact JCM 1323 content is unavailable: HTTP 200 body says Nothing found. |
+| mediadiveJ1323api-attempt | https://mediadive.dsmz.de/rest/medium/J1323; Preserved exact public retrieval result | context_only | Exact current MediaDive J1323 request returned HTTP 503; retained as an access limitation, not a scientific amount defect. |
+| mediadiveJ1323api_retry-attempt | https://mediadive.dsmz.de/rest/medium/J1323; Preserved exact public retrieval result | context_only | Exact current MediaDive J1323 request returned HTTP 503; retained as an access limitation, not a scientific amount defect. |
+| writer-0 | src/culturemech/import/mediadive_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current primary/stock selection, unit fallback, duplicate treatment and formulation-evidence preservation were read as present code only. They are not a replay of the historical import. Future authorized changes belong to the normalized owner; regenerate only after source verification and preserve claim-level evidence. |
+| writer-1 | scripts/cleanup_media_quality.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current primary/stock selection, unit fallback, duplicate treatment and formulation-evidence preservation were read as present code only. They are not a replay of the historical import. Future authorized changes belong to the normalized owner; regenerate only after source verification and preserve claim-level evidence. |
+| writer-2 | src/culturemech/merge/formulation.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current primary/stock selection, unit fallback, duplicate treatment and formulation-evidence preservation were read as present code only. They are not a replay of the historical import. Future authorized changes belong to the normalized owner; regenerate only after source verification and preserve claim-level evidence. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Exact JCM 1323 content is unavailable: HTTP 200 body says Nothing found.
+- Exact current MediaDive J1323 request returned HTTP 503; retained as an access limitation, not a scientific amount defect.
+- Exact current MediaDive J1323 request returned HTTP 503; retained as an access limitation, not a scientific amount defect.
+- The required complete primary formulation and historical response authentication are unavailable. Derivative agreement and current ontology metadata do not prove source recipe correctness; all amount decisions remain qualified accordingly.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T175654Z-culturemech-002487-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: artificial_pilot_plant_water_medium (CultureMech:002487)'
+started_at: '2026-10-21T17:54:18Z'
+finished_at: '2026-10-21T17:56:54Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The exact JCM 1323 primary is unavailable and both current MediaDive requests
+  failed. Nine later maintained-owner amount claims match decoded local historical
+  derivatives, but their original response bytes remain unrecovered. The generated
+  record lacks those later evidence objects. All ten amounts and preparation quantities
+  are retained with explicit source limits; the ninth ingredient MnCl4 x 6 H2O remains
+  unresolved without an invented chloride formula or hydrate. This is a partial scientific
+  review, not confirmation that the inherited values are false.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml
+    sha256: d9cdde8d82537cf0d30869286255b95965b081a60d77f2c798fb4d290142d298
+    role: target
+  - path: data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml
+    sha256: 90e33a6d48ab7d8d0290964dd30b93600df4c14dada8b7836b08717e8b83579b
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/plan.json
+    sha256: 0feddb0e29b8d792f45eb6ab2c888dbd9ca91c53678fb3787e75731973bfbe54
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/records/bacterial/artificial_pilot_plant_water_medium.yaml.md
+    sha256: 85addb84939811383d9de34d3e077d8f3105d605b4a36c1833e8f2185ff466c5
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/withholdings.json
+    sha256: fde1752af3766272531980e977eb09048180591826f9bfc74d3edf10ee96c1ae
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-medium-source-fetch-3000-3319.json
+    sha256: 37a7d40ccca0cd647f02d094703fe862bb01542ae382264687d29db04e4a6fd8
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 311; batch 032 item 1 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirty-one task batches
+    contain 310 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 313 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:002487
+targets:
+- target_id: CultureMech:002487
+  path: data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml
+  label: artificial_pilot_plant_water_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:002487
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch032/311/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-032/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch032/311/strict.tsv"
+  target_ids:
+  - CultureMech:002487
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:002487
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:002487
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:002487
+- check_id: jcm1323-source-access
+  name: 'Exact source content access: jcm1323'
+  required: true
+  status: unavailable
+  summary: 'Exact JCM 1323 content is unavailable: HTTP 200 body says Nothing found.'
+  target_ids:
+  - CultureMech:002487
+  evidence_ids:
+  - jcm1323-attempt
+- check_id: mediadiveJ1323api-source-access
+  name: 'Exact source content access: mediadiveJ1323api'
+  required: false
+  status: unavailable
+  summary: Exact current MediaDive J1323 request returned HTTP 503; retained as an
+    access limitation, not a scientific amount defect.
+  target_ids:
+  - CultureMech:002487
+  evidence_ids:
+  - mediadiveJ1323api-attempt
+- check_id: mediadiveJ1323api_retry-source-access
+  name: 'Exact source content access: mediadiveJ1323api_retry'
+  required: false
+  status: unavailable
+  summary: Exact current MediaDive J1323 request returned HTTP 503; retained as an
+    access limitation, not a scientific amount defect.
+  target_ids:
+  - CultureMech:002487
+  evidence_ids:
+  - mediadiveJ1323api_retry-attempt
+- check_id: historical-raw-authentication
+  name: Authenticate historical J1323 response
+  required: true
+  status: unavailable
+  summary: The nine attached amount quotations and remaining derivative rows cannot
+    be checked against the claimed original response SHA596fc5fb31b2f0ff60533720f819f45e07f8860fa4725dade74bc995f4be6de5
+    after the bounded ignored-inclusive search.
+  target_ids:
+  - CultureMech:002487
+  evidence_ids:
+  - historical-derivatives
+  - raw-search
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T17:56:53Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T17:56:53Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:54:41.802813Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch032/311/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:54:45.606677Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-032/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch032/311/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:54:49.091060Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:54:50.260294Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T17:56:53Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml:1:id:
+    CultureMech:002487
+
+    ./data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml:1:id:
+    CultureMech:002487
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch032/source-preflight-bound/311/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T17:56:53Z'
+  support: supports
+  summary: 14 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 448603f3dd63c152fe1ebc4b9f00bc952c5cd493c14ab6afdc91e7b74bacdb1e
+- evidence_id: bound-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch032/source-preflight-bound/311/evidence-context-original.json
+  locator: Complete frozen target/owner context, historical search and derivative
+    comparisons
+  accessed_at: '2026-10-21T17:56:53Z'
+  support: context_only
+  summary: All captured local records match fresh inspected bytes. Frozen prose calls
+    Mn the tenth row; exact target/owner establish ingredients[8], the ninth row,
+    and Zn is tenth.
+  snapshot_sha256: 99fdfcfed5286bc27aa19b2e194a5d9b299b5506f22c7e3d10950179383230d1
+- evidence_id: historical-derivatives
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/plan.json
+  locator: $.records[312]; all 13 claims and nine exact owner evidence strings
+  accessed_at: '2026-10-21T17:56:53Z'
+  support: context_only
+  summary: Nine attached owner quotations equal the decoded plan strings and the decoded
+    report quotations. These are historical derivative matches, not original-response
+    authentication. The reported October 7 access time and response SHA remain attributed
+    historical metadata.
+  snapshot_sha256: 0feddb0e29b8d792f45eb6ab2c888dbd9ca91c53678fb3787e75731973bfbe54
+- evidence_id: historical-report
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/records/bacterial/artificial_pilot_plant_water_medium.yaml.md
+  locator: Entire per-record October 7 concentration report
+  accessed_at: '2026-10-21T17:56:53Z'
+  support: context_only
+  summary: The earlier report explicitly withheld Mn identity support, retained a
+    source-only water row and preparation context, and limited nine accepted amount
+    claims to provider-declared main rates. No prior structured finding is closed
+    by this review.
+  snapshot_sha256: 85addb84939811383d9de34d3e077d8f3105d605b4a36c1833e8f2185ff466c5
+- evidence_id: raw-search
+  kind: search
+  reference: /private/tmp/culturemech-review-source-preflight-batch032/historical-search.json
+  locator: Bounded ignored-inclusive candidate search for exact historical response
+    hash
+  accessed_at: '2026-10-21T17:56:53Z'
+  support: context_only
+  summary: The exact 596fc5fb31b2f0ff60533720f819f45e07f8860fa4725dade74bc995f4be6de5
+    response was not recovered in the recorded candidate scope. This is not universal
+    absence.
+  snapshot_sha256: 2cae7c4f844978a6bbd337a840421f3352d5fde390866024d72741c10a81d13a
+  search_scope: Bounded ignored-inclusive exact-digest/URL/name candidate search of
+    owned /private/tmp CultureMech clones/work/source caches only; not universal byte
+    absence. No network, Git or native operations.
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch032/311/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T17:56:53Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 4c6a8fec6e9996f2b04c00f9189b45c484656fd57ce33627dcacc08089271a59
+- evidence_id: chebi31206
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.439407Z'
+  support: supports
+  summary: CHEBI:31206 resolves to ammonium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32036
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T06:57:47.376553Z'
+  support: supports
+  summary: CHEBI:32036 resolves to potassium sulfate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 0e2a526c994d512b314d090b5acbd8acbc65a9f998ac0d292d8756f2b97de777
+- evidence_id: chebi32139
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:16:24.226823Z'
+  support: supports
+  summary: CHEBI:32139 resolves to sodium hydrogencarbonate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 2a41873aa455dc8563a47d36add836fffb6fb758ce7a2d1c28295e77646315fe
+- evidence_id: chebi32149
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32149
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:18:34.792120Z'
+  support: supports
+  summary: CHEBI:32149 resolves to sodium sulfate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 49c4b3ee63a59ea3acba0006afd53c6050dd13cd2210a15e3395b100bc6749b8
+- evidence_id: chebi32583
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32583
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:31:16.887678Z'
+  support: supports
+  summary: CHEBI:32583 resolves to calcium sulfate dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: e0851fb219d91e71915c9d74b56d917e393753c4cdb94ade75821d447f4aec3c
+- evidence_id: chebi49976
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:04:44.168295Z'
+  support: supports
+  summary: CHEBI:49976 resolves to zinc dichloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: d27644ae0df5935f8f18a28faa1ba6096fefeb9d0cb951b39751d442c92bd321
+- evidence_id: chebi74779
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_74779
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T17:36:59.819583Z'
+  support: supports
+  summary: CHEBI:74779 resolves to aluminium sulfate octadecahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 53cc659183ab18ee5efe3e27db77c900ac9e3cc9f29b96fe51455d1342eb56dd
+- evidence_id: chebi75836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:07.038393Z'
+  support: supports
+  summary: CHEBI:75836 resolves to iron(2+) sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T17:56:53Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:31206":
+    [{"label": "NH4Cl", "match_type": "preferred_term", "identifier": "CHEBI:31206",
+    "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:32036": [{"label": "K2SO4", "match_type":
+    "preferred_term", "identifier": "CHEBI:32036", "preferred_term": "K2SO4", "ontology_id":
+    "CHEBI:32036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32139":
+    [{"label": "NaHCO3", "match_type": "preferred_term", "identifier": "CHEBI:32139",
+    "preferred_term": "NaHCO3", "ontology_id": "CHEBI:32139", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:32149": [{"label": "Na2SO4", "match_type": "preferred_term",
+    "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32583": [{"label":
+    "CaSO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:32583",
+    "preferred_term": "CaSO4 x 2 H2O", "ontology_id": "CHEBI:32583", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:49976": [{"label": "ZnCl2", "match_type":
+    "preferred_term", "identifier": "CHEBI:49976", "preferred_term": "ZnCl2", "ontology_id":
+    "CHEBI:49976", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:74779":
+    [{"label": "Al2(SO4)3 x 18 H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:74779", "preferred_term": "Al2(SO4)3 x 18 H2O", "ontology_id": "CHEBI:74779",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75836": [{"label":
+    "FeSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75836",
+    "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml; data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T17:56:53Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 7, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml",
+    "events": 7, "timestamp_issues": []}]'
+- evidence_id: jcm1323-attempt
+  kind: database
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1323
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T17:36:59.823126Z'
+  support: context_only
+  summary: 'Exact JCM 1323 content is unavailable: HTTP 200 body says Nothing found.'
+  snapshot_sha256: e4d7ffa595190f41a4ae2cec27fff9641431ae2587f52bfdd048581bcc473506
+- evidence_id: mediadiveJ1323api-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J1323
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T17:36:58.567826Z'
+  support: context_only
+  summary: Exact current MediaDive J1323 request returned HTTP 503; retained as an
+    access limitation, not a scientific amount defect.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadiveJ1323api_retry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J1323
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T17:38:20.163648Z'
+  support: context_only
+  summary: Exact current MediaDive J1323 request returned HTTP 503; retained as an
+    access limitation, not a scientific amount defect.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T17:56:53Z'
+  support: context_only
+  summary: Current primary/stock selection, unit fallback, duplicate treatment and
+    formulation-evidence preservation were read as present code only. They are not
+    a replay of the historical import. Future authorized changes belong to the normalized
+    owner; regenerate only after source verification and preserve claim-level evidence.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-1
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T17:56:53Z'
+  support: context_only
+  summary: Current primary/stock selection, unit fallback, duplicate treatment and
+    formulation-evidence preservation were read as present code only. They are not
+    a replay of the historical import. Future authorized changes belong to the normalized
+    owner; regenerate only after source verification and preserve claim-level evidence.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T17:56:53Z'
+  support: context_only
+  summary: Current primary/stock selection, unit fallback, duplicate treatment and
+    formulation-evidence preservation were read as present code only. They are not
+    a replay of the historical import. Future authorized changes belong to the normalized
+    owner; regenerate only after source verification and preserve claim-level evidence.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:002487
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 14 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:002487
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"component_or_context\": \"\
+    Na2SO4\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n   \
+    \   {\n        \"input\": \"data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.022\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.022\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"historical-plan-derivative\",\n      \
+    \  \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J1323\",\n        \"\
+    source_locator\": \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 1,\\n                  \
+    \      \\\"compound\\\": \\\"Na2SO4\\\",\\n                        \\\"compound_id\\\
+    \": 110,\\n                        \\\"amount\\\": 0.022,\\n                 \
+    \       \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.022,\\\
+    n                        \\\"mmol_l\\\": 0.154886,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    0feddb0e29b8d792f45eb6ab2c888dbd9ca91c53678fb3787e75731973bfbe54\",\n        \"\
+    local_derivative_path\": \"reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/plan.json\"\
+    ,\n        \"local_derivative_locator\": \"$.records[312].claims[0]\",\n     \
+    \   \"quote_status\": \"exact decoded local derivative; historical original raw\
+    \ unavailable\",\n        \"historical_claimed_response_sha256\": \"596fc5fb31b2f0ff60533720f819f45e07f8860fa4725dade74bc995f4be6de5\"\
+    ,\n        \"historical_claimed_accessed_at\": \"2026-10-07T15:22:26.941430+00:00\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"unchanged_local_concentration\"\
+    : {\n        \"value\": \"0.022\",\n        \"unit\": \"G_PER_L\"\n      },\n\
+    \      \"historically_reported_amount\": 0.022,\n      \"historically_reported_unit\"\
+    : \"g\",\n      \"historically_reported_g_l\": 0.022,\n      \"original_raw_authentication\"\
+    : \"unavailable\"\n    },\n    \"rationale\": \"Both layers retain the same rate.\
+    \ The owner already has this quotation; the generated target does not. Evidence-only\
+    \ here preserves and qualifies the historical claim while seeking authentic source\
+    \ support; it is not a newly verified source concentration. The nine original\
+    \ snippets remain intact. No replacement number or independently measured final\
+    \ volume is established.\"\n  },\n  {\n    \"quantity_id\": \"q2\",\n    \"component_or_context\"\
+    : \"K2SO4\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.024\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.024\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"historical-plan-derivative\",\n      \
+    \  \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J1323\",\n        \"\
+    source_locator\": \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 2,\\n                  \
+    \      \\\"compound\\\": \\\"K2SO4\\\",\\n                        \\\"compound_id\\\
+    \": 382,\\n                        \\\"amount\\\": 0.024,\\n                 \
+    \       \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.024,\\\
+    n                        \\\"mmol_l\\\": 0.137725,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    0feddb0e29b8d792f45eb6ab2c888dbd9ca91c53678fb3787e75731973bfbe54\",\n        \"\
+    local_derivative_path\": \"reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/plan.json\"\
+    ,\n        \"local_derivative_locator\": \"$.records[312].claims[1]\",\n     \
+    \   \"quote_status\": \"exact decoded local derivative; historical original raw\
+    \ unavailable\",\n        \"historical_claimed_response_sha256\": \"596fc5fb31b2f0ff60533720f819f45e07f8860fa4725dade74bc995f4be6de5\"\
+    ,\n        \"historical_claimed_accessed_at\": \"2026-10-07T15:22:26.941430+00:00\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"unchanged_local_concentration\"\
+    : {\n        \"value\": \"0.024\",\n        \"unit\": \"G_PER_L\"\n      },\n\
+    \      \"historically_reported_amount\": 0.024,\n      \"historically_reported_unit\"\
+    : \"g\",\n      \"historically_reported_g_l\": 0.024,\n      \"original_raw_authentication\"\
+    : \"unavailable\"\n    },\n    \"rationale\": \"Both layers retain the same rate.\
+    \ The owner already has this quotation; the generated target does not. Evidence-only\
+    \ here preserves and qualifies the historical claim while seeking authentic source\
+    \ support; it is not a newly verified source concentration. The nine original\
+    \ snippets remain intact. No replacement number or independently measured final\
+    \ volume is established.\"\n  },\n  {\n    \"quantity_id\": \"q3\",\n    \"component_or_context\"\
+    : \"MgSO4 x 7 H2O\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3.24\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3.24\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"historical-plan-derivative\",\n      \
+    \  \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J1323\",\n        \"\
+    source_locator\": \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 3,\\n                  \
+    \      \\\"compound\\\": \\\"MgSO4 x 7 H2O\\\",\\n                        \\\"\
+    compound_id\\\": 8,\\n                        \\\"amount\\\": 3.24,\\n       \
+    \                 \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\
+    \": 3.24,\\n                        \\\"mmol_l\\\": 13.1453,\\n              \
+    \          \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"0feddb0e29b8d792f45eb6ab2c888dbd9ca91c53678fb3787e75731973bfbe54\",\n    \
+    \    \"local_derivative_path\": \"reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/plan.json\"\
+    ,\n        \"local_derivative_locator\": \"$.records[312].claims[2]\",\n     \
+    \   \"quote_status\": \"exact decoded local derivative; historical original raw\
+    \ unavailable\",\n        \"historical_claimed_response_sha256\": \"596fc5fb31b2f0ff60533720f819f45e07f8860fa4725dade74bc995f4be6de5\"\
+    ,\n        \"historical_claimed_accessed_at\": \"2026-10-07T15:22:26.941430+00:00\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"unchanged_local_concentration\"\
+    : {\n        \"value\": \"3.24\",\n        \"unit\": \"G_PER_L\"\n      },\n \
+    \     \"historically_reported_amount\": 3.24,\n      \"historically_reported_unit\"\
+    : \"g\",\n      \"historically_reported_g_l\": 3.24,\n      \"original_raw_authentication\"\
+    : \"unavailable\"\n    },\n    \"rationale\": \"Both layers retain the same rate.\
+    \ The owner already has this quotation; the generated target does not. Evidence-only\
+    \ here preserves and qualifies the historical claim while seeking authentic source\
+    \ support; it is not a newly verified source concentration. The nine original\
+    \ snippets remain intact. No replacement number or independently measured final\
+    \ volume is established.\"\n  },\n  {\n    \"quantity_id\": \"q4\",\n    \"component_or_context\"\
+    : \"CaSO4 x 2 H2O\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.515\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.515\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"historical-plan-derivative\",\n      \
+    \  \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J1323\",\n        \"\
+    source_locator\": \"$.data.solutions[0].recipe[3]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 4,\\n                  \
+    \      \\\"compound\\\": \\\"CaSO4 x 2 H2O\\\",\\n                        \\\"\
+    compound_id\\\": 190,\\n                        \\\"amount\\\": 0.515,\\n    \
+    \                    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\
+    \": 0.515,\\n                        \\\"mmol_l\\\": 2.99119,\\n             \
+    \           \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"0feddb0e29b8d792f45eb6ab2c888dbd9ca91c53678fb3787e75731973bfbe54\",\n    \
+    \    \"local_derivative_path\": \"reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/plan.json\"\
+    ,\n        \"local_derivative_locator\": \"$.records[312].claims[3]\",\n     \
+    \   \"quote_status\": \"exact decoded local derivative; historical original raw\
+    \ unavailable\",\n        \"historical_claimed_response_sha256\": \"596fc5fb31b2f0ff60533720f819f45e07f8860fa4725dade74bc995f4be6de5\"\
+    ,\n        \"historical_claimed_accessed_at\": \"2026-10-07T15:22:26.941430+00:00\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"unchanged_local_concentration\"\
+    : {\n        \"value\": \"0.515\",\n        \"unit\": \"G_PER_L\"\n      },\n\
+    \      \"historically_reported_amount\": 0.515,\n      \"historically_reported_unit\"\
+    : \"g\",\n      \"historically_reported_g_l\": 0.515,\n      \"original_raw_authentication\"\
+    : \"unavailable\"\n    },\n    \"rationale\": \"Both layers retain the same rate.\
+    \ The owner already has this quotation; the generated target does not. Evidence-only\
+    \ here preserves and qualifies the historical claim while seeking authentic source\
+    \ support; it is not a newly verified source concentration. The nine original\
+    \ snippets remain intact. No replacement number or independently measured final\
+    \ volume is established.\"\n  },\n  {\n    \"quantity_id\": \"q5\",\n    \"component_or_context\"\
+    : \"NaHCO3\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.058\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.058\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"historical-plan-derivative\",\n      \
+    \  \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J1323\",\n        \"\
+    source_locator\": \"$.data.solutions[0].recipe[4]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 5,\\n                  \
+    \      \\\"compound\\\": \\\"NaHCO3\\\",\\n                        \\\"compound_id\\\
+    \": 55,\\n                        \\\"amount\\\": 0.058,\\n                  \
+    \      \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.058,\\\
+    n                        \\\"mmol_l\\\": 0.690419,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    0feddb0e29b8d792f45eb6ab2c888dbd9ca91c53678fb3787e75731973bfbe54\",\n        \"\
+    local_derivative_path\": \"reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/plan.json\"\
+    ,\n        \"local_derivative_locator\": \"$.records[312].claims[4]\",\n     \
+    \   \"quote_status\": \"exact decoded local derivative; historical original raw\
+    \ unavailable\",\n        \"historical_claimed_response_sha256\": \"596fc5fb31b2f0ff60533720f819f45e07f8860fa4725dade74bc995f4be6de5\"\
+    ,\n        \"historical_claimed_accessed_at\": \"2026-10-07T15:22:26.941430+00:00\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"unchanged_local_concentration\"\
+    : {\n        \"value\": \"0.058\",\n        \"unit\": \"G_PER_L\"\n      },\n\
+    \      \"historically_reported_amount\": 0.058,\n      \"historically_reported_unit\"\
+    : \"g\",\n      \"historically_reported_g_l\": 0.058,\n      \"original_raw_authentication\"\
+    : \"unavailable\"\n    },\n    \"rationale\": \"Both layers retain the same rate.\
+    \ The owner already has this quotation; the generated target does not. Evidence-only\
+    \ here preserves and qualifies the historical claim while seeking authentic source\
+    \ support; it is not a newly verified source concentration. The nine original\
+    \ snippets remain intact. No replacement number or independently measured final\
+    \ volume is established.\"\n  },\n  {\n    \"quantity_id\": \"q6\",\n    \"component_or_context\"\
+    : \"NH4Cl\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"historical-plan-derivative\",\n      \
+    \  \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J1323\",\n        \"\
+    source_locator\": \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 6,\\n                  \
+    \      \\\"compound\\\": \\\"NH4Cl\\\",\\n                        \\\"compound_id\\\
+    \": 42,\\n                        \\\"amount\\\": 0.01,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.01,\\\
+    n                        \\\"mmol_l\\\": 0.186951,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    0feddb0e29b8d792f45eb6ab2c888dbd9ca91c53678fb3787e75731973bfbe54\",\n        \"\
+    local_derivative_path\": \"reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/plan.json\"\
+    ,\n        \"local_derivative_locator\": \"$.records[312].claims[5]\",\n     \
+    \   \"quote_status\": \"exact decoded local derivative; historical original raw\
+    \ unavailable\",\n        \"historical_claimed_response_sha256\": \"596fc5fb31b2f0ff60533720f819f45e07f8860fa4725dade74bc995f4be6de5\"\
+    ,\n        \"historical_claimed_accessed_at\": \"2026-10-07T15:22:26.941430+00:00\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"unchanged_local_concentration\"\
+    : {\n        \"value\": \"0.01\",\n        \"unit\": \"G_PER_L\"\n      },\n \
+    \     \"historically_reported_amount\": 0.01,\n      \"historically_reported_unit\"\
+    : \"g\",\n      \"historically_reported_g_l\": 0.01,\n      \"original_raw_authentication\"\
+    : \"unavailable\"\n    },\n    \"rationale\": \"Both layers retain the same rate.\
+    \ The owner already has this quotation; the generated target does not. Evidence-only\
+    \ here preserves and qualifies the historical claim while seeking authentic source\
+    \ support; it is not a newly verified source concentration. The nine original\
+    \ snippets remain intact. No replacement number or independently measured final\
+    \ volume is established.\"\n  },\n  {\n    \"quantity_id\": \"q7\",\n    \"component_or_context\"\
+    : \"Al2(SO4)3 x 18 H2O\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.014\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.014\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"historical-plan-derivative\",\n      \
+    \  \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J1323\",\n        \"\
+    source_locator\": \"$.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 7,\\n                  \
+    \      \\\"compound\\\": \\\"Al2(SO4)3 x 18 H2O\\\",\\n                      \
+    \  \\\"compound_id\\\": 2070,\\n                        \\\"amount\\\": 0.014,\\\
+    n                        \\\"unit\\\": \\\"g\\\",\\n                        \\\
+    \"g_l\\\": 0.014,\\n                        \\\"mmol_l\\\": 0.0210076,\\n    \
+    \                    \\\"optional\\\": 0\\n                    }\",\n        \"\
+    snapshot_sha256\": \"0feddb0e29b8d792f45eb6ab2c888dbd9ca91c53678fb3787e75731973bfbe54\"\
+    ,\n        \"local_derivative_path\": \"reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/plan.json\"\
+    ,\n        \"local_derivative_locator\": \"$.records[312].claims[6]\",\n     \
+    \   \"quote_status\": \"exact decoded local derivative; historical original raw\
+    \ unavailable\",\n        \"historical_claimed_response_sha256\": \"596fc5fb31b2f0ff60533720f819f45e07f8860fa4725dade74bc995f4be6de5\"\
+    ,\n        \"historical_claimed_accessed_at\": \"2026-10-07T15:22:26.941430+00:00\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"unchanged_local_concentration\"\
+    : {\n        \"value\": \"0.014\",\n        \"unit\": \"G_PER_L\"\n      },\n\
+    \      \"historically_reported_amount\": 0.014,\n      \"historically_reported_unit\"\
+    : \"g\",\n      \"historically_reported_g_l\": 0.014,\n      \"original_raw_authentication\"\
+    : \"unavailable\"\n    },\n    \"rationale\": \"Both layers retain the same rate.\
+    \ The owner already has this quotation; the generated target does not. Evidence-only\
+    \ here preserves and qualifies the historical claim while seeking authentic source\
+    \ support; it is not a newly verified source concentration. The nine original\
+    \ snippets remain intact. No replacement number or independently measured final\
+    \ volume is established.\"\n  },\n  {\n    \"quantity_id\": \"q8\",\n    \"component_or_context\"\
+    : \"FeSO4 x 7 H2O\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.344\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.344\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"historical-plan-derivative\",\n      \
+    \  \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J1323\",\n        \"\
+    source_locator\": \"$.data.solutions[0].recipe[7]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 8,\\n                  \
+    \      \\\"compound\\\": \\\"FeSO4 x 7 H2O\\\",\\n                        \\\"\
+    compound_id\\\": 12,\\n                        \\\"amount\\\": 1.344,\\n     \
+    \                   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\
+    \": 1.344,\\n                        \\\"mmol_l\\\": 4.83427,\\n             \
+    \           \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"0feddb0e29b8d792f45eb6ab2c888dbd9ca91c53678fb3787e75731973bfbe54\",\n    \
+    \    \"local_derivative_path\": \"reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/plan.json\"\
+    ,\n        \"local_derivative_locator\": \"$.records[312].claims[7]\",\n     \
+    \   \"quote_status\": \"exact decoded local derivative; historical original raw\
+    \ unavailable\",\n        \"historical_claimed_response_sha256\": \"596fc5fb31b2f0ff60533720f819f45e07f8860fa4725dade74bc995f4be6de5\"\
+    ,\n        \"historical_claimed_accessed_at\": \"2026-10-07T15:22:26.941430+00:00\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"unchanged_local_concentration\"\
+    : {\n        \"value\": \"1.344\",\n        \"unit\": \"G_PER_L\"\n      },\n\
+    \      \"historically_reported_amount\": 1.344,\n      \"historically_reported_unit\"\
+    : \"g\",\n      \"historically_reported_g_l\": 1.344,\n      \"original_raw_authentication\"\
+    : \"unavailable\"\n    },\n    \"rationale\": \"Both layers retain the same rate.\
+    \ The owner already has this quotation; the generated target does not. Evidence-only\
+    \ here preserves and qualifies the historical claim while seeking authentic source\
+    \ support; it is not a newly verified source concentration. The nine original\
+    \ snippets remain intact. No replacement number or independently measured final\
+    \ volume is established.\"\n  },\n  {\n    \"quantity_id\": \"q9\",\n    \"component_or_context\"\
+    : \"MnCl4 x 6 H2O\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.023\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.023\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"unsupported\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"historical-plan-derivative\",\n      \
+    \  \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J1323\",\n        \"\
+    source_locator\": \"$.data.solutions[0].recipe[8]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 9,\\n                  \
+    \      \\\"compound\\\": \\\"MnCl4 x 6 H2O\\\",\\n                        \\\"\
+    compound_id\\\": 2071,\\n                        \\\"amount\\\": 0.023,\\n   \
+    \                     \\\"unit\\\": \\\"g\\\",\\n                        \\\"\
+    g_l\\\": 0.023,\\n                        \\\"optional\\\": 0\\n             \
+    \       }\",\n        \"snapshot_sha256\": \"0feddb0e29b8d792f45eb6ab2c888dbd9ca91c53678fb3787e75731973bfbe54\"\
+    ,\n        \"local_derivative_path\": \"reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/plan.json\"\
+    ,\n        \"local_derivative_locator\": \"$.records[312].claims[10]\",\n    \
+    \    \"quote_status\": \"exact decoded local derivative; historical original raw\
+    \ unavailable\",\n        \"historical_claimed_response_sha256\": \"596fc5fb31b2f0ff60533720f819f45e07f8860fa4725dade74bc995f4be6de5\"\
+    ,\n        \"historical_claimed_accessed_at\": \"2026-10-07T15:22:26.941430+00:00\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"retain_literal_formula\"\
+    : \"MnCl4 x 6 H2O\",\n      \"retained_unverified_value\": {\n        \"value\"\
+    : \"0.023\",\n        \"unit\": \"G_PER_L\"\n      },\n      \"replacement_formula\"\
+    : null\n    },\n    \"rationale\": \"The derivative row reports 0.023 g and g_l\
+    \ 0.023, but the exact chemical identity was withheld in the earlier report and\
+    \ remains unresolved. This is the ninth local row. Do not infer MnCl2, a hydrate\
+    \ count, a molecular weight or a replacement amount.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q10\",\n    \"component_or_context\": \"ZnCl2\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0004\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0004\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"historical-plan-derivative\",\n      \
+    \  \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J1323\",\n        \"\
+    source_locator\": \"$.data.solutions[0].recipe[9]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 10,\\n                 \
+    \       \\\"compound\\\": \\\"ZnCl2\\\",\\n                        \\\"compound_id\\\
+    \": 64,\\n                        \\\"amount\\\": 0.4,\\n                    \
+    \    \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.0004,\\\
+    n                        \\\"mmol_l\\\": 0.0029347,\\n                       \
+    \ \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"0feddb0e29b8d792f45eb6ab2c888dbd9ca91c53678fb3787e75731973bfbe54\",\n    \
+    \    \"local_derivative_path\": \"reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/plan.json\"\
+    ,\n        \"local_derivative_locator\": \"$.records[312].claims[9]\",\n     \
+    \   \"quote_status\": \"exact decoded local derivative; historical original raw\
+    \ unavailable\",\n        \"historical_claimed_response_sha256\": \"596fc5fb31b2f0ff60533720f819f45e07f8860fa4725dade74bc995f4be6de5\"\
+    ,\n        \"historical_claimed_accessed_at\": \"2026-10-07T15:22:26.941430+00:00\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"unchanged_local_concentration\"\
+    : {\n        \"value\": \"0.0004\",\n        \"unit\": \"G_PER_L\"\n      },\n\
+    \      \"historically_reported_amount\": 0.4,\n      \"historically_reported_unit\"\
+    : \"mg\",\n      \"historically_reported_g_l\": 0.0004,\n      \"original_raw_authentication\"\
+    : \"unavailable\"\n    },\n    \"rationale\": \"Both layers retain the same rate.\
+    \ The owner already has this quotation; the generated target does not. Evidence-only\
+    \ here preserves and qualifies the historical claim while seeking authentic source\
+    \ support; it is not a newly verified source concentration. The nine original\
+    \ snippets remain intact. The derivative arithmetic 0.4 mg × 0.001 g/mg = 0.0004\
+    \ g for its stated 1 L provider basis is internally consistent, but does not authenticate\
+    \ original bytes.\"\n  },\n  {\n    \"quantity_id\": \"q11\",\n    \"component_or_context\"\
+    : \"Historical source-only distilled water\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"FILTER_STERILIZE\"\
+    ,\n            \"description\": \"Mix components thoroughly, adjust pH 3.0 with\
+    \ H2SO4 and filter-sterilize.\"\n          }\n        ],\n        \"decision\"\
+    : \"unsupported\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"FILTER_STERILIZE\"\
+    ,\n            \"description\": \"Mix components thoroughly, adjust pH 3.0 with\
+    \ H2SO4 and filter-sterilize.\"\n          }\n        ],\n        \"decision\"\
+    : \"unsupported\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n    \
+    \    \"source_key\": \"historical-plan-derivative\",\n        \"source_url\":\
+    \ \"https://mediadive.dsmz.de/rest/medium/J1323\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[10]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 11,\\n                        \\\
+    \"compound\\\": \\\"Distilled water\\\",\\n                        \\\"compound_id\\\
+    \": 4,\\n                        \\\"amount\\\": 1000,\\n                    \
+    \    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0feddb0e29b8d792f45eb6ab2c888dbd9ca91c53678fb3787e75731973bfbe54\"\
+    ,\n        \"local_derivative_path\": \"reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/plan.json\"\
+    ,\n        \"local_derivative_locator\": \"$.records[312].claims[11]\",\n    \
+    \    \"quote_status\": \"exact decoded local derivative; historical original raw\
+    \ unavailable\",\n        \"historical_claimed_response_sha256\": \"596fc5fb31b2f0ff60533720f819f45e07f8860fa4725dade74bc995f4be6de5\"\
+    ,\n        \"historical_claimed_accessed_at\": \"2026-10-07T15:22:26.941430+00:00\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"historically_reported_water_ml\"\
+    : 1000,\n      \"authenticated_source_water_volume_ml\": null,\n      \"measured_final_volume_ml\"\
+    : null\n    },\n    \"rationale\": \"The derivative includes 1000 mL water, which\
+    \ is absent from both local preparation arrays. Preserve the lead; do not add\
+    \ an asserted volume before authenticating the source, and do not treat water\
+    \ alone as measured final volume.\"\n  },\n  {\n    \"quantity_id\": \"q12\",\n\
+    \    \"component_or_context\": \"Historical provider normalization denominator\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"FILTER_STERILIZE\"\
+    ,\n            \"description\": \"Mix components thoroughly, adjust pH 3.0 with\
+    \ H2SO4 and filter-sterilize.\"\n          }\n        ],\n        \"decision\"\
+    : \"unsupported\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"FILTER_STERILIZE\"\
+    ,\n            \"description\": \"Mix components thoroughly, adjust pH 3.0 with\
+    \ H2SO4 and filter-sterilize.\"\n          }\n        ],\n        \"decision\"\
+    : \"unsupported\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n    \
+    \    \"source_key\": \"historical-plan-derivative\",\n        \"source_url\":\
+    \ \"https://mediadive.dsmz.de/rest/medium/J1323\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[0]; historical explanation of $.data.solutions[0].volume\"\
+    ,\n        \"exact_source_quote\": \"Additional exact value at $.data.solutions[0].volume\
+    \ (ml): 1000.\",\n        \"snapshot_sha256\": \"0feddb0e29b8d792f45eb6ab2c888dbd9ca91c53678fb3787e75731973bfbe54\"\
+    ,\n        \"local_derivative_path\": \"reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/plan.json\"\
+    ,\n        \"local_derivative_locator\": \"$.records[312].claims[0]\",\n     \
+    \   \"quote_status\": \"exact decoded local derivative; historical original raw\
+    \ unavailable\",\n        \"historical_claimed_response_sha256\": \"596fc5fb31b2f0ff60533720f819f45e07f8860fa4725dade74bc995f4be6de5\"\
+    ,\n        \"historical_claimed_accessed_at\": \"2026-10-07T15:22:26.941430+00:00\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"historically_claimed_provider_volume_ml\"\
+    : 1000,\n      \"measured_final_volume_ml\": null\n    },\n    \"rationale\":\
+    \ \"The owner explanations cite a provider-declared 1000 mL normalization basis.\
+    \ Its claimed provenance is retained, but this review has not authenticated the\
+    \ original response and cannot upgrade the claim to a measured final volume.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q13\",\n    \"component_or_context\": \"Preparation\
+    \ pH\",\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Mix components thoroughly, adjust pH 3.0 with H2SO4 and filter-sterilize.\"\
+    ,\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Mix components thoroughly, adjust pH 3.0 with H2SO4 and filter-sterilize.\"\
+    ,\n        \"decision\": \"unsupported\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"historical-plan-derivative\",\n      \
+    \  \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J1323\",\n        \"\
+    source_locator\": \"$.data.solutions[0].steps[0]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"step\\\": \\\"Mix components thoroughly, adjust\
+    \ pH 3.0 with H2SO4 and filter-sterilize.\\\"\\n                    }\",\n   \
+    \     \"snapshot_sha256\": \"0feddb0e29b8d792f45eb6ab2c888dbd9ca91c53678fb3787e75731973bfbe54\"\
+    ,\n        \"local_derivative_path\": \"reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/plan.json\"\
+    ,\n        \"local_derivative_locator\": \"$.records[312].claims[12]\",\n    \
+    \    \"quote_status\": \"exact decoded local derivative; historical original raw\
+    \ unavailable\",\n        \"historical_claimed_response_sha256\": \"596fc5fb31b2f0ff60533720f819f45e07f8860fa4725dade74bc995f4be6de5\"\
+    ,\n        \"historical_claimed_accessed_at\": \"2026-10-07T15:22:26.941430+00:00\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"local_preparation_pH\"\
+    : 3.0,\n      \"source_authentication\": \"unavailable\"\n    },\n    \"rationale\"\
+    : \"Both layers retain pH 3.0 within mixing/filter-sterilization prose. The derivative\
+    \ agrees, but no current primary or authenticated original source confirms the\
+    \ instruction. Preserve this scope without inventing incubation pH or promoting\
+    \ an independently verified scalar.\"\n  },\n  {\n    \"quantity_id\": \"q14\"\
+    ,\n    \"component_or_context\": \"Sulfuric-acid adjustment amount\",\n    \"\
+    decision\": \"not_quantified\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml\",\n\
+    \        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Mix components thoroughly, adjust pH 3.0 with H2SO4 and filter-sterilize.\"\
+    ,\n        \"decision\": \"not_quantified\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Mix components thoroughly, adjust pH 3.0 with H2SO4 and filter-sterilize.\"\
+    ,\n        \"decision\": \"not_quantified\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"historical-plan-derivative\",\n      \
+    \  \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J1323\",\n        \"\
+    source_locator\": \"$.data.solutions[0].steps[0]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"step\\\": \\\"Mix components thoroughly, adjust\
+    \ pH 3.0 with H2SO4 and filter-sterilize.\\\"\\n                    }\",\n   \
+    \     \"snapshot_sha256\": \"0feddb0e29b8d792f45eb6ab2c888dbd9ca91c53678fb3787e75731973bfbe54\"\
+    ,\n        \"local_derivative_path\": \"reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/plan.json\"\
+    ,\n        \"local_derivative_locator\": \"$.records[312].claims[12]\",\n    \
+    \    \"quote_status\": \"exact decoded local derivative; historical original raw\
+    \ unavailable\",\n        \"historical_claimed_response_sha256\": \"596fc5fb31b2f0ff60533720f819f45e07f8860fa4725dade74bc995f4be6de5\"\
+    ,\n        \"historical_claimed_accessed_at\": \"2026-10-07T15:22:26.941430+00:00\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"acid\":\
+    \ \"H2SO4\",\n      \"amount\": null,\n      \"stock_strength\": null\n    },\n\
+    \    \"rationale\": \"The retained instruction names H2SO4 only; no mass, volume\
+    \ or stock strength is supplied even by the derivative. An unquantified adjustment\
+    \ is not zero and must not receive a typical concentration.\"\n  }\n]"
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: supported
+  summary: '9 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 9/10 primary
+    and 9/10 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Source forms are assessed separately.'
+  target_ids:
+  - CultureMech:002487
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi31206
+  - chebi31795
+  - chebi32036
+  - chebi32139
+  - chebi32149
+  - chebi32583
+  - chebi49976
+  - chebi74779
+  - chebi75836
+  details: 'Instance coverage on a 0–100 percent scale, denominator 10: primary 90.00%;
+    secondary 90.00%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 14 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:002487
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: identity
+  area: identity
+  topic: Stable identity and collection/provider separation
+  outcome: supported
+  summary: CultureMech:002487 resolves to the exact generated record and one maintained
+    owner. JCM accession 1323 is the original collection identity and MediaDive J1323
+    is the provider accession. Their current failure responses do not establish that
+    the medium never existed or belongs to another accession. No internal solution/variant
+    reference is asserted.
+  target_ids:
+  - CultureMech:002487
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - historical-derivatives
+- assessment_id: forms
+  area: grounding
+  topic: Source-specific formulas and unresolved manganese entry
+  outcome: concern
+  summary: All nine asserted primary CHEBI terms and nine current secondary keys match
+    current labels; their formulas agree with the locally named salts/hydrates. That
+    metadata does not authenticate the unavailable recipe. MnCl4 x 6 H2O has neither
+    a primary nor secondary ID and its identity remains unresolved; no plausible substitute
+    is assigned.
+  target_ids:
+  - CultureMech:002487
+  evidence_ids:
+  - record
+  - owner-0
+  - historical-report
+  - bound-context
+  - mim
+- assessment_id: amount-evidence
+  area: evidence
+  topic: Later owner evidence versus generated state
+  outcome: concern
+  summary: All nine owner amount quotations match the pinned historical plan/report.
+    The generated target predates the October 7 evidence addition and contains none
+    of those objects or the later reference. Preserve the owner evidence and chronology,
+    while stating that original raw authentication is unavailable. The difference
+    is observed generated staleness; it does not prove the current merge implementation
+    drops evidence.
+  target_ids:
+  - CultureMech:002487
+  evidence_ids:
+  - record
+  - owner-0
+  - historical-derivatives
+  - historical-report
+  - raw-search
+- assessment_id: preparation
+  area: completeness
+  topic: Preparation and quantitative source boundaries
+  outcome: unknown
+  summary: Mixing, pH 3.0 with sulfuric acid and filter sterilization survive in both
+    layers and the derivative. There is no local numeric filter setting, acid dose
+    or temperature, and none is invented. Water and the provider normalization basis
+    are derivative-only leads. Source completeness, missing components and variants
+    cannot be settled from the unavailable complete recipe.
+  target_ids:
+  - CultureMech:002487
+  evidence_ids:
+  - record
+  - owner-0
+  - historical-report
+  - quantity-inventory
+- assessment_id: classification
+  area: scope
+  topic: Composition, physical state and organism claims
+  outcome: supported
+  summary: The listed inorganic salts are compatible with the local DEFINED/DEFINED
+    and LIQUID classifications. This is a local compositional assessment, not independent
+    confirmation of the whole source recipe. The generic cultivation application and
+    title do not establish an organism, growth result, oxygen requirement or optimum.
+    Missing optional organism fields do not justify invented taxonomy.
+  target_ids:
+  - CultureMech:002487
+  evidence_ids:
+  - record
+  - owner-0
+  - historical-report
+- assessment_id: ownership
+  area: ownership
+  topic: Maintained correction and generated evidence provenance
+  outcome: supported
+  summary: The normalized artificial_pilot_plant_water_medium.yaml is the maintained
+    owner; the merged path is generated. Current code distinguishes primary versus
+    stocks and preserves compatible formulation evidence, so do not blame a current
+    code path without reproducing a defect. Future corrections require verified owner
+    evidence, append-only history and separate regeneration.
+  target_ids:
+  - CultureMech:002487
+  evidence_ids:
+  - record
+  - owner-0
+  - writer-0
+  - writer-1
+  - writer-2
+findings:
+- finding_id: f1
+  issue_key: culturemech.002487.manganese-identity-unresolved
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Manganese entry lacks established supplied identity
+  description: The ninth ingredient ingredients[8] retains MnCl4 x 6 H2O at 0.023
+    G_PER_L. The historical report explicitly withheld source identity support, current
+    primary content is unavailable, and no replacement formula or hydrate is established.
+    This is an unresolved chemical identity, not evidence for a guessed corrected
+    chloride.
+  target_ids:
+  - CultureMech:002487
+  field_paths:
+  - ingredients[8].preferred_term
+  - ingredients[8].concentration
+  evidence_ids:
+  - record
+  - owner-0
+  - historical-report
+  - quantity-inventory
+  - jcm1323-attempt
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.002487.generated-evidence-stale
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Generated record lacks the nine later owner evidence objects
+  description: The target retains its August merge event while the maintained owner
+    adds nine amount quotations, a reference and an October evidence history event.
+    Their derivative matches are confirmed, but original source authentication remains
+    unavailable.
+  target_ids:
+  - CultureMech:002487
+  field_paths:
+  - ingredients
+  - references
+  - curation_history
+  evidence_ids:
+  - record
+  - owner-0
+  - historical-derivatives
+  - historical-report
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Resolve the literal manganese formula and amount against authentic
+    JCM 1323 or the exact historical provider response. Keep the unresolved identity
+    explicit until then; do not substitute a chemically familiar salt or invent an
+    ontology ID.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:002487
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Preserve all later owner evidence and its historical source hash/time;
+    explicitly document authentication limits. After source verification and any authorized
+    owner updates, regenerate the target and confirm all nine narrow evidence objects
+    and bibliography survive without changing original history.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:002487
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/artificial_pilot_plant_water_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- 'Exact JCM 1323 content is unavailable: HTTP 200 body says Nothing found.'
+- Exact current MediaDive J1323 request returned HTTP 503; retained as an access limitation,
+  not a scientific amount defect.
+- Exact current MediaDive J1323 request returned HTTP 503; retained as an access limitation,
+  not a scientific amount defect.
+- The required complete primary formulation and historical response authentication
+  are unavailable. Derivative agreement and current ontology metadata do not prove
+  source recipe correctness; all amount decisions remain qualified accordingly.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-032
+- generated-medium
+```
