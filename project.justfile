@@ -2806,6 +2806,20 @@ aggregate-all-ingredients mapped_output="output/mapped_ingredients.yaml" unmappe
     echo "  Errors:      {{errors_output}}"
     echo "  List:        {{list_output}}"
 
+# Inspect release inputs without producing artifacts.
+[group('Ingredients')]
+plan-ingredient-release:
+    uv run --frozen python scripts/ingredient_release_bundle.py build --plan
+
+# Build a new immutable candidate directory; does not replace ordinary outputs.
+[group('Ingredients')]
+build-ingredient-release output_dir:
+    uv run --frozen python scripts/ingredient_release_bundle.py build --output-dir "{{output_dir}}"
+
+[group('Ingredients')]
+verify-ingredient-release bundle_dir:
+    uv run --frozen python scripts/ingredient_release_bundle.py verify --bundle-dir "{{bundle_dir}}"
+
 # =============================================================================
 # INGREDIENT UMAP VISUALIZATION
 # =============================================================================
