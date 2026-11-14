@@ -1,0 +1,4261 @@
+# Source and formulation review: anaerobacillus_arseniciselenatis_medium (CultureMech:002149)
+
+- Review: 20261021T150905Z-culturemech-002149-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T14:47:52Z
+- Finished UTC: 2026-10-21T15:09:05Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+DSMZ 968 identity and main provider transcription are supported, but the maintained owner and generated target flatten SL-10 and selenite/tungstate stock strengths into direct ingredients, including an unsupported HCl mass conversion. Stock preparation is assigned to the main root and two supplied forms are misgrounded. Required historical secondary correspondence remains unresolved.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 259; batch 026 item 9 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding twenty-five task batches contain 250 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 253 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:002149 | data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml | generated | anaerobacillus_arseniciselenatis_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:002149 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:002149 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-026/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch026/259/strict.tsv |
+| validate-terms | passed | True | CultureMech:002149 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:002149 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:002149 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact current secondary catalog/index/tree lookup | passed | True | CultureMech:002149 | Completed negative lookup for MediaIngredientMech:000171; current absence established within the pinned complete snapshots, historical validity not adjudicated. |
+| Historical secondary identifier correspondence | unavailable | True | CultureMech:002149 | Required historical correspondence for asserted MediaIngredientMech:000171 remains unavailable in the inspected evidence. The current negative lookup completed successfully and is not itself an unavailable check or proof that the legacy identifier was historically wrong. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:002149.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:002149.
+
+39 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "quantity_id": "q1",
+    "component_or_context": "Main: (NH4)2SO4",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.0998004",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.0998004",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "main",
+      "amount": 0.1,
+      "unit": "g",
+      "attribute": null,
+      "provider_g_per_l": 0.0998004,
+      "provider_volume_ml": 1002
+    },
+    "rationale": "Exact unchanged provider g_l transcription without attached local evidence. Retain the original main amount and the explicitly attributed 1002 mL provider basis, not a measured final-volume claim.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.0998004,\n                        \"mmol_l\": 0.755263,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q2",
+    "component_or_context": "Main: MgSO4",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.0249501",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.0249501",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "main",
+      "amount": 25,
+      "unit": "mg",
+      "attribute": null,
+      "provider_g_per_l": 0.0249501,
+      "provider_volume_ml": 1002
+    },
+    "rationale": "Exact unchanged provider g_l transcription without attached local evidence. Retain the original main amount and the explicitly attributed 1002 mL provider basis, not a measured final-volume claim. Primary prints MgSO4 at 25 mg with no hydrate; do not substitute a hydrated salt.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"MgSO4\",\n                        \"compound_id\": 325,\n                        \"amount\": 25,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0249501,\n                        \"mmol_l\": 0.207278,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q3",
+    "component_or_context": "Main: NaCl",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "89.8204",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "89.8204",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "main",
+      "amount": 90,
+      "unit": "g",
+      "attribute": null,
+      "provider_g_per_l": 89.8204,
+      "provider_volume_ml": 1002
+    },
+    "rationale": "Exact unchanged provider g_l transcription without attached local evidence. Retain the original main amount and the explicitly attributed 1002 mL provider basis, not a measured final-volume claim.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 90,\n                        \"unit\": \"g\",\n                        \"g_l\": 89.8204,\n                        \"mmol_l\": 1536.97,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q4",
+    "component_or_context": "Main: K2HPO4",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.149701",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.149701",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "main",
+      "amount": 0.15,
+      "unit": "g",
+      "attribute": null,
+      "provider_g_per_l": 0.149701,
+      "provider_volume_ml": 1002
+    },
+    "rationale": "Exact unchanged provider g_l transcription without attached local evidence. Retain the original main amount and the explicitly attributed 1002 mL provider basis, not a measured final-volume claim.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[0].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 0.15,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.149701,\n                        \"mmol_l\": 0.859479,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q5",
+    "component_or_context": "Main: KH2PO4",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.0798403",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.0798403",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "main",
+      "amount": 0.08,
+      "unit": "g",
+      "attribute": null,
+      "provider_g_per_l": 0.0798403,
+      "provider_volume_ml": 1002
+    },
+    "rationale": "Exact unchanged provider g_l transcription without attached local evidence. Retain the original main amount and the explicitly attributed 1002 mL provider basis, not a measured final-volume claim.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[0].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.08,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.0798403,\n                        \"mmol_l\": 0.586694,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q6",
+    "component_or_context": "Main: NaNO3",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "1.2475",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "1.2475",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "main",
+      "amount": 1.25,
+      "unit": "g",
+      "attribute": null,
+      "provider_g_per_l": 1.2475,
+      "provider_volume_ml": 1002
+    },
+    "rationale": "Exact unchanged provider g_l transcription without attached local evidence. Retain the original main amount and the explicitly attributed 1002 mL provider basis, not a measured final-volume claim.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[0].recipe[7]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"NaNO3\",\n                        \"compound_id\": 187,\n                        \"amount\": 1.25,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.2475,\n                        \"mmol_l\": 14.6774,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q7",
+    "component_or_context": "Main: Na-DL-lactate",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "1.69661",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "1.69661",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "main",
+      "amount": 1.7,
+      "unit": "g",
+      "attribute": null,
+      "provider_g_per_l": 1.69661,
+      "provider_volume_ml": 1002
+    },
+    "rationale": "Exact unchanged provider g_l transcription without attached local evidence. Retain the original main amount and the explicitly attributed 1002 mL provider basis, not a measured final-volume claim. Source DL-lactate is retained; generic sodium-lactate CHEBI:75228 does not impose an L-only configuration.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[0].recipe[8]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Na-DL-lactate\",\n                        \"compound_id\": 111,\n                        \"amount\": 1.7,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.69661,\n                        \"mmol_l\": 15.1402,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q8",
+    "component_or_context": "Main: Yeast extract",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.199601",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.199601",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "main",
+      "amount": 0.2,
+      "unit": "g",
+      "attribute": null,
+      "provider_g_per_l": 0.199601,
+      "provider_volume_ml": 1002
+    },
+    "rationale": "Exact unchanged provider g_l transcription without attached local evidence. Retain the original main amount and the explicitly attributed 1002 mL provider basis, not a measured final-volume claim.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[0].recipe[9]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.199601,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q9",
+    "component_or_context": "Main: Sodium resazurin",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.000499002",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.000499002",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "main",
+      "amount": 0.5,
+      "unit": "ml",
+      "attribute": "0.1% w/v",
+      "provider_g_per_l": 0.000499002,
+      "provider_volume_ml": 1002
+    },
+    "rationale": "Exact unchanged provider g_l transcription without attached local evidence. Retain the original main amount and the explicitly attributed 1002 mL provider basis, not a measured final-volume claim. The source addition is 0.5 mL of 0.1% w/v sodium resazurin (0.0005 g per batch); neutral-resazurin grounding is a separate defect.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[0].recipe[10]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.000499002,\n                        \"mmol_l\": 0.00198671,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q10",
+    "component_or_context": "Main: Na2CO3",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "10.5788",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "10.5788",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "main",
+      "amount": 10.6,
+      "unit": "g",
+      "attribute": null,
+      "provider_g_per_l": 10.5788,
+      "provider_volume_ml": 1002
+    },
+    "rationale": "Exact unchanged provider g_l transcription without attached local evidence. Retain the original main amount and the explicitly attributed 1002 mL provider basis, not a measured final-volume claim.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[0].recipe[11]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\": 10.6,\n                        \"unit\": \"g\",\n                        \"g_l\": 10.5788,\n                        \"mmol_l\": 99.8117,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q11",
+    "component_or_context": "Main: NaHCO3",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "4.19162",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "4.19162",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "main",
+      "amount": 4.2,
+      "unit": "g",
+      "attribute": null,
+      "provider_g_per_l": 4.19162,
+      "provider_volume_ml": 1002
+    },
+    "rationale": "Exact unchanged provider g_l transcription without attached local evidence. Retain the original main amount and the explicitly attributed 1002 mL provider basis, not a measured final-volume claim.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[0].recipe[12]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"NaHCO3\",\n                        \"compound_id\": 55,\n                        \"amount\": 4.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 4.19162,\n                        \"mmol_l\": 49.896,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q12",
+    "component_or_context": "Main: L-Cysteine HCl x H2O",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.249501",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.249501",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "main",
+      "amount": 0.25,
+      "unit": "g",
+      "attribute": null,
+      "provider_g_per_l": 0.249501,
+      "provider_volume_ml": 1002
+    },
+    "rationale": "Exact unchanged provider g_l transcription without attached local evidence. Retain the original main amount and the explicitly attributed 1002 mL provider basis, not a measured final-volume claim.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[0].recipe[13]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 14,\n                        \"compound\": \"L-Cysteine HCl x H2O\",\n                        \"compound_id\": 770,\n                        \"amount\": 0.25,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.249501,\n                        \"mmol_l\": 1.42056,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q13",
+    "component_or_context": "Main: Na2S x 9 H2O",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.249501",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.249501",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "main",
+      "amount": 0.25,
+      "unit": "g",
+      "attribute": null,
+      "provider_g_per_l": 0.249501,
+      "provider_volume_ml": 1002
+    },
+    "rationale": "Exact unchanged provider g_l transcription without attached local evidence. Retain the original main amount and the explicitly attributed 1002 mL provider basis, not a measured final-volume claim.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[0].recipe[14]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 15,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\": 0.25,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.249501,\n                        \"mmol_l\": 1.0388,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q14",
+    "component_or_context": "SL-10: HCl",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "SL-10 stock 595",
+      "amount": 10,
+      "unit": "ml",
+      "source_attribute": "25%",
+      "stock_final_make_up_ml": 1000,
+      "receiving_dose_ml": 1,
+      "percent_basis": null,
+      "provider_g_per_l_not_validated": 2.5
+    },
+    "rationale": "The source specifies 10 mL HCl (25%) in SL-10, with no percentage basis or density. It does not justify 2.5 g/L as a mass concentration, and stock concentration is not the final medium concentration. Preserve dose and unresolved basis; do not import 7.7 M from a different medium.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[1].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"HCl\",\n                        \"compound_id\": 68,\n                        \"attribute\": \"25%\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"g_l\": 2.5,\n                        \"mmol_l\": 68.5683,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q15",
+    "component_or_context": "SL-10: FeCl2 x 4 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "SL-10 stock 595",
+      "amount": 1.5,
+      "unit": "g",
+      "source_attribute": null,
+      "stock_final_make_up_ml": 1000,
+      "receiving_dose_ml": 1,
+      "provider_stock_g_per_l": 1.5
+    },
+    "rationale": "Stored stock strength is placed among direct medium ingredients. Restore the stock recipe and 1 mL receiving dose; any final contribution must retain its denominator and stage.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[1].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"FeCl2 x 4 H2O\",\n                        \"compound_id\": 260,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\": 7.54482,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q16",
+    "component_or_context": "SL-10: ZnCl2",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.07",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.07",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "SL-10 stock 595",
+      "amount": 70,
+      "unit": "mg",
+      "source_attribute": null,
+      "stock_final_make_up_ml": 1000,
+      "receiving_dose_ml": 1,
+      "provider_stock_g_per_l": 0.07
+    },
+    "rationale": "Stored stock strength is placed among direct medium ingredients. Restore the stock recipe and 1 mL receiving dose; any final contribution must retain its denominator and stage.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[1].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"ZnCl2\",\n                        \"compound_id\": 64,\n                        \"amount\": 70,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.07,\n                        \"mmol_l\": 0.513573,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q17",
+    "component_or_context": "SL-10: MnCl2 x 4 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "SL-10 stock 595",
+      "amount": 100,
+      "unit": "mg",
+      "source_attribute": null,
+      "stock_final_make_up_ml": 1000,
+      "receiving_dose_ml": 1,
+      "provider_stock_g_per_l": 0.1
+    },
+    "rationale": "Stored stock strength is placed among direct medium ingredients. Restore the stock recipe and 1 mL receiving dose; any final contribution must retain its denominator and stage.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[1].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\": 36,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.505293,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q18",
+    "component_or_context": "SL-10: H3BO3",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.006",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.006",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "SL-10 stock 595",
+      "amount": 6,
+      "unit": "mg",
+      "source_attribute": null,
+      "stock_final_make_up_ml": 1000,
+      "receiving_dose_ml": 1,
+      "provider_stock_g_per_l": 0.006
+    },
+    "rationale": "Stored stock strength is placed among direct medium ingredients. Restore the stock recipe and 1 mL receiving dose; any final contribution must retain its denominator and stage.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[1].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\": 6,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.006,\n                        \"mmol_l\": 0.0970246,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q19",
+    "component_or_context": "SL-10: CoCl2 x 6 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.19",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.19",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "SL-10 stock 595",
+      "amount": 190,
+      "unit": "mg",
+      "source_attribute": null,
+      "stock_final_make_up_ml": 1000,
+      "receiving_dose_ml": 1,
+      "provider_stock_g_per_l": 0.19
+    },
+    "rationale": "Stored stock strength is placed among direct medium ingredients. Restore the stock recipe and 1 mL receiving dose; any final contribution must retain its denominator and stage.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[1].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\": 38,\n                        \"amount\": 190,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.19,\n                        \"mmol_l\": 1.46335,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q20",
+    "component_or_context": "SL-10: CuCl2 x 2 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "SL-10 stock 595",
+      "amount": 2,
+      "unit": "mg",
+      "source_attribute": null,
+      "stock_final_make_up_ml": 1000,
+      "receiving_dose_ml": 1,
+      "provider_stock_g_per_l": 0.002
+    },
+    "rationale": "Stored stock strength is placed among direct medium ingredients. Restore the stock recipe and 1 mL receiving dose; any final contribution must retain its denominator and stage.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[1].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"CuCl2 x 2 H2O\",\n                        \"compound_id\": 39,\n                        \"amount\": 2,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\": 0.0117314,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q21",
+    "component_or_context": "SL-10: NiCl2 x 6 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.024",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.024",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "SL-10 stock 595",
+      "amount": 24,
+      "unit": "mg",
+      "source_attribute": null,
+      "stock_final_make_up_ml": 1000,
+      "receiving_dose_ml": 1,
+      "provider_stock_g_per_l": 0.024
+    },
+    "rationale": "Stored stock strength is placed among direct medium ingredients. Restore the stock recipe and 1 mL receiving dose; any final contribution must retain its denominator and stage. Preserve nickel hexahydrate rather than the asserted anhydrous identity.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[1].recipe[7]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\": 40,\n                        \"amount\": 24,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.024,\n                        \"mmol_l\": 0.185187,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q22",
+    "component_or_context": "SL-10: Na2MoO4 x 2 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.036",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.036",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "SL-10 stock 595",
+      "amount": 36,
+      "unit": "mg",
+      "source_attribute": null,
+      "stock_final_make_up_ml": 1000,
+      "receiving_dose_ml": 1,
+      "provider_stock_g_per_l": 0.036
+    },
+    "rationale": "Stored stock strength is placed among direct medium ingredients. Restore the stock recipe and 1 mL receiving dose; any final contribution must retain its denominator and stage.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[1].recipe[8]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\": 36,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.036,\n                        \"mmol_l\": 0.148791,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q23",
+    "component_or_context": "Selenite-tungstate stock: NaOH",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "selenite-tungstate stock 777",
+      "amount": 0.5,
+      "unit": "g",
+      "provider_stock_g_per_l": 0.5,
+      "stock_water_ml": 1000,
+      "receiving_dose_ml": 1
+    },
+    "rationale": "These are separate stock strengths, not direct medium concentrations. Retain the 1 mL receiving addition and source salt hydration; do not omit the stock dilution.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[2].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"NaOH\",\n                        \"compound_id\": 256,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 12.5009,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q24",
+    "component_or_context": "Selenite-tungstate stock: Na2SeO3 x 5 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.003",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.003",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "selenite-tungstate stock 777",
+      "amount": 3,
+      "unit": "mg",
+      "provider_stock_g_per_l": 0.003,
+      "stock_water_ml": 1000,
+      "receiving_dose_ml": 1
+    },
+    "rationale": "These are separate stock strengths, not direct medium concentrations. Retain the 1 mL receiving addition and source salt hydration; do not omit the stock dilution.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[2].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Na2SeO3 x 5 H2O\",\n                        \"compound_id\": 107,\n                        \"amount\": 3,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.003,\n                        \"mmol_l\": 0.0114062,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q25",
+    "component_or_context": "Selenite-tungstate stock: Na2WO4 x 2 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.004",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.004",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "selenite-tungstate stock 777",
+      "amount": 4,
+      "unit": "mg",
+      "provider_stock_g_per_l": 0.004,
+      "stock_water_ml": 1000,
+      "receiving_dose_ml": 1
+    },
+    "rationale": "These are separate stock strengths, not direct medium concentrations. Retain the 1 mL receiving addition and source salt hydration; do not omit the stock dilution.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[2].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Na2WO4 x 2 H2O\",\n                        \"compound_id\": 249,\n                        \"amount\": 4,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.004,\n                        \"mmol_l\": 0.0121267,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q26",
+    "component_or_context": "Main water",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Main sol. 968",
+      "amount": 1000,
+      "unit": "ml"
+    },
+    "rationale": "Retain the listed water amount in its own preparation stage. SL-10 990 mL water is distinct from its final 1000 mL make-up; main water is not measured final medium volume.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[0].recipe[15]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 16,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q27",
+    "component_or_context": "SL-10 water",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Trace element solution SL-10",
+      "amount": 990,
+      "unit": "ml"
+    },
+    "rationale": "Retain the listed water amount in its own preparation stage. SL-10 990 mL water is distinct from its final 1000 mL make-up; main water is not measured final medium volume.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[1].recipe[9]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 990,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q28",
+    "component_or_context": "Selenite-tungstate water",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Selenite-tungstate solution",
+      "amount": 1000,
+      "unit": "ml"
+    },
+    "rationale": "Retain the listed water amount in its own preparation stage. SL-10 990 mL water is distinct from its final 1000 mL make-up; main water is not measured final medium volume.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[2].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q29",
+    "component_or_context": "Receiving dose: Trace element solution SL-10",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "solution_id": 595,
+      "amount": 1,
+      "unit": "ml",
+      "stage": "main"
+    },
+    "rationale": "Both layers lack the named stock reference and receiving dose; restore them with scoped stock composition.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\": 595,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q30",
+    "component_or_context": "Receiving dose: Selenite-tungstate solution",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "solution_id": 777,
+      "amount": 1,
+      "unit": "ml",
+      "stage": "main"
+    },
+    "rationale": "Both layers lack the named stock reference and receiving dose; restore them with scoped stock composition.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[0].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"solution\": \"Selenite-tungstate solution\",\n                        \"solution_id\": 777,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q31",
+    "component_or_context": "Sodium resazurin receiving stock and percentage",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_strength": "0.1% w/v",
+      "dose_ml": 0.5,
+      "batch_mass_g": 0.0005
+    },
+    "rationale": "The current direct g/L is a provider-normalized equivalent. Preserve the actual sodium-salt stock addition and its explicitly mass/volume percentage basis.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[0].recipe[10]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.000499002,\n                        \"mmol_l\": 0.00198671,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      },
+      {
+        "source_key": "dsmz968",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium968.pdf",
+        "source_locator": "Page 1 main table",
+        "exact_source_quote": "Sodium resazurin (0.1% w/v) 0.50 ml",
+        "snapshot_sha256": "1801364faf6c8c110350da01a8b276079ddcffb5b0ada42faf5a24946c081846",
+        "parsed_text_sha256": "41f17a0b0443214a75a83c7ffcd92128af351234324ba1ebdee0e8872f91a7ef"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q32",
+    "component_or_context": "Provider main volume versus listed-liquid sum",
+    "decision": "conflict",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "notes",
+        "stored": "Source: DSMZ &#124; Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium968.pdf",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "notes",
+        "stored": "Source: DSMZ &#124; Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium968.pdf",
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": {
+      "provider_volume_ml": 1002,
+      "listed_liquids_sum_ml": 1002.5,
+      "measured_final_volume": null
+    },
+    "rationale": "The primary lists water and additions without a measured final-volume assertion. Preserve the provider basis as provenance and the 0.5 mL discrepancy; later unquantified reducing stocks preclude treating either sum as measured final volume.",
+    "source_snippets": [
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[0].volume (solution 1992)",
+        "exact_source_quote": "\"volume\": 1002",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      },
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[0].recipe[15]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 16,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      },
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\": 595,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      },
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[0].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"solution\": \"Selenite-tungstate solution\",\n                        \"solution_id\": 777,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      },
+      {
+        "source_key": "mediadive968api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/968",
+        "source_locator": "$.data.solutions[0].recipe[10]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.000499002,\n                        \"mmol_l\": 0.00198671,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q33",
+    "component_or_context": "SL-10 final make-up",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml.",
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml.",
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "SL-10",
+      "final_make_up_ml": 1000
+    },
+    "rationale": "The amount is already in local prose but is assigned to the main root. Correct its scope to SL-10; it does not define the main-medium final volume.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz968",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium968.pdf",
+        "source_locator": "Page 1 SL-10 preparation",
+        "exact_source_quote": "make up to 1000.00 ml.",
+        "snapshot_sha256": "1801364faf6c8c110350da01a8b276079ddcffb5b0ada42faf5a24946c081846",
+        "parsed_text_sha256": "41f17a0b0443214a75a83c7ffcd92128af351234324ba1ebdee0e8872f91a7ef"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q34",
+    "component_or_context": "Main nitrogen atmosphere",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except carbonate, hydrogencarbonate and reducing agents), then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add solid carbonate and bicarbonate, adjust pH to 9.8, dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before inoculation, add cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete medium to 9.8, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except carbonate, hydrogencarbonate and reducing agents), then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add solid carbonate and bicarbonate, adjust pH to 9.8, dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before inoculation, add cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete medium to 9.8, if necessary.",
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": {
+      "gas": "N2",
+      "percent": 100
+    },
+    "rationale": "Existing local main prose agrees with this source-stage context; retain conditions and order without turning it into a growth assertion.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz968",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium968.pdf",
+        "source_locator": "Page 1 main preparation",
+        "exact_source_quote": "100% N2",
+        "snapshot_sha256": "1801364faf6c8c110350da01a8b276079ddcffb5b0ada42faf5a24946c081846",
+        "parsed_text_sha256": "41f17a0b0443214a75a83c7ffcd92128af351234324ba1ebdee0e8872f91a7ef"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q35",
+    "component_or_context": "Main sparging interval",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except carbonate, hydrogencarbonate and reducing agents), then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add solid carbonate and bicarbonate, adjust pH to 9.8, dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before inoculation, add cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete medium to 9.8, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except carbonate, hydrogencarbonate and reducing agents), then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add solid carbonate and bicarbonate, adjust pH to 9.8, dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before inoculation, add cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete medium to 9.8, if necessary.",
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": {
+      "minutes": [
+        30,
+        45
+      ]
+    },
+    "rationale": "Existing local main prose agrees with this source-stage context; retain conditions and order without turning it into a growth assertion.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz968",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium968.pdf",
+        "source_locator": "Page 1 main preparation",
+        "exact_source_quote": "30 - 45 min",
+        "snapshot_sha256": "1801364faf6c8c110350da01a8b276079ddcffb5b0ada42faf5a24946c081846",
+        "parsed_text_sha256": "41f17a0b0443214a75a83c7ffcd92128af351234324ba1ebdee0e8872f91a7ef"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q36",
+    "component_or_context": "Pre-sterilization main pH",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except carbonate, hydrogencarbonate and reducing agents), then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add solid carbonate and bicarbonate, adjust pH to 9.8, dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before inoculation, add cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete medium to 9.8, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except carbonate, hydrogencarbonate and reducing agents), then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add solid carbonate and bicarbonate, adjust pH to 9.8, dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before inoculation, add cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete medium to 9.8, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "ph_value",
+        "stored": 9.8,
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "ph_value",
+        "stored": 9.8,
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": {
+      "pH": 9.8,
+      "stage": "after carbonate/bicarbonate; before dispensing/sterilization"
+    },
+    "rationale": "Existing local main prose agrees with this source-stage context; retain conditions and order without turning it into a growth assertion.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz968",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium968.pdf",
+        "source_locator": "Page 1 main preparation",
+        "exact_source_quote": "adjust pH to 9.8",
+        "snapshot_sha256": "1801364faf6c8c110350da01a8b276079ddcffb5b0ada42faf5a24946c081846",
+        "parsed_text_sha256": "41f17a0b0443214a75a83c7ffcd92128af351234324ba1ebdee0e8872f91a7ef"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q37",
+    "component_or_context": "Conditional complete-medium pH",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except carbonate, hydrogencarbonate and reducing agents), then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add solid carbonate and bicarbonate, adjust pH to 9.8, dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before inoculation, add cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete medium to 9.8, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except carbonate, hydrogencarbonate and reducing agents), then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add solid carbonate and bicarbonate, adjust pH to 9.8, dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before inoculation, add cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete medium to 9.8, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "ph_value",
+        "stored": 9.8,
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "ph_value",
+        "stored": 9.8,
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": {
+      "pH": 9.8,
+      "conditional": true,
+      "stage": "complete medium"
+    },
+    "rationale": "Existing local main prose agrees with this source-stage context; retain conditions and order without turning it into a growth assertion.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz968",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium968.pdf",
+        "source_locator": "Page 1 main preparation",
+        "exact_source_quote": "complete medium to 9.8, if necessary.",
+        "snapshot_sha256": "1801364faf6c8c110350da01a8b276079ddcffb5b0ada42faf5a24946c081846",
+        "parsed_text_sha256": "41f17a0b0443214a75a83c7ffcd92128af351234324ba1ebdee0e8872f91a7ef"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q38",
+    "component_or_context": "Unquantified reducing-stock concentrations and volumes",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except carbonate, hydrogencarbonate and reducing agents), then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add solid carbonate and bicarbonate, adjust pH to 9.8, dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before inoculation, add cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete medium to 9.8, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except carbonate, hydrogencarbonate and reducing agents), then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add solid carbonate and bicarbonate, adjust pH to 9.8, dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before inoculation, add cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete medium to 9.8, if necessary.",
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": {
+      "cysteine_stock_strength": null,
+      "sulfide_stock_strength": null,
+      "receiving_stock_volumes": null
+    },
+    "rationale": "Retain the separately listed batch masses and source handling. The primary gives no concentrations or volumes for these later reducing stocks.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz968",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium968.pdf",
+        "source_locator": "Page 1 main preparation",
+        "exact_source_quote": "from sterile anoxic stock solutions",
+        "snapshot_sha256": "1801364faf6c8c110350da01a8b276079ddcffb5b0ada42faf5a24946c081846",
+        "parsed_text_sha256": "41f17a0b0443214a75a83c7ffcd92128af351234324ba1ebdee0e8872f91a7ef"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q39",
+    "component_or_context": "Unspecified autoclave temperature and duration",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except carbonate, hydrogencarbonate and reducing agents), then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add solid carbonate and bicarbonate, adjust pH to 9.8, dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before inoculation, add cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete medium to 9.8, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except carbonate, hydrogencarbonate and reducing agents), then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add solid carbonate and bicarbonate, adjust pH to 9.8, dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before inoculation, add cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete medium to 9.8, if necessary.",
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": {
+      "temperature": null,
+      "duration": null
+    },
+    "rationale": "Source names autoclaving without a numerical cycle; no default is inferred.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz968",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium968.pdf",
+        "source_locator": "Page 1 main preparation",
+        "exact_source_quote": "and autoclave.",
+        "snapshot_sha256": "1801364faf6c8c110350da01a8b276079ddcffb5b0ada42faf5a24946c081846",
+        "parsed_text_sha256": "41f17a0b0443214a75a83c7ffcd92128af351234324ba1ebdee0e8872f91a7ef"
+      }
+    ]
+  }
+]
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: concern. Targets: CultureMech:002149.
+
+24 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 24/25 primary and 22/25 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Exact supplied-form mismatch is addressed separately; valid IDs and labels do not establish correct source grounding.
+
+Instance coverage on a 0–100 percent scale, denominator 25: primary 96.00%; secondary 88.00%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Exact source identity and maintained ownership
+
+identity: supported. Targets: CultureMech:002149.
+
+CultureMech:002149, DSMZ 968 and MediaDive medium 968 agree exactly. The sole maintained normalized owner has the same complete scientific content as the generated target; target-only additions are merge bookkeeping. Parent DSMZ 320 and 385 evidence is restricted to the specifically named stock subsections.
+
+### Claim-level support and exact source stages
+
+evidence: concern. Targets: CultureMech:002149.
+
+No ingredient amount has attached supporting evidence in either local layer. Every local concentration and scoped source-only quantitative context has an inventory decision with exact quotations and locators. Matching provider transcription receives evidence_only, not verified. Source quantities and provider normalization remain separate.
+
+### Main and stock preparation boundaries
+
+completeness: concern. Targets: CultureMech:002149.
+
+Main nitrogen, 30–45 minute sparging, carbonate/bicarbonate order, pre-sterilization and conditional final pH 9.8, and separate reducing-stock handling are retained. The SL-10 dissolution/make-up step at preparation_steps[1] has lost its stock scope. Named receiving additions and all source-stage water are absent. Unquantified HCl percent basis, later reducing-stock details and autoclave cycle remain explicit limitations.
+
+### Composition and physical state
+
+scope: supported. Targets: CultureMech:002149.
+
+COMPLEX/SEMI_DEFINED is consistent with specified salts and DL-lactate plus yeast extract. LIQUID is compatible with the listed formulation, which contains no solidifier. The catalog name is not independently validated organism growth or taxonomy.
+
+### Source-specified molecular forms and mixtures
+
+grounding: concern. Targets: CultureMech:002149.
+
+Source nickel chloride hexahydrate conflicts with the anhydrous formula Cl2Ni and mass 129.599 of CHEBI:34887 in both primary and current secondary slots. Sodium resazurin is mapped to neutral CHEBI:8806 formula C12H7NO4. Generic CHEBI:75228 is compatible with preserved DL-lactate wording, and source MgSO4 does not specify a hydrate; neither warrants an invented stereochemical or hydrate replacement.
+
+### Growth, taxonomy and graph assertion scope
+
+scope: not_applicable. Targets: CultureMech:002149.
+
+The medium title, bacterial filing and generic Microbial cultivation application are catalog context, not strain-level experimental growth evidence. No organism identifier, growth assertion, phenotype or graph membership is added. No internal variant/reference relationship is asserted in either complete local record.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:002149.
+
+13 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Maintained input and current import/merge behavior
+
+provenance: concern. Targets: CultureMech:002149.
+
+Current MediaDive API parsing reads direct ingredients from the first solution, excludes water and stock additions, preserves provider g_l, and separately records receiving stock references; its preparation reader still gathers steps from all solutions at the main root. Bare-unit fallback is not final-volume proof. Current cleanup retains the first disagreeing duplicate with a warning instead of summing it. Current lossless formulation merging preserves scientific assertions and order, not their correctness. These current implementations do not establish which historical version produced this record. Correct the exact maintained owner, append curation provenance, and regenerate only after separately authorized changes.
+
+### Historical legacy linkage distinct from current CHEBI linkage
+
+grounding: concern. Targets: CultureMech:002149.
+
+Required historical correspondence for asserted MediaIngredientMech:000171 remains unavailable in the inspected evidence. The current negative lookup completed successfully and is not itself an unavailable check or proof that the legacy identifier was historically wrong.
+
+## Findings
+
+### f1: Two stocks are flattened and HCl percent is converted without its basis
+
+blocker / open / confirmed; issue key: culturemech.002149.stock-stage-collapse.
+
+ingredients[13:25] contain SL-10 and selenite/tungstate stock strengths as direct-medium g/L. Their separate 1 mL receiving doses and water are absent. In particular, 2.5 g/L HCl is not supported by the primary 10 mL of unqualified 25% HCl. Main g/L values match the provider 1002 mL basis, while listed liquids already sum to 1002.5 mL before reducing-stock additions. The flat formula does not represent the source stages.
+
+### f2: Nickel hydrate and sodium-resazurin identifiers lose source forms
+
+major / open / confirmed; issue key: culturemech.002149.supplied-form-grounding.
+
+ingredients[20] names nickel chloride hexahydrate but both asserted CHEBI:34887 slots encode the anhydrous compound. ingredients[8] names sodium resazurin but asserts neutral CHEBI:8806. Valid canonical labels do not establish these supplied forms.
+
+### f3: SL-10 make-up is represented as main preparation
+
+major / open / confirmed; issue key: culturemech.002149.stock-preparation-scope.
+
+preparation_steps[1] directs iron dissolution in HCl and final make-up to 1000 mL, but is placed at the main root. DSMZ assigns that sequence only to SL-10. It cannot establish a one-liter final main medium.
+
+### f4: Historical secondary correspondence remains unresolved
+
+minor / open / confirmed; issue key: culturemech.002149.legacy-secondary-correspondence.
+
+Both layers assert MediaIngredientMech:000171 at ingredients[5].mediaingredientmech_term. The current exact lookup is negative, while the primary chemical name and CHEBI identifier can still be valid. Existing enrichment/migration history does not authenticate this historical mapping. This is a bounded provenance gap, not a confirmed wrong chemical or fabricated replacement.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Reconstruct exact maintained-owner main and two-stock stages, receiving doses and water; preserve original g/mg/mL values. Retain the provider main basis with its limitation, and keep HCl percentage basis/density unresolved instead of asserting a mass conversion. Attach claim-level evidence before authorized regeneration.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Retain exact source hydrate/salt wording and independently verify compatible primary and current secondary identifiers before replacement. Do not carry over anhydrous molar arithmetic or impose L-only lactate identity.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Move the intact dissolution and final 1000 mL make-up into restored SL-10 preparation. Preserve existing main pH/gas/reducing-stock order and explicitly mark missing cycle/stock details without importing defaults or parent main conditions.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Recover an exact historical identifier-to-ingredient correspondence or explicitly qualify the unresolved legacy assertion in the maintained owner. Preserve old history and append the result; do not infer a replacement from names or the current negative lookup.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch026/259/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-026/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch026/259/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml:1:id: CultureMech:002149<br>./data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml:1:id: CultureMech:002149<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch026/source-preflight-bound/259/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 32 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| bound-owner-context | /private/tmp/culturemech-review-work-batch026/source-preflight-bound/259/evidence-context-original.json; Complete target and maintained owner; source and identifier search contexts | context_only | Whole fresh target and owner read; all frozen local-record objects equal the fresh inspected YAML. Source interpretations are independently checked against actual bound raw/text bytes. |
+| primary | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium968.pdf; Pages 1–2: whole main table and preparation; SL-10 and selenite-tungstate subsections | supports | Primary main amounts include two 1 mL stocks and 0.5 mL sodium resazurin at 0.1% w/v alongside 1000 mL water. It separates SL-10 preparation and its 1000 mL make-up from the main medium. |
+| provider | https://mediadive.dsmz.de/rest/medium/968; $.data.medium; all three solutions, recipes and steps | supports | Exact medium 968; main solution 1992 declares 1002 mL, SL-10 595 and selenite/tungstate 777 each declare 1000 mL. Listed main liquids sum to 1002.5 mL before unspecified reducing-stock volumes; provider g_l is a declared normalization, not measured volume. |
+| solution595 | https://mediadive.dsmz.de/rest/solution/595; Named dependency subsection or exact solution endpoint | supports | Exact SL-10 endpoint; 25% HCl basis remains unspecified and g_l 2.5 is not independently established by the primary. |
+| solution777 | https://mediadive.dsmz.de/rest/solution/777; Named dependency subsection or exact solution endpoint | supports | Exact selenite-tungstate endpoint and its separate stock stage. |
+| dsmz320 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium320.pdf; Named dependency subsection or exact solution endpoint | supports | Only the referenced SL-10 subsection; no parent main formulation or conditions transfer. |
+| dsmz385 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium385.pdf; Named dependency subsection or exact solution endpoint | supports | Only the referenced selenite-tungstate subsection; no parent main formulation or conditions transfer. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch026/259/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| chebi131361 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:131361 resolves to disodium selenite pentahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi17883 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17883; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:17883 resolves to hydrogen chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:26710 resolves to sodium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:29377 resolves to sodium carbonate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32139 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32139 resolves to sodium hydrogencarbonate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32145 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32145; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32145 resolves to sodium hydroxide. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32599 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32599; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32599 resolves to magnesium sulfate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:33118 resolves to boric acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:34887 resolves to nickel dichloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi49976 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:49976 resolves to zinc dichloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi53503 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:53503 resolves to cobalt chloride hexahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi62946 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:62946 resolves to ammonium sulfate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi63005 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63005; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:63005 resolves to sodium nitrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi63939 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:63939 resolves to sodium tungstate dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi75228 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75228; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:75228 resolves to sodium lactate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi76209 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:76209 resolves to sodium sulfide nonahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86249 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86249; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86249 resolves to iron dichloride tetrahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86318 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86318 resolves to copper(II) chloride dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:8806 resolves to Resazurin. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi91248 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91248; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:91248 resolves to L-cysteine hydrochloride hydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131361": [{"label": "Na2SeO3 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:131361", "preferred_term": "Na2SeO3 x 5 H2O", "ontology_id": "CHEBI:131361", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:131527": [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17883": [{"label": "HCl", "match_type": "preferred_term", "identifier": "CHEBI:17883", "preferred_term": "HCl", "ontology_id": "CHEBI:17883", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:29377": [{"label": "Na2CO3", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Na2CO3", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium carbonate solution", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Sodium carbonate solution", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32139": [{"label": "NaHCO3", "match_type": "preferred_term", "identifier": "CHEBI:32139", "preferred_term": "NaHCO3", "ontology_id": "CHEBI:32139", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32145": [{"label": "NaOH", "match_type": "preferred_term", "identifier": "CHEBI:32145", "preferred_term": "NaOH", "ontology_id": "CHEBI:32145", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32599": [{"label": "Magnesium sulfate", "match_type": "preferred_term", "identifier": "CHEBI:32599", "preferred_term": "Magnesium sulfate", "ontology_id": "CHEBI:32599", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:34887": [{"label": "NiCl2", "match_type": "preferred_term", "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:49976": [{"label": "ZnCl2", "match_type": "preferred_term", "identifier": "CHEBI:49976", "preferred_term": "ZnCl2", "ontology_id": "CHEBI:49976", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:53503": [{"label": "Cobalt chloride hexahydrate", "match_type": "preferred_term", "identifier": "CHEBI:53503", "preferred_term": "Cobalt chloride hexahydrate", "ontology_id": "CHEBI:53503", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:62946": [{"label": "(NH4)2SO4", "match_type": "preferred_term", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63939": [{"label": "Na2WO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75228": [{"label": "Sodium lactate", "match_type": "preferred_term", "identifier": "CHEBI:75228", "preferred_term": "Sodium lactate", "ontology_id": "CHEBI:75228", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:76209": [{"label": "Na2S x 9 H2O", "match_type": "preferred_term", "identifier": "CHEBI:76209", "preferred_term": "Na2S x 9 H2O", "ontology_id": "CHEBI:76209", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86249": [{"label": "FeCl2 x 4 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86249", "preferred_term": "FeCl2 x 4 H2O", "ontology_id": "CHEBI:86249", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86318": [{"label": "CuCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86318", "preferred_term": "CuCl2 x 2 H2O", "ontology_id": "CHEBI:86318", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86368": [{"label": "MnCl2 x 4 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86368", "preferred_term": "MnCl2 x 4 H2O", "ontology_id": "CHEBI:86368", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:91248": [{"label": "L-Cysteine HCl x H2O", "match_type": "preferred_term", "identifier": "CHEBI:91248", "preferred_term": "L-Cysteine HCl x H2O", "ontology_id": "CHEBI:91248", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| history-metadata | data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml; data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 7, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml", "events": 6, "timestamp_issues": []}] |
+| writer-0 | src/culturemech/import/mediadive_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current MediaDive API parsing reads direct ingredients from the first solution, excludes water and stock additions, preserves provider g_l, and separately records receiving stock references; its preparation reader still gathers steps from all solutions at the main root. Bare-unit fallback is not final-volume proof. Current cleanup retains the first disagreeing duplicate with a warning instead of summing it. Current lossless formulation merging preserves scientific assertions and order, not their correctness. These current implementations do not establish which historical version produced this record. Correct the exact maintained owner, append curation provenance, and regenerate only after separately authorized changes. |
+| writer-1 | scripts/cleanup_media_quality.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current MediaDive API parsing reads direct ingredients from the first solution, excludes water and stock additions, preserves provider g_l, and separately records receiving stock references; its preparation reader still gathers steps from all solutions at the main root. Bare-unit fallback is not final-volume proof. Current cleanup retains the first disagreeing duplicate with a warning instead of summing it. Current lossless formulation merging preserves scientific assertions and order, not their correctness. These current implementations do not establish which historical version produced this record. Correct the exact maintained owner, append curation provenance, and regenerate only after separately authorized changes. |
+| writer-2 | src/culturemech/merge/formulation.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current MediaDive API parsing reads direct ingredients from the first solution, excludes water and stock additions, preserves provider g_l, and separately records receiving stock references; its preparation reader still gathers steps from all solutions at the main root. Bare-unit fallback is not final-volume proof. Current cleanup retains the first disagreeing duplicate with a warning instead of summing it. Current lossless formulation merging preserves scientific assertions and order, not their correctness. These current implementations do not establish which historical version produced this record. Correct the exact maintained owner, append curation provenance, and regenerate only after separately authorized changes. |
+| mimPinnedCatalog | https://raw.githubusercontent.com/CultureBotAI/MediaIngredientMech/6643131b0f12ab40b66f98135245fca04027e0e9/docs/data/all_ingredients.json; Complete pinned current catalog/tree, exact legacy-key lookup | supports | Current snapshot lookup for MediaIngredientMech:000171 completed negatively. It does not establish historical invalidity or an alternative linkage. |
+| mimPinnedTree | https://api.github.com/repos/CultureBotAI/MediaIngredientMech/git/trees/6643131b0f12ab40b66f98135245fca04027e0e9?recursive=1; Complete pinned current catalog/tree, exact legacy-key lookup | supports | Current snapshot lookup for MediaIngredientMech:000171 completed negatively. It does not establish historical invalidity or an alternative linkage. |
+| legacy-search | /private/tmp/culturemech-review-work-batch026/source-preflight-bound/259/evidence-context-original.json; mim_provenance.legacy_lookup; complete 9077-row index, 2953-row catalog and 7384-entry nontruncated tree | context_only | {"identifier": "MediaIngredientMech:000171", "lookup_status": "completed_current_snapshot_absence", "index_data_rows": 9077, "index_matches": [], "catalog_rows": 2953, "catalog_matches": [], "catalog_source_key": "mimPinnedCatalog", "catalog_sha256": "474ff60bd51606ef6e272b8b22d421bbe51d9f78567a114f94e59d04fe51acc7", "catalog_accessed_at": "2026-10-21T09:52:30.606764Z", "tree_entries": 7384, "tree_truncated": false, "tree_path_matches": [], "tree_source_key": "mimPinnedTree", "tree_sha256": "71721421c6e8100b080d4ee3140f6e0bb4bcd21b57964ceeb61399ca4a2844ec", "tree_accessed_at": "2026-10-21T09:51:04.602158Z", "limit": "Current lookup is completed; historical correspondence remains unresolved. This legacy identifier is asserted on the target/owner, so it is distinct from merely unrelated parent context. No replacement mapping is inferred."} |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Only the exact bound collection/provider sources and pinned identifiers were assessed. Current source differences do not establish source chronology or the exact historical import version.
+- Listed water, stock recipe volumes and receiving additions do not establish a measured assembled final volume. No unqualified percent basis, density, unspecified stock strength, sterilization cycle or source-specific replacement identifier is invented.
+- Required historical correspondence for asserted MediaIngredientMech:000171 remains unavailable in the inspected evidence. The current negative lookup completed successfully and is not itself an unavailable check or proof that the legacy identifier was historically wrong.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T150905Z-culturemech-002149-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: anaerobacillus_arseniciselenatis_medium (CultureMech:002149)'
+started_at: '2026-10-21T14:47:52Z'
+finished_at: '2026-10-21T15:09:05Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: DSMZ 968 identity and main provider transcription are supported, but the
+  maintained owner and generated target flatten SL-10 and selenite/tungstate stock
+  strengths into direct ingredients, including an unsupported HCl mass conversion.
+  Stock preparation is assigned to the main root and two supplied forms are misgrounded.
+  Required historical secondary correspondence remains unresolved.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml
+    sha256: 11966a17c98759ce390bf80b34aa249114d0b027f6866bf3cf16709b13ff3b59
+    role: target
+  - path: data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml
+    sha256: 948c5ea1a123181c0845ad43dff306fe7afd6de1fbadc42d64bbeb3d8c413071
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 259; batch 026 item 9 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding twenty-five task batches
+    contain 250 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 253 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:002149
+targets:
+- target_id: CultureMech:002149
+  path: data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml
+  label: anaerobacillus_arseniciselenatis_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:002149
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch026/259/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-026/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch026/259/strict.tsv"
+  target_ids:
+  - CultureMech:002149
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:002149
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:002149
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:002149
+- check_id: legacy-current-lookup
+  name: Exact current secondary catalog/index/tree lookup
+  required: true
+  status: passed
+  summary: Completed negative lookup for MediaIngredientMech:000171; current absence
+    established within the pinned complete snapshots, historical validity not adjudicated.
+  target_ids:
+  - CultureMech:002149
+  evidence_ids:
+  - record
+  - mim
+  - mimPinnedCatalog
+  - mimPinnedTree
+  - legacy-search
+- check_id: legacy-historical-correspondence
+  name: Historical secondary identifier correspondence
+  required: true
+  status: unavailable
+  summary: Required historical correspondence for asserted MediaIngredientMech:000171
+    remains unavailable in the inspected evidence. The current negative lookup completed
+    successfully and is not itself an unavailable check or proof that the legacy identifier
+    was historically wrong.
+  target_ids:
+  - CultureMech:002149
+  evidence_ids:
+  - record
+  - mim
+  - mimPinnedCatalog
+  - mimPinnedTree
+  - legacy-search
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T14:55:46Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T14:55:46Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T14:50:15.978680Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch026/259/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T14:50:17.361694Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-026/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch026/259/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T14:50:22.160197Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T14:50:23.819704Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T14:55:46Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml:1:id:
+    CultureMech:002149
+
+    ./data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml:1:id:
+    CultureMech:002149
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch026/source-preflight-bound/259/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T14:55:46Z'
+  support: supports
+  summary: 32 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: d77f901009f3fc9f3706411c572553a55cee7ebc93a6bd1eda735abd85fdd38d
+- evidence_id: bound-owner-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch026/source-preflight-bound/259/evidence-context-original.json
+  locator: Complete target and maintained owner; source and identifier search contexts
+  accessed_at: '2026-10-21T14:55:46Z'
+  support: context_only
+  summary: Whole fresh target and owner read; all frozen local-record objects equal
+    the fresh inspected YAML. Source interpretations are independently checked against
+    actual bound raw/text bytes.
+  snapshot_sha256: a77915a1c5089e22f5d8c07dc8fb5ede57d61c0a678a546ba8d79ea386c28672
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium968.pdf
+  locator: 'Pages 1–2: whole main table and preparation; SL-10 and selenite-tungstate
+    subsections'
+  accessed_at: '2026-10-21T14:35:47.128035Z'
+  support: supports
+  summary: Primary main amounts include two 1 mL stocks and 0.5 mL sodium resazurin
+    at 0.1% w/v alongside 1000 mL water. It separates SL-10 preparation and its 1000
+    mL make-up from the main medium.
+  snapshot_sha256: 1801364faf6c8c110350da01a8b276079ddcffb5b0ada42faf5a24946c081846
+- evidence_id: provider
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/968
+  locator: $.data.medium; all three solutions, recipes and steps
+  accessed_at: '2026-10-21T14:35:45.933636Z'
+  support: supports
+  summary: Exact medium 968; main solution 1992 declares 1002 mL, SL-10 595 and selenite/tungstate
+    777 each declare 1000 mL. Listed main liquids sum to 1002.5 mL before unspecified
+    reducing-stock volumes; provider g_l is a declared normalization, not measured
+    volume.
+  snapshot_sha256: c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff
+- evidence_id: solution595
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/595
+  locator: Named dependency subsection or exact solution endpoint
+  accessed_at: '2026-10-21T11:03:05.357684Z'
+  support: supports
+  summary: Exact SL-10 endpoint; 25% HCl basis remains unspecified and g_l 2.5 is
+    not independently established by the primary.
+  snapshot_sha256: 5dd4cef59e15c0ab7d35e8a89039c7f7133ff8cd08ab6c414cf52d5e48c9aeab
+- evidence_id: solution777
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/777
+  locator: Named dependency subsection or exact solution endpoint
+  accessed_at: '2026-10-21T13:20:07.510517Z'
+  support: supports
+  summary: Exact selenite-tungstate endpoint and its separate stock stage.
+  snapshot_sha256: 3845d8e8d84cc22cea487e32868daa4343a41eb10d3ca6c1bf4cc94edc8459f2
+- evidence_id: dsmz320
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium320.pdf
+  locator: Named dependency subsection or exact solution endpoint
+  accessed_at: '2026-10-21T13:20:08.151265Z'
+  support: supports
+  summary: Only the referenced SL-10 subsection; no parent main formulation or conditions
+    transfer.
+  snapshot_sha256: d1fd0f4c9f8460271297a9295b2d1fabae5d4bce3a2fe3ed5f3036e4fa6796f9
+- evidence_id: dsmz385
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium385.pdf
+  locator: Named dependency subsection or exact solution endpoint
+  accessed_at: '2026-10-21T13:20:08.153235Z'
+  support: supports
+  summary: Only the referenced selenite-tungstate subsection; no parent main formulation
+    or conditions transfer.
+  snapshot_sha256: d660a2e55a1d419557c01f865afb7182891ad859743bc686f53b95d3643eec22
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch026/259/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T14:55:46Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: d61cf0cbfe79a5d0c5bced1dbb9e58e0bb50f624e33924d1c018e39ed80bab4e
+- evidence_id: chebi131361
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:33:27.980786Z'
+  support: supports
+  summary: CHEBI:131361 resolves to disodium selenite pentahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 643fefa89a2c0afeb2a00a0dd6149dbbf86cc4824369c58bde1c6ea6d4316d10
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi17883
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17883
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:37:25.439020Z'
+  support: supports
+  summary: CHEBI:17883 resolves to hydrogen chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 1c4c2e8e3474319ab5fb79041b19cabfae42f4360729a7569f8a943a503d2f6a
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi29377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:31:16.500548Z'
+  support: supports
+  summary: CHEBI:29377 resolves to sodium carbonate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 21ae6468f9d087fd7930a263fc44728e31a8babde3576135686278a13bc1d6e1
+- evidence_id: chebi32139
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:16:24.226823Z'
+  support: supports
+  summary: CHEBI:32139 resolves to sodium hydrogencarbonate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 2a41873aa455dc8563a47d36add836fffb6fb758ce7a2d1c28295e77646315fe
+- evidence_id: chebi32145
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32145
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:33:28.263004Z'
+  support: supports
+  summary: CHEBI:32145 resolves to sodium hydroxide. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: db4eb7586e3b04f5b2ae39b47bae7c1c533316f9bce15ee2829bf6967ca352f1
+- evidence_id: chebi32599
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32599
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.640268Z'
+  support: supports
+  summary: CHEBI:32599 resolves to magnesium sulfate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 5da4e37c63d52d06c19a75da5c03a8ba42e81db8b537a053285d895de8f2b9ff
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.364390Z'
+  support: supports
+  summary: CHEBI:33118 resolves to boric acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi34887
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:04:44.093348Z'
+  support: supports
+  summary: CHEBI:34887 resolves to nickel dichloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: chebi49976
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:04:44.168295Z'
+  support: supports
+  summary: CHEBI:49976 resolves to zinc dichloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: d27644ae0df5935f8f18a28faa1ba6096fefeb9d0cb951b39751d442c92bd321
+- evidence_id: chebi53503
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:04:44.349630Z'
+  support: supports
+  summary: CHEBI:53503 resolves to cobalt chloride hexahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: c33e304a0a565068c592ba0970e501052981599ef69cd2cb901e88f27931389d
+- evidence_id: chebi62946
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:43:02.566401Z'
+  support: supports
+  summary: CHEBI:62946 resolves to ammonium sulfate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 10c25b481047a1fdfbc201104ecc06b15b32d5e72319beed5133e5d5693bede5
+- evidence_id: chebi63005
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63005
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T04:02:36.443517Z'
+  support: supports
+  summary: CHEBI:63005 resolves to sodium nitrate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 1ec6a815a0e22ba0d12f84ad998bef39b9e6b80cf90c25cd1ab51903bbb54da3
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi63939
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:09.796192Z'
+  support: supports
+  summary: CHEBI:63939 resolves to sodium tungstate dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 987144fa0342502834f116860a4b4f71696f62c18e7b701301667c15e588562a
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi75228
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75228
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T14:35:48.010081Z'
+  support: supports
+  summary: CHEBI:75228 resolves to sodium lactate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 725fbc04444c481cec25519a6f632470427a7020613af93e84e05b5f23d66ccf
+- evidence_id: chebi76209
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:04.847843Z'
+  support: supports
+  summary: CHEBI:76209 resolves to sodium sulfide nonahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: f74d2c85574a4e28bdf71a78e4263f7e4c211036cd6d63b1f8282aca1d255e5c
+- evidence_id: chebi86249
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86249
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T09:49:55.693358Z'
+  support: supports
+  summary: CHEBI:86249 resolves to iron dichloride tetrahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 63bb84e7a947d2a3db0e5f23cf6a533bda2eee137020d7bbe2590477131c5683
+- evidence_id: chebi86318
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:43:12.592415Z'
+  support: supports
+  summary: CHEBI:86318 resolves to copper(II) chloride dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 9bbecfe37d67d923ee070067aebdf1abf21048cdb2cbdff9de0e3d21f68ea1ae
+- evidence_id: chebi86368
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.657545Z'
+  support: supports
+  summary: CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Identifier
+    existence and label metadata do not establish source-specific hydrate, stereochemistry
+    or product identity.
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: chebi8806
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.774007Z'
+  support: supports
+  summary: CHEBI:8806 resolves to Resazurin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: chebi91248
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91248
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:32.136441Z'
+  support: supports
+  summary: CHEBI:91248 resolves to L-cysteine hydrochloride hydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 7ef9e26cec1a5833d216a01df066c0b6a0bfba77bad16db354c690a7a814a683
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T14:55:46Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131361":
+    [{"label": "Na2SeO3 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:131361",
+    "preferred_term": "Na2SeO3 x 5 H2O", "ontology_id": "CHEBI:131361", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:131527": [{"label": "K2HPO4", "match_type":
+    "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id":
+    "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17883":
+    [{"label": "HCl", "match_type": "preferred_term", "identifier": "CHEBI:17883",
+    "preferred_term": "HCl", "ontology_id": "CHEBI:17883", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term",
+    "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:29377": [{"label":
+    "Na2CO3", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term":
+    "Na2CO3", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Sodium carbonate solution", "match_type": "preferred_term",
+    "identifier": "CHEBI:29377", "preferred_term": "Sodium carbonate solution", "ontology_id":
+    "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32139":
+    [{"label": "NaHCO3", "match_type": "preferred_term", "identifier": "CHEBI:32139",
+    "preferred_term": "NaHCO3", "ontology_id": "CHEBI:32139", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:32145": [{"label": "NaOH", "match_type": "preferred_term",
+    "identifier": "CHEBI:32145", "preferred_term": "NaOH", "ontology_id": "CHEBI:32145",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32599": [{"label":
+    "Magnesium sulfate", "match_type": "preferred_term", "identifier": "CHEBI:32599",
+    "preferred_term": "Magnesium sulfate", "ontology_id": "CHEBI:32599", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type":
+    "preferred_term", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id":
+    "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:34887":
+    [{"label": "NiCl2", "match_type": "preferred_term", "identifier": "CHEBI:34887",
+    "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:49976": [{"label": "ZnCl2", "match_type": "preferred_term",
+    "identifier": "CHEBI:49976", "preferred_term": "ZnCl2", "ontology_id": "CHEBI:49976",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:53503": [{"label":
+    "Cobalt chloride hexahydrate", "match_type": "preferred_term", "identifier": "CHEBI:53503",
+    "preferred_term": "Cobalt chloride hexahydrate", "ontology_id": "CHEBI:53503",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:62946": [{"label":
+    "(NH4)2SO4", "match_type": "preferred_term", "identifier": "CHEBI:62946", "preferred_term":
+    "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term",
+    "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63939": [{"label":
+    "Na2WO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:63939",
+    "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:75213", "preferred_term":
+    "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:75228": [{"label": "Sodium lactate", "match_type": "preferred_term",
+    "identifier": "CHEBI:75228", "preferred_term": "Sodium lactate", "ontology_id":
+    "CHEBI:75228", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:76209":
+    [{"label": "Na2S x 9 H2O", "match_type": "preferred_term", "identifier": "CHEBI:76209",
+    "preferred_term": "Na2S x 9 H2O", "ontology_id": "CHEBI:76209", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:86249": [{"label": "FeCl2 x 4 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:86249", "preferred_term":
+    "FeCl2 x 4 H2O", "ontology_id": "CHEBI:86249", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:86318": [{"label": "CuCl2 x 2 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:86318", "preferred_term": "CuCl2 x 2 H2O", "ontology_id":
+    "CHEBI:86318", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86368":
+    [{"label": "MnCl2 x 4 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86368",
+    "preferred_term": "MnCl2 x 4 H2O", "ontology_id": "CHEBI:86368", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:91248": [{"label": "L-Cysteine HCl x
+    H2O", "match_type": "preferred_term", "identifier": "CHEBI:91248", "preferred_term":
+    "L-Cysteine HCl x H2O", "ontology_id": "CHEBI:91248", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml;
+    data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T14:55:46Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 7, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml",
+    "events": 6, "timestamp_issues": []}]'
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T14:55:46Z'
+  support: context_only
+  summary: Current MediaDive API parsing reads direct ingredients from the first solution,
+    excludes water and stock additions, preserves provider g_l, and separately records
+    receiving stock references; its preparation reader still gathers steps from all
+    solutions at the main root. Bare-unit fallback is not final-volume proof. Current
+    cleanup retains the first disagreeing duplicate with a warning instead of summing
+    it. Current lossless formulation merging preserves scientific assertions and order,
+    not their correctness. These current implementations do not establish which historical
+    version produced this record. Correct the exact maintained owner, append curation
+    provenance, and regenerate only after separately authorized changes.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-1
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T14:55:46Z'
+  support: context_only
+  summary: Current MediaDive API parsing reads direct ingredients from the first solution,
+    excludes water and stock additions, preserves provider g_l, and separately records
+    receiving stock references; its preparation reader still gathers steps from all
+    solutions at the main root. Bare-unit fallback is not final-volume proof. Current
+    cleanup retains the first disagreeing duplicate with a warning instead of summing
+    it. Current lossless formulation merging preserves scientific assertions and order,
+    not their correctness. These current implementations do not establish which historical
+    version produced this record. Correct the exact maintained owner, append curation
+    provenance, and regenerate only after separately authorized changes.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T14:55:46Z'
+  support: context_only
+  summary: Current MediaDive API parsing reads direct ingredients from the first solution,
+    excludes water and stock additions, preserves provider g_l, and separately records
+    receiving stock references; its preparation reader still gathers steps from all
+    solutions at the main root. Bare-unit fallback is not final-volume proof. Current
+    cleanup retains the first disagreeing duplicate with a warning instead of summing
+    it. Current lossless formulation merging preserves scientific assertions and order,
+    not their correctness. These current implementations do not establish which historical
+    version produced this record. Correct the exact maintained owner, append curation
+    provenance, and regenerate only after separately authorized changes.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: mimPinnedCatalog
+  kind: database
+  reference: https://raw.githubusercontent.com/CultureBotAI/MediaIngredientMech/6643131b0f12ab40b66f98135245fca04027e0e9/docs/data/all_ingredients.json
+  locator: Complete pinned current catalog/tree, exact legacy-key lookup
+  accessed_at: '2026-10-21T09:52:30.606764Z'
+  support: supports
+  summary: Current snapshot lookup for MediaIngredientMech:000171 completed negatively.
+    It does not establish historical invalidity or an alternative linkage.
+  snapshot_sha256: 474ff60bd51606ef6e272b8b22d421bbe51d9f78567a114f94e59d04fe51acc7
+- evidence_id: mimPinnedTree
+  kind: database
+  reference: https://api.github.com/repos/CultureBotAI/MediaIngredientMech/git/trees/6643131b0f12ab40b66f98135245fca04027e0e9?recursive=1
+  locator: Complete pinned current catalog/tree, exact legacy-key lookup
+  accessed_at: '2026-10-21T09:51:04.602158Z'
+  support: supports
+  summary: Current snapshot lookup for MediaIngredientMech:000171 completed negatively.
+    It does not establish historical invalidity or an alternative linkage.
+  snapshot_sha256: 71721421c6e8100b080d4ee3140f6e0bb4bcd21b57964ceeb61399ca4a2844ec
+- evidence_id: legacy-search
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch026/source-preflight-bound/259/evidence-context-original.json
+  locator: mim_provenance.legacy_lookup; complete 9077-row index, 2953-row catalog
+    and 7384-entry nontruncated tree
+  accessed_at: '2026-10-21T14:55:46Z'
+  support: context_only
+  summary: '{"identifier": "MediaIngredientMech:000171", "lookup_status": "completed_current_snapshot_absence",
+    "index_data_rows": 9077, "index_matches": [], "catalog_rows": 2953, "catalog_matches":
+    [], "catalog_source_key": "mimPinnedCatalog", "catalog_sha256": "474ff60bd51606ef6e272b8b22d421bbe51d9f78567a114f94e59d04fe51acc7",
+    "catalog_accessed_at": "2026-10-21T09:52:30.606764Z", "tree_entries": 7384, "tree_truncated":
+    false, "tree_path_matches": [], "tree_source_key": "mimPinnedTree", "tree_sha256":
+    "71721421c6e8100b080d4ee3140f6e0bb4bcd21b57964ceeb61399ca4a2844ec", "tree_accessed_at":
+    "2026-10-21T09:51:04.602158Z", "limit": "Current lookup is completed; historical
+    correspondence remains unresolved. This legacy identifier is asserted on the target/owner,
+    so it is distinct from merely unrelated parent context. No replacement mapping
+    is inferred."}'
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:002149
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 39 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:002149
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"component_or_context\": \"\
+    Main: (NH4)2SO4\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0998004\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      },\n        \"decision\": \"evidence_only\"\n      },\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0998004\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"main\",\n      \"amount\": 0.1,\n      \"unit\": \"g\"\
+    ,\n      \"attribute\": null,\n      \"provider_g_per_l\": 0.0998004,\n      \"\
+    provider_volume_ml\": 1002\n    },\n    \"rationale\": \"Exact unchanged provider\
+    \ g_l transcription without attached local evidence. Retain the original main\
+    \ amount and the explicitly attributed 1002 mL provider basis, not a measured\
+    \ final-volume claim.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive968api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/968\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[0]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 1,\\\
+    n                        \\\"compound\\\": \\\"(NH4)2SO4\\\",\\n             \
+    \           \\\"compound_id\\\": 27,\\n                        \\\"amount\\\"\
+    : 0.1,\\n                        \\\"unit\\\": \\\"g\\\",\\n                 \
+    \       \\\"g_l\\\": 0.0998004,\\n                        \\\"mmol_l\\\": 0.755263,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q2\",\n    \"component_or_context\"\
+    : \"Main: MgSO4\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0249501\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      },\n        \"decision\": \"evidence_only\"\n      },\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0249501\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"main\",\n      \"amount\": 25,\n      \"unit\": \"mg\"\
+    ,\n      \"attribute\": null,\n      \"provider_g_per_l\": 0.0249501,\n      \"\
+    provider_volume_ml\": 1002\n    },\n    \"rationale\": \"Exact unchanged provider\
+    \ g_l transcription without attached local evidence. Retain the original main\
+    \ amount and the explicitly attributed 1002 mL provider basis, not a measured\
+    \ final-volume claim. Primary prints MgSO4 at 25 mg with no hydrate; do not substitute\
+    \ a hydrated salt.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive968api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/968\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[1]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 2,\\\
+    n                        \\\"compound\\\": \\\"MgSO4\\\",\\n                 \
+    \       \\\"compound_id\\\": 325,\\n                        \\\"amount\\\": 25,\\\
+    n                        \\\"unit\\\": \\\"mg\\\",\\n                        \\\
+    \"g_l\\\": 0.0249501,\\n                        \\\"mmol_l\\\": 0.207278,\\n \
+    \                       \\\"optional\\\": 0\\n                    }\",\n     \
+    \   \"snapshot_sha256\": \"c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q3\",\n    \"component_or_context\"\
+    : \"Main: NaCl\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"89.8204\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"89.8204\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"main\",\n      \"amount\": 90,\n      \"unit\": \"g\"\
+    ,\n      \"attribute\": null,\n      \"provider_g_per_l\": 89.8204,\n      \"\
+    provider_volume_ml\": 1002\n    },\n    \"rationale\": \"Exact unchanged provider\
+    \ g_l transcription without attached local evidence. Retain the original main\
+    \ amount and the explicitly attributed 1002 mL provider basis, not a measured\
+    \ final-volume claim.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive968api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/968\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[2]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 3,\\\
+    n                        \\\"compound\\\": \\\"NaCl\\\",\\n                  \
+    \      \\\"compound_id\\\": 43,\\n                        \\\"amount\\\": 90,\\\
+    n                        \\\"unit\\\": \\\"g\\\",\\n                        \\\
+    \"g_l\\\": 89.8204,\\n                        \\\"mmol_l\\\": 1536.97,\\n    \
+    \                    \\\"optional\\\": 0\\n                    }\",\n        \"\
+    snapshot_sha256\": \"c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q4\",\n    \"component_or_context\"\
+    : \"Main: K2HPO4\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.149701\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.149701\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"main\",\n      \"amount\": 0.15,\n      \"unit\": \"g\"\
+    ,\n      \"attribute\": null,\n      \"provider_g_per_l\": 0.149701,\n      \"\
+    provider_volume_ml\": 1002\n    },\n    \"rationale\": \"Exact unchanged provider\
+    \ g_l transcription without attached local evidence. Retain the original main\
+    \ amount and the explicitly attributed 1002 mL provider basis, not a measured\
+    \ final-volume claim.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive968api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/968\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[3]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 4,\\\
+    n                        \\\"compound\\\": \\\"K2HPO4\\\",\\n                \
+    \        \\\"compound_id\\\": 10,\\n                        \\\"amount\\\": 0.15,\\\
+    n                        \\\"unit\\\": \\\"g\\\",\\n                        \\\
+    \"g_l\\\": 0.149701,\\n                        \\\"mmol_l\\\": 0.859479,\\n  \
+    \                      \\\"optional\\\": 0\\n                    }\",\n      \
+    \  \"snapshot_sha256\": \"c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q5\",\n    \"component_or_context\"\
+    : \"Main: KH2PO4\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0798403\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      },\n        \"decision\": \"evidence_only\"\n      },\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0798403\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"main\",\n      \"amount\": 0.08,\n      \"unit\": \"g\"\
+    ,\n      \"attribute\": null,\n      \"provider_g_per_l\": 0.0798403,\n      \"\
+    provider_volume_ml\": 1002\n    },\n    \"rationale\": \"Exact unchanged provider\
+    \ g_l transcription without attached local evidence. Retain the original main\
+    \ amount and the explicitly attributed 1002 mL provider basis, not a measured\
+    \ final-volume claim.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive968api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/968\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[4]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 5,\\\
+    n                        \\\"compound\\\": \\\"KH2PO4\\\",\\n                \
+    \        \\\"compound_id\\\": 11,\\n                        \\\"amount\\\": 0.08,\\\
+    n                        \\\"unit\\\": \\\"g\\\",\\n                        \\\
+    \"g_l\\\": 0.0798403,\\n                        \\\"mmol_l\\\": 0.586694,\\n \
+    \                       \\\"optional\\\": 0\\n                    }\",\n     \
+    \   \"snapshot_sha256\": \"c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q6\",\n    \"component_or_context\"\
+    : \"Main: NaNO3\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.2475\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.2475\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"main\",\n      \"amount\": 1.25,\n      \"unit\": \"g\"\
+    ,\n      \"attribute\": null,\n      \"provider_g_per_l\": 1.2475,\n      \"provider_volume_ml\"\
+    : 1002\n    },\n    \"rationale\": \"Exact unchanged provider g_l transcription\
+    \ without attached local evidence. Retain the original main amount and the explicitly\
+    \ attributed 1002 mL provider basis, not a measured final-volume claim.\",\n \
+    \   \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive968api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/968\",\n  \
+    \      \"source_locator\": \"$.data.solutions[0].recipe[7]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 8,\\n                  \
+    \      \\\"compound\\\": \\\"NaNO3\\\",\\n                        \\\"compound_id\\\
+    \": 187,\\n                        \\\"amount\\\": 1.25,\\n                  \
+    \      \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 1.2475,\\\
+    n                        \\\"mmol_l\\\": 14.6774,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\n      }\n\
+    \    ]\n  },\n  {\n    \"quantity_id\": \"q7\",\n    \"component_or_context\"\
+    : \"Main: Na-DL-lactate\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.69661\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.69661\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"main\",\n      \"amount\": 1.7,\n      \"unit\": \"g\"\
+    ,\n      \"attribute\": null,\n      \"provider_g_per_l\": 1.69661,\n      \"\
+    provider_volume_ml\": 1002\n    },\n    \"rationale\": \"Exact unchanged provider\
+    \ g_l transcription without attached local evidence. Retain the original main\
+    \ amount and the explicitly attributed 1002 mL provider basis, not a measured\
+    \ final-volume claim. Source DL-lactate is retained; generic sodium-lactate CHEBI:75228\
+    \ does not impose an L-only configuration.\",\n    \"source_snippets\": [\n  \
+    \    {\n        \"source_key\": \"mediadive968api\",\n        \"source_url\":\
+    \ \"https://mediadive.dsmz.de/rest/medium/968\",\n        \"source_locator\":\
+    \ \"$.data.solutions[0].recipe[8]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 9,\\n                        \\\"\
+    compound\\\": \\\"Na-DL-lactate\\\",\\n                        \\\"compound_id\\\
+    \": 111,\\n                        \\\"amount\\\": 1.7,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 1.69661,\\\
+    n                        \\\"mmol_l\\\": 15.1402,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\n      }\n\
+    \    ]\n  },\n  {\n    \"quantity_id\": \"q8\",\n    \"component_or_context\"\
+    : \"Main: Yeast extract\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.199601\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.199601\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"main\",\n      \"amount\": 0.2,\n      \"unit\": \"g\"\
+    ,\n      \"attribute\": null,\n      \"provider_g_per_l\": 0.199601,\n      \"\
+    provider_volume_ml\": 1002\n    },\n    \"rationale\": \"Exact unchanged provider\
+    \ g_l transcription without attached local evidence. Retain the original main\
+    \ amount and the explicitly attributed 1002 mL provider basis, not a measured\
+    \ final-volume claim.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive968api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/968\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[9]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 10,\\\
+    n                        \\\"compound\\\": \\\"Yeast extract\\\",\\n         \
+    \               \\\"compound_id\\\": 16,\\n                        \\\"amount\\\
+    \": 0.2,\\n                        \\\"unit\\\": \\\"g\\\",\\n               \
+    \         \\\"g_l\\\": 0.199601,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q9\",\n    \"component_or_context\"\
+    : \"Main: Sodium resazurin\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.000499002\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"evidence_only\"\n      },\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.000499002\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"\
+    proposed_source_representation\": {\n      \"stage\": \"main\",\n      \"amount\"\
+    : 0.5,\n      \"unit\": \"ml\",\n      \"attribute\": \"0.1% w/v\",\n      \"\
+    provider_g_per_l\": 0.000499002,\n      \"provider_volume_ml\": 1002\n    },\n\
+    \    \"rationale\": \"Exact unchanged provider g_l transcription without attached\
+    \ local evidence. Retain the original main amount and the explicitly attributed\
+    \ 1002 mL provider basis, not a measured final-volume claim. The source addition\
+    \ is 0.5 mL of 0.1% w/v sodium resazurin (0.0005 g per batch); neutral-resazurin\
+    \ grounding is a separate defect.\",\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"mediadive968api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/968\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[10]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 11,\\\
+    n                        \\\"compound\\\": \\\"Sodium resazurin\\\",\\n      \
+    \                  \\\"compound_id\\\": 1852,\\n                        \\\"attribute\\\
+    \": \\\"0.1% w/v\\\",\\n                        \\\"amount\\\": 0.5,\\n      \
+    \                  \\\"unit\\\": \\\"ml\\\",\\n                        \\\"g_l\\\
+    \": 0.000499002,\\n                        \\\"mmol_l\\\": 0.00198671,\\n    \
+    \                    \\\"optional\\\": 0\\n                    }\",\n        \"\
+    snapshot_sha256\": \"c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q10\",\n    \"component_or_context\"\
+    : \"Main: Na2CO3\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10.5788\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10.5788\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"main\",\n      \"amount\": 10.6,\n      \"unit\": \"g\"\
+    ,\n      \"attribute\": null,\n      \"provider_g_per_l\": 10.5788,\n      \"\
+    provider_volume_ml\": 1002\n    },\n    \"rationale\": \"Exact unchanged provider\
+    \ g_l transcription without attached local evidence. Retain the original main\
+    \ amount and the explicitly attributed 1002 mL provider basis, not a measured\
+    \ final-volume claim.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive968api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/968\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[11]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 12,\\\
+    n                        \\\"compound\\\": \\\"Na2CO3\\\",\\n                \
+    \        \\\"compound_id\\\": 32,\\n                        \\\"amount\\\": 10.6,\\\
+    n                        \\\"unit\\\": \\\"g\\\",\\n                        \\\
+    \"g_l\\\": 10.5788,\\n                        \\\"mmol_l\\\": 99.8117,\\n    \
+    \                    \\\"optional\\\": 0\\n                    }\",\n        \"\
+    snapshot_sha256\": \"c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q11\",\n    \"component_or_context\"\
+    : \"Main: NaHCO3\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"4.19162\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"4.19162\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"main\",\n      \"amount\": 4.2,\n      \"unit\": \"g\"\
+    ,\n      \"attribute\": null,\n      \"provider_g_per_l\": 4.19162,\n      \"\
+    provider_volume_ml\": 1002\n    },\n    \"rationale\": \"Exact unchanged provider\
+    \ g_l transcription without attached local evidence. Retain the original main\
+    \ amount and the explicitly attributed 1002 mL provider basis, not a measured\
+    \ final-volume claim.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive968api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/968\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[12]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 13,\\\
+    n                        \\\"compound\\\": \\\"NaHCO3\\\",\\n                \
+    \        \\\"compound_id\\\": 55,\\n                        \\\"amount\\\": 4.2,\\\
+    n                        \\\"unit\\\": \\\"g\\\",\\n                        \\\
+    \"g_l\\\": 4.19162,\\n                        \\\"mmol_l\\\": 49.896,\\n     \
+    \                   \\\"optional\\\": 0\\n                    }\",\n        \"\
+    snapshot_sha256\": \"c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q12\",\n    \"component_or_context\"\
+    : \"Main: L-Cysteine HCl x H2O\",\n    \"decision\": \"evidence_only\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.249501\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.249501\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"main\",\n      \"amount\": 0.25,\n      \"unit\": \"g\"\
+    ,\n      \"attribute\": null,\n      \"provider_g_per_l\": 0.249501,\n      \"\
+    provider_volume_ml\": 1002\n    },\n    \"rationale\": \"Exact unchanged provider\
+    \ g_l transcription without attached local evidence. Retain the original main\
+    \ amount and the explicitly attributed 1002 mL provider basis, not a measured\
+    \ final-volume claim.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive968api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/968\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[13]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 14,\\\
+    n                        \\\"compound\\\": \\\"L-Cysteine HCl x H2O\\\",\\n  \
+    \                      \\\"compound_id\\\": 770,\\n                        \\\"\
+    amount\\\": 0.25,\\n                        \\\"unit\\\": \\\"g\\\",\\n      \
+    \                  \\\"g_l\\\": 0.249501,\\n                        \\\"mmol_l\\\
+    \": 1.42056,\\n                        \\\"optional\\\": 0\\n                \
+    \    }\",\n        \"snapshot_sha256\": \"c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q13\",\n    \"component_or_context\"\
+    : \"Main: Na2S x 9 H2O\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.249501\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.249501\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"main\",\n      \"amount\": 0.25,\n      \"unit\": \"g\"\
+    ,\n      \"attribute\": null,\n      \"provider_g_per_l\": 0.249501,\n      \"\
+    provider_volume_ml\": 1002\n    },\n    \"rationale\": \"Exact unchanged provider\
+    \ g_l transcription without attached local evidence. Retain the original main\
+    \ amount and the explicitly attributed 1002 mL provider basis, not a measured\
+    \ final-volume claim.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive968api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/968\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[14]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 15,\\\
+    n                        \\\"compound\\\": \\\"Na2S x 9 H2O\\\",\\n          \
+    \              \\\"compound_id\\\": 54,\\n                        \\\"amount\\\
+    \": 0.25,\\n                        \\\"unit\\\": \\\"g\\\",\\n              \
+    \          \\\"g_l\\\": 0.249501,\\n                        \\\"mmol_l\\\": 1.0388,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q14\",\n    \"component_or_context\"\
+    : \"SL-10: HCl\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n \
+    \     {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"SL-10 stock 595\",\n      \"amount\": 10,\n      \"unit\"\
+    : \"ml\",\n      \"source_attribute\": \"25%\",\n      \"stock_final_make_up_ml\"\
+    : 1000,\n      \"receiving_dose_ml\": 1,\n      \"percent_basis\": null,\n   \
+    \   \"provider_g_per_l_not_validated\": 2.5\n    },\n    \"rationale\": \"The\
+    \ source specifies 10 mL HCl (25%) in SL-10, with no percentage basis or density.\
+    \ It does not justify 2.5 g/L as a mass concentration, and stock concentration\
+    \ is not the final medium concentration. Preserve dose and unresolved basis; do\
+    \ not import 7.7 M from a different medium.\",\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"mediadive968api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/968\",\n        \"source_locator\":\
+    \ \"$.data.solutions[1].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"HCl\\\",\\n                        \\\"compound_id\\\": 68,\\\
+    n                        \\\"attribute\\\": \\\"25%\\\",\\n                  \
+    \      \\\"amount\\\": 10,\\n                        \\\"unit\\\": \\\"ml\\\"\
+    ,\\n                        \\\"g_l\\\": 2.5,\\n                        \\\"mmol_l\\\
+    \": 68.5683,\\n                        \\\"optional\\\": 0\\n                \
+    \    }\",\n        \"snapshot_sha256\": \"c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q15\",\n    \"component_or_context\"\
+    : \"SL-10: FeCl2 x 4 H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"SL-10 stock 595\",\n      \"amount\": 1.5,\n      \"unit\"\
+    : \"g\",\n      \"source_attribute\": null,\n      \"stock_final_make_up_ml\"\
+    : 1000,\n      \"receiving_dose_ml\": 1,\n      \"provider_stock_g_per_l\": 1.5\n\
+    \    },\n    \"rationale\": \"Stored stock strength is placed among direct medium\
+    \ ingredients. Restore the stock recipe and 1 mL receiving dose; any final contribution\
+    \ must retain its denominator and stage.\",\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"mediadive968api\",\n        \"source_url\": \"\
+    https://mediadive.dsmz.de/rest/medium/968\",\n        \"source_locator\": \"$.data.solutions[1].recipe[1]\"\
+    ,\n        \"exact_source_quote\": \"{\\n                        \\\"recipe_order\\\
+    \": 2,\\n                        \\\"compound\\\": \\\"FeCl2 x 4 H2O\\\",\\n \
+    \                       \\\"compound_id\\\": 260,\\n                        \\\
+    \"amount\\\": 1.5,\\n                        \\\"unit\\\": \\\"g\\\",\\n     \
+    \                   \\\"g_l\\\": 1.5,\\n                        \\\"mmol_l\\\"\
+    : 7.54482,\\n                        \\\"optional\\\": 0\\n                  \
+    \  }\",\n        \"snapshot_sha256\": \"c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q16\",\n    \"component_or_context\"\
+    : \"SL-10: ZnCl2\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.07\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.07\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"SL-10 stock 595\",\n      \"amount\": 70,\n      \"unit\"\
+    : \"mg\",\n      \"source_attribute\": null,\n      \"stock_final_make_up_ml\"\
+    : 1000,\n      \"receiving_dose_ml\": 1,\n      \"provider_stock_g_per_l\": 0.07\n\
+    \    },\n    \"rationale\": \"Stored stock strength is placed among direct medium\
+    \ ingredients. Restore the stock recipe and 1 mL receiving dose; any final contribution\
+    \ must retain its denominator and stage.\",\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"mediadive968api\",\n        \"source_url\": \"\
+    https://mediadive.dsmz.de/rest/medium/968\",\n        \"source_locator\": \"$.data.solutions[1].recipe[2]\"\
+    ,\n        \"exact_source_quote\": \"{\\n                        \\\"recipe_order\\\
+    \": 3,\\n                        \\\"compound\\\": \\\"ZnCl2\\\",\\n         \
+    \               \\\"compound_id\\\": 64,\\n                        \\\"amount\\\
+    \": 70,\\n                        \\\"unit\\\": \\\"mg\\\",\\n               \
+    \         \\\"g_l\\\": 0.07,\\n                        \\\"mmol_l\\\": 0.513573,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q17\",\n    \"component_or_context\"\
+    : \"SL-10: MnCl2 x 4 H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"SL-10 stock 595\",\n      \"amount\": 100,\n      \"unit\"\
+    : \"mg\",\n      \"source_attribute\": null,\n      \"stock_final_make_up_ml\"\
+    : 1000,\n      \"receiving_dose_ml\": 1,\n      \"provider_stock_g_per_l\": 0.1\n\
+    \    },\n    \"rationale\": \"Stored stock strength is placed among direct medium\
+    \ ingredients. Restore the stock recipe and 1 mL receiving dose; any final contribution\
+    \ must retain its denominator and stage.\",\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"mediadive968api\",\n        \"source_url\": \"\
+    https://mediadive.dsmz.de/rest/medium/968\",\n        \"source_locator\": \"$.data.solutions[1].recipe[3]\"\
+    ,\n        \"exact_source_quote\": \"{\\n                        \\\"recipe_order\\\
+    \": 4,\\n                        \\\"compound\\\": \\\"MnCl2 x 4 H2O\\\",\\n \
+    \                       \\\"compound_id\\\": 36,\\n                        \\\"\
+    amount\\\": 100,\\n                        \\\"unit\\\": \\\"mg\\\",\\n      \
+    \                  \\\"g_l\\\": 0.1,\\n                        \\\"mmol_l\\\"\
+    : 0.505293,\\n                        \\\"optional\\\": 0\\n                 \
+    \   }\",\n        \"snapshot_sha256\": \"c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q18\",\n    \"component_or_context\"\
+    : \"SL-10: H3BO3\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.006\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.006\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"SL-10 stock 595\",\n      \"amount\": 6,\n      \"unit\"\
+    : \"mg\",\n      \"source_attribute\": null,\n      \"stock_final_make_up_ml\"\
+    : 1000,\n      \"receiving_dose_ml\": 1,\n      \"provider_stock_g_per_l\": 0.006\n\
+    \    },\n    \"rationale\": \"Stored stock strength is placed among direct medium\
+    \ ingredients. Restore the stock recipe and 1 mL receiving dose; any final contribution\
+    \ must retain its denominator and stage.\",\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"mediadive968api\",\n        \"source_url\": \"\
+    https://mediadive.dsmz.de/rest/medium/968\",\n        \"source_locator\": \"$.data.solutions[1].recipe[4]\"\
+    ,\n        \"exact_source_quote\": \"{\\n                        \\\"recipe_order\\\
+    \": 5,\\n                        \\\"compound\\\": \\\"H3BO3\\\",\\n         \
+    \               \\\"compound_id\\\": 37,\\n                        \\\"amount\\\
+    \": 6,\\n                        \\\"unit\\\": \\\"mg\\\",\\n                \
+    \        \\\"g_l\\\": 0.006,\\n                        \\\"mmol_l\\\": 0.0970246,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q19\",\n    \"component_or_context\"\
+    : \"SL-10: CoCl2 x 6 H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.19\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.19\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"SL-10 stock 595\",\n      \"amount\": 190,\n      \"unit\"\
+    : \"mg\",\n      \"source_attribute\": null,\n      \"stock_final_make_up_ml\"\
+    : 1000,\n      \"receiving_dose_ml\": 1,\n      \"provider_stock_g_per_l\": 0.19\n\
+    \    },\n    \"rationale\": \"Stored stock strength is placed among direct medium\
+    \ ingredients. Restore the stock recipe and 1 mL receiving dose; any final contribution\
+    \ must retain its denominator and stage.\",\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"mediadive968api\",\n        \"source_url\": \"\
+    https://mediadive.dsmz.de/rest/medium/968\",\n        \"source_locator\": \"$.data.solutions[1].recipe[5]\"\
+    ,\n        \"exact_source_quote\": \"{\\n                        \\\"recipe_order\\\
+    \": 6,\\n                        \\\"compound\\\": \\\"CoCl2 x 6 H2O\\\",\\n \
+    \                       \\\"compound_id\\\": 38,\\n                        \\\"\
+    amount\\\": 190,\\n                        \\\"unit\\\": \\\"mg\\\",\\n      \
+    \                  \\\"g_l\\\": 0.19,\\n                        \\\"mmol_l\\\"\
+    : 1.46335,\\n                        \\\"optional\\\": 0\\n                  \
+    \  }\",\n        \"snapshot_sha256\": \"c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q20\",\n    \"component_or_context\"\
+    : \"SL-10: CuCl2 x 2 H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"SL-10 stock 595\",\n      \"amount\": 2,\n      \"unit\"\
+    : \"mg\",\n      \"source_attribute\": null,\n      \"stock_final_make_up_ml\"\
+    : 1000,\n      \"receiving_dose_ml\": 1,\n      \"provider_stock_g_per_l\": 0.002\n\
+    \    },\n    \"rationale\": \"Stored stock strength is placed among direct medium\
+    \ ingredients. Restore the stock recipe and 1 mL receiving dose; any final contribution\
+    \ must retain its denominator and stage.\",\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"mediadive968api\",\n        \"source_url\": \"\
+    https://mediadive.dsmz.de/rest/medium/968\",\n        \"source_locator\": \"$.data.solutions[1].recipe[6]\"\
+    ,\n        \"exact_source_quote\": \"{\\n                        \\\"recipe_order\\\
+    \": 7,\\n                        \\\"compound\\\": \\\"CuCl2 x 2 H2O\\\",\\n \
+    \                       \\\"compound_id\\\": 39,\\n                        \\\"\
+    amount\\\": 2,\\n                        \\\"unit\\\": \\\"mg\\\",\\n        \
+    \                \\\"g_l\\\": 0.002,\\n                        \\\"mmol_l\\\"\
+    : 0.0117314,\\n                        \\\"optional\\\": 0\\n                \
+    \    }\",\n        \"snapshot_sha256\": \"c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q21\",\n    \"component_or_context\"\
+    : \"SL-10: NiCl2 x 6 H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.024\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.024\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"SL-10 stock 595\",\n      \"amount\": 24,\n      \"unit\"\
+    : \"mg\",\n      \"source_attribute\": null,\n      \"stock_final_make_up_ml\"\
+    : 1000,\n      \"receiving_dose_ml\": 1,\n      \"provider_stock_g_per_l\": 0.024\n\
+    \    },\n    \"rationale\": \"Stored stock strength is placed among direct medium\
+    \ ingredients. Restore the stock recipe and 1 mL receiving dose; any final contribution\
+    \ must retain its denominator and stage. Preserve nickel hexahydrate rather than\
+    \ the asserted anhydrous identity.\",\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"mediadive968api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/968\"\
+    ,\n        \"source_locator\": \"$.data.solutions[1].recipe[7]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 8,\\\
+    n                        \\\"compound\\\": \\\"NiCl2 x 6 H2O\\\",\\n         \
+    \               \\\"compound_id\\\": 40,\\n                        \\\"amount\\\
+    \": 24,\\n                        \\\"unit\\\": \\\"mg\\\",\\n               \
+    \         \\\"g_l\\\": 0.024,\\n                        \\\"mmol_l\\\": 0.185187,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q22\",\n    \"component_or_context\"\
+    : \"SL-10: Na2MoO4 x 2 H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.036\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.036\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"SL-10 stock 595\",\n      \"amount\": 36,\n      \"unit\"\
+    : \"mg\",\n      \"source_attribute\": null,\n      \"stock_final_make_up_ml\"\
+    : 1000,\n      \"receiving_dose_ml\": 1,\n      \"provider_stock_g_per_l\": 0.036\n\
+    \    },\n    \"rationale\": \"Stored stock strength is placed among direct medium\
+    \ ingredients. Restore the stock recipe and 1 mL receiving dose; any final contribution\
+    \ must retain its denominator and stage.\",\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"mediadive968api\",\n        \"source_url\": \"\
+    https://mediadive.dsmz.de/rest/medium/968\",\n        \"source_locator\": \"$.data.solutions[1].recipe[8]\"\
+    ,\n        \"exact_source_quote\": \"{\\n                        \\\"recipe_order\\\
+    \": 9,\\n                        \\\"compound\\\": \\\"Na2MoO4 x 2 H2O\\\",\\\
+    n                        \\\"compound_id\\\": 9,\\n                        \\\"\
+    amount\\\": 36,\\n                        \\\"unit\\\": \\\"mg\\\",\\n       \
+    \                 \\\"g_l\\\": 0.036,\\n                        \\\"mmol_l\\\"\
+    : 0.148791,\\n                        \\\"optional\\\": 0\\n                 \
+    \   }\",\n        \"snapshot_sha256\": \"c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q23\",\n    \"component_or_context\"\
+    : \"Selenite-tungstate stock: NaOH\",\n    \"decision\": \"correct\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[22].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[22].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"selenite-tungstate stock 777\",\n      \"amount\": 0.5,\n\
+    \      \"unit\": \"g\",\n      \"provider_stock_g_per_l\": 0.5,\n      \"stock_water_ml\"\
+    : 1000,\n      \"receiving_dose_ml\": 1\n    },\n    \"rationale\": \"These are\
+    \ separate stock strengths, not direct medium concentrations. Retain the 1 mL\
+    \ receiving addition and source salt hydration; do not omit the stock dilution.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive968api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/968\",\n  \
+    \      \"source_locator\": \"$.data.solutions[2].recipe[0]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 1,\\n                  \
+    \      \\\"compound\\\": \\\"NaOH\\\",\\n                        \\\"compound_id\\\
+    \": 256,\\n                        \\\"amount\\\": 0.5,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.5,\\n\
+    \                        \\\"mmol_l\\\": 12.5009,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\n      }\n\
+    \    ]\n  },\n  {\n    \"quantity_id\": \"q24\",\n    \"component_or_context\"\
+    : \"Selenite-tungstate stock: Na2SeO3 x 5 H2O\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[23].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.003\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[23].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.003\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"selenite-tungstate stock 777\",\n      \"amount\": 3,\n\
+    \      \"unit\": \"mg\",\n      \"provider_stock_g_per_l\": 0.003,\n      \"stock_water_ml\"\
+    : 1000,\n      \"receiving_dose_ml\": 1\n    },\n    \"rationale\": \"These are\
+    \ separate stock strengths, not direct medium concentrations. Retain the 1 mL\
+    \ receiving addition and source salt hydration; do not omit the stock dilution.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive968api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/968\",\n  \
+    \      \"source_locator\": \"$.data.solutions[2].recipe[1]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 2,\\n                  \
+    \      \\\"compound\\\": \\\"Na2SeO3 x 5 H2O\\\",\\n                        \\\
+    \"compound_id\\\": 107,\\n                        \\\"amount\\\": 3,\\n      \
+    \                  \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\
+    \": 0.003,\\n                        \\\"mmol_l\\\": 0.0114062,\\n           \
+    \             \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\n     \
+    \ }\n    ]\n  },\n  {\n    \"quantity_id\": \"q25\",\n    \"component_or_context\"\
+    : \"Selenite-tungstate stock: Na2WO4 x 2 H2O\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[24].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.004\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[24].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.004\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"selenite-tungstate stock 777\",\n      \"amount\": 4,\n\
+    \      \"unit\": \"mg\",\n      \"provider_stock_g_per_l\": 0.004,\n      \"stock_water_ml\"\
+    : 1000,\n      \"receiving_dose_ml\": 1\n    },\n    \"rationale\": \"These are\
+    \ separate stock strengths, not direct medium concentrations. Retain the 1 mL\
+    \ receiving addition and source salt hydration; do not omit the stock dilution.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive968api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/968\",\n  \
+    \      \"source_locator\": \"$.data.solutions[2].recipe[2]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 3,\\n                  \
+    \      \\\"compound\\\": \\\"Na2WO4 x 2 H2O\\\",\\n                        \\\"\
+    compound_id\\\": 249,\\n                        \\\"amount\\\": 4,\\n        \
+    \                \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\
+    \": 0.004,\\n                        \\\"mmol_l\\\": 0.0121267,\\n           \
+    \             \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\n     \
+    \ }\n    ]\n  },\n  {\n    \"quantity_id\": \"q26\",\n    \"component_or_context\"\
+    : \"Main water\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n     \
+    \ {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[25].concentration\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[25].concentration\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Main sol. 968\",\n      \"amount\": 1000,\n      \"unit\"\
+    : \"ml\"\n    },\n    \"rationale\": \"Retain the listed water amount in its own\
+    \ preparation stage. SL-10 990 mL water is distinct from its final 1000 mL make-up;\
+    \ main water is not measured final medium volume.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive968api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/968\",\n        \"source_locator\":\
+    \ \"$.data.solutions[0].recipe[15]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 16,\\n                        \\\
+    \"compound\\\": \\\"Distilled water\\\",\\n                        \\\"compound_id\\\
+    \": 4,\\n                        \\\"amount\\\": 1000,\\n                    \
+    \    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q27\",\n    \"component_or_context\"\
+    : \"SL-10 water\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n    \
+    \  {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Trace element solution SL-10\",\n      \"amount\": 990,\n\
+    \      \"unit\": \"ml\"\n    },\n    \"rationale\": \"Retain the listed water\
+    \ amount in its own preparation stage. SL-10 990 mL water is distinct from its\
+    \ final 1000 mL make-up; main water is not measured final medium volume.\",\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive968api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/968\",\n  \
+    \      \"source_locator\": \"$.data.solutions[1].recipe[9]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 10,\\n                 \
+    \       \\\"compound\\\": \\\"Distilled water\\\",\\n                        \\\
+    \"compound_id\\\": 4,\\n                        \\\"amount\\\": 990,\\n      \
+    \                  \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q28\",\n    \"component_or_context\"\
+    : \"Selenite-tungstate water\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Selenite-tungstate solution\",\n      \"amount\": 1000,\n\
+    \      \"unit\": \"ml\"\n    },\n    \"rationale\": \"Retain the listed water\
+    \ amount in its own preparation stage. SL-10 990 mL water is distinct from its\
+    \ final 1000 mL make-up; main water is not measured final medium volume.\",\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive968api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/968\",\n  \
+    \      \"source_locator\": \"$.data.solutions[2].recipe[3]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 4,\\n                  \
+    \      \\\"compound\\\": \\\"Distilled water\\\",\\n                        \\\
+    \"compound_id\\\": 4,\\n                        \\\"amount\\\": 1000,\\n     \
+    \                   \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q29\",\n    \"component_or_context\"\
+    : \"Receiving dose: Trace element solution SL-10\",\n    \"decision\": \"add\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"solution_id\": 595,\n      \"amount\": 1,\n      \"unit\": \"ml\"\
+    ,\n      \"stage\": \"main\"\n    },\n    \"rationale\": \"Both layers lack the\
+    \ named stock reference and receiving dose; restore them with scoped stock composition.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive968api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/968\",\n  \
+    \      \"source_locator\": \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 6,\\n                  \
+    \      \\\"solution\\\": \\\"Trace element solution SL-10\\\",\\n            \
+    \            \\\"solution_id\\\": 595,\\n                        \\\"amount\\\"\
+    : 1,\\n                        \\\"unit\\\": \\\"ml\\\",\\n                  \
+    \      \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\n     \
+    \ }\n    ]\n  },\n  {\n    \"quantity_id\": \"q30\",\n    \"component_or_context\"\
+    : \"Receiving dose: Selenite-tungstate solution\",\n    \"decision\": \"add\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"solution_id\": 777,\n      \"amount\": 1,\n      \"unit\": \"ml\"\
+    ,\n      \"stage\": \"main\"\n    },\n    \"rationale\": \"Both layers lack the\
+    \ named stock reference and receiving dose; restore them with scoped stock composition.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive968api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/968\",\n  \
+    \      \"source_locator\": \"$.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 7,\\n                  \
+    \      \\\"solution\\\": \\\"Selenite-tungstate solution\\\",\\n             \
+    \           \\\"solution_id\\\": 777,\\n                        \\\"amount\\\"\
+    : 1,\\n                        \\\"unit\\\": \\\"ml\\\",\\n                  \
+    \      \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\n     \
+    \ }\n    ]\n  },\n  {\n    \"quantity_id\": \"q31\",\n    \"component_or_context\"\
+    : \"Sodium resazurin receiving stock and percentage\",\n    \"decision\": \"add\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stock_strength\": \"0.1% w/v\",\n      \"dose_ml\": 0.5,\n      \"\
+    batch_mass_g\": 0.0005\n    },\n    \"rationale\": \"The current direct g/L is\
+    \ a provider-normalized equivalent. Preserve the actual sodium-salt stock addition\
+    \ and its explicitly mass/volume percentage basis.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive968api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/968\",\n        \"source_locator\":\
+    \ \"$.data.solutions[0].recipe[10]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 11,\\n                        \\\
+    \"compound\\\": \\\"Sodium resazurin\\\",\\n                        \\\"compound_id\\\
+    \": 1852,\\n                        \\\"attribute\\\": \\\"0.1% w/v\\\",\\n  \
+    \                      \\\"amount\\\": 0.5,\\n                        \\\"unit\\\
+    \": \\\"ml\\\",\\n                        \\\"g_l\\\": 0.000499002,\\n       \
+    \                 \\\"mmol_l\\\": 0.00198671,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz968\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium968.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 main table\",\n        \"exact_source_quote\"\
+    : \"Sodium resazurin (0.1% w/v) 0.50 ml\",\n        \"snapshot_sha256\": \"1801364faf6c8c110350da01a8b276079ddcffb5b0ada42faf5a24946c081846\"\
+    ,\n        \"parsed_text_sha256\": \"41f17a0b0443214a75a83c7ffcd92128af351234324ba1ebdee0e8872f91a7ef\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q32\",\n    \"component_or_context\"\
+    : \"Provider main volume versus listed-liquid sum\",\n    \"decision\": \"conflict\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"notes\",\n        \"stored\": \"Source: DSMZ | Link:\
+    \ https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium968.pdf\",\n      \
+    \  \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"notes\",\n        \"stored\": \"Source: DSMZ | Link:\
+    \ https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium968.pdf\",\n      \
+    \  \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"provider_volume_ml\": 1002,\n      \"listed_liquids_sum_ml\": 1002.5,\n\
+    \      \"measured_final_volume\": null\n    },\n    \"rationale\": \"The primary\
+    \ lists water and additions without a measured final-volume assertion. Preserve\
+    \ the provider basis as provenance and the 0.5 mL discrepancy; later unquantified\
+    \ reducing stocks preclude treating either sum as measured final volume.\",\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive968api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/968\",\n  \
+    \      \"source_locator\": \"$.data.solutions[0].volume (solution 1992)\",\n \
+    \       \"exact_source_quote\": \"\\\"volume\\\": 1002\",\n        \"snapshot_sha256\"\
+    : \"c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\n     \
+    \ },\n      {\n        \"source_key\": \"mediadive968api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/968\",\n        \"source_locator\":\
+    \ \"$.data.solutions[0].recipe[15]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 16,\\n                        \\\
+    \"compound\\\": \\\"Distilled water\\\",\\n                        \\\"compound_id\\\
+    \": 4,\\n                        \\\"amount\\\": 1000,\\n                    \
+    \    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive968api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/968\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    solution\\\": \\\"Trace element solution SL-10\\\",\\n                       \
+    \ \\\"solution_id\\\": 595,\\n                        \\\"amount\\\": 1,\\n  \
+    \                      \\\"unit\\\": \\\"ml\\\",\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive968api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/968\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    solution\\\": \\\"Selenite-tungstate solution\\\",\\n                        \\\
+    \"solution_id\\\": 777,\\n                        \\\"amount\\\": 1,\\n      \
+    \                  \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive968api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/968\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[10]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 11,\\n                        \\\
+    \"compound\\\": \\\"Sodium resazurin\\\",\\n                        \\\"compound_id\\\
+    \": 1852,\\n                        \\\"attribute\\\": \\\"0.1% w/v\\\",\\n  \
+    \                      \\\"amount\\\": 0.5,\\n                        \\\"unit\\\
+    \": \\\"ml\\\",\\n                        \\\"g_l\\\": 0.000499002,\\n       \
+    \                 \\\"mmol_l\\\": 0.00198671,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"c3bfe5a291b41eacff930af2dba55b1c87062a1d636b1da8ae89f17cd01e14ff\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q33\",\n    \"component_or_context\"\
+    : \"SL-10 final make-up\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the\
+    \ other salts. Finally make up to 1000.00 ml.\",\n        \"decision\": \"correct\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the\
+    \ other salts. Finally make up to 1000.00 ml.\",\n        \"decision\": \"correct\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"stage\"\
+    : \"SL-10\",\n      \"final_make_up_ml\": 1000\n    },\n    \"rationale\": \"\
+    The amount is already in local prose but is assigned to the main root. Correct\
+    \ its scope to SL-10; it does not define the main-medium final volume.\",\n  \
+    \  \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz968\",\n   \
+    \     \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium968.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 SL-10 preparation\",\n        \"exact_source_quote\"\
+    : \"make up to 1000.00 ml.\",\n        \"snapshot_sha256\": \"1801364faf6c8c110350da01a8b276079ddcffb5b0ada42faf5a24946c081846\"\
+    ,\n        \"parsed_text_sha256\": \"41f17a0b0443214a75a83c7ffcd92128af351234324ba1ebdee0e8872f91a7ef\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q34\",\n    \"component_or_context\"\
+    : \"Main nitrogen atmosphere\",\n    \"decision\": \"evidence_only\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except carbonate, hydrogencarbonate and reducing agents),\
+    \ then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add solid\
+    \ carbonate and bicarbonate, adjust pH to 9.8, dispense medium under 100% N2 gas\
+    \ atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before\
+    \ inoculation, add cysteine and sulfide from sterile anoxic stock solutions prepared\
+    \ under 100% N2 gas. Adjust pH of complete medium to 9.8, if necessary.\",\n \
+    \       \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except carbonate, hydrogencarbonate and reducing agents),\
+    \ then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add solid\
+    \ carbonate and bicarbonate, adjust pH to 9.8, dispense medium under 100% N2 gas\
+    \ atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before\
+    \ inoculation, add cysteine and sulfide from sterile anoxic stock solutions prepared\
+    \ under 100% N2 gas. Adjust pH of complete medium to 9.8, if necessary.\",\n \
+    \       \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"gas\": \"N2\",\n      \"percent\": 100\n    },\n    \"rationale\"\
+    : \"Existing local main prose agrees with this source-stage context; retain conditions\
+    \ and order without turning it into a growth assertion.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz968\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium968.pdf\",\n        \"\
+    source_locator\": \"Page 1 main preparation\",\n        \"exact_source_quote\"\
+    : \"100% N2\",\n        \"snapshot_sha256\": \"1801364faf6c8c110350da01a8b276079ddcffb5b0ada42faf5a24946c081846\"\
+    ,\n        \"parsed_text_sha256\": \"41f17a0b0443214a75a83c7ffcd92128af351234324ba1ebdee0e8872f91a7ef\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q35\",\n    \"component_or_context\"\
+    : \"Main sparging interval\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except carbonate, hydrogencarbonate and reducing agents),\
+    \ then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add solid\
+    \ carbonate and bicarbonate, adjust pH to 9.8, dispense medium under 100% N2 gas\
+    \ atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before\
+    \ inoculation, add cysteine and sulfide from sterile anoxic stock solutions prepared\
+    \ under 100% N2 gas. Adjust pH of complete medium to 9.8, if necessary.\",\n \
+    \       \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except carbonate, hydrogencarbonate and reducing agents),\
+    \ then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add solid\
+    \ carbonate and bicarbonate, adjust pH to 9.8, dispense medium under 100% N2 gas\
+    \ atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before\
+    \ inoculation, add cysteine and sulfide from sterile anoxic stock solutions prepared\
+    \ under 100% N2 gas. Adjust pH of complete medium to 9.8, if necessary.\",\n \
+    \       \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"minutes\": [\n        30,\n        45\n      ]\n    },\n    \"rationale\"\
+    : \"Existing local main prose agrees with this source-stage context; retain conditions\
+    \ and order without turning it into a growth assertion.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz968\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium968.pdf\",\n        \"\
+    source_locator\": \"Page 1 main preparation\",\n        \"exact_source_quote\"\
+    : \"30 - 45 min\",\n        \"snapshot_sha256\": \"1801364faf6c8c110350da01a8b276079ddcffb5b0ada42faf5a24946c081846\"\
+    ,\n        \"parsed_text_sha256\": \"41f17a0b0443214a75a83c7ffcd92128af351234324ba1ebdee0e8872f91a7ef\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q36\",\n    \"component_or_context\"\
+    : \"Pre-sterilization main pH\",\n    \"decision\": \"evidence_only\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except carbonate, hydrogencarbonate and reducing agents),\
+    \ then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add solid\
+    \ carbonate and bicarbonate, adjust pH to 9.8, dispense medium under 100% N2 gas\
+    \ atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before\
+    \ inoculation, add cysteine and sulfide from sterile anoxic stock solutions prepared\
+    \ under 100% N2 gas. Adjust pH of complete medium to 9.8, if necessary.\",\n \
+    \       \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except carbonate, hydrogencarbonate and reducing agents),\
+    \ then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add solid\
+    \ carbonate and bicarbonate, adjust pH to 9.8, dispense medium under 100% N2 gas\
+    \ atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before\
+    \ inoculation, add cysteine and sulfide from sterile anoxic stock solutions prepared\
+    \ under 100% N2 gas. Adjust pH of complete medium to 9.8, if necessary.\",\n \
+    \       \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\",\n \
+    \       \"field_path\": \"ph_value\",\n        \"stored\": 9.8,\n        \"decision\"\
+    : \"evidence_only\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.8,\n        \"\
+    decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"pH\": 9.8,\n      \"stage\": \"after carbonate/bicarbonate; before\
+    \ dispensing/sterilization\"\n    },\n    \"rationale\": \"Existing local main\
+    \ prose agrees with this source-stage context; retain conditions and order without\
+    \ turning it into a growth assertion.\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz968\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium968.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main preparation\",\n        \"exact_source_quote\"\
+    : \"adjust pH to 9.8\",\n        \"snapshot_sha256\": \"1801364faf6c8c110350da01a8b276079ddcffb5b0ada42faf5a24946c081846\"\
+    ,\n        \"parsed_text_sha256\": \"41f17a0b0443214a75a83c7ffcd92128af351234324ba1ebdee0e8872f91a7ef\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q37\",\n    \"component_or_context\"\
+    : \"Conditional complete-medium pH\",\n    \"decision\": \"evidence_only\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except carbonate, hydrogencarbonate and reducing agents),\
+    \ then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add solid\
+    \ carbonate and bicarbonate, adjust pH to 9.8, dispense medium under 100% N2 gas\
+    \ atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before\
+    \ inoculation, add cysteine and sulfide from sterile anoxic stock solutions prepared\
+    \ under 100% N2 gas. Adjust pH of complete medium to 9.8, if necessary.\",\n \
+    \       \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except carbonate, hydrogencarbonate and reducing agents),\
+    \ then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add solid\
+    \ carbonate and bicarbonate, adjust pH to 9.8, dispense medium under 100% N2 gas\
+    \ atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before\
+    \ inoculation, add cysteine and sulfide from sterile anoxic stock solutions prepared\
+    \ under 100% N2 gas. Adjust pH of complete medium to 9.8, if necessary.\",\n \
+    \       \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\",\n \
+    \       \"field_path\": \"ph_value\",\n        \"stored\": 9.8,\n        \"decision\"\
+    : \"evidence_only\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.8,\n        \"\
+    decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"pH\": 9.8,\n      \"conditional\": true,\n      \"stage\": \"complete\
+    \ medium\"\n    },\n    \"rationale\": \"Existing local main prose agrees with\
+    \ this source-stage context; retain conditions and order without turning it into\
+    \ a growth assertion.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz968\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium968.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main preparation\",\n        \"exact_source_quote\"\
+    : \"complete medium to 9.8, if necessary.\",\n        \"snapshot_sha256\": \"\
+    1801364faf6c8c110350da01a8b276079ddcffb5b0ada42faf5a24946c081846\",\n        \"\
+    parsed_text_sha256\": \"41f17a0b0443214a75a83c7ffcd92128af351234324ba1ebdee0e8872f91a7ef\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q38\",\n    \"component_or_context\"\
+    : \"Unquantified reducing-stock concentrations and volumes\",\n    \"decision\"\
+    : \"not_quantified\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\",\n     \
+    \   \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except carbonate, hydrogencarbonate and reducing agents),\
+    \ then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add solid\
+    \ carbonate and bicarbonate, adjust pH to 9.8, dispense medium under 100% N2 gas\
+    \ atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before\
+    \ inoculation, add cysteine and sulfide from sterile anoxic stock solutions prepared\
+    \ under 100% N2 gas. Adjust pH of complete medium to 9.8, if necessary.\",\n \
+    \       \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except carbonate, hydrogencarbonate and reducing agents),\
+    \ then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add solid\
+    \ carbonate and bicarbonate, adjust pH to 9.8, dispense medium under 100% N2 gas\
+    \ atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before\
+    \ inoculation, add cysteine and sulfide from sterile anoxic stock solutions prepared\
+    \ under 100% N2 gas. Adjust pH of complete medium to 9.8, if necessary.\",\n \
+    \       \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"cysteine_stock_strength\": null,\n      \"sulfide_stock_strength\"\
+    : null,\n      \"receiving_stock_volumes\": null\n    },\n    \"rationale\": \"\
+    Retain the separately listed batch masses and source handling. The primary gives\
+    \ no concentrations or volumes for these later reducing stocks.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz968\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium968.pdf\",\n        \"\
+    source_locator\": \"Page 1 main preparation\",\n        \"exact_source_quote\"\
+    : \"from sterile anoxic stock solutions\",\n        \"snapshot_sha256\": \"1801364faf6c8c110350da01a8b276079ddcffb5b0ada42faf5a24946c081846\"\
+    ,\n        \"parsed_text_sha256\": \"41f17a0b0443214a75a83c7ffcd92128af351234324ba1ebdee0e8872f91a7ef\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q39\",\n    \"component_or_context\"\
+    : \"Unspecified autoclave temperature and duration\",\n    \"decision\": \"not_quantified\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except carbonate, hydrogencarbonate and reducing agents),\
+    \ then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add solid\
+    \ carbonate and bicarbonate, adjust pH to 9.8, dispense medium under 100% N2 gas\
+    \ atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before\
+    \ inoculation, add cysteine and sulfide from sterile anoxic stock solutions prepared\
+    \ under 100% N2 gas. Adjust pH of complete medium to 9.8, if necessary.\",\n \
+    \       \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except carbonate, hydrogencarbonate and reducing agents),\
+    \ then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add solid\
+    \ carbonate and bicarbonate, adjust pH to 9.8, dispense medium under 100% N2 gas\
+    \ atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before\
+    \ inoculation, add cysteine and sulfide from sterile anoxic stock solutions prepared\
+    \ under 100% N2 gas. Adjust pH of complete medium to 9.8, if necessary.\",\n \
+    \       \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"temperature\": null,\n      \"duration\": null\n    },\n    \"rationale\"\
+    : \"Source names autoclaving without a numerical cycle; no default is inferred.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz968\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium968.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main preparation\",\n        \"exact_source_quote\"\
+    : \"and autoclave.\",\n        \"snapshot_sha256\": \"1801364faf6c8c110350da01a8b276079ddcffb5b0ada42faf5a24946c081846\"\
+    ,\n        \"parsed_text_sha256\": \"41f17a0b0443214a75a83c7ffcd92128af351234324ba1ebdee0e8872f91a7ef\"\
+    \n      }\n    ]\n  }\n]"
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: concern
+  summary: '24 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 24/25
+    primary and 22/25 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Exact supplied-form mismatch is addressed separately; valid IDs and labels do
+    not establish correct source grounding.'
+  target_ids:
+  - CultureMech:002149
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi131361
+  - chebi131527
+  - chebi17883
+  - chebi26710
+  - chebi29377
+  - chebi32139
+  - chebi32145
+  - chebi32599
+  - chebi33118
+  - chebi34887
+  - chebi49976
+  - chebi53503
+  - chebi62946
+  - chebi63005
+  - chebi63036
+  - chebi63939
+  - chebi75213
+  - chebi75228
+  - chebi76209
+  - chebi86249
+  - chebi86318
+  - chebi86368
+  - chebi8806
+  - chebi91248
+  details: 'Instance coverage on a 0–100 percent scale, denominator 25: primary 96.00%;
+    secondary 88.00%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: identity
+  area: identity
+  topic: Exact source identity and maintained ownership
+  outcome: supported
+  summary: CultureMech:002149, DSMZ 968 and MediaDive medium 968 agree exactly. The
+    sole maintained normalized owner has the same complete scientific content as the
+    generated target; target-only additions are merge bookkeeping. Parent DSMZ 320
+    and 385 evidence is restricted to the specifically named stock subsections.
+  target_ids:
+  - CultureMech:002149
+  evidence_ids:
+  - record
+  - id-search
+  - bound-owner-context
+  - owner-0
+  - primary
+  - provider
+  - solution595
+  - solution777
+  - dsmz320
+  - dsmz385
+- assessment_id: evidence
+  area: evidence
+  topic: Claim-level support and exact source stages
+  outcome: concern
+  summary: No ingredient amount has attached supporting evidence in either local layer.
+    Every local concentration and scoped source-only quantitative context has an inventory
+    decision with exact quotations and locators. Matching provider transcription receives
+    evidence_only, not verified. Source quantities and provider normalization remain
+    separate.
+  target_ids:
+  - CultureMech:002149
+  evidence_ids:
+  - record
+  - quantity-inventory
+  - primary
+  - provider
+  - solution595
+  - solution777
+  - dsmz320
+  - dsmz385
+- assessment_id: preparation
+  area: completeness
+  topic: Main and stock preparation boundaries
+  outcome: concern
+  summary: Main nitrogen, 30–45 minute sparging, carbonate/bicarbonate order, pre-sterilization
+    and conditional final pH 9.8, and separate reducing-stock handling are retained.
+    The SL-10 dissolution/make-up step at preparation_steps[1] has lost its stock
+    scope. Named receiving additions and all source-stage water are absent. Unquantified
+    HCl percent basis, later reducing-stock details and autoclave cycle remain explicit
+    limitations.
+  target_ids:
+  - CultureMech:002149
+  evidence_ids:
+  - record
+  - quantity-inventory
+  - primary
+  - provider
+  - solution595
+  - solution777
+  - dsmz320
+  - dsmz385
+- assessment_id: classification
+  area: scope
+  topic: Composition and physical state
+  outcome: supported
+  summary: COMPLEX/SEMI_DEFINED is consistent with specified salts and DL-lactate
+    plus yeast extract. LIQUID is compatible with the listed formulation, which contains
+    no solidifier. The catalog name is not independently validated organism growth
+    or taxonomy.
+  target_ids:
+  - CultureMech:002149
+  evidence_ids:
+  - record
+  - primary
+  - provider
+  - solution595
+  - solution777
+  - dsmz320
+  - dsmz385
+- assessment_id: forms
+  area: grounding
+  topic: Source-specified molecular forms and mixtures
+  outcome: concern
+  summary: Source nickel chloride hexahydrate conflicts with the anhydrous formula
+    Cl2Ni and mass 129.599 of CHEBI:34887 in both primary and current secondary slots.
+    Sodium resazurin is mapped to neutral CHEBI:8806 formula C12H7NO4. Generic CHEBI:75228
+    is compatible with preserved DL-lactate wording, and source MgSO4 does not specify
+    a hydrate; neither warrants an invented stereochemical or hydrate replacement.
+  target_ids:
+  - CultureMech:002149
+  evidence_ids:
+  - record
+  - primary
+  - provider
+  - solution595
+  - solution777
+  - dsmz320
+  - dsmz385
+- assessment_id: growth
+  area: scope
+  topic: Growth, taxonomy and graph assertion scope
+  outcome: not_applicable
+  summary: The medium title, bacterial filing and generic Microbial cultivation application
+    are catalog context, not strain-level experimental growth evidence. No organism
+    identifier, growth assertion, phenotype or graph membership is added. No internal
+    variant/reference relationship is asserted in either complete local record.
+  target_ids:
+  - CultureMech:002149
+  evidence_ids:
+  - record
+  - primary
+  - provider
+  - solution595
+  - solution777
+  - dsmz320
+  - dsmz385
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 13 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:002149
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: writer
+  area: provenance
+  topic: Maintained input and current import/merge behavior
+  outcome: concern
+  summary: Current MediaDive API parsing reads direct ingredients from the first solution,
+    excludes water and stock additions, preserves provider g_l, and separately records
+    receiving stock references; its preparation reader still gathers steps from all
+    solutions at the main root. Bare-unit fallback is not final-volume proof. Current
+    cleanup retains the first disagreeing duplicate with a warning instead of summing
+    it. Current lossless formulation merging preserves scientific assertions and order,
+    not their correctness. These current implementations do not establish which historical
+    version produced this record. Correct the exact maintained owner, append curation
+    provenance, and regenerate only after separately authorized changes.
+  target_ids:
+  - CultureMech:002149
+  evidence_ids:
+  - record
+  - writer-0
+  - writer-1
+  - writer-2
+- assessment_id: legacy-correspondence
+  area: grounding
+  topic: Historical legacy linkage distinct from current CHEBI linkage
+  outcome: concern
+  summary: Required historical correspondence for asserted MediaIngredientMech:000171
+    remains unavailable in the inspected evidence. The current negative lookup completed
+    successfully and is not itself an unavailable check or proof that the legacy identifier
+    was historically wrong.
+  target_ids:
+  - CultureMech:002149
+  evidence_ids:
+  - record
+  - mim
+  - mimPinnedCatalog
+  - mimPinnedTree
+  - legacy-search
+findings:
+- finding_id: f1
+  issue_key: culturemech.002149.stock-stage-collapse
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Two stocks are flattened and HCl percent is converted without its basis
+  description: ingredients[13:25] contain SL-10 and selenite/tungstate stock strengths
+    as direct-medium g/L. Their separate 1 mL receiving doses and water are absent.
+    In particular, 2.5 g/L HCl is not supported by the primary 10 mL of unqualified
+    25% HCl. Main g/L values match the provider 1002 mL basis, while listed liquids
+    already sum to 1002.5 mL before reducing-stock additions. The flat formula does
+    not represent the source stages.
+  target_ids:
+  - CultureMech:002149
+  field_paths:
+  - ingredients
+  - solutions
+  evidence_ids:
+  - record
+  - primary
+  - provider
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.002149.supplied-form-grounding
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Nickel hydrate and sodium-resazurin identifiers lose source forms
+  description: ingredients[20] names nickel chloride hexahydrate but both asserted
+    CHEBI:34887 slots encode the anhydrous compound. ingredients[8] names sodium resazurin
+    but asserts neutral CHEBI:8806. Valid canonical labels do not establish these
+    supplied forms.
+  target_ids:
+  - CultureMech:002149
+  field_paths:
+  - ingredients[20].term
+  - ingredients[20].mediaingredientmech_chebi_term
+  - ingredients[8].term
+  evidence_ids:
+  - record
+  - primary
+  - chebi34887
+  - chebi8806
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.2
+  native_severity: P3
+  normalization_reason: P3 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.002149.stock-preparation-scope
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: SL-10 make-up is represented as main preparation
+  description: preparation_steps[1] directs iron dissolution in HCl and final make-up
+    to 1000 mL, but is placed at the main root. DSMZ assigns that sequence only to
+    SL-10. It cannot establish a one-liter final main medium.
+  target_ids:
+  - CultureMech:002149
+  field_paths:
+  - preparation_steps[1]
+  - solutions
+  evidence_ids:
+  - record
+  - primary
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major because stock preparation is assigned
+    to the receiving medium, a material representation and scope error. The P3.5 missing-sterilization
+    rule does not describe this finding.
+- finding_id: f4
+  issue_key: culturemech.002149.legacy-secondary-correspondence
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Historical secondary correspondence remains unresolved
+  description: Both layers assert MediaIngredientMech:000171 at ingredients[5].mediaingredientmech_term.
+    The current exact lookup is negative, while the primary chemical name and CHEBI
+    identifier can still be valid. Existing enrichment/migration history does not
+    authenticate this historical mapping. This is a bounded provenance gap, not a
+    confirmed wrong chemical or fabricated replacement.
+  target_ids:
+  - CultureMech:002149
+  field_paths:
+  - ingredients[5].mediaingredientmech_term
+  - curation_history
+  evidence_ids:
+  - record
+  - mim
+  - mimPinnedCatalog
+  - mimPinnedTree
+  - legacy-search
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Reconstruct exact maintained-owner main and two-stock stages, receiving
+    doses and water; preserve original g/mg/mL values. Retain the provider main basis
+    with its limitation, and keep HCl percentage basis/density unresolved instead
+    of asserting a mass conversion. Attach claim-level evidence before authorized
+    regeneration.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:002149
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Retain exact source hydrate/salt wording and independently verify compatible
+    primary and current secondary identifiers before replacement. Do not carry over
+    anhydrous molar arithmetic or impose L-only lactate identity.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:002149
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Move the intact dissolution and final 1000 mL make-up into restored
+    SL-10 preparation. Preserve existing main pH/gas/reducing-stock order and explicitly
+    mark missing cycle/stock details without importing defaults or parent main conditions.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:002149
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Recover an exact historical identifier-to-ingredient correspondence
+    or explicitly qualify the unresolved legacy assertion in the maintained owner.
+    Preserve old history and append the result; do not infer a replacement from names
+    or the current negative lookup.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:002149
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anaerobacillus_arseniciselenatis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Only the exact bound collection/provider sources and pinned identifiers were assessed.
+  Current source differences do not establish source chronology or the exact historical
+  import version.
+- Listed water, stock recipe volumes and receiving additions do not establish a measured
+  assembled final volume. No unqualified percent basis, density, unspecified stock
+  strength, sterilization cycle or source-specific replacement identifier is invented.
+- Required historical correspondence for asserted MediaIngredientMech:000171 remains
+  unavailable in the inspected evidence. The current negative lookup completed successfully
+  and is not itself an unavailable check or proof that the legacy identifier was historically
+  wrong.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-026
+- generated-medium
+```
