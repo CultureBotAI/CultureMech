@@ -1,0 +1,5790 @@
+# Source and formulation review: basal_medium (CultureMech:003498)
+
+- Review: 20261021T223545Z-culturemech-003498-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T22:32:17Z
+- Finished UTC: 2026-10-21T22:35:45Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The exact DSMZ 1001 primary is available and declares 1000 ml, but all three local layers flatten mineral and vitamin stock compositions into receiving-medium rates. The ferric chloride amount is approximately tenfold above the nominal source dose. Source hydration, anaerobic preparation and post-autoclave additions require separate, source-bound representation; calcium D-pantothenate is supported, not a stereochemical mismatch.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 392; batch 040 item 2 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding thirty-nine task batches contain 390 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 393 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 6a639c4b597e95b6061f2d1c7baa04de84ba2f00.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:003498 | data/merge_yaml/merged/BASAL_MEDIUM.yaml | generated | basal_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:003498 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:003498 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-040/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch040/392/strict.tsv |
+| validate-terms | passed | True | CultureMech:003498 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:003498 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:003498 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: mediadive1001api | unavailable | False | CultureMech:003498 | Optional mediadive1001api access failed (HTTP 503); exact DSM1001 primary and scoped parent vitamin source are available, so this failure alone does not require partial coverage. |
+| Exact source content access: mediadive1001api_retry | unavailable | False | CultureMech:003498 | Optional mediadive1001api_retry access failed (HTTP 503); exact DSM1001 primary and scoped parent vitamin source are available, so this failure alone does not require partial coverage. |
+| Exact source content access: komodo1001detail | unavailable | False | CultureMech:003498 | Optional komodo1001detail access failed (HTTP 403); exact DSM1001 primary and scoped parent vitamin source are available, so this failure alone does not require partial coverage. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:003498.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### DSM1001 source identity and duplicate owners
+
+identity: supported. Targets: CultureMech:003498.
+
+Exact primary and accession mapping support DSMZ/KOMODO1001. Both maintained owners match the target ingredient signature; source-duplicate relations are supported as accession identities, not evidence that the represented flattened formulation is correct.
+
+### All asserted identifiers and source forms
+
+grounding: concern. Targets: CultureMech:003498.
+
+177 exact ontology slots and 29 distinct current CHEBI-based secondary keys are inventoried. Canonical labels match and asserted current secondary keys have pinned preferred mapped rows; no legacy key is asserted. Target linkage is 30/30 primary (100%) and 29/30 secondary (96.67%), not correctness scores. Phosphate monohydrate and nickel hexahydrate require supplied-form reconciliation; D-pantothenate does not.
+
+### Stocks, main recipe and declared volume
+
+representation: concern. Targets: CultureMech:003498.
+
+The 14 mineral and 10 vitamin amounts have been flattened at main-medium scope in all three layers. Basal bicarbonate and its later stock contribution are collapsed, while the ferric chloride dose disagrees by approximately tenfold. Preserve the explicit 1000 ml declaration and every staged instruction without inventing a measured post-addition volume.
+
+### Anaerobic preparation and typed operation
+
+consistency: concern. Targets: CultureMech:003498.
+
+The primary and DSMZ owner specify anoxic 80:20 N2:CO2 preparation, serum bottles and 121 °C for 15 min. The owner types bottle dispensing as POUR_PLATES; target and KOMODO lack these steps. Aerobic: Yes must remain attributed catalog metadata, not a growth requirement. DEFINED and LIQUID are consistent with the source composition; no target organism or incubation condition is inferred.
+
+### Current source support and historical transformations
+
+provenance: concern. Targets: CultureMech:003498.
+
+No local attached amount claims authenticate the flattened formulation. Bind exact current primary rows to the corrected stock stages; preserve historical events and note timestamp defects separately. Optional failed APIs do not prevent this current scientific comparison because the complete exact primary is available.
+
+### Append-only history and timestamp shape
+
+provenance: concern. Targets: CultureMech:003498.
+
+30 timestamp instances inspected; 4 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:003498.
+
+50 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "quantity_id": "q1",
+    "component_or_context": "Basal NaHCO3",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "3.34007",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "3.34007",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "3.34007",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Main basal table",
+        "exact_source_quote": "NaHCO3 2.50 g",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 2.5,
+      "unit": "g",
+      "stage": "basal recipe before post-autoclave additions",
+      "source_declared_final_volume_ml": 1000
+    },
+    "rationale": "For bicarbonate, separate the basal 2.5 g from the later 1 M stock dose; the stored summed numeral hides that stage distinction."
+  },
+  {
+    "quantity_id": "q2",
+    "component_or_context": "Basal NH4Cl",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Main basal table",
+        "exact_source_quote": "NH4Cl 0.25 g",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 0.25,
+      "unit": "g",
+      "stage": "basal recipe before post-autoclave additions",
+      "source_declared_final_volume_ml": 1000
+    },
+    "rationale": "The nominal main mass matches the stored numeral. Attach evidence and preserve the declared volume alongside the later additions; do not silently recalculate an assumed measured volume."
+  },
+  {
+    "quantity_id": "q3",
+    "component_or_context": "Basal NaH2PO4 x H2O",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.6",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.6",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.6",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Main basal table",
+        "exact_source_quote": "NaH2PO4 x H2O 0.60 g",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 0.6,
+      "unit": "g",
+      "stage": "basal recipe before post-autoclave additions",
+      "source_declared_final_volume_ml": 1000
+    },
+    "rationale": "The nominal main mass matches the stored numeral. Attach evidence and preserve the declared volume alongside the later additions; do not silently recalculate an assumed measured volume."
+  },
+  {
+    "quantity_id": "q4",
+    "component_or_context": "Basal KCl",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Main basal table",
+        "exact_source_quote": "KCl 0.10 g",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 0.1,
+      "unit": "g",
+      "stage": "basal recipe before post-autoclave additions",
+      "source_declared_final_volume_ml": 1000
+    },
+    "rationale": "The nominal main mass matches the stored numeral. Attach evidence and preserve the declared volume alongside the later additions; do not silently recalculate an assumed measured volume."
+  },
+  {
+    "quantity_id": "q5",
+    "component_or_context": "Main mineral stock dose",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Main basal table",
+        "exact_source_quote": "Mineral mixture 10.00 ml",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "dose": 10,
+      "unit": "ml",
+      "stage": "mineral mixture added to basal recipe"
+    },
+    "rationale": "The named receiving dose is missing even though stock solutes are flattened below it."
+  },
+  {
+    "quantity_id": "q6",
+    "component_or_context": "Main water input",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[30].concentration",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[30].concentration",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "ingredients[30].concentration",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Main basal table",
+        "exact_source_quote": "Distilled water 990.00 ml",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 990,
+      "unit": "ml",
+      "stage": "main basal water"
+    },
+    "rationale": "Restore the main water input separately from each stock water row."
+  },
+  {
+    "quantity_id": "q7",
+    "component_or_context": "Post-autoclave bicarbonate dose and current collapsed mass",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "3.34007",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "3.34007",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "3.34007",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Post-autoclave chemical stock table",
+        "exact_source_quote": "NaHCO3 (1M in water, sterile, anaerobic) 10.00 ml/l",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "dose": 10,
+      "unit": "ml/L",
+      "stock_concentration": 1,
+      "stock_unit": "mol/L",
+      "stage": "after autoclaving, sterile anaerobic aqueous stock",
+      "derived_moles_per_nominal_litre": 0.01
+    },
+    "rationale": "The source gives a sterile anaerobic aqueous stock and a separate post-autoclave dose. Preserve the stock strength and dose; the source-declared volume and staged additions remain explicit, not replaced by inferred measured volume."
+  },
+  {
+    "quantity_id": "q8",
+    "component_or_context": "Post-autoclave bicarbonate stock strength",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Post-autoclave chemical stock table",
+        "exact_source_quote": "NaHCO3 (1M in water, sterile, anaerobic) 10.00 ml/l",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "value": 1,
+      "unit": "mol/L",
+      "stage": "stock preparation, not final concentration"
+    },
+    "rationale": "A stock molarity is distinct from its receiving dose and from a final-medium mass rate."
+  },
+  {
+    "quantity_id": "q9",
+    "component_or_context": "Post-autoclave acetate dose and current collapsed mass",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.820338",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.820338",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.820338",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Post-autoclave chemical stock table",
+        "exact_source_quote": "Na acetate (1M in water, sterile, anaerobic) 10.00 ml/l",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "dose": 10,
+      "unit": "ml/L",
+      "stock_concentration": 1,
+      "stock_unit": "mol/L",
+      "stage": "after autoclaving, sterile anaerobic aqueous stock",
+      "derived_moles_per_nominal_litre": 0.01
+    },
+    "rationale": "The source gives a sterile anaerobic aqueous stock and a separate post-autoclave dose. Preserve the stock strength and dose; the source-declared volume and staged additions remain explicit, not replaced by inferred measured volume."
+  },
+  {
+    "quantity_id": "q10",
+    "component_or_context": "Post-autoclave acetate stock strength",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Post-autoclave chemical stock table",
+        "exact_source_quote": "Na acetate (1M in water, sterile, anaerobic) 10.00 ml/l",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "value": 1,
+      "unit": "mol/L",
+      "stage": "stock preparation, not final concentration"
+    },
+    "rationale": "A stock molarity is distinct from its receiving dose and from a final-medium mass rate."
+  },
+  {
+    "quantity_id": "q11",
+    "component_or_context": "Post-autoclave ferric chloride hexahydrate dose and current collapsed mass",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "13.5148",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "13.5148",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "13.5148",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Post-autoclave chemical stock table",
+        "exact_source_quote": "FeCl3 x 6 H2O (0,5 M in water, sterile, anaerobic) 10.00 ml/l",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "dose": 10,
+      "unit": "ml/L",
+      "stock_concentration": 0.5,
+      "stock_unit": "mol/L",
+      "stage": "after autoclaving, sterile anaerobic aqueous stock",
+      "derived_moles_per_nominal_litre": 0.005
+    },
+    "rationale": "Retain source dose and stock strength rather than an opaque summed mass. Bicarbonate includes a distinct basal contribution; acetate is nominally compatible but loses its stage. For FeCl3·6H2O, 0.5 mol/L × 0.010 L gives 0.005 mol per nominal litre; pinned CHEBI mass 270.294 g/mol gives 1.35147 g, not the stored 13.5148 g. This derivation is conditional on the named source dose and is outside the quotation."
+  },
+  {
+    "quantity_id": "q12",
+    "component_or_context": "Post-autoclave ferric chloride hexahydrate stock strength",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Post-autoclave chemical stock table",
+        "exact_source_quote": "FeCl3 x 6 H2O (0,5 M in water, sterile, anaerobic) 10.00 ml/l",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "value": 0.5,
+      "unit": "mol/L",
+      "stage": "stock preparation, not final concentration"
+    },
+    "rationale": "A stock molarity is distinct from its receiving dose and from a final-medium mass rate."
+  },
+  {
+    "quantity_id": "q13",
+    "component_or_context": "Vitamin receiving dose",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Post-autoclave table",
+        "exact_source_quote": "Wolin's vitamin solution 10.00 ml",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "dose": 10,
+      "unit": "ml",
+      "stage": "post-autoclave vitamin addition"
+    },
+    "rationale": "Preserve the printed ml unit and its placement after the instruction for stock additions; do not silently replace it with a measured final-volume claim."
+  },
+  {
+    "quantity_id": "q14",
+    "component_or_context": "Mineral stock: NTA",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Mineral mixture stock table",
+        "exact_source_quote": "NTA 1.500 g",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      },
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Main receiving dose",
+        "exact_source_quote": "Mineral mixture 10.00 ml",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 1.5,
+      "unit": "g",
+      "stage": "mineral stock with 1000 ml water",
+      "receiving_dose_ml": 10
+    },
+    "rationale": "The stored numeral belongs to the stock recipe, not an undiluted receiving-medium g/L claim. Reconstruct the named stock and dose. A hypothetical one-litre stock interpretation gives a 100-fold dilution at 10 ml per nominal litre, but source stock water is not independently asserted as measured make-up volume."
+  },
+  {
+    "quantity_id": "q15",
+    "component_or_context": "Mineral stock: MgSO4",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Mineral mixture stock table",
+        "exact_source_quote": "MgSO4 3.000 g",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      },
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Main receiving dose",
+        "exact_source_quote": "Mineral mixture 10.00 ml",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 3,
+      "unit": "g",
+      "stage": "mineral stock with 1000 ml water",
+      "receiving_dose_ml": 10
+    },
+    "rationale": "The stored numeral belongs to the stock recipe, not an undiluted receiving-medium g/L claim. Reconstruct the named stock and dose. A hypothetical one-litre stock interpretation gives a 100-fold dilution at 10 ml per nominal litre, but source stock water is not independently asserted as measured make-up volume."
+  },
+  {
+    "quantity_id": "q16",
+    "component_or_context": "Mineral stock: MnSO4 x H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Mineral mixture stock table",
+        "exact_source_quote": "MnSO4 x H2O 0.500 g",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      },
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Main receiving dose",
+        "exact_source_quote": "Mineral mixture 10.00 ml",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 0.5,
+      "unit": "g",
+      "stage": "mineral stock with 1000 ml water",
+      "receiving_dose_ml": 10
+    },
+    "rationale": "The stored numeral belongs to the stock recipe, not an undiluted receiving-medium g/L claim. Reconstruct the named stock and dose. A hypothetical one-litre stock interpretation gives a 100-fold dilution at 10 ml per nominal litre, but source stock water is not independently asserted as measured make-up volume."
+  },
+  {
+    "quantity_id": "q17",
+    "component_or_context": "Mineral stock: NaCl",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Mineral mixture stock table",
+        "exact_source_quote": "NaCl 1.000 g",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      },
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Main receiving dose",
+        "exact_source_quote": "Mineral mixture 10.00 ml",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 1,
+      "unit": "g",
+      "stage": "mineral stock with 1000 ml water",
+      "receiving_dose_ml": 10
+    },
+    "rationale": "The stored numeral belongs to the stock recipe, not an undiluted receiving-medium g/L claim. Reconstruct the named stock and dose. A hypothetical one-litre stock interpretation gives a 100-fold dilution at 10 ml per nominal litre, but source stock water is not independently asserted as measured make-up volume."
+  },
+  {
+    "quantity_id": "q18",
+    "component_or_context": "Mineral stock: FeSO4 x 7 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Mineral mixture stock table",
+        "exact_source_quote": "FeSO4 x 7 H2O 0.100 g",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      },
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Main receiving dose",
+        "exact_source_quote": "Mineral mixture 10.00 ml",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 0.1,
+      "unit": "g",
+      "stage": "mineral stock with 1000 ml water",
+      "receiving_dose_ml": 10
+    },
+    "rationale": "The stored numeral belongs to the stock recipe, not an undiluted receiving-medium g/L claim. Reconstruct the named stock and dose. A hypothetical one-litre stock interpretation gives a 100-fold dilution at 10 ml per nominal litre, but source stock water is not independently asserted as measured make-up volume."
+  },
+  {
+    "quantity_id": "q19",
+    "component_or_context": "Mineral stock: CaCl2 x 2 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Mineral mixture stock table",
+        "exact_source_quote": "CaCl2 x 2 H2O 0.100 g",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      },
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Main receiving dose",
+        "exact_source_quote": "Mineral mixture 10.00 ml",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 0.1,
+      "unit": "g",
+      "stage": "mineral stock with 1000 ml water",
+      "receiving_dose_ml": 10
+    },
+    "rationale": "The stored numeral belongs to the stock recipe, not an undiluted receiving-medium g/L claim. Reconstruct the named stock and dose. A hypothetical one-litre stock interpretation gives a 100-fold dilution at 10 ml per nominal litre, but source stock water is not independently asserted as measured make-up volume."
+  },
+  {
+    "quantity_id": "q20",
+    "component_or_context": "Mineral stock: CoCl2 x 6 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Mineral mixture stock table",
+        "exact_source_quote": "CoCl2 x 6 H2O 0.100 g",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      },
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Main receiving dose",
+        "exact_source_quote": "Mineral mixture 10.00 ml",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 0.1,
+      "unit": "g",
+      "stage": "mineral stock with 1000 ml water",
+      "receiving_dose_ml": 10
+    },
+    "rationale": "The stored numeral belongs to the stock recipe, not an undiluted receiving-medium g/L claim. Reconstruct the named stock and dose. A hypothetical one-litre stock interpretation gives a 100-fold dilution at 10 ml per nominal litre, but source stock water is not independently asserted as measured make-up volume."
+  },
+  {
+    "quantity_id": "q21",
+    "component_or_context": "Mineral stock: ZnCl2",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.13",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.13",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.13",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Mineral mixture stock table",
+        "exact_source_quote": "ZnCl2 0.130 g",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      },
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Main receiving dose",
+        "exact_source_quote": "Mineral mixture 10.00 ml",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 0.13,
+      "unit": "g",
+      "stage": "mineral stock with 1000 ml water",
+      "receiving_dose_ml": 10
+    },
+    "rationale": "The stored numeral belongs to the stock recipe, not an undiluted receiving-medium g/L claim. Reconstruct the named stock and dose. A hypothetical one-litre stock interpretation gives a 100-fold dilution at 10 ml per nominal litre, but source stock water is not independently asserted as measured make-up volume."
+  },
+  {
+    "quantity_id": "q22",
+    "component_or_context": "Mineral stock: CuSO4 x 5 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Mineral mixture stock table",
+        "exact_source_quote": "CuSO4 x 5 H2O 0.010 g",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      },
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Main receiving dose",
+        "exact_source_quote": "Mineral mixture 10.00 ml",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 0.01,
+      "unit": "g",
+      "stage": "mineral stock with 1000 ml water",
+      "receiving_dose_ml": 10
+    },
+    "rationale": "The stored numeral belongs to the stock recipe, not an undiluted receiving-medium g/L claim. Reconstruct the named stock and dose. A hypothetical one-litre stock interpretation gives a 100-fold dilution at 10 ml per nominal litre, but source stock water is not independently asserted as measured make-up volume."
+  },
+  {
+    "quantity_id": "q23",
+    "component_or_context": "Mineral stock: AlK(SO4)2 x 12 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Mineral mixture stock table",
+        "exact_source_quote": "AlK(SO4)2 x 12 H2O 0.010 g",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      },
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Main receiving dose",
+        "exact_source_quote": "Mineral mixture 10.00 ml",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 0.01,
+      "unit": "g",
+      "stage": "mineral stock with 1000 ml water",
+      "receiving_dose_ml": 10
+    },
+    "rationale": "The stored numeral belongs to the stock recipe, not an undiluted receiving-medium g/L claim. Reconstruct the named stock and dose. A hypothetical one-litre stock interpretation gives a 100-fold dilution at 10 ml per nominal litre, but source stock water is not independently asserted as measured make-up volume."
+  },
+  {
+    "quantity_id": "q24",
+    "component_or_context": "Mineral stock: H3BO3",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Mineral mixture stock table",
+        "exact_source_quote": "H3BO3 0.010 g",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      },
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Main receiving dose",
+        "exact_source_quote": "Mineral mixture 10.00 ml",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 0.01,
+      "unit": "g",
+      "stage": "mineral stock with 1000 ml water",
+      "receiving_dose_ml": 10
+    },
+    "rationale": "The stored numeral belongs to the stock recipe, not an undiluted receiving-medium g/L claim. Reconstruct the named stock and dose. A hypothetical one-litre stock interpretation gives a 100-fold dilution at 10 ml per nominal litre, but source stock water is not independently asserted as measured make-up volume."
+  },
+  {
+    "quantity_id": "q25",
+    "component_or_context": "Mineral stock: Na2MoO4",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.025",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.025",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.025",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Mineral mixture stock table",
+        "exact_source_quote": "Na2MoO4 0.025 g",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      },
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Main receiving dose",
+        "exact_source_quote": "Mineral mixture 10.00 ml",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 0.025,
+      "unit": "g",
+      "stage": "mineral stock with 1000 ml water",
+      "receiving_dose_ml": 10
+    },
+    "rationale": "The stored numeral belongs to the stock recipe, not an undiluted receiving-medium g/L claim. Reconstruct the named stock and dose. A hypothetical one-litre stock interpretation gives a 100-fold dilution at 10 ml per nominal litre, but source stock water is not independently asserted as measured make-up volume."
+  },
+  {
+    "quantity_id": "q26",
+    "component_or_context": "Mineral stock: NiCl2 x 6 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.024",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.024",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.024",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Mineral mixture stock table",
+        "exact_source_quote": "NiCl2 x 6 H2O 0.024 g",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      },
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Main receiving dose",
+        "exact_source_quote": "Mineral mixture 10.00 ml",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 0.024,
+      "unit": "g",
+      "stage": "mineral stock with 1000 ml water",
+      "receiving_dose_ml": 10
+    },
+    "rationale": "The stored numeral belongs to the stock recipe, not an undiluted receiving-medium g/L claim. Reconstruct the named stock and dose. A hypothetical one-litre stock interpretation gives a 100-fold dilution at 10 ml per nominal litre, but source stock water is not independently asserted as measured make-up volume."
+  },
+  {
+    "quantity_id": "q27",
+    "component_or_context": "Mineral stock: Na2WO4 x 2 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.025",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.025",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.025",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Mineral mixture stock table",
+        "exact_source_quote": "Na2WO4 x 2 H2O 0.025 g",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      },
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Main receiving dose",
+        "exact_source_quote": "Mineral mixture 10.00 ml",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 0.025,
+      "unit": "g",
+      "stage": "mineral stock with 1000 ml water",
+      "receiving_dose_ml": 10
+    },
+    "rationale": "The stored numeral belongs to the stock recipe, not an undiluted receiving-medium g/L claim. Reconstruct the named stock and dose. A hypothetical one-litre stock interpretation gives a 100-fold dilution at 10 ml per nominal litre, but source stock water is not independently asserted as measured make-up volume."
+  },
+  {
+    "quantity_id": "q28",
+    "component_or_context": "Mineral stock water",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Mineral mixture water row",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 1000,
+      "unit": "ml",
+      "stage": "mineral stock water"
+    },
+    "rationale": "Keep this water separate from the 990 ml main water; the primary states water quantity."
+  },
+  {
+    "quantity_id": "q29",
+    "component_or_context": "Vitamin stock: Biotin",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Wolin vitamin stock table",
+        "exact_source_quote": "Biotin 2.00 mg",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      },
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Receiving dose",
+        "exact_source_quote": "Wolin's vitamin solution 10.00 ml",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 2,
+      "unit": "mg",
+      "stage": "vitamin stock with 1000 ml water",
+      "receiving_dose_ml": 10
+    },
+    "rationale": "The local g/L numeral is the converted stock quantity at a nominal litre basis. It must not remain an undiluted main-medium rate. Preserve exact vitamin identity, stock preparation and receiving dose separately."
+  },
+  {
+    "quantity_id": "q30",
+    "component_or_context": "Vitamin stock: Folic acid",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Wolin vitamin stock table",
+        "exact_source_quote": "Folic acid 2.00 mg",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      },
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Receiving dose",
+        "exact_source_quote": "Wolin's vitamin solution 10.00 ml",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 2,
+      "unit": "mg",
+      "stage": "vitamin stock with 1000 ml water",
+      "receiving_dose_ml": 10
+    },
+    "rationale": "The local g/L numeral is the converted stock quantity at a nominal litre basis. It must not remain an undiluted main-medium rate. Preserve exact vitamin identity, stock preparation and receiving dose separately."
+  },
+  {
+    "quantity_id": "q31",
+    "component_or_context": "Vitamin stock: Pyridoxine hydrochloride",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Wolin vitamin stock table",
+        "exact_source_quote": "Pyridoxine hydrochloride 10.00 mg",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      },
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Receiving dose",
+        "exact_source_quote": "Wolin's vitamin solution 10.00 ml",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 10,
+      "unit": "mg",
+      "stage": "vitamin stock with 1000 ml water",
+      "receiving_dose_ml": 10
+    },
+    "rationale": "The local g/L numeral is the converted stock quantity at a nominal litre basis. It must not remain an undiluted main-medium rate. Preserve exact vitamin identity, stock preparation and receiving dose separately."
+  },
+  {
+    "quantity_id": "q32",
+    "component_or_context": "Vitamin stock: Thiamine HCl",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Wolin vitamin stock table",
+        "exact_source_quote": "Thiamine HCl 5.00 mg",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      },
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Receiving dose",
+        "exact_source_quote": "Wolin's vitamin solution 10.00 ml",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 5,
+      "unit": "mg",
+      "stage": "vitamin stock with 1000 ml water",
+      "receiving_dose_ml": 10
+    },
+    "rationale": "The local g/L numeral is the converted stock quantity at a nominal litre basis. It must not remain an undiluted main-medium rate. Preserve exact vitamin identity, stock preparation and receiving dose separately."
+  },
+  {
+    "quantity_id": "q33",
+    "component_or_context": "Vitamin stock: Riboflavin",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Wolin vitamin stock table",
+        "exact_source_quote": "Riboflavin 5.00 mg",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      },
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Receiving dose",
+        "exact_source_quote": "Wolin's vitamin solution 10.00 ml",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 5,
+      "unit": "mg",
+      "stage": "vitamin stock with 1000 ml water",
+      "receiving_dose_ml": 10
+    },
+    "rationale": "The local g/L numeral is the converted stock quantity at a nominal litre basis. It must not remain an undiluted main-medium rate. Preserve exact vitamin identity, stock preparation and receiving dose separately."
+  },
+  {
+    "quantity_id": "q34",
+    "component_or_context": "Vitamin stock: Nicotinic acid",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Wolin vitamin stock table",
+        "exact_source_quote": "Nicotinic acid 5.00 mg",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      },
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Receiving dose",
+        "exact_source_quote": "Wolin's vitamin solution 10.00 ml",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 5,
+      "unit": "mg",
+      "stage": "vitamin stock with 1000 ml water",
+      "receiving_dose_ml": 10
+    },
+    "rationale": "The local g/L numeral is the converted stock quantity at a nominal litre basis. It must not remain an undiluted main-medium rate. Preserve exact vitamin identity, stock preparation and receiving dose separately."
+  },
+  {
+    "quantity_id": "q35",
+    "component_or_context": "Vitamin stock: Calcium D-(+)-pantothenate",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Wolin vitamin stock table",
+        "exact_source_quote": "Calcium D-(+)-pantothenate 5.00 mg",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      },
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Receiving dose",
+        "exact_source_quote": "Wolin's vitamin solution 10.00 ml",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 5,
+      "unit": "mg",
+      "stage": "vitamin stock with 1000 ml water",
+      "receiving_dose_ml": 10
+    },
+    "rationale": "The local g/L numeral is the converted stock quantity at a nominal litre basis. It must not remain an undiluted main-medium rate. Preserve exact vitamin identity, stock preparation and receiving dose separately."
+  },
+  {
+    "quantity_id": "q36",
+    "component_or_context": "Vitamin stock: Vitamin B12",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "0.0001",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "0.0001",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "0.0001",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Wolin vitamin stock table",
+        "exact_source_quote": "Vitamin B12 0.10 mg",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      },
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Receiving dose",
+        "exact_source_quote": "Wolin's vitamin solution 10.00 ml",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 0.1,
+      "unit": "mg",
+      "stage": "vitamin stock with 1000 ml water",
+      "receiving_dose_ml": 10
+    },
+    "rationale": "The local g/L numeral is the converted stock quantity at a nominal litre basis. It must not remain an undiluted main-medium rate. Preserve exact vitamin identity, stock preparation and receiving dose separately."
+  },
+  {
+    "quantity_id": "q37",
+    "component_or_context": "Vitamin stock: p-Aminobenzoic acid",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[28].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[28].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "ingredients[28].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Wolin vitamin stock table",
+        "exact_source_quote": "p-Aminobenzoic acid 5.00 mg",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      },
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Receiving dose",
+        "exact_source_quote": "Wolin's vitamin solution 10.00 ml",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 5,
+      "unit": "mg",
+      "stage": "vitamin stock with 1000 ml water",
+      "receiving_dose_ml": 10
+    },
+    "rationale": "The local g/L numeral is the converted stock quantity at a nominal litre basis. It must not remain an undiluted main-medium rate. Preserve exact vitamin identity, stock preparation and receiving dose separately."
+  },
+  {
+    "quantity_id": "q38",
+    "component_or_context": "Vitamin stock: (DL)-alpha-Lipoic acid",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[29].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "ingredients[29].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "ingredients[29].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Wolin vitamin stock table",
+        "exact_source_quote": "(DL)-alpha-Lipoic acid 5.00 mg",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      },
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Receiving dose",
+        "exact_source_quote": "Wolin's vitamin solution 10.00 ml",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 5,
+      "unit": "mg",
+      "stage": "vitamin stock with 1000 ml water",
+      "receiving_dose_ml": 10
+    },
+    "rationale": "The local g/L numeral is the converted stock quantity at a nominal litre basis. It must not remain an undiluted main-medium rate. Preserve exact vitamin identity, stock preparation and receiving dose separately."
+  },
+  {
+    "quantity_id": "q39",
+    "component_or_context": "Vitamin stock water",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Wolin vitamin water row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 1000,
+      "unit": "ml",
+      "stage": "vitamin stock water"
+    },
+    "rationale": "Do not combine main and stock water or import unrelated parent141 recipe stages."
+  },
+  {
+    "quantity_id": "q40",
+    "component_or_context": "Source-declared final volume",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "notes",
+        "stored": "Source: KOMODO ModelSEED &#124; ID: 1001 &#124; DSMZ Medium: 1001 (mediadive.medium:1001) &#124; Aerobic: Yes",
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "notes",
+        "stored": "Source: KOMODO ModelSEED &#124; ID: 1001 &#124; DSMZ Medium: 1001 (mediadive.medium:1001) &#124; Aerobic: Yes",
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "notes",
+        "stored": "Source: DSMZ &#124; Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "decision": "add",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Primary header",
+        "exact_source_quote": "Final volume: 1000 ml",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "declared_final_volume": 1000,
+      "unit": "ml",
+      "stage": "provider declaration"
+    },
+    "rationale": "Preserve the explicit declaration together with the later stock-addition instructions; listed-liquid arithmetic is not an independent measured final volume."
+  },
+  {
+    "quantity_id": "q41",
+    "component_or_context": "Final pH",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "ph_value",
+        "stored": 6.9,
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "ph_value",
+        "stored": 6.9,
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "ph_value",
+        "stored": 6.9,
+        "decision": "evidence_only",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Primary header",
+        "exact_source_quote": "Final pH: 6.9",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "value": 6.9,
+      "stage": "source final pH"
+    },
+    "rationale": "The existing final pH is supported."
+  },
+  {
+    "quantity_id": "q42",
+    "component_or_context": "Nitrogen gas fraction",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Sparge medium with 80% N2 and 20% CO2 gas mixture for 10 min Bubble the medium with N2:CO2 (80:20) to make anoxic.",
+        "decision": "evidence_only",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Primary preparation step 2",
+        "exact_source_quote": "2. Sparge medium with 80% N2 and 20% CO2 gas mixture for 10 min Bubble the medium\nwith N2:CO2 (80:20) to make anoxic.",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "value": 80,
+      "unit": "%",
+      "stage": "basal preparation before post-autoclave additions"
+    },
+    "rationale": "The DSMZ owner already retains this numeric instruction and needs source evidence; the generated and KOMODO layers lack the preparation. Preserve bottle dispensing as such, not typed plate pouring. No incubation condition is inferred."
+  },
+  {
+    "quantity_id": "q43",
+    "component_or_context": "Carbon dioxide gas fraction",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Sparge medium with 80% N2 and 20% CO2 gas mixture for 10 min Bubble the medium with N2:CO2 (80:20) to make anoxic.",
+        "decision": "evidence_only",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Primary preparation step 2",
+        "exact_source_quote": "2. Sparge medium with 80% N2 and 20% CO2 gas mixture for 10 min Bubble the medium\nwith N2:CO2 (80:20) to make anoxic.",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "value": 20,
+      "unit": "%",
+      "stage": "basal preparation before post-autoclave additions"
+    },
+    "rationale": "The DSMZ owner already retains this numeric instruction and needs source evidence; the generated and KOMODO layers lack the preparation. Preserve bottle dispensing as such, not typed plate pouring. No incubation condition is inferred."
+  },
+  {
+    "quantity_id": "q44",
+    "component_or_context": "Gas sparging duration",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Sparge medium with 80% N2 and 20% CO2 gas mixture for 10 min Bubble the medium with N2:CO2 (80:20) to make anoxic.",
+        "decision": "evidence_only",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Primary preparation step 2",
+        "exact_source_quote": "2. Sparge medium with 80% N2 and 20% CO2 gas mixture for 10 min Bubble the medium\nwith N2:CO2 (80:20) to make anoxic.",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "value": 10,
+      "unit": "min",
+      "stage": "basal preparation before post-autoclave additions"
+    },
+    "rationale": "The DSMZ owner already retains this numeric instruction and needs source evidence; the generated and KOMODO layers lack the preparation. Preserve bottle dispensing as such, not typed plate pouring. No incubation condition is inferred."
+  },
+  {
+    "quantity_id": "q45",
+    "component_or_context": "Adjustment pH range",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "preparation_steps[2].description",
+        "stored": "Adjust pH to 6.8-7.0.",
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "ph_range",
+        "stored": {
+          "min": 6.8,
+          "max": 7.0
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "ph_range",
+        "stored": {
+          "min": 6.8,
+          "max": 7.0
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Primary preparation step 3",
+        "exact_source_quote": "3. Adjust pH to 6.8-7.0.",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "value": [
+        6.8,
+        7.0
+      ],
+      "unit": "pH",
+      "stage": "basal preparation before post-autoclave additions"
+    },
+    "rationale": "The DSMZ owner already retains this numeric instruction and needs source evidence; the generated and KOMODO layers lack the preparation. Preserve bottle dispensing as such, not typed plate pouring. No incubation condition is inferred."
+  },
+  {
+    "quantity_id": "q46",
+    "component_or_context": "Medium per serum bottle",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "preparation_steps[3].description",
+        "stored": "Dispense into serum bottles (using 10ml medium in 100 ml bottles with N2:CO2 headspace).",
+        "decision": "evidence_only",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Primary preparation step 4",
+        "exact_source_quote": "4. Dispense into serum bottles (using 10ml medium in 100 ml bottles with N2:CO2\nheadspace).",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "value": 10,
+      "unit": "ml",
+      "stage": "basal preparation before post-autoclave additions"
+    },
+    "rationale": "The DSMZ owner already retains this numeric instruction and needs source evidence; the generated and KOMODO layers lack the preparation. Preserve bottle dispensing as such, not typed plate pouring. No incubation condition is inferred."
+  },
+  {
+    "quantity_id": "q47",
+    "component_or_context": "Serum bottle capacity",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "preparation_steps[3].description",
+        "stored": "Dispense into serum bottles (using 10ml medium in 100 ml bottles with N2:CO2 headspace).",
+        "decision": "evidence_only",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Primary preparation step 4",
+        "exact_source_quote": "4. Dispense into serum bottles (using 10ml medium in 100 ml bottles with N2:CO2\nheadspace).",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "value": 100,
+      "unit": "ml",
+      "stage": "basal preparation before post-autoclave additions"
+    },
+    "rationale": "The DSMZ owner already retains this numeric instruction and needs source evidence; the generated and KOMODO layers lack the preparation. Preserve bottle dispensing as such, not typed plate pouring. No incubation condition is inferred."
+  },
+  {
+    "quantity_id": "q48",
+    "component_or_context": "Autoclave temperature",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "preparation_steps[4].description",
+        "stored": "Autoclave at 121 °C for 15 min.",
+        "decision": "evidence_only",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Primary preparation step 5",
+        "exact_source_quote": "5. Autoclave at 121 °C for 15 min.",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "value": 121,
+      "unit": "°C",
+      "stage": "basal preparation before post-autoclave additions"
+    },
+    "rationale": "The DSMZ owner already retains this numeric instruction and needs source evidence; the generated and KOMODO layers lack the preparation. Preserve bottle dispensing as such, not typed plate pouring. No incubation condition is inferred."
+  },
+  {
+    "quantity_id": "q49",
+    "component_or_context": "Autoclave duration",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BASAL_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "preparation_steps[4].description",
+        "stored": "Autoclave at 121 °C for 15 min.",
+        "decision": "evidence_only",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Primary preparation step 5",
+        "exact_source_quote": "5. Autoclave at 121 °C for 15 min.",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "value": 15,
+      "unit": "min",
+      "stage": "basal preparation before post-autoclave additions"
+    },
+    "rationale": "The DSMZ owner already retains this numeric instruction and needs source evidence; the generated and KOMODO layers lack the preparation. Preserve bottle dispensing as such, not typed plate pouring. No incubation condition is inferred."
+  },
+  {
+    "quantity_id": "q50",
+    "component_or_context": "Post-autoclave generic dose instruction",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+        "field_path": "preparation_steps[5].description",
+        "stored": "After autoclaving, add the following solutions to a final volume of 10ml/L each.",
+        "decision": "evidence_only",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1001",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf",
+        "source_locator": "Preparation step 6",
+        "exact_source_quote": "6. After autoclaving, add the following solutions to a final volume of 10ml/L each.",
+        "snapshot_sha256": "af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c",
+        "parsed_text_sha256": "2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527",
+        "accessed_at": "2026-10-21T22:14:59.909942Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "dose": 10,
+      "unit": "ml/L",
+      "stage": "post-autoclave instruction preceding the three chemical stock rows and separate vitamin row"
+    },
+    "rationale": "The owner already retains this generic numeric instruction. Keep it with the exact following table; the three chemical rows explicitly use ml/L, while the vitamin row separately prints 10 ml. This does not replace missing stock identities or establish measured post-addition volume."
+  }
+]
+
+## Findings
+
+### f1: Mineral and vitamin stock rates are represented as main-medium rates
+
+blocker / open / confirmed; issue key: culturemech.003498.stock-stage-collapse.
+
+All 24 stock-solute amounts appear as undiluted main ingredients, and the named stocks, water inputs and receiving doses are missing. This materially changes the medium; it is not merely a preference for nested formatting.
+
+### f2: Ferric chloride mass disagrees with the source stock dose
+
+major / open / confirmed; issue key: culturemech.003498.ferric-dose.
+
+The source specifies 0.5 M FeCl3·6H2O at 10 ml/L. This is 5 mmol per nominal litre, approximately 1.35147 g using pinned CHEBI mass270.294, while all local layers store 13.5148 g/L. Final-volume ambiguity cannot explain this approximately tenfold discrepancy.
+
+### f3: Two supplied hydrates use anhydrous identifiers
+
+major / open / confirmed; issue key: culturemech.003498.hydrate-grounding.
+
+The primary names NaH2PO4 monohydrate and NiCl2 hexahydrate. Their asserted primary and secondary terms describe anhydrous sodium dihydrogenphosphate and nickel dichloride. Other supported hydrates and D-pantothenate must remain unchanged.
+
+### f4: Source preparation is missing or incorrectly typed
+
+major / open / confirmed; issue key: culturemech.003498.preparation-operation.
+
+The target and KOMODO owner omit the staged anaerobic bottle preparation. The DSMZ owner retains its numeric text but incorrectly types serum-bottle dispensing as POUR_PLATES and does not reconstruct the named post-autoclave stocks.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Reconstruct the two named stocks, explicit water inputs and receiving doses in both owners; preserve basal versus post-autoclave bicarbonate and source-declared volume. Attach exact stage-specific evidence before regeneration.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Represent the 0.5 M stock and 10 ml/L dose explicitly; if a derived receiving mass is retained, label its basis and calculation separately.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Resolve exact supplied-form identifiers and secondary correspondence with evidence, or explicitly retain an unresolved hydrate distinction without inventing IDs.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Add exact preparation to missing layers and correct the owner operation type while preserving supported text. Attribute catalog oxygen metadata separately from source requirements; retain out-of-direct-light storage.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/BASAL_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-1 | data/normalized_yaml/bacterial/basal_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/BASAL_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/BASAL_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch040/392/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-040/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch040/392/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/BASAL_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/BASAL_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/BASAL_MEDIUM.yaml:1:id: CultureMech:003498<br>./data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml:1:id: CultureMech:003498<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch040/source-preflight-bound/392/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 36 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| primary | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf; Complete two-page DSM1001 formulation | supports | Read declared final volume, basal ingredients, ordered preparation, three chemical stock additions, mineral mixture and vitamin recipe. |
+| chemical-stocks | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf; Post-autoclave table | supports | Three chemical stocks have individual 10 ml/L doses; vitamin addition is separately printed as 10 ml. |
+| mineral-stock | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf; Mineral mixture section across pages 1 and 2 | supports | Fourteen solute quantities and water belong to the mineral stock, dosed at 10 ml in the main recipe. |
+| vitamin-stock | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf; Wolin vitamin solution section | supports | Ten vitamin quantities and water belong to the stock; D-pantothenate is explicit. |
+| vitamin-parent | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf; Named Wolin vitamin subsection only | supports | The parent capture is complete, but only the named vitamin formulation is relevant. Its reused metadata contains an older mineral-only scope annotation; the bound current context overrides transfer to vitamins only. No parent main ingredients, mineral solution, gases, pressure, strain or receiving dose is imported. |
+| prep | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf; Preparation steps 1–7 | supports | Anoxic gas, bottle dimensions, cycle and light exclusion are exact source instructions. |
+| catalog | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; Exact accession1001 and seven-column header | supports | Aerobic: Yes is catalog metadata. The available primary explicitly uses anoxic preparation, so the flag cannot be interpreted as a cultivation requirement. |
+| grounding-inventory | /private/tmp/culturemech-review-work-batch040/392/grounding-inventory.json; Exact local term/history slots and bound source authentication ledger | context_only | Complete exact-field inventory; current metadata, historical evidence and source forms remain distinct. |
+| history-inventory | /private/tmp/culturemech-review-work-batch040/392/history-inventory.json; Exact local term/history slots and bound source authentication ledger | context_only | Complete exact-field inventory; current metadata, historical evidence and source forms remain distinct. |
+| chebi15940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi16494 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi17015 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi176843 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi27470 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi30961 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi31345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi31440 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi32139 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi32599 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32599; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi32954 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32954; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi37585 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_37585; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi39054 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_39054; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi49105 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi49976 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi53503 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi63939 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi75215 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75215; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi75836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi86254 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86254; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi86364 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86364; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi86465 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86465; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Exact pinned current CHEBI preferred-key rows; metadata source commit/hash | context_only | {"CHEBI:15940": [{"label": "Nicotinic acid", "match_type": "preferred_term", "identifier": "CHEBI:15940", "preferred_term": "Nicotinic acid", "ontology_id": "CHEBI:15940", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15956": [{"label": "Biotin", "match_type": "preferred_term", "identifier": "CHEBI:15956", "preferred_term": "Biotin", "ontology_id": "CHEBI:15956", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:16494": [{"label": "(DL)-alpha-Lipoic acid", "match_type": "preferred_term", "identifier": "CHEBI:16494", "preferred_term": "(DL)-alpha-Lipoic acid", "ontology_id": "CHEBI:16494", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17015": [{"label": "Riboflavin", "match_type": "preferred_term", "identifier": "CHEBI:17015", "preferred_term": "Riboflavin", "ontology_id": "CHEBI:17015", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:176843": [{"label": "Vitamin B12", "match_type": "preferred_term", "identifier": "CHEBI:176843", "preferred_term": "Vitamin B12", "ontology_id": "CHEBI:176843", "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:27470": [{"label": "Folic acid", "match_type": "preferred_term", "identifier": "CHEBI:27470", "preferred_term": "Folic acid", "ontology_id": "CHEBI:27470", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:30753": [{"label": "p-Aminobenzoic acid", "match_type": "preferred_term", "identifier": "CHEBI:30753", "preferred_term": "p-Aminobenzoic acid", "ontology_id": "CHEBI:30753", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:30961": [{"label": "Pyridoxine hydrochloride", "match_type": "preferred_term", "identifier": "CHEBI:30961", "preferred_term": "Pyridoxine hydrochloride", "ontology_id": "CHEBI:30961", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31206": [{"label": "NH4Cl", "match_type": "preferred_term", "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31440": [{"label": "CuSO4 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32139": [{"label": "NaHCO3", "match_type": "preferred_term", "identifier": "CHEBI:32139", "preferred_term": "NaHCO3", "ontology_id": "CHEBI:32139", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32588": [{"label": "KCl", "match_type": "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32599": [{"label": "Magnesium sulfate", "match_type": "preferred_term", "identifier": "CHEBI:32599", "preferred_term": "Magnesium sulfate", "ontology_id": "CHEBI:32599", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32954": [{"label": "Na-acetate", "match_type": "preferred_term", "identifier": "CHEBI:32954", "preferred_term": "Na-acetate", "ontology_id": "CHEBI:32954", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:34887": [{"label": "NiCl2", "match_type": "preferred_term", "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:37585": [{"label": "NaH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:37585", "preferred_term": "NaH2PO4", "ontology_id": "CHEBI:37585", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:39054": [{"label": "NTA", "match_type": "preferred_term", "identifier": "CHEBI:39054", "preferred_term": "NTA", "ontology_id": "CHEBI:39054", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:49105": [{"label": "Thiamine HCl", "match_type": "preferred_term", "identifier": "CHEBI:49105", "preferred_term": "Thiamine HCl", "ontology_id": "CHEBI:49105", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:49976": [{"label": "ZnCl2", "match_type": "preferred_term", "identifier": "CHEBI:49976", "preferred_term": "ZnCl2", "ontology_id": "CHEBI:49976", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:53503": [{"label": "Cobalt chloride hexahydrate", "match_type": "preferred_term", "identifier": "CHEBI:53503", "preferred_term": "Cobalt chloride hexahydrate", "ontology_id": "CHEBI:53503", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63939": [{"label": "Na2WO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75215": [{"label": "Na2MoO4", "match_type": "preferred_term", "identifier": "CHEBI:75215", "preferred_term": "Na2MoO4", "ontology_id": "CHEBI:75215", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75836": [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86254": [{"label": "FeCl3 x 6 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86254", "preferred_term": "FeCl3 x 6 H2O", "ontology_id": "CHEBI:86254", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86364": [{"label": "MnSO4 x H2O", "match_type": "preferred_term", "identifier": "CHEBI:86364", "preferred_term": "MnSO4 x H2O", "ontology_id": "CHEBI:86364", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86465": [{"label": "AlK(SO4)2 x 12 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86465", "preferred_term": "AlK(SO4)2 x 12 H2O", "ontology_id": "CHEBI:86465", "mapping_status": "MAPPED", "ambiguity": "unique"}]} |
+| writer-0 | src/culturemech/import/mediadive_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current code is context only. All current owners already contain flattened stock-rate rows and merged bicarbonate, whereas current merger compatibility guards do not prove the historical execution cause. Owner-level curation and controlled regeneration are needed; the current source declares its own stages. |
+| writer-1 | src/culturemech/merge/merger.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current code is context only. All current owners already contain flattened stock-rate rows and merged bicarbonate, whereas current merger compatibility guards do not prove the historical execution cause. Owner-level curation and controlled regeneration are needed; the current source declares its own stages. |
+| writer-2 | src/culturemech/merge/formulation.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current code is context only. All current owners already contain flattened stock-rate rows and merged bicarbonate, whereas current merger compatibility guards do not prove the historical execution cause. Owner-level curation and controlled regeneration are needed; the current source declares its own stages. |
+| history-metadata | data/merge_yaml/merged/BASAL_MEDIUM.yaml; data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml; data/normalized_yaml/bacterial/basal_medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 12, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:01.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:11.986026"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml", "events": 10, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:01.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:11.986026"}]}, {"input": "data/normalized_yaml/bacterial/basal_medium.yaml", "events": 8, "timestamp_issues": []}] |
+| mediadive1001api-attempt | https://mediadive.dsmz.de/rest/medium/1001; Preserved exact public retrieval result | context_only | Optional mediadive1001api access failed (HTTP 503); exact DSM1001 primary and scoped parent vitamin source are available, so this failure alone does not require partial coverage. |
+| mediadive1001api_retry-attempt | https://mediadive.dsmz.de/rest/medium/1001; Preserved exact public retrieval result | context_only | Optional mediadive1001api_retry access failed (HTTP 503); exact DSM1001 primary and scoped parent vitamin source are available, so this failure alone does not require partial coverage. |
+| komodo1001detail-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1001; Preserved exact public retrieval result | context_only | Optional komodo1001detail access failed (HTTP 403); exact DSM1001 primary and scoped parent vitamin source are available, so this failure alone does not require partial coverage. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch040/392/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Optional mediadive1001api access failed (HTTP 503); exact DSM1001 primary and scoped parent vitamin source are available, so this failure alone does not require partial coverage.
+- Optional mediadive1001api_retry access failed (HTTP 503); exact DSM1001 primary and scoped parent vitamin source are available, so this failure alone does not require partial coverage.
+- Optional komodo1001detail access failed (HTTP 403); exact DSM1001 primary and scoped parent vitamin source are available, so this failure alone does not require partial coverage.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T223545Z-culturemech-003498-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: basal_medium (CultureMech:003498)'
+started_at: '2026-10-21T22:32:17Z'
+finished_at: '2026-10-21T22:35:45Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The exact DSMZ 1001 primary is available and declares 1000 ml, but all three
+  local layers flatten mineral and vitamin stock compositions into receiving-medium
+  rates. The ferric chloride amount is approximately tenfold above the nominal source
+  dose. Source hydration, anaerobic preparation and post-autoclave additions require
+  separate, source-bound representation; calcium D-pantothenate is supported, not
+  a stereochemical mismatch.
+source:
+  git_revision: 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/BASAL_MEDIUM.yaml
+    sha256: 66ff674ec484a6c9097b6794467b109a381a6aff818705a15a48cee97af9094b
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml
+    sha256: abce5808cc3a7360f914bbbcd08ce3fa803550666f0728796d554f0578f943f0
+    role: context
+  - path: data/normalized_yaml/bacterial/basal_medium.yaml
+    sha256: 841cd8f0c2abe195b680bc0a56412812c03b38abb6bd7780ee44462dcb0c1430
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml.md
+    sha256: 20d3931378502b38c5a99dd70d8043957d7d9902aff5d47bdd62c09c6beba9d9
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/basal_medium.yaml.md
+    sha256: 1996f56df1e13d194f3a15e1af014f204667ade483dfe0e81e1c2aef4249975e
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/records/bacterial/mj_basal_medium.yaml.md
+    sha256: d56f188b119675b4bc895cbe51e75f3f0fff49b1afbff0096a4f6672f32c1870
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/records/bacterial/mj_n_basal_medium.yaml.md
+    sha256: 65ef08403cbab06c1f6d020cdf4976e8eb8062a690c90002fe5ec74f4a402664
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-solutions-3500-4000/records/bacterial/mediadive_4968_10_x_Korthof_s_basal_medium.yaml.md
+    sha256: fa6b7f1042acf5d58e3830f17351a1271e08a6947f4fa3f666ac9bc2d09a3ac3
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/BASAL_MEDIUM.md
+    sha256: d1dc013385ddb85c6ea710d8e7c891986010a8880e9108816b896fe6c24d6c5d
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Modified_MG_basal_medium.md
+    sha256: 2774502385ffe402ed68ce87a52faf4673525009785f179b1bad1420407c6dfa
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Modified_basal_medium.md
+    sha256: 8e7aeb294b5b8b9a9ea4c264ed1b6902d4e4524cd1b510f006120eec004fc443
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/PEG_basal_medium.md
+    sha256: dd1d11760dc25d90f3b3f12a6a95627d41b0ee64b398071d43dd178e26c3c5b2
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Saline_basal_medium.md
+    sha256: 579fded8d28b13906a255b0b5b381302fa741c59608190c35c7c63e94b0ed78f
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/The_basal_medium.md
+    sha256: 13925c486efd345de3b9788f82d2661062b5f2221b2a9d4d38f9adf664154a06
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/basal_medium__47cea40b.md
+    sha256: 5ad38f8816a420283160609a5096881f6b1e96825dd2f5c1cd10d3a817ef0f79
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/basal_medium__f3d49ca7.md
+    sha256: d122b1cebed8fae15f75e8c03022b741bc6df7a8ef532907cfa12addd3665e30
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/fe_and_s_free_basal_medium.md
+    sha256: f4c45c0fb4d891d434c396058d6ae22b53583b5fe5bcd09ea17ee571ac6dcbb8
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/mj_n_basal_medium.md
+    sha256: 778f9430e7ee3b651649f868052f2f405da25ad30aaeb7e5e380978d33425ea2
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/mj_n_basal_medium__47625802.md
+    sha256: c35c0cd66bec8a46b57217e572e3966a1c09b84951f28ea403ecafd3c379794c
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.md
+    sha256: 152606785a18f009a9adc820e05a167d0772845259b96f64d48ce3883bb74fda
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M2825_basal_medium.md
+    sha256: 6f71df90ad3030716de6958208679f1f9e2cf12344ec9d9f068595967b0b0d96
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M2826_basal_medium.md
+    sha256: b400c6740e3bf10daf3f454e9fa02e04d8d3beea68f9fe24ba4f2e53bf562d31
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/basal_medium.md
+    sha256: 66477524cfbd3c6af11e1e7bf76d9e0d4209271dd9d37b22ff812ae2053156bc
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/fe_and_s_free_basal_medium.md
+    sha256: eb4e8adcbaec9c416c9715d28af27aaa60dbdb3c2cad92efa24c670c0c36b89d
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_4968_10_x_Korthof_s_basal_medium.md
+    sha256: 2f19392c0b407f4eb1efcc229c1ff2208ac0f47aaa2a3554ef074340ca6a90a9
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mj_basal_medium.md
+    sha256: c596159c773ce787ec6d518db7e1bbafcf30fb251db84c493d70cef8fc9fb93a
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mj_n_basal_medium.md
+    sha256: 2d99e7468f528c3448e333ec895da03154a80ed7d8633f38c1636249ca0bdde3
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/modified_basal_medium.md
+    sha256: cf090a7682d09adb8dc06695a5fa73ac4fbef96ff0752f69204c075982443139
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/modified_mg_basal_medium.md
+    sha256: 5bc0ea06b8025eae3eef4db5e61063c4b9cd0940cb2bf6270a066dcf4e802af7
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/peg_basal_medium.md
+    sha256: d7706403f7b052931051d2d3a20afd2e387079a94b5a062d2be3ff91a5ac303e
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/saline_basal_medium.md
+    sha256: 0233a2638d8ee49f83a42190be480ca63579424b596951dca31938ee01460cc8
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/the_basal_medium.md
+    sha256: 05380f403c07e6111573955711c2ea1ccf711256cc936a7fae03496b8135e0fc
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_togo_m943_microaerophilic_autotrophs_score15.py
+    sha256: 105070f3ad2ad2b05ae81433600e904392dd6a6137b198f760c31f69e3615e46
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 392; batch 040 item 2 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirty-nine task batches
+    contain 390 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 393 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:003498
+targets:
+- target_id: CultureMech:003498
+  path: data/merge_yaml/merged/BASAL_MEDIUM.yaml
+  label: basal_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/basal_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/BASAL_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:003498
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/BASAL_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch040/392/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-040/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch040/392/strict.tsv"
+  target_ids:
+  - CultureMech:003498
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/BASAL_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:003498
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/BASAL_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:003498
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:003498
+- check_id: mediadive1001api-source-access
+  name: 'Exact source content access: mediadive1001api'
+  required: false
+  status: unavailable
+  summary: Optional mediadive1001api access failed (HTTP 503); exact DSM1001 primary
+    and scoped parent vitamin source are available, so this failure alone does not
+    require partial coverage.
+  target_ids:
+  - CultureMech:003498
+  evidence_ids:
+  - mediadive1001api-attempt
+- check_id: mediadive1001api_retry-source-access
+  name: 'Exact source content access: mediadive1001api_retry'
+  required: false
+  status: unavailable
+  summary: Optional mediadive1001api_retry access failed (HTTP 503); exact DSM1001
+    primary and scoped parent vitamin source are available, so this failure alone
+    does not require partial coverage.
+  target_ids:
+  - CultureMech:003498
+  evidence_ids:
+  - mediadive1001api_retry-attempt
+- check_id: komodo1001detail-source-access
+  name: 'Exact source content access: komodo1001detail'
+  required: false
+  status: unavailable
+  summary: Optional komodo1001detail access failed (HTTP 403); exact DSM1001 primary
+    and scoped parent vitamin source are available, so this failure alone does not
+    require partial coverage.
+  target_ids:
+  - CultureMech:003498
+  evidence_ids:
+  - komodo1001detail-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/BASAL_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T22:35:44Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T22:35:44Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/basal_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T22:35:44Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/BASAL_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T22:32:26.696562Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/BASAL_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch040/392/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T22:32:27.715713Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-040/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch040/392/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/BASAL_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T22:32:28.865576Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/BASAL_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T22:32:29.679789Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T22:35:44Z'
+  support: supports
+  summary: './data/merge_yaml/merged/BASAL_MEDIUM.yaml:1:id: CultureMech:003498
+
+    ./data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml:1:id: CultureMech:003498
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch040/source-preflight-bound/392/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T22:35:44Z'
+  support: supports
+  summary: 36 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: a484858345986bbd6ba3c8a54c305de77fac3c454f8e347f72ce544c42d68d16
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf
+  locator: Complete two-page DSM1001 formulation
+  accessed_at: '2026-10-21T22:14:59.909942Z'
+  support: supports
+  summary: Read declared final volume, basal ingredients, ordered preparation, three
+    chemical stock additions, mineral mixture and vitamin recipe.
+  quote: 'Final volume: 1000 ml'
+  snapshot_sha256: af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c
+- evidence_id: chemical-stocks
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf
+  locator: Post-autoclave table
+  accessed_at: '2026-10-21T22:14:59.909942Z'
+  support: supports
+  summary: Three chemical stocks have individual 10 ml/L doses; vitamin addition is
+    separately printed as 10 ml.
+  quote: FeCl3 x 6 H2O (0,5 M in water, sterile, anaerobic) 10.00 ml/l
+  snapshot_sha256: af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c
+- evidence_id: mineral-stock
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf
+  locator: Mineral mixture section across pages 1 and 2
+  accessed_at: '2026-10-21T22:14:59.909942Z'
+  support: supports
+  summary: Fourteen solute quantities and water belong to the mineral stock, dosed
+    at 10 ml in the main recipe.
+  quote: Mineral mixture 10.00 ml
+  snapshot_sha256: af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c
+- evidence_id: vitamin-stock
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf
+  locator: Wolin vitamin solution section
+  accessed_at: '2026-10-21T22:14:59.909942Z'
+  support: supports
+  summary: Ten vitamin quantities and water belong to the stock; D-pantothenate is
+    explicit.
+  quote: Calcium D-(+)-pantothenate 5.00 mg
+  snapshot_sha256: af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c
+- evidence_id: vitamin-parent
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf
+  locator: Named Wolin vitamin subsection only
+  accessed_at: '2026-10-21T10:13:12.306566Z'
+  support: supports
+  summary: The parent capture is complete, but only the named vitamin formulation
+    is relevant. Its reused metadata contains an older mineral-only scope annotation;
+    the bound current context overrides transfer to vitamins only. No parent main
+    ingredients, mineral solution, gases, pressure, strain or receiving dose is imported.
+  snapshot_sha256: 8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8
+- evidence_id: prep
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf
+  locator: Preparation steps 1–7
+  accessed_at: '2026-10-21T22:14:59.909942Z'
+  support: supports
+  summary: Anoxic gas, bottle dimensions, cycle and light exclusion are exact source
+    instructions.
+  quote: '2. Sparge medium with 80% N2 and 20% CO2 gas mixture for 10 min Bubble the
+    medium
+
+    with N2:CO2 (80:20) to make anoxic.'
+  snapshot_sha256: af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c
+- evidence_id: catalog
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Exact accession1001 and seven-column header
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: 'Aerobic: Yes is catalog metadata. The available primary explicitly uses
+    anoxic preparation, so the flag cannot be interpreted as a cultivation requirement.'
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: grounding-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch040/392/grounding-inventory.json
+  locator: Exact local term/history slots and bound source authentication ledger
+  accessed_at: '2026-10-21T22:35:44Z'
+  support: context_only
+  summary: Complete exact-field inventory; current metadata, historical evidence and
+    source forms remain distinct.
+  snapshot_sha256: a92bc91e84ea721058b6b606e36af92de2a15ea14a99329648197c26d1ae5863
+- evidence_id: history-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch040/392/history-inventory.json
+  locator: Exact local term/history slots and bound source authentication ledger
+  accessed_at: '2026-10-21T22:35:44Z'
+  support: context_only
+  summary: Complete exact-field inventory; current metadata, historical evidence and
+    source forms remain distinct.
+  snapshot_sha256: 7075a92f26f85f83e2e05c210cb2b5a739027aa929b5e9053a83d46bf1a5bcf4
+- evidence_id: chebi15940
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-20T06:55:11.874279Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: 3330ed782e73526a087fb250ed5895ff232f117a896d45d541dff431e5c1f0e1
+- evidence_id: chebi15956
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T08:42:30.425993Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: d2d51887df4de92642b66e9d15086ef82eccbc476dd4077d514ca709181ab4bd
+- evidence_id: chebi16494
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-20T06:55:13.001958Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: aa3c1003d6266cc48f19a4d1d9527edd6844b96094a911e9a3c4f6a8851444e1
+- evidence_id: chebi17015
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-20T06:55:11.583596Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: f42bc5bbd29b208bfd3062acb11dfa63ccebf81f77ffd72ab596de863cb68aa4
+- evidence_id: chebi176843
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T08:17:26.997779Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: b535c3de88f47e93aed8909c58ff4e2d054a6845dea3bc9a048c18df12b371a9
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi27470
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-20T06:55:10.450814Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: fe3e4a2f0f0fa51f94efe6bbf0fa8883d43eafef8db73cfd37bc25ce15fdd12f
+- evidence_id: chebi30753
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-20T06:55:12.829785Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: 97ea54b8020d3bcda2478182be115d2bc632249ee22b197b0575a4a9fd5fe21a
+- evidence_id: chebi30961
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T08:42:44.571163Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: f1c95b83f5396067c3959c20ee4715c78f7895f5084dd214b3a4bf01e064f21d
+- evidence_id: chebi31206
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T08:17:28.439407Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi31345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-20T06:55:12.450283Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: 56fc4b33c78d82faf317e131ae936f2e00eab0c369b2a9d8be86eddff6fd616d
+- evidence_id: chebi31440
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T08:17:28.489501Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: e8ac76313670beb01b2eea5bf76bd0e4a341d0798c99d947484fbdd280d297f9
+- evidence_id: chebi32139
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T07:16:24.226823Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: 2a41873aa455dc8563a47d36add836fffb6fb758ce7a2d1c28295e77646315fe
+- evidence_id: chebi32588
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T08:17:29.045588Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi32599
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32599
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T08:42:45.640268Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: 5da4e37c63d52d06c19a75da5c03a8ba42e81db8b537a053285d895de8f2b9ff
+- evidence_id: chebi32954
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32954
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T08:00:48.206583Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: 573cba85f57c363463610a20b17be618893d6432ba239604fbd8aa562f98161b
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T08:17:29.364390Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi34887
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T08:04:44.093348Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: chebi37585
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_37585
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T07:33:28.640347Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: 41dce71ee822e488298c467569974159cbd109700160a5863720dd3ae3213b13
+- evidence_id: chebi39054
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_39054
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T22:15:01.128161Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: 60e903ef96a1280c378dea7b734c5adad368d5151f48ddfdc47a1ead03851ed1
+- evidence_id: chebi49105
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-20T06:55:10.911379Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: 0b923c215888606038af1e3f0c1b1bcc35e4ab84966d1733a91fdfcbee8f2ae4
+- evidence_id: chebi49976
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T08:04:44.168295Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: d27644ae0df5935f8f18a28faa1ba6096fefeb9d0cb951b39751d442c92bd321
+- evidence_id: chebi53503
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T08:04:44.349630Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: c33e304a0a565068c592ba0970e501052981599ef69cd2cb901e88f27931389d
+- evidence_id: chebi63939
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-20T06:55:09.796192Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: 987144fa0342502834f116860a4b4f71696f62c18e7b701301667c15e588562a
+- evidence_id: chebi75215
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75215
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T09:27:41.268041Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: fc350638c78c930db3b38cb59bd48dc73b408d309f79ada3ee087a8fb207fb0e
+- evidence_id: chebi75836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-20T06:55:07.038393Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86254
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86254
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T08:17:30.289392Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: 89afba545ad02f24a850933df154af25dee37357b583f82de13866b44f18d683
+- evidence_id: chebi86364
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86364
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T07:33:35.036768Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: f1da0a281e1fa2263226a8548afc0bf76db61dd36828240b47d83431bd182069
+- evidence_id: chebi86465
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86465
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-20T06:55:08.054799Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: 5e74b8136b972b18b427c70e758e12dfe013a6ca671501cddc936038299f7c2c
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Exact pinned current CHEBI preferred-key rows; metadata source commit/hash
+  accessed_at: '2026-10-21T22:35:44Z'
+  support: context_only
+  summary: '{"CHEBI:15940": [{"label": "Nicotinic acid", "match_type": "preferred_term",
+    "identifier": "CHEBI:15940", "preferred_term": "Nicotinic acid", "ontology_id":
+    "CHEBI:15940", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15956":
+    [{"label": "Biotin", "match_type": "preferred_term", "identifier": "CHEBI:15956",
+    "preferred_term": "Biotin", "ontology_id": "CHEBI:15956", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:16494": [{"label": "(DL)-alpha-Lipoic acid", "match_type":
+    "preferred_term", "identifier": "CHEBI:16494", "preferred_term": "(DL)-alpha-Lipoic
+    acid", "ontology_id": "CHEBI:16494", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:17015": [{"label": "Riboflavin", "match_type": "preferred_term",
+    "identifier": "CHEBI:17015", "preferred_term": "Riboflavin", "ontology_id": "CHEBI:17015",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:176843": [{"label":
+    "Vitamin B12", "match_type": "preferred_term", "identifier": "CHEBI:176843", "preferred_term":
+    "Vitamin B12", "ontology_id": "CHEBI:176843", "mapping_status": "MAPPED", "ambiguity":
+    "resolved:owned"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term",
+    "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:27470": [{"label":
+    "Folic acid", "match_type": "preferred_term", "identifier": "CHEBI:27470", "preferred_term":
+    "Folic acid", "ontology_id": "CHEBI:27470", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:30753": [{"label": "p-Aminobenzoic acid", "match_type": "preferred_term",
+    "identifier": "CHEBI:30753", "preferred_term": "p-Aminobenzoic acid", "ontology_id":
+    "CHEBI:30753", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:30961":
+    [{"label": "Pyridoxine hydrochloride", "match_type": "preferred_term", "identifier":
+    "CHEBI:30961", "preferred_term": "Pyridoxine hydrochloride", "ontology_id": "CHEBI:30961",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31206": [{"label":
+    "NH4Cl", "match_type": "preferred_term", "identifier": "CHEBI:31206", "preferred_term":
+    "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:31440": [{"label": "CuSO4 x 5 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id":
+    "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32139":
+    [{"label": "NaHCO3", "match_type": "preferred_term", "identifier": "CHEBI:32139",
+    "preferred_term": "NaHCO3", "ontology_id": "CHEBI:32139", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:32588": [{"label": "KCl", "match_type": "preferred_term",
+    "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32599": [{"label":
+    "Magnesium sulfate", "match_type": "preferred_term", "identifier": "CHEBI:32599",
+    "preferred_term": "Magnesium sulfate", "ontology_id": "CHEBI:32599", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:32954": [{"label": "Na-acetate", "match_type":
+    "preferred_term", "identifier": "CHEBI:32954", "preferred_term": "Na-acetate",
+    "ontology_id": "CHEBI:32954", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:33118": [{"label": "H3BO3", "match_type": "preferred_term", "identifier":
+    "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:34887": [{"label": "NiCl2", "match_type":
+    "preferred_term", "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id":
+    "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:37585":
+    [{"label": "NaH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:37585",
+    "preferred_term": "NaH2PO4", "ontology_id": "CHEBI:37585", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:39054": [{"label": "NTA", "match_type": "preferred_term",
+    "identifier": "CHEBI:39054", "preferred_term": "NTA", "ontology_id": "CHEBI:39054",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:49105": [{"label":
+    "Thiamine HCl", "match_type": "preferred_term", "identifier": "CHEBI:49105", "preferred_term":
+    "Thiamine HCl", "ontology_id": "CHEBI:49105", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:49976": [{"label": "ZnCl2", "match_type": "preferred_term",
+    "identifier": "CHEBI:49976", "preferred_term": "ZnCl2", "ontology_id": "CHEBI:49976",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:53503": [{"label":
+    "Cobalt chloride hexahydrate", "match_type": "preferred_term", "identifier": "CHEBI:53503",
+    "preferred_term": "Cobalt chloride hexahydrate", "ontology_id": "CHEBI:53503",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63939": [{"label":
+    "Na2WO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:63939",
+    "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:75215": [{"label": "Na2MoO4", "match_type":
+    "preferred_term", "identifier": "CHEBI:75215", "preferred_term": "Na2MoO4", "ontology_id":
+    "CHEBI:75215", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75836":
+    [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75836",
+    "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term":
+    "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:86254": [{"label": "FeCl3 x 6 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:86254", "preferred_term": "FeCl3 x 6 H2O", "ontology_id":
+    "CHEBI:86254", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86364":
+    [{"label": "MnSO4 x H2O", "match_type": "preferred_term", "identifier": "CHEBI:86364",
+    "preferred_term": "MnSO4 x H2O", "ontology_id": "CHEBI:86364", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:86465": [{"label": "AlK(SO4)2 x 12 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:86465", "preferred_term":
+    "AlK(SO4)2 x 12 H2O", "ontology_id": "CHEBI:86465", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}]}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T22:35:44Z'
+  support: context_only
+  summary: Current code is context only. All current owners already contain flattened
+    stock-rate rows and merged bicarbonate, whereas current merger compatibility guards
+    do not prove the historical execution cause. Owner-level curation and controlled
+    regeneration are needed; the current source declares its own stages.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T22:35:44Z'
+  support: context_only
+  summary: Current code is context only. All current owners already contain flattened
+    stock-rate rows and merged bicarbonate, whereas current merger compatibility guards
+    do not prove the historical execution cause. Owner-level curation and controlled
+    regeneration are needed; the current source declares its own stages.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T22:35:44Z'
+  support: context_only
+  summary: Current code is context only. All current owners already contain flattened
+    stock-rate rows and merged bicarbonate, whereas current merger compatibility guards
+    do not prove the historical execution cause. Owner-level curation and controlled
+    regeneration are needed; the current source declares its own stages.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/BASAL_MEDIUM.yaml; data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml;
+    data/normalized_yaml/bacterial/basal_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T22:35:44Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 12, "timestamp_issues": [{"index": 0, "issue":
+    "malformed timestamp", "value": "2026-01-27T01:15:01.fZ"}, {"index": 1, "issue":
+    "timezone absent", "value": "2026-02-03T11:19:11.986026"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml",
+    "events": 10, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:01.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:11.986026"}]}, {"input": "data/normalized_yaml/bacterial/basal_medium.yaml",
+    "events": 8, "timestamp_issues": []}]'
+- evidence_id: mediadive1001api-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1001
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T22:14:55.901211Z'
+  support: context_only
+  summary: Optional mediadive1001api access failed (HTTP 503); exact DSM1001 primary
+    and scoped parent vitamin source are available, so this failure alone does not
+    require partial coverage.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadive1001api_retry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1001
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T22:16:27.168541Z'
+  support: context_only
+  summary: Optional mediadive1001api_retry access failed (HTTP 503); exact DSM1001
+    primary and scoped parent vitamin source are available, so this failure alone
+    does not require partial coverage.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: komodo1001detail-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1001
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T22:14:55.641015Z'
+  support: context_only
+  summary: Optional komodo1001detail access failed (HTTP 403); exact DSM1001 primary
+    and scoped parent vitamin source are available, so this failure alone does not
+    require partial coverage.
+  snapshot_sha256: c64b07822ee6990bde07166d70092bba0ce323ae07993267fbd1da1c5c0657ec
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch040/392/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T22:35:44Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: cf2f167cd560a0d7c396e359f7308e6a15f79fb5e43c153abb0e23905b85883d
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:003498
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: DSM1001 source identity and duplicate owners
+  outcome: supported
+  summary: Exact primary and accession mapping support DSMZ/KOMODO1001. Both maintained
+    owners match the target ingredient signature; source-duplicate relations are supported
+    as accession identities, not evidence that the represented flattened formulation
+    is correct.
+  target_ids:
+  - CultureMech:003498
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - id-search
+  - primary
+  - catalog
+- assessment_id: grounding
+  area: grounding
+  topic: All asserted identifiers and source forms
+  outcome: concern
+  summary: 177 exact ontology slots and 29 distinct current CHEBI-based secondary
+    keys are inventoried. Canonical labels match and asserted current secondary keys
+    have pinned preferred mapped rows; no legacy key is asserted. Target linkage is
+    30/30 primary (100%) and 29/30 secondary (96.67%), not correctness scores. Phosphate
+    monohydrate and nickel hexahydrate require supplied-form reconciliation; D-pantothenate
+    does not.
+  target_ids:
+  - CultureMech:003498
+  evidence_ids:
+  - grounding-inventory
+  - mim
+  - primary
+  - chebi37585
+  - chebi34887
+  - chebi31345
+- assessment_id: stages
+  area: representation
+  topic: Stocks, main recipe and declared volume
+  outcome: concern
+  summary: The 14 mineral and 10 vitamin amounts have been flattened at main-medium
+    scope in all three layers. Basal bicarbonate and its later stock contribution
+    are collapsed, while the ferric chloride dose disagrees by approximately tenfold.
+    Preserve the explicit 1000 ml declaration and every staged instruction without
+    inventing a measured post-addition volume.
+  target_ids:
+  - CultureMech:003498
+  evidence_ids:
+  - primary
+  - chemical-stocks
+  - mineral-stock
+  - vitamin-stock
+  - quantity-inventory
+- assessment_id: conditions
+  area: consistency
+  topic: Anaerobic preparation and typed operation
+  outcome: concern
+  summary: 'The primary and DSMZ owner specify anoxic 80:20 N2:CO2 preparation, serum
+    bottles and 121 °C for 15 min. The owner types bottle dispensing as POUR_PLATES;
+    target and KOMODO lack these steps. Aerobic: Yes must remain attributed catalog
+    metadata, not a growth requirement. DEFINED and LIQUID are consistent with the
+    source composition; no target organism or incubation condition is inferred.'
+  target_ids:
+  - CultureMech:003498
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - prep
+  - catalog
+- assessment_id: provenance
+  area: provenance
+  topic: Current source support and historical transformations
+  outcome: concern
+  summary: No local attached amount claims authenticate the flattened formulation.
+    Bind exact current primary rows to the corrected stock stages; preserve historical
+    events and note timestamp defects separately. Optional failed APIs do not prevent
+    this current scientific comparison because the complete exact primary is available.
+  target_ids:
+  - CultureMech:003498
+  evidence_ids:
+  - history-inventory
+  - primary
+  - writer-0
+  - writer-1
+  - writer-2
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: concern
+  summary: 30 timestamp instances inspected; 4 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:003498
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+  - owner-1
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 50 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:003498
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"component_or_context\": \"\
+    Basal NaHCO3\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n   \
+    \   {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\",\n    \
+    \    \"field_path\": \"ingredients[0].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"3.34007\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3.34007\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n   \
+    \   },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3.34007\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n   \
+    \   }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Main basal table\",\n        \"exact_source_quote\"\
+    : \"NaHCO3 2.50 g\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 2.5,\n      \"unit\"\
+    : \"g\",\n      \"stage\": \"basal recipe before post-autoclave additions\",\n\
+    \      \"source_declared_final_volume_ml\": 1000\n    },\n    \"rationale\": \"\
+    For bicarbonate, separate the basal 2.5 g from the later 1 M stock dose; the stored\
+    \ summed numeral hides that stage distinction.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q2\",\n    \"component_or_context\": \"Basal NH4Cl\",\n    \"decision\": \"\
+    evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Main basal table\",\n        \"exact_source_quote\"\
+    : \"NH4Cl 0.25 g\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 0.25,\n      \"\
+    unit\": \"g\",\n      \"stage\": \"basal recipe before post-autoclave additions\"\
+    ,\n      \"source_declared_final_volume_ml\": 1000\n    },\n    \"rationale\"\
+    : \"The nominal main mass matches the stored numeral. Attach evidence and preserve\
+    \ the declared volume alongside the later additions; do not silently recalculate\
+    \ an assumed measured volume.\"\n  },\n  {\n    \"quantity_id\": \"q3\",\n   \
+    \ \"component_or_context\": \"Basal NaH2PO4 x H2O\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.6\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.6\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.6\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n     \
+    \ }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1001\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Main basal table\",\n        \"exact_source_quote\"\
+    : \"NaH2PO4 x H2O 0.60 g\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 0.6,\n      \"unit\"\
+    : \"g\",\n      \"stage\": \"basal recipe before post-autoclave additions\",\n\
+    \      \"source_declared_final_volume_ml\": 1000\n    },\n    \"rationale\": \"\
+    The nominal main mass matches the stored numeral. Attach evidence and preserve\
+    \ the declared volume alongside the later additions; do not silently recalculate\
+    \ an assumed measured volume.\"\n  },\n  {\n    \"quantity_id\": \"q4\",\n   \
+    \ \"component_or_context\": \"Basal KCl\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n     \
+    \ }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1001\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Main basal table\",\n        \"exact_source_quote\"\
+    : \"KCl 0.10 g\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 0.1,\n      \"unit\"\
+    : \"g\",\n      \"stage\": \"basal recipe before post-autoclave additions\",\n\
+    \      \"source_declared_final_volume_ml\": 1000\n    },\n    \"rationale\": \"\
+    The nominal main mass matches the stored numeral. Attach evidence and preserve\
+    \ the declared volume alongside the later additions; do not silently recalculate\
+    \ an assumed measured volume.\"\n  },\n  {\n    \"quantity_id\": \"q5\",\n   \
+    \ \"component_or_context\": \"Main mineral stock dose\",\n    \"decision\": \"\
+    add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\",\n     \
+    \   \"field_path\": \"solutions\",\n        \"stored\": null,\n        \"decision\"\
+    : \"add\",\n        \"rationale\": \"\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\",\n       \
+    \ \"source_locator\": \"Main basal table\",\n        \"exact_source_quote\": \"\
+    Mineral mixture 10.00 ml\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"dose\": 10,\n      \"unit\"\
+    : \"ml\",\n      \"stage\": \"mineral mixture added to basal recipe\"\n    },\n\
+    \    \"rationale\": \"The named receiving dose is missing even though stock solutes\
+    \ are flattened below it.\"\n  },\n  {\n    \"quantity_id\": \"q6\",\n    \"component_or_context\"\
+    : \"Main water input\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\",\n \
+    \       \"field_path\": \"ingredients[30].concentration\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[30].concentration\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[30].concentration\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1001\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Main basal table\",\n        \"exact_source_quote\"\
+    : \"Distilled water 990.00 ml\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 990,\n      \"unit\"\
+    : \"ml\",\n      \"stage\": \"main basal water\"\n    },\n    \"rationale\": \"\
+    Restore the main water input separately from each stock water row.\"\n  },\n \
+    \ {\n    \"quantity_id\": \"q7\",\n    \"component_or_context\": \"Post-autoclave\
+    \ bicarbonate dose and current collapsed mass\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3.34007\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n   \
+    \   },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3.34007\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n   \
+    \   },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3.34007\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n   \
+    \   }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Post-autoclave chemical stock table\",\n    \
+    \    \"exact_source_quote\": \"NaHCO3 (1M in water, sterile, anaerobic) 10.00\
+    \ ml/l\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"dose\": 10,\n      \"unit\"\
+    : \"ml/L\",\n      \"stock_concentration\": 1,\n      \"stock_unit\": \"mol/L\"\
+    ,\n      \"stage\": \"after autoclaving, sterile anaerobic aqueous stock\",\n\
+    \      \"derived_moles_per_nominal_litre\": 0.01\n    },\n    \"rationale\": \"\
+    The source gives a sterile anaerobic aqueous stock and a separate post-autoclave\
+    \ dose. Preserve the stock strength and dose; the source-declared volume and staged\
+    \ additions remain explicit, not replaced by inferred measured volume.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q8\",\n    \"component_or_context\": \"Post-autoclave\
+    \ bicarbonate stock strength\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\",\n     \
+    \   \"field_path\": \"solutions\",\n        \"stored\": null,\n        \"decision\"\
+    : \"add\",\n        \"rationale\": \"\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\",\n       \
+    \ \"source_locator\": \"Post-autoclave chemical stock table\",\n        \"exact_source_quote\"\
+    : \"NaHCO3 (1M in water, sterile, anaerobic) 10.00 ml/l\",\n        \"snapshot_sha256\"\
+    : \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\",\n    \
+    \    \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"value\": 1,\n      \"unit\"\
+    : \"mol/L\",\n      \"stage\": \"stock preparation, not final concentration\"\n\
+    \    },\n    \"rationale\": \"A stock molarity is distinct from its receiving\
+    \ dose and from a final-medium mass rate.\"\n  },\n  {\n    \"quantity_id\": \"\
+    q9\",\n    \"component_or_context\": \"Post-autoclave acetate dose and current\
+    \ collapsed mass\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\",\n \
+    \       \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.820338\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n  \
+    \    },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.820338\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n  \
+    \    },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.820338\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n  \
+    \    }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Post-autoclave chemical stock table\",\n    \
+    \    \"exact_source_quote\": \"Na acetate (1M in water, sterile, anaerobic) 10.00\
+    \ ml/l\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"dose\": 10,\n      \"unit\"\
+    : \"ml/L\",\n      \"stock_concentration\": 1,\n      \"stock_unit\": \"mol/L\"\
+    ,\n      \"stage\": \"after autoclaving, sterile anaerobic aqueous stock\",\n\
+    \      \"derived_moles_per_nominal_litre\": 0.01\n    },\n    \"rationale\": \"\
+    The source gives a sterile anaerobic aqueous stock and a separate post-autoclave\
+    \ dose. Preserve the stock strength and dose; the source-declared volume and staged\
+    \ additions remain explicit, not replaced by inferred measured volume.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q10\",\n    \"component_or_context\": \"Post-autoclave\
+    \ acetate stock strength\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\",\n     \
+    \   \"field_path\": \"solutions\",\n        \"stored\": null,\n        \"decision\"\
+    : \"add\",\n        \"rationale\": \"\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\",\n       \
+    \ \"source_locator\": \"Post-autoclave chemical stock table\",\n        \"exact_source_quote\"\
+    : \"Na acetate (1M in water, sterile, anaerobic) 10.00 ml/l\",\n        \"snapshot_sha256\"\
+    : \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\",\n    \
+    \    \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"value\": 1,\n      \"unit\"\
+    : \"mol/L\",\n      \"stage\": \"stock preparation, not final concentration\"\n\
+    \    },\n    \"rationale\": \"A stock molarity is distinct from its receiving\
+    \ dose and from a final-medium mass rate.\"\n  },\n  {\n    \"quantity_id\": \"\
+    q11\",\n    \"component_or_context\": \"Post-autoclave ferric chloride hexahydrate\
+    \ dose and current collapsed mass\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"13.5148\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n   \
+    \   },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"13.5148\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n   \
+    \   },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"13.5148\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n   \
+    \   }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Post-autoclave chemical stock table\",\n    \
+    \    \"exact_source_quote\": \"FeCl3 x 6 H2O (0,5 M in water, sterile, anaerobic)\
+    \ 10.00 ml/l\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"dose\": 10,\n      \"unit\"\
+    : \"ml/L\",\n      \"stock_concentration\": 0.5,\n      \"stock_unit\": \"mol/L\"\
+    ,\n      \"stage\": \"after autoclaving, sterile anaerobic aqueous stock\",\n\
+    \      \"derived_moles_per_nominal_litre\": 0.005\n    },\n    \"rationale\":\
+    \ \"Retain source dose and stock strength rather than an opaque summed mass. Bicarbonate\
+    \ includes a distinct basal contribution; acetate is nominally compatible but\
+    \ loses its stage. For FeCl3·6H2O, 0.5 mol/L × 0.010 L gives 0.005 mol per nominal\
+    \ litre; pinned CHEBI mass 270.294 g/mol gives 1.35147 g, not the stored 13.5148\
+    \ g. This derivation is conditional on the named source dose and is outside the\
+    \ quotation.\"\n  },\n  {\n    \"quantity_id\": \"q12\",\n    \"component_or_context\"\
+    : \"Post-autoclave ferric chloride hexahydrate stock strength\",\n    \"decision\"\
+    : \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\",\n     \
+    \   \"field_path\": \"solutions\",\n        \"stored\": null,\n        \"decision\"\
+    : \"add\",\n        \"rationale\": \"\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\",\n       \
+    \ \"source_locator\": \"Post-autoclave chemical stock table\",\n        \"exact_source_quote\"\
+    : \"FeCl3 x 6 H2O (0,5 M in water, sterile, anaerobic) 10.00 ml/l\",\n       \
+    \ \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"value\": 0.5,\n      \"unit\"\
+    : \"mol/L\",\n      \"stage\": \"stock preparation, not final concentration\"\n\
+    \    },\n    \"rationale\": \"A stock molarity is distinct from its receiving\
+    \ dose and from a final-medium mass rate.\"\n  },\n  {\n    \"quantity_id\": \"\
+    q13\",\n    \"component_or_context\": \"Vitamin receiving dose\",\n    \"decision\"\
+    : \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\",\n     \
+    \   \"field_path\": \"solutions\",\n        \"stored\": null,\n        \"decision\"\
+    : \"add\",\n        \"rationale\": \"\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\",\n       \
+    \ \"source_locator\": \"Post-autoclave table\",\n        \"exact_source_quote\"\
+    : \"Wolin's vitamin solution 10.00 ml\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"dose\": 10,\n      \"unit\"\
+    : \"ml\",\n      \"stage\": \"post-autoclave vitamin addition\"\n    },\n    \"\
+    rationale\": \"Preserve the printed ml unit and its placement after the instruction\
+    \ for stock additions; do not silently replace it with a measured final-volume\
+    \ claim.\"\n  },\n  {\n    \"quantity_id\": \"q14\",\n    \"component_or_context\"\
+    : \"Mineral stock: NTA\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      }\n  \
+    \  ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1001\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Mineral mixture stock table\",\n        \"exact_source_quote\"\
+    : \"NTA 1.500 g\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Main receiving dose\",\n        \"exact_source_quote\"\
+    : \"Mineral mixture 10.00 ml\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 1.5,\n      \"unit\"\
+    : \"g\",\n      \"stage\": \"mineral stock with 1000 ml water\",\n      \"receiving_dose_ml\"\
+    : 10\n    },\n    \"rationale\": \"The stored numeral belongs to the stock recipe,\
+    \ not an undiluted receiving-medium g/L claim. Reconstruct the named stock and\
+    \ dose. A hypothetical one-litre stock interpretation gives a 100-fold dilution\
+    \ at 10 ml per nominal litre, but source stock water is not independently asserted\
+    \ as measured make-up volume.\"\n  },\n  {\n    \"quantity_id\": \"q15\",\n  \
+    \  \"component_or_context\": \"Mineral stock: MgSO4\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      }\n  \
+    \  ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1001\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Mineral mixture stock table\",\n        \"exact_source_quote\"\
+    : \"MgSO4 3.000 g\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Main receiving dose\",\n        \"exact_source_quote\"\
+    : \"Mineral mixture 10.00 ml\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 3,\n      \"unit\"\
+    : \"g\",\n      \"stage\": \"mineral stock with 1000 ml water\",\n      \"receiving_dose_ml\"\
+    : 10\n    },\n    \"rationale\": \"The stored numeral belongs to the stock recipe,\
+    \ not an undiluted receiving-medium g/L claim. Reconstruct the named stock and\
+    \ dose. A hypothetical one-litre stock interpretation gives a 100-fold dilution\
+    \ at 10 ml per nominal litre, but source stock water is not independently asserted\
+    \ as measured make-up volume.\"\n  },\n  {\n    \"quantity_id\": \"q16\",\n  \
+    \  \"component_or_context\": \"Mineral stock: MnSO4 x H2O\",\n    \"decision\"\
+    : \"correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      }\n  \
+    \  ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1001\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Mineral mixture stock table\",\n        \"exact_source_quote\"\
+    : \"MnSO4 x H2O 0.500 g\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Main receiving dose\",\n        \"exact_source_quote\"\
+    : \"Mineral mixture 10.00 ml\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 0.5,\n      \"unit\"\
+    : \"g\",\n      \"stage\": \"mineral stock with 1000 ml water\",\n      \"receiving_dose_ml\"\
+    : 10\n    },\n    \"rationale\": \"The stored numeral belongs to the stock recipe,\
+    \ not an undiluted receiving-medium g/L claim. Reconstruct the named stock and\
+    \ dose. A hypothetical one-litre stock interpretation gives a 100-fold dilution\
+    \ at 10 ml per nominal litre, but source stock water is not independently asserted\
+    \ as measured make-up volume.\"\n  },\n  {\n    \"quantity_id\": \"q17\",\n  \
+    \  \"component_or_context\": \"Mineral stock: NaCl\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      }\n  \
+    \  ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1001\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Mineral mixture stock table\",\n        \"exact_source_quote\"\
+    : \"NaCl 1.000 g\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Main receiving dose\",\n        \"exact_source_quote\"\
+    : \"Mineral mixture 10.00 ml\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 1,\n      \"unit\"\
+    : \"g\",\n      \"stage\": \"mineral stock with 1000 ml water\",\n      \"receiving_dose_ml\"\
+    : 10\n    },\n    \"rationale\": \"The stored numeral belongs to the stock recipe,\
+    \ not an undiluted receiving-medium g/L claim. Reconstruct the named stock and\
+    \ dose. A hypothetical one-litre stock interpretation gives a 100-fold dilution\
+    \ at 10 ml per nominal litre, but source stock water is not independently asserted\
+    \ as measured make-up volume.\"\n  },\n  {\n    \"quantity_id\": \"q18\",\n  \
+    \  \"component_or_context\": \"Mineral stock: FeSO4 x 7 H2O\",\n    \"decision\"\
+    : \"correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      }\n  \
+    \  ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1001\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Mineral mixture stock table\",\n        \"exact_source_quote\"\
+    : \"FeSO4 x 7 H2O 0.100 g\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Main receiving dose\",\n        \"exact_source_quote\"\
+    : \"Mineral mixture 10.00 ml\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 0.1,\n      \"unit\"\
+    : \"g\",\n      \"stage\": \"mineral stock with 1000 ml water\",\n      \"receiving_dose_ml\"\
+    : 10\n    },\n    \"rationale\": \"The stored numeral belongs to the stock recipe,\
+    \ not an undiluted receiving-medium g/L claim. Reconstruct the named stock and\
+    \ dose. A hypothetical one-litre stock interpretation gives a 100-fold dilution\
+    \ at 10 ml per nominal litre, but source stock water is not independently asserted\
+    \ as measured make-up volume.\"\n  },\n  {\n    \"quantity_id\": \"q19\",\n  \
+    \  \"component_or_context\": \"Mineral stock: CaCl2 x 2 H2O\",\n    \"decision\"\
+    : \"correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      }\n  \
+    \  ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1001\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Mineral mixture stock table\",\n        \"exact_source_quote\"\
+    : \"CaCl2 x 2 H2O 0.100 g\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Main receiving dose\",\n        \"exact_source_quote\"\
+    : \"Mineral mixture 10.00 ml\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 0.1,\n      \"unit\"\
+    : \"g\",\n      \"stage\": \"mineral stock with 1000 ml water\",\n      \"receiving_dose_ml\"\
+    : 10\n    },\n    \"rationale\": \"The stored numeral belongs to the stock recipe,\
+    \ not an undiluted receiving-medium g/L claim. Reconstruct the named stock and\
+    \ dose. A hypothetical one-litre stock interpretation gives a 100-fold dilution\
+    \ at 10 ml per nominal litre, but source stock water is not independently asserted\
+    \ as measured make-up volume.\"\n  },\n  {\n    \"quantity_id\": \"q20\",\n  \
+    \  \"component_or_context\": \"Mineral stock: CoCl2 x 6 H2O\",\n    \"decision\"\
+    : \"correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      }\n  \
+    \  ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1001\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Mineral mixture stock table\",\n        \"exact_source_quote\"\
+    : \"CoCl2 x 6 H2O 0.100 g\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Main receiving dose\",\n        \"exact_source_quote\"\
+    : \"Mineral mixture 10.00 ml\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 0.1,\n      \"unit\"\
+    : \"g\",\n      \"stage\": \"mineral stock with 1000 ml water\",\n      \"receiving_dose_ml\"\
+    : 10\n    },\n    \"rationale\": \"The stored numeral belongs to the stock recipe,\
+    \ not an undiluted receiving-medium g/L claim. Reconstruct the named stock and\
+    \ dose. A hypothetical one-litre stock interpretation gives a 100-fold dilution\
+    \ at 10 ml per nominal litre, but source stock water is not independently asserted\
+    \ as measured make-up volume.\"\n  },\n  {\n    \"quantity_id\": \"q21\",\n  \
+    \  \"component_or_context\": \"Mineral stock: ZnCl2\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.13\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.13\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.13\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1001\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Mineral mixture stock table\",\n        \"exact_source_quote\"\
+    : \"ZnCl2 0.130 g\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Main receiving dose\",\n        \"exact_source_quote\"\
+    : \"Mineral mixture 10.00 ml\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 0.13,\n      \"\
+    unit\": \"g\",\n      \"stage\": \"mineral stock with 1000 ml water\",\n     \
+    \ \"receiving_dose_ml\": 10\n    },\n    \"rationale\": \"The stored numeral belongs\
+    \ to the stock recipe, not an undiluted receiving-medium g/L claim. Reconstruct\
+    \ the named stock and dose. A hypothetical one-litre stock interpretation gives\
+    \ a 100-fold dilution at 10 ml per nominal litre, but source stock water is not\
+    \ independently asserted as measured make-up volume.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q22\",\n    \"component_or_context\": \"Mineral stock: CuSO4 x 5 H2O\",\n\
+    \    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"ingredients[14].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.01\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\",\n        \"rationale\": \"\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\",\n        \"\
+    field_path\": \"ingredients[14].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n        },\n   \
+    \     \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n    \
+    \  {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1001\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Mineral mixture stock table\",\n        \"exact_source_quote\"\
+    : \"CuSO4 x 5 H2O 0.010 g\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Main receiving dose\",\n        \"exact_source_quote\"\
+    : \"Mineral mixture 10.00 ml\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 0.01,\n      \"\
+    unit\": \"g\",\n      \"stage\": \"mineral stock with 1000 ml water\",\n     \
+    \ \"receiving_dose_ml\": 10\n    },\n    \"rationale\": \"The stored numeral belongs\
+    \ to the stock recipe, not an undiluted receiving-medium g/L claim. Reconstruct\
+    \ the named stock and dose. A hypothetical one-litre stock interpretation gives\
+    \ a 100-fold dilution at 10 ml per nominal litre, but source stock water is not\
+    \ independently asserted as measured make-up volume.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q23\",\n    \"component_or_context\": \"Mineral stock: AlK(SO4)2 x 12 H2O\"\
+    ,\n    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"ingredients[15].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.01\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\",\n        \"rationale\": \"\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\",\n        \"\
+    field_path\": \"ingredients[15].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n        },\n   \
+    \     \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n    \
+    \  {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1001\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Mineral mixture stock table\",\n        \"exact_source_quote\"\
+    : \"AlK(SO4)2 x 12 H2O 0.010 g\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Main receiving dose\",\n        \"exact_source_quote\"\
+    : \"Mineral mixture 10.00 ml\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 0.01,\n      \"\
+    unit\": \"g\",\n      \"stage\": \"mineral stock with 1000 ml water\",\n     \
+    \ \"receiving_dose_ml\": 10\n    },\n    \"rationale\": \"The stored numeral belongs\
+    \ to the stock recipe, not an undiluted receiving-medium g/L claim. Reconstruct\
+    \ the named stock and dose. A hypothetical one-litre stock interpretation gives\
+    \ a 100-fold dilution at 10 ml per nominal litre, but source stock water is not\
+    \ independently asserted as measured make-up volume.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q24\",\n    \"component_or_context\": \"Mineral stock: H3BO3\",\n    \"decision\"\
+    : \"correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1001\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Mineral mixture stock table\",\n        \"exact_source_quote\"\
+    : \"H3BO3 0.010 g\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Main receiving dose\",\n        \"exact_source_quote\"\
+    : \"Mineral mixture 10.00 ml\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 0.01,\n      \"\
+    unit\": \"g\",\n      \"stage\": \"mineral stock with 1000 ml water\",\n     \
+    \ \"receiving_dose_ml\": 10\n    },\n    \"rationale\": \"The stored numeral belongs\
+    \ to the stock recipe, not an undiluted receiving-medium g/L claim. Reconstruct\
+    \ the named stock and dose. A hypothetical one-litre stock interpretation gives\
+    \ a 100-fold dilution at 10 ml per nominal litre, but source stock water is not\
+    \ independently asserted as measured make-up volume.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q25\",\n    \"component_or_context\": \"Mineral stock: Na2MoO4\",\n    \"\
+    decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\",\n        \"field_path\": \"ingredients[17].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.025\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"decision\": \"correct\",\n        \"rationale\"\
+    : \"\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.025\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.025\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n     \
+    \ }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1001\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Mineral mixture stock table\",\n        \"exact_source_quote\"\
+    : \"Na2MoO4 0.025 g\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Main receiving dose\",\n        \"exact_source_quote\"\
+    : \"Mineral mixture 10.00 ml\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 0.025,\n      \"\
+    unit\": \"g\",\n      \"stage\": \"mineral stock with 1000 ml water\",\n     \
+    \ \"receiving_dose_ml\": 10\n    },\n    \"rationale\": \"The stored numeral belongs\
+    \ to the stock recipe, not an undiluted receiving-medium g/L claim. Reconstruct\
+    \ the named stock and dose. A hypothetical one-litre stock interpretation gives\
+    \ a 100-fold dilution at 10 ml per nominal litre, but source stock water is not\
+    \ independently asserted as measured make-up volume.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q26\",\n    \"component_or_context\": \"Mineral stock: NiCl2 x 6 H2O\",\n\
+    \    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"ingredients[18].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.024\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\",\n        \"rationale\": \"\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\",\n        \"\
+    field_path\": \"ingredients[18].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.024\",\n          \"unit\": \"G_PER_L\"\n        },\n  \
+    \      \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.024\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n     \
+    \ }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1001\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Mineral mixture stock table\",\n        \"exact_source_quote\"\
+    : \"NiCl2 x 6 H2O 0.024 g\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Main receiving dose\",\n        \"exact_source_quote\"\
+    : \"Mineral mixture 10.00 ml\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 0.024,\n      \"\
+    unit\": \"g\",\n      \"stage\": \"mineral stock with 1000 ml water\",\n     \
+    \ \"receiving_dose_ml\": 10\n    },\n    \"rationale\": \"The stored numeral belongs\
+    \ to the stock recipe, not an undiluted receiving-medium g/L claim. Reconstruct\
+    \ the named stock and dose. A hypothetical one-litre stock interpretation gives\
+    \ a 100-fold dilution at 10 ml per nominal litre, but source stock water is not\
+    \ independently asserted as measured make-up volume.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q27\",\n    \"component_or_context\": \"Mineral stock: Na2WO4 x 2 H2O\",\n\
+    \    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"ingredients[19].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.025\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\",\n        \"rationale\": \"\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\",\n        \"\
+    field_path\": \"ingredients[19].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.025\",\n          \"unit\": \"G_PER_L\"\n        },\n  \
+    \      \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.025\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n     \
+    \ }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1001\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Mineral mixture stock table\",\n        \"exact_source_quote\"\
+    : \"Na2WO4 x 2 H2O 0.025 g\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Main receiving dose\",\n        \"exact_source_quote\"\
+    : \"Mineral mixture 10.00 ml\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 0.025,\n      \"\
+    unit\": \"g\",\n      \"stage\": \"mineral stock with 1000 ml water\",\n     \
+    \ \"receiving_dose_ml\": 10\n    },\n    \"rationale\": \"The stored numeral belongs\
+    \ to the stock recipe, not an undiluted receiving-medium g/L claim. Reconstruct\
+    \ the named stock and dose. A hypothetical one-litre stock interpretation gives\
+    \ a 100-fold dilution at 10 ml per nominal litre, but source stock water is not\
+    \ independently asserted as measured make-up volume.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q28\",\n    \"component_or_context\": \"Mineral stock water\",\n    \"decision\"\
+    : \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\",\n     \
+    \   \"field_path\": \"solutions\",\n        \"stored\": null,\n        \"decision\"\
+    : \"add\",\n        \"rationale\": \"\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\",\n       \
+    \ \"source_locator\": \"Mineral mixture water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.000 ml\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 1000,\n      \"\
+    unit\": \"ml\",\n      \"stage\": \"mineral stock water\"\n    },\n    \"rationale\"\
+    : \"Keep this water separate from the 990 ml main water; the primary states water\
+    \ quantity.\"\n  },\n  {\n    \"quantity_id\": \"q29\",\n    \"component_or_context\"\
+    : \"Vitamin stock: Biotin\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n     \
+    \ }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1001\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Wolin vitamin stock table\",\n        \"exact_source_quote\"\
+    : \"Biotin 2.00 mg\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Receiving dose\",\n        \"exact_source_quote\"\
+    : \"Wolin's vitamin solution 10.00 ml\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 2,\n      \"unit\"\
+    : \"mg\",\n      \"stage\": \"vitamin stock with 1000 ml water\",\n      \"receiving_dose_ml\"\
+    : 10\n    },\n    \"rationale\": \"The local g/L numeral is the converted stock\
+    \ quantity at a nominal litre basis. It must not remain an undiluted main-medium\
+    \ rate. Preserve exact vitamin identity, stock preparation and receiving dose\
+    \ separately.\"\n  },\n  {\n    \"quantity_id\": \"q30\",\n    \"component_or_context\"\
+    : \"Vitamin stock: Folic acid\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n     \
+    \ }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1001\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Wolin vitamin stock table\",\n        \"exact_source_quote\"\
+    : \"Folic acid 2.00 mg\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Receiving dose\",\n        \"exact_source_quote\"\
+    : \"Wolin's vitamin solution 10.00 ml\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 2,\n      \"unit\"\
+    : \"mg\",\n      \"stage\": \"vitamin stock with 1000 ml water\",\n      \"receiving_dose_ml\"\
+    : 10\n    },\n    \"rationale\": \"The local g/L numeral is the converted stock\
+    \ quantity at a nominal litre basis. It must not remain an undiluted main-medium\
+    \ rate. Preserve exact vitamin identity, stock preparation and receiving dose\
+    \ separately.\"\n  },\n  {\n    \"quantity_id\": \"q31\",\n    \"component_or_context\"\
+    : \"Vitamin stock: Pyridoxine hydrochloride\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[22].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[22].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[22].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1001\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Wolin vitamin stock table\",\n        \"exact_source_quote\"\
+    : \"Pyridoxine hydrochloride 10.00 mg\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Receiving dose\",\n        \"exact_source_quote\"\
+    : \"Wolin's vitamin solution 10.00 ml\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 10,\n      \"unit\"\
+    : \"mg\",\n      \"stage\": \"vitamin stock with 1000 ml water\",\n      \"receiving_dose_ml\"\
+    : 10\n    },\n    \"rationale\": \"The local g/L numeral is the converted stock\
+    \ quantity at a nominal litre basis. It must not remain an undiluted main-medium\
+    \ rate. Preserve exact vitamin identity, stock preparation and receiving dose\
+    \ separately.\"\n  },\n  {\n    \"quantity_id\": \"q32\",\n    \"component_or_context\"\
+    : \"Vitamin stock: Thiamine HCl\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[23].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[23].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[23].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n     \
+    \ }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1001\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Wolin vitamin stock table\",\n        \"exact_source_quote\"\
+    : \"Thiamine HCl 5.00 mg\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Receiving dose\",\n        \"exact_source_quote\"\
+    : \"Wolin's vitamin solution 10.00 ml\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 5,\n      \"unit\"\
+    : \"mg\",\n      \"stage\": \"vitamin stock with 1000 ml water\",\n      \"receiving_dose_ml\"\
+    : 10\n    },\n    \"rationale\": \"The local g/L numeral is the converted stock\
+    \ quantity at a nominal litre basis. It must not remain an undiluted main-medium\
+    \ rate. Preserve exact vitamin identity, stock preparation and receiving dose\
+    \ separately.\"\n  },\n  {\n    \"quantity_id\": \"q33\",\n    \"component_or_context\"\
+    : \"Vitamin stock: Riboflavin\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[24].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[24].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[24].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n     \
+    \ }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1001\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Wolin vitamin stock table\",\n        \"exact_source_quote\"\
+    : \"Riboflavin 5.00 mg\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Receiving dose\",\n        \"exact_source_quote\"\
+    : \"Wolin's vitamin solution 10.00 ml\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 5,\n      \"unit\"\
+    : \"mg\",\n      \"stage\": \"vitamin stock with 1000 ml water\",\n      \"receiving_dose_ml\"\
+    : 10\n    },\n    \"rationale\": \"The local g/L numeral is the converted stock\
+    \ quantity at a nominal litre basis. It must not remain an undiluted main-medium\
+    \ rate. Preserve exact vitamin identity, stock preparation and receiving dose\
+    \ separately.\"\n  },\n  {\n    \"quantity_id\": \"q34\",\n    \"component_or_context\"\
+    : \"Vitamin stock: Nicotinic acid\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[25].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[25].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[25].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n     \
+    \ }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1001\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Wolin vitamin stock table\",\n        \"exact_source_quote\"\
+    : \"Nicotinic acid 5.00 mg\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Receiving dose\",\n        \"exact_source_quote\"\
+    : \"Wolin's vitamin solution 10.00 ml\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 5,\n      \"unit\"\
+    : \"mg\",\n      \"stage\": \"vitamin stock with 1000 ml water\",\n      \"receiving_dose_ml\"\
+    : 10\n    },\n    \"rationale\": \"The local g/L numeral is the converted stock\
+    \ quantity at a nominal litre basis. It must not remain an undiluted main-medium\
+    \ rate. Preserve exact vitamin identity, stock preparation and receiving dose\
+    \ separately.\"\n  },\n  {\n    \"quantity_id\": \"q35\",\n    \"component_or_context\"\
+    : \"Vitamin stock: Calcium D-(+)-pantothenate\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[26].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[26].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[26].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n     \
+    \ }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1001\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Wolin vitamin stock table\",\n        \"exact_source_quote\"\
+    : \"Calcium D-(+)-pantothenate 5.00 mg\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Receiving dose\",\n        \"exact_source_quote\"\
+    : \"Wolin's vitamin solution 10.00 ml\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 5,\n      \"unit\"\
+    : \"mg\",\n      \"stage\": \"vitamin stock with 1000 ml water\",\n      \"receiving_dose_ml\"\
+    : 10\n    },\n    \"rationale\": \"The local g/L numeral is the converted stock\
+    \ quantity at a nominal litre basis. It must not remain an undiluted main-medium\
+    \ rate. Preserve exact vitamin identity, stock preparation and receiving dose\
+    \ separately.\"\n  },\n  {\n    \"quantity_id\": \"q36\",\n    \"component_or_context\"\
+    : \"Vitamin stock: Vitamin B12\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[27].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0001\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n    \
+    \  },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[27].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0001\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n    \
+    \  },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[27].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0001\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n    \
+    \  }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Wolin vitamin stock table\",\n        \"exact_source_quote\"\
+    : \"Vitamin B12 0.10 mg\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Receiving dose\",\n        \"exact_source_quote\"\
+    : \"Wolin's vitamin solution 10.00 ml\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 0.1,\n      \"unit\"\
+    : \"mg\",\n      \"stage\": \"vitamin stock with 1000 ml water\",\n      \"receiving_dose_ml\"\
+    : 10\n    },\n    \"rationale\": \"The local g/L numeral is the converted stock\
+    \ quantity at a nominal litre basis. It must not remain an undiluted main-medium\
+    \ rate. Preserve exact vitamin identity, stock preparation and receiving dose\
+    \ separately.\"\n  },\n  {\n    \"quantity_id\": \"q37\",\n    \"component_or_context\"\
+    : \"Vitamin stock: p-Aminobenzoic acid\",\n    \"decision\": \"correct\",\n  \
+    \  \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[28].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[28].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[28].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n     \
+    \ }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1001\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Wolin vitamin stock table\",\n        \"exact_source_quote\"\
+    : \"p-Aminobenzoic acid 5.00 mg\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Receiving dose\",\n        \"exact_source_quote\"\
+    : \"Wolin's vitamin solution 10.00 ml\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 5,\n      \"unit\"\
+    : \"mg\",\n      \"stage\": \"vitamin stock with 1000 ml water\",\n      \"receiving_dose_ml\"\
+    : 10\n    },\n    \"rationale\": \"The local g/L numeral is the converted stock\
+    \ quantity at a nominal litre basis. It must not remain an undiluted main-medium\
+    \ rate. Preserve exact vitamin identity, stock preparation and receiving dose\
+    \ separately.\"\n  },\n  {\n    \"quantity_id\": \"q38\",\n    \"component_or_context\"\
+    : \"Vitamin stock: (DL)-alpha-Lipoic acid\",\n    \"decision\": \"correct\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[29].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[29].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[29].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n     \
+    \ }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1001\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Wolin vitamin stock table\",\n        \"exact_source_quote\"\
+    : \"(DL)-alpha-Lipoic acid 5.00 mg\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Receiving dose\",\n        \"exact_source_quote\"\
+    : \"Wolin's vitamin solution 10.00 ml\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 5,\n      \"unit\"\
+    : \"mg\",\n      \"stage\": \"vitamin stock with 1000 ml water\",\n      \"receiving_dose_ml\"\
+    : 10\n    },\n    \"rationale\": \"The local g/L numeral is the converted stock\
+    \ quantity at a nominal litre basis. It must not remain an undiluted main-medium\
+    \ rate. Preserve exact vitamin identity, stock preparation and receiving dose\
+    \ separately.\"\n  },\n  {\n    \"quantity_id\": \"q39\",\n    \"component_or_context\"\
+    : \"Vitamin stock water\",\n    \"decision\": \"add\",\n    \"local_fields\":\
+    \ [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\",\n     \
+    \   \"field_path\": \"solutions\",\n        \"stored\": null,\n        \"decision\"\
+    : \"add\",\n        \"rationale\": \"\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\",\n       \
+    \ \"source_locator\": \"Wolin vitamin water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 1000,\n      \"\
+    unit\": \"ml\",\n      \"stage\": \"vitamin stock water\"\n    },\n    \"rationale\"\
+    : \"Do not combine main and stock water or import unrelated parent141 recipe stages.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q40\",\n    \"component_or_context\": \"Source-declared\
+    \ final volume\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n     \
+    \ {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\",\n      \
+    \  \"field_path\": \"notes\",\n        \"stored\": \"Source: KOMODO ModelSEED\
+    \ | ID: 1001 | DSMZ Medium: 1001 (mediadive.medium:1001) | Aerobic: Yes\",\n \
+    \       \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"notes\",\n        \"stored\": \"Source: KOMODO ModelSEED\
+    \ | ID: 1001 | DSMZ Medium: 1001 (mediadive.medium:1001) | Aerobic: Yes\",\n \
+    \       \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\",\n  \
+    \      \"field_path\": \"notes\",\n        \"stored\": \"Source: DSMZ | Link:\
+    \ https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\",\n     \
+    \   \"decision\": \"add\",\n        \"rationale\": \"\"\n      }\n    ],\n   \
+    \ \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1001\",\n   \
+    \     \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Primary header\",\n        \"exact_source_quote\"\
+    : \"Final volume: 1000 ml\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"declared_final_volume\": 1000,\n\
+    \      \"unit\": \"ml\",\n      \"stage\": \"provider declaration\"\n    },\n\
+    \    \"rationale\": \"Preserve the explicit declaration together with the later\
+    \ stock-addition instructions; listed-liquid arithmetic is not an independent\
+    \ measured final volume.\"\n  },\n  {\n    \"quantity_id\": \"q41\",\n    \"component_or_context\"\
+    : \"Final pH\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\",\n \
+    \       \"field_path\": \"ph_value\",\n        \"stored\": 6.9,\n        \"decision\"\
+    : \"evidence_only\",\n        \"rationale\": \"\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 6.9,\n        \"\
+    decision\": \"evidence_only\",\n        \"rationale\": \"\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\",\n  \
+    \      \"field_path\": \"ph_value\",\n        \"stored\": 6.9,\n        \"decision\"\
+    : \"evidence_only\",\n        \"rationale\": \"\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\",\n       \
+    \ \"source_locator\": \"Primary header\",\n        \"exact_source_quote\": \"\
+    Final pH: 6.9\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"value\": 6.9,\n      \"stage\"\
+    : \"source final pH\"\n    },\n    \"rationale\": \"The existing final pH is supported.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q42\",\n    \"component_or_context\": \"Nitrogen\
+    \ gas fraction\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n     \
+    \ {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\",\n      \
+    \  \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\",\n\
+    \        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Sparge medium with 80% N2 and 20% CO2 gas mixture for 10 min Bubble the medium\
+    \ with N2:CO2 (80:20) to make anoxic.\",\n        \"decision\": \"evidence_only\"\
+    ,\n        \"rationale\": \"\"\n      }\n    ],\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Primary preparation step 2\",\n        \"exact_source_quote\"\
+    : \"2. Sparge medium with 80% N2 and 20% CO2 gas mixture for 10 min Bubble the\
+    \ medium\\nwith N2:CO2 (80:20) to make anoxic.\",\n        \"snapshot_sha256\"\
+    : \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\",\n    \
+    \    \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"value\": 80,\n      \"unit\"\
+    : \"%\",\n      \"stage\": \"basal preparation before post-autoclave additions\"\
+    \n    },\n    \"rationale\": \"The DSMZ owner already retains this numeric instruction\
+    \ and needs source evidence; the generated and KOMODO layers lack the preparation.\
+    \ Preserve bottle dispensing as such, not typed plate pouring. No incubation condition\
+    \ is inferred.\"\n  },\n  {\n    \"quantity_id\": \"q43\",\n    \"component_or_context\"\
+    : \"Carbon dioxide gas fraction\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\",\n\
+    \        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Sparge medium with 80% N2 and 20% CO2 gas mixture for 10 min Bubble the medium\
+    \ with N2:CO2 (80:20) to make anoxic.\",\n        \"decision\": \"evidence_only\"\
+    ,\n        \"rationale\": \"\"\n      }\n    ],\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Primary preparation step 2\",\n        \"exact_source_quote\"\
+    : \"2. Sparge medium with 80% N2 and 20% CO2 gas mixture for 10 min Bubble the\
+    \ medium\\nwith N2:CO2 (80:20) to make anoxic.\",\n        \"snapshot_sha256\"\
+    : \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\",\n    \
+    \    \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"value\": 20,\n      \"unit\"\
+    : \"%\",\n      \"stage\": \"basal preparation before post-autoclave additions\"\
+    \n    },\n    \"rationale\": \"The DSMZ owner already retains this numeric instruction\
+    \ and needs source evidence; the generated and KOMODO layers lack the preparation.\
+    \ Preserve bottle dispensing as such, not typed plate pouring. No incubation condition\
+    \ is inferred.\"\n  },\n  {\n    \"quantity_id\": \"q44\",\n    \"component_or_context\"\
+    : \"Gas sparging duration\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\",\n\
+    \        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Sparge medium with 80% N2 and 20% CO2 gas mixture for 10 min Bubble the medium\
+    \ with N2:CO2 (80:20) to make anoxic.\",\n        \"decision\": \"evidence_only\"\
+    ,\n        \"rationale\": \"\"\n      }\n    ],\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Primary preparation step 2\",\n        \"exact_source_quote\"\
+    : \"2. Sparge medium with 80% N2 and 20% CO2 gas mixture for 10 min Bubble the\
+    \ medium\\nwith N2:CO2 (80:20) to make anoxic.\",\n        \"snapshot_sha256\"\
+    : \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\",\n    \
+    \    \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"value\": 10,\n      \"unit\"\
+    : \"min\",\n      \"stage\": \"basal preparation before post-autoclave additions\"\
+    \n    },\n    \"rationale\": \"The DSMZ owner already retains this numeric instruction\
+    \ and needs source evidence; the generated and KOMODO layers lack the preparation.\
+    \ Preserve bottle dispensing as such, not typed plate pouring. No incubation condition\
+    \ is inferred.\"\n  },\n  {\n    \"quantity_id\": \"q45\",\n    \"component_or_context\"\
+    : \"Adjustment pH range\",\n    \"decision\": \"add\",\n    \"local_fields\":\
+    \ [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\",\n\
+    \        \"field_path\": \"preparation_steps[2].description\",\n        \"stored\"\
+    : \"Adjust pH to 6.8-7.0.\",\n        \"decision\": \"evidence_only\",\n     \
+    \   \"rationale\": \"\"\n      },\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ph_range\",\n        \"stored\": {\n          \"\
+    min\": 6.8,\n          \"max\": 7.0\n        },\n        \"decision\": \"evidence_only\"\
+    ,\n        \"rationale\": \"\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ph_range\",\n        \"stored\": {\n          \"\
+    min\": 6.8,\n          \"max\": 7.0\n        },\n        \"decision\": \"evidence_only\"\
+    ,\n        \"rationale\": \"\"\n      }\n    ],\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Primary preparation step 3\",\n        \"exact_source_quote\"\
+    : \"3. Adjust pH to 6.8-7.0.\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"value\": [\n        6.8,\n\
+    \        7.0\n      ],\n      \"unit\": \"pH\",\n      \"stage\": \"basal preparation\
+    \ before post-autoclave additions\"\n    },\n    \"rationale\": \"The DSMZ owner\
+    \ already retains this numeric instruction and needs source evidence; the generated\
+    \ and KOMODO layers lack the preparation. Preserve bottle dispensing as such,\
+    \ not typed plate pouring. No incubation condition is inferred.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q46\",\n    \"component_or_context\": \"Medium per serum\
+    \ bottle\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"preparation_steps\",\n        \"stored\": null,\n        \"decision\": \"\
+    add\",\n        \"rationale\": \"\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"preparation_steps\",\n        \"stored\": null,\n        \"decision\": \"\
+    add\",\n        \"rationale\": \"\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/basal_medium.yaml\",\n        \"field_path\": \"\
+    preparation_steps[3].description\",\n        \"stored\": \"Dispense into serum\
+    \ bottles (using 10ml medium in 100 ml bottles with N2:CO2 headspace).\",\n  \
+    \      \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1001\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Primary preparation step 4\",\n        \"exact_source_quote\"\
+    : \"4. Dispense into serum bottles (using 10ml medium in 100 ml bottles with N2:CO2\\\
+    nheadspace).\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"value\": 10,\n      \"unit\"\
+    : \"ml\",\n      \"stage\": \"basal preparation before post-autoclave additions\"\
+    \n    },\n    \"rationale\": \"The DSMZ owner already retains this numeric instruction\
+    \ and needs source evidence; the generated and KOMODO layers lack the preparation.\
+    \ Preserve bottle dispensing as such, not typed plate pouring. No incubation condition\
+    \ is inferred.\"\n  },\n  {\n    \"quantity_id\": \"q47\",\n    \"component_or_context\"\
+    : \"Serum bottle capacity\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\",\n\
+    \        \"field_path\": \"preparation_steps[3].description\",\n        \"stored\"\
+    : \"Dispense into serum bottles (using 10ml medium in 100 ml bottles with N2:CO2\
+    \ headspace).\",\n        \"decision\": \"evidence_only\",\n        \"rationale\"\
+    : \"\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Primary preparation step 4\",\n        \"exact_source_quote\"\
+    : \"4. Dispense into serum bottles (using 10ml medium in 100 ml bottles with N2:CO2\\\
+    nheadspace).\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"value\": 100,\n      \"unit\"\
+    : \"ml\",\n      \"stage\": \"basal preparation before post-autoclave additions\"\
+    \n    },\n    \"rationale\": \"The DSMZ owner already retains this numeric instruction\
+    \ and needs source evidence; the generated and KOMODO layers lack the preparation.\
+    \ Preserve bottle dispensing as such, not typed plate pouring. No incubation condition\
+    \ is inferred.\"\n  },\n  {\n    \"quantity_id\": \"q48\",\n    \"component_or_context\"\
+    : \"Autoclave temperature\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\",\n\
+    \        \"field_path\": \"preparation_steps[4].description\",\n        \"stored\"\
+    : \"Autoclave at 121 °C for 15 min.\",\n        \"decision\": \"evidence_only\"\
+    ,\n        \"rationale\": \"\"\n      }\n    ],\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Primary preparation step 5\",\n        \"exact_source_quote\"\
+    : \"5. Autoclave at 121 °C for 15 min.\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"value\": 121,\n      \"unit\"\
+    : \"°C\",\n      \"stage\": \"basal preparation before post-autoclave additions\"\
+    \n    },\n    \"rationale\": \"The DSMZ owner already retains this numeric instruction\
+    \ and needs source evidence; the generated and KOMODO layers lack the preparation.\
+    \ Preserve bottle dispensing as such, not typed plate pouring. No incubation condition\
+    \ is inferred.\"\n  },\n  {\n    \"quantity_id\": \"q49\",\n    \"component_or_context\"\
+    : \"Autoclave duration\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/BASAL_MEDIUM.yaml\",\n \
+    \       \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n  \
+    \      \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\",\n\
+    \        \"field_path\": \"preparation_steps[4].description\",\n        \"stored\"\
+    : \"Autoclave at 121 °C for 15 min.\",\n        \"decision\": \"evidence_only\"\
+    ,\n        \"rationale\": \"\"\n      }\n    ],\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Primary preparation step 5\",\n        \"exact_source_quote\"\
+    : \"5. Autoclave at 121 °C for 15 min.\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"value\": 15,\n      \"unit\"\
+    : \"min\",\n      \"stage\": \"basal preparation before post-autoclave additions\"\
+    \n    },\n    \"rationale\": \"The DSMZ owner already retains this numeric instruction\
+    \ and needs source evidence; the generated and KOMODO layers lack the preparation.\
+    \ Preserve bottle dispensing as such, not typed plate pouring. No incubation condition\
+    \ is inferred.\"\n  },\n  {\n    \"quantity_id\": \"q50\",\n    \"component_or_context\"\
+    : \"Post-autoclave generic dose instruction\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/basal_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[5].description\",\n        \"stored\"\
+    : \"After autoclaving, add the following solutions to a final volume of 10ml/L\
+    \ each.\",\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"\
+    \"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1001\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1001.pdf\"\
+    ,\n        \"source_locator\": \"Preparation step 6\",\n        \"exact_source_quote\"\
+    : \"6. After autoclaving, add the following solutions to a final volume of 10ml/L\
+    \ each.\",\n        \"snapshot_sha256\": \"af3dd674b0765aaf7789bc1faf4288a40547b80393b593706c0863491ecf775c\"\
+    ,\n        \"parsed_text_sha256\": \"2d74d9f2c143480ad66bbde488f9596e41528d7e47d04abcfcdbcd2f3ff3e527\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:14:59.909942Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"dose\": 10,\n      \"unit\"\
+    : \"ml/L\",\n      \"stage\": \"post-autoclave instruction preceding the three\
+    \ chemical stock rows and separate vitamin row\"\n    },\n    \"rationale\": \"\
+    The owner already retains this generic numeric instruction. Keep it with the exact\
+    \ following table; the three chemical rows explicitly use ml/L, while the vitamin\
+    \ row separately prints 10 ml. This does not replace missing stock identities\
+    \ or establish measured post-addition volume.\"\n  }\n]"
+findings:
+- finding_id: f1
+  issue_key: culturemech.003498.stock-stage-collapse
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Mineral and vitamin stock rates are represented as main-medium rates
+  description: All 24 stock-solute amounts appear as undiluted main ingredients, and
+    the named stocks, water inputs and receiving doses are missing. This materially
+    changes the medium; it is not merely a preference for nested formatting.
+  target_ids:
+  - CultureMech:003498
+  field_paths:
+  - ingredients[6:30]
+  - solutions
+  - ingredients[0]
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - primary
+  - mineral-stock
+  - vitamin-stock
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/basal_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.003498.ferric-dose
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Ferric chloride mass disagrees with the source stock dose
+  description: The source specifies 0.5 M FeCl3·6H2O at 10 ml/L. This is 5 mmol per
+    nominal litre, approximately 1.35147 g using pinned CHEBI mass270.294, while all
+    local layers store 13.5148 g/L. Final-volume ambiguity cannot explain this approximately
+    tenfold discrepancy.
+  target_ids:
+  - CultureMech:003498
+  field_paths:
+  - ingredients[5].concentration
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - chemical-stocks
+  - chebi86254
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/basal_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.003498.hydrate-grounding
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Two supplied hydrates use anhydrous identifiers
+  description: The primary names NaH2PO4 monohydrate and NiCl2 hexahydrate. Their
+    asserted primary and secondary terms describe anhydrous sodium dihydrogenphosphate
+    and nickel dichloride. Other supported hydrates and D-pantothenate must remain
+    unchanged.
+  target_ids:
+  - CultureMech:003498
+  field_paths:
+  - ingredients[2].term
+  - ingredients[2].mediaingredientmech_chebi_term
+  - ingredients[18].term
+  - ingredients[18].mediaingredientmech_chebi_term
+  evidence_ids:
+  - primary
+  - chebi37585
+  - chebi34887
+  - grounding-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/basal_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: culturemech.003498.preparation-operation
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source preparation is missing or incorrectly typed
+  description: The target and KOMODO owner omit the staged anaerobic bottle preparation.
+    The DSMZ owner retains its numeric text but incorrectly types serum-bottle dispensing
+    as POUR_PLATES and does not reconstruct the named post-autoclave stocks.
+  target_ids:
+  - CultureMech:003498
+  field_paths:
+  - preparation_steps
+  - notes
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - prep
+  - chemical-stocks
+  - catalog
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/basal_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Reconstruct the two named stocks, explicit water inputs and receiving
+    doses in both owners; preserve basal versus post-autoclave bicarbonate and source-declared
+    volume. Attach exact stage-specific evidence before regeneration.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:003498
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/basal_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Represent the 0.5 M stock and 10 ml/L dose explicitly; if a derived
+    receiving mass is retained, label its basis and calculation separately.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:003498
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/basal_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Resolve exact supplied-form identifiers and secondary correspondence
+    with evidence, or explicitly retain an unresolved hydrate distinction without
+    inventing IDs.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:003498
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/basal_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Add exact preparation to missing layers and correct the owner operation
+    type while preserving supported text. Attribute catalog oxygen metadata separately
+    from source requirements; retain out-of-direct-light storage.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:003498
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/basal_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Optional mediadive1001api access failed (HTTP 503); exact DSM1001 primary and scoped
+  parent vitamin source are available, so this failure alone does not require partial
+  coverage.
+- Optional mediadive1001api_retry access failed (HTTP 503); exact DSM1001 primary
+  and scoped parent vitamin source are available, so this failure alone does not require
+  partial coverage.
+- Optional komodo1001detail access failed (HTTP 403); exact DSM1001 primary and scoped
+  parent vitamin source are available, so this failure alone does not require partial
+  coverage.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-040
+- generated-medium
+```

@@ -1,0 +1,2664 @@
+# Source and formulation review: baf_medium (CultureMech:005176)
+
+- Review: 20261021T223406Z-culturemech-005176-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T22:32:16Z
+- Finished UTC: 2026-10-21T22:34:06Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+DSMZ 392 confirms the nominal masses and pH of BAF medium, but all local layers omit the 1000 ml water input. The DSMZ owner adds an unverified sterilization cycle. Its 28 historical amount claims remain derivative-only because the cited October 7 API response was not recovered; current primary agreement does not authenticate that old response.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 391; batch 040 item 1 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding thirty-nine task batches contain 390 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 393 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 6a639c4b597e95b6061f2d1c7baa04de84ba2f00.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:005176 | data/merge_yaml/merged/BAF_Medium.yaml | generated | baf_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:005176 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:005176 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-040/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch040/391/strict.tsv |
+| validate-terms | passed | True | CultureMech:005176 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:005176 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:005176 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: mediadive392api | unavailable | True | CultureMech:005176 | Required authentication of the cited October 7 API392 response remains unavailable after the bounded local raw search. Current access and its separate retry returned HTTP 503. Current PDF agreement supports current formulation, not historical response authenticity; review coverage is partial for this required provenance check. |
+| Exact source content access: mediadive392api_retry | unavailable | False | CultureMech:005176 | Separate current API392 retry returned HTTP 503; it is preserved independently of the initial attempt. |
+| Exact source content access: komodo392detail | unavailable | False | CultureMech:005176 | Optional exact KOMODO detail access returned HTTP 403. The available catalog establishes identity metadata only. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:005176.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Accession and maintained-source identity
+
+identity: supported. Targets: CultureMech:005176.
+
+The target and two exact contributors represent DSMZ/KOMODO 392, with matching local recipe signatures and reciprocal source-duplicate relationships. The current primary and exact catalog row support accession identity; title and catalog oxygen metadata do not establish organism growth.
+
+### Chemical forms and current secondary keys
+
+grounding: supported. Targets: CultureMech:005176.
+
+All 12 distinct primary and CHEBI-based secondary IDs have matching current nonobsolete labels. All 12 asserted current mediaingredientmech_chebi_term keys have exact preferred mapped rows in the pinned MIM index; no legacy MIM key is asserted. Primary and secondary target linkage each cover 12/14 ingredients (85.71% on a 0–100 linkage scale), not a chemical-accuracy score. Mixture gaps are not wrong identifiers.
+
+### pH, sterilization and environmental scope
+
+completeness: concern. Targets: CultureMech:005176.
+
+The pH range is supported. The DSMZ owner’s 121 °C for 15 min is absent from the available primary, so its provenance remains unverified. COMPLEX/UNDEFINED and SOLID_AGAR fit peptone, yeast extract and agar. No cultivation temperature, atmosphere or strain growth is established by the recipe title or the catalog Aerobic: No flag.
+
+### Historical amount claims versus current evidence
+
+evidence: unknown. Targets: CultureMech:005176.
+
+The 28 owner amount claims match exact record-qualified derivative plans, but their cited API SHA 764900b96abe66cabc2a19ea0d71bed6853f7fcd56dae2c3cdd41befb3102bf8 was not recovered in the documented bounded ignored-inclusive report/cache search. The catalog identity claim has matching raw bytes/hash from a later capture; its retrieval date is not the historical claim date. Current primary agreement does not authenticate the old API.
+
+### Chronology and current writer boundaries
+
+provenance: concern. Targets: CultureMech:005176.
+
+Later owner evidence is not present in this generated target. Preserve all original historical claims, bounded search results and timestamp defects; add current evidence separately. Current code and source-file equality do not prove the historical cause of missing fields.
+
+### Append-only history and timestamp shape
+
+provenance: concern. Targets: CultureMech:005176.
+
+27 timestamp instances inspected; 4 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:005176.
+
+18 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "quantity_id": "q1",
+    "component_or_context": "Glucose",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BAF_Medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/baf_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz392",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf",
+        "source_locator": "DSM392 main table row 1",
+        "exact_source_quote": "Glucose 30.0 g",
+        "snapshot_sha256": "e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8",
+        "parsed_text_sha256": "47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098",
+        "accessed_at": "2026-10-21T22:15:00.346660Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 30,
+      "unit": "g",
+      "stage": "main nominal recipe with 1000 ml water",
+      "measured_final_volume": null
+    },
+    "rationale": "The stored g/L numeral agrees with conversion of the printed batch mass at the nominal one-litre recipe basis. Preserve that basis explicitly; it is not proof of a measured final volume. Target has no attached amount evidence; the two owners have matching historical claim text whose cited raw API response remains unavailable. Attach the current primary as separate evidence without rewriting the old claim."
+  },
+  {
+    "quantity_id": "q2",
+    "component_or_context": "Peptone",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BAF_Medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/baf_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz392",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf",
+        "source_locator": "DSM392 main table row 2",
+        "exact_source_quote": "Peptone 2.0 g",
+        "snapshot_sha256": "e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8",
+        "parsed_text_sha256": "47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098",
+        "accessed_at": "2026-10-21T22:15:00.346660Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 2,
+      "unit": "g",
+      "stage": "main nominal recipe with 1000 ml water",
+      "measured_final_volume": null
+    },
+    "rationale": "The stored g/L numeral agrees with conversion of the printed batch mass at the nominal one-litre recipe basis. Preserve that basis explicitly; it is not proof of a measured final volume. Target has no attached amount evidence; the two owners have matching historical claim text whose cited raw API response remains unavailable. Attach the current primary as separate evidence without rewriting the old claim."
+  },
+  {
+    "quantity_id": "q3",
+    "component_or_context": "Yeast extract",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BAF_Medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/baf_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz392",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf",
+        "source_locator": "DSM392 main table row 3",
+        "exact_source_quote": "Yeast extract 0.2 g",
+        "snapshot_sha256": "e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8",
+        "parsed_text_sha256": "47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098",
+        "accessed_at": "2026-10-21T22:15:00.346660Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 0.2,
+      "unit": "g",
+      "stage": "main nominal recipe with 1000 ml water",
+      "measured_final_volume": null
+    },
+    "rationale": "The stored g/L numeral agrees with conversion of the printed batch mass at the nominal one-litre recipe basis. Preserve that basis explicitly; it is not proof of a measured final volume. Target has no attached amount evidence; the two owners have matching historical claim text whose cited raw API response remains unavailable. Attach the current primary as separate evidence without rewriting the old claim."
+  },
+  {
+    "quantity_id": "q4",
+    "component_or_context": "KH2PO4",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BAF_Medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/baf_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz392",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf",
+        "source_locator": "DSM392 main table row 4",
+        "exact_source_quote": "KH2PO4 0.5 g",
+        "snapshot_sha256": "e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8",
+        "parsed_text_sha256": "47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098",
+        "accessed_at": "2026-10-21T22:15:00.346660Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 0.5,
+      "unit": "g",
+      "stage": "main nominal recipe with 1000 ml water",
+      "measured_final_volume": null
+    },
+    "rationale": "The stored g/L numeral agrees with conversion of the printed batch mass at the nominal one-litre recipe basis. Preserve that basis explicitly; it is not proof of a measured final volume. Target has no attached amount evidence; the two owners have matching historical claim text whose cited raw API response remains unavailable. Attach the current primary as separate evidence without rewriting the old claim."
+  },
+  {
+    "quantity_id": "q5",
+    "component_or_context": "MgSO4 x 7 H2O",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BAF_Medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/baf_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz392",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf",
+        "source_locator": "DSM392 main table row 5",
+        "exact_source_quote": "MgSO4 x 7 H2O 0.5 g",
+        "snapshot_sha256": "e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8",
+        "parsed_text_sha256": "47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098",
+        "accessed_at": "2026-10-21T22:15:00.346660Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 0.5,
+      "unit": "g",
+      "stage": "main nominal recipe with 1000 ml water",
+      "measured_final_volume": null
+    },
+    "rationale": "The stored g/L numeral agrees with conversion of the printed batch mass at the nominal one-litre recipe basis. Preserve that basis explicitly; it is not proof of a measured final volume. Target has no attached amount evidence; the two owners have matching historical claim text whose cited raw API response remains unavailable. Attach the current primary as separate evidence without rewriting the old claim."
+  },
+  {
+    "quantity_id": "q6",
+    "component_or_context": "FeCl3 x 6 H2O",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BAF_Medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/baf_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz392",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf",
+        "source_locator": "DSM392 main table row 6",
+        "exact_source_quote": "FeCl3 x 6 H2O 10.0 mg",
+        "snapshot_sha256": "e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8",
+        "parsed_text_sha256": "47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098",
+        "accessed_at": "2026-10-21T22:15:00.346660Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 10,
+      "unit": "mg",
+      "stage": "main nominal recipe with 1000 ml water",
+      "measured_final_volume": null
+    },
+    "rationale": "The stored g/L numeral agrees with conversion of the printed batch mass at the nominal one-litre recipe basis. Preserve that basis explicitly; it is not proof of a measured final volume. Target has no attached amount evidence; the two owners have matching historical claim text whose cited raw API response remains unavailable. Attach the current primary as separate evidence without rewriting the old claim."
+  },
+  {
+    "quantity_id": "q7",
+    "component_or_context": "ZnSO4 x 7 H2O",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BAF_Medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/baf_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz392",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf",
+        "source_locator": "DSM392 main table row 7",
+        "exact_source_quote": "ZnSO4 x 7 H2O 1.0 mg",
+        "snapshot_sha256": "e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8",
+        "parsed_text_sha256": "47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098",
+        "accessed_at": "2026-10-21T22:15:00.346660Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 1,
+      "unit": "mg",
+      "stage": "main nominal recipe with 1000 ml water",
+      "measured_final_volume": null
+    },
+    "rationale": "The stored g/L numeral agrees with conversion of the printed batch mass at the nominal one-litre recipe basis. Preserve that basis explicitly; it is not proof of a measured final volume. Target has no attached amount evidence; the two owners have matching historical claim text whose cited raw API response remains unavailable. Attach the current primary as separate evidence without rewriting the old claim."
+  },
+  {
+    "quantity_id": "q8",
+    "component_or_context": "MnSO4",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BAF_Medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/baf_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz392",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf",
+        "source_locator": "DSM392 main table row 8",
+        "exact_source_quote": "MnSO4 5.0 mg",
+        "snapshot_sha256": "e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8",
+        "parsed_text_sha256": "47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098",
+        "accessed_at": "2026-10-21T22:15:00.346660Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 5,
+      "unit": "mg",
+      "stage": "main nominal recipe with 1000 ml water",
+      "measured_final_volume": null
+    },
+    "rationale": "The stored g/L numeral agrees with conversion of the printed batch mass at the nominal one-litre recipe basis. Preserve that basis explicitly; it is not proof of a measured final volume. Target has no attached amount evidence; the two owners have matching historical claim text whose cited raw API response remains unavailable. Attach the current primary as separate evidence without rewriting the old claim."
+  },
+  {
+    "quantity_id": "q9",
+    "component_or_context": "CaCl2 x 2 H2O",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BAF_Medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/baf_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz392",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf",
+        "source_locator": "DSM392 main table row 9",
+        "exact_source_quote": "CaCl2 x 2 H2O 100.0 mg",
+        "snapshot_sha256": "e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8",
+        "parsed_text_sha256": "47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098",
+        "accessed_at": "2026-10-21T22:15:00.346660Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 100,
+      "unit": "mg",
+      "stage": "main nominal recipe with 1000 ml water",
+      "measured_final_volume": null
+    },
+    "rationale": "The stored g/L numeral agrees with conversion of the printed batch mass at the nominal one-litre recipe basis. Preserve that basis explicitly; it is not proof of a measured final volume. Target has no attached amount evidence; the two owners have matching historical claim text whose cited raw API response remains unavailable. Attach the current primary as separate evidence without rewriting the old claim."
+  },
+  {
+    "quantity_id": "q10",
+    "component_or_context": "Thiamine HCl",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BAF_Medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "5e-05",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "5e-05",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/baf_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "5e-05",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz392",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf",
+        "source_locator": "DSM392 main table row 10",
+        "exact_source_quote": "Thiamin HCl 50.0 μg",
+        "snapshot_sha256": "e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8",
+        "parsed_text_sha256": "47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098",
+        "accessed_at": "2026-10-21T22:15:00.346660Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 50,
+      "unit": "μg",
+      "stage": "main nominal recipe with 1000 ml water",
+      "measured_final_volume": null
+    },
+    "rationale": "The stored g/L numeral agrees with conversion of the printed batch mass at the nominal one-litre recipe basis. Preserve that basis explicitly; it is not proof of a measured final volume. Target has no attached amount evidence; the two owners have matching historical claim text whose cited raw API response remains unavailable. Attach the current primary as separate evidence without rewriting the old claim."
+  },
+  {
+    "quantity_id": "q11",
+    "component_or_context": "Biotin",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BAF_Medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "1e-06",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "1e-06",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/baf_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "1e-06",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz392",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf",
+        "source_locator": "DSM392 main table row 11",
+        "exact_source_quote": "Biotin 1.0 μg",
+        "snapshot_sha256": "e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8",
+        "parsed_text_sha256": "47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098",
+        "accessed_at": "2026-10-21T22:15:00.346660Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 1,
+      "unit": "μg",
+      "stage": "main nominal recipe with 1000 ml water",
+      "measured_final_volume": null
+    },
+    "rationale": "The stored g/L numeral agrees with conversion of the printed batch mass at the nominal one-litre recipe basis. Preserve that basis explicitly; it is not proof of a measured final volume. Target has no attached amount evidence; the two owners have matching historical claim text whose cited raw API response remains unavailable. Attach the current primary as separate evidence without rewriting the old claim."
+  },
+  {
+    "quantity_id": "q12",
+    "component_or_context": "Folic acid",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BAF_Medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.0001",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.0001",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/baf_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.0001",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz392",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf",
+        "source_locator": "DSM392 main table row 12",
+        "exact_source_quote": "Folic acid 100.0 μg",
+        "snapshot_sha256": "e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8",
+        "parsed_text_sha256": "47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098",
+        "accessed_at": "2026-10-21T22:15:00.346660Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 100,
+      "unit": "μg",
+      "stage": "main nominal recipe with 1000 ml water",
+      "measured_final_volume": null
+    },
+    "rationale": "The stored g/L numeral agrees with conversion of the printed batch mass at the nominal one-litre recipe basis. Preserve that basis explicitly; it is not proof of a measured final volume. Target has no attached amount evidence; the two owners have matching historical claim text whose cited raw API response remains unavailable. Attach the current primary as separate evidence without rewriting the old claim."
+  },
+  {
+    "quantity_id": "q13",
+    "component_or_context": "Inositol",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BAF_Medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "5e-05",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "5e-05",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/baf_medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "5e-05",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz392",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf",
+        "source_locator": "DSM392 main table row 13",
+        "exact_source_quote": "Inositol 50.0 μg",
+        "snapshot_sha256": "e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8",
+        "parsed_text_sha256": "47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098",
+        "accessed_at": "2026-10-21T22:15:00.346660Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 50,
+      "unit": "μg",
+      "stage": "main nominal recipe with 1000 ml water",
+      "measured_final_volume": null
+    },
+    "rationale": "The stored g/L numeral agrees with conversion of the printed batch mass at the nominal one-litre recipe basis. Preserve that basis explicitly; it is not proof of a measured final volume. Target has no attached amount evidence; the two owners have matching historical claim text whose cited raw API response remains unavailable. Attach the current primary as separate evidence without rewriting the old claim."
+  },
+  {
+    "quantity_id": "q14",
+    "component_or_context": "Agar",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BAF_Medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/baf_medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz392",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf",
+        "source_locator": "DSM392 main table row 14",
+        "exact_source_quote": "Agar 15.0 g",
+        "snapshot_sha256": "e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8",
+        "parsed_text_sha256": "47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098",
+        "accessed_at": "2026-10-21T22:15:00.346660Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 15,
+      "unit": "g",
+      "stage": "main nominal recipe with 1000 ml water",
+      "measured_final_volume": null
+    },
+    "rationale": "The stored g/L numeral agrees with conversion of the printed batch mass at the nominal one-litre recipe basis. Preserve that basis explicitly; it is not proof of a measured final volume. Target has no attached amount evidence; the two owners have matching historical claim text whose cited raw API response remains unavailable. Attach the current primary as separate evidence without rewriting the old claim."
+  },
+  {
+    "quantity_id": "q15",
+    "component_or_context": "Main distilled water",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BAF_Medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/baf_medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz392",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf",
+        "source_locator": "Main water row",
+        "exact_source_quote": "Distilled water 1000.0 ml",
+        "snapshot_sha256": "e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8",
+        "parsed_text_sha256": "47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098",
+        "accessed_at": "2026-10-21T22:15:00.346660Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 1000,
+      "unit": "ml",
+      "stage": "main batch water input",
+      "make_up_to_volume_claim": false
+    },
+    "rationale": "All three layers omit the source water input. The primary states water amount, not a separate make-up or measured-final-volume instruction."
+  },
+  {
+    "quantity_id": "q16",
+    "component_or_context": "Source pH range",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BAF_Medium.yaml",
+        "field_path": "ph_range",
+        "stored": {
+          "min": 5.8,
+          "max": 6.3
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml",
+        "field_path": "ph_range",
+        "stored": {
+          "min": 5.8,
+          "max": 6.3
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/baf_medium.yaml",
+        "field_path": "ph_range",
+        "stored": {
+          "min": 5.8,
+          "max": 6.3
+        },
+        "decision": "evidence_only",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz392",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf",
+        "source_locator": "Final line",
+        "exact_source_quote": "pH 5.8 - 6.3.",
+        "snapshot_sha256": "e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8",
+        "parsed_text_sha256": "47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098",
+        "accessed_at": "2026-10-21T22:15:00.346660Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "min": 5.8,
+      "max": 6.3
+    },
+    "rationale": "The existing range matches the primary; attach exact source support."
+  },
+  {
+    "quantity_id": "q17",
+    "component_or_context": "Owner sterilization temperature",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/baf_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "pH 5.8 - 6.3.   Sterilize at 121°C for 15 min.",
+        "decision": "unsupported",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz392",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf",
+        "source_locator": "Complete single-page source; no sterilization instruction",
+        "exact_source_quote": "© 2007 DSMZ GmbH - All rights reserved \n392. BAF Medium \n \n \n Glucose 30.0 g \n Peptone 2.0 g \n Yeast extract 0.2 g \n KH2PO4 0.5 g \n MgSO4 x 7 H2O 0.5 g \n FeCl3 x 6 H2O 10.0 mg \n ZnSO4 x 7 H2O 1.0 mg \n MnSO4 5.0 mg \n CaCl2 x 2 H2O 100.0 mg \n Thiamin HCl 50.0 μg \n Biotin 1.0 μg \n Folic acid 100.0 μg \n Inositol 50.0 μg \n Agar 15.0 g \n Distilled water 1000.0 ml \npH 5.8 - 6.3.",
+        "snapshot_sha256": "e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8",
+        "parsed_text_sha256": "47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098",
+        "accessed_at": "2026-10-21T22:15:00.346660Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "local_assertion": 121,
+      "unit": "°C",
+      "source_value": null,
+      "stage": "sterilization"
+    },
+    "rationale": "The owner states this cycle, but the complete available primary does not. The unrecovered historical API cannot authenticate it. Do not propagate it as a collection-confirmed protocol or invent a substitute."
+  },
+  {
+    "quantity_id": "q18",
+    "component_or_context": "Owner sterilization duration",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/baf_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "pH 5.8 - 6.3.   Sterilize at 121°C for 15 min.",
+        "decision": "unsupported",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz392",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf",
+        "source_locator": "Complete single-page source; no sterilization instruction",
+        "exact_source_quote": "© 2007 DSMZ GmbH - All rights reserved \n392. BAF Medium \n \n \n Glucose 30.0 g \n Peptone 2.0 g \n Yeast extract 0.2 g \n KH2PO4 0.5 g \n MgSO4 x 7 H2O 0.5 g \n FeCl3 x 6 H2O 10.0 mg \n ZnSO4 x 7 H2O 1.0 mg \n MnSO4 5.0 mg \n CaCl2 x 2 H2O 100.0 mg \n Thiamin HCl 50.0 μg \n Biotin 1.0 μg \n Folic acid 100.0 μg \n Inositol 50.0 μg \n Agar 15.0 g \n Distilled water 1000.0 ml \npH 5.8 - 6.3.",
+        "snapshot_sha256": "e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8",
+        "parsed_text_sha256": "47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098",
+        "accessed_at": "2026-10-21T22:15:00.346660Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "local_assertion": 15,
+      "unit": "min",
+      "source_value": null,
+      "stage": "sterilization"
+    },
+    "rationale": "The owner states this cycle, but the complete available primary does not. The unrecovered historical API cannot authenticate it. Do not propagate it as a collection-confirmed protocol or invent a substitute."
+  }
+]
+
+## Findings
+
+### f1: The primary water input is missing
+
+major / open / confirmed; issue key: culturemech.005176.missing-water.
+
+All local layers omit the explicitly listed 1000 ml distilled water. The retained solute rates alone do not represent this source quantity or its nominal batch basis.
+
+### f2: The owner sterilization cycle lacks authenticated source support
+
+major / open / confirmed; issue key: culturemech.005176.unverified-cycle.
+
+The DSMZ owner asserts 121 °C for 15 min, but the current exact primary gives no cycle and the cited historical API is unavailable. This is unsupported source attribution, not evidence that the procedure itself is experimentally unsuitable.
+
+### f3: Current amount support and nominal batch basis are not attached
+
+minor / open / confirmed; issue key: culturemech.005176.amount-evidence-basis.
+
+The target has no attached claim-level amounts, while owner claims depend on unrecovered historical raw bytes. The current primary supports the listed nominal masses and unit conversions but not a separately measured final volume.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Add the literal water input and its source stage in both maintained owners, retaining the absence of a measured final-volume statement; regenerate only after authorized owner curation.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Recover supporting collection evidence or qualify the owner cycle as unverified; do not copy it into the target as a verified default.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Attach exact current primary snippets with explicit batch basis; preserve historical objects and their authentication limits rather than relabeling derivative matches as raw verification.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/BAF_Medium.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-1 | data/normalized_yaml/bacterial/baf_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/BAF_Medium.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/BAF_Medium.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch040/391/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-040/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch040/391/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/BAF_Medium.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/BAF_Medium.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml:1:id: CultureMech:005176<br>./data/merge_yaml/merged/BAF_Medium.yaml:1:id: CultureMech:005176<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch040/source-preflight-bound/391/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 17 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| primary | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf; Complete DSMZ 392 table and pH line | supports | Exact primary formulation with 14 solutes, water and pH, without an explicit measured final volume or sterilization cycle. |
+| ph-source | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf; Final line | supports | The primary specifies pH 5.8–6.3. |
+| catalog | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; Exact accession 392 row and seven-column header | supports | KOMODO accession and DSMZ 392 linkage are identity metadata. Aerobic: No is retained as catalog metadata and is not evidence of a required anoxic preparation. Retrieval date is the captured October 19 date, distinct from the attached October 7 claim date. |
+| grounding-inventory | /private/tmp/culturemech-review-work-batch040/391/grounding-inventory.json; Exact local term/history slots and bound source authentication ledger | context_only | Complete exact-field inventory; current metadata, historical evidence and source forms remain distinct. |
+| history-inventory | /private/tmp/culturemech-review-work-batch040/391/history-inventory.json; Exact local term/history slots and bound source authentication ledger | context_only | Complete exact-field inventory; current metadata, historical evidence and source forms remain distinct. |
+| chebi15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi17234 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi24848 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_24848; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi27470 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi32312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi49105 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi86254 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86254; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi86360 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86360; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Exact pinned current CHEBI preferred-key rows; metadata source commit/hash | context_only | {"CHEBI:15956": [{"label": "Biotin", "match_type": "preferred_term", "identifier": "CHEBI:15956", "preferred_term": "Biotin", "ontology_id": "CHEBI:15956", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17234": [{"label": "Glucose", "match_type": "preferred_term", "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:24848": [{"label": "Inositol", "match_type": "preferred_term", "identifier": "CHEBI:24848", "preferred_term": "Inositol", "ontology_id": "CHEBI:24848", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:2509": [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:27470": [{"label": "Folic acid", "match_type": "preferred_term", "identifier": "CHEBI:27470", "preferred_term": "Folic acid", "ontology_id": "CHEBI:27470", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32312": [{"label": "ZnSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:49105": [{"label": "Thiamine HCl", "match_type": "preferred_term", "identifier": "CHEBI:49105", "preferred_term": "Thiamine HCl", "ontology_id": "CHEBI:49105", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86254": [{"label": "FeCl3 x 6 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86254", "preferred_term": "FeCl3 x 6 H2O", "ontology_id": "CHEBI:86254", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86360": [{"label": "MnSO4", "match_type": "preferred_term", "identifier": "CHEBI:86360", "preferred_term": "MnSO4", "ontology_id": "CHEBI:86360", "mapping_status": "MAPPED", "ambiguity": "unique"}]} |
+| writer-0 | src/culturemech/import/mediadive_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current importer and guarded merge logic were read as current implementation context. Both maintained owners already omit water; the generated target additionally lacks their later attached evidence. Exact history shows the generated merge predates the later amount-evidence attachments. This does not establish an unobserved historical execution path or justify unconditional blame of current merger code. |
+| writer-1 | src/culturemech/merge/merger.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current importer and guarded merge logic were read as current implementation context. Both maintained owners already omit water; the generated target additionally lacks their later attached evidence. Exact history shows the generated merge predates the later amount-evidence attachments. This does not establish an unobserved historical execution path or justify unconditional blame of current merger code. |
+| writer-2 | src/culturemech/merge/formulation.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current importer and guarded merge logic were read as current implementation context. Both maintained owners already omit water; the generated target additionally lacks their later attached evidence. Exact history shows the generated merge predates the later amount-evidence attachments. This does not establish an unobserved historical execution path or justify unconditional blame of current merger code. |
+| history-metadata | data/merge_yaml/merged/BAF_Medium.yaml; data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml; data/normalized_yaml/bacterial/baf_medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 10, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:06.231338"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml", "events": 9, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:06.231338"}]}, {"input": "data/normalized_yaml/bacterial/baf_medium.yaml", "events": 8, "timestamp_issues": []}] |
+| mediadive392api-attempt | https://mediadive.dsmz.de/rest/medium/392; Preserved exact public retrieval result | context_only | Required authentication of the cited October 7 API392 response remains unavailable after the bounded local raw search. Current access and its separate retry returned HTTP 503. Current PDF agreement supports current formulation, not historical response authenticity; review coverage is partial for this required provenance check. |
+| mediadive392api_retry-attempt | https://mediadive.dsmz.de/rest/medium/392; Preserved exact public retrieval result | context_only | Separate current API392 retry returned HTTP 503; it is preserved independently of the initial attempt. |
+| komodo392detail-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=392; Preserved exact public retrieval result | context_only | Optional exact KOMODO detail access returned HTTP 403. The available catalog establishes identity metadata only. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch040/391/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Required authentication of the cited October 7 API392 response remains unavailable after the bounded local raw search. Current access and its separate retry returned HTTP 503. Current PDF agreement supports current formulation, not historical response authenticity; review coverage is partial for this required provenance check.
+- Separate current API392 retry returned HTTP 503; it is preserved independently of the initial attempt.
+- Optional exact KOMODO detail access returned HTTP 403. The available catalog establishes identity metadata only.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T223406Z-culturemech-005176-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: baf_medium (CultureMech:005176)'
+started_at: '2026-10-21T22:32:16Z'
+finished_at: '2026-10-21T22:34:06Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: DSMZ 392 confirms the nominal masses and pH of BAF medium, but all local
+  layers omit the 1000 ml water input. The DSMZ owner adds an unverified sterilization
+  cycle. Its 28 historical amount claims remain derivative-only because the cited
+  October 7 API response was not recovered; current primary agreement does not authenticate
+  that old response.
+source:
+  git_revision: 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/BAF_Medium.yaml
+    sha256: 8c3d75c4dfbd143bb99883f1a57d579fd4978640c657471b0d540a1ada448ac5
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml
+    sha256: a32ae4bd5ca20900b248537efc0dfd08e1417d3afe6b319dbe0bc7eeab0b7dd3
+    role: context
+  - path: data/normalized_yaml/bacterial/baf_medium.yaml
+    sha256: 4362d9fe6f7079c004a6f0106d4ba18f4b8610b5cc7d1f683faee8cfcfbe3cc9
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-1000-1500/inspected-candidate-context.json
+    sha256: bea184ce1f011e5714cef082c0341aaf001d16024ef7935d004cbc8899f74fd5
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-1000-1500/plan.json
+    sha256: 5a48b07490ce656e22f5742a30b6c1bdae479f575388bea6551bad9ccdd051c0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-1000-1500/records/bacterial/KOMODO_392_BAF_medium.yaml.md
+    sha256: 6b1bcd893b85b69187feebdf2803cee8a5867fa925d75aefd9ba4fb9acb08ee8
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-1000-1500/source-captures.json
+    sha256: f161d90384a728553a0075712cd981a911eee411a5a08e18f9a46a4dbcfd4a6c
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/plan.json
+    sha256: 1ada7bec3dbf8c0a4bb2e448ab02750c2cfd126352f8488695ed34cf2a821f5c
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/bacterial/baf_medium.yaml.md
+    sha256: acb74567df85c4287eb7c8e90876905924d2cd991087ed40a2e98dda14d5b785
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/records/bacterial/nb_fumarate_nbaf_medium.yaml.md
+    sha256: 8c1d2bb530cf01503573c033ae431d9d788e4968ce95fa89d2e20186bd4351d5
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/records/bacterial/geobacter_nbaf_medium.yaml.md
+    sha256: c5dca44e0db3c655557e8b7c7ff33ed55e9ee44e28940bd8eeae60affbcfebc0
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/BAF_Medium.md
+    sha256: 7eab4cb46c3e432c8f517362a9807cf53b26dc7e979845eec601bbbc933aca57
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/geobacter_nbaf_medium__db485dcd.md
+    sha256: 7d83f19a2cc3445e6252a7c154491ca03e8c409ed1a029590fbcda08d231ca6f
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_392_BAF_medium.md
+    sha256: be6824882e49d19577637ed424f9ece8a0c00dcc53f9d2b6c214d539bfd1cbf1
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M3002_Geobacter_NBAF_Medium.md
+    sha256: 17d53e5e9bbf337179815d3e928c096aa146b2ee548257b49b69372c3a62589a
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/baf_medium.md
+    sha256: a6c844e16b96df28595bdcb27f74bfa6f050d170a0af547b6829ff9f83b297f7
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/geobacter_nbaf_medium.md
+    sha256: baccb7395a5fba113d95dd61c43e34c97a17352aa3f86d0f37703ecf0e97c3e6
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/nb_fumarate_nbaf_medium.md
+    sha256: e3c4de30d633a2acd7e53161d9b6cbcceea7fd7e15bdc1f2f2b122845ef1438a
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_dsmz111_preparation.py
+    sha256: 773d682e99ab0d1c6ba381ef43861980d52a55f0c04b9e845abdf29d505d2bdd
+    role: context
+  - path: scripts/repair_dsmz125_alternatives.py
+    sha256: 71a062f42d600dde51cc39efa858829f6d37cf643395dbbb40db2558b7ab3825
+    role: context
+  - path: scripts/repair_dsmz265_preparations.py
+    sha256: d3324af1a19bc1b27a25287d86455f73bf9aa944c8b8cde29812a290c94a1fb5
+    role: context
+  - path: scripts/repair_dsmz_percent_supplements.py
+    sha256: 0f1be22ebf3184f6c7c410a20cdca82e8ba54afa88365cea190d6a0ed23dca9b
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 391; batch 040 item 1 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirty-nine task batches
+    contain 390 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 393 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:005176
+targets:
+- target_id: CultureMech:005176
+  path: data/merge_yaml/merged/BAF_Medium.yaml
+  label: baf_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/baf_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/BAF_Medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:005176
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/BAF_Medium.yaml --workers 1
+    --out /private/tmp/culturemech-review-work-batch040/391/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-040/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch040/391/strict.tsv"
+  target_ids:
+  - CultureMech:005176
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/BAF_Medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:005176
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/BAF_Medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:005176
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:005176
+- check_id: mediadive392api-source-access
+  name: 'Exact source content access: mediadive392api'
+  required: true
+  status: unavailable
+  summary: Required authentication of the cited October 7 API392 response remains
+    unavailable after the bounded local raw search. Current access and its separate
+    retry returned HTTP 503. Current PDF agreement supports current formulation, not
+    historical response authenticity; review coverage is partial for this required
+    provenance check.
+  target_ids:
+  - CultureMech:005176
+  evidence_ids:
+  - mediadive392api-attempt
+- check_id: mediadive392api_retry-source-access
+  name: 'Exact source content access: mediadive392api_retry'
+  required: false
+  status: unavailable
+  summary: Separate current API392 retry returned HTTP 503; it is preserved independently
+    of the initial attempt.
+  target_ids:
+  - CultureMech:005176
+  evidence_ids:
+  - mediadive392api_retry-attempt
+- check_id: komodo392detail-source-access
+  name: 'Exact source content access: komodo392detail'
+  required: false
+  status: unavailable
+  summary: Optional exact KOMODO detail access returned HTTP 403. The available catalog
+    establishes identity metadata only.
+  target_ids:
+  - CultureMech:005176
+  evidence_ids:
+  - komodo392detail-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/BAF_Medium.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T22:34:05Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T22:34:05Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/baf_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T22:34:05Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/BAF_Medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T22:32:22.510912Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/BAF_Medium.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch040/391/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T22:32:23.534116Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-040/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch040/391/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/BAF_Medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T22:32:25.120984Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/BAF_Medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T22:32:25.995720Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T22:34:05Z'
+  support: supports
+  summary: './data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml:1:id: CultureMech:005176
+
+    ./data/merge_yaml/merged/BAF_Medium.yaml:1:id: CultureMech:005176
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch040/source-preflight-bound/391/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T22:34:05Z'
+  support: supports
+  summary: 17 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: e39a6f0deda53ea89409ab1cc22141b25d2f9a81c37ae1cba8ca961c1eedeac0
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf
+  locator: Complete DSMZ 392 table and pH line
+  accessed_at: '2026-10-21T22:15:00.346660Z'
+  support: supports
+  summary: Exact primary formulation with 14 solutes, water and pH, without an explicit
+    measured final volume or sterilization cycle.
+  quote: Distilled water 1000.0 ml
+  snapshot_sha256: e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8
+- evidence_id: ph-source
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf
+  locator: Final line
+  accessed_at: '2026-10-21T22:15:00.346660Z'
+  support: supports
+  summary: The primary specifies pH 5.8–6.3.
+  quote: pH 5.8 - 6.3.
+  snapshot_sha256: e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8
+- evidence_id: catalog
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Exact accession 392 row and seven-column header
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: 'KOMODO accession and DSMZ 392 linkage are identity metadata. Aerobic:
+    No is retained as catalog metadata and is not evidence of a required anoxic preparation.
+    Retrieval date is the captured October 19 date, distinct from the attached October
+    7 claim date.'
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: grounding-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch040/391/grounding-inventory.json
+  locator: Exact local term/history slots and bound source authentication ledger
+  accessed_at: '2026-10-21T22:34:05Z'
+  support: context_only
+  summary: Complete exact-field inventory; current metadata, historical evidence and
+    source forms remain distinct.
+  snapshot_sha256: e4c4d417f0fe9943142f5819d0012178a0d5e5b5969b4fb270d12f58e1a1db7c
+- evidence_id: history-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch040/391/history-inventory.json
+  locator: Exact local term/history slots and bound source authentication ledger
+  accessed_at: '2026-10-21T22:34:05Z'
+  support: context_only
+  summary: Complete exact-field inventory; current metadata, historical evidence and
+    source forms remain distinct.
+  snapshot_sha256: 9a0d37dfc4006670f979b64b5dcce54ae7b879c732c4f24d44704224c54a5529
+- evidence_id: chebi15956
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T08:42:30.425993Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: d2d51887df4de92642b66e9d15086ef82eccbc476dd4077d514ca709181ab4bd
+- evidence_id: chebi17234
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T08:17:26.738243Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: e3b9cbcd7b1e08bb05564cf82f924b29c554767e9b40bf1e4c85ab1bce09330f
+- evidence_id: chebi24848
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_24848
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T07:23:17.153630Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: 3fa2e0500a67481ab6bb14c94ab5bf54099850527cad5e97b5f191ea4325ce8d
+- evidence_id: chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T08:17:27.847373Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: chebi27470
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-20T06:55:10.450814Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: fe3e4a2f0f0fa51f94efe6bbf0fa8883d43eafef8db73cfd37bc25ce15fdd12f
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T08:17:28.879505Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: chebi49105
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-20T06:55:10.911379Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: 0b923c215888606038af1e3f0c1b1bcc35e4ab84966d1733a91fdfcbee8f2ae4
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86254
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86254
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T08:17:30.289392Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: 89afba545ad02f24a850933df154af25dee37357b583f82de13866b44f18d683
+- evidence_id: chebi86360
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86360
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-20T06:55:05.958063Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: ee3b60385f389c4eeb301cfe59996112ffa9c3c135268559b79e91810a14932b
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Exact pinned current CHEBI preferred-key rows; metadata source commit/hash
+  accessed_at: '2026-10-21T22:34:05Z'
+  support: context_only
+  summary: '{"CHEBI:15956": [{"label": "Biotin", "match_type": "preferred_term", "identifier":
+    "CHEBI:15956", "preferred_term": "Biotin", "ontology_id": "CHEBI:15956", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:17234": [{"label": "Glucose", "match_type":
+    "preferred_term", "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id":
+    "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:24848":
+    [{"label": "Inositol", "match_type": "preferred_term", "identifier": "CHEBI:24848",
+    "preferred_term": "Inositol", "ontology_id": "CHEBI:24848", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:2509": [{"label": "Agar", "match_type":
+    "preferred_term", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id":
+    "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:27470":
+    [{"label": "Folic acid", "match_type": "preferred_term", "identifier": "CHEBI:27470",
+    "preferred_term": "Folic acid", "ontology_id": "CHEBI:27470", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:32312": [{"label": "ZnSO4 x 7 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:32312", "preferred_term":
+    "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:49105": [{"label": "Thiamine HCl", "match_type": "preferred_term",
+    "identifier": "CHEBI:49105", "preferred_term": "Thiamine HCl", "ontology_id":
+    "CHEBI:49105", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036":
+    [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036",
+    "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O",
+    "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:86254": [{"label": "FeCl3 x 6 H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:86254", "preferred_term": "FeCl3 x 6 H2O", "ontology_id": "CHEBI:86254",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86360": [{"label":
+    "MnSO4", "match_type": "preferred_term", "identifier": "CHEBI:86360", "preferred_term":
+    "MnSO4", "ontology_id": "CHEBI:86360", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T22:34:05Z'
+  support: context_only
+  summary: Current importer and guarded merge logic were read as current implementation
+    context. Both maintained owners already omit water; the generated target additionally
+    lacks their later attached evidence. Exact history shows the generated merge predates
+    the later amount-evidence attachments. This does not establish an unobserved historical
+    execution path or justify unconditional blame of current merger code.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T22:34:05Z'
+  support: context_only
+  summary: Current importer and guarded merge logic were read as current implementation
+    context. Both maintained owners already omit water; the generated target additionally
+    lacks their later attached evidence. Exact history shows the generated merge predates
+    the later amount-evidence attachments. This does not establish an unobserved historical
+    execution path or justify unconditional blame of current merger code.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T22:34:05Z'
+  support: context_only
+  summary: Current importer and guarded merge logic were read as current implementation
+    context. Both maintained owners already omit water; the generated target additionally
+    lacks their later attached evidence. Exact history shows the generated merge predates
+    the later amount-evidence attachments. This does not establish an unobserved historical
+    execution path or justify unconditional blame of current merger code.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/BAF_Medium.yaml; data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml;
+    data/normalized_yaml/bacterial/baf_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T22:34:05Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 10, "timestamp_issues": [{"index": 0, "issue":
+    "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue":
+    "timezone absent", "value": "2026-02-03T11:19:06.231338"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml",
+    "events": 9, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:06.231338"}]}, {"input": "data/normalized_yaml/bacterial/baf_medium.yaml",
+    "events": 8, "timestamp_issues": []}]'
+- evidence_id: mediadive392api-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/392
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T22:14:55.931057Z'
+  support: context_only
+  summary: Required authentication of the cited October 7 API392 response remains
+    unavailable after the bounded local raw search. Current access and its separate
+    retry returned HTTP 503. Current PDF agreement supports current formulation, not
+    historical response authenticity; review coverage is partial for this required
+    provenance check.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadive392api_retry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/392
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T22:16:27.168615Z'
+  support: context_only
+  summary: Separate current API392 retry returned HTTP 503; it is preserved independently
+    of the initial attempt.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: komodo392detail-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=392
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T22:14:55.641549Z'
+  support: context_only
+  summary: Optional exact KOMODO detail access returned HTTP 403. The available catalog
+    establishes identity metadata only.
+  snapshot_sha256: 41112ae0c654ee510fc893600b908d6d16d964cf61df8c6b48fb263d66148564
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch040/391/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T22:34:05Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: cc0ba4bf7d280d948ec658a00fddaa5f1b59bbf107cd964f9b038c0a99e57219
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:005176
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: Accession and maintained-source identity
+  outcome: supported
+  summary: The target and two exact contributors represent DSMZ/KOMODO 392, with matching
+    local recipe signatures and reciprocal source-duplicate relationships. The current
+    primary and exact catalog row support accession identity; title and catalog oxygen
+    metadata do not establish organism growth.
+  target_ids:
+  - CultureMech:005176
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - id-search
+  - primary
+  - catalog
+- assessment_id: grounding
+  area: grounding
+  topic: Chemical forms and current secondary keys
+  outcome: supported
+  summary: All 12 distinct primary and CHEBI-based secondary IDs have matching current
+    nonobsolete labels. All 12 asserted current mediaingredientmech_chebi_term keys
+    have exact preferred mapped rows in the pinned MIM index; no legacy MIM key is
+    asserted. Primary and secondary target linkage each cover 12/14 ingredients (85.71%
+    on a 0–100 linkage scale), not a chemical-accuracy score. Mixture gaps are not
+    wrong identifiers.
+  target_ids:
+  - CultureMech:005176
+  evidence_ids:
+  - grounding-inventory
+  - mim
+  - primary
+- assessment_id: conditions
+  area: completeness
+  topic: pH, sterilization and environmental scope
+  outcome: concern
+  summary: 'The pH range is supported. The DSMZ owner’s 121 °C for 15 min is absent
+    from the available primary, so its provenance remains unverified. COMPLEX/UNDEFINED
+    and SOLID_AGAR fit peptone, yeast extract and agar. No cultivation temperature,
+    atmosphere or strain growth is established by the recipe title or the catalog
+    Aerobic: No flag.'
+  target_ids:
+  - CultureMech:005176
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - primary
+  - ph-source
+  - catalog
+  - quantity-inventory
+- assessment_id: historical-authentication
+  area: evidence
+  topic: Historical amount claims versus current evidence
+  outcome: unknown
+  summary: The 28 owner amount claims match exact record-qualified derivative plans,
+    but their cited API SHA 764900b96abe66cabc2a19ea0d71bed6853f7fcd56dae2c3cdd41befb3102bf8
+    was not recovered in the documented bounded ignored-inclusive report/cache search.
+    The catalog identity claim has matching raw bytes/hash from a later capture; its
+    retrieval date is not the historical claim date. Current primary agreement does
+    not authenticate the old API.
+  target_ids:
+  - CultureMech:005176
+  evidence_ids:
+  - history-inventory
+  - primary
+  - catalog
+- assessment_id: provenance
+  area: provenance
+  topic: Chronology and current writer boundaries
+  outcome: concern
+  summary: Later owner evidence is not present in this generated target. Preserve
+    all original historical claims, bounded search results and timestamp defects;
+    add current evidence separately. Current code and source-file equality do not
+    prove the historical cause of missing fields.
+  target_ids:
+  - CultureMech:005176
+  evidence_ids:
+  - history-inventory
+  - writer-0
+  - writer-1
+  - writer-2
+  - record
+  - owner-0
+  - owner-1
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: concern
+  summary: 27 timestamp instances inspected; 4 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:005176
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+  - owner-1
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 18 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:005176
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"component_or_context\": \"\
+    Glucose\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/merge_yaml/merged/BAF_Medium.yaml\",\n     \
+    \   \"field_path\": \"ingredients[0].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        },\n \
+    \       \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/baf_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n     \
+    \ }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz392\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf\"\
+    ,\n        \"source_locator\": \"DSM392 main table row 1\",\n        \"exact_source_quote\"\
+    : \"Glucose 30.0 g\",\n        \"snapshot_sha256\": \"e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8\"\
+    ,\n        \"parsed_text_sha256\": \"47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:15:00.346660Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 30,\n      \"unit\"\
+    : \"g\",\n      \"stage\": \"main nominal recipe with 1000 ml water\",\n     \
+    \ \"measured_final_volume\": null\n    },\n    \"rationale\": \"The stored g/L\
+    \ numeral agrees with conversion of the printed batch mass at the nominal one-litre\
+    \ recipe basis. Preserve that basis explicitly; it is not proof of a measured\
+    \ final volume. Target has no attached amount evidence; the two owners have matching\
+    \ historical claim text whose cited raw API response remains unavailable. Attach\
+    \ the current primary as separate evidence without rewriting the old claim.\"\n\
+    \  },\n  {\n    \"quantity_id\": \"q2\",\n    \"component_or_context\": \"Peptone\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/merge_yaml/merged/BAF_Medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[1].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\": \"\
+    evidence_only\",\n        \"rationale\": \"\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[1].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\": \"\
+    evidence_only\",\n        \"rationale\": \"\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/baf_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[1].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\": \"\
+    evidence_only\",\n        \"rationale\": \"\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz392\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf\",\n        \"\
+    source_locator\": \"DSM392 main table row 2\",\n        \"exact_source_quote\"\
+    : \"Peptone 2.0 g\",\n        \"snapshot_sha256\": \"e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8\"\
+    ,\n        \"parsed_text_sha256\": \"47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:15:00.346660Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 2,\n      \"unit\"\
+    : \"g\",\n      \"stage\": \"main nominal recipe with 1000 ml water\",\n     \
+    \ \"measured_final_volume\": null\n    },\n    \"rationale\": \"The stored g/L\
+    \ numeral agrees with conversion of the printed batch mass at the nominal one-litre\
+    \ recipe basis. Preserve that basis explicitly; it is not proof of a measured\
+    \ final volume. Target has no attached amount evidence; the two owners have matching\
+    \ historical claim text whose cited raw API response remains unavailable. Attach\
+    \ the current primary as separate evidence without rewriting the old claim.\"\n\
+    \  },\n  {\n    \"quantity_id\": \"q3\",\n    \"component_or_context\": \"Yeast\
+    \ extract\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/BAF_Medium.yaml\",\n   \
+    \     \"field_path\": \"ingredients[2].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/baf_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n     \
+    \ }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz392\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf\"\
+    ,\n        \"source_locator\": \"DSM392 main table row 3\",\n        \"exact_source_quote\"\
+    : \"Yeast extract 0.2 g\",\n        \"snapshot_sha256\": \"e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8\"\
+    ,\n        \"parsed_text_sha256\": \"47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:15:00.346660Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 0.2,\n      \"unit\"\
+    : \"g\",\n      \"stage\": \"main nominal recipe with 1000 ml water\",\n     \
+    \ \"measured_final_volume\": null\n    },\n    \"rationale\": \"The stored g/L\
+    \ numeral agrees with conversion of the printed batch mass at the nominal one-litre\
+    \ recipe basis. Preserve that basis explicitly; it is not proof of a measured\
+    \ final volume. Target has no attached amount evidence; the two owners have matching\
+    \ historical claim text whose cited raw API response remains unavailable. Attach\
+    \ the current primary as separate evidence without rewriting the old claim.\"\n\
+    \  },\n  {\n    \"quantity_id\": \"q4\",\n    \"component_or_context\": \"KH2PO4\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/merge_yaml/merged/BAF_Medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[3].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"evidence_only\",\n        \"rationale\": \"\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/baf_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n     \
+    \ }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz392\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf\"\
+    ,\n        \"source_locator\": \"DSM392 main table row 4\",\n        \"exact_source_quote\"\
+    : \"KH2PO4 0.5 g\",\n        \"snapshot_sha256\": \"e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8\"\
+    ,\n        \"parsed_text_sha256\": \"47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:15:00.346660Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 0.5,\n      \"unit\"\
+    : \"g\",\n      \"stage\": \"main nominal recipe with 1000 ml water\",\n     \
+    \ \"measured_final_volume\": null\n    },\n    \"rationale\": \"The stored g/L\
+    \ numeral agrees with conversion of the printed batch mass at the nominal one-litre\
+    \ recipe basis. Preserve that basis explicitly; it is not proof of a measured\
+    \ final volume. Target has no attached amount evidence; the two owners have matching\
+    \ historical claim text whose cited raw API response remains unavailable. Attach\
+    \ the current primary as separate evidence without rewriting the old claim.\"\n\
+    \  },\n  {\n    \"quantity_id\": \"q5\",\n    \"component_or_context\": \"MgSO4\
+    \ x 7 H2O\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/BAF_Medium.yaml\",\n   \
+    \     \"field_path\": \"ingredients[4].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/baf_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n     \
+    \ }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz392\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf\"\
+    ,\n        \"source_locator\": \"DSM392 main table row 5\",\n        \"exact_source_quote\"\
+    : \"MgSO4 x 7 H2O 0.5 g\",\n        \"snapshot_sha256\": \"e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8\"\
+    ,\n        \"parsed_text_sha256\": \"47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:15:00.346660Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 0.5,\n      \"unit\"\
+    : \"g\",\n      \"stage\": \"main nominal recipe with 1000 ml water\",\n     \
+    \ \"measured_final_volume\": null\n    },\n    \"rationale\": \"The stored g/L\
+    \ numeral agrees with conversion of the printed batch mass at the nominal one-litre\
+    \ recipe basis. Preserve that basis explicitly; it is not proof of a measured\
+    \ final volume. Target has no attached amount evidence; the two owners have matching\
+    \ historical claim text whose cited raw API response remains unavailable. Attach\
+    \ the current primary as separate evidence without rewriting the old claim.\"\n\
+    \  },\n  {\n    \"quantity_id\": \"q6\",\n    \"component_or_context\": \"FeCl3\
+    \ x 6 H2O\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/BAF_Medium.yaml\",\n   \
+    \     \"field_path\": \"ingredients[5].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/baf_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz392\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf\"\
+    ,\n        \"source_locator\": \"DSM392 main table row 6\",\n        \"exact_source_quote\"\
+    : \"FeCl3 x 6 H2O 10.0 mg\",\n        \"snapshot_sha256\": \"e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8\"\
+    ,\n        \"parsed_text_sha256\": \"47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:15:00.346660Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 10,\n      \"unit\"\
+    : \"mg\",\n      \"stage\": \"main nominal recipe with 1000 ml water\",\n    \
+    \  \"measured_final_volume\": null\n    },\n    \"rationale\": \"The stored g/L\
+    \ numeral agrees with conversion of the printed batch mass at the nominal one-litre\
+    \ recipe basis. Preserve that basis explicitly; it is not proof of a measured\
+    \ final volume. Target has no attached amount evidence; the two owners have matching\
+    \ historical claim text whose cited raw API response remains unavailable. Attach\
+    \ the current primary as separate evidence without rewriting the old claim.\"\n\
+    \  },\n  {\n    \"quantity_id\": \"q7\",\n    \"component_or_context\": \"ZnSO4\
+    \ x 7 H2O\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/BAF_Medium.yaml\",\n   \
+    \     \"field_path\": \"ingredients[6].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/baf_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz392\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf\"\
+    ,\n        \"source_locator\": \"DSM392 main table row 7\",\n        \"exact_source_quote\"\
+    : \"ZnSO4 x 7 H2O 1.0 mg\",\n        \"snapshot_sha256\": \"e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8\"\
+    ,\n        \"parsed_text_sha256\": \"47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:15:00.346660Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 1,\n      \"unit\"\
+    : \"mg\",\n      \"stage\": \"main nominal recipe with 1000 ml water\",\n    \
+    \  \"measured_final_volume\": null\n    },\n    \"rationale\": \"The stored g/L\
+    \ numeral agrees with conversion of the printed batch mass at the nominal one-litre\
+    \ recipe basis. Preserve that basis explicitly; it is not proof of a measured\
+    \ final volume. Target has no attached amount evidence; the two owners have matching\
+    \ historical claim text whose cited raw API response remains unavailable. Attach\
+    \ the current primary as separate evidence without rewriting the old claim.\"\n\
+    \  },\n  {\n    \"quantity_id\": \"q8\",\n    \"component_or_context\": \"MnSO4\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/merge_yaml/merged/BAF_Medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[7].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.005\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"evidence_only\",\n        \"rationale\": \"\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/baf_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz392\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf\"\
+    ,\n        \"source_locator\": \"DSM392 main table row 8\",\n        \"exact_source_quote\"\
+    : \"MnSO4 5.0 mg\",\n        \"snapshot_sha256\": \"e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8\"\
+    ,\n        \"parsed_text_sha256\": \"47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:15:00.346660Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 5,\n      \"unit\"\
+    : \"mg\",\n      \"stage\": \"main nominal recipe with 1000 ml water\",\n    \
+    \  \"measured_final_volume\": null\n    },\n    \"rationale\": \"The stored g/L\
+    \ numeral agrees with conversion of the printed batch mass at the nominal one-litre\
+    \ recipe basis. Preserve that basis explicitly; it is not proof of a measured\
+    \ final volume. Target has no attached amount evidence; the two owners have matching\
+    \ historical claim text whose cited raw API response remains unavailable. Attach\
+    \ the current primary as separate evidence without rewriting the old claim.\"\n\
+    \  },\n  {\n    \"quantity_id\": \"q9\",\n    \"component_or_context\": \"CaCl2\
+    \ x 2 H2O\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/BAF_Medium.yaml\",\n   \
+    \     \"field_path\": \"ingredients[8].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/baf_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n     \
+    \ }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz392\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf\"\
+    ,\n        \"source_locator\": \"DSM392 main table row 9\",\n        \"exact_source_quote\"\
+    : \"CaCl2 x 2 H2O 100.0 mg\",\n        \"snapshot_sha256\": \"e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8\"\
+    ,\n        \"parsed_text_sha256\": \"47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:15:00.346660Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 100,\n      \"unit\"\
+    : \"mg\",\n      \"stage\": \"main nominal recipe with 1000 ml water\",\n    \
+    \  \"measured_final_volume\": null\n    },\n    \"rationale\": \"The stored g/L\
+    \ numeral agrees with conversion of the printed batch mass at the nominal one-litre\
+    \ recipe basis. Preserve that basis explicitly; it is not proof of a measured\
+    \ final volume. Target has no attached amount evidence; the two owners have matching\
+    \ historical claim text whose cited raw API response remains unavailable. Attach\
+    \ the current primary as separate evidence without rewriting the old claim.\"\n\
+    \  },\n  {\n    \"quantity_id\": \"q10\",\n    \"component_or_context\": \"Thiamine\
+    \ HCl\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n    \
+    \  {\n        \"input\": \"data/merge_yaml/merged/BAF_Medium.yaml\",\n       \
+    \ \"field_path\": \"ingredients[9].concentration\",\n        \"stored\": {\n \
+    \         \"value\": \"5e-05\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5e-05\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/baf_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5e-05\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz392\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf\"\
+    ,\n        \"source_locator\": \"DSM392 main table row 10\",\n        \"exact_source_quote\"\
+    : \"Thiamin HCl 50.0 μg\",\n        \"snapshot_sha256\": \"e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8\"\
+    ,\n        \"parsed_text_sha256\": \"47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:15:00.346660Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 50,\n      \"unit\"\
+    : \"μg\",\n      \"stage\": \"main nominal recipe with 1000 ml water\",\n    \
+    \  \"measured_final_volume\": null\n    },\n    \"rationale\": \"The stored g/L\
+    \ numeral agrees with conversion of the printed batch mass at the nominal one-litre\
+    \ recipe basis. Preserve that basis explicitly; it is not proof of a measured\
+    \ final volume. Target has no attached amount evidence; the two owners have matching\
+    \ historical claim text whose cited raw API response remains unavailable. Attach\
+    \ the current primary as separate evidence without rewriting the old claim.\"\n\
+    \  },\n  {\n    \"quantity_id\": \"q11\",\n    \"component_or_context\": \"Biotin\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/merge_yaml/merged/BAF_Medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[10].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"1e-06\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"evidence_only\",\n        \"rationale\": \"\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1e-06\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/baf_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1e-06\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz392\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf\"\
+    ,\n        \"source_locator\": \"DSM392 main table row 11\",\n        \"exact_source_quote\"\
+    : \"Biotin 1.0 μg\",\n        \"snapshot_sha256\": \"e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8\"\
+    ,\n        \"parsed_text_sha256\": \"47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:15:00.346660Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 1,\n      \"unit\"\
+    : \"μg\",\n      \"stage\": \"main nominal recipe with 1000 ml water\",\n    \
+    \  \"measured_final_volume\": null\n    },\n    \"rationale\": \"The stored g/L\
+    \ numeral agrees with conversion of the printed batch mass at the nominal one-litre\
+    \ recipe basis. Preserve that basis explicitly; it is not proof of a measured\
+    \ final volume. Target has no attached amount evidence; the two owners have matching\
+    \ historical claim text whose cited raw API response remains unavailable. Attach\
+    \ the current primary as separate evidence without rewriting the old claim.\"\n\
+    \  },\n  {\n    \"quantity_id\": \"q12\",\n    \"component_or_context\": \"Folic\
+    \ acid\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n   \
+    \   {\n        \"input\": \"data/merge_yaml/merged/BAF_Medium.yaml\",\n      \
+    \  \"field_path\": \"ingredients[11].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.0001\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0001\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/baf_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0001\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz392\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf\"\
+    ,\n        \"source_locator\": \"DSM392 main table row 12\",\n        \"exact_source_quote\"\
+    : \"Folic acid 100.0 μg\",\n        \"snapshot_sha256\": \"e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8\"\
+    ,\n        \"parsed_text_sha256\": \"47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:15:00.346660Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 100,\n      \"unit\"\
+    : \"μg\",\n      \"stage\": \"main nominal recipe with 1000 ml water\",\n    \
+    \  \"measured_final_volume\": null\n    },\n    \"rationale\": \"The stored g/L\
+    \ numeral agrees with conversion of the printed batch mass at the nominal one-litre\
+    \ recipe basis. Preserve that basis explicitly; it is not proof of a measured\
+    \ final volume. Target has no attached amount evidence; the two owners have matching\
+    \ historical claim text whose cited raw API response remains unavailable. Attach\
+    \ the current primary as separate evidence without rewriting the old claim.\"\n\
+    \  },\n  {\n    \"quantity_id\": \"q13\",\n    \"component_or_context\": \"Inositol\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/merge_yaml/merged/BAF_Medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[12].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"5e-05\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"evidence_only\",\n        \"rationale\": \"\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5e-05\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/baf_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5e-05\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz392\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf\"\
+    ,\n        \"source_locator\": \"DSM392 main table row 13\",\n        \"exact_source_quote\"\
+    : \"Inositol 50.0 μg\",\n        \"snapshot_sha256\": \"e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8\"\
+    ,\n        \"parsed_text_sha256\": \"47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:15:00.346660Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 50,\n      \"unit\"\
+    : \"μg\",\n      \"stage\": \"main nominal recipe with 1000 ml water\",\n    \
+    \  \"measured_final_volume\": null\n    },\n    \"rationale\": \"The stored g/L\
+    \ numeral agrees with conversion of the printed batch mass at the nominal one-litre\
+    \ recipe basis. Preserve that basis explicitly; it is not proof of a measured\
+    \ final volume. Target has no attached amount evidence; the two owners have matching\
+    \ historical claim text whose cited raw API response remains unavailable. Attach\
+    \ the current primary as separate evidence without rewriting the old claim.\"\n\
+    \  },\n  {\n    \"quantity_id\": \"q14\",\n    \"component_or_context\": \"Agar\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/merge_yaml/merged/BAF_Medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[13].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\":\
+    \ \"evidence_only\",\n        \"rationale\": \"\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/baf_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"\"\n     \
+    \ }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz392\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf\"\
+    ,\n        \"source_locator\": \"DSM392 main table row 14\",\n        \"exact_source_quote\"\
+    : \"Agar 15.0 g\",\n        \"snapshot_sha256\": \"e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8\"\
+    ,\n        \"parsed_text_sha256\": \"47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:15:00.346660Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 15,\n      \"unit\"\
+    : \"g\",\n      \"stage\": \"main nominal recipe with 1000 ml water\",\n     \
+    \ \"measured_final_volume\": null\n    },\n    \"rationale\": \"The stored g/L\
+    \ numeral agrees with conversion of the printed batch mass at the nominal one-litre\
+    \ recipe basis. Preserve that basis explicitly; it is not proof of a measured\
+    \ final volume. Target has no attached amount evidence; the two owners have matching\
+    \ historical claim text whose cited raw API response remains unavailable. Attach\
+    \ the current primary as separate evidence without rewriting the old claim.\"\n\
+    \  },\n  {\n    \"quantity_id\": \"q15\",\n    \"component_or_context\": \"Main\
+    \ distilled water\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/merge_yaml/merged/BAF_Medium.yaml\",\n     \
+    \   \"field_path\": \"ingredients[14].concentration\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/baf_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz392\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf\"\
+    ,\n        \"source_locator\": \"Main water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.0 ml\",\n        \"snapshot_sha256\": \"e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8\"\
+    ,\n        \"parsed_text_sha256\": \"47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:15:00.346660Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 1000,\n      \"\
+    unit\": \"ml\",\n      \"stage\": \"main batch water input\",\n      \"make_up_to_volume_claim\"\
+    : false\n    },\n    \"rationale\": \"All three layers omit the source water input.\
+    \ The primary states water amount, not a separate make-up or measured-final-volume\
+    \ instruction.\"\n  },\n  {\n    \"quantity_id\": \"q16\",\n    \"component_or_context\"\
+    : \"Source pH range\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BAF_Medium.yaml\",\n\
+    \        \"field_path\": \"ph_range\",\n        \"stored\": {\n          \"min\"\
+    : 5.8,\n          \"max\": 6.3\n        },\n        \"decision\": \"evidence_only\"\
+    ,\n        \"rationale\": \"\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_range\",\n        \"stored\": {\n          \"\
+    min\": 5.8,\n          \"max\": 6.3\n        },\n        \"decision\": \"evidence_only\"\
+    ,\n        \"rationale\": \"\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/baf_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_range\",\n        \"stored\": {\n          \"\
+    min\": 5.8,\n          \"max\": 6.3\n        },\n        \"decision\": \"evidence_only\"\
+    ,\n        \"rationale\": \"\"\n      }\n    ],\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz392\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf\"\
+    ,\n        \"source_locator\": \"Final line\",\n        \"exact_source_quote\"\
+    : \"pH 5.8 - 6.3.\",\n        \"snapshot_sha256\": \"e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8\"\
+    ,\n        \"parsed_text_sha256\": \"47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:15:00.346660Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"min\": 5.8,\n      \"max\"\
+    : 6.3\n    },\n    \"rationale\": \"The existing range matches the primary; attach\
+    \ exact source support.\"\n  },\n  {\n    \"quantity_id\": \"q17\",\n    \"component_or_context\"\
+    : \"Owner sterilization temperature\",\n    \"decision\": \"unsupported\",\n \
+    \   \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/baf_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"pH 5.8 - 6.3.   Sterilize at 121°C for 15 min.\",\n        \"decision\": \"\
+    unsupported\",\n        \"rationale\": \"\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz392\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf\",\n        \"\
+    source_locator\": \"Complete single-page source; no sterilization instruction\"\
+    ,\n        \"exact_source_quote\": \"© 2007 DSMZ GmbH - All rights reserved \\\
+    n392. BAF Medium \\n \\n \\n Glucose 30.0 g \\n Peptone 2.0 g \\n Yeast extract\
+    \ 0.2 g \\n KH2PO4 0.5 g \\n MgSO4 x 7 H2O 0.5 g \\n FeCl3 x 6 H2O 10.0 mg \\\
+    n ZnSO4 x 7 H2O 1.0 mg \\n MnSO4 5.0 mg \\n CaCl2 x 2 H2O 100.0 mg \\n Thiamin\
+    \ HCl 50.0 μg \\n Biotin 1.0 μg \\n Folic acid 100.0 μg \\n Inositol 50.0 μg \\\
+    n Agar 15.0 g \\n Distilled water 1000.0 ml \\npH 5.8 - 6.3.\",\n        \"snapshot_sha256\"\
+    : \"e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8\",\n    \
+    \    \"parsed_text_sha256\": \"47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:15:00.346660Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"local_assertion\": 121,\n\
+    \      \"unit\": \"°C\",\n      \"source_value\": null,\n      \"stage\": \"sterilization\"\
+    \n    },\n    \"rationale\": \"The owner states this cycle, but the complete available\
+    \ primary does not. The unrecovered historical API cannot authenticate it. Do\
+    \ not propagate it as a collection-confirmed protocol or invent a substitute.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q18\",\n    \"component_or_context\": \"Owner\
+    \ sterilization duration\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/baf_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"pH 5.8 - 6.3.   Sterilize at 121°C for 15 min.\",\n        \"decision\": \"\
+    unsupported\",\n        \"rationale\": \"\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz392\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium392.pdf\",\n        \"\
+    source_locator\": \"Complete single-page source; no sterilization instruction\"\
+    ,\n        \"exact_source_quote\": \"© 2007 DSMZ GmbH - All rights reserved \\\
+    n392. BAF Medium \\n \\n \\n Glucose 30.0 g \\n Peptone 2.0 g \\n Yeast extract\
+    \ 0.2 g \\n KH2PO4 0.5 g \\n MgSO4 x 7 H2O 0.5 g \\n FeCl3 x 6 H2O 10.0 mg \\\
+    n ZnSO4 x 7 H2O 1.0 mg \\n MnSO4 5.0 mg \\n CaCl2 x 2 H2O 100.0 mg \\n Thiamin\
+    \ HCl 50.0 μg \\n Biotin 1.0 μg \\n Folic acid 100.0 μg \\n Inositol 50.0 μg \\\
+    n Agar 15.0 g \\n Distilled water 1000.0 ml \\npH 5.8 - 6.3.\",\n        \"snapshot_sha256\"\
+    : \"e2cfb39a4899744fbe8da972ed2b8d86a68c4987eae035f485ef3edd2339c5a8\",\n    \
+    \    \"parsed_text_sha256\": \"47edea0f25c617426d7e7b98a5ce383ea3a5638d5978338540a3a2f8e29fa098\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:15:00.346660Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"local_assertion\": 15,\n \
+    \     \"unit\": \"min\",\n      \"source_value\": null,\n      \"stage\": \"sterilization\"\
+    \n    },\n    \"rationale\": \"The owner states this cycle, but the complete available\
+    \ primary does not. The unrecovered historical API cannot authenticate it. Do\
+    \ not propagate it as a collection-confirmed protocol or invent a substitute.\"\
+    \n  }\n]"
+findings:
+- finding_id: f1
+  issue_key: culturemech.005176.missing-water
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The primary water input is missing
+  description: All local layers omit the explicitly listed 1000 ml distilled water.
+    The retained solute rates alone do not represent this source quantity or its nominal
+    batch basis.
+  target_ids:
+  - CultureMech:005176
+  field_paths:
+  - ingredients
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - primary
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/baf_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.005176.unverified-cycle
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The owner sterilization cycle lacks authenticated source support
+  description: The DSMZ owner asserts 121 °C for 15 min, but the current exact primary
+    gives no cycle and the cited historical API is unavailable. This is unsupported
+    source attribution, not evidence that the procedure itself is experimentally unsuitable.
+  target_ids:
+  - CultureMech:005176
+  field_paths:
+  - preparation_steps[0]
+  evidence_ids:
+  - owner-1
+  - primary
+  - history-inventory
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/baf_medium.yaml
+    role: authoritative normalized source
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.005176.amount-evidence-basis
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Current amount support and nominal batch basis are not attached
+  description: The target has no attached claim-level amounts, while owner claims
+    depend on unrecovered historical raw bytes. The current primary supports the listed
+    nominal masses and unit conversions but not a separately measured final volume.
+  target_ids:
+  - CultureMech:005176
+  field_paths:
+  - ingredients
+  - references
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - primary
+  - history-inventory
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/baf_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Add the literal water input and its source stage in both maintained
+    owners, retaining the absence of a measured final-volume statement; regenerate
+    only after authorized owner curation.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:005176
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/baf_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Recover supporting collection evidence or qualify the owner cycle as
+    unverified; do not copy it into the target as a verified default.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:005176
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/baf_medium.yaml
+    role: authoritative normalized source
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Attach exact current primary snippets with explicit batch basis; preserve
+    historical objects and their authentication limits rather than relabeling derivative
+    matches as raw verification.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:005176
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/baf_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Required authentication of the cited October 7 API392 response remains unavailable
+  after the bounded local raw search. Current access and its separate retry returned
+  HTTP 503. Current PDF agreement supports current formulation, not historical response
+  authenticity; review coverage is partial for this required provenance check.
+- Separate current API392 retry returned HTTP 503; it is preserved independently of
+  the initial attempt.
+- Optional exact KOMODO detail access returned HTTP 403. The available catalog establishes
+  identity metadata only.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-040
+- generated-medium
+```
