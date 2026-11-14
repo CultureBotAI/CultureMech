@@ -46,11 +46,7 @@ def source_hashes(manifest: dict[str, Any], key: str) -> dict[str, str]:
     result: dict[str, str] = {}
     for raw_path, entry in entries.items():
         path = raw_path.removeprefix(PREFIX)
-        if (
-            not path
-            or "\\" in path
-            or any(part in {"", ".", ".."} for part in path.split("/"))
-        ):
+        if not path or "\\" in path or any(part in {"", ".", ".."} for part in path.split("/")):
             raise ValueError(f"{key}: unsafe or noncanonical relative path {raw_path!r}")
         if path in result:
             raise ValueError(f"{key}: duplicate normalized path {path!r}")
@@ -110,7 +106,9 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--bundle-manifest", required=True, type=Path)
     parser.add_argument("--mim-manifest", required=True, type=Path)
-    parser.add_argument("--output", type=Path, help="New JSON receipt; defaults to stdout. Never overwrite.")
+    parser.add_argument(
+        "--output", type=Path, help="New JSON receipt; defaults to stdout. Never overwrite."
+    )
     args = parser.parse_args(argv)
     try:
         receipt = compare_manifests(args.bundle_manifest, args.mim_manifest)
