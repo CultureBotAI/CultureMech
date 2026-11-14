@@ -1,0 +1,2072 @@
+# Source and formulation review: acetobacter_peroxydans_medium (CultureMech:004656)
+
+- Review: 20261021T103005Z-culturemech-004656-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T10:23:10Z
+- Finished UTC: 2026-10-21T10:30:05Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The exact DSMZ/KOMODO 254 source and two maintained owners resolve. All three local formulae misrepresent a 60 mL dose of 50% v/v ethanol as 60 g/L. The generated target also omits the maintained amount evidence and DSMZ owner preparation. An available, hashed KG snapshot confirms the correct medium node but fails the current exact ingredient-projection criterion. Four canonical diagnostics pass; the additional graph comparison is a fully assessed failure.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 153; batch 016 item 3 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding fifteen task batches contain 150 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c contains 40 validated baseline bundles covering 2 current merged paths. Unioning all prior lists with this baseline covers 152 of 6320 current merged paths, including 2 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 24a1d277eb7f0437af53af0d178a30f9bfa6374c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:004656 | data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml | generated | acetobacter_peroxydans_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:004656 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:004656 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-016/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch016/153/strict.tsv |
+| validate-terms | passed | True | CultureMech:004656 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:004656 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:004656 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Scoped current-matcher projection at asserted node 254 | failed | True | CultureMech:004656 | The required bounded graph comparison was available and completed: node 254 has five projected ingredients, while all three local layers expose only agar and ethanol. The exact-set criterion fails in the pinned local snapshot. This is an assessed failure, not an unavailable check. |
+| Scoped timestamp syntax and timezone inspection | failed | False | CultureMech:004656 | 21 timestamps inspected, 4 invalid or timezone-naive; old provenance remains unchanged. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:004656.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Exact source identity, reciprocal owners and generated membership
+
+identity: supported. Targets: CultureMech:004656.
+
+The target CM004656 merges KOMODO 254 CM004656 and DSMZ 254 CM001353; exact source accession/title and catalog mapping agree. The complete reciprocal SOURCE_DUPLICATE parent/child links point to those exact paths/IDs. Their identical numerical ingredients do not erase the DSMZ owner preparation or later attached evidence. No modified formulation is asserted in these sources.
+
+### Primary labels/forms and pinned secondary correspondence
+
+grounding: supported. Targets: CultureMech:004656.
+
+Layer-specific counts are {"target": {"ingredient_instances": 4, "primary_CHEBI_instances": 2, "secondary_current_asserted_instances": 2, "secondary_current_verified_instances": 2, "legacy_secondary_instances": 0, "primary_CHEBI_percent": 50.0, "secondary_verified_percent": 50.0}, "owner-0": {"ingredient_instances": 4, "primary_CHEBI_instances": 2, "secondary_current_asserted_instances": 2, "secondary_current_verified_instances": 2, "legacy_secondary_instances": 0, "primary_CHEBI_percent": 50.0, "secondary_verified_percent": 50.0}, "owner-1": {"ingredient_instances": 4, "primary_CHEBI_instances": 2, "secondary_current_asserted_instances": 2, "secondary_current_verified_instances": 2, "legacy_secondary_instances": 0, "primary_CHEBI_percent": 50.0, "secondary_verified_percent": 50.0}}. Percentages are 0–100 linkage coverage over direct ingredient instances, not scientific accuracy. The 0 legacy link instances across reviewed layers are unverified by the current CHEBI-keyed snapshot; absence here does not prove historical invalidity. Current secondary keys without a live preferred-term row are []. No secondary linked-set percentage is invented for an empty set.
+
+{"label_drift": [], "legacy": [], "missing_current_secondary": []}
+
+### Asserted ingredient identities and unresolved mixture scope
+
+grounding: supported. Targets: CultureMech:004656.
+
+CHEBI:2509 resolves to agar, a polysaccharide mixture, and CHEBI:16236 to ethanol. Their canonical labels and both layers of asserted linkage agree with the pinned current index. The chemical identity ethanol does not encode the missing 50% v/v strength. Malt and yeast extracts remain ungrounded in all three recipe layers; current graph FOODON IDs do not by themselves authorize local assignments.
+
+### Post-sterilization addition and filtration retained by one owner
+
+completeness: concern. Targets: CultureMech:004656.
+
+The DSMZ owner contains the exact 60 mL ethanol 50% v/v post-sterilization and filtration sentence. The generated target and KOMODO owner omit it. No stock solution descriptor exists in any layer. Preserve that source-specific order and filtration while correcting the unit/strength representation; no primary pH, numeric sterilization temperature or duration is supplied.
+
+### Required agar and complex mixture classification
+
+scope: supported. Targets: CultureMech:004656.
+
+The source requires 15 g agar, supporting SOLID_AGAR; malt and yeast extracts support COMPLEX/UNDEFINED. Bacterial filing and generic microbial cultivation remain catalog-level descriptions without strain or growth claims. KOMODO Aerobic: No is retained as catalog metadata, not an independently validated incubation phenotype.
+
+### Asserted exact match versus current local graph
+
+graph: concern. Targets: CultureMech:004656.
+
+The correct named medium node 254 leads to solution 520. Its normalized projected set is CHEBI:15377, CHEBI:16236, CHEBI:2509, FOODON:3301056 and FOODON:3315426. Each local layer projects only CHEBI:16236 and CHEBI:2509; water and the two ungrounded extracts are absent. Thus the current exact-set assertion is unsupported by this actual snapshot even though source identity is correct. Quantities are ignored by this matching criterion, and the historical graph/version was not reconstructed.
+
+### Append-only history and timestamp interpretation
+
+provenance: concern. Targets: CultureMech:004656.
+
+21 exact timestamp instances were examined; 4 lack valid syntax or explicit timezone. No local timestamp was assumed UTC or rewritten. Process and confidence annotations are not independent scientific evidence.
+
+[{"path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml", "field_path": "curation_history[0].timestamp", "value": "2026-01-27T01:15:02.fZ", "valid_ISO_datetime": false, "timezone_aware": false}, {"path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml", "field_path": "curation_history[1].timestamp", "value": "2026-02-03T11:19:16.698629", "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml", "field_path": "curation_history[0].timestamp", "value": "2026-01-27T01:15:02.fZ", "valid_ISO_datetime": false, "timezone_aware": false}, {"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml", "field_path": "curation_history[1].timestamp", "value": "2026-02-03T11:19:16.698629", "valid_ISO_datetime": true, "timezone_aware": false}]
+
+### Every stored amount, stock dose and source-stage dependency
+
+quantity: concern. Targets: CultureMech:004656.
+
+Eight literal decisions cover all four ingredient rows in all three layers, source water, the ethanol strength and explicit unquantified temperature/duration limits. Main solid rows are evidence_only for the target and verified for both owners because their already-attached exact snippets/hash and declared provider basis were rechecked. Ethanol requires correction in every layer. The 30 mL neat-volume equivalent is separate arithmetic, not a mass or final concentration.
+
+[{"field_path": "ingredients[0].concentration", "name": "Malt extract", "current": {"value": "15", "unit": "G_PER_L"}, "decision": "evidence_only", "source_key": "mediadive254api", "source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Malt extract\",\n                        \"compound_id\": 116,\n                        \"amount\": 15,\n                        \"unit\": \"g\",\n                        \"g_l\": 15,\n                        \"optional\": 0\n                    }", "source_locator": "$.data.solutions[0].recipe[0]", "preparation_stage": "Main sol. 254 (solution 520, declared 1000 mL)", "decision_rationale": "The current value follows provider g_l on its declared 1000 mL basis. Attach exact source evidence and retain any percentage-stock attribute and dose. This is provider normalization, not an independently measured final volume.", "evidence_id": "quantity-1", "arithmetic_separate_from_quote": "Original 15 g × 1 g/g ÷ (1000 mL / 1000 mL per L) = 15 g/L on the provider-declared stage volume; reported g_l is 15. This is not a receiving-medium dilution.", "affected_local_fields": [{"path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml", "field_path": "ingredients[0].concentration", "name": "Malt extract", "current": {"value": "15", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml", "field_path": "ingredients[0].concentration", "name": "Malt extract", "current": {"value": "15", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml", "field_path": "ingredients[0].concentration", "name": "Malt extract", "current": {"value": "15", "unit": "G_PER_L"}}], "source_amount": 15, "source_unit": "g", "source_attribute": null, "provider_g_l": 15, "provider_stage_volume_ml": 1000, "primary_source_evidence_id": "dsmz254", "layer_decisions": [{"path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml", "field_path": "ingredients[0].concentration", "decision": "evidence_only", "rationale": "The current value follows provider g_l on its declared 1000 mL basis. Attach exact source evidence and retain any percentage-stock attribute and dose. This is provider normalization, not an independently measured final volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml", "field_path": "ingredients[0].concentration", "decision": "verified", "rationale": "Existing owner evidence has the exact ingredient snippet, declared 1000 mL provider basis, scope explanation and matching current raw-response hash. Verification is restricted to that declared provider concentration, not measured final volume."}, {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml", "field_path": "ingredients[0].concentration", "decision": "verified", "rationale": "Existing owner evidence has the exact ingredient snippet, declared 1000 mL provider basis, scope explanation and matching current raw-response hash. Verification is restricted to that declared provider concentration, not measured final volume."}]}, {"field_path": "ingredients[1].concentration", "name": "Yeast extract", "current": {"value": "5", "unit": "G_PER_L"}, "decision": "evidence_only", "source_key": "mediadive254api", "source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"optional\": 0\n                    }", "source_locator": "$.data.solutions[0].recipe[1]", "preparation_stage": "Main sol. 254 (solution 520, declared 1000 mL)", "decision_rationale": "The current value follows provider g_l on its declared 1000 mL basis. Attach exact source evidence and retain any percentage-stock attribute and dose. This is provider normalization, not an independently measured final volume.", "evidence_id": "quantity-2", "arithmetic_separate_from_quote": "Original 5 g × 1 g/g ÷ (1000 mL / 1000 mL per L) = 5 g/L on the provider-declared stage volume; reported g_l is 5. This is not a receiving-medium dilution.", "affected_local_fields": [{"path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml", "field_path": "ingredients[1].concentration", "name": "Yeast extract", "current": {"value": "5", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml", "field_path": "ingredients[1].concentration", "name": "Yeast extract", "current": {"value": "5", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml", "field_path": "ingredients[1].concentration", "name": "Yeast extract", "current": {"value": "5", "unit": "G_PER_L"}}], "source_amount": 5, "source_unit": "g", "source_attribute": null, "provider_g_l": 5, "provider_stage_volume_ml": 1000, "primary_source_evidence_id": "dsmz254", "layer_decisions": [{"path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml", "field_path": "ingredients[1].concentration", "decision": "evidence_only", "rationale": "The current value follows provider g_l on its declared 1000 mL basis. Attach exact source evidence and retain any percentage-stock attribute and dose. This is provider normalization, not an independently measured final volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml", "field_path": "ingredients[1].concentration", "decision": "verified", "rationale": "Existing owner evidence has the exact ingredient snippet, declared 1000 mL provider basis, scope explanation and matching current raw-response hash. Verification is restricted to that declared provider concentration, not measured final volume."}, {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml", "field_path": "ingredients[1].concentration", "decision": "verified", "rationale": "Existing owner evidence has the exact ingredient snippet, declared 1000 mL provider basis, scope explanation and matching current raw-response hash. Verification is restricted to that declared provider concentration, not measured final volume."}]}, {"field_path": "ingredients[2].concentration", "name": "Agar", "current": {"value": "15", "unit": "G_PER_L"}, "decision": "evidence_only", "source_key": "mediadive254api", "source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n                        \"amount\": 15,\n                        \"unit\": \"g\",\n                        \"g_l\": 15,\n                        \"mmol_l\": 44.5991,\n                        \"optional\": 0\n                    }", "source_locator": "$.data.solutions[0].recipe[2]", "preparation_stage": "Main sol. 254 (solution 520, declared 1000 mL)", "decision_rationale": "The current value follows provider g_l on its declared 1000 mL basis. Attach exact source evidence and retain any percentage-stock attribute and dose. This is provider normalization, not an independently measured final volume.", "evidence_id": "quantity-3", "arithmetic_separate_from_quote": "Original 15 g × 1 g/g ÷ (1000 mL / 1000 mL per L) = 15 g/L on the provider-declared stage volume; reported g_l is 15. This is not a receiving-medium dilution.", "affected_local_fields": [{"path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml", "field_path": "ingredients[2].concentration", "name": "Agar", "current": {"value": "15", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml", "field_path": "ingredients[2].concentration", "name": "Agar", "current": {"value": "15", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml", "field_path": "ingredients[2].concentration", "name": "Agar", "current": {"value": "15", "unit": "G_PER_L"}}], "source_amount": 15, "source_unit": "g", "source_attribute": null, "provider_g_l": 15, "provider_stage_volume_ml": 1000, "primary_source_evidence_id": "dsmz254", "layer_decisions": [{"path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml", "field_path": "ingredients[2].concentration", "decision": "evidence_only", "rationale": "The current value follows provider g_l on its declared 1000 mL basis. Attach exact source evidence and retain any percentage-stock attribute and dose. This is provider normalization, not an independently measured final volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml", "field_path": "ingredients[2].concentration", "decision": "verified", "rationale": "Existing owner evidence has the exact ingredient snippet, declared 1000 mL provider basis, scope explanation and matching current raw-response hash. Verification is restricted to that declared provider concentration, not measured final volume."}, {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml", "field_path": "ingredients[2].concentration", "decision": "verified", "rationale": "Existing owner evidence has the exact ingredient snippet, declared 1000 mL provider basis, scope explanation and matching current raw-response hash. Verification is restricted to that declared provider concentration, not measured final volume."}]}, {"field_path": "source solution 520 recipe[3] (not represented)", "name": "Distilled water", "current": null, "decision": "add", "source_key": "mediadive254api", "source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 940,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "source_locator": "$.data.solutions[0].recipe[3]", "preparation_stage": "Main sol. 254 (solution 520, declared 1000 mL)", "decision_rationale": "Preserve the source solvent quantity 940 ml in its own stage. The provider declares this solution volume as 1000 mL; water addition is not independent proof of measured final volume.", "evidence_id": "quantity-4", "affected_local_fields": [], "source_amount": 940, "source_unit": "ml", "source_attribute": null, "provider_g_l": null, "provider_stage_volume_ml": 1000, "primary_source_evidence_id": "dsmz254", "layer_decisions": []}, {"field_path": "ingredients[3].concentration", "name": "Ethanol", "current": {"value": "60", "unit": "G_PER_L"}, "decision": "correct", "source_key": "mediadive254api", "source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Ethanol\",\n                        \"compound_id\": 201,\n                        \"attribute\": \"50% v/v\",\n                        \"amount\": 60,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "source_locator": "$.data.solutions[0].recipe[4]", "preparation_stage": "Main sol. 254 (solution 520, declared 1000 mL)", "decision_rationale": "All three layers encode 60 G_PER_L, but the exact source adds 60 mL of a 50% v/v ethanol solution. Preserve both liquid dose and stock strength; the source supplies no ethanol g_l in this row.", "evidence_id": "quantity-5", "arithmetic_separate_from_quote": "60 mL solution × 0.50 mL ethanol/mL solution = 30 mL neat-ethanol volume equivalent. This is not 30 g and does not establish a measured final volume or density-based mass concentration.", "affected_local_fields": [{"path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml", "field_path": "ingredients[3].concentration", "name": "Ethanol", "current": {"value": "60", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml", "field_path": "ingredients[3].concentration", "name": "Ethanol", "current": {"value": "60", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml", "field_path": "ingredients[3].concentration", "name": "Ethanol", "current": {"value": "60", "unit": "G_PER_L"}}], "source_amount": 60, "source_unit": "ml", "source_attribute": "50% v/v", "provider_g_l": null, "provider_stage_volume_ml": 1000, "primary_source_evidence_id": "dsmz254", "layer_decisions": [{"path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml", "field_path": "ingredients[3].concentration", "decision": "correct", "rationale": "All three layers encode 60 G_PER_L, but the exact source adds 60 mL of a 50% v/v ethanol solution. Preserve both liquid dose and stock strength; the source supplies no ethanol g_l in this row."}, {"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml", "field_path": "ingredients[3].concentration", "decision": "correct", "rationale": "All three layers encode 60 G_PER_L, but the exact source adds 60 mL of a 50% v/v ethanol solution. Preserve both liquid dose and stock strength; the source supplies no ethanol g_l in this row."}, {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml", "field_path": "ingredients[3].concentration", "decision": "correct", "rationale": "All three layers encode 60 G_PER_L, but the exact source adds 60 mL of a 50% v/v ethanol solution. Preserve both liquid dose and stock strength; the source supplies no ethanol g_l in this row."}]}, {"field_path": "ingredients[3].concentration / ethanol_stock.strength", "name": "Ethanol stock strength", "current": "Absent from concentration; retained only in DSMZ owner preparation", "decision": "add", "source_key": "dsmz254", "source_quote": "After sterilization add 60 ml ethanol (50% v/v), sterilized by filtration.", "source_locator": "page 1, complete preparation sentence", "preparation_stage": "post-sterilization ethanol addition", "decision_rationale": "Preserve the 50% v/v stock strength alongside the 60 mL dose. The DSMZ owner already retains it in prose, but its ingredient concentration remains 60 g/L. Target and KOMODO owner omit the preparation text.", "evidence_id": "quantity-6", "layer_decisions": [{"path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml", "decision": "add", "field_path": "preparation_steps / ethanol_stock.strength", "rationale": "Strength and preparation text are absent from this complete layer."}, {"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml", "decision": "add", "field_path": "preparation_steps / ethanol_stock.strength", "rationale": "Strength and preparation text are absent from this complete layer."}, {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml", "decision": "evidence_only", "field_path": "preparation_steps / ethanol_stock.strength", "rationale": "Existing DSMZ owner prose preserves the strength without attached claim evidence."}]}, {"field_path": "preparation_steps.temperature", "name": "Initial sterilization temperature", "current": null, "decision": "not_quantified", "source_key": "dsmz254", "source_quote": "After sterilization add 60 ml ethanol (50% v/v), sterilized by filtration.", "source_locator": "page 1, complete preparation sentence", "preparation_stage": "basal-medium sterilization before ethanol addition", "decision_rationale": "The source says after sterilization but supplies no numeric basal temperature. The ethanol solution is explicitly filtered; do not substitute heat sterilization for it.", "evidence_id": "quantity-7"}, {"field_path": "preparation_steps.duration", "name": "Initial sterilization duration", "current": null, "decision": "not_quantified", "source_key": "dsmz254", "source_quote": "After sterilization add 60 ml ethanol (50% v/v), sterilized by filtration.", "source_locator": "page 1, complete preparation sentence", "preparation_stage": "basal-medium sterilization", "decision_rationale": "No numeric duration is specified; no generic cycle is inserted.", "evidence_id": "quantity-8"}]
+
+### Claim-level source support and actual reference-check coverage
+
+evidence: concern. Targets: CultureMech:004656.
+
+The first three owner ingredient excerpts and KOMODO identity excerpt are exact substrings of the bound captures and their historical SHA256 values match. The generated target has no such evidence and its reference diagnostic checks zero entries. Existing references identify their source organization and limits without invented authors or publication year. Source evidence does not validate secondary mappings or a graph exact-set assertion.
+
+### Bounded biological claims and optional entities
+
+scope: not_applicable. Targets: CultureMech:004656.
+
+No taxon or strain identifiers, assemblies, DOI/PMID papers or experimental growth results occur in these complete records. The medium name and catalog Aerobic flag are not such evidence. The KG ingredient link is assessed separately from biological growth.
+
+## Findings
+
+### f1: A dilute ethanol volume is stored as a mass concentration
+
+major / open / confirmed; issue key: cm004656-ethanol-dose-unit.
+
+All three local records encode ethanol 60 G_PER_L. The source instead adds 60 mL of 50% v/v ethanol after sterilization, sterilized by filtration; its API row has no g_l. Neither an ethanol mass nor a final-volume conversion is supported by this liquid dose alone.
+
+### f2: The target and KOMODO owner lose the source addition and filtration sequence
+
+major / open / confirmed; issue key: cm004656-filtered-ethanol-preparation.
+
+The exact preparation is present in the DSMZ owner, but the KOMODO owner and generated target omit it. This loses the post-sterilization addition and separate ethanol filtration while their ingredient still states a mass concentration. The whole source does not provide a numeric basal sterilization cycle.
+
+### f3: The asserted KG exact-set match fails in the inspected snapshot
+
+major / open / confirmed; issue key: cm004656-kg-projection-mismatch.
+
+The named node 254 is the correct source medium, but its current graph projection has five ingredients, including water and FOODON-linked malt and yeast extracts. The local projection has only agar and ethanol. The exact-set equality required by the current matcher therefore fails. This does not claim wrong source identity or establish how an earlier graph produced the stored assertion.
+
+### f4: The generated target omits later maintained amount evidence
+
+minor / open / confirmed; issue key: cm004656-generated-evidence-lag.
+
+Both maintained owners carry exact, currently matching provider evidence for malt 15 g/L, yeast 5 g/L and agar 15 g/L on the explicitly declared provider basis. Their October source-evidence events and references are absent from the August-generated target. The target reference validator consequently checks zero evidence entries.
+
+### f5: Inherited timestamps are malformed or lack a timezone
+
+minor / open / confirmed; issue key: cm004656-history-timestamps.
+
+4 exact timestamp instances across the target and maintained owners either have invalid datetime syntax or omit timezone information. These are historical provenance defects, not evidence that the scientific contents were reviewed. Old events must remain intact.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Correct both maintained owners to preserve the exact ethanol solution strength, liquid addition dose and source order. Attach scoped evidence and resolve any chosen concentration basis without an assumed density; preview derived regeneration afterward.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Retain the existing correct DSMZ owner instruction and add its source-scoped counterpart to the maintained KOMODO owner where identity is verified. Ensure authorized regeneration preserves the sequence; do not invent a numeric cycle.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Reconcile the intended matching contract and source-version provenance against a pinned graph before retaining or recomputing this assertion. If missing recipe identities are curated, verify them independently; do not add guessed mappings or ignore extra graph terms solely to force equality.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Preserve the verified existing owner evidence through the separately authorized formulation correction and regeneration. Do not overwrite it with broader assertions about measured volume, stock strength or graph identity.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a5
+
+Preserve all old entries. If authoritative timing evidence becomes available, append a source-linked clarification; correct future timestamp writers to use timezone-aware UTC without silently rewriting provenance.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-1 | data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch016/153/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-016/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch016/153/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| source-catalog | /private/tmp/culturemech-review-work-batch016/source-preflight-bound/153/source-catalog.json; Complete bound per-record catalog, raw/text/metadata hashes and actual original capture times | context_only | [{"key": "dsmz254", "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium254.pdf", "status": 200, "accessed_at": "2026-10-21T10:07:16.059178Z", "sha256": "d07893118c2ed9d99ecb99ae107061af0fae636d99b49512a04b09f6cd8fb975", "metadata_sha256": "45ef87f82c9bbf295178fe8cecf67622c7200d0f3d6ad727f42ff6bd2b239c3a", "content_limit": null, "reused_capture_from": null}, {"key": "mediadive254api", "url": "https://mediadive.dsmz.de/rest/medium/254", "status": 200, "accessed_at": "2026-10-21T10:07:15.156696Z", "sha256": "f7f6eea140a2d55375da0136f30d393df4a9512bed12115c9aaa4f0025356e0f", "metadata_sha256": "c661a7f562e222a2dda2a3fae604691a17909f32cff9baa6031807615ac39e91", "content_limit": null, "reused_capture_from": null}, {"key": "komodoMediaList", "url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList", "status": 200, "accessed_at": "2026-10-19T23:42:38.189631Z", "sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a", "metadata_sha256": "86dae57e216606f04b556d910cfbc03dca892b6c45c24a0c305e668e38f61a1a", "content_limit": "Exact accession/source/variant metadata only; not formulation concentration evidence.", "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch015-tail/147/komodoMediaList.json"}, {"key": "chebi16236", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16236", "status": 200, "accessed_at": "2026-10-21T10:07:16.961534Z", "sha256": "afdacc5e401c6545f51974e897eb96eee2a5fa3aef15119edbd415cb7bb802b8", "metadata_sha256": "009a0aca500954e33d11b5824494485fc6e61a61dac653db182c1f95fa6040c9", "content_limit": null, "reused_capture_from": null}, {"key": "chebi2509", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509", "status": 200, "accessed_at": "2026-10-21T08:17:27.847373Z", "sha256": "8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a", "metadata_sha256": "d1d8cc685e1d37a246e03af7dd70034246b06c8520cbd4cd8fd5b173cc171999", "content_limit": "Exact source capture for later source-scoped review; no final scientific assessment made.", "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch014-tail/140/chebi2509.json"}] |
+| dsmz254 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium254.pdf; page 1, complete formulation and preparation | supports | Complete exact collection recipe and single preparation sentence inspected. Malt, yeast, required agar, water and post-sterilization dilute-ethanol addition have distinct source roles. |
+| mediadive254api | https://mediadive.dsmz.de/rest/medium/254; $.data.medium; $.data.solutions[0] | supports | Exact API medium 254, solution 520 and all five recipe rows inspected. The ethanol row has amount 60, unit ml, attribute 50% v/v and no g_l value. Provider volume is 1000 mL. |
+| komodoMediaList | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; MediaList table row with first cell 254 | supports | Exact catalog row 254 maps the KOMODO accession to the same DSMZ recipe. The existing root identity snippet and its historical response hash match the bound bytes; this row contains no recipe amounts. |
+| attached-evidence | data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml; Both owners: ingredients[0:3].evidence; KOMODO owner root evidence and references | supports | [{"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml", "field": "ingredients[0].evidence[0]", "exact_snippet_in_current_capture": true, "source_sha256": "f7f6eea140a2d55375da0136f30d393df4a9512bed12115c9aaa4f0025356e0f", "explanation": "Concentration evidence for ingredients[0].concentration (Malt extract) in MediaDive medium 254; locator=$.data.solutions[0].recipe[0]. Provider explicitly reports g_l=15; check: 15 g * 1 g/g / (1000 ml / 1000 ml per L) = 15 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:44:26.917427+00:00; response SHA256=f7f6eea140a2d55375da0136f30d393df4a9512bed12115c9aaa4f0025356e0f. KOMODO accession 254 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."}, {"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml", "field": "ingredients[1].evidence[0]", "exact_snippet_in_current_capture": true, "source_sha256": "f7f6eea140a2d55375da0136f30d393df4a9512bed12115c9aaa4f0025356e0f", "explanation": "Concentration evidence for ingredients[1].concentration (Yeast extract) in MediaDive medium 254; locator=$.data.solutions[0].recipe[1]. Provider explicitly reports g_l=5; check: 5 g * 1 g/g / (1000 ml / 1000 ml per L) = 5 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:44:26.917427+00:00; response SHA256=f7f6eea140a2d55375da0136f30d393df4a9512bed12115c9aaa4f0025356e0f. KOMODO accession 254 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."}, {"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml", "field": "ingredients[2].evidence[0]", "exact_snippet_in_current_capture": true, "source_sha256": "f7f6eea140a2d55375da0136f30d393df4a9512bed12115c9aaa4f0025356e0f", "explanation": "Concentration evidence for ingredients[2].concentration (Agar) in MediaDive medium 254; locator=$.data.solutions[0].recipe[2]. Provider explicitly reports g_l=15; check: 15 g * 1 g/g / (1000 ml / 1000 ml per L) = 15 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:44:26.917427+00:00; response SHA256=f7f6eea140a2d55375da0136f30d393df4a9512bed12115c9aaa4f0025356e0f. KOMODO accession 254 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants."}, {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml", "field": "ingredients[0].evidence[0]", "exact_snippet_in_current_capture": true, "source_sha256": "f7f6eea140a2d55375da0136f30d393df4a9512bed12115c9aaa4f0025356e0f", "explanation": "Concentration evidence for ingredients[0].concentration (Malt extract) in MediaDive medium 254; locator=$.data.solutions[0].recipe[0]. Provider explicitly reports g_l=15; check: 15 g * 1 g/g / (1000 ml / 1000 ml per L) = 15 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:44:26.917427+00:00; response SHA256=f7f6eea140a2d55375da0136f30d393df4a9512bed12115c9aaa4f0025356e0f."}, {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml", "field": "ingredients[1].evidence[0]", "exact_snippet_in_current_capture": true, "source_sha256": "f7f6eea140a2d55375da0136f30d393df4a9512bed12115c9aaa4f0025356e0f", "explanation": "Concentration evidence for ingredients[1].concentration (Yeast extract) in MediaDive medium 254; locator=$.data.solutions[0].recipe[1]. Provider explicitly reports g_l=5; check: 5 g * 1 g/g / (1000 ml / 1000 ml per L) = 5 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:44:26.917427+00:00; response SHA256=f7f6eea140a2d55375da0136f30d393df4a9512bed12115c9aaa4f0025356e0f."}, {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml", "field": "ingredients[2].evidence[0]", "exact_snippet_in_current_capture": true, "source_sha256": "f7f6eea140a2d55375da0136f30d393df4a9512bed12115c9aaa4f0025356e0f", "explanation": "Concentration evidence for ingredients[2].concentration (Agar) in MediaDive medium 254; locator=$.data.solutions[0].recipe[2]. Provider explicitly reports g_l=15; check: 15 g * 1 g/g / (1000 ml / 1000 ml per L) = 15 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:44:26.917427+00:00; response SHA256=f7f6eea140a2d55375da0136f30d393df4a9512bed12115c9aaa4f0025356e0f."}] |
+| importer | src/culturemech/import/mediadive_importer.py; _parse_api_composition, _parse_api_solutions and _normalize_unit | context_only | Current code parses main-solution ingredients separately from stock additions and preserves source units and stock identifiers. This is inspected current code context, not a historical replay or validation of the inherited flattened rows. |
+| resolver | src/culturemech/enrich/dsmz_resolver.py; merge_composition and _add_enrichment_metadata | context_only | Current resolver copies ingredients/solutions and selected pH/classification fields from a linked DSMZ source; this method does not copy preparation steps, and its timestamp uses timezone-free datetime.now().isoformat(). The historical record events are assessed separately; no historical execution was reproduced. |
+| cleanup | scripts/cleanup_media_quality.py; _merge_ingredient_group | context_only | Current duplicate handling does not sum conflicting concentrations. The local historical merge notes are observed facts, but the current function is not proof of how a historical run produced those sums. |
+| quantity-1 | https://mediadive.dsmz.de/rest/medium/254; $.data.solutions[0].recipe[0] | supports | The current value follows provider g_l on its declared 1000 mL basis. Attach exact source evidence and retain any percentage-stock attribute and dose. This is provider normalization, not an independently measured final volume. |
+| quantity-2 | https://mediadive.dsmz.de/rest/medium/254; $.data.solutions[0].recipe[1] | supports | The current value follows provider g_l on its declared 1000 mL basis. Attach exact source evidence and retain any percentage-stock attribute and dose. This is provider normalization, not an independently measured final volume. |
+| quantity-3 | https://mediadive.dsmz.de/rest/medium/254; $.data.solutions[0].recipe[2] | supports | The current value follows provider g_l on its declared 1000 mL basis. Attach exact source evidence and retain any percentage-stock attribute and dose. This is provider normalization, not an independently measured final volume. |
+| quantity-4 | https://mediadive.dsmz.de/rest/medium/254; $.data.solutions[0].recipe[3] | supports | Preserve the source solvent quantity 940 ml in its own stage. The provider declares this solution volume as 1000 mL; water addition is not independent proof of measured final volume. |
+| quantity-5 | https://mediadive.dsmz.de/rest/medium/254; $.data.solutions[0].recipe[4] | context_only | All three layers encode 60 G_PER_L, but the exact source adds 60 mL of a 50% v/v ethanol solution. Preserve both liquid dose and stock strength; the source supplies no ethanol g_l in this row. |
+| quantity-6 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium254.pdf; page 1, complete preparation sentence | supports | Preserve the 50% v/v stock strength alongside the 60 mL dose. The DSMZ owner already retains it in prose, but its ingredient concentration remains 60 g/L. Target and KOMODO owner omit the preparation text. |
+| quantity-7 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium254.pdf; page 1, complete preparation sentence | supports | The source says after sterilization but supplies no numeric basal temperature. The ethanol solution is explicitly filtered; do not substitute heat sterilization for it. |
+| quantity-8 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium254.pdf; page 1, complete preparation sentence | supports | No numeric duration is specified; no generic cycle is inserted. |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509; $._embedded.terms[0] | supports | CHEBI:2509 resolves to agar and is not obsolete. Available definitions, formulae, structures and synonyms were inspected; recipe amounts and supplied forms are assessed separately. |
+| chebi16236 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16236; $._embedded.terms[0] | supports | CHEBI:16236 resolves to ethanol and is not obsolete. Available definitions, formulae, structures and synonyms were inspected; recipe amounts and supplied forms are assessed separately. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Entire pinned snapshot; exact MAPPED/preferred_term rows for asserted CHEBI keys and exact legacy-key lookup | supports | {"metadata": {"byte_count": 824387, "consumer_contract_version": 1, "data_row_count": 9077, "header": ["label", "match_type", "identifier", "preferred_term", "ontology_id", "mapping_status", "ambiguity"], "repository": "https://github.com/CultureBotAI/MediaIngredientMech", "sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "source_path": "docs/data/label_index.csv"}, "counts": {"target": {"ingredient_instances": 4, "primary_CHEBI_instances": 2, "secondary_current_asserted_instances": 2, "secondary_current_verified_instances": 2, "legacy_secondary_instances": 0, "primary_CHEBI_percent": 50.0, "secondary_verified_percent": 50.0}, "owner-0": {"ingredient_instances": 4, "primary_CHEBI_instances": 2, "secondary_current_asserted_instances": 2, "secondary_current_verified_instances": 2, "legacy_secondary_instances": 0, "primary_CHEBI_percent": 50.0, "secondary_verified_percent": 50.0}, "owner-1": {"ingredient_instances": 4, "primary_CHEBI_instances": 2, "secondary_current_asserted_instances": 2, "secondary_current_verified_instances": 2, "legacy_secondary_instances": 0, "primary_CHEBI_percent": 50.0, "secondary_verified_percent": 50.0}}, "instances": [{"layer": "target", "path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml", "field": "ingredients[0]", "name": "Malt extract"}, {"layer": "target", "path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml", "field": "ingredients[1]", "name": "Yeast extract"}, {"layer": "target", "path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml", "field": "ingredients[2]", "name": "Agar", "primary": {"id": "CHEBI:2509", "label": "agar"}, "canonical_label": "agar", "label_equal": true, "definition": ["A complex mixture of polysaccharides extracted from species of red algae. Its two main components are agarose and agaropectin. Agarose is the component responsible for the high-strength gelling properties of agar, while agaropectin provides the viscous properties."], "annotations": {"database_cross_reference": ["cas:9002-18-0", "kegg.compound:C08815", "pubmed:25603143", "pubmed:25842535", "pubmed:25959629", "pubmed:26043937", "pubmed:26050892", "pubmed:26116384", "reaxys:8538728", "wikipedia.en:Agar"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:2509"]}, "synonyms": [], "secondary": {"asserted": {"id": "CHEBI:2509", "label": "agar"}, "exact_current_rows": [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}, {"layer": "target", "path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml", "field": "ingredients[3]", "name": "Ethanol", "primary": {"id": "CHEBI:16236", "label": "ethanol"}, "canonical_label": "ethanol", "label_equal": true, "definition": ["A primary alcohol that is ethane in which one of the hydrogens is substituted by a hydroxy group."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:64-17-5", "drugbank:DB00898", "drugcentral:1076", "gmelin:787", "hmdb:HMDB0000108", "kegg.compound:C00469", "kegg.drug:D00068", "kegg.drug:D06542", "knapsack:C00019560", "metacyc.compound:ETOH", "molbase:858", "molbase:859", "pdb-ccd:EOH", "ppdb:1373", "pubmed:11046114", "pubmed:11090978", "pubmed:11198720", "pubmed:11200745", "pubmed:11262320", "pubmed:11303910", "pubmed:11333032", "pubmed:11505026", "pubmed:11590970", "pubmed:11728426", "pubmed:11750186", "pubmed:11754521", "pubmed:11810019", "pubmed:11826039", "pubmed:11981228", "pubmed:12824058", "pubmed:12829422", "pubmed:12888778", "pubmed:12946583", "pubmed:14674846", "pubmed:15019421", "pubmed:15239123", "pubmed:15285839", "pubmed:15464411", "pubmed:15465973", "pubmed:15749123", "pubmed:15900217", "pubmed:15902919", "pubmed:16084479", "pubmed:16133132", "pubmed:16352430", "pubmed:16390872", "pubmed:16737463", "pubmed:16891664", "pubmed:16934862", "pubmed:17043811", "pubmed:17190852", "pubmed:17663926", "pubmed:17687877", "pubmed:18095657", "pubmed:18249266", "pubmed:18320157", "pubmed:18347649", "pubmed:18408978", "pubmed:18411066", "pubmed:18456322", "pubmed:18513832", "pubmed:18922656", "pubmed:18925476", "pubmed:19280886", "pubmed:19359288", "pubmed:19384566", "pubmed:19458312", "pubmed:19851413", "pubmed:19901811", "pubmed:21600756", "pubmed:21762181", "pubmed:21881875", "pubmed:21967628", "pubmed:22019193", "pubmed:22222864", "pubmed:22261437", "pubmed:22286266", "pubmed:22306018", "pubmed:22331491", "pubmed:22336593", "reaxys:1718733", "umbbd.compound:c0038", "wikipedia.en:Ethanol"], "generalized_empirical_formula": ["C2H6O"], "has_alternative_id": ["CHEBI:14222", "CHEBI:23978", "CHEBI:30878", "CHEBI:30880", "CHEBI:42377", "CHEBI:44594", "CHEBI:4879"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:16236"], "inchi_key_string": ["LFQSCWFLJHTTHZ-UHFFFAOYSA-N"], "inchi_string": ["InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"], "mass": ["46.069"], "monoisotopic_mass": ["46.04186"], "smiles_string": ["CCO"]}, "synonyms": ["1-hydroxyethane", "Aethanol", "Aethylalkohol", "Alkohol", "C2H5OH", "Dehydrated ethanol", "ETHANOL", "ETHANOL", "EtOH", "Ethanol", "Ethanol", "Ethyl alcohol", "Methylcarbinol", "[CH2Me(OH)]", "[OEtH]", "alcohol etilico", "alcohol", "alcool ethylique", "etanol", "ethanol", "ethanol", "hydroxyethane", "spiritus vini"], "secondary": {"asserted": {"id": "CHEBI:16236", "label": "ethanol"}, "exact_current_rows": [{"label": "Ethanol", "match_type": "preferred_term", "identifier": "CHEBI:16236", "preferred_term": "Ethanol", "ontology_id": "CHEBI:16236", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}, {"layer": "owner-0", "path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml", "field": "ingredients[0]", "name": "Malt extract"}, {"layer": "owner-0", "path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml", "field": "ingredients[1]", "name": "Yeast extract"}, {"layer": "owner-0", "path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml", "field": "ingredients[2]", "name": "Agar", "primary": {"id": "CHEBI:2509", "label": "agar"}, "canonical_label": "agar", "label_equal": true, "definition": ["A complex mixture of polysaccharides extracted from species of red algae. Its two main components are agarose and agaropectin. Agarose is the component responsible for the high-strength gelling properties of agar, while agaropectin provides the viscous properties."], "annotations": {"database_cross_reference": ["cas:9002-18-0", "kegg.compound:C08815", "pubmed:25603143", "pubmed:25842535", "pubmed:25959629", "pubmed:26043937", "pubmed:26050892", "pubmed:26116384", "reaxys:8538728", "wikipedia.en:Agar"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:2509"]}, "synonyms": [], "secondary": {"asserted": {"id": "CHEBI:2509", "label": "agar"}, "exact_current_rows": [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}, {"layer": "owner-0", "path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml", "field": "ingredients[3]", "name": "Ethanol", "primary": {"id": "CHEBI:16236", "label": "ethanol"}, "canonical_label": "ethanol", "label_equal": true, "definition": ["A primary alcohol that is ethane in which one of the hydrogens is substituted by a hydroxy group."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:64-17-5", "drugbank:DB00898", "drugcentral:1076", "gmelin:787", "hmdb:HMDB0000108", "kegg.compound:C00469", "kegg.drug:D00068", "kegg.drug:D06542", "knapsack:C00019560", "metacyc.compound:ETOH", "molbase:858", "molbase:859", "pdb-ccd:EOH", "ppdb:1373", "pubmed:11046114", "pubmed:11090978", "pubmed:11198720", "pubmed:11200745", "pubmed:11262320", "pubmed:11303910", "pubmed:11333032", "pubmed:11505026", "pubmed:11590970", "pubmed:11728426", "pubmed:11750186", "pubmed:11754521", "pubmed:11810019", "pubmed:11826039", "pubmed:11981228", "pubmed:12824058", "pubmed:12829422", "pubmed:12888778", "pubmed:12946583", "pubmed:14674846", "pubmed:15019421", "pubmed:15239123", "pubmed:15285839", "pubmed:15464411", "pubmed:15465973", "pubmed:15749123", "pubmed:15900217", "pubmed:15902919", "pubmed:16084479", "pubmed:16133132", "pubmed:16352430", "pubmed:16390872", "pubmed:16737463", "pubmed:16891664", "pubmed:16934862", "pubmed:17043811", "pubmed:17190852", "pubmed:17663926", "pubmed:17687877", "pubmed:18095657", "pubmed:18249266", "pubmed:18320157", "pubmed:18347649", "pubmed:18408978", "pubmed:18411066", "pubmed:18456322", "pubmed:18513832", "pubmed:18922656", "pubmed:18925476", "pubmed:19280886", "pubmed:19359288", "pubmed:19384566", "pubmed:19458312", "pubmed:19851413", "pubmed:19901811", "pubmed:21600756", "pubmed:21762181", "pubmed:21881875", "pubmed:21967628", "pubmed:22019193", "pubmed:22222864", "pubmed:22261437", "pubmed:22286266", "pubmed:22306018", "pubmed:22331491", "pubmed:22336593", "reaxys:1718733", "umbbd.compound:c0038", "wikipedia.en:Ethanol"], "generalized_empirical_formula": ["C2H6O"], "has_alternative_id": ["CHEBI:14222", "CHEBI:23978", "CHEBI:30878", "CHEBI:30880", "CHEBI:42377", "CHEBI:44594", "CHEBI:4879"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:16236"], "inchi_key_string": ["LFQSCWFLJHTTHZ-UHFFFAOYSA-N"], "inchi_string": ["InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"], "mass": ["46.069"], "monoisotopic_mass": ["46.04186"], "smiles_string": ["CCO"]}, "synonyms": ["1-hydroxyethane", "Aethanol", "Aethylalkohol", "Alkohol", "C2H5OH", "Dehydrated ethanol", "ETHANOL", "ETHANOL", "EtOH", "Ethanol", "Ethanol", "Ethyl alcohol", "Methylcarbinol", "[CH2Me(OH)]", "[OEtH]", "alcohol etilico", "alcohol", "alcool ethylique", "etanol", "ethanol", "ethanol", "hydroxyethane", "spiritus vini"], "secondary": {"asserted": {"id": "CHEBI:16236", "label": "ethanol"}, "exact_current_rows": [{"label": "Ethanol", "match_type": "preferred_term", "identifier": "CHEBI:16236", "preferred_term": "Ethanol", "ontology_id": "CHEBI:16236", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}, {"layer": "owner-1", "path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml", "field": "ingredients[0]", "name": "Malt extract"}, {"layer": "owner-1", "path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml", "field": "ingredients[1]", "name": "Yeast extract"}, {"layer": "owner-1", "path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml", "field": "ingredients[2]", "name": "Agar", "primary": {"id": "CHEBI:2509", "label": "agar"}, "canonical_label": "agar", "label_equal": true, "definition": ["A complex mixture of polysaccharides extracted from species of red algae. Its two main components are agarose and agaropectin. Agarose is the component responsible for the high-strength gelling properties of agar, while agaropectin provides the viscous properties."], "annotations": {"database_cross_reference": ["cas:9002-18-0", "kegg.compound:C08815", "pubmed:25603143", "pubmed:25842535", "pubmed:25959629", "pubmed:26043937", "pubmed:26050892", "pubmed:26116384", "reaxys:8538728", "wikipedia.en:Agar"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:2509"]}, "synonyms": [], "secondary": {"asserted": {"id": "CHEBI:2509", "label": "agar"}, "exact_current_rows": [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}, {"layer": "owner-1", "path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml", "field": "ingredients[3]", "name": "Ethanol", "primary": {"id": "CHEBI:16236", "label": "ethanol"}, "canonical_label": "ethanol", "label_equal": true, "definition": ["A primary alcohol that is ethane in which one of the hydrogens is substituted by a hydroxy group."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:64-17-5", "drugbank:DB00898", "drugcentral:1076", "gmelin:787", "hmdb:HMDB0000108", "kegg.compound:C00469", "kegg.drug:D00068", "kegg.drug:D06542", "knapsack:C00019560", "metacyc.compound:ETOH", "molbase:858", "molbase:859", "pdb-ccd:EOH", "ppdb:1373", "pubmed:11046114", "pubmed:11090978", "pubmed:11198720", "pubmed:11200745", "pubmed:11262320", "pubmed:11303910", "pubmed:11333032", "pubmed:11505026", "pubmed:11590970", "pubmed:11728426", "pubmed:11750186", "pubmed:11754521", "pubmed:11810019", "pubmed:11826039", "pubmed:11981228", "pubmed:12824058", "pubmed:12829422", "pubmed:12888778", "pubmed:12946583", "pubmed:14674846", "pubmed:15019421", "pubmed:15239123", "pubmed:15285839", "pubmed:15464411", "pubmed:15465973", "pubmed:15749123", "pubmed:15900217", "pubmed:15902919", "pubmed:16084479", "pubmed:16133132", "pubmed:16352430", "pubmed:16390872", "pubmed:16737463", "pubmed:16891664", "pubmed:16934862", "pubmed:17043811", "pubmed:17190852", "pubmed:17663926", "pubmed:17687877", "pubmed:18095657", "pubmed:18249266", "pubmed:18320157", "pubmed:18347649", "pubmed:18408978", "pubmed:18411066", "pubmed:18456322", "pubmed:18513832", "pubmed:18922656", "pubmed:18925476", "pubmed:19280886", "pubmed:19359288", "pubmed:19384566", "pubmed:19458312", "pubmed:19851413", "pubmed:19901811", "pubmed:21600756", "pubmed:21762181", "pubmed:21881875", "pubmed:21967628", "pubmed:22019193", "pubmed:22222864", "pubmed:22261437", "pubmed:22286266", "pubmed:22306018", "pubmed:22331491", "pubmed:22336593", "reaxys:1718733", "umbbd.compound:c0038", "wikipedia.en:Ethanol"], "generalized_empirical_formula": ["C2H6O"], "has_alternative_id": ["CHEBI:14222", "CHEBI:23978", "CHEBI:30878", "CHEBI:30880", "CHEBI:42377", "CHEBI:44594", "CHEBI:4879"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:16236"], "inchi_key_string": ["LFQSCWFLJHTTHZ-UHFFFAOYSA-N"], "inchi_string": ["InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"], "mass": ["46.069"], "monoisotopic_mass": ["46.04186"], "smiles_string": ["CCO"]}, "synonyms": ["1-hydroxyethane", "Aethanol", "Aethylalkohol", "Alkohol", "C2H5OH", "Dehydrated ethanol", "ETHANOL", "ETHANOL", "EtOH", "Ethanol", "Ethanol", "Ethyl alcohol", "Methylcarbinol", "[CH2Me(OH)]", "[OEtH]", "alcohol etilico", "alcohol", "alcool ethylique", "etanol", "ethanol", "ethanol", "hydroxyethane", "spiritus vini"], "secondary": {"asserted": {"id": "CHEBI:16236", "label": "ethanol"}, "exact_current_rows": [{"label": "Ethanol", "match_type": "preferred_term", "identifier": "CHEBI:16236", "preferred_term": "Ethanol", "ontology_id": "CHEBI:16236", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}], "legacy": []} |
+| kg-matcher | src/culturemech/match/kg_media_matcher.py; _load_kg_microbe_data; extract_recipe_ingredients; find_exact_match | context_only | Current matcher uses medium→solution and direct solution→CHEBI/FOODON has_part edges, normalizes graph CURIE numeric suffixes, and compares ingredient sets ignoring quantities. Ungrounded local rows and nested solution traversal are not added. The current implementation points to data/transformed/mediadive. |
+| kg-documentation | docs/KG_MICROBE_MATCHING.md; Installation and exact-set matching sections | context_only | Current documentation points to data/transformed/mediadive/nodes.tsv and edges.tsv. The skill prerequisite transformed_last9 path is not the current implementation path; both were checked directly. |
+| kg-nodes | /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/kg-microbe/data/transformed/mediadive/nodes.tsv; Exact external snapshot copied before assessment; /private/tmp/culturemech-review-work-batch016/153/kg-snapshot/nodes.tsv | context_only | Read exact node 254 and relevant solution 520 rows; full snapshot hash is pinned. Source mtime is a filesystem fact, not a publication date. |
+| kg-edges | /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/kg-microbe/data/transformed/mediadive/edges.tsv; Exact external snapshot copied before assessment; /private/tmp/culturemech-review-work-batch016/153/kg-snapshot/edges.tsv | context_only | Read exact node 254 and relevant solution 520 rows; full snapshot hash is pinned. Source mtime is a filesystem fact, not a publication date. |
+| kg-availability | /private/tmp/culturemech-review-work-batch016/153/kg-graph-availability.json; Ignored-inclusive owned-tree filename enumeration and direct documented/skill-path existence checks | context_only | {"at": "2026-10-21T10:26:57.104250+00:00", "command": ["rg", "--files", "--no-ignore", "--hidden", "."], "cwd": "/private/tmp/culturemech-record-review-20261019-batch-016", "exit_code": 0, "ignored_included": true, "owned_tree_hits": [], "exact_documented_candidates": [{"path": "/private/tmp/culturemech-record-review-20261019-batch-016/data/transformed/mediadive/nodes.tsv", "is_file": false, "bytes": null}, {"path": "/private/tmp/culturemech-record-review-20261019-batch-016/data/transformed/mediadive/edges.tsv", "is_file": false, "bytes": null}, {"path": "/private/tmp/culturemech-record-review-20261019-batch-016/data/transformed/mediadive/nodes.tsv.gz", "is_file": false, "bytes": null}, {"path": "/private/tmp/culturemech-record-review-20261019-batch-016/data/transformed/mediadive/edges.tsv.gz", "is_file": false, "bytes": null}, {"path": "/private/tmp/culturemech-record-review-20261019-batch-016/data/transformed_last9/mediadive/nodes.tsv", "is_file": false, "bytes": null}, {"path": "/private/tmp/culturemech-record-review-20261019-batch-016/data/transformed_last9/mediadive/edges.tsv", "is_file": false, "bytes": null}, {"path": "/private/tmp/culturemech-record-review-20261019-batch-016/data/transformed_last9/mediadive/nodes.tsv.gz", "is_file": false, "bytes": null}, {"path": "/private/tmp/culturemech-record-review-20261019-batch-016/data/transformed_last9/mediadive/edges.tsv.gz", "is_file": false, "bytes": null}, {"path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/kg-microbe/data/transformed/mediadive/nodes.tsv", "is_file": true, "bytes": 3089399}, {"path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/kg-microbe/data/transformed/mediadive/edges.tsv", "is_file": true, "bytes": 22124764}, {"path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/kg-microbe/data/transformed/mediadive/nodes.tsv.gz", "is_file": false, "bytes": null}, {"path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/kg-microbe/data/transformed/mediadive/edges.tsv.gz", "is_file": false, "bytes": null}, {"path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/kg-microbe/data/transformed_last9/mediadive/nodes.tsv", "is_file": false, "bytes": null}, {"path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/kg-microbe/data/transformed_last9/mediadive/edges.tsv", "is_file": false, "bytes": null}, {"path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/kg-microbe/data/transformed_last9/mediadive/nodes.tsv.gz", "is_file": false, "bytes": null}, {"path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/kg-microbe/data/transformed_last9/mediadive/edges.tsv.gz", "is_file": false, "bytes": null}], "scope": "Recursive ignored-inclusive filename enumeration only of owned016, plus direct existence checks of exact current-documentation and skill paths under owned016 and the explicitly named KG-Microbe checkout. No claim about other user directories or remote graphs."} |
+| kg-projection | /private/tmp/culturemech-review-work-batch016/153/kg-snapshot/assessment.json; Node254, medium→solution 520 and all five direct ingredient edges | refutes | {"started_at": "2026-10-21T10:27:16.945624+00:00", "finished_at": "2026-10-21T10:27:17.255188+00:00", "files": [{"source_path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/kg-microbe/data/transformed/mediadive/nodes.tsv", "snapshot_path": "/private/tmp/culturemech-review-work-batch016/153/kg-snapshot/nodes.tsv", "sha256": "091f399834f46260f59002e617e76ee292742a4bf2ebb31ca1b4790a798a2e6c", "bytes": 3089399, "source_mtime_utc": "2026-10-18T09:03:12.475948+00:00"}, {"source_path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/kg-microbe/data/transformed/mediadive/edges.tsv", "snapshot_path": "/private/tmp/culturemech-review-work-batch016/153/kg-snapshot/edges.tsv", "sha256": "4e933d1e2412fb1aad74e60719a6a64dfa34862ff0a6b84e93d78da5ce13dd8b", "bytes": 22124764, "source_mtime_utc": "2026-10-18T09:03:09.593316+00:00"}], "edge_header": ["subject", "predicate", "object", "relation", "primary_knowledge_source", "knowledge_level", "agent_type", "g_l", "mmol_l", "publications", "source_assertion_id", "source_record", "unit", "value"], "medium_id": "mediadive.medium:254", "medium_to_solution_edges": [{"subject": "mediadive.medium:254", "predicate": "biolink:has_part", "object": "mediadive.solution:520", "relation": "BFO:0000051", "primary_knowledge_source": "infores:mediadive", "knowledge_level": "observation", "agent_type": "manual_agent", "g_l": "", "mmol_l": "", "publications": "", "source_assertion_id": "", "source_record": "", "unit": "", "value": ""}], "solution_to_object_edges": [{"subject": "mediadive.solution:520", "predicate": "biolink:has_part", "object": "FOODON:03315426", "relation": "BFO:0000051", "primary_knowledge_source": "infores:mediadive", "knowledge_level": "observation", "agent_type": "manual_agent", "g_l": "5.0", "mmol_l": "", "publications": "", "source_assertion_id": "mediadive.solution:520#recipe/2", "source_record": "{\"amount\":5,\"compound\":\"Yeast extract\",\"compound_id\":16,\"g_l\":5,\"optional\":0,\"recipe_order\":2,\"unit\":\"g\"}", "unit": "g", "value": "5.0"}, {"subject": "mediadive.solution:520", "predicate": "biolink:has_part", "object": "CHEBI:16236", "relation": "BFO:0000051", "primary_knowledge_source": "infores:mediadive", "knowledge_level": "observation", "agent_type": "manual_agent", "g_l": "", "mmol_l": "", "publications": "", "source_assertion_id": "mediadive.solution:520#recipe/5", "source_record": "{\"amount\":60,\"attribute\":\"50% v/v\",\"compound\":\"Ethanol\",\"compound_id\":201,\"optional\":0,\"recipe_order\":5,\"unit\":\"ml\"}", "unit": "ml", "value": "60.0"}, {"subject": "mediadive.solution:520", "predicate": "biolink:has_part", "object": "FOODON:03301056", "relation": "BFO:0000051", "primary_knowledge_source": "infores:mediadive", "knowledge_level": "observation", "agent_type": "manual_agent", "g_l": "15.0", "mmol_l": "", "publications": "", "source_assertion_id": "mediadive.solution:520#recipe/1", "source_record": "{\"amount\":15,\"compound\":\"Malt extract\",\"compound_id\":116,\"g_l\":15,\"optional\":0,\"recipe_order\":1,\"unit\":\"g\"}", "unit": "g", "value": "15.0"}, {"subject": "mediadive.solution:520", "predicate": "biolink:has_part", "object": "CHEBI:15377", "relation": "BFO:0000051", "primary_knowledge_source": "infores:mediadive", "knowledge_level": "observation", "agent_type": "manual_agent", "g_l": "", "mmol_l": "", "publications": "", "source_assertion_id": "mediadive.solution:520#recipe/4", "source_record": "{\"amount\":940,\"compound\":\"Distilled water\",\"compound_id\":4,\"optional\":0,\"recipe_order\":4,\"unit\":\"ml\"}", "unit": "ml", "value": "940.0"}, {"subject": "mediadive.solution:520", "predicate": "biolink:has_part", "object": "CHEBI:2509", "relation": "BFO:0000051", "primary_knowledge_source": "infores:mediadive", "knowledge_level": "observation", "agent_type": "manual_agent", "g_l": "15.0", "mmol_l": "44.5991", "publications": "", "source_assertion_id": "mediadive.solution:520#recipe/3", "source_record": "{\"amount\":15,\"compound\":\"Agar\",\"compound_id\":3,\"g_l\":15,\"mmol_l\":44.5991,\"optional\":0,\"recipe_order\":3,\"unit\":\"g\"}", "unit": "g", "value": "15.0"}], "selected_nodes": [{"id": "CHEBI:15377", "category": "biolink:ChemicalEntity", "name": "Distilled water", "description": "", "xref": "MIM:Distilled_Water", "provided_by": "infores:mediadive", "synonym": "BOUND WATER&#124;CAS:7732-18-5&#124;Distiled water&#124;Distilled water (for liquid medium)&#124;Distilled water (for solid medium)&#124;H(2)O&#124;HOH&#124;WATER&#124;Wasser&#124;[OH2]&#124;acqua&#124;agua&#124;aqua&#124;dH2O&#124;dihydridooxygen&#124;dihydrogen oxide&#124;eau&#124;hydrogen hydroxide&#124;oxidane", "deprecated": "", "same_as": ""}, {"id": "CHEBI:16236", "category": "biolink:ChemicalEntity", "name": "Ethanol", "description": "", "xref": "", "provided_by": "infores:mediadive", "synonym": "1-hydroxyethane&#124;Aethanol&#124;Aethylalkohol&#124;Alkohol&#124;C2H5OH&#124;Dehydrated ethanol&#124;EtOH&#124;Ethyl alcohol&#124;Methylcarbinol&#124;[CH2Me(OH)]&#124;[OEtH]&#124;alcohol&#124;alcohol etilico&#124;alcool ethylique&#124;carbon source: ethanol&#124;etanol&#124;hydroxyethane&#124;produces: ethanol&#124;spiritus vini", "deprecated": "", "same_as": ""}, {"id": "CHEBI:2509", "category": "biolink:ChemicalEntity", "name": "Agar", "description": "", "xref": "", "provided_by": "infores:mediadive", "synonym": "", "deprecated": "", "same_as": ""}, {"id": "FOODON:03301056", "category": "biolink:Food", "name": "Malt extract", "description": "", "xref": "", "provided_by": "infores:mediadive", "synonym": "", "deprecated": "", "same_as": ""}, {"id": "FOODON:03315426", "category": "biolink:Food", "name": "Yeast extract", "description": "", "xref": "", "provided_by": "infores:mediadive", "synonym": "", "deprecated": "", "same_as": ""}, {"id": "mediadive.medium:254", "category": "biolink:GrowthMedium&#124;biolink:ComplexMolecularMixture", "name": "ACETOBACTER PEROXYDANS MEDIUM", "description": "", "xref": "", "provided_by": "infores:mediadive", "synonym": "", "deprecated": "", "same_as": ""}, {"id": "mediadive.solution:520", "category": "biolink:ChemicalMixture", "name": "Main sol. 254", "description": "", "xref": "", "provided_by": "infores:mediadive", "synonym": "", "deprecated": "", "same_as": ""}], "graph_projected_ingredient_set": ["CHEBI:15377", "CHEBI:16236", "CHEBI:2509", "FOODON:3301056", "FOODON:3315426"], "target_primary_ingredient_set": ["CHEBI:16236", "CHEBI:2509"], "exact_set_equal": false, "algorithm": "Inspected current KGMediaMatcher: medium has_part solution, direct solution has_part CHEBI/FOODON objects, normalize graph numeric CURIE suffix; amounts, ungrounded rows and nested solution traversal are excluded. No full-corpus matcher/export executed.", "limits": "Local snapshot provenance is exact path/hash/time, not an authenticated remote release or original historical matching snapshot. This confirms or refutes only the asserted node254 projected set in these bytes; no ranking/tie-break identity or formulation equality is inferred."} |
+| history | data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml; Every target and maintained owner history and ingredient curation timestamp | refutes | [{"path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml", "field_path": "curation_history[0].timestamp", "value": "2026-01-27T01:15:02.fZ", "valid_ISO_datetime": false, "timezone_aware": false}, {"path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml", "field_path": "curation_history[1].timestamp", "value": "2026-02-03T11:19:16.698629", "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml", "field_path": "curation_history[2].timestamp", "value": "2026-03-13T06:19:27.906945Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml", "field_path": "curation_history[3].timestamp", "value": "2026-03-17T06:30:47.000000Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml", "field_path": "curation_history[4].timestamp", "value": "2026-03-17T19:45:43.209050+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml", "field_path": "curation_history[5].timestamp", "value": "2026-06-05T07:40:21.912101+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml", "field_path": "curation_history[6].timestamp", "value": "2026-08-06T03:04:46.206305+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml", "field_path": "curation_history[7].timestamp", "value": "2026-08-06T03:04:46.206354+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml", "field_path": "curation_history[0].timestamp", "value": "2026-01-27T01:15:02.fZ", "valid_ISO_datetime": false, "timezone_aware": false}, {"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml", "field_path": "curation_history[1].timestamp", "value": "2026-02-03T11:19:16.698629", "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml", "field_path": "curation_history[2].timestamp", "value": "2026-03-13T06:19:27.906945Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml", "field_path": "curation_history[3].timestamp", "value": "2026-03-17T06:30:47.000000Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml", "field_path": "curation_history[4].timestamp", "value": "2026-03-17T19:45:43.209050+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml", "field_path": "curation_history[5].timestamp", "value": "2026-06-05T07:40:21.912101+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml", "field_path": "curation_history[6].timestamp", "value": "2026-10-07T22:47:39.592416+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml", "field_path": "curation_history[0].timestamp", "value": "2026-01-26T17:53:10.600366Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml", "field_path": "curation_history[1].timestamp", "value": "2026-03-13T06:19:03.352968Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml", "field_path": "curation_history[2].timestamp", "value": "2026-03-17T06:30:06.000000Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml", "field_path": "curation_history[3].timestamp", "value": "2026-03-17T19:45:15.270468+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml", "field_path": "curation_history[4].timestamp", "value": "2026-06-05T07:40:46.729362+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml", "field_path": "curation_history[5].timestamp", "value": "2026-10-07T10:55:41.454416+00:00", "valid_ISO_datetime": true, "timezone_aware": true}] |
+| merge | src/culturemech/merge/merger.py; RecipeMerger; merge_formulation_evidence; maintained formulation-aware merge context | context_only | The target is a generated merge with the exact normalized contributors pinned by inspection. The old ingredient-set fingerprint is not concentration, preparation or source equivalence. Current formulation-aware merging preserves only compatible assertions. No merge was run; verify owners and preview current grouping before separately authorized regeneration. |
+| exporter | src/culturemech/export/kgx_export.py; medium_to_ingredient_edge; medium_to_solution_edge; _resolved_ingredient_id; _quantity | context_only | Current export consumes structured ingredient/solution identities and quantities, resolving against the pinned MIM index before fallback. It does not independently recover missing stock stages, source qualifiers or final volume. No export or resulting edge count is claimed. |
+
+## Limits And Additional Notes
+
+- Provider main volume 1000 mL is a declared normalization basis. The primary lists 940 mL water and 60 mL ethanol solution; their arithmetic sum is not a measured final volume. No density-based mass conversion is attempted.
+- The KG snapshot is authenticated only by its observed local path, exact bytes and access time, not as a remote release or the historical graph used when this field was populated. The exact graph result below is limited to these bytes and the inspected current matcher.
+- The current graph includes water and two FOODON-linked extracts omitted from the local primary projection. This mismatch is not evidence that node 254 denotes the wrong source medium, nor authority to invent missing recipe groundings.
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T103005Z-culturemech-004656-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: acetobacter_peroxydans_medium (CultureMech:004656)'
+started_at: '2026-10-21T10:23:10Z'
+finished_at: '2026-10-21T10:30:05Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The exact DSMZ/KOMODO 254 source and two maintained owners resolve. All three
+  local formulae misrepresent a 60 mL dose of 50% v/v ethanol as 60 g/L. The generated
+  target also omits the maintained amount evidence and DSMZ owner preparation. An
+  available, hashed KG snapshot confirms the correct medium node but fails the current
+  exact ingredient-projection criterion. Four canonical diagnostics pass; the additional
+  graph comparison is a fully assessed failure.
+source:
+  git_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/match-kg-microbe/SKILL.md
+    sha256: add85aafc1e18164de2a9717cc9d63e5e20f34a1d597568a0c6d8b039c574a99
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml
+    sha256: f2222014eef1101a12043b1be69816930de27bebec714474e226fa338a33c2fe
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml
+    sha256: 5166a294baca59387d9d6efe94ab5ae9f8068991cee1b4ae5d5f072903cb13b6
+    role: context
+  - path: data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml
+    sha256: 98b1fe76ce2e68a6bcd3c307574aa7ee65d1430fcb1d84d93f96dc1ba55ba9ca
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/KG_MICROBE_MATCHING.md
+    sha256: 1b01e76b7b7b2067490b1fcd290e906b18bbebecc82ac4c607b6864708ae46c1
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/enrich_with_kg_microbe_matches.py
+    sha256: 61351f99ef2cb0cef03e74ad92d21dcf3b38df77a06602bdac814974e7728eeb
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/resolve_komodo_compositions.py
+    sha256: f45bc52a8efaa66c9a93c109a40c7d2763ac9f49c9009d92a4c0a0a41b7c28da
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/komodo_web_raw_yaml.py
+    sha256: a1a37015b4e6bac657e49f375b39a319815cc6b02a02135674a858a8b6eab03a
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/komodo_web_fetcher.py
+    sha256: 89c510caa08d989b7ec6cee9ac17cc2f0faab606fe8a29ca435df476e52ff004
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/match/kg_media_matcher.py
+    sha256: 43f01f4b6e9285a60db437d7903646545ad6a6548e6b85f4478eb9b0e1b74e33
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 153; batch 016 item 3 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding fifteen task batches
+    contain 150 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+    contains 40 validated baseline bundles covering 2 current merged paths. Unioning
+    all prior lists with this baseline covers 152 of 6320 current merged paths, including
+    2 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:004656
+targets:
+- target_id: CultureMech:004656
+  path: data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml
+  label: acetobacter_peroxydans_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:004656
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch016/153/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-016/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch016/153/strict.tsv"
+  target_ids:
+  - CultureMech:004656
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:004656
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:004656
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:004656
+- check_id: kg-projected-set
+  name: Scoped current-matcher projection at asserted node 254
+  required: true
+  status: failed
+  summary: 'The required bounded graph comparison was available and completed: node
+    254 has five projected ingredients, while all three local layers expose only agar
+    and ethanol. The exact-set criterion fails in the pinned local snapshot. This
+    is an assessed failure, not an unavailable check.'
+  target_ids:
+  - CultureMech:004656
+  evidence_ids:
+  - kg-matcher
+  - kg-nodes
+  - kg-edges
+  - kg-projection
+- check_id: scoped-history
+  name: Scoped timestamp syntax and timezone inspection
+  required: false
+  status: failed
+  summary: 21 timestamps inspected, 4 invalid or timezone-naive; old provenance remains
+    unchanged.
+  target_ids:
+  - CultureMech:004656
+  evidence_ids:
+  - history
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T10:30:05Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T10:30:05Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T10:30:05Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T10:23:53.884023Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch016/153/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T10:23:55.479436Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-016/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch016/153/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T10:23:57.275781Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T10:23:58.355263Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: source-catalog
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch016/source-preflight-bound/153/source-catalog.json
+  locator: Complete bound per-record catalog, raw/text/metadata hashes and actual
+    original capture times
+  accessed_at: '2026-10-21T10:30:05Z'
+  support: context_only
+  summary: '[{"key": "dsmz254", "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium254.pdf",
+    "status": 200, "accessed_at": "2026-10-21T10:07:16.059178Z", "sha256": "d07893118c2ed9d99ecb99ae107061af0fae636d99b49512a04b09f6cd8fb975",
+    "metadata_sha256": "45ef87f82c9bbf295178fe8cecf67622c7200d0f3d6ad727f42ff6bd2b239c3a",
+    "content_limit": null, "reused_capture_from": null}, {"key": "mediadive254api",
+    "url": "https://mediadive.dsmz.de/rest/medium/254", "status": 200, "accessed_at":
+    "2026-10-21T10:07:15.156696Z", "sha256": "f7f6eea140a2d55375da0136f30d393df4a9512bed12115c9aaa4f0025356e0f",
+    "metadata_sha256": "c661a7f562e222a2dda2a3fae604691a17909f32cff9baa6031807615ac39e91",
+    "content_limit": null, "reused_capture_from": null}, {"key": "komodoMediaList",
+    "url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+    "status": 200, "accessed_at": "2026-10-19T23:42:38.189631Z", "sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a",
+    "metadata_sha256": "86dae57e216606f04b556d910cfbc03dca892b6c45c24a0c305e668e38f61a1a",
+    "content_limit": "Exact accession/source/variant metadata only; not formulation
+    concentration evidence.", "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch015-tail/147/komodoMediaList.json"},
+    {"key": "chebi16236", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16236",
+    "status": 200, "accessed_at": "2026-10-21T10:07:16.961534Z", "sha256": "afdacc5e401c6545f51974e897eb96eee2a5fa3aef15119edbd415cb7bb802b8",
+    "metadata_sha256": "009a0aca500954e33d11b5824494485fc6e61a61dac653db182c1f95fa6040c9",
+    "content_limit": null, "reused_capture_from": null}, {"key": "chebi2509", "url":
+    "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509",
+    "status": 200, "accessed_at": "2026-10-21T08:17:27.847373Z", "sha256": "8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a",
+    "metadata_sha256": "d1d8cc685e1d37a246e03af7dd70034246b06c8520cbd4cd8fd5b173cc171999",
+    "content_limit": "Exact source capture for later source-scoped review; no final
+    scientific assessment made.", "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch014-tail/140/chebi2509.json"}]'
+  snapshot_sha256: 406f4db93d9f96aff9fa413a054e25e6ab01203dafafa1cb2243f1dd628a6277
+- evidence_id: dsmz254
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium254.pdf
+  locator: page 1, complete formulation and preparation
+  accessed_at: '2026-10-21T10:07:16.059178Z'
+  support: supports
+  summary: Complete exact collection recipe and single preparation sentence inspected.
+    Malt, yeast, required agar, water and post-sterilization dilute-ethanol addition
+    have distinct source roles.
+  snapshot_sha256: d07893118c2ed9d99ecb99ae107061af0fae636d99b49512a04b09f6cd8fb975
+- evidence_id: mediadive254api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/254
+  locator: $.data.medium; $.data.solutions[0]
+  accessed_at: '2026-10-21T10:07:15.156696Z'
+  support: supports
+  summary: Exact API medium 254, solution 520 and all five recipe rows inspected.
+    The ethanol row has amount 60, unit ml, attribute 50% v/v and no g_l value. Provider
+    volume is 1000 mL.
+  snapshot_sha256: f7f6eea140a2d55375da0136f30d393df4a9512bed12115c9aaa4f0025356e0f
+- evidence_id: komodoMediaList
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: MediaList table row with first cell 254
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: Exact catalog row 254 maps the KOMODO accession to the same DSMZ recipe.
+    The existing root identity snippet and its historical response hash match the
+    bound bytes; this row contains no recipe amounts.
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: attached-evidence
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml
+  locator: 'Both owners: ingredients[0:3].evidence; KOMODO owner root evidence and
+    references'
+  accessed_at: '2026-10-21T10:30:05Z'
+  support: supports
+  summary: '[{"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml",
+    "field": "ingredients[0].evidence[0]", "exact_snippet_in_current_capture": true,
+    "source_sha256": "f7f6eea140a2d55375da0136f30d393df4a9512bed12115c9aaa4f0025356e0f",
+    "explanation": "Concentration evidence for ingredients[0].concentration (Malt
+    extract) in MediaDive medium 254; locator=$.data.solutions[0].recipe[0]. Provider
+    explicitly reports g_l=15; check: 15 g * 1 g/g / (1000 ml / 1000 ml per L) = 15
+    g/L. This supports the provider-declared main-recipe concentration, not an independently
+    measured final volume, a stock composition, or a downstream assay dilution. Water
+    alone does not establish final volume. Exact source ingredient labels/forms are
+    matched; secondary ontology mappings are not validated by this evidence. Additional
+    exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:44:26.917427+00:00;
+    response SHA256=f7f6eea140a2d55375da0136f30d393df4a9512bed12115c9aaa4f0025356e0f.
+    KOMODO accession 254 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;
+    mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.
+    The mapping supports identity only, not ingredient quantities or variants."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml",
+    "field": "ingredients[1].evidence[0]", "exact_snippet_in_current_capture": true,
+    "source_sha256": "f7f6eea140a2d55375da0136f30d393df4a9512bed12115c9aaa4f0025356e0f",
+    "explanation": "Concentration evidence for ingredients[1].concentration (Yeast
+    extract) in MediaDive medium 254; locator=$.data.solutions[0].recipe[1]. Provider
+    explicitly reports g_l=5; check: 5 g * 1 g/g / (1000 ml / 1000 ml per L) = 5 g/L.
+    This supports the provider-declared main-recipe concentration, not an independently
+    measured final volume, a stock composition, or a downstream assay dilution. Water
+    alone does not establish final volume. Exact source ingredient labels/forms are
+    matched; secondary ontology mappings are not validated by this evidence. Additional
+    exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:44:26.917427+00:00;
+    response SHA256=f7f6eea140a2d55375da0136f30d393df4a9512bed12115c9aaa4f0025356e0f.
+    KOMODO accession 254 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;
+    mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.
+    The mapping supports identity only, not ingredient quantities or variants."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml",
+    "field": "ingredients[2].evidence[0]", "exact_snippet_in_current_capture": true,
+    "source_sha256": "f7f6eea140a2d55375da0136f30d393df4a9512bed12115c9aaa4f0025356e0f",
+    "explanation": "Concentration evidence for ingredients[2].concentration (Agar)
+    in MediaDive medium 254; locator=$.data.solutions[0].recipe[2]. Provider explicitly
+    reports g_l=15; check: 15 g * 1 g/g / (1000 ml / 1000 ml per L) = 15 g/L. This
+    supports the provider-declared main-recipe concentration, not an independently
+    measured final volume, a stock composition, or a downstream assay dilution. Water
+    alone does not establish final volume. Exact source ingredient labels/forms are
+    matched; secondary ontology mappings are not validated by this evidence. Additional
+    exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:44:26.917427+00:00;
+    response SHA256=f7f6eea140a2d55375da0136f30d393df4a9512bed12115c9aaa4f0025356e0f.
+    KOMODO accession 254 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;
+    mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.
+    The mapping supports identity only, not ingredient quantities or variants."},
+    {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml",
+    "field": "ingredients[0].evidence[0]", "exact_snippet_in_current_capture": true,
+    "source_sha256": "f7f6eea140a2d55375da0136f30d393df4a9512bed12115c9aaa4f0025356e0f",
+    "explanation": "Concentration evidence for ingredients[0].concentration (Malt
+    extract) in MediaDive medium 254; locator=$.data.solutions[0].recipe[0]. Provider
+    explicitly reports g_l=15; check: 15 g * 1 g/g / (1000 ml / 1000 ml per L) = 15
+    g/L. This supports the provider-declared main-recipe concentration, not an independently
+    measured final volume, a stock composition, or a downstream assay dilution. Water
+    alone does not establish final volume. Exact source ingredient labels/forms are
+    matched; secondary ontology mappings are not validated by this evidence. Additional
+    exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:44:26.917427+00:00;
+    response SHA256=f7f6eea140a2d55375da0136f30d393df4a9512bed12115c9aaa4f0025356e0f."},
+    {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml",
+    "field": "ingredients[1].evidence[0]", "exact_snippet_in_current_capture": true,
+    "source_sha256": "f7f6eea140a2d55375da0136f30d393df4a9512bed12115c9aaa4f0025356e0f",
+    "explanation": "Concentration evidence for ingredients[1].concentration (Yeast
+    extract) in MediaDive medium 254; locator=$.data.solutions[0].recipe[1]. Provider
+    explicitly reports g_l=5; check: 5 g * 1 g/g / (1000 ml / 1000 ml per L) = 5 g/L.
+    This supports the provider-declared main-recipe concentration, not an independently
+    measured final volume, a stock composition, or a downstream assay dilution. Water
+    alone does not establish final volume. Exact source ingredient labels/forms are
+    matched; secondary ontology mappings are not validated by this evidence. Additional
+    exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:44:26.917427+00:00;
+    response SHA256=f7f6eea140a2d55375da0136f30d393df4a9512bed12115c9aaa4f0025356e0f."},
+    {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml",
+    "field": "ingredients[2].evidence[0]", "exact_snippet_in_current_capture": true,
+    "source_sha256": "f7f6eea140a2d55375da0136f30d393df4a9512bed12115c9aaa4f0025356e0f",
+    "explanation": "Concentration evidence for ingredients[2].concentration (Agar)
+    in MediaDive medium 254; locator=$.data.solutions[0].recipe[2]. Provider explicitly
+    reports g_l=15; check: 15 g * 1 g/g / (1000 ml / 1000 ml per L) = 15 g/L. This
+    supports the provider-declared main-recipe concentration, not an independently
+    measured final volume, a stock composition, or a downstream assay dilution. Water
+    alone does not establish final volume. Exact source ingredient labels/forms are
+    matched; secondary ontology mappings are not validated by this evidence. Additional
+    exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T10:44:26.917427+00:00;
+    response SHA256=f7f6eea140a2d55375da0136f30d393df4a9512bed12115c9aaa4f0025356e0f."}]'
+- evidence_id: importer
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition, _parse_api_solutions and _normalize_unit
+  accessed_at: '2026-10-21T10:30:05Z'
+  support: context_only
+  summary: Current code parses main-solution ingredients separately from stock additions
+    and preserves source units and stock identifiers. This is inspected current code
+    context, not a historical replay or validation of the inherited flattened rows.
+- evidence_id: resolver
+  kind: record_content
+  reference: src/culturemech/enrich/dsmz_resolver.py
+  locator: merge_composition and _add_enrichment_metadata
+  accessed_at: '2026-10-21T10:30:05Z'
+  support: context_only
+  summary: Current resolver copies ingredients/solutions and selected pH/classification
+    fields from a linked DSMZ source; this method does not copy preparation steps,
+    and its timestamp uses timezone-free datetime.now().isoformat(). The historical
+    record events are assessed separately; no historical execution was reproduced.
+- evidence_id: cleanup
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: _merge_ingredient_group
+  accessed_at: '2026-10-21T10:30:05Z'
+  support: context_only
+  summary: Current duplicate handling does not sum conflicting concentrations. The
+    local historical merge notes are observed facts, but the current function is not
+    proof of how a historical run produced those sums.
+- evidence_id: quantity-1
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/254
+  locator: $.data.solutions[0].recipe[0]
+  accessed_at: '2026-10-21T10:07:15.156696Z'
+  support: supports
+  summary: The current value follows provider g_l on its declared 1000 mL basis. Attach
+    exact source evidence and retain any percentage-stock attribute and dose. This
+    is provider normalization, not an independently measured final volume.
+  quote: "{\n                        \"recipe_order\": 1,\n                      \
+    \  \"compound\": \"Malt extract\",\n                        \"compound_id\": 116,\n\
+    \                        \"amount\": 15,\n                        \"unit\": \"\
+    g\",\n                        \"g_l\": 15,\n                        \"optional\"\
+    : 0\n                    }"
+  snapshot_sha256: f7f6eea140a2d55375da0136f30d393df4a9512bed12115c9aaa4f0025356e0f
+- evidence_id: quantity-2
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/254
+  locator: $.data.solutions[0].recipe[1]
+  accessed_at: '2026-10-21T10:07:15.156696Z'
+  support: supports
+  summary: The current value follows provider g_l on its declared 1000 mL basis. Attach
+    exact source evidence and retain any percentage-stock attribute and dose. This
+    is provider normalization, not an independently measured final volume.
+  quote: "{\n                        \"recipe_order\": 2,\n                      \
+    \  \"compound\": \"Yeast extract\",\n                        \"compound_id\":\
+    \ 16,\n                        \"amount\": 5,\n                        \"unit\"\
+    : \"g\",\n                        \"g_l\": 5,\n                        \"optional\"\
+    : 0\n                    }"
+  snapshot_sha256: f7f6eea140a2d55375da0136f30d393df4a9512bed12115c9aaa4f0025356e0f
+- evidence_id: quantity-3
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/254
+  locator: $.data.solutions[0].recipe[2]
+  accessed_at: '2026-10-21T10:07:15.156696Z'
+  support: supports
+  summary: The current value follows provider g_l on its declared 1000 mL basis. Attach
+    exact source evidence and retain any percentage-stock attribute and dose. This
+    is provider normalization, not an independently measured final volume.
+  quote: "{\n                        \"recipe_order\": 3,\n                      \
+    \  \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n    \
+    \                    \"amount\": 15,\n                        \"unit\": \"g\"\
+    ,\n                        \"g_l\": 15,\n                        \"mmol_l\": 44.5991,\n\
+    \                        \"optional\": 0\n                    }"
+  snapshot_sha256: f7f6eea140a2d55375da0136f30d393df4a9512bed12115c9aaa4f0025356e0f
+- evidence_id: quantity-4
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/254
+  locator: $.data.solutions[0].recipe[3]
+  accessed_at: '2026-10-21T10:07:15.156696Z'
+  support: supports
+  summary: Preserve the source solvent quantity 940 ml in its own stage. The provider
+    declares this solution volume as 1000 mL; water addition is not independent proof
+    of measured final volume.
+  quote: "{\n                        \"recipe_order\": 4,\n                      \
+    \  \"compound\": \"Distilled water\",\n                        \"compound_id\"\
+    : 4,\n                        \"amount\": 940,\n                        \"unit\"\
+    : \"ml\",\n                        \"optional\": 0\n                    }"
+  snapshot_sha256: f7f6eea140a2d55375da0136f30d393df4a9512bed12115c9aaa4f0025356e0f
+- evidence_id: quantity-5
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/254
+  locator: $.data.solutions[0].recipe[4]
+  accessed_at: '2026-10-21T10:07:15.156696Z'
+  support: context_only
+  summary: All three layers encode 60 G_PER_L, but the exact source adds 60 mL of
+    a 50% v/v ethanol solution. Preserve both liquid dose and stock strength; the
+    source supplies no ethanol g_l in this row.
+  quote: "{\n                        \"recipe_order\": 5,\n                      \
+    \  \"compound\": \"Ethanol\",\n                        \"compound_id\": 201,\n\
+    \                        \"attribute\": \"50% v/v\",\n                       \
+    \ \"amount\": 60,\n                        \"unit\": \"ml\",\n               \
+    \         \"optional\": 0\n                    }"
+  snapshot_sha256: f7f6eea140a2d55375da0136f30d393df4a9512bed12115c9aaa4f0025356e0f
+- evidence_id: quantity-6
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium254.pdf
+  locator: page 1, complete preparation sentence
+  accessed_at: '2026-10-21T10:07:16.059178Z'
+  support: supports
+  summary: Preserve the 50% v/v stock strength alongside the 60 mL dose. The DSMZ
+    owner already retains it in prose, but its ingredient concentration remains 60
+    g/L. Target and KOMODO owner omit the preparation text.
+  quote: After sterilization add 60 ml ethanol (50% v/v), sterilized by filtration.
+  snapshot_sha256: d07893118c2ed9d99ecb99ae107061af0fae636d99b49512a04b09f6cd8fb975
+- evidence_id: quantity-7
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium254.pdf
+  locator: page 1, complete preparation sentence
+  accessed_at: '2026-10-21T10:07:16.059178Z'
+  support: supports
+  summary: The source says after sterilization but supplies no numeric basal temperature.
+    The ethanol solution is explicitly filtered; do not substitute heat sterilization
+    for it.
+  quote: After sterilization add 60 ml ethanol (50% v/v), sterilized by filtration.
+  snapshot_sha256: d07893118c2ed9d99ecb99ae107061af0fae636d99b49512a04b09f6cd8fb975
+- evidence_id: quantity-8
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium254.pdf
+  locator: page 1, complete preparation sentence
+  accessed_at: '2026-10-21T10:07:16.059178Z'
+  support: supports
+  summary: No numeric duration is specified; no generic cycle is inserted.
+  quote: After sterilization add 60 ml ethanol (50% v/v), sterilized by filtration.
+  snapshot_sha256: d07893118c2ed9d99ecb99ae107061af0fae636d99b49512a04b09f6cd8fb975
+- evidence_id: chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: $._embedded.terms[0]
+  accessed_at: '2026-10-21T08:17:27.847373Z'
+  support: supports
+  summary: CHEBI:2509 resolves to agar and is not obsolete. Available definitions,
+    formulae, structures and synonyms were inspected; recipe amounts and supplied
+    forms are assessed separately.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: chebi16236
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16236
+  locator: $._embedded.terms[0]
+  accessed_at: '2026-10-21T10:07:16.961534Z'
+  support: supports
+  summary: CHEBI:16236 resolves to ethanol and is not obsolete. Available definitions,
+    formulae, structures and synonyms were inspected; recipe amounts and supplied
+    forms are assessed separately.
+  snapshot_sha256: afdacc5e401c6545f51974e897eb96eee2a5fa3aef15119edbd415cb7bb802b8
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Entire pinned snapshot; exact MAPPED/preferred_term rows for asserted CHEBI
+    keys and exact legacy-key lookup
+  accessed_at: '2026-10-21T10:30:05Z'
+  support: supports
+  summary: '{"metadata": {"byte_count": 824387, "consumer_contract_version": 1, "data_row_count":
+    9077, "header": ["label", "match_type", "identifier", "preferred_term", "ontology_id",
+    "mapping_status", "ambiguity"], "repository": "https://github.com/CultureBotAI/MediaIngredientMech",
+    "sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5",
+    "source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "source_path": "docs/data/label_index.csv"},
+    "counts": {"target": {"ingredient_instances": 4, "primary_CHEBI_instances": 2,
+    "secondary_current_asserted_instances": 2, "secondary_current_verified_instances":
+    2, "legacy_secondary_instances": 0, "primary_CHEBI_percent": 50.0, "secondary_verified_percent":
+    50.0}, "owner-0": {"ingredient_instances": 4, "primary_CHEBI_instances": 2, "secondary_current_asserted_instances":
+    2, "secondary_current_verified_instances": 2, "legacy_secondary_instances": 0,
+    "primary_CHEBI_percent": 50.0, "secondary_verified_percent": 50.0}, "owner-1":
+    {"ingredient_instances": 4, "primary_CHEBI_instances": 2, "secondary_current_asserted_instances":
+    2, "secondary_current_verified_instances": 2, "legacy_secondary_instances": 0,
+    "primary_CHEBI_percent": 50.0, "secondary_verified_percent": 50.0}}, "instances":
+    [{"layer": "target", "path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml",
+    "field": "ingredients[0]", "name": "Malt extract"}, {"layer": "target", "path":
+    "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml", "field": "ingredients[1]",
+    "name": "Yeast extract"}, {"layer": "target", "path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml",
+    "field": "ingredients[2]", "name": "Agar", "primary": {"id": "CHEBI:2509", "label":
+    "agar"}, "canonical_label": "agar", "label_equal": true, "definition": ["A complex
+    mixture of polysaccharides extracted from species of red algae. Its two main components
+    are agarose and agaropectin. Agarose is the component responsible for the high-strength
+    gelling properties of agar, while agaropectin provides the viscous properties."],
+    "annotations": {"database_cross_reference": ["cas:9002-18-0", "kegg.compound:C08815",
+    "pubmed:25603143", "pubmed:25842535", "pubmed:25959629", "pubmed:26043937", "pubmed:26050892",
+    "pubmed:26116384", "reaxys:8538728", "wikipedia.en:Agar"], "has_obo_namespace":
+    ["chebi_ontology"], "id": ["CHEBI:2509"]}, "synonyms": [], "secondary": {"asserted":
+    {"id": "CHEBI:2509", "label": "agar"}, "exact_current_rows": [{"label": "Agar",
+    "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term":
+    "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}}, {"layer": "target", "path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml",
+    "field": "ingredients[3]", "name": "Ethanol", "primary": {"id": "CHEBI:16236",
+    "label": "ethanol"}, "canonical_label": "ethanol", "label_equal": true, "definition":
+    ["A primary alcohol that is ethane in which one of the hydrogens is substituted
+    by a hydroxy group."], "annotations": {"charge": [0.0], "database_cross_reference":
+    ["cas:64-17-5", "drugbank:DB00898", "drugcentral:1076", "gmelin:787", "hmdb:HMDB0000108",
+    "kegg.compound:C00469", "kegg.drug:D00068", "kegg.drug:D06542", "knapsack:C00019560",
+    "metacyc.compound:ETOH", "molbase:858", "molbase:859", "pdb-ccd:EOH", "ppdb:1373",
+    "pubmed:11046114", "pubmed:11090978", "pubmed:11198720", "pubmed:11200745", "pubmed:11262320",
+    "pubmed:11303910", "pubmed:11333032", "pubmed:11505026", "pubmed:11590970", "pubmed:11728426",
+    "pubmed:11750186", "pubmed:11754521", "pubmed:11810019", "pubmed:11826039", "pubmed:11981228",
+    "pubmed:12824058", "pubmed:12829422", "pubmed:12888778", "pubmed:12946583", "pubmed:14674846",
+    "pubmed:15019421", "pubmed:15239123", "pubmed:15285839", "pubmed:15464411", "pubmed:15465973",
+    "pubmed:15749123", "pubmed:15900217", "pubmed:15902919", "pubmed:16084479", "pubmed:16133132",
+    "pubmed:16352430", "pubmed:16390872", "pubmed:16737463", "pubmed:16891664", "pubmed:16934862",
+    "pubmed:17043811", "pubmed:17190852", "pubmed:17663926", "pubmed:17687877", "pubmed:18095657",
+    "pubmed:18249266", "pubmed:18320157", "pubmed:18347649", "pubmed:18408978", "pubmed:18411066",
+    "pubmed:18456322", "pubmed:18513832", "pubmed:18922656", "pubmed:18925476", "pubmed:19280886",
+    "pubmed:19359288", "pubmed:19384566", "pubmed:19458312", "pubmed:19851413", "pubmed:19901811",
+    "pubmed:21600756", "pubmed:21762181", "pubmed:21881875", "pubmed:21967628", "pubmed:22019193",
+    "pubmed:22222864", "pubmed:22261437", "pubmed:22286266", "pubmed:22306018", "pubmed:22331491",
+    "pubmed:22336593", "reaxys:1718733", "umbbd.compound:c0038", "wikipedia.en:Ethanol"],
+    "generalized_empirical_formula": ["C2H6O"], "has_alternative_id": ["CHEBI:14222",
+    "CHEBI:23978", "CHEBI:30878", "CHEBI:30880", "CHEBI:42377", "CHEBI:44594", "CHEBI:4879"],
+    "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:16236"], "inchi_key_string":
+    ["LFQSCWFLJHTTHZ-UHFFFAOYSA-N"], "inchi_string": ["InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"],
+    "mass": ["46.069"], "monoisotopic_mass": ["46.04186"], "smiles_string": ["CCO"]},
+    "synonyms": ["1-hydroxyethane", "Aethanol", "Aethylalkohol", "Alkohol", "C2H5OH",
+    "Dehydrated ethanol", "ETHANOL", "ETHANOL", "EtOH", "Ethanol", "Ethanol", "Ethyl
+    alcohol", "Methylcarbinol", "[CH2Me(OH)]", "[OEtH]", "alcohol etilico", "alcohol",
+    "alcool ethylique", "etanol", "ethanol", "ethanol", "hydroxyethane", "spiritus
+    vini"], "secondary": {"asserted": {"id": "CHEBI:16236", "label": "ethanol"}, "exact_current_rows":
+    [{"label": "Ethanol", "match_type": "preferred_term", "identifier": "CHEBI:16236",
+    "preferred_term": "Ethanol", "ontology_id": "CHEBI:16236", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}]}}, {"layer": "owner-0", "path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml",
+    "field": "ingredients[0]", "name": "Malt extract"}, {"layer": "owner-0", "path":
+    "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml",
+    "field": "ingredients[1]", "name": "Yeast extract"}, {"layer": "owner-0", "path":
+    "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml",
+    "field": "ingredients[2]", "name": "Agar", "primary": {"id": "CHEBI:2509", "label":
+    "agar"}, "canonical_label": "agar", "label_equal": true, "definition": ["A complex
+    mixture of polysaccharides extracted from species of red algae. Its two main components
+    are agarose and agaropectin. Agarose is the component responsible for the high-strength
+    gelling properties of agar, while agaropectin provides the viscous properties."],
+    "annotations": {"database_cross_reference": ["cas:9002-18-0", "kegg.compound:C08815",
+    "pubmed:25603143", "pubmed:25842535", "pubmed:25959629", "pubmed:26043937", "pubmed:26050892",
+    "pubmed:26116384", "reaxys:8538728", "wikipedia.en:Agar"], "has_obo_namespace":
+    ["chebi_ontology"], "id": ["CHEBI:2509"]}, "synonyms": [], "secondary": {"asserted":
+    {"id": "CHEBI:2509", "label": "agar"}, "exact_current_rows": [{"label": "Agar",
+    "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term":
+    "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}}, {"layer": "owner-0", "path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml",
+    "field": "ingredients[3]", "name": "Ethanol", "primary": {"id": "CHEBI:16236",
+    "label": "ethanol"}, "canonical_label": "ethanol", "label_equal": true, "definition":
+    ["A primary alcohol that is ethane in which one of the hydrogens is substituted
+    by a hydroxy group."], "annotations": {"charge": [0.0], "database_cross_reference":
+    ["cas:64-17-5", "drugbank:DB00898", "drugcentral:1076", "gmelin:787", "hmdb:HMDB0000108",
+    "kegg.compound:C00469", "kegg.drug:D00068", "kegg.drug:D06542", "knapsack:C00019560",
+    "metacyc.compound:ETOH", "molbase:858", "molbase:859", "pdb-ccd:EOH", "ppdb:1373",
+    "pubmed:11046114", "pubmed:11090978", "pubmed:11198720", "pubmed:11200745", "pubmed:11262320",
+    "pubmed:11303910", "pubmed:11333032", "pubmed:11505026", "pubmed:11590970", "pubmed:11728426",
+    "pubmed:11750186", "pubmed:11754521", "pubmed:11810019", "pubmed:11826039", "pubmed:11981228",
+    "pubmed:12824058", "pubmed:12829422", "pubmed:12888778", "pubmed:12946583", "pubmed:14674846",
+    "pubmed:15019421", "pubmed:15239123", "pubmed:15285839", "pubmed:15464411", "pubmed:15465973",
+    "pubmed:15749123", "pubmed:15900217", "pubmed:15902919", "pubmed:16084479", "pubmed:16133132",
+    "pubmed:16352430", "pubmed:16390872", "pubmed:16737463", "pubmed:16891664", "pubmed:16934862",
+    "pubmed:17043811", "pubmed:17190852", "pubmed:17663926", "pubmed:17687877", "pubmed:18095657",
+    "pubmed:18249266", "pubmed:18320157", "pubmed:18347649", "pubmed:18408978", "pubmed:18411066",
+    "pubmed:18456322", "pubmed:18513832", "pubmed:18922656", "pubmed:18925476", "pubmed:19280886",
+    "pubmed:19359288", "pubmed:19384566", "pubmed:19458312", "pubmed:19851413", "pubmed:19901811",
+    "pubmed:21600756", "pubmed:21762181", "pubmed:21881875", "pubmed:21967628", "pubmed:22019193",
+    "pubmed:22222864", "pubmed:22261437", "pubmed:22286266", "pubmed:22306018", "pubmed:22331491",
+    "pubmed:22336593", "reaxys:1718733", "umbbd.compound:c0038", "wikipedia.en:Ethanol"],
+    "generalized_empirical_formula": ["C2H6O"], "has_alternative_id": ["CHEBI:14222",
+    "CHEBI:23978", "CHEBI:30878", "CHEBI:30880", "CHEBI:42377", "CHEBI:44594", "CHEBI:4879"],
+    "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:16236"], "inchi_key_string":
+    ["LFQSCWFLJHTTHZ-UHFFFAOYSA-N"], "inchi_string": ["InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"],
+    "mass": ["46.069"], "monoisotopic_mass": ["46.04186"], "smiles_string": ["CCO"]},
+    "synonyms": ["1-hydroxyethane", "Aethanol", "Aethylalkohol", "Alkohol", "C2H5OH",
+    "Dehydrated ethanol", "ETHANOL", "ETHANOL", "EtOH", "Ethanol", "Ethanol", "Ethyl
+    alcohol", "Methylcarbinol", "[CH2Me(OH)]", "[OEtH]", "alcohol etilico", "alcohol",
+    "alcool ethylique", "etanol", "ethanol", "ethanol", "hydroxyethane", "spiritus
+    vini"], "secondary": {"asserted": {"id": "CHEBI:16236", "label": "ethanol"}, "exact_current_rows":
+    [{"label": "Ethanol", "match_type": "preferred_term", "identifier": "CHEBI:16236",
+    "preferred_term": "Ethanol", "ontology_id": "CHEBI:16236", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}]}}, {"layer": "owner-1", "path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml",
+    "field": "ingredients[0]", "name": "Malt extract"}, {"layer": "owner-1", "path":
+    "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml", "field":
+    "ingredients[1]", "name": "Yeast extract"}, {"layer": "owner-1", "path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml",
+    "field": "ingredients[2]", "name": "Agar", "primary": {"id": "CHEBI:2509", "label":
+    "agar"}, "canonical_label": "agar", "label_equal": true, "definition": ["A complex
+    mixture of polysaccharides extracted from species of red algae. Its two main components
+    are agarose and agaropectin. Agarose is the component responsible for the high-strength
+    gelling properties of agar, while agaropectin provides the viscous properties."],
+    "annotations": {"database_cross_reference": ["cas:9002-18-0", "kegg.compound:C08815",
+    "pubmed:25603143", "pubmed:25842535", "pubmed:25959629", "pubmed:26043937", "pubmed:26050892",
+    "pubmed:26116384", "reaxys:8538728", "wikipedia.en:Agar"], "has_obo_namespace":
+    ["chebi_ontology"], "id": ["CHEBI:2509"]}, "synonyms": [], "secondary": {"asserted":
+    {"id": "CHEBI:2509", "label": "agar"}, "exact_current_rows": [{"label": "Agar",
+    "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term":
+    "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}}, {"layer": "owner-1", "path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml",
+    "field": "ingredients[3]", "name": "Ethanol", "primary": {"id": "CHEBI:16236",
+    "label": "ethanol"}, "canonical_label": "ethanol", "label_equal": true, "definition":
+    ["A primary alcohol that is ethane in which one of the hydrogens is substituted
+    by a hydroxy group."], "annotations": {"charge": [0.0], "database_cross_reference":
+    ["cas:64-17-5", "drugbank:DB00898", "drugcentral:1076", "gmelin:787", "hmdb:HMDB0000108",
+    "kegg.compound:C00469", "kegg.drug:D00068", "kegg.drug:D06542", "knapsack:C00019560",
+    "metacyc.compound:ETOH", "molbase:858", "molbase:859", "pdb-ccd:EOH", "ppdb:1373",
+    "pubmed:11046114", "pubmed:11090978", "pubmed:11198720", "pubmed:11200745", "pubmed:11262320",
+    "pubmed:11303910", "pubmed:11333032", "pubmed:11505026", "pubmed:11590970", "pubmed:11728426",
+    "pubmed:11750186", "pubmed:11754521", "pubmed:11810019", "pubmed:11826039", "pubmed:11981228",
+    "pubmed:12824058", "pubmed:12829422", "pubmed:12888778", "pubmed:12946583", "pubmed:14674846",
+    "pubmed:15019421", "pubmed:15239123", "pubmed:15285839", "pubmed:15464411", "pubmed:15465973",
+    "pubmed:15749123", "pubmed:15900217", "pubmed:15902919", "pubmed:16084479", "pubmed:16133132",
+    "pubmed:16352430", "pubmed:16390872", "pubmed:16737463", "pubmed:16891664", "pubmed:16934862",
+    "pubmed:17043811", "pubmed:17190852", "pubmed:17663926", "pubmed:17687877", "pubmed:18095657",
+    "pubmed:18249266", "pubmed:18320157", "pubmed:18347649", "pubmed:18408978", "pubmed:18411066",
+    "pubmed:18456322", "pubmed:18513832", "pubmed:18922656", "pubmed:18925476", "pubmed:19280886",
+    "pubmed:19359288", "pubmed:19384566", "pubmed:19458312", "pubmed:19851413", "pubmed:19901811",
+    "pubmed:21600756", "pubmed:21762181", "pubmed:21881875", "pubmed:21967628", "pubmed:22019193",
+    "pubmed:22222864", "pubmed:22261437", "pubmed:22286266", "pubmed:22306018", "pubmed:22331491",
+    "pubmed:22336593", "reaxys:1718733", "umbbd.compound:c0038", "wikipedia.en:Ethanol"],
+    "generalized_empirical_formula": ["C2H6O"], "has_alternative_id": ["CHEBI:14222",
+    "CHEBI:23978", "CHEBI:30878", "CHEBI:30880", "CHEBI:42377", "CHEBI:44594", "CHEBI:4879"],
+    "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:16236"], "inchi_key_string":
+    ["LFQSCWFLJHTTHZ-UHFFFAOYSA-N"], "inchi_string": ["InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"],
+    "mass": ["46.069"], "monoisotopic_mass": ["46.04186"], "smiles_string": ["CCO"]},
+    "synonyms": ["1-hydroxyethane", "Aethanol", "Aethylalkohol", "Alkohol", "C2H5OH",
+    "Dehydrated ethanol", "ETHANOL", "ETHANOL", "EtOH", "Ethanol", "Ethanol", "Ethyl
+    alcohol", "Methylcarbinol", "[CH2Me(OH)]", "[OEtH]", "alcohol etilico", "alcohol",
+    "alcool ethylique", "etanol", "ethanol", "ethanol", "hydroxyethane", "spiritus
+    vini"], "secondary": {"asserted": {"id": "CHEBI:16236", "label": "ethanol"}, "exact_current_rows":
+    [{"label": "Ethanol", "match_type": "preferred_term", "identifier": "CHEBI:16236",
+    "preferred_term": "Ethanol", "ontology_id": "CHEBI:16236", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}]}}], "legacy": []}'
+- evidence_id: kg-matcher
+  kind: record_content
+  reference: src/culturemech/match/kg_media_matcher.py
+  locator: _load_kg_microbe_data; extract_recipe_ingredients; find_exact_match
+  accessed_at: '2026-10-21T10:30:05Z'
+  support: context_only
+  summary: Current matcher uses medium→solution and direct solution→CHEBI/FOODON has_part
+    edges, normalizes graph CURIE numeric suffixes, and compares ingredient sets ignoring
+    quantities. Ungrounded local rows and nested solution traversal are not added.
+    The current implementation points to data/transformed/mediadive.
+- evidence_id: kg-documentation
+  kind: record_content
+  reference: docs/KG_MICROBE_MATCHING.md
+  locator: Installation and exact-set matching sections
+  accessed_at: '2026-10-21T10:30:05Z'
+  support: context_only
+  summary: Current documentation points to data/transformed/mediadive/nodes.tsv and
+    edges.tsv. The skill prerequisite transformed_last9 path is not the current implementation
+    path; both were checked directly.
+- evidence_id: kg-nodes
+  kind: database
+  reference: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/kg-microbe/data/transformed/mediadive/nodes.tsv
+  locator: Exact external snapshot copied before assessment; /private/tmp/culturemech-review-work-batch016/153/kg-snapshot/nodes.tsv
+  accessed_at: '2026-10-21T10:27:16.945624Z'
+  support: context_only
+  summary: Read exact node 254 and relevant solution 520 rows; full snapshot hash
+    is pinned. Source mtime is a filesystem fact, not a publication date.
+  snapshot_sha256: 091f399834f46260f59002e617e76ee292742a4bf2ebb31ca1b4790a798a2e6c
+- evidence_id: kg-edges
+  kind: database
+  reference: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/kg-microbe/data/transformed/mediadive/edges.tsv
+  locator: Exact external snapshot copied before assessment; /private/tmp/culturemech-review-work-batch016/153/kg-snapshot/edges.tsv
+  accessed_at: '2026-10-21T10:27:16.945624Z'
+  support: context_only
+  summary: Read exact node 254 and relevant solution 520 rows; full snapshot hash
+    is pinned. Source mtime is a filesystem fact, not a publication date.
+  snapshot_sha256: 4e933d1e2412fb1aad74e60719a6a64dfa34862ff0a6b84e93d78da5ce13dd8b
+- evidence_id: kg-availability
+  kind: search
+  reference: /private/tmp/culturemech-review-work-batch016/153/kg-graph-availability.json
+  locator: Ignored-inclusive owned-tree filename enumeration and direct documented/skill-path
+    existence checks
+  accessed_at: '2026-10-21T10:26:57.104250Z'
+  support: context_only
+  summary: '{"at": "2026-10-21T10:26:57.104250+00:00", "command": ["rg", "--files",
+    "--no-ignore", "--hidden", "."], "cwd": "/private/tmp/culturemech-record-review-20261019-batch-016",
+    "exit_code": 0, "ignored_included": true, "owned_tree_hits": [], "exact_documented_candidates":
+    [{"path": "/private/tmp/culturemech-record-review-20261019-batch-016/data/transformed/mediadive/nodes.tsv",
+    "is_file": false, "bytes": null}, {"path": "/private/tmp/culturemech-record-review-20261019-batch-016/data/transformed/mediadive/edges.tsv",
+    "is_file": false, "bytes": null}, {"path": "/private/tmp/culturemech-record-review-20261019-batch-016/data/transformed/mediadive/nodes.tsv.gz",
+    "is_file": false, "bytes": null}, {"path": "/private/tmp/culturemech-record-review-20261019-batch-016/data/transformed/mediadive/edges.tsv.gz",
+    "is_file": false, "bytes": null}, {"path": "/private/tmp/culturemech-record-review-20261019-batch-016/data/transformed_last9/mediadive/nodes.tsv",
+    "is_file": false, "bytes": null}, {"path": "/private/tmp/culturemech-record-review-20261019-batch-016/data/transformed_last9/mediadive/edges.tsv",
+    "is_file": false, "bytes": null}, {"path": "/private/tmp/culturemech-record-review-20261019-batch-016/data/transformed_last9/mediadive/nodes.tsv.gz",
+    "is_file": false, "bytes": null}, {"path": "/private/tmp/culturemech-record-review-20261019-batch-016/data/transformed_last9/mediadive/edges.tsv.gz",
+    "is_file": false, "bytes": null}, {"path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/kg-microbe/data/transformed/mediadive/nodes.tsv",
+    "is_file": true, "bytes": 3089399}, {"path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/kg-microbe/data/transformed/mediadive/edges.tsv",
+    "is_file": true, "bytes": 22124764}, {"path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/kg-microbe/data/transformed/mediadive/nodes.tsv.gz",
+    "is_file": false, "bytes": null}, {"path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/kg-microbe/data/transformed/mediadive/edges.tsv.gz",
+    "is_file": false, "bytes": null}, {"path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/kg-microbe/data/transformed_last9/mediadive/nodes.tsv",
+    "is_file": false, "bytes": null}, {"path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/kg-microbe/data/transformed_last9/mediadive/edges.tsv",
+    "is_file": false, "bytes": null}, {"path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/kg-microbe/data/transformed_last9/mediadive/nodes.tsv.gz",
+    "is_file": false, "bytes": null}, {"path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/kg-microbe/data/transformed_last9/mediadive/edges.tsv.gz",
+    "is_file": false, "bytes": null}], "scope": "Recursive ignored-inclusive filename
+    enumeration only of owned016, plus direct existence checks of exact current-documentation
+    and skill paths under owned016 and the explicitly named KG-Microbe checkout. No
+    claim about other user directories or remote graphs."}'
+  snapshot_sha256: b0f5dbe0882e76883a9add0afa8b5f02b82884068e5bbedba17d712f24081277
+  search_scope: Recursive ignored-inclusive filename enumeration only of owned016,
+    plus direct existence checks of exact current-documentation and skill paths under
+    owned016 and the explicitly named KG-Microbe checkout. No claim about other user
+    directories or remote graphs.
+- evidence_id: kg-projection
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch016/153/kg-snapshot/assessment.json
+  locator: Node254, medium→solution 520 and all five direct ingredient edges
+  accessed_at: '2026-10-21T10:27:17.255188Z'
+  support: refutes
+  summary: '{"started_at": "2026-10-21T10:27:16.945624+00:00", "finished_at": "2026-10-21T10:27:17.255188+00:00",
+    "files": [{"source_path": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/kg-microbe/data/transformed/mediadive/nodes.tsv",
+    "snapshot_path": "/private/tmp/culturemech-review-work-batch016/153/kg-snapshot/nodes.tsv",
+    "sha256": "091f399834f46260f59002e617e76ee292742a4bf2ebb31ca1b4790a798a2e6c",
+    "bytes": 3089399, "source_mtime_utc": "2026-10-18T09:03:12.475948+00:00"}, {"source_path":
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/kg-microbe/data/transformed/mediadive/edges.tsv",
+    "snapshot_path": "/private/tmp/culturemech-review-work-batch016/153/kg-snapshot/edges.tsv",
+    "sha256": "4e933d1e2412fb1aad74e60719a6a64dfa34862ff0a6b84e93d78da5ce13dd8b",
+    "bytes": 22124764, "source_mtime_utc": "2026-10-18T09:03:09.593316+00:00"}], "edge_header":
+    ["subject", "predicate", "object", "relation", "primary_knowledge_source", "knowledge_level",
+    "agent_type", "g_l", "mmol_l", "publications", "source_assertion_id", "source_record",
+    "unit", "value"], "medium_id": "mediadive.medium:254", "medium_to_solution_edges":
+    [{"subject": "mediadive.medium:254", "predicate": "biolink:has_part", "object":
+    "mediadive.solution:520", "relation": "BFO:0000051", "primary_knowledge_source":
+    "infores:mediadive", "knowledge_level": "observation", "agent_type": "manual_agent",
+    "g_l": "", "mmol_l": "", "publications": "", "source_assertion_id": "", "source_record":
+    "", "unit": "", "value": ""}], "solution_to_object_edges": [{"subject": "mediadive.solution:520",
+    "predicate": "biolink:has_part", "object": "FOODON:03315426", "relation": "BFO:0000051",
+    "primary_knowledge_source": "infores:mediadive", "knowledge_level": "observation",
+    "agent_type": "manual_agent", "g_l": "5.0", "mmol_l": "", "publications": "",
+    "source_assertion_id": "mediadive.solution:520#recipe/2", "source_record": "{\"amount\":5,\"compound\":\"Yeast
+    extract\",\"compound_id\":16,\"g_l\":5,\"optional\":0,\"recipe_order\":2,\"unit\":\"g\"}",
+    "unit": "g", "value": "5.0"}, {"subject": "mediadive.solution:520", "predicate":
+    "biolink:has_part", "object": "CHEBI:16236", "relation": "BFO:0000051", "primary_knowledge_source":
+    "infores:mediadive", "knowledge_level": "observation", "agent_type": "manual_agent",
+    "g_l": "", "mmol_l": "", "publications": "", "source_assertion_id": "mediadive.solution:520#recipe/5",
+    "source_record": "{\"amount\":60,\"attribute\":\"50% v/v\",\"compound\":\"Ethanol\",\"compound_id\":201,\"optional\":0,\"recipe_order\":5,\"unit\":\"ml\"}",
+    "unit": "ml", "value": "60.0"}, {"subject": "mediadive.solution:520", "predicate":
+    "biolink:has_part", "object": "FOODON:03301056", "relation": "BFO:0000051", "primary_knowledge_source":
+    "infores:mediadive", "knowledge_level": "observation", "agent_type": "manual_agent",
+    "g_l": "15.0", "mmol_l": "", "publications": "", "source_assertion_id": "mediadive.solution:520#recipe/1",
+    "source_record": "{\"amount\":15,\"compound\":\"Malt extract\",\"compound_id\":116,\"g_l\":15,\"optional\":0,\"recipe_order\":1,\"unit\":\"g\"}",
+    "unit": "g", "value": "15.0"}, {"subject": "mediadive.solution:520", "predicate":
+    "biolink:has_part", "object": "CHEBI:15377", "relation": "BFO:0000051", "primary_knowledge_source":
+    "infores:mediadive", "knowledge_level": "observation", "agent_type": "manual_agent",
+    "g_l": "", "mmol_l": "", "publications": "", "source_assertion_id": "mediadive.solution:520#recipe/4",
+    "source_record": "{\"amount\":940,\"compound\":\"Distilled water\",\"compound_id\":4,\"optional\":0,\"recipe_order\":4,\"unit\":\"ml\"}",
+    "unit": "ml", "value": "940.0"}, {"subject": "mediadive.solution:520", "predicate":
+    "biolink:has_part", "object": "CHEBI:2509", "relation": "BFO:0000051", "primary_knowledge_source":
+    "infores:mediadive", "knowledge_level": "observation", "agent_type": "manual_agent",
+    "g_l": "15.0", "mmol_l": "44.5991", "publications": "", "source_assertion_id":
+    "mediadive.solution:520#recipe/3", "source_record": "{\"amount\":15,\"compound\":\"Agar\",\"compound_id\":3,\"g_l\":15,\"mmol_l\":44.5991,\"optional\":0,\"recipe_order\":3,\"unit\":\"g\"}",
+    "unit": "g", "value": "15.0"}], "selected_nodes": [{"id": "CHEBI:15377", "category":
+    "biolink:ChemicalEntity", "name": "Distilled water", "description": "", "xref":
+    "MIM:Distilled_Water", "provided_by": "infores:mediadive", "synonym": "BOUND WATER|CAS:7732-18-5|Distiled
+    water|Distilled water (for liquid medium)|Distilled water (for solid medium)|H(2)O|HOH|WATER|Wasser|[OH2]|acqua|agua|aqua|dH2O|dihydridooxygen|dihydrogen
+    oxide|eau|hydrogen hydroxide|oxidane", "deprecated": "", "same_as": ""}, {"id":
+    "CHEBI:16236", "category": "biolink:ChemicalEntity", "name": "Ethanol", "description":
+    "", "xref": "", "provided_by": "infores:mediadive", "synonym": "1-hydroxyethane|Aethanol|Aethylalkohol|Alkohol|C2H5OH|Dehydrated
+    ethanol|EtOH|Ethyl alcohol|Methylcarbinol|[CH2Me(OH)]|[OEtH]|alcohol|alcohol etilico|alcool
+    ethylique|carbon source: ethanol|etanol|hydroxyethane|produces: ethanol|spiritus
+    vini", "deprecated": "", "same_as": ""}, {"id": "CHEBI:2509", "category": "biolink:ChemicalEntity",
+    "name": "Agar", "description": "", "xref": "", "provided_by": "infores:mediadive",
+    "synonym": "", "deprecated": "", "same_as": ""}, {"id": "FOODON:03301056", "category":
+    "biolink:Food", "name": "Malt extract", "description": "", "xref": "", "provided_by":
+    "infores:mediadive", "synonym": "", "deprecated": "", "same_as": ""}, {"id": "FOODON:03315426",
+    "category": "biolink:Food", "name": "Yeast extract", "description": "", "xref":
+    "", "provided_by": "infores:mediadive", "synonym": "", "deprecated": "", "same_as":
+    ""}, {"id": "mediadive.medium:254", "category": "biolink:GrowthMedium|biolink:ComplexMolecularMixture",
+    "name": "ACETOBACTER PEROXYDANS MEDIUM", "description": "", "xref": "", "provided_by":
+    "infores:mediadive", "synonym": "", "deprecated": "", "same_as": ""}, {"id": "mediadive.solution:520",
+    "category": "biolink:ChemicalMixture", "name": "Main sol. 254", "description":
+    "", "xref": "", "provided_by": "infores:mediadive", "synonym": "", "deprecated":
+    "", "same_as": ""}], "graph_projected_ingredient_set": ["CHEBI:15377", "CHEBI:16236",
+    "CHEBI:2509", "FOODON:3301056", "FOODON:3315426"], "target_primary_ingredient_set":
+    ["CHEBI:16236", "CHEBI:2509"], "exact_set_equal": false, "algorithm": "Inspected
+    current KGMediaMatcher: medium has_part solution, direct solution has_part CHEBI/FOODON
+    objects, normalize graph numeric CURIE suffix; amounts, ungrounded rows and nested
+    solution traversal are excluded. No full-corpus matcher/export executed.", "limits":
+    "Local snapshot provenance is exact path/hash/time, not an authenticated remote
+    release or original historical matching snapshot. This confirms or refutes only
+    the asserted node254 projected set in these bytes; no ranking/tie-break identity
+    or formulation equality is inferred."}'
+  snapshot_sha256: 108ef8b38a3171fb1320e2bed71f509ecfd43ba1b941abfe7299b28b49363abb
+- evidence_id: history
+  kind: record_content
+  reference: data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml
+  locator: Every target and maintained owner history and ingredient curation timestamp
+  accessed_at: '2026-10-21T10:30:05Z'
+  support: refutes
+  summary: '[{"path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml",
+    "field_path": "curation_history[0].timestamp", "value": "2026-01-27T01:15:02.fZ",
+    "valid_ISO_datetime": false, "timezone_aware": false}, {"path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml",
+    "field_path": "curation_history[1].timestamp", "value": "2026-02-03T11:19:16.698629",
+    "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml",
+    "field_path": "curation_history[2].timestamp", "value": "2026-03-13T06:19:27.906945Z",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml",
+    "field_path": "curation_history[3].timestamp", "value": "2026-03-17T06:30:47.000000Z",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml",
+    "field_path": "curation_history[4].timestamp", "value": "2026-03-17T19:45:43.209050+00:00",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml",
+    "field_path": "curation_history[5].timestamp", "value": "2026-06-05T07:40:21.912101+00:00",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml",
+    "field_path": "curation_history[6].timestamp", "value": "2026-08-06T03:04:46.206305+00:00",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml",
+    "field_path": "curation_history[7].timestamp", "value": "2026-08-06T03:04:46.206354+00:00",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml",
+    "field_path": "curation_history[0].timestamp", "value": "2026-01-27T01:15:02.fZ",
+    "valid_ISO_datetime": false, "timezone_aware": false}, {"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml",
+    "field_path": "curation_history[1].timestamp", "value": "2026-02-03T11:19:16.698629",
+    "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml",
+    "field_path": "curation_history[2].timestamp", "value": "2026-03-13T06:19:27.906945Z",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml",
+    "field_path": "curation_history[3].timestamp", "value": "2026-03-17T06:30:47.000000Z",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml",
+    "field_path": "curation_history[4].timestamp", "value": "2026-03-17T19:45:43.209050+00:00",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml",
+    "field_path": "curation_history[5].timestamp", "value": "2026-06-05T07:40:21.912101+00:00",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml",
+    "field_path": "curation_history[6].timestamp", "value": "2026-10-07T22:47:39.592416+00:00",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml",
+    "field_path": "curation_history[0].timestamp", "value": "2026-01-26T17:53:10.600366Z",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml",
+    "field_path": "curation_history[1].timestamp", "value": "2026-03-13T06:19:03.352968Z",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml",
+    "field_path": "curation_history[2].timestamp", "value": "2026-03-17T06:30:06.000000Z",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml",
+    "field_path": "curation_history[3].timestamp", "value": "2026-03-17T19:45:15.270468+00:00",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml",
+    "field_path": "curation_history[4].timestamp", "value": "2026-06-05T07:40:46.729362+00:00",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml",
+    "field_path": "curation_history[5].timestamp", "value": "2026-10-07T10:55:41.454416+00:00",
+    "valid_ISO_datetime": true, "timezone_aware": true}]'
+- evidence_id: merge
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: RecipeMerger; merge_formulation_evidence; maintained formulation-aware
+    merge context
+  accessed_at: '2026-10-21T10:30:05Z'
+  support: context_only
+  summary: The target is a generated merge with the exact normalized contributors
+    pinned by inspection. The old ingredient-set fingerprint is not concentration,
+    preparation or source equivalence. Current formulation-aware merging preserves
+    only compatible assertions. No merge was run; verify owners and preview current
+    grouping before separately authorized regeneration.
+- evidence_id: exporter
+  kind: record_content
+  reference: src/culturemech/export/kgx_export.py
+  locator: medium_to_ingredient_edge; medium_to_solution_edge; _resolved_ingredient_id;
+    _quantity
+  accessed_at: '2026-10-21T10:30:05Z'
+  support: context_only
+  summary: Current export consumes structured ingredient/solution identities and quantities,
+    resolving against the pinned MIM index before fallback. It does not independently
+    recover missing stock stages, source qualifiers or final volume. No export or
+    resulting edge count is claimed.
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:004656
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: Exact source identity, reciprocal owners and generated membership
+  outcome: supported
+  summary: The target CM004656 merges KOMODO 254 CM004656 and DSMZ 254 CM001353; exact
+    source accession/title and catalog mapping agree. The complete reciprocal SOURCE_DUPLICATE
+    parent/child links point to those exact paths/IDs. Their identical numerical ingredients
+    do not erase the DSMZ owner preparation or later attached evidence. No modified
+    formulation is asserted in these sources.
+  target_ids:
+  - CultureMech:004656
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz254
+  - mediadive254api
+  - komodoMediaList
+  - attached-evidence
+- assessment_id: grounding
+  area: grounding
+  topic: Primary labels/forms and pinned secondary correspondence
+  outcome: supported
+  summary: 'Layer-specific counts are {"target": {"ingredient_instances": 4, "primary_CHEBI_instances":
+    2, "secondary_current_asserted_instances": 2, "secondary_current_verified_instances":
+    2, "legacy_secondary_instances": 0, "primary_CHEBI_percent": 50.0, "secondary_verified_percent":
+    50.0}, "owner-0": {"ingredient_instances": 4, "primary_CHEBI_instances": 2, "secondary_current_asserted_instances":
+    2, "secondary_current_verified_instances": 2, "legacy_secondary_instances": 0,
+    "primary_CHEBI_percent": 50.0, "secondary_verified_percent": 50.0}, "owner-1":
+    {"ingredient_instances": 4, "primary_CHEBI_instances": 2, "secondary_current_asserted_instances":
+    2, "secondary_current_verified_instances": 2, "legacy_secondary_instances": 0,
+    "primary_CHEBI_percent": 50.0, "secondary_verified_percent": 50.0}}. Percentages
+    are 0–100 linkage coverage over direct ingredient instances, not scientific accuracy.
+    The 0 legacy link instances across reviewed layers are unverified by the current
+    CHEBI-keyed snapshot; absence here does not prove historical invalidity. Current
+    secondary keys without a live preferred-term row are []. No secondary linked-set
+    percentage is invented for an empty set.'
+  target_ids:
+  - CultureMech:004656
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - mim
+  - chebi2509
+  - chebi16236
+  details: '{"label_drift": [], "legacy": [], "missing_current_secondary": []}'
+- assessment_id: forms
+  area: grounding
+  topic: Asserted ingredient identities and unresolved mixture scope
+  outcome: supported
+  summary: CHEBI:2509 resolves to agar, a polysaccharide mixture, and CHEBI:16236
+    to ethanol. Their canonical labels and both layers of asserted linkage agree with
+    the pinned current index. The chemical identity ethanol does not encode the missing
+    50% v/v strength. Malt and yeast extracts remain ungrounded in all three recipe
+    layers; current graph FOODON IDs do not by themselves authorize local assignments.
+  target_ids:
+  - CultureMech:004656
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - chebi2509
+  - chebi16236
+  - mim
+- assessment_id: preparation
+  area: completeness
+  topic: Post-sterilization addition and filtration retained by one owner
+  outcome: concern
+  summary: The DSMZ owner contains the exact 60 mL ethanol 50% v/v post-sterilization
+    and filtration sentence. The generated target and KOMODO owner omit it. No stock
+    solution descriptor exists in any layer. Preserve that source-specific order and
+    filtration while correcting the unit/strength representation; no primary pH, numeric
+    sterilization temperature or duration is supplied.
+  target_ids:
+  - CultureMech:004656
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz254
+  - mediadive254api
+- assessment_id: classification
+  area: scope
+  topic: Required agar and complex mixture classification
+  outcome: supported
+  summary: 'The source requires 15 g agar, supporting SOLID_AGAR; malt and yeast extracts
+    support COMPLEX/UNDEFINED. Bacterial filing and generic microbial cultivation
+    remain catalog-level descriptions without strain or growth claims. KOMODO Aerobic:
+    No is retained as catalog metadata, not an independently validated incubation
+    phenotype.'
+  target_ids:
+  - CultureMech:004656
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz254
+  - mediadive254api
+  - komodoMediaList
+- assessment_id: kg-projection
+  area: graph
+  topic: Asserted exact match versus current local graph
+  outcome: concern
+  summary: The correct named medium node 254 leads to solution 520. Its normalized
+    projected set is CHEBI:15377, CHEBI:16236, CHEBI:2509, FOODON:3301056 and FOODON:3315426.
+    Each local layer projects only CHEBI:16236 and CHEBI:2509; water and the two ungrounded
+    extracts are absent. Thus the current exact-set assertion is unsupported by this
+    actual snapshot even though source identity is correct. Quantities are ignored
+    by this matching criterion, and the historical graph/version was not reconstructed.
+  target_ids:
+  - CultureMech:004656
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - kg-matcher
+  - kg-nodes
+  - kg-edges
+  - kg-projection
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp interpretation
+  outcome: concern
+  summary: 21 exact timestamp instances were examined; 4 lack valid syntax or explicit
+    timezone. No local timestamp was assumed UTC or rewritten. Process and confidence
+    annotations are not independent scientific evidence.
+  target_ids:
+  - CultureMech:004656
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - history
+  details: '[{"path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml",
+    "field_path": "curation_history[0].timestamp", "value": "2026-01-27T01:15:02.fZ",
+    "valid_ISO_datetime": false, "timezone_aware": false}, {"path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml",
+    "field_path": "curation_history[1].timestamp", "value": "2026-02-03T11:19:16.698629",
+    "valid_ISO_datetime": true, "timezone_aware": false}, {"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml",
+    "field_path": "curation_history[0].timestamp", "value": "2026-01-27T01:15:02.fZ",
+    "valid_ISO_datetime": false, "timezone_aware": false}, {"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml",
+    "field_path": "curation_history[1].timestamp", "value": "2026-02-03T11:19:16.698629",
+    "valid_ISO_datetime": true, "timezone_aware": false}]'
+- assessment_id: quantities
+  area: quantity
+  topic: Every stored amount, stock dose and source-stage dependency
+  outcome: concern
+  summary: Eight literal decisions cover all four ingredient rows in all three layers,
+    source water, the ethanol strength and explicit unquantified temperature/duration
+    limits. Main solid rows are evidence_only for the target and verified for both
+    owners because their already-attached exact snippets/hash and declared provider
+    basis were rechecked. Ethanol requires correction in every layer. The 30 mL neat-volume
+    equivalent is separate arithmetic, not a mass or final concentration.
+  target_ids:
+  - CultureMech:004656
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - quantity-1
+  - quantity-2
+  - quantity-3
+  - quantity-4
+  - quantity-5
+  - quantity-6
+  - quantity-7
+  - quantity-8
+  details: '[{"field_path": "ingredients[0].concentration", "name": "Malt extract",
+    "current": {"value": "15", "unit": "G_PER_L"}, "decision": "evidence_only", "source_key":
+    "mediadive254api", "source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Malt extract\",\n                        \"compound_id\":
+    116,\n                        \"amount\": 15,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 15,\n                        \"optional\":
+    0\n                    }", "source_locator": "$.data.solutions[0].recipe[0]",
+    "preparation_stage": "Main sol. 254 (solution 520, declared 1000 mL)", "decision_rationale":
+    "The current value follows provider g_l on its declared 1000 mL basis. Attach
+    exact source evidence and retain any percentage-stock attribute and dose. This
+    is provider normalization, not an independently measured final volume.", "evidence_id":
+    "quantity-1", "arithmetic_separate_from_quote": "Original 15 g × 1 g/g ÷ (1000
+    mL / 1000 mL per L) = 15 g/L on the provider-declared stage volume; reported g_l
+    is 15. This is not a receiving-medium dilution.", "affected_local_fields": [{"path":
+    "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml", "field_path": "ingredients[0].concentration",
+    "name": "Malt extract", "current": {"value": "15", "unit": "G_PER_L"}}, {"path":
+    "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml",
+    "field_path": "ingredients[0].concentration", "name": "Malt extract", "current":
+    {"value": "15", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml",
+    "field_path": "ingredients[0].concentration", "name": "Malt extract", "current":
+    {"value": "15", "unit": "G_PER_L"}}], "source_amount": 15, "source_unit": "g",
+    "source_attribute": null, "provider_g_l": 15, "provider_stage_volume_ml": 1000,
+    "primary_source_evidence_id": "dsmz254", "layer_decisions": [{"path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml",
+    "field_path": "ingredients[0].concentration", "decision": "evidence_only", "rationale":
+    "The current value follows provider g_l on its declared 1000 mL basis. Attach
+    exact source evidence and retain any percentage-stock attribute and dose. This
+    is provider normalization, not an independently measured final volume."}, {"path":
+    "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml",
+    "field_path": "ingredients[0].concentration", "decision": "verified", "rationale":
+    "Existing owner evidence has the exact ingredient snippet, declared 1000 mL provider
+    basis, scope explanation and matching current raw-response hash. Verification
+    is restricted to that declared provider concentration, not measured final volume."},
+    {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml",
+    "field_path": "ingredients[0].concentration", "decision": "verified", "rationale":
+    "Existing owner evidence has the exact ingredient snippet, declared 1000 mL provider
+    basis, scope explanation and matching current raw-response hash. Verification
+    is restricted to that declared provider concentration, not measured final volume."}]},
+    {"field_path": "ingredients[1].concentration", "name": "Yeast extract", "current":
+    {"value": "5", "unit": "G_PER_L"}, "decision": "evidence_only", "source_key":
+    "mediadive254api", "source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\":
+    16,\n                        \"amount\": 5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 5,\n                        \"optional\":
+    0\n                    }", "source_locator": "$.data.solutions[0].recipe[1]",
+    "preparation_stage": "Main sol. 254 (solution 520, declared 1000 mL)", "decision_rationale":
+    "The current value follows provider g_l on its declared 1000 mL basis. Attach
+    exact source evidence and retain any percentage-stock attribute and dose. This
+    is provider normalization, not an independently measured final volume.", "evidence_id":
+    "quantity-2", "arithmetic_separate_from_quote": "Original 5 g × 1 g/g ÷ (1000
+    mL / 1000 mL per L) = 5 g/L on the provider-declared stage volume; reported g_l
+    is 5. This is not a receiving-medium dilution.", "affected_local_fields": [{"path":
+    "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml", "field_path": "ingredients[1].concentration",
+    "name": "Yeast extract", "current": {"value": "5", "unit": "G_PER_L"}}, {"path":
+    "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml",
+    "field_path": "ingredients[1].concentration", "name": "Yeast extract", "current":
+    {"value": "5", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml",
+    "field_path": "ingredients[1].concentration", "name": "Yeast extract", "current":
+    {"value": "5", "unit": "G_PER_L"}}], "source_amount": 5, "source_unit": "g", "source_attribute":
+    null, "provider_g_l": 5, "provider_stage_volume_ml": 1000, "primary_source_evidence_id":
+    "dsmz254", "layer_decisions": [{"path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml",
+    "field_path": "ingredients[1].concentration", "decision": "evidence_only", "rationale":
+    "The current value follows provider g_l on its declared 1000 mL basis. Attach
+    exact source evidence and retain any percentage-stock attribute and dose. This
+    is provider normalization, not an independently measured final volume."}, {"path":
+    "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml",
+    "field_path": "ingredients[1].concentration", "decision": "verified", "rationale":
+    "Existing owner evidence has the exact ingredient snippet, declared 1000 mL provider
+    basis, scope explanation and matching current raw-response hash. Verification
+    is restricted to that declared provider concentration, not measured final volume."},
+    {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml",
+    "field_path": "ingredients[1].concentration", "decision": "verified", "rationale":
+    "Existing owner evidence has the exact ingredient snippet, declared 1000 mL provider
+    basis, scope explanation and matching current raw-response hash. Verification
+    is restricted to that declared provider concentration, not measured final volume."}]},
+    {"field_path": "ingredients[2].concentration", "name": "Agar", "current": {"value":
+    "15", "unit": "G_PER_L"}, "decision": "evidence_only", "source_key": "mediadive254api",
+    "source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"Agar\",\n                        \"compound_id\": 3,\n                        \"amount\":
+    15,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    15,\n                        \"mmol_l\": 44.5991,\n                        \"optional\":
+    0\n                    }", "source_locator": "$.data.solutions[0].recipe[2]",
+    "preparation_stage": "Main sol. 254 (solution 520, declared 1000 mL)", "decision_rationale":
+    "The current value follows provider g_l on its declared 1000 mL basis. Attach
+    exact source evidence and retain any percentage-stock attribute and dose. This
+    is provider normalization, not an independently measured final volume.", "evidence_id":
+    "quantity-3", "arithmetic_separate_from_quote": "Original 15 g × 1 g/g ÷ (1000
+    mL / 1000 mL per L) = 15 g/L on the provider-declared stage volume; reported g_l
+    is 15. This is not a receiving-medium dilution.", "affected_local_fields": [{"path":
+    "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml", "field_path": "ingredients[2].concentration",
+    "name": "Agar", "current": {"value": "15", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml",
+    "field_path": "ingredients[2].concentration", "name": "Agar", "current": {"value":
+    "15", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml",
+    "field_path": "ingredients[2].concentration", "name": "Agar", "current": {"value":
+    "15", "unit": "G_PER_L"}}], "source_amount": 15, "source_unit": "g", "source_attribute":
+    null, "provider_g_l": 15, "provider_stage_volume_ml": 1000, "primary_source_evidence_id":
+    "dsmz254", "layer_decisions": [{"path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml",
+    "field_path": "ingredients[2].concentration", "decision": "evidence_only", "rationale":
+    "The current value follows provider g_l on its declared 1000 mL basis. Attach
+    exact source evidence and retain any percentage-stock attribute and dose. This
+    is provider normalization, not an independently measured final volume."}, {"path":
+    "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml",
+    "field_path": "ingredients[2].concentration", "decision": "verified", "rationale":
+    "Existing owner evidence has the exact ingredient snippet, declared 1000 mL provider
+    basis, scope explanation and matching current raw-response hash. Verification
+    is restricted to that declared provider concentration, not measured final volume."},
+    {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml",
+    "field_path": "ingredients[2].concentration", "decision": "verified", "rationale":
+    "Existing owner evidence has the exact ingredient snippet, declared 1000 mL provider
+    basis, scope explanation and matching current raw-response hash. Verification
+    is restricted to that declared provider concentration, not measured final volume."}]},
+    {"field_path": "source solution 520 recipe[3] (not represented)", "name": "Distilled
+    water", "current": null, "decision": "add", "source_key": "mediadive254api", "source_quote":
+    "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    940,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "source_locator": "$.data.solutions[0].recipe[3]",
+    "preparation_stage": "Main sol. 254 (solution 520, declared 1000 mL)", "decision_rationale":
+    "Preserve the source solvent quantity 940 ml in its own stage. The provider declares
+    this solution volume as 1000 mL; water addition is not independent proof of measured
+    final volume.", "evidence_id": "quantity-4", "affected_local_fields": [], "source_amount":
+    940, "source_unit": "ml", "source_attribute": null, "provider_g_l": null, "provider_stage_volume_ml":
+    1000, "primary_source_evidence_id": "dsmz254", "layer_decisions": []}, {"field_path":
+    "ingredients[3].concentration", "name": "Ethanol", "current": {"value": "60",
+    "unit": "G_PER_L"}, "decision": "correct", "source_key": "mediadive254api", "source_quote":
+    "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"Ethanol\",\n                        \"compound_id\": 201,\n                        \"attribute\":
+    \"50% v/v\",\n                        \"amount\": 60,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "source_locator":
+    "$.data.solutions[0].recipe[4]", "preparation_stage": "Main sol. 254 (solution
+    520, declared 1000 mL)", "decision_rationale": "All three layers encode 60 G_PER_L,
+    but the exact source adds 60 mL of a 50% v/v ethanol solution. Preserve both liquid
+    dose and stock strength; the source supplies no ethanol g_l in this row.", "evidence_id":
+    "quantity-5", "arithmetic_separate_from_quote": "60 mL solution × 0.50 mL ethanol/mL
+    solution = 30 mL neat-ethanol volume equivalent. This is not 30 g and does not
+    establish a measured final volume or density-based mass concentration.", "affected_local_fields":
+    [{"path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml", "field_path":
+    "ingredients[3].concentration", "name": "Ethanol", "current": {"value": "60",
+    "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml",
+    "field_path": "ingredients[3].concentration", "name": "Ethanol", "current": {"value":
+    "60", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml",
+    "field_path": "ingredients[3].concentration", "name": "Ethanol", "current": {"value":
+    "60", "unit": "G_PER_L"}}], "source_amount": 60, "source_unit": "ml", "source_attribute":
+    "50% v/v", "provider_g_l": null, "provider_stage_volume_ml": 1000, "primary_source_evidence_id":
+    "dsmz254", "layer_decisions": [{"path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml",
+    "field_path": "ingredients[3].concentration", "decision": "correct", "rationale":
+    "All three layers encode 60 G_PER_L, but the exact source adds 60 mL of a 50%
+    v/v ethanol solution. Preserve both liquid dose and stock strength; the source
+    supplies no ethanol g_l in this row."}, {"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml",
+    "field_path": "ingredients[3].concentration", "decision": "correct", "rationale":
+    "All three layers encode 60 G_PER_L, but the exact source adds 60 mL of a 50%
+    v/v ethanol solution. Preserve both liquid dose and stock strength; the source
+    supplies no ethanol g_l in this row."}, {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml",
+    "field_path": "ingredients[3].concentration", "decision": "correct", "rationale":
+    "All three layers encode 60 G_PER_L, but the exact source adds 60 mL of a 50%
+    v/v ethanol solution. Preserve both liquid dose and stock strength; the source
+    supplies no ethanol g_l in this row."}]}, {"field_path": "ingredients[3].concentration
+    / ethanol_stock.strength", "name": "Ethanol stock strength", "current": "Absent
+    from concentration; retained only in DSMZ owner preparation", "decision": "add",
+    "source_key": "dsmz254", "source_quote": "After sterilization add 60 ml ethanol
+    (50% v/v), sterilized by filtration.", "source_locator": "page 1, complete preparation
+    sentence", "preparation_stage": "post-sterilization ethanol addition", "decision_rationale":
+    "Preserve the 50% v/v stock strength alongside the 60 mL dose. The DSMZ owner
+    already retains it in prose, but its ingredient concentration remains 60 g/L.
+    Target and KOMODO owner omit the preparation text.", "evidence_id": "quantity-6",
+    "layer_decisions": [{"path": "data/merge_yaml/merged/ACETOBACTER_PEROXYDANS_MEDIUM.yaml",
+    "decision": "add", "field_path": "preparation_steps / ethanol_stock.strength",
+    "rationale": "Strength and preparation text are absent from this complete layer."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml",
+    "decision": "add", "field_path": "preparation_steps / ethanol_stock.strength",
+    "rationale": "Strength and preparation text are absent from this complete layer."},
+    {"path": "data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml",
+    "decision": "evidence_only", "field_path": "preparation_steps / ethanol_stock.strength",
+    "rationale": "Existing DSMZ owner prose preserves the strength without attached
+    claim evidence."}]}, {"field_path": "preparation_steps.temperature", "name": "Initial
+    sterilization temperature", "current": null, "decision": "not_quantified", "source_key":
+    "dsmz254", "source_quote": "After sterilization add 60 ml ethanol (50% v/v), sterilized
+    by filtration.", "source_locator": "page 1, complete preparation sentence", "preparation_stage":
+    "basal-medium sterilization before ethanol addition", "decision_rationale": "The
+    source says after sterilization but supplies no numeric basal temperature. The
+    ethanol solution is explicitly filtered; do not substitute heat sterilization
+    for it.", "evidence_id": "quantity-7"}, {"field_path": "preparation_steps.duration",
+    "name": "Initial sterilization duration", "current": null, "decision": "not_quantified",
+    "source_key": "dsmz254", "source_quote": "After sterilization add 60 ml ethanol
+    (50% v/v), sterilized by filtration.", "source_locator": "page 1, complete preparation
+    sentence", "preparation_stage": "basal-medium sterilization", "decision_rationale":
+    "No numeric duration is specified; no generic cycle is inserted.", "evidence_id":
+    "quantity-8"}]'
+- assessment_id: evidence
+  area: evidence
+  topic: Claim-level source support and actual reference-check coverage
+  outcome: concern
+  summary: The first three owner ingredient excerpts and KOMODO identity excerpt are
+    exact substrings of the bound captures and their historical SHA256 values match.
+    The generated target has no such evidence and its reference diagnostic checks
+    zero entries. Existing references identify their source organization and limits
+    without invented authors or publication year. Source evidence does not validate
+    secondary mappings or a graph exact-set assertion.
+  target_ids:
+  - CultureMech:004656
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - validate-references
+  - source-catalog
+- assessment_id: organisms
+  area: scope
+  topic: Bounded biological claims and optional entities
+  outcome: not_applicable
+  summary: No taxon or strain identifiers, assemblies, DOI/PMID papers or experimental
+    growth results occur in these complete records. The medium name and catalog Aerobic
+    flag are not such evidence. The KG ingredient link is assessed separately from
+    biological growth.
+  target_ids:
+  - CultureMech:004656
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+findings:
+- finding_id: f1
+  issue_key: cm004656-ethanol-dose-unit
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: A dilute ethanol volume is stored as a mass concentration
+  description: All three local records encode ethanol 60 G_PER_L. The source instead
+    adds 60 mL of 50% v/v ethanol after sterilization, sterilized by filtration; its
+    API row has no g_l. Neither an ethanol mass nor a final-volume conversion is supported
+    by this liquid dose alone.
+  target_ids:
+  - CultureMech:004656
+  field_paths:
+  - ingredients[3].concentration
+  - solutions
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz254
+  - mediadive254api
+  - importer
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: cm004656-filtered-ethanol-preparation
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The target and KOMODO owner lose the source addition and filtration sequence
+  description: The exact preparation is present in the DSMZ owner, but the KOMODO
+    owner and generated target omit it. This loses the post-sterilization addition
+    and separate ethanol filtration while their ingredient still states a mass concentration.
+    The whole source does not provide a numeric basal sterilization cycle.
+  target_ids:
+  - CultureMech:004656
+  field_paths:
+  - preparation_steps
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz254
+  - resolver
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.5
+  native_severity: P3
+  normalization_reason: Native P3.5 is major because losing the explicit separate
+    filtration and post-sterilization addition can materially change the source procedure;
+    the known DSMZ owner instruction must not be described as absent.
+- finding_id: f3
+  issue_key: cm004656-kg-projection-mismatch
+  category: graph
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The asserted KG exact-set match fails in the inspected snapshot
+  description: The named node 254 is the correct source medium, but its current graph
+    projection has five ingredients, including water and FOODON-linked malt and yeast
+    extracts. The local projection has only agar and ethanol. The exact-set equality
+    required by the current matcher therefore fails. This does not claim wrong source
+    identity or establish how an earlier graph produced the stored assertion.
+  target_ids:
+  - CultureMech:004656
+  field_paths:
+  - kg_microbe_match
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - kg-matcher
+  - kg-nodes
+  - kg-edges
+  - kg-projection
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: cm004656-generated-evidence-lag
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: The generated target omits later maintained amount evidence
+  description: Both maintained owners carry exact, currently matching provider evidence
+    for malt 15 g/L, yeast 5 g/L and agar 15 g/L on the explicitly declared provider
+    basis. Their October source-evidence events and references are absent from the
+    August-generated target. The target reference validator consequently checks zero
+    evidence entries.
+  target_ids:
+  - CultureMech:004656
+  field_paths:
+  - ingredients[0:3].evidence
+  - references
+  - curation_history
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - attached-evidence
+  - validate-references
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4.4
+  native_severity: P4
+  normalization_reason: 'Minor generated-provenance lag: the maintained evidence already
+    exists and is verified; the material amount and preparation errors are separate
+    findings.'
+- finding_id: f5
+  issue_key: cm004656-history-timestamps
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Inherited timestamps are malformed or lack a timezone
+  description: 4 exact timestamp instances across the target and maintained owners
+    either have invalid datetime syntax or omit timezone information. These are historical
+    provenance defects, not evidence that the scientific contents were reviewed. Old
+    events must remain intact.
+  target_ids:
+  - CultureMech:004656
+  field_paths:
+  - curation_history[0].timestamp
+  - curation_history[1].timestamp
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - history
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4.4
+  native_severity: P4
+  normalization_reason: 'Minor provenance defect: ambiguous historical instants reduce
+    traceability but do not independently change the formulation.'
+actions:
+- action_id: a1
+  description: Correct both maintained owners to preserve the exact ethanol solution
+    strength, liquid addition dose and source order. Attach scoped evidence and resolve
+    any chosen concentration basis without an assumed density; preview derived regeneration
+    afterward.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:004656
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Retain the existing correct DSMZ owner instruction and add its source-scoped
+    counterpart to the maintained KOMODO owner where identity is verified. Ensure
+    authorized regeneration preserves the sequence; do not invent a numeric cycle.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:004656
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Reconcile the intended matching contract and source-version provenance
+    against a pinned graph before retaining or recomputing this assertion. If missing
+    recipe identities are curated, verify them independently; do not add guessed mappings
+    or ignore extra graph terms solely to force equality.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:004656
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Preserve the verified existing owner evidence through the separately
+    authorized formulation correction and regeneration. Do not overwrite it with broader
+    assertions about measured volume, stock strength or graph identity.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:004656
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a5
+  description: Preserve all old entries. If authoritative timing evidence becomes
+    available, append a source-linked clarification; correct future timestamp writers
+    to use timezone-aware UTC without silently rewriting provenance.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:004656
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- Provider main volume 1000 mL is a declared normalization basis. The primary lists
+  940 mL water and 60 mL ethanol solution; their arithmetic sum is not a measured
+  final volume. No density-based mass conversion is attempted.
+- The KG snapshot is authenticated only by its observed local path, exact bytes and
+  access time, not as a remote release or the historical graph used when this field
+  was populated. The exact graph result below is limited to these bytes and the inspected
+  current matcher.
+- The current graph includes water and two FOODON-linked extracts omitted from the
+  local primary projection. This mismatch is not evidence that node 254 denotes the
+  wrong source medium, nor authority to invent missing recipe groundings.
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+tags:
+- unreviewed-records
+- batch-016
+- generated-medium
+```
