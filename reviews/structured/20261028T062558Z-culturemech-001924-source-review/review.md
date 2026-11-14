@@ -1,0 +1,2079 @@
+# Scientific review: CALORAMATOR MEDIUM
+
+- Review: 20261028T062558Z-culturemech-001924-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T06:09:45.402241Z
+- Finished UTC: 2026-10-28T06:25:58.458478Z
+- Reviewer: Codex tsb_source_check (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+DSM788 identity and retained preparation are supported. Partial owner stock repair, remaining flattening, receiving-dose basis, two supplied-form identifiers and KOMODO aerobic provenance require curation; the source-specific branch and vitamin specificity remain bounded.
+
+## Scope And Provenance
+
+Whole exact target/owner with explicit scoped dependencies, current sources and historical claims.
+
+Selection: Authoritative batch058 index 07
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:001924 | data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml | generated | caloramator_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Canonical schema | passed | True | CultureMech:001924 | Actual exit 0; full original streams retained. |
+| Canonical strict | passed | True | CultureMech:001924 | Actual exit 0; full original streams retained. |
+| Canonical terms | passed | True | CultureMech:001924 | Actual exit 0; full original streams retained. |
+| Canonical references | passed | True | CultureMech:001924 | Actual exit 0; full original streams retained. |
+
+## Scientific And Domain Assessments
+
+### DSM788 with a separately bounded KOMODO alias
+
+identity: supported. Targets: CultureMech:001924.
+
+Fresh DSM788 PDF/API identify the base record. Both maintained owners share the same ingredient quantities, but partial nesting, preparation and the KOMODO aerobic note differ from the generated target. Current source-duplicate relationships require those differences to remain visible.
+
+### Complex liquid with preserved preparation
+
+representation: supported. Targets: CultureMech:001924.
+
+The yeast extract and named salts/vitamins support retaining complex, semi-defined liquid classification. The existing pH and full DSM preparation are positive content, not missing fields. Empty organism assertions are not a defect inferred from the medium name.
+
+### Complete amounts, units and preparation stages
+
+quantity: concern. Targets: CultureMech:001924.
+
+91 current concentration fields are covered by 45 decisions, including unchanged support and explicit source-only conditions.
+
+{"schema":"fresh-b058-quantity-inventory-v1","target":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","quantity_field_count":91,"decisions":[{"quantity_id":"q1","label":"KH2PO4","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[0].concentration","stored":{"value":"0.408774","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"0.408774","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"0.408774","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The API explicitly declares the matching g_l rate on its 1003 mL normalization basis. The primary supports the printed batch input but does not independently establish measured final volume from 1000 mL water and later additions. Add exact claim evidence without replacing the rate by an assumed nominal-litre value.","source_stage":"provider-declared main rate / primary batch input","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 3-3","quote":"KH2PO4                                                     0.41         g","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[0].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.41,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.408774,\n                        \"mmol_l\": 3.00381,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q2","label":"Na2HPO4 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[1].concentration","stored":{"value":"0.518445","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[1].concentration","stored":{"value":"0.518445","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[1].concentration","stored":{"value":"0.518445","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The API explicitly declares the matching g_l rate on its 1003 mL normalization basis. The primary supports the printed batch input but does not independently establish measured final volume from 1000 mL water and later additions. Add exact claim evidence without replacing the rate by an assumed nominal-litre value.","source_stage":"provider-declared main rate / primary batch input","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 4-4","quote":"Na2HPO4 x 2 H2O                                            0.52         g","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[0].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Na2HPO4 x 2 H2O\",\n                        \"compound_id\": 181,\n                        \"amount\": 0.52,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.518445,\n                        \"mmol_l\": 3.65207,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q3","label":"NH4Cl","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[2].concentration","stored":{"value":"2.39282","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[2].concentration","stored":{"value":"2.39282","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[2].concentration","stored":{"value":"2.39282","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The API explicitly declares the matching g_l rate on its 1003 mL normalization basis. The primary supports the printed batch input but does not independently establish measured final volume from 1000 mL water and later additions. Add exact claim evidence without replacing the rate by an assumed nominal-litre value.","source_stage":"provider-declared main rate / primary batch input","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 5-5","quote":"NH4Cl                                                      2.40         g","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[0].recipe[2]","quote":"{\n                        \"recipe_order\": 3,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\": 2.4,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.39282,\n                        \"mmol_l\": 44.734,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q4","label":"MgCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.398804","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.398804","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.398804","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The API explicitly declares the matching g_l rate on its 1003 mL normalization basis. The primary supports the printed batch input but does not independently establish measured final volume from 1000 mL water and later additions. Add exact claim evidence without replacing the rate by an assumed nominal-litre value.","source_stage":"provider-declared main rate / primary batch input","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 6-6","quote":"MgCl2 x 6 H2O                                              0.40         g","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[0].recipe[3]","quote":"{\n                        \"recipe_order\": 4,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\": 0.4,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.398804,\n                        \"mmol_l\": 1.96162,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q5","label":"Yeast extract","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.199402","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.199402","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.199402","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The API explicitly declares the matching g_l rate on its 1003 mL normalization basis. The primary supports the printed batch input but does not independently establish measured final volume from 1000 mL water and later additions. Add exact claim evidence without replacing the rate by an assumed nominal-litre value.","source_stage":"provider-declared main rate / primary batch input","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 7-7","quote":"Yeast extract                                              0.20         g","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[0].recipe[4]","quote":"{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.199402,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q6","label":"Sodium resazurin","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.000498504","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.000498504","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.000498504","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The API explicitly declares the matching g_l rate on its 1003 mL normalization basis. The primary supports the printed batch input but does not independently establish measured final volume from 1000 mL water and later additions. Add exact claim evidence without replacing the rate by an assumed nominal-litre value. Preserve the separate 0.50 mL addition of 0.1% w/v sodium resazurin; the normalized rate alone loses that source stage.","source_stage":"provider-declared main rate / primary batch input","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 10-10","quote":"Sodium resazurin (0.1% w/v)                                0.50        ml","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[0].recipe[7]","quote":"{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.000498504,\n                        \"mmol_l\": 0.00198473,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q7","label":"CaCl2 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.199402","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.199402","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.199402","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The API explicitly declares the matching g_l rate on its 1003 mL normalization basis. The primary supports the printed batch input but does not independently establish measured final volume from 1000 mL water and later additions. Add exact claim evidence without replacing the rate by an assumed nominal-litre value.","source_stage":"provider-declared main rate / primary batch input","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 11-11","quote":"CaCl2 x 2 H2O                                              0.20         g","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[0].recipe[8]","quote":"{\n                        \"recipe_order\": 9,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.199402,\n                        \"mmol_l\": 1.35634,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q8","label":"Na2CO3","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[7].concentration","stored":{"value":"1.49551","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"1.49551","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"1.49551","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The API explicitly declares the matching g_l rate on its 1003 mL normalization basis. The primary supports the printed batch input but does not independently establish measured final volume from 1000 mL water and later additions. Add exact claim evidence without replacing the rate by an assumed nominal-litre value.","source_stage":"provider-declared main rate / primary batch input","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 12-12","quote":"Na2CO3                                                     1.50         g","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[0].recipe[9]","quote":"{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.49551,\n                        \"mmol_l\": 14.1102,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q9","label":"D-Glucose","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[8].concentration","stored":{"value":"4.98504","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[8].concentration","stored":{"value":"4.98504","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[8].concentration","stored":{"value":"4.98504","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The API explicitly declares the matching g_l rate on its 1003 mL normalization basis. The primary supports the printed batch input but does not independently establish measured final volume from 1000 mL water and later additions. Add exact claim evidence without replacing the rate by an assumed nominal-litre value.","source_stage":"provider-declared main rate / primary batch input","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 13-13","quote":"D-Glucose                                                  5.00         g","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[0].recipe[10]","quote":"{\n                        \"recipe_order\": 11,\n                        \"compound\": \"D-Glucose\",\n                        \"compound_id\": 211,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 4.98504,\n                        \"mmol_l\": 27.6701,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q10","label":"Na2S x 9 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.299103","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.299103","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.299103","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The API explicitly declares the matching g_l rate on its 1003 mL normalization basis. The primary supports the printed batch input but does not independently establish measured final volume from 1000 mL water and later additions. Add exact claim evidence without replacing the rate by an assumed nominal-litre value.","source_stage":"provider-declared main rate / primary batch input","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 15-15","quote":"Na2S x 9 H2O                                               0.30         g","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[0].recipe[12]","quote":"{\n                        \"recipe_order\": 13,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\": 0.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.299103,\n                        \"mmol_l\": 1.24532,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q11","label":"HCl","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[10].concentration","stored":{"value":"2.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[10].concentration","stored":{"value":"2.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[10].concentration","stored":{"value":"2.5","unit":"G_PER_L"}}],"decision":"correct","rationale":"This value belongs to the separate stock, not a direct main-medium concentration. Preserve any correctly nested owner row and repair the remaining direct placements; the generated target is still fully flat. The 10 mL 25% HCl has unspecified percent basis/density; 2.5 g/L is only the API declaration, not an independently justified mass conversion.","source_stage":"SL-10 stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 33-33","quote":"HCl (25%)                                                  10.00      ml","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[1].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"HCl\",\n                        \"compound_id\": 68,\n                        \"attribute\": \"25%\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"g_l\": 2.5,\n                        \"mmol_l\": 68.5683,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 44-45","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative text"}]},{"quantity_id":"q12","label":"FeCl2 x 4 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[11].concentration","stored":{"value":"1.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"solutions[0].composition[0].concentration","stored":{"value":"1.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"solutions[0].composition[0].concentration","stored":{"value":"1.5","unit":"G_PER_L"}}],"decision":"mixed","rationale":"This value belongs to the separate stock, not a direct main-medium concentration. Preserve any correctly nested owner row and repair the remaining direct placements; the generated target is still fully flat. The explicit 1000 mL final stock makeup supports the printed mass-to-stock-g/L normalization.","source_stage":"SL-10 stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 34-34","quote":"FeCl2 x 4 H2O                                               1.50       g","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[1].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"FeCl2 x 4 H2O\",\n                        \"compound_id\": 260,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\": 7.54482,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 44-45","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative text"}],"layer_decisions":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[11].concentration","decision":"correct","rationale":"Undiluted stock row requires stock placement, not a main-medium rate."},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"solutions[0].composition[0].concentration","decision":"evidence_only","rationale":"Nested stock placement and source-declared value retained; attach scoped evidence."},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"solutions[0].composition[0].concentration","decision":"evidence_only","rationale":"Nested stock placement and source-declared value retained; attach scoped evidence."}]},{"quantity_id":"q13","label":"ZnCl2","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[12].concentration","stored":{"value":"0.07","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.07","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.07","unit":"G_PER_L"}}],"decision":"correct","rationale":"This value belongs to the separate stock, not a direct main-medium concentration. Preserve any correctly nested owner row and repair the remaining direct placements; the generated target is still fully flat. The explicit 1000 mL final stock makeup supports the printed mass-to-stock-g/L normalization.","source_stage":"SL-10 stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 35-35","quote":"ZnCl2                                                      70.00      mg","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[1].recipe[2]","quote":"{\n                        \"recipe_order\": 3,\n                        \"compound\": \"ZnCl2\",\n                        \"compound_id\": 64,\n                        \"amount\": 70,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.07,\n                        \"mmol_l\": 0.513573,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 44-45","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative text"}]},{"quantity_id":"q14","label":"MnCl2 x 4 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[13].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[12].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[12].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"correct","rationale":"This value belongs to the separate stock, not a direct main-medium concentration. Preserve any correctly nested owner row and repair the remaining direct placements; the generated target is still fully flat. The explicit 1000 mL final stock makeup supports the printed mass-to-stock-g/L normalization.","source_stage":"SL-10 stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 36-36","quote":"MnCl2 x 4 H2O                                             100.00      mg","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[1].recipe[3]","quote":"{\n                        \"recipe_order\": 4,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\": 36,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.505293,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 44-45","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative text"}]},{"quantity_id":"q15","label":"H3BO3","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.006","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[13].concentration","stored":{"value":"0.006","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[13].concentration","stored":{"value":"0.006","unit":"G_PER_L"}}],"decision":"correct","rationale":"This value belongs to the separate stock, not a direct main-medium concentration. Preserve any correctly nested owner row and repair the remaining direct placements; the generated target is still fully flat. The explicit 1000 mL final stock makeup supports the printed mass-to-stock-g/L normalization.","source_stage":"SL-10 stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 37-37","quote":"H3BO3                                                       6.00      mg","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[1].recipe[4]","quote":"{\n                        \"recipe_order\": 5,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\": 6,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.006,\n                        \"mmol_l\": 0.0970246,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 44-45","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative text"}]},{"quantity_id":"q16","label":"CoCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.19","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.19","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.19","unit":"G_PER_L"}}],"decision":"correct","rationale":"This value belongs to the separate stock, not a direct main-medium concentration. Preserve any correctly nested owner row and repair the remaining direct placements; the generated target is still fully flat. The explicit 1000 mL final stock makeup supports the printed mass-to-stock-g/L normalization.","source_stage":"SL-10 stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 38-38","quote":"CoCl2 x 6 H2O                                             190.00      mg","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[1].recipe[5]","quote":"{\n                        \"recipe_order\": 6,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\": 38,\n                        \"amount\": 190,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.19,\n                        \"mmol_l\": 1.46335,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 44-45","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative text"}]},{"quantity_id":"q17","label":"CuCl2 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.002","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.002","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.002","unit":"G_PER_L"}}],"decision":"correct","rationale":"This value belongs to the separate stock, not a direct main-medium concentration. Preserve any correctly nested owner row and repair the remaining direct placements; the generated target is still fully flat. The explicit 1000 mL final stock makeup supports the printed mass-to-stock-g/L normalization.","source_stage":"SL-10 stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 39-39","quote":"CuCl2 x 2 H2O                                               2.00      mg","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[1].recipe[6]","quote":"{\n                        \"recipe_order\": 7,\n                        \"compound\": \"CuCl2 x 2 H2O\",\n                        \"compound_id\": 39,\n                        \"amount\": 2,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\": 0.0117314,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 44-45","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative text"}]},{"quantity_id":"q18","label":"NiCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.024","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.024","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.024","unit":"G_PER_L"}}],"decision":"correct","rationale":"This value belongs to the separate stock, not a direct main-medium concentration. Preserve any correctly nested owner row and repair the remaining direct placements; the generated target is still fully flat. The explicit 1000 mL final stock makeup supports the printed mass-to-stock-g/L normalization.","source_stage":"SL-10 stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 40-40","quote":"NiCl2 x 6 H2O                                              24.00      mg","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[1].recipe[7]","quote":"{\n                        \"recipe_order\": 8,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\": 40,\n                        \"amount\": 24,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.024,\n                        \"mmol_l\": 0.185187,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 44-45","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative text"}]},{"quantity_id":"q19","label":"Na2MoO4 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.036","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.036","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.036","unit":"G_PER_L"}}],"decision":"correct","rationale":"This value belongs to the separate stock, not a direct main-medium concentration. Preserve any correctly nested owner row and repair the remaining direct placements; the generated target is still fully flat. The explicit 1000 mL final stock makeup supports the printed mass-to-stock-g/L normalization.","source_stage":"SL-10 stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 41-41","quote":"Na2MoO4 x 2 H2O                                            36.00      mg","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[1].recipe[8]","quote":"{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\": 36,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.036,\n                        \"mmol_l\": 0.148791,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 44-45","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative text"}]},{"quantity_id":"q20","label":"NaOH","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.5","unit":"G_PER_L"}}],"decision":"correct","rationale":"This value belongs to the separate stock, not a direct main-medium concentration. Preserve any correctly nested owner row and repair the remaining direct placements; the generated target is still fully flat. The stock API declares g_l, while its primary lists water input rather than explicit final makeup. Do not silently transfer this value into the receiving medium.","source_stage":"selenite-tungstate stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 58-58","quote":"NaOH                                        0.50    g","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[2].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"NaOH\",\n                        \"compound_id\": 256,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 12.5009,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q21","label":"Na2SeO3 x 5 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.003","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.003","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.003","unit":"G_PER_L"}}],"decision":"correct","rationale":"This value belongs to the separate stock, not a direct main-medium concentration. Preserve any correctly nested owner row and repair the remaining direct placements; the generated target is still fully flat. The stock API declares g_l, while its primary lists water input rather than explicit final makeup. Do not silently transfer this value into the receiving medium.","source_stage":"selenite-tungstate stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 59-59","quote":"Na2SeO3 x 5 H2O                             3.00   mg","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[2].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Na2SeO3 x 5 H2O\",\n                        \"compound_id\": 107,\n                        \"amount\": 3,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.003,\n                        \"mmol_l\": 0.0114062,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q22","label":"Na2WO4 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.004","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.004","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.004","unit":"G_PER_L"}}],"decision":"correct","rationale":"This value belongs to the separate stock, not a direct main-medium concentration. Preserve any correctly nested owner row and repair the remaining direct placements; the generated target is still fully flat. The stock API declares g_l, while its primary lists water input rather than explicit final makeup. Do not silently transfer this value into the receiving medium.","source_stage":"selenite-tungstate stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 60-60","quote":"Na2WO4 x 2 H2O                              4.00   mg","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[2].recipe[2]","quote":"{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Na2WO4 x 2 H2O\",\n                        \"compound_id\": 249,\n                        \"amount\": 4,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.004,\n                        \"mmol_l\": 0.0121267,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q23","label":"Vitamin B12","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"solutions[1].composition[0].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"solutions[1].composition[0].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"mixed","rationale":"This value belongs to the separate stock, not a direct main-medium concentration. Preserve any correctly nested owner row and repair the remaining direct placements; the generated target is still fully flat. The stock API declares g_l, while its primary lists water input rather than explicit final makeup. Do not silently transfer this value into the receiving medium.","source_stage":"seven-vitamin stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 66-66","quote":"Vitamin B12                               100.00   mg","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[3].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\": 18,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.073779,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_decisions":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[22].concentration","decision":"correct","rationale":"Undiluted stock row requires stock placement, not a main-medium rate."},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"solutions[1].composition[0].concentration","decision":"evidence_only","rationale":"Nested stock placement and source-declared value retained; attach scoped evidence."},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"solutions[1].composition[0].concentration","decision":"evidence_only","rationale":"Nested stock placement and source-declared value retained; attach scoped evidence."}]},{"quantity_id":"q24","label":"p-Aminobenzoic acid","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.08","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.08","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.08","unit":"G_PER_L"}}],"decision":"correct","rationale":"This value belongs to the separate stock, not a direct main-medium concentration. Preserve any correctly nested owner row and repair the remaining direct placements; the generated target is still fully flat. The stock API declares g_l, while its primary lists water input rather than explicit final makeup. Do not silently transfer this value into the receiving medium.","source_stage":"seven-vitamin stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 67-67","quote":"p-Aminobenzoic acid                        80.00   mg","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[3].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\": 47,\n                        \"amount\": 80,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.08,\n                        \"mmol_l\": 0.583345,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q25","label":"D-(+)-biotin","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.02","unit":"G_PER_L"}}],"decision":"correct","rationale":"This value belongs to the separate stock, not a direct main-medium concentration. Preserve any correctly nested owner row and repair the remaining direct placements; the generated target is still fully flat. The stock API declares g_l, while its primary lists water input rather than explicit final makeup. Do not silently transfer this value into the receiving medium.","source_stage":"seven-vitamin stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 68-68","quote":"D-(+)-biotin                               20.00   mg","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[3].recipe[2]","quote":"{\n                        \"recipe_order\": 3,\n                        \"compound\": \"D-(+)-biotin\",\n                        \"compound_id\": 1359,\n                        \"amount\": 20,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0818632,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q26","label":"Nicotinic acid","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[25].concentration","stored":{"value":"0.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"solutions[1].composition[1].concentration","stored":{"value":"0.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"solutions[1].composition[1].concentration","stored":{"value":"0.2","unit":"G_PER_L"}}],"decision":"mixed","rationale":"This value belongs to the separate stock, not a direct main-medium concentration. Preserve any correctly nested owner row and repair the remaining direct placements; the generated target is still fully flat. The stock API declares g_l, while its primary lists water input rather than explicit final makeup. Do not silently transfer this value into the receiving medium.","source_stage":"seven-vitamin stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 69-69","quote":"Nicotinic acid                            200.00   mg","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[3].recipe[3]","quote":"{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\": 139,\n                        \"amount\": 200,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 1.62456,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_decisions":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[25].concentration","decision":"correct","rationale":"Undiluted stock row requires stock placement, not a main-medium rate."},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"solutions[1].composition[1].concentration","decision":"evidence_only","rationale":"Nested stock placement and source-declared value retained; attach scoped evidence."},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"solutions[1].composition[1].concentration","decision":"evidence_only","rationale":"Nested stock placement and source-declared value retained; attach scoped evidence."}]},{"quantity_id":"q27","label":"Calcium pantothenate","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[26].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"correct","rationale":"This value belongs to the separate stock, not a direct main-medium concentration. Preserve any correctly nested owner row and repair the remaining direct placements; the generated target is still fully flat. The stock API declares g_l, while its primary lists water input rather than explicit final makeup. Do not silently transfer this value into the receiving medium.","source_stage":"seven-vitamin stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 70-70","quote":"Calcium pantothenate                      100.00   mg","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[3].recipe[4]","quote":"{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Calcium pantothenate\",\n                        \"compound_id\": 518,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.209849,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q28","label":"Pyridoxine hydrochloride","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[27].concentration","stored":{"value":"0.3","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"solutions[1].composition[2].concentration","stored":{"value":"0.3","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"solutions[1].composition[2].concentration","stored":{"value":"0.3","unit":"G_PER_L"}}],"decision":"mixed","rationale":"This value belongs to the separate stock, not a direct main-medium concentration. Preserve any correctly nested owner row and repair the remaining direct placements; the generated target is still fully flat. The stock API declares g_l, while its primary lists water input rather than explicit final makeup. Do not silently transfer this value into the receiving medium.","source_stage":"seven-vitamin stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 71-71","quote":"Pyridoxine hydrochloride                  300.00   mg","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[3].recipe[5]","quote":"{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\": 519,\n                        \"amount\": 300,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.3,\n                        \"mmol_l\": 1.45886,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_decisions":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[27].concentration","decision":"correct","rationale":"Undiluted stock row requires stock placement, not a main-medium rate."},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"solutions[1].composition[2].concentration","decision":"evidence_only","rationale":"Nested stock placement and source-declared value retained; attach scoped evidence."},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"solutions[1].composition[2].concentration","decision":"evidence_only","rationale":"Nested stock placement and source-declared value retained; attach scoped evidence."}]},{"quantity_id":"q29","label":"Thiamine-HCl x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[28].concentration","stored":{"value":"0.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"solutions[1].composition[3].concentration","stored":{"value":"0.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"solutions[1].composition[3].concentration","stored":{"value":"0.2","unit":"G_PER_L"}}],"decision":"mixed","rationale":"This value belongs to the separate stock, not a direct main-medium concentration. Preserve any correctly nested owner row and repair the remaining direct placements; the generated target is still fully flat. The stock API declares g_l, while its primary lists water input rather than explicit final makeup. Do not silently transfer this value into the receiving medium.","source_stage":"seven-vitamin stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 72-72","quote":"Thiamine-HCl x 2 H2O                      200.00   mg","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[3].recipe[6]","quote":"{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Thiamine-HCl x 2 H2O\",\n                        \"compound_id\": 77,\n                        \"amount\": 200,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 0.535761,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}],"layer_decisions":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[28].concentration","decision":"correct","rationale":"Undiluted stock row requires stock placement, not a main-medium rate."},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"solutions[1].composition[3].concentration","decision":"evidence_only","rationale":"Nested stock placement and source-declared value retained; attach scoped evidence."},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"solutions[1].composition[3].concentration","decision":"evidence_only","rationale":"Nested stock placement and source-declared value retained; attach scoped evidence."}]},{"quantity_id":"q30","label":"Receiving Trace element solution SL-10","local_fields":[{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"solutions[0].concentration","stored":{"value":"1","unit":"ML_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"solutions[0].concentration","stored":{"value":"1","unit":"ML_PER_L"}}],"decision":"unsupported","rationale":"The source states a 1 mL batch addition. An existing 1 ML_PER_L assertion and per-litre note require a receiving denominator that is not independently established. Retain exact stock identity and batch dose, without calculating a dilution from input water alone.","source_stage":"receiving stock addition","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 8-8","quote":"Trace element solution SL-10                               1.00        ml","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[0].recipe[5]","quote":"{\n                        \"recipe_order\": 6,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\": 595,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q31","label":"Receiving Selenite-tungstate solution","local_fields":[],"decision":"evidence_only","rationale":"The source states a 1 mL batch addition. An existing 1 ML_PER_L assertion and per-litre note require a receiving denominator that is not independently established. Retain exact stock identity and batch dose, without calculating a dilution from input water alone.","source_stage":"receiving stock addition","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 9-9","quote":"Selenite-tungstate solution                                1.00        ml","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[0].recipe[6]","quote":"{\n                        \"recipe_order\": 7,\n                        \"solution\": \"Selenite-tungstate solution\",\n                        \"solution_id\": 777,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q32","label":"Receiving Seven vitamins solution","local_fields":[{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"solutions[1].concentration","stored":{"value":"1","unit":"ML_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"solutions[1].concentration","stored":{"value":"1","unit":"ML_PER_L"}}],"decision":"unsupported","rationale":"The source states a 1 mL batch addition. An existing 1 ML_PER_L assertion and per-litre note require a receiving denominator that is not independently established. Retain exact stock identity and batch dose, without calculating a dilution from input water alone.","source_stage":"receiving stock addition","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 14-14","quote":"Seven vitamins solution                                    1.00        ml","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[0].recipe[11]","quote":"{\n                        \"recipe_order\": 12,\n                        \"solution\": \"Seven vitamins solution\",\n                        \"solution_id\": 1038,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q33","label":"Owner stock preparation/dose note 0","local_fields":[{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"solutions[0].preparation_notes","stored":"Stock prepared in 1000 ml; added at 1 ml per litre of medium. Composition and volume from MediaDive (#150)."}],"decision":"unsupported","rationale":"The source stock identity and partial nesting receive credit. SL-10 has explicit final makeup; seven vitamins lists water input. The owner claim of per-litre receiving addition is not proved by either stock volume or exact compound matching.","source_stage":"owner provenance and denominator claim","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 8-8","quote":"Trace element solution SL-10                               1.00        ml","quote_basis":"derivative text"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 14-14","quote":"Seven vitamins solution                                    1.00        ml","quote_basis":"derivative text"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 44-45","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative text"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 73-73","quote":"Distilled water                          1000.00   ml","quote_basis":"derivative text"}]},{"quantity_id":"q34","label":"Owner stock preparation/dose note 1","local_fields":[{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"solutions[1].preparation_notes","stored":"Stock prepared in 1000 ml; added at 1 ml per litre of medium. Composition and volume from MediaDive (#150)."}],"decision":"unsupported","rationale":"The source stock identity and partial nesting receive credit. SL-10 has explicit final makeup; seven vitamins lists water input. The owner claim of per-litre receiving addition is not proved by either stock volume or exact compound matching.","source_stage":"owner provenance and denominator claim","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 8-8","quote":"Trace element solution SL-10                               1.00        ml","quote_basis":"derivative text"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 14-14","quote":"Seven vitamins solution                                    1.00        ml","quote_basis":"derivative text"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 44-45","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative text"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 73-73","quote":"Distilled water                          1000.00   ml","quote_basis":"derivative text"}]},{"quantity_id":"q35","label":"Owner stock preparation/dose note 0","local_fields":[{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"solutions[0].preparation_notes","stored":"Stock prepared in 1000 ml. Composition and volume from medium 788's own MediaDive recipe, identified by this record reproducing that medium's composition exactly (29/29 shared compounds at identical values) despite the upstream rename to 'CALORAMATOR MEDIUM' (#262)."}],"decision":"unsupported","rationale":"The owner's partial stock nesting receives credit, and DSMZ medium 788 explicitly makes SL-10 up to 1000 mL. This note does not assert a per-litre receiving dose. Its identity inference from 29/29 matching compounds does not independently establish that this differently named owner is the exact medium 788 variant; that cross-provider identity remains unresolved.","source_stage":"owner provenance and denominator claim","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 8-8","quote":"Trace element solution SL-10                               1.00        ml","quote_basis":"derivative text"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 14-14","quote":"Seven vitamins solution                                    1.00        ml","quote_basis":"derivative text"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 44-45","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative text"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 73-73","quote":"Distilled water                          1000.00   ml","quote_basis":"derivative text"}]},{"quantity_id":"q36","label":"Owner stock preparation/dose note 1","local_fields":[{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"solutions[1].preparation_notes","stored":"Stock prepared in 1000 ml. Composition and volume from medium 788's own MediaDive recipe, identified by this record reproducing that medium's composition exactly (29/29 shared compounds at identical values) despite the upstream rename to 'CALORAMATOR MEDIUM' (#262)."}],"decision":"unsupported","rationale":"The owner's partial stock nesting receives credit. This note does not assert a per-litre receiving dose. DSMZ medium 788 lists 1000 mL water for the seven-vitamin stock without an explicit final-volume makeup instruction. The note's 29/29 compound-match inference also leaves the exact cross-provider medium identity unresolved.","source_stage":"owner provenance and denominator claim","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 8-8","quote":"Trace element solution SL-10                               1.00        ml","quote_basis":"derivative text"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 14-14","quote":"Seven vitamins solution                                    1.00        ml","quote_basis":"derivative text"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 44-45","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative text"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 73-73","quote":"Distilled water                          1000.00   ml","quote_basis":"derivative text"}]},{"quantity_id":"q37","label":"Water input, source solution 0","local_fields":[],"decision":"evidence_only","rationale":"Retain the exact solvent input and source stage. Only SL-10 has a separately explicit final makeup; no main-medium final volume follows from water input.","source_stage":"source-only solvent","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 16-16","quote":"Distilled water                                         1000.00        ml","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[0].recipe[13]","quote":"{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q38","label":"Water input, source solution 1","local_fields":[],"decision":"evidence_only","rationale":"Retain the exact solvent input and source stage. Only SL-10 has a separately explicit final makeup; no main-medium final volume follows from water input.","source_stage":"source-only solvent","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 42-42","quote":"Distilled water                                           990.00      ml","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[1].recipe[9]","quote":"{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 990,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q39","label":"Water input, source solution 2","local_fields":[],"decision":"evidence_only","rationale":"Retain the exact solvent input and source stage. Only SL-10 has a separately explicit final makeup; no main-medium final volume follows from water input.","source_stage":"source-only solvent","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 61-61","quote":"Distilled water                          1000.00   ml","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[2].recipe[3]","quote":"{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q40","label":"Water input, source solution 3","local_fields":[],"decision":"evidence_only","rationale":"Retain the exact solvent input and source stage. Only SL-10 has a separately explicit final makeup; no main-medium final volume follows from water input.","source_stage":"source-only solvent","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 73-73","quote":"Distilled water                          1000.00   ml","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[3].recipe[7]","quote":"{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q41","label":"Sodium resazurin stock strength and dose","local_fields":[],"decision":"evidence_only","rationale":"The explicit 0.1% w/v and 0.50 mL dose are source-supported; preserve both independently of the declared normalized rate.","source_stage":"source-only direct stock input","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 10-10","quote":"Sodium resazurin (0.1% w/v)                                0.50        ml","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[0].recipe[7]","quote":"{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.000498504,\n                        \"mmol_l\": 0.00198473,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q42","label":"Retained main pH","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ph_range","stored":{"min":7.2,"max":7.4}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ph_range","stored":{"min":7.2,"max":7.4}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ph_range","stored":{"min":7.2,"max":7.4}}],"decision":"evidence_only","rationale":"The existing 7.2\u20137.4 range matches the final complete-medium adjustment; it is not an organism growth optimum.","source_stage":"main adjustment","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 24-24","quote":"sterilized by filtration. Prior to use adjust pH of complete medium to 7.2 - 7.4, if necessary.","quote_basis":"derivative text"}]},{"quantity_id":"q43","label":"Retained preparation 1","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"preparation_steps[0].description","stored":"Dissolve ingredients except calcium chloride, carbonate, glucose, vitamins and sulfide. Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add calcium chloride, glucose, vitamins and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Vitamins should be sterilized by filtration. Prior to use adjust pH of complete medium to 7.2 - 7.4, if necessary."},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"preparation_steps[0].description","stored":"Dissolve ingredients except calcium chloride, carbonate, glucose, vitamins and sulfide. Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add calcium chloride, glucose, vitamins and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Vitamins should be sterilized by filtration. Prior to use adjust pH of complete medium to 7.2 - 7.4, if necessary."}],"decision":"evidence_only","rationale":"Preserve the complete anoxic preparation, sparging duration, distinct gas stages, late additions and vitamin filtration. The KOMODO owner lacks this preparation.","source_stage":"main preparation","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 18-24","quote":"Dissolve ingredients except calcium chloride, carbonate, glucose, vitamins and sulfide.\nSparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.\nDispense medium under the same gas atmosphere into anoxic Hungate-type tubes or\nserum vials and autoclave. Add calcium chloride, glucose, vitamins and sulfide from sterile\nanoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic\nstock solution prepared under 80% N2 and 20% CO2 gas mixture. Vitamins should be\nsterilized by filtration. Prior to use adjust pH of complete medium to 7.2 - 7.4, if necessary.","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"step\": \"Dissolve ingredients except calcium chloride, carbonate, glucose, vitamins and sulfide. Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add calcium chloride, glucose, vitamins and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Vitamins should be sterilized by filtration. Prior to use adjust pH of complete medium to 7.2 - 7.4, if necessary.\"\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q44","label":"Retained preparation 2","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"preparation_steps[1].description","stored":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml."},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"preparation_steps[1].description","stored":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml."}],"decision":"correct","rationale":"The exact supported dissolution sequence and 1000 mL makeup belong with SL-10 rather than an unscoped second main-medium step.","source_stage":"stock preparation","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 44-45","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[1].steps[0]","quote":"{\n                        \"step\": \"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml.\"\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q45","label":"DSM12679 source branch","local_fields":[],"decision":"evidence_only","rationale":"Keep the explicit yeast omission and 2.40 g/L NaCl as the DSM12679-specific branch, not as the base formulation or a generic growth claim.","source_stage":"source-only named-strain variant","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt lines 27-27","quote":"For DSM 12679: Omit yeast extract and supplement medium with 2.40 g/l NaCl.","quote_basis":"derivative text"}]}],"document_scopes":{"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml":null,"data/normalized_yaml/bacterial/caloramator_medium.yaml":null,"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml":null},"scope":"Every selected target/owner concentration plus explicit dependency fields; source-only rows/conditions and unchanged claims distinguished. Excluded parent quantities are not transferred."}
+
+### Supplied forms and current ontology/MIM scope
+
+grounding: concern. Targets: CultureMech:001924.
+
+Exact asserted primary/secondary slots are joined to current OLS objects and packaged MIM rows. Nickel hexahydrate versus anhydrous CHEBI:34887 and sodium resazurin versus neutral CHEBI:8806 are confirmed form mismatches; nickel affects both slots, resazurin primary only. Generic calcium pantothenate leaves the D stereochemistry unresolved, while explicit D-biotin and thiamine hydrochloride dihydrate agree. Label agreement and MIM presence do not establish concentration or source equivalence.
+
+### Existing repair credit and writer limits
+
+provenance: supported. Targets: CultureMech:001924.
+
+All six reports and every current owner history were read. The September report assumed final-litre water/doses and called provider normalization underconcentration; this review does not repeat those unsupported denominator assumptions. October reports retained stock conflicts unchanged. Fresh API content matches the historical source digest and literal objects, independently of old retrieval-time authentication. Partial nesting and volume-promotion events are credited without claiming current writer replay or full scientific completion.
+
+## Findings
+
+### f1: Generated stock flattening persists despite partial owner repair
+
+major / open / confirmed; issue key: culturemech-001924-incomplete-stock-topology.
+
+The target has 29 direct components and no stocks. Each maintained owner already nests five components in two stocks, but fourteen other stock components remain direct and the selenite-tungstate stock is absent. Restore all three stock boundaries and exact receiving inputs, crediting the partial owner repair; then regenerate through the current conservative merger. Its exact formulation gate must preserve owner preparation and provenance differences.
+
+### f2: Owner stock doses assert an unestablished receiving-litre basis
+
+major / open / confirmed; issue key: culturemech-001924-receiving-dose-basis.
+
+Both owners encode two 1 ML_PER_L stock doses. Only the DSMZ-derived owner preparation notes explicitly describe per-litre receiving additions; the KOMODO-derived owner notes instead assert stock volume and identity inferred from matching compounds. The primary instead states 1 mL inputs and 1000 mL water; API main volume is 1003 mL. Preserve batch doses and source normalization separately rather than treating stock volume or composition matching as proof of a final-medium denominator.
+
+### f3: Nickel hydrate and sodium resazurin use different chemical forms
+
+major / open / confirmed; issue key: culturemech-001924-supplied-form-identifiers.
+
+The source and local names specify nickel chloride hexahydrate, whereas primary and secondary CHEBI:34887 denote anhydrous nickel dichloride. Fresh CHEBI:53542 independently identifies the hexahydrate candidate. Sodium resazurin has a primary CHEBI:8806 slot denoting neutral resazurin, with no sodium in its formula; there is no secondary resazurin slot to repair. Correct only the actual asserted slots and keep stock-stage work separate.
+
+### f4: KOMODO aerobic metadata conflicts with its DSM-derived formulation
+
+major / open / confirmed; issue key: culturemech-001924-komodo-aerobic-provenance.
+
+The maintained KOMODO owner says Aerobic: Yes and lacks preparation. Its declared DSM788 ancestry and identical source-derived formulation point to explicitly anoxic preparation. Reconcile the retained aerobic metadata and source-duplicate claim against exact provenance; the current KOMODO detail route is 403, so neither a historical rename nor source-version equivalence is independently settled by that route.
+
+### f5: Retain the source branch and unresolved vitamin specificity
+
+minor / open / confirmed; issue key: culturemech-001924-variant-and-specificity-limits.
+
+Document the DSM12679 branch separately without altering the base formulation. Generic calcium-pantothenate wording in DSM788 does not independently establish the D stereochemistry encoded by CHEBI:31345; keep that source-form limit explicit rather than certifying every canonical label as exact supplied-form correspondence.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+The target has 29 direct components and no stocks. Each maintained owner already nests five components in two stocks, but fourteen other stock components remain direct and the selenite-tungstate stock is absent. Restore all three stock boundaries and exact receiving inputs, crediting the partial owner repair; then regenerate through the current conservative merger. Its exact formulation gate must preserve owner preparation and provenance differences.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a2
+
+Both owners encode two 1 ML_PER_L stock doses. Only the DSMZ-derived owner preparation notes explicitly describe per-litre receiving additions; the KOMODO-derived owner notes instead assert stock volume and identity inferred from matching compounds. The primary instead states 1 mL inputs and 1000 mL water; API main volume is 1003 mL. Preserve batch doses and source normalization separately rather than treating stock volume or composition matching as proof of a final-medium denominator.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a3
+
+The source and local names specify nickel chloride hexahydrate, whereas primary and secondary CHEBI:34887 denote anhydrous nickel dichloride. Fresh CHEBI:53542 independently identifies the hexahydrate candidate. Sodium resazurin has a primary CHEBI:8806 slot denoting neutral resazurin, with no sodium in its formula; there is no secondary resazurin slot to repair. Correct only the actual asserted slots and keep stock-stage work separate.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a4
+
+The maintained KOMODO owner says Aerobic: Yes and lacks preparation. Its declared DSM788 ancestry and identical source-derived formulation point to explicitly anoxic preparation. Reconcile the retained aerobic metadata and source-duplicate claim against exact provenance; the current KOMODO detail route is 403, so neither a historical rename nor source-version equivalence is independently settled by that route.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a5
+
+Document the DSM12679 branch separately without altering the base formulation. Generic calcium-pantothenate wording in DSM788 does not independently establish the D stereochemistry encoded by CHEBI:31345; keep that source-form limit explicit rather than certifying every canonical label as exact supplied-form correspondence.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| dsm788 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf; REVIEW_WORK/batch058/source07-09/dsm788.json; exact original raw/text/hash/time metadata | context_only | Exact primary medium and its printed stock/preparation subsections; named strain variations remain separate and do not establish generic growth. |
+| api788 | https://mediadive.dsmz.de/rest/medium/788; REVIEW_WORK/batch058/source07-09/api788.json; exact original raw/text/hash/time metadata | context_only | Exact current provider identity and declared amounts/basis; provider volume is not independently measured final volume. |
+| komodo788 | https://komodo.modelseed.org/servlet/Komodo?getRecipe=788; REVIEW_WORK/batch058/source07-09/komodo788.json; exact original raw/text/hash/time metadata | context_only | Exact KOMODO source identity route; preserve current access failure without claiming broader absence. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:34887; REVIEW_WORK/batch058/source07-09/chebi34887.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi53542 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:53542; REVIEW_WORK/batch058/source07-09/chebi53542.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:8806; REVIEW_WORK/batch058/source07-09/chebi8806.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi31345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31345; REVIEW_WORK/batch058/source07-09/chebi31345.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| target | data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml; Complete file | context_only | Complete generated target. |
+| owner | data/normalized_yaml/bacterial/caloramator_medium.yaml; Complete file | context_only | Complete exact maintained owner. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Complete file | context_only | Exact packaged current identifier/ontology_id and preferred-term rows. |
+| mim-meta | src/culturemech/data/mediaingredientmech/label_index.metadata.json; Complete file | context_only | Exact packaged snapshot version and checksum. |
+| writer-formulation | src/culturemech/merge/formulation.py; Full formulation comparison | context_only | Current scientific-field equality includes quantities, stocks and notes; no chemical equivalence is inferred. |
+| writer-merger | src/culturemech/merge/merger.py; RecipeMerger.merge_group | context_only | Current merge_group copies singletons and rejects incompatible multiple formulations. Generated staleness is not evidence that current code permits ingredient-only merging. |
+| owner-2 | data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml; Complete file | context_only | Complete exact additional maintained owner. |
+| report-17 | reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/inspected-candidate-context.json; Exact selected row locators in historical-selected-parent-rows.json | context_only | Historical repository parent; only exact selected record objects are joined. Decoded data is not itself original external raw evidence. |
+| report-18 | reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/plan.json; Exact selected row locators in historical-selected-parent-rows.json | context_only | Historical repository parent; only exact selected record objects are joined. Decoded data is not itself original external raw evidence. |
+| report-19 | reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/caloramator_proteoclasticus_medium.yaml.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-20 | reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/plan.json; Exact selected row locators in historical-selected-parent-rows.json | context_only | Historical repository parent; only exact selected record objects are joined. Decoded data is not itself original external raw evidence. |
+| report-21 | reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/caloramator_medium.yaml.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-22 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CALORAMATOR_MEDIUM.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-23 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/caloramator_medium.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-24 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-25 | reports/yaml_record_review/20260922T025128Z-CALORAMATOR_MEDIUM.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| writer-mediadive | src/culturemech/import/mediadive_importer.py; _parse_api_composition, _is_api_stock_addition, _parse_api_solutions, _normalize_unit | context_only | Current parser reads only the primary recipe, separates referenced solutions and percentage/ml additions, and preserves their source attributes. It prefers explicit g_l but otherwise maps bare mass/volume units to per-litre schema units. This credits existing stage handling without certifying a source final volume or historical execution. |
+| writer-cleanup | scripts/cleanup_media_quality.py; _merge_ingredient_group | context_only | Current duplicate cleanup collapses identical values but flags conflicting values without summing. Earlier sums require source-stage curation; do not rerun cleanup as a substitute for scientific reconciliation. |
+| writer-nesting | scripts/apply_cocktail_nesting.py; match_components, match_stock_signature, plan_record, apply_plan | context_only | Current plan_record skips records already containing solutions. It supports full-signature matching as well as flagged-row matching, but still writes source addition volumes as ML_PER_L without proving a receiving final volume. Do not rerun this writer blindly on partially nested owners. |
+| writer-promotion | scripts/promote_komodo_volume_candidates.py; promote_doc and main | context_only | Current promote_doc fills missing solution concentrations from candidates after composition confirmation; it does not overwrite existing concentration fields. Composition correspondence is not independent measured-final-volume evidence. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63036; REVIEW_WORK/batch058/source07-09/chebi63036.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi91258 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:91258; REVIEW_WORK/batch058/source07-09/chebi91258.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31206; REVIEW_WORK/batch058/source07-09/chebi31206.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86345; REVIEW_WORK/batch058/source07-09/chebi86345.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86158; REVIEW_WORK/batch058/source07-09/chebi86158.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:29377; REVIEW_WORK/batch058/source07-09/chebi29377.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi17634 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17634; REVIEW_WORK/batch058/source07-09/chebi17634.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi76209 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:76209; REVIEW_WORK/batch058/source07-09/chebi76209.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi17883 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17883; REVIEW_WORK/batch058/source07-09/chebi17883.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi86249 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86249; REVIEW_WORK/batch058/source07-09/chebi86249.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi49976 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:49976; REVIEW_WORK/batch058/source07-09/chebi49976.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86368; REVIEW_WORK/batch058/source07-09/chebi86368.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:33118; REVIEW_WORK/batch058/source07-09/chebi33118.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi53503 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:53503; REVIEW_WORK/batch058/source07-09/chebi53503.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi86318 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86318; REVIEW_WORK/batch058/source07-09/chebi86318.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:75213; REVIEW_WORK/batch058/source07-09/chebi75213.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi32145 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32145; REVIEW_WORK/batch058/source07-09/chebi32145.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi131361 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:131361; REVIEW_WORK/batch058/source07-09/chebi131361.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi63939 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63939; REVIEW_WORK/batch058/source07-09/chebi63939.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi176843 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:176843; REVIEW_WORK/batch058/source07-09/chebi176843.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30753; REVIEW_WORK/batch058/source07-09/chebi30753.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15956; REVIEW_WORK/batch058/source07-09/chebi15956.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi15940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15940; REVIEW_WORK/batch058/source07-09/chebi15940.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi30961 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30961; REVIEW_WORK/batch058/source07-09/chebi30961.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi132751 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:132751; REVIEW_WORK/batch058/source07-09/chebi132751.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| quantities | REVIEW_WORK/batch058/record07/quantity-inventory.json; Complete sidecar | supports | Complete source-stage quantity decisions. |
+| groundings | REVIEW_WORK/batch058/record07/grounding-inventory.json; Complete sidecar | supports | Exact slots, raw OLS scientific objects and current MIM rows. |
+| census | REVIEW_WORK/batch058/record07/field-census.json; Complete sidecar | supports | Complete scalar census with explicit dependency exclusions. |
+| numeric-census | REVIEW_WORK/batch058/record07/numeric-field-census.json; Complete sidecar | supports | Numeric/text assertions and quantity joins. |
+| history | REVIEW_WORK/batch058/record07/history-inventory.json; Complete sidecar | supports | Current exact histories, without replay. |
+| old-reports | REVIEW_WORK/batch058/record07/history-report-inventory.json; Complete sidecar | supports | Exact historical report scopes. |
+| old-claims | REVIEW_WORK/batch058/record07/existing-claim-authentication.json; Complete sidecar | supports | Existing literal and raw-digest matches; current content authentication is separate from original retrieval provenance. |
+| check-schema | REVIEW_WORK/batch058/record07/schema-result.json | supports | Original once-only canonical schema with complete argv/time/streams; reference count zero does not verify sources. |
+| check-strict | REVIEW_WORK/batch058/record07/strict-result.json | supports | Original once-only canonical strict with complete argv/time/streams; reference count zero does not verify sources. |
+| check-terms | REVIEW_WORK/batch058/record07/terms-result.json | supports | Original once-only canonical terms with complete argv/time/streams; reference count zero does not verify sources. |
+| check-references | REVIEW_WORK/batch058/record07/references-result.json | supports | Original once-only canonical references with complete argv/time/streams; reference count zero does not verify sources. |
+
+## Limits And Additional Notes
+
+- Current canonical checks validate encoded structure/labels; zero reference checks do not verify external source claims.
+- All primary PDF pages were read visually as well as in their complete extracted text. Current source status, retrieval times and complete raw/text bytes remain in the capture catalog.
+- Provider mmol_l fields are retained as declarations, not endorsed calculations: cobalt/nickel values do not use the named hexahydrate formula masses. No molar correction or final-medium dilution is inferred.
+- No strain-growth claim, optimization or experimental recommendation is inferred from the medium name or general source identity.
+- The MIM snapshot commit is 6643131b0f12ab40b66f98135245fca04027e0e9; present/absent rows do not establish a historical or live-catalog result.
+- Input water is not measured final volume. Explicit provider g_l rates are assessed only on their declared normalization basis; unspecified percent bases and hydrate numbers remain unresolved.
+- No source changes, formal review validation/save, Git mutation or publication was performed by this author.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T062558Z-culturemech-001924-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Scientific review: CALORAMATOR MEDIUM'
+started_at: '2026-10-28T06:09:45.402241Z'
+finished_at: '2026-10-28T06:25:58.458478Z'
+reviewer:
+  identity: Codex tsb_source_check
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Read-only independent review of maintained source records, fresh
+    sources and original diagnostics.
+skill: review-yaml-record
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: DSM788 identity and retained preparation are supported. Partial owner stock
+  repair, remaining flattening, receiving-dose basis, two supplied-form identifiers
+  and KOMODO aerobic provenance require curation; the source-specific branch and vitamin
+  specificity remain bounded.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: c0ef0808662f57dc2f57ce9b405485830503653aceee1451c9e1dae42f9e7021
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml
+    sha256: 03c5c2ab6a4a46239f0f638237a7419041beac195c10a38da932b82651415f4f
+    role: target
+  - path: data/normalized_yaml/bacterial/caloramator_medium.yaml
+    sha256: d39c9379eb9b9816fb02802d9c54c666375b890cd3bd3bb6b62b6dad9f8798d0
+    role: context
+  - path: data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml
+    sha256: cbdf5587dedb2ad405d114a86820c80ce3d4ebc3256960d08b7c42c9478185e8
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/inspected-candidate-context.json
+    sha256: 65c1b3085c5b2101fd274a184820f9de1dd1fa7f7f7d7d0068d6acb67b587934
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/plan.json
+    sha256: f5827bda6e5f7caf5fdb9faddc5f36e3955ee048fa0a066cc40e04ff3e1c4823
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/caloramator_proteoclasticus_medium.yaml.md
+    sha256: bcbf8024f6b0d12ef1cd04556e2a4a21a2b553abefa0fad031951ff68bed1777
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/plan.json
+    sha256: bc8c96d09770525e6b6ba6dc0c7680354cf9bc6baa5249e79e82b65328203147
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/caloramator_medium.yaml.md
+    sha256: ba06f3a45aec1b2827b47fb1ffec2327e92bbc197dd7f7118a371abdeb836824
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CALORAMATOR_MEDIUM.md
+    sha256: 3304711fd8f768e328be8249800070f3893e24ed900e6655df892f67d65e7d50
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/caloramator_medium.md
+    sha256: 5315247ce7cf11a6a2832a74e3ad8f886335f52d045f88416e606d56173b5041
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.md
+    sha256: ba6b2687b816f30957b15b028e6faf588a1bdbe625f28b79604b7f2386a0a92a
+    role: context
+  - path: reports/yaml_record_review/20260922T025128Z-CALORAMATOR_MEDIUM.md
+    sha256: 692159a7a3f85e6b56812b9f5544143740829208b5eb73522067d23aad48be3b
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_cocktail_nesting.py
+    sha256: a1914a040ca02c86633aae11ed8a52a0ea91ba157a8240da2232c4ae652d61ab
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/enrich_with_chebi.py
+    sha256: f18dd6e4317de76cb7379f6c9c6227f9af884c27a0761d7f64143aaf74d8e1dc
+    role: context
+  - path: scripts/enrich_with_mediaingredientmech.py
+    sha256: 6357c9d621c3d6e32b28b2982afedfaed384830cea1602a775b0a5f0852c015e
+    role: context
+  - path: scripts/import_from_culturebotht.py
+    sha256: d835addf5fff423a9b0b1231848ed3103c5b2d97015c1c294365970d15be0fe1
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_mgso4_heptahydrate_term.py
+    sha256: 6acb9d5164ad381c288f031fb34045036e3fd2283e559f1ad8ccd1a4687fb4ce
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/promote_komodo_volume_candidates.py
+    sha256: 2423b7e2e04011b31d21eac939714a2db4380f033a69094325dc567e44929cd2
+    role: context
+  - path: scripts/refill_term_labels.py
+    sha256: 8eee4532e4a71d120532db511733bde974ab1b179e50cb1ea51d66c3870f3cb9
+    role: context
+  - path: scripts/remove_invalid_chebi_ids.py
+    sha256: a6c2f7577812081230fd5fe008182c09eace4ef7818857f8026ec8d5e0b760e0
+    role: context
+  - path: scripts/repair_mediadive_jcm_structure.py
+    sha256: 5bff4c2d1900051bdea1b8e0f655049147c85cc9c61da4c348a6d60a8d0fd509
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: Whole exact target/owner with explicit scoped dependencies, current
+    sources and historical claims.
+  selection: Authoritative batch058 index 07
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:001924
+targets:
+- target_id: CultureMech:001924
+  path: data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml
+  label: caloramator_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caloramator_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml
+    role: maintained source
+  ownership_note: Exact declared maintained contributors resolved against stable identity;
+    stocks and other source variants remain scoped comparisons.
+checks:
+- check_id: schema
+  name: Canonical schema
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:001924
+  command: just validate-schema data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-schema
+- check_id: strict
+  name: Canonical strict
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:001924
+  command: just validate-strict data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml --out
+    REVIEW_WORK/batch058/record07/strict.tsv --workers 1 --quiet
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-strict
+- check_id: terms
+  name: Canonical terms
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:001924
+  command: just validate-terms data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-terms
+- check_id: references
+  name: Canonical references
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:001924
+  command: just validate-references data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-references
+evidence:
+- evidence_id: dsm788
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf
+  accessed_at: '2026-10-28T06:10:13.198704Z'
+  locator: REVIEW_WORK/batch058/source07-09/dsm788.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact primary medium and its printed stock/preparation subsections; named
+    strain variations remain separate and do not establish generic growth.
+  snapshot_sha256: ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5
+- evidence_id: api788
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/788
+  accessed_at: '2026-10-28T06:10:13.036311Z'
+  locator: REVIEW_WORK/batch058/source07-09/api788.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current provider identity and declared amounts/basis; provider volume
+    is not independently measured final volume.
+  snapshot_sha256: e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3
+- evidence_id: komodo788
+  kind: search
+  reference: https://komodo.modelseed.org/servlet/Komodo?getRecipe=788
+  accessed_at: '2026-10-28T06:10:13.108686Z'
+  locator: REVIEW_WORK/batch058/source07-09/komodo788.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact KOMODO source identity route; preserve current access failure without
+    claiming broader absence.
+  snapshot_sha256: 59ea0470ffc83c6f268b0105c795632dea7f1e3d58e73f8f7fb94a67683484a4
+  search_scope: One exact public GET of https://komodo.modelseed.org/servlet/Komodo?getRecipe=788;
+    retained status 403. No exhaustive repository or literature absence claim.
+- evidence_id: chebi34887
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:34887
+  accessed_at: '2026-10-28T06:10:16.490533Z'
+  locator: REVIEW_WORK/batch058/source07-09/chebi34887.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 3a37ef35991d24faf578286a7d7557ee1b0646c286dd3f8a555d833e6bf82a57
+- evidence_id: chebi53542
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:53542
+  accessed_at: '2026-10-28T06:10:17.185279Z'
+  locator: REVIEW_WORK/batch058/source07-09/chebi53542.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 1e44a068cfe6b98d7bb3b0240ffdc0611e1be59f2d3dab9f04e4162ed94e4444
+- evidence_id: chebi8806
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:8806
+  accessed_at: '2026-10-28T06:10:18.847160Z'
+  locator: REVIEW_WORK/batch058/source07-09/chebi8806.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: f2530ec9c15f59a3d132a466c9c3a899497bab0f85b996d3e27bef8612f89982
+- evidence_id: chebi31345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31345
+  accessed_at: '2026-10-28T06:10:15.870210Z'
+  locator: REVIEW_WORK/batch058/source07-09/chebi31345.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: c3341e7cf8a7ea0768d505265376c1514f161c9048b6e878314e204341d702eb
+- evidence_id: target
+  kind: record_content
+  reference: data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T06:13:15.712452Z'
+  support: context_only
+  summary: Complete generated target.
+  snapshot_sha256: 03c5c2ab6a4a46239f0f638237a7419041beac195c10a38da932b82651415f4f
+- evidence_id: owner
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/caloramator_medium.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T06:13:15.712631Z'
+  support: context_only
+  summary: Complete exact maintained owner.
+  snapshot_sha256: d39c9379eb9b9816fb02802d9c54c666375b890cd3bd3bb6b62b6dad9f8798d0
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Complete file
+  accessed_at: '2026-10-28T06:13:15.712659Z'
+  support: context_only
+  summary: Exact packaged current identifier/ontology_id and preferred-term rows.
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: mim-meta
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+  locator: Complete file
+  accessed_at: '2026-10-28T06:13:15.712965Z'
+  support: context_only
+  summary: Exact packaged snapshot version and checksum.
+  snapshot_sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+- evidence_id: writer-formulation
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Full formulation comparison
+  accessed_at: '2026-10-28T06:13:15.712988Z'
+  support: context_only
+  summary: Current scientific-field equality includes quantities, stocks and notes;
+    no chemical equivalence is inferred.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-merger
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: RecipeMerger.merge_group
+  accessed_at: '2026-10-28T06:13:15.713009Z'
+  support: context_only
+  summary: Current merge_group copies singletons and rejects incompatible multiple
+    formulations. Generated staleness is not evidence that current code permits ingredient-only
+    merging.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: owner-2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T06:13:15.713032Z'
+  support: context_only
+  summary: Complete exact additional maintained owner.
+  snapshot_sha256: cbdf5587dedb2ad405d114a86820c80ce3d4ebc3256960d08b7c42c9478185e8
+- evidence_id: report-17
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/inspected-candidate-context.json
+  locator: Exact selected row locators in historical-selected-parent-rows.json
+  accessed_at: '2026-10-28T06:13:15.713059Z'
+  support: context_only
+  summary: Historical repository parent; only exact selected record objects are joined.
+    Decoded data is not itself original external raw evidence.
+  snapshot_sha256: 65c1b3085c5b2101fd274a184820f9de1dd1fa7f7f7d7d0068d6acb67b587934
+- evidence_id: report-18
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/plan.json
+  locator: Exact selected row locators in historical-selected-parent-rows.json
+  accessed_at: '2026-10-28T06:13:15.713814Z'
+  support: context_only
+  summary: Historical repository parent; only exact selected record objects are joined.
+    Decoded data is not itself original external raw evidence.
+  snapshot_sha256: f5827bda6e5f7caf5fdb9faddc5f36e3955ee048fa0a066cc40e04ff3e1c4823
+- evidence_id: report-19
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/caloramator_proteoclasticus_medium.yaml.md
+  locator: Complete report
+  accessed_at: '2026-10-28T06:13:15.719673Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: bcbf8024f6b0d12ef1cd04556e2a4a21a2b553abefa0fad031951ff68bed1777
+- evidence_id: report-20
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/plan.json
+  locator: Exact selected row locators in historical-selected-parent-rows.json
+  accessed_at: '2026-10-28T06:13:15.719743Z'
+  support: context_only
+  summary: Historical repository parent; only exact selected record objects are joined.
+    Decoded data is not itself original external raw evidence.
+  snapshot_sha256: bc8c96d09770525e6b6ba6dc0c7680354cf9bc6baa5249e79e82b65328203147
+- evidence_id: report-21
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/caloramator_medium.yaml.md
+  locator: Complete report
+  accessed_at: '2026-10-28T06:13:15.726420Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: ba06f3a45aec1b2827b47fb1ffec2327e92bbc197dd7f7118a371abdeb836824
+- evidence_id: report-22
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CALORAMATOR_MEDIUM.md
+  locator: Complete report
+  accessed_at: '2026-10-28T06:13:15.726477Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: 3304711fd8f768e328be8249800070f3893e24ed900e6655df892f67d65e7d50
+- evidence_id: report-23
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/caloramator_medium.md
+  locator: Complete report
+  accessed_at: '2026-10-28T06:13:15.726507Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: 5315247ce7cf11a6a2832a74e3ad8f886335f52d045f88416e606d56173b5041
+- evidence_id: report-24
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.md
+  locator: Complete report
+  accessed_at: '2026-10-28T06:13:15.726531Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: ba6b2687b816f30957b15b028e6faf588a1bdbe625f28b79604b7f2386a0a92a
+- evidence_id: report-25
+  kind: prior_review
+  reference: reports/yaml_record_review/20260922T025128Z-CALORAMATOR_MEDIUM.md
+  locator: Complete report
+  accessed_at: '2026-10-28T06:13:15.726555Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: 692159a7a3f85e6b56812b9f5544143740829208b5eb73522067d23aad48be3b
+- evidence_id: writer-mediadive
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition, _is_api_stock_addition, _parse_api_solutions, _normalize_unit
+  accessed_at: '2026-10-28T06:13:15.726579Z'
+  support: context_only
+  summary: Current parser reads only the primary recipe, separates referenced solutions
+    and percentage/ml additions, and preserves their source attributes. It prefers
+    explicit g_l but otherwise maps bare mass/volume units to per-litre schema units.
+    This credits existing stage handling without certifying a source final volume
+    or historical execution.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-cleanup
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: _merge_ingredient_group
+  accessed_at: '2026-10-28T06:13:15.726616Z'
+  support: context_only
+  summary: Current duplicate cleanup collapses identical values but flags conflicting
+    values without summing. Earlier sums require source-stage curation; do not rerun
+    cleanup as a substitute for scientific reconciliation.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer-nesting
+  kind: record_content
+  reference: scripts/apply_cocktail_nesting.py
+  locator: match_components, match_stock_signature, plan_record, apply_plan
+  accessed_at: '2026-10-28T06:13:15.867645Z'
+  support: context_only
+  summary: Current plan_record skips records already containing solutions. It supports
+    full-signature matching as well as flagged-row matching, but still writes source
+    addition volumes as ML_PER_L without proving a receiving final volume. Do not
+    rerun this writer blindly on partially nested owners.
+  snapshot_sha256: a1914a040ca02c86633aae11ed8a52a0ea91ba157a8240da2232c4ae652d61ab
+- evidence_id: writer-promotion
+  kind: record_content
+  reference: scripts/promote_komodo_volume_candidates.py
+  locator: promote_doc and main
+  accessed_at: '2026-10-28T06:13:15.867721Z'
+  support: context_only
+  summary: Current promote_doc fills missing solution concentrations from candidates
+    after composition confirmation; it does not overwrite existing concentration fields.
+    Composition correspondence is not independent measured-final-volume evidence.
+  snapshot_sha256: 2423b7e2e04011b31d21eac939714a2db4380f033a69094325dc567e44929cd2
+- evidence_id: chebi63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63036
+  accessed_at: '2026-10-28T06:10:17.662931Z'
+  locator: REVIEW_WORK/batch058/source07-09/chebi63036.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 07dec38373731d2125348c574d0f9f2df977e458974100383d3f69c8849a84e0
+- evidence_id: chebi91258
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:91258
+  accessed_at: '2026-10-28T06:10:18.955114Z'
+  locator: REVIEW_WORK/batch058/source07-09/chebi91258.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: e14e1a91519d14765d91d25ca145a56376d176814c62df304f78116dd4ad9278
+- evidence_id: chebi31206
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31206
+  accessed_at: '2026-10-28T06:10:15.827429Z'
+  locator: REVIEW_WORK/batch058/source07-09/chebi31206.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 645112dbfa7f1c565489070586f5d4018429259ff0400500ca10dfe6e43a5449
+- evidence_id: chebi86345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86345
+  accessed_at: '2026-10-28T06:10:18.389111Z'
+  locator: REVIEW_WORK/batch058/source07-09/chebi86345.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 94b600ced6e98743e2d1b02c73e1756f8f81b639407a8fdd080c96d8fa563c70
+- evidence_id: chebi86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86158
+  accessed_at: '2026-10-28T06:10:18.233627Z'
+  locator: REVIEW_WORK/batch058/source07-09/chebi86158.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: eacf58308fa876cb17661b82d08a64d9be24814fde8014ac82da7696b3684841
+- evidence_id: chebi29377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:29377
+  accessed_at: '2026-10-28T06:10:15.331936Z'
+  locator: REVIEW_WORK/batch058/source07-09/chebi29377.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: e0c2a85ab7be9313c564f96ee47b87e1bf3e01ad1e9fd627d1dbddced5d068c4
+- evidence_id: chebi17634
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17634
+  accessed_at: '2026-10-28T06:10:14.527215Z'
+  locator: REVIEW_WORK/batch058/source07-09/chebi17634.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 04060738e01fe33b9fc8e5bf54807590127ce391eb8a962d1d013002502169b2
+- evidence_id: chebi76209
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:76209
+  accessed_at: '2026-10-28T06:10:17.797592Z'
+  locator: REVIEW_WORK/batch058/source07-09/chebi76209.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 4896ec517123ebeb1afcbac7bc30a7103976f03891af0c86c992196b5f0db969
+- evidence_id: chebi17883
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17883
+  accessed_at: '2026-10-28T06:10:15.170836Z'
+  locator: REVIEW_WORK/batch058/source07-09/chebi17883.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: e5ab164ef9ff955da1a504ca34ab4d3b69539d9bf721936c9dd563ccbbd0e3b0
+- evidence_id: chebi86249
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86249
+  accessed_at: '2026-10-28T06:10:18.267374Z'
+  locator: REVIEW_WORK/batch058/source07-09/chebi86249.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 4d7f48f88badcba85a62e59842c6ec921f5478eb76695098b17847ed62c8530a
+- evidence_id: chebi49976
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:49976
+  accessed_at: '2026-10-28T06:10:17.045258Z'
+  locator: REVIEW_WORK/batch058/source07-09/chebi49976.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: d3bdc4c6f01d01422fafe433df4e4011e01cf7e55e0329ab341a60ece780946f
+- evidence_id: chebi86368
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86368
+  accessed_at: '2026-10-28T06:10:18.396541Z'
+  locator: REVIEW_WORK/batch058/source07-09/chebi86368.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 2d5685a4a03c5d730876514b4a7664fb477f63682a60cc7e13d7776a250f68e3
+- evidence_id: chebi33118
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:33118
+  accessed_at: '2026-10-28T06:10:16.436126Z'
+  locator: REVIEW_WORK/batch058/source07-09/chebi33118.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: eef160dcdcd93f231064bc7b59da1e05a2efe1f96089b9cd2fdbdf68a9a4e5fc
+- evidence_id: chebi53503
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:53503
+  accessed_at: '2026-10-28T06:10:17.153627Z'
+  locator: REVIEW_WORK/batch058/source07-09/chebi53503.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: a626d2aa210aafd9572221d4893cd206310d5df507e474e1528997048f522250
+- evidence_id: chebi86318
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86318
+  accessed_at: '2026-10-28T06:10:18.352806Z'
+  locator: REVIEW_WORK/batch058/source07-09/chebi86318.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: bd88e1499f370a9f474b29fa7a9a83aa5c42c69d0b6772ece8c89d646dfda8d8
+- evidence_id: chebi75213
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:75213
+  accessed_at: '2026-10-28T06:10:17.802299Z'
+  locator: REVIEW_WORK/batch058/source07-09/chebi75213.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: f99a2d8b28ac44913a666745dd70098c5d5f21c9513fee921a35f0fd18f2c445
+- evidence_id: chebi32145
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32145
+  accessed_at: '2026-10-28T06:10:16.325198Z'
+  locator: REVIEW_WORK/batch058/source07-09/chebi32145.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 089212e8c86e2d4a4b145366c8bc67e0056565ef6970dcdc3df63ad20dac234d
+- evidence_id: chebi131361
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:131361
+  accessed_at: '2026-10-28T06:10:13.825959Z'
+  locator: REVIEW_WORK/batch058/source07-09/chebi131361.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: d88b30f797a300c3935e550a4770cb598bbed342a9c2a343f77bdce496e99db9
+- evidence_id: chebi63939
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63939
+  accessed_at: '2026-10-28T06:10:17.660443Z'
+  locator: REVIEW_WORK/batch058/source07-09/chebi63939.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 01f41117ab89dbd1d514a894850dc06afd5d95c0bee7fd89f7dfdb54c309c514
+- evidence_id: chebi176843
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:176843
+  accessed_at: '2026-10-28T06:10:14.731572Z'
+  locator: REVIEW_WORK/batch058/source07-09/chebi176843.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 9c73ea31864abce6b9ed6328e9ed491bc1cad2ba27f40adb5c00f0f192838e63
+- evidence_id: chebi30753
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30753
+  accessed_at: '2026-10-28T06:10:15.715860Z'
+  locator: REVIEW_WORK/batch058/source07-09/chebi30753.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 1340e054634ce960494b9388f6e3fd231d9e7d66969c3c11932ee2058171fd2c
+- evidence_id: chebi15956
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15956
+  accessed_at: '2026-10-28T06:10:14.390430Z'
+  locator: REVIEW_WORK/batch058/source07-09/chebi15956.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 5135a39e8b52c878896db22443f00507125db80e5ce4bb1dcc97914b9bdd7316
+- evidence_id: chebi15940
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15940
+  accessed_at: '2026-10-28T06:10:14.077368Z'
+  locator: REVIEW_WORK/batch058/source07-09/chebi15940.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: c291a1c1bb0d6af05ac4005af0957534f430db47e7df9cec874f8a94d961dba1
+- evidence_id: chebi30961
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30961
+  accessed_at: '2026-10-28T06:10:15.769055Z'
+  locator: REVIEW_WORK/batch058/source07-09/chebi30961.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 855ea2cf0e89d25ab4a560ab1c2dab6ac861d215bc5473cb4d3a0a2d4cdff438
+- evidence_id: chebi132751
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:132751
+  accessed_at: '2026-10-28T06:10:13.840871Z'
+  locator: REVIEW_WORK/batch058/source07-09/chebi132751.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 1d5eefc753b4fbbffd69d169aa7ca7be16df737b6c8c0e1833917806ac0607e5
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch058/record07/quantity-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T06:25:35.586812Z'
+  support: supports
+  summary: Complete source-stage quantity decisions.
+  snapshot_sha256: 26efa2baddf3e995ae35a1e3c353035a8729767edb3c436decd21594149153f3
+- evidence_id: groundings
+  kind: record_content
+  reference: REVIEW_WORK/batch058/record07/grounding-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T06:13:16.030308Z'
+  support: supports
+  summary: Exact slots, raw OLS scientific objects and current MIM rows.
+  snapshot_sha256: adba6b4acc090030f7863746e0abe8877bf6a198b4231645815390670139d545
+- evidence_id: census
+  kind: record_content
+  reference: REVIEW_WORK/batch058/record07/field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T06:13:16.030465Z'
+  support: supports
+  summary: Complete scalar census with explicit dependency exclusions.
+  snapshot_sha256: cb5e1366803c9b042fc5a883b8d49b0a62e61cef37e5d0df92fa5041456d6e48
+- evidence_id: numeric-census
+  kind: record_content
+  reference: REVIEW_WORK/batch058/record07/numeric-field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T06:13:16.030547Z'
+  support: supports
+  summary: Numeric/text assertions and quantity joins.
+  snapshot_sha256: dbc498517b8f414df678fdcb1b3b0ca8214436013ffef0bb47fcb31c7007541a
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch058/record07/history-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T06:13:16.030617Z'
+  support: supports
+  summary: Current exact histories, without replay.
+  snapshot_sha256: 0d14ba63207b3fae31f9c5e81db2d9bff784f033ebd19bdce5593d137c495a96
+- evidence_id: old-reports
+  kind: record_content
+  reference: REVIEW_WORK/batch058/record07/history-report-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T06:13:16.030645Z'
+  support: supports
+  summary: Exact historical report scopes.
+  snapshot_sha256: f49cd63ee723fc8ee43773625bd75a4e2ee04629be4fb8c6e4a981505dcf3e7d
+- evidence_id: old-claims
+  kind: record_content
+  reference: REVIEW_WORK/batch058/record07/existing-claim-authentication.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T06:13:16.030669Z'
+  support: supports
+  summary: Existing literal and raw-digest matches; current content authentication
+    is separate from original retrieval provenance.
+  snapshot_sha256: 37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570
+- evidence_id: check-schema
+  kind: validation
+  reference: REVIEW_WORK/batch058/record07/schema-result.json
+  accessed_at: '2026-10-28T06:09:46.560095Z'
+  support: supports
+  summary: Original once-only canonical schema with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: 7fcbcd61444de1b1861410a8acd462a1ac8be48696eb6755084c46dd999aec92
+- evidence_id: check-strict
+  kind: validation
+  reference: REVIEW_WORK/batch058/record07/strict-result.json
+  accessed_at: '2026-10-28T06:09:47.569943Z'
+  support: supports
+  summary: Original once-only canonical strict with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: b695e154e24ac01af8e44f1c21fb36bd3a0046264c680e8a9060600af870c9c0
+- evidence_id: check-terms
+  kind: validation
+  reference: REVIEW_WORK/batch058/record07/terms-result.json
+  accessed_at: '2026-10-28T06:09:48.683344Z'
+  support: supports
+  summary: Original once-only canonical terms with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: fe010d1f4c632b8ab639d2f4b6aaf66704a657bcfe42eb8e210562618905a399
+- evidence_id: check-references
+  kind: validation
+  reference: REVIEW_WORK/batch058/record07/references-result.json
+  accessed_at: '2026-10-28T06:09:49.479887Z'
+  support: supports
+  summary: Original once-only canonical references with complete argv/time/streams;
+    reference count zero does not verify sources.
+  snapshot_sha256: 48e51829d318bac2db78bc97d363cb77db15581b8046b4437170ad4056ea2262
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: DSM788 with a separately bounded KOMODO alias
+  outcome: supported
+  summary: Fresh DSM788 PDF/API identify the base record. Both maintained owners share
+    the same ingredient quantities, but partial nesting, preparation and the KOMODO
+    aerobic note differ from the generated target. Current source-duplicate relationships
+    require those differences to remain visible.
+  target_ids:
+  - CultureMech:001924
+  evidence_ids:
+  - dsm788
+  - api788
+  - owner
+  - owner-2
+- assessment_id: classification
+  area: representation
+  topic: Complex liquid with preserved preparation
+  outcome: supported
+  summary: The yeast extract and named salts/vitamins support retaining complex, semi-defined
+    liquid classification. The existing pH and full DSM preparation are positive content,
+    not missing fields. Empty organism assertions are not a defect inferred from the
+    medium name.
+  target_ids:
+  - CultureMech:001924
+  evidence_ids:
+  - dsm788
+  - target
+  - owner
+- assessment_id: quantities
+  area: quantity
+  topic: Complete amounts, units and preparation stages
+  outcome: concern
+  summary: 91 current concentration fields are covered by 45 decisions, including
+    unchanged support and explicit source-only conditions.
+  target_ids:
+  - CultureMech:001924
+  evidence_ids:
+  - quantities
+  - numeric-census
+  details: '{"schema":"fresh-b058-quantity-inventory-v1","target":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","quantity_field_count":91,"decisions":[{"quantity_id":"q1","label":"KH2PO4","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[0].concentration","stored":{"value":"0.408774","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"0.408774","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"0.408774","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    API explicitly declares the matching g_l rate on its 1003 mL normalization basis.
+    The primary supports the printed batch input but does not independently establish
+    measured final volume from 1000 mL water and later additions. Add exact claim
+    evidence without replacing the rate by an assumed nominal-litre value.","source_stage":"provider-declared
+    main rate / primary batch input","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 3-3","quote":"KH2PO4                                                     0.41         g","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[0].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 0.41,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.408774,\n                        \"mmol_l\":
+    3.00381,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q2","label":"Na2HPO4 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[1].concentration","stored":{"value":"0.518445","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[1].concentration","stored":{"value":"0.518445","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[1].concentration","stored":{"value":"0.518445","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    API explicitly declares the matching g_l rate on its 1003 mL normalization basis.
+    The primary supports the printed batch input but does not independently establish
+    measured final volume from 1000 mL water and later additions. Add exact claim
+    evidence without replacing the rate by an assumed nominal-litre value.","source_stage":"provider-declared
+    main rate / primary batch input","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 4-4","quote":"Na2HPO4 x 2 H2O                                            0.52         g","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[0].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Na2HPO4 x 2 H2O\",\n                        \"compound_id\":
+    181,\n                        \"amount\": 0.52,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.518445,\n                        \"mmol_l\":
+    3.65207,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q3","label":"NH4Cl","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[2].concentration","stored":{"value":"2.39282","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[2].concentration","stored":{"value":"2.39282","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[2].concentration","stored":{"value":"2.39282","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    API explicitly declares the matching g_l rate on its 1003 mL normalization basis.
+    The primary supports the printed batch input but does not independently establish
+    measured final volume from 1000 mL water and later additions. Add exact claim
+    evidence without replacing the rate by an assumed nominal-litre value.","source_stage":"provider-declared
+    main rate / primary batch input","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 5-5","quote":"NH4Cl                                                      2.40         g","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[0].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\":
+    42,\n                        \"amount\": 2.4,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2.39282,\n                        \"mmol_l\":
+    44.734,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q4","label":"MgCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.398804","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.398804","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.398804","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    API explicitly declares the matching g_l rate on its 1003 mL normalization basis.
+    The primary supports the printed batch input but does not independently establish
+    measured final volume from 1000 mL water and later additions. Add exact claim
+    evidence without replacing the rate by an assumed nominal-litre value.","source_stage":"provider-declared
+    main rate / primary batch input","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 6-6","quote":"MgCl2 x 6 H2O                                              0.40         g","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[0].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\":
+    79,\n                        \"amount\": 0.4,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.398804,\n                        \"mmol_l\":
+    1.96162,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q5","label":"Yeast extract","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.199402","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.199402","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.199402","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    API explicitly declares the matching g_l rate on its 1003 mL normalization basis.
+    The primary supports the printed batch input but does not independently establish
+    measured final volume from 1000 mL water and later additions. Add exact claim
+    evidence without replacing the rate by an assumed nominal-litre value.","source_stage":"provider-declared
+    main rate / primary batch input","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 7-7","quote":"Yeast extract                                              0.20         g","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[0].recipe[4]","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\":
+    16,\n                        \"amount\": 0.2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.199402,\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q6","label":"Sodium
+    resazurin","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.000498504","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.000498504","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.000498504","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    API explicitly declares the matching g_l rate on its 1003 mL normalization basis.
+    The primary supports the printed batch input but does not independently establish
+    measured final volume from 1000 mL water and later additions. Add exact claim
+    evidence without replacing the rate by an assumed nominal-litre value. Preserve
+    the separate 0.50 mL addition of 0.1% w/v sodium resazurin; the normalized rate
+    alone loses that source stage.","source_stage":"provider-declared main rate /
+    primary batch input","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 10-10","quote":"Sodium resazurin (0.1% w/v)                                0.50        ml","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[0].recipe[7]","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\":
+    1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.000498504,\n                        \"mmol_l\": 0.00198473,\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q7","label":"CaCl2
+    x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.199402","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.199402","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.199402","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    API explicitly declares the matching g_l rate on its 1003 mL normalization basis.
+    The primary supports the printed batch input but does not independently establish
+    measured final volume from 1000 mL water and later additions. Add exact claim
+    evidence without replacing the rate by an assumed nominal-litre value.","source_stage":"provider-declared
+    main rate / primary batch input","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 11-11","quote":"CaCl2 x 2 H2O                                              0.20         g","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[0].recipe[8]","quote":"{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\":
+    7,\n                        \"amount\": 0.2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.199402,\n                        \"mmol_l\":
+    1.35634,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q8","label":"Na2CO3","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[7].concentration","stored":{"value":"1.49551","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"1.49551","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"1.49551","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    API explicitly declares the matching g_l rate on its 1003 mL normalization basis.
+    The primary supports the printed batch input but does not independently establish
+    measured final volume from 1000 mL water and later additions. Add exact claim
+    evidence without replacing the rate by an assumed nominal-litre value.","source_stage":"provider-declared
+    main rate / primary batch input","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 12-12","quote":"Na2CO3                                                     1.50         g","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[0].recipe[9]","quote":"{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\":
+    32,\n                        \"amount\": 1.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.49551,\n                        \"mmol_l\":
+    14.1102,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q9","label":"D-Glucose","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[8].concentration","stored":{"value":"4.98504","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[8].concentration","stored":{"value":"4.98504","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[8].concentration","stored":{"value":"4.98504","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    API explicitly declares the matching g_l rate on its 1003 mL normalization basis.
+    The primary supports the printed batch input but does not independently establish
+    measured final volume from 1000 mL water and later additions. Add exact claim
+    evidence without replacing the rate by an assumed nominal-litre value.","source_stage":"provider-declared
+    main rate / primary batch input","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 13-13","quote":"D-Glucose                                                  5.00         g","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[0].recipe[10]","quote":"{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"D-Glucose\",\n                        \"compound_id\":
+    211,\n                        \"amount\": 5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 4.98504,\n                        \"mmol_l\":
+    27.6701,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q10","label":"Na2S x 9 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.299103","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.299103","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.299103","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    API explicitly declares the matching g_l rate on its 1003 mL normalization basis.
+    The primary supports the printed batch input but does not independently establish
+    measured final volume from 1000 mL water and later additions. Add exact claim
+    evidence without replacing the rate by an assumed nominal-litre value.","source_stage":"provider-declared
+    main rate / primary batch input","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 15-15","quote":"Na2S x 9 H2O                                               0.30         g","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[0].recipe[12]","quote":"{\n                        \"recipe_order\":
+    13,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\":
+    54,\n                        \"amount\": 0.3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.299103,\n                        \"mmol_l\":
+    1.24532,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q11","label":"HCl","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[10].concentration","stored":{"value":"2.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[10].concentration","stored":{"value":"2.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[10].concentration","stored":{"value":"2.5","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    value belongs to the separate stock, not a direct main-medium concentration. Preserve
+    any correctly nested owner row and repair the remaining direct placements; the
+    generated target is still fully flat. The 10 mL 25% HCl has unspecified percent
+    basis/density; 2.5 g/L is only the API declaration, not an independently justified
+    mass conversion.","source_stage":"SL-10 stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 33-33","quote":"HCl (25%)                                                  10.00      ml","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[1].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"HCl\",\n                        \"compound_id\":
+    68,\n                        \"attribute\": \"25%\",\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    2.5,\n                        \"mmol_l\": 68.5683,\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 44-45","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add
+    and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative
+    text"}]},{"quantity_id":"q12","label":"FeCl2 x 4 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[11].concentration","stored":{"value":"1.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"solutions[0].composition[0].concentration","stored":{"value":"1.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"solutions[0].composition[0].concentration","stored":{"value":"1.5","unit":"G_PER_L"}}],"decision":"mixed","rationale":"This
+    value belongs to the separate stock, not a direct main-medium concentration. Preserve
+    any correctly nested owner row and repair the remaining direct placements; the
+    generated target is still fully flat. The explicit 1000 mL final stock makeup
+    supports the printed mass-to-stock-g/L normalization.","source_stage":"SL-10 stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 34-34","quote":"FeCl2 x 4 H2O                                               1.50       g","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[1].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"FeCl2 x 4 H2O\",\n                        \"compound_id\":
+    260,\n                        \"amount\": 1.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\":
+    7.54482,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 44-45","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add
+    and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative
+    text"}],"layer_decisions":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[11].concentration","decision":"correct","rationale":"Undiluted
+    stock row requires stock placement, not a main-medium rate."},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"solutions[0].composition[0].concentration","decision":"evidence_only","rationale":"Nested
+    stock placement and source-declared value retained; attach scoped evidence."},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"solutions[0].composition[0].concentration","decision":"evidence_only","rationale":"Nested
+    stock placement and source-declared value retained; attach scoped evidence."}]},{"quantity_id":"q13","label":"ZnCl2","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[12].concentration","stored":{"value":"0.07","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.07","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.07","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    value belongs to the separate stock, not a direct main-medium concentration. Preserve
+    any correctly nested owner row and repair the remaining direct placements; the
+    generated target is still fully flat. The explicit 1000 mL final stock makeup
+    supports the printed mass-to-stock-g/L normalization.","source_stage":"SL-10 stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 35-35","quote":"ZnCl2                                                      70.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[1].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"ZnCl2\",\n                        \"compound_id\":
+    64,\n                        \"amount\": 70,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.07,\n                        \"mmol_l\":
+    0.513573,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 44-45","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add
+    and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative
+    text"}]},{"quantity_id":"q14","label":"MnCl2 x 4 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[13].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[12].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[12].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    value belongs to the separate stock, not a direct main-medium concentration. Preserve
+    any correctly nested owner row and repair the remaining direct placements; the
+    generated target is still fully flat. The explicit 1000 mL final stock makeup
+    supports the printed mass-to-stock-g/L normalization.","source_stage":"SL-10 stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 36-36","quote":"MnCl2 x 4 H2O                                             100.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[1].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\":
+    36,\n                        \"amount\": 100,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.505293,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 44-45","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add
+    and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative
+    text"}]},{"quantity_id":"q15","label":"H3BO3","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.006","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[13].concentration","stored":{"value":"0.006","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[13].concentration","stored":{"value":"0.006","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    value belongs to the separate stock, not a direct main-medium concentration. Preserve
+    any correctly nested owner row and repair the remaining direct placements; the
+    generated target is still fully flat. The explicit 1000 mL final stock makeup
+    supports the printed mass-to-stock-g/L normalization.","source_stage":"SL-10 stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 37-37","quote":"H3BO3                                                       6.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[1].recipe[4]","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\":
+    37,\n                        \"amount\": 6,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.006,\n                        \"mmol_l\":
+    0.0970246,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 44-45","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add
+    and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative
+    text"}]},{"quantity_id":"q16","label":"CoCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.19","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.19","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.19","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    value belongs to the separate stock, not a direct main-medium concentration. Preserve
+    any correctly nested owner row and repair the remaining direct placements; the
+    generated target is still fully flat. The explicit 1000 mL final stock makeup
+    supports the printed mass-to-stock-g/L normalization.","source_stage":"SL-10 stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 38-38","quote":"CoCl2 x 6 H2O                                             190.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[1].recipe[5]","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\":
+    38,\n                        \"amount\": 190,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.19,\n                        \"mmol_l\":
+    1.46335,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 44-45","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add
+    and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative
+    text"}]},{"quantity_id":"q17","label":"CuCl2 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.002","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.002","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.002","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    value belongs to the separate stock, not a direct main-medium concentration. Preserve
+    any correctly nested owner row and repair the remaining direct placements; the
+    generated target is still fully flat. The explicit 1000 mL final stock makeup
+    supports the printed mass-to-stock-g/L normalization.","source_stage":"SL-10 stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 39-39","quote":"CuCl2 x 2 H2O                                               2.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[1].recipe[6]","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"CuCl2 x 2 H2O\",\n                        \"compound_id\":
+    39,\n                        \"amount\": 2,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\":
+    0.0117314,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 44-45","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add
+    and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative
+    text"}]},{"quantity_id":"q18","label":"NiCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.024","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.024","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.024","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    value belongs to the separate stock, not a direct main-medium concentration. Preserve
+    any correctly nested owner row and repair the remaining direct placements; the
+    generated target is still fully flat. The explicit 1000 mL final stock makeup
+    supports the printed mass-to-stock-g/L normalization.","source_stage":"SL-10 stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 40-40","quote":"NiCl2 x 6 H2O                                              24.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[1].recipe[7]","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\":
+    40,\n                        \"amount\": 24,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.024,\n                        \"mmol_l\":
+    0.185187,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 44-45","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add
+    and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative
+    text"}]},{"quantity_id":"q19","label":"Na2MoO4 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.036","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.036","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.036","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    value belongs to the separate stock, not a direct main-medium concentration. Preserve
+    any correctly nested owner row and repair the remaining direct placements; the
+    generated target is still fully flat. The explicit 1000 mL final stock makeup
+    supports the printed mass-to-stock-g/L normalization.","source_stage":"SL-10 stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 41-41","quote":"Na2MoO4 x 2 H2O                                            36.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[1].recipe[8]","quote":"{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\":
+    9,\n                        \"amount\": 36,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.036,\n                        \"mmol_l\":
+    0.148791,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 44-45","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add
+    and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative
+    text"}]},{"quantity_id":"q20","label":"NaOH","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.5","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    value belongs to the separate stock, not a direct main-medium concentration. Preserve
+    any correctly nested owner row and repair the remaining direct placements; the
+    generated target is still fully flat. The stock API declares g_l, while its primary
+    lists water input rather than explicit final makeup. Do not silently transfer
+    this value into the receiving medium.","source_stage":"selenite-tungstate stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 58-58","quote":"NaOH                                        0.50    g","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[2].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"NaOH\",\n                        \"compound_id\":
+    256,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\":
+    12.5009,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q21","label":"Na2SeO3 x 5 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.003","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.003","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.003","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    value belongs to the separate stock, not a direct main-medium concentration. Preserve
+    any correctly nested owner row and repair the remaining direct placements; the
+    generated target is still fully flat. The stock API declares g_l, while its primary
+    lists water input rather than explicit final makeup. Do not silently transfer
+    this value into the receiving medium.","source_stage":"selenite-tungstate stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 59-59","quote":"Na2SeO3 x 5 H2O                             3.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[2].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Na2SeO3 x 5 H2O\",\n                        \"compound_id\":
+    107,\n                        \"amount\": 3,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.003,\n                        \"mmol_l\":
+    0.0114062,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q22","label":"Na2WO4 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.004","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.004","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.004","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    value belongs to the separate stock, not a direct main-medium concentration. Preserve
+    any correctly nested owner row and repair the remaining direct placements; the
+    generated target is still fully flat. The stock API declares g_l, while its primary
+    lists water input rather than explicit final makeup. Do not silently transfer
+    this value into the receiving medium.","source_stage":"selenite-tungstate stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 60-60","quote":"Na2WO4 x 2 H2O                              4.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[2].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Na2WO4 x 2 H2O\",\n                        \"compound_id\":
+    249,\n                        \"amount\": 4,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.004,\n                        \"mmol_l\":
+    0.0121267,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q23","label":"Vitamin B12","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"solutions[1].composition[0].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"solutions[1].composition[0].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"mixed","rationale":"This
+    value belongs to the separate stock, not a direct main-medium concentration. Preserve
+    any correctly nested owner row and repair the remaining direct placements; the
+    generated target is still fully flat. The stock API declares g_l, while its primary
+    lists water input rather than explicit final makeup. Do not silently transfer
+    this value into the receiving medium.","source_stage":"seven-vitamin stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 66-66","quote":"Vitamin B12                               100.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[3].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\":
+    18,\n                        \"amount\": 100,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.073779,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_decisions":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[22].concentration","decision":"correct","rationale":"Undiluted
+    stock row requires stock placement, not a main-medium rate."},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"solutions[1].composition[0].concentration","decision":"evidence_only","rationale":"Nested
+    stock placement and source-declared value retained; attach scoped evidence."},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"solutions[1].composition[0].concentration","decision":"evidence_only","rationale":"Nested
+    stock placement and source-declared value retained; attach scoped evidence."}]},{"quantity_id":"q24","label":"p-Aminobenzoic
+    acid","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.08","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.08","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.08","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    value belongs to the separate stock, not a direct main-medium concentration. Preserve
+    any correctly nested owner row and repair the remaining direct placements; the
+    generated target is still fully flat. The stock API declares g_l, while its primary
+    lists water input rather than explicit final makeup. Do not silently transfer
+    this value into the receiving medium.","source_stage":"seven-vitamin stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 67-67","quote":"p-Aminobenzoic acid                        80.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[3].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\":
+    47,\n                        \"amount\": 80,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.08,\n                        \"mmol_l\":
+    0.583345,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q25","label":"D-(+)-biotin","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.02","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    value belongs to the separate stock, not a direct main-medium concentration. Preserve
+    any correctly nested owner row and repair the remaining direct placements; the
+    generated target is still fully flat. The stock API declares g_l, while its primary
+    lists water input rather than explicit final makeup. Do not silently transfer
+    this value into the receiving medium.","source_stage":"seven-vitamin stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 68-68","quote":"D-(+)-biotin                               20.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[3].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"D-(+)-biotin\",\n                        \"compound_id\":
+    1359,\n                        \"amount\": 20,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\":
+    0.0818632,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q26","label":"Nicotinic acid","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[25].concentration","stored":{"value":"0.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"solutions[1].composition[1].concentration","stored":{"value":"0.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"solutions[1].composition[1].concentration","stored":{"value":"0.2","unit":"G_PER_L"}}],"decision":"mixed","rationale":"This
+    value belongs to the separate stock, not a direct main-medium concentration. Preserve
+    any correctly nested owner row and repair the remaining direct placements; the
+    generated target is still fully flat. The stock API declares g_l, while its primary
+    lists water input rather than explicit final makeup. Do not silently transfer
+    this value into the receiving medium.","source_stage":"seven-vitamin stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 69-69","quote":"Nicotinic acid                            200.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[3].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\":
+    139,\n                        \"amount\": 200,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\":
+    1.62456,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_decisions":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[25].concentration","decision":"correct","rationale":"Undiluted
+    stock row requires stock placement, not a main-medium rate."},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"solutions[1].composition[1].concentration","decision":"evidence_only","rationale":"Nested
+    stock placement and source-declared value retained; attach scoped evidence."},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"solutions[1].composition[1].concentration","decision":"evidence_only","rationale":"Nested
+    stock placement and source-declared value retained; attach scoped evidence."}]},{"quantity_id":"q27","label":"Calcium
+    pantothenate","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[26].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    value belongs to the separate stock, not a direct main-medium concentration. Preserve
+    any correctly nested owner row and repair the remaining direct placements; the
+    generated target is still fully flat. The stock API declares g_l, while its primary
+    lists water input rather than explicit final makeup. Do not silently transfer
+    this value into the receiving medium.","source_stage":"seven-vitamin stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 70-70","quote":"Calcium pantothenate                      100.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[3].recipe[4]","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"Calcium pantothenate\",\n                        \"compound_id\":
+    518,\n                        \"amount\": 100,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.209849,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q28","label":"Pyridoxine hydrochloride","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[27].concentration","stored":{"value":"0.3","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"solutions[1].composition[2].concentration","stored":{"value":"0.3","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"solutions[1].composition[2].concentration","stored":{"value":"0.3","unit":"G_PER_L"}}],"decision":"mixed","rationale":"This
+    value belongs to the separate stock, not a direct main-medium concentration. Preserve
+    any correctly nested owner row and repair the remaining direct placements; the
+    generated target is still fully flat. The stock API declares g_l, while its primary
+    lists water input rather than explicit final makeup. Do not silently transfer
+    this value into the receiving medium.","source_stage":"seven-vitamin stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 71-71","quote":"Pyridoxine hydrochloride                  300.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[3].recipe[5]","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\":
+    519,\n                        \"amount\": 300,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.3,\n                        \"mmol_l\":
+    1.45886,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_decisions":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[27].concentration","decision":"correct","rationale":"Undiluted
+    stock row requires stock placement, not a main-medium rate."},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"solutions[1].composition[2].concentration","decision":"evidence_only","rationale":"Nested
+    stock placement and source-declared value retained; attach scoped evidence."},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"solutions[1].composition[2].concentration","decision":"evidence_only","rationale":"Nested
+    stock placement and source-declared value retained; attach scoped evidence."}]},{"quantity_id":"q29","label":"Thiamine-HCl
+    x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[28].concentration","stored":{"value":"0.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"solutions[1].composition[3].concentration","stored":{"value":"0.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"solutions[1].composition[3].concentration","stored":{"value":"0.2","unit":"G_PER_L"}}],"decision":"mixed","rationale":"This
+    value belongs to the separate stock, not a direct main-medium concentration. Preserve
+    any correctly nested owner row and repair the remaining direct placements; the
+    generated target is still fully flat. The stock API declares g_l, while its primary
+    lists water input rather than explicit final makeup. Do not silently transfer
+    this value into the receiving medium.","source_stage":"seven-vitamin stock","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 72-72","quote":"Thiamine-HCl x 2 H2O                      200.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[3].recipe[6]","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Thiamine-HCl x 2 H2O\",\n                        \"compound_id\":
+    77,\n                        \"amount\": 200,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\":
+    0.535761,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}],"layer_decisions":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ingredients[28].concentration","decision":"correct","rationale":"Undiluted
+    stock row requires stock placement, not a main-medium rate."},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"solutions[1].composition[3].concentration","decision":"evidence_only","rationale":"Nested
+    stock placement and source-declared value retained; attach scoped evidence."},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"solutions[1].composition[3].concentration","decision":"evidence_only","rationale":"Nested
+    stock placement and source-declared value retained; attach scoped evidence."}]},{"quantity_id":"q30","label":"Receiving
+    Trace element solution SL-10","local_fields":[{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"solutions[0].concentration","stored":{"value":"1","unit":"ML_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"solutions[0].concentration","stored":{"value":"1","unit":"ML_PER_L"}}],"decision":"unsupported","rationale":"The
+    source states a 1 mL batch addition. An existing 1 ML_PER_L assertion and per-litre
+    note require a receiving denominator that is not independently established. Retain
+    exact stock identity and batch dose, without calculating a dilution from input
+    water alone.","source_stage":"receiving stock addition","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 8-8","quote":"Trace element solution SL-10                               1.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[0].recipe[5]","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\":
+    595,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q31","label":"Receiving Selenite-tungstate solution","local_fields":[],"decision":"evidence_only","rationale":"The
+    source states a 1 mL batch addition. An existing 1 ML_PER_L assertion and per-litre
+    note require a receiving denominator that is not independently established. Retain
+    exact stock identity and batch dose, without calculating a dilution from input
+    water alone.","source_stage":"receiving stock addition","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 9-9","quote":"Selenite-tungstate solution                                1.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[0].recipe[6]","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"solution\": \"Selenite-tungstate solution\",\n                        \"solution_id\":
+    777,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q32","label":"Receiving Seven vitamins solution","local_fields":[{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"solutions[1].concentration","stored":{"value":"1","unit":"ML_PER_L"}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"solutions[1].concentration","stored":{"value":"1","unit":"ML_PER_L"}}],"decision":"unsupported","rationale":"The
+    source states a 1 mL batch addition. An existing 1 ML_PER_L assertion and per-litre
+    note require a receiving denominator that is not independently established. Retain
+    exact stock identity and batch dose, without calculating a dilution from input
+    water alone.","source_stage":"receiving stock addition","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 14-14","quote":"Seven vitamins solution                                    1.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[0].recipe[11]","quote":"{\n                        \"recipe_order\":
+    12,\n                        \"solution\": \"Seven vitamins solution\",\n                        \"solution_id\":
+    1038,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q33","label":"Owner stock preparation/dose note 0","local_fields":[{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"solutions[0].preparation_notes","stored":"Stock
+    prepared in 1000 ml; added at 1 ml per litre of medium. Composition and volume
+    from MediaDive (#150)."}],"decision":"unsupported","rationale":"The source stock
+    identity and partial nesting receive credit. SL-10 has explicit final makeup;
+    seven vitamins lists water input. The owner claim of per-litre receiving addition
+    is not proved by either stock volume or exact compound matching.","source_stage":"owner
+    provenance and denominator claim","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 8-8","quote":"Trace element solution SL-10                               1.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 14-14","quote":"Seven vitamins solution                                    1.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 44-45","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add
+    and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative
+    text"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 73-73","quote":"Distilled water                          1000.00   ml","quote_basis":"derivative
+    text"}]},{"quantity_id":"q34","label":"Owner stock preparation/dose note 1","local_fields":[{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"solutions[1].preparation_notes","stored":"Stock
+    prepared in 1000 ml; added at 1 ml per litre of medium. Composition and volume
+    from MediaDive (#150)."}],"decision":"unsupported","rationale":"The source stock
+    identity and partial nesting receive credit. SL-10 has explicit final makeup;
+    seven vitamins lists water input. The owner claim of per-litre receiving addition
+    is not proved by either stock volume or exact compound matching.","source_stage":"owner
+    provenance and denominator claim","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 8-8","quote":"Trace element solution SL-10                               1.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 14-14","quote":"Seven vitamins solution                                    1.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 44-45","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add
+    and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative
+    text"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 73-73","quote":"Distilled water                          1000.00   ml","quote_basis":"derivative
+    text"}]},{"quantity_id":"q35","label":"Owner stock preparation/dose note 0","local_fields":[{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"solutions[0].preparation_notes","stored":"Stock
+    prepared in 1000 ml. Composition and volume from medium 788''s own MediaDive recipe,
+    identified by this record reproducing that medium''s composition exactly (29/29
+    shared compounds at identical values) despite the upstream rename to ''CALORAMATOR
+    MEDIUM'' (#262)."}],"decision":"unsupported","rationale":"The owner''s partial
+    stock nesting receives credit, and DSMZ medium 788 explicitly makes SL-10 up to
+    1000 mL. This note does not assert a per-litre receiving dose. Its identity inference
+    from 29/29 matching compounds does not independently establish that this differently
+    named owner is the exact medium 788 variant; that cross-provider identity remains
+    unresolved.","source_stage":"owner provenance and denominator claim","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 8-8","quote":"Trace element solution SL-10                               1.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 14-14","quote":"Seven vitamins solution                                    1.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 44-45","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add
+    and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative
+    text"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 73-73","quote":"Distilled water                          1000.00   ml","quote_basis":"derivative
+    text"}]},{"quantity_id":"q36","label":"Owner stock preparation/dose note 1","local_fields":[{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"solutions[1].preparation_notes","stored":"Stock
+    prepared in 1000 ml. Composition and volume from medium 788''s own MediaDive recipe,
+    identified by this record reproducing that medium''s composition exactly (29/29
+    shared compounds at identical values) despite the upstream rename to ''CALORAMATOR
+    MEDIUM'' (#262)."}],"decision":"unsupported","rationale":"The owner''s partial
+    stock nesting receives credit. This note does not assert a per-litre receiving
+    dose. DSMZ medium 788 lists 1000 mL water for the seven-vitamin stock without
+    an explicit final-volume makeup instruction. The note''s 29/29 compound-match
+    inference also leaves the exact cross-provider medium identity unresolved.","source_stage":"owner
+    provenance and denominator claim","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 8-8","quote":"Trace element solution SL-10                               1.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 14-14","quote":"Seven vitamins solution                                    1.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 44-45","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add
+    and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative
+    text"},{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 73-73","quote":"Distilled water                          1000.00   ml","quote_basis":"derivative
+    text"}]},{"quantity_id":"q37","label":"Water input, source solution 0","local_fields":[],"decision":"evidence_only","rationale":"Retain
+    the exact solvent input and source stage. Only SL-10 has a separately explicit
+    final makeup; no main-medium final volume follows from water input.","source_stage":"source-only
+    solvent","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 16-16","quote":"Distilled water                                         1000.00        ml","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[0].recipe[13]","quote":"{\n                        \"recipe_order\":
+    14,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q38","label":"Water input, source solution 1","local_fields":[],"decision":"evidence_only","rationale":"Retain
+    the exact solvent input and source stage. Only SL-10 has a separately explicit
+    final makeup; no main-medium final volume follows from water input.","source_stage":"source-only
+    solvent","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 42-42","quote":"Distilled water                                           990.00      ml","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[1].recipe[9]","quote":"{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 990,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q39","label":"Water input, source solution 2","local_fields":[],"decision":"evidence_only","rationale":"Retain
+    the exact solvent input and source stage. Only SL-10 has a separately explicit
+    final makeup; no main-medium final volume follows from water input.","source_stage":"source-only
+    solvent","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 61-61","quote":"Distilled water                          1000.00   ml","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[2].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q40","label":"Water input, source solution 3","local_fields":[],"decision":"evidence_only","rationale":"Retain
+    the exact solvent input and source stage. Only SL-10 has a separately explicit
+    final makeup; no main-medium final volume follows from water input.","source_stage":"source-only
+    solvent","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 73-73","quote":"Distilled water                          1000.00   ml","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[3].recipe[7]","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q41","label":"Sodium resazurin stock strength and dose","local_fields":[],"decision":"evidence_only","rationale":"The
+    explicit 0.1% w/v and 0.50 mL dose are source-supported; preserve both independently
+    of the declared normalized rate.","source_stage":"source-only direct stock input","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 10-10","quote":"Sodium resazurin (0.1% w/v)                                0.50        ml","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[0].recipe[7]","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\":
+    1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.000498504,\n                        \"mmol_l\": 0.00198473,\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q42","label":"Retained
+    main pH","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"ph_range","stored":{"min":7.2,"max":7.4}},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"ph_range","stored":{"min":7.2,"max":7.4}},{"path":"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml","field_path":"ph_range","stored":{"min":7.2,"max":7.4}}],"decision":"evidence_only","rationale":"The
+    existing 7.2\u20137.4 range matches the final complete-medium adjustment; it is
+    not an organism growth optimum.","source_stage":"main adjustment","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 24-24","quote":"sterilized by filtration. Prior to use adjust pH of complete
+    medium to 7.2 - 7.4, if necessary.","quote_basis":"derivative text"}]},{"quantity_id":"q43","label":"Retained
+    preparation 1","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"preparation_steps[0].description","stored":"Dissolve
+    ingredients except calcium chloride, carbonate, glucose, vitamins and sulfide.
+    Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
+    Dispense medium under the same gas atmosphere into anoxic Hungate-type tubes or
+    serum vials and autoclave. Add calcium chloride, glucose, vitamins and sulfide
+    from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from
+    a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture.
+    Vitamins should be sterilized by filtration. Prior to use adjust pH of complete
+    medium to 7.2 - 7.4, if necessary."},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"preparation_steps[0].description","stored":"Dissolve
+    ingredients except calcium chloride, carbonate, glucose, vitamins and sulfide.
+    Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
+    Dispense medium under the same gas atmosphere into anoxic Hungate-type tubes or
+    serum vials and autoclave. Add calcium chloride, glucose, vitamins and sulfide
+    from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from
+    a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture.
+    Vitamins should be sterilized by filtration. Prior to use adjust pH of complete
+    medium to 7.2 - 7.4, if necessary."}],"decision":"evidence_only","rationale":"Preserve
+    the complete anoxic preparation, sparging duration, distinct gas stages, late
+    additions and vitamin filtration. The KOMODO owner lacks this preparation.","source_stage":"main
+    preparation","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 18-24","quote":"Dissolve ingredients except calcium chloride, carbonate,
+    glucose, vitamins and sulfide.\nSparge medium with 80% N2 and 20% CO2 gas mixture
+    for 30 - 45 min to make it anoxic.\nDispense medium under the same gas atmosphere
+    into anoxic Hungate-type tubes or\nserum vials and autoclave. Add calcium chloride,
+    glucose, vitamins and sulfide from sterile\nanoxic stock solutions prepared under
+    100% N2 gas and carbonate from a sterile anoxic\nstock solution prepared under
+    80% N2 and 20% CO2 gas mixture. Vitamins should be\nsterilized by filtration.
+    Prior to use adjust pH of complete medium to 7.2 - 7.4, if necessary.","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"step\":
+    \"Dissolve ingredients except calcium chloride, carbonate, glucose, vitamins and
+    sulfide. Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to
+    make it anoxic. Dispense medium under the same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. Add calcium chloride, glucose, vitamins and
+    sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate
+    from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture.
+    Vitamins should be sterilized by filtration. Prior to use adjust pH of complete
+    medium to 7.2 - 7.4, if necessary.\"\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q44","label":"Retained preparation 2","local_fields":[{"path":"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml","field_path":"preparation_steps[1].description","stored":"First
+    dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml."},{"path":"data/normalized_yaml/bacterial/caloramator_medium.yaml","field_path":"preparation_steps[1].description","stored":"First
+    dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml."}],"decision":"correct","rationale":"The exact
+    supported dissolution sequence and 1000 mL makeup belong with SL-10 rather than
+    an unscoped second main-medium step.","source_stage":"stock preparation","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 44-45","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add
+    and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative
+    text"},{"evidence_id":"api788","reference":"https://mediadive.dsmz.de/rest/medium/788","raw_path":"REVIEW_WORK/batch058/source07-09/api788.raw","raw_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","text_sha256":"e775308bacd72a447c2affa3a6fccebede53787604daef7c04573a453b5612f3","accessed_at":"2026-10-28T06:10:13.036311Z","locator":"data.solutions[1].steps[0]","quote":"{\n                        \"step\":
+    \"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the
+    other salts. Finally make up to 1000.00 ml.\"\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q45","label":"DSM12679 source branch","local_fields":[],"decision":"evidence_only","rationale":"Keep
+    the explicit yeast omission and 2.40 g/L NaCl as the DSM12679-specific branch,
+    not as the base formulation or a generic growth claim.","source_stage":"source-only
+    named-strain variant","sources":[{"evidence_id":"dsm788","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium788.pdf","raw_path":"REVIEW_WORK/batch058/source07-09/dsm788.raw","raw_sha256":"ccf3514bf5856e965929c39d3a7e578744c3a36041b2aa4215d8311ff46a85c5","text_sha256":"1a28900f812a1f5962d170008aeb905248c7169170333919af24666ffdbff065","accessed_at":"2026-10-28T06:10:13.198704Z","locator":"dsm788.txt
+    lines 27-27","quote":"For DSM 12679: Omit yeast extract and supplement medium
+    with 2.40 g/l NaCl.","quote_basis":"derivative text"}]}],"document_scopes":{"data/merge_yaml/merged/CALORAMATOR_MEDIUM.yaml":null,"data/normalized_yaml/bacterial/caloramator_medium.yaml":null,"data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml":null},"scope":"Every
+    selected target/owner concentration plus explicit dependency fields; source-only
+    rows/conditions and unchanged claims distinguished. Excluded parent quantities
+    are not transferred."}'
+- assessment_id: grounding
+  area: grounding
+  topic: Supplied forms and current ontology/MIM scope
+  outcome: concern
+  summary: Exact asserted primary/secondary slots are joined to current OLS objects
+    and packaged MIM rows. Nickel hexahydrate versus anhydrous CHEBI:34887 and sodium
+    resazurin versus neutral CHEBI:8806 are confirmed form mismatches; nickel affects
+    both slots, resazurin primary only. Generic calcium pantothenate leaves the D
+    stereochemistry unresolved, while explicit D-biotin and thiamine hydrochloride
+    dihydrate agree. Label agreement and MIM presence do not establish concentration
+    or source equivalence.
+  target_ids:
+  - CultureMech:001924
+  evidence_ids:
+  - groundings
+  - mim
+  - mim-meta
+- assessment_id: history
+  area: provenance
+  topic: Existing repair credit and writer limits
+  outcome: supported
+  summary: All six reports and every current owner history were read. The September
+    report assumed final-litre water/doses and called provider normalization underconcentration;
+    this review does not repeat those unsupported denominator assumptions. October
+    reports retained stock conflicts unchanged. Fresh API content matches the historical
+    source digest and literal objects, independently of old retrieval-time authentication.
+    Partial nesting and volume-promotion events are credited without claiming current
+    writer replay or full scientific completion.
+  target_ids:
+  - CultureMech:001924
+  evidence_ids:
+  - history
+  - old-reports
+  - old-claims
+  - writer-formulation
+  - writer-merger
+findings:
+- finding_id: f1
+  issue_key: culturemech-001924-incomplete-stock-topology
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generated stock flattening persists despite partial owner repair
+  description: The target has 29 direct components and no stocks. Each maintained
+    owner already nests five components in two stocks, but fourteen other stock components
+    remain direct and the selenite-tungstate stock is absent. Restore all three stock
+    boundaries and exact receiving inputs, crediting the partial owner repair; then
+    regenerate through the current conservative merger. Its exact formulation gate
+    must preserve owner preparation and provenance differences.
+  target_ids:
+  - CultureMech:001924
+  field_paths:
+  - ingredients
+  - solutions
+  - preparation_steps[1]
+  evidence_ids:
+  - dsm788
+  - api788
+  - owner
+  - owner-2
+  - writer-nesting
+  - writer-mediadive
+  - writer-formulation
+  rule_id: review-yaml-record/representation
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caloramator_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml
+    role: maintained source
+- finding_id: f2
+  issue_key: culturemech-001924-receiving-dose-basis
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Owner stock doses assert an unestablished receiving-litre basis
+  description: Both owners encode two 1 ML_PER_L stock doses. Only the DSMZ-derived
+    owner preparation notes explicitly describe per-litre receiving additions; the
+    KOMODO-derived owner notes instead assert stock volume and identity inferred from
+    matching compounds. The primary instead states 1 mL inputs and 1000 mL water;
+    API main volume is 1003 mL. Preserve batch doses and source normalization separately
+    rather than treating stock volume or composition matching as proof of a final-medium
+    denominator.
+  target_ids:
+  - CultureMech:001924
+  field_paths:
+  - data/normalized_yaml/bacterial/caloramator_medium.yaml::solutions
+  - data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml::solutions
+  evidence_ids:
+  - dsm788
+  - api788
+  - writer-nesting
+  - writer-promotion
+  rule_id: review-ingredient-concentrations/evidence-contract
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caloramator_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml
+    role: maintained source
+- finding_id: f3
+  issue_key: culturemech-001924-supplied-form-identifiers
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Nickel hydrate and sodium resazurin use different chemical forms
+  description: The source and local names specify nickel chloride hexahydrate, whereas
+    primary and secondary CHEBI:34887 denote anhydrous nickel dichloride. Fresh CHEBI:53542
+    independently identifies the hexahydrate candidate. Sodium resazurin has a primary
+    CHEBI:8806 slot denoting neutral resazurin, with no sodium in its formula; there
+    is no secondary resazurin slot to repair. Correct only the actual asserted slots
+    and keep stock-stage work separate.
+  target_ids:
+  - CultureMech:001924
+  field_paths:
+  - ingredients[17].term
+  - ingredients[17].mediaingredientmech_chebi_term
+  - ingredients[5].term
+  evidence_ids:
+  - dsm788
+  - api788
+  - chebi34887
+  - chebi53542
+  - chebi8806
+  rule_id: review-yaml-record/grounding
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caloramator_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml
+    role: maintained source
+- finding_id: f4
+  issue_key: culturemech-001924-komodo-aerobic-provenance
+  category: provenance
+  severity: major
+  status: open
+  certainty: confirmed
+  title: KOMODO aerobic metadata conflicts with its DSM-derived formulation
+  description: 'The maintained KOMODO owner says Aerobic: Yes and lacks preparation.
+    Its declared DSM788 ancestry and identical source-derived formulation point to
+    explicitly anoxic preparation. Reconcile the retained aerobic metadata and source-duplicate
+    claim against exact provenance; the current KOMODO detail route is 403, so neither
+    a historical rename nor source-version equivalence is independently settled by
+    that route.'
+  target_ids:
+  - CultureMech:001924
+  field_paths:
+  - data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml::notes
+  - data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml::parent_media
+  - data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml::preparation_steps
+  evidence_ids:
+  - dsm788
+  - api788
+  - komodo788
+  - owner-2
+  rule_id: review-yaml-record/provenance
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caloramator_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml
+    role: maintained source
+- finding_id: f5
+  issue_key: culturemech-001924-variant-and-specificity-limits
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Retain the source branch and unresolved vitamin specificity
+  description: Document the DSM12679 branch separately without altering the base formulation.
+    Generic calcium-pantothenate wording in DSM788 does not independently establish
+    the D stereochemistry encoded by CHEBI:31345; keep that source-form limit explicit
+    rather than certifying every canonical label as exact supplied-form correspondence.
+  target_ids:
+  - CultureMech:001924
+  field_paths:
+  - variant_modifications
+  - ingredients[26].term
+  evidence_ids:
+  - dsm788
+  - chebi31345
+  rule_id: review-yaml-record/evidence
+  native_severity: P3
+  normalization_reason: Bounded metadata, provenance or unresolved grounding follow-up;
+    no critical scientific failure is inferred.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caloramator_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml
+    role: maintained source
+actions:
+- action_id: a1
+  description: The target has 29 direct components and no stocks. Each maintained
+    owner already nests five components in two stocks, but fourteen other stock components
+    remain direct and the selenite-tungstate stock is absent. Restore all three stock
+    boundaries and exact receiving inputs, crediting the partial owner repair; then
+    regenerate through the current conservative merger. Its exact formulation gate
+    must preserve owner preparation and provenance differences.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:001924
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caloramator_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a2
+  description: Both owners encode two 1 ML_PER_L stock doses. Only the DSMZ-derived
+    owner preparation notes explicitly describe per-litre receiving additions; the
+    KOMODO-derived owner notes instead assert stock volume and identity inferred from
+    matching compounds. The primary instead states 1 mL inputs and 1000 mL water;
+    API main volume is 1003 mL. Preserve batch doses and source normalization separately
+    rather than treating stock volume or composition matching as proof of a final-medium
+    denominator.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:001924
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caloramator_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a3
+  description: The source and local names specify nickel chloride hexahydrate, whereas
+    primary and secondary CHEBI:34887 denote anhydrous nickel dichloride. Fresh CHEBI:53542
+    independently identifies the hexahydrate candidate. Sodium resazurin has a primary
+    CHEBI:8806 slot denoting neutral resazurin, with no sodium in its formula; there
+    is no secondary resazurin slot to repair. Correct only the actual asserted slots
+    and keep stock-stage work separate.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:001924
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caloramator_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a4
+  description: 'The maintained KOMODO owner says Aerobic: Yes and lacks preparation.
+    Its declared DSM788 ancestry and identical source-derived formulation point to
+    explicitly anoxic preparation. Reconcile the retained aerobic metadata and source-duplicate
+    claim against exact provenance; the current KOMODO detail route is 403, so neither
+    a historical rename nor source-version equivalence is independently settled by
+    that route.'
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:001924
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caloramator_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a5
+  description: Document the DSM12679 branch separately without altering the base formulation.
+    Generic calcium-pantothenate wording in DSM788 does not independently establish
+    the D stereochemistry encoded by CHEBI:31345; keep that source-form limit explicit
+    rather than certifying every canonical label as exact supplied-form correspondence.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:001924
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caloramator_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+limitations:
+- Current canonical checks validate encoded structure/labels; zero reference checks
+  do not verify external source claims.
+- All primary PDF pages were read visually as well as in their complete extracted
+  text. Current source status, retrieval times and complete raw/text bytes remain
+  in the capture catalog.
+- 'Provider mmol_l fields are retained as declarations, not endorsed calculations:
+  cobalt/nickel values do not use the named hexahydrate formula masses. No molar correction
+  or final-medium dilution is inferred.'
+- No strain-growth claim, optimization or experimental recommendation is inferred
+  from the medium name or general source identity.
+- The MIM snapshot commit is 6643131b0f12ab40b66f98135245fca04027e0e9; present/absent
+  rows do not establish a historical or live-catalog result.
+- Input water is not measured final volume. Explicit provider g_l rates are assessed
+  only on their declared normalization basis; unspecified percent bases and hydrate
+  numbers remain unresolved.
+- No source changes, formal review validation/save, Git mutation or publication was
+  performed by this author.
+```
