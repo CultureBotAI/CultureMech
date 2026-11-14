@@ -1,0 +1,3902 @@
+# Source and formulation review: brockia_medium (CultureMech:001503)
+
+- Review: 20261022T020624Z-culturemech-001503-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-22T02:02:39Z
+- Finished UTC: 2026-10-22T02:06:24Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+DSM395a identifies Brockia medium, but both local layers flatten SL10 and vitamin stocks into the receiving medium and assert unsupported final-volume-normalized rates. The primary preserves separate preparation stages and gas atmospheres; sodium resazurin, powdered sulfur and nickel hydrate also require form-specific review.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 446; batch 045 item 6 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding forty-four task batches contain 440 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 443 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 6a639c4b597e95b6061f2d1c7baa04de84ba2f00.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:001503 | data/merge_yaml/merged/BROCKIA_MEDIUM.yaml | generated | brockia_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:001503 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:001503 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-045/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch045/446/strict.tsv |
+| validate-terms | passed | True | CultureMech:001503 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:001503 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:001503 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: api395a | unavailable | False | CultureMech:001503 | Current exact MediaDive395a API returned503. Current DSM primary is available; the historical report is derivative context and the cited old API raw was not recovered in the explicitly bounded parent search. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:001503.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Identifier metadata, exact supplied forms and current secondary bindings
+
+grounding: concern. Targets: CultureMech:001503.
+
+112 asserted slots and 29 distinct captured ontology IDs checked; 0 literal canonical-label differences. 52/54 asserted current CHEBI secondary slots have preferred mapped rows; 0 selected legacy slots remain separately assessed. Target direct-ingredient linkage: 29/29 primary and 27/29 current secondary on a 0–100 percent linkage scale (100.00% and 93.10%), not a correctness score. Canonical labels match, including capitalized Calcium pantothenate. Source sodium resazurin is not established by free Resazurin CHEBI8806; powdered sulfur is not a sulfur atom specification; nickel chloride hexahydrate is not anhydrous CHEBI34887. Preserve source forms without inventing replacements. Valid generic vitamin IDs do not establish every supplied stereochemical/grade qualifier.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:001503.
+
+15 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Claim linkage and historical/current source scope
+
+evidence: concern. Targets: CultureMech:001503.
+
+All target/owner history and evidence fields were read. No attached amount evidence exists. The historical MediaDive395a report contains derivative claims; its cited raw was not recovered within the recorded two-parent bounded search, and current API503 is preserved. Current primary independently supports batch/stage observations, not historical raw authentication. Import/enrichment/history does not establish that current merge code caused flattening.
+
+### Exact source accession and maintained ownership
+
+identity: supported. Targets: CultureMech:001503.
+
+The one maintained DSM395a owner and generated target identify Brockia medium. SL10 and10x Wolin vitamins are source-defined stocks within this formulation, not separate growth claims or arbitrary namesake recipes.
+
+### Main and stock quantities, pH and gases
+
+completeness: concern. Targets: CultureMech:001503.
+
+The long preparation prose preserves gas and pH distinctions but the ingredient structure loses stock composition/doses and water inputs. Main80%H2/20%CO2, bicarbonate-stock80%N2/20%CO2 and vitamin/sulfide-stock100%N2 must remain separate. Boiling sterilization is not a growth-temperature observation.
+
+### Defined liquid medium and growth evidence
+
+scope: supported. Targets: CultureMech:001503.
+
+A chemically specified liquid preparation is consistent with the primary. Generic microbial cultivation is not an experimentally supported strain claim; none is added. Source-specific supplied forms and unresolved normalization remain independent concerns.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:001503.
+
+41 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "quantity_id": "q1",
+    "topic": "NH4Cl — main batch versus stored final rate",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.329341",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The source gives a batch input, not this normalized final-medium G_PER_L value. Preserve its literal amount/form and establish final volume before proposing a rate; do not substitute an assumed one-litre denominator."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.329341",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The source gives a batch input, not this normalized final-medium G_PER_L value. Preserve its literal amount/form and establish final volume before proposing a rate; do not substitute an assumed one-litre denominator."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 3",
+        "exact_source_quote": "NH4Cl                                                      0.33         g",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "The source gives a batch input, not this normalized final-medium G_PER_L value. Preserve its literal amount/form and establish final volume before proposing a rate; do not substitute an assumed one-litre denominator."
+  },
+  {
+    "quantity_id": "q2",
+    "topic": "KH2PO4 — main batch versus stored final rate",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.329341",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The source gives a batch input, not this normalized final-medium G_PER_L value. Preserve its literal amount/form and establish final volume before proposing a rate; do not substitute an assumed one-litre denominator."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.329341",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The source gives a batch input, not this normalized final-medium G_PER_L value. Preserve its literal amount/form and establish final volume before proposing a rate; do not substitute an assumed one-litre denominator."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 4",
+        "exact_source_quote": "KH2PO4                                                     0.33         g",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "The source gives a batch input, not this normalized final-medium G_PER_L value. Preserve its literal amount/form and establish final volume before proposing a rate; do not substitute an assumed one-litre denominator."
+  },
+  {
+    "quantity_id": "q3",
+    "topic": "KCl — main batch versus stored final rate",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.329341",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The source gives a batch input, not this normalized final-medium G_PER_L value. Preserve its literal amount/form and establish final volume before proposing a rate; do not substitute an assumed one-litre denominator."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.329341",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The source gives a batch input, not this normalized final-medium G_PER_L value. Preserve its literal amount/form and establish final volume before proposing a rate; do not substitute an assumed one-litre denominator."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 5",
+        "exact_source_quote": "KCl                                                        0.33         g",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "The source gives a batch input, not this normalized final-medium G_PER_L value. Preserve its literal amount/form and establish final volume before proposing a rate; do not substitute an assumed one-litre denominator."
+  },
+  {
+    "quantity_id": "q4",
+    "topic": "CaCl2 x 2 H2O — main batch versus stored final rate",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.439122",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The source gives a batch input, not this normalized final-medium G_PER_L value. Preserve its literal amount/form and establish final volume before proposing a rate; do not substitute an assumed one-litre denominator."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.439122",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The source gives a batch input, not this normalized final-medium G_PER_L value. Preserve its literal amount/form and establish final volume before proposing a rate; do not substitute an assumed one-litre denominator."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 6",
+        "exact_source_quote": "CaCl2 x 2 H2O                                              0.44         g",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "The source gives a batch input, not this normalized final-medium G_PER_L value. Preserve its literal amount/form and establish final volume before proposing a rate; do not substitute an assumed one-litre denominator."
+  },
+  {
+    "quantity_id": "q5",
+    "topic": "MgCl2 x 6 H2O — main batch versus stored final rate",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.698603",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The source gives a batch input, not this normalized final-medium G_PER_L value. Preserve its literal amount/form and establish final volume before proposing a rate; do not substitute an assumed one-litre denominator."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.698603",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The source gives a batch input, not this normalized final-medium G_PER_L value. Preserve its literal amount/form and establish final volume before proposing a rate; do not substitute an assumed one-litre denominator."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 7",
+        "exact_source_quote": "MgCl2 x 6 H2O                                              0.70         g",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "The source gives a batch input, not this normalized final-medium G_PER_L value. Preserve its literal amount/form and establish final volume before proposing a rate; do not substitute an assumed one-litre denominator."
+  },
+  {
+    "quantity_id": "q6",
+    "topic": "NaCl — main batch versus stored final rate",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.499002",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The source gives a batch input, not this normalized final-medium G_PER_L value. Preserve its literal amount/form and establish final volume before proposing a rate; do not substitute an assumed one-litre denominator."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.499002",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The source gives a batch input, not this normalized final-medium G_PER_L value. Preserve its literal amount/form and establish final volume before proposing a rate; do not substitute an assumed one-litre denominator."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 8",
+        "exact_source_quote": "NaCl                                                       0.50         g",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "The source gives a batch input, not this normalized final-medium G_PER_L value. Preserve its literal amount/form and establish final volume before proposing a rate; do not substitute an assumed one-litre denominator."
+  },
+  {
+    "quantity_id": "q7",
+    "topic": "Sodium resazurin (0.1% w/v) — main batch versus stored final rate",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.000499002",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The source gives0.50ml of0.1%w/v sodium resazurin, equal to0.50mg per receiving batch. That arithmetic does not establish the local final-medium G_PER_L value or equate the sodium salt with free resazurin."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.000499002",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The source gives0.50ml of0.1%w/v sodium resazurin, equal to0.50mg per receiving batch. That arithmetic does not establish the local final-medium G_PER_L value or equate the sodium salt with free resazurin."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 10",
+        "exact_source_quote": "Sodium resazurin (0.1% w/v)                                0.50        ml",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "The source gives0.50ml of0.1%w/v sodium resazurin, equal to0.50mg per receiving batch. That arithmetic does not establish the local final-medium G_PER_L value or equate the sodium salt with free resazurin."
+  },
+  {
+    "quantity_id": "q8",
+    "topic": "Sulfur (powdered) — main batch versus stored final rate",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "9.98004",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The source gives a batch input, not this normalized final-medium G_PER_L value. Preserve its literal amount/form and establish final volume before proposing a rate; do not substitute an assumed one-litre denominator."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "9.98004",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The source gives a batch input, not this normalized final-medium G_PER_L value. Preserve its literal amount/form and establish final volume before proposing a rate; do not substitute an assumed one-litre denominator."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 11",
+        "exact_source_quote": "Sulfur (powdered)                                         10.00         g",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "The source gives a batch input, not this normalized final-medium G_PER_L value. Preserve its literal amount/form and establish final volume before proposing a rate; do not substitute an assumed one-litre denominator."
+  },
+  {
+    "quantity_id": "q9",
+    "topic": "NaHCO3 — main batch versus stored final rate",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.798403",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The source gives a batch input, not this normalized final-medium G_PER_L value. Preserve its literal amount/form and establish final volume before proposing a rate; do not substitute an assumed one-litre denominator."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.798403",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The source gives a batch input, not this normalized final-medium G_PER_L value. Preserve its literal amount/form and establish final volume before proposing a rate; do not substitute an assumed one-litre denominator."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 12",
+        "exact_source_quote": "NaHCO3                                                     0.80         g",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "The source gives a batch input, not this normalized final-medium G_PER_L value. Preserve its literal amount/form and establish final volume before proposing a rate; do not substitute an assumed one-litre denominator."
+  },
+  {
+    "quantity_id": "q10",
+    "topic": "Na2S x 9 H2O — main batch versus stored final rate",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.499002",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The source gives a batch input, not this normalized final-medium G_PER_L value. Preserve its literal amount/form and establish final volume before proposing a rate; do not substitute an assumed one-litre denominator."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.499002",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The source gives a batch input, not this normalized final-medium G_PER_L value. Preserve its literal amount/form and establish final volume before proposing a rate; do not substitute an assumed one-litre denominator."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 14",
+        "exact_source_quote": "Na2S x 9 H2O                                               0.50         g",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "The source gives a batch input, not this normalized final-medium G_PER_L value. Preserve its literal amount/form and establish final volume before proposing a rate; do not substitute an assumed one-litre denominator."
+  },
+  {
+    "quantity_id": "q11",
+    "topic": "HCl (25%) — SL10 stock",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The source specifies10ml HCl25% with unspecified percentage basis. It does not support2.5g/L HCl in the stock or receiving medium; no density or mass/volume conversion is justified."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The source specifies10ml HCl25% with unspecified percentage basis. It does not support2.5g/L HCl in the stock or receiving medium; no density or mass/volume conversion is justified."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 31",
+        "exact_source_quote": "HCl (25%)                                                  10.00      ml",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      },
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 43",
+        "exact_source_quote": "make up to 1000.00 ml.",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "The source specifies10ml HCl25% with unspecified percentage basis. It does not support2.5g/L HCl in the stock or receiving medium; no density or mass/volume conversion is justified."
+  },
+  {
+    "quantity_id": "q12",
+    "topic": "FeCl2 x 4 H2O — SL10 stock",
+    "decision": "correct",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is an SL10 stock amount, not a direct final-medium ingredient. The stock explicitly makes up to1000ml and doses1ml into this medium. Restore stock composition and its separate dose; any final-medium concentration still needs final-volume evidence."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is an SL10 stock amount, not a direct final-medium ingredient. The stock explicitly makes up to1000ml and doses1ml into this medium. Restore stock composition and its separate dose; any final-medium concentration still needs final-volume evidence."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 32",
+        "exact_source_quote": "FeCl2 x 4 H2O                                               1.50       g",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      },
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 43",
+        "exact_source_quote": "make up to 1000.00 ml.",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "This is an SL10 stock amount, not a direct final-medium ingredient. The stock explicitly makes up to1000ml and doses1ml into this medium. Restore stock composition and its separate dose; any final-medium concentration still needs final-volume evidence."
+  },
+  {
+    "quantity_id": "q13",
+    "topic": "ZnCl2 — SL10 stock",
+    "decision": "correct",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.07",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is an SL10 stock amount, not a direct final-medium ingredient. The stock explicitly makes up to1000ml and doses1ml into this medium. Restore stock composition and its separate dose; any final-medium concentration still needs final-volume evidence."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.07",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is an SL10 stock amount, not a direct final-medium ingredient. The stock explicitly makes up to1000ml and doses1ml into this medium. Restore stock composition and its separate dose; any final-medium concentration still needs final-volume evidence."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 33",
+        "exact_source_quote": "ZnCl2                                                      70.00      mg",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      },
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 43",
+        "exact_source_quote": "make up to 1000.00 ml.",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "This is an SL10 stock amount, not a direct final-medium ingredient. The stock explicitly makes up to1000ml and doses1ml into this medium. Restore stock composition and its separate dose; any final-medium concentration still needs final-volume evidence."
+  },
+  {
+    "quantity_id": "q14",
+    "topic": "MnCl2 x 4 H2O — SL10 stock",
+    "decision": "correct",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is an SL10 stock amount, not a direct final-medium ingredient. The stock explicitly makes up to1000ml and doses1ml into this medium. Restore stock composition and its separate dose; any final-medium concentration still needs final-volume evidence."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is an SL10 stock amount, not a direct final-medium ingredient. The stock explicitly makes up to1000ml and doses1ml into this medium. Restore stock composition and its separate dose; any final-medium concentration still needs final-volume evidence."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 34",
+        "exact_source_quote": "MnCl2 x 4 H2O                                             100.00      mg",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      },
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 43",
+        "exact_source_quote": "make up to 1000.00 ml.",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "This is an SL10 stock amount, not a direct final-medium ingredient. The stock explicitly makes up to1000ml and doses1ml into this medium. Restore stock composition and its separate dose; any final-medium concentration still needs final-volume evidence."
+  },
+  {
+    "quantity_id": "q15",
+    "topic": "H3BO3 — SL10 stock",
+    "decision": "correct",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.006",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is an SL10 stock amount, not a direct final-medium ingredient. The stock explicitly makes up to1000ml and doses1ml into this medium. Restore stock composition and its separate dose; any final-medium concentration still needs final-volume evidence."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.006",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is an SL10 stock amount, not a direct final-medium ingredient. The stock explicitly makes up to1000ml and doses1ml into this medium. Restore stock composition and its separate dose; any final-medium concentration still needs final-volume evidence."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 35",
+        "exact_source_quote": "H3BO3                                                       6.00      mg",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      },
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 43",
+        "exact_source_quote": "make up to 1000.00 ml.",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "This is an SL10 stock amount, not a direct final-medium ingredient. The stock explicitly makes up to1000ml and doses1ml into this medium. Restore stock composition and its separate dose; any final-medium concentration still needs final-volume evidence."
+  },
+  {
+    "quantity_id": "q16",
+    "topic": "CoCl2 x 6 H2O — SL10 stock",
+    "decision": "correct",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.19",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is an SL10 stock amount, not a direct final-medium ingredient. The stock explicitly makes up to1000ml and doses1ml into this medium. Restore stock composition and its separate dose; any final-medium concentration still needs final-volume evidence."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.19",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is an SL10 stock amount, not a direct final-medium ingredient. The stock explicitly makes up to1000ml and doses1ml into this medium. Restore stock composition and its separate dose; any final-medium concentration still needs final-volume evidence."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 36",
+        "exact_source_quote": "CoCl2 x 6 H2O                                             190.00      mg",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      },
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 43",
+        "exact_source_quote": "make up to 1000.00 ml.",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "This is an SL10 stock amount, not a direct final-medium ingredient. The stock explicitly makes up to1000ml and doses1ml into this medium. Restore stock composition and its separate dose; any final-medium concentration still needs final-volume evidence."
+  },
+  {
+    "quantity_id": "q17",
+    "topic": "CuCl2 x 2 H2O — SL10 stock",
+    "decision": "correct",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is an SL10 stock amount, not a direct final-medium ingredient. The stock explicitly makes up to1000ml and doses1ml into this medium. Restore stock composition and its separate dose; any final-medium concentration still needs final-volume evidence."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is an SL10 stock amount, not a direct final-medium ingredient. The stock explicitly makes up to1000ml and doses1ml into this medium. Restore stock composition and its separate dose; any final-medium concentration still needs final-volume evidence."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 37",
+        "exact_source_quote": "CuCl2 x 2 H2O                                               2.00      mg",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      },
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 43",
+        "exact_source_quote": "make up to 1000.00 ml.",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "This is an SL10 stock amount, not a direct final-medium ingredient. The stock explicitly makes up to1000ml and doses1ml into this medium. Restore stock composition and its separate dose; any final-medium concentration still needs final-volume evidence."
+  },
+  {
+    "quantity_id": "q18",
+    "topic": "NiCl2 x 6 H2O — SL10 stock",
+    "decision": "correct",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.024",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is an SL10 stock amount, not a direct final-medium ingredient. The stock explicitly makes up to1000ml and doses1ml into this medium. Restore stock composition and its separate dose; any final-medium concentration still needs final-volume evidence."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.024",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is an SL10 stock amount, not a direct final-medium ingredient. The stock explicitly makes up to1000ml and doses1ml into this medium. Restore stock composition and its separate dose; any final-medium concentration still needs final-volume evidence."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 38",
+        "exact_source_quote": "NiCl2 x 6 H2O                                              24.00      mg",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      },
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 43",
+        "exact_source_quote": "make up to 1000.00 ml.",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "This is an SL10 stock amount, not a direct final-medium ingredient. The stock explicitly makes up to1000ml and doses1ml into this medium. Restore stock composition and its separate dose; any final-medium concentration still needs final-volume evidence."
+  },
+  {
+    "quantity_id": "q19",
+    "topic": "Na2MoO4 x 2 H2O — SL10 stock",
+    "decision": "correct",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.036",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is an SL10 stock amount, not a direct final-medium ingredient. The stock explicitly makes up to1000ml and doses1ml into this medium. Restore stock composition and its separate dose; any final-medium concentration still needs final-volume evidence."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.036",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is an SL10 stock amount, not a direct final-medium ingredient. The stock explicitly makes up to1000ml and doses1ml into this medium. Restore stock composition and its separate dose; any final-medium concentration still needs final-volume evidence."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 39",
+        "exact_source_quote": "Na2MoO4 x 2 H2O                                            36.00      mg",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      },
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 43",
+        "exact_source_quote": "make up to 1000.00 ml.",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "This is an SL10 stock amount, not a direct final-medium ingredient. The stock explicitly makes up to1000ml and doses1ml into this medium. Restore stock composition and its separate dose; any final-medium concentration still needs final-volume evidence."
+  },
+  {
+    "quantity_id": "q20",
+    "topic": "Biotin —10x vitamin stock",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The printed amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an explicit final-volume makeup instruction. Retain the stock batch mass and1ml receiving dose without asserting a final concentration or borrowing the SL10 makeup statement."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The printed amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an explicit final-volume makeup instruction. Retain the stock batch mass and1ml receiving dose without asserting a final concentration or borrowing the SL10 makeup statement."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 56",
+        "exact_source_quote": "Biotin                                     20.00   mg",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "The printed amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an explicit final-volume makeup instruction. Retain the stock batch mass and1ml receiving dose without asserting a final concentration or borrowing the SL10 makeup statement."
+  },
+  {
+    "quantity_id": "q21",
+    "topic": "Folic acid —10x vitamin stock",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The printed amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an explicit final-volume makeup instruction. Retain the stock batch mass and1ml receiving dose without asserting a final concentration or borrowing the SL10 makeup statement."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The printed amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an explicit final-volume makeup instruction. Retain the stock batch mass and1ml receiving dose without asserting a final concentration or borrowing the SL10 makeup statement."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 57",
+        "exact_source_quote": "Folic acid                                 20.00   mg",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "The printed amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an explicit final-volume makeup instruction. Retain the stock batch mass and1ml receiving dose without asserting a final concentration or borrowing the SL10 makeup statement."
+  },
+  {
+    "quantity_id": "q22",
+    "topic": "Pyridoxine hydrochloride —10x vitamin stock",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The printed amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an explicit final-volume makeup instruction. Retain the stock batch mass and1ml receiving dose without asserting a final concentration or borrowing the SL10 makeup statement."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The printed amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an explicit final-volume makeup instruction. Retain the stock batch mass and1ml receiving dose without asserting a final concentration or borrowing the SL10 makeup statement."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 58",
+        "exact_source_quote": "Pyridoxine hydrochloride                  100.00   mg",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "The printed amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an explicit final-volume makeup instruction. Retain the stock batch mass and1ml receiving dose without asserting a final concentration or borrowing the SL10 makeup statement."
+  },
+  {
+    "quantity_id": "q23",
+    "topic": "Thiamine HCl —10x vitamin stock",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The printed amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an explicit final-volume makeup instruction. Retain the stock batch mass and1ml receiving dose without asserting a final concentration or borrowing the SL10 makeup statement."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The printed amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an explicit final-volume makeup instruction. Retain the stock batch mass and1ml receiving dose without asserting a final concentration or borrowing the SL10 makeup statement."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 59",
+        "exact_source_quote": "Thiamine HCl                               50.00   mg",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "The printed amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an explicit final-volume makeup instruction. Retain the stock batch mass and1ml receiving dose without asserting a final concentration or borrowing the SL10 makeup statement."
+  },
+  {
+    "quantity_id": "q24",
+    "topic": "Riboflavin —10x vitamin stock",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The printed amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an explicit final-volume makeup instruction. Retain the stock batch mass and1ml receiving dose without asserting a final concentration or borrowing the SL10 makeup statement."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The printed amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an explicit final-volume makeup instruction. Retain the stock batch mass and1ml receiving dose without asserting a final concentration or borrowing the SL10 makeup statement."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 60",
+        "exact_source_quote": "Riboflavin                                 50.00   mg",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "The printed amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an explicit final-volume makeup instruction. Retain the stock batch mass and1ml receiving dose without asserting a final concentration or borrowing the SL10 makeup statement."
+  },
+  {
+    "quantity_id": "q25",
+    "topic": "Nicotinic acid —10x vitamin stock",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The printed amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an explicit final-volume makeup instruction. Retain the stock batch mass and1ml receiving dose without asserting a final concentration or borrowing the SL10 makeup statement."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The printed amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an explicit final-volume makeup instruction. Retain the stock batch mass and1ml receiving dose without asserting a final concentration or borrowing the SL10 makeup statement."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 61",
+        "exact_source_quote": "Nicotinic acid                             50.00   mg",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "The printed amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an explicit final-volume makeup instruction. Retain the stock batch mass and1ml receiving dose without asserting a final concentration or borrowing the SL10 makeup statement."
+  },
+  {
+    "quantity_id": "q26",
+    "topic": "Calcium D-(+)-pantothenate —10x vitamin stock",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The printed amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an explicit final-volume makeup instruction. Retain the stock batch mass and1ml receiving dose without asserting a final concentration or borrowing the SL10 makeup statement."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The printed amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an explicit final-volume makeup instruction. Retain the stock batch mass and1ml receiving dose without asserting a final concentration or borrowing the SL10 makeup statement."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 62",
+        "exact_source_quote": "Calcium D-(+)-pantothenate                 50.00   mg",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "The printed amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an explicit final-volume makeup instruction. Retain the stock batch mass and1ml receiving dose without asserting a final concentration or borrowing the SL10 makeup statement."
+  },
+  {
+    "quantity_id": "q27",
+    "topic": "Vitamin B12 —10x vitamin stock",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The printed amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an explicit final-volume makeup instruction. Retain the stock batch mass and1ml receiving dose without asserting a final concentration or borrowing the SL10 makeup statement."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The printed amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an explicit final-volume makeup instruction. Retain the stock batch mass and1ml receiving dose without asserting a final concentration or borrowing the SL10 makeup statement."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 63",
+        "exact_source_quote": "Vitamin B12                                 1.00   mg",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "The printed amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an explicit final-volume makeup instruction. Retain the stock batch mass and1ml receiving dose without asserting a final concentration or borrowing the SL10 makeup statement."
+  },
+  {
+    "quantity_id": "q28",
+    "topic": "p-Aminobenzoic acid —10x vitamin stock",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The printed amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an explicit final-volume makeup instruction. Retain the stock batch mass and1ml receiving dose without asserting a final concentration or borrowing the SL10 makeup statement."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The printed amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an explicit final-volume makeup instruction. Retain the stock batch mass and1ml receiving dose without asserting a final concentration or borrowing the SL10 makeup statement."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 64",
+        "exact_source_quote": "p-Aminobenzoic acid                        50.00   mg",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "The printed amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an explicit final-volume makeup instruction. Retain the stock batch mass and1ml receiving dose without asserting a final concentration or borrowing the SL10 makeup statement."
+  },
+  {
+    "quantity_id": "q29",
+    "topic": "(DL)-alpha-Lipoic acid —10x vitamin stock",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[28].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The printed amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an explicit final-volume makeup instruction. Retain the stock batch mass and1ml receiving dose without asserting a final concentration or borrowing the SL10 makeup statement."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "ingredients[28].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The printed amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an explicit final-volume makeup instruction. Retain the stock batch mass and1ml receiving dose without asserting a final concentration or borrowing the SL10 makeup statement."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 65",
+        "exact_source_quote": "(DL)-alpha-Lipoic acid                     50.00   mg",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "The printed amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an explicit final-volume makeup instruction. Retain the stock batch mass and1ml receiving dose without asserting a final concentration or borrowing the SL10 makeup statement."
+  },
+  {
+    "quantity_id": "q30",
+    "topic": "SL10 receiving dose1ml",
+    "decision": "add",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": "This source-only quantity needs its named main/stock stage. Water input is not a measured final volume. The trace stock has its separate explicit1000ml makeup; vitamin water does not inherit that instruction."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": "This source-only quantity needs its named main/stock stage. Water input is not a measured final volume. The trace stock has its separate explicit1000ml makeup; vitamin water does not inherit that instruction."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 9",
+        "exact_source_quote": "Trace element solution SL-10                               1.00        ml",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "This source-only quantity needs its named main/stock stage. Water input is not a measured final volume. The trace stock has its separate explicit1000ml makeup; vitamin water does not inherit that instruction."
+  },
+  {
+    "quantity_id": "q31",
+    "topic": "10x vitamin receiving dose1ml",
+    "decision": "add",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": "This source-only quantity needs its named main/stock stage. Water input is not a measured final volume. The trace stock has its separate explicit1000ml makeup; vitamin water does not inherit that instruction."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": "This source-only quantity needs its named main/stock stage. Water input is not a measured final volume. The trace stock has its separate explicit1000ml makeup; vitamin water does not inherit that instruction."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 13",
+        "exact_source_quote": "Wolin's vitamin solution (10x)                             1.00        ml",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "This source-only quantity needs its named main/stock stage. Water input is not a measured final volume. The trace stock has its separate explicit1000ml makeup; vitamin water does not inherit that instruction."
+  },
+  {
+    "quantity_id": "q32",
+    "topic": "Main water1000ml",
+    "decision": "add",
+    "layer_decisions": [],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 15",
+        "exact_source_quote": "Distilled water                                         1000.00        ml",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "This source-only quantity needs its named main/stock stage. Water input is not a measured final volume. The trace stock has its separate explicit1000ml makeup; vitamin water does not inherit that instruction."
+  },
+  {
+    "quantity_id": "q33",
+    "topic": "SL10 water990ml",
+    "decision": "add",
+    "layer_decisions": [],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 40",
+        "exact_source_quote": "Distilled water                                           990.00      ml",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "This source-only quantity needs its named main/stock stage. Water input is not a measured final volume. The trace stock has its separate explicit1000ml makeup; vitamin water does not inherit that instruction."
+  },
+  {
+    "quantity_id": "q34",
+    "topic": "Vitamin stock water1000ml",
+    "decision": "add",
+    "layer_decisions": [],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 66",
+        "exact_source_quote": "Distilled water                          1000.00   ml",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "This source-only quantity needs its named main/stock stage. Water input is not a measured final volume. The trace stock has its separate explicit1000ml makeup; vitamin water does not inherit that instruction."
+  },
+  {
+    "quantity_id": "q35",
+    "topic": "SL10 final makeup1000ml",
+    "decision": "evidence_only",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps[1].description",
+        "stored": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml.",
+        "decision": "evidence_only",
+        "rationale": "The retained instruction is literal but must be attached to SL10 rather than the complete medium. No ingredient-level concentration evidence currently attaches this scope."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml.",
+        "decision": "evidence_only",
+        "rationale": "The retained instruction is literal but must be attached to SL10 rather than the complete medium. No ingredient-level concentration evidence currently attaches this scope."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 43",
+        "exact_source_quote": "make up to 1000.00 ml.",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "The retained instruction is literal but must be attached to SL10 rather than the complete medium. No ingredient-level concentration evidence currently attaches this scope."
+  },
+  {
+    "quantity_id": "q36",
+    "topic": "Main H2/CO2 sparging30–45min",
+    "decision": "evidence_only",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except sulfur, bicarbonate, vitamins and sulfide), then sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Adjust pH to 6.2 - 6.4, and dispense medium under 80% H2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials containing already the appropriate amount of sulfur. Sterilize medium by heating cultivation vessels in a boiling water bath for 2 - 3 hours on each of 3 successive days. After sterilization add bicarbonate from a sterile stock solution prepared under 80% N2 and 20% CO2 gas mixture. Vitamins (sterilized by filtration) and sulfide are added to the medium from sterile anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete medium to 6.5, if necessary.",
+        "decision": "evidence_only",
+        "rationale": "The existing prose retains this source preparation condition. Preserve its exact stage and range; these are not general organism-growth or incubation observations. Gas percentages have no explicitly stated fraction basis."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except sulfur, bicarbonate, vitamins and sulfide), then sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Adjust pH to 6.2 - 6.4, and dispense medium under 80% H2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials containing already the appropriate amount of sulfur. Sterilize medium by heating cultivation vessels in a boiling water bath for 2 - 3 hours on each of 3 successive days. After sterilization add bicarbonate from a sterile stock solution prepared under 80% N2 and 20% CO2 gas mixture. Vitamins (sterilized by filtration) and sulfide are added to the medium from sterile anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete medium to 6.5, if necessary.",
+        "decision": "evidence_only",
+        "rationale": "The existing prose retains this source preparation condition. Preserve its exact stage and range; these are not general organism-growth or incubation observations. Gas percentages have no explicitly stated fraction basis."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 18",
+        "exact_source_quote": "medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Adjust",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "The existing prose retains this source preparation condition. Preserve its exact stage and range; these are not general organism-growth or incubation observations. Gas percentages have no explicitly stated fraction basis."
+  },
+  {
+    "quantity_id": "q37",
+    "topic": "Initial pH6.2–6.4",
+    "decision": "evidence_only",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except sulfur, bicarbonate, vitamins and sulfide), then sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Adjust pH to 6.2 - 6.4, and dispense medium under 80% H2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials containing already the appropriate amount of sulfur. Sterilize medium by heating cultivation vessels in a boiling water bath for 2 - 3 hours on each of 3 successive days. After sterilization add bicarbonate from a sterile stock solution prepared under 80% N2 and 20% CO2 gas mixture. Vitamins (sterilized by filtration) and sulfide are added to the medium from sterile anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete medium to 6.5, if necessary.",
+        "decision": "evidence_only",
+        "rationale": "The existing prose retains this source preparation condition. Preserve its exact stage and range; these are not general organism-growth or incubation observations. Gas percentages have no explicitly stated fraction basis."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except sulfur, bicarbonate, vitamins and sulfide), then sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Adjust pH to 6.2 - 6.4, and dispense medium under 80% H2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials containing already the appropriate amount of sulfur. Sterilize medium by heating cultivation vessels in a boiling water bath for 2 - 3 hours on each of 3 successive days. After sterilization add bicarbonate from a sterile stock solution prepared under 80% N2 and 20% CO2 gas mixture. Vitamins (sterilized by filtration) and sulfide are added to the medium from sterile anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete medium to 6.5, if necessary.",
+        "decision": "evidence_only",
+        "rationale": "The existing prose retains this source preparation condition. Preserve its exact stage and range; these are not general organism-growth or incubation observations. Gas percentages have no explicitly stated fraction basis."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 19",
+        "exact_source_quote": "pH to 6.2 - 6.4, and dispense medium under 80% H2 and 20% CO2 gas atmosphere into",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "The existing prose retains this source preparation condition. Preserve its exact stage and range; these are not general organism-growth or incubation observations. Gas percentages have no explicitly stated fraction basis."
+  },
+  {
+    "quantity_id": "q38",
+    "topic": "Boiling2–3h on3successive days",
+    "decision": "evidence_only",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except sulfur, bicarbonate, vitamins and sulfide), then sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Adjust pH to 6.2 - 6.4, and dispense medium under 80% H2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials containing already the appropriate amount of sulfur. Sterilize medium by heating cultivation vessels in a boiling water bath for 2 - 3 hours on each of 3 successive days. After sterilization add bicarbonate from a sterile stock solution prepared under 80% N2 and 20% CO2 gas mixture. Vitamins (sterilized by filtration) and sulfide are added to the medium from sterile anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete medium to 6.5, if necessary.",
+        "decision": "evidence_only",
+        "rationale": "The existing prose retains this source preparation condition. Preserve its exact stage and range; these are not general organism-growth or incubation observations. Gas percentages have no explicitly stated fraction basis."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except sulfur, bicarbonate, vitamins and sulfide), then sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Adjust pH to 6.2 - 6.4, and dispense medium under 80% H2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials containing already the appropriate amount of sulfur. Sterilize medium by heating cultivation vessels in a boiling water bath for 2 - 3 hours on each of 3 successive days. After sterilization add bicarbonate from a sterile stock solution prepared under 80% N2 and 20% CO2 gas mixture. Vitamins (sterilized by filtration) and sulfide are added to the medium from sterile anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete medium to 6.5, if necessary.",
+        "decision": "evidence_only",
+        "rationale": "The existing prose retains this source preparation condition. Preserve its exact stage and range; these are not general organism-growth or incubation observations. Gas percentages have no explicitly stated fraction basis."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 22",
+        "exact_source_quote": "hours on each of 3 successive days. After sterilization add bicarbonate from a sterile stock",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      },
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 21",
+        "exact_source_quote": "sulfur. Sterilize medium by heating cultivation vessels in a boiling water bath for 2 - 3",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "The existing prose retains this source preparation condition. Preserve its exact stage and range; these are not general organism-growth or incubation observations. Gas percentages have no explicitly stated fraction basis."
+  },
+  {
+    "quantity_id": "q39",
+    "topic": "Bicarbonate stock80%N2/20%CO2",
+    "decision": "evidence_only",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except sulfur, bicarbonate, vitamins and sulfide), then sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Adjust pH to 6.2 - 6.4, and dispense medium under 80% H2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials containing already the appropriate amount of sulfur. Sterilize medium by heating cultivation vessels in a boiling water bath for 2 - 3 hours on each of 3 successive days. After sterilization add bicarbonate from a sterile stock solution prepared under 80% N2 and 20% CO2 gas mixture. Vitamins (sterilized by filtration) and sulfide are added to the medium from sterile anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete medium to 6.5, if necessary.",
+        "decision": "evidence_only",
+        "rationale": "The existing prose retains this source preparation condition. Preserve its exact stage and range; these are not general organism-growth or incubation observations. Gas percentages have no explicitly stated fraction basis."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except sulfur, bicarbonate, vitamins and sulfide), then sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Adjust pH to 6.2 - 6.4, and dispense medium under 80% H2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials containing already the appropriate amount of sulfur. Sterilize medium by heating cultivation vessels in a boiling water bath for 2 - 3 hours on each of 3 successive days. After sterilization add bicarbonate from a sterile stock solution prepared under 80% N2 and 20% CO2 gas mixture. Vitamins (sterilized by filtration) and sulfide are added to the medium from sterile anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete medium to 6.5, if necessary.",
+        "decision": "evidence_only",
+        "rationale": "The existing prose retains this source preparation condition. Preserve its exact stage and range; these are not general organism-growth or incubation observations. Gas percentages have no explicitly stated fraction basis."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 23",
+        "exact_source_quote": "solution prepared under 80% N2 and 20% CO2 gas mixture. Vitamins (sterilized by",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "The existing prose retains this source preparation condition. Preserve its exact stage and range; these are not general organism-growth or incubation observations. Gas percentages have no explicitly stated fraction basis."
+  },
+  {
+    "quantity_id": "q40",
+    "topic": "Vitamin/sulfide stocks100%N2",
+    "decision": "evidence_only",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except sulfur, bicarbonate, vitamins and sulfide), then sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Adjust pH to 6.2 - 6.4, and dispense medium under 80% H2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials containing already the appropriate amount of sulfur. Sterilize medium by heating cultivation vessels in a boiling water bath for 2 - 3 hours on each of 3 successive days. After sterilization add bicarbonate from a sterile stock solution prepared under 80% N2 and 20% CO2 gas mixture. Vitamins (sterilized by filtration) and sulfide are added to the medium from sterile anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete medium to 6.5, if necessary.",
+        "decision": "evidence_only",
+        "rationale": "The existing prose retains this source preparation condition. Preserve its exact stage and range; these are not general organism-growth or incubation observations. Gas percentages have no explicitly stated fraction basis."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except sulfur, bicarbonate, vitamins and sulfide), then sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Adjust pH to 6.2 - 6.4, and dispense medium under 80% H2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials containing already the appropriate amount of sulfur. Sterilize medium by heating cultivation vessels in a boiling water bath for 2 - 3 hours on each of 3 successive days. After sterilization add bicarbonate from a sterile stock solution prepared under 80% N2 and 20% CO2 gas mixture. Vitamins (sterilized by filtration) and sulfide are added to the medium from sterile anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete medium to 6.5, if necessary.",
+        "decision": "evidence_only",
+        "rationale": "The existing prose retains this source preparation condition. Preserve its exact stage and range; these are not general organism-growth or incubation observations. Gas percentages have no explicitly stated fraction basis."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 25",
+        "exact_source_quote": "prepared under 100% N2 gas. Adjust pH of complete medium to 6.5, if necessary.",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "The existing prose retains this source preparation condition. Preserve its exact stage and range; these are not general organism-growth or incubation observations. Gas percentages have no explicitly stated fraction basis."
+  },
+  {
+    "quantity_id": "q41",
+    "topic": "Complete medium pH6.5",
+    "decision": "evidence_only",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ph_value",
+        "stored": 6.5,
+        "decision": "evidence_only",
+        "rationale": "The scalar matches the explicit complete-medium adjustment; link the source rather than treating initial pH6.2–6.4 as the final value."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+        "field_path": "ph_value",
+        "stored": 6.5,
+        "decision": "evidence_only",
+        "rationale": "The scalar matches the explicit complete-medium adjustment; link the source rather than treating initial pH6.2–6.4 as the final value."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm395a",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf",
+        "source_locator": "Extracted text line 25",
+        "exact_source_quote": "prepared under 100% N2 gas. Adjust pH of complete medium to 6.5, if necessary.",
+        "snapshot_sha256": "d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb",
+        "parsed_text_sha256": "4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f"
+      }
+    ],
+    "rationale": "The scalar matches the explicit complete-medium adjustment; link the source rather than treating initial pH6.2–6.4 as the final value."
+  }
+]
+
+## Findings
+
+### f1: Restore stock stages and withhold unsupported final rates
+
+major / open / confirmed; issue key: culturemech.001503.stock-stage-and-rate.
+
+The flat list mixes main batch amounts, undiluted SL10 stock concentrations and vitamin-stock amounts. Current normalized rates lack a source-established final volume; HCl25% additionally lacks a percentage basis. Missing stock dose/water representation prevents reproducible interpretation.
+
+### f2: Reconcile salt, hydrate and material forms
+
+major / open / confirmed; issue key: culturemech.001503.supplied-chemical-forms.
+
+CHEBI8806 denotes free resazurin despite sodium resazurin source; CHEBI34887 lacks the nickel hexahydrate; CHEBI26833 is sulfur atom rather than the powdered material specification. Identifier validity does not resolve these supplied-form differences.
+
+### f3: Attach source-scoped quantity and preparation evidence
+
+minor / open / confirmed; issue key: culturemech.001503.claim-linkage.
+
+Both layers lack attached concentration evidence. Current primary supports scoped facts; old derivative reports and unavailable API responses cannot substitute for the original raw or ingredient-level linkage.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore SL10 and10x vitamin stock structure, literal batch amounts, water/makeup and receiving doses; withhold final-medium rates until all dilution bases are established.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Review source-specific forms using authoritative ontology evidence and update both primary/secondary links only when exact correspondence is established.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Attach concise source-linked claims at the correct stock/main field and preserve historical access limits and append-only history.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/BROCKIA_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/brockia_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/BROCKIA_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/BROCKIA_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch045/446/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-045/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch045/446/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/BROCKIA_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/BROCKIA_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/BROCKIA_MEDIUM.yaml:1:id: CultureMech:001503<br>./data/normalized_yaml/bacterial/brockia_medium.yaml:1:id: CultureMech:001503<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch045/source-preflight-bound/446/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 33 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| primary | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf; Exact source identity, formulation and scoped preparation | supports | Complete DSM395a two-page primary: main batch, SL10 stock and10x Wolin vitamins; water inputs, explicit SL10 makeup and separate receiving doses. No measured final medium volume is stated. |
+| api395a-attempt | https://mediadive.dsmz.de/rest/medium/395a; Preserved exact public retrieval result | context_only | Current exact MediaDive395a API returned503. Current DSM primary is available; the historical report is derivative context and the cited old API raw was not recovered in the explicitly bounded parent search. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206; Exact source identity, formulation and scoped preparation | supports | CHEBI:31206 resolves to ammonium chloride. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact source identity, formulation and scoped preparation | supports | CHEBI:63036 resolves to potassium dihydrogen phosphate. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588; Exact source identity, formulation and scoped preparation | supports | CHEBI:32588 resolves to potassium chloride. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact source identity, formulation and scoped preparation | supports | CHEBI:86158 resolves to calcium chloride dihydrate. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345; Exact source identity, formulation and scoped preparation | supports | CHEBI:86345 resolves to magnesium dichloride hexahydrate. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact source identity, formulation and scoped preparation | supports | CHEBI:26710 resolves to sodium chloride. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806; Exact source identity, formulation and scoped preparation | supports | CHEBI:8806 resolves to Resazurin. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi26833 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26833; Exact source identity, formulation and scoped preparation | supports | CHEBI:26833 resolves to sulfur atom. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi32139 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139; Exact source identity, formulation and scoped preparation | supports | CHEBI:32139 resolves to sodium hydrogencarbonate. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi76209 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209; Exact source identity, formulation and scoped preparation | supports | CHEBI:76209 resolves to sodium sulfide nonahydrate. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi17883 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17883; Exact source identity, formulation and scoped preparation | supports | CHEBI:17883 resolves to hydrogen chloride. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi86249 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86249; Exact source identity, formulation and scoped preparation | supports | CHEBI:86249 resolves to iron dichloride tetrahydrate. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi49976 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976; Exact source identity, formulation and scoped preparation | supports | CHEBI:49976 resolves to zinc dichloride. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368; Exact source identity, formulation and scoped preparation | supports | CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; Exact source identity, formulation and scoped preparation | supports | CHEBI:33118 resolves to boric acid. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi53503 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503; Exact source identity, formulation and scoped preparation | supports | CHEBI:53503 resolves to cobalt chloride hexahydrate. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi86318 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318; Exact source identity, formulation and scoped preparation | supports | CHEBI:86318 resolves to copper(II) chloride dihydrate. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887; Exact source identity, formulation and scoped preparation | supports | CHEBI:34887 resolves to nickel dichloride. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; Exact source identity, formulation and scoped preparation | supports | CHEBI:75213 resolves to sodium molybdate dihydrate. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956; Exact source identity, formulation and scoped preparation | supports | CHEBI:15956 resolves to biotin. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi27470 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470; Exact source identity, formulation and scoped preparation | supports | CHEBI:27470 resolves to folic acid. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi30961 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961; Exact source identity, formulation and scoped preparation | supports | CHEBI:30961 resolves to pyridoxine hydrochloride. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi49105 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105; Exact source identity, formulation and scoped preparation | supports | CHEBI:49105 resolves to thiamine hydrochloride. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi17015 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015; Exact source identity, formulation and scoped preparation | supports | CHEBI:17015 resolves to riboflavin. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi15940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940; Exact source identity, formulation and scoped preparation | supports | CHEBI:15940 resolves to nicotinic acid. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi31345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345; Exact source identity, formulation and scoped preparation | supports | CHEBI:31345 resolves to Calcium pantothenate. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi176843 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843; Exact source identity, formulation and scoped preparation | supports | CHEBI:176843 resolves to vitamin B12. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753; Exact source identity, formulation and scoped preparation | supports | CHEBI:30753 resolves to 4-aminobenzoic acid. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi16494 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494; Exact source identity, formulation and scoped preparation | supports | CHEBI:16494 resolves to lipoic acid. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| grounding-inventory | /private/tmp/culturemech-review-work-batch045/446/grounding-inventory.json; All asserted selected-layer IDs/labels and exact current preferred MIM rows, including negative slots | context_only | Canonical labels match, including capitalized Calcium pantothenate. Source sodium resazurin is not established by free Resazurin CHEBI8806; powdered sulfur is not a sulfur atom specification; nickel chloride hexahydrate is not anhydrous CHEBI34887. Preserve source forms without inventing replacements. Valid generic vitamin IDs do not establish every supplied stereochemical/grade qualifier. |
+| history-metadata | data/merge_yaml/merged/BROCKIA_MEDIUM.yaml; data/normalized_yaml/bacterial/brockia_medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 8, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/brockia_medium.yaml", "events": 7, "timestamp_issues": []}] |
+| history-evidence | /private/tmp/culturemech-review-work-batch045/446/history-evidence-inventory.json; Entire selected-layer histories/evidence; exact historical parents and original captured timestamps | context_only | All target/owner history and evidence fields were read. No attached amount evidence exists. The historical MediaDive395a report contains derivative claims; its cited raw was not recovered within the recorded two-parent bounded search, and current API503 is preserved. Current primary independently supports batch/stage observations, not historical raw authentication. Import/enrichment/history does not establish that current merge code caused flattening. |
+| writer-0 | src/culturemech/merge/formulation.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current formulation-aware merge and preserved owner/target equality were inspected. Correct the maintained owner first; do not attribute existing flattened fields unconditionally to the current guarded merger. |
+| writer-1 | src/culturemech/merge/merger.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current formulation-aware merge and preserved owner/target equality were inspected. Correct the maintained owner first; do not attribute existing flattened fields unconditionally to the current guarded merger. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch045/446/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Current exact MediaDive395a API returned503. Current DSM primary is available; the historical report is derivative context and the cited old API raw was not recovered in the explicitly bounded parent search.
+- No final-medium measured volume, unspecified percentage basis or density was inferred. Historical API395a raw was not authenticated; current primary support is independent.
+- No strain-specific growth claim or replacement ontology identifier is introduced.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261022T020624Z-culturemech-001503-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: brockia_medium (CultureMech:001503)'
+started_at: '2026-10-22T02:02:39Z'
+finished_at: '2026-10-22T02:06:24Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: DSM395a identifies Brockia medium, but both local layers flatten SL10 and
+  vitamin stocks into the receiving medium and assert unsupported final-volume-normalized
+  rates. The primary preserves separate preparation stages and gas atmospheres; sodium
+  resazurin, powdered sulfur and nickel hydrate also require form-specific review.
+source:
+  git_revision: 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/BROCKIA_MEDIUM.yaml
+    sha256: 9d791d907e515cacee3d74c95031d00de8bb8dac4bb6d7dacb759231a5cf0e57
+    role: target
+  - path: data/normalized_yaml/bacterial/brockia_medium.yaml
+    sha256: 543900d1ba51e928577ca8b729da0e61457b10a86c4fdca6cbbb180a3a0aa660
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/bacterial/brockia_medium.yaml.md
+    sha256: 033207401cb21b4a61faa89dad7208cb5fefd836141750dad978e25e7908ca57
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/BROCKIA_MEDIUM.md
+    sha256: f40b00f05ac212dc4cd297792976ef2066c89cb4f0c13fb95ab2134665d5d8ce
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/brockia_medium.md
+    sha256: 5e84a29ce719cd6b3b9f43dcf192b6e8bde2fc4d04c46c1c560b4264af8cfeea
+    role: context
+  - path: reports/yaml_record_review/20260922T003012Z-BROCKIA_MEDIUM.md
+    sha256: 042a02bfe34e893f8d20a0db90b265911e891d3302799d3b023f2ec9962adb35
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/curate_organism_culture_type.py
+    sha256: 8686de3d3736eaaf3702e2009a299a53819a5ba321966ab2ea01104538ca6a65
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_albumin_counterparts.py
+    sha256: 26fd67dc1773e34b183cfa447b24cf948f52b3e5d229d6532d6d0fee10216a7a
+    role: context
+  - path: scripts/repair_bsk_formulations.py
+    sha256: a0df723b84ed8dfa33b06023b540af8d67af79d33b375f643741d81f7f4cef2c
+    role: context
+  - path: scripts/repair_jcm_albumin_inputs.py
+    sha256: fc166a31e8009a31f2f510cfb4ec59a3d5435f9fbfd0fb75417f99e25b7199f4
+    role: context
+  - path: scripts/repair_jcm_stock_preparations.py
+    sha256: 7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a
+    role: context
+  - path: scripts/repair_methanogen_stock_boundaries.py
+    sha256: 8d4d32c7dc3cb2586242a188f958087482df3aff553d1dbc468c422eddb037ba
+    role: context
+  - path: scripts/repair_togo_bsk_structure.py
+    sha256: 7be012bb48826f20ede3a560aac5e8369b928bf1315bbed5fd45687ffb74aa9c
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 446; batch 045 item 6 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding forty-four task batches
+    contain 440 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 443 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:001503
+targets:
+- target_id: CultureMech:001503
+  path: data/merge_yaml/merged/BROCKIA_MEDIUM.yaml
+  label: brockia_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/brockia_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/BROCKIA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:001503
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/BROCKIA_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch045/446/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-045/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch045/446/strict.tsv"
+  target_ids:
+  - CultureMech:001503
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/BROCKIA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:001503
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/BROCKIA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:001503
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:001503
+- check_id: api395a-source-access
+  name: 'Exact source content access: api395a'
+  required: false
+  status: unavailable
+  summary: Current exact MediaDive395a API returned503. Current DSM primary is available;
+    the historical report is derivative context and the cited old API raw was not
+    recovered in the explicitly bounded parent search.
+  target_ids:
+  - CultureMech:001503
+  evidence_ids:
+  - api395a-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/BROCKIA_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-22T02:06:21Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/brockia_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-22T02:06:21Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/BROCKIA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-22T02:03:29.376391Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/BROCKIA_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch045/446/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-22T02:03:30.851536Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-045/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch045/446/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/BROCKIA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-22T02:03:32.538296Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/BROCKIA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-22T02:03:33.626216Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-22T02:06:21Z'
+  support: supports
+  summary: './data/merge_yaml/merged/BROCKIA_MEDIUM.yaml:1:id: CultureMech:001503
+
+    ./data/normalized_yaml/bacterial/brockia_medium.yaml:1:id: CultureMech:001503
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch045/source-preflight-bound/446/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-22T02:06:21Z'
+  support: supports
+  summary: 33 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 4ebe4e2a1d31d51869550372c75902df1ed219237417f5f47886fe79b0fbbcba
+- evidence_id: primary
+  kind: database
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-22T01:49:41.503134Z'
+  support: supports
+  summary: 'Complete DSM395a two-page primary: main batch, SL10 stock and10x Wolin
+    vitamins; water inputs, explicit SL10 makeup and separate receiving doses. No
+    measured final medium volume is stated.'
+  snapshot_sha256: d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb
+- evidence_id: api395a-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/395a
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-22T01:49:41.503266Z'
+  support: context_only
+  summary: Current exact MediaDive395a API returned503. Current DSM primary is available;
+    the historical report is derivative context and the cited old API raw was not
+    recovered in the explicitly bounded parent search.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: chebi31206
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:17:28.439407Z'
+  support: supports
+  summary: CHEBI:31206 resolves to ammonium chloride. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:43:08.324907Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate. Captured canonical
+    label/obsolete metadata checked; full scientific object retained. Exact supplied
+    forms are assessed separately.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi32588
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:17:29.045588Z'
+  support: supports
+  summary: CHEBI:32588 resolves to potassium chloride. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:43:09.378884Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate. Captured canonical
+    label/obsolete metadata checked; full scientific object retained. Exact supplied
+    forms are assessed separately.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:17:30.382026Z'
+  support: supports
+  summary: CHEBI:86345 resolves to magnesium dichloride hexahydrate. Captured canonical
+    label/obsolete metadata checked; full scientific object retained. Exact supplied
+    forms are assessed separately.
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi8806
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:17:30.774007Z'
+  support: supports
+  summary: CHEBI:8806 resolves to Resazurin. Captured canonical label/obsolete metadata
+    checked; full scientific object retained. Exact supplied forms are assessed separately.
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: chebi26833
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26833
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-20T06:55:04.114839Z'
+  support: supports
+  summary: CHEBI:26833 resolves to sulfur atom. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: 34952547270a6bcbbfa3a3699082c8d5359e51d0f90518ab9ca5400494a8ae33
+- evidence_id: chebi32139
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T07:16:24.226823Z'
+  support: supports
+  summary: CHEBI:32139 resolves to sodium hydrogencarbonate. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: 2a41873aa455dc8563a47d36add836fffb6fb758ce7a2d1c28295e77646315fe
+- evidence_id: chebi76209
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-20T06:55:04.847843Z'
+  support: supports
+  summary: CHEBI:76209 resolves to sodium sulfide nonahydrate. Captured canonical
+    label/obsolete metadata checked; full scientific object retained. Exact supplied
+    forms are assessed separately.
+  snapshot_sha256: f74d2c85574a4e28bdf71a78e4263f7e4c211036cd6d63b1f8282aca1d255e5c
+- evidence_id: chebi17883
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17883
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-20T07:37:25.439020Z'
+  support: supports
+  summary: CHEBI:17883 resolves to hydrogen chloride. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: 1c4c2e8e3474319ab5fb79041b19cabfae42f4360729a7569f8a943a503d2f6a
+- evidence_id: chebi86249
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86249
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T09:49:55.693358Z'
+  support: supports
+  summary: CHEBI:86249 resolves to iron dichloride tetrahydrate. Captured canonical
+    label/obsolete metadata checked; full scientific object retained. Exact supplied
+    forms are assessed separately.
+  snapshot_sha256: 63bb84e7a947d2a3db0e5f23cf6a533bda2eee137020d7bbe2590477131c5683
+- evidence_id: chebi49976
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:04:44.168295Z'
+  support: supports
+  summary: CHEBI:49976 resolves to zinc dichloride. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: d27644ae0df5935f8f18a28faa1ba6096fefeb9d0cb951b39751d442c92bd321
+- evidence_id: chebi86368
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:17:30.657545Z'
+  support: supports
+  summary: CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Captured canonical
+    label/obsolete metadata checked; full scientific object retained. Exact supplied
+    forms are assessed separately.
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:17:29.364390Z'
+  support: supports
+  summary: CHEBI:33118 resolves to boric acid. Captured canonical label/obsolete metadata
+    checked; full scientific object retained. Exact supplied forms are assessed separately.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi53503
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:04:44.349630Z'
+  support: supports
+  summary: CHEBI:53503 resolves to cobalt chloride hexahydrate. Captured canonical
+    label/obsolete metadata checked; full scientific object retained. Exact supplied
+    forms are assessed separately.
+  snapshot_sha256: c33e304a0a565068c592ba0970e501052981599ef69cd2cb901e88f27931389d
+- evidence_id: chebi86318
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:43:12.592415Z'
+  support: supports
+  summary: CHEBI:86318 resolves to copper(II) chloride dihydrate. Captured canonical
+    label/obsolete metadata checked; full scientific object retained. Exact supplied
+    forms are assessed separately.
+  snapshot_sha256: 9bbecfe37d67d923ee070067aebdf1abf21048cdb2cbdff9de0e3d21f68ea1ae
+- evidence_id: chebi34887
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:04:44.093348Z'
+  support: supports
+  summary: CHEBI:34887 resolves to nickel dichloride. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: CHEBI:75213 resolves to sodium molybdate dihydrate. Captured canonical
+    label/obsolete metadata checked; full scientific object retained. Exact supplied
+    forms are assessed separately.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi15956
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:42:30.425993Z'
+  support: supports
+  summary: CHEBI:15956 resolves to biotin. Captured canonical label/obsolete metadata
+    checked; full scientific object retained. Exact supplied forms are assessed separately.
+  snapshot_sha256: d2d51887df4de92642b66e9d15086ef82eccbc476dd4077d514ca709181ab4bd
+- evidence_id: chebi27470
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-20T06:55:10.450814Z'
+  support: supports
+  summary: CHEBI:27470 resolves to folic acid. Captured canonical label/obsolete metadata
+    checked; full scientific object retained. Exact supplied forms are assessed separately.
+  snapshot_sha256: fe3e4a2f0f0fa51f94efe6bbf0fa8883d43eafef8db73cfd37bc25ce15fdd12f
+- evidence_id: chebi30961
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:42:44.571163Z'
+  support: supports
+  summary: CHEBI:30961 resolves to pyridoxine hydrochloride. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: f1c95b83f5396067c3959c20ee4715c78f7895f5084dd214b3a4bf01e064f21d
+- evidence_id: chebi49105
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-20T06:55:10.911379Z'
+  support: supports
+  summary: CHEBI:49105 resolves to thiamine hydrochloride. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: 0b923c215888606038af1e3f0c1b1bcc35e4ab84966d1733a91fdfcbee8f2ae4
+- evidence_id: chebi17015
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-20T06:55:11.583596Z'
+  support: supports
+  summary: CHEBI:17015 resolves to riboflavin. Captured canonical label/obsolete metadata
+    checked; full scientific object retained. Exact supplied forms are assessed separately.
+  snapshot_sha256: f42bc5bbd29b208bfd3062acb11dfa63ccebf81f77ffd72ab596de863cb68aa4
+- evidence_id: chebi15940
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-20T06:55:11.874279Z'
+  support: supports
+  summary: CHEBI:15940 resolves to nicotinic acid. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: 3330ed782e73526a087fb250ed5895ff232f117a896d45d541dff431e5c1f0e1
+- evidence_id: chebi31345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-20T06:55:12.450283Z'
+  support: supports
+  summary: CHEBI:31345 resolves to Calcium pantothenate. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: 56fc4b33c78d82faf317e131ae936f2e00eab0c369b2a9d8be86eddff6fd616d
+- evidence_id: chebi176843
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:17:26.997779Z'
+  support: supports
+  summary: CHEBI:176843 resolves to vitamin B12. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: b535c3de88f47e93aed8909c58ff4e2d054a6845dea3bc9a048c18df12b371a9
+- evidence_id: chebi30753
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-20T06:55:12.829785Z'
+  support: supports
+  summary: CHEBI:30753 resolves to 4-aminobenzoic acid. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: 97ea54b8020d3bcda2478182be115d2bc632249ee22b197b0575a4a9fd5fe21a
+- evidence_id: chebi16494
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-20T06:55:13.001958Z'
+  support: supports
+  summary: CHEBI:16494 resolves to lipoic acid. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: aa3c1003d6266cc48f19a4d1d9527edd6844b96094a911e9a3c4f6a8851444e1
+- evidence_id: grounding-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch045/446/grounding-inventory.json
+  locator: All asserted selected-layer IDs/labels and exact current preferred MIM
+    rows, including negative slots
+  accessed_at: '2026-10-22T02:06:21Z'
+  support: context_only
+  summary: Canonical labels match, including capitalized Calcium pantothenate. Source
+    sodium resazurin is not established by free Resazurin CHEBI8806; powdered sulfur
+    is not a sulfur atom specification; nickel chloride hexahydrate is not anhydrous
+    CHEBI34887. Preserve source forms without inventing replacements. Valid generic
+    vitamin IDs do not establish every supplied stereochemical/grade qualifier.
+  snapshot_sha256: 5d0343aa9a76ae17e258e50de56fca6160f1d71b2b7833a28b1d8c9284ef0155
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/BROCKIA_MEDIUM.yaml; data/normalized_yaml/bacterial/brockia_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-22T02:06:21Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 8, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/brockia_medium.yaml",
+    "events": 7, "timestamp_issues": []}]'
+- evidence_id: history-evidence
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch045/446/history-evidence-inventory.json
+  locator: Entire selected-layer histories/evidence; exact historical parents and
+    original captured timestamps
+  accessed_at: '2026-10-22T02:06:21Z'
+  support: context_only
+  summary: All target/owner history and evidence fields were read. No attached amount
+    evidence exists. The historical MediaDive395a report contains derivative claims;
+    its cited raw was not recovered within the recorded two-parent bounded search,
+    and current API503 is preserved. Current primary independently supports batch/stage
+    observations, not historical raw authentication. Import/enrichment/history does
+    not establish that current merge code caused flattening.
+  snapshot_sha256: a82a09ffaa5155fe41f612f3248aabf7dd8e485be1ccf4bdc07712736092a1a8
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-22T02:06:21Z'
+  support: context_only
+  summary: Current formulation-aware merge and preserved owner/target equality were
+    inspected. Correct the maintained owner first; do not attribute existing flattened
+    fields unconditionally to the current guarded merger.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-22T02:06:21Z'
+  support: context_only
+  summary: Current formulation-aware merge and preserved owner/target equality were
+    inspected. Correct the maintained owner first; do not attribute existing flattened
+    fields unconditionally to the current guarded merger.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch045/446/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-22T02:06:21Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 86fc9d1e5e4c8d563eadea76e72c339e63abb2e30564f95b701db231aee7410e
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:001503
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Identifier metadata, exact supplied forms and current secondary bindings
+  outcome: concern
+  summary: '112 asserted slots and 29 distinct captured ontology IDs checked; 0 literal
+    canonical-label differences. 52/54 asserted current CHEBI secondary slots have
+    preferred mapped rows; 0 selected legacy slots remain separately assessed. Target
+    direct-ingredient linkage: 29/29 primary and 27/29 current secondary on a 0–100
+    percent linkage scale (100.00% and 93.10%), not a correctness score. Canonical
+    labels match, including capitalized Calcium pantothenate. Source sodium resazurin
+    is not established by free Resazurin CHEBI8806; powdered sulfur is not a sulfur
+    atom specification; nickel chloride hexahydrate is not anhydrous CHEBI34887. Preserve
+    source forms without inventing replacements. Valid generic vitamin IDs do not
+    establish every supplied stereochemical/grade qualifier.'
+  target_ids:
+  - CultureMech:001503
+  evidence_ids:
+  - record
+  - grounding-inventory
+  - chebi31206
+  - chebi63036
+  - chebi32588
+  - chebi86158
+  - chebi86345
+  - chebi26710
+  - chebi8806
+  - chebi26833
+  - chebi32139
+  - chebi76209
+  - chebi17883
+  - chebi86249
+  - chebi49976
+  - chebi86368
+  - chebi33118
+  - chebi53503
+  - chebi86318
+  - chebi34887
+  - chebi75213
+  - chebi15956
+  - chebi27470
+  - chebi30961
+  - chebi49105
+  - chebi17015
+  - chebi15940
+  - chebi31345
+  - chebi176843
+  - chebi30753
+  - chebi16494
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 15 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:001503
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: evidence-placement
+  area: evidence
+  topic: Claim linkage and historical/current source scope
+  outcome: concern
+  summary: All target/owner history and evidence fields were read. No attached amount
+    evidence exists. The historical MediaDive395a report contains derivative claims;
+    its cited raw was not recovered within the recorded two-parent bounded search,
+    and current API503 is preserved. Current primary independently supports batch/stage
+    observations, not historical raw authentication. Import/enrichment/history does
+    not establish that current merge code caused flattening.
+  target_ids:
+  - CultureMech:001503
+  evidence_ids:
+  - record
+  - history-evidence
+  - bound-source-integrity
+- assessment_id: identity
+  area: identity
+  topic: Exact source accession and maintained ownership
+  outcome: supported
+  summary: The one maintained DSM395a owner and generated target identify Brockia
+    medium. SL10 and10x Wolin vitamins are source-defined stocks within this formulation,
+    not separate growth claims or arbitrary namesake recipes.
+  target_ids:
+  - CultureMech:001503
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+- assessment_id: preparation
+  area: completeness
+  topic: Main and stock quantities, pH and gases
+  outcome: concern
+  summary: The long preparation prose preserves gas and pH distinctions but the ingredient
+    structure loses stock composition/doses and water inputs. Main80%H2/20%CO2, bicarbonate-stock80%N2/20%CO2
+    and vitamin/sulfide-stock100%N2 must remain separate. Boiling sterilization is
+    not a growth-temperature observation.
+  target_ids:
+  - CultureMech:001503
+  evidence_ids:
+  - primary
+  - record
+- assessment_id: classification
+  area: scope
+  topic: Defined liquid medium and growth evidence
+  outcome: supported
+  summary: A chemically specified liquid preparation is consistent with the primary.
+    Generic microbial cultivation is not an experimentally supported strain claim;
+    none is added. Source-specific supplied forms and unresolved normalization remain
+    independent concerns.
+  target_ids:
+  - CultureMech:001503
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 41 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:001503
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"topic\": \"NH4Cl — main batch\
+    \ versus stored final rate\",\n    \"decision\": \"unsupported\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[0].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.329341\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n        \"\
+    rationale\": \"The source gives a batch input, not this normalized final-medium\
+    \ G_PER_L value. Preserve its literal amount/form and establish final volume before\
+    \ proposing a rate; do not substitute an assumed one-litre denominator.\"\n  \
+    \    },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/brockia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.329341\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"The\
+    \ source gives a batch input, not this normalized final-medium G_PER_L value.\
+    \ Preserve its literal amount/form and establish final volume before proposing\
+    \ a rate; do not substitute an assumed one-litre denominator.\"\n      }\n   \
+    \ ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsm395a\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 3\",\n        \"exact_source_quote\"\
+    : \"NH4Cl                                                      0.33         g\"\
+    ,\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"The source gives a batch input, not this\
+    \ normalized final-medium G_PER_L value. Preserve its literal amount/form and\
+    \ establish final volume before proposing a rate; do not substitute an assumed\
+    \ one-litre denominator.\"\n  },\n  {\n    \"quantity_id\": \"q2\",\n    \"topic\"\
+    : \"KH2PO4 — main batch versus stored final rate\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[1].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.329341\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"The source\
+    \ gives a batch input, not this normalized final-medium G_PER_L value. Preserve\
+    \ its literal amount/form and establish final volume before proposing a rate;\
+    \ do not substitute an assumed one-litre denominator.\"\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/brockia_medium.yaml\",\n \
+    \       \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.329341\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"The\
+    \ source gives a batch input, not this normalized final-medium G_PER_L value.\
+    \ Preserve its literal amount/form and establish final volume before proposing\
+    \ a rate; do not substitute an assumed one-litre denominator.\"\n      }\n   \
+    \ ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsm395a\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 4\",\n        \"exact_source_quote\"\
+    : \"KH2PO4                                                     0.33         g\"\
+    ,\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"The source gives a batch input, not this\
+    \ normalized final-medium G_PER_L value. Preserve its literal amount/form and\
+    \ establish final volume before proposing a rate; do not substitute an assumed\
+    \ one-litre denominator.\"\n  },\n  {\n    \"quantity_id\": \"q3\",\n    \"topic\"\
+    : \"KCl — main batch versus stored final rate\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[2].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.329341\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"The source\
+    \ gives a batch input, not this normalized final-medium G_PER_L value. Preserve\
+    \ its literal amount/form and establish final volume before proposing a rate;\
+    \ do not substitute an assumed one-litre denominator.\"\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/brockia_medium.yaml\",\n \
+    \       \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.329341\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"The\
+    \ source gives a batch input, not this normalized final-medium G_PER_L value.\
+    \ Preserve its literal amount/form and establish final volume before proposing\
+    \ a rate; do not substitute an assumed one-litre denominator.\"\n      }\n   \
+    \ ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsm395a\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 5\",\n        \"exact_source_quote\"\
+    : \"KCl                                                        0.33         g\"\
+    ,\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"The source gives a batch input, not this\
+    \ normalized final-medium G_PER_L value. Preserve its literal amount/form and\
+    \ establish final volume before proposing a rate; do not substitute an assumed\
+    \ one-litre denominator.\"\n  },\n  {\n    \"quantity_id\": \"q4\",\n    \"topic\"\
+    : \"CaCl2 x 2 H2O — main batch versus stored final rate\",\n    \"decision\":\
+    \ \"unsupported\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[3].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"0.439122\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"\
+    The source gives a batch input, not this normalized final-medium G_PER_L value.\
+    \ Preserve its literal amount/form and establish final volume before proposing\
+    \ a rate; do not substitute an assumed one-litre denominator.\"\n      },\n  \
+    \    {\n        \"input\": \"data/normalized_yaml/bacterial/brockia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.439122\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"The\
+    \ source gives a batch input, not this normalized final-medium G_PER_L value.\
+    \ Preserve its literal amount/form and establish final volume before proposing\
+    \ a rate; do not substitute an assumed one-litre denominator.\"\n      }\n   \
+    \ ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsm395a\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 6\",\n        \"exact_source_quote\"\
+    : \"CaCl2 x 2 H2O                                              0.44         g\"\
+    ,\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"The source gives a batch input, not this\
+    \ normalized final-medium G_PER_L value. Preserve its literal amount/form and\
+    \ establish final volume before proposing a rate; do not substitute an assumed\
+    \ one-litre denominator.\"\n  },\n  {\n    \"quantity_id\": \"q5\",\n    \"topic\"\
+    : \"MgCl2 x 6 H2O — main batch versus stored final rate\",\n    \"decision\":\
+    \ \"unsupported\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[4].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"0.698603\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"\
+    The source gives a batch input, not this normalized final-medium G_PER_L value.\
+    \ Preserve its literal amount/form and establish final volume before proposing\
+    \ a rate; do not substitute an assumed one-litre denominator.\"\n      },\n  \
+    \    {\n        \"input\": \"data/normalized_yaml/bacterial/brockia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.698603\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"The\
+    \ source gives a batch input, not this normalized final-medium G_PER_L value.\
+    \ Preserve its literal amount/form and establish final volume before proposing\
+    \ a rate; do not substitute an assumed one-litre denominator.\"\n      }\n   \
+    \ ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsm395a\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 7\",\n        \"exact_source_quote\"\
+    : \"MgCl2 x 6 H2O                                              0.70         g\"\
+    ,\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"The source gives a batch input, not this\
+    \ normalized final-medium G_PER_L value. Preserve its literal amount/form and\
+    \ establish final volume before proposing a rate; do not substitute an assumed\
+    \ one-litre denominator.\"\n  },\n  {\n    \"quantity_id\": \"q6\",\n    \"topic\"\
+    : \"NaCl — main batch versus stored final rate\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[5].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.499002\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"The source\
+    \ gives a batch input, not this normalized final-medium G_PER_L value. Preserve\
+    \ its literal amount/form and establish final volume before proposing a rate;\
+    \ do not substitute an assumed one-litre denominator.\"\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/brockia_medium.yaml\",\n \
+    \       \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.499002\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"The\
+    \ source gives a batch input, not this normalized final-medium G_PER_L value.\
+    \ Preserve its literal amount/form and establish final volume before proposing\
+    \ a rate; do not substitute an assumed one-litre denominator.\"\n      }\n   \
+    \ ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsm395a\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 8\",\n        \"exact_source_quote\"\
+    : \"NaCl                                                       0.50         g\"\
+    ,\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"The source gives a batch input, not this\
+    \ normalized final-medium G_PER_L value. Preserve its literal amount/form and\
+    \ establish final volume before proposing a rate; do not substitute an assumed\
+    \ one-litre denominator.\"\n  },\n  {\n    \"quantity_id\": \"q7\",\n    \"topic\"\
+    : \"Sodium resazurin (0.1% w/v) — main batch versus stored final rate\",\n   \
+    \ \"decision\": \"unsupported\",\n    \"layer_decisions\": [\n      {\n      \
+    \  \"input\": \"target\",\n        \"field_path\": \"ingredients[6].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.000499002\",\n          \"\
+    unit\": \"G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n    \
+    \    \"rationale\": \"The source gives0.50ml of0.1%w/v sodium resazurin, equal\
+    \ to0.50mg per receiving batch. That arithmetic does not establish the local final-medium\
+    \ G_PER_L value or equate the sodium salt with free resazurin.\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/brockia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.000499002\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"\
+    The source gives0.50ml of0.1%w/v sodium resazurin, equal to0.50mg per receiving\
+    \ batch. That arithmetic does not establish the local final-medium G_PER_L value\
+    \ or equate the sodium salt with free resazurin.\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsm395a\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\",\n       \
+    \ \"source_locator\": \"Extracted text line 10\",\n        \"exact_source_quote\"\
+    : \"Sodium resazurin (0.1% w/v)                                0.50        ml\"\
+    ,\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"The source gives0.50ml of0.1%w/v sodium\
+    \ resazurin, equal to0.50mg per receiving batch. That arithmetic does not establish\
+    \ the local final-medium G_PER_L value or equate the sodium salt with free resazurin.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q8\",\n    \"topic\": \"Sulfur (powdered)\
+    \ — main batch versus stored final rate\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[7].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"9.98004\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The source gives\
+    \ a batch input, not this normalized final-medium G_PER_L value. Preserve its\
+    \ literal amount/form and establish final volume before proposing a rate; do not\
+    \ substitute an assumed one-litre denominator.\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/brockia_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[7].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"9.98004\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"unsupported\",\n        \"rationale\": \"The source gives a batch input, not\
+    \ this normalized final-medium G_PER_L value. Preserve its literal amount/form\
+    \ and establish final volume before proposing a rate; do not substitute an assumed\
+    \ one-litre denominator.\"\n      }\n    ],\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"dsm395a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 11\",\n        \"exact_source_quote\"\
+    : \"Sulfur (powdered)                                         10.00         g\"\
+    ,\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"The source gives a batch input, not this\
+    \ normalized final-medium G_PER_L value. Preserve its literal amount/form and\
+    \ establish final volume before proposing a rate; do not substitute an assumed\
+    \ one-litre denominator.\"\n  },\n  {\n    \"quantity_id\": \"q9\",\n    \"topic\"\
+    : \"NaHCO3 — main batch versus stored final rate\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[8].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.798403\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"The source\
+    \ gives a batch input, not this normalized final-medium G_PER_L value. Preserve\
+    \ its literal amount/form and establish final volume before proposing a rate;\
+    \ do not substitute an assumed one-litre denominator.\"\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/brockia_medium.yaml\",\n \
+    \       \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.798403\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"The\
+    \ source gives a batch input, not this normalized final-medium G_PER_L value.\
+    \ Preserve its literal amount/form and establish final volume before proposing\
+    \ a rate; do not substitute an assumed one-litre denominator.\"\n      }\n   \
+    \ ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsm395a\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 12\",\n        \"exact_source_quote\"\
+    : \"NaHCO3                                                     0.80         g\"\
+    ,\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"The source gives a batch input, not this\
+    \ normalized final-medium G_PER_L value. Preserve its literal amount/form and\
+    \ establish final volume before proposing a rate; do not substitute an assumed\
+    \ one-litre denominator.\"\n  },\n  {\n    \"quantity_id\": \"q10\",\n    \"topic\"\
+    : \"Na2S x 9 H2O — main batch versus stored final rate\",\n    \"decision\": \"\
+    unsupported\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.499002\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"The\
+    \ source gives a batch input, not this normalized final-medium G_PER_L value.\
+    \ Preserve its literal amount/form and establish final volume before proposing\
+    \ a rate; do not substitute an assumed one-litre denominator.\"\n      },\n  \
+    \    {\n        \"input\": \"data/normalized_yaml/bacterial/brockia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.499002\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"The\
+    \ source gives a batch input, not this normalized final-medium G_PER_L value.\
+    \ Preserve its literal amount/form and establish final volume before proposing\
+    \ a rate; do not substitute an assumed one-litre denominator.\"\n      }\n   \
+    \ ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsm395a\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 14\",\n        \"exact_source_quote\"\
+    : \"Na2S x 9 H2O                                               0.50         g\"\
+    ,\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"The source gives a batch input, not this\
+    \ normalized final-medium G_PER_L value. Preserve its literal amount/form and\
+    \ establish final volume before proposing a rate; do not substitute an assumed\
+    \ one-litre denominator.\"\n  },\n  {\n    \"quantity_id\": \"q11\",\n    \"topic\"\
+    : \"HCl (25%) — SL10 stock\",\n    \"decision\": \"unsupported\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[10].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"2.5\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n        \"rationale\"\
+    : \"The source specifies10ml HCl25% with unspecified percentage basis. It does\
+    \ not support2.5g/L HCl in the stock or receiving medium; no density or mass/volume\
+    \ conversion is justified.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/brockia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The source specifies10ml\
+    \ HCl25% with unspecified percentage basis. It does not support2.5g/L HCl in the\
+    \ stock or receiving medium; no density or mass/volume conversion is justified.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsm395a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 31\",\n        \"exact_source_quote\"\
+    : \"HCl (25%)                                                  10.00      ml\"\
+    ,\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      },\n      {\n        \"source_key\": \"dsm395a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\",\n   \
+    \     \"source_locator\": \"Extracted text line 43\",\n        \"exact_source_quote\"\
+    : \"make up to 1000.00 ml.\",\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"The source specifies10ml HCl25% with unspecified\
+    \ percentage basis. It does not support2.5g/L HCl in the stock or receiving medium;\
+    \ no density or mass/volume conversion is justified.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q12\",\n    \"topic\": \"FeCl2 x 4 H2O — SL10 stock\",\n    \"decision\":\
+    \ \"correct\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This is an SL10\
+    \ stock amount, not a direct final-medium ingredient. The stock explicitly makes\
+    \ up to1000ml and doses1ml into this medium. Restore stock composition and its\
+    \ separate dose; any final-medium concentration still needs final-volume evidence.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/brockia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This is an SL10\
+    \ stock amount, not a direct final-medium ingredient. The stock explicitly makes\
+    \ up to1000ml and doses1ml into this medium. Restore stock composition and its\
+    \ separate dose; any final-medium concentration still needs final-volume evidence.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsm395a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 32\",\n        \"exact_source_quote\"\
+    : \"FeCl2 x 4 H2O                                               1.50       g\"\
+    ,\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      },\n      {\n        \"source_key\": \"dsm395a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\",\n   \
+    \     \"source_locator\": \"Extracted text line 43\",\n        \"exact_source_quote\"\
+    : \"make up to 1000.00 ml.\",\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"This is an SL10 stock amount, not a direct\
+    \ final-medium ingredient. The stock explicitly makes up to1000ml and doses1ml\
+    \ into this medium. Restore stock composition and its separate dose; any final-medium\
+    \ concentration still needs final-volume evidence.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q13\",\n    \"topic\": \"ZnCl2 — SL10 stock\",\n    \"decision\": \"correct\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[12].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.07\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This is an SL10\
+    \ stock amount, not a direct final-medium ingredient. The stock explicitly makes\
+    \ up to1000ml and doses1ml into this medium. Restore stock composition and its\
+    \ separate dose; any final-medium concentration still needs final-volume evidence.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/brockia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.07\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"rationale\": \"This is an\
+    \ SL10 stock amount, not a direct final-medium ingredient. The stock explicitly\
+    \ makes up to1000ml and doses1ml into this medium. Restore stock composition and\
+    \ its separate dose; any final-medium concentration still needs final-volume evidence.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsm395a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 33\",\n        \"exact_source_quote\"\
+    : \"ZnCl2                                                      70.00      mg\"\
+    ,\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      },\n      {\n        \"source_key\": \"dsm395a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\",\n   \
+    \     \"source_locator\": \"Extracted text line 43\",\n        \"exact_source_quote\"\
+    : \"make up to 1000.00 ml.\",\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"This is an SL10 stock amount, not a direct\
+    \ final-medium ingredient. The stock explicitly makes up to1000ml and doses1ml\
+    \ into this medium. Restore stock composition and its separate dose; any final-medium\
+    \ concentration still needs final-volume evidence.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q14\",\n    \"topic\": \"MnCl2 x 4 H2O — SL10 stock\",\n    \"decision\":\
+    \ \"correct\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This is an SL10\
+    \ stock amount, not a direct final-medium ingredient. The stock explicitly makes\
+    \ up to1000ml and doses1ml into this medium. Restore stock composition and its\
+    \ separate dose; any final-medium concentration still needs final-volume evidence.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/brockia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This is an SL10\
+    \ stock amount, not a direct final-medium ingredient. The stock explicitly makes\
+    \ up to1000ml and doses1ml into this medium. Restore stock composition and its\
+    \ separate dose; any final-medium concentration still needs final-volume evidence.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsm395a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 34\",\n        \"exact_source_quote\"\
+    : \"MnCl2 x 4 H2O                                             100.00      mg\"\
+    ,\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      },\n      {\n        \"source_key\": \"dsm395a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\",\n   \
+    \     \"source_locator\": \"Extracted text line 43\",\n        \"exact_source_quote\"\
+    : \"make up to 1000.00 ml.\",\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"This is an SL10 stock amount, not a direct\
+    \ final-medium ingredient. The stock explicitly makes up to1000ml and doses1ml\
+    \ into this medium. Restore stock composition and its separate dose; any final-medium\
+    \ concentration still needs final-volume evidence.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q15\",\n    \"topic\": \"H3BO3 — SL10 stock\",\n    \"decision\": \"correct\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[14].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.006\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This is an SL10\
+    \ stock amount, not a direct final-medium ingredient. The stock explicitly makes\
+    \ up to1000ml and doses1ml into this medium. Restore stock composition and its\
+    \ separate dose; any final-medium concentration still needs final-volume evidence.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/brockia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.006\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"This is an\
+    \ SL10 stock amount, not a direct final-medium ingredient. The stock explicitly\
+    \ makes up to1000ml and doses1ml into this medium. Restore stock composition and\
+    \ its separate dose; any final-medium concentration still needs final-volume evidence.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsm395a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 35\",\n        \"exact_source_quote\"\
+    : \"H3BO3                                                       6.00      mg\"\
+    ,\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      },\n      {\n        \"source_key\": \"dsm395a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\",\n   \
+    \     \"source_locator\": \"Extracted text line 43\",\n        \"exact_source_quote\"\
+    : \"make up to 1000.00 ml.\",\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"This is an SL10 stock amount, not a direct\
+    \ final-medium ingredient. The stock explicitly makes up to1000ml and doses1ml\
+    \ into this medium. Restore stock composition and its separate dose; any final-medium\
+    \ concentration still needs final-volume evidence.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q16\",\n    \"topic\": \"CoCl2 x 6 H2O — SL10 stock\",\n    \"decision\":\
+    \ \"correct\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.19\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"rationale\": \"This is an\
+    \ SL10 stock amount, not a direct final-medium ingredient. The stock explicitly\
+    \ makes up to1000ml and doses1ml into this medium. Restore stock composition and\
+    \ its separate dose; any final-medium concentration still needs final-volume evidence.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/brockia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.19\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"rationale\": \"This is an\
+    \ SL10 stock amount, not a direct final-medium ingredient. The stock explicitly\
+    \ makes up to1000ml and doses1ml into this medium. Restore stock composition and\
+    \ its separate dose; any final-medium concentration still needs final-volume evidence.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsm395a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 36\",\n        \"exact_source_quote\"\
+    : \"CoCl2 x 6 H2O                                             190.00      mg\"\
+    ,\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      },\n      {\n        \"source_key\": \"dsm395a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\",\n   \
+    \     \"source_locator\": \"Extracted text line 43\",\n        \"exact_source_quote\"\
+    : \"make up to 1000.00 ml.\",\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"This is an SL10 stock amount, not a direct\
+    \ final-medium ingredient. The stock explicitly makes up to1000ml and doses1ml\
+    \ into this medium. Restore stock composition and its separate dose; any final-medium\
+    \ concentration still needs final-volume evidence.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q17\",\n    \"topic\": \"CuCl2 x 2 H2O — SL10 stock\",\n    \"decision\":\
+    \ \"correct\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"This is an\
+    \ SL10 stock amount, not a direct final-medium ingredient. The stock explicitly\
+    \ makes up to1000ml and doses1ml into this medium. Restore stock composition and\
+    \ its separate dose; any final-medium concentration still needs final-volume evidence.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/brockia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"This is an\
+    \ SL10 stock amount, not a direct final-medium ingredient. The stock explicitly\
+    \ makes up to1000ml and doses1ml into this medium. Restore stock composition and\
+    \ its separate dose; any final-medium concentration still needs final-volume evidence.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsm395a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 37\",\n        \"exact_source_quote\"\
+    : \"CuCl2 x 2 H2O                                               2.00      mg\"\
+    ,\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      },\n      {\n        \"source_key\": \"dsm395a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\",\n   \
+    \     \"source_locator\": \"Extracted text line 43\",\n        \"exact_source_quote\"\
+    : \"make up to 1000.00 ml.\",\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"This is an SL10 stock amount, not a direct\
+    \ final-medium ingredient. The stock explicitly makes up to1000ml and doses1ml\
+    \ into this medium. Restore stock composition and its separate dose; any final-medium\
+    \ concentration still needs final-volume evidence.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q18\",\n    \"topic\": \"NiCl2 x 6 H2O — SL10 stock\",\n    \"decision\":\
+    \ \"correct\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.024\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"This is an\
+    \ SL10 stock amount, not a direct final-medium ingredient. The stock explicitly\
+    \ makes up to1000ml and doses1ml into this medium. Restore stock composition and\
+    \ its separate dose; any final-medium concentration still needs final-volume evidence.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/brockia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.024\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"This is an\
+    \ SL10 stock amount, not a direct final-medium ingredient. The stock explicitly\
+    \ makes up to1000ml and doses1ml into this medium. Restore stock composition and\
+    \ its separate dose; any final-medium concentration still needs final-volume evidence.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsm395a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 38\",\n        \"exact_source_quote\"\
+    : \"NiCl2 x 6 H2O                                              24.00      mg\"\
+    ,\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      },\n      {\n        \"source_key\": \"dsm395a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\",\n   \
+    \     \"source_locator\": \"Extracted text line 43\",\n        \"exact_source_quote\"\
+    : \"make up to 1000.00 ml.\",\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"This is an SL10 stock amount, not a direct\
+    \ final-medium ingredient. The stock explicitly makes up to1000ml and doses1ml\
+    \ into this medium. Restore stock composition and its separate dose; any final-medium\
+    \ concentration still needs final-volume evidence.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q19\",\n    \"topic\": \"Na2MoO4 x 2 H2O — SL10 stock\",\n    \"decision\"\
+    : \"correct\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.036\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"This is an\
+    \ SL10 stock amount, not a direct final-medium ingredient. The stock explicitly\
+    \ makes up to1000ml and doses1ml into this medium. Restore stock composition and\
+    \ its separate dose; any final-medium concentration still needs final-volume evidence.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/brockia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.036\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"This is an\
+    \ SL10 stock amount, not a direct final-medium ingredient. The stock explicitly\
+    \ makes up to1000ml and doses1ml into this medium. Restore stock composition and\
+    \ its separate dose; any final-medium concentration still needs final-volume evidence.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsm395a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 39\",\n        \"exact_source_quote\"\
+    : \"Na2MoO4 x 2 H2O                                            36.00      mg\"\
+    ,\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      },\n      {\n        \"source_key\": \"dsm395a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\",\n   \
+    \     \"source_locator\": \"Extracted text line 43\",\n        \"exact_source_quote\"\
+    : \"make up to 1000.00 ml.\",\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"This is an SL10 stock amount, not a direct\
+    \ final-medium ingredient. The stock explicitly makes up to1000ml and doses1ml\
+    \ into this medium. Restore stock composition and its separate dose; any final-medium\
+    \ concentration still needs final-volume evidence.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q20\",\n    \"topic\": \"Biotin —10x vitamin stock\",\n    \"decision\": \"\
+    unsupported\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"The printed\
+    \ amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion.\
+    \ Its1000ml water is not an explicit final-volume makeup instruction. Retain the\
+    \ stock batch mass and1ml receiving dose without asserting a final concentration\
+    \ or borrowing the SL10 makeup statement.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/brockia_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[19].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.02\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"unsupported\",\n        \"rationale\": \"The printed amount belongs to the10x\
+    \ vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water\
+    \ is not an explicit final-volume makeup instruction. Retain the stock batch mass\
+    \ and1ml receiving dose without asserting a final concentration or borrowing the\
+    \ SL10 makeup statement.\"\n      }\n    ],\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"dsm395a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 56\",\n        \"exact_source_quote\"\
+    : \"Biotin                                     20.00   mg\",\n        \"snapshot_sha256\"\
+    : \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\",\n    \
+    \    \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"The printed amount belongs to the10x vitamin\
+    \ stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an\
+    \ explicit final-volume makeup instruction. Retain the stock batch mass and1ml\
+    \ receiving dose without asserting a final concentration or borrowing the SL10\
+    \ makeup statement.\"\n  },\n  {\n    \"quantity_id\": \"q21\",\n    \"topic\"\
+    : \"Folic acid —10x vitamin stock\",\n    \"decision\": \"unsupported\",\n   \
+    \ \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"\
+    field_path\": \"ingredients[20].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n        },\n   \
+    \     \"decision\": \"unsupported\",\n        \"rationale\": \"The printed amount\
+    \ belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion.\
+    \ Its1000ml water is not an explicit final-volume makeup instruction. Retain the\
+    \ stock batch mass and1ml receiving dose without asserting a final concentration\
+    \ or borrowing the SL10 makeup statement.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/brockia_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[20].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.02\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"unsupported\",\n        \"rationale\": \"The printed amount belongs to the10x\
+    \ vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water\
+    \ is not an explicit final-volume makeup instruction. Retain the stock batch mass\
+    \ and1ml receiving dose without asserting a final concentration or borrowing the\
+    \ SL10 makeup statement.\"\n      }\n    ],\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"dsm395a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 57\",\n        \"exact_source_quote\"\
+    : \"Folic acid                                 20.00   mg\",\n        \"snapshot_sha256\"\
+    : \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\",\n    \
+    \    \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"The printed amount belongs to the10x vitamin\
+    \ stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an\
+    \ explicit final-volume makeup instruction. Retain the stock batch mass and1ml\
+    \ receiving dose without asserting a final concentration or borrowing the SL10\
+    \ makeup statement.\"\n  },\n  {\n    \"quantity_id\": \"q22\",\n    \"topic\"\
+    : \"Pyridoxine hydrochloride —10x vitamin stock\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[21].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The printed\
+    \ amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion.\
+    \ Its1000ml water is not an explicit final-volume makeup instruction. Retain the\
+    \ stock batch mass and1ml receiving dose without asserting a final concentration\
+    \ or borrowing the SL10 makeup statement.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/brockia_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[21].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"unsupported\",\n        \"rationale\": \"The printed amount belongs to the10x\
+    \ vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water\
+    \ is not an explicit final-volume makeup instruction. Retain the stock batch mass\
+    \ and1ml receiving dose without asserting a final concentration or borrowing the\
+    \ SL10 makeup statement.\"\n      }\n    ],\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"dsm395a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 58\",\n        \"exact_source_quote\"\
+    : \"Pyridoxine hydrochloride                  100.00   mg\",\n        \"snapshot_sha256\"\
+    : \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\",\n    \
+    \    \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"The printed amount belongs to the10x vitamin\
+    \ stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an\
+    \ explicit final-volume makeup instruction. Retain the stock batch mass and1ml\
+    \ receiving dose without asserting a final concentration or borrowing the SL10\
+    \ makeup statement.\"\n  },\n  {\n    \"quantity_id\": \"q23\",\n    \"topic\"\
+    : \"Thiamine HCl —10x vitamin stock\",\n    \"decision\": \"unsupported\",\n \
+    \   \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"\
+    field_path\": \"ingredients[22].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n   \
+    \     \"decision\": \"unsupported\",\n        \"rationale\": \"The printed amount\
+    \ belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion.\
+    \ Its1000ml water is not an explicit final-volume makeup instruction. Retain the\
+    \ stock batch mass and1ml receiving dose without asserting a final concentration\
+    \ or borrowing the SL10 makeup statement.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/brockia_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[22].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"unsupported\",\n        \"rationale\": \"The printed amount belongs to the10x\
+    \ vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water\
+    \ is not an explicit final-volume makeup instruction. Retain the stock batch mass\
+    \ and1ml receiving dose without asserting a final concentration or borrowing the\
+    \ SL10 makeup statement.\"\n      }\n    ],\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"dsm395a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 59\",\n        \"exact_source_quote\"\
+    : \"Thiamine HCl                               50.00   mg\",\n        \"snapshot_sha256\"\
+    : \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\",\n    \
+    \    \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"The printed amount belongs to the10x vitamin\
+    \ stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an\
+    \ explicit final-volume makeup instruction. Retain the stock batch mass and1ml\
+    \ receiving dose without asserting a final concentration or borrowing the SL10\
+    \ makeup statement.\"\n  },\n  {\n    \"quantity_id\": \"q24\",\n    \"topic\"\
+    : \"Riboflavin —10x vitamin stock\",\n    \"decision\": \"unsupported\",\n   \
+    \ \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"\
+    field_path\": \"ingredients[23].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n   \
+    \     \"decision\": \"unsupported\",\n        \"rationale\": \"The printed amount\
+    \ belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion.\
+    \ Its1000ml water is not an explicit final-volume makeup instruction. Retain the\
+    \ stock batch mass and1ml receiving dose without asserting a final concentration\
+    \ or borrowing the SL10 makeup statement.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/brockia_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[23].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"unsupported\",\n        \"rationale\": \"The printed amount belongs to the10x\
+    \ vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water\
+    \ is not an explicit final-volume makeup instruction. Retain the stock batch mass\
+    \ and1ml receiving dose without asserting a final concentration or borrowing the\
+    \ SL10 makeup statement.\"\n      }\n    ],\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"dsm395a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 60\",\n        \"exact_source_quote\"\
+    : \"Riboflavin                                 50.00   mg\",\n        \"snapshot_sha256\"\
+    : \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\",\n    \
+    \    \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"The printed amount belongs to the10x vitamin\
+    \ stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an\
+    \ explicit final-volume makeup instruction. Retain the stock batch mass and1ml\
+    \ receiving dose without asserting a final concentration or borrowing the SL10\
+    \ makeup statement.\"\n  },\n  {\n    \"quantity_id\": \"q25\",\n    \"topic\"\
+    : \"Nicotinic acid —10x vitamin stock\",\n    \"decision\": \"unsupported\",\n\
+    \    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n       \
+    \ \"field_path\": \"ingredients[24].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The printed\
+    \ amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion.\
+    \ Its1000ml water is not an explicit final-volume makeup instruction. Retain the\
+    \ stock batch mass and1ml receiving dose without asserting a final concentration\
+    \ or borrowing the SL10 makeup statement.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/brockia_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[24].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"unsupported\",\n        \"rationale\": \"The printed amount belongs to the10x\
+    \ vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water\
+    \ is not an explicit final-volume makeup instruction. Retain the stock batch mass\
+    \ and1ml receiving dose without asserting a final concentration or borrowing the\
+    \ SL10 makeup statement.\"\n      }\n    ],\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"dsm395a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 61\",\n        \"exact_source_quote\"\
+    : \"Nicotinic acid                             50.00   mg\",\n        \"snapshot_sha256\"\
+    : \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\",\n    \
+    \    \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"The printed amount belongs to the10x vitamin\
+    \ stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an\
+    \ explicit final-volume makeup instruction. Retain the stock batch mass and1ml\
+    \ receiving dose without asserting a final concentration or borrowing the SL10\
+    \ makeup statement.\"\n  },\n  {\n    \"quantity_id\": \"q26\",\n    \"topic\"\
+    : \"Calcium D-(+)-pantothenate —10x vitamin stock\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[25].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The printed\
+    \ amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion.\
+    \ Its1000ml water is not an explicit final-volume makeup instruction. Retain the\
+    \ stock batch mass and1ml receiving dose without asserting a final concentration\
+    \ or borrowing the SL10 makeup statement.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/brockia_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[25].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"unsupported\",\n        \"rationale\": \"The printed amount belongs to the10x\
+    \ vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water\
+    \ is not an explicit final-volume makeup instruction. Retain the stock batch mass\
+    \ and1ml receiving dose without asserting a final concentration or borrowing the\
+    \ SL10 makeup statement.\"\n      }\n    ],\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"dsm395a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 62\",\n        \"exact_source_quote\"\
+    : \"Calcium D-(+)-pantothenate                 50.00   mg\",\n        \"snapshot_sha256\"\
+    : \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\",\n    \
+    \    \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"The printed amount belongs to the10x vitamin\
+    \ stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an\
+    \ explicit final-volume makeup instruction. Retain the stock batch mass and1ml\
+    \ receiving dose without asserting a final concentration or borrowing the SL10\
+    \ makeup statement.\"\n  },\n  {\n    \"quantity_id\": \"q27\",\n    \"topic\"\
+    : \"Vitamin B12 —10x vitamin stock\",\n    \"decision\": \"unsupported\",\n  \
+    \  \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"\
+    field_path\": \"ingredients[26].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n        },\n  \
+    \      \"decision\": \"unsupported\",\n        \"rationale\": \"The printed amount\
+    \ belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion.\
+    \ Its1000ml water is not an explicit final-volume makeup instruction. Retain the\
+    \ stock batch mass and1ml receiving dose without asserting a final concentration\
+    \ or borrowing the SL10 makeup statement.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/brockia_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[26].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.001\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"unsupported\",\n        \"rationale\": \"The printed amount belongs to the10x\
+    \ vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water\
+    \ is not an explicit final-volume makeup instruction. Retain the stock batch mass\
+    \ and1ml receiving dose without asserting a final concentration or borrowing the\
+    \ SL10 makeup statement.\"\n      }\n    ],\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"dsm395a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 63\",\n        \"exact_source_quote\"\
+    : \"Vitamin B12                                 1.00   mg\",\n        \"snapshot_sha256\"\
+    : \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\",\n    \
+    \    \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"The printed amount belongs to the10x vitamin\
+    \ stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an\
+    \ explicit final-volume makeup instruction. Retain the stock batch mass and1ml\
+    \ receiving dose without asserting a final concentration or borrowing the SL10\
+    \ makeup statement.\"\n  },\n  {\n    \"quantity_id\": \"q28\",\n    \"topic\"\
+    : \"p-Aminobenzoic acid —10x vitamin stock\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[27].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The printed\
+    \ amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion.\
+    \ Its1000ml water is not an explicit final-volume makeup instruction. Retain the\
+    \ stock batch mass and1ml receiving dose without asserting a final concentration\
+    \ or borrowing the SL10 makeup statement.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/brockia_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[27].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"unsupported\",\n        \"rationale\": \"The printed amount belongs to the10x\
+    \ vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water\
+    \ is not an explicit final-volume makeup instruction. Retain the stock batch mass\
+    \ and1ml receiving dose without asserting a final concentration or borrowing the\
+    \ SL10 makeup statement.\"\n      }\n    ],\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"dsm395a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 64\",\n        \"exact_source_quote\"\
+    : \"p-Aminobenzoic acid                        50.00   mg\",\n        \"snapshot_sha256\"\
+    : \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\",\n    \
+    \    \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"The printed amount belongs to the10x vitamin\
+    \ stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an\
+    \ explicit final-volume makeup instruction. Retain the stock batch mass and1ml\
+    \ receiving dose without asserting a final concentration or borrowing the SL10\
+    \ makeup statement.\"\n  },\n  {\n    \"quantity_id\": \"q29\",\n    \"topic\"\
+    : \"(DL)-alpha-Lipoic acid —10x vitamin stock\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[28].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The printed\
+    \ amount belongs to the10x vitamin stock, not a direct final-medium G_PER_L assertion.\
+    \ Its1000ml water is not an explicit final-volume makeup instruction. Retain the\
+    \ stock batch mass and1ml receiving dose without asserting a final concentration\
+    \ or borrowing the SL10 makeup statement.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/brockia_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[28].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"unsupported\",\n        \"rationale\": \"The printed amount belongs to the10x\
+    \ vitamin stock, not a direct final-medium G_PER_L assertion. Its1000ml water\
+    \ is not an explicit final-volume makeup instruction. Retain the stock batch mass\
+    \ and1ml receiving dose without asserting a final concentration or borrowing the\
+    \ SL10 makeup statement.\"\n      }\n    ],\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"dsm395a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 65\",\n        \"exact_source_quote\"\
+    : \"(DL)-alpha-Lipoic acid                     50.00   mg\",\n        \"snapshot_sha256\"\
+    : \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\",\n    \
+    \    \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"The printed amount belongs to the10x vitamin\
+    \ stock, not a direct final-medium G_PER_L assertion. Its1000ml water is not an\
+    \ explicit final-volume makeup instruction. Retain the stock batch mass and1ml\
+    \ receiving dose without asserting a final concentration or borrowing the SL10\
+    \ makeup statement.\"\n  },\n  {\n    \"quantity_id\": \"q30\",\n    \"topic\"\
+    : \"SL10 receiving dose1ml\",\n    \"decision\": \"add\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"solutions\"\
+    ,\n        \"stored\": null,\n        \"decision\": \"add\",\n        \"rationale\"\
+    : \"This source-only quantity needs its named main/stock stage. Water input is\
+    \ not a measured final volume. The trace stock has its separate explicit1000ml\
+    \ makeup; vitamin water does not inherit that instruction.\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/brockia_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"This source-only quantity needs\
+    \ its named main/stock stage. Water input is not a measured final volume. The\
+    \ trace stock has its separate explicit1000ml makeup; vitamin water does not inherit\
+    \ that instruction.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsm395a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 9\",\n        \"exact_source_quote\"\
+    : \"Trace element solution SL-10                               1.00        ml\"\
+    ,\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"This source-only quantity needs its named\
+    \ main/stock stage. Water input is not a measured final volume. The trace stock\
+    \ has its separate explicit1000ml makeup; vitamin water does not inherit that\
+    \ instruction.\"\n  },\n  {\n    \"quantity_id\": \"q31\",\n    \"topic\": \"\
+    10x vitamin receiving dose1ml\",\n    \"decision\": \"add\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"solutions\"\
+    ,\n        \"stored\": null,\n        \"decision\": \"add\",\n        \"rationale\"\
+    : \"This source-only quantity needs its named main/stock stage. Water input is\
+    \ not a measured final volume. The trace stock has its separate explicit1000ml\
+    \ makeup; vitamin water does not inherit that instruction.\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/brockia_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"This source-only quantity needs\
+    \ its named main/stock stage. Water input is not a measured final volume. The\
+    \ trace stock has its separate explicit1000ml makeup; vitamin water does not inherit\
+    \ that instruction.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsm395a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 13\",\n        \"exact_source_quote\"\
+    : \"Wolin's vitamin solution (10x)                             1.00        ml\"\
+    ,\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"This source-only quantity needs its named\
+    \ main/stock stage. Water input is not a measured final volume. The trace stock\
+    \ has its separate explicit1000ml makeup; vitamin water does not inherit that\
+    \ instruction.\"\n  },\n  {\n    \"quantity_id\": \"q32\",\n    \"topic\": \"\
+    Main water1000ml\",\n    \"decision\": \"add\",\n    \"layer_decisions\": [],\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"dsm395a\",\n \
+    \       \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 15\",\n        \"exact_source_quote\"\
+    : \"Distilled water                                         1000.00        ml\"\
+    ,\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"This source-only quantity needs its named\
+    \ main/stock stage. Water input is not a measured final volume. The trace stock\
+    \ has its separate explicit1000ml makeup; vitamin water does not inherit that\
+    \ instruction.\"\n  },\n  {\n    \"quantity_id\": \"q33\",\n    \"topic\": \"\
+    SL10 water990ml\",\n    \"decision\": \"add\",\n    \"layer_decisions\": [],\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"dsm395a\",\n \
+    \       \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 40\",\n        \"exact_source_quote\"\
+    : \"Distilled water                                           990.00      ml\"\
+    ,\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"This source-only quantity needs its named\
+    \ main/stock stage. Water input is not a measured final volume. The trace stock\
+    \ has its separate explicit1000ml makeup; vitamin water does not inherit that\
+    \ instruction.\"\n  },\n  {\n    \"quantity_id\": \"q34\",\n    \"topic\": \"\
+    Vitamin stock water1000ml\",\n    \"decision\": \"add\",\n    \"layer_decisions\"\
+    : [],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsm395a\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 66\",\n        \"exact_source_quote\"\
+    : \"Distilled water                          1000.00   ml\",\n        \"snapshot_sha256\"\
+    : \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\",\n    \
+    \    \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"This source-only quantity needs its named\
+    \ main/stock stage. Water input is not a measured final volume. The trace stock\
+    \ has its separate explicit1000ml makeup; vitamin water does not inherit that\
+    \ instruction.\"\n  },\n  {\n    \"quantity_id\": \"q35\",\n    \"topic\": \"\
+    SL10 final makeup1000ml\",\n    \"decision\": \"evidence_only\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"preparation_steps[1].description\"\
+    ,\n        \"stored\": \"First dissolve FeCl2 in the HCl, then dilute in water,\
+    \ add and dissolve the other salts. Finally make up to 1000.00 ml.\",\n      \
+    \  \"decision\": \"evidence_only\",\n        \"rationale\": \"The retained instruction\
+    \ is literal but must be attached to SL10 rather than the complete medium. No\
+    \ ingredient-level concentration evidence currently attaches this scope.\"\n \
+    \     },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/brockia_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the\
+    \ other salts. Finally make up to 1000.00 ml.\",\n        \"decision\": \"evidence_only\"\
+    ,\n        \"rationale\": \"The retained instruction is literal but must be attached\
+    \ to SL10 rather than the complete medium. No ingredient-level concentration evidence\
+    \ currently attaches this scope.\"\n      }\n    ],\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"dsm395a\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\",\n       \
+    \ \"source_locator\": \"Extracted text line 43\",\n        \"exact_source_quote\"\
+    : \"make up to 1000.00 ml.\",\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"The retained instruction is literal but\
+    \ must be attached to SL10 rather than the complete medium. No ingredient-level\
+    \ concentration evidence currently attaches this scope.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q36\",\n    \"topic\": \"Main H2/CO2 sparging30–45min\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"layer_decisions\": [\n      {\n        \"input\":\
+    \ \"target\",\n        \"field_path\": \"preparation_steps[0].description\",\n\
+    \        \"stored\": \"Dissolve ingredients (except sulfur, bicarbonate, vitamins\
+    \ and sulfide), then sparge medium with 80% H2 and 20% CO2 gas mixture for 30\
+    \ - 45 min to make it anoxic. Adjust pH to 6.2 - 6.4, and dispense medium under\
+    \ 80% H2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials\
+    \ containing already the appropriate amount of sulfur. Sterilize medium by heating\
+    \ cultivation vessels in a boiling water bath for 2 - 3 hours on each of 3 successive\
+    \ days. After sterilization add bicarbonate from a sterile stock solution prepared\
+    \ under 80% N2 and 20% CO2 gas mixture. Vitamins (sterilized by filtration) and\
+    \ sulfide are added to the medium from sterile anoxic stock solutions prepared\
+    \ under 100% N2 gas. Adjust pH of complete medium to 6.5, if necessary.\",\n \
+    \       \"decision\": \"evidence_only\",\n        \"rationale\": \"The existing\
+    \ prose retains this source preparation condition. Preserve its exact stage and\
+    \ range; these are not general organism-growth or incubation observations. Gas\
+    \ percentages have no explicitly stated fraction basis.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/brockia_medium.yaml\",\n\
+    \        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except sulfur, bicarbonate, vitamins and sulfide), then\
+    \ sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it\
+    \ anoxic. Adjust pH to 6.2 - 6.4, and dispense medium under 80% H2 and 20% CO2\
+    \ gas atmosphere into anoxic Hungate-type tubes or serum vials containing already\
+    \ the appropriate amount of sulfur. Sterilize medium by heating cultivation vessels\
+    \ in a boiling water bath for 2 - 3 hours on each of 3 successive days. After\
+    \ sterilization add bicarbonate from a sterile stock solution prepared under 80%\
+    \ N2 and 20% CO2 gas mixture. Vitamins (sterilized by filtration) and sulfide\
+    \ are added to the medium from sterile anoxic stock solutions prepared under 100%\
+    \ N2 gas. Adjust pH of complete medium to 6.5, if necessary.\",\n        \"decision\"\
+    : \"evidence_only\",\n        \"rationale\": \"The existing prose retains this\
+    \ source preparation condition. Preserve its exact stage and range; these are\
+    \ not general organism-growth or incubation observations. Gas percentages have\
+    \ no explicitly stated fraction basis.\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsm395a\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\",\n       \
+    \ \"source_locator\": \"Extracted text line 18\",\n        \"exact_source_quote\"\
+    : \"medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.\
+    \ Adjust\",\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"The existing prose retains this source\
+    \ preparation condition. Preserve its exact stage and range; these are not general\
+    \ organism-growth or incubation observations. Gas percentages have no explicitly\
+    \ stated fraction basis.\"\n  },\n  {\n    \"quantity_id\": \"q37\",\n    \"topic\"\
+    : \"Initial pH6.2–6.4\",\n    \"decision\": \"evidence_only\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"preparation_steps[0].description\"\
+    ,\n        \"stored\": \"Dissolve ingredients (except sulfur, bicarbonate, vitamins\
+    \ and sulfide), then sparge medium with 80% H2 and 20% CO2 gas mixture for 30\
+    \ - 45 min to make it anoxic. Adjust pH to 6.2 - 6.4, and dispense medium under\
+    \ 80% H2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials\
+    \ containing already the appropriate amount of sulfur. Sterilize medium by heating\
+    \ cultivation vessels in a boiling water bath for 2 - 3 hours on each of 3 successive\
+    \ days. After sterilization add bicarbonate from a sterile stock solution prepared\
+    \ under 80% N2 and 20% CO2 gas mixture. Vitamins (sterilized by filtration) and\
+    \ sulfide are added to the medium from sterile anoxic stock solutions prepared\
+    \ under 100% N2 gas. Adjust pH of complete medium to 6.5, if necessary.\",\n \
+    \       \"decision\": \"evidence_only\",\n        \"rationale\": \"The existing\
+    \ prose retains this source preparation condition. Preserve its exact stage and\
+    \ range; these are not general organism-growth or incubation observations. Gas\
+    \ percentages have no explicitly stated fraction basis.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/brockia_medium.yaml\",\n\
+    \        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except sulfur, bicarbonate, vitamins and sulfide), then\
+    \ sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it\
+    \ anoxic. Adjust pH to 6.2 - 6.4, and dispense medium under 80% H2 and 20% CO2\
+    \ gas atmosphere into anoxic Hungate-type tubes or serum vials containing already\
+    \ the appropriate amount of sulfur. Sterilize medium by heating cultivation vessels\
+    \ in a boiling water bath for 2 - 3 hours on each of 3 successive days. After\
+    \ sterilization add bicarbonate from a sterile stock solution prepared under 80%\
+    \ N2 and 20% CO2 gas mixture. Vitamins (sterilized by filtration) and sulfide\
+    \ are added to the medium from sterile anoxic stock solutions prepared under 100%\
+    \ N2 gas. Adjust pH of complete medium to 6.5, if necessary.\",\n        \"decision\"\
+    : \"evidence_only\",\n        \"rationale\": \"The existing prose retains this\
+    \ source preparation condition. Preserve its exact stage and range; these are\
+    \ not general organism-growth or incubation observations. Gas percentages have\
+    \ no explicitly stated fraction basis.\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsm395a\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\",\n       \
+    \ \"source_locator\": \"Extracted text line 19\",\n        \"exact_source_quote\"\
+    : \"pH to 6.2 - 6.4, and dispense medium under 80% H2 and 20% CO2 gas atmosphere\
+    \ into\",\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"The existing prose retains this source\
+    \ preparation condition. Preserve its exact stage and range; these are not general\
+    \ organism-growth or incubation observations. Gas percentages have no explicitly\
+    \ stated fraction basis.\"\n  },\n  {\n    \"quantity_id\": \"q38\",\n    \"topic\"\
+    : \"Boiling2–3h on3successive days\",\n    \"decision\": \"evidence_only\",\n\
+    \    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n       \
+    \ \"field_path\": \"preparation_steps[0].description\",\n        \"stored\": \"\
+    Dissolve ingredients (except sulfur, bicarbonate, vitamins and sulfide), then\
+    \ sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it\
+    \ anoxic. Adjust pH to 6.2 - 6.4, and dispense medium under 80% H2 and 20% CO2\
+    \ gas atmosphere into anoxic Hungate-type tubes or serum vials containing already\
+    \ the appropriate amount of sulfur. Sterilize medium by heating cultivation vessels\
+    \ in a boiling water bath for 2 - 3 hours on each of 3 successive days. After\
+    \ sterilization add bicarbonate from a sterile stock solution prepared under 80%\
+    \ N2 and 20% CO2 gas mixture. Vitamins (sterilized by filtration) and sulfide\
+    \ are added to the medium from sterile anoxic stock solutions prepared under 100%\
+    \ N2 gas. Adjust pH of complete medium to 6.5, if necessary.\",\n        \"decision\"\
+    : \"evidence_only\",\n        \"rationale\": \"The existing prose retains this\
+    \ source preparation condition. Preserve its exact stage and range; these are\
+    \ not general organism-growth or incubation observations. Gas percentages have\
+    \ no explicitly stated fraction basis.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/brockia_medium.yaml\",\n        \"field_path\"\
+    : \"preparation_steps[0].description\",\n        \"stored\": \"Dissolve ingredients\
+    \ (except sulfur, bicarbonate, vitamins and sulfide), then sparge medium with\
+    \ 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Adjust pH\
+    \ to 6.2 - 6.4, and dispense medium under 80% H2 and 20% CO2 gas atmosphere into\
+    \ anoxic Hungate-type tubes or serum vials containing already the appropriate\
+    \ amount of sulfur. Sterilize medium by heating cultivation vessels in a boiling\
+    \ water bath for 2 - 3 hours on each of 3 successive days. After sterilization\
+    \ add bicarbonate from a sterile stock solution prepared under 80% N2 and 20%\
+    \ CO2 gas mixture. Vitamins (sterilized by filtration) and sulfide are added to\
+    \ the medium from sterile anoxic stock solutions prepared under 100% N2 gas. Adjust\
+    \ pH of complete medium to 6.5, if necessary.\",\n        \"decision\": \"evidence_only\"\
+    ,\n        \"rationale\": \"The existing prose retains this source preparation\
+    \ condition. Preserve its exact stage and range; these are not general organism-growth\
+    \ or incubation observations. Gas percentages have no explicitly stated fraction\
+    \ basis.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsm395a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 22\",\n        \"exact_source_quote\"\
+    : \"hours on each of 3 successive days. After sterilization add bicarbonate from\
+    \ a sterile stock\",\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      },\n      {\n        \"source_key\": \"dsm395a\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\",\n   \
+    \     \"source_locator\": \"Extracted text line 21\",\n        \"exact_source_quote\"\
+    : \"sulfur. Sterilize medium by heating cultivation vessels in a boiling water\
+    \ bath for 2 - 3\",\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"The existing prose retains this source\
+    \ preparation condition. Preserve its exact stage and range; these are not general\
+    \ organism-growth or incubation observations. Gas percentages have no explicitly\
+    \ stated fraction basis.\"\n  },\n  {\n    \"quantity_id\": \"q39\",\n    \"topic\"\
+    : \"Bicarbonate stock80%N2/20%CO2\",\n    \"decision\": \"evidence_only\",\n \
+    \   \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"\
+    field_path\": \"preparation_steps[0].description\",\n        \"stored\": \"Dissolve\
+    \ ingredients (except sulfur, bicarbonate, vitamins and sulfide), then sparge\
+    \ medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.\
+    \ Adjust pH to 6.2 - 6.4, and dispense medium under 80% H2 and 20% CO2 gas atmosphere\
+    \ into anoxic Hungate-type tubes or serum vials containing already the appropriate\
+    \ amount of sulfur. Sterilize medium by heating cultivation vessels in a boiling\
+    \ water bath for 2 - 3 hours on each of 3 successive days. After sterilization\
+    \ add bicarbonate from a sterile stock solution prepared under 80% N2 and 20%\
+    \ CO2 gas mixture. Vitamins (sterilized by filtration) and sulfide are added to\
+    \ the medium from sterile anoxic stock solutions prepared under 100% N2 gas. Adjust\
+    \ pH of complete medium to 6.5, if necessary.\",\n        \"decision\": \"evidence_only\"\
+    ,\n        \"rationale\": \"The existing prose retains this source preparation\
+    \ condition. Preserve its exact stage and range; these are not general organism-growth\
+    \ or incubation observations. Gas percentages have no explicitly stated fraction\
+    \ basis.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/brockia_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except sulfur, bicarbonate, vitamins and sulfide), then\
+    \ sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it\
+    \ anoxic. Adjust pH to 6.2 - 6.4, and dispense medium under 80% H2 and 20% CO2\
+    \ gas atmosphere into anoxic Hungate-type tubes or serum vials containing already\
+    \ the appropriate amount of sulfur. Sterilize medium by heating cultivation vessels\
+    \ in a boiling water bath for 2 - 3 hours on each of 3 successive days. After\
+    \ sterilization add bicarbonate from a sterile stock solution prepared under 80%\
+    \ N2 and 20% CO2 gas mixture. Vitamins (sterilized by filtration) and sulfide\
+    \ are added to the medium from sterile anoxic stock solutions prepared under 100%\
+    \ N2 gas. Adjust pH of complete medium to 6.5, if necessary.\",\n        \"decision\"\
+    : \"evidence_only\",\n        \"rationale\": \"The existing prose retains this\
+    \ source preparation condition. Preserve its exact stage and range; these are\
+    \ not general organism-growth or incubation observations. Gas percentages have\
+    \ no explicitly stated fraction basis.\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsm395a\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\",\n       \
+    \ \"source_locator\": \"Extracted text line 23\",\n        \"exact_source_quote\"\
+    : \"solution prepared under 80% N2 and 20% CO2 gas mixture. Vitamins (sterilized\
+    \ by\",\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"The existing prose retains this source\
+    \ preparation condition. Preserve its exact stage and range; these are not general\
+    \ organism-growth or incubation observations. Gas percentages have no explicitly\
+    \ stated fraction basis.\"\n  },\n  {\n    \"quantity_id\": \"q40\",\n    \"topic\"\
+    : \"Vitamin/sulfide stocks100%N2\",\n    \"decision\": \"evidence_only\",\n  \
+    \  \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"\
+    field_path\": \"preparation_steps[0].description\",\n        \"stored\": \"Dissolve\
+    \ ingredients (except sulfur, bicarbonate, vitamins and sulfide), then sparge\
+    \ medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.\
+    \ Adjust pH to 6.2 - 6.4, and dispense medium under 80% H2 and 20% CO2 gas atmosphere\
+    \ into anoxic Hungate-type tubes or serum vials containing already the appropriate\
+    \ amount of sulfur. Sterilize medium by heating cultivation vessels in a boiling\
+    \ water bath for 2 - 3 hours on each of 3 successive days. After sterilization\
+    \ add bicarbonate from a sterile stock solution prepared under 80% N2 and 20%\
+    \ CO2 gas mixture. Vitamins (sterilized by filtration) and sulfide are added to\
+    \ the medium from sterile anoxic stock solutions prepared under 100% N2 gas. Adjust\
+    \ pH of complete medium to 6.5, if necessary.\",\n        \"decision\": \"evidence_only\"\
+    ,\n        \"rationale\": \"The existing prose retains this source preparation\
+    \ condition. Preserve its exact stage and range; these are not general organism-growth\
+    \ or incubation observations. Gas percentages have no explicitly stated fraction\
+    \ basis.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/brockia_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except sulfur, bicarbonate, vitamins and sulfide), then\
+    \ sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it\
+    \ anoxic. Adjust pH to 6.2 - 6.4, and dispense medium under 80% H2 and 20% CO2\
+    \ gas atmosphere into anoxic Hungate-type tubes or serum vials containing already\
+    \ the appropriate amount of sulfur. Sterilize medium by heating cultivation vessels\
+    \ in a boiling water bath for 2 - 3 hours on each of 3 successive days. After\
+    \ sterilization add bicarbonate from a sterile stock solution prepared under 80%\
+    \ N2 and 20% CO2 gas mixture. Vitamins (sterilized by filtration) and sulfide\
+    \ are added to the medium from sterile anoxic stock solutions prepared under 100%\
+    \ N2 gas. Adjust pH of complete medium to 6.5, if necessary.\",\n        \"decision\"\
+    : \"evidence_only\",\n        \"rationale\": \"The existing prose retains this\
+    \ source preparation condition. Preserve its exact stage and range; these are\
+    \ not general organism-growth or incubation observations. Gas percentages have\
+    \ no explicitly stated fraction basis.\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsm395a\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\",\n       \
+    \ \"source_locator\": \"Extracted text line 25\",\n        \"exact_source_quote\"\
+    : \"prepared under 100% N2 gas. Adjust pH of complete medium to 6.5, if necessary.\"\
+    ,\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"The existing prose retains this source\
+    \ preparation condition. Preserve its exact stage and range; these are not general\
+    \ organism-growth or incubation observations. Gas percentages have no explicitly\
+    \ stated fraction basis.\"\n  },\n  {\n    \"quantity_id\": \"q41\",\n    \"topic\"\
+    : \"Complete medium pH6.5\",\n    \"decision\": \"evidence_only\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ph_value\"\
+    ,\n        \"stored\": 6.5,\n        \"decision\": \"evidence_only\",\n      \
+    \  \"rationale\": \"The scalar matches the explicit complete-medium adjustment;\
+    \ link the source rather than treating initial pH6.2–6.4 as the final value.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/brockia_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 6.5,\n        \"\
+    decision\": \"evidence_only\",\n        \"rationale\": \"The scalar matches the\
+    \ explicit complete-medium adjustment; link the source rather than treating initial\
+    \ pH6.2–6.4 as the final value.\"\n      }\n    ],\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsm395a\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium395a.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 25\",\n        \"exact_source_quote\"\
+    : \"prepared under 100% N2 gas. Adjust pH of complete medium to 6.5, if necessary.\"\
+    ,\n        \"snapshot_sha256\": \"d6b5e99238ecb7ae2c7a36f98d5229d7e865cc9e9ebd68998486f4ac72a2d0bb\"\
+    ,\n        \"parsed_text_sha256\": \"4525175d0a83137af5253271fd8ff7314b41a4fae86e2bfd1f26a9bba1ab847f\"\
+    \n      }\n    ],\n    \"rationale\": \"The scalar matches the explicit complete-medium\
+    \ adjustment; link the source rather than treating initial pH6.2–6.4 as the final\
+    \ value.\"\n  }\n]"
+findings:
+- finding_id: f1
+  issue_key: culturemech.001503.stock-stage-and-rate
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Restore stock stages and withhold unsupported final rates
+  description: The flat list mixes main batch amounts, undiluted SL10 stock concentrations
+    and vitamin-stock amounts. Current normalized rates lack a source-established
+    final volume; HCl25% additionally lacks a percentage basis. Missing stock dose/water
+    representation prevents reproducible interpretation.
+  target_ids:
+  - CultureMech:001503
+  field_paths:
+  - ingredients
+  - solutions
+  - preparation_steps
+  evidence_ids:
+  - primary
+  - record
+  - owner-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/brockia_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.3
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.001503.supplied-chemical-forms
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Reconcile salt, hydrate and material forms
+  description: CHEBI8806 denotes free resazurin despite sodium resazurin source; CHEBI34887
+    lacks the nickel hexahydrate; CHEBI26833 is sulfur atom rather than the powdered
+    material specification. Identifier validity does not resolve these supplied-form
+    differences.
+  target_ids:
+  - CultureMech:001503
+  field_paths:
+  - ingredients[6].term
+  - ingredients[7].term
+  - ingredients[17].term
+  - ingredients[17].mediaingredientmech_chebi_term
+  evidence_ids:
+  - primary
+  - grounding-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/brockia_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.1
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.001503.claim-linkage
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Attach source-scoped quantity and preparation evidence
+  description: Both layers lack attached concentration evidence. Current primary supports
+    scoped facts; old derivative reports and unavailable API responses cannot substitute
+    for the original raw or ingredient-level linkage.
+  target_ids:
+  - CultureMech:001503
+  field_paths:
+  - ingredients
+  - references
+  - preparation_steps
+  evidence_ids:
+  - primary
+  - history-evidence
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/brockia_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4.3
+  native_severity: P4
+  normalization_reason: P4.3 is normalized to minor because the concrete missing claim
+    linkage obscures stock provenance and supported batch amounts; the separate material
+    quantity errors remain major.
+actions:
+- action_id: a1
+  description: Restore SL10 and10x vitamin stock structure, literal batch amounts,
+    water/makeup and receiving doses; withhold final-medium rates until all dilution
+    bases are established.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:001503
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/brockia_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Review source-specific forms using authoritative ontology evidence
+    and update both primary/secondary links only when exact correspondence is established.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:001503
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/brockia_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Attach concise source-linked claims at the correct stock/main field
+    and preserve historical access limits and append-only history.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:001503
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/brockia_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Current exact MediaDive395a API returned503. Current DSM primary is available; the
+  historical report is derivative context and the cited old API raw was not recovered
+  in the explicitly bounded parent search.
+- No final-medium measured volume, unspecified percentage basis or density was inferred.
+  Historical API395a raw was not authenticated; current primary support is independent.
+- No strain-specific growth claim or replacement ontology identifier is introduced.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-045
+- generated-medium
+```
