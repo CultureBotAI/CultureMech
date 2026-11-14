@@ -1,0 +1,3649 @@
+# Source and formulation review: cellulolytic_natronoarchaea_medium (CultureMech:007796)
+
+- Review: 20261025T201411Z-culturemech-007796-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-25T20:08:30Z
+- Finished UTC: 2026-10-25T20:14:11Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+TOGO M1264 / JCM 1180 retains the five basal salt amounts but conflates basal makeup water and six stock doses with mass concentrations. The source explicitly makes a 1.0 L basal stage before adding stocks; this does not establish the completed medium volume. Only M1148 trace fields and the already repaired M190 vitamin stock transfer. Preparation is missing, trace cobalt/nickel hydrate groundings need correction, and the bacterial category conflicts with the named archaeal scope.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 522; batch 053 item 2 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding fifty-two task batches contain 520 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 231e0ba71b41d45362168d539efebe7991823464 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 523 of 6325 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 231e0ba71b41d45362168d539efebe7991823464.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:007796 | data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml | generated | cellulolytic_natronoarchaea_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:007796 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:007796 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-053/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch053/522/strict.tsv |
+| validate-terms | passed | True | CultureMech:007796 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:007796 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:007796 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:007796.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Scoped current ontology and MIM correspondence
+
+grounding: supported. Targets: CultureMech:007796.
+
+55 scoped ontology slots and 25 distinct nonobsolete IDs checked; label agreement is not supplied-form validation. 23 current secondary slots and 0 legacy slots have explicit exact-key lookups. Target linkage: primary 6/6 (100.00%), current secondary 6/6 (100.00%); these are linkage counts, not correctness scores.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:007796.
+
+21 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Exact medium and scoped dependencies
+
+identity: supported. Targets: CultureMech:007796.
+
+TOGO M1264 explicitly points to JCM 1180. M1148 / JCM 1079 is consulted only for trace composition and M190 / JCM 197 only for vitamins. Their receiving doses and basal recipes are excluded. The current selected owner and target have the same scientific fields.
+
+### Label correspondence versus supplied form
+
+grounding: concern. Targets: CultureMech:007796.
+
+The five selected basal salts have compatible asserted chemical identities. In the transferred M1148 trace fields, cobalt and nickel hexahydrates use anhydrous CHEBI:35696 and CHEBI:34887; correct canonical labels do not resolve the missing waters. Other explicitly named trace hydrates agree. Vitamin salt identities are retained; generic calcium pantothenate does not independently resolve stereochemistry, so a matching canonical label is not treated as proof of an explicitly specified D form. Generic lipoic acid is not reinterpreted as a specified enantiomer.
+
+### Existing vitamin repair and historical raw authentication
+
+provenance: supported. Targets: CultureMech:007796.
+
+All eleven current M190 vitamin composition claims match their exact recovered source raw and original metadata. Ten vitamin masses are already retained as batch-input notes instead of unsupported g/L; the water is already 1 L. Preserve this repair and its evidence. The full October 8 report and current history were read, but their other parent recipe and preparation claims do not transfer to M1264.
+
+### Basal makeup, cooling and stock treatment
+
+completeness: concern. Targets: CultureMech:007796.
+
+Neither selected layer records the explicit basal makeup to 1.0 L, cooling, separately treated additions or filter-sterilized vitamin stock. All six solutions remain Unknown/empty placeholders. The trace stock pH 3.6 belongs only to that stock; no receiving-medium pH, incubation temperature, time or gas atmosphere is supplied here.
+
+### Archaeal identity and complex liquid formulation
+
+scope: concern. Targets: CultureMech:007796.
+
+The exact collection title is CELLULOLYTIC NATRONOARCHAEA MEDIUM, inconsistent with the selected bacterial category. Review the category against this source identity without inventing a strain, taxon identifier or growth observation. Yeast extract supports complex/undefined classification and no agar is listed. The high_metal annotation lacks a verified source threshold.
+
+### Complete report scope and current writer behavior
+
+provenance: supported. Targets: CultureMech:007796.
+
+All six exact historical reports were read. October 5 rows are source-unchecked inventories; the September report is a derivative review, not authority for a final-volume inference or namesake merge. The M190 October 8 raw-positive repair is explicitly separated from those derivative reports. Current conservative merging and stage-preserving importer behavior are credited; historical execution is not inferred from current code.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:007796.
+
+40 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "decision_id": "q1",
+    "subject": "Basal water and explicit makeup",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1264",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264",
+        "source_locator": "$.components[0].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b"
+      },
+      {
+        "source_key": "togoM1264",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "Add components to distilled water and bring volume to 1.0 L. After cooling, add the following solutions (autoclaved or *filter-sterilized):",
+        "snapshot_sha256": "2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b"
+      }
+    ],
+    "rationale": "The collection instruction is makeup to 1.0 L for the basal stage, not 1 G_PER_L water and not an asserted one-litre water input. Encode the makeup stage explicitly; no completed-medium final volume is inferred."
+  },
+  {
+    "decision_id": "q2",
+    "subject": "Basal NaCl",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "128",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "128",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1264",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264",
+        "source_locator": "$.components[0].items[1]",
+        "exact_source_quote": "\"component_name\": \"NaCl\",\n          \"volume\": 128,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b"
+      },
+      {
+        "source_key": "togoM1264",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "Add components to distilled water and bring volume to 1.0 L. After cooling, add the following solutions (autoclaved or *filter-sterilized):",
+        "snapshot_sha256": "2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b"
+      }
+    ],
+    "rationale": "The printed mass and explicit 1.0 L basal makeup support this numeric g/L value for the basal stage. Retain that exact source stage. The root rate cannot be promoted to a completed-medium concentration after the separately dosed stocks without an independently established final volume."
+  },
+  {
+    "decision_id": "q3",
+    "subject": "Basal K2HPO4",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "1.75",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "1.75",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1264",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264",
+        "source_locator": "$.components[0].items[2]",
+        "exact_source_quote": "\"component_name\": \"K2HPO4\",\n          \"volume\": 1.75,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b"
+      },
+      {
+        "source_key": "togoM1264",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "Add components to distilled water and bring volume to 1.0 L. After cooling, add the following solutions (autoclaved or *filter-sterilized):",
+        "snapshot_sha256": "2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b"
+      }
+    ],
+    "rationale": "The printed mass and explicit 1.0 L basal makeup support this numeric g/L value for the basal stage. Retain that exact source stage. The root rate cannot be promoted to a completed-medium concentration after the separately dosed stocks without an independently established final volume."
+  },
+  {
+    "decision_id": "q4",
+    "subject": "Basal KCl",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1264",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264",
+        "source_locator": "$.components[0].items[3]",
+        "exact_source_quote": "\"component_name\": \"KCl\",\n          \"volume\": 2.5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b"
+      },
+      {
+        "source_key": "togoM1264",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "Add components to distilled water and bring volume to 1.0 L. After cooling, add the following solutions (autoclaved or *filter-sterilized):",
+        "snapshot_sha256": "2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b"
+      }
+    ],
+    "rationale": "The printed mass and explicit 1.0 L basal makeup support this numeric g/L value for the basal stage. Retain that exact source stage. The root rate cannot be promoted to a completed-medium concentration after the separately dosed stocks without an independently established final volume."
+  },
+  {
+    "decision_id": "q5",
+    "subject": "Basal NaHCO3",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1264",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264",
+        "source_locator": "$.components[0].items[4]",
+        "exact_source_quote": "\"component_name\": \"NaHCO3\",\n          \"volume\": 15,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b"
+      },
+      {
+        "source_key": "togoM1264",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "Add components to distilled water and bring volume to 1.0 L. After cooling, add the following solutions (autoclaved or *filter-sterilized):",
+        "snapshot_sha256": "2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b"
+      }
+    ],
+    "rationale": "The printed mass and explicit 1.0 L basal makeup support this numeric g/L value for the basal stage. Retain that exact source stage. The root rate cannot be promoted to a completed-medium concentration after the separately dosed stocks without an independently established final volume."
+  },
+  {
+    "decision_id": "q6",
+    "subject": "Basal Na2CO3",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "95",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "95",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1264",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264",
+        "source_locator": "$.components[0].items[5]",
+        "exact_source_quote": "\"component_name\": \"Na2CO3\",\n          \"volume\": 95,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b"
+      },
+      {
+        "source_key": "togoM1264",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "Add components to distilled water and bring volume to 1.0 L. After cooling, add the following solutions (autoclaved or *filter-sterilized):",
+        "snapshot_sha256": "2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b"
+      }
+    ],
+    "rationale": "The printed mass and explicit 1.0 L basal makeup support this numeric g/L value for the basal stage. Retain that exact source stage. The root rate cannot be promoted to a completed-medium concentration after the separately dosed stocks without an independently established final volume."
+  },
+  {
+    "decision_id": "q7",
+    "subject": "Receiving 10% Yeast extract solution",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1264",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264",
+        "source_locator": "$.components[1].items[0]",
+        "exact_source_quote": "\"component_name\": \"10% Yeast extract solution\",\n          \"volume\": 0.2,\n          \"unit\": \"ml\",\n          \"conc_value\": 10,\n          \"conc_unit\": \"%\"",
+        "snapshot_sha256": "2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b"
+      },
+      {
+        "source_key": "togoM1264",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "Add components to distilled water and bring volume to 1.0 L. After cooling, add the following solutions (autoclaved or *filter-sterilized):",
+        "snapshot_sha256": "2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b"
+      }
+    ],
+    "rationale": "This is an absolute millilitre dose added after cooling to the prepared basal stage, not G_PER_L. Preserve the named stock and its separate strength; the inherited M1148 or M190 parent receiving dose must not replace this dose. No completed-medium denominator is asserted."
+  },
+  {
+    "decision_id": "q8",
+    "subject": "Receiving 10% NH4Cl solution",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml",
+        "field_path": "solutions[1].concentration",
+        "stored": {
+          "value": "1.25",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml",
+        "field_path": "solutions[1].concentration",
+        "stored": {
+          "value": "1.25",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1264",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264",
+        "source_locator": "$.components[1].items[1]",
+        "exact_source_quote": "\"component_name\": \"10% NH4Cl solution\",\n          \"volume\": 1.25,\n          \"unit\": \"ml\",\n          \"conc_value\": 10,\n          \"conc_unit\": \"%\"",
+        "snapshot_sha256": "2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b"
+      },
+      {
+        "source_key": "togoM1264",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "Add components to distilled water and bring volume to 1.0 L. After cooling, add the following solutions (autoclaved or *filter-sterilized):",
+        "snapshot_sha256": "2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b"
+      }
+    ],
+    "rationale": "This is an absolute millilitre dose added after cooling to the prepared basal stage, not G_PER_L. Preserve the named stock and its separate strength; the inherited M1148 or M190 parent receiving dose must not replace this dose. No completed-medium denominator is asserted."
+  },
+  {
+    "decision_id": "q9",
+    "subject": "Receiving 1 M MgSO4 solution",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml",
+        "field_path": "solutions[2].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml",
+        "field_path": "solutions[2].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1264",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264",
+        "source_locator": "$.components[1].items[2]",
+        "exact_source_quote": "\"component_name\": \"1 M MgSO4 solution\",\n          \"volume\": 1,\n          \"unit\": \"ml\",\n          \"conc_value\": 1,\n          \"conc_unit\": \"M\"",
+        "snapshot_sha256": "2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b"
+      },
+      {
+        "source_key": "togoM1264",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "Add components to distilled water and bring volume to 1.0 L. After cooling, add the following solutions (autoclaved or *filter-sterilized):",
+        "snapshot_sha256": "2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b"
+      }
+    ],
+    "rationale": "This is an absolute millilitre dose added after cooling to the prepared basal stage, not G_PER_L. Preserve the named stock and its separate strength; the inherited M1148 or M190 parent receiving dose must not replace this dose. No completed-medium denominator is asserted."
+  },
+  {
+    "decision_id": "q10",
+    "subject": "Receiving 10% Cellobiose solution",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml",
+        "field_path": "solutions[3].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml",
+        "field_path": "solutions[3].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1264",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264",
+        "source_locator": "$.components[1].items[3]",
+        "exact_source_quote": "\"component_name\": \"10% Cellobiose solution\",\n          \"volume\": 20,\n          \"unit\": \"ml\",\n          \"conc_value\": 10,\n          \"conc_unit\": \"%\"",
+        "snapshot_sha256": "2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b"
+      },
+      {
+        "source_key": "togoM1264",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "Add components to distilled water and bring volume to 1.0 L. After cooling, add the following solutions (autoclaved or *filter-sterilized):",
+        "snapshot_sha256": "2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b"
+      }
+    ],
+    "rationale": "This is an absolute millilitre dose added after cooling to the prepared basal stage, not G_PER_L. Preserve the named stock and its separate strength; the inherited M1148 or M190 parent receiving dose must not replace this dose. No completed-medium denominator is asserted."
+  },
+  {
+    "decision_id": "q11",
+    "subject": "Receiving Trace element solution (see Medium [M1148])",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml",
+        "field_path": "solutions[4].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml",
+        "field_path": "solutions[4].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1264",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264",
+        "source_locator": "$.components[1].items[4]",
+        "exact_source_quote": "\"component_name\": \"Trace element solution (see Medium [M1148])\",\n          \"volume\": 1,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b"
+      },
+      {
+        "source_key": "togoM1264",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "Add components to distilled water and bring volume to 1.0 L. After cooling, add the following solutions (autoclaved or *filter-sterilized):",
+        "snapshot_sha256": "2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b"
+      }
+    ],
+    "rationale": "This is an absolute millilitre dose added after cooling to the prepared basal stage, not G_PER_L. Preserve the named stock and its separate strength; the inherited M1148 or M190 parent receiving dose must not replace this dose. No completed-medium denominator is asserted."
+  },
+  {
+    "decision_id": "q12",
+    "subject": "Receiving Trace vitamins (see Medium [M190])",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml",
+        "field_path": "solutions[5].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml",
+        "field_path": "solutions[5].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1264",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264",
+        "source_locator": "$.components[1].items[5]",
+        "exact_source_quote": "\"component_name\": \"Trace vitamins (see Medium [M190])\",\n          \"volume\": 5,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b"
+      },
+      {
+        "source_key": "togoM1264",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "Add components to distilled water and bring volume to 1.0 L. After cooling, add the following solutions (autoclaved or *filter-sterilized):",
+        "snapshot_sha256": "2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b"
+      }
+    ],
+    "rationale": "This is an absolute millilitre dose added after cooling to the prepared basal stage, not G_PER_L. Preserve the named stock and its separate strength; the inherited M1148 or M190 parent receiving dose must not replace this dose. No completed-medium denominator is asserted."
+  },
+  {
+    "decision_id": "q13",
+    "subject": "M1148 trace batch Na2MoO4・2H2O",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1148_Halanaeroarchaeum_Medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1148",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148",
+        "source_locator": "$.components[3].items[1]",
+        "exact_source_quote": "\"component_name\": \"Na2MoO4・2H2O\",\n          \"volume\": 0.03,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58"
+      },
+      {
+        "source_key": "togoM1148",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148",
+        "source_locator": "$.components[3].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58"
+      }
+    ],
+    "rationale": "The number is a gram batch amount in the trace stock. Listed 1.0 L water is not an explicit final-stock makeup instruction, and the earlier parent basal makeup paragraph belongs to a different preparation. Preserve the batch mass without asserting a final-stock or receiving-medium g/L concentration."
+  },
+  {
+    "decision_id": "q14",
+    "subject": "M1148 trace batch H3BO3",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1148_Halanaeroarchaeum_Medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1148",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148",
+        "source_locator": "$.components[3].items[2]",
+        "exact_source_quote": "\"component_name\": \"H3BO3\",\n          \"volume\": 0.3,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58"
+      },
+      {
+        "source_key": "togoM1148",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148",
+        "source_locator": "$.components[3].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58"
+      }
+    ],
+    "rationale": "The number is a gram batch amount in the trace stock. Listed 1.0 L water is not an explicit final-stock makeup instruction, and the earlier parent basal makeup paragraph belongs to a different preparation. Preserve the batch mass without asserting a final-stock or receiving-medium g/L concentration."
+  },
+  {
+    "decision_id": "q15",
+    "subject": "M1148 trace batch FeSO4・7H2O",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1148_Halanaeroarchaeum_Medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1148",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148",
+        "source_locator": "$.components[3].items[3]",
+        "exact_source_quote": "\"component_name\": \"FeSO4・7H2O\",\n          \"volume\": 2,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58"
+      },
+      {
+        "source_key": "togoM1148",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148",
+        "source_locator": "$.components[3].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58"
+      }
+    ],
+    "rationale": "The number is a gram batch amount in the trace stock. Listed 1.0 L water is not an explicit final-stock makeup instruction, and the earlier parent basal makeup paragraph belongs to a different preparation. Preserve the batch mass without asserting a final-stock or receiving-medium g/L concentration."
+  },
+  {
+    "decision_id": "q16",
+    "subject": "M1148 trace batch MnCl2・4H2O",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1148_Halanaeroarchaeum_Medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1148",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148",
+        "source_locator": "$.components[3].items[4]",
+        "exact_source_quote": "\"component_name\": \"MnCl2・4H2O\",\n          \"volume\": 0.03,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58"
+      },
+      {
+        "source_key": "togoM1148",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148",
+        "source_locator": "$.components[3].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58"
+      }
+    ],
+    "rationale": "The number is a gram batch amount in the trace stock. Listed 1.0 L water is not an explicit final-stock makeup instruction, and the earlier parent basal makeup paragraph belongs to a different preparation. Preserve the batch mass without asserting a final-stock or receiving-medium g/L concentration."
+  },
+  {
+    "decision_id": "q17",
+    "subject": "M1148 trace batch CoCl2・6H2O",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1148_Halanaeroarchaeum_Medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1148",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148",
+        "source_locator": "$.components[3].items[5]",
+        "exact_source_quote": "\"component_name\": \"CoCl2・6H2O\",\n          \"volume\": 0.2,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58"
+      },
+      {
+        "source_key": "togoM1148",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148",
+        "source_locator": "$.components[3].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58"
+      }
+    ],
+    "rationale": "The number is a gram batch amount in the trace stock. Listed 1.0 L water is not an explicit final-stock makeup instruction, and the earlier parent basal makeup paragraph belongs to a different preparation. Preserve the batch mass without asserting a final-stock or receiving-medium g/L concentration."
+  },
+  {
+    "decision_id": "q18",
+    "subject": "M1148 trace batch NiCl2・6H2O",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1148_Halanaeroarchaeum_Medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1148",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148",
+        "source_locator": "$.components[3].items[6]",
+        "exact_source_quote": "\"component_name\": \"NiCl2・6H2O\",\n          \"volume\": 0.02,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58"
+      },
+      {
+        "source_key": "togoM1148",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148",
+        "source_locator": "$.components[3].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58"
+      }
+    ],
+    "rationale": "The number is a gram batch amount in the trace stock. Listed 1.0 L water is not an explicit final-stock makeup instruction, and the earlier parent basal makeup paragraph belongs to a different preparation. Preserve the batch mass without asserting a final-stock or receiving-medium g/L concentration."
+  },
+  {
+    "decision_id": "q19",
+    "subject": "M1148 trace batch ZnSO4・7H2O",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1148_Halanaeroarchaeum_Medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1148",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148",
+        "source_locator": "$.components[3].items[7]",
+        "exact_source_quote": "\"component_name\": \"ZnSO4・7H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58"
+      },
+      {
+        "source_key": "togoM1148",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148",
+        "source_locator": "$.components[3].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58"
+      }
+    ],
+    "rationale": "The number is a gram batch amount in the trace stock. Listed 1.0 L water is not an explicit final-stock makeup instruction, and the earlier parent basal makeup paragraph belongs to a different preparation. Preserve the batch mass without asserting a final-stock or receiving-medium g/L concentration."
+  },
+  {
+    "decision_id": "q20",
+    "subject": "M1148 trace batch CuCl2・2H2O",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1148_Halanaeroarchaeum_Medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1148",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148",
+        "source_locator": "$.components[3].items[8]",
+        "exact_source_quote": "\"component_name\": \"CuCl2・2H2O\",\n          \"volume\": 0.01,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58"
+      },
+      {
+        "source_key": "togoM1148",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148",
+        "source_locator": "$.components[3].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58"
+      }
+    ],
+    "rationale": "The number is a gram batch amount in the trace stock. Listed 1.0 L water is not an explicit final-stock makeup instruction, and the earlier parent basal makeup paragraph belongs to a different preparation. Preserve the batch mass without asserting a final-stock or receiving-medium g/L concentration."
+  },
+  {
+    "decision_id": "q21",
+    "subject": "M1148 trace batch EDTA",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1148_Halanaeroarchaeum_Medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1148",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148",
+        "source_locator": "$.components[3].items[9]",
+        "exact_source_quote": "\"component_name\": \"EDTA\",\n          \"volume\": 5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58"
+      },
+      {
+        "source_key": "togoM1148",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148",
+        "source_locator": "$.components[3].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58"
+      }
+    ],
+    "rationale": "The number is a gram batch amount in the trace stock. Listed 1.0 L water is not an explicit final-stock makeup instruction, and the earlier parent basal makeup paragraph belongs to a different preparation. Preserve the batch mass without asserting a final-stock or receiving-medium g/L concentration."
+  },
+  {
+    "decision_id": "q22",
+    "subject": "M1148 trace water",
+    "decision": "add",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "togoM1148",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148",
+        "source_locator": "$.components[3].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58"
+      }
+    ],
+    "rationale": "Preserve one litre of listed water in this trace batch. Do not reuse merged parent water or infer measured final stock volume."
+  },
+  {
+    "decision_id": "q23",
+    "subject": "M1148 trace pH",
+    "decision": "add",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "jcm1079",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1079",
+        "source_locator": "Extracted text line 123",
+        "exact_source_quote": "Adjust pH to 3.6.",
+        "snapshot_sha256": "3d3f371da67ec5dd1afe16890bf36795950e1cf239dccd93e7f74c4ad6bcad57",
+        "parsed_text_sha256": "e8aaf2717e685ebc20bf35fb42b1effc11327dfb2bf7ef37333f9bc10e3b06c1"
+      }
+    ],
+    "rationale": "pH 3.6 applies only to this trace stock; it is not a receiving-medium pH target."
+  },
+  {
+    "decision_id": "q24",
+    "subject": "M190 vitamin water",
+    "decision": "verified",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[1].composition[0].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "M190Historical",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "rationale": "The existing 1 L value is an absolute listed water input for the vitamin stock, not a final-stock volume or parent receiving dose. Existing evidence is authenticated by the recovered original raw and time."
+  },
+  {
+    "decision_id": "q25",
+    "subject": "M190 vitamin batch Biotin",
+    "decision": "verified",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[1].composition[1].notes",
+        "stored": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 2 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "M190Historical",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[1]",
+        "exact_source_quote": "\"component_name\": \"Biotin\",\n          \"volume\": 2,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "rationale": "The existing note correctly preserves the printed milligram batch input and explicitly withdraws unsupported g/L. Retain this repaired note and exact original attached evidence; no conversion to a final-stock or receiving-medium rate is justified."
+  },
+  {
+    "decision_id": "q26",
+    "subject": "M190 vitamin batch p--Aminobenzoic acid",
+    "decision": "verified",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[1].composition[2].notes",
+        "stored": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "M190Historical",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[2]",
+        "exact_source_quote": "\"component_name\": \"p--Aminobenzoic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "rationale": "The existing note correctly preserves the printed milligram batch input and explicitly withdraws unsupported g/L. Retain this repaired note and exact original attached evidence; no conversion to a final-stock or receiving-medium rate is justified."
+  },
+  {
+    "decision_id": "q27",
+    "subject": "M190 vitamin batch Thiamine・HCl",
+    "decision": "verified",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[1].composition[3].notes",
+        "stored": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "M190Historical",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[3]",
+        "exact_source_quote": "\"component_name\": \"Thiamine・HCl\",\n          \"volume\": 5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "rationale": "The existing note correctly preserves the printed milligram batch input and explicitly withdraws unsupported g/L. Retain this repaired note and exact original attached evidence; no conversion to a final-stock or receiving-medium rate is justified."
+  },
+  {
+    "decision_id": "q28",
+    "subject": "M190 vitamin batch Calcium pantothenate",
+    "decision": "verified",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[1].composition[4].notes",
+        "stored": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "M190Historical",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[4]",
+        "exact_source_quote": "\"component_name\": \"Calcium pantothenate\",\n          \"volume\": 5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "rationale": "The existing note correctly preserves the printed milligram batch input and explicitly withdraws unsupported g/L. Retain this repaired note and exact original attached evidence; no conversion to a final-stock or receiving-medium rate is justified."
+  },
+  {
+    "decision_id": "q29",
+    "subject": "M190 vitamin batch Pyridoxine・HCl",
+    "decision": "verified",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[1].composition[5].notes",
+        "stored": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 10 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "M190Historical",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[5]",
+        "exact_source_quote": "\"component_name\": \"Pyridoxine・HCl\",\n          \"volume\": 10,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "rationale": "The existing note correctly preserves the printed milligram batch input and explicitly withdraws unsupported g/L. Retain this repaired note and exact original attached evidence; no conversion to a final-stock or receiving-medium rate is justified."
+  },
+  {
+    "decision_id": "q30",
+    "subject": "M190 vitamin batch Folic acid",
+    "decision": "verified",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[1].composition[6].notes",
+        "stored": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 2 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "M190Historical",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[6]",
+        "exact_source_quote": "\"component_name\": \"Folic acid\",\n          \"volume\": 2,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "rationale": "The existing note correctly preserves the printed milligram batch input and explicitly withdraws unsupported g/L. Retain this repaired note and exact original attached evidence; no conversion to a final-stock or receiving-medium rate is justified."
+  },
+  {
+    "decision_id": "q31",
+    "subject": "M190 vitamin batch Vitamin B12",
+    "decision": "verified",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[1].composition[7].notes",
+        "stored": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 0.1 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "M190Historical",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[7]",
+        "exact_source_quote": "\"component_name\": \"Vitamin B12\",\n          \"volume\": 0.1,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "rationale": "The existing note correctly preserves the printed milligram batch input and explicitly withdraws unsupported g/L. Retain this repaired note and exact original attached evidence; no conversion to a final-stock or receiving-medium rate is justified."
+  },
+  {
+    "decision_id": "q32",
+    "subject": "M190 vitamin batch Riboflavin",
+    "decision": "verified",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[1].composition[8].notes",
+        "stored": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "M190Historical",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[8]",
+        "exact_source_quote": "\"component_name\": \"Riboflavin\",\n          \"volume\": 5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "rationale": "The existing note correctly preserves the printed milligram batch input and explicitly withdraws unsupported g/L. Retain this repaired note and exact original attached evidence; no conversion to a final-stock or receiving-medium rate is justified."
+  },
+  {
+    "decision_id": "q33",
+    "subject": "M190 vitamin batch Nicotinic acid",
+    "decision": "verified",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[1].composition[9].notes",
+        "stored": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "M190Historical",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[9]",
+        "exact_source_quote": "\"component_name\": \"Nicotinic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "rationale": "The existing note correctly preserves the printed milligram batch input and explicitly withdraws unsupported g/L. Retain this repaired note and exact original attached evidence; no conversion to a final-stock or receiving-medium rate is justified."
+  },
+  {
+    "decision_id": "q34",
+    "subject": "M190 vitamin batch Lipoic acid",
+    "decision": "verified",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[1].composition[10].notes",
+        "stored": "Role: Growth factor; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "M190Historical",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[10]",
+        "exact_source_quote": "\"component_name\": \"Lipoic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "rationale": "The existing note correctly preserves the printed milligram batch input and explicitly withdraws unsupported g/L. Retain this repaired note and exact original attached evidence; no conversion to a final-stock or receiving-medium rate is justified."
+  },
+  {
+    "decision_id": "q35",
+    "subject": "10% yeast extract stock strength",
+    "decision": "add",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "togoM1264",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264",
+        "source_locator": "$.components[1].items[0]",
+        "exact_source_quote": "\"component_name\": \"10% Yeast extract solution\",\n          \"volume\": 0.2,\n          \"unit\": \"ml\",\n          \"conc_value\": 10,\n          \"conc_unit\": \"%\"",
+        "snapshot_sha256": "2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b"
+      }
+    ],
+    "rationale": "Retain the bare percent strength separately from the millilitre dose. No mass/volume or mass/mass basis is specified, so no mass or final-medium rate is inferred."
+  },
+  {
+    "decision_id": "q36",
+    "subject": "10% ammonium chloride stock strength",
+    "decision": "add",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "togoM1264",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264",
+        "source_locator": "$.components[1].items[1]",
+        "exact_source_quote": "\"component_name\": \"10% NH4Cl solution\",\n          \"volume\": 1.25,\n          \"unit\": \"ml\",\n          \"conc_value\": 10,\n          \"conc_unit\": \"%\"",
+        "snapshot_sha256": "2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b"
+      }
+    ],
+    "rationale": "Retain the bare percent strength separately from the millilitre dose. No mass/volume or mass/mass basis is specified, so no mass or final-medium rate is inferred."
+  },
+  {
+    "decision_id": "q37",
+    "subject": "1 M magnesium sulfate stock strength",
+    "decision": "add",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "togoM1264",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264",
+        "source_locator": "$.components[1].items[2]",
+        "exact_source_quote": "\"component_name\": \"1 M MgSO4 solution\",\n          \"volume\": 1,\n          \"unit\": \"ml\",\n          \"conc_value\": 1,\n          \"conc_unit\": \"M\"",
+        "snapshot_sha256": "2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b"
+      }
+    ],
+    "rationale": "The 1 M stock strength is explicit and separate from dose; 1 ml contains 1 mmol, without establishing final-medium molarity."
+  },
+  {
+    "decision_id": "q38",
+    "subject": "10% cellobiose stock strength",
+    "decision": "add",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "togoM1264",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264",
+        "source_locator": "$.components[1].items[3]",
+        "exact_source_quote": "\"component_name\": \"10% Cellobiose solution\",\n          \"volume\": 20,\n          \"unit\": \"ml\",\n          \"conc_value\": 10,\n          \"conc_unit\": \"%\"",
+        "snapshot_sha256": "2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b"
+      }
+    ],
+    "rationale": "Retain the bare percent strength separately from the millilitre dose. No mass/volume or mass/mass basis is specified, so no mass or final-medium rate is inferred."
+  },
+  {
+    "decision_id": "q39",
+    "subject": "Basal cooling and vitamin filter sterilization",
+    "decision": "add",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "togoM1264",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "Add components to distilled water and bring volume to 1.0 L. After cooling, add the following solutions (autoclaved or *filter-sterilized):",
+        "snapshot_sha256": "2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b"
+      },
+      {
+        "source_key": "jcm1180",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1180",
+        "source_locator": "Trace vitamins asterisk row and preceding treatment legend",
+        "exact_source_quote": "Trace vitamins* (see Medium No.\n197\n)\n5.0\nml",
+        "snapshot_sha256": "5285216751edb060e25398b4cf8db9e3bf01d5136aa9d95c1404a07ffed284c6",
+        "parsed_text_sha256": "ecc399332daa9370e929360179b535f3e44f58d10633f972192f2372ed20d332"
+      }
+    ],
+    "rationale": "Preserve basal makeup, cooling and separately treated stocks. The collection asterisk specifically marks vitamins as filter-sterilized; do not import the M190 parent gas treatment or other preparation conditions."
+  },
+  {
+    "decision_id": "q40",
+    "subject": "JCM 1180 autoclave default",
+    "decision": "add",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "jcm1180",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1180",
+        "source_locator": "Extracted text line 4",
+        "exact_source_quote": "Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.",
+        "snapshot_sha256": "5285216751edb060e25398b4cf8db9e3bf01d5136aa9d95c1404a07ffed284c6",
+        "parsed_text_sha256": "ecc399332daa9370e929360179b535f3e44f58d10633f972192f2372ed20d332"
+      }
+    ],
+    "rationale": "The selected JCM page gives 121°C for 15 min unless otherwise stated. Retain this source-scoped default alongside the explicit vitamin filter-sterilization exception."
+  }
+]
+
+## Findings
+
+### f1: Basal makeup and stock doses are encoded as mass concentrations
+
+major / open / confirmed; issue key: cm007796-stage-and-stock-units.
+
+Both layers store water as 1 G_PER_L and six millilitre stock additions as G_PER_L, with empty Unknown stock definitions. Five salt values are supported for the explicit one-litre basal stage, not automatically the completed medium. Scoped trace batch masses likewise lack an explicit final-stock denominator.
+
+### f2: Transferred trace cobalt and nickel hydrate IDs are anhydrous
+
+major / open / confirmed; issue key: cm007796-trace-hydrate-grounding.
+
+M1148 ingredients[9].term and ingredients[10].term describe hexahydrates but use anhydrous CHEBI:35696 and CHEBI:34887. These are dependency-only locations; selected basal salt slots are not implicated.
+
+### f3: Basal makeup and separate stock treatment are absent
+
+major / open / confirmed; issue key: cm007796-preparation-stages.
+
+The source explicitly makes up the basal solution, cools it, and adds separately treated stocks including filter-sterilized vitamins. Neither selected layer records this sequence. Trace pH 3.6 must remain confined to its stock.
+
+### f4: Bacterial category conflicts with the named archaeal medium
+
+major / open / confirmed; issue key: cm007796-domain-category.
+
+The exact JCM title explicitly identifies a natronoarchaeal medium while both selected layers are categorized bacterial. This source identity does not identify a particular strain or prove growth.
+
+### f5: Initial history confuses TOGO and JCM identifiers
+
+minor / open / confirmed; issue key: cm007796-history-accession.
+
+The initial Source: JCM, ID: M1264 event uses the TOGO accession. Current transcription explicitly identifies JCM_M1180.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Correct the maintained owner to preserve basal makeup, exact dose dimensions and six stock identities. Reuse only the scoped trace/vitamin definitions, crediting existing vitamin repairs. Retain unsupported percent and final-volume limits; regenerate and check generated freshness.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Resolve exact source-supported hexahydrate identifiers in the maintained trace definition and attach form-specific evidence. Preserve all other parent recipes and source conditions.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Add the exact staged preparation and source-scoped sterilization information to the maintained owner, preserving missing receiving pH and incubation values as unknown. Do not copy M1148 or M190 parent preparation wholesale.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Resolve the recipe category against the exact collection identity, preserving organism-level uncertainty; update the maintained owner and regenerate after authorized curation.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a5
+
+Append a narrow provenance clarification distinguishing the two accession namespaces; preserve the original event and source access times.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch053/522/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-053/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch053/522/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml:1:id: CultureMech:007796<br>./data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml:1:id: CultureMech:007796<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch053/source-preflight-bound/522/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 35 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| grounding-inventory | /private/tmp/culturemech-review-work-batch053/522/grounding-inventory.json; Exact path-qualified inventory; original values and scope retained | context_only | All scoped current ontology slots, exact raw scientific objects and current MIM rows; legacy negatives remain snapshot-specific. |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377; Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term metadata only | supports | Identifier properties and canonical-label correspondence; formulation, product, hydrate and preparation support are assessed separately. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term metadata only | supports | Identifier properties and canonical-label correspondence; formulation, product, hydrate and preparation support are assessed separately. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term metadata only | supports | Identifier properties and canonical-label correspondence; formulation, product, hydrate and preparation support are assessed separately. |
+| chebi32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588; Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term metadata only | supports | Identifier properties and canonical-label correspondence; formulation, product, hydrate and preparation support are assessed separately. |
+| chebi32139 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139; Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term metadata only | supports | Identifier properties and canonical-label correspondence; formulation, product, hydrate and preparation support are assessed separately. |
+| chebi29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377; Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term metadata only | supports | Identifier properties and canonical-label correspondence; formulation, product, hydrate and preparation support are assessed separately. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term metadata only | supports | Identifier properties and canonical-label correspondence; formulation, product, hydrate and preparation support are assessed separately. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term metadata only | supports | Identifier properties and canonical-label correspondence; formulation, product, hydrate and preparation support are assessed separately. |
+| chebi75836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836; Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term metadata only | supports | Identifier properties and canonical-label correspondence; formulation, product, hydrate and preparation support are assessed separately. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368; Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term metadata only | supports | Identifier properties and canonical-label correspondence; formulation, product, hydrate and preparation support are assessed separately. |
+| chebi35696 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_35696; Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term metadata only | supports | Identifier properties and canonical-label correspondence; formulation, product, hydrate and preparation support are assessed separately. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887; Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term metadata only | supports | Identifier properties and canonical-label correspondence; formulation, product, hydrate and preparation support are assessed separately. |
+| chebi32312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312; Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term metadata only | supports | Identifier properties and canonical-label correspondence; formulation, product, hydrate and preparation support are assessed separately. |
+| chebi86318 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318; Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term metadata only | supports | Identifier properties and canonical-label correspondence; formulation, product, hydrate and preparation support are assessed separately. |
+| chebi4735 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_4735; Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term metadata only | supports | Identifier properties and canonical-label correspondence; formulation, product, hydrate and preparation support are assessed separately. |
+| chebi15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956; Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term metadata only | supports | Identifier properties and canonical-label correspondence; formulation, product, hydrate and preparation support are assessed separately. |
+| chebi30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753; Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term metadata only | supports | Identifier properties and canonical-label correspondence; formulation, product, hydrate and preparation support are assessed separately. |
+| chebi49105 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105; Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term metadata only | supports | Identifier properties and canonical-label correspondence; formulation, product, hydrate and preparation support are assessed separately. |
+| chebi31345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345; Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term metadata only | supports | Identifier properties and canonical-label correspondence; formulation, product, hydrate and preparation support are assessed separately. |
+| chebi30961 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961; Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term metadata only | supports | Identifier properties and canonical-label correspondence; formulation, product, hydrate and preparation support are assessed separately. |
+| chebi27470 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470; Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term metadata only | supports | Identifier properties and canonical-label correspondence; formulation, product, hydrate and preparation support are assessed separately. |
+| chebi176843 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843; Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term metadata only | supports | Identifier properties and canonical-label correspondence; formulation, product, hydrate and preparation support are assessed separately. |
+| chebi17015 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015; Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term metadata only | supports | Identifier properties and canonical-label correspondence; formulation, product, hydrate and preparation support are assessed separately. |
+| chebi15940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940; Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term metadata only | supports | Identifier properties and canonical-label correspondence; formulation, product, hydrate and preparation support are assessed separately. |
+| chebi16494 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494; Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term metadata only | supports | Identifier properties and canonical-label correspondence; formulation, product, hydrate and preparation support are assessed separately. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Exact asserted secondary and legacy keys in pinned CSV; current catalog/tree separately pinned | context_only | The full exact-key rows and negative results are retained in grounding-inventory. Current absence is not historical invalidity. No inherited older capture-scope wording is applied to this record. |
+| mimPinnedCatalog | https://raw.githubusercontent.com/CultureBotAI/MediaIngredientMech/6643131b0f12ab40b66f98135245fca04027e0e9/docs/data/all_ingredients.json; Pinned current MIM catalog/tree; current slot scope in grounding-inventory | context_only | Current MIM inventory only; older reused content-limit annotations describe their original collection scope. |
+| mimPinnedTree | https://api.github.com/repos/CultureBotAI/MediaIngredientMech/git/trees/6643131b0f12ab40b66f98135245fca04027e0e9?recursive=1; Pinned current MIM catalog/tree; current slot scope in grounding-inventory | context_only | Current MIM inventory only; older reused content-limit annotations describe their original collection scope. |
+| history-metadata | data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml; data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 11, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml", "events": 10, "timestamp_issues": []}] |
+| history-full | /private/tmp/culturemech-review-work-batch053/522/history-inventory.json; Exact path-qualified inventory; original values and scope retained | context_only | Complete current target, owner and scoped dependency history events, unchanged; dependency history does not transfer its receiving-medium conditions. |
+| historical-inventory | /private/tmp/culturemech-review-work-batch053/522/historical-evidence-inventory.json; Exact path-qualified inventory; original values and scope retained | context_only | All existing attached claims, exact-header historical reports and qualified decoded-parent joins; full original bytes remain pinned. |
+| old-report-0 | reports/ingredient_concentration_curation/20261008-jcm-stock-preparations/records/M190.md; Full exact-header historical derivative report; scoped current path membership | context_only | Historical evidence and unresolved decisions are retained. This derivative does not replace missing source raw or authenticate a new recipe variant. |
+| old-report-1 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.md; Full exact-header historical derivative report; scoped current path membership | context_only | Historical evidence and unresolved decisions are retained. This derivative does not replace missing source raw or authenticate a new recipe variant. |
+| old-report-2 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/archaea/TOGO_M1148_Halanaeroarchaeum_Medium.md; Full exact-header historical derivative report; scoped current path membership | context_only | Historical evidence and unresolved decisions are retained. This derivative does not replace missing source raw or authenticate a new recipe variant. |
+| old-report-3 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.md; Full exact-header historical derivative report; scoped current path membership | context_only | Historical evidence and unresolved decisions are retained. This derivative does not replace missing source raw or authenticate a new recipe variant. |
+| old-report-4 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/togo_medium_m190.md; Full exact-header historical derivative report; scoped current path membership | context_only | Historical evidence and unresolved decisions are retained. This derivative does not replace missing source raw or authenticate a new recipe variant. |
+| old-report-5 | reports/yaml_record_review/20260922T063654Z-CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.md; Full exact-header historical derivative report; scoped current path membership | context_only | Historical evidence and unresolved decisions are retained. This derivative does not replace missing source raw or authenticate a new recipe variant. |
+| primary1180 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1180; Complete JCM 1180 table and basal makeup/post-cooling instruction | supports | The five salts are made up to 1.0 L before six separately treated stocks are added. The vitamin asterisk identifies filter sterilization. Bare percent bases and completed medium volume are not specified. |
+| provider1264 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264; Metadata, components[0:2] and comment[0] | supports | Current transcription identifies JCM_M1180 and prints basal quantities, six stock strengths and absolute doses. TOGO accession and JCM accession are distinct. |
+| trace1148 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148; components[3] and trace pH comment only | supports | Only the named trace batch, its one litre of listed water and pH 3.6 transfer. Parent salts, receiving doses, sulfur preparation, gases and other stocks do not transfer. |
+| trace1079 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1079; Trace element solution subsection only | supports | Collection source independently gives the nine trace reagents and their supplied hydrates, listed water and trace-stock pH. The earlier basal makeup instruction does not establish this stock final volume. |
+| vitamin190 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190; Recovered components[1] trace-vitamin subsection only | supports | Exact original raw bytes and original 2026-10-08 access metadata authenticate the eleven attached vitamin-stock claims. Parent mineral stock, receiving dose and culture preparation are excluded. |
+| vitamin197 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197; Trace vitamins subsection only | supports | An independently retained collection capture supports the ten vitamin batch masses and one litre of listed water. Its capture time is separate from the recovered historical TOGO event. |
+| writer-togo | src/culturemech/import/togo_importer.py; _ingredient_from_item; _local_batch_volume_ml; _local_solution_composition; _solution_from_item; _extract_primary_components; _extract_preparation_steps; _parse_unit | context_only | Current code preserves primary layers, stock references and preparation comments. Bare mass/volume and percent unit normalization still require source-basis checks. Current stage-preserving code is not asserted to have produced this historical flat record. Current code only; historical execution is not established. |
+| writer-stock | scripts/migrate_solutions_from_ingredients.py; Complete SolutionMigrator body | context_only | The current migration recognizes stock names/references, creates empty unresolved stubs and copies existing concentrations unchanged. It does not establish stock dimensions or source identity. Current code only; historical execution is not established. |
+| writer-merge | src/culturemech/merge/formulation.py; Complete formulation_content and merge_formulation_evidence | context_only | Current merging requires exact scientific assertions, including concentrations, stock structure, notes and preparation. Historical same-name reports do not authorize merging incompatible records. Current code only; historical execution is not established. |
+| field-census | /private/tmp/culturemech-review-work-batch053/522/field-census.json; Exact path-qualified inventory; original values and scope retained | context_only | All local scalar fields preserved; excluded dependency content is context and has no transferred source assessment. |
+| quantity-coverage | /private/tmp/culturemech-review-work-batch053/522/coverage-inventory.json; Exact path-qualified inventory; original values and scope retained | context_only | Every selected/scoped concentration and numeric context joins exact local values; excluded parent quantities are explicitly retained outside transferred scope. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch053/522/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Eighteen parent dependency concentrations and seven parent numeric preparation fields are excluded. Only the defined M1148 trace subsection and M190 vitamin subsection transfer. Current MIM snapshot membership does not establish historical membership or source form correctness. No final volume after stock additions, unspecified percent basis, incubation conditions or strain growth is inferred.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261025T201411Z-culturemech-007796-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: cellulolytic_natronoarchaea_medium (CultureMech:007796)'
+started_at: '2026-10-25T20:08:30Z'
+finished_at: '2026-10-25T20:14:11Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: TOGO M1264 / JCM 1180 retains the five basal salt amounts but conflates basal
+  makeup water and six stock doses with mass concentrations. The source explicitly
+  makes a 1.0 L basal stage before adding stocks; this does not establish the completed
+  medium volume. Only M1148 trace fields and the already repaired M190 vitamin stock
+  transfer. Preparation is missing, trace cobalt/nickel hydrate groundings need correction,
+  and the bacterial category conflicts with the named archaeal scope.
+source:
+  git_revision: 231e0ba71b41d45362168d539efebe7991823464
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml
+    sha256: 887eee98369c8b62ab7862ca6fac6a5fbd6fcb63be38db273b3262b0432094dd
+    role: target
+  - path: data/normalized_yaml/archaea/TOGO_M1148_Halanaeroarchaeum_Medium.yaml
+    sha256: 14303be38755e328e5db661a55db75b1164549fa003f077fa988e9c75a8028a5
+    role: context
+  - path: data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml
+    sha256: de6699ebb0c01497804c8ea781836d2d5219b3cc4d7fd62ececef2679352cc5d
+    role: context
+  - path: data/normalized_yaml/bacterial/togo_medium_m190.yaml
+    sha256: b1924e7eb436d56c5bd4826f07cafff130341054acfd808fb1c9e5bca914e3fa
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/KOMODO_650_CENTENUM_medium.yaml.md
+    sha256: cea95c8bef224d7988c89e55916e6bfc1c85e40e1e04644c416ba76677bfaf5c
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/KOMODO_748_CENS_medium.yaml.md
+    sha256: 013cdd23597b0f17ae16040cfcff4fa5612704583733ff2b59f4575da6a5ef4e
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/medium_650_modified_for_dsm_8319.yaml.md
+    sha256: bf8b812d7257fd833fe40a0c3d65ecca0d062d667e5d7ef32e8da45fdc400b8d
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/cellulosilyticum_medium.yaml.md
+    sha256: 6fc71489fc62d3a8490420a79c8e85ef97b1bf00048f2b4a5f9cbde290926d95
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/cens_medium.yaml.md
+    sha256: 21cd5c7838ddcd4136764be9d06f0b560c3df459ffd3510ca5a9df7e1f34e292
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/centenum_medium.yaml.md
+    sha256: 11adfae044a191efafa6569efa6dae001a26c2b4186bb1c4165f15ec06fb5aa7
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1500-2000/records/bacterial/cgm.yaml.md
+    sha256: 00bc6814a1dfc5789c97728aa09b3959c842ce63a226744cc526ee36a88f826e
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/records/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml.md
+    sha256: 3338d620d73f8bd698294bbb4b0a267bb79d279ff8c96056cc4586cd8535f187
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-solutions-4000-4500/records/bacterial/mediadive_5312_Solution_C.yaml.md
+    sha256: e167b06340bce70ab77d6408c8f5e9cb6b1dbeef2c36e29ff20952990e3bfbd2
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-solutions-4000-4500/records/bacterial/mediadive_5342_Solution_A.yaml.md
+    sha256: f68b7d85766061aa31ffef0f0172844d47d0aae036221dc66d608c86e8dce7a6
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-solutions-4000-4500/records/bacterial/mediadive_5343_Solution_B.yaml.md
+    sha256: aca054ad3ae72ab8aee9908cb67ceac62a96adf84ff60a5141dda9b4f13ff6d8
+    role: context
+  - path: reports/ingredient_concentration_curation/20261008-jcm-stock-preparations/records/M190.md
+    sha256: 89725cdcefc5da88b06931c4db253e065a5f48c2d2b9c8c0a9bc07f6fdc157e8
+    role: context
+  - path: reports/ingredient_concentration_curation/20261008-m258-m260-stocks/records/M258.md
+    sha256: fda8033086b0627144eb23d2558e66134a597bfa67939fec2f18992de7845747
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CEJFB1T_MEDIUM.md
+    sha256: 49ac2c7b79c5da4e7d56b164324afa763d1f8301cb1794aacecb55c381582cb6
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.md
+    sha256: a9112230e5f2b35a345d29058d2d06b1aec1b6c6e36d77e294ecbad9801f92ba
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.md
+    sha256: d71859ea710d11f601c3f0c34e1740f6d2afbae9b6516f296dccbe34c913d948
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CELLULOSE_AGAR.md
+    sha256: f90ca9219519b238b5b06d86a8ca2e84f6832a4ab67b0feabd05bdc3a9839381
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CELLULOSILYTICUM_MEDIUM.md
+    sha256: 3a3e74ac86eca9c6db45ec35f7ef0e6a76527941fffd6422ec02b9931c0c4212
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CELLULOSILYTICUM_RUMINICOLA_MEDIUM.md
+    sha256: 63217cedf21217428eca34c2c1418b1982e2e1b435abc3a6130e2689216f9fb0
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CENS_MEDIUM.md
+    sha256: 597cb6a7938f9cd459897adf69983dff16ed4d88f1a910366ad8abe4b3928222
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CENTENUM_MEDIUM.md
+    sha256: 64359ed6e4f323a585a64a19e0259164f4e54dd0e8d5c90443fca6183b6c91e1
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CGM.md
+    sha256: a07bbba50f039aeb8d2aa1f811f38913a6651995e329748e80f180b9a3d57a3b
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CGY_Medium.md
+    sha256: 2d2435a40efa8bac48c6238994b420ea1f7022e9d1a615b67aa2734a79397302
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/algae/cgm.md
+    sha256: 306c1cacb9be80fb75cde15b3ccffd282c046df9f6cf08ef2ff32055f4886ee4
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/archaea/TOGO_M1148_Halanaeroarchaeum_Medium.md
+    sha256: edfdd0b0fb57e8f9d9c328c8326da947773576733a6c38f9ecda66e70fb8e1a9
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/archaea/TOGO_M258_Methanomicrobium_Mobile_Medium.md
+    sha256: 10dbfce058ee6e85485dcfdc15b611cc9e0b95cea52a03f631a3b54fe008fa04
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.md
+    sha256: 9a63092a34db92eb9ca60f2db910800f0034f5e7f0e6d1eb074e146061fa60d4
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_650_CENTENUM_medium.md
+    sha256: 9305c9cfd434cbb5f857fd99357fe9a811cb31a48a3d05d779959557c84250b2
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_748_CENS_medium.md
+    sha256: a9c41ec015e0f2f45bb92ed0065eb0ddc3f3852207c12751d1ce686377ba8326
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M1040_CEJFB1T_Medium.md
+    sha256: d3295a1ae91e3c543bac519713a5559b6da46ed2a5384def64ef0c9354ed6e4f
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.md
+    sha256: 59c8979a006d9b770dd6d2b0ecdbdfd4a81fa2339fff1d33afd41e65932df4fc
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M439_Desulfovibrio_Aerotolerans_DVO5_Medium.md
+    sha256: e43ae29a243274817a13192084b67ac0741248fff46309a4e2862aef08e1ef58
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M57_Cellulose_Agar.md
+    sha256: 7a3396b4e01bffebe1a22b591ead29f62ecbfeaeeeb315bbcac5a84050435f83
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M653_Cellulosilyticum_Ruminicola_Medium.md
+    sha256: a1adca9a9911e57b4bd66fce0a5f4db9d2feea7b745195bf0c6e53238beeb2d0
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/cellulosilyticum_medium.md
+    sha256: da0b08c05cca15abca3721b4461c97a7cb8390a6cbb460045efe9dd04a956ec2
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/cens_medium.md
+    sha256: 874c7e795a7cd6cb420776fb624326f85520f9879d26165de81a0638506b1de2
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/centenum_medium.md
+    sha256: fabcbe826c085e4f317e0f4dffb71c125ef8c93ca6d7c378eb5aa003bcbc9f94
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/cgm.md
+    sha256: aed676ac8b2825a51883505bc77e41d3fd59a20a6facce044c7c62a638aa64d1
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/cgy_medium.md
+    sha256: 328084240301f3a0bd2140a55d72e331bb4d75dd7e40be3971155dff910193bc
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_5312_Solution_C.md
+    sha256: 64ab17db61f41d71c9fab76cb8c0838b8cdcd81c4e35f7f240c71642196f0ff3
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_5342_Solution_A.md
+    sha256: 31d821180b177a4395ac64cfe2eb443091729cb74309085beeb1b765ed2dd2f2
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_5343_Solution_B.md
+    sha256: a1f8fb64c671e4aae298c328e3a93b1ad420e2d60c7400dbae6775f8081a0e33
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/medium_650_modified_for_dsm_8319.md
+    sha256: f8616b950028d94561a0c4a986c40d5fdcdfa14324af5f8fa130447d9f7d7bdb
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/togo_medium_m190.md
+    sha256: d29c2d8798f20259a253d2b17745d675b4a789de94bdcef5279332d086383022
+    role: context
+  - path: reports/yaml_record_review/20260922T063517Z-CEJFB1T_MEDIUM.md
+    sha256: 1c833062655743da5d43f5f05638efd1b7bad9147a054541027cb892ea737379
+    role: context
+  - path: reports/yaml_record_review/20260922T063654Z-CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.md
+    sha256: 812641f1e5b20ca4a328fc409a8fd1f8cf18a1b8c740c904170097e764dd491a
+    role: context
+  - path: reports/yaml_record_review/20260922T063822Z-CELLULOMONAS_FERMENTANS_MEDIUM.md
+    sha256: cde23788b5a2bdfea2e67768ac9f27f0ad5200aeccb4c3e6fd8af84b3ac70c14
+    role: context
+  - path: reports/yaml_record_review/20260922T063942Z-CELLULOSE_AGAR.md
+    sha256: 7d7df31cd5aa0b65511048a3ad7ea51ed128f3d111280455da6b27b77deeff3a
+    role: context
+  - path: reports/yaml_record_review/20260922T064115Z-CELLULOSILYTICUM_MEDIUM.md
+    sha256: b3996678c78481e187be45d3a239865ef844eff74fcc663396ac72e9b986aaef
+    role: context
+  - path: reports/yaml_record_review/20260922T064238Z-CELLULOSILYTICUM_RUMINICOLA_MEDIUM.md
+    sha256: 0b2275d6cbeebebbd700d25e120994c47e980a94f276e53b82544cbf4ab4ddff
+    role: context
+  - path: reports/yaml_record_review/20260922T064616Z-CENS_MEDIUM.md
+    sha256: 6358d704259dc7ba50caf8263a8e95c81f311c9618f805c8f60587de73d37d16
+    role: context
+  - path: reports/yaml_record_review/20260922T064817Z-CENTENUM_MEDIUM.md
+    sha256: 5a517b2db46fa7608fa93b1fd6f7ca36633e65d9e9187b38ed2f820fc9ff5c4c
+    role: context
+  - path: reports/yaml_record_review/20260922T064954Z-CGM.md
+    sha256: b50dfb754feed998bcc620cfe9162a90071733ad665f78825ce24a6a870fe143
+    role: context
+  - path: reports/yaml_record_review/20260922T065133Z-CGY_Medium.md
+    sha256: f24f1ad05b4a65ae735f976877698aed5a3ffa1df9130d14103914260882ae5a
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/audit_mim_sssom_divergence.py
+    sha256: ad3478a5aeb757f2ce503be1b4720c86f0c1d90f5549918e1341dc7ac2c0f445
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_mgso4_heptahydrate_term.py
+    sha256: 6acb9d5164ad381c288f031fb34045036e3fd2283e559f1ad8ccd1a4687fb4ce
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_ccap_instruction_rows.py
+    sha256: eb1a4c8c46eb45dcdde6a5d2f0f6833792dd0802c45603eefa1b63a3ff96fca5
+    role: context
+  - path: scripts/repair_ccap_sources_score10.py
+    sha256: f518688ae99e154f490af337dab30b9038657a814db72861e0b53658a2541ae6
+    role: context
+  - path: scripts/repair_dsmz650_752_762_preparations.py
+    sha256: 0b955dd562a885fec75dd73bed1eaa00af707b3e2f9d35f7f16b066feb743e1a
+    role: context
+  - path: scripts/repair_komodo650_752_762_preparations.py
+    sha256: 477e2e14b5ff6284e4e291986b333552215f44dca2473fc64cf1d60e0028c0bd
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_public_stock_concentrations.py
+    sha256: 220dafdb1b826063f533a4b7e41dc3f2576adc433be92c65243605255fb97bb1
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/import/ccap_importer.py
+    sha256: c579c1d8fb62b96e739e5ee5c963453753ebca0bbf50996fb0f0d6eedd75c9ac
+    role: context
+  - path: src/culturemech/import/komodo_importer.py
+    sha256: 702733bd580e4ba28f77e183e1e8268f17ea2c1041cf7b3addd92919624f2706
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 522; batch 053 item 2 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding fifty-two task batches
+    contain 520 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 231e0ba71b41d45362168d539efebe7991823464
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 523 of 6325 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:007796
+targets:
+- target_id: CultureMech:007796
+  path: data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml
+  label: cellulolytic_natronoarchaea_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:007796
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch053/522/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-053/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch053/522/strict.tsv"
+  target_ids:
+  - CultureMech:007796
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:007796
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:007796
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:007796
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-25T20:14:09Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-25T20:14:09Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-25T20:09:18.335984Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch053/522/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-25T20:09:22.875364Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-053/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch053/522/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-25T20:09:28.569498Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-25T20:09:32.089028Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-25T20:14:09Z'
+  support: supports
+  summary: './data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml:1:id:
+    CultureMech:007796
+
+    ./data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml:1:id:
+    CultureMech:007796
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch053/source-preflight-bound/522/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-25T20:14:09Z'
+  support: supports
+  summary: 35 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 4f9ace92bb46e40329ed962744da4bf7cd9c86cf177adcf039b1739b3889efce
+- evidence_id: grounding-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch053/522/grounding-inventory.json
+  locator: Exact path-qualified inventory; original values and scope retained
+  accessed_at: '2026-10-25T20:14:09Z'
+  support: context_only
+  summary: All scoped current ontology slots, exact raw scientific objects and current
+    MIM rows; legacy negatives remain snapshot-specific.
+  snapshot_sha256: 9ada2a053bfb11d464429526f60295dc054452825ecbc7cd71676e262147e706
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term
+    metadata only
+  accessed_at: '2026-10-21T08:42:30.346522Z'
+  support: supports
+  summary: Identifier properties and canonical-label correspondence; formulation,
+    product, hydrate and preparation support are assessed separately.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term
+    metadata only
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: Identifier properties and canonical-label correspondence; formulation,
+    product, hydrate and preparation support are assessed separately.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term
+    metadata only
+  accessed_at: '2026-10-21T08:00:46.687620Z'
+  support: supports
+  summary: Identifier properties and canonical-label correspondence; formulation,
+    product, hydrate and preparation support are assessed separately.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi32588
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  locator: Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term
+    metadata only
+  accessed_at: '2026-10-21T08:17:29.045588Z'
+  support: supports
+  summary: Identifier properties and canonical-label correspondence; formulation,
+    product, hydrate and preparation support are assessed separately.
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi32139
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139
+  locator: Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term
+    metadata only
+  accessed_at: '2026-10-21T07:16:24.226823Z'
+  support: supports
+  summary: Identifier properties and canonical-label correspondence; formulation,
+    product, hydrate and preparation support are assessed separately.
+  snapshot_sha256: 2a41873aa455dc8563a47d36add836fffb6fb758ce7a2d1c28295e77646315fe
+- evidence_id: chebi29377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377
+  locator: Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term
+    metadata only
+  accessed_at: '2026-10-21T07:31:16.500548Z'
+  support: supports
+  summary: Identifier properties and canonical-label correspondence; formulation,
+    product, hydrate and preparation support are assessed separately.
+  snapshot_sha256: 21ae6468f9d087fd7930a263fc44728e31a8babde3576135686278a13bc1d6e1
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term
+    metadata only
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: Identifier properties and canonical-label correspondence; formulation,
+    product, hydrate and preparation support are assessed separately.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term
+    metadata only
+  accessed_at: '2026-10-21T08:17:29.364390Z'
+  support: supports
+  summary: Identifier properties and canonical-label correspondence; formulation,
+    product, hydrate and preparation support are assessed separately.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi75836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  locator: Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term
+    metadata only
+  accessed_at: '2026-10-21T08:00:48.784931Z'
+  support: supports
+  summary: Identifier properties and canonical-label correspondence; formulation,
+    product, hydrate and preparation support are assessed separately.
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: chebi86368
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  locator: Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term
+    metadata only
+  accessed_at: '2026-10-21T08:17:30.657545Z'
+  support: supports
+  summary: Identifier properties and canonical-label correspondence; formulation,
+    product, hydrate and preparation support are assessed separately.
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: chebi35696
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_35696
+  locator: Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term
+    metadata only
+  accessed_at: '2026-10-21T06:57:48.030715Z'
+  support: supports
+  summary: Identifier properties and canonical-label correspondence; formulation,
+    product, hydrate and preparation support are assessed separately.
+  snapshot_sha256: d9d394d79450b1671c699eaa08d3ef5d66d1f14909f1bd9c464b3d457e37a7ca
+- evidence_id: chebi34887
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  locator: Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term
+    metadata only
+  accessed_at: '2026-10-21T08:04:44.093348Z'
+  support: supports
+  summary: Identifier properties and canonical-label correspondence; formulation,
+    product, hydrate and preparation support are assessed separately.
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: chebi32312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  locator: Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term
+    metadata only
+  accessed_at: '2026-10-21T08:17:28.879505Z'
+  support: supports
+  summary: Identifier properties and canonical-label correspondence; formulation,
+    product, hydrate and preparation support are assessed separately.
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: chebi86318
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318
+  locator: Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term
+    metadata only
+  accessed_at: '2026-10-21T08:43:12.592415Z'
+  support: supports
+  summary: Identifier properties and canonical-label correspondence; formulation,
+    product, hydrate and preparation support are assessed separately.
+  snapshot_sha256: 9bbecfe37d67d923ee070067aebdf1abf21048cdb2cbdff9de0e3d21f68ea1ae
+- evidence_id: chebi4735
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_4735
+  locator: Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term
+    metadata only
+  accessed_at: '2026-10-21T07:33:28.659368Z'
+  support: supports
+  summary: Identifier properties and canonical-label correspondence; formulation,
+    product, hydrate and preparation support are assessed separately.
+  snapshot_sha256: ef8713e257a5e52aa813d8a43a26ed321ff04a475591ff238c00a47758f96717
+- evidence_id: chebi15956
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956
+  locator: Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term
+    metadata only
+  accessed_at: '2026-10-21T08:42:30.425993Z'
+  support: supports
+  summary: Identifier properties and canonical-label correspondence; formulation,
+    product, hydrate and preparation support are assessed separately.
+  snapshot_sha256: d2d51887df4de92642b66e9d15086ef82eccbc476dd4077d514ca709181ab4bd
+- evidence_id: chebi30753
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753
+  locator: Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term
+    metadata only
+  accessed_at: '2026-10-20T06:55:12.829785Z'
+  support: supports
+  summary: Identifier properties and canonical-label correspondence; formulation,
+    product, hydrate and preparation support are assessed separately.
+  snapshot_sha256: 97ea54b8020d3bcda2478182be115d2bc632249ee22b197b0575a4a9fd5fe21a
+- evidence_id: chebi49105
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105
+  locator: Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term
+    metadata only
+  accessed_at: '2026-10-21T07:16:25.002266Z'
+  support: supports
+  summary: Identifier properties and canonical-label correspondence; formulation,
+    product, hydrate and preparation support are assessed separately.
+  snapshot_sha256: 0b923c215888606038af1e3f0c1b1bcc35e4ab84966d1733a91fdfcbee8f2ae4
+- evidence_id: chebi31345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345
+  locator: Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term
+    metadata only
+  accessed_at: '2026-10-21T07:16:24.193584Z'
+  support: supports
+  summary: Identifier properties and canonical-label correspondence; formulation,
+    product, hydrate and preparation support are assessed separately.
+  snapshot_sha256: 56fc4b33c78d82faf317e131ae936f2e00eab0c369b2a9d8be86eddff6fd616d
+- evidence_id: chebi30961
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961
+  locator: Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term
+    metadata only
+  accessed_at: '2026-10-21T08:42:44.571163Z'
+  support: supports
+  summary: Identifier properties and canonical-label correspondence; formulation,
+    product, hydrate and preparation support are assessed separately.
+  snapshot_sha256: f1c95b83f5396067c3959c20ee4715c78f7895f5084dd214b3a4bf01e064f21d
+- evidence_id: chebi27470
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470
+  locator: Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term
+    metadata only
+  accessed_at: '2026-10-21T07:16:24.147433Z'
+  support: supports
+  summary: Identifier properties and canonical-label correspondence; formulation,
+    product, hydrate and preparation support are assessed separately.
+  snapshot_sha256: fe3e4a2f0f0fa51f94efe6bbf0fa8883d43eafef8db73cfd37bc25ce15fdd12f
+- evidence_id: chebi176843
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843
+  locator: Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term
+    metadata only
+  accessed_at: '2026-10-21T08:17:26.997779Z'
+  support: supports
+  summary: Identifier properties and canonical-label correspondence; formulation,
+    product, hydrate and preparation support are assessed separately.
+  snapshot_sha256: b535c3de88f47e93aed8909c58ff4e2d054a6845dea3bc9a048c18df12b371a9
+- evidence_id: chebi17015
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015
+  locator: Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term
+    metadata only
+  accessed_at: '2026-10-20T06:55:11.583596Z'
+  support: supports
+  summary: Identifier properties and canonical-label correspondence; formulation,
+    product, hydrate and preparation support are assessed separately.
+  snapshot_sha256: f42bc5bbd29b208bfd3062acb11dfa63ccebf81f77ffd72ab596de863cb68aa4
+- evidence_id: chebi15940
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940
+  locator: Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term
+    metadata only
+  accessed_at: '2026-10-21T07:16:23.223232Z'
+  support: supports
+  summary: Identifier properties and canonical-label correspondence; formulation,
+    product, hydrate and preparation support are assessed separately.
+  snapshot_sha256: 3330ed782e73526a087fb250ed5895ff232f117a896d45d541dff431e5c1f0e1
+- evidence_id: chebi16494
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494
+  locator: Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term
+    metadata only
+  accessed_at: '2026-10-20T06:55:13.001958Z'
+  support: supports
+  summary: Identifier properties and canonical-label correspondence; formulation,
+    product, hydrate and preparation support are assessed separately.
+  snapshot_sha256: aa3c1003d6266cc48f19a4d1d9527edd6844b96094a911e9a3c4f6a8851444e1
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Exact asserted secondary and legacy keys in pinned CSV; current catalog/tree
+    separately pinned
+  accessed_at: '2026-10-25T20:14:09Z'
+  support: context_only
+  summary: The full exact-key rows and negative results are retained in grounding-inventory.
+    Current absence is not historical invalidity. No inherited older capture-scope
+    wording is applied to this record.
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: mimPinnedCatalog
+  kind: database
+  reference: https://raw.githubusercontent.com/CultureBotAI/MediaIngredientMech/6643131b0f12ab40b66f98135245fca04027e0e9/docs/data/all_ingredients.json
+  locator: Pinned current MIM catalog/tree; current slot scope in grounding-inventory
+  accessed_at: '2026-10-21T09:52:30.606764Z'
+  support: context_only
+  summary: Current MIM inventory only; older reused content-limit annotations describe
+    their original collection scope.
+  snapshot_sha256: 474ff60bd51606ef6e272b8b22d421bbe51d9f78567a114f94e59d04fe51acc7
+- evidence_id: mimPinnedTree
+  kind: database
+  reference: https://api.github.com/repos/CultureBotAI/MediaIngredientMech/git/trees/6643131b0f12ab40b66f98135245fca04027e0e9?recursive=1
+  locator: Pinned current MIM catalog/tree; current slot scope in grounding-inventory
+  accessed_at: '2026-10-21T09:51:04.602158Z'
+  support: context_only
+  summary: Current MIM inventory only; older reused content-limit annotations describe
+    their original collection scope.
+  snapshot_sha256: 71721421c6e8100b080d4ee3140f6e0bb4bcd21b57964ceeb61399ca4a2844ec
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml; data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-25T20:14:09Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 11, "timestamp_issues": []}, {"input":
+    "data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml",
+    "events": 10, "timestamp_issues": []}]'
+- evidence_id: history-full
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch053/522/history-inventory.json
+  locator: Exact path-qualified inventory; original values and scope retained
+  accessed_at: '2026-10-25T20:14:09Z'
+  support: context_only
+  summary: Complete current target, owner and scoped dependency history events, unchanged;
+    dependency history does not transfer its receiving-medium conditions.
+  snapshot_sha256: b62c520a7ce81fe2cd0693355e38f2ae54a685ef00ff2c9199ac540a371e72b7
+- evidence_id: historical-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch053/522/historical-evidence-inventory.json
+  locator: Exact path-qualified inventory; original values and scope retained
+  accessed_at: '2026-10-25T20:14:09Z'
+  support: context_only
+  summary: All existing attached claims, exact-header historical reports and qualified
+    decoded-parent joins; full original bytes remain pinned.
+  snapshot_sha256: c1f2f2356fa793a5d1033b5baeec733268f9b392ac276c0555e6ebb6725cb9ef
+- evidence_id: old-report-0
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261008-jcm-stock-preparations/records/M190.md
+  locator: Full exact-header historical derivative report; scoped current path membership
+  accessed_at: '2026-10-25T20:14:09Z'
+  support: context_only
+  summary: Historical evidence and unresolved decisions are retained. This derivative
+    does not replace missing source raw or authenticate a new recipe variant.
+  snapshot_sha256: 89725cdcefc5da88b06931c4db253e065a5f48c2d2b9c8c0a9bc07f6fdc157e8
+- evidence_id: old-report-1
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.md
+  locator: Full exact-header historical derivative report; scoped current path membership
+  accessed_at: '2026-10-25T20:14:09Z'
+  support: context_only
+  summary: Historical evidence and unresolved decisions are retained. This derivative
+    does not replace missing source raw or authenticate a new recipe variant.
+  snapshot_sha256: a9112230e5f2b35a345d29058d2d06b1aec1b6c6e36d77e294ecbad9801f92ba
+- evidence_id: old-report-2
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/archaea/TOGO_M1148_Halanaeroarchaeum_Medium.md
+  locator: Full exact-header historical derivative report; scoped current path membership
+  accessed_at: '2026-10-25T20:14:09Z'
+  support: context_only
+  summary: Historical evidence and unresolved decisions are retained. This derivative
+    does not replace missing source raw or authenticate a new recipe variant.
+  snapshot_sha256: edfdd0b0fb57e8f9d9c328c8326da947773576733a6c38f9ecda66e70fb8e1a9
+- evidence_id: old-report-3
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.md
+  locator: Full exact-header historical derivative report; scoped current path membership
+  accessed_at: '2026-10-25T20:14:09Z'
+  support: context_only
+  summary: Historical evidence and unresolved decisions are retained. This derivative
+    does not replace missing source raw or authenticate a new recipe variant.
+  snapshot_sha256: 59c8979a006d9b770dd6d2b0ecdbdfd4a81fa2339fff1d33afd41e65932df4fc
+- evidence_id: old-report-4
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/togo_medium_m190.md
+  locator: Full exact-header historical derivative report; scoped current path membership
+  accessed_at: '2026-10-25T20:14:09Z'
+  support: context_only
+  summary: Historical evidence and unresolved decisions are retained. This derivative
+    does not replace missing source raw or authenticate a new recipe variant.
+  snapshot_sha256: d29c2d8798f20259a253d2b17745d675b4a789de94bdcef5279332d086383022
+- evidence_id: old-report-5
+  kind: record_content
+  reference: reports/yaml_record_review/20260922T063654Z-CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.md
+  locator: Full exact-header historical derivative report; scoped current path membership
+  accessed_at: '2026-10-25T20:14:09Z'
+  support: context_only
+  summary: Historical evidence and unresolved decisions are retained. This derivative
+    does not replace missing source raw or authenticate a new recipe variant.
+  snapshot_sha256: 812641f1e5b20ca4a328fc409a8fd1f8cf18a1b8c740c904170097e764dd491a
+- evidence_id: primary1180
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1180
+  locator: Complete JCM 1180 table and basal makeup/post-cooling instruction
+  accessed_at: '2026-10-22T09:27:11.300541Z'
+  support: supports
+  summary: The five salts are made up to 1.0 L before six separately treated stocks
+    are added. The vitamin asterisk identifies filter sterilization. Bare percent
+    bases and completed medium volume are not specified.
+  snapshot_sha256: 5285216751edb060e25398b4cf8db9e3bf01d5136aa9d95c1404a07ffed284c6
+- evidence_id: provider1264
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264
+  locator: Metadata, components[0:2] and comment[0]
+  accessed_at: '2026-10-22T09:27:10.198852Z'
+  support: supports
+  summary: Current transcription identifies JCM_M1180 and prints basal quantities,
+    six stock strengths and absolute doses. TOGO accession and JCM accession are distinct.
+  snapshot_sha256: 2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b
+- evidence_id: trace1148
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148
+  locator: components[3] and trace pH comment only
+  accessed_at: '2026-10-22T09:27:25.980861Z'
+  support: supports
+  summary: Only the named trace batch, its one litre of listed water and pH 3.6 transfer.
+    Parent salts, receiving doses, sulfur preparation, gases and other stocks do not
+    transfer.
+  snapshot_sha256: 6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58
+- evidence_id: trace1079
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1079
+  locator: Trace element solution subsection only
+  accessed_at: '2026-10-22T09:27:27.848310Z'
+  support: supports
+  summary: Collection source independently gives the nine trace reagents and their
+    supplied hydrates, listed water and trace-stock pH. The earlier basal makeup instruction
+    does not establish this stock final volume.
+  snapshot_sha256: 3d3f371da67ec5dd1afe16890bf36795950e1cf239dccd93e7f74c4ad6bcad57
+- evidence_id: vitamin190
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+  locator: Recovered components[1] trace-vitamin subsection only
+  accessed_at: '2026-10-08T13:22:46.432534Z'
+  support: supports
+  summary: Exact original raw bytes and original 2026-10-08 access metadata authenticate
+    the eleven attached vitamin-stock claims. Parent mineral stock, receiving dose
+    and culture preparation are excluded.
+  snapshot_sha256: 61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528
+- evidence_id: vitamin197
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197
+  locator: Trace vitamins subsection only
+  accessed_at: '2026-10-20T06:58:05.867253Z'
+  support: supports
+  summary: An independently retained collection capture supports the ten vitamin batch
+    masses and one litre of listed water. Its capture time is separate from the recovered
+    historical TOGO event.
+  snapshot_sha256: 39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532
+- evidence_id: writer-togo
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: _ingredient_from_item; _local_batch_volume_ml; _local_solution_composition;
+    _solution_from_item; _extract_primary_components; _extract_preparation_steps;
+    _parse_unit
+  accessed_at: '2026-10-25T20:14:09Z'
+  support: context_only
+  summary: Current code preserves primary layers, stock references and preparation
+    comments. Bare mass/volume and percent unit normalization still require source-basis
+    checks. Current stage-preserving code is not asserted to have produced this historical
+    flat record. Current code only; historical execution is not established.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: writer-stock
+  kind: record_content
+  reference: scripts/migrate_solutions_from_ingredients.py
+  locator: Complete SolutionMigrator body
+  accessed_at: '2026-10-25T20:14:09Z'
+  support: context_only
+  summary: The current migration recognizes stock names/references, creates empty
+    unresolved stubs and copies existing concentrations unchanged. It does not establish
+    stock dimensions or source identity. Current code only; historical execution is
+    not established.
+  snapshot_sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+- evidence_id: writer-merge
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Complete formulation_content and merge_formulation_evidence
+  accessed_at: '2026-10-25T20:14:09Z'
+  support: context_only
+  summary: Current merging requires exact scientific assertions, including concentrations,
+    stock structure, notes and preparation. Historical same-name reports do not authorize
+    merging incompatible records. Current code only; historical execution is not established.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: field-census
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch053/522/field-census.json
+  locator: Exact path-qualified inventory; original values and scope retained
+  accessed_at: '2026-10-25T20:14:09Z'
+  support: context_only
+  summary: All local scalar fields preserved; excluded dependency content is context
+    and has no transferred source assessment.
+  snapshot_sha256: fd2d73f2d49927160e7218e256a7b216183619c6c8a2b49eadd579c39e08e763
+- evidence_id: quantity-coverage
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch053/522/coverage-inventory.json
+  locator: Exact path-qualified inventory; original values and scope retained
+  accessed_at: '2026-10-25T20:14:09Z'
+  support: context_only
+  summary: Every selected/scoped concentration and numeric context joins exact local
+    values; excluded parent quantities are explicitly retained outside transferred
+    scope.
+  snapshot_sha256: 3f457af04b9bd9b39894b8dca3dac9709586af98a42a1070e84b6dbd81c345aa
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch053/522/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-25T20:14:09Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: e4c5a130efb47b34ce96550a63b901e3a48eb6e13a04bbfb2e410057dd836075
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:007796
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Scoped current ontology and MIM correspondence
+  outcome: supported
+  summary: '55 scoped ontology slots and 25 distinct nonobsolete IDs checked; label
+    agreement is not supplied-form validation. 23 current secondary slots and 0 legacy
+    slots have explicit exact-key lookups. Target linkage: primary 6/6 (100.00%),
+    current secondary 6/6 (100.00%); these are linkage counts, not correctness scores.'
+  target_ids:
+  - CultureMech:007796
+  evidence_ids:
+  - grounding-inventory
+  - mim
+  - mimPinnedCatalog
+  - mimPinnedTree
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 21 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:007796
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: identity
+  area: identity
+  topic: Exact medium and scoped dependencies
+  outcome: supported
+  summary: TOGO M1264 explicitly points to JCM 1180. M1148 / JCM 1079 is consulted
+    only for trace composition and M190 / JCM 197 only for vitamins. Their receiving
+    doses and basal recipes are excluded. The current selected owner and target have
+    the same scientific fields.
+  target_ids:
+  - CultureMech:007796
+  evidence_ids:
+  - record
+  - owner-0
+  - primary1180
+  - provider1264
+  - trace1148
+  - vitamin190
+- assessment_id: forms
+  area: grounding
+  topic: Label correspondence versus supplied form
+  outcome: concern
+  summary: The five selected basal salts have compatible asserted chemical identities.
+    In the transferred M1148 trace fields, cobalt and nickel hexahydrates use anhydrous
+    CHEBI:35696 and CHEBI:34887; correct canonical labels do not resolve the missing
+    waters. Other explicitly named trace hydrates agree. Vitamin salt identities are
+    retained; generic calcium pantothenate does not independently resolve stereochemistry,
+    so a matching canonical label is not treated as proof of an explicitly specified
+    D form. Generic lipoic acid is not reinterpreted as a specified enantiomer.
+  target_ids:
+  - CultureMech:007796
+  evidence_ids:
+  - grounding-inventory
+  - trace1148
+  - trace1079
+  - chebi35696
+  - chebi34887
+  - chebi31345
+  - chebi16494
+- assessment_id: repair-credit
+  area: provenance
+  topic: Existing vitamin repair and historical raw authentication
+  outcome: supported
+  summary: All eleven current M190 vitamin composition claims match their exact recovered
+    source raw and original metadata. Ten vitamin masses are already retained as batch-input
+    notes instead of unsupported g/L; the water is already 1 L. Preserve this repair
+    and its evidence. The full October 8 report and current history were read, but
+    their other parent recipe and preparation claims do not transfer to M1264.
+  target_ids:
+  - CultureMech:007796
+  evidence_ids:
+  - historical-inventory
+  - history-full
+  - old-report-0
+  - vitamin190
+  - vitamin197
+- assessment_id: preparation
+  area: completeness
+  topic: Basal makeup, cooling and stock treatment
+  outcome: concern
+  summary: Neither selected layer records the explicit basal makeup to 1.0 L, cooling,
+    separately treated additions or filter-sterilized vitamin stock. All six solutions
+    remain Unknown/empty placeholders. The trace stock pH 3.6 belongs only to that
+    stock; no receiving-medium pH, incubation temperature, time or gas atmosphere
+    is supplied here.
+  target_ids:
+  - CultureMech:007796
+  evidence_ids:
+  - primary1180
+  - provider1264
+  - trace1079
+  - record
+  - owner-0
+- assessment_id: classification
+  area: scope
+  topic: Archaeal identity and complex liquid formulation
+  outcome: concern
+  summary: The exact collection title is CELLULOLYTIC NATRONOARCHAEA MEDIUM, inconsistent
+    with the selected bacterial category. Review the category against this source
+    identity without inventing a strain, taxon identifier or growth observation. Yeast
+    extract supports complex/undefined classification and no agar is listed. The high_metal
+    annotation lacks a verified source threshold.
+  target_ids:
+  - CultureMech:007796
+  evidence_ids:
+  - primary1180
+  - provider1264
+  - record
+- assessment_id: historical-limits
+  area: provenance
+  topic: Complete report scope and current writer behavior
+  outcome: supported
+  summary: All six exact historical reports were read. October 5 rows are source-unchecked
+    inventories; the September report is a derivative review, not authority for a
+    final-volume inference or namesake merge. The M190 October 8 raw-positive repair
+    is explicitly separated from those derivative reports. Current conservative merging
+    and stage-preserving importer behavior are credited; historical execution is not
+    inferred from current code.
+  target_ids:
+  - CultureMech:007796
+  evidence_ids:
+  - historical-inventory
+  - old-report-0
+  - old-report-1
+  - old-report-2
+  - old-report-3
+  - old-report-4
+  - old-report-5
+  - writer-togo
+  - writer-merge
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 40 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:007796
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"decision_id\": \"q1\",\n    \"subject\": \"Basal water and\
+    \ explicit makeup\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM1264\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264\"\
+    ,\n        \"source_locator\": \"$.components[0].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1264\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264\",\n\
+    \        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"Add components to distilled water and bring volume to 1.0 L. After cooling,\
+    \ add the following solutions (autoclaved or *filter-sterilized):\",\n       \
+    \ \"snapshot_sha256\": \"2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b\"\
+    \n      }\n    ],\n    \"rationale\": \"The collection instruction is makeup to\
+    \ 1.0 L for the basal stage, not 1 G_PER_L water and not an asserted one-litre\
+    \ water input. Encode the makeup stage explicitly; no completed-medium final volume\
+    \ is inferred.\"\n  },\n  {\n    \"decision_id\": \"q2\",\n    \"subject\": \"\
+    Basal NaCl\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"128\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"128\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM1264\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264\"\
+    ,\n        \"source_locator\": \"$.components[0].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NaCl\\\",\\n          \\\"volume\\\": 128,\\n\
+    \          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1264\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264\",\n\
+    \        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"Add components to distilled water and bring volume to 1.0 L. After cooling,\
+    \ add the following solutions (autoclaved or *filter-sterilized):\",\n       \
+    \ \"snapshot_sha256\": \"2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b\"\
+    \n      }\n    ],\n    \"rationale\": \"The printed mass and explicit 1.0 L basal\
+    \ makeup support this numeric g/L value for the basal stage. Retain that exact\
+    \ source stage. The root rate cannot be promoted to a completed-medium concentration\
+    \ after the separately dosed stocks without an independently established final\
+    \ volume.\"\n  },\n  {\n    \"decision_id\": \"q3\",\n    \"subject\": \"Basal\
+    \ K2HPO4\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n \
+    \     {\n        \"input\": \"data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.75\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.75\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM1264\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264\"\
+    ,\n        \"source_locator\": \"$.components[0].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"K2HPO4\\\",\\n          \\\"volume\\\": 1.75,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1264\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264\",\n\
+    \        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"Add components to distilled water and bring volume to 1.0 L. After cooling,\
+    \ add the following solutions (autoclaved or *filter-sterilized):\",\n       \
+    \ \"snapshot_sha256\": \"2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b\"\
+    \n      }\n    ],\n    \"rationale\": \"The printed mass and explicit 1.0 L basal\
+    \ makeup support this numeric g/L value for the basal stage. Retain that exact\
+    \ source stage. The root rate cannot be promoted to a completed-medium concentration\
+    \ after the separately dosed stocks without an independently established final\
+    \ volume.\"\n  },\n  {\n    \"decision_id\": \"q4\",\n    \"subject\": \"Basal\
+    \ KCl\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n    \
+    \  {\n        \"input\": \"data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM1264\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264\"\
+    ,\n        \"source_locator\": \"$.components[0].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"KCl\\\",\\n          \\\"volume\\\": 2.5,\\n \
+    \         \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1264\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264\",\n\
+    \        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"Add components to distilled water and bring volume to 1.0 L. After cooling,\
+    \ add the following solutions (autoclaved or *filter-sterilized):\",\n       \
+    \ \"snapshot_sha256\": \"2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b\"\
+    \n      }\n    ],\n    \"rationale\": \"The printed mass and explicit 1.0 L basal\
+    \ makeup support this numeric g/L value for the basal stage. Retain that exact\
+    \ source stage. The root rate cannot be promoted to a completed-medium concentration\
+    \ after the separately dosed stocks without an independently established final\
+    \ volume.\"\n  },\n  {\n    \"decision_id\": \"q5\",\n    \"subject\": \"Basal\
+    \ NaHCO3\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n \
+    \     {\n        \"input\": \"data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM1264\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264\"\
+    ,\n        \"source_locator\": \"$.components[0].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NaHCO3\\\",\\n          \\\"volume\\\": 15,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1264\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264\",\n\
+    \        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"Add components to distilled water and bring volume to 1.0 L. After cooling,\
+    \ add the following solutions (autoclaved or *filter-sterilized):\",\n       \
+    \ \"snapshot_sha256\": \"2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b\"\
+    \n      }\n    ],\n    \"rationale\": \"The printed mass and explicit 1.0 L basal\
+    \ makeup support this numeric g/L value for the basal stage. Retain that exact\
+    \ source stage. The root rate cannot be promoted to a completed-medium concentration\
+    \ after the separately dosed stocks without an independently established final\
+    \ volume.\"\n  },\n  {\n    \"decision_id\": \"q6\",\n    \"subject\": \"Basal\
+    \ Na2CO3\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n \
+    \     {\n        \"input\": \"data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"95\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"95\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM1264\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264\"\
+    ,\n        \"source_locator\": \"$.components[0].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2CO3\\\",\\n          \\\"volume\\\": 95,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1264\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264\",\n\
+    \        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"Add components to distilled water and bring volume to 1.0 L. After cooling,\
+    \ add the following solutions (autoclaved or *filter-sterilized):\",\n       \
+    \ \"snapshot_sha256\": \"2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b\"\
+    \n      }\n    ],\n    \"rationale\": \"The printed mass and explicit 1.0 L basal\
+    \ makeup support this numeric g/L value for the basal stage. Retain that exact\
+    \ source stage. The root rate cannot be promoted to a completed-medium concentration\
+    \ after the separately dosed stocks without an independently established final\
+    \ volume.\"\n  },\n  {\n    \"decision_id\": \"q7\",\n    \"subject\": \"Receiving\
+    \ 10% Yeast extract solution\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM1264\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264\"\
+    ,\n        \"source_locator\": \"$.components[1].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"10% Yeast extract solution\\\",\\n          \\\
+    \"volume\\\": 0.2,\\n          \\\"unit\\\": \\\"ml\\\",\\n          \\\"conc_value\\\
+    \": 10,\\n          \\\"conc_unit\\\": \\\"%\\\"\",\n        \"snapshot_sha256\"\
+    : \"2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b\"\n     \
+    \ },\n      {\n        \"source_key\": \"togoM1264\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264\",\n\
+    \        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"Add components to distilled water and bring volume to 1.0 L. After cooling,\
+    \ add the following solutions (autoclaved or *filter-sterilized):\",\n       \
+    \ \"snapshot_sha256\": \"2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b\"\
+    \n      }\n    ],\n    \"rationale\": \"This is an absolute millilitre dose added\
+    \ after cooling to the prepared basal stage, not G_PER_L. Preserve the named stock\
+    \ and its separate strength; the inherited M1148 or M190 parent receiving dose\
+    \ must not replace this dose. No completed-medium denominator is asserted.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q8\",\n    \"subject\": \"Receiving 10% NH4Cl\
+    \ solution\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n     \
+    \ {\n        \"input\": \"data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM1264\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264\"\
+    ,\n        \"source_locator\": \"$.components[1].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"10% NH4Cl solution\\\",\\n          \\\"volume\\\
+    \": 1.25,\\n          \\\"unit\\\": \\\"ml\\\",\\n          \\\"conc_value\\\"\
+    : 10,\\n          \\\"conc_unit\\\": \\\"%\\\"\",\n        \"snapshot_sha256\"\
+    : \"2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b\"\n     \
+    \ },\n      {\n        \"source_key\": \"togoM1264\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264\",\n\
+    \        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"Add components to distilled water and bring volume to 1.0 L. After cooling,\
+    \ add the following solutions (autoclaved or *filter-sterilized):\",\n       \
+    \ \"snapshot_sha256\": \"2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b\"\
+    \n      }\n    ],\n    \"rationale\": \"This is an absolute millilitre dose added\
+    \ after cooling to the prepared basal stage, not G_PER_L. Preserve the named stock\
+    \ and its separate strength; the inherited M1148 or M190 parent receiving dose\
+    \ must not replace this dose. No completed-medium denominator is asserted.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q9\",\n    \"subject\": \"Receiving 1 M MgSO4\
+    \ solution\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n     \
+    \ {\n        \"input\": \"data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM1264\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264\"\
+    ,\n        \"source_locator\": \"$.components[1].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"1 M MgSO4 solution\\\",\\n          \\\"volume\\\
+    \": 1,\\n          \\\"unit\\\": \\\"ml\\\",\\n          \\\"conc_value\\\": 1,\\\
+    n          \\\"conc_unit\\\": \\\"M\\\"\",\n        \"snapshot_sha256\": \"2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1264\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264\",\n\
+    \        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"Add components to distilled water and bring volume to 1.0 L. After cooling,\
+    \ add the following solutions (autoclaved or *filter-sterilized):\",\n       \
+    \ \"snapshot_sha256\": \"2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b\"\
+    \n      }\n    ],\n    \"rationale\": \"This is an absolute millilitre dose added\
+    \ after cooling to the prepared basal stage, not G_PER_L. Preserve the named stock\
+    \ and its separate strength; the inherited M1148 or M190 parent receiving dose\
+    \ must not replace this dose. No completed-medium denominator is asserted.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q10\",\n    \"subject\": \"Receiving 10% Cellobiose\
+    \ solution\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n     \
+    \ {\n        \"input\": \"data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM1264\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264\"\
+    ,\n        \"source_locator\": \"$.components[1].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"10% Cellobiose solution\\\",\\n          \\\"\
+    volume\\\": 20,\\n          \\\"unit\\\": \\\"ml\\\",\\n          \\\"conc_value\\\
+    \": 10,\\n          \\\"conc_unit\\\": \\\"%\\\"\",\n        \"snapshot_sha256\"\
+    : \"2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b\"\n     \
+    \ },\n      {\n        \"source_key\": \"togoM1264\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264\",\n\
+    \        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"Add components to distilled water and bring volume to 1.0 L. After cooling,\
+    \ add the following solutions (autoclaved or *filter-sterilized):\",\n       \
+    \ \"snapshot_sha256\": \"2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b\"\
+    \n      }\n    ],\n    \"rationale\": \"This is an absolute millilitre dose added\
+    \ after cooling to the prepared basal stage, not G_PER_L. Preserve the named stock\
+    \ and its separate strength; the inherited M1148 or M190 parent receiving dose\
+    \ must not replace this dose. No completed-medium denominator is asserted.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q11\",\n    \"subject\": \"Receiving Trace\
+    \ element solution (see Medium [M1148])\",\n    \"decision\": \"correct\",\n \
+    \   \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM1264\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264\"\
+    ,\n        \"source_locator\": \"$.components[1].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace element solution (see Medium [M1148])\\\"\
+    ,\\n          \\\"volume\\\": 1,\\n          \\\"unit\\\": \\\"ml\\\"\",\n   \
+    \     \"snapshot_sha256\": \"2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1264\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264\",\n\
+    \        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"Add components to distilled water and bring volume to 1.0 L. After cooling,\
+    \ add the following solutions (autoclaved or *filter-sterilized):\",\n       \
+    \ \"snapshot_sha256\": \"2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b\"\
+    \n      }\n    ],\n    \"rationale\": \"This is an absolute millilitre dose added\
+    \ after cooling to the prepared basal stage, not G_PER_L. Preserve the named stock\
+    \ and its separate strength; the inherited M1148 or M190 parent receiving dose\
+    \ must not replace this dose. No completed-medium denominator is asserted.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q12\",\n    \"subject\": \"Receiving Trace\
+    \ vitamins (see Medium [M190])\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM1264\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264\"\
+    ,\n        \"source_locator\": \"$.components[1].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace vitamins (see Medium [M190])\\\",\\n   \
+    \       \\\"volume\\\": 5,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"\
+    snapshot_sha256\": \"2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1264\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264\",\n\
+    \        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"Add components to distilled water and bring volume to 1.0 L. After cooling,\
+    \ add the following solutions (autoclaved or *filter-sterilized):\",\n       \
+    \ \"snapshot_sha256\": \"2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b\"\
+    \n      }\n    ],\n    \"rationale\": \"This is an absolute millilitre dose added\
+    \ after cooling to the prepared basal stage, not G_PER_L. Preserve the named stock\
+    \ and its separate strength; the inherited M1148 or M190 parent receiving dose\
+    \ must not replace this dose. No completed-medium denominator is asserted.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q13\",\n    \"subject\": \"M1148 trace batch\
+    \ Na2MoO4・2H2O\",\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1148_Halanaeroarchaeum_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM1148\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148\"\
+    ,\n        \"source_locator\": \"$.components[3].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2MoO4・2H2O\\\",\\n          \\\"volume\\\":\
+    \ 0.03,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"\
+    6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58\"\n      },\n\
+    \      {\n        \"source_key\": \"togoM1148\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148\"\
+    ,\n        \"source_locator\": \"$.components[3].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58\"\
+    \n      }\n    ],\n    \"rationale\": \"The number is a gram batch amount in the\
+    \ trace stock. Listed 1.0 L water is not an explicit final-stock makeup instruction,\
+    \ and the earlier parent basal makeup paragraph belongs to a different preparation.\
+    \ Preserve the batch mass without asserting a final-stock or receiving-medium\
+    \ g/L concentration.\"\n  },\n  {\n    \"decision_id\": \"q14\",\n    \"subject\"\
+    : \"M1148 trace batch H3BO3\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1148_Halanaeroarchaeum_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM1148\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148\"\
+    ,\n        \"source_locator\": \"$.components[3].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"H3BO3\\\",\\n          \\\"volume\\\": 0.3,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1148\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148\",\n\
+    \        \"source_locator\": \"$.components[3].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58\"\
+    \n      }\n    ],\n    \"rationale\": \"The number is a gram batch amount in the\
+    \ trace stock. Listed 1.0 L water is not an explicit final-stock makeup instruction,\
+    \ and the earlier parent basal makeup paragraph belongs to a different preparation.\
+    \ Preserve the batch mass without asserting a final-stock or receiving-medium\
+    \ g/L concentration.\"\n  },\n  {\n    \"decision_id\": \"q15\",\n    \"subject\"\
+    : \"M1148 trace batch FeSO4・7H2O\",\n    \"decision\": \"unsupported\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1148_Halanaeroarchaeum_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM1148\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148\"\
+    ,\n        \"source_locator\": \"$.components[3].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"FeSO4・7H2O\\\",\\n          \\\"volume\\\": 2,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1148\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148\",\n\
+    \        \"source_locator\": \"$.components[3].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58\"\
+    \n      }\n    ],\n    \"rationale\": \"The number is a gram batch amount in the\
+    \ trace stock. Listed 1.0 L water is not an explicit final-stock makeup instruction,\
+    \ and the earlier parent basal makeup paragraph belongs to a different preparation.\
+    \ Preserve the batch mass without asserting a final-stock or receiving-medium\
+    \ g/L concentration.\"\n  },\n  {\n    \"decision_id\": \"q16\",\n    \"subject\"\
+    : \"M1148 trace batch MnCl2・4H2O\",\n    \"decision\": \"unsupported\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1148_Halanaeroarchaeum_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM1148\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148\"\
+    ,\n        \"source_locator\": \"$.components[3].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MnCl2・4H2O\\\",\\n          \\\"volume\\\": 0.03,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1148\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148\",\n\
+    \        \"source_locator\": \"$.components[3].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58\"\
+    \n      }\n    ],\n    \"rationale\": \"The number is a gram batch amount in the\
+    \ trace stock. Listed 1.0 L water is not an explicit final-stock makeup instruction,\
+    \ and the earlier parent basal makeup paragraph belongs to a different preparation.\
+    \ Preserve the batch mass without asserting a final-stock or receiving-medium\
+    \ g/L concentration.\"\n  },\n  {\n    \"decision_id\": \"q17\",\n    \"subject\"\
+    : \"M1148 trace batch CoCl2・6H2O\",\n    \"decision\": \"unsupported\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1148_Halanaeroarchaeum_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM1148\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148\"\
+    ,\n        \"source_locator\": \"$.components[3].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CoCl2・6H2O\\\",\\n          \\\"volume\\\": 0.2,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1148\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148\",\n\
+    \        \"source_locator\": \"$.components[3].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58\"\
+    \n      }\n    ],\n    \"rationale\": \"The number is a gram batch amount in the\
+    \ trace stock. Listed 1.0 L water is not an explicit final-stock makeup instruction,\
+    \ and the earlier parent basal makeup paragraph belongs to a different preparation.\
+    \ Preserve the batch mass without asserting a final-stock or receiving-medium\
+    \ g/L concentration.\"\n  },\n  {\n    \"decision_id\": \"q18\",\n    \"subject\"\
+    : \"M1148 trace batch NiCl2・6H2O\",\n    \"decision\": \"unsupported\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1148_Halanaeroarchaeum_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM1148\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148\"\
+    ,\n        \"source_locator\": \"$.components[3].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NiCl2・6H2O\\\",\\n          \\\"volume\\\": 0.02,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1148\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148\",\n\
+    \        \"source_locator\": \"$.components[3].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58\"\
+    \n      }\n    ],\n    \"rationale\": \"The number is a gram batch amount in the\
+    \ trace stock. Listed 1.0 L water is not an explicit final-stock makeup instruction,\
+    \ and the earlier parent basal makeup paragraph belongs to a different preparation.\
+    \ Preserve the batch mass without asserting a final-stock or receiving-medium\
+    \ g/L concentration.\"\n  },\n  {\n    \"decision_id\": \"q19\",\n    \"subject\"\
+    : \"M1148 trace batch ZnSO4・7H2O\",\n    \"decision\": \"unsupported\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1148_Halanaeroarchaeum_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM1148\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148\"\
+    ,\n        \"source_locator\": \"$.components[3].items[7]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"ZnSO4・7H2O\\\",\\n          \\\"volume\\\": 0.1,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1148\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148\",\n\
+    \        \"source_locator\": \"$.components[3].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58\"\
+    \n      }\n    ],\n    \"rationale\": \"The number is a gram batch amount in the\
+    \ trace stock. Listed 1.0 L water is not an explicit final-stock makeup instruction,\
+    \ and the earlier parent basal makeup paragraph belongs to a different preparation.\
+    \ Preserve the batch mass without asserting a final-stock or receiving-medium\
+    \ g/L concentration.\"\n  },\n  {\n    \"decision_id\": \"q20\",\n    \"subject\"\
+    : \"M1148 trace batch CuCl2・2H2O\",\n    \"decision\": \"unsupported\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1148_Halanaeroarchaeum_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM1148\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148\"\
+    ,\n        \"source_locator\": \"$.components[3].items[8]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CuCl2・2H2O\\\",\\n          \\\"volume\\\": 0.01,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1148\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148\",\n\
+    \        \"source_locator\": \"$.components[3].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58\"\
+    \n      }\n    ],\n    \"rationale\": \"The number is a gram batch amount in the\
+    \ trace stock. Listed 1.0 L water is not an explicit final-stock makeup instruction,\
+    \ and the earlier parent basal makeup paragraph belongs to a different preparation.\
+    \ Preserve the batch mass without asserting a final-stock or receiving-medium\
+    \ g/L concentration.\"\n  },\n  {\n    \"decision_id\": \"q21\",\n    \"subject\"\
+    : \"M1148 trace batch EDTA\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1148_Halanaeroarchaeum_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM1148\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148\"\
+    ,\n        \"source_locator\": \"$.components[3].items[9]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"EDTA\\\",\\n          \\\"volume\\\": 5,\\n  \
+    \        \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1148\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148\",\n\
+    \        \"source_locator\": \"$.components[3].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58\"\
+    \n      }\n    ],\n    \"rationale\": \"The number is a gram batch amount in the\
+    \ trace stock. Listed 1.0 L water is not an explicit final-stock makeup instruction,\
+    \ and the earlier parent basal makeup paragraph belongs to a different preparation.\
+    \ Preserve the batch mass without asserting a final-stock or receiving-medium\
+    \ g/L concentration.\"\n  },\n  {\n    \"decision_id\": \"q22\",\n    \"subject\"\
+    : \"M1148 trace water\",\n    \"decision\": \"add\",\n    \"local_fields\": [],\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM1148\",\n\
+    \        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1148\"\
+    ,\n        \"source_locator\": \"$.components[3].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"6adba583138053c6c753aaf1f91736f62b5bfaa745b3720285392419d787ef58\"\
+    \n      }\n    ],\n    \"rationale\": \"Preserve one litre of listed water in\
+    \ this trace batch. Do not reuse merged parent water or infer measured final stock\
+    \ volume.\"\n  },\n  {\n    \"decision_id\": \"q23\",\n    \"subject\": \"M1148\
+    \ trace pH\",\n    \"decision\": \"add\",\n    \"local_fields\": [],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1079\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1079\",\n        \"source_locator\"\
+    : \"Extracted text line 123\",\n        \"exact_source_quote\": \"Adjust pH to\
+    \ 3.6.\",\n        \"snapshot_sha256\": \"3d3f371da67ec5dd1afe16890bf36795950e1cf239dccd93e7f74c4ad6bcad57\"\
+    ,\n        \"parsed_text_sha256\": \"e8aaf2717e685ebc20bf35fb42b1effc11327dfb2bf7ef37333f9bc10e3b06c1\"\
+    \n      }\n    ],\n    \"rationale\": \"pH 3.6 applies only to this trace stock;\
+    \ it is not a receiving-medium pH target.\"\n  },\n  {\n    \"decision_id\": \"\
+    q24\",\n    \"subject\": \"M190 vitamin water\",\n    \"decision\": \"verified\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/togo_medium_m190.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[0].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"1\",\n          \"unit\": \"L\"\n\
+    \        }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"M190Historical\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\
+    \n      }\n    ],\n    \"rationale\": \"The existing 1 L value is an absolute\
+    \ listed water input for the vitamin stock, not a final-stock volume or parent\
+    \ receiving dose. Existing evidence is authenticated by the recovered original\
+    \ raw and time.\"\n  },\n  {\n    \"decision_id\": \"q25\",\n    \"subject\":\
+    \ \"M190 vitamin batch Biotin\",\n    \"decision\": \"verified\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/togo_medium_m190.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[1].notes\",\n        \"\
+    stored\": \"Role: Vitamin; Properties: Organic compound, Defined component, Simple\
+    \ component\\n\\nSource batch input: 2 mg. Final preparation volume is not independently\
+    \ established; the unsupported g/L assertion is withdrawn, not replaced by an\
+    \ assumed one-liter concentration.\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"M190Historical\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\",\n \
+    \       \"source_locator\": \"$.components[1].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Biotin\\\",\\n          \\\"volume\\\": 2,\\n\
+    \          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\
+    \n      }\n    ],\n    \"rationale\": \"The existing note correctly preserves\
+    \ the printed milligram batch input and explicitly withdraws unsupported g/L.\
+    \ Retain this repaired note and exact original attached evidence; no conversion\
+    \ to a final-stock or receiving-medium rate is justified.\"\n  },\n  {\n    \"\
+    decision_id\": \"q26\",\n    \"subject\": \"M190 vitamin batch p--Aminobenzoic\
+    \ acid\",\n    \"decision\": \"verified\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/togo_medium_m190.yaml\",\n\
+    \        \"field_path\": \"solutions[1].composition[2].notes\",\n        \"stored\"\
+    : \"Role: Vitamin; Properties: Organic compound, Defined component, Simple component\\\
+    n\\nSource batch input: 5 mg. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n   \
+    \     \"source_key\": \"M190Historical\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"p--Aminobenzoic acid\\\",\\n          \\\"volume\\\
+    \": 5,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\n      }\n\
+    \    ],\n    \"rationale\": \"The existing note correctly preserves the printed\
+    \ milligram batch input and explicitly withdraws unsupported g/L. Retain this\
+    \ repaired note and exact original attached evidence; no conversion to a final-stock\
+    \ or receiving-medium rate is justified.\"\n  },\n  {\n    \"decision_id\": \"\
+    q27\",\n    \"subject\": \"M190 vitamin batch Thiamine・HCl\",\n    \"decision\"\
+    : \"verified\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/togo_medium_m190.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[3].notes\",\n        \"\
+    stored\": \"Role: Vitamin; Properties: Organic compound, Defined component, Simple\
+    \ component\\n\\nSource batch input: 5 mg. Final preparation volume is not independently\
+    \ established; the unsupported g/L assertion is withdrawn, not replaced by an\
+    \ assumed one-liter concentration.\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"M190Historical\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\",\n \
+    \       \"source_locator\": \"$.components[1].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Thiamine・HCl\\\",\\n          \\\"volume\\\":\
+    \ 5,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\n      }\n\
+    \    ],\n    \"rationale\": \"The existing note correctly preserves the printed\
+    \ milligram batch input and explicitly withdraws unsupported g/L. Retain this\
+    \ repaired note and exact original attached evidence; no conversion to a final-stock\
+    \ or receiving-medium rate is justified.\"\n  },\n  {\n    \"decision_id\": \"\
+    q28\",\n    \"subject\": \"M190 vitamin batch Calcium pantothenate\",\n    \"\
+    decision\": \"verified\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/togo_medium_m190.yaml\",\n        \"field_path\"\
+    : \"solutions[1].composition[4].notes\",\n        \"stored\": \"Role: Vitamin;\
+    \ Properties: Organic compound, Defined component, Simple component\\n\\nSource\
+    \ batch input: 5 mg. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n   \
+    \     \"source_key\": \"M190Historical\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Calcium pantothenate\\\",\\n          \\\"volume\\\
+    \": 5,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\n      }\n\
+    \    ],\n    \"rationale\": \"The existing note correctly preserves the printed\
+    \ milligram batch input and explicitly withdraws unsupported g/L. Retain this\
+    \ repaired note and exact original attached evidence; no conversion to a final-stock\
+    \ or receiving-medium rate is justified.\"\n  },\n  {\n    \"decision_id\": \"\
+    q29\",\n    \"subject\": \"M190 vitamin batch Pyridoxine・HCl\",\n    \"decision\"\
+    : \"verified\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/togo_medium_m190.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[5].notes\",\n        \"\
+    stored\": \"Role: Vitamin; Properties: Organic compound, Defined component, Simple\
+    \ component\\n\\nSource batch input: 10 mg. Final preparation volume is not independently\
+    \ established; the unsupported g/L assertion is withdrawn, not replaced by an\
+    \ assumed one-liter concentration.\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"M190Historical\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\",\n \
+    \       \"source_locator\": \"$.components[1].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Pyridoxine・HCl\\\",\\n          \\\"volume\\\"\
+    : 10,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\n      }\n\
+    \    ],\n    \"rationale\": \"The existing note correctly preserves the printed\
+    \ milligram batch input and explicitly withdraws unsupported g/L. Retain this\
+    \ repaired note and exact original attached evidence; no conversion to a final-stock\
+    \ or receiving-medium rate is justified.\"\n  },\n  {\n    \"decision_id\": \"\
+    q30\",\n    \"subject\": \"M190 vitamin batch Folic acid\",\n    \"decision\"\
+    : \"verified\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/togo_medium_m190.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[6].notes\",\n        \"\
+    stored\": \"Role: Vitamin; Properties: Organic compound, Defined component, Simple\
+    \ component\\n\\nSource batch input: 2 mg. Final preparation volume is not independently\
+    \ established; the unsupported g/L assertion is withdrawn, not replaced by an\
+    \ assumed one-liter concentration.\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"M190Historical\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\",\n \
+    \       \"source_locator\": \"$.components[1].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Folic acid\\\",\\n          \\\"volume\\\": 2,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\
+    \n      }\n    ],\n    \"rationale\": \"The existing note correctly preserves\
+    \ the printed milligram batch input and explicitly withdraws unsupported g/L.\
+    \ Retain this repaired note and exact original attached evidence; no conversion\
+    \ to a final-stock or receiving-medium rate is justified.\"\n  },\n  {\n    \"\
+    decision_id\": \"q31\",\n    \"subject\": \"M190 vitamin batch Vitamin B12\",\n\
+    \    \"decision\": \"verified\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/togo_medium_m190.yaml\",\n        \"\
+    field_path\": \"solutions[1].composition[7].notes\",\n        \"stored\": \"Role:\
+    \ Vitamin; Properties: Organic compound, Defined component, Simple component\\\
+    n\\nSource batch input: 0.1 mg. Final preparation volume is not independently\
+    \ established; the unsupported g/L assertion is withdrawn, not replaced by an\
+    \ assumed one-liter concentration.\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"M190Historical\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\",\n \
+    \       \"source_locator\": \"$.components[1].items[7]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Vitamin B12\\\",\\n          \\\"volume\\\": 0.1,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\
+    \n      }\n    ],\n    \"rationale\": \"The existing note correctly preserves\
+    \ the printed milligram batch input and explicitly withdraws unsupported g/L.\
+    \ Retain this repaired note and exact original attached evidence; no conversion\
+    \ to a final-stock or receiving-medium rate is justified.\"\n  },\n  {\n    \"\
+    decision_id\": \"q32\",\n    \"subject\": \"M190 vitamin batch Riboflavin\",\n\
+    \    \"decision\": \"verified\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/togo_medium_m190.yaml\",\n        \"\
+    field_path\": \"solutions[1].composition[8].notes\",\n        \"stored\": \"Role:\
+    \ Vitamin; Properties: Organic compound, Defined component, Simple component\\\
+    n\\nSource batch input: 5 mg. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n   \
+    \     \"source_key\": \"M190Historical\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[8]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Riboflavin\\\",\\n          \\\"volume\\\": 5,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\
+    \n      }\n    ],\n    \"rationale\": \"The existing note correctly preserves\
+    \ the printed milligram batch input and explicitly withdraws unsupported g/L.\
+    \ Retain this repaired note and exact original attached evidence; no conversion\
+    \ to a final-stock or receiving-medium rate is justified.\"\n  },\n  {\n    \"\
+    decision_id\": \"q33\",\n    \"subject\": \"M190 vitamin batch Nicotinic acid\"\
+    ,\n    \"decision\": \"verified\",\n    \"local_fields\": [\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/togo_medium_m190.yaml\",\n     \
+    \   \"field_path\": \"solutions[1].composition[9].notes\",\n        \"stored\"\
+    : \"Role: Vitamin; Properties: Organic compound, Defined component, Simple component\\\
+    n\\nSource batch input: 5 mg. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n   \
+    \     \"source_key\": \"M190Historical\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[9]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Nicotinic acid\\\",\\n          \\\"volume\\\"\
+    : 5,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\n      }\n\
+    \    ],\n    \"rationale\": \"The existing note correctly preserves the printed\
+    \ milligram batch input and explicitly withdraws unsupported g/L. Retain this\
+    \ repaired note and exact original attached evidence; no conversion to a final-stock\
+    \ or receiving-medium rate is justified.\"\n  },\n  {\n    \"decision_id\": \"\
+    q34\",\n    \"subject\": \"M190 vitamin batch Lipoic acid\",\n    \"decision\"\
+    : \"verified\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/togo_medium_m190.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[10].notes\",\n        \"\
+    stored\": \"Role: Growth factor; Properties: Organic compound, Defined component,\
+    \ Simple component\\n\\nSource batch input: 5 mg. Final preparation volume is\
+    \ not independently established; the unsupported g/L assertion is withdrawn, not\
+    \ replaced by an assumed one-liter concentration.\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"M190Historical\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\",\n \
+    \       \"source_locator\": \"$.components[1].items[10]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Lipoic acid\\\",\\n          \\\"volume\\\": 5,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\
+    \n      }\n    ],\n    \"rationale\": \"The existing note correctly preserves\
+    \ the printed milligram batch input and explicitly withdraws unsupported g/L.\
+    \ Retain this repaired note and exact original attached evidence; no conversion\
+    \ to a final-stock or receiving-medium rate is justified.\"\n  },\n  {\n    \"\
+    decision_id\": \"q35\",\n    \"subject\": \"10% yeast extract stock strength\"\
+    ,\n    \"decision\": \"add\",\n    \"local_fields\": [],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM1264\",\n        \"source_url\":\
+    \ \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264\",\n\
+    \        \"source_locator\": \"$.components[1].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"10% Yeast extract solution\\\",\\n          \\\
+    \"volume\\\": 0.2,\\n          \\\"unit\\\": \\\"ml\\\",\\n          \\\"conc_value\\\
+    \": 10,\\n          \\\"conc_unit\\\": \\\"%\\\"\",\n        \"snapshot_sha256\"\
+    : \"2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Retain the bare percent strength separately\
+    \ from the millilitre dose. No mass/volume or mass/mass basis is specified, so\
+    \ no mass or final-medium rate is inferred.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q36\",\n    \"subject\": \"10% ammonium chloride stock strength\",\n    \"\
+    decision\": \"add\",\n    \"local_fields\": [],\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM1264\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264\"\
+    ,\n        \"source_locator\": \"$.components[1].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"10% NH4Cl solution\\\",\\n          \\\"volume\\\
+    \": 1.25,\\n          \\\"unit\\\": \\\"ml\\\",\\n          \\\"conc_value\\\"\
+    : 10,\\n          \\\"conc_unit\\\": \\\"%\\\"\",\n        \"snapshot_sha256\"\
+    : \"2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Retain the bare percent strength separately\
+    \ from the millilitre dose. No mass/volume or mass/mass basis is specified, so\
+    \ no mass or final-medium rate is inferred.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q37\",\n    \"subject\": \"1 M magnesium sulfate stock strength\",\n    \"\
+    decision\": \"add\",\n    \"local_fields\": [],\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM1264\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264\"\
+    ,\n        \"source_locator\": \"$.components[1].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"1 M MgSO4 solution\\\",\\n          \\\"volume\\\
+    \": 1,\\n          \\\"unit\\\": \\\"ml\\\",\\n          \\\"conc_value\\\": 1,\\\
+    n          \\\"conc_unit\\\": \\\"M\\\"\",\n        \"snapshot_sha256\": \"2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b\"\
+    \n      }\n    ],\n    \"rationale\": \"The 1 M stock strength is explicit and\
+    \ separate from dose; 1 ml contains 1 mmol, without establishing final-medium\
+    \ molarity.\"\n  },\n  {\n    \"decision_id\": \"q38\",\n    \"subject\": \"10%\
+    \ cellobiose stock strength\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM1264\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264\"\
+    ,\n        \"source_locator\": \"$.components[1].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"10% Cellobiose solution\\\",\\n          \\\"\
+    volume\\\": 20,\\n          \\\"unit\\\": \\\"ml\\\",\\n          \\\"conc_value\\\
+    \": 10,\\n          \\\"conc_unit\\\": \\\"%\\\"\",\n        \"snapshot_sha256\"\
+    : \"2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Retain the bare percent strength separately\
+    \ from the millilitre dose. No mass/volume or mass/mass basis is specified, so\
+    \ no mass or final-medium rate is inferred.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q39\",\n    \"subject\": \"Basal cooling and vitamin filter sterilization\"\
+    ,\n    \"decision\": \"add\",\n    \"local_fields\": [],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM1264\",\n        \"source_url\":\
+    \ \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1264\",\n\
+    \        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"Add components to distilled water and bring volume to 1.0 L. After cooling,\
+    \ add the following solutions (autoclaved or *filter-sterilized):\",\n       \
+    \ \"snapshot_sha256\": \"2e6715e0d8ce2a89685743e90a335d1de16ba7f1bcf04eb7e8ab28a13faa229b\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1180\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1180\",\n        \"source_locator\"\
+    : \"Trace vitamins asterisk row and preceding treatment legend\",\n        \"\
+    exact_source_quote\": \"Trace vitamins* (see Medium No.\\n197\\n)\\n5.0\\nml\"\
+    ,\n        \"snapshot_sha256\": \"5285216751edb060e25398b4cf8db9e3bf01d5136aa9d95c1404a07ffed284c6\"\
+    ,\n        \"parsed_text_sha256\": \"ecc399332daa9370e929360179b535f3e44f58d10633f972192f2372ed20d332\"\
+    \n      }\n    ],\n    \"rationale\": \"Preserve basal makeup, cooling and separately\
+    \ treated stocks. The collection asterisk specifically marks vitamins as filter-sterilized;\
+    \ do not import the M190 parent gas treatment or other preparation conditions.\"\
+    \n  },\n  {\n    \"decision_id\": \"q40\",\n    \"subject\": \"JCM 1180 autoclave\
+    \ default\",\n    \"decision\": \"add\",\n    \"local_fields\": [],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1180\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1180\",\n        \"source_locator\"\
+    : \"Extracted text line 4\",\n        \"exact_source_quote\": \"Unless otherwise\
+    \ stated, sterilize media by autoclaving at 121°C for 15 min.\",\n        \"snapshot_sha256\"\
+    : \"5285216751edb060e25398b4cf8db9e3bf01d5136aa9d95c1404a07ffed284c6\",\n    \
+    \    \"parsed_text_sha256\": \"ecc399332daa9370e929360179b535f3e44f58d10633f972192f2372ed20d332\"\
+    \n      }\n    ],\n    \"rationale\": \"The selected JCM page gives 121°C for\
+    \ 15 min unless otherwise stated. Retain this source-scoped default alongside\
+    \ the explicit vitamin filter-sterilization exception.\"\n  }\n]"
+findings:
+- finding_id: f1
+  issue_key: cm007796-stage-and-stock-units
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Basal makeup and stock doses are encoded as mass concentrations
+  description: Both layers store water as 1 G_PER_L and six millilitre stock additions
+    as G_PER_L, with empty Unknown stock definitions. Five salt values are supported
+    for the explicit one-litre basal stage, not automatically the completed medium.
+    Scoped trace batch masses likewise lack an explicit final-stock denominator.
+  target_ids:
+  - CultureMech:007796
+  field_paths:
+  - ingredients
+  - solutions
+  evidence_ids:
+  - primary1180
+  - provider1264
+  - trace1148
+  - quantity-inventory
+  - writer-togo
+  - writer-stock
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/TOGO_M1148_Halanaeroarchaeum_Medium.yaml
+    role: 'scoped dependency: solutions[3] identity and ingredients[5:14] trace composition
+      only; parent dose excluded'
+  rule_id: review-ingredient-concentrations:source-stage-unit-basis
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: cm007796-trace-hydrate-grounding
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Transferred trace cobalt and nickel hydrate IDs are anhydrous
+  description: M1148 ingredients[9].term and ingredients[10].term describe hexahydrates
+    but use anhydrous CHEBI:35696 and CHEBI:34887. These are dependency-only locations;
+    selected basal salt slots are not implicated.
+  target_ids:
+  - CultureMech:007796
+  field_paths:
+  - solutions
+  evidence_ids:
+  - trace1148
+  - trace1079
+  - grounding-inventory
+  - chebi35696
+  - chebi34887
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/TOGO_M1148_Halanaeroarchaeum_Medium.yaml
+    role: 'scoped dependency: solutions[3] identity and ingredients[5:14] trace composition
+      only; parent dose excluded'
+  rule_id: review-yaml-record:supplied-hydrate-correspondence
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: cm007796-preparation-stages
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Basal makeup and separate stock treatment are absent
+  description: The source explicitly makes up the basal solution, cools it, and adds
+    separately treated stocks including filter-sterilized vitamins. Neither selected
+    layer records this sequence. Trace pH 3.6 must remain confined to its stock.
+  target_ids:
+  - CultureMech:007796
+  field_paths:
+  - preparation_steps
+  evidence_ids:
+  - primary1180
+  - provider1264
+  - trace1079
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: review-yaml-record:preparation-completeness
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: cm007796-domain-category
+  category: scope
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Bacterial category conflicts with the named archaeal medium
+  description: The exact JCM title explicitly identifies a natronoarchaeal medium
+    while both selected layers are categorized bacterial. This source identity does
+    not identify a particular strain or prove growth.
+  target_ids:
+  - CultureMech:007796
+  field_paths:
+  - category
+  evidence_ids:
+  - primary1180
+  - provider1264
+  - record
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: review-yaml-record:category-source-correspondence
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f5
+  issue_key: cm007796-history-accession
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Initial history confuses TOGO and JCM identifiers
+  description: 'The initial Source: JCM, ID: M1264 event uses the TOGO accession.
+    Current transcription explicitly identifies JCM_M1180.'
+  target_ids:
+  - CultureMech:007796
+  field_paths:
+  - curation_history[0].notes
+  evidence_ids:
+  - provider1264
+  - history-full
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: review-yaml-record:source-accession-history
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Correct the maintained owner to preserve basal makeup, exact dose dimensions
+    and six stock identities. Reuse only the scoped trace/vitamin definitions, crediting
+    existing vitamin repairs. Retain unsupported percent and final-volume limits;
+    regenerate and check generated freshness.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:007796
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/TOGO_M1148_Halanaeroarchaeum_Medium.yaml
+    role: 'scoped dependency: solutions[3] identity and ingredients[5:14] trace composition
+      only; parent dose excluded'
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Resolve exact source-supported hexahydrate identifiers in the maintained
+    trace definition and attach form-specific evidence. Preserve all other parent
+    recipes and source conditions.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:007796
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/TOGO_M1148_Halanaeroarchaeum_Medium.yaml
+    role: 'scoped dependency: solutions[3] identity and ingredients[5:14] trace composition
+      only; parent dose excluded'
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Add the exact staged preparation and source-scoped sterilization information
+    to the maintained owner, preserving missing receiving pH and incubation values
+    as unknown. Do not copy M1148 or M190 parent preparation wholesale.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:007796
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Resolve the recipe category against the exact collection identity,
+    preserving organism-level uncertainty; update the maintained owner and regenerate
+    after authorized curation.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:007796
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a5
+  description: Append a narrow provenance clarification distinguishing the two accession
+    namespaces; preserve the original event and source access times.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:007796
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Eighteen parent dependency concentrations and seven parent numeric preparation fields
+  are excluded. Only the defined M1148 trace subsection and M190 vitamin subsection
+  transfer. Current MIM snapshot membership does not establish historical membership
+  or source form correctness. No final volume after stock additions, unspecified percent
+  basis, incubation conditions or strain growth is inferred.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-053
+- generated-medium
+```
