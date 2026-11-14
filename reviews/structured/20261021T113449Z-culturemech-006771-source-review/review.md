@@ -1,0 +1,9306 @@
+# Source and formulation review: acidolobus_aceticus_medium (CultureMech:006771)
+
+- Review: 20261021T113449Z-culturemech-006771-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T11:18:02Z
+- Finished UTC: 2026-10-21T11:34:49Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+This generated record conflates DSMZ 901, JCM 308, JCM 934 and the DSM 16705 source variant, while placing stock-strength trace elements, vitamins and sulfide into the receiving formula. Five maintained contributors preserve different source details and later topology repairs. Exact chemical forms, source-scoped preparation, missing variant composition and broken JCM links need curation. The required KOMODO 901.1 detail remains unavailable; a completed exact pinned-index lookup confirms a sulfur secondary-mapping gap.
+
+## Scope And Provenance
+
+One generated MediaRecipe and all five explicit maintained contributors, including every local amount and source-scoped stock/variant preparation. Formulation assessment is performed; exact KOMODO 901.1 detail remains unavailable. The pinned sulfur secondary-key lookup is complete and confirms no exact matching row in that snapshot.
+
+Selection: Task review 180; batch 018 item 10 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding seventeen task batches contain 170 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c contains 40 validated baseline bundles covering 2 current merged paths. Unioning all prior lists with this baseline covers 172 of 6320 current merged paths, including 2 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 24a1d277eb7f0437af53af0d178a30f9bfa6374c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:006771 | data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml | generated | acidolobus_aceticus_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:006771 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:006771 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-018/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch018/180/strict.tsv |
+| validate-terms | passed | True | CultureMech:006771 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:006771 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:006771 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: komodo901_1detail | unavailable | True | CultureMech:006771 | Exact KOMODO 901.1 detail returned HTTP 403. The table row and independent DSMZ 901 conditional text were inspected; the inaccessible page contents and historical formulation equivalence were not verified. This required source-version check remains unavailable and the review is partial. |
+| Exact pinned MIM correspondence for asserted sulfur secondary key | passed | True | CultureMech:006771 | Completed exact pinned-index lookup: no mapped preferred-term row for CHEBI:26833 in the pinned MIM index. The primary CHEBI term resolves, but its asserted secondary mapping has no exact matching row in this pinned index; no fuzzy replacement was inferred. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:006771.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Five contributors, accession boundaries and conditional variants
+
+identity: concern. Targets: CultureMech:006771.
+
+The target has KOMODO 901 identity but combines five owner histories and synonyms. DSMZ 901 and JCM 308 have distinct quantities and preparation; JCM 934 adds an explicit modification; DSM 16705 has a specific DSMZ yeast/glucose condition. Similar ingredient signatures do not make these one formulation. Current owner topology repairs are distinguished from the older generated snapshot.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:006771.
+
+95 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence. All 168 ingredient and stock-dose concentration instances across the target and maintained owners are explicitly covered; additional rows retain preparation quantities and source-only components.
+
+[
+  {
+    "quantity_id": "q1",
+    "ingredient_or_context": "DSMZ branch: NH4Cl",
+    "decision": "conflict",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.324484",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.324484",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.324484",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.324484",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_branch": "base DSMZ 901",
+      "source_amount": 0.33,
+      "source_unit": "g",
+      "source_attribute": null,
+      "preserve_stage": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\": 0.33,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.324484,\n                        \"mmol_l\": 6.06625,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "Local value matches the provider-derived g/L, whose declared denominator is 1017 ml. Primary listed liquid aliquots sum to 1017.5 ml and no measured final make-up is specified. Preserve the raw batch amount and explicit provider normalization as distinct evidence; do not certify this as the primary final concentration. The DSM 16705 yeast row must additionally follow its separate conditional decision."
+  },
+  {
+    "quantity_id": "q2",
+    "ingredient_or_context": "DSMZ branch: KCl",
+    "decision": "conflict",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.324484",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.324484",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.324484",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.324484",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_branch": "base DSMZ 901",
+      "source_amount": 0.33,
+      "source_unit": "g",
+      "source_attribute": null,
+      "preserve_stage": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\": 0.33,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.324484,\n                        \"mmol_l\": 4.35257,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "Local value matches the provider-derived g/L, whose declared denominator is 1017 ml. Primary listed liquid aliquots sum to 1017.5 ml and no measured final make-up is specified. Preserve the raw batch amount and explicit provider normalization as distinct evidence; do not certify this as the primary final concentration. The DSM 16705 yeast row must additionally follow its separate conditional decision."
+  },
+  {
+    "quantity_id": "q3",
+    "ingredient_or_context": "DSMZ branch: KH2PO4",
+    "decision": "conflict",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.324484",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.324484",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.324484",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.324484",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_branch": "base DSMZ 901",
+      "source_amount": 0.33,
+      "source_unit": "g",
+      "source_attribute": null,
+      "preserve_stage": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.33,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.324484,\n                        \"mmol_l\": 2.38442,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "Local value matches the provider-derived g/L, whose declared denominator is 1017 ml. Primary listed liquid aliquots sum to 1017.5 ml and no measured final make-up is specified. Preserve the raw batch amount and explicit provider normalization as distinct evidence; do not certify this as the primary final concentration. The DSM 16705 yeast row must additionally follow its separate conditional decision."
+  },
+  {
+    "quantity_id": "q4",
+    "ingredient_or_context": "DSMZ branch: MgCl2 x 6 H2O",
+    "decision": "conflict",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.324484",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.324484",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.324484",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.324484",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_branch": "base DSMZ 901",
+      "source_amount": 0.33,
+      "source_unit": "g",
+      "source_attribute": null,
+      "preserve_stage": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[0].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\": 0.33,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.324484,\n                        \"mmol_l\": 1.59606,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "Local value matches the provider-derived g/L, whose declared denominator is 1017 ml. Primary listed liquid aliquots sum to 1017.5 ml and no measured final make-up is specified. Preserve the raw batch amount and explicit provider normalization as distinct evidence; do not certify this as the primary final concentration. The DSM 16705 yeast row must additionally follow its separate conditional decision."
+  },
+  {
+    "quantity_id": "q5",
+    "ingredient_or_context": "DSMZ branch: CaCl2 x 2 H2O",
+    "decision": "conflict",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.324484",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.324484",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.324484",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.324484",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_branch": "base DSMZ 901",
+      "source_amount": 0.33,
+      "source_unit": "g",
+      "source_attribute": null,
+      "preserve_stage": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[0].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.33,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.324484,\n                        \"mmol_l\": 2.20715,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "Local value matches the provider-derived g/L, whose declared denominator is 1017 ml. Primary listed liquid aliquots sum to 1017.5 ml and no measured final make-up is specified. Preserve the raw batch amount and explicit provider normalization as distinct evidence; do not certify this as the primary final concentration. The DSM 16705 yeast row must additionally follow its separate conditional decision."
+  },
+  {
+    "quantity_id": "q6",
+    "ingredient_or_context": "DSMZ branch: Sodium resazurin",
+    "decision": "conflict",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.000491642",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.000491642",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.000491642",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.000491642",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_branch": "base DSMZ 901",
+      "source_amount": 0.5,
+      "source_unit": "ml",
+      "source_attribute": "0.1% w/v",
+      "preserve_stage": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[0].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.000491642,\n                        \"mmol_l\": 0.00195741,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "Local value matches the provider-derived g/L, whose declared denominator is 1017 ml. Primary listed liquid aliquots sum to 1017.5 ml and no measured final make-up is specified. Preserve the raw batch amount and explicit provider normalization as distinct evidence; do not certify this as the primary final concentration. The DSM 16705 yeast row must additionally follow its separate conditional decision."
+  },
+  {
+    "quantity_id": "q7",
+    "ingredient_or_context": "DSMZ branch: Sulfur",
+    "decision": "conflict",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "9.83284",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "9.83284",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "9.83284",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "9.83284",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_branch": "base DSMZ 901",
+      "source_amount": 10,
+      "source_unit": "g",
+      "source_attribute": "powdered",
+      "preserve_stage": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[0].recipe[7]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Sulfur\",\n                        \"compound_id\": 80,\n                        \"condition\": \"\",\n                        \"attribute\": \"powdered\",\n                        \"amount\": 10,\n                        \"unit\": \"g\",\n                        \"g_l\": 9.83284,\n                        \"mmol_l\": 306.606,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "Local value matches the provider-derived g/L, whose declared denominator is 1017 ml. Primary listed liquid aliquots sum to 1017.5 ml and no measured final make-up is specified. Preserve the raw batch amount and explicit provider normalization as distinct evidence; do not certify this as the primary final concentration. The DSM 16705 yeast row must additionally follow its separate conditional decision."
+  },
+  {
+    "quantity_id": "q8",
+    "ingredient_or_context": "DSMZ branch: Yeast extract",
+    "decision": "conflict",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "2.94985",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "2.94985",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "2.94985",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "2.94985",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_branch": "base DSMZ 901",
+      "source_amount": 3,
+      "source_unit": "g",
+      "source_attribute": null,
+      "preserve_stage": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[0].recipe[8]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.94985,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "Local value matches the provider-derived g/L, whose declared denominator is 1017 ml. Primary listed liquid aliquots sum to 1017.5 ml and no measured final make-up is specified. Preserve the raw batch amount and explicit provider normalization as distinct evidence; do not certify this as the primary final concentration. The DSM 16705 yeast row must additionally follow its separate conditional decision."
+  },
+  {
+    "quantity_id": "q9",
+    "ingredient_or_context": "DSMZ branch: HCl",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_branch": "SL-10 stock",
+      "source_amount": 10,
+      "source_unit": "ml",
+      "source_attribute": "25%",
+      "preserve_stage": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[1].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"HCl\",\n                        \"compound_id\": 68,\n                        \"attribute\": \"25%\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"g_l\": 2.5,\n                        \"mmol_l\": 68.5683,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "This is an undiluted stock value placed at the receiving-medium root. Restore stock scope and the separately listed aliquot; never treat a stock concentration as its final-medium contribution. Exact final volume is unresolved, so no final-medium conversion is proposed. HCl 25% has no stated percentage basis/density here; provider 2.5 g/L does not independently justify a mass conversion. Retain 10 ml of the described acid stock."
+  },
+  {
+    "quantity_id": "q10",
+    "ingredient_or_context": "DSMZ branch: FeCl2 x 4 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_branch": "SL-10 stock",
+      "source_amount": 1.5,
+      "source_unit": "g",
+      "source_attribute": null,
+      "preserve_stage": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[1].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"FeCl2 x 4 H2O\",\n                        \"compound_id\": 260,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\": 7.54482,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "This is an undiluted stock value placed at the receiving-medium root. Restore stock scope and the separately listed aliquot; never treat a stock concentration as its final-medium contribution. Exact final volume is unresolved, so no final-medium conversion is proposed."
+  },
+  {
+    "quantity_id": "q11",
+    "ingredient_or_context": "DSMZ branch: ZnCl2",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.07",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.07",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.07",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.07",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_branch": "SL-10 stock",
+      "source_amount": 70,
+      "source_unit": "mg",
+      "source_attribute": null,
+      "preserve_stage": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[1].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"ZnCl2\",\n                        \"compound_id\": 64,\n                        \"amount\": 70,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.07,\n                        \"mmol_l\": 0.513573,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "This is an undiluted stock value placed at the receiving-medium root. Restore stock scope and the separately listed aliquot; never treat a stock concentration as its final-medium contribution. Exact final volume is unresolved, so no final-medium conversion is proposed."
+  },
+  {
+    "quantity_id": "q12",
+    "ingredient_or_context": "DSMZ branch: MnCl2 x 4 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_branch": "SL-10 stock",
+      "source_amount": 100,
+      "source_unit": "mg",
+      "source_attribute": null,
+      "preserve_stage": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[1].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\": 36,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.505293,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "This is an undiluted stock value placed at the receiving-medium root. Restore stock scope and the separately listed aliquot; never treat a stock concentration as its final-medium contribution. Exact final volume is unresolved, so no final-medium conversion is proposed."
+  },
+  {
+    "quantity_id": "q13",
+    "ingredient_or_context": "DSMZ branch: H3BO3",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.006",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.006",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.006",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.006",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_branch": "SL-10 stock",
+      "source_amount": 6,
+      "source_unit": "mg",
+      "source_attribute": null,
+      "preserve_stage": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[1].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\": 6,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.006,\n                        \"mmol_l\": 0.0970246,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "This is an undiluted stock value placed at the receiving-medium root. Restore stock scope and the separately listed aliquot; never treat a stock concentration as its final-medium contribution. Exact final volume is unresolved, so no final-medium conversion is proposed."
+  },
+  {
+    "quantity_id": "q14",
+    "ingredient_or_context": "DSMZ branch: CoCl2 x 6 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.19",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.19",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.19",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.19",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_branch": "SL-10 stock",
+      "source_amount": 190,
+      "source_unit": "mg",
+      "source_attribute": null,
+      "preserve_stage": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[1].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\": 38,\n                        \"amount\": 190,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.19,\n                        \"mmol_l\": 1.46335,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "This is an undiluted stock value placed at the receiving-medium root. Restore stock scope and the separately listed aliquot; never treat a stock concentration as its final-medium contribution. Exact final volume is unresolved, so no final-medium conversion is proposed."
+  },
+  {
+    "quantity_id": "q15",
+    "ingredient_or_context": "DSMZ branch: CuCl2 x 2 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_branch": "SL-10 stock",
+      "source_amount": 2,
+      "source_unit": "mg",
+      "source_attribute": null,
+      "preserve_stage": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[1].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"CuCl2 x 2 H2O\",\n                        \"compound_id\": 39,\n                        \"amount\": 2,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\": 0.0117314,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "This is an undiluted stock value placed at the receiving-medium root. Restore stock scope and the separately listed aliquot; never treat a stock concentration as its final-medium contribution. Exact final volume is unresolved, so no final-medium conversion is proposed."
+  },
+  {
+    "quantity_id": "q16",
+    "ingredient_or_context": "DSMZ branch: NiCl2 x 6 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.024",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.024",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.024",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.024",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_branch": "SL-10 stock",
+      "source_amount": 24,
+      "source_unit": "mg",
+      "source_attribute": null,
+      "preserve_stage": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[1].recipe[7]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\": 40,\n                        \"amount\": 24,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.024,\n                        \"mmol_l\": 0.185187,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "This is an undiluted stock value placed at the receiving-medium root. Restore stock scope and the separately listed aliquot; never treat a stock concentration as its final-medium contribution. Exact final volume is unresolved, so no final-medium conversion is proposed."
+  },
+  {
+    "quantity_id": "q17",
+    "ingredient_or_context": "DSMZ branch: Na2MoO4 x 2 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.036",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.036",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.036",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.036",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_branch": "SL-10 stock",
+      "source_amount": 36,
+      "source_unit": "mg",
+      "source_attribute": null,
+      "preserve_stage": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[1].recipe[8]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\": 36,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.036,\n                        \"mmol_l\": 0.148791,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "This is an undiluted stock value placed at the receiving-medium root. Restore stock scope and the separately listed aliquot; never treat a stock concentration as its final-medium contribution. Exact final volume is unresolved, so no final-medium conversion is proposed."
+  },
+  {
+    "quantity_id": "q18",
+    "ingredient_or_context": "DSMZ branch: Biotin",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_branch": "Wolin vitamins 10x stock",
+      "source_amount": 20,
+      "source_unit": "mg",
+      "source_attribute": null,
+      "preserve_stage": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[2].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Biotin\",\n                        \"compound_id\": 46,\n                        \"amount\": 20,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0818632,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "This is an undiluted stock value placed at the receiving-medium root. Restore stock scope and the separately listed aliquot; never treat a stock concentration as its final-medium contribution. Exact final volume is unresolved, so no final-medium conversion is proposed."
+  },
+  {
+    "quantity_id": "q19",
+    "ingredient_or_context": "DSMZ branch: Folic acid",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_branch": "Wolin vitamins 10x stock",
+      "source_amount": 20,
+      "source_unit": "mg",
+      "source_attribute": null,
+      "preserve_stage": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[2].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Folic acid\",\n                        \"compound_id\": 138,\n                        \"amount\": 20,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0453104,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "This is an undiluted stock value placed at the receiving-medium root. Restore stock scope and the separately listed aliquot; never treat a stock concentration as its final-medium contribution. Exact final volume is unresolved, so no final-medium conversion is proposed."
+  },
+  {
+    "quantity_id": "q20",
+    "ingredient_or_context": "DSMZ branch: Pyridoxine hydrochloride",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_branch": "Wolin vitamins 10x stock",
+      "source_amount": 100,
+      "source_unit": "mg",
+      "source_attribute": null,
+      "preserve_stage": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[2].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\": 519,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.486287,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "This is an undiluted stock value placed at the receiving-medium root. Restore stock scope and the separately listed aliquot; never treat a stock concentration as its final-medium contribution. Exact final volume is unresolved, so no final-medium conversion is proposed."
+  },
+  {
+    "quantity_id": "q21",
+    "ingredient_or_context": "DSMZ branch: Thiamine HCl",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_branch": "Wolin vitamins 10x stock",
+      "source_amount": 50,
+      "source_unit": "mg",
+      "source_attribute": null,
+      "preserve_stage": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[2].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Thiamine HCl\",\n                        \"compound_id\": 1207,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.148236,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "This is an undiluted stock value placed at the receiving-medium root. Restore stock scope and the separately listed aliquot; never treat a stock concentration as its final-medium contribution. Exact final volume is unresolved, so no final-medium conversion is proposed."
+  },
+  {
+    "quantity_id": "q22",
+    "ingredient_or_context": "DSMZ branch: Riboflavin",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_branch": "Wolin vitamins 10x stock",
+      "source_amount": 50,
+      "source_unit": "mg",
+      "source_attribute": null,
+      "preserve_stage": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[2].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Riboflavin\",\n                        \"compound_id\": 136,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.132837,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "This is an undiluted stock value placed at the receiving-medium root. Restore stock scope and the separately listed aliquot; never treat a stock concentration as its final-medium contribution. Exact final volume is unresolved, so no final-medium conversion is proposed."
+  },
+  {
+    "quantity_id": "q23",
+    "ingredient_or_context": "DSMZ branch: Nicotinic acid",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_branch": "Wolin vitamins 10x stock",
+      "source_amount": 50,
+      "source_unit": "mg",
+      "source_attribute": null,
+      "preserve_stage": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[2].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\": 139,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.406141,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "This is an undiluted stock value placed at the receiving-medium root. Restore stock scope and the separately listed aliquot; never treat a stock concentration as its final-medium contribution. Exact final volume is unresolved, so no final-medium conversion is proposed."
+  },
+  {
+    "quantity_id": "q24",
+    "ingredient_or_context": "DSMZ branch: Calcium D-(+)-pantothenate",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_branch": "Wolin vitamins 10x stock",
+      "source_amount": 50,
+      "source_unit": "mg",
+      "source_attribute": null,
+      "preserve_stage": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[2].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Calcium D-(+)-pantothenate\",\n                        \"compound_id\": 1512,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.209846,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "This is an undiluted stock value placed at the receiving-medium root. Restore stock scope and the separately listed aliquot; never treat a stock concentration as its final-medium contribution. Exact final volume is unresolved, so no final-medium conversion is proposed. DSMZ explicitly specifies calcium D-(+)-pantothenate; its stereochemical correspondence differs from generic JCM calcium pantothenate wording."
+  },
+  {
+    "quantity_id": "q25",
+    "ingredient_or_context": "DSMZ branch: Vitamin B12",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_branch": "Wolin vitamins 10x stock",
+      "source_amount": 1,
+      "source_unit": "mg",
+      "source_attribute": null,
+      "preserve_stage": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[2].recipe[7]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\": 18,\n                        \"amount\": 1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\": 0.00073779,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "This is an undiluted stock value placed at the receiving-medium root. Restore stock scope and the separately listed aliquot; never treat a stock concentration as its final-medium contribution. Exact final volume is unresolved, so no final-medium conversion is proposed."
+  },
+  {
+    "quantity_id": "q26",
+    "ingredient_or_context": "DSMZ branch: p-Aminobenzoic acid",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_branch": "Wolin vitamins 10x stock",
+      "source_amount": 50,
+      "source_unit": "mg",
+      "source_attribute": null,
+      "preserve_stage": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[2].recipe[8]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\": 47,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.364591,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "This is an undiluted stock value placed at the receiving-medium root. Restore stock scope and the separately listed aliquot; never treat a stock concentration as its final-medium contribution. Exact final volume is unresolved, so no final-medium conversion is proposed."
+  },
+  {
+    "quantity_id": "q27",
+    "ingredient_or_context": "DSMZ branch: (DL)-alpha-Lipoic acid",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_branch": "Wolin vitamins 10x stock",
+      "source_amount": 50,
+      "source_unit": "mg",
+      "source_attribute": null,
+      "preserve_stage": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[2].recipe[9]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"(DL)-alpha-Lipoic acid\",\n                        \"compound_id\": 252,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.24233,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "This is an undiluted stock value placed at the receiving-medium root. Restore stock scope and the separately listed aliquot; never treat a stock concentration as its final-medium contribution. Exact final volume is unresolved, so no final-medium conversion is proposed."
+  },
+  {
+    "quantity_id": "q28",
+    "ingredient_or_context": "DSMZ branch: Na2S x 9 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_branch": "3% w/v sulfide stock",
+      "source_amount": 3,
+      "source_unit": "g",
+      "source_attribute": null,
+      "preserve_stage": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[3].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 30,\n                        \"mmol_l\": 124.905,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "This is an undiluted stock value placed at the receiving-medium root. Restore stock scope and the separately listed aliquot; never treat a stock concentration as its final-medium contribution. Exact final volume is unresolved, so no final-medium conversion is proposed."
+  },
+  {
+    "quantity_id": "q29",
+    "ingredient_or_context": "JCM branch: NH4Cl",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.326087",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.326087",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_solution_id": 4022,
+      "source_amount": 0.33,
+      "source_unit": "g",
+      "source_attribute": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ308api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J308",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\": 0.33,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.326087,\n                        \"mmol_l\": 6.09622,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5"
+      }
+    ],
+    "rationale": "Existing values match the current JCM provider g_l on its declared 1012 ml basis but lack attached evidence. Preserve original batch amounts, the nominal provider basis and separate-stock preparation; the primary does not establish measured final volume after all prepared stocks. JCM 934 inherits only its justified base context and has its own yeast/glucose modification."
+  },
+  {
+    "quantity_id": "q30",
+    "ingredient_or_context": "JCM branch: KH2PO4",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.326087",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.326087",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_solution_id": 4022,
+      "source_amount": 0.33,
+      "source_unit": "g",
+      "source_attribute": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ308api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J308",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.33,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.326087,\n                        \"mmol_l\": 2.39618,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5"
+      }
+    ],
+    "rationale": "Existing values match the current JCM provider g_l on its declared 1012 ml basis but lack attached evidence. Preserve original batch amounts, the nominal provider basis and separate-stock preparation; the primary does not establish measured final volume after all prepared stocks. JCM 934 inherits only its justified base context and has its own yeast/glucose modification."
+  },
+  {
+    "quantity_id": "q31",
+    "ingredient_or_context": "JCM branch: KCl",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.326087",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.326087",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_solution_id": 4022,
+      "source_amount": 0.33,
+      "source_unit": "g",
+      "source_attribute": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ308api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J308",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\": 0.33,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.326087,\n                        \"mmol_l\": 4.37407,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5"
+      }
+    ],
+    "rationale": "Existing values match the current JCM provider g_l on its declared 1012 ml basis but lack attached evidence. Preserve original batch amounts, the nominal provider basis and separate-stock preparation; the primary does not establish measured final volume after all prepared stocks. JCM 934 inherits only its justified base context and has its own yeast/glucose modification."
+  },
+  {
+    "quantity_id": "q32",
+    "ingredient_or_context": "JCM branch: CaCl2 x 2 H2O",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.326087",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.326087",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_solution_id": 4022,
+      "source_amount": 0.33,
+      "source_unit": "g",
+      "source_attribute": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ308api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J308",
+        "source_locator": "$.data.solutions[0].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.33,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.326087,\n                        \"mmol_l\": 2.21805,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5"
+      }
+    ],
+    "rationale": "Existing values match the current JCM provider g_l on its declared 1012 ml basis but lack attached evidence. Preserve original batch amounts, the nominal provider basis and separate-stock preparation; the primary does not establish measured final volume after all prepared stocks. JCM 934 inherits only its justified base context and has its own yeast/glucose modification."
+  },
+  {
+    "quantity_id": "q33",
+    "ingredient_or_context": "JCM branch: MgCl2 x 6 H2O",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.326087",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.326087",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_solution_id": 4022,
+      "source_amount": 0.33,
+      "source_unit": "g",
+      "source_attribute": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ308api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J308",
+        "source_locator": "$.data.solutions[0].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\": 0.33,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.326087,\n                        \"mmol_l\": 1.60395,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5"
+      }
+    ],
+    "rationale": "Existing values match the current JCM provider g_l on its declared 1012 ml basis but lack attached evidence. Preserve original batch amounts, the nominal provider basis and separate-stock preparation; the primary does not establish measured final volume after all prepared stocks. JCM 934 inherits only its justified base context and has its own yeast/glucose modification."
+  },
+  {
+    "quantity_id": "q34",
+    "ingredient_or_context": "JCM branch: Yeast extract",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.296443",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.296443",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_solution_id": 4022,
+      "source_amount": 0.3,
+      "source_unit": "g",
+      "source_attribute": "BD-Difco"
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ308api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J308",
+        "source_locator": "$.data.solutions[0].recipe[8]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\": 0.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.296443,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5"
+      }
+    ],
+    "rationale": "Existing values match the current JCM provider g_l on its declared 1012 ml basis but lack attached evidence. Preserve original batch amounts, the nominal provider basis and separate-stock preparation; the primary does not establish measured final volume after all prepared stocks. JCM 934 inherits only its justified base context and has its own yeast/glucose modification."
+  },
+  {
+    "quantity_id": "q35",
+    "ingredient_or_context": "JCM branch: Sulfur",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "9.88142",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "9.88142",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_solution_id": 4022,
+      "source_amount": 10,
+      "source_unit": "g",
+      "source_attribute": "powder"
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ308api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J308",
+        "source_locator": "$.data.solutions[0].recipe[9]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Sulfur\",\n                        \"compound_id\": 80,\n                        \"attribute\": \"powder\",\n                        \"amount\": 10,\n                        \"unit\": \"g\",\n                        \"g_l\": 9.88142,\n                        \"mmol_l\": 308.12,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5"
+      }
+    ],
+    "rationale": "Existing values match the current JCM provider g_l on its declared 1012 ml basis but lack attached evidence. Preserve original batch amounts, the nominal provider basis and separate-stock preparation; the primary does not establish measured final volume after all prepared stocks. JCM 934 inherits only its justified base context and has its own yeast/glucose modification."
+  },
+  {
+    "quantity_id": "q36",
+    "ingredient_or_context": "JCM branch: Na2S x 9 H2O",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.494071",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.494071",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_solution_id": 4022,
+      "source_amount": 0.5,
+      "source_unit": "g",
+      "source_attribute": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ308api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J308",
+        "source_locator": "$.data.solutions[0].recipe[10]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.494071,\n                        \"mmol_l\": 2.05707,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5"
+      }
+    ],
+    "rationale": "Existing values match the current JCM provider g_l on its declared 1012 ml basis but lack attached evidence. Preserve original batch amounts, the nominal provider basis and separate-stock preparation; the primary does not establish measured final volume after all prepared stocks. JCM 934 inherits only its justified base context and has its own yeast/glucose modification."
+  },
+  {
+    "quantity_id": "q37",
+    "ingredient_or_context": "JCM branch: Resazurin",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.000988142",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.000988142",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_solution_id": 4022,
+      "source_amount": 1,
+      "source_unit": "mg",
+      "source_attribute": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ308api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J308",
+        "source_locator": "$.data.solutions[0].recipe[11]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Resazurin\",\n                        \"compound_id\": 25,\n                        \"amount\": 1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.000988142,\n                        \"mmol_l\": 0.00431145,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5"
+      }
+    ],
+    "rationale": "Existing values match the current JCM provider g_l on its declared 1012 ml basis but lack attached evidence. Preserve original batch amounts, the nominal provider basis and separate-stock preparation; the primary does not establish measured final volume after all prepared stocks. JCM 934 inherits only its justified base context and has its own yeast/glucose modification."
+  },
+  {
+    "quantity_id": "q38",
+    "ingredient_or_context": "JCM branch: HCl",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_solution_id": 3846,
+      "source_amount": 10,
+      "source_unit": "ml",
+      "source_attribute": "7.7 M, 25%"
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ308api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J308",
+        "source_locator": "$.data.solutions[1].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"HCl\",\n                        \"compound_id\": 68,\n                        \"attribute\": \"7.7 M, 25%\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"g_l\": 2.5,\n                        \"mmol_l\": 68.5683,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5"
+      }
+    ],
+    "rationale": "The JCM owners flatten this stock concentration into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot, retaining raw source amount, stock water and provider nominal 1000 ml basis. No final-medium concentration is inferred. Primary JCM 187 gives 25% HCl (7.7 M), 10 ml; do not replace its explicit molarity with provider 2.5 g/L or invent a percent basis."
+  },
+  {
+    "quantity_id": "q39",
+    "ingredient_or_context": "JCM branch: FeCl2 x 4 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_solution_id": 3846,
+      "source_amount": 1.5,
+      "source_unit": "g",
+      "source_attribute": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ308api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J308",
+        "source_locator": "$.data.solutions[1].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"FeCl2 x 4 H2O\",\n                        \"compound_id\": 260,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\": 7.54482,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5"
+      }
+    ],
+    "rationale": "The JCM owners flatten this stock concentration into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot, retaining raw source amount, stock water and provider nominal 1000 ml basis. No final-medium concentration is inferred."
+  },
+  {
+    "quantity_id": "q40",
+    "ingredient_or_context": "JCM branch: ZnCl2",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.07",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.07",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_solution_id": 3847,
+      "source_amount": 70,
+      "source_unit": "mg",
+      "source_attribute": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ308api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J308",
+        "source_locator": "$.data.solutions[2].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"ZnCl2\",\n                        \"compound_id\": 64,\n                        \"amount\": 70,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.07,\n                        \"mmol_l\": 0.513573,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5"
+      }
+    ],
+    "rationale": "The JCM owners flatten this stock concentration into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot, retaining raw source amount, stock water and provider nominal 1000 ml basis. No final-medium concentration is inferred."
+  },
+  {
+    "quantity_id": "q41",
+    "ingredient_or_context": "JCM branch: MnCl2 x 4 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_solution_id": 3847,
+      "source_amount": 100,
+      "source_unit": "mg",
+      "source_attribute": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ308api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J308",
+        "source_locator": "$.data.solutions[2].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\": 36,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.505293,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5"
+      }
+    ],
+    "rationale": "The JCM owners flatten this stock concentration into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot, retaining raw source amount, stock water and provider nominal 1000 ml basis. No final-medium concentration is inferred."
+  },
+  {
+    "quantity_id": "q42",
+    "ingredient_or_context": "JCM branch: H3BO3",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.006",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.006",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_solution_id": 3847,
+      "source_amount": 6,
+      "source_unit": "mg",
+      "source_attribute": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ308api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J308",
+        "source_locator": "$.data.solutions[2].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\": 6,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.006,\n                        \"mmol_l\": 0.0970246,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5"
+      }
+    ],
+    "rationale": "The JCM owners flatten this stock concentration into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot, retaining raw source amount, stock water and provider nominal 1000 ml basis. No final-medium concentration is inferred."
+  },
+  {
+    "quantity_id": "q43",
+    "ingredient_or_context": "JCM branch: CoCl2 x 6 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.19",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.19",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_solution_id": 3847,
+      "source_amount": 190,
+      "source_unit": "mg",
+      "source_attribute": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ308api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J308",
+        "source_locator": "$.data.solutions[2].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\": 38,\n                        \"amount\": 190,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.19,\n                        \"mmol_l\": 1.46335,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5"
+      }
+    ],
+    "rationale": "The JCM owners flatten this stock concentration into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot, retaining raw source amount, stock water and provider nominal 1000 ml basis. No final-medium concentration is inferred."
+  },
+  {
+    "quantity_id": "q44",
+    "ingredient_or_context": "JCM branch: CuCl2 x 2 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_solution_id": 3847,
+      "source_amount": 2,
+      "source_unit": "mg",
+      "source_attribute": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ308api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J308",
+        "source_locator": "$.data.solutions[2].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"CuCl2 x 2 H2O\",\n                        \"compound_id\": 39,\n                        \"amount\": 2,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\": 0.0117314,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5"
+      }
+    ],
+    "rationale": "The JCM owners flatten this stock concentration into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot, retaining raw source amount, stock water and provider nominal 1000 ml basis. No final-medium concentration is inferred."
+  },
+  {
+    "quantity_id": "q45",
+    "ingredient_or_context": "JCM branch: NiCl2 x 6 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.024",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.024",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_solution_id": 3847,
+      "source_amount": 24,
+      "source_unit": "mg",
+      "source_attribute": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ308api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J308",
+        "source_locator": "$.data.solutions[2].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\": 40,\n                        \"amount\": 24,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.024,\n                        \"mmol_l\": 0.185187,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5"
+      }
+    ],
+    "rationale": "The JCM owners flatten this stock concentration into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot, retaining raw source amount, stock water and provider nominal 1000 ml basis. No final-medium concentration is inferred."
+  },
+  {
+    "quantity_id": "q46",
+    "ingredient_or_context": "JCM branch: Na2MoO4 x 2 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.036",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.036",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_solution_id": 3847,
+      "source_amount": 36,
+      "source_unit": "mg",
+      "source_attribute": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ308api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J308",
+        "source_locator": "$.data.solutions[2].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\": 36,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.036,\n                        \"mmol_l\": 0.148791,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5"
+      }
+    ],
+    "rationale": "The JCM owners flatten this stock concentration into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot, retaining raw source amount, stock water and provider nominal 1000 ml basis. No final-medium concentration is inferred."
+  },
+  {
+    "quantity_id": "q47",
+    "ingredient_or_context": "JCM branch: Biotin",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_solution_id": 3861,
+      "source_amount": 2,
+      "source_unit": "mg",
+      "source_attribute": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ308api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J308",
+        "source_locator": "$.data.solutions[3].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Biotin\",\n                        \"compound_id\": 46,\n                        \"amount\": 2,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\": 0.00818632,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5"
+      }
+    ],
+    "rationale": "The JCM owners flatten this stock concentration into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot, retaining raw source amount, stock water and provider nominal 1000 ml basis. No final-medium concentration is inferred."
+  },
+  {
+    "quantity_id": "q48",
+    "ingredient_or_context": "JCM branch: Folic acid",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_solution_id": 3861,
+      "source_amount": 2,
+      "source_unit": "mg",
+      "source_attribute": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ308api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J308",
+        "source_locator": "$.data.solutions[3].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Folic acid\",\n                        \"compound_id\": 138,\n                        \"amount\": 2,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\": 0.00453104,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5"
+      }
+    ],
+    "rationale": "The JCM owners flatten this stock concentration into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot, retaining raw source amount, stock water and provider nominal 1000 ml basis. No final-medium concentration is inferred."
+  },
+  {
+    "quantity_id": "q49",
+    "ingredient_or_context": "JCM branch: Pyridoxine hydrochloride",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_solution_id": 3861,
+      "source_amount": 10,
+      "source_unit": "mg",
+      "source_attribute": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ308api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J308",
+        "source_locator": "$.data.solutions[3].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\": 519,\n                        \"amount\": 10,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0486287,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5"
+      }
+    ],
+    "rationale": "The JCM owners flatten this stock concentration into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot, retaining raw source amount, stock water and provider nominal 1000 ml basis. No final-medium concentration is inferred."
+  },
+  {
+    "quantity_id": "q50",
+    "ingredient_or_context": "JCM branch: Thiamine HCl",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_solution_id": 3861,
+      "source_amount": 5,
+      "source_unit": "mg",
+      "source_attribute": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ308api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J308",
+        "source_locator": "$.data.solutions[3].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Thiamine HCl\",\n                        \"compound_id\": 1207,\n                        \"amount\": 5,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.005,\n                        \"mmol_l\": 0.0148236,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5"
+      }
+    ],
+    "rationale": "The JCM owners flatten this stock concentration into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot, retaining raw source amount, stock water and provider nominal 1000 ml basis. No final-medium concentration is inferred."
+  },
+  {
+    "quantity_id": "q51",
+    "ingredient_or_context": "JCM branch: Riboflavin",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_solution_id": 3861,
+      "source_amount": 5,
+      "source_unit": "mg",
+      "source_attribute": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ308api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J308",
+        "source_locator": "$.data.solutions[3].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Riboflavin\",\n                        \"compound_id\": 136,\n                        \"amount\": 5,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.005,\n                        \"mmol_l\": 0.0132837,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5"
+      }
+    ],
+    "rationale": "The JCM owners flatten this stock concentration into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot, retaining raw source amount, stock water and provider nominal 1000 ml basis. No final-medium concentration is inferred."
+  },
+  {
+    "quantity_id": "q52",
+    "ingredient_or_context": "JCM branch: Nicotinic acid",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_solution_id": 3861,
+      "source_amount": 5,
+      "source_unit": "mg",
+      "source_attribute": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ308api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J308",
+        "source_locator": "$.data.solutions[3].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\": 139,\n                        \"amount\": 5,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.005,\n                        \"mmol_l\": 0.0406141,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5"
+      }
+    ],
+    "rationale": "The JCM owners flatten this stock concentration into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot, retaining raw source amount, stock water and provider nominal 1000 ml basis. No final-medium concentration is inferred."
+  },
+  {
+    "quantity_id": "q53",
+    "ingredient_or_context": "JCM branch: Calcium pantothenate",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_solution_id": 3861,
+      "source_amount": 5,
+      "source_unit": "mg",
+      "source_attribute": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ308api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J308",
+        "source_locator": "$.data.solutions[3].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Calcium pantothenate\",\n                        \"compound_id\": 518,\n                        \"amount\": 5,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.005,\n                        \"mmol_l\": 0.0104925,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5"
+      }
+    ],
+    "rationale": "The JCM owners flatten this stock concentration into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot, retaining raw source amount, stock water and provider nominal 1000 ml basis. No final-medium concentration is inferred. Generic source calcium pantothenate does not independently establish the stereospecific CHEBI:31345 supply form."
+  },
+  {
+    "quantity_id": "q54",
+    "ingredient_or_context": "JCM branch: Vitamin B12",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "0.0001",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "0.0001",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_solution_id": 3861,
+      "source_amount": 0.1,
+      "source_unit": "mg",
+      "source_attribute": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ308api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J308",
+        "source_locator": "$.data.solutions[3].recipe[7]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\": 18,\n                        \"amount\": 0.1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0001,\n                        \"mmol_l\": 7.3779e-5,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5"
+      }
+    ],
+    "rationale": "The JCM owners flatten this stock concentration into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot, retaining raw source amount, stock water and provider nominal 1000 ml basis. No final-medium concentration is inferred."
+  },
+  {
+    "quantity_id": "q55",
+    "ingredient_or_context": "JCM branch: p-Aminobenzoic acid",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_solution_id": 3861,
+      "source_amount": 5,
+      "source_unit": "mg",
+      "source_attribute": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ308api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J308",
+        "source_locator": "$.data.solutions[3].recipe[8]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\": 47,\n                        \"amount\": 5,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.005,\n                        \"mmol_l\": 0.0364591,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5"
+      }
+    ],
+    "rationale": "The JCM owners flatten this stock concentration into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot, retaining raw source amount, stock water and provider nominal 1000 ml basis. No final-medium concentration is inferred."
+  },
+  {
+    "quantity_id": "q56",
+    "ingredient_or_context": "JCM branch: Lipoic acid",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": {
+      "source_solution_id": 3861,
+      "source_amount": 5,
+      "source_unit": "mg",
+      "source_attribute": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ308api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J308",
+        "source_locator": "$.data.solutions[3].recipe[9]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Lipoic acid\",\n                        \"compound_id\": 368,\n                        \"amount\": 5,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.005,\n                        \"mmol_l\": 0.024233,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5"
+      }
+    ],
+    "rationale": "The JCM owners flatten this stock concentration into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot, retaining raw source amount, stock water and provider nominal 1000 ml basis. No final-medium concentration is inferred."
+  },
+  {
+    "quantity_id": "q57",
+    "ingredient_or_context": "DSMZ receiving: Trace element solution SL-10",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": {
+      "amount": 1,
+      "unit": "ml",
+      "attribute": null,
+      "source_stage": "DSMZ receiving batch"
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\": 595,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "Absent as a faithful stock-dose/water representation in these layers. Restore source-scoped assembly without double-counting flattened direct ingredients. A stock name or nominal x label is not a universal working dose."
+  },
+  {
+    "quantity_id": "q58",
+    "ingredient_or_context": "DSMZ receiving: Sodium resazurin",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": {
+      "amount": 0.5,
+      "unit": "ml",
+      "attribute": "0.1% w/v",
+      "source_stage": "DSMZ receiving batch"
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[0].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.000491642,\n                        \"mmol_l\": 0.00195741,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "Absent as a faithful stock-dose/water representation in these layers. Restore source-scoped assembly without double-counting flattened direct ingredients. A stock name or nominal x label is not a universal working dose."
+  },
+  {
+    "quantity_id": "q59",
+    "ingredient_or_context": "DSMZ receiving: Wolin's vitamin solution (10x)",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": {
+      "amount": 1,
+      "unit": "ml",
+      "attribute": null,
+      "source_stage": "DSMZ receiving batch"
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[0].recipe[9]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 10,\n                        \"solution\": \"Wolin's vitamin solution (10x)\",\n                        \"solution_id\": 5980,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "Absent as a faithful stock-dose/water representation in these layers. Restore source-scoped assembly without double-counting flattened direct ingredients. A stock name or nominal x label is not a universal working dose."
+  },
+  {
+    "quantity_id": "q60",
+    "ingredient_or_context": "DSMZ receiving: Neutralized sulfide solution 3% (w/v)",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": {
+      "amount": 15,
+      "unit": "ml",
+      "attribute": null,
+      "source_stage": "DSMZ receiving batch"
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[0].recipe[10]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 11,\n                        \"solution\": \"Neutralized sulfide solution 3% (w/v)\",\n                        \"solution_id\": 34,\n                        \"amount\": 15,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "Absent as a faithful stock-dose/water representation in these layers. Restore source-scoped assembly without double-counting flattened direct ingredients. A stock name or nominal x label is not a universal working dose."
+  },
+  {
+    "quantity_id": "q61",
+    "ingredient_or_context": "DSMZ receiving: Distilled water",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": {
+      "amount": 1000,
+      "unit": "ml",
+      "attribute": null,
+      "source_stage": "DSMZ receiving batch"
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[0].recipe[11]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "Absent as a faithful stock-dose/water representation in these layers. Restore source-scoped assembly without double-counting flattened direct ingredients. A stock name or nominal x label is not a universal working dose."
+  },
+  {
+    "quantity_id": "q62",
+    "ingredient_or_context": "JCM receiving: FeCl2 solution",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": {
+      "amount": 1,
+      "unit": "ml",
+      "attribute": null,
+      "source_stage": "JCM receiving batch"
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ308api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J308",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"solution\": \"FeCl2 solution\",\n                        \"solution_id\": 3846,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5"
+      }
+    ],
+    "rationale": "Absent as a faithful stock-dose/water representation in these layers. Restore source-scoped assembly without double-counting flattened direct ingredients. A stock name or nominal x label is not a universal working dose."
+  },
+  {
+    "quantity_id": "q63",
+    "ingredient_or_context": "JCM receiving: Trace element solution",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": {
+      "amount": 1,
+      "unit": "ml",
+      "attribute": null,
+      "source_stage": "JCM receiving batch"
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ308api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J308",
+        "source_locator": "$.data.solutions[0].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"solution\": \"Trace element solution\",\n                        \"solution_id\": 3847,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5"
+      }
+    ],
+    "rationale": "Absent as a faithful stock-dose/water representation in these layers. Restore source-scoped assembly without double-counting flattened direct ingredients. A stock name or nominal x label is not a universal working dose."
+  },
+  {
+    "quantity_id": "q64",
+    "ingredient_or_context": "JCM receiving: Trace vitamins",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": {
+      "amount": 10,
+      "unit": "ml",
+      "attribute": null,
+      "source_stage": "JCM receiving batch"
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ308api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J308",
+        "source_locator": "$.data.solutions[0].recipe[7]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\": \"Trace vitamins\",\n                        \"solution_id\": 3861,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5"
+      }
+    ],
+    "rationale": "Absent as a faithful stock-dose/water representation in these layers. Restore source-scoped assembly without double-counting flattened direct ingredients. A stock name or nominal x label is not a universal working dose."
+  },
+  {
+    "quantity_id": "q65",
+    "ingredient_or_context": "JCM receiving: Distilled water",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": {
+      "amount": 1000,
+      "unit": "ml",
+      "attribute": null,
+      "source_stage": "JCM receiving batch"
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ308api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J308",
+        "source_locator": "$.data.solutions[0].recipe[12]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5"
+      }
+    ],
+    "rationale": "Absent as a faithful stock-dose/water representation in these layers. Restore source-scoped assembly without double-counting flattened direct ingredients. A stock name or nominal x label is not a universal working dose."
+  },
+  {
+    "quantity_id": "q66",
+    "ingredient_or_context": "SL-10 water",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": {
+      "stock_only": true,
+      "water_amount": 990,
+      "unit": "ml"
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[1].recipe[9]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 990,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "Keep this water inside its own stock. Do not sum nested stock preparation water into the receiving batch or equate water addition with measured final volume."
+  },
+  {
+    "quantity_id": "q67",
+    "ingredient_or_context": "Wolin 10x water",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": {
+      "stock_only": true,
+      "water_amount": 1000,
+      "unit": "ml"
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[2].recipe[10]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "Keep this water inside its own stock. Do not sum nested stock preparation water into the receiving batch or equate water addition with measured final volume."
+  },
+  {
+    "quantity_id": "q68",
+    "ingredient_or_context": "Sulfide stock water",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": {
+      "stock_only": true,
+      "water_amount": 100,
+      "unit": "ml"
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadive901api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/901",
+        "source_locator": "$.data.solutions[3].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 100,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89"
+      }
+    ],
+    "rationale": "Keep this water inside its own stock. Do not sum nested stock preparation water into the receiving batch or equate water addition with measured final volume."
+  },
+  {
+    "quantity_id": "q69",
+    "ingredient_or_context": "FeCl2 stock water",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": {
+      "stock_only": true,
+      "water_amount": 990,
+      "unit": "ml"
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ308api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J308",
+        "source_locator": "$.data.solutions[1].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 990,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5"
+      }
+    ],
+    "rationale": "Keep this water inside its own stock. Do not sum nested stock preparation water into the receiving batch or equate water addition with measured final volume."
+  },
+  {
+    "quantity_id": "q70",
+    "ingredient_or_context": "Trace stock water",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": {
+      "stock_only": true,
+      "water_amount": 1000,
+      "unit": "ml"
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ308api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J308",
+        "source_locator": "$.data.solutions[2].recipe[7]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5"
+      }
+    ],
+    "rationale": "Keep this water inside its own stock. Do not sum nested stock preparation water into the receiving batch or equate water addition with measured final volume."
+  },
+  {
+    "quantity_id": "q71",
+    "ingredient_or_context": "Vitamin stock water",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": {
+      "stock_only": true,
+      "water_amount": 1000,
+      "unit": "ml"
+    },
+    "source_snippets": [
+      {
+        "source_key": "mediadiveJ308api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J308",
+        "source_locator": "$.data.solutions[3].recipe[10]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5"
+      }
+    ],
+    "rationale": "Keep this water inside its own stock. Do not sum nested stock preparation water into the receiving batch or equate water addition with measured final volume."
+  },
+  {
+    "quantity_id": "q72",
+    "ingredient_or_context": "SL-10 final make-up",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml.",
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": "Make SL-10 stock up to 1000 ml after ordered acid/iron dissolution and the remaining salts.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz901",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium901.pdf",
+        "source_locator": "Page 1, SL-10 final sentence",
+        "exact_source_quote": "make up to 1000.00 ml.",
+        "snapshot_sha256": "4c3ca772fb1448ca1e5d4c9749c4dd81a2bc1fb2f61e246b62c6ca0c4be371b6",
+        "parsed_text_sha256": "8bb48fe1dce89482aa8172146fd2a9a8bba7b1e29aa540de34b9e3b0022a1ce7"
+      }
+    ],
+    "rationale": "The DSMZ owner preserves this instruction at main-root preparation_steps[1]; its decision is correct to restore stock scope. It is absent from target/KOMODO layers. The explicit final stock basis supports stock concentrations, never an unqualified receiving-medium denominator."
+  },
+  {
+    "quantity_id": "q73",
+    "ingredient_or_context": "DSM 16705 yeast modification",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "2.94985",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": "0.10 g/L yeast extract in the DSM 16705 variant only.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz901",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium901.pdf",
+        "source_locator": "Page 1, For DSM 16705 condition",
+        "exact_source_quote": "Reduce the amount of yeast extract to 0.10 g/l",
+        "snapshot_sha256": "4c3ca772fb1448ca1e5d4c9749c4dd81a2bc1fb2f61e246b62c6ca0c4be371b6",
+        "parsed_text_sha256": "8bb48fe1dce89482aa8172146fd2a9a8bba7b1e29aa540de34b9e3b0022a1ce7"
+      }
+    ],
+    "rationale": "The conditional source explicitly reduces yeast. This is not the base 3 g batch amount and must not be overwritten by the source-duplicate signature."
+  },
+  {
+    "quantity_id": "q74",
+    "ingredient_or_context": "DSM 16705 glucose modification",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "ingredients",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": "2.00 g/L D-glucose, added after sterilization from a sterile anoxic stock, only for DSM 16705.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz901",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium901.pdf",
+        "source_locator": "Page 1, For DSM 16705 condition",
+        "exact_source_quote": "after sterilization with 2.00 g/l D-glucose added from a sterile anoxic stock solution.",
+        "snapshot_sha256": "4c3ca772fb1448ca1e5d4c9749c4dd81a2bc1fb2f61e246b62c6ca0c4be371b6",
+        "parsed_text_sha256": "8bb48fe1dce89482aa8172146fd2a9a8bba7b1e29aa540de34b9e3b0022a1ce7"
+      }
+    ],
+    "rationale": "Source-specific modification is absent from the maintained variant ingredient array; do not infer it in the base target."
+  },
+  {
+    "quantity_id": "q75",
+    "ingredient_or_context": "JCM 934 yeast modification",
+    "decision": "conflict",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.296443",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Use JCM medium No. 308 supplemented with 0.1 g/L (final) yeast extract and 2.0 g/L glucose (separately autoclaved).",
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_scope": "Retain the literal final-worded 0.1 g/L yeast statement and resolve whether it replaces the base total or denotes a supplement before normalizing.",
+    "source_snippets": [
+      {
+        "source_key": "jcm934",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=934",
+        "source_locator": "JCM 934 modification sentence",
+        "exact_source_quote": "supplemented with 0.1 g/L (final) yeast extract",
+        "snapshot_sha256": "b922390e5c9142f021fd5170543dec7732c43e37bcbe466bd9a0172617959036",
+        "parsed_text_sha256": "ea8a7c7f4348b3c8a4da8a2c90fd14c7a373ec321801204b4a09febeab011e39"
+      }
+    ],
+    "rationale": "The source wording and copied base concentration are not reconciled. Do not silently choose 0.1, add 0.1 to the base, or equate this with DSMZ's explicit reduce instruction."
+  },
+  {
+    "quantity_id": "q76",
+    "ingredient_or_context": "JCM 934 glucose modification",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "ingredients",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Use JCM medium No. 308 supplemented with 0.1 g/L (final) yeast extract and 2.0 g/L glucose (separately autoclaved).",
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_scope": "2.0 g/L glucose in JCM 934, separately autoclaved.",
+    "source_snippets": [
+      {
+        "source_key": "jcm934",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=934",
+        "source_locator": "JCM 934 modification sentence",
+        "exact_source_quote": "2.0 g/L glucose (separately autoclaved).",
+        "snapshot_sha256": "b922390e5c9142f021fd5170543dec7732c43e37bcbe466bd9a0172617959036",
+        "parsed_text_sha256": "ea8a7c7f4348b3c8a4da8a2c90fd14c7a373ec321801204b4a09febeab011e39"
+      }
+    ],
+    "rationale": "Already present in preparation prose but missing from the structured ingredient array; preserve its variant and sterilization boundary."
+  },
+  {
+    "quantity_id": "q77",
+    "ingredient_or_context": "DSMZ preparation: Initial pH",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "ADJUST_PH",
+            "description": "Dissolve ingredients except sulfur, yeast extract, vitamins and sulfide. Adjust pH to 3.5 with H2SO4 and sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials containing the appropriate amount of sulfur. Heat vessels containing medium to 90°C for 1 hour on each of 3 succesive days. Add yeast extract, vitamins (sterilized by filtration) and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. The sulfide stock solution (3% w/v) should be neutralized before use (see medium 29). The pH of the complete medium should be at 3.5 - 3.8."
+          },
+          {
+            "step_number": 2,
+            "action": "DISSOLVE",
+            "description": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml."
+          },
+          {
+            "step_number": 3,
+            "action": "AUTOCLAVE",
+            "description": "The sulfide solution is prepared in a 250 ml screw-capped bottle with a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with a syringe without opening the bottle."
+          }
+        ],
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": "Adjust pH to 3.5",
+    "source_snippets": [
+      {
+        "source_key": "dsmz901",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium901.pdf",
+        "source_locator": "Page 1, base preparation",
+        "exact_source_quote": "Adjust pH to 3.5",
+        "snapshot_sha256": "4c3ca772fb1448ca1e5d4c9749c4dd81a2bc1fb2f61e246b62c6ca0c4be371b6",
+        "parsed_text_sha256": "8bb48fe1dce89482aa8172146fd2a9a8bba7b1e29aa540de34b9e3b0022a1ce7"
+      }
+    ],
+    "rationale": "Retain DSMZ-specific main versus stock preparation and qualifier. The DSMZ owner already preserves much of this prose, while the target/KOMODO layers omit it. Stock-only steps currently at the owner main root need scope correction. No JCM atmosphere or cycle substitutes for the distinct DSMZ procedure."
+  },
+  {
+    "quantity_id": "q78",
+    "ingredient_or_context": "DSMZ preparation: CO2 composition and sparging duration",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "ADJUST_PH",
+            "description": "Dissolve ingredients except sulfur, yeast extract, vitamins and sulfide. Adjust pH to 3.5 with H2SO4 and sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials containing the appropriate amount of sulfur. Heat vessels containing medium to 90°C for 1 hour on each of 3 succesive days. Add yeast extract, vitamins (sterilized by filtration) and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. The sulfide stock solution (3% w/v) should be neutralized before use (see medium 29). The pH of the complete medium should be at 3.5 - 3.8."
+          },
+          {
+            "step_number": 2,
+            "action": "DISSOLVE",
+            "description": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml."
+          },
+          {
+            "step_number": 3,
+            "action": "AUTOCLAVE",
+            "description": "The sulfide solution is prepared in a 250 ml screw-capped bottle with a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with a syringe without opening the bottle."
+          }
+        ],
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": "with H2SO4 and sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz901",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium901.pdf",
+        "source_locator": "Page 1, base preparation",
+        "exact_source_quote": "with H2SO4 and sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic.",
+        "snapshot_sha256": "4c3ca772fb1448ca1e5d4c9749c4dd81a2bc1fb2f61e246b62c6ca0c4be371b6",
+        "parsed_text_sha256": "8bb48fe1dce89482aa8172146fd2a9a8bba7b1e29aa540de34b9e3b0022a1ce7"
+      }
+    ],
+    "rationale": "Retain DSMZ-specific main versus stock preparation and qualifier. The DSMZ owner already preserves much of this prose, while the target/KOMODO layers omit it. Stock-only steps currently at the owner main root need scope correction. No JCM atmosphere or cycle substitutes for the distinct DSMZ procedure."
+  },
+  {
+    "quantity_id": "q79",
+    "ingredient_or_context": "DSMZ preparation: Intermittent heat treatment",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "ADJUST_PH",
+            "description": "Dissolve ingredients except sulfur, yeast extract, vitamins and sulfide. Adjust pH to 3.5 with H2SO4 and sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials containing the appropriate amount of sulfur. Heat vessels containing medium to 90°C for 1 hour on each of 3 succesive days. Add yeast extract, vitamins (sterilized by filtration) and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. The sulfide stock solution (3% w/v) should be neutralized before use (see medium 29). The pH of the complete medium should be at 3.5 - 3.8."
+          },
+          {
+            "step_number": 2,
+            "action": "DISSOLVE",
+            "description": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml."
+          },
+          {
+            "step_number": 3,
+            "action": "AUTOCLAVE",
+            "description": "The sulfide solution is prepared in a 250 ml screw-capped bottle with a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with a syringe without opening the bottle."
+          }
+        ],
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": "containing medium to 90°C\nfor 1 hour on each of 3 succesive days.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz901",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium901.pdf",
+        "source_locator": "Page 1, base preparation",
+        "exact_source_quote": "containing medium to 90°C\nfor 1 hour on each of 3 succesive days.",
+        "snapshot_sha256": "4c3ca772fb1448ca1e5d4c9749c4dd81a2bc1fb2f61e246b62c6ca0c4be371b6",
+        "parsed_text_sha256": "8bb48fe1dce89482aa8172146fd2a9a8bba7b1e29aa540de34b9e3b0022a1ce7"
+      }
+    ],
+    "rationale": "Retain DSMZ-specific main versus stock preparation and qualifier. The DSMZ owner already preserves much of this prose, while the target/KOMODO layers omit it. Stock-only steps currently at the owner main root need scope correction. No JCM atmosphere or cycle substitutes for the distinct DSMZ procedure."
+  },
+  {
+    "quantity_id": "q80",
+    "ingredient_or_context": "DSMZ preparation: Anoxic stock atmosphere",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "ADJUST_PH",
+            "description": "Dissolve ingredients except sulfur, yeast extract, vitamins and sulfide. Adjust pH to 3.5 with H2SO4 and sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials containing the appropriate amount of sulfur. Heat vessels containing medium to 90°C for 1 hour on each of 3 succesive days. Add yeast extract, vitamins (sterilized by filtration) and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. The sulfide stock solution (3% w/v) should be neutralized before use (see medium 29). The pH of the complete medium should be at 3.5 - 3.8."
+          },
+          {
+            "step_number": 2,
+            "action": "DISSOLVE",
+            "description": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml."
+          },
+          {
+            "step_number": 3,
+            "action": "AUTOCLAVE",
+            "description": "The sulfide solution is prepared in a 250 ml screw-capped bottle with a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with a syringe without opening the bottle."
+          }
+        ],
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": "prepared under 100% N2 gas.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz901",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium901.pdf",
+        "source_locator": "Page 1, base preparation",
+        "exact_source_quote": "prepared under 100% N2 gas.",
+        "snapshot_sha256": "4c3ca772fb1448ca1e5d4c9749c4dd81a2bc1fb2f61e246b62c6ca0c4be371b6",
+        "parsed_text_sha256": "8bb48fe1dce89482aa8172146fd2a9a8bba7b1e29aa540de34b9e3b0022a1ce7"
+      }
+    ],
+    "rationale": "Retain DSMZ-specific main versus stock preparation and qualifier. The DSMZ owner already preserves much of this prose, while the target/KOMODO layers omit it. Stock-only steps currently at the owner main root need scope correction. No JCM atmosphere or cycle substitutes for the distinct DSMZ procedure."
+  },
+  {
+    "quantity_id": "q81",
+    "ingredient_or_context": "DSMZ preparation: Complete-medium pH range",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "ph_range",
+        "stored": {
+          "min": 3.5,
+          "max": 3.8
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "ph_range",
+        "stored": {
+          "min": 3.5,
+          "max": 3.8
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "ph_range",
+        "stored": {
+          "min": 3.5,
+          "max": 3.8
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "ph_range",
+        "stored": {
+          "min": 3.5,
+          "max": 3.8
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_scope": "complete medium should be at 3.5 - 3.8.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz901",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium901.pdf",
+        "source_locator": "Page 1, base preparation",
+        "exact_source_quote": "complete medium should be at 3.5 - 3.8.",
+        "snapshot_sha256": "4c3ca772fb1448ca1e5d4c9749c4dd81a2bc1fb2f61e246b62c6ca0c4be371b6",
+        "parsed_text_sha256": "8bb48fe1dce89482aa8172146fd2a9a8bba7b1e29aa540de34b9e3b0022a1ce7"
+      }
+    ],
+    "rationale": "Retain DSMZ-specific main versus stock preparation and qualifier. The DSMZ owner already preserves much of this prose, while the target/KOMODO layers omit it. Stock-only steps currently at the owner main root need scope correction. No JCM atmosphere or cycle substitutes for the distinct DSMZ procedure."
+  },
+  {
+    "quantity_id": "q82",
+    "ingredient_or_context": "DSMZ preparation: Sulfide stock strength",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except sulfur, yeast extract, vitamins and sulfide. Adjust pH to 3.5 with H2SO4 and sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials containing the appropriate amount of sulfur. Heat vessels containing medium to 90°C for 1 hour on each of 3 succesive days. Add yeast extract, vitamins (sterilized by filtration) and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. The sulfide stock solution (3% w/v) should be neutralized before use (see medium 29). The pH of the complete medium should be at 3.5 - 3.8.",
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": "Neutralized sulfide solution 3% (w/v)",
+    "source_snippets": [
+      {
+        "source_key": "dsmz901",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium901.pdf",
+        "source_locator": "Page 1 receiving row; page 2 stock heading",
+        "exact_source_quote": "Neutralized sulfide solution 3% (w/v)",
+        "snapshot_sha256": "4c3ca772fb1448ca1e5d4c9749c4dd81a2bc1fb2f61e246b62c6ca0c4be371b6",
+        "parsed_text_sha256": "8bb48fe1dce89482aa8172146fd2a9a8bba7b1e29aa540de34b9e3b0022a1ce7"
+      }
+    ],
+    "rationale": "Retain DSMZ-specific main versus stock preparation and qualifier. The DSMZ owner already preserves much of this prose, while the target/KOMODO layers omit it. Stock-only steps currently at the owner main root need scope correction. No JCM atmosphere or cycle substitutes for the distinct DSMZ procedure."
+  },
+  {
+    "quantity_id": "q83",
+    "ingredient_or_context": "DSMZ preparation: Sulfide stock vessel",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "preparation_steps[2].description",
+        "stored": "The sulfide solution is prepared in a 250 ml screw-capped bottle with a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with a syringe without opening the bottle.",
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": "250 ml screw-capped bottle",
+    "source_snippets": [
+      {
+        "source_key": "dsmz901",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium901.pdf",
+        "source_locator": "Page 2, neutralized sulfide stock",
+        "exact_source_quote": "250 ml screw-capped bottle",
+        "snapshot_sha256": "4c3ca772fb1448ca1e5d4c9749c4dd81a2bc1fb2f61e246b62c6ca0c4be371b6",
+        "parsed_text_sha256": "8bb48fe1dce89482aa8172146fd2a9a8bba7b1e29aa540de34b9e3b0022a1ce7"
+      }
+    ],
+    "rationale": "Retain DSMZ-specific main versus stock preparation and qualifier. The DSMZ owner already preserves much of this prose, while the target/KOMODO layers omit it. Stock-only steps currently at the owner main root need scope correction. No JCM atmosphere or cycle substitutes for the distinct DSMZ procedure."
+  },
+  {
+    "quantity_id": "q84",
+    "ingredient_or_context": "DSMZ preparation: Sulfide stock sterilization",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "preparation_steps[2].description",
+        "stored": "The sulfide solution is prepared in a 250 ml screw-capped bottle with a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with a syringe without opening the bottle.",
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": "autoclaved for 15 min. at 121°C.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz901",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium901.pdf",
+        "source_locator": "Page 2, neutralized sulfide stock",
+        "exact_source_quote": "autoclaved for 15 min. at 121°C.",
+        "snapshot_sha256": "4c3ca772fb1448ca1e5d4c9749c4dd81a2bc1fb2f61e246b62c6ca0c4be371b6",
+        "parsed_text_sha256": "8bb48fe1dce89482aa8172146fd2a9a8bba7b1e29aa540de34b9e3b0022a1ce7"
+      }
+    ],
+    "rationale": "Retain DSMZ-specific main versus stock preparation and qualifier. The DSMZ owner already preserves much of this prose, while the target/KOMODO layers omit it. Stock-only steps currently at the owner main root need scope correction. No JCM atmosphere or cycle substitutes for the distinct DSMZ procedure."
+  },
+  {
+    "quantity_id": "q85",
+    "ingredient_or_context": "DSMZ preparation: Sulfide stock pH",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "preparation_steps[2].description",
+        "stored": "The sulfide solution is prepared in a 250 ml screw-capped bottle with a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with a syringe without opening the bottle.",
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": "about 7.0",
+    "source_snippets": [
+      {
+        "source_key": "dsmz901",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium901.pdf",
+        "source_locator": "Page 2, neutralized sulfide stock",
+        "exact_source_quote": "about 7.0",
+        "snapshot_sha256": "4c3ca772fb1448ca1e5d4c9749c4dd81a2bc1fb2f61e246b62c6ca0c4be371b6",
+        "parsed_text_sha256": "8bb48fe1dce89482aa8172146fd2a9a8bba7b1e29aa540de34b9e3b0022a1ce7"
+      }
+    ],
+    "rationale": "Retain DSMZ-specific main versus stock preparation and qualifier. The DSMZ owner already preserves much of this prose, while the target/KOMODO layers omit it. Stock-only steps currently at the owner main root need scope correction. No JCM atmosphere or cycle substitutes for the distinct DSMZ procedure."
+  },
+  {
+    "quantity_id": "q86",
+    "ingredient_or_context": "Sulfide neutralization acid source conflict",
+    "decision": "conflict",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "conflict"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "conflict"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+        "field_path": "preparation_steps[2].description",
+        "stored": "The sulfide solution is prepared in a 250 ml screw-capped bottle with a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with a syringe without opening the bottle.",
+        "decision": "conflict"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "conflict"
+      }
+    ],
+    "proposed_source_scope": {
+      "DSMZ901_embedded_stock_and_DSMZ28": "2 M H2SO4",
+      "DSMZ29_cross_referenced_by_901_prose": "2 N H2SO4",
+      "resolution": "unresolved; preserve the versioned source conflict"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz901",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium901.pdf",
+        "source_locator": "Page 2, neutralized sulfide stock",
+        "exact_source_quote": "sterile 2 M H2SO4",
+        "snapshot_sha256": "4c3ca772fb1448ca1e5d4c9749c4dd81a2bc1fb2f61e246b62c6ca0c4be371b6",
+        "parsed_text_sha256": "8bb48fe1dce89482aa8172146fd2a9a8bba7b1e29aa540de34b9e3b0022a1ce7"
+      },
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Neutralized sulfide subsection",
+        "exact_source_quote": "sterile 2 M H2SO4",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "6c9845c07d3bf8ffd6ebd29f0ea79e535fc71f7e42afa9232b4fcac87b163633"
+      },
+      {
+        "source_key": "dsmz29",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium29.pdf",
+        "source_locator": "Neutralized sulfide subsection",
+        "exact_source_quote": "sterile 2 N H2SO4",
+        "snapshot_sha256": "3e0b0022af9a84e7afa31b12bab088f5ed658274e2f6377e692f0024e4f22afb",
+        "parsed_text_sha256": "88cbbda80a40ab2570f5e07035208eab3a077632658b9baa59eadae626c2ad2b"
+      }
+    ],
+    "rationale": "Molarity and normality must not be silently equated. No acid volume is specified. This is a source conflict, not grounds to silently replace the owner's 2 M with a guessed correction."
+  },
+  {
+    "quantity_id": "q87",
+    "ingredient_or_context": "JCM preparation: Gas ratio",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "AUTOCLAVE",
+            "description": "Mix ingredients, except yeast extract, vitamins, sulfur and Na2S x 9H2O, and autoclave under a N2-CO2 (80:20) gas atmosphere. Separately autoclave 10% (w/v) yeast extract solution and 5% (w/v) Na2S x 9H2O solution under a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive days. Filter-sterilize Trace vitamins solution while gassing with N2. Aseptically and anaerobically add the yeast extract and vitamin solutions, and sulfur to the medium under a N2-CO2 (80:20) gas atmosphere. Prior to inoculation, add sterile Na2S x 9H2O solution, and adjust pH to 3.5 - 3.8 with sterile 1 N H2SO4. Pressurize the inoculated bottle to 100 kPa N2-CO2 (80:20)."
+          }
+        ],
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "AUTOCLAVE",
+            "description": "Use JCM medium No. 308 supplemented with 0.1 g/L (final) yeast extract and 2.0 g/L glucose (separately autoclaved)."
+          }
+        ],
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": "N 2 -CO 2 (80:20)",
+    "source_snippets": [
+      {
+        "source_key": "jcm308",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=308",
+        "source_locator": "JCM 308 main preparation",
+        "exact_source_quote": "N 2 -CO 2 (80:20)",
+        "snapshot_sha256": "a350204f40d466c8fd6129a9aa9b56ccc85659130e726c84574d4d24673c5a8c",
+        "parsed_text_sha256": "fbaeda57b6805bd116b4f09a68dba40c5e705ec519d69809c4763cd4788a7207"
+      }
+    ],
+    "rationale": "Retain this JCM 308 context only in its justified base/variant lineage, not DSMZ 901. The JCM base owner preserves the preparation prose; JCM 934 currently retains only its modification. Pressure is literal without a gauge/absolute assumption; gas ratio is not assigned an unstated percent basis. The primary pH range must remain distinct from provider and owner scalar 3.6."
+  },
+  {
+    "quantity_id": "q88",
+    "ingredient_or_context": "JCM preparation: Yeast stock strength",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "AUTOCLAVE",
+            "description": "Mix ingredients, except yeast extract, vitamins, sulfur and Na2S x 9H2O, and autoclave under a N2-CO2 (80:20) gas atmosphere. Separately autoclave 10% (w/v) yeast extract solution and 5% (w/v) Na2S x 9H2O solution under a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive days. Filter-sterilize Trace vitamins solution while gassing with N2. Aseptically and anaerobically add the yeast extract and vitamin solutions, and sulfur to the medium under a N2-CO2 (80:20) gas atmosphere. Prior to inoculation, add sterile Na2S x 9H2O solution, and adjust pH to 3.5 - 3.8 with sterile 1 N H2SO4. Pressurize the inoculated bottle to 100 kPa N2-CO2 (80:20)."
+          }
+        ],
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "AUTOCLAVE",
+            "description": "Use JCM medium No. 308 supplemented with 0.1 g/L (final) yeast extract and 2.0 g/L glucose (separately autoclaved)."
+          }
+        ],
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": "10% (w/v)",
+    "source_snippets": [
+      {
+        "source_key": "jcm308",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=308",
+        "source_locator": "JCM 308 separate yeast stock",
+        "exact_source_quote": "10% (w/v)",
+        "snapshot_sha256": "a350204f40d466c8fd6129a9aa9b56ccc85659130e726c84574d4d24673c5a8c",
+        "parsed_text_sha256": "fbaeda57b6805bd116b4f09a68dba40c5e705ec519d69809c4763cd4788a7207"
+      }
+    ],
+    "rationale": "Retain this JCM 308 context only in its justified base/variant lineage, not DSMZ 901. The JCM base owner preserves the preparation prose; JCM 934 currently retains only its modification. Pressure is literal without a gauge/absolute assumption; gas ratio is not assigned an unstated percent basis. The primary pH range must remain distinct from provider and owner scalar 3.6."
+  },
+  {
+    "quantity_id": "q89",
+    "ingredient_or_context": "JCM preparation: Sulfide stock strength",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "AUTOCLAVE",
+            "description": "Mix ingredients, except yeast extract, vitamins, sulfur and Na2S x 9H2O, and autoclave under a N2-CO2 (80:20) gas atmosphere. Separately autoclave 10% (w/v) yeast extract solution and 5% (w/v) Na2S x 9H2O solution under a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive days. Filter-sterilize Trace vitamins solution while gassing with N2. Aseptically and anaerobically add the yeast extract and vitamin solutions, and sulfur to the medium under a N2-CO2 (80:20) gas atmosphere. Prior to inoculation, add sterile Na2S x 9H2O solution, and adjust pH to 3.5 - 3.8 with sterile 1 N H2SO4. Pressurize the inoculated bottle to 100 kPa N2-CO2 (80:20)."
+          }
+        ],
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "AUTOCLAVE",
+            "description": "Use JCM medium No. 308 supplemented with 0.1 g/L (final) yeast extract and 2.0 g/L glucose (separately autoclaved)."
+          }
+        ],
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": "5% (w/v)",
+    "source_snippets": [
+      {
+        "source_key": "jcm308",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=308",
+        "source_locator": "JCM 308 separate sulfide stock",
+        "exact_source_quote": "5% (w/v)",
+        "snapshot_sha256": "a350204f40d466c8fd6129a9aa9b56ccc85659130e726c84574d4d24673c5a8c",
+        "parsed_text_sha256": "fbaeda57b6805bd116b4f09a68dba40c5e705ec519d69809c4763cd4788a7207"
+      }
+    ],
+    "rationale": "Retain this JCM 308 context only in its justified base/variant lineage, not DSMZ 901. The JCM base owner preserves the preparation prose; JCM 934 currently retains only its modification. Pressure is literal without a gauge/absolute assumption; gas ratio is not assigned an unstated percent basis. The primary pH range must remain distinct from provider and owner scalar 3.6."
+  },
+  {
+    "quantity_id": "q90",
+    "ingredient_or_context": "JCM preparation: Sulfur steaming",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "AUTOCLAVE",
+            "description": "Mix ingredients, except yeast extract, vitamins, sulfur and Na2S x 9H2O, and autoclave under a N2-CO2 (80:20) gas atmosphere. Separately autoclave 10% (w/v) yeast extract solution and 5% (w/v) Na2S x 9H2O solution under a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive days. Filter-sterilize Trace vitamins solution while gassing with N2. Aseptically and anaerobically add the yeast extract and vitamin solutions, and sulfur to the medium under a N2-CO2 (80:20) gas atmosphere. Prior to inoculation, add sterile Na2S x 9H2O solution, and adjust pH to 3.5 - 3.8 with sterile 1 N H2SO4. Pressurize the inoculated bottle to 100 kPa N2-CO2 (80:20)."
+          }
+        ],
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "AUTOCLAVE",
+            "description": "Use JCM medium No. 308 supplemented with 0.1 g/L (final) yeast extract and 2.0 g/L glucose (separately autoclaved)."
+          }
+        ],
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": "Steam sulfur for 3 hr on  each of 3 successive days.",
+    "source_snippets": [
+      {
+        "source_key": "jcm308",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=308",
+        "source_locator": "JCM 308 sulfur preparation",
+        "exact_source_quote": "Steam sulfur for 3 hr on  each of 3 successive days.",
+        "snapshot_sha256": "a350204f40d466c8fd6129a9aa9b56ccc85659130e726c84574d4d24673c5a8c",
+        "parsed_text_sha256": "fbaeda57b6805bd116b4f09a68dba40c5e705ec519d69809c4763cd4788a7207"
+      }
+    ],
+    "rationale": "Retain this JCM 308 context only in its justified base/variant lineage, not DSMZ 901. The JCM base owner preserves the preparation prose; JCM 934 currently retains only its modification. Pressure is literal without a gauge/absolute assumption; gas ratio is not assigned an unstated percent basis. The primary pH range must remain distinct from provider and owner scalar 3.6."
+  },
+  {
+    "quantity_id": "q91",
+    "ingredient_or_context": "JCM preparation: Final pH range",
+    "decision": "conflict",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "ph_value",
+        "stored": 3.6,
+        "decision": "conflict"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "ph_value",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": "adjust pH to 3.5 - 3.8",
+    "source_snippets": [
+      {
+        "source_key": "jcm308",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=308",
+        "source_locator": "JCM 308 prior to inoculation",
+        "exact_source_quote": "adjust pH to 3.5 - 3.8",
+        "snapshot_sha256": "a350204f40d466c8fd6129a9aa9b56ccc85659130e726c84574d4d24673c5a8c",
+        "parsed_text_sha256": "fbaeda57b6805bd116b4f09a68dba40c5e705ec519d69809c4763cd4788a7207"
+      }
+    ],
+    "rationale": "Retain this JCM 308 context only in its justified base/variant lineage, not DSMZ 901. The JCM base owner preserves the preparation prose; JCM 934 currently retains only its modification. Pressure is literal without a gauge/absolute assumption; gas ratio is not assigned an unstated percent basis. The primary pH range must remain distinct from provider and owner scalar 3.6."
+  },
+  {
+    "quantity_id": "q92",
+    "ingredient_or_context": "JCM preparation: Adjustment acid strength",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "AUTOCLAVE",
+            "description": "Mix ingredients, except yeast extract, vitamins, sulfur and Na2S x 9H2O, and autoclave under a N2-CO2 (80:20) gas atmosphere. Separately autoclave 10% (w/v) yeast extract solution and 5% (w/v) Na2S x 9H2O solution under a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive days. Filter-sterilize Trace vitamins solution while gassing with N2. Aseptically and anaerobically add the yeast extract and vitamin solutions, and sulfur to the medium under a N2-CO2 (80:20) gas atmosphere. Prior to inoculation, add sterile Na2S x 9H2O solution, and adjust pH to 3.5 - 3.8 with sterile 1 N H2SO4. Pressurize the inoculated bottle to 100 kPa N2-CO2 (80:20)."
+          }
+        ],
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "AUTOCLAVE",
+            "description": "Use JCM medium No. 308 supplemented with 0.1 g/L (final) yeast extract and 2.0 g/L glucose (separately autoclaved)."
+          }
+        ],
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": "sterile 1 N H 2 SO 4",
+    "source_snippets": [
+      {
+        "source_key": "jcm308",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=308",
+        "source_locator": "JCM 308 prior to inoculation",
+        "exact_source_quote": "sterile 1 N H 2 SO 4",
+        "snapshot_sha256": "a350204f40d466c8fd6129a9aa9b56ccc85659130e726c84574d4d24673c5a8c",
+        "parsed_text_sha256": "fbaeda57b6805bd116b4f09a68dba40c5e705ec519d69809c4763cd4788a7207"
+      }
+    ],
+    "rationale": "Retain this JCM 308 context only in its justified base/variant lineage, not DSMZ 901. The JCM base owner preserves the preparation prose; JCM 934 currently retains only its modification. Pressure is literal without a gauge/absolute assumption; gas ratio is not assigned an unstated percent basis. The primary pH range must remain distinct from provider and owner scalar 3.6."
+  },
+  {
+    "quantity_id": "q93",
+    "ingredient_or_context": "JCM preparation: Pressure",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "AUTOCLAVE",
+            "description": "Mix ingredients, except yeast extract, vitamins, sulfur and Na2S x 9H2O, and autoclave under a N2-CO2 (80:20) gas atmosphere. Separately autoclave 10% (w/v) yeast extract solution and 5% (w/v) Na2S x 9H2O solution under a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive days. Filter-sterilize Trace vitamins solution while gassing with N2. Aseptically and anaerobically add the yeast extract and vitamin solutions, and sulfur to the medium under a N2-CO2 (80:20) gas atmosphere. Prior to inoculation, add sterile Na2S x 9H2O solution, and adjust pH to 3.5 - 3.8 with sterile 1 N H2SO4. Pressurize the inoculated bottle to 100 kPa N2-CO2 (80:20)."
+          }
+        ],
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "AUTOCLAVE",
+            "description": "Use JCM medium No. 308 supplemented with 0.1 g/L (final) yeast extract and 2.0 g/L glucose (separately autoclaved)."
+          }
+        ],
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": "100 kPa",
+    "source_snippets": [
+      {
+        "source_key": "jcm308",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=308",
+        "source_locator": "JCM 308 after inoculation",
+        "exact_source_quote": "100 kPa",
+        "snapshot_sha256": "a350204f40d466c8fd6129a9aa9b56ccc85659130e726c84574d4d24673c5a8c",
+        "parsed_text_sha256": "fbaeda57b6805bd116b4f09a68dba40c5e705ec519d69809c4763cd4788a7207"
+      }
+    ],
+    "rationale": "Retain this JCM 308 context only in its justified base/variant lineage, not DSMZ 901. The JCM base owner preserves the preparation prose; JCM 934 currently retains only its modification. Pressure is literal without a gauge/absolute assumption; gas ratio is not assigned an unstated percent basis. The primary pH range must remain distinct from provider and owner scalar 3.6."
+  },
+  {
+    "quantity_id": "q94",
+    "ingredient_or_context": "JCM preparation: Default sterilization cycle",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "sterilization",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "sterilization",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_scope": "autoclaving at 121°C for 15 min.",
+    "source_snippets": [
+      {
+        "source_key": "jcm308",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=308",
+        "source_locator": "JCM default unless otherwise stated",
+        "exact_source_quote": "autoclaving at 121°C for 15 min.",
+        "snapshot_sha256": "a350204f40d466c8fd6129a9aa9b56ccc85659130e726c84574d4d24673c5a8c",
+        "parsed_text_sha256": "fbaeda57b6805bd116b4f09a68dba40c5e705ec519d69809c4763cd4788a7207"
+      }
+    ],
+    "rationale": "Retain this JCM 308 context only in its justified base/variant lineage, not DSMZ 901. The JCM base owner preserves the preparation prose; JCM 934 currently retains only its modification. Pressure is literal without a gauge/absolute assumption; gas ratio is not assigned an unstated percent basis. The primary pH range must remain distinct from provider and owner scalar 3.6."
+  },
+  {
+    "quantity_id": "q95",
+    "ingredient_or_context": "JCM FeCl2 acid strength",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_scope": "10 ml of 25% HCl explicitly identified as 7.7 M, within the FeCl2 stock only.",
+    "source_snippets": [
+      {
+        "source_key": "jcm187",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187",
+        "source_locator": "FeCl2 solution subsection",
+        "exact_source_quote": "25% HCl (7.7 M) 10.0 ml",
+        "snapshot_sha256": "e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804",
+        "parsed_text_sha256": "eb0d86774cb576541037e56d6a13ceb905fccd2ae1523b6e7eee4c83835825f8"
+      }
+    ],
+    "rationale": "Use the supplied molarity without inventing the unqualified percent basis or a density. The local 2.5 g/L stock value flattened at the receiving root is not justified by this source."
+  }
+]
+
+### Source-specific forms and current CHEBI-based secondary correspondence
+
+grounding: concern. Targets: CultureMech:006771.
+
+27 distinct asserted chemical IDs resolve as nonobsolete. 0 local label instances differ from canonical labels. 26 of 27 distinct current CHEBI-based secondary keys have exact mapped preferred-term rows in the pinned index; unresolved keys: ['CHEBI:26833']. This does not validate historical legacy MIM IDs, supplied hydrates, stereochemistry or catalog products. Nickel hexahydrate and sodium-resazurin supply forms conflict with their assigned structures. The JCM calcium-pantothenate form remains unspecified; DSMZ explicitly supplies D-(+). Exact-index presence is linkage metadata, not proof that a synonym names the same hydrate or salt.
+
+{"metrics": [{"input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml", "ingredient_instances": 28, "primary": 27, "current_secondary": 25, "primary_percent": 96.42857142857143, "current_secondary_percent": 89.28571428571429}, {"input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml", "ingredient_instances": 28, "primary": 27, "current_secondary": 25, "primary_percent": 96.42857142857143, "current_secondary_percent": 89.28571428571429}, {"input": "data/normalized_yaml/archaea/acidilobus_medium.yaml", "ingredient_instances": 28, "primary": 27, "current_secondary": 27, "primary_percent": 96.42857142857143, "current_secondary_percent": 96.42857142857143}, {"input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml", "ingredient_instances": 28, "primary": 27, "current_secondary": 27, "primary_percent": 96.42857142857143, "current_secondary_percent": 96.42857142857143}, {"input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml", "ingredient_instances": 28, "primary": 27, "current_secondary": 25, "primary_percent": 96.42857142857143, "current_secondary_percent": 89.28571428571429}, {"input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml", "ingredient_instances": 28, "primary": 27, "current_secondary": 25, "primary_percent": 96.42857142857143, "current_secondary_percent": 89.28571428571429}], "definition": "Ingredient-instance linkage percentages on a 0–100 scale, using each stated layer denominator; these are not scientific correctness scores.", "label_drift": []}
+
+### Source-scoped preparation, conditions and physical-state branches
+
+completeness: concern. Targets: CultureMech:006771.
+
+DSMZ intermittent heating and CO2 sparging differ from JCM autoclaving, separate yeast/sulfide preparation, sulfur steaming and pressurization. Preserve the detailed DSMZ and JCM owner prose with source-stage boundaries; the generated/KOMODO layers omit it and KOMODO Aerobic: Yes conflicts with explicit anoxic source procedures. Retain the DSMZ internal/cross-reference 2 M versus 2 N sulfide-acid conflict without choosing an unsupported replacement.
+
+### Medium classification, applications and organism claim scope
+
+scope: concern. Targets: CultureMech:006771.
+
+Defined salts/stocks plus undefined yeast support a complex mixture; JCM owners explicitly use SEMI_DEFINED while DSMZ/KOMODO use UNDEFINED. Classification must be reconsidered after separating the formulations, not used as evidence they are equivalent. Archaeal filing of the principal owners is retained; no current taxonomy IDs, growth outcomes or organism phenotype are inferred from names. The bacterial filing of the DSM wrapper alone does not establish its biology.
+
+### Exact supplied chemical forms and mixture identity
+
+grounding: concern. Targets: CultureMech:006771.
+
+All five owners assign nickel hexahydrate to anhydrous CHEBI:34887, and the DSMZ/KOMODO sodium-resazurin branch uses neutral CHEBI:8806. DSMZ D-(+)-calcium pantothenate is consistent with CHEBI:31345 stereochemistry; generic JCM calcium pantothenate does not independently establish that supplied stereoisomer. Generic lipoic-acid grounding is not automatically contradicted by DSMZ DL wording. The source explicitly supplies powdered sulfur. This material context alone does not prove CHEBI:26833 incorrect or establish an allotrope; the completed pinned-index lookup instead identifies a secondary-mapping gap, without inventing a replacement ID.
+
+### Claim-level formulation evidence and current annotations
+
+evidence: concern. Targets: CultureMech:006771.
+
+Target and all five owners lack attached exact quantity evidence. Standalone stock records contain separate evidence but do not automatically support this medium's working dose or final concentration. The source table supplies KOMODO metadata only. Current curated/resolved-reference flags and copied arrays are not source verification; append factual clarifications without rewriting historical events.
+
+### Append-only history and timestamp shape
+
+provenance: concern. Targets: CultureMech:006771.
+
+55 timestamp instances inspected; 9 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Five authoritative contributors and source-preserving regeneration
+
+ownership: concern. Targets: CultureMech:006771.
+
+Fix each maintained source branch and variant independently. Retain the September KOMODO/DSMZ topology repairs, repair the still-dangling JCM paths, and regenerate with the current formulation-aware merger after source-bound corrections. No canonical record should absorb different source concentrations merely because the ingredient identity set matches.
+
+## Findings
+
+### f1: Different formulations and source variants were merged as duplicates
+
+blocker / open / confirmed; issue key: cm006771-variant-conflation-and-links.
+
+The target merged DSMZ 901, JCM 308, JCM 934 and the DSM 16705 wrapper. JCM 308 differs in yeast, sulfide/resazurin, stock assembly and preparation; JCM 934 lacks structured glucose despite explicit modification prose, with unresolved final-worded yeast semantics. DSM 16705 retains the base array despite explicit DSMZ yeast reduction and glucose addition. The target and two JCM owner links point into absent bacterial paths, while the actual contributors are under archaea. Current KOMODO/DSMZ repairs do not resolve the JCM paths or variant compositions.
+
+### f2: Stock concentrations are represented as receiving-medium ingredients
+
+blocker / open / confirmed; issue key: cm006771-stock-strength-at-root.
+
+Both source branches contain undiluted trace and vitamin stock quantities at their root; DSMZ/KOMODO also puts 30 g/L sulfide stock there. Stock aliquots and preparation water are omitted. Main provider values use declared 1017 ml or 1012 ml bases; DSMZ listed liquids sum to 1017.5 ml, and no measured final volume is established. Acid 25% cannot independently justify the local 2.5 g/L conversion.
+
+### f3: Source hydrates and sodium salt conflict with valid but wrong chemical structures
+
+major / open / confirmed; issue key: cm006771-chemical-form-and-secondary-scope.
+
+Nickel chloride hexahydrate is assigned anhydrous CHEBI:34887 in all five owners. Sodium resazurin in the DSMZ/KOMODO branch is assigned neutral CHEBI:8806. JCM generic calcium pantothenate must retain supplied-form uncertainty; the DSMZ D-(+) wording is different and must not be incorrectly flagged as the same conflict. Sulfur primary validity does not establish missing pinned secondary correspondence.
+
+### f4: Source-specific preparation is omitted or mixed across receiving and stock stages
+
+major / open / confirmed; issue key: cm006771-source-specific-preparation.
+
+Generated/KOMODO layers omit the anoxic preparation retained by DSMZ/JCM owners; their Aerobic: Yes metadata is incompatible with the exact anoxic source procedures. The two source protocols differ materially, and source-cross-referenced sulfide acid strengths conflict. The JCM owner scalar pH 3.6 should not silently replace the source 3.5–3.8 range.
+
+### f5: Historical timestamps include malformed and timezone-naive values
+
+minor / open / confirmed; issue key: cm006771-history-timestamp-shape.
+
+The bounded timestamp audit identifies malformed KOMODO import values and timezone-naive resolver/repair events across the target and owners. These are historical provenance defects, not evidence of source validation or actual timezone.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Retain separate source formulations and exact variants, implement only the source-supported modifications, and resolve JCM 934 yeast semantics before asserting a total. Correct exact relationship paths by stable identity; preserve valid repaired links. Regenerate through the current formulation-aware merge path after owner fixes.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Recover each named stock, source batch amount, solvent and receiving aliquot without duplicate direct components. Preserve explicit provider normalization separately; keep unspecified final volume and percent basis unresolved. Retain literal acid molarity where supplied and do not infer a molecular-weight conversion from an incompatible form.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Resolve exact supplied salt/hydrate correspondence and update primary/secondary assertions together, with no invented replacements. Keep the JCM stereochemical limit and unresolved sulfur secondary lineage explicit; obtain exact catalog evidence before claiming that correspondence.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Preserve each source branch's complete procedure and stock scope with narrow snippets, correct unsupported aerobic metadata, and retain source conflicts and literal pressure qualifiers. Resolve the sulfide-acid source/version question before proposing a single replacement. Never borrow parent-medium procedures from stock-source pages.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a5
+
+Preserve old events append-only and add a factual clarification if timestamp provenance can be recovered; do not invent missing timezones or rewrite historical events. Keep curated/resolved-reference flags distinct from scientific source verification.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-1 | data/normalized_yaml/archaea/acidilobus_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-2 | data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-3 | data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-4 | data/normalized_yaml/bacterial/for_dsm_16705.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch018/180/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-018/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch018/180/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml:1:id: CultureMech:006771<br>./data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml:1:id: CultureMech:006771<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch018/source-preflight-bound/180/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 50 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| dsmz901 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium901.pdf; Pages 1–2: base, DSM 16705 condition, SL-10, vitamins and sulfide subsections | supports | Exact DSMZ 901 source, with its own conditional strain modification and all embedded stocks. |
+| mediadive901api | https://mediadive.dsmz.de/rest/medium/901; $.data.medium; $.data.solutions[0:4] | supports | Provider main volume 1017 ml differs from the 1017.5 ml arithmetic sum of listed liquids; preserve both and do not invent a reason or measured final volume. |
+| jcm308 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=308; Complete JCM 308 and page default | supports | Distinct JCM formulation and preparation, including 0.3 g yeast, separate FeCl2/trace stocks, 10 ml vitamins and direct 0.5 g sulfide. |
+| mediadiveJ308api | https://mediadive.dsmz.de/rest/medium/J308; $.data.medium; $.data.solutions[0:4] | supports | Provider declares main volume 1012 ml; its normalized values explain the JCM owners, not equivalence with DSMZ 901. |
+| jcm934 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=934; JCM 934 single source modification and page default | supports | JCM 308 is modified with final-worded yeast and glucose supplementation; retain the exact yeast wording uncertainty. |
+| mediadiveJ934api | https://mediadive.dsmz.de/rest/medium/J934; $.data.medium; $.data.solutions[0].steps[0] | supports | Step-only current source contains no recipe array; copied JCM 308 rows are not evidence that the stated modification is absent. |
+| jcm187 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187; FeCl2 solution and Trace element solution subsections only | supports | Only the two named stocks transfer to JCM 308. No parent-medium ingredients, organisms, pH or gases transfer. |
+| jcm197 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197; Trace vitamins subsection only | supports | Only normal-strength vitamin stock transfers; exclude the parent recipe and its separate trace-mineral pH instruction. |
+| togoM180 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180; Exact FeCl2 and trace-element stock sections | supports | Provider corroboration for JCM 187 stock scope only. |
+| togoM190 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190; Exact Trace vitamins stock section | supports | Provider corroboration for JCM 197 vitamin scope only. |
+| mediadiveSolution595 | https://mediadive.dsmz.de/rest/solution/595; $.data recipe and steps | supports | Standalone SL-10 identity and explicit final stock make-up. |
+| mediadiveSolution5980 | https://mediadive.dsmz.de/rest/solution/5980; $.data recipe | supports | Standalone Wolin vitamin 10x identity and composition. |
+| mediadiveSolution34 | https://mediadive.dsmz.de/rest/solution/34; $.data recipe and steps | supports | Standalone neutralized sulfide identity; 3% w/v belongs to this stock. |
+| mediadiveSolution3846 | https://mediadive.dsmz.de/rest/solution/3846; $.data recipe | supports | Exact JCM FeCl2 stock identity. |
+| mediadiveSolution3847 | https://mediadive.dsmz.de/rest/solution/3847; $.data recipe | supports | Exact JCM trace stock identity. |
+| mediadiveSolution3861 | https://mediadive.dsmz.de/rest/solution/3861; $.data recipe | supports | Exact JCM vitamin stock identity. |
+| dsmz28 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf; Neutralized sulfide subsection only | supports | This version states sterile 2 M sulfuric acid. |
+| dsmz29 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium29.pdf; Neutralized sulfide subsection only | supports | The source cross-referenced in DSMZ 901 prose states sterile 2 N sulfuric acid; not silently equivalent to 2 M. |
+| mediadive161apiRetry | https://mediadive.dsmz.de/rest/medium/161; $.data.solutions entry id=5980 only | supports | Successful retry verifies only the exact vitamin-stock evidence cited by the local stock; unrelated receiving-medium content excluded. |
+| komodoMediaList | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; Actual column headers and exact table rows 901 and 901.1 | supports | Table confirms the two accessions, names, pH and DSMZ 901 link. Its metadata is not the inaccessible variant formulation. |
+| komodo901_1detail-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=901.1; Preserved exact public retrieval result | context_only | Exact KOMODO 901.1 detail returned HTTP 403. The table row and independent DSMZ 901 conditional text were inspected; the inaccessible page contents and historical formulation equivalence were not verified. This required source-version check remains unavailable and the review is partial. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch018/180/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| chebi15940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940; Exact OLS identifier, canonical label, nonobsolete status, definitions and chemical annotations | supports | CHEBI:15940: nicotinic acid. Source-specific forms are assessed separately; valid ontology metadata is not proof of supplied-form correspondence. |
+| chebi15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956; Exact OLS identifier, canonical label, nonobsolete status, definitions and chemical annotations | supports | CHEBI:15956: biotin. Source-specific forms are assessed separately; valid ontology metadata is not proof of supplied-form correspondence. |
+| chebi16494 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494; Exact OLS identifier, canonical label, nonobsolete status, definitions and chemical annotations | supports | CHEBI:16494: lipoic acid. Source-specific forms are assessed separately; valid ontology metadata is not proof of supplied-form correspondence. |
+| chebi17015 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015; Exact OLS identifier, canonical label, nonobsolete status, definitions and chemical annotations | supports | CHEBI:17015: riboflavin. Source-specific forms are assessed separately; valid ontology metadata is not proof of supplied-form correspondence. |
+| chebi176843 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843; Exact OLS identifier, canonical label, nonobsolete status, definitions and chemical annotations | supports | CHEBI:176843: vitamin B12. Source-specific forms are assessed separately; valid ontology metadata is not proof of supplied-form correspondence. |
+| chebi17883 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17883; Exact OLS identifier, canonical label, nonobsolete status, definitions and chemical annotations | supports | CHEBI:17883: hydrogen chloride. Source-specific forms are assessed separately; valid ontology metadata is not proof of supplied-form correspondence. |
+| chebi26833 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26833; Exact OLS identifier, canonical label, nonobsolete status, definitions and chemical annotations | supports | CHEBI:26833: sulfur atom. Source-specific forms are assessed separately; valid ontology metadata is not proof of supplied-form correspondence. |
+| chebi27470 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470; Exact OLS identifier, canonical label, nonobsolete status, definitions and chemical annotations | supports | CHEBI:27470: folic acid. Source-specific forms are assessed separately; valid ontology metadata is not proof of supplied-form correspondence. |
+| chebi30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753; Exact OLS identifier, canonical label, nonobsolete status, definitions and chemical annotations | supports | CHEBI:30753: 4-aminobenzoic acid. Source-specific forms are assessed separately; valid ontology metadata is not proof of supplied-form correspondence. |
+| chebi30961 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961; Exact OLS identifier, canonical label, nonobsolete status, definitions and chemical annotations | supports | CHEBI:30961: pyridoxine hydrochloride. Source-specific forms are assessed separately; valid ontology metadata is not proof of supplied-form correspondence. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206; Exact OLS identifier, canonical label, nonobsolete status, definitions and chemical annotations | supports | CHEBI:31206: ammonium chloride. Source-specific forms are assessed separately; valid ontology metadata is not proof of supplied-form correspondence. |
+| chebi31345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345; Exact OLS identifier, canonical label, nonobsolete status, definitions and chemical annotations | supports | CHEBI:31345: Calcium pantothenate. Source-specific forms are assessed separately; valid ontology metadata is not proof of supplied-form correspondence. |
+| chebi32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588; Exact OLS identifier, canonical label, nonobsolete status, definitions and chemical annotations | supports | CHEBI:32588: potassium chloride. Source-specific forms are assessed separately; valid ontology metadata is not proof of supplied-form correspondence. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; Exact OLS identifier, canonical label, nonobsolete status, definitions and chemical annotations | supports | CHEBI:33118: boric acid. Source-specific forms are assessed separately; valid ontology metadata is not proof of supplied-form correspondence. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887; Exact OLS identifier, canonical label, nonobsolete status, definitions and chemical annotations | supports | CHEBI:34887: nickel dichloride. Source-specific forms are assessed separately; valid ontology metadata is not proof of supplied-form correspondence. |
+| chebi49105 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105; Exact OLS identifier, canonical label, nonobsolete status, definitions and chemical annotations | supports | CHEBI:49105: thiamine hydrochloride. Source-specific forms are assessed separately; valid ontology metadata is not proof of supplied-form correspondence. |
+| chebi49976 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976; Exact OLS identifier, canonical label, nonobsolete status, definitions and chemical annotations | supports | CHEBI:49976: zinc dichloride. Source-specific forms are assessed separately; valid ontology metadata is not proof of supplied-form correspondence. |
+| chebi53503 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503; Exact OLS identifier, canonical label, nonobsolete status, definitions and chemical annotations | supports | CHEBI:53503: cobalt chloride hexahydrate. Source-specific forms are assessed separately; valid ontology metadata is not proof of supplied-form correspondence. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS identifier, canonical label, nonobsolete status, definitions and chemical annotations | supports | CHEBI:63036: potassium dihydrogen phosphate. Source-specific forms are assessed separately; valid ontology metadata is not proof of supplied-form correspondence. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; Exact OLS identifier, canonical label, nonobsolete status, definitions and chemical annotations | supports | CHEBI:75213: sodium molybdate dihydrate. Source-specific forms are assessed separately; valid ontology metadata is not proof of supplied-form correspondence. |
+| chebi76209 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209; Exact OLS identifier, canonical label, nonobsolete status, definitions and chemical annotations | supports | CHEBI:76209: sodium sulfide nonahydrate. Source-specific forms are assessed separately; valid ontology metadata is not proof of supplied-form correspondence. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact OLS identifier, canonical label, nonobsolete status, definitions and chemical annotations | supports | CHEBI:86158: calcium chloride dihydrate. Source-specific forms are assessed separately; valid ontology metadata is not proof of supplied-form correspondence. |
+| chebi86249 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86249; Exact OLS identifier, canonical label, nonobsolete status, definitions and chemical annotations | supports | CHEBI:86249: iron dichloride tetrahydrate. Source-specific forms are assessed separately; valid ontology metadata is not proof of supplied-form correspondence. |
+| chebi86318 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318; Exact OLS identifier, canonical label, nonobsolete status, definitions and chemical annotations | supports | CHEBI:86318: copper(II) chloride dihydrate. Source-specific forms are assessed separately; valid ontology metadata is not proof of supplied-form correspondence. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345; Exact OLS identifier, canonical label, nonobsolete status, definitions and chemical annotations | supports | CHEBI:86345: magnesium dichloride hexahydrate. Source-specific forms are assessed separately; valid ontology metadata is not proof of supplied-form correspondence. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368; Exact OLS identifier, canonical label, nonobsolete status, definitions and chemical annotations | supports | CHEBI:86368: manganese(II) chloride tetrahydrate. Source-specific forms are assessed separately; valid ontology metadata is not proof of supplied-form correspondence. |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806; Exact OLS identifier, canonical label, nonobsolete status, definitions and chemical annotations | supports | CHEBI:8806: Resazurin. Source-specific forms are assessed separately; valid ontology metadata is not proof of supplied-form correspondence. |
+| chemical-context | /private/tmp/culturemech-review-work-batch018/180/chemical-grounding-context.json; Every primary and current CHEBI-based secondary ingredient term in the target and maintained owners | context_only | Full OLS annotations, local instance locators, label differences, pinned exact-key MIM rows and layer-specific linkage metrics. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Exact identifier rows and pinned metadata source commit; no fuzzy replacements | context_only | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "current_secondary_rows": {"CHEBI:15940": [{"label": "Nicotinic acid", "match_type": "preferred_term", "identifier": "CHEBI:15940", "preferred_term": "Nicotinic acid", "ontology_id": "CHEBI:15940", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15956": [{"label": "Biotin", "match_type": "preferred_term", "identifier": "CHEBI:15956", "preferred_term": "Biotin", "ontology_id": "CHEBI:15956", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:16494": [{"label": "(DL)-alpha-Lipoic acid", "match_type": "preferred_term", "identifier": "CHEBI:16494", "preferred_term": "(DL)-alpha-Lipoic acid", "ontology_id": "CHEBI:16494", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17015": [{"label": "Riboflavin", "match_type": "preferred_term", "identifier": "CHEBI:17015", "preferred_term": "Riboflavin", "ontology_id": "CHEBI:17015", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:176843": [{"label": "Vitamin B12", "match_type": "preferred_term", "identifier": "CHEBI:176843", "preferred_term": "Vitamin B12", "ontology_id": "CHEBI:176843", "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}], "CHEBI:17883": [{"label": "HCl", "match_type": "preferred_term", "identifier": "CHEBI:17883", "preferred_term": "HCl", "ontology_id": "CHEBI:17883", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26833": [], "CHEBI:27470": [{"label": "Folic acid", "match_type": "preferred_term", "identifier": "CHEBI:27470", "preferred_term": "Folic acid", "ontology_id": "CHEBI:27470", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:30753": [{"label": "p-Aminobenzoic acid", "match_type": "preferred_term", "identifier": "CHEBI:30753", "preferred_term": "p-Aminobenzoic acid", "ontology_id": "CHEBI:30753", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:30961": [{"label": "Pyridoxine hydrochloride", "match_type": "preferred_term", "identifier": "CHEBI:30961", "preferred_term": "Pyridoxine hydrochloride", "ontology_id": "CHEBI:30961", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31206": [{"label": "NH4Cl", "match_type": "preferred_term", "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31345": [{"label": "Calcium pantothenate", "match_type": "preferred_term", "identifier": "CHEBI:31345", "preferred_term": "Calcium pantothenate", "ontology_id": "CHEBI:31345", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32588": [{"label": "KCl", "match_type": "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:34887": [{"label": "NiCl2", "match_type": "preferred_term", "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:49105": [{"label": "Thiamine HCl", "match_type": "preferred_term", "identifier": "CHEBI:49105", "preferred_term": "Thiamine HCl", "ontology_id": "CHEBI:49105", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:49976": [{"label": "ZnCl2", "match_type": "preferred_term", "identifier": "CHEBI:49976", "preferred_term": "ZnCl2", "ontology_id": "CHEBI:49976", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:53503": [{"label": "Cobalt chloride hexahydrate", "match_type": "preferred_term", "identifier": "CHEBI:53503", "preferred_term": "Cobalt chloride hexahydrate", "ontology_id": "CHEBI:53503", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:76209": [{"label": "Na2S x 9 H2O", "match_type": "preferred_term", "identifier": "CHEBI:76209", "preferred_term": "Na2S x 9 H2O", "ontology_id": "CHEBI:76209", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86249": [{"label": "FeCl2 x 4 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86249", "preferred_term": "FeCl2 x 4 H2O", "ontology_id": "CHEBI:86249", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86318": [{"label": "CuCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86318", "preferred_term": "CuCl2 x 2 H2O", "ontology_id": "CHEBI:86318", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86345": [{"label": "Magnesium chloride", "match_type": "preferred_term", "identifier": "CHEBI:86345", "preferred_term": "Magnesium chloride", "ontology_id": "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgCl2 x 6 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86345", "preferred_term": "MgCl2 x 6 H2O", "ontology_id": "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86368": [{"label": "MnCl2 x 4 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86368", "preferred_term": "MnCl2 x 4 H2O", "ontology_id": "CHEBI:86368", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:8806": [{"label": "Resazurin", "match_type": "preferred_term", "identifier": "CHEBI:8806", "preferred_term": "Resazurin", "ontology_id": "CHEBI:8806", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, "missing": ["CHEBI:26833"]} |
+| history-metadata | data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml; data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml; data/normalized_yaml/archaea/acidilobus_medium.yaml; data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml; data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml; data/normalized_yaml/bacterial/for_dsm_16705.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 11, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:03.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:06.137717"}]}, {"input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml", "events": 10, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:03.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:06.137717"}]}, {"input": "data/normalized_yaml/archaea/acidilobus_medium.yaml", "events": 6, "timestamp_issues": []}, {"input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml", "events": 9, "timestamp_issues": [{"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:26:56.673876"}, {"index": 4, "issue": "timezone absent", "value": "2026-04-04T21:48:41.426187"}, {"index": 5, "issue": "timezone absent", "value": "2026-04-04T22:03:18.701426"}]}, {"input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml", "events": 9, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml", "events": 10, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:03.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:18:59.518081"}]}] |
+| relationship-paths | /private/tmp/culturemech-review-work-batch018/180/relationship-path-audit.json; Exact stored paths against complete ignored-inclusive normalized path inventory | refutes | Target parent points to absent bacterial/acidolobus_aceticus_medium.yaml; current KOMODO/DSMZ owner paths are repaired. JCM 308 child and JCM 934 parent still point to absent bacterial paths; exact matching IDs are present under archaea/. |
+| writer-0 | scripts/repair_komodo_901_acidolobus_score10.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | The topology repair changes links/flags while asserting the same 28-ingredient arrays, so it does not implement DSM 16705 composition changes. Current MediaDive import already separates main components and stock references, but still maps raw amounts into concentration enums and lifts all solution steps to the main preparation list. Current merging rejects differing formulation content; stale ingredient-set grouping is not attributed to the present merge behavior. |
+| writer-1 | src/culturemech/import/mediadive_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | The topology repair changes links/flags while asserting the same 28-ingredient arrays, so it does not implement DSM 16705 composition changes. Current MediaDive import already separates main components and stock references, but still maps raw amounts into concentration enums and lifts all solution steps to the main preparation list. Current merging rejects differing formulation content; stale ingredient-set grouping is not attributed to the present merge behavior. |
+| writer-2 | src/culturemech/merge/formulation.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | The topology repair changes links/flags while asserting the same 28-ingredient arrays, so it does not implement DSM 16705 composition changes. Current MediaDive import already separates main components and stock references, but still maps raw amounts into concentration enums and lifts all solution steps to the main preparation list. Current merging rejects differing formulation content; stale ingredient-set grouping is not attributed to the present merge behavior. |
+| writer-3 | src/culturemech/merge/merger.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | The topology repair changes links/flags while asserting the same 28-ingredient arrays, so it does not implement DSM 16705 composition changes. Current MediaDive import already separates main components and stock references, but still maps raw amounts into concentration enums and lifts all solution steps to the main preparation list. Current merging rejects differing formulation content; stale ingredient-set grouping is not attributed to the present merge behavior. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Exact KOMODO 901.1 detail returned HTTP 403. The table row and independent DSMZ 901 conditional text were inspected; the inaccessible page contents and historical formulation equivalence were not verified. This required source-version check remains unavailable and the review is partial.
+- The live primary ontology identity CHEBI:26833 is available. A completed lookup confirms its asserted secondary MIM mapping has no exact row in the pinned snapshot; this is a mapping gap, not an unavailable lookup, a claim that the ontology term is invalid, or proof that no historical catalog record ever existed.
+- The required unavailable exact KOMODO 901.1 detail makes this a partial scientific review. The sulfur secondary-index lookup is complete and confirms a mapping gap; it does not cause partial coverage. Independent DSMZ variant evidence is available and does not establish the inaccessible page's historical contents.
+- No measured final volume is asserted for either receiving batch. Primary-listed solvent/addition sums, provider-declared volumes and normalized g_l values remain distinct; no unsupported density, percent basis or pressure convention is inferred.
+- Under the providers' nominal 1000 ml vitamin-stock bases, DSMZ 10x vitamins at 1 ml and JCM normal vitamins at 10 ml carry the same listed vitamin mass per nominal receiving batch. That conditional arithmetic does not establish equal measured stock volumes or equivalent whole media.
+- DSMZ 28/29 are used only for the neutralized-sulfide conflict; JCM 187 and 197 only for their named stocks. Parent organisms, unrelated media ingredients and unrelated pH/stock instructions are excluded.
+- The failed first MediaDive161 request and successful retry are preserved in the bound catalog; only the successful exact solution5980 content informs stock evidence.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T113449Z-culturemech-006771-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: acidolobus_aceticus_medium (CultureMech:006771)'
+started_at: '2026-10-21T11:18:02Z'
+finished_at: '2026-10-21T11:34:49Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: This generated record conflates DSMZ 901, JCM 308, JCM 934 and the DSM 16705
+  source variant, while placing stock-strength trace elements, vitamins and sulfide
+  into the receiving formula. Five maintained contributors preserve different source
+  details and later topology repairs. Exact chemical forms, source-scoped preparation,
+  missing variant composition and broken JCM links need curation. The required KOMODO
+  901.1 detail remains unavailable; a completed exact pinned-index lookup confirms
+  a sulfur secondary-mapping gap.
+source:
+  git_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml
+    sha256: 666cb2203c95bfe8f066632eec11a4b459f565f3c7f344120617487df63154e7
+    role: target
+  - path: data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml
+    sha256: 30f483b5fb816cbfefc9f596d9b599192895f824da53416bc4cfd610c9d4c78d
+    role: context
+  - path: data/normalized_yaml/archaea/acidilobus_medium.yaml
+    sha256: 9b2e888d32db105ddb099fa7de8d4a6c3021d60907cb9ed3e84c6a878546a909
+    role: context
+  - path: data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml
+    sha256: e454973dcf3ddbaabf0ad5eb942ba8364947a3f5b58cca4b0a821b16fac6efee
+    role: context
+  - path: data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml
+    sha256: 9f7f622a807df8e316ed2e793fd5b15d7abfac68a8263fbf21a2076b46e941ed
+    role: context
+  - path: data/normalized_yaml/bacterial/for_dsm_16705.yaml
+    sha256: 0d4c02d870bd65f8d267bd3d4cb0d639c441e23dddf0942d09947095e3648a78
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_34_Neutralized_sulfide_solution_3_w_v.yaml
+    sha256: ca019e7b638322b2013234ff001f4908a14e210c1962889a65bd535fc6d50bc6
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_3846_FeCl2_solution.yaml
+    sha256: b2e4c8ae5f0ec6756471724d2280bce9385e9928b686cc8e74f4ee7f946961b6
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_3847_Trace_element_solution.yaml
+    sha256: e5e1e4c877006ddb55ed1495e22dd88c4a1c352828d5b1d7c3ad4934c90f2cde
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_3861_Trace_vitamins.yaml
+    sha256: 331158ab8c7f0f1857f8ecc2645fda25e3b98cf12aa19ef5017c3eb24909fac7
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_595_Trace_element_solution_SL-10.yaml
+    sha256: 6d335bc921a8e8a99bae829fda6e81ae023de16a5c19a71b881fb54a9c14e082
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_5980_Wolin_s_vitamin_solution_10x.yaml
+    sha256: b8b5efd085ffa7d0f4e3da6ccf82c0de49b364082867d531beefa757fa3c5950
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_media_variant_links.py
+    sha256: 2931b0c5d4374cdaa6d256aed8f65f564a8b285bba741ec914f3a516eed50c07
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/enrich_solutions_with_chebi.py
+    sha256: b4054fb4f13ecfb8362d421c549dfd34f1e94823caa107f2d1bf2d4462697b29
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/propose_media_variant_links.py
+    sha256: bd5b0b86c9457e42ca52ba2b253e5842c7f414093ba15aaeb4f9f0d682b5f4c2
+    role: context
+  - path: scripts/record_io.py
+    sha256: bff4715f85d7ff2ff681b88f0a2de2667e5767d7a2c196bd50a37d5d329957ac
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_jcm_stock_preparations.py
+    sha256: 7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a
+    role: context
+  - path: scripts/repair_komodo_901_acidolobus_score10.py
+    sha256: 106415cd5f55b9e71c2434ceb71ece42fa7acf65c1104f449ee9532ce806f302
+    role: context
+  - path: scripts/review_komodo_concentration_evidence.py
+    sha256: 4470019965d068a53587be3668c3872daedc1505dab1bc6e2d1ed937ba409658
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_media_variant_links.py
+    sha256: d18ef71320a0c50abe085e151d0d0d4d963007d1e1c9afbefab97581a983e31e
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/komodo_fetcher.py
+    sha256: 0d31cd0ee30e06bb950a4227d76c317b123e3ad69fe455b913fc1dad93265a86
+    role: context
+  - path: src/culturemech/fetch/komodo_web_fetcher.py
+    sha256: 89c510caa08d989b7ec6cee9ac17cc2f0faab606fe8a29ca435df476e52ff004
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/komodo_importer.py
+    sha256: 702733bd580e4ba28f77e183e1e8268f17ea2c1041cf7b3addd92919624f2706
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One generated MediaRecipe and all five explicit maintained contributors,
+    including every local amount and source-scoped stock/variant preparation. Formulation
+    assessment is performed; exact KOMODO 901.1 detail remains unavailable. The pinned
+    sulfur secondary-key lookup is complete and confirms no exact matching row in
+    that snapshot.
+  selection: Task review 180; batch 018 item 10 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding seventeen task batches
+    contain 170 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+    contains 40 validated baseline bundles covering 2 current merged paths. Unioning
+    all prior lists with this baseline covers 172 of 6320 current merged paths, including
+    2 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:006771
+targets:
+- target_id: CultureMech:006771
+  path: data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml
+  label: acidolobus_aceticus_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidilobus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_16705.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:006771
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch018/180/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-018/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch018/180/strict.tsv"
+  target_ids:
+  - CultureMech:006771
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:006771
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:006771
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:006771
+- check_id: komodo901_1detail-source-access
+  name: 'Exact source content access: komodo901_1detail'
+  required: true
+  status: unavailable
+  summary: Exact KOMODO 901.1 detail returned HTTP 403. The table row and independent
+    DSMZ 901 conditional text were inspected; the inaccessible page contents and historical
+    formulation equivalence were not verified. This required source-version check
+    remains unavailable and the review is partial.
+  target_ids:
+  - CultureMech:006771
+  evidence_ids:
+  - komodo901_1detail-attempt
+- check_id: sulfur-secondary-correspondence
+  name: Exact pinned MIM correspondence for asserted sulfur secondary key
+  required: true
+  status: passed
+  summary: 'Completed exact pinned-index lookup: no mapped preferred-term row for
+    CHEBI:26833 in the pinned MIM index. The primary CHEBI term resolves, but its
+    asserted secondary mapping has no exact matching row in this pinned index; no
+    fuzzy replacement was inferred.'
+  target_ids:
+  - CultureMech:006771
+  evidence_ids:
+  - mim
+  - chemical-context
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T11:34:44Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T11:34:44Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/archaea/acidilobus_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T11:34:44Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-2
+  kind: record_content
+  reference: data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T11:34:44Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-3
+  kind: record_content
+  reference: data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T11:34:44Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-4
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/for_dsm_16705.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T11:34:44Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T11:19:52.369893Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch018/180/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T11:19:56.403808Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-018/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch018/180/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T11:19:59.513734Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T11:20:01.145879Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T11:34:44Z'
+  support: supports
+  summary: './data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml:1:id:
+    CultureMech:006771
+
+    ./data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml:1:id: CultureMech:006771
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch018/source-preflight-bound/180/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T11:34:44Z'
+  support: supports
+  summary: 50 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 3b8eabc576429ae7d52ddcc0f37bcc7405216b0f50417f8e62e58e0f38211e6c
+- evidence_id: dsmz901
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium901.pdf
+  locator: 'Pages 1–2: base, DSM 16705 condition, SL-10, vitamins and sulfide subsections'
+  accessed_at: '2026-10-21T11:01:46.942030Z'
+  support: supports
+  summary: Exact DSMZ 901 source, with its own conditional strain modification and
+    all embedded stocks.
+  snapshot_sha256: 4c3ca772fb1448ca1e5d4c9749c4dd81a2bc1fb2f61e246b62c6ca0c4be371b6
+- evidence_id: mediadive901api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/901
+  locator: $.data.medium; $.data.solutions[0:4]
+  accessed_at: '2026-10-21T11:01:45.031122Z'
+  support: supports
+  summary: Provider main volume 1017 ml differs from the 1017.5 ml arithmetic sum
+    of listed liquids; preserve both and do not invent a reason or measured final
+    volume.
+  snapshot_sha256: 0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89
+- evidence_id: jcm308
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=308
+  locator: Complete JCM 308 and page default
+  accessed_at: '2026-10-21T10:35:30.491607Z'
+  support: supports
+  summary: Distinct JCM formulation and preparation, including 0.3 g yeast, separate
+    FeCl2/trace stocks, 10 ml vitamins and direct 0.5 g sulfide.
+  snapshot_sha256: a350204f40d466c8fd6129a9aa9b56ccc85659130e726c84574d4d24673c5a8c
+- evidence_id: mediadiveJ308api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J308
+  locator: $.data.medium; $.data.solutions[0:4]
+  accessed_at: '2026-10-21T10:35:27.446668Z'
+  support: supports
+  summary: Provider declares main volume 1012 ml; its normalized values explain the
+    JCM owners, not equivalence with DSMZ 901.
+  snapshot_sha256: 5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5
+- evidence_id: jcm934
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=934
+  locator: JCM 934 single source modification and page default
+  accessed_at: '2026-10-21T11:01:48.405671Z'
+  support: supports
+  summary: JCM 308 is modified with final-worded yeast and glucose supplementation;
+    retain the exact yeast wording uncertainty.
+  snapshot_sha256: b922390e5c9142f021fd5170543dec7732c43e37bcbe466bd9a0172617959036
+- evidence_id: mediadiveJ934api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J934
+  locator: $.data.medium; $.data.solutions[0].steps[0]
+  accessed_at: '2026-10-21T11:01:45.599625Z'
+  support: supports
+  summary: Step-only current source contains no recipe array; copied JCM 308 rows
+    are not evidence that the stated modification is absent.
+  snapshot_sha256: 9acc2ce86a8248f35253dfb5e9cb3d3814d001df419fb11bda9aec4d752edb00
+- evidence_id: jcm187
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187
+  locator: FeCl2 solution and Trace element solution subsections only
+  accessed_at: '2026-10-21T10:35:30.362855Z'
+  support: supports
+  summary: Only the two named stocks transfer to JCM 308. No parent-medium ingredients,
+    organisms, pH or gases transfer.
+  snapshot_sha256: e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804
+- evidence_id: jcm197
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197
+  locator: Trace vitamins subsection only
+  accessed_at: '2026-10-20T06:58:05.867253Z'
+  support: supports
+  summary: Only normal-strength vitamin stock transfers; exclude the parent recipe
+    and its separate trace-mineral pH instruction.
+  snapshot_sha256: 39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532
+- evidence_id: togoM180
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180
+  locator: Exact FeCl2 and trace-element stock sections
+  accessed_at: '2026-10-21T10:35:28.558157Z'
+  support: supports
+  summary: Provider corroboration for JCM 187 stock scope only.
+  snapshot_sha256: a2ba84bc75a35379b464d5ac8a7ce0f787642b69838cdc2b4763a5657555edba
+- evidence_id: togoM190
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+  locator: Exact Trace vitamins stock section
+  accessed_at: '2026-10-21T09:28:25.418127Z'
+  support: supports
+  summary: Provider corroboration for JCM 197 vitamin scope only.
+  snapshot_sha256: 61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528
+- evidence_id: mediadiveSolution595
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/595
+  locator: $.data recipe and steps
+  accessed_at: '2026-10-21T11:03:05.357684Z'
+  support: supports
+  summary: Standalone SL-10 identity and explicit final stock make-up.
+  snapshot_sha256: 5dd4cef59e15c0ab7d35e8a89039c7f7133ff8cd08ab6c414cf52d5e48c9aeab
+- evidence_id: mediadiveSolution5980
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/5980
+  locator: $.data recipe
+  accessed_at: '2026-10-21T11:03:05.362213Z'
+  support: supports
+  summary: Standalone Wolin vitamin 10x identity and composition.
+  snapshot_sha256: 2fe24a83c789ebc28eb97268a788cabd1316ae131baaea269df79019a14f992c
+- evidence_id: mediadiveSolution34
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/34
+  locator: $.data recipe and steps
+  accessed_at: '2026-10-21T11:03:04.630158Z'
+  support: supports
+  summary: Standalone neutralized sulfide identity; 3% w/v belongs to this stock.
+  snapshot_sha256: 33aab3917e55872514b7dd527ff05bfa4cb65d4b77da12b8118bcf69f285cd93
+- evidence_id: mediadiveSolution3846
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/3846
+  locator: $.data recipe
+  accessed_at: '2026-10-21T10:37:16.847261Z'
+  support: supports
+  summary: Exact JCM FeCl2 stock identity.
+  snapshot_sha256: 3b17c2e79a0ef85051dc8c41ff95bb0361a83b12179a510184b61ef9edbb96f0
+- evidence_id: mediadiveSolution3847
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/3847
+  locator: $.data recipe
+  accessed_at: '2026-10-21T10:37:16.847414Z'
+  support: supports
+  summary: Exact JCM trace stock identity.
+  snapshot_sha256: 12084302b4c979541441db0b0961a5744d937930e17ed9c7a326c75e2f787dd8
+- evidence_id: mediadiveSolution3861
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/3861
+  locator: $.data recipe
+  accessed_at: '2026-10-20T06:58:06.579458Z'
+  support: supports
+  summary: Exact JCM vitamin stock identity.
+  snapshot_sha256: c6829f83ad6e234909db1d65f45a27c24993e0280ff68c4d7355a8f6344335b9
+- evidence_id: dsmz28
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf
+  locator: Neutralized sulfide subsection only
+  accessed_at: '2026-10-21T11:03:05.362642Z'
+  support: supports
+  summary: This version states sterile 2 M sulfuric acid.
+  snapshot_sha256: 442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d
+- evidence_id: dsmz29
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium29.pdf
+  locator: Neutralized sulfide subsection only
+  accessed_at: '2026-10-21T11:03:05.364711Z'
+  support: supports
+  summary: The source cross-referenced in DSMZ 901 prose states sterile 2 N sulfuric
+    acid; not silently equivalent to 2 M.
+  snapshot_sha256: 3e0b0022af9a84e7afa31b12bab088f5ed658274e2f6377e692f0024e4f22afb
+- evidence_id: mediadive161apiRetry
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/161
+  locator: $.data.solutions entry id=5980 only
+  accessed_at: '2026-10-21T11:09:26.550249Z'
+  support: supports
+  summary: Successful retry verifies only the exact vitamin-stock evidence cited by
+    the local stock; unrelated receiving-medium content excluded.
+  snapshot_sha256: 53d710b65b9a45b9d21c2fddd18a86b41de41d18c0a4c2cbd7de44b0a2ef8666
+- evidence_id: komodoMediaList
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Actual column headers and exact table rows 901 and 901.1
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: Table confirms the two accessions, names, pH and DSMZ 901 link. Its metadata
+    is not the inaccessible variant formulation.
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: komodo901_1detail-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=901.1
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T11:01:44.784958Z'
+  support: context_only
+  summary: Exact KOMODO 901.1 detail returned HTTP 403. The table row and independent
+    DSMZ 901 conditional text were inspected; the inaccessible page contents and historical
+    formulation equivalence were not verified. This required source-version check
+    remains unavailable and the review is partial.
+  snapshot_sha256: 9b28de91b6e2ee47f31989c54263af018c952bc7806bf7d2e7f3d2b73093fd61
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch018/180/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T11:34:44Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 2cdcabe42c1ad1b7bcbc47cfea549a84cb800a8771ae10c9f25099daf80d5a1f
+- evidence_id: chebi15940
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-20T06:55:11.874279Z'
+  support: supports
+  summary: 'CHEBI:15940: nicotinic acid. Source-specific forms are assessed separately;
+    valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: 3330ed782e73526a087fb250ed5895ff232f117a896d45d541dff431e5c1f0e1
+- evidence_id: chebi15956
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T08:42:30.425993Z'
+  support: supports
+  summary: 'CHEBI:15956: biotin. Source-specific forms are assessed separately; valid
+    ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: d2d51887df4de92642b66e9d15086ef82eccbc476dd4077d514ca709181ab4bd
+- evidence_id: chebi16494
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-20T06:55:13.001958Z'
+  support: supports
+  summary: 'CHEBI:16494: lipoic acid. Source-specific forms are assessed separately;
+    valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: aa3c1003d6266cc48f19a4d1d9527edd6844b96094a911e9a3c4f6a8851444e1
+- evidence_id: chebi17015
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-20T06:55:11.583596Z'
+  support: supports
+  summary: 'CHEBI:17015: riboflavin. Source-specific forms are assessed separately;
+    valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: f42bc5bbd29b208bfd3062acb11dfa63ccebf81f77ffd72ab596de863cb68aa4
+- evidence_id: chebi176843
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T08:17:26.997779Z'
+  support: supports
+  summary: 'CHEBI:176843: vitamin B12. Source-specific forms are assessed separately;
+    valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: b535c3de88f47e93aed8909c58ff4e2d054a6845dea3bc9a048c18df12b371a9
+- evidence_id: chebi17883
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17883
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-20T07:37:25.439020Z'
+  support: supports
+  summary: 'CHEBI:17883: hydrogen chloride. Source-specific forms are assessed separately;
+    valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: 1c4c2e8e3474319ab5fb79041b19cabfae42f4360729a7569f8a943a503d2f6a
+- evidence_id: chebi26833
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26833
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-20T06:55:04.114839Z'
+  support: supports
+  summary: 'CHEBI:26833: sulfur atom. Source-specific forms are assessed separately;
+    valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: 34952547270a6bcbbfa3a3699082c8d5359e51d0f90518ab9ca5400494a8ae33
+- evidence_id: chebi27470
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-20T06:55:10.450814Z'
+  support: supports
+  summary: 'CHEBI:27470: folic acid. Source-specific forms are assessed separately;
+    valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: fe3e4a2f0f0fa51f94efe6bbf0fa8883d43eafef8db73cfd37bc25ce15fdd12f
+- evidence_id: chebi30753
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-20T06:55:12.829785Z'
+  support: supports
+  summary: 'CHEBI:30753: 4-aminobenzoic acid. Source-specific forms are assessed separately;
+    valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: 97ea54b8020d3bcda2478182be115d2bc632249ee22b197b0575a4a9fd5fe21a
+- evidence_id: chebi30961
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T08:42:44.571163Z'
+  support: supports
+  summary: 'CHEBI:30961: pyridoxine hydrochloride. Source-specific forms are assessed
+    separately; valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: f1c95b83f5396067c3959c20ee4715c78f7895f5084dd214b3a4bf01e064f21d
+- evidence_id: chebi31206
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T08:17:28.439407Z'
+  support: supports
+  summary: 'CHEBI:31206: ammonium chloride. Source-specific forms are assessed separately;
+    valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi31345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-20T06:55:12.450283Z'
+  support: supports
+  summary: 'CHEBI:31345: Calcium pantothenate. Source-specific forms are assessed
+    separately; valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: 56fc4b33c78d82faf317e131ae936f2e00eab0c369b2a9d8be86eddff6fd616d
+- evidence_id: chebi32588
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T08:17:29.045588Z'
+  support: supports
+  summary: 'CHEBI:32588: potassium chloride. Source-specific forms are assessed separately;
+    valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T08:17:29.364390Z'
+  support: supports
+  summary: 'CHEBI:33118: boric acid. Source-specific forms are assessed separately;
+    valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi34887
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T08:04:44.093348Z'
+  support: supports
+  summary: 'CHEBI:34887: nickel dichloride. Source-specific forms are assessed separately;
+    valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: chebi49105
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-20T06:55:10.911379Z'
+  support: supports
+  summary: 'CHEBI:49105: thiamine hydrochloride. Source-specific forms are assessed
+    separately; valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: 0b923c215888606038af1e3f0c1b1bcc35e4ab84966d1733a91fdfcbee8f2ae4
+- evidence_id: chebi49976
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T08:04:44.168295Z'
+  support: supports
+  summary: 'CHEBI:49976: zinc dichloride. Source-specific forms are assessed separately;
+    valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: d27644ae0df5935f8f18a28faa1ba6096fefeb9d0cb951b39751d442c92bd321
+- evidence_id: chebi53503
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T08:04:44.349630Z'
+  support: supports
+  summary: 'CHEBI:53503: cobalt chloride hexahydrate. Source-specific forms are assessed
+    separately; valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: c33e304a0a565068c592ba0970e501052981599ef69cd2cb901e88f27931389d
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: 'CHEBI:63036: potassium dihydrogen phosphate. Source-specific forms are
+    assessed separately; valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: 'CHEBI:75213: sodium molybdate dihydrate. Source-specific forms are assessed
+    separately; valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi76209
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-20T06:55:04.847843Z'
+  support: supports
+  summary: 'CHEBI:76209: sodium sulfide nonahydrate. Source-specific forms are assessed
+    separately; valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: f74d2c85574a4e28bdf71a78e4263f7e4c211036cd6d63b1f8282aca1d255e5c
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: 'CHEBI:86158: calcium chloride dihydrate. Source-specific forms are assessed
+    separately; valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86249
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86249
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T09:49:55.693358Z'
+  support: supports
+  summary: 'CHEBI:86249: iron dichloride tetrahydrate. Source-specific forms are assessed
+    separately; valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: 63bb84e7a947d2a3db0e5f23cf6a533bda2eee137020d7bbe2590477131c5683
+- evidence_id: chebi86318
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T08:43:12.592415Z'
+  support: supports
+  summary: 'CHEBI:86318: copper(II) chloride dihydrate. Source-specific forms are
+    assessed separately; valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: 9bbecfe37d67d923ee070067aebdf1abf21048cdb2cbdff9de0e3d21f68ea1ae
+- evidence_id: chebi86345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T08:17:30.382026Z'
+  support: supports
+  summary: 'CHEBI:86345: magnesium dichloride hexahydrate. Source-specific forms are
+    assessed separately; valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: chebi86368
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T08:17:30.657545Z'
+  support: supports
+  summary: 'CHEBI:86368: manganese(II) chloride tetrahydrate. Source-specific forms
+    are assessed separately; valid ontology metadata is not proof of supplied-form
+    correspondence.'
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: chebi8806
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  locator: Exact OLS identifier, canonical label, nonobsolete status, definitions
+    and chemical annotations
+  accessed_at: '2026-10-21T08:17:30.774007Z'
+  support: supports
+  summary: 'CHEBI:8806: Resazurin. Source-specific forms are assessed separately;
+    valid ontology metadata is not proof of supplied-form correspondence.'
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: chemical-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch018/180/chemical-grounding-context.json
+  locator: Every primary and current CHEBI-based secondary ingredient term in the
+    target and maintained owners
+  accessed_at: '2026-10-21T11:34:44Z'
+  support: context_only
+  summary: Full OLS annotations, local instance locators, label differences, pinned
+    exact-key MIM rows and layer-specific linkage metrics.
+  snapshot_sha256: 0fd6672f58c9a0356a8d6548b2d7824693c5290657911703ee37638876936bb9
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Exact identifier rows and pinned metadata source commit; no fuzzy replacements
+  accessed_at: '2026-10-21T11:34:44Z'
+  support: context_only
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "current_secondary_rows":
+    {"CHEBI:15940": [{"label": "Nicotinic acid", "match_type": "preferred_term", "identifier":
+    "CHEBI:15940", "preferred_term": "Nicotinic acid", "ontology_id": "CHEBI:15940",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15956": [{"label":
+    "Biotin", "match_type": "preferred_term", "identifier": "CHEBI:15956", "preferred_term":
+    "Biotin", "ontology_id": "CHEBI:15956", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:16494": [{"label": "(DL)-alpha-Lipoic acid", "match_type":
+    "preferred_term", "identifier": "CHEBI:16494", "preferred_term": "(DL)-alpha-Lipoic
+    acid", "ontology_id": "CHEBI:16494", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:17015": [{"label": "Riboflavin", "match_type": "preferred_term",
+    "identifier": "CHEBI:17015", "preferred_term": "Riboflavin", "ontology_id": "CHEBI:17015",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:176843": [{"label":
+    "Vitamin B12", "match_type": "preferred_term", "identifier": "CHEBI:176843", "preferred_term":
+    "Vitamin B12", "ontology_id": "CHEBI:176843", "mapping_status": "MAPPED", "ambiguity":
+    "resolved:owned"}], "CHEBI:17883": [{"label": "HCl", "match_type": "preferred_term",
+    "identifier": "CHEBI:17883", "preferred_term": "HCl", "ontology_id": "CHEBI:17883",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26833": [], "CHEBI:27470":
+    [{"label": "Folic acid", "match_type": "preferred_term", "identifier": "CHEBI:27470",
+    "preferred_term": "Folic acid", "ontology_id": "CHEBI:27470", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:30753": [{"label": "p-Aminobenzoic acid",
+    "match_type": "preferred_term", "identifier": "CHEBI:30753", "preferred_term":
+    "p-Aminobenzoic acid", "ontology_id": "CHEBI:30753", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:30961": [{"label": "Pyridoxine hydrochloride",
+    "match_type": "preferred_term", "identifier": "CHEBI:30961", "preferred_term":
+    "Pyridoxine hydrochloride", "ontology_id": "CHEBI:30961", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:31206": [{"label": "NH4Cl", "match_type": "preferred_term",
+    "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31345": [{"label":
+    "Calcium pantothenate", "match_type": "preferred_term", "identifier": "CHEBI:31345",
+    "preferred_term": "Calcium pantothenate", "ontology_id": "CHEBI:31345", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:32588": [{"label": "KCl", "match_type":
+    "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id":
+    "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118":
+    [{"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118",
+    "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:34887": [{"label": "NiCl2", "match_type": "preferred_term",
+    "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:49105": [{"label":
+    "Thiamine HCl", "match_type": "preferred_term", "identifier": "CHEBI:49105", "preferred_term":
+    "Thiamine HCl", "ontology_id": "CHEBI:49105", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:49976": [{"label": "ZnCl2", "match_type": "preferred_term",
+    "identifier": "CHEBI:49976", "preferred_term": "ZnCl2", "ontology_id": "CHEBI:49976",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:53503": [{"label":
+    "Cobalt chloride hexahydrate", "match_type": "preferred_term", "identifier": "CHEBI:53503",
+    "preferred_term": "Cobalt chloride hexahydrate", "ontology_id": "CHEBI:53503",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label":
+    "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term":
+    "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id":
+    "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:76209":
+    [{"label": "Na2S x 9 H2O", "match_type": "preferred_term", "identifier": "CHEBI:76209",
+    "preferred_term": "Na2S x 9 H2O", "ontology_id": "CHEBI:76209", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term":
+    "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:86249": [{"label": "FeCl2 x 4 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:86249", "preferred_term": "FeCl2 x 4 H2O", "ontology_id":
+    "CHEBI:86249", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86318":
+    [{"label": "CuCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86318",
+    "preferred_term": "CuCl2 x 2 H2O", "ontology_id": "CHEBI:86318", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:86345": [{"label": "Magnesium chloride",
+    "match_type": "preferred_term", "identifier": "CHEBI:86345", "preferred_term":
+    "Magnesium chloride", "ontology_id": "CHEBI:86345", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "MgCl2 x 6 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:86345", "preferred_term": "MgCl2 x 6 H2O", "ontology_id":
+    "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86368":
+    [{"label": "MnCl2 x 4 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86368",
+    "preferred_term": "MnCl2 x 4 H2O", "ontology_id": "CHEBI:86368", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:8806": [{"label": "Resazurin", "match_type":
+    "preferred_term", "identifier": "CHEBI:8806", "preferred_term": "Resazurin", "ontology_id":
+    "CHEBI:8806", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, "missing":
+    ["CHEBI:26833"]}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml; data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml;
+    data/normalized_yaml/archaea/acidilobus_medium.yaml; data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml;
+    data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml; data/normalized_yaml/bacterial/for_dsm_16705.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T11:34:44Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 11, "timestamp_issues": [{"index": 0, "issue":
+    "malformed timestamp", "value": "2026-01-27T01:15:03.fZ"}, {"index": 1, "issue":
+    "timezone absent", "value": "2026-02-03T11:19:06.137717"}]}, {"input": "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml",
+    "events": 10, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:03.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:06.137717"}]}, {"input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+    "events": 6, "timestamp_issues": []}, {"input": "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml",
+    "events": 9, "timestamp_issues": [{"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:26:56.673876"}, {"index": 4, "issue": "timezone absent", "value":
+    "2026-04-04T21:48:41.426187"}, {"index": 5, "issue": "timezone absent", "value":
+    "2026-04-04T22:03:18.701426"}]}, {"input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+    "events": 9, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/for_dsm_16705.yaml",
+    "events": 10, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:03.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:18:59.518081"}]}]'
+- evidence_id: relationship-paths
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch018/180/relationship-path-audit.json
+  locator: Exact stored paths against complete ignored-inclusive normalized path inventory
+  accessed_at: '2026-10-21T11:34:44Z'
+  support: refutes
+  summary: Target parent points to absent bacterial/acidolobus_aceticus_medium.yaml;
+    current KOMODO/DSMZ owner paths are repaired. JCM 308 child and JCM 934 parent
+    still point to absent bacterial paths; exact matching IDs are present under archaea/.
+  snapshot_sha256: dcd9c61bffecd595bf65e66bc9e854f3ea519af64ba66f338779024b2187d898
+  search_scope: rg --files --hidden --no-ignore over all data/normalized_yaml paths;
+    exact path strings and stable IDs distinguished.
+- evidence_id: writer-0
+  kind: record_content
+  reference: scripts/repair_komodo_901_acidolobus_score10.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T11:34:44Z'
+  support: context_only
+  summary: The topology repair changes links/flags while asserting the same 28-ingredient
+    arrays, so it does not implement DSM 16705 composition changes. Current MediaDive
+    import already separates main components and stock references, but still maps
+    raw amounts into concentration enums and lifts all solution steps to the main
+    preparation list. Current merging rejects differing formulation content; stale
+    ingredient-set grouping is not attributed to the present merge behavior.
+  snapshot_sha256: 106415cd5f55b9e71c2434ceb71ece42fa7acf65c1104f449ee9532ce806f302
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T11:34:44Z'
+  support: context_only
+  summary: The topology repair changes links/flags while asserting the same 28-ingredient
+    arrays, so it does not implement DSM 16705 composition changes. Current MediaDive
+    import already separates main components and stock references, but still maps
+    raw amounts into concentration enums and lifts all solution steps to the main
+    preparation list. Current merging rejects differing formulation content; stale
+    ingredient-set grouping is not attributed to the present merge behavior.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T11:34:44Z'
+  support: context_only
+  summary: The topology repair changes links/flags while asserting the same 28-ingredient
+    arrays, so it does not implement DSM 16705 composition changes. Current MediaDive
+    import already separates main components and stock references, but still maps
+    raw amounts into concentration enums and lifts all solution steps to the main
+    preparation list. Current merging rejects differing formulation content; stale
+    ingredient-set grouping is not attributed to the present merge behavior.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-3
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T11:34:44Z'
+  support: context_only
+  summary: The topology repair changes links/flags while asserting the same 28-ingredient
+    arrays, so it does not implement DSM 16705 composition changes. Current MediaDive
+    import already separates main components and stock references, but still maps
+    raw amounts into concentration enums and lifts all solution steps to the main
+    preparation list. Current merging rejects differing formulation content; stale
+    ingredient-set grouping is not attributed to the present merge behavior.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:006771
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: Five contributors, accession boundaries and conditional variants
+  outcome: concern
+  summary: The target has KOMODO 901 identity but combines five owner histories and
+    synonyms. DSMZ 901 and JCM 308 have distinct quantities and preparation; JCM 934
+    adds an explicit modification; DSM 16705 has a specific DSMZ yeast/glucose condition.
+    Similar ingredient signatures do not make these one formulation. Current owner
+    topology repairs are distinguished from the older generated snapshot.
+  target_ids:
+  - CultureMech:006771
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - owner-4
+  - dsmz901
+  - jcm308
+  - jcm934
+  - komodoMediaList
+  - mediadiveJ934api
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 95 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence. All 168 ingredient and stock-dose concentration instances across
+    the target and maintained owners are explicitly covered; additional rows retain
+    preparation quantities and source-only components.
+  target_ids:
+  - CultureMech:006771
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"ingredient_or_context\": \"\
+    DSMZ branch: NH4Cl\",\n    \"decision\": \"conflict\",\n    \"local_fields\":\
+    \ [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.324484\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"conflict\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.324484\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"conflict\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[0].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"0.324484\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"conflict\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/for_dsm_16705.yaml\",\n        \"field_path\":\
+    \ \"ingredients[0].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.324484\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"conflict\"\n      }\n    ],\n    \"proposed_source_scope\": {\n      \"source_branch\"\
+    : \"base DSMZ 901\",\n      \"source_amount\": 0.33,\n      \"source_unit\": \"\
+    g\",\n      \"source_attribute\": null,\n      \"preserve_stage\": true\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive901api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/901\",\n  \
+    \      \"source_locator\": \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 1,\\n                  \
+    \      \\\"compound\\\": \\\"NH4Cl\\\",\\n                        \\\"compound_id\\\
+    \": 42,\\n                        \\\"amount\\\": 0.33,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.324484,\\\
+    n                        \\\"mmol_l\\\": 6.06625,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\n      }\n\
+    \    ],\n    \"rationale\": \"Local value matches the provider-derived g/L, whose\
+    \ declared denominator is 1017 ml. Primary listed liquid aliquots sum to 1017.5\
+    \ ml and no measured final make-up is specified. Preserve the raw batch amount\
+    \ and explicit provider normalization as distinct evidence; do not certify this\
+    \ as the primary final concentration. The DSM 16705 yeast row must additionally\
+    \ follow its separate conditional decision.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q2\",\n    \"ingredient_or_context\": \"DSMZ branch: KCl\",\n    \"decision\"\
+    : \"conflict\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.324484\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"conflict\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.324484\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"conflict\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[1].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"0.324484\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"conflict\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/for_dsm_16705.yaml\",\n        \"field_path\":\
+    \ \"ingredients[1].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.324484\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"conflict\"\n      }\n    ],\n    \"proposed_source_scope\": {\n      \"source_branch\"\
+    : \"base DSMZ 901\",\n      \"source_amount\": 0.33,\n      \"source_unit\": \"\
+    g\",\n      \"source_attribute\": null,\n      \"preserve_stage\": true\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive901api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/901\",\n  \
+    \      \"source_locator\": \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 2,\\n                  \
+    \      \\\"compound\\\": \\\"KCl\\\",\\n                        \\\"compound_id\\\
+    \": 61,\\n                        \\\"amount\\\": 0.33,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.324484,\\\
+    n                        \\\"mmol_l\\\": 4.35257,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\n      }\n\
+    \    ],\n    \"rationale\": \"Local value matches the provider-derived g/L, whose\
+    \ declared denominator is 1017 ml. Primary listed liquid aliquots sum to 1017.5\
+    \ ml and no measured final make-up is specified. Preserve the raw batch amount\
+    \ and explicit provider normalization as distinct evidence; do not certify this\
+    \ as the primary final concentration. The DSM 16705 yeast row must additionally\
+    \ follow its separate conditional decision.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q3\",\n    \"ingredient_or_context\": \"DSMZ branch: KH2PO4\",\n    \"decision\"\
+    : \"conflict\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.324484\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"conflict\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.324484\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"conflict\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[2].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"0.324484\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"conflict\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/for_dsm_16705.yaml\",\n        \"field_path\":\
+    \ \"ingredients[2].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.324484\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"conflict\"\n      }\n    ],\n    \"proposed_source_scope\": {\n      \"source_branch\"\
+    : \"base DSMZ 901\",\n      \"source_amount\": 0.33,\n      \"source_unit\": \"\
+    g\",\n      \"source_attribute\": null,\n      \"preserve_stage\": true\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive901api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/901\",\n  \
+    \      \"source_locator\": \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 3,\\n                  \
+    \      \\\"compound\\\": \\\"KH2PO4\\\",\\n                        \\\"compound_id\\\
+    \": 11,\\n                        \\\"amount\\\": 0.33,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.324484,\\\
+    n                        \\\"mmol_l\\\": 2.38442,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\n      }\n\
+    \    ],\n    \"rationale\": \"Local value matches the provider-derived g/L, whose\
+    \ declared denominator is 1017 ml. Primary listed liquid aliquots sum to 1017.5\
+    \ ml and no measured final make-up is specified. Preserve the raw batch amount\
+    \ and explicit provider normalization as distinct evidence; do not certify this\
+    \ as the primary final concentration. The DSM 16705 yeast row must additionally\
+    \ follow its separate conditional decision.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q4\",\n    \"ingredient_or_context\": \"DSMZ branch: MgCl2 x 6 H2O\",\n  \
+    \  \"decision\": \"conflict\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"ingredients[3].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.324484\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"conflict\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.324484\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"conflict\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[3].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"0.324484\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"conflict\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/for_dsm_16705.yaml\",\n        \"field_path\":\
+    \ \"ingredients[3].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.324484\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"conflict\"\n      }\n    ],\n    \"proposed_source_scope\": {\n      \"source_branch\"\
+    : \"base DSMZ 901\",\n      \"source_amount\": 0.33,\n      \"source_unit\": \"\
+    g\",\n      \"source_attribute\": null,\n      \"preserve_stage\": true\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive901api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/901\",\n  \
+    \      \"source_locator\": \"$.data.solutions[0].recipe[3]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 4,\\n                  \
+    \      \\\"compound\\\": \\\"MgCl2 x 6 H2O\\\",\\n                        \\\"\
+    compound_id\\\": 79,\\n                        \\\"amount\\\": 0.33,\\n      \
+    \                  \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\
+    \": 0.324484,\\n                        \\\"mmol_l\\\": 1.59606,\\n          \
+    \              \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Local value matches the provider-derived g/L,\
+    \ whose declared denominator is 1017 ml. Primary listed liquid aliquots sum to\
+    \ 1017.5 ml and no measured final make-up is specified. Preserve the raw batch\
+    \ amount and explicit provider normalization as distinct evidence; do not certify\
+    \ this as the primary final concentration. The DSM 16705 yeast row must additionally\
+    \ follow its separate conditional decision.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q5\",\n    \"ingredient_or_context\": \"DSMZ branch: CaCl2 x 2 H2O\",\n  \
+    \  \"decision\": \"conflict\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"ingredients[4].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.324484\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"conflict\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.324484\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"conflict\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[4].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"0.324484\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"conflict\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/for_dsm_16705.yaml\",\n        \"field_path\":\
+    \ \"ingredients[4].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.324484\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"conflict\"\n      }\n    ],\n    \"proposed_source_scope\": {\n      \"source_branch\"\
+    : \"base DSMZ 901\",\n      \"source_amount\": 0.33,\n      \"source_unit\": \"\
+    g\",\n      \"source_attribute\": null,\n      \"preserve_stage\": true\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive901api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/901\",\n  \
+    \      \"source_locator\": \"$.data.solutions[0].recipe[4]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 5,\\n                  \
+    \      \\\"compound\\\": \\\"CaCl2 x 2 H2O\\\",\\n                        \\\"\
+    compound_id\\\": 7,\\n                        \\\"amount\\\": 0.33,\\n       \
+    \                 \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\
+    \": 0.324484,\\n                        \\\"mmol_l\\\": 2.20715,\\n          \
+    \              \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Local value matches the provider-derived g/L,\
+    \ whose declared denominator is 1017 ml. Primary listed liquid aliquots sum to\
+    \ 1017.5 ml and no measured final make-up is specified. Preserve the raw batch\
+    \ amount and explicit provider normalization as distinct evidence; do not certify\
+    \ this as the primary final concentration. The DSM 16705 yeast row must additionally\
+    \ follow its separate conditional decision.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q6\",\n    \"ingredient_or_context\": \"DSMZ branch: Sodium resazurin\",\n\
+    \    \"decision\": \"conflict\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\",\n       \
+    \ \"field_path\": \"ingredients[5].concentration\",\n        \"stored\": {\n \
+    \         \"value\": \"0.000491642\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"conflict\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.000491642\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"conflict\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\",\n \
+    \       \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.000491642\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"conflict\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\",\n        \"field_path\"\
+    : \"ingredients[5].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.000491642\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"conflict\"\n      }\n    ],\n    \"proposed_source_scope\": {\n      \"source_branch\"\
+    : \"base DSMZ 901\",\n      \"source_amount\": 0.5,\n      \"source_unit\": \"\
+    ml\",\n      \"source_attribute\": \"0.1% w/v\",\n      \"preserve_stage\": true\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive901api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/901\",\n  \
+    \      \"source_locator\": \"$.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 7,\\n                  \
+    \      \\\"compound\\\": \\\"Sodium resazurin\\\",\\n                        \\\
+    \"compound_id\\\": 1852,\\n                        \\\"attribute\\\": \\\"0.1%\
+    \ w/v\\\",\\n                        \\\"amount\\\": 0.5,\\n                 \
+    \       \\\"unit\\\": \\\"ml\\\",\\n                        \\\"g_l\\\": 0.000491642,\\\
+    n                        \\\"mmol_l\\\": 0.00195741,\\n                      \
+    \  \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Local value matches the provider-derived g/L,\
+    \ whose declared denominator is 1017 ml. Primary listed liquid aliquots sum to\
+    \ 1017.5 ml and no measured final make-up is specified. Preserve the raw batch\
+    \ amount and explicit provider normalization as distinct evidence; do not certify\
+    \ this as the primary final concentration. The DSM 16705 yeast row must additionally\
+    \ follow its separate conditional decision.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q7\",\n    \"ingredient_or_context\": \"DSMZ branch: Sulfur\",\n    \"decision\"\
+    : \"conflict\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"9.83284\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"conflict\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"9.83284\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"conflict\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[6].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"9.83284\",\n          \"unit\": \"G_PER_L\"\n        },\n \
+    \       \"decision\": \"conflict\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"9.83284\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"conflict\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_branch\": \"base DSMZ 901\",\n      \"source_amount\": 10,\n\
+    \      \"source_unit\": \"g\",\n      \"source_attribute\": \"powdered\",\n  \
+    \    \"preserve_stage\": true\n    },\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"mediadive901api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/901\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[7]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 8,\\\
+    n                        \\\"compound\\\": \\\"Sulfur\\\",\\n                \
+    \        \\\"compound_id\\\": 80,\\n                        \\\"condition\\\"\
+    : \\\"\\\",\\n                        \\\"attribute\\\": \\\"powdered\\\",\\n\
+    \                        \\\"amount\\\": 10,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 9.83284,\\n            \
+    \            \\\"mmol_l\\\": 306.606,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\
+    \n      }\n    ],\n    \"rationale\": \"Local value matches the provider-derived\
+    \ g/L, whose declared denominator is 1017 ml. Primary listed liquid aliquots sum\
+    \ to 1017.5 ml and no measured final make-up is specified. Preserve the raw batch\
+    \ amount and explicit provider normalization as distinct evidence; do not certify\
+    \ this as the primary final concentration. The DSM 16705 yeast row must additionally\
+    \ follow its separate conditional decision.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q8\",\n    \"ingredient_or_context\": \"DSMZ branch: Yeast extract\",\n  \
+    \  \"decision\": \"conflict\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"ingredients[7].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"2.94985\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"conflict\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.94985\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"conflict\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[7].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"2.94985\",\n          \"unit\": \"G_PER_L\"\n        },\n \
+    \       \"decision\": \"conflict\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.94985\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"conflict\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_branch\": \"base DSMZ 901\",\n      \"source_amount\": 3,\n\
+    \      \"source_unit\": \"g\",\n      \"source_attribute\": null,\n      \"preserve_stage\"\
+    : true\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    mediadive901api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/901\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[8]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 9,\\\
+    n                        \\\"compound\\\": \\\"Yeast extract\\\",\\n         \
+    \               \\\"compound_id\\\": 16,\\n                        \\\"amount\\\
+    \": 3,\\n                        \\\"unit\\\": \\\"g\\\",\\n                 \
+    \       \\\"g_l\\\": 2.94985,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\
+    \n      }\n    ],\n    \"rationale\": \"Local value matches the provider-derived\
+    \ g/L, whose declared denominator is 1017 ml. Primary listed liquid aliquots sum\
+    \ to 1017.5 ml and no measured final make-up is specified. Preserve the raw batch\
+    \ amount and explicit provider normalization as distinct evidence; do not certify\
+    \ this as the primary final concentration. The DSM 16705 yeast row must additionally\
+    \ follow its separate conditional decision.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q9\",\n    \"ingredient_or_context\": \"DSMZ branch: HCl\",\n    \"decision\"\
+    : \"correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_branch\": \"SL-10 stock\",\n      \"source_amount\": 10,\n\
+    \      \"source_unit\": \"ml\",\n      \"source_attribute\": \"25%\",\n      \"\
+    preserve_stage\": true\n    },\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"mediadive901api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/901\"\
+    ,\n        \"source_locator\": \"$.data.solutions[1].recipe[0]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 1,\\\
+    n                        \\\"compound\\\": \\\"HCl\\\",\\n                   \
+    \     \\\"compound_id\\\": 68,\\n                        \\\"attribute\\\": \\\
+    \"25%\\\",\\n                        \\\"amount\\\": 10,\\n                  \
+    \      \\\"unit\\\": \\\"ml\\\",\\n                        \\\"g_l\\\": 2.5,\\\
+    n                        \\\"mmol_l\\\": 68.5683,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\n      }\n\
+    \    ],\n    \"rationale\": \"This is an undiluted stock value placed at the receiving-medium\
+    \ root. Restore stock scope and the separately listed aliquot; never treat a stock\
+    \ concentration as its final-medium contribution. Exact final volume is unresolved,\
+    \ so no final-medium conversion is proposed. HCl 25% has no stated percentage\
+    \ basis/density here; provider 2.5 g/L does not independently justify a mass conversion.\
+    \ Retain 10 ml of the described acid stock.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q10\",\n    \"ingredient_or_context\": \"DSMZ branch: FeCl2 x 4 H2O\",\n \
+    \   \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"ingredients[9].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_branch\": \"SL-10 stock\",\n      \"source_amount\": 1.5,\n\
+    \      \"source_unit\": \"g\",\n      \"source_attribute\": null,\n      \"preserve_stage\"\
+    : true\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    mediadive901api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/901\"\
+    ,\n        \"source_locator\": \"$.data.solutions[1].recipe[1]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 2,\\\
+    n                        \\\"compound\\\": \\\"FeCl2 x 4 H2O\\\",\\n         \
+    \               \\\"compound_id\\\": 260,\\n                        \\\"amount\\\
+    \": 1.5,\\n                        \\\"unit\\\": \\\"g\\\",\\n               \
+    \         \\\"g_l\\\": 1.5,\\n                        \\\"mmol_l\\\": 7.54482,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\
+    \n      }\n    ],\n    \"rationale\": \"This is an undiluted stock value placed\
+    \ at the receiving-medium root. Restore stock scope and the separately listed\
+    \ aliquot; never treat a stock concentration as its final-medium contribution.\
+    \ Exact final volume is unresolved, so no final-medium conversion is proposed.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q11\",\n    \"ingredient_or_context\": \"\
+    DSMZ branch: ZnCl2\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.07\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.07\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[10].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.07\",\n          \"unit\": \"G_PER_L\"\n        },\n   \
+    \     \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.07\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_branch\": \"SL-10 stock\",\n      \"source_amount\": 70,\n\
+    \      \"source_unit\": \"mg\",\n      \"source_attribute\": null,\n      \"preserve_stage\"\
+    : true\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    mediadive901api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/901\"\
+    ,\n        \"source_locator\": \"$.data.solutions[1].recipe[2]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 3,\\\
+    n                        \\\"compound\\\": \\\"ZnCl2\\\",\\n                 \
+    \       \\\"compound_id\\\": 64,\\n                        \\\"amount\\\": 70,\\\
+    n                        \\\"unit\\\": \\\"mg\\\",\\n                        \\\
+    \"g_l\\\": 0.07,\\n                        \\\"mmol_l\\\": 0.513573,\\n      \
+    \                  \\\"optional\\\": 0\\n                    }\",\n        \"\
+    snapshot_sha256\": \"0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\
+    \n      }\n    ],\n    \"rationale\": \"This is an undiluted stock value placed\
+    \ at the receiving-medium root. Restore stock scope and the separately listed\
+    \ aliquot; never treat a stock concentration as its final-medium contribution.\
+    \ Exact final volume is unresolved, so no final-medium conversion is proposed.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q12\",\n    \"ingredient_or_context\": \"\
+    DSMZ branch: MnCl2 x 4 H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_branch\": \"SL-10 stock\",\n      \"source_amount\": 100,\n\
+    \      \"source_unit\": \"mg\",\n      \"source_attribute\": null,\n      \"preserve_stage\"\
+    : true\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    mediadive901api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/901\"\
+    ,\n        \"source_locator\": \"$.data.solutions[1].recipe[3]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 4,\\\
+    n                        \\\"compound\\\": \\\"MnCl2 x 4 H2O\\\",\\n         \
+    \               \\\"compound_id\\\": 36,\\n                        \\\"amount\\\
+    \": 100,\\n                        \\\"unit\\\": \\\"mg\\\",\\n              \
+    \          \\\"g_l\\\": 0.1,\\n                        \\\"mmol_l\\\": 0.505293,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\
+    \n      }\n    ],\n    \"rationale\": \"This is an undiluted stock value placed\
+    \ at the receiving-medium root. Restore stock scope and the separately listed\
+    \ aliquot; never treat a stock concentration as its final-medium contribution.\
+    \ Exact final volume is unresolved, so no final-medium conversion is proposed.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q13\",\n    \"ingredient_or_context\": \"\
+    DSMZ branch: H3BO3\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.006\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.006\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[12].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.006\",\n          \"unit\": \"G_PER_L\"\n        },\n  \
+    \      \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.006\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_branch\": \"SL-10 stock\",\n      \"source_amount\": 6,\n\
+    \      \"source_unit\": \"mg\",\n      \"source_attribute\": null,\n      \"preserve_stage\"\
+    : true\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    mediadive901api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/901\"\
+    ,\n        \"source_locator\": \"$.data.solutions[1].recipe[4]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 5,\\\
+    n                        \\\"compound\\\": \\\"H3BO3\\\",\\n                 \
+    \       \\\"compound_id\\\": 37,\\n                        \\\"amount\\\": 6,\\\
+    n                        \\\"unit\\\": \\\"mg\\\",\\n                        \\\
+    \"g_l\\\": 0.006,\\n                        \\\"mmol_l\\\": 0.0970246,\\n    \
+    \                    \\\"optional\\\": 0\\n                    }\",\n        \"\
+    snapshot_sha256\": \"0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\
+    \n      }\n    ],\n    \"rationale\": \"This is an undiluted stock value placed\
+    \ at the receiving-medium root. Restore stock scope and the separately listed\
+    \ aliquot; never treat a stock concentration as its final-medium contribution.\
+    \ Exact final volume is unresolved, so no final-medium conversion is proposed.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q14\",\n    \"ingredient_or_context\": \"\
+    DSMZ branch: CoCl2 x 6 H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.19\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.19\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[13].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.19\",\n          \"unit\": \"G_PER_L\"\n        },\n   \
+    \     \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.19\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_branch\": \"SL-10 stock\",\n      \"source_amount\": 190,\n\
+    \      \"source_unit\": \"mg\",\n      \"source_attribute\": null,\n      \"preserve_stage\"\
+    : true\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    mediadive901api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/901\"\
+    ,\n        \"source_locator\": \"$.data.solutions[1].recipe[5]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 6,\\\
+    n                        \\\"compound\\\": \\\"CoCl2 x 6 H2O\\\",\\n         \
+    \               \\\"compound_id\\\": 38,\\n                        \\\"amount\\\
+    \": 190,\\n                        \\\"unit\\\": \\\"mg\\\",\\n              \
+    \          \\\"g_l\\\": 0.19,\\n                        \\\"mmol_l\\\": 1.46335,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\
+    \n      }\n    ],\n    \"rationale\": \"This is an undiluted stock value placed\
+    \ at the receiving-medium root. Restore stock scope and the separately listed\
+    \ aliquot; never treat a stock concentration as its final-medium contribution.\
+    \ Exact final volume is unresolved, so no final-medium conversion is proposed.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q15\",\n    \"ingredient_or_context\": \"\
+    DSMZ branch: CuCl2 x 2 H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[14].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n        },\n  \
+    \      \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_branch\": \"SL-10 stock\",\n      \"source_amount\": 2,\n\
+    \      \"source_unit\": \"mg\",\n      \"source_attribute\": null,\n      \"preserve_stage\"\
+    : true\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    mediadive901api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/901\"\
+    ,\n        \"source_locator\": \"$.data.solutions[1].recipe[6]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 7,\\\
+    n                        \\\"compound\\\": \\\"CuCl2 x 2 H2O\\\",\\n         \
+    \               \\\"compound_id\\\": 39,\\n                        \\\"amount\\\
+    \": 2,\\n                        \\\"unit\\\": \\\"mg\\\",\\n                \
+    \        \\\"g_l\\\": 0.002,\\n                        \\\"mmol_l\\\": 0.0117314,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\
+    \n      }\n    ],\n    \"rationale\": \"This is an undiluted stock value placed\
+    \ at the receiving-medium root. Restore stock scope and the separately listed\
+    \ aliquot; never treat a stock concentration as its final-medium contribution.\
+    \ Exact final volume is unresolved, so no final-medium conversion is proposed.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q16\",\n    \"ingredient_or_context\": \"\
+    DSMZ branch: NiCl2 x 6 H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.024\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.024\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[15].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.024\",\n          \"unit\": \"G_PER_L\"\n        },\n  \
+    \      \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.024\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_branch\": \"SL-10 stock\",\n      \"source_amount\": 24,\n\
+    \      \"source_unit\": \"mg\",\n      \"source_attribute\": null,\n      \"preserve_stage\"\
+    : true\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    mediadive901api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/901\"\
+    ,\n        \"source_locator\": \"$.data.solutions[1].recipe[7]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 8,\\\
+    n                        \\\"compound\\\": \\\"NiCl2 x 6 H2O\\\",\\n         \
+    \               \\\"compound_id\\\": 40,\\n                        \\\"amount\\\
+    \": 24,\\n                        \\\"unit\\\": \\\"mg\\\",\\n               \
+    \         \\\"g_l\\\": 0.024,\\n                        \\\"mmol_l\\\": 0.185187,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\
+    \n      }\n    ],\n    \"rationale\": \"This is an undiluted stock value placed\
+    \ at the receiving-medium root. Restore stock scope and the separately listed\
+    \ aliquot; never treat a stock concentration as its final-medium contribution.\
+    \ Exact final volume is unresolved, so no final-medium conversion is proposed.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q17\",\n    \"ingredient_or_context\": \"\
+    DSMZ branch: Na2MoO4 x 2 H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.036\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.036\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[16].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.036\",\n          \"unit\": \"G_PER_L\"\n        },\n  \
+    \      \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.036\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_branch\": \"SL-10 stock\",\n      \"source_amount\": 36,\n\
+    \      \"source_unit\": \"mg\",\n      \"source_attribute\": null,\n      \"preserve_stage\"\
+    : true\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    mediadive901api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/901\"\
+    ,\n        \"source_locator\": \"$.data.solutions[1].recipe[8]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 9,\\\
+    n                        \\\"compound\\\": \\\"Na2MoO4 x 2 H2O\\\",\\n       \
+    \                 \\\"compound_id\\\": 9,\\n                        \\\"amount\\\
+    \": 36,\\n                        \\\"unit\\\": \\\"mg\\\",\\n               \
+    \         \\\"g_l\\\": 0.036,\\n                        \\\"mmol_l\\\": 0.148791,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\
+    \n      }\n    ],\n    \"rationale\": \"This is an undiluted stock value placed\
+    \ at the receiving-medium root. Restore stock scope and the separately listed\
+    \ aliquot; never treat a stock concentration as its final-medium contribution.\
+    \ Exact final volume is unresolved, so no final-medium conversion is proposed.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q18\",\n    \"ingredient_or_context\": \"\
+    DSMZ branch: Biotin\",\n    \"decision\": \"correct\",\n    \"local_fields\":\
+    \ [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[17].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n        },\n   \
+    \     \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_branch\": \"Wolin vitamins 10x stock\",\n      \"source_amount\"\
+    : 20,\n      \"source_unit\": \"mg\",\n      \"source_attribute\": null,\n   \
+    \   \"preserve_stage\": true\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"mediadive901api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/901\"\
+    ,\n        \"source_locator\": \"$.data.solutions[2].recipe[0]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 1,\\\
+    n                        \\\"compound\\\": \\\"Biotin\\\",\\n                \
+    \        \\\"compound_id\\\": 46,\\n                        \\\"amount\\\": 20,\\\
+    n                        \\\"unit\\\": \\\"mg\\\",\\n                        \\\
+    \"g_l\\\": 0.02,\\n                        \\\"mmol_l\\\": 0.0818632,\\n     \
+    \                   \\\"optional\\\": 0\\n                    }\",\n        \"\
+    snapshot_sha256\": \"0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\
+    \n      }\n    ],\n    \"rationale\": \"This is an undiluted stock value placed\
+    \ at the receiving-medium root. Restore stock scope and the separately listed\
+    \ aliquot; never treat a stock concentration as its final-medium contribution.\
+    \ Exact final volume is unresolved, so no final-medium conversion is proposed.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q19\",\n    \"ingredient_or_context\": \"\
+    DSMZ branch: Folic acid\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[18].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n        },\n   \
+    \     \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_branch\": \"Wolin vitamins 10x stock\",\n      \"source_amount\"\
+    : 20,\n      \"source_unit\": \"mg\",\n      \"source_attribute\": null,\n   \
+    \   \"preserve_stage\": true\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"mediadive901api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/901\"\
+    ,\n        \"source_locator\": \"$.data.solutions[2].recipe[1]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 2,\\\
+    n                        \\\"compound\\\": \\\"Folic acid\\\",\\n            \
+    \            \\\"compound_id\\\": 138,\\n                        \\\"amount\\\"\
+    : 20,\\n                        \\\"unit\\\": \\\"mg\\\",\\n                 \
+    \       \\\"g_l\\\": 0.02,\\n                        \\\"mmol_l\\\": 0.0453104,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\
+    \n      }\n    ],\n    \"rationale\": \"This is an undiluted stock value placed\
+    \ at the receiving-medium root. Restore stock scope and the separately listed\
+    \ aliquot; never treat a stock concentration as its final-medium contribution.\
+    \ Exact final volume is unresolved, so no final-medium conversion is proposed.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q20\",\n    \"ingredient_or_context\": \"\
+    DSMZ branch: Pyridoxine hydrochloride\",\n    \"decision\": \"correct\",\n   \
+    \ \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_branch\": \"Wolin vitamins 10x stock\",\n      \"source_amount\"\
+    : 100,\n      \"source_unit\": \"mg\",\n      \"source_attribute\": null,\n  \
+    \    \"preserve_stage\": true\n    },\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"mediadive901api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/901\"\
+    ,\n        \"source_locator\": \"$.data.solutions[2].recipe[2]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 3,\\\
+    n                        \\\"compound\\\": \\\"Pyridoxine hydrochloride\\\",\\\
+    n                        \\\"compound_id\\\": 519,\\n                        \\\
+    \"amount\\\": 100,\\n                        \\\"unit\\\": \\\"mg\\\",\\n    \
+    \                    \\\"g_l\\\": 0.1,\\n                        \\\"mmol_l\\\"\
+    : 0.486287,\\n                        \\\"optional\\\": 0\\n                 \
+    \   }\",\n        \"snapshot_sha256\": \"0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\
+    \n      }\n    ],\n    \"rationale\": \"This is an undiluted stock value placed\
+    \ at the receiving-medium root. Restore stock scope and the separately listed\
+    \ aliquot; never treat a stock concentration as its final-medium contribution.\
+    \ Exact final volume is unresolved, so no final-medium conversion is proposed.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q21\",\n    \"ingredient_or_context\": \"\
+    DSMZ branch: Thiamine HCl\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[20].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n   \
+    \     \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_branch\": \"Wolin vitamins 10x stock\",\n      \"source_amount\"\
+    : 50,\n      \"source_unit\": \"mg\",\n      \"source_attribute\": null,\n   \
+    \   \"preserve_stage\": true\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"mediadive901api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/901\"\
+    ,\n        \"source_locator\": \"$.data.solutions[2].recipe[3]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 4,\\\
+    n                        \\\"compound\\\": \\\"Thiamine HCl\\\",\\n          \
+    \              \\\"compound_id\\\": 1207,\\n                        \\\"amount\\\
+    \": 50,\\n                        \\\"unit\\\": \\\"mg\\\",\\n               \
+    \         \\\"g_l\\\": 0.05,\\n                        \\\"mmol_l\\\": 0.148236,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\
+    \n      }\n    ],\n    \"rationale\": \"This is an undiluted stock value placed\
+    \ at the receiving-medium root. Restore stock scope and the separately listed\
+    \ aliquot; never treat a stock concentration as its final-medium contribution.\
+    \ Exact final volume is unresolved, so no final-medium conversion is proposed.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q22\",\n    \"ingredient_or_context\": \"\
+    DSMZ branch: Riboflavin\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[21].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n   \
+    \     \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_branch\": \"Wolin vitamins 10x stock\",\n      \"source_amount\"\
+    : 50,\n      \"source_unit\": \"mg\",\n      \"source_attribute\": null,\n   \
+    \   \"preserve_stage\": true\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"mediadive901api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/901\"\
+    ,\n        \"source_locator\": \"$.data.solutions[2].recipe[4]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 5,\\\
+    n                        \\\"compound\\\": \\\"Riboflavin\\\",\\n            \
+    \            \\\"compound_id\\\": 136,\\n                        \\\"amount\\\"\
+    : 50,\\n                        \\\"unit\\\": \\\"mg\\\",\\n                 \
+    \       \\\"g_l\\\": 0.05,\\n                        \\\"mmol_l\\\": 0.132837,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\
+    \n      }\n    ],\n    \"rationale\": \"This is an undiluted stock value placed\
+    \ at the receiving-medium root. Restore stock scope and the separately listed\
+    \ aliquot; never treat a stock concentration as its final-medium contribution.\
+    \ Exact final volume is unresolved, so no final-medium conversion is proposed.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q23\",\n    \"ingredient_or_context\": \"\
+    DSMZ branch: Nicotinic acid\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[22].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[22].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[22].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n   \
+    \     \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"ingredients[22].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_branch\": \"Wolin vitamins 10x stock\",\n      \"source_amount\"\
+    : 50,\n      \"source_unit\": \"mg\",\n      \"source_attribute\": null,\n   \
+    \   \"preserve_stage\": true\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"mediadive901api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/901\"\
+    ,\n        \"source_locator\": \"$.data.solutions[2].recipe[5]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 6,\\\
+    n                        \\\"compound\\\": \\\"Nicotinic acid\\\",\\n        \
+    \                \\\"compound_id\\\": 139,\\n                        \\\"amount\\\
+    \": 50,\\n                        \\\"unit\\\": \\\"mg\\\",\\n               \
+    \         \\\"g_l\\\": 0.05,\\n                        \\\"mmol_l\\\": 0.406141,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\
+    \n      }\n    ],\n    \"rationale\": \"This is an undiluted stock value placed\
+    \ at the receiving-medium root. Restore stock scope and the separately listed\
+    \ aliquot; never treat a stock concentration as its final-medium contribution.\
+    \ Exact final volume is unresolved, so no final-medium conversion is proposed.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q24\",\n    \"ingredient_or_context\": \"\
+    DSMZ branch: Calcium D-(+)-pantothenate\",\n    \"decision\": \"correct\",\n \
+    \   \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[23].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[23].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[23].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n   \
+    \     \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"ingredients[23].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_branch\": \"Wolin vitamins 10x stock\",\n      \"source_amount\"\
+    : 50,\n      \"source_unit\": \"mg\",\n      \"source_attribute\": null,\n   \
+    \   \"preserve_stage\": true\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"mediadive901api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/901\"\
+    ,\n        \"source_locator\": \"$.data.solutions[2].recipe[6]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 7,\\\
+    n                        \\\"compound\\\": \\\"Calcium D-(+)-pantothenate\\\"\
+    ,\\n                        \\\"compound_id\\\": 1512,\\n                    \
+    \    \\\"amount\\\": 50,\\n                        \\\"unit\\\": \\\"mg\\\",\\\
+    n                        \\\"g_l\\\": 0.05,\\n                        \\\"mmol_l\\\
+    \": 0.209846,\\n                        \\\"optional\\\": 0\\n               \
+    \     }\",\n        \"snapshot_sha256\": \"0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\
+    \n      }\n    ],\n    \"rationale\": \"This is an undiluted stock value placed\
+    \ at the receiving-medium root. Restore stock scope and the separately listed\
+    \ aliquot; never treat a stock concentration as its final-medium contribution.\
+    \ Exact final volume is unresolved, so no final-medium conversion is proposed.\
+    \ DSMZ explicitly specifies calcium D-(+)-pantothenate; its stereochemical correspondence\
+    \ differs from generic JCM calcium pantothenate wording.\"\n  },\n  {\n    \"\
+    quantity_id\": \"q25\",\n    \"ingredient_or_context\": \"DSMZ branch: Vitamin\
+    \ B12\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n \
+    \       \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[24].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[24].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[24].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n        },\n  \
+    \      \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"ingredients[24].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_branch\": \"Wolin vitamins 10x stock\",\n      \"source_amount\"\
+    : 1,\n      \"source_unit\": \"mg\",\n      \"source_attribute\": null,\n    \
+    \  \"preserve_stage\": true\n    },\n    \"source_snippets\": [\n      {\n   \
+    \     \"source_key\": \"mediadive901api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/901\"\
+    ,\n        \"source_locator\": \"$.data.solutions[2].recipe[7]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 8,\\\
+    n                        \\\"compound\\\": \\\"Vitamin B12\\\",\\n           \
+    \             \\\"compound_id\\\": 18,\\n                        \\\"amount\\\"\
+    : 1,\\n                        \\\"unit\\\": \\\"mg\\\",\\n                  \
+    \      \\\"g_l\\\": 0.001,\\n                        \\\"mmol_l\\\": 0.00073779,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\
+    \n      }\n    ],\n    \"rationale\": \"This is an undiluted stock value placed\
+    \ at the receiving-medium root. Restore stock scope and the separately listed\
+    \ aliquot; never treat a stock concentration as its final-medium contribution.\
+    \ Exact final volume is unresolved, so no final-medium conversion is proposed.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q26\",\n    \"ingredient_or_context\": \"\
+    DSMZ branch: p-Aminobenzoic acid\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[25].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[25].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[25].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n   \
+    \     \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"ingredients[25].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_branch\": \"Wolin vitamins 10x stock\",\n      \"source_amount\"\
+    : 50,\n      \"source_unit\": \"mg\",\n      \"source_attribute\": null,\n   \
+    \   \"preserve_stage\": true\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"mediadive901api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/901\"\
+    ,\n        \"source_locator\": \"$.data.solutions[2].recipe[8]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 9,\\\
+    n                        \\\"compound\\\": \\\"p-Aminobenzoic acid\\\",\\n   \
+    \                     \\\"compound_id\\\": 47,\\n                        \\\"\
+    amount\\\": 50,\\n                        \\\"unit\\\": \\\"mg\\\",\\n       \
+    \                 \\\"g_l\\\": 0.05,\\n                        \\\"mmol_l\\\"\
+    : 0.364591,\\n                        \\\"optional\\\": 0\\n                 \
+    \   }\",\n        \"snapshot_sha256\": \"0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\
+    \n      }\n    ],\n    \"rationale\": \"This is an undiluted stock value placed\
+    \ at the receiving-medium root. Restore stock scope and the separately listed\
+    \ aliquot; never treat a stock concentration as its final-medium contribution.\
+    \ Exact final volume is unresolved, so no final-medium conversion is proposed.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q27\",\n    \"ingredient_or_context\": \"\
+    DSMZ branch: (DL)-alpha-Lipoic acid\",\n    \"decision\": \"correct\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[26].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[26].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[26].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n   \
+    \     \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"ingredients[26].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_branch\": \"Wolin vitamins 10x stock\",\n      \"source_amount\"\
+    : 50,\n      \"source_unit\": \"mg\",\n      \"source_attribute\": null,\n   \
+    \   \"preserve_stage\": true\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"mediadive901api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/901\"\
+    ,\n        \"source_locator\": \"$.data.solutions[2].recipe[9]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 10,\\\
+    n                        \\\"compound\\\": \\\"(DL)-alpha-Lipoic acid\\\",\\n\
+    \                        \\\"compound_id\\\": 252,\\n                        \\\
+    \"amount\\\": 50,\\n                        \\\"unit\\\": \\\"mg\\\",\\n     \
+    \                   \\\"g_l\\\": 0.05,\\n                        \\\"mmol_l\\\"\
+    : 0.24233,\\n                        \\\"optional\\\": 0\\n                  \
+    \  }\",\n        \"snapshot_sha256\": \"0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\
+    \n      }\n    ],\n    \"rationale\": \"This is an undiluted stock value placed\
+    \ at the receiving-medium root. Restore stock scope and the separately listed\
+    \ aliquot; never treat a stock concentration as its final-medium contribution.\
+    \ Exact final volume is unresolved, so no final-medium conversion is proposed.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q28\",\n    \"ingredient_or_context\": \"\
+    DSMZ branch: Na2S x 9 H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[27].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[27].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[27].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"ingredients[27].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_branch\": \"3% w/v sulfide stock\",\n      \"source_amount\"\
+    : 3,\n      \"source_unit\": \"g\",\n      \"source_attribute\": null,\n     \
+    \ \"preserve_stage\": true\n    },\n    \"source_snippets\": [\n      {\n    \
+    \    \"source_key\": \"mediadive901api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/901\"\
+    ,\n        \"source_locator\": \"$.data.solutions[3].recipe[0]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 1,\\\
+    n                        \\\"compound\\\": \\\"Na2S x 9 H2O\\\",\\n          \
+    \              \\\"compound_id\\\": 54,\\n                        \\\"amount\\\
+    \": 3,\\n                        \\\"unit\\\": \\\"g\\\",\\n                 \
+    \       \\\"g_l\\\": 30,\\n                        \\\"mmol_l\\\": 124.905,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\
+    \n      }\n    ],\n    \"rationale\": \"This is an undiluted stock value placed\
+    \ at the receiving-medium root. Restore stock scope and the separately listed\
+    \ aliquot; never treat a stock concentration as its final-medium contribution.\
+    \ Exact final volume is unresolved, so no final-medium conversion is proposed.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q29\",\n    \"ingredient_or_context\": \"\
+    JCM branch: NH4Cl\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.326087\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.326087\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_solution_id\": 4022,\n      \"source_amount\": 0.33,\n   \
+    \   \"source_unit\": \"g\",\n      \"source_attribute\": null\n    },\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"mediadiveJ308api\",\n\
+    \        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J308\",\n   \
+    \     \"source_locator\": \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 1,\\n                  \
+    \      \\\"compound\\\": \\\"NH4Cl\\\",\\n                        \\\"compound_id\\\
+    \": 42,\\n                        \\\"amount\\\": 0.33,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.326087,\\\
+    n                        \\\"mmol_l\\\": 6.09622,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5\"\n      }\n\
+    \    ],\n    \"rationale\": \"Existing values match the current JCM provider g_l\
+    \ on its declared 1012 ml basis but lack attached evidence. Preserve original\
+    \ batch amounts, the nominal provider basis and separate-stock preparation; the\
+    \ primary does not establish measured final volume after all prepared stocks.\
+    \ JCM 934 inherits only its justified base context and has its own yeast/glucose\
+    \ modification.\"\n  },\n  {\n    \"quantity_id\": \"q30\",\n    \"ingredient_or_context\"\
+    : \"JCM branch: KH2PO4\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.326087\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.326087\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_solution_id\": 4022,\n      \"source_amount\": 0.33,\n   \
+    \   \"source_unit\": \"g\",\n      \"source_attribute\": null\n    },\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"mediadiveJ308api\",\n\
+    \        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J308\",\n   \
+    \     \"source_locator\": \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 2,\\n                  \
+    \      \\\"compound\\\": \\\"KH2PO4\\\",\\n                        \\\"compound_id\\\
+    \": 11,\\n                        \\\"amount\\\": 0.33,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.326087,\\\
+    n                        \\\"mmol_l\\\": 2.39618,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5\"\n      }\n\
+    \    ],\n    \"rationale\": \"Existing values match the current JCM provider g_l\
+    \ on its declared 1012 ml basis but lack attached evidence. Preserve original\
+    \ batch amounts, the nominal provider basis and separate-stock preparation; the\
+    \ primary does not establish measured final volume after all prepared stocks.\
+    \ JCM 934 inherits only its justified base context and has its own yeast/glucose\
+    \ modification.\"\n  },\n  {\n    \"quantity_id\": \"q31\",\n    \"ingredient_or_context\"\
+    : \"JCM branch: KCl\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.326087\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.326087\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_solution_id\": 4022,\n      \"source_amount\": 0.33,\n   \
+    \   \"source_unit\": \"g\",\n      \"source_attribute\": null\n    },\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"mediadiveJ308api\",\n\
+    \        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J308\",\n   \
+    \     \"source_locator\": \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 3,\\n                  \
+    \      \\\"compound\\\": \\\"KCl\\\",\\n                        \\\"compound_id\\\
+    \": 61,\\n                        \\\"amount\\\": 0.33,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.326087,\\\
+    n                        \\\"mmol_l\\\": 4.37407,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5\"\n      }\n\
+    \    ],\n    \"rationale\": \"Existing values match the current JCM provider g_l\
+    \ on its declared 1012 ml basis but lack attached evidence. Preserve original\
+    \ batch amounts, the nominal provider basis and separate-stock preparation; the\
+    \ primary does not establish measured final volume after all prepared stocks.\
+    \ JCM 934 inherits only its justified base context and has its own yeast/glucose\
+    \ modification.\"\n  },\n  {\n    \"quantity_id\": \"q32\",\n    \"ingredient_or_context\"\
+    : \"JCM branch: CaCl2 x 2 H2O\",\n    \"decision\": \"evidence_only\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.326087\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.326087\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_solution_id\": 4022,\n      \"source_amount\": 0.33,\n   \
+    \   \"source_unit\": \"g\",\n      \"source_attribute\": null\n    },\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"mediadiveJ308api\",\n\
+    \        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J308\",\n   \
+    \     \"source_locator\": \"$.data.solutions[0].recipe[3]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 4,\\n                  \
+    \      \\\"compound\\\": \\\"CaCl2 x 2 H2O\\\",\\n                        \\\"\
+    compound_id\\\": 7,\\n                        \\\"amount\\\": 0.33,\\n       \
+    \                 \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\
+    \": 0.326087,\\n                        \\\"mmol_l\\\": 2.21805,\\n          \
+    \              \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Existing values match the current JCM provider\
+    \ g_l on its declared 1012 ml basis but lack attached evidence. Preserve original\
+    \ batch amounts, the nominal provider basis and separate-stock preparation; the\
+    \ primary does not establish measured final volume after all prepared stocks.\
+    \ JCM 934 inherits only its justified base context and has its own yeast/glucose\
+    \ modification.\"\n  },\n  {\n    \"quantity_id\": \"q33\",\n    \"ingredient_or_context\"\
+    : \"JCM branch: MgCl2 x 6 H2O\",\n    \"decision\": \"evidence_only\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.326087\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.326087\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_solution_id\": 4022,\n      \"source_amount\": 0.33,\n   \
+    \   \"source_unit\": \"g\",\n      \"source_attribute\": null\n    },\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"mediadiveJ308api\",\n\
+    \        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J308\",\n   \
+    \     \"source_locator\": \"$.data.solutions[0].recipe[4]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 5,\\n                  \
+    \      \\\"compound\\\": \\\"MgCl2 x 6 H2O\\\",\\n                        \\\"\
+    compound_id\\\": 79,\\n                        \\\"amount\\\": 0.33,\\n      \
+    \                  \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\
+    \": 0.326087,\\n                        \\\"mmol_l\\\": 1.60395,\\n          \
+    \              \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Existing values match the current JCM provider\
+    \ g_l on its declared 1012 ml basis but lack attached evidence. Preserve original\
+    \ batch amounts, the nominal provider basis and separate-stock preparation; the\
+    \ primary does not establish measured final volume after all prepared stocks.\
+    \ JCM 934 inherits only its justified base context and has its own yeast/glucose\
+    \ modification.\"\n  },\n  {\n    \"quantity_id\": \"q34\",\n    \"ingredient_or_context\"\
+    : \"JCM branch: Yeast extract\",\n    \"decision\": \"evidence_only\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.296443\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.296443\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"conflict\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_solution_id\": 4022,\n      \"source_amount\": 0.3,\n    \
+    \  \"source_unit\": \"g\",\n      \"source_attribute\": \"BD-Difco\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadiveJ308api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J308\",\n \
+    \       \"source_locator\": \"$.data.solutions[0].recipe[8]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 9,\\n                  \
+    \      \\\"compound\\\": \\\"Yeast extract\\\",\\n                        \\\"\
+    compound_id\\\": 16,\\n                        \\\"attribute\\\": \\\"BD-Difco\\\
+    \",\\n                        \\\"amount\\\": 0.3,\\n                        \\\
+    \"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.296443,\\n   \
+    \                     \\\"optional\\\": 0\\n                    }\",\n       \
+    \ \"snapshot_sha256\": \"5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5\"\
+    \n      }\n    ],\n    \"rationale\": \"Existing values match the current JCM\
+    \ provider g_l on its declared 1012 ml basis but lack attached evidence. Preserve\
+    \ original batch amounts, the nominal provider basis and separate-stock preparation;\
+    \ the primary does not establish measured final volume after all prepared stocks.\
+    \ JCM 934 inherits only its justified base context and has its own yeast/glucose\
+    \ modification.\"\n  },\n  {\n    \"quantity_id\": \"q35\",\n    \"ingredient_or_context\"\
+    : \"JCM branch: Sulfur\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"9.88142\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"9.88142\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_solution_id\": 4022,\n      \"source_amount\": 10,\n     \
+    \ \"source_unit\": \"g\",\n      \"source_attribute\": \"powder\"\n    },\n  \
+    \  \"source_snippets\": [\n      {\n        \"source_key\": \"mediadiveJ308api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J308\",\n \
+    \       \"source_locator\": \"$.data.solutions[0].recipe[9]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 10,\\n                 \
+    \       \\\"compound\\\": \\\"Sulfur\\\",\\n                        \\\"compound_id\\\
+    \": 80,\\n                        \\\"attribute\\\": \\\"powder\\\",\\n      \
+    \                  \\\"amount\\\": 10,\\n                        \\\"unit\\\"\
+    : \\\"g\\\",\\n                        \\\"g_l\\\": 9.88142,\\n              \
+    \          \\\"mmol_l\\\": 308.12,\\n                        \\\"optional\\\"\
+    : 0\\n                    }\",\n        \"snapshot_sha256\": \"5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5\"\
+    \n      }\n    ],\n    \"rationale\": \"Existing values match the current JCM\
+    \ provider g_l on its declared 1012 ml basis but lack attached evidence. Preserve\
+    \ original batch amounts, the nominal provider basis and separate-stock preparation;\
+    \ the primary does not establish measured final volume after all prepared stocks.\
+    \ JCM 934 inherits only its justified base context and has its own yeast/glucose\
+    \ modification.\"\n  },\n  {\n    \"quantity_id\": \"q36\",\n    \"ingredient_or_context\"\
+    : \"JCM branch: Na2S x 9 H2O\",\n    \"decision\": \"evidence_only\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.494071\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.494071\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_solution_id\": 4022,\n      \"source_amount\": 0.5,\n    \
+    \  \"source_unit\": \"g\",\n      \"source_attribute\": null\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadiveJ308api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J308\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[10]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 11,\\n                        \\\
+    \"compound\\\": \\\"Na2S x 9 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 54,\\n                        \\\"amount\\\": 0.5,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.494071,\\\
+    n                        \\\"mmol_l\\\": 2.05707,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5\"\n      }\n\
+    \    ],\n    \"rationale\": \"Existing values match the current JCM provider g_l\
+    \ on its declared 1012 ml basis but lack attached evidence. Preserve original\
+    \ batch amounts, the nominal provider basis and separate-stock preparation; the\
+    \ primary does not establish measured final volume after all prepared stocks.\
+    \ JCM 934 inherits only its justified base context and has its own yeast/glucose\
+    \ modification.\"\n  },\n  {\n    \"quantity_id\": \"q37\",\n    \"ingredient_or_context\"\
+    : \"JCM branch: Resazurin\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.000988142\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"evidence_only\"\n      },\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.000988142\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"\
+    proposed_source_scope\": {\n      \"source_solution_id\": 4022,\n      \"source_amount\"\
+    : 1,\n      \"source_unit\": \"mg\",\n      \"source_attribute\": null\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadiveJ308api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J308\",\n \
+    \       \"source_locator\": \"$.data.solutions[0].recipe[11]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 12,\\n                 \
+    \       \\\"compound\\\": \\\"Resazurin\\\",\\n                        \\\"compound_id\\\
+    \": 25,\\n                        \\\"amount\\\": 1,\\n                      \
+    \  \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.000988142,\\\
+    n                        \\\"mmol_l\\\": 0.00431145,\\n                      \
+    \  \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Existing values match the current JCM provider\
+    \ g_l on its declared 1012 ml basis but lack attached evidence. Preserve original\
+    \ batch amounts, the nominal provider basis and separate-stock preparation; the\
+    \ primary does not establish measured final volume after all prepared stocks.\
+    \ JCM 934 inherits only its justified base context and has its own yeast/glucose\
+    \ modification.\"\n  },\n  {\n    \"quantity_id\": \"q38\",\n    \"ingredient_or_context\"\
+    : \"JCM branch: HCl\",\n    \"decision\": \"correct\",\n    \"local_fields\":\
+    \ [\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_solution_id\": 3846,\n      \"source_amount\": 10,\n     \
+    \ \"source_unit\": \"ml\",\n      \"source_attribute\": \"7.7 M, 25%\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadiveJ308api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J308\",\n \
+    \       \"source_locator\": \"$.data.solutions[1].recipe[0]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 1,\\n                  \
+    \      \\\"compound\\\": \\\"HCl\\\",\\n                        \\\"compound_id\\\
+    \": 68,\\n                        \\\"attribute\\\": \\\"7.7 M, 25%\\\",\\n  \
+    \                      \\\"amount\\\": 10,\\n                        \\\"unit\\\
+    \": \\\"ml\\\",\\n                        \\\"g_l\\\": 2.5,\\n               \
+    \         \\\"mmol_l\\\": 68.5683,\\n                        \\\"optional\\\"\
+    : 0\\n                    }\",\n        \"snapshot_sha256\": \"5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5\"\
+    \n      }\n    ],\n    \"rationale\": \"The JCM owners flatten this stock concentration\
+    \ into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot,\
+    \ retaining raw source amount, stock water and provider nominal 1000 ml basis.\
+    \ No final-medium concentration is inferred. Primary JCM 187 gives 25% HCl (7.7\
+    \ M), 10 ml; do not replace its explicit molarity with provider 2.5 g/L or invent\
+    \ a percent basis.\"\n  },\n  {\n    \"quantity_id\": \"q39\",\n    \"ingredient_or_context\"\
+    : \"JCM branch: FeCl2 x 4 H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_solution_id\": 3846,\n      \"source_amount\": 1.5,\n    \
+    \  \"source_unit\": \"g\",\n      \"source_attribute\": null\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadiveJ308api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J308\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"FeCl2 x 4 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 260,\\n                        \\\"amount\\\": 1.5,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 1.5,\\n\
+    \                        \\\"mmol_l\\\": 7.54482,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5\"\n      }\n\
+    \    ],\n    \"rationale\": \"The JCM owners flatten this stock concentration\
+    \ into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot,\
+    \ retaining raw source amount, stock water and provider nominal 1000 ml basis.\
+    \ No final-medium concentration is inferred.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q40\",\n    \"ingredient_or_context\": \"JCM branch: ZnCl2\",\n    \"decision\"\
+    : \"correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.07\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\",\n  \
+    \      \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.07\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_solution_id\": 3847,\n      \"source_amount\": 70,\n     \
+    \ \"source_unit\": \"mg\",\n      \"source_attribute\": null\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadiveJ308api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J308\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"ZnCl2\\\",\\n                        \\\"compound_id\\\": 64,\\\
+    n                        \\\"amount\\\": 70,\\n                        \\\"unit\\\
+    \": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.07,\\n              \
+    \          \\\"mmol_l\\\": 0.513573,\\n                        \\\"optional\\\"\
+    : 0\\n                    }\",\n        \"snapshot_sha256\": \"5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5\"\
+    \n      }\n    ],\n    \"rationale\": \"The JCM owners flatten this stock concentration\
+    \ into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot,\
+    \ retaining raw source amount, stock water and provider nominal 1000 ml basis.\
+    \ No final-medium concentration is inferred.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q41\",\n    \"ingredient_or_context\": \"JCM branch: MnCl2 x 4 H2O\",\n  \
+    \  \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidilobus_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[12].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_solution_id\": 3847,\n      \"source_amount\": 100,\n    \
+    \  \"source_unit\": \"mg\",\n      \"source_attribute\": null\n    },\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"mediadiveJ308api\",\n\
+    \        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J308\",\n   \
+    \     \"source_locator\": \"$.data.solutions[2].recipe[1]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 2,\\n                  \
+    \      \\\"compound\\\": \\\"MnCl2 x 4 H2O\\\",\\n                        \\\"\
+    compound_id\\\": 36,\\n                        \\\"amount\\\": 100,\\n       \
+    \                 \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\
+    \": 0.1,\\n                        \\\"mmol_l\\\": 0.505293,\\n              \
+    \          \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The JCM owners flatten this stock concentration\
+    \ into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot,\
+    \ retaining raw source amount, stock water and provider nominal 1000 ml basis.\
+    \ No final-medium concentration is inferred.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q42\",\n    \"ingredient_or_context\": \"JCM branch: H3BO3\",\n    \"decision\"\
+    : \"correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.006\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\",\n  \
+    \      \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.006\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_solution_id\": 3847,\n      \"source_amount\": 6,\n      \"\
+    source_unit\": \"mg\",\n      \"source_attribute\": null\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadiveJ308api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J308\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"H3BO3\\\",\\n                        \\\"compound_id\\\": 37,\\\
+    n                        \\\"amount\\\": 6,\\n                        \\\"unit\\\
+    \": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.006,\\n             \
+    \           \\\"mmol_l\\\": 0.0970246,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5\"\
+    \n      }\n    ],\n    \"rationale\": \"The JCM owners flatten this stock concentration\
+    \ into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot,\
+    \ retaining raw source amount, stock water and provider nominal 1000 ml basis.\
+    \ No final-medium concentration is inferred.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q43\",\n    \"ingredient_or_context\": \"JCM branch: CoCl2 x 6 H2O\",\n  \
+    \  \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidilobus_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[14].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.19\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.19\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_solution_id\": 3847,\n      \"source_amount\": 190,\n    \
+    \  \"source_unit\": \"mg\",\n      \"source_attribute\": null\n    },\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"mediadiveJ308api\",\n\
+    \        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J308\",\n   \
+    \     \"source_locator\": \"$.data.solutions[2].recipe[3]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 4,\\n                  \
+    \      \\\"compound\\\": \\\"CoCl2 x 6 H2O\\\",\\n                        \\\"\
+    compound_id\\\": 38,\\n                        \\\"amount\\\": 190,\\n       \
+    \                 \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\
+    \": 0.19,\\n                        \\\"mmol_l\\\": 1.46335,\\n              \
+    \          \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The JCM owners flatten this stock concentration\
+    \ into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot,\
+    \ retaining raw source amount, stock water and provider nominal 1000 ml basis.\
+    \ No final-medium concentration is inferred.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q44\",\n    \"ingredient_or_context\": \"JCM branch: CuCl2 x 2 H2O\",\n  \
+    \  \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidilobus_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[15].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.002\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_solution_id\": 3847,\n      \"source_amount\": 2,\n      \"\
+    source_unit\": \"mg\",\n      \"source_attribute\": null\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadiveJ308api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J308\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"CuCl2 x 2 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 39,\\n                        \\\"amount\\\": 2,\\n                      \
+    \  \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.002,\\n\
+    \                        \\\"mmol_l\\\": 0.0117314,\\n                       \
+    \ \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The JCM owners flatten this stock concentration\
+    \ into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot,\
+    \ retaining raw source amount, stock water and provider nominal 1000 ml basis.\
+    \ No final-medium concentration is inferred.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q45\",\n    \"ingredient_or_context\": \"JCM branch: NiCl2 x 6 H2O\",\n  \
+    \  \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidilobus_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[16].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.024\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.024\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_solution_id\": 3847,\n      \"source_amount\": 24,\n     \
+    \ \"source_unit\": \"mg\",\n      \"source_attribute\": null\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadiveJ308api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J308\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"NiCl2 x 6 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 40,\\n                        \\\"amount\\\": 24,\\n                     \
+    \   \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.024,\\\
+    n                        \\\"mmol_l\\\": 0.185187,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5\"\n      }\n\
+    \    ],\n    \"rationale\": \"The JCM owners flatten this stock concentration\
+    \ into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot,\
+    \ retaining raw source amount, stock water and provider nominal 1000 ml basis.\
+    \ No final-medium concentration is inferred.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q46\",\n    \"ingredient_or_context\": \"JCM branch: Na2MoO4 x 2 H2O\",\n\
+    \    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/normalized_yaml/archaea/acidilobus_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[17].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.036\",\n          \"unit\": \"G_PER_L\"\n        },\n  \
+    \      \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.036\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_solution_id\": 3847,\n      \"source_amount\": 36,\n     \
+    \ \"source_unit\": \"mg\",\n      \"source_attribute\": null\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadiveJ308api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J308\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"Na2MoO4 x 2 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 9,\\n                        \\\"amount\\\": 36,\\n                      \
+    \  \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.036,\\n\
+    \                        \\\"mmol_l\\\": 0.148791,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5\"\n      }\n\
+    \    ],\n    \"rationale\": \"The JCM owners flatten this stock concentration\
+    \ into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot,\
+    \ retaining raw source amount, stock water and provider nominal 1000 ml basis.\
+    \ No final-medium concentration is inferred.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q47\",\n    \"ingredient_or_context\": \"JCM branch: Biotin\",\n    \"decision\"\
+    : \"correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\",\n  \
+    \      \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_solution_id\": 3861,\n      \"source_amount\": 2,\n      \"\
+    source_unit\": \"mg\",\n      \"source_attribute\": null\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadiveJ308api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J308\",\n        \"source_locator\"\
+    : \"$.data.solutions[3].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"Biotin\\\",\\n                        \\\"compound_id\\\": 46,\\\
+    n                        \\\"amount\\\": 2,\\n                        \\\"unit\\\
+    \": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.002,\\n             \
+    \           \\\"mmol_l\\\": 0.00818632,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5\"\
+    \n      }\n    ],\n    \"rationale\": \"The JCM owners flatten this stock concentration\
+    \ into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot,\
+    \ retaining raw source amount, stock water and provider nominal 1000 ml basis.\
+    \ No final-medium concentration is inferred.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q48\",\n    \"ingredient_or_context\": \"JCM branch: Folic acid\",\n    \"\
+    decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidilobus_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[19].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.002\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_solution_id\": 3861,\n      \"source_amount\": 2,\n      \"\
+    source_unit\": \"mg\",\n      \"source_attribute\": null\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadiveJ308api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J308\",\n        \"source_locator\"\
+    : \"$.data.solutions[3].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"Folic acid\\\",\\n                        \\\"compound_id\\\"\
+    : 138,\\n                        \\\"amount\\\": 2,\\n                       \
+    \ \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.002,\\n \
+    \                       \\\"mmol_l\\\": 0.00453104,\\n                       \
+    \ \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The JCM owners flatten this stock concentration\
+    \ into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot,\
+    \ retaining raw source amount, stock water and provider nominal 1000 ml basis.\
+    \ No final-medium concentration is inferred.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q49\",\n    \"ingredient_or_context\": \"JCM branch: Pyridoxine hydrochloride\"\
+    ,\n    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/normalized_yaml/archaea/acidilobus_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[20].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n        },\n   \
+    \     \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_solution_id\": 3861,\n      \"source_amount\": 10,\n     \
+    \ \"source_unit\": \"mg\",\n      \"source_attribute\": null\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadiveJ308api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J308\",\n        \"source_locator\"\
+    : \"$.data.solutions[3].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"Pyridoxine hydrochloride\\\",\\n                        \\\"\
+    compound_id\\\": 519,\\n                        \\\"amount\\\": 10,\\n       \
+    \                 \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\
+    \": 0.01,\\n                        \\\"mmol_l\\\": 0.0486287,\\n            \
+    \            \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The JCM owners flatten this stock concentration\
+    \ into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot,\
+    \ retaining raw source amount, stock water and provider nominal 1000 ml basis.\
+    \ No final-medium concentration is inferred.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q50\",\n    \"ingredient_or_context\": \"JCM branch: Thiamine HCl\",\n   \
+    \ \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidilobus_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[21].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.005\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_solution_id\": 3861,\n      \"source_amount\": 5,\n      \"\
+    source_unit\": \"mg\",\n      \"source_attribute\": null\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadiveJ308api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J308\",\n        \"source_locator\"\
+    : \"$.data.solutions[3].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"Thiamine HCl\\\",\\n                        \\\"compound_id\\\
+    \": 1207,\\n                        \\\"amount\\\": 5,\\n                    \
+    \    \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.005,\\\
+    n                        \\\"mmol_l\\\": 0.0148236,\\n                       \
+    \ \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The JCM owners flatten this stock concentration\
+    \ into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot,\
+    \ retaining raw source amount, stock water and provider nominal 1000 ml basis.\
+    \ No final-medium concentration is inferred.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q51\",\n    \"ingredient_or_context\": \"JCM branch: Riboflavin\",\n    \"\
+    decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidilobus_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[22].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.005\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[22].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_solution_id\": 3861,\n      \"source_amount\": 5,\n      \"\
+    source_unit\": \"mg\",\n      \"source_attribute\": null\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadiveJ308api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J308\",\n        \"source_locator\"\
+    : \"$.data.solutions[3].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"Riboflavin\\\",\\n                        \\\"compound_id\\\"\
+    : 136,\\n                        \\\"amount\\\": 5,\\n                       \
+    \ \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.005,\\n \
+    \                       \\\"mmol_l\\\": 0.0132837,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5\"\n      }\n\
+    \    ],\n    \"rationale\": \"The JCM owners flatten this stock concentration\
+    \ into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot,\
+    \ retaining raw source amount, stock water and provider nominal 1000 ml basis.\
+    \ No final-medium concentration is inferred.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q52\",\n    \"ingredient_or_context\": \"JCM branch: Nicotinic acid\",\n \
+    \   \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidilobus_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[23].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.005\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[23].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_solution_id\": 3861,\n      \"source_amount\": 5,\n      \"\
+    source_unit\": \"mg\",\n      \"source_attribute\": null\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadiveJ308api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J308\",\n        \"source_locator\"\
+    : \"$.data.solutions[3].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"Nicotinic acid\\\",\\n                        \\\"compound_id\\\
+    \": 139,\\n                        \\\"amount\\\": 5,\\n                     \
+    \   \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.005,\\\
+    n                        \\\"mmol_l\\\": 0.0406141,\\n                       \
+    \ \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The JCM owners flatten this stock concentration\
+    \ into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot,\
+    \ retaining raw source amount, stock water and provider nominal 1000 ml basis.\
+    \ No final-medium concentration is inferred.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q53\",\n    \"ingredient_or_context\": \"JCM branch: Calcium pantothenate\"\
+    ,\n    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/normalized_yaml/archaea/acidilobus_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[24].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n        },\n  \
+    \      \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[24].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_solution_id\": 3861,\n      \"source_amount\": 5,\n      \"\
+    source_unit\": \"mg\",\n      \"source_attribute\": null\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadiveJ308api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J308\",\n        \"source_locator\"\
+    : \"$.data.solutions[3].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"Calcium pantothenate\\\",\\n                        \\\"compound_id\\\
+    \": 518,\\n                        \\\"amount\\\": 5,\\n                     \
+    \   \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.005,\\\
+    n                        \\\"mmol_l\\\": 0.0104925,\\n                       \
+    \ \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The JCM owners flatten this stock concentration\
+    \ into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot,\
+    \ retaining raw source amount, stock water and provider nominal 1000 ml basis.\
+    \ No final-medium concentration is inferred. Generic source calcium pantothenate\
+    \ does not independently establish the stereospecific CHEBI:31345 supply form.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q54\",\n    \"ingredient_or_context\": \"\
+    JCM branch: Vitamin B12\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[25].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0001\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\",\n  \
+    \      \"field_path\": \"ingredients[25].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0001\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_solution_id\": 3861,\n      \"source_amount\": 0.1,\n    \
+    \  \"source_unit\": \"mg\",\n      \"source_attribute\": null\n    },\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"mediadiveJ308api\",\n\
+    \        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J308\",\n   \
+    \     \"source_locator\": \"$.data.solutions[3].recipe[7]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 8,\\n                  \
+    \      \\\"compound\\\": \\\"Vitamin B12\\\",\\n                        \\\"compound_id\\\
+    \": 18,\\n                        \\\"amount\\\": 0.1,\\n                    \
+    \    \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.0001,\\\
+    n                        \\\"mmol_l\\\": 7.3779e-5,\\n                       \
+    \ \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The JCM owners flatten this stock concentration\
+    \ into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot,\
+    \ retaining raw source amount, stock water and provider nominal 1000 ml basis.\
+    \ No final-medium concentration is inferred.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q55\",\n    \"ingredient_or_context\": \"JCM branch: p-Aminobenzoic acid\"\
+    ,\n    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/normalized_yaml/archaea/acidilobus_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[26].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n        },\n  \
+    \      \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[26].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_solution_id\": 3861,\n      \"source_amount\": 5,\n      \"\
+    source_unit\": \"mg\",\n      \"source_attribute\": null\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadiveJ308api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J308\",\n        \"source_locator\"\
+    : \"$.data.solutions[3].recipe[8]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 9,\\n                        \\\"\
+    compound\\\": \\\"p-Aminobenzoic acid\\\",\\n                        \\\"compound_id\\\
+    \": 47,\\n                        \\\"amount\\\": 5,\\n                      \
+    \  \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.005,\\n\
+    \                        \\\"mmol_l\\\": 0.0364591,\\n                       \
+    \ \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The JCM owners flatten this stock concentration\
+    \ into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot,\
+    \ retaining raw source amount, stock water and provider nominal 1000 ml basis.\
+    \ No final-medium concentration is inferred.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q56\",\n    \"ingredient_or_context\": \"JCM branch: Lipoic acid\",\n    \"\
+    decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidilobus_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[27].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.005\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[27].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"source_solution_id\": 3861,\n      \"source_amount\": 5,\n      \"\
+    source_unit\": \"mg\",\n      \"source_attribute\": null\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadiveJ308api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J308\",\n        \"source_locator\"\
+    : \"$.data.solutions[3].recipe[9]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 10,\\n                        \\\
+    \"compound\\\": \\\"Lipoic acid\\\",\\n                        \\\"compound_id\\\
+    \": 368,\\n                        \\\"amount\\\": 5,\\n                     \
+    \   \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.005,\\\
+    n                        \\\"mmol_l\\\": 0.024233,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5\"\n      }\n\
+    \    ],\n    \"rationale\": \"The JCM owners flatten this stock concentration\
+    \ into the receiving medium. Restore the named stock and its 1 or 10 ml aliquot,\
+    \ retaining raw source amount, stock water and provider nominal 1000 ml basis.\
+    \ No final-medium concentration is inferred.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q57\",\n    \"ingredient_or_context\": \"DSMZ receiving: Trace element solution\
+    \ SL-10\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n   \
+    \     \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\",\n\
+    \        \"field_path\": \"solutions\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_scope\": {\n \
+    \     \"amount\": 1,\n      \"unit\": \"ml\",\n      \"attribute\": null,\n  \
+    \    \"source_stage\": \"DSMZ receiving batch\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive901api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/901\",\n        \"source_locator\":\
+    \ \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    solution\\\": \\\"Trace element solution SL-10\\\",\\n                       \
+    \ \\\"solution_id\\\": 595,\\n                        \\\"amount\\\": 1,\\n  \
+    \                      \\\"unit\\\": \\\"ml\\\",\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\
+    \n      }\n    ],\n    \"rationale\": \"Absent as a faithful stock-dose/water\
+    \ representation in these layers. Restore source-scoped assembly without double-counting\
+    \ flattened direct ingredients. A stock name or nominal x label is not a universal\
+    \ working dose.\"\n  },\n  {\n    \"quantity_id\": \"q58\",\n    \"ingredient_or_context\"\
+    : \"DSMZ receiving: Sodium resazurin\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_scope\": {\n \
+    \     \"amount\": 0.5,\n      \"unit\": \"ml\",\n      \"attribute\": \"0.1% w/v\"\
+    ,\n      \"source_stage\": \"DSMZ receiving batch\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive901api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/901\",\n        \"source_locator\":\
+    \ \"$.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"Sodium resazurin\\\",\\n                        \\\"compound_id\\\
+    \": 1852,\\n                        \\\"attribute\\\": \\\"0.1% w/v\\\",\\n  \
+    \                      \\\"amount\\\": 0.5,\\n                        \\\"unit\\\
+    \": \\\"ml\\\",\\n                        \\\"g_l\\\": 0.000491642,\\n       \
+    \                 \\\"mmol_l\\\": 0.00195741,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\
+    \n      }\n    ],\n    \"rationale\": \"Absent as a faithful stock-dose/water\
+    \ representation in these layers. Restore source-scoped assembly without double-counting\
+    \ flattened direct ingredients. A stock name or nominal x label is not a universal\
+    \ working dose.\"\n  },\n  {\n    \"quantity_id\": \"q59\",\n    \"ingredient_or_context\"\
+    : \"DSMZ receiving: Wolin's vitamin solution (10x)\",\n    \"decision\": \"add\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_scope\": {\n \
+    \     \"amount\": 1,\n      \"unit\": \"ml\",\n      \"attribute\": null,\n  \
+    \    \"source_stage\": \"DSMZ receiving batch\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive901api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/901\",\n        \"source_locator\":\
+    \ \"$.data.solutions[0].recipe[9]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 10,\\n                        \\\
+    \"solution\\\": \\\"Wolin's vitamin solution (10x)\\\",\\n                   \
+    \     \\\"solution_id\\\": 5980,\\n                        \\\"amount\\\": 1,\\\
+    n                        \\\"unit\\\": \\\"ml\\\",\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\n      }\n\
+    \    ],\n    \"rationale\": \"Absent as a faithful stock-dose/water representation\
+    \ in these layers. Restore source-scoped assembly without double-counting flattened\
+    \ direct ingredients. A stock name or nominal x label is not a universal working\
+    \ dose.\"\n  },\n  {\n    \"quantity_id\": \"q60\",\n    \"ingredient_or_context\"\
+    : \"DSMZ receiving: Neutralized sulfide solution 3% (w/v)\",\n    \"decision\"\
+    : \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_scope\": {\n \
+    \     \"amount\": 15,\n      \"unit\": \"ml\",\n      \"attribute\": null,\n \
+    \     \"source_stage\": \"DSMZ receiving batch\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive901api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/901\",\n        \"source_locator\":\
+    \ \"$.data.solutions[0].recipe[10]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 11,\\n                        \\\
+    \"solution\\\": \\\"Neutralized sulfide solution 3% (w/v)\\\",\\n            \
+    \            \\\"solution_id\\\": 34,\\n                        \\\"amount\\\"\
+    : 15,\\n                        \\\"unit\\\": \\\"ml\\\",\\n                 \
+    \       \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Absent as a faithful stock-dose/water representation\
+    \ in these layers. Restore source-scoped assembly without double-counting flattened\
+    \ direct ingredients. A stock name or nominal x label is not a universal working\
+    \ dose.\"\n  },\n  {\n    \"quantity_id\": \"q61\",\n    \"ingredient_or_context\"\
+    : \"DSMZ receiving: Distilled water\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"amount\": 1000,\n      \"unit\": \"ml\",\n      \"attribute\": null,\n\
+    \      \"source_stage\": \"DSMZ receiving batch\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive901api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/901\",\n        \"source_locator\":\
+    \ \"$.data.solutions[0].recipe[11]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 12,\\n                        \\\
+    \"compound\\\": \\\"Distilled water\\\",\\n                        \\\"compound_id\\\
+    \": 4,\\n                        \\\"amount\\\": 1000,\\n                    \
+    \    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\
+    \n      }\n    ],\n    \"rationale\": \"Absent as a faithful stock-dose/water\
+    \ representation in these layers. Restore source-scoped assembly without double-counting\
+    \ flattened direct ingredients. A stock name or nominal x label is not a universal\
+    \ working dose.\"\n  },\n  {\n    \"quantity_id\": \"q62\",\n    \"ingredient_or_context\"\
+    : \"JCM receiving: FeCl2 solution\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_scope\": {\n \
+    \     \"amount\": 1,\n      \"unit\": \"ml\",\n      \"attribute\": null,\n  \
+    \    \"source_stage\": \"JCM receiving batch\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadiveJ308api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J308\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    solution\\\": \\\"FeCl2 solution\\\",\\n                        \\\"solution_id\\\
+    \": 3846,\\n                        \\\"amount\\\": 1,\\n                    \
+    \    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5\"\
+    \n      }\n    ],\n    \"rationale\": \"Absent as a faithful stock-dose/water\
+    \ representation in these layers. Restore source-scoped assembly without double-counting\
+    \ flattened direct ingredients. A stock name or nominal x label is not a universal\
+    \ working dose.\"\n  },\n  {\n    \"quantity_id\": \"q63\",\n    \"ingredient_or_context\"\
+    : \"JCM receiving: Trace element solution\",\n    \"decision\": \"add\",\n   \
+    \ \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_scope\": {\n \
+    \     \"amount\": 1,\n      \"unit\": \"ml\",\n      \"attribute\": null,\n  \
+    \    \"source_stage\": \"JCM receiving batch\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadiveJ308api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J308\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    solution\\\": \\\"Trace element solution\\\",\\n                        \\\"solution_id\\\
+    \": 3847,\\n                        \\\"amount\\\": 1,\\n                    \
+    \    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5\"\
+    \n      }\n    ],\n    \"rationale\": \"Absent as a faithful stock-dose/water\
+    \ representation in these layers. Restore source-scoped assembly without double-counting\
+    \ flattened direct ingredients. A stock name or nominal x label is not a universal\
+    \ working dose.\"\n  },\n  {\n    \"quantity_id\": \"q64\",\n    \"ingredient_or_context\"\
+    : \"JCM receiving: Trace vitamins\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_scope\": {\n \
+    \     \"amount\": 10,\n      \"unit\": \"ml\",\n      \"attribute\": null,\n \
+    \     \"source_stage\": \"JCM receiving batch\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadiveJ308api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J308\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[7]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 8,\\n                        \\\"\
+    solution\\\": \\\"Trace vitamins\\\",\\n                        \\\"solution_id\\\
+    \": 3861,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5\"\
+    \n      }\n    ],\n    \"rationale\": \"Absent as a faithful stock-dose/water\
+    \ representation in these layers. Restore source-scoped assembly without double-counting\
+    \ flattened direct ingredients. A stock name or nominal x label is not a universal\
+    \ working dose.\"\n  },\n  {\n    \"quantity_id\": \"q65\",\n    \"ingredient_or_context\"\
+    : \"JCM receiving: Distilled water\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : {\n      \"amount\": 1000,\n      \"unit\": \"ml\",\n      \"attribute\": null,\n\
+    \      \"source_stage\": \"JCM receiving batch\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadiveJ308api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J308\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[12]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 13,\\n                        \\\
+    \"compound\\\": \\\"Distilled water\\\",\\n                        \\\"compound_id\\\
+    \": 4,\\n                        \\\"amount\\\": 1000,\\n                    \
+    \    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5\"\
+    \n      }\n    ],\n    \"rationale\": \"Absent as a faithful stock-dose/water\
+    \ representation in these layers. Restore source-scoped assembly without double-counting\
+    \ flattened direct ingredients. A stock name or nominal x label is not a universal\
+    \ working dose.\"\n  },\n  {\n    \"quantity_id\": \"q66\",\n    \"ingredient_or_context\"\
+    : \"SL-10 water\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n    \
+    \  {\n        \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_scope\": {\n \
+    \     \"stock_only\": true,\n      \"water_amount\": 990,\n      \"unit\": \"\
+    ml\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    mediadive901api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/901\"\
+    ,\n        \"source_locator\": \"$.data.solutions[1].recipe[9]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 10,\\\
+    n                        \\\"compound\\\": \\\"Distilled water\\\",\\n       \
+    \                 \\\"compound_id\\\": 4,\\n                        \\\"amount\\\
+    \": 990,\\n                        \\\"unit\\\": \\\"ml\\\",\\n              \
+    \          \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Keep this water inside its own stock. Do not\
+    \ sum nested stock preparation water into the receiving batch or equate water\
+    \ addition with measured final volume.\"\n  },\n  {\n    \"quantity_id\": \"q67\"\
+    ,\n    \"ingredient_or_context\": \"Wolin 10x water\",\n    \"decision\": \"add\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_scope\": {\n \
+    \     \"stock_only\": true,\n      \"water_amount\": 1000,\n      \"unit\": \"\
+    ml\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    mediadive901api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/901\"\
+    ,\n        \"source_locator\": \"$.data.solutions[2].recipe[10]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 11,\\\
+    n                        \\\"compound\\\": \\\"Distilled water\\\",\\n       \
+    \                 \\\"compound_id\\\": 4,\\n                        \\\"amount\\\
+    \": 1000,\\n                        \\\"unit\\\": \\\"ml\\\",\\n             \
+    \           \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Keep this water inside its own stock. Do not\
+    \ sum nested stock preparation water into the receiving batch or equate water\
+    \ addition with measured final volume.\"\n  },\n  {\n    \"quantity_id\": \"q68\"\
+    ,\n    \"ingredient_or_context\": \"Sulfide stock water\",\n    \"decision\":\
+    \ \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_scope\": {\n \
+    \     \"stock_only\": true,\n      \"water_amount\": 100,\n      \"unit\": \"\
+    ml\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    mediadive901api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/901\"\
+    ,\n        \"source_locator\": \"$.data.solutions[3].recipe[1]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 2,\\\
+    n                        \\\"compound\\\": \\\"Distilled water\\\",\\n       \
+    \                 \\\"compound_id\\\": 4,\\n                        \\\"amount\\\
+    \": 100,\\n                        \\\"unit\\\": \\\"ml\\\",\\n              \
+    \          \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"0e12fc26110876700f9924410721da5f10d85f2da1a3d760c2a348e0b14c3e89\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Keep this water inside its own stock. Do not\
+    \ sum nested stock preparation water into the receiving batch or equate water\
+    \ addition with measured final volume.\"\n  },\n  {\n    \"quantity_id\": \"q69\"\
+    ,\n    \"ingredient_or_context\": \"FeCl2 stock water\",\n    \"decision\": \"\
+    add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_scope\": {\n \
+    \     \"stock_only\": true,\n      \"water_amount\": 990,\n      \"unit\": \"\
+    ml\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    mediadiveJ308api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J308\"\
+    ,\n        \"source_locator\": \"$.data.solutions[1].recipe[2]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 3,\\\
+    n                        \\\"compound\\\": \\\"Distilled water\\\",\\n       \
+    \                 \\\"compound_id\\\": 4,\\n                        \\\"amount\\\
+    \": 990,\\n                        \\\"unit\\\": \\\"ml\\\",\\n              \
+    \          \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Keep this water inside its own stock. Do not\
+    \ sum nested stock preparation water into the receiving batch or equate water\
+    \ addition with measured final volume.\"\n  },\n  {\n    \"quantity_id\": \"q70\"\
+    ,\n    \"ingredient_or_context\": \"Trace stock water\",\n    \"decision\": \"\
+    add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_scope\": {\n \
+    \     \"stock_only\": true,\n      \"water_amount\": 1000,\n      \"unit\": \"\
+    ml\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    mediadiveJ308api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J308\"\
+    ,\n        \"source_locator\": \"$.data.solutions[2].recipe[7]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 8,\\\
+    n                        \\\"compound\\\": \\\"Distilled water\\\",\\n       \
+    \                 \\\"compound_id\\\": 4,\\n                        \\\"amount\\\
+    \": 1000,\\n                        \\\"unit\\\": \\\"ml\\\",\\n             \
+    \           \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Keep this water inside its own stock. Do not\
+    \ sum nested stock preparation water into the receiving batch or equate water\
+    \ addition with measured final volume.\"\n  },\n  {\n    \"quantity_id\": \"q71\"\
+    ,\n    \"ingredient_or_context\": \"Vitamin stock water\",\n    \"decision\":\
+    \ \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_scope\": {\n \
+    \     \"stock_only\": true,\n      \"water_amount\": 1000,\n      \"unit\": \"\
+    ml\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    mediadiveJ308api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J308\"\
+    ,\n        \"source_locator\": \"$.data.solutions[3].recipe[10]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 11,\\\
+    n                        \\\"compound\\\": \\\"Distilled water\\\",\\n       \
+    \                 \\\"compound_id\\\": 4,\\n                        \\\"amount\\\
+    \": 1000,\\n                        \\\"unit\\\": \\\"ml\\\",\\n             \
+    \           \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"5fd506632b3d93d26b7bdc844525d6cf718294c706960192c342b9550c06d8e5\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Keep this water inside its own stock. Do not\
+    \ sum nested stock preparation water into the receiving batch or equate water\
+    \ addition with measured final volume.\"\n  },\n  {\n    \"quantity_id\": \"q72\"\
+    ,\n    \"ingredient_or_context\": \"SL-10 final make-up\",\n    \"decision\":\
+    \ \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the\
+    \ other salts. Finally make up to 1000.00 ml.\",\n        \"decision\": \"correct\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_scope\": \"Make\
+    \ SL-10 stock up to 1000 ml after ordered acid/iron dissolution and the remaining\
+    \ salts.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz901\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium901.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, SL-10 final sentence\",\n        \"exact_source_quote\"\
+    : \"make up to 1000.00 ml.\",\n        \"snapshot_sha256\": \"4c3ca772fb1448ca1e5d4c9749c4dd81a2bc1fb2f61e246b62c6ca0c4be371b6\"\
+    ,\n        \"parsed_text_sha256\": \"8bb48fe1dce89482aa8172146fd2a9a8bba7b1e29aa540de34b9e3b0022a1ce7\"\
+    \n      }\n    ],\n    \"rationale\": \"The DSMZ owner preserves this instruction\
+    \ at main-root preparation_steps[1]; its decision is correct to restore stock\
+    \ scope. It is absent from target/KOMODO layers. The explicit final stock basis\
+    \ supports stock concentrations, never an unqualified receiving-medium denominator.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q73\",\n    \"ingredient_or_context\": \"\
+    DSM 16705 yeast modification\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.94985\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : \"0.10 g/L yeast extract in the DSM 16705 variant only.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz901\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium901.pdf\",\n        \"\
+    source_locator\": \"Page 1, For DSM 16705 condition\",\n        \"exact_source_quote\"\
+    : \"Reduce the amount of yeast extract to 0.10 g/l\",\n        \"snapshot_sha256\"\
+    : \"4c3ca772fb1448ca1e5d4c9749c4dd81a2bc1fb2f61e246b62c6ca0c4be371b6\",\n    \
+    \    \"parsed_text_sha256\": \"8bb48fe1dce89482aa8172146fd2a9a8bba7b1e29aa540de34b9e3b0022a1ce7\"\
+    \n      }\n    ],\n    \"rationale\": \"The conditional source explicitly reduces\
+    \ yeast. This is not the base 3 g batch amount and must not be overwritten by\
+    \ the source-duplicate signature.\"\n  },\n  {\n    \"quantity_id\": \"q74\",\n\
+    \    \"ingredient_or_context\": \"DSM 16705 glucose modification\",\n    \"decision\"\
+    : \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"ingredients\",\n        \"stored\": null,\n     \
+    \   \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_scope\": \"\
+    2.00 g/L D-glucose, added after sterilization from a sterile anoxic stock, only\
+    \ for DSM 16705.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz901\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium901.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, For DSM 16705 condition\",\n        \"\
+    exact_source_quote\": \"after sterilization with 2.00 g/l D-glucose added from\
+    \ a sterile anoxic stock solution.\",\n        \"snapshot_sha256\": \"4c3ca772fb1448ca1e5d4c9749c4dd81a2bc1fb2f61e246b62c6ca0c4be371b6\"\
+    ,\n        \"parsed_text_sha256\": \"8bb48fe1dce89482aa8172146fd2a9a8bba7b1e29aa540de34b9e3b0022a1ce7\"\
+    \n      }\n    ],\n    \"rationale\": \"Source-specific modification is absent\
+    \ from the maintained variant ingredient array; do not infer it in the base target.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q75\",\n    \"ingredient_or_context\": \"\
+    JCM 934 yeast modification\",\n    \"decision\": \"conflict\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.296443\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"conflict\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\",\n  \
+    \      \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Use JCM medium No. 308 supplemented with 0.1 g/L (final) yeast extract and\
+    \ 2.0 g/L glucose (separately autoclaved).\",\n        \"decision\": \"evidence_only\"\
+    \n      }\n    ],\n    \"proposed_source_scope\": \"Retain the literal final-worded\
+    \ 0.1 g/L yeast statement and resolve whether it replaces the base total or denotes\
+    \ a supplement before normalizing.\",\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"jcm934\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=934\"\
+    ,\n        \"source_locator\": \"JCM 934 modification sentence\",\n        \"\
+    exact_source_quote\": \"supplemented with 0.1 g/L (final) yeast extract\",\n \
+    \       \"snapshot_sha256\": \"b922390e5c9142f021fd5170543dec7732c43e37bcbe466bd9a0172617959036\"\
+    ,\n        \"parsed_text_sha256\": \"ea8a7c7f4348b3c8a4da8a2c90fd14c7a373ec321801204b4a09febeab011e39\"\
+    \n      }\n    ],\n    \"rationale\": \"The source wording and copied base concentration\
+    \ are not reconciled. Do not silently choose 0.1, add 0.1 to the base, or equate\
+    \ this with DSMZ's explicit reduce instruction.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q76\",\n    \"ingredient_or_context\": \"JCM 934 glucose modification\",\n\
+    \    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\",\n  \
+    \      \"field_path\": \"ingredients\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Use JCM medium No. 308 supplemented with 0.1 g/L (final) yeast extract and\
+    \ 2.0 g/L glucose (separately autoclaved).\",\n        \"decision\": \"evidence_only\"\
+    \n      }\n    ],\n    \"proposed_source_scope\": \"2.0 g/L glucose in JCM 934,\
+    \ separately autoclaved.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm934\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=934\"\
+    ,\n        \"source_locator\": \"JCM 934 modification sentence\",\n        \"\
+    exact_source_quote\": \"2.0 g/L glucose (separately autoclaved).\",\n        \"\
+    snapshot_sha256\": \"b922390e5c9142f021fd5170543dec7732c43e37bcbe466bd9a0172617959036\"\
+    ,\n        \"parsed_text_sha256\": \"ea8a7c7f4348b3c8a4da8a2c90fd14c7a373ec321801204b4a09febeab011e39\"\
+    \n      }\n    ],\n    \"rationale\": \"Already present in preparation prose but\
+    \ missing from the structured ingredient array; preserve its variant and sterilization\
+    \ boundary.\"\n  },\n  {\n    \"quantity_id\": \"q77\",\n    \"ingredient_or_context\"\
+    : \"DSMZ preparation: Initial pH\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"ADJUST_PH\"\
+    ,\n            \"description\": \"Dissolve ingredients except sulfur, yeast extract,\
+    \ vitamins and sulfide. Adjust pH to 3.5 with H2SO4 and sparge medium with 100%\
+    \ CO2 gas for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere\
+    \ into anoxic Hungate-type tubes or serum vials containing the appropriate amount\
+    \ of sulfur. Heat vessels containing medium to 90°C for 1 hour on each of 3 succesive\
+    \ days. Add yeast extract, vitamins (sterilized by filtration) and sulfide from\
+    \ sterile anoxic stock solutions prepared under 100% N2 gas. The sulfide stock\
+    \ solution (3% w/v) should be neutralized before use (see medium 29). The pH of\
+    \ the complete medium should be at 3.5 - 3.8.\"\n          },\n          {\n \
+    \           \"step_number\": 2,\n            \"action\": \"DISSOLVE\",\n     \
+    \       \"description\": \"First dissolve FeCl2 in the HCl, then dilute in water,\
+    \ add and dissolve the other salts. Finally make up to 1000.00 ml.\"\n       \
+    \   },\n          {\n            \"step_number\": 3,\n            \"action\":\
+    \ \"AUTOCLAVE\",\n            \"description\": \"The sulfide solution is prepared\
+    \ in a 250 ml screw-capped bottle with a butyl rubber septum and a magnetic stirrer.\
+    \ The solution is bubbled with nitrogen gas, closed and autoclaved for 15 min.\
+    \ at 121°C. After cooling to room temperature the pH is adjusted to about 7.0\
+    \ by adding of sterile 2 M H2SO4 drop-wise with a syringe without opening the\
+    \ bottle.\"\n          }\n        ],\n        \"decision\": \"evidence_only\"\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : \"Adjust pH to 3.5\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz901\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium901.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, base preparation\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 3.5\",\n        \"snapshot_sha256\": \"4c3ca772fb1448ca1e5d4c9749c4dd81a2bc1fb2f61e246b62c6ca0c4be371b6\"\
+    ,\n        \"parsed_text_sha256\": \"8bb48fe1dce89482aa8172146fd2a9a8bba7b1e29aa540de34b9e3b0022a1ce7\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain DSMZ-specific main versus stock\
+    \ preparation and qualifier. The DSMZ owner already preserves much of this prose,\
+    \ while the target/KOMODO layers omit it. Stock-only steps currently at the owner\
+    \ main root need scope correction. No JCM atmosphere or cycle substitutes for\
+    \ the distinct DSMZ procedure.\"\n  },\n  {\n    \"quantity_id\": \"q78\",\n \
+    \   \"ingredient_or_context\": \"DSMZ preparation: CO2 composition and sparging\
+    \ duration\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"ADJUST_PH\"\
+    ,\n            \"description\": \"Dissolve ingredients except sulfur, yeast extract,\
+    \ vitamins and sulfide. Adjust pH to 3.5 with H2SO4 and sparge medium with 100%\
+    \ CO2 gas for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere\
+    \ into anoxic Hungate-type tubes or serum vials containing the appropriate amount\
+    \ of sulfur. Heat vessels containing medium to 90°C for 1 hour on each of 3 succesive\
+    \ days. Add yeast extract, vitamins (sterilized by filtration) and sulfide from\
+    \ sterile anoxic stock solutions prepared under 100% N2 gas. The sulfide stock\
+    \ solution (3% w/v) should be neutralized before use (see medium 29). The pH of\
+    \ the complete medium should be at 3.5 - 3.8.\"\n          },\n          {\n \
+    \           \"step_number\": 2,\n            \"action\": \"DISSOLVE\",\n     \
+    \       \"description\": \"First dissolve FeCl2 in the HCl, then dilute in water,\
+    \ add and dissolve the other salts. Finally make up to 1000.00 ml.\"\n       \
+    \   },\n          {\n            \"step_number\": 3,\n            \"action\":\
+    \ \"AUTOCLAVE\",\n            \"description\": \"The sulfide solution is prepared\
+    \ in a 250 ml screw-capped bottle with a butyl rubber septum and a magnetic stirrer.\
+    \ The solution is bubbled with nitrogen gas, closed and autoclaved for 15 min.\
+    \ at 121°C. After cooling to room temperature the pH is adjusted to about 7.0\
+    \ by adding of sterile 2 M H2SO4 drop-wise with a syringe without opening the\
+    \ bottle.\"\n          }\n        ],\n        \"decision\": \"evidence_only\"\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : \"with H2SO4 and sparge medium with 100% CO2 gas for 30 - 45 min to make it\
+    \ anoxic.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz901\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium901.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, base preparation\",\n        \"exact_source_quote\"\
+    : \"with H2SO4 and sparge medium with 100% CO2 gas for 30 - 45 min to make it\
+    \ anoxic.\",\n        \"snapshot_sha256\": \"4c3ca772fb1448ca1e5d4c9749c4dd81a2bc1fb2f61e246b62c6ca0c4be371b6\"\
+    ,\n        \"parsed_text_sha256\": \"8bb48fe1dce89482aa8172146fd2a9a8bba7b1e29aa540de34b9e3b0022a1ce7\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain DSMZ-specific main versus stock\
+    \ preparation and qualifier. The DSMZ owner already preserves much of this prose,\
+    \ while the target/KOMODO layers omit it. Stock-only steps currently at the owner\
+    \ main root need scope correction. No JCM atmosphere or cycle substitutes for\
+    \ the distinct DSMZ procedure.\"\n  },\n  {\n    \"quantity_id\": \"q79\",\n \
+    \   \"ingredient_or_context\": \"DSMZ preparation: Intermittent heat treatment\"\
+    ,\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"preparation_steps\",\n        \"stored\": null,\n        \"decision\": \"\
+    add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"ADJUST_PH\"\
+    ,\n            \"description\": \"Dissolve ingredients except sulfur, yeast extract,\
+    \ vitamins and sulfide. Adjust pH to 3.5 with H2SO4 and sparge medium with 100%\
+    \ CO2 gas for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere\
+    \ into anoxic Hungate-type tubes or serum vials containing the appropriate amount\
+    \ of sulfur. Heat vessels containing medium to 90°C for 1 hour on each of 3 succesive\
+    \ days. Add yeast extract, vitamins (sterilized by filtration) and sulfide from\
+    \ sterile anoxic stock solutions prepared under 100% N2 gas. The sulfide stock\
+    \ solution (3% w/v) should be neutralized before use (see medium 29). The pH of\
+    \ the complete medium should be at 3.5 - 3.8.\"\n          },\n          {\n \
+    \           \"step_number\": 2,\n            \"action\": \"DISSOLVE\",\n     \
+    \       \"description\": \"First dissolve FeCl2 in the HCl, then dilute in water,\
+    \ add and dissolve the other salts. Finally make up to 1000.00 ml.\"\n       \
+    \   },\n          {\n            \"step_number\": 3,\n            \"action\":\
+    \ \"AUTOCLAVE\",\n            \"description\": \"The sulfide solution is prepared\
+    \ in a 250 ml screw-capped bottle with a butyl rubber septum and a magnetic stirrer.\
+    \ The solution is bubbled with nitrogen gas, closed and autoclaved for 15 min.\
+    \ at 121°C. After cooling to room temperature the pH is adjusted to about 7.0\
+    \ by adding of sterile 2 M H2SO4 drop-wise with a syringe without opening the\
+    \ bottle.\"\n          }\n        ],\n        \"decision\": \"evidence_only\"\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : \"containing medium to 90°C\\nfor 1 hour on each of 3 succesive days.\",\n \
+    \   \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz901\",\n  \
+    \      \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium901.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, base preparation\",\n        \"exact_source_quote\"\
+    : \"containing medium to 90°C\\nfor 1 hour on each of 3 succesive days.\",\n \
+    \       \"snapshot_sha256\": \"4c3ca772fb1448ca1e5d4c9749c4dd81a2bc1fb2f61e246b62c6ca0c4be371b6\"\
+    ,\n        \"parsed_text_sha256\": \"8bb48fe1dce89482aa8172146fd2a9a8bba7b1e29aa540de34b9e3b0022a1ce7\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain DSMZ-specific main versus stock\
+    \ preparation and qualifier. The DSMZ owner already preserves much of this prose,\
+    \ while the target/KOMODO layers omit it. Stock-only steps currently at the owner\
+    \ main root need scope correction. No JCM atmosphere or cycle substitutes for\
+    \ the distinct DSMZ procedure.\"\n  },\n  {\n    \"quantity_id\": \"q80\",\n \
+    \   \"ingredient_or_context\": \"DSMZ preparation: Anoxic stock atmosphere\",\n\
+    \    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"preparation_steps\",\n        \"stored\": null,\n        \"decision\": \"\
+    add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"ADJUST_PH\"\
+    ,\n            \"description\": \"Dissolve ingredients except sulfur, yeast extract,\
+    \ vitamins and sulfide. Adjust pH to 3.5 with H2SO4 and sparge medium with 100%\
+    \ CO2 gas for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere\
+    \ into anoxic Hungate-type tubes or serum vials containing the appropriate amount\
+    \ of sulfur. Heat vessels containing medium to 90°C for 1 hour on each of 3 succesive\
+    \ days. Add yeast extract, vitamins (sterilized by filtration) and sulfide from\
+    \ sterile anoxic stock solutions prepared under 100% N2 gas. The sulfide stock\
+    \ solution (3% w/v) should be neutralized before use (see medium 29). The pH of\
+    \ the complete medium should be at 3.5 - 3.8.\"\n          },\n          {\n \
+    \           \"step_number\": 2,\n            \"action\": \"DISSOLVE\",\n     \
+    \       \"description\": \"First dissolve FeCl2 in the HCl, then dilute in water,\
+    \ add and dissolve the other salts. Finally make up to 1000.00 ml.\"\n       \
+    \   },\n          {\n            \"step_number\": 3,\n            \"action\":\
+    \ \"AUTOCLAVE\",\n            \"description\": \"The sulfide solution is prepared\
+    \ in a 250 ml screw-capped bottle with a butyl rubber septum and a magnetic stirrer.\
+    \ The solution is bubbled with nitrogen gas, closed and autoclaved for 15 min.\
+    \ at 121°C. After cooling to room temperature the pH is adjusted to about 7.0\
+    \ by adding of sterile 2 M H2SO4 drop-wise with a syringe without opening the\
+    \ bottle.\"\n          }\n        ],\n        \"decision\": \"evidence_only\"\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : \"prepared under 100% N2 gas.\",\n    \"source_snippets\": [\n      {\n    \
+    \    \"source_key\": \"dsmz901\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium901.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, base preparation\",\n        \"exact_source_quote\"\
+    : \"prepared under 100% N2 gas.\",\n        \"snapshot_sha256\": \"4c3ca772fb1448ca1e5d4c9749c4dd81a2bc1fb2f61e246b62c6ca0c4be371b6\"\
+    ,\n        \"parsed_text_sha256\": \"8bb48fe1dce89482aa8172146fd2a9a8bba7b1e29aa540de34b9e3b0022a1ce7\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain DSMZ-specific main versus stock\
+    \ preparation and qualifier. The DSMZ owner already preserves much of this prose,\
+    \ while the target/KOMODO layers omit it. Stock-only steps currently at the owner\
+    \ main root need scope correction. No JCM atmosphere or cycle substitutes for\
+    \ the distinct DSMZ procedure.\"\n  },\n  {\n    \"quantity_id\": \"q81\",\n \
+    \   \"ingredient_or_context\": \"DSMZ preparation: Complete-medium pH range\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\",\n\
+    \        \"field_path\": \"ph_range\",\n        \"stored\": {\n          \"min\"\
+    : 3.5,\n          \"max\": 3.8\n        },\n        \"decision\": \"evidence_only\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_range\",\n        \"stored\": {\n          \"\
+    min\": 3.5,\n          \"max\": 3.8\n        },\n        \"decision\": \"evidence_only\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_range\",\n        \"stored\": {\n          \"\
+    min\": 3.5,\n          \"max\": 3.8\n        },\n        \"decision\": \"evidence_only\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"ph_range\",\n        \"stored\": {\n          \"\
+    min\": 3.5,\n          \"max\": 3.8\n        },\n        \"decision\": \"evidence_only\"\
+    \n      }\n    ],\n    \"proposed_source_scope\": \"complete medium should be\
+    \ at 3.5 - 3.8.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz901\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium901.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, base preparation\",\n        \"exact_source_quote\"\
+    : \"complete medium should be at 3.5 - 3.8.\",\n        \"snapshot_sha256\": \"\
+    4c3ca772fb1448ca1e5d4c9749c4dd81a2bc1fb2f61e246b62c6ca0c4be371b6\",\n        \"\
+    parsed_text_sha256\": \"8bb48fe1dce89482aa8172146fd2a9a8bba7b1e29aa540de34b9e3b0022a1ce7\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain DSMZ-specific main versus stock\
+    \ preparation and qualifier. The DSMZ owner already preserves much of this prose,\
+    \ while the target/KOMODO layers omit it. Stock-only steps currently at the owner\
+    \ main root need scope correction. No JCM atmosphere or cycle substitutes for\
+    \ the distinct DSMZ procedure.\"\n  },\n  {\n    \"quantity_id\": \"q82\",\n \
+    \   \"ingredient_or_context\": \"DSMZ preparation: Sulfide stock strength\",\n\
+    \    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"solutions\",\n        \"stored\": null,\n        \"decision\": \"add\"\n \
+    \     },\n      {\n        \"input\": \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except sulfur, yeast extract, vitamins and sulfide. Adjust\
+    \ pH to 3.5 with H2SO4 and sparge medium with 100% CO2 gas for 30 - 45 min to\
+    \ make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type\
+    \ tubes or serum vials containing the appropriate amount of sulfur. Heat vessels\
+    \ containing medium to 90°C for 1 hour on each of 3 succesive days. Add yeast\
+    \ extract, vitamins (sterilized by filtration) and sulfide from sterile anoxic\
+    \ stock solutions prepared under 100% N2 gas. The sulfide stock solution (3% w/v)\
+    \ should be neutralized before use (see medium 29). The pH of the complete medium\
+    \ should be at 3.5 - 3.8.\",\n        \"decision\": \"correct\"\n      },\n  \
+    \    {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_scope\": \"Neutralized\
+    \ sulfide solution 3% (w/v)\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz901\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium901.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 receiving row; page 2 stock heading\"\
+    ,\n        \"exact_source_quote\": \"Neutralized sulfide solution 3% (w/v)\",\n\
+    \        \"snapshot_sha256\": \"4c3ca772fb1448ca1e5d4c9749c4dd81a2bc1fb2f61e246b62c6ca0c4be371b6\"\
+    ,\n        \"parsed_text_sha256\": \"8bb48fe1dce89482aa8172146fd2a9a8bba7b1e29aa540de34b9e3b0022a1ce7\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain DSMZ-specific main versus stock\
+    \ preparation and qualifier. The DSMZ owner already preserves much of this prose,\
+    \ while the target/KOMODO layers omit it. Stock-only steps currently at the owner\
+    \ main root need scope correction. No JCM atmosphere or cycle substitutes for\
+    \ the distinct DSMZ procedure.\"\n  },\n  {\n    \"quantity_id\": \"q83\",\n \
+    \   \"ingredient_or_context\": \"DSMZ preparation: Sulfide stock vessel\",\n \
+    \   \"decision\": \"add\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"solutions\",\n        \"stored\": null,\n        \"decision\": \"add\"\n \
+    \     },\n      {\n        \"input\": \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[2].description\",\n        \"stored\"\
+    : \"The sulfide solution is prepared in a 250 ml screw-capped bottle with a butyl\
+    \ rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen\
+    \ gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature\
+    \ the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with\
+    \ a syringe without opening the bottle.\",\n        \"decision\": \"correct\"\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_scope\": \"250\
+    \ ml screw-capped bottle\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz901\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium901.pdf\"\
+    ,\n        \"source_locator\": \"Page 2, neutralized sulfide stock\",\n      \
+    \  \"exact_source_quote\": \"250 ml screw-capped bottle\",\n        \"snapshot_sha256\"\
+    : \"4c3ca772fb1448ca1e5d4c9749c4dd81a2bc1fb2f61e246b62c6ca0c4be371b6\",\n    \
+    \    \"parsed_text_sha256\": \"8bb48fe1dce89482aa8172146fd2a9a8bba7b1e29aa540de34b9e3b0022a1ce7\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain DSMZ-specific main versus stock\
+    \ preparation and qualifier. The DSMZ owner already preserves much of this prose,\
+    \ while the target/KOMODO layers omit it. Stock-only steps currently at the owner\
+    \ main root need scope correction. No JCM atmosphere or cycle substitutes for\
+    \ the distinct DSMZ procedure.\"\n  },\n  {\n    \"quantity_id\": \"q84\",\n \
+    \   \"ingredient_or_context\": \"DSMZ preparation: Sulfide stock sterilization\"\
+    ,\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"solutions\",\n        \"stored\": null,\n        \"decision\": \"add\"\n \
+    \     },\n      {\n        \"input\": \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[2].description\",\n        \"stored\"\
+    : \"The sulfide solution is prepared in a 250 ml screw-capped bottle with a butyl\
+    \ rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen\
+    \ gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature\
+    \ the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with\
+    \ a syringe without opening the bottle.\",\n        \"decision\": \"correct\"\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_scope\": \"autoclaved\
+    \ for 15 min. at 121°C.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz901\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium901.pdf\"\
+    ,\n        \"source_locator\": \"Page 2, neutralized sulfide stock\",\n      \
+    \  \"exact_source_quote\": \"autoclaved for 15 min. at 121°C.\",\n        \"snapshot_sha256\"\
+    : \"4c3ca772fb1448ca1e5d4c9749c4dd81a2bc1fb2f61e246b62c6ca0c4be371b6\",\n    \
+    \    \"parsed_text_sha256\": \"8bb48fe1dce89482aa8172146fd2a9a8bba7b1e29aa540de34b9e3b0022a1ce7\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain DSMZ-specific main versus stock\
+    \ preparation and qualifier. The DSMZ owner already preserves much of this prose,\
+    \ while the target/KOMODO layers omit it. Stock-only steps currently at the owner\
+    \ main root need scope correction. No JCM atmosphere or cycle substitutes for\
+    \ the distinct DSMZ procedure.\"\n  },\n  {\n    \"quantity_id\": \"q85\",\n \
+    \   \"ingredient_or_context\": \"DSMZ preparation: Sulfide stock pH\",\n    \"\
+    decision\": \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"solutions\",\n        \"stored\": null,\n        \"decision\": \"add\"\n \
+    \     },\n      {\n        \"input\": \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[2].description\",\n        \"stored\"\
+    : \"The sulfide solution is prepared in a 250 ml screw-capped bottle with a butyl\
+    \ rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen\
+    \ gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature\
+    \ the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with\
+    \ a syringe without opening the bottle.\",\n        \"decision\": \"correct\"\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_scope\": \"about\
+    \ 7.0\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz901\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium901.pdf\"\
+    ,\n        \"source_locator\": \"Page 2, neutralized sulfide stock\",\n      \
+    \  \"exact_source_quote\": \"about 7.0\",\n        \"snapshot_sha256\": \"4c3ca772fb1448ca1e5d4c9749c4dd81a2bc1fb2f61e246b62c6ca0c4be371b6\"\
+    ,\n        \"parsed_text_sha256\": \"8bb48fe1dce89482aa8172146fd2a9a8bba7b1e29aa540de34b9e3b0022a1ce7\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain DSMZ-specific main versus stock\
+    \ preparation and qualifier. The DSMZ owner already preserves much of this prose,\
+    \ while the target/KOMODO layers omit it. Stock-only steps currently at the owner\
+    \ main root need scope correction. No JCM atmosphere or cycle substitutes for\
+    \ the distinct DSMZ procedure.\"\n  },\n  {\n    \"quantity_id\": \"q86\",\n \
+    \   \"ingredient_or_context\": \"Sulfide neutralization acid source conflict\"\
+    ,\n    \"decision\": \"conflict\",\n    \"local_fields\": [\n      {\n       \
+    \ \"input\": \"data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml\",\n   \
+    \     \"field_path\": \"solutions\",\n        \"stored\": null,\n        \"decision\"\
+    : \"conflict\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"conflict\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[2].description\",\n        \"stored\"\
+    : \"The sulfide solution is prepared in a 250 ml screw-capped bottle with a butyl\
+    \ rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen\
+    \ gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature\
+    \ the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with\
+    \ a syringe without opening the bottle.\",\n        \"decision\": \"conflict\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_16705.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"conflict\"\n      }\n    ],\n    \"proposed_source_scope\":\
+    \ {\n      \"DSMZ901_embedded_stock_and_DSMZ28\": \"2 M H2SO4\",\n      \"DSMZ29_cross_referenced_by_901_prose\"\
+    : \"2 N H2SO4\",\n      \"resolution\": \"unresolved; preserve the versioned source\
+    \ conflict\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz901\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium901.pdf\"\
+    ,\n        \"source_locator\": \"Page 2, neutralized sulfide stock\",\n      \
+    \  \"exact_source_quote\": \"sterile 2 M H2SO4\",\n        \"snapshot_sha256\"\
+    : \"4c3ca772fb1448ca1e5d4c9749c4dd81a2bc1fb2f61e246b62c6ca0c4be371b6\",\n    \
+    \    \"parsed_text_sha256\": \"8bb48fe1dce89482aa8172146fd2a9a8bba7b1e29aa540de34b9e3b0022a1ce7\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz28\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\",\n     \
+    \   \"source_locator\": \"Neutralized sulfide subsection\",\n        \"exact_source_quote\"\
+    : \"sterile 2 M H2SO4\",\n        \"snapshot_sha256\": \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\"\
+    ,\n        \"parsed_text_sha256\": \"6c9845c07d3bf8ffd6ebd29f0ea79e535fc71f7e42afa9232b4fcac87b163633\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz29\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium29.pdf\",\n     \
+    \   \"source_locator\": \"Neutralized sulfide subsection\",\n        \"exact_source_quote\"\
+    : \"sterile 2 N H2SO4\",\n        \"snapshot_sha256\": \"3e0b0022af9a84e7afa31b12bab088f5ed658274e2f6377e692f0024e4f22afb\"\
+    ,\n        \"parsed_text_sha256\": \"88cbbda80a40ab2570f5e07035208eab3a077632658b9baa59eadae626c2ad2b\"\
+    \n      }\n    ],\n    \"rationale\": \"Molarity and normality must not be silently\
+    \ equated. No acid volume is specified. This is a source conflict, not grounds\
+    \ to silently replace the owner's 2 M with a guessed correction.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q87\",\n    \"ingredient_or_context\": \"JCM preparation:\
+    \ Gas ratio\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"AUTOCLAVE\"\
+    ,\n            \"description\": \"Mix ingredients, except yeast extract, vitamins,\
+    \ sulfur and Na2S x 9H2O, and autoclave under a N2-CO2 (80:20) gas atmosphere.\
+    \ Separately autoclave 10% (w/v) yeast extract solution and 5% (w/v) Na2S x 9H2O\
+    \ solution under a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive\
+    \ days. Filter-sterilize Trace vitamins solution while gassing with N2. Aseptically\
+    \ and anaerobically add the yeast extract and vitamin solutions, and sulfur to\
+    \ the medium under a N2-CO2 (80:20) gas atmosphere. Prior to inoculation, add\
+    \ sterile Na2S x 9H2O solution, and adjust pH to 3.5 - 3.8 with sterile 1 N H2SO4.\
+    \ Pressurize the inoculated bottle to 100 kPa N2-CO2 (80:20).\"\n          }\n\
+    \        ],\n        \"decision\": \"evidence_only\"\n      },\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"AUTOCLAVE\"\
+    ,\n            \"description\": \"Use JCM medium No. 308 supplemented with 0.1\
+    \ g/L (final) yeast extract and 2.0 g/L glucose (separately autoclaved).\"\n \
+    \         }\n        ],\n        \"decision\": \"add\"\n      }\n    ],\n    \"\
+    proposed_source_scope\": \"N 2 -CO 2 (80:20)\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"jcm308\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=308\"\
+    ,\n        \"source_locator\": \"JCM 308 main preparation\",\n        \"exact_source_quote\"\
+    : \"N 2 -CO 2 (80:20)\",\n        \"snapshot_sha256\": \"a350204f40d466c8fd6129a9aa9b56ccc85659130e726c84574d4d24673c5a8c\"\
+    ,\n        \"parsed_text_sha256\": \"fbaeda57b6805bd116b4f09a68dba40c5e705ec519d69809c4763cd4788a7207\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain this JCM 308 context only in its\
+    \ justified base/variant lineage, not DSMZ 901. The JCM base owner preserves the\
+    \ preparation prose; JCM 934 currently retains only its modification. Pressure\
+    \ is literal without a gauge/absolute assumption; gas ratio is not assigned an\
+    \ unstated percent basis. The primary pH range must remain distinct from provider\
+    \ and owner scalar 3.6.\"\n  },\n  {\n    \"quantity_id\": \"q88\",\n    \"ingredient_or_context\"\
+    : \"JCM preparation: Yeast stock strength\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"AUTOCLAVE\"\
+    ,\n            \"description\": \"Mix ingredients, except yeast extract, vitamins,\
+    \ sulfur and Na2S x 9H2O, and autoclave under a N2-CO2 (80:20) gas atmosphere.\
+    \ Separately autoclave 10% (w/v) yeast extract solution and 5% (w/v) Na2S x 9H2O\
+    \ solution under a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive\
+    \ days. Filter-sterilize Trace vitamins solution while gassing with N2. Aseptically\
+    \ and anaerobically add the yeast extract and vitamin solutions, and sulfur to\
+    \ the medium under a N2-CO2 (80:20) gas atmosphere. Prior to inoculation, add\
+    \ sterile Na2S x 9H2O solution, and adjust pH to 3.5 - 3.8 with sterile 1 N H2SO4.\
+    \ Pressurize the inoculated bottle to 100 kPa N2-CO2 (80:20).\"\n          }\n\
+    \        ],\n        \"decision\": \"evidence_only\"\n      },\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"AUTOCLAVE\"\
+    ,\n            \"description\": \"Use JCM medium No. 308 supplemented with 0.1\
+    \ g/L (final) yeast extract and 2.0 g/L glucose (separately autoclaved).\"\n \
+    \         }\n        ],\n        \"decision\": \"add\"\n      }\n    ],\n    \"\
+    proposed_source_scope\": \"10% (w/v)\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"jcm308\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=308\"\
+    ,\n        \"source_locator\": \"JCM 308 separate yeast stock\",\n        \"exact_source_quote\"\
+    : \"10% (w/v)\",\n        \"snapshot_sha256\": \"a350204f40d466c8fd6129a9aa9b56ccc85659130e726c84574d4d24673c5a8c\"\
+    ,\n        \"parsed_text_sha256\": \"fbaeda57b6805bd116b4f09a68dba40c5e705ec519d69809c4763cd4788a7207\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain this JCM 308 context only in its\
+    \ justified base/variant lineage, not DSMZ 901. The JCM base owner preserves the\
+    \ preparation prose; JCM 934 currently retains only its modification. Pressure\
+    \ is literal without a gauge/absolute assumption; gas ratio is not assigned an\
+    \ unstated percent basis. The primary pH range must remain distinct from provider\
+    \ and owner scalar 3.6.\"\n  },\n  {\n    \"quantity_id\": \"q89\",\n    \"ingredient_or_context\"\
+    : \"JCM preparation: Sulfide stock strength\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"AUTOCLAVE\"\
+    ,\n            \"description\": \"Mix ingredients, except yeast extract, vitamins,\
+    \ sulfur and Na2S x 9H2O, and autoclave under a N2-CO2 (80:20) gas atmosphere.\
+    \ Separately autoclave 10% (w/v) yeast extract solution and 5% (w/v) Na2S x 9H2O\
+    \ solution under a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive\
+    \ days. Filter-sterilize Trace vitamins solution while gassing with N2. Aseptically\
+    \ and anaerobically add the yeast extract and vitamin solutions, and sulfur to\
+    \ the medium under a N2-CO2 (80:20) gas atmosphere. Prior to inoculation, add\
+    \ sterile Na2S x 9H2O solution, and adjust pH to 3.5 - 3.8 with sterile 1 N H2SO4.\
+    \ Pressurize the inoculated bottle to 100 kPa N2-CO2 (80:20).\"\n          }\n\
+    \        ],\n        \"decision\": \"evidence_only\"\n      },\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"AUTOCLAVE\"\
+    ,\n            \"description\": \"Use JCM medium No. 308 supplemented with 0.1\
+    \ g/L (final) yeast extract and 2.0 g/L glucose (separately autoclaved).\"\n \
+    \         }\n        ],\n        \"decision\": \"add\"\n      }\n    ],\n    \"\
+    proposed_source_scope\": \"5% (w/v)\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"jcm308\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=308\"\
+    ,\n        \"source_locator\": \"JCM 308 separate sulfide stock\",\n        \"\
+    exact_source_quote\": \"5% (w/v)\",\n        \"snapshot_sha256\": \"a350204f40d466c8fd6129a9aa9b56ccc85659130e726c84574d4d24673c5a8c\"\
+    ,\n        \"parsed_text_sha256\": \"fbaeda57b6805bd116b4f09a68dba40c5e705ec519d69809c4763cd4788a7207\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain this JCM 308 context only in its\
+    \ justified base/variant lineage, not DSMZ 901. The JCM base owner preserves the\
+    \ preparation prose; JCM 934 currently retains only its modification. Pressure\
+    \ is literal without a gauge/absolute assumption; gas ratio is not assigned an\
+    \ unstated percent basis. The primary pH range must remain distinct from provider\
+    \ and owner scalar 3.6.\"\n  },\n  {\n    \"quantity_id\": \"q90\",\n    \"ingredient_or_context\"\
+    : \"JCM preparation: Sulfur steaming\",\n    \"decision\": \"evidence_only\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"AUTOCLAVE\"\
+    ,\n            \"description\": \"Mix ingredients, except yeast extract, vitamins,\
+    \ sulfur and Na2S x 9H2O, and autoclave under a N2-CO2 (80:20) gas atmosphere.\
+    \ Separately autoclave 10% (w/v) yeast extract solution and 5% (w/v) Na2S x 9H2O\
+    \ solution under a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive\
+    \ days. Filter-sterilize Trace vitamins solution while gassing with N2. Aseptically\
+    \ and anaerobically add the yeast extract and vitamin solutions, and sulfur to\
+    \ the medium under a N2-CO2 (80:20) gas atmosphere. Prior to inoculation, add\
+    \ sterile Na2S x 9H2O solution, and adjust pH to 3.5 - 3.8 with sterile 1 N H2SO4.\
+    \ Pressurize the inoculated bottle to 100 kPa N2-CO2 (80:20).\"\n          }\n\
+    \        ],\n        \"decision\": \"evidence_only\"\n      },\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"AUTOCLAVE\"\
+    ,\n            \"description\": \"Use JCM medium No. 308 supplemented with 0.1\
+    \ g/L (final) yeast extract and 2.0 g/L glucose (separately autoclaved).\"\n \
+    \         }\n        ],\n        \"decision\": \"add\"\n      }\n    ],\n    \"\
+    proposed_source_scope\": \"Steam sulfur for 3 hr on  each of 3 successive days.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm308\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=308\"\
+    ,\n        \"source_locator\": \"JCM 308 sulfur preparation\",\n        \"exact_source_quote\"\
+    : \"Steam sulfur for 3 hr on  each of 3 successive days.\",\n        \"snapshot_sha256\"\
+    : \"a350204f40d466c8fd6129a9aa9b56ccc85659130e726c84574d4d24673c5a8c\",\n    \
+    \    \"parsed_text_sha256\": \"fbaeda57b6805bd116b4f09a68dba40c5e705ec519d69809c4763cd4788a7207\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain this JCM 308 context only in its\
+    \ justified base/variant lineage, not DSMZ 901. The JCM base owner preserves the\
+    \ preparation prose; JCM 934 currently retains only its modification. Pressure\
+    \ is literal without a gauge/absolute assumption; gas ratio is not assigned an\
+    \ unstated percent basis. The primary pH range must remain distinct from provider\
+    \ and owner scalar 3.6.\"\n  },\n  {\n    \"quantity_id\": \"q91\",\n    \"ingredient_or_context\"\
+    : \"JCM preparation: Final pH range\",\n    \"decision\": \"conflict\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 3.6,\n        \"\
+    decision\": \"conflict\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\"\n      }\n    ],\n    \"proposed_source_scope\": \"adjust\
+    \ pH to 3.5 - 3.8\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm308\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=308\"\
+    ,\n        \"source_locator\": \"JCM 308 prior to inoculation\",\n        \"exact_source_quote\"\
+    : \"adjust pH to 3.5 - 3.8\",\n        \"snapshot_sha256\": \"a350204f40d466c8fd6129a9aa9b56ccc85659130e726c84574d4d24673c5a8c\"\
+    ,\n        \"parsed_text_sha256\": \"fbaeda57b6805bd116b4f09a68dba40c5e705ec519d69809c4763cd4788a7207\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain this JCM 308 context only in its\
+    \ justified base/variant lineage, not DSMZ 901. The JCM base owner preserves the\
+    \ preparation prose; JCM 934 currently retains only its modification. Pressure\
+    \ is literal without a gauge/absolute assumption; gas ratio is not assigned an\
+    \ unstated percent basis. The primary pH range must remain distinct from provider\
+    \ and owner scalar 3.6.\"\n  },\n  {\n    \"quantity_id\": \"q92\",\n    \"ingredient_or_context\"\
+    : \"JCM preparation: Adjustment acid strength\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"AUTOCLAVE\"\
+    ,\n            \"description\": \"Mix ingredients, except yeast extract, vitamins,\
+    \ sulfur and Na2S x 9H2O, and autoclave under a N2-CO2 (80:20) gas atmosphere.\
+    \ Separately autoclave 10% (w/v) yeast extract solution and 5% (w/v) Na2S x 9H2O\
+    \ solution under a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive\
+    \ days. Filter-sterilize Trace vitamins solution while gassing with N2. Aseptically\
+    \ and anaerobically add the yeast extract and vitamin solutions, and sulfur to\
+    \ the medium under a N2-CO2 (80:20) gas atmosphere. Prior to inoculation, add\
+    \ sterile Na2S x 9H2O solution, and adjust pH to 3.5 - 3.8 with sterile 1 N H2SO4.\
+    \ Pressurize the inoculated bottle to 100 kPa N2-CO2 (80:20).\"\n          }\n\
+    \        ],\n        \"decision\": \"evidence_only\"\n      },\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"AUTOCLAVE\"\
+    ,\n            \"description\": \"Use JCM medium No. 308 supplemented with 0.1\
+    \ g/L (final) yeast extract and 2.0 g/L glucose (separately autoclaved).\"\n \
+    \         }\n        ],\n        \"decision\": \"add\"\n      }\n    ],\n    \"\
+    proposed_source_scope\": \"sterile 1 N H 2 SO 4\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"jcm308\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=308\"\
+    ,\n        \"source_locator\": \"JCM 308 prior to inoculation\",\n        \"exact_source_quote\"\
+    : \"sterile 1 N H 2 SO 4\",\n        \"snapshot_sha256\": \"a350204f40d466c8fd6129a9aa9b56ccc85659130e726c84574d4d24673c5a8c\"\
+    ,\n        \"parsed_text_sha256\": \"fbaeda57b6805bd116b4f09a68dba40c5e705ec519d69809c4763cd4788a7207\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain this JCM 308 context only in its\
+    \ justified base/variant lineage, not DSMZ 901. The JCM base owner preserves the\
+    \ preparation prose; JCM 934 currently retains only its modification. Pressure\
+    \ is literal without a gauge/absolute assumption; gas ratio is not assigned an\
+    \ unstated percent basis. The primary pH range must remain distinct from provider\
+    \ and owner scalar 3.6.\"\n  },\n  {\n    \"quantity_id\": \"q93\",\n    \"ingredient_or_context\"\
+    : \"JCM preparation: Pressure\",\n    \"decision\": \"evidence_only\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"AUTOCLAVE\"\
+    ,\n            \"description\": \"Mix ingredients, except yeast extract, vitamins,\
+    \ sulfur and Na2S x 9H2O, and autoclave under a N2-CO2 (80:20) gas atmosphere.\
+    \ Separately autoclave 10% (w/v) yeast extract solution and 5% (w/v) Na2S x 9H2O\
+    \ solution under a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive\
+    \ days. Filter-sterilize Trace vitamins solution while gassing with N2. Aseptically\
+    \ and anaerobically add the yeast extract and vitamin solutions, and sulfur to\
+    \ the medium under a N2-CO2 (80:20) gas atmosphere. Prior to inoculation, add\
+    \ sterile Na2S x 9H2O solution, and adjust pH to 3.5 - 3.8 with sterile 1 N H2SO4.\
+    \ Pressurize the inoculated bottle to 100 kPa N2-CO2 (80:20).\"\n          }\n\
+    \        ],\n        \"decision\": \"evidence_only\"\n      },\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"AUTOCLAVE\"\
+    ,\n            \"description\": \"Use JCM medium No. 308 supplemented with 0.1\
+    \ g/L (final) yeast extract and 2.0 g/L glucose (separately autoclaved).\"\n \
+    \         }\n        ],\n        \"decision\": \"add\"\n      }\n    ],\n    \"\
+    proposed_source_scope\": \"100 kPa\",\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"jcm308\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=308\"\
+    ,\n        \"source_locator\": \"JCM 308 after inoculation\",\n        \"exact_source_quote\"\
+    : \"100 kPa\",\n        \"snapshot_sha256\": \"a350204f40d466c8fd6129a9aa9b56ccc85659130e726c84574d4d24673c5a8c\"\
+    ,\n        \"parsed_text_sha256\": \"fbaeda57b6805bd116b4f09a68dba40c5e705ec519d69809c4763cd4788a7207\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain this JCM 308 context only in its\
+    \ justified base/variant lineage, not DSMZ 901. The JCM base owner preserves the\
+    \ preparation prose; JCM 934 currently retains only its modification. Pressure\
+    \ is literal without a gauge/absolute assumption; gas ratio is not assigned an\
+    \ unstated percent basis. The primary pH range must remain distinct from provider\
+    \ and owner scalar 3.6.\"\n  },\n  {\n    \"quantity_id\": \"q94\",\n    \"ingredient_or_context\"\
+    : \"JCM preparation: Default sterilization cycle\",\n    \"decision\": \"add\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_medium.yaml\"\
+    ,\n        \"field_path\": \"sterilization\",\n        \"stored\": null,\n   \
+    \     \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"sterilization\",\n        \"stored\": null,\n   \
+    \     \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_scope\": \"\
+    autoclaving at 121°C for 15 min.\",\n    \"source_snippets\": [\n      {\n   \
+    \     \"source_key\": \"jcm308\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=308\"\
+    ,\n        \"source_locator\": \"JCM default unless otherwise stated\",\n    \
+    \    \"exact_source_quote\": \"autoclaving at 121°C for 15 min.\",\n        \"\
+    snapshot_sha256\": \"a350204f40d466c8fd6129a9aa9b56ccc85659130e726c84574d4d24673c5a8c\"\
+    ,\n        \"parsed_text_sha256\": \"fbaeda57b6805bd116b4f09a68dba40c5e705ec519d69809c4763cd4788a7207\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain this JCM 308 context only in its\
+    \ justified base/variant lineage, not DSMZ 901. The JCM base owner preserves the\
+    \ preparation prose; JCM 934 currently retains only its modification. Pressure\
+    \ is literal without a gauge/absolute assumption; gas ratio is not assigned an\
+    \ unstated percent basis. The primary pH range must remain distinct from provider\
+    \ and owner scalar 3.6.\"\n  },\n  {\n    \"quantity_id\": \"q95\",\n    \"ingredient_or_context\"\
+    : \"JCM FeCl2 acid strength\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_scope\"\
+    : \"10 ml of 25% HCl explicitly identified as 7.7 M, within the FeCl2 stock only.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm187\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187\"\
+    ,\n        \"source_locator\": \"FeCl2 solution subsection\",\n        \"exact_source_quote\"\
+    : \"25% HCl (7.7 M) 10.0 ml\",\n        \"snapshot_sha256\": \"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804\"\
+    ,\n        \"parsed_text_sha256\": \"eb0d86774cb576541037e56d6a13ceb905fccd2ae1523b6e7eee4c83835825f8\"\
+    \n      }\n    ],\n    \"rationale\": \"Use the supplied molarity without inventing\
+    \ the unqualified percent basis or a density. The local 2.5 g/L stock value flattened\
+    \ at the receiving root is not justified by this source.\"\n  }\n]"
+- assessment_id: grounding
+  area: grounding
+  topic: Source-specific forms and current CHEBI-based secondary correspondence
+  outcome: concern
+  summary: '27 distinct asserted chemical IDs resolve as nonobsolete. 0 local label
+    instances differ from canonical labels. 26 of 27 distinct current CHEBI-based
+    secondary keys have exact mapped preferred-term rows in the pinned index; unresolved
+    keys: [''CHEBI:26833'']. This does not validate historical legacy MIM IDs, supplied
+    hydrates, stereochemistry or catalog products. Nickel hexahydrate and sodium-resazurin
+    supply forms conflict with their assigned structures. The JCM calcium-pantothenate
+    form remains unspecified; DSMZ explicitly supplies D-(+). Exact-index presence
+    is linkage metadata, not proof that a synonym names the same hydrate or salt.'
+  target_ids:
+  - CultureMech:006771
+  evidence_ids:
+  - record
+  - chemical-context
+  - mim
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - owner-4
+  - chebi15940
+  - chebi15956
+  - chebi16494
+  - chebi17015
+  - chebi176843
+  - chebi17883
+  - chebi26833
+  - chebi27470
+  - chebi30753
+  - chebi30961
+  - chebi31206
+  - chebi31345
+  - chebi32588
+  - chebi33118
+  - chebi34887
+  - chebi49105
+  - chebi49976
+  - chebi53503
+  - chebi63036
+  - chebi75213
+  - chebi76209
+  - chebi86158
+  - chebi86249
+  - chebi86318
+  - chebi86345
+  - chebi86368
+  - chebi8806
+  details: '{"metrics": [{"input": "data/merge_yaml/merged/ACIDOLOBUS_ACETICUS_MEDIUM.yaml",
+    "ingredient_instances": 28, "primary": 27, "current_secondary": 25, "primary_percent":
+    96.42857142857143, "current_secondary_percent": 89.28571428571429}, {"input":
+    "data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml", "ingredient_instances":
+    28, "primary": 27, "current_secondary": 25, "primary_percent": 96.42857142857143,
+    "current_secondary_percent": 89.28571428571429}, {"input": "data/normalized_yaml/archaea/acidilobus_medium.yaml",
+    "ingredient_instances": 28, "primary": 27, "current_secondary": 27, "primary_percent":
+    96.42857142857143, "current_secondary_percent": 96.42857142857143}, {"input":
+    "data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml", "ingredient_instances":
+    28, "primary": 27, "current_secondary": 27, "primary_percent": 96.42857142857143,
+    "current_secondary_percent": 96.42857142857143}, {"input": "data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml",
+    "ingredient_instances": 28, "primary": 27, "current_secondary": 25, "primary_percent":
+    96.42857142857143, "current_secondary_percent": 89.28571428571429}, {"input":
+    "data/normalized_yaml/bacterial/for_dsm_16705.yaml", "ingredient_instances": 28,
+    "primary": 27, "current_secondary": 25, "primary_percent": 96.42857142857143,
+    "current_secondary_percent": 89.28571428571429}], "definition": "Ingredient-instance
+    linkage percentages on a 0–100 scale, using each stated layer denominator; these
+    are not scientific correctness scores.", "label_drift": []}'
+- assessment_id: preparation
+  area: completeness
+  topic: Source-scoped preparation, conditions and physical-state branches
+  outcome: concern
+  summary: 'DSMZ intermittent heating and CO2 sparging differ from JCM autoclaving,
+    separate yeast/sulfide preparation, sulfur steaming and pressurization. Preserve
+    the detailed DSMZ and JCM owner prose with source-stage boundaries; the generated/KOMODO
+    layers omit it and KOMODO Aerobic: Yes conflicts with explicit anoxic source procedures.
+    Retain the DSMZ internal/cross-reference 2 M versus 2 N sulfide-acid conflict
+    without choosing an unsupported replacement.'
+  target_ids:
+  - CultureMech:006771
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - owner-4
+  - dsmz901
+  - jcm308
+  - jcm934
+  - jcm187
+  - jcm197
+  - dsmz28
+  - dsmz29
+- assessment_id: classification
+  area: scope
+  topic: Medium classification, applications and organism claim scope
+  outcome: concern
+  summary: Defined salts/stocks plus undefined yeast support a complex mixture; JCM
+    owners explicitly use SEMI_DEFINED while DSMZ/KOMODO use UNDEFINED. Classification
+    must be reconsidered after separating the formulations, not used as evidence they
+    are equivalent. Archaeal filing of the principal owners is retained; no current
+    taxonomy IDs, growth outcomes or organism phenotype are inferred from names. The
+    bacterial filing of the DSM wrapper alone does not establish its biology.
+  target_ids:
+  - CultureMech:006771
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - owner-4
+  - dsmz901
+  - jcm308
+  - jcm934
+  - jcm187
+  - jcm197
+  - dsmz28
+  - dsmz29
+- assessment_id: forms
+  area: grounding
+  topic: Exact supplied chemical forms and mixture identity
+  outcome: concern
+  summary: All five owners assign nickel hexahydrate to anhydrous CHEBI:34887, and
+    the DSMZ/KOMODO sodium-resazurin branch uses neutral CHEBI:8806. DSMZ D-(+)-calcium
+    pantothenate is consistent with CHEBI:31345 stereochemistry; generic JCM calcium
+    pantothenate does not independently establish that supplied stereoisomer. Generic
+    lipoic-acid grounding is not automatically contradicted by DSMZ DL wording. The
+    source explicitly supplies powdered sulfur. This material context alone does not
+    prove CHEBI:26833 incorrect or establish an allotrope; the completed pinned-index
+    lookup instead identifies a secondary-mapping gap, without inventing a replacement
+    ID.
+  target_ids:
+  - CultureMech:006771
+  evidence_ids:
+  - record
+  - chemical-context
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - owner-4
+  - dsmz901
+  - jcm308
+  - jcm934
+  - jcm187
+  - jcm197
+  - dsmz28
+  - dsmz29
+- assessment_id: evidence-placement
+  area: evidence
+  topic: Claim-level formulation evidence and current annotations
+  outcome: concern
+  summary: Target and all five owners lack attached exact quantity evidence. Standalone
+    stock records contain separate evidence but do not automatically support this
+    medium's working dose or final concentration. The source table supplies KOMODO
+    metadata only. Current curated/resolved-reference flags and copied arrays are
+    not source verification; append factual clarifications without rewriting historical
+    events.
+  target_ids:
+  - CultureMech:006771
+  evidence_ids:
+  - record
+  - quantity-inventory
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - owner-4
+  - dsmz901
+  - jcm308
+  - jcm934
+  - jcm187
+  - jcm197
+  - dsmz28
+  - dsmz29
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: concern
+  summary: 55 timestamp instances inspected; 9 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:006771
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - owner-4
+- assessment_id: ownership
+  area: ownership
+  topic: Five authoritative contributors and source-preserving regeneration
+  outcome: concern
+  summary: Fix each maintained source branch and variant independently. Retain the
+    September KOMODO/DSMZ topology repairs, repair the still-dangling JCM paths, and
+    regenerate with the current formulation-aware merger after source-bound corrections.
+    No canonical record should absorb different source concentrations merely because
+    the ingredient identity set matches.
+  target_ids:
+  - CultureMech:006771
+  evidence_ids:
+  - record
+  - relationship-paths
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - owner-4
+  - writer-0
+  - writer-1
+  - writer-2
+  - writer-3
+findings:
+- finding_id: f1
+  issue_key: cm006771-variant-conflation-and-links
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Different formulations and source variants were merged as duplicates
+  description: The target merged DSMZ 901, JCM 308, JCM 934 and the DSM 16705 wrapper.
+    JCM 308 differs in yeast, sulfide/resazurin, stock assembly and preparation; JCM
+    934 lacks structured glucose despite explicit modification prose, with unresolved
+    final-worded yeast semantics. DSM 16705 retains the base array despite explicit
+    DSMZ yeast reduction and glucose addition. The target and two JCM owner links
+    point into absent bacterial paths, while the actual contributors are under archaea.
+    Current KOMODO/DSMZ repairs do not resolve the JCM paths or variant compositions.
+  target_ids:
+  - CultureMech:006771
+  field_paths:
+  - merged_from
+  - synonyms
+  - parent_media
+  - variant_children
+  - variant_relationship
+  - ingredients
+  evidence_ids:
+  - record
+  - quantity-inventory
+  - relationship-paths
+  - dsmz901
+  - jcm308
+  - jcm934
+  - komodoMediaList
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - owner-4
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidilobus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_16705.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: cm006771-stock-strength-at-root
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Stock concentrations are represented as receiving-medium ingredients
+  description: Both source branches contain undiluted trace and vitamin stock quantities
+    at their root; DSMZ/KOMODO also puts 30 g/L sulfide stock there. Stock aliquots
+    and preparation water are omitted. Main provider values use declared 1017 ml or
+    1012 ml bases; DSMZ listed liquids sum to 1017.5 ml, and no measured final volume
+    is established. Acid 25% cannot independently justify the local 2.5 g/L conversion.
+  target_ids:
+  - CultureMech:006771
+  field_paths:
+  - ingredients[*].concentration
+  - solutions
+  - preparation_steps
+  evidence_ids:
+  - record
+  - quantity-inventory
+  - dsmz901
+  - mediadive901api
+  - jcm308
+  - mediadiveJ308api
+  - jcm187
+  - jcm197
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidilobus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_16705.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: cm006771-chemical-form-and-secondary-scope
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source hydrates and sodium salt conflict with valid but wrong chemical structures
+  description: Nickel chloride hexahydrate is assigned anhydrous CHEBI:34887 in all
+    five owners. Sodium resazurin in the DSMZ/KOMODO branch is assigned neutral CHEBI:8806.
+    JCM generic calcium pantothenate must retain supplied-form uncertainty; the DSMZ
+    D-(+) wording is different and must not be incorrectly flagged as the same conflict.
+    Sulfur primary validity does not establish missing pinned secondary correspondence.
+  target_ids:
+  - CultureMech:006771
+  field_paths:
+  - ingredients[*].term
+  - ingredients[*].mediaingredientmech_chebi_term
+  evidence_ids:
+  - record
+  - chemical-context
+  - mim
+  - chebi34887
+  - chebi8806
+  - chebi31345
+  - chebi26833
+  - dsmz901
+  - jcm187
+  - jcm197
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidilobus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_16705.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: cm006771-source-specific-preparation
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source-specific preparation is omitted or mixed across receiving and stock
+    stages
+  description: 'Generated/KOMODO layers omit the anoxic preparation retained by DSMZ/JCM
+    owners; their Aerobic: Yes metadata is incompatible with the exact anoxic source
+    procedures. The two source protocols differ materially, and source-cross-referenced
+    sulfide acid strengths conflict. The JCM owner scalar pH 3.6 should not silently
+    replace the source 3.5–3.8 range.'
+  target_ids:
+  - CultureMech:006771
+  field_paths:
+  - notes
+  - preparation_steps
+  - sterilization
+  - ph_range
+  - ph_value
+  - references
+  evidence_ids:
+  - record
+  - quantity-inventory
+  - dsmz901
+  - jcm308
+  - dsmz28
+  - dsmz29
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - owner-4
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidilobus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_16705.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.5
+  native_severity: P3
+  normalization_reason: P3 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f5
+  issue_key: cm006771-history-timestamp-shape
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Historical timestamps include malformed and timezone-naive values
+  description: The bounded timestamp audit identifies malformed KOMODO import values
+    and timezone-naive resolver/repair events across the target and owners. These
+    are historical provenance defects, not evidence of source validation or actual
+    timezone.
+  target_ids:
+  - CultureMech:006771
+  field_paths:
+  - curation_history
+  evidence_ids:
+  - history-metadata
+  - record
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - owner-4
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidilobus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_16705.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Retain separate source formulations and exact variants, implement only
+    the source-supported modifications, and resolve JCM 934 yeast semantics before
+    asserting a total. Correct exact relationship paths by stable identity; preserve
+    valid repaired links. Regenerate through the current formulation-aware merge path
+    after owner fixes.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:006771
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidilobus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_16705.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Recover each named stock, source batch amount, solvent and receiving
+    aliquot without duplicate direct components. Preserve explicit provider normalization
+    separately; keep unspecified final volume and percent basis unresolved. Retain
+    literal acid molarity where supplied and do not infer a molecular-weight conversion
+    from an incompatible form.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:006771
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidilobus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_16705.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Resolve exact supplied salt/hydrate correspondence and update primary/secondary
+    assertions together, with no invented replacements. Keep the JCM stereochemical
+    limit and unresolved sulfur secondary lineage explicit; obtain exact catalog evidence
+    before claiming that correspondence.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:006771
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidilobus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_16705.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Preserve each source branch's complete procedure and stock scope with
+    narrow snippets, correct unsupported aerobic metadata, and retain source conflicts
+    and literal pressure qualifiers. Resolve the sulfide-acid source/version question
+    before proposing a single replacement. Never borrow parent-medium procedures from
+    stock-source pages.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:006771
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidilobus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_16705.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a5
+  description: Preserve old events append-only and add a factual clarification if
+    timestamp provenance can be recovered; do not invent missing timezones or rewrite
+    historical events. Keep curated/resolved-reference flags distinct from scientific
+    source verification.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:006771
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/KOMODO_901_ACIDOLOBUS_ACETICUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidilobus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidilobus_saccharovorans_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/acidolobus_aceticus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_16705.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Exact KOMODO 901.1 detail returned HTTP 403. The table row and independent DSMZ
+  901 conditional text were inspected; the inaccessible page contents and historical
+  formulation equivalence were not verified. This required source-version check remains
+  unavailable and the review is partial.
+- The live primary ontology identity CHEBI:26833 is available. A completed lookup
+  confirms its asserted secondary MIM mapping has no exact row in the pinned snapshot;
+  this is a mapping gap, not an unavailable lookup, a claim that the ontology term
+  is invalid, or proof that no historical catalog record ever existed.
+- The required unavailable exact KOMODO 901.1 detail makes this a partial scientific
+  review. The sulfur secondary-index lookup is complete and confirms a mapping gap;
+  it does not cause partial coverage. Independent DSMZ variant evidence is available
+  and does not establish the inaccessible page's historical contents.
+- No measured final volume is asserted for either receiving batch. Primary-listed
+  solvent/addition sums, provider-declared volumes and normalized g_l values remain
+  distinct; no unsupported density, percent basis or pressure convention is inferred.
+- Under the providers' nominal 1000 ml vitamin-stock bases, DSMZ 10x vitamins at 1
+  ml and JCM normal vitamins at 10 ml carry the same listed vitamin mass per nominal
+  receiving batch. That conditional arithmetic does not establish equal measured stock
+  volumes or equivalent whole media.
+- DSMZ 28/29 are used only for the neutralized-sulfide conflict; JCM 187 and 197 only
+  for their named stocks. Parent organisms, unrelated media ingredients and unrelated
+  pH/stock instructions are excluded.
+- The failed first MediaDive161 request and successful retry are preserved in the
+  bound catalog; only the successful exact solution5980 content informs stock evidence.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-018
+- generated-medium
+```
