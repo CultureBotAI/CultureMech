@@ -1,0 +1,955 @@
+# Source and formulation review: 1_2_gy_agar (CultureMech:007664)
+
+- Review: 20261020T071053Z-culturemech-007664-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-20T07:09:58Z
+- Finished UTC: 2026-10-20T07:10:53Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+TOGO M1141 correctly identifies JCM 1072 and retains the four source solute amounts and supplier-qualified yeast extract. Its water volume is mistranscribed as a mass-per-liter value, the applicable collection preparation default is missing, and all five amount assertions lack claim-level evidence.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Record 42 in Python lexicographic repository-relative path order of the initially uncovered merged corpus; Batch 005 selects ordinals 41-50 after four validated local batches; saved bundles are published locally in path order. On fresh origin/main at this batch base, scripts/record_review.py list validated 34 existing bundles and none listed this target path or ID. This bundle selects only the named record; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 7c568537897ee4bba1b8e97f8172133c1572aec0.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:007664 | data/merge_yaml/merged/1_2_gy_agar__1efdf1be.yaml | generated | 1_2_gy_agar |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:007664 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:007664 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-005/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch005/042/strict.tsv |
+| validate-terms | passed | True | CultureMech:007664 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:007664 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:007664 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:007664.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### All asserted primary and current secondary ingredient identifiers
+
+grounding: supported. Targets: CultureMech:007664.
+
+4 primary CHEBI identities resolve with matching labels; 4 of 4 current secondary keys have live pinned-index rows. Unresolved keys: [].
+
+5 direct ingredient instances; primary coverage 4/5 (80.00%), verified secondary coverage 4/5 (80.00%). Percentages use a 0–100 linkage scale, not a scientific correctness score. Complex mixtures without asserted IDs remain ungrounded rather than receiving invented pure-molecule identities.
+
+### TOGO and original collection identity
+
+identity: supported. Targets: CultureMech:007664.
+
+CultureMech:007664 is the generated copy of one maintained TOGO record. M1141 resolves to JCM_M1072, whose source name and complete component inventory agree. No further halving is justified by the name.
+
+### ingredients[0].concentration
+
+quantity: concern. Targets: CultureMech:007664.
+
+correct: source water is 1 L, while target and owner encode 1 G_PER_L. The numeric value was carried over across incompatible dimensions; the source volume must be retained explicitly.
+
+Do not assume a density or silently convert source water to a mass concentration. Use the original water/batch context; any per-liter volume representation must state and verify its denominator.
+
+### ingredients[1].concentration
+
+quantity: supported. Targets: CultureMech:007664.
+
+verified: KH2PO4 0.5 G_PER_L matches the exact source component and provider-declared 1000 ml main-solution basis.
+
+All four solute quantities independently checked. No stock, unspecified percent or mass-to-molar conversion is involved. Supplier-qualified yeast identity is preserved.
+
+### ingredients[2].concentration
+
+quantity: supported. Targets: CultureMech:007664.
+
+verified: Glucose 10 G_PER_L matches the exact source component and provider-declared 1000 ml main-solution basis.
+
+All four solute quantities independently checked. No stock, unspecified percent or mass-to-molar conversion is involved. Supplier-qualified yeast identity is preserved.
+
+### ingredients[3].concentration
+
+quantity: supported. Targets: CultureMech:007664.
+
+verified: Agar 15 G_PER_L matches the exact source component and provider-declared 1000 ml main-solution basis.
+
+All four solute quantities independently checked. No stock, unspecified percent or mass-to-molar conversion is involved. Supplier-qualified yeast identity is preserved.
+
+### ingredients[4].concentration
+
+quantity: supported. Targets: CultureMech:007664.
+
+verified: Yeast extract (BD-Difco) 1 G_PER_L matches the exact source component and provider-declared 1000 ml main-solution basis.
+
+All four solute quantities independently checked. No stock, unspecified percent or mass-to-molar conversion is involved. Supplier-qualified yeast identity is preserved.
+
+### Source chemical forms and imported role descriptions
+
+grounding: supported. Targets: CultureMech:007664.
+
+Phosphate mapping denotes potassium dihydrogen phosphate; generic glucose is not narrowed to a specific stereoisomer. Water and agar map to the expected chemical/mixture identities. The supplier-qualified yeast remains a complex mixture. Notes reproduce the corresponding TOGO role/property annotations, not independently measured mechanistic outcomes.
+
+### Collection preparation defaults
+
+completeness: concern. Targets: CultureMech:007664.
+
+Target and owner have no preparation steps although the collection page gives an applicable default and the entry has no exception. No numeric pH is provided by the inspected sources, so its absence is not a defect.
+
+### Physical state, classification and growth scope
+
+scope: supported. Targets: CultureMech:007664.
+
+Agar supports the solid-medium designation; yeast extract supports complex/undefined classification. Bacterial filing and generic cultivation do not assert strain-specific growth. No taxon, DOI, PMID, stock, incubation, vessel, atmosphere or storage claim is present to validate or fill from unrelated sources.
+
+### Maintained owner and generated evidence
+
+evidence: concern. Targets: CultureMech:007664.
+
+All five ingredients lack claim-level evidence in the complete target and owner. The source URL and import/merge history identify provenance but do not replace amount evidence; reference validation examined zero excerpts. Target scientific fields agree with the owner, so these are maintained-input issues.
+
+## Findings
+
+### f1: Water volume was encoded as a mass concentration
+
+major / open / confirmed; issue key: CM007664-water-volume-as-mass.
+
+Both target and maintained owner encode the source water volume as 1 G_PER_L. TOGO, JCM and the alternate provider retain volume units; no source supports the target mass claim.
+
+### f2: Applicable source preparation default is omitted
+
+major / open / confirmed; issue key: CM007664-collection-preparation-omitted.
+
+Neither complete local record retains the collection-default preparation instruction applicable to JCM 1072. The collection entry has no override.
+
+### f3: Ingredient assertions lack scoped source evidence
+
+minor / open / confirmed; issue key: CM007664-formulation-evidence-gap.
+
+All five amount claims lack source excerpts; four solute values are supported and the water value requires correction. Missing evidence must not be mistaken for an unsupported solute concentration.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Correct the maintained water representation with exact source-volume and batch context. Preserve the four correct solute concentrations and avoid density-based guesses; inspect the source-unit import path before regeneration.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Retain the applicable collection instruction with source evidence in the maintained owner, without adding an unstated pH or incubation protocol.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Add narrow amount/unit/batch and supplier-context evidence after correcting the water representation, then verify retention in regenerated output.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/1_2_gy_agar__1efdf1be.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/TOGO_M1141_1_2_GY_Agar.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/1_2_gy_agar__1efdf1be.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/1_2_gy_agar__1efdf1be.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch005/042/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-005/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch005/042/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/1_2_gy_agar__1efdf1be.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/1_2_gy_agar__1efdf1be.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/1_2_gy_agar__1efdf1be.yaml:1:id: CultureMech:007664<br>./data/normalized_yaml/bacterial/TOGO_M1141_1_2_GY_Agar.yaml:1:id: CultureMech:007664<br> |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:15377 resolves to water and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi17234 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:17234 resolves to glucose and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:2509 resolves to agar and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:63036 resolves to potassium dihydrogen phosphate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; All live preferred-term rows for asserted secondary CHEBI keys; metadata captured | supports | {"CHEBI:15377": [{"label": "Distilled water", "match_type": "preferred_term", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17234": [{"label": "Glucose", "match_type": "preferred_term", "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:2509": [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}]} |
+| togo | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1141; meta; components[0].items; comments | supports | TOGO accession, original JCM accession, complete component array and imported role/property text inspected. Water is explicitly a volume rather than a mass. |
+| jcm | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1072; GRMD 1072 entire entry and collection default | supports | Complete source formula and applicable page default inspected. No recipe-specific exception or numeric pH is stated. |
+| api | https://mediadive.dsmz.de/rest/medium/J1072; data.medium; data.solutions[0] | supports | Exact JCM accession and main solution supply four matching g_l values and a volume-valued water row. |
+| volume | https://bacmedia.dsmz.de/pdf/J1072; Page 1, complete formulation and final-volume header | supports | Provider rendering explicitly labels the final-volume basis and includes all five source components. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Reused source captures retain their actual original access timestamps and verified content hashes; they were inspected for this target.
+- No experimental growth or new mechanism assertion was made. Provider final volume was not physically measured by this review.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261020T071053Z-culturemech-007664-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: 1_2_gy_agar (CultureMech:007664)'
+started_at: '2026-10-20T07:09:58Z'
+finished_at: '2026-10-20T07:10:53Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: TOGO M1141 correctly identifies JCM 1072 and retains the four source solute
+  amounts and supplier-qualified yeast extract. Its water volume is mistranscribed
+  as a mass-per-liter value, the applicable collection preparation default is missing,
+  and all five amount assertions lack claim-level evidence.
+source:
+  git_revision: 7c568537897ee4bba1b8e97f8172133c1572aec0
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/1_2_gy_agar__1efdf1be.yaml
+    sha256: e3dd534f8763348fc7ce9d38d7f984733f70b9fe25434d87a9a41f1be9f62442
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M1141_1_2_GY_Agar.yaml
+    sha256: 707d8405331446c206b3aee177341a8511bf9cf1f7f01972118113159f8ad73e
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Record 42 in Python lexicographic repository-relative path order of the
+    initially uncovered merged corpus; Batch 005 selects ordinals 41-50 after four
+    validated local batches; saved bundles are published locally in path order. On
+    fresh origin/main at this batch base, scripts/record_review.py list validated
+    34 existing bundles and none listed this target path or ID. This bundle selects
+    only the named record; no sampling or fleet-wide scientific claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:007664
+targets:
+- target_id: CultureMech:007664
+  path: data/merge_yaml/merged/1_2_gy_agar__1efdf1be.yaml
+  label: 1_2_gy_agar
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1141_1_2_GY_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/1_2_gy_agar__1efdf1be.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:007664
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/1_2_gy_agar__1efdf1be.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch005/042/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-005/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch005/042/strict.tsv"
+  target_ids:
+  - CultureMech:007664
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/1_2_gy_agar__1efdf1be.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:007664
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/1_2_gy_agar__1efdf1be.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:007664
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:007664
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/1_2_gy_agar__1efdf1be.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-20T07:10:51Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M1141_1_2_GY_Agar.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-20T07:10:51Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/1_2_gy_agar__1efdf1be.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-20T07:10:07.062651Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/1_2_gy_agar__1efdf1be.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch005/042/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-20T07:10:08.341834Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-005/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch005/042/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/1_2_gy_agar__1efdf1be.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-20T07:10:10.511173Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/1_2_gy_agar__1efdf1be.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-20T07:10:11.471034Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-20T07:10:51Z'
+  support: supports
+  summary: './data/merge_yaml/merged/1_2_gy_agar__1efdf1be.yaml:1:id: CultureMech:007664
+
+    ./data/normalized_yaml/bacterial/TOGO_M1141_1_2_GY_Agar.yaml:1:id: CultureMech:007664
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T04:00:00.223561Z'
+  support: supports
+  summary: CHEBI:15377 resolves to water and is not obsolete. This verifies the asserted
+    generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond
+    the record is inferred.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi17234
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T03:57:32.595833Z'
+  support: supports
+  summary: CHEBI:17234 resolves to glucose and is not obsolete. This verifies the
+    asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: e3b9cbcd7b1e08bb05564cf82f924b29c554767e9b40bf1e4c85ab1bce09330f
+- evidence_id: chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T07:07:41.448510Z'
+  support: supports
+  summary: CHEBI:2509 resolves to agar and is not obsolete. This verifies the asserted
+    generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond
+    the record is inferred.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T04:02:35.727546Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: All live preferred-term rows for asserted secondary CHEBI keys; metadata
+    captured
+  accessed_at: '2026-10-20T07:10:51Z'
+  support: supports
+  summary: '{"CHEBI:15377": [{"label": "Distilled water", "match_type": "preferred_term",
+    "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id":
+    "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036":
+    [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036",
+    "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:17234": [{"label": "Glucose", "match_type": "preferred_term",
+    "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:2509": [{"label":
+    "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term":
+    "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}'
+- evidence_id: togo
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1141
+  locator: meta; components[0].items; comments
+  accessed_at: '2026-10-20T07:10:08.238158Z'
+  support: supports
+  summary: TOGO accession, original JCM accession, complete component array and imported
+    role/property text inspected. Water is explicitly a volume rather than a mass.
+  snapshot_sha256: 082d0ffb6906a8401e5146727e1107ec446a7c0bb7ddfcce22e72ea35006b0bd
+- evidence_id: jcm
+  kind: database
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1072
+  locator: GRMD 1072 entire entry and collection default
+  accessed_at: '2026-10-20T04:08:58.889390Z'
+  support: supports
+  summary: Complete source formula and applicable page default inspected. No recipe-specific
+    exception or numeric pH is stated.
+  snapshot_sha256: 012b29e2ed4e13d1ee7d02f8f041383251020cda38ce6780385677f410589d72
+- evidence_id: api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J1072
+  locator: data.medium; data.solutions[0]
+  accessed_at: '2026-10-20T04:08:59.439189Z'
+  support: supports
+  summary: Exact JCM accession and main solution supply four matching g_l values and
+    a volume-valued water row.
+  snapshot_sha256: ee25dbf5fd0fcd64818a2fb5979cda597a2a66efc3034272d564f6e85ee3c353
+- evidence_id: volume
+  kind: database
+  reference: https://bacmedia.dsmz.de/pdf/J1072
+  locator: Page 1, complete formulation and final-volume header
+  accessed_at: '2026-10-20T04:09:00.016636Z'
+  support: supports
+  summary: Provider rendering explicitly labels the final-volume basis and includes
+    all five source components.
+  quote: 'Final volume: 1000 ml'
+  snapshot_sha256: b8012610e56c7a5b915f03ee0f81f62b3bb0a9133acf0e249c0abe6316f4b9e1
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:007664
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: All asserted primary and current secondary ingredient identifiers
+  outcome: supported
+  summary: '4 primary CHEBI identities resolve with matching labels; 4 of 4 current
+    secondary keys have live pinned-index rows. Unresolved keys: [].'
+  target_ids:
+  - CultureMech:007664
+  evidence_ids:
+  - record
+  - mim
+  - chebi15377
+  - chebi17234
+  - chebi2509
+  - chebi63036
+  details: 5 direct ingredient instances; primary coverage 4/5 (80.00%), verified
+    secondary coverage 4/5 (80.00%). Percentages use a 0–100 linkage scale, not a
+    scientific correctness score. Complex mixtures without asserted IDs remain ungrounded
+    rather than receiving invented pure-molecule identities.
+- assessment_id: identity
+  area: identity
+  topic: TOGO and original collection identity
+  outcome: supported
+  summary: CultureMech:007664 is the generated copy of one maintained TOGO record.
+    M1141 resolves to JCM_M1072, whose source name and complete component inventory
+    agree. No further halving is justified by the name.
+  target_ids:
+  - CultureMech:007664
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - togo
+  - jcm
+  - api
+- assessment_id: water
+  area: quantity
+  topic: ingredients[0].concentration
+  outcome: concern
+  summary: 'correct: source water is 1 L, while target and owner encode 1 G_PER_L.
+    The numeric value was carried over across incompatible dimensions; the source
+    volume must be retained explicitly.'
+  target_ids:
+  - CultureMech:007664
+  evidence_ids:
+  - record
+  - owner-0
+  - togo
+  - jcm
+  - api
+  - volume
+  details: Do not assume a density or silently convert source water to a mass concentration.
+    Use the original water/batch context; any per-liter volume representation must
+    state and verify its denominator.
+- assessment_id: amount-1
+  area: quantity
+  topic: ingredients[1].concentration
+  outcome: supported
+  summary: 'verified: KH2PO4 0.5 G_PER_L matches the exact source component and provider-declared
+    1000 ml main-solution basis.'
+  target_ids:
+  - CultureMech:007664
+  evidence_ids:
+  - record
+  - togo
+  - jcm
+  - api
+  - volume
+  details: All four solute quantities independently checked. No stock, unspecified
+    percent or mass-to-molar conversion is involved. Supplier-qualified yeast identity
+    is preserved.
+- assessment_id: amount-2
+  area: quantity
+  topic: ingredients[2].concentration
+  outcome: supported
+  summary: 'verified: Glucose 10 G_PER_L matches the exact source component and provider-declared
+    1000 ml main-solution basis.'
+  target_ids:
+  - CultureMech:007664
+  evidence_ids:
+  - record
+  - togo
+  - jcm
+  - api
+  - volume
+  details: All four solute quantities independently checked. No stock, unspecified
+    percent or mass-to-molar conversion is involved. Supplier-qualified yeast identity
+    is preserved.
+- assessment_id: amount-3
+  area: quantity
+  topic: ingredients[3].concentration
+  outcome: supported
+  summary: 'verified: Agar 15 G_PER_L matches the exact source component and provider-declared
+    1000 ml main-solution basis.'
+  target_ids:
+  - CultureMech:007664
+  evidence_ids:
+  - record
+  - togo
+  - jcm
+  - api
+  - volume
+  details: All four solute quantities independently checked. No stock, unspecified
+    percent or mass-to-molar conversion is involved. Supplier-qualified yeast identity
+    is preserved.
+- assessment_id: amount-4
+  area: quantity
+  topic: ingredients[4].concentration
+  outcome: supported
+  summary: 'verified: Yeast extract (BD-Difco) 1 G_PER_L matches the exact source
+    component and provider-declared 1000 ml main-solution basis.'
+  target_ids:
+  - CultureMech:007664
+  evidence_ids:
+  - record
+  - togo
+  - jcm
+  - api
+  - volume
+  details: All four solute quantities independently checked. No stock, unspecified
+    percent or mass-to-molar conversion is involved. Supplier-qualified yeast identity
+    is preserved.
+- assessment_id: forms
+  area: grounding
+  topic: Source chemical forms and imported role descriptions
+  outcome: supported
+  summary: Phosphate mapping denotes potassium dihydrogen phosphate; generic glucose
+    is not narrowed to a specific stereoisomer. Water and agar map to the expected
+    chemical/mixture identities. The supplier-qualified yeast remains a complex mixture.
+    Notes reproduce the corresponding TOGO role/property annotations, not independently
+    measured mechanistic outcomes.
+  target_ids:
+  - CultureMech:007664
+  evidence_ids:
+  - record
+  - togo
+  - jcm
+  - chebi63036
+  - chebi17234
+  - chebi15377
+  - chebi2509
+- assessment_id: preparation
+  area: completeness
+  topic: Collection preparation defaults
+  outcome: concern
+  summary: Target and owner have no preparation steps although the collection page
+    gives an applicable default and the entry has no exception. No numeric pH is provided
+    by the inspected sources, so its absence is not a defect.
+  target_ids:
+  - CultureMech:007664
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - togo
+- assessment_id: scope
+  area: scope
+  topic: Physical state, classification and growth scope
+  outcome: supported
+  summary: Agar supports the solid-medium designation; yeast extract supports complex/undefined
+    classification. Bacterial filing and generic cultivation do not assert strain-specific
+    growth. No taxon, DOI, PMID, stock, incubation, vessel, atmosphere or storage
+    claim is present to validate or fill from unrelated sources.
+  target_ids:
+  - CultureMech:007664
+  evidence_ids:
+  - record
+  - jcm
+  - togo
+  - api
+- assessment_id: provenance
+  area: evidence
+  topic: Maintained owner and generated evidence
+  outcome: concern
+  summary: All five ingredients lack claim-level evidence in the complete target and
+    owner. The source URL and import/merge history identify provenance but do not
+    replace amount evidence; reference validation examined zero excerpts. Target scientific
+    fields agree with the owner, so these are maintained-input issues.
+  target_ids:
+  - CultureMech:007664
+  evidence_ids:
+  - record
+  - owner-0
+  - validate-references
+  - jcm
+  - api
+  - togo
+findings:
+- finding_id: f1
+  issue_key: CM007664-water-volume-as-mass
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Water volume was encoded as a mass concentration
+  description: Both target and maintained owner encode the source water volume as
+    1 G_PER_L. TOGO, JCM and the alternate provider retain volume units; no source
+    supports the target mass claim.
+  target_ids:
+  - CultureMech:007664
+  field_paths:
+  - ingredients[0].concentration
+  evidence_ids:
+  - record
+  - owner-0
+  - togo
+  - jcm
+  - api
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1141_1_2_GY_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f2
+  issue_key: CM007664-collection-preparation-omitted
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Applicable source preparation default is omitted
+  description: Neither complete local record retains the collection-default preparation
+    instruction applicable to JCM 1072. The collection entry has no override.
+  target_ids:
+  - CultureMech:007664
+  field_paths:
+  - preparation_steps
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1141_1_2_GY_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f3
+  issue_key: CM007664-formulation-evidence-gap
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Ingredient assertions lack scoped source evidence
+  description: All five amount claims lack source excerpts; four solute values are
+    supported and the water value requires correction. Missing evidence must not be
+    mistaken for an unsupported solute concentration.
+  target_ids:
+  - CultureMech:007664
+  field_paths:
+  - ingredients[*].evidence
+  - references
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - api
+  - togo
+  - volume
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1141_1_2_GY_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+actions:
+- action_id: a1
+  description: Correct the maintained water representation with exact source-volume
+    and batch context. Preserve the four correct solute concentrations and avoid density-based
+    guesses; inspect the source-unit import path before regeneration.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:007664
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1141_1_2_GY_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Retain the applicable collection instruction with source evidence in
+    the maintained owner, without adding an unstated pH or incubation protocol.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:007664
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1141_1_2_GY_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Add narrow amount/unit/batch and supplier-context evidence after correcting
+    the water representation, then verify retention in regenerated output.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:007664
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1141_1_2_GY_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Reused source captures retain their actual original access timestamps and verified
+  content hashes; they were inspected for this target.
+- No experimental growth or new mechanism assertion was made. Provider final volume
+  was not physically measured by this review.
+tags:
+- unreviewed-records
+- batch-005
+- generated-medium
+```
