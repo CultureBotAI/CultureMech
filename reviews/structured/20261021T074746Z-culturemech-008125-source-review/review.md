@@ -1,0 +1,1785 @@
+# Source and formulation review: 2_5_nacl_gypfk_agar_broth (CultureMech:008125)
+
+- Review: 20261021T074746Z-culturemech-008125-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T07:45:12Z
+- Finished UTC: 2026-10-21T07:47:46Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+TOGO M1576 identifies NBRC 383, but both local layers attach three unrelated MediaDive stocks, flatten the true salt-stock amounts into medium ingredients, and mix water volumes into a mass concentration. Two commercial ingredients are empty solution wrappers. Source preparation, approximate pH and agar/broth scope also need restoration; exact final-volume and supplier ambiguities remain explicit.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 81; batch 009 item 1 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding eight task batches contain 80 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c contains 40 validated baseline bundles covering 2 current merged paths. Unioning all prior lists with this baseline covers 82 of 6320 current merged paths, including 2 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 24a1d277eb7f0437af53af0d178a30f9bfa6374c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:008125 | data/merge_yaml/merged/2_5_nacl_gypfk_agar_broth.yaml | generated | 2_5_nacl_gypfk_agar_broth |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:008125 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:008125 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-009/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch009/081/strict.tsv |
+| validate-terms | passed | True | CultureMech:008125 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:008125 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:008125 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:008125.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### All asserted primary and current secondary ingredient identifiers
+
+grounding: supported. Targets: CultureMech:008125.
+
+8 primary CHEBI identities resolve with matching labels; 6 of 6 current secondary keys have live pinned-index rows. Unresolved keys: [].
+
+10 direct ingredient instances; CHEBI-primary instance linkage 8/10 (80.00%), verified secondary coverage 6/10 (60.00%). Percentages use a 0–100 linkage scale, not a scientific correctness score. Complex mixtures without asserted IDs remain ungrounded rather than receiving invented pure-molecule identities.
+
+### Exact source accession and generated ownership
+
+identity: supported. Targets: CultureMech:008125.
+
+TOGO M1576 explicitly identifies NBRC 383. Stable ID, full maintained owner and merge event identify this target; the three linked MediaDive stocks resolve but are scientifically different formulations.
+
+### Every direct ingredient and stock-use node
+
+quantity: concern. Targets: CultureMech:008125.
+
+All 15 target nodes were assessed. Source masses for yeast extract, NaCl, phosphate, glucose, optional agar, carbonate, Hipolypepton and bonito extract are retained numerically, but their source-group and final-volume basis are lost. Water 1001 g/L adds 900 ml, 100 ml and 1 L numerals across separate stages. A/B and salt-stock additions are volumes, not g/L. Mg/Fe/Mn values belong to stock preparation, not the receiving medium.
+
+[{"field_path": "ingredients[0]", "ingredient": "Distilled water", "current_concentration": {"value": "1001.0", "unit": "G_PER_L"}, "term": {"id": "CHEBI:15377", "label": "water"}, "assessment": "incorrect unit, mixed unit arithmetic, and loss of stock boundary", "explanation": "The stored1001 is explicitly explained as900+100+1 in the duplicate-merge note. These source numerals use ml, ml, and L, and the1 L belongs to preparation of a separate stock; they cannot be summed as receiving-medium grams per liter."}, {"field_path": "ingredients[1]", "ingredient": "Yeast extract", "current_concentration": {"value": "5", "unit": "G_PER_L"}, "term": null, "source_group": "Solution A", "source_mass_g_per_prescribed_batch": "5", "assessment": "source mass is supported; exact final-medium denominator remains unstated", "arithmetic": "C_medium = 5 g / V_medium_L; equals5 g/L only if V_medium=1 L."}, {"field_path": "ingredients[2]", "ingredient": "NaCl", "current_concentration": {"value": "25", "unit": "G_PER_L"}, "term": {"id": "CHEBI:26710", "label": "sodium chloride"}, "source_group": "Solution A", "source_mass_g_per_prescribed_batch": "25", "assessment": "source mass is supported; exact final-medium denominator remains unstated", "arithmetic": "C_medium = 25 g / V_medium_L; equals25 g/L only if V_medium=1 L."}, {"field_path": "ingredients[3]", "ingredient": "K2HPO4", "current_concentration": {"value": "10", "unit": "G_PER_L"}, "term": {"id": "CHEBI:131527", "label": "dipotassium hydrogen phosphate"}, "source_group": "Solution A", "source_mass_g_per_prescribed_batch": "10", "assessment": "source mass is supported; exact final-medium denominator remains unstated", "arithmetic": "C_medium = 10 g / V_medium_L; equals10 g/L only if V_medium=1 L."}, {"field_path": "ingredients[4]", "ingredient": "Glucose", "current_concentration": {"value": "10", "unit": "G_PER_L"}, "term": {"id": "CHEBI:17234", "label": "glucose"}, "source_group": "Solution A", "source_mass_g_per_prescribed_batch": "10", "assessment": "source mass is supported; exact final-medium denominator remains unstated", "arithmetic": "C_medium = 10 g / V_medium_L; equals10 g/L only if V_medium=1 L."}, {"field_path": "ingredients[5]", "ingredient": "Agar (if needed)", "current_concentration": {"value": "15", "unit": "G_PER_L"}, "term": null, "source_group": "Solution A", "source_mass_g_per_prescribed_batch": "15", "assessment": "source mass is supported; exact final-medium denominator remains unstated", "arithmetic": "C_medium = 15 g / V_medium_L; equals15 g/L only if V_medium=1 L."}, {"field_path": "ingredients[6]", "ingredient": "Na2CO3", "current_concentration": {"value": "3", "unit": "G_PER_L"}, "term": {"id": "CHEBI:29377", "label": "sodium carbonate"}, "source_group": "Solution B", "source_mass_g_per_prescribed_batch": "3", "assessment": "source mass is supported; exact final-medium denominator remains unstated", "arithmetic": "C_medium = 3 g / V_medium_L; equals3 g/L only if V_medium=1 L."}, {"field_path": "ingredients[7]", "ingredient": "MgSO4·7H2O", "current_concentration": {"value": "40", "unit": "G_PER_L"}, "term": {"id": "CHEBI:31795", "label": "magnesium sulfate heptahydrate"}, "source_group": "**Salt solution", "source_mass_g_per_stock_batch": "40", "assessment": "stock-batch amount has been asserted as final-medium concentration", "arithmetic": "For actual stock final volume V_stock_L, C_stock=40/V_stock_L g/L;5 ml delivers(40*0.005/V_stock_L) g. Final concentration=(40*0.005/(V_stock_L*V_medium_L)) g/L.", "conditional_nominal_case": {"assumptions": ["stock final volume=1 L", "medium final volume=1 L"], "delivered_mass_g": "0.2", "medium_g_per_l": "0.2", "ratio_current_to_conditional_nominal": "200"}}, {"field_path": "ingredients[8]", "ingredient": "FeSO4·7H2O", "current_concentration": {"value": "2", "unit": "G_PER_L"}, "term": {"id": "CHEBI:75836", "label": "iron(2+) sulfate heptahydrate"}, "source_group": "**Salt solution", "source_mass_g_per_stock_batch": "2", "assessment": "stock-batch amount has been asserted as final-medium concentration", "arithmetic": "For actual stock final volume V_stock_L, C_stock=2/V_stock_L g/L;5 ml delivers(2*0.005/V_stock_L) g. Final concentration=(2*0.005/(V_stock_L*V_medium_L)) g/L.", "conditional_nominal_case": {"assumptions": ["stock final volume=1 L", "medium final volume=1 L"], "delivered_mass_g": "0.01", "medium_g_per_l": "0.01", "ratio_current_to_conditional_nominal": "200"}}, {"field_path": "ingredients[9]", "ingredient": "MnSO4·4H2O", "current_concentration": {"value": "2", "unit": "G_PER_L"}, "term": {"id": "CHEBI:86358", "label": "manganese(II) sulfate tetrahydrate"}, "source_group": "**Salt solution", "source_mass_g_per_stock_batch": "2", "assessment": "stock-batch amount has been asserted as final-medium concentration", "arithmetic": "For actual stock final volume V_stock_L, C_stock=2/V_stock_L g/L;5 ml delivers(2*0.005/V_stock_L) g. Final concentration=(2*0.005/(V_stock_L*V_medium_L)) g/L.", "conditional_nominal_case": {"assumptions": ["stock final volume=1 L", "medium final volume=1 L"], "delivered_mass_g": "0.01", "medium_g_per_l": "0.01", "ratio_current_to_conditional_nominal": "200"}}, {"field_path": "solutions[0]", "solution": "Solution A", "current_concentration": {"value": "900", "unit": "G_PER_L"}, "term": {"id": "mediadive.solution:5342", "label": "Solution A"}, "name": "Unknown solution", "assessment": "wrong stock accession and volume-to-mass unit corruption", "provider_locator": "$.components[0].items[0]", "source_key": "togoM1576api", "source_addition": {"value": "900", "unit": "ml"}, "primary_provider_distinction": "NBRC states water amounts within A/B and says to combine them; TOGO separately materializes900/100 ml A/B addition rows. Do not silently treat the two kinds of volume as identical measured final solutions."}, {"field_path": "solutions[1]", "solution": "Solution B", "current_concentration": {"value": "100", "unit": "G_PER_L"}, "term": {"id": "mediadive.solution:5343", "label": "Solution B"}, "name": "Unknown solution", "assessment": "wrong stock accession and volume-to-mass unit corruption", "provider_locator": "$.components[0].items[1]", "source_key": "togoM1576api", "source_addition": {"value": "100", "unit": "ml"}, "primary_provider_distinction": "NBRC states water amounts within A/B and says to combine them; TOGO separately materializes900/100 ml A/B addition rows. Do not silently treat the two kinds of volume as identical measured final solutions."}, {"field_path": "solutions[2]", "solution": "Hipolypepton*", "current_concentration": {"value": "5", "unit": "G_PER_L"}, "term": null, "name": "Unknown solution", "assessment": "commercial ingredient is represented as an empty stock solution", "source_mass_g_per_A_batch": "5"}, {"field_path": "solutions[3]", "solution": "Extract Bonito*", "current_concentration": {"value": "5", "unit": "G_PER_L"}, "term": null, "name": "Unknown solution", "assessment": "commercial ingredient is represented as an empty stock solution", "source_mass_g_per_A_batch": "5"}, {"field_path": "solutions[4]", "solution": "Salt solution**", "current_concentration": {"value": "5", "unit": "G_PER_L"}, "term": {"id": "mediadive.solution:6218", "label": "Salt solution"}, "name": "Unknown solution", "assessment": "wrong stock accession, missing correct composition, and volume-to-mass unit corruption", "provider_locator": "$.components[1].items[8]", "source_key": "togoM1576api"}]
+
+### Exact versus conditional dilution arithmetic
+
+quantity: concern. Targets: CultureMech:008125.
+
+The primary source gives water additions, not explicit final-volume closures. TOGO separately supplies A/B combination volumes. For actual stock volume Vs and medium volume Vm in litres, salt concentration is stock mass times 0.005/(Vs*Vm) g/L. Only assuming Vs=Vm=1 L gives Mg/Fe/Mn 0.2/0.01/0.01 g/L. These are diagnostic conditional values, not proposed asserted replacements; do not assume density, 1.005 L final volume or additive stock-preparation water.
+
+### All three stock references and their independent contents
+
+identity: concern. Targets: CultureMech:008125.
+
+MediaDive 5342/5343/6218 and their named local files all resolve. Their ingredient inventories disprove the NBRC group assignments. For dependency context, 5342 and 5343 local stock concentrations are half the amounts supported by their explicit 500 ml final volume; 6218 concentrations and literal existing excerpts match its API. Fixing unrelated stock concentrations would not fix these wrong receiving-medium links.
+
+[{"field_path": "composition[0].concentration", "compound": "Yeast extract", "current": {"value": "2", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[0]", "source_basis_g_per_l": "4", "calculation": "2 g / (500 ml /1000) = 4 g/L", "current_value_matches_source_basis": false, "scope": "Standalone MediaDive5342 only; this composition is not an NBRC383 stock."}, {"field_path": "composition[1].concentration", "compound": "Casamino acids", "current": {"value": "2", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[1]", "source_basis_g_per_l": "4", "calculation": "2 g / (500 ml /1000) = 4 g/L", "current_value_matches_source_basis": false, "scope": "Standalone MediaDive5342 only; this composition is not an NBRC383 stock."}, {"field_path": "composition[2].concentration", "compound": "Na glutamate", "current": {"value": "1", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[2]", "source_basis_g_per_l": "2", "calculation": "1 g / (500 ml /1000) = 2 g/L", "current_value_matches_source_basis": false, "scope": "Standalone MediaDive5342 only; this composition is not an NBRC383 stock."}, {"field_path": "composition[3].concentration", "compound": "Trisodium citrate x 2 H2O", "current": {"value": "3", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[3]", "source_basis_g_per_l": "6", "calculation": "3 g / (500 ml /1000) = 6 g/L", "current_value_matches_source_basis": false, "scope": "Standalone MediaDive5342 only; this composition is not an NBRC383 stock."}, {"field_path": "composition[4].concentration", "compound": "MgSO4 x 7 H2O", "current": {"value": "0.1", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[4]", "source_basis_g_per_l": "0.2", "calculation": "0.1 g / (500 ml /1000) = 0.2 g/L", "current_value_matches_source_basis": false, "scope": "Standalone MediaDive5342 only; this composition is not an NBRC383 stock."}, {"field_path": "composition[5].concentration", "compound": "CaSO4 x 2 H2O", "current": {"value": "0.1", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[5]", "source_basis_g_per_l": "0.2", "calculation": "0.1 g / (500 ml /1000) = 0.2 g/L", "current_value_matches_source_basis": false, "scope": "Standalone MediaDive5342 only; this composition is not an NBRC383 stock."}, {"field_path": "composition[6].concentration", "compound": "KCl", "current": {"value": "1", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[6]", "source_basis_g_per_l": "2", "calculation": "1 g / (500 ml /1000) = 2 g/L", "current_value_matches_source_basis": false, "scope": "Standalone MediaDive5342 only; this composition is not an NBRC383 stock."}, {"field_path": "composition[7].concentration", "compound": "NaCl", "current": {"value": "100", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[7]", "source_basis_g_per_l": "2.0E+2", "calculation": "100 g / (500 ml /1000) = 2.0E+2 g/L", "current_value_matches_source_basis": false, "scope": "Standalone MediaDive5342 only; this composition is not an NBRC383 stock."}, {"field_path": "composition[0].concentration", "compound": "Na2CO3", "current": {"value": "80", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[0]", "source_basis_g_per_l": "1.6E+2", "calculation": "80 g / (500 ml /1000) = 1.6E+2 g/L", "current_value_matches_source_basis": false, "scope": "Standalone MediaDive5343 only; this composition is not an NBRC383 stock."}, {"field_path": "composition[1].concentration", "compound": "NaCl", "current": {"value": "100", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[1]", "source_basis_g_per_l": "2.0E+2", "calculation": "100 g / (500 ml /1000) = 2.0E+2 g/L", "current_value_matches_source_basis": false, "scope": "Standalone MediaDive5343 only; this composition is not an NBRC383 stock."}, {"field_path": "composition[0].concentration", "compound": "NaNO3", "current": {"value": "200", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[0]", "source_basis_g_per_l": "200", "calculation": "Provider explicitly reports g_l=200; amount=200 g, declared solution volume1000 ml.", "current_value_matches_source_basis": true, "scope": "Standalone MediaDive6218 only; this composition is not an NBRC383 stock."}, {"field_path": "composition[1].concentration", "compound": "Na2HPO4", "current": {"value": "2", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[1]", "source_basis_g_per_l": "2", "calculation": "Provider explicitly reports g_l=2; amount=2 g, declared solution volume1000 ml.", "current_value_matches_source_basis": true, "scope": "Standalone MediaDive6218 only; this composition is not an NBRC383 stock."}]
+
+### Primary chemical identities and mixture boundaries
+
+grounding: supported. Targets: CultureMech:008125.
+
+Eight primary CHEBI IDs have canonical labels and retain the supplied hydrate forms. Six secondary keys resolve in the pinned MIM index: primary 8/10 and secondary 6/10 direct-ingredient linkage, not accuracy scores. Commercial peptone, yeast and bonito extract remain mixtures. Stock accession identity is independently wrong despite valid chemical IDs.
+
+### Separate preparation and approximate endpoint
+
+completeness: concern. Targets: CultureMech:008125.
+
+Both local files omit separate A/B autoclaving, aseptic mixing, unadjusted initial pH and approximate final pH 8.5. The primary source specifies no autoclave temperature/time; do not borrow those from unrelated MediaDive stocks or turn the final pH into an adjustment instruction.
+
+### Commercial ingredients, agar/broth alternatives and imported annotations
+
+scope: concern. Targets: CultureMech:008125.
+
+Hipolypepton and Extract Bonito are 5 g commercial ingredients in A, not preprepared stocks with empty compositions. Both source title and optional agar cover broth and agar presentations; SOLID_AGAR chooses only one. Role/property notes are provider annotations, not experimental role evidence. COMPLEX/UNDEFINED is supported; generic microbial cultivation establishes no strain-specific growth. Preserve the Wako/Nihon seiyaku supplier discrepancy without choosing a catalog product.
+
+### Source evidence and transformation history
+
+provenance: concern. Targets: CultureMech:008125.
+
+Every target/owner history timestamp has a timezone. The duplicate-water note explicitly records 900+100+1, and history records migration of five solutions. Neither local record carries narrow concentration evidence or a reference list. Passing reference validation cannot verify missing excerpts. Current importer improvements do not establish corrected legacy output.
+
+## Findings
+
+### f1: Three stock references identify unrelated formulations
+
+blocker / open / confirmed; issue key: CM008125-wrong-stock-identities.
+
+Names A, B and salt solution were linked to MediaDive 5342, 5343 and 6218, whose inspected inventories differ from NBRC 383. Resolution alone is not identity validation.
+
+### f2: Undiluted stock salts are asserted at medium scope
+
+blocker / open / confirmed; issue key: CM008125-stock-scope-loss.
+
+The Mg/Fe/Mn 40/2/2 g amounts describe a separate salt-stock batch, of which only 5 ml is used in A. Both local layers instead assert 40/2/2 g/L as direct medium ingredients alongside a wrong stock link.
+
+### f3: Mixed water numerals and stock volumes became mass concentrations
+
+major / open / confirmed; issue key: CM008125-water-and-dose-units.
+
+The water note sums 900 ml, 100 ml and 1 L across separate stages as 1001 g/L. A/B 900/100 ml and salt-stock 5 ml are also encoded as g/L.
+
+### f4: Commercial nutrients are represented as empty stock solutions
+
+major / open / confirmed; issue key: CM008125-commercial-ingredient-wrappers.
+
+Hipolypepton and Extract Bonito are source ingredients, each 5 g in A, but were moved into empty compositions with Unknown solution names. A footnote marker does not establish a stock.
+
+### f5: Batch masses lack an established final-concentration basis
+
+major / open / confirmed; issue key: CM008125-final-volume-basis.
+
+The six other direct solute amounts preserve source numerals but assert g/L without retaining their A/B batch basis or a verified final-volume closure.
+
+### f6: Source preparation and approximate pH are omitted
+
+major / open / confirmed; issue key: CM008125-preparation-missing.
+
+Both layers omit separate autoclaving and aseptic combination, unadjusted initial pH and approximate final pH 8.5.
+
+### f7: Optional agar is not represented as a complete broth/agar choice
+
+minor / open / confirmed; issue key: CM008125-broth-agar-boundary.
+
+The title and agar label preserve an optional solidifier, but the structured state is only SOLID_AGAR.
+
+### f8: Commercial-product supplier context remains unresolved
+
+minor / open / confirmed; issue key: CM008125-supplier-conflict.
+
+NBRC and the TOGO comment name Wako for asterisked products, whereas TOGO labels Hipolypepton as Nihon seiyaku. Both local files omit this distinction.
+
+### f9: Source URLs lack claim-level formulation evidence
+
+minor / open / confirmed; issue key: CM008125-claim-evidence-gap.
+
+Notes identify the source but no exact ingredient/stock/preparation evidence or reference list accompanies the formulation.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Detach the three incorrect IDs and local-file notes. Represent the exact NBRC groups with source-specific nested composition or supported source-batch notes. Do not overwrite or repurpose unrelated stock records.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Restore nested stock and receiving-dose boundaries with exact source evidence. Remove undiluted direct assertions and avoid double counting. Resolve final-volume basis before asserting a derived receiving concentration.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Restore volume units and preparation stages. Retain literal source amounts; do not infer water mass, density or an unstated final-volume closure.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Restore these named commercial materials as ingredients in A, preserving source amount and supplier uncertainty; use no invented stock composition.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a5
+
+Preserve source masses and stage-specific water/dose context with exact evidence. Resolve the denominator or retain explicitly qualified batch notes; report the grams-per-batch representation gap instead of inventing a field.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a6
+
+Restore these exact preparation boundaries and approximate endpoint without inventing autoclave conditions or pH-adjustment reagents.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a7
+
+Represent or clearly delimit the supported agar and broth alternatives while preserving the 15 g optional source amount.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a8
+
+Preserve both source statements and their locators; resolve product identity before asserting supplier equivalence or substitution.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a9
+
+Add verified source metadata and exact short excerpts at the narrowest supported claims; stock-use evidence belongs at enclosing recipe scope with precise field paths.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/2_5_nacl_gypfk_agar_broth.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/2_5_nacl_gypfk_agar_broth.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/2_5_nacl_gypfk_agar_broth.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/2_5_nacl_gypfk_agar_broth.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch009/081/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-009/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch009/081/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/2_5_nacl_gypfk_agar_broth.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/2_5_nacl_gypfk_agar_broth.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/2_5_nacl_gypfk_agar_broth.yaml:1:id: CultureMech:008125<br>./data/normalized_yaml/bacterial/2_5_nacl_gypfk_agar_broth.yaml:1:id: CultureMech:008125<br> |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:131527 resolves to dipotassium hydrogen phosphate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:15377 resolves to water and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi17234 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:17234 resolves to glucose and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:26710 resolves to sodium chloride and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:29377 resolves to sodium carbonate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi75836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:75836 resolves to iron(2+) sulfate heptahydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi86358 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86358; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:86358 resolves to manganese(II) sulfate tetrahydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; All live preferred-term rows for asserted secondary CHEBI keys; metadata captured | supports | {"CHEBI:15377": [{"label": "Distilled water", "match_type": "preferred_term", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:131527": [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17234": [{"label": "Glucose", "match_type": "preferred_term", "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:29377": [{"label": "Na2CO3", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Na2CO3", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium carbonate solution", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Sodium carbonate solution", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4\u00b7H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4\u00b7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}]} |
+| nbrc | https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=383; Medium 383; Solution A/B; salt-stock table; preparation and supplier footnote | supports | Complete primary recipe read: A contains glucose 10 g, Hipolypepton 5 g, yeast extract 5 g, Extract Bonito 5 g, NaCl 25 g, K2HPO4 10 g, salt stock 5 ml, optional agar 15 g and water 900 ml. B contains Na2CO3 3 g and water 100 ml. The separate salt stock contains MgSO4 heptahydrate 40 g, MnSO4 tetrahydrate 2 g, FeSO4 heptahydrate 2 g and water 1 L. A/B are unadjusted, autoclaved separately and mixed aseptically; resulting pH is approximate. |
+| togo | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1576; meta; components[0:4]; comments | supports | Complete response identifies NBRC_M383 and preserves four component groups, source preparation comments and supplier footnote. Its primary group separately declares A 900 ml and B 100 ml. The Hipolypepton ontology label names Nihon seiyaku while its retained primary footnote names Wako. |
+| stock5342 | https://mediadive.dsmz.de/rest/solution/5342; data.id; recipe; volume; steps | supports | Eight components include casamino acids, glutamate, citrate dihydrate and calcium sulfate, unlike NBRC 383 A. All source masses are per explicit 500 ml final stock volume. |
+| stock5343 | https://mediadive.dsmz.de/rest/solution/5343; data.id; recipe; volume; steps | supports | Contains Na2CO3 80 g and NaCl 100 g, made to 500 ml, unlike NBRC 383 B with carbonate 3 g and water 100 ml. |
+| stock6218 | https://mediadive.dsmz.de/rest/solution/6218; data.id; recipe; volume; steps | supports | Contains sodium nitrate 200 g/L and disodium hydrogenphosphate 2 g/L, unlike the magnesium/manganese/iron sulfate salt stock in NBRC 383. |
+| trace | Complete target, maintained owner and captured NBRC/TOGO tables; All 10 ingredient amounts and five solution entries; conditional arithmetic; every target/owner history timestamp | supports | {"nodes": [{"field_path": "ingredients[0]", "ingredient": "Distilled water", "current_concentration": {"value": "1001.0", "unit": "G_PER_L"}, "term": {"id": "CHEBI:15377", "label": "water"}, "assessment": "incorrect unit, mixed unit arithmetic, and loss of stock boundary", "explanation": "The stored1001 is explicitly explained as900+100+1 in the duplicate-merge note. These source numerals use ml, ml, and L, and the1 L belongs to preparation of a separate stock; they cannot be summed as receiving-medium grams per liter."}, {"field_path": "ingredients[1]", "ingredient": "Yeast extract", "current_concentration": {"value": "5", "unit": "G_PER_L"}, "term": null, "source_group": "Solution A", "source_mass_g_per_prescribed_batch": "5", "assessment": "source mass is supported; exact final-medium denominator remains unstated", "arithmetic": "C_medium = 5 g / V_medium_L; equals5 g/L only if V_medium=1 L."}, {"field_path": "ingredients[2]", "ingredient": "NaCl", "current_concentration": {"value": "25", "unit": "G_PER_L"}, "term": {"id": "CHEBI:26710", "label": "sodium chloride"}, "source_group": "Solution A", "source_mass_g_per_prescribed_batch": "25", "assessment": "source mass is supported; exact final-medium denominator remains unstated", "arithmetic": "C_medium = 25 g / V_medium_L; equals25 g/L only if V_medium=1 L."}, {"field_path": "ingredients[3]", "ingredient": "K2HPO4", "current_concentration": {"value": "10", "unit": "G_PER_L"}, "term": {"id": "CHEBI:131527", "label": "dipotassium hydrogen phosphate"}, "source_group": "Solution A", "source_mass_g_per_prescribed_batch": "10", "assessment": "source mass is supported; exact final-medium denominator remains unstated", "arithmetic": "C_medium = 10 g / V_medium_L; equals10 g/L only if V_medium=1 L."}, {"field_path": "ingredients[4]", "ingredient": "Glucose", "current_concentration": {"value": "10", "unit": "G_PER_L"}, "term": {"id": "CHEBI:17234", "label": "glucose"}, "source_group": "Solution A", "source_mass_g_per_prescribed_batch": "10", "assessment": "source mass is supported; exact final-medium denominator remains unstated", "arithmetic": "C_medium = 10 g / V_medium_L; equals10 g/L only if V_medium=1 L."}, {"field_path": "ingredients[5]", "ingredient": "Agar (if needed)", "current_concentration": {"value": "15", "unit": "G_PER_L"}, "term": null, "source_group": "Solution A", "source_mass_g_per_prescribed_batch": "15", "assessment": "source mass is supported; exact final-medium denominator remains unstated", "arithmetic": "C_medium = 15 g / V_medium_L; equals15 g/L only if V_medium=1 L."}, {"field_path": "ingredients[6]", "ingredient": "Na2CO3", "current_concentration": {"value": "3", "unit": "G_PER_L"}, "term": {"id": "CHEBI:29377", "label": "sodium carbonate"}, "source_group": "Solution B", "source_mass_g_per_prescribed_batch": "3", "assessment": "source mass is supported; exact final-medium denominator remains unstated", "arithmetic": "C_medium = 3 g / V_medium_L; equals3 g/L only if V_medium=1 L."}, {"field_path": "ingredients[7]", "ingredient": "MgSO4·7H2O", "current_concentration": {"value": "40", "unit": "G_PER_L"}, "term": {"id": "CHEBI:31795", "label": "magnesium sulfate heptahydrate"}, "source_group": "**Salt solution", "source_mass_g_per_stock_batch": "40", "assessment": "stock-batch amount has been asserted as final-medium concentration", "arithmetic": "For actual stock final volume V_stock_L, C_stock=40/V_stock_L g/L;5 ml delivers(40*0.005/V_stock_L) g. Final concentration=(40*0.005/(V_stock_L*V_medium_L)) g/L.", "conditional_nominal_case": {"assumptions": ["stock final volume=1 L", "medium final volume=1 L"], "delivered_mass_g": "0.2", "medium_g_per_l": "0.2", "ratio_current_to_conditional_nominal": "200"}}, {"field_path": "ingredients[8]", "ingredient": "FeSO4·7H2O", "current_concentration": {"value": "2", "unit": "G_PER_L"}, "term": {"id": "CHEBI:75836", "label": "iron(2+) sulfate heptahydrate"}, "source_group": "**Salt solution", "source_mass_g_per_stock_batch": "2", "assessment": "stock-batch amount has been asserted as final-medium concentration", "arithmetic": "For actual stock final volume V_stock_L, C_stock=2/V_stock_L g/L;5 ml delivers(2*0.005/V_stock_L) g. Final concentration=(2*0.005/(V_stock_L*V_medium_L)) g/L.", "conditional_nominal_case": {"assumptions": ["stock final volume=1 L", "medium final volume=1 L"], "delivered_mass_g": "0.01", "medium_g_per_l": "0.01", "ratio_current_to_conditional_nominal": "200"}}, {"field_path": "ingredients[9]", "ingredient": "MnSO4·4H2O", "current_concentration": {"value": "2", "unit": "G_PER_L"}, "term": {"id": "CHEBI:86358", "label": "manganese(II) sulfate tetrahydrate"}, "source_group": "**Salt solution", "source_mass_g_per_stock_batch": "2", "assessment": "stock-batch amount has been asserted as final-medium concentration", "arithmetic": "For actual stock final volume V_stock_L, C_stock=2/V_stock_L g/L;5 ml delivers(2*0.005/V_stock_L) g. Final concentration=(2*0.005/(V_stock_L*V_medium_L)) g/L.", "conditional_nominal_case": {"assumptions": ["stock final volume=1 L", "medium final volume=1 L"], "delivered_mass_g": "0.01", "medium_g_per_l": "0.01", "ratio_current_to_conditional_nominal": "200"}}, {"field_path": "solutions[0]", "solution": "Solution A", "current_concentration": {"value": "900", "unit": "G_PER_L"}, "term": {"id": "mediadive.solution:5342", "label": "Solution A"}, "name": "Unknown solution", "assessment": "wrong stock accession and volume-to-mass unit corruption", "provider_locator": "$.components[0].items[0]", "source_key": "togoM1576api", "source_addition": {"value": "900", "unit": "ml"}, "primary_provider_distinction": "NBRC states water amounts within A/B and says to combine them; TOGO separately materializes900/100 ml A/B addition rows. Do not silently treat the two kinds of volume as identical measured final solutions."}, {"field_path": "solutions[1]", "solution": "Solution B", "current_concentration": {"value": "100", "unit": "G_PER_L"}, "term": {"id": "mediadive.solution:5343", "label": "Solution B"}, "name": "Unknown solution", "assessment": "wrong stock accession and volume-to-mass unit corruption", "provider_locator": "$.components[0].items[1]", "source_key": "togoM1576api", "source_addition": {"value": "100", "unit": "ml"}, "primary_provider_distinction": "NBRC states water amounts within A/B and says to combine them; TOGO separately materializes900/100 ml A/B addition rows. Do not silently treat the two kinds of volume as identical measured final solutions."}, {"field_path": "solutions[2]", "solution": "Hipolypepton*", "current_concentration": {"value": "5", "unit": "G_PER_L"}, "term": null, "name": "Unknown solution", "assessment": "commercial ingredient is represented as an empty stock solution", "source_mass_g_per_A_batch": "5"}, {"field_path": "solutions[3]", "solution": "Extract Bonito*", "current_concentration": {"value": "5", "unit": "G_PER_L"}, "term": null, "name": "Unknown solution", "assessment": "commercial ingredient is represented as an empty stock solution", "source_mass_g_per_A_batch": "5"}, {"field_path": "solutions[4]", "solution": "Salt solution**", "current_concentration": {"value": "5", "unit": "G_PER_L"}, "term": {"id": "mediadive.solution:6218", "label": "Salt solution"}, "name": "Unknown solution", "assessment": "wrong stock accession, missing correct composition, and volume-to-mass unit corruption", "provider_locator": "$.components[1].items[8]", "source_key": "togoM1576api"}], "history": [{"layer": "target", "index": 0, "timestamp": "2026-01-27T06:35:57.868410Z"}, {"layer": "target", "index": 1, "timestamp": "2026-01-28T19:48:17.528024Z"}, {"layer": "target", "index": 2, "timestamp": "2026-03-09T08:04:29.030591+00:00"}, {"layer": "target", "index": 3, "timestamp": "2026-03-13T03:08:57.866128Z"}, {"layer": "target", "index": 4, "timestamp": "2026-03-13T06:19:53.681574Z"}, {"layer": "target", "index": 5, "timestamp": "2026-03-14T00:00:00+00:00"}, {"layer": "target", "index": 6, "timestamp": "2026-03-17T06:30:02.000000Z"}, {"layer": "target", "index": 7, "timestamp": "2026-03-17T19:46:12.229420+00:00"}, {"layer": "target", "index": 8, "timestamp": "2026-05-16T09:02:58.224213+00:00"}, {"layer": "target", "index": 9, "timestamp": "2026-06-05T07:40:15.730395+00:00"}, {"layer": "target", "index": 10, "timestamp": "2026-06-10T06:57:12.473132+00:00"}, {"layer": "target", "index": 11, "timestamp": "2026-06-10T07:46:42.530103+00:00"}, {"layer": "target", "index": 12, "timestamp": "2026-08-06T03:04:33.986881+00:00"}, {"layer": "owner", "index": 0, "timestamp": "2026-01-27T06:35:57.868410Z"}, {"layer": "owner", "index": 1, "timestamp": "2026-01-28T19:48:17.528024Z"}, {"layer": "owner", "index": 2, "timestamp": "2026-03-09T08:04:29.030591+00:00"}, {"layer": "owner", "index": 3, "timestamp": "2026-03-13T03:08:57.866128Z"}, {"layer": "owner", "index": 4, "timestamp": "2026-03-13T06:19:53.681574Z"}, {"layer": "owner", "index": 5, "timestamp": "2026-03-14T00:00:00+00:00"}, {"layer": "owner", "index": 6, "timestamp": "2026-03-17T06:30:02.000000Z"}, {"layer": "owner", "index": 7, "timestamp": "2026-03-17T19:46:12.229420+00:00"}, {"layer": "owner", "index": 8, "timestamp": "2026-05-16T09:02:58.224213+00:00"}, {"layer": "owner", "index": 9, "timestamp": "2026-06-05T07:40:15.730395+00:00"}, {"layer": "owner", "index": 10, "timestamp": "2026-06-10T06:57:12.473132+00:00"}, {"layer": "owner", "index": 11, "timestamp": "2026-06-10T07:46:42.530103+00:00"}]} |
+| stock-context | data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml; mediadive_5343_Solution_B.yaml; mediadive_6218_Salt_solution.yaml; Three complete dependency files and all 12 composition rows; hashes captured as inspection context | supports | {"rows": [{"field_path": "composition[0].concentration", "compound": "Yeast extract", "current": {"value": "2", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[0]", "source_basis_g_per_l": "4", "calculation": "2 g / (500 ml /1000) = 4 g/L", "current_value_matches_source_basis": false, "scope": "Standalone MediaDive5342 only; this composition is not an NBRC383 stock."}, {"field_path": "composition[1].concentration", "compound": "Casamino acids", "current": {"value": "2", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[1]", "source_basis_g_per_l": "4", "calculation": "2 g / (500 ml /1000) = 4 g/L", "current_value_matches_source_basis": false, "scope": "Standalone MediaDive5342 only; this composition is not an NBRC383 stock."}, {"field_path": "composition[2].concentration", "compound": "Na glutamate", "current": {"value": "1", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[2]", "source_basis_g_per_l": "2", "calculation": "1 g / (500 ml /1000) = 2 g/L", "current_value_matches_source_basis": false, "scope": "Standalone MediaDive5342 only; this composition is not an NBRC383 stock."}, {"field_path": "composition[3].concentration", "compound": "Trisodium citrate x 2 H2O", "current": {"value": "3", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[3]", "source_basis_g_per_l": "6", "calculation": "3 g / (500 ml /1000) = 6 g/L", "current_value_matches_source_basis": false, "scope": "Standalone MediaDive5342 only; this composition is not an NBRC383 stock."}, {"field_path": "composition[4].concentration", "compound": "MgSO4 x 7 H2O", "current": {"value": "0.1", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[4]", "source_basis_g_per_l": "0.2", "calculation": "0.1 g / (500 ml /1000) = 0.2 g/L", "current_value_matches_source_basis": false, "scope": "Standalone MediaDive5342 only; this composition is not an NBRC383 stock."}, {"field_path": "composition[5].concentration", "compound": "CaSO4 x 2 H2O", "current": {"value": "0.1", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[5]", "source_basis_g_per_l": "0.2", "calculation": "0.1 g / (500 ml /1000) = 0.2 g/L", "current_value_matches_source_basis": false, "scope": "Standalone MediaDive5342 only; this composition is not an NBRC383 stock."}, {"field_path": "composition[6].concentration", "compound": "KCl", "current": {"value": "1", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[6]", "source_basis_g_per_l": "2", "calculation": "1 g / (500 ml /1000) = 2 g/L", "current_value_matches_source_basis": false, "scope": "Standalone MediaDive5342 only; this composition is not an NBRC383 stock."}, {"field_path": "composition[7].concentration", "compound": "NaCl", "current": {"value": "100", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[7]", "source_basis_g_per_l": "2.0E+2", "calculation": "100 g / (500 ml /1000) = 2.0E+2 g/L", "current_value_matches_source_basis": false, "scope": "Standalone MediaDive5342 only; this composition is not an NBRC383 stock."}, {"field_path": "composition[0].concentration", "compound": "Na2CO3", "current": {"value": "80", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[0]", "source_basis_g_per_l": "1.6E+2", "calculation": "80 g / (500 ml /1000) = 1.6E+2 g/L", "current_value_matches_source_basis": false, "scope": "Standalone MediaDive5343 only; this composition is not an NBRC383 stock."}, {"field_path": "composition[1].concentration", "compound": "NaCl", "current": {"value": "100", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[1]", "source_basis_g_per_l": "2.0E+2", "calculation": "100 g / (500 ml /1000) = 2.0E+2 g/L", "current_value_matches_source_basis": false, "scope": "Standalone MediaDive5343 only; this composition is not an NBRC383 stock."}, {"field_path": "composition[0].concentration", "compound": "NaNO3", "current": {"value": "200", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[0]", "source_basis_g_per_l": "200", "calculation": "Provider explicitly reports g_l=200; amount=200 g, declared solution volume1000 ml.", "current_value_matches_source_basis": true, "scope": "Standalone MediaDive6218 only; this composition is not an NBRC383 stock."}, {"field_path": "composition[1].concentration", "compound": "Na2HPO4", "current": {"value": "2", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[1]", "source_basis_g_per_l": "2", "calculation": "Provider explicitly reports g_l=2; amount=2 g, declared solution volume1000 ml.", "current_value_matches_source_basis": true, "scope": "Standalone MediaDive6218 only; this composition is not an NBRC383 stock."}], "boundary": "Dependency context only. These stocks are not additional review targets and must not be repurposed as NBRC stocks."} |
+| transform | scripts/migrate_solutions_from_ingredients.py; src/culturemech/import/togo_importer.py; SOLUTION_PATTERNS; _resolve_solution; _extract_primary_components; _parse_unit; _convert_to_culturemech | supports | The migration recognizes terminal asterisks and assigns stock IDs by cleaned name without source-formulation comparison. Current TOGO code distinguishes primary/local-stock sections and volume units; it was inspected, not executed. Recorded history supports a prior migration, not a reconstructed execution trace or proof that every current import path repeats these defects. |
+| schema-context | src/culturemech/schema/culturemech.yaml; IngredientDescriptor; SolutionDescriptor; ConcentrationUnitEnum | supports | Nested solutions and compositions are available. L represents volume-only entries; the enum has no grams-per-batch amount. Preserve unsupported-denominator masses in evidence/notes rather than inventing a new field or forced concentration. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Only CultureMech:008125 is the reviewed target. The three referenced stock files are inspected dependency context, not additional reviewed records or authorized edits. Their independent defects require separate curation.
+- The source does not establish exact final stock/medium volumes, supplier equivalence, autoclave time/temperature or organism-specific growth. Conditional dilution values are not verified replacement concentrations. No importer, migration, merger or culture protocol was executed.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T074746Z-culturemech-008125-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: 2_5_nacl_gypfk_agar_broth (CultureMech:008125)'
+started_at: '2026-10-21T07:45:12Z'
+finished_at: '2026-10-21T07:47:46Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: TOGO M1576 identifies NBRC 383, but both local layers attach three unrelated
+  MediaDive stocks, flatten the true salt-stock amounts into medium ingredients, and
+  mix water volumes into a mass concentration. Two commercial ingredients are empty
+  solution wrappers. Source preparation, approximate pH and agar/broth scope also
+  need restoration; exact final-volume and supplier ambiguities remain explicit.
+source:
+  git_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/2_5_nacl_gypfk_agar_broth.yaml
+    sha256: 190eb5178510ec6ef03cab4ccd3378d7caef30ca727e3e59d726625442015d5e
+    role: target
+  - path: data/normalized_yaml/bacterial/2_5_nacl_gypfk_agar_broth.yaml
+    sha256: 91058cbd11f9fd838c4e28ba24e5ef15e40e418a548636d9e7b2af23570e2d61
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml
+    sha256: fbc65564968b86b312f7795ff5c4527f199c51d04dc2764452d46bb5ba339566
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_5343_Solution_B.yaml
+    sha256: 84a4c07adfb1f11f32159a52f5e575738eb641428074b0958a68b8d5ba265ba5
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_6218_Salt_solution.yaml
+    sha256: a6bd29763185c24408b666783bc9b360d7f70c5c5c72a85c75ece27d01558a8b
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/dedupe_identical_ingredients.py
+    sha256: 1aa07dbcab409f8b1efa9bfac027827dc75ca2acb3a54c4aabda349564804120
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 81; batch 009 item 1 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding eight task batches contain
+    80 ledger-owned validated record reviews; their complete validated lists also
+    retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+    contains 40 validated baseline bundles covering 2 current merged paths. Unioning
+    all prior lists with this baseline covers 82 of 6320 current merged paths, including
+    2 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:008125
+targets:
+- target_id: CultureMech:008125
+  path: data/merge_yaml/merged/2_5_nacl_gypfk_agar_broth.yaml
+  label: 2_5_nacl_gypfk_agar_broth
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2_5_nacl_gypfk_agar_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/2_5_nacl_gypfk_agar_broth.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:008125
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/2_5_nacl_gypfk_agar_broth.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch009/081/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-009/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch009/081/strict.tsv"
+  target_ids:
+  - CultureMech:008125
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/2_5_nacl_gypfk_agar_broth.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:008125
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/2_5_nacl_gypfk_agar_broth.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:008125
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:008125
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/2_5_nacl_gypfk_agar_broth.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T07:47:44Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/2_5_nacl_gypfk_agar_broth.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T07:47:44Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/2_5_nacl_gypfk_agar_broth.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T07:45:53.384937Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/2_5_nacl_gypfk_agar_broth.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch009/081/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T07:45:57.403771Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-009/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch009/081/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/2_5_nacl_gypfk_agar_broth.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T07:46:02.839406Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/2_5_nacl_gypfk_agar_broth.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T07:46:05.604323Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T07:47:44Z'
+  support: supports
+  summary: './data/merge_yaml/merged/2_5_nacl_gypfk_agar_broth.yaml:1:id: CultureMech:008125
+
+    ./data/normalized_yaml/bacterial/2_5_nacl_gypfk_agar_broth.yaml:1:id: CultureMech:008125
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T07:31:15.193155Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T07:31:15.205780Z'
+  support: supports
+  summary: CHEBI:15377 resolves to water and is not obsolete. This verifies the asserted
+    generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond
+    the record is inferred.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi17234
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T07:31:15.211005Z'
+  support: supports
+  summary: CHEBI:17234 resolves to glucose and is not obsolete. This verifies the
+    asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: e3b9cbcd7b1e08bb05564cf82f924b29c554767e9b40bf1e4c85ab1bce09330f
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T07:31:15.881003Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride and is not obsolete. This verifies
+    the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi29377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T07:31:16.500548Z'
+  support: supports
+  summary: CHEBI:29377 resolves to sodium carbonate and is not obsolete. This verifies
+    the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: 21ae6468f9d087fd7930a263fc44728e31a8babde3576135686278a13bc1d6e1
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T07:31:16.624783Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi75836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T07:31:18.402233Z'
+  support: supports
+  summary: CHEBI:75836 resolves to iron(2+) sulfate heptahydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: chebi86358
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86358
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T07:31:18.556599Z'
+  support: supports
+  summary: CHEBI:86358 resolves to manganese(II) sulfate tetrahydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 072159a9c46c0968f25bba11a0baf83019fabb4f6f296084d2b3ef7ee1cc360c
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: All live preferred-term rows for asserted secondary CHEBI keys; metadata
+    captured
+  accessed_at: '2026-10-21T07:47:44Z'
+  support: supports
+  summary: '{"CHEBI:15377": [{"label": "Distilled water", "match_type": "preferred_term",
+    "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id":
+    "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26710":
+    [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710",
+    "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:131527": [{"label": "K2HPO4", "match_type": "preferred_term",
+    "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17234": [{"label":
+    "Glucose", "match_type": "preferred_term", "identifier": "CHEBI:17234", "preferred_term":
+    "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:29377": [{"label": "Na2CO3", "match_type": "preferred_term",
+    "identifier": "CHEBI:29377", "preferred_term": "Na2CO3", "ontology_id": "CHEBI:29377",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium carbonate
+    solution", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term":
+    "Sodium carbonate solution", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "MgSO4\u00b7H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4\u00b7H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}'
+- evidence_id: nbrc
+  kind: primary_source
+  reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=383
+  locator: Medium 383; Solution A/B; salt-stock table; preparation and supplier footnote
+  accessed_at: '2026-10-21T07:31:18.791774Z'
+  support: supports
+  summary: 'Complete primary recipe read: A contains glucose 10 g, Hipolypepton 5
+    g, yeast extract 5 g, Extract Bonito 5 g, NaCl 25 g, K2HPO4 10 g, salt stock 5
+    ml, optional agar 15 g and water 900 ml. B contains Na2CO3 3 g and water 100 ml.
+    The separate salt stock contains MgSO4 heptahydrate 40 g, MnSO4 tetrahydrate 2
+    g, FeSO4 heptahydrate 2 g and water 1 L. A/B are unadjusted, autoclaved separately
+    and mixed aseptically; resulting pH is approximate.'
+  quote: Final pH around 8.5.
+  snapshot_sha256: 482fb255a8075d6f229f18a094e25dfe0cec7de94807bde7598dd26cd62bf72a
+- evidence_id: togo
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1576
+  locator: meta; components[0:4]; comments
+  accessed_at: '2026-10-21T07:31:14.493795Z'
+  support: supports
+  summary: Complete response identifies NBRC_M383 and preserves four component groups,
+    source preparation comments and supplier footnote. Its primary group separately
+    declares A 900 ml and B 100 ml. The Hipolypepton ontology label names Nihon seiyaku
+    while its retained primary footnote names Wako.
+  snapshot_sha256: d377ce4dfcf34127e9b303cad1f118a26d47573de9207ea88b07169dd583d754
+- evidence_id: stock5342
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/5342
+  locator: data.id; recipe; volume; steps
+  accessed_at: '2026-10-21T07:31:13.269119Z'
+  support: supports
+  summary: Eight components include casamino acids, glutamate, citrate dihydrate and
+    calcium sulfate, unlike NBRC 383 A. All source masses are per explicit 500 ml
+    final stock volume.
+  snapshot_sha256: 4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240
+- evidence_id: stock5343
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/5343
+  locator: data.id; recipe; volume; steps
+  accessed_at: '2026-10-21T07:31:13.547266Z'
+  support: supports
+  summary: Contains Na2CO3 80 g and NaCl 100 g, made to 500 ml, unlike NBRC 383 B
+    with carbonate 3 g and water 100 ml.
+  snapshot_sha256: 28c315b1d9cf9a5c19f4d79c639298f5818c06ea87462c84336f66297d20f4c0
+- evidence_id: stock6218
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/6218
+  locator: data.id; recipe; volume; steps
+  accessed_at: '2026-10-21T07:31:13.909944Z'
+  support: supports
+  summary: Contains sodium nitrate 200 g/L and disodium hydrogenphosphate 2 g/L, unlike
+    the magnesium/manganese/iron sulfate salt stock in NBRC 383.
+  snapshot_sha256: 6d7a4513398d539fcc39302400c78f04ac2bb3fcf4ac4e1f0555eb84dccaa188
+- evidence_id: trace
+  kind: validation
+  reference: Complete target, maintained owner and captured NBRC/TOGO tables
+  locator: All 10 ingredient amounts and five solution entries; conditional arithmetic;
+    every target/owner history timestamp
+  accessed_at: '2026-10-21T07:47:44Z'
+  support: supports
+  summary: '{"nodes": [{"field_path": "ingredients[0]", "ingredient": "Distilled water",
+    "current_concentration": {"value": "1001.0", "unit": "G_PER_L"}, "term": {"id":
+    "CHEBI:15377", "label": "water"}, "assessment": "incorrect unit, mixed unit arithmetic,
+    and loss of stock boundary", "explanation": "The stored1001 is explicitly explained
+    as900+100+1 in the duplicate-merge note. These source numerals use ml, ml, and
+    L, and the1 L belongs to preparation of a separate stock; they cannot be summed
+    as receiving-medium grams per liter."}, {"field_path": "ingredients[1]", "ingredient":
+    "Yeast extract", "current_concentration": {"value": "5", "unit": "G_PER_L"}, "term":
+    null, "source_group": "Solution A", "source_mass_g_per_prescribed_batch": "5",
+    "assessment": "source mass is supported; exact final-medium denominator remains
+    unstated", "arithmetic": "C_medium = 5 g / V_medium_L; equals5 g/L only if V_medium=1
+    L."}, {"field_path": "ingredients[2]", "ingredient": "NaCl", "current_concentration":
+    {"value": "25", "unit": "G_PER_L"}, "term": {"id": "CHEBI:26710", "label": "sodium
+    chloride"}, "source_group": "Solution A", "source_mass_g_per_prescribed_batch":
+    "25", "assessment": "source mass is supported; exact final-medium denominator
+    remains unstated", "arithmetic": "C_medium = 25 g / V_medium_L; equals25 g/L only
+    if V_medium=1 L."}, {"field_path": "ingredients[3]", "ingredient": "K2HPO4", "current_concentration":
+    {"value": "10", "unit": "G_PER_L"}, "term": {"id": "CHEBI:131527", "label": "dipotassium
+    hydrogen phosphate"}, "source_group": "Solution A", "source_mass_g_per_prescribed_batch":
+    "10", "assessment": "source mass is supported; exact final-medium denominator
+    remains unstated", "arithmetic": "C_medium = 10 g / V_medium_L; equals10 g/L only
+    if V_medium=1 L."}, {"field_path": "ingredients[4]", "ingredient": "Glucose",
+    "current_concentration": {"value": "10", "unit": "G_PER_L"}, "term": {"id": "CHEBI:17234",
+    "label": "glucose"}, "source_group": "Solution A", "source_mass_g_per_prescribed_batch":
+    "10", "assessment": "source mass is supported; exact final-medium denominator
+    remains unstated", "arithmetic": "C_medium = 10 g / V_medium_L; equals10 g/L only
+    if V_medium=1 L."}, {"field_path": "ingredients[5]", "ingredient": "Agar (if needed)",
+    "current_concentration": {"value": "15", "unit": "G_PER_L"}, "term": null, "source_group":
+    "Solution A", "source_mass_g_per_prescribed_batch": "15", "assessment": "source
+    mass is supported; exact final-medium denominator remains unstated", "arithmetic":
+    "C_medium = 15 g / V_medium_L; equals15 g/L only if V_medium=1 L."}, {"field_path":
+    "ingredients[6]", "ingredient": "Na2CO3", "current_concentration": {"value": "3",
+    "unit": "G_PER_L"}, "term": {"id": "CHEBI:29377", "label": "sodium carbonate"},
+    "source_group": "Solution B", "source_mass_g_per_prescribed_batch": "3", "assessment":
+    "source mass is supported; exact final-medium denominator remains unstated", "arithmetic":
+    "C_medium = 3 g / V_medium_L; equals3 g/L only if V_medium=1 L."}, {"field_path":
+    "ingredients[7]", "ingredient": "MgSO4·7H2O", "current_concentration": {"value":
+    "40", "unit": "G_PER_L"}, "term": {"id": "CHEBI:31795", "label": "magnesium sulfate
+    heptahydrate"}, "source_group": "**Salt solution", "source_mass_g_per_stock_batch":
+    "40", "assessment": "stock-batch amount has been asserted as final-medium concentration",
+    "arithmetic": "For actual stock final volume V_stock_L, C_stock=40/V_stock_L g/L;5
+    ml delivers(40*0.005/V_stock_L) g. Final concentration=(40*0.005/(V_stock_L*V_medium_L))
+    g/L.", "conditional_nominal_case": {"assumptions": ["stock final volume=1 L",
+    "medium final volume=1 L"], "delivered_mass_g": "0.2", "medium_g_per_l": "0.2",
+    "ratio_current_to_conditional_nominal": "200"}}, {"field_path": "ingredients[8]",
+    "ingredient": "FeSO4·7H2O", "current_concentration": {"value": "2", "unit": "G_PER_L"},
+    "term": {"id": "CHEBI:75836", "label": "iron(2+) sulfate heptahydrate"}, "source_group":
+    "**Salt solution", "source_mass_g_per_stock_batch": "2", "assessment": "stock-batch
+    amount has been asserted as final-medium concentration", "arithmetic": "For actual
+    stock final volume V_stock_L, C_stock=2/V_stock_L g/L;5 ml delivers(2*0.005/V_stock_L)
+    g. Final concentration=(2*0.005/(V_stock_L*V_medium_L)) g/L.", "conditional_nominal_case":
+    {"assumptions": ["stock final volume=1 L", "medium final volume=1 L"], "delivered_mass_g":
+    "0.01", "medium_g_per_l": "0.01", "ratio_current_to_conditional_nominal": "200"}},
+    {"field_path": "ingredients[9]", "ingredient": "MnSO4·4H2O", "current_concentration":
+    {"value": "2", "unit": "G_PER_L"}, "term": {"id": "CHEBI:86358", "label": "manganese(II)
+    sulfate tetrahydrate"}, "source_group": "**Salt solution", "source_mass_g_per_stock_batch":
+    "2", "assessment": "stock-batch amount has been asserted as final-medium concentration",
+    "arithmetic": "For actual stock final volume V_stock_L, C_stock=2/V_stock_L g/L;5
+    ml delivers(2*0.005/V_stock_L) g. Final concentration=(2*0.005/(V_stock_L*V_medium_L))
+    g/L.", "conditional_nominal_case": {"assumptions": ["stock final volume=1 L",
+    "medium final volume=1 L"], "delivered_mass_g": "0.01", "medium_g_per_l": "0.01",
+    "ratio_current_to_conditional_nominal": "200"}}, {"field_path": "solutions[0]",
+    "solution": "Solution A", "current_concentration": {"value": "900", "unit": "G_PER_L"},
+    "term": {"id": "mediadive.solution:5342", "label": "Solution A"}, "name": "Unknown
+    solution", "assessment": "wrong stock accession and volume-to-mass unit corruption",
+    "provider_locator": "$.components[0].items[0]", "source_key": "togoM1576api",
+    "source_addition": {"value": "900", "unit": "ml"}, "primary_provider_distinction":
+    "NBRC states water amounts within A/B and says to combine them; TOGO separately
+    materializes900/100 ml A/B addition rows. Do not silently treat the two kinds
+    of volume as identical measured final solutions."}, {"field_path": "solutions[1]",
+    "solution": "Solution B", "current_concentration": {"value": "100", "unit": "G_PER_L"},
+    "term": {"id": "mediadive.solution:5343", "label": "Solution B"}, "name": "Unknown
+    solution", "assessment": "wrong stock accession and volume-to-mass unit corruption",
+    "provider_locator": "$.components[0].items[1]", "source_key": "togoM1576api",
+    "source_addition": {"value": "100", "unit": "ml"}, "primary_provider_distinction":
+    "NBRC states water amounts within A/B and says to combine them; TOGO separately
+    materializes900/100 ml A/B addition rows. Do not silently treat the two kinds
+    of volume as identical measured final solutions."}, {"field_path": "solutions[2]",
+    "solution": "Hipolypepton*", "current_concentration": {"value": "5", "unit": "G_PER_L"},
+    "term": null, "name": "Unknown solution", "assessment": "commercial ingredient
+    is represented as an empty stock solution", "source_mass_g_per_A_batch": "5"},
+    {"field_path": "solutions[3]", "solution": "Extract Bonito*", "current_concentration":
+    {"value": "5", "unit": "G_PER_L"}, "term": null, "name": "Unknown solution", "assessment":
+    "commercial ingredient is represented as an empty stock solution", "source_mass_g_per_A_batch":
+    "5"}, {"field_path": "solutions[4]", "solution": "Salt solution**", "current_concentration":
+    {"value": "5", "unit": "G_PER_L"}, "term": {"id": "mediadive.solution:6218", "label":
+    "Salt solution"}, "name": "Unknown solution", "assessment": "wrong stock accession,
+    missing correct composition, and volume-to-mass unit corruption", "provider_locator":
+    "$.components[1].items[8]", "source_key": "togoM1576api"}], "history": [{"layer":
+    "target", "index": 0, "timestamp": "2026-01-27T06:35:57.868410Z"}, {"layer": "target",
+    "index": 1, "timestamp": "2026-01-28T19:48:17.528024Z"}, {"layer": "target", "index":
+    2, "timestamp": "2026-03-09T08:04:29.030591+00:00"}, {"layer": "target", "index":
+    3, "timestamp": "2026-03-13T03:08:57.866128Z"}, {"layer": "target", "index": 4,
+    "timestamp": "2026-03-13T06:19:53.681574Z"}, {"layer": "target", "index": 5, "timestamp":
+    "2026-03-14T00:00:00+00:00"}, {"layer": "target", "index": 6, "timestamp": "2026-03-17T06:30:02.000000Z"},
+    {"layer": "target", "index": 7, "timestamp": "2026-03-17T19:46:12.229420+00:00"},
+    {"layer": "target", "index": 8, "timestamp": "2026-05-16T09:02:58.224213+00:00"},
+    {"layer": "target", "index": 9, "timestamp": "2026-06-05T07:40:15.730395+00:00"},
+    {"layer": "target", "index": 10, "timestamp": "2026-06-10T06:57:12.473132+00:00"},
+    {"layer": "target", "index": 11, "timestamp": "2026-06-10T07:46:42.530103+00:00"},
+    {"layer": "target", "index": 12, "timestamp": "2026-08-06T03:04:33.986881+00:00"},
+    {"layer": "owner", "index": 0, "timestamp": "2026-01-27T06:35:57.868410Z"}, {"layer":
+    "owner", "index": 1, "timestamp": "2026-01-28T19:48:17.528024Z"}, {"layer": "owner",
+    "index": 2, "timestamp": "2026-03-09T08:04:29.030591+00:00"}, {"layer": "owner",
+    "index": 3, "timestamp": "2026-03-13T03:08:57.866128Z"}, {"layer": "owner", "index":
+    4, "timestamp": "2026-03-13T06:19:53.681574Z"}, {"layer": "owner", "index": 5,
+    "timestamp": "2026-03-14T00:00:00+00:00"}, {"layer": "owner", "index": 6, "timestamp":
+    "2026-03-17T06:30:02.000000Z"}, {"layer": "owner", "index": 7, "timestamp": "2026-03-17T19:46:12.229420+00:00"},
+    {"layer": "owner", "index": 8, "timestamp": "2026-05-16T09:02:58.224213+00:00"},
+    {"layer": "owner", "index": 9, "timestamp": "2026-06-05T07:40:15.730395+00:00"},
+    {"layer": "owner", "index": 10, "timestamp": "2026-06-10T06:57:12.473132+00:00"},
+    {"layer": "owner", "index": 11, "timestamp": "2026-06-10T07:46:42.530103+00:00"}]}'
+- evidence_id: stock-context
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml; mediadive_5343_Solution_B.yaml;
+    mediadive_6218_Salt_solution.yaml
+  locator: Three complete dependency files and all 12 composition rows; hashes captured
+    as inspection context
+  accessed_at: '2026-10-21T07:47:44Z'
+  support: supports
+  summary: '{"rows": [{"field_path": "composition[0].concentration", "compound": "Yeast
+    extract", "current": {"value": "2", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[0]",
+    "source_basis_g_per_l": "4", "calculation": "2 g / (500 ml /1000) = 4 g/L", "current_value_matches_source_basis":
+    false, "scope": "Standalone MediaDive5342 only; this composition is not an NBRC383
+    stock."}, {"field_path": "composition[1].concentration", "compound": "Casamino
+    acids", "current": {"value": "2", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[1]",
+    "source_basis_g_per_l": "4", "calculation": "2 g / (500 ml /1000) = 4 g/L", "current_value_matches_source_basis":
+    false, "scope": "Standalone MediaDive5342 only; this composition is not an NBRC383
+    stock."}, {"field_path": "composition[2].concentration", "compound": "Na glutamate",
+    "current": {"value": "1", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[2]",
+    "source_basis_g_per_l": "2", "calculation": "1 g / (500 ml /1000) = 2 g/L", "current_value_matches_source_basis":
+    false, "scope": "Standalone MediaDive5342 only; this composition is not an NBRC383
+    stock."}, {"field_path": "composition[3].concentration", "compound": "Trisodium
+    citrate x 2 H2O", "current": {"value": "3", "unit": "G_PER_L"}, "source_locator":
+    "$.data.recipe[3]", "source_basis_g_per_l": "6", "calculation": "3 g / (500 ml
+    /1000) = 6 g/L", "current_value_matches_source_basis": false, "scope": "Standalone
+    MediaDive5342 only; this composition is not an NBRC383 stock."}, {"field_path":
+    "composition[4].concentration", "compound": "MgSO4 x 7 H2O", "current": {"value":
+    "0.1", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[4]", "source_basis_g_per_l":
+    "0.2", "calculation": "0.1 g / (500 ml /1000) = 0.2 g/L", "current_value_matches_source_basis":
+    false, "scope": "Standalone MediaDive5342 only; this composition is not an NBRC383
+    stock."}, {"field_path": "composition[5].concentration", "compound": "CaSO4 x
+    2 H2O", "current": {"value": "0.1", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[5]",
+    "source_basis_g_per_l": "0.2", "calculation": "0.1 g / (500 ml /1000) = 0.2 g/L",
+    "current_value_matches_source_basis": false, "scope": "Standalone MediaDive5342
+    only; this composition is not an NBRC383 stock."}, {"field_path": "composition[6].concentration",
+    "compound": "KCl", "current": {"value": "1", "unit": "G_PER_L"}, "source_locator":
+    "$.data.recipe[6]", "source_basis_g_per_l": "2", "calculation": "1 g / (500 ml
+    /1000) = 2 g/L", "current_value_matches_source_basis": false, "scope": "Standalone
+    MediaDive5342 only; this composition is not an NBRC383 stock."}, {"field_path":
+    "composition[7].concentration", "compound": "NaCl", "current": {"value": "100",
+    "unit": "G_PER_L"}, "source_locator": "$.data.recipe[7]", "source_basis_g_per_l":
+    "2.0E+2", "calculation": "100 g / (500 ml /1000) = 2.0E+2 g/L", "current_value_matches_source_basis":
+    false, "scope": "Standalone MediaDive5342 only; this composition is not an NBRC383
+    stock."}, {"field_path": "composition[0].concentration", "compound": "Na2CO3",
+    "current": {"value": "80", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[0]",
+    "source_basis_g_per_l": "1.6E+2", "calculation": "80 g / (500 ml /1000) = 1.6E+2
+    g/L", "current_value_matches_source_basis": false, "scope": "Standalone MediaDive5343
+    only; this composition is not an NBRC383 stock."}, {"field_path": "composition[1].concentration",
+    "compound": "NaCl", "current": {"value": "100", "unit": "G_PER_L"}, "source_locator":
+    "$.data.recipe[1]", "source_basis_g_per_l": "2.0E+2", "calculation": "100 g /
+    (500 ml /1000) = 2.0E+2 g/L", "current_value_matches_source_basis": false, "scope":
+    "Standalone MediaDive5343 only; this composition is not an NBRC383 stock."}, {"field_path":
+    "composition[0].concentration", "compound": "NaNO3", "current": {"value": "200",
+    "unit": "G_PER_L"}, "source_locator": "$.data.recipe[0]", "source_basis_g_per_l":
+    "200", "calculation": "Provider explicitly reports g_l=200; amount=200 g, declared
+    solution volume1000 ml.", "current_value_matches_source_basis": true, "scope":
+    "Standalone MediaDive6218 only; this composition is not an NBRC383 stock."}, {"field_path":
+    "composition[1].concentration", "compound": "Na2HPO4", "current": {"value": "2",
+    "unit": "G_PER_L"}, "source_locator": "$.data.recipe[1]", "source_basis_g_per_l":
+    "2", "calculation": "Provider explicitly reports g_l=2; amount=2 g, declared solution
+    volume1000 ml.", "current_value_matches_source_basis": true, "scope": "Standalone
+    MediaDive6218 only; this composition is not an NBRC383 stock."}], "boundary":
+    "Dependency context only. These stocks are not additional review targets and must
+    not be repurposed as NBRC stocks."}'
+- evidence_id: transform
+  kind: record_content
+  reference: scripts/migrate_solutions_from_ingredients.py; src/culturemech/import/togo_importer.py
+  locator: SOLUTION_PATTERNS; _resolve_solution; _extract_primary_components; _parse_unit;
+    _convert_to_culturemech
+  accessed_at: '2026-10-21T07:47:44Z'
+  support: supports
+  summary: The migration recognizes terminal asterisks and assigns stock IDs by cleaned
+    name without source-formulation comparison. Current TOGO code distinguishes primary/local-stock
+    sections and volume units; it was inspected, not executed. Recorded history supports
+    a prior migration, not a reconstructed execution trace or proof that every current
+    import path repeats these defects.
+- evidence_id: schema-context
+  kind: record_content
+  reference: src/culturemech/schema/culturemech.yaml
+  locator: IngredientDescriptor; SolutionDescriptor; ConcentrationUnitEnum
+  accessed_at: '2026-10-21T07:47:44Z'
+  support: supports
+  summary: Nested solutions and compositions are available. L represents volume-only
+    entries; the enum has no grams-per-batch amount. Preserve unsupported-denominator
+    masses in evidence/notes rather than inventing a new field or forced concentration.
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:008125
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: All asserted primary and current secondary ingredient identifiers
+  outcome: supported
+  summary: '8 primary CHEBI identities resolve with matching labels; 6 of 6 current
+    secondary keys have live pinned-index rows. Unresolved keys: [].'
+  target_ids:
+  - CultureMech:008125
+  evidence_ids:
+  - record
+  - mim
+  - chebi131527
+  - chebi15377
+  - chebi17234
+  - chebi26710
+  - chebi29377
+  - chebi31795
+  - chebi75836
+  - chebi86358
+  details: 10 direct ingredient instances; CHEBI-primary instance linkage 8/10 (80.00%),
+    verified secondary coverage 6/10 (60.00%). Percentages use a 0–100 linkage scale,
+    not a scientific correctness score. Complex mixtures without asserted IDs remain
+    ungrounded rather than receiving invented pure-molecule identities.
+- assessment_id: identity
+  area: identity
+  topic: Exact source accession and generated ownership
+  outcome: supported
+  summary: TOGO M1576 explicitly identifies NBRC 383. Stable ID, full maintained owner
+    and merge event identify this target; the three linked MediaDive stocks resolve
+    but are scientifically different formulations.
+  target_ids:
+  - CultureMech:008125
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - togo
+  - nbrc
+  - stock5342
+  - stock5343
+  - stock6218
+- assessment_id: all-amounts
+  area: quantity
+  topic: Every direct ingredient and stock-use node
+  outcome: concern
+  summary: All 15 target nodes were assessed. Source masses for yeast extract, NaCl,
+    phosphate, glucose, optional agar, carbonate, Hipolypepton and bonito extract
+    are retained numerically, but their source-group and final-volume basis are lost.
+    Water 1001 g/L adds 900 ml, 100 ml and 1 L numerals across separate stages. A/B
+    and salt-stock additions are volumes, not g/L. Mg/Fe/Mn values belong to stock
+    preparation, not the receiving medium.
+  target_ids:
+  - CultureMech:008125
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - togo
+  - trace
+  details: '[{"field_path": "ingredients[0]", "ingredient": "Distilled water", "current_concentration":
+    {"value": "1001.0", "unit": "G_PER_L"}, "term": {"id": "CHEBI:15377", "label":
+    "water"}, "assessment": "incorrect unit, mixed unit arithmetic, and loss of stock
+    boundary", "explanation": "The stored1001 is explicitly explained as900+100+1
+    in the duplicate-merge note. These source numerals use ml, ml, and L, and the1
+    L belongs to preparation of a separate stock; they cannot be summed as receiving-medium
+    grams per liter."}, {"field_path": "ingredients[1]", "ingredient": "Yeast extract",
+    "current_concentration": {"value": "5", "unit": "G_PER_L"}, "term": null, "source_group":
+    "Solution A", "source_mass_g_per_prescribed_batch": "5", "assessment": "source
+    mass is supported; exact final-medium denominator remains unstated", "arithmetic":
+    "C_medium = 5 g / V_medium_L; equals5 g/L only if V_medium=1 L."}, {"field_path":
+    "ingredients[2]", "ingredient": "NaCl", "current_concentration": {"value": "25",
+    "unit": "G_PER_L"}, "term": {"id": "CHEBI:26710", "label": "sodium chloride"},
+    "source_group": "Solution A", "source_mass_g_per_prescribed_batch": "25", "assessment":
+    "source mass is supported; exact final-medium denominator remains unstated", "arithmetic":
+    "C_medium = 25 g / V_medium_L; equals25 g/L only if V_medium=1 L."}, {"field_path":
+    "ingredients[3]", "ingredient": "K2HPO4", "current_concentration": {"value": "10",
+    "unit": "G_PER_L"}, "term": {"id": "CHEBI:131527", "label": "dipotassium hydrogen
+    phosphate"}, "source_group": "Solution A", "source_mass_g_per_prescribed_batch":
+    "10", "assessment": "source mass is supported; exact final-medium denominator
+    remains unstated", "arithmetic": "C_medium = 10 g / V_medium_L; equals10 g/L only
+    if V_medium=1 L."}, {"field_path": "ingredients[4]", "ingredient": "Glucose",
+    "current_concentration": {"value": "10", "unit": "G_PER_L"}, "term": {"id": "CHEBI:17234",
+    "label": "glucose"}, "source_group": "Solution A", "source_mass_g_per_prescribed_batch":
+    "10", "assessment": "source mass is supported; exact final-medium denominator
+    remains unstated", "arithmetic": "C_medium = 10 g / V_medium_L; equals10 g/L only
+    if V_medium=1 L."}, {"field_path": "ingredients[5]", "ingredient": "Agar (if needed)",
+    "current_concentration": {"value": "15", "unit": "G_PER_L"}, "term": null, "source_group":
+    "Solution A", "source_mass_g_per_prescribed_batch": "15", "assessment": "source
+    mass is supported; exact final-medium denominator remains unstated", "arithmetic":
+    "C_medium = 15 g / V_medium_L; equals15 g/L only if V_medium=1 L."}, {"field_path":
+    "ingredients[6]", "ingredient": "Na2CO3", "current_concentration": {"value": "3",
+    "unit": "G_PER_L"}, "term": {"id": "CHEBI:29377", "label": "sodium carbonate"},
+    "source_group": "Solution B", "source_mass_g_per_prescribed_batch": "3", "assessment":
+    "source mass is supported; exact final-medium denominator remains unstated", "arithmetic":
+    "C_medium = 3 g / V_medium_L; equals3 g/L only if V_medium=1 L."}, {"field_path":
+    "ingredients[7]", "ingredient": "MgSO4·7H2O", "current_concentration": {"value":
+    "40", "unit": "G_PER_L"}, "term": {"id": "CHEBI:31795", "label": "magnesium sulfate
+    heptahydrate"}, "source_group": "**Salt solution", "source_mass_g_per_stock_batch":
+    "40", "assessment": "stock-batch amount has been asserted as final-medium concentration",
+    "arithmetic": "For actual stock final volume V_stock_L, C_stock=40/V_stock_L g/L;5
+    ml delivers(40*0.005/V_stock_L) g. Final concentration=(40*0.005/(V_stock_L*V_medium_L))
+    g/L.", "conditional_nominal_case": {"assumptions": ["stock final volume=1 L",
+    "medium final volume=1 L"], "delivered_mass_g": "0.2", "medium_g_per_l": "0.2",
+    "ratio_current_to_conditional_nominal": "200"}}, {"field_path": "ingredients[8]",
+    "ingredient": "FeSO4·7H2O", "current_concentration": {"value": "2", "unit": "G_PER_L"},
+    "term": {"id": "CHEBI:75836", "label": "iron(2+) sulfate heptahydrate"}, "source_group":
+    "**Salt solution", "source_mass_g_per_stock_batch": "2", "assessment": "stock-batch
+    amount has been asserted as final-medium concentration", "arithmetic": "For actual
+    stock final volume V_stock_L, C_stock=2/V_stock_L g/L;5 ml delivers(2*0.005/V_stock_L)
+    g. Final concentration=(2*0.005/(V_stock_L*V_medium_L)) g/L.", "conditional_nominal_case":
+    {"assumptions": ["stock final volume=1 L", "medium final volume=1 L"], "delivered_mass_g":
+    "0.01", "medium_g_per_l": "0.01", "ratio_current_to_conditional_nominal": "200"}},
+    {"field_path": "ingredients[9]", "ingredient": "MnSO4·4H2O", "current_concentration":
+    {"value": "2", "unit": "G_PER_L"}, "term": {"id": "CHEBI:86358", "label": "manganese(II)
+    sulfate tetrahydrate"}, "source_group": "**Salt solution", "source_mass_g_per_stock_batch":
+    "2", "assessment": "stock-batch amount has been asserted as final-medium concentration",
+    "arithmetic": "For actual stock final volume V_stock_L, C_stock=2/V_stock_L g/L;5
+    ml delivers(2*0.005/V_stock_L) g. Final concentration=(2*0.005/(V_stock_L*V_medium_L))
+    g/L.", "conditional_nominal_case": {"assumptions": ["stock final volume=1 L",
+    "medium final volume=1 L"], "delivered_mass_g": "0.01", "medium_g_per_l": "0.01",
+    "ratio_current_to_conditional_nominal": "200"}}, {"field_path": "solutions[0]",
+    "solution": "Solution A", "current_concentration": {"value": "900", "unit": "G_PER_L"},
+    "term": {"id": "mediadive.solution:5342", "label": "Solution A"}, "name": "Unknown
+    solution", "assessment": "wrong stock accession and volume-to-mass unit corruption",
+    "provider_locator": "$.components[0].items[0]", "source_key": "togoM1576api",
+    "source_addition": {"value": "900", "unit": "ml"}, "primary_provider_distinction":
+    "NBRC states water amounts within A/B and says to combine them; TOGO separately
+    materializes900/100 ml A/B addition rows. Do not silently treat the two kinds
+    of volume as identical measured final solutions."}, {"field_path": "solutions[1]",
+    "solution": "Solution B", "current_concentration": {"value": "100", "unit": "G_PER_L"},
+    "term": {"id": "mediadive.solution:5343", "label": "Solution B"}, "name": "Unknown
+    solution", "assessment": "wrong stock accession and volume-to-mass unit corruption",
+    "provider_locator": "$.components[0].items[1]", "source_key": "togoM1576api",
+    "source_addition": {"value": "100", "unit": "ml"}, "primary_provider_distinction":
+    "NBRC states water amounts within A/B and says to combine them; TOGO separately
+    materializes900/100 ml A/B addition rows. Do not silently treat the two kinds
+    of volume as identical measured final solutions."}, {"field_path": "solutions[2]",
+    "solution": "Hipolypepton*", "current_concentration": {"value": "5", "unit": "G_PER_L"},
+    "term": null, "name": "Unknown solution", "assessment": "commercial ingredient
+    is represented as an empty stock solution", "source_mass_g_per_A_batch": "5"},
+    {"field_path": "solutions[3]", "solution": "Extract Bonito*", "current_concentration":
+    {"value": "5", "unit": "G_PER_L"}, "term": null, "name": "Unknown solution", "assessment":
+    "commercial ingredient is represented as an empty stock solution", "source_mass_g_per_A_batch":
+    "5"}, {"field_path": "solutions[4]", "solution": "Salt solution**", "current_concentration":
+    {"value": "5", "unit": "G_PER_L"}, "term": {"id": "mediadive.solution:6218", "label":
+    "Salt solution"}, "name": "Unknown solution", "assessment": "wrong stock accession,
+    missing correct composition, and volume-to-mass unit corruption", "provider_locator":
+    "$.components[1].items[8]", "source_key": "togoM1576api"}]'
+- assessment_id: volumes
+  area: quantity
+  topic: Exact versus conditional dilution arithmetic
+  outcome: concern
+  summary: The primary source gives water additions, not explicit final-volume closures.
+    TOGO separately supplies A/B combination volumes. For actual stock volume Vs and
+    medium volume Vm in litres, salt concentration is stock mass times 0.005/(Vs*Vm)
+    g/L. Only assuming Vs=Vm=1 L gives Mg/Fe/Mn 0.2/0.01/0.01 g/L. These are diagnostic
+    conditional values, not proposed asserted replacements; do not assume density,
+    1.005 L final volume or additive stock-preparation water.
+  target_ids:
+  - CultureMech:008125
+  evidence_ids:
+  - nbrc
+  - togo
+  - trace
+  - schema-context
+- assessment_id: dependencies
+  area: identity
+  topic: All three stock references and their independent contents
+  outcome: concern
+  summary: MediaDive 5342/5343/6218 and their named local files all resolve. Their
+    ingredient inventories disprove the NBRC group assignments. For dependency context,
+    5342 and 5343 local stock concentrations are half the amounts supported by their
+    explicit 500 ml final volume; 6218 concentrations and literal existing excerpts
+    match its API. Fixing unrelated stock concentrations would not fix these wrong
+    receiving-medium links.
+  target_ids:
+  - CultureMech:008125
+  evidence_ids:
+  - record
+  - owner-0
+  - stock-context
+  - stock5342
+  - stock5343
+  - stock6218
+  details: '[{"field_path": "composition[0].concentration", "compound": "Yeast extract",
+    "current": {"value": "2", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[0]",
+    "source_basis_g_per_l": "4", "calculation": "2 g / (500 ml /1000) = 4 g/L", "current_value_matches_source_basis":
+    false, "scope": "Standalone MediaDive5342 only; this composition is not an NBRC383
+    stock."}, {"field_path": "composition[1].concentration", "compound": "Casamino
+    acids", "current": {"value": "2", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[1]",
+    "source_basis_g_per_l": "4", "calculation": "2 g / (500 ml /1000) = 4 g/L", "current_value_matches_source_basis":
+    false, "scope": "Standalone MediaDive5342 only; this composition is not an NBRC383
+    stock."}, {"field_path": "composition[2].concentration", "compound": "Na glutamate",
+    "current": {"value": "1", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[2]",
+    "source_basis_g_per_l": "2", "calculation": "1 g / (500 ml /1000) = 2 g/L", "current_value_matches_source_basis":
+    false, "scope": "Standalone MediaDive5342 only; this composition is not an NBRC383
+    stock."}, {"field_path": "composition[3].concentration", "compound": "Trisodium
+    citrate x 2 H2O", "current": {"value": "3", "unit": "G_PER_L"}, "source_locator":
+    "$.data.recipe[3]", "source_basis_g_per_l": "6", "calculation": "3 g / (500 ml
+    /1000) = 6 g/L", "current_value_matches_source_basis": false, "scope": "Standalone
+    MediaDive5342 only; this composition is not an NBRC383 stock."}, {"field_path":
+    "composition[4].concentration", "compound": "MgSO4 x 7 H2O", "current": {"value":
+    "0.1", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[4]", "source_basis_g_per_l":
+    "0.2", "calculation": "0.1 g / (500 ml /1000) = 0.2 g/L", "current_value_matches_source_basis":
+    false, "scope": "Standalone MediaDive5342 only; this composition is not an NBRC383
+    stock."}, {"field_path": "composition[5].concentration", "compound": "CaSO4 x
+    2 H2O", "current": {"value": "0.1", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[5]",
+    "source_basis_g_per_l": "0.2", "calculation": "0.1 g / (500 ml /1000) = 0.2 g/L",
+    "current_value_matches_source_basis": false, "scope": "Standalone MediaDive5342
+    only; this composition is not an NBRC383 stock."}, {"field_path": "composition[6].concentration",
+    "compound": "KCl", "current": {"value": "1", "unit": "G_PER_L"}, "source_locator":
+    "$.data.recipe[6]", "source_basis_g_per_l": "2", "calculation": "1 g / (500 ml
+    /1000) = 2 g/L", "current_value_matches_source_basis": false, "scope": "Standalone
+    MediaDive5342 only; this composition is not an NBRC383 stock."}, {"field_path":
+    "composition[7].concentration", "compound": "NaCl", "current": {"value": "100",
+    "unit": "G_PER_L"}, "source_locator": "$.data.recipe[7]", "source_basis_g_per_l":
+    "2.0E+2", "calculation": "100 g / (500 ml /1000) = 2.0E+2 g/L", "current_value_matches_source_basis":
+    false, "scope": "Standalone MediaDive5342 only; this composition is not an NBRC383
+    stock."}, {"field_path": "composition[0].concentration", "compound": "Na2CO3",
+    "current": {"value": "80", "unit": "G_PER_L"}, "source_locator": "$.data.recipe[0]",
+    "source_basis_g_per_l": "1.6E+2", "calculation": "80 g / (500 ml /1000) = 1.6E+2
+    g/L", "current_value_matches_source_basis": false, "scope": "Standalone MediaDive5343
+    only; this composition is not an NBRC383 stock."}, {"field_path": "composition[1].concentration",
+    "compound": "NaCl", "current": {"value": "100", "unit": "G_PER_L"}, "source_locator":
+    "$.data.recipe[1]", "source_basis_g_per_l": "2.0E+2", "calculation": "100 g /
+    (500 ml /1000) = 2.0E+2 g/L", "current_value_matches_source_basis": false, "scope":
+    "Standalone MediaDive5343 only; this composition is not an NBRC383 stock."}, {"field_path":
+    "composition[0].concentration", "compound": "NaNO3", "current": {"value": "200",
+    "unit": "G_PER_L"}, "source_locator": "$.data.recipe[0]", "source_basis_g_per_l":
+    "200", "calculation": "Provider explicitly reports g_l=200; amount=200 g, declared
+    solution volume1000 ml.", "current_value_matches_source_basis": true, "scope":
+    "Standalone MediaDive6218 only; this composition is not an NBRC383 stock."}, {"field_path":
+    "composition[1].concentration", "compound": "Na2HPO4", "current": {"value": "2",
+    "unit": "G_PER_L"}, "source_locator": "$.data.recipe[1]", "source_basis_g_per_l":
+    "2", "calculation": "Provider explicitly reports g_l=2; amount=2 g, declared solution
+    volume1000 ml.", "current_value_matches_source_basis": true, "scope": "Standalone
+    MediaDive6218 only; this composition is not an NBRC383 stock."}]'
+- assessment_id: chemical-forms
+  area: grounding
+  topic: Primary chemical identities and mixture boundaries
+  outcome: supported
+  summary: 'Eight primary CHEBI IDs have canonical labels and retain the supplied
+    hydrate forms. Six secondary keys resolve in the pinned MIM index: primary 8/10
+    and secondary 6/10 direct-ingredient linkage, not accuracy scores. Commercial
+    peptone, yeast and bonito extract remain mixtures. Stock accession identity is
+    independently wrong despite valid chemical IDs.'
+  target_ids:
+  - CultureMech:008125
+  evidence_ids:
+  - record
+  - mim
+  - nbrc
+  - chebi131527
+  - chebi15377
+  - chebi17234
+  - chebi26710
+  - chebi29377
+  - chebi31795
+  - chebi75836
+  - chebi86358
+- assessment_id: preparation
+  area: completeness
+  topic: Separate preparation and approximate endpoint
+  outcome: concern
+  summary: Both local files omit separate A/B autoclaving, aseptic mixing, unadjusted
+    initial pH and approximate final pH 8.5. The primary source specifies no autoclave
+    temperature/time; do not borrow those from unrelated MediaDive stocks or turn
+    the final pH into an adjustment instruction.
+  target_ids:
+  - CultureMech:008125
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - togo
+- assessment_id: scope
+  area: scope
+  topic: Commercial ingredients, agar/broth alternatives and imported annotations
+  outcome: concern
+  summary: Hipolypepton and Extract Bonito are 5 g commercial ingredients in A, not
+    preprepared stocks with empty compositions. Both source title and optional agar
+    cover broth and agar presentations; SOLID_AGAR chooses only one. Role/property
+    notes are provider annotations, not experimental role evidence. COMPLEX/UNDEFINED
+    is supported; generic microbial cultivation establishes no strain-specific growth.
+    Preserve the Wako/Nihon seiyaku supplier discrepancy without choosing a catalog
+    product.
+  target_ids:
+  - CultureMech:008125
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - togo
+  - trace
+- assessment_id: provenance
+  area: provenance
+  topic: Source evidence and transformation history
+  outcome: concern
+  summary: Every target/owner history timestamp has a timezone. The duplicate-water
+    note explicitly records 900+100+1, and history records migration of five solutions.
+    Neither local record carries narrow concentration evidence or a reference list.
+    Passing reference validation cannot verify missing excerpts. Current importer
+    improvements do not establish corrected legacy output.
+  target_ids:
+  - CultureMech:008125
+  evidence_ids:
+  - record
+  - owner-0
+  - trace
+  - transform
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: CM008125-wrong-stock-identities
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Three stock references identify unrelated formulations
+  description: Names A, B and salt solution were linked to MediaDive 5342, 5343 and
+    6218, whose inspected inventories differ from NBRC 383. Resolution alone is not
+    identity validation.
+  target_ids:
+  - CultureMech:008125
+  field_paths:
+  - solutions[0].term
+  - solutions[1].term
+  - solutions[4].term
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - togo
+  - stock5342
+  - stock5343
+  - stock6218
+  - stock-context
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2_5_nacl_gypfk_agar_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: CM008125-stock-scope-loss
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Undiluted stock salts are asserted at medium scope
+  description: The Mg/Fe/Mn 40/2/2 g amounts describe a separate salt-stock batch,
+    of which only 5 ml is used in A. Both local layers instead assert 40/2/2 g/L as
+    direct medium ingredients alongside a wrong stock link.
+  target_ids:
+  - CultureMech:008125
+  field_paths:
+  - ingredients[7:10].concentration
+  - solutions[4]
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - togo
+  - trace
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2_5_nacl_gypfk_agar_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: CM008125-water-and-dose-units
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Mixed water numerals and stock volumes became mass concentrations
+  description: The water note sums 900 ml, 100 ml and 1 L across separate stages as
+    1001 g/L. A/B 900/100 ml and salt-stock 5 ml are also encoded as g/L.
+  target_ids:
+  - CultureMech:008125
+  field_paths:
+  - ingredients[0].concentration
+  - solutions[0].concentration
+  - solutions[1].concentration
+  - solutions[4].concentration
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - togo
+  - trace
+  - schema-context
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2_5_nacl_gypfk_agar_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f4
+  issue_key: CM008125-commercial-ingredient-wrappers
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Commercial nutrients are represented as empty stock solutions
+  description: Hipolypepton and Extract Bonito are source ingredients, each 5 g in
+    A, but were moved into empty compositions with Unknown solution names. A footnote
+    marker does not establish a stock.
+  target_ids:
+  - CultureMech:008125
+  field_paths:
+  - solutions[2]
+  - solutions[3]
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - togo
+  - transform
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2_5_nacl_gypfk_agar_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f5
+  issue_key: CM008125-final-volume-basis
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Batch masses lack an established final-concentration basis
+  description: The six other direct solute amounts preserve source numerals but assert
+    g/L without retaining their A/B batch basis or a verified final-volume closure.
+  target_ids:
+  - CultureMech:008125
+  field_paths:
+  - ingredients[1:7].concentration
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - togo
+  - trace
+  - schema-context
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2_5_nacl_gypfk_agar_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f6
+  issue_key: CM008125-preparation-missing
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source preparation and approximate pH are omitted
+  description: Both layers omit separate autoclaving and aseptic combination, unadjusted
+    initial pH and approximate final pH 8.5.
+  target_ids:
+  - CultureMech:008125
+  field_paths:
+  - preparation_steps
+  - ph_value
+  - ph_range
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - togo
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2_5_nacl_gypfk_agar_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.4
+  native_severity: P3
+  normalization_reason: P3 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f7
+  issue_key: CM008125-broth-agar-boundary
+  category: scope
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Optional agar is not represented as a complete broth/agar choice
+  description: The title and agar label preserve an optional solidifier, but the structured
+    state is only SOLID_AGAR.
+  target_ids:
+  - CultureMech:008125
+  field_paths:
+  - physical_state
+  - ingredients[5]
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - togo
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2_5_nacl_gypfk_agar_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f8
+  issue_key: CM008125-supplier-conflict
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Commercial-product supplier context remains unresolved
+  description: NBRC and the TOGO comment name Wako for asterisked products, whereas
+    TOGO labels Hipolypepton as Nihon seiyaku. Both local files omit this distinction.
+  target_ids:
+  - CultureMech:008125
+  field_paths:
+  - solutions[2].notes
+  - solutions[3].notes
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - togo
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2_5_nacl_gypfk_agar_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f9
+  issue_key: CM008125-claim-evidence-gap
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Source URLs lack claim-level formulation evidence
+  description: Notes identify the source but no exact ingredient/stock/preparation
+    evidence or reference list accompanies the formulation.
+  target_ids:
+  - CultureMech:008125
+  field_paths:
+  - references
+  - ingredients[*].evidence
+  - evidence
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - togo
+  - validate-references
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2_5_nacl_gypfk_agar_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+actions:
+- action_id: a1
+  description: Detach the three incorrect IDs and local-file notes. Represent the
+    exact NBRC groups with source-specific nested composition or supported source-batch
+    notes. Do not overwrite or repurpose unrelated stock records.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:008125
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2_5_nacl_gypfk_agar_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Restore nested stock and receiving-dose boundaries with exact source
+    evidence. Remove undiluted direct assertions and avoid double counting. Resolve
+    final-volume basis before asserting a derived receiving concentration.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:008125
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2_5_nacl_gypfk_agar_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Restore volume units and preparation stages. Retain literal source
+    amounts; do not infer water mass, density or an unstated final-volume closure.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:008125
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2_5_nacl_gypfk_agar_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Restore these named commercial materials as ingredients in A, preserving
+    source amount and supplier uncertainty; use no invented stock composition.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:008125
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2_5_nacl_gypfk_agar_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a5
+  description: Preserve source masses and stage-specific water/dose context with exact
+    evidence. Resolve the denominator or retain explicitly qualified batch notes;
+    report the grams-per-batch representation gap instead of inventing a field.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:008125
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2_5_nacl_gypfk_agar_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a6
+  description: Restore these exact preparation boundaries and approximate endpoint
+    without inventing autoclave conditions or pH-adjustment reagents.
+  finding_ids:
+  - f6
+  target_ids:
+  - CultureMech:008125
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2_5_nacl_gypfk_agar_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a7
+  description: Represent or clearly delimit the supported agar and broth alternatives
+    while preserving the 15 g optional source amount.
+  finding_ids:
+  - f7
+  target_ids:
+  - CultureMech:008125
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2_5_nacl_gypfk_agar_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a8
+  description: Preserve both source statements and their locators; resolve product
+    identity before asserting supplier equivalence or substitution.
+  finding_ids:
+  - f8
+  target_ids:
+  - CultureMech:008125
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2_5_nacl_gypfk_agar_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a9
+  description: Add verified source metadata and exact short excerpts at the narrowest
+    supported claims; stock-use evidence belongs at enclosing recipe scope with precise
+    field paths.
+  finding_ids:
+  - f9
+  target_ids:
+  - CultureMech:008125
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2_5_nacl_gypfk_agar_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Only CultureMech:008125 is the reviewed target. The three referenced stock files
+  are inspected dependency context, not additional reviewed records or authorized
+  edits. Their independent defects require separate curation.
+- The source does not establish exact final stock/medium volumes, supplier equivalence,
+  autoclave time/temperature or organism-specific growth. Conditional dilution values
+  are not verified replacement concentrations. No importer, migration, merger or culture
+  protocol was executed.
+tags:
+- unreviewed-records
+- batch-009
+- generated-medium
+```
