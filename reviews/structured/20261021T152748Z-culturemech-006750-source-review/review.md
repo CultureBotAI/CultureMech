@@ -1,0 +1,8742 @@
+# Source and formulation review: anaerobranca_gottschalkii_medium (CultureMech:006750)
+
+- Review: 20261021T152748Z-culturemech-006750-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T15:15:06Z
+- Finished UTC: 2026-10-21T15:27:48Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+DSMZ 895 and its two strain branches are directly supported, but all five local layers retain flattened stock concentrations and four cross-stage duplicate sums. Maintained topology distinguishes strain variants while the generated target still calls them duplicates. Source-compatible sodium-resazurin/nickel-hydrate grounding and scoped preparation recovery are needed; available primary evidence supports a completed comparison with explicit volume limits.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 270; batch 027 item 10 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding twenty-six task batches contain 260 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 263 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:006750 | data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml | generated | anaerobranca_gottschalkii_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:006750 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:006750 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-027/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch027/270/strict.tsv |
+| validate-terms | passed | True | CultureMech:006750 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:006750 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:006750 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: mediadive895api | unavailable | False | CultureMech:006750 | Exact main API or KOMODO detail access is unavailable (503/403), with actual original attempts retained. Complete current primary, catalog and relevant stock endpoints support this comparison; no required check is mislabeled unavailable solely for this optional access limit. |
+| Exact source content access: komodo895detail | unavailable | False | CultureMech:006750 | Exact main API or KOMODO detail access is unavailable (503/403), with actual original attempts retained. Complete current primary, catalog and relevant stock endpoints support this comparison; no required check is mislabeled unavailable solely for this optional access limit. |
+| Exact source content access: komodo895_1detail | unavailable | False | CultureMech:006750 | Exact main API or KOMODO detail access is unavailable (503/403), with actual original attempts retained. Complete current primary, catalog and relevant stock endpoints support this comparison; no required check is mislabeled unavailable solely for this optional access limit. |
+| Exact source content access: komodo895_2detail | unavailable | False | CultureMech:006750 | Exact main API or KOMODO detail access is unavailable (503/403), with actual original attempts retained. Complete current primary, catalog and relevant stock endpoints support this comparison; no required check is mislabeled unavailable solely for this optional access limit. |
+| Exact source content access: mediadive895api_retry | unavailable | False | CultureMech:006750 | Exact main API or KOMODO detail access is unavailable (503/403), with actual original attempts retained. Complete current primary, catalog and relevant stock endpoints support this comparison; no required check is mislabeled unavailable solely for this optional access limit. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:006750.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:006750.
+
+63 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "quantity_id": "q1",
+    "component_or_context": "Main (NH4)2SO4",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.987167",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.987167",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.987167",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.987167",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.987167",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": {
+      "base_batch_mass_g": 1,
+      "declared_volume_ml": 1013,
+      "base_only_g_per_l_using_declared_volume": 0.987166831194472,
+      "source_volume_limit": "listed liquids 1013.5 mL plus unspecified preparation stocks"
+    },
+    "rationale": "Stored number matches source mass divided by the explicit 1.013 L header within rounding. Retain this declared basis, not a measured-volume claim; no attached evidence supports verified.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Main table",
+        "exact_source_quote": "(NH4)2SO4 1.00 g",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      },
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Header",
+        "exact_source_quote": "Final volume: 1013 ml",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q2",
+    "component_or_context": "Main NH4Cl",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.394867",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.394867",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.394867",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.394867",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.394867",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": {
+      "base_batch_mass_g": 0.4,
+      "declared_volume_ml": 1013,
+      "base_only_g_per_l_using_declared_volume": 0.3948667324777888,
+      "source_volume_limit": "listed liquids 1013.5 mL plus unspecified preparation stocks"
+    },
+    "rationale": "Stored number matches source mass divided by the explicit 1.013 L header within rounding. Retain this declared basis, not a measured-volume claim; no attached evidence supports verified.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Main table",
+        "exact_source_quote": "NH4Cl 0.40 g",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      },
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Header",
+        "exact_source_quote": "Final volume: 1013 ml",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q3",
+    "component_or_context": "Main Na2S2O3 x 5 H2O",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.0987167",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.0987167",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.0987167",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.0987167",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.0987167",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": {
+      "base_batch_mass_g": 0.1,
+      "declared_volume_ml": 1013,
+      "base_only_g_per_l_using_declared_volume": 0.0987166831194472,
+      "source_volume_limit": "listed liquids 1013.5 mL plus unspecified preparation stocks"
+    },
+    "rationale": "Stored number matches source mass divided by the explicit 1.013 L header within rounding. Retain this declared basis, not a measured-volume claim; no attached evidence supports verified. Variant-specific changes are separately inventoried and must not be applied universally.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Main table",
+        "exact_source_quote": "Na2S2O3 x 5 H2O 0.10 g",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      },
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Header",
+        "exact_source_quote": "Final volume: 1013 ml",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q4",
+    "component_or_context": "Main K2HPO4",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.493583",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.493583",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.493583",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.493583",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.493583",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": {
+      "base_batch_mass_g": 0.5,
+      "declared_volume_ml": 1013,
+      "base_only_g_per_l_using_declared_volume": 0.493583415597236,
+      "source_volume_limit": "listed liquids 1013.5 mL plus unspecified preparation stocks"
+    },
+    "rationale": "Stored number matches source mass divided by the explicit 1.013 L header within rounding. Retain this declared basis, not a measured-volume claim; no attached evidence supports verified.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Main table",
+        "exact_source_quote": "K2HPO4 0.50 g",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      },
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Header",
+        "exact_source_quote": "Final volume: 1013 ml",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q5",
+    "component_or_context": "Main MgSO4 x 7 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "3.0987167",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "3.0987167",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "3.0987167",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "3.0987167",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "3.0987167",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "base_batch_mass_g": 0.1,
+      "declared_volume_ml": 1013,
+      "base_only_g_per_l_using_declared_volume": 0.0987166831194472,
+      "source_volume_limit": "listed liquids 1013.5 mL plus unspecified preparation stocks"
+    },
+    "rationale": "Stored value sums the normalized main contribution and an undiluted mineral-stock g/L; separate those stages and apply the actual stock dose.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Main table",
+        "exact_source_quote": "MgSO4 x 7 H2O 0.10 g",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      },
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Header",
+        "exact_source_quote": "Final volume: 1013 ml",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q6",
+    "component_or_context": "Main CaCl2 x 2 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.1493583",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.1493583",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.1493583",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.1493583",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.1493583",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "base_batch_mass_g": 0.05,
+      "declared_volume_ml": 1013,
+      "base_only_g_per_l_using_declared_volume": 0.0493583415597236,
+      "source_volume_limit": "listed liquids 1013.5 mL plus unspecified preparation stocks"
+    },
+    "rationale": "Stored value sums the normalized main contribution and an undiluted mineral-stock g/L; separate those stages and apply the actual stock dose.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Main table",
+        "exact_source_quote": "CaCl2 x 2 H2O 0.05 g",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      },
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Header",
+        "exact_source_quote": "Final volume: 1013 ml",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q7",
+    "component_or_context": "Main NaCl",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "10.87167",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "10.87167",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "10.87167",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "10.87167",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "10.87167",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "base_batch_mass_g": 10,
+      "declared_volume_ml": 1013,
+      "base_only_g_per_l_using_declared_volume": 9.87166831194472,
+      "source_volume_limit": "listed liquids 1013.5 mL plus unspecified preparation stocks"
+    },
+    "rationale": "Stored value sums the normalized main contribution and an undiluted mineral-stock g/L; separate those stages and apply the actual stock dose.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Main table",
+        "exact_source_quote": "NaCl 10.00 g",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      },
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Header",
+        "exact_source_quote": "Final volume: 1013 ml",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q8",
+    "component_or_context": "Main Yeast extract",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.246792",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.246792",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.246792",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.246792",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.246792",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": {
+      "base_batch_mass_g": 0.25,
+      "declared_volume_ml": 1013,
+      "base_only_g_per_l_using_declared_volume": 0.246791707798618,
+      "source_volume_limit": "listed liquids 1013.5 mL plus unspecified preparation stocks"
+    },
+    "rationale": "Stored number matches source mass divided by the explicit 1.013 L header within rounding. Retain this declared basis, not a measured-volume claim; no attached evidence supports verified.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Main table",
+        "exact_source_quote": "Yeast extract (BD Bacto) 0.25 g",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      },
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Header",
+        "exact_source_quote": "Final volume: 1013 ml",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q9",
+    "component_or_context": "Main Tryptone",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.246792",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.246792",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.246792",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.246792",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.246792",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "base_batch_mass_g": 0.25,
+      "declared_volume_ml": 1013,
+      "base_only_g_per_l_using_declared_volume": 0.246791707798618,
+      "source_volume_limit": "listed liquids 1013.5 mL plus unspecified preparation stocks"
+    },
+    "rationale": "Stored number matches source mass divided by the explicit 1.013 L header within rounding. Retain this declared basis, not a measured-volume claim; no attached evidence supports verified. Variant-specific changes are separately inventoried and must not be applied universally.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Main table",
+        "exact_source_quote": "Tryptone (BD Bacto) 0.25 g",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      },
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Header",
+        "exact_source_quote": "Final volume: 1013 ml",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q10",
+    "component_or_context": "Main L-Cysteine HCl x H2O",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.493583",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.493583",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.493583",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.493583",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.493583",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": {
+      "base_batch_mass_g": 0.5,
+      "declared_volume_ml": 1013,
+      "base_only_g_per_l_using_declared_volume": 0.493583415597236,
+      "source_volume_limit": "listed liquids 1013.5 mL plus unspecified preparation stocks"
+    },
+    "rationale": "Stored number matches source mass divided by the explicit 1.013 L header within rounding. Retain this declared basis, not a measured-volume claim; no attached evidence supports verified.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Main table",
+        "exact_source_quote": "L-Cysteine HCl x H2O 0.50 g",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      },
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Header",
+        "exact_source_quote": "Final volume: 1013 ml",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q11",
+    "component_or_context": "Main Na2CO3",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "2.9615",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "2.9615",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "2.9615",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "2.9615",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "2.9615",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": {
+      "base_batch_mass_g": 3,
+      "declared_volume_ml": 1013,
+      "base_only_g_per_l_using_declared_volume": 2.961500493583416,
+      "source_volume_limit": "listed liquids 1013.5 mL plus unspecified preparation stocks"
+    },
+    "rationale": "Stored number matches source mass divided by the explicit 1.013 L header within rounding. Retain this declared basis, not a measured-volume claim; no attached evidence supports verified.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Main table",
+        "exact_source_quote": "Na2CO3 3.00 g",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      },
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Header",
+        "exact_source_quote": "Final volume: 1013 ml",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q12",
+    "component_or_context": "Main Starch",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "1.97433",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "1.97433",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "1.97433",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "1.97433",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "1.97433",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "base_batch_mass_g": 2,
+      "declared_volume_ml": 1013,
+      "base_only_g_per_l_using_declared_volume": 1.974333662388944,
+      "source_volume_limit": "listed liquids 1013.5 mL plus unspecified preparation stocks"
+    },
+    "rationale": "Stored number matches source mass divided by the explicit 1.013 L header within rounding. Retain this declared basis, not a measured-volume claim; no attached evidence supports verified. Variant-specific changes are separately inventoried and must not be applied universally.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Main table",
+        "exact_source_quote": "Starch (soluble) 2.00 g",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      },
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Header",
+        "exact_source_quote": "Final volume: 1013 ml",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q13",
+    "component_or_context": "Iron sulfate receiving stock and false sum",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.10197433",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.10197433",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.10197433",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.10197433",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.10197433",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "main_iron_stock_dose_ml": 2,
+      "FeSO4_heptahydrate_stock_strength": "0.1% w/v",
+      "acid_vehicle": "0.1 N H2SO4",
+      "main_iron_batch_g": 0.002,
+      "mineral_stock_Fe_g_per_L": 0.1,
+      "mineral_dose_ml": 10,
+      "combined_iron_batch_g_if_1000ml_mineral_basis": 0.003,
+      "declared_main_volume_ml": 1013
+    },
+    "rationale": "Local 0.10197433 is approximately 0.002/1.013 + 0.1, adding undiluted mineral-stock concentration. The two contributions must be preserved separately; only the 10 mL mineral aliquot applies, and the source declared-versus-listed-volume distinction remains visible.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Main table",
+        "exact_source_quote": "FeSO4 x 7 H2O (0.1% w/v in 0.1 N H2SO4) 2.00 ml",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      },
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Modified Wolin mineral stock",
+        "exact_source_quote": "FeSO4 x 7 H2O 0.10 g",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      },
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Header",
+        "exact_source_quote": "Final volume: 1013 ml",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q14",
+    "component_or_context": "Sodium-resazurin stock amount",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.000493583",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.000493583",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.000493583",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.000493583",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.000493583",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "proposed_source_representation": {
+      "dose_ml": 0.5,
+      "strength": "0.1% w/v",
+      "batch_mass_g": 0.0005,
+      "g_per_l_using_declared_volume": 0.000493583415597236
+    },
+    "rationale": "Stored concentration matches the explicit stock mass divided by the primary declared volume within rounding. Preserve the sodium-salt identity separately; correct numerical transcription does not validate neutral CHEBI8806.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Main table",
+        "exact_source_quote": "Sodium resazurin (0.1% w/v) 0.50 ml",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      },
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Header",
+        "exact_source_quote": "Final volume: 1013 ml",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q15",
+    "component_or_context": "Mineral stock Nitrilotriacetic acid",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Modified Wolin mineral stock",
+      "source_amount": 1.5,
+      "unit": "g",
+      "listed_water_ml": 1000,
+      "provider_stock_volume_ml": 1000,
+      "receiving_dose_ml": 10
+    },
+    "rationale": "This literal amount defines the mineral stock, not the main medium. Stored g/L is the undiluted stock strength and requires the receiving dose.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Modified Wolin mineral subsection",
+        "exact_source_quote": "Nitrilotriacetic acid 1.50 g",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q16",
+    "component_or_context": "Mineral stock MgSO4 x 7 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "3.0987167",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "3.0987167",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "3.0987167",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "3.0987167",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "3.0987167",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Modified Wolin mineral stock",
+      "source_amount": 3,
+      "unit": "g",
+      "listed_water_ml": 1000,
+      "provider_stock_volume_ml": 1000,
+      "receiving_dose_ml": 10
+    },
+    "rationale": "This literal amount defines the mineral stock, not the main medium. The current single row also contains a main contribution; split stages before any total is calculated.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Modified Wolin mineral subsection",
+        "exact_source_quote": "MgSO4 x 7 H2O 3.00 g",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q17",
+    "component_or_context": "Mineral stock MnSO4 x H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Modified Wolin mineral stock",
+      "source_amount": 0.5,
+      "unit": "g",
+      "listed_water_ml": 1000,
+      "provider_stock_volume_ml": 1000,
+      "receiving_dose_ml": 10
+    },
+    "rationale": "This literal amount defines the mineral stock, not the main medium. Stored g/L is the undiluted stock strength and requires the receiving dose.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Modified Wolin mineral subsection",
+        "exact_source_quote": "MnSO4 x H2O 0.50 g",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q18",
+    "component_or_context": "Mineral stock NaCl",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "10.87167",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "10.87167",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "10.87167",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "10.87167",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "10.87167",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Modified Wolin mineral stock",
+      "source_amount": 1,
+      "unit": "g",
+      "listed_water_ml": 1000,
+      "provider_stock_volume_ml": 1000,
+      "receiving_dose_ml": 10
+    },
+    "rationale": "This literal amount defines the mineral stock, not the main medium. The current single row also contains a main contribution; split stages before any total is calculated.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Modified Wolin mineral subsection",
+        "exact_source_quote": "NaCl 1.00 g",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q19",
+    "component_or_context": "Mineral stock FeSO4 x 7 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.10197433",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.10197433",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.10197433",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.10197433",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.10197433",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Modified Wolin mineral stock",
+      "source_amount": 0.1,
+      "unit": "g",
+      "listed_water_ml": 1000,
+      "provider_stock_volume_ml": 1000,
+      "receiving_dose_ml": 10
+    },
+    "rationale": "This literal amount defines the mineral stock, not the main medium. The current single row also contains a main contribution; split stages before any total is calculated.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Modified Wolin mineral subsection",
+        "exact_source_quote": "FeSO4 x 7 H2O 0.10 g",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q20",
+    "component_or_context": "Mineral stock CoSO4 x 7 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Modified Wolin mineral stock",
+      "source_amount": 0.18,
+      "unit": "g",
+      "listed_water_ml": 1000,
+      "provider_stock_volume_ml": 1000,
+      "receiving_dose_ml": 10
+    },
+    "rationale": "This literal amount defines the mineral stock, not the main medium. Stored g/L is the undiluted stock strength and requires the receiving dose.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Modified Wolin mineral subsection",
+        "exact_source_quote": "CoSO4 x 7 H2O 0.18 g",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q21",
+    "component_or_context": "Mineral stock CaCl2 x 2 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.1493583",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.1493583",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.1493583",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.1493583",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.1493583",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Modified Wolin mineral stock",
+      "source_amount": 0.1,
+      "unit": "g",
+      "listed_water_ml": 1000,
+      "provider_stock_volume_ml": 1000,
+      "receiving_dose_ml": 10
+    },
+    "rationale": "This literal amount defines the mineral stock, not the main medium. The current single row also contains a main contribution; split stages before any total is calculated.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Modified Wolin mineral subsection",
+        "exact_source_quote": "CaCl2 x 2 H2O 0.10 g",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q22",
+    "component_or_context": "Mineral stock ZnSO4 x 7 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Modified Wolin mineral stock",
+      "source_amount": 0.18,
+      "unit": "g",
+      "listed_water_ml": 1000,
+      "provider_stock_volume_ml": 1000,
+      "receiving_dose_ml": 10
+    },
+    "rationale": "This literal amount defines the mineral stock, not the main medium. Stored g/L is the undiluted stock strength and requires the receiving dose.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Modified Wolin mineral subsection",
+        "exact_source_quote": "ZnSO4 x 7 H2O 0.18 g",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q23",
+    "component_or_context": "Mineral stock CuSO4 x 5 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Modified Wolin mineral stock",
+      "source_amount": 0.01,
+      "unit": "g",
+      "listed_water_ml": 1000,
+      "provider_stock_volume_ml": 1000,
+      "receiving_dose_ml": 10
+    },
+    "rationale": "This literal amount defines the mineral stock, not the main medium. Stored g/L is the undiluted stock strength and requires the receiving dose.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Modified Wolin mineral subsection",
+        "exact_source_quote": "CuSO4 x 5 H2O 0.01 g",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q24",
+    "component_or_context": "Mineral stock AlK(SO4)2 x 12 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Modified Wolin mineral stock",
+      "source_amount": 0.02,
+      "unit": "g",
+      "listed_water_ml": 1000,
+      "provider_stock_volume_ml": 1000,
+      "receiving_dose_ml": 10
+    },
+    "rationale": "This literal amount defines the mineral stock, not the main medium. Stored g/L is the undiluted stock strength and requires the receiving dose.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Modified Wolin mineral subsection",
+        "exact_source_quote": "AlK(SO4)2 x 12 H2O 0.02 g",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q25",
+    "component_or_context": "Mineral stock H3BO3",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Modified Wolin mineral stock",
+      "source_amount": 0.01,
+      "unit": "g",
+      "listed_water_ml": 1000,
+      "provider_stock_volume_ml": 1000,
+      "receiving_dose_ml": 10
+    },
+    "rationale": "This literal amount defines the mineral stock, not the main medium. Stored g/L is the undiluted stock strength and requires the receiving dose.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Modified Wolin mineral subsection",
+        "exact_source_quote": "H3BO3 0.01 g",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q26",
+    "component_or_context": "Mineral stock Na2MoO4 x 2 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Modified Wolin mineral stock",
+      "source_amount": 0.01,
+      "unit": "g",
+      "listed_water_ml": 1000,
+      "provider_stock_volume_ml": 1000,
+      "receiving_dose_ml": 10
+    },
+    "rationale": "This literal amount defines the mineral stock, not the main medium. Stored g/L is the undiluted stock strength and requires the receiving dose.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Modified Wolin mineral subsection",
+        "exact_source_quote": "Na2MoO4 x 2 H2O 0.01 g",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q27",
+    "component_or_context": "Mineral stock NiCl2 x 6 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Modified Wolin mineral stock",
+      "source_amount": 0.03,
+      "unit": "g",
+      "listed_water_ml": 1000,
+      "provider_stock_volume_ml": 1000,
+      "receiving_dose_ml": 10
+    },
+    "rationale": "This literal amount defines the mineral stock, not the main medium. Stored g/L is the undiluted stock strength and requires the receiving dose.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Modified Wolin mineral subsection",
+        "exact_source_quote": "NiCl2 x 6 H2O 0.03 g",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q28",
+    "component_or_context": "Mineral stock Na2SeO3 x 5 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.0003",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.0003",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.0003",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.0003",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.0003",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Modified Wolin mineral stock",
+      "source_amount": 0.3,
+      "unit": "mg",
+      "listed_water_ml": 1000,
+      "provider_stock_volume_ml": 1000,
+      "receiving_dose_ml": 10
+    },
+    "rationale": "This literal amount defines the mineral stock, not the main medium. Stored g/L is the undiluted stock strength and requires the receiving dose.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Modified Wolin mineral subsection",
+        "exact_source_quote": "Na2SeO3 x 5 H2O 0.30 mg",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q29",
+    "component_or_context": "Mineral stock Na2WO4 x 2 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.0004",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.0004",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.0004",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.0004",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.0004",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Modified Wolin mineral stock",
+      "source_amount": 0.4,
+      "unit": "mg",
+      "listed_water_ml": 1000,
+      "provider_stock_volume_ml": 1000,
+      "receiving_dose_ml": 10
+    },
+    "rationale": "This literal amount defines the mineral stock, not the main medium. Stored g/L is the undiluted stock strength and requires the receiving dose.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Modified Wolin mineral subsection",
+        "exact_source_quote": "Na2WO4 x 2 H2O 0.40 mg",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q30",
+    "component_or_context": "10x vitamin stock Biotin",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Wolin vitamins 10x",
+      "mass_mg": 20,
+      "listed_water_ml": 1000,
+      "provider_stock_volume_ml": 1000,
+      "receiving_dose_ml": 1
+    },
+    "rationale": "Stored g/L describes the undiluted stock. Restore the explicit one-milliliter receiving dose and retain source D-pantothenate and DL-lipoic qualifiers; do not substitute the separate 1x vitamin recipe in DSM141.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Wolin vitamin solution (10x) subsection",
+        "exact_source_quote": "Biotin 20.00 mg",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q31",
+    "component_or_context": "10x vitamin stock Folic acid",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Wolin vitamins 10x",
+      "mass_mg": 20,
+      "listed_water_ml": 1000,
+      "provider_stock_volume_ml": 1000,
+      "receiving_dose_ml": 1
+    },
+    "rationale": "Stored g/L describes the undiluted stock. Restore the explicit one-milliliter receiving dose and retain source D-pantothenate and DL-lipoic qualifiers; do not substitute the separate 1x vitamin recipe in DSM141.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Wolin vitamin solution (10x) subsection",
+        "exact_source_quote": "Folic acid 20.00 mg",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q32",
+    "component_or_context": "10x vitamin stock Pyridoxine hydrochloride",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Wolin vitamins 10x",
+      "mass_mg": 100,
+      "listed_water_ml": 1000,
+      "provider_stock_volume_ml": 1000,
+      "receiving_dose_ml": 1
+    },
+    "rationale": "Stored g/L describes the undiluted stock. Restore the explicit one-milliliter receiving dose and retain source D-pantothenate and DL-lipoic qualifiers; do not substitute the separate 1x vitamin recipe in DSM141.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Wolin vitamin solution (10x) subsection",
+        "exact_source_quote": "Pyridoxine hydrochloride 100.00 mg",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q33",
+    "component_or_context": "10x vitamin stock Thiamine HCl",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[28].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[28].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[28].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[28].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[28].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Wolin vitamins 10x",
+      "mass_mg": 50,
+      "listed_water_ml": 1000,
+      "provider_stock_volume_ml": 1000,
+      "receiving_dose_ml": 1
+    },
+    "rationale": "Stored g/L describes the undiluted stock. Restore the explicit one-milliliter receiving dose and retain source D-pantothenate and DL-lipoic qualifiers; do not substitute the separate 1x vitamin recipe in DSM141.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Wolin vitamin solution (10x) subsection",
+        "exact_source_quote": "Thiamine HCl 50.00 mg",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q34",
+    "component_or_context": "10x vitamin stock Riboflavin",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[29].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[29].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[29].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[29].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[29].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Wolin vitamins 10x",
+      "mass_mg": 50,
+      "listed_water_ml": 1000,
+      "provider_stock_volume_ml": 1000,
+      "receiving_dose_ml": 1
+    },
+    "rationale": "Stored g/L describes the undiluted stock. Restore the explicit one-milliliter receiving dose and retain source D-pantothenate and DL-lipoic qualifiers; do not substitute the separate 1x vitamin recipe in DSM141.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Wolin vitamin solution (10x) subsection",
+        "exact_source_quote": "Riboflavin 50.00 mg",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q35",
+    "component_or_context": "10x vitamin stock Nicotinic acid",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[30].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[30].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[30].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[30].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[30].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Wolin vitamins 10x",
+      "mass_mg": 50,
+      "listed_water_ml": 1000,
+      "provider_stock_volume_ml": 1000,
+      "receiving_dose_ml": 1
+    },
+    "rationale": "Stored g/L describes the undiluted stock. Restore the explicit one-milliliter receiving dose and retain source D-pantothenate and DL-lipoic qualifiers; do not substitute the separate 1x vitamin recipe in DSM141.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Wolin vitamin solution (10x) subsection",
+        "exact_source_quote": "Nicotinic acid 50.00 mg",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q36",
+    "component_or_context": "10x vitamin stock Calcium D-(+)-pantothenate",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[31].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[31].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[31].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[31].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[31].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Wolin vitamins 10x",
+      "mass_mg": 50,
+      "listed_water_ml": 1000,
+      "provider_stock_volume_ml": 1000,
+      "receiving_dose_ml": 1
+    },
+    "rationale": "Stored g/L describes the undiluted stock. Restore the explicit one-milliliter receiving dose and retain source D-pantothenate and DL-lipoic qualifiers; do not substitute the separate 1x vitamin recipe in DSM141.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Wolin vitamin solution (10x) subsection",
+        "exact_source_quote": "Calcium D-(+)-pantothenate 50.00 mg",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q37",
+    "component_or_context": "10x vitamin stock Vitamin B12",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[32].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[32].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[32].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[32].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[32].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Wolin vitamins 10x",
+      "mass_mg": 1,
+      "listed_water_ml": 1000,
+      "provider_stock_volume_ml": 1000,
+      "receiving_dose_ml": 1
+    },
+    "rationale": "Stored g/L describes the undiluted stock. Restore the explicit one-milliliter receiving dose and retain source D-pantothenate and DL-lipoic qualifiers; do not substitute the separate 1x vitamin recipe in DSM141.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Wolin vitamin solution (10x) subsection",
+        "exact_source_quote": "Vitamin B12 1.00 mg",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q38",
+    "component_or_context": "10x vitamin stock p-Aminobenzoic acid",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[33].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[33].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[33].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[33].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[33].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Wolin vitamins 10x",
+      "mass_mg": 50,
+      "listed_water_ml": 1000,
+      "provider_stock_volume_ml": 1000,
+      "receiving_dose_ml": 1
+    },
+    "rationale": "Stored g/L describes the undiluted stock. Restore the explicit one-milliliter receiving dose and retain source D-pantothenate and DL-lipoic qualifiers; do not substitute the separate 1x vitamin recipe in DSM141.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Wolin vitamin solution (10x) subsection",
+        "exact_source_quote": "p-Aminobenzoic acid 50.00 mg",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q39",
+    "component_or_context": "10x vitamin stock (DL)-alpha-Lipoic acid",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ingredients[34].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ingredients[34].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ingredients[34].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[34].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[34].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Wolin vitamins 10x",
+      "mass_mg": 50,
+      "listed_water_ml": 1000,
+      "provider_stock_volume_ml": 1000,
+      "receiving_dose_ml": 1
+    },
+    "rationale": "Stored g/L describes the undiluted stock. Restore the explicit one-milliliter receiving dose and retain source D-pantothenate and DL-lipoic qualifiers; do not substitute the separate 1x vitamin recipe in DSM141.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Wolin vitamin solution (10x) subsection",
+        "exact_source_quote": "(DL)-alpha-Lipoic acid 50.00 mg",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q40",
+    "component_or_context": "main listed water",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "main",
+      "water_ml": 1000
+    },
+    "rationale": "No structured water/stock container is retained in any layer. Preserve each separate water quantity and the main declared-volume distinction.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "main table water row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q41",
+    "component_or_context": "mineral listed water",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "mineral",
+      "water_ml": 1000
+    },
+    "rationale": "No structured water/stock container is retained in any layer. Preserve each separate water quantity and the main declared-volume distinction.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "mineral table water row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q42",
+    "component_or_context": "10x vitamins listed water",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "10x vitamins",
+      "water_ml": 1000
+    },
+    "rationale": "No structured water/stock container is retained in any layer. Preserve each separate water quantity and the main declared-volume distinction.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "10x vitamins table water row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q43",
+    "component_or_context": "iron stock addition",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock": "iron",
+      "dose_ml": 2,
+      "strength": "0.1% w/v in 0.1 N H2SO4"
+    },
+    "rationale": "Retain explicit receiving stock dose and named strength; existing flattened constituents do not represent the addition.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Main table receiving stock",
+        "exact_source_quote": "FeSO4 x 7 H2O (0.1% w/v in 0.1 N H2SO4) 2.00 ml",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q44",
+    "component_or_context": "mineral stock addition",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock": "mineral",
+      "dose_ml": 10,
+      "strength": null
+    },
+    "rationale": "Retain explicit receiving stock dose and named strength; existing flattened constituents do not represent the addition.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Main table receiving stock",
+        "exact_source_quote": "Modified Wolin's mineral solution 10.00 ml",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q45",
+    "component_or_context": "resazurin stock addition",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock": "resazurin",
+      "dose_ml": 0.5,
+      "strength": "0.1% w/v"
+    },
+    "rationale": "Retain explicit receiving stock dose and named strength; existing flattened constituents do not represent the addition.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Main table receiving stock",
+        "exact_source_quote": "Sodium resazurin (0.1% w/v) 0.50 ml",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q46",
+    "component_or_context": "10x vitamins stock addition",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock": "10x vitamins",
+      "dose_ml": 1,
+      "strength": "10x"
+    },
+    "rationale": "Retain explicit receiving stock dose and named strength; existing flattened constituents do not represent the addition.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Main table receiving stock",
+        "exact_source_quote": "Wolin's vitamin solution (10x) 1.00 ml",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q47",
+    "component_or_context": "Iron-stock acid vehicle",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "iron stock",
+      "vehicle": "H2SO4",
+      "normality": 0.1,
+      "receiving_stock_ml": 2
+    },
+    "rationale": "The source explicitly names the acid vehicle but local lists omit its context. Preserve 0.1 N without inventing an H2SO4 mass, unprovided stock-preparation volume or replacement CURIE.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Main table",
+        "exact_source_quote": "FeSO4 x 7 H2O (0.1% w/v in 0.1 N H2SO4) 2.00 ml",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q48",
+    "component_or_context": "Declared main volume versus listed liquids",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "declared_final_volume_ml": 1013,
+      "listed_water_plus_iron_mineral_resazurin_vitamins_ml": 1013.5,
+      "additional_preparation_stock_volumes": null
+    },
+    "rationale": "The primary header is explicit and supports its own declared normalization. The 1013.5 mL sum is arithmetic from listed liquid doses, not an alternative measured final volume; unspecified preparation-stock volumes add a further limit.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Header",
+        "exact_source_quote": "Final volume: 1013 ml",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      },
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Main water row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q49",
+    "component_or_context": "Main N2 and sparging time",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve all ingredients except cysteine, carbonate, starch and vitamins. Sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic, add cysteine and adjust pH to 7.5, then dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add starch and vitamins from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Vitamins should be sterilized by filtration. Adjust pH of complete medium to 9.3 - 9.5, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "main before autoclave",
+      "N2_percent": 100,
+      "minutes": [
+        30,
+        45
+      ]
+    },
+    "rationale": "The DSMZ owner retains the source preparation (evidence_only); target and KOMODO owners need the supported main context. Stage/qualifiers remain explicit, and gas percentages are not independently relabeled v/v.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Main preparation",
+        "exact_source_quote": "with 100% N2 gas for 30 - 45 min to make it anoxic, add cysteine and adjust pH to 7.5,",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q50",
+    "component_or_context": "Initial main pH",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve all ingredients except cysteine, carbonate, starch and vitamins. Sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic, add cysteine and adjust pH to 7.5, then dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add starch and vitamins from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Vitamins should be sterilized by filtration. Adjust pH of complete medium to 9.3 - 9.5, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "after cysteine/before sterilization",
+      "pH": 7.5
+    },
+    "rationale": "The DSMZ owner retains the source preparation (evidence_only); target and KOMODO owners need the supported main context. Stage/qualifiers remain explicit, and gas percentages are not independently relabeled v/v.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Main preparation",
+        "exact_source_quote": "with 100% N2 gas for 30 - 45 min to make it anoxic, add cysteine and adjust pH to 7.5,",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q51",
+    "component_or_context": "Carbonate-stock atmosphere",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve all ingredients except cysteine, carbonate, starch and vitamins. Sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic, add cysteine and adjust pH to 7.5, then dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add starch and vitamins from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Vitamins should be sterilized by filtration. Adjust pH of complete medium to 9.3 - 9.5, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "carbonate stock",
+      "N2_percent": 80,
+      "CO2_percent": 20
+    },
+    "rationale": "The DSMZ owner retains the source preparation (evidence_only); target and KOMODO owners need the supported main context. Stage/qualifiers remain explicit, and gas percentages are not independently relabeled v/v.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Main preparation",
+        "exact_source_quote": "under 80% N2 and 20% CO2 gas atmosphere. Vitamins should be sterilized by filtration.",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q52",
+    "component_or_context": "Starch/vitamin stock atmosphere",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve all ingredients except cysteine, carbonate, starch and vitamins. Sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic, add cysteine and adjust pH to 7.5, then dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add starch and vitamins from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Vitamins should be sterilized by filtration. Adjust pH of complete medium to 9.3 - 9.5, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": [
+        "starch stock",
+        "vitamin stock"
+      ],
+      "N2_percent": 100
+    },
+    "rationale": "The DSMZ owner retains the source preparation (evidence_only); target and KOMODO owners need the supported main context. Stage/qualifiers remain explicit, and gas percentages are not independently relabeled v/v.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Main preparation",
+        "exact_source_quote": "prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q53",
+    "component_or_context": "Base final pH",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "ph_range",
+        "stored": {
+          "min": 9.3,
+          "max": 9.5
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "ph_range",
+        "stored": {
+          "min": 9.3,
+          "max": 9.5
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "ph_range",
+        "stored": {
+          "min": 9.3,
+          "max": 9.5
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ph_range",
+        "stored": {
+          "min": 9.3,
+          "max": 9.5
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve all ingredients except cysteine, carbonate, starch and vitamins. Sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic, add cysteine and adjust pH to 7.5, then dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add starch and vitamins from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Vitamins should be sterilized by filtration. Adjust pH of complete medium to 9.3 - 9.5, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "complete base medium",
+      "pH_range": [
+        9.3,
+        9.5
+      ],
+      "qualifier": "if necessary"
+    },
+    "rationale": "Base and DSM14826 inherited pH ranges agree with the base source context. DSM14828 has a separately supported pH9.0 branch and is not assigned this range.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Base preparation",
+        "exact_source_quote": "Adjust pH of complete medium to 9.3 - 9.5, if necessary.",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q54",
+    "component_or_context": "Mineral stock pH sequence and unquantified KOH",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust final to pH 7.0 with KOH.",
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "mineral stock",
+      "first": "NTA dissolved; pH6.5 with KOH",
+      "then": "add minerals; final pH7.0 with KOH",
+      "KOH_amount": null
+    },
+    "rationale": "The DSMZ owner retains both pH stages at main-root step1; restore stock scope and preserve sequence. KOH is source-mentioned but unquantified; do not invent its amount or interpret stock pH as main pH.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Mineral stock preparation",
+        "exact_source_quote": "First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      },
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Following line",
+        "exact_source_quote": "final to pH 7.0 with KOH.",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q55",
+    "component_or_context": "Autoclave cycle",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve all ingredients except cysteine, carbonate, starch and vitamins. Sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic, add cysteine and adjust pH to 7.5, then dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add starch and vitamins from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Vitamins should be sterilized by filtration. Adjust pH of complete medium to 9.3 - 9.5, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "temperature": null,
+      "duration": null
+    },
+    "rationale": "Autoclaving is source-supported but no numerical temperature/duration is specified. Vitamin filtration remains separately required.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Main preparation",
+        "exact_source_quote": "serum vials and autoclave.",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q56",
+    "component_or_context": "Unspecified starch/carbonate preparation stock doses",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve all ingredients except cysteine, carbonate, starch and vitamins. Sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic, add cysteine and adjust pH to 7.5, then dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add starch and vitamins from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Vitamins should be sterilized by filtration. Adjust pH of complete medium to 9.3 - 9.5, if necessary.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "starch_stock_strength": null,
+      "starch_stock_dose_ml": null,
+      "carbonate_stock_strength": null,
+      "carbonate_stock_dose_ml": null
+    },
+    "rationale": "The main batch solute amounts are explicit; these additional stock strengths/doses are not. Preserve their preparation scope and do not invent volumes to reconcile the header.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Main preparation",
+        "exact_source_quote": "Add starch and vitamins from sterile anoxic stock solutions",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      },
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Main preparation",
+        "exact_source_quote": "carbonate from a sterile anoxic stock solution prepared",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q57",
+    "component_or_context": "DSM14826 omit starch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "1.97433",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "variant_children",
+        "stored": [
+          {
+            "path": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:006748",
+            "name": "for_dsm_14826",
+            "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+          },
+          {
+            "path": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:006749",
+            "name": "for_dsm_14828",
+            "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+          }
+        ],
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "variant_children",
+        "stored": [
+          {
+            "path": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:006750",
+            "name": "KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium",
+            "notes": "KOMODO Medium 895 has the same 35-ingredient signature as DSMZ Medium 895."
+          },
+          {
+            "path": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+            "relationship": "STRAIN_SPECIFIC_VARIANT",
+            "id": "CultureMech:006748",
+            "name": "for_dsm_14826",
+            "notes": "KOMODO Medium 895.1 applies DSMZ Medium 895 to DSM 14826."
+          },
+          {
+            "path": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+            "relationship": "STRAIN_SPECIFIC_VARIANT",
+            "id": "CultureMech:006749",
+            "name": "for_dsm_14828",
+            "notes": "KOMODO Medium 895.2 applies DSMZ Medium 895 to DSM 14828."
+          }
+        ],
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "branch": "DSM14826",
+      "omit": "starch"
+    },
+    "rationale": "The maintained variant still retains base starch; source directly requires omission. Keep base starch in the base formulation.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "DSM14826 paragraph",
+        "exact_source_quote": "For DSM 14826: Omit starch from the medium, increase the concentration of Tryptone to",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      },
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "DSM14826 continuation",
+        "exact_source_quote": "2.00 g/l and supplement medium with 4.00 g/l Na2S2O3 x 5 H2O added to the medium from",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q58",
+    "component_or_context": "DSM14826 tryptone",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.246792",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "variant_children",
+        "stored": [
+          {
+            "path": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:006748",
+            "name": "for_dsm_14826",
+            "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+          },
+          {
+            "path": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:006749",
+            "name": "for_dsm_14828",
+            "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+          }
+        ],
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "variant_children",
+        "stored": [
+          {
+            "path": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:006750",
+            "name": "KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium",
+            "notes": "KOMODO Medium 895 has the same 35-ingredient signature as DSMZ Medium 895."
+          },
+          {
+            "path": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+            "relationship": "STRAIN_SPECIFIC_VARIANT",
+            "id": "CultureMech:006748",
+            "name": "for_dsm_14826",
+            "notes": "KOMODO Medium 895.1 applies DSMZ Medium 895 to DSM 14826."
+          },
+          {
+            "path": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+            "relationship": "STRAIN_SPECIFIC_VARIANT",
+            "id": "CultureMech:006749",
+            "name": "for_dsm_14828",
+            "notes": "KOMODO Medium 895.2 applies DSMZ Medium 895 to DSM 14828."
+          }
+        ],
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "branch": "DSM14826",
+      "tryptone_g_per_L": 2
+    },
+    "rationale": "This is an explicit branch concentration, not a whole-batch 2 g value or an addition to base tryptone.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "DSM14826 paragraph",
+        "exact_source_quote": "For DSM 14826: Omit starch from the medium, increase the concentration of Tryptone to",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      },
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "DSM14826 continuation",
+        "exact_source_quote": "2.00 g/l and supplement medium with 4.00 g/l Na2S2O3 x 5 H2O added to the medium from",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q59",
+    "component_or_context": "DSM14826 thiosulfate supplement",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.0987167",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "variant_children",
+        "stored": [
+          {
+            "path": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:006748",
+            "name": "for_dsm_14826",
+            "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+          },
+          {
+            "path": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:006749",
+            "name": "for_dsm_14828",
+            "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+          }
+        ],
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "variant_children",
+        "stored": [
+          {
+            "path": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:006750",
+            "name": "KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium",
+            "notes": "KOMODO Medium 895 has the same 35-ingredient signature as DSMZ Medium 895."
+          },
+          {
+            "path": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+            "relationship": "STRAIN_SPECIFIC_VARIANT",
+            "id": "CultureMech:006748",
+            "name": "for_dsm_14826",
+            "notes": "KOMODO Medium 895.1 applies DSMZ Medium 895 to DSM 14826."
+          },
+          {
+            "path": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+            "relationship": "STRAIN_SPECIFIC_VARIANT",
+            "id": "CultureMech:006749",
+            "name": "for_dsm_14828",
+            "notes": "KOMODO Medium 895.2 applies DSMZ Medium 895 to DSM 14828."
+          }
+        ],
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "branch": "DSM14826",
+      "supplement_Na2S2O3_pentahydrate_g_per_L": 4,
+      "stock_N2_percent": 100,
+      "replacement_total": null
+    },
+    "rationale": "Preserve supplement wording. Do not silently reinterpret it as replacement total4g/L or invent a revised final total/stock dose. The existing base amount alone does not represent this branch.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "DSM14826 paragraph",
+        "exact_source_quote": "2.00 g/l and supplement medium with 4.00 g/l Na2S2O3 x 5 H2O added to the medium from",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      },
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "DSM14826 continuation",
+        "exact_source_quote": "a sterile anoxic stock solution prepared under 100% N2 gas.",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q60",
+    "component_or_context": "DSM14828/119686 omit starch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "1.97433",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "variant_children",
+        "stored": [
+          {
+            "path": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:006748",
+            "name": "for_dsm_14826",
+            "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+          },
+          {
+            "path": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:006749",
+            "name": "for_dsm_14828",
+            "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+          }
+        ],
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "variant_children",
+        "stored": [
+          {
+            "path": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:006750",
+            "name": "KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium",
+            "notes": "KOMODO Medium 895 has the same 35-ingredient signature as DSMZ Medium 895."
+          },
+          {
+            "path": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+            "relationship": "STRAIN_SPECIFIC_VARIANT",
+            "id": "CultureMech:006748",
+            "name": "for_dsm_14826",
+            "notes": "KOMODO Medium 895.1 applies DSMZ Medium 895 to DSM 14826."
+          },
+          {
+            "path": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+            "relationship": "STRAIN_SPECIFIC_VARIANT",
+            "id": "CultureMech:006749",
+            "name": "for_dsm_14828",
+            "notes": "KOMODO Medium 895.2 applies DSMZ Medium 895 to DSM 14828."
+          }
+        ],
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_branch": [
+        "DSM14828",
+        "DSM119686"
+      ],
+      "omit": "starch"
+    },
+    "rationale": "The existing DSM14828 owner retains base starch. Preserve literal additional DSM119686 source scope without creating an unrequested new organism record or asserting growth.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "DSM14828/119686 paragraph",
+        "exact_source_quote": "For DSM 14828, DSM 119686: Omit starch, add 5.00 g/l D-glucose and increase the",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      },
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Following line",
+        "exact_source_quote": "concentration of Tryptone to 2.00 g/l. Adjust pH of complete medium to 9.0.",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q61",
+    "component_or_context": "DSM14828/119686 D-glucose",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[35].concentration",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "variant_children",
+        "stored": [
+          {
+            "path": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:006748",
+            "name": "for_dsm_14826",
+            "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+          },
+          {
+            "path": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:006749",
+            "name": "for_dsm_14828",
+            "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+          }
+        ],
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "variant_children",
+        "stored": [
+          {
+            "path": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:006750",
+            "name": "KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium",
+            "notes": "KOMODO Medium 895 has the same 35-ingredient signature as DSMZ Medium 895."
+          },
+          {
+            "path": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+            "relationship": "STRAIN_SPECIFIC_VARIANT",
+            "id": "CultureMech:006748",
+            "name": "for_dsm_14826",
+            "notes": "KOMODO Medium 895.1 applies DSMZ Medium 895 to DSM 14826."
+          },
+          {
+            "path": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+            "relationship": "STRAIN_SPECIFIC_VARIANT",
+            "id": "CultureMech:006749",
+            "name": "for_dsm_14828",
+            "notes": "KOMODO Medium 895.2 applies DSMZ Medium 895 to DSM 14828."
+          }
+        ],
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_branch": [
+        "DSM14828",
+        "DSM119686"
+      ],
+      "D_glucose_g_per_L": 5
+    },
+    "rationale": "D-glucose is absent from the maintained DSM14828 formula; add the explicitly sourced branch ingredient without assigning an uncaptured identifier.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "DSM14828/119686 paragraph",
+        "exact_source_quote": "For DSM 14828, DSM 119686: Omit starch, add 5.00 g/l D-glucose and increase the",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      },
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Following line",
+        "exact_source_quote": "concentration of Tryptone to 2.00 g/l. Adjust pH of complete medium to 9.0.",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q62",
+    "component_or_context": "DSM14828/119686 tryptone",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.246792",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "variant_children",
+        "stored": [
+          {
+            "path": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:006748",
+            "name": "for_dsm_14826",
+            "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+          },
+          {
+            "path": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:006749",
+            "name": "for_dsm_14828",
+            "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+          }
+        ],
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+        "field_path": "variant_children",
+        "stored": [
+          {
+            "path": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:006750",
+            "name": "KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium",
+            "notes": "KOMODO Medium 895 has the same 35-ingredient signature as DSMZ Medium 895."
+          },
+          {
+            "path": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+            "relationship": "STRAIN_SPECIFIC_VARIANT",
+            "id": "CultureMech:006748",
+            "name": "for_dsm_14826",
+            "notes": "KOMODO Medium 895.1 applies DSMZ Medium 895 to DSM 14826."
+          },
+          {
+            "path": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+            "relationship": "STRAIN_SPECIFIC_VARIANT",
+            "id": "CultureMech:006749",
+            "name": "for_dsm_14828",
+            "notes": "KOMODO Medium 895.2 applies DSMZ Medium 895 to DSM 14828."
+          }
+        ],
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_branch": [
+        "DSM14828",
+        "DSM119686"
+      ],
+      "tryptone_g_per_L": 2
+    },
+    "rationale": "The explicit branch concentration differs from the stored base-normalized amount; do not apply it to the base medium.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "DSM14828/119686 paragraph",
+        "exact_source_quote": "For DSM 14828, DSM 119686: Omit starch, add 5.00 g/l D-glucose and increase the",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      },
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Following line",
+        "exact_source_quote": "concentration of Tryptone to 2.00 g/l. Adjust pH of complete medium to 9.0.",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q63",
+    "component_or_context": "DSM14828/119686 final pH",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+        "field_path": "ph_value",
+        "stored": 9.0,
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml",
+        "field_path": "variant_children",
+        "stored": [
+          {
+            "path": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:006748",
+            "name": "for_dsm_14826",
+            "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+          },
+          {
+            "path": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+            "relationship": "SOURCE_DUPLICATE",
+            "id": "CultureMech:006749",
+            "name": "for_dsm_14828",
+            "notes": "Same ingredient and concentration signature; review as possible duplicate source record."
+          }
+        ],
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_branch": [
+        "DSM14828",
+        "DSM119686"
+      ],
+      "final_pH": 9
+    },
+    "rationale": "The maintained DSM14828 owner already has source-supported ph_value9.0 without attached evidence. The generated target preserves only base pH and stale duplicate links; retain the branch independently.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "DSM14828/119686 paragraph",
+        "exact_source_quote": "For DSM 14828, DSM 119686: Omit starch, add 5.00 g/l D-glucose and increase the",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      },
+      {
+        "source_key": "dsmz895",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf",
+        "source_locator": "Following line",
+        "exact_source_quote": "concentration of Tryptone to 2.00 g/l. Adjust pH of complete medium to 9.0.",
+        "snapshot_sha256": "711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0",
+        "parsed_text_sha256": "449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b"
+      }
+    ]
+  }
+]
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: concern. Targets: CultureMech:006750.
+
+33 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 33/35 primary and 31/35 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Exact supplied-form mismatch is addressed separately; valid IDs and labels do not establish correct source grounding.
+
+Instance coverage on a 0–100 percent scale, denominator 35: primary 94.29%; secondary 88.57%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Exact collection and four maintained identities
+
+identity: supported. Targets: CultureMech:006750.
+
+DSMZ895 and KOMODO895/895.1/895.2 are exact catalog matches. All four maintained stable IDs resolve at their exact-case paths. The DSMZ parent is CultureMech:002058; KOMODO main is006750; strain wrappers are006748 and006749. The primary directly names the strain modifications, so failed optional detail pages do not make current branch identity unavailable.
+
+### Complete concentration coverage and provenance limits
+
+evidence: concern. Targets: CultureMech:006750.
+
+All 175 local concentration instances are covered with literal primary snippets and exact stored locators. No local ingredient has attached amount evidence; matching declared-basis values therefore receive evidence_only. Historical repository reports retain derivative quotations and hashes; they do not recover the unavailable main API or prove chronology.
+
+### Sodium salt, nickel hydrate and source stereochemical labels
+
+grounding: concern. Targets: CultureMech:006750.
+
+CHEBI8806 is neutral resazurin whereas source supplies sodium resazurin; CHEBI34887 is Cl2Ni whereas source supplies hexahydrate. Source Calcium D-(+)-pantothenate agrees with CHEBI31345 D synonyms and stereospecific structure; DL-lipoic acid remains explicitly supplied while CHEBI16494 is generic/non-stereospecific, not a contradictory L-only mapping. Other asserted hydrates agree. Yeast extract and tryptone remain product mixtures without invented chemical equivalents.
+
+### Maintained base preparation and source-only variants
+
+completeness: concern. Targets: CultureMech:006750.
+
+DSMZ owner retains main preparation and mineral pH sequence; other layers omit preparation. The mineral instruction belongs in its stock. Preserve initial main pH7.5 versus final9.3–9.5, separate gas stages, vitamin filtration and conditional branch additions. Unspecified stock volumes and cycle parameters remain unspecified.
+
+### Complex liquid medium and source metadata
+
+scope: supported. Targets: CultureMech:006750.
+
+COMPLEX/UNDEFINED is appropriate for yeast extract/tryptone and LIQUID for absence of a solidifier. Starch is a source substrate, not evidence of a solid agar state. Inherited Aerobic: Yes is catalog metadata and must not override explicitly anaerobic preparation or establish biological phenotype.
+
+### Resolvable paths versus stale scientific relationship meaning
+
+graph: concern. Targets: CultureMech:006750.
+
+All nine parent/child path+ID assertions resolve in ignored-inclusive inventory and current records. Maintained topology identifies KOMODO main as SOURCE_DUPLICATE and wrappers as STRAIN_SPECIFIC_VARIANT, but the generated target retains SOURCE_DUPLICATE children and synonyms. All four owners still have identical 35-component lists, so the later topology repair and ingredients_curated flags do not validate branch formulas.
+
+### Strain context without experimental growth claims
+
+scope: not_applicable. Targets: CultureMech:006750.
+
+DSM strain labels delimit source formula branches, not new growth evidence or taxonomy identifiers. No experimental growth object or graph-match claim is added. Parent DSM141/120 biological applications and unrelated stocks are outside the transfer scope.
+
+### Append-only history and timestamp shape
+
+provenance: concern. Targets: CultureMech:006750.
+
+54 timestamp instances inspected; 8 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Current writers and maintained input follow-up
+
+provenance: concern. Targets: CultureMech:006750.
+
+Current importer separates first-solution ingredients/receiving stocks but aggregates preparation at the root. Current cleanup retains the first conflicting duplicate with a warning; the historical duplicate sums remain visible in ingredient notes and are not attributed to the current function. Current lossless merge preserves distinctions. The exact topology repair requires the same 35-row signature and changes links/history/ingredients_curated flags without fixing quantities; this explains its bounded scope, not source validity. All four maintained contributors need scientific curation before authorized regeneration.
+
+## Findings
+
+### f1: Stock recipes and four cross-stage sums do not describe the main medium
+
+blocker / open / confirmed; issue key: culturemech.006750.stock-flattening-and-duplicate-sums.
+
+Every layer stores undiluted mineral/vitamin strengths as main g/L. Mg,Ca,Na andFe additionally sum base-normalized amounts with undiluted mineral values, as the ingredient notes explicitly show. For example Mg 3.0987167 is 0.0987167 + 3.0 rather than a dose-corrected mineral contribution.
+
+### f2: Source-defined strain variants retain the base formula and stale duplicate semantics
+
+blocker / open / confirmed; issue key: culturemech.006750.strain-formulas-and-stale-duplicates.
+
+The primary requires starch omission and tryptone 2 g/L for both branches, a 4 g/L thiosulfate supplement for DSM14826, and D-glucose 5 g/L plus pH 9 for DSM14828/119686. Maintained strain wrappers still carry the identical base list, though DSM14828 pH 9 is already correct. Generated children/synonyms still represent them as duplicates despite repaired maintained topology.
+
+### f3: Two supplied forms have different chemical identities than their terms
+
+major / open / confirmed; issue key: culturemech.006750.sodium-resazurin-nickel-hydrate.
+
+ingredients[10] supplies sodium resazurin but CHEBI8806 is neutral C12H7NO4. ingredients[22] supplies nickel hexahydrate but primary and secondary CHEBI34887 identify Cl2Ni. Source-compatible D-pantothenate is not included in this mismatch.
+
+### f4: Main preparation is lost outside the DSMZ owner and mineral pH is detached
+
+major / open / confirmed; issue key: culturemech.006750.preparation-loss-and-stock-scope.
+
+Only the DSMZ owner retains the main preparation and mineral pH sequence; all other local layers omit preparation. Its mineral instruction is a main-root step despite distinct stock pH 6.5 then 7.0. Branch-specific preparations are absent from their wrappers.
+
+### f5: Topology repair flags do not validate unchanged ingredient chemistry
+
+minor / open / confirmed; issue key: culturemech.006750.history-and-curated-flag-scope.
+
+The later topology repair sets ingredients_curated and preserves a required 35-row signature, while four source-stage sums and unchanged variant lists remain. Eight malformed/timezone-naive timestamp instances occur across 54 events. Old events and duplicate notes are provenance, not concentration evidence.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Reconstruct main quantities, iron/resazurin stocks, 10 mL minerals and 1 mL tenfold vitamins in all maintained contributors. Separate every duplicate source contribution before dilution. Preserve explicit 1013 mL header and 1013.5 mL liquid-sum distinction, with unspecified preparation-stock volumes documented; attach claim-level evidence.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Keep base and strain variants distinct. Apply only each explicit branch in its maintained wrapper; retain supplement wording without inventing a replacement thiosulfate total, and preserve already-supported DSM14828 pH 9. Align generated relationship meaning only after authorized owner curation/regeneration. Preserve source DSM119686 context without fabricating a local record.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Verify exact source-compatible salt/hydrate identifiers in each maintained layer, checking primary and secondary slots independently; preserve mixtures and source stereochemical qualifiers without invented replacement IDs.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Preserve the DSMZ main preparation, scope the mineral sequence under its stock, and recover source-supported main/branch preparation for the other contributors. Keep pH stages, N2/carbonate gas distinction, filtration and unquantified cycles/stock volumes explicit.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a5
+
+Append a precise scientific-curation event after authorized corrections, qualifying the earlier topology-only scope. Preserve historical events and source-stage duplicate provenance; do not silently rewrite old timestamps or treat the flag as scientific approval.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-1 | data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-2 | data/normalized_yaml/bacterial/for_dsm_14826.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-3 | data/normalized_yaml/bacterial/for_dsm_14828.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch027/270/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-027/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch027/270/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml:1:id: CultureMech:006750<br>./data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml:1:id: CultureMech:006750<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch027/source-preflight-bound/270/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 44 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| bound-owner-context | /private/tmp/culturemech-review-work-batch027/source-preflight-bound/270/evidence-context-original.json; Complete target and maintained owner; source and identifier search contexts | context_only | Whole fresh target and owner read; all frozen local-record objects equal the fresh inspected YAML. Source interpretations are independently checked against actual bound raw/text bytes. |
+| primary | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf; Complete two-page DSMZ 895, header/main table, preparation, two strain branches and two stocks | supports | The primary explicitly declares 1013 mL final volume. Its listed liquid inputs sum 1013.5 mL before unspecified preparation-stock volumes; preserve both statements without inventing a measured volume. It directly resolves DSM14826 and DSM14828/119686 branch instructions. |
+| mineral-parent | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf; Only Modified Wolin mineral subsection | supports | Exact named stock content was independently read. Parent main media, other stocks and biological applications are excluded; stock endpoint concentration fields are stock-level assertions. |
+| vitamin-parent | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium120.pdf; Only Wolin vitamin solution (10x) subsection | supports | Exact named stock content was independently read. Parent main media, other stocks and biological applications are excluded; stock endpoint concentration fields are stock-level assertions. |
+| mineral-api | https://mediadive.dsmz.de/rest/solution/241; Exact solution241 recipe/volume/steps | supports | Exact named stock content was independently read. Parent main media, other stocks and biological applications are excluded; stock endpoint concentration fields are stock-level assertions. |
+| vitamin-api | https://mediadive.dsmz.de/rest/solution/5980; Exact solution5980 recipe/volume | supports | Exact named stock content was independently read. Parent main media, other stocks and biological applications are excluded; stock endpoint concentration fields are stock-level assertions. |
+| catalog | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; Exact rows895/895.1/895.2 and column headers | supports | Catalog identities agree with main and two DSM-specific wrappers; current primary supplies branch composition independently of unavailable detailed pages. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch027/270/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| chebi131361 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:131361 resolves to disodium selenite pentahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi15940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:15940 resolves to nicotinic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:15956 resolves to biotin. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi16494 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:16494 resolves to lipoic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi17015 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:17015 resolves to riboflavin. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi176843 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:176843 resolves to vitamin B12. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:26710 resolves to sodium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi27470 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:27470 resolves to folic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi28017 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_28017; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:28017 resolves to starch. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:29377 resolves to sodium carbonate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:30753 resolves to 4-aminobenzoic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi30961 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:30961 resolves to pyridoxine hydrochloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31206 resolves to ammonium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31345 resolves to Calcium pantothenate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31440 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31440 resolves to copper(II) sulfate pentahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32150 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32150; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32150 resolves to sodium thiosulfate pentahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32312 resolves to zinc sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:33118 resolves to boric acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:34887 resolves to nickel dichloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi44557 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_44557; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:44557 resolves to nitrilotriacetic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi49105 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:49105 resolves to thiamine hydrochloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi62946 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:62946 resolves to ammonium sulfate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi63939 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:63939 resolves to sodium tungstate dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi75836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:75836 resolves to iron(2+) sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86364 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86364; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86364 resolves to manganese(II) sulfate monohydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86465 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86465; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86465 resolves to potassium aluminium sulfate dodecahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:8806 resolves to Resazurin. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi91244 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91244; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:91244 resolves to cobalt(2+) sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi91248 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91248; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:91248 resolves to L-cysteine hydrochloride hydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131361": [{"label": "Na2SeO3 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:131361", "preferred_term": "Na2SeO3 x 5 H2O", "ontology_id": "CHEBI:131361", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:131527": [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15940": [{"label": "Nicotinic acid", "match_type": "preferred_term", "identifier": "CHEBI:15940", "preferred_term": "Nicotinic acid", "ontology_id": "CHEBI:15940", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15956": [{"label": "Biotin", "match_type": "preferred_term", "identifier": "CHEBI:15956", "preferred_term": "Biotin", "ontology_id": "CHEBI:15956", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:16494": [{"label": "(DL)-alpha-Lipoic acid", "match_type": "preferred_term", "identifier": "CHEBI:16494", "preferred_term": "(DL)-alpha-Lipoic acid", "ontology_id": "CHEBI:16494", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17015": [{"label": "Riboflavin", "match_type": "preferred_term", "identifier": "CHEBI:17015", "preferred_term": "Riboflavin", "ontology_id": "CHEBI:17015", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:176843": [{"label": "Vitamin B12", "match_type": "preferred_term", "identifier": "CHEBI:176843", "preferred_term": "Vitamin B12", "ontology_id": "CHEBI:176843", "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:27470": [{"label": "Folic acid", "match_type": "preferred_term", "identifier": "CHEBI:27470", "preferred_term": "Folic acid", "ontology_id": "CHEBI:27470", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:28017": [{"label": "Starch", "match_type": "preferred_term", "identifier": "CHEBI:28017", "preferred_term": "Starch", "ontology_id": "CHEBI:28017", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:29377": [{"label": "Na2CO3", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Na2CO3", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium carbonate solution", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Sodium carbonate solution", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:30753": [{"label": "p-Aminobenzoic acid", "match_type": "preferred_term", "identifier": "CHEBI:30753", "preferred_term": "p-Aminobenzoic acid", "ontology_id": "CHEBI:30753", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:30961": [{"label": "Pyridoxine hydrochloride", "match_type": "preferred_term", "identifier": "CHEBI:30961", "preferred_term": "Pyridoxine hydrochloride", "ontology_id": "CHEBI:30961", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31206": [{"label": "NH4Cl", "match_type": "preferred_term", "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31440": [{"label": "CuSO4 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32150": [{"label": "Na2S2O3 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:32150", "preferred_term": "Na2S2O3 x 5 H2O", "ontology_id": "CHEBI:32150", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32312": [{"label": "ZnSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:34887": [{"label": "NiCl2", "match_type": "preferred_term", "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:44557": [{"label": "Nitrilotriacetic acid", "match_type": "preferred_term", "identifier": "CHEBI:44557", "preferred_term": "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:49105": [{"label": "Thiamine HCl", "match_type": "preferred_term", "identifier": "CHEBI:49105", "preferred_term": "Thiamine HCl", "ontology_id": "CHEBI:49105", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:62946": [{"label": "(NH4)2SO4", "match_type": "preferred_term", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63939": [{"label": "Na2WO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75836": [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86364": [{"label": "MnSO4 x H2O", "match_type": "preferred_term", "identifier": "CHEBI:86364", "preferred_term": "MnSO4 x H2O", "ontology_id": "CHEBI:86364", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86465": [{"label": "AlK(SO4)2 x 12 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86465", "preferred_term": "AlK(SO4)2 x 12 H2O", "ontology_id": "CHEBI:86465", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:91244": [{"label": "CoSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:91244", "preferred_term": "CoSO4 x 7 H2O", "ontology_id": "CHEBI:91244", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:91248": [{"label": "L-Cysteine HCl x H2O", "match_type": "preferred_term", "identifier": "CHEBI:91248", "preferred_term": "L-Cysteine HCl x H2O", "ontology_id": "CHEBI:91248", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| history-metadata | data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml; data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml; data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml; data/normalized_yaml/bacterial/for_dsm_14826.yaml; data/normalized_yaml/bacterial/for_dsm_14828.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 12, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:03.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:02.399583"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml", "events": 11, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:03.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:02.399583"}]}, {"input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml", "events": 10, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml", "events": 11, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:03.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:12.136948"}]}, {"input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml", "events": 10, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:03.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:03.029137"}]}] |
+| current-code-0 | src/culturemech/import/mediadive_importer.py; Current scoped functions read; supplemental current code hash; no historical-version inference | context_only | Current importer separates first-solution ingredients/receiving stocks but aggregates preparation at the root. Current cleanup retains the first conflicting duplicate with a warning; the historical duplicate sums remain visible in ingredient notes and are not attributed to the current function. Current lossless merge preserves distinctions. The exact topology repair requires the same 35-row signature and changes links/history/ingredients_curated flags without fixing quantities; this explains its bounded scope, not source validity. All four maintained contributors need scientific curation before authorized regeneration. |
+| current-code-1 | scripts/cleanup_media_quality.py; Current scoped functions read; supplemental current code hash; no historical-version inference | context_only | Current importer separates first-solution ingredients/receiving stocks but aggregates preparation at the root. Current cleanup retains the first conflicting duplicate with a warning; the historical duplicate sums remain visible in ingredient notes and are not attributed to the current function. Current lossless merge preserves distinctions. The exact topology repair requires the same 35-row signature and changes links/history/ingredients_curated flags without fixing quantities; this explains its bounded scope, not source validity. All four maintained contributors need scientific curation before authorized regeneration. |
+| current-code-2 | src/culturemech/merge/formulation.py; Current scoped functions read; supplemental current code hash; no historical-version inference | context_only | Current importer separates first-solution ingredients/receiving stocks but aggregates preparation at the root. Current cleanup retains the first conflicting duplicate with a warning; the historical duplicate sums remain visible in ingredient notes and are not attributed to the current function. Current lossless merge preserves distinctions. The exact topology repair requires the same 35-row signature and changes links/history/ingredients_curated flags without fixing quantities; this explains its bounded scope, not source validity. All four maintained contributors need scientific curation before authorized regeneration. |
+| current-code-3 | scripts/repair_komodo_895_anaerobranca_score10.py; Current scoped functions read; supplemental current code hash; no historical-version inference | context_only | Current importer separates first-solution ingredients/receiving stocks but aggregates preparation at the root. Current cleanup retains the first conflicting duplicate with a warning; the historical duplicate sums remain visible in ingredient notes and are not attributed to the current function. Current lossless merge preserves distinctions. The exact topology repair requires the same 35-row signature and changes links/history/ingredients_curated flags without fixing quantities; this explains its bounded scope, not source validity. All four maintained contributors need scientific curation before authorized regeneration. |
+| mediadive895api-attempt | https://mediadive.dsmz.de/rest/medium/895; Preserved exact public retrieval result | context_only | Exact main API or KOMODO detail access is unavailable (503/403), with actual original attempts retained. Complete current primary, catalog and relevant stock endpoints support this comparison; no required check is mislabeled unavailable solely for this optional access limit. |
+| komodo895detail-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=895; Preserved exact public retrieval result | context_only | Exact main API or KOMODO detail access is unavailable (503/403), with actual original attempts retained. Complete current primary, catalog and relevant stock endpoints support this comparison; no required check is mislabeled unavailable solely for this optional access limit. |
+| komodo895_1detail-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=895.1; Preserved exact public retrieval result | context_only | Exact main API or KOMODO detail access is unavailable (503/403), with actual original attempts retained. Complete current primary, catalog and relevant stock endpoints support this comparison; no required check is mislabeled unavailable solely for this optional access limit. |
+| komodo895_2detail-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=895.2; Preserved exact public retrieval result | context_only | Exact main API or KOMODO detail access is unavailable (503/403), with actual original attempts retained. Complete current primary, catalog and relevant stock endpoints support this comparison; no required check is mislabeled unavailable solely for this optional access limit. |
+| mediadive895api_retry-attempt | https://mediadive.dsmz.de/rest/medium/895; Preserved exact public retrieval result | context_only | Exact main API or KOMODO detail access is unavailable (503/403), with actual original attempts retained. Complete current primary, catalog and relevant stock endpoints support this comparison; no required check is mislabeled unavailable solely for this optional access limit. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Exact main API or KOMODO detail access is unavailable (503/403), with actual original attempts retained. Complete current primary, catalog and relevant stock endpoints support this comparison; no required check is mislabeled unavailable solely for this optional access limit.
+- Exact main API or KOMODO detail access is unavailable (503/403), with actual original attempts retained. Complete current primary, catalog and relevant stock endpoints support this comparison; no required check is mislabeled unavailable solely for this optional access limit.
+- Exact main API or KOMODO detail access is unavailable (503/403), with actual original attempts retained. Complete current primary, catalog and relevant stock endpoints support this comparison; no required check is mislabeled unavailable solely for this optional access limit.
+- Exact main API or KOMODO detail access is unavailable (503/403), with actual original attempts retained. Complete current primary, catalog and relevant stock endpoints support this comparison; no required check is mislabeled unavailable solely for this optional access limit.
+- Exact main API or KOMODO detail access is unavailable (503/403), with actual original attempts retained. Complete current primary, catalog and relevant stock endpoints support this comparison; no required check is mislabeled unavailable solely for this optional access limit.
+- Current primary directly resolves branch instructions; no historical KOMODO access limit is used to claim current formulation identity unavailable. All asserted current CHEBI-based secondary mappings were checked; no legacy MIM assertion requires historical recovery here.
+- The declared 1013 mL normalization and 1013.5 mL listed-liquid arithmetic coexist in the source. They do not establish a measured final volume; unspecified preparation-stock volumes and thiosulfate supplement interpretation remain explicitly bounded.
+- No organism growth, taxonomic replacement, percent-basis conversion or unprovided autoclave cycle is inferred. Parent mineral and 10x vitamin sources transfer only their named subsections.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T152748Z-culturemech-006750-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: anaerobranca_gottschalkii_medium (CultureMech:006750)'
+started_at: '2026-10-21T15:15:06Z'
+finished_at: '2026-10-21T15:27:48Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: DSMZ 895 and its two strain branches are directly supported, but all five
+  local layers retain flattened stock concentrations and four cross-stage duplicate
+  sums. Maintained topology distinguishes strain variants while the generated target
+  still calls them duplicates. Source-compatible sodium-resazurin/nickel-hydrate grounding
+  and scoped preparation recovery are needed; available primary evidence supports
+  a completed comparison with explicit volume limits.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml
+    sha256: dc5ddbc93c2b403bac117f429822c6656ca0de6ca367253585ce54a7ed036e45
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml
+    sha256: 0130a90dd846126e0e6d29beebbc504a58033c975bafef2b11af43167d8e2e0b
+    role: context
+  - path: data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml
+    sha256: 90e191321ad90f5bc981f7f24a243be8bb44bb94eeb5e9e2c2f534e8e6b94f50
+    role: context
+  - path: data/normalized_yaml/bacterial/for_dsm_14826.yaml
+    sha256: 3b7c4874f3eeda83618112e0c12b09837deab27b5d0122aff84c6c82e1ed410d
+    role: context
+  - path: data/normalized_yaml/bacterial/for_dsm_14828.yaml
+    sha256: 04c19a3699e92bc0a5d3b0f387cd0947b5a715dcce32d0155f149319062bed63
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml.md
+    sha256: 0776a9cabdfbd8099a2c974675e8485106473ab29f70771d87db6f8bfe51017e
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/for_dsm_14826.yaml.md
+    sha256: 4532f15388dd5ed2985cf130752716aa534ab61943501d88e4ad989202d1e4b1
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/for_dsm_14828.yaml.md
+    sha256: e6293701d459378041e20248b4d7b3afd26242b635c3ac9525dfe6a39e482150
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/anaerobranca_gottschalkii_medium.yaml.md
+    sha256: f3a9ba6446cab732119117ee37ea5be67ecd93261d601dc3cfbacf121444ac53
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_komodo_895_anaerobranca_score10.py
+    sha256: 2c18c0470ba112de487eaeb5f8ac47bf3ec3813fd7200984f30fbb880aa6132e
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/resolve_komodo_compositions.py
+    sha256: f45bc52a8efaa66c9a93c109a40c7d2763ac9f49c9009d92a4c0a0a41b7c28da
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/komodo_web_raw_yaml.py
+    sha256: a1a37015b4e6bac657e49f375b39a319815cc6b02a02135674a858a8b6eab03a
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/komodo_web_fetcher.py
+    sha256: 89c510caa08d989b7ec6cee9ac17cc2f0faab606fe8a29ca435df476e52ff004
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 270; batch 027 item 10 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding twenty-six task batches
+    contain 260 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 263 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:006750
+targets:
+- target_id: CultureMech:006750
+  path: data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml
+  label: anaerobranca_gottschalkii_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14826.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14828.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:006750
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch027/270/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-027/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch027/270/strict.tsv"
+  target_ids:
+  - CultureMech:006750
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:006750
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:006750
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:006750
+- check_id: mediadive895api-source-access
+  name: 'Exact source content access: mediadive895api'
+  required: false
+  status: unavailable
+  summary: Exact main API or KOMODO detail access is unavailable (503/403), with actual
+    original attempts retained. Complete current primary, catalog and relevant stock
+    endpoints support this comparison; no required check is mislabeled unavailable
+    solely for this optional access limit.
+  target_ids:
+  - CultureMech:006750
+  evidence_ids:
+  - mediadive895api-attempt
+- check_id: komodo895detail-source-access
+  name: 'Exact source content access: komodo895detail'
+  required: false
+  status: unavailable
+  summary: Exact main API or KOMODO detail access is unavailable (503/403), with actual
+    original attempts retained. Complete current primary, catalog and relevant stock
+    endpoints support this comparison; no required check is mislabeled unavailable
+    solely for this optional access limit.
+  target_ids:
+  - CultureMech:006750
+  evidence_ids:
+  - komodo895detail-attempt
+- check_id: komodo895_1detail-source-access
+  name: 'Exact source content access: komodo895_1detail'
+  required: false
+  status: unavailable
+  summary: Exact main API or KOMODO detail access is unavailable (503/403), with actual
+    original attempts retained. Complete current primary, catalog and relevant stock
+    endpoints support this comparison; no required check is mislabeled unavailable
+    solely for this optional access limit.
+  target_ids:
+  - CultureMech:006750
+  evidence_ids:
+  - komodo895_1detail-attempt
+- check_id: komodo895_2detail-source-access
+  name: 'Exact source content access: komodo895_2detail'
+  required: false
+  status: unavailable
+  summary: Exact main API or KOMODO detail access is unavailable (503/403), with actual
+    original attempts retained. Complete current primary, catalog and relevant stock
+    endpoints support this comparison; no required check is mislabeled unavailable
+    solely for this optional access limit.
+  target_ids:
+  - CultureMech:006750
+  evidence_ids:
+  - komodo895_2detail-attempt
+- check_id: mediadive895api_retry-source-access
+  name: 'Exact source content access: mediadive895api_retry'
+  required: false
+  status: unavailable
+  summary: Exact main API or KOMODO detail access is unavailable (503/403), with actual
+    original attempts retained. Complete current primary, catalog and relevant stock
+    endpoints support this comparison; no required check is mislabeled unavailable
+    solely for this optional access limit.
+  target_ids:
+  - CultureMech:006750
+  evidence_ids:
+  - mediadive895api_retry-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T15:27:46Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T15:27:46Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T15:27:46Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/for_dsm_14826.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T15:27:46Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-3
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/for_dsm_14828.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T15:27:46Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T15:16:15.220715Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch027/270/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T15:16:17.432407Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-027/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch027/270/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T15:16:21.194472Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T15:16:22.934269Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T15:27:46Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml:1:id: CultureMech:006750
+
+    ./data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml:1:id:
+    CultureMech:006750
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch027/source-preflight-bound/270/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T15:27:46Z'
+  support: supports
+  summary: 44 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: de0dd892b4c7da7ef38c23955c7cd7c4ad136eac95d155c2c578931b31abd6dd
+- evidence_id: bound-owner-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch027/source-preflight-bound/270/evidence-context-original.json
+  locator: Complete target and maintained owner; source and identifier search contexts
+  accessed_at: '2026-10-21T15:27:46Z'
+  support: context_only
+  summary: Whole fresh target and owner read; all frozen local-record objects equal
+    the fresh inspected YAML. Source interpretations are independently checked against
+    actual bound raw/text bytes.
+  snapshot_sha256: 236b9eae6944e2d7bfdf2b2c746df85ad98d44ea91a8e83c3e2daafb4f3d3a96
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf
+  locator: Complete two-page DSMZ 895, header/main table, preparation, two strain
+    branches and two stocks
+  accessed_at: '2026-10-21T14:59:59.817520Z'
+  support: supports
+  summary: The primary explicitly declares 1013 mL final volume. Its listed liquid
+    inputs sum 1013.5 mL before unspecified preparation-stock volumes; preserve both
+    statements without inventing a measured volume. It directly resolves DSM14826
+    and DSM14828/119686 branch instructions.
+  snapshot_sha256: 711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0
+- evidence_id: mineral-parent
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf
+  locator: Only Modified Wolin mineral subsection
+  accessed_at: '2026-10-21T10:13:12.306566Z'
+  support: supports
+  summary: Exact named stock content was independently read. Parent main media, other
+    stocks and biological applications are excluded; stock endpoint concentration
+    fields are stock-level assertions.
+  snapshot_sha256: 8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8
+- evidence_id: vitamin-parent
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium120.pdf
+  locator: Only Wolin vitamin solution (10x) subsection
+  accessed_at: '2026-10-21T13:16:27.298931Z'
+  support: supports
+  summary: Exact named stock content was independently read. Parent main media, other
+    stocks and biological applications are excluded; stock endpoint concentration
+    fields are stock-level assertions.
+  snapshot_sha256: e1f85e4a546abc825218226bbb18d78bd9c054b7e11399aa7161ad259a3b663f
+- evidence_id: mineral-api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/241
+  locator: Exact solution241 recipe/volume/steps
+  accessed_at: '2026-10-21T10:37:16.846684Z'
+  support: supports
+  summary: Exact named stock content was independently read. Parent main media, other
+    stocks and biological applications are excluded; stock endpoint concentration
+    fields are stock-level assertions.
+  snapshot_sha256: 50cc42c209f550b7abc4a5f48b455553516220b6ef9613f481941f9e15f0b25d
+- evidence_id: vitamin-api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/5980
+  locator: Exact solution5980 recipe/volume
+  accessed_at: '2026-10-21T11:03:05.362213Z'
+  support: supports
+  summary: Exact named stock content was independently read. Parent main media, other
+    stocks and biological applications are excluded; stock endpoint concentration
+    fields are stock-level assertions.
+  snapshot_sha256: 2fe24a83c789ebc28eb97268a788cabd1316ae131baaea269df79019a14f992c
+- evidence_id: catalog
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Exact rows895/895.1/895.2 and column headers
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: Catalog identities agree with main and two DSM-specific wrappers; current
+    primary supplies branch composition independently of unavailable detailed pages.
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch027/270/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T15:27:46Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: e3a18b3e06c4ab812529bdfd3e856f0047cd80d60174e5cf75d8fbd7038306fe
+- evidence_id: chebi131361
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:33:27.980786Z'
+  support: supports
+  summary: CHEBI:131361 resolves to disodium selenite pentahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 643fefa89a2c0afeb2a00a0dd6149dbbf86cc4824369c58bde1c6ea6d4316d10
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi15940
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:11.874279Z'
+  support: supports
+  summary: CHEBI:15940 resolves to nicotinic acid. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 3330ed782e73526a087fb250ed5895ff232f117a896d45d541dff431e5c1f0e1
+- evidence_id: chebi15956
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:30.425993Z'
+  support: supports
+  summary: CHEBI:15956 resolves to biotin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: d2d51887df4de92642b66e9d15086ef82eccbc476dd4077d514ca709181ab4bd
+- evidence_id: chebi16494
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:13.001958Z'
+  support: supports
+  summary: CHEBI:16494 resolves to lipoic acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: aa3c1003d6266cc48f19a4d1d9527edd6844b96094a911e9a3c4f6a8851444e1
+- evidence_id: chebi17015
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:11.583596Z'
+  support: supports
+  summary: CHEBI:17015 resolves to riboflavin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: f42bc5bbd29b208bfd3062acb11dfa63ccebf81f77ffd72ab596de863cb68aa4
+- evidence_id: chebi176843
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.997779Z'
+  support: supports
+  summary: CHEBI:176843 resolves to vitamin B12. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: b535c3de88f47e93aed8909c58ff4e2d054a6845dea3bc9a048c18df12b371a9
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi27470
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:10.450814Z'
+  support: supports
+  summary: CHEBI:27470 resolves to folic acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: fe3e4a2f0f0fa51f94efe6bbf0fa8883d43eafef8db73cfd37bc25ce15fdd12f
+- evidence_id: chebi28017
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_28017
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:42.748724Z'
+  support: supports
+  summary: CHEBI:28017 resolves to starch. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 959b4330165a7ff12d2e464f4a7b44e148376624d04cf7764b6a8671c1c99204
+- evidence_id: chebi29377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:31:16.500548Z'
+  support: supports
+  summary: CHEBI:29377 resolves to sodium carbonate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 21ae6468f9d087fd7930a263fc44728e31a8babde3576135686278a13bc1d6e1
+- evidence_id: chebi30753
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:12.829785Z'
+  support: supports
+  summary: CHEBI:30753 resolves to 4-aminobenzoic acid. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 97ea54b8020d3bcda2478182be115d2bc632249ee22b197b0575a4a9fd5fe21a
+- evidence_id: chebi30961
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:44.571163Z'
+  support: supports
+  summary: CHEBI:30961 resolves to pyridoxine hydrochloride. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: f1c95b83f5396067c3959c20ee4715c78f7895f5084dd214b3a4bf01e064f21d
+- evidence_id: chebi31206
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.439407Z'
+  support: supports
+  summary: CHEBI:31206 resolves to ammonium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi31345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:12.450283Z'
+  support: supports
+  summary: CHEBI:31345 resolves to Calcium pantothenate. Identifier existence and
+    label metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 56fc4b33c78d82faf317e131ae936f2e00eab0c369b2a9d8be86eddff6fd616d
+- evidence_id: chebi31440
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.489501Z'
+  support: supports
+  summary: CHEBI:31440 resolves to copper(II) sulfate pentahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: e8ac76313670beb01b2eea5bf76bd0e4a341d0798c99d947484fbdd280d297f9
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32150
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32150
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T11:01:47.429763Z'
+  support: supports
+  summary: CHEBI:32150 resolves to sodium thiosulfate pentahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 910d65eb9be29c9371cb79a32bcbe81bdb57d8143d21fbf7c4a1a915b5a79999
+- evidence_id: chebi32312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.879505Z'
+  support: supports
+  summary: CHEBI:32312 resolves to zinc sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.364390Z'
+  support: supports
+  summary: CHEBI:33118 resolves to boric acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi34887
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:04:44.093348Z'
+  support: supports
+  summary: CHEBI:34887 resolves to nickel dichloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: chebi44557
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_44557
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:46:15.250117Z'
+  support: supports
+  summary: CHEBI:44557 resolves to nitrilotriacetic acid. Identifier existence and
+    label metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: de62dde44d3e28362211eddd4e16e41f6b748508618c828ac760036f8024f6c2
+- evidence_id: chebi49105
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:10.911379Z'
+  support: supports
+  summary: CHEBI:49105 resolves to thiamine hydrochloride. Identifier existence and
+    label metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 0b923c215888606038af1e3f0c1b1bcc35e4ab84966d1733a91fdfcbee8f2ae4
+- evidence_id: chebi62946
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:43:02.566401Z'
+  support: supports
+  summary: CHEBI:62946 resolves to ammonium sulfate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 10c25b481047a1fdfbc201104ecc06b15b32d5e72319beed5133e5d5693bede5
+- evidence_id: chebi63939
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:09.796192Z'
+  support: supports
+  summary: CHEBI:63939 resolves to sodium tungstate dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 987144fa0342502834f116860a4b4f71696f62c18e7b701301667c15e588562a
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi75836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:07.038393Z'
+  support: supports
+  summary: CHEBI:75836 resolves to iron(2+) sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86364
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86364
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:33:35.036768Z'
+  support: supports
+  summary: CHEBI:86364 resolves to manganese(II) sulfate monohydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: f1da0a281e1fa2263226a8548afc0bf76db61dd36828240b47d83431bd182069
+- evidence_id: chebi86465
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86465
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:08.054799Z'
+  support: supports
+  summary: CHEBI:86465 resolves to potassium aluminium sulfate dodecahydrate. Identifier
+    existence and label metadata do not establish source-specific hydrate, stereochemistry
+    or product identity.
+  snapshot_sha256: 5e74b8136b972b18b427c70e758e12dfe013a6ca671501cddc936038299f7c2c
+- evidence_id: chebi8806
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.774007Z'
+  support: supports
+  summary: CHEBI:8806 resolves to Resazurin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: chebi91244
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91244
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:07.079384Z'
+  support: supports
+  summary: CHEBI:91244 resolves to cobalt(2+) sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: dd763e0620a8afe61626951123a4de5d100bfa4534ee26ba0a39dad4e7e9bcaa
+- evidence_id: chebi91248
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91248
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:32.136441Z'
+  support: supports
+  summary: CHEBI:91248 resolves to L-cysteine hydrochloride hydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 7ef9e26cec1a5833d216a01df066c0b6a0bfba77bad16db354c690a7a814a683
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T15:27:46Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131361":
+    [{"label": "Na2SeO3 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:131361",
+    "preferred_term": "Na2SeO3 x 5 H2O", "ontology_id": "CHEBI:131361", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:131527": [{"label": "K2HPO4", "match_type":
+    "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id":
+    "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15940":
+    [{"label": "Nicotinic acid", "match_type": "preferred_term", "identifier": "CHEBI:15940",
+    "preferred_term": "Nicotinic acid", "ontology_id": "CHEBI:15940", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:15956": [{"label": "Biotin", "match_type":
+    "preferred_term", "identifier": "CHEBI:15956", "preferred_term": "Biotin", "ontology_id":
+    "CHEBI:15956", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:16494":
+    [{"label": "(DL)-alpha-Lipoic acid", "match_type": "preferred_term", "identifier":
+    "CHEBI:16494", "preferred_term": "(DL)-alpha-Lipoic acid", "ontology_id": "CHEBI:16494",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17015": [{"label":
+    "Riboflavin", "match_type": "preferred_term", "identifier": "CHEBI:17015", "preferred_term":
+    "Riboflavin", "ontology_id": "CHEBI:17015", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:176843": [{"label": "Vitamin B12", "match_type": "preferred_term",
+    "identifier": "CHEBI:176843", "preferred_term": "Vitamin B12", "ontology_id":
+    "CHEBI:176843", "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}], "CHEBI:26710":
+    [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710",
+    "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:27470": [{"label": "Folic acid", "match_type":
+    "preferred_term", "identifier": "CHEBI:27470", "preferred_term": "Folic acid",
+    "ontology_id": "CHEBI:27470", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:28017": [{"label": "Starch", "match_type": "preferred_term", "identifier":
+    "CHEBI:28017", "preferred_term": "Starch", "ontology_id": "CHEBI:28017", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:29377": [{"label": "Na2CO3", "match_type":
+    "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Na2CO3", "ontology_id":
+    "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium
+    carbonate solution", "match_type": "preferred_term", "identifier": "CHEBI:29377",
+    "preferred_term": "Sodium carbonate solution", "ontology_id": "CHEBI:29377", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:30753": [{"label": "p-Aminobenzoic acid",
+    "match_type": "preferred_term", "identifier": "CHEBI:30753", "preferred_term":
+    "p-Aminobenzoic acid", "ontology_id": "CHEBI:30753", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:30961": [{"label": "Pyridoxine hydrochloride",
+    "match_type": "preferred_term", "identifier": "CHEBI:30961", "preferred_term":
+    "Pyridoxine hydrochloride", "ontology_id": "CHEBI:30961", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:31206": [{"label": "NH4Cl", "match_type": "preferred_term",
+    "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31440": [{"label":
+    "CuSO4 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31440",
+    "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:32150": [{"label": "Na2S2O3 x 5 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:32150", "preferred_term":
+    "Na2S2O3 x 5 H2O", "ontology_id": "CHEBI:32150", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:32312": [{"label": "ZnSO4 x 7 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id":
+    "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118":
+    [{"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118",
+    "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:34887": [{"label": "NiCl2", "match_type": "preferred_term",
+    "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:44557": [{"label":
+    "Nitrilotriacetic acid", "match_type": "preferred_term", "identifier": "CHEBI:44557",
+    "preferred_term": "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:49105": [{"label": "Thiamine HCl", "match_type":
+    "preferred_term", "identifier": "CHEBI:49105", "preferred_term": "Thiamine HCl",
+    "ontology_id": "CHEBI:49105", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:62946": [{"label": "(NH4)2SO4", "match_type": "preferred_term", "identifier":
+    "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:63939": [{"label": "Na2WO4 x 2 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:63939", "preferred_term":
+    "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id":
+    "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75836":
+    [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75836",
+    "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term":
+    "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:86364": [{"label": "MnSO4 x H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:86364", "preferred_term": "MnSO4 x H2O", "ontology_id": "CHEBI:86364",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86465": [{"label":
+    "AlK(SO4)2 x 12 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86465",
+    "preferred_term": "AlK(SO4)2 x 12 H2O", "ontology_id": "CHEBI:86465", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:91244": [{"label": "CoSO4 x 7 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:91244", "preferred_term":
+    "CoSO4 x 7 H2O", "ontology_id": "CHEBI:91244", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:91248": [{"label": "L-Cysteine HCl x H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:91248", "preferred_term": "L-Cysteine HCl x H2O", "ontology_id":
+    "CHEBI:91248", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml; data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml;
+    data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml; data/normalized_yaml/bacterial/for_dsm_14826.yaml;
+    data/normalized_yaml/bacterial/for_dsm_14828.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T15:27:46Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 12, "timestamp_issues": [{"index": 0, "issue":
+    "malformed timestamp", "value": "2026-01-27T01:15:03.fZ"}, {"index": 1, "issue":
+    "timezone absent", "value": "2026-02-03T11:19:02.399583"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml",
+    "events": 11, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:03.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:02.399583"}]}, {"input": "data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml",
+    "events": 10, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/for_dsm_14826.yaml",
+    "events": 11, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:03.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:12.136948"}]}, {"input": "data/normalized_yaml/bacterial/for_dsm_14828.yaml",
+    "events": 10, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:03.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:03.029137"}]}]'
+- evidence_id: current-code-0
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current scoped functions read; supplemental current code hash; no historical-version
+    inference
+  accessed_at: '2026-10-21T15:27:46Z'
+  support: context_only
+  summary: Current importer separates first-solution ingredients/receiving stocks
+    but aggregates preparation at the root. Current cleanup retains the first conflicting
+    duplicate with a warning; the historical duplicate sums remain visible in ingredient
+    notes and are not attributed to the current function. Current lossless merge preserves
+    distinctions. The exact topology repair requires the same 35-row signature and
+    changes links/history/ingredients_curated flags without fixing quantities; this
+    explains its bounded scope, not source validity. All four maintained contributors
+    need scientific curation before authorized regeneration.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: current-code-1
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: Current scoped functions read; supplemental current code hash; no historical-version
+    inference
+  accessed_at: '2026-10-21T15:27:46Z'
+  support: context_only
+  summary: Current importer separates first-solution ingredients/receiving stocks
+    but aggregates preparation at the root. Current cleanup retains the first conflicting
+    duplicate with a warning; the historical duplicate sums remain visible in ingredient
+    notes and are not attributed to the current function. Current lossless merge preserves
+    distinctions. The exact topology repair requires the same 35-row signature and
+    changes links/history/ingredients_curated flags without fixing quantities; this
+    explains its bounded scope, not source validity. All four maintained contributors
+    need scientific curation before authorized regeneration.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: current-code-2
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current scoped functions read; supplemental current code hash; no historical-version
+    inference
+  accessed_at: '2026-10-21T15:27:46Z'
+  support: context_only
+  summary: Current importer separates first-solution ingredients/receiving stocks
+    but aggregates preparation at the root. Current cleanup retains the first conflicting
+    duplicate with a warning; the historical duplicate sums remain visible in ingredient
+    notes and are not attributed to the current function. Current lossless merge preserves
+    distinctions. The exact topology repair requires the same 35-row signature and
+    changes links/history/ingredients_curated flags without fixing quantities; this
+    explains its bounded scope, not source validity. All four maintained contributors
+    need scientific curation before authorized regeneration.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: current-code-3
+  kind: record_content
+  reference: scripts/repair_komodo_895_anaerobranca_score10.py
+  locator: Current scoped functions read; supplemental current code hash; no historical-version
+    inference
+  accessed_at: '2026-10-21T15:27:46Z'
+  support: context_only
+  summary: Current importer separates first-solution ingredients/receiving stocks
+    but aggregates preparation at the root. Current cleanup retains the first conflicting
+    duplicate with a warning; the historical duplicate sums remain visible in ingredient
+    notes and are not attributed to the current function. Current lossless merge preserves
+    distinctions. The exact topology repair requires the same 35-row signature and
+    changes links/history/ingredients_curated flags without fixing quantities; this
+    explains its bounded scope, not source validity. All four maintained contributors
+    need scientific curation before authorized regeneration.
+  snapshot_sha256: 2c18c0470ba112de487eaeb5f8ac47bf3ec3813fd7200984f30fbb880aa6132e
+- evidence_id: mediadive895api-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/895
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T14:59:58.556219Z'
+  support: context_only
+  summary: Exact main API or KOMODO detail access is unavailable (503/403), with actual
+    original attempts retained. Complete current primary, catalog and relevant stock
+    endpoints support this comparison; no required check is mislabeled unavailable
+    solely for this optional access limit.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: komodo895detail-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=895
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T14:59:58.217556Z'
+  support: context_only
+  summary: Exact main API or KOMODO detail access is unavailable (503/403), with actual
+    original attempts retained. Complete current primary, catalog and relevant stock
+    endpoints support this comparison; no required check is mislabeled unavailable
+    solely for this optional access limit.
+  snapshot_sha256: 454d39ef571a66a1bfa82e2ee4ebb896013ac1d83cb4523fc4f7533f61196e1d
+- evidence_id: komodo895_1detail-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=895.1
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T14:59:58.217958Z'
+  support: context_only
+  summary: Exact main API or KOMODO detail access is unavailable (503/403), with actual
+    original attempts retained. Complete current primary, catalog and relevant stock
+    endpoints support this comparison; no required check is mislabeled unavailable
+    solely for this optional access limit.
+  snapshot_sha256: ec477f14240cf474a282e149d57440c1c303901c3c15a6e0d9a70ed3ff93027c
+- evidence_id: komodo895_2detail-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=895.2
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T14:59:58.478693Z'
+  support: context_only
+  summary: Exact main API or KOMODO detail access is unavailable (503/403), with actual
+    original attempts retained. Complete current primary, catalog and relevant stock
+    endpoints support this comparison; no required check is mislabeled unavailable
+    solely for this optional access limit.
+  snapshot_sha256: b65dc44772a8bf507061084fb6a8ef1651ed3ee82f5bdba09ac5e155e7dd6e6e
+- evidence_id: mediadive895api_retry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/895
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T15:02:50.590212Z'
+  support: context_only
+  summary: Exact main API or KOMODO detail access is unavailable (503/403), with actual
+    original attempts retained. Complete current primary, catalog and relevant stock
+    endpoints support this comparison; no required check is mislabeled unavailable
+    solely for this optional access limit.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:006750
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 63 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:006750
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"component_or_context\": \"\
+    Main (NH4)2SO4\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.987167\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.987167\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.987167\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n        \"\
+    field_path\": \"ingredients[0].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"0.987167\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\",\n        \"field_path\"\
+    : \"ingredients[0].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.987167\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\":\
+    \ {\n      \"base_batch_mass_g\": 1,\n      \"declared_volume_ml\": 1013,\n  \
+    \    \"base_only_g_per_l_using_declared_volume\": 0.987166831194472,\n      \"\
+    source_volume_limit\": \"listed liquids 1013.5 mL plus unspecified preparation\
+    \ stocks\"\n    },\n    \"rationale\": \"Stored number matches source mass divided\
+    \ by the explicit 1.013 L header within rounding. Retain this declared basis,\
+    \ not a measured-volume claim; no attached evidence supports verified.\",\n  \
+    \  \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz895\",\n   \
+    \     \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Main table\",\n        \"exact_source_quote\"\
+    : \"(NH4)2SO4 1.00 g\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n    \
+    \    \"source_locator\": \"Header\",\n        \"exact_source_quote\": \"Final\
+    \ volume: 1013 ml\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q2\",\n    \"component_or_context\"\
+    : \"Main NH4Cl\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.394867\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.394867\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.394867\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n        \"\
+    field_path\": \"ingredients[1].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"0.394867\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\",\n        \"field_path\"\
+    : \"ingredients[1].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.394867\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\":\
+    \ {\n      \"base_batch_mass_g\": 0.4,\n      \"declared_volume_ml\": 1013,\n\
+    \      \"base_only_g_per_l_using_declared_volume\": 0.3948667324777888,\n    \
+    \  \"source_volume_limit\": \"listed liquids 1013.5 mL plus unspecified preparation\
+    \ stocks\"\n    },\n    \"rationale\": \"Stored number matches source mass divided\
+    \ by the explicit 1.013 L header within rounding. Retain this declared basis,\
+    \ not a measured-volume claim; no attached evidence supports verified.\",\n  \
+    \  \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz895\",\n   \
+    \     \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Main table\",\n        \"exact_source_quote\"\
+    : \"NH4Cl 0.40 g\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n    \
+    \    \"source_locator\": \"Header\",\n        \"exact_source_quote\": \"Final\
+    \ volume: 1013 ml\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q3\",\n    \"component_or_context\"\
+    : \"Main Na2S2O3 x 5 H2O\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0987167\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      },\n        \"decision\": \"evidence_only\"\n      },\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0987167\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      },\n        \"decision\": \"evidence_only\"\n      },\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0987167\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      },\n        \"decision\": \"evidence_only\"\n      },\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n       \
+    \ \"field_path\": \"ingredients[2].concentration\",\n        \"stored\": {\n \
+    \         \"value\": \"0.0987167\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\",\n        \"field_path\"\
+    : \"ingredients[2].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.0987167\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\":\
+    \ {\n      \"base_batch_mass_g\": 0.1,\n      \"declared_volume_ml\": 1013,\n\
+    \      \"base_only_g_per_l_using_declared_volume\": 0.0987166831194472,\n    \
+    \  \"source_volume_limit\": \"listed liquids 1013.5 mL plus unspecified preparation\
+    \ stocks\"\n    },\n    \"rationale\": \"Stored number matches source mass divided\
+    \ by the explicit 1.013 L header within rounding. Retain this declared basis,\
+    \ not a measured-volume claim; no attached evidence supports verified. Variant-specific\
+    \ changes are separately inventoried and must not be applied universally.\",\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz895\",\n \
+    \       \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Main table\",\n        \"exact_source_quote\"\
+    : \"Na2S2O3 x 5 H2O 0.10 g\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n    \
+    \    \"source_locator\": \"Header\",\n        \"exact_source_quote\": \"Final\
+    \ volume: 1013 ml\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q4\",\n    \"component_or_context\"\
+    : \"Main K2HPO4\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.493583\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.493583\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.493583\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n        \"\
+    field_path\": \"ingredients[3].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"0.493583\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\",\n        \"field_path\"\
+    : \"ingredients[3].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.493583\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\":\
+    \ {\n      \"base_batch_mass_g\": 0.5,\n      \"declared_volume_ml\": 1013,\n\
+    \      \"base_only_g_per_l_using_declared_volume\": 0.493583415597236,\n     \
+    \ \"source_volume_limit\": \"listed liquids 1013.5 mL plus unspecified preparation\
+    \ stocks\"\n    },\n    \"rationale\": \"Stored number matches source mass divided\
+    \ by the explicit 1.013 L header within rounding. Retain this declared basis,\
+    \ not a measured-volume claim; no attached evidence supports verified.\",\n  \
+    \  \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz895\",\n   \
+    \     \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Main table\",\n        \"exact_source_quote\"\
+    : \"K2HPO4 0.50 g\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n    \
+    \    \"source_locator\": \"Header\",\n        \"exact_source_quote\": \"Final\
+    \ volume: 1013 ml\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q5\",\n    \"component_or_context\"\
+    : \"Main MgSO4 x 7 H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3.0987167\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3.0987167\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3.0987167\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n        \"field_path\"\
+    : \"ingredients[4].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"3.0987167\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3.0987167\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"base_batch_mass_g\": 0.1,\n      \"declared_volume_ml\": 1013,\n\
+    \      \"base_only_g_per_l_using_declared_volume\": 0.0987166831194472,\n    \
+    \  \"source_volume_limit\": \"listed liquids 1013.5 mL plus unspecified preparation\
+    \ stocks\"\n    },\n    \"rationale\": \"Stored value sums the normalized main\
+    \ contribution and an undiluted mineral-stock g/L; separate those stages and apply\
+    \ the actual stock dose.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz895\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Main table\",\n        \"exact_source_quote\"\
+    : \"MgSO4 x 7 H2O 0.10 g\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n    \
+    \    \"source_locator\": \"Header\",\n        \"exact_source_quote\": \"Final\
+    \ volume: 1013 ml\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q6\",\n    \"component_or_context\"\
+    : \"Main CaCl2 x 2 H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1493583\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1493583\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1493583\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n        \"field_path\"\
+    : \"ingredients[5].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.1493583\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1493583\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"base_batch_mass_g\": 0.05,\n      \"declared_volume_ml\": 1013,\n\
+    \      \"base_only_g_per_l_using_declared_volume\": 0.0493583415597236,\n    \
+    \  \"source_volume_limit\": \"listed liquids 1013.5 mL plus unspecified preparation\
+    \ stocks\"\n    },\n    \"rationale\": \"Stored value sums the normalized main\
+    \ contribution and an undiluted mineral-stock g/L; separate those stages and apply\
+    \ the actual stock dose.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz895\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Main table\",\n        \"exact_source_quote\"\
+    : \"CaCl2 x 2 H2O 0.05 g\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n    \
+    \    \"source_locator\": \"Header\",\n        \"exact_source_quote\": \"Final\
+    \ volume: 1013 ml\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q7\",\n    \"component_or_context\"\
+    : \"Main NaCl\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10.87167\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10.87167\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10.87167\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n        \"field_path\"\
+    : \"ingredients[6].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"10.87167\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10.87167\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"base_batch_mass_g\": 10,\n      \"declared_volume_ml\": 1013,\n \
+    \     \"base_only_g_per_l_using_declared_volume\": 9.87166831194472,\n      \"\
+    source_volume_limit\": \"listed liquids 1013.5 mL plus unspecified preparation\
+    \ stocks\"\n    },\n    \"rationale\": \"Stored value sums the normalized main\
+    \ contribution and an undiluted mineral-stock g/L; separate those stages and apply\
+    \ the actual stock dose.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz895\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Main table\",\n        \"exact_source_quote\"\
+    : \"NaCl 10.00 g\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n    \
+    \    \"source_locator\": \"Header\",\n        \"exact_source_quote\": \"Final\
+    \ volume: 1013 ml\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q8\",\n    \"component_or_context\"\
+    : \"Main Yeast extract\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.246792\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.246792\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.246792\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n        \"\
+    field_path\": \"ingredients[8].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"0.246792\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\",\n        \"field_path\"\
+    : \"ingredients[8].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.246792\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\":\
+    \ {\n      \"base_batch_mass_g\": 0.25,\n      \"declared_volume_ml\": 1013,\n\
+    \      \"base_only_g_per_l_using_declared_volume\": 0.246791707798618,\n     \
+    \ \"source_volume_limit\": \"listed liquids 1013.5 mL plus unspecified preparation\
+    \ stocks\"\n    },\n    \"rationale\": \"Stored number matches source mass divided\
+    \ by the explicit 1.013 L header within rounding. Retain this declared basis,\
+    \ not a measured-volume claim; no attached evidence supports verified.\",\n  \
+    \  \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz895\",\n   \
+    \     \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Main table\",\n        \"exact_source_quote\"\
+    : \"Yeast extract (BD Bacto) 0.25 g\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n    \
+    \    \"source_locator\": \"Header\",\n        \"exact_source_quote\": \"Final\
+    \ volume: 1013 ml\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q9\",\n    \"component_or_context\"\
+    : \"Main Tryptone\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.246792\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.246792\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.246792\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n        \"\
+    field_path\": \"ingredients[9].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"0.246792\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.246792\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"base_batch_mass_g\": 0.25,\n      \"declared_volume_ml\": 1013,\n\
+    \      \"base_only_g_per_l_using_declared_volume\": 0.246791707798618,\n     \
+    \ \"source_volume_limit\": \"listed liquids 1013.5 mL plus unspecified preparation\
+    \ stocks\"\n    },\n    \"rationale\": \"Stored number matches source mass divided\
+    \ by the explicit 1.013 L header within rounding. Retain this declared basis,\
+    \ not a measured-volume claim; no attached evidence supports verified. Variant-specific\
+    \ changes are separately inventoried and must not be applied universally.\",\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz895\",\n \
+    \       \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Main table\",\n        \"exact_source_quote\"\
+    : \"Tryptone (BD Bacto) 0.25 g\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n    \
+    \    \"source_locator\": \"Header\",\n        \"exact_source_quote\": \"Final\
+    \ volume: 1013 ml\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q10\",\n    \"component_or_context\"\
+    : \"Main L-Cysteine HCl x H2O\",\n    \"decision\": \"evidence_only\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.493583\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.493583\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.493583\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"evidence_only\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n        \"\
+    field_path\": \"ingredients[11].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.493583\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\",\n        \"field_path\"\
+    : \"ingredients[11].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.493583\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\":\
+    \ {\n      \"base_batch_mass_g\": 0.5,\n      \"declared_volume_ml\": 1013,\n\
+    \      \"base_only_g_per_l_using_declared_volume\": 0.493583415597236,\n     \
+    \ \"source_volume_limit\": \"listed liquids 1013.5 mL plus unspecified preparation\
+    \ stocks\"\n    },\n    \"rationale\": \"Stored number matches source mass divided\
+    \ by the explicit 1.013 L header within rounding. Retain this declared basis,\
+    \ not a measured-volume claim; no attached evidence supports verified.\",\n  \
+    \  \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz895\",\n   \
+    \     \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Main table\",\n        \"exact_source_quote\"\
+    : \"L-Cysteine HCl x H2O 0.50 g\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n    \
+    \    \"source_locator\": \"Header\",\n        \"exact_source_quote\": \"Final\
+    \ volume: 1013 ml\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q11\",\n    \"component_or_context\"\
+    : \"Main Na2CO3\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.9615\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.9615\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.9615\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n        \"field_path\"\
+    : \"ingredients[12].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"2.9615\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"evidence_only\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.9615\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"base_batch_mass_g\": 3,\n      \"declared_volume_ml\": 1013,\n  \
+    \    \"base_only_g_per_l_using_declared_volume\": 2.961500493583416,\n      \"\
+    source_volume_limit\": \"listed liquids 1013.5 mL plus unspecified preparation\
+    \ stocks\"\n    },\n    \"rationale\": \"Stored number matches source mass divided\
+    \ by the explicit 1.013 L header within rounding. Retain this declared basis,\
+    \ not a measured-volume claim; no attached evidence supports verified.\",\n  \
+    \  \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz895\",\n   \
+    \     \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Main table\",\n        \"exact_source_quote\"\
+    : \"Na2CO3 3.00 g\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n    \
+    \    \"source_locator\": \"Header\",\n        \"exact_source_quote\": \"Final\
+    \ volume: 1013 ml\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q12\",\n    \"component_or_context\"\
+    : \"Main Starch\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.97433\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.97433\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.97433\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n        \"field_path\"\
+    : \"ingredients[13].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"1.97433\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.97433\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"base_batch_mass_g\": 2,\n      \"declared_volume_ml\": 1013,\n  \
+    \    \"base_only_g_per_l_using_declared_volume\": 1.974333662388944,\n      \"\
+    source_volume_limit\": \"listed liquids 1013.5 mL plus unspecified preparation\
+    \ stocks\"\n    },\n    \"rationale\": \"Stored number matches source mass divided\
+    \ by the explicit 1.013 L header within rounding. Retain this declared basis,\
+    \ not a measured-volume claim; no attached evidence supports verified. Variant-specific\
+    \ changes are separately inventoried and must not be applied universally.\",\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz895\",\n \
+    \       \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Main table\",\n        \"exact_source_quote\"\
+    : \"Starch (soluble) 2.00 g\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n    \
+    \    \"source_locator\": \"Header\",\n        \"exact_source_quote\": \"Final\
+    \ volume: 1013 ml\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q13\",\n    \"component_or_context\"\
+    : \"Iron sulfate receiving stock and false sum\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.10197433\",\n          \"unit\": \"G_PER_L\"\n \
+    \       },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.10197433\",\n          \"unit\": \"G_PER_L\"\n \
+    \       },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.10197433\",\n          \"unit\": \"G_PER_L\"\n \
+    \       },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n        \"field_path\"\
+    : \"ingredients[7].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.10197433\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.10197433\",\n          \"unit\": \"G_PER_L\"\n \
+    \       },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"main_iron_stock_dose_ml\": 2,\n      \"FeSO4_heptahydrate_stock_strength\"\
+    : \"0.1% w/v\",\n      \"acid_vehicle\": \"0.1 N H2SO4\",\n      \"main_iron_batch_g\"\
+    : 0.002,\n      \"mineral_stock_Fe_g_per_L\": 0.1,\n      \"mineral_dose_ml\"\
+    : 10,\n      \"combined_iron_batch_g_if_1000ml_mineral_basis\": 0.003,\n     \
+    \ \"declared_main_volume_ml\": 1013\n    },\n    \"rationale\": \"Local 0.10197433\
+    \ is approximately 0.002/1.013 + 0.1, adding undiluted mineral-stock concentration.\
+    \ The two contributions must be preserved separately; only the 10 mL mineral aliquot\
+    \ applies, and the source declared-versus-listed-volume distinction remains visible.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz895\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Main table\",\n        \"exact_source_quote\"\
+    : \"FeSO4 x 7 H2O (0.1% w/v in 0.1 N H2SO4) 2.00 ml\",\n        \"snapshot_sha256\"\
+    : \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\",\n    \
+    \    \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n    \
+    \    \"source_locator\": \"Modified Wolin mineral stock\",\n        \"exact_source_quote\"\
+    : \"FeSO4 x 7 H2O 0.10 g\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n    \
+    \    \"source_locator\": \"Header\",\n        \"exact_source_quote\": \"Final\
+    \ volume: 1013 ml\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q14\",\n    \"component_or_context\"\
+    : \"Sodium-resazurin stock amount\",\n    \"decision\": \"evidence_only\",\n \
+    \   \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.000493583\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"evidence_only\"\n      },\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.000493583\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"evidence_only\"\n      },\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.000493583\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"evidence_only\"\n      },\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n     \
+    \   \"field_path\": \"ingredients[10].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.000493583\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\",\n        \"field_path\"\
+    : \"ingredients[10].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.000493583\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"evidence_only\"\n      }\n    ],\n    \"proposed_source_representation\":\
+    \ {\n      \"dose_ml\": 0.5,\n      \"strength\": \"0.1% w/v\",\n      \"batch_mass_g\"\
+    : 0.0005,\n      \"g_per_l_using_declared_volume\": 0.000493583415597236\n   \
+    \ },\n    \"rationale\": \"Stored concentration matches the explicit stock mass\
+    \ divided by the primary declared volume within rounding. Preserve the sodium-salt\
+    \ identity separately; correct numerical transcription does not validate neutral\
+    \ CHEBI8806.\",\n    \"source_snippets\": [\n      {\n        \"source_key\":\
+    \ \"dsmz895\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Main table\",\n        \"exact_source_quote\"\
+    : \"Sodium resazurin (0.1% w/v) 0.50 ml\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n    \
+    \    \"source_locator\": \"Header\",\n        \"exact_source_quote\": \"Final\
+    \ volume: 1013 ml\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q15\",\n    \"component_or_context\"\
+    : \"Mineral stock Nitrilotriacetic acid\",\n    \"decision\": \"correct\",\n \
+    \   \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Modified Wolin mineral stock\",\n      \"source_amount\"\
+    : 1.5,\n      \"unit\": \"g\",\n      \"listed_water_ml\": 1000,\n      \"provider_stock_volume_ml\"\
+    : 1000,\n      \"receiving_dose_ml\": 10\n    },\n    \"rationale\": \"This literal\
+    \ amount defines the mineral stock, not the main medium. Stored g/L is the undiluted\
+    \ stock strength and requires the receiving dose.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n        \"\
+    source_locator\": \"Modified Wolin mineral subsection\",\n        \"exact_source_quote\"\
+    : \"Nitrilotriacetic acid 1.50 g\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q16\",\n    \"component_or_context\"\
+    : \"Mineral stock MgSO4 x 7 H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3.0987167\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3.0987167\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3.0987167\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n        \"field_path\"\
+    : \"ingredients[4].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"3.0987167\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3.0987167\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Modified Wolin mineral stock\",\n      \"source_amount\"\
+    : 3,\n      \"unit\": \"g\",\n      \"listed_water_ml\": 1000,\n      \"provider_stock_volume_ml\"\
+    : 1000,\n      \"receiving_dose_ml\": 10\n    },\n    \"rationale\": \"This literal\
+    \ amount defines the mineral stock, not the main medium. The current single row\
+    \ also contains a main contribution; split stages before any total is calculated.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz895\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Modified Wolin mineral subsection\",\n      \
+    \  \"exact_source_quote\": \"MgSO4 x 7 H2O 3.00 g\",\n        \"snapshot_sha256\"\
+    : \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\",\n    \
+    \    \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q17\",\n    \"component_or_context\"\
+    : \"Mineral stock MnSO4 x H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Modified Wolin mineral stock\",\n      \"source_amount\"\
+    : 0.5,\n      \"unit\": \"g\",\n      \"listed_water_ml\": 1000,\n      \"provider_stock_volume_ml\"\
+    : 1000,\n      \"receiving_dose_ml\": 10\n    },\n    \"rationale\": \"This literal\
+    \ amount defines the mineral stock, not the main medium. Stored g/L is the undiluted\
+    \ stock strength and requires the receiving dose.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n        \"\
+    source_locator\": \"Modified Wolin mineral subsection\",\n        \"exact_source_quote\"\
+    : \"MnSO4 x H2O 0.50 g\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q18\",\n    \"component_or_context\"\
+    : \"Mineral stock NaCl\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10.87167\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10.87167\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10.87167\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n        \"field_path\"\
+    : \"ingredients[6].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"10.87167\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10.87167\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Modified Wolin mineral stock\",\n      \"source_amount\"\
+    : 1,\n      \"unit\": \"g\",\n      \"listed_water_ml\": 1000,\n      \"provider_stock_volume_ml\"\
+    : 1000,\n      \"receiving_dose_ml\": 10\n    },\n    \"rationale\": \"This literal\
+    \ amount defines the mineral stock, not the main medium. The current single row\
+    \ also contains a main contribution; split stages before any total is calculated.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz895\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Modified Wolin mineral subsection\",\n      \
+    \  \"exact_source_quote\": \"NaCl 1.00 g\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q19\",\n    \"component_or_context\"\
+    : \"Mineral stock FeSO4 x 7 H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.10197433\",\n          \"unit\": \"G_PER_L\"\n \
+    \       },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.10197433\",\n          \"unit\": \"G_PER_L\"\n \
+    \       },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.10197433\",\n          \"unit\": \"G_PER_L\"\n \
+    \       },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n        \"field_path\"\
+    : \"ingredients[7].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.10197433\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.10197433\",\n          \"unit\": \"G_PER_L\"\n \
+    \       },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Modified Wolin mineral stock\",\n      \"source_amount\"\
+    : 0.1,\n      \"unit\": \"g\",\n      \"listed_water_ml\": 1000,\n      \"provider_stock_volume_ml\"\
+    : 1000,\n      \"receiving_dose_ml\": 10\n    },\n    \"rationale\": \"This literal\
+    \ amount defines the mineral stock, not the main medium. The current single row\
+    \ also contains a main contribution; split stages before any total is calculated.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz895\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Modified Wolin mineral subsection\",\n      \
+    \  \"exact_source_quote\": \"FeSO4 x 7 H2O 0.10 g\",\n        \"snapshot_sha256\"\
+    : \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\",\n    \
+    \    \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q20\",\n    \"component_or_context\"\
+    : \"Mineral stock CoSO4 x 7 H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.18\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.18\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.18\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n        \"field_path\"\
+    : \"ingredients[16].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.18\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.18\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Modified Wolin mineral stock\",\n      \"source_amount\"\
+    : 0.18,\n      \"unit\": \"g\",\n      \"listed_water_ml\": 1000,\n      \"provider_stock_volume_ml\"\
+    : 1000,\n      \"receiving_dose_ml\": 10\n    },\n    \"rationale\": \"This literal\
+    \ amount defines the mineral stock, not the main medium. Stored g/L is the undiluted\
+    \ stock strength and requires the receiving dose.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n        \"\
+    source_locator\": \"Modified Wolin mineral subsection\",\n        \"exact_source_quote\"\
+    : \"CoSO4 x 7 H2O 0.18 g\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q21\",\n    \"component_or_context\"\
+    : \"Mineral stock CaCl2 x 2 H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1493583\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1493583\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1493583\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n        \"field_path\"\
+    : \"ingredients[5].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.1493583\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1493583\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Modified Wolin mineral stock\",\n      \"source_amount\"\
+    : 0.1,\n      \"unit\": \"g\",\n      \"listed_water_ml\": 1000,\n      \"provider_stock_volume_ml\"\
+    : 1000,\n      \"receiving_dose_ml\": 10\n    },\n    \"rationale\": \"This literal\
+    \ amount defines the mineral stock, not the main medium. The current single row\
+    \ also contains a main contribution; split stages before any total is calculated.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz895\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Modified Wolin mineral subsection\",\n      \
+    \  \"exact_source_quote\": \"CaCl2 x 2 H2O 0.10 g\",\n        \"snapshot_sha256\"\
+    : \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\",\n    \
+    \    \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q22\",\n    \"component_or_context\"\
+    : \"Mineral stock ZnSO4 x 7 H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.18\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.18\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.18\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n        \"field_path\"\
+    : \"ingredients[17].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.18\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.18\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Modified Wolin mineral stock\",\n      \"source_amount\"\
+    : 0.18,\n      \"unit\": \"g\",\n      \"listed_water_ml\": 1000,\n      \"provider_stock_volume_ml\"\
+    : 1000,\n      \"receiving_dose_ml\": 10\n    },\n    \"rationale\": \"This literal\
+    \ amount defines the mineral stock, not the main medium. Stored g/L is the undiluted\
+    \ stock strength and requires the receiving dose.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n        \"\
+    source_locator\": \"Modified Wolin mineral subsection\",\n        \"exact_source_quote\"\
+    : \"ZnSO4 x 7 H2O 0.18 g\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q23\",\n    \"component_or_context\"\
+    : \"Mineral stock CuSO4 x 5 H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n        \"field_path\"\
+    : \"ingredients[18].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.01\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Modified Wolin mineral stock\",\n      \"source_amount\"\
+    : 0.01,\n      \"unit\": \"g\",\n      \"listed_water_ml\": 1000,\n      \"provider_stock_volume_ml\"\
+    : 1000,\n      \"receiving_dose_ml\": 10\n    },\n    \"rationale\": \"This literal\
+    \ amount defines the mineral stock, not the main medium. Stored g/L is the undiluted\
+    \ stock strength and requires the receiving dose.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n        \"\
+    source_locator\": \"Modified Wolin mineral subsection\",\n        \"exact_source_quote\"\
+    : \"CuSO4 x 5 H2O 0.01 g\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q24\",\n    \"component_or_context\"\
+    : \"Mineral stock AlK(SO4)2 x 12 H2O\",\n    \"decision\": \"correct\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n        \"field_path\"\
+    : \"ingredients[19].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.02\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Modified Wolin mineral stock\",\n      \"source_amount\"\
+    : 0.02,\n      \"unit\": \"g\",\n      \"listed_water_ml\": 1000,\n      \"provider_stock_volume_ml\"\
+    : 1000,\n      \"receiving_dose_ml\": 10\n    },\n    \"rationale\": \"This literal\
+    \ amount defines the mineral stock, not the main medium. Stored g/L is the undiluted\
+    \ stock strength and requires the receiving dose.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n        \"\
+    source_locator\": \"Modified Wolin mineral subsection\",\n        \"exact_source_quote\"\
+    : \"AlK(SO4)2 x 12 H2O 0.02 g\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q25\",\n    \"component_or_context\"\
+    : \"Mineral stock H3BO3\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n        \"field_path\"\
+    : \"ingredients[20].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.01\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Modified Wolin mineral stock\",\n      \"source_amount\"\
+    : 0.01,\n      \"unit\": \"g\",\n      \"listed_water_ml\": 1000,\n      \"provider_stock_volume_ml\"\
+    : 1000,\n      \"receiving_dose_ml\": 10\n    },\n    \"rationale\": \"This literal\
+    \ amount defines the mineral stock, not the main medium. Stored g/L is the undiluted\
+    \ stock strength and requires the receiving dose.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n        \"\
+    source_locator\": \"Modified Wolin mineral subsection\",\n        \"exact_source_quote\"\
+    : \"H3BO3 0.01 g\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q26\",\n    \"component_or_context\"\
+    : \"Mineral stock Na2MoO4 x 2 H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n        \"field_path\"\
+    : \"ingredients[21].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.01\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Modified Wolin mineral stock\",\n      \"source_amount\"\
+    : 0.01,\n      \"unit\": \"g\",\n      \"listed_water_ml\": 1000,\n      \"provider_stock_volume_ml\"\
+    : 1000,\n      \"receiving_dose_ml\": 10\n    },\n    \"rationale\": \"This literal\
+    \ amount defines the mineral stock, not the main medium. Stored g/L is the undiluted\
+    \ stock strength and requires the receiving dose.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n        \"\
+    source_locator\": \"Modified Wolin mineral subsection\",\n        \"exact_source_quote\"\
+    : \"Na2MoO4 x 2 H2O 0.01 g\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q27\",\n    \"component_or_context\"\
+    : \"Mineral stock NiCl2 x 6 H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[22].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[22].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[22].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n        \"field_path\"\
+    : \"ingredients[22].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.03\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ingredients[22].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Modified Wolin mineral stock\",\n      \"source_amount\"\
+    : 0.03,\n      \"unit\": \"g\",\n      \"listed_water_ml\": 1000,\n      \"provider_stock_volume_ml\"\
+    : 1000,\n      \"receiving_dose_ml\": 10\n    },\n    \"rationale\": \"This literal\
+    \ amount defines the mineral stock, not the main medium. Stored g/L is the undiluted\
+    \ stock strength and requires the receiving dose.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n        \"\
+    source_locator\": \"Modified Wolin mineral subsection\",\n        \"exact_source_quote\"\
+    : \"NiCl2 x 6 H2O 0.03 g\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q28\",\n    \"component_or_context\"\
+    : \"Mineral stock Na2SeO3 x 5 H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[23].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0003\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[23].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0003\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[23].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0003\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n        \"field_path\"\
+    : \"ingredients[23].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.0003\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ingredients[23].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0003\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Modified Wolin mineral stock\",\n      \"source_amount\"\
+    : 0.3,\n      \"unit\": \"mg\",\n      \"listed_water_ml\": 1000,\n      \"provider_stock_volume_ml\"\
+    : 1000,\n      \"receiving_dose_ml\": 10\n    },\n    \"rationale\": \"This literal\
+    \ amount defines the mineral stock, not the main medium. Stored g/L is the undiluted\
+    \ stock strength and requires the receiving dose.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n        \"\
+    source_locator\": \"Modified Wolin mineral subsection\",\n        \"exact_source_quote\"\
+    : \"Na2SeO3 x 5 H2O 0.30 mg\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q29\",\n    \"component_or_context\"\
+    : \"Mineral stock Na2WO4 x 2 H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[24].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0004\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[24].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0004\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[24].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0004\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n        \"field_path\"\
+    : \"ingredients[24].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.0004\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ingredients[24].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0004\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Modified Wolin mineral stock\",\n      \"source_amount\"\
+    : 0.4,\n      \"unit\": \"mg\",\n      \"listed_water_ml\": 1000,\n      \"provider_stock_volume_ml\"\
+    : 1000,\n      \"receiving_dose_ml\": 10\n    },\n    \"rationale\": \"This literal\
+    \ amount defines the mineral stock, not the main medium. Stored g/L is the undiluted\
+    \ stock strength and requires the receiving dose.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n        \"\
+    source_locator\": \"Modified Wolin mineral subsection\",\n        \"exact_source_quote\"\
+    : \"Na2WO4 x 2 H2O 0.40 mg\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q30\",\n    \"component_or_context\"\
+    : \"10x vitamin stock Biotin\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[25].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[25].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[25].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n        \"field_path\"\
+    : \"ingredients[25].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.02\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ingredients[25].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Wolin vitamins 10x\",\n      \"mass_mg\": 20,\n      \"\
+    listed_water_ml\": 1000,\n      \"provider_stock_volume_ml\": 1000,\n      \"\
+    receiving_dose_ml\": 1\n    },\n    \"rationale\": \"Stored g/L describes the\
+    \ undiluted stock. Restore the explicit one-milliliter receiving dose and retain\
+    \ source D-pantothenate and DL-lipoic qualifiers; do not substitute the separate\
+    \ 1x vitamin recipe in DSM141.\",\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"dsmz895\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Wolin vitamin solution (10x) subsection\",\n\
+    \        \"exact_source_quote\": \"Biotin 20.00 mg\",\n        \"snapshot_sha256\"\
+    : \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\",\n    \
+    \    \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q31\",\n    \"component_or_context\"\
+    : \"10x vitamin stock Folic acid\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[26].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[26].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[26].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n        \"field_path\"\
+    : \"ingredients[26].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.02\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ingredients[26].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Wolin vitamins 10x\",\n      \"mass_mg\": 20,\n      \"\
+    listed_water_ml\": 1000,\n      \"provider_stock_volume_ml\": 1000,\n      \"\
+    receiving_dose_ml\": 1\n    },\n    \"rationale\": \"Stored g/L describes the\
+    \ undiluted stock. Restore the explicit one-milliliter receiving dose and retain\
+    \ source D-pantothenate and DL-lipoic qualifiers; do not substitute the separate\
+    \ 1x vitamin recipe in DSM141.\",\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"dsmz895\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Wolin vitamin solution (10x) subsection\",\n\
+    \        \"exact_source_quote\": \"Folic acid 20.00 mg\",\n        \"snapshot_sha256\"\
+    : \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\",\n    \
+    \    \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q32\",\n    \"component_or_context\"\
+    : \"10x vitamin stock Pyridoxine hydrochloride\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[27].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[27].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[27].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\"\
+    ,\n        \"field_path\": \"ingredients[27].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ingredients[27].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Wolin vitamins 10x\",\n      \"mass_mg\": 100,\n     \
+    \ \"listed_water_ml\": 1000,\n      \"provider_stock_volume_ml\": 1000,\n    \
+    \  \"receiving_dose_ml\": 1\n    },\n    \"rationale\": \"Stored g/L describes\
+    \ the undiluted stock. Restore the explicit one-milliliter receiving dose and\
+    \ retain source D-pantothenate and DL-lipoic qualifiers; do not substitute the\
+    \ separate 1x vitamin recipe in DSM141.\",\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"dsmz895\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Wolin vitamin solution (10x) subsection\",\n\
+    \        \"exact_source_quote\": \"Pyridoxine hydrochloride 100.00 mg\",\n   \
+    \     \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q33\",\n    \"component_or_context\"\
+    : \"10x vitamin stock Thiamine HCl\",\n    \"decision\": \"correct\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[28].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[28].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[28].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n        \"field_path\"\
+    : \"ingredients[28].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ingredients[28].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Wolin vitamins 10x\",\n      \"mass_mg\": 50,\n      \"\
+    listed_water_ml\": 1000,\n      \"provider_stock_volume_ml\": 1000,\n      \"\
+    receiving_dose_ml\": 1\n    },\n    \"rationale\": \"Stored g/L describes the\
+    \ undiluted stock. Restore the explicit one-milliliter receiving dose and retain\
+    \ source D-pantothenate and DL-lipoic qualifiers; do not substitute the separate\
+    \ 1x vitamin recipe in DSM141.\",\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"dsmz895\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Wolin vitamin solution (10x) subsection\",\n\
+    \        \"exact_source_quote\": \"Thiamine HCl 50.00 mg\",\n        \"snapshot_sha256\"\
+    : \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\",\n    \
+    \    \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q34\",\n    \"component_or_context\"\
+    : \"10x vitamin stock Riboflavin\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[29].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[29].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[29].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n        \"field_path\"\
+    : \"ingredients[29].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ingredients[29].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Wolin vitamins 10x\",\n      \"mass_mg\": 50,\n      \"\
+    listed_water_ml\": 1000,\n      \"provider_stock_volume_ml\": 1000,\n      \"\
+    receiving_dose_ml\": 1\n    },\n    \"rationale\": \"Stored g/L describes the\
+    \ undiluted stock. Restore the explicit one-milliliter receiving dose and retain\
+    \ source D-pantothenate and DL-lipoic qualifiers; do not substitute the separate\
+    \ 1x vitamin recipe in DSM141.\",\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"dsmz895\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Wolin vitamin solution (10x) subsection\",\n\
+    \        \"exact_source_quote\": \"Riboflavin 50.00 mg\",\n        \"snapshot_sha256\"\
+    : \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\",\n    \
+    \    \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q35\",\n    \"component_or_context\"\
+    : \"10x vitamin stock Nicotinic acid\",\n    \"decision\": \"correct\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[30].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[30].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[30].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n        \"field_path\"\
+    : \"ingredients[30].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ingredients[30].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Wolin vitamins 10x\",\n      \"mass_mg\": 50,\n      \"\
+    listed_water_ml\": 1000,\n      \"provider_stock_volume_ml\": 1000,\n      \"\
+    receiving_dose_ml\": 1\n    },\n    \"rationale\": \"Stored g/L describes the\
+    \ undiluted stock. Restore the explicit one-milliliter receiving dose and retain\
+    \ source D-pantothenate and DL-lipoic qualifiers; do not substitute the separate\
+    \ 1x vitamin recipe in DSM141.\",\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"dsmz895\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Wolin vitamin solution (10x) subsection\",\n\
+    \        \"exact_source_quote\": \"Nicotinic acid 50.00 mg\",\n        \"snapshot_sha256\"\
+    : \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\",\n    \
+    \    \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q36\",\n    \"component_or_context\"\
+    : \"10x vitamin stock Calcium D-(+)-pantothenate\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[31].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[31].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[31].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n        \"field_path\"\
+    : \"ingredients[31].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ingredients[31].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Wolin vitamins 10x\",\n      \"mass_mg\": 50,\n      \"\
+    listed_water_ml\": 1000,\n      \"provider_stock_volume_ml\": 1000,\n      \"\
+    receiving_dose_ml\": 1\n    },\n    \"rationale\": \"Stored g/L describes the\
+    \ undiluted stock. Restore the explicit one-milliliter receiving dose and retain\
+    \ source D-pantothenate and DL-lipoic qualifiers; do not substitute the separate\
+    \ 1x vitamin recipe in DSM141.\",\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"dsmz895\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Wolin vitamin solution (10x) subsection\",\n\
+    \        \"exact_source_quote\": \"Calcium D-(+)-pantothenate 50.00 mg\",\n  \
+    \      \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q37\",\n    \"component_or_context\"\
+    : \"10x vitamin stock Vitamin B12\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[32].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[32].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[32].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n        \"field_path\"\
+    : \"ingredients[32].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.001\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ingredients[32].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Wolin vitamins 10x\",\n      \"mass_mg\": 1,\n      \"\
+    listed_water_ml\": 1000,\n      \"provider_stock_volume_ml\": 1000,\n      \"\
+    receiving_dose_ml\": 1\n    },\n    \"rationale\": \"Stored g/L describes the\
+    \ undiluted stock. Restore the explicit one-milliliter receiving dose and retain\
+    \ source D-pantothenate and DL-lipoic qualifiers; do not substitute the separate\
+    \ 1x vitamin recipe in DSM141.\",\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"dsmz895\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Wolin vitamin solution (10x) subsection\",\n\
+    \        \"exact_source_quote\": \"Vitamin B12 1.00 mg\",\n        \"snapshot_sha256\"\
+    : \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\",\n    \
+    \    \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q38\",\n    \"component_or_context\"\
+    : \"10x vitamin stock p-Aminobenzoic acid\",\n    \"decision\": \"correct\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[33].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[33].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[33].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n        \"field_path\"\
+    : \"ingredients[33].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ingredients[33].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Wolin vitamins 10x\",\n      \"mass_mg\": 50,\n      \"\
+    listed_water_ml\": 1000,\n      \"provider_stock_volume_ml\": 1000,\n      \"\
+    receiving_dose_ml\": 1\n    },\n    \"rationale\": \"Stored g/L describes the\
+    \ undiluted stock. Restore the explicit one-milliliter receiving dose and retain\
+    \ source D-pantothenate and DL-lipoic qualifiers; do not substitute the separate\
+    \ 1x vitamin recipe in DSM141.\",\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"dsmz895\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Wolin vitamin solution (10x) subsection\",\n\
+    \        \"exact_source_quote\": \"p-Aminobenzoic acid 50.00 mg\",\n        \"\
+    snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q39\",\n    \"component_or_context\"\
+    : \"10x vitamin stock (DL)-alpha-Lipoic acid\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[34].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[34].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[34].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n        \"field_path\"\
+    : \"ingredients[34].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ingredients[34].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Wolin vitamins 10x\",\n      \"mass_mg\": 50,\n      \"\
+    listed_water_ml\": 1000,\n      \"provider_stock_volume_ml\": 1000,\n      \"\
+    receiving_dose_ml\": 1\n    },\n    \"rationale\": \"Stored g/L describes the\
+    \ undiluted stock. Restore the explicit one-milliliter receiving dose and retain\
+    \ source D-pantothenate and DL-lipoic qualifiers; do not substitute the separate\
+    \ 1x vitamin recipe in DSM141.\",\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"dsmz895\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Wolin vitamin solution (10x) subsection\",\n\
+    \        \"exact_source_quote\": \"(DL)-alpha-Lipoic acid 50.00 mg\",\n      \
+    \  \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q40\",\n    \"component_or_context\"\
+    : \"main listed water\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"main\",\n      \"water_ml\": 1000\n    },\n    \"rationale\"\
+    : \"No structured water/stock container is retained in any layer. Preserve each\
+    \ separate water quantity and the main declared-volume distinction.\",\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"dsmz895\",\n        \"\
+    source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"main table water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q41\",\n    \"component_or_context\"\
+    : \"mineral listed water\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"mineral\",\n      \"water_ml\": 1000\n    },\n    \"rationale\"\
+    : \"No structured water/stock container is retained in any layer. Preserve each\
+    \ separate water quantity and the main declared-volume distinction.\",\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"dsmz895\",\n        \"\
+    source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"mineral table water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q42\",\n    \"component_or_context\"\
+    : \"10x vitamins listed water\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"10x vitamins\",\n      \"water_ml\": 1000\n    },\n  \
+    \  \"rationale\": \"No structured water/stock container is retained in any layer.\
+    \ Preserve each separate water quantity and the main declared-volume distinction.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz895\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"10x vitamins table water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q43\",\n    \"component_or_context\"\
+    : \"iron stock addition\",\n    \"decision\": \"add\",\n    \"local_fields\":\
+    \ [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stock\": \"iron\",\n      \"dose_ml\": 2,\n      \"strength\": \"\
+    0.1% w/v in 0.1 N H2SO4\"\n    },\n    \"rationale\": \"Retain explicit receiving\
+    \ stock dose and named strength; existing flattened constituents do not represent\
+    \ the addition.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz895\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Main table receiving stock\",\n        \"exact_source_quote\"\
+    : \"FeSO4 x 7 H2O (0.1% w/v in 0.1 N H2SO4) 2.00 ml\",\n        \"snapshot_sha256\"\
+    : \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\",\n    \
+    \    \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q44\",\n    \"component_or_context\"\
+    : \"mineral stock addition\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stock\": \"mineral\",\n      \"dose_ml\": 10,\n      \"strength\"\
+    : null\n    },\n    \"rationale\": \"Retain explicit receiving stock dose and\
+    \ named strength; existing flattened constituents do not represent the addition.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz895\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Main table receiving stock\",\n        \"exact_source_quote\"\
+    : \"Modified Wolin's mineral solution 10.00 ml\",\n        \"snapshot_sha256\"\
+    : \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\",\n    \
+    \    \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q45\",\n    \"component_or_context\"\
+    : \"resazurin stock addition\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stock\": \"resazurin\",\n      \"dose_ml\": 0.5,\n      \"strength\"\
+    : \"0.1% w/v\"\n    },\n    \"rationale\": \"Retain explicit receiving stock dose\
+    \ and named strength; existing flattened constituents do not represent the addition.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz895\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Main table receiving stock\",\n        \"exact_source_quote\"\
+    : \"Sodium resazurin (0.1% w/v) 0.50 ml\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q46\",\n    \"component_or_context\"\
+    : \"10x vitamins stock addition\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stock\": \"10x vitamins\",\n      \"dose_ml\": 1,\n      \"strength\"\
+    : \"10x\"\n    },\n    \"rationale\": \"Retain explicit receiving stock dose and\
+    \ named strength; existing flattened constituents do not represent the addition.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz895\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Main table receiving stock\",\n        \"exact_source_quote\"\
+    : \"Wolin's vitamin solution (10x) 1.00 ml\",\n        \"snapshot_sha256\": \"\
+    711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\",\n        \"\
+    parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q47\",\n    \"component_or_context\"\
+    : \"Iron-stock acid vehicle\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"iron stock\",\n      \"vehicle\": \"H2SO4\",\n      \"\
+    normality\": 0.1,\n      \"receiving_stock_ml\": 2\n    },\n    \"rationale\"\
+    : \"The source explicitly names the acid vehicle but local lists omit its context.\
+    \ Preserve 0.1 N without inventing an H2SO4 mass, unprovided stock-preparation\
+    \ volume or replacement CURIE.\",\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"dsmz895\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Main table\",\n        \"exact_source_quote\"\
+    : \"FeSO4 x 7 H2O (0.1% w/v in 0.1 N H2SO4) 2.00 ml\",\n        \"snapshot_sha256\"\
+    : \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\",\n    \
+    \    \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q48\",\n    \"component_or_context\"\
+    : \"Declared main volume versus listed liquids\",\n    \"decision\": \"add\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"declared_final_volume_ml\": 1013,\n      \"listed_water_plus_iron_mineral_resazurin_vitamins_ml\"\
+    : 1013.5,\n      \"additional_preparation_stock_volumes\": null\n    },\n    \"\
+    rationale\": \"The primary header is explicit and supports its own declared normalization.\
+    \ The 1013.5 mL sum is arithmetic from listed liquid doses, not an alternative\
+    \ measured final volume; unspecified preparation-stock volumes add a further limit.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz895\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Header\",\n        \"exact_source_quote\": \"\
+    Final volume: 1013 ml\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n    \
+    \    \"source_locator\": \"Main water row\",\n        \"exact_source_quote\":\
+    \ \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q49\",\n    \"component_or_context\"\
+    : \"Main N2 and sparging time\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\",\n\
+    \        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve all ingredients except cysteine, carbonate, starch and vitamins.\
+    \ Sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic, add cysteine\
+    \ and adjust pH to 7.5, then dispense medium under 100% N2 gas atmosphere into\
+    \ anoxic Hungate-type tubes or serum vials and autoclave. Add starch and vitamins\
+    \ from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate\
+    \ from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere.\
+    \ Vitamins should be sterilized by filtration. Adjust pH of complete medium to\
+    \ 9.3 - 9.5, if necessary.\",\n        \"decision\": \"evidence_only\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\",\n        \"field_path\"\
+    : \"preparation_steps[0].description\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\":\
+    \ {\n      \"stage\": \"main before autoclave\",\n      \"N2_percent\": 100,\n\
+    \      \"minutes\": [\n        30,\n        45\n      ]\n    },\n    \"rationale\"\
+    : \"The DSMZ owner retains the source preparation (evidence_only); target and\
+    \ KOMODO owners need the supported main context. Stage/qualifiers remain explicit,\
+    \ and gas percentages are not independently relabeled v/v.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n        \"\
+    source_locator\": \"Main preparation\",\n        \"exact_source_quote\": \"with\
+    \ 100% N2 gas for 30 - 45 min to make it anoxic, add cysteine and adjust pH to\
+    \ 7.5,\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q50\",\n    \"component_or_context\"\
+    : \"Initial main pH\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\",\n\
+    \        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve all ingredients except cysteine, carbonate, starch and vitamins.\
+    \ Sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic, add cysteine\
+    \ and adjust pH to 7.5, then dispense medium under 100% N2 gas atmosphere into\
+    \ anoxic Hungate-type tubes or serum vials and autoclave. Add starch and vitamins\
+    \ from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate\
+    \ from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere.\
+    \ Vitamins should be sterilized by filtration. Adjust pH of complete medium to\
+    \ 9.3 - 9.5, if necessary.\",\n        \"decision\": \"evidence_only\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\",\n        \"field_path\"\
+    : \"preparation_steps[0].description\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\":\
+    \ {\n      \"stage\": \"after cysteine/before sterilization\",\n      \"pH\":\
+    \ 7.5\n    },\n    \"rationale\": \"The DSMZ owner retains the source preparation\
+    \ (evidence_only); target and KOMODO owners need the supported main context. Stage/qualifiers\
+    \ remain explicit, and gas percentages are not independently relabeled v/v.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz895\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Main preparation\",\n        \"exact_source_quote\"\
+    : \"with 100% N2 gas for 30 - 45 min to make it anoxic, add cysteine and adjust\
+    \ pH to 7.5,\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q51\",\n    \"component_or_context\"\
+    : \"Carbonate-stock atmosphere\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\",\n\
+    \        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve all ingredients except cysteine, carbonate, starch and vitamins.\
+    \ Sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic, add cysteine\
+    \ and adjust pH to 7.5, then dispense medium under 100% N2 gas atmosphere into\
+    \ anoxic Hungate-type tubes or serum vials and autoclave. Add starch and vitamins\
+    \ from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate\
+    \ from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere.\
+    \ Vitamins should be sterilized by filtration. Adjust pH of complete medium to\
+    \ 9.3 - 9.5, if necessary.\",\n        \"decision\": \"evidence_only\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\",\n        \"field_path\"\
+    : \"preparation_steps[0].description\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\":\
+    \ {\n      \"stage\": \"carbonate stock\",\n      \"N2_percent\": 80,\n      \"\
+    CO2_percent\": 20\n    },\n    \"rationale\": \"The DSMZ owner retains the source\
+    \ preparation (evidence_only); target and KOMODO owners need the supported main\
+    \ context. Stage/qualifiers remain explicit, and gas percentages are not independently\
+    \ relabeled v/v.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz895\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Main preparation\",\n        \"exact_source_quote\"\
+    : \"under 80% N2 and 20% CO2 gas atmosphere. Vitamins should be sterilized by\
+    \ filtration.\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q52\",\n    \"component_or_context\"\
+    : \"Starch/vitamin stock atmosphere\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\",\n\
+    \        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve all ingredients except cysteine, carbonate, starch and vitamins.\
+    \ Sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic, add cysteine\
+    \ and adjust pH to 7.5, then dispense medium under 100% N2 gas atmosphere into\
+    \ anoxic Hungate-type tubes or serum vials and autoclave. Add starch and vitamins\
+    \ from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate\
+    \ from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere.\
+    \ Vitamins should be sterilized by filtration. Adjust pH of complete medium to\
+    \ 9.3 - 9.5, if necessary.\",\n        \"decision\": \"evidence_only\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\",\n        \"field_path\"\
+    : \"preparation_steps[0].description\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\":\
+    \ {\n      \"stage\": [\n        \"starch stock\",\n        \"vitamin stock\"\n\
+    \      ],\n      \"N2_percent\": 100\n    },\n    \"rationale\": \"The DSMZ owner\
+    \ retains the source preparation (evidence_only); target and KOMODO owners need\
+    \ the supported main context. Stage/qualifiers remain explicit, and gas percentages\
+    \ are not independently relabeled v/v.\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz895\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Main preparation\",\n        \"exact_source_quote\"\
+    : \"prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution\
+    \ prepared\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q53\",\n    \"component_or_context\"\
+    : \"Base final pH\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ph_range\",\n        \"stored\": {\n          \"\
+    min\": 9.3,\n          \"max\": 9.5\n        },\n        \"decision\": \"evidence_only\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_range\",\n        \"stored\": {\n          \"\
+    min\": 9.3,\n          \"max\": 9.5\n        },\n        \"decision\": \"evidence_only\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_range\",\n        \"stored\": {\n          \"\
+    min\": 9.3,\n          \"max\": 9.5\n        },\n        \"decision\": \"evidence_only\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\"\
+    ,\n        \"field_path\": \"ph_range\",\n        \"stored\": {\n          \"\
+    min\": 9.3,\n          \"max\": 9.5\n        },\n        \"decision\": \"evidence_only\"\
+    \n      },\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\",\n\
+    \        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve all ingredients except cysteine, carbonate, starch and vitamins.\
+    \ Sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic, add cysteine\
+    \ and adjust pH to 7.5, then dispense medium under 100% N2 gas atmosphere into\
+    \ anoxic Hungate-type tubes or serum vials and autoclave. Add starch and vitamins\
+    \ from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate\
+    \ from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere.\
+    \ Vitamins should be sterilized by filtration. Adjust pH of complete medium to\
+    \ 9.3 - 9.5, if necessary.\",\n        \"decision\": \"evidence_only\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\",\n        \"field_path\"\
+    : \"preparation_steps[0].description\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\":\
+    \ {\n      \"stage\": \"complete base medium\",\n      \"pH_range\": [\n     \
+    \   9.3,\n        9.5\n      ],\n      \"qualifier\": \"if necessary\"\n    },\n\
+    \    \"rationale\": \"Base and DSM14826 inherited pH ranges agree with the base\
+    \ source context. DSM14828 has a separately supported pH9.0 branch and is not\
+    \ assigned this range.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz895\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Base preparation\",\n        \"exact_source_quote\"\
+    : \"Adjust pH of complete medium to 9.3 - 9.5, if necessary.\",\n        \"snapshot_sha256\"\
+    : \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\",\n    \
+    \    \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q54\",\n    \"component_or_context\"\
+    : \"Mineral stock pH sequence and unquantified KOH\",\n    \"decision\": \"not_quantified\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\",\n\
+    \        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add\
+    \ minerals. Adjust final to pH 7.0 with KOH.\",\n        \"decision\": \"correct\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\",\n        \"field_path\"\
+    : \"preparation_steps[1].description\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\"\n      },\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"mineral stock\",\n      \"first\": \"NTA dissolved; pH6.5\
+    \ with KOH\",\n      \"then\": \"add minerals; final pH7.0 with KOH\",\n     \
+    \ \"KOH_amount\": null\n    },\n    \"rationale\": \"The DSMZ owner retains both\
+    \ pH stages at main-root step1; restore stock scope and preserve sequence. KOH\
+    \ is source-mentioned but unquantified; do not invent its amount or interpret\
+    \ stock pH as main pH.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz895\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"Mineral stock preparation\",\n        \"exact_source_quote\"\
+    : \"First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add\
+    \ minerals. Adjust\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n    \
+    \    \"source_locator\": \"Following line\",\n        \"exact_source_quote\":\
+    \ \"final to pH 7.0 with KOH.\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q55\",\n    \"component_or_context\"\
+    : \"Autoclave cycle\",\n    \"decision\": \"not_quantified\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\",\n\
+    \        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve all ingredients except cysteine, carbonate, starch and vitamins.\
+    \ Sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic, add cysteine\
+    \ and adjust pH to 7.5, then dispense medium under 100% N2 gas atmosphere into\
+    \ anoxic Hungate-type tubes or serum vials and autoclave. Add starch and vitamins\
+    \ from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate\
+    \ from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere.\
+    \ Vitamins should be sterilized by filtration. Adjust pH of complete medium to\
+    \ 9.3 - 9.5, if necessary.\",\n        \"decision\": \"evidence_only\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\",\n        \"field_path\"\
+    : \"preparation_steps[0].description\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\":\
+    \ {\n      \"temperature\": null,\n      \"duration\": null\n    },\n    \"rationale\"\
+    : \"Autoclaving is source-supported but no numerical temperature/duration is specified.\
+    \ Vitamin filtration remains separately required.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n        \"\
+    source_locator\": \"Main preparation\",\n        \"exact_source_quote\": \"serum\
+    \ vials and autoclave.\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q56\",\n    \"component_or_context\"\
+    : \"Unspecified starch/carbonate preparation stock doses\",\n    \"decision\"\
+    : \"not_quantified\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"solutions\",\n        \"stored\": null,\n        \"decision\": \"add\"\n \
+    \     },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\",\n\
+    \        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve all ingredients except cysteine, carbonate, starch and vitamins.\
+    \ Sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic, add cysteine\
+    \ and adjust pH to 7.5, then dispense medium under 100% N2 gas atmosphere into\
+    \ anoxic Hungate-type tubes or serum vials and autoclave. Add starch and vitamins\
+    \ from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate\
+    \ from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere.\
+    \ Vitamins should be sterilized by filtration. Adjust pH of complete medium to\
+    \ 9.3 - 9.5, if necessary.\",\n        \"decision\": \"evidence_only\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\",\n        \"field_path\"\
+    : \"preparation_steps[0].description\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\":\
+    \ {\n      \"starch_stock_strength\": null,\n      \"starch_stock_dose_ml\": null,\n\
+    \      \"carbonate_stock_strength\": null,\n      \"carbonate_stock_dose_ml\"\
+    : null\n    },\n    \"rationale\": \"The main batch solute amounts are explicit;\
+    \ these additional stock strengths/doses are not. Preserve their preparation scope\
+    \ and do not invent volumes to reconcile the header.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n        \"\
+    source_locator\": \"Main preparation\",\n        \"exact_source_quote\": \"Add\
+    \ starch and vitamins from sterile anoxic stock solutions\",\n        \"snapshot_sha256\"\
+    : \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\",\n    \
+    \    \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n    \
+    \    \"source_locator\": \"Main preparation\",\n        \"exact_source_quote\"\
+    : \"carbonate from a sterile anoxic stock solution prepared\",\n        \"snapshot_sha256\"\
+    : \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\",\n    \
+    \    \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q57\",\n    \"component_or_context\"\
+    : \"DSM14826 omit starch\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.97433\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\",\n        \"\
+    field_path\": \"variant_children\",\n        \"stored\": [\n          {\n    \
+    \        \"path\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n  \
+    \          \"relationship\": \"SOURCE_DUPLICATE\",\n            \"id\": \"CultureMech:006748\"\
+    ,\n            \"name\": \"for_dsm_14826\",\n            \"notes\": \"Same ingredient\
+    \ and concentration signature; review as possible duplicate source record.\"\n\
+    \          },\n          {\n            \"path\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n            \"relationship\": \"SOURCE_DUPLICATE\",\n            \"id\": \"\
+    CultureMech:006749\",\n            \"name\": \"for_dsm_14828\",\n            \"\
+    notes\": \"Same ingredient and concentration signature; review as possible duplicate\
+    \ source record.\"\n          }\n        ],\n        \"decision\": \"correct\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\"\
+    ,\n        \"field_path\": \"variant_children\",\n        \"stored\": [\n    \
+    \      {\n            \"path\": \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n            \"relationship\": \"SOURCE_DUPLICATE\",\n            \"id\": \"\
+    CultureMech:006750\",\n            \"name\": \"KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium\"\
+    ,\n            \"notes\": \"KOMODO Medium 895 has the same 35-ingredient signature\
+    \ as DSMZ Medium 895.\"\n          },\n          {\n            \"path\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\"\
+    ,\n            \"relationship\": \"STRAIN_SPECIFIC_VARIANT\",\n            \"\
+    id\": \"CultureMech:006748\",\n            \"name\": \"for_dsm_14826\",\n    \
+    \        \"notes\": \"KOMODO Medium 895.1 applies DSMZ Medium 895 to DSM 14826.\"\
+    \n          },\n          {\n            \"path\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n            \"relationship\": \"STRAIN_SPECIFIC_VARIANT\",\n            \"\
+    id\": \"CultureMech:006749\",\n            \"name\": \"for_dsm_14828\",\n    \
+    \        \"notes\": \"KOMODO Medium 895.2 applies DSMZ Medium 895 to DSM 14828.\"\
+    \n          }\n        ],\n        \"decision\": \"correct\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"branch\": \"DSM14826\",\n\
+    \      \"omit\": \"starch\"\n    },\n    \"rationale\": \"The maintained variant\
+    \ still retains base starch; source directly requires omission. Keep base starch\
+    \ in the base formulation.\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz895\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"DSM14826 paragraph\",\n        \"exact_source_quote\"\
+    : \"For DSM 14826: Omit starch from the medium, increase the concentration of\
+    \ Tryptone to\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n    \
+    \    \"source_locator\": \"DSM14826 continuation\",\n        \"exact_source_quote\"\
+    : \"2.00 g/l and supplement medium with 4.00 g/l Na2S2O3 x 5 H2O added to the\
+    \ medium from\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q58\",\n    \"component_or_context\"\
+    : \"DSM14826 tryptone\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.246792\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\",\n        \"\
+    field_path\": \"variant_children\",\n        \"stored\": [\n          {\n    \
+    \        \"path\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n  \
+    \          \"relationship\": \"SOURCE_DUPLICATE\",\n            \"id\": \"CultureMech:006748\"\
+    ,\n            \"name\": \"for_dsm_14826\",\n            \"notes\": \"Same ingredient\
+    \ and concentration signature; review as possible duplicate source record.\"\n\
+    \          },\n          {\n            \"path\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n            \"relationship\": \"SOURCE_DUPLICATE\",\n            \"id\": \"\
+    CultureMech:006749\",\n            \"name\": \"for_dsm_14828\",\n            \"\
+    notes\": \"Same ingredient and concentration signature; review as possible duplicate\
+    \ source record.\"\n          }\n        ],\n        \"decision\": \"correct\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\"\
+    ,\n        \"field_path\": \"variant_children\",\n        \"stored\": [\n    \
+    \      {\n            \"path\": \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n            \"relationship\": \"SOURCE_DUPLICATE\",\n            \"id\": \"\
+    CultureMech:006750\",\n            \"name\": \"KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium\"\
+    ,\n            \"notes\": \"KOMODO Medium 895 has the same 35-ingredient signature\
+    \ as DSMZ Medium 895.\"\n          },\n          {\n            \"path\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\"\
+    ,\n            \"relationship\": \"STRAIN_SPECIFIC_VARIANT\",\n            \"\
+    id\": \"CultureMech:006748\",\n            \"name\": \"for_dsm_14826\",\n    \
+    \        \"notes\": \"KOMODO Medium 895.1 applies DSMZ Medium 895 to DSM 14826.\"\
+    \n          },\n          {\n            \"path\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n            \"relationship\": \"STRAIN_SPECIFIC_VARIANT\",\n            \"\
+    id\": \"CultureMech:006749\",\n            \"name\": \"for_dsm_14828\",\n    \
+    \        \"notes\": \"KOMODO Medium 895.2 applies DSMZ Medium 895 to DSM 14828.\"\
+    \n          }\n        ],\n        \"decision\": \"correct\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"branch\": \"DSM14826\",\n\
+    \      \"tryptone_g_per_L\": 2\n    },\n    \"rationale\": \"This is an explicit\
+    \ branch concentration, not a whole-batch 2 g value or an addition to base tryptone.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz895\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"DSM14826 paragraph\",\n        \"exact_source_quote\"\
+    : \"For DSM 14826: Omit starch from the medium, increase the concentration of\
+    \ Tryptone to\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n    \
+    \    \"source_locator\": \"DSM14826 continuation\",\n        \"exact_source_quote\"\
+    : \"2.00 g/l and supplement medium with 4.00 g/l Na2S2O3 x 5 H2O added to the\
+    \ medium from\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q59\",\n    \"component_or_context\"\
+    : \"DSM14826 thiosulfate supplement\",\n    \"decision\": \"correct\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0987167\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\",\n        \"\
+    field_path\": \"variant_children\",\n        \"stored\": [\n          {\n    \
+    \        \"path\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n  \
+    \          \"relationship\": \"SOURCE_DUPLICATE\",\n            \"id\": \"CultureMech:006748\"\
+    ,\n            \"name\": \"for_dsm_14826\",\n            \"notes\": \"Same ingredient\
+    \ and concentration signature; review as possible duplicate source record.\"\n\
+    \          },\n          {\n            \"path\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n            \"relationship\": \"SOURCE_DUPLICATE\",\n            \"id\": \"\
+    CultureMech:006749\",\n            \"name\": \"for_dsm_14828\",\n            \"\
+    notes\": \"Same ingredient and concentration signature; review as possible duplicate\
+    \ source record.\"\n          }\n        ],\n        \"decision\": \"correct\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\"\
+    ,\n        \"field_path\": \"variant_children\",\n        \"stored\": [\n    \
+    \      {\n            \"path\": \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n            \"relationship\": \"SOURCE_DUPLICATE\",\n            \"id\": \"\
+    CultureMech:006750\",\n            \"name\": \"KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium\"\
+    ,\n            \"notes\": \"KOMODO Medium 895 has the same 35-ingredient signature\
+    \ as DSMZ Medium 895.\"\n          },\n          {\n            \"path\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\"\
+    ,\n            \"relationship\": \"STRAIN_SPECIFIC_VARIANT\",\n            \"\
+    id\": \"CultureMech:006748\",\n            \"name\": \"for_dsm_14826\",\n    \
+    \        \"notes\": \"KOMODO Medium 895.1 applies DSMZ Medium 895 to DSM 14826.\"\
+    \n          },\n          {\n            \"path\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n            \"relationship\": \"STRAIN_SPECIFIC_VARIANT\",\n            \"\
+    id\": \"CultureMech:006749\",\n            \"name\": \"for_dsm_14828\",\n    \
+    \        \"notes\": \"KOMODO Medium 895.2 applies DSMZ Medium 895 to DSM 14828.\"\
+    \n          }\n        ],\n        \"decision\": \"correct\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"branch\": \"DSM14826\",\n\
+    \      \"supplement_Na2S2O3_pentahydrate_g_per_L\": 4,\n      \"stock_N2_percent\"\
+    : 100,\n      \"replacement_total\": null\n    },\n    \"rationale\": \"Preserve\
+    \ supplement wording. Do not silently reinterpret it as replacement total4g/L\
+    \ or invent a revised final total/stock dose. The existing base amount alone does\
+    \ not represent this branch.\",\n    \"source_snippets\": [\n      {\n       \
+    \ \"source_key\": \"dsmz895\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"DSM14826 paragraph\",\n        \"exact_source_quote\"\
+    : \"2.00 g/l and supplement medium with 4.00 g/l Na2S2O3 x 5 H2O added to the\
+    \ medium from\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n    \
+    \    \"source_locator\": \"DSM14826 continuation\",\n        \"exact_source_quote\"\
+    : \"a sterile anoxic stock solution prepared under 100% N2 gas.\",\n        \"\
+    snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q60\",\n    \"component_or_context\"\
+    : \"DSM14828/119686 omit starch\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.97433\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\",\n        \"\
+    field_path\": \"variant_children\",\n        \"stored\": [\n          {\n    \
+    \        \"path\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n  \
+    \          \"relationship\": \"SOURCE_DUPLICATE\",\n            \"id\": \"CultureMech:006748\"\
+    ,\n            \"name\": \"for_dsm_14826\",\n            \"notes\": \"Same ingredient\
+    \ and concentration signature; review as possible duplicate source record.\"\n\
+    \          },\n          {\n            \"path\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n            \"relationship\": \"SOURCE_DUPLICATE\",\n            \"id\": \"\
+    CultureMech:006749\",\n            \"name\": \"for_dsm_14828\",\n            \"\
+    notes\": \"Same ingredient and concentration signature; review as possible duplicate\
+    \ source record.\"\n          }\n        ],\n        \"decision\": \"correct\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\"\
+    ,\n        \"field_path\": \"variant_children\",\n        \"stored\": [\n    \
+    \      {\n            \"path\": \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n            \"relationship\": \"SOURCE_DUPLICATE\",\n            \"id\": \"\
+    CultureMech:006750\",\n            \"name\": \"KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium\"\
+    ,\n            \"notes\": \"KOMODO Medium 895 has the same 35-ingredient signature\
+    \ as DSMZ Medium 895.\"\n          },\n          {\n            \"path\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\"\
+    ,\n            \"relationship\": \"STRAIN_SPECIFIC_VARIANT\",\n            \"\
+    id\": \"CultureMech:006748\",\n            \"name\": \"for_dsm_14826\",\n    \
+    \        \"notes\": \"KOMODO Medium 895.1 applies DSMZ Medium 895 to DSM 14826.\"\
+    \n          },\n          {\n            \"path\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n            \"relationship\": \"STRAIN_SPECIFIC_VARIANT\",\n            \"\
+    id\": \"CultureMech:006749\",\n            \"name\": \"for_dsm_14828\",\n    \
+    \        \"notes\": \"KOMODO Medium 895.2 applies DSMZ Medium 895 to DSM 14828.\"\
+    \n          }\n        ],\n        \"decision\": \"correct\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"source_branch\": [\n     \
+    \   \"DSM14828\",\n        \"DSM119686\"\n      ],\n      \"omit\": \"starch\"\
+    \n    },\n    \"rationale\": \"The existing DSM14828 owner retains base starch.\
+    \ Preserve literal additional DSM119686 source scope without creating an unrequested\
+    \ new organism record or asserting growth.\",\n    \"source_snippets\": [\n  \
+    \    {\n        \"source_key\": \"dsmz895\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"DSM14828/119686 paragraph\",\n        \"exact_source_quote\"\
+    : \"For DSM 14828, DSM 119686: Omit starch, add 5.00 g/l D-glucose and increase\
+    \ the\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n    \
+    \    \"source_locator\": \"Following line\",\n        \"exact_source_quote\":\
+    \ \"concentration of Tryptone to 2.00 g/l. Adjust pH of complete medium to 9.0.\"\
+    ,\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q61\",\n    \"component_or_context\"\
+    : \"DSM14828/119686 D-glucose\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ingredients[35].concentration\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\",\n        \"\
+    field_path\": \"variant_children\",\n        \"stored\": [\n          {\n    \
+    \        \"path\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n  \
+    \          \"relationship\": \"SOURCE_DUPLICATE\",\n            \"id\": \"CultureMech:006748\"\
+    ,\n            \"name\": \"for_dsm_14826\",\n            \"notes\": \"Same ingredient\
+    \ and concentration signature; review as possible duplicate source record.\"\n\
+    \          },\n          {\n            \"path\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n            \"relationship\": \"SOURCE_DUPLICATE\",\n            \"id\": \"\
+    CultureMech:006749\",\n            \"name\": \"for_dsm_14828\",\n            \"\
+    notes\": \"Same ingredient and concentration signature; review as possible duplicate\
+    \ source record.\"\n          }\n        ],\n        \"decision\": \"correct\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\"\
+    ,\n        \"field_path\": \"variant_children\",\n        \"stored\": [\n    \
+    \      {\n            \"path\": \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n            \"relationship\": \"SOURCE_DUPLICATE\",\n            \"id\": \"\
+    CultureMech:006750\",\n            \"name\": \"KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium\"\
+    ,\n            \"notes\": \"KOMODO Medium 895 has the same 35-ingredient signature\
+    \ as DSMZ Medium 895.\"\n          },\n          {\n            \"path\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\"\
+    ,\n            \"relationship\": \"STRAIN_SPECIFIC_VARIANT\",\n            \"\
+    id\": \"CultureMech:006748\",\n            \"name\": \"for_dsm_14826\",\n    \
+    \        \"notes\": \"KOMODO Medium 895.1 applies DSMZ Medium 895 to DSM 14826.\"\
+    \n          },\n          {\n            \"path\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n            \"relationship\": \"STRAIN_SPECIFIC_VARIANT\",\n            \"\
+    id\": \"CultureMech:006749\",\n            \"name\": \"for_dsm_14828\",\n    \
+    \        \"notes\": \"KOMODO Medium 895.2 applies DSMZ Medium 895 to DSM 14828.\"\
+    \n          }\n        ],\n        \"decision\": \"correct\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"source_branch\": [\n     \
+    \   \"DSM14828\",\n        \"DSM119686\"\n      ],\n      \"D_glucose_g_per_L\"\
+    : 5\n    },\n    \"rationale\": \"D-glucose is absent from the maintained DSM14828\
+    \ formula; add the explicitly sourced branch ingredient without assigning an uncaptured\
+    \ identifier.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz895\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"DSM14828/119686 paragraph\",\n        \"exact_source_quote\"\
+    : \"For DSM 14828, DSM 119686: Omit starch, add 5.00 g/l D-glucose and increase\
+    \ the\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n    \
+    \    \"source_locator\": \"Following line\",\n        \"exact_source_quote\":\
+    \ \"concentration of Tryptone to 2.00 g/l. Adjust pH of complete medium to 9.0.\"\
+    ,\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q62\",\n    \"component_or_context\"\
+    : \"DSM14828/119686 tryptone\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.246792\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\",\n        \"\
+    field_path\": \"variant_children\",\n        \"stored\": [\n          {\n    \
+    \        \"path\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\",\n  \
+    \          \"relationship\": \"SOURCE_DUPLICATE\",\n            \"id\": \"CultureMech:006748\"\
+    ,\n            \"name\": \"for_dsm_14826\",\n            \"notes\": \"Same ingredient\
+    \ and concentration signature; review as possible duplicate source record.\"\n\
+    \          },\n          {\n            \"path\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n            \"relationship\": \"SOURCE_DUPLICATE\",\n            \"id\": \"\
+    CultureMech:006749\",\n            \"name\": \"for_dsm_14828\",\n            \"\
+    notes\": \"Same ingredient and concentration signature; review as possible duplicate\
+    \ source record.\"\n          }\n        ],\n        \"decision\": \"correct\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml\"\
+    ,\n        \"field_path\": \"variant_children\",\n        \"stored\": [\n    \
+    \      {\n            \"path\": \"data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml\"\
+    ,\n            \"relationship\": \"SOURCE_DUPLICATE\",\n            \"id\": \"\
+    CultureMech:006750\",\n            \"name\": \"KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium\"\
+    ,\n            \"notes\": \"KOMODO Medium 895 has the same 35-ingredient signature\
+    \ as DSMZ Medium 895.\"\n          },\n          {\n            \"path\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\"\
+    ,\n            \"relationship\": \"STRAIN_SPECIFIC_VARIANT\",\n            \"\
+    id\": \"CultureMech:006748\",\n            \"name\": \"for_dsm_14826\",\n    \
+    \        \"notes\": \"KOMODO Medium 895.1 applies DSMZ Medium 895 to DSM 14826.\"\
+    \n          },\n          {\n            \"path\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n            \"relationship\": \"STRAIN_SPECIFIC_VARIANT\",\n            \"\
+    id\": \"CultureMech:006749\",\n            \"name\": \"for_dsm_14828\",\n    \
+    \        \"notes\": \"KOMODO Medium 895.2 applies DSMZ Medium 895 to DSM 14828.\"\
+    \n          }\n        ],\n        \"decision\": \"correct\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"source_branch\": [\n     \
+    \   \"DSM14828\",\n        \"DSM119686\"\n      ],\n      \"tryptone_g_per_L\"\
+    : 2\n    },\n    \"rationale\": \"The explicit branch concentration differs from\
+    \ the stored base-normalized amount; do not apply it to the base medium.\",\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz895\",\n \
+    \       \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\"\
+    ,\n        \"source_locator\": \"DSM14828/119686 paragraph\",\n        \"exact_source_quote\"\
+    : \"For DSM 14828, DSM 119686: Omit starch, add 5.00 g/l D-glucose and increase\
+    \ the\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n    \
+    \    \"source_locator\": \"Following line\",\n        \"exact_source_quote\":\
+    \ \"concentration of Tryptone to 2.00 g/l. Adjust pH of complete medium to 9.0.\"\
+    ,\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q63\",\n    \"component_or_context\"\
+    : \"DSM14828/119686 final pH\",\n    \"decision\": \"evidence_only\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.0,\n        \"\
+    decision\": \"evidence_only\"\n      },\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"variant_children\",\n        \"stored\": [\n    \
+    \      {\n            \"path\": \"data/normalized_yaml/bacterial/for_dsm_14826.yaml\"\
+    ,\n            \"relationship\": \"SOURCE_DUPLICATE\",\n            \"id\": \"\
+    CultureMech:006748\",\n            \"name\": \"for_dsm_14826\",\n            \"\
+    notes\": \"Same ingredient and concentration signature; review as possible duplicate\
+    \ source record.\"\n          },\n          {\n            \"path\": \"data/normalized_yaml/bacterial/for_dsm_14828.yaml\"\
+    ,\n            \"relationship\": \"SOURCE_DUPLICATE\",\n            \"id\": \"\
+    CultureMech:006749\",\n            \"name\": \"for_dsm_14828\",\n            \"\
+    notes\": \"Same ingredient and concentration signature; review as possible duplicate\
+    \ source record.\"\n          }\n        ],\n        \"decision\": \"correct\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"source_branch\"\
+    : [\n        \"DSM14828\",\n        \"DSM119686\"\n      ],\n      \"final_pH\"\
+    : 9\n    },\n    \"rationale\": \"The maintained DSM14828 owner already has source-supported\
+    \ ph_value9.0 without attached evidence. The generated target preserves only base\
+    \ pH and stale duplicate links; retain the branch independently.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n        \"\
+    source_locator\": \"DSM14828/119686 paragraph\",\n        \"exact_source_quote\"\
+    : \"For DSM 14828, DSM 119686: Omit starch, add 5.00 g/l D-glucose and increase\
+    \ the\",\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz895\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium895.pdf\",\n    \
+    \    \"source_locator\": \"Following line\",\n        \"exact_source_quote\":\
+    \ \"concentration of Tryptone to 2.00 g/l. Adjust pH of complete medium to 9.0.\"\
+    ,\n        \"snapshot_sha256\": \"711676dcb7eff4e876ff93ac27ae40ee12627143fd9e666b29192caabd5296d0\"\
+    ,\n        \"parsed_text_sha256\": \"449239419168fc566b3cb0b8e4048551f9ec8b856c9037f049777f70e5dc502b\"\
+    \n      }\n    ]\n  }\n]"
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: concern
+  summary: '33 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 33/35
+    primary and 31/35 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Exact supplied-form mismatch is addressed separately; valid IDs and labels do
+    not establish correct source grounding.'
+  target_ids:
+  - CultureMech:006750
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - chebi131361
+  - chebi131527
+  - chebi15940
+  - chebi15956
+  - chebi16494
+  - chebi17015
+  - chebi176843
+  - chebi26710
+  - chebi27470
+  - chebi28017
+  - chebi29377
+  - chebi30753
+  - chebi30961
+  - chebi31206
+  - chebi31345
+  - chebi31440
+  - chebi31795
+  - chebi32150
+  - chebi32312
+  - chebi33118
+  - chebi34887
+  - chebi44557
+  - chebi49105
+  - chebi62946
+  - chebi63939
+  - chebi75213
+  - chebi75836
+  - chebi86158
+  - chebi86364
+  - chebi86465
+  - chebi8806
+  - chebi91244
+  - chebi91248
+  details: 'Instance coverage on a 0–100 percent scale, denominator 35: primary 94.29%;
+    secondary 88.57%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: identity
+  area: identity
+  topic: Exact collection and four maintained identities
+  outcome: supported
+  summary: DSMZ895 and KOMODO895/895.1/895.2 are exact catalog matches. All four maintained
+    stable IDs resolve at their exact-case paths. The DSMZ parent is CultureMech:002058;
+    KOMODO main is006750; strain wrappers are006748 and006749. The primary directly
+    names the strain modifications, so failed optional detail pages do not make current
+    branch identity unavailable.
+  target_ids:
+  - CultureMech:006750
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - id-search
+  - catalog
+  - primary
+- assessment_id: evidence-scope
+  area: evidence
+  topic: Complete concentration coverage and provenance limits
+  outcome: concern
+  summary: All 175 local concentration instances are covered with literal primary
+    snippets and exact stored locators. No local ingredient has attached amount evidence;
+    matching declared-basis values therefore receive evidence_only. Historical repository
+    reports retain derivative quotations and hashes; they do not recover the unavailable
+    main API or prove chronology.
+  target_ids:
+  - CultureMech:006750
+  evidence_ids:
+  - record
+  - quantity-inventory
+  - primary
+  - bound-owner-context
+- assessment_id: forms
+  area: grounding
+  topic: Sodium salt, nickel hydrate and source stereochemical labels
+  outcome: concern
+  summary: CHEBI8806 is neutral resazurin whereas source supplies sodium resazurin;
+    CHEBI34887 is Cl2Ni whereas source supplies hexahydrate. Source Calcium D-(+)-pantothenate
+    agrees with CHEBI31345 D synonyms and stereospecific structure; DL-lipoic acid
+    remains explicitly supplied while CHEBI16494 is generic/non-stereospecific, not
+    a contradictory L-only mapping. Other asserted hydrates agree. Yeast extract and
+    tryptone remain product mixtures without invented chemical equivalents.
+  target_ids:
+  - CultureMech:006750
+  evidence_ids:
+  - primary
+  - chebi8806
+  - chebi34887
+  - chebi31345
+  - chebi16494
+  - chebi91248
+- assessment_id: preparation
+  area: completeness
+  topic: Maintained base preparation and source-only variants
+  outcome: concern
+  summary: DSMZ owner retains main preparation and mineral pH sequence; other layers
+    omit preparation. The mineral instruction belongs in its stock. Preserve initial
+    main pH7.5 versus final9.3–9.5, separate gas stages, vitamin filtration and conditional
+    branch additions. Unspecified stock volumes and cycle parameters remain unspecified.
+  target_ids:
+  - CultureMech:006750
+  evidence_ids:
+  - record
+  - owner-1
+  - primary
+  - quantity-inventory
+- assessment_id: classification
+  area: scope
+  topic: Complex liquid medium and source metadata
+  outcome: supported
+  summary: 'COMPLEX/UNDEFINED is appropriate for yeast extract/tryptone and LIQUID
+    for absence of a solidifier. Starch is a source substrate, not evidence of a solid
+    agar state. Inherited Aerobic: Yes is catalog metadata and must not override explicitly
+    anaerobic preparation or establish biological phenotype.'
+  target_ids:
+  - CultureMech:006750
+  evidence_ids:
+  - record
+  - primary
+  - catalog
+- assessment_id: relationships
+  area: graph
+  topic: Resolvable paths versus stale scientific relationship meaning
+  outcome: concern
+  summary: All nine parent/child path+ID assertions resolve in ignored-inclusive inventory
+    and current records. Maintained topology identifies KOMODO main as SOURCE_DUPLICATE
+    and wrappers as STRAIN_SPECIFIC_VARIANT, but the generated target retains SOURCE_DUPLICATE
+    children and synonyms. All four owners still have identical 35-component lists,
+    so the later topology repair and ingredients_curated flags do not validate branch
+    formulas.
+  target_ids:
+  - CultureMech:006750
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - bound-owner-context
+  - primary
+- assessment_id: growth
+  area: scope
+  topic: Strain context without experimental growth claims
+  outcome: not_applicable
+  summary: DSM strain labels delimit source formula branches, not new growth evidence
+    or taxonomy identifiers. No experimental growth object or graph-match claim is
+    added. Parent DSM141/120 biological applications and unrelated stocks are outside
+    the transfer scope.
+  target_ids:
+  - CultureMech:006750
+  evidence_ids:
+  - record
+  - primary
+  - mineral-parent
+  - vitamin-parent
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: concern
+  summary: 54 timestamp instances inspected; 8 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:006750
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+- assessment_id: current-writers
+  area: provenance
+  topic: Current writers and maintained input follow-up
+  outcome: concern
+  summary: Current importer separates first-solution ingredients/receiving stocks
+    but aggregates preparation at the root. Current cleanup retains the first conflicting
+    duplicate with a warning; the historical duplicate sums remain visible in ingredient
+    notes and are not attributed to the current function. Current lossless merge preserves
+    distinctions. The exact topology repair requires the same 35-row signature and
+    changes links/history/ingredients_curated flags without fixing quantities; this
+    explains its bounded scope, not source validity. All four maintained contributors
+    need scientific curation before authorized regeneration.
+  target_ids:
+  - CultureMech:006750
+  evidence_ids:
+  - record
+  - current-code-0
+  - current-code-1
+  - current-code-2
+  - current-code-3
+findings:
+- finding_id: f1
+  issue_key: culturemech.006750.stock-flattening-and-duplicate-sums
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Stock recipes and four cross-stage sums do not describe the main medium
+  description: Every layer stores undiluted mineral/vitamin strengths as main g/L.
+    Mg,Ca,Na andFe additionally sum base-normalized amounts with undiluted mineral
+    values, as the ingredient notes explicitly show. For example Mg 3.0987167 is 0.0987167
+    + 3.0 rather than a dose-corrected mineral contribution.
+  target_ids:
+  - CultureMech:006750
+  field_paths:
+  - ingredients
+  - solutions
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - primary
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14826.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14828.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.006750.strain-formulas-and-stale-duplicates
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Source-defined strain variants retain the base formula and stale duplicate
+    semantics
+  description: The primary requires starch omission and tryptone 2 g/L for both branches,
+    a 4 g/L thiosulfate supplement for DSM14826, and D-glucose 5 g/L plus pH 9 for
+    DSM14828/119686. Maintained strain wrappers still carry the identical base list,
+    though DSM14828 pH 9 is already correct. Generated children/synonyms still represent
+    them as duplicates despite repaired maintained topology.
+  target_ids:
+  - CultureMech:006750
+  field_paths:
+  - variant_children
+  - synonyms
+  - ingredients
+  - ph_range
+  - parent_media
+  - variant_modifications
+  evidence_ids:
+  - record
+  - owner-1
+  - owner-2
+  - owner-3
+  - primary
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14826.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14828.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.006750.sodium-resazurin-nickel-hydrate
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Two supplied forms have different chemical identities than their terms
+  description: ingredients[10] supplies sodium resazurin but CHEBI8806 is neutral
+    C12H7NO4. ingredients[22] supplies nickel hexahydrate but primary and secondary
+    CHEBI34887 identify Cl2Ni. Source-compatible D-pantothenate is not included in
+    this mismatch.
+  target_ids:
+  - CultureMech:006750
+  field_paths:
+  - ingredients[10].term
+  - ingredients[22].term
+  - ingredients[22].mediaingredientmech_chebi_term
+  evidence_ids:
+  - primary
+  - chebi8806
+  - chebi34887
+  - chebi31345
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14826.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14828.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.2
+  native_severity: P3
+  normalization_reason: P3 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: culturemech.006750.preparation-loss-and-stock-scope
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Main preparation is lost outside the DSMZ owner and mineral pH is detached
+  description: Only the DSMZ owner retains the main preparation and mineral pH sequence;
+    all other local layers omit preparation. Its mineral instruction is a main-root
+    step despite distinct stock pH 6.5 then 7.0. Branch-specific preparations are
+    absent from their wrappers.
+  target_ids:
+  - CultureMech:006750
+  field_paths:
+  - preparation_steps
+  - solutions
+  evidence_ids:
+  - record
+  - owner-1
+  - owner-2
+  - owner-3
+  - primary
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14826.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14828.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f5
+  issue_key: culturemech.006750.history-and-curated-flag-scope
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Topology repair flags do not validate unchanged ingredient chemistry
+  description: The later topology repair sets ingredients_curated and preserves a
+    required 35-row signature, while four source-stage sums and unchanged variant
+    lists remain. Eight malformed/timezone-naive timestamp instances occur across
+    54 events. Old events and duplicate notes are provenance, not concentration evidence.
+  target_ids:
+  - CultureMech:006750
+  field_paths:
+  - curation_history
+  - ingredients
+  - data_quality_flags
+  evidence_ids:
+  - history-metadata
+  - current-code-3
+  - record
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14826.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14828.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Reconstruct main quantities, iron/resazurin stocks, 10 mL minerals
+    and 1 mL tenfold vitamins in all maintained contributors. Separate every duplicate
+    source contribution before dilution. Preserve explicit 1013 mL header and 1013.5
+    mL liquid-sum distinction, with unspecified preparation-stock volumes documented;
+    attach claim-level evidence.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:006750
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14826.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14828.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Keep base and strain variants distinct. Apply only each explicit branch
+    in its maintained wrapper; retain supplement wording without inventing a replacement
+    thiosulfate total, and preserve already-supported DSM14828 pH 9. Align generated
+    relationship meaning only after authorized owner curation/regeneration. Preserve
+    source DSM119686 context without fabricating a local record.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:006750
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14826.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14828.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Verify exact source-compatible salt/hydrate identifiers in each maintained
+    layer, checking primary and secondary slots independently; preserve mixtures and
+    source stereochemical qualifiers without invented replacement IDs.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:006750
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14826.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14828.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Preserve the DSMZ main preparation, scope the mineral sequence under
+    its stock, and recover source-supported main/branch preparation for the other
+    contributors. Keep pH stages, N2/carbonate gas distinction, filtration and unquantified
+    cycles/stock volumes explicit.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:006750
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14826.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14828.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a5
+  description: Append a precise scientific-curation event after authorized corrections,
+    qualifying the earlier topology-only scope. Preserve historical events and source-stage
+    duplicate provenance; do not silently rewrite old timestamps or treat the flag
+    as scientific approval.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:006750
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_895_ANAEROBRANCA_GOTTSCHALKII_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anaerobranca_gottschalkii_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14826.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14828.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Exact main API or KOMODO detail access is unavailable (503/403), with actual original
+  attempts retained. Complete current primary, catalog and relevant stock endpoints
+  support this comparison; no required check is mislabeled unavailable solely for
+  this optional access limit.
+- Exact main API or KOMODO detail access is unavailable (503/403), with actual original
+  attempts retained. Complete current primary, catalog and relevant stock endpoints
+  support this comparison; no required check is mislabeled unavailable solely for
+  this optional access limit.
+- Exact main API or KOMODO detail access is unavailable (503/403), with actual original
+  attempts retained. Complete current primary, catalog and relevant stock endpoints
+  support this comparison; no required check is mislabeled unavailable solely for
+  this optional access limit.
+- Exact main API or KOMODO detail access is unavailable (503/403), with actual original
+  attempts retained. Complete current primary, catalog and relevant stock endpoints
+  support this comparison; no required check is mislabeled unavailable solely for
+  this optional access limit.
+- Exact main API or KOMODO detail access is unavailable (503/403), with actual original
+  attempts retained. Complete current primary, catalog and relevant stock endpoints
+  support this comparison; no required check is mislabeled unavailable solely for
+  this optional access limit.
+- Current primary directly resolves branch instructions; no historical KOMODO access
+  limit is used to claim current formulation identity unavailable. All asserted current
+  CHEBI-based secondary mappings were checked; no legacy MIM assertion requires historical
+  recovery here.
+- The declared 1013 mL normalization and 1013.5 mL listed-liquid arithmetic coexist
+  in the source. They do not establish a measured final volume; unspecified preparation-stock
+  volumes and thiosulfate supplement interpretation remain explicitly bounded.
+- No organism growth, taxonomic replacement, percent-basis conversion or unprovided
+  autoclave cycle is inferred. Parent mineral and 10x vitamin sources transfer only
+  their named subsections.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-027
+- generated-medium
+```
