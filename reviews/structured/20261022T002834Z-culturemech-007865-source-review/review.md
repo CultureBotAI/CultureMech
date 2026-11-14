@@ -1,0 +1,1894 @@
+# Source and formulation review: bhiy_agar (CultureMech:007865)
+
+- Review: 20261022T002834Z-culturemech-007865-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-22T00:25:02Z
+- Finished UTC: 2026-10-22T00:28:34Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+JCM 141 and TOGO M132 identify BHIY agar as an opaque 37 g BHI product with yeast extract, agar and 1 L water. The target and maintained owner instead expand the product into six unverified constituents, misstate water as 1 g/L, and omit source pH adjustment and sterilization. Exact manufacturer composition remains unavailable.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 421; batch 043 item 1 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding forty-two task batches contain 420 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 423 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 6a639c4b597e95b6061f2d1c7baa04de84ba2f00.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:007865 | data/merge_yaml/merged/BHIY_AGAR.yaml | generated | bhiy_agar |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:007865 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:007865 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-043/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch043/421/strict.tsv |
+| validate-terms | passed | True | CultureMech:007865 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:007865 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:007865 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: bd237500 | unavailable | True | CultureMech:007865 | The exact manufacturer product page is HTTP403; separately preserved product/manual/IFU attempts are403,404 or a network failure. No authenticated BD/Difco237500 edition specification was recovered. The available collection recipe supports the opaque 37 g product, not its asserted internal constituents. |
+| Exact source content access: mediadiveJ141api | unavailable | False | CultureMech:007865 | Current J141 API returned503. This optional provider failure does not negate the available JCM141 primary or TOGO source identity. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:007865.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Complete current ontology and secondary linkage inventory
+
+grounding: supported. Targets: CultureMech:007865.
+
+8 distinct bound ontology IDs have matching nonobsolete labels; 0 provider-ID slots lack successful identifier verification. All 2 asserted current CHEBI secondary keys have exact index rows; 0 legacy slots are recorded separately. Target primary linkage is 8/9 (88.89%) and current secondary linkage is 2/9 (22.22%), on a 0–100 linkage scale, not a correctness score. Brain/heart anatomy and proteose-peptone class identity do not authenticate a commercial BHI composition.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:007865.
+
+13 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Exact single maintained contributor and excluded namesake
+
+identity: supported. Targets: CultureMech:007865.
+
+CultureMech:007865 is generated from TOGO_M132_BHIY_Agar.yaml only. The JCM-derived bhiy_agar.yaml, CultureMech:002500, and its separate merged view are comparison context, not owners or additional reviewed targets. M132 explicitly identifies JCM141.
+
+### Opaque product versus six constituent assertions
+
+representation: concern. Targets: CultureMech:007865.
+
+The primary recipe uses BHI 37 g as one supplied product. Neither brain/heart anatomy terms nor the current secondary article authenticate its internal composition, tissue starting-material quantities or the selected catalog edition. Yeast extract 20 g and agar 15 g are separate additions; listed 1 L water does not declare measured final volume.
+
+### Missing pH and explicit JCM sterilization
+
+representation: concern. Targets: CultureMech:007865.
+
+The target and maintained owner lack preparation_steps and ph_value. The exact primary supports adjustment to pH 7.4 and its page default 121 °C for 15 min. These values belong to JCM141; no incubation temperature or time is supplied.
+
+### Classification and growth scope
+
+scope: supported. Targets: CultureMech:007865.
+
+Complex/undefined composition and solid agar are consistent with BHI, yeast extract and agar. Bacterial catalogue categorization and generic cultivation application are not strain-specific growth evidence. No target organism, temperature or growth guarantee is inferred.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:007865.
+
+17 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "decision_id": "q1",
+    "subject": "Distilled water",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BHIY_AGAR.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM132original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132",
+        "source_locator": "$.components[0].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "3e711c64d741d2bc916b72e93781cc73df9a9a8ae0966046b0c67a2375d19606"
+      }
+    ],
+    "rationale": "Stored 1 G_PER_L is dimensionally inconsistent with listed 1 L water. Preserve the source volume; no density or final-volume normalization is supplied."
+  },
+  {
+    "decision_id": "q2",
+    "subject": "Agar",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BHIY_AGAR.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM132original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132",
+        "source_locator": "$.components[0].items[1]",
+        "exact_source_quote": "\"component_name\": \"Agar\",\n          \"volume\": 15,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "3e711c64d741d2bc916b72e93781cc73df9a9a8ae0966046b0c67a2375d19606"
+      }
+    ],
+    "rationale": "The nominal batch mass is supported, but the stored per-litre basis is not independently established by a listed water amount. No matching attached amount evidence is present; do not call the rate verified."
+  },
+  {
+    "decision_id": "q3",
+    "subject": "Yeast extract (BD-Difco)",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BHIY_AGAR.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM132original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132",
+        "source_locator": "$.components[0].items[2]",
+        "exact_source_quote": "\"component_name\": \"Yeast extract (BD-Difco)\",\n          \"volume\": 20,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "3e711c64d741d2bc916b72e93781cc73df9a9a8ae0966046b0c67a2375d19606"
+      }
+    ],
+    "rationale": "The nominal batch mass is supported, but the stored per-litre basis is not independently established by a listed water amount. No matching attached amount evidence is present; do not call the rate verified."
+  },
+  {
+    "decision_id": "q4",
+    "subject": "Calf brains",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BHIY_AGAR.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM132original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132",
+        "source_locator": "$.components[0].items[3]",
+        "exact_source_quote": "\"component_name\": \"Brain heart infusion (BD-Difco)\",\n          \"volume\": 37,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "3e711c64d741d2bc916b72e93781cc73df9a9a8ae0966046b0c67a2375d19606"
+      }
+    ],
+    "rationale": "The primary supplies one opaque BHI product. This internal constituent identity/value, including VARIABLE tissue placeholders, is not authenticated for the exact commercial edition."
+  },
+  {
+    "decision_id": "q5",
+    "subject": "Beef heart",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BHIY_AGAR.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM132original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132",
+        "source_locator": "$.components[0].items[3]",
+        "exact_source_quote": "\"component_name\": \"Brain heart infusion (BD-Difco)\",\n          \"volume\": 37,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "3e711c64d741d2bc916b72e93781cc73df9a9a8ae0966046b0c67a2375d19606"
+      }
+    ],
+    "rationale": "The primary supplies one opaque BHI product. This internal constituent identity/value, including VARIABLE tissue placeholders, is not authenticated for the exact commercial edition."
+  },
+  {
+    "decision_id": "q6",
+    "subject": "Proteose peptone",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BHIY_AGAR.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "10.0",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "10.0",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM132original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132",
+        "source_locator": "$.components[0].items[3]",
+        "exact_source_quote": "\"component_name\": \"Brain heart infusion (BD-Difco)\",\n          \"volume\": 37,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "3e711c64d741d2bc916b72e93781cc73df9a9a8ae0966046b0c67a2375d19606"
+      }
+    ],
+    "rationale": "The primary supplies one opaque BHI product. This internal constituent identity/value, including VARIABLE tissue placeholders, is not authenticated for the exact commercial edition."
+  },
+  {
+    "decision_id": "q7",
+    "subject": "Dextrose",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BHIY_AGAR.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "2.0",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "2.0",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM132original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132",
+        "source_locator": "$.components[0].items[3]",
+        "exact_source_quote": "\"component_name\": \"Brain heart infusion (BD-Difco)\",\n          \"volume\": 37,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "3e711c64d741d2bc916b72e93781cc73df9a9a8ae0966046b0c67a2375d19606"
+      }
+    ],
+    "rationale": "The primary supplies one opaque BHI product. This internal constituent identity/value, including VARIABLE tissue placeholders, is not authenticated for the exact commercial edition."
+  },
+  {
+    "decision_id": "q8",
+    "subject": "Sodium chloride",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BHIY_AGAR.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "5.0",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "5.0",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM132original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132",
+        "source_locator": "$.components[0].items[3]",
+        "exact_source_quote": "\"component_name\": \"Brain heart infusion (BD-Difco)\",\n          \"volume\": 37,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "3e711c64d741d2bc916b72e93781cc73df9a9a8ae0966046b0c67a2375d19606"
+      }
+    ],
+    "rationale": "The primary supplies one opaque BHI product. This internal constituent identity/value, including VARIABLE tissue placeholders, is not authenticated for the exact commercial edition."
+  },
+  {
+    "decision_id": "q9",
+    "subject": "Disodium phosphate",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BHIY_AGAR.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM132original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132",
+        "source_locator": "$.components[0].items[3]",
+        "exact_source_quote": "\"component_name\": \"Brain heart infusion (BD-Difco)\",\n          \"volume\": 37,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "3e711c64d741d2bc916b72e93781cc73df9a9a8ae0966046b0c67a2375d19606"
+      }
+    ],
+    "rationale": "The primary supplies one opaque BHI product. This internal constituent identity/value, including VARIABLE tissue placeholders, is not authenticated for the exact commercial edition."
+  },
+  {
+    "decision_id": "q10",
+    "subject": "Tissue starting-material claim 200 g/L",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BHIY_AGAR.yaml",
+        "field_path": "ingredients[3].notes",
+        "stored": "infusion from 200 g/L; Tissue infusion - source material is calf brain tissue; Constituent of Brain Heart Infusion commercial product"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml",
+        "field_path": "ingredients[3].notes",
+        "stored": "infusion from 200 g/L; Tissue infusion - source material is calf brain tissue; Constituent of Brain Heart Infusion commercial product"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM132original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132",
+        "source_locator": "$.components[0].items[3]",
+        "exact_source_quote": "\"component_name\": \"Brain heart infusion (BD-Difco)\",\n          \"volume\": 37,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "3e711c64d741d2bc916b72e93781cc73df9a9a8ae0966046b0c67a2375d19606"
+      }
+    ],
+    "rationale": "The stored tissue-source assertion is not a soluble ingredient amount and is not printed in the primary. Current anatomy grounding and secondary article do not authenticate the asserted product edition."
+  },
+  {
+    "decision_id": "q11",
+    "subject": "Tissue starting-material claim 250 g/L",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BHIY_AGAR.yaml",
+        "field_path": "ingredients[4].notes",
+        "stored": "infusion from 250 g/L; Tissue infusion - source material is beef/ox heart tissue; Constituent of Brain Heart Infusion commercial product"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml",
+        "field_path": "ingredients[4].notes",
+        "stored": "infusion from 250 g/L; Tissue infusion - source material is beef/ox heart tissue; Constituent of Brain Heart Infusion commercial product"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM132original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132",
+        "source_locator": "$.components[0].items[3]",
+        "exact_source_quote": "\"component_name\": \"Brain heart infusion (BD-Difco)\",\n          \"volume\": 37,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "3e711c64d741d2bc916b72e93781cc73df9a9a8ae0966046b0c67a2375d19606"
+      }
+    ],
+    "rationale": "The stored tissue-source assertion is not a soluble ingredient amount and is not printed in the primary. Current anatomy grounding and secondary article do not authenticate the asserted product edition."
+  },
+  {
+    "decision_id": "q12",
+    "subject": "Inherited commercial-component pH 7.4 ± 0.2",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BHIY_AGAR.yaml",
+        "field_path": "ingredients[8].notes",
+        "stored": "pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial product"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml",
+        "field_path": "ingredients[8].notes",
+        "stored": "pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial product"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM132original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132",
+        "source_locator": "$.components[0].items[3]",
+        "exact_source_quote": "\"component_name\": \"Brain heart infusion (BD-Difco)\",\n          \"volume\": 37,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "3e711c64d741d2bc916b72e93781cc73df9a9a8ae0966046b0c67a2375d19606"
+      },
+      {
+        "source_key": "togoM132original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "Adjust pH to 7.4.",
+        "snapshot_sha256": "3e711c64d741d2bc916b72e93781cc73df9a9a8ae0966046b0c67a2375d19606"
+      }
+    ],
+    "rationale": "Primary medium adjustment to 7.4 does not authenticate an internal product pH interval; keep those scopes separate."
+  },
+  {
+    "decision_id": "q13",
+    "subject": "Opaque BHI source batch mass",
+    "decision": "add",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "togoM132original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132",
+        "source_locator": "$.components[0].items[3]",
+        "exact_source_quote": "\"component_name\": \"Brain heart infusion (BD-Difco)\",\n          \"volume\": 37,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "3e711c64d741d2bc916b72e93781cc73df9a9a8ae0966046b0c67a2375d19606"
+      }
+    ],
+    "rationale": "Add the supplied product as 37 g for the printed recipe batch after authorized correction. Do not manufacture its six constituent concentrations or a measured final-volume denominator."
+  },
+  {
+    "decision_id": "q14",
+    "subject": "Listed water volume",
+    "decision": "add",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "togoM132original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132",
+        "source_locator": "$.components[0].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "3e711c64d741d2bc916b72e93781cc73df9a9a8ae0966046b0c67a2375d19606"
+      }
+    ],
+    "rationale": "Preserve 1 L as a source batch component amount; correcting the wrong mass-rate representation must not invent a density conversion or final makeup instruction."
+  },
+  {
+    "decision_id": "q15",
+    "subject": "Required pH adjustment",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BHIY_AGAR.yaml",
+        "field_path": "ph_value",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml",
+        "field_path": "ph_value",
+        "stored": null
+      },
+      {
+        "input": "data/merge_yaml/merged/BHIY_AGAR.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM132original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "Adjust pH to 7.4.",
+        "snapshot_sha256": "3e711c64d741d2bc916b72e93781cc73df9a9a8ae0966046b0c67a2375d19606"
+      }
+    ],
+    "rationale": "The exact primary supports pH 7.4 and an adjustment instruction. No titrant identity, dose or stock strength is given."
+  },
+  {
+    "decision_id": "q16",
+    "subject": "JCM default autoclaving temperature and duration",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BHIY_AGAR.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "jcm141",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=141",
+        "source_locator": "Page default before recipe141",
+        "exact_source_quote": "Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.",
+        "snapshot_sha256": "60b2f75ca99a79f8e7b7b49fd564314292ccaad267894574a7925bdf57afbb07",
+        "parsed_text_sha256": "4e1b28d62dcd0f2de780ee105c7edd255ce82c07d5b789545950db3e25100fbd"
+      }
+    ],
+    "rationale": "Add 121 °C and 15 min for this exact JCM141 source scope, without inferring an incubation temperature or transferring defaults to another catalogue."
+  },
+  {
+    "decision_id": "q17",
+    "subject": "Unspecified incubation temperature",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BHIY_AGAR.yaml",
+        "field_path": "temperature",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml",
+        "field_path": "temperature",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "jcm141",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=141",
+        "source_locator": "Page default before recipe141",
+        "exact_source_quote": "Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.",
+        "snapshot_sha256": "60b2f75ca99a79f8e7b7b49fd564314292ccaad267894574a7925bdf57afbb07",
+        "parsed_text_sha256": "4e1b28d62dcd0f2de780ee105c7edd255ce82c07d5b789545950db3e25100fbd"
+      }
+    ],
+    "rationale": "The supplied temperature is sterilization, not incubation. No generic incubation value is supported."
+  }
+]
+
+## Findings
+
+### f1: Opaque BHI product replaced by unverified constituent formula
+
+major / open / confirmed; issue key: culturemech.007865.commercial-expansion.
+
+Both generated target and maintained owner replace the source BHI 37 g product with six constituents and unauthenticated tissue-source/catalog claims. The primary and current secondary article do not establish equivalence to this internal commercial formula.
+
+### f2: Listed water volume stored as mass rate
+
+major / open / confirmed; issue key: culturemech.007865.water-dimension.
+
+Both layers record 1 G_PER_L water, whereas exact M132/JCM141 lists 1 L. The source volume cannot be represented as this mass rate.
+
+### f3: Source pH and JCM sterilization missing
+
+minor / open / confirmed; issue key: culturemech.007865.preparation-omissions.
+
+The exact source requires adjustment to pH 7.4 and supplies the page default 121 °C for 15 min, while both selected layers omit preparation and medium pH. The pH interval embedded in a commercial-constituent note does not replace these instructions.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore the exact supplied opaque product and its batch amount in the maintained owner; retain uncertain commercial composition explicitly and regenerate only after source-grounded correction.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Correct the maintained water representation from the exact listed volume; retain unknown measured final volume and attach claim-level source evidence.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Add the source-scoped pH and sterilization instructions to the maintained owner without adding an incubation condition.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/BHIY_AGAR.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/BHIY_AGAR.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/BHIY_AGAR.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch043/421/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-043/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch043/421/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/BHIY_AGAR.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/BHIY_AGAR.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/BHIY_AGAR.yaml:1:id: CultureMech:007865<br>./data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml:1:id: CultureMech:007865<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch043/source-preflight-bound/421/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 25 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| grounding-inventory | /private/tmp/culturemech-review-work-batch043/421/grounding-inventory.json; Complete path-qualified sidecar | context_only | Every asserted ingredient primary/secondary/legacy slot in target and exact owners, full OLS scientific properties, current exact index rows and any unverified provider identifiers. |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377; Exact asserted OLS ID, label, obsolete state and full scientific properties | supports | Current identifier resolves with the asserted label. Source product and chemical-form support are assessed separately. |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509; Exact asserted OLS ID, label, obsolete state and full scientific properties | supports | Current identifier resolves with the asserted label. Source product and chemical-form support are assessed separately. |
+| uberon0000955 | https://www.ebi.ac.uk/ols4/api/ontologies/uberon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0000955; Exact asserted OLS ID, label, obsolete state and full scientific properties | supports | Current identifier resolves with the asserted label. Source product and chemical-form support are assessed separately. |
+| uberon0000948 | https://www.ebi.ac.uk/ols4/api/ontologies/uberon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0000948; Exact asserted OLS ID, label, obsolete state and full scientific properties | supports | Current identifier resolves with the asserted label. Source product and chemical-form support are assessed separately. |
+| micro0000180 | https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FMICRO_0000180; Exact asserted OLS ID, label, obsolete state and full scientific properties | supports | Current identifier resolves with the asserted label. Source product and chemical-form support are assessed separately. |
+| chebi17634 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17634; Exact asserted OLS ID, label, obsolete state and full scientific properties | supports | Current identifier resolves with the asserted label. Source product and chemical-form support are assessed separately. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact asserted OLS ID, label, obsolete state and full scientific properties | supports | Current identifier resolves with the asserted label. Source product and chemical-form support are assessed separately. |
+| chebi34683 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34683; Exact asserted OLS ID, label, obsolete state and full scientific properties | supports | Current identifier resolves with the asserted label. Source product and chemical-form support are assessed separately. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Exact asserted current secondary identifiers in pinned 9077-row label index | context_only | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:15377": [{"label": "[OH2]", "match_type": "synonym", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "acqua", "match_type": "synonym", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "agua", "match_type": "synonym", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "aqua", "match_type": "synonym", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "dH2O", "match_type": "synonym", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "dihydridooxygen", "match_type": "synonym", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "dihydrogen oxide", "match_type": "synonym", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Distiled water", "match_type": "synonym", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Distilled water", "match_type": "preferred_term", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Distilled water (for liquid medium)", "match_type": "synonym", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Distilled water (for solid medium)", "match_type": "synonym", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "eau", "match_type": "synonym", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "H(2)O", "match_type": "synonym", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "H2O", "match_type": "synonym", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "HOH", "match_type": "synonym", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "hydrogen hydroxide", "match_type": "synonym", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "oxidane", "match_type": "synonym", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Wasser", "match_type": "synonym", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "WATER", "match_type": "synonym", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:2509": [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Agar  (if needed)", "match_type": "synonym", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Agar (BD)", "match_type": "synonym", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "agar (BD-Difco)", "match_type": "synonym", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Agar (Difco)", "match_type": "synonym", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Agar (if needed)", "match_type": "synonym", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Agar (if needed)*", "match_type": "synonym", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Agar (Molecular Genetics)", "match_type": "synonym", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Agar (Purified)", "match_type": "synonym", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Agar* (if needed)", "match_type": "synonym", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Bacteriological Agar", "match_type": "synonym", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, "legacy": []} |
+| history-metadata | data/merge_yaml/merged/BHIY_AGAR.yaml; data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 7, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml", "events": 6, "timestamp_issues": []}] |
+| history-full | /private/tmp/culturemech-review-work-batch043/421/history-inventory.json; Complete path-qualified sidecar | context_only | Full target and maintained-owner history events retained without rewriting malformed or timezone-absent values. |
+| historical-inventory | /private/tmp/culturemech-review-work-batch043/421/historical-evidence-inventory.json; Complete path-qualified sidecar | context_only | Exact attached claim objects and decoded historical report joins; a decoded match is not original API-response authentication. |
+| primary-identity | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=141; Exact JCM141 title and full recipe table | supports | Exact BHIY agar primary; four supplied components. The available primary does not establish an internal commercial-product formula. |
+| provider-product | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132; $.components[0].items[3] and $.meta | supports | Exact M132 points to JCM141 and supplies opaque BHI 37 g. |
+| primary-sterilization | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=141; Page default before recipe141 | supports | This JCM page explicitly supplies 121 °C for 15 min unless otherwise stated. |
+| primary-ph | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132; $.comments[0].comment | supports | Adjust pH to 7.4; this is not the inherited commercial-component pH interval. |
+| secondary-product-context | https://microbenotes.com/brain-heart-infusion-bhi-agar/; Current secondary article composition table | context_only | The current secondary article lists a BHI agar formula with HM infusion powder and BHI powder. It is not authenticated exact BD237500 edition evidence and does not validate the 200 g/250 g tissue assertions. |
+| bd237500-attempt | https://www.bd.com/en-us/products-and-solutions/products/product-page.237500; Preserved exact public retrieval result | context_only | The exact manufacturer product page is HTTP403; separately preserved product/manual/IFU attempts are403,404 or a network failure. No authenticated BD/Difco237500 edition specification was recovered. The available collection recipe supports the opaque 37 g product, not its asserted internal constituents. |
+| mediadiveJ141api-attempt | https://mediadive.dsmz.de/rest/medium/J141; Preserved exact public retrieval result | context_only | Current J141 API returned503. This optional provider failure does not negate the available JCM141 primary or TOGO source identity. |
+| writer-0 | src/culturemech/import/togo_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current _ingredient_from_item and _extract_preparation_steps read: unit/stock normalization and comment handling are current code context. They do not establish the historical execution that produced the stored water unit or commercial expansion; no unconditional attribution to the guarded current merger is made. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch043/421/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- The exact manufacturer product page is HTTP403; separately preserved product/manual/IFU attempts are403,404 or a network failure. No authenticated BD/Difco237500 edition specification was recovered. The available collection recipe supports the opaque 37 g product, not its asserted internal constituents.
+- Current J141 API returned503. This optional provider failure does not negate the available JCM141 primary or TOGO source identity.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261022T002834Z-culturemech-007865-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: bhiy_agar (CultureMech:007865)'
+started_at: '2026-10-22T00:25:02Z'
+finished_at: '2026-10-22T00:28:34Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: JCM 141 and TOGO M132 identify BHIY agar as an opaque 37 g BHI product with
+  yeast extract, agar and 1 L water. The target and maintained owner instead expand
+  the product into six unverified constituents, misstate water as 1 g/L, and omit
+  source pH adjustment and sterilization. Exact manufacturer composition remains unavailable.
+source:
+  git_revision: 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/BHIY_AGAR.yaml
+    sha256: 84fbbc29a4e92f6e2b337da2c6d066c27cc57ea110879415577da8d00e196b8d
+    role: target
+  - path: data/merge_yaml/merged/bhiy_agar__c89652dd.yaml
+    sha256: 99bf5957aadb5e42639200bfd0fd3b012786a98bd55767fa213b65fb92077aba
+    role: context
+  - path: data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml
+    sha256: 08819bd85a3aebd8ce9cdad0d7435c20bede569e8d8fbbfcb1415659de6ee08d
+    role: context
+  - path: data/normalized_yaml/bacterial/bhiy_agar.yaml
+    sha256: 99e40ffe53f0f3d020563dfb9a64dc7b96357fd4db13140ed5d5d07e9f31615b
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/komodo_importer.py
+    sha256: 702733bd580e4ba28f77e183e1e8268f17ea2c1041cf7b3addd92919624f2706
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 421; batch 043 item 1 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding forty-two task batches
+    contain 420 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 423 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:007865
+targets:
+- target_id: CultureMech:007865
+  path: data/merge_yaml/merged/BHIY_AGAR.yaml
+  label: bhiy_agar
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/BHIY_AGAR.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:007865
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/BHIY_AGAR.yaml --workers 1
+    --out /private/tmp/culturemech-review-work-batch043/421/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-043/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch043/421/strict.tsv"
+  target_ids:
+  - CultureMech:007865
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/BHIY_AGAR.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:007865
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/BHIY_AGAR.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:007865
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:007865
+- check_id: bd237500-source-access
+  name: 'Exact source content access: bd237500'
+  required: true
+  status: unavailable
+  summary: The exact manufacturer product page is HTTP403; separately preserved product/manual/IFU
+    attempts are403,404 or a network failure. No authenticated BD/Difco237500 edition
+    specification was recovered. The available collection recipe supports the opaque
+    37 g product, not its asserted internal constituents.
+  target_ids:
+  - CultureMech:007865
+  evidence_ids:
+  - bd237500-attempt
+- check_id: mediadiveJ141api-source-access
+  name: 'Exact source content access: mediadiveJ141api'
+  required: false
+  status: unavailable
+  summary: Current J141 API returned503. This optional provider failure does not negate
+    the available JCM141 primary or TOGO source identity.
+  target_ids:
+  - CultureMech:007865
+  evidence_ids:
+  - mediadiveJ141api-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/BHIY_AGAR.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-22T00:28:33Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-22T00:28:33Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/BHIY_AGAR.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-22T00:25:33.709809Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/BHIY_AGAR.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch043/421/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-22T00:25:34.702212Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-043/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch043/421/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/BHIY_AGAR.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-22T00:25:36.246451Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/BHIY_AGAR.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-22T00:25:37.061368Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-22T00:28:33Z'
+  support: supports
+  summary: './data/merge_yaml/merged/BHIY_AGAR.yaml:1:id: CultureMech:007865
+
+    ./data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml:1:id: CultureMech:007865
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch043/source-preflight-bound/421/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-22T00:28:33Z'
+  support: supports
+  summary: 25 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: f385a88932243a50d371859fe3cb72d74f6fb423ef0151d6092d5a5ec8f310a5
+- evidence_id: grounding-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch043/421/grounding-inventory.json
+  locator: Complete path-qualified sidecar
+  accessed_at: '2026-10-22T00:28:33Z'
+  support: context_only
+  summary: Every asserted ingredient primary/secondary/legacy slot in target and exact
+    owners, full OLS scientific properties, current exact index rows and any unverified
+    provider identifiers.
+  snapshot_sha256: a3b6a0984b732352abb35618b8807f4a21167e59263b07a7eee72e8e119ec84f
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact asserted OLS ID, label, obsolete state and full scientific properties
+  accessed_at: '2026-10-21T08:17:26.097802Z'
+  support: supports
+  summary: Current identifier resolves with the asserted label. Source product and
+    chemical-form support are assessed separately.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: Exact asserted OLS ID, label, obsolete state and full scientific properties
+  accessed_at: '2026-10-21T08:17:27.847373Z'
+  support: supports
+  summary: Current identifier resolves with the asserted label. Source product and
+    chemical-form support are assessed separately.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: uberon0000955
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/uberon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0000955
+  locator: Exact asserted OLS ID, label, obsolete state and full scientific properties
+  accessed_at: '2026-10-21T08:43:25.122940Z'
+  support: supports
+  summary: Current identifier resolves with the asserted label. Source product and
+    chemical-form support are assessed separately.
+  snapshot_sha256: ce200fe58b82652d0f04310c92d23633919fa6ad6aee2a17c6b25c2e490a8877
+- evidence_id: uberon0000948
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/uberon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0000948
+  locator: Exact asserted OLS ID, label, obsolete state and full scientific properties
+  accessed_at: '2026-10-21T08:43:24.915343Z'
+  support: supports
+  summary: Current identifier resolves with the asserted label. Source product and
+    chemical-form support are assessed separately.
+  snapshot_sha256: c658bbcacd89befa47e3bd4859f176db247b3ce67483b6590c91d0865d41aed4
+- evidence_id: micro0000180
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FMICRO_0000180
+  locator: Exact asserted OLS ID, label, obsolete state and full scientific properties
+  accessed_at: '2026-10-21T08:43:24.290496Z'
+  support: supports
+  summary: Current identifier resolves with the asserted label. Source product and
+    chemical-form support are assessed separately.
+  snapshot_sha256: b3a39a531c5ab5508a297228d13ba81c99899b041d5292a9d668eded939bfe73
+- evidence_id: chebi17634
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17634
+  locator: Exact asserted OLS ID, label, obsolete state and full scientific properties
+  accessed_at: '2026-10-21T08:42:33.425023Z'
+  support: supports
+  summary: Current identifier resolves with the asserted label. Source product and
+    chemical-form support are assessed separately.
+  snapshot_sha256: d11b31a8e91c3fffe7744f612dab69cdb4e02f42068cd2eb1458acee4503a62f
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact asserted OLS ID, label, obsolete state and full scientific properties
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: Current identifier resolves with the asserted label. Source product and
+    chemical-form support are assessed separately.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi34683
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34683
+  locator: Exact asserted OLS ID, label, obsolete state and full scientific properties
+  accessed_at: '2026-10-21T08:42:46.851695Z'
+  support: supports
+  summary: Current identifier resolves with the asserted label. Source product and
+    chemical-form support are assessed separately.
+  snapshot_sha256: 288ee6eaa066e7579840122d3411df9987889818425faea2b7203724bbc41fd2
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Exact asserted current secondary identifiers in pinned 9077-row label index
+  accessed_at: '2026-10-22T00:28:33Z'
+  support: context_only
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:15377":
+    [{"label": "[OH2]", "match_type": "synonym", "identifier": "CHEBI:15377", "preferred_term":
+    "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "acqua", "match_type": "synonym", "identifier": "CHEBI:15377",
+    "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "agua", "match_type": "synonym", "identifier":
+    "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "aqua", "match_type":
+    "synonym", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id":
+    "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "dH2O",
+    "match_type": "synonym", "identifier": "CHEBI:15377", "preferred_term": "Distilled
+    water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "dihydridooxygen", "match_type": "synonym", "identifier":
+    "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "dihydrogen oxide",
+    "match_type": "synonym", "identifier": "CHEBI:15377", "preferred_term": "Distilled
+    water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Distiled water", "match_type": "synonym", "identifier":
+    "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Distilled water",
+    "match_type": "preferred_term", "identifier": "CHEBI:15377", "preferred_term":
+    "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Distilled water (for liquid medium)", "match_type": "synonym",
+    "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id":
+    "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Distilled
+    water (for solid medium)", "match_type": "synonym", "identifier": "CHEBI:15377",
+    "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "eau", "match_type": "synonym", "identifier":
+    "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "H(2)O", "match_type":
+    "synonym", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id":
+    "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "H2O",
+    "match_type": "synonym", "identifier": "CHEBI:15377", "preferred_term": "Distilled
+    water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "HOH", "match_type": "synonym", "identifier": "CHEBI:15377",
+    "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "hydrogen hydroxide", "match_type":
+    "synonym", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id":
+    "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "oxidane",
+    "match_type": "synonym", "identifier": "CHEBI:15377", "preferred_term": "Distilled
+    water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Wasser", "match_type": "synonym", "identifier": "CHEBI:15377",
+    "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "WATER", "match_type": "synonym",
+    "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id":
+    "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:2509":
+    [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509",
+    "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "Agar  (if needed)", "match_type": "synonym",
+    "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Agar (BD)", "match_type":
+    "synonym", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id":
+    "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "agar
+    (BD-Difco)", "match_type": "synonym", "identifier": "CHEBI:2509", "preferred_term":
+    "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Agar (Difco)", "match_type": "synonym", "identifier": "CHEBI:2509",
+    "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "Agar (if needed)", "match_type": "synonym",
+    "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Agar (if needed)*",
+    "match_type": "synonym", "identifier": "CHEBI:2509", "preferred_term": "Agar",
+    "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "Agar (Molecular Genetics)", "match_type": "synonym", "identifier":
+    "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Agar (Purified)", "match_type": "synonym",
+    "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Agar* (if needed)",
+    "match_type": "synonym", "identifier": "CHEBI:2509", "preferred_term": "Agar",
+    "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "Bacteriological Agar", "match_type": "synonym", "identifier": "CHEBI:2509",
+    "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}]}, "legacy": []}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/BHIY_AGAR.yaml; data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-22T00:28:33Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 7, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml",
+    "events": 6, "timestamp_issues": []}]'
+- evidence_id: history-full
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch043/421/history-inventory.json
+  locator: Complete path-qualified sidecar
+  accessed_at: '2026-10-22T00:28:33Z'
+  support: context_only
+  summary: Full target and maintained-owner history events retained without rewriting
+    malformed or timezone-absent values.
+  snapshot_sha256: be7aac634fa10d689f2a41109490c42c803a8e04ae5a83289795518b19d5b677
+- evidence_id: historical-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch043/421/historical-evidence-inventory.json
+  locator: Complete path-qualified sidecar
+  accessed_at: '2026-10-22T00:28:33Z'
+  support: context_only
+  summary: Exact attached claim objects and decoded historical report joins; a decoded
+    match is not original API-response authentication.
+  snapshot_sha256: e968c74d4f0748004c689ec180e4e8b053ceccc944f0106e0062b7568e6ae65a
+- evidence_id: primary-identity
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=141
+  locator: Exact JCM141 title and full recipe table
+  accessed_at: '2026-10-22T00:02:25.517517Z'
+  support: supports
+  summary: Exact BHIY agar primary; four supplied components. The available primary
+    does not establish an internal commercial-product formula.
+  quote: 141   BHIY AGAR
+  snapshot_sha256: 60b2f75ca99a79f8e7b7b49fd564314292ccaad267894574a7925bdf57afbb07
+- evidence_id: provider-product
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132
+  locator: $.components[0].items[3] and $.meta
+  accessed_at: '2026-10-22T00:02:25.517365Z'
+  support: supports
+  summary: Exact M132 points to JCM141 and supplies opaque BHI 37 g.
+  quote: "\"component_name\": \"Brain heart infusion (BD-Difco)\",\n          \"volume\"\
+    : 37,\n          \"unit\": \"g\""
+  snapshot_sha256: 3e711c64d741d2bc916b72e93781cc73df9a9a8ae0966046b0c67a2375d19606
+- evidence_id: primary-sterilization
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=141
+  locator: Page default before recipe141
+  accessed_at: '2026-10-22T00:02:25.517517Z'
+  support: supports
+  summary: This JCM page explicitly supplies 121 °C for 15 min unless otherwise stated.
+  quote: Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.
+  snapshot_sha256: 60b2f75ca99a79f8e7b7b49fd564314292ccaad267894574a7925bdf57afbb07
+- evidence_id: primary-ph
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132
+  locator: $.comments[0].comment
+  accessed_at: '2026-10-22T00:02:25.517365Z'
+  support: supports
+  summary: Adjust pH to 7.4; this is not the inherited commercial-component pH interval.
+  quote: Adjust pH to 7.4.
+  snapshot_sha256: 3e711c64d741d2bc916b72e93781cc73df9a9a8ae0966046b0c67a2375d19606
+- evidence_id: secondary-product-context
+  kind: database
+  reference: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  locator: Current secondary article composition table
+  accessed_at: '2026-10-21T08:42:28.042848Z'
+  support: context_only
+  summary: The current secondary article lists a BHI agar formula with HM infusion
+    powder and BHI powder. It is not authenticated exact BD237500 edition evidence
+    and does not validate the 200 g/250 g tissue assertions.
+  quote: HM infusion powder 12.500 BHI powder 5.000
+  snapshot_sha256: b3cc10040924962852a01d9d3341fa2d14616b8c845f83d5d187d03c08db0a01
+- evidence_id: bd237500-attempt
+  kind: database
+  reference: https://www.bd.com/en-us/products-and-solutions/products/product-page.237500
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T19:24:04.060812Z'
+  support: context_only
+  summary: The exact manufacturer product page is HTTP403; separately preserved product/manual/IFU
+    attempts are403,404 or a network failure. No authenticated BD/Difco237500 edition
+    specification was recovered. The available collection recipe supports the opaque
+    37 g product, not its asserted internal constituents.
+  snapshot_sha256: 98f5e49148f7da45d2d1ec9ea7d172730bfbeb67c73f74886103fb2499b3b79a
+- evidence_id: mediadiveJ141api-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J141
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-22T00:02:25.517456Z'
+  support: context_only
+  summary: Current J141 API returned503. This optional provider failure does not negate
+    the available JCM141 primary or TOGO source identity.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-22T00:28:33Z'
+  support: context_only
+  summary: 'Current _ingredient_from_item and _extract_preparation_steps read: unit/stock
+    normalization and comment handling are current code context. They do not establish
+    the historical execution that produced the stored water unit or commercial expansion;
+    no unconditional attribution to the guarded current merger is made.'
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch043/421/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-22T00:28:33Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 6cbd0bae5b5b1a9b4dbfc5738b0b4e597d2b9d0232a0e3afc22118b202e61e84
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:007865
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Complete current ontology and secondary linkage inventory
+  outcome: supported
+  summary: 8 distinct bound ontology IDs have matching nonobsolete labels; 0 provider-ID
+    slots lack successful identifier verification. All 2 asserted current CHEBI secondary
+    keys have exact index rows; 0 legacy slots are recorded separately. Target primary
+    linkage is 8/9 (88.89%) and current secondary linkage is 2/9 (22.22%), on a 0–100
+    linkage scale, not a correctness score. Brain/heart anatomy and proteose-peptone
+    class identity do not authenticate a commercial BHI composition.
+  target_ids:
+  - CultureMech:007865
+  evidence_ids:
+  - grounding-inventory
+  - mim
+  - chebi15377
+  - chebi2509
+  - uberon0000955
+  - uberon0000948
+  - micro0000180
+  - chebi17634
+  - chebi26710
+  - chebi34683
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 13 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:007865
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: identity
+  area: identity
+  topic: Exact single maintained contributor and excluded namesake
+  outcome: supported
+  summary: CultureMech:007865 is generated from TOGO_M132_BHIY_Agar.yaml only. The
+    JCM-derived bhiy_agar.yaml, CultureMech:002500, and its separate merged view are
+    comparison context, not owners or additional reviewed targets. M132 explicitly
+    identifies JCM141.
+  target_ids:
+  - CultureMech:007865
+  evidence_ids:
+  - record
+  - owner-0
+  - primary-identity
+  - provider-product
+- assessment_id: formulation
+  area: representation
+  topic: Opaque product versus six constituent assertions
+  outcome: concern
+  summary: The primary recipe uses BHI 37 g as one supplied product. Neither brain/heart
+    anatomy terms nor the current secondary article authenticate its internal composition,
+    tissue starting-material quantities or the selected catalog edition. Yeast extract
+    20 g and agar 15 g are separate additions; listed 1 L water does not declare measured
+    final volume.
+  target_ids:
+  - CultureMech:007865
+  evidence_ids:
+  - record
+  - owner-0
+  - provider-product
+  - secondary-product-context
+  - bd237500-attempt
+- assessment_id: preparation
+  area: representation
+  topic: Missing pH and explicit JCM sterilization
+  outcome: concern
+  summary: The target and maintained owner lack preparation_steps and ph_value. The
+    exact primary supports adjustment to pH 7.4 and its page default 121 °C for 15
+    min. These values belong to JCM141; no incubation temperature or time is supplied.
+  target_ids:
+  - CultureMech:007865
+  evidence_ids:
+  - record
+  - primary-ph
+  - primary-sterilization
+- assessment_id: biology
+  area: scope
+  topic: Classification and growth scope
+  outcome: supported
+  summary: Complex/undefined composition and solid agar are consistent with BHI, yeast
+    extract and agar. Bacterial catalogue categorization and generic cultivation application
+    are not strain-specific growth evidence. No target organism, temperature or growth
+    guarantee is inferred.
+  target_ids:
+  - CultureMech:007865
+  evidence_ids:
+  - record
+  - primary-identity
+  - provider-product
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 17 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:007865
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"decision_id\": \"q1\",\n    \"subject\": \"Distilled water\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/merge_yaml/merged/BHIY_AGAR.yaml\",\n        \"field_path\"\
+    : \"ingredients[0].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"1\",\n          \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml\",\n\
+    \        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM132original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132\"\
+    ,\n        \"source_locator\": \"$.components[0].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"3e711c64d741d2bc916b72e93781cc73df9a9a8ae0966046b0c67a2375d19606\"\
+    \n      }\n    ],\n    \"rationale\": \"Stored 1 G_PER_L is dimensionally inconsistent\
+    \ with listed 1 L water. Preserve the source volume; no density or final-volume\
+    \ normalization is supplied.\"\n  },\n  {\n    \"decision_id\": \"q2\",\n    \"\
+    subject\": \"Agar\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BHIY_AGAR.yaml\",\n\
+    \        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM132original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132\"\
+    ,\n        \"source_locator\": \"$.components[0].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Agar\\\",\\n          \\\"volume\\\": 15,\\n \
+    \         \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"3e711c64d741d2bc916b72e93781cc73df9a9a8ae0966046b0c67a2375d19606\"\
+    \n      }\n    ],\n    \"rationale\": \"The nominal batch mass is supported, but\
+    \ the stored per-litre basis is not independently established by a listed water\
+    \ amount. No matching attached amount evidence is present; do not call the rate\
+    \ verified.\"\n  },\n  {\n    \"decision_id\": \"q3\",\n    \"subject\": \"Yeast\
+    \ extract (BD-Difco)\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BHIY_AGAR.yaml\",\n\
+    \        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM132original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132\"\
+    ,\n        \"source_locator\": \"$.components[0].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Yeast extract (BD-Difco)\\\",\\n          \\\"\
+    volume\\\": 20,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\"\
+    : \"3e711c64d741d2bc916b72e93781cc73df9a9a8ae0966046b0c67a2375d19606\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The nominal batch mass is supported, but the\
+    \ stored per-litre basis is not independently established by a listed water amount.\
+    \ No matching attached amount evidence is present; do not call the rate verified.\"\
+    \n  },\n  {\n    \"decision_id\": \"q4\",\n    \"subject\": \"Calf brains\",\n\
+    \    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/merge_yaml/merged/BHIY_AGAR.yaml\",\n        \"field_path\"\
+    : \"ingredients[3].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"variable\",\n          \"unit\": \"VARIABLE\"\n        }\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM132original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132\"\
+    ,\n        \"source_locator\": \"$.components[0].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Brain heart infusion (BD-Difco)\\\",\\n      \
+    \    \\\"volume\\\": 37,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\"\
+    : \"3e711c64d741d2bc916b72e93781cc73df9a9a8ae0966046b0c67a2375d19606\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The primary supplies one opaque BHI product.\
+    \ This internal constituent identity/value, including VARIABLE tissue placeholders,\
+    \ is not authenticated for the exact commercial edition.\"\n  },\n  {\n    \"\
+    decision_id\": \"q5\",\n    \"subject\": \"Beef heart\",\n    \"decision\": \"\
+    unsupported\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BHIY_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM132original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132\"\
+    ,\n        \"source_locator\": \"$.components[0].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Brain heart infusion (BD-Difco)\\\",\\n      \
+    \    \\\"volume\\\": 37,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\"\
+    : \"3e711c64d741d2bc916b72e93781cc73df9a9a8ae0966046b0c67a2375d19606\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The primary supplies one opaque BHI product.\
+    \ This internal constituent identity/value, including VARIABLE tissue placeholders,\
+    \ is not authenticated for the exact commercial edition.\"\n  },\n  {\n    \"\
+    decision_id\": \"q6\",\n    \"subject\": \"Proteose peptone\",\n    \"decision\"\
+    : \"unsupported\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BHIY_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10.0\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10.0\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM132original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132\"\
+    ,\n        \"source_locator\": \"$.components[0].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Brain heart infusion (BD-Difco)\\\",\\n      \
+    \    \\\"volume\\\": 37,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\"\
+    : \"3e711c64d741d2bc916b72e93781cc73df9a9a8ae0966046b0c67a2375d19606\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The primary supplies one opaque BHI product.\
+    \ This internal constituent identity/value, including VARIABLE tissue placeholders,\
+    \ is not authenticated for the exact commercial edition.\"\n  },\n  {\n    \"\
+    decision_id\": \"q7\",\n    \"subject\": \"Dextrose\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BHIY_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.0\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.0\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM132original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132\"\
+    ,\n        \"source_locator\": \"$.components[0].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Brain heart infusion (BD-Difco)\\\",\\n      \
+    \    \\\"volume\\\": 37,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\"\
+    : \"3e711c64d741d2bc916b72e93781cc73df9a9a8ae0966046b0c67a2375d19606\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The primary supplies one opaque BHI product.\
+    \ This internal constituent identity/value, including VARIABLE tissue placeholders,\
+    \ is not authenticated for the exact commercial edition.\"\n  },\n  {\n    \"\
+    decision_id\": \"q8\",\n    \"subject\": \"Sodium chloride\",\n    \"decision\"\
+    : \"unsupported\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BHIY_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5.0\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5.0\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM132original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132\"\
+    ,\n        \"source_locator\": \"$.components[0].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Brain heart infusion (BD-Difco)\\\",\\n      \
+    \    \\\"volume\\\": 37,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\"\
+    : \"3e711c64d741d2bc916b72e93781cc73df9a9a8ae0966046b0c67a2375d19606\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The primary supplies one opaque BHI product.\
+    \ This internal constituent identity/value, including VARIABLE tissue placeholders,\
+    \ is not authenticated for the exact commercial edition.\"\n  },\n  {\n    \"\
+    decision_id\": \"q9\",\n    \"subject\": \"Disodium phosphate\",\n    \"decision\"\
+    : \"unsupported\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BHIY_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM132original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132\"\
+    ,\n        \"source_locator\": \"$.components[0].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Brain heart infusion (BD-Difco)\\\",\\n      \
+    \    \\\"volume\\\": 37,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\"\
+    : \"3e711c64d741d2bc916b72e93781cc73df9a9a8ae0966046b0c67a2375d19606\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The primary supplies one opaque BHI product.\
+    \ This internal constituent identity/value, including VARIABLE tissue placeholders,\
+    \ is not authenticated for the exact commercial edition.\"\n  },\n  {\n    \"\
+    decision_id\": \"q10\",\n    \"subject\": \"Tissue starting-material claim 200\
+    \ g/L\",\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/BHIY_AGAR.yaml\",\n        \"field_path\"\
+    : \"ingredients[3].notes\",\n        \"stored\": \"infusion from 200 g/L; Tissue\
+    \ infusion - source material is calf brain tissue; Constituent of Brain Heart\
+    \ Infusion commercial product\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].notes\",\n        \"stored\": \"infusion\
+    \ from 200 g/L; Tissue infusion - source material is calf brain tissue; Constituent\
+    \ of Brain Heart Infusion commercial product\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM132original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132\",\n \
+    \       \"source_locator\": \"$.components[0].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Brain heart infusion (BD-Difco)\\\",\\n      \
+    \    \\\"volume\\\": 37,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\"\
+    : \"3e711c64d741d2bc916b72e93781cc73df9a9a8ae0966046b0c67a2375d19606\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The stored tissue-source assertion is not a\
+    \ soluble ingredient amount and is not printed in the primary. Current anatomy\
+    \ grounding and secondary article do not authenticate the asserted product edition.\"\
+    \n  },\n  {\n    \"decision_id\": \"q11\",\n    \"subject\": \"Tissue starting-material\
+    \ claim 250 g/L\",\n    \"decision\": \"unsupported\",\n    \"local_fields\":\
+    \ [\n      {\n        \"input\": \"data/merge_yaml/merged/BHIY_AGAR.yaml\",\n\
+    \        \"field_path\": \"ingredients[4].notes\",\n        \"stored\": \"infusion\
+    \ from 250 g/L; Tissue infusion - source material is beef/ox heart tissue; Constituent\
+    \ of Brain Heart Infusion commercial product\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml\",\n      \
+    \  \"field_path\": \"ingredients[4].notes\",\n        \"stored\": \"infusion from\
+    \ 250 g/L; Tissue infusion - source material is beef/ox heart tissue; Constituent\
+    \ of Brain Heart Infusion commercial product\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM132original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132\",\n \
+    \       \"source_locator\": \"$.components[0].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Brain heart infusion (BD-Difco)\\\",\\n      \
+    \    \\\"volume\\\": 37,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\"\
+    : \"3e711c64d741d2bc916b72e93781cc73df9a9a8ae0966046b0c67a2375d19606\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The stored tissue-source assertion is not a\
+    \ soluble ingredient amount and is not printed in the primary. Current anatomy\
+    \ grounding and secondary article do not authenticate the asserted product edition.\"\
+    \n  },\n  {\n    \"decision_id\": \"q12\",\n    \"subject\": \"Inherited commercial-component\
+    \ pH 7.4 ± 0.2\",\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/BHIY_AGAR.yaml\",\n    \
+    \    \"field_path\": \"ingredients[8].notes\",\n        \"stored\": \"pH buffer\
+    \ (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial product\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].notes\",\n        \"stored\": \"pH\
+    \ buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial\
+    \ product\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"togoM132original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132\"\
+    ,\n        \"source_locator\": \"$.components[0].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Brain heart infusion (BD-Difco)\\\",\\n      \
+    \    \\\"volume\\\": 37,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\"\
+    : \"3e711c64d741d2bc916b72e93781cc73df9a9a8ae0966046b0c67a2375d19606\"\n     \
+    \ },\n      {\n        \"source_key\": \"togoM132original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132\",\n \
+    \       \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 7.4.\",\n        \"snapshot_sha256\": \"3e711c64d741d2bc916b72e93781cc73df9a9a8ae0966046b0c67a2375d19606\"\
+    \n      }\n    ],\n    \"rationale\": \"Primary medium adjustment to 7.4 does\
+    \ not authenticate an internal product pH interval; keep those scopes separate.\"\
+    \n  },\n  {\n    \"decision_id\": \"q13\",\n    \"subject\": \"Opaque BHI source\
+    \ batch mass\",\n    \"decision\": \"add\",\n    \"local_fields\": [],\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"togoM132original\",\n\
+    \        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132\"\
+    ,\n        \"source_locator\": \"$.components[0].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Brain heart infusion (BD-Difco)\\\",\\n      \
+    \    \\\"volume\\\": 37,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\"\
+    : \"3e711c64d741d2bc916b72e93781cc73df9a9a8ae0966046b0c67a2375d19606\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Add the supplied product as 37 g for the printed\
+    \ recipe batch after authorized correction. Do not manufacture its six constituent\
+    \ concentrations or a measured final-volume denominator.\"\n  },\n  {\n    \"\
+    decision_id\": \"q14\",\n    \"subject\": \"Listed water volume\",\n    \"decision\"\
+    : \"add\",\n    \"local_fields\": [],\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"togoM132original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132\"\
+    ,\n        \"source_locator\": \"$.components[0].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"3e711c64d741d2bc916b72e93781cc73df9a9a8ae0966046b0c67a2375d19606\"\
+    \n      }\n    ],\n    \"rationale\": \"Preserve 1 L as a source batch component\
+    \ amount; correcting the wrong mass-rate representation must not invent a density\
+    \ conversion or final makeup instruction.\"\n  },\n  {\n    \"decision_id\": \"\
+    q15\",\n    \"subject\": \"Required pH adjustment\",\n    \"decision\": \"add\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BHIY_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/BHIY_AGAR.yaml\",\n    \
+    \    \"field_path\": \"preparation_steps\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM132original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M132\"\
+    ,\n        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 7.4.\",\n        \"snapshot_sha256\": \"3e711c64d741d2bc916b72e93781cc73df9a9a8ae0966046b0c67a2375d19606\"\
+    \n      }\n    ],\n    \"rationale\": \"The exact primary supports pH 7.4 and\
+    \ an adjustment instruction. No titrant identity, dose or stock strength is given.\"\
+    \n  },\n  {\n    \"decision_id\": \"q16\",\n    \"subject\": \"JCM default autoclaving\
+    \ temperature and duration\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BHIY_AGAR.yaml\",\n\
+    \        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n  \
+    \    },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm141\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=141\"\
+    ,\n        \"source_locator\": \"Page default before recipe141\",\n        \"\
+    exact_source_quote\": \"Unless otherwise stated, sterilize media by autoclaving\
+    \ at 121°C for 15 min.\",\n        \"snapshot_sha256\": \"60b2f75ca99a79f8e7b7b49fd564314292ccaad267894574a7925bdf57afbb07\"\
+    ,\n        \"parsed_text_sha256\": \"4e1b28d62dcd0f2de780ee105c7edd255ce82c07d5b789545950db3e25100fbd\"\
+    \n      }\n    ],\n    \"rationale\": \"Add 121 °C and 15 min for this exact JCM141\
+    \ source scope, without inferring an incubation temperature or transferring defaults\
+    \ to another catalogue.\"\n  },\n  {\n    \"decision_id\": \"q17\",\n    \"subject\"\
+    : \"Unspecified incubation temperature\",\n    \"decision\": \"unsupported\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BHIY_AGAR.yaml\"\
+    ,\n        \"field_path\": \"temperature\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml\"\
+    ,\n        \"field_path\": \"temperature\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm141\"\
+    ,\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=141\"\
+    ,\n        \"source_locator\": \"Page default before recipe141\",\n        \"\
+    exact_source_quote\": \"Unless otherwise stated, sterilize media by autoclaving\
+    \ at 121°C for 15 min.\",\n        \"snapshot_sha256\": \"60b2f75ca99a79f8e7b7b49fd564314292ccaad267894574a7925bdf57afbb07\"\
+    ,\n        \"parsed_text_sha256\": \"4e1b28d62dcd0f2de780ee105c7edd255ce82c07d5b789545950db3e25100fbd\"\
+    \n      }\n    ],\n    \"rationale\": \"The supplied temperature is sterilization,\
+    \ not incubation. No generic incubation value is supported.\"\n  }\n]"
+findings:
+- finding_id: f1
+  issue_key: culturemech.007865.commercial-expansion
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Opaque BHI product replaced by unverified constituent formula
+  description: Both generated target and maintained owner replace the source BHI 37
+    g product with six constituents and unauthenticated tissue-source/catalog claims.
+    The primary and current secondary article do not establish equivalence to this
+    internal commercial formula.
+  target_ids:
+  - CultureMech:007865
+  field_paths:
+  - ingredients
+  - notes
+  evidence_ids:
+  - provider-product
+  - secondary-product-context
+  - bd237500-attempt
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.3
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.007865.water-dimension
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Listed water volume stored as mass rate
+  description: Both layers record 1 G_PER_L water, whereas exact M132/JCM141 lists
+    1 L. The source volume cannot be represented as this mass rate.
+  target_ids:
+  - CultureMech:007865
+  field_paths:
+  - ingredients[0].concentration
+  evidence_ids:
+  - provider-product
+  - primary-identity
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.3
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.007865.preparation-omissions
+  category: representation
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Source pH and JCM sterilization missing
+  description: The exact source requires adjustment to pH 7.4 and supplies the page
+    default 121 °C for 15 min, while both selected layers omit preparation and medium
+    pH. The pH interval embedded in a commercial-constituent note does not replace
+    these instructions.
+  target_ids:
+  - CultureMech:007865
+  field_paths:
+  - preparation_steps
+  - ph_value
+  evidence_ids:
+  - primary-ph
+  - primary-sterilization
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.4
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Restore the exact supplied opaque product and its batch amount in the
+    maintained owner; retain uncertain commercial composition explicitly and regenerate
+    only after source-grounded correction.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:007865
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Correct the maintained water representation from the exact listed volume;
+    retain unknown measured final volume and attach claim-level source evidence.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:007865
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Add the source-scoped pH and sterilization instructions to the maintained
+    owner without adding an incubation condition.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:007865
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M132_BHIY_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- The exact manufacturer product page is HTTP403; separately preserved product/manual/IFU
+  attempts are403,404 or a network failure. No authenticated BD/Difco237500 edition
+  specification was recovered. The available collection recipe supports the opaque
+  37 g product, not its asserted internal constituents.
+- Current J141 API returned503. This optional provider failure does not negate the
+  available JCM141 primary or TOGO source identity.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-043
+- generated-medium
+```
