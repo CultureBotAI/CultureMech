@@ -1,0 +1,1008 @@
+# Source and formulation review: 5_g_medium (CultureMech:002818)
+
+- Review: 20261021T083712Z-culturemech-002818-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T08:29:13Z
+- Finished UTC: 2026-10-21T08:37:12Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The four solute concentrations of 5 G medium match MediaDive J46 and the nominal JCM 46 recipe amounts. The target omits the primary-source water preparation volume and sterilization, and the newer maintained-owner concentration evidence has not reached the generated target.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 105; batch 011 item 5 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding ten task batches contain 100 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c contains 40 validated baseline bundles covering 2 current merged paths. Unioning all prior lists with this baseline covers 102 of 6320 current merged paths, including 2 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 24a1d277eb7f0437af53af0d178a30f9bfa6374c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:002818 | data/merge_yaml/merged/5_G_MEDIUM.yaml | generated | 5_g_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:002818 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:002818 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-011/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch011/105/strict.tsv |
+| validate-terms | passed | True | CultureMech:002818 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:002818 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:002818 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:002818.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### All asserted primary and current secondary ingredient identifiers
+
+grounding: supported. Targets: CultureMech:002818.
+
+3 primary CHEBI identities resolve with matching labels; 3 of 3 current secondary keys have live pinned-index rows. Unresolved keys: [].
+
+4 direct ingredient instances; CHEBI-primary instance linkage 3/4 (75.00%), verified secondary coverage 3/4 (75.00%). Percentages use a 0–100 linkage scale, not a scientific correctness score. Complex mixtures without asserted IDs remain ungrounded rather than receiving invented pure-molecule identities.
+
+### Exact JCM accession and MediaDive dataset provenance
+
+identity: supported. Targets: CultureMech:002818.
+
+CultureMech 002818 resolves to the maintained bacterial/5_g_medium.yaml owner and one generated target. The accession is JCM 46, represented by MediaDive J46; DSMZ is the dataset provider, not the original recipe collection. Explicit source links agree; similar 5 G names elsewhere are not treated as the same target.
+
+### Every solute concentration and source solvent instruction
+
+quantity: supported. Targets: CultureMech:002818.
+
+All four target and owner solute values match the provider-declared g/L values: yeast extract 5, glycerol 50, calcium carbonate 1 and agar 15. Their original primary-source masses match nominally. Water 1 L is a separate preparation instruction; no glycerol mass-to-volume conversion or measured final-volume claim is inferred.
+
+[{"field_path": "ingredients[0].concentration", "ingredient": "Yeast extract", "record_value": {"value": "5", "unit": "G_PER_L"}, "owner_value": {"value": "5", "unit": "G_PER_L"}, "source_key": "mediadiveJ46api", "source_locator": "$.data.solutions[0].recipe[0]", "original_source_amount": 5, "original_source_unit": "g", "provider_g_l": 5, "provider_volume_ml": 1000, "stage": "main medium, not a stock or assay dilution", "decision": "verified", "arithmetic": "5 g / (1000 ml / 1000 ml per L) = 5 g/L on the provider-declared volume basis", "explanation": "Provider explicitly reports this g/L value. JCM independently lists the same nominal mass with 1 L water; that solvent instruction alone does not prove final volume. Preserve the exact supplied material and do not infer molarity for undefined mixtures."}, {"field_path": "ingredients[1].concentration", "ingredient": "Glycerol", "record_value": {"value": "50", "unit": "G_PER_L"}, "owner_value": {"value": "50", "unit": "G_PER_L"}, "source_key": "mediadiveJ46api", "source_locator": "$.data.solutions[0].recipe[1]", "original_source_amount": 50, "original_source_unit": "g", "provider_g_l": 50, "provider_volume_ml": 1000, "stage": "main medium, not a stock or assay dilution", "decision": "verified", "arithmetic": "50 g / (1000 ml / 1000 ml per L) = 50 g/L on the provider-declared volume basis", "explanation": "Provider explicitly reports this g/L value. JCM independently lists the same nominal mass with 1 L water; that solvent instruction alone does not prove final volume. Preserve the exact supplied material and do not infer molarity for undefined mixtures."}, {"field_path": "ingredients[2].concentration", "ingredient": "CaCO3", "record_value": {"value": "1", "unit": "G_PER_L"}, "owner_value": {"value": "1", "unit": "G_PER_L"}, "source_key": "mediadiveJ46api", "source_locator": "$.data.solutions[0].recipe[2]", "original_source_amount": 1, "original_source_unit": "g", "provider_g_l": 1, "provider_volume_ml": 1000, "stage": "main medium, not a stock or assay dilution", "decision": "verified", "arithmetic": "1 g / (1000 ml / 1000 ml per L) = 1 g/L on the provider-declared volume basis", "explanation": "Provider explicitly reports this g/L value. JCM independently lists the same nominal mass with 1 L water; that solvent instruction alone does not prove final volume. Preserve the exact supplied material and do not infer molarity for undefined mixtures."}, {"field_path": "ingredients[3].concentration", "ingredient": "Agar", "record_value": {"value": "15", "unit": "G_PER_L"}, "owner_value": {"value": "15", "unit": "G_PER_L"}, "source_key": "mediadiveJ46api", "source_locator": "$.data.solutions[0].recipe[3]", "original_source_amount": 15, "original_source_unit": "g", "provider_g_l": 15, "provider_volume_ml": 1000, "stage": "main medium, not a stock or assay dilution", "decision": "verified", "arithmetic": "15 g / (1000 ml / 1000 ml per L) = 15 g/L on the provider-declared volume basis", "explanation": "Provider explicitly reports this g/L value. JCM independently lists the same nominal mass with 1 L water; that solvent instruction alone does not prove final volume. Preserve the exact supplied material and do not infer molarity for undefined mixtures."}, {"field_path": "preparation_steps (source-only solvent context)", "ingredient": "Distilled water", "source_key": "mediadiveJ46api", "source_locator": "$.data.solutions[0].recipe[4]; JCM 46 composition water row", "original_source_amount": 1000, "original_source_unit": "ml", "primary_source_amount": "1.0 L", "stage": "main-medium preparation solvent", "decision": "add", "explanation": "Neither target nor owner retains the 1 L solvent instruction in preparation. Preserve it as preparation-volume context; a water chemical-composition edge is not required, and water alone does not establish measured final volume."}]
+
+### Exact ingredient forms and secondary-link scope
+
+grounding: supported. Targets: CultureMech:002818.
+
+Glycerol and calcium carbonate match the explicitly named source materials without an unstated salt, hydrate or stereochemical refinement. Agar remains the source agar material, and yeast extract is an undefined BD-Difco mixture. Three primary identifiers and three secondary keys resolve as separately documented; linkage is not proof of source grade, exact mixture composition or organism growth.
+
+### Preparation solvent versus composition-edge policy
+
+completeness: concern. Targets: CultureMech:002818.
+
+Both layers omit the JCM 1 L distilled-water instruction from preparation, even though MediaDive keeps 1000 ml water and a provider solution volume. Avoiding a water chemical edge does not justify losing the solvent context needed to reproduce the recipe. The target itself contains no explicit preparation-volume basis.
+
+### pH instruction and primary sterilization default
+
+evidence: concern. Targets: CultureMech:002818.
+
+The sole MIX step retains pH unadjusted, which is a source instruction, not a measured pH or an instruction to choose a numeric pH. Neither layer preserves JCM’s default 121 C for 15 min sterilization. The API step list omits this page-wide primary instruction; no extra incubation, cooling or storage protocol is invented.
+
+### Physical state, undefined components and absent growth assertions
+
+scope: supported. Targets: CultureMech:002818.
+
+Agar 15 g supports solid-agar classification, and yeast extract supports complex/undefined classification. Neither target nor owner asserts stock solutions, organism IDs, native variants, parent relationships, KG match, gene context or measured growth outcomes. Bacterial filing and a general cultivation application do not establish growth of a named strain or optimal conditions.
+
+### Exact maintained evidence and generated provenance lag
+
+evidence: concern. Targets: CultureMech:002818.
+
+The owner’s three ingredient excerpts are exact and correctly scoped; its source reference distinguishes JCM recipe origin from DSMZ dataset hosting and leaves unavailable author/year fields unset. The August generated target contains none of those excerpts or the reference. Yeast extract and preparation/solvent claims remain without narrow evidence even in the owner. Target reference checks covered zero excerpts.
+
+[{"owner_field": "ingredients[1].evidence[0]", "literal_substring_of_fresh_response": true, "json_object_equals_exact_recipe_row": true, "source_locator": "$.data.solutions[0].recipe[1]", "original_owner_reference": "https://mediadive.dsmz.de/rest/medium/J46"}, {"owner_field": "ingredients[2].evidence[0]", "literal_substring_of_fresh_response": true, "json_object_equals_exact_recipe_row": true, "source_locator": "$.data.solutions[0].recipe[2]", "original_owner_reference": "https://mediadive.dsmz.de/rest/medium/J46"}, {"owner_field": "ingredients[3].evidence[0]", "literal_substring_of_fresh_response": true, "json_object_equals_exact_recipe_row": true, "source_locator": "$.data.solutions[0].recipe[3]", "original_owner_reference": "https://mediadive.dsmz.de/rest/medium/J46"}]
+
+### Append-only concentration-evidence history and unchanged amounts
+
+provenance: supported. Targets: CultureMech:002818.
+
+All 6 target and 6 owner timestamps parse with timezones; their first five events agree. Target ends with the August 6 merge; owner ends with the October 7 evidence-only curation event. The event’s old/new concentrations are unchanged, consistent with the current target/owner amounts. No historical execution was reconstructed and no prior event was rewritten.
+
+## Findings
+
+### f1: Source preparation volume is absent from both layers
+
+major / open / confirmed; issue key: CM002818-preparation-water-context.
+
+JCM 46 specifies 1 L distilled water, and MediaDive retains a 1000 ml solvent row, but neither target nor owner records that preparation instruction. The four g/L values are supported as provider concentrations; the missing preparation-volume context is a separate reproducibility gap, not a demand for a water chemical edge.
+
+### f2: Primary-source sterilization was not retained
+
+major / open / confirmed; issue key: CM002818-sterilization-omission.
+
+JCM’s page-wide default requires autoclaving at 121 C for 15 min unless otherwise stated; this recipe supplies no contrary exception. Both layers retain only pH unadjusted and omit sterilization. Native P3.5 is normalized to major because the missing preparation requirement materially affects reproducibility.
+
+### f3: Verified owner evidence has not reached the generated record
+
+minor / open / confirmed; issue key: CM002818-generated-evidence-gap.
+
+The owner contains three exact, bounded concentration snippets and a documented MediaDive reference absent from the generated target. Yeast-extract quantity and the solvent/preparation instructions also need narrow source support. Zero target reference checks are not evidence that the claims were tested.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Preserve the exact 1 L water instruction and provider volume basis in maintained preparation context, with narrow source evidence. Do not recast water as measured final volume; regenerate only after owner verification.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Add the scoped JCM default sterilization with exact primary evidence and preserve pH unadjusted without inventing a numeric pH, incubation temperature or unsupported extra steps.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Retain the three verified owner snippets, add bounded yeast-extract and preparation evidence, and ensure references and append-only provenance survive regeneration. Keep original owner access timestamps distinct from later review retrievals.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/5_G_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/5_g_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/5_G_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/5_G_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch011/105/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-011/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch011/105/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/5_G_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/5_G_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/5_G_MEDIUM.yaml:1:id: CultureMech:002818<br>./data/normalized_yaml/bacterial/5_g_medium.yaml:1:id: CultureMech:002818<br> |
+| chebi17754 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17754; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:17754 resolves to glycerol and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:2509 resolves to agar and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi3311 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_3311; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:3311 resolves to calcium carbonate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; All live preferred-term rows for asserted secondary CHEBI keys; metadata captured | supports | {"CHEBI:17754": [{"label": "Glycerol", "match_type": "preferred_term", "identifier": "CHEBI:17754", "preferred_term": "Glycerol", "ontology_id": "CHEBI:17754", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:3311": [{"label": "CaCO3", "match_type": "preferred_term", "identifier": "CHEBI:3311", "preferred_term": "CaCO3", "ontology_id": "CHEBI:3311", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:2509": [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}]} |
+| jcm | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=46; JCM 46 complete composition, pH instruction and page-wide sterilization default | supports | JCM 46 lists yeast extract (BD-Difco) 5.0 g, glycerol 50.0 g, CaCO3 1.0 g, agar 15.0 g, distilled water 1.0 L and pH unadjusted. The page default specifies autoclaving at 121 C for 15 min unless otherwise stated. |
+| mediadive | https://mediadive.dsmz.de/rest/medium/J46; $.data.medium; $.data.solutions[0].volume/recipe/steps | supports | MediaDive J46 explicitly links JCM GRMD 46, declares 1000 ml main volume, and reports g_l 5, 50, 1 and 15 for the four solutes. Water is a separate 1000 ml row; the sole preparation step is pH unadjusted. |
+| quantities | /private/tmp/culturemech-review-work-batch011/105/quantity-inventory.json; Four target/owner concentrations and the source-only water instruction | context_only | Five explicit decisions retain original recipe masses, provider g/L and volume basis, and the source solvent instruction. No quantity is inferred from chemical identifiers. |
+| owner-excerpts | data/normalized_yaml/bacterial/5_g_medium.yaml; ingredients[1:4].evidence[0], references[0] and final curation event | supports | All three owner snippets are literal substrings of the freshly captured exact MediaDive J46 response and parse to the matching glycerol, CaCO3 and agar recipe rows. Their explanations explicitly distinguish provider concentrations from measured final volume and exclude stock/assay claims. Original October 7 access metadata is retained as history; this review does not relabel it as a fresh retrieval. |
+| writer | src/culturemech/import/mediadive_importer.py; _parse_api_composition; _parse_preparation_steps; _classify_preparation_action | context_only | The current importer skips water chemical-composition rows, uses provider g_l, reads API preparation steps, and falls back to MIX when a phrase such as pH unadjusted has no recognized action. This makes preparation-volume preservation a separate concern; the code was inspected, not executed to reconstruct history. |
+
+## Limits And Additional Notes
+
+- MediaDive declares a 1000 ml solution volume and four g/L values. This supports those provider-reported concentrations; the JCM instruction to use 1 L distilled water is not an independent measurement of final volume.
+- No organism-specific growth, incubation optimum, glycerol density conversion, stock dilution or exact grade beyond the cited source was inferred.
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T083712Z-culturemech-002818-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: 5_g_medium (CultureMech:002818)'
+started_at: '2026-10-21T08:29:13Z'
+finished_at: '2026-10-21T08:37:12Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The four solute concentrations of 5 G medium match MediaDive J46 and the
+  nominal JCM 46 recipe amounts. The target omits the primary-source water preparation
+  volume and sterilization, and the newer maintained-owner concentration evidence
+  has not reached the generated target.
+source:
+  git_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/5_G_MEDIUM.yaml
+    sha256: dc2532778afe38493a89bb364f93c2642412d17fc8fe862711e9a10cd61a3efb
+    role: target
+  - path: data/normalized_yaml/bacterial/5_g_medium.yaml
+    sha256: 70196cd0fdb723375f0885e7e1f4b9cf83d16f10f5f85e4e7fa14eea3384daf0
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 105; batch 011 item 5 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding ten task batches contain
+    100 ledger-owned validated record reviews; their complete validated lists also
+    retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+    contains 40 validated baseline bundles covering 2 current merged paths. Unioning
+    all prior lists with this baseline covers 102 of 6320 current merged paths, including
+    2 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:002818
+targets:
+- target_id: CultureMech:002818
+  path: data/merge_yaml/merged/5_G_MEDIUM.yaml
+  label: 5_g_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/5_g_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/5_G_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:002818
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/5_G_MEDIUM.yaml --workers 1
+    --out /private/tmp/culturemech-review-work-batch011/105/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-011/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch011/105/strict.tsv"
+  target_ids:
+  - CultureMech:002818
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/5_G_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:002818
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/5_G_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:002818
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:002818
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/5_G_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T08:37:11Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/5_g_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T08:37:11Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/5_G_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:31:44.320402Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/5_G_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch011/105/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:31:55.046558Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-011/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch011/105/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/5_G_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:32:02.322872Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/5_G_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:32:06.922357Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T08:37:11Z'
+  support: supports
+  summary: './data/merge_yaml/merged/5_G_MEDIUM.yaml:1:id: CultureMech:002818
+
+    ./data/normalized_yaml/bacterial/5_g_medium.yaml:1:id: CultureMech:002818
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: chebi17754
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17754
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:17:27.152541Z'
+  support: supports
+  summary: CHEBI:17754 resolves to glycerol and is not obsolete. This verifies the
+    asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: 0231975176416cbaad3ad04c9efeedbe9bef0b826645e592a4a2f511e8d1db95
+- evidence_id: chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:17:27.847373Z'
+  support: supports
+  summary: CHEBI:2509 resolves to agar and is not obsolete. This verifies the asserted
+    generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond
+    the record is inferred.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: chebi3311
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_3311
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:17:29.123793Z'
+  support: supports
+  summary: CHEBI:3311 resolves to calcium carbonate and is not obsolete. This verifies
+    the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: 5413cec912ec253d62ba7a3f4ce7f0a9312ba8d1cb756713003f77a6e849d4b2
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: All live preferred-term rows for asserted secondary CHEBI keys; metadata
+    captured
+  accessed_at: '2026-10-21T08:37:11Z'
+  support: supports
+  summary: '{"CHEBI:17754": [{"label": "Glycerol", "match_type": "preferred_term",
+    "identifier": "CHEBI:17754", "preferred_term": "Glycerol", "ontology_id": "CHEBI:17754",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:3311": [{"label":
+    "CaCO3", "match_type": "preferred_term", "identifier": "CHEBI:3311", "preferred_term":
+    "CaCO3", "ontology_id": "CHEBI:3311", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:2509": [{"label": "Agar", "match_type": "preferred_term", "identifier":
+    "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}'
+- evidence_id: jcm
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=46
+  locator: JCM 46 complete composition, pH instruction and page-wide sterilization
+    default
+  accessed_at: '2026-10-21T08:17:31.447710Z'
+  support: supports
+  summary: JCM 46 lists yeast extract (BD-Difco) 5.0 g, glycerol 50.0 g, CaCO3 1.0
+    g, agar 15.0 g, distilled water 1.0 L and pH unadjusted. The page default specifies
+    autoclaving at 121 C for 15 min unless otherwise stated.
+  snapshot_sha256: 581f7c8b4ea34031e3f0fc6288c900249287763aa1596355a6f6b80c9acddd81
+- evidence_id: mediadive
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J46
+  locator: $.data.medium; $.data.solutions[0].volume/recipe/steps
+  accessed_at: '2026-10-21T08:17:23.975073Z'
+  support: supports
+  summary: MediaDive J46 explicitly links JCM GRMD 46, declares 1000 ml main volume,
+    and reports g_l 5, 50, 1 and 15 for the four solutes. Water is a separate 1000
+    ml row; the sole preparation step is pH unadjusted.
+  snapshot_sha256: be5dbaa01b37b2c3d98b8196090654c766f9ddf22a589b5e499d0c84fd3f34a7
+- evidence_id: quantities
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch011/105/quantity-inventory.json
+  locator: Four target/owner concentrations and the source-only water instruction
+  accessed_at: '2026-10-21T08:37:11Z'
+  support: context_only
+  summary: Five explicit decisions retain original recipe masses, provider g/L and
+    volume basis, and the source solvent instruction. No quantity is inferred from
+    chemical identifiers.
+  snapshot_sha256: d9b704af07c1f465f90fed892b5782f9d1618dbfcde1bc08d1f59c50a8183d77
+- evidence_id: owner-excerpts
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/5_g_medium.yaml
+  locator: ingredients[1:4].evidence[0], references[0] and final curation event
+  accessed_at: '2026-10-21T08:37:11Z'
+  support: supports
+  summary: All three owner snippets are literal substrings of the freshly captured
+    exact MediaDive J46 response and parse to the matching glycerol, CaCO3 and agar
+    recipe rows. Their explanations explicitly distinguish provider concentrations
+    from measured final volume and exclude stock/assay claims. Original October 7
+    access metadata is retained as history; this review does not relabel it as a fresh
+    retrieval.
+- evidence_id: writer
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition; _parse_preparation_steps; _classify_preparation_action
+  accessed_at: '2026-10-21T08:37:11Z'
+  support: context_only
+  summary: The current importer skips water chemical-composition rows, uses provider
+    g_l, reads API preparation steps, and falls back to MIX when a phrase such as
+    pH unadjusted has no recognized action. This makes preparation-volume preservation
+    a separate concern; the code was inspected, not executed to reconstruct history.
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:002818
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: All asserted primary and current secondary ingredient identifiers
+  outcome: supported
+  summary: '3 primary CHEBI identities resolve with matching labels; 3 of 3 current
+    secondary keys have live pinned-index rows. Unresolved keys: [].'
+  target_ids:
+  - CultureMech:002818
+  evidence_ids:
+  - record
+  - mim
+  - chebi17754
+  - chebi2509
+  - chebi3311
+  details: 4 direct ingredient instances; CHEBI-primary instance linkage 3/4 (75.00%),
+    verified secondary coverage 3/4 (75.00%). Percentages use a 0–100 linkage scale,
+    not a scientific correctness score. Complex mixtures without asserted IDs remain
+    ungrounded rather than receiving invented pure-molecule identities.
+- assessment_id: identity
+  area: identity
+  topic: Exact JCM accession and MediaDive dataset provenance
+  outcome: supported
+  summary: CultureMech 002818 resolves to the maintained bacterial/5_g_medium.yaml
+    owner and one generated target. The accession is JCM 46, represented by MediaDive
+    J46; DSMZ is the dataset provider, not the original recipe collection. Explicit
+    source links agree; similar 5 G names elsewhere are not treated as the same target.
+  target_ids:
+  - CultureMech:002818
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - jcm
+  - mediadive
+- assessment_id: amounts
+  area: quantity
+  topic: Every solute concentration and source solvent instruction
+  outcome: supported
+  summary: 'All four target and owner solute values match the provider-declared g/L
+    values: yeast extract 5, glycerol 50, calcium carbonate 1 and agar 15. Their original
+    primary-source masses match nominally. Water 1 L is a separate preparation instruction;
+    no glycerol mass-to-volume conversion or measured final-volume claim is inferred.'
+  target_ids:
+  - CultureMech:002818
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - mediadive
+  - quantities
+  details: '[{"field_path": "ingredients[0].concentration", "ingredient": "Yeast extract",
+    "record_value": {"value": "5", "unit": "G_PER_L"}, "owner_value": {"value": "5",
+    "unit": "G_PER_L"}, "source_key": "mediadiveJ46api", "source_locator": "$.data.solutions[0].recipe[0]",
+    "original_source_amount": 5, "original_source_unit": "g", "provider_g_l": 5, "provider_volume_ml":
+    1000, "stage": "main medium, not a stock or assay dilution", "decision": "verified",
+    "arithmetic": "5 g / (1000 ml / 1000 ml per L) = 5 g/L on the provider-declared
+    volume basis", "explanation": "Provider explicitly reports this g/L value. JCM
+    independently lists the same nominal mass with 1 L water; that solvent instruction
+    alone does not prove final volume. Preserve the exact supplied material and do
+    not infer molarity for undefined mixtures."}, {"field_path": "ingredients[1].concentration",
+    "ingredient": "Glycerol", "record_value": {"value": "50", "unit": "G_PER_L"},
+    "owner_value": {"value": "50", "unit": "G_PER_L"}, "source_key": "mediadiveJ46api",
+    "source_locator": "$.data.solutions[0].recipe[1]", "original_source_amount": 50,
+    "original_source_unit": "g", "provider_g_l": 50, "provider_volume_ml": 1000, "stage":
+    "main medium, not a stock or assay dilution", "decision": "verified", "arithmetic":
+    "50 g / (1000 ml / 1000 ml per L) = 50 g/L on the provider-declared volume basis",
+    "explanation": "Provider explicitly reports this g/L value. JCM independently
+    lists the same nominal mass with 1 L water; that solvent instruction alone does
+    not prove final volume. Preserve the exact supplied material and do not infer
+    molarity for undefined mixtures."}, {"field_path": "ingredients[2].concentration",
+    "ingredient": "CaCO3", "record_value": {"value": "1", "unit": "G_PER_L"}, "owner_value":
+    {"value": "1", "unit": "G_PER_L"}, "source_key": "mediadiveJ46api", "source_locator":
+    "$.data.solutions[0].recipe[2]", "original_source_amount": 1, "original_source_unit":
+    "g", "provider_g_l": 1, "provider_volume_ml": 1000, "stage": "main medium, not
+    a stock or assay dilution", "decision": "verified", "arithmetic": "1 g / (1000
+    ml / 1000 ml per L) = 1 g/L on the provider-declared volume basis", "explanation":
+    "Provider explicitly reports this g/L value. JCM independently lists the same
+    nominal mass with 1 L water; that solvent instruction alone does not prove final
+    volume. Preserve the exact supplied material and do not infer molarity for undefined
+    mixtures."}, {"field_path": "ingredients[3].concentration", "ingredient": "Agar",
+    "record_value": {"value": "15", "unit": "G_PER_L"}, "owner_value": {"value": "15",
+    "unit": "G_PER_L"}, "source_key": "mediadiveJ46api", "source_locator": "$.data.solutions[0].recipe[3]",
+    "original_source_amount": 15, "original_source_unit": "g", "provider_g_l": 15,
+    "provider_volume_ml": 1000, "stage": "main medium, not a stock or assay dilution",
+    "decision": "verified", "arithmetic": "15 g / (1000 ml / 1000 ml per L) = 15 g/L
+    on the provider-declared volume basis", "explanation": "Provider explicitly reports
+    this g/L value. JCM independently lists the same nominal mass with 1 L water;
+    that solvent instruction alone does not prove final volume. Preserve the exact
+    supplied material and do not infer molarity for undefined mixtures."}, {"field_path":
+    "preparation_steps (source-only solvent context)", "ingredient": "Distilled water",
+    "source_key": "mediadiveJ46api", "source_locator": "$.data.solutions[0].recipe[4];
+    JCM 46 composition water row", "original_source_amount": 1000, "original_source_unit":
+    "ml", "primary_source_amount": "1.0 L", "stage": "main-medium preparation solvent",
+    "decision": "add", "explanation": "Neither target nor owner retains the 1 L solvent
+    instruction in preparation. Preserve it as preparation-volume context; a water
+    chemical-composition edge is not required, and water alone does not establish
+    measured final volume."}]'
+- assessment_id: forms
+  area: grounding
+  topic: Exact ingredient forms and secondary-link scope
+  outcome: supported
+  summary: Glycerol and calcium carbonate match the explicitly named source materials
+    without an unstated salt, hydrate or stereochemical refinement. Agar remains the
+    source agar material, and yeast extract is an undefined BD-Difco mixture. Three
+    primary identifiers and three secondary keys resolve as separately documented;
+    linkage is not proof of source grade, exact mixture composition or organism growth.
+  target_ids:
+  - CultureMech:002818
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - mediadive
+  - mim
+  - chebi17754
+  - chebi3311
+  - chebi2509
+- assessment_id: preparation-volume
+  area: completeness
+  topic: Preparation solvent versus composition-edge policy
+  outcome: concern
+  summary: Both layers omit the JCM 1 L distilled-water instruction from preparation,
+    even though MediaDive keeps 1000 ml water and a provider solution volume. Avoiding
+    a water chemical edge does not justify losing the solvent context needed to reproduce
+    the recipe. The target itself contains no explicit preparation-volume basis.
+  target_ids:
+  - CultureMech:002818
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - mediadive
+  - writer
+  - quantities
+- assessment_id: preparation
+  area: evidence
+  topic: pH instruction and primary sterilization default
+  outcome: concern
+  summary: The sole MIX step retains pH unadjusted, which is a source instruction,
+    not a measured pH or an instruction to choose a numeric pH. Neither layer preserves
+    JCM’s default 121 C for 15 min sterilization. The API step list omits this page-wide
+    primary instruction; no extra incubation, cooling or storage protocol is invented.
+  target_ids:
+  - CultureMech:002818
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - mediadive
+  - writer
+- assessment_id: classification
+  area: scope
+  topic: Physical state, undefined components and absent growth assertions
+  outcome: supported
+  summary: Agar 15 g supports solid-agar classification, and yeast extract supports
+    complex/undefined classification. Neither target nor owner asserts stock solutions,
+    organism IDs, native variants, parent relationships, KG match, gene context or
+    measured growth outcomes. Bacterial filing and a general cultivation application
+    do not establish growth of a named strain or optimal conditions.
+  target_ids:
+  - CultureMech:002818
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - mediadive
+- assessment_id: owner-evidence
+  area: evidence
+  topic: Exact maintained evidence and generated provenance lag
+  outcome: concern
+  summary: The owner’s three ingredient excerpts are exact and correctly scoped; its
+    source reference distinguishes JCM recipe origin from DSMZ dataset hosting and
+    leaves unavailable author/year fields unset. The August generated target contains
+    none of those excerpts or the reference. Yeast extract and preparation/solvent
+    claims remain without narrow evidence even in the owner. Target reference checks
+    covered zero excerpts.
+  target_ids:
+  - CultureMech:002818
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - mediadive
+  - owner-excerpts
+  - validate-references
+  details: '[{"owner_field": "ingredients[1].evidence[0]", "literal_substring_of_fresh_response":
+    true, "json_object_equals_exact_recipe_row": true, "source_locator": "$.data.solutions[0].recipe[1]",
+    "original_owner_reference": "https://mediadive.dsmz.de/rest/medium/J46"}, {"owner_field":
+    "ingredients[2].evidence[0]", "literal_substring_of_fresh_response": true, "json_object_equals_exact_recipe_row":
+    true, "source_locator": "$.data.solutions[0].recipe[2]", "original_owner_reference":
+    "https://mediadive.dsmz.de/rest/medium/J46"}, {"owner_field": "ingredients[3].evidence[0]",
+    "literal_substring_of_fresh_response": true, "json_object_equals_exact_recipe_row":
+    true, "source_locator": "$.data.solutions[0].recipe[3]", "original_owner_reference":
+    "https://mediadive.dsmz.de/rest/medium/J46"}]'
+- assessment_id: history
+  area: provenance
+  topic: Append-only concentration-evidence history and unchanged amounts
+  outcome: supported
+  summary: All 6 target and 6 owner timestamps parse with timezones; their first five
+    events agree. Target ends with the August 6 merge; owner ends with the October
+    7 evidence-only curation event. The event’s old/new concentrations are unchanged,
+    consistent with the current target/owner amounts. No historical execution was
+    reconstructed and no prior event was rewritten.
+  target_ids:
+  - CultureMech:002818
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-excerpts
+findings:
+- finding_id: f1
+  issue_key: CM002818-preparation-water-context
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source preparation volume is absent from both layers
+  description: JCM 46 specifies 1 L distilled water, and MediaDive retains a 1000
+    ml solvent row, but neither target nor owner records that preparation instruction.
+    The four g/L values are supported as provider concentrations; the missing preparation-volume
+    context is a separate reproducibility gap, not a demand for a water chemical edge.
+  target_ids:
+  - CultureMech:002818
+  field_paths:
+  - preparation_steps
+  - notes
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - mediadive
+  - quantities
+  - writer
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/5_g_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: CM002818-sterilization-omission
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Primary-source sterilization was not retained
+  description: JCM’s page-wide default requires autoclaving at 121 C for 15 min unless
+    otherwise stated; this recipe supplies no contrary exception. Both layers retain
+    only pH unadjusted and omit sterilization. Native P3.5 is normalized to major
+    because the missing preparation requirement materially affects reproducibility.
+  target_ids:
+  - CultureMech:002818
+  field_paths:
+  - sterilization
+  - preparation_steps
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - mediadive
+  - writer
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/5_g_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.5
+  native_severity: P3
+  normalization_reason: P3 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: CM002818-generated-evidence-gap
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Verified owner evidence has not reached the generated record
+  description: The owner contains three exact, bounded concentration snippets and
+    a documented MediaDive reference absent from the generated target. Yeast-extract
+    quantity and the solvent/preparation instructions also need narrow source support.
+    Zero target reference checks are not evidence that the claims were tested.
+  target_ids:
+  - CultureMech:002818
+  field_paths:
+  - ingredients[*].evidence
+  - references
+  - evidence
+  - curation_history
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - mediadive
+  - owner-excerpts
+  - validate-references
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/5_g_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Preserve the exact 1 L water instruction and provider volume basis
+    in maintained preparation context, with narrow source evidence. Do not recast
+    water as measured final volume; regenerate only after owner verification.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:002818
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/5_g_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Add the scoped JCM default sterilization with exact primary evidence
+    and preserve pH unadjusted without inventing a numeric pH, incubation temperature
+    or unsupported extra steps.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:002818
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/5_g_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Retain the three verified owner snippets, add bounded yeast-extract
+    and preparation evidence, and ensure references and append-only provenance survive
+    regeneration. Keep original owner access timestamps distinct from later review
+    retrievals.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:002818
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/5_g_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- MediaDive declares a 1000 ml solution volume and four g/L values. This supports
+  those provider-reported concentrations; the JCM instruction to use 1 L distilled
+  water is not an independent measurement of final volume.
+- No organism-specific growth, incubation optimum, glycerol density conversion, stock
+  dilution or exact grade beyond the cited source was inferred.
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+tags:
+- unreviewed-records
+- batch-011
+- generated-medium
+```
