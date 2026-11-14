@@ -82,6 +82,11 @@ for the pinned artifact and matching rules.
 
 ## Generated artifacts
 
+For a versioned MIM/KGM handoff, use the isolated bundle and verification workflow
+in [Ingredient inventory and integrated release](ingredient_release.md). It
+records source membership, code/schema/resolver provenance and product hashes;
+the ordinary outputs below do not establish their own currentness.
+
 Run:
 
 ```bash
