@@ -1,12 +1,12 @@
 ---
 name: list-ingredients
-description: "Produce the corpus-wide list of distinct ingredients across all CultureMech normalized recipe records, with identifiers, mapping status, and occurrence/recipe counts. Use when asked for a list, inventory, or table of all ingredients, the most common ingredients, or which ingredients are unmapped. Read-only over recipe data; not for grounding fixes or record edits."
+description: "Compile CultureMech's catalog-wide structured ingredient inventory and reproducible source bundle for a MIM/KG-Microbe handoff. Use for ingredient lists, unmapped inventories, coverage/currentness checks, or preparing an integrated mapping release. Preserves recipe data and unresolved identities; does not publish mappings or infer ingredients from prose."
 allowed-tools: Bash, Read
 metadata:
   category: reporting
   requires_database: false
   requires_internet: false
-  version: 1.1.0
+  version: 1.2.0
 ---
 
 # List ingredients across the corpus
@@ -20,6 +20,39 @@ just aggregate-all-ingredients
 This runs `scripts/aggregate_ingredients.py`, which scans
 `data/normalized_yaml/` once and resolves each direct ingredient through the
 pinned MediaIngredientMech label index. A full run takes several minutes.
+
+## Reproducible MIM / KG-Microbe handoff
+
+For a release candidate or a claim that an existing list is current, use the
+bundle wrapper rather than relying on output timestamps. Read
+[the integrated release guide](../../../docs/ingredient_release.md) for the
+producer/consumer boundaries and exact scope.
+
+```bash
+just plan-ingredient-release
+just build-ingredient-release output/ingredient-release-candidate
+just verify-ingredient-release output/ingredient-release-candidate
+```
+
+Use a new destination for each attempt. The wrapper reuses the native scanner,
+preserves the ordinary `output/` files, records input membership/content and
+code/schema/MIM-index hashes, and verifies output hashes and row accounting.
+A missing or changed input invalidates the bundle. A manifest is reproducibility
+evidence, not scientific review or permission to install a mapping release.
+For downstream intake, run `just verify-ingredient-handoff BUNDLE SHA256` using
+the manifest digest independently recorded in the reviewed producer handoff.
+The ordinary verifier checks local consistency; it cannot authenticate a
+manifest supplied alongside the same untrusted products.
+
+Before a first full run with changed code, use one actual recipe in an isolated
+input directory through the same `build`/`verify` CLI. Report it as a subset
+canary; then run the default full-catalog input. Do not substitute a category
+scan or previously generated YAML summary for the authoritative corpus.
+
+Keep the current MIM campaign's frozen inputs intact. Hand off the new bundle's
+manifest digest and source scope for explicit adoption. The bundled MIM label
+index and the new MIM SSSOM are different versioned products; do not refresh the
+index implicitly or call a candidate a released KGM input.
 
 ## Outputs (`output/`, generated and gitignored — never commit or hand-edit)
 
@@ -64,6 +97,11 @@ are CSV-quoted, so `wc -l`, `grep`, `cut`, and `awk` can misread rows.
   entries, plus the `composition` of stocks written inline in a record's
   `solutions[]` (#604). Ingredients inside referenced stock solutions are not
   expanded; the referenced record counts them once.
+- Separately modeled variant recipe records are included. Ingredient mentions
+  only in `variants[].modifications`, notes, or other prose are not extracted.
+  Say **all structured direct ingredients across the catalog**, not all chemical
+  mentions or every medium's fully expanded formulation. Preserve prose-only
+  additions as a curation gap; do not guess their identities.
 - The list is never filtered by `--min-occurrences`. Its row count equals
   `total_mapped_count + total_unmapped_count` from the YAML views at the default
   `min_occurrences=1`.
