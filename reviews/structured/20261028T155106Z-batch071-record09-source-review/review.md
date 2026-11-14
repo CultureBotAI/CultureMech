@@ -1,0 +1,3028 @@
+# CreDm1 medium: preserve basal and stock stages and reconcile contributor preparation
+
+- Review: 20261028T155106Z-batch071-record09-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T15:21:28.876914Z
+- Finished UTC: 2026-10-28T15:51:06.884990Z
+- Reviewer: Codex independent source reviewer (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The generated record and both maintained contributors share 28 concentration entries, but six basal rates and 22 stock-stage entries have different source bases. Current DSMZ 691 primary text and both rendered pages authenticate the recipe stages. The declared provider basal volume is 1003 ml; the printed water addition is not an independent final-volume measurement. Three stock additions and solvent context are missing from the local structure. The DSMZ contributor retains source-supported preparation that is absent from the KOMODO contributor and generated record, including a stock-only step at the root. The nickel identifier does not represent the printed hexahydrate. Current KOMODO index access failed, so the historical exact cross-reference remains explicitly bounded.
+
+## Scope And Provenance
+
+Full selected record and both exact maintained contributors were assessed. Completion remains partial because the current external KOMODO branch was not authenticated.
+
+Selection: Actual batch071 native selection index 09.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:006296 | data/merge_yaml/merged/CreDm1_MEDIUM.yaml | generated | credm1_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:006296 | Original once-only canonical command exited 0; full stdout/stderr retained and read. |
+| validate-strict | passed | True | CultureMech:006296 | Original once-only canonical command exited 0; full stdout/stderr retained and read. |
+| validate-terms | passed | True | CultureMech:006296 | Original once-only canonical command exited 0; full stdout/stderr retained and read. |
+| validate-references | passed | True | CultureMech:006296 | Native reference checker performed zero reference checks; this is not claim authentication. |
+
+## Scientific And Domain Assessments
+
+### Exact generated lineage and source-duplicate boundary
+
+identity: supported. Targets: CultureMech:006296.
+
+Exact merged_from stems resolve KOMODO691/CM006296 and DSMZ 691/CM001828. Same ingredient signatures do not establish equal complete formulations; the maintained preparation difference and current conservative merge gate remain material.
+
+### Quantity scope and inventory
+
+quantity: concern. Targets: CultureMech:006296.
+
+Every selected target/owner concentration field has an explicit disposition; scoped dependency fields and source-only preparation are separate from receiving-medium rates.
+
+[{"quantity_id": "q1", "topic": "KH2PO4 basal amount and declared rate", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 3-3; both pages visually checked", "quote": "   KH2PO4                                                     1.40         g"}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[0].recipe[0]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 1.4,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.39581,\n                        \"mmol_l\": 10.2569,\n                        \"optional\": 0\n                    }"}, {"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 7-12; both pages visually checked", "quote": "   Trace element solution SL-10                               1.00        ml\n   Selenite-tungstate solution                                1.00        ml\n   NaHCO3                                                     1.50         g\n   Na2-DL-malate                                              1.60         g\n   Wolin's vitamin solution (10x)                             1.00        ml\n   Distilled water                                         1000.00        ml"}], "decision": "evidence_only", "rationale": "The stored 1.39581 g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis. The primary source instead lists 1.4 g per receiving batch and 1000 ml input water plus three separate stock additions. Preserve the provider provenance and primary batch amount separately; arithmetic addition of input volumes is not an independently specified measured final volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[0].concentration", "stored_value": {"value": "1.39581", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored 1.39581 g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis. The primary source instead lists 1.4 g per receiving batch and 1000 ml input water plus three separate stock additions. Preserve the provider provenance and primary batch amount separately; arithmetic addition of input volumes is not an independently specified measured final volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path": "ingredients[0].concentration", "stored_value": {"value": "1.39581", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored 1.39581 g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis. The primary source instead lists 1.4 g per receiving batch and 1000 ml input water plus three separate stock additions. Preserve the provider provenance and primary batch amount separately; arithmetic addition of input volumes is not an independently specified measured final volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[0].concentration", "stored_value": {"value": "1.39581", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored 1.39581 g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis. The primary source instead lists 1.4 g per receiving batch and 1000 ml input water plus three separate stock additions. Preserve the provider provenance and primary batch amount separately; arithmetic addition of input volumes is not an independently specified measured final volume."}]}, {"quantity_id": "q2", "topic": "NH4Cl basal amount and declared rate", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 4-4; both pages visually checked", "quote": "   NH4Cl                                                      0.50         g"}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[0].recipe[1]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.498504,\n                        \"mmol_l\": 9.31958,\n                        \"optional\": 0\n                    }"}, {"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 7-12; both pages visually checked", "quote": "   Trace element solution SL-10                               1.00        ml\n   Selenite-tungstate solution                                1.00        ml\n   NaHCO3                                                     1.50         g\n   Na2-DL-malate                                              1.60         g\n   Wolin's vitamin solution (10x)                             1.00        ml\n   Distilled water                                         1000.00        ml"}], "decision": "evidence_only", "rationale": "The stored 0.498504 g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis. The primary source instead lists 0.5 g per receiving batch and 1000 ml input water plus three separate stock additions. Preserve the provider provenance and primary batch amount separately; arithmetic addition of input volumes is not an independently specified measured final volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.498504", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored 0.498504 g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis. The primary source instead lists 0.5 g per receiving batch and 1000 ml input water plus three separate stock additions. Preserve the provider provenance and primary batch amount separately; arithmetic addition of input volumes is not an independently specified measured final volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.498504", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored 0.498504 g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis. The primary source instead lists 0.5 g per receiving batch and 1000 ml input water plus three separate stock additions. Preserve the provider provenance and primary batch amount separately; arithmetic addition of input volumes is not an independently specified measured final volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.498504", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored 0.498504 g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis. The primary source instead lists 0.5 g per receiving batch and 1000 ml input water plus three separate stock additions. Preserve the provider provenance and primary batch amount separately; arithmetic addition of input volumes is not an independently specified measured final volume."}]}, {"quantity_id": "q3", "topic": "MgCl2 x 6 H2O basal amount and declared rate", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 5-5; both pages visually checked", "quote": "   MgCl2 x 6 H2O                                              0.20         g"}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[0].recipe[2]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.199402,\n                        \"mmol_l\": 0.980811,\n                        \"optional\": 0\n                    }"}, {"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 7-12; both pages visually checked", "quote": "   Trace element solution SL-10                               1.00        ml\n   Selenite-tungstate solution                                1.00        ml\n   NaHCO3                                                     1.50         g\n   Na2-DL-malate                                              1.60         g\n   Wolin's vitamin solution (10x)                             1.00        ml\n   Distilled water                                         1000.00        ml"}], "decision": "evidence_only", "rationale": "The stored 0.199402 g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis. The primary source instead lists 0.2 g per receiving batch and 1000 ml input water plus three separate stock additions. Preserve the provider provenance and primary batch amount separately; arithmetic addition of input volumes is not an independently specified measured final volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[2].concentration", "stored_value": {"value": "0.199402", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored 0.199402 g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis. The primary source instead lists 0.2 g per receiving batch and 1000 ml input water plus three separate stock additions. Preserve the provider provenance and primary batch amount separately; arithmetic addition of input volumes is not an independently specified measured final volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path": "ingredients[2].concentration", "stored_value": {"value": "0.199402", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored 0.199402 g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis. The primary source instead lists 0.2 g per receiving batch and 1000 ml input water plus three separate stock additions. Preserve the provider provenance and primary batch amount separately; arithmetic addition of input volumes is not an independently specified measured final volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[2].concentration", "stored_value": {"value": "0.199402", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored 0.199402 g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis. The primary source instead lists 0.2 g per receiving batch and 1000 ml input water plus three separate stock additions. Preserve the provider provenance and primary batch amount separately; arithmetic addition of input volumes is not an independently specified measured final volume."}]}, {"quantity_id": "q4", "topic": "CaCl2 x 2 H2O basal amount and declared rate", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 6-6; both pages visually checked", "quote": "   CaCl2 x 2 H2O                                              0.15         g"}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[0].recipe[3]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.15,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.149551,\n                        \"mmol_l\": 1.01725,\n                        \"optional\": 0\n                    }"}, {"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 7-12; both pages visually checked", "quote": "   Trace element solution SL-10                               1.00        ml\n   Selenite-tungstate solution                                1.00        ml\n   NaHCO3                                                     1.50         g\n   Na2-DL-malate                                              1.60         g\n   Wolin's vitamin solution (10x)                             1.00        ml\n   Distilled water                                         1000.00        ml"}], "decision": "evidence_only", "rationale": "The stored 0.149551 g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis. The primary source instead lists 0.15 g per receiving batch and 1000 ml input water plus three separate stock additions. Preserve the provider provenance and primary batch amount separately; arithmetic addition of input volumes is not an independently specified measured final volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.149551", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored 0.149551 g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis. The primary source instead lists 0.15 g per receiving batch and 1000 ml input water plus three separate stock additions. Preserve the provider provenance and primary batch amount separately; arithmetic addition of input volumes is not an independently specified measured final volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.149551", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored 0.149551 g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis. The primary source instead lists 0.15 g per receiving batch and 1000 ml input water plus three separate stock additions. Preserve the provider provenance and primary batch amount separately; arithmetic addition of input volumes is not an independently specified measured final volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.149551", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored 0.149551 g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis. The primary source instead lists 0.15 g per receiving batch and 1000 ml input water plus three separate stock additions. Preserve the provider provenance and primary batch amount separately; arithmetic addition of input volumes is not an independently specified measured final volume."}]}, {"quantity_id": "q5", "topic": "NaHCO3 basal amount and declared rate", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 9-9; both pages visually checked", "quote": "   NaHCO3                                                     1.50         g"}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[0].recipe[6]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"NaHCO3\",\n                        \"compound_id\": 55,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.49551,\n                        \"mmol_l\": 17.8022,\n                        \"optional\": 0\n                    }"}, {"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 7-12; both pages visually checked", "quote": "   Trace element solution SL-10                               1.00        ml\n   Selenite-tungstate solution                                1.00        ml\n   NaHCO3                                                     1.50         g\n   Na2-DL-malate                                              1.60         g\n   Wolin's vitamin solution (10x)                             1.00        ml\n   Distilled water                                         1000.00        ml"}], "decision": "evidence_only", "rationale": "The stored 1.49551 g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis. The primary source instead lists 1.5 g per receiving batch and 1000 ml input water plus three separate stock additions. Preserve the provider provenance and primary batch amount separately; arithmetic addition of input volumes is not an independently specified measured final volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[4].concentration", "stored_value": {"value": "1.49551", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored 1.49551 g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis. The primary source instead lists 1.5 g per receiving batch and 1000 ml input water plus three separate stock additions. Preserve the provider provenance and primary batch amount separately; arithmetic addition of input volumes is not an independently specified measured final volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path": "ingredients[4].concentration", "stored_value": {"value": "1.49551", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored 1.49551 g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis. The primary source instead lists 1.5 g per receiving batch and 1000 ml input water plus three separate stock additions. Preserve the provider provenance and primary batch amount separately; arithmetic addition of input volumes is not an independently specified measured final volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[4].concentration", "stored_value": {"value": "1.49551", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored 1.49551 g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis. The primary source instead lists 1.5 g per receiving batch and 1000 ml input water plus three separate stock additions. Preserve the provider provenance and primary batch amount separately; arithmetic addition of input volumes is not an independently specified measured final volume."}]}, {"quantity_id": "q6", "topic": "Na2-DL-malate basal amount and declared rate", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 10-10; both pages visually checked", "quote": "   Na2-DL-malate                                              1.60         g"}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[0].recipe[7]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Na2-DL-malate\",\n                        \"compound_id\": 204,\n                        \"amount\": 1.6,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.59521,\n                        \"mmol_l\": 8.95931,\n                        \"optional\": 0\n                    }"}, {"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 7-12; both pages visually checked", "quote": "   Trace element solution SL-10                               1.00        ml\n   Selenite-tungstate solution                                1.00        ml\n   NaHCO3                                                     1.50         g\n   Na2-DL-malate                                              1.60         g\n   Wolin's vitamin solution (10x)                             1.00        ml\n   Distilled water                                         1000.00        ml"}], "decision": "evidence_only", "rationale": "The stored 1.59521 g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis. The primary source instead lists 1.6 g per receiving batch and 1000 ml input water plus three separate stock additions. Preserve the provider provenance and primary batch amount separately; arithmetic addition of input volumes is not an independently specified measured final volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[5].concentration", "stored_value": {"value": "1.59521", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored 1.59521 g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis. The primary source instead lists 1.6 g per receiving batch and 1000 ml input water plus three separate stock additions. Preserve the provider provenance and primary batch amount separately; arithmetic addition of input volumes is not an independently specified measured final volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path": "ingredients[5].concentration", "stored_value": {"value": "1.59521", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored 1.59521 g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis. The primary source instead lists 1.6 g per receiving batch and 1000 ml input water plus three separate stock additions. Preserve the provider provenance and primary batch amount separately; arithmetic addition of input volumes is not an independently specified measured final volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[5].concentration", "stored_value": {"value": "1.59521", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored 1.59521 g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis. The primary source instead lists 1.6 g per receiving batch and 1000 ml input water plus three separate stock additions. Preserve the provider provenance and primary batch amount separately; arithmetic addition of input volumes is not an independently specified measured final volume."}]}, {"quantity_id": "q7", "topic": "HCl within Trace element solution SL-10", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 23-23; both pages visually checked", "quote": "   HCl (25%)                                                  10.00      ml"}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[1].recipe[0]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"HCl\",\n                        \"compound_id\": 68,\n                        \"attribute\": \"25%\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"g_l\": 2.5,\n                        \"mmol_l\": 68.5683,\n                        \"optional\": 0\n                    }"}], "decision": "conflict", "rationale": "The stored 2.5 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 10 ml. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. The primary HCl label is 25% without a specified percentage basis; retain the 10 ml stock-stage addition, and do not validate the provider-derived 2.5 g/L by assuming density or w/v.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[6].concentration", "stored_value": {"value": "2.5", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 2.5 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 10 ml. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. The primary HCl label is 25% without a specified percentage basis; retain the 10 ml stock-stage addition, and do not validate the provider-derived 2.5 g/L by assuming density or w/v."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path": "ingredients[6].concentration", "stored_value": {"value": "2.5", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 2.5 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 10 ml. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. The primary HCl label is 25% without a specified percentage basis; retain the 10 ml stock-stage addition, and do not validate the provider-derived 2.5 g/L by assuming density or w/v."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[6].concentration", "stored_value": {"value": "2.5", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 2.5 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 10 ml. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. The primary HCl label is 25% without a specified percentage basis; retain the 10 ml stock-stage addition, and do not validate the provider-derived 2.5 g/L by assuming density or w/v."}]}, {"quantity_id": "q8", "topic": "FeCl2 x 4 H2O within Trace element solution SL-10", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 24-24; both pages visually checked", "quote": "   FeCl2 x 4 H2O                                               1.50       g"}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[1].recipe[1]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"FeCl2 x 4 H2O\",\n                        \"compound_id\": 260,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\": 7.54482,\n                        \"optional\": 0\n                    }"}], "decision": "conflict", "rationale": "The stored 1.5 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 1.5 g. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted to g/L at this stock stage only.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[7].concentration", "stored_value": {"value": "1.5", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 1.5 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 1.5 g. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted to g/L at this stock stage only."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path": "ingredients[7].concentration", "stored_value": {"value": "1.5", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 1.5 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 1.5 g. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted to g/L at this stock stage only."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[7].concentration", "stored_value": {"value": "1.5", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 1.5 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 1.5 g. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted to g/L at this stock stage only."}]}, {"quantity_id": "q9", "topic": "ZnCl2 within Trace element solution SL-10", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 25-25; both pages visually checked", "quote": "   ZnCl2                                                      70.00      mg"}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[1].recipe[2]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"ZnCl2\",\n                        \"compound_id\": 64,\n                        \"amount\": 70,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.07,\n                        \"mmol_l\": 0.513573,\n                        \"optional\": 0\n                    }"}], "decision": "conflict", "rationale": "The stored 0.07 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 70 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted to g/L at this stock stage only.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[8].concentration", "stored_value": {"value": "0.07", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.07 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 70 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted to g/L at this stock stage only."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path": "ingredients[8].concentration", "stored_value": {"value": "0.07", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.07 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 70 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted to g/L at this stock stage only."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[8].concentration", "stored_value": {"value": "0.07", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.07 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 70 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted to g/L at this stock stage only."}]}, {"quantity_id": "q10", "topic": "MnCl2 x 4 H2O within Trace element solution SL-10", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 26-26; both pages visually checked", "quote": "   MnCl2 x 4 H2O                                             100.00      mg"}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[1].recipe[3]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\": 36,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.505293,\n                        \"optional\": 0\n                    }"}], "decision": "conflict", "rationale": "The stored 0.1 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 100 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted to g/L at this stock stage only.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[9].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.1 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 100 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted to g/L at this stock stage only."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path": "ingredients[9].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.1 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 100 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted to g/L at this stock stage only."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[9].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.1 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 100 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted to g/L at this stock stage only."}]}, {"quantity_id": "q11", "topic": "H3BO3 within Trace element solution SL-10", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 27-27; both pages visually checked", "quote": "   H3BO3                                                       6.00      mg"}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[1].recipe[4]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\": 6,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.006,\n                        \"mmol_l\": 0.0970246,\n                        \"optional\": 0\n                    }"}], "decision": "conflict", "rationale": "The stored 0.006 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 6 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted to g/L at this stock stage only.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[10].concentration", "stored_value": {"value": "0.006", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.006 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 6 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted to g/L at this stock stage only."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path": "ingredients[10].concentration", "stored_value": {"value": "0.006", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.006 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 6 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted to g/L at this stock stage only."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[10].concentration", "stored_value": {"value": "0.006", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.006 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 6 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted to g/L at this stock stage only."}]}, {"quantity_id": "q12", "topic": "CoCl2 x 6 H2O within Trace element solution SL-10", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 28-28; both pages visually checked", "quote": "   CoCl2 x 6 H2O                                             190.00      mg"}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[1].recipe[5]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\": 38,\n                        \"amount\": 190,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.19,\n                        \"mmol_l\": 1.46335,\n                        \"optional\": 0\n                    }"}], "decision": "conflict", "rationale": "The stored 0.19 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 190 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted to g/L at this stock stage only.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[11].concentration", "stored_value": {"value": "0.19", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.19 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 190 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted to g/L at this stock stage only."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path": "ingredients[11].concentration", "stored_value": {"value": "0.19", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.19 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 190 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted to g/L at this stock stage only."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[11].concentration", "stored_value": {"value": "0.19", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.19 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 190 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted to g/L at this stock stage only."}]}, {"quantity_id": "q13", "topic": "CuCl2 x 2 H2O within Trace element solution SL-10", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 29-29; both pages visually checked", "quote": "   CuCl2 x 2 H2O                                               2.00      mg"}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[1].recipe[6]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"CuCl2 x 2 H2O\",\n                        \"compound_id\": 39,\n                        \"amount\": 2,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\": 0.0117314,\n                        \"optional\": 0\n                    }"}], "decision": "conflict", "rationale": "The stored 0.002 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 2 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted to g/L at this stock stage only.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[12].concentration", "stored_value": {"value": "0.002", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.002 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 2 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted to g/L at this stock stage only."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path": "ingredients[12].concentration", "stored_value": {"value": "0.002", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.002 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 2 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted to g/L at this stock stage only."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[12].concentration", "stored_value": {"value": "0.002", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.002 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 2 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted to g/L at this stock stage only."}]}, {"quantity_id": "q14", "topic": "NiCl2 x 6 H2O within Trace element solution SL-10", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 30-30; both pages visually checked", "quote": "   NiCl2 x 6 H2O                                              24.00      mg"}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[1].recipe[7]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\": 40,\n                        \"amount\": 24,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.024,\n                        \"mmol_l\": 0.185187,\n                        \"optional\": 0\n                    }"}], "decision": "conflict", "rationale": "The stored 0.024 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 24 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted to g/L at this stock stage only.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.024", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.024 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 24 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted to g/L at this stock stage only."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.024", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.024 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 24 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted to g/L at this stock stage only."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.024", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.024 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 24 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted to g/L at this stock stage only."}]}, {"quantity_id": "q15", "topic": "Na2MoO4 x 2 H2O within Trace element solution SL-10", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 31-31; both pages visually checked", "quote": "   Na2MoO4 x 2 H2O                                            36.00      mg"}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[1].recipe[8]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\": 36,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.036,\n                        \"mmol_l\": 0.148791,\n                        \"optional\": 0\n                    }"}], "decision": "conflict", "rationale": "The stored 0.036 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 36 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted to g/L at this stock stage only.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.036", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.036 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 36 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted to g/L at this stock stage only."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.036", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.036 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 36 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted to g/L at this stock stage only."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.036", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.036 g/L equals the provider field for Trace element solution SL-10; it is currently misplaced among the main-medium ingredients. The primary stock section lists 36 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted to g/L at this stock stage only."}]}, {"quantity_id": "q16", "topic": "NaOH within Selenite-tungstate solution", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 40-40; both pages visually checked", "quote": "   NaOH                                                       0.50        g"}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[2].recipe[0]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"NaOH\",\n                        \"compound_id\": 256,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 12.5009,\n                        \"optional\": 0\n                    }"}], "decision": "conflict", "rationale": "The stored 0.5 g/L equals the provider field for Selenite-tungstate solution; it is currently misplaced among the main-medium ingredients. The primary stock section lists 0.5 g. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.5", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.5 g/L equals the provider field for Selenite-tungstate solution; it is currently misplaced among the main-medium ingredients. The primary stock section lists 0.5 g. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.5", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.5 g/L equals the provider field for Selenite-tungstate solution; it is currently misplaced among the main-medium ingredients. The primary stock section lists 0.5 g. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.5", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.5 g/L equals the provider field for Selenite-tungstate solution; it is currently misplaced among the main-medium ingredients. The primary stock section lists 0.5 g. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}]}, {"quantity_id": "q17", "topic": "Na2SeO3 x 5 H2O within Selenite-tungstate solution", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 41-41; both pages visually checked", "quote": "   Na2SeO3 x 5 H2O                                            3.00       mg"}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[2].recipe[1]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Na2SeO3 x 5 H2O\",\n                        \"compound_id\": 107,\n                        \"amount\": 3,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.003,\n                        \"mmol_l\": 0.0114062,\n                        \"optional\": 0\n                    }"}], "decision": "conflict", "rationale": "The stored 0.003 g/L equals the provider field for Selenite-tungstate solution; it is currently misplaced among the main-medium ingredients. The primary stock section lists 3 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.003", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.003 g/L equals the provider field for Selenite-tungstate solution; it is currently misplaced among the main-medium ingredients. The primary stock section lists 3 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.003", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.003 g/L equals the provider field for Selenite-tungstate solution; it is currently misplaced among the main-medium ingredients. The primary stock section lists 3 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.003", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.003 g/L equals the provider field for Selenite-tungstate solution; it is currently misplaced among the main-medium ingredients. The primary stock section lists 3 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}]}, {"quantity_id": "q18", "topic": "Na2WO4 x 2 H2O within Selenite-tungstate solution", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 42-42; both pages visually checked", "quote": "   Na2WO4 x 2 H2O                                             4.00       mg"}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[2].recipe[2]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Na2WO4 x 2 H2O\",\n                        \"compound_id\": 249,\n                        \"amount\": 4,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.004,\n                        \"mmol_l\": 0.0121267,\n                        \"optional\": 0\n                    }"}], "decision": "conflict", "rationale": "The stored 0.004 g/L equals the provider field for Selenite-tungstate solution; it is currently misplaced among the main-medium ingredients. The primary stock section lists 4 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.004", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.004 g/L equals the provider field for Selenite-tungstate solution; it is currently misplaced among the main-medium ingredients. The primary stock section lists 4 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.004", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.004 g/L equals the provider field for Selenite-tungstate solution; it is currently misplaced among the main-medium ingredients. The primary stock section lists 4 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.004", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.004 g/L equals the provider field for Selenite-tungstate solution; it is currently misplaced among the main-medium ingredients. The primary stock section lists 4 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}]}, {"quantity_id": "q19", "topic": "Biotin within Wolin's vitamin solution (10x)", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 47-47; both pages visually checked", "quote": "   Biotin                                                     20.00      mg"}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[3].recipe[0]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Biotin\",\n                        \"compound_id\": 46,\n                        \"amount\": 20,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0818632,\n                        \"optional\": 0\n                    }"}], "decision": "conflict", "rationale": "The stored 0.02 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 20 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.02 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 20 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.02 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 20 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.02 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 20 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}]}, {"quantity_id": "q20", "topic": "Folic acid within Wolin's vitamin solution (10x)", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 55-55; both pages visually checked", "quote": "   Folic acid                         20.00   mg"}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[3].recipe[1]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Folic acid\",\n                        \"compound_id\": 138,\n                        \"amount\": 20,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0453104,\n                        \"optional\": 0\n                    }"}], "decision": "conflict", "rationale": "The stored 0.02 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 20 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.02 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 20 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.02 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 20 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.02 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 20 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}]}, {"quantity_id": "q21", "topic": "Pyridoxine hydrochloride within Wolin's vitamin solution (10x)", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 56-56; both pages visually checked", "quote": "   Pyridoxine hydrochloride          100.00   mg"}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[3].recipe[2]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\": 519,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.486287,\n                        \"optional\": 0\n                    }"}], "decision": "conflict", "rationale": "The stored 0.1 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 100 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[20].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.1 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 100 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path": "ingredients[20].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.1 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 100 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[20].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.1 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 100 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}]}, {"quantity_id": "q22", "topic": "Thiamine HCl within Wolin's vitamin solution (10x)", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 57-57; both pages visually checked", "quote": "   Thiamine HCl                       50.00   mg"}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[3].recipe[3]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Thiamine HCl\",\n                        \"compound_id\": 1207,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.148236,\n                        \"optional\": 0\n                    }"}], "decision": "conflict", "rationale": "The stored 0.05 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 50 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[21].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.05 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 50 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path": "ingredients[21].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.05 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 50 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[21].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.05 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 50 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}]}, {"quantity_id": "q23", "topic": "Riboflavin within Wolin's vitamin solution (10x)", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 58-58; both pages visually checked", "quote": "   Riboflavin                         50.00   mg"}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[3].recipe[4]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Riboflavin\",\n                        \"compound_id\": 136,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.132837,\n                        \"optional\": 0\n                    }"}], "decision": "conflict", "rationale": "The stored 0.05 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 50 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[22].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.05 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 50 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path": "ingredients[22].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.05 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 50 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[22].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.05 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 50 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}]}, {"quantity_id": "q24", "topic": "Nicotinic acid within Wolin's vitamin solution (10x)", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 59-59; both pages visually checked", "quote": "   Nicotinic acid                     50.00   mg"}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[3].recipe[5]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\": 139,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.406141,\n                        \"optional\": 0\n                    }"}], "decision": "conflict", "rationale": "The stored 0.05 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 50 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[23].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.05 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 50 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path": "ingredients[23].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.05 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 50 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[23].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.05 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 50 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}]}, {"quantity_id": "q25", "topic": "Calcium D-(+)-pantothenate within Wolin's vitamin solution (10x)", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 60-60; both pages visually checked", "quote": "   Calcium D-(+)-pantothenate         50.00   mg"}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[3].recipe[6]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Calcium D-(+)-pantothenate\",\n                        \"compound_id\": 1512,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.209846,\n                        \"optional\": 0\n                    }"}], "decision": "conflict", "rationale": "The stored 0.05 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 50 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[24].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.05 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 50 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path": "ingredients[24].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.05 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 50 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[24].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.05 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 50 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}]}, {"quantity_id": "q26", "topic": "Vitamin B12 within Wolin's vitamin solution (10x)", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 61-61; both pages visually checked", "quote": "   Vitamin B12                         1.00   mg"}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[3].recipe[7]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\": 18,\n                        \"amount\": 1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\": 0.00073779,\n                        \"optional\": 0\n                    }"}], "decision": "conflict", "rationale": "The stored 0.001 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 1 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[25].concentration", "stored_value": {"value": "0.001", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.001 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 1 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path": "ingredients[25].concentration", "stored_value": {"value": "0.001", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.001 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 1 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[25].concentration", "stored_value": {"value": "0.001", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.001 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 1 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}]}, {"quantity_id": "q27", "topic": "p-Aminobenzoic acid within Wolin's vitamin solution (10x)", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 62-62; both pages visually checked", "quote": "   p-Aminobenzoic acid                50.00   mg"}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[3].recipe[8]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\": 47,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.364591,\n                        \"optional\": 0\n                    }"}], "decision": "conflict", "rationale": "The stored 0.05 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 50 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[26].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.05 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 50 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path": "ingredients[26].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.05 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 50 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[26].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.05 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 50 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}]}, {"quantity_id": "q28", "topic": "(DL)-alpha-Lipoic acid within Wolin's vitamin solution (10x)", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 63-63; both pages visually checked", "quote": "   (DL)-alpha-Lipoic acid             50.00   mg"}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[3].recipe[9]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"(DL)-alpha-Lipoic acid\",\n                        \"compound_id\": 252,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.24233,\n                        \"optional\": 0\n                    }"}], "decision": "conflict", "rationale": "The stored 0.05 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 50 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[27].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.05 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 50 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path": "ingredients[27].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.05 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 50 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[27].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.05 g/L equals the provider field for Wolin's vitamin solution (10x); it is currently misplaced among the main-medium ingredients. The primary stock section lists 50 mg. Reconstruct source-specific stock membership and the separately stated receiving addition before claiming a final-medium concentration. This stock lists 1000 ml water and the provider declares volume1000; the printed water quantity alone is not an independently measured final stock volume."}]}, {"quantity_id": "q29", "topic": "Trace element solution SL-10 receiving addition", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 7-7; both pages visually checked", "quote": "   Trace element solution SL-10                               1.00        ml"}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[0].recipe[4]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"recipe_order\": 5,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\": 595,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }"}], "decision": "add", "rationale": "The primary source adds 1 ml of Trace element solution SL-10 per receiving batch. Preserve this absolute addition (1 ml = 0.001 L) with its exact source-specific stock identity. It is neither 1 g/L nor an automatically validated dose per final liter.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "The primary source adds 1 ml of Trace element solution SL-10 per receiving batch. Preserve this absolute addition (1 ml = 0.001 L) with its exact source-specific stock identity. It is neither 1 g/L nor an automatically validated dose per final liter.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "The primary source adds 1 ml of Trace element solution SL-10 per receiving batch. Preserve this absolute addition (1 ml = 0.001 L) with its exact source-specific stock identity. It is neither 1 g/L nor an automatically validated dose per final liter.", "missing": true}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "The primary source adds 1 ml of Trace element solution SL-10 per receiving batch. Preserve this absolute addition (1 ml = 0.001 L) with its exact source-specific stock identity. It is neither 1 g/L nor an automatically validated dose per final liter.", "missing": true}]}, {"quantity_id": "q30", "topic": "Selenite-tungstate solution receiving addition", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 8-8; both pages visually checked", "quote": "   Selenite-tungstate solution                                1.00        ml"}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[0].recipe[5]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"recipe_order\": 6,\n                        \"solution\": \"Selenite-tungstate solution\",\n                        \"solution_id\": 777,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }"}], "decision": "add", "rationale": "The primary source adds 1 ml of Selenite-tungstate solution per receiving batch. Preserve this absolute addition (1 ml = 0.001 L) with its exact source-specific stock identity. It is neither 1 g/L nor an automatically validated dose per final liter.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "The primary source adds 1 ml of Selenite-tungstate solution per receiving batch. Preserve this absolute addition (1 ml = 0.001 L) with its exact source-specific stock identity. It is neither 1 g/L nor an automatically validated dose per final liter.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "The primary source adds 1 ml of Selenite-tungstate solution per receiving batch. Preserve this absolute addition (1 ml = 0.001 L) with its exact source-specific stock identity. It is neither 1 g/L nor an automatically validated dose per final liter.", "missing": true}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "The primary source adds 1 ml of Selenite-tungstate solution per receiving batch. Preserve this absolute addition (1 ml = 0.001 L) with its exact source-specific stock identity. It is neither 1 g/L nor an automatically validated dose per final liter.", "missing": true}]}, {"quantity_id": "q31", "topic": "Wolin's vitamin solution (10x) receiving addition", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 11-11; both pages visually checked", "quote": "   Wolin's vitamin solution (10x)                             1.00        ml"}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[0].recipe[8]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"recipe_order\": 9,\n                        \"solution\": \"Wolin's vitamin solution (10x)\",\n                        \"solution_id\": 5980,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }"}], "decision": "add", "rationale": "The primary source adds 1 ml of Wolin's vitamin solution (10x) per receiving batch. Preserve this absolute addition (1 ml = 0.001 L) with its exact source-specific stock identity. It is neither 1 g/L nor an automatically validated dose per final liter.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "The primary source adds 1 ml of Wolin's vitamin solution (10x) per receiving batch. Preserve this absolute addition (1 ml = 0.001 L) with its exact source-specific stock identity. It is neither 1 g/L nor an automatically validated dose per final liter.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "The primary source adds 1 ml of Wolin's vitamin solution (10x) per receiving batch. Preserve this absolute addition (1 ml = 0.001 L) with its exact source-specific stock identity. It is neither 1 g/L nor an automatically validated dose per final liter.", "missing": true}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "The primary source adds 1 ml of Wolin's vitamin solution (10x) per receiving batch. Preserve this absolute addition (1 ml = 0.001 L) with its exact source-specific stock identity. It is neither 1 g/L nor an automatically validated dose per final liter.", "missing": true}]}, {"quantity_id": "q32", "topic": "Main input water", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 12-12; both pages visually checked", "quote": "   Distilled water                                         1000.00        ml"}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[0].recipe[9]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }"}], "decision": "add", "rationale": "The printed 1000 ml distilled water is an input quantity. Preserve it in preparation context; do not assign water a mass concentration or infer final volume 1003 ml merely by adding the three stock inputs.", "layer_assessments": []}, {"quantity_id": "q33", "topic": "Trace element solution SL-10 solvent", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 32-32; both pages visually checked", "quote": "   Distilled water                                           990.00      ml"}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[1].recipe[9]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 990,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }"}], "decision": "add", "rationale": "Retain the exact stock-stage input water separately from the receiving medium. SL-10 has an additional explicit final make-up instruction; the other two stocks provide input water and provider metadata only.", "layer_assessments": []}, {"quantity_id": "q34", "topic": "Selenite-tungstate solution solvent", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 43-43; both pages visually checked", "quote": "   Distilled water                                         1000.00       ml"}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[2].recipe[3]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }"}], "decision": "add", "rationale": "Retain the exact stock-stage input water separately from the receiving medium. SL-10 has an additional explicit final make-up instruction; the other two stocks provide input water and provider metadata only.", "layer_assessments": []}, {"quantity_id": "q35", "topic": "Wolin's vitamin solution (10x) solvent", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 64-64; both pages visually checked", "quote": "   Distilled water                  1000.00   ml"}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[3].recipe[10]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }"}], "decision": "add", "rationale": "Retain the exact stock-stage input water separately from the receiving medium. SL-10 has an additional explicit final make-up instruction; the other two stocks provide input water and provider metadata only.", "layer_assessments": []}, {"quantity_id": "q36", "topic": "SL-10 explicit final stock volume", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 34-35; both pages visually checked", "quote": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml."}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[1].steps[0]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"step\": \"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml.\"\n                    }"}], "decision": "evidence_only", "rationale": "Credit the existing DSMZ contributor text. The final make-up to1000 ml supports the SL-10 solid stock concentrations only; neither this make-up nor its input water sets the final receiving-medium denominator.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "preparation_steps[1]", "stored_value": {"step_number": 2, "action": "DISSOLVE", "description": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml."}, "decision": "relocate", "rationale": "The text is already present and source-supported, but belongs to the SL-10 stock rather than the root medium sequence."}]}, {"quantity_id": "q37", "topic": "Basal preparation and stage-specific pH", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 14-17; both pages visually checked", "quote": "Dissolve ingredients except vitamins, bicarbonate and malate. Adjust pH to 6.5, dispense\nmedium in culture vessels and autoclave. Prior to inoculation add vitamins, bicarbonate\nand malate from stock solutions sterilized by filtration. Adjust pH of complete medium to\n6.7 - 6.9."}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01", "locator": "$.data.solutions[0].steps[0]", "accessed_at": "2026-10-28T15:22:07.188995Z", "quote": "{\n                        \"step\": \"Dissolve ingredients except vitamins, bicarbonate and malate. Adjust pH to 6.5, dispense medium in culture vessels and autoclave. Prior to inoculation add vitamins, bicarbonate and malate from stock solutions sterilized by filtration. Adjust pH of complete medium to 6.7 - 6.9.\"\n                    }"}], "decision": "mixed", "rationale": "The source separates initial pH 6.5 and complete-medium pH 6.7–6.9, with vitamins/bicarbonate/malate added from filtered stocks. It supplies no autoclave temperature/time, filtration pore size, bicarbonate/malate stock strengths or separate doses; none are inferred.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "preparation_steps[0]", "stored_value": {"step_number": 1, "action": "AUTOCLAVE", "description": "Dissolve ingredients except vitamins, bicarbonate and malate. Adjust pH to 6.5, dispense medium in culture vessels and autoclave. Prior to inoculation add vitamins, bicarbonate and malate from stock solutions sterilized by filtration. Adjust pH of complete medium to 6.7 - 6.9."}, "decision": "evidence_only", "rationale": "Existing text matches the source main-medium preparation; attach the verified source support without changing the retained text."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale": "Retain the source-specific basal preparation and separately scoped stock step.", "missing": true}, {"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale": "Regenerate only after maintained contributor reconciliation.", "missing": true}]}, {"quantity_id": "q38", "topic": "Complete-medium pH range", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b", "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce", "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical LF lines 14-17; both pages visually checked", "quote": "Dissolve ingredients except vitamins, bicarbonate and malate. Adjust pH to 6.5, dispense\nmedium in culture vessels and autoclave. Prior to inoculation add vitamins, bicarbonate\nand malate from stock solutions sterilized by filtration. Adjust pH of complete medium to\n6.7 - 6.9."}], "decision": "evidence_only", "rationale": "All three current ranges match the final-stage source range but lack attached source claims. Attach supporting evidence and preserve the range rather than substituting its midpoint.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ph_range", "stored_value": {"min": 6.7, "max": 6.9}, "decision": "evidence_only", "rationale": "The stored range 6.7–6.9 matches the complete-medium source instruction; initial adjustment 6.5 is a different stage. Attach the source evidence without changing the range."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path": "ph_range", "stored_value": {"min": 6.7, "max": 6.9}, "decision": "evidence_only", "rationale": "The stored range 6.7–6.9 matches the complete-medium source instruction; initial adjustment 6.5 is a different stage. Attach the source evidence without changing the range."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ph_range", "stored_value": {"min": 6.7, "max": 6.9}, "decision": "evidence_only", "rationale": "The stored range 6.7–6.9 matches the complete-medium source instruction; initial adjustment 6.5 is a different stage. Attach the source evidence without changing the range."}]}]
+
+### Current ontology and MIM correspondence
+
+grounding: concern. Targets: CultureMech:006296.
+
+All 28 distinct current OLS terms, full scientific annotations and578 exact identifier-or-ontology-linked MIM rows were read. Canonical labels and source supplied forms were assessed separately. CHEBI:34887 represents anhydrous nickel dichloride (Cl2Ni), while the source and local preferred name explicitly require six waters; both current nickel term slots need reconciliation. The supplied calcium D-(+)-pantothenate agrees with CHEBI:31345 stereochemical structure/CAS137-08-6 despite its broad label; no wrong-ID claim is made there. Disodium malate is explicitly a racemate, matching DL. Generic vitamin B12 is not narrowed to cyanocobalamin. Rejected aliases and ontology-linked-only nickel hydrate rows are not interchangeable source identities; catalog status is not historical evidence.
+
+### History and evidence scope
+
+provenance: concern. Targets: CultureMech:006296.
+
+The two maintained contributors have exactly equal ingredient lists and matching final pH, reciprocal SOURCE_DUPLICATE links and distinct stable IDs/source accessions. Their scientific preparation and notes differ: the DSMZ contributor retains two preparation steps; the KOMODO contributor and generated target omit both. All five exact historical reports and current histories were fully read. October5 reports checked0/28 source claims; both October7 reports retained all 28 unresolved, plus exact37 source objects each whose current raw digest and literal content match. Historical KOMODO691 HTML points to DSMZ 691 but current index retrieval returned403, so historical mapping access is not reauthenticated. Current MediaDive API import separates primary ingredients from stock additions but still takes g_l, maps absolute ml to ML_PER_L and concatenates steps across solutions; it must not be blamed for current ingredient flattening without historical execution evidence. Current DSMZ resolver copies ingredients/solutions but does not copy preparation_steps; current KOMODO importer uses time.strftime with %f, consistent with the literal .fZ anomaly without proving the old run. Current formulation merge requires scientific-field equality, including preparation, notes and relationship metadata, so these contributors require explicit reconciliation before regeneration. All observations are review-only.
+
+### Growth and taxonomic evidence
+
+scope: unknown. Targets: CultureMech:006296.
+
+Generic cultivation applications and bacterial filing are not strain-level growth evidence. No organism-specific growth, temperature or atmosphere is inferred from names or source catalog identifiers.
+
+### Canonical diagnostics
+
+schema: supported. Targets: CultureMech:006296.
+
+All four original canonical diagnostics passed. Reference checks were zero; structural and term diagnostics do not establish formulation accuracy.
+
+## Findings
+
+### f1: Stock concentrations are embedded as main-medium ingredients
+
+major / open / confirmed; issue key: culturemech-006296-stock-concentrations-are-embedded-as-main-medium-ingredients.
+
+Ingredients 6–27 reproduce three separate stock compositions without their source-specific grouping, and all three receiving additions are absent. The HCl percentage basis is unspecified. SL-10 explicitly makes up to 1 L, supporting its solid rates at stock stage only; selenite/tungstate and vitamin stock water alone do not establish measured final volumes. Follow the individual quantity decisions; do not divide every value by an assumed common denominator.
+
+### f2: Basal provider rates lack attached evidence for their declared volume basis
+
+major / open / confirmed; issue key: culturemech-006296-basal-provider-rates-lack-attached-declared-basis-evidence.
+
+The six basal values exactly match provider g_l fields using the explicitly declared volume of 1003 ml, but the local fields lack attached evidence identifying that calculation basis. The printed source gives 1000 ml input water and three separate 1 ml stock additions, without a measured final-medium make-up. Preserve the current provider calculations and attach their declared basis; retain printed batch quantities separately. No numerical correction is proposed for these six values.
+
+### f3: Nickel hexahydrate is represented by anhydrous nickel dichloride
+
+major / open / confirmed; issue key: culturemech-006296-nickel-hexahydrate-is-represented-by-anhydrous-nickel-dichloride.
+
+The primary SL-10 source and current preferred term specify NiCl2 x 6H2O. CHEBI:34887 is anhydrous Cl2Ni with canonical label nickel dichloride and mass 129.599, so the ID cannot represent that supplied hydrate. Correct both the primary term and repeated CHEBI linkage together after verifying a source-compatible hydrate accession; canonical-label matching alone does not cure the supplied-form mismatch.
+
+### f4: Contributor preparation is lost and stock instructions are at the root
+
+major / open / confirmed; issue key: culturemech-006296-contributor-preparation-is-lost-and-stock-instructions-are-at-the-root.
+
+The DSMZ contributor retains the exact main preparation and SL-10 makeup instructions; both are absent from the KOMODO contributor and generated target. Its second root step belongs to SL-10. The current importer still concatenates steps from all solutions, while the current resolver does not copy preparation_steps. Current conservative merging rejects differing scientific content, so source-aware contributor reconciliation is required before regeneration.
+
+### f5: KOMODO import timestamp contains a literal format token
+
+minor / open / confirmed; issue key: culturemech-006296-komodo-import-timestamp-contains-a-literal-format-token.
+
+The KOMODO contributor and generated record retain timestamp 2026-01-27T01:15:03.fZ. It contains the literal f and cannot authenticate an exact fractional-second event. Current importer time.strftime uses %f; that code observation is not an independently recovered historical time.
+
+## Recommended Actions And Acceptance Checks
+
+### action1
+
+Reconcile source-specific stock membership and receiving additions in both maintained contributors, preserving absolute input amounts, explicit SL-10 makeup and unresolved percentage/final-volume bases. Do not expose undiluted stock concentrations as final-medium values.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+### action2
+
+Attach exact primary batch-amount and provider-rate evidence, label the declared1003 ml calculation basis, and leave independently measured final volume unresolved. Avoid silently rounding the basal values to printed gram amounts while retaining G_PER_L.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+### action3
+
+The primary SL-10 source and current preferred term specify NiCl2 x 6H2O. CHEBI:34887 is anhydrous Cl2Ni with canonical label nickel dichloride and mass 129.599, so the ID cannot represent that supplied hydrate. Correct both the primary term and repeated CHEBI linkage together after verifying a source-compatible hydrate accession; canonical-label matching alone does not cure the supplied-form mismatch.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+### action4
+
+Credit and retain the existing main-medium step in the DSMZ contributor, move the SL-10 step to its stock context, reconcile the KOMODO contributor against exact supported source identity, then regenerate with the conservative formulation workflow. Preserve unknown autoclave/filtration parameters and stock strengths as unknown.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+### action5
+
+Preserve the original event and add a traceable provenance clarification if an authoritative timestamp is recovered. Do not fabricate fractional seconds or rewrite the append-only history.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| local-target | data/merge_yaml/merged/CreDm1_MEDIUM.yaml; Complete document | context_only | Complete selected generated record; no changes made. |
+| owner-1 | data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml; Complete document | context_only | Complete maintained contributor including current curation history, evidence, quantities and preparation; no changes made. |
+| owner-2 | data/normalized_yaml/bacterial/credm1_medium.yaml; Complete document | context_only | Complete maintained contributor including current curation history, evidence, quantities and preparation; no changes made. |
+| identity-search | REVIEW_WORK/batch071/record09/identity-search.json | supports | Exact generated lineage resolves every maintained contributor; no filename-only transfer from neighboring variants. |
+| dsm691 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf; Both pages; basal table and preparation, three separately headed stock sections | supports | Complete official two-page DSMZ 691 PDF, text and both page images read; exact basal, SL-10, selenite-tungstate and Wolin 10x sections distinguished. |
+| mediadive691 | https://mediadive.dsmz.de/rest/medium/691; $.data.medium and all four $.data.solutions entries | supports | Complete current API medium691 payload read. Its declared volume and g_l fields authenticate provider statements at their own stages, not a measured final-medium denominator. |
+| dsm691page | https://mediadive.dsmz.de/medium/691; Medium identity, four recipe sections and associated strain heading | context_only | Current official provider page identifies medium691 and its scoped Sulfurospirillum sp. DSM 6526 association. Provider molecular-composition calculations are not adopted as primary measured final concentrations. |
+| dsm6526 | https://www.dsmz.de/collection/catalogue/details/culture/DSM-6526; Name, DSM No., strain designation, isolation and risk-group fields | context_only | Current collection heading identifies Sulfurospirillum sp., strain CreDm1, isolated from creek mud in Japan and provisionally risk group1. This is collection context, not a new experimental growth assertion; the inconsistent unrelated footer label is not used to assign a species. |
+| komodoList | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; HTTP403 capture and request metadata | context_only | Current exact historical KOMODO index URL returned HTTP403. The failure body authenticates access failure only; the historical row is assessed as historical identity evidence. |
+| historical-1 | reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml.md; Complete document | context_only | Complete exact historical report read, including all unchanged decisions and source rows. October5 had zero source-checked claims; October7 left all 28 rates unresolved because of stock structure. Current equal source bytes authenticate the quoted content, not old retrieval events. |
+| historical-2 | reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/credm1_medium.yaml.md; Complete document | context_only | Complete exact historical report read, including all unchanged decisions and source rows. October5 had zero source-checked claims; October7 left all 28 rates unresolved because of stock structure. Current equal source bytes authenticate the quoted content, not old retrieval events. |
+| historical-3 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CreDm1_MEDIUM.md; Complete document | context_only | Complete exact historical report read, including all unchanged decisions and source rows. October5 had zero source-checked claims; October7 left all 28 rates unresolved because of stock structure. Current equal source bytes authenticate the quoted content, not old retrieval events. |
+| historical-4 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.md; Complete document | context_only | Complete exact historical report read, including all unchanged decisions and source rows. October5 had zero source-checked claims; October7 left all 28 rates unresolved because of stock structure. Current equal source bytes authenticate the quoted content, not old retrieval events. |
+| historical-5 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/credm1_medium.md; Complete document | context_only | Complete exact historical report read, including all unchanged decisions and source rows. October5 had zero source-checked claims; October7 left all 28 rates unresolved because of stock structure. Current equal source bytes authenticate the quoted content, not old retrieval events. |
+| history-auth | REVIEW_WORK/batch071/record09/historical-claim-authentication.json | context_only | Both complete October7 tables independently joined:28 current concentration rows, reciprocal source-duplicate link and37 exact current raw source objects per report. Reports remained unchanged/unendorsed. |
+| pdf-extraction | REVIEW_WORK/batch071/source09/pdf-extraction.json | context_only | Exact primary PDF-to-text extraction and both rendered page hashes; root read both images. |
+| writer-1 | src/culturemech/import/mediadive_importer.py; Exact functions described in provenance assessment | context_only | Relevant current function bodies read in full. These describe present behavior and are not proof of the historical execution that produced these records. |
+| writer-2 | src/culturemech/import/komodo_web_importer.py; Exact functions described in provenance assessment | context_only | Relevant current function bodies read in full. These describe present behavior and are not proof of the historical execution that produced these records. |
+| writer-3 | src/culturemech/enrich/dsmz_resolver.py; Exact functions described in provenance assessment | context_only | Relevant current function bodies read in full. These describe present behavior and are not proof of the historical execution that produced these records. |
+| writer-4 | src/culturemech/merge/merger.py; Exact functions described in provenance assessment | context_only | Relevant current function bodies read in full. These describe present behavior and are not proof of the historical execution that produced these records. |
+| writer-5 | src/culturemech/merge/formulation.py; Exact functions described in provenance assessment | context_only | Relevant current function bodies read in full. These describe present behavior and are not proof of the historical execution that produced these records. |
+| ols63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols32139 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols91260 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91260; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols17883 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17883; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols86249 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86249; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols49976 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols53503 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols86318 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols32145 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32145; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols131361 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols63939 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols27470 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols30961 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols49105 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols17015 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols15940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols31345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols176843 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols16494 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| quantities | REVIEW_WORK/batch071/record09/quantity-inventory.json | context_only | Complete local concentration and source-stage decision inventory; includes exact local paths and source failure limits. |
+| grounding | REVIEW_WORK/batch071/record09/grounding-inventory.json | context_only | All recursive asserted identifier/label slots, exact current OLS objects and current packaged MIM preferred-row joins. |
+| history | REVIEW_WORK/batch071/record09/history-and-evidence-inventory.json | context_only | Complete current history, references and attached evidence; source-specific claims are assessed without authenticating historical execution from code. |
+| scalars | REVIEW_WORK/batch071/record09/scalar-census.json | context_only | Lossless scalar census of the selected target and all maintained contributors. |
+| validate-schema | REVIEW_WORK/batch071/record09/validate-schema.json | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed<br> |
+| validate-strict | REVIEW_WORK/batch071/record09/validate-strict.json | supports | Validating 1 files with 1 workers; layers=schema; schema=src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                REVIEW_WORK/batch071/record09/strict.tsv<br> |
+| validate-terms | REVIEW_WORK/batch071/record09/validate-terms.json | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed<br> |
+| validate-references | REVIEW_WORK/batch071/record09/validate-references.json | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed<br> |
+
+## Limits And Additional Notes
+
+- The captured KOMODO MediaList route returned HTTP 403. The historical cross-reference points to /komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=691; that exact MediaInfo route was not tested. The historical row remains contextual, and its original retrieval is not independently authenticated.
+- Primary water quantities and provider volume metadata are not interchangeable with measured final-medium volume. Bare 25% HCl basis, density, separate bicarbonate/malate stock strengths and doses remain unresolved.
+- All 28 current concentrations across three documents have dispositions; source-only stock additions/solvent and preparation are separately inventoried. No recipe or identifier was changed.
+- Current DSM 6526 collection association is context only; no target_organism growth assertion, strain-specific incubation or species taxonomy was added. An inconsistent unrelated footer label was not used.
+- Current OLS/MIM data and current writer functions do not establish historical validity/execution. The native reference check performed zero checks; schema success is not source authentication.
+- Fresh review; historical lost snapshots were not reconstructed. All inspected source files remain unchanged.
+- This draft authoring step performed no formal review validation/save, Git mutation or publication.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T155106Z-batch071-record09-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'CreDm1 medium: preserve basal and stock stages and reconcile contributor preparation'
+started_at: '2026-10-28T15:21:28.876914Z'
+finished_at: '2026-10-28T15:51:06.884990Z'
+reviewer:
+  identity: Codex independent source reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Fresh assessment of the inspected checkout and newly captured
+    primary/provider/ontology evidence; no reconstruction of lost reviews and no record
+    edits.
+skill: .claude/skills/review-yaml-record/SKILL.md; .claude/skills/review-ingredient-concentrations/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The generated record and both maintained contributors share 28 concentration
+  entries, but six basal rates and 22 stock-stage entries have different source bases.
+  Current DSMZ 691 primary text and both rendered pages authenticate the recipe stages.
+  The declared provider basal volume is 1003 ml; the printed water addition is not
+  an independent final-volume measurement. Three stock additions and solvent context
+  are missing from the local structure. The DSMZ contributor retains source-supported
+  preparation that is absent from the KOMODO contributor and generated record, including
+  a stock-only step at the root. The nickel identifier does not represent the printed
+  hexahydrate. Current KOMODO index access failed, so the historical exact cross-reference
+  remains explicitly bounded.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/culturemech_id_registry.tsv
+    sha256: 0d059720f5c474b63daff8d5010fc56942a5a3ac30761ee75ce9e84801d555a5
+    role: context
+  - path: data/merge_yaml/merged/CreDm1_MEDIUM.yaml
+    sha256: e453324dd5f62f2a16e6b442f38b6a817f2f7f05876c130d36fbe2c3fd705f33
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml
+    sha256: a61e4cf74075a7e4520e45c329d566474fff3ac8cf76dcd623be9e6cddb9e631
+    role: context
+  - path: data/normalized_yaml/bacterial/credm1_medium.yaml
+    sha256: 7f59c2aaa6ec4e3da1966fc788ef4c4ea7e5d02d138d6ea12053776eae925e4d
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml.md
+    sha256: c6e877cf939bf6fd0d8273f6f0a2a67150e421aa76e7fabe24d4c30c1bdc0caf
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/credm1_medium.yaml.md
+    sha256: 852d477d919a50d2531703658294309a0707f8fdcf46c1fe8bbb169d56b7ee9c
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CreDm1_MEDIUM.md
+    sha256: a9bb272272956ac98c66fbe2dd6b360536290015cf447b93809c41f79c64c52c
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.md
+    sha256: da6fa65fb14ecdbeafd49da7d13caeeaf0ebe0c0d5fb72392c6b91c1ca333760
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/credm1_medium.md
+    sha256: 08aee746ed8753ee445442e6c5134f6bc76b238033ed7270ff1bc55234c83de0
+    role: context
+  - path: reports/label_plausibility_2026-07-19.tsv
+    sha256: eda647ffbb87d5ea90db812858b2d1d9388393c4d1abc8dec78672324c1509d9
+    role: context
+  - path: reports/media_content_review_manifest.tsv
+    sha256: e5ff2f1241ba046ae7a5dc0d543d340bdba10d31fa1fdc3e36203600cf1ec0ce
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_media_variant_links.py
+    sha256: 2931b0c5d4374cdaa6d256aed8f65f564a8b285bba741ec914f3a516eed50c07
+    role: context
+  - path: scripts/assign_culturemech_ids.py
+    sha256: 81ed213c52804ae98a8add02730d757595e3287fa7b01bc88aee0e587bbb01e1
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/propose_media_variant_links.py
+    sha256: bd5b0b86c9457e42ca52ba2b253e5842c7f414093ba15aaeb4f9f0d682b5f4c2
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/record_target_class.py
+    sha256: 468fcbfd2362ca08b7066d6f21adf85c04f21ab40f80e60995522b4edc0f6349
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/resolve_komodo_compositions.py
+    sha256: f45bc52a8efaa66c9a93c109a40c7d2763ac9f49c9009d92a4c0a0a41b7c28da
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: 6116d95493b8f91faed19956301291a73d090a3b83671303650a561798933456
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+scope:
+  description: Full selected record and both exact maintained contributors were assessed.
+    Completion remains partial because the current external KOMODO branch was not
+    authenticated.
+  selection: Actual batch071 native selection index 09.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:006296
+targets:
+- target_id: CultureMech:006296
+  path: data/merge_yaml/merged/CreDm1_MEDIUM.yaml
+  label: credm1_medium
+  kind: generated
+  record_class: MediaRecipe
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/credm1_medium.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:006296
+  command: just validate-schema data/merge_yaml/merged/CreDm1_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-schema
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-strict
+  name: validate-strict
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:006296
+  command: just validate-strict data/merge_yaml/merged/CreDm1_MEDIUM.yaml --out REVIEW_WORK/batch071/record09/strict.tsv
+    --workers 1 --quiet
+  exit_code: 0
+  evidence_ids:
+  - validate-strict
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-terms
+  name: validate-terms
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:006296
+  command: just validate-terms data/merge_yaml/merged/CreDm1_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-terms
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-references
+  name: validate-references
+  status: passed
+  required: true
+  summary: Native reference checker performed zero reference checks; this is not claim
+    authentication.
+  target_ids:
+  - CultureMech:006296
+  command: just validate-references data/merge_yaml/merged/CreDm1_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-references
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+evidence:
+- evidence_id: local-target
+  kind: record_content
+  reference: data/merge_yaml/merged/CreDm1_MEDIUM.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T15:30:24.814496Z'
+  support: context_only
+  summary: Complete selected generated record; no changes made.
+  snapshot_sha256: e453324dd5f62f2a16e6b442f38b6a817f2f7f05876c130d36fbe2c3fd705f33
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T15:30:24.814496Z'
+  support: context_only
+  summary: Complete maintained contributor including current curation history, evidence,
+    quantities and preparation; no changes made.
+  snapshot_sha256: a61e4cf74075a7e4520e45c329d566474fff3ac8cf76dcd623be9e6cddb9e631
+- evidence_id: owner-2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/credm1_medium.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T15:30:24.814496Z'
+  support: context_only
+  summary: Complete maintained contributor including current curation history, evidence,
+    quantities and preparation; no changes made.
+  snapshot_sha256: 7f59c2aaa6ec4e3da1966fc788ef4c4ea7e5d02d138d6ea12053776eae925e4d
+- evidence_id: identity-search
+  kind: search
+  reference: REVIEW_WORK/batch071/record09/identity-search.json
+  accessed_at: '2026-10-28T15:30:24.871258Z'
+  support: supports
+  summary: Exact generated lineage resolves every maintained contributor; no filename-only
+    transfer from neighboring variants.
+  search_scope: Complete recursive normalized YAML filename census including ignored
+    and hidden paths; exact merged_from stems and stable identity resolve the owner;
+    excluded namesakes are retained in the census. Similar names and source accessions
+    are not promoted to owners.
+  snapshot_sha256: 5430c061cbc3d3f6a7703b761412e8e840eeb7f7807db57d937908bdfa7090ce
+- evidence_id: dsm691
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf
+  locator: Both pages; basal table and preparation, three separately headed stock
+    sections
+  accessed_at: '2026-10-28T15:22:07.514644Z'
+  support: supports
+  summary: Complete official two-page DSMZ 691 PDF, text and both page images read;
+    exact basal, SL-10, selenite-tungstate and Wolin 10x sections distinguished.
+  snapshot_sha256: e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b
+- evidence_id: mediadive691
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/691
+  locator: $.data.medium and all four $.data.solutions entries
+  accessed_at: '2026-10-28T15:22:07.188995Z'
+  support: supports
+  summary: Complete current API medium691 payload read. Its declared volume and g_l
+    fields authenticate provider statements at their own stages, not a measured final-medium
+    denominator.
+  snapshot_sha256: 23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01
+- evidence_id: dsm691page
+  kind: primary_source
+  reference: https://mediadive.dsmz.de/medium/691
+  locator: Medium identity, four recipe sections and associated strain heading
+  accessed_at: '2026-10-28T15:22:07.694187Z'
+  support: context_only
+  summary: Current official provider page identifies medium691 and its scoped Sulfurospirillum
+    sp. DSM 6526 association. Provider molecular-composition calculations are not
+    adopted as primary measured final concentrations.
+  snapshot_sha256: 73d43c1452cf8a4c928edca2adadec0e610ae43beff0a37d2dea6d0e176c444a
+- evidence_id: dsm6526
+  kind: primary_source
+  reference: https://www.dsmz.de/collection/catalogue/details/culture/DSM-6526
+  locator: Name, DSM No., strain designation, isolation and risk-group fields
+  accessed_at: '2026-10-28T15:22:08.372413Z'
+  support: context_only
+  summary: Current collection heading identifies Sulfurospirillum sp., strain CreDm1,
+    isolated from creek mud in Japan and provisionally risk group1. This is collection
+    context, not a new experimental growth assertion; the inconsistent unrelated footer
+    label is not used to assign a species.
+  snapshot_sha256: 5479d34c4839df57ee8970fd2b2d0d2da46e11ca14e525e79d980db9b3768a6b
+- evidence_id: komodoList
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: HTTP403 capture and request metadata
+  accessed_at: '2026-10-28T15:26:48.668136Z'
+  support: context_only
+  summary: Current exact historical KOMODO index URL returned HTTP403. The failure
+    body authenticates access failure only; the historical row is assessed as historical
+    identity evidence.
+  snapshot_sha256: 95f686df46a927220b4786786d6f30b6b884ef3a9520acda989e87b9bfdbff7e
+- evidence_id: historical-1
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml.md
+  locator: Complete document
+  accessed_at: '2026-10-28T15:30:24.814496Z'
+  support: context_only
+  summary: Complete exact historical report read, including all unchanged decisions
+    and source rows. October5 had zero source-checked claims; October7 left all 28
+    rates unresolved because of stock structure. Current equal source bytes authenticate
+    the quoted content, not old retrieval events.
+  snapshot_sha256: c6e877cf939bf6fd0d8273f6f0a2a67150e421aa76e7fabe24d4c30c1bdc0caf
+- evidence_id: historical-2
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/credm1_medium.yaml.md
+  locator: Complete document
+  accessed_at: '2026-10-28T15:30:24.814496Z'
+  support: context_only
+  summary: Complete exact historical report read, including all unchanged decisions
+    and source rows. October5 had zero source-checked claims; October7 left all 28
+    rates unresolved because of stock structure. Current equal source bytes authenticate
+    the quoted content, not old retrieval events.
+  snapshot_sha256: 852d477d919a50d2531703658294309a0707f8fdcf46c1fe8bbb169d56b7ee9c
+- evidence_id: historical-3
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CreDm1_MEDIUM.md
+  locator: Complete document
+  accessed_at: '2026-10-28T15:30:24.814496Z'
+  support: context_only
+  summary: Complete exact historical report read, including all unchanged decisions
+    and source rows. October5 had zero source-checked claims; October7 left all 28
+    rates unresolved because of stock structure. Current equal source bytes authenticate
+    the quoted content, not old retrieval events.
+  snapshot_sha256: a9bb272272956ac98c66fbe2dd6b360536290015cf447b93809c41f79c64c52c
+- evidence_id: historical-4
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.md
+  locator: Complete document
+  accessed_at: '2026-10-28T15:30:24.814496Z'
+  support: context_only
+  summary: Complete exact historical report read, including all unchanged decisions
+    and source rows. October5 had zero source-checked claims; October7 left all 28
+    rates unresolved because of stock structure. Current equal source bytes authenticate
+    the quoted content, not old retrieval events.
+  snapshot_sha256: da6fa65fb14ecdbeafd49da7d13caeeaf0ebe0c0d5fb72392c6b91c1ca333760
+- evidence_id: historical-5
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/credm1_medium.md
+  locator: Complete document
+  accessed_at: '2026-10-28T15:30:24.814496Z'
+  support: context_only
+  summary: Complete exact historical report read, including all unchanged decisions
+    and source rows. October5 had zero source-checked claims; October7 left all 28
+    rates unresolved because of stock structure. Current equal source bytes authenticate
+    the quoted content, not old retrieval events.
+  snapshot_sha256: 08aee746ed8753ee445442e6c5134f6bc76b238033ed7270ff1bc55234c83de0
+- evidence_id: history-auth
+  kind: record_content
+  reference: REVIEW_WORK/batch071/record09/historical-claim-authentication.json
+  accessed_at: '2026-10-28T15:30:24.889797Z'
+  support: context_only
+  summary: Both complete October7 tables independently joined:28 current concentration
+    rows, reciprocal source-duplicate link and37 exact current raw source objects
+    per report. Reports remained unchanged/unendorsed.
+  snapshot_sha256: 2512a7f0916a267cd54457a8cfaaa55926deae5f59bde294171cd331266b8155
+- evidence_id: pdf-extraction
+  kind: record_content
+  reference: REVIEW_WORK/batch071/source09/pdf-extraction.json
+  accessed_at: '2026-10-28T15:30:24.890138Z'
+  support: context_only
+  summary: Exact primary PDF-to-text extraction and both rendered page hashes; root
+    read both images.
+  snapshot_sha256: 0e1cd479425fee107aa67613f2bffeb4d3f50d1ce65614e8915df4b06d3d2c68
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Exact functions described in provenance assessment
+  accessed_at: '2026-10-28T15:30:24.814496Z'
+  support: context_only
+  summary: Relevant current function bodies read in full. These describe present behavior
+    and are not proof of the historical execution that produced these records.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/import/komodo_web_importer.py
+  locator: Exact functions described in provenance assessment
+  accessed_at: '2026-10-28T15:30:24.814496Z'
+  support: context_only
+  summary: Relevant current function bodies read in full. These describe present behavior
+    and are not proof of the historical execution that produced these records.
+  snapshot_sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+- evidence_id: writer-3
+  kind: record_content
+  reference: src/culturemech/enrich/dsmz_resolver.py
+  locator: Exact functions described in provenance assessment
+  accessed_at: '2026-10-28T15:30:24.814496Z'
+  support: context_only
+  summary: Relevant current function bodies read in full. These describe present behavior
+    and are not proof of the historical execution that produced these records.
+  snapshot_sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+- evidence_id: writer-4
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: Exact functions described in provenance assessment
+  accessed_at: '2026-10-28T15:30:24.814496Z'
+  support: context_only
+  summary: Relevant current function bodies read in full. These describe present behavior
+    and are not proof of the historical execution that produced these records.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-5
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Exact functions described in provenance assessment
+  accessed_at: '2026-10-28T15:30:24.814496Z'
+  support: context_only
+  summary: Relevant current function bodies read in full. These describe present behavior
+    and are not proof of the historical execution that produced these records.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: ols63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T15:22:09.744560Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: ols31206
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T15:22:08.709615Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: ols86345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T15:22:10.358235Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: ols86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T15:22:09.955156Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: ols32139
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T15:22:09.007504Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 2a41873aa455dc8563a47d36add836fffb6fb758ce7a2d1c28295e77646315fe
+- evidence_id: ols91260
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91260
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T15:22:10.576737Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 88784d89734b3a4ecfe6c7d0fa4b76c108356bc9993e0b57d843ee2524b584fd
+- evidence_id: ols17883
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17883
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T15:22:08.301984Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 1c4c2e8e3474319ab5fb79041b19cabfae42f4360729a7569f8a943a503d2f6a
+- evidence_id: ols86249
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86249
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T15:22:10.158328Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 63bb84e7a947d2a3db0e5f23cf6a533bda2eee137020d7bbe2590477131c5683
+- evidence_id: ols49976
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T15:22:09.540011Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: d27644ae0df5935f8f18a28faa1ba6096fefeb9d0cb951b39751d442c92bd321
+- evidence_id: ols86368
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T15:22:10.392813Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: ols33118
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T15:22:09.154417Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: ols53503
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T15:22:09.744424Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: c33e304a0a565068c592ba0970e501052981599ef69cd2cb901e88f27931389d
+- evidence_id: ols86318
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T15:22:10.374748Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 9bbecfe37d67d923ee070067aebdf1abf21048cdb2cbdff9de0e3d21f68ea1ae
+- evidence_id: ols34887
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T15:22:09.334078Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: ols75213
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T15:22:09.937651Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: ols32145
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32145
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T15:22:09.117237Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: db4eb7586e3b04f5b2ae39b47bae7c1c533316f9bce15ee2829bf6967ca352f1
+- evidence_id: ols131361
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T15:22:07.264833Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 643fefa89a2c0afeb2a00a0dd6149dbbf86cc4824369c58bde1c6ea6d4316d10
+- evidence_id: ols63939
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T15:22:09.753062Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 987144fa0342502834f116860a4b4f71696f62c18e7b701301667c15e588562a
+- evidence_id: ols15956
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T15:22:07.884877Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: d2d51887df4de92642b66e9d15086ef82eccbc476dd4077d514ca709181ab4bd
+- evidence_id: ols27470
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T15:22:08.544841Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: fe3e4a2f0f0fa51f94efe6bbf0fa8883d43eafef8db73cfd37bc25ce15fdd12f
+- evidence_id: ols30961
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T15:22:08.730596Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: f1c95b83f5396067c3959c20ee4715c78f7895f5084dd214b3a4bf01e064f21d
+- evidence_id: ols49105
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T15:22:09.341117Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 0b923c215888606038af1e3f0c1b1bcc35e4ab84966d1733a91fdfcbee8f2ae4
+- evidence_id: ols17015
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T15:22:08.128501Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: f42bc5bbd29b208bfd3062acb11dfa63ccebf81f77ffd72ab596de863cb68aa4
+- evidence_id: ols15940
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T15:22:07.407810Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 3330ed782e73526a087fb250ed5895ff232f117a896d45d541dff431e5c1f0e1
+- evidence_id: ols31345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T15:22:08.924966Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 56fc4b33c78d82faf317e131ae936f2e00eab0c369b2a9d8be86eddff6fd616d
+- evidence_id: ols176843
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T15:22:08.121553Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: b535c3de88f47e93aed8909c58ff4e2d054a6845dea3bc9a048c18df12b371a9
+- evidence_id: ols30753
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T15:22:08.530176Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 97ea54b8020d3bcda2478182be115d2bc632249ee22b197b0575a4a9fd5fe21a
+- evidence_id: ols16494
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T15:22:07.899058Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: aa3c1003d6266cc48f19a4d1d9527edd6844b96094a911e9a3c4f6a8851444e1
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch071/record09/quantity-inventory.json
+  accessed_at: '2026-10-28T15:51:06.884990Z'
+  support: context_only
+  summary: Complete local concentration and source-stage decision inventory; includes
+    exact local paths and source failure limits.
+  snapshot_sha256: 785ca003dc4d81c0f4ff273ca33b8ba09e19c50a878614c5b71629ff9a38e621
+- evidence_id: grounding
+  kind: record_content
+  reference: REVIEW_WORK/batch071/record09/grounding-inventory.json
+  accessed_at: '2026-10-28T15:30:24.929741Z'
+  support: context_only
+  summary: All recursive asserted identifier/label slots, exact current OLS objects
+    and current packaged MIM preferred-row joins.
+  snapshot_sha256: 5da08ee51377ff48155adbc9db25b9af74dcb850178cdabfb74943464778cd7a
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch071/record09/history-and-evidence-inventory.json
+  accessed_at: '2026-10-28T15:30:24.929925Z'
+  support: context_only
+  summary: Complete current history, references and attached evidence; source-specific
+    claims are assessed without authenticating historical execution from code.
+  snapshot_sha256: cb02f3579fabeef8aa921fd14ddaf270633315b405ce77a9d1eabc624407437a
+- evidence_id: scalars
+  kind: record_content
+  reference: REVIEW_WORK/batch071/record09/scalar-census.json
+  accessed_at: '2026-10-28T15:30:24.929946Z'
+  support: context_only
+  summary: Lossless scalar census of the selected target and all maintained contributors.
+  snapshot_sha256: 24b23647a9965d763b7c77b79dec7933a7ecdda2be332dd73c086aaf87cf9a09
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch071/record09/validate-schema.json
+  accessed_at: '2026-10-28T15:21:29.928364Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed
+
+    '
+  snapshot_sha256: 63ba581e084626fdf11413e5410de240cef9dbded40b8c3fbb79dc1fe83878a3
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch071/record09/validate-strict.json
+  accessed_at: '2026-10-28T15:21:30.875906Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         REVIEW_WORK/batch071/record09/strict.tsv\n"
+  snapshot_sha256: 76793c98c7ff9f24350de356be96ab6aba970a28c0a5aa89e26de2dcc7b55543
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch071/record09/validate-terms.json
+  accessed_at: '2026-10-28T15:21:32.245228Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed
+
+    '
+  snapshot_sha256: 86d2a0ca68f214a2131cc1803b685a027bde42b395b3bfde2e9926fe41464cde
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch071/record09/validate-references.json
+  accessed_at: '2026-10-28T15:21:33.017957Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed
+
+    '
+  snapshot_sha256: 63e42c2e3e2960a1b16c84c9ad8a68bd78b9f009fd22669ec9046a883a70dc7d
+assessments:
+- assessment_id: a1
+  area: identity
+  topic: Exact generated lineage and source-duplicate boundary
+  outcome: supported
+  summary: Exact merged_from stems resolve KOMODO691/CM006296 and DSMZ 691/CM001828.
+    Same ingredient signatures do not establish equal complete formulations; the maintained
+    preparation difference and current conservative merge gate remain material.
+  target_ids:
+  - CultureMech:006296
+  evidence_ids:
+  - identity-search
+  - local-target
+  - owner-1
+  - owner-2
+  - mediadive691
+  - historical-1
+- assessment_id: a2
+  area: quantity
+  topic: Quantity scope and inventory
+  outcome: concern
+  summary: Every selected target/owner concentration field has an explicit disposition;
+    scoped dependency fields and source-only preparation are separate from receiving-medium
+    rates.
+  target_ids:
+  - CultureMech:006296
+  evidence_ids:
+  - quantities
+  details: '[{"quantity_id": "q1", "topic": "KH2PO4 basal amount and declared rate",
+    "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf",
+    "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 3-3; both pages visually checked", "quote": "   KH2PO4                                                     1.40         g"},
+    {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691",
+    "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[0].recipe[0]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\":
+    1.4,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    1.39581,\n                        \"mmol_l\": 10.2569,\n                        \"optional\":
+    0\n                    }"}, {"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf",
+    "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 7-12; both pages visually checked", "quote": "   Trace element solution
+    SL-10                               1.00        ml\n   Selenite-tungstate solution                                1.00        ml\n   NaHCO3                                                     1.50         g\n   Na2-DL-malate                                              1.60         g\n   Wolin''s
+    vitamin solution (10x)                             1.00        ml\n   Distilled
+    water                                         1000.00        ml"}], "decision":
+    "evidence_only", "rationale": "The stored 1.39581 g/L exactly reproduces the provider
+    g_l field, on its declared 1003 ml basis. The primary source instead lists 1.4
+    g per receiving batch and 1000 ml input water plus three separate stock additions.
+    Preserve the provider provenance and primary batch amount separately; arithmetic
+    addition of input volumes is not an independently specified measured final volume.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path":
+    "ingredients[0].concentration", "stored_value": {"value": "1.39581", "unit": "G_PER_L"},
+    "decision": "evidence_only", "rationale": "The stored 1.39581 g/L exactly reproduces
+    the provider g_l field, on its declared 1003 ml basis. The primary source instead
+    lists 1.4 g per receiving batch and 1000 ml input water plus three separate stock
+    additions. Preserve the provider provenance and primary batch amount separately;
+    arithmetic addition of input volumes is not an independently specified measured
+    final volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml",
+    "field_path": "ingredients[0].concentration", "stored_value": {"value": "1.39581",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored 1.39581
+    g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis.
+    The primary source instead lists 1.4 g per receiving batch and 1000 ml input water
+    plus three separate stock additions. Preserve the provider provenance and primary
+    batch amount separately; arithmetic addition of input volumes is not an independently
+    specified measured final volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml",
+    "field_path": "ingredients[0].concentration", "stored_value": {"value": "1.39581",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored 1.39581
+    g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis.
+    The primary source instead lists 1.4 g per receiving batch and 1000 ml input water
+    plus three separate stock additions. Preserve the provider provenance and primary
+    batch amount separately; arithmetic addition of input volumes is not an independently
+    specified measured final volume."}]}, {"quantity_id": "q2", "topic": "NH4Cl basal
+    amount and declared rate", "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf",
+    "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 4-4; both pages visually checked", "quote": "   NH4Cl                                                      0.50         g"},
+    {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691",
+    "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[0].recipe[1]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\":
+    0.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.498504,\n                        \"mmol_l\": 9.31958,\n                        \"optional\":
+    0\n                    }"}, {"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf",
+    "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 7-12; both pages visually checked", "quote": "   Trace element solution
+    SL-10                               1.00        ml\n   Selenite-tungstate solution                                1.00        ml\n   NaHCO3                                                     1.50         g\n   Na2-DL-malate                                              1.60         g\n   Wolin''s
+    vitamin solution (10x)                             1.00        ml\n   Distilled
+    water                                         1000.00        ml"}], "decision":
+    "evidence_only", "rationale": "The stored 0.498504 g/L exactly reproduces the
+    provider g_l field, on its declared 1003 ml basis. The primary source instead
+    lists 0.5 g per receiving batch and 1000 ml input water plus three separate stock
+    additions. Preserve the provider provenance and primary batch amount separately;
+    arithmetic addition of input volumes is not an independently specified measured
+    final volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml",
+    "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.498504",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored 0.498504
+    g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis.
+    The primary source instead lists 0.5 g per receiving batch and 1000 ml input water
+    plus three separate stock additions. Preserve the provider provenance and primary
+    batch amount separately; arithmetic addition of input volumes is not an independently
+    specified measured final volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml",
+    "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.498504",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored 0.498504
+    g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis.
+    The primary source instead lists 0.5 g per receiving batch and 1000 ml input water
+    plus three separate stock additions. Preserve the provider provenance and primary
+    batch amount separately; arithmetic addition of input volumes is not an independently
+    specified measured final volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml",
+    "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.498504",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored 0.498504
+    g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis.
+    The primary source instead lists 0.5 g per receiving batch and 1000 ml input water
+    plus three separate stock additions. Preserve the provider provenance and primary
+    batch amount separately; arithmetic addition of input volumes is not an independently
+    specified measured final volume."}]}, {"quantity_id": "q3", "topic": "MgCl2 x
+    6 H2O basal amount and declared rate", "source": [{"evidence_id": "dsm691", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path":
+    "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 5-5; both pages visually checked", "quote": "   MgCl2 x 6 H2O                                              0.20         g"},
+    {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691",
+    "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[0].recipe[2]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\":
+    0.2,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.199402,\n                        \"mmol_l\": 0.980811,\n                        \"optional\":
+    0\n                    }"}, {"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf",
+    "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 7-12; both pages visually checked", "quote": "   Trace element solution
+    SL-10                               1.00        ml\n   Selenite-tungstate solution                                1.00        ml\n   NaHCO3                                                     1.50         g\n   Na2-DL-malate                                              1.60         g\n   Wolin''s
+    vitamin solution (10x)                             1.00        ml\n   Distilled
+    water                                         1000.00        ml"}], "decision":
+    "evidence_only", "rationale": "The stored 0.199402 g/L exactly reproduces the
+    provider g_l field, on its declared 1003 ml basis. The primary source instead
+    lists 0.2 g per receiving batch and 1000 ml input water plus three separate stock
+    additions. Preserve the provider provenance and primary batch amount separately;
+    arithmetic addition of input volumes is not an independently specified measured
+    final volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml",
+    "field_path": "ingredients[2].concentration", "stored_value": {"value": "0.199402",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored 0.199402
+    g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis.
+    The primary source instead lists 0.2 g per receiving batch and 1000 ml input water
+    plus three separate stock additions. Preserve the provider provenance and primary
+    batch amount separately; arithmetic addition of input volumes is not an independently
+    specified measured final volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml",
+    "field_path": "ingredients[2].concentration", "stored_value": {"value": "0.199402",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored 0.199402
+    g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis.
+    The primary source instead lists 0.2 g per receiving batch and 1000 ml input water
+    plus three separate stock additions. Preserve the provider provenance and primary
+    batch amount separately; arithmetic addition of input volumes is not an independently
+    specified measured final volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml",
+    "field_path": "ingredients[2].concentration", "stored_value": {"value": "0.199402",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored 0.199402
+    g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis.
+    The primary source instead lists 0.2 g per receiving batch and 1000 ml input water
+    plus three separate stock additions. Preserve the provider provenance and primary
+    batch amount separately; arithmetic addition of input volumes is not an independently
+    specified measured final volume."}]}, {"quantity_id": "q4", "topic": "CaCl2 x
+    2 H2O basal amount and declared rate", "source": [{"evidence_id": "dsm691", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path":
+    "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 6-6; both pages visually checked", "quote": "   CaCl2 x 2 H2O                                              0.15         g"},
+    {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691",
+    "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[0].recipe[3]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\":
+    0.15,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.149551,\n                        \"mmol_l\": 1.01725,\n                        \"optional\":
+    0\n                    }"}, {"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf",
+    "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 7-12; both pages visually checked", "quote": "   Trace element solution
+    SL-10                               1.00        ml\n   Selenite-tungstate solution                                1.00        ml\n   NaHCO3                                                     1.50         g\n   Na2-DL-malate                                              1.60         g\n   Wolin''s
+    vitamin solution (10x)                             1.00        ml\n   Distilled
+    water                                         1000.00        ml"}], "decision":
+    "evidence_only", "rationale": "The stored 0.149551 g/L exactly reproduces the
+    provider g_l field, on its declared 1003 ml basis. The primary source instead
+    lists 0.15 g per receiving batch and 1000 ml input water plus three separate stock
+    additions. Preserve the provider provenance and primary batch amount separately;
+    arithmetic addition of input volumes is not an independently specified measured
+    final volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml",
+    "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.149551",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored 0.149551
+    g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis.
+    The primary source instead lists 0.15 g per receiving batch and 1000 ml input
+    water plus three separate stock additions. Preserve the provider provenance and
+    primary batch amount separately; arithmetic addition of input volumes is not an
+    independently specified measured final volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml",
+    "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.149551",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored 0.149551
+    g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis.
+    The primary source instead lists 0.15 g per receiving batch and 1000 ml input
+    water plus three separate stock additions. Preserve the provider provenance and
+    primary batch amount separately; arithmetic addition of input volumes is not an
+    independently specified measured final volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml",
+    "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.149551",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored 0.149551
+    g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis.
+    The primary source instead lists 0.15 g per receiving batch and 1000 ml input
+    water plus three separate stock additions. Preserve the provider provenance and
+    primary batch amount separately; arithmetic addition of input volumes is not an
+    independently specified measured final volume."}]}, {"quantity_id": "q5", "topic":
+    "NaHCO3 basal amount and declared rate", "source": [{"evidence_id": "dsm691",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf",
+    "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 9-9; both pages visually checked", "quote": "   NaHCO3                                                     1.50         g"},
+    {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691",
+    "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[0].recipe[6]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"NaHCO3\",\n                        \"compound_id\": 55,\n                        \"amount\":
+    1.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    1.49551,\n                        \"mmol_l\": 17.8022,\n                        \"optional\":
+    0\n                    }"}, {"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf",
+    "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 7-12; both pages visually checked", "quote": "   Trace element solution
+    SL-10                               1.00        ml\n   Selenite-tungstate solution                                1.00        ml\n   NaHCO3                                                     1.50         g\n   Na2-DL-malate                                              1.60         g\n   Wolin''s
+    vitamin solution (10x)                             1.00        ml\n   Distilled
+    water                                         1000.00        ml"}], "decision":
+    "evidence_only", "rationale": "The stored 1.49551 g/L exactly reproduces the provider
+    g_l field, on its declared 1003 ml basis. The primary source instead lists 1.5
+    g per receiving batch and 1000 ml input water plus three separate stock additions.
+    Preserve the provider provenance and primary batch amount separately; arithmetic
+    addition of input volumes is not an independently specified measured final volume.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path":
+    "ingredients[4].concentration", "stored_value": {"value": "1.49551", "unit": "G_PER_L"},
+    "decision": "evidence_only", "rationale": "The stored 1.49551 g/L exactly reproduces
+    the provider g_l field, on its declared 1003 ml basis. The primary source instead
+    lists 1.5 g per receiving batch and 1000 ml input water plus three separate stock
+    additions. Preserve the provider provenance and primary batch amount separately;
+    arithmetic addition of input volumes is not an independently specified measured
+    final volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml",
+    "field_path": "ingredients[4].concentration", "stored_value": {"value": "1.49551",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored 1.49551
+    g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis.
+    The primary source instead lists 1.5 g per receiving batch and 1000 ml input water
+    plus three separate stock additions. Preserve the provider provenance and primary
+    batch amount separately; arithmetic addition of input volumes is not an independently
+    specified measured final volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml",
+    "field_path": "ingredients[4].concentration", "stored_value": {"value": "1.49551",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored 1.49551
+    g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis.
+    The primary source instead lists 1.5 g per receiving batch and 1000 ml input water
+    plus three separate stock additions. Preserve the provider provenance and primary
+    batch amount separately; arithmetic addition of input volumes is not an independently
+    specified measured final volume."}]}, {"quantity_id": "q6", "topic": "Na2-DL-malate
+    basal amount and declared rate", "source": [{"evidence_id": "dsm691", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path":
+    "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 10-10; both pages visually checked", "quote": "   Na2-DL-malate                                              1.60         g"},
+    {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691",
+    "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[0].recipe[7]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"Na2-DL-malate\",\n                        \"compound_id\": 204,\n                        \"amount\":
+    1.6,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    1.59521,\n                        \"mmol_l\": 8.95931,\n                        \"optional\":
+    0\n                    }"}, {"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf",
+    "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 7-12; both pages visually checked", "quote": "   Trace element solution
+    SL-10                               1.00        ml\n   Selenite-tungstate solution                                1.00        ml\n   NaHCO3                                                     1.50         g\n   Na2-DL-malate                                              1.60         g\n   Wolin''s
+    vitamin solution (10x)                             1.00        ml\n   Distilled
+    water                                         1000.00        ml"}], "decision":
+    "evidence_only", "rationale": "The stored 1.59521 g/L exactly reproduces the provider
+    g_l field, on its declared 1003 ml basis. The primary source instead lists 1.6
+    g per receiving batch and 1000 ml input water plus three separate stock additions.
+    Preserve the provider provenance and primary batch amount separately; arithmetic
+    addition of input volumes is not an independently specified measured final volume.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path":
+    "ingredients[5].concentration", "stored_value": {"value": "1.59521", "unit": "G_PER_L"},
+    "decision": "evidence_only", "rationale": "The stored 1.59521 g/L exactly reproduces
+    the provider g_l field, on its declared 1003 ml basis. The primary source instead
+    lists 1.6 g per receiving batch and 1000 ml input water plus three separate stock
+    additions. Preserve the provider provenance and primary batch amount separately;
+    arithmetic addition of input volumes is not an independently specified measured
+    final volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml",
+    "field_path": "ingredients[5].concentration", "stored_value": {"value": "1.59521",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored 1.59521
+    g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis.
+    The primary source instead lists 1.6 g per receiving batch and 1000 ml input water
+    plus three separate stock additions. Preserve the provider provenance and primary
+    batch amount separately; arithmetic addition of input volumes is not an independently
+    specified measured final volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml",
+    "field_path": "ingredients[5].concentration", "stored_value": {"value": "1.59521",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored 1.59521
+    g/L exactly reproduces the provider g_l field, on its declared 1003 ml basis.
+    The primary source instead lists 1.6 g per receiving batch and 1000 ml input water
+    plus three separate stock additions. Preserve the provider provenance and primary
+    batch amount separately; arithmetic addition of input volumes is not an independently
+    specified measured final volume."}]}, {"quantity_id": "q7", "topic": "HCl within
+    Trace element solution SL-10", "source": [{"evidence_id": "dsm691", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path":
+    "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 23-23; both pages visually checked", "quote": "   HCl (25%)                                                  10.00      ml"},
+    {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691",
+    "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[1].recipe[0]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"HCl\",\n                        \"compound_id\": 68,\n                        \"attribute\":
+    \"25%\",\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"g_l\": 2.5,\n                        \"mmol_l\":
+    68.5683,\n                        \"optional\": 0\n                    }"}], "decision":
+    "conflict", "rationale": "The stored 2.5 g/L equals the provider field for Trace
+    element solution SL-10; it is currently misplaced among the main-medium ingredients.
+    The primary stock section lists 10 ml. Reconstruct source-specific stock membership
+    and the separately stated receiving addition before claiming a final-medium concentration.
+    The primary HCl label is 25% without a specified percentage basis; retain the
+    10 ml stock-stage addition, and do not validate the provider-derived 2.5 g/L by
+    assuming density or w/v.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml",
+    "field_path": "ingredients[6].concentration", "stored_value": {"value": "2.5",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 2.5 g/L equals
+    the provider field for Trace element solution SL-10; it is currently misplaced
+    among the main-medium ingredients. The primary stock section lists 10 ml. Reconstruct
+    source-specific stock membership and the separately stated receiving addition
+    before claiming a final-medium concentration. The primary HCl label is 25% without
+    a specified percentage basis; retain the 10 ml stock-stage addition, and do not
+    validate the provider-derived 2.5 g/L by assuming density or w/v."}, {"path":
+    "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path":
+    "ingredients[6].concentration", "stored_value": {"value": "2.5", "unit": "G_PER_L"},
+    "decision": "conflict", "rationale": "The stored 2.5 g/L equals the provider field
+    for Trace element solution SL-10; it is currently misplaced among the main-medium
+    ingredients. The primary stock section lists 10 ml. Reconstruct source-specific
+    stock membership and the separately stated receiving addition before claiming
+    a final-medium concentration. The primary HCl label is 25% without a specified
+    percentage basis; retain the 10 ml stock-stage addition, and do not validate the
+    provider-derived 2.5 g/L by assuming density or w/v."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml",
+    "field_path": "ingredients[6].concentration", "stored_value": {"value": "2.5",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 2.5 g/L equals
+    the provider field for Trace element solution SL-10; it is currently misplaced
+    among the main-medium ingredients. The primary stock section lists 10 ml. Reconstruct
+    source-specific stock membership and the separately stated receiving addition
+    before claiming a final-medium concentration. The primary HCl label is 25% without
+    a specified percentage basis; retain the 10 ml stock-stage addition, and do not
+    validate the provider-derived 2.5 g/L by assuming density or w/v."}]}, {"quantity_id":
+    "q8", "topic": "FeCl2 x 4 H2O within Trace element solution SL-10", "source":
+    [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf",
+    "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 24-24; both pages visually checked", "quote": "   FeCl2 x 4 H2O                                               1.50       g"},
+    {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691",
+    "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[1].recipe[1]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"FeCl2 x 4 H2O\",\n                        \"compound_id\": 260,\n                        \"amount\":
+    1.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    1.5,\n                        \"mmol_l\": 7.54482,\n                        \"optional\":
+    0\n                    }"}], "decision": "conflict", "rationale": "The stored
+    1.5 g/L equals the provider field for Trace element solution SL-10; it is currently
+    misplaced among the main-medium ingredients. The primary stock section lists 1.5
+    g. Reconstruct source-specific stock membership and the separately stated receiving
+    addition before claiming a final-medium concentration. SL-10 explicitly makes
+    up to 1000 ml, supporting the printed solid mass converted to g/L at this stock
+    stage only.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml",
+    "field_path": "ingredients[7].concentration", "stored_value": {"value": "1.5",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 1.5 g/L equals
+    the provider field for Trace element solution SL-10; it is currently misplaced
+    among the main-medium ingredients. The primary stock section lists 1.5 g. Reconstruct
+    source-specific stock membership and the separately stated receiving addition
+    before claiming a final-medium concentration. SL-10 explicitly makes up to 1000
+    ml, supporting the printed solid mass converted to g/L at this stock stage only."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path":
+    "ingredients[7].concentration", "stored_value": {"value": "1.5", "unit": "G_PER_L"},
+    "decision": "conflict", "rationale": "The stored 1.5 g/L equals the provider field
+    for Trace element solution SL-10; it is currently misplaced among the main-medium
+    ingredients. The primary stock section lists 1.5 g. Reconstruct source-specific
+    stock membership and the separately stated receiving addition before claiming
+    a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting
+    the printed solid mass converted to g/L at this stock stage only."}, {"path":
+    "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[7].concentration",
+    "stored_value": {"value": "1.5", "unit": "G_PER_L"}, "decision": "conflict", "rationale":
+    "The stored 1.5 g/L equals the provider field for Trace element solution SL-10;
+    it is currently misplaced among the main-medium ingredients. The primary stock
+    section lists 1.5 g. Reconstruct source-specific stock membership and the separately
+    stated receiving addition before claiming a final-medium concentration. SL-10
+    explicitly makes up to 1000 ml, supporting the printed solid mass converted to
+    g/L at this stock stage only."}]}, {"quantity_id": "q9", "topic": "ZnCl2 within
+    Trace element solution SL-10", "source": [{"evidence_id": "dsm691", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path":
+    "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 25-25; both pages visually checked", "quote": "   ZnCl2                                                      70.00      mg"},
+    {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691",
+    "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[1].recipe[2]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"ZnCl2\",\n                        \"compound_id\": 64,\n                        \"amount\":
+    70,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.07,\n                        \"mmol_l\": 0.513573,\n                        \"optional\":
+    0\n                    }"}], "decision": "conflict", "rationale": "The stored
+    0.07 g/L equals the provider field for Trace element solution SL-10; it is currently
+    misplaced among the main-medium ingredients. The primary stock section lists 70
+    mg. Reconstruct source-specific stock membership and the separately stated receiving
+    addition before claiming a final-medium concentration. SL-10 explicitly makes
+    up to 1000 ml, supporting the printed solid mass converted to g/L at this stock
+    stage only.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml",
+    "field_path": "ingredients[8].concentration", "stored_value": {"value": "0.07",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.07 g/L
+    equals the provider field for Trace element solution SL-10; it is currently misplaced
+    among the main-medium ingredients. The primary stock section lists 70 mg. Reconstruct
+    source-specific stock membership and the separately stated receiving addition
+    before claiming a final-medium concentration. SL-10 explicitly makes up to 1000
+    ml, supporting the printed solid mass converted to g/L at this stock stage only."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path":
+    "ingredients[8].concentration", "stored_value": {"value": "0.07", "unit": "G_PER_L"},
+    "decision": "conflict", "rationale": "The stored 0.07 g/L equals the provider
+    field for Trace element solution SL-10; it is currently misplaced among the main-medium
+    ingredients. The primary stock section lists 70 mg. Reconstruct source-specific
+    stock membership and the separately stated receiving addition before claiming
+    a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting
+    the printed solid mass converted to g/L at this stock stage only."}, {"path":
+    "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[8].concentration",
+    "stored_value": {"value": "0.07", "unit": "G_PER_L"}, "decision": "conflict",
+    "rationale": "The stored 0.07 g/L equals the provider field for Trace element
+    solution SL-10; it is currently misplaced among the main-medium ingredients. The
+    primary stock section lists 70 mg. Reconstruct source-specific stock membership
+    and the separately stated receiving addition before claiming a final-medium concentration.
+    SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted
+    to g/L at this stock stage only."}]}, {"quantity_id": "q10", "topic": "MnCl2 x
+    4 H2O within Trace element solution SL-10", "source": [{"evidence_id": "dsm691",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf",
+    "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 26-26; both pages visually checked", "quote": "   MnCl2 x 4 H2O                                             100.00      mg"},
+    {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691",
+    "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[1].recipe[3]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"MnCl2 x 4 H2O\",\n                        \"compound_id\": 36,\n                        \"amount\":
+    100,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.1,\n                        \"mmol_l\": 0.505293,\n                        \"optional\":
+    0\n                    }"}], "decision": "conflict", "rationale": "The stored
+    0.1 g/L equals the provider field for Trace element solution SL-10; it is currently
+    misplaced among the main-medium ingredients. The primary stock section lists 100
+    mg. Reconstruct source-specific stock membership and the separately stated receiving
+    addition before claiming a final-medium concentration. SL-10 explicitly makes
+    up to 1000 ml, supporting the printed solid mass converted to g/L at this stock
+    stage only.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml",
+    "field_path": "ingredients[9].concentration", "stored_value": {"value": "0.1",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.1 g/L equals
+    the provider field for Trace element solution SL-10; it is currently misplaced
+    among the main-medium ingredients. The primary stock section lists 100 mg. Reconstruct
+    source-specific stock membership and the separately stated receiving addition
+    before claiming a final-medium concentration. SL-10 explicitly makes up to 1000
+    ml, supporting the printed solid mass converted to g/L at this stock stage only."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path":
+    "ingredients[9].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"},
+    "decision": "conflict", "rationale": "The stored 0.1 g/L equals the provider field
+    for Trace element solution SL-10; it is currently misplaced among the main-medium
+    ingredients. The primary stock section lists 100 mg. Reconstruct source-specific
+    stock membership and the separately stated receiving addition before claiming
+    a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting
+    the printed solid mass converted to g/L at this stock stage only."}, {"path":
+    "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[9].concentration",
+    "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "conflict", "rationale":
+    "The stored 0.1 g/L equals the provider field for Trace element solution SL-10;
+    it is currently misplaced among the main-medium ingredients. The primary stock
+    section lists 100 mg. Reconstruct source-specific stock membership and the separately
+    stated receiving addition before claiming a final-medium concentration. SL-10
+    explicitly makes up to 1000 ml, supporting the printed solid mass converted to
+    g/L at this stock stage only."}]}, {"quantity_id": "q11", "topic": "H3BO3 within
+    Trace element solution SL-10", "source": [{"evidence_id": "dsm691", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path":
+    "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 27-27; both pages visually checked", "quote": "   H3BO3                                                       6.00      mg"},
+    {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691",
+    "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[1].recipe[4]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\":
+    6,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.006,\n                        \"mmol_l\": 0.0970246,\n                        \"optional\":
+    0\n                    }"}], "decision": "conflict", "rationale": "The stored
+    0.006 g/L equals the provider field for Trace element solution SL-10; it is currently
+    misplaced among the main-medium ingredients. The primary stock section lists 6
+    mg. Reconstruct source-specific stock membership and the separately stated receiving
+    addition before claiming a final-medium concentration. SL-10 explicitly makes
+    up to 1000 ml, supporting the printed solid mass converted to g/L at this stock
+    stage only.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml",
+    "field_path": "ingredients[10].concentration", "stored_value": {"value": "0.006",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.006 g/L
+    equals the provider field for Trace element solution SL-10; it is currently misplaced
+    among the main-medium ingredients. The primary stock section lists 6 mg. Reconstruct
+    source-specific stock membership and the separately stated receiving addition
+    before claiming a final-medium concentration. SL-10 explicitly makes up to 1000
+    ml, supporting the printed solid mass converted to g/L at this stock stage only."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path":
+    "ingredients[10].concentration", "stored_value": {"value": "0.006", "unit": "G_PER_L"},
+    "decision": "conflict", "rationale": "The stored 0.006 g/L equals the provider
+    field for Trace element solution SL-10; it is currently misplaced among the main-medium
+    ingredients. The primary stock section lists 6 mg. Reconstruct source-specific
+    stock membership and the separately stated receiving addition before claiming
+    a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting
+    the printed solid mass converted to g/L at this stock stage only."}, {"path":
+    "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[10].concentration",
+    "stored_value": {"value": "0.006", "unit": "G_PER_L"}, "decision": "conflict",
+    "rationale": "The stored 0.006 g/L equals the provider field for Trace element
+    solution SL-10; it is currently misplaced among the main-medium ingredients. The
+    primary stock section lists 6 mg. Reconstruct source-specific stock membership
+    and the separately stated receiving addition before claiming a final-medium concentration.
+    SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted
+    to g/L at this stock stage only."}]}, {"quantity_id": "q12", "topic": "CoCl2 x
+    6 H2O within Trace element solution SL-10", "source": [{"evidence_id": "dsm691",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf",
+    "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 28-28; both pages visually checked", "quote": "   CoCl2 x 6 H2O                                             190.00      mg"},
+    {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691",
+    "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[1].recipe[5]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"CoCl2 x 6 H2O\",\n                        \"compound_id\": 38,\n                        \"amount\":
+    190,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.19,\n                        \"mmol_l\": 1.46335,\n                        \"optional\":
+    0\n                    }"}], "decision": "conflict", "rationale": "The stored
+    0.19 g/L equals the provider field for Trace element solution SL-10; it is currently
+    misplaced among the main-medium ingredients. The primary stock section lists 190
+    mg. Reconstruct source-specific stock membership and the separately stated receiving
+    addition before claiming a final-medium concentration. SL-10 explicitly makes
+    up to 1000 ml, supporting the printed solid mass converted to g/L at this stock
+    stage only.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml",
+    "field_path": "ingredients[11].concentration", "stored_value": {"value": "0.19",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.19 g/L
+    equals the provider field for Trace element solution SL-10; it is currently misplaced
+    among the main-medium ingredients. The primary stock section lists 190 mg. Reconstruct
+    source-specific stock membership and the separately stated receiving addition
+    before claiming a final-medium concentration. SL-10 explicitly makes up to 1000
+    ml, supporting the printed solid mass converted to g/L at this stock stage only."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path":
+    "ingredients[11].concentration", "stored_value": {"value": "0.19", "unit": "G_PER_L"},
+    "decision": "conflict", "rationale": "The stored 0.19 g/L equals the provider
+    field for Trace element solution SL-10; it is currently misplaced among the main-medium
+    ingredients. The primary stock section lists 190 mg. Reconstruct source-specific
+    stock membership and the separately stated receiving addition before claiming
+    a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting
+    the printed solid mass converted to g/L at this stock stage only."}, {"path":
+    "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[11].concentration",
+    "stored_value": {"value": "0.19", "unit": "G_PER_L"}, "decision": "conflict",
+    "rationale": "The stored 0.19 g/L equals the provider field for Trace element
+    solution SL-10; it is currently misplaced among the main-medium ingredients. The
+    primary stock section lists 190 mg. Reconstruct source-specific stock membership
+    and the separately stated receiving addition before claiming a final-medium concentration.
+    SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted
+    to g/L at this stock stage only."}]}, {"quantity_id": "q13", "topic": "CuCl2 x
+    2 H2O within Trace element solution SL-10", "source": [{"evidence_id": "dsm691",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf",
+    "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 29-29; both pages visually checked", "quote": "   CuCl2 x 2 H2O                                               2.00      mg"},
+    {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691",
+    "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[1].recipe[6]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"CuCl2 x 2 H2O\",\n                        \"compound_id\": 39,\n                        \"amount\":
+    2,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.002,\n                        \"mmol_l\": 0.0117314,\n                        \"optional\":
+    0\n                    }"}], "decision": "conflict", "rationale": "The stored
+    0.002 g/L equals the provider field for Trace element solution SL-10; it is currently
+    misplaced among the main-medium ingredients. The primary stock section lists 2
+    mg. Reconstruct source-specific stock membership and the separately stated receiving
+    addition before claiming a final-medium concentration. SL-10 explicitly makes
+    up to 1000 ml, supporting the printed solid mass converted to g/L at this stock
+    stage only.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml",
+    "field_path": "ingredients[12].concentration", "stored_value": {"value": "0.002",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.002 g/L
+    equals the provider field for Trace element solution SL-10; it is currently misplaced
+    among the main-medium ingredients. The primary stock section lists 2 mg. Reconstruct
+    source-specific stock membership and the separately stated receiving addition
+    before claiming a final-medium concentration. SL-10 explicitly makes up to 1000
+    ml, supporting the printed solid mass converted to g/L at this stock stage only."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path":
+    "ingredients[12].concentration", "stored_value": {"value": "0.002", "unit": "G_PER_L"},
+    "decision": "conflict", "rationale": "The stored 0.002 g/L equals the provider
+    field for Trace element solution SL-10; it is currently misplaced among the main-medium
+    ingredients. The primary stock section lists 2 mg. Reconstruct source-specific
+    stock membership and the separately stated receiving addition before claiming
+    a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting
+    the printed solid mass converted to g/L at this stock stage only."}, {"path":
+    "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[12].concentration",
+    "stored_value": {"value": "0.002", "unit": "G_PER_L"}, "decision": "conflict",
+    "rationale": "The stored 0.002 g/L equals the provider field for Trace element
+    solution SL-10; it is currently misplaced among the main-medium ingredients. The
+    primary stock section lists 2 mg. Reconstruct source-specific stock membership
+    and the separately stated receiving addition before claiming a final-medium concentration.
+    SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted
+    to g/L at this stock stage only."}]}, {"quantity_id": "q14", "topic": "NiCl2 x
+    6 H2O within Trace element solution SL-10", "source": [{"evidence_id": "dsm691",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf",
+    "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 30-30; both pages visually checked", "quote": "   NiCl2 x 6 H2O                                              24.00      mg"},
+    {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691",
+    "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[1].recipe[7]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"NiCl2 x 6 H2O\",\n                        \"compound_id\": 40,\n                        \"amount\":
+    24,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.024,\n                        \"mmol_l\": 0.185187,\n                        \"optional\":
+    0\n                    }"}], "decision": "conflict", "rationale": "The stored
+    0.024 g/L equals the provider field for Trace element solution SL-10; it is currently
+    misplaced among the main-medium ingredients. The primary stock section lists 24
+    mg. Reconstruct source-specific stock membership and the separately stated receiving
+    addition before claiming a final-medium concentration. SL-10 explicitly makes
+    up to 1000 ml, supporting the printed solid mass converted to g/L at this stock
+    stage only.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml",
+    "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.024",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.024 g/L
+    equals the provider field for Trace element solution SL-10; it is currently misplaced
+    among the main-medium ingredients. The primary stock section lists 24 mg. Reconstruct
+    source-specific stock membership and the separately stated receiving addition
+    before claiming a final-medium concentration. SL-10 explicitly makes up to 1000
+    ml, supporting the printed solid mass converted to g/L at this stock stage only."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path":
+    "ingredients[13].concentration", "stored_value": {"value": "0.024", "unit": "G_PER_L"},
+    "decision": "conflict", "rationale": "The stored 0.024 g/L equals the provider
+    field for Trace element solution SL-10; it is currently misplaced among the main-medium
+    ingredients. The primary stock section lists 24 mg. Reconstruct source-specific
+    stock membership and the separately stated receiving addition before claiming
+    a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting
+    the printed solid mass converted to g/L at this stock stage only."}, {"path":
+    "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[13].concentration",
+    "stored_value": {"value": "0.024", "unit": "G_PER_L"}, "decision": "conflict",
+    "rationale": "The stored 0.024 g/L equals the provider field for Trace element
+    solution SL-10; it is currently misplaced among the main-medium ingredients. The
+    primary stock section lists 24 mg. Reconstruct source-specific stock membership
+    and the separately stated receiving addition before claiming a final-medium concentration.
+    SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted
+    to g/L at this stock stage only."}]}, {"quantity_id": "q15", "topic": "Na2MoO4
+    x 2 H2O within Trace element solution SL-10", "source": [{"evidence_id": "dsm691",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf",
+    "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 31-31; both pages visually checked", "quote": "   Na2MoO4 x 2 H2O                                            36.00      mg"},
+    {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691",
+    "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[1].recipe[8]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\":
+    \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\":
+    36,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.036,\n                        \"mmol_l\": 0.148791,\n                        \"optional\":
+    0\n                    }"}], "decision": "conflict", "rationale": "The stored
+    0.036 g/L equals the provider field for Trace element solution SL-10; it is currently
+    misplaced among the main-medium ingredients. The primary stock section lists 36
+    mg. Reconstruct source-specific stock membership and the separately stated receiving
+    addition before claiming a final-medium concentration. SL-10 explicitly makes
+    up to 1000 ml, supporting the printed solid mass converted to g/L at this stock
+    stage only.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml",
+    "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.036",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.036 g/L
+    equals the provider field for Trace element solution SL-10; it is currently misplaced
+    among the main-medium ingredients. The primary stock section lists 36 mg. Reconstruct
+    source-specific stock membership and the separately stated receiving addition
+    before claiming a final-medium concentration. SL-10 explicitly makes up to 1000
+    ml, supporting the printed solid mass converted to g/L at this stock stage only."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path":
+    "ingredients[14].concentration", "stored_value": {"value": "0.036", "unit": "G_PER_L"},
+    "decision": "conflict", "rationale": "The stored 0.036 g/L equals the provider
+    field for Trace element solution SL-10; it is currently misplaced among the main-medium
+    ingredients. The primary stock section lists 36 mg. Reconstruct source-specific
+    stock membership and the separately stated receiving addition before claiming
+    a final-medium concentration. SL-10 explicitly makes up to 1000 ml, supporting
+    the printed solid mass converted to g/L at this stock stage only."}, {"path":
+    "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "ingredients[14].concentration",
+    "stored_value": {"value": "0.036", "unit": "G_PER_L"}, "decision": "conflict",
+    "rationale": "The stored 0.036 g/L equals the provider field for Trace element
+    solution SL-10; it is currently misplaced among the main-medium ingredients. The
+    primary stock section lists 36 mg. Reconstruct source-specific stock membership
+    and the separately stated receiving addition before claiming a final-medium concentration.
+    SL-10 explicitly makes up to 1000 ml, supporting the printed solid mass converted
+    to g/L at this stock stage only."}]}, {"quantity_id": "q16", "topic": "NaOH within
+    Selenite-tungstate solution", "source": [{"evidence_id": "dsm691", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path":
+    "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 40-40; both pages visually checked", "quote": "   NaOH                                                       0.50        g"},
+    {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691",
+    "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[2].recipe[0]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"NaOH\",\n                        \"compound_id\": 256,\n                        \"amount\":
+    0.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.5,\n                        \"mmol_l\": 12.5009,\n                        \"optional\":
+    0\n                    }"}], "decision": "conflict", "rationale": "The stored
+    0.5 g/L equals the provider field for Selenite-tungstate solution; it is currently
+    misplaced among the main-medium ingredients. The primary stock section lists 0.5
+    g. Reconstruct source-specific stock membership and the separately stated receiving
+    addition before claiming a final-medium concentration. This stock lists 1000 ml
+    water and the provider declares volume1000; the printed water quantity alone is
+    not an independently measured final stock volume.", "layer_assessments": [{"path":
+    "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[15].concentration",
+    "stored_value": {"value": "0.5", "unit": "G_PER_L"}, "decision": "conflict", "rationale":
+    "The stored 0.5 g/L equals the provider field for Selenite-tungstate solution;
+    it is currently misplaced among the main-medium ingredients. The primary stock
+    section lists 0.5 g. Reconstruct source-specific stock membership and the separately
+    stated receiving addition before claiming a final-medium concentration. This stock
+    lists 1000 ml water and the provider declares volume1000; the printed water quantity
+    alone is not an independently measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml",
+    "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.5",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.5 g/L equals
+    the provider field for Selenite-tungstate solution; it is currently misplaced
+    among the main-medium ingredients. The primary stock section lists 0.5 g. Reconstruct
+    source-specific stock membership and the separately stated receiving addition
+    before claiming a final-medium concentration. This stock lists 1000 ml water and
+    the provider declares volume1000; the printed water quantity alone is not an independently
+    measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml",
+    "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.5",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.5 g/L equals
+    the provider field for Selenite-tungstate solution; it is currently misplaced
+    among the main-medium ingredients. The primary stock section lists 0.5 g. Reconstruct
+    source-specific stock membership and the separately stated receiving addition
+    before claiming a final-medium concentration. This stock lists 1000 ml water and
+    the provider declares volume1000; the printed water quantity alone is not an independently
+    measured final stock volume."}]}, {"quantity_id": "q17", "topic": "Na2SeO3 x 5
+    H2O within Selenite-tungstate solution", "source": [{"evidence_id": "dsm691",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf",
+    "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 41-41; both pages visually checked", "quote": "   Na2SeO3 x 5 H2O                                            3.00       mg"},
+    {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691",
+    "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[2].recipe[1]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Na2SeO3 x 5 H2O\",\n                        \"compound_id\": 107,\n                        \"amount\":
+    3,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.003,\n                        \"mmol_l\": 0.0114062,\n                        \"optional\":
+    0\n                    }"}], "decision": "conflict", "rationale": "The stored
+    0.003 g/L equals the provider field for Selenite-tungstate solution; it is currently
+    misplaced among the main-medium ingredients. The primary stock section lists 3
+    mg. Reconstruct source-specific stock membership and the separately stated receiving
+    addition before claiming a final-medium concentration. This stock lists 1000 ml
+    water and the provider declares volume1000; the printed water quantity alone is
+    not an independently measured final stock volume.", "layer_assessments": [{"path":
+    "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[16].concentration",
+    "stored_value": {"value": "0.003", "unit": "G_PER_L"}, "decision": "conflict",
+    "rationale": "The stored 0.003 g/L equals the provider field for Selenite-tungstate
+    solution; it is currently misplaced among the main-medium ingredients. The primary
+    stock section lists 3 mg. Reconstruct source-specific stock membership and the
+    separately stated receiving addition before claiming a final-medium concentration.
+    This stock lists 1000 ml water and the provider declares volume1000; the printed
+    water quantity alone is not an independently measured final stock volume."}, {"path":
+    "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path":
+    "ingredients[16].concentration", "stored_value": {"value": "0.003", "unit": "G_PER_L"},
+    "decision": "conflict", "rationale": "The stored 0.003 g/L equals the provider
+    field for Selenite-tungstate solution; it is currently misplaced among the main-medium
+    ingredients. The primary stock section lists 3 mg. Reconstruct source-specific
+    stock membership and the separately stated receiving addition before claiming
+    a final-medium concentration. This stock lists 1000 ml water and the provider
+    declares volume1000; the printed water quantity alone is not an independently
+    measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml",
+    "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.003",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.003 g/L
+    equals the provider field for Selenite-tungstate solution; it is currently misplaced
+    among the main-medium ingredients. The primary stock section lists 3 mg. Reconstruct
+    source-specific stock membership and the separately stated receiving addition
+    before claiming a final-medium concentration. This stock lists 1000 ml water and
+    the provider declares volume1000; the printed water quantity alone is not an independently
+    measured final stock volume."}]}, {"quantity_id": "q18", "topic": "Na2WO4 x 2
+    H2O within Selenite-tungstate solution", "source": [{"evidence_id": "dsm691",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf",
+    "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 42-42; both pages visually checked", "quote": "   Na2WO4 x 2 H2O                                             4.00       mg"},
+    {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691",
+    "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[2].recipe[2]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"Na2WO4 x 2 H2O\",\n                        \"compound_id\": 249,\n                        \"amount\":
+    4,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.004,\n                        \"mmol_l\": 0.0121267,\n                        \"optional\":
+    0\n                    }"}], "decision": "conflict", "rationale": "The stored
+    0.004 g/L equals the provider field for Selenite-tungstate solution; it is currently
+    misplaced among the main-medium ingredients. The primary stock section lists 4
+    mg. Reconstruct source-specific stock membership and the separately stated receiving
+    addition before claiming a final-medium concentration. This stock lists 1000 ml
+    water and the provider declares volume1000; the printed water quantity alone is
+    not an independently measured final stock volume.", "layer_assessments": [{"path":
+    "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[17].concentration",
+    "stored_value": {"value": "0.004", "unit": "G_PER_L"}, "decision": "conflict",
+    "rationale": "The stored 0.004 g/L equals the provider field for Selenite-tungstate
+    solution; it is currently misplaced among the main-medium ingredients. The primary
+    stock section lists 4 mg. Reconstruct source-specific stock membership and the
+    separately stated receiving addition before claiming a final-medium concentration.
+    This stock lists 1000 ml water and the provider declares volume1000; the printed
+    water quantity alone is not an independently measured final stock volume."}, {"path":
+    "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path":
+    "ingredients[17].concentration", "stored_value": {"value": "0.004", "unit": "G_PER_L"},
+    "decision": "conflict", "rationale": "The stored 0.004 g/L equals the provider
+    field for Selenite-tungstate solution; it is currently misplaced among the main-medium
+    ingredients. The primary stock section lists 4 mg. Reconstruct source-specific
+    stock membership and the separately stated receiving addition before claiming
+    a final-medium concentration. This stock lists 1000 ml water and the provider
+    declares volume1000; the printed water quantity alone is not an independently
+    measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml",
+    "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.004",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.004 g/L
+    equals the provider field for Selenite-tungstate solution; it is currently misplaced
+    among the main-medium ingredients. The primary stock section lists 4 mg. Reconstruct
+    source-specific stock membership and the separately stated receiving addition
+    before claiming a final-medium concentration. This stock lists 1000 ml water and
+    the provider declares volume1000; the printed water quantity alone is not an independently
+    measured final stock volume."}]}, {"quantity_id": "q19", "topic": "Biotin within
+    Wolin''s vitamin solution (10x)", "source": [{"evidence_id": "dsm691", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path":
+    "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 47-47; both pages visually checked", "quote": "   Biotin                                                     20.00      mg"},
+    {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691",
+    "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[3].recipe[0]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"Biotin\",\n                        \"compound_id\": 46,\n                        \"amount\":
+    20,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.02,\n                        \"mmol_l\": 0.0818632,\n                        \"optional\":
+    0\n                    }"}], "decision": "conflict", "rationale": "The stored
+    0.02 g/L equals the provider field for Wolin''s vitamin solution (10x); it is
+    currently misplaced among the main-medium ingredients. The primary stock section
+    lists 20 mg. Reconstruct source-specific stock membership and the separately stated
+    receiving addition before claiming a final-medium concentration. This stock lists
+    1000 ml water and the provider declares volume1000; the printed water quantity
+    alone is not an independently measured final stock volume.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[18].concentration",
+    "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "conflict",
+    "rationale": "The stored 0.02 g/L equals the provider field for Wolin''s vitamin
+    solution (10x); it is currently misplaced among the main-medium ingredients. The
+    primary stock section lists 20 mg. Reconstruct source-specific stock membership
+    and the separately stated receiving addition before claiming a final-medium concentration.
+    This stock lists 1000 ml water and the provider declares volume1000; the printed
+    water quantity alone is not an independently measured final stock volume."}, {"path":
+    "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path":
+    "ingredients[18].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"},
+    "decision": "conflict", "rationale": "The stored 0.02 g/L equals the provider
+    field for Wolin''s vitamin solution (10x); it is currently misplaced among the
+    main-medium ingredients. The primary stock section lists 20 mg. Reconstruct source-specific
+    stock membership and the separately stated receiving addition before claiming
+    a final-medium concentration. This stock lists 1000 ml water and the provider
+    declares volume1000; the printed water quantity alone is not an independently
+    measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml",
+    "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.02 g/L
+    equals the provider field for Wolin''s vitamin solution (10x); it is currently
+    misplaced among the main-medium ingredients. The primary stock section lists 20
+    mg. Reconstruct source-specific stock membership and the separately stated receiving
+    addition before claiming a final-medium concentration. This stock lists 1000 ml
+    water and the provider declares volume1000; the printed water quantity alone is
+    not an independently measured final stock volume."}]}, {"quantity_id": "q20",
+    "topic": "Folic acid within Wolin''s vitamin solution (10x)", "source": [{"evidence_id":
+    "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf",
+    "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 55-55; both pages visually checked", "quote": "   Folic acid                         20.00   mg"},
+    {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691",
+    "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[3].recipe[1]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Folic acid\",\n                        \"compound_id\": 138,\n                        \"amount\":
+    20,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.02,\n                        \"mmol_l\": 0.0453104,\n                        \"optional\":
+    0\n                    }"}], "decision": "conflict", "rationale": "The stored
+    0.02 g/L equals the provider field for Wolin''s vitamin solution (10x); it is
+    currently misplaced among the main-medium ingredients. The primary stock section
+    lists 20 mg. Reconstruct source-specific stock membership and the separately stated
+    receiving addition before claiming a final-medium concentration. This stock lists
+    1000 ml water and the provider declares volume1000; the printed water quantity
+    alone is not an independently measured final stock volume.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[19].concentration",
+    "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "conflict",
+    "rationale": "The stored 0.02 g/L equals the provider field for Wolin''s vitamin
+    solution (10x); it is currently misplaced among the main-medium ingredients. The
+    primary stock section lists 20 mg. Reconstruct source-specific stock membership
+    and the separately stated receiving addition before claiming a final-medium concentration.
+    This stock lists 1000 ml water and the provider declares volume1000; the printed
+    water quantity alone is not an independently measured final stock volume."}, {"path":
+    "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path":
+    "ingredients[19].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"},
+    "decision": "conflict", "rationale": "The stored 0.02 g/L equals the provider
+    field for Wolin''s vitamin solution (10x); it is currently misplaced among the
+    main-medium ingredients. The primary stock section lists 20 mg. Reconstruct source-specific
+    stock membership and the separately stated receiving addition before claiming
+    a final-medium concentration. This stock lists 1000 ml water and the provider
+    declares volume1000; the printed water quantity alone is not an independently
+    measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml",
+    "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.02 g/L
+    equals the provider field for Wolin''s vitamin solution (10x); it is currently
+    misplaced among the main-medium ingredients. The primary stock section lists 20
+    mg. Reconstruct source-specific stock membership and the separately stated receiving
+    addition before claiming a final-medium concentration. This stock lists 1000 ml
+    water and the provider declares volume1000; the printed water quantity alone is
+    not an independently measured final stock volume."}]}, {"quantity_id": "q21",
+    "topic": "Pyridoxine hydrochloride within Wolin''s vitamin solution (10x)", "source":
+    [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf",
+    "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 56-56; both pages visually checked", "quote": "   Pyridoxine hydrochloride          100.00   mg"},
+    {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691",
+    "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[3].recipe[2]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"Pyridoxine hydrochloride\",\n                        \"compound_id\": 519,\n                        \"amount\":
+    100,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.1,\n                        \"mmol_l\": 0.486287,\n                        \"optional\":
+    0\n                    }"}], "decision": "conflict", "rationale": "The stored
+    0.1 g/L equals the provider field for Wolin''s vitamin solution (10x); it is currently
+    misplaced among the main-medium ingredients. The primary stock section lists 100
+    mg. Reconstruct source-specific stock membership and the separately stated receiving
+    addition before claiming a final-medium concentration. This stock lists 1000 ml
+    water and the provider declares volume1000; the printed water quantity alone is
+    not an independently measured final stock volume.", "layer_assessments": [{"path":
+    "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[20].concentration",
+    "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "conflict", "rationale":
+    "The stored 0.1 g/L equals the provider field for Wolin''s vitamin solution (10x);
+    it is currently misplaced among the main-medium ingredients. The primary stock
+    section lists 100 mg. Reconstruct source-specific stock membership and the separately
+    stated receiving addition before claiming a final-medium concentration. This stock
+    lists 1000 ml water and the provider declares volume1000; the printed water quantity
+    alone is not an independently measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml",
+    "field_path": "ingredients[20].concentration", "stored_value": {"value": "0.1",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.1 g/L equals
+    the provider field for Wolin''s vitamin solution (10x); it is currently misplaced
+    among the main-medium ingredients. The primary stock section lists 100 mg. Reconstruct
+    source-specific stock membership and the separately stated receiving addition
+    before claiming a final-medium concentration. This stock lists 1000 ml water and
+    the provider declares volume1000; the printed water quantity alone is not an independently
+    measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml",
+    "field_path": "ingredients[20].concentration", "stored_value": {"value": "0.1",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.1 g/L equals
+    the provider field for Wolin''s vitamin solution (10x); it is currently misplaced
+    among the main-medium ingredients. The primary stock section lists 100 mg. Reconstruct
+    source-specific stock membership and the separately stated receiving addition
+    before claiming a final-medium concentration. This stock lists 1000 ml water and
+    the provider declares volume1000; the printed water quantity alone is not an independently
+    measured final stock volume."}]}, {"quantity_id": "q22", "topic": "Thiamine HCl
+    within Wolin''s vitamin solution (10x)", "source": [{"evidence_id": "dsm691",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf",
+    "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 57-57; both pages visually checked", "quote": "   Thiamine HCl                       50.00   mg"},
+    {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691",
+    "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[3].recipe[3]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"Thiamine HCl\",\n                        \"compound_id\": 1207,\n                        \"amount\":
+    50,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.05,\n                        \"mmol_l\": 0.148236,\n                        \"optional\":
+    0\n                    }"}], "decision": "conflict", "rationale": "The stored
+    0.05 g/L equals the provider field for Wolin''s vitamin solution (10x); it is
+    currently misplaced among the main-medium ingredients. The primary stock section
+    lists 50 mg. Reconstruct source-specific stock membership and the separately stated
+    receiving addition before claiming a final-medium concentration. This stock lists
+    1000 ml water and the provider declares volume1000; the printed water quantity
+    alone is not an independently measured final stock volume.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[21].concentration",
+    "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict",
+    "rationale": "The stored 0.05 g/L equals the provider field for Wolin''s vitamin
+    solution (10x); it is currently misplaced among the main-medium ingredients. The
+    primary stock section lists 50 mg. Reconstruct source-specific stock membership
+    and the separately stated receiving addition before claiming a final-medium concentration.
+    This stock lists 1000 ml water and the provider declares volume1000; the printed
+    water quantity alone is not an independently measured final stock volume."}, {"path":
+    "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path":
+    "ingredients[21].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"},
+    "decision": "conflict", "rationale": "The stored 0.05 g/L equals the provider
+    field for Wolin''s vitamin solution (10x); it is currently misplaced among the
+    main-medium ingredients. The primary stock section lists 50 mg. Reconstruct source-specific
+    stock membership and the separately stated receiving addition before claiming
+    a final-medium concentration. This stock lists 1000 ml water and the provider
+    declares volume1000; the printed water quantity alone is not an independently
+    measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml",
+    "field_path": "ingredients[21].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.05 g/L
+    equals the provider field for Wolin''s vitamin solution (10x); it is currently
+    misplaced among the main-medium ingredients. The primary stock section lists 50
+    mg. Reconstruct source-specific stock membership and the separately stated receiving
+    addition before claiming a final-medium concentration. This stock lists 1000 ml
+    water and the provider declares volume1000; the printed water quantity alone is
+    not an independently measured final stock volume."}]}, {"quantity_id": "q23",
+    "topic": "Riboflavin within Wolin''s vitamin solution (10x)", "source": [{"evidence_id":
+    "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf",
+    "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 58-58; both pages visually checked", "quote": "   Riboflavin                         50.00   mg"},
+    {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691",
+    "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[3].recipe[4]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"Riboflavin\",\n                        \"compound_id\": 136,\n                        \"amount\":
+    50,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.05,\n                        \"mmol_l\": 0.132837,\n                        \"optional\":
+    0\n                    }"}], "decision": "conflict", "rationale": "The stored
+    0.05 g/L equals the provider field for Wolin''s vitamin solution (10x); it is
+    currently misplaced among the main-medium ingredients. The primary stock section
+    lists 50 mg. Reconstruct source-specific stock membership and the separately stated
+    receiving addition before claiming a final-medium concentration. This stock lists
+    1000 ml water and the provider declares volume1000; the printed water quantity
+    alone is not an independently measured final stock volume.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[22].concentration",
+    "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict",
+    "rationale": "The stored 0.05 g/L equals the provider field for Wolin''s vitamin
+    solution (10x); it is currently misplaced among the main-medium ingredients. The
+    primary stock section lists 50 mg. Reconstruct source-specific stock membership
+    and the separately stated receiving addition before claiming a final-medium concentration.
+    This stock lists 1000 ml water and the provider declares volume1000; the printed
+    water quantity alone is not an independently measured final stock volume."}, {"path":
+    "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path":
+    "ingredients[22].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"},
+    "decision": "conflict", "rationale": "The stored 0.05 g/L equals the provider
+    field for Wolin''s vitamin solution (10x); it is currently misplaced among the
+    main-medium ingredients. The primary stock section lists 50 mg. Reconstruct source-specific
+    stock membership and the separately stated receiving addition before claiming
+    a final-medium concentration. This stock lists 1000 ml water and the provider
+    declares volume1000; the printed water quantity alone is not an independently
+    measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml",
+    "field_path": "ingredients[22].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.05 g/L
+    equals the provider field for Wolin''s vitamin solution (10x); it is currently
+    misplaced among the main-medium ingredients. The primary stock section lists 50
+    mg. Reconstruct source-specific stock membership and the separately stated receiving
+    addition before claiming a final-medium concentration. This stock lists 1000 ml
+    water and the provider declares volume1000; the printed water quantity alone is
+    not an independently measured final stock volume."}]}, {"quantity_id": "q24",
+    "topic": "Nicotinic acid within Wolin''s vitamin solution (10x)", "source": [{"evidence_id":
+    "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf",
+    "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 59-59; both pages visually checked", "quote": "   Nicotinic acid                     50.00   mg"},
+    {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691",
+    "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[3].recipe[5]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"Nicotinic acid\",\n                        \"compound_id\": 139,\n                        \"amount\":
+    50,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.05,\n                        \"mmol_l\": 0.406141,\n                        \"optional\":
+    0\n                    }"}], "decision": "conflict", "rationale": "The stored
+    0.05 g/L equals the provider field for Wolin''s vitamin solution (10x); it is
+    currently misplaced among the main-medium ingredients. The primary stock section
+    lists 50 mg. Reconstruct source-specific stock membership and the separately stated
+    receiving addition before claiming a final-medium concentration. This stock lists
+    1000 ml water and the provider declares volume1000; the printed water quantity
+    alone is not an independently measured final stock volume.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[23].concentration",
+    "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict",
+    "rationale": "The stored 0.05 g/L equals the provider field for Wolin''s vitamin
+    solution (10x); it is currently misplaced among the main-medium ingredients. The
+    primary stock section lists 50 mg. Reconstruct source-specific stock membership
+    and the separately stated receiving addition before claiming a final-medium concentration.
+    This stock lists 1000 ml water and the provider declares volume1000; the printed
+    water quantity alone is not an independently measured final stock volume."}, {"path":
+    "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path":
+    "ingredients[23].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"},
+    "decision": "conflict", "rationale": "The stored 0.05 g/L equals the provider
+    field for Wolin''s vitamin solution (10x); it is currently misplaced among the
+    main-medium ingredients. The primary stock section lists 50 mg. Reconstruct source-specific
+    stock membership and the separately stated receiving addition before claiming
+    a final-medium concentration. This stock lists 1000 ml water and the provider
+    declares volume1000; the printed water quantity alone is not an independently
+    measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml",
+    "field_path": "ingredients[23].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.05 g/L
+    equals the provider field for Wolin''s vitamin solution (10x); it is currently
+    misplaced among the main-medium ingredients. The primary stock section lists 50
+    mg. Reconstruct source-specific stock membership and the separately stated receiving
+    addition before claiming a final-medium concentration. This stock lists 1000 ml
+    water and the provider declares volume1000; the printed water quantity alone is
+    not an independently measured final stock volume."}]}, {"quantity_id": "q25",
+    "topic": "Calcium D-(+)-pantothenate within Wolin''s vitamin solution (10x)",
+    "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf",
+    "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 60-60; both pages visually checked", "quote": "   Calcium D-(+)-pantothenate         50.00   mg"},
+    {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691",
+    "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[3].recipe[6]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"Calcium D-(+)-pantothenate\",\n                        \"compound_id\": 1512,\n                        \"amount\":
+    50,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.05,\n                        \"mmol_l\": 0.209846,\n                        \"optional\":
+    0\n                    }"}], "decision": "conflict", "rationale": "The stored
+    0.05 g/L equals the provider field for Wolin''s vitamin solution (10x); it is
+    currently misplaced among the main-medium ingredients. The primary stock section
+    lists 50 mg. Reconstruct source-specific stock membership and the separately stated
+    receiving addition before claiming a final-medium concentration. This stock lists
+    1000 ml water and the provider declares volume1000; the printed water quantity
+    alone is not an independently measured final stock volume.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[24].concentration",
+    "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict",
+    "rationale": "The stored 0.05 g/L equals the provider field for Wolin''s vitamin
+    solution (10x); it is currently misplaced among the main-medium ingredients. The
+    primary stock section lists 50 mg. Reconstruct source-specific stock membership
+    and the separately stated receiving addition before claiming a final-medium concentration.
+    This stock lists 1000 ml water and the provider declares volume1000; the printed
+    water quantity alone is not an independently measured final stock volume."}, {"path":
+    "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path":
+    "ingredients[24].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"},
+    "decision": "conflict", "rationale": "The stored 0.05 g/L equals the provider
+    field for Wolin''s vitamin solution (10x); it is currently misplaced among the
+    main-medium ingredients. The primary stock section lists 50 mg. Reconstruct source-specific
+    stock membership and the separately stated receiving addition before claiming
+    a final-medium concentration. This stock lists 1000 ml water and the provider
+    declares volume1000; the printed water quantity alone is not an independently
+    measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml",
+    "field_path": "ingredients[24].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.05 g/L
+    equals the provider field for Wolin''s vitamin solution (10x); it is currently
+    misplaced among the main-medium ingredients. The primary stock section lists 50
+    mg. Reconstruct source-specific stock membership and the separately stated receiving
+    addition before claiming a final-medium concentration. This stock lists 1000 ml
+    water and the provider declares volume1000; the printed water quantity alone is
+    not an independently measured final stock volume."}]}, {"quantity_id": "q26",
+    "topic": "Vitamin B12 within Wolin''s vitamin solution (10x)", "source": [{"evidence_id":
+    "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf",
+    "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 61-61; both pages visually checked", "quote": "   Vitamin B12                         1.00   mg"},
+    {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691",
+    "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[3].recipe[7]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"Vitamin B12\",\n                        \"compound_id\": 18,\n                        \"amount\":
+    1,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.001,\n                        \"mmol_l\": 0.00073779,\n                        \"optional\":
+    0\n                    }"}], "decision": "conflict", "rationale": "The stored
+    0.001 g/L equals the provider field for Wolin''s vitamin solution (10x); it is
+    currently misplaced among the main-medium ingredients. The primary stock section
+    lists 1 mg. Reconstruct source-specific stock membership and the separately stated
+    receiving addition before claiming a final-medium concentration. This stock lists
+    1000 ml water and the provider declares volume1000; the printed water quantity
+    alone is not an independently measured final stock volume.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[25].concentration",
+    "stored_value": {"value": "0.001", "unit": "G_PER_L"}, "decision": "conflict",
+    "rationale": "The stored 0.001 g/L equals the provider field for Wolin''s vitamin
+    solution (10x); it is currently misplaced among the main-medium ingredients. The
+    primary stock section lists 1 mg. Reconstruct source-specific stock membership
+    and the separately stated receiving addition before claiming a final-medium concentration.
+    This stock lists 1000 ml water and the provider declares volume1000; the printed
+    water quantity alone is not an independently measured final stock volume."}, {"path":
+    "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path":
+    "ingredients[25].concentration", "stored_value": {"value": "0.001", "unit": "G_PER_L"},
+    "decision": "conflict", "rationale": "The stored 0.001 g/L equals the provider
+    field for Wolin''s vitamin solution (10x); it is currently misplaced among the
+    main-medium ingredients. The primary stock section lists 1 mg. Reconstruct source-specific
+    stock membership and the separately stated receiving addition before claiming
+    a final-medium concentration. This stock lists 1000 ml water and the provider
+    declares volume1000; the printed water quantity alone is not an independently
+    measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml",
+    "field_path": "ingredients[25].concentration", "stored_value": {"value": "0.001",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.001 g/L
+    equals the provider field for Wolin''s vitamin solution (10x); it is currently
+    misplaced among the main-medium ingredients. The primary stock section lists 1
+    mg. Reconstruct source-specific stock membership and the separately stated receiving
+    addition before claiming a final-medium concentration. This stock lists 1000 ml
+    water and the provider declares volume1000; the printed water quantity alone is
+    not an independently measured final stock volume."}]}, {"quantity_id": "q27",
+    "topic": "p-Aminobenzoic acid within Wolin''s vitamin solution (10x)", "source":
+    [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf",
+    "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 62-62; both pages visually checked", "quote": "   p-Aminobenzoic acid                50.00   mg"},
+    {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691",
+    "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[3].recipe[8]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\":
+    \"p-Aminobenzoic acid\",\n                        \"compound_id\": 47,\n                        \"amount\":
+    50,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.05,\n                        \"mmol_l\": 0.364591,\n                        \"optional\":
+    0\n                    }"}], "decision": "conflict", "rationale": "The stored
+    0.05 g/L equals the provider field for Wolin''s vitamin solution (10x); it is
+    currently misplaced among the main-medium ingredients. The primary stock section
+    lists 50 mg. Reconstruct source-specific stock membership and the separately stated
+    receiving addition before claiming a final-medium concentration. This stock lists
+    1000 ml water and the provider declares volume1000; the printed water quantity
+    alone is not an independently measured final stock volume.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[26].concentration",
+    "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict",
+    "rationale": "The stored 0.05 g/L equals the provider field for Wolin''s vitamin
+    solution (10x); it is currently misplaced among the main-medium ingredients. The
+    primary stock section lists 50 mg. Reconstruct source-specific stock membership
+    and the separately stated receiving addition before claiming a final-medium concentration.
+    This stock lists 1000 ml water and the provider declares volume1000; the printed
+    water quantity alone is not an independently measured final stock volume."}, {"path":
+    "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path":
+    "ingredients[26].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"},
+    "decision": "conflict", "rationale": "The stored 0.05 g/L equals the provider
+    field for Wolin''s vitamin solution (10x); it is currently misplaced among the
+    main-medium ingredients. The primary stock section lists 50 mg. Reconstruct source-specific
+    stock membership and the separately stated receiving addition before claiming
+    a final-medium concentration. This stock lists 1000 ml water and the provider
+    declares volume1000; the printed water quantity alone is not an independently
+    measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml",
+    "field_path": "ingredients[26].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.05 g/L
+    equals the provider field for Wolin''s vitamin solution (10x); it is currently
+    misplaced among the main-medium ingredients. The primary stock section lists 50
+    mg. Reconstruct source-specific stock membership and the separately stated receiving
+    addition before claiming a final-medium concentration. This stock lists 1000 ml
+    water and the provider declares volume1000; the printed water quantity alone is
+    not an independently measured final stock volume."}]}, {"quantity_id": "q28",
+    "topic": "(DL)-alpha-Lipoic acid within Wolin''s vitamin solution (10x)", "source":
+    [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf",
+    "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 63-63; both pages visually checked", "quote": "   (DL)-alpha-Lipoic acid             50.00   mg"},
+    {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691",
+    "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[3].recipe[9]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\":
+    \"(DL)-alpha-Lipoic acid\",\n                        \"compound_id\": 252,\n                        \"amount\":
+    50,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.05,\n                        \"mmol_l\": 0.24233,\n                        \"optional\":
+    0\n                    }"}], "decision": "conflict", "rationale": "The stored
+    0.05 g/L equals the provider field for Wolin''s vitamin solution (10x); it is
+    currently misplaced among the main-medium ingredients. The primary stock section
+    lists 50 mg. Reconstruct source-specific stock membership and the separately stated
+    receiving addition before claiming a final-medium concentration. This stock lists
+    1000 ml water and the provider declares volume1000; the printed water quantity
+    alone is not an independently measured final stock volume.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ingredients[27].concentration",
+    "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict",
+    "rationale": "The stored 0.05 g/L equals the provider field for Wolin''s vitamin
+    solution (10x); it is currently misplaced among the main-medium ingredients. The
+    primary stock section lists 50 mg. Reconstruct source-specific stock membership
+    and the separately stated receiving addition before claiming a final-medium concentration.
+    This stock lists 1000 ml water and the provider declares volume1000; the printed
+    water quantity alone is not an independently measured final stock volume."}, {"path":
+    "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml", "field_path":
+    "ingredients[27].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"},
+    "decision": "conflict", "rationale": "The stored 0.05 g/L equals the provider
+    field for Wolin''s vitamin solution (10x); it is currently misplaced among the
+    main-medium ingredients. The primary stock section lists 50 mg. Reconstruct source-specific
+    stock membership and the separately stated receiving addition before claiming
+    a final-medium concentration. This stock lists 1000 ml water and the provider
+    declares volume1000; the printed water quantity alone is not an independently
+    measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml",
+    "field_path": "ingredients[27].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "The stored 0.05 g/L
+    equals the provider field for Wolin''s vitamin solution (10x); it is currently
+    misplaced among the main-medium ingredients. The primary stock section lists 50
+    mg. Reconstruct source-specific stock membership and the separately stated receiving
+    addition before claiming a final-medium concentration. This stock lists 1000 ml
+    water and the provider declares volume1000; the printed water quantity alone is
+    not an independently measured final stock volume."}]}, {"quantity_id": "q29",
+    "topic": "Trace element solution SL-10 receiving addition", "source": [{"evidence_id":
+    "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf",
+    "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 7-7; both pages visually checked", "quote": "   Trace element solution
+    SL-10                               1.00        ml"}, {"evidence_id": "mediadive691",
+    "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw",
+    "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[0].recipe[4]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"recipe_order\": 5,\n                        \"solution\":
+    \"Trace element solution SL-10\",\n                        \"solution_id\": 595,\n                        \"amount\":
+    1,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}], "decision": "add", "rationale": "The primary source
+    adds 1 ml of Trace element solution SL-10 per receiving batch. Preserve this absolute
+    addition (1 ml = 0.001 L) with its exact source-specific stock identity. It is
+    neither 1 g/L nor an automatically validated dose per final liter.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "solutions",
+    "stored_value": null, "decision": "add", "rationale": "The primary source adds
+    1 ml of Trace element solution SL-10 per receiving batch. Preserve this absolute
+    addition (1 ml = 0.001 L) with its exact source-specific stock identity. It is
+    neither 1 g/L nor an automatically validated dose per final liter.", "missing":
+    true}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "The primary source adds 1 ml of Trace element solution SL-10 per receiving batch.
+    Preserve this absolute addition (1 ml = 0.001 L) with its exact source-specific
+    stock identity. It is neither 1 g/L nor an automatically validated dose per final
+    liter.", "missing": true}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "The primary source adds 1 ml of Trace element solution SL-10 per receiving batch.
+    Preserve this absolute addition (1 ml = 0.001 L) with its exact source-specific
+    stock identity. It is neither 1 g/L nor an automatically validated dose per final
+    liter.", "missing": true}]}, {"quantity_id": "q30", "topic": "Selenite-tungstate
+    solution receiving addition", "source": [{"evidence_id": "dsm691", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path":
+    "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 8-8; both pages visually checked", "quote": "   Selenite-tungstate solution                                1.00        ml"},
+    {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691",
+    "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[0].recipe[5]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"recipe_order\": 6,\n                        \"solution\":
+    \"Selenite-tungstate solution\",\n                        \"solution_id\": 777,\n                        \"amount\":
+    1,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}], "decision": "add", "rationale": "The primary source
+    adds 1 ml of Selenite-tungstate solution per receiving batch. Preserve this absolute
+    addition (1 ml = 0.001 L) with its exact source-specific stock identity. It is
+    neither 1 g/L nor an automatically validated dose per final liter.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "solutions",
+    "stored_value": null, "decision": "add", "rationale": "The primary source adds
+    1 ml of Selenite-tungstate solution per receiving batch. Preserve this absolute
+    addition (1 ml = 0.001 L) with its exact source-specific stock identity. It is
+    neither 1 g/L nor an automatically validated dose per final liter.", "missing":
+    true}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "The primary source adds 1 ml of Selenite-tungstate solution per receiving batch.
+    Preserve this absolute addition (1 ml = 0.001 L) with its exact source-specific
+    stock identity. It is neither 1 g/L nor an automatically validated dose per final
+    liter.", "missing": true}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "The primary source adds 1 ml of Selenite-tungstate solution per receiving batch.
+    Preserve this absolute addition (1 ml = 0.001 L) with its exact source-specific
+    stock identity. It is neither 1 g/L nor an automatically validated dose per final
+    liter.", "missing": true}]}, {"quantity_id": "q31", "topic": "Wolin''s vitamin
+    solution (10x) receiving addition", "source": [{"evidence_id": "dsm691", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path":
+    "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 11-11; both pages visually checked", "quote": "   Wolin''s vitamin solution
+    (10x)                             1.00        ml"}, {"evidence_id": "mediadive691",
+    "reference": "https://mediadive.dsmz.de/rest/medium/691", "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw",
+    "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[0].recipe[8]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"recipe_order\": 9,\n                        \"solution\":
+    \"Wolin''s vitamin solution (10x)\",\n                        \"solution_id\":
+    5980,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}], "decision":
+    "add", "rationale": "The primary source adds 1 ml of Wolin''s vitamin solution
+    (10x) per receiving batch. Preserve this absolute addition (1 ml = 0.001 L) with
+    its exact source-specific stock identity. It is neither 1 g/L nor an automatically
+    validated dose per final liter.", "layer_assessments": [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "The primary source adds 1 ml of Wolin''s vitamin solution (10x) per receiving
+    batch. Preserve this absolute addition (1 ml = 0.001 L) with its exact source-specific
+    stock identity. It is neither 1 g/L nor an automatically validated dose per final
+    liter.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "The primary source adds 1 ml of Wolin''s vitamin solution (10x) per receiving
+    batch. Preserve this absolute addition (1 ml = 0.001 L) with its exact source-specific
+    stock identity. It is neither 1 g/L nor an automatically validated dose per final
+    liter.", "missing": true}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "The primary source adds 1 ml of Wolin''s vitamin solution (10x) per receiving
+    batch. Preserve this absolute addition (1 ml = 0.001 L) with its exact source-specific
+    stock identity. It is neither 1 g/L nor an automatically validated dose per final
+    liter.", "missing": true}]}, {"quantity_id": "q32", "topic": "Main input water",
+    "source": [{"evidence_id": "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf",
+    "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 12-12; both pages visually checked", "quote": "   Distilled water                                         1000.00        ml"},
+    {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691",
+    "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[0].recipe[9]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    1000,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}], "decision": "add", "rationale": "The printed 1000
+    ml distilled water is an input quantity. Preserve it in preparation context; do
+    not assign water a mass concentration or infer final volume 1003 ml merely by
+    adding the three stock inputs.", "layer_assessments": []}, {"quantity_id": "q33",
+    "topic": "Trace element solution SL-10 solvent", "source": [{"evidence_id": "dsm691",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf",
+    "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 32-32; both pages visually checked", "quote": "   Distilled water                                           990.00      ml"},
+    {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691",
+    "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[1].recipe[9]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    990,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}], "decision": "add", "rationale": "Retain the exact
+    stock-stage input water separately from the receiving medium. SL-10 has an additional
+    explicit final make-up instruction; the other two stocks provide input water and
+    provider metadata only.", "layer_assessments": []}, {"quantity_id": "q34", "topic":
+    "Selenite-tungstate solution solvent", "source": [{"evidence_id": "dsm691", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path":
+    "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 43-43; both pages visually checked", "quote": "   Distilled water                                         1000.00       ml"},
+    {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691",
+    "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[2].recipe[3]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    1000,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}], "decision": "add", "rationale": "Retain the exact
+    stock-stage input water separately from the receiving medium. SL-10 has an additional
+    explicit final make-up instruction; the other two stocks provide input water and
+    provider metadata only.", "layer_assessments": []}, {"quantity_id": "q35", "topic":
+    "Wolin''s vitamin solution (10x) solvent", "source": [{"evidence_id": "dsm691",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf",
+    "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 64-64; both pages visually checked", "quote": "   Distilled water                  1000.00   ml"},
+    {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691",
+    "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[3].recipe[10]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    1000,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}], "decision": "add", "rationale": "Retain the exact
+    stock-stage input water separately from the receiving medium. SL-10 has an additional
+    explicit final make-up instruction; the other two stocks provide input water and
+    provider metadata only.", "layer_assessments": []}, {"quantity_id": "q36", "topic":
+    "SL-10 explicit final stock volume", "source": [{"evidence_id": "dsm691", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf", "raw_path":
+    "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 34-35; both pages visually checked", "quote": "First dissolve FeCl2 in
+    the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake
+    up to 1000.00 ml."}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691",
+    "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[1].steps[0]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"step\": \"First dissolve FeCl2 in the HCl,
+    then dilute in water, add and dissolve the other salts. Finally make up to 1000.00
+    ml.\"\n                    }"}], "decision": "evidence_only", "rationale": "Credit
+    the existing DSMZ contributor text. The final make-up to1000 ml supports the SL-10
+    solid stock concentrations only; neither this make-up nor its input water sets
+    the final receiving-medium denominator.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/credm1_medium.yaml",
+    "field_path": "preparation_steps[1]", "stored_value": {"step_number": 2, "action":
+    "DISSOLVE", "description": "First dissolve FeCl2 in the HCl, then dilute in water,
+    add and dissolve the other salts. Finally make up to 1000.00 ml."}, "decision":
+    "relocate", "rationale": "The text is already present and source-supported, but
+    belongs to the SL-10 stock rather than the root medium sequence."}]}, {"quantity_id":
+    "q37", "topic": "Basal preparation and stage-specific pH", "source": [{"evidence_id":
+    "dsm691", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf",
+    "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 14-17; both pages visually checked", "quote": "Dissolve ingredients except
+    vitamins, bicarbonate and malate. Adjust pH to 6.5, dispense\nmedium in culture
+    vessels and autoclave. Prior to inoculation add vitamins, bicarbonate\nand malate
+    from stock solutions sterilized by filtration. Adjust pH of complete medium to\n6.7
+    - 6.9."}, {"evidence_id": "mediadive691", "reference": "https://mediadive.dsmz.de/rest/medium/691",
+    "raw_path": "REVIEW_WORK/batch071/source09/mediadive691.raw", "raw_sha256": "23229dee19588b156e53d87f78ee702b0224ffc8fca32d463991b4a57985ef01",
+    "locator": "$.data.solutions[0].steps[0]", "accessed_at": "2026-10-28T15:22:07.188995Z",
+    "quote": "{\n                        \"step\": \"Dissolve ingredients except vitamins,
+    bicarbonate and malate. Adjust pH to 6.5, dispense medium in culture vessels and
+    autoclave. Prior to inoculation add vitamins, bicarbonate and malate from stock
+    solutions sterilized by filtration. Adjust pH of complete medium to 6.7 - 6.9.\"\n                    }"}],
+    "decision": "mixed", "rationale": "The source separates initial pH 6.5 and complete-medium
+    pH 6.7–6.9, with vitamins/bicarbonate/malate added from filtered stocks. It supplies
+    no autoclave temperature/time, filtration pore size, bicarbonate/malate stock
+    strengths or separate doses; none are inferred.", "layer_assessments": [{"path":
+    "data/normalized_yaml/bacterial/credm1_medium.yaml", "field_path": "preparation_steps[0]",
+    "stored_value": {"step_number": 1, "action": "AUTOCLAVE", "description": "Dissolve
+    ingredients except vitamins, bicarbonate and malate. Adjust pH to 6.5, dispense
+    medium in culture vessels and autoclave. Prior to inoculation add vitamins, bicarbonate
+    and malate from stock solutions sterilized by filtration. Adjust pH of complete
+    medium to 6.7 - 6.9."}, "decision": "evidence_only", "rationale": "Existing text
+    matches the source main-medium preparation; attach the verified source support
+    without changing the retained text."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml",
+    "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale":
+    "Retain the source-specific basal preparation and separately scoped stock step.",
+    "missing": true}, {"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path":
+    "preparation_steps", "stored_value": null, "decision": "add", "rationale": "Regenerate
+    only after maintained contributor reconciliation.", "missing": true}]}, {"quantity_id":
+    "q38", "topic": "Complete-medium pH range", "source": [{"evidence_id": "dsm691",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium691.pdf",
+    "raw_path": "REVIEW_WORK/batch071/source09/dsm691.raw", "raw_sha256": "e5549814c2cae174adf8cabd08224018a49ca7a859f40dea3ca4a4f0efb7180b",
+    "text_path": "REVIEW_WORK/batch071/source09/dsm691.txt", "text_sha256": "1ca952b5bb0ddaf9d9279ed1a523b3c195924815c630b0cdac7bba4a99d0d9ce",
+    "accessed_at": "2026-10-28T15:22:07.514644Z", "locator": "pdftotext -layout physical
+    LF lines 14-17; both pages visually checked", "quote": "Dissolve ingredients except
+    vitamins, bicarbonate and malate. Adjust pH to 6.5, dispense\nmedium in culture
+    vessels and autoclave. Prior to inoculation add vitamins, bicarbonate\nand malate
+    from stock solutions sterilized by filtration. Adjust pH of complete medium to\n6.7
+    - 6.9."}], "decision": "evidence_only", "rationale": "All three current ranges
+    match the final-stage source range but lack attached source claims. Attach supporting
+    evidence and preserve the range rather than substituting its midpoint.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CreDm1_MEDIUM.yaml", "field_path": "ph_range",
+    "stored_value": {"min": 6.7, "max": 6.9}, "decision": "evidence_only", "rationale":
+    "The stored range 6.7–6.9 matches the complete-medium source instruction; initial
+    adjustment 6.5 is a different stage. Attach the source evidence without changing
+    the range."}, {"path": "data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml",
+    "field_path": "ph_range", "stored_value": {"min": 6.7, "max": 6.9}, "decision":
+    "evidence_only", "rationale": "The stored range 6.7–6.9 matches the complete-medium
+    source instruction; initial adjustment 6.5 is a different stage. Attach the source
+    evidence without changing the range."}, {"path": "data/normalized_yaml/bacterial/credm1_medium.yaml",
+    "field_path": "ph_range", "stored_value": {"min": 6.7, "max": 6.9}, "decision":
+    "evidence_only", "rationale": "The stored range 6.7–6.9 matches the complete-medium
+    source instruction; initial adjustment 6.5 is a different stage. Attach the source
+    evidence without changing the range."}]}]'
+- assessment_id: a3
+  area: grounding
+  topic: Current ontology and MIM correspondence
+  outcome: concern
+  summary: All 28 distinct current OLS terms, full scientific annotations and578 exact
+    identifier-or-ontology-linked MIM rows were read. Canonical labels and source
+    supplied forms were assessed separately. CHEBI:34887 represents anhydrous nickel
+    dichloride (Cl2Ni), while the source and local preferred name explicitly require
+    six waters; both current nickel term slots need reconciliation. The supplied calcium
+    D-(+)-pantothenate agrees with CHEBI:31345 stereochemical structure/CAS137-08-6
+    despite its broad label; no wrong-ID claim is made there. Disodium malate is explicitly
+    a racemate, matching DL. Generic vitamin B12 is not narrowed to cyanocobalamin.
+    Rejected aliases and ontology-linked-only nickel hydrate rows are not interchangeable
+    source identities; catalog status is not historical evidence.
+  target_ids:
+  - CultureMech:006296
+  evidence_ids:
+  - grounding
+- assessment_id: a4
+  area: provenance
+  topic: History and evidence scope
+  outcome: concern
+  summary: 'The two maintained contributors have exactly equal ingredient lists and
+    matching final pH, reciprocal SOURCE_DUPLICATE links and distinct stable IDs/source
+    accessions. Their scientific preparation and notes differ: the DSMZ contributor
+    retains two preparation steps; the KOMODO contributor and generated target omit
+    both. All five exact historical reports and current histories were fully read.
+    October5 reports checked0/28 source claims; both October7 reports retained all
+    28 unresolved, plus exact37 source objects each whose current raw digest and literal
+    content match. Historical KOMODO691 HTML points to DSMZ 691 but current index
+    retrieval returned403, so historical mapping access is not reauthenticated. Current
+    MediaDive API import separates primary ingredients from stock additions but still
+    takes g_l, maps absolute ml to ML_PER_L and concatenates steps across solutions;
+    it must not be blamed for current ingredient flattening without historical execution
+    evidence. Current DSMZ resolver copies ingredients/solutions but does not copy
+    preparation_steps; current KOMODO importer uses time.strftime with %f, consistent
+    with the literal .fZ anomaly without proving the old run. Current formulation
+    merge requires scientific-field equality, including preparation, notes and relationship
+    metadata, so these contributors require explicit reconciliation before regeneration.
+    All observations are review-only.'
+  target_ids:
+  - CultureMech:006296
+  evidence_ids:
+  - history
+  - scalars
+- assessment_id: a5
+  area: scope
+  topic: Growth and taxonomic evidence
+  outcome: unknown
+  summary: Generic cultivation applications and bacterial filing are not strain-level
+    growth evidence. No organism-specific growth, temperature or atmosphere is inferred
+    from names or source catalog identifiers.
+  target_ids:
+  - CultureMech:006296
+  evidence_ids:
+  - local-target
+- assessment_id: a6
+  area: schema
+  topic: Canonical diagnostics
+  outcome: supported
+  summary: All four original canonical diagnostics passed. Reference checks were zero;
+    structural and term diagnostics do not establish formulation accuracy.
+  target_ids:
+  - CultureMech:006296
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: culturemech-006296-stock-concentrations-are-embedded-as-main-medium-ingredients
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Stock concentrations are embedded as main-medium ingredients
+  description: Ingredients 6–27 reproduce three separate stock compositions without
+    their source-specific grouping, and all three receiving additions are absent.
+    The HCl percentage basis is unspecified. SL-10 explicitly makes up to 1 L, supporting
+    its solid rates at stock stage only; selenite/tungstate and vitamin stock water
+    alone do not establish measured final volumes. Follow the individual quantity
+    decisions; do not divide every value by an assumed common denominator.
+  target_ids:
+  - CultureMech:006296
+  field_paths:
+  - ingredients[6:28]
+  - solutions
+  evidence_ids:
+  - dsm691
+  - mediadive691
+  - quantities
+  rule_id: source-stage-or-identity
+  native_severity: P2
+  normalization_reason: 'Major: alters source identity, quantitative interpretation
+    or usable source support; canonical schema success cannot authenticate these claims.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/credm1_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f2
+  issue_key: culturemech-006296-basal-provider-rates-lack-attached-declared-basis-evidence
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Basal provider rates lack attached evidence for their declared volume basis
+  description: The six basal values exactly match provider g_l fields using the explicitly
+    declared volume of 1003 ml, but the local fields lack attached evidence identifying
+    that calculation basis. The printed source gives 1000 ml input water and three
+    separate 1 ml stock additions, without a measured final-medium make-up. Preserve
+    the current provider calculations and attach their declared basis; retain printed
+    batch quantities separately. No numerical correction is proposed for these six
+    values.
+  target_ids:
+  - CultureMech:006296
+  field_paths:
+  - ingredients[0:6].concentration
+  evidence_ids:
+  - dsm691
+  - mediadive691
+  - quantities
+  rule_id: source-stage-or-identity
+  native_severity: P2
+  normalization_reason: 'Major: alters source identity, quantitative interpretation
+    or usable source support; canonical schema success cannot authenticate these claims.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/credm1_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f3
+  issue_key: culturemech-006296-nickel-hexahydrate-is-represented-by-anhydrous-nickel-dichloride
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Nickel hexahydrate is represented by anhydrous nickel dichloride
+  description: The primary SL-10 source and current preferred term specify NiCl2 x
+    6H2O. CHEBI:34887 is anhydrous Cl2Ni with canonical label nickel dichloride and
+    mass 129.599, so the ID cannot represent that supplied hydrate. Correct both the
+    primary term and repeated CHEBI linkage together after verifying a source-compatible
+    hydrate accession; canonical-label matching alone does not cure the supplied-form
+    mismatch.
+  target_ids:
+  - CultureMech:006296
+  field_paths:
+  - ingredients[13].term
+  - ingredients[13].mediaingredientmech_chebi_term
+  evidence_ids:
+  - dsm691
+  - ols34887
+  - grounding
+  rule_id: source-stage-or-identity
+  native_severity: P2
+  normalization_reason: 'Major: alters source identity, quantitative interpretation
+    or usable source support; canonical schema success cannot authenticate these claims.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/credm1_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f4
+  issue_key: culturemech-006296-contributor-preparation-is-lost-and-stock-instructions-are-at-the-root
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Contributor preparation is lost and stock instructions are at the root
+  description: The DSMZ contributor retains the exact main preparation and SL-10 makeup
+    instructions; both are absent from the KOMODO contributor and generated target.
+    Its second root step belongs to SL-10. The current importer still concatenates
+    steps from all solutions, while the current resolver does not copy preparation_steps.
+    Current conservative merging rejects differing scientific content, so source-aware
+    contributor reconciliation is required before regeneration.
+  target_ids:
+  - CultureMech:006296
+  field_paths:
+  - preparation_steps
+  evidence_ids:
+  - owner-2
+  - dsm691
+  - writer-1
+  - writer-3
+  - writer-4
+  - writer-5
+  rule_id: source-stage-or-identity
+  native_severity: P2
+  normalization_reason: 'Major: alters source identity, quantitative interpretation
+    or usable source support; canonical schema success cannot authenticate these claims.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/credm1_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f5
+  issue_key: culturemech-006296-komodo-import-timestamp-contains-a-literal-format-token
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: KOMODO import timestamp contains a literal format token
+  description: The KOMODO contributor and generated record retain timestamp 2026-01-27T01:15:03.fZ.
+    It contains the literal f and cannot authenticate an exact fractional-second event.
+    Current importer time.strftime uses %f; that code observation is not an independently
+    recovered historical time.
+  target_ids:
+  - CultureMech:006296
+  field_paths:
+  - curation_history[0].timestamp
+  evidence_ids:
+  - local-target
+  - owner-1
+  - writer-2
+  rule_id: source-stage-or-identity
+  native_severity: P3
+  normalization_reason: 'Minor: bounded metadata or traceability defect without establishing
+    a new formulation.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+actions:
+- action_id: action1
+  description: Reconcile source-specific stock membership and receiving additions
+    in both maintained contributors, preserving absolute input amounts, explicit SL-10
+    makeup and unresolved percentage/final-volume bases. Do not expose undiluted stock
+    concentrations as final-medium values.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:006296
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/credm1_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action2
+  description: Attach exact primary batch-amount and provider-rate evidence, label
+    the declared1003 ml calculation basis, and leave independently measured final
+    volume unresolved. Avoid silently rounding the basal values to printed gram amounts
+    while retaining G_PER_L.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:006296
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/credm1_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action3
+  description: The primary SL-10 source and current preferred term specify NiCl2 x
+    6H2O. CHEBI:34887 is anhydrous Cl2Ni with canonical label nickel dichloride and
+    mass 129.599, so the ID cannot represent that supplied hydrate. Correct both the
+    primary term and repeated CHEBI linkage together after verifying a source-compatible
+    hydrate accession; canonical-label matching alone does not cure the supplied-form
+    mismatch.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:006296
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/credm1_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action4
+  description: Credit and retain the existing main-medium step in the DSMZ contributor,
+    move the SL-10 step to its stock context, reconcile the KOMODO contributor against
+    exact supported source identity, then regenerate with the conservative formulation
+    workflow. Preserve unknown autoclave/filtration parameters and stock strengths
+    as unknown.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:006296
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/credm1_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action5
+  description: Preserve the original event and add a traceable provenance clarification
+    if an authoritative timestamp is recovered. Do not fabricate fractional seconds
+    or rewrite the append-only history.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:006296
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+limitations:
+- The captured KOMODO MediaList route returned HTTP 403. The historical cross-reference
+  points to /komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=691;
+  that exact MediaInfo route was not tested. The historical row remains contextual,
+  and its original retrieval is not independently authenticated.
+- Primary water quantities and provider volume metadata are not interchangeable with
+  measured final-medium volume. Bare 25% HCl basis, density, separate bicarbonate/malate
+  stock strengths and doses remain unresolved.
+- All 28 current concentrations across three documents have dispositions; source-only
+  stock additions/solvent and preparation are separately inventoried. No recipe or
+  identifier was changed.
+- Current DSM 6526 collection association is context only; no target_organism growth
+  assertion, strain-specific incubation or species taxonomy was added. An inconsistent
+  unrelated footer label was not used.
+- Current OLS/MIM data and current writer functions do not establish historical validity/execution.
+  The native reference check performed zero checks; schema success is not source authentication.
+notes:
+- Fresh review; historical lost snapshots were not reconstructed. All inspected source
+  files remain unchanged.
+- This draft authoring step performed no formal review validation/save, Git mutation
+  or publication.
+```
