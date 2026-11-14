@@ -1,0 +1,1648 @@
+schema_version: 1.0.0
+review_id: 20261021T085704Z-culturemech-008294-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: 802_5_nacl (CultureMech:008294)'
+started_at: '2026-10-21T08:48:58Z'
+finished_at: '2026-10-21T08:57:04Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The generated 802 + 5% NaCl target combines four distinct salinity variants
+  and carries the 10% owner’s NaCl amount under the 5% identity. All four owners also
+  encode water volume as mass concentration, turn a supplier-footnoted Hipolypepton
+  ingredient into an empty solution, omit source pH, and narrow an optional-agar recipe
+  to unconditional solid agar. Exact NBRC and TOGO source identities remain recoverable.
+source:
+  git_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/802_5_nacl.yaml
+    sha256: bd0e6e2ecca756368fe1c0e33fdf66a1633c08ad9074968ebc226423ceaf56dc
+    role: target
+  - path: data/normalized_yaml/bacterial/802_10_nacl.yaml
+    sha256: 26f3c6ed15c093347dfa095498e6c62e9a605ecdaf93aef958d294b8429026d5
+    role: context
+  - path: data/normalized_yaml/bacterial/802_2_nacl.yaml
+    sha256: fd420cdab138001d432c72366140bd70acc846adac57285352480fa2c8cb0e2d
+    role: context
+  - path: data/normalized_yaml/bacterial/802_3_nacl.yaml
+    sha256: b60d72ead557623dbe55855b822c559265730d580445b5f033fa3e734049ceaf
+    role: context
+  - path: data/normalized_yaml/bacterial/802_5_nacl.yaml
+    sha256: d6eca80d935fd6c25e7543cc0ea947601b07a4c00035137842ac65d43cc50f06
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_media_variant_links.py
+    sha256: 2931b0c5d4374cdaa6d256aed8f65f564a8b285bba741ec914f3a516eed50c07
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/propose_media_variant_links.py
+    sha256: bd5b0b86c9457e42ca52ba2b253e5842c7f414093ba15aaeb4f9f0d682b5f4c2
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/togo_raw_yaml.py
+    sha256: ce5e73545c9ecde54724259d2fd475676c0f3cb44dcfd283950e89fd49c10993
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/fetch/togo_fetcher.py
+    sha256: 7aac40fe1d47e30810ae0be02f6e369ddb9bf657d630072595c62f46fb0bf339
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence. All four explicitly merged normalized
+    owners are reviewed as provenance and formulation context for this single generated
+    target.
+  selection: Task review 115; batch 012 item 5 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding eleven task batches contain
+    110 ledger-owned validated record reviews; their complete validated lists also
+    retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+    contains 40 validated baseline bundles covering 2 current merged paths. Unioning
+    all prior lists with this baseline covers 112 of 6320 current merged paths, including
+    2 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:008294
+targets:
+- target_id: CultureMech:008294
+  path: data/merge_yaml/merged/802_5_nacl.yaml
+  label: 802_5_nacl
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_5_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_10_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_2_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_3_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/802_5_nacl.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:008294
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/802_5_nacl.yaml --workers 1
+    --out /private/tmp/culturemech-review-work-batch012/115/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-012/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch012/115/strict.tsv"
+  target_ids:
+  - CultureMech:008294
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/802_5_nacl.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:008294
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/802_5_nacl.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:008294
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:008294
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/802_5_nacl.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T08:57:03Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/802_5_nacl.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T08:57:03Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/802_10_nacl.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T08:57:03Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/802_2_nacl.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T08:57:03Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-3
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/802_3_nacl.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T08:57:03Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/802_5_nacl.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:49:52.055905Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/802_5_nacl.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch012/115/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:49:53.503878Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-012/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch012/115/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/802_5_nacl.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:49:55.214313Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/802_5_nacl.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:49:57.809489Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T08:57:03Z'
+  support: supports
+  summary: './data/merge_yaml/merged/802_5_nacl.yaml:1:id: CultureMech:008294
+
+    ./data/normalized_yaml/bacterial/802_5_nacl.yaml:1:id: CultureMech:008294
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:42:30.346522Z'
+  support: supports
+  summary: CHEBI:15377 resolves to water and is not obsolete. This checks exact term-label
+    metadata; source material form and amount are assessed separately.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride and is not obsolete. This checks
+    exact term-label metadata; source material form and amount are assessed separately.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate and is not obsolete.
+    This checks exact term-label metadata; source material form and amount are assessed
+    separately.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: All live preferred-term rows for asserted secondary CHEBI keys; metadata
+    captured
+  accessed_at: '2026-10-21T08:57:03Z'
+  support: supports
+  summary: '{"CHEBI:15377": [{"label": "Distilled water", "match_type": "preferred_term",
+    "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id":
+    "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795":
+    [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4\u00b7H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4\u00b7H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26710":
+    [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710",
+    "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}]}'
+- evidence_id: togo-5
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1730
+  locator: $.meta; $.components[0].items[0:6]; $.comments[0:3]
+  accessed_at: '2026-10-21T08:42:29.113123Z'
+  support: supports
+  summary: TOGO M1730 explicitly maps this 5% name to NBRC_M939. The main table lists
+    water 1 L, magnesium sulfate heptahydrate 1 g, yeast extract 2 g, NaCl 50 g, agar
+    15 g if needed, and Hipolypepton 10 g. Comments retain pH 7.0 and the Wako supplier
+    footnote; the GMO ingredient label separately says Nihon seiyaku.
+  snapshot_sha256: 55357a6fcf00f36d3920c608c4c0e237f02d8e63f9e63ea38e0cc71504371c02
+- evidence_id: nbrc-5
+  kind: primary_source
+  reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=939
+  locator: Medium No. 939; complete composition, pH and supplier footnote
+  accessed_at: '2026-10-21T08:43:26.402610Z'
+  support: supports
+  summary: The original NBRC 939 catalogue identifies Medium 802 + 5% NaCl and lists
+    NaCl 50 g with 1 L distilled water, plus the other five source rows. It explicitly
+    marks agar as if needed, gives pH 7.0, and expands the Hipolypepton asterisk to
+    Wako Pure Chemical Ind., Ltd., Osaka, Japan. No separate Hipolypepton stock recipe
+    or dose is supplied.
+  snapshot_sha256: e13f89a23f4a5704a69d0900e5818392fbb5374cf1a12a10f32f2ce066843201
+- evidence_id: togo-10
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1731
+  locator: $.meta; $.components[0].items[0:6]; $.comments[0:3]
+  accessed_at: '2026-10-21T08:42:29.150174Z'
+  support: supports
+  summary: TOGO M1731 explicitly maps this 10% name to NBRC_M940. The main table lists
+    water 1 L, magnesium sulfate heptahydrate 1 g, yeast extract 2 g, NaCl 100 g,
+    agar 15 g if needed, and Hipolypepton 10 g. Comments retain pH 7.0 and the Wako
+    supplier footnote; the GMO ingredient label separately says Nihon seiyaku.
+  snapshot_sha256: 7fa89549badaa6419c8745d25945b322eac50da553145f6c92e98882548a767f
+- evidence_id: nbrc-10
+  kind: primary_source
+  reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=940
+  locator: Medium No. 940; complete composition, pH and supplier footnote
+  accessed_at: '2026-10-21T08:43:26.750073Z'
+  support: supports
+  summary: The original NBRC 940 catalogue identifies Medium 802 + 10% NaCl and lists
+    NaCl 100 g with 1 L distilled water, plus the other five source rows. It explicitly
+    marks agar as if needed, gives pH 7.0, and expands the Hipolypepton asterisk to
+    Wako Pure Chemical Ind., Ltd., Osaka, Japan. No separate Hipolypepton stock recipe
+    or dose is supplied.
+  snapshot_sha256: 87bb25f84cbd879d3804120fb4a9853eee0df2a07667f8b68bd1a6866265736d
+- evidence_id: togo-2
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1822
+  locator: $.meta; $.components[0].items[0:6]; $.comments[0:3]
+  accessed_at: '2026-10-21T08:42:29.418176Z'
+  support: supports
+  summary: TOGO M1822 explicitly maps this 2% name to NBRC_M1054. The main table lists
+    water 1 L, magnesium sulfate heptahydrate 1 g, yeast extract 2 g, NaCl 20 g, agar
+    15 g if needed, and Hipolypepton 10 g. Comments retain pH 7.0 and the Wako supplier
+    footnote; the GMO ingredient label separately says Nihon seiyaku.
+  snapshot_sha256: 8bab09031cd79519cbc240749cf8f06db29a3467c71184cdc90ecdaecc15be2d
+- evidence_id: nbrc-2
+  kind: primary_source
+  reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1054
+  locator: Medium No. 1054; complete composition, pH and supplier footnote
+  accessed_at: '2026-10-21T08:43:25.801005Z'
+  support: supports
+  summary: The original NBRC 1054 catalogue identifies Medium 802 + 2% NaCl and lists
+    NaCl 20 g with 1 L distilled water, plus the other five source rows. It explicitly
+    marks agar as if needed, gives pH 7.0, and expands the Hipolypepton asterisk to
+    Wako Pure Chemical Ind., Ltd., Osaka, Japan. No separate Hipolypepton stock recipe
+    or dose is supplied.
+  snapshot_sha256: d08f76e72ec359934aaeb5fc4814c847e052dcc873f6c7ed21a5fe1dc37aaeba
+- evidence_id: togo-3
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2103
+  locator: $.meta; $.components[0].items[0:6]; $.comments[0:3]
+  accessed_at: '2026-10-21T08:42:29.500680Z'
+  support: supports
+  summary: TOGO M2103 explicitly maps this 3% name to NBRC_M1422. The main table lists
+    water 1 L, magnesium sulfate heptahydrate 1 g, yeast extract 2 g, NaCl 30 g, agar
+    15 g if needed, and Hipolypepton 10 g. Comments retain pH 7.0 and the Wako supplier
+    footnote; the GMO ingredient label separately says Nihon seiyaku.
+  snapshot_sha256: 298978704aafa070db0ff81d8bf4efeae3724424fad85c45f6b9538b34a8ea65
+- evidence_id: nbrc-3
+  kind: primary_source
+  reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1422
+  locator: Medium No. 1422; complete composition, pH and supplier footnote
+  accessed_at: '2026-10-21T08:43:26.145382Z'
+  support: supports
+  summary: The original NBRC 1422 catalogue identifies Medium 802 + 3% NaCl and lists
+    NaCl 30 g with 1 L distilled water, plus the other five source rows. It explicitly
+    marks agar as if needed, gives pH 7.0, and expands the Hipolypepton asterisk to
+    Wako Pure Chemical Ind., Ltd., Osaka, Japan. No separate Hipolypepton stock recipe
+    or dose is supplied.
+  snapshot_sha256: 2557572901336037b22efed6941ac817bceb70eb0d3d9ac0ed5fd514cad2d8ed
+- evidence_id: quantities
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch012/115/quantity-inventory.json
+  locator: Six quantity fields plus source-only pH, for one target and all four explicit
+    owners
+  accessed_at: '2026-10-21T08:57:03Z'
+  support: context_only
+  summary: Thirty-five explicit decisions retain original units and source-specific
+    NaCl amounts, optional agar, direct Hipolypepton material, preparation water and
+    pH. Owner comparisons are context for the single target.
+  snapshot_sha256: f36c17da54f172297c3269ee29ad34f8340df615593c6afb4f913a44a8c9dd6b
+- evidence_id: importer
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: _ingredient_from_item; _parse_unit; _extract_ph; _extract_preparation_steps
+  accessed_at: '2026-10-21T08:57:03Z'
+  support: context_only
+  summary: The current importer distinguishes L from G_PER_L and retains nonempty
+    comments, while _extract_ph reads a top-level ph field. The captured API supplies
+    ph under meta and also in a comment. These are current code observations, not
+    a replay of the historical import.
+- evidence_id: migration
+  kind: record_content
+  reference: scripts/migrate_solutions_from_ingredients.py
+  locator: SolutionMigrator.SOLUTION_PATTERNS; _is_solution; _resolve_solution
+  accessed_at: '2026-10-21T08:57:03Z'
+  support: context_only
+  summary: Current migration code treats trailing asterisks as potential solution
+    markers and can create an unresolved composition-empty stub while copying the
+    original concentration. The original NBRC asterisk here points to a supplier footnote,
+    not a stock definition. The script was inspected, not executed or claimed as a
+    reconstructed historical run.
+- evidence_id: merge-guard
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content; merge_formulation_evidence; caller RecipeMerger.merge_group
+    in merger.py
+  accessed_at: '2026-10-21T08:57:03Z'
+  support: context_only
+  summary: The current consolidation guard retains scientific fields, including concentrations
+    and solution representation, in its equality key and rejects unequal formulation
+    content. It is distinct from ingredient-set candidate matching. These four current
+    owner formulas differ; the inspected present guard is not assumed to explain or
+    reproduce the August generated artifact.
+- evidence_id: variant-writer
+  kind: record_content
+  reference: scripts/propose_media_variant_links.py
+  locator: relationship classifier and modification_text; application context in scripts/apply_media_variant_links.py
+  accessed_at: '2026-10-21T08:57:03Z'
+  support: context_only
+  summary: The current proposal logic uses names containing salt/NaCl for SALINITY_VARIANT
+    and generates the exact verify-concentration-delta wording found in the owners.
+    Existing bidirectional references resolve, but the source-specific comparison
+    remains a separate task; no historical run or actor is inferred.
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:008294
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: All asserted primary and current secondary ingredient identifiers
+  outcome: supported
+  summary: '3 primary CHEBI identities resolve with matching labels; 3 of 3 current
+    secondary keys have live pinned-index rows. Unresolved keys: [].'
+  target_ids:
+  - CultureMech:008294
+  evidence_ids:
+  - record
+  - mim
+  - chebi15377
+  - chebi26710
+  - chebi31795
+  details: 5 direct ingredient instances; CHEBI-primary instance linkage 3/5 (60.00%),
+    verified secondary coverage 3/5 (60.00%). Percentages use a 0–100 linkage scale,
+    not a scientific correctness score. Complex mixtures without asserted IDs remain
+    ungrounded rather than receiving invented pure-molecule identities.
+- assessment_id: identity
+  area: identity
+  topic: Target identity and four explicit merge contributors
+  outcome: concern
+  summary: CM008294, TOGO M1730 and NBRC 939 identify the 5% variant. The generated
+    composition instead equals the 10% owner, including NaCl 100 rather than the 5%
+    source’s 50. Its synonyms and merge event include distinct 2%, 3%, 5% and 10%
+    source formulations. All four owner IDs/paths and exact provider accessions resolve;
+    the target is resolved but conflates its source identities.
+  target_ids:
+  - CultureMech:008294
+  evidence_ids:
+  - record
+  - id-search
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - togo-5
+  - nbrc-5
+  - togo-10
+  - nbrc-10
+  - togo-2
+  - nbrc-2
+  - togo-3
+  - nbrc-3
+- assessment_id: amounts
+  area: quantity
+  topic: Every target and contributor amount on its original basis
+  outcome: concern
+  summary: Each owner’s non-water numeric masses correspond to its own source, while
+    the target’s NaCl value follows the wrong salinity variant. Every water entry
+    replaces a source volume with a mass concentration. Original batch masses are
+    distinguished from provider normalization or measured final volume; none of the
+    undefined mixtures receives molar arithmetic.
+  target_ids:
+  - CultureMech:008294
+  evidence_ids:
+  - record
+  - quantities
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - togo-5
+  - nbrc-5
+  - togo-10
+  - nbrc-10
+  - togo-2
+  - nbrc-2
+  - togo-3
+  - nbrc-3
+  details: '[{"layer": "target", "path": "data/merge_yaml/merged/802_5_nacl.yaml",
+    "field_path": "ingredients[0].concentration", "ingredient": "Distilled water",
+    "record_value": {"value": "1", "unit": "G_PER_L"}, "source_key": "togoM1730api",
+    "source_locator": "$.components[0].items[0]", "original_amount": 1, "original_unit":
+    "L", "original_preparation_water": "1 L", "numeric_value_matches_source": true,
+    "stage": "main-medium original recipe; no stock or measured final-volume inference",
+    "decision": "correct", "explanation": "The original source is a 1 L preparation-water
+    volume. It cannot be represented as 1 g/L or converted into a water mass concentration
+    without a separate justified basis."}, {"layer": "target", "path": "data/merge_yaml/merged/802_5_nacl.yaml",
+    "field_path": "ingredients[1].concentration", "ingredient": "MgSO4·7H2O", "record_value":
+    {"value": "1", "unit": "G_PER_L"}, "source_key": "togoM1730api", "source_locator":
+    "$.components[0].items[1]", "original_amount": 1, "original_unit": "g", "original_preparation_water":
+    "1 L", "numeric_value_matches_source": true, "stage": "main-medium original recipe;
+    no stock or measured final-volume inference", "decision": "correct", "explanation":
+    "The numerical source mass is retained on a nominal recipe basis; preserve the
+    original g amount and 1 L water context without claiming an independently measured
+    final concentration."}, {"layer": "target", "path": "data/merge_yaml/merged/802_5_nacl.yaml",
+    "field_path": "ingredients[2].concentration", "ingredient": "Yeast extract", "record_value":
+    {"value": "2", "unit": "G_PER_L"}, "source_key": "togoM1730api", "source_locator":
+    "$.components[0].items[2]", "original_amount": 2, "original_unit": "g", "original_preparation_water":
+    "1 L", "numeric_value_matches_source": true, "stage": "main-medium original recipe;
+    no stock or measured final-volume inference", "decision": "correct", "explanation":
+    "The numerical source mass is retained on a nominal recipe basis; preserve the
+    original g amount and 1 L water context without claiming an independently measured
+    final concentration."}, {"layer": "target", "path": "data/merge_yaml/merged/802_5_nacl.yaml",
+    "field_path": "ingredients[3].concentration", "ingredient": "NaCl", "record_value":
+    {"value": "100", "unit": "G_PER_L"}, "source_key": "togoM1730api", "source_locator":
+    "$.components[0].items[3]", "original_amount": 50, "original_unit": "g", "original_preparation_water":
+    "1 L", "numeric_value_matches_source": false, "stage": "main-medium original recipe;
+    no stock or measured final-volume inference", "decision": "correct", "explanation":
+    "The target’s 5% identity resolves to the source 50 g NaCl recipe; its 100 g/L
+    number instead agrees numerically with the distinct 10% owner and source. These
+    are not synonyms."}, {"layer": "target", "path": "data/merge_yaml/merged/802_5_nacl.yaml",
+    "field_path": "ingredients[4].concentration", "ingredient": "Agar (if needed)",
+    "record_value": {"value": "15", "unit": "G_PER_L"}, "source_key": "togoM1730api",
+    "source_locator": "$.components[0].items[4]", "original_amount": 15, "original_unit":
+    "g", "original_preparation_water": "1 L", "numeric_value_matches_source": true,
+    "stage": "main-medium original recipe; no stock or measured final-volume inference",
+    "decision": "correct", "explanation": "The original 15 g agar amount is conditional,
+    if needed. Its numeric value is retained, but optional solidification must remain
+    explicit and must not be interpreted as a universal solid-agar recipe."}, {"layer":
+    "target", "path": "data/merge_yaml/merged/802_5_nacl.yaml", "field_path": "solutions[0].concentration",
+    "ingredient": "Hipolypepton*", "record_value": {"value": "10", "unit": "G_PER_L"},
+    "source_key": "togoM1730api", "source_locator": "$.components[0].items[5]", "original_amount":
+    10, "original_unit": "g", "original_preparation_water": "1 L", "numeric_value_matches_source":
+    true, "stage": "main-medium original recipe; no stock or measured final-volume
+    inference", "decision": "correct", "explanation": "The original 10 g amount denotes
+    the supplier-footnoted commercial ingredient, not the dose or composition of an
+    unidentified stock. Restore material representation while retaining the original
+    amount/basis and supplier conflict."}, {"layer": "target", "path": "data/merge_yaml/merged/802_5_nacl.yaml",
+    "field_path": "ph_value / preparation_steps (source-only pH context)", "source_key":
+    "togoM1730api", "source_locator": "$.meta.ph; $.comments[0]; corresponding NBRC
+    pH row", "original_value": "7.0", "decision": "add", "explanation": "The source
+    gives pH 7.0, absent from this record. Preserve the stated condition without inventing
+    a titrant, incubation context or preparation method."}, {"layer": "normalized
+    owner", "path": "data/normalized_yaml/bacterial/802_5_nacl.yaml", "field_path":
+    "ingredients[0].concentration", "ingredient": "Distilled water", "record_value":
+    {"value": "1", "unit": "G_PER_L"}, "source_key": "togoM1730api", "source_locator":
+    "$.components[0].items[0]", "original_amount": 1, "original_unit": "L", "original_preparation_water":
+    "1 L", "numeric_value_matches_source": true, "stage": "main-medium original recipe;
+    no stock or measured final-volume inference", "decision": "correct", "explanation":
+    "The original source is a 1 L preparation-water volume. It cannot be represented
+    as 1 g/L or converted into a water mass concentration without a separate justified
+    basis."}, {"layer": "normalized owner", "path": "data/normalized_yaml/bacterial/802_5_nacl.yaml",
+    "field_path": "ingredients[1].concentration", "ingredient": "MgSO4·7H2O", "record_value":
+    {"value": "1", "unit": "G_PER_L"}, "source_key": "togoM1730api", "source_locator":
+    "$.components[0].items[1]", "original_amount": 1, "original_unit": "g", "original_preparation_water":
+    "1 L", "numeric_value_matches_source": true, "stage": "main-medium original recipe;
+    no stock or measured final-volume inference", "decision": "correct", "explanation":
+    "The numerical source mass is retained on a nominal recipe basis; preserve the
+    original g amount and 1 L water context without claiming an independently measured
+    final concentration."}, {"layer": "normalized owner", "path": "data/normalized_yaml/bacterial/802_5_nacl.yaml",
+    "field_path": "ingredients[2].concentration", "ingredient": "Yeast extract", "record_value":
+    {"value": "2", "unit": "G_PER_L"}, "source_key": "togoM1730api", "source_locator":
+    "$.components[0].items[2]", "original_amount": 2, "original_unit": "g", "original_preparation_water":
+    "1 L", "numeric_value_matches_source": true, "stage": "main-medium original recipe;
+    no stock or measured final-volume inference", "decision": "correct", "explanation":
+    "The numerical source mass is retained on a nominal recipe basis; preserve the
+    original g amount and 1 L water context without claiming an independently measured
+    final concentration."}, {"layer": "normalized owner", "path": "data/normalized_yaml/bacterial/802_5_nacl.yaml",
+    "field_path": "ingredients[3].concentration", "ingredient": "NaCl", "record_value":
+    {"value": "50", "unit": "G_PER_L"}, "source_key": "togoM1730api", "source_locator":
+    "$.components[0].items[3]", "original_amount": 50, "original_unit": "g", "original_preparation_water":
+    "1 L", "numeric_value_matches_source": true, "stage": "main-medium original recipe;
+    no stock or measured final-volume inference", "decision": "correct", "explanation":
+    "The numerical source mass is retained on a nominal recipe basis; preserve the
+    original g amount and 1 L water context without claiming an independently measured
+    final concentration."}, {"layer": "normalized owner", "path": "data/normalized_yaml/bacterial/802_5_nacl.yaml",
+    "field_path": "ingredients[4].concentration", "ingredient": "Agar (if needed)",
+    "record_value": {"value": "15", "unit": "G_PER_L"}, "source_key": "togoM1730api",
+    "source_locator": "$.components[0].items[4]", "original_amount": 15, "original_unit":
+    "g", "original_preparation_water": "1 L", "numeric_value_matches_source": true,
+    "stage": "main-medium original recipe; no stock or measured final-volume inference",
+    "decision": "correct", "explanation": "The original 15 g agar amount is conditional,
+    if needed. Its numeric value is retained, but optional solidification must remain
+    explicit and must not be interpreted as a universal solid-agar recipe."}, {"layer":
+    "normalized owner", "path": "data/normalized_yaml/bacterial/802_5_nacl.yaml",
+    "field_path": "solutions[0].concentration", "ingredient": "Hipolypepton*", "record_value":
+    {"value": "10", "unit": "G_PER_L"}, "source_key": "togoM1730api", "source_locator":
+    "$.components[0].items[5]", "original_amount": 10, "original_unit": "g", "original_preparation_water":
+    "1 L", "numeric_value_matches_source": true, "stage": "main-medium original recipe;
+    no stock or measured final-volume inference", "decision": "correct", "explanation":
+    "The original 10 g amount denotes the supplier-footnoted commercial ingredient,
+    not the dose or composition of an unidentified stock. Restore material representation
+    while retaining the original amount/basis and supplier conflict."}, {"layer":
+    "normalized owner", "path": "data/normalized_yaml/bacterial/802_5_nacl.yaml",
+    "field_path": "ph_value / preparation_steps (source-only pH context)", "source_key":
+    "togoM1730api", "source_locator": "$.meta.ph; $.comments[0]; corresponding NBRC
+    pH row", "original_value": "7.0", "decision": "add", "explanation": "The source
+    gives pH 7.0, absent from this record. Preserve the stated condition without inventing
+    a titrant, incubation context or preparation method."}, {"layer": "normalized
+    owner", "path": "data/normalized_yaml/bacterial/802_10_nacl.yaml", "field_path":
+    "ingredients[0].concentration", "ingredient": "Distilled water", "record_value":
+    {"value": "1", "unit": "G_PER_L"}, "source_key": "togoM1731api", "source_locator":
+    "$.components[0].items[0]", "original_amount": 1, "original_unit": "L", "original_preparation_water":
+    "1 L", "numeric_value_matches_source": true, "stage": "main-medium original recipe;
+    no stock or measured final-volume inference", "decision": "correct", "explanation":
+    "The original source is a 1 L preparation-water volume. It cannot be represented
+    as 1 g/L or converted into a water mass concentration without a separate justified
+    basis."}, {"layer": "normalized owner", "path": "data/normalized_yaml/bacterial/802_10_nacl.yaml",
+    "field_path": "ingredients[1].concentration", "ingredient": "MgSO4·7H2O", "record_value":
+    {"value": "1", "unit": "G_PER_L"}, "source_key": "togoM1731api", "source_locator":
+    "$.components[0].items[1]", "original_amount": 1, "original_unit": "g", "original_preparation_water":
+    "1 L", "numeric_value_matches_source": true, "stage": "main-medium original recipe;
+    no stock or measured final-volume inference", "decision": "correct", "explanation":
+    "The numerical source mass is retained on a nominal recipe basis; preserve the
+    original g amount and 1 L water context without claiming an independently measured
+    final concentration."}, {"layer": "normalized owner", "path": "data/normalized_yaml/bacterial/802_10_nacl.yaml",
+    "field_path": "ingredients[2].concentration", "ingredient": "Yeast extract", "record_value":
+    {"value": "2", "unit": "G_PER_L"}, "source_key": "togoM1731api", "source_locator":
+    "$.components[0].items[2]", "original_amount": 2, "original_unit": "g", "original_preparation_water":
+    "1 L", "numeric_value_matches_source": true, "stage": "main-medium original recipe;
+    no stock or measured final-volume inference", "decision": "correct", "explanation":
+    "The numerical source mass is retained on a nominal recipe basis; preserve the
+    original g amount and 1 L water context without claiming an independently measured
+    final concentration."}, {"layer": "normalized owner", "path": "data/normalized_yaml/bacterial/802_10_nacl.yaml",
+    "field_path": "ingredients[3].concentration", "ingredient": "NaCl", "record_value":
+    {"value": "100", "unit": "G_PER_L"}, "source_key": "togoM1731api", "source_locator":
+    "$.components[0].items[3]", "original_amount": 100, "original_unit": "g", "original_preparation_water":
+    "1 L", "numeric_value_matches_source": true, "stage": "main-medium original recipe;
+    no stock or measured final-volume inference", "decision": "correct", "explanation":
+    "The numerical source mass is retained on a nominal recipe basis; preserve the
+    original g amount and 1 L water context without claiming an independently measured
+    final concentration."}, {"layer": "normalized owner", "path": "data/normalized_yaml/bacterial/802_10_nacl.yaml",
+    "field_path": "ingredients[4].concentration", "ingredient": "Agar (if needed)",
+    "record_value": {"value": "15", "unit": "G_PER_L"}, "source_key": "togoM1731api",
+    "source_locator": "$.components[0].items[4]", "original_amount": 15, "original_unit":
+    "g", "original_preparation_water": "1 L", "numeric_value_matches_source": true,
+    "stage": "main-medium original recipe; no stock or measured final-volume inference",
+    "decision": "correct", "explanation": "The original 15 g agar amount is conditional,
+    if needed. Its numeric value is retained, but optional solidification must remain
+    explicit and must not be interpreted as a universal solid-agar recipe."}, {"layer":
+    "normalized owner", "path": "data/normalized_yaml/bacterial/802_10_nacl.yaml",
+    "field_path": "solutions[0].concentration", "ingredient": "Hipolypepton*", "record_value":
+    {"value": "10", "unit": "G_PER_L"}, "source_key": "togoM1731api", "source_locator":
+    "$.components[0].items[5]", "original_amount": 10, "original_unit": "g", "original_preparation_water":
+    "1 L", "numeric_value_matches_source": true, "stage": "main-medium original recipe;
+    no stock or measured final-volume inference", "decision": "correct", "explanation":
+    "The original 10 g amount denotes the supplier-footnoted commercial ingredient,
+    not the dose or composition of an unidentified stock. Restore material representation
+    while retaining the original amount/basis and supplier conflict."}, {"layer":
+    "normalized owner", "path": "data/normalized_yaml/bacterial/802_10_nacl.yaml",
+    "field_path": "ph_value / preparation_steps (source-only pH context)", "source_key":
+    "togoM1731api", "source_locator": "$.meta.ph; $.comments[0]; corresponding NBRC
+    pH row", "original_value": "7.0", "decision": "add", "explanation": "The source
+    gives pH 7.0, absent from this record. Preserve the stated condition without inventing
+    a titrant, incubation context or preparation method."}, {"layer": "normalized
+    owner", "path": "data/normalized_yaml/bacterial/802_2_nacl.yaml", "field_path":
+    "ingredients[0].concentration", "ingredient": "Distilled water", "record_value":
+    {"value": "1", "unit": "G_PER_L"}, "source_key": "togoM1822api", "source_locator":
+    "$.components[0].items[0]", "original_amount": 1, "original_unit": "L", "original_preparation_water":
+    "1 L", "numeric_value_matches_source": true, "stage": "main-medium original recipe;
+    no stock or measured final-volume inference", "decision": "correct", "explanation":
+    "The original source is a 1 L preparation-water volume. It cannot be represented
+    as 1 g/L or converted into a water mass concentration without a separate justified
+    basis."}, {"layer": "normalized owner", "path": "data/normalized_yaml/bacterial/802_2_nacl.yaml",
+    "field_path": "ingredients[1].concentration", "ingredient": "MgSO4·7H2O", "record_value":
+    {"value": "1", "unit": "G_PER_L"}, "source_key": "togoM1822api", "source_locator":
+    "$.components[0].items[1]", "original_amount": 1, "original_unit": "g", "original_preparation_water":
+    "1 L", "numeric_value_matches_source": true, "stage": "main-medium original recipe;
+    no stock or measured final-volume inference", "decision": "correct", "explanation":
+    "The numerical source mass is retained on a nominal recipe basis; preserve the
+    original g amount and 1 L water context without claiming an independently measured
+    final concentration."}, {"layer": "normalized owner", "path": "data/normalized_yaml/bacterial/802_2_nacl.yaml",
+    "field_path": "ingredients[2].concentration", "ingredient": "Yeast extract", "record_value":
+    {"value": "2", "unit": "G_PER_L"}, "source_key": "togoM1822api", "source_locator":
+    "$.components[0].items[2]", "original_amount": 2, "original_unit": "g", "original_preparation_water":
+    "1 L", "numeric_value_matches_source": true, "stage": "main-medium original recipe;
+    no stock or measured final-volume inference", "decision": "correct", "explanation":
+    "The numerical source mass is retained on a nominal recipe basis; preserve the
+    original g amount and 1 L water context without claiming an independently measured
+    final concentration."}, {"layer": "normalized owner", "path": "data/normalized_yaml/bacterial/802_2_nacl.yaml",
+    "field_path": "ingredients[3].concentration", "ingredient": "NaCl", "record_value":
+    {"value": "20", "unit": "G_PER_L"}, "source_key": "togoM1822api", "source_locator":
+    "$.components[0].items[3]", "original_amount": 20, "original_unit": "g", "original_preparation_water":
+    "1 L", "numeric_value_matches_source": true, "stage": "main-medium original recipe;
+    no stock or measured final-volume inference", "decision": "correct", "explanation":
+    "The numerical source mass is retained on a nominal recipe basis; preserve the
+    original g amount and 1 L water context without claiming an independently measured
+    final concentration."}, {"layer": "normalized owner", "path": "data/normalized_yaml/bacterial/802_2_nacl.yaml",
+    "field_path": "ingredients[4].concentration", "ingredient": "Agar (if needed)",
+    "record_value": {"value": "15", "unit": "G_PER_L"}, "source_key": "togoM1822api",
+    "source_locator": "$.components[0].items[4]", "original_amount": 15, "original_unit":
+    "g", "original_preparation_water": "1 L", "numeric_value_matches_source": true,
+    "stage": "main-medium original recipe; no stock or measured final-volume inference",
+    "decision": "correct", "explanation": "The original 15 g agar amount is conditional,
+    if needed. Its numeric value is retained, but optional solidification must remain
+    explicit and must not be interpreted as a universal solid-agar recipe."}, {"layer":
+    "normalized owner", "path": "data/normalized_yaml/bacterial/802_2_nacl.yaml",
+    "field_path": "solutions[0].concentration", "ingredient": "Hipolypepton*", "record_value":
+    {"value": "10", "unit": "G_PER_L"}, "source_key": "togoM1822api", "source_locator":
+    "$.components[0].items[5]", "original_amount": 10, "original_unit": "g", "original_preparation_water":
+    "1 L", "numeric_value_matches_source": true, "stage": "main-medium original recipe;
+    no stock or measured final-volume inference", "decision": "correct", "explanation":
+    "The original 10 g amount denotes the supplier-footnoted commercial ingredient,
+    not the dose or composition of an unidentified stock. Restore material representation
+    while retaining the original amount/basis and supplier conflict."}, {"layer":
+    "normalized owner", "path": "data/normalized_yaml/bacterial/802_2_nacl.yaml",
+    "field_path": "ph_value / preparation_steps (source-only pH context)", "source_key":
+    "togoM1822api", "source_locator": "$.meta.ph; $.comments[0]; corresponding NBRC
+    pH row", "original_value": "7.0", "decision": "add", "explanation": "The source
+    gives pH 7.0, absent from this record. Preserve the stated condition without inventing
+    a titrant, incubation context or preparation method."}, {"layer": "normalized
+    owner", "path": "data/normalized_yaml/bacterial/802_3_nacl.yaml", "field_path":
+    "ingredients[0].concentration", "ingredient": "Distilled water", "record_value":
+    {"value": "1", "unit": "G_PER_L"}, "source_key": "togoM2103api", "source_locator":
+    "$.components[0].items[0]", "original_amount": 1, "original_unit": "L", "original_preparation_water":
+    "1 L", "numeric_value_matches_source": true, "stage": "main-medium original recipe;
+    no stock or measured final-volume inference", "decision": "correct", "explanation":
+    "The original source is a 1 L preparation-water volume. It cannot be represented
+    as 1 g/L or converted into a water mass concentration without a separate justified
+    basis."}, {"layer": "normalized owner", "path": "data/normalized_yaml/bacterial/802_3_nacl.yaml",
+    "field_path": "ingredients[1].concentration", "ingredient": "MgSO4·7H2O", "record_value":
+    {"value": "1", "unit": "G_PER_L"}, "source_key": "togoM2103api", "source_locator":
+    "$.components[0].items[1]", "original_amount": 1, "original_unit": "g", "original_preparation_water":
+    "1 L", "numeric_value_matches_source": true, "stage": "main-medium original recipe;
+    no stock or measured final-volume inference", "decision": "correct", "explanation":
+    "The numerical source mass is retained on a nominal recipe basis; preserve the
+    original g amount and 1 L water context without claiming an independently measured
+    final concentration."}, {"layer": "normalized owner", "path": "data/normalized_yaml/bacterial/802_3_nacl.yaml",
+    "field_path": "ingredients[2].concentration", "ingredient": "Yeast extract", "record_value":
+    {"value": "2", "unit": "G_PER_L"}, "source_key": "togoM2103api", "source_locator":
+    "$.components[0].items[2]", "original_amount": 2, "original_unit": "g", "original_preparation_water":
+    "1 L", "numeric_value_matches_source": true, "stage": "main-medium original recipe;
+    no stock or measured final-volume inference", "decision": "correct", "explanation":
+    "The numerical source mass is retained on a nominal recipe basis; preserve the
+    original g amount and 1 L water context without claiming an independently measured
+    final concentration."}, {"layer": "normalized owner", "path": "data/normalized_yaml/bacterial/802_3_nacl.yaml",
+    "field_path": "ingredients[3].concentration", "ingredient": "NaCl", "record_value":
+    {"value": "30", "unit": "G_PER_L"}, "source_key": "togoM2103api", "source_locator":
+    "$.components[0].items[3]", "original_amount": 30, "original_unit": "g", "original_preparation_water":
+    "1 L", "numeric_value_matches_source": true, "stage": "main-medium original recipe;
+    no stock or measured final-volume inference", "decision": "correct", "explanation":
+    "The numerical source mass is retained on a nominal recipe basis; preserve the
+    original g amount and 1 L water context without claiming an independently measured
+    final concentration."}, {"layer": "normalized owner", "path": "data/normalized_yaml/bacterial/802_3_nacl.yaml",
+    "field_path": "ingredients[4].concentration", "ingredient": "Agar (if needed)",
+    "record_value": {"value": "15", "unit": "G_PER_L"}, "source_key": "togoM2103api",
+    "source_locator": "$.components[0].items[4]", "original_amount": 15, "original_unit":
+    "g", "original_preparation_water": "1 L", "numeric_value_matches_source": true,
+    "stage": "main-medium original recipe; no stock or measured final-volume inference",
+    "decision": "correct", "explanation": "The original 15 g agar amount is conditional,
+    if needed. Its numeric value is retained, but optional solidification must remain
+    explicit and must not be interpreted as a universal solid-agar recipe."}, {"layer":
+    "normalized owner", "path": "data/normalized_yaml/bacterial/802_3_nacl.yaml",
+    "field_path": "solutions[0].concentration", "ingredient": "Hipolypepton*", "record_value":
+    {"value": "10", "unit": "G_PER_L"}, "source_key": "togoM2103api", "source_locator":
+    "$.components[0].items[5]", "original_amount": 10, "original_unit": "g", "original_preparation_water":
+    "1 L", "numeric_value_matches_source": true, "stage": "main-medium original recipe;
+    no stock or measured final-volume inference", "decision": "correct", "explanation":
+    "The original 10 g amount denotes the supplier-footnoted commercial ingredient,
+    not the dose or composition of an unidentified stock. Restore material representation
+    while retaining the original amount/basis and supplier conflict."}, {"layer":
+    "normalized owner", "path": "data/normalized_yaml/bacterial/802_3_nacl.yaml",
+    "field_path": "ph_value / preparation_steps (source-only pH context)", "source_key":
+    "togoM2103api", "source_locator": "$.meta.ph; $.comments[0]; corresponding NBRC
+    pH row", "original_value": "7.0", "decision": "add", "explanation": "The source
+    gives pH 7.0, absent from this record. Preserve the stated condition without inventing
+    a titrant, incubation context or preparation method."}]'
+- assessment_id: forms
+  area: grounding
+  topic: Chemical forms and limits of secondary index matches
+  outcome: supported
+  summary: Water and sodium chloride labels resolve, and the explicitly written MgSO4·7H2O
+    source form matches CHEBI:31795 heptahydrate metadata and formula. All three current
+    secondary keys have pinned-index rows. That index also assigns CHEBI:31795 to
+    a MgSO4·H2O label, so secondary key presence alone is not evidence for hydrate
+    correctness; here the source spelling and primary ontology metadata provide the
+    form support. Yeast extract and agar remain undefined materials without invented
+    pure-molecule mappings.
+  target_ids:
+  - CultureMech:008294
+  evidence_ids:
+  - record
+  - mim
+  - chebi15377
+  - chebi26710
+  - chebi31795
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - togo-5
+  - nbrc-5
+  - togo-10
+  - nbrc-10
+  - togo-2
+  - nbrc-2
+  - togo-3
+  - nbrc-3
+- assessment_id: hipolypepton
+  area: identity
+  topic: Supplier footnote versus unresolved stock representation
+  outcome: concern
+  summary: Every layer places Hipolypepton in solutions with an empty composition
+    and the name Unknown solution. The original NBRC table supplies a direct commercial
+    material and a supplier footnote, not a stock recipe. TOGO’s ingredient annotation
+    names Nihon seiyaku while its comment repeats the original Wako footnote; the
+    two supplier names are not silently treated as equivalent. No molecular or stock
+    composition is inferred.
+  target_ids:
+  - CultureMech:008294
+  evidence_ids:
+  - record
+  - migration
+  - quantities
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - togo-5
+  - nbrc-5
+  - togo-10
+  - nbrc-10
+  - togo-2
+  - nbrc-2
+  - togo-3
+  - nbrc-3
+- assessment_id: conditions
+  area: scope
+  topic: Optional agar, pH and source-only procedural limits
+  outcome: concern
+  summary: All four source pages give pH 7.0 and mark agar if needed. The name preserves
+    that agar condition, but unconditional SOLID_AGAR classification lacks an explicit
+    selected solid variant and erases the liquid option at record level. Neither layer
+    retains pH. No additional sterilization, incubation, cooling or storage method
+    is stated in these source captures, so none is supplied.
+  target_ids:
+  - CultureMech:008294
+  evidence_ids:
+  - record
+  - importer
+  - quantities
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - togo-5
+  - nbrc-5
+  - togo-10
+  - nbrc-10
+  - togo-2
+  - nbrc-2
+  - togo-3
+  - nbrc-3
+- assessment_id: variants
+  area: scope
+  topic: Resolvable parent links and source-specific salinity differences
+  outcome: concern
+  summary: The 2% owner lists the 3%, 5% and 10% children; each child points back
+    by matching ID/path. This is legitimate salinity-variant context rather than identity
+    equivalence. Source NaCl masses are 20, 30, 50 and 100 g for the respective listed
+    recipes. Generic name-derived modification notes still defer verification and
+    must not be read as completed source review. The current merge guard preserves
+    differing quantities; no historical causal claim is made.
+  target_ids:
+  - CultureMech:008294
+  evidence_ids:
+  - record
+  - variant-writer
+  - merge-guard
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - togo-5
+  - nbrc-5
+  - togo-10
+  - nbrc-10
+  - togo-2
+  - nbrc-2
+  - togo-3
+  - nbrc-3
+- assessment_id: classification
+  area: scope
+  topic: Complex mixture classification and absent growth claims
+  outcome: supported
+  summary: Yeast extract and the commercial peptone support complex/undefined composition.
+    The broad bacterial folder and cultivation application do not certify any organism’s
+    growth. No organism IDs, KG correspondence, named strain performance or gene/pathway
+    assertions occur in these target/owner files; no new such claims are introduced.
+  target_ids:
+  - CultureMech:008294
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - togo-5
+  - nbrc-5
+  - togo-10
+  - nbrc-10
+  - togo-2
+  - nbrc-2
+  - togo-3
+  - nbrc-3
+- assessment_id: evidence
+  area: evidence
+  topic: Claim-level provenance and actual reference-check scope
+  outcome: concern
+  summary: Original provider identifiers and URLs remain in notes, but no narrow quantity/preparation
+    evidence or bibliographic references are attached. The target reference recipe
+    performed zero checks. Each salinity source and the supplier-footnote conflict
+    must remain distinguishable when adding evidence; a generic source link is not
+    support for their equivalence.
+  target_ids:
+  - CultureMech:008294
+  evidence_ids:
+  - record
+  - validate-references
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - togo-5
+  - nbrc-5
+  - togo-10
+  - nbrc-10
+  - togo-2
+  - nbrc-2
+  - togo-3
+  - nbrc-3
+- assessment_id: history
+  area: provenance
+  topic: Existing event sequence and current versus historical code
+  outcome: supported
+  summary: All timestamps in the 12-event generated target and the four 10-event owners
+    parse with timezones. The target preserves the 5% owner history and adds two merge
+    events naming all four recipes. The recorded migration and heptahydrate-grounding
+    events are retained. Existing variant links do not identify their historical actor
+    here; current writer inspection does not reconstruct that actor or the August
+    merge implementation.
+  target_ids:
+  - CultureMech:008294
+  evidence_ids:
+  - record
+  - migration
+  - merge-guard
+  - variant-writer
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+findings:
+- finding_id: f1
+  issue_key: CM008294-salinity-variant-conflation
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Four salinity variants were merged into a mismatched target
+  description: The target identifies the 5% source M1730/NBRC 939 but uses the 10%
+    owner’s NaCl value. It also lists 2%, 3% and 10% formulations as synonyms and
+    records a four-recipe merge. Exact source pages distinguish their NaCl amounts.
+    This changes which formulation the record denotes; it is a scientific identity
+    defect despite passing schema checks.
+  target_ids:
+  - CultureMech:008294
+  field_paths:
+  - ingredients[3].concentration
+  - synonyms
+  - merged_from
+  - media_term
+  - merge_fingerprint
+  evidence_ids:
+  - record
+  - quantities
+  - merge-guard
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - togo-5
+  - nbrc-5
+  - togo-10
+  - nbrc-10
+  - togo-2
+  - nbrc-2
+  - togo-3
+  - nbrc-3
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_5_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_10_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_2_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_3_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: CM008294-water-volume-unit
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Preparation water is encoded as mass concentration
+  description: Target and all four owners encode water as 1 G_PER_L, while all exact
+    sources specify 1 L. The dimensional mismatch is independent of the NaCl merge
+    error and cannot be repaired by assuming a water density or a final volume.
+  target_ids:
+  - CultureMech:008294
+  field_paths:
+  - ingredients[0].concentration
+  - preparation_steps
+  evidence_ids:
+  - record
+  - quantities
+  - importer
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - togo-5
+  - nbrc-5
+  - togo-10
+  - nbrc-10
+  - togo-2
+  - nbrc-2
+  - togo-3
+  - nbrc-3
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_5_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_10_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_2_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_3_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: CM008294-footnoted-ingredient-as-stock
+  category: identity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Hipolypepton is an empty stock placeholder
+  description: The commercial ingredient is represented as Unknown solution with empty
+    composition and a copied 10 G_PER_L amount. The source asterisk denotes a Wako
+    supplier footnote, not a stock boundary. Treating it as a missing stock misrepresents
+    the material and invites unsupported expansion; the TOGO annotation’s differing
+    supplier name must remain explicit.
+  target_ids:
+  - CultureMech:008294
+  field_paths:
+  - solutions[0]
+  - solutions[0].composition
+  - solutions[0].name
+  - solutions[0].concentration
+  evidence_ids:
+  - record
+  - migration
+  - quantities
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - togo-5
+  - nbrc-5
+  - togo-10
+  - nbrc-10
+  - togo-2
+  - nbrc-2
+  - togo-3
+  - nbrc-3
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_5_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_10_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_2_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_3_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.1
+  native_severity: P3
+  normalization_reason: P3 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: CM008294-optional-agar-scope
+  category: scope
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Optional agar is narrowed to an unconditional solid medium
+  description: The source and ingredient name explicitly say agar if needed, but all
+    records declare SOLID_AGAR without marking a selected solid variant. The current
+    representation does not faithfully retain the source’s liquid/solid option; a
+    correct conditional numeric dose alone does not resolve physical-state scope.
+  target_ids:
+  - CultureMech:008294
+  field_paths:
+  - physical_state
+  - ingredients[4]
+  - variants
+  evidence_ids:
+  - record
+  - quantities
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - togo-5
+  - nbrc-5
+  - togo-10
+  - nbrc-10
+  - togo-2
+  - nbrc-2
+  - togo-3
+  - nbrc-3
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_5_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_10_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_2_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_3_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f5
+  issue_key: CM008294-source-ph-omitted
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The source pH condition is missing
+  description: Every exact NBRC source and TOGO comment gives pH 7.0, absent from
+    target and all owners. This is an available formulation condition rather than
+    an optional field filled from general practice. No numeric pH or titrant should
+    be inferred beyond the stated source.
+  target_ids:
+  - CultureMech:008294
+  field_paths:
+  - ph_value
+  - ph_range
+  - preparation_steps
+  evidence_ids:
+  - record
+  - importer
+  - quantities
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - togo-5
+  - nbrc-5
+  - togo-10
+  - nbrc-10
+  - togo-2
+  - nbrc-2
+  - togo-3
+  - nbrc-3
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_5_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_10_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_2_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_3_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f6
+  issue_key: CM008294-source-evidence-gap
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Source-specific evidence and reviewed variant descriptions are missing
+  description: Recoverable source URLs are present in notes, but quantitative claims
+    and pH lack narrow evidence and source metadata. Variant descriptions still ask
+    for source verification, while the merged synonyms imply equivalence. The reference
+    check covered zero excerpts.
+  target_ids:
+  - CultureMech:008294
+  field_paths:
+  - ingredients[*].evidence
+  - evidence
+  - references
+  - variant_modifications
+  - parent_media
+  evidence_ids:
+  - record
+  - validate-references
+  - variant-writer
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - togo-5
+  - nbrc-5
+  - togo-10
+  - nbrc-10
+  - togo-2
+  - nbrc-2
+  - togo-3
+  - nbrc-3
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_5_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_10_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_2_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_3_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Keep all four stable source IDs and their salinity variants distinct.
+    Reconcile generated coverage against every explicit normalized contributor using
+    the current compatible-formulation guard, preserve 5% identity and its original
+    source amount, and confirm no distinct variant is represented as a synonym. Review
+    current owner corrections before separately authorized regeneration.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:008294
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_5_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_10_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_2_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_3_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Preserve each source’s 1 L preparation-water volume and original mass/batch
+    basis in maintained context. Remove the unsupported mass-concentration interpretation,
+    verify importer behavior, and regenerate only after owner review.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:008294
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_5_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_10_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_2_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_3_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Restore the source-supported commercial material as an ingredient with
+    its original mass and exact supplier-footnote provenance. Preserve the TOGO/NBRC
+    supplier distinction until resolved; do not invent stock composition, pure-chemical
+    identity or supplier equivalence. Verify the asterisk migration path before regeneration.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:008294
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_5_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_10_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_2_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_3_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Represent the agar option and any selected solid variant explicitly,
+    keeping the source recipe’s conditional scope and original amount. Do not silently
+    make agar mandatory or infer a liquid-only formula; verify the chosen supported
+    representation and regenerate.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:008294
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_5_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_10_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_2_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_3_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a5
+  description: Preserve source pH 7.0 with exact evidence in each maintained formulation,
+    without adding an unstated titrant, measurement method or incubation condition.
+    Verify current importer handling and regenerate after owner review.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:008294
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_5_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_10_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_2_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_3_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a6
+  description: Attach exact ingredient/condition evidence and source-specific metadata,
+    replace deferred name-only variant wording with the verified bounded source comparison,
+    and retain existing history while appending only actual later curation. Keep all
+    four source accessions separate.
+  finding_ids:
+  - f6
+  target_ids:
+  - CultureMech:008294
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_5_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_10_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_2_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/802_3_nacl.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- All four normalized contributors are context for this one generated target, not
+  additional reviewed targets. Their explicit merge-event membership and stable IDs
+  are verified independently of the parent-media link.
+- NBRC and TOGO provide original masses with 1 L distilled water, not a measured final
+  volume. Retain this nominal source basis; no water density, molecular-weight conversion
+  or implicit stock dilution is introduced.
+- The exact NBRC pages do not specify sterilization, incubation or storage. No generic
+  procedure is substituted. Catalogue identity and general cultivation filing do not
+  establish strain-specific growth.
+- TOGO’s Hipolypepton ontology annotation names Nihon seiyaku, while the original
+  NBRC footnote names Wako. Supplier equivalence and the mixture’s internal composition
+  are not established by this review.
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+tags:
+- unreviewed-records
+- batch-012
+- generated-medium
