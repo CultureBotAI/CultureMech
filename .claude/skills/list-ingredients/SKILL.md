@@ -6,7 +6,7 @@ metadata:
   category: reporting
   requires_database: false
   requires_internet: false
-  version: 1.2.0
+  version: 1.3.0
 ---
 
 # List ingredients across the corpus
