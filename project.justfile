@@ -2820,6 +2820,11 @@ build-ingredient-release output_dir:
 verify-ingredient-release bundle_dir:
     uv run --frozen python scripts/ingredient_release_bundle.py verify --bundle-dir "{{bundle_dir}}"
 
+# Verify against the digest independently recorded by the producer/reviewer.
+[group('Ingredients')]
+verify-ingredient-handoff bundle_dir manifest_sha256:
+    uv run --frozen python scripts/ingredient_release_bundle.py verify --bundle-dir "{{bundle_dir}}" --expected-manifest-sha256 "{{manifest_sha256}}"
+
 # =============================================================================
 # INGREDIENT UMAP VISUALIZATION
 # =============================================================================

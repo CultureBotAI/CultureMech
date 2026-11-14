@@ -39,6 +39,10 @@ preserves the ordinary `output/` files, records input membership/content and
 code/schema/MIM-index hashes, and verifies output hashes and row accounting.
 A missing or changed input invalidates the bundle. A manifest is reproducibility
 evidence, not scientific review or permission to install a mapping release.
+For downstream intake, run `just verify-ingredient-handoff BUNDLE SHA256` using
+the manifest digest independently recorded in the reviewed producer handoff.
+The ordinary verifier checks local consistency; it cannot authenticate a
+manifest supplied alongside the same untrusted products.
 
 Before a first full run with changed code, use one actual recipe in an isolated
 input directory through the same `build`/`verify` CLI. Report it as a subset

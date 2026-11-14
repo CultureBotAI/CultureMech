@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import shutil
 
 import ingredient_release_bundle as bundle
 import pytest
@@ -194,3 +195,81 @@ def test_changed_implementation_fails_currentness(inputs, candidate, monkeypatch
 def test_outputs_inside_input_tree_are_refused(inputs):
     with pytest.raises(bundle.BundleError, match="outside the scanned input"):
         bundle.build(inputs, inputs / "output")
+
+
+def test_unpinned_verification_reports_local_consistency_only(inputs, candidate):
+    output, manifest = candidate
+    result = bundle.verify(output, inputs)
+    assert result["assurance"] == "local_consistency_only"
+    assert result["recorded_source_commit"] == manifest["git"]["commit"]
+    assert "not independently verified" in result["qualification"]
+
+
+def test_pinned_verification_rejects_changed_origin_before_parsing(inputs, candidate):
+    output, manifest = candidate
+    pin = bundle.fingerprint(output / "manifest.json")["sha256"]
+    assert bundle.verify(output, inputs, expected_manifest_sha256=pin)["assurance"] == (
+        "externally_pinned_manifest"
+    )
+    manifest["git"]["commit"] = "0" * 40
+    (output / "manifest.json").write_text(json.dumps(manifest), encoding="utf-8")
+    with pytest.raises(bundle.BundleError, match="expected handoff pin"):
+        bundle.verify(output, inputs, expected_manifest_sha256=pin)
+    # A changed manifest must fail its pin even before JSON parsing is attempted.
+    (output / "manifest.json").write_text("not-json", encoding="utf-8")
+    with pytest.raises(bundle.BundleError, match="expected handoff pin"):
+        bundle.verify(output, inputs, expected_manifest_sha256=pin)
+
+
+def test_duplicate_mim_metadata_must_match_actual_pin_even_without_manifest_pin(inputs, candidate):
+    output, manifest = candidate
+    manifest["mim_label_index"]["source_commit"] = "0" * 40
+    (output / "manifest.json").write_text(json.dumps(manifest), encoding="utf-8")
+    with pytest.raises(bundle.BundleError, match="MIM label-index metadata"):
+        bundle.verify(output, inputs)
+
+
+def test_manifest_change_during_verification_fails(inputs, candidate, monkeypatch):
+    output, manifest = candidate
+    inventory = bundle.product_inventory
+    pin = bundle.fingerprint(output / "manifest.json")["sha256"]
+
+    def changing_manifest(directory, counts):
+        result = inventory(directory, counts)
+        manifest["git"]["commit"] = "0" * 40
+        (directory / "manifest.json").write_text(json.dumps(manifest), encoding="utf-8")
+        return result
+
+    monkeypatch.setattr(bundle, "product_inventory", changing_manifest)
+    with pytest.raises(bundle.BundleError, match="Manifest changed during verification"):
+        bundle.verify(output, inputs, expected_manifest_sha256=pin)
+
+
+def test_full_catalog_relocation_requires_pin_and_exact_input_membership(
+    inputs, tmp_path, monkeypatch
+):
+    # Use a tiny authoritative corpus to exercise the full-catalog path without
+    # scanning production records. The native parser and artifact writers run.
+    monkeypatch.setattr(bundle, "DEFAULT_INPUT", inputs)
+    output = tmp_path / "full-candidate"
+    manifest = bundle.build(inputs, output)
+    assert manifest["scope"] == "full_catalog_direct_ingredients"
+    pin = bundle.fingerprint(output / "manifest.json")["sha256"]
+    relocated = tmp_path / "relocated"
+    shutil.copytree(inputs, relocated)
+    with pytest.raises(bundle.BundleError, match="relocation requires"):
+        bundle.verify(output, relocated)
+    result = bundle.verify(output, relocated, expected_manifest_sha256=pin)
+    assert result["scope"] == "full_catalog_direct_ingredients"
+    assert result["relocated_catalog"] is True
+    assert result["assurance"] == "externally_pinned_manifest"
+    (relocated / "added.yaml").write_text("new: record\n", encoding="utf-8")
+    with pytest.raises(bundle.BundleError, match="Input membership or content"):
+        bundle.verify(output, relocated, expected_manifest_sha256=pin)
+
+
+def test_recorded_subset_is_never_promoted_by_destination(inputs, candidate, monkeypatch):
+    output, _ = candidate
+    monkeypatch.setattr(bundle, "DEFAULT_INPUT", inputs)
+    pin = bundle.fingerprint(output / "manifest.json")["sha256"]
+    assert bundle.verify(output, inputs, expected_manifest_sha256=pin)["scope"] == "subset"

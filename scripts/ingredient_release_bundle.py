@@ -3,7 +3,8 @@
 
 Inputs: normalized YAML, native aggregator/schema and packaged MIM label index.
 Outputs: existing five aggregation products plus a manifest in a new directory.
-Serves issue #682; never publishes a MIM release.
+Serves issue #682 and review fixes #685 (manifest pin) / #686 (relocation).
+Never publishes a MIM release.
 """
 
 from __future__ import annotations
@@ -15,6 +16,7 @@ import importlib.metadata
 import json
 import os
 import platform
+import re
 import subprocess
 import sys
 import tempfile
@@ -283,8 +285,23 @@ def build(input_dir: Path, output_dir: Path | None, *, plan: bool = False) -> di
         raise BundleError(f"{exc}; incomplete evidence retained at {stage}") from exc
 
 
-def verify(bundle_dir: Path, input_dir: Path | None = None) -> dict[str, Any]:
-    manifest = json.loads((bundle_dir / "manifest.json").read_text(encoding="utf-8"))
+def verify(
+    bundle_dir: Path,
+    input_dir: Path | None = None,
+    *,
+    expected_manifest_sha256: str | None = None,
+) -> dict[str, Any]:
+    manifest_path = bundle_dir / "manifest.json"
+    manifest_bytes = manifest_path.read_bytes()
+    manifest_sha256 = hashlib.sha256(manifest_bytes).hexdigest()
+    if expected_manifest_sha256 is not None:
+        if not re.fullmatch(r"[0-9a-f]{64}", expected_manifest_sha256):
+            raise BundleError(
+                "Expected manifest SHA256 must be 64 lowercase hexadecimal characters"
+            )
+        if manifest_sha256 != expected_manifest_sha256:
+            raise BundleError("Manifest SHA256 differs from the expected handoff pin")
+    manifest = json.loads(manifest_bytes)
     if manifest.get("contract") != CONTRACT or manifest.get("status") != "CANDIDATE":
         raise BundleError("Unsupported candidate manifest")
     if manifest.get("integrated_release") is not False or manifest.get("coverage") != SCOPE:
@@ -292,9 +309,24 @@ def verify(bundle_dir: Path, input_dir: Path | None = None) -> dict[str, Any]:
     if set(manifest["products"]) != set(PRODUCTS):
         raise BundleError("Candidate product membership differs from contract")
     source = input_dir.resolve() if input_dir else (REPO_ROOT / manifest["input_dir"]).resolve()
-    expected_scope = "full_catalog_direct_ingredients" if source == DEFAULT_INPUT else "subset"
-    if manifest["scope"] != expected_scope:
-        raise BundleError("Candidate scope does not match the input directory")
+    scope = manifest["scope"]
+    if scope not in {"full_catalog_direct_ingredients", "subset"}:
+        raise BundleError("Unsupported candidate scope")
+    relocated_catalog = scope == "full_catalog_direct_ingredients" and source != DEFAULT_INPUT
+    if relocated_catalog and (input_dir is None or expected_manifest_sha256 is None):
+        raise BundleError(
+            "Candidate scope does not match the input directory; full-catalog relocation "
+            "requires explicit --input-dir and --expected-manifest-sha256"
+        )
+    # Retain the origin scope. Even a byte-identical subset placed at the default
+    # input path is still a subset candidate, never a promoted catalog claim.
+    actual_mim_metadata = json.loads(
+        (
+            REPO_ROOT / "src/culturemech/data/mediaingredientmech/label_index.metadata.json"
+        ).read_text(encoding="utf-8")
+    )
+    if manifest["mim_label_index"] != actual_mim_metadata:
+        raise BundleError("Declared MIM label-index metadata differs from the pinned metadata")
     current = corpus_inventory(source)
     if current != manifest["inputs"]:
         raise BundleError("Input membership or content differs from candidate")
@@ -308,12 +340,26 @@ def verify(bundle_dir: Path, input_dir: Path | None = None) -> dict[str, Any]:
         raise BundleError("Candidate artifacts or accounting differ from manifest")
     if current != corpus_inventory(source) or manifest["dependencies"] != dependency_inventory():
         raise BundleError("Inputs or implementation changed during verification")
+    if manifest_path.read_bytes() != manifest_bytes:
+        raise BundleError("Manifest changed during verification")
+    assurance = (
+        "externally_pinned_manifest" if expected_manifest_sha256 else "local_consistency_only"
+    )
     return {
         "status": "VERIFIED_CANDIDATE",
-        "scope": manifest["scope"],
+        "scope": scope,
         "counts": counts,
-        "source_commit": manifest["git"]["commit"],
-        "qualification": "Current input and artifact bytes match; not an integrated MIM/KGM release.",
+        "recorded_source_commit": manifest["git"]["commit"],
+        "manifest_sha256": manifest_sha256,
+        "assurance": assurance,
+        "relocated_catalog": relocated_catalog,
+        "qualification": (
+            "Manifest matches the supplied handoff pin; current input and artifact bytes match. "
+            "This binds the declared origin to that pin, not scientific or integrated-release approval."
+            if expected_manifest_sha256
+            else "Local consistency only; recorded source commit is not independently verified. "
+            "Current input and artifact bytes match; not an integrated MIM/KGM release."
+        ),
     }
 
 
@@ -326,13 +372,25 @@ def main(argv: list[str] | None = None) -> int:
     builder.add_argument("--plan", action="store_true", help="Inventory inputs without generation")
     verifier = commands.add_parser("verify", help="Check artifacts and current input bytes")
     verifier.add_argument("--bundle-dir", type=Path, required=True)
-    verifier.add_argument("--input-dir", type=Path, help="Relocated identical input directory")
+    verifier.add_argument(
+        "--input-dir",
+        type=Path,
+        help="Identical input directory; full-catalog relocation also requires the manifest pin",
+    )
+    verifier.add_argument(
+        "--expected-manifest-sha256",
+        help="SHA256 of manifest.json from the trusted handoff, checked before parsing",
+    )
     args = parser.parse_args(argv)
     try:
         result = (
             build(args.input_dir, args.output_dir, plan=args.plan)
             if args.command == "build"
-            else verify(args.bundle_dir, args.input_dir)
+            else verify(
+                args.bundle_dir,
+                args.input_dir,
+                expected_manifest_sha256=args.expected_manifest_sha256,
+            )
         )
         if args.command == "build" and not args.plan:
             result = {key: result[key] for key in ("status", "scope", "counts")}

@@ -73,6 +73,24 @@ retain the generated bundle in durable evidence storage. Generated outputs stay
 gitignored. A dirty-tree candidate needs its exact changes committed and a fresh
 build before it can serve as a release origin.
 
+The producer records `shasum -a 256 BUNDLE/manifest.json` in the reviewed handoff.
+The consumer verifies using that independently obtained digest:
+
+```bash
+just verify-ingredient-handoff output/ingredient-release-candidate "$EXPECTED_MANIFEST_SHA256"
+```
+
+Do not calculate the expected digest from a newly received manifest and treat
+that as authentication. Ordinary `verify-ingredient-release` checks local
+consistency only; its recorded source revision is not an independent provenance
+attestation. A pinned handoff also verifies the exact manifest bytes before and
+after checking its inputs and products.
+
+For an identical preserved corpus outside the checkout's default input path,
+call the verifier with both `--input-dir` and `--expected-manifest-sha256`.
+Its exact membership and bytes must match; the pinned original scope is retained.
+Moving a subset into the default directory never makes it a full-catalog origin.
+
 CSV parsing is required: embedded newlines and quoting make physical line counts
 unsafe. Require zero input errors, complete occurrence/list accounting, and
 explicit mapped/unmapped/ambiguous outcomes. An unresolved row is retained work,

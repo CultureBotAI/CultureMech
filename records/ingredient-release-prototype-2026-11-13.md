@@ -44,6 +44,20 @@ The new inventory method preserves native direct-containment and identity
 semantics. It does not release the MIM campaign or install mappings into KGM.
 The coordinated release gates are in [the guide](../docs/ingredient_release.md).
 
+Independent read-only review of PR #684 at `93539bea6e` found two additional
+issues before the full candidate was accepted:
+
+- [Issue 685](https://github.com/CultureBotAI/CultureMech/issues/685): downstream
+  verification needs an independently recorded manifest digest and explicit
+  distinction from local consistency checks.
+- [Issue 686](https://github.com/CultureBotAI/CultureMech/issues/686): the CLI's
+  promise of relocated input verification exceeded its path-based scope check.
+
+The initial local full-catalog attempt was stopped while still scanning, with
+its incomplete evidence retained, so corrected producer code could be tested
+through a new canary and full run. No successful bundle was published by that
+attempt. The M5 adoption process was unaffected.
+
 ## Validation
 
 Validation results will be appended after the one-record canary and full
