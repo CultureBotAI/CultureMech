@@ -1082,7 +1082,7 @@ def main():
     }
     assert {x["severity"] for x in findings} == {"blocker", "major", "minor"}
     with (ROOT / D / "review.yaml").open("x") as h:
-        yaml.dump(review, h, Dumper=NoAliasDumper, sort_keys=False, allow_unicode=True, width=110)
+        yaml.dump(review, h, Dumper=NoAliasDumper, sort_keys=False, allow_unicode=True)
     for p, h in frozen.items():
         assert digest(p) == h, p
     auditpins = [{"path": p, "sha256": h} for p, h in frozen.items()]

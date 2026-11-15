@@ -17,6 +17,7 @@ Further required local inputs are the named original native/check/test/recovery
 receipts and streams, three immutable review pairs, helper-pre-format manifest,
 current helpers, provenance archives and historical Git objects. Optional --pr
 records a PR value; --runtime-only suppresses the public checkpoint write.
+Repeatable --followup-receipt binds successful issue756 checks and their exact streams.
 Outputs: timestamped runtime checkpoint JSON and CURRENT.md under the ignored
 run directory; by default reviews/batch079-recovery-20261115.json, preserving
 any previous public checkpoint in an exclusive ignored archive. Git commands
@@ -65,6 +66,7 @@ def main() -> None:
     parser.add_argument("--pr", default="pending")
     parser.add_argument("--history-manifest-sha256", required=True)
     parser.add_argument("--final-fast-receipt-sha256", required=True)
+    parser.add_argument("--followup-receipt", type=Path, action="append", default=[])
     args = parser.parse_args()
     assert Path.cwd().resolve() == ROOT
     now = datetime.now(timezone.utc)
@@ -333,6 +335,24 @@ def main() -> None:
             }
         )
     helpers = []
+    followup_pins = []
+    for path in args.followup_receipt:
+        receipt = json.loads((ROOT / path).read_text())
+        assert receipt["label"].startswith("issue756-")
+        assert receipt["exit"] == receipt["runner_exit"] == 0
+        for stream in ("stdout", "stderr"):
+            assert pin(Path(receipt[stream]))["sha256"] == receipt[stream + "_sha256"]
+        followup_pins.append(
+            {
+                **pin(path),
+                "label": receipt["label"],
+                "exit": receipt["exit"],
+                "started_at": receipt["started_at"],
+                "finished_at": receipt["finished_at"],
+                "streams": [pin(Path(receipt["stdout"])), pin(Path(receipt["stderr"]))],
+            }
+        )
+
     original = json.loads((ROOT / RUN / "helper-pre-format-manifest.json").read_text())
     before = {item["path"]: item for item in original}
     assert len(before) == 8
@@ -348,7 +368,7 @@ def main() -> None:
             row["retained_pre_format_sha256"] = before[str(relative)]["sha256"]
             row["retained_pre_format_git_commit"] = ARCHIVE_COMMIT
             row["byte_relation"] = (
-                "Historical retained bytes are in the archive commit; current formatting/lint edits and the explicitly documented record10 required-input CLI repair do not restamp immutable review inputs."
+                "Historical retained bytes are in the archive commit; current formatting/lint edits, the record10 required-input CLI repair and issue756 review-draft width successors do not restamp immutable review inputs."
             )
         helpers.append(row)
     history = [
@@ -392,13 +412,24 @@ def main() -> None:
         ],
         "issues": [
             "https://github.com/CultureBotAI/CultureMech/issues/" + str(n)
-            for n in (749, 750, 751, 752, 753, 754)
+            for n in (749, 750, 751, 752, 753, 754, 756)
         ],
         "pr692": "Separate draft at last independently verified02e005db42246b8a04ece9df4b5657e036fa5697, includes684 and had9greenchecks. Its scientific/source/export gates remain separate; this task did not mutate it.",
         "preservation": "Existing reviews and historical01–06/09 artifacts remain unchanged;26historical pins were independently rehashed. Original failures, shallow-clone diagnostics, unsupported list flag and record10 source timeout remain retained. No merge, force push, cleanup, paid research or historical batch publication.",
         "reproducibility": "A fresh checkout can inspect published code, exact historical source text, scientific reviews and input hashes. Reproducing authoring needs the retained ignored raw captures, peer artifacts, original receipt streams and matching environment. No helper rerun constitutes a fresh scientific review.",
         "documents_access": "The historical macOS Documents EPERM was separate from completed SSH technical checks. The explicit agent-work recovery checkout is usable; Documents was not retried or permissions changed.",
     }
+    if followup_pins:
+        snapshot["post_ci_review_width_repair"] = {
+            "issue": "https://github.com/CultureBotAI/CultureMech/issues/756",
+            "failed_candidate": "61d501fd9eff12a387a2e013a7f983801d9a9809",
+            "failed_ci_job": "https://github.com/CultureBotAI/CultureMech/actions/runs/43696509390/job/132758127461",
+            "change": "Removed only explicit YAML width keywords from three draft review builders; no corpus guard or scientific source changed.",
+            "checks": followup_pins,
+            "scope": "Focused width-equivalence, record-IO, review-contract, portability, native saved-review and static checks; see exact receipt streams.",
+            "full_suite_after_repair": "Not repeated locally; new-head CI remains required.",
+        }
+
     if not args.runtime_only:
         public_path = ROOT / "reviews/batch079-recovery-20261115.json"
         if public_path.exists():

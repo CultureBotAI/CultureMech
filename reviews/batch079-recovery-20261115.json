@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15T08:48:34.777509Z",
+  "updated_at": "2026-11-15T09:10:23.335407Z",
   "scope": "Bounded scientific assessment of recovered batch079 records07,08,10; no full-batch completion or source repair is claimed.",
   "baseline": "dda27db28f1e5f4f05da6d92fbd2cc1bd6e8add3",
   "original_retained_helper_commit": "71d94151e0090b8f99cb828cb94e36ee53ed0156",
@@ -83,36 +83,36 @@
       "bytes": 30892,
       "retained_pre_format_sha256": "aee58949ebdcfba55f07a119a381a05329cf474ebef0de35e106621c6ebe99cf",
       "retained_pre_format_git_commit": "71d94151e0090b8f99cb828cb94e36ee53ed0156",
-      "byte_relation": "Historical retained bytes are in the archive commit; current formatting/lint edits and the explicitly documented record10 required-input CLI repair do not restamp immutable review inputs."
+      "byte_relation": "Historical retained bytes are in the archive commit; current formatting/lint edits, the record10 required-input CLI repair and issue756 review-draft width successors do not restamp immutable review inputs."
     },
     {
       "path": "scripts/batch079_build_record08_review.py",
-      "sha256": "7c431eebba20dc74e827862f92baf47da0942e56b0e0a4d06732184320a16afb",
-      "bytes": 52372,
+      "sha256": "a2ce74fa80ad8cc95657f449a3e302dacc015afe79a0c6999d03e9dc48a7ac4b",
+      "bytes": 52361,
       "retained_pre_format_sha256": "eaf75f36a532d5407a2d6eaca393e1078f84b14b2e042b64749e9e939f89c36c",
       "retained_pre_format_git_commit": "71d94151e0090b8f99cb828cb94e36ee53ed0156",
-      "byte_relation": "Historical retained bytes are in the archive commit; current formatting/lint edits and the explicitly documented record10 required-input CLI repair do not restamp immutable review inputs."
+      "byte_relation": "Historical retained bytes are in the archive commit; current formatting/lint edits, the record10 required-input CLI repair and issue756 review-draft width successors do not restamp immutable review inputs."
     },
     {
       "path": "scripts/batch079_build_record08_review_v2.py",
-      "sha256": "b1f825bad56baa9dff8947ed34290fe7db7e17693d7430565e88854ad58969f2",
-      "bytes": 55533,
+      "sha256": "e0881ab5dbde01d13395a581afcafee4a6f95a210767d637b1e14ec07991dc7e",
+      "bytes": 55522,
       "retained_pre_format_sha256": "502b88fc24fdaa85c58a0af6c23af9152f69b6756942bd8826bec26ccf8e2eab",
       "retained_pre_format_git_commit": "71d94151e0090b8f99cb828cb94e36ee53ed0156",
-      "byte_relation": "Historical retained bytes are in the archive commit; current formatting/lint edits and the explicitly documented record10 required-input CLI repair do not restamp immutable review inputs."
+      "byte_relation": "Historical retained bytes are in the archive commit; current formatting/lint edits, the record10 required-input CLI repair and issue756 review-draft width successors do not restamp immutable review inputs."
     },
     {
       "path": "scripts/batch079_build_record10_review.py",
-      "sha256": "0b13464118a29b87a9f31463ee782ad3e14de9b735c2acb0bba2d00166d1ce99",
-      "bytes": 32148,
+      "sha256": "9e1288e6855e2d49ca71ef454b936d23ad4ab1f1e7f3b7184dd118d8c346a27d",
+      "bytes": 32137,
       "retained_pre_format_sha256": "508a865dec7a184b0d7ba8facfd1d7b0233e805d40aa29d2ae4f7f1f3b08090e",
       "retained_pre_format_git_commit": "71d94151e0090b8f99cb828cb94e36ee53ed0156",
-      "byte_relation": "Historical retained bytes are in the archive commit; current formatting/lint edits and the explicitly documented record10 required-input CLI repair do not restamp immutable review inputs."
+      "byte_relation": "Historical retained bytes are in the archive commit; current formatting/lint edits, the record10 required-input CLI repair and issue756 review-draft width successors do not restamp immutable review inputs."
     },
     {
       "path": "scripts/batch079_finalize_checkpoint.py",
-      "sha256": "57c01e1b13be03bc6f2c6b73c36a5f0f093d1d4de3fd3b5c32a0663db147ef0f",
-      "bytes": 22924
+      "sha256": "a9dd870fee6b7c8042e507220ba8da5f5a6db002263e005566238e1616c9a8a7",
+      "bytes": 24661
     },
     {
       "path": "scripts/batch079_record07_inventory.py",
@@ -120,7 +120,7 @@
       "bytes": 4016,
       "retained_pre_format_sha256": "79c29544e484721dfb586ed306ba876af7a4b3ff4e54fdc1e9e1902e9f9d9fce",
       "retained_pre_format_git_commit": "71d94151e0090b8f99cb828cb94e36ee53ed0156",
-      "byte_relation": "Historical retained bytes are in the archive commit; current formatting/lint edits and the explicitly documented record10 required-input CLI repair do not restamp immutable review inputs."
+      "byte_relation": "Historical retained bytes are in the archive commit; current formatting/lint edits, the record10 required-input CLI repair and issue756 review-draft width successors do not restamp immutable review inputs."
     },
     {
       "path": "scripts/batch079_record08_metadata_precision.py",
@@ -128,7 +128,7 @@
       "bytes": 5921,
       "retained_pre_format_sha256": "843892ab47e8779a7c61950fc46bbfc7825a53a65f01fc1b7a62c3ffa2050b0b",
       "retained_pre_format_git_commit": "71d94151e0090b8f99cb828cb94e36ee53ed0156",
-      "byte_relation": "Historical retained bytes are in the archive commit; current formatting/lint edits and the explicitly documented record10 required-input CLI repair do not restamp immutable review inputs."
+      "byte_relation": "Historical retained bytes are in the archive commit; current formatting/lint edits, the record10 required-input CLI repair and issue756 review-draft width successors do not restamp immutable review inputs."
     },
     {
       "path": "scripts/batch079_run_check.py",
@@ -136,7 +136,7 @@
       "bytes": 4142,
       "retained_pre_format_sha256": "d49b84a5864a3faa4c98996186d3917991b997fcc4dd2a8a0031431fae7cf440",
       "retained_pre_format_git_commit": "71d94151e0090b8f99cb828cb94e36ee53ed0156",
-      "byte_relation": "Historical retained bytes are in the archive commit; current formatting/lint edits and the explicitly documented record10 required-input CLI repair do not restamp immutable review inputs."
+      "byte_relation": "Historical retained bytes are in the archive commit; current formatting/lint edits, the record10 required-input CLI repair and issue756 review-draft width successors do not restamp immutable review inputs."
     },
     {
       "path": "scripts/batch079_run_check_v2.py",
@@ -144,7 +144,12 @@
       "bytes": 4706,
       "retained_pre_format_sha256": "3655970eaa14fe87473cb7c79bd25f41d815401d95584706a70aab843f19dfd9",
       "retained_pre_format_git_commit": "71d94151e0090b8f99cb828cb94e36ee53ed0156",
-      "byte_relation": "Historical retained bytes are in the archive commit; current formatting/lint edits and the explicitly documented record10 required-input CLI repair do not restamp immutable review inputs."
+      "byte_relation": "Historical retained bytes are in the archive commit; current formatting/lint edits, the record10 required-input CLI repair and issue756 review-draft width successors do not restamp immutable review inputs."
+    },
+    {
+      "path": "scripts/batch079_verify_width_compatibility.py",
+      "sha256": "440f488332fe5580f8e2040e3d88cd751c218de69b7a4fed45f4d9017319785c",
+      "bytes": 4517
     }
   ],
   "historical_source_archives": [
@@ -596,10 +601,126 @@
     "https://github.com/CultureBotAI/CultureMech/issues/751",
     "https://github.com/CultureBotAI/CultureMech/issues/752",
     "https://github.com/CultureBotAI/CultureMech/issues/753",
-    "https://github.com/CultureBotAI/CultureMech/issues/754"
+    "https://github.com/CultureBotAI/CultureMech/issues/754",
+    "https://github.com/CultureBotAI/CultureMech/issues/756"
   ],
   "pr692": "Separate draft at last independently verified02e005db42246b8a04ece9df4b5657e036fa5697, includes684 and had9greenchecks. Its scientific/source/export gates remain separate; this task did not mutate it.",
   "preservation": "Existing reviews and historical01\u201306/09 artifacts remain unchanged;26historical pins were independently rehashed. Original failures, shallow-clone diagnostics, unsupported list flag and record10 source timeout remain retained. No merge, force push, cleanup, paid research or historical batch publication.",
   "reproducibility": "A fresh checkout can inspect published code, exact historical source text, scientific reviews and input hashes. Reproducing authoring needs the retained ignored raw captures, peer artifacts, original receipt streams and matching environment. No helper rerun constitutes a fresh scientific review.",
-  "documents_access": "The historical macOS Documents EPERM was separate from completed SSH technical checks. The explicit agent-work recovery checkout is usable; Documents was not retried or permissions changed."
+  "documents_access": "The historical macOS Documents EPERM was separate from completed SSH technical checks. The explicit agent-work recovery checkout is usable; Documents was not retried or permissions changed.",
+  "post_ci_review_width_repair": {
+    "issue": "https://github.com/CultureBotAI/CultureMech/issues/756",
+    "failed_candidate": "61d501fd9eff12a387a2e013a7f983801d9a9809",
+    "failed_ci_job": "https://github.com/CultureBotAI/CultureMech/actions/runs/43696509390/job/132758127461",
+    "change": "Removed only explicit YAML width keywords from three draft review builders; no corpus guard or scientific source changed.",
+    "checks": [
+      {
+        "path": ".temp/batch079-scientific-20261114/20261115T090901432890Z-issue756-equivalence.json",
+        "sha256": "5ba7cf10f5815e96f017ae77ef71912968f223cf5eec2622541d3d09dd52493f",
+        "bytes": 1281,
+        "label": "issue756-equivalence",
+        "exit": 0,
+        "started_at": "2026-11-15T09:09:01.433090+00:00",
+        "finished_at": "2026-11-15T09:09:02.055560+00:00",
+        "streams": [
+          {
+            "path": ".temp/batch079-scientific-20261114/20261115T090901432890Z-issue756-equivalence.stdout",
+            "sha256": "25951950cd61e5745184a55fde0fe2efe64fec9abfdbeb78f8eb7c35560a33bd",
+            "bytes": 2748
+          },
+          {
+            "path": ".temp/batch079-scientific-20261114/20261115T090901432890Z-issue756-equivalence.stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0
+          }
+        ]
+      },
+      {
+        "path": ".temp/batch079-scientific-20261114/20261115T090902080978Z-issue756-focused.json",
+        "sha256": "ac8b0d91a2ee17bf39be74d22b68f84199e7777c3a0680243b2f35c7fe9e371a",
+        "bytes": 1434,
+        "label": "issue756-focused",
+        "exit": 0,
+        "started_at": "2026-11-15T09:09:02.081177+00:00",
+        "finished_at": "2026-11-15T09:09:25.375888+00:00",
+        "streams": [
+          {
+            "path": ".temp/batch079-scientific-20261114/20261115T090902080978Z-issue756-focused.stdout",
+            "sha256": "2c667c120f9acb60136c799ec0759b4622a1d24e2f17c7c6a6aee132b4154322",
+            "bytes": 1222
+          },
+          {
+            "path": ".temp/batch079-scientific-20261114/20261115T090902080978Z-issue756-focused.stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0
+          }
+        ]
+      },
+      {
+        "path": ".temp/batch079-scientific-20261114/20261115T090927350085Z-issue756-ruff.json",
+        "sha256": "c09c88d2725ec39d86f0c87cecd61e7d7398df18e65c34fcea69b74462fcec28",
+        "bytes": 1406,
+        "label": "issue756-ruff",
+        "exit": 0,
+        "started_at": "2026-11-15T09:09:27.350289+00:00",
+        "finished_at": "2026-11-15T09:09:27.360326+00:00",
+        "streams": [
+          {
+            "path": ".temp/batch079-scientific-20261114/20261115T090927350085Z-issue756-ruff.stdout",
+            "sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+            "bytes": 19
+          },
+          {
+            "path": ".temp/batch079-scientific-20261114/20261115T090927350085Z-issue756-ruff.stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0
+          }
+        ]
+      },
+      {
+        "path": ".temp/batch079-scientific-20261114/20261115T090927385396Z-issue756-black.json",
+        "sha256": "dc06595f055a438ee6c0ca3145416297a8e441e4a834739c0f282bf0ddb49e0c",
+        "bytes": 1412,
+        "label": "issue756-black",
+        "exit": 0,
+        "started_at": "2026-11-15T09:09:27.385612+00:00",
+        "finished_at": "2026-11-15T09:09:27.594968+00:00",
+        "streams": [
+          {
+            "path": ".temp/batch079-scientific-20261114/20261115T090927385396Z-issue756-black.stdout",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0
+          },
+          {
+            "path": ".temp/batch079-scientific-20261114/20261115T090927385396Z-issue756-black.stderr",
+            "sha256": "25369eabb8c122f861d58ddb255f81f4b9ee797f42f3882975bef953218258ed",
+            "bytes": 56
+          }
+        ]
+      },
+      {
+        "path": ".temp/batch079-scientific-20261114/20261115T090927619333Z-issue756-native.json",
+        "sha256": "67f174b2eab1e24a021beba2877b208c86831b17c5a1021ca62af2bd28b5b7da",
+        "bytes": 1166,
+        "label": "issue756-native",
+        "exit": 0,
+        "started_at": "2026-11-15T09:09:27.619525+00:00",
+        "finished_at": "2026-11-15T09:09:35.203457+00:00",
+        "streams": [
+          {
+            "path": ".temp/batch079-scientific-20261114/20261115T090927619333Z-issue756-native.stdout",
+            "sha256": "f787d52a4540c91107bee6847abe45ccbb9767f909021c516d22bebb4db2512f",
+            "bytes": 108
+          },
+          {
+            "path": ".temp/batch079-scientific-20261114/20261115T090927619333Z-issue756-native.stderr",
+            "sha256": "e948da1cfe774485c5a8d36849ac71a894c7899192ba8c72909995dd668c8f75",
+            "bytes": 84
+          }
+        ]
+      }
+    ],
+    "scope": "Focused width-equivalence, record-IO, review-contract, portability, native saved-review and static checks; see exact receipt streams.",
+    "full_suite_after_repair": "Not repeated locally; new-head CI remains required."
+  }
 }

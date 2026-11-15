@@ -38,4 +38,27 @@ Record 07 still needs stock/dose representation, chemical-form and preparation/s
 
 Existing historical 01–06 and09 receipts and all prior committed reviews are preserved; 26 historical artifact pins were independently rechecked. Failed attempts, alias-producing drafts, shallow-clone diagnostics, unsupported list-flag output, and source timeouts remain available. There is no full-batch completion claim.
 
-PR #692 remains a separate draft: last independently verified head `02e005db42246b8a04ece9df4b5657e036fa5697`, containing684 and nine green checks. Its scientific/source/export/KG-Microbe admission gates were not waived or changed. The historical Documents EPERM is separate from completed authorized SSH technical checks and the usable agent-work checkout. No permissions change, merge, force push, cleanup, paid research, historical batch publication or catalog-loop continuation occurred. The later KGM test-performance task has not started.
+PR #692 remains a separate draft: last independently verified head `02e005db42246b8a04ece9df4b5657e036fa5697`, containing684 and nine green checks. Its scientific/source/export/KG-Microbe admission gates were not waived or changed. The historical Documents EPERM is separate from completed authorized SSH technical checks and the usable agent-work checkout. No permissions change, merge, force push, cleanup, paid research, historical batch publication or catalog-loop continuation occurred.
+
+
+## PR755 CI follow-up: issue756
+
+The full corpus job at 61d501fd9eff12a387a2e013a7f983801d9a9809 failed only
+the existing corpus-writer width guard: 19,732 passed, 25 skipped and one failure.
+The three offending calls write review drafts, not corpus records. Removing
+their explicit width keywords leaves the broad guard intact. The original
+[failed job](https://github.com/CultureBotAI/CultureMech/actions/runs/43696509390/job/132758127461)
+remains failed; [issue756](https://github.com/CultureBotAI/CultureMech/issues/756)
+records this bounded correction.
+
+The saved read-only verifier confirmed that each builder's only AST change is
+removing its width keyword and that old/default serialization of the saved
+review payload yields equal parsed content. It also verified that saved reviews,
+historical archives and manifest, scientific data and the corpus guard are
+unchanged from the failed candidate. The complete record-IO, review-contract and
+portability modules passed 1,032 tests in 22.89 seconds. Native saved-review
+validation reports 45 valid reviews in declared scopes; Ruff and Black passed.
+The machine-readable checkpoint separately pins all five new check receipts,
+their streams and the 10 current helpers. Historical review assertions are not
+restamped. Full local suites were not repeated; full CI on the new head remains
+required, and no merge is authorized by these checks.

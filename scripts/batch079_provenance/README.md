@@ -98,3 +98,31 @@ header changes. The checkpoint keeps these validation boundaries explicit.
 Pre-header executable copies remain in the ignored
 `.temp/batch079-scientific-20261114/helpers-pre-provenance-headers/` archive.
 The 33 historical source-data archives and immutable review pairs were unchanged.
+
+
+## Issue756 review-draft width successors
+
+PR755's full corpus CI run at commit 61d501fd9eff12a387a2e013a7f983801d9a9809
+reported one failure in the unchanged corpus-writer width guard. Three new builders
+mention normalized inputs but write only review drafts under the ignored run
+directory. Their explicit widths 110/110/100 triggered that guard. The current
+record08, record08_v2 and record10 builders now omit only those width keywords;
+the corpus guard and scientific files remain unchanged. See
+[issue756](https://github.com/CultureBotAI/CultureMech/issues/756).
+
+The new read-only scripts/batch079_verify_width_compatibility.py compares each
+builder's AST against that exact prior commit after removing the single width
+keyword. It then serializes the corresponding saved review payload with the
+old and default width in memory and verifies equal parsed content. It does not
+execute an authoring helper, rewrite a review or establish a new scientific
+assessment. The native focused record-IO, review-contract and portability tests
+passed 1,032 cases; the saved-review check reports 45 valid reviews in declared
+scopes. Ruff and Black also passed for the five changed Python files.
+
+The current executable helper inventory now contains 10 files, including the
+verifier. The finalizer binds each new successful command receipt and its exact
+streams in post_ci_review_width_repair, separately from the earlier full fast
+run and failed CI. All 33 historical source archives, their frozen manifest and
+the immutable saved pairs retain their original bytes. Current-helper hashes
+are refreshed only in the current checkpoint. A new-head full CI run is required;
+no complete local fast or full suite was repeated for this bounded repair.

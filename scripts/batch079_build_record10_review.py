@@ -663,7 +663,7 @@ def main():
         "tags": ["batch079", "record10", "needs_curation", "source_review"],
     }
     with (ROOT / D / "review.yaml").open("x") as h:
-        yaml.dump(review, h, Dumper=Dumper, sort_keys=False, allow_unicode=True, width=100)
+        yaml.dump(review, h, Dumper=Dumper, sort_keys=False, allow_unicode=True)
     print(
         json.dumps(
             {
