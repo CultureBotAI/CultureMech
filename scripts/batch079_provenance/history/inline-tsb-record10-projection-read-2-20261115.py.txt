@@ -1,0 +1,8 @@
+import json,pathlib
+D=pathlib.Path('.temp/batch079-scientific-20261114/record10/chemical-identity-tsb-20261115T081843182821Z')
+for c in json.loads((D/'ols-capture-catalog.json').read_text()):
+ t=c['exact_terms'][0]
+ print(c['id'],json.dumps({k:v for k,v in t['annotation'].items() if any(z in k.lower() for z in ['formula','inchi','smiles'])},ensure_ascii=False))
+m=json.loads((D/'mim-exact-label-rows.json').read_text())
+print(json.dumps(m['exact_local_rows'],ensure_ascii=False))
+print(pathlib.Path('src/culturemech/data/mediaingredientmech/label_index.metadata.json').read_text())

@@ -1,0 +1,11 @@
+from pathlib import Path
+import yaml,json,hashlib
+r=Path('.temp/batch079-scientific-20261114/record10');p=r/'review.yaml';b=p.read_bytes()
+assert hashlib.sha256(b).hexdigest()=='83d123100b38cc6e7460da3931116a2a01d7a9d3b07b21c1b4ba3876c9432a8b'
+with (r/'review.pre-utc-format-fix.yaml').open('xb') as h:h.write(b)
+d=yaml.safe_load(b);d['started_at']=d['started_at'].replace('+00:00','Z')
+for e in d['evidence']:e['accessed_at']=e['accessed_at'].replace('+00:00','Z')
+class D(yaml.SafeDumper):
+ def ignore_aliases(self,data):return True
+p.write_text(yaml.dump(d,Dumper=D,sort_keys=False,allow_unicode=True,width=100))
+print('Corrected draft',hashlib.sha256(p.read_bytes()).hexdigest())

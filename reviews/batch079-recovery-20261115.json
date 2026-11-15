@@ -1,0 +1,605 @@
+{
+  "updated_at": "2026-11-15T08:48:34.777509Z",
+  "scope": "Bounded scientific assessment of recovered batch079 records07,08,10; no full-batch completion or source repair is claimed.",
+  "baseline": "dda27db28f1e5f4f05da6d92fbd2cc1bd6e8add3",
+  "original_retained_helper_commit": "71d94151e0090b8f99cb828cb94e36ee53ed0156",
+  "reviews": [
+    {
+      "record": "07",
+      "review_id": "20261115T080257Z-batch079-record07-desulfothermus",
+      "target": "CultureMech:002034",
+      "verdict": "needs_curation",
+      "completion": "completed",
+      "findings": {
+        "blocker": 2,
+        "major": 3,
+        "minor": 1
+      },
+      "bundle": [
+        {
+          "path": "reviews/structured/20261115T080257Z-batch079-record07-desulfothermus/review.yaml",
+          "sha256": "94852ba838521a17422089fbfb7a683ae0014a40d35407c64a0c19bffa56a9a5",
+          "bytes": 95527
+        },
+        {
+          "path": "reviews/structured/20261115T080257Z-batch079-record07-desulfothermus/review.md",
+          "sha256": "d7070074a3f080fe10cb8f3c9cd38db76221eb15d142c100fc7f0a7a85c736d9",
+          "bytes": 156118
+        }
+      ]
+    },
+    {
+      "record": "08",
+      "review_id": "20261115T081711Z-batch079-record08-desulfotignum",
+      "target": "CultureMech:001490",
+      "verdict": "needs_curation",
+      "completion": "completed",
+      "findings": {
+        "blocker": 2,
+        "major": 2,
+        "minor": 2
+      },
+      "bundle": [
+        {
+          "path": "reviews/structured/20261115T081711Z-batch079-record08-desulfotignum/review.yaml",
+          "sha256": "4a3e83c2defeffcbfd12a0d68967ad53a054f4cd706f17fc8d40df653d9d93fb",
+          "bytes": 166784
+        },
+        {
+          "path": "reviews/structured/20261115T081711Z-batch079-record08-desulfotignum/review.md",
+          "sha256": "27b0e05d2ee9cd0dadb9bbd3821099ff255fe5e1c6468e77df21dac7ac79741c",
+          "bytes": 275483
+        }
+      ]
+    },
+    {
+      "record": "10",
+      "review_id": "20261115T082226Z-batch079-record10-desulfotomaculum",
+      "target": "CultureMech:009942",
+      "verdict": "needs_curation",
+      "completion": "completed",
+      "findings": {
+        "major": 3,
+        "minor": 1
+      },
+      "bundle": [
+        {
+          "path": "reviews/structured/20261115T082226Z-batch079-record10-desulfotomaculum/review.yaml",
+          "sha256": "92a5a1bb87d85973740535ea884660a892ca3ad56b0a93a5efcceea8336b1b75",
+          "bytes": 57938
+        },
+        {
+          "path": "reviews/structured/20261115T082226Z-batch079-record10-desulfotomaculum/review.md",
+          "sha256": "d20cc96e1be362701713b731cefe58d7b1c4388aedb4658bc5054cd0376fbfbb",
+          "bytes": 89657
+        }
+      ]
+    }
+  ],
+  "helpers": [
+    {
+      "path": "scripts/batch079_build_record07_review.py",
+      "sha256": "403bc7fa6ef67cca2d468866815fb278b4b0cf8932754f9e7c237219b939ff4d",
+      "bytes": 30892,
+      "retained_pre_format_sha256": "aee58949ebdcfba55f07a119a381a05329cf474ebef0de35e106621c6ebe99cf",
+      "retained_pre_format_git_commit": "71d94151e0090b8f99cb828cb94e36ee53ed0156",
+      "byte_relation": "Historical retained bytes are in the archive commit; current formatting/lint edits and the explicitly documented record10 required-input CLI repair do not restamp immutable review inputs."
+    },
+    {
+      "path": "scripts/batch079_build_record08_review.py",
+      "sha256": "7c431eebba20dc74e827862f92baf47da0942e56b0e0a4d06732184320a16afb",
+      "bytes": 52372,
+      "retained_pre_format_sha256": "eaf75f36a532d5407a2d6eaca393e1078f84b14b2e042b64749e9e939f89c36c",
+      "retained_pre_format_git_commit": "71d94151e0090b8f99cb828cb94e36ee53ed0156",
+      "byte_relation": "Historical retained bytes are in the archive commit; current formatting/lint edits and the explicitly documented record10 required-input CLI repair do not restamp immutable review inputs."
+    },
+    {
+      "path": "scripts/batch079_build_record08_review_v2.py",
+      "sha256": "b1f825bad56baa9dff8947ed34290fe7db7e17693d7430565e88854ad58969f2",
+      "bytes": 55533,
+      "retained_pre_format_sha256": "502b88fc24fdaa85c58a0af6c23af9152f69b6756942bd8826bec26ccf8e2eab",
+      "retained_pre_format_git_commit": "71d94151e0090b8f99cb828cb94e36ee53ed0156",
+      "byte_relation": "Historical retained bytes are in the archive commit; current formatting/lint edits and the explicitly documented record10 required-input CLI repair do not restamp immutable review inputs."
+    },
+    {
+      "path": "scripts/batch079_build_record10_review.py",
+      "sha256": "0b13464118a29b87a9f31463ee782ad3e14de9b735c2acb0bba2d00166d1ce99",
+      "bytes": 32148,
+      "retained_pre_format_sha256": "508a865dec7a184b0d7ba8facfd1d7b0233e805d40aa29d2ae4f7f1f3b08090e",
+      "retained_pre_format_git_commit": "71d94151e0090b8f99cb828cb94e36ee53ed0156",
+      "byte_relation": "Historical retained bytes are in the archive commit; current formatting/lint edits and the explicitly documented record10 required-input CLI repair do not restamp immutable review inputs."
+    },
+    {
+      "path": "scripts/batch079_finalize_checkpoint.py",
+      "sha256": "57c01e1b13be03bc6f2c6b73c36a5f0f093d1d4de3fd3b5c32a0663db147ef0f",
+      "bytes": 22924
+    },
+    {
+      "path": "scripts/batch079_record07_inventory.py",
+      "sha256": "f7bc044f6beee1f8c03725f771ca0231744bdd93a2d790889f98c319317dc374",
+      "bytes": 4016,
+      "retained_pre_format_sha256": "79c29544e484721dfb586ed306ba876af7a4b3ff4e54fdc1e9e1902e9f9d9fce",
+      "retained_pre_format_git_commit": "71d94151e0090b8f99cb828cb94e36ee53ed0156",
+      "byte_relation": "Historical retained bytes are in the archive commit; current formatting/lint edits and the explicitly documented record10 required-input CLI repair do not restamp immutable review inputs."
+    },
+    {
+      "path": "scripts/batch079_record08_metadata_precision.py",
+      "sha256": "a7628d4ed3cfb591a0d12b060fd10794efa9eec01835ec6de938b4c64de96b85",
+      "bytes": 5921,
+      "retained_pre_format_sha256": "843892ab47e8779a7c61950fc46bbfc7825a53a65f01fc1b7a62c3ffa2050b0b",
+      "retained_pre_format_git_commit": "71d94151e0090b8f99cb828cb94e36ee53ed0156",
+      "byte_relation": "Historical retained bytes are in the archive commit; current formatting/lint edits and the explicitly documented record10 required-input CLI repair do not restamp immutable review inputs."
+    },
+    {
+      "path": "scripts/batch079_run_check.py",
+      "sha256": "3f12d2547303d35c05b1ba3e055c305e343b917003bd1e36df93afc675519567",
+      "bytes": 4142,
+      "retained_pre_format_sha256": "d49b84a5864a3faa4c98996186d3917991b997fcc4dd2a8a0031431fae7cf440",
+      "retained_pre_format_git_commit": "71d94151e0090b8f99cb828cb94e36ee53ed0156",
+      "byte_relation": "Historical retained bytes are in the archive commit; current formatting/lint edits and the explicitly documented record10 required-input CLI repair do not restamp immutable review inputs."
+    },
+    {
+      "path": "scripts/batch079_run_check_v2.py",
+      "sha256": "815caa06c0396bb46d499c783d89036ac392d0baa231748d0d2117d71521c120",
+      "bytes": 4706,
+      "retained_pre_format_sha256": "3655970eaa14fe87473cb7c79bd25f41d815401d95584706a70aab843f19dfd9",
+      "retained_pre_format_git_commit": "71d94151e0090b8f99cb828cb94e36ee53ed0156",
+      "byte_relation": "Historical retained bytes are in the archive commit; current formatting/lint edits and the explicitly documented record10 required-input CLI repair do not restamp immutable review inputs."
+    }
+  ],
+  "historical_source_archives": [
+    {
+      "path": "scripts/batch079_provenance/history/batch079_build_record07_review.pre-noalias-20261115T080232.py.txt",
+      "sha256": "33580aafd906c5b078584dc822f15e552a51cc007407cff0a0866035af2c3f77",
+      "bytes": 25866
+    },
+    {
+      "path": "scripts/batch079_provenance/history/batch079_build_record07_review.retained-pre-format.py.txt",
+      "sha256": "aee58949ebdcfba55f07a119a381a05329cf474ebef0de35e106621c6ebe99cf",
+      "bytes": 25979
+    },
+    {
+      "path": "scripts/batch079_provenance/history/batch079_build_record08_review.retained-pre-format.py.txt",
+      "sha256": "eaf75f36a532d5407a2d6eaca393e1078f84b14b2e042b64749e9e939f89c36c",
+      "bytes": 41134
+    },
+    {
+      "path": "scripts/batch079_provenance/history/batch079_build_record08_review_v2.retained-pre-format.py.txt",
+      "sha256": "502b88fc24fdaa85c58a0af6c23af9152f69b6756942bd8826bec26ccf8e2eab",
+      "bytes": 43504
+    },
+    {
+      "path": "scripts/batch079_provenance/history/batch079_build_record10_review.retained-pre-format.py.txt",
+      "sha256": "508a865dec7a184b0d7ba8facfd1d7b0233e805d40aa29d2ae4f7f1f3b08090e",
+      "bytes": 23804
+    },
+    {
+      "path": "scripts/batch079_provenance/history/batch079_record07_inventory.pre-black-20261115T075835.py.txt",
+      "sha256": "44e0fa835092c94ed42644298880ed5342e20720425923c3e50b99f9a6b715c3",
+      "bytes": 2706
+    },
+    {
+      "path": "scripts/batch079_provenance/history/batch079_record07_inventory.retained-pre-format.py.txt",
+      "sha256": "79c29544e484721dfb586ed306ba876af7a4b3ff4e54fdc1e9e1902e9f9d9fce",
+      "bytes": 2949
+    },
+    {
+      "path": "scripts/batch079_provenance/history/batch079_record08_metadata_precision.retained-pre-format.py.txt",
+      "sha256": "843892ab47e8779a7c61950fc46bbfc7825a53a65f01fc1b7a62c3ffa2050b0b",
+      "bytes": 4130
+    },
+    {
+      "path": "scripts/batch079_provenance/history/batch079_run_check.post-black-pre-pathhome-20261115T075904.py.txt",
+      "sha256": "138cd0e48cc8f60c83043da53bbd1664b68374e6fb3441f7a4c2c36c6f6ae68e",
+      "bytes": 3032
+    },
+    {
+      "path": "scripts/batch079_provenance/history/batch079_run_check.post-ruff-pre-black-20261115T075903.py.txt",
+      "sha256": "c5aeccb929f0b6151eb55fd5c1abefff9425b0b98a117a859713a27279569de6",
+      "bytes": 2920
+    },
+    {
+      "path": "scripts/batch079_provenance/history/batch079_run_check.pre-ruff-20261115T075542.py.txt",
+      "sha256": "75aaad7d419d0510fe1bbcc872d59ce6eafbd18786fb20ec93384f562dbe27f4",
+      "bytes": 2920
+    },
+    {
+      "path": "scripts/batch079_provenance/history/batch079_run_check.retained-pre-format.py.txt",
+      "sha256": "d49b84a5864a3faa4c98996186d3917991b997fcc4dd2a8a0031431fae7cf440",
+      "bytes": 3046
+    },
+    {
+      "path": "scripts/batch079_provenance/history/batch079_run_check_v2.retained-pre-format.py.txt",
+      "sha256": "3655970eaa14fe87473cb7c79bd25f41d815401d95584706a70aab843f19dfd9",
+      "bytes": 3636
+    },
+    {
+      "path": "scripts/batch079_provenance/history/inline-tsb-record07-assessment-20261115.py.txt",
+      "sha256": "fd4849df7e41e03ca35e7d70faa8f09458f84e876bab5b93d424b841f0de7a0f",
+      "bytes": 6698
+    },
+    {
+      "path": "scripts/batch079_provenance/history/inline-tsb-record07-capture-20261115.py.txt",
+      "sha256": "0d399d08757795dff62e4635c2a58d8c028c31c260ef0f923f908afaa7e2e5ab",
+      "bytes": 3196
+    },
+    {
+      "path": "scripts/batch079_provenance/history/inline-tsb-record07-inventory-read-20261115.py.txt",
+      "sha256": "697b999717c9d7de8984c3a65852e835bd53567580899532e19e68a67b708037",
+      "bytes": 1308
+    },
+    {
+      "path": "scripts/batch079_provenance/history/inline-tsb-record07-mim-read-20261115.py.txt",
+      "sha256": "ec72be7ebe4b6c88778e5093cd014b72f10533b021e8ecd423cc302fd28c09a6",
+      "bytes": 888
+    },
+    {
+      "path": "scripts/batch079_provenance/history/inline-tsb-record07-ols-probe-1-20261115.py.txt",
+      "sha256": "999ebca1db26b8d03f4beada287bb85e8651f8938462ab721a32d2df18c1ec76",
+      "bytes": 423
+    },
+    {
+      "path": "scripts/batch079_provenance/history/inline-tsb-record07-ols-probe-2-20261115.py.txt",
+      "sha256": "f88c8396b48516b53b8853518f45ad43e3ec571194b265d3482f05a81b303a3f",
+      "bytes": 363
+    },
+    {
+      "path": "scripts/batch079_provenance/history/inline-tsb-record07-projection-read-1-20261115.py.txt",
+      "sha256": "4ab0650e26da7b14db815f5582539342bfd3e3920d5866964024d9db141fd203",
+      "bytes": 563
+    },
+    {
+      "path": "scripts/batch079_provenance/history/inline-tsb-record07-projection-read-2-20261115.py.txt",
+      "sha256": "808293dd2d8e5a50f6ea3df28587811ef3f38fe1ca321240c1eea06725d8c4bc",
+      "bytes": 563
+    },
+    {
+      "path": "scripts/batch079_provenance/history/inline-tsb-record08-assessment-20261115.py.txt",
+      "sha256": "7cb3209afa6d63e38b4585d7c10a015bae2f713c59f1b2389f834b012bb15c94",
+      "bytes": 9225
+    },
+    {
+      "path": "scripts/batch079_provenance/history/inline-tsb-record08-capture-20261115.py.txt",
+      "sha256": "6166b8ec56ad63d657bc3ab4f393c3008b316720950c5f1fe85a5ca02de5efd2",
+      "bytes": 4074
+    },
+    {
+      "path": "scripts/batch079_provenance/history/inline-tsb-record08-preflight-read-20261115.py.txt",
+      "sha256": "57e9b8eb6f412c828a00d8eda0918bca77b87e8ccb38b6a494f22654f526ea2e",
+      "bytes": 1736
+    },
+    {
+      "path": "scripts/batch079_provenance/history/inline-tsb-record08-projection-read-20261115.py.txt",
+      "sha256": "680ff4e6ebbb6f06c7f124cc8ae0f8644b77d7259b09776a0a3ff1d5487c60dc",
+      "bytes": 658
+    },
+    {
+      "path": "scripts/batch079_provenance/history/inline-tsb-record10-assessment-20261115.py.txt",
+      "sha256": "80d1ae9b64e153cce6f583092643c892cc173b75426e0eaca33646d91d3c8dc5",
+      "bytes": 9826
+    },
+    {
+      "path": "scripts/batch079_provenance/history/inline-tsb-record10-capture-20261115.py.txt",
+      "sha256": "cca80df7def6c3105feecd925c8f3ddccc4a5c9eec3f7cb07ca2cf7bef681a9b",
+      "bytes": 4162
+    },
+    {
+      "path": "scripts/batch079_provenance/history/inline-tsb-record10-inventory-read-20261115.py.txt",
+      "sha256": "6f15c1ff90b14a1ed7a9828f6ae678e06322a6edc991fcef10566422e6a9f72f",
+      "bytes": 1103
+    },
+    {
+      "path": "scripts/batch079_provenance/history/inline-tsb-record10-primary-text-read-20261115.py.txt",
+      "sha256": "a8388b2e36dd77d076735388b695662b8d09c2b20fbb5675595d805ce1d99d78",
+      "bytes": 226
+    },
+    {
+      "path": "scripts/batch079_provenance/history/inline-tsb-record10-projection-read-1-20261115.py.txt",
+      "sha256": "f4f171e64c730762bddb8fedab72f8017d82a25774ad76e77a5e2f03b3017d50",
+      "bytes": 819
+    },
+    {
+      "path": "scripts/batch079_provenance/history/inline-tsb-record10-projection-read-2-20261115.py.txt",
+      "sha256": "ac3f3209ae07351105a9050449cf4f81a5518846025bd72c118decf7553feb32",
+      "bytes": 584
+    },
+    {
+      "path": "scripts/batch079_provenance/history/record10-check-owner-amendment-20261115T082224.py.txt",
+      "sha256": "8b24070b3f0ef31ad8bd17cee6e6022b3c51571ea5536216438c0d983e4d01ca",
+      "bytes": 2115
+    },
+    {
+      "path": "scripts/batch079_provenance/history/record10-utc-syntax-amendment-20261115T082202.py.txt",
+      "sha256": "b77c4642fd5df9e155a824467bd8c411cc4267bd785164ed056c261b0c68457d",
+      "bytes": 684
+    }
+  ],
+  "history_manifest": {
+    "path": "scripts/batch079_provenance/manifest.json",
+    "sha256": "4fa39b1ef05468752fea17bd4fdaafb2d0c20d4acd4376b0217394beda88489e",
+    "bytes": 132352
+  },
+  "verified_native_checks": [
+    {
+      "path": ".temp/batch079-scientific-20261114/20261115T075705104393Z-record07-schema.json",
+      "sha256": "af1265760266a7f707b1db8060a8c5110effca0fc5986f5e3410a0d62a71dd99",
+      "bytes": 1207,
+      "record": "07",
+      "check": "schema",
+      "exit": 0
+    },
+    {
+      "path": ".temp/batch079-scientific-20261114/20261115T075705924125Z-record07-strict.json",
+      "sha256": "b18224f76bb59832bbd4ba1ff0084d8d2ebd71df4802abd2d2135b8f1166b136",
+      "bytes": 1323,
+      "record": "07",
+      "check": "strict",
+      "exit": 0
+    },
+    {
+      "path": ".temp/batch079-scientific-20261114/20261115T075713230348Z-record07-terms.json",
+      "sha256": "d4c36de37073e9d47481573af5784e53f9007c1dfbb19f4dc2c8189fbd9ff92e",
+      "bytes": 1203,
+      "record": "07",
+      "check": "terms",
+      "exit": 0
+    },
+    {
+      "path": ".temp/batch079-scientific-20261114/20261115T075714381035Z-record07-references.json",
+      "sha256": "f06f4549b3e3bb80845de6a2be00a7bd80ca414a80f5f12b30105266c953ff8b",
+      "bytes": 1223,
+      "record": "07",
+      "check": "references",
+      "exit": 0
+    },
+    {
+      "path": ".temp/batch079-scientific-20261114/20261115T081420069829Z-record08-schema.json",
+      "sha256": "2b723cc84def0ba6fb2c2e80fb8f6c1d3bffd2bcb5967277225700b20ce83d97",
+      "bytes": 1217,
+      "record": "08",
+      "check": "schema",
+      "exit": 0
+    },
+    {
+      "path": ".temp/batch079-scientific-20261114/20261115T081420547292Z-record08-strict.json",
+      "sha256": "e1cd76bd3a48e98d46ba9fc7afe6d95f01d7cabc0ae2f2029b213190ad44411b",
+      "bytes": 1333,
+      "record": "08",
+      "check": "strict",
+      "exit": 0
+    },
+    {
+      "path": ".temp/batch079-scientific-20261114/20261115T081418248294Z-record08-terms.json",
+      "sha256": "0832014d6c083eea199768068a32e6203fd09d82a3a3eef14e01fdf5274ddf52",
+      "bytes": 1213,
+      "record": "08",
+      "check": "terms",
+      "exit": 0
+    },
+    {
+      "path": ".temp/batch079-scientific-20261114/20261115T081419407643Z-record08-references.json",
+      "sha256": "32711366aea374aa044da91a44edc6714cfc78d8408718563ba7dda0ded6435b",
+      "bytes": 1233,
+      "record": "08",
+      "check": "references",
+      "exit": 0
+    },
+    {
+      "path": ".temp/batch079-scientific-20261114/20261115T081824139492Z-record10-schema.json",
+      "sha256": "f0f5b7a4cfcf1e9ec94df87230a395242fd2c1e14657cf4e35e590f44b5ce290",
+      "bytes": 1224,
+      "record": "10",
+      "check": "schema",
+      "exit": 0
+    },
+    {
+      "path": ".temp/batch079-scientific-20261114/20261115T081824635873Z-record10-strict.json",
+      "sha256": "67798ce0af7adb6974600afd88f20056a68641de742f1c2dc9437d0ec6aad736",
+      "bytes": 1340,
+      "record": "10",
+      "check": "strict",
+      "exit": 0
+    },
+    {
+      "path": ".temp/batch079-scientific-20261114/20261115T081825506772Z-record10-terms.json",
+      "sha256": "39a02061ef4b5d4eb801eeb91b119231ba562f4b466e01ff2fa5382ba2178e9b",
+      "bytes": 1220,
+      "record": "10",
+      "check": "terms",
+      "exit": 0
+    },
+    {
+      "path": ".temp/batch079-scientific-20261114/20261115T081825245374Z-record10-references.json",
+      "sha256": "0f00dce0df506b29653b8eb87e1015f2327525f44a6223e2fa9a2224f8601ef0",
+      "bytes": 1240,
+      "record": "10",
+      "check": "references",
+      "exit": 0
+    }
+  ],
+  "persisted_review_check": {
+    "path": ".temp/batch079-scientific-20261114/20261115T082358847745Z-record10-persisted-check.json",
+    "sha256": "8334d1fae916378304f15c3ffd4633ee44eda7c4ad30d279d73b2d87bebf5246",
+    "bytes": 1193
+  },
+  "review_contract_test": {
+    "path": ".temp/batch079-scientific-20261114/20261115T082457743515Z-final-review-contract.json",
+    "sha256": "80c4feac8860b7db30ca8d9a18c999fd92d46f1f95e9a0fa2fd5453ffe9b0e0a",
+    "bytes": 1183
+  },
+  "publication_plan_reconciliation": "The owner explicitly superseded the earlier bundle-only plan. All available executed provenance helper versions, retained superseded drafts, exact historical source archives, and this checkpoint accompany the three immutable pairs. Earlier saved review notes and script strings describe their draft-time plan and remain historical attestations; they are not current publication policy. See issue752 and scripts/batch079_provenance/README.md.",
+  "environment": {
+    "python": "3.13.2",
+    "environment": ".venv",
+    "lock_sha256": "9848d8c59d7162ee7a1e3a29b6318768ed613a8920e196b2e976a89ba9a11f55",
+    "sync_receipt": ".temp/batch079-scientific-20261114/environment-sync.json",
+    "origins_receipt": ".temp/batch079-scientific-20261114/20261115T075601984823Z-environment-origins.json"
+  },
+  "technical_scope": "All three selected generated records passed schema, one-file schema-layer strict, configured terms and reference validators. Each reference check inspected ZERO evidence assertions. These exits do not establish scientific truth.",
+  "broader_test_scope": {
+    "status": "final required full fast run: passed",
+    "summary": "All attempts remain separate. The first broad run was interrupted inside a Git-backed fixture directory; one isolated outside-Git fixture check then passed. The first completed outside-Git full run exited 1 with 15960 passed, one failure and 150 setup errors. Those setup errors could not read baseline commit f8af2562c3ae51d5f9ed01a484f4a2971b6cd80f, which was absent in that tested shallow checkout. Its one assertion failure identified the record10 builder's machine-specific path. The exact missing commit was subsequently fetched without updating FETCH_HEAD or tags, and the builder now requires --original-native-dir. The five affected test modules then passed all 1182 cases. The owner subsequently required a complete corrected just test-fast run; its actual exit, final summary and counts are bound separately below. The documented -m fast --no-cov recipe was retained. Earlier failures are not relabeled as passes, and technical test outcomes do not resolve the scientific findings. See issues753/754.",
+    "initial_attempts": [
+      {
+        "path": ".temp/batch079-scientific-20261114/20261115T082713515827Z-provenance-test-fast.json",
+        "sha256": "3011a448f007ae617f45b351e39df1ad388ea919d1af9db4f6e5a8d8fd3ebf35",
+        "bytes": 1170,
+        "exit": 2,
+        "streams": [
+          {
+            "path": ".temp/batch079-scientific-20261114/20261115T082713515827Z-provenance-test-fast.stdout",
+            "sha256": "b79bdd34958e311a19c821a6c530c20b6638fcc839250154037d44f79a368782",
+            "bytes": 7362
+          },
+          {
+            "path": ".temp/batch079-scientific-20261114/20261115T082713515827Z-provenance-test-fast.stderr",
+            "sha256": "3150da39fb72a54edd1fb58d27c223f33ad0ff6eedd592da43144cbfa94da25e",
+            "bytes": 116
+          }
+        ]
+      },
+      {
+        "path": ".temp/batch079-scientific-20261114/20261115T082935806192Z-provenance-isolated-fixture-test.json",
+        "sha256": "72da2431f1ea506f18ea3b5461b3ec6cdc190f3969addf826d63541e8236b535",
+        "bytes": 1497,
+        "exit": 0,
+        "streams": [
+          {
+            "path": ".temp/batch079-scientific-20261114/20261115T082935806192Z-provenance-isolated-fixture-test.stdout",
+            "sha256": "3605abb09038ce24e90d81df8f7c0d87bb6f647a5e016bf461d8a8fcb408f6e9",
+            "bytes": 98
+          },
+          {
+            "path": ".temp/batch079-scientific-20261114/20261115T082935806192Z-provenance-isolated-fixture-test.stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0
+          }
+        ]
+      }
+    ],
+    "first_completed_run": {
+      "path": ".temp/batch079-scientific-20261114/20261115T083248743353Z-provenance-test-fast-outside-git.json",
+      "sha256": "9a35f5dbe109d3f729e34cf46543d21cb5f71e5d582a04bb630fb9cf748cdab3",
+      "bytes": 1336,
+      "exit": 1,
+      "runner_exit": 1,
+      "status": "completed with one failure and 150 setup errors; not a pass",
+      "summary": "1 failed, 15960 passed, 23 skipped, 3599 deselected, 2 warnings, 150 errors in 303.37s",
+      "counts": {
+        "passed": 15960,
+        "failed": 1,
+        "errors": 150,
+        "skipped": 23,
+        "deselected": 3599,
+        "warnings": 2
+      },
+      "streams": [
+        {
+          "path": ".temp/batch079-scientific-20261114/20261115T083248743353Z-provenance-test-fast-outside-git.stdout",
+          "sha256": "1f0813ac3bf121e9ad87a9031380d7bc58868e8d49bb2d0c6bb081a2036aa339",
+          "bytes": 1190983
+        },
+        {
+          "path": ".temp/batch079-scientific-20261114/20261115T083248743353Z-provenance-test-fast-outside-git.stderr",
+          "sha256": "8d8401b4511e7ea4dbdce7186b50dcf9a71dcd0428b3d2550f2c553ef5fee157",
+          "bytes": 116
+        }
+      ],
+      "recipe": {
+        "path": "project.justfile",
+        "sha256": "bf1ab40b8ecdd05add75ec7f6a72d572487abd10dcc2152b39f2c2ea24d8f2c8",
+        "bytes": 115266
+      }
+    },
+    "recovery_operations": [
+      {
+        "path": ".temp/batch079-scientific-20261114/20261115T083857560744Z-test-fixture-history-fetch.json",
+        "sha256": "2f71b5c9ce231ad582a5a035be96130c00463394c7908eae4307fa031bfb437d",
+        "bytes": 1291,
+        "exit": 0,
+        "summary": null,
+        "streams": [
+          {
+            "path": ".temp/batch079-scientific-20261114/20261115T083857560744Z-test-fixture-history-fetch.stdout",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0
+          },
+          {
+            "path": ".temp/batch079-scientific-20261114/20261115T083857560744Z-test-fixture-history-fetch.stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0
+          }
+        ]
+      },
+      {
+        "path": ".temp/batch079-scientific-20261114/20261115T083942839556Z-provenance-focused-after-portability-history-fix.json",
+        "sha256": "62113e509b30b258a2ea64fef6c4f8753c3108132939fd8853026286c5c1e222",
+        "bytes": 1697,
+        "exit": 0,
+        "summary": "1182 passed in 17.89s",
+        "streams": [
+          {
+            "path": ".temp/batch079-scientific-20261114/20261115T083942839556Z-provenance-focused-after-portability-history-fix.stdout",
+            "sha256": "2f279fbc92c0873eb3d8a1b45334797d512a6bacef197d8a8c0e0a2878963075",
+            "bytes": 1382
+          },
+          {
+            "path": ".temp/batch079-scientific-20261114/20261115T083942839556Z-provenance-focused-after-portability-history-fix.stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0
+          }
+        ]
+      }
+    ],
+    "final_required_full_run": {
+      "path": ".temp/batch079-scientific-20261114/20261115T084010973746Z-provenance-test-fast-corrected.json",
+      "sha256": "ac88fd7469f1e8b48572dd2813c62f3cb55566a1237c5306544922a0cfe22fd8",
+      "bytes": 1340,
+      "exit": 0,
+      "runner_exit": 0,
+      "status": "passed",
+      "summary": "16111 passed, 23 skipped, 3599 deselected, 2 warnings in 318.93s (0:05:18)",
+      "counts": {
+        "passed": 16111,
+        "skipped": 23,
+        "deselected": 3599,
+        "warnings": 2
+      },
+      "streams": [
+        {
+          "path": ".temp/batch079-scientific-20261114/20261115T084010973746Z-provenance-test-fast-corrected.stdout",
+          "sha256": "a14f1d6451b09a8fba800d431d9386d1ca0ac12508e912d2423bccab4f1851e0",
+          "bytes": 18914
+        },
+        {
+          "path": ".temp/batch079-scientific-20261114/20261115T084010973746Z-provenance-test-fast-corrected.stderr",
+          "sha256": "a10ab25bd2a1e839b406d60143bcab1142d1b9ff65dcc0a3d0c2f18c58a923fc",
+          "bytes": 53
+        }
+      ],
+      "recipe": {
+        "path": "project.justfile",
+        "sha256": "bf1ab40b8ecdd05add75ec7f6a72d572487abd10dcc2152b39f2c2ea24d8f2c8",
+        "bytes": 115266
+      }
+    }
+  },
+  "remaining_scientific_source_export_blockers": [
+    "Record07: stock nesting/doses, stale generated content, nickel hydrate and sodium-resazurin identity, preparation/source equivalence and narrow evidence; exact KOMODO source unavailable.",
+    "Record08: DSM383/383a output collapse, intermediate/stock placement, nickel and sodium-resazurin grounding, SL-10 scope, qualified variant rationale and unestablished high_metal total.",
+    "Record10: generated volume units/preparation, unsupported owner percentage basis, nominal-batch denominator and source-specific evidence limits; direct TOGO timed out, peptone specificity unconfirmed.",
+    "Authoritative repairs and regenerated exports remain follow-up in749/750/751. No catalog, KG-Microbe admission or export release readiness is asserted."
+  ],
+  "issues": [
+    "https://github.com/CultureBotAI/CultureMech/issues/749",
+    "https://github.com/CultureBotAI/CultureMech/issues/750",
+    "https://github.com/CultureBotAI/CultureMech/issues/751",
+    "https://github.com/CultureBotAI/CultureMech/issues/752",
+    "https://github.com/CultureBotAI/CultureMech/issues/753",
+    "https://github.com/CultureBotAI/CultureMech/issues/754"
+  ],
+  "pr692": "Separate draft at last independently verified02e005db42246b8a04ece9df4b5657e036fa5697, includes684 and had9greenchecks. Its scientific/source/export gates remain separate; this task did not mutate it.",
+  "preservation": "Existing reviews and historical01\u201306/09 artifacts remain unchanged;26historical pins were independently rehashed. Original failures, shallow-clone diagnostics, unsupported list flag and record10 source timeout remain retained. No merge, force push, cleanup, paid research or historical batch publication.",
+  "reproducibility": "A fresh checkout can inspect published code, exact historical source text, scientific reviews and input hashes. Reproducing authoring needs the retained ignored raw captures, peer artifacts, original receipt streams and matching environment. No helper rerun constitutes a fresh scientific review.",
+  "documents_access": "The historical macOS Documents EPERM was separate from completed SSH technical checks. The explicit agent-work recovery checkout is usable; Documents was not retried or permissions changed."
+}

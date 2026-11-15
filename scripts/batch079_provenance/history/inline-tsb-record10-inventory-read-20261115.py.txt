@@ -1,0 +1,16 @@
+import pathlib,json,hashlib,yaml,csv,collections
+R=pathlib.Path.cwd();paths=['data/merge_yaml/merged/DESULFOTOMACULUM_PBE_MEDIUM.yaml','data/normalized_yaml/bacterial/TOGO_M549_Desulfotomaculum_PBE_Medium.yaml','data/normalized_yaml/bacterial/desulfotomaculum_pbe_medium.yaml'];slots=[]
+def walk(x,p,doc):
+ if isinstance(x,dict):
+  for k,v in x.items():
+   q=(p+'.'+k).lstrip('.')
+   if isinstance(v,dict) and isinstance(v.get('id'),str) and k in ['term','mediaingredientmech_chebi_term']:slots.append({'document':doc,'path':q,'id':v['id'],'name':x.get('preferred_term'),'label':v.get('label')})
+   walk(v,q,doc)
+ elif isinstance(x,list):
+  for n,v in enumerate(x):walk(v,p+'['+str(n)+']',doc)
+for p in paths:
+ b=(R/p).read_bytes();print('INPUT',p,hashlib.sha256(b).hexdigest());walk(yaml.safe_load(b),'',p)
+print('SLOTS',json.dumps(slots,indent=2));names={x['name'].casefold() for x in slots if x['name']}
+with (R/'src/culturemech/data/mediaingredientmech/label_index.csv').open() as f:
+ for n,row in enumerate(csv.DictReader(f),2):
+  if row['label'].casefold() in names:print('MIM',n,json.dumps(row))

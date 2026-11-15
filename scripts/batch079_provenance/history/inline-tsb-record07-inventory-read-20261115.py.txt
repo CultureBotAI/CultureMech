@@ -1,0 +1,18 @@
+import yaml,pathlib,hashlib,json,csv,collections
+paths=['data/merge_yaml/merged/DESULFOTHERMUS_NAPHTHAE_MEDIUM.yaml','data/normalized_yaml/bacterial/KOMODO_876_TD3-MEDIUM.yaml','data/normalized_yaml/bacterial/desulfothermus_naphthae_medium.yaml']
+terms=collections.defaultdict(list)
+def walk(v,p,doc):
+ if isinstance(v,dict):
+  for k,x in v.items():
+   q=p+'.'+k if p else k
+   if k in ['term','mediaingredientmech_chebi_term'] and isinstance(x,dict) and str(x.get('id','')).startswith('CHEBI:'):
+    terms[x['id']].append({'doc':doc,'path':q,'name':v.get('preferred_term'),'label':x.get('label')})
+   walk(x,q,doc)
+ elif isinstance(v,list):
+  for i,x in enumerate(v):walk(x,f'{p}[{i}]',doc)
+for p in paths:
+ b=pathlib.Path(p).read_bytes();walk(yaml.safe_load(b),'',p);print('INPUT',p,hashlib.sha256(b).hexdigest())
+print('UNIQUE',len(terms),'SLOTS',sum(map(len,terms.values())))
+for k,rows in terms.items(): print(json.dumps({'id':k,'names':sorted({r['name'] for r in rows}),'labels':sorted({r['label'] for r in rows}),'slots':len(rows)},ensure_ascii=False))
+p=pathlib.Path('src/culturemech/data/mediaingredientmech/label_index.csv');print('MIM',hashlib.sha256(p.read_bytes()).hexdigest());r=csv.DictReader(p.open());print('MIM_FIELDS',r.fieldnames)
+print('META_FILES',[str(x) for x in p.parent.iterdir()])

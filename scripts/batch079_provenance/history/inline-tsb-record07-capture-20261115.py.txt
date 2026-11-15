@@ -1,0 +1,29 @@
+import pathlib,json,hashlib,yaml,csv,collections,datetime,urllib.request,urllib.parse,concurrent.futures,os
+C=pathlib.Path.cwd(); now=lambda:datetime.datetime.now(datetime.timezone.utc).isoformat().replace('+00:00','Z');stamp=datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%S%fZ');D=C/'.temp/batch079-scientific-20261114/record07'/('chemical-identity-tsb-'+stamp)
+assert not os.path.lexists(D);D.mkdir(parents=True,exist_ok=False)
+paths=['data/merge_yaml/merged/DESULFOTHERMUS_NAPHTHAE_MEDIUM.yaml','data/normalized_yaml/bacterial/KOMODO_876_TD3-MEDIUM.yaml','data/normalized_yaml/bacterial/desulfothermus_naphthae_medium.yaml'];slots=[];pins=[]
+def walk(x,p,doc):
+ if isinstance(x,dict):
+  for k,v in x.items():
+   q=p+'.'+k if p else k
+   if k in ['term','mediaingredientmech_chebi_term'] and isinstance(v,dict) and str(v.get('id','')).startswith('CHEBI:'):slots.append({'document':doc,'path':q,'name':x.get('preferred_term'),'id':v['id'],'local_label':v.get('label')})
+   walk(v,q,doc)
+ elif isinstance(x,list):
+  for i,v in enumerate(x):walk(v,f'{p}[{i}]',doc)
+for p in paths:
+ b=(C/p).read_bytes();pins.append({'path':p,'sha256':hashlib.sha256(b).hexdigest(),'bytes':len(b)});walk(yaml.safe_load(b),'',p)
+for p in ['src/culturemech/data/mediaingredientmech/label_index.csv','src/culturemech/data/mediaingredientmech/label_index.metadata.json']:
+ b=(C/p).read_bytes();pins.append({'path':p,'sha256':hashlib.sha256(b).hexdigest(),'bytes':len(b)})
+rows=list(csv.DictReader((C/'src/culturemech/data/mediaingredientmech/label_index.csv').open()));names=sorted({s['name']for s in slots});mim=[{'local_name':n,'matching_rows':[{'csv_line':i+2,**r}for i,r in enumerate(rows)if r['label'].casefold()==n.casefold()]}for n in names]
+ids=sorted({s['id']for s in slots}|{'CHEBI:53542'})
+def get(id):
+ u='https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?'+urllib.parse.urlencode({'iri':'http://purl.obolibrary.org/obo/'+id.replace(':','_')});meta={'id':id,'url':u,'started_at':now()}
+ try:
+  with urllib.request.urlopen(u,timeout=45)as r:b=r.read();meta.update(status=r.status,headers=dict(r.headers))
+  p=D/(id.replace(':','_')+'.json');p.write_bytes(b);meta.update(raw_file=p.name,sha256=hashlib.sha256(b).hexdigest(),bytes=len(b));j=json.loads(b);ts=j.get('_embedded',{}).get('terms',[]);meta['exact_terms']=[{k:t.get(k)for k in ['obo_id','iri','label','description','is_obsolete','annotation','synonyms']}for t in ts if t.get('obo_id')==id]
+ except Exception as e:meta['error']=repr(e)
+ meta['finished_at']=now();return meta
+with concurrent.futures.ThreadPoolExecutor(max_workers=4)as pool:captures=list(pool.map(get,ids))
+for name,o in [('input-slots.json',{'inputs':pins,'slots':slots,'unique_asserted_ids':sorted({s['id']for s in slots})}),('mim-exact-label-rows.json',mim),('ols-capture-catalog.json',captures)]:
+ p=D/name;p.write_text(json.dumps(o,indent=2,ensure_ascii=False)+'\n');print(name,hashlib.sha256(p.read_bytes()).hexdigest())
+print('DIRECTORY',str(D));print('ASSERTED_IDS',len(ids)-1,'SLOTS',len(slots),'CAPTURES',len(captures),'EXACT',sum(len(c.get('exact_terms',[]))==1 for c in captures),'ERRORS',[(c['id'],c.get('error'))for c in captures if 'error'in c])

@@ -1,0 +1,4 @@
+import pathlib,json
+D=pathlib.Path('.temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z');cat=json.loads((D/'ols-capture-catalog.json').read_text())
+for c in cat[18:]:
+ t=c['exact_terms'][0];a=t['annotation'];print(json.dumps({'id':t['obo_id'],'label':t['label'],'obsolete':t['is_obsolete'],'description':t['description'],'formula':a.get('generalized_empirical_formula'),'charge':a.get('charge'),'mass':a.get('mass'),'inchi':a.get('inchi_string'),'smiles':a.get('smiles_string'),'synonyms':t['synonyms']},ensure_ascii=False))

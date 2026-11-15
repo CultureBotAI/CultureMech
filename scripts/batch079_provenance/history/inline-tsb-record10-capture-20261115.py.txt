@@ -1,0 +1,42 @@
+import pathlib,yaml,json,hashlib,csv,datetime,urllib.request,urllib.parse,urllib.error,concurrent.futures,os,collections
+R=pathlib.Path.cwd();P=R/'.temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z';stamp=datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%S%fZ');D=R/'.temp/batch079-scientific-20261114/record10'/('chemical-identity-tsb-'+stamp);assert not os.path.lexists(D);D.mkdir(parents=True,exist_ok=False)
+sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();now=lambda:datetime.datetime.now(datetime.timezone.utc).isoformat().replace('+00:00','Z')
+paths={'data/merge_yaml/merged/DESULFOTOMACULUM_PBE_MEDIUM.yaml':'selected_generated','data/normalized_yaml/bacterial/TOGO_M549_Desulfotomaculum_PBE_Medium.yaml':'sole_maintained_owner','data/normalized_yaml/bacterial/desulfotomaculum_pbe_medium.yaml':'comparison_context_only'};slots=[];media=[];inputs=[]
+def walk(x,p,doc):
+ if isinstance(x,dict):
+  for k,v in x.items():
+   q=(p+'.'+k).lstrip('.')
+   if isinstance(v,dict) and k in ['term','mediaingredientmech_chebi_term']:
+    z={'document':doc,'role':paths[doc],'path':q,'id':v['id'],'name':x.get('preferred_term'),'local_label':v.get('label')}
+    (media if q.startswith('media_term') else slots).append(z)
+   walk(v,q,doc)
+ elif isinstance(x,list):
+  for i,v in enumerate(x):walk(v,p+'['+str(i)+']',doc)
+for p,role in paths.items():inputs.append({'path':p,'role':role,'sha256':sha(R/p)});walk(yaml.safe_load((R/p).read_text()),'',p)
+ids=sorted({s['id'] for s in slots});old={x['id']:x for x in json.loads((P/'ols-capture-catalog.json').read_text())};catalog=[]
+def fetch(id):
+ ont=id.split(':')[0].lower();u='https://www.ebi.ac.uk/ols4/api/ontologies/'+ont+'/terms?'+urllib.parse.urlencode({'iri':'http://purl.obolibrary.org/obo/'+id.replace(':','_')});start=now()
+ try:
+  with urllib.request.urlopen(u,timeout=40) as resp:b=resp.read();status=resp.status;headers=dict(resp.headers.items())
+ except urllib.error.HTTPError as e:b=e.read();status=e.code;headers=dict(e.headers.items())
+ raw=D/(id.replace(':','_')+'.json');raw.write_bytes(b)
+ try:o=json.loads(b);terms=o.get('_embedded',{}).get('terms',[])
+ except Exception:terms=[]
+ exact=[{k:t.get(k) for k in ['obo_id','iri','label','description','is_obsolete','annotation','synonyms']} for t in terms if t.get('obo_id')==id]
+ return {'id':id,'url':u,'started_at':start,'finished_at':now(),'status':status,'headers':headers,'raw_path':str(raw.relative_to(R)),'sha256':sha(raw),'bytes':len(b),'exact_terms':exact,'reuse':None}
+new=[]
+for id in ids:
+ if id in old:
+  x=json.loads(json.dumps(old[id]));raw=P/x['raw_file'];assert sha(raw)==x['sha256'];x['raw_path']=str(raw.relative_to(R));x['reuse']={'catalog_path':str((P/'ols-capture-catalog.json').relative_to(R)),'catalog_sha256':sha(P/'ols-capture-catalog.json'),'capture_times_preserved':True};catalog.append(x)
+ else:new.append(id)
+with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:catalog+=list(pool.map(fetch,new))
+for name,data in [('input-slots.json',{'inputs':inputs,'ingredient_slots':slots,'media_identity_slots_parent_scope':media,'unique_asserted_ingredient_ids':ids}),('ols-capture-catalog.json',catalog)]: (D/name).write_text(json.dumps(data,indent=2,ensure_ascii=False)+'\n')
+names={x['name'].casefold() for x in slots};rows=[];additional=[];cp=R/'src/culturemech/data/mediaingredientmech/label_index.csv'
+with cp.open() as f:
+ for n,row in enumerate(csv.DictReader(f),2):
+  if row['label'].casefold() in names:rows.append({'physical_csv_line':n,**row})
+  elif row['ontology_id']=='CHEBI:31795':additional.append({'physical_csv_line':n,**row})
+(D/'mim-exact-label-rows.json').write_text(json.dumps({'source_path':str(cp.relative_to(R)),'sha256':sha(cp),'exact_local_rows':rows,'same_id_magnesium_counterpart_rows':additional},indent=2,ensure_ascii=False)+'\n')
+print('EVIDENCE_DIR',D);print('COUNTS',len(slots),len(ids),dict(collections.Counter(x['role'] for x in slots)))
+for x in catalog:print('TERM',json.dumps({k:x[k] for k in ['id','status','exact_terms']},ensure_ascii=False))
+print('MAGNESIUM_COUNTERPARTS',json.dumps(additional,ensure_ascii=False))

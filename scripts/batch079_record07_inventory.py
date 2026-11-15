@@ -1,5 +1,24 @@
 #!/usr/bin/env python3
-"""Build a source-location inventory for record07, without declaring scientific validity."""
+"""Build the record07 source-location inventory for manual review.
+
+Provenance date: 2026-11-15.
+Context: CultureMech #749 (DSMZ876 scientific findings) and #752 (retain the
+executed provenance helpers and their historical versions).
+
+Required inputs: no CLI arguments. Read the three YAML paths in PATHS (the
+selected generated record and both maintained owners) and the already captured
+record07/medium876.json under .temp/batch079-scientific-20261114. Python requires
+PyYAML; paths are resolved from this script's checkout root.
+Outputs: an exclusively created record07/claim-inventory.json and console rows
+showing current ingredients, stock additions and exact-label source candidates.
+
+Replay limits: this is a one-run inventory writer and refuses an existing output.
+It does not fetch sources, verify chemical identities, decide source equivalence
+or declare quantities scientifically valid. Exact-name candidates can span
+multiple source stocks and require manual interpretation. Preserve the original
+inventory and the retained pre-format helper bytes instead of overwriting them
+or treating a later invocation as the original scientific reading.
+"""
 
 from __future__ import annotations
 

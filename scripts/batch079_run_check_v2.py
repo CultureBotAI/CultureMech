@@ -1,5 +1,24 @@
 #!/usr/bin/env python3
-"""Run one explicit batch079 command and preserve its real output and exit."""
+"""Run one explicit batch079 command with durable launch-error receipts.
+
+Provenance date: 2026-11-15.
+Context: CultureMech issue #752 (publish executed provenance helpers), supporting
+record reviews #749, #750 and #751; successor to batch079_run_check.py.
+
+Required inputs: run from this checkout's root with a simple positional label
+and the explicit child command/arguments. The caller supplies the executable,
+its input files and matching environment. The runner sets checkout-local
+.venv/cache paths and the recorded batch079 Git base.
+Outputs: timestamped .stdout, .stderr and .json receipts under
+.temp/batch079-scientific-20261114. Receipts retain literal dotted labels,
+argv, times, stream hashes, child exit and runner exit; launch errors retain
+null child exit and runner exit 127 or 126. Console output is a bounded preview.
+
+Replay limits: each invocation executes the child once, with separately
+required authorization. It does not install dependencies, establish scientific
+validity or make repeated source/check execution safe. Retain earlier runner
+versions and failed receipts; a replay is a new event, not the historical run.
+"""
 
 from __future__ import annotations
 
