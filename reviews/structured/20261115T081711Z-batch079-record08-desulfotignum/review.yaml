@@ -1,0 +1,2682 @@
+schema_version: 1.0.0
+review_id: 20261115T081711Z-batch079-record08-desulfotignum
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Recovered batch079 record08: DSM383a source and chemical assessment'
+started_at: '2026-11-15T08:09:02.141437Z'
+finished_at: '2026-11-15T08:17:11.301304Z'
+reviewer:
+  identity: Codex tsb_source_check
+  kind: agent
+  independence: independent
+  independence_basis: Did not author or alter the existing scientific records. Full
+    files, captured source objects/PDF text and exact chemical authorities were read;
+    coordinating-root source review is attributed as peer context. This is not human
+    approval.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: 'Completed record08 assessment with both maintained owners as context. Two
+  blockers remain: DSM383 identity collapse in the generated383a target, and flattened
+  intermediate/stock composition. Chemical-form and stock-preparation majors plus
+  evidence/variant-prose minors remain. Fresh parent-run and original technical checks
+  passed but do not establish scientific approval. No scientific file was changed.'
+source:
+  git_revision: dda27db28f1e5f4f05da6d92fbd2cc1bd6e8add3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T080948377716Z-record08-fetch-primary383a.json
+    sha256: 3da05d3b565d415bc35887515ceb66b3a98894b1126f7161b225e9d80e4e2b46
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T080948377716Z-record08-fetch-primary383a.stderr
+    sha256: 82e9781bbd451e70fdd95e7386e15c25e1a8b6eaa6761d481ad20710a65fbd49
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T080948377716Z-record08-fetch-primary383a.stdout
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T080949290338Z-record08-fetch-primary383.json
+    sha256: 47758c1b5f9dd2c319f5ca742e1e0a5e9bf28e23cc2544817372662675207bf0
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T080949290338Z-record08-fetch-primary383.stderr
+    sha256: c6fb921cd9614128284d636cb080775a34892c2f670dc96001d9e6c3785075eb
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T080949290338Z-record08-fetch-primary383.stdout
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T080950247722Z-record08-fetch-structured383a.json
+    sha256: 35b779025bfafe9aba0a2fef7ad3ccdacda1d438b7d23e0eb4428016306d3469
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T080950247722Z-record08-fetch-structured383a.stderr
+    sha256: 484057cd774761b900a0e2dc7a012d23cdf15b98d0359d365e1a517267f3897b
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T080950247722Z-record08-fetch-structured383a.stdout
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T080950811016Z-record08-fetch-structured383.json
+    sha256: 1ca6048f3159636f2be8fb11bb9c832f6f6439ff0d4bf36cd9d2ec1d0c8af53a
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T080950811016Z-record08-fetch-structured383.stderr
+    sha256: 7017dcc6fb46ff10948d5a6ff1dc82e7cd08fa46f9c9bdc47d4360dcbb41eb90
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T080950811016Z-record08-fetch-structured383.stdout
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T081418248294Z-record08-terms.json
+    sha256: 0832014d6c083eea199768068a32e6203fd09d82a3a3eef14e01fdf5274ddf52
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T081418248294Z-record08-terms.stderr
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T081418248294Z-record08-terms.stdout
+    sha256: 6d1e6d9197ee2e4862a8c3e955bf66380f33809345381a786040ec40180d52e0
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T081419407643Z-record08-references.json
+    sha256: 32711366aea374aa044da91a44edc6714cfc78d8408718563ba7dda0ded6435b
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T081419407643Z-record08-references.stderr
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T081419407643Z-record08-references.stdout
+    sha256: 254da7eee7ae518a1951f250278e1b86383cdd1cdc205bb7c4a17786a6c89954
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T081420069829Z-record08-schema.json
+    sha256: 2b723cc84def0ba6fb2c2e80fb8f6c1d3bffd2bcb5967277225700b20ce83d97
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T081420069829Z-record08-schema.stderr
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T081420069829Z-record08-schema.stdout
+    sha256: 7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T081420547292Z-record08-strict.json
+    sha256: e1cd76bd3a48e98d46ba9fc7afe6d95f01d7cabc0ae2f2029b213190ad44411b
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T081420547292Z-record08-strict.stderr
+    sha256: 3136549d12a3526d41f4ad6047ee6dc4d10ebea884f142efeda34470c562aa67
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T081420547292Z-record08-strict.stdout
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    role: context
+  - path: .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_131361.json
+    sha256: 643fefa89a2c0afeb2a00a0dd6149dbbf86cc4824369c58bde1c6ea6d4316d10
+    role: context
+  - path: .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_15940.json
+    sha256: ba646eb565dda766d0398c467e4c55effd4376b5d30134b22773e694ae6186f7
+    role: context
+  - path: .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_15956.json
+    sha256: 70707d310306fa19de0c6a9d43a7a2abeb3b59161f295e5e1bf888c4a347cd20
+    role: context
+  - path: .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_16494.json
+    sha256: aa3c1003d6266cc48f19a4d1d9527edd6844b96094a911e9a3c4f6a8851444e1
+    role: context
+  - path: .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_17015.json
+    sha256: cd0f9bb993f17848e326fb7580ed311820332c5850a77122e2a12c47c72e6022
+    role: context
+  - path: .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_176843.json
+    sha256: b535c3de88f47e93aed8909c58ff4e2d054a6845dea3bc9a048c18df12b371a9
+    role: context
+  - path: .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_17883.json
+    sha256: 1c4c2e8e3474319ab5fb79041b19cabfae42f4360729a7569f8a943a503d2f6a
+    role: context
+  - path: .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_26710.json
+    sha256: 263497ec2251a5547afabcfd16c9c4c90a8906f0b09e79bb1d6d5f36211b17e8
+    role: context
+  - path: .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_27470.json
+    sha256: b10d7468d09b64b3175ed33f6da7b91930c4a06f58de48c41e8ff558fdf64400
+    role: context
+  - path: .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_29377.json
+    sha256: d762286083196442ea72280ad6e8cbdfd43d355fe40a80cee5562a57bf1ae3a3
+    role: context
+  - path: .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_30753.json
+    sha256: 97ea54b8020d3bcda2478182be115d2bc632249ee22b197b0575a4a9fd5fe21a
+    role: context
+  - path: .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_30961.json
+    sha256: 3ddda602b527dd6fe27be17939aa67b919cd7c14ff127e459f6b0aaaa362cbd3
+    role: context
+  - path: .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_31206.json
+    sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+    role: context
+  - path: .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_31345.json
+    sha256: 56fc4b33c78d82faf317e131ae936f2e00eab0c369b2a9d8be86eddff6fd616d
+    role: context
+  - path: .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_32145.json
+    sha256: 2373bbcef187826c692b5378554daa4d799085002aa8616ff418e067655027b7
+    role: context
+  - path: .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_32149.json
+    sha256: 969ae214c947d944eb086715a9f43a67e02b889258f6c61a64eb2a17b882b9a0
+    role: context
+  - path: .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_32588.json
+    sha256: 216d4ddec877706842671317d1fba8c29a6c66f46a811f1661471222b4652f3f
+    role: context
+  - path: .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_33118.json
+    sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+    role: context
+  - path: .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_34887.json
+    sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+    role: context
+  - path: .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_49105.json
+    sha256: e389d4e22c1155379a117cd26c5e997bbafce3ad00deea5aee9231de2f35a067
+    role: context
+  - path: .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_49976.json
+    sha256: 7b8e2fc9cccc968d43ee39996916da9f300a4d411d7ca0ce7d9ce477e8c2236b
+    role: context
+  - path: .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_53503.json
+    sha256: c33e304a0a565068c592ba0970e501052981599ef69cd2cb901e88f27931389d
+    role: context
+  - path: .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_53542.json
+    sha256: 423c21fd3715257bbccc1ad83ef3b8e438ffe20f02418e2b202886237c4ea112
+    role: context
+  - path: .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_63036.json
+    sha256: 52c051eb66c85e0955858b2780078900c6e37d77d4824af7eb8595a19f9168f4
+    role: context
+  - path: .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_63939.json
+    sha256: 987144fa0342502834f116860a4b4f71696f62c18e7b701301667c15e588562a
+    role: context
+  - path: .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_75213.json
+    sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+    role: context
+  - path: .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_76209.json
+    sha256: f74d2c85574a4e28bdf71a78e4263f7e4c211036cd6d63b1f8282aca1d255e5c
+    role: context
+  - path: .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_86158.json
+    sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+    role: context
+  - path: .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_86249.json
+    sha256: 63bb84e7a947d2a3db0e5f23cf6a533bda2eee137020d7bbe2590477131c5683
+    role: context
+  - path: .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_86318.json
+    sha256: 9bbecfe37d67d923ee070067aebdf1abf21048cdb2cbdff9de0e3d21f68ea1ae
+    role: context
+  - path: .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_86345.json
+    sha256: cdf62749dcbfbfaa3b7d424c018306977fd107a3387f104f7f1a1bfa00b9adf7
+    role: context
+  - path: .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_86368.json
+    sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+    role: context
+  - path: .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_8806.json
+    sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+    role: context
+  - path: .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/ols-capture-catalog.json
+    sha256: 7676cab706bad3e3fb6878c23687b3ab61d2d3c83fb0b365a55db7c778b5a774
+    role: context
+  - path: .temp/batch079-scientific-20261114/record08/DSMZ_Medium383.pdf
+    sha256: 90291ef8604727d3eccc28eb3b9734103d53a3aad1bf9233c965fc15a66c45de
+    role: context
+  - path: .temp/batch079-scientific-20261114/record08/DSMZ_Medium383a.pdf
+    sha256: 4b4f4c9bef3e2d44a03a8b8d696bef396a9aa1e8825af193bc330aa5fe87ceab
+    role: context
+  - path: .temp/batch079-scientific-20261114/record08/author-plan.json
+    sha256: 763837f8046f4da29fac78f38dbd1a4fc7eb064dd11c85b30b40a4817b28f420
+    role: context
+  - path: .temp/batch079-scientific-20261114/record08/chemical-identity-tsb-20261115T080902116157Z/CHEBI_50144.json
+    sha256: bcbba0647992a81d26c9db98e001ab209bb9551e3f1f6f81daea188bdc7a010e
+    role: context
+  - path: .temp/batch079-scientific-20261114/record08/chemical-identity-tsb-20261115T080902116157Z/chemical-identity-assessment.json
+    sha256: 2a988dae7af4d379fffbc2e2f2a5a8b7fec3c6cdbd86330f9bec196931c8906d
+    role: context
+  - path: .temp/batch079-scientific-20261114/record08/chemical-identity-tsb-20261115T080902116157Z/direct-pin-receipt.json
+    sha256: 8c91aa831bf2c8d7ce66f928ef5b92120f6a2f38b2baa6362b56f622ea9dc677
+    role: context
+  - path: .temp/batch079-scientific-20261114/record08/chemical-identity-tsb-20261115T080902116157Z/input-slots.json
+    sha256: ed1a8fe08a2ec77fc8c719518dcc7825182361c55cc177afdc2312208f9561f6
+    role: context
+  - path: .temp/batch079-scientific-20261114/record08/chemical-identity-tsb-20261115T080902116157Z/mim-exact-label-rows.json
+    sha256: 78059fbf913cfeb6a0cd3545e8f7f6d336c24e88f51d2fb5dd21053dc16b8f41
+    role: context
+  - path: .temp/batch079-scientific-20261114/record08/chemical-identity-tsb-20261115T080902116157Z/ols-capture-catalog.json
+    sha256: 7128a41d6cf46fecf7c36398b81139661678d1758fce03638578967b8bd64697
+    role: context
+  - path: .temp/batch079-scientific-20261114/record08/claim-inventory.json
+    sha256: 0bff376fe5e5dfeb530b08866756f6469432ae67e7e1ca1c5e91eccef47d59ad
+    role: context
+  - path: .temp/batch079-scientific-20261114/record08/issue-body-20261115.md
+    sha256: 711f2a2349caa141d5d11a816766177a837857a8b6bfa9ad899792155425ed08
+    role: context
+  - path: .temp/batch079-scientific-20261114/record08/issue-filing-receipt-20261115.json
+    sha256: db0720476b2b141a316e9e3bf354f9b76e897ca93a3ce94b1adc646a2bd4da97
+    role: context
+  - path: .temp/batch079-scientific-20261114/record08/medium383.json
+    sha256: 03e3daa513a4e5d92229a17092fc29bc6873c253d7a53d47ceb5f68da93b6b83
+    role: context
+  - path: .temp/batch079-scientific-20261114/record08/medium383a.json
+    sha256: f37fad8036cde0c57171edc1279ed0881e18e2174e9b2222f00dffe556b9e876
+    role: context
+  - path: .temp/batch079-scientific-20261114/record08/original-native/RESULT.md
+    sha256: 5d889ac90072ef6eeb01e9a34a8101ca8f2da53b969de4a208a61c8113bad7d5
+    role: context
+  - path: .temp/batch079-scientific-20261114/record08/original-native/inspection.json
+    sha256: c4033c465b0166a0165334815c62b5cb67c701588768ef6ab5e32f03a460d217
+    role: context
+  - path: .temp/batch079-scientific-20261114/record08/original-native/references.log
+    sha256: 254da7eee7ae518a1951f250278e1b86383cdd1cdc205bb7c4a17786a6c89954
+    role: context
+  - path: .temp/batch079-scientific-20261114/record08/original-native/schema.log
+    sha256: 7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050
+    role: context
+  - path: .temp/batch079-scientific-20261114/record08/original-native/strict.log
+    sha256: 0d6bd0d3ec67b8975dfcf2fb1feee1cc59cfb142a8586c29aa2236dd609e2df6
+    role: context
+  - path: .temp/batch079-scientific-20261114/record08/original-native/strict.tsv
+    sha256: 4ccba8b77ce80cf210105b5284b5953747729aba576ccdeecb81f7db84eb721b
+    role: context
+  - path: .temp/batch079-scientific-20261114/record08/original-native/terms.log
+    sha256: 6d1e6d9197ee2e4862a8c3e955bf66380f33809345381a786040ec40180d52e0
+    role: context
+  - path: .temp/batch079-scientific-20261114/record08/peer-review.md
+    sha256: 6fcc4496c3ed383dd11e95a7f881494ca647292ab52ef410e94cd1374836d30f
+    role: context
+  - path: .temp/batch079-scientific-20261114/record08/strict.tsv
+    sha256: 4ccba8b77ce80cf210105b5284b5953747729aba576ccdeecb81f7db84eb721b
+    role: context
+  - path: .temp/batch079-scientific-20261114/record08/targets.yaml
+    sha256: aac83821854974323fa1c4ddae6033ac71b025a8c5b1aab6aea994e1f75ff842
+    role: context
+  - path: AGENTS.md
+    sha256: 61991a89af8cb8d55b19dbb4a512656a438087b9f712174de99234b43183c3e5
+    role: context
+  - path: conf/record_review.yaml
+    sha256: f1601d0b04ba953123c9fa661023fe498bac80bfd2d210e0179becc582c5b27d
+    role: context
+  - path: data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml
+    sha256: 17434c3b989e7622368511f076130f37fac6b2e3ff2a28886b8af7b955f43a10
+    role: target
+  - path: data/normalized_yaml/bacterial/desulfobacterium_medium.yaml
+    sha256: 2a5157e6de5fbd44d2c33c8447a79a8b0372c02b2e2f800c34118869aca373ba
+    role: context
+  - path: data/normalized_yaml/bacterial/desulfotignum_medium.yaml
+    sha256: 5fbbb84755411f193026cb2acca75c91a02edc72d9699dfb19756ac1d215a121
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/batch079_build_record08_review_v2.py
+    sha256: 502b88fc24fdaa85c58a0af6c23af9152f69b6756942bd8826bec26ccf8e2eab
+    role: context
+  - path: scripts/batch079_run_check_v2.py
+    sha256: 3655970eaa14fe87473cb7c79bd25f41d815401d95584706a70aab843f19dfd9
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 43725a6b518253da59235a20fa684f0332f2fd83ef852b2463c9e4d0cf1be9d5
+    role: context
+scope:
+  description: One selected generated target, both full maintained owners as source/variant
+    context, all99 concentrations, retained numeric preparation/pH fields,192 asserted
+    chemical slots and26 embedded history events.
+  selection: Recovered079 manifest explicitly selects CultureMech:001490 DESULFOTIGNUM
+    MEDIUM; current exact target and owner paths/IDs were verified.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:001490
+  exclusions:
+  - target: Other batch079 records, PR692 and corpus/publication workflows
+    reason: No broader completion, publication, admission or release verdict is made;
+      record10 has not been started.
+  - target: DSM383 strain-specific substitutions and source media320/385/120 parent
+      formulations
+    reason: Use only the generic383 comparison and embedded stock definitions printed
+      here; no strain-specific growth or parent recipe transfer.
+  - target: Historical external report bodies and historical process execution
+    reason: Embedded current histories are read as stored event statements; this assessment
+      does not certify execution of prior repairs or unseen reports.
+targets:
+- target_id: CultureMech:001490
+  path: data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml
+  label: DESULFOTIGNUM MEDIUM
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfobacterium_medium.yaml
+    role: normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfotignum_medium.yaml
+    role: normalized source
+checks:
+- check_id: C-schema
+  name: Fresh native schema
+  status: passed
+  required: true
+  target_ids:
+  - CultureMech:001490
+  exit_code: 0
+  command: just validate-schema data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml
+  summary: Schema success only; does not establish source truth.
+  scope_note: Parent executed this fresh diagnostic; receipt .temp/batch079-scientific-20261114/20261115T081420069829Z-record08-schema.json
+    pins actual times, argv, stdout and stderr. Author read both streams and preserves
+    original historical diagnostics separately.
+  evidence_ids:
+  - E-fresh-schema
+  - E-native-result
+  - E-native-schema
+- check_id: C-strict
+  name: Fresh native strict
+  status: passed
+  required: true
+  target_ids:
+  - CultureMech:001490
+  exit_code: 0
+  command: just validate-strict data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml --out
+    .temp/batch079-scientific-20261114/record08/strict.tsv --workers 1 --quiet
+  summary: Exactly one file; schema layer, zero errors and header-only TSV. No full-corpus
+    QC claim.
+  scope_note: Parent executed this fresh diagnostic; receipt .temp/batch079-scientific-20261114/20261115T081420547292Z-record08-strict.json
+    pins actual times, argv, stdout and stderr. Author read both streams and preserves
+    original historical diagnostics separately.
+  evidence_ids:
+  - E-fresh-strict
+  - E-native-result
+  - E-native-strict
+- check_id: C-terms
+  name: Fresh native terms
+  status: passed
+  required: true
+  target_ids:
+  - CultureMech:001490
+  exit_code: 0
+  command: just validate-terms data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml
+  summary: Configured term routes passed; chemical slots require the separate exact-form
+    audit.
+  scope_note: Parent executed this fresh diagnostic; receipt .temp/batch079-scientific-20261114/20261115T081418248294Z-record08-terms.json
+    pins actual times, argv, stdout and stderr. Author read both streams and preserves
+    original historical diagnostics separately.
+  evidence_ids:
+  - E-fresh-terms
+  - E-native-result
+  - E-native-terms
+- check_id: C-references
+  name: Fresh native references
+  status: passed
+  required: true
+  target_ids:
+  - CultureMech:001490
+  exit_code: 0
+  command: just validate-references data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml
+  summary: Zero evidence assertions checked. This is not completeness or scientific
+    support.
+  scope_note: Parent executed this fresh diagnostic; receipt .temp/batch079-scientific-20261114/20261115T081419407643Z-record08-references.json
+    pins actual times, argv, stdout and stderr. Author read both streams and preserves
+    original historical diagnostics separately.
+  evidence_ids:
+  - E-fresh-references
+  - E-native-result
+  - E-native-references
+- check_id: C-inspect
+  name: Fresh native input inspection
+  status: passed
+  required: true
+  target_ids:
+  - CultureMech:001490
+  exit_code: 0
+  command: /Users/marcin/agent-work/CultureMech/batch079-current-20261114/.venv/bin/python
+    -B scripts/record_review.py inspect --targets .temp/batch079-scientific-20261114/record08/targets.yaml
+    --input .claude/skills/curate-yaml-record/references/review-checklist.md --input
+    .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    --input .claude/skills/review-recipes/reference/validation-rules.md --input .claude/skills/review-yaml-record/SKILL.md
+    --input .temp/batch079-scientific-20261114/20261115T080948377716Z-record08-fetch-primary383a.json
+    --input .temp/batch079-scientific-20261114/20261115T080948377716Z-record08-fetch-primary383a.stderr
+    --input .temp/batch079-scientific-20261114/20261115T080948377716Z-record08-fetch-primary383a.stdout
+    --input .temp/batch079-scientific-20261114/20261115T080949290338Z-record08-fetch-primary383.json
+    --input .temp/batch079-scientific-20261114/20261115T080949290338Z-record08-fetch-primary383.stderr
+    --input .temp/batch079-scientific-20261114/20261115T080949290338Z-record08-fetch-primary383.stdout
+    --input .temp/batch079-scientific-20261114/20261115T080950247722Z-record08-fetch-structured383a.json
+    --input .temp/batch079-scientific-20261114/20261115T080950247722Z-record08-fetch-structured383a.stderr
+    --input .temp/batch079-scientific-20261114/20261115T080950247722Z-record08-fetch-structured383a.stdout
+    --input .temp/batch079-scientific-20261114/20261115T080950811016Z-record08-fetch-structured383.json
+    --input .temp/batch079-scientific-20261114/20261115T080950811016Z-record08-fetch-structured383.stderr
+    --input .temp/batch079-scientific-20261114/20261115T080950811016Z-record08-fetch-structured383.stdout
+    --input .temp/batch079-scientific-20261114/20261115T081418248294Z-record08-terms.json
+    --input .temp/batch079-scientific-20261114/20261115T081418248294Z-record08-terms.stderr
+    --input .temp/batch079-scientific-20261114/20261115T081418248294Z-record08-terms.stdout
+    --input .temp/batch079-scientific-20261114/20261115T081419407643Z-record08-references.json
+    --input .temp/batch079-scientific-20261114/20261115T081419407643Z-record08-references.stderr
+    --input .temp/batch079-scientific-20261114/20261115T081419407643Z-record08-references.stdout
+    --input .temp/batch079-scientific-20261114/20261115T081420069829Z-record08-schema.json
+    --input .temp/batch079-scientific-20261114/20261115T081420069829Z-record08-schema.stderr
+    --input .temp/batch079-scientific-20261114/20261115T081420069829Z-record08-schema.stdout
+    --input .temp/batch079-scientific-20261114/20261115T081420547292Z-record08-strict.json
+    --input .temp/batch079-scientific-20261114/20261115T081420547292Z-record08-strict.stderr
+    --input .temp/batch079-scientific-20261114/20261115T081420547292Z-record08-strict.stdout
+    --input .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_131361.json
+    --input .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_15940.json
+    --input .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_15956.json
+    --input .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_16494.json
+    --input .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_17015.json
+    --input .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_176843.json
+    --input .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_17883.json
+    --input .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_26710.json
+    --input .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_27470.json
+    --input .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_29377.json
+    --input .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_30753.json
+    --input .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_30961.json
+    --input .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_31206.json
+    --input .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_31345.json
+    --input .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_32145.json
+    --input .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_32149.json
+    --input .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_32588.json
+    --input .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_33118.json
+    --input .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_34887.json
+    --input .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_49105.json
+    --input .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_49976.json
+    --input .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_53503.json
+    --input .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_53542.json
+    --input .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_63036.json
+    --input .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_63939.json
+    --input .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_75213.json
+    --input .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_76209.json
+    --input .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_86158.json
+    --input .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_86249.json
+    --input .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_86318.json
+    --input .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_86345.json
+    --input .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_86368.json
+    --input .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_8806.json
+    --input .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/ols-capture-catalog.json
+    --input .temp/batch079-scientific-20261114/record08/DSMZ_Medium383.pdf --input
+    .temp/batch079-scientific-20261114/record08/DSMZ_Medium383a.pdf --input .temp/batch079-scientific-20261114/record08/author-plan.json
+    --input .temp/batch079-scientific-20261114/record08/chemical-identity-tsb-20261115T080902116157Z/CHEBI_50144.json
+    --input .temp/batch079-scientific-20261114/record08/chemical-identity-tsb-20261115T080902116157Z/chemical-identity-assessment.json
+    --input .temp/batch079-scientific-20261114/record08/chemical-identity-tsb-20261115T080902116157Z/direct-pin-receipt.json
+    --input .temp/batch079-scientific-20261114/record08/chemical-identity-tsb-20261115T080902116157Z/input-slots.json
+    --input .temp/batch079-scientific-20261114/record08/chemical-identity-tsb-20261115T080902116157Z/mim-exact-label-rows.json
+    --input .temp/batch079-scientific-20261114/record08/chemical-identity-tsb-20261115T080902116157Z/ols-capture-catalog.json
+    --input .temp/batch079-scientific-20261114/record08/claim-inventory.json --input
+    .temp/batch079-scientific-20261114/record08/issue-body-20261115.md --input .temp/batch079-scientific-20261114/record08/issue-filing-receipt-20261115.json
+    --input .temp/batch079-scientific-20261114/record08/medium383.json --input .temp/batch079-scientific-20261114/record08/medium383a.json
+    --input .temp/batch079-scientific-20261114/record08/original-native/RESULT.md
+    --input .temp/batch079-scientific-20261114/record08/original-native/inspection.json
+    --input .temp/batch079-scientific-20261114/record08/original-native/references.log
+    --input .temp/batch079-scientific-20261114/record08/original-native/schema.log
+    --input .temp/batch079-scientific-20261114/record08/original-native/strict.log
+    --input .temp/batch079-scientific-20261114/record08/original-native/strict.tsv
+    --input .temp/batch079-scientific-20261114/record08/original-native/terms.log
+    --input .temp/batch079-scientific-20261114/record08/peer-review.md --input .temp/batch079-scientific-20261114/record08/strict.tsv
+    --input .temp/batch079-scientific-20261114/record08/targets.yaml --input AGENTS.md
+    --input conf/record_review.yaml --input data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml
+    --input data/normalized_yaml/bacterial/desulfobacterium_medium.yaml --input data/normalized_yaml/bacterial/desulfotignum_medium.yaml
+    --input docs/DATA_LAYERS.md --input docs/record-review-profile.md --input docs/record-reviews.md
+    --input schema/record_review.yaml --input scripts/batch079_build_record08_review_v2.py
+    --input scripts/batch079_run_check_v2.py --input scripts/record_review.py --input
+    src/culturemech/data/mediaingredientmech/label_index.csv --input src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    --input src/culturemech/merge/formulation.py --input src/culturemech/schema/culturemech.yaml
+  summary: All final evidence inputs bound before authoring the draft; exact receipt/argv/stream/input
+    hashes retained.
+  scope_note: .temp/batch079-scientific-20261114/record08/inspection-binding.json
+  evidence_ids:
+  - E-inspect
+- check_id: C-science
+  name: Primary source and chemical scientific assessment
+  status: failed
+  required: true
+  target_ids:
+  - CultureMech:001490
+  summary: Completed assessment finds identity and stock-representation blockers plus
+    exact-form and preparation defects; needs_curation is retained.
+  evidence_ids:
+  - E-primary-383a
+  - E-primary-383
+  - E-quantity
+  - E-chemistry
+- check_id: C-history
+  name: Embedded history and current ownership review
+  status: passed
+  required: true
+  target_ids:
+  - CultureMech:001490
+  summary: Read all26 embedded history events and current maintained/generated/variant
+    relationships. These event statements do not independently prove historical execution
+    or external report contents. No history edited.
+  evidence_ids:
+  - E-target
+  - E-owner-a
+  - E-owner-b
+  - E-current-merge
+evidence:
+- evidence_id: E-target
+  kind: record_content
+  reference: data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml
+  accessed_at: '2026-11-15T08:15:26.348638Z'
+  support: context_only
+  summary: 'Complete generated record read: DSM383a identity but DSM383 ingredient
+    array; 33 root components, no stock containers; existing variants and all ten
+    history events retained.'
+  locator: Entire YAML
+  snapshot_sha256: 17434c3b989e7622368511f076130f37fac6b2e3ff2a28886b8af7b955f43a10
+- evidence_id: E-owner-a
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/desulfotignum_medium.yaml
+  accessed_at: '2026-11-15T08:15:26.348638Z'
+  support: context_only
+  summary: 'Complete maintained DSM383a owner: 33 root components, staged source preparation
+    and eight historical events.'
+  locator: Entire YAML
+  snapshot_sha256: 5fbbb84755411f193026cb2acca75c91a02edc72d9699dfb19756ac1d215a121
+- evidence_id: E-owner-b
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/desulfobacterium_medium.yaml
+  accessed_at: '2026-11-15T08:15:26.348638Z'
+  support: context_only
+  summary: Complete maintained DSM383 owner, included as source/variant context rather
+    than a second selected target; 33 root components and eight historical events.
+  locator: Entire YAML
+  snapshot_sha256: 2a5157e6de5fbd44d2c33c8447a79a8b0372c02b2e2f800c34118869aca373ba
+- evidence_id: E-primary-383a
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium383a.pdf
+  accessed_at: '2026-11-15T08:09:48.377935Z'
+  support: partial
+  summary: Read complete official PDF; generic formulation and printed stock sections
+    used. DSM383 strain-specific substitutions are explicitly excluded from transfer.
+  locator: 'Pages 1–2: generic A–E recipe, preparation and embedded stock tables'
+  snapshot_sha256: 4b4f4c9bef3e2d44a03a8b8d696bef396a9aa1e8825af193bc330aa5fe87ceab
+- evidence_id: E-provider-383a
+  kind: database
+  reference: https://mediadive.dsmz.de/download/medium/383a/json
+  accessed_at: '2026-11-15T08:09:50.247973Z'
+  support: partial
+  summary: Read all nine distinct solution objects, recipes, additions and preparation.
+    Rates are interpreted at their own stage; provider molar fields are not chemical-form
+    evidence.
+  locator: $.medium and all $.solutions
+  snapshot_sha256: f37fad8036cde0c57171edc1279ed0881e18e2174e9b2222f00dffe556b9e876
+- evidence_id: E-primary-383
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium383.pdf
+  accessed_at: '2026-11-15T08:09:49.290606Z'
+  support: partial
+  summary: Read complete official PDF; generic formulation and printed stock sections
+    used. DSM383 strain-specific substitutions are explicitly excluded from transfer.
+  locator: 'Pages 1–3: generic A–E recipe, preparation and embedded stock tables;
+    strain-specific substitutions read but excluded from transfer'
+  snapshot_sha256: 90291ef8604727d3eccc28eb3b9734103d53a3aad1bf9233c965fc15a66c45de
+- evidence_id: E-provider-383
+  kind: database
+  reference: https://mediadive.dsmz.de/download/medium/383/json
+  accessed_at: '2026-11-15T08:09:50.811222Z'
+  support: partial
+  summary: Read all nine distinct solution objects, recipes, additions and preparation.
+    Rates are interpreted at their own stage; provider molar fields are not chemical-form
+    evidence.
+  locator: $.medium and all $.solutions
+  snapshot_sha256: 03e3daa513a4e5d92229a17092fc29bc6873c253d7a53d47ceb5f68da93b6b83
+- evidence_id: E-quantity
+  kind: record_content
+  reference: .temp/batch079-scientific-20261114/record08/claim-inventory.json
+  accessed_at: '2026-11-15T08:15:26.348638Z'
+  support: supports
+  summary: All 99 existing concentration fields, nine preparation paragraphs and six
+    pH bounds have explicit retained values, reviewed decisions and exact source-object
+    locators.
+  locator: 114 field decisions; source JSON objects and hashes
+  snapshot_sha256: 0bff376fe5e5dfeb530b08866756f6469432ae67e7e1ca1c5e91eccef47d59ad
+- evidence_id: E-chemistry
+  kind: authority
+  reference: .temp/batch079-scientific-20261114/record08/chemical-identity-tsb-20261115T080902116157Z/chemical-identity-assessment.json
+  accessed_at: '2026-11-15T08:15:26.348638Z'
+  support: partial
+  summary: 'All 192 slots/33 unique asserted ChEBI IDs: 28 compatible named chemicals,
+    two broad identities, one constituent-only HCl identity and two exact-form mismatches.'
+  locator: Every exact slot, current ontology object, raw hash and original capture
+    time
+  snapshot_sha256: 2a988dae7af4d379fffbc2e2f2a5a8b7fec3c6cdbd86330f9bec196931c8906d
+- evidence_id: E-mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  accessed_at: '2026-11-15T08:15:26.348638Z'
+  support: context_only
+  summary: Complete packaged index scanned for all33 exact local names:36 rows. Nickel
+    and cobalt have rejected preferred rows plus mapped synonyms; MAPPED sodium-resazurin
+    still uses nonsodium8806. This is resolver-policy evidence, not chemical proof.
+  locator: Exact rows in mim-exact-label-rows.json; metadata source commit6643131b0f12ab40b66f98135245fca04027e0e9
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: E-CHEBI-131361
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361
+  accessed_at: '2026-11-15T07:58:34.320003Z'
+  support: context_only
+  summary: disodium selenite pentahydrate; exact current active term; formula=['5H2O.2Na.O3Se']
+  locator: CHEBI:131361
+  snapshot_sha256: 643fefa89a2c0afeb2a00a0dd6149dbbf86cc4824369c58bde1c6ea6d4316d10
+- evidence_id: E-CHEBI-15940
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940
+  accessed_at: '2026-11-15T07:58:34.320122Z'
+  support: context_only
+  summary: nicotinic acid; exact current active term; formula=['C6H5NO2']
+  locator: CHEBI:15940
+  snapshot_sha256: ba646eb565dda766d0398c467e4c55effd4376b5d30134b22773e694ae6186f7
+- evidence_id: E-CHEBI-15956
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956
+  accessed_at: '2026-11-15T07:58:35.013257Z'
+  support: context_only
+  summary: biotin; exact current active term; formula=['C10H16N2O3S']
+  locator: CHEBI:15956
+  snapshot_sha256: 70707d310306fa19de0c6a9d43a7a2abeb3b59161f295e5e1bf888c4a347cd20
+- evidence_id: E-CHEBI-16494
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494
+  accessed_at: '2026-11-15T07:58:35.016299Z'
+  support: context_only
+  summary: lipoic acid; exact current active term; formula=['C8H14O2S2']
+  locator: CHEBI:16494
+  snapshot_sha256: aa3c1003d6266cc48f19a4d1d9527edd6844b96094a911e9a3c4f6a8851444e1
+- evidence_id: E-CHEBI-17015
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015
+  accessed_at: '2026-11-15T07:58:35.016526Z'
+  support: context_only
+  summary: riboflavin; exact current active term; formula=['C17H20N4O6']
+  locator: CHEBI:17015
+  snapshot_sha256: cd0f9bb993f17848e326fb7580ed311820332c5850a77122e2a12c47c72e6022
+- evidence_id: E-CHEBI-176843
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843
+  accessed_at: '2026-11-15T07:58:35.240788Z'
+  support: context_only
+  summary: vitamin B12; exact current active term; formula=None
+  locator: CHEBI:176843
+  snapshot_sha256: b535c3de88f47e93aed8909c58ff4e2d054a6845dea3bc9a048c18df12b371a9
+- evidence_id: E-CHEBI-17883
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17883
+  accessed_at: '2026-11-15T07:58:35.656872Z'
+  support: context_only
+  summary: hydrogen chloride; exact current active term; formula=['HCl']
+  locator: CHEBI:17883
+  snapshot_sha256: 1c4c2e8e3474319ab5fb79041b19cabfae42f4360729a7569f8a943a503d2f6a
+- evidence_id: E-CHEBI-26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  accessed_at: '2026-11-15T07:58:35.761355Z'
+  support: context_only
+  summary: sodium chloride; exact current active term; formula=['Cl.Na']
+  locator: CHEBI:26710
+  snapshot_sha256: 263497ec2251a5547afabcfd16c9c4c90a8906f0b09e79bb1d6d5f36211b17e8
+- evidence_id: E-CHEBI-27470
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470
+  accessed_at: '2026-11-15T07:58:35.830611Z'
+  support: context_only
+  summary: folic acid; exact current active term; formula=['C19H19N7O6']
+  locator: CHEBI:27470
+  snapshot_sha256: b10d7468d09b64b3175ed33f6da7b91930c4a06f58de48c41e8ff558fdf64400
+- evidence_id: E-CHEBI-29377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377
+  accessed_at: '2026-11-15T07:58:36.184144Z'
+  support: context_only
+  summary: sodium carbonate; exact current active term; formula=['CO3.2Na']
+  locator: CHEBI:29377
+  snapshot_sha256: d762286083196442ea72280ad6e8cbdfd43d355fe40a80cee5562a57bf1ae3a3
+- evidence_id: E-CHEBI-30753
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753
+  accessed_at: '2026-11-15T07:58:36.300144Z'
+  support: context_only
+  summary: 4-aminobenzoic acid; exact current active term; formula=['C7H7NO2']
+  locator: CHEBI:30753
+  snapshot_sha256: 97ea54b8020d3bcda2478182be115d2bc632249ee22b197b0575a4a9fd5fe21a
+- evidence_id: E-CHEBI-30961
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961
+  accessed_at: '2026-11-15T07:58:36.570682Z'
+  support: context_only
+  summary: pyridoxine hydrochloride; exact current active term; formula=['C8H11NO3.HCl']
+  locator: CHEBI:30961
+  snapshot_sha256: 3ddda602b527dd6fe27be17939aa67b919cd7c14ff127e459f6b0aaaa362cbd3
+- evidence_id: E-CHEBI-31206
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  accessed_at: '2026-11-15T07:58:36.575306Z'
+  support: context_only
+  summary: ammonium chloride; exact current active term; formula=['Cl.H4N']
+  locator: CHEBI:31206
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: E-CHEBI-31345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345
+  accessed_at: '2026-11-15T07:58:36.800236Z'
+  support: context_only
+  summary: Calcium pantothenate; exact current active term; formula=['2C9H16NO5.Ca']
+  locator: CHEBI:31345
+  snapshot_sha256: 56fc4b33c78d82faf317e131ae936f2e00eab0c369b2a9d8be86eddff6fd616d
+- evidence_id: E-CHEBI-32145
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32145
+  accessed_at: '2026-11-15T07:58:36.955511Z'
+  support: context_only
+  summary: sodium hydroxide; exact current active term; formula=['HO.Na']
+  locator: CHEBI:32145
+  snapshot_sha256: 2373bbcef187826c692b5378554daa4d799085002aa8616ff418e067655027b7
+- evidence_id: E-CHEBI-32149
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32149
+  accessed_at: '2026-11-15T07:58:37.171101Z'
+  support: context_only
+  summary: sodium sulfate; exact current active term; formula=['2Na.O4S']
+  locator: CHEBI:32149
+  snapshot_sha256: 969ae214c947d944eb086715a9f43a67e02b889258f6c61a64eb2a17b882b9a0
+- evidence_id: E-CHEBI-32588
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  accessed_at: '2026-11-15T07:58:37.244659Z'
+  support: context_only
+  summary: potassium chloride; exact current active term; formula=['Cl.K']
+  locator: CHEBI:32588
+  snapshot_sha256: 216d4ddec877706842671317d1fba8c29a6c66f46a811f1661471222b4652f3f
+- evidence_id: E-CHEBI-33118
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  accessed_at: '2026-11-15T07:58:37.420959Z'
+  support: context_only
+  summary: boric acid; exact current active term; formula=['H3BO3']
+  locator: CHEBI:33118
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: E-CHEBI-34887
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  accessed_at: '2026-11-15T07:58:37.559915Z'
+  support: context_only
+  summary: nickel dichloride; exact current active term; formula=['Cl2Ni']
+  locator: CHEBI:34887
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: E-CHEBI-49105
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105
+  accessed_at: '2026-11-15T07:58:37.798012Z'
+  support: context_only
+  summary: thiamine hydrochloride; exact current active term; formula=['C12H17N4OS.Cl.HCl']
+  locator: CHEBI:49105
+  snapshot_sha256: e389d4e22c1155379a117cd26c5e997bbafce3ad00deea5aee9231de2f35a067
+- evidence_id: E-CHEBI-49976
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976
+  accessed_at: '2026-11-15T07:58:37.981722Z'
+  support: context_only
+  summary: zinc dichloride; exact current active term; formula=['2Cl.Zn']
+  locator: CHEBI:49976
+  snapshot_sha256: 7b8e2fc9cccc968d43ee39996916da9f300a4d411d7ca0ce7d9ce477e8c2236b
+- evidence_id: E-CHEBI-50144
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_50144
+  accessed_at: '2026-11-15T08:09:02.141437Z'
+  support: context_only
+  summary: sodium pyruvate; exact current active term; formula=['C3H3O3.Na']
+  locator: CHEBI:50144
+  snapshot_sha256: bcbba0647992a81d26c9db98e001ab209bb9551e3f1f6f81daea188bdc7a010e
+- evidence_id: E-CHEBI-53503
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503
+  accessed_at: '2026-11-15T07:58:38.048871Z'
+  support: context_only
+  summary: cobalt chloride hexahydrate; exact current active term; formula=['2Cl.Co.6H2O']
+  locator: CHEBI:53503
+  snapshot_sha256: c33e304a0a565068c592ba0970e501052981599ef69cd2cb901e88f27931389d
+- evidence_id: E-CHEBI-63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  accessed_at: '2026-11-15T07:58:38.440569Z'
+  support: context_only
+  summary: potassium dihydrogen phosphate; exact current active term; formula=['H2O4P.K']
+  locator: CHEBI:63036
+  snapshot_sha256: 52c051eb66c85e0955858b2780078900c6e37d77d4824af7eb8595a19f9168f4
+- evidence_id: E-CHEBI-63939
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939
+  accessed_at: '2026-11-15T07:58:38.626864Z'
+  support: context_only
+  summary: sodium tungstate dihydrate; exact current active term; formula=['2H2O.2Na.O4W']
+  locator: CHEBI:63939
+  snapshot_sha256: 987144fa0342502834f116860a4b4f71696f62c18e7b701301667c15e588562a
+- evidence_id: E-CHEBI-75213
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  accessed_at: '2026-11-15T07:58:38.758547Z'
+  support: context_only
+  summary: sodium molybdate dihydrate; exact current active term; formula=['2H2O.MoO4.2Na']
+  locator: CHEBI:75213
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: E-CHEBI-76209
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209
+  accessed_at: '2026-11-15T07:58:39.257099Z'
+  support: context_only
+  summary: sodium sulfide nonahydrate; exact current active term; formula=['9H2O.2Na.S']
+  locator: CHEBI:76209
+  snapshot_sha256: f74d2c85574a4e28bdf71a78e4263f7e4c211036cd6d63b1f8282aca1d255e5c
+- evidence_id: E-CHEBI-86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  accessed_at: '2026-11-15T07:58:39.265158Z'
+  support: context_only
+  summary: calcium chloride dihydrate; exact current active term; formula=['Ca.2Cl.2H2O']
+  locator: CHEBI:86158
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: E-CHEBI-86249
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86249
+  accessed_at: '2026-11-15T07:58:39.293444Z'
+  support: context_only
+  summary: iron dichloride tetrahydrate; exact current active term; formula=['Cl2Fe.4H2O']
+  locator: CHEBI:86249
+  snapshot_sha256: 63bb84e7a947d2a3db0e5f23cf6a533bda2eee137020d7bbe2590477131c5683
+- evidence_id: E-CHEBI-86318
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318
+  accessed_at: '2026-11-15T07:58:39.354169Z'
+  support: context_only
+  summary: copper(II) chloride dihydrate; exact current active term; formula=['Cl2Cu.2H2O']
+  locator: CHEBI:86318
+  snapshot_sha256: 9bbecfe37d67d923ee070067aebdf1abf21048cdb2cbdff9de0e3d21f68ea1ae
+- evidence_id: E-CHEBI-86345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  accessed_at: '2026-11-15T07:58:39.854061Z'
+  support: context_only
+  summary: magnesium dichloride hexahydrate; exact current active term; formula=['2Cl.6H2O.Mg']
+  locator: CHEBI:86345
+  snapshot_sha256: cdf62749dcbfbfaa3b7d424c018306977fd107a3387f104f7f1a1bfa00b9adf7
+- evidence_id: E-CHEBI-86368
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  accessed_at: '2026-11-15T07:58:39.863236Z'
+  support: context_only
+  summary: manganese(II) chloride tetrahydrate; exact current active term; formula=['Cl2Mn.4H2O']
+  locator: CHEBI:86368
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: E-CHEBI-8806
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  accessed_at: '2026-11-15T07:58:39.939720Z'
+  support: context_only
+  summary: Resazurin; exact current active term; formula=['C12H7NO4']
+  locator: CHEBI:8806
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: E-CHEBI-53542
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53542
+  accessed_at: '2026-11-15T07:58:38.164168Z'
+  support: context_only
+  summary: nickel chloride hexahydrate; exact current active term; formula=['2Cl.6H2O.Ni']
+  locator: CHEBI:53542
+  snapshot_sha256: 423c21fd3715257bbccc1ad83ef3b8e438ffe20f02418e2b202886237c4ea112
+- evidence_id: E-peer
+  kind: prior_review
+  reference: .temp/batch079-scientific-20261114/record08/peer-review.md
+  accessed_at: '2026-11-15T08:15:26.348638Z'
+  support: context_only
+  summary: Independent source review supplied by coordinating root; claims rechecked
+    against full current files and captured primary tables before adoption.
+  locator: Full peer text
+  snapshot_sha256: 6fcc4496c3ed383dd11e95a7f881494ca647292ab52ef410e94cd1374836d30f
+- evidence_id: E-current-merge
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  accessed_at: '2026-11-15T08:15:26.348638Z'
+  support: context_only
+  summary: 'Full current body read: exact scientific assertions are required for consolidation,
+    and mismatched formulations raise an error. Historical output collapse is not
+    attributed to a current-code defect without replay.'
+  locator: formulation_content, FormulationFingerprinter, merge_formulation_evidence
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: E-schema
+  kind: record_content
+  reference: src/culturemech/schema/culturemech.yaml
+  accessed_at: '2026-11-15T08:15:26.348638Z'
+  support: context_only
+  summary: high_metal is defined from total metal concentration >=1049.84mM. Stock-root
+    conflation prevents treating the current flag as a verified final-medium calculation.
+  locator: MediaRecipe.high_metal; lines137–146
+  snapshot_sha256: 43725a6b518253da59235a20fa684f0332f2fd83ef852b2463c9e4d0cf1be9d5
+- evidence_id: E-native-result
+  kind: validation
+  reference: .temp/batch079-scientific-20261114/record08/original-native/RESULT.md
+  accessed_at: '2026-11-15T08:15:26.348638Z'
+  support: context_only
+  summary: Original recovery receipt reports all four record08 commands exited0, after07
+    canary; this is technical evidence only. Logs do not independently supply process
+    exits/timing.
+  locator: Record08 row, exact command templates and scope paragraph
+  snapshot_sha256: 5d889ac90072ef6eeb01e9a34a8101ca8f2da53b969de4a208a61c8113bad7d5
+- evidence_id: E-native-schema
+  kind: validation
+  reference: .temp/batch079-scientific-20261114/record08/original-native/schema.log
+  accessed_at: '2026-11-15T08:15:26.348638Z'
+  support: context_only
+  summary: Full original log read on byte-identical current target/owners/schema;
+    historical receipt retained. Fresh execution is recorded separately.
+  locator: Entire original stream
+  snapshot_sha256: 7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050
+- evidence_id: E-native-strict
+  kind: validation
+  reference: .temp/batch079-scientific-20261114/record08/original-native/strict.log
+  accessed_at: '2026-11-15T08:15:26.348638Z'
+  support: context_only
+  summary: Full original log read on byte-identical current target/owners/schema;
+    historical receipt retained. Fresh execution is recorded separately.
+  locator: Entire original stream
+  snapshot_sha256: 0d6bd0d3ec67b8975dfcf2fb1feee1cc59cfb142a8586c29aa2236dd609e2df6
+- evidence_id: E-native-terms
+  kind: validation
+  reference: .temp/batch079-scientific-20261114/record08/original-native/terms.log
+  accessed_at: '2026-11-15T08:15:26.348638Z'
+  support: context_only
+  summary: Full original log read on byte-identical current target/owners/schema;
+    historical receipt retained. Fresh execution is recorded separately.
+  locator: Entire original stream
+  snapshot_sha256: 6d1e6d9197ee2e4862a8c3e955bf66380f33809345381a786040ec40180d52e0
+- evidence_id: E-native-references
+  kind: validation
+  reference: .temp/batch079-scientific-20261114/record08/original-native/references.log
+  accessed_at: '2026-11-15T08:15:26.348638Z'
+  support: context_only
+  summary: Full original log read on byte-identical current target/owners/schema;
+    historical receipt retained. Fresh execution is recorded separately.
+  locator: Entire original stream
+  snapshot_sha256: 254da7eee7ae518a1951f250278e1b86383cdd1cdc205bb7c4a17786a6c89954
+- evidence_id: E-inspect
+  kind: validation
+  reference: .temp/batch079-scientific-20261114/20261115T081525921547Z-record08-inspect-final.json
+  accessed_at: '2026-11-15T08:15:25.921746Z'
+  support: supports
+  summary: New native inspection executed once with exact expected argv and all frozen
+    input hashes verified.
+  locator: Receipt plus stdout/stderr hashes; inspection-binding.json
+  snapshot_sha256: d9a16682731d9bf0316c50ebd5f59928fe8e2885e74f1c806626c4f0e078d3d7
+- evidence_id: E-fresh-schema
+  kind: validation
+  reference: .temp/batch079-scientific-20261114/20261115T081420069829Z-record08-schema.json
+  accessed_at: '2026-11-15T08:14:20.070047Z'
+  support: context_only
+  summary: Fresh parent-run native diagnostic; exact argv, exit, UTC times and both
+    stream hashes bound independently. No author rerun.
+  locator: Complete receipt plus both original streams
+  snapshot_sha256: 2b723cc84def0ba6fb2c2e80fb8f6c1d3bffd2bcb5967277225700b20ce83d97
+- evidence_id: E-fresh-strict
+  kind: validation
+  reference: .temp/batch079-scientific-20261114/20261115T081420547292Z-record08-strict.json
+  accessed_at: '2026-11-15T08:14:20.547508Z'
+  support: context_only
+  summary: Fresh parent-run native diagnostic; exact argv, exit, UTC times and both
+    stream hashes bound independently. No author rerun.
+  locator: Complete receipt plus both original streams
+  snapshot_sha256: e1cd76bd3a48e98d46ba9fc7afe6d95f01d7cabc0ae2f2029b213190ad44411b
+- evidence_id: E-fresh-terms
+  kind: validation
+  reference: .temp/batch079-scientific-20261114/20261115T081418248294Z-record08-terms.json
+  accessed_at: '2026-11-15T08:14:18.248534Z'
+  support: context_only
+  summary: Fresh parent-run native diagnostic; exact argv, exit, UTC times and both
+    stream hashes bound independently. No author rerun.
+  locator: Complete receipt plus both original streams
+  snapshot_sha256: 0832014d6c083eea199768068a32e6203fd09d82a3a3eef14e01fdf5274ddf52
+- evidence_id: E-fresh-references
+  kind: validation
+  reference: .temp/batch079-scientific-20261114/20261115T081419407643Z-record08-references.json
+  accessed_at: '2026-11-15T08:14:19.407848Z'
+  support: context_only
+  summary: Fresh parent-run native diagnostic; exact argv, exit, UTC times and both
+    stream hashes bound independently. No author rerun.
+  locator: Complete receipt plus both original streams
+  snapshot_sha256: 32711366aea374aa044da91a44edc6714cfc78d8408718563ba7dda0ded6435b
+assessments:
+- assessment_id: A-identity
+  area: identity
+  topic: DSM383a versus distinct DSM383 formulation
+  outcome: concern
+  summary: The selected CultureMech:001490 denotes DSM383a. Its ingredient array instead
+    equals the DSM383 owner and its synonym/merged_from treat the two sources as duplicates
+    despite the maintained concentration-variant relationship. This is a confirmed
+    generated-artifact conflict; no current-merger defect is inferred.
+  target_ids:
+  - CultureMech:001490
+  evidence_ids:
+  - E-target
+  - E-owner-a
+  - E-owner-b
+  - E-primary-383a
+  - E-primary-383
+  - E-provider-383a
+  - E-provider-383
+  - E-current-merge
+- assessment_id: A-quantities
+  area: quantity
+  topic: Every existing concentration and retained numeric preparation field
+  outcome: concern
+  summary: Reviewed all99 concentration fields (33 per file), nine preparation paragraphs
+    and six pH bounds. Existing numerical rates match their copied provider intermediate
+    or stock objects; all99 concentration fields need stage representation correction.
+    The generated target also imports distinct DSM383 rates under383a identity. Retained
+    supported prose and pH bounds are credited separately.
+  target_ids:
+  - CultureMech:001490
+  evidence_ids:
+  - E-target
+  - E-owner-a
+  - E-owner-b
+  - E-primary-383a
+  - E-primary-383
+  - E-provider-383a
+  - E-provider-383
+  - E-quantity
+  details: 'data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::ingredients[0].concentration;
+    retained={"value": "3.15126", "unit": "G_PER_L"}; correct; The numerical value
+    matches the copied provider Solution A rate, but its root placement lacks that
+    intermediate/stock boundary and the receiving addition. Preserve source amounts
+    while correcting representation; no new final concentration is asserted. It follows
+    DSM383 despite the target DSM383a identity; source-specific assembly and component
+    amounts must remain distinct. Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[1].recipe[0];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[1].recipe[0]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::ingredients[1].concentration;
+    retained={"value": "0.210084", "unit": "G_PER_L"}; correct; The numerical value
+    matches the copied provider Solution A rate, but its root placement lacks that
+    intermediate/stock boundary and the receiving addition. Preserve source amounts
+    while correcting representation; no new final concentration is asserted. It follows
+    DSM383 despite the target DSM383a identity; source-specific assembly and component
+    amounts must remain distinct. Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[1].recipe[1];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[1].recipe[1]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::ingredients[2].concentration;
+    retained={"value": "0.315126", "unit": "G_PER_L"}; correct; The numerical value
+    matches the copied provider Solution A rate, but its root placement lacks that
+    intermediate/stock boundary and the receiving addition. Preserve source amounts
+    while correcting representation; no new final concentration is asserted. It follows
+    DSM383 despite the target DSM383a identity; source-specific assembly and component
+    amounts must remain distinct. Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[1].recipe[2];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[1].recipe[2]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::ingredients[3].concentration;
+    retained={"value": "22.0588", "unit": "G_PER_L"}; correct; The numerical value
+    matches the copied provider Solution A rate, but its root placement lacks that
+    intermediate/stock boundary and the receiving addition. Preserve source amounts
+    while correcting representation; no new final concentration is asserted. It follows
+    DSM383 despite the target DSM383a identity; source-specific assembly and component
+    amounts must remain distinct. Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[1].recipe[3];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[1].recipe[3]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::ingredients[4].concentration;
+    retained={"value": "3.15126", "unit": "G_PER_L"}; correct; The numerical value
+    matches the copied provider Solution A rate, but its root placement lacks that
+    intermediate/stock boundary and the receiving addition. Preserve source amounts
+    while correcting representation; no new final concentration is asserted. It follows
+    DSM383 despite the target DSM383a identity; source-specific assembly and component
+    amounts must remain distinct. Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[1].recipe[4];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[1].recipe[4]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::ingredients[5].concentration;
+    retained={"value": "0.52521", "unit": "G_PER_L"}; correct; The numerical value
+    matches the copied provider Solution A rate, but its root placement lacks that
+    intermediate/stock boundary and the receiving addition. Preserve source amounts
+    while correcting representation; no new final concentration is asserted. It follows
+    DSM383 despite the target DSM383a identity; source-specific assembly and component
+    amounts must remain distinct. Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[1].recipe[5];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[1].recipe[5]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::ingredients[6].concentration;
+    retained={"value": "0.157563", "unit": "G_PER_L"}; correct; The numerical value
+    matches the copied provider Solution A rate, but its root placement lacks that
+    intermediate/stock boundary and the receiving addition. Preserve source amounts
+    while correcting representation; no new final concentration is asserted. It follows
+    DSM383 despite the target DSM383a identity; source-specific assembly and component
+    amounts must remain distinct. Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[1].recipe[6];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[1].recipe[6]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::ingredients[7].concentration;
+    retained={"value": "0.00052521", "unit": "G_PER_L"}; correct; The numerical value
+    matches the copied provider Solution A rate, but its root placement lacks that
+    intermediate/stock boundary and the receiving addition. Preserve source amounts
+    while correcting representation; no new final concentration is asserted. It follows
+    DSM383 despite the target DSM383a identity; source-specific assembly and component
+    amounts must remain distinct. The source separately states 0.1% w/v and 0.50 mL;
+    salt identity is audited separately and is not proved by provider molarity. Source
+    locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[1].recipe[9];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[1].recipe[9]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::ingredients[8].concentration;
+    retained={"value": "50", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Solution B rate, but its root placement lacks that intermediate/stock
+    boundary and the receiving addition. Preserve source amounts while correcting
+    representation; no new final concentration is asserted. Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[2].recipe[0];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[2].recipe[0]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::ingredients[9].concentration;
+    retained={"value": "125", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Solution C rate, but its root placement lacks that intermediate/stock
+    boundary and the receiving addition. Preserve source amounts while correcting
+    representation; no new final concentration is asserted. It follows DSM383 despite
+    the target DSM383a identity; source-specific assembly and component amounts must
+    remain distinct. Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[3].recipe[0];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[3].recipe[0]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::ingredients[10].concentration;
+    retained={"value": "40", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Solution E rate, but its root placement lacks that intermediate/stock
+    boundary and the receiving addition. Preserve source amounts while correcting
+    representation; no new final concentration is asserted. It follows DSM383 despite
+    the target DSM383a identity; source-specific assembly and component amounts must
+    remain distinct. Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[5].recipe[0];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[5].recipe[0]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::ingredients[11].concentration;
+    retained={"value": "0.5", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Selenite-tungstate solution rate, but its root placement lacks
+    that intermediate/stock boundary and the receiving addition. Preserve source amounts
+    while correcting representation; no new final concentration is asserted. Source
+    locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[6].recipe[0];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[6].recipe[0]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::ingredients[12].concentration;
+    retained={"value": "0.003", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Selenite-tungstate solution rate, but its root placement lacks
+    that intermediate/stock boundary and the receiving addition. Preserve source amounts
+    while correcting representation; no new final concentration is asserted. Source
+    locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[6].recipe[1];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[6].recipe[1]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::ingredients[13].concentration;
+    retained={"value": "0.004", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Selenite-tungstate solution rate, but its root placement lacks
+    that intermediate/stock boundary and the receiving addition. Preserve source amounts
+    while correcting representation; no new final concentration is asserted. Source
+    locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[6].recipe[2];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[6].recipe[2]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::ingredients[14].concentration;
+    retained={"value": "2.5", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Trace element solution SL-10 rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    The provider explicitly gives 2.5 g/L stock; the primary 25% HCl dose has no declared
+    percentage convention or density, so independent mass conversion is unresolved.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[7].recipe[0];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[7].recipe[0]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::ingredients[15].concentration;
+    retained={"value": "1.5", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Trace element solution SL-10 rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[7].recipe[1];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[7].recipe[1]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::ingredients[16].concentration;
+    retained={"value": "0.07", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Trace element solution SL-10 rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[7].recipe[2];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[7].recipe[2]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::ingredients[17].concentration;
+    retained={"value": "0.1", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Trace element solution SL-10 rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[7].recipe[3];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[7].recipe[3]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::ingredients[18].concentration;
+    retained={"value": "0.006", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Trace element solution SL-10 rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[7].recipe[4];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[7].recipe[4]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::ingredients[19].concentration;
+    retained={"value": "0.19", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Trace element solution SL-10 rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[7].recipe[5];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[7].recipe[5]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::ingredients[20].concentration;
+    retained={"value": "0.002", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Trace element solution SL-10 rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[7].recipe[6];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[7].recipe[6]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::ingredients[21].concentration;
+    retained={"value": "0.024", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Trace element solution SL-10 rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[7].recipe[7];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[7].recipe[7]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::ingredients[22].concentration;
+    retained={"value": "0.036", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Trace element solution SL-10 rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[7].recipe[8];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[7].recipe[8]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::ingredients[23].concentration;
+    retained={"value": "0.02", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Wolin''s vitamin solution (10x) rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[8].recipe[0];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[8].recipe[0]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::ingredients[24].concentration;
+    retained={"value": "0.02", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Wolin''s vitamin solution (10x) rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[8].recipe[1];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[8].recipe[1]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::ingredients[25].concentration;
+    retained={"value": "0.1", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Wolin''s vitamin solution (10x) rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[8].recipe[2];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[8].recipe[2]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::ingredients[26].concentration;
+    retained={"value": "0.05", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Wolin''s vitamin solution (10x) rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[8].recipe[3];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[8].recipe[3]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::ingredients[27].concentration;
+    retained={"value": "0.05", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Wolin''s vitamin solution (10x) rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[8].recipe[4];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[8].recipe[4]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::ingredients[28].concentration;
+    retained={"value": "0.05", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Wolin''s vitamin solution (10x) rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[8].recipe[5];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[8].recipe[5]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::ingredients[29].concentration;
+    retained={"value": "0.05", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Wolin''s vitamin solution (10x) rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[8].recipe[6];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[8].recipe[6]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::ingredients[30].concentration;
+    retained={"value": "0.001", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Wolin''s vitamin solution (10x) rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[8].recipe[7];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[8].recipe[7]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::ingredients[31].concentration;
+    retained={"value": "0.05", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Wolin''s vitamin solution (10x) rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[8].recipe[8];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[8].recipe[8]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::ingredients[32].concentration;
+    retained={"value": "0.05", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Wolin''s vitamin solution (10x) rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[8].recipe[9];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[8].recipe[9]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::preparation_steps[0].description;
+    retained="Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach a
+    pH below 6 (at least 30 min), then dispensed under the same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials and autoclaved. Solution B is autoclaved
+    separately under 80% N2 and 20% CO2 gas atmosphere. Solutions C and D are prepared
+    under 100% N2 gas and filter-sterilized. Solution E is autoclaved under 100% N2
+    gas. To complete the medium appropriate amounts of solutions B to E are added
+    to the sterile solution A in the sequence as indicated. Final pH of the medium
+    should be 7.0 – 7.2."; evidence_only; Retain the supported main staged gas/pH/sterilization
+    sequence. Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[0].steps[0]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::preparation_steps[1].description;
+    retained="Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from
+    5% (w/v) solution freshly prepared under N2 and filter-sterilized) may stimulate
+    growth of some strains at the beginning. For transfers use 5 - 10% inoculum. Incubate
+    all strains in the dark."; evidence_only; Retain the source optional dithionite
+    range, explicit w/v stock example, transfer range and darkness; optional stimulation
+    is not a universal growth claim. Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[0].steps[1]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::preparation_steps[2].description;
+    retained="First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml."; correct; Exact SL-10 makeup
+    text is supported, but it is unqualified at main-method scope; retain wording
+    and make the stock boundary explicit. Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[7].steps[0]
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::ph_range.min; retained=7.0;
+    evidence_only; Retain source final pH range 7.0–7.2; separate the preparative
+    pH below 6. Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.medium.min_pH
+
+    data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml::ph_range.max; retained=7.2;
+    evidence_only; Retain source final pH range 7.0–7.2; separate the preparative
+    pH below 6. Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.medium.max_pH
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::ingredients[0].concentration;
+    retained={"value": "3.1185", "unit": "G_PER_L"}; correct; The numerical value
+    matches the copied provider Solution A rate, but its root placement lacks that
+    intermediate/stock boundary and the receiving addition. Preserve source amounts
+    while correcting representation; no new final concentration is asserted. Source
+    locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[1].recipe[0];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[1].recipe[0]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::ingredients[1].concentration;
+    retained={"value": "0.2079", "unit": "G_PER_L"}; correct; The numerical value
+    matches the copied provider Solution A rate, but its root placement lacks that
+    intermediate/stock boundary and the receiving addition. Preserve source amounts
+    while correcting representation; no new final concentration is asserted. Source
+    locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[1].recipe[1];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[1].recipe[1]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::ingredients[2].concentration;
+    retained={"value": "0.31185", "unit": "G_PER_L"}; correct; The numerical value
+    matches the copied provider Solution A rate, but its root placement lacks that
+    intermediate/stock boundary and the receiving addition. Preserve source amounts
+    while correcting representation; no new final concentration is asserted. Source
+    locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[1].recipe[2];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[1].recipe[2]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::ingredients[3].concentration;
+    retained={"value": "15.5925", "unit": "G_PER_L"}; correct; The numerical value
+    matches the copied provider Solution A rate, but its root placement lacks that
+    intermediate/stock boundary and the receiving addition. Preserve source amounts
+    while correcting representation; no new final concentration is asserted. Source
+    locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[1].recipe[3];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[1].recipe[3]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::ingredients[4].concentration;
+    retained={"value": "3.1185", "unit": "G_PER_L"}; correct; The numerical value
+    matches the copied provider Solution A rate, but its root placement lacks that
+    intermediate/stock boundary and the receiving addition. Preserve source amounts
+    while correcting representation; no new final concentration is asserted. Source
+    locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[1].recipe[4];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[1].recipe[4]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::ingredients[5].concentration;
+    retained={"value": "0.519751", "unit": "G_PER_L"}; correct; The numerical value
+    matches the copied provider Solution A rate, but its root placement lacks that
+    intermediate/stock boundary and the receiving addition. Preserve source amounts
+    while correcting representation; no new final concentration is asserted. Source
+    locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[1].recipe[5];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[1].recipe[5]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::ingredients[6].concentration;
+    retained={"value": "0.155925", "unit": "G_PER_L"}; correct; The numerical value
+    matches the copied provider Solution A rate, but its root placement lacks that
+    intermediate/stock boundary and the receiving addition. Preserve source amounts
+    while correcting representation; no new final concentration is asserted. Source
+    locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[1].recipe[6];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[1].recipe[6]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::ingredients[7].concentration;
+    retained={"value": "0.000519751", "unit": "G_PER_L"}; correct; The numerical value
+    matches the copied provider Solution A rate, but its root placement lacks that
+    intermediate/stock boundary and the receiving addition. Preserve source amounts
+    while correcting representation; no new final concentration is asserted. The source
+    separately states 0.1% w/v and 0.50 mL; salt identity is audited separately and
+    is not proved by provider molarity. Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[1].recipe[9];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[1].recipe[9]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::ingredients[8].concentration;
+    retained={"value": "50", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Solution B rate, but its root placement lacks that intermediate/stock
+    boundary and the receiving addition. Preserve source amounts while correcting
+    representation; no new final concentration is asserted. Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[2].recipe[0];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[2].recipe[0]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::ingredients[9].concentration;
+    retained={"value": "250", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Solution C rate, but its root placement lacks that intermediate/stock
+    boundary and the receiving addition. Preserve source amounts while correcting
+    representation; no new final concentration is asserted. Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[3].recipe[0];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[3].recipe[0]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::ingredients[10].concentration;
+    retained={"value": "30.7692", "unit": "G_PER_L"}; correct; The numerical value
+    matches the copied provider Solution E rate, but its root placement lacks that
+    intermediate/stock boundary and the receiving addition. Preserve source amounts
+    while correcting representation; no new final concentration is asserted. Source
+    locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[5].recipe[0];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[5].recipe[0]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::ingredients[11].concentration;
+    retained={"value": "0.5", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Selenite-tungstate solution rate, but its root placement lacks
+    that intermediate/stock boundary and the receiving addition. Preserve source amounts
+    while correcting representation; no new final concentration is asserted. Source
+    locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[6].recipe[0];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[6].recipe[0]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::ingredients[12].concentration;
+    retained={"value": "0.003", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Selenite-tungstate solution rate, but its root placement lacks
+    that intermediate/stock boundary and the receiving addition. Preserve source amounts
+    while correcting representation; no new final concentration is asserted. Source
+    locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[6].recipe[1];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[6].recipe[1]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::ingredients[13].concentration;
+    retained={"value": "0.004", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Selenite-tungstate solution rate, but its root placement lacks
+    that intermediate/stock boundary and the receiving addition. Preserve source amounts
+    while correcting representation; no new final concentration is asserted. Source
+    locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[6].recipe[2];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[6].recipe[2]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::ingredients[14].concentration;
+    retained={"value": "2.5", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Trace element solution SL-10 rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    The provider explicitly gives 2.5 g/L stock; the primary 25% HCl dose has no declared
+    percentage convention or density, so independent mass conversion is unresolved.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[7].recipe[0];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[7].recipe[0]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::ingredients[15].concentration;
+    retained={"value": "1.5", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Trace element solution SL-10 rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[7].recipe[1];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[7].recipe[1]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::ingredients[16].concentration;
+    retained={"value": "0.07", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Trace element solution SL-10 rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[7].recipe[2];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[7].recipe[2]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::ingredients[17].concentration;
+    retained={"value": "0.1", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Trace element solution SL-10 rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[7].recipe[3];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[7].recipe[3]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::ingredients[18].concentration;
+    retained={"value": "0.006", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Trace element solution SL-10 rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[7].recipe[4];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[7].recipe[4]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::ingredients[19].concentration;
+    retained={"value": "0.19", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Trace element solution SL-10 rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[7].recipe[5];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[7].recipe[5]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::ingredients[20].concentration;
+    retained={"value": "0.002", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Trace element solution SL-10 rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[7].recipe[6];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[7].recipe[6]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::ingredients[21].concentration;
+    retained={"value": "0.024", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Trace element solution SL-10 rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[7].recipe[7];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[7].recipe[7]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::ingredients[22].concentration;
+    retained={"value": "0.036", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Trace element solution SL-10 rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[7].recipe[8];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[7].recipe[8]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::ingredients[23].concentration;
+    retained={"value": "0.02", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Wolin''s vitamin solution (10x) rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[8].recipe[0];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[8].recipe[0]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::ingredients[24].concentration;
+    retained={"value": "0.02", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Wolin''s vitamin solution (10x) rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[8].recipe[1];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[8].recipe[1]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::ingredients[25].concentration;
+    retained={"value": "0.1", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Wolin''s vitamin solution (10x) rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[8].recipe[2];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[8].recipe[2]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::ingredients[26].concentration;
+    retained={"value": "0.05", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Wolin''s vitamin solution (10x) rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[8].recipe[3];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[8].recipe[3]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::ingredients[27].concentration;
+    retained={"value": "0.05", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Wolin''s vitamin solution (10x) rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[8].recipe[4];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[8].recipe[4]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::ingredients[28].concentration;
+    retained={"value": "0.05", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Wolin''s vitamin solution (10x) rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[8].recipe[5];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[8].recipe[5]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::ingredients[29].concentration;
+    retained={"value": "0.05", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Wolin''s vitamin solution (10x) rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[8].recipe[6];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[8].recipe[6]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::ingredients[30].concentration;
+    retained={"value": "0.001", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Wolin''s vitamin solution (10x) rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[8].recipe[7];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[8].recipe[7]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::ingredients[31].concentration;
+    retained={"value": "0.05", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Wolin''s vitamin solution (10x) rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[8].recipe[8];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[8].recipe[8]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::ingredients[32].concentration;
+    retained={"value": "0.05", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Wolin''s vitamin solution (10x) rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[8].recipe[9];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[8].recipe[9]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::preparation_steps[0].description;
+    retained="Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach a
+    pH below 6 (at least 30 min), then dispensed under the same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials and autoclaved. Solution B is autoclaved
+    separately under 80% N2 and 20% CO2 gas atmosphere. Solutions C and D are prepared
+    under 100% N2 gas and filter-sterilized. Solution E is autoclaved under 100% N2
+    gas. To complete the medium appropriate amounts of solutions B to E are added
+    to the sterile solution A in the sequence as indicated. Final pH of the medium
+    should be 7.0 – 7.2."; evidence_only; Retain the supported main staged gas/pH/sterilization
+    sequence. Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[0].steps[0]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::preparation_steps[1].description;
+    retained="Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from
+    5% (w/v) solution freshly prepared under N2 and filter-sterilized) may stimulate
+    growth of some strains at the beginning. For transfers use 5 - 10% inoculum. Incubate
+    all strains in the dark."; evidence_only; Retain the source optional dithionite
+    range, explicit w/v stock example, transfer range and darkness; optional stimulation
+    is not a universal growth claim. Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[0].steps[1]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::preparation_steps[2].description;
+    retained="First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml."; correct; Exact SL-10 makeup
+    text is supported, but it is unqualified at main-method scope; retain wording
+    and make the stock boundary explicit. Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[7].steps[0]
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::ph_range.min; retained=7.0;
+    evidence_only; Retain source final pH range 7.0–7.2; separate the preparative
+    pH below 6. Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.medium.min_pH
+
+    data/normalized_yaml/bacterial/desulfotignum_medium.yaml::ph_range.max; retained=7.2;
+    evidence_only; Retain source final pH range 7.0–7.2; separate the preparative
+    pH below 6. Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.medium.max_pH
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::ingredients[0].concentration;
+    retained={"value": "3.15126", "unit": "G_PER_L"}; correct; The numerical value
+    matches the copied provider Solution A rate, but its root placement lacks that
+    intermediate/stock boundary and the receiving addition. Preserve source amounts
+    while correcting representation; no new final concentration is asserted. Source
+    locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[1].recipe[0];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[1].recipe[0]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::ingredients[1].concentration;
+    retained={"value": "0.210084", "unit": "G_PER_L"}; correct; The numerical value
+    matches the copied provider Solution A rate, but its root placement lacks that
+    intermediate/stock boundary and the receiving addition. Preserve source amounts
+    while correcting representation; no new final concentration is asserted. Source
+    locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[1].recipe[1];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[1].recipe[1]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::ingredients[2].concentration;
+    retained={"value": "0.315126", "unit": "G_PER_L"}; correct; The numerical value
+    matches the copied provider Solution A rate, but its root placement lacks that
+    intermediate/stock boundary and the receiving addition. Preserve source amounts
+    while correcting representation; no new final concentration is asserted. Source
+    locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[1].recipe[2];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[1].recipe[2]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::ingredients[3].concentration;
+    retained={"value": "22.0588", "unit": "G_PER_L"}; correct; The numerical value
+    matches the copied provider Solution A rate, but its root placement lacks that
+    intermediate/stock boundary and the receiving addition. Preserve source amounts
+    while correcting representation; no new final concentration is asserted. Source
+    locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[1].recipe[3];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[1].recipe[3]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::ingredients[4].concentration;
+    retained={"value": "3.15126", "unit": "G_PER_L"}; correct; The numerical value
+    matches the copied provider Solution A rate, but its root placement lacks that
+    intermediate/stock boundary and the receiving addition. Preserve source amounts
+    while correcting representation; no new final concentration is asserted. Source
+    locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[1].recipe[4];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[1].recipe[4]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::ingredients[5].concentration;
+    retained={"value": "0.52521", "unit": "G_PER_L"}; correct; The numerical value
+    matches the copied provider Solution A rate, but its root placement lacks that
+    intermediate/stock boundary and the receiving addition. Preserve source amounts
+    while correcting representation; no new final concentration is asserted. Source
+    locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[1].recipe[5];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[1].recipe[5]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::ingredients[6].concentration;
+    retained={"value": "0.157563", "unit": "G_PER_L"}; correct; The numerical value
+    matches the copied provider Solution A rate, but its root placement lacks that
+    intermediate/stock boundary and the receiving addition. Preserve source amounts
+    while correcting representation; no new final concentration is asserted. Source
+    locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[1].recipe[6];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[1].recipe[6]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::ingredients[7].concentration;
+    retained={"value": "0.00052521", "unit": "G_PER_L"}; correct; The numerical value
+    matches the copied provider Solution A rate, but its root placement lacks that
+    intermediate/stock boundary and the receiving addition. Preserve source amounts
+    while correcting representation; no new final concentration is asserted. The source
+    separately states 0.1% w/v and 0.50 mL; salt identity is audited separately and
+    is not proved by provider molarity. Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[1].recipe[9];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[1].recipe[9]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::ingredients[8].concentration;
+    retained={"value": "50", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Solution B rate, but its root placement lacks that intermediate/stock
+    boundary and the receiving addition. Preserve source amounts while correcting
+    representation; no new final concentration is asserted. Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[2].recipe[0];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[2].recipe[0]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::ingredients[9].concentration;
+    retained={"value": "125", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Solution C rate, but its root placement lacks that intermediate/stock
+    boundary and the receiving addition. Preserve source amounts while correcting
+    representation; no new final concentration is asserted. Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[3].recipe[0];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[3].recipe[0]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::ingredients[10].concentration;
+    retained={"value": "40", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Solution E rate, but its root placement lacks that intermediate/stock
+    boundary and the receiving addition. Preserve source amounts while correcting
+    representation; no new final concentration is asserted. Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[5].recipe[0];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[5].recipe[0]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::ingredients[11].concentration;
+    retained={"value": "0.5", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Selenite-tungstate solution rate, but its root placement lacks
+    that intermediate/stock boundary and the receiving addition. Preserve source amounts
+    while correcting representation; no new final concentration is asserted. Source
+    locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[6].recipe[0];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[6].recipe[0]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::ingredients[12].concentration;
+    retained={"value": "0.003", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Selenite-tungstate solution rate, but its root placement lacks
+    that intermediate/stock boundary and the receiving addition. Preserve source amounts
+    while correcting representation; no new final concentration is asserted. Source
+    locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[6].recipe[1];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[6].recipe[1]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::ingredients[13].concentration;
+    retained={"value": "0.004", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Selenite-tungstate solution rate, but its root placement lacks
+    that intermediate/stock boundary and the receiving addition. Preserve source amounts
+    while correcting representation; no new final concentration is asserted. Source
+    locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[6].recipe[2];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[6].recipe[2]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::ingredients[14].concentration;
+    retained={"value": "2.5", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Trace element solution SL-10 rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    The provider explicitly gives 2.5 g/L stock; the primary 25% HCl dose has no declared
+    percentage convention or density, so independent mass conversion is unresolved.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[7].recipe[0];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[7].recipe[0]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::ingredients[15].concentration;
+    retained={"value": "1.5", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Trace element solution SL-10 rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[7].recipe[1];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[7].recipe[1]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::ingredients[16].concentration;
+    retained={"value": "0.07", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Trace element solution SL-10 rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[7].recipe[2];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[7].recipe[2]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::ingredients[17].concentration;
+    retained={"value": "0.1", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Trace element solution SL-10 rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[7].recipe[3];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[7].recipe[3]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::ingredients[18].concentration;
+    retained={"value": "0.006", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Trace element solution SL-10 rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[7].recipe[4];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[7].recipe[4]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::ingredients[19].concentration;
+    retained={"value": "0.19", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Trace element solution SL-10 rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[7].recipe[5];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[7].recipe[5]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::ingredients[20].concentration;
+    retained={"value": "0.002", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Trace element solution SL-10 rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[7].recipe[6];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[7].recipe[6]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::ingredients[21].concentration;
+    retained={"value": "0.024", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Trace element solution SL-10 rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[7].recipe[7];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[7].recipe[7]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::ingredients[22].concentration;
+    retained={"value": "0.036", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Trace element solution SL-10 rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[7].recipe[8];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[7].recipe[8]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::ingredients[23].concentration;
+    retained={"value": "0.02", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Wolin''s vitamin solution (10x) rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[8].recipe[0];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[8].recipe[0]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::ingredients[24].concentration;
+    retained={"value": "0.02", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Wolin''s vitamin solution (10x) rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[8].recipe[1];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[8].recipe[1]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::ingredients[25].concentration;
+    retained={"value": "0.1", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Wolin''s vitamin solution (10x) rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[8].recipe[2];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[8].recipe[2]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::ingredients[26].concentration;
+    retained={"value": "0.05", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Wolin''s vitamin solution (10x) rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[8].recipe[3];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[8].recipe[3]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::ingredients[27].concentration;
+    retained={"value": "0.05", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Wolin''s vitamin solution (10x) rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[8].recipe[4];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[8].recipe[4]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::ingredients[28].concentration;
+    retained={"value": "0.05", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Wolin''s vitamin solution (10x) rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[8].recipe[5];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[8].recipe[5]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::ingredients[29].concentration;
+    retained={"value": "0.05", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Wolin''s vitamin solution (10x) rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[8].recipe[6];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[8].recipe[6]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::ingredients[30].concentration;
+    retained={"value": "0.001", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Wolin''s vitamin solution (10x) rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[8].recipe[7];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[8].recipe[7]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::ingredients[31].concentration;
+    retained={"value": "0.05", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Wolin''s vitamin solution (10x) rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[8].recipe[8];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[8].recipe[8]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::ingredients[32].concentration;
+    retained={"value": "0.05", "unit": "G_PER_L"}; correct; The numerical value matches
+    the copied provider Wolin''s vitamin solution (10x) rate, but its root placement
+    lacks that intermediate/stock boundary and the receiving addition. Preserve source
+    amounts while correcting representation; no new final concentration is asserted.
+    Source locators: .temp/batch079-scientific-20261114/record08/medium383a.json#$.solutions[8].recipe[9];
+    .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[8].recipe[9]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::preparation_steps[0].description;
+    retained="Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach a
+    pH below 6 (at least 30 min), then distributed in anoxic cultivation vials and
+    autoclaved under the same gas atmosphere. Solution B is autoclaved separately
+    under 80% N2 and 20% CO2 gas atmosphere. Solutions C and D are prepared under
+    100% N2 gas and filter-sterilized. Solution E is autoclaved under 100% N2 gas.
+    To complete the medium appropriate amounts of solutions B to E are added to the
+    sterile solution A in the sequence as indicated. Final pH of the medium should
+    be 7.0 – 7.2."; evidence_only; Retain the supported main staged gas/pH/sterilization
+    sequence. Source locators: .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[0].steps[0]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::preparation_steps[1].description;
+    retained="Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from
+    5% (w/v) solution freshly prepared under N2 and filter-sterilized) may stimulate
+    growth of some strains at the beginning. For transfers use 5 - 10% inoculum. Incubate
+    all strains in the dark."; evidence_only; Retain the source optional dithionite
+    range, explicit w/v stock example, transfer range and darkness; optional stimulation
+    is not a universal growth claim. Source locators: .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[0].steps[1]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::preparation_steps[2].description;
+    retained="First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml."; correct; Exact SL-10 makeup
+    text is supported, but it is unqualified at main-method scope; retain wording
+    and make the stock boundary explicit. Source locators: .temp/batch079-scientific-20261114/record08/medium383.json#$.solutions[7].steps[0]
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::ph_range.min; retained=7.0;
+    evidence_only; Retain source final pH range 7.0–7.2; separate the preparative
+    pH below 6. Source locators: .temp/batch079-scientific-20261114/record08/medium383.json#$.medium.min_pH
+
+    data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::ph_range.max; retained=7.2;
+    evidence_only; Retain source final pH range 7.0–7.2; separate the preparative
+    pH below 6. Source locators: .temp/batch079-scientific-20261114/record08/medium383.json#$.medium.max_pH'
+- assessment_id: A-assembly
+  area: representation
+  topic: A–E additions, embedded stocks and volume basis
+  outcome: concern
+  summary: 383a assembles962/20/4/1/13mL with provider main volume1000mL;383 assembles952/20/20/1/10mL
+    and explicitly states final1003mL in its PDF. SolutionA also receives SL-10 and
+    Se/W, whileD receives Wolin vitamins. Intermediate A, B, C, E and three embedded
+    stock strengths are not final-medium concentrations. HCl stock2.5g/L is provider-declared;
+    unspecified25% basis prevents an independent primary mass conversion.
+  target_ids:
+  - CultureMech:001490
+  evidence_ids:
+  - E-target
+  - E-owner-a
+  - E-owner-b
+  - E-primary-383a
+  - E-primary-383
+  - E-provider-383a
+  - E-provider-383
+- assessment_id: A-forms
+  area: grounding
+  topic: Every asserted ID and exact supplied form
+  outcome: concern
+  summary: All33 IDs across192 slots are active; nickel hexahydrate is mapped to anhydrous34887
+    and sodium resazurin to nonsodium8806. Candidate53542 precisely encodes six waters.
+    Explicit D-pantothenate matches31345; lipoic DL and genericB12 retain specificity
+    limits. MIM statuses are kept separate from chemical proof.
+  target_ids:
+  - CultureMech:001490
+  evidence_ids:
+  - E-chemistry
+  - E-mim
+  - E-CHEBI-131361
+  - E-CHEBI-15940
+  - E-CHEBI-15956
+  - E-CHEBI-16494
+  - E-CHEBI-17015
+  - E-CHEBI-176843
+  - E-CHEBI-17883
+  - E-CHEBI-26710
+  - E-CHEBI-27470
+  - E-CHEBI-29377
+  - E-CHEBI-30753
+  - E-CHEBI-30961
+  - E-CHEBI-31206
+  - E-CHEBI-31345
+  - E-CHEBI-32145
+  - E-CHEBI-32149
+  - E-CHEBI-32588
+  - E-CHEBI-33118
+  - E-CHEBI-34887
+  - E-CHEBI-49105
+  - E-CHEBI-49976
+  - E-CHEBI-50144
+  - E-CHEBI-53503
+  - E-CHEBI-63036
+  - E-CHEBI-63939
+  - E-CHEBI-75213
+  - E-CHEBI-76209
+  - E-CHEBI-86158
+  - E-CHEBI-86249
+  - E-CHEBI-86318
+  - E-CHEBI-86345
+  - E-CHEBI-86368
+  - E-CHEBI-8806
+  - E-CHEBI-53542
+  details: 'CHEBI:131361: compatible_named_chemical; Current active ChEBI label or
+    synonyms and formula/InChI/SMILES are compatible with the named chemical, including
+    the explicit counterion and hydration state where given. This supports named identity
+    only, not stock placement, concentrations, purity, growth claims or final exposure.
+
+    CHEBI:15940: compatible_named_chemical; Current active ChEBI label or synonyms
+    and formula/InChI/SMILES are compatible with the named chemical, including the
+    explicit counterion and hydration state where given. This supports named identity
+    only, not stock placement, concentrations, purity, growth claims or final exposure.
+
+    CHEBI:15956: compatible_named_chemical; Current active ChEBI label or synonyms
+    and formula/InChI/SMILES are compatible with the named chemical, including the
+    explicit counterion and hydration state where given. This supports named identity
+    only, not stock placement, concentrations, purity, growth claims or final exposure.
+
+    CHEBI:16494: compatible_broad_identity; The local name explicitly specifies (DL)-alpha-Lipoic
+    acid. The current term has compatible connectivity, but neither its InChI nor
+    SMILES encodes a stereochemical or racemate assertion. Preserve the local DL qualification;
+    this is a specificity limit rather than evidence of a wrong pure enantiomer.
+
+    CHEBI:17015: compatible_named_chemical; Current active ChEBI label or synonyms
+    and formula/InChI/SMILES are compatible with the named chemical, including the
+    explicit counterion and hydration state where given. This supports named identity
+    only, not stock placement, concentrations, purity, growth claims or final exposure.
+
+    CHEBI:176843: compatible_broad_identity; The current term is a group of vitamin
+    B12 cobalamin vitamers, with no single formula, mass or structure. It matches
+    the generic local Vitamin B12 name, but does not identify a particular vitamer
+    or justify a specific molecular-mass conversion.
+
+    CHEBI:17883: matched_constituent_not_solution; HCl is compatible with hydrogen
+    chloride as a constituent. The identifier alone does not encode an aqueous stock,
+    concentration, percentage convention, dose or receiving stage. Those source formulation
+    matters are outside this chemical-ID contribution.
+
+    CHEBI:26710: compatible_named_chemical; Current active ChEBI label or synonyms
+    and formula/InChI/SMILES are compatible with the named chemical, including the
+    explicit counterion and hydration state where given. This supports named identity
+    only, not stock placement, concentrations, purity, growth claims or final exposure.
+
+    CHEBI:27470: compatible_named_chemical; Current active ChEBI label or synonyms
+    and formula/InChI/SMILES are compatible with the named chemical, including the
+    explicit counterion and hydration state where given. This supports named identity
+    only, not stock placement, concentrations, purity, growth claims or final exposure.
+
+    CHEBI:29377: compatible_named_chemical; Current active ChEBI label or synonyms
+    and formula/InChI/SMILES are compatible with the named chemical, including the
+    explicit counterion and hydration state where given. This supports named identity
+    only, not stock placement, concentrations, purity, growth claims or final exposure.
+
+    CHEBI:30753: compatible_named_chemical; Current active ChEBI label or synonyms
+    and formula/InChI/SMILES are compatible with the named chemical, including the
+    explicit counterion and hydration state where given. This supports named identity
+    only, not stock placement, concentrations, purity, growth claims or final exposure.
+
+    CHEBI:30961: compatible_named_chemical; Current active ChEBI label or synonyms
+    and formula/InChI/SMILES are compatible with the named chemical, including the
+    explicit counterion and hydration state where given. This supports named identity
+    only, not stock placement, concentrations, purity, growth claims or final exposure.
+
+    CHEBI:31206: compatible_named_chemical; Current active ChEBI label or synonyms
+    and formula/InChI/SMILES are compatible with the named chemical, including the
+    explicit counterion and hydration state where given. This supports named identity
+    only, not stock placement, concentrations, purity, growth claims or final exposure.
+
+    CHEBI:31345: compatible_named_chemical; Every current local preferred_term is
+    explicitly Calcium D-(+)-pantothenate. The exact term contains two D-pantothenate
+    anions and calcium (2C9H16NO5.Ca, 476.536), with stereochemical InChI and SMILES
+    and D-calcium-pantothenate synonyms. The explicit local D identity is compatible;
+    record07 generic-name uncertainty is not transferred here.
+
+    CHEBI:32145: compatible_named_chemical; Current active ChEBI label or synonyms
+    and formula/InChI/SMILES are compatible with the named chemical, including the
+    explicit counterion and hydration state where given. This supports named identity
+    only, not stock placement, concentrations, purity, growth claims or final exposure.
+
+    CHEBI:32149: compatible_named_chemical; Current active ChEBI label or synonyms
+    and formula/InChI/SMILES are compatible with the named chemical, including the
+    explicit counterion and hydration state where given. This supports named identity
+    only, not stock placement, concentrations, purity, growth claims or final exposure.
+
+    CHEBI:32588: compatible_named_chemical; Current active ChEBI label or synonyms
+    and formula/InChI/SMILES are compatible with the named chemical, including the
+    explicit counterion and hydration state where given. This supports named identity
+    only, not stock placement, concentrations, purity, growth claims or final exposure.
+
+    CHEBI:33118: compatible_named_chemical; Current active ChEBI label or synonyms
+    and formula/InChI/SMILES are compatible with the named chemical, including the
+    explicit counterion and hydration state where given. This supports named identity
+    only, not stock placement, concentrations, purity, growth claims or final exposure.
+
+    CHEBI:34887: exact_form_mismatch; All three documents explicitly name NiCl2 x
+    6 H2O but both primary and secondary slots identify nickel dichloride without
+    waters (Cl2Ni, 129.599). Current candidate CHEBI:53542 explicitly contains six
+    waters (2Cl.6H2O.Ni, 237.689). This is an exact hydrate mismatch; no concentration
+    conversion is proposed.
+
+    CHEBI:49105: compatible_named_chemical; Current active ChEBI label or synonyms
+    and formula/InChI/SMILES are compatible with the named chemical, including the
+    explicit counterion and hydration state where given. This supports named identity
+    only, not stock placement, concentrations, purity, growth claims or final exposure.
+
+    CHEBI:49976: compatible_named_chemical; Current active ChEBI label or synonyms
+    and formula/InChI/SMILES are compatible with the named chemical, including the
+    explicit counterion and hydration state where given. This supports named identity
+    only, not stock placement, concentrations, purity, growth claims or final exposure.
+
+    CHEBI:50144: compatible_named_chemical; The sole new term capture confirms Na-pyruvate
+    as sodium pyruvate: C3H3O3.Na and CC(=O)C(=O)[O-].[Na+], not the free acid. Packaged
+    MIM exact local name also maps to this ID. No amount or concentration conclusion
+    is implied.
+
+    CHEBI:53503: compatible_named_chemical; The local cobalt chloride hexahydrate
+    matches the current definition ratio 1:2:6, formula 2Cl.Co.6H2O and six-water
+    InChI/SMILES. An inconsistent 1/7 string exists among current ontology synonyms
+    but does not outweigh its definition and exact structure. The MIM preferred-label
+    row is REJECTED while the exact synonym row is MAPPED; both use the same compatible
+    hexahydrate ID.
+
+    CHEBI:63036: compatible_named_chemical; Current active ChEBI label or synonyms
+    and formula/InChI/SMILES are compatible with the named chemical, including the
+    explicit counterion and hydration state where given. This supports named identity
+    only, not stock placement, concentrations, purity, growth claims or final exposure.
+
+    CHEBI:63939: compatible_named_chemical; Current active ChEBI label or synonyms
+    and formula/InChI/SMILES are compatible with the named chemical, including the
+    explicit counterion and hydration state where given. This supports named identity
+    only, not stock placement, concentrations, purity, growth claims or final exposure.
+
+    CHEBI:75213: compatible_named_chemical; Current active ChEBI label or synonyms
+    and formula/InChI/SMILES are compatible with the named chemical, including the
+    explicit counterion and hydration state where given. This supports named identity
+    only, not stock placement, concentrations, purity, growth claims or final exposure.
+
+    CHEBI:76209: compatible_named_chemical; Current active ChEBI label or synonyms
+    and formula/InChI/SMILES are compatible with the named chemical, including the
+    explicit counterion and hydration state where given. This supports named identity
+    only, not stock placement, concentrations, purity, growth claims or final exposure.
+
+    CHEBI:86158: compatible_named_chemical; Current active ChEBI label or synonyms
+    and formula/InChI/SMILES are compatible with the named chemical, including the
+    explicit counterion and hydration state where given. This supports named identity
+    only, not stock placement, concentrations, purity, growth claims or final exposure.
+
+    CHEBI:86249: compatible_named_chemical; Current active ChEBI label or synonyms
+    and formula/InChI/SMILES are compatible with the named chemical, including the
+    explicit counterion and hydration state where given. This supports named identity
+    only, not stock placement, concentrations, purity, growth claims or final exposure.
+
+    CHEBI:86318: compatible_named_chemical; Current active ChEBI label or synonyms
+    and formula/InChI/SMILES are compatible with the named chemical, including the
+    explicit counterion and hydration state where given. This supports named identity
+    only, not stock placement, concentrations, purity, growth claims or final exposure.
+
+    CHEBI:86345: compatible_named_chemical; Current active ChEBI label or synonyms
+    and formula/InChI/SMILES are compatible with the named chemical, including the
+    explicit counterion and hydration state where given. This supports named identity
+    only, not stock placement, concentrations, purity, growth claims or final exposure.
+
+    CHEBI:86368: compatible_named_chemical; Current active ChEBI label or synonyms
+    and formula/InChI/SMILES are compatible with the named chemical, including the
+    explicit counterion and hydration state where given. This supports named identity
+    only, not stock placement, concentrations, purity, growth claims or final exposure.
+
+    CHEBI:8806: exact_form_mismatch; All three documents name Sodium resazurin, but
+    the primary-only ID has formula C12H7NO4 and no sodium component in either InChI
+    or SMILES. The sodium-salt identity is therefore not encoded by this exact term.
+    The packaged MIM mapped synonym repeats CHEBI:8806 and is not independent chemical
+    proof. No replacement salt ID was audited or invented.'
+- assessment_id: A-preparation
+  area: scope
+  topic: Supported main controls and misplaced SL-10 makeup
+  outcome: concern
+  summary: Gas mixtures, staged sterilization, finalpH7.0–7.2, darkness and optional
+    dithionite/transfer prose are supported and retained. SL-10 makeup text is accurate
+    but placed at preparation_steps[2] without explicit stock scope. Do not make optional
+    dithionite mandatory or transfer DSM383 strain-specific substitutions.
+  target_ids:
+  - CultureMech:001490
+  evidence_ids:
+  - E-target
+  - E-owner-a
+  - E-owner-b
+  - E-primary-383a
+  - E-primary-383
+  - E-provider-383a
+  - E-provider-383
+- assessment_id: A-classification
+  area: identity
+  topic: Defined liquid formulation and biological claims
+  outcome: supported
+  summary: DEFINED medium/composition and LIQUID physical state fit the generic chemically
+    specified source. No structured strain-specific growth claim is asserted; generic
+    cultivation and source stimulation prose do not establish optimality or broad
+    organism growth.
+  target_ids:
+  - CultureMech:001490
+  evidence_ids:
+  - E-target
+  - E-owner-a
+  - E-owner-b
+  - E-primary-383a
+  - E-primary-383
+  - E-provider-383a
+  - E-provider-383
+- assessment_id: A-metals
+  area: quantity
+  topic: Unestablished high_metal derived flag
+  outcome: unknown
+  summary: All three documents assert high_metal:true. The schema threshold concerns
+    final total metal concentration, but present stock-root conflation supplies no
+    valid final total. Re-evaluate after stage corrections; neither a false value
+    nor a replacement total is asserted.
+  target_ids:
+  - CultureMech:001490
+  evidence_ids:
+  - E-target
+  - E-owner-a
+  - E-owner-b
+  - E-schema
+  - E-quantity
+- assessment_id: A-variant
+  area: consistency
+  topic: Concentration variant relation and denominator precision
+  outcome: concern
+  summary: Retain the defensible source-specific concentration variant. NaCl15vs21g
+    and pyruvate1vs2.5g are real batch differences. Both sources use3g magnesium hexahydrate
+    and0.4g sulfide nonahydrate per batch; their A/E volumes and final1000-provider/1003-explicit
+    bases differ. Current explanatory prose must distinguish batch masses from stage
+    and final concentrations.
+  target_ids:
+  - CultureMech:001490
+  evidence_ids:
+  - E-target
+  - E-owner-a
+  - E-owner-b
+  - E-primary-383a
+  - E-primary-383
+  - E-provider-383a
+  - E-provider-383
+- assessment_id: A-provenance
+  area: provenance
+  topic: Claim linkage, embedded histories and generated ownership
+  outcome: concern
+  summary: The full three records contain source URLs and histories but no evidence/reference
+    arrays linking each formulation claim. The native reference pass checked zero
+    assertions. Histories are retained as event statements; the current exact-formulation
+    merger is read only as maintained ownership context, not proof of how the historical
+    artifact was produced.
+  target_ids:
+  - CultureMech:001490
+  evidence_ids:
+  - E-target
+  - E-owner-a
+  - E-owner-b
+  - E-current-merge
+  - E-native-result
+  - E-native-references
+findings:
+- finding_id: F-identity
+  issue_key: batch079-record08-f-identity
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: DSM383 values are assigned to the DSM383a target
+  description: Generated identity and source accession say383a, but its entire ingredient
+    array follows383, including NaCl22.0588, pyruvate125 and sulfide40G_PER_L instead
+    of383a provider-stage15.5925,250 and30.7692. Historical duplicate grouping must
+    not erase the maintained variant. Correct authoritative boundaries and regenerate;
+    do not infer a present code defect from this output.
+  target_ids:
+  - CultureMech:001490
+  field_paths:
+  - media_term
+  - ingredients
+  - synonyms
+  - merged_from
+  - variant_children
+  evidence_ids:
+  - E-target
+  - E-owner-a
+  - E-owner-b
+  - E-primary-383a
+  - E-primary-383
+  - E-provider-383a
+  - E-provider-383
+  - E-current-merge
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfobacterium_medium.yaml
+    role: normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfotignum_medium.yaml
+    role: normalized source
+  rule_id: CultureMech.single-record-checklist.identity
+  native_severity: blocker
+  normalization_reason: Wrong source formulation makes the generated record denote
+    a different recipe; this is an identity blocker regardless of valid YAML.
+  external_issues:
+  - https://github.com/CultureBotAI/CultureMech/issues/750
+- finding_id: F-stock
+  issue_key: batch079-record08-f-stock
+  category: representation
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Intermediate and stock strengths are flattened into root ingredients
+  description: All three fully read files omit solution containers and place A/B/C/E
+    and trace/selenite/vitamin rates at root. Carbonate50G_PER_L is1g in20mL B, not
+    a50g/L final-medium assertion. Restore each distinct component stage and addition
+    basis before deriving final concentrations. Re-evaluate high_metal from a supported
+    final total afterward.
+  target_ids:
+  - CultureMech:001490
+  field_paths:
+  - ingredients
+  - solutions
+  - high_metal
+  evidence_ids:
+  - E-target
+  - E-owner-a
+  - E-owner-b
+  - E-primary-383a
+  - E-primary-383
+  - E-provider-383a
+  - E-provider-383
+  - E-schema
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfobacterium_medium.yaml
+    role: normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfotignum_medium.yaml
+    role: normalized source
+  rule_id: CultureMech.single-record-checklist.representation
+  native_severity: blocker
+  normalization_reason: Following flattened root strengths would materially change
+    the source formulation; critical representation failure is a blocker, not an ordinary
+    missing citation.
+  external_issues:
+  - https://github.com/CultureBotAI/CultureMech/issues/750
+- finding_id: F-forms
+  issue_key: batch079-record08-f-forms
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Nickel hydrate and sodium-resazurin identities are not represented exactly
+  description: All three files use34887 in both ingredients[21] term slots for NiCl2
+    x6H2O;53542 represents that exact hydrate. Their primary-only ingredients[7].term
+    uses8806 without sodium for Sodium resazurin. Resolve the latter exact salt before
+    replacing its ID. A MAPPED synonym does not certify supplied form.
+  target_ids:
+  - CultureMech:001490
+  field_paths:
+  - ingredients[21].term
+  - ingredients[21].mediaingredientmech_chebi_term
+  - ingredients[7].term
+  evidence_ids:
+  - E-target
+  - E-owner-a
+  - E-owner-b
+  - E-chemistry
+  - E-mim
+  - E-CHEBI-34887
+  - E-CHEBI-53542
+  - E-CHEBI-8806
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfobacterium_medium.yaml
+    role: normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfotignum_medium.yaml
+    role: normalized source
+  rule_id: CultureMech.single-record-checklist.grounding
+  native_severity: major
+  normalization_reason: Exact-form errors undermine chemical interpretation and any
+    molar calculation; all IDs exist, so this is a chemical grounding major, not native
+    nonexistent-ID ruleP2.2.
+  external_issues:
+  - https://github.com/CultureBotAI/CultureMech/issues/750
+- finding_id: F-stock-method
+  issue_key: batch079-record08-f-stock-method
+  category: scope
+  severity: major
+  status: open
+  certainty: confirmed
+  title: SL-10 preparation is unqualified at main-medium scope
+  description: preparation_steps[2] accurately preserves SL-10 dissolution and1000mL
+    makeup but sits beside the main method without a named stock boundary in all three
+    files. Retain the exact instructions and scope them to SL-10; preserve already-supported
+    main gas, sterilization, final pH, optional supplementation and darkness.
+  target_ids:
+  - CultureMech:001490
+  field_paths:
+  - preparation_steps[2]
+  evidence_ids:
+  - E-target
+  - E-owner-a
+  - E-owner-b
+  - E-primary-383a
+  - E-primary-383
+  - E-provider-383a
+  - E-provider-383
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfobacterium_medium.yaml
+    role: normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfotignum_medium.yaml
+    role: normalized source
+  rule_id: CultureMech.single-record-checklist.scope
+  native_severity: major
+  normalization_reason: Misapplying a stock makeup procedure to the completed medium
+    changes preparation scope, warranting major severity while crediting the retained
+    correct text.
+  external_issues:
+  - https://github.com/CultureBotAI/CultureMech/issues/750
+- finding_id: F-linkage
+  issue_key: batch079-record08-f-linkage
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Source provenance lacks narrow formulation evidence links
+  description: Complete current files have no evidence arrays or root bibliographic
+    references for their individual concentration/preparation claims. Source URLs
+    and import histories remain useful leads. Attach source-specific, exact-stage
+    claim evidence during corrections and retain existing histories.
+  target_ids:
+  - CultureMech:001490
+  field_paths:
+  - ingredients
+  - evidence
+  - references
+  evidence_ids:
+  - E-target
+  - E-owner-a
+  - E-owner-b
+  - E-native-references
+  - E-quantity
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfobacterium_medium.yaml
+    role: normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfotignum_medium.yaml
+    role: normalized source
+  rule_id: CultureMech.single-record-checklist.evidence
+  native_severity: minor
+  normalization_reason: The evidence gap is a bounded provenance defect alongside
+    separately identified substantive formulation errors; it is not itself proof that
+    every source-supported number is wrong.
+  external_issues:
+  - https://github.com/CultureBotAI/CultureMech/issues/750
+- finding_id: F-variant-basis
+  issue_key: batch079-record08-f-variant-basis
+  category: consistency
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Variant explanation does not distinguish batch mass from concentration basis
+  description: 'Keep the concentration-variant relation, but qualify the stated MgCl2
+    and sulfide axes: both sources use3g and0.4g per batch respectively. Different
+    A/E volumes and final source bases produce different intermediate or final concentrations;
+    do not describe those as changed batch masses.'
+  target_ids:
+  - CultureMech:001490
+  field_paths:
+  - variant_children[0].notes
+  - data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::variant_modifications[0]
+  - data/normalized_yaml/bacterial/desulfobacterium_medium.yaml::parent_media.notes
+  evidence_ids:
+  - E-target
+  - E-owner-a
+  - E-owner-b
+  - E-primary-383a
+  - E-primary-383
+  - E-provider-383a
+  - E-provider-383
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfobacterium_medium.yaml
+    role: normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfotignum_medium.yaml
+    role: normalized source
+  rule_id: CultureMech.single-record-checklist.consistency
+  native_severity: minor
+  normalization_reason: The scientific relationship is defensible; its explanatory
+    basis needs a bounded wording correction without creating a new formulation or
+    changing doses.
+  external_issues:
+  - https://github.com/CultureBotAI/CultureMech/issues/750
+actions:
+- action_id: ACT-stages
+  description: In the maintained source records, represent all A–E stages and embedded
+    stocks with their source-specific additions and volume bases. Scope SL-10 preparation
+    explicitly, retain correct main controls, and re-evaluate high_metal only after
+    final-medium composition is supported.
+  finding_ids:
+  - F-stock
+  - F-stock-method
+  - F-linkage
+  target_ids:
+  - CultureMech:001490
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfobacterium_medium.yaml
+    role: normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfotignum_medium.yaml
+    role: normalized source
+  acceptance_checks:
+  - Account for every current ingredient, every printed stock component and every
+    source addition without double counting; preserve99 reviewed current concentration
+    observations as the before-state.
+  - Use explicit source383a versus383 scopes; preserve1003mL explicit final383 versus1000mL
+    provider383a basis without inventing density or percent convention.
+  - Attach exact PURL/object/table evidence to each changed amount or addition using
+    existing schema slots; retain source-supported pH/gas/optional/darkness controls.
+  - Run documented native checks only after separately authorized curation and manually
+    recheck all stage boundaries; calculate high_metal only from supported final totals.
+- action_id: ACT-forms
+  description: Correct verified nickel hydrate grounding and resolve the exact sodium-resazurin
+    salt identity in authoritative inputs, retaining explicit D-pantothenate and DL/B12
+    breadth.
+  finding_ids:
+  - F-forms
+  target_ids:
+  - CultureMech:001490
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfobacterium_medium.yaml
+    role: normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfotignum_medium.yaml
+    role: normalized source
+  acceptance_checks:
+  - Verify both primary and secondary nickel slots against exact53542 formula/waters
+    and all sodium-resazurin primary slots against an independently verified sodium
+    salt.
+  - Use the immutable packaged MIM resolver policy; keep rejected preferred and mapped
+    synonym distinctions explicit and do not treat chemical validation as an index
+    rewrite.
+  - Do not infer molar concentrations from broadB12 or unspecified stereo/solution
+    forms.
+- action_id: ACT-boundaries
+  description: Retain source383 and383a as distinct formulations/concentration variants,
+    qualify the Mg/sulfide explanation and regenerate only through the maintained
+    exact-formulation workflow after owner corrections.
+  finding_ids:
+  - F-identity
+  - F-variant-basis
+  target_ids:
+  - CultureMech:001490
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfobacterium_medium.yaml
+    role: normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfotignum_medium.yaml
+    role: normalized source
+  depends_on:
+  - ACT-stages
+  - ACT-forms
+  generator: Maintained CultureMech merge workflow under src/culturemech/merge; preview
+    source grouping and stable-ID effects before regeneration.
+  acceptance_checks:
+  - Generated383a ingredients must derive from its correct maintained formulation;
+    no synonym or merged_from declaration may silently collapse383.
+  - Keep3g magnesium salt and0.4g sulfide batch masses distinct from intermediate/final
+    concentration differences.
+  - Run documented merge/freshness and ID gates at their actual scopes after authorized
+    changes; do not infer a current-code bug or claim those gates ran during this
+    review.
+limitations:
+- Completed means the declared scope was assessed; two blocker, two major and two
+  minor findings remain open. This is not a passing scientific verdict.
+- Historical canonical exits/order come from the recovery RESULT.md, with original
+  logs retained. Fresh parent-run checks now have separate exact argv/time/exit/stream
+  receipts; the author ran no validators.
+- Configured term checks do not establish exact chemical form, and reference checks
+  examined zero evidence assertions.
+- DSM383a provider main volume1000mL agrees with its assembly sum; its PDF does not
+  independently print a final-volume statement. DSM383 PDF explicitly states1003mL.
+  Neither claim is a measured final volume.
+- No alternative sodium-resazurin salt ID was audited; no density, HCl percent convention,
+  B12 vitamer or DL stereochemical proof was invented.
+- high_metal remains unestablished until a correctly staged final composition is available;
+  no substitute boolean or total is asserted.
+- No recipe edits, generator reruns, corpus checks, structured-review validation,
+  saver, Git mutation or publication were performed by this author helper. The parent
+  owns subsequent independent review and persistence.
+notes:
+- Claim inventory retains the actual current values and both source objects; correct
+  decisions identify current field placement, not an instruction to alter already-supported
+  stock masses.
+- No current merger-code failure is inferred from the historical generated artifact.
+- New evidence and this draft use exclusive paths; all prior recovery artifacts and
+  source files remain unchanged. Only native review bundles are candidates for later
+  publication; helpers and raw evidence remain local. Ignored local evidence availability
+  is separate from the saved input-hash attestation.
+- started_at uses the earliest durable timed record08 evidence activity, the fresh
+  CHEBI:50144 capture. Full-file reading began earlier without a persisted start timestamp.
+  The author-plan time 2026-11-15T08:15:25.868310Z marks draft construction and input
+  binding, not the start of scientific assessment; reused record07 captures retain
+  their original times. Parent applied only timestamp/locator/history-summary precision
+  before save; substantive decisions are unchanged.
+links:
+- https://github.com/CultureBotAI/CultureMech/issues/750
+tags:
+- batch079
+- record08
+- needs_curation
+- source_review
