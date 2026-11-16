@@ -532,14 +532,14 @@ variants:
     - reference: doi:10.1007/s00449-016-1726-2
       supports: SUPPORT
       snippet: 1.5% (v/v) of the effluent was added at the start as a nutrient source,
-        a similar volume of effluent was added after 3 days of growth, and a final addition
-        of 3% (v/v) of the initial volume was added after 6 days of growth
-      explanation: 'Materials and methods, filtered effluent preparation and timed additions;
-        primary source inspected 2026-11-16. Primary Methods: filtered plant-residue
-        digester effluent in carbonate buffer;1.5%(v/v) at start, a similar volume after3days,3%
-        of initial volume after6days. These sequential additions must not become a6%
-        initial concentration. No constituent expansion or assertion that all canonical
-        Spirulina ingredients remain present.'
+        a similar volume of effluent was added after 3 days of growth, and a final
+        addition of 3% (v/v) of the initial volume was added after 6 days of growth
+      explanation: 'Materials and methods, filtered effluent preparation and timed
+        additions; primary source inspected 2026-11-16. Primary Methods: filtered
+        plant-residue digester effluent in carbonate buffer;1.5%(v/v) at start, a
+        similar volume after3days,3% of initial volume after6days. These sequential
+        additions must not become a6% initial concentration. No constituent expansion
+        or assertion that all canonical Spirulina ingredients remain present.'
     notes: A scoped change event, not a fully expanded variant or a parent-formulation
       amendment. No chemical identifier is inferred.
     source_modification_index: 0

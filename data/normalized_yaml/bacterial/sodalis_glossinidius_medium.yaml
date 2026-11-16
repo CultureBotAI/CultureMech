@@ -1113,12 +1113,12 @@ variants:
     - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf
       supports: SUPPORT
       snippet: Casein hydrolysate 8.10 g
-      explanation: 'Page 1, Solution A hydrolysate alternatives. Supports only the named
-        descriptor/event at the stated stage. Literal batch substitution: 8.10 g casein
-        hydrolysate for 8.10 g lactalbumin hydrolysate, not both. Undefined hydrolysate
-        mixture; serum addition and final volume not converted. Source inspected 2026-11-16;
-        SHA256 6af992ef5048ce852d2c1c88463f1eeedf3441b682522231c93341b3ce1debac. No
-        parent formulation, growth, ontology identity, or missing dose is inferred.'
+      explanation: 'Page 1, Solution A hydrolysate alternatives. Supports only the
+        named descriptor/event at the stated stage. Literal batch substitution: 8.10
+        g casein hydrolysate for 8.10 g lactalbumin hydrolysate, not both. Undefined
+        hydrolysate mixture; serum addition and final volume not converted. Source
+        inspected 2026-11-16; SHA256 6af992ef5048ce852d2c1c88463f1eeedf3441b682522231c93341b3ce1debac.
+        No parent formulation, growth, ontology identity, or missing dose is inferred.'
     replaced_ingredient:
       preferred_term: lactalbumin hydrolysate
 evidence:

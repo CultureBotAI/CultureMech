@@ -970,13 +970,13 @@ variants:
     - reference: https://utex.org/products/j-medium
       supports: SUPPORT
       snippet: For 1.25% agar medium add 12.5 g of agar
-      explanation: 'Directions, optional agar instruction; primary UTEX collection page
-        inspected 2026-11-16. This ingredient occurrence is scoped to the optional variant,
-        not a change to the liquid parent. Directions step2; separate preceding instruction:
-        "Bring total volume to 1 L with dH2O". Source designates the optional agar percentage
-        and pairs a mass with this volume; no post-addition volume measurement is claimed.
-        Water subscript rendered as plain text. Exact excerpt clarification for issue763;
-        scientific payload unchanged.'
+      explanation: 'Directions, optional agar instruction; primary UTEX collection
+        page inspected 2026-11-16. This ingredient occurrence is scoped to the optional
+        variant, not a change to the liquid parent. Directions step2; separate preceding
+        instruction: "Bring total volume to 1 L with dH2O". Source designates the
+        optional agar percentage and pairs a mass with this volume; no post-addition
+        volume measurement is claimed. Water subscript rendered as plain text. Exact
+        excerpt clarification for issue763; scientific payload unchanged.'
     source_modification_index: 0
     source_text: Add 12.5 g agar per 1 L recipe (12.5 g/L; 1.25% w/v) before covering
       and autoclaving; do not mix at the agar-addition step.

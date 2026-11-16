@@ -476,9 +476,9 @@ variants:
       explanation: Materials and Methods, Strain and growth conditions. Primary source
         inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence
         of the whole parent recipe. Nordkvist original ASM Methods, Strain and growth
-        conditions; subscripts/superscripts rendered in plain text. Hydration not specified.
-        This supplement applies to the defined MS10 culture medium. Exact excerpt clarification
-        for issue763; scientific payload unchanged.
+        conditions; subscripts/superscripts rendered in plain text. Hydration not
+        specified. This supplement applies to the defined MS10 culture medium. Exact
+        excerpt clarification for issue763; scientific payload unchanged.
     replaced_ingredient:
       preferred_term: Manganese chloride
       notes: Displaced parent descriptor; not a positive variant ingredient.

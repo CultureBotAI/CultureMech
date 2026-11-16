@@ -203,8 +203,8 @@ variants:
       snippet: tryptic soy broth without dextrose
       explanation: Primary article abstract indexed by Europe PMC; full methods not
         reviewed. Supports only the named descriptor/event at the stated stage. Explicit
-        glucose/dextrose omission. No positive-presence descriptor is emitted for the
-        removed ingredient. Source inspected 2026-11-16; SHA256 0e246ebb54c67a39f834240a8875f5725c426276c86f3fc8ba5488997858e462.
+        glucose/dextrose omission. No positive-presence descriptor is emitted for
+        the removed ingredient. Source inspected 2026-11-16; SHA256 0e246ebb54c67a39f834240a8875f5725c426276c86f3fc8ba5488997858e462.
         No parent formulation, growth, ontology identity, or missing dose is inferred.
   - action: ADD
     ingredient:
@@ -213,8 +213,8 @@ variants:
         value: 0.5; 1.0
         unit: PERCENT_W_V
       notes: Two separate tested doses and mutually exclusive starch/maltose substrate
-        arms, not simultaneous supplementation. Primary abstract explicitly states w/v;
-        no full parent formulation certification.
+        arms, not simultaneous supplementation. Primary abstract explicitly states
+        w/v; no full parent formulation certification.
     stage: soluble-starch substrate arm
     source_modification_index: 1
     source_text: Add 0.5% or 1.0% (w/v) soluble starch or maltose.
@@ -225,9 +225,10 @@ variants:
       explanation: Primary article abstract indexed by Europe PMC; full methods not
         reviewed. Supports only the named descriptor/event at the stated stage. Two
         separate tested doses and mutually exclusive starch/maltose substrate arms,
-        not simultaneous supplementation. Primary abstract explicitly states w/v; no
-        full parent formulation certification. Source inspected 2026-11-16; SHA256 0e246ebb54c67a39f834240a8875f5725c426276c86f3fc8ba5488997858e462.
-        No parent formulation, growth, ontology identity, or missing dose is inferred.
+        not simultaneous supplementation. Primary abstract explicitly states w/v;
+        no full parent formulation certification. Source inspected 2026-11-16; SHA256
+        0e246ebb54c67a39f834240a8875f5725c426276c86f3fc8ba5488997858e462. No parent
+        formulation, growth, ontology identity, or missing dose is inferred.
   - action: ADD
     ingredient:
       preferred_term: maltose
@@ -235,8 +236,8 @@ variants:
         value: 0.5; 1.0
         unit: PERCENT_W_V
       notes: Two separate tested doses and mutually exclusive starch/maltose substrate
-        arms, not simultaneous supplementation. Primary abstract explicitly states w/v;
-        no full parent formulation certification.
+        arms, not simultaneous supplementation. Primary abstract explicitly states
+        w/v; no full parent formulation certification.
     stage: maltose substrate arm
     source_modification_index: 1
     source_text: Add 0.5% or 1.0% (w/v) soluble starch or maltose.
@@ -247,9 +248,10 @@ variants:
       explanation: Primary article abstract indexed by Europe PMC; full methods not
         reviewed. Supports only the named descriptor/event at the stated stage. Two
         separate tested doses and mutually exclusive starch/maltose substrate arms,
-        not simultaneous supplementation. Primary abstract explicitly states w/v; no
-        full parent formulation certification. Source inspected 2026-11-16; SHA256 0e246ebb54c67a39f834240a8875f5725c426276c86f3fc8ba5488997858e462.
-        No parent formulation, growth, ontology identity, or missing dose is inferred.
+        not simultaneous supplementation. Primary abstract explicitly states w/v;
+        no full parent formulation certification. Source inspected 2026-11-16; SHA256
+        0e246ebb54c67a39f834240a8875f5725c426276c86f3fc8ba5488997858e462. No parent
+        formulation, growth, ontology identity, or missing dose is inferred.
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: Arthrobacter psychrolactophilus

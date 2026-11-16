@@ -391,9 +391,9 @@ variants:
   - action: ADD
     ingredient:
       preferred_term: yeast extract
-      notes: Source states0.1% without an explicit percent basis in the inspected passage;
-        retain the literal amount here, do not infer w/v. The row's tryptone alternative
-        was not verified and is not structured.
+      notes: Source states0.1% without an explicit percent basis in the inspected
+        passage; retain the literal amount here, do not infer w/v. The row's tryptone
+        alternative was not verified and is not structured.
     stage: M.sedula DSM5348 transcriptomic culture on DSMZ88
     evidence:
     - reference: doi:10.1128/AEM.02019-07
@@ -401,9 +401,9 @@ variants:
       snippet: 0.1% yeast extract
       explanation: Materials and Methods, transcriptomics versus scanning-electron-microscopy
         cultures; primary source inspected 2026-11-16. Source states0.1% without an
-        explicit percent basis in the inspected passage; retain the literal amount here,
-        do not infer w/v. The row's tryptone alternative was not verified and is not
-        structured.
+        explicit percent basis in the inspected passage; retain the literal amount
+        here, do not infer w/v. The row's tryptone alternative was not verified and
+        is not structured.
     notes: A scoped change event, not a fully expanded variant or a parent-formulation
       amendment. No chemical identifier is inferred.
     source_modification_index: 1
@@ -416,8 +416,8 @@ variants:
         unit: G_PER_L
       notes: Approximately7.5g/L; preserve approximation. Two of four yeast-extract
         cultures received iron; no universal addition.
-    stage: 'M.sedula transcriptomic cultures: iron-supplemented yeast-extract arm before
-      inoculation'
+    stage: 'M.sedula transcriptomic cultures: iron-supplemented yeast-extract arm
+      before inoculation'
     evidence:
     - reference: doi:10.1128/AEM.02019-07
       supports: SUPPORT
@@ -434,8 +434,8 @@ variants:
     ingredient:
       preferred_term: FeS2 (pyrite)
       notes: Different experimental preparation from the transcriptomics DSMZ88+yeast+iron
-        arm. Literal0.1% sole-energy-source input; percent basis not specified, no concentration
-        enum or parent equivalence inferred.
+        arm. Literal0.1% sole-energy-source input; percent basis not specified, no
+        concentration enum or parent equivalence inferred.
     stage: M.sedula scanning-electron-microscopy cultures on minimal salts medium
     evidence:
     - reference: doi:10.1128/AEM.02019-07

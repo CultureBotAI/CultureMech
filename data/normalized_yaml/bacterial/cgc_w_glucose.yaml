@@ -349,19 +349,19 @@ variants:
         conversion. Enrichment discrepancy elsewhere in the source remains unresolved.
     stage: glucose 13C-labeling experiment medium
     source_modification_index: 0
-    source_text: Use [5-13C]glucose at the Methods dose of 20 g/L; Table 2 reports nominal
-      110 mM glucose. The parent D-glucose descriptor does not specify this isotope
-      label.
+    source_text: Use [5-13C]glucose at the Methods dose of 20 g/L; Table 2 reports
+      nominal 110 mM glucose. The parent D-glucose descriptor does not specify this
+      isotope label.
     evidence:
     - reference: doi:10.1128/JB.182.11.3088-3096.2000
       supports: SUPPORT
       snippet: 20 g/liter
-      explanation: Materials and Methods, cultivation conditions; separate Figure 1
-        caption. Supports only the named descriptor/event at the stated stage. Preserve
-        the isotope position; Table 2 nominal 110 mM is not a curator conversion. Enrichment
-        discrepancy elsewhere in the source remains unresolved. Source inspected 2026-11-16;
-        SHA256 07d1735ec2dd0ebaeb26e5c12daa965aa90315948f3e6747b220b5d15d19369e. No
-        parent formulation, growth, ontology identity, or missing dose is inferred.
+      explanation: Materials and Methods, cultivation conditions; separate Figure
+        1 caption. Supports only the named descriptor/event at the stated stage. Preserve
+        the isotope position; Table 2 nominal 110 mM is not a curator conversion.
+        Enrichment discrepancy elsewhere in the source remains unresolved. Source
+        inspected 2026-11-16; SHA256 07d1735ec2dd0ebaeb26e5c12daa965aa90315948f3e6747b220b5d15d19369e.
+        No parent formulation, growth, ontology identity, or missing dose is inferred.
     replaced_ingredient:
       preferred_term: D-glucose
 target_organisms:

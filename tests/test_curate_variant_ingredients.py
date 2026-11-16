@@ -130,6 +130,29 @@ def test_flow_variant_refused_before_write(sample):
     assert path.read_bytes() == before
 
 
+def test_long_new_fragments_keep_native_canonical_record_canonical(sample):
+    from record_io import dump_record
+
+    root, path, decision = sample
+    record = yaml.safe_load(path.read_bytes())
+    record["notes"] = "An existing long note with source qualifications. " * 8
+    path.write_text(dump_record(record))
+    before = path.read_text()
+    assert dump_record(yaml.safe_load(before)) == before
+    decision["expected_sha256"] = hashlib.sha256(path.read_bytes()).hexdigest()
+    change = decision["variants"][0]["ingredient_changes"][0]
+    change["ingredient"]["notes"] = (
+        "A new nested ingredient qualification with a long source description. " * 7
+    )
+    change["evidence"][0]["explanation"] = (
+        "A long exact source explanation retains the experimental stage and dose basis. " * 9
+    )
+    curate.run(save_decisions(root, [decision]), root=root, apply=True)
+    after = path.read_text()
+    assert dump_record(yaml.safe_load(after)) == after
+    assert yaml.safe_load(after)["notes"] == record["notes"]
+
+
 def test_shared_alias_cannot_mutate_unselected_variant(sample):
     root, path, decision = sample
     path.write_text(

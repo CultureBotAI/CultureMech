@@ -389,8 +389,8 @@ variants:
       concentration:
         value: '0.1'
         unit: PERCENT_W_V
-      notes: Source also reports0.05% for a separate ACS-dependence/acetate-uptake setup.
-        Do not generalize0.1% across every experiment or combine the two doses.
+      notes: Source also reports0.05% for a separate ACS-dependence/acetate-uptake
+        setup. Do not generalize0.1% across every experiment or combine the two doses.
     stage: I. hospitalis mixotrophic culture for acetate determination
     evidence:
     - reference: doi:10.1128/JB.06130-11
@@ -398,8 +398,8 @@ variants:
       snippet: 0.1% [wt/vol] yeast extract
       explanation: Materials and Methods, acetate determination; separate 0.05% passage
         retained as a limit; primary source inspected 2026-11-16. Source also reports0.05%
-        for a separate ACS-dependence/acetate-uptake setup. Do not generalize0.1% across
-        every experiment or combine the two doses.
+        for a separate ACS-dependence/acetate-uptake setup. Do not generalize0.1%
+        across every experiment or combine the two doses.
     notes: A scoped change event, not a fully expanded variant or a parent-formulation
       amendment. No chemical identifier is inferred.
     source_modification_index: 0

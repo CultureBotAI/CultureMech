@@ -332,16 +332,16 @@ variants:
   - action: ADD
     ingredient:
       preferred_term: agar
-      notes: 'Literal batch input: 15 g agar added to 1 L prepared liquid; do not mix.
-        Retain this preparation basis without inferring a measured volume after agar
-        addition.'
+      notes: 'Literal batch input: 15 g agar added to 1 L prepared liquid; do not
+        mix. Retain this preparation basis without inferring a measured volume after
+        agar addition.'
     stage: optional agar addition before autoclaving
     evidence:
     - reference: https://utex.org/products/euglena-medium
       supports: SUPPORT
       snippet: add 15 g of agar
-      explanation: Directions, optional agar instruction; primary UTEX collection page
-        inspected 2026-11-16. This ingredient occurrence is scoped to the optional variant,
-        not a change to the liquid parent.
+      explanation: Directions, optional agar instruction; primary UTEX collection
+        page inspected 2026-11-16. This ingredient occurrence is scoped to the optional
+        variant, not a change to the liquid parent.
     source_modification_index: 0
     source_text: After making up the liquid recipe to 1 L, add 15 g agar; do not mix.

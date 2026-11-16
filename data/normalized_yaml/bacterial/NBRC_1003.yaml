@@ -323,8 +323,8 @@ variants:
   - action: ADD
     ingredient:
       preferred_term: sulfuric acid
-      notes: Titrant identity only; pH 1.7 is a target, not an acid dose. Strength and
-        amount unspecified.
+      notes: Titrant identity only; pH 1.7 is a target, not an acid dose. Strength
+        and amount unspecified.
     stage: autotrophic pH adjustment before autoclaving
     source_modification_index: 1
     source_text: Adjust medium pH to 1.7 with H2SO4 prior to autoclaving.

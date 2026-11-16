@@ -531,22 +531,22 @@ variants:
         value: '5.2'
         unit: G_PER_L
         per_volume: per liter of 20X nitrate stock, not final medium
-      notes: 'Quoted stock-volume instruction: ''Add distilled water to 1 liter.'' Replaces
-        10.4 g/L heptahydrate in the 20X nitrate stock. The stock addition stays 50
-        mL/L; no final-medium conversion asserted.'
+      notes: 'Quoted stock-volume instruction: ''Add distilled water to 1 liter.''
+        Replaces 10.4 g/L heptahydrate in the 20X nitrate stock. The stock addition
+        stays 50 mL/L; no final-medium conversion asserted.'
     stage: 20X nitrate stock preparation
     source_modification_index: 0
     source_text: In the 20X nitrate stock, replace 10.4 g magnesium sulfate heptahydrate
-      per 1 L stock with 5.2 g anhydrous magnesium sulfate per 1 L stock. Keep the stock
-      addition at 50 mL/L final medium.
+      per 1 L stock with 5.2 g anhydrous magnesium sulfate per 1 L stock. Keep the
+      stock addition at 50 mL/L final medium.
     evidence:
     - reference: doi:10.4148/1941-4765.1175
       supports: SUPPORT
       snippet: 5.2 g if anhydrous
-      explanation: 'Page 26, Minimal Medium and 20 X Nitrate salts. Supports only the
-        named descriptor/event at the stated stage. Quoted stock-volume instruction:
-        ''Add distilled water to 1 liter.'' Replaces 10.4 g/L heptahydrate in the 20X
-        nitrate stock. The stock addition stays 50 mL/L; no final-medium conversion
+      explanation: 'Page 26, Minimal Medium and 20 X Nitrate salts. Supports only
+        the named descriptor/event at the stated stage. Quoted stock-volume instruction:
+        ''Add distilled water to 1 liter.'' Replaces 10.4 g/L heptahydrate in the
+        20X nitrate stock. The stock addition stays 50 mL/L; no final-medium conversion
         asserted. Source inspected 2026-11-16; SHA256 22e3c1c53e5746ac01b58e06f56f1bc26dca33bbb1812ddcbd3b34acbeb9cdc6.
         No parent formulation, growth, ontology identity, or missing dose is inferred.'
     replaced_ingredient:
@@ -568,9 +568,9 @@ variants:
   - action: ADD
     ingredient:
       preferred_term: agar
-      notes: 'Quoted MM preparation instruction: ''Make to 1 liter with distilled water.''
-        Literal dose: 18 g added to that preparation. No separately established post-agar
-        final volume or g/L value asserted; not the CM 15-g option.'
+      notes: 'Quoted MM preparation instruction: ''Make to 1 liter with distilled
+        water.'' Literal dose: 18 g added to that preparation. No separately established
+        post-agar final volume or g/L value asserted; not the CM 15-g option.'
     stage: solid minimal-medium preparation before autoclaving
     source_modification_index: 0
     source_text: Add 18 g agar to the one-litre MM preparation for solid medium; retain
@@ -579,11 +579,11 @@ variants:
     - reference: doi:10.4148/1941-4765.1175
       supports: SUPPORT
       snippet: add 18 g agar
-      explanation: 'Page 26, Minimal Medium and 20 X Nitrate salts. Supports only the
-        named descriptor/event at the stated stage. Quoted MM preparation instruction:
-        ''Make to 1 liter with distilled water.'' Literal dose: 18 g added to that preparation.
-        No separately established post-agar final volume or g/L value asserted; not
-        the CM 15-g option. Source inspected 2026-11-16; SHA256 22e3c1c53e5746ac01b58e06f56f1bc26dca33bbb1812ddcbd3b34acbeb9cdc6.
+      explanation: 'Page 26, Minimal Medium and 20 X Nitrate salts. Supports only
+        the named descriptor/event at the stated stage. Quoted MM preparation instruction:
+        ''Make to 1 liter with distilled water.'' Literal dose: 18 g added to that
+        preparation. No separately established post-agar final volume or g/L value
+        asserted; not the CM 15-g option. Source inspected 2026-11-16; SHA256 22e3c1c53e5746ac01b58e06f56f1bc26dca33bbb1812ddcbd3b34acbeb9cdc6.
         No parent formulation, growth, ontology identity, or missing dose is inferred.'
 references:
 - reference: doi:10.4148/1941-4765.1175

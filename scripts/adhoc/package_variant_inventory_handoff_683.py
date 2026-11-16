@@ -7,14 +7,26 @@ bundle, coverage and intake instructions. No network, live installation or send.
 """
 
 import argparse
+import csv
 import hashlib
+import io
 import json
+import os
 import shutil
 import subprocess
 import sys
+import tarfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+PRODUCTS = {
+    "ingredient_occurrences.tsv",
+    "ingredients_list.tsv",
+    "mapped_ingredients.yaml",
+    "unmapped_ingredients.yaml",
+    "ingredient_aggregation_errors.tsv",
+    "variant_ingredient_changes.tsv",
+}
 
 
 def sha(path):
@@ -25,51 +37,186 @@ def sha(path):
     return digest.hexdigest()
 
 
-def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--bundle", type=Path, required=True)
-    parser.add_argument("--expected-manifest-sha256", required=True)
-    parser.add_argument("--coverage", type=Path, required=True)
-    parser.add_argument("--queue", type=Path, required=True)
-    parser.add_argument("--output-directory", type=Path, required=True)
-    args = parser.parse_args()
-    manifest_path = args.bundle / "manifest.json"
-    if sha(manifest_path) != args.expected_manifest_sha256:
-        raise ValueError("unexpected manifest bytes")
-    manifest = json.loads(manifest_path.read_text())
-    if manifest["git"]["dirty"] or manifest["scope"] != "full_catalog_direct_ingredients":
-        raise ValueError("handoff requires a full-catalog candidate from a clean producer")
+def regular(path):
+    if path.is_symlink() or not path.is_file():
+        raise ValueError("input must be a regular non-symlink file: " + str(path))
+    return path
+
+
+def verify_bundle(bundle, pin):
     result = subprocess.run(
         [
             sys.executable,
             "scripts/ingredient_release_bundle.py",
             "verify",
             "--bundle-dir",
-            str(args.bundle.resolve()),
+            str(bundle.resolve()),
             "--expected-manifest-sha256",
-            args.expected_manifest_sha256,
+            pin,
         ],
         cwd=ROOT,
         capture_output=True,
         text=True,
         check=True,
     )
-    verification = json.loads(result.stdout)
-    coverage = json.loads((args.coverage / "summary.json").read_text())
+    return json.loads(result.stdout)
+
+
+def validate_coverage(coverage, queue_bytes, manifest):
+    """Join the audit to exact queue membership and candidate recipe bytes (#771)."""
     if coverage["result"] != "PASS" or coverage["mode"] != "postapply":
         raise ValueError("postapply coverage audit required")
-    if (
-        sha(args.coverage / "coverage.tsv") != coverage["coverage_sha256"]
-        or sha(args.queue) != coverage["queue_sha256"]
-    ):
-        raise ValueError("coverage or queue bytes differ from audit")
+    if hashlib.sha256(queue_bytes).hexdigest() != coverage["queue_sha256"]:
+        raise ValueError("queue bytes differ from audit")
+    previous_limit = csv.field_size_limit()
+    try:
+        csv.field_size_limit(sys.maxsize)
+        rows = list(csv.DictReader(io.StringIO(queue_bytes.decode("utf-8")), delimiter="\t"))
+    finally:
+        csv.field_size_limit(previous_limit)
+    expected = {}
+    for row in rows:
+        path = Path(row["source_path"])
+        if path.is_absolute() or ".." in path.parts or path.as_posix() != row["source_path"]:
+            raise ValueError("unsafe queue source path")
+        key = "data/normalized_yaml/" + path.as_posix()
+        if key in expected and expected[key] != row["source_sha256"]:
+            raise ValueError("inconsistent queue source hash")
+        expected[key] = row["source_sha256"]
+    snapshots = coverage["record_snapshots"]
+    if len({item["path"] for item in snapshots}) != len(snapshots) or {
+        item["path"] for item in snapshots
+    } != set(expected):
+        raise ValueError("coverage recipe membership differs from queue")
+    if coverage["queue_rows"] != len(rows) or coverage["queue_recipes"] != len(expected):
+        raise ValueError("coverage queue counts differ")
+    for item in snapshots:
+        relative = item["path"].removeprefix("data/normalized_yaml/")
+        if (
+            item["base_sha256"] != expected[item["path"]]
+            or relative not in manifest["inputs"]
+            or item["current_sha256"] != manifest["inputs"][relative]["sha256"]
+        ):
+            raise ValueError("coverage recipe hashes differ from candidate")
+    counts = coverage["dispositions"]
+    if any(type(value) is not int or value < 0 for value in counts.values()) or sum(
+        counts.values()
+    ) != len(rows):
+        raise ValueError("coverage disposition counts differ from queue")
     if manifest["counts"]["variant_change_events"] != coverage["applied_assertions"]:
         raise ValueError("bundle events differ from reviewed coverage")
-    destination = args.output_directory.resolve()
+
+
+def verify_archive(path, manifest):
+    """Check archived bytes and discovered source membership without extracting."""
+    expected = dict(manifest["dependencies"])
+    expected.update(
+        {"data/normalized_yaml/" + key: value for key, value in manifest["inputs"].items()}
+    )
+    with tarfile.open(path, "r:gz") as archive:
+        members = archive.getmembers()
+        names = [member.name for member in members]
+        if len(names) != len(set(names)):
+            raise ValueError("duplicate archive member")
+        by_name = {member.name: member for member in members}
+        archived_inputs = {
+            name.removeprefix("producer/data/normalized_yaml/")
+            for name in names
+            if name.startswith("producer/data/normalized_yaml/") and name.endswith(".yaml")
+        }
+        if archived_inputs != set(manifest["inputs"]):
+            raise ValueError("archived corpus membership differs from candidate")
+        discovered_dependencies = {
+            name.removeprefix("producer/")
+            for name in names
+            if name.startswith("producer/src/culturemech/")
+            and (
+                name.endswith(".py")
+                or (name.startswith("producer/src/culturemech/schema/") and name.endswith(".yaml"))
+            )
+        }
+        if not discovered_dependencies <= set(manifest["dependencies"]):
+            raise ValueError("unexpected archived source dependency")
+        for relative, fingerprint in expected.items():
+            member = by_name.get("producer/" + relative)
+            if member is None or not member.isfile():
+                raise ValueError("missing/nonregular archived source: " + relative)
+            stream = archive.extractfile(member)
+            digest = hashlib.sha256()
+            size = 0
+            with stream:
+                while chunk := stream.read(1024 * 1024):
+                    digest.update(chunk)
+                    size += len(chunk)
+            if digest.hexdigest() != fingerprint["sha256"] or size != fingerprint["bytes"]:
+                raise ValueError("archived source differs from candidate: " + relative)
+
+
+def package(bundle, pin, coverage_dir, queue, destination):
+    """Publish a new handoff only after delivered artifacts are verified (#769–771)."""
+    for directory in (bundle, coverage_dir):
+        if directory.is_symlink() or not directory.is_dir():
+            raise ValueError("input must be a non-symlink directory")
+    if destination.is_symlink() or destination.exists():
+        raise ValueError("handoff destination already exists")
+    destination = destination.resolve()
+    for source in (
+        bundle.resolve(),
+        coverage_dir.resolve(),
+        queue.resolve(),
+        (ROOT / "data/normalized_yaml").resolve(),
+    ):
+        if destination.is_relative_to(source) or source.is_relative_to(destination):
+            raise ValueError("handoff destination overlaps an input")
+    manifest_path = regular(bundle / "manifest.json")
+    manifest_bytes = manifest_path.read_bytes()
+    if hashlib.sha256(manifest_bytes).hexdigest() != pin:
+        raise ValueError("unexpected manifest bytes")
+    manifest = json.loads(manifest_bytes)
+    if (
+        manifest["git"]["dirty"]
+        or manifest["scope"] != "full_catalog_direct_ingredients"
+        or manifest["input_dir"] != "data/normalized_yaml"
+        or manifest["contract"] != "culturemech-direct-ingredients-v2"
+        or set(manifest["products"]) != PRODUCTS
+    ):
+        raise ValueError("handoff requires a clean full-catalog v2 producer")
+    verification = verify_bundle(bundle, pin)
+    coverage_path = regular(coverage_dir / "summary.json")
+    coverage_bytes = coverage_path.read_bytes()
+    coverage = json.loads(coverage_bytes)
+    queue_bytes = regular(queue).read_bytes()
+    validate_coverage(coverage, queue_bytes, manifest)
+    if sha(regular(coverage_dir / "coverage.tsv")) != coverage["coverage_sha256"]:
+        raise ValueError("coverage bytes differ from audit")
+    # Copy only the contractual products, never incidental files or directory trees.
+    sources = {Path("bundle/manifest.json"): (manifest_path, pin)}
+    sources.update(
+        {
+            Path("bundle") / name: (regular(bundle / name), manifest["products"][name]["sha256"])
+            for name in sorted(PRODUCTS)
+        }
+    )
+    sources.update(
+        {
+            Path("coverage/summary.json"): (
+                coverage_path,
+                hashlib.sha256(coverage_bytes).hexdigest(),
+            ),
+            Path("coverage/coverage.tsv"): (
+                coverage_dir / "coverage.tsv",
+                coverage["coverage_sha256"],
+            ),
+            Path("original-review-queue.tsv"): (queue, coverage["queue_sha256"]),
+        }
+    )
     destination.mkdir(parents=True, exist_ok=False)
-    shutil.copytree(args.bundle, destination / "bundle")
-    shutil.copytree(args.coverage, destination / "coverage")
-    shutil.copyfile(args.queue, destination / "original-review-queue.tsv")
+    for relative, (source, expected) in sources.items():
+        copied = destination / relative
+        copied.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(source, copied)
+        if sha(copied) != expected:
+            raise ValueError("delivered copy differs from verified input: " + str(relative))
     source_archive = destination / "producer-source.tar.gz"
     subprocess.run(
         [
@@ -84,13 +231,16 @@ def main():
         cwd=ROOT,
         check=True,
     )
-    if not source_archive.stat().st_size:
-        raise ValueError("empty producer archive")
+    verify_archive(source_archive, manifest)
+    verification = verify_bundle(destination / "bundle", pin)
+    for relative, (source, expected) in sources.items():
+        if sha(regular(source)) != expected or sha(regular(destination / relative)) != expected:
+            raise ValueError("input or delivered copy changed during packaging")
     receipt = {
         "status": "VERIFIED_SOURCE_CANDIDATE_PENDING_ADOPTION",
         "contract": manifest["contract"],
         "producer_commit": manifest["git"]["commit"],
-        "manifest_sha256": args.expected_manifest_sha256,
+        "manifest_sha256": pin,
         "source_archive_sha256": sha(source_archive),
         "coverage_summary_sha256": sha(destination / "coverage/summary.json"),
         "queue_sha256": sha(destination / "original-review-queue.tsv"),
@@ -99,13 +249,12 @@ def main():
         "verification": verification,
         "adoption": "Explicitly adopt v2 in a separate reviewed MIM intake. Preserve existing frozen campaign. This is not a published SSSOM or integrated KGM release.",
     }
-    (destination / "handoff.json").write_text(json.dumps(receipt, indent=2) + "\n")
     (destination / "HANDOFF.md").write_text(
         "# CultureMech variant ingredient candidate for MIM\n\n"
         f"PR: https://github.com/CultureBotAI/CultureMech/pull/764\n\n"
         f"Producer commit: `{manifest['git']['commit']}`\n\n"
-        f"Manifest SHA256: `{args.expected_manifest_sha256}`\n\n"
-        "The bundle adds reviewed variant events while retaining all original base occurrences. "
+        f"Manifest SHA256: `{pin}`\n\n"
+        "The bundle contains base occurrences and reviewed variant events. "
         "Use `ingredients_list.tsv` for identities and `ingredient_occurrences.tsv` for positive inventory membership. "
         "`variant_ingredient_changes.tsv` retains REMOVE and old REPLACE descriptors only as context. "
         "Preserve variant, stage, source evidence, dose basis and action. A zero concentration target is a change event, not positive physical presence.\n\n"
@@ -114,19 +263,42 @@ def main():
         "```bash\ncd producer\nuv sync --frozen\n"
         "uv run --frozen python scripts/ingredient_release_bundle.py verify \\\n"
         "  --bundle-dir ../bundle \\\n"
-        f"  --expected-manifest-sha256 {args.expected_manifest_sha256}\n```\n\n"
-        "The original396-row queue and coverage ledger accompany the source. "
-        "201 statements have structured events;104 are conditions,16 already represented,44 held for evidence and31 held for the model. "
+        f"  --expected-manifest-sha256 {pin}\n```\n\n"
+        f"The original {coverage['queue_rows']}-row queue and coverage ledger accompany the source. "
+        + "; ".join(f"{value} {key}" for key, value in sorted(coverage["dispositions"].items()))
+        + ". "
         "Some structured statements retain partial holds in their reason. See #683, #759, #760 and #762. "
         "No claim of complete prose coverage or complete executable variant formulations is made.\n\n"
         "Adopt this new v2 snapshot explicitly in a separate reviewed intake. Do not overwrite the running MIM campaign's frozen v1 inputs. "
         "Publication review, SSSOM generation/export and KGM QC remain downstream release gates.\n"
     )
+    # Acceptance is last. Any earlier failure leaves incomplete evidence only.
+    receipt_path = destination / "handoff.json"
+    staged_receipt = destination / ".handoff.incomplete.json"
+    with staged_receipt.open("x", encoding="utf-8") as stream:
+        stream.write(json.dumps(receipt, indent=2) + "\n")
+        stream.flush()
+        os.fsync(stream.fileno())
+    os.replace(staged_receipt, receipt_path)
+    return receipt
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--bundle", type=Path, required=True)
+    parser.add_argument("--expected-manifest-sha256", required=True)
+    parser.add_argument("--coverage", type=Path, required=True)
+    parser.add_argument("--queue", type=Path, required=True)
+    parser.add_argument("--output-directory", type=Path, required=True)
+    args = parser.parse_args()
+    receipt = package(
+        args.bundle, args.expected_manifest_sha256, args.coverage, args.queue, args.output_directory
+    )
     print(
         json.dumps(
             {
-                "directory": str(destination),
-                "handoff_sha256": sha(destination / "handoff.json"),
+                "directory": str(args.output_directory.resolve()),
+                "handoff_sha256": sha(args.output_directory / "handoff.json"),
                 "source_archive_sha256": receipt["source_archive_sha256"],
             },
             indent=2,

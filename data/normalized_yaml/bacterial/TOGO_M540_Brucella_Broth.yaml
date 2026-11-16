@@ -111,8 +111,8 @@ variants:
   - action: ADD
     ingredient:
       preferred_term: fetal bovine serum
-      notes: Primary abstract reports 10% serum; percentage basis unspecified and not
-        inferred. Undefined mixture, no constituent identities expanded.
+      notes: Primary abstract reports 10% serum; percentage basis unspecified and
+        not inferred. Undefined mixture, no constituent identities expanded.
     stage: Brucella-broth supplementation
     source_modification_index: 0
     source_text: Supplement Brucella broth with 10% fetal bovine serum.
@@ -122,10 +122,10 @@ variants:
       snippet: 10% fetal bovine serum
       explanation: Primary article abstract indexed by Europe PMC; full methods not
         reviewed. Supports only the named descriptor/event at the stated stage. Primary
-        abstract reports 10% serum; percentage basis unspecified and not inferred. Undefined
-        mixture, no constituent identities expanded. Source inspected 2026-11-16; SHA256
-        35e84b91a28f53b591554a9a986edefa68d08c52396f8d52311133a2037812d8. No parent
-        formulation, growth, ontology identity, or missing dose is inferred.
+        abstract reports 10% serum; percentage basis unspecified and not inferred.
+        Undefined mixture, no constituent identities expanded. Source inspected 2026-11-16;
+        SHA256 35e84b91a28f53b591554a9a986edefa68d08c52396f8d52311133a2037812d8. No
+        parent formulation, growth, ontology identity, or missing dose is inferred.
   - action: ADD
     ingredient:
       preferred_term: hydrogen peroxide

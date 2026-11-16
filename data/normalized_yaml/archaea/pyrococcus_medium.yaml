@@ -327,16 +327,16 @@ variants:
     ingredient:
       preferred_term: CF11 cellulose
       notes: Primary abstract inspected; full formulation and dose not verified. Do
-        not infer cellulose concentration, replace a particular baseline substrate or
-        certify parent-medium equivalence.
+        not infer cellulose concentration, replace a particular baseline substrate
+        or certify parent-medium equivalence.
     stage: serially adapted P. furiosus growth-substrate condition
     evidence:
     - reference: doi:10.1128/AEM.01366-10
       supports: SUPPORT
       snippet: CF11 cellulose
-      explanation: Primary article abstract, serial adaptation on CF11 cellulose; primary
-        source inspected 2026-11-16. Primary abstract inspected; full formulation and
-        dose not verified. Do not infer cellulose concentration, replace a particular
+      explanation: Primary article abstract, serial adaptation on CF11 cellulose;
+        primary source inspected 2026-11-16. Primary abstract inspected; full formulation
+        and dose not verified. Do not infer cellulose concentration, replace a particular
         baseline substrate or certify parent-medium equivalence.
     notes: A scoped change event, not a fully expanded variant or a parent-formulation
       amendment. No chemical identifier is inferred.

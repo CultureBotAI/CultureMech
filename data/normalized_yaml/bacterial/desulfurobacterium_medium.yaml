@@ -4823,12 +4823,12 @@ variants:
     - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829.pdf
       supports: SUPPORT
       snippet: Omit growth-stimulating factors
-      explanation: Page 1, DSM 16661 and DSM 21157 prescription. Supports only the named
-        descriptor/event at the stated stage. Named stock mixture is removed, without
-        expanding individual constituents. Separate 2-bar H2/CO2 headspace condition
-        is not a liquid ingredient concentration. Source inspected 2026-11-16; SHA256
-        73b87bbb602b5d40fa5a442a74b8a227fc26774281d333b7718a15317fd1cb27. No parent
-        formulation, growth, ontology identity, or missing dose is inferred.
+      explanation: Page 1, DSM 16661 and DSM 21157 prescription. Supports only the
+        named descriptor/event at the stated stage. Named stock mixture is removed,
+        without expanding individual constituents. Separate 2-bar H2/CO2 headspace
+        condition is not a liquid ingredient concentration. Source inspected 2026-11-16;
+        SHA256 73b87bbb602b5d40fa5a442a74b8a227fc26774281d333b7718a15317fd1cb27. No
+        parent formulation, growth, ontology identity, or missing dose is inferred.
 references:
 - reference: https://mediadive.dsmz.de/rest/medium/829
   title: DESULFUROBACTERIUM MEDIUM

@@ -458,8 +458,8 @@ variants:
     - reference: doi:10.1128/AEM.71.11.7253-7262.2005
       supports: SUPPORT
       snippet: Ca-(d)-(+)-pantothenate (vitamin B5) 0.001
-      explanation: Table 1, concentration column and footnotes a-b. Supports only the
-        named descriptor/event at the stated stage. Direct Table 1 mass concentration
+      explanation: Table 1, concentration column and footnotes a-b. Supports only
+        the named descriptor/event at the stated stage. Direct Table 1 mass concentration
         under the quoted column heading 'Concn (g/liter)', no molar conversion. The
         source's complete/minimal subset boundary remains as stated in the variant;
         other amounts are not certified. Source inspected 2026-11-16; SHA256 3b4288d316e061cdad56879cb8a30c2cccff1fe3361eb0be71778d49c9dbef91.
@@ -471,8 +471,8 @@ variants:
         value: '0.0025'
         unit: G_PER_L
       notes: Direct Table 1 mass value under the quoted column heading 'Concn (g/liter)';
-        boldface minimal-subset membership verified in original HTML, not inferred from
-        flattened text.
+        boldface minimal-subset membership verified in original HTML, not inferred
+        from flattened text.
     stage: reported Table 1 minimal-medium composition
     source_modification_index: 1
     source_text: Use the Table 1 D-biotin dose of 0.0025 g/liter in the boldface minimal
@@ -482,11 +482,11 @@ variants:
     - reference: doi:10.1128/AEM.71.11.7253-7262.2005
       supports: SUPPORT
       snippet: d-Biotin (vitamin B7)c 0.0025
-      explanation: Table 1, concentration column and footnotes a-b. Supports only the
-        named descriptor/event at the stated stage. Direct Table 1 mass value under
-        the quoted column heading 'Concn (g/liter)'; boldface minimal-subset membership
-        verified in original HTML, not inferred from flattened text. Source inspected
-        2026-11-16; SHA256 3b4288d316e061cdad56879cb8a30c2cccff1fe3361eb0be71778d49c9dbef91.
+      explanation: Table 1, concentration column and footnotes a-b. Supports only
+        the named descriptor/event at the stated stage. Direct Table 1 mass value
+        under the quoted column heading 'Concn (g/liter)'; boldface minimal-subset
+        membership verified in original HTML, not inferred from flattened text. Source
+        inspected 2026-11-16; SHA256 3b4288d316e061cdad56879cb8a30c2cccff1fe3361eb0be71778d49c9dbef91.
         No parent formulation, growth, ontology identity, or missing dose is inferred.
 target_organisms:
 - preferred_term: Lactiplantibacillus plantarum WCFS1

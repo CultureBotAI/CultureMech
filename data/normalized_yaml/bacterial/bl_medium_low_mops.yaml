@@ -483,15 +483,16 @@ variants:
     - reference: doi:10.1128/aem.59.12.4363-4366.1993
       supports: SUPPORT
       snippet: calcium pantothenate
-      explanation: p.4363 formulation paragraph identifies the calcium salt; Table 1
-        footnote b states 2 micromolar pantothenate. Read from the primary ASM PDF via
-        browser; anonymous local download failed, so no local source hash is claimed.
+      explanation: p.4363 formulation paragraph identifies the calcium salt; Table
+        1 footnote b states 2 micromolar pantothenate. Read from the primary ASM PDF
+        via browser; anonymous local download failed, so no local source hash is claimed.
         Primary source inspected 2026-11-16; no ontology identity or mass conversion
         inferred. Jensen p.4363 Table1 footnote b gives the separate amount excerpt
         "2 μM pantothenate" (micro-unit typography normalized from PDF extraction).
-        This is the pantothenate basis, not 2 μM calcium salt; no calcium dose or salt-molarity
-        conversion is inferred. The formulation paragraph supplies the calcium-salt
-        identity. Exact excerpt clarification for issue763; scientific payload unchanged.
+        This is the pantothenate basis, not 2 μM calcium salt; no calcium dose or
+        salt-molarity conversion is inferred. The formulation paragraph supplies the
+        calcium-salt identity. Exact excerpt clarification for issue763; scientific
+        payload unchanged.
     replaced_ingredient:
       preferred_term: Pantothenate
 target_organisms:

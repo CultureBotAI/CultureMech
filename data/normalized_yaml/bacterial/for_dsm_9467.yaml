@@ -496,18 +496,18 @@ variants:
   - action: ADD
     ingredient:
       preferred_term: H2SO4
-      notes: Titrant strength 1 N; adjust to pH3.0. Fixed dose is unspecified; do not
-        convert normality to molarity or a final-medium concentration.
+      notes: Titrant strength 1 N; adjust to pH3.0. Fixed dose is unspecified; do
+        not convert normality to molarity or a final-medium concentration.
     stage: pH adjustment before autoclaving
     evidence:
     - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf
       supports: SUPPORT
       snippet: Adjust pH to 3.0 with 1 N H2SO4 prior to autoclaving
       explanation: Page1, For DSM9467. Primary source inspected 2026-11-16; supports
-        this source-scoped variant assertion, not equivalence of the whole parent recipe.
-        DSMZ670 p.1, matching strain prescription. Titrant strength and target pH do
-        not supply a fixed acid dose. Exact excerpt clarification for issue763; scientific
-        payload unchanged.
+        this source-scoped variant assertion, not equivalence of the whole parent
+        recipe. DSMZ670 p.1, matching strain prescription. Titrant strength and target
+        pH do not supply a fixed acid dose. Exact excerpt clarification for issue763;
+        scientific payload unchanged.
     source_modification_index: 2
     source_text: 'Current source: pH 3.0 with 1 N H2SO4, not archived 2 N acid; omit
       iron. Add 2.00 g/L D-glucose and 0.1 g/L yeast extract from filter-sterilized
@@ -521,9 +521,9 @@ variants:
       supports: SUPPORT
       snippet: omit FeSO4 x 7 H2O from the medium
       explanation: Page1, For DSM9467. Primary source inspected 2026-11-16; supports
-        this source-scoped variant assertion, not equivalence of the whole parent recipe.
-        DSMZ670 p.1, matching DSM9463/9466/9467 prescription; line wrapping normalized.
-        Exact excerpt clarification for issue763; scientific payload unchanged.
+        this source-scoped variant assertion, not equivalence of the whole parent
+        recipe. DSMZ670 p.1, matching DSM9463/9466/9467 prescription; line wrapping
+        normalized. Exact excerpt clarification for issue763; scientific payload unchanged.
     source_modification_index: 2
     source_text: 'Current source: pH 3.0 with 1 N H2SO4, not archived 2 N acid; omit
       iron. Add 2.00 g/L D-glucose and 0.1 g/L yeast extract from filter-sterilized
@@ -541,9 +541,10 @@ variants:
       supports: SUPPORT
       snippet: add 2.00 g/l D-glucose
       explanation: Page1, For DSM9467. Primary source inspected 2026-11-16; supports
-        this source-scoped variant assertion, not equivalence of the whole parent recipe.
-        DSMZ670 p.1, DSM9467. The subsequent clause specifies filter-sterilized stock
-        solutions. Exact excerpt clarification for issue763; scientific payload unchanged.
+        this source-scoped variant assertion, not equivalence of the whole parent
+        recipe. DSMZ670 p.1, DSM9467. The subsequent clause specifies filter-sterilized
+        stock solutions. Exact excerpt clarification for issue763; scientific payload
+        unchanged.
     source_modification_index: 2
     source_text: 'Current source: pH 3.0 with 1 N H2SO4, not archived 2 N acid; omit
       iron. Add 2.00 g/L D-glucose and 0.1 g/L yeast extract from filter-sterilized
@@ -561,11 +562,11 @@ variants:
       supports: SUPPORT
       snippet: 0.1 g/l yeast extract
       explanation: Page1, For DSM9467. Primary source inspected 2026-11-16; supports
-        this source-scoped variant assertion, not equivalence of the whole parent recipe.
-        DSMZ670 p.1, matching DSM9466/9467 prescription; line wrapping normalized. Yeast
-        extract is a final-medium addition supplied from a sterile stock, whose concentration
-        is not specified. Exact excerpt clarification for issue763; scientific payload
-        unchanged.
+        this source-scoped variant assertion, not equivalence of the whole parent
+        recipe. DSMZ670 p.1, matching DSM9466/9467 prescription; line wrapping normalized.
+        Yeast extract is a final-medium addition supplied from a sterile stock, whose
+        concentration is not specified. Exact excerpt clarification for issue763;
+        scientific payload unchanged.
     source_modification_index: 2
     source_text: 'Current source: pH 3.0 with 1 N H2SO4, not archived 2 N acid; omit
       iron. Add 2.00 g/L D-glucose and 0.1 g/L yeast extract from filter-sterilized

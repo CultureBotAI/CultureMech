@@ -607,8 +607,8 @@ variants:
     - reference: doi:10.1128/AEM.71.11.7253-7262.2005
       supports: SUPPORT
       snippet: Ca-(d)-(+)-pantothenate (vitamin B5) 0.001
-      explanation: Table 1, concentration column and footnotes a-b. Supports only the
-        named descriptor/event at the stated stage. Direct Table 1 mass concentration
+      explanation: Table 1, concentration column and footnotes a-b. Supports only
+        the named descriptor/event at the stated stage. Direct Table 1 mass concentration
         under the quoted column heading 'Concn (g/liter)', no molar conversion. The
         source's complete/minimal subset boundary remains as stated in the variant;
         other amounts are not certified. Source inspected 2026-11-16; SHA256 3b4288d316e061cdad56879cb8a30c2cccff1fe3361eb0be71778d49c9dbef91.

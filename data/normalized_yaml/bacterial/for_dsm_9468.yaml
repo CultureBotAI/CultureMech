@@ -456,21 +456,21 @@ variants:
   - action: ADD
     ingredient:
       preferred_term: H2SO4
-      notes: Titrant strength 4 N; adjust to pH1.6. Fixed dose is unspecified; do not
-        convert normality to molarity or a final-medium concentration.
+      notes: Titrant strength 4 N; adjust to pH1.6. Fixed dose is unspecified; do
+        not convert normality to molarity or a final-medium concentration.
     stage: pH adjustment before autoclaving
     evidence:
     - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf
       supports: SUPPORT
       snippet: Adjust pH to 1.6 with 4 N H2SO4 prior to autoclaving
       explanation: Page1, For DSM9468. Primary source inspected 2026-11-16; supports
-        this source-scoped variant assertion, not equivalence of the whole parent recipe.
-        DSMZ670 p.1, matching strain prescription. Titrant strength and target pH do
-        not supply a fixed acid dose. Exact excerpt clarification for issue763; scientific
-        payload unchanged.
+        this source-scoped variant assertion, not equivalence of the whole parent
+        recipe. DSMZ670 p.1, matching strain prescription. Titrant strength and target
+        pH do not supply a fixed acid dose. Exact excerpt clarification for issue763;
+        scientific payload unchanged.
     source_modification_index: 2
-    source_text: 'Current source: pH 1.6 with 4 N H2SO4 and 50 ml of 40% w/v FeSO4 x
-      7 H2O stock per recipe batch. Stock is made in 0.2 N H2SO4 and filter-sterilized
+    source_text: 'Current source: pH 1.6 with 4 N H2SO4 and 50 ml of 40% w/v FeSO4
+      x 7 H2O stock per recipe batch. Stock is made in 0.2 N H2SO4 and filter-sterilized
       under 100% N2; the old per-5-ml-base ratio and autoclaving alternative are not
       asserted for this version.'
   - action: ADD
@@ -488,14 +488,15 @@ variants:
       supports: SUPPORT
       snippet: 40% (w/v) stock solution
       explanation: 'Page1, base table and preparation step1. Primary source inspected
-        2026-11-16; supports this source-scoped variant assertion, not equivalence of
-        the whole parent recipe. DSMZ670 p.1 step1; separate exact solvent excerpt:
-        "prepared with 0.2 N H2SO4". Table stock-volume column states "50.00 ml"; the
-        batch water input is 950.00 ml. No further final-volume normalization is asserted.
-        Exact excerpt clarification for issue763; scientific payload unchanged.'
+        2026-11-16; supports this source-scoped variant assertion, not equivalence
+        of the whole parent recipe. DSMZ670 p.1 step1; separate exact solvent excerpt:
+        "prepared with 0.2 N H2SO4". Table stock-volume column states "50.00 ml";
+        the batch water input is 950.00 ml. No further final-volume normalization
+        is asserted. Exact excerpt clarification for issue763; scientific payload
+        unchanged.'
     source_modification_index: 2
-    source_text: 'Current source: pH 1.6 with 4 N H2SO4 and 50 ml of 40% w/v FeSO4 x
-      7 H2O stock per recipe batch. Stock is made in 0.2 N H2SO4 and filter-sterilized
+    source_text: 'Current source: pH 1.6 with 4 N H2SO4 and 50 ml of 40% w/v FeSO4
+      x 7 H2O stock per recipe batch. Stock is made in 0.2 N H2SO4 and filter-sterilized
       under 100% N2; the old per-5-ml-base ratio and autoclaving alternative are not
       asserted for this version.'
   - action: ADD
@@ -508,14 +509,14 @@ variants:
     - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf
       supports: SUPPORT
       snippet: prepared with 0.2 N H2SO4
-      explanation: Page1, preparation step1. Primary source inspected 2026-11-16; supports
-        this source-scoped variant assertion, not equivalence of the whole parent recipe.
-        DSMZ670 p.1 preparation step1, ferrous-sulfate stock solvent; normality is retained
-        without conversion. Exact excerpt clarification for issue763; scientific payload
-        unchanged.
+      explanation: Page1, preparation step1. Primary source inspected 2026-11-16;
+        supports this source-scoped variant assertion, not equivalence of the whole
+        parent recipe. DSMZ670 p.1 preparation step1, ferrous-sulfate stock solvent;
+        normality is retained without conversion. Exact excerpt clarification for
+        issue763; scientific payload unchanged.
     source_modification_index: 2
-    source_text: 'Current source: pH 1.6 with 4 N H2SO4 and 50 ml of 40% w/v FeSO4 x
-      7 H2O stock per recipe batch. Stock is made in 0.2 N H2SO4 and filter-sterilized
+    source_text: 'Current source: pH 1.6 with 4 N H2SO4 and 50 ml of 40% w/v FeSO4
+      x 7 H2O stock per recipe batch. Stock is made in 0.2 N H2SO4 and filter-sterilized
       under 100% N2; the old per-5-ml-base ratio and autoclaving alternative are not
       asserted for this version.'
 references:

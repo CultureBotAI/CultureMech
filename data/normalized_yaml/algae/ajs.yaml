@@ -229,10 +229,10 @@ variants:
     - reference: doi:10.1038/srep10036
       supports: SUPPORT
       snippet: acidified to pH 1.5 using hydrochloric acid
-      explanation: Methods, culture conditions and bacterial-community antibiotic experiment;
-        primary source inspected 2026-11-16. Emami Methods names HCl; separately inspected
-        CCAP AJS page1 names concentrated H2SO4. No HCl strength/volume or replacement
-        arithmetic. Other recipe details remain unresolved.
+      explanation: Methods, culture conditions and bacterial-community antibiotic
+        experiment; primary source inspected 2026-11-16. Emami Methods names HCl;
+        separately inspected CCAP AJS page1 names concentrated H2SO4. No HCl strength/volume
+        or replacement arithmetic. Other recipe details remain unresolved.
     notes: A scoped change event, not a fully expanded variant or a parent-formulation
       amendment. No chemical identifier is inferred.
     replaced_ingredient:

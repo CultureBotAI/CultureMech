@@ -334,8 +334,8 @@ variants:
         (Na2SiO3.9H2O) per litre of medium.'
       explanation: Page 2, f/2 + Si Modified, direct addition replacing stock 5; primary
         source inspected 2026-11-16. Page2 says omit stock5 and instead add Na2SiO3.9H2O
-        directly per litre. Parent stock5 composition is not separately added; no hydrate
-        conversion.
+        directly per litre. Parent stock5 composition is not separately added; no
+        hydrate conversion.
     notes: A scoped change event, not a fully expanded variant or a parent-formulation
       amendment. No chemical identifier is inferred.
     replaced_ingredient:

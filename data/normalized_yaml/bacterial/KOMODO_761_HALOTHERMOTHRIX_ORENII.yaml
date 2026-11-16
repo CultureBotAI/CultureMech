@@ -280,7 +280,8 @@ variants:
         value: '100'
         unit: G_PER_L
       notes: The primary abstract states this medium concentration; it does not establish
-        complete identity with the imported parent or certify growth at every salt level.
+        complete identity with the imported parent or certify growth at every salt
+        level.
     stage: reported isolation medium
     source_modification_index: 1
     source_text: Use high-salt growth conditions centered on 100 g/L NaCl, matching

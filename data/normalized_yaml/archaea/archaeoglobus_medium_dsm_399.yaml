@@ -594,18 +594,18 @@ variants:
       concentration:
         value: '22'
         unit: MILLIMOLAR
-      notes: Only Reed2001 DL-sodium-lactate concentration structured; Hartzell30% stock7mL/L
-        preparation remains held. Do not combine with Hartzell formulation or infer
-        unspecified hydrate.
+      notes: Only Reed2001 DL-sodium-lactate concentration structured; Hartzell30%
+        stock7mL/L preparation remains held. Do not combine with Hartzell formulation
+        or infer unspecified hydrate.
     stage: Reed2001 modified STL cultivation of A. fulgidus
     evidence:
     - reference: doi:10.1128/jb.183.24.7007-7016.2001
       supports: SUPPORT
       snippet: 22 mM dl-sodium lactate
       explanation: Materials and Methods, Archaeoglobus growth and harvest; primary
-        source inspected 2026-11-16. Only Reed2001 DL-sodium-lactate concentration structured;
-        Hartzell30% stock7mL/L preparation remains held. Do not combine with Hartzell
-        formulation or infer unspecified hydrate.
+        source inspected 2026-11-16. Only Reed2001 DL-sodium-lactate concentration
+        structured; Hartzell30% stock7mL/L preparation remains held. Do not combine
+        with Hartzell formulation or infer unspecified hydrate.
     notes: A scoped change event, not a fully expanded variant or a parent-formulation
       amendment. No chemical identifier is inferred.
     source_modification_index: 2
@@ -632,8 +632,8 @@ variants:
     notes: A scoped change event, not a fully expanded variant or a parent-formulation
       amendment. No chemical identifier is inferred.
     source_modification_index: 3
-    source_text: Yeast extract 0.5 g/L (replaceable by Wolfe's vitamin mixture 10 ml/L
-      for defined medium).
+    source_text: Yeast extract 0.5 g/L (replaceable by Wolfe's vitamin mixture 10
+      ml/L for defined medium).
   - action: ADD
     ingredient:
       preferred_term: Na2S
@@ -649,14 +649,14 @@ variants:
       supports: SUPPORT
       snippet: 1 mM Na2S and 1 mM Na2S2O3
       explanation: Materials and Methods, Archaeoglobus growth and harvest; primary
-        source inspected 2026-11-16. Only Reed2001 final reductant concentrations structured;
-        Hartzell combined-stock preparation remains held. Do not combine with Hartzell
-        formulation or infer unspecified hydrate.
+        source inspected 2026-11-16. Only Reed2001 final reductant concentrations
+        structured; Hartzell combined-stock preparation remains held. Do not combine
+        with Hartzell formulation or infer unspecified hydrate.
     notes: A scoped change event, not a fully expanded variant or a parent-formulation
       amendment. No chemical identifier is inferred.
     source_modification_index: 5
-    source_text: 'Reductant: Na2S 100 mM + Na2S2O3 200 mM stock added at 0.5% v/v after
-      autoclaving (Hartzell); Na2S/Na2S2O3 ~1 mM each (Reed).'
+    source_text: 'Reductant: Na2S 100 mM + Na2S2O3 200 mM stock added at 0.5% v/v
+      after autoclaving (Hartzell); Na2S/Na2S2O3 ~1 mM each (Reed).'
   - action: ADD
     ingredient:
       preferred_term: Na2S2O3
@@ -672,20 +672,20 @@ variants:
       supports: SUPPORT
       snippet: 1 mM Na2S and 1 mM Na2S2O3
       explanation: Materials and Methods, Archaeoglobus growth and harvest; primary
-        source inspected 2026-11-16. Only Reed2001 final reductant concentrations structured;
-        Hartzell combined-stock preparation remains held. Do not combine with Hartzell
-        formulation or infer unspecified hydrate.
+        source inspected 2026-11-16. Only Reed2001 final reductant concentrations
+        structured; Hartzell combined-stock preparation remains held. Do not combine
+        with Hartzell formulation or infer unspecified hydrate.
     notes: A scoped change event, not a fully expanded variant or a parent-formulation
       amendment. No chemical identifier is inferred.
     source_modification_index: 5
-    source_text: 'Reductant: Na2S 100 mM + Na2S2O3 200 mM stock added at 0.5% v/v after
-      autoclaving (Hartzell); Na2S/Na2S2O3 ~1 mM each (Reed).'
+    source_text: 'Reductant: Na2S 100 mM + Na2S2O3 200 mM stock added at 0.5% v/v
+      after autoclaving (Hartzell); Na2S/Na2S2O3 ~1 mM each (Reed).'
   - action: ADD
     ingredient:
       preferred_term: resazurin
-      notes: Source says0.2% resazurin was added without an unambiguous final-dose basis/stock
-        volume; no concentration promoted. Stored biomass underN2 is not evidence of
-        culture sparging.
+      notes: Source says0.2% resazurin was added without an unambiguous final-dose
+        basis/stock volume; no concentration promoted. Stored biomass underN2 is not
+        evidence of culture sparging.
     stage: Reed2001 modified STL reduction indicator
     evidence:
     - reference: doi:10.1128/jb.183.24.7007-7016.2001
@@ -698,5 +698,5 @@ variants:
     notes: A scoped change event, not a fully expanded variant or a parent-formulation
       amendment. No chemical identifier is inferred.
     source_modification_index: 6
-    source_text: Resazurin redox indicator; anaerobic, boiled and N2-sparged; good growth
-      75-82C (Hartzell), 83C in glass carboys (Reed).
+    source_text: Resazurin redox indicator; anaerobic, boiled and N2-sparged; good
+      growth 75-82C (Hartzell), 83C in glass carboys (Reed).

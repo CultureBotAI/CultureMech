@@ -336,11 +336,12 @@ variants:
       snippet: 10 μg ml-1 biotin
       explanation: 'Methods, Bacterial strains, media and growth conditions. Primary
         source inspected 2026-11-16; supports this source-scoped variant assertion,
-        not equivalence of the whole parent recipe. Villasenor Methods, Bacterial strains/media/growth
-        conditions. Separate basis statement: "After sterilization the following components
-        were added to the final concentration indicated". MM lacks the separate MMP
-        addition; no physical removal or doubled calcium-salt dose is implied. Exact
-        excerpt clarification for issue763; scientific payload unchanged.'
+        not equivalence of the whole parent recipe. Villasenor Methods, Bacterial
+        strains/media/growth conditions. Separate basis statement: "After sterilization
+        the following components were added to the final concentration indicated".
+        MM lacks the separate MMP addition; no physical removal or doubled calcium-salt
+        dose is implied. Exact excerpt clarification for issue763; scientific payload
+        unchanged.'
     source_modification_index: 0
     source_text: Use the reported 10 micrograms/mL biotin and 10 micrograms/mL thiamine,
       rather than certifying the parent's 0.00409316 mM biotin and 0.033243 mM thiamine
@@ -360,11 +361,12 @@ variants:
       snippet: 10 μg ml-1 thiamine
       explanation: 'Methods, Bacterial strains, media and growth conditions. Primary
         source inspected 2026-11-16; supports this source-scoped variant assertion,
-        not equivalence of the whole parent recipe. Villasenor Methods, Bacterial strains/media/growth
-        conditions. Separate basis statement: "After sterilization the following components
-        were added to the final concentration indicated". MM lacks the separate MMP
-        addition; no physical removal or doubled calcium-salt dose is implied. Exact
-        excerpt clarification for issue763; scientific payload unchanged.'
+        not equivalence of the whole parent recipe. Villasenor Methods, Bacterial
+        strains/media/growth conditions. Separate basis statement: "After sterilization
+        the following components were added to the final concentration indicated".
+        MM lacks the separate MMP addition; no physical removal or doubled calcium-salt
+        dose is implied. Exact excerpt clarification for issue763; scientific payload
+        unchanged.'
     source_modification_index: 0
     source_text: Use the reported 10 micrograms/mL biotin and 10 micrograms/mL thiamine,
       rather than certifying the parent's 0.00409316 mM biotin and 0.033243 mM thiamine
@@ -372,8 +374,8 @@ variants:
   - action: REPLACE
     ingredient:
       preferred_term: CaCl2 dihydrate
-      notes: Reported final concentration of the stated dihydrate; equal molarity does
-        not establish equal supplied form.
+      notes: Reported final concentration of the stated dihydrate; equal molarity
+        does not establish equal supplied form.
       concentration:
         value: '1.49'
         unit: MILLIMOLAR
@@ -387,15 +389,15 @@ variants:
         parent recipe. Villasenor Methods, Bacterial strains/media/growth conditions.
         Separate basis statement: "After sterilization the following components were
         added to the final concentration indicated". MM lacks the separate MMP addition;
-        no physical removal or doubled calcium-salt dose is implied. Exact excerpt clarification
-        for issue763; scientific payload unchanged.'
+        no physical removal or doubled calcium-salt dose is implied. Exact excerpt
+        clarification for issue763; scientific payload unchanged.'
     replaced_ingredient:
       preferred_term: Calcium chloride anhydrous
       notes: Displaced parent descriptor; not a positive variant ingredient.
     source_modification_index: 1
-    source_text: Specify 1.49 mM CaCl2 dihydrate and 0.0184 mM FeCl3 hexahydrate; the
-      parent instead labels calcium chloride anhydrous and does not specify the iron
-      salt hydrate. Equal molar numbers do not establish identical supplied chemical
+    source_text: Specify 1.49 mM CaCl2 dihydrate and 0.0184 mM FeCl3 hexahydrate;
+      the parent instead labels calcium chloride anhydrous and does not specify the
+      iron salt hydrate. Equal molar numbers do not establish identical supplied chemical
       forms.
   - action: REPLACE
     ingredient:
@@ -415,15 +417,15 @@ variants:
         parent recipe. Villasenor Methods, Bacterial strains/media/growth conditions.
         Separate basis statement: "After sterilization the following components were
         added to the final concentration indicated". MM lacks the separate MMP addition;
-        no physical removal or doubled calcium-salt dose is implied. Exact excerpt clarification
-        for issue763; scientific payload unchanged.'
+        no physical removal or doubled calcium-salt dose is implied. Exact excerpt
+        clarification for issue763; scientific payload unchanged.'
     replaced_ingredient:
       preferred_term: Iron(III) chloride
       notes: Displaced parent descriptor; not a positive variant ingredient.
     source_modification_index: 1
-    source_text: Specify 1.49 mM CaCl2 dihydrate and 0.0184 mM FeCl3 hexahydrate; the
-      parent instead labels calcium chloride anhydrous and does not specify the iron
-      salt hydrate. Equal molar numbers do not establish identical supplied chemical
+    source_text: Specify 1.49 mM CaCl2 dihydrate and 0.0184 mM FeCl3 hexahydrate;
+      the parent instead labels calcium chloride anhydrous and does not specify the
+      iron salt hydrate. Equal molar numbers do not establish identical supplied chemical
       forms.
   - action: REMOVE
     ingredient:
@@ -436,8 +438,8 @@ variants:
       supports: SUPPORT
       snippet: MMP contains the same components plus 1 μM calcium pantothenate
       explanation: 'Methods, distinction between MM and MMP. Primary source inspected
-        2026-11-16; supports this source-scoped variant assertion, not equivalence of
-        the whole parent recipe. Villasenor Methods, Bacterial strains/media/growth
+        2026-11-16; supports this source-scoped variant assertion, not equivalence
+        of the whole parent recipe. Villasenor Methods, Bacterial strains/media/growth
         conditions. Separate basis statement: "After sterilization the following components
         were added to the final concentration indicated". MM lacks the separate MMP
         addition; no physical removal or doubled calcium-salt dose is implied. Exact

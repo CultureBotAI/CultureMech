@@ -490,9 +490,9 @@ variants:
       supports: SUPPORT
       snippet: omit FeSO4 x 7 H2O from the medium
       explanation: Page1, For DSM9466. Primary source inspected 2026-11-16; supports
-        this source-scoped variant assertion, not equivalence of the whole parent recipe.
-        DSMZ670 p.1, matching DSM9463/9466/9467 prescription; line wrapping normalized.
-        Exact excerpt clarification for issue763; scientific payload unchanged.
+        this source-scoped variant assertion, not equivalence of the whole parent
+        recipe. DSMZ670 p.1, matching DSM9463/9466/9467 prescription; line wrapping
+        normalized. Exact excerpt clarification for issue763; scientific payload unchanged.
     source_modification_index: 2
     source_text: Omit FeSO4 x 7 H2O; add 5.00 g/L powdered sulfur sterilized by steaming
       in a boiling water bath for 3 hours on each of 3 successive days.
@@ -510,37 +510,37 @@ variants:
       supports: SUPPORT
       snippet: add 5.00 g/l of powdered sulfur
       explanation: Page1, For DSM9466. Primary source inspected 2026-11-16; supports
-        this source-scoped variant assertion, not equivalence of the whole parent recipe.
-        DSMZ670 p.1, matching strain-specific prescription. The immediately following
-        steaming instruction concerns sulfur sterilization. Exact excerpt clarification
-        for issue763; scientific payload unchanged.
+        this source-scoped variant assertion, not equivalence of the whole parent
+        recipe. DSMZ670 p.1, matching strain-specific prescription. The immediately
+        following steaming instruction concerns sulfur sterilization. Exact excerpt
+        clarification for issue763; scientific payload unchanged.
     source_modification_index: 2
     source_text: Omit FeSO4 x 7 H2O; add 5.00 g/L powdered sulfur sterilized by steaming
       in a boiling water bath for 3 hours on each of 3 successive days.
   - action: ADD
     ingredient:
       preferred_term: H2SO4
-      notes: Titrant strength 1 N; adjust to pH3.0. Fixed dose is unspecified; do not
-        convert normality to molarity or a final-medium concentration.
+      notes: Titrant strength 1 N; adjust to pH3.0. Fixed dose is unspecified; do
+        not convert normality to molarity or a final-medium concentration.
     stage: pH adjustment before autoclaving
     evidence:
     - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf
       supports: SUPPORT
       snippet: Adjust pH to 3.0 with 1 N H2SO4 prior to autoclaving
       explanation: Page1, For DSM9466. Primary source inspected 2026-11-16; supports
-        this source-scoped variant assertion, not equivalence of the whole parent recipe.
-        DSMZ670 p.1, matching strain prescription. Titrant strength and target pH do
-        not supply a fixed acid dose. Exact excerpt clarification for issue763; scientific
-        payload unchanged.
+        this source-scoped variant assertion, not equivalence of the whole parent
+        recipe. DSMZ670 p.1, matching strain prescription. Titrant strength and target
+        pH do not supply a fixed acid dose. Exact excerpt clarification for issue763;
+        scientific payload unchanged.
     source_modification_index: 3
-    source_text: 'Current source: pH 3.0 using 1 N H2SO4, versus archived pH 3.5. Add
-      0.20 g/L yeast extract from a sterile stock; its strength, dose and sterilization
+    source_text: 'Current source: pH 3.0 using 1 N H2SO4, versus archived pH 3.5.
+      Add 0.20 g/L yeast extract from a sterile stock; its strength, dose and sterilization
       method are unspecified.'
   - action: ADD
     ingredient:
       preferred_term: yeast extract
-      notes: Reported final concentration; stock strength, dose and sterilization method
-        are unspecified.
+      notes: Reported final concentration; stock strength, dose and sterilization
+        method are unspecified.
       concentration:
         value: '0.20'
         unit: G_PER_L
@@ -550,14 +550,14 @@ variants:
       supports: SUPPORT
       snippet: 0.20 g/l of yeast
       explanation: Page1, For DSM9466. Primary source inspected 2026-11-16; supports
-        this source-scoped variant assertion, not equivalence of the whole parent recipe.
-        DSMZ670 p.1, matching DSM9466/9467 prescription; line wrapping normalized. Yeast
-        extract is a final-medium addition supplied from a sterile stock, whose concentration
-        is not specified. Exact excerpt clarification for issue763; scientific payload
-        unchanged.
+        this source-scoped variant assertion, not equivalence of the whole parent
+        recipe. DSMZ670 p.1, matching DSM9466/9467 prescription; line wrapping normalized.
+        Yeast extract is a final-medium addition supplied from a sterile stock, whose
+        concentration is not specified. Exact excerpt clarification for issue763;
+        scientific payload unchanged.
     source_modification_index: 3
-    source_text: 'Current source: pH 3.0 using 1 N H2SO4, versus archived pH 3.5. Add
-      0.20 g/L yeast extract from a sterile stock; its strength, dose and sterilization
+    source_text: 'Current source: pH 3.0 using 1 N H2SO4, versus archived pH 3.5.
+      Add 0.20 g/L yeast extract from a sterile stock; its strength, dose and sterilization
       method are unspecified.'
 references:
 - reference: https://bacdive.dsmz.de/pdf/4303?doi=10.13145%2Fbacdive4303.20170829.2

@@ -292,12 +292,12 @@ variants:
       explanation: 'Recipe table, optional CaCO3 row; Directions, 200 mL total; primary
         UTEX collection page inspected 2026-11-16. This ingredient occurrence is scoped
         to the optional variant, not a change to the liquid parent. Separate Directions
-        header: "For 200 mL Total"; table identifies optional CaCO3. The quoted 1 mg
-        is a batch input; the source table molarity is not adopted. Exact excerpt clarification
-        for issue763; scientific payload unchanged.'
+        header: "For 200 mL Total"; table identifies optional CaCO3. The quoted 1
+        mg is a batch input; the source table molarity is not adopted. Exact excerpt
+        clarification for issue763; scientific payload unchanged.'
     source_modification_index: 0
-    source_text: Optionally add 1 mg calcium carbonate (Fisher C 64) to the source 200
-      mL recipe before steaming.
+    source_text: Optionally add 1 mg calcium carbonate (Fisher C 64) to the source
+      200 mL recipe before steaming.
 evidence:
 - reference: https://utex.org/products/one-fifth-soil-plus-seawater-medium
   supports: SUPPORT

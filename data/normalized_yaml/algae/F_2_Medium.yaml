@@ -1095,9 +1095,9 @@ variants:
       concentration:
         value: '4.41'
         unit: MILLIMOLAR
-      notes: Primary abstract was inspected; full Methods unavailable. This is the second-stage
-        reported condition, not an amount to add to the first stage or a universal F/2
-        concentration.
+      notes: Primary abstract was inspected; full Methods unavailable. This is the
+        second-stage reported condition, not an amount to add to the first stage or
+        a universal F/2 concentration.
     stage: three-day nitrogen-replete second stage after seven-day F/2 culture
     evidence:
     - reference: doi:10.1016/j.biortech.2017.04.008
@@ -1177,8 +1177,8 @@ variants:
     - reference: doi:10.1007/s10126-021-10037-4
       supports: SUPPORT
       snippet: '0.001'
-      explanation: 'Table S1, component rows and sodium footnotes; primary source inspected
-        2026-11-16. TableS1 trace-element heading is micromolar:0.001micromolar×1000=1nanomolar.
+      explanation: 'Table S1, component rows and sodium footnotes; primary source
+        inspected 2026-11-16. TableS1 trace-element heading is micromolar:0.001micromolar×1000=1nanomolar.
         Not10nM and not an increment atop canonical F/2. Separate exact table heading:
         "Trace elements (μM)"; row label "Na2SeO3"; cell "0.001". Conversion 0.001micromolar×1000=1nanomolar.'
     notes: A scoped change event, not a fully expanded variant or a parent-formulation
@@ -1199,11 +1199,11 @@ variants:
     - reference: doi:10.1007/s10126-021-10037-4
       supports: SUPPORT
       snippet: '0.1'
-      explanation: 'Table S1, component rows and sodium footnotes; primary source inspected
-        2026-11-16. Na2SiO3.9H2O under basal seawater components(mM). Hydrate specified
-        by the source. No full parent equivalence or additional salt mass inferred.
-        Separate exact table heading: "Basal seawater components (mM)"; row label "Na2SiO3·9H2O";
-        cell "0.1".'
+      explanation: 'Table S1, component rows and sodium footnotes; primary source
+        inspected 2026-11-16. Na2SiO3.9H2O under basal seawater components(mM). Hydrate
+        specified by the source. No full parent equivalence or additional salt mass
+        inferred. Separate exact table heading: "Basal seawater components (mM)";
+        row label "Na2SiO3·9H2O"; cell "0.1".'
     notes: A scoped change event, not a fully expanded variant or a parent-formulation
       amendment. No chemical identifier is inferred.
     source_modification_index: 0

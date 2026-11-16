@@ -238,9 +238,9 @@ variants:
     - reference: https://utex.org/products/volvocacean-medium
       supports: SUPPORT
       snippet: add 10.0 grams of agar
-      explanation: Directions, optional agar instruction; primary UTEX collection page
-        inspected 2026-11-16. This ingredient occurrence is scoped to the optional variant,
-        not a change to the liquid parent.
+      explanation: Directions, optional agar instruction; primary UTEX collection
+        page inspected 2026-11-16. This ingredient occurrence is scoped to the optional
+        variant, not a change to the liquid parent.
     source_modification_index: 0
-    source_text: After combining the 800 mL Waris and 200 mL Euglena portions, add 10.0
-      g agar to the flask without stirring; then cover and autoclave.
+    source_text: After combining the 800 mL Waris and 200 mL Euglena portions, add
+      10.0 g agar to the flask without stirring; then cover and autoclave.

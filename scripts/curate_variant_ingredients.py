@@ -98,7 +98,9 @@ def render_additions(before: bytes, desired: dict[str, Any], changes: list[dict]
             if text[line_start:position].strip():
                 raise ValueError("unsupported YAML insertion boundary")
             position = line_start
-        rendered = yaml.safe_dump(fragment, sort_keys=False, allow_unicode=True)
+        # The fragment gains indentation below; keep the native absolute width
+        # for new scalars without reserializing any existing source lines (#773).
+        rendered = yaml.safe_dump(fragment, sort_keys=False, allow_unicode=True, width=80 - indent)
         rendered = "".join(
             " " * indent + line if line.strip() else line
             for line in rendered.splitlines(keepends=True)

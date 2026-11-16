@@ -620,8 +620,8 @@ variants:
     ingredient:
       preferred_term: methanol
       notes: 'Literal source dose: 5 mL per common basal batch. Final volume and purity
-        unspecified. This alternative excludes methane-air incubation; no mL/L or percent
-        conversion.'
+        unspecified. This alternative excludes methane-air incubation; no mL/L or
+        percent conversion.'
     stage: methanol preparation alternative
     source_modification_index: 0
     source_text: Add 5 ml methanol to the source's common basal batch; do not combine

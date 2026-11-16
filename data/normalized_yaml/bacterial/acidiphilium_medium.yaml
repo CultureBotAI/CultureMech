@@ -239,8 +239,8 @@ variants:
         1 mM and 50 mM precultivation treatments; no whole-parent equivalence inferred.
     stage: reported 300 mM stress exposure
     source_modification_index: 1
-    source_text: Add aluminum sulfate at the stress concentration reported by the source
-      study.
+    source_text: Add aluminum sulfate at the stress concentration reported by the
+      source study.
     evidence:
     - reference: PMID:12420179
       supports: SUPPORT

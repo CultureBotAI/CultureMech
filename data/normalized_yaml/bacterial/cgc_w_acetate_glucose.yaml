@@ -389,7 +389,8 @@ variants:
         value: '10'
         unit: G_PER_L
       notes: Preserve sodium counterion and isotope position; no unspecified parent
-        acetate identity or hydrate is equated. Table 2 nominal molarity is not a conversion.
+        acetate identity or hydrate is equated. Table 2 nominal molarity is not a
+        conversion.
     stage: 13C-labeling experiment medium
     source_modification_index: 0
     source_text: Use sodium [1-13C]acetate and unlabeled glucose at 10 g/L each; Table
@@ -399,8 +400,8 @@ variants:
     - reference: doi:10.1128/JB.182.11.3088-3096.2000
       supports: SUPPORT
       snippet: 10 g/liter
-      explanation: Materials and Methods, cultivation conditions; separate Figure 1
-        caption. Supports only the named descriptor/event at the stated stage. Preserve
+      explanation: Materials and Methods, cultivation conditions; separate Figure
+        1 caption. Supports only the named descriptor/event at the stated stage. Preserve
         sodium counterion and isotope position; no unspecified parent acetate identity
         or hydrate is equated. Table 2 nominal molarity is not a conversion. Source
         inspected 2026-11-16; SHA256 07d1735ec2dd0ebaeb26e5c12daa965aa90315948f3e6747b220b5d15d19369e.
@@ -413,8 +414,8 @@ variants:
       concentration:
         value: '10'
         unit: G_PER_L
-      notes: Glucose remains unlabeled in the acetate-labeling arm. Keep mass dose separate
-        from Table 2 nominal 55 mM.
+      notes: Glucose remains unlabeled in the acetate-labeling arm. Keep mass dose
+        separate from Table 2 nominal 55 mM.
     stage: mixed-substrate 13C-labeling experiment medium
     source_modification_index: 0
     source_text: Use sodium [1-13C]acetate and unlabeled glucose at 10 g/L each; Table
@@ -424,8 +425,8 @@ variants:
     - reference: doi:10.1128/JB.182.11.3088-3096.2000
       supports: SUPPORT
       snippet: 10 g/liter each
-      explanation: Materials and Methods, cultivation conditions; separate Figure 1
-        caption. Supports only the named descriptor/event at the stated stage. Glucose
+      explanation: Materials and Methods, cultivation conditions; separate Figure
+        1 caption. Supports only the named descriptor/event at the stated stage. Glucose
         remains unlabeled in the acetate-labeling arm. Keep mass dose separate from
         Table 2 nominal 55 mM. Source inspected 2026-11-16; SHA256 07d1735ec2dd0ebaeb26e5c12daa965aa90315948f3e6747b220b5d15d19369e.
         No parent formulation, growth, ontology identity, or missing dose is inferred.
@@ -480,18 +481,18 @@ variants:
       concentration:
         value: '35'
         unit: MILLIMOLAR
-      notes: Separate from isotope-labeling/Table 2 arm. The stated 120 mM acetate remains
-        context, not a newly quantified substitution.
+      notes: Separate from isotope-labeling/Table 2 arm. The stated 120 mM acetate
+        remains context, not a newly quantified substitution.
     stage: Figure 1 growth time-course medium
     source_modification_index: 0
-    source_text: Use the Figure 1 caption's 35 mM glucose rather than the parent's 55
-      mM; retain the stated 120 mM acetate.
+    source_text: Use the Figure 1 caption's 35 mM glucose rather than the parent's
+      55 mM; retain the stated 120 mM acetate.
     evidence:
     - reference: doi:10.1128/JB.182.11.3088-3096.2000
       supports: SUPPORT
       snippet: 35 mM glucose
-      explanation: Materials and Methods, cultivation conditions; separate Figure 1
-        caption. Supports only the named descriptor/event at the stated stage. Separate
+      explanation: Materials and Methods, cultivation conditions; separate Figure
+        1 caption. Supports only the named descriptor/event at the stated stage. Separate
         from isotope-labeling/Table 2 arm. The stated 120 mM acetate remains context,
         not a newly quantified substitution. Source inspected 2026-11-16; SHA256 07d1735ec2dd0ebaeb26e5c12daa965aa90315948f3e6747b220b5d15d19369e.
         No parent formulation, growth, ontology identity, or missing dose is inferred.

@@ -445,9 +445,9 @@ variants:
         formula remains unresolved.
     stage: reported 2ASW culture medium
     source_modification_index: 0
-    source_text: The study reports 1.5 M NaCl in its 2ASW culture medium. This is a
-      reported medium concentration, not a stock concentration or inferred amount to
-      add.
+    source_text: The study reports 1.5 M NaCl in its 2ASW culture medium. This is
+      a reported medium concentration, not a stock concentration or inferred amount
+      to add.
     evidence:
     - reference: doi:10.1128/spectrum.00069-23
       supports: SUPPORT
@@ -491,8 +491,8 @@ variants:
         inferred.
     stage: modified 2ASW maintenance medium
     source_modification_index: 0
-    source_text: Use the study-reported 33.6 g/L sea salts in place of NaCl; this is
-      an undefined sea-salt mixture, not 33.6 g/L pure sodium chloride.
+    source_text: Use the study-reported 33.6 g/L sea salts in place of NaCl; this
+      is an undefined sea-salt mixture, not 33.6 g/L pure sodium chloride.
     evidence:
     - reference: doi:10.3389/fenrg.2015.00020
       supports: SUPPORT

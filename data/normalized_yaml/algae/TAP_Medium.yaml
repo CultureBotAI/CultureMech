@@ -448,10 +448,10 @@ variants:
       supports: SUPPORT
       snippet: HAc-NaAc was used to balance the pH of the culture medium and replace
         tris
-      explanation: Primary article abstract, HAc-NaAc replacement of Tris; primary source
-        inspected 2026-11-16. Primary abstract explicitly says HAc-NaAc replaces Tris.
-        Keep the source abbreviation at mixture level; no acetate salt hydration, buffer
-        ratio, dose, final concentration or full TAP-equivalence inferred.
+      explanation: Primary article abstract, HAc-NaAc replacement of Tris; primary
+        source inspected 2026-11-16. Primary abstract explicitly says HAc-NaAc replaces
+        Tris. Keep the source abbreviation at mixture level; no acetate salt hydration,
+        buffer ratio, dose, final concentration or full TAP-equivalence inferred.
     notes: A scoped change event, not a fully expanded variant or a parent-formulation
       amendment. No chemical identifier is inferred.
     replaced_ingredient:

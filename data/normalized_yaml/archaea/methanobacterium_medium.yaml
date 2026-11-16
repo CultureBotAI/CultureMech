@@ -4404,8 +4404,8 @@ variants:
     notes: A scoped change event, not a fully expanded variant or a parent-formulation
       amendment. No chemical identifier is inferred.
     source_modification_index: 0
-    source_text: Supplement medium with 5.0 g/l D-glucose added after autoclaving from
-      a sterile anoxic stock solution.
+    source_text: Supplement medium with 5.0 g/l D-glucose added after autoclaving
+      from a sterile anoxic stock solution.
 - name: For DSM 6216
   relationship: STRAIN_SPECIFIC_VARIANT
   modifications:
@@ -4437,8 +4437,8 @@ variants:
       supports: SUPPORT
       snippet: Increase amount of Na-acetate to 3.00 g/l.
       explanation: Pages 1–2, exact DSM strain-specific instructions; primary source
-        inspected 2026-11-16. Source gives no hydrate; value replaces the baseline amount
-        rather than adding an increment.
+        inspected 2026-11-16. Source gives no hydrate; value replaces the baseline
+        amount rather than adding an increment.
     notes: A scoped change event, not a fully expanded variant or a parent-formulation
       amendment. No chemical identifier is inferred.
     source_modification_index: 0
@@ -4510,8 +4510,9 @@ variants:
       supports: SUPPORT
       snippet: 0.3 g DL-Dithiothreitol
       explanation: Pages 1–2, exact DSM strain-specific instructions; primary source
-        inspected 2026-11-16. Literal source amount0.3g; the strain note does not repeat
-        a per-litre basis, so no concentration is inferred from the recipe volume.
+        inspected 2026-11-16. Literal source amount0.3g; the strain note does not
+        repeat a per-litre basis, so no concentration is inferred from the recipe
+        volume.
     notes: A scoped change event, not a fully expanded variant or a parent-formulation
       amendment. No chemical identifier is inferred.
     source_modification_index: 0
@@ -4583,8 +4584,9 @@ variants:
       supports: SUPPORT
       snippet: 0.3 g DL-Dithiothreitol
       explanation: Pages 1–2, exact DSM strain-specific instructions; primary source
-        inspected 2026-11-16. Literal source amount0.3g; the strain note does not repeat
-        a per-litre basis, so no concentration is inferred from the recipe volume.
+        inspected 2026-11-16. Literal source amount0.3g; the strain note does not
+        repeat a per-litre basis, so no concentration is inferred from the recipe
+        volume.
     notes: A scoped change event, not a fully expanded variant or a parent-formulation
       amendment. No chemical identifier is inferred.
     source_modification_index: 0
@@ -4634,25 +4636,25 @@ variants:
   - action: REPLACE
     ingredient:
       preferred_term: clarified rumen fluid
-      notes: Same-volume replacement specified; no independently inferred density or
-        final concentration. Medium1310 preparation remains a named-mixture reference.
+      notes: Same-volume replacement specified; no independently inferred density
+        or final concentration. Medium1310 preparation remains a named-mixture reference.
     stage: DSM16632 strain-specific fluid replacement
     evidence:
     - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf
       supports: SUPPORT
       snippet: same volume of clarified rumen fluid
       explanation: Pages 1–2, exact DSM strain-specific instructions; primary source
-        inspected 2026-11-16. Same-volume replacement specified; no independently inferred
-        density or final concentration. Medium1310 preparation remains a named-mixture
-        reference.
+        inspected 2026-11-16. Same-volume replacement specified; no independently
+        inferred density or final concentration. Medium1310 preparation remains a
+        named-mixture reference.
     notes: A scoped change event, not a fully expanded variant or a parent-formulation
       amendment. No chemical identifier is inferred.
     replaced_ingredient:
       preferred_term: sludge fluid
     source_modification_index: 0
     source_text: Replace sludge fluid with the same volume of clarified rumen fluid
-      (see medium 1310) and supplement medium with 2.00 g/l Trypticase peptone and 10.00
-      ml/l of Wolin's vitamin solution (see medium 141).
+      (see medium 1310) and supplement medium with 2.00 g/l Trypticase peptone and
+      10.00 ml/l of Wolin's vitamin solution (see medium 141).
   - action: ADD
     ingredient:
       preferred_term: Trypticase peptone
@@ -4670,8 +4672,8 @@ variants:
       amendment. No chemical identifier is inferred.
     source_modification_index: 0
     source_text: Replace sludge fluid with the same volume of clarified rumen fluid
-      (see medium 1310) and supplement medium with 2.00 g/l Trypticase peptone and 10.00
-      ml/l of Wolin's vitamin solution (see medium 141).
+      (see medium 1310) and supplement medium with 2.00 g/l Trypticase peptone and
+      10.00 ml/l of Wolin's vitamin solution (see medium 141).
   - action: ADD
     ingredient:
       preferred_term: Wolin's vitamin solution
@@ -4694,8 +4696,8 @@ variants:
       amendment. No chemical identifier is inferred.
     source_modification_index: 0
     source_text: Replace sludge fluid with the same volume of clarified rumen fluid
-      (see medium 1310) and supplement medium with 2.00 g/l Trypticase peptone and 10.00
-      ml/l of Wolin's vitamin solution (see medium 141).
+      (see medium 1310) and supplement medium with 2.00 g/l Trypticase peptone and
+      10.00 ml/l of Wolin's vitamin solution (see medium 141).
 - name: For DSM 25824
   relationship: STRAIN_SPECIFIC_VARIANT
   modifications:
@@ -4731,8 +4733,8 @@ variants:
       concentration:
         value: '0.10'
         unit: G_PER_L
-      notes: Gas mixture/pressure is a separate post-inoculation condition, not a liquid
-        ingredient dose.
+      notes: Gas mixture/pressure is a separate post-inoculation condition, not a
+        liquid ingredient dose.
     stage: DSM25824 after autoclaving from sterile filtered anoxic stock
     evidence:
     - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf
@@ -4741,8 +4743,8 @@ variants:
 
         2-mercaptoethanesulfonic acid (coenzyme M)'
       explanation: Pages 1–2, exact DSM strain-specific instructions; primary source
-        inspected 2026-11-16. Gas mixture/pressure is a separate post-inoculation condition,
-        not a liquid ingredient dose.
+        inspected 2026-11-16. Gas mixture/pressure is a separate post-inoculation
+        condition, not a liquid ingredient dose.
     notes: A scoped change event, not a fully expanded variant or a parent-formulation
       amendment. No chemical identifier is inferred.
     source_modification_index: 0

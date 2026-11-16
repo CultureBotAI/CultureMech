@@ -207,8 +207,8 @@ variants:
   - action: ADD
     ingredient:
       preferred_term: L-phenylalanine
-      notes: Ingredient identity and sole-nitrogen role only; dose and identities of
-        any displaced basal nitrogen compounds are unresolved. No base-recipe materialization
+      notes: Ingredient identity and sole-nitrogen role only; dose and identities
+        of any displaced basal nitrogen compounds are unresolved. No base-recipe materialization
         or inferred removals.
     stage: reported sole-nitrogen phototrophic formulation
     source_modification_index: 1
@@ -219,9 +219,9 @@ variants:
       snippet: L-phenylalanine
       explanation: Primary article abstract indexed by Europe PMC; full methods not
         reviewed. Supports only the named descriptor/event at the stated stage. Ingredient
-        identity and sole-nitrogen role only; dose and identities of any displaced basal
-        nitrogen compounds are unresolved. No base-recipe materialization or inferred
-        removals. Source inspected 2026-11-16; SHA256 6429c3b3fce615d13eb83f68eae574c48fa8e8dd60729b4744fd5615f88d0e8b.
+        identity and sole-nitrogen role only; dose and identities of any displaced
+        basal nitrogen compounds are unresolved. No base-recipe materialization or
+        inferred removals. Source inspected 2026-11-16; SHA256 6429c3b3fce615d13eb83f68eae574c48fa8e8dd60729b4744fd5615f88d0e8b.
         No parent formulation, growth, ontology identity, or missing dose is inferred.
 curation_history:
 - timestamp: '2026-01-26T17:53:16.996212Z'

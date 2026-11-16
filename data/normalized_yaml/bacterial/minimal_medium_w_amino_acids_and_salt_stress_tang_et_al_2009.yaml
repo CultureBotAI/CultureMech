@@ -523,9 +523,9 @@ variants:
     - reference: doi:10.1002/btpr.227
       supports: SUPPORT
       snippet: buffered with 20mM PIPES
-      explanation: Methods, p.4, isotope-tracer growth medium. This overrides the imported
-        10 mM for this variant only. Primary source inspected 2026-11-16; no ontology
-        identity or mass conversion inferred.
+      explanation: Methods, p.4, isotope-tracer growth medium. This overrides the
+        imported 10 mM for this variant only. Primary source inspected 2026-11-16;
+        no ontology identity or mass conversion inferred.
   - action: REPLACE
     ingredient:
       preferred_term: '[3-13C] sodium L-lactate'
@@ -542,14 +542,14 @@ variants:
     - reference: doi:10.1002/btpr.227
       supports: SUPPORT
       snippet: minimal medium (30mM, pH=7, buffered with 20mM PIPES)
-      explanation: 'Methods, p.4: labeled lactate supplied at 30 mM in the growth medium.
-        Isotope label and L stereochemistry preserved; no assumption about downstream
-        isotope-resolved mapping. Primary source inspected 2026-11-16; no ontology identity
-        or mass conversion inferred. Tang OSTI-hosted manuscript, p.4 Methods. Separate
-        exact substrate excerpt: "[3-13C] sodium L-lactate". The immediately preceding
-        substrate name binds this 30mM dose to labeled lactate; isotope-position typography
-        rendered as plain text. Exact excerpt clarification for issue763; scientific
-        payload unchanged.'
+      explanation: 'Methods, p.4: labeled lactate supplied at 30 mM in the growth
+        medium. Isotope label and L stereochemistry preserved; no assumption about
+        downstream isotope-resolved mapping. Primary source inspected 2026-11-16;
+        no ontology identity or mass conversion inferred. Tang OSTI-hosted manuscript,
+        p.4 Methods. Separate exact substrate excerpt: "[3-13C] sodium L-lactate".
+        The immediately preceding substrate name binds this 30mM dose to labeled lactate;
+        isotope-position typography rendered as plain text. Exact excerpt clarification
+        for issue763; scientific payload unchanged.'
     replaced_ingredient:
       preferred_term: Sodium L-lactate
 target_organisms:

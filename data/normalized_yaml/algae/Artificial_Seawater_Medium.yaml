@@ -511,7 +511,8 @@ variants:
         value: '5'
         unit: MILLIMOLAR
       notes: Names resolved from the primary Results, not guessed from generic nitrogen/phosphorus
-        prose. Does not certify equivalence to the local UTEX artificial-seawater parent.
+        prose. Does not certify equivalence to the local UTEX artificial-seawater
+        parent.
     stage: nitrogen-and-phosphorus-supplemented Marine Art SF-1 ASW
     evidence:
     - reference: doi:10.3389/fmicb.2015.00326

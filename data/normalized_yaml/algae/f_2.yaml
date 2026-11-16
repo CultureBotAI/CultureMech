@@ -701,17 +701,18 @@ variants:
       concentration:
         value: '1.06e-4'
         unit: MOLAR
-      notes: Preserve reported supplement concentration. No sodium salt, hydrate, stock
-        composition, total silicate including base, or local f/2+Si equivalence inferred.
+      notes: Preserve reported supplement concentration. No sodium salt, hydrate,
+        stock composition, total silicate including base, or local f/2+Si equivalence
+        inferred.
     stage: Isochrysis galbana study-specific f/2 supplementation
     evidence:
     - reference: doi:10.1038/srep10036
       supports: SUPPORT
       snippet: f/2 supplemented with 1.06 × 10−4 M silicate
-      explanation: Methods, culture conditions and bacterial-community antibiotic experiment;
-        primary source inspected 2026-11-16. Preserve reported supplement concentration.
-        No sodium salt, hydrate, stock composition, total silicate including base, or
-        local f/2+Si equivalence inferred.
+      explanation: Methods, culture conditions and bacterial-community antibiotic
+        experiment; primary source inspected 2026-11-16. Preserve reported supplement
+        concentration. No sodium salt, hydrate, stock composition, total silicate
+        including base, or local f/2+Si equivalence inferred.
     notes: A scoped change event, not a fully expanded variant or a parent-formulation
       amendment. No chemical identifier is inferred.
     source_modification_index: 0
@@ -755,16 +756,16 @@ variants:
     - reference: doi:10.1038/srep10036
       supports: SUPPORT
       snippet: 29.4 mM NaNO3
-      explanation: Methods, culture conditions and bacterial-community antibiotic experiment;
-        primary source inspected 2026-11-16. Source does not resolve whether the stated
-        supplement includes background nitrate. No total concentration or stock form
-        inferred.
+      explanation: Methods, culture conditions and bacterial-community antibiotic
+        experiment; primary source inspected 2026-11-16. Source does not resolve whether
+        the stated supplement includes background nitrate. No total concentration
+        or stock form inferred.
     notes: A scoped change event, not a fully expanded variant or a parent-formulation
       amendment. No chemical identifier is inferred.
     source_modification_index: 0
     source_text: The study reports f/2 supplemented with 29.4 mM NaNO3 and adjusted
-      to pH 8. Retain the stated supplement concentration; do not infer whether it includes
-      the base-medium nitrate or calculate a total nitrate concentration.
+      to pH 8. Retain the stated supplement concentration; do not infer whether it
+      includes the base-medium nitrate or calculate a total nitrate concentration.
 - name: f_2_penicillin_g_dihydrostreptomycin_supplement
   relationship: SUPPLEMENTED_VARIANT
   description: Emami et al. (2015) antibiotic-treated f/2 cultures of Dunaliella polymorpha
@@ -810,10 +811,10 @@ variants:
     evidence:
     - reference: doi:10.1038/srep10036
       supports: SUPPORT
-      snippet: 'penicillin G and dihydrostreptomycin sulphate in a ratio of 200 μg mL−1:
-        50 μg mL−1'
-      explanation: Methods, culture conditions and bacterial-community antibiotic experiment;
-        primary source inspected 2026-11-16. Reported treatment dose200micrograms/mL.
+      snippet: 'penicillin G and dihydrostreptomycin sulphate in a ratio of 200 μg
+        mL−1: 50 μg mL−1'
+      explanation: Methods, culture conditions and bacterial-community antibiotic
+        experiment; primary source inspected 2026-11-16. Reported treatment dose200micrograms/mL.
         Unreported salt form and stock strength remain unresolved. Untreated control
         and later marine-agar bacterial assay are separate.
     notes: A scoped change event, not a fully expanded variant or a parent-formulation
@@ -831,18 +832,18 @@ variants:
     evidence:
     - reference: doi:10.1038/srep10036
       supports: SUPPORT
-      snippet: 'penicillin G and dihydrostreptomycin sulphate in a ratio of 200 μg mL−1:
-        50 μg mL−1'
-      explanation: Methods, culture conditions and bacterial-community antibiotic experiment;
-        primary source inspected 2026-11-16. Reported treatment dose50micrograms/mL,
+      snippet: 'penicillin G and dihydrostreptomycin sulphate in a ratio of 200 μg
+        mL−1: 50 μg mL−1'
+      explanation: Methods, culture conditions and bacterial-community antibiotic
+        experiment; primary source inspected 2026-11-16. Reported treatment dose50micrograms/mL,
         preserved literally without silent unit conversion. Not streptomycin; no hydrate
         or stock concentration inferred.
     notes: A scoped change event, not a fully expanded variant or a parent-formulation
       amendment. No chemical identifier is inferred.
     source_modification_index: 1
     source_text: 'Reported dihydrostreptomycin sulphate treatment concentration: 50
-      micrograms per mL in the same treated culture; not streptomycin, not a stock concentration,
-      and no hydrate assumption.'
+      micrograms per mL in the same treated culture; not streptomycin, not a stock
+      concentration, and no hydrate assumption.'
 - name: f_2_2asw_vitamin_replacement_hiibel_2015
   relationship: SUBSTITUTED_COMPONENT_VARIANT
   description: Hiibel et al. (2015) f/2 maintenance medium with a reported 2ASW vitamin-solution
@@ -874,8 +875,8 @@ variants:
     ingredient:
       preferred_term: 2ASW vitamin solution
       notes: Source reports replacement and additional vitamin components but supplies
-        no identities, dose or composition. Mismatched Gomord citation cannot fill these
-        gaps; no claim of equivalence to a local stock.
+        no identities, dose or composition. Mismatched Gomord citation cannot fill
+        these gaps; no claim of equivalence to a local stock.
     stage: modified f/2 maintenance medium for study Nannochloropsis cultures
     evidence:
     - reference: doi:10.3389/fenrg.2015.00020
@@ -884,7 +885,8 @@ variants:
       explanation: Materials and Methods, microalgal strains and maintenance media;
         primary source inspected 2026-11-16. Source reports replacement and additional
         vitamin components but supplies no identities, dose or composition. Mismatched
-        Gomord citation cannot fill these gaps; no claim of equivalence to a local stock.
+        Gomord citation cannot fill these gaps; no claim of equivalence to a local
+        stock.
     notes: A scoped change event, not a fully expanded variant or a parent-formulation
       amendment. No chemical identifier is inferred.
     replaced_ingredient:

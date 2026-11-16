@@ -493,7 +493,8 @@ variants:
     notes: A scoped change event, not a fully expanded variant or a parent-formulation
       amendment. No chemical identifier is inferred.
     source_modification_index: 1
-    source_text: Manipulate sodium by changing NaCl added to the basal artificial seawater.
+    source_text: Manipulate sodium by changing NaCl added to the basal artificial
+      seawater.
 - name: 2asw_1_5_m_nacl
   description: Study-specific 2ASW reported by Liang et al. (2023). Only the explicitly
     stated NaCl concentration and algal cultivation context are resolved; full Table
@@ -538,9 +539,9 @@ variants:
     notes: A scoped change event, not a fully expanded variant or a parent-formulation
       amendment. No chemical identifier is inferred.
     source_modification_index: 0
-    source_text: The study reports 1.5 M NaCl in its 2ASW culture medium. This is a
-      reported medium concentration, not a stock concentration or inferred amount to
-      add.
+    source_text: The study reports 1.5 M NaCl in its 2ASW culture medium. This is
+      a reported medium concentration, not a stock concentration or inferred amount
+      to add.
 - name: 2asw_sea_salt_substitution_33_6_g_l
   relationship: SUBSTITUTED_COMPONENT_VARIANT
   description: Modified 2ASW maintenance medium in Hiibel et al. (2015), with sea
@@ -580,15 +581,15 @@ variants:
       snippet: 33.6 g/L of sea salts were used in place of the NaCl
       explanation: Materials and Methods, microalgal strains and maintenance media;
         primary source inspected 2026-11-16. Undefined sea-salt mixture replaces NaCl.
-        No salt-product identity, constituent expansion, NaCl-equivalent molarity or
-        parent seawater equivalence is claimed.
+        No salt-product identity, constituent expansion, NaCl-equivalent molarity
+        or parent seawater equivalence is claimed.
     notes: A scoped change event, not a fully expanded variant or a parent-formulation
       amendment. No chemical identifier is inferred.
     replaced_ingredient:
       preferred_term: NaCl
     source_modification_index: 0
-    source_text: Use the study-reported 33.6 g/L sea salts in place of NaCl; this is
-      an undefined sea-salt mixture, not 33.6 g/L pure sodium chloride.
+    source_text: Use the study-reported 33.6 g/L sea salts in place of NaCl; this
+      is an undefined sea-salt mixture, not 33.6 g/L pure sodium chloride.
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: Dunaliella salina

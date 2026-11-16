@@ -347,18 +347,19 @@ variants:
         value: '10'
         unit: G_PER_L
       notes: Preserve sodium counterion and isotope position; no unspecified parent
-        acetate identity or hydrate is equated. Table 2 nominal molarity is not a conversion.
+        acetate identity or hydrate is equated. Table 2 nominal molarity is not a
+        conversion.
     stage: 13C-labeling experiment medium
     source_modification_index: 0
-    source_text: Use sodium [1-13C]acetate at the Methods dose of 10 g/L; Table 2 reports
-      nominal 120 mM acetate. The parent acetate descriptor has no isotope specification
-      and reports 120 mM.
+    source_text: Use sodium [1-13C]acetate at the Methods dose of 10 g/L; Table 2
+      reports nominal 120 mM acetate. The parent acetate descriptor has no isotope
+      specification and reports 120 mM.
     evidence:
     - reference: doi:10.1128/JB.182.11.3088-3096.2000
       supports: SUPPORT
       snippet: 10 g/liter
-      explanation: Materials and Methods, cultivation conditions; separate Figure 1
-        caption. Supports only the named descriptor/event at the stated stage. Preserve
+      explanation: Materials and Methods, cultivation conditions; separate Figure
+        1 caption. Supports only the named descriptor/event at the stated stage. Preserve
         sodium counterion and isotope position; no unspecified parent acetate identity
         or hydrate is equated. Table 2 nominal molarity is not a conversion. Source
         inspected 2026-11-16; SHA256 07d1735ec2dd0ebaeb26e5c12daa965aa90315948f3e6747b220b5d15d19369e.

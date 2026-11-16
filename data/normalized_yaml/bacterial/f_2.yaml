@@ -617,9 +617,10 @@ variants:
       snippet: 1.06 × 10−4 M silicate
       explanation: Methods, culture conditions and bacterial interference experiment.
         Supports only the named descriptor/event at the stated stage. Undefined silicate
-        chemical form; no salt/hydrate/stock assigned. Stated supplement dose, not calculated
-        total including basal silicate. Source inspected 2026-11-16; SHA256 7e3ddf65f336955a2c875b18361e878ffcf16bc341fe9b404308d014df4c3319.
-        No parent formulation, growth, ontology identity, or missing dose is inferred.
+        chemical form; no salt/hydrate/stock assigned. Stated supplement dose, not
+        calculated total including basal silicate. Source inspected 2026-11-16; SHA256
+        7e3ddf65f336955a2c875b18361e878ffcf16bc341fe9b404308d014df4c3319. No parent
+        formulation, growth, ontology identity, or missing dose is inferred.
 - name: f_2_nitrate_supplement_29_4_mm
   relationship: SUPPLEMENTED_VARIANT
   description: Emami et al. (2015) nitrate-supplemented f/2 at pH 8 for reported Arthrospira
@@ -655,8 +656,8 @@ variants:
     stage: reported f/2 supplementation
     source_modification_index: 0
     source_text: The study reports f/2 supplemented with 29.4 mM NaNO3 and adjusted
-      to pH 8. Retain the stated supplement concentration; do not infer whether it includes
-      the base-medium nitrate or calculate a total nitrate concentration.
+      to pH 8. Retain the stated supplement concentration; do not infer whether it
+      includes the base-medium nitrate or calculate a total nitrate concentration.
     evidence:
     - reference: doi:10.1038/srep10036
       supports: SUPPORT
@@ -720,8 +721,8 @@ variants:
       snippet: 200 μg mL−1
       explanation: Methods, culture conditions and bacterial interference experiment.
         Supports only the named descriptor/event at the stated stage. Source-literal
-        200 micrograms/mL, no conversion. No salt form or stock strength inferred; untreated
-        comparator separate. Source inspected 2026-11-16; SHA256 7e3ddf65f336955a2c875b18361e878ffcf16bc341fe9b404308d014df4c3319.
+        200 micrograms/mL, no conversion. No salt form or stock strength inferred;
+        untreated comparator separate. Source inspected 2026-11-16; SHA256 7e3ddf65f336955a2c875b18361e878ffcf16bc341fe9b404308d014df4c3319.
         No parent formulation, growth, ontology identity, or missing dose is inferred.
   - action: ADD
     ingredient:
@@ -734,8 +735,8 @@ variants:
     stage: antibiotic-treated f/2 culture
     source_modification_index: 1
     source_text: 'Reported dihydrostreptomycin sulphate treatment concentration: 50
-      micrograms per mL in the same treated culture; not streptomycin, not a stock concentration,
-      and no hydrate assumption.'
+      micrograms per mL in the same treated culture; not streptomycin, not a stock
+      concentration, and no hydrate assumption.'
     evidence:
     - reference: doi:10.1038/srep10036
       supports: SUPPORT
@@ -776,8 +777,8 @@ variants:
     ingredient:
       preferred_term: 2ASW vitamin solution
       notes: Named mixture replacement only. Constituent identities, stock strength,
-        addition volume and final concentrations remain unresolved; no reliance on the
-        mismatched Gomord citation.
+        addition volume and final concentrations remain unresolved; no reliance on
+        the mismatched Gomord citation.
     stage: modified f/2 maintenance medium
     source_modification_index: 0
     source_text: The vitamin solution described as coming from 2ASW replaces the original

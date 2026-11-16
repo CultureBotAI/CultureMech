@@ -250,7 +250,8 @@ variants:
         value: '10'
         unit: MG_PER_L
       notes: Source-reported Cr(VI) mass concentration; administered chromate salt/counterion/hydration
-        unspecified. Do not convert to mass of an assumed salt. Abstract evidence only.
+        unspecified. Do not convert to mass of an assumed salt. Abstract evidence
+        only.
     stage: reported B17316 Cr(VI) exposure
     source_modification_index: 1
     source_text: Add Cr(VI) at 10 mg/L.
@@ -260,9 +261,9 @@ variants:
       snippet: 10 mg L-1
       explanation: Primary article abstract indexed by Europe PMC; full methods not
         reviewed. Supports only the named descriptor/event at the stated stage. Source-reported
-        Cr(VI) mass concentration; administered chromate salt/counterion/hydration unspecified.
-        Do not convert to mass of an assumed salt. Abstract evidence only. Source inspected
-        2026-11-16; SHA256 aec3da0e724798ee8a372f1cba3cba6c4efc1212e246095d92b50f11ff1ba277.
+        Cr(VI) mass concentration; administered chromate salt/counterion/hydration
+        unspecified. Do not convert to mass of an assumed salt. Abstract evidence
+        only. Source inspected 2026-11-16; SHA256 aec3da0e724798ee8a372f1cba3cba6c4efc1212e246095d92b50f11ff1ba277.
         No parent formulation, growth, ontology identity, or missing dose is inferred.
 curation_history:
 - timestamp: '2026-01-26T17:53:17.212107Z'

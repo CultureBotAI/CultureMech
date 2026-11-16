@@ -454,16 +454,16 @@ variants:
         combined with methylamine; no w/v, w/w or v/v basis inferred.'
     stage: post-sterilization methanol alternative
     source_modification_index: 0
-    source_text: After sterilisation add sterile methanol to a final concentration of
-      0.5% (percentage basis unspecified).
+    source_text: After sterilisation add sterile methanol to a final concentration
+      of 0.5% (percentage basis unspecified).
     evidence:
     - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf
       supports: SUPPORT
       snippet: final concentration of 0.5%
       explanation: 'Page 1, final paragraph. Supports only the named descriptor/event
-        at the stated stage. Literal final-medium quantity: 0.5%, percentage basis unspecified.
-        Not combined with methylamine; no w/v, w/w or v/v basis inferred. Source inspected
-        2026-11-16; SHA256 156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39.
+        at the stated stage. Literal final-medium quantity: 0.5%, percentage basis
+        unspecified. Not combined with methylamine; no w/v, w/w or v/v basis inferred.
+        Source inspected 2026-11-16; SHA256 156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39.
         No parent formulation, growth, ontology identity, or missing dose is inferred.'
 - name: Methylamine alternative
   relationship: SUPPLEMENTED_VARIANT
@@ -503,9 +503,9 @@ variants:
       supports: SUPPORT
       snippet: final concentration of 0.3%
       explanation: 'Page 1, final paragraph. Supports only the named descriptor/event
-        at the stated stage. Literal final-medium quantity: 0.3%, percentage basis unspecified.
-        Salt, hydration and purity unspecified; not combined with methanol. Source inspected
-        2026-11-16; SHA256 156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39.
+        at the stated stage. Literal final-medium quantity: 0.3%, percentage basis
+        unspecified. Salt, hydration and purity unspecified; not combined with methanol.
+        Source inspected 2026-11-16; SHA256 156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39.
         No parent formulation, growth, ontology identity, or missing dose is inferred.'
 evidence:
 - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf

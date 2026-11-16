@@ -745,8 +745,8 @@ variants:
       notes: Displaced parent descriptor; not a positive variant ingredient.
     source_modification_index: 1
     source_text: Use 0.9 g/L citric acid, 1.7 g/L KCl and 4.35 g/L (NH4)2HPO4, replacing
-      the parent's molar citrate, KCl and ammonium-phosphate entries; preserve the source's
-      chemical forms and mass basis.
+      the parent's molar citrate, KCl and ammonium-phosphate entries; preserve the
+      source's chemical forms and mass basis.
   - action: SET_CONCENTRATION
     ingredient:
       preferred_term: KCl
@@ -765,8 +765,8 @@ variants:
         payload unchanged.'
     source_modification_index: 1
     source_text: Use 0.9 g/L citric acid, 1.7 g/L KCl and 4.35 g/L (NH4)2HPO4, replacing
-      the parent's molar citrate, KCl and ammonium-phosphate entries; preserve the source's
-      chemical forms and mass basis.
+      the parent's molar citrate, KCl and ammonium-phosphate entries; preserve the
+      source's chemical forms and mass basis.
   - action: REPLACE
     ingredient:
       preferred_term: (NH4)2HPO4
@@ -788,8 +788,8 @@ variants:
       notes: Displaced parent descriptor; not a positive variant ingredient.
     source_modification_index: 1
     source_text: Use 0.9 g/L citric acid, 1.7 g/L KCl and 4.35 g/L (NH4)2HPO4, replacing
-      the parent's molar citrate, KCl and ammonium-phosphate entries; preserve the source's
-      chemical forms and mass basis.
+      the parent's molar citrate, KCl and ammonium-phosphate entries; preserve the
+      source's chemical forms and mass basis.
   - action: REPLACE
     ingredient:
       preferred_term: CaCl2 dihydrate
@@ -883,8 +883,8 @@ variants:
   - action: REMOVE
     ingredient:
       preferred_term: Sulfate
-      notes: Removed as a flattened final-medium entry; source stock constituents are
-        retained separately at their stock-preparation stage.
+      notes: Removed as a flattened final-medium entry; source stock constituents
+        are retained separately at their stock-preparation stage.
     stage: replacement of flattened parent trace entries by a stock addition
     evidence:
     - reference: doi:10.1186/1475-2859-8-29
@@ -892,22 +892,23 @@ variants:
       snippet: 1.6 mL of trace salts stock solution.
       explanation: 'Additional file3, A21 and A24–A33; parent descriptor comparison.
         Primary source inspected 2026-11-16; supports this source-scoped variant assertion,
-        not equivalence of the whole parent recipe. Additional file3, A13 header: "Chemostat
-        medium contained per Liter". The nine old flattened descriptors are replaced
-        as a group by this stock addition; constituent identities/stock concentrations
-        are separately supported by A24–A33. This is not physical absence from the stock.
-        Exact excerpt clarification for issue763; scientific payload unchanged.'
+        not equivalence of the whole parent recipe. Additional file3, A13 header:
+        "Chemostat medium contained per Liter". The nine old flattened descriptors
+        are replaced as a group by this stock addition; constituent identities/stock
+        concentrations are separately supported by A24–A33. This is not physical absence
+        from the stock. Exact excerpt clarification for issue763; scientific payload
+        unchanged.'
     source_modification_index: 4
-    source_text: Replace the parent's nine flattened trace/acid entries (sulfate, boric
-      acid, sodium molybdate, manganese sulfate, ferrous sulfate, cobalt chloride, cupric
-      sulfate, zinc chloride and sodium iodide) with 1.6 mL of trace-salts stock per
-      liter of chemostat medium. Do not retain both the flattened ingredients and this
-      stock dose.
+    source_text: Replace the parent's nine flattened trace/acid entries (sulfate,
+      boric acid, sodium molybdate, manganese sulfate, ferrous sulfate, cobalt chloride,
+      cupric sulfate, zinc chloride and sodium iodide) with 1.6 mL of trace-salts
+      stock per liter of chemostat medium. Do not retain both the flattened ingredients
+      and this stock dose.
   - action: REMOVE
     ingredient:
       preferred_term: Boric acid
-      notes: Removed as a flattened final-medium entry; source stock constituents are
-        retained separately at their stock-preparation stage.
+      notes: Removed as a flattened final-medium entry; source stock constituents
+        are retained separately at their stock-preparation stage.
     stage: replacement of flattened parent trace entries by a stock addition
     evidence:
     - reference: doi:10.1186/1475-2859-8-29
@@ -915,22 +916,23 @@ variants:
       snippet: 1.6 mL of trace salts stock solution.
       explanation: 'Additional file3, A21 and A24–A33; parent descriptor comparison.
         Primary source inspected 2026-11-16; supports this source-scoped variant assertion,
-        not equivalence of the whole parent recipe. Additional file3, A13 header: "Chemostat
-        medium contained per Liter". The nine old flattened descriptors are replaced
-        as a group by this stock addition; constituent identities/stock concentrations
-        are separately supported by A24–A33. This is not physical absence from the stock.
-        Exact excerpt clarification for issue763; scientific payload unchanged.'
+        not equivalence of the whole parent recipe. Additional file3, A13 header:
+        "Chemostat medium contained per Liter". The nine old flattened descriptors
+        are replaced as a group by this stock addition; constituent identities/stock
+        concentrations are separately supported by A24–A33. This is not physical absence
+        from the stock. Exact excerpt clarification for issue763; scientific payload
+        unchanged.'
     source_modification_index: 4
-    source_text: Replace the parent's nine flattened trace/acid entries (sulfate, boric
-      acid, sodium molybdate, manganese sulfate, ferrous sulfate, cobalt chloride, cupric
-      sulfate, zinc chloride and sodium iodide) with 1.6 mL of trace-salts stock per
-      liter of chemostat medium. Do not retain both the flattened ingredients and this
-      stock dose.
+    source_text: Replace the parent's nine flattened trace/acid entries (sulfate,
+      boric acid, sodium molybdate, manganese sulfate, ferrous sulfate, cobalt chloride,
+      cupric sulfate, zinc chloride and sodium iodide) with 1.6 mL of trace-salts
+      stock per liter of chemostat medium. Do not retain both the flattened ingredients
+      and this stock dose.
   - action: REMOVE
     ingredient:
       preferred_term: Sodium molybdate
-      notes: Removed as a flattened final-medium entry; source stock constituents are
-        retained separately at their stock-preparation stage.
+      notes: Removed as a flattened final-medium entry; source stock constituents
+        are retained separately at their stock-preparation stage.
     stage: replacement of flattened parent trace entries by a stock addition
     evidence:
     - reference: doi:10.1186/1475-2859-8-29
@@ -938,22 +940,23 @@ variants:
       snippet: 1.6 mL of trace salts stock solution.
       explanation: 'Additional file3, A21 and A24–A33; parent descriptor comparison.
         Primary source inspected 2026-11-16; supports this source-scoped variant assertion,
-        not equivalence of the whole parent recipe. Additional file3, A13 header: "Chemostat
-        medium contained per Liter". The nine old flattened descriptors are replaced
-        as a group by this stock addition; constituent identities/stock concentrations
-        are separately supported by A24–A33. This is not physical absence from the stock.
-        Exact excerpt clarification for issue763; scientific payload unchanged.'
+        not equivalence of the whole parent recipe. Additional file3, A13 header:
+        "Chemostat medium contained per Liter". The nine old flattened descriptors
+        are replaced as a group by this stock addition; constituent identities/stock
+        concentrations are separately supported by A24–A33. This is not physical absence
+        from the stock. Exact excerpt clarification for issue763; scientific payload
+        unchanged.'
     source_modification_index: 4
-    source_text: Replace the parent's nine flattened trace/acid entries (sulfate, boric
-      acid, sodium molybdate, manganese sulfate, ferrous sulfate, cobalt chloride, cupric
-      sulfate, zinc chloride and sodium iodide) with 1.6 mL of trace-salts stock per
-      liter of chemostat medium. Do not retain both the flattened ingredients and this
-      stock dose.
+    source_text: Replace the parent's nine flattened trace/acid entries (sulfate,
+      boric acid, sodium molybdate, manganese sulfate, ferrous sulfate, cobalt chloride,
+      cupric sulfate, zinc chloride and sodium iodide) with 1.6 mL of trace-salts
+      stock per liter of chemostat medium. Do not retain both the flattened ingredients
+      and this stock dose.
   - action: REMOVE
     ingredient:
       preferred_term: Manganese sulfate
-      notes: Removed as a flattened final-medium entry; source stock constituents are
-        retained separately at their stock-preparation stage.
+      notes: Removed as a flattened final-medium entry; source stock constituents
+        are retained separately at their stock-preparation stage.
     stage: replacement of flattened parent trace entries by a stock addition
     evidence:
     - reference: doi:10.1186/1475-2859-8-29
@@ -961,22 +964,23 @@ variants:
       snippet: 1.6 mL of trace salts stock solution.
       explanation: 'Additional file3, A21 and A24–A33; parent descriptor comparison.
         Primary source inspected 2026-11-16; supports this source-scoped variant assertion,
-        not equivalence of the whole parent recipe. Additional file3, A13 header: "Chemostat
-        medium contained per Liter". The nine old flattened descriptors are replaced
-        as a group by this stock addition; constituent identities/stock concentrations
-        are separately supported by A24–A33. This is not physical absence from the stock.
-        Exact excerpt clarification for issue763; scientific payload unchanged.'
+        not equivalence of the whole parent recipe. Additional file3, A13 header:
+        "Chemostat medium contained per Liter". The nine old flattened descriptors
+        are replaced as a group by this stock addition; constituent identities/stock
+        concentrations are separately supported by A24–A33. This is not physical absence
+        from the stock. Exact excerpt clarification for issue763; scientific payload
+        unchanged.'
     source_modification_index: 4
-    source_text: Replace the parent's nine flattened trace/acid entries (sulfate, boric
-      acid, sodium molybdate, manganese sulfate, ferrous sulfate, cobalt chloride, cupric
-      sulfate, zinc chloride and sodium iodide) with 1.6 mL of trace-salts stock per
-      liter of chemostat medium. Do not retain both the flattened ingredients and this
-      stock dose.
+    source_text: Replace the parent's nine flattened trace/acid entries (sulfate,
+      boric acid, sodium molybdate, manganese sulfate, ferrous sulfate, cobalt chloride,
+      cupric sulfate, zinc chloride and sodium iodide) with 1.6 mL of trace-salts
+      stock per liter of chemostat medium. Do not retain both the flattened ingredients
+      and this stock dose.
   - action: REMOVE
     ingredient:
       preferred_term: Ferrous sulfate
-      notes: Removed as a flattened final-medium entry; source stock constituents are
-        retained separately at their stock-preparation stage.
+      notes: Removed as a flattened final-medium entry; source stock constituents
+        are retained separately at their stock-preparation stage.
     stage: replacement of flattened parent trace entries by a stock addition
     evidence:
     - reference: doi:10.1186/1475-2859-8-29
@@ -984,22 +988,23 @@ variants:
       snippet: 1.6 mL of trace salts stock solution.
       explanation: 'Additional file3, A21 and A24–A33; parent descriptor comparison.
         Primary source inspected 2026-11-16; supports this source-scoped variant assertion,
-        not equivalence of the whole parent recipe. Additional file3, A13 header: "Chemostat
-        medium contained per Liter". The nine old flattened descriptors are replaced
-        as a group by this stock addition; constituent identities/stock concentrations
-        are separately supported by A24–A33. This is not physical absence from the stock.
-        Exact excerpt clarification for issue763; scientific payload unchanged.'
+        not equivalence of the whole parent recipe. Additional file3, A13 header:
+        "Chemostat medium contained per Liter". The nine old flattened descriptors
+        are replaced as a group by this stock addition; constituent identities/stock
+        concentrations are separately supported by A24–A33. This is not physical absence
+        from the stock. Exact excerpt clarification for issue763; scientific payload
+        unchanged.'
     source_modification_index: 4
-    source_text: Replace the parent's nine flattened trace/acid entries (sulfate, boric
-      acid, sodium molybdate, manganese sulfate, ferrous sulfate, cobalt chloride, cupric
-      sulfate, zinc chloride and sodium iodide) with 1.6 mL of trace-salts stock per
-      liter of chemostat medium. Do not retain both the flattened ingredients and this
-      stock dose.
+    source_text: Replace the parent's nine flattened trace/acid entries (sulfate,
+      boric acid, sodium molybdate, manganese sulfate, ferrous sulfate, cobalt chloride,
+      cupric sulfate, zinc chloride and sodium iodide) with 1.6 mL of trace-salts
+      stock per liter of chemostat medium. Do not retain both the flattened ingredients
+      and this stock dose.
   - action: REMOVE
     ingredient:
       preferred_term: Cobalt chloride
-      notes: Removed as a flattened final-medium entry; source stock constituents are
-        retained separately at their stock-preparation stage.
+      notes: Removed as a flattened final-medium entry; source stock constituents
+        are retained separately at their stock-preparation stage.
     stage: replacement of flattened parent trace entries by a stock addition
     evidence:
     - reference: doi:10.1186/1475-2859-8-29
@@ -1007,22 +1012,23 @@ variants:
       snippet: 1.6 mL of trace salts stock solution.
       explanation: 'Additional file3, A21 and A24–A33; parent descriptor comparison.
         Primary source inspected 2026-11-16; supports this source-scoped variant assertion,
-        not equivalence of the whole parent recipe. Additional file3, A13 header: "Chemostat
-        medium contained per Liter". The nine old flattened descriptors are replaced
-        as a group by this stock addition; constituent identities/stock concentrations
-        are separately supported by A24–A33. This is not physical absence from the stock.
-        Exact excerpt clarification for issue763; scientific payload unchanged.'
+        not equivalence of the whole parent recipe. Additional file3, A13 header:
+        "Chemostat medium contained per Liter". The nine old flattened descriptors
+        are replaced as a group by this stock addition; constituent identities/stock
+        concentrations are separately supported by A24–A33. This is not physical absence
+        from the stock. Exact excerpt clarification for issue763; scientific payload
+        unchanged.'
     source_modification_index: 4
-    source_text: Replace the parent's nine flattened trace/acid entries (sulfate, boric
-      acid, sodium molybdate, manganese sulfate, ferrous sulfate, cobalt chloride, cupric
-      sulfate, zinc chloride and sodium iodide) with 1.6 mL of trace-salts stock per
-      liter of chemostat medium. Do not retain both the flattened ingredients and this
-      stock dose.
+    source_text: Replace the parent's nine flattened trace/acid entries (sulfate,
+      boric acid, sodium molybdate, manganese sulfate, ferrous sulfate, cobalt chloride,
+      cupric sulfate, zinc chloride and sodium iodide) with 1.6 mL of trace-salts
+      stock per liter of chemostat medium. Do not retain both the flattened ingredients
+      and this stock dose.
   - action: REMOVE
     ingredient:
       preferred_term: Cupric sulfate
-      notes: Removed as a flattened final-medium entry; source stock constituents are
-        retained separately at their stock-preparation stage.
+      notes: Removed as a flattened final-medium entry; source stock constituents
+        are retained separately at their stock-preparation stage.
     stage: replacement of flattened parent trace entries by a stock addition
     evidence:
     - reference: doi:10.1186/1475-2859-8-29
@@ -1030,22 +1036,23 @@ variants:
       snippet: 1.6 mL of trace salts stock solution.
       explanation: 'Additional file3, A21 and A24–A33; parent descriptor comparison.
         Primary source inspected 2026-11-16; supports this source-scoped variant assertion,
-        not equivalence of the whole parent recipe. Additional file3, A13 header: "Chemostat
-        medium contained per Liter". The nine old flattened descriptors are replaced
-        as a group by this stock addition; constituent identities/stock concentrations
-        are separately supported by A24–A33. This is not physical absence from the stock.
-        Exact excerpt clarification for issue763; scientific payload unchanged.'
+        not equivalence of the whole parent recipe. Additional file3, A13 header:
+        "Chemostat medium contained per Liter". The nine old flattened descriptors
+        are replaced as a group by this stock addition; constituent identities/stock
+        concentrations are separately supported by A24–A33. This is not physical absence
+        from the stock. Exact excerpt clarification for issue763; scientific payload
+        unchanged.'
     source_modification_index: 4
-    source_text: Replace the parent's nine flattened trace/acid entries (sulfate, boric
-      acid, sodium molybdate, manganese sulfate, ferrous sulfate, cobalt chloride, cupric
-      sulfate, zinc chloride and sodium iodide) with 1.6 mL of trace-salts stock per
-      liter of chemostat medium. Do not retain both the flattened ingredients and this
-      stock dose.
+    source_text: Replace the parent's nine flattened trace/acid entries (sulfate,
+      boric acid, sodium molybdate, manganese sulfate, ferrous sulfate, cobalt chloride,
+      cupric sulfate, zinc chloride and sodium iodide) with 1.6 mL of trace-salts
+      stock per liter of chemostat medium. Do not retain both the flattened ingredients
+      and this stock dose.
   - action: REMOVE
     ingredient:
       preferred_term: Zinc Chloride
-      notes: Removed as a flattened final-medium entry; source stock constituents are
-        retained separately at their stock-preparation stage.
+      notes: Removed as a flattened final-medium entry; source stock constituents
+        are retained separately at their stock-preparation stage.
     stage: replacement of flattened parent trace entries by a stock addition
     evidence:
     - reference: doi:10.1186/1475-2859-8-29
@@ -1053,22 +1060,23 @@ variants:
       snippet: 1.6 mL of trace salts stock solution.
       explanation: 'Additional file3, A21 and A24–A33; parent descriptor comparison.
         Primary source inspected 2026-11-16; supports this source-scoped variant assertion,
-        not equivalence of the whole parent recipe. Additional file3, A13 header: "Chemostat
-        medium contained per Liter". The nine old flattened descriptors are replaced
-        as a group by this stock addition; constituent identities/stock concentrations
-        are separately supported by A24–A33. This is not physical absence from the stock.
-        Exact excerpt clarification for issue763; scientific payload unchanged.'
+        not equivalence of the whole parent recipe. Additional file3, A13 header:
+        "Chemostat medium contained per Liter". The nine old flattened descriptors
+        are replaced as a group by this stock addition; constituent identities/stock
+        concentrations are separately supported by A24–A33. This is not physical absence
+        from the stock. Exact excerpt clarification for issue763; scientific payload
+        unchanged.'
     source_modification_index: 4
-    source_text: Replace the parent's nine flattened trace/acid entries (sulfate, boric
-      acid, sodium molybdate, manganese sulfate, ferrous sulfate, cobalt chloride, cupric
-      sulfate, zinc chloride and sodium iodide) with 1.6 mL of trace-salts stock per
-      liter of chemostat medium. Do not retain both the flattened ingredients and this
-      stock dose.
+    source_text: Replace the parent's nine flattened trace/acid entries (sulfate,
+      boric acid, sodium molybdate, manganese sulfate, ferrous sulfate, cobalt chloride,
+      cupric sulfate, zinc chloride and sodium iodide) with 1.6 mL of trace-salts
+      stock per liter of chemostat medium. Do not retain both the flattened ingredients
+      and this stock dose.
   - action: REMOVE
     ingredient:
       preferred_term: Sodium iodide
-      notes: Removed as a flattened final-medium entry; source stock constituents are
-        retained separately at their stock-preparation stage.
+      notes: Removed as a flattened final-medium entry; source stock constituents
+        are retained separately at their stock-preparation stage.
     stage: replacement of flattened parent trace entries by a stock addition
     evidence:
     - reference: doi:10.1186/1475-2859-8-29
@@ -1076,17 +1084,18 @@ variants:
       snippet: 1.6 mL of trace salts stock solution.
       explanation: 'Additional file3, A21 and A24–A33; parent descriptor comparison.
         Primary source inspected 2026-11-16; supports this source-scoped variant assertion,
-        not equivalence of the whole parent recipe. Additional file3, A13 header: "Chemostat
-        medium contained per Liter". The nine old flattened descriptors are replaced
-        as a group by this stock addition; constituent identities/stock concentrations
-        are separately supported by A24–A33. This is not physical absence from the stock.
-        Exact excerpt clarification for issue763; scientific payload unchanged.'
+        not equivalence of the whole parent recipe. Additional file3, A13 header:
+        "Chemostat medium contained per Liter". The nine old flattened descriptors
+        are replaced as a group by this stock addition; constituent identities/stock
+        concentrations are separately supported by A24–A33. This is not physical absence
+        from the stock. Exact excerpt clarification for issue763; scientific payload
+        unchanged.'
     source_modification_index: 4
-    source_text: Replace the parent's nine flattened trace/acid entries (sulfate, boric
-      acid, sodium molybdate, manganese sulfate, ferrous sulfate, cobalt chloride, cupric
-      sulfate, zinc chloride and sodium iodide) with 1.6 mL of trace-salts stock per
-      liter of chemostat medium. Do not retain both the flattened ingredients and this
-      stock dose.
+    source_text: Replace the parent's nine flattened trace/acid entries (sulfate,
+      boric acid, sodium molybdate, manganese sulfate, ferrous sulfate, cobalt chloride,
+      cupric sulfate, zinc chloride and sodium iodide) with 1.6 mL of trace-salts
+      stock per liter of chemostat medium. Do not retain both the flattened ingredients
+      and this stock dose.
   - action: ADD
     ingredient:
       preferred_term: trace-salts stock solution
@@ -1105,11 +1114,11 @@ variants:
         medium contained per Liter". Exact excerpt clarification for issue763; scientific
         payload unchanged.'
     source_modification_index: 4
-    source_text: Replace the parent's nine flattened trace/acid entries (sulfate, boric
-      acid, sodium molybdate, manganese sulfate, ferrous sulfate, cobalt chloride, cupric
-      sulfate, zinc chloride and sodium iodide) with 1.6 mL of trace-salts stock per
-      liter of chemostat medium. Do not retain both the flattened ingredients and this
-      stock dose.
+    source_text: Replace the parent's nine flattened trace/acid entries (sulfate,
+      boric acid, sodium molybdate, manganese sulfate, ferrous sulfate, cobalt chloride,
+      cupric sulfate, zinc chloride and sodium iodide) with 1.6 mL of trace-salts
+      stock per liter of chemostat medium. Do not retain both the flattened ingredients
+      and this stock dose.
   - action: ADD
     ingredient:
       preferred_term: CuSO4 pentahydrate
@@ -1126,15 +1135,15 @@ variants:
       snippet: 6.0 g CuSO4 · 5H2O
       explanation: 'Additional file3, cellsA24,A25. Primary source inspected 2026-11-16;
         supports this source-scoped variant assertion, not equivalence of the whole
-        parent recipe. Additional file3 A25; separately located A24 header: "Trace salts
-        stock solution contained per Liter". Exact excerpt clarification for issue763;
-        scientific payload unchanged.'
+        parent recipe. Additional file3 A25; separately located A24 header: "Trace
+        salts stock solution contained per Liter". Exact excerpt clarification for
+        issue763; scientific payload unchanged.'
     source_modification_index: 5
-    source_text: 'Trace-salts stock, per liter of stock: 6.0 g CuSO4 pentahydrate, 0.08
-      g NaI, 3.0 g MnSO4 monohydrate, 0.2 g Na2MoO4 dihydrate, 0.02 g H3BO3, 0.5 g CoCl2,
-      20.0 g ZnCl2, 5.0 g FeSO4 heptahydrate and 5 mL H2SO4 (95-98% w/w). These are
-      stock amounts, not final-medium amounts; no acid density or molar conversion is
-      inferred.'
+    source_text: 'Trace-salts stock, per liter of stock: 6.0 g CuSO4 pentahydrate,
+      0.08 g NaI, 3.0 g MnSO4 monohydrate, 0.2 g Na2MoO4 dihydrate, 0.02 g H3BO3,
+      0.5 g CoCl2, 20.0 g ZnCl2, 5.0 g FeSO4 heptahydrate and 5 mL H2SO4 (95-98% w/w).
+      These are stock amounts, not final-medium amounts; no acid density or molar
+      conversion is inferred.'
   - action: ADD
     ingredient:
       preferred_term: NaI
@@ -1151,15 +1160,15 @@ variants:
       snippet: 0.08 g NaI
       explanation: 'Additional file3, cellsA24,A26. Primary source inspected 2026-11-16;
         supports this source-scoped variant assertion, not equivalence of the whole
-        parent recipe. Additional file3 A26; separately located A24 header: "Trace salts
-        stock solution contained per Liter". Exact excerpt clarification for issue763;
-        scientific payload unchanged.'
+        parent recipe. Additional file3 A26; separately located A24 header: "Trace
+        salts stock solution contained per Liter". Exact excerpt clarification for
+        issue763; scientific payload unchanged.'
     source_modification_index: 5
-    source_text: 'Trace-salts stock, per liter of stock: 6.0 g CuSO4 pentahydrate, 0.08
-      g NaI, 3.0 g MnSO4 monohydrate, 0.2 g Na2MoO4 dihydrate, 0.02 g H3BO3, 0.5 g CoCl2,
-      20.0 g ZnCl2, 5.0 g FeSO4 heptahydrate and 5 mL H2SO4 (95-98% w/w). These are
-      stock amounts, not final-medium amounts; no acid density or molar conversion is
-      inferred.'
+    source_text: 'Trace-salts stock, per liter of stock: 6.0 g CuSO4 pentahydrate,
+      0.08 g NaI, 3.0 g MnSO4 monohydrate, 0.2 g Na2MoO4 dihydrate, 0.02 g H3BO3,
+      0.5 g CoCl2, 20.0 g ZnCl2, 5.0 g FeSO4 heptahydrate and 5 mL H2SO4 (95-98% w/w).
+      These are stock amounts, not final-medium amounts; no acid density or molar
+      conversion is inferred.'
   - action: ADD
     ingredient:
       preferred_term: MnSO4 monohydrate
@@ -1176,15 +1185,15 @@ variants:
       snippet: 3.0 g MnSO4 ·H2O
       explanation: 'Additional file3, cellsA24,A27. Primary source inspected 2026-11-16;
         supports this source-scoped variant assertion, not equivalence of the whole
-        parent recipe. Additional file3 A27; separately located A24 header: "Trace salts
-        stock solution contained per Liter". Exact excerpt clarification for issue763;
-        scientific payload unchanged.'
+        parent recipe. Additional file3 A27; separately located A24 header: "Trace
+        salts stock solution contained per Liter". Exact excerpt clarification for
+        issue763; scientific payload unchanged.'
     source_modification_index: 5
-    source_text: 'Trace-salts stock, per liter of stock: 6.0 g CuSO4 pentahydrate, 0.08
-      g NaI, 3.0 g MnSO4 monohydrate, 0.2 g Na2MoO4 dihydrate, 0.02 g H3BO3, 0.5 g CoCl2,
-      20.0 g ZnCl2, 5.0 g FeSO4 heptahydrate and 5 mL H2SO4 (95-98% w/w). These are
-      stock amounts, not final-medium amounts; no acid density or molar conversion is
-      inferred.'
+    source_text: 'Trace-salts stock, per liter of stock: 6.0 g CuSO4 pentahydrate,
+      0.08 g NaI, 3.0 g MnSO4 monohydrate, 0.2 g Na2MoO4 dihydrate, 0.02 g H3BO3,
+      0.5 g CoCl2, 20.0 g ZnCl2, 5.0 g FeSO4 heptahydrate and 5 mL H2SO4 (95-98% w/w).
+      These are stock amounts, not final-medium amounts; no acid density or molar
+      conversion is inferred.'
   - action: ADD
     ingredient:
       preferred_term: Na2MoO4 dihydrate
@@ -1201,15 +1210,15 @@ variants:
       snippet: 0.2g Na2MoO4 · 2H2O
       explanation: 'Additional file3, cellsA24,A28. Primary source inspected 2026-11-16;
         supports this source-scoped variant assertion, not equivalence of the whole
-        parent recipe. Additional file3 A28; separately located A24 header: "Trace salts
-        stock solution contained per Liter". Exact excerpt clarification for issue763;
-        scientific payload unchanged.'
+        parent recipe. Additional file3 A28; separately located A24 header: "Trace
+        salts stock solution contained per Liter". Exact excerpt clarification for
+        issue763; scientific payload unchanged.'
     source_modification_index: 5
-    source_text: 'Trace-salts stock, per liter of stock: 6.0 g CuSO4 pentahydrate, 0.08
-      g NaI, 3.0 g MnSO4 monohydrate, 0.2 g Na2MoO4 dihydrate, 0.02 g H3BO3, 0.5 g CoCl2,
-      20.0 g ZnCl2, 5.0 g FeSO4 heptahydrate and 5 mL H2SO4 (95-98% w/w). These are
-      stock amounts, not final-medium amounts; no acid density or molar conversion is
-      inferred.'
+    source_text: 'Trace-salts stock, per liter of stock: 6.0 g CuSO4 pentahydrate,
+      0.08 g NaI, 3.0 g MnSO4 monohydrate, 0.2 g Na2MoO4 dihydrate, 0.02 g H3BO3,
+      0.5 g CoCl2, 20.0 g ZnCl2, 5.0 g FeSO4 heptahydrate and 5 mL H2SO4 (95-98% w/w).
+      These are stock amounts, not final-medium amounts; no acid density or molar
+      conversion is inferred.'
   - action: ADD
     ingredient:
       preferred_term: H3BO3
@@ -1226,15 +1235,15 @@ variants:
       snippet: 0.02 g H3BO3
       explanation: 'Additional file3, cellsA24,A29. Primary source inspected 2026-11-16;
         supports this source-scoped variant assertion, not equivalence of the whole
-        parent recipe. Additional file3 A29; separately located A24 header: "Trace salts
-        stock solution contained per Liter". Exact excerpt clarification for issue763;
-        scientific payload unchanged.'
+        parent recipe. Additional file3 A29; separately located A24 header: "Trace
+        salts stock solution contained per Liter". Exact excerpt clarification for
+        issue763; scientific payload unchanged.'
     source_modification_index: 5
-    source_text: 'Trace-salts stock, per liter of stock: 6.0 g CuSO4 pentahydrate, 0.08
-      g NaI, 3.0 g MnSO4 monohydrate, 0.2 g Na2MoO4 dihydrate, 0.02 g H3BO3, 0.5 g CoCl2,
-      20.0 g ZnCl2, 5.0 g FeSO4 heptahydrate and 5 mL H2SO4 (95-98% w/w). These are
-      stock amounts, not final-medium amounts; no acid density or molar conversion is
-      inferred.'
+    source_text: 'Trace-salts stock, per liter of stock: 6.0 g CuSO4 pentahydrate,
+      0.08 g NaI, 3.0 g MnSO4 monohydrate, 0.2 g Na2MoO4 dihydrate, 0.02 g H3BO3,
+      0.5 g CoCl2, 20.0 g ZnCl2, 5.0 g FeSO4 heptahydrate and 5 mL H2SO4 (95-98% w/w).
+      These are stock amounts, not final-medium amounts; no acid density or molar
+      conversion is inferred.'
   - action: ADD
     ingredient:
       preferred_term: CoCl2
@@ -1251,15 +1260,15 @@ variants:
       snippet: 0.5 g CoCl2
       explanation: 'Additional file3, cellsA24,A30. Primary source inspected 2026-11-16;
         supports this source-scoped variant assertion, not equivalence of the whole
-        parent recipe. Additional file3 A30; separately located A24 header: "Trace salts
-        stock solution contained per Liter". Exact excerpt clarification for issue763;
-        scientific payload unchanged.'
+        parent recipe. Additional file3 A30; separately located A24 header: "Trace
+        salts stock solution contained per Liter". Exact excerpt clarification for
+        issue763; scientific payload unchanged.'
     source_modification_index: 5
-    source_text: 'Trace-salts stock, per liter of stock: 6.0 g CuSO4 pentahydrate, 0.08
-      g NaI, 3.0 g MnSO4 monohydrate, 0.2 g Na2MoO4 dihydrate, 0.02 g H3BO3, 0.5 g CoCl2,
-      20.0 g ZnCl2, 5.0 g FeSO4 heptahydrate and 5 mL H2SO4 (95-98% w/w). These are
-      stock amounts, not final-medium amounts; no acid density or molar conversion is
-      inferred.'
+    source_text: 'Trace-salts stock, per liter of stock: 6.0 g CuSO4 pentahydrate,
+      0.08 g NaI, 3.0 g MnSO4 monohydrate, 0.2 g Na2MoO4 dihydrate, 0.02 g H3BO3,
+      0.5 g CoCl2, 20.0 g ZnCl2, 5.0 g FeSO4 heptahydrate and 5 mL H2SO4 (95-98% w/w).
+      These are stock amounts, not final-medium amounts; no acid density or molar
+      conversion is inferred.'
   - action: ADD
     ingredient:
       preferred_term: ZnCl2
@@ -1276,15 +1285,15 @@ variants:
       snippet: 20.0 g ZnCl2
       explanation: 'Additional file3, cellsA24,A31. Primary source inspected 2026-11-16;
         supports this source-scoped variant assertion, not equivalence of the whole
-        parent recipe. Additional file3 A31; separately located A24 header: "Trace salts
-        stock solution contained per Liter". Exact excerpt clarification for issue763;
-        scientific payload unchanged.'
+        parent recipe. Additional file3 A31; separately located A24 header: "Trace
+        salts stock solution contained per Liter". Exact excerpt clarification for
+        issue763; scientific payload unchanged.'
     source_modification_index: 5
-    source_text: 'Trace-salts stock, per liter of stock: 6.0 g CuSO4 pentahydrate, 0.08
-      g NaI, 3.0 g MnSO4 monohydrate, 0.2 g Na2MoO4 dihydrate, 0.02 g H3BO3, 0.5 g CoCl2,
-      20.0 g ZnCl2, 5.0 g FeSO4 heptahydrate and 5 mL H2SO4 (95-98% w/w). These are
-      stock amounts, not final-medium amounts; no acid density or molar conversion is
-      inferred.'
+    source_text: 'Trace-salts stock, per liter of stock: 6.0 g CuSO4 pentahydrate,
+      0.08 g NaI, 3.0 g MnSO4 monohydrate, 0.2 g Na2MoO4 dihydrate, 0.02 g H3BO3,
+      0.5 g CoCl2, 20.0 g ZnCl2, 5.0 g FeSO4 heptahydrate and 5 mL H2SO4 (95-98% w/w).
+      These are stock amounts, not final-medium amounts; no acid density or molar
+      conversion is inferred.'
   - action: ADD
     ingredient:
       preferred_term: FeSO4 heptahydrate
@@ -1301,15 +1310,15 @@ variants:
       snippet: 5.0 g FeSO4 · 7H2O
       explanation: 'Additional file3, cellsA24,A32. Primary source inspected 2026-11-16;
         supports this source-scoped variant assertion, not equivalence of the whole
-        parent recipe. Additional file3 A32; separately located A24 header: "Trace salts
-        stock solution contained per Liter". Exact excerpt clarification for issue763;
-        scientific payload unchanged.'
+        parent recipe. Additional file3 A32; separately located A24 header: "Trace
+        salts stock solution contained per Liter". Exact excerpt clarification for
+        issue763; scientific payload unchanged.'
     source_modification_index: 5
-    source_text: 'Trace-salts stock, per liter of stock: 6.0 g CuSO4 pentahydrate, 0.08
-      g NaI, 3.0 g MnSO4 monohydrate, 0.2 g Na2MoO4 dihydrate, 0.02 g H3BO3, 0.5 g CoCl2,
-      20.0 g ZnCl2, 5.0 g FeSO4 heptahydrate and 5 mL H2SO4 (95-98% w/w). These are
-      stock amounts, not final-medium amounts; no acid density or molar conversion is
-      inferred.'
+    source_text: 'Trace-salts stock, per liter of stock: 6.0 g CuSO4 pentahydrate,
+      0.08 g NaI, 3.0 g MnSO4 monohydrate, 0.2 g Na2MoO4 dihydrate, 0.02 g H3BO3,
+      0.5 g CoCl2, 20.0 g ZnCl2, 5.0 g FeSO4 heptahydrate and 5 mL H2SO4 (95-98% w/w).
+      These are stock amounts, not final-medium amounts; no acid density or molar
+      conversion is inferred.'
   - action: ADD
     ingredient:
       preferred_term: H2SO4 (95–98% w/w)
@@ -1326,15 +1335,15 @@ variants:
       snippet: 5 mL H2SO4 (95-98% w/w)
       explanation: 'Additional file3, cellsA24,A33. Primary source inspected 2026-11-16;
         supports this source-scoped variant assertion, not equivalence of the whole
-        parent recipe. Additional file3 A33; separately located A24 header: "Trace salts
-        stock solution contained per Liter". Exact excerpt clarification for issue763;
-        scientific payload unchanged.'
+        parent recipe. Additional file3 A33; separately located A24 header: "Trace
+        salts stock solution contained per Liter". Exact excerpt clarification for
+        issue763; scientific payload unchanged.'
     source_modification_index: 5
-    source_text: 'Trace-salts stock, per liter of stock: 6.0 g CuSO4 pentahydrate, 0.08
-      g NaI, 3.0 g MnSO4 monohydrate, 0.2 g Na2MoO4 dihydrate, 0.02 g H3BO3, 0.5 g CoCl2,
-      20.0 g ZnCl2, 5.0 g FeSO4 heptahydrate and 5 mL H2SO4 (95-98% w/w). These are
-      stock amounts, not final-medium amounts; no acid density or molar conversion is
-      inferred.'
+    source_text: 'Trace-salts stock, per liter of stock: 6.0 g CuSO4 pentahydrate,
+      0.08 g NaI, 3.0 g MnSO4 monohydrate, 0.2 g Na2MoO4 dihydrate, 0.02 g H3BO3,
+      0.5 g CoCl2, 20.0 g ZnCl2, 5.0 g FeSO4 heptahydrate and 5 mL H2SO4 (95-98% w/w).
+      These are stock amounts, not final-medium amounts; no acid density or molar
+      conversion is inferred.'
   - action: ADD
     ingredient:
       preferred_term: HCl
@@ -1365,11 +1374,11 @@ variants:
     - reference: doi:10.1186/1475-2859-8-29
       supports: SUPPORT
       snippet: pH = 5.0 (controlled with 25% ammonium hydroxide)
-      explanation: Additional file3, cellA39. Primary source inspected 2026-11-16; supports
-        this source-scoped variant assertion, not equivalence of the whole parent recipe.
-        Additional file3 A39 within the section headed A35 "Chemostat parameters". Percentage
-        basis is not supplied. Exact excerpt clarification for issue763; scientific
-        payload unchanged.
+      explanation: Additional file3, cellA39. Primary source inspected 2026-11-16;
+        supports this source-scoped variant assertion, not equivalence of the whole
+        parent recipe. Additional file3 A39 within the section headed A35 "Chemostat
+        parameters". Percentage basis is not supplied. Exact excerpt clarification
+        for issue763; scientific payload unchanged.
     source_modification_index: 6
     source_text: Set initial medium pH to 5.0 using 25% HCl as stated in the supplement;
       its percentage basis and a fixed titrant volume are not specified. The chemostat

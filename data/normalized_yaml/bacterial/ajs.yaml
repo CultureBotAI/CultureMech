@@ -343,9 +343,9 @@ variants:
       supports: SUPPORT
       snippet: pH 1.5 using hydrochloric acid
       explanation: Methods, culture conditions and bacterial interference experiment.
-        Supports only the named descriptor/event at the stated stage. Replaces the canonical
-        acidification instruction only. Strength and dose are unspecified; pH is not
-        a concentration. Source inspected 2026-11-16; SHA256 7e3ddf65f336955a2c875b18361e878ffcf16bc341fe9b404308d014df4c3319.
+        Supports only the named descriptor/event at the stated stage. Replaces the
+        canonical acidification instruction only. Strength and dose are unspecified;
+        pH is not a concentration. Source inspected 2026-11-16; SHA256 7e3ddf65f336955a2c875b18361e878ffcf16bc341fe9b404308d014df4c3319.
         No parent formulation, growth, ontology identity, or missing dose is inferred.
     replaced_ingredient:
       preferred_term: sulfuric acid
