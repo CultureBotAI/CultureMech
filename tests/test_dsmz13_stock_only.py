@@ -157,6 +157,8 @@ def test_applied_hash_and_independent_inversion(source_case):
 
 
 def test_corpus_fingerprint_impact_is_exactly_stock_only_or_nested():
+    from audit_variant_ingredient_successor import restore_before
+
     impact = json.loads((REPORT / "fingerprint-impact-before-curation.json").read_text())
     assert impact["records"] == 15910
     assert len(impact["changed"]) == 38
@@ -182,7 +184,7 @@ def test_corpus_fingerprint_impact_is_exactly_stock_only_or_nested():
     rs_audit = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(rs_audit)
     for row in impact["changed"]:
-        raw = (ROOT / row["path"]).read_bytes()
+        raw = restore_before((ROOT / row["path"]).read_bytes(), row["path"])
         # Preserve the historical impact snapshot; accept only an independently
         # inverted, hash-linked successor, not arbitrary later source edits.
         if row["path"] in successors:

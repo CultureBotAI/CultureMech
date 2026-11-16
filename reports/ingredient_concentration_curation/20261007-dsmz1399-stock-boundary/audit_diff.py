@@ -95,6 +95,7 @@ PAPER_CITATION_PLAN = PLAN.parent.parent / "20261015-paper-citation-successors/p
 STAGE5_REMEDIATION_PLAN = (
     PLAN.parent.parent / "20261021-stage5-review-remediation-successors/plan.json"
 )
+VARIANT_INGREDIENT_PLAN = PLAN.parent.parent / "20261116-variant-ingredient-occurrences/plan.json"
 counts = collections.Counter()
 
 
@@ -140,6 +141,11 @@ def provenance_counts(node):
 
 
 def invert_review(before, after, item):
+    if item.get("action") == "REGISTERED_VARIANT_INGREDIENT_SUCCESSOR":
+        from audit_variant_ingredient_successor import check
+
+        counts.update(check(before, after, item))
+        return
     if item.get("action") == "REGISTERED_STAGE5_REVIEW_REMEDIATION_SUCCESSOR":
         from audit_stage5_review_remediation_successor import check
 
@@ -1508,6 +1514,7 @@ def review_plans():
         UTEX_VOLVOCACEAN_BG11_PLAN,
         PAPER_CITATION_PLAN,
         STAGE5_REMEDIATION_PLAN,
+        VARIANT_INGREDIENT_PLAN,
     )
 
 

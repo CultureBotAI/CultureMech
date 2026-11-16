@@ -7,6 +7,7 @@ from collections import Counter
 
 import pytest
 import yaml
+from audit_variant_ingredient_successor import restore_before
 
 from tests.test_medium_concentration_batch import AUDIT, FOLLOWUPS, ROOT
 
@@ -22,7 +23,7 @@ def test_registered_citation_successors_preserve_historical_recipe():
     assert len(plan["records"]) == 10
     assert len({row["path"] for row in plan["records"]}) == 10
     for item in plan["records"]:
-        raw = (ROOT / item["path"]).read_bytes()
+        raw = restore_before((ROOT / item["path"]).read_bytes(), item["path"])
         assert hashlib.sha256(raw).hexdigest() == item["after_sha256"]
         assert AUDIT.invert_chain(raw, [item]) == yaml.safe_load(item["before_text"])
 
