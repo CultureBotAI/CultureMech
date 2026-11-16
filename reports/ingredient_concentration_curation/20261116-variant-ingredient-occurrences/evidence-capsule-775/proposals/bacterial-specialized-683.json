@@ -1,0 +1,1542 @@
+{
+  "schema_version": 1,
+  "source_queue_sha256": "dd5faea741da0a11e8eb86cad2976e8bf51d42884c601e96973eba61748330ca",
+  "issue": "https://github.com/CultureBotAI/CultureMech/issues/683",
+  "scope": "Explicit bacterial_remaining and specialized_remaining decisions; partial source coverage, no recipe application",
+  "source_inspections": [
+    {
+      "key": "spectrum",
+      "path": ".temp/variant-683/sources/2asw-spectrum-2023/source.xml",
+      "reference": "doi:10.1128/spectrum.00069-23",
+      "locator": "Materials and Methods, Algal strains and cultivation conditions",
+      "sha256": "35398747e184a6699fa12f46288848dcc97932d087fa49e4056ea90f2debf22d",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10269666/fullTextXML",
+      "accessed_at": "2026-11-16T21:12:59.706051+00:00"
+    },
+    {
+      "key": "emami",
+      "path": ".temp/variant-683/sources/emami-2015/source.xml",
+      "reference": "doi:10.1038/srep10036",
+      "locator": "Methods, culture conditions and bacterial interference experiment",
+      "sha256": "7e3ddf65f336955a2c875b18361e878ffcf16bc341fe9b404308d014df4c3319",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4650328/fullTextXML",
+      "accessed_at": "2026-11-16T21:13:18.973062+00:00"
+    },
+    {
+      "key": "hiibel",
+      "path": ".temp/variant-683/remaining-sources/hiibel-2015/source.html",
+      "reference": "doi:10.3389/fenrg.2015.00020",
+      "locator": "Materials and Methods, Strains and media",
+      "sha256": "8d2ad2e2716dc194452015adc5b385057c1eb42a7e4e6b89eba9af2f00792d5a",
+      "url": "https://www.frontiersin.org/journals/energy-research/articles/10.3389/fenrg.2015.00020/full",
+      "accessed_at": "2026-11-16T21:15:15.295827+00:00"
+    },
+    {
+      "key": "751",
+      "path": ".temp/variant-683/remaining-sources/dsmz-751/source.pdf",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+      "locator": "Page 1, liquid-medium instruction",
+      "sha256": "721e0310d250ea6eab5d453f063b9452b48b8368ad53fa9384cb54434d2e59fb",
+      "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+      "accessed_at": "2026-11-16T21:14:01.013792+00:00"
+    },
+    {
+      "key": "125",
+      "path": ".temp/variant-683/remaining-sources/dsmz-125/source.pdf",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+      "locator": "Page 1, preparation alternatives",
+      "sha256": "e107edb0e43f303bc124e81ef0430f07fde07eb9efbcf1cea9c35e3a2190ad8f",
+      "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+      "accessed_at": "2026-11-16T21:14:25.175561+00:00"
+    },
+    {
+      "key": "956",
+      "path": ".temp/variant-683/remaining-sources/dsmz-956/source.pdf",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+      "locator": "Page 1, final paragraph",
+      "sha256": "156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39",
+      "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+      "accessed_at": "2026-11-16T21:14:24.354168+00:00"
+    },
+    {
+      "key": "1021",
+      "path": ".temp/variant-683/remaining-sources/dsmz-1021/source.pdf",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+      "locator": "Page 1, Solution A hydrolysate alternatives",
+      "sha256": "6af992ef5048ce852d2c1c88463f1eeedf3441b682522231c93341b3ce1debac",
+      "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+      "accessed_at": "2026-11-16T21:14:23.594126+00:00"
+    },
+    {
+      "key": "829",
+      "path": ".temp/variant-683/remaining-sources/dsmz-829/source.pdf",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829.pdf",
+      "locator": "Page 1, DSM 16661 and DSM 21157 prescription",
+      "sha256": "73b87bbb602b5d40fa5a442a74b8a227fc26774281d333b7718a15317fd1cb27",
+      "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829.pdf",
+      "accessed_at": "2026-11-16T21:14:24.554224+00:00"
+    },
+    {
+      "key": "nbrc",
+      "path": ".temp/variant-683/remaining-sources/nbrc-1002/source.html",
+      "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1002",
+      "locator": "Heterotrophic and autotrophic preparation alternatives",
+      "sha256": "046c306f82ac74274e54e2bae9c5e509eb66c0ddbcca159d434b694f0f88786e",
+      "url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1002",
+      "accessed_at": "2026-11-16T21:15:30.977636+00:00"
+    },
+    {
+      "key": "blumer",
+      "path": ".temp/variant-683/remaining-sources/blumer-2010/source.html",
+      "reference": "doi:10.1128/AEM.01400-10",
+      "locator": "Materials and Methods, Bacterial strains and growth on sugar substrates",
+      "sha256": "ad092222c6d2e66bbd824e3d01ecc577c741cd64ac2eea89bcc43f5b2fa15cb8",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3008241/",
+      "accessed_at": "2026-11-16T21:15:16.123000+00:00"
+    },
+    {
+      "key": "teusink",
+      "path": ".temp/variant-683/remaining-sources/teusink-2005/source.html",
+      "reference": "doi:10.1128/AEM.71.11.7253-7262.2005",
+      "locator": "Table 1, concentration column and footnotes a-b",
+      "sha256": "3b4288d316e061cdad56879cb8a30c2cccff1fe3361eb0be71778d49c9dbef91",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1287688/",
+      "accessed_at": "2026-11-16T21:15:16.247027+00:00"
+    },
+    {
+      "key": "wendisch",
+      "path": ".temp/variant-683/remaining-sources/wendisch-2000/source.html",
+      "reference": "doi:10.1128/JB.182.11.3088-3096.2000",
+      "locator": "Materials and Methods, cultivation conditions; separate Figure 1 caption",
+      "sha256": "07d1735ec2dd0ebaeb26e5c12daa965aa90315948f3e6747b220b5d15d19369e",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC94493/",
+      "accessed_at": "2026-11-16T21:15:27.416523+00:00"
+    },
+    {
+      "key": "kaminskyj",
+      "path": ".temp/variant-683/remaining-sources/kaminskyj-2001/source.pdf",
+      "reference": "doi:10.4148/1941-4765.1175",
+      "locator": "Page 26, Minimal Medium and 20 X Nitrate salts",
+      "sha256": "22e3c1c53e5746ac01b58e06f56f1bc26dca33bbb1812ddcbd3b34acbeb9cdc6",
+      "url": "https://journals.newprairiepress.org/fgr/article/1112/galley/1104/download/",
+      "accessed_at": "2026-11-16T21:16:14.691893+00:00"
+    },
+    {
+      "key": "10609610",
+      "path": ".temp/variant-683/remaining-sources/abstract-10609610/source.json",
+      "reference": "PMID:10609610",
+      "locator": "Primary article abstract indexed by Europe PMC; full methods not reviewed",
+      "sha256": "35e84b91a28f53b591554a9a986edefa68d08c52396f8d52311133a2037812d8",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A10609610+AND+SRC%3AMED&format=json&resultType=core",
+      "accessed_at": "2026-11-16T21:17:19.117018+00:00"
+    },
+    {
+      "key": "38194015",
+      "path": ".temp/variant-683/remaining-sources/abstract-38194015/source.json",
+      "reference": "PMID:38194015",
+      "locator": "Primary article abstract indexed by Europe PMC; full methods not reviewed",
+      "sha256": "6374babdb789d4cf4ece64f8539d8bbd78dd9710139d6196c752fd9cf3ffff91",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A38194015+AND+SRC%3AMED&format=json&resultType=core",
+      "accessed_at": "2026-11-16T21:17:35.117764+00:00"
+    },
+    {
+      "key": "12420179",
+      "path": ".temp/variant-683/remaining-sources/abstract-12420179/source.json",
+      "reference": "PMID:12420179",
+      "locator": "Primary article abstract indexed by Europe PMC; full methods not reviewed",
+      "sha256": "b1e8c1d7ee39651d2ad5a4c17b8fcd2d0758aee5f717378e442381e92fa5963b",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A12420179+AND+SRC%3AMED&format=json&resultType=core",
+      "accessed_at": "2026-11-16T21:17:35.060816+00:00"
+    },
+    {
+      "key": "19826864",
+      "path": ".temp/variant-683/remaining-sources/abstract-19826864/source.json",
+      "reference": "PMID:19826864",
+      "locator": "Primary article abstract indexed by Europe PMC; full methods not reviewed",
+      "sha256": "6429c3b3fce615d13eb83f68eae574c48fa8e8dd60729b4744fd5615f88d0e8b",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A19826864+AND+SRC%3AMED&format=json&resultType=core",
+      "accessed_at": "2026-11-16T21:17:36.234012+00:00"
+    },
+    {
+      "key": "15931519",
+      "path": ".temp/variant-683/remaining-sources/abstract-15931519/source.json",
+      "reference": "PMID:15931519",
+      "locator": "Primary article abstract indexed by Europe PMC; full methods not reviewed",
+      "sha256": "0e246ebb54c67a39f834240a8875f5725c426276c86f3fc8ba5488997858e462",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A15931519+AND+SRC%3AMED&format=json&resultType=core",
+      "accessed_at": "2026-11-16T21:17:36.482080+00:00"
+    },
+    {
+      "key": "37088211",
+      "path": ".temp/variant-683/remaining-sources/abstract-37088211/source.json",
+      "reference": "PMID:37088211",
+      "locator": "Primary article abstract indexed by Europe PMC; full methods not reviewed",
+      "sha256": "aec3da0e724798ee8a372f1cba3cba6c4efc1212e246095d92b50f11ff1ba277",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A37088211+AND+SRC%3AMED&format=json&resultType=core",
+      "accessed_at": "2026-11-16T21:17:35.148211+00:00"
+    },
+    {
+      "key": "35960254",
+      "path": ".temp/variant-683/remaining-sources/abstract-35960254/source.json",
+      "reference": "PMID:35960254",
+      "locator": "Primary article abstract indexed by Europe PMC; full methods not reviewed",
+      "sha256": "46d3ffd560e195e57c26c259af2ea6d849bfcc46e38ae96ad653339c771e4021",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A35960254+AND+SRC%3AMED&format=json&resultType=core",
+      "accessed_at": "2026-11-16T21:17:36.082234+00:00"
+    },
+    {
+      "key": "7520742",
+      "path": ".temp/variant-683/remaining-sources/abstract-7520742/source.json",
+      "reference": "PMID:7520742",
+      "locator": "Primary article abstract indexed by Europe PMC; full methods not reviewed",
+      "sha256": "af16343d832a80e5445262ea29f8763dba74effdea479ef8bdc173e715cba1a5",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A7520742+AND+SRC%3AMED&format=json&resultType=core",
+      "accessed_at": "2026-11-16T21:17:33.559492+00:00"
+    }
+  ],
+  "records": [
+    {
+      "path": "data/normalized_yaml/bacterial/2asw.yaml",
+      "recipe_id": "CultureMech:000415",
+      "expected_sha256": "53791685ae44730a58fbbe48317248326a162377283a40c727eec72b7509bdb9",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "2asw_1_5_m_nacl",
+          "ingredient_changes": [
+            {
+              "action": "SET_CONCENTRATION",
+              "ingredient": {
+                "preferred_term": "sodium chloride",
+                "concentration": {
+                  "value": "1.5",
+                  "unit": "MOLAR"
+                },
+                "notes": "Reported medium concentration, not stock or amount added; complete basal formula remains unresolved."
+              },
+              "stage": "reported 2ASW culture medium",
+              "source_modification_index": 0,
+              "source_text": "The study reports 1.5 M NaCl in its 2ASW culture medium. This is a reported medium concentration, not a stock concentration or inferred amount to add.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/spectrum.00069-23",
+                  "supports": "SUPPORT",
+                  "snippet": "1.5 M NaCl",
+                  "explanation": "Materials and Methods, Algal strains and cultivation conditions. Supports only the named descriptor/event at the stated stage. Reported medium concentration, not stock or amount added; complete basal formula remains unresolved. Source inspected 2026-11-16; SHA256 35398747e184a6699fa12f46288848dcc97932d087fa49e4056ea90f2debf22d. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "variant_index": 1,
+          "variant_name": "2asw_sea_salt_substitution_33_6_g_l",
+          "ingredient_changes": [
+            {
+              "action": "REPLACE",
+              "ingredient": {
+                "preferred_term": "sea salts",
+                "concentration": {
+                  "value": "33.6",
+                  "unit": "G_PER_L"
+                },
+                "notes": "Undefined sea-salt mixture; no brand, constituent list or pure-NaCl equivalence inferred."
+              },
+              "stage": "modified 2ASW maintenance medium",
+              "source_modification_index": 0,
+              "source_text": "Use the study-reported 33.6 g/L sea salts in place of NaCl; this is an undefined sea-salt mixture, not 33.6 g/L pure sodium chloride.",
+              "evidence": [
+                {
+                  "reference": "doi:10.3389/fenrg.2015.00020",
+                  "supports": "SUPPORT",
+                  "snippet": "33.6 g/L of sea salts",
+                  "explanation": "Materials and Methods, Strains and media. Supports only the named descriptor/event at the stated stage. Undefined sea-salt mixture; no brand, constituent list or pure-NaCl equivalence inferred. Source inspected 2026-11-16; SHA256 8d2ad2e2716dc194452015adc5b385057c1eb42a7e4e6b89eba9af2f00792d5a. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ],
+              "replaced_ingredient": {
+                "preferred_term": "sodium chloride"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_11_MRS_medium.yaml",
+      "recipe_id": "CultureMech:003940",
+      "expected_sha256": "218b2a1c73a5049f71814b8a6b11da70e106c5b503eb8ea7021c319f7811b69f",
+      "variants": [
+        {
+          "variant_index": 1,
+          "variant_name": "mrs_broth_bg24_ph_yeast_extract_optimization",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "yeast extract",
+                "concentration": {
+                  "value": "5",
+                  "unit": "G_PER_L"
+                },
+                "notes": "Source-reported enrichment amount; do not calculate total yeast extract including basal MRS. Abstract evidence only."
+              },
+              "stage": "pH 6.5 MRS enrichment",
+              "source_modification_index": 1,
+              "source_text": "Compare original MRS broth at pH 5.7 with MRS broth at pH 6.5 enriched with 5 g/L yeast extract.",
+              "evidence": [
+                {
+                  "reference": "PMID:38194015",
+                  "supports": "SUPPORT",
+                  "snippet": "5 g/L yeast extract",
+                  "explanation": "Primary article abstract indexed by Europe PMC; full methods not reviewed. Supports only the named descriptor/event at the stated stage. Source-reported enrichment amount; do not calculate total yeast extract including basal MRS. Abstract evidence only. Source inspected 2026-11-16; SHA256 6374babdb789d4cf4ece64f8539d8bbd78dd9710139d6196c752fd9cf3ffff91. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_125_METHYLOBACTERIUM_MEDIUM.yaml",
+      "recipe_id": "CultureMech:004018",
+      "expected_sha256": "9cb298367084d6cb6b8347acb301575cbbf14771acb8cea52df8979f522f578a",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Methanol preparation option",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "methanol",
+                "notes": "Literal source dose: 5 mL per common basal batch. Final volume and purity unspecified. This alternative excludes methane-air incubation; no mL/L or percent conversion."
+              },
+              "stage": "methanol preparation alternative",
+              "source_modification_index": 0,
+              "source_text": "Add 5 ml methanol to the source's common basal batch; do not combine this option with the methane-air alternative.",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "Add 5 ml methanol",
+                  "explanation": "Page 1, preparation alternatives. Supports only the named descriptor/event at the stated stage. Literal source dose: 5 mL per common basal batch. Final volume and purity unspecified. This alternative excludes methane-air incubation; no mL/L or percent conversion. Source inspected 2026-11-16; SHA256 e107edb0e43f303bc124e81ef0430f07fde07eb9efbcf1cea9c35e3a2190ad8f. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/methylobacterium_medium.yaml",
+      "recipe_id": "CultureMech:000718",
+      "expected_sha256": "5182ee774e098c981851a759200b18f4c8382d0332ccf10d9800b99e6094b969",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Methanol preparation option",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "methanol",
+                "notes": "Literal source dose: 5 mL per common basal batch. Final volume and purity unspecified. This alternative excludes methane-air incubation; no mL/L or percent conversion."
+              },
+              "stage": "methanol preparation alternative",
+              "source_modification_index": 0,
+              "source_text": "Add 5 ml methanol to the source's common basal batch; do not combine this option with the methane-air alternative.",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "Add 5 ml methanol",
+                  "explanation": "Page 1, preparation alternatives. Supports only the named descriptor/event at the stated stage. Literal source dose: 5 mL per common basal batch. Final volume and purity unspecified. This alternative excludes methane-air incubation; no mL/L or percent conversion. Source inspected 2026-11-16; SHA256 e107edb0e43f303bc124e81ef0430f07fde07eb9efbcf1cea9c35e3a2190ad8f. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_751_SC_medium.yaml",
+      "recipe_id": "CultureMech:006403",
+      "expected_sha256": "a1d63c31c3045012ec21bf7216b5f20713d1897c89c3a536f5ebd3b36d28fc72",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Liquid SC medium",
+          "ingredient_changes": [
+            {
+              "action": "REMOVE",
+              "ingredient": {
+                "preferred_term": "corn meal agar",
+                "notes": "Removal of the named corn-meal-agar mixture; not positive ingredient presence. Phosphate batch changes remain separately held under issue 760."
+              },
+              "stage": "liquid SC preparation",
+              "source_modification_index": 0,
+              "source_text": "Omit corn meal agar.",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "omit corn meal agar",
+                  "explanation": "Page 1, liquid-medium instruction. Supports only the named descriptor/event at the stated stage. Removal of the named corn-meal-agar mixture; not positive ingredient presence. Phosphate batch changes remain separately held under issue 760. Source inspected 2026-11-16; SHA256 721e0310d250ea6eab5d453f063b9452b48b8368ad53fa9384cb54434d2e59fb. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/sc_medium.yaml",
+      "recipe_id": "CultureMech:001884",
+      "expected_sha256": "458e98d500f7ea402604afad6ec1503da85104507901e96479b51a429a81372a",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Liquid SC medium",
+          "ingredient_changes": [
+            {
+              "action": "REMOVE",
+              "ingredient": {
+                "preferred_term": "corn meal agar",
+                "notes": "Removal of the named corn-meal-agar mixture; not positive ingredient presence. Phosphate batch changes remain separately held under issue 760."
+              },
+              "stage": "liquid SC preparation",
+              "source_modification_index": 0,
+              "source_text": "Omit corn meal agar.",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "omit corn meal agar",
+                  "explanation": "Page 1, liquid-medium instruction. Supports only the named descriptor/event at the stated stage. Removal of the named corn-meal-agar mixture; not positive ingredient presence. Phosphate batch changes remain separately held under issue 760. Source inspected 2026-11-16; SHA256 721e0310d250ea6eab5d453f063b9452b48b8368ad53fa9384cb54434d2e59fb. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_761_HALOTHERMOTHRIX_ORENII.yaml",
+      "recipe_id": "CultureMech:006416",
+      "expected_sha256": "1fb7964a54b9dfc5e3c152c94137aa3fd9ebe91e6e257beb299857e8d837c531",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "strict_anaerobic_halothermothrix_orenii_h168_growth",
+          "ingredient_changes": [
+            {
+              "action": "SET_CONCENTRATION",
+              "ingredient": {
+                "preferred_term": "sodium chloride",
+                "concentration": {
+                  "value": "100",
+                  "unit": "G_PER_L"
+                },
+                "notes": "The primary abstract states this medium concentration; it does not establish complete identity with the imported parent or certify growth at every salt level."
+              },
+              "stage": "reported isolation medium",
+              "source_modification_index": 1,
+              "source_text": "Use high-salt growth conditions centered on 100 g/L NaCl, matching the parent medium's approximately 101 g/L NaCl formulation.",
+              "evidence": [
+                {
+                  "reference": "PMID:7520742",
+                  "supports": "SUPPORT",
+                  "snippet": "100 g of NaCl per liter",
+                  "explanation": "Primary article abstract indexed by Europe PMC; full methods not reviewed. Supports only the named descriptor/event at the stated stage. The primary abstract states this medium concentration; it does not establish complete identity with the imported parent or certify growth at every salt level. Source inspected 2026-11-16; SHA256 af16343d832a80e5445262ea29f8763dba74effdea479ef8bdc173e715cba1a5. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458.yaml",
+      "recipe_id": "CultureMech:006900",
+      "expected_sha256": "fdcd031f21238e9ce826143de772bc4bf32c97e71ffd4941eb04c69b268e0163",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Methanol alternative",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "methanol",
+                "notes": "Literal final-medium quantity: 0.5%, percentage basis unspecified. Not combined with methylamine; no w/v, w/w or v/v basis inferred."
+              },
+              "stage": "post-sterilization methanol alternative",
+              "source_modification_index": 0,
+              "source_text": "After sterilisation add sterile methanol to a final concentration of 0.5% (percentage basis unspecified).",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "final concentration of 0.5%",
+                  "explanation": "Page 1, final paragraph. Supports only the named descriptor/event at the stated stage. Literal final-medium quantity: 0.5%, percentage basis unspecified. Not combined with methylamine; no w/v, w/w or v/v basis inferred. Source inspected 2026-11-16; SHA256 156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "variant_index": 1,
+          "variant_name": "Methylamine alternative",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "methylamine",
+                "notes": "Literal final-medium quantity: 0.3%, percentage basis unspecified. Salt, hydration and purity unspecified; not combined with methanol."
+              },
+              "stage": "post-sterilization methylamine alternative",
+              "source_modification_index": 0,
+              "source_text": "After sterilisation add sterile methylamine to a final concentration of 0.3% (percentage basis unspecified).",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "final concentration of 0.3%",
+                  "explanation": "Page 1, final paragraph. Supports only the named descriptor/event at the stated stage. Literal final-medium quantity: 0.3%, percentage basis unspecified. Salt, hydration and purity unspecified; not combined with methanol. Source inspected 2026-11-16; SHA256 156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458.yaml",
+      "recipe_id": "CultureMech:002134",
+      "expected_sha256": "f322e18503801cfdd53950330c2476d7e5bbce6e3a0798ac159699935bc5bae9",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Methanol alternative",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "methanol",
+                "notes": "Literal final-medium quantity: 0.5%, percentage basis unspecified. Not combined with methylamine; no w/v, w/w or v/v basis inferred."
+              },
+              "stage": "post-sterilization methanol alternative",
+              "source_modification_index": 0,
+              "source_text": "After sterilisation add sterile methanol to a final concentration of 0.5% (percentage basis unspecified).",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "final concentration of 0.5%",
+                  "explanation": "Page 1, final paragraph. Supports only the named descriptor/event at the stated stage. Literal final-medium quantity: 0.5%, percentage basis unspecified. Not combined with methylamine; no w/v, w/w or v/v basis inferred. Source inspected 2026-11-16; SHA256 156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "variant_index": 1,
+          "variant_name": "Methylamine alternative",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "methylamine",
+                "notes": "Literal final-medium quantity: 0.3%, percentage basis unspecified. Salt, hydration and purity unspecified; not combined with methanol."
+              },
+              "stage": "post-sterilization methylamine alternative",
+              "source_modification_index": 0,
+              "source_text": "After sterilisation add sterile methylamine to a final concentration of 0.3% (percentage basis unspecified).",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "final concentration of 0.3%",
+                  "explanation": "Page 1, final paragraph. Supports only the named descriptor/event at the stated stage. Literal final-medium quantity: 0.3%, percentage basis unspecified. Salt, hydration and purity unspecified; not combined with methanol. Source inspected 2026-11-16; SHA256 156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/NBRC_1003.yaml",
+      "recipe_id": "CultureMech:007449",
+      "expected_sha256": "6138f25b510c742489ad6b63f48b5171a440111c56b046954dfbd3fc52df44aa",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "nbrc_1002_heterotrophic_yeast_extract",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "iron(II) sulfate heptahydrate",
+                "concentration": {
+                  "value": "10",
+                  "unit": "MG_PER_L"
+                }
+              },
+              "stage": "heterotrophic medium preparation",
+              "source_modification_index": 0,
+              "source_text": "Add 10 mg/L FeSO4·7H2O to the medium.",
+              "evidence": [
+                {
+                  "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1002",
+                  "supports": "SUPPORT",
+                  "snippet": "10 mg/l of FeSO4·7H2O",
+                  "explanation": "Heterotrophic and autotrophic preparation alternatives. Supports only the named descriptor/event at the stated stage.  Source inspected 2026-11-16; SHA256 046c306f82ac74274e54e2bae9c5e509eb66c0ddbcca159d434b694f0f88786e. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "yeast extract",
+                "concentration": {
+                  "value": "0.25",
+                  "unit": "G_PER_L"
+                },
+                "notes": "Final-medium concentration stated directly; stock concentration and dose not inferred."
+              },
+              "stage": "heterotrophic post-autoclave sterile-stock addition",
+              "source_modification_index": 1,
+              "source_text": "After autoclaving, add yeast extract from a sterile stock solution to 0.25 g/L final concentration.",
+              "evidence": [
+                {
+                  "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1002",
+                  "supports": "SUPPORT",
+                  "snippet": "0.25 g/l",
+                  "explanation": "Heterotrophic and autotrophic preparation alternatives. Supports only the named descriptor/event at the stated stage. Final-medium concentration stated directly; stock concentration and dose not inferred. Source inspected 2026-11-16; SHA256 046c306f82ac74274e54e2bae9c5e509eb66c0ddbcca159d434b694f0f88786e. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "variant_index": 1,
+          "variant_name": "nbrc_1002_autotrophic_ferrous_sulfate",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "iron(II) sulfate heptahydrate",
+                "concentration": {
+                  "value": "13.9",
+                  "unit": "G_PER_L"
+                }
+              },
+              "stage": "autotrophic medium preparation",
+              "source_modification_index": 0,
+              "source_text": "Add 13.9 g/L FeSO4·7H2O to the medium.",
+              "evidence": [
+                {
+                  "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1002",
+                  "supports": "SUPPORT",
+                  "snippet": "13.9 g/l of FeSO4·7H2O",
+                  "explanation": "Heterotrophic and autotrophic preparation alternatives. Supports only the named descriptor/event at the stated stage.  Source inspected 2026-11-16; SHA256 046c306f82ac74274e54e2bae9c5e509eb66c0ddbcca159d434b694f0f88786e. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "sulfuric acid",
+                "notes": "Titrant identity only; pH 1.7 is a target, not an acid dose. Strength and amount unspecified."
+              },
+              "stage": "autotrophic pH adjustment before autoclaving",
+              "source_modification_index": 1,
+              "source_text": "Adjust medium pH to 1.7 with H2SO4 prior to autoclaving.",
+              "evidence": [
+                {
+                  "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1002",
+                  "supports": "SUPPORT",
+                  "snippet": "pH to 1.7 with H2SO4",
+                  "explanation": "Heterotrophic and autotrophic preparation alternatives. Supports only the named descriptor/event at the stated stage. Titrant identity only; pH 1.7 is a target, not an acid dose. Strength and amount unspecified. Source inspected 2026-11-16; SHA256 046c306f82ac74274e54e2bae9c5e509eb66c0ddbcca159d434b694f0f88786e. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml",
+      "recipe_id": "CultureMech:009933",
+      "expected_sha256": "f292dee86d67451cf7e1cc227e807733d9c3835a9b6b39ad191ef041b809dc10",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "brucella_broth_fbs_h2o2_helicobacter_pylori",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "fetal bovine serum",
+                "notes": "Primary abstract reports 10% serum; percentage basis unspecified and not inferred. Undefined mixture, no constituent identities expanded."
+              },
+              "stage": "Brucella-broth supplementation",
+              "source_modification_index": 0,
+              "source_text": "Supplement Brucella broth with 10% fetal bovine serum.",
+              "evidence": [
+                {
+                  "reference": "PMID:10609610",
+                  "supports": "SUPPORT",
+                  "snippet": "10% fetal bovine serum",
+                  "explanation": "Primary article abstract indexed by Europe PMC; full methods not reviewed. Supports only the named descriptor/event at the stated stage. Primary abstract reports 10% serum; percentage basis unspecified and not inferred. Undefined mixture, no constituent identities expanded. Source inspected 2026-11-16; SHA256 35e84b91a28f53b591554a9a986edefa68d08c52396f8d52311133a2037812d8. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "hydrogen peroxide",
+                "concentration": {
+                  "value": "3.5",
+                  "unit": "MILLIMOLAR"
+                },
+                "notes": "One explicitly reported exposure level, not a recommended growth formulation or complete dose-response representation. Primary abstract only."
+              },
+              "stage": "reported peroxide exposure arm",
+              "source_modification_index": 1,
+              "source_text": "Add hydrogen peroxide at sublethal concentrations, with maximum growth stimulation reported at 3.5 mM H2O2.",
+              "evidence": [
+                {
+                  "reference": "PMID:10609610",
+                  "supports": "SUPPORT",
+                  "snippet": "3.5 mM",
+                  "explanation": "Primary article abstract indexed by Europe PMC; full methods not reviewed. Supports only the named descriptor/event at the stated stage. One explicitly reported exposure level, not a recommended growth formulation or complete dose-response representation. Primary abstract only. Source inspected 2026-11-16; SHA256 35e84b91a28f53b591554a9a986edefa68d08c52396f8d52311133a2037812d8. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/acidiphilium_medium.yaml",
+      "recipe_id": "CultureMech:001368",
+      "expected_sha256": "74e02fba4aee65fd7adce6d753f27d1578c92c8bc01ab804979ce283acf39b43",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "aluminum_sulfate_stress_acidiphilium_cryptum",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "aluminum sulfate",
+                "concentration": {
+                  "value": "300",
+                  "unit": "MILLIMOLAR"
+                },
+                "notes": "Al2(SO4)3 identity as stated; hydration unspecified. Distinct from the 1 mM and 50 mM precultivation treatments; no whole-parent equivalence inferred."
+              },
+              "stage": "reported 300 mM stress exposure",
+              "source_modification_index": 1,
+              "source_text": "Add aluminum sulfate at the stress concentration reported by the source study.",
+              "evidence": [
+                {
+                  "reference": "PMID:12420179",
+                  "supports": "SUPPORT",
+                  "snippet": "300 mM aluminum sulfate",
+                  "explanation": "Primary article abstract indexed by Europe PMC; full methods not reviewed. Supports only the named descriptor/event at the stated stage. Al2(SO4)3 identity as stated; hydration unspecified. Distinct from the 1 mM and 50 mM precultivation treatments; no whole-parent equivalence inferred. Source inspected 2026-11-16; SHA256 b1e8c1d7ee39651d2ad5a4c17b8fcd2d0758aee5f717378e442381e92fa5963b. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/ajs.yaml",
+      "recipe_id": "CultureMech:000338",
+      "expected_sha256": "3c5158c29f2130e01452d8f7a0428863db898c6a32b10b20d14a0f8c9881c4c6",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "ajs_hydrochloric_acid_ph_1_5",
+          "ingredient_changes": [
+            {
+              "action": "REPLACE",
+              "ingredient": {
+                "preferred_term": "hydrochloric acid",
+                "notes": "Replaces the canonical acidification instruction only. Strength and dose are unspecified; pH is not a concentration."
+              },
+              "stage": "AJS pH adjustment",
+              "source_modification_index": 0,
+              "source_text": "Use hydrochloric acid for the reported adjustment to pH 1.5, rather than inheriting the canonical sulfuric-acid instruction. HCl strength and dose are not quantified; no dose or substitution arithmetic is inferred.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1038/srep10036",
+                  "supports": "SUPPORT",
+                  "snippet": "pH 1.5 using hydrochloric acid",
+                  "explanation": "Methods, culture conditions and bacterial interference experiment. Supports only the named descriptor/event at the stated stage. Replaces the canonical acidification instruction only. Strength and dose are unspecified; pH is not a concentration. Source inspected 2026-11-16; SHA256 7e3ddf65f336955a2c875b18361e878ffcf16bc341fe9b404308d014df4c3319. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ],
+              "replaced_ingredient": {
+                "preferred_term": "sulfuric acid"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/caldicellulosiruptor_medium_for_dsm_10319.yaml",
+      "recipe_id": "CultureMech:009111",
+      "expected_sha256": "458e1db8cfe57eacc6e36d97582e04f31df194d022d11769b4ad5b2892ab0cd2",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "modified_dsmz_640_blumer_schuette_2010",
+          "ingredient_changes": [
+            {
+              "action": "REMOVE",
+              "ingredient": {
+                "preferred_term": "Trypticase",
+                "notes": "Source explicitly omits this component. Cysteine-HCl hydration is unspecified; no mapped identity asserted."
+              },
+              "stage": "modified DSMZ 640 preparation",
+              "source_modification_index": 0,
+              "source_text": "Trypticase, cysteine-HCl, and resazurin omitted relative to standard DSMZ 640.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/AEM.01400-10",
+                  "supports": "SUPPORT",
+                  "snippet": "Trypticase",
+                  "explanation": "Materials and Methods, Bacterial strains and growth on sugar substrates. Supports only the named descriptor/event at the stated stage. Source explicitly omits this component. Cysteine-HCl hydration is unspecified; no mapped identity asserted. Source inspected 2026-11-16; SHA256 ad092222c6d2e66bbd824e3d01ecc577c741cd64ac2eea89bcc43f5b2fa15cb8. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            },
+            {
+              "action": "REMOVE",
+              "ingredient": {
+                "preferred_term": "cysteine hydrochloride",
+                "notes": "Source explicitly omits this component. Cysteine-HCl hydration is unspecified; no mapped identity asserted."
+              },
+              "stage": "modified DSMZ 640 preparation",
+              "source_modification_index": 0,
+              "source_text": "Trypticase, cysteine-HCl, and resazurin omitted relative to standard DSMZ 640.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/AEM.01400-10",
+                  "supports": "SUPPORT",
+                  "snippet": "cysteine-HCl",
+                  "explanation": "Materials and Methods, Bacterial strains and growth on sugar substrates. Supports only the named descriptor/event at the stated stage. Source explicitly omits this component. Cysteine-HCl hydration is unspecified; no mapped identity asserted. Source inspected 2026-11-16; SHA256 ad092222c6d2e66bbd824e3d01ecc577c741cd64ac2eea89bcc43f5b2fa15cb8. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            },
+            {
+              "action": "REMOVE",
+              "ingredient": {
+                "preferred_term": "resazurin",
+                "notes": "Source explicitly omits this component. Cysteine-HCl hydration is unspecified; no mapped identity asserted."
+              },
+              "stage": "modified DSMZ 640 preparation",
+              "source_modification_index": 0,
+              "source_text": "Trypticase, cysteine-HCl, and resazurin omitted relative to standard DSMZ 640.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/AEM.01400-10",
+                  "supports": "SUPPORT",
+                  "snippet": "resazurin were not added",
+                  "explanation": "Materials and Methods, Bacterial strains and growth on sugar substrates. Supports only the named descriptor/event at the stated stage. Source explicitly omits this component. Cysteine-HCl hydration is unspecified; no mapped identity asserted. Source inspected 2026-11-16; SHA256 ad092222c6d2e66bbd824e3d01ecc577c741cd64ac2eea89bcc43f5b2fa15cb8. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "sodium sulfide nonahydrate",
+                "notes": "Source describes 10% [wt/vol] Na2S·9H2O stock added to a final concentration of 0.5%. Final percentage basis is not independently specified; do not substitute stock strength or infer a conversion. Carbon-source alternatives remain unexpanded."
+              },
+              "stage": "modified DSMZ 640 reducing-agent addition",
+              "source_modification_index": 1,
+              "source_text": "Carbon source increased to 5 g/L; Na2S.9H2O added to 0.5% final.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/AEM.01400-10",
+                  "supports": "SUPPORT",
+                  "snippet": "10% [wt/vol] Na2S·9H2O was added to a final concentration of 0.5%",
+                  "explanation": "Materials and Methods, Bacterial strains and growth on sugar substrates. Supports only the named descriptor/event at the stated stage. Source describes 10% [wt/vol] Na2S·9H2O stock added to a final concentration of 0.5%. Final percentage basis is not independently specified; do not substitute stock strength or infer a conversion. Carbon-source alternatives remain unexpanded. Source inspected 2026-11-16; SHA256 ad092222c6d2e66bbd824e3d01ecc577c741cd64ac2eea89bcc43f5b2fa15cb8. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/cdm_teusink_et_al.yaml",
+      "recipe_id": "CultureMech:007092",
+      "expected_sha256": "26fe1500ed5d2bc6e73533b47fce887a22586b39037ca8799072460c8294480f",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Teusink 2005 Table 1 complete CDM on reported mass basis",
+          "ingredient_changes": [
+            {
+              "action": "SET_CONCENTRATION",
+              "ingredient": {
+                "preferred_term": "calcium D-pantothenate",
+                "concentration": {
+                  "value": "0.001",
+                  "unit": "G_PER_L"
+                },
+                "notes": "Direct Table 1 mass concentration under the quoted column heading 'Concn (g/liter)', no molar conversion. The source's complete/minimal subset boundary remains as stated in the variant; other amounts are not certified."
+              },
+              "stage": "reported Table 1 medium composition",
+              "source_modification_index": 0,
+              "source_text": "Use the Table 1 Ca-(D)-(+)-pantothenate dose of 0.001 g/liter, rather than certifying the parent's 0.00456 mM calcium pantothenate.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/AEM.71.11.7253-7262.2005",
+                  "supports": "SUPPORT",
+                  "snippet": "Ca-(d)-(+)-pantothenate (vitamin B5) 0.001",
+                  "explanation": "Table 1, concentration column and footnotes a-b. Supports only the named descriptor/event at the stated stage. Direct Table 1 mass concentration under the quoted column heading 'Concn (g/liter)', no molar conversion. The source's complete/minimal subset boundary remains as stated in the variant; other amounts are not certified. Source inspected 2026-11-16; SHA256 3b4288d316e061cdad56879cb8a30c2cccff1fe3361eb0be71778d49c9dbef91. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/minimal_medium_teusink_et_al.yaml",
+      "recipe_id": "CultureMech:007202",
+      "expected_sha256": "b950165afb3047613f5917976f9c7a5b702d31319a9837e9c435c563d2ec87ed",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Teusink 2005 Table 1 minimal medium on reported mass basis",
+          "ingredient_changes": [
+            {
+              "action": "SET_CONCENTRATION",
+              "ingredient": {
+                "preferred_term": "calcium D-pantothenate",
+                "concentration": {
+                  "value": "0.001",
+                  "unit": "G_PER_L"
+                },
+                "notes": "Direct Table 1 mass concentration under the quoted column heading 'Concn (g/liter)', no molar conversion. The source's complete/minimal subset boundary remains as stated in the variant; other amounts are not certified."
+              },
+              "stage": "reported Table 1 medium composition",
+              "source_modification_index": 0,
+              "source_text": "Use the Table 1 Ca-(D)-(+)-pantothenate dose of 0.001 g/liter, rather than certifying the parent's 0.00456 mM calcium pantothenate.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/AEM.71.11.7253-7262.2005",
+                  "supports": "SUPPORT",
+                  "snippet": "Ca-(d)-(+)-pantothenate (vitamin B5) 0.001",
+                  "explanation": "Table 1, concentration column and footnotes a-b. Supports only the named descriptor/event at the stated stage. Direct Table 1 mass concentration under the quoted column heading 'Concn (g/liter)', no molar conversion. The source's complete/minimal subset boundary remains as stated in the variant; other amounts are not certified. Source inspected 2026-11-16; SHA256 3b4288d316e061cdad56879cb8a30c2cccff1fe3361eb0be71778d49c9dbef91. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            },
+            {
+              "action": "SET_CONCENTRATION",
+              "ingredient": {
+                "preferred_term": "D-biotin",
+                "concentration": {
+                  "value": "0.0025",
+                  "unit": "G_PER_L"
+                },
+                "notes": "Direct Table 1 mass value under the quoted column heading 'Concn (g/liter)'; boldface minimal-subset membership verified in original HTML, not inferred from flattened text."
+              },
+              "stage": "reported Table 1 minimal-medium composition",
+              "source_modification_index": 1,
+              "source_text": "Use the Table 1 D-biotin dose of 0.0025 g/liter in the boldface minimal subset; the parent's 0.01203 mM value is not equivalent for its encoded biotin formula.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/AEM.71.11.7253-7262.2005",
+                  "supports": "SUPPORT",
+                  "snippet": "d-Biotin (vitamin B7)c 0.0025",
+                  "explanation": "Table 1, concentration column and footnotes a-b. Supports only the named descriptor/event at the stated stage. Direct Table 1 mass value under the quoted column heading 'Concn (g/liter)'; boldface minimal-subset membership verified in original HTML, not inferred from flattened text. Source inspected 2026-11-16; SHA256 3b4288d316e061cdad56879cb8a30c2cccff1fe3361eb0be71778d49c9dbef91. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/cgc_w_acetate.yaml",
+      "recipe_id": "CultureMech:007184",
+      "expected_sha256": "03e61bf2717255009095abe870544fa50dcb260d86590b8496b615bb49d55675",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Wendisch 2000 CgC with sodium [1-13C]acetate",
+          "ingredient_changes": [
+            {
+              "action": "REPLACE",
+              "ingredient": {
+                "preferred_term": "sodium [1-13C]acetate",
+                "concentration": {
+                  "value": "10",
+                  "unit": "G_PER_L"
+                },
+                "notes": "Preserve sodium counterion and isotope position; no unspecified parent acetate identity or hydrate is equated. Table 2 nominal molarity is not a conversion."
+              },
+              "stage": "13C-labeling experiment medium",
+              "source_modification_index": 0,
+              "source_text": "Use sodium [1-13C]acetate at the Methods dose of 10 g/L; Table 2 reports nominal 120 mM acetate. The parent acetate descriptor has no isotope specification and reports 120 mM.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/JB.182.11.3088-3096.2000",
+                  "supports": "SUPPORT",
+                  "snippet": "10 g/liter",
+                  "explanation": "Materials and Methods, cultivation conditions; separate Figure 1 caption. Supports only the named descriptor/event at the stated stage. Preserve sodium counterion and isotope position; no unspecified parent acetate identity or hydrate is equated. Table 2 nominal molarity is not a conversion. Source inspected 2026-11-16; SHA256 07d1735ec2dd0ebaeb26e5c12daa965aa90315948f3e6747b220b5d15d19369e. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ],
+              "replaced_ingredient": {
+                "preferred_term": "acetate"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/cgc_w_acetate_glucose.yaml",
+      "recipe_id": "CultureMech:007185",
+      "expected_sha256": "800dab9329a224f8661d30d9f80402db4702a9cf69d5102b69bd1a6f540cb537",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Wendisch 2000 CgC with sodium [1-13C]acetate and unlabeled glucose",
+          "ingredient_changes": [
+            {
+              "action": "REPLACE",
+              "ingredient": {
+                "preferred_term": "sodium [1-13C]acetate",
+                "concentration": {
+                  "value": "10",
+                  "unit": "G_PER_L"
+                },
+                "notes": "Preserve sodium counterion and isotope position; no unspecified parent acetate identity or hydrate is equated. Table 2 nominal molarity is not a conversion."
+              },
+              "stage": "13C-labeling experiment medium",
+              "source_modification_index": 0,
+              "source_text": "Use sodium [1-13C]acetate and unlabeled glucose at 10 g/L each; Table 2 reports nominal 120 mM acetate plus 55 mM glucose. Preserve the isotope/counterion substitution rather than treating the local acetate descriptor as identical.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/JB.182.11.3088-3096.2000",
+                  "supports": "SUPPORT",
+                  "snippet": "10 g/liter",
+                  "explanation": "Materials and Methods, cultivation conditions; separate Figure 1 caption. Supports only the named descriptor/event at the stated stage. Preserve sodium counterion and isotope position; no unspecified parent acetate identity or hydrate is equated. Table 2 nominal molarity is not a conversion. Source inspected 2026-11-16; SHA256 07d1735ec2dd0ebaeb26e5c12daa965aa90315948f3e6747b220b5d15d19369e. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ],
+              "replaced_ingredient": {
+                "preferred_term": "acetate"
+              }
+            },
+            {
+              "action": "SET_CONCENTRATION",
+              "ingredient": {
+                "preferred_term": "unlabeled glucose",
+                "concentration": {
+                  "value": "10",
+                  "unit": "G_PER_L"
+                },
+                "notes": "Glucose remains unlabeled in the acetate-labeling arm. Keep mass dose separate from Table 2 nominal 55 mM."
+              },
+              "stage": "mixed-substrate 13C-labeling experiment medium",
+              "source_modification_index": 0,
+              "source_text": "Use sodium [1-13C]acetate and unlabeled glucose at 10 g/L each; Table 2 reports nominal 120 mM acetate plus 55 mM glucose. Preserve the isotope/counterion substitution rather than treating the local acetate descriptor as identical.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/JB.182.11.3088-3096.2000",
+                  "supports": "SUPPORT",
+                  "snippet": "10 g/liter each",
+                  "explanation": "Materials and Methods, cultivation conditions; separate Figure 1 caption. Supports only the named descriptor/event at the stated stage. Glucose remains unlabeled in the acetate-labeling arm. Keep mass dose separate from Table 2 nominal 55 mM. Source inspected 2026-11-16; SHA256 07d1735ec2dd0ebaeb26e5c12daa965aa90315948f3e6747b220b5d15d19369e. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "variant_index": 1,
+          "variant_name": "Wendisch 2000 Figure 1 CgC with 35 mM glucose and 120 mM acetate",
+          "ingredient_changes": [
+            {
+              "action": "SET_CONCENTRATION",
+              "ingredient": {
+                "preferred_term": "glucose",
+                "concentration": {
+                  "value": "35",
+                  "unit": "MILLIMOLAR"
+                },
+                "notes": "Separate from isotope-labeling/Table 2 arm. The stated 120 mM acetate remains context, not a newly quantified substitution."
+              },
+              "stage": "Figure 1 growth time-course medium",
+              "source_modification_index": 0,
+              "source_text": "Use the Figure 1 caption's 35 mM glucose rather than the parent's 55 mM; retain the stated 120 mM acetate.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/JB.182.11.3088-3096.2000",
+                  "supports": "SUPPORT",
+                  "snippet": "35 mM glucose",
+                  "explanation": "Materials and Methods, cultivation conditions; separate Figure 1 caption. Supports only the named descriptor/event at the stated stage. Separate from isotope-labeling/Table 2 arm. The stated 120 mM acetate remains context, not a newly quantified substitution. Source inspected 2026-11-16; SHA256 07d1735ec2dd0ebaeb26e5c12daa965aa90315948f3e6747b220b5d15d19369e. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/cgc_w_glucose.yaml",
+      "recipe_id": "CultureMech:007186",
+      "expected_sha256": "406ca920b05bb55070d44c5912bad0772f8c64fb5ba790cd4cf65c960f3214b2",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Wendisch 2000 CgC with [5-13C]glucose",
+          "ingredient_changes": [
+            {
+              "action": "REPLACE",
+              "ingredient": {
+                "preferred_term": "D-[5-13C]glucose",
+                "concentration": {
+                  "value": "20",
+                  "unit": "G_PER_L"
+                },
+                "notes": "Preserve the isotope position; Table 2 nominal 110 mM is not a curator conversion. Enrichment discrepancy elsewhere in the source remains unresolved."
+              },
+              "stage": "glucose 13C-labeling experiment medium",
+              "source_modification_index": 0,
+              "source_text": "Use [5-13C]glucose at the Methods dose of 20 g/L; Table 2 reports nominal 110 mM glucose. The parent D-glucose descriptor does not specify this isotope label.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/JB.182.11.3088-3096.2000",
+                  "supports": "SUPPORT",
+                  "snippet": "20 g/liter",
+                  "explanation": "Materials and Methods, cultivation conditions; separate Figure 1 caption. Supports only the named descriptor/event at the stated stage. Preserve the isotope position; Table 2 nominal 110 mM is not a curator conversion. Enrichment discrepancy elsewhere in the source remains unresolved. Source inspected 2026-11-16; SHA256 07d1735ec2dd0ebaeb26e5c12daa965aa90315948f3e6747b220b5d15d19369e. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ],
+              "replaced_ingredient": {
+                "preferred_term": "D-glucose"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/desulfurobacterium_medium.yaml",
+      "recipe_id": "CultureMech:001978",
+      "expected_sha256": "51bac1f50ee144a227f5d53cc1e88d5b65dae78f557c6c4e305ae0d20cb6d431",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "DSM 16661 and DSM 21157 source prescription",
+          "ingredient_changes": [
+            {
+              "action": "REMOVE",
+              "ingredient": {
+                "preferred_term": "growth-stimulating factors",
+                "notes": "Named stock mixture is removed, without expanding individual constituents. Separate 2-bar H2/CO2 headspace condition is not a liquid ingredient concentration."
+              },
+              "stage": "DSM 16661 and DSM 21157 preparation",
+              "source_modification_index": 0,
+              "source_text": "Omit growth-stimulating factors and pressurize vials after inoculation to 2 bar with sterile 80% H2 and 20% CO2 gas mixture.",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "Omit growth-stimulating factors",
+                  "explanation": "Page 1, DSM 16661 and DSM 21157 prescription. Supports only the named descriptor/event at the stated stage. Named stock mixture is removed, without expanding individual constituents. Separate 2-bar H2/CO2 headspace condition is not a liquid ingredient concentration. Source inspected 2026-11-16; SHA256 73b87bbb602b5d40fa5a442a74b8a227fc26774281d333b7718a15317fd1cb27. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/f_2.yaml",
+      "recipe_id": "CultureMech:000343",
+      "expected_sha256": "b79f6f9593f30ef8a597c5918fa13e35a996994283b67ee896241e68b070ce84",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "f_2_silicate_supplement_1_06e_4_m",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "silicate",
+                "concentration": {
+                  "value": "1.06e-4",
+                  "unit": "MOLAR"
+                },
+                "notes": "Undefined silicate chemical form; no salt/hydrate/stock assigned. Stated supplement dose, not calculated total including basal silicate."
+              },
+              "stage": "reported f/2 supplementation",
+              "source_modification_index": 0,
+              "source_text": "The study reports f/2 supplemented with 1.06e-4 M silicate. Preserve this stated supplementation concentration without assigning an unreported silicate salt, hydrate, stock recipe or additional mass conversion.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1038/srep10036",
+                  "supports": "SUPPORT",
+                  "snippet": "1.06 × 10−4 M silicate",
+                  "explanation": "Methods, culture conditions and bacterial interference experiment. Supports only the named descriptor/event at the stated stage. Undefined silicate chemical form; no salt/hydrate/stock assigned. Stated supplement dose, not calculated total including basal silicate. Source inspected 2026-11-16; SHA256 7e3ddf65f336955a2c875b18361e878ffcf16bc341fe9b404308d014df4c3319. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "variant_index": 1,
+          "variant_name": "f_2_nitrate_supplement_29_4_mm",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "sodium nitrate",
+                "concentration": {
+                  "value": "29.4",
+                  "unit": "MILLIMOLAR"
+                },
+                "notes": "Stated supplement concentration; inclusion of basal nitrate is unresolved. pH 8 remains a condition."
+              },
+              "stage": "reported f/2 supplementation",
+              "source_modification_index": 0,
+              "source_text": "The study reports f/2 supplemented with 29.4 mM NaNO3 and adjusted to pH 8. Retain the stated supplement concentration; do not infer whether it includes the base-medium nitrate or calculate a total nitrate concentration.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1038/srep10036",
+                  "supports": "SUPPORT",
+                  "snippet": "29.4 mM NaNO3",
+                  "explanation": "Methods, culture conditions and bacterial interference experiment. Supports only the named descriptor/event at the stated stage. Stated supplement concentration; inclusion of basal nitrate is unresolved. pH 8 remains a condition. Source inspected 2026-11-16; SHA256 7e3ddf65f336955a2c875b18361e878ffcf16bc341fe9b404308d014df4c3319. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "variant_index": 2,
+          "variant_name": "f_2_penicillin_g_dihydrostreptomycin_supplement",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "penicillin G",
+                "concentration": {
+                  "value": "200",
+                  "unit": "MICROG_PER_ML"
+                },
+                "notes": "Source-literal 200 micrograms/mL, no conversion. No salt form or stock strength inferred; untreated comparator separate."
+              },
+              "stage": "antibiotic-treated f/2 culture",
+              "source_modification_index": 0,
+              "source_text": "Reported penicillin G treatment concentration: 200 micrograms per mL in the treated f/2 culture; no unreported salt form, stock strength or conversion is assigned.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1038/srep10036",
+                  "supports": "SUPPORT",
+                  "snippet": "200 μg mL−1",
+                  "explanation": "Methods, culture conditions and bacterial interference experiment. Supports only the named descriptor/event at the stated stage. Source-literal 200 micrograms/mL, no conversion. No salt form or stock strength inferred; untreated comparator separate. Source inspected 2026-11-16; SHA256 7e3ddf65f336955a2c875b18361e878ffcf16bc341fe9b404308d014df4c3319. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "dihydrostreptomycin sulfate",
+                "concentration": {
+                  "value": "50",
+                  "unit": "MICROG_PER_ML"
+                },
+                "notes": "Source-literal 50 micrograms/mL, no conversion. Not streptomycin; hydrate and stock strength unspecified."
+              },
+              "stage": "antibiotic-treated f/2 culture",
+              "source_modification_index": 1,
+              "source_text": "Reported dihydrostreptomycin sulphate treatment concentration: 50 micrograms per mL in the same treated culture; not streptomycin, not a stock concentration, and no hydrate assumption.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1038/srep10036",
+                  "supports": "SUPPORT",
+                  "snippet": "50 μg mL−1",
+                  "explanation": "Methods, culture conditions and bacterial interference experiment. Supports only the named descriptor/event at the stated stage. Source-literal 50 micrograms/mL, no conversion. Not streptomycin; hydrate and stock strength unspecified. Source inspected 2026-11-16; SHA256 7e3ddf65f336955a2c875b18361e878ffcf16bc341fe9b404308d014df4c3319. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "variant_index": 3,
+          "variant_name": "f_2_2asw_vitamin_replacement_hiibel_2015",
+          "ingredient_changes": [
+            {
+              "action": "REPLACE",
+              "ingredient": {
+                "preferred_term": "2ASW vitamin solution",
+                "notes": "Named mixture replacement only. Constituent identities, stock strength, addition volume and final concentrations remain unresolved; no reliance on the mismatched Gomord citation."
+              },
+              "stage": "modified f/2 maintenance medium",
+              "source_modification_index": 0,
+              "source_text": "The vitamin solution described as coming from 2ASW replaces the original f/2 vitamin solution; the paper states it contains additional vitamin components.",
+              "evidence": [
+                {
+                  "reference": "doi:10.3389/fenrg.2015.00020",
+                  "supports": "SUPPORT",
+                  "snippet": "vitamin solution from the 2ASW medium",
+                  "explanation": "Materials and Methods, Strains and media. Supports only the named descriptor/event at the stated stage. Named mixture replacement only. Constituent identities, stock strength, addition volume and final concentrations remain unresolved; no reliance on the mismatched Gomord citation. Source inspected 2026-11-16; SHA256 8d2ad2e2716dc194452015adc5b385057c1eb42a7e4e6b89eba9af2f00792d5a. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ],
+              "replaced_ingredient": {
+                "preferred_term": "f/2 vitamin solution"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/kaminskyj_minimal_medium.yaml",
+      "recipe_id": "CultureMech:007206",
+      "expected_sha256": "cf3c3a4655e7351962dcecef3e099c5e8afb034d4e5f72d4e67dd52c352a46c7",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Anhydrous magnesium sulfate option",
+          "ingredient_changes": [
+            {
+              "action": "REPLACE",
+              "ingredient": {
+                "preferred_term": "magnesium sulfate, anhydrous",
+                "concentration": {
+                  "value": "5.2",
+                  "unit": "G_PER_L",
+                  "per_volume": "per liter of 20X nitrate stock, not final medium"
+                },
+                "notes": "Quoted stock-volume instruction: 'Add distilled water to 1 liter.' Replaces 10.4 g/L heptahydrate in the 20X nitrate stock. The stock addition stays 50 mL/L; no final-medium conversion asserted."
+              },
+              "stage": "20X nitrate stock preparation",
+              "source_modification_index": 0,
+              "source_text": "In the 20X nitrate stock, replace 10.4 g magnesium sulfate heptahydrate per 1 L stock with 5.2 g anhydrous magnesium sulfate per 1 L stock. Keep the stock addition at 50 mL/L final medium.",
+              "evidence": [
+                {
+                  "reference": "doi:10.4148/1941-4765.1175",
+                  "supports": "SUPPORT",
+                  "snippet": "5.2 g if anhydrous",
+                  "explanation": "Page 26, Minimal Medium and 20 X Nitrate salts. Supports only the named descriptor/event at the stated stage. Quoted stock-volume instruction: 'Add distilled water to 1 liter.' Replaces 10.4 g/L heptahydrate in the 20X nitrate stock. The stock addition stays 50 mL/L; no final-medium conversion asserted. Source inspected 2026-11-16; SHA256 22e3c1c53e5746ac01b58e06f56f1bc26dca33bbb1812ddcbd3b34acbeb9cdc6. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ],
+              "replaced_ingredient": {
+                "preferred_term": "magnesium sulfate heptahydrate"
+              }
+            }
+          ]
+        },
+        {
+          "variant_index": 1,
+          "variant_name": "Solid minimal medium",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "agar",
+                "notes": "Quoted MM preparation instruction: 'Make to 1 liter with distilled water.' Literal dose: 18 g added to that preparation. No separately established post-agar final volume or g/L value asserted; not the CM 15-g option."
+              },
+              "stage": "solid minimal-medium preparation before autoclaving",
+              "source_modification_index": 0,
+              "source_text": "Add 18 g agar to the one-litre MM preparation for solid medium; retain the source's autoclaving step.",
+              "evidence": [
+                {
+                  "reference": "doi:10.4148/1941-4765.1175",
+                  "supports": "SUPPORT",
+                  "snippet": "add 18 g agar",
+                  "explanation": "Page 26, Minimal Medium and 20 X Nitrate salts. Supports only the named descriptor/event at the stated stage. Quoted MM preparation instruction: 'Make to 1 liter with distilled water.' Literal dose: 18 g added to that preparation. No separately established post-agar final volume or g/L value asserted; not the CM 15-g option. Source inspected 2026-11-16; SHA256 22e3c1c53e5746ac01b58e06f56f1bc26dca33bbb1812ddcbd3b34acbeb9cdc6. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/magnetospirillum_gryphiswaldense_medium.yaml",
+      "recipe_id": "CultureMech:003006",
+      "expected_sha256": "4a4e9475918654c9c8483e680055124ef16b3991042de96cba4ed256256b85f8",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "crvi_stress_magnetosome_deficient_b17316",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "Cr(VI)",
+                "concentration": {
+                  "value": "10",
+                  "unit": "MG_PER_L"
+                },
+                "notes": "Source-reported Cr(VI) mass concentration; administered chromate salt/counterion/hydration unspecified. Do not convert to mass of an assumed salt. Abstract evidence only."
+              },
+              "stage": "reported B17316 Cr(VI) exposure",
+              "source_modification_index": 1,
+              "source_text": "Add Cr(VI) at 10 mg/L.",
+              "evidence": [
+                {
+                  "reference": "PMID:37088211",
+                  "supports": "SUPPORT",
+                  "snippet": "10 mg L-1",
+                  "explanation": "Primary article abstract indexed by Europe PMC; full methods not reviewed. Supports only the named descriptor/event at the stated stage. Source-reported Cr(VI) mass concentration; administered chromate salt/counterion/hydration unspecified. Do not convert to mass of an assumed salt. Abstract evidence only. Source inspected 2026-11-16; SHA256 aec3da0e724798ee8a372f1cba3cba6c4efc1212e246095d92b50f11ff1ba277. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/rhodobacter_sphaeroides_medium.yaml",
+      "recipe_id": "CultureMech:002928",
+      "expected_sha256": "acd7277999ded45bf80ab5ebdf52c9513e1c97df1b53f1e4406b6e199f39f624",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "phototrophic_l_phenylalanine_sole_nitrogen_ou5",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "L-phenylalanine",
+                "notes": "Ingredient identity and sole-nitrogen role only; dose and identities of any displaced basal nitrogen compounds are unresolved. No base-recipe materialization or inferred removals."
+              },
+              "stage": "reported sole-nitrogen phototrophic formulation",
+              "source_modification_index": 1,
+              "source_text": "Use L-phenylalanine as the sole nitrogen source.",
+              "evidence": [
+                {
+                  "reference": "PMID:19826864",
+                  "supports": "SUPPORT",
+                  "snippet": "L-phenylalanine",
+                  "explanation": "Primary article abstract indexed by Europe PMC; full methods not reviewed. Supports only the named descriptor/event at the stated stage. Ingredient identity and sole-nitrogen role only; dose and identities of any displaced basal nitrogen compounds are unresolved. No base-recipe materialization or inferred removals. Source inspected 2026-11-16; SHA256 6429c3b3fce615d13eb83f68eae574c48fa8e8dd60729b4744fd5615f88d0e8b. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/sodalis_glossinidius_medium.yaml",
+      "recipe_id": "CultureMech:000443",
+      "expected_sha256": "a22d765a5e483f6ee7e0e7485c89c34608dcdf950b5175c97dd5cf05c25a090d",
+      "variants": [
+        {
+          "variant_index": 1,
+          "variant_name": "Casein hydrolysate alternative",
+          "ingredient_changes": [
+            {
+              "action": "REPLACE",
+              "ingredient": {
+                "preferred_term": "casein hydrolysate",
+                "notes": "Literal batch substitution: 8.10 g casein hydrolysate for 8.10 g lactalbumin hydrolysate, not both. Undefined hydrolysate mixture; serum addition and final volume not converted."
+              },
+              "stage": "Solution A batch preparation",
+              "source_modification_index": 0,
+              "source_text": "Replace the 8.10 g lactalbumin hydrolysate batch input in Solution A with 8.10 g casein hydrolysate, not both together. Other preparation instructions are unchanged.",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "Casein hydrolysate 8.10 g",
+                  "explanation": "Page 1, Solution A hydrolysate alternatives. Supports only the named descriptor/event at the stated stage. Literal batch substitution: 8.10 g casein hydrolysate for 8.10 g lactalbumin hydrolysate, not both. Undefined hydrolysate mixture; serum addition and final volume not converted. Source inspected 2026-11-16; SHA256 6af992ef5048ce852d2c1c88463f1eeedf3441b682522231c93341b3ce1debac. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ],
+              "replaced_ingredient": {
+                "preferred_term": "lactalbumin hydrolysate"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/tryptic_soy_broth.yaml",
+      "recipe_id": "CultureMech:008226",
+      "expected_sha256": "569018dc43baf552de065e7fbb7a547f5c10dcc0a308a0d9cb49f0a0a5a34040",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "tsb_without_dextrose_plus_starch_or_maltose",
+          "ingredient_changes": [
+            {
+              "action": "REMOVE",
+              "ingredient": {
+                "preferred_term": "dextrose",
+                "notes": "Explicit glucose/dextrose omission. No positive-presence descriptor is emitted for the removed ingredient."
+              },
+              "stage": "TSBWD basal preparation",
+              "source_modification_index": 0,
+              "source_text": "Omit dextrose/glucose from the parent Tryptic Soy Broth formulation.",
+              "evidence": [
+                {
+                  "reference": "PMID:15931519",
+                  "supports": "SUPPORT",
+                  "snippet": "tryptic soy broth without dextrose",
+                  "explanation": "Primary article abstract indexed by Europe PMC; full methods not reviewed. Supports only the named descriptor/event at the stated stage. Explicit glucose/dextrose omission. No positive-presence descriptor is emitted for the removed ingredient. Source inspected 2026-11-16; SHA256 0e246ebb54c67a39f834240a8875f5725c426276c86f3fc8ba5488997858e462. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "soluble starch",
+                "concentration": {
+                  "value": "0.5; 1.0",
+                  "unit": "PERCENT_W_V"
+                },
+                "notes": "Two separate tested doses and mutually exclusive starch/maltose substrate arms, not simultaneous supplementation. Primary abstract explicitly states w/v; no full parent formulation certification."
+              },
+              "stage": "soluble-starch substrate arm",
+              "source_modification_index": 1,
+              "source_text": "Add 0.5% or 1.0% (w/v) soluble starch or maltose.",
+              "evidence": [
+                {
+                  "reference": "PMID:15931519",
+                  "supports": "SUPPORT",
+                  "snippet": "0.5% or 1.0% (w/v)",
+                  "explanation": "Primary article abstract indexed by Europe PMC; full methods not reviewed. Supports only the named descriptor/event at the stated stage. Two separate tested doses and mutually exclusive starch/maltose substrate arms, not simultaneous supplementation. Primary abstract explicitly states w/v; no full parent formulation certification. Source inspected 2026-11-16; SHA256 0e246ebb54c67a39f834240a8875f5725c426276c86f3fc8ba5488997858e462. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "maltose",
+                "concentration": {
+                  "value": "0.5; 1.0",
+                  "unit": "PERCENT_W_V"
+                },
+                "notes": "Two separate tested doses and mutually exclusive starch/maltose substrate arms, not simultaneous supplementation. Primary abstract explicitly states w/v; no full parent formulation certification."
+              },
+              "stage": "maltose substrate arm",
+              "source_modification_index": 1,
+              "source_text": "Add 0.5% or 1.0% (w/v) soluble starch or maltose.",
+              "evidence": [
+                {
+                  "reference": "PMID:15931519",
+                  "supports": "SUPPORT",
+                  "snippet": "0.5% or 1.0% (w/v)",
+                  "explanation": "Primary article abstract indexed by Europe PMC; full methods not reviewed. Supports only the named descriptor/event at the stated stage. Two separate tested doses and mutually exclusive starch/maltose substrate arms, not simultaneous supplementation. Primary abstract explicitly states w/v; no full parent formulation certification. Source inspected 2026-11-16; SHA256 0e246ebb54c67a39f834240a8875f5725c426276c86f3fc8ba5488997858e462. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
