@@ -228,6 +228,29 @@ variants:
       aluminum
     explanation: Literature evidence supports modeling the aluminum sulfate growth
       condition as a variant of the parent Acidiphilium Medium record.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: aluminum sulfate
+      concentration:
+        value: '300'
+        unit: MILLIMOLAR
+      notes: Al2(SO4)3 identity as stated; hydration unspecified. Distinct from the
+        1 mM and 50 mM precultivation treatments; no whole-parent equivalence inferred.
+    stage: reported 300 mM stress exposure
+    source_modification_index: 1
+    source_text: Add aluminum sulfate at the stress concentration reported by the source
+      study.
+    evidence:
+    - reference: PMID:12420179
+      supports: SUPPORT
+      snippet: 300 mM aluminum sulfate
+      explanation: Primary article abstract indexed by Europe PMC; full methods not
+        reviewed. Supports only the named descriptor/event at the stated stage. Al2(SO4)3
+        identity as stated; hydration unspecified. Distinct from the 1 mM and 50 mM
+        precultivation treatments; no whole-parent equivalence inferred. Source inspected
+        2026-11-16; SHA256 b1e8c1d7ee39651d2ad5a4c17b8fcd2d0758aee5f717378e442381e92fa5963b.
+        No parent formulation, growth, ontology identity, or missing dose is inferred.
 curation_history:
 - timestamp: '2026-01-26T17:53:10.623344Z'
   curator: mediadive-import
@@ -282,6 +305,28 @@ curation_history:
     ingredients[4].concentration: {"unit": "G_PER_L", "value": "0.3"} -> {"unit":
     "G_PER_L", "value": "0.3"} (evidence_only); ingredients[5].concentration: {"unit":
     "G_PER_L", "value": "1"} -> {"unit": "G_PER_L", "value": "1"} (evidence_only)'
+- timestamp: '2026-11-16T21:32:59.971437+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "f3ae005ac2d08bdb104330cca0303979ebbf0c3ade4eade7c0e588919533b08f",
+    "variants": [{"ingredient_changes": [{"action": "ADD", "evidence": [{"explanation":
+    "Primary article abstract indexed by Europe PMC; full methods not reviewed. Supports
+    only the named descriptor/event at the stated stage. Al2(SO4)3 identity as stated;
+    hydration unspecified. Distinct from the 1 mM and 50 mM precultivation treatments;
+    no whole-parent equivalence inferred. Source inspected 2026-11-16; SHA256 b1e8c1d7ee39651d2ad5a4c17b8fcd2d0758aee5f717378e442381e92fa5963b.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "PMID:12420179", "snippet": "300 mM aluminum sulfate", "supports":
+    "SUPPORT"}], "ingredient": {"concentration": {"unit": "MILLIMOLAR", "value": "300"},
+    "notes": "Al2(SO4)3 identity as stated; hydration unspecified. Distinct from the
+    1 mM and 50 mM precultivation treatments; no whole-parent equivalence inferred.",
+    "preferred_term": "aluminum sulfate"}, "source_modification_index": 1, "source_text":
+    "Add aluminum sulfate at the stress concentration reported by the source study.",
+    "stage": "reported 300 mM stress exposure"}], "variant_index": 0, "variant_name":
+    "aluminum_sulfate_stress_acidiphilium_cryptum"}]}'
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: Acidiphilium cryptum

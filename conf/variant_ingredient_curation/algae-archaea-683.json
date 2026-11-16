@@ -157,7 +157,7 @@
                 {
                   "reference": "doi:10.1007/s10126-021-10037-4",
                   "supports": "SUPPORT",
-                  "snippet": "0, 10, 20, 50, 200, or 423",
+                  "snippet": "0, 10, 20, 50, 200, or 423\n\nmM",
                   "explanation": "Table S1, component rows and sodium footnotes; primary source inspected 2026-11-16. Discrete alternative NaCl settings; zero means no NaCl addition. These are not summed or treated as a continuous dose. Trace salts contribute background sodium; no total sodium concentration or universal parent equivalence asserted."
                 }
               ],
@@ -215,7 +215,7 @@
                 {
                   "reference": "doi:10.3389/fenrg.2015.00020",
                   "supports": "SUPPORT",
-                  "snippet": "33.6",
+                  "snippet": "33.6 g/L of sea salts were used in place of the NaCl",
                   "explanation": "Materials and Methods, microalgal strains and maintenance media; primary source inspected 2026-11-16. Undefined sea-salt mixture replaces NaCl. No salt-product identity, constituent expansion, NaCl-equivalent molarity or parent seawater equivalence is claimed."
                 }
               ],
@@ -254,7 +254,7 @@
                 {
                   "reference": "doi:10.3389/fmicb.2015.00326",
                   "supports": "SUPPORT",
-                  "snippet": "5 mM NH4Cl",
+                  "snippet": "nitrogen source (5 mM NH4Cl)",
                   "explanation": "Results, ASW nitrogen/phosphorus additions and Figure 2 buffered condition; primary source inspected 2026-11-16. Names resolved from the primary Results, not guessed from generic nitrogen/phosphorus prose. Does not certify equivalence to the local UTEX artificial-seawater parent."
                 }
               ],
@@ -277,7 +277,7 @@
                 {
                   "reference": "doi:10.3389/fmicb.2015.00326",
                   "supports": "SUPPORT",
-                  "snippet": "0.22 mM K2HPO4",
+                  "snippet": "phosphorus source (0.22 mM K2HPO4)",
                   "explanation": "Results, ASW nitrogen/phosphorus additions and Figure 2 buffered condition; primary source inspected 2026-11-16. Explicit phosphorus source; no hydrate or other phosphate identity inferred."
                 }
               ],
@@ -300,7 +300,7 @@
                 {
                   "reference": "doi:10.3389/fmicb.2015.00326",
                   "supports": "SUPPORT",
-                  "snippet": "20 mM HEPES",
+                  "snippet": "20 mM HEPES-KOH (pH 7.8)",
                   "explanation": "Results, ASW nitrogen/phosphorus additions and Figure 2 buffered condition; primary source inspected 2026-11-16. The source calls the preparation HEPES-KOH. No separate KOH dose, chemical salt form or buffer-component stoichiometry inferred."
                 }
               ],
@@ -366,7 +366,7 @@
                   "reference": "doi:10.1007/s10126-021-10037-4",
                   "supports": "SUPPORT",
                   "snippet": "0.001",
-                  "explanation": "Table S1, component rows and sodium footnotes; primary source inspected 2026-11-16. TableS1 trace-element heading is micromolar:0.001micromolar×1000=1nanomolar. Not10nM and not an increment atop canonical F/2."
+                  "explanation": "Table S1, component rows and sodium footnotes; primary source inspected 2026-11-16. TableS1 trace-element heading is micromolar:0.001micromolar×1000=1nanomolar. Not10nM and not an increment atop canonical F/2. Separate exact table heading: \"Trace elements (μM)\"; row label \"Na2SeO3\"; cell \"0.001\". Conversion 0.001micromolar×1000=1nanomolar."
                 }
               ],
               "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
@@ -389,7 +389,7 @@
                   "reference": "doi:10.1007/s10126-021-10037-4",
                   "supports": "SUPPORT",
                   "snippet": "0.1",
-                  "explanation": "Table S1, component rows and sodium footnotes; primary source inspected 2026-11-16. Na2SiO3.9H2O under basal seawater components(mM). Hydrate specified by the source. No full parent equivalence or additional salt mass inferred."
+                  "explanation": "Table S1, component rows and sodium footnotes; primary source inspected 2026-11-16. Na2SiO3.9H2O under basal seawater components(mM). Hydrate specified by the source. No full parent equivalence or additional salt mass inferred. Separate exact table heading: \"Basal seawater components (mM)\"; row label \"Na2SiO3·9H2O\"; cell \"0.1\"."
                 }
               ],
               "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
@@ -411,7 +411,7 @@
                 {
                   "reference": "doi:10.1007/s10126-021-10037-4",
                   "supports": "SUPPORT",
-                  "snippet": "0, 10, 20, 50, 200, or 423",
+                  "snippet": "0, 10, 20, 50, 200, or 423\n\nmM",
                   "explanation": "Table S1, component rows and sodium footnotes; primary source inspected 2026-11-16. Discrete alternative NaCl settings; zero means no NaCl addition. These are not summed or treated as a continuous dose. Trace salts contribute background sodium; no total sodium concentration or universal parent equivalence asserted."
                 }
               ],
@@ -443,7 +443,7 @@
                 {
                   "reference": "doi:10.1007/s00449-016-1726-2",
                   "supports": "SUPPORT",
-                  "snippet": "filtered effluent",
+                  "snippet": "1.5% (v/v) of the effluent was added at the start as a nutrient source, a similar volume of effluent was added after 3 days of growth, and a final addition of 3% (v/v) of the initial volume was added after 6 days of growth",
                   "explanation": "Materials and methods, filtered effluent preparation and timed additions; primary source inspected 2026-11-16. Primary Methods: filtered plant-residue digester effluent in carbonate buffer;1.5%(v/v) at start, a similar volume after3days,3% of initial volume after6days. These sequential additions must not become a6% initial concentration. No constituent expansion or assertion that all canonical Spirulina ingredients remain present."
                 }
               ],
@@ -475,7 +475,7 @@
                 {
                   "reference": "doi:10.1016/j.biortech.2025.132777",
                   "supports": "SUPPORT",
-                  "snippet": "HAc-NaAc",
+                  "snippet": "HAc-NaAc was used to balance the pH of the culture medium and replace tris",
                   "explanation": "Primary article abstract, HAc-NaAc replacement of Tris; primary source inspected 2026-11-16. Primary abstract explicitly says HAc-NaAc replaces Tris. Keep the source abbreviation at mixture level; no acetate salt hydration, buffer ratio, dose, final concentration or full TAP-equivalence inferred."
                 }
               ],
@@ -550,7 +550,7 @@
                   "reference": "https://www.ccap.ac.uk/wp-content/uploads/MR_BB_MErds.pdf",
                   "supports": "SUPPORT",
                   "snippet": "8:2 mixture or 1:1 mixture",
-                  "explanation": "Page 1, 8:2 or 1:1 mixture; named BB and MErds recipes; primary source inspected 2026-11-16. Selected source ratio gives800mL prepared BB and200mL prepared MErds per1L mixture. These are source recipe inputs, not additional volumes atop an already completed parent medium; other ratio is separate."
+                  "explanation": "Page 1, 8:2 or 1:1 mixture; named BB and MErds recipes; primary source inspected 2026-11-16. Selected source ratio gives800mL prepared BB and200mL prepared MErds per1L mixture. These are source recipe inputs, not additional volumes atop an already completed parent medium; other ratio is separate. The source ratio is dimensionless. For the explicitly selected1L mixture,8:2 yields800mL+200mL and1:1 yields500mL+500mL; no chemical concentration or constituent expansion is inferred."
                 }
               ],
               "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
@@ -573,7 +573,7 @@
                   "reference": "https://www.ccap.ac.uk/wp-content/uploads/MR_BB_MErds.pdf",
                   "supports": "SUPPORT",
                   "snippet": "8:2 mixture or 1:1 mixture",
-                  "explanation": "Page 1, 8:2 or 1:1 mixture; named BB and MErds recipes; primary source inspected 2026-11-16. Prepared modified Foyns Erdschreiber medium, retained as a named mixture without expanding stock constituents."
+                  "explanation": "Page 1, 8:2 or 1:1 mixture; named BB and MErds recipes; primary source inspected 2026-11-16. Prepared modified Foyns Erdschreiber medium, retained as a named mixture without expanding stock constituents. The source ratio is dimensionless. For the explicitly selected1L mixture,8:2 yields800mL+200mL and1:1 yields500mL+500mL; no chemical concentration or constituent expansion is inferred."
                 }
               ],
               "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
@@ -602,7 +602,7 @@
                   "reference": "https://www.ccap.ac.uk/wp-content/uploads/MR_BB_MErds.pdf",
                   "supports": "SUPPORT",
                   "snippet": "8:2 mixture or 1:1 mixture",
-                  "explanation": "Page 1, 8:2 or 1:1 mixture; named BB and MErds recipes; primary source inspected 2026-11-16. Selected source ratio gives500mL prepared BB and500mL prepared MErds per1L mixture. These are source recipe inputs, not additional volumes atop an already completed parent medium; other ratio is separate."
+                  "explanation": "Page 1, 8:2 or 1:1 mixture; named BB and MErds recipes; primary source inspected 2026-11-16. Selected source ratio gives500mL prepared BB and500mL prepared MErds per1L mixture. These are source recipe inputs, not additional volumes atop an already completed parent medium; other ratio is separate. The source ratio is dimensionless. For the explicitly selected1L mixture,8:2 yields800mL+200mL and1:1 yields500mL+500mL; no chemical concentration or constituent expansion is inferred."
                 }
               ],
               "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
@@ -625,7 +625,7 @@
                   "reference": "https://www.ccap.ac.uk/wp-content/uploads/MR_BB_MErds.pdf",
                   "supports": "SUPPORT",
                   "snippet": "8:2 mixture or 1:1 mixture",
-                  "explanation": "Page 1, 8:2 or 1:1 mixture; named BB and MErds recipes; primary source inspected 2026-11-16. Prepared modified Foyns Erdschreiber medium, retained as a named mixture without expanding stock constituents."
+                  "explanation": "Page 1, 8:2 or 1:1 mixture; named BB and MErds recipes; primary source inspected 2026-11-16. Prepared modified Foyns Erdschreiber medium, retained as a named mixture without expanding stock constituents. The source ratio is dimensionless. For the explicitly selected1L mixture,8:2 yields800mL+200mL and1:1 yields500mL+500mL; no chemical concentration or constituent expansion is inferred."
                 }
               ],
               "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
@@ -660,7 +660,7 @@
                 {
                   "reference": "doi:10.1038/srep10036",
                   "supports": "SUPPORT",
-                  "snippet": "1.06",
+                  "snippet": "f/2 supplemented with 1.06 × 10−4 M silicate",
                   "explanation": "Methods, culture conditions and bacterial-community antibiotic experiment; primary source inspected 2026-11-16. Preserve reported supplement concentration. No sodium salt, hydrate, stock composition, total silicate including base, or local f/2+Si equivalence inferred."
                 }
               ],
@@ -714,7 +714,7 @@
                 {
                   "reference": "doi:10.1038/srep10036",
                   "supports": "SUPPORT",
-                  "snippet": "penicillin G",
+                  "snippet": "penicillin G and dihydrostreptomycin sulphate in a ratio of 200 μg mL−1: 50 μg mL−1",
                   "explanation": "Methods, culture conditions and bacterial-community antibiotic experiment; primary source inspected 2026-11-16. Reported treatment dose200micrograms/mL. Unreported salt form and stock strength remain unresolved. Untreated control and later marine-agar bacterial assay are separate."
                 }
               ],
@@ -733,7 +733,7 @@
                 {
                   "reference": "doi:10.1038/srep10036",
                   "supports": "SUPPORT",
-                  "snippet": "dihydrostreptomycin sulphate",
+                  "snippet": "penicillin G and dihydrostreptomycin sulphate in a ratio of 200 μg mL−1: 50 μg mL−1",
                   "explanation": "Methods, culture conditions and bacterial-community antibiotic experiment; primary source inspected 2026-11-16. Reported treatment dose50micrograms/mL, preserved literally without silent unit conversion. Not streptomycin; no hydrate or stock concentration inferred."
                 }
               ],
@@ -797,7 +797,7 @@
                 {
                   "reference": "https://www.ccap.ac.uk/wp-content/uploads/MR_f2Si.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "0.1705 g",
+                  "snippet": "omit stock 5 and instead add 0.1705 g of sodium metasilicate\n(Na2SiO3.9H2O) per litre of medium.",
                   "explanation": "Page 2, f/2 + Si Modified, direct addition replacing stock 5; primary source inspected 2026-11-16. Page2 says omit stock5 and instead add Na2SiO3.9H2O directly per litre. Parent stock5 composition is not separately added; no hydrate conversion."
                 }
               ],
@@ -836,7 +836,7 @@
                 {
                   "reference": "doi:10.1128/jb.183.24.7007-7016.2001",
                   "supports": "SUPPORT",
-                  "snippet": "STL",
+                  "snippet": "20 mM Tris and 20 mM maleic acid",
                   "explanation": "Materials and Methods, Archaeoglobus growth and harvest; primary source inspected 2026-11-16. Only Reed2001 alternative buffer is structured; Hartzell PIPES preparation remains held for its primary source. Do not combine with Hartzell formulation or infer unspecified hydrate."
                 }
               ],
@@ -859,7 +859,7 @@
                 {
                   "reference": "doi:10.1128/jb.183.24.7007-7016.2001",
                   "supports": "SUPPORT",
-                  "snippet": "STL",
+                  "snippet": "20 mM Tris and 20 mM maleic acid",
                   "explanation": "Materials and Methods, Archaeoglobus growth and harvest; primary source inspected 2026-11-16. Only Reed2001 alternative buffer is structured; Hartzell PIPES preparation remains held for its primary source. Do not combine with Hartzell formulation or infer unspecified hydrate."
                 }
               ],
@@ -882,7 +882,7 @@
                 {
                   "reference": "doi:10.1128/jb.183.24.7007-7016.2001",
                   "supports": "SUPPORT",
-                  "snippet": "STL",
+                  "snippet": "22 mM dl-sodium lactate",
                   "explanation": "Materials and Methods, Archaeoglobus growth and harvest; primary source inspected 2026-11-16. Only Reed2001 DL-sodium-lactate concentration structured; Hartzell30% stock7mL/L preparation remains held. Do not combine with Hartzell formulation or infer unspecified hydrate."
                 }
               ],
@@ -905,7 +905,7 @@
                 {
                   "reference": "doi:10.1128/jb.183.24.7007-7016.2001",
                   "supports": "SUPPORT",
-                  "snippet": "STL",
+                  "snippet": "0.5 g of yeast extract per liter",
                   "explanation": "Materials and Methods, Archaeoglobus growth and harvest; primary source inspected 2026-11-16. Only Reed2001 yeast-extract condition structured; Wolfe-vitamin replacement belongs to unresolved Hartzell alternative. Do not combine with Hartzell formulation or infer unspecified hydrate."
                 }
               ],
@@ -928,7 +928,7 @@
                 {
                   "reference": "doi:10.1128/jb.183.24.7007-7016.2001",
                   "supports": "SUPPORT",
-                  "snippet": "STL",
+                  "snippet": "1 mM Na2S and 1 mM Na2S2O3",
                   "explanation": "Materials and Methods, Archaeoglobus growth and harvest; primary source inspected 2026-11-16. Only Reed2001 final reductant concentrations structured; Hartzell combined-stock preparation remains held. Do not combine with Hartzell formulation or infer unspecified hydrate."
                 }
               ],
@@ -951,7 +951,7 @@
                 {
                   "reference": "doi:10.1128/jb.183.24.7007-7016.2001",
                   "supports": "SUPPORT",
-                  "snippet": "STL",
+                  "snippet": "1 mM Na2S and 1 mM Na2S2O3",
                   "explanation": "Materials and Methods, Archaeoglobus growth and harvest; primary source inspected 2026-11-16. Only Reed2001 final reductant concentrations structured; Hartzell combined-stock preparation remains held. Do not combine with Hartzell formulation or infer unspecified hydrate."
                 }
               ],
@@ -970,7 +970,7 @@
                 {
                   "reference": "doi:10.1128/jb.183.24.7007-7016.2001",
                   "supports": "SUPPORT",
-                  "snippet": "resazurin",
+                  "snippet": "0.2% resazurin was added as a reduction indicator",
                   "explanation": "Materials and Methods, Archaeoglobus growth and harvest; primary source inspected 2026-11-16. Source says0.2% resazurin was added without an unambiguous final-dose basis/stock volume; no concentration promoted. Stored biomass underN2 is not evidence of culture sparging."
                 }
               ],
@@ -1042,7 +1042,7 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "1 ml/l Wolin's vitamin solution",
+                  "snippet": "1 ml/l Wolin's vitamin solution (10x, see medium 120)",
                   "explanation": "Pages 1–2, exact DSM strain-specific instructions; primary source inspected 2026-11-16. Named10x solution refers to medium120; constituent composition not expanded."
                 }
               ],
@@ -1064,7 +1064,7 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "0.30",
+                  "snippet": "0.30\ng/l DL-dithiothreitol",
                   "explanation": "Pages 1–2, exact DSM strain-specific instructions; primary source inspected 2026-11-16. "
                 }
               ],
@@ -1105,7 +1105,7 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "Omit Na2S",
+                  "snippet": "Omit Na2S x 9 H2O and L-Cysteine HCl x H2O.",
                   "explanation": "Pages 1–2, exact DSM strain-specific instructions; primary source inspected 2026-11-16. "
                 }
               ],
@@ -1123,7 +1123,7 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "L-Cysteine HCl x H2O",
+                  "snippet": "Omit Na2S x 9 H2O and L-Cysteine HCl x H2O.",
                   "explanation": "Pages 1–2, exact DSM strain-specific instructions; primary source inspected 2026-11-16. "
                 }
               ],
@@ -1180,7 +1180,7 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "3.00 g/l",
+                  "snippet": "Increase amount of Na-acetate to 3.00 g/l.",
                   "explanation": "Pages 1–2, exact DSM strain-specific instructions; primary source inspected 2026-11-16. Source gives no hydrate; value replaces the baseline amount rather than adding an increment."
                 }
               ],
@@ -1368,7 +1368,7 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "10.00 ml/l",
+                  "snippet": "10.00 ml/l of\nWolin's vitamin solution",
                   "explanation": "Pages 1–2, exact DSM strain-specific instructions; primary source inspected 2026-11-16. Source refers to medium141; not assumed equal to the10x medium120 preparation in another strain variant."
                 }
               ],
@@ -1397,7 +1397,7 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "0.10 g/l",
+                  "snippet": "0.10 g/l\n2-mercaptoethanesulfonic acid (coenzyme M)",
                   "explanation": "Pages 1–2, exact DSM strain-specific instructions; primary source inspected 2026-11-16. Gas mixture/pressure is a separate post-inoculation condition, not a liquid ingredient dose."
                 }
               ],
@@ -1523,7 +1523,7 @@
                 {
                   "reference": "doi:10.1128/AEM.02019-07",
                   "supports": "SUPPORT",
-                  "snippet": "7.5 g/liter",
+                  "snippet": "Approximately 7.5 g/liter of FeSO4·7H2O",
                   "explanation": "Materials and Methods, transcriptomics versus scanning-electron-microscopy cultures; primary source inspected 2026-11-16. Approximately7.5g/L; preserve approximation. Two of four yeast-extract cultures received iron; no universal addition."
                 }
               ],
@@ -1542,7 +1542,7 @@
                 {
                   "reference": "doi:10.1128/AEM.02019-07",
                   "supports": "SUPPORT",
-                  "snippet": "0.1% FeS2",
+                  "snippet": "0.1% FeS2 as the sole energy source",
                   "explanation": "Materials and Methods, transcriptomics versus scanning-electron-microscopy cultures; primary source inspected 2026-11-16. Different experimental preparation from the transcriptomics DSMZ88+yeast+iron arm. Literal0.1% sole-energy-source input; percent basis not specified, no concentration enum or parent equivalence inferred."
                 }
               ],

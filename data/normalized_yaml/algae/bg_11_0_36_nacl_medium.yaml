@@ -183,6 +183,68 @@ curation_history:
     "title": "BG-11-1 + 0.36% NaCl Medium | UTEX Culture Collection of Algae"}, "old":
     {"reference": "https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium"},
     "pointer": ["references", 1]}]}'
+- timestamp: '2026-11-16T21:33:24.192942+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "053b2ac82a0c3681d84f53714b129366f2e7b2f9f2d8da1acc6b72c471491e88",
+    "variants": [{"ingredient_changes": [{"action": "ADD", "evidence": [{"explanation":
+    "Agar media, step 2; primary UTEX collection page inspected 2026-11-16. This ingredient
+    occurrence is scoped to the optional variant, not a change to the liquid parent.",
+    "reference": "https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium",
+    "snippet": "Add NaCl", "supports": "SUPPORT"}], "ingredient": {"notes": "Use this
+    formulation''s NaCl while preparing the 500 mL liquid portion. The modification
+    does not restate a dose; do not interpret a stock concentration.", "preferred_term":
+    "NaCl"}, "source_modification_index": 0, "source_text": "For the agar alternative,
+    perform BG-11 preparation step one, add the formulation-specific NaCl, and make
+    this portion up to 500 mL with dH2O.", "stage": "saline liquid portion before
+    separate autoclaving"}, {"action": "ADD", "evidence": [{"explanation": "Agar media,
+    step 2; primary UTEX collection page inspected 2026-11-16. This ingredient occurrence
+    is scoped to the optional variant, not a change to the liquid parent.", "reference":
+    "https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium", "snippet":
+    "bring total volume to 500 mL", "supports": "SUPPORT"}], "ingredient": {"notes":
+    "Make the supplemented liquid portion up to 500 mL with dH2O; 500 mL is the portion
+    volume, not an independently specified water dose.", "preferred_term": "dH2O"},
+    "source_modification_index": 0, "source_text": "For the agar alternative, perform
+    BG-11 preparation step one, add the formulation-specific NaCl, and make this portion
+    up to 500 mL with dH2O.", "stage": "liquid portion makeup before separate autoclaving"},
+    {"action": "ADD", "evidence": [{"explanation": "Agar media, step 3; primary UTEX
+    collection page inspected 2026-11-16. This ingredient occurrence is scoped to
+    the optional variant, not a change to the liquid parent. Agar-media step3, separately
+    autoclaved agar portion; water subscript rendered as plain text. Combining portions
+    occurs in step7, not in this quoted stock-preparation step. Exact excerpt clarification
+    for issue763; scientific payload unchanged.", "reference": "https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium",
+    "snippet": "add 15 g of agar to 500 mL of dH2O", "supports": "SUPPORT"}], "ingredient":
+    {"notes": "Literal input: 15 g agar to 500 mL dH2O in a separate container. The
+    two portions are combined later; no final concentration is inferred.", "preferred_term":
+    "agar"}, "source_modification_index": 1, "source_text": "In another container,
+    add 15 g agar to 500 mL dH2O. Autoclave both preparations separately, then cool
+    them to 45-50 degrees C in a water bath.", "stage": "separate agar portion before
+    autoclaving"}, {"action": "ADD", "evidence": [{"explanation": "Agar media, step
+    3; water notation dH2O; primary UTEX collection page inspected 2026-11-16. This
+    ingredient occurrence is scoped to the optional variant, not a change to the liquid
+    parent.", "reference": "https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium",
+    "snippet": "500 mL of dH", "supports": "SUPPORT"}], "ingredient": {"notes": "Literal
+    input: 500 mL dH2O for the separate agar portion. This is a preparation input,
+    not a final-volume water fraction.", "preferred_term": "dH2O"}, "source_modification_index":
+    1, "source_text": "In another container, add 15 g agar to 500 mL dH2O. Autoclave
+    both preparations separately, then cool them to 45-50 degrees C in a water bath.",
+    "stage": "separate agar portion before autoclaving"}, {"action": "ADD", "evidence":
+    [{"explanation": "Agar media, step 6; primary UTEX collection page inspected 2026-11-16.
+    This ingredient occurrence is scoped to the optional variant, not a change to
+    the liquid parent.", "reference": "https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium",
+    "snippet": "sterile Sodium Thiosulfate", "supports": "SUPPORT"}], "ingredient":
+    {"notes": "Dose, stock strength and hydrate form are not specified on this salt-variant
+    page. Do not import a dose from the linked base formulation.", "preferred_term":
+    "sodium thiosulfate"}, "source_modification_index": 2, "source_text": "Mix sterile
+    sodium thiosulfate into the agar preparation before combining both portions. The
+    salt-variant page does not specify a thiosulfate dose; no amount is inferred from
+    the linked base recipe. Mix promptly, allow to cool and refrigerate.", "stage":
+    "sterile addition to cooled agar portion before combining"}], "variant_index":
+    0, "variant_name": "Optional agar formulation"}]}'
 references:
 - reference: UTEX:bg-11-1-plus-0-point-36-percent-nacl-medium
 - reference: https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium
@@ -238,3 +300,88 @@ variants:
       Thiosulfate", combination, cooling and refrigeration. The whole agar subsection
       was inspected and contains no local thiosulfate amount. The 15 g is a batch
       addition; final volume after sterile supplement is not measured here.'
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: NaCl
+      notes: Use this formulation's NaCl while preparing the 500 mL liquid portion.
+        The modification does not restate a dose; do not interpret a stock concentration.
+    stage: saline liquid portion before separate autoclaving
+    evidence:
+    - reference: https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium
+      supports: SUPPORT
+      snippet: Add NaCl
+      explanation: Agar media, step 2; primary UTEX collection page inspected 2026-11-16.
+        This ingredient occurrence is scoped to the optional variant, not a change to
+        the liquid parent.
+    source_modification_index: 0
+    source_text: For the agar alternative, perform BG-11 preparation step one, add the
+      formulation-specific NaCl, and make this portion up to 500 mL with dH2O.
+  - action: ADD
+    ingredient:
+      preferred_term: dH2O
+      notes: Make the supplemented liquid portion up to 500 mL with dH2O; 500 mL is
+        the portion volume, not an independently specified water dose.
+    stage: liquid portion makeup before separate autoclaving
+    evidence:
+    - reference: https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium
+      supports: SUPPORT
+      snippet: bring total volume to 500 mL
+      explanation: Agar media, step 2; primary UTEX collection page inspected 2026-11-16.
+        This ingredient occurrence is scoped to the optional variant, not a change to
+        the liquid parent.
+    source_modification_index: 0
+    source_text: For the agar alternative, perform BG-11 preparation step one, add the
+      formulation-specific NaCl, and make this portion up to 500 mL with dH2O.
+  - action: ADD
+    ingredient:
+      preferred_term: agar
+      notes: 'Literal input: 15 g agar to 500 mL dH2O in a separate container. The two
+        portions are combined later; no final concentration is inferred.'
+    stage: separate agar portion before autoclaving
+    evidence:
+    - reference: https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium
+      supports: SUPPORT
+      snippet: add 15 g of agar to 500 mL of dH2O
+      explanation: Agar media, step 3; primary UTEX collection page inspected 2026-11-16.
+        This ingredient occurrence is scoped to the optional variant, not a change to
+        the liquid parent. Agar-media step3, separately autoclaved agar portion; water
+        subscript rendered as plain text. Combining portions occurs in step7, not in
+        this quoted stock-preparation step. Exact excerpt clarification for issue763;
+        scientific payload unchanged.
+    source_modification_index: 1
+    source_text: In another container, add 15 g agar to 500 mL dH2O. Autoclave both
+      preparations separately, then cool them to 45-50 degrees C in a water bath.
+  - action: ADD
+    ingredient:
+      preferred_term: dH2O
+      notes: 'Literal input: 500 mL dH2O for the separate agar portion. This is a preparation
+        input, not a final-volume water fraction.'
+    stage: separate agar portion before autoclaving
+    evidence:
+    - reference: https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium
+      supports: SUPPORT
+      snippet: 500 mL of dH
+      explanation: Agar media, step 3; water notation dH2O; primary UTEX collection
+        page inspected 2026-11-16. This ingredient occurrence is scoped to the optional
+        variant, not a change to the liquid parent.
+    source_modification_index: 1
+    source_text: In another container, add 15 g agar to 500 mL dH2O. Autoclave both
+      preparations separately, then cool them to 45-50 degrees C in a water bath.
+  - action: ADD
+    ingredient:
+      preferred_term: sodium thiosulfate
+      notes: Dose, stock strength and hydrate form are not specified on this salt-variant
+        page. Do not import a dose from the linked base formulation.
+    stage: sterile addition to cooled agar portion before combining
+    evidence:
+    - reference: https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium
+      supports: SUPPORT
+      snippet: sterile Sodium Thiosulfate
+      explanation: Agar media, step 6; primary UTEX collection page inspected 2026-11-16.
+        This ingredient occurrence is scoped to the optional variant, not a change to
+        the liquid parent.
+    source_modification_index: 2
+    source_text: Mix sterile sodium thiosulfate into the agar preparation before combining
+      both portions. The salt-variant page does not specify a thiosulfate dose; no amount
+      is inferred from the linked base recipe. Mix promptly, allow to cool and refrigerate.

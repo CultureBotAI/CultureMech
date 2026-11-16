@@ -298,6 +298,30 @@ curation_history:
     duplicate values written by cleanup_media_quality.py. Every merged part was the
     same value, so the pre-merge value is unambiguous and no source lookup was needed.
     Rows whose merged parts differ were left untouched.
+- timestamp: '2026-11-16T21:36:32.382438+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "8918ca273b10dc6cce0292e504c741e0ec65b68c7feee2c65098180a8b3ed0f6",
+    "variants": [{"ingredient_changes": [{"action": "REPLACE", "evidence": [{"explanation":
+    "Materials and Methods, low-sulfate Brock''s salts and species-specific supplements;
+    primary source inspected 2026-11-16. Primary formulation names NH4Cl; local anaerobic
+    parent names ammonium sulfate. Primary MgSO4.7H2O concentration equals0.25g/L
+    already in this parent, so no unsupported MgSO4 reduction/substitution event is
+    emitted.", "reference": "doi:10.1128/mbio.01033-24", "snippet": "1.05 g/L (NH4)Cl",
+    "supports": "SUPPORT"}], "ingredient": {"concentration": {"unit": "G_PER_L", "value":
+    "1.05"}, "notes": "Primary formulation names NH4Cl; local anaerobic parent names
+    ammonium sulfate. Primary MgSO4.7H2O concentration equals0.25g/L already in this
+    parent, so no unsupported MgSO4 reduction/substitution event is emitted.", "preferred_term":
+    "NH4Cl"}, "notes": "A scoped change event, not a fully expanded variant or a parent-formulation
+    amendment. No chemical identifier is inferred.", "replaced_ingredient": {"preferred_term":
+    "(NH4)2SO4"}, "source_modification_index": 0, "source_text": "Low-sulfate Brock''s
+    salts base (MgSO4 reduced/replaced); NH4Cl instead of (NH4)2SO4", "stage": "Willard2024
+    low-sulfate Brock''s salts aerobic formulation"}], "variant_index": 0, "variant_name":
+    "aerobic_brocks_salts_dsm88_sulfur_yeast_extract"}]}'
 solutions:
 - preferred_term: Allen’s trace element solution
   composition: []
@@ -405,6 +429,33 @@ variants:
       across these strains.
     snippet: 'All Sulfolobaceae species were grown in a low-sulfate formulation of
       Brock’s Salts (DSM-88 medium) containing:'
+  ingredient_changes:
+  - action: REPLACE
+    ingredient:
+      preferred_term: NH4Cl
+      concentration:
+        value: '1.05'
+        unit: G_PER_L
+      notes: Primary formulation names NH4Cl; local anaerobic parent names ammonium
+        sulfate. Primary MgSO4.7H2O concentration equals0.25g/L already in this parent,
+        so no unsupported MgSO4 reduction/substitution event is emitted.
+    stage: Willard2024 low-sulfate Brock's salts aerobic formulation
+    evidence:
+    - reference: doi:10.1128/mbio.01033-24
+      supports: SUPPORT
+      snippet: 1.05 g/L (NH4)Cl
+      explanation: Materials and Methods, low-sulfate Brock's salts and species-specific
+        supplements; primary source inspected 2026-11-16. Primary formulation names
+        NH4Cl; local anaerobic parent names ammonium sulfate. Primary MgSO4.7H2O concentration
+        equals0.25g/L already in this parent, so no unsupported MgSO4 reduction/substitution
+        event is emitted.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    replaced_ingredient:
+      preferred_term: (NH4)2SO4
+    source_modification_index: 0
+    source_text: Low-sulfate Brock's salts base (MgSO4 reduced/replaced); NH4Cl instead
+      of (NH4)2SO4
 - name: reduced_anaerobic_mbsy_h2_co2
   relationship: DERIVED_FROM
   description: Reduced anaerobic modified Brock's basal salt medium with yeast extract

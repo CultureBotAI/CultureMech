@@ -805,7 +805,81 @@ def decisions():
             notes="Different experimental preparation from the transcriptomics DSMZ88+yeast+iron arm. Literal0.1% sole-energy-source input; percent basis not specified, no concentration enum or parent equivalence inferred.",
         ),
     )
+    strengthen_quantity_quotes(output)
     return output
+
+
+def strengthen_quantity_quotes(rows):
+    """Apply manually inspected verbatim excerpts; retain all scientific fields."""
+    excerpts = {
+        (9, "NaCl"): "0, 10, 20, 50, 200, or 423\n\nmM",
+        (32, "NaCl"): "0, 10, 20, 50, 200, or 423\n\nmM",
+        (13, "sea salts"): "33.6 g/L of sea salts were used in place of the NaCl",
+        (19, "NH4Cl"): "nitrogen source (5 mM NH4Cl)",
+        (19, "K2HPO4"): "phosphorus source (0.22 mM K2HPO4)",
+        (20, "HEPES-KOH buffer"): "20 mM HEPES-KOH (pH 7.8)",
+        (27, "NaNO3"): "4.41mM",
+        (
+            37,
+            "filtered biogas-process effluent",
+        ): "1.5% (v/v) of the effluent was added at the start as a nutrient source, a similar volume of effluent was added after 3 days of growth, and a final addition of 3% (v/v) of the initial volume was added after 6 days of growth",
+        (
+            42,
+            "HAc-NaAc buffer",
+        ): "HAc-NaAc was used to balance the pH of the culture medium and replace tris",
+        (62, "silicate"): "f/2 supplemented with 1.06 × 10−4 M silicate",
+        (
+            66,
+            "penicillin G",
+        ): "penicillin G and dihydrostreptomycin sulphate in a ratio of 200 μg mL−1: 50 μg mL−1",
+        (
+            67,
+            "dihydrostreptomycin sulphate",
+        ): "penicillin G and dihydrostreptomycin sulphate in a ratio of 200 μg mL−1: 50 μg mL−1",
+        (
+            72,
+            "sodium metasilicate nonahydrate",
+        ): "omit stock 5 and instead add 0.1705 g of sodium metasilicate\n(Na2SiO3.9H2O) per litre of medium.",
+        (75, "Tris"): "20 mM Tris and 20 mM maleic acid",
+        (75, "maleic acid"): "20 mM Tris and 20 mM maleic acid",
+        (76, "DL-sodium lactate"): "22 mM dl-sodium lactate",
+        (77, "yeast extract"): "0.5 g of yeast extract per liter",
+        (79, "Na2S"): "1 mM Na2S and 1 mM Na2S2O3",
+        (79, "Na2S2O3"): "1 mM Na2S and 1 mM Na2S2O3",
+        (80, "resazurin"): "0.2% resazurin was added as a reduction indicator",
+        (
+            87,
+            "Wolin's vitamin solution (10x)",
+        ): "1 ml/l Wolin's vitamin solution (10x, see medium 120)",
+        (87, "DL-dithiothreitol"): "0.30\ng/l DL-dithiothreitol",
+        (87, "Na2S x 9 H2O"): "Omit Na2S x 9 H2O and L-Cysteine HCl x H2O.",
+        (87, "L-Cysteine HCl x H2O"): "Omit Na2S x 9 H2O and L-Cysteine HCl x H2O.",
+        (92, "Na-acetate"): "Increase amount of Na-acetate to 3.00 g/l.",
+        (97, "Wolin's vitamin solution"): "10.00 ml/l of\nWolin's vitamin solution",
+        (
+            98,
+            "2-mercaptoethanesulfonic acid (coenzyme M)",
+        ): "0.10 g/l\n2-mercaptoethanesulfonic acid (coenzyme M)",
+        (117, "FeSO4.7H2O"): "Approximately 7.5 g/liter of FeSO4·7H2O",
+        (117, "FeS2 (pyrite)"): "0.1% FeS2 as the sole energy source",
+    }
+    for number, row in rows.items():
+        for change in row["claims"]:
+            key = (number, change["ingredient"]["preferred_term"])
+            if key in excerpts:
+                change["evidence"][0]["snippet"] = excerpts.pop(key)
+            if number == 31:
+                if change["ingredient"]["preferred_term"] == "sodium selenite":
+                    context = ' Separate exact table heading: "Trace elements (μM)"; row label "Na2SeO3"; cell "0.001". Conversion 0.001micromolar×1000=1nanomolar.'
+                else:
+                    context = ' Separate exact table heading: "Basal seawater components (mM)"; row label "Na2SiO3·9H2O"; cell "0.1".'
+                change["evidence"][0]["explanation"] += context
+            if number in {48, 49}:
+                change["evidence"][0][
+                    "explanation"
+                ] += " The source ratio is dimensionless. For the explicitly selected1L mixture,8:2 yields800mL+200mL and1:1 yields500mL+500mL; no chemical concentration or constituent expansion is inferred."
+    if excerpts:
+        raise ValueError("unmatched manual quotation corrections")
 
 
 def main():

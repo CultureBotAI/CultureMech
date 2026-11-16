@@ -1,0 +1,763 @@
+{
+  "schema_version": 1,
+  "source_queue_sha256": "dd5faea741da0a11e8eb86cad2976e8bf51d42884c601e96973eba61748330ca",
+  "assigned_rows": 126,
+  "dispositions": [
+    {
+      "queue_row_number": 118,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 119,
+      "status": "HELD_EVIDENCE",
+      "reason": "The row explicitly leaves basal formulation/brand/stock details unresolved. No additional ingredient identities or quantities can be inferred from it; the distinct supported source claim is proposed separately.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 120,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 121,
+      "status": "HELD_EVIDENCE",
+      "reason": "The row explicitly leaves basal formulation/brand/stock details unresolved. No additional ingredient identities or quantities can be inferred from it; the distinct supported source claim is proposed separately.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 122,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 123,
+      "status": "HELD_EVIDENCE",
+      "reason": "DSMZ 1021 specifies liquid-medium filtration but does not explicitly quantify or name an agar-change operation. No zero-agar amount or omission is invented.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 124,
+      "status": "HELD_EVIDENCE",
+      "reason": "Only a named modified medium is specified; no explicit ingredient identity or dose occurs in this row. Primary formulation details require additional source inspection before decomposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 125,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 126,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 127,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 128,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 129,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 130,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified. PARTIAL: 5 mL batch amount remains literal notes because no absolute-volume field exists.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 131,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 132,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 133,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 134,
+      "status": "HELD_EVIDENCE",
+      "reason": "Blood-species replacement and 50 g/L claim require independent reconciliation of DSMZ 693, the cited BacDive strain and the horse-blood parent; those primary recipe details were not reverified in this pass.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 135,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 136,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 137,
+      "status": "HELD_MODEL",
+      "reason": "DSMZ 751 directly supports a changed phosphate mass per batch, not a demonstrated final concentration. SET_CONCENTRATION requires a valid concentration unit; absolute batch mass is not represented. Preserve original grams and hold under issue 760.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 138,
+      "status": "HELD_MODEL",
+      "reason": "DSMZ 751 directly supports a changed phosphate mass per batch, not a demonstrated final concentration. SET_CONCENTRATION requires a valid concentration unit; absolute batch mass is not represented. Preserve original grams and hold under issue 760.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 139,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 140,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 141,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 142,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified. PARTIAL: 0.5% remains literal notes; percentage basis unspecified.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 143,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 144,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified. PARTIAL: 0.3% remains literal notes; percentage basis unspecified.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 145,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 188,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 189,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 190,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 191,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 192,
+      "status": "HELD_EVIDENCE",
+      "reason": "The cited JCM/DSMZ recipe or ME19128 primary methods have not been independently inspected in this pass. Do not promote existing prose alone to a new evidence-backed descriptor.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 193,
+      "status": "HELD_EVIDENCE",
+      "reason": "The cited JCM/DSMZ recipe or ME19128 primary methods have not been independently inspected in this pass. Do not promote existing prose alone to a new evidence-backed descriptor.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 194,
+      "status": "HELD_MODEL",
+      "reason": "Methane versus methanol and calcium versus rare-earth chloride alternatives require arm-specific component identities and stage/dose evidence. A single combined ADD would falsely imply co-presence; preserve prose pending explicit alternatives.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 195,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 196,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified. PARTIAL: 10% serum remains literal notes; percentage basis unspecified.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 197,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 198,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 199,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 200,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 201,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 202,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 203,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 218,
+      "status": "HELD_MODEL",
+      "reason": "Half-strength whole-medium dilution is not an ingredient-specific change. No automatic expansion or multiplication of the parent recipe is authorized; retain the water/dilution formulation statement.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 219,
+      "status": "HELD_EVIDENCE",
+      "reason": "Assay-specific peptone and yeast-extract omissions require the cited primary methods; routine MB1/2 and carbon-assay formulations must stay separate. Source not reverified here.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 227,
+      "status": "HELD_EVIDENCE",
+      "reason": "The Becking source's omission and full mass-basis recipe context were not independently reverified. Do not convert the parent/prose into new supported changes.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 228,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 229,
+      "status": "HELD_EVIDENCE",
+      "reason": "The Becking source's omission and full mass-basis recipe context were not independently reverified. Do not convert the parent/prose into new supported changes.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 230,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 231,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 232,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 233,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 234,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 235,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 236,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 257,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.",
+      "assertion_count": 3
+    },
+    {
+      "queue_row_number": 258,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified. PARTIAL: Only sodium sulfide nonahydrate addition is represented, with stock/final percentage preserved in notes. Unspecified carbon-source increase and substrate alternatives remain unexpanded.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 259,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 260,
+      "status": "HELD_EVIDENCE",
+      "reason": "Shang 2013 primary formulation and separate substrate arms have not been independently inspected. Retain all listed forms, stock additions and preparation context without certifying them from local prose alone.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 261,
+      "status": "HELD_EVIDENCE",
+      "reason": "Shang 2013 primary formulation and separate substrate arms have not been independently inspected. Retain all listed forms, stock additions and preparation context without certifying them from local prose alone.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 262,
+      "status": "HELD_EVIDENCE",
+      "reason": "Shang 2013 primary formulation and separate substrate arms have not been independently inspected. Retain all listed forms, stock additions and preparation context without certifying them from local prose alone.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 263,
+      "status": "HELD_EVIDENCE",
+      "reason": "Shang 2013 primary formulation and separate substrate arms have not been independently inspected. Retain all listed forms, stock additions and preparation context without certifying them from local prose alone.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 264,
+      "status": "HELD_EVIDENCE",
+      "reason": "Shang 2013 primary formulation and separate substrate arms have not been independently inspected. Retain all listed forms, stock additions and preparation context without certifying them from local prose alone.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 265,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 266,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 267,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 268,
+      "status": "HELD_MODEL",
+      "reason": "This row refers to a complete Table 1 formulation/subset and footnote components rather than enumerated changes. The bounded source review verifies specific vitamin doses separately; whole-table expansion and reconciliation of every imported chemical form remain out of scope.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 269,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 270,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.",
+      "assertion_count": 2
+    },
+    {
+      "queue_row_number": 271,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 272,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 273,
+      "status": "HELD_EVIDENCE",
+      "reason": "The cited primary ATCC-1490 study was not independently inspected for explicit formate/fumarate omission; a named basal medium alone is insufficient to infer component absence.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 274,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 275,
+      "status": "HELD_EVIDENCE",
+      "reason": "The carbonate/CO2 buffering claim lacks a verified explicit carbonate species and dose; cited primary methods not reverified. Do not guess bicarbonate or add a gas as a liquid ingredient.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 276,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 277,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 278,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 279,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified. PARTIAL: Only the named stock removal is structured; 2-bar gas-mixture pressure remains prose context.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 280,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 281,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 282,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 283,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 284,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 285,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 286,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 287,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified. PARTIAL: Only named mixture replacement is structured; composition and dose remain unresolved.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 288,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 289,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 304,
+      "status": "CONDITION_ONLY",
+      "reason": "Primary abstract confirms acetate donor / fumarate acceptor roles, but this row states no addition, removal, replacement or changed quantity relative to the maintained formulation. Retain role context without inventing an ADD event.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 305,
+      "status": "CONDITION_ONLY",
+      "reason": "Primary abstract confirms acetate donor / fumarate acceptor roles, but this row states no addition, removal, replacement or changed quantity relative to the maintained formulation. Retain role context without inventing an ADD event.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 306,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 307,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 308,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified. PARTIAL: 18-g preparation amount remains literal notes; no assumed post-addition final concentration.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 309,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 310,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 311,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 312,
+      "status": "HELD_EVIDENCE",
+      "reason": "DSMZ 1021 specifies liquid-medium filtration but does not explicitly quantify or name an agar-change operation. No zero-agar amount or omission is invented.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 313,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified. PARTIAL: 0.5% remains literal notes; percentage basis unspecified.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 314,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 315,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified. PARTIAL: 0.3% remains literal notes; percentage basis unspecified.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 316,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 317,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified. PARTIAL: 5 mL batch amount remains literal notes because no absolute-volume field exists.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 318,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 319,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 320,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 339,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 340,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 341,
+      "status": "HELD_MODEL",
+      "reason": "This row refers to a complete Table 1 formulation/subset and footnote components rather than enumerated changes. The bounded source review verifies specific vitamin doses separately; whole-table expansion and reconciliation of every imported chemical form remain out of scope.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 380,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 381,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 382,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 383,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified. PARTIAL: Only L-phenylalanine identity/role is represented; any displaced nitrogen ingredients and dose are unresolved.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 384,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 385,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 386,
+      "status": "HELD_MODEL",
+      "reason": "DSMZ 751 directly supports a changed phosphate mass per batch, not a demonstrated final concentration. SET_CONCENTRATION requires a valid concentration unit; absolute batch mass is not represented. Preserve original grams and hold under issue 760.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 387,
+      "status": "HELD_MODEL",
+      "reason": "DSMZ 751 directly supports a changed phosphate mass per batch, not a demonstrated final concentration. SET_CONCENTRATION requires a valid concentration unit; absolute batch mass is not represented. Preserve original grams and hold under issue 760.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 388,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 389,
+      "status": "HELD_EVIDENCE",
+      "reason": "DSMZ 1021 specifies liquid-medium filtration but does not explicitly quantify or name an agar-change operation. No zero-agar amount or omission is invented.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 390,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified. PARTIAL: 8.10-g batch amounts remain literal notes, with no final-volume conversion.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 391,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.",
+      "assertion_count": 1
+    },
+    {
+      "queue_row_number": 392,
+      "status": "STRUCTURED",
+      "reason": "Explicit source-supported descriptor event(s) proposed; stage, exact existing source text and source evidence retained. Base recipe and unrelated claims are not certified.",
+      "assertion_count": 2
+    },
+    {
+      "queue_row_number": 393,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 394,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 395,
+      "status": "HELD_EVIDENCE",
+      "reason": "Only a named modified medium is specified; no explicit ingredient identity or dose occurs in this row. Primary formulation details require additional source inspection before decomposition.",
+      "assertion_count": 0
+    },
+    {
+      "queue_row_number": 396,
+      "status": "CONDITION_ONLY",
+      "reason": "This row supplies organism, incubation, preparation, comparator, role or explicit uncertainty context rather than a new quantified ingredient change. Preserve the original prose; no gas-to-liquid concentration, base expansion, or new growth claim. Condition correctness is not independently certified by this disposition.",
+      "assertion_count": 0
+    }
+  ]
+}

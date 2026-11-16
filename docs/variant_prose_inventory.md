@@ -109,12 +109,17 @@ are the reproducible method; an LLM response alone is not a curation receipt.
 ```bash
 just preview-variant-ingredients conf/variant_ingredient_curation/bbm-canary-683.json
 uv run --frozen python scripts/curate_variant_ingredients.py DECISIONS.json \
+  --only-record data/normalized_yaml/CATEGORY/RECORD.yaml \
+  --apply --receipt .temp/variant-curation/CANARY-RECEIPT.json
+uv run --frozen python scripts/curate_variant_ingredients.py DECISIONS.json \
   --apply --receipt .temp/variant-curation/APPLY-RECEIPT.json
 ```
 
 The applicator previews by default, prevalidates every selected record, refuses
-source drift or overwriting previous different curation, and checks that the
-native writer will not reformat unchanged source. Apply uses a staged validated
+source drift or overwriting previous different curation, and inserts only new
+fields at parsed YAML block boundaries. Existing scalar spelling, comments and
+wrapping remain intact. It requires the entire parsed result to equal the native
+validated proposal and refuses unsupported layouts. Apply uses a staged validated
 write and atomic replacement. It persists a receipt before the first mutation and
 before/after each record. An interrupted batch reports observed per-record hashes;
 inspect the receipt rather than assuming all-or-nothing rollback. Replaying an

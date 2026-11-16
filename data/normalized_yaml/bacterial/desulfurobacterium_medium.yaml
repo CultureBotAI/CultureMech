@@ -2332,6 +2332,29 @@ curation_history:
     factors                                          1.00        ml\n   Na-dithionite
     solution (5% w/v)                                     1.00        ml\n   Distilled
     water                                                1000.00          ml"}]'
+- timestamp: '2026-11-16T21:33:00.878575+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "f3ae005ac2d08bdb104330cca0303979ebbf0c3ade4eade7c0e588919533b08f",
+    "variants": [{"ingredient_changes": [{"action": "REMOVE", "evidence": [{"explanation":
+    "Page 1, DSM 16661 and DSM 21157 prescription. Supports only the named descriptor/event
+    at the stated stage. Named stock mixture is removed, without expanding individual
+    constituents. Separate 2-bar H2/CO2 headspace condition is not a liquid ingredient
+    concentration. Source inspected 2026-11-16; SHA256 73b87bbb602b5d40fa5a442a74b8a227fc26774281d333b7718a15317fd1cb27.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829.pdf",
+    "snippet": "Omit growth-stimulating factors", "supports": "SUPPORT"}], "ingredient":
+    {"notes": "Named stock mixture is removed, without expanding individual constituents.
+    Separate 2-bar H2/CO2 headspace condition is not a liquid ingredient concentration.",
+    "preferred_term": "growth-stimulating factors"}, "source_modification_index":
+    0, "source_text": "Omit growth-stimulating factors and pressurize vials after
+    inoculation to 2 bar with sterile 80% H2 and 20% CO2 gas mixture.", "stage": "DSM
+    16661 and DSM 21157 preparation"}], "variant_index": 0, "variant_name": "DSM 16661
+    and DSM 21157 source prescription"}]}'
 variant_children:
 - id: CultureMech:006564
   path: data/normalized_yaml/bacterial/KOMODO_829_DESULFUROBACTERIUM_MEDIUM.yaml
@@ -4786,6 +4809,26 @@ variants:
       Additional exact excerpt: For DSM 16661, DSM 21157: Omit growth-stimulating factors and pressurize vials after
       inoculation to 2 bar with sterile 80% H2 and 20% CO2 gas mixture.
       variants[0].modifications: Original strain-specific instruction, separate from the base recipe; no measured growth association is inferred. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T03:35:49.362734+00:00; capture SHA256=8441671f114af61c997ae71ee4bf7c9e200d1fdf45764fe120e6a0709b35df80.
+  ingredient_changes:
+  - action: REMOVE
+    ingredient:
+      preferred_term: growth-stimulating factors
+      notes: Named stock mixture is removed, without expanding individual constituents.
+        Separate 2-bar H2/CO2 headspace condition is not a liquid ingredient concentration.
+    stage: DSM 16661 and DSM 21157 preparation
+    source_modification_index: 0
+    source_text: Omit growth-stimulating factors and pressurize vials after inoculation
+      to 2 bar with sterile 80% H2 and 20% CO2 gas mixture.
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829.pdf
+      supports: SUPPORT
+      snippet: Omit growth-stimulating factors
+      explanation: Page 1, DSM 16661 and DSM 21157 prescription. Supports only the named
+        descriptor/event at the stated stage. Named stock mixture is removed, without
+        expanding individual constituents. Separate 2-bar H2/CO2 headspace condition
+        is not a liquid ingredient concentration. Source inspected 2026-11-16; SHA256
+        73b87bbb602b5d40fa5a442a74b8a227fc26774281d333b7718a15317fd1cb27. No parent
+        formulation, growth, ontology identity, or missing dose is inferred.
 references:
 - reference: https://mediadive.dsmz.de/rest/medium/829
   title: DESULFUROBACTERIUM MEDIUM

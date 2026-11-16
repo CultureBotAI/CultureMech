@@ -203,6 +203,26 @@ variants:
       time of 18 h on L-phenylalanine when used as sole source of nitrogen.
     explanation: Literature evidence supports a phototrophic L-phenylalanine sole-nitrogen
       variant for Rhodobacter sphaeroides OU5.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: L-phenylalanine
+      notes: Ingredient identity and sole-nitrogen role only; dose and identities of
+        any displaced basal nitrogen compounds are unresolved. No base-recipe materialization
+        or inferred removals.
+    stage: reported sole-nitrogen phototrophic formulation
+    source_modification_index: 1
+    source_text: Use L-phenylalanine as the sole nitrogen source.
+    evidence:
+    - reference: PMID:19826864
+      supports: SUPPORT
+      snippet: L-phenylalanine
+      explanation: Primary article abstract indexed by Europe PMC; full methods not
+        reviewed. Supports only the named descriptor/event at the stated stage. Ingredient
+        identity and sole-nitrogen role only; dose and identities of any displaced basal
+        nitrogen compounds are unresolved. No base-recipe materialization or inferred
+        removals. Source inspected 2026-11-16; SHA256 6429c3b3fce615d13eb83f68eae574c48fa8e8dd60729b4744fd5615f88d0e8b.
+        No parent formulation, growth, ontology identity, or missing dose is inferred.
 curation_history:
 - timestamp: '2026-01-26T17:53:16.996212Z'
   curator: mediadive-import
@@ -244,6 +264,28 @@ curation_history:
   action: SET_ORGANISM_CULTURE_TYPE
   notes: 'Inferred isolate: 1 specific strain(s) named, no community signal (#142)'
   changes: Set organism_culture_type=isolate (was unset)
+- timestamp: '2026-11-16T21:33:01.741849+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "f3ae005ac2d08bdb104330cca0303979ebbf0c3ade4eade7c0e588919533b08f",
+    "variants": [{"ingredient_changes": [{"action": "ADD", "evidence": [{"explanation":
+    "Primary article abstract indexed by Europe PMC; full methods not reviewed. Supports
+    only the named descriptor/event at the stated stage. Ingredient identity and sole-nitrogen
+    role only; dose and identities of any displaced basal nitrogen compounds are unresolved.
+    No base-recipe materialization or inferred removals. Source inspected 2026-11-16;
+    SHA256 6429c3b3fce615d13eb83f68eae574c48fa8e8dd60729b4744fd5615f88d0e8b. No parent
+    formulation, growth, ontology identity, or missing dose is inferred.", "reference":
+    "PMID:19826864", "snippet": "L-phenylalanine", "supports": "SUPPORT"}], "ingredient":
+    {"notes": "Ingredient identity and sole-nitrogen role only; dose and identities
+    of any displaced basal nitrogen compounds are unresolved. No base-recipe materialization
+    or inferred removals.", "preferred_term": "L-phenylalanine"}, "source_modification_index":
+    1, "source_text": "Use L-phenylalanine as the sole nitrogen source.", "stage":
+    "reported sole-nitrogen phototrophic formulation"}], "variant_index": 0, "variant_name":
+    "phototrophic_l_phenylalanine_sole_nitrogen_ou5"}]}'
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: Rhodobacter sphaeroides

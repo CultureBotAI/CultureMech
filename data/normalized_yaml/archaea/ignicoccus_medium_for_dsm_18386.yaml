@@ -260,6 +260,27 @@ curation_history:
   action: SET_ORGANISM_CULTURE_TYPE
   notes: 'Inferred isolate: 3 specific strain(s) named, no community signal (#142)'
   changes: Set organism_culture_type=isolate (was unset)
+- timestamp: '2026-11-16T21:36:31.680898+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "8918ca273b10dc6cce0292e504c741e0ec65b68c7feee2c65098180a8b3ed0f6",
+    "variants": [{"ingredient_changes": [{"action": "ADD", "evidence": [{"explanation":
+    "Materials and Methods, acetate determination; separate 0.05% passage retained
+    as a limit; primary source inspected 2026-11-16. Source also reports0.05% for
+    a separate ACS-dependence/acetate-uptake setup. Do not generalize0.1% across every
+    experiment or combine the two doses.", "reference": "doi:10.1128/JB.06130-11",
+    "snippet": "0.1% [wt/vol] yeast extract", "supports": "SUPPORT"}], "ingredient":
+    {"concentration": {"unit": "PERCENT_W_V", "value": "0.1"}, "notes": "Source also
+    reports0.05% for a separate ACS-dependence/acetate-uptake setup. Do not generalize0.1%
+    across every experiment or combine the two doses.", "preferred_term": "yeast extract"},
+    "notes": "A scoped change event, not a fully expanded variant or a parent-formulation
+    amendment. No chemical identifier is inferred.", "source_modification_index":
+    0, "source_text": "Add yeast extract to 0.1% (w/v)", "stage": "I. hospitalis mixotrophic
+    culture for acetate determination"}], "variant_index": 1, "variant_name": "half_sme_ignicoccus_plus_0_1pct_yeast_extract"}]}'
 solutions:
 - preferred_term: SrCl2 x 6 H2O solution (0.1% w/v)
   composition: []
@@ -361,3 +382,25 @@ variants:
     explanation: Mayer et al. 2012 describes the yeast-extract supplementation explicitly.
     snippet: Comparison of autotrophic growth with mixotrophic growth where 0.1% yeast
       extract was added to the normal culture medium of I. hospitalis DSM 18386.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: yeast extract
+      concentration:
+        value: '0.1'
+        unit: PERCENT_W_V
+      notes: Source also reports0.05% for a separate ACS-dependence/acetate-uptake setup.
+        Do not generalize0.1% across every experiment or combine the two doses.
+    stage: I. hospitalis mixotrophic culture for acetate determination
+    evidence:
+    - reference: doi:10.1128/JB.06130-11
+      supports: SUPPORT
+      snippet: 0.1% [wt/vol] yeast extract
+      explanation: Materials and Methods, acetate determination; separate 0.05% passage
+        retained as a limit; primary source inspected 2026-11-16. Source also reports0.05%
+        for a separate ACS-dependence/acetate-uptake setup. Do not generalize0.1% across
+        every experiment or combine the two doses.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 0
+    source_text: Add yeast extract to 0.1% (w/v)

@@ -52,6 +52,7 @@ def draft(proposal, proposal_path, inspection_path, preview_path, review_id, sta
         if sha(ROOT / record["path"]) != record["expected_sha256"]:
             raise ValueError("target changed since proposal inspection")
     finish = datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
+    review_id = finish.replace("-", "").replace(":", "") + "-" + review_id.split("-", 1)[-1]
     target_ids = [r["recipe_id"] for r in proposal["records"]]
     evidence = [
         {

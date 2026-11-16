@@ -103,6 +103,41 @@ curation_history:
     null -> [{"action": "MIX", "description": "pH 7.2. To the sterilised medium add
     sterile methanol (to a final concentration of 0.5%) or methylamine (to a final
     concentration of 0.3%).", "step_number": 1}] (add_stage)'
+- timestamp: '2026-11-16T21:32:59.747274+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "f3ae005ac2d08bdb104330cca0303979ebbf0c3ade4eade7c0e588919533b08f",
+    "variants": [{"ingredient_changes": [{"action": "ADD", "evidence": [{"explanation":
+    "Page 1, final paragraph. Supports only the named descriptor/event at the stated
+    stage. Literal final-medium quantity: 0.5%, percentage basis unspecified. Not
+    combined with methylamine; no w/v, w/w or v/v basis inferred. Source inspected
+    2026-11-16; SHA256 156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+    "snippet": "final concentration of 0.5%", "supports": "SUPPORT"}], "ingredient":
+    {"notes": "Literal final-medium quantity: 0.5%, percentage basis unspecified.
+    Not combined with methylamine; no w/v, w/w or v/v basis inferred.", "preferred_term":
+    "methanol"}, "source_modification_index": 0, "source_text": "After sterilisation
+    add sterile methanol to a final concentration of 0.5% (percentage basis unspecified).",
+    "stage": "post-sterilization methanol alternative"}], "variant_index": 0, "variant_name":
+    "Methanol alternative"}, {"ingredient_changes": [{"action": "ADD", "evidence":
+    [{"explanation": "Page 1, final paragraph. Supports only the named descriptor/event
+    at the stated stage. Literal final-medium quantity: 0.3%, percentage basis unspecified.
+    Salt, hydration and purity unspecified; not combined with methanol. Source inspected
+    2026-11-16; SHA256 156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+    "snippet": "final concentration of 0.3%", "supports": "SUPPORT"}], "ingredient":
+    {"notes": "Literal final-medium quantity: 0.3%, percentage basis unspecified.
+    Salt, hydration and purity unspecified; not combined with methanol.", "preferred_term":
+    "methylamine"}, "source_modification_index": 0, "source_text": "After sterilisation
+    add sterile methylamine to a final concentration of 0.3% (percentage basis unspecified).",
+    "stage": "post-sterilization methylamine alternative"}], "variant_index": 1, "variant_name":
+    "Methylamine alternative"}]}'
 parent_media:
   path: data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458.yaml
   relationship: SOURCE_DUPLICATE
@@ -291,6 +326,25 @@ variants:
       accessed_on=2026-10-07. Display whitespace normalized; source quantities and
       chemical forms checked visually. Ontology annotations are preserved where their
       ingredient remains, not independently re-grounded.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: methanol
+      notes: 'Literal final-medium quantity: 0.5%, percentage basis unspecified. Not
+        combined with methylamine; no w/v, w/w or v/v basis inferred.'
+    stage: post-sterilization methanol alternative
+    source_modification_index: 0
+    source_text: After sterilisation add sterile methanol to a final concentration of
+      0.5% (percentage basis unspecified).
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf
+      supports: SUPPORT
+      snippet: final concentration of 0.5%
+      explanation: 'Page 1, final paragraph. Supports only the named descriptor/event
+        at the stated stage. Literal final-medium quantity: 0.5%, percentage basis unspecified.
+        Not combined with methylamine; no w/v, w/w or v/v basis inferred. Source inspected
+        2026-11-16; SHA256 156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39.
+        No parent formulation, growth, ontology identity, or missing dose is inferred.'
 - name: Methylamine alternative
   relationship: SUPPLEMENTED_VARIANT
   description: One of two mutually exclusive source-supported supplements to the common
@@ -314,6 +368,25 @@ variants:
       accessed_on=2026-10-07. Display whitespace normalized; source quantities and
       chemical forms checked visually. Ontology annotations are preserved where their
       ingredient remains, not independently re-grounded.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: methylamine
+      notes: 'Literal final-medium quantity: 0.3%, percentage basis unspecified. Salt,
+        hydration and purity unspecified; not combined with methanol.'
+    stage: post-sterilization methylamine alternative
+    source_modification_index: 0
+    source_text: After sterilisation add sterile methylamine to a final concentration
+      of 0.3% (percentage basis unspecified).
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf
+      supports: SUPPORT
+      snippet: final concentration of 0.3%
+      explanation: 'Page 1, final paragraph. Supports only the named descriptor/event
+        at the stated stage. Literal final-medium quantity: 0.3%, percentage basis unspecified.
+        Salt, hydration and purity unspecified; not combined with methanol. Source inspected
+        2026-11-16; SHA256 156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39.
+        No parent formulation, growth, ontology identity, or missing dose is inferred.'
 preparation_steps:
 - step_number: 1
   action: MIX

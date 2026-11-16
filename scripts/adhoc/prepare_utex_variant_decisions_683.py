@@ -8,9 +8,9 @@ curl returned HTTP429. Short quotations and exact locators remain in each claim.
 """
 
 import argparse
-from collections import defaultdict
 import hashlib
 import json
+from collections import defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]

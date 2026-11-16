@@ -288,6 +288,48 @@ curation_history:
     using 1 N H2SO4 before autoclaving."] (separate_source_version); variants[0].description:
     null -> "Separate recipe version; not applied to the asserted archived formulation."
     (separate_source_version)'
+- timestamp: '2026-11-16T21:33:13.078905+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "575937e6b9739016d8b43f48ea23efba290d69a3445c311bc95223991cc18049",
+    "variants": [{"ingredient_changes": [{"action": "REMOVE", "evidence": [{"explanation":
+    "Page1, For DSM9463. Primary source inspected 2026-11-16; supports this source-scoped
+    variant assertion, not equivalence of the whole parent recipe. DSMZ670 p.1, matching
+    DSM9463/9466/9467 prescription; line wrapping normalized. Exact excerpt clarification
+    for issue763; scientific payload unchanged.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+    "snippet": "omit FeSO4 x 7 H2O from the medium", "supports": "SUPPORT"}], "ingredient":
+    {"preferred_term": "FeSO4 x 7 H2O"}, "source_modification_index": 2, "source_text":
+    "Omit FeSO4 x 7 H2O; add 5.00 g/L powdered sulfur sterilized by steaming in a
+    boiling water bath for 3 hours on each of 3 successive days.", "stage": "current
+    DSMZ670 strain-specific formulation"}, {"action": "ADD", "evidence": [{"explanation":
+    "Page1, For DSM9463. Primary source inspected 2026-11-16; supports this source-scoped
+    variant assertion, not equivalence of the whole parent recipe. DSMZ670 p.1, matching
+    strain-specific prescription. The immediately following steaming instruction concerns
+    sulfur sterilization. Exact excerpt clarification for issue763; scientific payload
+    unchanged.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+    "snippet": "add 5.00 g/l of powdered sulfur", "supports": "SUPPORT"}], "ingredient":
+    {"concentration": {"unit": "G_PER_L", "value": "5.00"}, "notes": "Steam in a boiling
+    water bath for3hours on each of3successive days; this is a reported final-medium
+    mass concentration.", "preferred_term": "powdered sulfur"}, "source_modification_index":
+    2, "source_text": "Omit FeSO4 x 7 H2O; add 5.00 g/L powdered sulfur sterilized
+    by steaming in a boiling water bath for 3 hours on each of 3 successive days.",
+    "stage": "sterilized sulfur addition before use"}, {"action": "ADD", "evidence":
+    [{"explanation": "Page1, For DSM9463. Primary source inspected 2026-11-16; supports
+    this source-scoped variant assertion, not equivalence of the whole parent recipe.
+    DSMZ670 p.1, matching strain prescription. Titrant strength and target pH do not
+    supply a fixed acid dose. Exact excerpt clarification for issue763; scientific
+    payload unchanged.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+    "snippet": "Adjust pH to 3.5 with 1 N H2SO4 prior to autoclaving", "supports":
+    "SUPPORT"}], "ingredient": {"notes": "Titrant strength 1 N; adjust to pH3.5. Fixed
+    dose is unspecified; do not convert normality to molarity or a final-medium concentration.",
+    "preferred_term": "H2SO4"}, "source_modification_index": 3, "source_text": "Current
+    source retains pH 3.5 using 1 N H2SO4 before autoclaving.", "stage": "pH adjustment
+    before autoclaving"}], "variant_index": 0, "variant_name": "DSM 9463 current DSMZ
+    670 source formulation"}]}'
 data_quality_flags:
 - pending_curation
 parent_media:
@@ -389,6 +431,60 @@ variants:
       (w/v) stock solution prepared with 0.2 N H2SO4 and filter-sterilized under 100% N2 gas
       atmosphere.
       2. Note: Incubate statically without shaking.
+  ingredient_changes:
+  - action: REMOVE
+    ingredient:
+      preferred_term: FeSO4 x 7 H2O
+    stage: current DSMZ670 strain-specific formulation
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf
+      supports: SUPPORT
+      snippet: omit FeSO4 x 7 H2O from the medium
+      explanation: Page1, For DSM9463. Primary source inspected 2026-11-16; supports
+        this source-scoped variant assertion, not equivalence of the whole parent recipe.
+        DSMZ670 p.1, matching DSM9463/9466/9467 prescription; line wrapping normalized.
+        Exact excerpt clarification for issue763; scientific payload unchanged.
+    source_modification_index: 2
+    source_text: Omit FeSO4 x 7 H2O; add 5.00 g/L powdered sulfur sterilized by steaming
+      in a boiling water bath for 3 hours on each of 3 successive days.
+  - action: ADD
+    ingredient:
+      preferred_term: powdered sulfur
+      notes: Steam in a boiling water bath for3hours on each of3successive days; this
+        is a reported final-medium mass concentration.
+      concentration:
+        value: '5.00'
+        unit: G_PER_L
+    stage: sterilized sulfur addition before use
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf
+      supports: SUPPORT
+      snippet: add 5.00 g/l of powdered sulfur
+      explanation: Page1, For DSM9463. Primary source inspected 2026-11-16; supports
+        this source-scoped variant assertion, not equivalence of the whole parent recipe.
+        DSMZ670 p.1, matching strain-specific prescription. The immediately following
+        steaming instruction concerns sulfur sterilization. Exact excerpt clarification
+        for issue763; scientific payload unchanged.
+    source_modification_index: 2
+    source_text: Omit FeSO4 x 7 H2O; add 5.00 g/L powdered sulfur sterilized by steaming
+      in a boiling water bath for 3 hours on each of 3 successive days.
+  - action: ADD
+    ingredient:
+      preferred_term: H2SO4
+      notes: Titrant strength 1 N; adjust to pH3.5. Fixed dose is unspecified; do not
+        convert normality to molarity or a final-medium concentration.
+    stage: pH adjustment before autoclaving
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf
+      supports: SUPPORT
+      snippet: Adjust pH to 3.5 with 1 N H2SO4 prior to autoclaving
+      explanation: Page1, For DSM9463. Primary source inspected 2026-11-16; supports
+        this source-scoped variant assertion, not equivalence of the whole parent recipe.
+        DSMZ670 p.1, matching strain prescription. Titrant strength and target pH do
+        not supply a fixed acid dose. Exact excerpt clarification for issue763; scientific
+        payload unchanged.
+    source_modification_index: 3
+    source_text: Current source retains pH 3.5 using 1 N H2SO4 before autoclaving.
 references:
 - reference: https://bacdive.dsmz.de/pdf/4303?doi=10.13145%2Fbacdive4303.20170829.2
   title: Acidiferrobacter thiooxydans Hallberg et al. 2011

@@ -286,6 +286,52 @@ curation_history:
     duplicate values written by cleanup_media_quality.py. Every merged part was the
     same value, so the pre-merge value is unambiguous and no source lookup was needed.
     Rows whose merged parts differ were left untouched.
+- timestamp: '2026-11-16T21:36:32.439206+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "8918ca273b10dc6cce0292e504c741e0ec65b68c7feee2c65098180a8b3ed0f6",
+    "variants": [{"ingredient_changes": [{"action": "ADD", "evidence": [{"explanation":
+    "Materials and Methods, transcriptomics versus scanning-electron-microscopy cultures;
+    primary source inspected 2026-11-16. Source states0.1% without an explicit percent
+    basis in the inspected passage; retain the literal amount here, do not infer w/v.
+    The row''s tryptone alternative was not verified and is not structured.", "reference":
+    "doi:10.1128/AEM.02019-07", "snippet": "0.1% yeast extract", "supports": "SUPPORT"}],
+    "ingredient": {"notes": "Source states0.1% without an explicit percent basis in
+    the inspected passage; retain the literal amount here, do not infer w/v. The row''s
+    tryptone alternative was not verified and is not structured.", "preferred_term":
+    "yeast extract"}, "notes": "A scoped change event, not a fully expanded variant
+    or a parent-formulation amendment. No chemical identifier is inferred.", "source_modification_index":
+    1, "source_text": "Add 0.1% yeast extract (mixotrophic) or 0.1% tryptone (heterotrophic)",
+    "stage": "M.sedula DSM5348 transcriptomic culture on DSMZ88"}, {"action": "ADD",
+    "evidence": [{"explanation": "Materials and Methods, transcriptomics versus scanning-electron-microscopy
+    cultures; primary source inspected 2026-11-16. Approximately7.5g/L; preserve approximation.
+    Two of four yeast-extract cultures received iron; no universal addition.", "reference":
+    "doi:10.1128/AEM.02019-07", "snippet": "Approximately 7.5 g/liter of FeSO4·7H2O",
+    "supports": "SUPPORT"}], "ingredient": {"concentration": {"unit": "G_PER_L", "value":
+    "7.5"}, "notes": "Approximately7.5g/L; preserve approximation. Two of four yeast-extract
+    cultures received iron; no universal addition.", "preferred_term": "FeSO4.7H2O"},
+    "notes": "A scoped change event, not a fully expanded variant or a parent-formulation
+    amendment. No chemical identifier is inferred.", "source_modification_index":
+    2, "source_text": "Optional ~7.5 g/L FeSO4.7H2O, or FeS2/pyrite as sole energy
+    source", "stage": "M.sedula transcriptomic cultures: iron-supplemented yeast-extract
+    arm before inoculation"}, {"action": "ADD", "evidence": [{"explanation": "Materials
+    and Methods, transcriptomics versus scanning-electron-microscopy cultures; primary
+    source inspected 2026-11-16. Different experimental preparation from the transcriptomics
+    DSMZ88+yeast+iron arm. Literal0.1% sole-energy-source input; percent basis not
+    specified, no concentration enum or parent equivalence inferred.", "reference":
+    "doi:10.1128/AEM.02019-07", "snippet": "0.1% FeS2 as the sole energy source",
+    "supports": "SUPPORT"}], "ingredient": {"notes": "Different experimental preparation
+    from the transcriptomics DSMZ88+yeast+iron arm. Literal0.1% sole-energy-source
+    input; percent basis not specified, no concentration enum or parent equivalence
+    inferred.", "preferred_term": "FeS2 (pyrite)"}, "notes": "A scoped change event,
+    not a fully expanded variant or a parent-formulation amendment. No chemical identifier
+    is inferred.", "source_modification_index": 2, "source_text": "Optional ~7.5 g/L
+    FeSO4.7H2O, or FeS2/pyrite as sole energy source", "stage": "M.sedula scanning-electron-microscopy
+    cultures on minimal salts medium"}], "variant_index": 0, "variant_name": "dsmz88_sulfolobus_supplemented_yeast_extract_ferrous_iron"}]}'
 solutions:
 - preferred_term: Allen’s trace element solution
   composition: []
@@ -341,3 +387,66 @@ variants:
   - reference: doi:10.1128/AEM.02019-07
     supports: SUPPORT
     explanation: Auernik et al. 2008 documents the supplement set.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: yeast extract
+      notes: Source states0.1% without an explicit percent basis in the inspected passage;
+        retain the literal amount here, do not infer w/v. The row's tryptone alternative
+        was not verified and is not structured.
+    stage: M.sedula DSM5348 transcriptomic culture on DSMZ88
+    evidence:
+    - reference: doi:10.1128/AEM.02019-07
+      supports: SUPPORT
+      snippet: 0.1% yeast extract
+      explanation: Materials and Methods, transcriptomics versus scanning-electron-microscopy
+        cultures; primary source inspected 2026-11-16. Source states0.1% without an
+        explicit percent basis in the inspected passage; retain the literal amount here,
+        do not infer w/v. The row's tryptone alternative was not verified and is not
+        structured.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 1
+    source_text: Add 0.1% yeast extract (mixotrophic) or 0.1% tryptone (heterotrophic)
+  - action: ADD
+    ingredient:
+      preferred_term: FeSO4.7H2O
+      concentration:
+        value: '7.5'
+        unit: G_PER_L
+      notes: Approximately7.5g/L; preserve approximation. Two of four yeast-extract
+        cultures received iron; no universal addition.
+    stage: 'M.sedula transcriptomic cultures: iron-supplemented yeast-extract arm before
+      inoculation'
+    evidence:
+    - reference: doi:10.1128/AEM.02019-07
+      supports: SUPPORT
+      snippet: Approximately 7.5 g/liter of FeSO4·7H2O
+      explanation: Materials and Methods, transcriptomics versus scanning-electron-microscopy
+        cultures; primary source inspected 2026-11-16. Approximately7.5g/L; preserve
+        approximation. Two of four yeast-extract cultures received iron; no universal
+        addition.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 2
+    source_text: Optional ~7.5 g/L FeSO4.7H2O, or FeS2/pyrite as sole energy source
+  - action: ADD
+    ingredient:
+      preferred_term: FeS2 (pyrite)
+      notes: Different experimental preparation from the transcriptomics DSMZ88+yeast+iron
+        arm. Literal0.1% sole-energy-source input; percent basis not specified, no concentration
+        enum or parent equivalence inferred.
+    stage: M.sedula scanning-electron-microscopy cultures on minimal salts medium
+    evidence:
+    - reference: doi:10.1128/AEM.02019-07
+      supports: SUPPORT
+      snippet: 0.1% FeS2 as the sole energy source
+      explanation: Materials and Methods, transcriptomics versus scanning-electron-microscopy
+        cultures; primary source inspected 2026-11-16. Different experimental preparation
+        from the transcriptomics DSMZ88+yeast+iron arm. Literal0.1% sole-energy-source
+        input; percent basis not specified, no concentration enum or parent equivalence
+        inferred.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 2
+    source_text: Optional ~7.5 g/L FeSO4.7H2O, or FeS2/pyrite as sole energy source

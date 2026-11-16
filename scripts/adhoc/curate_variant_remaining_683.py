@@ -371,7 +371,7 @@ def prepare(inventory: dict, output: Path) -> None:
         "ADD",
         "sodium sulfide nonahydrate",
         "blumer",
-        "Na2S·9H2O",
+        "10% [wt/vol] Na2S·9H2O was added to a final concentration of 0.5%",
         "modified DSMZ 640 reducing-agent addition",
         notes="Source describes 10% [wt/vol] Na2S·9H2O stock added to a final concentration of 0.5%. Final percentage basis is not independently specified; do not substitute stock strength or infer a conversion. Carbon-source alternatives remain unexpanded.",
     )
@@ -381,22 +381,22 @@ def prepare(inventory: dict, output: Path) -> None:
             "SET_CONCENTRATION",
             "calcium D-pantothenate",
             "teusink",
-            "Ca-(d)-(+)-pantothenate",
+            "Ca-(d)-(+)-pantothenate (vitamin B5) 0.001",
             "reported Table 1 medium composition",
             "0.001",
             "G_PER_L",
-            notes="Direct Table 1 mass concentration, no molar conversion. The source's complete/minimal subset boundary remains as stated in the variant; other amounts are not certified.",
+            notes="Direct Table 1 mass concentration under the quoted column heading 'Concn (g/liter)', no molar conversion. The source's complete/minimal subset boundary remains as stated in the variant; other amounts are not certified.",
         )
     claim(
         340,
         "SET_CONCENTRATION",
         "D-biotin",
         "teusink",
-        "d-Biotin",
+        "d-Biotin (vitamin B7)c 0.0025",
         "reported Table 1 minimal-medium composition",
         "0.0025",
         "G_PER_L",
-        notes="Direct Table 1 mass value; boldface minimal-subset membership verified in original HTML, not inferred from flattened text.",
+        notes="Direct Table 1 mass value under the quoted column heading 'Concn (g/liter)'; boldface minimal-subset membership verified in original HTML, not inferred from flattened text.",
     )
     for number in (269, 270):
         claim(
@@ -481,7 +481,7 @@ def prepare(inventory: dict, output: Path) -> None:
         "ADD",
         "penicillin G",
         "emami",
-        "penicillin G",
+        "200 μg mL−1",
         "antibiotic-treated f/2 culture",
         "200",
         "MICROG_PER_ML",
@@ -492,7 +492,7 @@ def prepare(inventory: dict, output: Path) -> None:
         "ADD",
         "dihydrostreptomycin sulfate",
         "emami",
-        "dihydrostreptomycin sulphate",
+        "50 μg mL−1",
         "antibiotic-treated f/2 culture",
         "50",
         "MICROG_PER_ML",
@@ -519,7 +519,7 @@ def prepare(inventory: dict, output: Path) -> None:
         "G_PER_L",
         old="magnesium sulfate heptahydrate",
         per_volume="per liter of 20X nitrate stock, not final medium",
-        notes="Source explicitly makes stock to 1 liter. Replaces 10.4 g/L heptahydrate in stock. The stock addition stays 50 mL/L; no final-medium conversion asserted.",
+        notes="Quoted stock-volume instruction: 'Add distilled water to 1 liter.' Replaces 10.4 g/L heptahydrate in the 20X nitrate stock. The stock addition stays 50 mL/L; no final-medium conversion asserted.",
     )
     claim(
         308,
@@ -528,14 +528,14 @@ def prepare(inventory: dict, output: Path) -> None:
         "kaminskyj",
         "add 18 g agar",
         "solid minimal-medium preparation before autoclaving",
-        notes="Literal dose: 18 g added to the one-litre MM preparation. No separately established post-agar final volume or g/L value asserted; not the CM 15-g option.",
+        notes="Quoted MM preparation instruction: 'Make to 1 liter with distilled water.' Literal dose: 18 g added to that preparation. No separately established post-agar final volume or g/L value asserted; not the CM 15-g option.",
     )
     claim(
         310,
         "ADD",
         "Cr(VI)",
         "37088211",
-        "10 mg",
+        "10 mg L-1",
         "reported B17316 Cr(VI) exposure",
         "10",
         "MG_PER_L",
@@ -555,7 +555,7 @@ def prepare(inventory: dict, output: Path) -> None:
         "REPLACE",
         "casein hydrolysate",
         "1021",
-        "Casein hydrolysate",
+        "Casein hydrolysate 8.10 g",
         "Solution A batch preparation",
         old="lactalbumin hydrolysate",
         notes="Literal batch substitution: 8.10 g casein hydrolysate for 8.10 g lactalbumin hydrolysate, not both. Undefined hydrolysate mixture; serum addition and final volume not converted.",
@@ -578,7 +578,7 @@ def prepare(inventory: dict, output: Path) -> None:
             "ADD",
             label,
             "15931519",
-            label,
+            "0.5% or 1.0% (w/v)",
             stage,
             "0.5; 1.0",
             "PERCENT_W_V",
@@ -780,6 +780,7 @@ def prepare(inventory: dict, output: Path) -> None:
     output.mkdir(parents=True, exist_ok=False)
     document = {
         "schema_version": 1,
+        "source_queue_sha256": inventory["summary"]["queue_sha256"],
         "issue": "https://github.com/CultureBotAI/CultureMech/issues/683",
         "scope": "Explicit bacterial_remaining and specialized_remaining decisions; partial source coverage, no recipe application",
         "source_inspections": [
@@ -794,6 +795,7 @@ def prepare(inventory: dict, output: Path) -> None:
         json.dumps(
             {
                 "schema_version": 1,
+                "source_queue_sha256": inventory["summary"]["queue_sha256"],
                 "assigned_rows": 126,
                 "dispositions": [decisions[n] for n in sorted(decisions)],
             },
@@ -882,6 +884,56 @@ def validate_proposals(directory: Path) -> None:
         json.dump(result, stream, indent=2)
         stream.write("\n")
     print(json.dumps({key: value for key, value in result.items() if key != "records"}, indent=2))
+
+
+def publish_proposals(directory: Path) -> None:
+    """Publish reviewed-input candidates, proving #763 changed evidence only."""
+    before = json.loads(
+        (ROOT / ".temp/variant-683/remaining-proposal-v2/proposals.json").read_text()
+    )
+    after = json.loads((directory / "proposals.json").read_text())
+
+    def assertion_core(value):
+        if isinstance(value, dict):
+            return {
+                key: assertion_core(item)
+                for key, item in value.items()
+                if key not in {"notes", "evidence"}
+            }
+        if isinstance(value, list):
+            return [assertion_core(item) for item in value]
+        return value
+
+    assert assertion_core(before["records"]) == assertion_core(after["records"])
+    old_dispositions = json.loads(
+        (ROOT / ".temp/variant-683/remaining-proposal-v2/dispositions.json").read_text()
+    )["dispositions"]
+    new_dispositions = json.loads((directory / "dispositions.json").read_text())["dispositions"]
+    assert old_dispositions == new_dispositions
+    destinations = [
+        ROOT / "conf/variant_ingredient_curation/bacterial-specialized-683.json",
+        ROOT / "conf/variant_ingredient_curation/bacterial-specialized-dispositions-683.json",
+    ]
+    assert all(not path.exists() for path in destinations)
+    receipts = []
+    for source_name, destination in zip(
+        ("proposals.json", "dispositions.json"), destinations, strict=True
+    ):
+        raw = (directory / source_name).read_bytes()
+        with destination.open("xb") as stream:
+            stream.write(raw)
+        assert destination.read_bytes() == raw
+        receipts.append(
+            {"path": str(destination.relative_to(ROOT)), "sha256": hashlib.sha256(raw).hexdigest()}
+        )
+    proof = {
+        "assertion_core_unchanged_from_v2": True,
+        "dispositions_unchanged_from_v2": True,
+        "change_scope": "Issue 763 excerpt/basis grounding; queue digest added, no identity/dose/action/stage/coordinates changed",
+        "outputs": receipts,
+    }
+    (directory / "evidence-repair-proof.json").write_text(json.dumps(proof, indent=2) + "\n")
+    print(json.dumps(proof, indent=2))
 
 
 def draft_review(directory: Path, inventory: dict) -> None:
@@ -1131,7 +1183,7 @@ def draft_review(directory: Path, inventory: dict) -> None:
             {
                 "action_id": "review-then-apply",
                 "description": "Independently review proposed claims, resolve presentation boundaries, then centrally apply only approved records and verify exported event/ledger counts.",
-                "finding_ids": [],
+                "finding_ids": ["quantity-basis-gap"],
                 "target_ids": ids,
                 "ownership_note": "Normalized recipe owners and the #683 application owner; this curator has not applied data.",
                 "acceptance_checks": [
@@ -1273,6 +1325,7 @@ def main() -> None:
     parser.add_argument("--capture-pmid")
     parser.add_argument("--prepare", type=Path)
     parser.add_argument("--validate-proposals", type=Path)
+    parser.add_argument("--publish-proposals", type=Path)
     parser.add_argument("--draft-review", type=Path)
     parser.add_argument("--presentation-audit", type=Path)
     args = parser.parse_args()
@@ -1318,6 +1371,9 @@ def main() -> None:
         return
     if args.validate_proposals:
         validate_proposals(args.validate_proposals)
+        return
+    if args.publish_proposals:
+        publish_proposals(args.publish_proposals)
         return
     if args.draft_review:
         draft_review(args.draft_review, json.loads(args.inventory.read_text()))

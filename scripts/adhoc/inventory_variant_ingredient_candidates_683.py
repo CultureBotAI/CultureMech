@@ -7,10 +7,10 @@ This checks source coordinates and hashes; it makes no ingredient/scientific dec
 """
 
 import argparse
-from collections import Counter
 import csv
 import hashlib
 import json
+from collections import Counter
 from pathlib import Path
 
 import yaml
@@ -26,7 +26,10 @@ def planning_groups(rows, queue_hash):
         return []
     selections = [
         ("bbm_stage_context_canary", set(range(21, 25))),
-        ("utex_optional_agar_carbonate", {1, 2, 3, 4, 25, 34, 35, 36, 44, 45, 56, 57, 58, 59, 60, 61, 73}),
+        (
+            "utex_optional_agar_carbonate",
+            {1, 2, 3, 4, 25, 34, 35, 36, 44, 45, 56, 57, 58, 59, 60, 61, 73},
+        ),
         ("carini_ams1_source_family", set(range(146, 188)) | set(range(204, 218))),
         ("jensen_bl_source_family", set(range(237, 257))),
         ("middlebrook_alternative_recipe", set(range(321, 337))),
@@ -43,8 +46,11 @@ def planning_groups(rows, queue_hash):
             raise ValueError("planning groups overlap")
         used.update(numbers)
     for category in ("algae", "archaea", "bacterial", "specialized"):
-        numbers = {i for i, row in enumerate(rows, 1)
-                   if i not in used and Path(row["source_path"]).parts[0] == category}
+        numbers = {
+            i
+            for i, row in enumerate(rows, 1)
+            if i not in used and Path(row["source_path"]).parts[0] == category
+        }
         selections.append((category + "_remaining", numbers))
         used.update(numbers)
     if used != set(range(1, len(rows) + 1)):
@@ -52,14 +58,16 @@ def planning_groups(rows, queue_hash):
     groups = []
     for name, numbers in selections:
         selected = [rows[number - 1] for number in sorted(numbers)]
-        groups.append({
-            "name": name,
-            "rows": len(selected),
-            "recipes": len({row["source_path"] for row in selected}),
-            "variants": len({(row["source_path"], row["variant_index"]) for row in selected}),
-            "queue_row_numbers": sorted(numbers),
-            "scientific_review": False,
-        })
+        groups.append(
+            {
+                "name": name,
+                "rows": len(selected),
+                "recipes": len({row["source_path"] for row in selected}),
+                "variants": len({(row["source_path"], row["variant_index"]) for row in selected}),
+                "queue_row_numbers": sorted(numbers),
+                "scientific_review": False,
+            }
+        )
     return groups
 
 
@@ -141,15 +149,25 @@ def main():
         "recipes": len(records),
         "variants": len(variants),
         "category_rows": dict(Counter(Path(row["source_path"]).parts[0] for row in rows)),
-        "variant_relationships": dict(Counter(value["variant"].get("relationship", "unspecified")
-                                              for value in variants.values())),
+        "variant_relationships": dict(
+            Counter(
+                value["variant"].get("relationship", "unspecified") for value in variants.values()
+            )
+        ),
         "source_hashes_and_coordinates_verified": True,
         "limitations": "Only the preserved queue and its represented recipes are checked; no scientific claims or full-catalog absence inferred.",
     }
     groups = planning_groups(rows, summary["queue_sha256"])
-    payload = {"summary": summary, "planning_groups": groups, "rows": rows, "variants": list(variants.values())}
+    payload = {
+        "summary": summary,
+        "planning_groups": groups,
+        "rows": rows,
+        "variants": list(variants.values()),
+    }
     output.mkdir(parents=True, exist_ok=False)
-    (output / "inventory.json").write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (output / "inventory.json").write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
     (output / "rows.tsv").write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(json.dumps(summary, indent=2))
 

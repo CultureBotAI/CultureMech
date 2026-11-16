@@ -488,6 +488,83 @@ curation_history:
   source: doi:10.3389/fenrg.2015.00020
   changes: 'This owner: +1 citation; +1 inline variants; +0 concentration evidence
     items; +0 growth observations. No amount values changed.'
+- timestamp: '2026-11-16T21:33:01.333505+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "f3ae005ac2d08bdb104330cca0303979ebbf0c3ade4eade7c0e588919533b08f",
+    "variants": [{"ingredient_changes": [{"action": "ADD", "evidence": [{"explanation":
+    "Methods, culture conditions and bacterial interference experiment. Supports only
+    the named descriptor/event at the stated stage. Undefined silicate chemical form;
+    no salt/hydrate/stock assigned. Stated supplement dose, not calculated total including
+    basal silicate. Source inspected 2026-11-16; SHA256 7e3ddf65f336955a2c875b18361e878ffcf16bc341fe9b404308d014df4c3319.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "doi:10.1038/srep10036", "snippet": "1.06 × 10−4 M silicate", "supports":
+    "SUPPORT"}], "ingredient": {"concentration": {"unit": "MOLAR", "value": "1.06e-4"},
+    "notes": "Undefined silicate chemical form; no salt/hydrate/stock assigned. Stated
+    supplement dose, not calculated total including basal silicate.", "preferred_term":
+    "silicate"}, "source_modification_index": 0, "source_text": "The study reports
+    f/2 supplemented with 1.06e-4 M silicate. Preserve this stated supplementation
+    concentration without assigning an unreported silicate salt, hydrate, stock recipe
+    or additional mass conversion.", "stage": "reported f/2 supplementation"}], "variant_index":
+    0, "variant_name": "f_2_silicate_supplement_1_06e_4_m"}, {"ingredient_changes":
+    [{"action": "ADD", "evidence": [{"explanation": "Methods, culture conditions and
+    bacterial interference experiment. Supports only the named descriptor/event at
+    the stated stage. Stated supplement concentration; inclusion of basal nitrate
+    is unresolved. pH 8 remains a condition. Source inspected 2026-11-16; SHA256 7e3ddf65f336955a2c875b18361e878ffcf16bc341fe9b404308d014df4c3319.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "doi:10.1038/srep10036", "snippet": "29.4 mM NaNO3", "supports":
+    "SUPPORT"}], "ingredient": {"concentration": {"unit": "MILLIMOLAR", "value": "29.4"},
+    "notes": "Stated supplement concentration; inclusion of basal nitrate is unresolved.
+    pH 8 remains a condition.", "preferred_term": "sodium nitrate"}, "source_modification_index":
+    0, "source_text": "The study reports f/2 supplemented with 29.4 mM NaNO3 and adjusted
+    to pH 8. Retain the stated supplement concentration; do not infer whether it includes
+    the base-medium nitrate or calculate a total nitrate concentration.", "stage":
+    "reported f/2 supplementation"}], "variant_index": 1, "variant_name": "f_2_nitrate_supplement_29_4_mm"},
+    {"ingredient_changes": [{"action": "ADD", "evidence": [{"explanation": "Methods,
+    culture conditions and bacterial interference experiment. Supports only the named
+    descriptor/event at the stated stage. Source-literal 200 micrograms/mL, no conversion.
+    No salt form or stock strength inferred; untreated comparator separate. Source
+    inspected 2026-11-16; SHA256 7e3ddf65f336955a2c875b18361e878ffcf16bc341fe9b404308d014df4c3319.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "doi:10.1038/srep10036", "snippet": "200 μg mL−1", "supports": "SUPPORT"}],
+    "ingredient": {"concentration": {"unit": "MICROG_PER_ML", "value": "200"}, "notes":
+    "Source-literal 200 micrograms/mL, no conversion. No salt form or stock strength
+    inferred; untreated comparator separate.", "preferred_term": "penicillin G"},
+    "source_modification_index": 0, "source_text": "Reported penicillin G treatment
+    concentration: 200 micrograms per mL in the treated f/2 culture; no unreported
+    salt form, stock strength or conversion is assigned.", "stage": "antibiotic-treated
+    f/2 culture"}, {"action": "ADD", "evidence": [{"explanation": "Methods, culture
+    conditions and bacterial interference experiment. Supports only the named descriptor/event
+    at the stated stage. Source-literal 50 micrograms/mL, no conversion. Not streptomycin;
+    hydrate and stock strength unspecified. Source inspected 2026-11-16; SHA256 7e3ddf65f336955a2c875b18361e878ffcf16bc341fe9b404308d014df4c3319.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "doi:10.1038/srep10036", "snippet": "50 μg mL−1", "supports": "SUPPORT"}],
+    "ingredient": {"concentration": {"unit": "MICROG_PER_ML", "value": "50"}, "notes":
+    "Source-literal 50 micrograms/mL, no conversion. Not streptomycin; hydrate and
+    stock strength unspecified.", "preferred_term": "dihydrostreptomycin sulfate"},
+    "source_modification_index": 1, "source_text": "Reported dihydrostreptomycin sulphate
+    treatment concentration: 50 micrograms per mL in the same treated culture; not
+    streptomycin, not a stock concentration, and no hydrate assumption.", "stage":
+    "antibiotic-treated f/2 culture"}], "variant_index": 2, "variant_name": "f_2_penicillin_g_dihydrostreptomycin_supplement"},
+    {"ingredient_changes": [{"action": "REPLACE", "evidence": [{"explanation": "Materials
+    and Methods, Strains and media. Supports only the named descriptor/event at the
+    stated stage. Named mixture replacement only. Constituent identities, stock strength,
+    addition volume and final concentrations remain unresolved; no reliance on the
+    mismatched Gomord citation. Source inspected 2026-11-16; SHA256 8d2ad2e2716dc194452015adc5b385057c1eb42a7e4e6b89eba9af2f00792d5a.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "doi:10.3389/fenrg.2015.00020", "snippet": "vitamin solution from
+    the 2ASW medium", "supports": "SUPPORT"}], "ingredient": {"notes": "Named mixture
+    replacement only. Constituent identities, stock strength, addition volume and
+    final concentrations remain unresolved; no reliance on the mismatched Gomord citation.",
+    "preferred_term": "2ASW vitamin solution"}, "replaced_ingredient": {"preferred_term":
+    "f/2 vitamin solution"}, "source_modification_index": 0, "source_text": "The vitamin
+    solution described as coming from 2ASW replaces the original f/2 vitamin solution;
+    the paper states it contains additional vitamin components.", "stage": "modified
+    f/2 maintenance medium"}], "variant_index": 3, "variant_name": "f_2_2asw_vitamin_replacement_hiibel_2015"}]}'
 variant_children:
 - path: data/normalized_yaml/bacterial/f_2_quad.yaml
   relationship: CONCENTRATION_VARIANT
@@ -520,6 +597,29 @@ variants:
       medium, not a stock concentration or calculated total including background.
       No calculation. Local f/2 + Si owners specify sodium silicate nonahydrate and
       differently encoded stock amounts; the paper does not establish exact equivalence.'
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: silicate
+      concentration:
+        value: '1.06e-4'
+        unit: MOLAR
+      notes: Undefined silicate chemical form; no salt/hydrate/stock assigned. Stated
+        supplement dose, not calculated total including basal silicate.
+    stage: reported f/2 supplementation
+    source_modification_index: 0
+    source_text: The study reports f/2 supplemented with 1.06e-4 M silicate. Preserve
+      this stated supplementation concentration without assigning an unreported silicate
+      salt, hydrate, stock recipe or additional mass conversion.
+    evidence:
+    - reference: doi:10.1038/srep10036
+      supports: SUPPORT
+      snippet: 1.06 × 10−4 M silicate
+      explanation: Methods, culture conditions and bacterial interference experiment.
+        Supports only the named descriptor/event at the stated stage. Undefined silicate
+        chemical form; no salt/hydrate/stock assigned. Stated supplement dose, not calculated
+        total including basal silicate. Source inspected 2026-11-16; SHA256 7e3ddf65f336955a2c875b18361e878ffcf16bc341fe9b404308d014df4c3319.
+        No parent formulation, growth, ontology identity, or missing dose is inferred.
 - name: f_2_nitrate_supplement_29_4_mm
   relationship: SUPPLEMENTED_VARIANT
   description: Emami et al. (2015) nitrate-supplemented f/2 at pH 8 for reported Arthrospira
@@ -543,6 +643,29 @@ variants:
       scope=nitrate-supplemented f/2 at pH 8. Directly reported supplementation value
       and study pH, not a stock quantity or a universal optimum. No arithmetic; base-plus-supplement
       total remains unresolved.'
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: sodium nitrate
+      concentration:
+        value: '29.4'
+        unit: MILLIMOLAR
+      notes: Stated supplement concentration; inclusion of basal nitrate is unresolved.
+        pH 8 remains a condition.
+    stage: reported f/2 supplementation
+    source_modification_index: 0
+    source_text: The study reports f/2 supplemented with 29.4 mM NaNO3 and adjusted
+      to pH 8. Retain the stated supplement concentration; do not infer whether it includes
+      the base-medium nitrate or calculate a total nitrate concentration.
+    evidence:
+    - reference: doi:10.1038/srep10036
+      supports: SUPPORT
+      snippet: 29.4 mM NaNO3
+      explanation: Methods, culture conditions and bacterial interference experiment.
+        Supports only the named descriptor/event at the stated stage. Stated supplement
+        concentration; inclusion of basal nitrate is unresolved. pH 8 remains a condition.
+        Source inspected 2026-11-16; SHA256 7e3ddf65f336955a2c875b18361e878ffcf16bc341fe9b404308d014df4c3319.
+        No parent formulation, growth, ontology identity, or missing dose is inferred.
 - name: f_2_penicillin_g_dihydrostreptomycin_supplement
   relationship: SUPPLEMENTED_VARIANT
   description: Emami et al. (2015) antibiotic-treated f/2 cultures of Dunaliella polymorpha
@@ -577,6 +700,51 @@ variants:
       assignment. The two directly stated culture-treatment amounts share this exact
       excerpt; no arithmetic. Marine-agar sampling concerns co-occurring bacteria,
       not growth of Dunaliella on that agar.'
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: penicillin G
+      concentration:
+        value: '200'
+        unit: MICROG_PER_ML
+      notes: Source-literal 200 micrograms/mL, no conversion. No salt form or stock
+        strength inferred; untreated comparator separate.
+    stage: antibiotic-treated f/2 culture
+    source_modification_index: 0
+    source_text: 'Reported penicillin G treatment concentration: 200 micrograms per
+      mL in the treated f/2 culture; no unreported salt form, stock strength or conversion
+      is assigned.'
+    evidence:
+    - reference: doi:10.1038/srep10036
+      supports: SUPPORT
+      snippet: 200 μg mL−1
+      explanation: Methods, culture conditions and bacterial interference experiment.
+        Supports only the named descriptor/event at the stated stage. Source-literal
+        200 micrograms/mL, no conversion. No salt form or stock strength inferred; untreated
+        comparator separate. Source inspected 2026-11-16; SHA256 7e3ddf65f336955a2c875b18361e878ffcf16bc341fe9b404308d014df4c3319.
+        No parent formulation, growth, ontology identity, or missing dose is inferred.
+  - action: ADD
+    ingredient:
+      preferred_term: dihydrostreptomycin sulfate
+      concentration:
+        value: '50'
+        unit: MICROG_PER_ML
+      notes: Source-literal 50 micrograms/mL, no conversion. Not streptomycin; hydrate
+        and stock strength unspecified.
+    stage: antibiotic-treated f/2 culture
+    source_modification_index: 1
+    source_text: 'Reported dihydrostreptomycin sulphate treatment concentration: 50
+      micrograms per mL in the same treated culture; not streptomycin, not a stock concentration,
+      and no hydrate assumption.'
+    evidence:
+    - reference: doi:10.1038/srep10036
+      supports: SUPPORT
+      snippet: 50 μg mL−1
+      explanation: Methods, culture conditions and bacterial interference experiment.
+        Supports only the named descriptor/event at the stated stage. Source-literal
+        50 micrograms/mL, no conversion. Not streptomycin; hydrate and stock strength
+        unspecified. Source inspected 2026-11-16; SHA256 7e3ddf65f336955a2c875b18361e878ffcf16bc341fe9b404308d014df4c3319.
+        No parent formulation, growth, ontology identity, or missing dose is inferred.
 - name: f_2_2asw_vitamin_replacement_hiibel_2015
   relationship: SUBSTITUTED_COMPONENT_VARIANT
   description: Hiibel et al. (2015) f/2 maintenance medium with a reported 2ASW vitamin-solution
@@ -603,3 +771,26 @@ variants:
       resolved complete formula or parent-medium growth is asserted; cohort names,
       strain designations, NCBI ranks and qualified taxonomy decisions are retained
       in this paper''s bibliography notes.'
+  ingredient_changes:
+  - action: REPLACE
+    ingredient:
+      preferred_term: 2ASW vitamin solution
+      notes: Named mixture replacement only. Constituent identities, stock strength,
+        addition volume and final concentrations remain unresolved; no reliance on the
+        mismatched Gomord citation.
+    stage: modified f/2 maintenance medium
+    source_modification_index: 0
+    source_text: The vitamin solution described as coming from 2ASW replaces the original
+      f/2 vitamin solution; the paper states it contains additional vitamin components.
+    evidence:
+    - reference: doi:10.3389/fenrg.2015.00020
+      supports: SUPPORT
+      snippet: vitamin solution from the 2ASW medium
+      explanation: Materials and Methods, Strains and media. Supports only the named
+        descriptor/event at the stated stage. Named mixture replacement only. Constituent
+        identities, stock strength, addition volume and final concentrations remain
+        unresolved; no reliance on the mismatched Gomord citation. Source inspected
+        2026-11-16; SHA256 8d2ad2e2716dc194452015adc5b385057c1eb42a7e4e6b89eba9af2f00792d5a.
+        No parent formulation, growth, ontology identity, or missing dose is inferred.
+    replaced_ingredient:
+      preferred_term: f/2 vitamin solution

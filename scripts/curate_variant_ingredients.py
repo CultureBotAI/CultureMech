@@ -59,6 +59,76 @@ def canonical_bytes(value: Any) -> bytes:
     return json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode()
 
 
+def render_additions(before: bytes, desired: dict[str, Any], changes: list[dict]) -> bytes:
+    """Insert only new fields/events at parsed block boundaries, preserving source bytes.
+
+    Existing scalar spelling, comments and wrapping are never reserialized. The
+    complete parsed result must equal the native-validated proposal; unsupported
+    flow/alias layouts fail rather than invoking an approximate text rewrite.
+    """
+    text = before.decode("utf-8")
+    tree = yaml.compose(text)
+    if not isinstance(tree, yaml.MappingNode) or tree.flow_style:
+        raise ValueError("source must be a block-style YAML record")
+
+    def fields(node):
+        if not isinstance(node, yaml.MappingNode) or node.flow_style:
+            raise ValueError("selected variant must be a block-style YAML mapping")
+        result = {}
+        for key, value in node.value:
+            if not isinstance(key, yaml.ScalarNode) or key.value in result:
+                raise ValueError("ambiguous YAML mapping keys")
+            result[key.value] = value
+        return result
+
+    root_fields = fields(tree)
+    variants = root_fields["variants"]
+    if not isinstance(variants, yaml.SequenceNode) or variants.flow_style:
+        raise ValueError("variants must use block-style YAML")
+    insertions: dict[int, list[str]] = {}
+
+    def insert(node, fragment, indent):
+        if node.flow_style:
+            raise ValueError("selected YAML sequence must use block style")
+        position = node.end_mark.index
+        # A block can end at the next indented sequence item. Insert before
+        # that line's indentation, never inside a scalar or existing token.
+        line_start = text.rfind("\n", 0, position) + 1
+        if position < len(text):
+            if text[line_start:position].strip():
+                raise ValueError("unsupported YAML insertion boundary")
+            position = line_start
+        rendered = yaml.safe_dump(fragment, sort_keys=False, allow_unicode=True)
+        rendered = "".join(
+            " " * indent + line if line.strip() else line
+            for line in rendered.splitlines(keepends=True)
+        )
+        insertions.setdefault(position, []).append(rendered)
+
+    for item in changes:
+        node = variants.value[item["variant_index"]]
+        if "ingredient_changes" in fields(node):
+            raise ValueError("ingredient_changes already exists, including an empty field")
+        insert(node, {"ingredient_changes": item["ingredient_changes"]}, node.start_mark.column)
+    event = desired["curation_history"][-1]
+    history = root_fields.get("curation_history")
+    if history is None:
+        insert(tree, {"curation_history": [event]}, 0)
+    elif isinstance(history, yaml.SequenceNode):
+        insert(history, [event], history.start_mark.column)
+    else:
+        raise ValueError("curation_history must be a YAML sequence")
+    # At EOF the last variant and absent root history share a boundary;
+    # preserve their construction order (variant field, then root field).
+    for position, fragments in sorted(insertions.items(), reverse=True):
+        prefix = "\n" if position and text[position - 1] != "\n" else ""
+        addition = prefix + "".join(fragments)
+        text = text[:position] + addition + text[position:]
+    if yaml.safe_load(text) != desired:
+        raise ValueError("presentation-preserving additions differ from validated proposal")
+    return text.encode("utf-8")
+
+
 def recipe_path(root: Path, relative: str) -> Path:
     path = root / relative
     if Path(relative).is_absolute() or ".." in Path(relative).parts:
@@ -74,6 +144,10 @@ def recipe_path(root: Path, relative: str) -> Path:
 def plan_record(root: Path, decision: dict[str, Any], decision_digest: str) -> dict[str, Any]:
     path = recipe_path(root, decision["path"])
     before = path.read_bytes()
+    # Aliases share object identity after safe_load/deepcopy. Selecting one
+    # variant could otherwise mutate an unselected sibling through its anchor.
+    if any(isinstance(token, (yaml.AliasToken, yaml.AnchorToken)) for token in yaml.scan(before)):
+        raise ValueError("YAML aliases and anchors are not supported for scoped curation")
     record = yaml.safe_load(before)
     if not isinstance(record, dict) or record.get("id") != decision["recipe_id"]:
         raise ValueError(f"record identity mismatch: {decision['path']}")
@@ -129,13 +203,6 @@ def plan_record(root: Path, decision: dict[str, Any], decision_digest: str) -> d
         return {"receipt": result, "path": path, "before": before, "record": record}
     if digest(before) != decision["expected_sha256"]:
         raise ValueError(f"source hash mismatch: {decision['path']}")
-    # The native validated writer uses these exact corpus serialization options.
-    # Refuse presentation drift before changing a record, rather than hiding it.
-    baseline = yaml.safe_dump(
-        record, sort_keys=False, allow_unicode=True, default_flow_style=False, width=80
-    ).encode()
-    if baseline != before:
-        raise ValueError(f"native writer would reformat unchanged content: {decision['path']}")
     record_curation_event(
         desired,
         curator="codex",
@@ -153,11 +220,23 @@ def plan_record(root: Path, decision: dict[str, Any], decision_digest: str) -> d
     errors = validate_recipe(desired)
     if errors:
         raise ValueError("proposed record fails validation: " + errors[0].message)
-    return {"receipt": result, "path": path, "before": before, "record": desired}
+    rendered = render_additions(before, desired, changes)
+    return {
+        "receipt": result,
+        "path": path,
+        "before": before,
+        "record": desired,
+        "rendered": rendered,
+    }
 
 
 def run(
-    decisions: Path, *, root: Path = ROOT, apply: bool = False, receipt: Path | None = None
+    decisions: Path,
+    *,
+    root: Path = ROOT,
+    apply: bool = False,
+    receipt: Path | None = None,
+    only_record: str | None = None,
 ) -> dict[str, Any]:
     raw = decisions.read_bytes()
     document = json.loads(raw)
@@ -167,12 +246,19 @@ def run(
     paths = [item["path"] for item in document["records"]]
     if len(set(paths)) != len(paths):
         raise ValueError("duplicate record decisions")
+    if only_record is not None and only_record not in paths:
+        raise ValueError("selected record is absent from decisions")
     # Validate the entire selected plan before its first write.
-    plans = [plan_record(root, item, decision_digest) for item in document["records"]]
+    plans = [
+        plan_record(root, item, decision_digest)
+        for item in document["records"]
+        if only_record is None or item["path"] == only_record
+    ]
     result = {
         "schema_version": 1,
         "mode": "apply" if apply else "preview",
         "decision_sha256": decision_digest,
+        "only_record": only_record,
         "records": [plan["receipt"] for plan in plans],
     }
     if apply and receipt is None:
@@ -202,6 +288,13 @@ def run(
                 actual = stage.read_bytes()
                 if yaml.safe_load(actual) != plan["record"]:
                     raise ValueError("staged record differs from validated proposal")
+                # The native writer validated exactly this semantic document.
+                # Publish the equivalent source-preserving rendering, not its
+                # canonical reserialization of unrelated existing fields.
+                actual = plan["rendered"]
+                stage.write_bytes(actual)
+                if yaml.safe_load(stage.read_bytes()) != plan["record"]:
+                    raise ValueError("source-preserving stage differs from validated proposal")
                 stage.chmod(plan["path"].stat().st_mode & 0o777)
                 with stage.open("rb") as stream:
                     os.fsync(stream.fileno())
@@ -242,11 +335,16 @@ def main() -> int:
     parser.add_argument("decisions", type=Path)
     parser.add_argument("--apply", action="store_true")
     parser.add_argument("--receipt", type=Path)
+    parser.add_argument(
+        "--only-record", help="Select exactly one decision path for an end-to-end canary"
+    )
     args = parser.parse_args()
     if args.receipt and args.receipt.exists():
         parser.error("receipt destination already exists; choose a new path")
     try:
-        result = run(args.decisions, apply=args.apply, receipt=args.receipt)
+        result = run(
+            args.decisions, apply=args.apply, receipt=args.receipt, only_record=args.only_record
+        )
     except ApplyError as exc:
         print(json.dumps(exc.receipt, ensure_ascii=False, indent=2), file=sys.stderr)
         return 1

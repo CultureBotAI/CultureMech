@@ -350,6 +350,33 @@ curation_history:
     prior history and existing full-record variant links. Archived primary sources
     and Markdown; no publication or normalized growth metric.
   source: doi:10.1128/aem.59.12.4363-4366.1993
+- timestamp: '2026-11-16T21:33:56.886633+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "311cb0ca79971c03b8a2a334da32709c3be1315c8cf63cb1dc51b31f85200317",
+    "variants": [{"ingredient_changes": [{"action": "REPLACE", "evidence": [{"explanation":
+    "p.4363 formulation paragraph identifies the calcium salt; Table 1 footnote b
+    states 2 micromolar pantothenate. Read from the primary ASM PDF via browser; anonymous
+    local download failed, so no local source hash is claimed. Primary source inspected
+    2026-11-16; no ontology identity or mass conversion inferred. Jensen p.4363 Table1
+    footnote b gives the separate amount excerpt \"2 μM pantothenate\" (micro-unit
+    typography normalized from PDF extraction). This is the pantothenate basis, not
+    2 μM calcium salt; no calcium dose or salt-molarity conversion is inferred. The
+    formulation paragraph supplies the calcium-salt identity. Exact excerpt clarification
+    for issue763; scientific payload unchanged.", "reference": "doi:10.1128/aem.59.12.4363-4366.1993",
+    "snippet": "calcium pantothenate", "supports": "SUPPORT"}], "ingredient": {"notes":
+    "Table 1 gives 2 micromolar on a pantothenate basis; no calcium-salt molarity
+    or calcium concentration is inferred.", "preferred_term": "Calcium pantothenate"},
+    "replaced_ingredient": {"preferred_term": "Pantothenate"}, "source_modification_index":
+    1, "source_text": "Use calcium pantothenate as specified in the text; Table 1
+    expresses the dose as 2 micromolar pantothenate. Do not reinterpret that as 2
+    micromolar calcium salt or add an inferred calcium concentration.", "stage": "BL
+    medium vitamin-stock preparation"}], "variant_index": 0, "variant_name": "Jensen
+    1993 BL Medium, Low MOPS reported preparation"}]}'
 media_term:
   preferred_term: MediaDB Medium 404
   term:
@@ -441,6 +468,32 @@ variants:
       1000 solely for comparison to existing mM fields. No parent amount was rewritten.
       The printed molybdate formula/hydration remains unresolved; no unsupported exact
       chemical identity is claimed.'
+  ingredient_changes:
+  - action: REPLACE
+    ingredient:
+      preferred_term: Calcium pantothenate
+      notes: Table 1 gives 2 micromolar on a pantothenate basis; no calcium-salt molarity
+        or calcium concentration is inferred.
+    stage: BL medium vitamin-stock preparation
+    source_modification_index: 1
+    source_text: Use calcium pantothenate as specified in the text; Table 1 expresses
+      the dose as 2 micromolar pantothenate. Do not reinterpret that as 2 micromolar
+      calcium salt or add an inferred calcium concentration.
+    evidence:
+    - reference: doi:10.1128/aem.59.12.4363-4366.1993
+      supports: SUPPORT
+      snippet: calcium pantothenate
+      explanation: p.4363 formulation paragraph identifies the calcium salt; Table 1
+        footnote b states 2 micromolar pantothenate. Read from the primary ASM PDF via
+        browser; anonymous local download failed, so no local source hash is claimed.
+        Primary source inspected 2026-11-16; no ontology identity or mass conversion
+        inferred. Jensen p.4363 Table1 footnote b gives the separate amount excerpt
+        "2 μM pantothenate" (micro-unit typography normalized from PDF extraction).
+        This is the pantothenate basis, not 2 μM calcium salt; no calcium dose or salt-molarity
+        conversion is inferred. The formulation paragraph supplies the calcium-salt
+        identity. Exact excerpt clarification for issue763; scientific payload unchanged.
+    replaced_ingredient:
+      preferred_term: Pantothenate
 target_organisms:
 - preferred_term: Lactococcus lactis subsp. lactis
   term:

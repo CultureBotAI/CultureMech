@@ -213,6 +213,39 @@ curation_history:
     source-version limitations; no quantitative growth metric or parent concentration
     certification.
   source: doi:10.1002/btpr.227; doi:10.1002/bit.21002
+- timestamp: '2026-11-16T21:33:57.585786+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "311cb0ca79971c03b8a2a334da32709c3be1315c8cf63cb1dc51b31f85200317",
+    "variants": [{"ingredient_changes": [{"action": "SET_CONCENTRATION", "evidence":
+    [{"explanation": "Methods, p.4, isotope-tracer growth medium. This overrides the
+    imported 10 mM for this variant only. Primary source inspected 2026-11-16; no
+    ontology identity or mass conversion inferred.", "reference": "doi:10.1002/btpr.227",
+    "snippet": "buffered with 20mM PIPES", "supports": "SUPPORT"}], "ingredient":
+    {"concentration": {"unit": "MILLIMOLAR", "value": "20"}, "preferred_term": "PIPES"},
+    "source_modification_index": 0, "source_text": "Use 20 mM PIPES at pH 7 instead
+    of the parent''s 10 mM PIPES.", "stage": "isotope-tracer growth assay"}, {"action":
+    "REPLACE", "evidence": [{"explanation": "Methods, p.4: labeled lactate supplied
+    at 30 mM in the growth medium. Isotope label and L stereochemistry preserved;
+    no assumption about downstream isotope-resolved mapping. Primary source inspected
+    2026-11-16; no ontology identity or mass conversion inferred. Tang OSTI-hosted
+    manuscript, p.4 Methods. Separate exact substrate excerpt: \"[3-13C] sodium L-lactate\".
+    The immediately preceding substrate name binds this 30mM dose to labeled lactate;
+    isotope-position typography rendered as plain text. Exact excerpt clarification
+    for issue763; scientific payload unchanged.", "reference": "doi:10.1002/btpr.227",
+    "snippet": "minimal medium (30mM, pH=7, buffered with 20mM PIPES)", "supports":
+    "SUPPORT"}], "ingredient": {"concentration": {"unit": "MILLIMOLAR", "value": "30"},
+    "notes": "Source reports 98% for the supplied labeled reagent; no unlabeled-lactate
+    ontology identity is inherited.", "preferred_term": "[3-13C] sodium L-lactate"},
+    "replaced_ingredient": {"preferred_term": "Sodium L-lactate"}, "source_modification_index":
+    1, "source_text": "Use the source''s 30 mM [3-13C] sodium L-lactate (98% as reported),
+    rather than silently treating unlabelled sodium L-lactate as the tracer substrate.",
+    "stage": "isotope-tracer growth assay"}], "variant_index": 0, "variant_name":
+    "Tang 2009 manuscript 20 mM PIPES tracer medium with salt"}]}'
 media_term:
   preferred_term: MediaDB Medium 183
   term:
@@ -325,6 +358,49 @@ variants:
       salts. The 2009 explicit overrides take precedence; transfer of antifoam and
       exact trace/hydrate equivalence remain unverified. The parent''s generic filtration
       step is not newly certified. '
+  ingredient_changes:
+  - action: SET_CONCENTRATION
+    ingredient:
+      preferred_term: PIPES
+      concentration:
+        value: '20'
+        unit: MILLIMOLAR
+    stage: isotope-tracer growth assay
+    source_modification_index: 0
+    source_text: Use 20 mM PIPES at pH 7 instead of the parent's 10 mM PIPES.
+    evidence:
+    - reference: doi:10.1002/btpr.227
+      supports: SUPPORT
+      snippet: buffered with 20mM PIPES
+      explanation: Methods, p.4, isotope-tracer growth medium. This overrides the imported
+        10 mM for this variant only. Primary source inspected 2026-11-16; no ontology
+        identity or mass conversion inferred.
+  - action: REPLACE
+    ingredient:
+      preferred_term: '[3-13C] sodium L-lactate'
+      concentration:
+        value: '30'
+        unit: MILLIMOLAR
+      notes: Source reports 98% for the supplied labeled reagent; no unlabeled-lactate
+        ontology identity is inherited.
+    stage: isotope-tracer growth assay
+    source_modification_index: 1
+    source_text: Use the source's 30 mM [3-13C] sodium L-lactate (98% as reported),
+      rather than silently treating unlabelled sodium L-lactate as the tracer substrate.
+    evidence:
+    - reference: doi:10.1002/btpr.227
+      supports: SUPPORT
+      snippet: minimal medium (30mM, pH=7, buffered with 20mM PIPES)
+      explanation: 'Methods, p.4: labeled lactate supplied at 30 mM in the growth medium.
+        Isotope label and L stereochemistry preserved; no assumption about downstream
+        isotope-resolved mapping. Primary source inspected 2026-11-16; no ontology identity
+        or mass conversion inferred. Tang OSTI-hosted manuscript, p.4 Methods. Separate
+        exact substrate excerpt: "[3-13C] sodium L-lactate". The immediately preceding
+        substrate name binds this 30mM dose to labeled lactate; isotope-position typography
+        rendered as plain text. Exact excerpt clarification for issue763; scientific
+        payload unchanged.'
+    replaced_ingredient:
+      preferred_term: Sodium L-lactate
 target_organisms:
 - preferred_term: Shewanella oneidensis MR-1
   strain: MR-1 (wild type)

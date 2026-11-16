@@ -86,6 +86,59 @@ curation_history:
     remain unresolved; no conversion, parent amount change, new native growth assertion,
     alteration of existing evidence, owner merge or publication.
   source: doi:10.1128/spectrum.00069-23; doi:10.3389/fenrg.2015.00020; doi:10.1128/genomeA.01105-17
+- timestamp: '2026-11-16T21:36:30.613004+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "8918ca273b10dc6cce0292e504c741e0ec65b68c7feee2c65098180a8b3ed0f6",
+    "variants": [{"ingredient_changes": [{"action": "SET_CONCENTRATION", "evidence":
+    [{"explanation": "Table S1, component rows and sodium footnotes; primary source
+    inspected 2026-11-16. Discrete alternative NaCl settings; zero means no NaCl addition.
+    These are not summed or treated as a continuous dose. Trace salts contribute background
+    sodium; no total sodium concentration or universal parent equivalence asserted.",
+    "reference": "doi:10.1007/s10126-021-10037-4", "snippet": "0, 10, 20, 50, 200,
+    or 423\n\nmM", "supports": "SUPPORT"}], "ingredient": {"concentration": {"unit":
+    "MILLIMOLAR", "value": "0; 10; 20; 50; 200; 423"}, "notes": "Discrete alternative
+    NaCl settings; zero means no NaCl addition. These are not summed or treated as
+    a continuous dose. Trace salts contribute background sodium; no total sodium concentration
+    or universal parent equivalence asserted.", "preferred_term": "NaCl"}, "notes":
+    "A scoped change event, not a fully expanded variant or a parent-formulation amendment.
+    No chemical identifier is inferred.", "source_modification_index": 1, "source_text":
+    "Manipulate sodium by changing NaCl added to the basal artificial seawater.",
+    "stage": "separate sodium-response modified F/2ASW formulations"}], "variant_index":
+    1, "variant_name": "modified_f_2asw_sodium_response"}, {"ingredient_changes":
+    [{"action": "SET_CONCENTRATION", "evidence": [{"explanation": "Materials and Methods,
+    algal strains and cultivation; primary source inspected 2026-11-16. Source states
+    medium concentration, not stock strength or a dose increment; other constituents
+    and parent equivalence remain unresolved.", "reference": "doi:10.1128/spectrum.00069-23",
+    "snippet": "1.5 M NaCl", "supports": "SUPPORT"}], "ingredient": {"concentration":
+    {"unit": "MOLAR", "value": "1.5"}, "notes": "Source states medium concentration,
+    not stock strength or a dose increment; other constituents and parent equivalence
+    remain unresolved.", "preferred_term": "NaCl"}, "notes": "A scoped change event,
+    not a fully expanded variant or a parent-formulation amendment. No chemical identifier
+    is inferred.", "source_modification_index": 0, "source_text": "The study reports
+    1.5 M NaCl in its 2ASW culture medium. This is a reported medium concentration,
+    not a stock concentration or inferred amount to add.", "stage": "study-specific
+    D. salina CCAP19/18 cultivation in 2ASW"}], "variant_index": 2, "variant_name":
+    "2asw_1_5_m_nacl"}, {"ingredient_changes": [{"action": "REPLACE", "evidence":
+    [{"explanation": "Materials and Methods, microalgal strains and maintenance media;
+    primary source inspected 2026-11-16. Undefined sea-salt mixture replaces NaCl.
+    No salt-product identity, constituent expansion, NaCl-equivalent molarity or parent
+    seawater equivalence is claimed.", "reference": "doi:10.3389/fenrg.2015.00020",
+    "snippet": "33.6 g/L of sea salts were used in place of the NaCl", "supports":
+    "SUPPORT"}], "ingredient": {"concentration": {"unit": "G_PER_L", "value": "33.6"},
+    "notes": "Undefined sea-salt mixture replaces NaCl. No salt-product identity,
+    constituent expansion, NaCl-equivalent molarity or parent seawater equivalence
+    is claimed.", "preferred_term": "sea salts"}, "notes": "A scoped change event,
+    not a fully expanded variant or a parent-formulation amendment. No chemical identifier
+    is inferred.", "replaced_ingredient": {"preferred_term": "NaCl"}, "source_modification_index":
+    0, "source_text": "Use the study-reported 33.6 g/L sea salts in place of NaCl;
+    this is an undefined sea-salt mixture, not 33.6 g/L pure sodium chloride.", "stage":
+    "modified 2ASW maintenance medium for the study''s Dunaliella cultures"}], "variant_index":
+    3, "variant_name": "2asw_sea_salt_substitution_33_6_g_l"}]}'
 references:
 - reference: CCAP:2ASW
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_2ASW.pdf
@@ -414,6 +467,33 @@ variants:
     supports: SUPPORT
     explanation: Tsuji et al. report Chaetoceros gracilis UTEX LB2658 growth and carbon-concentrating-mechanism
       experiments in modified F/2ASW with defined sodium manipulations.
+  ingredient_changes:
+  - action: SET_CONCENTRATION
+    ingredient:
+      preferred_term: NaCl
+      concentration:
+        value: 0; 10; 20; 50; 200; 423
+        unit: MILLIMOLAR
+      notes: Discrete alternative NaCl settings; zero means no NaCl addition. These
+        are not summed or treated as a continuous dose. Trace salts contribute background
+        sodium; no total sodium concentration or universal parent equivalence asserted.
+    stage: separate sodium-response modified F/2ASW formulations
+    evidence:
+    - reference: doi:10.1007/s10126-021-10037-4
+      supports: SUPPORT
+      snippet: '0, 10, 20, 50, 200, or 423
+
+
+        mM'
+      explanation: Table S1, component rows and sodium footnotes; primary source inspected
+        2026-11-16. Discrete alternative NaCl settings; zero means no NaCl addition.
+        These are not summed or treated as a continuous dose. Trace salts contribute
+        background sodium; no total sodium concentration or universal parent equivalence
+        asserted.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 1
+    source_text: Manipulate sodium by changing NaCl added to the basal artificial seawater.
 - name: 2asw_1_5_m_nacl
   description: Study-specific 2ASW reported by Liang et al. (2023). Only the explicitly
     stated NaCl concentration and algal cultivation context are resolved; full Table
@@ -438,6 +518,29 @@ variants:
       cultivation applies to this study formulation only. Table S2 is uninspected.
       Taxonomy checked against NCBI EFetch archived 2026-10-14 at references_cache/papers/taxonomy/2asw-20261014.xml.
       Species mappings do not verify exact strain identity. '
+  ingredient_changes:
+  - action: SET_CONCENTRATION
+    ingredient:
+      preferred_term: NaCl
+      concentration:
+        value: '1.5'
+        unit: MOLAR
+      notes: Source states medium concentration, not stock strength or a dose increment;
+        other constituents and parent equivalence remain unresolved.
+    stage: study-specific D. salina CCAP19/18 cultivation in 2ASW
+    evidence:
+    - reference: doi:10.1128/spectrum.00069-23
+      supports: SUPPORT
+      snippet: 1.5 M NaCl
+      explanation: Materials and Methods, algal strains and cultivation; primary source
+        inspected 2026-11-16. Source states medium concentration, not stock strength
+        or a dose increment; other constituents and parent equivalence remain unresolved.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 0
+    source_text: The study reports 1.5 M NaCl in its 2ASW culture medium. This is a
+      reported medium concentration, not a stock concentration or inferred amount to
+      add.
 - name: 2asw_sea_salt_substitution_33_6_g_l
   relationship: SUBSTITUTED_COMPONENT_VARIANT
   description: Modified 2ASW maintenance medium in Hiibel et al. (2015), with sea
@@ -461,6 +564,31 @@ variants:
       2ASW to the 18 Dunaliella strain rows in Table 1, whose scientific names and
       taxonomy qualifications are preserved in this paper''s citation notes. Centrate
       results are not parent or maintenance-medium growth metrics.'
+  ingredient_changes:
+  - action: REPLACE
+    ingredient:
+      preferred_term: sea salts
+      concentration:
+        value: '33.6'
+        unit: G_PER_L
+      notes: Undefined sea-salt mixture replaces NaCl. No salt-product identity, constituent
+        expansion, NaCl-equivalent molarity or parent seawater equivalence is claimed.
+    stage: modified 2ASW maintenance medium for the study's Dunaliella cultures
+    evidence:
+    - reference: doi:10.3389/fenrg.2015.00020
+      supports: SUPPORT
+      snippet: 33.6 g/L of sea salts were used in place of the NaCl
+      explanation: Materials and Methods, microalgal strains and maintenance media;
+        primary source inspected 2026-11-16. Undefined sea-salt mixture replaces NaCl.
+        No salt-product identity, constituent expansion, NaCl-equivalent molarity or
+        parent seawater equivalence is claimed.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    replaced_ingredient:
+      preferred_term: NaCl
+    source_modification_index: 0
+    source_text: Use the study-reported 33.6 g/L sea salts in place of NaCl; this is
+      an undefined sea-salt mixture, not 33.6 g/L pure sodium chloride.
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: Dunaliella salina

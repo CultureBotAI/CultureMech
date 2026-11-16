@@ -226,6 +226,25 @@ curation_history:
     doi:10.1104/pp.113.233718; doi:10.1104/pp.16.01628
   changes: Added 5 bibliography entries with source archive/Markdown paths; no variants,
     target organisms, concentration evidence or amount changes.
+- timestamp: '2026-11-16T21:33:24.007303+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "053b2ac82a0c3681d84f53714b129366f2e7b2f9f2d8da1acc6b72c471491e88",
+    "variants": [{"ingredient_changes": [{"action": "ADD", "evidence": [{"explanation":
+    "Directions, optional agar instruction; primary UTEX collection page inspected
+    2026-11-16. This ingredient occurrence is scoped to the optional variant, not
+    a change to the liquid parent.", "reference": "https://utex.org/products/polytomella-medium",
+    "snippet": "add 15 grams of agar", "supports": "SUPPORT"}], "ingredient": {"notes":
+    "Literal batch input: 15 g agar added to 1 L prepared liquid; do not mix. Retain
+    this preparation basis without inferring a measured volume after agar addition.",
+    "preferred_term": "agar"}, "source_modification_index": 0, "source_text": "After
+    making up the liquid recipe to 1 L, add 15 g agar; do not mix.", "stage": "optional
+    agar addition before autoclaving"}], "variant_index": 0, "variant_name": "Polytomella
+    Medium with agar"}]}'
 references:
 - reference: UTEX:polytomella-medium
 - reference: https://utex.org/products/polytomella-medium
@@ -449,3 +468,20 @@ variants:
     explanation: Supports variants[0].modifications only. The source labels this the
       1.5% agar formulation; no new measured final volume after agar addition is claimed.
       No agar is added to the liquid parent.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: agar
+      notes: 'Literal batch input: 15 g agar added to 1 L prepared liquid; do not mix.
+        Retain this preparation basis without inferring a measured volume after agar
+        addition.'
+    stage: optional agar addition before autoclaving
+    evidence:
+    - reference: https://utex.org/products/polytomella-medium
+      supports: SUPPORT
+      snippet: add 15 grams of agar
+      explanation: Directions, optional agar instruction; primary UTEX collection page
+        inspected 2026-11-16. This ingredient occurrence is scoped to the optional variant,
+        not a change to the liquid parent.
+    source_modification_index: 0
+    source_text: After making up the liquid recipe to 1 L, add 15 g agar; do not mix.

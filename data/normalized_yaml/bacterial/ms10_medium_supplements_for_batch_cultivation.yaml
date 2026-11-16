@@ -320,6 +320,30 @@ curation_history:
     or generated publication.
   source: doi:10.1128/AEM.69.6.3462-3468.2003; doi:10.1111/j.1365-2672.1995.tb03131.x;
     doi:10.1128/JB.01768-06
+- timestamp: '2026-11-16T21:33:14.252315+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "575937e6b9739016d8b43f48ea23efba290d69a3445c311bc95223991cc18049",
+    "variants": [{"ingredient_changes": [{"action": "REPLACE", "evidence": [{"explanation":
+    "Materials and Methods, Strain and growth conditions. Primary source inspected
+    2026-11-16; supports this source-scoped variant assertion, not equivalence of
+    the whole parent recipe. Nordkvist original ASM Methods, Strain and growth conditions;
+    subscripts/superscripts rendered in plain text. Hydration not specified. This
+    supplement applies to the defined MS10 culture medium. Exact excerpt clarification
+    for issue763; scientific payload unchanged.", "reference": "doi:10.1128/AEM.69.6.3462-3468.2003",
+    "snippet": "MnSO4 (1.25 × 10−5 g · liter−1)", "supports": "SUPPORT"}], "ingredient":
+    {"concentration": {"unit": "G_PER_L", "value": "1.25e-5"}, "notes": "Hydrate not
+    specified; retain reported mass concentration without molar conversion.", "preferred_term":
+    "MnSO4"}, "replaced_ingredient": {"notes": "Displaced parent descriptor; not a
+    positive variant ingredient.", "preferred_term": "Manganese chloride"}, "source_modification_index":
+    0, "source_text": "Use source-specified MnSO4 at 1.25e-5 g/liter, not the parent''s
+    manganese chloride. Hydration is not specified; no molar conversion is applied.",
+    "stage": "microaerobic reactor medium preparation"}], "variant_index": 0, "variant_name":
+    "Nordkvist 2003 reported microaerobic MS10 with manganese sulfate"}]}'
 media_term:
   preferred_term: MediaDB Medium 413
   term:
@@ -435,6 +459,32 @@ variants:
       concentrations is unavailable. Do not automatically divide these parent amounts
       or import preculture buffering into the reactor. Chemical hydrates, stereochemistry,
       and the generic parent filter-sterilization step remain unverified. '
+  ingredient_changes:
+  - action: REPLACE
+    ingredient:
+      preferred_term: MnSO4
+      notes: Hydrate not specified; retain reported mass concentration without molar
+        conversion.
+      concentration:
+        value: '1.25e-5'
+        unit: G_PER_L
+    stage: microaerobic reactor medium preparation
+    evidence:
+    - reference: doi:10.1128/AEM.69.6.3462-3468.2003
+      supports: SUPPORT
+      snippet: MnSO4 (1.25 × 10−5 g · liter−1)
+      explanation: Materials and Methods, Strain and growth conditions. Primary source
+        inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence
+        of the whole parent recipe. Nordkvist original ASM Methods, Strain and growth
+        conditions; subscripts/superscripts rendered in plain text. Hydration not specified.
+        This supplement applies to the defined MS10 culture medium. Exact excerpt clarification
+        for issue763; scientific payload unchanged.
+    replaced_ingredient:
+      preferred_term: Manganese chloride
+      notes: Displaced parent descriptor; not a positive variant ingredient.
+    source_modification_index: 0
+    source_text: Use source-specified MnSO4 at 1.25e-5 g/liter, not the parent's manganese
+      chloride. Hydration is not specified; no molar conversion is applied.
 target_organisms:
 - preferred_term: Lactococcus cremoris subsp. cremoris MG1363
   strain: MG1363

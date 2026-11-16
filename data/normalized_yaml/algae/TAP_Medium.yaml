@@ -371,6 +371,29 @@ curation_history:
   notes: UTEX prepares TAP Medium from Beijerinck's Solution, Phosphate Buffer Stock
     Solution, Hunter's Trace Stock Solution, and Tris Acetate Stock Solution added
     at source-stated volumes.
+- timestamp: '2026-11-16T21:36:31.375307+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "8918ca273b10dc6cce0292e504c741e0ec65b68c7feee2c65098180a8b3ed0f6",
+    "variants": [{"ingredient_changes": [{"action": "REPLACE", "evidence": [{"explanation":
+    "Primary article abstract, HAc-NaAc replacement of Tris; primary source inspected
+    2026-11-16. Primary abstract explicitly says HAc-NaAc replaces Tris. Keep the
+    source abbreviation at mixture level; no acetate salt hydration, buffer ratio,
+    dose, final concentration or full TAP-equivalence inferred.", "reference": "doi:10.1016/j.biortech.2025.132777",
+    "snippet": "HAc-NaAc was used to balance the pH of the culture medium and replace
+    tris", "supports": "SUPPORT"}], "ingredient": {"notes": "Primary abstract explicitly
+    says HAc-NaAc replaces Tris. Keep the source abbreviation at mixture level; no
+    acetate salt hydration, buffer ratio, dose, final concentration or full TAP-equivalence
+    inferred.", "preferred_term": "HAc-NaAc buffer"}, "notes": "A scoped change event,
+    not a fully expanded variant or a parent-formulation amendment. No chemical identifier
+    is inferred.", "replaced_ingredient": {"preferred_term": "Tris"}, "source_modification_index":
+    1, "source_text": "Replace Tris in TAP medium with HAc-NaAc for pH balance.",
+    "stage": "Ab-WSF medium pH-balancing formulation"}], "variant_index": 1, "variant_name":
+    "ab_wsf_tap_derived_chlorella_sorokiniana"}]}'
 references:
 - reference: UTEX:tap-medium
 - reference: https://utex.org/products/tap-medium
@@ -412,6 +435,29 @@ variants:
       in TAP were replaced by water-soluble fertilizer (WSF).
     explanation: Literature evidence describes a TAP-derived formulation variant for
       Chlorella sorokiniana cultivation.
+  ingredient_changes:
+  - action: REPLACE
+    ingredient:
+      preferred_term: HAc-NaAc buffer
+      notes: Primary abstract explicitly says HAc-NaAc replaces Tris. Keep the source
+        abbreviation at mixture level; no acetate salt hydration, buffer ratio, dose,
+        final concentration or full TAP-equivalence inferred.
+    stage: Ab-WSF medium pH-balancing formulation
+    evidence:
+    - reference: doi:10.1016/j.biortech.2025.132777
+      supports: SUPPORT
+      snippet: HAc-NaAc was used to balance the pH of the culture medium and replace
+        tris
+      explanation: Primary article abstract, HAc-NaAc replacement of Tris; primary source
+        inspected 2026-11-16. Primary abstract explicitly says HAc-NaAc replaces Tris.
+        Keep the source abbreviation at mixture level; no acetate salt hydration, buffer
+        ratio, dose, final concentration or full TAP-equivalence inferred.
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    replaced_ingredient:
+      preferred_term: Tris
+    source_modification_index: 1
+    source_text: Replace Tris in TAP medium with HAc-NaAc for pH balance.
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: Chlorella vulgaris

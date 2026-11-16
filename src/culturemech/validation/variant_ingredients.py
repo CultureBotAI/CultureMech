@@ -15,15 +15,10 @@ from linkml.validator.report import Severity, ValidationResult
 
 _ACTIONS = {"ADD", "REMOVE", "REPLACE", "SET_CONCENTRATION"}
 _SUPPORTS = {"SUPPORT", "PARTIAL", "REFUTE", "NO_EVIDENCE", "WRONG_STATEMENT"}
-_NARROW_RELATIONSHIPS = {
-    "SOURCE_DUPLICATE": set(),
-    "SUPPLEMENTED_VARIANT": {"ADD"},
-    "OMITTED_COMPONENT_VARIANT": {"REMOVE"},
-    "CONCENTRATION_VARIANT": {"SET_CONCENTRATION"},
-}
-# SUBSTITUTED_COMPONENT_VARIANT describes a recipe-level relationship. An
-# alternative formulation can contain additions, omissions and dose changes;
-# only an individual REPLACE event claims a one-to-one replacement (#761).
+# Relationships describe recipes, while actions describe source-bound events
+# at explicit stages. An added dose does not assert a resulting total, and a
+# supplemented/omitted/substituted formulation can document mixed operations
+# (#761, #768). Only SOURCE_DUPLICATE explicitly asserts no formulation change.
 
 
 @dataclass(frozen=True)
@@ -56,12 +51,7 @@ def _change_issues(change: Any, variant: dict[str, Any], path: str) -> list[Vari
         add("action", "variant_action", "expected ADD, REMOVE, REPLACE or SET_CONCENTRATION")
         action = None
     relationship = variant.get("relationship")
-    if (
-        isinstance(relationship, str)
-        and relationship in _NARROW_RELATIONSHIPS
-        and action is not None
-        and action not in _NARROW_RELATIONSHIPS[relationship]
-    ):
+    if relationship == "SOURCE_DUPLICATE" and action is not None:
         add("action", "variant_relationship", f"{action} contradicts {relationship}")
     if not _nonblank(change.get("stage")):
         add("stage", "variant_stage", "nonblank preparation or experimental stage is required")

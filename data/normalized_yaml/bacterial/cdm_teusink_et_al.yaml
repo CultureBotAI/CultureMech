@@ -461,6 +461,31 @@ curation_history:
     ingredients, generic preparation and prior history; no parent concentration certification
     or generated publication.
   source: doi:10.1128/AEM.71.11.7253-7262.2005; doi:10.1128/jb.170.2.700-707.1988
+- timestamp: '2026-11-16T21:33:00.194936+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "f3ae005ac2d08bdb104330cca0303979ebbf0c3ade4eade7c0e588919533b08f",
+    "variants": [{"ingredient_changes": [{"action": "SET_CONCENTRATION", "evidence":
+    [{"explanation": "Table 1, concentration column and footnotes a-b. Supports only
+    the named descriptor/event at the stated stage. Direct Table 1 mass concentration
+    under the quoted column heading ''Concn (g/liter)'', no molar conversion. The
+    source''s complete/minimal subset boundary remains as stated in the variant; other
+    amounts are not certified. Source inspected 2026-11-16; SHA256 3b4288d316e061cdad56879cb8a30c2cccff1fe3361eb0be71778d49c9dbef91.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "doi:10.1128/AEM.71.11.7253-7262.2005", "snippet": "Ca-(d)-(+)-pantothenate
+    (vitamin B5) 0.001", "supports": "SUPPORT"}], "ingredient": {"concentration":
+    {"unit": "G_PER_L", "value": "0.001"}, "notes": "Direct Table 1 mass concentration
+    under the quoted column heading ''Concn (g/liter)'', no molar conversion. The
+    source''s complete/minimal subset boundary remains as stated in the variant; other
+    amounts are not certified.", "preferred_term": "calcium D-pantothenate"}, "source_modification_index":
+    0, "source_text": "Use the Table 1 Ca-(D)-(+)-pantothenate dose of 0.001 g/liter,
+    rather than certifying the parent''s 0.00456 mM calcium pantothenate.", "stage":
+    "reported Table 1 medium composition"}], "variant_index": 0, "variant_name": "Teusink
+    2005 Table 1 complete CDM on reported mass basis"}]}'
 media_term:
   preferred_term: MediaDB Medium 1
   term:
@@ -564,6 +589,30 @@ variants:
       generic parent preparation remain unverified. Poolman 1988 is the cited starting
       protocol; its separate lactococcal batch/continuous overrides are not inherited
       wholesale. '
+  ingredient_changes:
+  - action: SET_CONCENTRATION
+    ingredient:
+      preferred_term: calcium D-pantothenate
+      concentration:
+        value: '0.001'
+        unit: G_PER_L
+      notes: Direct Table 1 mass concentration under the quoted column heading 'Concn
+        (g/liter)', no molar conversion. The source's complete/minimal subset boundary
+        remains as stated in the variant; other amounts are not certified.
+    stage: reported Table 1 medium composition
+    source_modification_index: 0
+    source_text: Use the Table 1 Ca-(D)-(+)-pantothenate dose of 0.001 g/liter, rather
+      than certifying the parent's 0.00456 mM calcium pantothenate.
+    evidence:
+    - reference: doi:10.1128/AEM.71.11.7253-7262.2005
+      supports: SUPPORT
+      snippet: Ca-(d)-(+)-pantothenate (vitamin B5) 0.001
+      explanation: Table 1, concentration column and footnotes a-b. Supports only the
+        named descriptor/event at the stated stage. Direct Table 1 mass concentration
+        under the quoted column heading 'Concn (g/liter)', no molar conversion. The
+        source's complete/minimal subset boundary remains as stated in the variant;
+        other amounts are not certified. Source inspected 2026-11-16; SHA256 3b4288d316e061cdad56879cb8a30c2cccff1fe3361eb0be71778d49c9dbef91.
+        No parent formulation, growth, ontology identity, or missing dose is inferred.
 target_organisms:
 - preferred_term: Lactiplantibacillus plantarum WCFS1
   strain: WCFS1

@@ -126,6 +126,26 @@ curation_history:
     "status": "add"}], "counts": {"bibliographic_entries_enriched": 1, "ingredient_context_notes_corrected":
     1, "ingredient_dose_basis_corrections": 1, "inline_variant_options_added": 1,
     "new_curation_history": 1, "new_evidence": 2}}'
+- timestamp: '2026-11-16T21:33:23.961850+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "053b2ac82a0c3681d84f53714b129366f2e7b2f9f2d8da1acc6b72c471491e88",
+    "variants": [{"ingredient_changes": [{"action": "ADD", "evidence": [{"explanation":
+    "Directions, optional agar instruction; primary UTEX collection page inspected
+    2026-11-16. This ingredient occurrence is scoped to the optional variant, not
+    a change to the liquid parent.", "reference": "https://utex.org/products/malt-medium",
+    "snippet": "add 7.5 g of agar", "supports": "SUPPORT"}], "ingredient": {"notes":
+    "Literal batch input: 7.5 g agar added to batch starting with 500 mL dH2O; do
+    not mix. Retain this preparation basis without inferring a measured volume after
+    agar addition.", "preferred_term": "agar"}, "source_modification_index": 0, "source_text":
+    "Add 7.5 g agar to the source batch starting with 500 mL dH2O; do not mix. This
+    is an input dose, not a measured final-volume concentration.", "stage": "optional
+    agar addition before autoclaving"}], "variant_index": 0, "variant_name": "Malt
+    Medium with agar"}]}'
 references:
 - reference: UTEX:malt-medium
 - reference: https://utex.org/products/malt-medium
@@ -151,3 +171,21 @@ variants:
     explanation: Supports variants[0].modifications only. The source labels this the
       1.5% agar formulation; no new measured final volume after agar addition is claimed.
       No agar is added to the liquid parent.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: agar
+      notes: 'Literal batch input: 7.5 g agar added to batch starting with 500 mL dH2O;
+        do not mix. Retain this preparation basis without inferring a measured volume
+        after agar addition.'
+    stage: optional agar addition before autoclaving
+    evidence:
+    - reference: https://utex.org/products/malt-medium
+      supports: SUPPORT
+      snippet: add 7.5 g of agar
+      explanation: Directions, optional agar instruction; primary UTEX collection page
+        inspected 2026-11-16. This ingredient occurrence is scoped to the optional variant,
+        not a change to the liquid parent.
+    source_modification_index: 0
+    source_text: Add 7.5 g agar to the source batch starting with 500 mL dH2O; do not
+      mix. This is an input dose, not a measured final-volume concentration.

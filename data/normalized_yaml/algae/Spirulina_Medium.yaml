@@ -463,6 +463,34 @@ curation_history:
   notes: UTEX lists Spirulina Medium as an alkaline modification of SAG medium prepared
     by sterilizing separate carbonate/phosphate and nitrate/salt solutions before
     mixing.
+- timestamp: '2026-11-16T21:36:31.302049+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "8918ca273b10dc6cce0292e504c741e0ec65b68c7feee2c65098180a8b3ed0f6",
+    "variants": [{"ingredient_changes": [{"action": "ADD", "evidence": [{"explanation":
+    "Materials and methods, filtered effluent preparation and timed additions; primary
+    source inspected 2026-11-16. Primary Methods: filtered plant-residue digester
+    effluent in carbonate buffer;1.5%(v/v) at start, a similar volume after3days,3%
+    of initial volume after6days. These sequential additions must not become a6% initial
+    concentration. No constituent expansion or assertion that all canonical Spirulina
+    ingredients remain present.", "reference": "doi:10.1007/s00449-016-1726-2", "snippet":
+    "1.5% (v/v) of the effluent was added at the start as a nutrient source, a similar
+    volume of effluent was added after 3 days of growth, and a final addition of 3%
+    (v/v) of the initial volume was added after 6 days of growth", "supports": "SUPPORT"}],
+    "ingredient": {"notes": "Primary Methods: filtered plant-residue digester effluent
+    in carbonate buffer;1.5%(v/v) at start, a similar volume after3days,3% of initial
+    volume after6days. These sequential additions must not become a6% initial concentration.
+    No constituent expansion or assertion that all canonical Spirulina ingredients
+    remain present.", "preferred_term": "filtered biogas-process effluent"}, "notes":
+    "A scoped change event, not a fully expanded variant or a parent-formulation amendment.
+    No chemical identifier is inferred.", "source_modification_index": 0, "source_text":
+    "Use effluent from biogas production as the nutrient source.", "stage": "effluent-based
+    alternative Spirulina culture with sequential nutrient feeding"}], "variant_index":
+    0, "variant_name": "biogas_effluent_based_arthrospira_platensis"}]}'
 references:
 - reference: UTEX:spirulina-medium
 - reference: https://utex.org/products/spirulina-medium
@@ -490,6 +518,32 @@ variants:
       platensis) and compared with conventional Spirulina medium.
     explanation: Literature evidence describes an effluent-based medium variant compared
       with the conventional Spirulina parent medium.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: filtered biogas-process effluent
+      notes: 'Primary Methods: filtered plant-residue digester effluent in carbonate
+        buffer;1.5%(v/v) at start, a similar volume after3days,3% of initial volume
+        after6days. These sequential additions must not become a6% initial concentration.
+        No constituent expansion or assertion that all canonical Spirulina ingredients
+        remain present.'
+    stage: effluent-based alternative Spirulina culture with sequential nutrient feeding
+    evidence:
+    - reference: doi:10.1007/s00449-016-1726-2
+      supports: SUPPORT
+      snippet: 1.5% (v/v) of the effluent was added at the start as a nutrient source,
+        a similar volume of effluent was added after 3 days of growth, and a final addition
+        of 3% (v/v) of the initial volume was added after 6 days of growth
+      explanation: 'Materials and methods, filtered effluent preparation and timed additions;
+        primary source inspected 2026-11-16. Primary Methods: filtered plant-residue
+        digester effluent in carbonate buffer;1.5%(v/v) at start, a similar volume after3days,3%
+        of initial volume after6days. These sequential additions must not become a6%
+        initial concentration. No constituent expansion or assertion that all canonical
+        Spirulina ingredients remain present.'
+    notes: A scoped change event, not a fully expanded variant or a parent-formulation
+      amendment. No chemical identifier is inferred.
+    source_modification_index: 0
+    source_text: Use effluent from biogas production as the nutrient source.
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: Arthrospira platensis

@@ -176,6 +176,57 @@ curation_history:
   notes: Added the NBRC Medium 1002 source term, grounded the recovered Acidimicrobium
     Medium formula, and converted its pH, heterotrophic, and autotrophic source prose
     into structured preparation and variant fields.
+- timestamp: '2026-11-16T21:32:59.889430+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "f3ae005ac2d08bdb104330cca0303979ebbf0c3ade4eade7c0e588919533b08f",
+    "variants": [{"ingredient_changes": [{"action": "ADD", "evidence": [{"explanation":
+    "Heterotrophic and autotrophic preparation alternatives. Supports only the named
+    descriptor/event at the stated stage.  Source inspected 2026-11-16; SHA256 046c306f82ac74274e54e2bae9c5e509eb66c0ddbcca159d434b694f0f88786e.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1002",
+    "snippet": "10 mg/l of FeSO4·7H2O", "supports": "SUPPORT"}], "ingredient": {"concentration":
+    {"unit": "MG_PER_L", "value": "10"}, "preferred_term": "iron(II) sulfate heptahydrate"},
+    "source_modification_index": 0, "source_text": "Add 10 mg/L FeSO4·7H2O to the
+    medium.", "stage": "heterotrophic medium preparation"}, {"action": "ADD", "evidence":
+    [{"explanation": "Heterotrophic and autotrophic preparation alternatives. Supports
+    only the named descriptor/event at the stated stage. Final-medium concentration
+    stated directly; stock concentration and dose not inferred. Source inspected 2026-11-16;
+    SHA256 046c306f82ac74274e54e2bae9c5e509eb66c0ddbcca159d434b694f0f88786e. No parent
+    formulation, growth, ontology identity, or missing dose is inferred.", "reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1002", "snippet":
+    "0.25 g/l", "supports": "SUPPORT"}], "ingredient": {"concentration": {"unit":
+    "G_PER_L", "value": "0.25"}, "notes": "Final-medium concentration stated directly;
+    stock concentration and dose not inferred.", "preferred_term": "yeast extract"},
+    "source_modification_index": 1, "source_text": "After autoclaving, add yeast extract
+    from a sterile stock solution to 0.25 g/L final concentration.", "stage": "heterotrophic
+    post-autoclave sterile-stock addition"}], "variant_index": 0, "variant_name":
+    "nbrc_1002_heterotrophic_yeast_extract"}, {"ingredient_changes": [{"action": "ADD",
+    "evidence": [{"explanation": "Heterotrophic and autotrophic preparation alternatives.
+    Supports only the named descriptor/event at the stated stage.  Source inspected
+    2026-11-16; SHA256 046c306f82ac74274e54e2bae9c5e509eb66c0ddbcca159d434b694f0f88786e.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1002",
+    "snippet": "13.9 g/l of FeSO4·7H2O", "supports": "SUPPORT"}], "ingredient": {"concentration":
+    {"unit": "G_PER_L", "value": "13.9"}, "preferred_term": "iron(II) sulfate heptahydrate"},
+    "source_modification_index": 0, "source_text": "Add 13.9 g/L FeSO4·7H2O to the
+    medium.", "stage": "autotrophic medium preparation"}, {"action": "ADD", "evidence":
+    [{"explanation": "Heterotrophic and autotrophic preparation alternatives. Supports
+    only the named descriptor/event at the stated stage. Titrant identity only; pH
+    1.7 is a target, not an acid dose. Strength and amount unspecified. Source inspected
+    2026-11-16; SHA256 046c306f82ac74274e54e2bae9c5e509eb66c0ddbcca159d434b694f0f88786e.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1002",
+    "snippet": "pH to 1.7 with H2SO4", "supports": "SUPPORT"}], "ingredient": {"notes":
+    "Titrant identity only; pH 1.7 is a target, not an acid dose. Strength and amount
+    unspecified.", "preferred_term": "sulfuric acid"}, "source_modification_index":
+    1, "source_text": "Adjust medium pH to 1.7 with H2SO4 prior to autoclaving.",
+    "stage": "autotrophic pH adjustment before autoclaving"}], "variant_index": 1,
+    "variant_name": "nbrc_1002_autotrophic_ferrous_sulfate"}]}'
 notes: 'Source: NBRC Medium 1002 | Link: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1002
 
 
@@ -199,6 +250,45 @@ variants:
     supports: SUPPORT
     explanation: The NBRC Medium 1002 catalogue entry lists this separate heterotrophic
       growth condition.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: iron(II) sulfate heptahydrate
+      concentration:
+        value: '10'
+        unit: MG_PER_L
+    stage: heterotrophic medium preparation
+    source_modification_index: 0
+    source_text: Add 10 mg/L FeSO4·7H2O to the medium.
+    evidence:
+    - reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1002
+      supports: SUPPORT
+      snippet: 10 mg/l of FeSO4·7H2O
+      explanation: Heterotrophic and autotrophic preparation alternatives. Supports
+        only the named descriptor/event at the stated stage.  Source inspected 2026-11-16;
+        SHA256 046c306f82ac74274e54e2bae9c5e509eb66c0ddbcca159d434b694f0f88786e. No
+        parent formulation, growth, ontology identity, or missing dose is inferred.
+  - action: ADD
+    ingredient:
+      preferred_term: yeast extract
+      concentration:
+        value: '0.25'
+        unit: G_PER_L
+      notes: Final-medium concentration stated directly; stock concentration and dose
+        not inferred.
+    stage: heterotrophic post-autoclave sterile-stock addition
+    source_modification_index: 1
+    source_text: After autoclaving, add yeast extract from a sterile stock solution
+      to 0.25 g/L final concentration.
+    evidence:
+    - reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1002
+      supports: SUPPORT
+      snippet: 0.25 g/l
+      explanation: Heterotrophic and autotrophic preparation alternatives. Supports
+        only the named descriptor/event at the stated stage. Final-medium concentration
+        stated directly; stock concentration and dose not inferred. Source inspected
+        2026-11-16; SHA256 046c306f82ac74274e54e2bae9c5e509eb66c0ddbcca159d434b694f0f88786e.
+        No parent formulation, growth, ontology identity, or missing dose is inferred.
 - name: nbrc_1002_autotrophic_ferrous_sulfate
   relationship: SUPPLEMENTED_VARIANT
   description: Autotrophic NBRC Medium 1002 condition supplemented with a high ferrous
@@ -212,6 +302,41 @@ variants:
     supports: SUPPORT
     explanation: The NBRC Medium 1002 catalogue entry lists this separate autotrophic
       growth condition.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: iron(II) sulfate heptahydrate
+      concentration:
+        value: '13.9'
+        unit: G_PER_L
+    stage: autotrophic medium preparation
+    source_modification_index: 0
+    source_text: Add 13.9 g/L FeSO4·7H2O to the medium.
+    evidence:
+    - reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1002
+      supports: SUPPORT
+      snippet: 13.9 g/l of FeSO4·7H2O
+      explanation: Heterotrophic and autotrophic preparation alternatives. Supports
+        only the named descriptor/event at the stated stage.  Source inspected 2026-11-16;
+        SHA256 046c306f82ac74274e54e2bae9c5e509eb66c0ddbcca159d434b694f0f88786e. No
+        parent formulation, growth, ontology identity, or missing dose is inferred.
+  - action: ADD
+    ingredient:
+      preferred_term: sulfuric acid
+      notes: Titrant identity only; pH 1.7 is a target, not an acid dose. Strength and
+        amount unspecified.
+    stage: autotrophic pH adjustment before autoclaving
+    source_modification_index: 1
+    source_text: Adjust medium pH to 1.7 with H2SO4 prior to autoclaving.
+    evidence:
+    - reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1002
+      supports: SUPPORT
+      snippet: pH to 1.7 with H2SO4
+      explanation: Heterotrophic and autotrophic preparation alternatives. Supports
+        only the named descriptor/event at the stated stage. Titrant identity only;
+        pH 1.7 is a target, not an acid dose. Strength and amount unspecified. Source
+        inspected 2026-11-16; SHA256 046c306f82ac74274e54e2bae9c5e509eb66c0ddbcca159d434b694f0f88786e.
+        No parent formulation, growth, ontology identity, or missing dose is inferred.
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated

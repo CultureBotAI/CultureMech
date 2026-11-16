@@ -157,6 +157,26 @@ curation_history:
     publication year and DOI not established.", "reference": "https://utex.org/products/volvocacean-medium",
     "title": "Volvocacean Medium | UTEX Culture Collection of Algae"}, "old": {"reference":
     "https://utex.org/products/volvocacean-medium"}, "pointer": ["references", 1]}]}'
+- timestamp: '2026-11-16T21:33:24.122122+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "053b2ac82a0c3681d84f53714b129366f2e7b2f9f2d8da1acc6b72c471491e88",
+    "variants": [{"ingredient_changes": [{"action": "ADD", "evidence": [{"explanation":
+    "Directions, optional agar instruction; primary UTEX collection page inspected
+    2026-11-16. This ingredient occurrence is scoped to the optional variant, not
+    a change to the liquid parent.", "reference": "https://utex.org/products/volvocacean-medium",
+    "snippet": "add 10.0 grams of agar", "supports": "SUPPORT"}], "ingredient": {"notes":
+    "Literal batch input: 10.0 g agar added to 800 mL Waris plus 200 mL Euglena medium;
+    do not mix. Retain this preparation basis without inferring a measured volume
+    after agar addition.", "preferred_term": "agar"}, "source_modification_index":
+    0, "source_text": "After combining the 800 mL Waris and 200 mL Euglena portions,
+    add 10.0 g agar to the flask without stirring; then cover and autoclave.", "stage":
+    "optional agar addition before autoclaving"}], "variant_index": 0, "variant_name":
+    "Optional agar formulation"}]}'
 references:
 - reference: UTEX:volvocacean-medium
 - reference: https://utex.org/products/volvocacean-medium
@@ -206,3 +226,21 @@ variants:
       specifies "10.0 grams" and "do not mix."; Directions 5 specifies "Cover and
       autoclave.". The amount is added after the stated 1 L liquid blend, not asserted
       as a measured final-volume concentration.'
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: agar
+      notes: 'Literal batch input: 10.0 g agar added to 800 mL Waris plus 200 mL Euglena
+        medium; do not mix. Retain this preparation basis without inferring a measured
+        volume after agar addition.'
+    stage: optional agar addition before autoclaving
+    evidence:
+    - reference: https://utex.org/products/volvocacean-medium
+      supports: SUPPORT
+      snippet: add 10.0 grams of agar
+      explanation: Directions, optional agar instruction; primary UTEX collection page
+        inspected 2026-11-16. This ingredient occurrence is scoped to the optional variant,
+        not a change to the liquid parent.
+    source_modification_index: 0
+    source_text: After combining the 800 mL Waris and 200 mL Euglena portions, add 10.0
+      g agar to the flask without stirring; then cover and autoclave.

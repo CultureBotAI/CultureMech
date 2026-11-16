@@ -47,8 +47,8 @@
                 {
                   "reference": "doi:10.1186/1475-2859-8-29",
                   "supports": "SUPPORT",
-                  "snippet": "glucose",
-                  "explanation": "Additional file3, cellsA13–A14. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "50.0g glucose · H2O",
+                  "explanation": "Additional file3, cellsA13–A14. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A14; separately located A13 header: \"Chemostat medium contained per Liter\". Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "replaced_ingredient": {
@@ -72,8 +72,8 @@
                 {
                   "reference": "doi:10.1186/1475-2859-8-29",
                   "supports": "SUPPORT",
-                  "snippet": "citric acid",
-                  "explanation": "Additional file3, cellsA13,A15. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "0.9g citric acid",
+                  "explanation": "Additional file3, cellsA13,A15. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A15; separately located A13 header: \"Chemostat medium contained per Liter\". Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "replaced_ingredient": {
@@ -97,8 +97,8 @@
                 {
                   "reference": "doi:10.1186/1475-2859-8-29",
                   "supports": "SUPPORT",
-                  "snippet": "KCl",
-                  "explanation": "Additional file3, cellsA13,A16. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "1.7 g KCl",
+                  "explanation": "Additional file3, cellsA13,A16. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A16; separately located A13 header: \"Chemostat medium contained per Liter\". Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 1,
@@ -118,8 +118,8 @@
                 {
                   "reference": "doi:10.1186/1475-2859-8-29",
                   "supports": "SUPPORT",
-                  "snippet": "(NH4)2HPO4",
-                  "explanation": "Additional file3, cellsA13,A17. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "4.35 g (NH4)2HPO4",
+                  "explanation": "Additional file3, cellsA13,A17. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A17; separately located A13 header: \"Chemostat medium contained per Liter\". Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "replaced_ingredient": {
@@ -143,8 +143,8 @@
                 {
                   "reference": "doi:10.1186/1475-2859-8-29",
                   "supports": "SUPPORT",
-                  "snippet": "CaCl2",
-                  "explanation": "Additional file3, cellsA13,A18. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "0.01 g CaCl2 · 2H2O",
+                  "explanation": "Additional file3, cellsA13,A18. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A18; separately located A13 header: \"Chemostat medium contained per Liter\". Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "replaced_ingredient": {
@@ -168,8 +168,8 @@
                 {
                   "reference": "doi:10.1186/1475-2859-8-29",
                   "supports": "SUPPORT",
-                  "snippet": "MgSO4",
-                  "explanation": "Additional file3, cellsA13,A19. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "0.65 g MgSO4 · 7H2O",
+                  "explanation": "Additional file3, cellsA13,A19. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A19; separately located A13 header: \"Chemostat medium contained per Liter\". Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "replaced_ingredient": {
@@ -194,8 +194,8 @@
                 {
                   "reference": "doi:10.1186/1475-2859-8-29",
                   "supports": "SUPPORT",
-                  "snippet": "Biotin",
-                  "explanation": "Additional file3, cellsA13,A20. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "1 mL of Biotin (0.2 g L-1)",
+                  "explanation": "Additional file3, cellsA13,A20. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A20; separately located A13 header: \"Chemostat medium contained per Liter\". Parenthetical 0.2 g L-1 is the biotin stock strength; 1 mL is the stock volume added per liter of chemostat medium. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "replaced_ingredient": {
@@ -220,8 +220,8 @@
                 {
                   "reference": "doi:10.1186/1475-2859-8-29",
                   "supports": "SUPPORT",
-                  "snippet": "biotin",
-                  "explanation": "Additional file3, cellA20. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "1 mL of Biotin (0.2 g L-1)",
+                  "explanation": "Additional file3, cellA20. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A20; separately located A13 header: \"Chemostat medium contained per Liter\". Parenthetical 0.2 g L-1 is the biotin stock strength; 1 mL is the stock volume added per liter of chemostat medium. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 3,
@@ -238,8 +238,8 @@
                 {
                   "reference": "doi:10.1186/1475-2859-8-29",
                   "supports": "SUPPORT",
-                  "snippet": "stock solution",
-                  "explanation": "Additional file3, A21 and A24–A33; parent descriptor comparison. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "1.6 mL of trace salts stock solution.",
+                  "explanation": "Additional file3, A21 and A24–A33; parent descriptor comparison. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3, A13 header: \"Chemostat medium contained per Liter\". The nine old flattened descriptors are replaced as a group by this stock addition; constituent identities/stock concentrations are separately supported by A24–A33. This is not physical absence from the stock. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 4,
@@ -256,8 +256,8 @@
                 {
                   "reference": "doi:10.1186/1475-2859-8-29",
                   "supports": "SUPPORT",
-                  "snippet": "stock solution",
-                  "explanation": "Additional file3, A21 and A24–A33; parent descriptor comparison. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "1.6 mL of trace salts stock solution.",
+                  "explanation": "Additional file3, A21 and A24–A33; parent descriptor comparison. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3, A13 header: \"Chemostat medium contained per Liter\". The nine old flattened descriptors are replaced as a group by this stock addition; constituent identities/stock concentrations are separately supported by A24–A33. This is not physical absence from the stock. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 4,
@@ -274,8 +274,8 @@
                 {
                   "reference": "doi:10.1186/1475-2859-8-29",
                   "supports": "SUPPORT",
-                  "snippet": "stock solution",
-                  "explanation": "Additional file3, A21 and A24–A33; parent descriptor comparison. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "1.6 mL of trace salts stock solution.",
+                  "explanation": "Additional file3, A21 and A24–A33; parent descriptor comparison. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3, A13 header: \"Chemostat medium contained per Liter\". The nine old flattened descriptors are replaced as a group by this stock addition; constituent identities/stock concentrations are separately supported by A24–A33. This is not physical absence from the stock. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 4,
@@ -292,8 +292,8 @@
                 {
                   "reference": "doi:10.1186/1475-2859-8-29",
                   "supports": "SUPPORT",
-                  "snippet": "stock solution",
-                  "explanation": "Additional file3, A21 and A24–A33; parent descriptor comparison. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "1.6 mL of trace salts stock solution.",
+                  "explanation": "Additional file3, A21 and A24–A33; parent descriptor comparison. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3, A13 header: \"Chemostat medium contained per Liter\". The nine old flattened descriptors are replaced as a group by this stock addition; constituent identities/stock concentrations are separately supported by A24–A33. This is not physical absence from the stock. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 4,
@@ -310,8 +310,8 @@
                 {
                   "reference": "doi:10.1186/1475-2859-8-29",
                   "supports": "SUPPORT",
-                  "snippet": "stock solution",
-                  "explanation": "Additional file3, A21 and A24–A33; parent descriptor comparison. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "1.6 mL of trace salts stock solution.",
+                  "explanation": "Additional file3, A21 and A24–A33; parent descriptor comparison. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3, A13 header: \"Chemostat medium contained per Liter\". The nine old flattened descriptors are replaced as a group by this stock addition; constituent identities/stock concentrations are separately supported by A24–A33. This is not physical absence from the stock. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 4,
@@ -328,8 +328,8 @@
                 {
                   "reference": "doi:10.1186/1475-2859-8-29",
                   "supports": "SUPPORT",
-                  "snippet": "stock solution",
-                  "explanation": "Additional file3, A21 and A24–A33; parent descriptor comparison. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "1.6 mL of trace salts stock solution.",
+                  "explanation": "Additional file3, A21 and A24–A33; parent descriptor comparison. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3, A13 header: \"Chemostat medium contained per Liter\". The nine old flattened descriptors are replaced as a group by this stock addition; constituent identities/stock concentrations are separately supported by A24–A33. This is not physical absence from the stock. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 4,
@@ -346,8 +346,8 @@
                 {
                   "reference": "doi:10.1186/1475-2859-8-29",
                   "supports": "SUPPORT",
-                  "snippet": "stock solution",
-                  "explanation": "Additional file3, A21 and A24–A33; parent descriptor comparison. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "1.6 mL of trace salts stock solution.",
+                  "explanation": "Additional file3, A21 and A24–A33; parent descriptor comparison. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3, A13 header: \"Chemostat medium contained per Liter\". The nine old flattened descriptors are replaced as a group by this stock addition; constituent identities/stock concentrations are separately supported by A24–A33. This is not physical absence from the stock. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 4,
@@ -364,8 +364,8 @@
                 {
                   "reference": "doi:10.1186/1475-2859-8-29",
                   "supports": "SUPPORT",
-                  "snippet": "stock solution",
-                  "explanation": "Additional file3, A21 and A24–A33; parent descriptor comparison. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "1.6 mL of trace salts stock solution.",
+                  "explanation": "Additional file3, A21 and A24–A33; parent descriptor comparison. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3, A13 header: \"Chemostat medium contained per Liter\". The nine old flattened descriptors are replaced as a group by this stock addition; constituent identities/stock concentrations are separately supported by A24–A33. This is not physical absence from the stock. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 4,
@@ -382,8 +382,8 @@
                 {
                   "reference": "doi:10.1186/1475-2859-8-29",
                   "supports": "SUPPORT",
-                  "snippet": "stock solution",
-                  "explanation": "Additional file3, A21 and A24–A33; parent descriptor comparison. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "1.6 mL of trace salts stock solution.",
+                  "explanation": "Additional file3, A21 and A24–A33; parent descriptor comparison. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3, A13 header: \"Chemostat medium contained per Liter\". The nine old flattened descriptors are replaced as a group by this stock addition; constituent identities/stock concentrations are separately supported by A24–A33. This is not physical absence from the stock. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 4,
@@ -404,8 +404,8 @@
                 {
                   "reference": "doi:10.1186/1475-2859-8-29",
                   "supports": "SUPPORT",
-                  "snippet": "stock solution",
-                  "explanation": "Additional file3, cellsA13,A21. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "1.6 mL of trace salts stock solution.",
+                  "explanation": "Additional file3, cellsA13,A21. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A21; separately located A13 header: \"Chemostat medium contained per Liter\". Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 4,
@@ -427,8 +427,8 @@
                 {
                   "reference": "doi:10.1186/1475-2859-8-29",
                   "supports": "SUPPORT",
-                  "snippet": "CuSO4",
-                  "explanation": "Additional file3, cellsA24,A25. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "6.0 g CuSO4 · 5H2O",
+                  "explanation": "Additional file3, cellsA24,A25. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A25; separately located A24 header: \"Trace salts stock solution contained per Liter\". Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 5,
@@ -450,8 +450,8 @@
                 {
                   "reference": "doi:10.1186/1475-2859-8-29",
                   "supports": "SUPPORT",
-                  "snippet": "NaI",
-                  "explanation": "Additional file3, cellsA24,A26. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "0.08 g NaI",
+                  "explanation": "Additional file3, cellsA24,A26. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A26; separately located A24 header: \"Trace salts stock solution contained per Liter\". Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 5,
@@ -473,8 +473,8 @@
                 {
                   "reference": "doi:10.1186/1475-2859-8-29",
                   "supports": "SUPPORT",
-                  "snippet": "MnSO4",
-                  "explanation": "Additional file3, cellsA24,A27. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "3.0 g MnSO4 ·H2O",
+                  "explanation": "Additional file3, cellsA24,A27. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A27; separately located A24 header: \"Trace salts stock solution contained per Liter\". Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 5,
@@ -496,8 +496,8 @@
                 {
                   "reference": "doi:10.1186/1475-2859-8-29",
                   "supports": "SUPPORT",
-                  "snippet": "Na2MoO4",
-                  "explanation": "Additional file3, cellsA24,A28. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "0.2g Na2MoO4 · 2H2O",
+                  "explanation": "Additional file3, cellsA24,A28. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A28; separately located A24 header: \"Trace salts stock solution contained per Liter\". Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 5,
@@ -519,8 +519,8 @@
                 {
                   "reference": "doi:10.1186/1475-2859-8-29",
                   "supports": "SUPPORT",
-                  "snippet": "H3BO3",
-                  "explanation": "Additional file3, cellsA24,A29. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "0.02 g H3BO3",
+                  "explanation": "Additional file3, cellsA24,A29. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A29; separately located A24 header: \"Trace salts stock solution contained per Liter\". Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 5,
@@ -542,8 +542,8 @@
                 {
                   "reference": "doi:10.1186/1475-2859-8-29",
                   "supports": "SUPPORT",
-                  "snippet": "CoCl2",
-                  "explanation": "Additional file3, cellsA24,A30. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "0.5 g CoCl2",
+                  "explanation": "Additional file3, cellsA24,A30. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A30; separately located A24 header: \"Trace salts stock solution contained per Liter\". Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 5,
@@ -565,8 +565,8 @@
                 {
                   "reference": "doi:10.1186/1475-2859-8-29",
                   "supports": "SUPPORT",
-                  "snippet": "ZnCl2",
-                  "explanation": "Additional file3, cellsA24,A31. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "20.0 g ZnCl2",
+                  "explanation": "Additional file3, cellsA24,A31. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A31; separately located A24 header: \"Trace salts stock solution contained per Liter\". Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 5,
@@ -588,8 +588,8 @@
                 {
                   "reference": "doi:10.1186/1475-2859-8-29",
                   "supports": "SUPPORT",
-                  "snippet": "FeSO4",
-                  "explanation": "Additional file3, cellsA24,A32. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "5.0 g FeSO4 · 7H2O",
+                  "explanation": "Additional file3, cellsA24,A32. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A32; separately located A24 header: \"Trace salts stock solution contained per Liter\". Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 5,
@@ -611,8 +611,8 @@
                 {
                   "reference": "doi:10.1186/1475-2859-8-29",
                   "supports": "SUPPORT",
-                  "snippet": "H2SO4",
-                  "explanation": "Additional file3, cellsA24,A33. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "5 mL H2SO4 (95-98% w/w)",
+                  "explanation": "Additional file3, cellsA24,A33. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A33; separately located A24 header: \"Trace salts stock solution contained per Liter\". Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 5,
@@ -629,8 +629,8 @@
                 {
                   "reference": "doi:10.1186/1475-2859-8-29",
                   "supports": "SUPPORT",
-                  "snippet": "HCl",
-                  "explanation": "Additional file3, cellA22. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "pH set to 5.0 using 25% HCl",
+                  "explanation": "Additional file3, cellA22. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A22; separately located A13 header: \"Chemostat medium contained per Liter\". Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 6,
@@ -647,8 +647,8 @@
                 {
                   "reference": "doi:10.1186/1475-2859-8-29",
                   "supports": "SUPPORT",
-                  "snippet": "ammonium hydroxide",
-                  "explanation": "Additional file3, cellA39. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "pH = 5.0 (controlled with 25% ammonium hydroxide)",
+                  "explanation": "Additional file3, cellA39. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Additional file3 A39 within the section headed A35 \"Chemostat parameters\". Percentage basis is not supplied. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 6,
@@ -677,8 +677,8 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "FeSO4",
-                  "explanation": "Page1, For DSM9463. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "omit FeSO4 x 7 H2O from the medium",
+                  "explanation": "Page1, For DSM9463. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ670 p.1, matching DSM9463/9466/9467 prescription; line wrapping normalized. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 2,
@@ -699,8 +699,8 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "powdered sulfur",
-                  "explanation": "Page1, For DSM9463. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "add 5.00 g/l of powdered sulfur",
+                  "explanation": "Page1, For DSM9463. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ670 p.1, matching strain-specific prescription. The immediately following steaming instruction concerns sulfur sterilization. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 2,
@@ -717,8 +717,8 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "H2SO4",
-                  "explanation": "Page1, For DSM9463. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "Adjust pH to 3.5 with 1 N H2SO4 prior to autoclaving",
+                  "explanation": "Page1, For DSM9463. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ670 p.1, matching strain prescription. Titrant strength and target pH do not supply a fixed acid dose. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 3,
@@ -747,8 +747,8 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "FeSO4",
-                  "explanation": "Page1, For DSM9466. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "omit FeSO4 x 7 H2O from the medium",
+                  "explanation": "Page1, For DSM9466. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ670 p.1, matching DSM9463/9466/9467 prescription; line wrapping normalized. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 2,
@@ -769,8 +769,8 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "powdered sulfur",
-                  "explanation": "Page1, For DSM9466. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "add 5.00 g/l of powdered sulfur",
+                  "explanation": "Page1, For DSM9466. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ670 p.1, matching strain-specific prescription. The immediately following steaming instruction concerns sulfur sterilization. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 2,
@@ -787,8 +787,8 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "H2SO4",
-                  "explanation": "Page1, For DSM9466. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "Adjust pH to 3.0 with 1 N H2SO4 prior to autoclaving",
+                  "explanation": "Page1, For DSM9466. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ670 p.1, matching strain prescription. Titrant strength and target pH do not supply a fixed acid dose. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 3,
@@ -809,8 +809,8 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "yeast extract",
-                  "explanation": "Page1, For DSM9466. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "0.20 g/l of yeast",
+                  "explanation": "Page1, For DSM9466. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ670 p.1, matching DSM9466/9467 prescription; line wrapping normalized. Yeast extract is a final-medium addition supplied from a sterile stock, whose concentration is not specified. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 3,
@@ -840,8 +840,8 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "H2SO4",
-                  "explanation": "Page1, For DSM9467. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "Adjust pH to 3.0 with 1 N H2SO4 prior to autoclaving",
+                  "explanation": "Page1, For DSM9467. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ670 p.1, matching strain prescription. Titrant strength and target pH do not supply a fixed acid dose. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 2,
@@ -857,8 +857,8 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "FeSO4",
-                  "explanation": "Page1, For DSM9467. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "omit FeSO4 x 7 H2O from the medium",
+                  "explanation": "Page1, For DSM9467. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ670 p.1, matching DSM9463/9466/9467 prescription; line wrapping normalized. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 2,
@@ -879,8 +879,8 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "D-glucose",
-                  "explanation": "Page1, For DSM9467. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "add 2.00 g/l D-glucose",
+                  "explanation": "Page1, For DSM9467. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ670 p.1, DSM9467. The subsequent clause specifies filter-sterilized stock solutions. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 2,
@@ -901,8 +901,8 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "yeast extract",
-                  "explanation": "Page1, For DSM9467. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "0.1 g/l yeast extract",
+                  "explanation": "Page1, For DSM9467. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ670 p.1, matching DSM9466/9467 prescription; line wrapping normalized. Yeast extract is a final-medium addition supplied from a sterile stock, whose concentration is not specified. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 2,
@@ -932,8 +932,8 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "H2SO4",
-                  "explanation": "Page1, For DSM9468. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "Adjust pH to 1.6 with 4 N H2SO4 prior to autoclaving",
+                  "explanation": "Page1, For DSM9468. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ670 p.1, matching strain prescription. Titrant strength and target pH do not supply a fixed acid dose. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 2,
@@ -955,8 +955,8 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "40%",
-                  "explanation": "Page1, base table and preparation step1. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "40% (w/v) stock solution",
+                  "explanation": "Page1, base table and preparation step1. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ670 p.1 step1; separate exact solvent excerpt: \"prepared with 0.2 N H2SO4\". Table stock-volume column states \"50.00 ml\"; the batch water input is 950.00 ml. No further final-volume normalization is asserted. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 2,
@@ -973,8 +973,8 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "0.2 N",
-                  "explanation": "Page1, preparation step1. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "prepared with 0.2 N H2SO4",
+                  "explanation": "Page1, preparation step1. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ670 p.1 preparation step1, ferrous-sulfate stock solvent; normality is retained without conversion. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 2,
@@ -1004,8 +1004,8 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "(NH4)2SO4",
-                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "(NH4)2SO4 0.500 g",
+                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace normalized. These are batch input amounts; the water row is an input, not a separately measured final volume. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 0,
@@ -1022,8 +1022,8 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "KH2PO4",
-                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "KH2PO4 1.500 g",
+                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace normalized. These are batch input amounts; the water row is an input, not a separately measured final volume. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 1,
@@ -1040,8 +1040,8 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "Na2HPO4",
-                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "Na2HPO4 1.500 g",
+                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace normalized. These are batch input amounts; the water row is an input, not a separately measured final volume. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 2,
@@ -1058,8 +1058,8 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "Na-citrate",
-                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "Na-citrate 0.400 g",
+                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace normalized. These are batch input amounts; the water row is an input, not a separately measured final volume. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 3,
@@ -1076,8 +1076,8 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "MgSO4",
-                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "MgSO4 0.025 g",
+                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace normalized. These are batch input amounts; the water row is an input, not a separately measured final volume. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 4,
@@ -1094,8 +1094,8 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "CaCl2",
-                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "CaCl2 0.500 mg",
+                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace normalized. These are batch input amounts; the water row is an input, not a separately measured final volume. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 5,
@@ -1112,8 +1112,8 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "ZnSO4",
-                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "ZnSO4 1.000 mg",
+                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace normalized. These are batch input amounts; the water row is an input, not a separately measured final volume. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 6,
@@ -1130,8 +1130,8 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "CuSO4",
-                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "CuSO4 1.000 mg",
+                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace normalized. These are batch input amounts; the water row is an input, not a separately measured final volume. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 7,
@@ -1148,8 +1148,8 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "L-Glutamic acid",
-                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "L-Glutamic acid 0.500 g",
+                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace normalized. These are batch input amounts; the water row is an input, not a separately measured final volume. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 8,
@@ -1166,8 +1166,8 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "Ferric ammonium citrate",
-                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "Ferric ammonium citrate 0.040 g",
+                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace normalized. These are batch input amounts; the water row is an input, not a separately measured final volume. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 9,
@@ -1184,8 +1184,8 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "Pyridoxine",
-                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "Pyridoxine 1.000 mg",
+                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace normalized. These are batch input amounts; the water row is an input, not a separately measured final volume. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 10,
@@ -1202,8 +1202,8 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "Biotin",
-                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "Biotin 0.500 mg",
+                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace normalized. These are batch input amounts; the water row is an input, not a separately measured final volume. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 11,
@@ -1220,8 +1220,8 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "Malachite green",
-                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "Malachite green 0.250 mg",
+                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace normalized. These are batch input amounts; the water row is an input, not a separately measured final volume. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 12,
@@ -1238,8 +1238,8 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "Bacto agar",
-                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "Bacto agar 15.000 g",
+                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace normalized. These are batch input amounts; the water row is an input, not a separately measured final volume. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 13,
@@ -1256,8 +1256,8 @@
                 {
                   "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf",
                   "supports": "SUPPORT",
-                  "snippet": "Distilled water",
-                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "Distilled water 1000.000 ml",
+                  "explanation": "Page 1, alternative Bacto Middlebrook 7H10 table. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. DSMZ645 p.1 alternative table headed \"Bacto Middlebrook 7H10 agar:\"; row columns transcribed with whitespace normalized. These are batch input amounts; the water row is an input, not a separately measured final volume. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 14,
@@ -1291,8 +1291,8 @@
                 {
                   "reference": "doi:10.1186/1471-2180-11-66",
                   "supports": "SUPPORT",
-                  "snippet": "biotin",
-                  "explanation": "Methods, Bacterial strains, media and growth conditions. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "10 μg ml-1 biotin",
+                  "explanation": "Methods, Bacterial strains, media and growth conditions. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Villasenor Methods, Bacterial strains/media/growth conditions. Separate basis statement: \"After sterilization the following components were added to the final concentration indicated\". MM lacks the separate MMP addition; no physical removal or doubled calcium-salt dose is implied. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 0,
@@ -1313,8 +1313,8 @@
                 {
                   "reference": "doi:10.1186/1471-2180-11-66",
                   "supports": "SUPPORT",
-                  "snippet": "thiamine",
-                  "explanation": "Methods, Bacterial strains, media and growth conditions. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "10 μg ml-1 thiamine",
+                  "explanation": "Methods, Bacterial strains, media and growth conditions. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Villasenor Methods, Bacterial strains/media/growth conditions. Separate basis statement: \"After sterilization the following components were added to the final concentration indicated\". MM lacks the separate MMP addition; no physical removal or doubled calcium-salt dose is implied. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 0,
@@ -1335,8 +1335,8 @@
                 {
                   "reference": "doi:10.1186/1471-2180-11-66",
                   "supports": "SUPPORT",
-                  "snippet": "CaCl2",
-                  "explanation": "Methods, medium formulation. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "1.49 mM CaCl2 2H2O (autoclaved separately)",
+                  "explanation": "Methods, medium formulation. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Villasenor Methods, Bacterial strains/media/growth conditions. Separate basis statement: \"After sterilization the following components were added to the final concentration indicated\". MM lacks the separate MMP addition; no physical removal or doubled calcium-salt dose is implied. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "replaced_ingredient": {
@@ -1361,8 +1361,8 @@
                 {
                   "reference": "doi:10.1186/1471-2180-11-66",
                   "supports": "SUPPORT",
-                  "snippet": "FeCl3",
-                  "explanation": "Methods, medium formulation. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "0.0184 mM FeCl3 6H2O (filter sterilized)",
+                  "explanation": "Methods, medium formulation. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Villasenor Methods, Bacterial strains/media/growth conditions. Separate basis statement: \"After sterilization the following components were added to the final concentration indicated\". MM lacks the separate MMP addition; no physical removal or doubled calcium-salt dose is implied. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "replaced_ingredient": {
@@ -1383,8 +1383,8 @@
                 {
                   "reference": "doi:10.1186/1471-2180-11-66",
                   "supports": "SUPPORT",
-                  "snippet": "calcium pantothenate",
-                  "explanation": "Methods, distinction between MM and MMP. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "MMP contains the same components plus 1 μM calcium pantothenate",
+                  "explanation": "Methods, distinction between MM and MMP. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Villasenor Methods, Bacterial strains/media/growth conditions. Separate basis statement: \"After sterilization the following components were added to the final concentration indicated\". MM lacks the separate MMP addition; no physical removal or doubled calcium-salt dose is implied. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 4,
@@ -1418,8 +1418,8 @@
                 {
                   "reference": "doi:10.1186/1471-2180-11-66",
                   "supports": "SUPPORT",
-                  "snippet": "biotin",
-                  "explanation": "Methods, Bacterial strains, media and growth conditions. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "10 μg ml-1 biotin",
+                  "explanation": "Methods, Bacterial strains, media and growth conditions. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Villasenor Methods, Bacterial strains/media/growth conditions. Separate basis statement: \"After sterilization the following components were added to the final concentration indicated\". MM lacks the separate MMP addition; no physical removal or doubled calcium-salt dose is implied. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 0,
@@ -1440,8 +1440,8 @@
                 {
                   "reference": "doi:10.1186/1471-2180-11-66",
                   "supports": "SUPPORT",
-                  "snippet": "thiamine",
-                  "explanation": "Methods, Bacterial strains, media and growth conditions. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "10 μg ml-1 thiamine",
+                  "explanation": "Methods, Bacterial strains, media and growth conditions. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Villasenor Methods, Bacterial strains/media/growth conditions. Separate basis statement: \"After sterilization the following components were added to the final concentration indicated\". MM lacks the separate MMP addition; no physical removal or doubled calcium-salt dose is implied. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 0,
@@ -1462,8 +1462,8 @@
                 {
                   "reference": "doi:10.1186/1471-2180-11-66",
                   "supports": "SUPPORT",
-                  "snippet": "CaCl2",
-                  "explanation": "Methods, medium formulation. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "1.49 mM CaCl2 2H2O (autoclaved separately)",
+                  "explanation": "Methods, medium formulation. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Villasenor Methods, Bacterial strains/media/growth conditions. Separate basis statement: \"After sterilization the following components were added to the final concentration indicated\". MM lacks the separate MMP addition; no physical removal or doubled calcium-salt dose is implied. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "replaced_ingredient": {
@@ -1488,8 +1488,8 @@
                 {
                   "reference": "doi:10.1186/1471-2180-11-66",
                   "supports": "SUPPORT",
-                  "snippet": "FeCl3",
-                  "explanation": "Methods, medium formulation. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "0.0184 mM FeCl3 6H2O (filter sterilized)",
+                  "explanation": "Methods, medium formulation. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Villasenor Methods, Bacterial strains/media/growth conditions. Separate basis statement: \"After sterilization the following components were added to the final concentration indicated\". MM lacks the separate MMP addition; no physical removal or doubled calcium-salt dose is implied. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "replaced_ingredient": {
@@ -1514,8 +1514,8 @@
                 {
                   "reference": "doi:10.1186/1471-2180-11-66",
                   "supports": "SUPPORT",
-                  "snippet": "calcium pantothenate",
-                  "explanation": "Methods, MMP formulation. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "MMP contains the same components plus 1 μM calcium pantothenate",
+                  "explanation": "Methods, MMP formulation. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Villasenor Methods, Bacterial strains/media/growth conditions. Separate basis statement: \"After sterilization the following components were added to the final concentration indicated\". MM lacks the separate MMP addition; no physical removal or doubled calcium-salt dose is implied. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 4,
@@ -1549,8 +1549,8 @@
                 {
                   "reference": "doi:10.1128/AEM.69.6.3462-3468.2003",
                   "supports": "SUPPORT",
-                  "snippet": "MnSO4",
-                  "explanation": "Materials and Methods, Strain and growth conditions. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "MnSO4 (1.25 × 10−5 g · liter−1)",
+                  "explanation": "Materials and Methods, Strain and growth conditions. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Nordkvist original ASM Methods, Strain and growth conditions; subscripts/superscripts rendered in plain text. Hydration not specified. This supplement applies to the defined MS10 culture medium. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "replaced_ingredient": {
@@ -1575,8 +1575,8 @@
                 {
                   "reference": "doi:10.1128/AEM.69.6.3462-3468.2003",
                   "supports": "SUPPORT",
-                  "snippet": "sodium acetate",
-                  "explanation": "Figure1B caption. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "0.3 g of sodium acetate liter−1 was added after 7 h 38 min",
+                  "explanation": "Figure1B caption. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Nordkvist Figure1B caption. This is a timed addition during cultivation, not an initial concentration; superscript exponent rendered in plain text. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 2,
@@ -1610,8 +1610,8 @@
                 {
                   "reference": "doi:10.1128/AEM.69.6.3462-3468.2003",
                   "supports": "SUPPORT",
-                  "snippet": "MnSO4",
-                  "explanation": "Materials and Methods, Strain and growth conditions. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "MnSO4 (1.25 × 10−5 g · liter−1)",
+                  "explanation": "Materials and Methods, Strain and growth conditions. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Nordkvist original ASM Methods, Strain and growth conditions; subscripts/superscripts rendered in plain text. Hydration not specified. This supplement applies to the defined MS10 culture medium. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "replaced_ingredient": {
@@ -1649,8 +1649,8 @@
                 {
                   "reference": "doi:10.1128/AEM.69.6.3462-3468.2003",
                   "supports": "SUPPORT",
-                  "snippet": "MnSO4",
-                  "explanation": "Materials and Methods, Strain and growth conditions. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "MnSO4 (1.25 × 10−5 g · liter−1)",
+                  "explanation": "Materials and Methods, Strain and growth conditions. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Nordkvist original ASM Methods, Strain and growth conditions; subscripts/superscripts rendered in plain text. Hydration not specified. This supplement applies to the defined MS10 culture medium. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "replaced_ingredient": {
@@ -1670,8 +1670,8 @@
                 {
                   "reference": "doi:10.1128/AEM.69.6.3462-3468.2003",
                   "supports": "SUPPORT",
-                  "snippet": "thioctic acid",
-                  "explanation": "Figure1C caption. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "without dl-6,8-thioctic acid",
+                  "explanation": "Figure1C caption. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Nordkvist Figure1C caption and Table2 heading; source explicitly excludes this component from the modified treatment. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 2,
@@ -1692,8 +1692,8 @@
                 {
                   "reference": "doi:10.1128/AEM.69.6.3462-3468.2003",
                   "supports": "SUPPORT",
-                  "snippet": "sodium acetate",
-                  "explanation": "Figure1C caption. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe."
+                  "snippet": "with 0.82 g of sodium acetate liter−1",
+                  "explanation": "Figure1C caption. Primary source inspected 2026-11-16; supports this source-scoped variant assertion, not equivalence of the whole parent recipe. Nordkvist Figure1C caption; separate treatment without dl-6,8-thioctic acid, not the timed Figure1B addition. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 2,

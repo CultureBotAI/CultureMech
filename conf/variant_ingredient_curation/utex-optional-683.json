@@ -24,7 +24,7 @@
                   "reference": "https://utex.org/products/one-half-soil-plus-seawater-medium",
                   "supports": "SUPPORT",
                   "snippet": "1 mg",
-                  "explanation": "Recipe table, optional CaCO3 row; Directions, 200 mL total; primary UTEX collection page inspected 2026-11-16. This ingredient occurrence is scoped to the optional variant, not a change to the liquid parent."
+                  "explanation": "Recipe table, optional CaCO3 row; Directions, 200 mL total; primary UTEX collection page inspected 2026-11-16. This ingredient occurrence is scoped to the optional variant, not a change to the liquid parent. Separate Directions header: \"For 200 mL Total\"; table identifies optional CaCO3. The quoted 1 mg is a batch input; the source table molarity is not adopted. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 0,
@@ -55,7 +55,7 @@
                   "reference": "https://utex.org/products/one-third-soil-plus-seawater-medium",
                   "supports": "SUPPORT",
                   "snippet": "1 mg",
-                  "explanation": "Recipe table, optional CaCO3 row; Directions, 200 mL total; primary UTEX collection page inspected 2026-11-16. This ingredient occurrence is scoped to the optional variant, not a change to the liquid parent."
+                  "explanation": "Recipe table, optional CaCO3 row; Directions, 200 mL total; primary UTEX collection page inspected 2026-11-16. This ingredient occurrence is scoped to the optional variant, not a change to the liquid parent. Separate Directions header: \"For 200 mL Total\"; table identifies optional CaCO3. The quoted 1 mg is a batch input; the source table molarity is not adopted. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 0,
@@ -86,7 +86,7 @@
                   "reference": "https://utex.org/products/one-fourth-soil-plus-seawater-medium",
                   "supports": "SUPPORT",
                   "snippet": "1 mg",
-                  "explanation": "Recipe table, optional CaCO3 row; Directions, 200 mL total; primary UTEX collection page inspected 2026-11-16. This ingredient occurrence is scoped to the optional variant, not a change to the liquid parent."
+                  "explanation": "Recipe table, optional CaCO3 row; Directions, 200 mL total; primary UTEX collection page inspected 2026-11-16. This ingredient occurrence is scoped to the optional variant, not a change to the liquid parent. Separate Directions header: \"For 200 mL Total\"; table identifies optional CaCO3. The quoted 1 mg is a batch input; the source table molarity is not adopted. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 0,
@@ -117,7 +117,7 @@
                   "reference": "https://utex.org/products/one-fifth-soil-plus-seawater-medium",
                   "supports": "SUPPORT",
                   "snippet": "1 mg",
-                  "explanation": "Recipe table, optional CaCO3 row; Directions, 200 mL total; primary UTEX collection page inspected 2026-11-16. This ingredient occurrence is scoped to the optional variant, not a change to the liquid parent."
+                  "explanation": "Recipe table, optional CaCO3 row; Directions, 200 mL total; primary UTEX collection page inspected 2026-11-16. This ingredient occurrence is scoped to the optional variant, not a change to the liquid parent. Separate Directions header: \"For 200 mL Total\"; table identifies optional CaCO3. The quoted 1 mg is a batch input; the source table molarity is not adopted. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 0,
@@ -183,8 +183,8 @@
                 {
                   "reference": "https://utex.org/products/j-medium",
                   "supports": "SUPPORT",
-                  "snippet": "add 12.5 g of agar",
-                  "explanation": "Directions, optional agar instruction; primary UTEX collection page inspected 2026-11-16. This ingredient occurrence is scoped to the optional variant, not a change to the liquid parent."
+                  "snippet": "For 1.25% agar medium add 12.5 g of agar",
+                  "explanation": "Directions, optional agar instruction; primary UTEX collection page inspected 2026-11-16. This ingredient occurrence is scoped to the optional variant, not a change to the liquid parent. Directions step2; separate preceding instruction: \"Bring total volume to 1 L with dH2O\". Source designates the optional agar percentage and pairs a mass with this volume; no post-addition volume measurement is claimed. Water subscript rendered as plain text. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 0,
@@ -374,8 +374,8 @@
                 {
                   "reference": "https://utex.org/products/bg-11-1-plus-0-point-36-percent-nacl-medium",
                   "supports": "SUPPORT",
-                  "snippet": "15 g of agar",
-                  "explanation": "Agar media, step 3; primary UTEX collection page inspected 2026-11-16. This ingredient occurrence is scoped to the optional variant, not a change to the liquid parent."
+                  "snippet": "add 15 g of agar to 500 mL of dH2O",
+                  "explanation": "Agar media, step 3; primary UTEX collection page inspected 2026-11-16. This ingredient occurrence is scoped to the optional variant, not a change to the liquid parent. Agar-media step3, separately autoclaved agar portion; water subscript rendered as plain text. Combining portions occurs in step7, not in this quoted stock-preparation step. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 1,
@@ -477,8 +477,8 @@
                 {
                   "reference": "https://utex.org/products/bg-11-plus-1-percent-nacl-medium",
                   "supports": "SUPPORT",
-                  "snippet": "15 g of agar",
-                  "explanation": "Agar media, step 3; primary UTEX collection page inspected 2026-11-16. This ingredient occurrence is scoped to the optional variant, not a change to the liquid parent."
+                  "snippet": "add 15 g of agar to 500 mL of dH2O",
+                  "explanation": "Agar media, step 3; primary UTEX collection page inspected 2026-11-16. This ingredient occurrence is scoped to the optional variant, not a change to the liquid parent. Agar-media step3, separately autoclaved agar portion; water subscript rendered as plain text. Combining portions occurs in step7, not in this quoted stock-preparation step. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 1,
@@ -545,7 +545,7 @@
                   "reference": "https://utex.org/products/soil-plus-seawater-medium",
                   "supports": "SUPPORT",
                   "snippet": "1 mg/200 mL of Seawater",
-                  "explanation": "Recipe table, optional CaCO3 row; Directions, 200 mL total; primary UTEX collection page inspected 2026-11-16. This ingredient occurrence is scoped to the optional variant, not a change to the liquid parent."
+                  "explanation": "Recipe table, optional CaCO3 row; Directions, 200 mL total; primary UTEX collection page inspected 2026-11-16. This ingredient occurrence is scoped to the optional variant, not a change to the liquid parent. Separate Directions header: \"For 200 mL Total\"; table identifies optional CaCO3. The quoted 1 mg is a batch input; the source table molarity is not adopted. Exact excerpt clarification for issue763; scientific payload unchanged."
                 }
               ],
               "source_modification_index": 0,

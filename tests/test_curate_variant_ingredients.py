@@ -82,6 +82,89 @@ def test_preview_preserves_bytes_and_apply_keeps_parent_and_prose(sample):
     assert path.read_bytes() == applied_bytes
 
 
+@pytest.mark.parametrize("trailing_newline", [True, False])
+@pytest.mark.parametrize("history_first", [True, False])
+def test_preserves_block_scalars_comments_and_multiple_variant_boundaries(
+    sample, trailing_newline, history_first
+):
+    root, path, decision = sample
+    history = "curation_history:\n  - action: OLD\n    notes: 'untouched history'\n"
+    original = (
+        "# source comment\nid: CultureMech:000001\nname: 'example β'\n"
+        "ingredients: []\ndescription: |\n  Literal line one.\n  Literal line two.\n"
+        + (history if history_first else "")
+        + "variants:\n  - name: exposure\n    modifications:\n"
+        "      - Add example compound.\n    notes: >-\n      Folded text\n      stays folded.\n"
+        "  # next variant comment\n  - name: second\n    modifications:\n"
+        "      - Add example compound.\n" + ("" if history_first else history)
+    )
+    if not trailing_newline:
+        original = original.rstrip("\n")
+    path.write_text(original)
+    decision["expected_sha256"] = hashlib.sha256(path.read_bytes()).hexdigest()
+    second = copy.deepcopy(decision["variants"][0])
+    second.update(variant_index=1, variant_name="second")
+    decision["variants"].append(second)
+    before = yaml.safe_load(original)
+    curate.run(save_decisions(root, [decision]), root=root, apply=True)
+    after_text = path.read_text()
+    # Every source line survives verbatim and in order, including quote style.
+    position = 0
+    for line in original.splitlines():
+        position = after_text.index(line, position) + len(line)
+    after = yaml.safe_load(after_text)
+    for variant in after["variants"]:
+        assert len(variant.pop("ingredient_changes")) == 1
+    after["curation_history"].pop()
+    assert after == before
+
+
+def test_flow_variant_refused_before_write(sample):
+    root, path, decision = sample
+    record = yaml.safe_load(path.read_bytes())
+    path.write_text(yaml.safe_dump(record, default_flow_style=True))
+    decision["expected_sha256"] = hashlib.sha256(path.read_bytes()).hexdigest()
+    before = path.read_bytes()
+    with pytest.raises(ValueError, match="block-style"):
+        curate.run(save_decisions(root, [decision]), root=root, apply=True)
+    assert path.read_bytes() == before
+
+
+def test_shared_alias_cannot_mutate_unselected_variant(sample):
+    root, path, decision = sample
+    path.write_text(
+        "id: CultureMech:000001\nname: example\ningredients: []\nvariants:\n"
+        "- &shared\n  name: exposure\n  modifications:\n  - Add example compound.\n"
+        "- *shared\n"
+    )
+    decision["expected_sha256"] = hashlib.sha256(path.read_bytes()).hexdigest()
+    before = path.read_bytes()
+    with pytest.raises(ValueError, match="aliases and anchors"):
+        curate.run(save_decisions(root, [decision]), root=root, apply=True)
+    assert path.read_bytes() == before
+
+
+def test_single_record_canary_retains_full_decision_hash(sample):
+    root, path, decision = sample
+    second = copy.deepcopy(decision)
+    second["path"] = "data/normalized_yaml/algae/second.yaml"
+    second_path = root / second["path"]
+    second_path.write_bytes(path.read_bytes())
+    before = second_path.read_bytes()
+    decisions = save_decisions(root, [decision, second])
+    with pytest.raises(ValueError, match="absent"):
+        curate.run(decisions, root=root, apply=True, only_record="missing.yaml")
+    result = curate.run(decisions, root=root, apply=True, only_record=decision["path"])
+    assert len(result["records"]) == 1
+    assert result["records"][0]["status"] == "APPLIED"
+    assert second_path.read_bytes() == before
+    event = yaml.safe_load(path.read_bytes())["curation_history"][-1]
+    assert (
+        json.loads(event["changes"])["decision_sha256"]
+        == hashlib.sha256(decisions.read_bytes()).hexdigest()
+    )
+
+
 @pytest.mark.parametrize("fault", ["hash", "record", "variant", "source", "index"])
 def test_stale_or_wrong_target_refused_without_write(sample, fault):
     root, path, original = sample

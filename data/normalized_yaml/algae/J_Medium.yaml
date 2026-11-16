@@ -873,6 +873,31 @@ curation_history:
     1, "unsupported_quantity_slots_removed": 4}, "identity_changes": [], "scope":
     "Every changed amount or removal is linked to an exact source excerpt; identity
     changes use supplier/ChEBI evidence attached to the corrected ingredients."}'
+- timestamp: '2026-11-16T21:33:23.821048+00:00'
+  curator: codex
+  action: STRUCTURED_VARIANT_INGREDIENTS
+  notes: Represent source-supported ingredient changes within their existing variants;
+    preserve base formulation, source prose, stages and unresolved identities. LLM-assisted
+    curation; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision_sha256": "053b2ac82a0c3681d84f53714b129366f2e7b2f9f2d8da1acc6b72c471491e88",
+    "variants": [{"ingredient_changes": [{"action": "ADD", "evidence": [{"explanation":
+    "Directions, optional agar instruction; primary UTEX collection page inspected
+    2026-11-16. This ingredient occurrence is scoped to the optional variant, not
+    a change to the liquid parent. Directions step2; separate preceding instruction:
+    \"Bring total volume to 1 L with dH2O\". Source designates the optional agar percentage
+    and pairs a mass with this volume; no post-addition volume measurement is claimed.
+    Water subscript rendered as plain text. Exact excerpt clarification for issue763;
+    scientific payload unchanged.", "reference": "https://utex.org/products/j-medium",
+    "snippet": "For 1.25% agar medium add 12.5 g of agar", "supports": "SUPPORT"}],
+    "ingredient": {"concentration": {"per_volume": "source-designated optional agar
+    formulation", "unit": "PERCENT_W_V", "value": "1.25"}, "notes": "Literal batch
+    input: 12.5 g agar added to 1 L prepared liquid; do not mix. Retain this preparation
+    basis without inferring a measured volume after agar addition.", "preferred_term":
+    "agar"}, "source_modification_index": 0, "source_text": "Add 12.5 g agar per 1
+    L recipe (12.5 g/L; 1.25% w/v) before covering and autoclaving; do not mix at
+    the agar-addition step.", "stage": "optional agar addition before autoclaving"}],
+    "variant_index": 0, "variant_name": "J Medium with 1.25% agar"}]}'
 references:
 - reference: UTEX:j-medium
 - reference: https://utex.org/products/j-medium
@@ -929,3 +954,29 @@ variants:
       "For 1 L Total". Calculation: 12.5 g / 1 L = 12.5 g/L. Do not add agar to the
       liquid parent. Locator: Directions step 2 bullet, before the cover/autoclave
       step.'
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: agar
+      notes: 'Literal batch input: 12.5 g agar added to 1 L prepared liquid; do not
+        mix. Retain this preparation basis without inferring a measured volume after
+        agar addition.'
+      concentration:
+        value: '1.25'
+        unit: PERCENT_W_V
+        per_volume: source-designated optional agar formulation
+    stage: optional agar addition before autoclaving
+    evidence:
+    - reference: https://utex.org/products/j-medium
+      supports: SUPPORT
+      snippet: For 1.25% agar medium add 12.5 g of agar
+      explanation: 'Directions, optional agar instruction; primary UTEX collection page
+        inspected 2026-11-16. This ingredient occurrence is scoped to the optional variant,
+        not a change to the liquid parent. Directions step2; separate preceding instruction:
+        "Bring total volume to 1 L with dH2O". Source designates the optional agar percentage
+        and pairs a mass with this volume; no post-addition volume measurement is claimed.
+        Water subscript rendered as plain text. Exact excerpt clarification for issue763;
+        scientific payload unchanged.'
+    source_modification_index: 0
+    source_text: Add 12.5 g agar per 1 L recipe (12.5 g/L; 1.25% w/v) before covering
+      and autoclaving; do not mix at the agar-addition step.

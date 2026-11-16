@@ -79,26 +79,67 @@ def test_reordered_modifications_need_updated_binding():
     assert not categories(record)
 
 
+@pytest.mark.parametrize("action", ["ADD", "REMOVE", "REPLACE", "SET_CONCENTRATION"])
 @pytest.mark.parametrize(
-    "relationship,action",
-    [
-        ("SUPPLEMENTED_VARIANT", "ADD"),
-        ("OMITTED_COMPONENT_VARIANT", "REMOVE"),
-        ("CONCENTRATION_VARIANT", "SET_CONCENTRATION"),
-    ],
+    "relationship",
+    ["SUPPLEMENTED_VARIANT", "OMITTED_COMPONENT_VARIANT", "CONCENTRATION_VARIANT"],
 )
-def test_narrow_relationships_reject_contradictory_operations(relationship, action):
+def test_recipe_relationship_does_not_infer_stage_event_action(relationship, action):
     record = recipe(action)
     record["variants"][0]["relationship"] = relationship
+    before = copy.deepcopy(record)
     assert not categories(record)
-    entry(record)["action"] = "REMOVE" if action != "REMOVE" else "ADD"
-    assert "variant_relationship" in categories(record)
+    assert not validate_recipe(record)
+    assert record == before
 
 
-def test_source_duplicate_cannot_carry_ingredient_changes():
-    record = recipe()
+@pytest.mark.parametrize("action", ["ADD", "REMOVE", "REPLACE", "SET_CONCENTRATION"])
+def test_source_duplicate_cannot_carry_ingredient_changes(action):
+    record = recipe(action)
     record["variants"][0]["relationship"] = "SOURCE_DUPLICATE"
     assert "variant_relationship" in categories(record)
+
+
+def test_added_dose_under_concentration_relationship_does_not_become_a_total():
+    """An explicit addition must not be relabelled SET_CONCENTRATION (#768)."""
+    record = recipe()
+    variant = record["variants"][0]
+    variant["relationship"] = "CONCENTRATION_VARIANT"
+    source = "Supplement the base medium with sodium selenite at 1 nM."
+    variant["modifications"] = [source]
+    item = entry(record)
+    item["source_text"] = source
+    item["stage"] = "supplemental dose to the source-defined base medium"
+    item["ingredient"] = {
+        "preferred_term": "Sodium selenite",
+        "concentration": {"value": "1", "unit": "NANOMOLAR"},
+    }
+    item["evidence"][0]["snippet"] = source
+    before = copy.deepcopy(record)
+    assert not validate_recipe(record)
+    assert record == before
+    assert item["action"] == "ADD"
+    item["ingredient"]["modifier"] = "ABSENT"
+    assert "variant_presence" in categories(record)
+
+
+@pytest.mark.parametrize("relationship", ["SUPPLEMENTED_VARIANT", "OMITTED_COMPONENT_VARIANT"])
+def test_mixed_stage_events_retain_individual_invariants(relationship):
+    record = recipe()
+    variant = record["variants"][0]
+    variant["relationship"] = relationship
+    changes = [change(action) for action in ("ADD", "REMOVE", "REPLACE", "SET_CONCENTRATION")]
+    variant["modifications"] = [item["source_text"] for item in changes]
+    for index, item in enumerate(changes):
+        item["source_modification_index"] = index
+        item["stage"] = f"source-defined preparation stage {index}"
+    variant["ingredient_changes"] = changes
+    assert not validate_recipe(record)
+    del changes[2]["replaced_ingredient"]
+    assert "variant_replacement" in categories(record)
+    changes[2]["replaced_ingredient"] = {"preferred_term": "old source ingredient"}
+    del changes[3]["ingredient"]["concentration"]
+    assert "variant_concentration" in categories(record)
 
 
 def test_substituted_formulation_allows_alternative_inputs_and_individual_changes():
