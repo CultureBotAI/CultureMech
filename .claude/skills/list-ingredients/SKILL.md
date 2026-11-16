@@ -6,7 +6,7 @@ metadata:
   category: reporting
   requires_database: false
   requires_internet: false
-  version: 1.2.0
+  version: 1.3.0
 ---
 
 # List ingredients across the corpus
@@ -115,3 +115,29 @@ are CSV-quoted, so `wc -l`, `grep`, `cut`, and `awk` can misread rows.
 - Confirm `ingredient_aggregation_errors.tsv` has only a header row.
 - Report counts from this run, with the commit, rather than from a prior run;
   the corpus changes continuously. See `docs/unmapped_ingredients_guide.md`.
+
+## Review variant-only prose
+
+For ingredient mentions outside the structured list, read
+[the variant prose inventory guide](../../../docs/variant_prose_inventory.md).
+It exposes every `variants[].modifications[]` entry, including nonchemical
+changes, and retains context-only variants without modifications:
+
+```bash
+just plan-variant-prose
+just build-variant-prose output/variant-prose-candidate
+just verify-variant-prose output/variant-prose-candidate
+```
+
+Run one real recipe through the same CLI first after changing the producer.
+Preserve the resulting TSV, manifest and independently recorded manifest digest.
+Use the script's `--expected-manifest-sha256` verifier option for a pinned
+handoff. A changed source snapshot or producer requires a new output directory.
+
+Every row is `UNREVIEWED`; it is a source review unit, not an extracted chemical
+or approved mapping. Keep exact prose, evidence, source hashes and zero-based
+variant/modification indices. A stock-culture amendment and an assay treatment
+may describe different experimental stages. Resolve that context through the
+record-curation workflow before adding structured ingredients. This queue
+advances #683 but does not close its scientific curation or change MIM's frozen
+campaign inputs. It does not scan every other notes/protocol field for mentions.

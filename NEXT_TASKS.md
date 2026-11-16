@@ -6,7 +6,21 @@ deferrals here instead of letting them live only in your head or a closed PR.
 Keep the cross-Mech items in sync with the sibling repos' `NEXT_TASKS.md`
 (MIM / CommunityMech / TraitMech).
 
-Last reconciled: 2026-07-31.
+Ingredient release threads checked 2026-11-13 (this is a scoped update; the
+older backlog below has not been fully reconciled):
+
+- **#687 — in progress, upstream export pending.** PR #684 provides the
+  reproducible structured-catalog producer. The frozen MIM intake matches all
+  15,915 CultureMech input paths and hashes. Stable-ID adoption is complete;
+  original verification, scientific review and final SSSOM export remain gates
+  before KGM candidate admission. Keep exact revisions/digests in the issue.
+- **#683 — review queue implemented; scientific curation remains.** The
+  variant-prose inventory retains modifications, context-only variants, evidence
+  and source coordinates as `UNREVIEWED`. Review experimental stages and cited
+  evidence before adding structured ingredients. Queue generation does not close
+  this issue or expand the active MIM campaign's frozen scope.
+
+Last full backlog reconciliation recorded here: 2026-07-31.
 
 Shipped 2026-07-22: **#112** drift check extended to `mech_shared.yaml` + last two
 self-generated pins retired; **#113** deep-research priority report refresh +

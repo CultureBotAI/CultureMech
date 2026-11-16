@@ -21,6 +21,11 @@ their referenced stock are also outside its direct-containment contract; see
 visible curation work. Do not turn a prose mention or a name match into an
 identity assertion merely to claim complete chemical coverage.
 
+The separate [variant prose inventory](variant_prose_inventory.md) produces a
+reproducible `UNREVIEWED` queue with exact modification text and evidence.
+It supports scientific curation of this gap; its rows are not new structured
+ingredient occurrences or approved additions to MIM's frozen intake.
+
 `ingredients_list.tsv` is the compact inventory. The lossless exchange surface
 is `ingredient_occurrences.tsv`, identified by
 `(recipe_id, component_field, component_index)` **within the pinned source

@@ -2918,5 +2918,18 @@ apply-causal-graphs input_file normalized_dir="data/normalized_yaml" mode="--dry
 validate-causal-graphs path="data/normalized_yaml":
     uv run python scripts/validate_causal_graphs.py "{{path}}"
 
+# Inventory free-text variant modifications without generating ingredient identities.
+[group('Reporting')]
+plan-variant-prose:
+    uv run --frozen python scripts/inventory_variant_prose.py --plan
+
+[group('Reporting')]
+build-variant-prose output_dir:
+    uv run --frozen python scripts/inventory_variant_prose.py --output-dir "{{output_dir}}"
+
+[group('Reporting')]
+verify-variant-prose bundle_dir:
+    uv run --frozen python scripts/inventory_variant_prose.py --verify "{{bundle_dir}}"
+
 
 
