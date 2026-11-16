@@ -1,0 +1,2718 @@
+{
+  "schema_version": 1,
+  "source_queue_sha256": "dd5faea741da0a11e8eb86cad2976e8bf51d42884c601e96973eba61748330ca",
+  "scope": "All96assigned algae/archaea rows explicitly disposed; only listed source-supported assertions proposed. Partial rows retain unresolved portions in reason. No recipe edits, ontology IDs, human REVIEWED status or full-record/release certification.",
+  "source_inspections": [
+    {
+      "key": "tsuji",
+      "reference": "doi:10.1007/s10126-021-10037-4",
+      "path": ".temp/variant-683/sources/tsuji-2021-table-s1/source.pdf",
+      "sha256": "1cc2581bf2363ea89d31f170ae398b94d1125c647cc1c655a54417e6c73aac98",
+      "locator": "Table S1, component rows and sodium footnotes",
+      "access_scope": "full primary source"
+    },
+    {
+      "key": "spectrum",
+      "reference": "doi:10.1128/spectrum.00069-23",
+      "path": ".temp/variant-683/sources/2asw-spectrum-2023/source.xml",
+      "sha256": "35398747e184a6699fa12f46288848dcc97932d087fa49e4056ea90f2debf22d",
+      "locator": "Materials and Methods, algal strains and cultivation",
+      "access_scope": "full primary source"
+    },
+    {
+      "key": "hiibel",
+      "reference": "doi:10.3389/fenrg.2015.00020",
+      "path": ".temp/variant-683/sources/hiibel-2015/source.html",
+      "sha256": "8d2ad2e2716dc194452015adc5b385057c1eb42a7e4e6b89eba9af2f00792d5a",
+      "locator": "Materials and Methods, microalgal strains and maintenance media",
+      "access_scope": "full primary source"
+    },
+    {
+      "key": "synecho",
+      "reference": "doi:10.3389/fmicb.2015.00326",
+      "path": ".temp/variant-683/sources/synechocystis-2015/source.xml",
+      "sha256": "8a9f8167ee088489e4fab55e6733732c256c33d5cd42706bcf81b6e0da130dcc",
+      "locator": "Results, ASW nitrogen/phosphorus additions and Figure 2 buffered condition",
+      "access_scope": "full primary source"
+    },
+    {
+      "key": "tetraselmis",
+      "reference": "doi:10.1016/j.biortech.2017.04.008",
+      "path": ".temp/variant-683/sources/tetraselmis-2017/metadata.json",
+      "sha256": "fb247862ad8e43d35632dabcb1a362917971fd685d8a6a1fe3872aecbf217b52",
+      "locator": "Primary article abstract, second-stage N repletion",
+      "access_scope": "primary abstract/metadata only"
+    },
+    {
+      "key": "spirulina",
+      "reference": "doi:10.1007/s00449-016-1726-2",
+      "path": ".temp/variant-683/sources/spirulina-2017/source.xml",
+      "sha256": "3447430b8c29a069ccf9c0f19409da2c1141faa43d104d450111e0a71b878bf8",
+      "locator": "Materials and methods, filtered effluent preparation and timed additions",
+      "access_scope": "full primary source"
+    },
+    {
+      "key": "fertilizer",
+      "reference": "doi:10.1016/j.biortech.2025.132777",
+      "path": ".temp/variant-683/sources/tap-fertilizer-2025/metadata.json",
+      "sha256": "3f738652b616e23152d9ce0740fc5f05ebabd63716e5a17cdc5482b56643d375",
+      "locator": "Primary article abstract, HAc-NaAc replacement of Tris",
+      "access_scope": "primary abstract/metadata only"
+    },
+    {
+      "key": "emami",
+      "reference": "doi:10.1038/srep10036",
+      "path": ".temp/variant-683/sources/emami-2015/source.xml",
+      "sha256": "7e3ddf65f336955a2c875b18361e878ffcf16bc341fe9b404308d014df4c3319",
+      "locator": "Methods, culture conditions and bacterial-community antibiotic experiment",
+      "access_scope": "full primary source"
+    },
+    {
+      "key": "bbmerds",
+      "reference": "https://www.ccap.ac.uk/wp-content/uploads/MR_BB_MErds.pdf",
+      "path": ".temp/variant-683/sources/ccap-bb-merds/source.pdf",
+      "sha256": "a1d670463c303b10c3e4faebbd05da470d871c76dfb2867d212a7f5f2fc24dc7",
+      "locator": "Page 1, 8:2 or 1:1 mixture; named BB and MErds recipes",
+      "access_scope": "full primary source"
+    },
+    {
+      "key": "f2si",
+      "reference": "https://www.ccap.ac.uk/wp-content/uploads/MR_f2Si.pdf",
+      "path": ".temp/variant-683/sources/ccap-f2-si/source.pdf",
+      "sha256": "1a4a451f7a926a815288c9d915cc9ec8b3fc36ab210c041f0f83f9365d9bfc06",
+      "locator": "Page 2, f/2 + Si Modified, direct addition replacing stock 5",
+      "access_scope": "full primary source"
+    },
+    {
+      "key": "reed",
+      "reference": "doi:10.1128/jb.183.24.7007-7016.2001",
+      "path": ".temp/variant-683/sources/reed-2001-html/source.html",
+      "sha256": "e021125a6782cddd9a7a1195355baf544a993506410413a99b066fbda71ffa39",
+      "locator": "Materials and Methods, Archaeoglobus growth and harvest",
+      "access_scope": "full primary source"
+    },
+    {
+      "key": "mayer",
+      "reference": "doi:10.1128/JB.06130-11",
+      "path": ".temp/variant-683/sources/mayer-2012-html/source.html",
+      "sha256": "ccbf5dabb3b3725c20426192da7551509cc04ceb08b6fda0b5d572e51f239905",
+      "locator": "Materials and Methods, acetate determination; separate 0.05% passage retained as a limit",
+      "access_scope": "full primary source"
+    },
+    {
+      "key": "dsm119",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+      "path": ".temp/variant-683/sources/dsmz-119/source.pdf",
+      "sha256": "65295918764de4ed5b73ce773ab4057a7183ecf8bfd7fff0d02393d901b41a2a",
+      "locator": "Pages 1–2, exact DSM strain-specific instructions",
+      "access_scope": "full primary source"
+    },
+    {
+      "key": "pyrococcus",
+      "reference": "doi:10.1128/AEM.01366-10",
+      "path": ".temp/variant-683/sources/pyrococcus-2011/metadata.json",
+      "sha256": "2d17c1ae2ea414e2ad9e25e3585fd08691e17c577b029405d7d8148c30b63d46",
+      "locator": "Primary article abstract, serial adaptation on CF11 cellulose",
+      "access_scope": "primary abstract/metadata only"
+    },
+    {
+      "key": "willard",
+      "reference": "doi:10.1128/mbio.01033-24",
+      "path": ".temp/variant-683/sources/willard-2024/source.xml",
+      "sha256": "7808bc365628f8d1a71ab0a20135f2f0619a19fc6db1d587961007e8c0ecaba3",
+      "locator": "Materials and Methods, low-sulfate Brock's salts and species-specific supplements",
+      "access_scope": "full primary source"
+    },
+    {
+      "key": "auernik",
+      "reference": "doi:10.1128/AEM.02019-07",
+      "path": ".temp/variant-683/sources/auernik-2008-html/source.html",
+      "sha256": "e283da0ec7c895f41a753e63ef7a4ce5916d2a12ec5d39d6eb8042fdad2da5c2",
+      "locator": "Materials and Methods, transcriptomics versus scanning-electron-microscopy cultures",
+      "access_scope": "full primary source"
+    }
+  ],
+  "records": [
+    {
+      "path": "data/normalized_yaml/algae/2asw.yaml",
+      "recipe_id": "CultureMech:000038",
+      "expected_sha256": "0ba654a5395797550d80a1b3f3e48930862a2188d4568d58c6cda673c47f1ee7",
+      "variants": [
+        {
+          "variant_index": 1,
+          "variant_name": "modified_f_2asw_sodium_response",
+          "ingredient_changes": [
+            {
+              "action": "SET_CONCENTRATION",
+              "ingredient": {
+                "preferred_term": "NaCl",
+                "concentration": {
+                  "value": "0; 10; 20; 50; 200; 423",
+                  "unit": "MILLIMOLAR"
+                },
+                "notes": "Discrete alternative NaCl settings; zero means no NaCl addition. These are not summed or treated as a continuous dose. Trace salts contribute background sodium; no total sodium concentration or universal parent equivalence asserted."
+              },
+              "stage": "separate sodium-response modified F/2ASW formulations",
+              "evidence": [
+                {
+                  "reference": "doi:10.1007/s10126-021-10037-4",
+                  "supports": "SUPPORT",
+                  "snippet": "0, 10, 20, 50, 200, or 423",
+                  "explanation": "Table S1, component rows and sodium footnotes; primary source inspected 2026-11-16. Discrete alternative NaCl settings; zero means no NaCl addition. These are not summed or treated as a continuous dose. Trace salts contribute background sodium; no total sodium concentration or universal parent equivalence asserted."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 1,
+              "source_text": "Manipulate sodium by changing NaCl added to the basal artificial seawater."
+            }
+          ]
+        },
+        {
+          "variant_index": 2,
+          "variant_name": "2asw_1_5_m_nacl",
+          "ingredient_changes": [
+            {
+              "action": "SET_CONCENTRATION",
+              "ingredient": {
+                "preferred_term": "NaCl",
+                "concentration": {
+                  "value": "1.5",
+                  "unit": "MOLAR"
+                },
+                "notes": "Source states medium concentration, not stock strength or a dose increment; other constituents and parent equivalence remain unresolved."
+              },
+              "stage": "study-specific D. salina CCAP19/18 cultivation in 2ASW",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/spectrum.00069-23",
+                  "supports": "SUPPORT",
+                  "snippet": "1.5 M NaCl",
+                  "explanation": "Materials and Methods, algal strains and cultivation; primary source inspected 2026-11-16. Source states medium concentration, not stock strength or a dose increment; other constituents and parent equivalence remain unresolved."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 0,
+              "source_text": "The study reports 1.5 M NaCl in its 2ASW culture medium. This is a reported medium concentration, not a stock concentration or inferred amount to add."
+            }
+          ]
+        },
+        {
+          "variant_index": 3,
+          "variant_name": "2asw_sea_salt_substitution_33_6_g_l",
+          "ingredient_changes": [
+            {
+              "action": "REPLACE",
+              "ingredient": {
+                "preferred_term": "sea salts",
+                "concentration": {
+                  "value": "33.6",
+                  "unit": "G_PER_L"
+                },
+                "notes": "Undefined sea-salt mixture replaces NaCl. No salt-product identity, constituent expansion, NaCl-equivalent molarity or parent seawater equivalence is claimed."
+              },
+              "stage": "modified 2ASW maintenance medium for the study's Dunaliella cultures",
+              "evidence": [
+                {
+                  "reference": "doi:10.3389/fenrg.2015.00020",
+                  "supports": "SUPPORT",
+                  "snippet": "33.6",
+                  "explanation": "Materials and Methods, microalgal strains and maintenance media; primary source inspected 2026-11-16. Undefined sea-salt mixture replaces NaCl. No salt-product identity, constituent expansion, NaCl-equivalent molarity or parent seawater equivalence is claimed."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "replaced_ingredient": {
+                "preferred_term": "NaCl"
+              },
+              "source_modification_index": 0,
+              "source_text": "Use the study-reported 33.6 g/L sea salts in place of NaCl; this is an undefined sea-salt mixture, not 33.6 g/L pure sodium chloride."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/Artificial_Seawater_Medium.yaml",
+      "recipe_id": "CultureMech:000025",
+      "expected_sha256": "373e49b2f6512d894e0278f6c6cfcec054733d46abb373928e638d4a53bbbe01",
+      "variants": [
+        {
+          "variant_index": 1,
+          "variant_name": "np_supplemented_asw_synechocystis_pcc6803",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "NH4Cl",
+                "concentration": {
+                  "value": "5",
+                  "unit": "MILLIMOLAR"
+                },
+                "notes": "Names resolved from the primary Results, not guessed from generic nitrogen/phosphorus prose. Does not certify equivalence to the local UTEX artificial-seawater parent."
+              },
+              "stage": "nitrogen-and-phosphorus-supplemented Marine Art SF-1 ASW",
+              "evidence": [
+                {
+                  "reference": "doi:10.3389/fmicb.2015.00326",
+                  "supports": "SUPPORT",
+                  "snippet": "5 mM NH4Cl",
+                  "explanation": "Results, ASW nitrogen/phosphorus additions and Figure 2 buffered condition; primary source inspected 2026-11-16. Names resolved from the primary Results, not guessed from generic nitrogen/phosphorus prose. Does not certify equivalence to the local UTEX artificial-seawater parent."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 1,
+              "source_text": "Supplement with nitrogen and phosphorus sources."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "K2HPO4",
+                "concentration": {
+                  "value": "0.22",
+                  "unit": "MILLIMOLAR"
+                },
+                "notes": "Explicit phosphorus source; no hydrate or other phosphate identity inferred."
+              },
+              "stage": "nitrogen-and-phosphorus-supplemented Marine Art SF-1 ASW",
+              "evidence": [
+                {
+                  "reference": "doi:10.3389/fmicb.2015.00326",
+                  "supports": "SUPPORT",
+                  "snippet": "0.22 mM K2HPO4",
+                  "explanation": "Results, ASW nitrogen/phosphorus additions and Figure 2 buffered condition; primary source inspected 2026-11-16. Explicit phosphorus source; no hydrate or other phosphate identity inferred."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 1,
+              "source_text": "Supplement with nitrogen and phosphorus sources."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "HEPES-KOH buffer",
+                "concentration": {
+                  "value": "20",
+                  "unit": "MILLIMOLAR"
+                },
+                "notes": "The source calls the preparation HEPES-KOH. No separate KOH dose, chemical salt form or buffer-component stoichiometry inferred."
+              },
+              "stage": "buffered ASW with nitrogen and phosphorus sources, pH7.8 buffer",
+              "evidence": [
+                {
+                  "reference": "doi:10.3389/fmicb.2015.00326",
+                  "supports": "SUPPORT",
+                  "snippet": "20 mM HEPES",
+                  "explanation": "Results, ASW nitrogen/phosphorus additions and Figure 2 buffered condition; primary source inspected 2026-11-16. The source calls the preparation HEPES-KOH. No separate KOH dose, chemical salt form or buffer-component stoichiometry inferred."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 2,
+              "source_text": "Add HEPES buffer when improved overall growth is needed."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/F_2_Medium.yaml",
+      "recipe_id": "CultureMech:000170",
+      "expected_sha256": "68ba6e487cab812d01936c081e684c573c93e80554e4f3a63ab54c46423a84cf",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "n_replete_second_stage_tetraselmis_marina",
+          "ingredient_changes": [
+            {
+              "action": "SET_CONCENTRATION",
+              "ingredient": {
+                "preferred_term": "NaNO3",
+                "concentration": {
+                  "value": "4.41",
+                  "unit": "MILLIMOLAR"
+                },
+                "notes": "Primary abstract was inspected; full Methods unavailable. This is the second-stage reported condition, not an amount to add to the first stage or a universal F/2 concentration."
+              },
+              "stage": "three-day nitrogen-replete second stage after seven-day F/2 culture",
+              "evidence": [
+                {
+                  "reference": "doi:10.1016/j.biortech.2017.04.008",
+                  "supports": "SUPPORT",
+                  "snippet": "4.41mM",
+                  "explanation": "Primary article abstract, second-stage N repletion; primary source inspected 2026-11-16. Primary abstract was inspected; full Methods unavailable. This is the second-stage reported condition, not an amount to add to the first stage or a universal F/2 concentration."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 1,
+              "source_text": "Shift to a nitrogen-replete second stage with 4.41 mM NaNO3 for three days."
+            }
+          ]
+        },
+        {
+          "variant_index": 2,
+          "variant_name": "modified_f_2asw_sodium_response",
+          "ingredient_changes": [
+            {
+              "action": "SET_CONCENTRATION",
+              "ingredient": {
+                "preferred_term": "sodium selenite",
+                "concentration": {
+                  "value": "1",
+                  "unit": "NANOMOLAR"
+                },
+                "notes": "TableS1 trace-element heading is micromolar:0.001micromolar×1000=1nanomolar. Not10nM and not an increment atop canonical F/2."
+              },
+              "stage": "complete modified F/2ASW formulation, TableS1",
+              "evidence": [
+                {
+                  "reference": "doi:10.1007/s10126-021-10037-4",
+                  "supports": "SUPPORT",
+                  "snippet": "0.001",
+                  "explanation": "Table S1, component rows and sodium footnotes; primary source inspected 2026-11-16. TableS1 trace-element heading is micromolar:0.001micromolar×1000=1nanomolar. Not10nM and not an increment atop canonical F/2."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 0,
+              "source_text": "Use the modified F/2ASW formulation in Table S1, including 1 nM sodium selenite and 0.1 mM sodium metasilicate nonahydrate."
+            },
+            {
+              "action": "SET_CONCENTRATION",
+              "ingredient": {
+                "preferred_term": "sodium metasilicate nonahydrate",
+                "concentration": {
+                  "value": "0.1",
+                  "unit": "MILLIMOLAR"
+                },
+                "notes": "Na2SiO3.9H2O under basal seawater components(mM). Hydrate specified by the source. No full parent equivalence or additional salt mass inferred."
+              },
+              "stage": "complete modified F/2ASW formulation, TableS1",
+              "evidence": [
+                {
+                  "reference": "doi:10.1007/s10126-021-10037-4",
+                  "supports": "SUPPORT",
+                  "snippet": "0.1",
+                  "explanation": "Table S1, component rows and sodium footnotes; primary source inspected 2026-11-16. Na2SiO3.9H2O under basal seawater components(mM). Hydrate specified by the source. No full parent equivalence or additional salt mass inferred."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 0,
+              "source_text": "Use the modified F/2ASW formulation in Table S1, including 1 nM sodium selenite and 0.1 mM sodium metasilicate nonahydrate."
+            },
+            {
+              "action": "SET_CONCENTRATION",
+              "ingredient": {
+                "preferred_term": "NaCl",
+                "concentration": {
+                  "value": "0; 10; 20; 50; 200; 423",
+                  "unit": "MILLIMOLAR"
+                },
+                "notes": "Discrete alternative NaCl settings; zero means no NaCl addition. These are not summed or treated as a continuous dose. Trace salts contribute background sodium; no total sodium concentration or universal parent equivalence asserted."
+              },
+              "stage": "separate sodium-response modified F/2ASW formulations",
+              "evidence": [
+                {
+                  "reference": "doi:10.1007/s10126-021-10037-4",
+                  "supports": "SUPPORT",
+                  "snippet": "0, 10, 20, 50, 200, or 423",
+                  "explanation": "Table S1, component rows and sodium footnotes; primary source inspected 2026-11-16. Discrete alternative NaCl settings; zero means no NaCl addition. These are not summed or treated as a continuous dose. Trace salts contribute background sodium; no total sodium concentration or universal parent equivalence asserted."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 1,
+              "source_text": "Adjust sodium concentration by altering NaCl addition to the basal medium."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/Spirulina_Medium.yaml",
+      "recipe_id": "CultureMech:000232",
+      "expected_sha256": "a96c3df375c1c181fd525d974411d7c5af9bf624bb9119b783c17c2603d961af",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "biogas_effluent_based_arthrospira_platensis",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "filtered biogas-process effluent",
+                "notes": "Primary Methods: filtered plant-residue digester effluent in carbonate buffer;1.5%(v/v) at start, a similar volume after3days,3% of initial volume after6days. These sequential additions must not become a6% initial concentration. No constituent expansion or assertion that all canonical Spirulina ingredients remain present."
+              },
+              "stage": "effluent-based alternative Spirulina culture with sequential nutrient feeding",
+              "evidence": [
+                {
+                  "reference": "doi:10.1007/s00449-016-1726-2",
+                  "supports": "SUPPORT",
+                  "snippet": "filtered effluent",
+                  "explanation": "Materials and methods, filtered effluent preparation and timed additions; primary source inspected 2026-11-16. Primary Methods: filtered plant-residue digester effluent in carbonate buffer;1.5%(v/v) at start, a similar volume after3days,3% of initial volume after6days. These sequential additions must not become a6% initial concentration. No constituent expansion or assertion that all canonical Spirulina ingredients remain present."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 0,
+              "source_text": "Use effluent from biogas production as the nutrient source."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/TAP_Medium.yaml",
+      "recipe_id": "CultureMech:000233",
+      "expected_sha256": "ab4575126146c466af3465e08a4247a693185aabf4b447a38aed3b68af8ce1a2",
+      "variants": [
+        {
+          "variant_index": 1,
+          "variant_name": "ab_wsf_tap_derived_chlorella_sorokiniana",
+          "ingredient_changes": [
+            {
+              "action": "REPLACE",
+              "ingredient": {
+                "preferred_term": "HAc-NaAc buffer",
+                "notes": "Primary abstract explicitly says HAc-NaAc replaces Tris. Keep the source abbreviation at mixture level; no acetate salt hydration, buffer ratio, dose, final concentration or full TAP-equivalence inferred."
+              },
+              "stage": "Ab-WSF medium pH-balancing formulation",
+              "evidence": [
+                {
+                  "reference": "doi:10.1016/j.biortech.2025.132777",
+                  "supports": "SUPPORT",
+                  "snippet": "HAc-NaAc",
+                  "explanation": "Primary article abstract, HAc-NaAc replacement of Tris; primary source inspected 2026-11-16. Primary abstract explicitly says HAc-NaAc replaces Tris. Keep the source abbreviation at mixture level; no acetate salt hydration, buffer ratio, dose, final concentration or full TAP-equivalence inferred."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "replaced_ingredient": {
+                "preferred_term": "Tris"
+              },
+              "source_modification_index": 1,
+              "source_text": "Replace Tris in TAP medium with HAc-NaAc for pH balance."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/ajs.yaml",
+      "recipe_id": "CultureMech:000041",
+      "expected_sha256": "6a96f45eba5e91e591a4f9160c43422b561ed8c281d07ecaa9901550feabb2ba",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "ajs_hydrochloric_acid_ph_1_5",
+          "ingredient_changes": [
+            {
+              "action": "REPLACE",
+              "ingredient": {
+                "preferred_term": "hydrochloric acid",
+                "notes": "Emami Methods names HCl; separately inspected CCAP AJS page1 names concentrated H2SO4. No HCl strength/volume or replacement arithmetic. Other recipe details remain unresolved."
+              },
+              "stage": "AJS study cultivation pH adjustment to1.5",
+              "evidence": [
+                {
+                  "reference": "doi:10.1038/srep10036",
+                  "supports": "SUPPORT",
+                  "snippet": "acidified to pH 1.5 using hydrochloric acid",
+                  "explanation": "Methods, culture conditions and bacterial-community antibiotic experiment; primary source inspected 2026-11-16. Emami Methods names HCl; separately inspected CCAP AJS page1 names concentrated H2SO4. No HCl strength/volume or replacement arithmetic. Other recipe details remain unresolved."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "replaced_ingredient": {
+                "preferred_term": "sulfuric acid"
+              },
+              "source_modification_index": 0,
+              "source_text": "Use hydrochloric acid for the reported adjustment to pH 1.5, rather than inheriting the canonical sulfuric-acid instruction. HCl strength and dose are not quantified; no dose or substitution arithmetic is inferred."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/bb_merds.yaml",
+      "recipe_id": "CultureMech:000054",
+      "expected_sha256": "c05d7193d15a05bb7e445d382297a556b8208ab347d403d919fd5511b0570e62",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "bb_merds_8_2",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "Bold's Basal Medium (BB)",
+                "concentration": {
+                  "value": "800",
+                  "unit": "ML_PER_L"
+                },
+                "notes": "Selected source ratio gives800mL prepared BB and200mL prepared MErds per1L mixture. These are source recipe inputs, not additional volumes atop an already completed parent medium; other ratio is separate."
+              },
+              "stage": "preparation of the selected BB:MErds blend before autoclaving",
+              "evidence": [
+                {
+                  "reference": "https://www.ccap.ac.uk/wp-content/uploads/MR_BB_MErds.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "8:2 mixture or 1:1 mixture",
+                  "explanation": "Page 1, 8:2 or 1:1 mixture; named BB and MErds recipes; primary source inspected 2026-11-16. Selected source ratio gives800mL prepared BB and200mL prepared MErds per1L mixture. These are source recipe inputs, not additional volumes atop an already completed parent medium; other ratio is separate."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 0,
+              "source_text": "Mix 800 mL BB with 200 mL MErds per litre."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "MErds medium",
+                "concentration": {
+                  "value": "200",
+                  "unit": "ML_PER_L"
+                },
+                "notes": "Prepared modified Foyns Erdschreiber medium, retained as a named mixture without expanding stock constituents."
+              },
+              "stage": "preparation of the selected BB:MErds blend before autoclaving",
+              "evidence": [
+                {
+                  "reference": "https://www.ccap.ac.uk/wp-content/uploads/MR_BB_MErds.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "8:2 mixture or 1:1 mixture",
+                  "explanation": "Page 1, 8:2 or 1:1 mixture; named BB and MErds recipes; primary source inspected 2026-11-16. Prepared modified Foyns Erdschreiber medium, retained as a named mixture without expanding stock constituents."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 0,
+              "source_text": "Mix 800 mL BB with 200 mL MErds per litre."
+            }
+          ]
+        },
+        {
+          "variant_index": 1,
+          "variant_name": "bb_merds_1_1",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "Bold's Basal Medium (BB)",
+                "concentration": {
+                  "value": "500",
+                  "unit": "ML_PER_L"
+                },
+                "notes": "Selected source ratio gives500mL prepared BB and500mL prepared MErds per1L mixture. These are source recipe inputs, not additional volumes atop an already completed parent medium; other ratio is separate."
+              },
+              "stage": "preparation of the selected BB:MErds blend before autoclaving",
+              "evidence": [
+                {
+                  "reference": "https://www.ccap.ac.uk/wp-content/uploads/MR_BB_MErds.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "8:2 mixture or 1:1 mixture",
+                  "explanation": "Page 1, 8:2 or 1:1 mixture; named BB and MErds recipes; primary source inspected 2026-11-16. Selected source ratio gives500mL prepared BB and500mL prepared MErds per1L mixture. These are source recipe inputs, not additional volumes atop an already completed parent medium; other ratio is separate."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 0,
+              "source_text": "Mix 500 mL BB with 500 mL MErds per litre."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "MErds medium",
+                "concentration": {
+                  "value": "500",
+                  "unit": "ML_PER_L"
+                },
+                "notes": "Prepared modified Foyns Erdschreiber medium, retained as a named mixture without expanding stock constituents."
+              },
+              "stage": "preparation of the selected BB:MErds blend before autoclaving",
+              "evidence": [
+                {
+                  "reference": "https://www.ccap.ac.uk/wp-content/uploads/MR_BB_MErds.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "8:2 mixture or 1:1 mixture",
+                  "explanation": "Page 1, 8:2 or 1:1 mixture; named BB and MErds recipes; primary source inspected 2026-11-16. Prepared modified Foyns Erdschreiber medium, retained as a named mixture without expanding stock constituents."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 0,
+              "source_text": "Mix 500 mL BB with 500 mL MErds per litre."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/f_2.yaml",
+      "recipe_id": "CultureMech:000149",
+      "expected_sha256": "ba3cda6e26c8dfcd9e8e5557d3cf9c60f8f6b053567ae57a3bb825809df61017",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "f_2_silicate_supplement_1_06e_4_m",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "silicate",
+                "concentration": {
+                  "value": "1.06e-4",
+                  "unit": "MOLAR"
+                },
+                "notes": "Preserve reported supplement concentration. No sodium salt, hydrate, stock composition, total silicate including base, or local f/2+Si equivalence inferred."
+              },
+              "stage": "Isochrysis galbana study-specific f/2 supplementation",
+              "evidence": [
+                {
+                  "reference": "doi:10.1038/srep10036",
+                  "supports": "SUPPORT",
+                  "snippet": "1.06",
+                  "explanation": "Methods, culture conditions and bacterial-community antibiotic experiment; primary source inspected 2026-11-16. Preserve reported supplement concentration. No sodium salt, hydrate, stock composition, total silicate including base, or local f/2+Si equivalence inferred."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 0,
+              "source_text": "The study reports f/2 supplemented with 1.06e-4 M silicate. Preserve this stated supplementation concentration without assigning an unreported silicate salt, hydrate, stock recipe or additional mass conversion."
+            }
+          ]
+        },
+        {
+          "variant_index": 1,
+          "variant_name": "f_2_nitrate_supplement_29_4_mm",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "NaNO3",
+                "concentration": {
+                  "value": "29.4",
+                  "unit": "MILLIMOLAR"
+                },
+                "notes": "Source does not resolve whether the stated supplement includes background nitrate. No total concentration or stock form inferred."
+              },
+              "stage": "A. platensis study-specific f/2 supplementation, pH8",
+              "evidence": [
+                {
+                  "reference": "doi:10.1038/srep10036",
+                  "supports": "SUPPORT",
+                  "snippet": "29.4 mM NaNO3",
+                  "explanation": "Methods, culture conditions and bacterial-community antibiotic experiment; primary source inspected 2026-11-16. Source does not resolve whether the stated supplement includes background nitrate. No total concentration or stock form inferred."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 0,
+              "source_text": "The study reports f/2 supplemented with 29.4 mM NaNO3 and adjusted to pH 8. Retain the stated supplement concentration; do not infer whether it includes the base-medium nitrate or calculate a total nitrate concentration."
+            }
+          ]
+        },
+        {
+          "variant_index": 2,
+          "variant_name": "f_2_penicillin_g_dihydrostreptomycin_supplement",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "penicillin G",
+                "notes": "Reported treatment dose200micrograms/mL. Unreported salt form and stock strength remain unresolved. Untreated control and later marine-agar bacterial assay are separate."
+              },
+              "stage": "antibiotic-treated D. polymorpha f/2 cultures",
+              "evidence": [
+                {
+                  "reference": "doi:10.1038/srep10036",
+                  "supports": "SUPPORT",
+                  "snippet": "penicillin G",
+                  "explanation": "Methods, culture conditions and bacterial-community antibiotic experiment; primary source inspected 2026-11-16. Reported treatment dose200micrograms/mL. Unreported salt form and stock strength remain unresolved. Untreated control and later marine-agar bacterial assay are separate."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 0,
+              "source_text": "Reported penicillin G treatment concentration: 200 micrograms per mL in the treated f/2 culture; no unreported salt form, stock strength or conversion is assigned."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "dihydrostreptomycin sulphate",
+                "notes": "Reported treatment dose50micrograms/mL, preserved literally without silent unit conversion. Not streptomycin; no hydrate or stock concentration inferred."
+              },
+              "stage": "antibiotic-treated D. polymorpha f/2 cultures",
+              "evidence": [
+                {
+                  "reference": "doi:10.1038/srep10036",
+                  "supports": "SUPPORT",
+                  "snippet": "dihydrostreptomycin sulphate",
+                  "explanation": "Methods, culture conditions and bacterial-community antibiotic experiment; primary source inspected 2026-11-16. Reported treatment dose50micrograms/mL, preserved literally without silent unit conversion. Not streptomycin; no hydrate or stock concentration inferred."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 1,
+              "source_text": "Reported dihydrostreptomycin sulphate treatment concentration: 50 micrograms per mL in the same treated culture; not streptomycin, not a stock concentration, and no hydrate assumption."
+            }
+          ]
+        },
+        {
+          "variant_index": 3,
+          "variant_name": "f_2_2asw_vitamin_replacement_hiibel_2015",
+          "ingredient_changes": [
+            {
+              "action": "REPLACE",
+              "ingredient": {
+                "preferred_term": "2ASW vitamin solution",
+                "notes": "Source reports replacement and additional vitamin components but supplies no identities, dose or composition. Mismatched Gomord citation cannot fill these gaps; no claim of equivalence to a local stock."
+              },
+              "stage": "modified f/2 maintenance medium for study Nannochloropsis cultures",
+              "evidence": [
+                {
+                  "reference": "doi:10.3389/fenrg.2015.00020",
+                  "supports": "SUPPORT",
+                  "snippet": "vitamin solution from the 2ASW medium",
+                  "explanation": "Materials and Methods, microalgal strains and maintenance media; primary source inspected 2026-11-16. Source reports replacement and additional vitamin components but supplies no identities, dose or composition. Mismatched Gomord citation cannot fill these gaps; no claim of equivalence to a local stock."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "replaced_ingredient": {
+                "preferred_term": "original f/2 vitamin solution"
+              },
+              "source_modification_index": 0,
+              "source_text": "The vitamin solution described as coming from 2ASW replaces the original f/2 vitamin solution; the paper states it contains additional vitamin components."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/f_2_si.yaml",
+      "recipe_id": "CultureMech:000148",
+      "expected_sha256": "f5b3851fb34845144659b3b759efd7efd4ad2c4e6d8ad130c4b31a28ed05632c",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "f_2_si_modified",
+          "ingredient_changes": [
+            {
+              "action": "REPLACE",
+              "ingredient": {
+                "preferred_term": "sodium metasilicate nonahydrate",
+                "concentration": {
+                  "value": "0.1705",
+                  "unit": "G_PER_L"
+                },
+                "notes": "Page2 says omit stock5 and instead add Na2SiO3.9H2O directly per litre. Parent stock5 composition is not separately added; no hydrate conversion."
+              },
+              "stage": "CCAP f/2+Si Modified direct-addition preparation",
+              "evidence": [
+                {
+                  "reference": "https://www.ccap.ac.uk/wp-content/uploads/MR_f2Si.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "0.1705 g",
+                  "explanation": "Page 2, f/2 + Si Modified, direct addition replacing stock 5; primary source inspected 2026-11-16. Page2 says omit stock5 and instead add Na2SiO3.9H2O directly per litre. Parent stock5 composition is not separately added; no hydrate conversion."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "replaced_ingredient": {
+                "preferred_term": "stock 5 sodium metasilicate solution"
+              },
+              "source_modification_index": 0,
+              "source_text": "Omit stock 5 and add 0.1705 g/L sodium metasilicate nonahydrate directly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/archaea/archaeoglobus_medium_dsm_399.yaml",
+      "recipe_id": "CultureMech:009220",
+      "expected_sha256": "bc3f31daaf7fb549ae44d034375d60f1de6a6c063b807273e4e7ed5dd0005112",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "stl_medium_archaeoglobus_variant",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "Tris",
+                "concentration": {
+                  "value": "20",
+                  "unit": "MILLIMOLAR"
+                },
+                "notes": "Only Reed2001 alternative buffer is structured; Hartzell PIPES preparation remains held for its primary source. Do not combine with Hartzell formulation or infer unspecified hydrate."
+              },
+              "stage": "Reed2001 modified STL cultivation of A. fulgidus",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/jb.183.24.7007-7016.2001",
+                  "supports": "SUPPORT",
+                  "snippet": "STL",
+                  "explanation": "Materials and Methods, Archaeoglobus growth and harvest; primary source inspected 2026-11-16. Only Reed2001 alternative buffer is structured; Hartzell PIPES preparation remains held for its primary source. Do not combine with Hartzell formulation or infer unspecified hydrate."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 1,
+              "source_text": "PIPES buffer 20 ml of 1 M per L; base medium adjusted to pH 6.7 (Hartzell 1999). Reed 2001 variant uses Tris+maleic acid 20 mM each, pH 6.1."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "maleic acid",
+                "concentration": {
+                  "value": "20",
+                  "unit": "MILLIMOLAR"
+                },
+                "notes": "Only Reed2001 alternative buffer is structured; Hartzell PIPES preparation remains held for its primary source. Do not combine with Hartzell formulation or infer unspecified hydrate."
+              },
+              "stage": "Reed2001 modified STL cultivation of A. fulgidus",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/jb.183.24.7007-7016.2001",
+                  "supports": "SUPPORT",
+                  "snippet": "STL",
+                  "explanation": "Materials and Methods, Archaeoglobus growth and harvest; primary source inspected 2026-11-16. Only Reed2001 alternative buffer is structured; Hartzell PIPES preparation remains held for its primary source. Do not combine with Hartzell formulation or infer unspecified hydrate."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 1,
+              "source_text": "PIPES buffer 20 ml of 1 M per L; base medium adjusted to pH 6.7 (Hartzell 1999). Reed 2001 variant uses Tris+maleic acid 20 mM each, pH 6.1."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "DL-sodium lactate",
+                "concentration": {
+                  "value": "22",
+                  "unit": "MILLIMOLAR"
+                },
+                "notes": "Only Reed2001 DL-sodium-lactate concentration structured; Hartzell30% stock7mL/L preparation remains held. Do not combine with Hartzell formulation or infer unspecified hydrate."
+              },
+              "stage": "Reed2001 modified STL cultivation of A. fulgidus",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/jb.183.24.7007-7016.2001",
+                  "supports": "SUPPORT",
+                  "snippet": "STL",
+                  "explanation": "Materials and Methods, Archaeoglobus growth and harvest; primary source inspected 2026-11-16. Only Reed2001 DL-sodium-lactate concentration structured; Hartzell30% stock7mL/L preparation remains held. Do not combine with Hartzell formulation or infer unspecified hydrate."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 2,
+              "source_text": "Carbon/electron donor: sodium lactate 7 ml of 30% (w/v) per L (Hartzell 1999); DL-sodium lactate ~22 mM (Reed 2001)."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "yeast extract",
+                "concentration": {
+                  "value": "0.5",
+                  "unit": "G_PER_L"
+                },
+                "notes": "Only Reed2001 yeast-extract condition structured; Wolfe-vitamin replacement belongs to unresolved Hartzell alternative. Do not combine with Hartzell formulation or infer unspecified hydrate."
+              },
+              "stage": "Reed2001 modified STL cultivation of A. fulgidus",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/jb.183.24.7007-7016.2001",
+                  "supports": "SUPPORT",
+                  "snippet": "STL",
+                  "explanation": "Materials and Methods, Archaeoglobus growth and harvest; primary source inspected 2026-11-16. Only Reed2001 yeast-extract condition structured; Wolfe-vitamin replacement belongs to unresolved Hartzell alternative. Do not combine with Hartzell formulation or infer unspecified hydrate."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 3,
+              "source_text": "Yeast extract 0.5 g/L (replaceable by Wolfe's vitamin mixture 10 ml/L for defined medium)."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "Na2S",
+                "concentration": {
+                  "value": "1",
+                  "unit": "MILLIMOLAR"
+                },
+                "notes": "Only Reed2001 final reductant concentrations structured; Hartzell combined-stock preparation remains held. Do not combine with Hartzell formulation or infer unspecified hydrate."
+              },
+              "stage": "Reed2001 modified STL cultivation of A. fulgidus",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/jb.183.24.7007-7016.2001",
+                  "supports": "SUPPORT",
+                  "snippet": "STL",
+                  "explanation": "Materials and Methods, Archaeoglobus growth and harvest; primary source inspected 2026-11-16. Only Reed2001 final reductant concentrations structured; Hartzell combined-stock preparation remains held. Do not combine with Hartzell formulation or infer unspecified hydrate."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 5,
+              "source_text": "Reductant: Na2S 100 mM + Na2S2O3 200 mM stock added at 0.5% v/v after autoclaving (Hartzell); Na2S/Na2S2O3 ~1 mM each (Reed)."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "Na2S2O3",
+                "concentration": {
+                  "value": "1",
+                  "unit": "MILLIMOLAR"
+                },
+                "notes": "Only Reed2001 final reductant concentrations structured; Hartzell combined-stock preparation remains held. Do not combine with Hartzell formulation or infer unspecified hydrate."
+              },
+              "stage": "Reed2001 modified STL cultivation of A. fulgidus",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/jb.183.24.7007-7016.2001",
+                  "supports": "SUPPORT",
+                  "snippet": "STL",
+                  "explanation": "Materials and Methods, Archaeoglobus growth and harvest; primary source inspected 2026-11-16. Only Reed2001 final reductant concentrations structured; Hartzell combined-stock preparation remains held. Do not combine with Hartzell formulation or infer unspecified hydrate."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 5,
+              "source_text": "Reductant: Na2S 100 mM + Na2S2O3 200 mM stock added at 0.5% v/v after autoclaving (Hartzell); Na2S/Na2S2O3 ~1 mM each (Reed)."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "resazurin",
+                "notes": "Source says0.2% resazurin was added without an unambiguous final-dose basis/stock volume; no concentration promoted. Stored biomass underN2 is not evidence of culture sparging."
+              },
+              "stage": "Reed2001 modified STL reduction indicator",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/jb.183.24.7007-7016.2001",
+                  "supports": "SUPPORT",
+                  "snippet": "resazurin",
+                  "explanation": "Materials and Methods, Archaeoglobus growth and harvest; primary source inspected 2026-11-16. Source says0.2% resazurin was added without an unambiguous final-dose basis/stock volume; no concentration promoted. Stored biomass underN2 is not evidence of culture sparging."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 6,
+              "source_text": "Resazurin redox indicator; anaerobic, boiled and N2-sparged; good growth 75-82C (Hartzell), 83C in glass carboys (Reed)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/archaea/ignicoccus_medium_for_dsm_18386.yaml",
+      "recipe_id": "CultureMech:009166",
+      "expected_sha256": "1265b959150df3f4a232f5d1e531f4504731f4f865dbce7ac7f6bdffec960645",
+      "variants": [
+        {
+          "variant_index": 1,
+          "variant_name": "half_sme_ignicoccus_plus_0_1pct_yeast_extract",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "yeast extract",
+                "concentration": {
+                  "value": "0.1",
+                  "unit": "PERCENT_W_V"
+                },
+                "notes": "Source also reports0.05% for a separate ACS-dependence/acetate-uptake setup. Do not generalize0.1% across every experiment or combine the two doses."
+              },
+              "stage": "I. hospitalis mixotrophic culture for acetate determination",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/JB.06130-11",
+                  "supports": "SUPPORT",
+                  "snippet": "0.1% [wt/vol] yeast extract",
+                  "explanation": "Materials and Methods, acetate determination; separate 0.05% passage retained as a limit; primary source inspected 2026-11-16. Source also reports0.05% for a separate ACS-dependence/acetate-uptake setup. Do not generalize0.1% across every experiment or combine the two doses."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 0,
+              "source_text": "Add yeast extract to 0.1% (w/v)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/archaea/methanobacterium_medium.yaml",
+      "recipe_id": "CultureMech:000643",
+      "expected_sha256": "67073349f3c843dd14d6c8060e1b58298f57f03d0aaee43dcdb0fda1ff927599",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "For DSM 1093, DSM 1125, DSM 11977, DSM 11978, DSM 11995, DSM 16643",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "Wolin's vitamin solution (10x)",
+                "concentration": {
+                  "value": "1",
+                  "unit": "ML_PER_L"
+                },
+                "notes": "Named10x solution refers to medium120; constituent composition not expanded."
+              },
+              "stage": "listed DSM strains after autoclaving from sterile anoxic stocks",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "1 ml/l Wolin's vitamin solution",
+                  "explanation": "Pages 1–2, exact DSM strain-specific instructions; primary source inspected 2026-11-16. Named10x solution refers to medium120; constituent composition not expanded."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 0,
+              "source_text": "Supplement medium after autoclaving with 1 ml/l Wolin's vitamin solution (10x, see medium 120), 0.30 g/l DL-dithiothreitol, and 0.15 g/l coenzyme M (2-mercaptoethanesulfonic acid) from anoxic stock solutions sterilized by filtration. Omit Na2S x 9 H2O and L-Cysteine HCl x H2O."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "DL-dithiothreitol",
+                "concentration": {
+                  "value": "0.30",
+                  "unit": "G_PER_L"
+                }
+              },
+              "stage": "listed DSM strains after autoclaving from sterile anoxic stocks",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "0.30",
+                  "explanation": "Pages 1–2, exact DSM strain-specific instructions; primary source inspected 2026-11-16. "
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 0,
+              "source_text": "Supplement medium after autoclaving with 1 ml/l Wolin's vitamin solution (10x, see medium 120), 0.30 g/l DL-dithiothreitol, and 0.15 g/l coenzyme M (2-mercaptoethanesulfonic acid) from anoxic stock solutions sterilized by filtration. Omit Na2S x 9 H2O and L-Cysteine HCl x H2O."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "2-mercaptoethanesulfonic acid (coenzyme M)",
+                "concentration": {
+                  "value": "0.15",
+                  "unit": "G_PER_L"
+                },
+                "notes": "Acid identity explicit; no sodium salt inferred."
+              },
+              "stage": "listed DSM strains after autoclaving from sterile anoxic stocks",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "0.15 g/l coenzyme M",
+                  "explanation": "Pages 1–2, exact DSM strain-specific instructions; primary source inspected 2026-11-16. Acid identity explicit; no sodium salt inferred."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 0,
+              "source_text": "Supplement medium after autoclaving with 1 ml/l Wolin's vitamin solution (10x, see medium 120), 0.30 g/l DL-dithiothreitol, and 0.15 g/l coenzyme M (2-mercaptoethanesulfonic acid) from anoxic stock solutions sterilized by filtration. Omit Na2S x 9 H2O and L-Cysteine HCl x H2O."
+            },
+            {
+              "action": "REMOVE",
+              "ingredient": {
+                "preferred_term": "Na2S x 9 H2O"
+              },
+              "stage": "listed DSM strain-specific omitted reductant",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "Omit Na2S",
+                  "explanation": "Pages 1–2, exact DSM strain-specific instructions; primary source inspected 2026-11-16. "
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 0,
+              "source_text": "Supplement medium after autoclaving with 1 ml/l Wolin's vitamin solution (10x, see medium 120), 0.30 g/l DL-dithiothreitol, and 0.15 g/l coenzyme M (2-mercaptoethanesulfonic acid) from anoxic stock solutions sterilized by filtration. Omit Na2S x 9 H2O and L-Cysteine HCl x H2O."
+            },
+            {
+              "action": "REMOVE",
+              "ingredient": {
+                "preferred_term": "L-Cysteine HCl x H2O"
+              },
+              "stage": "listed DSM strain-specific omitted reductant",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "L-Cysteine HCl x H2O",
+                  "explanation": "Pages 1–2, exact DSM strain-specific instructions; primary source inspected 2026-11-16. "
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 0,
+              "source_text": "Supplement medium after autoclaving with 1 ml/l Wolin's vitamin solution (10x, see medium 120), 0.30 g/l DL-dithiothreitol, and 0.15 g/l coenzyme M (2-mercaptoethanesulfonic acid) from anoxic stock solutions sterilized by filtration. Omit Na2S x 9 H2O and L-Cysteine HCl x H2O."
+            }
+          ]
+        },
+        {
+          "variant_index": 4,
+          "variant_name": "For DSM 5522",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "D-glucose",
+                "concentration": {
+                  "value": "5.0",
+                  "unit": "G_PER_L"
+                }
+              },
+              "stage": "DSM5522 after autoclaving from sterile anoxic stock",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "5.0 g/l D-glucose",
+                  "explanation": "Pages 1–2, exact DSM strain-specific instructions; primary source inspected 2026-11-16. "
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 0,
+              "source_text": "Supplement medium with 5.0 g/l D-glucose added after autoclaving from a sterile anoxic stock solution."
+            }
+          ]
+        },
+        {
+          "variant_index": 5,
+          "variant_name": "For DSM 6216",
+          "ingredient_changes": [
+            {
+              "action": "SET_CONCENTRATION",
+              "ingredient": {
+                "preferred_term": "Na-acetate",
+                "concentration": {
+                  "value": "3.00",
+                  "unit": "G_PER_L"
+                },
+                "notes": "Source gives no hydrate; value replaces the baseline amount rather than adding an increment."
+              },
+              "stage": "DSM6216 strain-specific medium formulation",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "3.00 g/l",
+                  "explanation": "Pages 1–2, exact DSM strain-specific instructions; primary source inspected 2026-11-16. Source gives no hydrate; value replaces the baseline amount rather than adding an increment."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 0,
+              "source_text": "Increase amount of Na-acetate to 3.00 g/l."
+            }
+          ]
+        },
+        {
+          "variant_index": 6,
+          "variant_name": "For DSM 7057",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "Na2SO4",
+                "concentration": {
+                  "value": "2.00",
+                  "unit": "G_PER_L"
+                },
+                "notes": "No hydrate inferred."
+              },
+              "stage": "DSM7057 strain-specific supplementation",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "2.00 g/l Na2SO4",
+                  "explanation": "Pages 1–2, exact DSM strain-specific instructions; primary source inspected 2026-11-16. No hydrate inferred."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 0,
+              "source_text": "Supplement medium with 2.00 g/l Na2SO4."
+            }
+          ]
+        },
+        {
+          "variant_index": 7,
+          "variant_name": "For DSM 7095, DSM 28100",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "DL-dithiothreitol",
+                "notes": "Literal source amount0.3g; the strain note does not repeat a per-litre basis, so no concentration is inferred from the recipe volume."
+              },
+              "stage": "DSM7095 and DSM28100 strain-specific supplementation",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "0.3 g DL-Dithiothreitol",
+                  "explanation": "Pages 1–2, exact DSM strain-specific instructions; primary source inspected 2026-11-16. Literal source amount0.3g; the strain note does not repeat a per-litre basis, so no concentration is inferred from the recipe volume."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 0,
+              "source_text": "Supplement medium with 0.3 g DL-Dithiothreitol. Omit Na2S x 9 H2O."
+            },
+            {
+              "action": "REMOVE",
+              "ingredient": {
+                "preferred_term": "Na2S x 9 H2O"
+              },
+              "stage": "DSM7095 and DSM28100 omitted reductant",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "Omit Na2S",
+                  "explanation": "Pages 1–2, exact DSM strain-specific instructions; primary source inspected 2026-11-16. "
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 0,
+              "source_text": "Supplement medium with 0.3 g DL-Dithiothreitol. Omit Na2S x 9 H2O."
+            }
+          ]
+        },
+        {
+          "variant_index": 9,
+          "variant_name": "For DSM 15163",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "DL-dithiothreitol",
+                "notes": "Literal source amount0.3g; the strain note does not repeat a per-litre basis, so no concentration is inferred from the recipe volume."
+              },
+              "stage": "DSM15163 strain-specific supplementation",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "0.3 g DL-Dithiothreitol",
+                  "explanation": "Pages 1–2, exact DSM strain-specific instructions; primary source inspected 2026-11-16. Literal source amount0.3g; the strain note does not repeat a per-litre basis, so no concentration is inferred from the recipe volume."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 0,
+              "source_text": "Supplement medium with 0.3 g DL-Dithiothreitol. Omit Na2S x 9 H2O. Adjust pH of final medium to 6.0."
+            },
+            {
+              "action": "REMOVE",
+              "ingredient": {
+                "preferred_term": "Na2S x 9 H2O"
+              },
+              "stage": "DSM15163 omitted reductant",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "Omit Na2S",
+                  "explanation": "Pages 1–2, exact DSM strain-specific instructions; primary source inspected 2026-11-16. "
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 0,
+              "source_text": "Supplement medium with 0.3 g DL-Dithiothreitol. Omit Na2S x 9 H2O. Adjust pH of final medium to 6.0."
+            }
+          ]
+        },
+        {
+          "variant_index": 10,
+          "variant_name": "For DSM 16632",
+          "ingredient_changes": [
+            {
+              "action": "REPLACE",
+              "ingredient": {
+                "preferred_term": "clarified rumen fluid",
+                "notes": "Same-volume replacement specified; no independently inferred density or final concentration. Medium1310 preparation remains a named-mixture reference."
+              },
+              "stage": "DSM16632 strain-specific fluid replacement",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "same volume of clarified rumen fluid",
+                  "explanation": "Pages 1–2, exact DSM strain-specific instructions; primary source inspected 2026-11-16. Same-volume replacement specified; no independently inferred density or final concentration. Medium1310 preparation remains a named-mixture reference."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "replaced_ingredient": {
+                "preferred_term": "sludge fluid"
+              },
+              "source_modification_index": 0,
+              "source_text": "Replace sludge fluid with the same volume of clarified rumen fluid (see medium 1310) and supplement medium with 2.00 g/l Trypticase peptone and 10.00 ml/l of Wolin's vitamin solution (see medium 141)."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "Trypticase peptone",
+                "concentration": {
+                  "value": "2.00",
+                  "unit": "G_PER_L"
+                }
+              },
+              "stage": "DSM16632 strain-specific supplement",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "2.00 g/l Trypticase peptone",
+                  "explanation": "Pages 1–2, exact DSM strain-specific instructions; primary source inspected 2026-11-16. "
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 0,
+              "source_text": "Replace sludge fluid with the same volume of clarified rumen fluid (see medium 1310) and supplement medium with 2.00 g/l Trypticase peptone and 10.00 ml/l of Wolin's vitamin solution (see medium 141)."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "Wolin's vitamin solution",
+                "concentration": {
+                  "value": "10.00",
+                  "unit": "ML_PER_L"
+                },
+                "notes": "Source refers to medium141; not assumed equal to the10x medium120 preparation in another strain variant."
+              },
+              "stage": "DSM16632 strain-specific supplement",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "10.00 ml/l",
+                  "explanation": "Pages 1–2, exact DSM strain-specific instructions; primary source inspected 2026-11-16. Source refers to medium141; not assumed equal to the10x medium120 preparation in another strain variant."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 0,
+              "source_text": "Replace sludge fluid with the same volume of clarified rumen fluid (see medium 1310) and supplement medium with 2.00 g/l Trypticase peptone and 10.00 ml/l of Wolin's vitamin solution (see medium 141)."
+            }
+          ]
+        },
+        {
+          "variant_index": 11,
+          "variant_name": "For DSM 25824",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "2-mercaptoethanesulfonic acid (coenzyme M)",
+                "concentration": {
+                  "value": "0.10",
+                  "unit": "G_PER_L"
+                },
+                "notes": "Gas mixture/pressure is a separate post-inoculation condition, not a liquid ingredient dose."
+              },
+              "stage": "DSM25824 after autoclaving from sterile filtered anoxic stock",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "0.10 g/l",
+                  "explanation": "Pages 1–2, exact DSM strain-specific instructions; primary source inspected 2026-11-16. Gas mixture/pressure is a separate post-inoculation condition, not a liquid ingredient dose."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 0,
+              "source_text": "Supplement medium after autoclaving with 0.10 g/l 2-mercaptoethanesulfonic acid (coenzyme M) added from an anoxic stock solution sterilized by filtration and add sterile 80% H2 and 20% CO2 gas mixture to 1 bar overpressure after inoculation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/archaea/pyrococcus_medium.yaml",
+      "recipe_id": "CultureMech:001478",
+      "expected_sha256": "cfeeddb3efb58448b41869ef16e32abce21122cc820cf60e90bafaf897dadf9c",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "cf11_cellulose_adapted_pyrococcus_furiosus",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "CF11 cellulose",
+                "notes": "Primary abstract inspected; full formulation and dose not verified. Do not infer cellulose concentration, replace a particular baseline substrate or certify parent-medium equivalence."
+              },
+              "stage": "serially adapted P. furiosus growth-substrate condition",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/AEM.01366-10",
+                  "supports": "SUPPORT",
+                  "snippet": "CF11 cellulose",
+                  "explanation": "Primary article abstract, serial adaptation on CF11 cellulose; primary source inspected 2026-11-16. Primary abstract inspected; full formulation and dose not verified. Do not infer cellulose concentration, replace a particular baseline substrate or certify parent-medium equivalence."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 1,
+              "source_text": "Use CF11 cellulose as the growth substrate."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/archaea/sulfolobus_medium_anaerobic_for_dsm_2162.yaml",
+      "recipe_id": "CultureMech:009226",
+      "expected_sha256": "34c2c8e2888f6614545b81ea073636df1c911644a42db5cc0ba6659a03a3f9f9",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "aerobic_brocks_salts_dsm88_sulfur_yeast_extract",
+          "ingredient_changes": [
+            {
+              "action": "REPLACE",
+              "ingredient": {
+                "preferred_term": "NH4Cl",
+                "concentration": {
+                  "value": "1.05",
+                  "unit": "G_PER_L"
+                },
+                "notes": "Primary formulation names NH4Cl; local anaerobic parent names ammonium sulfate. Primary MgSO4.7H2O concentration equals0.25g/L already in this parent, so no unsupported MgSO4 reduction/substitution event is emitted."
+              },
+              "stage": "Willard2024 low-sulfate Brock's salts aerobic formulation",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/mbio.01033-24",
+                  "supports": "SUPPORT",
+                  "snippet": "1.05 g/L (NH4)Cl",
+                  "explanation": "Materials and Methods, low-sulfate Brock's salts and species-specific supplements; primary source inspected 2026-11-16. Primary formulation names NH4Cl; local anaerobic parent names ammonium sulfate. Primary MgSO4.7H2O concentration equals0.25g/L already in this parent, so no unsupported MgSO4 reduction/substitution event is emitted."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "replaced_ingredient": {
+                "preferred_term": "(NH4)2SO4"
+              },
+              "source_modification_index": 0,
+              "source_text": "Low-sulfate Brock's salts base (MgSO4 reduced/replaced); NH4Cl instead of (NH4)2SO4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/archaea/sulfolobus_medium_for_dsm_5348.yaml",
+      "recipe_id": "CultureMech:008908",
+      "expected_sha256": "796ca3c640365ea7cc9b50b68fec7a4a98ad4883c663d1d84a6c5596d14b972a",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "dsmz88_sulfolobus_supplemented_yeast_extract_ferrous_iron",
+          "ingredient_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "yeast extract",
+                "notes": "Source states0.1% without an explicit percent basis in the inspected passage; retain the literal amount here, do not infer w/v. The row's tryptone alternative was not verified and is not structured."
+              },
+              "stage": "M.sedula DSM5348 transcriptomic culture on DSMZ88",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/AEM.02019-07",
+                  "supports": "SUPPORT",
+                  "snippet": "0.1% yeast extract",
+                  "explanation": "Materials and Methods, transcriptomics versus scanning-electron-microscopy cultures; primary source inspected 2026-11-16. Source states0.1% without an explicit percent basis in the inspected passage; retain the literal amount here, do not infer w/v. The row's tryptone alternative was not verified and is not structured."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 1,
+              "source_text": "Add 0.1% yeast extract (mixotrophic) or 0.1% tryptone (heterotrophic)"
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "FeSO4.7H2O",
+                "concentration": {
+                  "value": "7.5",
+                  "unit": "G_PER_L"
+                },
+                "notes": "Approximately7.5g/L; preserve approximation. Two of four yeast-extract cultures received iron; no universal addition."
+              },
+              "stage": "M.sedula transcriptomic cultures: iron-supplemented yeast-extract arm before inoculation",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/AEM.02019-07",
+                  "supports": "SUPPORT",
+                  "snippet": "7.5 g/liter",
+                  "explanation": "Materials and Methods, transcriptomics versus scanning-electron-microscopy cultures; primary source inspected 2026-11-16. Approximately7.5g/L; preserve approximation. Two of four yeast-extract cultures received iron; no universal addition."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 2,
+              "source_text": "Optional ~7.5 g/L FeSO4.7H2O, or FeS2/pyrite as sole energy source"
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "FeS2 (pyrite)",
+                "notes": "Different experimental preparation from the transcriptomics DSMZ88+yeast+iron arm. Literal0.1% sole-energy-source input; percent basis not specified, no concentration enum or parent equivalence inferred."
+              },
+              "stage": "M.sedula scanning-electron-microscopy cultures on minimal salts medium",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/AEM.02019-07",
+                  "supports": "SUPPORT",
+                  "snippet": "0.1% FeS2",
+                  "explanation": "Materials and Methods, transcriptomics versus scanning-electron-microscopy cultures; primary source inspected 2026-11-16. Different experimental preparation from the transcriptomics DSMZ88+yeast+iron arm. Literal0.1% sole-energy-source input; percent basis not specified, no concentration enum or parent equivalence inferred."
+                }
+              ],
+              "notes": "A scoped change event, not a fully expanded variant or a parent-formulation amendment. No chemical identifier is inferred.",
+              "source_modification_index": 2,
+              "source_text": "Optional ~7.5 g/L FeSO4.7H2O, or FeS2/pyrite as sole energy source"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dispositions": [
+    {
+      "queue_row_number": 5,
+      "status": "HELD_EVIDENCE",
+      "reason": "Matsui2018 primary metadata/abstract captured, but formulation/agar methods not verified; no Guillard-stock expansion or agar assertion promoted.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000038",
+      "source_path": "data/normalized_yaml/algae/2asw.yaml",
+      "source_sha256": "0ba654a5395797550d80a1b3f3e48930862a2188d4568d58c6cda673c47f1ee7",
+      "variant_index": 0,
+      "modification_index": 0,
+      "source_text": "Supplement the artificial seawater base with half-strength Guillard f solution."
+    },
+    {
+      "queue_row_number": 6,
+      "status": "HELD_EVIDENCE",
+      "reason": "Matsui2018 primary metadata/abstract captured, but formulation/agar methods not verified; no Guillard-stock expansion or agar assertion promoted.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000038",
+      "source_path": "data/normalized_yaml/algae/2asw.yaml",
+      "source_sha256": "0ba654a5395797550d80a1b3f3e48930862a2188d4568d58c6cda673c47f1ee7",
+      "variant_index": 0,
+      "modification_index": 1,
+      "source_text": "Use liquid or agar-solidified F/2ASW depending on maintenance, transformation, or selection protocol."
+    },
+    {
+      "queue_row_number": 7,
+      "status": "CONDITION_ONLY",
+      "reason": "Culture conditions or acclimation only; atmospheric context is not converted to a liquid ingredient or concentration.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000038",
+      "source_path": "data/normalized_yaml/algae/2asw.yaml",
+      "source_sha256": "0ba654a5395797550d80a1b3f3e48930862a2188d4568d58c6cda673c47f1ee7",
+      "variant_index": 0,
+      "modification_index": 2,
+      "source_text": "Reported diatom conditions include 20 deg C, continuous illumination at 30-75 umol photons m-2 s-1, and aeration with ambient air or CO2-enriched air."
+    },
+    {
+      "queue_row_number": 8,
+      "status": "HELD_EVIDENCE",
+      "reason": "Source TableS1 gives Na2SeO3 0.001 micromolar=1nM and Na2SiO3.9H2O 0.1mM. Existing row says10nM; held for correction/review under issue759. PDF SHA2561cc2581bf2363ea89d31f170ae398b94d1125c647cc1c655a54417e6c73aac98.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000038",
+      "source_path": "data/normalized_yaml/algae/2asw.yaml",
+      "source_sha256": "0ba654a5395797550d80a1b3f3e48930862a2188d4568d58c6cda673c47f1ee7",
+      "variant_index": 1,
+      "modification_index": 0,
+      "source_text": "Supplement F/2ASW with 10 nM sodium selenite and 0.1 mM sodium metasilicate."
+    },
+    {
+      "queue_row_number": 9,
+      "status": "STRUCTURED",
+      "reason": "Source defines separate NaCl settings in modified artificial seawater, not total sodium.",
+      "assertion_count": 1,
+      "recipe_id": "CultureMech:000038",
+      "source_path": "data/normalized_yaml/algae/2asw.yaml",
+      "source_sha256": "0ba654a5395797550d80a1b3f3e48930862a2188d4568d58c6cda673c47f1ee7",
+      "variant_index": 1,
+      "modification_index": 1,
+      "source_text": "Manipulate sodium by changing NaCl added to the basal artificial seawater."
+    },
+    {
+      "queue_row_number": 10,
+      "status": "CONDITION_ONLY",
+      "reason": "Culture conditions or acclimation only; atmospheric context is not converted to a liquid ingredient or concentration.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000038",
+      "source_path": "data/normalized_yaml/algae/2asw.yaml",
+      "source_sha256": "0ba654a5395797550d80a1b3f3e48930862a2188d4568d58c6cda673c47f1ee7",
+      "variant_index": 1,
+      "modification_index": 2,
+      "source_text": "Preacclimate cells to sodium concentrations before low-sodium transfer."
+    },
+    {
+      "queue_row_number": 11,
+      "status": "STRUCTURED",
+      "reason": "Explicit study medium concentration; no inferred amount added.",
+      "assertion_count": 1,
+      "recipe_id": "CultureMech:000038",
+      "source_path": "data/normalized_yaml/algae/2asw.yaml",
+      "source_sha256": "0ba654a5395797550d80a1b3f3e48930862a2188d4568d58c6cda673c47f1ee7",
+      "variant_index": 2,
+      "modification_index": 0,
+      "source_text": "The study reports 1.5 M NaCl in its 2ASW culture medium. This is a reported medium concentration, not a stock concentration or inferred amount to add."
+    },
+    {
+      "queue_row_number": 12,
+      "status": "CONDITION_ONLY",
+      "reason": "Uncertainty/interpretation guard for the adjacent claim; no additional input or identity asserted.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000038",
+      "source_path": "data/normalized_yaml/algae/2asw.yaml",
+      "source_sha256": "0ba654a5395797550d80a1b3f3e48930862a2188d4568d58c6cda673c47f1ee7",
+      "variant_index": 2,
+      "modification_index": 1,
+      "source_text": "Other ingredients, stock additions, seawater contribution and final-volume preparation remain unspecified in the inspected paragraph. No salt-increase/decrease direction relative to this imported parent is asserted."
+    },
+    {
+      "queue_row_number": 13,
+      "status": "STRUCTURED",
+      "reason": "Mixture-level replacement, without chemical expansion.",
+      "assertion_count": 1,
+      "recipe_id": "CultureMech:000038",
+      "source_path": "data/normalized_yaml/algae/2asw.yaml",
+      "source_sha256": "0ba654a5395797550d80a1b3f3e48930862a2188d4568d58c6cda673c47f1ee7",
+      "variant_index": 3,
+      "modification_index": 0,
+      "source_text": "Use the study-reported 33.6 g/L sea salts in place of NaCl; this is an undefined sea-salt mixture, not 33.6 g/L pure sodium chloride."
+    },
+    {
+      "queue_row_number": 14,
+      "status": "CONDITION_ONLY",
+      "reason": "Uncertainty/interpretation guard for the adjacent claim; no additional input or identity asserted.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000038",
+      "source_path": "data/normalized_yaml/algae/2asw.yaml",
+      "source_sha256": "0ba654a5395797550d80a1b3f3e48930862a2188d4568d58c6cda673c47f1ee7",
+      "variant_index": 3,
+      "modification_index": 1,
+      "source_text": "The sea-salt brand, full constituent composition and other base-recipe details are not established by the inspected methods. Do not assume equivalence to this parent's seawater alternative or inherit details from the mismatched Gomord base citation."
+    },
+    {
+      "queue_row_number": 15,
+      "status": "HELD_MODEL",
+      "reason": "Modified base medium alone does not identify an ingredient change; actual primary methods describe modified fixed-N-free YBCII, whose full equivalence to this parent is not established.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000025",
+      "source_path": "data/normalized_yaml/algae/Artificial_Seawater_Medium.yaml",
+      "source_sha256": "373e49b2f6512d894e0278f6c6cfcec054733d46abb373928e638d4a53bbbe01",
+      "variant_index": 0,
+      "modification_index": 0,
+      "source_text": "Use a modified artificial seawater medium."
+    },
+    {
+      "queue_row_number": 16,
+      "status": "CONDITION_ONLY",
+      "reason": "Organism/base-medium context, without an asserted ingredient change.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000025",
+      "source_path": "data/normalized_yaml/algae/Artificial_Seawater_Medium.yaml",
+      "source_sha256": "373e49b2f6512d894e0278f6c6cfcec054733d46abb373928e638d4a53bbbe01",
+      "variant_index": 0,
+      "modification_index": 1,
+      "source_text": "Culture the Hemiaulus hauckii and Richelia intracellularis symbiotic unit."
+    },
+    {
+      "queue_row_number": 17,
+      "status": "HELD_MODEL",
+      "reason": "Primary Hemiaulus methods define no added organic/inorganic nitrogen and naturally dissolved N2. Do not invent a particular removed salt or deliberate N2 dose from this statement.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000025",
+      "source_path": "data/normalized_yaml/algae/Artificial_Seawater_Medium.yaml",
+      "source_sha256": "373e49b2f6512d894e0278f6c6cfcec054733d46abb373928e638d4a53bbbe01",
+      "variant_index": 0,
+      "modification_index": 2,
+      "source_text": "Use nitrogen-free medium with N2 as the sole nitrogen source for reported maximum growth rates."
+    },
+    {
+      "queue_row_number": 18,
+      "status": "CONDITION_ONLY",
+      "reason": "Organism/base-medium context, without an asserted ingredient change.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000025",
+      "source_path": "data/normalized_yaml/algae/Artificial_Seawater_Medium.yaml",
+      "source_sha256": "373e49b2f6512d894e0278f6c6cfcec054733d46abb373928e638d4a53bbbe01",
+      "variant_index": 1,
+      "modification_index": 0,
+      "source_text": "Use artificial seawater medium as the base."
+    },
+    {
+      "queue_row_number": 19,
+      "status": "STRUCTURED",
+      "reason": "Primary Results resolves the stated N and P sources at their study-specific concentrations.",
+      "assertion_count": 2,
+      "recipe_id": "CultureMech:000025",
+      "source_path": "data/normalized_yaml/algae/Artificial_Seawater_Medium.yaml",
+      "source_sha256": "373e49b2f6512d894e0278f6c6cfcec054733d46abb373928e638d4a53bbbe01",
+      "variant_index": 1,
+      "modification_index": 1,
+      "source_text": "Supplement with nitrogen and phosphorus sources."
+    },
+    {
+      "queue_row_number": 20,
+      "status": "STRUCTURED",
+      "reason": "Retain the buffer as the reported HEPES-KOH preparation.",
+      "assertion_count": 1,
+      "recipe_id": "CultureMech:000025",
+      "source_path": "data/normalized_yaml/algae/Artificial_Seawater_Medium.yaml",
+      "source_sha256": "373e49b2f6512d894e0278f6c6cfcec054733d46abb373928e638d4a53bbbe01",
+      "variant_index": 1,
+      "modification_index": 2,
+      "source_text": "Add HEPES buffer when improved overall growth is needed."
+    },
+    {
+      "queue_row_number": 26,
+      "status": "CONDITION_ONLY",
+      "reason": "First-stage culture duration and base-medium use, without a new ingredient claim.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000170",
+      "source_path": "data/normalized_yaml/algae/F_2_Medium.yaml",
+      "source_sha256": "68ba6e487cab812d01936c081e684c573c93e80554e4f3a63ab54c46423a84cf",
+      "variant_index": 0,
+      "modification_index": 0,
+      "source_text": "Grow cells in F/2 medium for seven days as the first stage."
+    },
+    {
+      "queue_row_number": 27,
+      "status": "STRUCTURED",
+      "reason": "Primary abstract supports the second-stage repletion concentration only.",
+      "assertion_count": 1,
+      "recipe_id": "CultureMech:000170",
+      "source_path": "data/normalized_yaml/algae/F_2_Medium.yaml",
+      "source_sha256": "68ba6e487cab812d01936c081e684c573c93e80554e4f3a63ab54c46423a84cf",
+      "variant_index": 0,
+      "modification_index": 1,
+      "source_text": "Shift to a nitrogen-replete second stage with 4.41 mM NaNO3 for three days."
+    },
+    {
+      "queue_row_number": 28,
+      "status": "HELD_EVIDENCE",
+      "reason": "Matsui2018 primary metadata/abstract captured, but formulation/agar methods not verified; no Guillard-stock expansion or agar assertion promoted.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000170",
+      "source_path": "data/normalized_yaml/algae/F_2_Medium.yaml",
+      "source_sha256": "68ba6e487cab812d01936c081e684c573c93e80554e4f3a63ab54c46423a84cf",
+      "variant_index": 1,
+      "modification_index": 0,
+      "source_text": "Use artificial seawater supplemented with half-strength Guillard f solution."
+    },
+    {
+      "queue_row_number": 29,
+      "status": "CONDITION_ONLY",
+      "reason": "Culture conditions or acclimation only; atmospheric context is not converted to a liquid ingredient or concentration.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000170",
+      "source_path": "data/normalized_yaml/algae/F_2_Medium.yaml",
+      "source_sha256": "68ba6e487cab812d01936c081e684c573c93e80554e4f3a63ab54c46423a84cf",
+      "variant_index": 1,
+      "modification_index": 1,
+      "source_text": "Maintain cultures at 20 deg C under continuous illumination at 30-75 umol photons m-2 s-1."
+    },
+    {
+      "queue_row_number": 30,
+      "status": "HELD_MODEL",
+      "reason": "Gas-supply/aeration condition retained literally. No liquid concentration or ingredient addition inferred; exact gas-phase representation requires separate admission policy.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000170",
+      "source_path": "data/normalized_yaml/algae/F_2_Medium.yaml",
+      "source_sha256": "68ba6e487cab812d01936c081e684c573c93e80554e4f3a63ab54c46423a84cf",
+      "variant_index": 1,
+      "modification_index": 2,
+      "source_text": "Aerate cultures with ambient air or 1% CO2 depending on the experiment."
+    },
+    {
+      "queue_row_number": 31,
+      "status": "STRUCTURED",
+      "reason": "Correct sibling matches TableS1; preserve full-formulation context.",
+      "assertion_count": 2,
+      "recipe_id": "CultureMech:000170",
+      "source_path": "data/normalized_yaml/algae/F_2_Medium.yaml",
+      "source_sha256": "68ba6e487cab812d01936c081e684c573c93e80554e4f3a63ab54c46423a84cf",
+      "variant_index": 2,
+      "modification_index": 0,
+      "source_text": "Use the modified F/2ASW formulation in Table S1, including 1 nM sodium selenite and 0.1 mM sodium metasilicate nonahydrate."
+    },
+    {
+      "queue_row_number": 32,
+      "status": "STRUCTURED",
+      "reason": "Source defines separate NaCl settings in modified artificial seawater, not total sodium.",
+      "assertion_count": 1,
+      "recipe_id": "CultureMech:000170",
+      "source_path": "data/normalized_yaml/algae/F_2_Medium.yaml",
+      "source_sha256": "68ba6e487cab812d01936c081e684c573c93e80554e4f3a63ab54c46423a84cf",
+      "variant_index": 2,
+      "modification_index": 1,
+      "source_text": "Adjust sodium concentration by altering NaCl addition to the basal medium."
+    },
+    {
+      "queue_row_number": 33,
+      "status": "HELD_MODEL",
+      "reason": "Gas-supply/aeration condition retained literally. No liquid concentration or ingredient addition inferred; exact gas-phase representation requires separate admission policy.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000170",
+      "source_path": "data/normalized_yaml/algae/F_2_Medium.yaml",
+      "source_sha256": "68ba6e487cab812d01936c081e684c573c93e80554e4f3a63ab54c46423a84cf",
+      "variant_index": 2,
+      "modification_index": 2,
+      "source_text": "Vary CO2 availability to distinguish sodium-dependent growth effects."
+    },
+    {
+      "queue_row_number": 37,
+      "status": "STRUCTURED",
+      "reason": "Undefined effluent input retained; timed feed stays in notes rather than one initial dose.",
+      "assertion_count": 1,
+      "recipe_id": "CultureMech:000232",
+      "source_path": "data/normalized_yaml/algae/Spirulina_Medium.yaml",
+      "source_sha256": "a96c3df375c1c181fd525d974411d7c5af9bf624bb9119b783c17c2603d961af",
+      "variant_index": 0,
+      "modification_index": 0,
+      "source_text": "Use effluent from biogas production as the nutrient source."
+    },
+    {
+      "queue_row_number": 38,
+      "status": "CONDITION_ONLY",
+      "reason": "Comparison, coculture or process mode only; no new ingredient assertion.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000232",
+      "source_path": "data/normalized_yaml/algae/Spirulina_Medium.yaml",
+      "source_sha256": "a96c3df375c1c181fd525d974411d7c5af9bf624bb9119b783c17c2603d961af",
+      "variant_index": 0,
+      "modification_index": 1,
+      "source_text": "Compare biomass composition and pigment production with conventional Spirulina medium."
+    },
+    {
+      "queue_row_number": 39,
+      "status": "CONDITION_ONLY",
+      "reason": "Comparison, coculture or process mode only; no new ingredient assertion.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000233",
+      "source_path": "data/normalized_yaml/algae/TAP_Medium.yaml",
+      "source_sha256": "ab4575126146c466af3465e08a4247a693185aabf4b447a38aed3b68af8ce1a2",
+      "variant_index": 0,
+      "modification_index": 0,
+      "source_text": "Co-culture Chlorella vulgaris with Delftia sp. in TAP medium."
+    },
+    {
+      "queue_row_number": 40,
+      "status": "ALREADY_STRUCTURED",
+      "reason": "The parent explicitly represents NH4Cl in Beijerinck's solution and acetic acid in Tris Acetate Stock Solution. TAP2024 Methods confirms their medium roles but does not make this row a new supplement. No parent/study dose-equivalence claim.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000233",
+      "source_path": "data/normalized_yaml/algae/TAP_Medium.yaml",
+      "source_sha256": "ab4575126146c466af3465e08a4247a693185aabf4b447a38aed3b68af8ce1a2",
+      "variant_index": 0,
+      "modification_index": 1,
+      "source_text": "Include TAP medium nitrogen and carbon context with NH4Cl and acetic acid."
+    },
+    {
+      "queue_row_number": 41,
+      "status": "HELD_MODEL",
+      "reason": "Primary abstract supports a water-soluble-fertilizer replacement, but the replaced trace/macroelement group is not a resolved single ingredient. Hold component-set replacement and product identity; do not invent fertilizer constituents.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000233",
+      "source_path": "data/normalized_yaml/algae/TAP_Medium.yaml",
+      "source_sha256": "ab4575126146c466af3465e08a4247a693185aabf4b447a38aed3b68af8ce1a2",
+      "variant_index": 1,
+      "modification_index": 0,
+      "source_text": "Replace TAP trace and macroelements with water-soluble fertilizer."
+    },
+    {
+      "queue_row_number": 42,
+      "status": "STRUCTURED",
+      "reason": "Abstract-supported preparation-level buffer replacement; quantities unresolved.",
+      "assertion_count": 1,
+      "recipe_id": "CultureMech:000233",
+      "source_path": "data/normalized_yaml/algae/TAP_Medium.yaml",
+      "source_sha256": "ab4575126146c466af3465e08a4247a693185aabf4b447a38aed3b68af8ce1a2",
+      "variant_index": 1,
+      "modification_index": 1,
+      "source_text": "Replace Tris in TAP medium with HAc-NaAc for pH balance."
+    },
+    {
+      "queue_row_number": 43,
+      "status": "CONDITION_ONLY",
+      "reason": "Comparison, coculture or process mode only; no new ingredient assertion.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000233",
+      "source_path": "data/normalized_yaml/algae/TAP_Medium.yaml",
+      "source_sha256": "ab4575126146c466af3465e08a4247a693185aabf4b447a38aed3b68af8ce1a2",
+      "variant_index": 1,
+      "modification_index": 2,
+      "source_text": "Use the medium in fed-batch, semicontinuous, and outdoor cultures."
+    },
+    {
+      "queue_row_number": 46,
+      "status": "STRUCTURED",
+      "reason": "Study-specific acid differs from parent CCAP acid; no dose inferred.",
+      "assertion_count": 1,
+      "recipe_id": "CultureMech:000041",
+      "source_path": "data/normalized_yaml/algae/ajs.yaml",
+      "source_sha256": "6a96f45eba5e91e591a4f9160c43422b561ed8c281d07ecaa9901550feabb2ba",
+      "variant_index": 0,
+      "modification_index": 0,
+      "source_text": "Use hydrochloric acid for the reported adjustment to pH 1.5, rather than inheriting the canonical sulfuric-acid instruction. HCl strength and dose are not quantified; no dose or substitution arithmetic is inferred."
+    },
+    {
+      "queue_row_number": 47,
+      "status": "CONDITION_ONLY",
+      "reason": "Explicit formulation uncertainty limits the adjacent acid claim.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000041",
+      "source_path": "data/normalized_yaml/algae/ajs.yaml",
+      "source_sha256": "6a96f45eba5e91e591a4f9160c43422b561ed8c281d07ecaa9901550feabb2ba",
+      "variant_index": 0,
+      "modification_index": 1,
+      "source_text": "The study does not restate the JM/SE2 proportions, stock compositions or complete formulation. Do not certify other local ingredients or physical state from this citation."
+    },
+    {
+      "queue_row_number": 48,
+      "status": "STRUCTURED",
+      "reason": "Source-defined alternative blend of prepared media; no constituent expansion.",
+      "assertion_count": 2,
+      "recipe_id": "CultureMech:000054",
+      "source_path": "data/normalized_yaml/algae/bb_merds.yaml",
+      "source_sha256": "c05d7193d15a05bb7e445d382297a556b8208ab347d403d919fd5511b0570e62",
+      "variant_index": 0,
+      "modification_index": 0,
+      "source_text": "Mix 800 mL BB with 200 mL MErds per litre."
+    },
+    {
+      "queue_row_number": 49,
+      "status": "STRUCTURED",
+      "reason": "Source-defined alternative blend of prepared media; no constituent expansion.",
+      "assertion_count": 2,
+      "recipe_id": "CultureMech:000054",
+      "source_path": "data/normalized_yaml/algae/bb_merds.yaml",
+      "source_sha256": "c05d7193d15a05bb7e445d382297a556b8208ab347d403d919fd5511b0570e62",
+      "variant_index": 1,
+      "modification_index": 0,
+      "source_text": "Mix 500 mL BB with 500 mL MErds per litre."
+    },
+    {
+      "queue_row_number": 50,
+      "status": "ALREADY_STRUCTURED",
+      "reason": "Nitrate-bearing NaNO3 already occurs in the parent BG11 ingredients. This qualitative nitrate-replete row does not specify an additional dose or change; no study/formula equivalence inferred.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:015450",
+      "source_path": "data/normalized_yaml/algae/bg11.yaml",
+      "source_sha256": "50cf10be2d7e6c7eec48f0d9ad0911b27e4d6e52b8386cfe43924339a304c468",
+      "variant_index": 0,
+      "modification_index": 0,
+      "source_text": "Use BG11 medium with nitrate present."
+    },
+    {
+      "queue_row_number": 51,
+      "status": "CONDITION_ONLY",
+      "reason": "Comparator medium, organism, measurement method or photoautotrophy context. BG110 is a separately named comparator, not an omission asserted for the nitrate-replete variant.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:015450",
+      "source_path": "data/normalized_yaml/algae/bg11.yaml",
+      "source_sha256": "50cf10be2d7e6c7eec48f0d9ad0911b27e4d6e52b8386cfe43924339a304c468",
+      "variant_index": 0,
+      "modification_index": 1,
+      "source_text": "Compare with BG110 medium lacking nitrate."
+    },
+    {
+      "queue_row_number": 52,
+      "status": "CONDITION_ONLY",
+      "reason": "Comparator medium, organism, measurement method or photoautotrophy context. BG110 is a separately named comparator, not an omission asserted for the nitrate-replete variant.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:015450",
+      "source_path": "data/normalized_yaml/algae/bg11.yaml",
+      "source_sha256": "50cf10be2d7e6c7eec48f0d9ad0911b27e4d6e52b8386cfe43924339a304c468",
+      "variant_index": 1,
+      "modification_index": 0,
+      "source_text": "Culture Synechococcus sp. UCP002 in BG-11 medium."
+    },
+    {
+      "queue_row_number": 53,
+      "status": "CONDITION_ONLY",
+      "reason": "Comparator medium, organism, measurement method or photoautotrophy context. BG110 is a separately named comparator, not an omission asserted for the nitrate-replete variant.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:015450",
+      "source_path": "data/normalized_yaml/algae/bg11.yaml",
+      "source_sha256": "50cf10be2d7e6c7eec48f0d9ad0911b27e4d6e52b8386cfe43924339a304c468",
+      "variant_index": 1,
+      "modification_index": 1,
+      "source_text": "Use standardized growth-parameter and biochemical-profile measurements."
+    },
+    {
+      "queue_row_number": 54,
+      "status": "CONDITION_ONLY",
+      "reason": "Comparator medium, organism, measurement method or photoautotrophy context. BG110 is a separately named comparator, not an omission asserted for the nitrate-replete variant.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:015450",
+      "source_path": "data/normalized_yaml/algae/bg11.yaml",
+      "source_sha256": "50cf10be2d7e6c7eec48f0d9ad0911b27e4d6e52b8386cfe43924339a304c468",
+      "variant_index": 2,
+      "modification_index": 0,
+      "source_text": "Use BG-11 medium under photoautotrophic cultivation."
+    },
+    {
+      "queue_row_number": 55,
+      "status": "HELD_MODEL",
+      "reason": "Gas-supply/aeration condition retained literally. No liquid concentration or ingredient addition inferred; exact gas-phase representation requires separate admission policy.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:015450",
+      "source_path": "data/normalized_yaml/algae/bg11.yaml",
+      "source_sha256": "50cf10be2d7e6c7eec48f0d9ad0911b27e4d6e52b8386cfe43924339a304c468",
+      "variant_index": 2,
+      "modification_index": 1,
+      "source_text": "Compare air and 2% CO2 gas conditions."
+    },
+    {
+      "queue_row_number": 62,
+      "status": "STRUCTURED",
+      "reason": "Source names silicate but no salt or hydrate.",
+      "assertion_count": 1,
+      "recipe_id": "CultureMech:000149",
+      "source_path": "data/normalized_yaml/algae/f_2.yaml",
+      "source_sha256": "ba3cda6e26c8dfcd9e8e5557d3cf9c60f8f6b053567ae57a3bb825809df61017",
+      "variant_index": 0,
+      "modification_index": 0,
+      "source_text": "The study reports f/2 supplemented with 1.06e-4 M silicate. Preserve this stated supplementation concentration without assigning an unreported silicate salt, hydrate, stock recipe or additional mass conversion."
+    },
+    {
+      "queue_row_number": 63,
+      "status": "CONDITION_ONLY",
+      "reason": "Explicit uncertainty/comparator boundary; no additional ingredient assertion.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000149",
+      "source_path": "data/normalized_yaml/algae/f_2.yaml",
+      "source_sha256": "ba3cda6e26c8dfcd9e8e5557d3cf9c60f8f6b053567ae57a3bb825809df61017",
+      "variant_index": 0,
+      "modification_index": 1,
+      "source_text": "Other nutrients, total silicate including the base, final-volume preparation and equivalence to local f/2 + Si records remain unresolved."
+    },
+    {
+      "queue_row_number": 64,
+      "status": "STRUCTURED",
+      "reason": "Source-reported nitrate supplement, not calculated total nitrate.",
+      "assertion_count": 1,
+      "recipe_id": "CultureMech:000149",
+      "source_path": "data/normalized_yaml/algae/f_2.yaml",
+      "source_sha256": "ba3cda6e26c8dfcd9e8e5557d3cf9c60f8f6b053567ae57a3bb825809df61017",
+      "variant_index": 1,
+      "modification_index": 0,
+      "source_text": "The study reports f/2 supplemented with 29.4 mM NaNO3 and adjusted to pH 8. Retain the stated supplement concentration; do not infer whether it includes the base-medium nitrate or calculate a total nitrate concentration."
+    },
+    {
+      "queue_row_number": 65,
+      "status": "CONDITION_ONLY",
+      "reason": "Explicit uncertainty/comparator boundary; no additional ingredient assertion.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000149",
+      "source_path": "data/normalized_yaml/algae/f_2.yaml",
+      "source_sha256": "ba3cda6e26c8dfcd9e8e5557d3cf9c60f8f6b053567ae57a3bb825809df61017",
+      "variant_index": 1,
+      "modification_index": 1,
+      "source_text": "Remaining formulation details, chemical stock forms and equivalence to a specific canonical amount set are unresolved."
+    },
+    {
+      "queue_row_number": 66,
+      "status": "STRUCTURED",
+      "reason": "Literal microgram/mL dose retained in notes; no unsupported enum or silent conversion.",
+      "assertion_count": 1,
+      "recipe_id": "CultureMech:000149",
+      "source_path": "data/normalized_yaml/algae/f_2.yaml",
+      "source_sha256": "ba3cda6e26c8dfcd9e8e5557d3cf9c60f8f6b053567ae57a3bb825809df61017",
+      "variant_index": 2,
+      "modification_index": 0,
+      "source_text": "Reported penicillin G treatment concentration: 200 micrograms per mL in the treated f/2 culture; no unreported salt form, stock strength or conversion is assigned."
+    },
+    {
+      "queue_row_number": 67,
+      "status": "STRUCTURED",
+      "reason": "Correct antibiotic and source salt retained.",
+      "assertion_count": 1,
+      "recipe_id": "CultureMech:000149",
+      "source_path": "data/normalized_yaml/algae/f_2.yaml",
+      "source_sha256": "ba3cda6e26c8dfcd9e8e5557d3cf9c60f8f6b053567ae57a3bb825809df61017",
+      "variant_index": 2,
+      "modification_index": 1,
+      "source_text": "Reported dihydrostreptomycin sulphate treatment concentration: 50 micrograms per mL in the same treated culture; not streptomycin, not a stock concentration, and no hydrate assumption."
+    },
+    {
+      "queue_row_number": 68,
+      "status": "CONDITION_ONLY",
+      "reason": "Explicit uncertainty/comparator boundary; no additional ingredient assertion.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000149",
+      "source_path": "data/normalized_yaml/algae/f_2.yaml",
+      "source_sha256": "ba3cda6e26c8dfcd9e8e5557d3cf9c60f8f6b053567ae57a3bb825809df61017",
+      "variant_index": 2,
+      "modification_index": 2,
+      "source_text": "The untreated comparator remains separate. Unspecified base formulation details and the later marine-agar bacterial assay must not be combined into this study variant."
+    },
+    {
+      "queue_row_number": 69,
+      "status": "STRUCTURED",
+      "reason": "Named vitamin preparations retained without fabricated constituents.",
+      "assertion_count": 1,
+      "recipe_id": "CultureMech:000149",
+      "source_path": "data/normalized_yaml/algae/f_2.yaml",
+      "source_sha256": "ba3cda6e26c8dfcd9e8e5557d3cf9c60f8f6b053567ae57a3bb825809df61017",
+      "variant_index": 3,
+      "modification_index": 0,
+      "source_text": "The vitamin solution described as coming from 2ASW replaces the original f/2 vitamin solution; the paper states it contains additional vitamin components."
+    },
+    {
+      "queue_row_number": 70,
+      "status": "CONDITION_ONLY",
+      "reason": "Explicit uncertainty/comparator boundary; no additional ingredient assertion.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000149",
+      "source_path": "data/normalized_yaml/algae/f_2.yaml",
+      "source_sha256": "ba3cda6e26c8dfcd9e8e5557d3cf9c60f8f6b053567ae57a3bb825809df61017",
+      "variant_index": 3,
+      "modification_index": 1,
+      "source_text": "Vitamin identities, stock composition, addition dose and resulting final concentrations are not quantified in the inspected methods. The cited Gomord 2010 reference is a plant glycosylation paper and cannot supply these missing details."
+    },
+    {
+      "queue_row_number": 71,
+      "status": "CONDITION_ONLY",
+      "reason": "Explicit uncertainty/comparator boundary; no additional ingredient assertion.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000149",
+      "source_path": "data/normalized_yaml/algae/f_2.yaml",
+      "source_sha256": "ba3cda6e26c8dfcd9e8e5557d3cf9c60f8f6b053567ae57a3bb825809df61017",
+      "variant_index": 3,
+      "modification_index": 2,
+      "source_text": "Other formulation details, physical-state equivalence, and exact correspondence to this imported stock encoding remain unresolved. This is not the silicate, nitrate, antibiotic or Quad formulation."
+    },
+    {
+      "queue_row_number": 72,
+      "status": "STRUCTURED",
+      "reason": "Direct solid replaces stock5; no double counting of stock and its solute.",
+      "assertion_count": 1,
+      "recipe_id": "CultureMech:000148",
+      "source_path": "data/normalized_yaml/algae/f_2_si.yaml",
+      "source_sha256": "f5b3851fb34845144659b3b759efd7efd4ad2c4e6d8ad130c4b31a28ed05632c",
+      "variant_index": 0,
+      "modification_index": 0,
+      "source_text": "Omit stock 5 and add 0.1705 g/L sodium metasilicate nonahydrate directly."
+    },
+    {
+      "queue_row_number": 74,
+      "status": "HELD_EVIDENCE",
+      "reason": "Hartzell1999 full stock/trace formulation not inspected. Reed2001 names basal salts/trace minerals without verifying these quantities/forms; preserve prose without promoting stock identities or doses.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:009220",
+      "source_path": "data/normalized_yaml/archaea/archaeoglobus_medium_dsm_399.yaml",
+      "source_sha256": "bc3f31daaf7fb549ae44d034375d60f1de6a6c063b807273e4e7ed5dd0005112",
+      "variant_index": 0,
+      "modification_index": 0,
+      "source_text": "Base built from a 10x salt solution (per L of 10x: NaCl 178 g, MgSO4 74 g, MgCl2.6H2O 27.5 g, KCl 3.4 g, NH4Cl 2.5 g; Salt II CaCl2.2H2O 1.4 g; Salt III K2HPO4 1.37 g) added at 100 ml/L."
+    },
+    {
+      "queue_row_number": 75,
+      "status": "STRUCTURED",
+      "reason": "Only Reed2001 alternative buffer is structured; Hartzell PIPES preparation remains held for its primary source.",
+      "assertion_count": 2,
+      "recipe_id": "CultureMech:009220",
+      "source_path": "data/normalized_yaml/archaea/archaeoglobus_medium_dsm_399.yaml",
+      "source_sha256": "bc3f31daaf7fb549ae44d034375d60f1de6a6c063b807273e4e7ed5dd0005112",
+      "variant_index": 0,
+      "modification_index": 1,
+      "source_text": "PIPES buffer 20 ml of 1 M per L; base medium adjusted to pH 6.7 (Hartzell 1999). Reed 2001 variant uses Tris+maleic acid 20 mM each, pH 6.1."
+    },
+    {
+      "queue_row_number": 76,
+      "status": "STRUCTURED",
+      "reason": "Only Reed2001 DL-sodium-lactate concentration structured; Hartzell30% stock7mL/L preparation remains held.",
+      "assertion_count": 1,
+      "recipe_id": "CultureMech:009220",
+      "source_path": "data/normalized_yaml/archaea/archaeoglobus_medium_dsm_399.yaml",
+      "source_sha256": "bc3f31daaf7fb549ae44d034375d60f1de6a6c063b807273e4e7ed5dd0005112",
+      "variant_index": 0,
+      "modification_index": 2,
+      "source_text": "Carbon/electron donor: sodium lactate 7 ml of 30% (w/v) per L (Hartzell 1999); DL-sodium lactate ~22 mM (Reed 2001)."
+    },
+    {
+      "queue_row_number": 77,
+      "status": "STRUCTURED",
+      "reason": "Only Reed2001 yeast-extract condition structured; Wolfe-vitamin replacement belongs to unresolved Hartzell alternative.",
+      "assertion_count": 1,
+      "recipe_id": "CultureMech:009220",
+      "source_path": "data/normalized_yaml/archaea/archaeoglobus_medium_dsm_399.yaml",
+      "source_sha256": "bc3f31daaf7fb549ae44d034375d60f1de6a6c063b807273e4e7ed5dd0005112",
+      "variant_index": 0,
+      "modification_index": 3,
+      "source_text": "Yeast extract 0.5 g/L (replaceable by Wolfe's vitamin mixture 10 ml/L for defined medium)."
+    },
+    {
+      "queue_row_number": 78,
+      "status": "HELD_EVIDENCE",
+      "reason": "Hartzell1999 full stock/trace formulation not inspected. Reed2001 names basal salts/trace minerals without verifying these quantities/forms; preserve prose without promoting stock identities or doses.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:009220",
+      "source_path": "data/normalized_yaml/archaea/archaeoglobus_medium_dsm_399.yaml",
+      "source_sha256": "bc3f31daaf7fb549ae44d034375d60f1de6a6c063b807273e4e7ed5dd0005112",
+      "variant_index": 0,
+      "modification_index": 4,
+      "source_text": "1000x trace element stock (1 ml/L) incl. Na2EDTA.2H2O, Mn/Co/Zn/Ni/Cu/B/Al/Mo/W/Se/V salts; (NH4)2Fe(SO4)2 1 ml of 0.2% per L."
+    },
+    {
+      "queue_row_number": 79,
+      "status": "STRUCTURED",
+      "reason": "Only Reed2001 final reductant concentrations structured; Hartzell combined-stock preparation remains held.",
+      "assertion_count": 2,
+      "recipe_id": "CultureMech:009220",
+      "source_path": "data/normalized_yaml/archaea/archaeoglobus_medium_dsm_399.yaml",
+      "source_sha256": "bc3f31daaf7fb549ae44d034375d60f1de6a6c063b807273e4e7ed5dd0005112",
+      "variant_index": 0,
+      "modification_index": 5,
+      "source_text": "Reductant: Na2S 100 mM + Na2S2O3 200 mM stock added at 0.5% v/v after autoclaving (Hartzell); Na2S/Na2S2O3 ~1 mM each (Reed)."
+    },
+    {
+      "queue_row_number": 80,
+      "status": "STRUCTURED",
+      "reason": "Resazurin identity supported by Reed; Hartzell N2-sparging assertion remains held and temperatures are conditions.",
+      "assertion_count": 1,
+      "recipe_id": "CultureMech:009220",
+      "source_path": "data/normalized_yaml/archaea/archaeoglobus_medium_dsm_399.yaml",
+      "source_sha256": "bc3f31daaf7fb549ae44d034375d60f1de6a6c063b807273e4e7ed5dd0005112",
+      "variant_index": 0,
+      "modification_index": 6,
+      "source_text": "Resazurin redox indicator; anaerobic, boiled and N2-sparged; good growth 75-82C (Hartzell), 83C in glass carboys (Reed)."
+    },
+    {
+      "queue_row_number": 81,
+      "status": "HELD_EVIDENCE",
+      "reason": "Koschnitzki2017 thesis formulation not independently inspected in this pass; quoted local evidence alone does not verify stock composition, sodium-sulfide hydration or added-versus-parent status.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:009166",
+      "source_path": "data/normalized_yaml/archaea/ignicoccus_medium_for_dsm_18386.yaml",
+      "source_sha256": "1265b959150df3f4a232f5d1e531f4504731f4f865dbce7ac7f6bdffec960645",
+      "variant_index": 0,
+      "modification_index": 0,
+      "source_text": "Half-strength SME synthetic-seawater base"
+    },
+    {
+      "queue_row_number": 82,
+      "status": "HELD_EVIDENCE",
+      "reason": "Koschnitzki2017 thesis formulation not independently inspected in this pass; quoted local evidence alone does not verify stock composition, sodium-sulfide hydration or added-versus-parent status.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:009166",
+      "source_path": "data/normalized_yaml/archaea/ignicoccus_medium_for_dsm_18386.yaml",
+      "source_sha256": "1265b959150df3f4a232f5d1e531f4504731f4f865dbce7ac7f6bdffec960645",
+      "variant_index": 0,
+      "modification_index": 1,
+      "source_text": "Add elemental sulfur (S0) as electron acceptor"
+    },
+    {
+      "queue_row_number": 83,
+      "status": "HELD_EVIDENCE",
+      "reason": "Koschnitzki2017 thesis formulation not independently inspected in this pass; quoted local evidence alone does not verify stock composition, sodium-sulfide hydration or added-versus-parent status.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:009166",
+      "source_path": "data/normalized_yaml/archaea/ignicoccus_medium_for_dsm_18386.yaml",
+      "source_sha256": "1265b959150df3f4a232f5d1e531f4504731f4f865dbce7ac7f6bdffec960645",
+      "variant_index": 0,
+      "modification_index": 2,
+      "source_text": "Reduce with Na2S"
+    },
+    {
+      "queue_row_number": 84,
+      "status": "HELD_EVIDENCE",
+      "reason": "Koschnitzki2017 thesis formulation not independently inspected in this pass; quoted local evidence alone does not verify stock composition, sodium-sulfide hydration or added-versus-parent status.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:009166",
+      "source_path": "data/normalized_yaml/archaea/ignicoccus_medium_for_dsm_18386.yaml",
+      "source_sha256": "1265b959150df3f4a232f5d1e531f4504731f4f865dbce7ac7f6bdffec960645",
+      "variant_index": 0,
+      "modification_index": 3,
+      "source_text": "Additional/trace components vs parent: explicit NaHCO3, SrCl2.6H2O, KI"
+    },
+    {
+      "queue_row_number": 85,
+      "status": "HELD_MODEL",
+      "reason": "Headspace pressure/ratio and temperature/pH remain explicit prose; thesis evidence and gas-phase ingredient admission unresolved.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:009166",
+      "source_path": "data/normalized_yaml/archaea/ignicoccus_medium_for_dsm_18386.yaml",
+      "source_sha256": "1265b959150df3f4a232f5d1e531f4504731f4f865dbce7ac7f6bdffec960645",
+      "variant_index": 0,
+      "modification_index": 4,
+      "source_text": "H2/CO2 (80:20) headspace, ~1.5 bar; pH 5.5-6.0; 90C"
+    },
+    {
+      "queue_row_number": 86,
+      "status": "STRUCTURED",
+      "reason": "0.1% condition is supported in acetate-determination passage; other0.05% experiment stays separate.",
+      "assertion_count": 1,
+      "recipe_id": "CultureMech:009166",
+      "source_path": "data/normalized_yaml/archaea/ignicoccus_medium_for_dsm_18386.yaml",
+      "source_sha256": "1265b959150df3f4a232f5d1e531f4504731f4f865dbce7ac7f6bdffec960645",
+      "variant_index": 1,
+      "modification_index": 0,
+      "source_text": "Add yeast extract to 0.1% (w/v)"
+    },
+    {
+      "queue_row_number": 87,
+      "status": "STRUCTURED",
+      "reason": "Three supplements and two explicit omissions scoped to the listed DSM strains.",
+      "assertion_count": 5,
+      "recipe_id": "CultureMech:000643",
+      "source_path": "data/normalized_yaml/archaea/methanobacterium_medium.yaml",
+      "source_sha256": "67073349f3c843dd14d6c8060e1b58298f57f03d0aaee43dcdb0fda1ff927599",
+      "variant_index": 0,
+      "modification_index": 0,
+      "source_text": "Supplement medium after autoclaving with 1 ml/l Wolin's vitamin solution (10x, see medium 120), 0.30 g/l DL-dithiothreitol, and 0.15 g/l coenzyme M (2-mercaptoethanesulfonic acid) from anoxic stock solutions sterilized by filtration. Omit Na2S x 9 H2O and L-Cysteine HCl x H2O."
+    },
+    {
+      "queue_row_number": 88,
+      "status": "CONDITION_ONLY",
+      "reason": "pH condition only; no named titrant or dose invented.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000643",
+      "source_path": "data/normalized_yaml/archaea/methanobacterium_medium.yaml",
+      "source_sha256": "67073349f3c843dd14d6c8060e1b58298f57f03d0aaee43dcdb0fda1ff927599",
+      "variant_index": 1,
+      "modification_index": 0,
+      "source_text": "Adjust pH of complete medium to 7.6."
+    },
+    {
+      "queue_row_number": 89,
+      "status": "HELD_MODEL",
+      "reason": "Primary DSMZ recipe verifies the gas mixture/pressure but it is a post-inoculation headspace operation; preserve literal context pending explicit gas-occurrence admission, not a liquid ingredient concentration.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000643",
+      "source_path": "data/normalized_yaml/archaea/methanobacterium_medium.yaml",
+      "source_sha256": "67073349f3c843dd14d6c8060e1b58298f57f03d0aaee43dcdb0fda1ff927599",
+      "variant_index": 2,
+      "modification_index": 0,
+      "source_text": "Adjust pH to 6.5 and add sterile 80% H2 and 20% CO2 gas to 2 bar overpressure after inoculation."
+    },
+    {
+      "queue_row_number": 90,
+      "status": "CONDITION_ONLY",
+      "reason": "pH condition only; no named titrant or dose invented.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000643",
+      "source_path": "data/normalized_yaml/archaea/methanobacterium_medium.yaml",
+      "source_sha256": "67073349f3c843dd14d6c8060e1b58298f57f03d0aaee43dcdb0fda1ff927599",
+      "variant_index": 3,
+      "modification_index": 0,
+      "source_text": "Adjust pH of complete medium to 8.0 - 8.3."
+    },
+    {
+      "queue_row_number": 91,
+      "status": "STRUCTURED",
+      "reason": "Explicit post-autoclave supplement for DSM5522.",
+      "assertion_count": 1,
+      "recipe_id": "CultureMech:000643",
+      "source_path": "data/normalized_yaml/archaea/methanobacterium_medium.yaml",
+      "source_sha256": "67073349f3c843dd14d6c8060e1b58298f57f03d0aaee43dcdb0fda1ff927599",
+      "variant_index": 4,
+      "modification_index": 0,
+      "source_text": "Supplement medium with 5.0 g/l D-glucose added after autoclaving from a sterile anoxic stock solution."
+    },
+    {
+      "queue_row_number": 92,
+      "status": "STRUCTURED",
+      "reason": "Set reported amount; do not add3g/L to the prior amount.",
+      "assertion_count": 1,
+      "recipe_id": "CultureMech:000643",
+      "source_path": "data/normalized_yaml/archaea/methanobacterium_medium.yaml",
+      "source_sha256": "67073349f3c843dd14d6c8060e1b58298f57f03d0aaee43dcdb0fda1ff927599",
+      "variant_index": 5,
+      "modification_index": 0,
+      "source_text": "Increase amount of Na-acetate to 3.00 g/l."
+    },
+    {
+      "queue_row_number": 93,
+      "status": "STRUCTURED",
+      "reason": "Explicit sulfate supplement for DSM7057.",
+      "assertion_count": 1,
+      "recipe_id": "CultureMech:000643",
+      "source_path": "data/normalized_yaml/archaea/methanobacterium_medium.yaml",
+      "source_sha256": "67073349f3c843dd14d6c8060e1b58298f57f03d0aaee43dcdb0fda1ff927599",
+      "variant_index": 6,
+      "modification_index": 0,
+      "source_text": "Supplement medium with 2.00 g/l Na2SO4."
+    },
+    {
+      "queue_row_number": 94,
+      "status": "STRUCTURED",
+      "reason": "Literal0.3g supplement and explicit omitted nonahydrate; pH context retained.",
+      "assertion_count": 2,
+      "recipe_id": "CultureMech:000643",
+      "source_path": "data/normalized_yaml/archaea/methanobacterium_medium.yaml",
+      "source_sha256": "67073349f3c843dd14d6c8060e1b58298f57f03d0aaee43dcdb0fda1ff927599",
+      "variant_index": 7,
+      "modification_index": 0,
+      "source_text": "Supplement medium with 0.3 g DL-Dithiothreitol. Omit Na2S x 9 H2O."
+    },
+    {
+      "queue_row_number": 95,
+      "status": "HELD_MODEL",
+      "reason": "Primary DSMZ recipe verifies the gas mixture/pressure but it is a post-inoculation headspace operation; preserve literal context pending explicit gas-occurrence admission, not a liquid ingredient concentration.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000643",
+      "source_path": "data/normalized_yaml/archaea/methanobacterium_medium.yaml",
+      "source_sha256": "67073349f3c843dd14d6c8060e1b58298f57f03d0aaee43dcdb0fda1ff927599",
+      "variant_index": 8,
+      "modification_index": 0,
+      "source_text": "Add sterile 80% H2 and 20% CO2 gas mixture to 2 bar overpressure after inoculation."
+    },
+    {
+      "queue_row_number": 96,
+      "status": "STRUCTURED",
+      "reason": "Literal0.3g supplement and explicit omitted nonahydrate; pH context retained.",
+      "assertion_count": 2,
+      "recipe_id": "CultureMech:000643",
+      "source_path": "data/normalized_yaml/archaea/methanobacterium_medium.yaml",
+      "source_sha256": "67073349f3c843dd14d6c8060e1b58298f57f03d0aaee43dcdb0fda1ff927599",
+      "variant_index": 9,
+      "modification_index": 0,
+      "source_text": "Supplement medium with 0.3 g DL-Dithiothreitol. Omit Na2S x 9 H2O. Adjust pH of final medium to 6.0."
+    },
+    {
+      "queue_row_number": 97,
+      "status": "STRUCTURED",
+      "reason": "Replacement and two supplements kept separate; no stock expansion.",
+      "assertion_count": 3,
+      "recipe_id": "CultureMech:000643",
+      "source_path": "data/normalized_yaml/archaea/methanobacterium_medium.yaml",
+      "source_sha256": "67073349f3c843dd14d6c8060e1b58298f57f03d0aaee43dcdb0fda1ff927599",
+      "variant_index": 10,
+      "modification_index": 0,
+      "source_text": "Replace sludge fluid with the same volume of clarified rumen fluid (see medium 1310) and supplement medium with 2.00 g/l Trypticase peptone and 10.00 ml/l of Wolin's vitamin solution (see medium 141)."
+    },
+    {
+      "queue_row_number": 98,
+      "status": "STRUCTURED",
+      "reason": "CoenzymeM supplement structured; separately named1bar gas operation remains held under gas-phase admission.",
+      "assertion_count": 1,
+      "recipe_id": "CultureMech:000643",
+      "source_path": "data/normalized_yaml/archaea/methanobacterium_medium.yaml",
+      "source_sha256": "67073349f3c843dd14d6c8060e1b58298f57f03d0aaee43dcdb0fda1ff927599",
+      "variant_index": 11,
+      "modification_index": 0,
+      "source_text": "Supplement medium after autoclaving with 0.10 g/l 2-mercaptoethanesulfonic acid (coenzyme M) added from an anoxic stock solution sterilized by filtration and add sterile 80% H2 and 20% CO2 gas mixture to 1 bar overpressure after inoculation."
+    },
+    {
+      "queue_row_number": 99,
+      "status": "HELD_MODEL",
+      "reason": "Primary DSMZ recipe verifies the gas mixture/pressure but it is a post-inoculation headspace operation; preserve literal context pending explicit gas-occurrence admission, not a liquid ingredient concentration.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000643",
+      "source_path": "data/normalized_yaml/archaea/methanobacterium_medium.yaml",
+      "source_sha256": "67073349f3c843dd14d6c8060e1b58298f57f03d0aaee43dcdb0fda1ff927599",
+      "variant_index": 12,
+      "modification_index": 0,
+      "source_text": "Adjust pH of the complete medium to 7.2 and add sterile 80% H2 and 20% CO2 gas mixture to 1 bar overpressure after inoculation."
+    },
+    {
+      "queue_row_number": 100,
+      "status": "HELD_MODEL",
+      "reason": "Primary DSMZ recipe verifies the gas mixture/pressure but it is a post-inoculation headspace operation; preserve literal context pending explicit gas-occurrence admission, not a liquid ingredient concentration.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000643",
+      "source_path": "data/normalized_yaml/archaea/methanobacterium_medium.yaml",
+      "source_sha256": "67073349f3c843dd14d6c8060e1b58298f57f03d0aaee43dcdb0fda1ff927599",
+      "variant_index": 13,
+      "modification_index": 0,
+      "source_text": "Adjust pH of the complete medium to 7.4 and add sterile 80% H2 and 20% CO2 gas mixture to 1 bar overpressure after inoculation."
+    },
+    {
+      "queue_row_number": 101,
+      "status": "CONDITION_ONLY",
+      "reason": "pH condition only; no named titrant or dose invented.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000643",
+      "source_path": "data/normalized_yaml/archaea/methanobacterium_medium.yaml",
+      "source_sha256": "67073349f3c843dd14d6c8060e1b58298f57f03d0aaee43dcdb0fda1ff927599",
+      "variant_index": 14,
+      "modification_index": 0,
+      "source_text": "Adjust pH of complete medium to 8.5 - 9.0."
+    },
+    {
+      "queue_row_number": 102,
+      "status": "CONDITION_ONLY",
+      "reason": "pH condition only; no named titrant or dose invented.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000643",
+      "source_path": "data/normalized_yaml/archaea/methanobacterium_medium.yaml",
+      "source_sha256": "67073349f3c843dd14d6c8060e1b58298f57f03d0aaee43dcdb0fda1ff927599",
+      "variant_index": 15,
+      "modification_index": 0,
+      "source_text": "Adjust pH of final medium to 6.0."
+    },
+    {
+      "queue_row_number": 103,
+      "status": "CONDITION_ONLY",
+      "reason": "Growth phase, organism or serial-adaptation context, without a new ingredient assertion.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000660",
+      "source_path": "data/normalized_yaml/archaea/methanosarcina_medium.yaml",
+      "source_sha256": "4a145ae6f0b443f0e9eb913f385536e8fc0418887532f57f1b146d01558185e2",
+      "variant_index": 0,
+      "modification_index": 0,
+      "source_text": "Capture slow-growth phase physiology separately from faster growth conditions."
+    },
+    {
+      "queue_row_number": 104,
+      "status": "CONDITION_ONLY",
+      "reason": "Growth phase, organism or serial-adaptation context, without a new ingredient assertion.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:000660",
+      "source_path": "data/normalized_yaml/archaea/methanosarcina_medium.yaml",
+      "source_sha256": "4a145ae6f0b443f0e9eb913f385536e8fc0418887532f57f1b146d01558185e2",
+      "variant_index": 0,
+      "modification_index": 1,
+      "source_text": "Use Methanosarcina acetivorans as the target organism."
+    },
+    {
+      "queue_row_number": 105,
+      "status": "CONDITION_ONLY",
+      "reason": "Growth phase, organism or serial-adaptation context, without a new ingredient assertion.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:001478",
+      "source_path": "data/normalized_yaml/archaea/pyrococcus_medium.yaml",
+      "source_sha256": "cfeeddb3efb58448b41869ef16e32abce21122cc820cf60e90bafaf897dadf9c",
+      "variant_index": 0,
+      "modification_index": 0,
+      "source_text": "Use Pyrococcus furiosus serially adapted for cellulose utilization."
+    },
+    {
+      "queue_row_number": 106,
+      "status": "STRUCTURED",
+      "reason": "Primary abstract verifies CF11-cellulose substrate identity only.",
+      "assertion_count": 1,
+      "recipe_id": "CultureMech:001478",
+      "source_path": "data/normalized_yaml/archaea/pyrococcus_medium.yaml",
+      "source_sha256": "cfeeddb3efb58448b41869ef16e32abce21122cc820cf60e90bafaf897dadf9c",
+      "variant_index": 0,
+      "modification_index": 1,
+      "source_text": "Use CF11 cellulose as the growth substrate."
+    },
+    {
+      "queue_row_number": 107,
+      "status": "STRUCTURED",
+      "reason": "NH4Cl substitution is supported; vague MgSO4 reduction/replacement remains unpromoted.",
+      "assertion_count": 1,
+      "recipe_id": "CultureMech:009226",
+      "source_path": "data/normalized_yaml/archaea/sulfolobus_medium_anaerobic_for_dsm_2162.yaml",
+      "source_sha256": "34c2c8e2888f6614545b81ea073636df1c911644a42db5cc0ba6659a03a3f9f9",
+      "variant_index": 0,
+      "modification_index": 0,
+      "source_text": "Low-sulfate Brock's salts base (MgSO4 reduced/replaced); NH4Cl instead of (NH4)2SO4"
+    },
+    {
+      "queue_row_number": 108,
+      "status": "HELD_MODEL",
+      "reason": "Sulfur10g/L and some yeast extract are already in parent; primary source has distinct species-specific0.2g/L/1g/L yeast, sucrose/NZ-Amine and other supplements. Keep this aggregate row held until separate alternative recipe scopes are explicit, not one simultaneous recipe.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:009226",
+      "source_path": "data/normalized_yaml/archaea/sulfolobus_medium_anaerobic_for_dsm_2162.yaml",
+      "source_sha256": "34c2c8e2888f6614545b81ea073636df1c911644a42db5cc0ba6659a03a3f9f9",
+      "variant_index": 0,
+      "modification_index": 1,
+      "source_text": "10 g/L elemental sulfur; species-specific 0.2-1 g/L yeast extract (or sucrose + NZ-Amine)"
+    },
+    {
+      "queue_row_number": 109,
+      "status": "HELD_MODEL",
+      "reason": "Aerobic foam-stopper condition is verified, but source does not explicitly state removal events for this local parent's Na2S/N2. Do not transform absence from a source list into an unqualified omission assertion.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:009226",
+      "source_path": "data/normalized_yaml/archaea/sulfolobus_medium_anaerobic_for_dsm_2162.yaml",
+      "source_sha256": "34c2c8e2888f6614545b81ea073636df1c911644a42db5cc0ba6659a03a3f9f9",
+      "variant_index": 0,
+      "modification_index": 2,
+      "source_text": "AEROBIC: vented serum bottles with foam stoppers; NO Na2S reducing agent; NO N2 gas phase"
+    },
+    {
+      "queue_row_number": 110,
+      "status": "HELD_EVIDENCE",
+      "reason": "Willard2024 Methods states concentrated HCl only; existing H2SO4-or-HCl alternative is not supported by the cited source. Preserve hold pending prose correction/review.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:009226",
+      "source_path": "data/normalized_yaml/archaea/sulfolobus_medium_anaerobic_for_dsm_2162.yaml",
+      "source_sha256": "34c2c8e2888f6614545b81ea073636df1c911644a42db5cc0ba6659a03a3f9f9",
+      "variant_index": 0,
+      "modification_index": 3,
+      "source_text": "65-75C; pH 2-3 (acidified with H2SO4 or HCl)"
+    },
+    {
+      "queue_row_number": 111,
+      "status": "HELD_EVIDENCE",
+      "reason": "Sakai2017 primary metadata/abstract describes aerobic sulfur-inhibited S.acidiphilus, whereas this variant asserts anaerobic MBSY/H2-CO2 and optional sulfur. Full Methods not inspected, so formulation/dose/source linkage remains held, not certified or corrected from abstract alone.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:009226",
+      "source_path": "data/normalized_yaml/archaea/sulfolobus_medium_anaerobic_for_dsm_2162.yaml",
+      "source_sha256": "34c2c8e2888f6614545b81ea073636df1c911644a42db5cc0ba6659a03a3f9f9",
+      "variant_index": 1,
+      "modification_index": 0,
+      "source_text": "Modified Brock's basal salts + 1 g/L yeast extract (MBSY)"
+    },
+    {
+      "queue_row_number": 112,
+      "status": "HELD_EVIDENCE",
+      "reason": "Sakai2017 primary metadata/abstract describes aerobic sulfur-inhibited S.acidiphilus, whereas this variant asserts anaerobic MBSY/H2-CO2 and optional sulfur. Full Methods not inspected, so formulation/dose/source linkage remains held, not certified or corrected from abstract alone.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:009226",
+      "source_path": "data/normalized_yaml/archaea/sulfolobus_medium_anaerobic_for_dsm_2162.yaml",
+      "source_sha256": "34c2c8e2888f6614545b81ea073636df1c911644a42db5cc0ba6659a03a3f9f9",
+      "variant_index": 1,
+      "modification_index": 1,
+      "source_text": "Reduced with Na2S (0.5 g/L) + resazurin (1 mg/L)"
+    },
+    {
+      "queue_row_number": 113,
+      "status": "HELD_EVIDENCE",
+      "reason": "Sakai2017 primary metadata/abstract describes aerobic sulfur-inhibited S.acidiphilus, whereas this variant asserts anaerobic MBSY/H2-CO2 and optional sulfur. Full Methods not inspected, so formulation/dose/source linkage remains held, not certified or corrected from abstract alone.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:009226",
+      "source_path": "data/normalized_yaml/archaea/sulfolobus_medium_anaerobic_for_dsm_2162.yaml",
+      "source_sha256": "34c2c8e2888f6614545b81ea073636df1c911644a42db5cc0ba6659a03a3f9f9",
+      "variant_index": 1,
+      "modification_index": 2,
+      "source_text": "Headspace H2/CO2 (80:20) at 100 kPa; optional 10 g/L elemental sulfur"
+    },
+    {
+      "queue_row_number": 114,
+      "status": "HELD_EVIDENCE",
+      "reason": "Sakai2017 primary metadata/abstract describes aerobic sulfur-inhibited S.acidiphilus, whereas this variant asserts anaerobic MBSY/H2-CO2 and optional sulfur. Full Methods not inspected, so formulation/dose/source linkage remains held, not certified or corrected from abstract alone.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:009226",
+      "source_path": "data/normalized_yaml/archaea/sulfolobus_medium_anaerobic_for_dsm_2162.yaml",
+      "source_sha256": "34c2c8e2888f6614545b81ea073636df1c911644a42db5cc0ba6659a03a3f9f9",
+      "variant_index": 1,
+      "modification_index": 3,
+      "source_text": "65-75C; pH 3.0"
+    },
+    {
+      "queue_row_number": 115,
+      "status": "CONDITION_ONLY",
+      "reason": "Base-medium, pH, temperature and oxygen context only.",
+      "assertion_count": 0,
+      "recipe_id": "CultureMech:008908",
+      "source_path": "data/normalized_yaml/archaea/sulfolobus_medium_for_dsm_5348.yaml",
+      "source_sha256": "796ca3c640365ea7cc9b50b68fec7a4a98ad4883c663d1d84a6c5596d14b972a",
+      "variant_index": 0,
+      "modification_index": 0,
+      "source_text": "Base DSMZ medium 88 (Brock's salts), pH 2.0, 70C, aerobic"
+    },
+    {
+      "queue_row_number": 116,
+      "status": "STRUCTURED",
+      "reason": "Yeast-extract condition verified; tryptone alternative remains held for source evidence.",
+      "assertion_count": 1,
+      "recipe_id": "CultureMech:008908",
+      "source_path": "data/normalized_yaml/archaea/sulfolobus_medium_for_dsm_5348.yaml",
+      "source_sha256": "796ca3c640365ea7cc9b50b68fec7a4a98ad4883c663d1d84a6c5596d14b972a",
+      "variant_index": 0,
+      "modification_index": 1,
+      "source_text": "Add 0.1% yeast extract (mixotrophic) or 0.1% tryptone (heterotrophic)"
+    },
+    {
+      "queue_row_number": 117,
+      "status": "STRUCTURED",
+      "reason": "Two distinct experiments retained with explicit stages, not simultaneous interchangeable supplements.",
+      "assertion_count": 2,
+      "recipe_id": "CultureMech:008908",
+      "source_path": "data/normalized_yaml/archaea/sulfolobus_medium_for_dsm_5348.yaml",
+      "source_sha256": "796ca3c640365ea7cc9b50b68fec7a4a98ad4883c663d1d84a6c5596d14b972a",
+      "variant_index": 0,
+      "modification_index": 2,
+      "source_text": "Optional ~7.5 g/L FeSO4.7H2O, or FeS2/pyrite as sole energy source"
+    }
+  ],
+  "limitations": [
+    "Gas-phase operations remain held pending admission policy.",
+    "Named media/stock/undefined mixtures are not chemically expanded.",
+    "Sources inaccessible or ambiguous are held; condition-only is a literal-row disposition, not ingredient absence in the full methods.",
+    "Independent review and guarded application remain required."
+  ]
+}

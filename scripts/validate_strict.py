@@ -49,6 +49,9 @@ from record_kinds import has_solution_shape  # noqa: E402  -- shared medium/solu
 
 from culturemech.validation.causal_graphs import validate_recipe_causal_graphs  # noqa: E402
 from culturemech.validation.protein_examples import validate_recipe_protein_examples  # noqa: E402
+from culturemech.validation.variant_ingredients import (  # noqa: E402
+    validate_recipe_variant_ingredients,
+)
 
 
 def infer_target_class(instance: dict) -> str:
@@ -192,6 +195,17 @@ def validate_one(path: Path) -> list[dict]:
                 "detail": cg_issue.detail,
                 "path": cg_issue.path,
                 "message": cg_issue.message[:300],
+            }
+        )
+    for issue in validate_recipe_variant_ingredients(instance):
+        rows.append(
+            {
+                "file": str(path),
+                "layer": "variant_ingredients",
+                "category": issue.category,
+                "detail": issue.detail,
+                "path": issue.path,
+                "message": issue.message[:300],
             }
         )
     return rows

@@ -14,8 +14,15 @@ or `composition`, plus recursively nested inline-stock composition. A referenced
 stock already present in the scan contributes its own components once; the list
 does not expand it into every referring medium.
 
-Ingredient mentions only in `variants[].modifications`, notes and other prose
-are outside this structured extraction. Inline copies with extra content beyond
+Reviewed `variants[].ingredient_changes[]` contribute scoped occurrences for
+`ADD`, `SET_CONCENTRATION`, and the introduced side of `REPLACE`. The complete
+change ledger also retains `REMOVE` and the displaced side of `REPLACE`, which
+never enter positive ingredient counts. Each change retains its variant,
+experimental stage, source modification and evidence. The scanner does not apply
+these operations to the parent or compute a final variant formulation.
+
+Ingredient mentions remaining only in `variants[].modifications`, notes and other
+prose are outside this structured extraction. Inline copies with extra content beyond
 their referenced stock are also outside its direct-containment contract; see
 [the occurrence guide](unmapped_ingredients_guide.md). These limitations remain
 visible curation work. Do not turn a prose mention or a name match into an
@@ -23,8 +30,10 @@ identity assertion merely to claim complete chemical coverage.
 
 The separate [variant prose inventory](variant_prose_inventory.md) produces a
 reproducible `UNREVIEWED` queue with exact modification text and evidence.
-It supports scientific curation of this gap; its rows are not new structured
-ingredient occurrences or approved additions to MIM's frozen intake.
+It supports [source-bound curation](variant_prose_inventory.md#curate-structured-variant-ingredients)
+of this gap; queue rows alone are not ingredient occurrences or approved additions
+to MIM's frozen intake. A complete disposition ledger can still contain explicit
+evidence or representation holds; report those instead of claiming all prose is curated.
 
 `ingredients_list.tsv` is the compact inventory. The lossless exchange surface
 is `ingredient_occurrences.tsv`, identified by
@@ -33,6 +42,34 @@ snapshot**. An array index can change between revisions. Keep source paths,
 source labels, compound IDs, descriptor JSON and resolution evidence with each
 occurrence. Counts of distinct names, resolved identities, review cases, recipes
 and occurrences are different measurements.
+
+## Version 2 exchange contract
+
+The manifest contract is `culturemech-direct-ingredients-v2`. The occurrence TSV
+keeps its original columns and appends variant context. The new
+`variant_ingredient_changes.tsv` contains one descriptor row for each change,
+plus a second row for the displaced descriptor of a replacement. It preserves
+the complete source change in `change_json`, the descriptor in `ingredient_json`,
+and evidence in `evidence_json`.
+
+`counts_as_presence` is an inventory inclusion flag: true for the introduced or
+concentration-target descriptor, false for a removal or displaced descriptor.
+It does not establish a nonzero concentration, an initial dose, or an ingredient
+present in every condition. In particular, a concentration set to zero remains
+an explicit change target. Consumers must retain the action, stage and quantity
+context; neither positive rows nor the compact list are a fully expanded recipe.
+
+Variant occurrence coordinates use `component_field=variants/V/ingredient_changes`
+and `component_index=C`, both zero-based. The ledger adds `descriptor_role` to
+that key; `descriptor_path` is a JSON pointer such as
+`/variants/0/ingredient_changes/1/replaced_ingredient`. Source modification indices
+refer to the same pinned recipe bytes. Grouping still uses the existing MIM resolver,
+so a known identity gains occurrences and an unresolved label stays visible.
+
+Version 1 consumers must explicitly adopt this contract. They must admit the new
+columns and companion ledger, preserve scope, and reject attempts to flatten
+negative/context-only mentions into positive medium edges. A new CultureMech
+bundle does not authorize replacement of a running MIM campaign's frozen inputs.
 
 ## Build and verify one candidate
 
@@ -65,7 +102,8 @@ just verify-ingredient-release output/ingredient-release-candidate
 The destination must be new. The wrapper uses the existing aggregation and
 pinned `culturemech.ingredients.mim_label_index` resolver; it introduces no
 second matching algorithm. It stages the list, uncapped occurrence table,
-mapped/unmapped YAML views, error report and manifest together. Input failures
+mapped/unmapped YAML views, complete variant change ledger, error report and manifest
+together. Input failures
 or changed dependencies prevent successful publication. Ordinary aggregation
 outputs and another campaign's frozen inputs remain untouched.
 
@@ -98,7 +136,9 @@ Moving a subset into the default directory never makes it a full-catalog origin.
 
 CSV parsing is required: embedded newlines and quoting make physical line counts
 unsafe. Require zero input errors, complete occurrence/list accounting, and
-explicit mapped/unmapped/ambiguous outcomes. An unresolved row is retained work,
+explicit mapped/unmapped/ambiguous outcomes. The verifier also reconciles the
+positive variant coordinates exactly against eligible change-ledger rows and
+requires both descriptors of every replacement. An unresolved row is retained work,
 not a dropped observation. Equal hashes establish byte identity, not scientific
 approval or an assertion that upstream has not advanced.
 

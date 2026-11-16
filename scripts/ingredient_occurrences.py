@@ -8,6 +8,11 @@ standalone solution record in the same scan is not expanded, #312), records
 every direct descriptor with stable coordinates, and resolves its identity
 through the pinned MediaIngredientMech label index introduced by #260.
 
+Structured variant changes (#683) add only ADD/SET_CONCENTRATION/new REPLACE
+descriptors to the positive occurrence table. Every change, including REMOVE
+and the old REPLACE descriptor, is retained separately with its exact source
+context. No base formulation is expanded, subtracted from, or materialized.
+
 The TSV occurrence artifact is canonical.  The mapped and unmapped YAML files
 are deterministic compatibility views derived from the same in-memory rows.
 Input errors are collected before any successful artifact is replaced.
@@ -22,7 +27,7 @@ import stat
 import tempfile
 from collections import Counter, defaultdict
 from collections.abc import Callable, Container, Mapping, Sequence
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from pathlib import Path
 from typing import Any, TextIO, cast
 
@@ -35,6 +40,21 @@ from culturemech.ingredients.mim_label_index import (
     GroundingDecision,
     ResolutionSource,
     resolve_ingredient,
+)
+from culturemech.validation.variant_ingredients import variant_ingredient_validation_results
+
+VARIANT_CONTEXT_FIELDS = (
+    "variant_index",
+    "variant_name",
+    "change_index",
+    "change_action",
+    "change_stage",
+    "descriptor_role",
+    "descriptor_path",
+    "source_modification_index",
+    "source_text",
+    "evidence_json",
+    "change_json",
 )
 
 OCCURRENCE_FIELDS = (
@@ -61,7 +81,8 @@ OCCURRENCE_FIELDS = (
     "concentration_value",
     "concentration_unit",
     "ingredient_json",
-)
+) + VARIANT_CONTEXT_FIELDS
+VARIANT_CHANGE_FIELDS = OCCURRENCE_FIELDS + ("counts_as_presence",)
 ERROR_FIELDS = ("file", "layer", "category", "detail", "path", "message")
 INGREDIENT_LIST_FIELDS = (
     "preferred_term",
@@ -120,6 +141,17 @@ class IngredientOccurrence:
     concentration_value: str
     concentration_unit: str
     ingredient_json: str
+    variant_index: int | str = ""
+    variant_name: str = ""
+    change_index: int | str = ""
+    change_action: str = ""
+    change_stage: str = ""
+    descriptor_role: str = ""
+    descriptor_path: str = ""
+    source_modification_index: int | str = ""
+    source_text: str = ""
+    evidence_json: str = ""
+    change_json: str = ""
 
     @property
     def key(self) -> tuple[str, str, int]:
@@ -136,6 +168,20 @@ class IngredientOccurrence:
     @property
     def is_resolved(self) -> bool:
         return bool(self.resolved_identifier)
+
+    @property
+    def counts_as_presence(self) -> bool:
+        """Positive direct descriptor, never a removed/replaced-old mention.
+
+        A positive variant row is scoped to its asserted action and stage. It
+        does not establish the ingredient's presence in the base recipe or a
+        complete resulting formulation (including zero-concentration events).
+        """
+
+        return not self.change_action or (
+            self.descriptor_role == "ingredient"
+            and self.change_action in {"ADD", "SET_CONCENTRATION", "REPLACE"}
+        )
 
     @property
     def ingredient_label(self) -> str:
@@ -159,6 +205,7 @@ class ScanResult:
 
     occurrences: tuple[IngredientOccurrence, ...]
     errors: tuple[AggregationError, ...]
+    variant_changes: tuple[IngredientOccurrence, ...] = ()
 
 
 Resolver = Callable[[Mapping[str, Any]], GroundingDecision]
@@ -226,6 +273,18 @@ def _schema_errors(instance: dict[str, Any], source_path: str) -> list[Aggregati
                 layer="schema",
             )
         )
+    if not errors:
+        for result in variant_ingredient_validation_results(instance):
+            if result.severity == Severity.ERROR:
+                errors.append(
+                    _error(
+                        source_path,
+                        "invalid_variant_ingredient_change",
+                        result.message,
+                        path=str(result.context[0]) if result.context else "",
+                        layer="semantic",
+                    )
+                )
     return errors
 
 
@@ -388,6 +447,7 @@ def scan_ingredient_occurrences(
         )
 
     occurrences: list[IngredientOccurrence] = []
+    variant_changes: list[IngredientOccurrence] = []
     errors: list[AggregationError] = []
     seen_keys: dict[tuple[str, str, int], str] = {}
     seen_recipe_ids: dict[str, str] = {}
@@ -445,6 +505,64 @@ def scan_ingredient_occurrences(
                 continue
             seen_keys[occurrence.key] = source_path
             occurrences.append(occurrence)
+
+    def emit_variant_changes(context: Mapping[str, str], instance: Mapping[str, Any]) -> None:
+        # Closed-schema and shared semantic validation have already established
+        # the action, source-index/text, evidence and descriptor contracts.
+        for variant_index, variant in enumerate(instance.get("variants") or []):
+            component_field = f"variants/{variant_index}/ingredient_changes"
+            for change_index, change in enumerate(variant.get("ingredient_changes") or []):
+                for role in ("ingredient", "replaced_ingredient"):
+                    if role not in change:
+                        continue
+                    descriptor_path = f"/{component_field}/{change_index}/{role}"
+                    try:
+                        row = _occurrence_from_descriptor(
+                            **context,
+                            component_field=component_field,
+                            component_index=change_index,
+                            descriptor=change[role],
+                            resolver=resolver,
+                        )
+                    except Exception as exc:  # noqa: BLE001 - complete error report
+                        errors.append(
+                            _error(
+                                context["source_path"],
+                                "resolver_error",
+                                str(exc),
+                                path=descriptor_path,
+                                detail=type(exc).__name__,
+                            )
+                        )
+                        continue
+                    row = replace(
+                        row,
+                        variant_index=variant_index,
+                        variant_name=variant["name"],
+                        change_index=change_index,
+                        change_action=change["action"],
+                        change_stage=change["stage"],
+                        descriptor_role=role,
+                        descriptor_path=descriptor_path,
+                        source_modification_index=change["source_modification_index"],
+                        source_text=change["source_text"],
+                        evidence_json=_cell(change["evidence"]),
+                        change_json=_cell(change),
+                    )
+                    variant_changes.append(row)
+                    if row.counts_as_presence:
+                        if row.key in seen_keys:
+                            errors.append(
+                                _error(
+                                    context["source_path"],
+                                    "duplicate_occurrence_key",
+                                    "stable variant occurrence coordinate is not unique",
+                                    path=descriptor_path,
+                                )
+                            )
+                            continue
+                        seen_keys[row.key] = context["source_path"]
+                        occurrences.append(row)
 
     files = sorted(root.rglob("*.yaml"), key=lambda item: item.as_posix())
     if not files:
@@ -581,6 +699,7 @@ def scan_ingredient_occurrences(
             "record_class": record_class,
         }
         emit(context, component_field, components)
+        emit_variant_changes(context, instance)
         scanned_records.add(recipe_id)
         if record_class == "SolutionRecipe":
             solution_records.add(instance["term"]["id"])
@@ -605,6 +724,7 @@ def scan_ingredient_occurrences(
             emit(context, nested_field, nested)
 
     occurrences.sort(key=lambda row: row.sort_key + (row.source_path,))
+    variant_changes.sort(key=lambda row: row.sort_key + (row.descriptor_role, row.source_path))
     errors.sort(
         key=lambda row: (
             row.file,
@@ -614,7 +734,7 @@ def scan_ingredient_occurrences(
             row.message,
         )
     )
-    return ScanResult(tuple(occurrences), tuple(errors))
+    return ScanResult(tuple(occurrences), tuple(errors), tuple(variant_changes))
 
 
 def _write_tsv(
@@ -651,6 +771,17 @@ def _write_occurrences_stream(
 
 def _write_errors_stream(stream: TextIO, errors: Sequence[AggregationError]) -> None:
     _write_tsv(stream, ERROR_FIELDS, [row.as_dict() for row in errors])
+
+
+def _write_variant_changes_stream(stream: TextIO, changes: Sequence[IngredientOccurrence]) -> None:
+    writer = csv.DictWriter(
+        stream, fieldnames=VARIANT_CHANGE_FIELDS, delimiter="\t", lineterminator="\n"
+    )
+    writer.writeheader()
+    for row in changes:
+        writer.writerow(
+            {**row.as_dict(), "counts_as_presence": "true" if row.counts_as_presence else "false"}
+        )
 
 
 def _safe_dump(value: Any, stream: TextIO) -> None:
@@ -789,6 +920,9 @@ def write_occurrences_and_yaml(
     yaml_path: str | Path,
     value: Mapping[str, Any],
     list_path: str | Path | None = None,
+    *,
+    variant_changes: Sequence[IngredientOccurrence] = (),
+    changes_path: str | Path | None = None,
 ) -> None:
     """Publish a compatibility wrapper's outputs as one staged set.
 
@@ -805,6 +939,14 @@ def write_occurrences_and_yaml(
             (
                 Path(yaml_path),
                 lambda stream: _write_yaml_collection_stream(stream, value),
+            ),
+            (
+                (
+                    Path(changes_path)
+                    if changes_path is not None
+                    else default_changes_output(occurrences_path)
+                ),
+                lambda stream: _write_variant_changes_stream(stream, variant_changes),
             ),
             *(
                 [
@@ -824,6 +966,12 @@ def default_list_output(occurrences_output: str | Path) -> Path:
     """Place the ingredient list beside the occurrence table it is derived from."""
 
     return Path(occurrences_output).parent / "ingredients_list.tsv"
+
+
+def default_changes_output(occurrences_output: str | Path) -> Path:
+    """Place the lossless variant-change ledger beside positive occurrences."""
+
+    return Path(occurrences_output).parent / "variant_ingredient_changes.tsv"
 
 
 def ensure_distinct_output_paths(*paths: str | Path) -> None:
@@ -858,6 +1006,8 @@ def _occurrence_dict(row: IngredientOccurrence) -> dict[str, Any]:
         "mim_ontology_id_diagnostic": row.mim_ontology_id_diagnostic,
     }
     occurrence.update({key: value for key, value in optional.items() if value})
+    if row.change_action:
+        occurrence.update({field: getattr(row, field) for field in VARIANT_CONTEXT_FIELDS})
     return occurrence
 
 
@@ -977,7 +1127,7 @@ def build_mapped_output(
 
     groups: dict[str, list[IngredientOccurrence]] = defaultdict(list)
     for row in occurrences:
-        if row.is_resolved:
+        if row.counts_as_presence and row.is_resolved:
             groups[row.resolved_identifier].append(row)
 
     entries: list[dict[str, Any]] = []
@@ -1061,7 +1211,7 @@ def build_unmapped_output(
 
     groups: dict[tuple[str, ...], list[IngredientOccurrence]] = defaultdict(list)
     for row in occurrences:
-        if not row.is_resolved:
+        if row.counts_as_presence and not row.is_resolved:
             groups[_unmapped_group_key(row)].append(row)
 
     entries: list[dict[str, Any]] = []
@@ -1130,6 +1280,8 @@ def build_ingredient_list(
 
     groups: dict[tuple[str, ...], list[IngredientOccurrence]] = defaultdict(list)
     for row in occurrences:
+        if not row.counts_as_presence:
+            continue
         key = ("mapped", row.resolved_identifier) if row.is_resolved else _unmapped_group_key(row)
         groups[key].append(row)
 
@@ -1187,16 +1339,19 @@ def run_aggregation(
     verbose: bool = False,
     resolver: Resolver = resolve_ingredient,
     list_output: str | Path | None = None,
+    changes_output: str | Path | None = None,
 ) -> int:
     """Scan once and publish all deterministic views, or only the error report."""
 
     if min_occurrences < 1:
         raise ValueError("min_occurrences must be at least 1")
+    changes_output = changes_output or default_changes_output(occurrences_output)
     ensure_distinct_output_paths(
         occurrences_output,
         mapped_output,
         unmapped_output,
         errors_output,
+        changes_output,
         *([list_output] if list_output is not None else []),
     )
     result = scan_ingredient_occurrences(input_dir, resolver=resolver)
@@ -1224,6 +1379,10 @@ def run_aggregation(
             (
                 Path(unmapped_output),
                 lambda stream: _write_yaml_collection_stream(stream, unmapped),
+            ),
+            (
+                Path(changes_output),
+                lambda stream: _write_variant_changes_stream(stream, result.variant_changes),
             ),
             *(
                 [

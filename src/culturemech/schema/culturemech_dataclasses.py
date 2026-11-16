@@ -1,5 +1,5 @@
 # Auto generated from culturemech.yaml by pythongen.py version: 0.0.1
-# Generation date: 2026-11-04T02:20:34
+# Generation date: 2026-11-16T13:17:39
 # Schema: culturemech
 #
 # id: https://w3id.org/culturemech
@@ -1732,6 +1732,7 @@ class MediaVariant(YAMLRoot):
     relationship: Optional[Union[str, "MediaVariantRelationshipEnum"]] = None
     description: Optional[str] = None
     modifications: Optional[Union[str, list[str]]] = empty_list()
+    ingredient_changes: Optional[Union[Union[dict, "VariantIngredientChange"], list[Union[dict, "VariantIngredientChange"]]]] = empty_list()
     purpose: Optional[str] = None
     supplier_info: Optional[Union[dict, "SupplierInfo"]] = None
     evidence: Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]], list[Union[dict, "EvidenceItem"]]]] = empty_dict()
@@ -1752,6 +1753,8 @@ class MediaVariant(YAMLRoot):
             self.modifications = [self.modifications] if self.modifications is not None else []
         self.modifications = [v if isinstance(v, str) else str(v) for v in self.modifications]
 
+        self._normalize_inlined_as_list(slot_name="ingredient_changes", slot_type=VariantIngredientChange, key_name="action", keyed=False)
+
         if self.purpose is not None and not isinstance(self.purpose, str):
             self.purpose = str(self.purpose)
 
@@ -1759,6 +1762,69 @@ class MediaVariant(YAMLRoot):
             self.supplier_info = SupplierInfo(**as_dict(self.supplier_info))
 
         self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass(repr=False)
+class VariantIngredientChange(YAMLRoot):
+    """
+    A curated ingredient change bound to one exact variant modification. Ingredient identity may remain unresolved.
+    ADD, SET_CONCENTRATION and the new ingredient of REPLACE are scoped change events, not a fully expanded variant
+    recipe. REMOVE and replaced_ingredient do not assert presence. Semantic validation additionally binds source_text
+    to modifications at source_modification_index and checks relationship and evidence context.
+    """
+    _inherited_slots: ClassVar[list[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = CULTUREMECH["VariantIngredientChange"]
+    class_class_curie: ClassVar[str] = "culturemech:VariantIngredientChange"
+    class_name: ClassVar[str] = "VariantIngredientChange"
+    class_model_uri: ClassVar[URIRef] = CULTUREMECH.VariantIngredientChange
+
+    action: Union[str, "VariantIngredientChangeActionEnum"] = None
+    ingredient: Union[dict, IngredientDescriptor] = None
+    stage: str = None
+    source_modification_index: int = None
+    source_text: str = None
+    evidence: Union[dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]], list[Union[dict, "EvidenceItem"]]] = empty_dict()
+    replaced_ingredient: Optional[Union[dict, IngredientDescriptor]] = None
+    notes: Optional[str] = None
+
+    def __post_init__(self, *_: str, **kwargs: Any):
+        if self._is_empty(self.action):
+            self.MissingRequiredField("action")
+        if not isinstance(self.action, VariantIngredientChangeActionEnum):
+            self.action = VariantIngredientChangeActionEnum(self.action)
+
+        if self._is_empty(self.ingredient):
+            self.MissingRequiredField("ingredient")
+        if not isinstance(self.ingredient, IngredientDescriptor):
+            self.ingredient = IngredientDescriptor(**as_dict(self.ingredient))
+
+        if self._is_empty(self.stage):
+            self.MissingRequiredField("stage")
+        if not isinstance(self.stage, str):
+            self.stage = str(self.stage)
+
+        if self._is_empty(self.source_modification_index):
+            self.MissingRequiredField("source_modification_index")
+        if not isinstance(self.source_modification_index, int):
+            self.source_modification_index = int(self.source_modification_index)
+
+        if self._is_empty(self.source_text):
+            self.MissingRequiredField("source_text")
+        if not isinstance(self.source_text, str):
+            self.source_text = str(self.source_text)
+
+        if self._is_empty(self.evidence):
+            self.MissingRequiredField("evidence")
+        self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
+
+        if self.replaced_ingredient is not None and not isinstance(self.replaced_ingredient, IngredientDescriptor):
+            self.replaced_ingredient = IngredientDescriptor(**as_dict(self.replaced_ingredient))
+
+        if self.notes is not None and not isinstance(self.notes, str):
+            self.notes = str(self.notes)
 
         super().__post_init__(**kwargs)
 
@@ -3127,6 +3193,12 @@ class ConcentrationUnitEnum(EnumDefinitionImpl):
     MICROG_PER_L = PermissibleValue(
         text="MICROG_PER_L",
         description="micrograms per liter")
+    MICROG_PER_ML = PermissibleValue(
+        text="MICROG_PER_ML",
+        description="micrograms per milliliter")
+    NG_PER_L = PermissibleValue(
+        text="NG_PER_L",
+        description="nanograms per liter; retain source treatment and preparation basis")
     MOLAR = PermissibleValue(
         text="MOLAR",
         description="moles per liter",
@@ -3137,6 +3209,15 @@ class ConcentrationUnitEnum(EnumDefinitionImpl):
     MICROMOLAR = PermissibleValue(
         text="MICROMOLAR",
         description="micromoles per liter")
+    NANOMOLAR = PermissibleValue(
+        text="NANOMOLAR",
+        description="nanomoles per liter")
+    PICOMOLAR = PermissibleValue(
+        text="PICOMOLAR",
+        description="picomoles per liter")
+    PPM = PermissibleValue(
+        text="PPM",
+        description="""Parts per million as stated by the source. Mass/mass, mass/volume or volume/volume basis must not be inferred. Preserve the explicit basis or its uncertainty in ingredient notes and do not convert silently.""")
     PERCENT_W_V = PermissibleValue(
         text="PERCENT_W_V",
         description="percent weight per volume")
@@ -3493,6 +3574,28 @@ class TransporterTypeEnum(EnumDefinitionImpl):
     _defn = EnumDefinition(
         name="TransporterTypeEnum",
         description="Classification of membrane transporter systems",
+    )
+
+class VariantIngredientChangeActionEnum(EnumDefinitionImpl):
+    """
+    Operation on an ingredient within a named variant stage
+    """
+    ADD = PermissibleValue(
+        text="ADD",
+        description="Add the stated ingredient in this variant stage")
+    REMOVE = PermissibleValue(
+        text="REMOVE",
+        description="Omit the stated ingredient; does not assert positive presence")
+    REPLACE = PermissibleValue(
+        text="REPLACE",
+        description="Replace replaced_ingredient with ingredient in this variant stage")
+    SET_CONCENTRATION = PermissibleValue(
+        text="SET_CONCENTRATION",
+        description="""Assign the stated concentration in this variant stage, including an explicitly reported zero dose; does not expand the parent formulation""")
+
+    _defn = EnumDefinition(
+        name="VariantIngredientChangeActionEnum",
+        description="Operation on an ingredient within a named variant stage",
     )
 
 class VariantTypeEnum(EnumDefinitionImpl):
@@ -5094,6 +5197,9 @@ slots.mediaVariant__description = Slot(uri=CULTUREMECH.description, name="mediaV
 slots.mediaVariant__modifications = Slot(uri=CULTUREMECH.modifications, name="mediaVariant__modifications", curie=CULTUREMECH.curie('modifications'),
                    model_uri=CULTUREMECH.mediaVariant__modifications, domain=None, range=Optional[Union[str, list[str]]])
 
+slots.mediaVariant__ingredient_changes = Slot(uri=CULTUREMECH.ingredient_changes, name="mediaVariant__ingredient_changes", curie=CULTUREMECH.curie('ingredient_changes'),
+                   model_uri=CULTUREMECH.mediaVariant__ingredient_changes, domain=None, range=Optional[Union[Union[dict, VariantIngredientChange], list[Union[dict, VariantIngredientChange]]]])
+
 slots.mediaVariant__purpose = Slot(uri=CULTUREMECH.purpose, name="mediaVariant__purpose", curie=CULTUREMECH.curie('purpose'),
                    model_uri=CULTUREMECH.mediaVariant__purpose, domain=None, range=Optional[str])
 
@@ -5102,6 +5208,32 @@ slots.mediaVariant__supplier_info = Slot(uri=CULTUREMECH.supplier_info, name="me
 
 slots.mediaVariant__evidence = Slot(uri=CULTUREMECH.evidence, name="mediaVariant__evidence", curie=CULTUREMECH.curie('evidence'),
                    model_uri=CULTUREMECH.mediaVariant__evidence, domain=None, range=Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]]])
+
+slots.variantIngredientChange__action = Slot(uri=CULTUREMECH.action, name="variantIngredientChange__action", curie=CULTUREMECH.curie('action'),
+                   model_uri=CULTUREMECH.variantIngredientChange__action, domain=None, range=Union[str, "VariantIngredientChangeActionEnum"])
+
+slots.variantIngredientChange__ingredient = Slot(uri=CULTUREMECH.ingredient, name="variantIngredientChange__ingredient", curie=CULTUREMECH.curie('ingredient'),
+                   model_uri=CULTUREMECH.variantIngredientChange__ingredient, domain=None, range=Union[dict, IngredientDescriptor])
+
+slots.variantIngredientChange__replaced_ingredient = Slot(uri=CULTUREMECH.replaced_ingredient, name="variantIngredientChange__replaced_ingredient", curie=CULTUREMECH.curie('replaced_ingredient'),
+                   model_uri=CULTUREMECH.variantIngredientChange__replaced_ingredient, domain=None, range=Optional[Union[dict, IngredientDescriptor]])
+
+slots.variantIngredientChange__stage = Slot(uri=CULTUREMECH.stage, name="variantIngredientChange__stage", curie=CULTUREMECH.curie('stage'),
+                   model_uri=CULTUREMECH.variantIngredientChange__stage, domain=None, range=str,
+                   pattern=re.compile(r'\S'))
+
+slots.variantIngredientChange__source_modification_index = Slot(uri=CULTUREMECH.source_modification_index, name="variantIngredientChange__source_modification_index", curie=CULTUREMECH.curie('source_modification_index'),
+                   model_uri=CULTUREMECH.variantIngredientChange__source_modification_index, domain=None, range=int)
+
+slots.variantIngredientChange__source_text = Slot(uri=CULTUREMECH.source_text, name="variantIngredientChange__source_text", curie=CULTUREMECH.curie('source_text'),
+                   model_uri=CULTUREMECH.variantIngredientChange__source_text, domain=None, range=str,
+                   pattern=re.compile(r'\S'))
+
+slots.variantIngredientChange__evidence = Slot(uri=CULTUREMECH.evidence, name="variantIngredientChange__evidence", curie=CULTUREMECH.curie('evidence'),
+                   model_uri=CULTUREMECH.variantIngredientChange__evidence, domain=None, range=Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]])
+
+slots.variantIngredientChange__notes = Slot(uri=CULTUREMECH.notes, name="variantIngredientChange__notes", curie=CULTUREMECH.curie('notes'),
+                   model_uri=CULTUREMECH.variantIngredientChange__notes, domain=None, range=Optional[str])
 
 slots.mediaRecipeReference__id = Slot(uri=CULTUREMECH.id, name="mediaRecipeReference__id", curie=CULTUREMECH.curie('id'),
                    model_uri=CULTUREMECH.mediaRecipeReference__id, domain=None, range=Optional[str],

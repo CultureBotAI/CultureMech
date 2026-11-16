@@ -29,7 +29,15 @@ A nested solution that references another record in the same scan, through a
 `culturemech_term` or a `term.id` that a standalone solution record carries, is
 not expanded once per referencing medium; that record contributes its own
 components. Content an inline copy carries beyond its referenced record is not
-counted (#607, #609). The artifact represents direct containment only.
+counted (#607, #609). The artifact represents direct containment and explicit
+variant change targets, without expanding complete variant formulations.
+
+`variants[].ingredient_changes[]` contributes `ADD`, `SET_CONCENTRATION`, and
+the introduced side of `REPLACE`. Removed ingredients and displaced replacement
+targets appear only in `variant_ingredient_changes.tsv`. The original modification
+text is not parsed for additional ingredients. Every structured change must bind
+to its exact source text/index and carry a nonblank stage and supporting evidence;
+invalid changes fail the scan rather than silently reverting to base-only output.
 
 Each occurrence is identified by the stable tuple:
 
@@ -39,7 +47,8 @@ Each occurrence is identified by the stable tuple:
 
 `recipe_id` is the root `CultureMech:NNNNNN` identifier. `component_field` is
 `ingredients`, `composition`, or an inline stock's path such as
-`solutions/0/composition` or `solutions/0/solutions/1/composition`, and
+`solutions/0/composition` or `solutions/0/solutions/1/composition`, or
+`variants/0/ingredient_changes`, and
 `component_index` is zero-based. Recipe labels are display metadata; duplicate
 labels never merge distinct recipes.
 `source_path` is a POSIX path relative to `--input-dir`, keeping custom corpus
@@ -48,7 +57,10 @@ scans portable and byte-identical across worktrees.
 `concentration_value` and `concentration_unit` are relative to the row's own
 container: the medium for a MediaRecipe's root `ingredients`, the stock for a
 solution record's `composition` and for an inline stock's rows (#611).
-`component_field` and `record_class` tell them apart. The summaries'
+For variant rows, `change_stage`, `change_action`, `ingredient_json` and
+`change_json` preserve the original experimental and quantity basis. A stock dose,
+pre-culture amendment and assay exposure cannot be treated as one concentration.
+`component_field` and `record_class` distinguish the other containers. The summaries'
 `concentration_info` lists an ingredient's distinct values from every
 container without saying which (#616).
 
@@ -102,13 +114,18 @@ The command invokes `scripts/aggregate_ingredients.py` once and writes:
 - `output/ingredient_aggregation_errors.tsv` — machine-readable input failures.
 - `output/ingredients_list.tsv` — one row per distinct ingredient (same grouping
   as the two YAML views), with mapping status and occurrence/recipe counts.
+- `output/variant_ingredient_changes.tsv` — every structured variant descriptor,
+  including removals and both sides of replacements, with an inventory inclusion flag.
 
 The standalone mapped and unmapped commands use the same shared scanner; they
 do not maintain separate traversal or grounding rules. Each rewrites
-`ingredient_occurrences.tsv` and `ingredients_list.tsv` together. Without
+`ingredient_occurrences.tsv`, `ingredients_list.tsv` and the variant ledger together. Without
 `--list-output`, the list is written beside `--occurrences-output`, so a custom
 occurrence path does not leave a list from a different scan at the default
 location.
+`--changes-output` overrides the ledger destination; otherwise it is written
+beside the occurrence TSV. See the [version 2 contract](ingredient_release.md#version-2-exchange-contract)
+before admitting these products into an older consumer.
 
 A mapped identity's `preferred_term` (and the list's) is the most frequent MIM
 preferred term among occurrences MIM resolved directly, preferring terms MIM

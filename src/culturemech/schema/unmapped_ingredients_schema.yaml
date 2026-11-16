@@ -114,16 +114,53 @@ classes:
       component_field:
         range: string
         required: true
-        pattern: "^(ingredients|composition|(solutions/[0-9]+/)+composition)$"
+        pattern: "^(ingredients|composition|(solutions/[0-9]+/)+composition|variants/[0-9]+/ingredient_changes)$"
         description: >-
           Root field selected by the record's schema shape (`ingredients` or
           `composition`), or the path of an inline stock's composition such as
-          `solutions/0/composition` (#604)
+          `solutions/0/composition` (#604), or a curated variant change list.
+          Variant rows are stage-scoped change events, not parent ingredients.
       component_index:
         range: integer
         required: true
         minimum_value: 0
         description: Zero-based index in component_field
+      variant_index:
+        range: integer
+        minimum_value: 0
+        description: Zero-based source variant index within this snapshot
+      variant_name:
+        pattern: '\S'
+        description: Source variant name
+      change_index:
+        range: integer
+        minimum_value: 0
+        description: Zero-based ingredient_changes index within the variant
+      change_action:
+        range: VariantOccurrenceActionEnum
+        description: Positive variant change event; REMOVE never enters this table
+      change_stage:
+        pattern: '\S'
+        description: Explicit preparation or experimental stage
+      descriptor_role:
+        equals_string: ingredient
+        description: New or affected ingredient; replaced targets remain in the change ledger
+      descriptor_path:
+        pattern: "^/variants/[0-9]+/ingredient_changes/[0-9]+/ingredient$"
+        description: Exact source descriptor coordinate within this snapshot
+      source_modification_index:
+        range: integer
+        minimum_value: 0
+        description: Zero-based source modifications index
+      source_text:
+        pattern: '\S'
+        description: Exact source modification text bound by the producer
+      evidence_json:
+        pattern: '\S'
+        description: Lossless JSON array of claim-scoped change evidence
+      change_json:
+        pattern: '\S'
+        description: Lossless JSON of the complete change, including any replaced target
       preferred_term:
         required: true
         description: Source ingredient label used as the MIM resolver query
@@ -160,6 +197,35 @@ classes:
           MIM publisher diagnostic only; never promoted to a selected identity
       grounding_reason:
         description: Human-readable explanation emitted by GroundingDecision
+    rules:
+      - preconditions:
+          slot_conditions:
+            component_field:
+              pattern: "^variants/"
+        postconditions:
+          slot_conditions:
+            variant_index:
+              required: true
+            variant_name:
+              required: true
+            change_index:
+              required: true
+            change_action:
+              required: true
+            change_stage:
+              required: true
+            descriptor_role:
+              required: true
+            descriptor_path:
+              required: true
+            source_modification_index:
+              required: true
+            source_text:
+              required: true
+            evidence_json:
+              required: true
+            change_json:
+              required: true
 
   ConcentrationInfo:
     description: Concentration information for an ingredient
@@ -206,6 +272,16 @@ classes:
         description: Number of unique unmapped ingredients in this category
 
 enums:
+  VariantOccurrenceActionEnum:
+    description: Actions retained as stage-scoped positive occurrence events
+    permissible_values:
+      ADD:
+        description: Added ingredient
+      REPLACE:
+        description: New ingredient of a replacement
+      SET_CONCENTRATION:
+        description: Explicit concentration event, including a reported zero dose
+
   ResolutionSourceEnum:
     description: Structured outcome class returned by the shared MIM resolver
     permissible_values:

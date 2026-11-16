@@ -1,0 +1,1902 @@
+schema_version: 1.0.0
+review_id: 20261116T212022Z-algae-archaea-variant-claims
+kind: batch
+repository: CultureBotAI/CultureMech
+title: Author claim review and complete disposition of96algal/archaeal variant rows
+started_at: '2026-11-16T21:12:16Z'
+finished_at: '2026-11-16T21:20:22Z'
+reviewer:
+  identity: codex-source-curator
+  kind: agent
+  independence: self_review
+  independence_basis: This agent authored the proposed assertions after reading primary
+    sources. This record documents source reasoning and holds, not independent review;
+    a separate reviewer must assess the proposal.
+skill: curate-yaml-record; review-ingredient-concentrations
+completion: completed
+verdict: needs_curation
+native_verdict: 52bounded assertions are proposed for independent review;96row curation
+  is not fully cleared because source conflicts and explicit evidence/model holds
+  remain.
+scientific_review: true
+summary: The proposal preserves every assigned row and scopes supported assertions
+  to primary-source preparation/experiment context. Two confirmed pre-existing source
+  conflicts are filed and held. No recipe was changed and no whole-record, human REVIEWED
+  or release status is granted.
+source:
+  git_revision: 02e005db42246b8a04ece9df4b5657e036fa5697
+  state: working_tree
+  inputs:
+  - path: conf/variant_ingredient_curation/algae-archaea-683.json
+    sha256: b326ba81ebf38479e5d2e5b550a89bfa7c1d649edaf46603de7df3fbb14dcf5d
+    role: context
+  - path: data/normalized_yaml/algae/2asw.yaml
+    sha256: 0ba654a5395797550d80a1b3f3e48930862a2188d4568d58c6cda673c47f1ee7
+    role: target
+  - path: data/normalized_yaml/algae/Artificial_Seawater_Medium.yaml
+    sha256: 373e49b2f6512d894e0278f6c6cfcec054733d46abb373928e638d4a53bbbe01
+    role: target
+  - path: data/normalized_yaml/algae/F_2_Medium.yaml
+    sha256: 68ba6e487cab812d01936c081e684c573c93e80554e4f3a63ab54c46423a84cf
+    role: target
+  - path: data/normalized_yaml/algae/Spirulina_Medium.yaml
+    sha256: a96c3df375c1c181fd525d974411d7c5af9bf624bb9119b783c17c2603d961af
+    role: target
+  - path: data/normalized_yaml/algae/TAP_Medium.yaml
+    sha256: ab4575126146c466af3465e08a4247a693185aabf4b447a38aed3b68af8ce1a2
+    role: target
+  - path: data/normalized_yaml/algae/ajs.yaml
+    sha256: 6a96f45eba5e91e591a4f9160c43422b561ed8c281d07ecaa9901550feabb2ba
+    role: target
+  - path: data/normalized_yaml/algae/bb_merds.yaml
+    sha256: c05d7193d15a05bb7e445d382297a556b8208ab347d403d919fd5511b0570e62
+    role: target
+  - path: data/normalized_yaml/algae/bg11.yaml
+    sha256: 50cf10be2d7e6c7eec48f0d9ad0911b27e4d6e52b8386cfe43924339a304c468
+    role: target
+  - path: data/normalized_yaml/algae/f_2.yaml
+    sha256: ba3cda6e26c8dfcd9e8e5557d3cf9c60f8f6b053567ae57a3bb825809df61017
+    role: target
+  - path: data/normalized_yaml/algae/f_2_si.yaml
+    sha256: f5b3851fb34845144659b3b759efd7efd4ad2c4e6d8ad130c4b31a28ed05632c
+    role: target
+  - path: data/normalized_yaml/archaea/archaeoglobus_medium_dsm_399.yaml
+    sha256: bc3f31daaf7fb549ae44d034375d60f1de6a6c063b807273e4e7ed5dd0005112
+    role: target
+  - path: data/normalized_yaml/archaea/ignicoccus_medium_for_dsm_18386.yaml
+    sha256: 1265b959150df3f4a232f5d1e531f4504731f4f865dbce7ac7f6bdffec960645
+    role: target
+  - path: data/normalized_yaml/archaea/methanobacterium_medium.yaml
+    sha256: 67073349f3c843dd14d6c8060e1b58298f57f03d0aaee43dcdb0fda1ff927599
+    role: target
+  - path: data/normalized_yaml/archaea/methanosarcina_medium.yaml
+    sha256: 4a145ae6f0b443f0e9eb913f385536e8fc0418887532f57f1b146d01558185e2
+    role: target
+  - path: data/normalized_yaml/archaea/pyrococcus_medium.yaml
+    sha256: cfeeddb3efb58448b41869ef16e32abce21122cc820cf60e90bafaf897dadf9c
+    role: target
+  - path: data/normalized_yaml/archaea/sulfolobus_medium_anaerobic_for_dsm_2162.yaml
+    sha256: 34c2c8e2888f6614545b81ea073636df1c911644a42db5cc0ba6659a03a3f9f9
+    role: target
+  - path: data/normalized_yaml/archaea/sulfolobus_medium_for_dsm_5348.yaml
+    sha256: 796ca3c640365ea7cc9b50b68fec7a4a98ad4883c663d1d84a6c5596d14b972a
+    role: target
+  - path: scripts/adhoc/prepare_algae_archaea_variant_decisions_683.py
+    sha256: 05df1d302eff6eff1beae3c55aca04891bcc442f6d57e0d8fd36c595d81fe423
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: f98d02f35fa5f45e508d8d33a764a4a94eef25244a6c84fb663b9aeb78059ed6
+    role: context
+  - path: .temp/variant-683/sources/tsuji-2021-table-s1/source.pdf
+    sha256: 1cc2581bf2363ea89d31f170ae398b94d1125c647cc1c655a54417e6c73aac98
+    role: full primary source
+  - path: .temp/variant-683/sources/2asw-spectrum-2023/source.xml
+    sha256: 35398747e184a6699fa12f46288848dcc97932d087fa49e4056ea90f2debf22d
+    role: full primary source
+  - path: .temp/variant-683/sources/hiibel-2015/source.html
+    sha256: 8d2ad2e2716dc194452015adc5b385057c1eb42a7e4e6b89eba9af2f00792d5a
+    role: full primary source
+  - path: .temp/variant-683/sources/synechocystis-2015/source.xml
+    sha256: 8a9f8167ee088489e4fab55e6733732c256c33d5cd42706bcf81b6e0da130dcc
+    role: full primary source
+  - path: .temp/variant-683/sources/tetraselmis-2017/metadata.json
+    sha256: fb247862ad8e43d35632dabcb1a362917971fd685d8a6a1fe3872aecbf217b52
+    role: primary abstract/metadata only
+  - path: .temp/variant-683/sources/spirulina-2017/source.xml
+    sha256: 3447430b8c29a069ccf9c0f19409da2c1141faa43d104d450111e0a71b878bf8
+    role: full primary source
+  - path: .temp/variant-683/sources/tap-fertilizer-2025/metadata.json
+    sha256: 3f738652b616e23152d9ce0740fc5f05ebabd63716e5a17cdc5482b56643d375
+    role: primary abstract/metadata only
+  - path: .temp/variant-683/sources/emami-2015/source.xml
+    sha256: 7e3ddf65f336955a2c875b18361e878ffcf16bc341fe9b404308d014df4c3319
+    role: full primary source
+  - path: .temp/variant-683/sources/ccap-bb-merds/source.pdf
+    sha256: a1d670463c303b10c3e4faebbd05da470d871c76dfb2867d212a7f5f2fc24dc7
+    role: full primary source
+  - path: .temp/variant-683/sources/ccap-f2-si/source.pdf
+    sha256: 1a4a451f7a926a815288c9d915cc9ec8b3fc36ab210c041f0f83f9365d9bfc06
+    role: full primary source
+  - path: .temp/variant-683/sources/reed-2001-html/source.html
+    sha256: e021125a6782cddd9a7a1195355baf544a993506410413a99b066fbda71ffa39
+    role: full primary source
+  - path: .temp/variant-683/sources/mayer-2012-html/source.html
+    sha256: ccbf5dabb3b3725c20426192da7551509cc04ceb08b6fda0b5d572e51f239905
+    role: full primary source
+  - path: .temp/variant-683/sources/dsmz-119/source.pdf
+    sha256: 65295918764de4ed5b73ce773ab4057a7183ecf8bfd7fff0d02393d901b41a2a
+    role: full primary source
+  - path: .temp/variant-683/sources/pyrococcus-2011/metadata.json
+    sha256: 2d17c1ae2ea414e2ad9e25e3585fd08691e17c577b029405d7d8148c30b63d46
+    role: primary abstract/metadata only
+  - path: .temp/variant-683/sources/willard-2024/source.xml
+    sha256: 7808bc365628f8d1a71ab0a20135f2f0619a19fc6db1d587961007e8c0ecaba3
+    role: full primary source
+  - path: .temp/variant-683/sources/auernik-2008-html/source.html
+    sha256: e283da0ec7c895f41a753e63ef7a4ce5916d2a12ec5d39d6eb8042fdad2da5c2
+    role: full primary source
+  - path: .temp/variant-683/sources/ccap-ajs/source.pdf
+    sha256: ceee3a6c3b8693f5fee386aae0d30b1541d8f753e44c9c068701d049621977ca
+    role: bounded counterevidence/context
+  - path: .temp/variant-683/sources/tap-coculture-2024/source.xml
+    sha256: 8248309f0b0e3a71aa3b94c290c5f1fae96f4aeac2de8254b14f4e2c1909892e
+    role: bounded counterevidence/context
+  - path: .temp/variant-683/sources/hemiaulus-2020/source.xml
+    sha256: b2b891255be3531171e9479c4d8744724632f3b4e3f89573664273774d4f47e9
+    role: bounded counterevidence/context
+  - path: .temp/variant-683/sources/sakai-2017/metadata.json
+    sha256: 4f5818bf49bc27d89680dbd02f165027f39b0e1c12e8010688a3cccda5bd177c
+    role: bounded counterevidence/context
+scope:
+  description: Claim-level review of96literal queue rows across17recipes, including52proposed
+    assertions and explicit holds. Read assigned variants/source passages and relevant
+    parent context; not a complete scientific review of all17records.
+  selection: algae_remaining52 and archaea_remaining44 in the pinned396-row inventory
+  coverage: partial
+  population_size: 17
+  reviewed_target_ids:
+  - CultureMech:000038
+  - CultureMech:000025
+  - CultureMech:000170
+  - CultureMech:000232
+  - CultureMech:000233
+  - CultureMech:000041
+  - CultureMech:000054
+  - CultureMech:015450
+  - CultureMech:000149
+  - CultureMech:000148
+  - CultureMech:009220
+  - CultureMech:009166
+  - CultureMech:000643
+  - CultureMech:000660
+  - CultureMech:001478
+  - CultureMech:009226
+  - CultureMech:008908
+  exclusions:
+  - target: Other parent ingredients, quantities, taxonomy, growth claims and historical
+      curation
+    reason: Not recertified by this claim-level pass.
+  - target: Other300queue rows and MIM/KGM release
+    reason: Separate curators and downstream review; no integration acceptance claimed.
+targets:
+- target_id: CultureMech:000038
+  path: data/normalized_yaml/algae/2asw.yaml
+  label: algae/2asw.yaml
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Assigned exact variant modification rows and proposed ingredient_changes
+    only; not whole-record recertification
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/2asw.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000025
+  path: data/normalized_yaml/algae/Artificial_Seawater_Medium.yaml
+  label: algae/Artificial_Seawater_Medium.yaml
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Assigned exact variant modification rows and proposed ingredient_changes
+    only; not whole-record recertification
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/Artificial_Seawater_Medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000170
+  path: data/normalized_yaml/algae/F_2_Medium.yaml
+  label: algae/F_2_Medium.yaml
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Assigned exact variant modification rows and proposed ingredient_changes
+    only; not whole-record recertification
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/F_2_Medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000232
+  path: data/normalized_yaml/algae/Spirulina_Medium.yaml
+  label: algae/Spirulina_Medium.yaml
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Assigned exact variant modification rows and proposed ingredient_changes
+    only; not whole-record recertification
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/Spirulina_Medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000233
+  path: data/normalized_yaml/algae/TAP_Medium.yaml
+  label: algae/TAP_Medium.yaml
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Assigned exact variant modification rows and proposed ingredient_changes
+    only; not whole-record recertification
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/TAP_Medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000041
+  path: data/normalized_yaml/algae/ajs.yaml
+  label: algae/ajs.yaml
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Assigned exact variant modification rows and proposed ingredient_changes
+    only; not whole-record recertification
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/ajs.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000054
+  path: data/normalized_yaml/algae/bb_merds.yaml
+  label: algae/bb_merds.yaml
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Assigned exact variant modification rows and proposed ingredient_changes
+    only; not whole-record recertification
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bb_merds.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:015450
+  path: data/normalized_yaml/algae/bg11.yaml
+  label: algae/bg11.yaml
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Assigned exact variant modification rows and proposed ingredient_changes
+    only; not whole-record recertification
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg11.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000149
+  path: data/normalized_yaml/algae/f_2.yaml
+  label: algae/f_2.yaml
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Assigned exact variant modification rows and proposed ingredient_changes
+    only; not whole-record recertification
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/f_2.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000148
+  path: data/normalized_yaml/algae/f_2_si.yaml
+  label: algae/f_2_si.yaml
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Assigned exact variant modification rows and proposed ingredient_changes
+    only; not whole-record recertification
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/f_2_si.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:009220
+  path: data/normalized_yaml/archaea/archaeoglobus_medium_dsm_399.yaml
+  label: archaea/archaeoglobus_medium_dsm_399.yaml
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Assigned exact variant modification rows and proposed ingredient_changes
+    only; not whole-record recertification
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/archaeoglobus_medium_dsm_399.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:009166
+  path: data/normalized_yaml/archaea/ignicoccus_medium_for_dsm_18386.yaml
+  label: archaea/ignicoccus_medium_for_dsm_18386.yaml
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Assigned exact variant modification rows and proposed ingredient_changes
+    only; not whole-record recertification
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/ignicoccus_medium_for_dsm_18386.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000643
+  path: data/normalized_yaml/archaea/methanobacterium_medium.yaml
+  label: archaea/methanobacterium_medium.yaml
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Assigned exact variant modification rows and proposed ingredient_changes
+    only; not whole-record recertification
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/methanobacterium_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000660
+  path: data/normalized_yaml/archaea/methanosarcina_medium.yaml
+  label: archaea/methanosarcina_medium.yaml
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Assigned exact variant modification rows and proposed ingredient_changes
+    only; not whole-record recertification
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/methanosarcina_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:001478
+  path: data/normalized_yaml/archaea/pyrococcus_medium.yaml
+  label: archaea/pyrococcus_medium.yaml
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Assigned exact variant modification rows and proposed ingredient_changes
+    only; not whole-record recertification
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/pyrococcus_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:009226
+  path: data/normalized_yaml/archaea/sulfolobus_medium_anaerobic_for_dsm_2162.yaml
+  label: archaea/sulfolobus_medium_anaerobic_for_dsm_2162.yaml
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Assigned exact variant modification rows and proposed ingredient_changes
+    only; not whole-record recertification
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/sulfolobus_medium_anaerobic_for_dsm_2162.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:008908
+  path: data/normalized_yaml/archaea/sulfolobus_medium_for_dsm_5348.yaml
+  label: archaea/sulfolobus_medium_for_dsm_5348.yaml
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Assigned exact variant modification rows and proposed ingredient_changes
+    only; not whole-record recertification
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/sulfolobus_medium_for_dsm_5348.yaml
+    role: authoritative normalized recipe
+checks:
+- check_id: native-inspection
+  name: Native recipe and proposal snapshot
+  status: passed
+  required: true
+  summary: record_review.py inspect captured17target hashes, decision, schema and
+    builder; primary capture hashes separately verified against receipts.
+  target_ids:
+  - CultureMech:000038
+  - CultureMech:000025
+  - CultureMech:000170
+  - CultureMech:000232
+  - CultureMech:000233
+  - CultureMech:000041
+  - CultureMech:000054
+  - CultureMech:015450
+  - CultureMech:000149
+  - CultureMech:000148
+  - CultureMech:009220
+  - CultureMech:009166
+  - CultureMech:000643
+  - CultureMech:000660
+  - CultureMech:001478
+  - CultureMech:009226
+  - CultureMech:008908
+  command: .venv/bin/python scripts/record_review.py inspect --targets .temp/variant-683/algae-archaea-targets.yaml
+    --input conf/variant_ingredient_curation/algae-archaea-683.json --input src/culturemech/schema/culturemech.yaml
+    --input scripts/adhoc/prepare_algae_archaea_variant_decisions_683.py
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - proposal
+- check_id: application
+  name: Guarded application and downstream export
+  status: not_applicable
+  required: false
+  target_ids:
+  - CultureMech:000038
+  - CultureMech:000025
+  - CultureMech:000170
+  - CultureMech:000232
+  - CultureMech:000233
+  - CultureMech:000041
+  - CultureMech:000054
+  - CultureMech:015450
+  - CultureMech:000149
+  - CultureMech:000148
+  - CultureMech:009220
+  - CultureMech:009166
+  - CultureMech:000643
+  - CultureMech:000660
+  - CultureMech:001478
+  - CultureMech:009226
+  - CultureMech:008908
+  summary: Pre-application review only; no recipe/application/export tests were run
+    by this reviewer.
+evidence:
+- evidence_id: proposal
+  kind: record_content
+  reference: conf/variant_ingredient_curation/algae-archaea-683.json
+  accessed_at: '2026-11-16T21:20:22Z'
+  support: partial
+  snapshot_sha256: b326ba81ebf38479e5d2e5b550a89bfa7c1d649edaf46603de7df3fbb14dcf5d
+  summary: All96assigned rows accounted, including37rows with52proposed assertions,29context-only,2already
+    represented and28held. Mixed rows retain held portions explicitly; not96approved
+    ingredient rows.
+- evidence_id: tsuji
+  kind: primary_source
+  reference: doi:10.1007/s10126-021-10037-4
+  locator: Table S1, component rows and sodium footnotes
+  accessed_at: '2026-11-16T21:20:22Z'
+  support: partial
+  summary: Inspected for the limited claim(s) and exclusions stated in the proposal;
+    full primary source. Does not establish full parent-formulation equivalence.
+  snapshot_sha256: 1cc2581bf2363ea89d31f170ae398b94d1125c647cc1c655a54417e6c73aac98
+- evidence_id: spectrum
+  kind: primary_source
+  reference: doi:10.1128/spectrum.00069-23
+  locator: Materials and Methods, algal strains and cultivation
+  accessed_at: '2026-11-16T21:20:22Z'
+  support: partial
+  summary: Inspected for the limited claim(s) and exclusions stated in the proposal;
+    full primary source. Does not establish full parent-formulation equivalence.
+  snapshot_sha256: 35398747e184a6699fa12f46288848dcc97932d087fa49e4056ea90f2debf22d
+- evidence_id: hiibel
+  kind: primary_source
+  reference: doi:10.3389/fenrg.2015.00020
+  locator: Materials and Methods, microalgal strains and maintenance media
+  accessed_at: '2026-11-16T21:20:22Z'
+  support: partial
+  summary: Inspected for the limited claim(s) and exclusions stated in the proposal;
+    full primary source. Does not establish full parent-formulation equivalence.
+  snapshot_sha256: 8d2ad2e2716dc194452015adc5b385057c1eb42a7e4e6b89eba9af2f00792d5a
+- evidence_id: synecho
+  kind: primary_source
+  reference: doi:10.3389/fmicb.2015.00326
+  locator: Results, ASW nitrogen/phosphorus additions and Figure 2 buffered condition
+  accessed_at: '2026-11-16T21:20:22Z'
+  support: partial
+  summary: Inspected for the limited claim(s) and exclusions stated in the proposal;
+    full primary source. Does not establish full parent-formulation equivalence.
+  snapshot_sha256: 8a9f8167ee088489e4fab55e6733732c256c33d5cd42706bcf81b6e0da130dcc
+- evidence_id: tetraselmis
+  kind: primary_source
+  reference: doi:10.1016/j.biortech.2017.04.008
+  locator: Primary article abstract, second-stage N repletion
+  accessed_at: '2026-11-16T21:20:22Z'
+  support: partial
+  summary: Inspected for the limited claim(s) and exclusions stated in the proposal;
+    primary abstract/metadata only. Does not establish full parent-formulation equivalence.
+  snapshot_sha256: fb247862ad8e43d35632dabcb1a362917971fd685d8a6a1fe3872aecbf217b52
+- evidence_id: spirulina
+  kind: primary_source
+  reference: doi:10.1007/s00449-016-1726-2
+  locator: Materials and methods, filtered effluent preparation and timed additions
+  accessed_at: '2026-11-16T21:20:22Z'
+  support: partial
+  summary: Inspected for the limited claim(s) and exclusions stated in the proposal;
+    full primary source. Does not establish full parent-formulation equivalence.
+  snapshot_sha256: 3447430b8c29a069ccf9c0f19409da2c1141faa43d104d450111e0a71b878bf8
+- evidence_id: fertilizer
+  kind: primary_source
+  reference: doi:10.1016/j.biortech.2025.132777
+  locator: Primary article abstract, HAc-NaAc replacement of Tris
+  accessed_at: '2026-11-16T21:20:22Z'
+  support: partial
+  summary: Inspected for the limited claim(s) and exclusions stated in the proposal;
+    primary abstract/metadata only. Does not establish full parent-formulation equivalence.
+  snapshot_sha256: 3f738652b616e23152d9ce0740fc5f05ebabd63716e5a17cdc5482b56643d375
+- evidence_id: emami
+  kind: primary_source
+  reference: doi:10.1038/srep10036
+  locator: Methods, culture conditions and bacterial-community antibiotic experiment
+  accessed_at: '2026-11-16T21:20:22Z'
+  support: partial
+  summary: Inspected for the limited claim(s) and exclusions stated in the proposal;
+    full primary source. Does not establish full parent-formulation equivalence.
+  snapshot_sha256: 7e3ddf65f336955a2c875b18361e878ffcf16bc341fe9b404308d014df4c3319
+- evidence_id: bbmerds
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_BB_MErds.pdf
+  locator: Page 1, 8:2 or 1:1 mixture; named BB and MErds recipes
+  accessed_at: '2026-11-16T21:20:22Z'
+  support: partial
+  summary: Inspected for the limited claim(s) and exclusions stated in the proposal;
+    full primary source. Does not establish full parent-formulation equivalence.
+  snapshot_sha256: a1d670463c303b10c3e4faebbd05da470d871c76dfb2867d212a7f5f2fc24dc7
+- evidence_id: f2si
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_f2Si.pdf
+  locator: Page 2, f/2 + Si Modified, direct addition replacing stock 5
+  accessed_at: '2026-11-16T21:20:22Z'
+  support: partial
+  summary: Inspected for the limited claim(s) and exclusions stated in the proposal;
+    full primary source. Does not establish full parent-formulation equivalence.
+  snapshot_sha256: 1a4a451f7a926a815288c9d915cc9ec8b3fc36ab210c041f0f83f9365d9bfc06
+- evidence_id: reed
+  kind: primary_source
+  reference: doi:10.1128/jb.183.24.7007-7016.2001
+  locator: Materials and Methods, Archaeoglobus growth and harvest
+  accessed_at: '2026-11-16T21:20:22Z'
+  support: partial
+  summary: Inspected for the limited claim(s) and exclusions stated in the proposal;
+    full primary source. Does not establish full parent-formulation equivalence.
+  snapshot_sha256: e021125a6782cddd9a7a1195355baf544a993506410413a99b066fbda71ffa39
+- evidence_id: mayer
+  kind: primary_source
+  reference: doi:10.1128/JB.06130-11
+  locator: Materials and Methods, acetate determination; separate 0.05% passage retained
+    as a limit
+  accessed_at: '2026-11-16T21:20:22Z'
+  support: partial
+  summary: Inspected for the limited claim(s) and exclusions stated in the proposal;
+    full primary source. Does not establish full parent-formulation equivalence.
+  snapshot_sha256: ccbf5dabb3b3725c20426192da7551509cc04ceb08b6fda0b5d572e51f239905
+- evidence_id: dsm119
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf
+  locator: Pages 1–2, exact DSM strain-specific instructions
+  accessed_at: '2026-11-16T21:20:22Z'
+  support: partial
+  summary: Inspected for the limited claim(s) and exclusions stated in the proposal;
+    full primary source. Does not establish full parent-formulation equivalence.
+  snapshot_sha256: 65295918764de4ed5b73ce773ab4057a7183ecf8bfd7fff0d02393d901b41a2a
+- evidence_id: pyrococcus
+  kind: primary_source
+  reference: doi:10.1128/AEM.01366-10
+  locator: Primary article abstract, serial adaptation on CF11 cellulose
+  accessed_at: '2026-11-16T21:20:22Z'
+  support: partial
+  summary: Inspected for the limited claim(s) and exclusions stated in the proposal;
+    primary abstract/metadata only. Does not establish full parent-formulation equivalence.
+  snapshot_sha256: 2d17c1ae2ea414e2ad9e25e3585fd08691e17c577b029405d7d8148c30b63d46
+- evidence_id: willard
+  kind: primary_source
+  reference: doi:10.1128/mbio.01033-24
+  locator: Materials and Methods, low-sulfate Brock's salts and species-specific supplements
+  accessed_at: '2026-11-16T21:20:22Z'
+  support: partial
+  summary: Inspected for the limited claim(s) and exclusions stated in the proposal;
+    full primary source. Does not establish full parent-formulation equivalence.
+  snapshot_sha256: 7808bc365628f8d1a71ab0a20135f2f0619a19fc6db1d587961007e8c0ecaba3
+- evidence_id: auernik
+  kind: primary_source
+  reference: doi:10.1128/AEM.02019-07
+  locator: Materials and Methods, transcriptomics versus scanning-electron-microscopy
+    cultures
+  accessed_at: '2026-11-16T21:20:22Z'
+  support: partial
+  summary: Inspected for the limited claim(s) and exclusions stated in the proposal;
+    full primary source. Does not establish full parent-formulation equivalence.
+  snapshot_sha256: e283da0ec7c895f41a753e63ef7a4ce5916d2a12ec5d39d6eb8042fdad2da5c2
+- evidence_id: ajs-parent
+  kind: primary_source
+  reference: .temp/variant-683/sources/ccap-ajs/source.pdf
+  accessed_at: '2026-11-16T21:20:22Z'
+  support: context_only
+  summary: CCAP AJS page1 specifies concentrated sulfuric acid; used only as the old
+    side of the study acid replacement.
+  snapshot_sha256: ceee3a6c3b8693f5fee386aae0d30b1541d8f753e44c9c068701d049621977ca
+- evidence_id: tap-context
+  kind: primary_source
+  reference: .temp/variant-683/sources/tap-coculture-2024/source.xml
+  accessed_at: '2026-11-16T21:20:22Z'
+  support: context_only
+  summary: Methods2.3/2.4 gives TAP ammonium chloride and acetic acid context; not
+    a new supplement in the queue row.
+  snapshot_sha256: 8248309f0b0e3a71aa3b94c290c5f1fae96f4aeac2de8254b14f4e2c1909892e
+- evidence_id: hemiaulus-context
+  kind: primary_source
+  reference: .temp/variant-683/sources/hemiaulus-2020/source.xml
+  accessed_at: '2026-11-16T21:20:22Z'
+  support: context_only
+  summary: Methods distinguishes modified fixed-N-free YBCII and naturally dissolved
+    N2; no specific nitrogen-removal or added-gas assertion promoted.
+  snapshot_sha256: b2b891255be3531171e9479c4d8744724632f3b4e3f89573664273774d4f47e9
+- evidence_id: sakai-limit
+  kind: primary_source
+  reference: .temp/variant-683/sources/sakai-2017/metadata.json
+  accessed_at: '2026-11-16T21:20:22Z'
+  support: context_only
+  summary: Primary abstract describes aerobic sulfur-inhibited organism; fullMethods
+    not inspected, so the anaerobic variant's formula linkage remains held.
+  snapshot_sha256: 4f5818bf49bc27d89680dbd02f165027f39b0e1c12e8010688a3cccda5bd177c
+assessments:
+- assessment_id: queue-5
+  area: scope
+  topic: 'Queue row 5: HELD_EVIDENCE'
+  outcome: unknown
+  summary: Matsui2018 primary metadata/abstract captured, but formulation/agar methods
+    not verified; no Guillard-stock expansion or agar assertion promoted.
+  target_ids:
+  - CultureMech:000038
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Supplement the artificial seawater base
+    with half-strength Guillard f solution.'
+- assessment_id: queue-6
+  area: scope
+  topic: 'Queue row 6: HELD_EVIDENCE'
+  outcome: unknown
+  summary: Matsui2018 primary metadata/abstract captured, but formulation/agar methods
+    not verified; no Guillard-stock expansion or agar assertion promoted.
+  target_ids:
+  - CultureMech:000038
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Use liquid or agar-solidified F/2ASW depending
+    on maintenance, transformation, or selection protocol.'
+- assessment_id: queue-7
+  area: scope
+  topic: 'Queue row 7: CONDITION_ONLY'
+  outcome: supported
+  summary: Culture conditions or acclimation only; atmospheric context is not converted
+    to a liquid ingredient or concentration.
+  target_ids:
+  - CultureMech:000038
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Reported diatom conditions include 20 deg
+    C, continuous illumination at 30-75 umol photons m-2 s-1, and aeration with ambient
+    air or CO2-enriched air.'
+- assessment_id: queue-8
+  area: scope
+  topic: 'Queue row 8: HELD_EVIDENCE'
+  outcome: unknown
+  summary: Source TableS1 gives Na2SeO3 0.001 micromolar=1nM and Na2SiO3.9H2O 0.1mM.
+    Existing row says10nM; held for correction/review under issue759. PDF SHA2561cc2581bf2363ea89d31f170ae398b94d1125c647cc1c655a54417e6c73aac98.
+  target_ids:
+  - CultureMech:000038
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Supplement F/2ASW with 10 nM sodium selenite
+    and 0.1 mM sodium metasilicate.'
+- assessment_id: queue-9
+  area: scope
+  topic: 'Queue row 9: STRUCTURED'
+  outcome: supported
+  summary: Source defines separate NaCl settings in modified artificial seawater,
+    not total sodium.
+  target_ids:
+  - CultureMech:000038
+  evidence_ids:
+  - proposal
+  - tsuji
+  details: 'Exact preserved modification: Manipulate sodium by changing NaCl added
+    to the basal artificial seawater.'
+- assessment_id: queue-10
+  area: scope
+  topic: 'Queue row 10: CONDITION_ONLY'
+  outcome: supported
+  summary: Culture conditions or acclimation only; atmospheric context is not converted
+    to a liquid ingredient or concentration.
+  target_ids:
+  - CultureMech:000038
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Preacclimate cells to sodium concentrations
+    before low-sodium transfer.'
+- assessment_id: queue-11
+  area: scope
+  topic: 'Queue row 11: STRUCTURED'
+  outcome: supported
+  summary: Explicit study medium concentration; no inferred amount added.
+  target_ids:
+  - CultureMech:000038
+  evidence_ids:
+  - proposal
+  - spectrum
+  details: 'Exact preserved modification: The study reports 1.5 M NaCl in its 2ASW
+    culture medium. This is a reported medium concentration, not a stock concentration
+    or inferred amount to add.'
+- assessment_id: queue-12
+  area: scope
+  topic: 'Queue row 12: CONDITION_ONLY'
+  outcome: supported
+  summary: Uncertainty/interpretation guard for the adjacent claim; no additional
+    input or identity asserted.
+  target_ids:
+  - CultureMech:000038
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Other ingredients, stock additions, seawater
+    contribution and final-volume preparation remain unspecified in the inspected
+    paragraph. No salt-increase/decrease direction relative to this imported parent
+    is asserted.'
+- assessment_id: queue-13
+  area: scope
+  topic: 'Queue row 13: STRUCTURED'
+  outcome: supported
+  summary: Mixture-level replacement, without chemical expansion.
+  target_ids:
+  - CultureMech:000038
+  evidence_ids:
+  - proposal
+  - hiibel
+  details: 'Exact preserved modification: Use the study-reported 33.6 g/L sea salts
+    in place of NaCl; this is an undefined sea-salt mixture, not 33.6 g/L pure sodium
+    chloride.'
+- assessment_id: queue-14
+  area: scope
+  topic: 'Queue row 14: CONDITION_ONLY'
+  outcome: supported
+  summary: Uncertainty/interpretation guard for the adjacent claim; no additional
+    input or identity asserted.
+  target_ids:
+  - CultureMech:000038
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: The sea-salt brand, full constituent composition
+    and other base-recipe details are not established by the inspected methods. Do
+    not assume equivalence to this parent''s seawater alternative or inherit details
+    from the mismatched Gomord base citation.'
+- assessment_id: queue-15
+  area: scope
+  topic: 'Queue row 15: HELD_MODEL'
+  outcome: unknown
+  summary: Modified base medium alone does not identify an ingredient change; actual
+    primary methods describe modified fixed-N-free YBCII, whose full equivalence to
+    this parent is not established.
+  target_ids:
+  - CultureMech:000025
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Use a modified artificial seawater medium.'
+- assessment_id: queue-16
+  area: scope
+  topic: 'Queue row 16: CONDITION_ONLY'
+  outcome: supported
+  summary: Organism/base-medium context, without an asserted ingredient change.
+  target_ids:
+  - CultureMech:000025
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Culture the Hemiaulus hauckii and Richelia
+    intracellularis symbiotic unit.'
+- assessment_id: queue-17
+  area: scope
+  topic: 'Queue row 17: HELD_MODEL'
+  outcome: unknown
+  summary: Primary Hemiaulus methods define no added organic/inorganic nitrogen and
+    naturally dissolved N2. Do not invent a particular removed salt or deliberate
+    N2 dose from this statement.
+  target_ids:
+  - CultureMech:000025
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Use nitrogen-free medium with N2 as the
+    sole nitrogen source for reported maximum growth rates.'
+- assessment_id: queue-18
+  area: scope
+  topic: 'Queue row 18: CONDITION_ONLY'
+  outcome: supported
+  summary: Organism/base-medium context, without an asserted ingredient change.
+  target_ids:
+  - CultureMech:000025
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Use artificial seawater medium as the base.'
+- assessment_id: queue-19
+  area: scope
+  topic: 'Queue row 19: STRUCTURED'
+  outcome: supported
+  summary: Primary Results resolves the stated N and P sources at their study-specific
+    concentrations.
+  target_ids:
+  - CultureMech:000025
+  evidence_ids:
+  - proposal
+  - synecho
+  details: 'Exact preserved modification: Supplement with nitrogen and phosphorus
+    sources.'
+- assessment_id: queue-20
+  area: scope
+  topic: 'Queue row 20: STRUCTURED'
+  outcome: supported
+  summary: Retain the buffer as the reported HEPES-KOH preparation.
+  target_ids:
+  - CultureMech:000025
+  evidence_ids:
+  - proposal
+  - synecho
+  details: 'Exact preserved modification: Add HEPES buffer when improved overall growth
+    is needed.'
+- assessment_id: queue-26
+  area: scope
+  topic: 'Queue row 26: CONDITION_ONLY'
+  outcome: supported
+  summary: First-stage culture duration and base-medium use, without a new ingredient
+    claim.
+  target_ids:
+  - CultureMech:000170
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Grow cells in F/2 medium for seven days
+    as the first stage.'
+- assessment_id: queue-27
+  area: scope
+  topic: 'Queue row 27: STRUCTURED'
+  outcome: supported
+  summary: Primary abstract supports the second-stage repletion concentration only.
+  target_ids:
+  - CultureMech:000170
+  evidence_ids:
+  - proposal
+  - tetraselmis
+  details: 'Exact preserved modification: Shift to a nitrogen-replete second stage
+    with 4.41 mM NaNO3 for three days.'
+- assessment_id: queue-28
+  area: scope
+  topic: 'Queue row 28: HELD_EVIDENCE'
+  outcome: unknown
+  summary: Matsui2018 primary metadata/abstract captured, but formulation/agar methods
+    not verified; no Guillard-stock expansion or agar assertion promoted.
+  target_ids:
+  - CultureMech:000170
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Use artificial seawater supplemented with
+    half-strength Guillard f solution.'
+- assessment_id: queue-29
+  area: scope
+  topic: 'Queue row 29: CONDITION_ONLY'
+  outcome: supported
+  summary: Culture conditions or acclimation only; atmospheric context is not converted
+    to a liquid ingredient or concentration.
+  target_ids:
+  - CultureMech:000170
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Maintain cultures at 20 deg C under continuous
+    illumination at 30-75 umol photons m-2 s-1.'
+- assessment_id: queue-30
+  area: scope
+  topic: 'Queue row 30: HELD_MODEL'
+  outcome: unknown
+  summary: Gas-supply/aeration condition retained literally. No liquid concentration
+    or ingredient addition inferred; exact gas-phase representation requires separate
+    admission policy.
+  target_ids:
+  - CultureMech:000170
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Aerate cultures with ambient air or 1% CO2
+    depending on the experiment.'
+- assessment_id: queue-31
+  area: scope
+  topic: 'Queue row 31: STRUCTURED'
+  outcome: supported
+  summary: Correct sibling matches TableS1; preserve full-formulation context.
+  target_ids:
+  - CultureMech:000170
+  evidence_ids:
+  - proposal
+  - tsuji
+  details: 'Exact preserved modification: Use the modified F/2ASW formulation in Table
+    S1, including 1 nM sodium selenite and 0.1 mM sodium metasilicate nonahydrate.'
+- assessment_id: queue-32
+  area: scope
+  topic: 'Queue row 32: STRUCTURED'
+  outcome: supported
+  summary: Source defines separate NaCl settings in modified artificial seawater,
+    not total sodium.
+  target_ids:
+  - CultureMech:000170
+  evidence_ids:
+  - proposal
+  - tsuji
+  details: 'Exact preserved modification: Adjust sodium concentration by altering
+    NaCl addition to the basal medium.'
+- assessment_id: queue-33
+  area: scope
+  topic: 'Queue row 33: HELD_MODEL'
+  outcome: unknown
+  summary: Gas-supply/aeration condition retained literally. No liquid concentration
+    or ingredient addition inferred; exact gas-phase representation requires separate
+    admission policy.
+  target_ids:
+  - CultureMech:000170
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Vary CO2 availability to distinguish sodium-dependent
+    growth effects.'
+- assessment_id: queue-37
+  area: scope
+  topic: 'Queue row 37: STRUCTURED'
+  outcome: supported
+  summary: Undefined effluent input retained; timed feed stays in notes rather than
+    one initial dose.
+  target_ids:
+  - CultureMech:000232
+  evidence_ids:
+  - proposal
+  - spirulina
+  details: 'Exact preserved modification: Use effluent from biogas production as the
+    nutrient source.'
+- assessment_id: queue-38
+  area: scope
+  topic: 'Queue row 38: CONDITION_ONLY'
+  outcome: supported
+  summary: Comparison, coculture or process mode only; no new ingredient assertion.
+  target_ids:
+  - CultureMech:000232
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Compare biomass composition and pigment
+    production with conventional Spirulina medium.'
+- assessment_id: queue-39
+  area: scope
+  topic: 'Queue row 39: CONDITION_ONLY'
+  outcome: supported
+  summary: Comparison, coculture or process mode only; no new ingredient assertion.
+  target_ids:
+  - CultureMech:000233
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Co-culture Chlorella vulgaris with Delftia
+    sp. in TAP medium.'
+- assessment_id: queue-40
+  area: scope
+  topic: 'Queue row 40: ALREADY_STRUCTURED'
+  outcome: supported
+  summary: The parent explicitly represents NH4Cl in Beijerinck's solution and acetic
+    acid in Tris Acetate Stock Solution. TAP2024 Methods confirms their medium roles
+    but does not make this row a new supplement. No parent/study dose-equivalence
+    claim.
+  target_ids:
+  - CultureMech:000233
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Include TAP medium nitrogen and carbon context
+    with NH4Cl and acetic acid.'
+- assessment_id: queue-41
+  area: scope
+  topic: 'Queue row 41: HELD_MODEL'
+  outcome: unknown
+  summary: Primary abstract supports a water-soluble-fertilizer replacement, but the
+    replaced trace/macroelement group is not a resolved single ingredient. Hold component-set
+    replacement and product identity; do not invent fertilizer constituents.
+  target_ids:
+  - CultureMech:000233
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Replace TAP trace and macroelements with
+    water-soluble fertilizer.'
+- assessment_id: queue-42
+  area: scope
+  topic: 'Queue row 42: STRUCTURED'
+  outcome: supported
+  summary: Abstract-supported preparation-level buffer replacement; quantities unresolved.
+  target_ids:
+  - CultureMech:000233
+  evidence_ids:
+  - proposal
+  - fertilizer
+  details: 'Exact preserved modification: Replace Tris in TAP medium with HAc-NaAc
+    for pH balance.'
+- assessment_id: queue-43
+  area: scope
+  topic: 'Queue row 43: CONDITION_ONLY'
+  outcome: supported
+  summary: Comparison, coculture or process mode only; no new ingredient assertion.
+  target_ids:
+  - CultureMech:000233
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Use the medium in fed-batch, semicontinuous,
+    and outdoor cultures.'
+- assessment_id: queue-46
+  area: scope
+  topic: 'Queue row 46: STRUCTURED'
+  outcome: supported
+  summary: Study-specific acid differs from parent CCAP acid; no dose inferred.
+  target_ids:
+  - CultureMech:000041
+  evidence_ids:
+  - proposal
+  - emami
+  details: 'Exact preserved modification: Use hydrochloric acid for the reported adjustment
+    to pH 1.5, rather than inheriting the canonical sulfuric-acid instruction. HCl
+    strength and dose are not quantified; no dose or substitution arithmetic is inferred.'
+- assessment_id: queue-47
+  area: scope
+  topic: 'Queue row 47: CONDITION_ONLY'
+  outcome: supported
+  summary: Explicit formulation uncertainty limits the adjacent acid claim.
+  target_ids:
+  - CultureMech:000041
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: The study does not restate the JM/SE2 proportions,
+    stock compositions or complete formulation. Do not certify other local ingredients
+    or physical state from this citation.'
+- assessment_id: queue-48
+  area: scope
+  topic: 'Queue row 48: STRUCTURED'
+  outcome: supported
+  summary: Source-defined alternative blend of prepared media; no constituent expansion.
+  target_ids:
+  - CultureMech:000054
+  evidence_ids:
+  - proposal
+  - bbmerds
+  details: 'Exact preserved modification: Mix 800 mL BB with 200 mL MErds per litre.'
+- assessment_id: queue-49
+  area: scope
+  topic: 'Queue row 49: STRUCTURED'
+  outcome: supported
+  summary: Source-defined alternative blend of prepared media; no constituent expansion.
+  target_ids:
+  - CultureMech:000054
+  evidence_ids:
+  - proposal
+  - bbmerds
+  details: 'Exact preserved modification: Mix 500 mL BB with 500 mL MErds per litre.'
+- assessment_id: queue-50
+  area: scope
+  topic: 'Queue row 50: ALREADY_STRUCTURED'
+  outcome: supported
+  summary: Nitrate-bearing NaNO3 already occurs in the parent BG11 ingredients. This
+    qualitative nitrate-replete row does not specify an additional dose or change;
+    no study/formula equivalence inferred.
+  target_ids:
+  - CultureMech:015450
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Use BG11 medium with nitrate present.'
+- assessment_id: queue-51
+  area: scope
+  topic: 'Queue row 51: CONDITION_ONLY'
+  outcome: supported
+  summary: Comparator medium, organism, measurement method or photoautotrophy context.
+    BG110 is a separately named comparator, not an omission asserted for the nitrate-replete
+    variant.
+  target_ids:
+  - CultureMech:015450
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Compare with BG110 medium lacking nitrate.'
+- assessment_id: queue-52
+  area: scope
+  topic: 'Queue row 52: CONDITION_ONLY'
+  outcome: supported
+  summary: Comparator medium, organism, measurement method or photoautotrophy context.
+    BG110 is a separately named comparator, not an omission asserted for the nitrate-replete
+    variant.
+  target_ids:
+  - CultureMech:015450
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Culture Synechococcus sp. UCP002 in BG-11
+    medium.'
+- assessment_id: queue-53
+  area: scope
+  topic: 'Queue row 53: CONDITION_ONLY'
+  outcome: supported
+  summary: Comparator medium, organism, measurement method or photoautotrophy context.
+    BG110 is a separately named comparator, not an omission asserted for the nitrate-replete
+    variant.
+  target_ids:
+  - CultureMech:015450
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Use standardized growth-parameter and biochemical-profile
+    measurements.'
+- assessment_id: queue-54
+  area: scope
+  topic: 'Queue row 54: CONDITION_ONLY'
+  outcome: supported
+  summary: Comparator medium, organism, measurement method or photoautotrophy context.
+    BG110 is a separately named comparator, not an omission asserted for the nitrate-replete
+    variant.
+  target_ids:
+  - CultureMech:015450
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Use BG-11 medium under photoautotrophic
+    cultivation.'
+- assessment_id: queue-55
+  area: scope
+  topic: 'Queue row 55: HELD_MODEL'
+  outcome: unknown
+  summary: Gas-supply/aeration condition retained literally. No liquid concentration
+    or ingredient addition inferred; exact gas-phase representation requires separate
+    admission policy.
+  target_ids:
+  - CultureMech:015450
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Compare air and 2% CO2 gas conditions.'
+- assessment_id: queue-62
+  area: scope
+  topic: 'Queue row 62: STRUCTURED'
+  outcome: supported
+  summary: Source names silicate but no salt or hydrate.
+  target_ids:
+  - CultureMech:000149
+  evidence_ids:
+  - proposal
+  - emami
+  details: 'Exact preserved modification: The study reports f/2 supplemented with
+    1.06e-4 M silicate. Preserve this stated supplementation concentration without
+    assigning an unreported silicate salt, hydrate, stock recipe or additional mass
+    conversion.'
+- assessment_id: queue-63
+  area: scope
+  topic: 'Queue row 63: CONDITION_ONLY'
+  outcome: supported
+  summary: Explicit uncertainty/comparator boundary; no additional ingredient assertion.
+  target_ids:
+  - CultureMech:000149
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Other nutrients, total silicate including
+    the base, final-volume preparation and equivalence to local f/2 + Si records remain
+    unresolved.'
+- assessment_id: queue-64
+  area: scope
+  topic: 'Queue row 64: STRUCTURED'
+  outcome: supported
+  summary: Source-reported nitrate supplement, not calculated total nitrate.
+  target_ids:
+  - CultureMech:000149
+  evidence_ids:
+  - proposal
+  - emami
+  details: 'Exact preserved modification: The study reports f/2 supplemented with
+    29.4 mM NaNO3 and adjusted to pH 8. Retain the stated supplement concentration;
+    do not infer whether it includes the base-medium nitrate or calculate a total
+    nitrate concentration.'
+- assessment_id: queue-65
+  area: scope
+  topic: 'Queue row 65: CONDITION_ONLY'
+  outcome: supported
+  summary: Explicit uncertainty/comparator boundary; no additional ingredient assertion.
+  target_ids:
+  - CultureMech:000149
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Remaining formulation details, chemical
+    stock forms and equivalence to a specific canonical amount set are unresolved.'
+- assessment_id: queue-66
+  area: scope
+  topic: 'Queue row 66: STRUCTURED'
+  outcome: supported
+  summary: Literal microgram/mL dose retained in notes; no unsupported enum or silent
+    conversion.
+  target_ids:
+  - CultureMech:000149
+  evidence_ids:
+  - proposal
+  - emami
+  details: 'Exact preserved modification: Reported penicillin G treatment concentration:
+    200 micrograms per mL in the treated f/2 culture; no unreported salt form, stock
+    strength or conversion is assigned.'
+- assessment_id: queue-67
+  area: scope
+  topic: 'Queue row 67: STRUCTURED'
+  outcome: supported
+  summary: Correct antibiotic and source salt retained.
+  target_ids:
+  - CultureMech:000149
+  evidence_ids:
+  - proposal
+  - emami
+  details: 'Exact preserved modification: Reported dihydrostreptomycin sulphate treatment
+    concentration: 50 micrograms per mL in the same treated culture; not streptomycin,
+    not a stock concentration, and no hydrate assumption.'
+- assessment_id: queue-68
+  area: scope
+  topic: 'Queue row 68: CONDITION_ONLY'
+  outcome: supported
+  summary: Explicit uncertainty/comparator boundary; no additional ingredient assertion.
+  target_ids:
+  - CultureMech:000149
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: The untreated comparator remains separate.
+    Unspecified base formulation details and the later marine-agar bacterial assay
+    must not be combined into this study variant.'
+- assessment_id: queue-69
+  area: scope
+  topic: 'Queue row 69: STRUCTURED'
+  outcome: supported
+  summary: Named vitamin preparations retained without fabricated constituents.
+  target_ids:
+  - CultureMech:000149
+  evidence_ids:
+  - proposal
+  - hiibel
+  details: 'Exact preserved modification: The vitamin solution described as coming
+    from 2ASW replaces the original f/2 vitamin solution; the paper states it contains
+    additional vitamin components.'
+- assessment_id: queue-70
+  area: scope
+  topic: 'Queue row 70: CONDITION_ONLY'
+  outcome: supported
+  summary: Explicit uncertainty/comparator boundary; no additional ingredient assertion.
+  target_ids:
+  - CultureMech:000149
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Vitamin identities, stock composition, addition
+    dose and resulting final concentrations are not quantified in the inspected methods.
+    The cited Gomord 2010 reference is a plant glycosylation paper and cannot supply
+    these missing details.'
+- assessment_id: queue-71
+  area: scope
+  topic: 'Queue row 71: CONDITION_ONLY'
+  outcome: supported
+  summary: Explicit uncertainty/comparator boundary; no additional ingredient assertion.
+  target_ids:
+  - CultureMech:000149
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Other formulation details, physical-state
+    equivalence, and exact correspondence to this imported stock encoding remain unresolved.
+    This is not the silicate, nitrate, antibiotic or Quad formulation.'
+- assessment_id: queue-72
+  area: scope
+  topic: 'Queue row 72: STRUCTURED'
+  outcome: supported
+  summary: Direct solid replaces stock5; no double counting of stock and its solute.
+  target_ids:
+  - CultureMech:000148
+  evidence_ids:
+  - proposal
+  - f2si
+  details: 'Exact preserved modification: Omit stock 5 and add 0.1705 g/L sodium metasilicate
+    nonahydrate directly.'
+- assessment_id: queue-74
+  area: scope
+  topic: 'Queue row 74: HELD_EVIDENCE'
+  outcome: unknown
+  summary: Hartzell1999 full stock/trace formulation not inspected. Reed2001 names
+    basal salts/trace minerals without verifying these quantities/forms; preserve
+    prose without promoting stock identities or doses.
+  target_ids:
+  - CultureMech:009220
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Base built from a 10x salt solution (per
+    L of 10x: NaCl 178 g, MgSO4 74 g, MgCl2.6H2O 27.5 g, KCl 3.4 g, NH4Cl 2.5 g; Salt
+    II CaCl2.2H2O 1.4 g; Salt III K2HPO4 1.37 g) added at 100 ml/L.'
+- assessment_id: queue-75
+  area: scope
+  topic: 'Queue row 75: STRUCTURED'
+  outcome: supported
+  summary: Only Reed2001 alternative buffer is structured; Hartzell PIPES preparation
+    remains held for its primary source.
+  target_ids:
+  - CultureMech:009220
+  evidence_ids:
+  - proposal
+  - reed
+  details: 'Exact preserved modification: PIPES buffer 20 ml of 1 M per L; base medium
+    adjusted to pH 6.7 (Hartzell 1999). Reed 2001 variant uses Tris+maleic acid 20
+    mM each, pH 6.1.'
+- assessment_id: queue-76
+  area: scope
+  topic: 'Queue row 76: STRUCTURED'
+  outcome: supported
+  summary: Only Reed2001 DL-sodium-lactate concentration structured; Hartzell30% stock7mL/L
+    preparation remains held.
+  target_ids:
+  - CultureMech:009220
+  evidence_ids:
+  - proposal
+  - reed
+  details: 'Exact preserved modification: Carbon/electron donor: sodium lactate 7
+    ml of 30% (w/v) per L (Hartzell 1999); DL-sodium lactate ~22 mM (Reed 2001).'
+- assessment_id: queue-77
+  area: scope
+  topic: 'Queue row 77: STRUCTURED'
+  outcome: supported
+  summary: Only Reed2001 yeast-extract condition structured; Wolfe-vitamin replacement
+    belongs to unresolved Hartzell alternative.
+  target_ids:
+  - CultureMech:009220
+  evidence_ids:
+  - proposal
+  - reed
+  details: 'Exact preserved modification: Yeast extract 0.5 g/L (replaceable by Wolfe''s
+    vitamin mixture 10 ml/L for defined medium).'
+- assessment_id: queue-78
+  area: scope
+  topic: 'Queue row 78: HELD_EVIDENCE'
+  outcome: unknown
+  summary: Hartzell1999 full stock/trace formulation not inspected. Reed2001 names
+    basal salts/trace minerals without verifying these quantities/forms; preserve
+    prose without promoting stock identities or doses.
+  target_ids:
+  - CultureMech:009220
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: 1000x trace element stock (1 ml/L) incl.
+    Na2EDTA.2H2O, Mn/Co/Zn/Ni/Cu/B/Al/Mo/W/Se/V salts; (NH4)2Fe(SO4)2 1 ml of 0.2%
+    per L.'
+- assessment_id: queue-79
+  area: scope
+  topic: 'Queue row 79: STRUCTURED'
+  outcome: supported
+  summary: Only Reed2001 final reductant concentrations structured; Hartzell combined-stock
+    preparation remains held.
+  target_ids:
+  - CultureMech:009220
+  evidence_ids:
+  - proposal
+  - reed
+  details: 'Exact preserved modification: Reductant: Na2S 100 mM + Na2S2O3 200 mM
+    stock added at 0.5% v/v after autoclaving (Hartzell); Na2S/Na2S2O3 ~1 mM each
+    (Reed).'
+- assessment_id: queue-80
+  area: scope
+  topic: 'Queue row 80: STRUCTURED'
+  outcome: supported
+  summary: Resazurin identity supported by Reed; Hartzell N2-sparging assertion remains
+    held and temperatures are conditions.
+  target_ids:
+  - CultureMech:009220
+  evidence_ids:
+  - proposal
+  - reed
+  details: 'Exact preserved modification: Resazurin redox indicator; anaerobic, boiled
+    and N2-sparged; good growth 75-82C (Hartzell), 83C in glass carboys (Reed).'
+- assessment_id: queue-81
+  area: scope
+  topic: 'Queue row 81: HELD_EVIDENCE'
+  outcome: unknown
+  summary: Koschnitzki2017 thesis formulation not independently inspected in this
+    pass; quoted local evidence alone does not verify stock composition, sodium-sulfide
+    hydration or added-versus-parent status.
+  target_ids:
+  - CultureMech:009166
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Half-strength SME synthetic-seawater base'
+- assessment_id: queue-82
+  area: scope
+  topic: 'Queue row 82: HELD_EVIDENCE'
+  outcome: unknown
+  summary: Koschnitzki2017 thesis formulation not independently inspected in this
+    pass; quoted local evidence alone does not verify stock composition, sodium-sulfide
+    hydration or added-versus-parent status.
+  target_ids:
+  - CultureMech:009166
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Add elemental sulfur (S0) as electron acceptor'
+- assessment_id: queue-83
+  area: scope
+  topic: 'Queue row 83: HELD_EVIDENCE'
+  outcome: unknown
+  summary: Koschnitzki2017 thesis formulation not independently inspected in this
+    pass; quoted local evidence alone does not verify stock composition, sodium-sulfide
+    hydration or added-versus-parent status.
+  target_ids:
+  - CultureMech:009166
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Reduce with Na2S'
+- assessment_id: queue-84
+  area: scope
+  topic: 'Queue row 84: HELD_EVIDENCE'
+  outcome: unknown
+  summary: Koschnitzki2017 thesis formulation not independently inspected in this
+    pass; quoted local evidence alone does not verify stock composition, sodium-sulfide
+    hydration or added-versus-parent status.
+  target_ids:
+  - CultureMech:009166
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Additional/trace components vs parent: explicit
+    NaHCO3, SrCl2.6H2O, KI'
+- assessment_id: queue-85
+  area: scope
+  topic: 'Queue row 85: HELD_MODEL'
+  outcome: unknown
+  summary: Headspace pressure/ratio and temperature/pH remain explicit prose; thesis
+    evidence and gas-phase ingredient admission unresolved.
+  target_ids:
+  - CultureMech:009166
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: H2/CO2 (80:20) headspace, ~1.5 bar; pH 5.5-6.0;
+    90C'
+- assessment_id: queue-86
+  area: scope
+  topic: 'Queue row 86: STRUCTURED'
+  outcome: supported
+  summary: 0.1% condition is supported in acetate-determination passage; other0.05%
+    experiment stays separate.
+  target_ids:
+  - CultureMech:009166
+  evidence_ids:
+  - proposal
+  - mayer
+  details: 'Exact preserved modification: Add yeast extract to 0.1% (w/v)'
+- assessment_id: queue-87
+  area: scope
+  topic: 'Queue row 87: STRUCTURED'
+  outcome: supported
+  summary: Three supplements and two explicit omissions scoped to the listed DSM strains.
+  target_ids:
+  - CultureMech:000643
+  evidence_ids:
+  - proposal
+  - dsm119
+  details: 'Exact preserved modification: Supplement medium after autoclaving with
+    1 ml/l Wolin''s vitamin solution (10x, see medium 120), 0.30 g/l DL-dithiothreitol,
+    and 0.15 g/l coenzyme M (2-mercaptoethanesulfonic acid) from anoxic stock solutions
+    sterilized by filtration. Omit Na2S x 9 H2O and L-Cysteine HCl x H2O.'
+- assessment_id: queue-88
+  area: scope
+  topic: 'Queue row 88: CONDITION_ONLY'
+  outcome: supported
+  summary: pH condition only; no named titrant or dose invented.
+  target_ids:
+  - CultureMech:000643
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Adjust pH of complete medium to 7.6.'
+- assessment_id: queue-89
+  area: scope
+  topic: 'Queue row 89: HELD_MODEL'
+  outcome: unknown
+  summary: Primary DSMZ recipe verifies the gas mixture/pressure but it is a post-inoculation
+    headspace operation; preserve literal context pending explicit gas-occurrence
+    admission, not a liquid ingredient concentration.
+  target_ids:
+  - CultureMech:000643
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Adjust pH to 6.5 and add sterile 80% H2
+    and 20% CO2 gas to 2 bar overpressure after inoculation.'
+- assessment_id: queue-90
+  area: scope
+  topic: 'Queue row 90: CONDITION_ONLY'
+  outcome: supported
+  summary: pH condition only; no named titrant or dose invented.
+  target_ids:
+  - CultureMech:000643
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Adjust pH of complete medium to 8.0 - 8.3.'
+- assessment_id: queue-91
+  area: scope
+  topic: 'Queue row 91: STRUCTURED'
+  outcome: supported
+  summary: Explicit post-autoclave supplement for DSM5522.
+  target_ids:
+  - CultureMech:000643
+  evidence_ids:
+  - proposal
+  - dsm119
+  details: 'Exact preserved modification: Supplement medium with 5.0 g/l D-glucose
+    added after autoclaving from a sterile anoxic stock solution.'
+- assessment_id: queue-92
+  area: scope
+  topic: 'Queue row 92: STRUCTURED'
+  outcome: supported
+  summary: Set reported amount; do not add3g/L to the prior amount.
+  target_ids:
+  - CultureMech:000643
+  evidence_ids:
+  - proposal
+  - dsm119
+  details: 'Exact preserved modification: Increase amount of Na-acetate to 3.00 g/l.'
+- assessment_id: queue-93
+  area: scope
+  topic: 'Queue row 93: STRUCTURED'
+  outcome: supported
+  summary: Explicit sulfate supplement for DSM7057.
+  target_ids:
+  - CultureMech:000643
+  evidence_ids:
+  - proposal
+  - dsm119
+  details: 'Exact preserved modification: Supplement medium with 2.00 g/l Na2SO4.'
+- assessment_id: queue-94
+  area: scope
+  topic: 'Queue row 94: STRUCTURED'
+  outcome: supported
+  summary: Literal0.3g supplement and explicit omitted nonahydrate; pH context retained.
+  target_ids:
+  - CultureMech:000643
+  evidence_ids:
+  - proposal
+  - dsm119
+  details: 'Exact preserved modification: Supplement medium with 0.3 g DL-Dithiothreitol.
+    Omit Na2S x 9 H2O.'
+- assessment_id: queue-95
+  area: scope
+  topic: 'Queue row 95: HELD_MODEL'
+  outcome: unknown
+  summary: Primary DSMZ recipe verifies the gas mixture/pressure but it is a post-inoculation
+    headspace operation; preserve literal context pending explicit gas-occurrence
+    admission, not a liquid ingredient concentration.
+  target_ids:
+  - CultureMech:000643
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Add sterile 80% H2 and 20% CO2 gas mixture
+    to 2 bar overpressure after inoculation.'
+- assessment_id: queue-96
+  area: scope
+  topic: 'Queue row 96: STRUCTURED'
+  outcome: supported
+  summary: Literal0.3g supplement and explicit omitted nonahydrate; pH context retained.
+  target_ids:
+  - CultureMech:000643
+  evidence_ids:
+  - proposal
+  - dsm119
+  details: 'Exact preserved modification: Supplement medium with 0.3 g DL-Dithiothreitol.
+    Omit Na2S x 9 H2O. Adjust pH of final medium to 6.0.'
+- assessment_id: queue-97
+  area: scope
+  topic: 'Queue row 97: STRUCTURED'
+  outcome: supported
+  summary: Replacement and two supplements kept separate; no stock expansion.
+  target_ids:
+  - CultureMech:000643
+  evidence_ids:
+  - proposal
+  - dsm119
+  details: 'Exact preserved modification: Replace sludge fluid with the same volume
+    of clarified rumen fluid (see medium 1310) and supplement medium with 2.00 g/l
+    Trypticase peptone and 10.00 ml/l of Wolin''s vitamin solution (see medium 141).'
+- assessment_id: queue-98
+  area: scope
+  topic: 'Queue row 98: STRUCTURED'
+  outcome: supported
+  summary: CoenzymeM supplement structured; separately named1bar gas operation remains
+    held under gas-phase admission.
+  target_ids:
+  - CultureMech:000643
+  evidence_ids:
+  - proposal
+  - dsm119
+  details: 'Exact preserved modification: Supplement medium after autoclaving with
+    0.10 g/l 2-mercaptoethanesulfonic acid (coenzyme M) added from an anoxic stock
+    solution sterilized by filtration and add sterile 80% H2 and 20% CO2 gas mixture
+    to 1 bar overpressure after inoculation.'
+- assessment_id: queue-99
+  area: scope
+  topic: 'Queue row 99: HELD_MODEL'
+  outcome: unknown
+  summary: Primary DSMZ recipe verifies the gas mixture/pressure but it is a post-inoculation
+    headspace operation; preserve literal context pending explicit gas-occurrence
+    admission, not a liquid ingredient concentration.
+  target_ids:
+  - CultureMech:000643
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Adjust pH of the complete medium to 7.2
+    and add sterile 80% H2 and 20% CO2 gas mixture to 1 bar overpressure after inoculation.'
+- assessment_id: queue-100
+  area: scope
+  topic: 'Queue row 100: HELD_MODEL'
+  outcome: unknown
+  summary: Primary DSMZ recipe verifies the gas mixture/pressure but it is a post-inoculation
+    headspace operation; preserve literal context pending explicit gas-occurrence
+    admission, not a liquid ingredient concentration.
+  target_ids:
+  - CultureMech:000643
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Adjust pH of the complete medium to 7.4
+    and add sterile 80% H2 and 20% CO2 gas mixture to 1 bar overpressure after inoculation.'
+- assessment_id: queue-101
+  area: scope
+  topic: 'Queue row 101: CONDITION_ONLY'
+  outcome: supported
+  summary: pH condition only; no named titrant or dose invented.
+  target_ids:
+  - CultureMech:000643
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Adjust pH of complete medium to 8.5 - 9.0.'
+- assessment_id: queue-102
+  area: scope
+  topic: 'Queue row 102: CONDITION_ONLY'
+  outcome: supported
+  summary: pH condition only; no named titrant or dose invented.
+  target_ids:
+  - CultureMech:000643
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Adjust pH of final medium to 6.0.'
+- assessment_id: queue-103
+  area: scope
+  topic: 'Queue row 103: CONDITION_ONLY'
+  outcome: supported
+  summary: Growth phase, organism or serial-adaptation context, without a new ingredient
+    assertion.
+  target_ids:
+  - CultureMech:000660
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Capture slow-growth phase physiology separately
+    from faster growth conditions.'
+- assessment_id: queue-104
+  area: scope
+  topic: 'Queue row 104: CONDITION_ONLY'
+  outcome: supported
+  summary: Growth phase, organism or serial-adaptation context, without a new ingredient
+    assertion.
+  target_ids:
+  - CultureMech:000660
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Use Methanosarcina acetivorans as the target
+    organism.'
+- assessment_id: queue-105
+  area: scope
+  topic: 'Queue row 105: CONDITION_ONLY'
+  outcome: supported
+  summary: Growth phase, organism or serial-adaptation context, without a new ingredient
+    assertion.
+  target_ids:
+  - CultureMech:001478
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Use Pyrococcus furiosus serially adapted
+    for cellulose utilization.'
+- assessment_id: queue-106
+  area: scope
+  topic: 'Queue row 106: STRUCTURED'
+  outcome: supported
+  summary: Primary abstract verifies CF11-cellulose substrate identity only.
+  target_ids:
+  - CultureMech:001478
+  evidence_ids:
+  - proposal
+  - pyrococcus
+  details: 'Exact preserved modification: Use CF11 cellulose as the growth substrate.'
+- assessment_id: queue-107
+  area: scope
+  topic: 'Queue row 107: STRUCTURED'
+  outcome: supported
+  summary: NH4Cl substitution is supported; vague MgSO4 reduction/replacement remains
+    unpromoted.
+  target_ids:
+  - CultureMech:009226
+  evidence_ids:
+  - proposal
+  - willard
+  details: 'Exact preserved modification: Low-sulfate Brock''s salts base (MgSO4 reduced/replaced);
+    NH4Cl instead of (NH4)2SO4'
+- assessment_id: queue-108
+  area: scope
+  topic: 'Queue row 108: HELD_MODEL'
+  outcome: unknown
+  summary: Sulfur10g/L and some yeast extract are already in parent; primary source
+    has distinct species-specific0.2g/L/1g/L yeast, sucrose/NZ-Amine and other supplements.
+    Keep this aggregate row held until separate alternative recipe scopes are explicit,
+    not one simultaneous recipe.
+  target_ids:
+  - CultureMech:009226
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: 10 g/L elemental sulfur; species-specific
+    0.2-1 g/L yeast extract (or sucrose + NZ-Amine)'
+- assessment_id: queue-109
+  area: scope
+  topic: 'Queue row 109: HELD_MODEL'
+  outcome: unknown
+  summary: Aerobic foam-stopper condition is verified, but source does not explicitly
+    state removal events for this local parent's Na2S/N2. Do not transform absence
+    from a source list into an unqualified omission assertion.
+  target_ids:
+  - CultureMech:009226
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: AEROBIC: vented serum bottles with foam
+    stoppers; NO Na2S reducing agent; NO N2 gas phase'
+- assessment_id: queue-110
+  area: scope
+  topic: 'Queue row 110: HELD_EVIDENCE'
+  outcome: unknown
+  summary: Willard2024 Methods states concentrated HCl only; existing H2SO4-or-HCl
+    alternative is not supported by the cited source. Preserve hold pending prose
+    correction/review.
+  target_ids:
+  - CultureMech:009226
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: 65-75C; pH 2-3 (acidified with H2SO4 or
+    HCl)'
+- assessment_id: queue-111
+  area: scope
+  topic: 'Queue row 111: HELD_EVIDENCE'
+  outcome: unknown
+  summary: Sakai2017 primary metadata/abstract describes aerobic sulfur-inhibited
+    S.acidiphilus, whereas this variant asserts anaerobic MBSY/H2-CO2 and optional
+    sulfur. Full Methods not inspected, so formulation/dose/source linkage remains
+    held, not certified or corrected from abstract alone.
+  target_ids:
+  - CultureMech:009226
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Modified Brock''s basal salts + 1 g/L yeast
+    extract (MBSY)'
+- assessment_id: queue-112
+  area: scope
+  topic: 'Queue row 112: HELD_EVIDENCE'
+  outcome: unknown
+  summary: Sakai2017 primary metadata/abstract describes aerobic sulfur-inhibited
+    S.acidiphilus, whereas this variant asserts anaerobic MBSY/H2-CO2 and optional
+    sulfur. Full Methods not inspected, so formulation/dose/source linkage remains
+    held, not certified or corrected from abstract alone.
+  target_ids:
+  - CultureMech:009226
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Reduced with Na2S (0.5 g/L) + resazurin
+    (1 mg/L)'
+- assessment_id: queue-113
+  area: scope
+  topic: 'Queue row 113: HELD_EVIDENCE'
+  outcome: unknown
+  summary: Sakai2017 primary metadata/abstract describes aerobic sulfur-inhibited
+    S.acidiphilus, whereas this variant asserts anaerobic MBSY/H2-CO2 and optional
+    sulfur. Full Methods not inspected, so formulation/dose/source linkage remains
+    held, not certified or corrected from abstract alone.
+  target_ids:
+  - CultureMech:009226
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Headspace H2/CO2 (80:20) at 100 kPa; optional
+    10 g/L elemental sulfur'
+- assessment_id: queue-114
+  area: scope
+  topic: 'Queue row 114: HELD_EVIDENCE'
+  outcome: unknown
+  summary: Sakai2017 primary metadata/abstract describes aerobic sulfur-inhibited
+    S.acidiphilus, whereas this variant asserts anaerobic MBSY/H2-CO2 and optional
+    sulfur. Full Methods not inspected, so formulation/dose/source linkage remains
+    held, not certified or corrected from abstract alone.
+  target_ids:
+  - CultureMech:009226
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: 65-75C; pH 3.0'
+- assessment_id: queue-115
+  area: scope
+  topic: 'Queue row 115: CONDITION_ONLY'
+  outcome: supported
+  summary: Base-medium, pH, temperature and oxygen context only.
+  target_ids:
+  - CultureMech:008908
+  evidence_ids:
+  - proposal
+  details: 'Exact preserved modification: Base DSMZ medium 88 (Brock''s salts), pH
+    2.0, 70C, aerobic'
+- assessment_id: queue-116
+  area: scope
+  topic: 'Queue row 116: STRUCTURED'
+  outcome: supported
+  summary: Yeast-extract condition verified; tryptone alternative remains held for
+    source evidence.
+  target_ids:
+  - CultureMech:008908
+  evidence_ids:
+  - proposal
+  - auernik
+  details: 'Exact preserved modification: Add 0.1% yeast extract (mixotrophic) or
+    0.1% tryptone (heterotrophic)'
+- assessment_id: queue-117
+  area: scope
+  topic: 'Queue row 117: STRUCTURED'
+  outcome: supported
+  summary: Two distinct experiments retained with explicit stages, not simultaneous
+    interchangeable supplements.
+  target_ids:
+  - CultureMech:008908
+  evidence_ids:
+  - proposal
+  - auernik
+  details: 'Exact preserved modification: Optional ~7.5 g/L FeSO4.7H2O, or FeS2/pyrite
+    as sole energy source'
+findings:
+- finding_id: row-8-source-conflict
+  issue_key: culturemech-759
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Selenite dose conflicts with primary TableS1
+  description: Existing10nM conflicts with source0.001micromolar=1nM. Source also
+    specifies sodium metasilicate nonahydrate. The row is held; no incorrect assertion
+    proposed.
+  target_ids:
+  - CultureMech:000038
+  field_paths:
+  - variants[1].modifications[0]
+  evidence_ids:
+  - proposal
+  - tsuji
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/2asw.yaml
+    role: authoritative normalized recipe
+  external_issues:
+  - https://github.com/CultureBotAI/CultureMech/issues/759
+- finding_id: row-110-source-conflict
+  issue_key: culturemech-762
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Acid alternative not supported by cited aerobic formulation
+  description: Source specifies concentrated HCl, whereas existing prose permits H2SO4
+    or HCl. The row is held; parent acid is not automatically a study-variant acid.
+  target_ids:
+  - CultureMech:009226
+  field_paths:
+  - variants[0].modifications[3]
+  evidence_ids:
+  - proposal
+  - willard
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/sulfolobus_medium_anaerobic_for_dsm_2162.yaml
+    role: authoritative normalized recipe
+  external_issues:
+  - https://github.com/CultureBotAI/CultureMech/issues/762
+actions:
+- action_id: resolve-8
+  description: Correct only source-supported prose in a separately reviewed change;
+    regenerate the exact text/hash binding before admission.
+  finding_ids:
+  - row-8-source-conflict
+  target_ids:
+  - CultureMech:000038
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/2asw.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Inspect primary source in full relevant context; preserve stage/form/dose limits.
+  - Append actual curation history and obtain independent review.
+  - Rebind queue occurrence; held row is not silently treated as reviewed.
+- action_id: resolve-110
+  description: Correct only source-supported prose in a separately reviewed change;
+    regenerate the exact text/hash binding before admission.
+  finding_ids:
+  - row-110-source-conflict
+  target_ids:
+  - CultureMech:009226
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/sulfolobus_medium_anaerobic_for_dsm_2162.yaml
+    role: authoritative normalized recipe
+  acceptance_checks:
+  - Inspect primary source in full relevant context; preserve stage/form/dose limits.
+  - Append actual curation history and obtain independent review.
+  - Rebind queue occurrence; held row is not silently treated as reviewed.
+limitations:
+- Authored decisions require independent review; this self-review does not replace
+  it.
+- 28rows remain wholly held, and several structured rows retain explicitly held portions.96dispositions
+  do not mean96scientifically approved rows.
+- Ingredient identity is kept literal or mixture-level without new ontology IDs; gases,
+  unresolved stocks and alternative recipe scopes are not forced into positive liquid
+  occurrences.
+- Some support is primary abstract only; exact scope is recorded. Formulation equality,
+  unreported doses/forms and all parent claims remain unresolved.
+- No recipe mutation, human REVIEWED status, MIM admission, KGM rebuild or integrated
+  release approval is granted.
+links:
+- https://github.com/CultureBotAI/CultureMech/issues/759
+- https://github.com/CultureBotAI/CultureMech/issues/762
