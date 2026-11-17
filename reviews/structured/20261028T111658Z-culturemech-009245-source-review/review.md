@@ -1,0 +1,1474 @@
+# Scientific review: CM4 medium
+
+- Review: 20261028T111658Z-culturemech-009245-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T10:59:40.989192Z
+- Finished UTC: 2026-10-28T11:16:58.772543Z
+- Reviewer: Codex tsb_source_check (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+CM4 source identity is verified, but both current layers contain incompatible batch-unit representations, an unconditional optional agar variant, missing preparation context and unsupported gas placeholders. Every current concentration and source-only preparation control is accounted for without invented final-volume arithmetic.
+
+## Scope And Provenance
+
+Whole exact target/owner with explicit scoped dependencies, current sources and historical claims.
+
+Selection: Authoritative batch064 index 08
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:009245 | data/merge_yaml/merged/CM4_medium.yaml | generated | cm4_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Canonical schema | passed | True | CultureMech:009245 | Actual exit 0; full original streams retained. |
+| Canonical strict | passed | True | CultureMech:009245 | Actual exit 0; full original streams retained. |
+| Canonical terms | passed | True | CultureMech:009245 | Actual exit 0; full original streams retained. |
+| Canonical references | passed | True | CultureMech:009245 | Actual exit 0; full original streams retained. |
+
+## Scientific And Domain Assessments
+
+### ATCC1203 and TOGO M2693 identity
+
+identity: supported. Targets: CultureMech:009245.
+
+The exact old ATCC URL and current indexed ATCC1203 URL returned byte-identical PDFs titled CM4 medium. TOGO M2693 cites that old URL and matches the input table; this supports source identity without inferring a strain-growth relationship.
+
+### Undefined complex medium and optional physical form
+
+consistency: concern. Targets: CultureMech:009245.
+
+COMPLEX/UNDEFINED agrees with yeast extract; SOLID_AGAR represents only the optional agar variant, not every source formulation. No target organism is asserted or inferred.
+
+### Canonical diagnostics
+
+schema: supported. Targets: CultureMech:009245.
+
+All four original diagnostics passed; strict reports zero errors and references performed zero checks. These diagnostics do not verify source units or supplied forms.
+
+### Complete amounts, units and preparation stages
+
+quantity: concern. Targets: CultureMech:009245.
+
+30 current concentration fields are covered by 19 decisions, including unchanged support and explicit source-only conditions.
+
+{"schema":"fresh-b064-quantity-inventory-v1","target":"data/merge_yaml/merged/CM4_medium.yaml","quantity_field_count":30,"decisions":[{"quantity_id":"q1","label":"Distilled water","local_fields":[{"path":"data/merge_yaml/merged/CM4_medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/cm4_medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"correct","rationale":"The primary and TOGO specify an input volume of 1.0 L water, not 1 G_PER_L. Represent the solvent input as L; do not treat it as measured final medium volume.","source_stage":"Main recipe input; gas entries are preparation atmosphere, not liquid solutes","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt lines 15-15","quote":"Distilled water....................1.0 L","quote_basis":"derivative text"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"components[0].items[0]","quote":"{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\": \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt lines 15-15","quote":"Distilled water....................1.0 L","quote_basis":"derivative text"}]},{"quantity_id":"q2","label":"Yeast extract","local_fields":[{"path":"data/merge_yaml/merged/CM4_medium.yaml","field_path":"ingredients[1].concentration","stored":{"value":"5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/cm4_medium.yaml","field_path":"ingredients[1].concentration","stored":{"value":"5","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The printed batch mass is supported unchanged, but the existing G_PER_L concentration is not authenticated: 1.0 L is input water and no measured final-volume instruction is given. No guessed final normalization or hydrate conversion.","source_stage":"Main recipe input; gas entries are preparation atmosphere, not liquid solutes","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt lines 14-14","quote":"Yeast extract......................5.0 g","quote_basis":"derivative text"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"components[0].items[1]","quote":"{\n          \"component_name\": \"Yeast extract\",\n          \"volume\": 5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001003\",\n          \"gmo_id\": \"GMO_001003\",\n          \"label\": \"Yeast extract\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000042\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000042\",\n              \"label\": \"Nutrient source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt lines 15-15","quote":"Distilled water....................1.0 L","quote_basis":"derivative text"}]},{"quantity_id":"q3","label":"NaCl","local_fields":[{"path":"data/merge_yaml/merged/CM4_medium.yaml","field_path":"ingredients[2].concentration","stored":{"value":"1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/cm4_medium.yaml","field_path":"ingredients[2].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The printed batch mass is supported unchanged, but the existing G_PER_L concentration is not authenticated: 1.0 L is input water and no measured final-volume instruction is given. No guessed final normalization or hydrate conversion.","source_stage":"Main recipe input; gas entries are preparation atmosphere, not liquid solutes","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt lines 10-10","quote":"NaCl...............................1.0 g","quote_basis":"derivative text"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"components[0].items[2]","quote":"{\n          \"component_name\": \"NaCl\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001004\",\n          \"gmo_id\": \"GMO_001004\",\n          \"label\": \"Sodium chloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt lines 15-15","quote":"Distilled water....................1.0 L","quote_basis":"derivative text"}]},{"quantity_id":"q4","label":"KH2PO4","local_fields":[{"path":"data/merge_yaml/merged/CM4_medium.yaml","field_path":"ingredients[3].concentration","stored":{"value":"1.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/cm4_medium.yaml","field_path":"ingredients[3].concentration","stored":{"value":"1.5","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The printed batch mass is supported unchanged, but the existing G_PER_L concentration is not authenticated: 1.0 L is input water and no measured final-volume instruction is given. No guessed final normalization or hydrate conversion.","source_stage":"Main recipe input; gas entries are preparation atmosphere, not liquid solutes","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt lines 4-4","quote":"KH2PO4 .............................1.5 g","quote_basis":"derivative text"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"components[0].items[3]","quote":"{\n          \"component_name\": \"KH2PO4\",\n          \"volume\": 1.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001006\",\n          \"gmo_id\": \"GMO_001006\",\n          \"label\": \"Potassium phosphate monobasic\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt lines 15-15","quote":"Distilled water....................1.0 L","quote_basis":"derivative text"}]},{"quantity_id":"q5","label":"K2HPO4","local_fields":[{"path":"data/merge_yaml/merged/CM4_medium.yaml","field_path":"ingredients[4].concentration","stored":{"value":"2.9","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/cm4_medium.yaml","field_path":"ingredients[4].concentration","stored":{"value":"2.9","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The printed batch mass is supported unchanged, but the existing G_PER_L concentration is not authenticated: 1.0 L is input water and no measured final-volume instruction is given. No guessed final normalization or hydrate conversion.","source_stage":"Main recipe input; gas entries are preparation atmosphere, not liquid solutes","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt lines 5-5","quote":"K2HPO4 .............................2.9 g","quote_basis":"derivative text"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"components[0].items[4]","quote":"{\n          \"component_name\": \"K2HPO4\",\n          \"volume\": 2.9,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001009\",\n          \"gmo_id\": \"GMO_001009\",\n          \"label\": \"Potassium phosphate dibasic\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt lines 15-15","quote":"Distilled water....................1.0 L","quote_basis":"derivative text"}]},{"quantity_id":"q6","label":"(NH4)2SO4","local_fields":[{"path":"data/merge_yaml/merged/CM4_medium.yaml","field_path":"ingredients[5].concentration","stored":{"value":"1.3","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/cm4_medium.yaml","field_path":"ingredients[5].concentration","stored":{"value":"1.3","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The printed batch mass is supported unchanged, but the existing G_PER_L concentration is not authenticated: 1.0 L is input water and no measured final-volume instruction is given. No guessed final normalization or hydrate conversion.","source_stage":"Main recipe input; gas entries are preparation atmosphere, not liquid solutes","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt lines 8-8","quote":"(NH4)2SO4 ...........................1.3 g","quote_basis":"derivative text"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"components[0].items[5]","quote":"{\n          \"component_name\": \"(NH4)2SO4\",\n          \"volume\": 1.3,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001030\",\n          \"gmo_id\": \"GMO_001030\",\n          \"label\": \"Ammonium sulfate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000062\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000062\",\n              \"label\": \"Nitrogen source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt lines 15-15","quote":"Distilled water....................1.0 L","quote_basis":"derivative text"}]},{"quantity_id":"q7","label":"CaCl2","local_fields":[{"path":"data/merge_yaml/merged/CM4_medium.yaml","field_path":"ingredients[6].concentration","stored":{"value":"13.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/cm4_medium.yaml","field_path":"ingredients[6].concentration","stored":{"value":"13.2","unit":"G_PER_L"}}],"decision":"correct","rationale":"The exact source input is 13.2 mg CaCl2. The local 13.2 G_PER_L loses the milligram unit and asserts an unverified final denominator. Preserve the source batch mass; no final-medium rate is calculated from input water.","source_stage":"Main recipe input; gas entries are preparation atmosphere, not liquid solutes","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt lines 11-11","quote":"CaCl2 .............................13.2 mg","quote_basis":"derivative text"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"components[0].items[6]","quote":"{\n          \"component_name\": \"CaCl2\",\n          \"volume\": 13.2,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001061\",\n          \"gmo_id\": \"GMO_001061\",\n          \"label\": \"Calcium chloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt lines 15-15","quote":"Distilled water....................1.0 L","quote_basis":"derivative text"}]},{"quantity_id":"q8","label":"Carbon source (i.e. cellobiose)","local_fields":[{"path":"data/merge_yaml/merged/CM4_medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"6","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/cm4_medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"6","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The primary supports the printed 6.0 g batch input and the exact label \"Carbon source (i.e. cellobiose)\", already retained locally. This does not verify a final-medium G_PER_L denominator or authorize arbitrary carbon-source substitutions.","source_stage":"Main recipe input; gas entries are preparation atmosphere, not liquid solutes","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt lines 13-13","quote":"Carbon source (i.e. cellobiose)....6.0 g","quote_basis":"derivative text"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"components[0].items[7]","quote":"{\n          \"component_name\": \"Carbon source (i.e. cellobiose)\",\n          \"volume\": 6,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001137\",\n          \"gmo_id\": \"GMO_001137\",\n          \"label\": \"Cellobiose\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\": \"Carbon source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt lines 15-15","quote":"Distilled water....................1.0 L","quote_basis":"derivative text"}]},{"quantity_id":"q9","label":"MgCl2","local_fields":[{"path":"data/merge_yaml/merged/CM4_medium.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.75","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/cm4_medium.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.75","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The printed batch mass is supported unchanged, but the existing G_PER_L concentration is not authenticated: 1.0 L is input water and no measured final-volume instruction is given. No guessed final normalization or hydrate conversion.","source_stage":"Main recipe input; gas entries are preparation atmosphere, not liquid solutes","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt lines 9-9","quote":"MgCl2 ..............................0.75 g","quote_basis":"derivative text"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"components[0].items[8]","quote":"{\n          \"component_name\": \"MgCl2\",\n          \"volume\": 0.75,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001154\",\n          \"gmo_id\": \"GMO_001154\",\n          \"label\": \"Magnesium chloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt lines 15-15","quote":"Distilled water....................1.0 L","quote_basis":"derivative text"}]},{"quantity_id":"q10","label":"Agar","local_fields":[{"path":"data/merge_yaml/merged/CM4_medium.yaml","field_path":"ingredients[9].concentration","stored":{"value":"20","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/cm4_medium.yaml","field_path":"ingredients[9].concentration","stored":{"value":"20","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"20.0 g is a supported optional batch addition: the primary says if needed. Neither obligatory agar nor an exact 20 G_PER_L final-medium concentration follows. Retain the optional solid variant and do not silently impose it on the broth option.","source_stage":"Main recipe input; gas entries are preparation atmosphere, not liquid solutes","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt lines 16-16","quote":"Agar (if needed)..................20.0 g","quote_basis":"derivative text"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"components[0].items[11]","quote":"{\n          \"component_name\": \"Agar\",\n          \"volume\": 20,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001007\",\n          \"gmo_id\": \"GMO_001007\",\n          \"label\": \"Agar\",\n          \"properties\": [],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000048\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000048\",\n              \"label\": \"Solidifying component\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt lines 15-15","quote":"Distilled water....................1.0 L","quote_basis":"derivative text"}]},{"quantity_id":"q11","label":"Sodium thioglycollate","local_fields":[{"path":"data/merge_yaml/merged/CM4_medium.yaml","field_path":"ingredients[10].concentration","stored":{"value":"0.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/cm4_medium.yaml","field_path":"ingredients[10].concentration","stored":{"value":"0.5","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The printed batch mass is supported unchanged, but the existing G_PER_L concentration is not authenticated: 1.0 L is input water and no measured final-volume instruction is given. No guessed final normalization or hydrate conversion.","source_stage":"Main recipe input; gas entries are preparation atmosphere, not liquid solutes","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt lines 6-6","quote":"Sodium thioglycollate..............0.5 g","quote_basis":"derivative text"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"components[0].items[12]","quote":"{\n          \"component_name\": \"Sodium thioglycollate\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001132\",\n          \"gmo_id\": \"GMO_001132\",\n          \"label\": \"Sodium thioglycolate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt lines 15-15","quote":"Distilled water....................1.0 L","quote_basis":"derivative text"}]},{"quantity_id":"q12","label":"Nitrogen gas","local_fields":[{"path":"data/merge_yaml/merged/CM4_medium.yaml","field_path":"ingredients[11].concentration","stored":{"value":"variable","unit":"VARIABLE"}},{"path":"data/normalized_yaml/bacterial/cm4_medium.yaml","field_path":"ingredients[11].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"correct","rationale":"The current entries are generic VARIABLE ingredient placeholders, while the source specifies a gas mixture during tubing. Preserve the exact atmosphere in preparation context without inventing a liquid dose, pressure or percentage basis; the current unit is VARIABLE, not a liquid unit.","source_stage":"Main recipe input; gas entries are preparation atmosphere, not liquid solutes","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt lines 18-20","quote":"Mix all of the ingredients and boil until reduced, indicated by a change\nfrom red to colorless. Allow to partially cool and tube under 97% N2, 3%\nH2 and cap with butyl rubber stoppers.","quote_basis":"derivative text"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"components[0].items[13]","quote":"{\n          \"component_name\": \"Nitrogen gas\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002261\",\n          \"gmo_id\": \"GMO_002261\",\n          \"label\": \"Nitrogen gas\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000077\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000077\",\n              \"label\": \"ガス\"\n            }\n          ],\n          \"roles\": []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"comments[2]","quote":"{\n      \"paragraph_index\": 4,\n      \"comment\": \"Allow to partially cool and tube under 97% N2, 3% H2 and cap with butyl rubber stoppers. Autoclave at 121C for 15 minutes.\"\n    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q13","label":"Hydrogen gas","local_fields":[{"path":"data/merge_yaml/merged/CM4_medium.yaml","field_path":"ingredients[12].concentration","stored":{"value":"variable","unit":"VARIABLE"}},{"path":"data/normalized_yaml/bacterial/cm4_medium.yaml","field_path":"ingredients[12].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"correct","rationale":"The current entries are generic VARIABLE ingredient placeholders, while the source specifies a gas mixture during tubing. Preserve the exact atmosphere in preparation context without inventing a liquid dose, pressure or percentage basis; the current unit is VARIABLE, not a liquid unit.","source_stage":"Main recipe input; gas entries are preparation atmosphere, not liquid solutes","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt lines 18-20","quote":"Mix all of the ingredients and boil until reduced, indicated by a change\nfrom red to colorless. Allow to partially cool and tube under 97% N2, 3%\nH2 and cap with butyl rubber stoppers.","quote_basis":"derivative text"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"components[0].items[14]","quote":"{\n          \"component_name\": \"Hydrogen gas\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002263\",\n          \"gmo_id\": \"GMO_002263\",\n          \"label\": \"Hydrogen gas\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000077\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000077\",\n              \"label\": \"ガス\"\n            }\n          ],\n          \"roles\": []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"comments[2]","quote":"{\n      \"paragraph_index\": 4,\n      \"comment\": \"Allow to partially cool and tube under 97% N2, 3% H2 and cap with butyl rubber stoppers. Autoclave at 121C for 15 minutes.\"\n    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q14","label":"FeSO4 (1.25% solution)","local_fields":[{"path":"data/merge_yaml/merged/CM4_medium.yaml","field_path":"solutions[0].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/cm4_medium.yaml","field_path":"solutions[0].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"correct","rationale":"The source specifies a volume of this separately named stock added to the batch. G_PER_L is incompatible with that volume dose. Retain the exact mL addition and unresolved final-medium denominator; the percent named in the stock is not its working dose and its w/v, w/w or v/v basis is not supplied.","source_stage":"Stock addition to main batch","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt lines 12-12","quote":"FeSO4 (1.25% solution) .............0.1 ml","quote_basis":"derivative text"},{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt lines 15-15","quote":"Distilled water....................1.0 L","quote_basis":"derivative text"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"components[0].items[9]","quote":"{\n          \"component_name\": \"FeSO4 (1.25% solution)\",\n          \"volume\": 0.1,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001393\",\n          \"gmo_id\": \"GMO_001393\",\n          \"label\": \"Iron(II) sulfate solution\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q15","label":"Stock label and unspecified percentage basis","local_fields":[{"path":"data/merge_yaml/merged/CM4_medium.yaml","field_path":"solutions[0].preferred_term","stored":"FeSO4 (1.25% solution)"},{"path":"data/normalized_yaml/bacterial/cm4_medium.yaml","field_path":"solutions[0].preferred_term","stored":"FeSO4 (1.25% solution)"}],"decision":"evidence_only","rationale":"The exact FeSO4 percentage-bearing stock label is retained and directly supported. No hydration, purity or percentage basis is established for that stock; a complete stock composition cannot be fabricated.","source_stage":"Named stock strength; basis unresolved","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt lines 12-12","quote":"FeSO4 (1.25% solution) .............0.1 ml","quote_basis":"derivative text"}]},{"quantity_id":"q16","label":"Resazurin (1.0% solution)","local_fields":[{"path":"data/merge_yaml/merged/CM4_medium.yaml","field_path":"solutions[1].concentration","stored":{"value":"0.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/cm4_medium.yaml","field_path":"solutions[1].concentration","stored":{"value":"0.2","unit":"G_PER_L"}}],"decision":"correct","rationale":"The source specifies a volume of this separately named stock added to the batch. G_PER_L is incompatible with that volume dose. Retain the exact mL addition and unresolved final-medium denominator; the percent named in the stock is not its working dose and its w/v, w/w or v/v basis is not supplied.","source_stage":"Stock addition to main batch","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt lines 7-7","quote":"Resazurin (1.0% solution)..........0.2 ml","quote_basis":"derivative text"},{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt lines 15-15","quote":"Distilled water....................1.0 L","quote_basis":"derivative text"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"components[0].items[10]","quote":"{\n          \"component_name\": \"Resazurin (1.0% solution)\",\n          \"volume\": 0.2,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001403\",\n          \"gmo_id\": \"GMO_001403\",\n          \"label\": \"Resazurin solution\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000055\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000055\",\n              \"label\": \"pH dependent redox indicator\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q17","label":"Stock label and unspecified percentage basis","local_fields":[{"path":"data/merge_yaml/merged/CM4_medium.yaml","field_path":"solutions[1].preferred_term","stored":"Resazurin (1.0% solution)"},{"path":"data/normalized_yaml/bacterial/cm4_medium.yaml","field_path":"solutions[1].preferred_term","stored":"Resazurin (1.0% solution)"}],"decision":"evidence_only","rationale":"The exact percentage-bearing stock label is retained and directly supported. No hydration, purity, percent basis or molecular identity for the resazurin form is inferred; a complete stock composition cannot be fabricated.","source_stage":"Named stock strength; basis unresolved","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt lines 7-7","quote":"Resazurin (1.0% solution)..........0.2 ml","quote_basis":"derivative text"}]},{"quantity_id":"q18","label":"Reduction, cooling, gas headspace and closure","local_fields":[],"decision":"evidence_only","rationale":"Source-only preparation controls retained verbatim. Do not infer a gas volume, pressure or pH.","source_stage":"Preparation before sterilization","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt lines 18-20","quote":"Mix all of the ingredients and boil until reduced, indicated by a change\nfrom red to colorless. Allow to partially cool and tube under 97% N2, 3%\nH2 and cap with butyl rubber stoppers.","quote_basis":"derivative text"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"comments[1]","quote":"{\n      \"paragraph_index\": 3,\n      \"comment\": \"Mix all of the ingredients and boil until reduced, indicated by a change from red to colorless.\"\n    }","quote_basis":"raw UTF-8"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"comments[2]","quote":"{\n      \"paragraph_index\": 4,\n      \"comment\": \"Allow to partially cool and tube under 97% N2, 3% H2 and cap with butyl rubber stoppers. Autoclave at 121C for 15 minutes.\"\n    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q19","label":"Sterilization temperature and duration","local_fields":[],"decision":"evidence_only","rationale":"Both primary and provider explicitly retain this preparation step; the current records omit it. No organism-specific incubation or growth recommendation is inferred.","source_stage":"Sterilization only","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt lines 21-21","quote":"Autoclave at 121C for 15 minutes.","quote_basis":"derivative text"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"comments[2]","quote":"{\n      \"paragraph_index\": 4,\n      \"comment\": \"Allow to partially cool and tube under 97% N2, 3% H2 and cap with butyl rubber stoppers. Autoclave at 121C for 15 minutes.\"\n    }","quote_basis":"raw UTF-8"}]}],"document_scopes":{"data/merge_yaml/merged/CM4_medium.yaml":null,"data/normalized_yaml/bacterial/cm4_medium.yaml":null},"scope":"Every selected target/owner concentration plus explicit dependency fields; source-only rows/conditions and unchanged claims distinguished. Excluded parent quantities are not transferred."}
+
+### Supplied forms and current ontology/MIM scope
+
+grounding: supported. Targets: CultureMech:009245.
+
+All asserted CHEBI identifiers and canonical labels were checked against exact fresh OLS objects, including formulas, definitions and synonyms. Their named water, salts, agar and gas identities agree at the stated source specificity; no unspecified hydrate or resazurin stock form is certified. The exact retained carbon-source label "Carbon source (i.e. cellobiose)" and complex yeast extract are not forced to new IDs; the label does not establish free substitution among carbon sources. Current MIM linkage counts are reported separately from scientific accuracy; empty stock compositions are not chemical verification.
+
+### Existing repair credit and writer limits
+
+provenance: concern. Targets: CultureMech:009245.
+
+Both complete October5 reports are derivative incomplete reviews (0 of 15 rows checked), not source authentication. The exact owner and generated record retain the same formulation defects. Current TOGO unit/stock/comment behavior and conservative singleton/merge paths are credited; migration copies quantities and may leave unresolved stock stubs. No historical execution is inferred from current code. No existing attached source snippets or old raw-digest claims were found in these two full documents.
+
+## Findings
+
+### f1: Batch volumes and a milligram input are encoded as final mass concentrations
+
+major / open / confirmed; issue key: culturemech-009245-batch-units-and-basis.
+
+Both target and owner encode input water, the calcium-chloride milligram input, and both stock-volume additions as G_PER_L. Their exact primary units are incompatible with that representation. Other printed masses are batch inputs, not authenticated final-medium rates. Preserve original mass/volume units and stage, keep the final denominator unresolved, and attach literal field-specific evidence. Current TOGO unit parsing already distinguishes mg, ml and L; credit that behavior while addressing the remaining implicit per-litre normalization.
+
+### f2: Optional agar loses its conditional scope
+
+major / open / confirmed; issue key: culturemech-009245-conditional-formulation.
+
+The primary marks agar as "if needed". The selected record fixes SOLID_AGAR and includes agar unconditionally, while the provider omits that optional qualifier. Preserve the conditional agar addition and physical-form scope. Both local documents already retain the exact carbon-source label "Carbon source (i.e. cellobiose)"; credit that text without interpreting it as authorization to substitute arbitrary carbon sources.
+
+### f3: Source preparation is absent and gas fractions are hidden by VARIABLE placeholders
+
+major / open / confirmed; issue key: culturemech-009245-preparation-atmosphere.
+
+Both local documents omit the source reduction, cooling, tubing gas mixture, closure and sterilization context. Nitrogen and hydrogen are represented as generic VARIABLE ingredient placeholders, although the source specifies their preparation-atmosphere proportions. Preserve the exact source preparation in suitable fields, without a liquid gas dose or guessed pressure. The current TOGO primary-section/comment path already retains these comments; the old records remain stale relative to that capability.
+
+### f4: Claim-level evidence and specific stock names are missing
+
+minor / open / confirmed; issue key: culturemech-009245-field-evidence.
+
+No ingredient or stock quantity has an attached literal source claim in the current documents. Two October5 reports explicitly performed no source checks. Add newly verified batch-unit, conditional and preparation evidence with the actual present source capture, preserving those historical reports as incomplete assessments; do not relabel old events as verified. Both solution.name values remain "Unknown solution" although their preferred_term and the primary source identify the FeSO4 and resazurin stocks. Replace those placeholder names with the source-specific names while retaining unresolved percentage bases and empty compositions until supported.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Both target and owner encode input water, the calcium-chloride milligram input, and both stock-volume additions as G_PER_L. Their exact primary units are incompatible with that representation. Other printed masses are batch inputs, not authenticated final-medium rates. Preserve original mass/volume units and stage, keep the final denominator unresolved, and attach literal field-specific evidence. Current TOGO unit parsing already distinguishes mg, ml and L; credit that behavior while addressing the remaining implicit per-litre normalization.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a2
+
+The primary marks agar as "if needed". The selected record fixes SOLID_AGAR and includes agar unconditionally, while the provider omits that optional qualifier. Preserve the conditional agar addition and physical-form scope. Both local documents already retain the exact carbon-source label "Carbon source (i.e. cellobiose)"; credit that text without interpreting it as authorization to substitute arbitrary carbon sources.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a3
+
+Both local documents omit the source reduction, cooling, tubing gas mixture, closure and sterilization context. Nitrogen and hydrogen are represented as generic VARIABLE ingredient placeholders, although the source specifies their preparation-atmosphere proportions. Preserve the exact source preparation in suitable fields, without a liquid gas dose or guessed pressure. The current TOGO primary-section/comment path already retains these comments; the old records remain stale relative to that capability.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a4
+
+No ingredient or stock quantity has an attached literal source claim in the current documents. Two October5 reports explicitly performed no source checks. Add newly verified batch-unit, conditional and preparation evidence with the actual present source capture, preserving those historical reports as incomplete assessments; do not relabel old events as verified. Both solution.name values remain "Unknown solution" although their preferred_term and the primary source identify the FeSO4 and resazurin stocks. Replace those placeholder names with the source-specific names while retaining unresolved percentage bases and empty compositions until supported.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| atcc1203 | https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24; REVIEW_WORK/batch064/source08-10/atcc1203.json; exact original raw/text/hash/time metadata | context_only | 08/09 exact source recipe identity; 10 PubMed/Crossref bibliographic metadata only, operational content excluded. |
+| atccOld | https://www.atcc.org/~/media/27E91C31B96E4D15BFD8E349A2115B7F.ashx; REVIEW_WORK/batch064/source08-10/atccOld.json; exact original raw/text/hash/time metadata | context_only | 08/09 exact source recipe identity; 10 PubMed/Crossref bibliographic metadata only, operational content excluded. |
+| togoM2693 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693; REVIEW_WORK/batch064/source08-10/togoM2693.json; exact original raw/text/hash/time metadata | context_only | 08/09 exact source recipe identity; 10 PubMed/Crossref bibliographic metadata only, operational content excluded. |
+| target | data/merge_yaml/merged/CM4_medium.yaml; Complete file | context_only | Complete generated target. |
+| owner | data/normalized_yaml/bacterial/cm4_medium.yaml; Complete file | context_only | Complete exact maintained owner. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Complete file | context_only | Exact packaged current identifier/ontology_id and preferred-term rows. |
+| mim-meta | src/culturemech/data/mediaingredientmech/label_index.metadata.json; Complete file | context_only | Exact packaged snapshot version and checksum. |
+| writer-formulation | src/culturemech/merge/formulation.py; Full formulation comparison | context_only | Current scientific-field equality includes quantities, stocks and notes; no chemical equivalence is inferred. |
+| writer-merger | src/culturemech/merge/merger.py; RecipeMerger.merge_group | context_only | Current merge_group copies singletons and rejects incompatible multiple formulations. Generated staleness is not evidence that current code permits ingredient-only merging. |
+| report-17 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CM4_medium.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-18 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/cm4_medium.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| historical-reading | REVIEW_WORK/batch064/record08/historical-reading.json; Complete artifact; exact original input paths and hashes retained | context_only | Lossless exact report cells and independently joined current decoded source objects. |
+| historical-selected-parent-rows | REVIEW_WORK/batch064/record08/historical-selected-parent-rows.json; Complete artifact; exact original input paths and hashes retained | context_only | Exact selected historical parent objects; parent provenance only, not automatic original source authentication. |
+| complete-document-reader | REVIEW_WORK/batch064/record08/complete-document-reader.json; Complete artifact; exact original input paths and hashes retained | context_only | Complete exact target and owner parsed documents with lossless long-string pooling. |
+| writer-togo | src/culturemech/import/togo_importer.py; _ingredient_from_item, _assembled_solution_sections, _extract_primary_components, _parse_unit, _convert_to_culturemech | context_only | Current blank-name primary section is recognized. _parse_unit distinguishes mg, ml and L; _extract_primary_components separates explicit solution items and retains gas placeholders, and _extract_preparation_steps retains comments. These repairs are credited. Bare g/ml still acquire per-litre enums without establishing a final-volume basis; current code does not prove historical execution. |
+| writer-migration | scripts/migrate_solutions_from_ingredients.py; __init__, _resolve_solution, _migrate_media_file | context_only | Current exact-name solution migration preserves the original concentration and can resolve a name to one provider ID; this does not establish source-specific formulation equivalence. |
+| writer-matcher | src/culturemech/merge/matcher.py; group_formulations | context_only | Current group_formulations uses conservative FormulationFingerprinter; ingredient similarity is only candidate discovery. |
+| writer-defaulter | src/culturemech/validation/schema_defaulter.py; Ingredient/solution defaults | context_only | Current defaults are representation machinery, not source evidence for a gas quantity or a stock identity. Historical default events are retained without replay. |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15377; REVIEW_WORK/batch064/source08-10/chebi15377.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology ID/label/scientific object for ordinary08/09 only; no operational grounding review10. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:26710; REVIEW_WORK/batch064/source08-10/chebi26710.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology ID/label/scientific object for ordinary08/09 only; no operational grounding review10. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63036; REVIEW_WORK/batch064/source08-10/chebi63036.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology ID/label/scientific object for ordinary08/09 only; no operational grounding review10. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:131527; REVIEW_WORK/batch064/source08-10/chebi131527.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology ID/label/scientific object for ordinary08/09 only; no operational grounding review10. |
+| chebi62946 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:62946; REVIEW_WORK/batch064/source08-10/chebi62946.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology ID/label/scientific object for ordinary08/09 only; no operational grounding review10. |
+| chebi3312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:3312; REVIEW_WORK/batch064/source08-10/chebi3312.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology ID/label/scientific object for ordinary08/09 only; no operational grounding review10. |
+| chebi6636 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:6636; REVIEW_WORK/batch064/source08-10/chebi6636.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology ID/label/scientific object for ordinary08/09 only; no operational grounding review10. |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:2509; REVIEW_WORK/batch064/source08-10/chebi2509.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology ID/label/scientific object for ordinary08/09 only; no operational grounding review10. |
+| chebi86481 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86481; REVIEW_WORK/batch064/source08-10/chebi86481.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology ID/label/scientific object for ordinary08/09 only; no operational grounding review10. |
+| chebi17997 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17997; REVIEW_WORK/batch064/source08-10/chebi17997.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology ID/label/scientific object for ordinary08/09 only; no operational grounding review10. |
+| chebi18276 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:18276; REVIEW_WORK/batch064/source08-10/chebi18276.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology ID/label/scientific object for ordinary08/09 only; no operational grounding review10. |
+| quantities | REVIEW_WORK/batch064/record08/quantity-inventory.json; Complete sidecar | supports | Complete source-stage quantity decisions. |
+| groundings | REVIEW_WORK/batch064/record08/grounding-inventory.json; Complete sidecar | supports | Exact slots, raw OLS scientific objects and current MIM rows. |
+| census | REVIEW_WORK/batch064/record08/field-census.json; Complete sidecar | supports | Complete scalar census with explicit dependency exclusions. |
+| numeric-census | REVIEW_WORK/batch064/record08/numeric-field-census.json; Complete sidecar | supports | Numeric/text assertions and quantity joins. |
+| history | REVIEW_WORK/batch064/record08/history-inventory.json; Complete sidecar | supports | Current exact histories, without replay. |
+| old-reports | REVIEW_WORK/batch064/record08/history-report-inventory.json; Complete sidecar | supports | Exact historical report scopes. |
+| old-claims | REVIEW_WORK/batch064/record08/existing-claim-authentication.json; Complete sidecar | supports | Existing literal and raw-digest matches; current content authentication is separate from original retrieval provenance. |
+| check-schema | REVIEW_WORK/batch064/record08/schema-result.json | supports | Original once-only canonical schema with complete argv/time/streams; reference count zero does not verify sources. |
+| check-strict | REVIEW_WORK/batch064/record08/strict-result.json | supports | Original once-only canonical strict with complete argv/time/streams; reference count zero does not verify sources. |
+| check-terms | REVIEW_WORK/batch064/record08/terms-result.json | supports | Original once-only canonical terms with complete argv/time/streams; reference count zero does not verify sources. |
+| check-references | REVIEW_WORK/batch064/record08/references-result.json | supports | Original once-only canonical references with complete argv/time/streams; reference count zero does not verify sources. |
+
+## Limits And Additional Notes
+
+- Complete one-page ATCC PDF was read visually and as exact extracted text. The source provides no measured final volume, pH, full stock formulation, percent basis or specified salt hydrates; these remain unresolved rather than guessed.
+- Only the two exact report files and declared input surfaces were treated as historical evidence. Ignored-inclusive report filename search found no additional exact CM4 report; no global literature absence is asserted.
+- No strain-growth claim, optimization or experimental recommendation is inferred from the medium name or general source identity.
+- The MIM snapshot commit is 6643131b0f12ab40b66f98135245fca04027e0e9; present/absent rows do not establish a historical or live-catalog result.
+- Input water is not measured final volume. Explicit provider g_l rates are assessed only on their declared normalization basis; unspecified percent bases and hydrate numbers remain unresolved.
+- No source changes, formal review validation/save, Git mutation or publication was performed by this author.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T111658Z-culturemech-009245-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Scientific review: CM4 medium'
+started_at: '2026-10-28T10:59:40.989192Z'
+finished_at: '2026-10-28T11:16:58.772543Z'
+reviewer:
+  identity: Codex tsb_source_check
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Read-only independent review of maintained source records, fresh
+    sources and original diagnostics.
+skill: review-yaml-record
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: CM4 source identity is verified, but both current layers contain incompatible
+  batch-unit representations, an unconditional optional agar variant, missing preparation
+  context and unsupported gas placeholders. Every current concentration and source-only
+  preparation control is accounted for without invented final-volume arithmetic.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: c0ef0808662f57dc2f57ce9b405485830503653aceee1451c9e1dae42f9e7021
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/culturemech_id_registry.tsv
+    sha256: 0d059720f5c474b63daff8d5010fc56942a5a3ac30761ee75ce9e84801d555a5
+    role: context
+  - path: data/merge_yaml/merged/CM4_medium.yaml
+    sha256: 5a86ac45e4ecad27c8caeb42de7d03a918f0fef87af608c8861beb1ea9c34026
+    role: target
+  - path: data/normalized_yaml/bacterial/cm4_medium.yaml
+    sha256: 0ec55e4c7fd007cf8442a2b53f9d9bedbab3be5b606a7f3c4bea2a4b7a43908d
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CM4_medium.md
+    sha256: 685a10ccd17cd0f6931385fa6b32fcfef1a5af6580de24998de097e93ef0a596
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/cm4_medium.md
+    sha256: 49759387803cc7b79dcaa618e1dd495422e5de3e39680119e8444073078e8755
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/assign_culturemech_ids.py
+    sha256: 81ed213c52804ae98a8add02730d757595e3287fa7b01bc88aee0e587bbb01e1
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/enrich_with_chebi.py
+    sha256: f18dd6e4317de76cb7379f6c9c6227f9af884c27a0761d7f64143aaf74d8e1dc
+    role: context
+  - path: scripts/enrich_with_mediaingredientmech.py
+    sha256: 6357c9d621c3d6e32b28b2982afedfaed384830cea1602a775b0a5f0852c015e
+    role: context
+  - path: scripts/fix_mediadb_leading_compounds.py
+    sha256: 2b3b6adfdb298b51b6d87a30151b4f530ac5cd1726fb3763ce7c9fe07cfec729
+    role: context
+  - path: scripts/import_from_culturebotht.py
+    sha256: d835addf5fff423a9b0b1231848ed3103c5b2d97015c1c294365970d15be0fe1
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/record_io.py
+    sha256: bff4715f85d7ff2ff681b88f0a2de2667e5767d7a2c196bd50a37d5d329957ac
+    role: context
+  - path: scripts/refill_term_labels.py
+    sha256: 8eee4532e4a71d120532db511733bde974ab1b179e50cb1ea51d66c3870f3cb9
+    role: context
+  - path: scripts/remove_invalid_chebi_ids.py
+    sha256: a6c2f7577812081230fd5fe008182c09eace4ef7818857f8026ec8d5e0b760e0
+    role: context
+  - path: scripts/repair_ccap_duplicate_compositions.py
+    sha256: d6ce21d516f227305d30631f8b04af781946cb40bb87aa8fd0fc47aa5a8caa0c
+    role: context
+  - path: scripts/repair_ccap_instruction_rows.py
+    sha256: eb1a4c8c46eb45dcdde6a5d2f0f6833792dd0802c45603eefa1b63a3ff96fca5
+    role: context
+  - path: scripts/repair_ccap_missing_compositions.py
+    sha256: 84d1ae3d91568fbffc850e88080bdf96fbaad277c3aa61eb371c0da0fc5a2be7
+    role: context
+  - path: scripts/repair_ccap_sources_score10.py
+    sha256: f518688ae99e154f490af337dab30b9038657a814db72861e0b53658a2541ae6
+    role: context
+  - path: scripts/repair_mediadb_names.py
+    sha256: 56ad322b70927ac6dff2de12c63d7bfc640d72a6c2521b55293a788ac3cca4c5
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/ccap_importer.py
+    sha256: c579c1d8fb62b96e739e5ee5c963453753ebca0bbf50996fb0f0d6eedd75c9ac
+    role: context
+  - path: src/culturemech/import/mediadb_importer.py
+    sha256: 5c2d98caf450ee8bb2f73f112e4edab7c3e0f2fa5f2aa7bd2a34e6fd2fdfd4d0
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: Whole exact target/owner with explicit scoped dependencies, current
+    sources and historical claims.
+  selection: Authoritative batch064 index 08
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:009245
+targets:
+- target_id: CultureMech:009245
+  path: data/merge_yaml/merged/CM4_medium.yaml
+  label: cm4_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cm4_medium.yaml
+    role: maintained source
+  ownership_note: Exact declared maintained contributors resolved against stable identity;
+    stocks and other source variants remain scoped comparisons.
+checks:
+- check_id: schema
+  name: Canonical schema
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:009245
+  command: just validate-schema data/merge_yaml/merged/CM4_medium.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-schema
+- check_id: strict
+  name: Canonical strict
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:009245
+  command: just validate-strict data/merge_yaml/merged/CM4_medium.yaml --out REVIEW_WORK/batch064/record08/strict.tsv
+    --workers 1 --quiet
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-strict
+- check_id: terms
+  name: Canonical terms
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:009245
+  command: just validate-terms data/merge_yaml/merged/CM4_medium.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-terms
+- check_id: references
+  name: Canonical references
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:009245
+  command: just validate-references data/merge_yaml/merged/CM4_medium.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-references
+evidence:
+- evidence_id: atcc1203
+  kind: primary_source
+  reference: https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24
+  accessed_at: '2026-10-28T11:00:17.343607Z'
+  locator: REVIEW_WORK/batch064/source08-10/atcc1203.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: 08/09 exact source recipe identity; 10 PubMed/Crossref bibliographic metadata
+    only, operational content excluded.
+  snapshot_sha256: c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f
+- evidence_id: atccOld
+  kind: primary_source
+  reference: https://www.atcc.org/~/media/27E91C31B96E4D15BFD8E349A2115B7F.ashx
+  accessed_at: '2026-10-28T11:00:16.439843Z'
+  locator: REVIEW_WORK/batch064/source08-10/atccOld.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: 08/09 exact source recipe identity; 10 PubMed/Crossref bibliographic metadata
+    only, operational content excluded.
+  snapshot_sha256: c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f
+- evidence_id: togoM2693
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693
+  accessed_at: '2026-10-28T11:00:16.617176Z'
+  locator: REVIEW_WORK/batch064/source08-10/togoM2693.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: 08/09 exact source recipe identity; 10 PubMed/Crossref bibliographic metadata
+    only, operational content excluded.
+  snapshot_sha256: baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b
+- evidence_id: target
+  kind: record_content
+  reference: data/merge_yaml/merged/CM4_medium.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T11:03:52.055549Z'
+  support: context_only
+  summary: Complete generated target.
+  snapshot_sha256: 5a86ac45e4ecad27c8caeb42de7d03a918f0fef87af608c8861beb1ea9c34026
+- evidence_id: owner
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/cm4_medium.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T11:03:52.055723Z'
+  support: context_only
+  summary: Complete exact maintained owner.
+  snapshot_sha256: 0ec55e4c7fd007cf8442a2b53f9d9bedbab3be5b606a7f3c4bea2a4b7a43908d
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Complete file
+  accessed_at: '2026-10-28T11:03:52.055752Z'
+  support: context_only
+  summary: Exact packaged current identifier/ontology_id and preferred-term rows.
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: mim-meta
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+  locator: Complete file
+  accessed_at: '2026-10-28T11:03:52.056096Z'
+  support: context_only
+  summary: Exact packaged snapshot version and checksum.
+  snapshot_sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+- evidence_id: writer-formulation
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Full formulation comparison
+  accessed_at: '2026-10-28T11:03:52.056119Z'
+  support: context_only
+  summary: Current scientific-field equality includes quantities, stocks and notes;
+    no chemical equivalence is inferred.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-merger
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: RecipeMerger.merge_group
+  accessed_at: '2026-10-28T11:03:52.056142Z'
+  support: context_only
+  summary: Current merge_group copies singletons and rejects incompatible multiple
+    formulations. Generated staleness is not evidence that current code permits ingredient-only
+    merging.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: report-17
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CM4_medium.md
+  locator: Complete report
+  accessed_at: '2026-10-28T11:03:52.056169Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: 685a10ccd17cd0f6931385fa6b32fcfef1a5af6580de24998de097e93ef0a596
+- evidence_id: report-18
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/cm4_medium.md
+  locator: Complete report
+  accessed_at: '2026-10-28T11:03:52.056197Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: 49759387803cc7b79dcaa618e1dd495422e5de3e39680119e8444073078e8755
+- evidence_id: historical-reading
+  kind: record_content
+  reference: REVIEW_WORK/batch064/record08/historical-reading.json
+  accessed_at: '2026-10-28T11:03:52.056696Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Lossless exact report cells and independently joined current decoded source
+    objects.
+  snapshot_sha256: c5f18c0b98b336a1ebdef09b7c923d1d84527a6e74a5b440d58a269eeb5ad111
+- evidence_id: historical-selected-parent-rows
+  kind: record_content
+  reference: REVIEW_WORK/batch064/record08/historical-selected-parent-rows.json
+  accessed_at: '2026-10-28T11:03:52.056734Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Exact selected historical parent objects; parent provenance only, not automatic
+    original source authentication.
+  snapshot_sha256: 37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570
+- evidence_id: complete-document-reader
+  kind: record_content
+  reference: REVIEW_WORK/batch064/record08/complete-document-reader.json
+  accessed_at: '2026-10-28T11:03:52.056761Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Complete exact target and owner parsed documents with lossless long-string
+    pooling.
+  snapshot_sha256: fa611d031bd8d58e87bb3497b3b79ee294ab1629e2e725710cc46b19195d19f9
+- evidence_id: writer-togo
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: _ingredient_from_item, _assembled_solution_sections, _extract_primary_components,
+    _parse_unit, _convert_to_culturemech
+  accessed_at: '2026-10-28T11:03:52.056788Z'
+  support: context_only
+  summary: Current blank-name primary section is recognized. _parse_unit distinguishes
+    mg, ml and L; _extract_primary_components separates explicit solution items and
+    retains gas placeholders, and _extract_preparation_steps retains comments. These
+    repairs are credited. Bare g/ml still acquire per-litre enums without establishing
+    a final-volume basis; current code does not prove historical execution.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: writer-migration
+  kind: record_content
+  reference: scripts/migrate_solutions_from_ingredients.py
+  locator: __init__, _resolve_solution, _migrate_media_file
+  accessed_at: '2026-10-28T11:03:52.056822Z'
+  support: context_only
+  summary: Current exact-name solution migration preserves the original concentration
+    and can resolve a name to one provider ID; this does not establish source-specific
+    formulation equivalence.
+  snapshot_sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+- evidence_id: writer-matcher
+  kind: record_content
+  reference: src/culturemech/merge/matcher.py
+  locator: group_formulations
+  accessed_at: '2026-10-28T11:03:52.056848Z'
+  support: context_only
+  summary: Current group_formulations uses conservative FormulationFingerprinter;
+    ingredient similarity is only candidate discovery.
+  snapshot_sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+- evidence_id: writer-defaulter
+  kind: record_content
+  reference: src/culturemech/validation/schema_defaulter.py
+  locator: Ingredient/solution defaults
+  accessed_at: '2026-10-28T11:03:52.056874Z'
+  support: context_only
+  summary: Current defaults are representation machinery, not source evidence for
+    a gas quantity or a stock identity. Historical default events are retained without
+    replay.
+  snapshot_sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+- evidence_id: chebi15377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15377
+  accessed_at: '2026-10-28T11:00:17.425723Z'
+  locator: REVIEW_WORK/batch064/source08-10/chebi15377.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology ID/label/scientific object for ordinary08/09 only;
+    no operational grounding review10.
+  snapshot_sha256: a5ab66402b598c137daa8e5c8ba95811f1619db3e0f8b4f9bd0214161bafa0fe
+- evidence_id: chebi26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:26710
+  accessed_at: '2026-10-28T11:00:18.054470Z'
+  locator: REVIEW_WORK/batch064/source08-10/chebi26710.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology ID/label/scientific object for ordinary08/09 only;
+    no operational grounding review10.
+  snapshot_sha256: 70cf14c35e06f40427c1a2aa30e99794518eda976b5e5b3c86610efc28b7f25a
+- evidence_id: chebi63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63036
+  accessed_at: '2026-10-28T11:00:18.642355Z'
+  locator: REVIEW_WORK/batch064/source08-10/chebi63036.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology ID/label/scientific object for ordinary08/09 only;
+    no operational grounding review10.
+  snapshot_sha256: 07dec38373731d2125348c574d0f9f2df977e458974100383d3f69c8849a84e0
+- evidence_id: chebi131527
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:131527
+  accessed_at: '2026-10-28T11:00:17.403385Z'
+  locator: REVIEW_WORK/batch064/source08-10/chebi131527.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology ID/label/scientific object for ordinary08/09 only;
+    no operational grounding review10.
+  snapshot_sha256: 0a5297c84ea9dd82508960482211f6b3c993fd8e2b83fe755dd2b23316cc4068
+- evidence_id: chebi62946
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:62946
+  accessed_at: '2026-10-28T11:00:18.302191Z'
+  locator: REVIEW_WORK/batch064/source08-10/chebi62946.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology ID/label/scientific object for ordinary08/09 only;
+    no operational grounding review10.
+  snapshot_sha256: e035a92736c0b968363e9db17da9a4a81390ab174a65e689f6ae45c326324b44
+- evidence_id: chebi3312
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:3312
+  accessed_at: '2026-10-28T11:00:18.061977Z'
+  locator: REVIEW_WORK/batch064/source08-10/chebi3312.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology ID/label/scientific object for ordinary08/09 only;
+    no operational grounding review10.
+  snapshot_sha256: c468d22946b95659970843fef50c7cce0f87796940350baacca568c52aa5744e
+- evidence_id: chebi6636
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:6636
+  accessed_at: '2026-10-28T11:00:18.642524Z'
+  locator: REVIEW_WORK/batch064/source08-10/chebi6636.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology ID/label/scientific object for ordinary08/09 only;
+    no operational grounding review10.
+  snapshot_sha256: e5d9f5965bff11398a3b4fd443bbf98be3a50042f65de5861033b0304c9d0bdf
+- evidence_id: chebi2509
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:2509
+  accessed_at: '2026-10-28T11:00:18.027751Z'
+  locator: REVIEW_WORK/batch064/source08-10/chebi2509.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology ID/label/scientific object for ordinary08/09 only;
+    no operational grounding review10.
+  snapshot_sha256: e3f17ac3223021a957a5e3fffb5b118a0854f9ddbc537f51f70dd61ae23ff7a7
+- evidence_id: chebi86481
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86481
+  accessed_at: '2026-10-28T11:00:18.663466Z'
+  locator: REVIEW_WORK/batch064/source08-10/chebi86481.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology ID/label/scientific object for ordinary08/09 only;
+    no operational grounding review10.
+  snapshot_sha256: 79f61c13d4412cc84b2297080689dcd9af21ef84dd46bed94617955191de53a6
+- evidence_id: chebi17997
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17997
+  accessed_at: '2026-10-28T11:00:17.700170Z'
+  locator: REVIEW_WORK/batch064/source08-10/chebi17997.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology ID/label/scientific object for ordinary08/09 only;
+    no operational grounding review10.
+  snapshot_sha256: c4f240d59927c0f5c6c8d29c14830d0f278cfeabc4ed924be5c2b6bbe1039c05
+- evidence_id: chebi18276
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:18276
+  accessed_at: '2026-10-28T11:00:18.024044Z'
+  locator: REVIEW_WORK/batch064/source08-10/chebi18276.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology ID/label/scientific object for ordinary08/09 only;
+    no operational grounding review10.
+  snapshot_sha256: e9495ec2aad65253b7f792e780c1610f9f12f2c0bb20e06c2526156d37b09ed7
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch064/record08/quantity-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T11:16:58.772543Z'
+  support: supports
+  summary: Complete source-stage quantity decisions.
+  snapshot_sha256: 014c0a86db2bf2ee0cc24a208da0c2f86860bb8fdd81808df00e9282b2c3466d
+- evidence_id: groundings
+  kind: record_content
+  reference: REVIEW_WORK/batch064/record08/grounding-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T11:03:52.103936Z'
+  support: supports
+  summary: Exact slots, raw OLS scientific objects and current MIM rows.
+  snapshot_sha256: 71aa764c30086bb1e79fab194d095759407f0d9cb12b555585eb57fdec296f3f
+- evidence_id: census
+  kind: record_content
+  reference: REVIEW_WORK/batch064/record08/field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T11:03:52.103989Z'
+  support: supports
+  summary: Complete scalar census with explicit dependency exclusions.
+  snapshot_sha256: a25e77c106117bf99cc5e73f1ba503decb0313183482f0aeadddc5a220ab67e2
+- evidence_id: numeric-census
+  kind: record_content
+  reference: REVIEW_WORK/batch064/record08/numeric-field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T11:03:52.104025Z'
+  support: supports
+  summary: Numeric/text assertions and quantity joins.
+  snapshot_sha256: 89758a44a386915f8331adac4f75b5e846ee893010de885278a3f8223c01742c
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch064/record08/history-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T11:03:52.104056Z'
+  support: supports
+  summary: Current exact histories, without replay.
+  snapshot_sha256: af6f7754e6c53a08b7f02d1a5899c40c15e9f34c7042ee78d693310a373b307b
+- evidence_id: old-reports
+  kind: record_content
+  reference: REVIEW_WORK/batch064/record08/history-report-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T11:03:52.104076Z'
+  support: supports
+  summary: Exact historical report scopes.
+  snapshot_sha256: 870a513879bcdc74513ffcab9c5636be0634fc25a78d6e36558deaf6766d1900
+- evidence_id: old-claims
+  kind: record_content
+  reference: REVIEW_WORK/batch064/record08/existing-claim-authentication.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T11:03:52.104093Z'
+  support: supports
+  summary: Existing literal and raw-digest matches; current content authentication
+    is separate from original retrieval provenance.
+  snapshot_sha256: 37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570
+- evidence_id: check-schema
+  kind: validation
+  reference: REVIEW_WORK/batch064/record08/schema-result.json
+  accessed_at: '2026-10-28T10:59:41.998959Z'
+  support: supports
+  summary: Original once-only canonical schema with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: b21574c94575ca08dd95dde22cf74d0558809fc318441d20d223351c478d2252
+- evidence_id: check-strict
+  kind: validation
+  reference: REVIEW_WORK/batch064/record08/strict-result.json
+  accessed_at: '2026-10-28T10:59:42.913299Z'
+  support: supports
+  summary: Original once-only canonical strict with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: f740cda89fc20e989922e565c538bbfcedb0eb11bbbb52ae74afd27808ae04c7
+- evidence_id: check-terms
+  kind: validation
+  reference: REVIEW_WORK/batch064/record08/terms-result.json
+  accessed_at: '2026-10-28T10:59:43.935299Z'
+  support: supports
+  summary: Original once-only canonical terms with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: 185b11774282b6ce8e27e904a1717a8e7f999989a5b845f7fc4bf42905c94032
+- evidence_id: check-references
+  kind: validation
+  reference: REVIEW_WORK/batch064/record08/references-result.json
+  accessed_at: '2026-10-28T10:59:44.676892Z'
+  support: supports
+  summary: Original once-only canonical references with complete argv/time/streams;
+    reference count zero does not verify sources.
+  snapshot_sha256: f90ec1036a08a0ad28ce4ec58700c2438d15e796af36746c77bdaf450f0d12e0
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: ATCC1203 and TOGO M2693 identity
+  outcome: supported
+  summary: The exact old ATCC URL and current indexed ATCC1203 URL returned byte-identical
+    PDFs titled CM4 medium. TOGO M2693 cites that old URL and matches the input table;
+    this supports source identity without inferring a strain-growth relationship.
+  target_ids:
+  - CultureMech:009245
+  evidence_ids:
+  - atcc1203
+  - atccOld
+  - togoM2693
+  - target
+  - owner
+- assessment_id: classification
+  area: consistency
+  topic: Undefined complex medium and optional physical form
+  outcome: concern
+  summary: COMPLEX/UNDEFINED agrees with yeast extract; SOLID_AGAR represents only
+    the optional agar variant, not every source formulation. No target organism is
+    asserted or inferred.
+  target_ids:
+  - CultureMech:009245
+  evidence_ids:
+  - atcc1203
+  - target
+- assessment_id: schema
+  area: schema
+  topic: Canonical diagnostics
+  outcome: supported
+  summary: All four original diagnostics passed; strict reports zero errors and references
+    performed zero checks. These diagnostics do not verify source units or supplied
+    forms.
+  target_ids:
+  - CultureMech:009245
+  evidence_ids:
+  - check-schema
+  - check-strict
+  - check-terms
+  - check-references
+- assessment_id: quantities
+  area: quantity
+  topic: Complete amounts, units and preparation stages
+  outcome: concern
+  summary: 30 current concentration fields are covered by 19 decisions, including
+    unchanged support and explicit source-only conditions.
+  target_ids:
+  - CultureMech:009245
+  evidence_ids:
+  - quantities
+  - numeric-census
+  details: '{"schema":"fresh-b064-quantity-inventory-v1","target":"data/merge_yaml/merged/CM4_medium.yaml","quantity_field_count":30,"decisions":[{"quantity_id":"q1","label":"Distilled
+    water","local_fields":[{"path":"data/merge_yaml/merged/CM4_medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/cm4_medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    primary and TOGO specify an input volume of 1.0 L water, not 1 G_PER_L. Represent
+    the solvent input as L; do not treat it as measured final medium volume.","source_stage":"Main
+    recipe input; gas entries are preparation atmosphere, not liquid solutes","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt
+    lines 15-15","quote":"Distilled water....................1.0 L","quote_basis":"derivative
+    text"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"components[0].items[0]","quote":"{\n          \"component_name\":
+    \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\":
+    \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt
+    lines 15-15","quote":"Distilled water....................1.0 L","quote_basis":"derivative
+    text"}]},{"quantity_id":"q2","label":"Yeast extract","local_fields":[{"path":"data/merge_yaml/merged/CM4_medium.yaml","field_path":"ingredients[1].concentration","stored":{"value":"5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/cm4_medium.yaml","field_path":"ingredients[1].concentration","stored":{"value":"5","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    printed batch mass is supported unchanged, but the existing G_PER_L concentration
+    is not authenticated: 1.0 L is input water and no measured final-volume instruction
+    is given. No guessed final normalization or hydrate conversion.","source_stage":"Main
+    recipe input; gas entries are preparation atmosphere, not liquid solutes","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt
+    lines 14-14","quote":"Yeast extract......................5.0 g","quote_basis":"derivative
+    text"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"components[0].items[1]","quote":"{\n          \"component_name\":
+    \"Yeast extract\",\n          \"volume\": 5,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001003\",\n          \"gmo_id\": \"GMO_001003\",\n          \"label\":
+    \"Yeast extract\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\":
+    \"Undefined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000042\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000042\",\n              \"label\":
+    \"Nutrient source\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt
+    lines 15-15","quote":"Distilled water....................1.0 L","quote_basis":"derivative
+    text"}]},{"quantity_id":"q3","label":"NaCl","local_fields":[{"path":"data/merge_yaml/merged/CM4_medium.yaml","field_path":"ingredients[2].concentration","stored":{"value":"1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/cm4_medium.yaml","field_path":"ingredients[2].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    printed batch mass is supported unchanged, but the existing G_PER_L concentration
+    is not authenticated: 1.0 L is input water and no measured final-volume instruction
+    is given. No guessed final normalization or hydrate conversion.","source_stage":"Main
+    recipe input; gas entries are preparation atmosphere, not liquid solutes","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt
+    lines 10-10","quote":"NaCl...............................1.0 g","quote_basis":"derivative
+    text"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"components[0].items[2]","quote":"{\n          \"component_name\":
+    \"NaCl\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001004\",\n          \"gmo_id\": \"GMO_001004\",\n          \"label\":
+    \"Sodium chloride\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt
+    lines 15-15","quote":"Distilled water....................1.0 L","quote_basis":"derivative
+    text"}]},{"quantity_id":"q4","label":"KH2PO4","local_fields":[{"path":"data/merge_yaml/merged/CM4_medium.yaml","field_path":"ingredients[3].concentration","stored":{"value":"1.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/cm4_medium.yaml","field_path":"ingredients[3].concentration","stored":{"value":"1.5","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    printed batch mass is supported unchanged, but the existing G_PER_L concentration
+    is not authenticated: 1.0 L is input water and no measured final-volume instruction
+    is given. No guessed final normalization or hydrate conversion.","source_stage":"Main
+    recipe input; gas entries are preparation atmosphere, not liquid solutes","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt
+    lines 4-4","quote":"KH2PO4 .............................1.5 g","quote_basis":"derivative
+    text"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"components[0].items[3]","quote":"{\n          \"component_name\":
+    \"KH2PO4\",\n          \"volume\": 1.5,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001006\",\n          \"gmo_id\": \"GMO_001006\",\n          \"label\":
+    \"Potassium phosphate monobasic\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\":
+    \"Buffer\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt
+    lines 15-15","quote":"Distilled water....................1.0 L","quote_basis":"derivative
+    text"}]},{"quantity_id":"q5","label":"K2HPO4","local_fields":[{"path":"data/merge_yaml/merged/CM4_medium.yaml","field_path":"ingredients[4].concentration","stored":{"value":"2.9","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/cm4_medium.yaml","field_path":"ingredients[4].concentration","stored":{"value":"2.9","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    printed batch mass is supported unchanged, but the existing G_PER_L concentration
+    is not authenticated: 1.0 L is input water and no measured final-volume instruction
+    is given. No guessed final normalization or hydrate conversion.","source_stage":"Main
+    recipe input; gas entries are preparation atmosphere, not liquid solutes","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt
+    lines 5-5","quote":"K2HPO4 .............................2.9 g","quote_basis":"derivative
+    text"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"components[0].items[4]","quote":"{\n          \"component_name\":
+    \"K2HPO4\",\n          \"volume\": 2.9,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001009\",\n          \"gmo_id\": \"GMO_001009\",\n          \"label\":
+    \"Potassium phosphate dibasic\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\":
+    \"Buffer\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt
+    lines 15-15","quote":"Distilled water....................1.0 L","quote_basis":"derivative
+    text"}]},{"quantity_id":"q6","label":"(NH4)2SO4","local_fields":[{"path":"data/merge_yaml/merged/CM4_medium.yaml","field_path":"ingredients[5].concentration","stored":{"value":"1.3","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/cm4_medium.yaml","field_path":"ingredients[5].concentration","stored":{"value":"1.3","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    printed batch mass is supported unchanged, but the existing G_PER_L concentration
+    is not authenticated: 1.0 L is input water and no measured final-volume instruction
+    is given. No guessed final normalization or hydrate conversion.","source_stage":"Main
+    recipe input; gas entries are preparation atmosphere, not liquid solutes","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt
+    lines 8-8","quote":"(NH4)2SO4 ...........................1.3 g","quote_basis":"derivative
+    text"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"components[0].items[5]","quote":"{\n          \"component_name\":
+    \"(NH4)2SO4\",\n          \"volume\": 1.3,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001030\",\n          \"gmo_id\": \"GMO_001030\",\n          \"label\":
+    \"Ammonium sulfate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000062\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000062\",\n              \"label\": \"Nitrogen
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt
+    lines 15-15","quote":"Distilled water....................1.0 L","quote_basis":"derivative
+    text"}]},{"quantity_id":"q7","label":"CaCl2","local_fields":[{"path":"data/merge_yaml/merged/CM4_medium.yaml","field_path":"ingredients[6].concentration","stored":{"value":"13.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/cm4_medium.yaml","field_path":"ingredients[6].concentration","stored":{"value":"13.2","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    exact source input is 13.2 mg CaCl2. The local 13.2 G_PER_L loses the milligram
+    unit and asserts an unverified final denominator. Preserve the source batch mass;
+    no final-medium rate is calculated from input water.","source_stage":"Main recipe
+    input; gas entries are preparation atmosphere, not liquid solutes","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt
+    lines 11-11","quote":"CaCl2 .............................13.2 mg","quote_basis":"derivative
+    text"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"components[0].items[6]","quote":"{\n          \"component_name\":
+    \"CaCl2\",\n          \"volume\": 13.2,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001061\",\n          \"gmo_id\": \"GMO_001061\",\n          \"label\":
+    \"Calcium chloride\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\":
+    \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\":
+    \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt
+    lines 15-15","quote":"Distilled water....................1.0 L","quote_basis":"derivative
+    text"}]},{"quantity_id":"q8","label":"Carbon source (i.e. cellobiose)","local_fields":[{"path":"data/merge_yaml/merged/CM4_medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"6","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/cm4_medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"6","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    primary supports the printed 6.0 g batch input and the exact label \"Carbon source
+    (i.e. cellobiose)\", already retained locally. This does not verify a final-medium
+    G_PER_L denominator or authorize arbitrary carbon-source substitutions.","source_stage":"Main
+    recipe input; gas entries are preparation atmosphere, not liquid solutes","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt
+    lines 13-13","quote":"Carbon source (i.e. cellobiose)....6.0 g","quote_basis":"derivative
+    text"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"components[0].items[7]","quote":"{\n          \"component_name\":
+    \"Carbon source (i.e. cellobiose)\",\n          \"volume\": 6,\n          \"unit\":
+    \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001137\",\n          \"gmo_id\":
+    \"GMO_001137\",\n          \"label\": \"Cellobiose\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic
+    compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\":
+    \"Carbon source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt
+    lines 15-15","quote":"Distilled water....................1.0 L","quote_basis":"derivative
+    text"}]},{"quantity_id":"q9","label":"MgCl2","local_fields":[{"path":"data/merge_yaml/merged/CM4_medium.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.75","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/cm4_medium.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.75","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    printed batch mass is supported unchanged, but the existing G_PER_L concentration
+    is not authenticated: 1.0 L is input water and no measured final-volume instruction
+    is given. No guessed final normalization or hydrate conversion.","source_stage":"Main
+    recipe input; gas entries are preparation atmosphere, not liquid solutes","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt
+    lines 9-9","quote":"MgCl2 ..............................0.75 g","quote_basis":"derivative
+    text"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"components[0].items[8]","quote":"{\n          \"component_name\":
+    \"MgCl2\",\n          \"volume\": 0.75,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001154\",\n          \"gmo_id\": \"GMO_001154\",\n          \"label\":
+    \"Magnesium chloride\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt
+    lines 15-15","quote":"Distilled water....................1.0 L","quote_basis":"derivative
+    text"}]},{"quantity_id":"q10","label":"Agar","local_fields":[{"path":"data/merge_yaml/merged/CM4_medium.yaml","field_path":"ingredients[9].concentration","stored":{"value":"20","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/cm4_medium.yaml","field_path":"ingredients[9].concentration","stored":{"value":"20","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"20.0
+    g is a supported optional batch addition: the primary says if needed. Neither
+    obligatory agar nor an exact 20 G_PER_L final-medium concentration follows. Retain
+    the optional solid variant and do not silently impose it on the broth option.","source_stage":"Main
+    recipe input; gas entries are preparation atmosphere, not liquid solutes","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt
+    lines 16-16","quote":"Agar (if needed)..................20.0 g","quote_basis":"derivative
+    text"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"components[0].items[11]","quote":"{\n          \"component_name\":
+    \"Agar\",\n          \"volume\": 20,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001007\",\n          \"gmo_id\": \"GMO_001007\",\n          \"label\":
+    \"Agar\",\n          \"properties\": [],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000048\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000048\",\n              \"label\":
+    \"Solidifying component\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt
+    lines 15-15","quote":"Distilled water....................1.0 L","quote_basis":"derivative
+    text"}]},{"quantity_id":"q11","label":"Sodium thioglycollate","local_fields":[{"path":"data/merge_yaml/merged/CM4_medium.yaml","field_path":"ingredients[10].concentration","stored":{"value":"0.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/cm4_medium.yaml","field_path":"ingredients[10].concentration","stored":{"value":"0.5","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    printed batch mass is supported unchanged, but the existing G_PER_L concentration
+    is not authenticated: 1.0 L is input water and no measured final-volume instruction
+    is given. No guessed final normalization or hydrate conversion.","source_stage":"Main
+    recipe input; gas entries are preparation atmosphere, not liquid solutes","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt
+    lines 6-6","quote":"Sodium thioglycollate..............0.5 g","quote_basis":"derivative
+    text"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"components[0].items[12]","quote":"{\n          \"component_name\":
+    \"Sodium thioglycollate\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001132\",\n          \"gmo_id\": \"GMO_001132\",\n          \"label\":
+    \"Sodium thioglycolate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt
+    lines 15-15","quote":"Distilled water....................1.0 L","quote_basis":"derivative
+    text"}]},{"quantity_id":"q12","label":"Nitrogen gas","local_fields":[{"path":"data/merge_yaml/merged/CM4_medium.yaml","field_path":"ingredients[11].concentration","stored":{"value":"variable","unit":"VARIABLE"}},{"path":"data/normalized_yaml/bacterial/cm4_medium.yaml","field_path":"ingredients[11].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"correct","rationale":"The
+    current entries are generic VARIABLE ingredient placeholders, while the source
+    specifies a gas mixture during tubing. Preserve the exact atmosphere in preparation
+    context without inventing a liquid dose, pressure or percentage basis; the current
+    unit is VARIABLE, not a liquid unit.","source_stage":"Main recipe input; gas entries
+    are preparation atmosphere, not liquid solutes","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt
+    lines 18-20","quote":"Mix all of the ingredients and boil until reduced, indicated
+    by a change\nfrom red to colorless. Allow to partially cool and tube under 97%
+    N2, 3%\nH2 and cap with butyl rubber stoppers.","quote_basis":"derivative text"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"components[0].items[13]","quote":"{\n          \"component_name\":
+    \"Nitrogen gas\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002261\",\n          \"gmo_id\":
+    \"GMO_002261\",\n          \"label\": \"Nitrogen gas\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000077\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000077\",\n              \"label\": \"ガス\"\n            }\n          ],\n          \"roles\":
+    []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"comments[2]","quote":"{\n      \"paragraph_index\":
+    4,\n      \"comment\": \"Allow to partially cool and tube under 97% N2, 3% H2
+    and cap with butyl rubber stoppers. Autoclave at 121C for 15 minutes.\"\n    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q13","label":"Hydrogen gas","local_fields":[{"path":"data/merge_yaml/merged/CM4_medium.yaml","field_path":"ingredients[12].concentration","stored":{"value":"variable","unit":"VARIABLE"}},{"path":"data/normalized_yaml/bacterial/cm4_medium.yaml","field_path":"ingredients[12].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"correct","rationale":"The
+    current entries are generic VARIABLE ingredient placeholders, while the source
+    specifies a gas mixture during tubing. Preserve the exact atmosphere in preparation
+    context without inventing a liquid dose, pressure or percentage basis; the current
+    unit is VARIABLE, not a liquid unit.","source_stage":"Main recipe input; gas entries
+    are preparation atmosphere, not liquid solutes","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt
+    lines 18-20","quote":"Mix all of the ingredients and boil until reduced, indicated
+    by a change\nfrom red to colorless. Allow to partially cool and tube under 97%
+    N2, 3%\nH2 and cap with butyl rubber stoppers.","quote_basis":"derivative text"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"components[0].items[14]","quote":"{\n          \"component_name\":
+    \"Hydrogen gas\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002263\",\n          \"gmo_id\":
+    \"GMO_002263\",\n          \"label\": \"Hydrogen gas\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000077\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000077\",\n              \"label\": \"ガス\"\n            }\n          ],\n          \"roles\":
+    []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"comments[2]","quote":"{\n      \"paragraph_index\":
+    4,\n      \"comment\": \"Allow to partially cool and tube under 97% N2, 3% H2
+    and cap with butyl rubber stoppers. Autoclave at 121C for 15 minutes.\"\n    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q14","label":"FeSO4 (1.25% solution)","local_fields":[{"path":"data/merge_yaml/merged/CM4_medium.yaml","field_path":"solutions[0].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/cm4_medium.yaml","field_path":"solutions[0].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    source specifies a volume of this separately named stock added to the batch. G_PER_L
+    is incompatible with that volume dose. Retain the exact mL addition and unresolved
+    final-medium denominator; the percent named in the stock is not its working dose
+    and its w/v, w/w or v/v basis is not supplied.","source_stage":"Stock addition
+    to main batch","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt
+    lines 12-12","quote":"FeSO4 (1.25% solution) .............0.1 ml","quote_basis":"derivative
+    text"},{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt
+    lines 15-15","quote":"Distilled water....................1.0 L","quote_basis":"derivative
+    text"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"components[0].items[9]","quote":"{\n          \"component_name\":
+    \"FeSO4 (1.25% solution)\",\n          \"volume\": 0.1,\n          \"unit\": \"ml\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001393\",\n          \"gmo_id\": \"GMO_001393\",\n          \"label\":
+    \"Iron(II) sulfate solution\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            },\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\":
+    \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q15","label":"Stock label and unspecified percentage
+    basis","local_fields":[{"path":"data/merge_yaml/merged/CM4_medium.yaml","field_path":"solutions[0].preferred_term","stored":"FeSO4
+    (1.25% solution)"},{"path":"data/normalized_yaml/bacterial/cm4_medium.yaml","field_path":"solutions[0].preferred_term","stored":"FeSO4
+    (1.25% solution)"}],"decision":"evidence_only","rationale":"The exact FeSO4 percentage-bearing
+    stock label is retained and directly supported. No hydration, purity or percentage
+    basis is established for that stock; a complete stock composition cannot be fabricated.","source_stage":"Named
+    stock strength; basis unresolved","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt
+    lines 12-12","quote":"FeSO4 (1.25% solution) .............0.1 ml","quote_basis":"derivative
+    text"}]},{"quantity_id":"q16","label":"Resazurin (1.0% solution)","local_fields":[{"path":"data/merge_yaml/merged/CM4_medium.yaml","field_path":"solutions[1].concentration","stored":{"value":"0.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/cm4_medium.yaml","field_path":"solutions[1].concentration","stored":{"value":"0.2","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    source specifies a volume of this separately named stock added to the batch. G_PER_L
+    is incompatible with that volume dose. Retain the exact mL addition and unresolved
+    final-medium denominator; the percent named in the stock is not its working dose
+    and its w/v, w/w or v/v basis is not supplied.","source_stage":"Stock addition
+    to main batch","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt
+    lines 7-7","quote":"Resazurin (1.0% solution)..........0.2 ml","quote_basis":"derivative
+    text"},{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt
+    lines 15-15","quote":"Distilled water....................1.0 L","quote_basis":"derivative
+    text"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"components[0].items[10]","quote":"{\n          \"component_name\":
+    \"Resazurin (1.0% solution)\",\n          \"volume\": 0.2,\n          \"unit\":
+    \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001403\",\n          \"gmo_id\":
+    \"GMO_001403\",\n          \"label\": \"Resazurin solution\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000055\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000055\",\n              \"label\": \"pH dependent
+    redox indicator\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q17","label":"Stock
+    label and unspecified percentage basis","local_fields":[{"path":"data/merge_yaml/merged/CM4_medium.yaml","field_path":"solutions[1].preferred_term","stored":"Resazurin
+    (1.0% solution)"},{"path":"data/normalized_yaml/bacterial/cm4_medium.yaml","field_path":"solutions[1].preferred_term","stored":"Resazurin
+    (1.0% solution)"}],"decision":"evidence_only","rationale":"The exact percentage-bearing
+    stock label is retained and directly supported. No hydration, purity, percent
+    basis or molecular identity for the resazurin form is inferred; a complete stock
+    composition cannot be fabricated.","source_stage":"Named stock strength; basis
+    unresolved","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt
+    lines 7-7","quote":"Resazurin (1.0% solution)..........0.2 ml","quote_basis":"derivative
+    text"}]},{"quantity_id":"q18","label":"Reduction, cooling, gas headspace and closure","local_fields":[],"decision":"evidence_only","rationale":"Source-only
+    preparation controls retained verbatim. Do not infer a gas volume, pressure or
+    pH.","source_stage":"Preparation before sterilization","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt
+    lines 18-20","quote":"Mix all of the ingredients and boil until reduced, indicated
+    by a change\nfrom red to colorless. Allow to partially cool and tube under 97%
+    N2, 3%\nH2 and cap with butyl rubber stoppers.","quote_basis":"derivative text"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"comments[1]","quote":"{\n      \"paragraph_index\":
+    3,\n      \"comment\": \"Mix all of the ingredients and boil until reduced, indicated
+    by a change from red to colorless.\"\n    }","quote_basis":"raw UTF-8"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"comments[2]","quote":"{\n      \"paragraph_index\":
+    4,\n      \"comment\": \"Allow to partially cool and tube under 97% N2, 3% H2
+    and cap with butyl rubber stoppers. Autoclave at 121C for 15 minutes.\"\n    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q19","label":"Sterilization temperature and duration","local_fields":[],"decision":"evidence_only","rationale":"Both
+    primary and provider explicitly retain this preparation step; the current records
+    omit it. No organism-specific incubation or growth recommendation is inferred.","source_stage":"Sterilization
+    only","sources":[{"evidence_id":"atcc1203","reference":"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/2/0/3/atcc-medium-1203.pdf?rev=96edde3279d24930859cb08dbddf2c24","raw_path":"REVIEW_WORK/batch064/source08-10/atcc1203.raw","raw_sha256":"c32078dc72d2ba071ef34701ff7f5407456cab2cbaa63184f394422d6fa8127f","text_sha256":"208102f2cde472592b000ce1d27eb4afff7cb6df5fe72356543bdb4b63e94b7e","accessed_at":"2026-10-28T11:00:17.343607Z","locator":"atcc1203.txt
+    lines 21-21","quote":"Autoclave at 121C for 15 minutes.","quote_basis":"derivative
+    text"},{"evidence_id":"togoM2693","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2693","raw_path":"REVIEW_WORK/batch064/source08-10/togoM2693.raw","raw_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","text_sha256":"baf1002d75aea728c476813cb8d0b8aa2d023a909f41d4d5fb06f33e8473e93b","accessed_at":"2026-10-28T11:00:16.617176Z","locator":"comments[2]","quote":"{\n      \"paragraph_index\":
+    4,\n      \"comment\": \"Allow to partially cool and tube under 97% N2, 3% H2
+    and cap with butyl rubber stoppers. Autoclave at 121C for 15 minutes.\"\n    }","quote_basis":"raw
+    UTF-8"}]}],"document_scopes":{"data/merge_yaml/merged/CM4_medium.yaml":null,"data/normalized_yaml/bacterial/cm4_medium.yaml":null},"scope":"Every
+    selected target/owner concentration plus explicit dependency fields; source-only
+    rows/conditions and unchanged claims distinguished. Excluded parent quantities
+    are not transferred."}'
+- assessment_id: grounding
+  area: grounding
+  topic: Supplied forms and current ontology/MIM scope
+  outcome: supported
+  summary: All asserted CHEBI identifiers and canonical labels were checked against
+    exact fresh OLS objects, including formulas, definitions and synonyms. Their named
+    water, salts, agar and gas identities agree at the stated source specificity;
+    no unspecified hydrate or resazurin stock form is certified. The exact retained
+    carbon-source label "Carbon source (i.e. cellobiose)" and complex yeast extract
+    are not forced to new IDs; the label does not establish free substitution among
+    carbon sources. Current MIM linkage counts are reported separately from scientific
+    accuracy; empty stock compositions are not chemical verification.
+  target_ids:
+  - CultureMech:009245
+  evidence_ids:
+  - groundings
+  - mim
+  - mim-meta
+- assessment_id: history
+  area: provenance
+  topic: Existing repair credit and writer limits
+  outcome: concern
+  summary: Both complete October5 reports are derivative incomplete reviews (0 of
+    15 rows checked), not source authentication. The exact owner and generated record
+    retain the same formulation defects. Current TOGO unit/stock/comment behavior
+    and conservative singleton/merge paths are credited; migration copies quantities
+    and may leave unresolved stock stubs. No historical execution is inferred from
+    current code. No existing attached source snippets or old raw-digest claims were
+    found in these two full documents.
+  target_ids:
+  - CultureMech:009245
+  evidence_ids:
+  - history
+  - old-reports
+  - old-claims
+  - writer-formulation
+  - writer-merger
+findings:
+- finding_id: f1
+  issue_key: culturemech-009245-batch-units-and-basis
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Batch volumes and a milligram input are encoded as final mass concentrations
+  description: Both target and owner encode input water, the calcium-chloride milligram
+    input, and both stock-volume additions as G_PER_L. Their exact primary units are
+    incompatible with that representation. Other printed masses are batch inputs,
+    not authenticated final-medium rates. Preserve original mass/volume units and
+    stage, keep the final denominator unresolved, and attach literal field-specific
+    evidence. Current TOGO unit parsing already distinguishes mg, ml and L; credit
+    that behavior while addressing the remaining implicit per-litre normalization.
+  target_ids:
+  - CultureMech:009245
+  field_paths:
+  - ingredients[0].concentration
+  - ingredients[6].concentration
+  - solutions[0].concentration
+  - solutions[1].concentration
+  evidence_ids:
+  - target
+  - owner
+  - atcc1203
+  - togoM2693
+  - writer-togo
+  rule_id: review-ingredient-concentrations/evidence-contract
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cm4_medium.yaml
+    role: maintained source
+- finding_id: f2
+  issue_key: culturemech-009245-conditional-formulation
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Optional agar loses its conditional scope
+  description: The primary marks agar as "if needed". The selected record fixes SOLID_AGAR
+    and includes agar unconditionally, while the provider omits that optional qualifier.
+    Preserve the conditional agar addition and physical-form scope. Both local documents
+    already retain the exact carbon-source label "Carbon source (i.e. cellobiose)";
+    credit that text without interpreting it as authorization to substitute arbitrary
+    carbon sources.
+  target_ids:
+  - CultureMech:009245
+  field_paths:
+  - physical_state
+  - ingredients[9]
+  evidence_ids:
+  - atcc1203
+  - togoM2693
+  - target
+  - owner
+  rule_id: review-yaml-record/representation
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cm4_medium.yaml
+    role: maintained source
+- finding_id: f3
+  issue_key: culturemech-009245-preparation-atmosphere
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source preparation is absent and gas fractions are hidden by VARIABLE placeholders
+  description: Both local documents omit the source reduction, cooling, tubing gas
+    mixture, closure and sterilization context. Nitrogen and hydrogen are represented
+    as generic VARIABLE ingredient placeholders, although the source specifies their
+    preparation-atmosphere proportions. Preserve the exact source preparation in suitable
+    fields, without a liquid gas dose or guessed pressure. The current TOGO primary-section/comment
+    path already retains these comments; the old records remain stale relative to
+    that capability.
+  target_ids:
+  - CultureMech:009245
+  field_paths:
+  - preparation_steps
+  - sterilization
+  - ingredients[11]
+  - ingredients[12]
+  evidence_ids:
+  - atcc1203
+  - togoM2693
+  - writer-togo
+  - writer-defaulter
+  rule_id: review-yaml-record/completeness
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cm4_medium.yaml
+    role: maintained source
+- finding_id: f4
+  issue_key: culturemech-009245-field-evidence
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Claim-level evidence and specific stock names are missing
+  description: No ingredient or stock quantity has an attached literal source claim
+    in the current documents. Two October5 reports explicitly performed no source
+    checks. Add newly verified batch-unit, conditional and preparation evidence with
+    the actual present source capture, preserving those historical reports as incomplete
+    assessments; do not relabel old events as verified. Both solution.name values
+    remain "Unknown solution" although their preferred_term and the primary source
+    identify the FeSO4 and resazurin stocks. Replace those placeholder names with
+    the source-specific names while retaining unresolved percentage bases and empty
+    compositions until supported.
+  target_ids:
+  - CultureMech:009245
+  field_paths:
+  - ingredients
+  - solutions
+  - evidence
+  - solutions[0].name
+  - solutions[1].name
+  evidence_ids:
+  - atcc1203
+  - togoM2693
+  - target
+  - owner
+  rule_id: review-yaml-record/evidence
+  native_severity: P3
+  normalization_reason: Bounded metadata, provenance or unresolved grounding follow-up;
+    no critical scientific failure is inferred.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cm4_medium.yaml
+    role: maintained source
+actions:
+- action_id: a1
+  description: Both target and owner encode input water, the calcium-chloride milligram
+    input, and both stock-volume additions as G_PER_L. Their exact primary units are
+    incompatible with that representation. Other printed masses are batch inputs,
+    not authenticated final-medium rates. Preserve original mass/volume units and
+    stage, keep the final denominator unresolved, and attach literal field-specific
+    evidence. Current TOGO unit parsing already distinguishes mg, ml and L; credit
+    that behavior while addressing the remaining implicit per-litre normalization.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:009245
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cm4_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a2
+  description: The primary marks agar as "if needed". The selected record fixes SOLID_AGAR
+    and includes agar unconditionally, while the provider omits that optional qualifier.
+    Preserve the conditional agar addition and physical-form scope. Both local documents
+    already retain the exact carbon-source label "Carbon source (i.e. cellobiose)";
+    credit that text without interpreting it as authorization to substitute arbitrary
+    carbon sources.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:009245
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cm4_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a3
+  description: Both local documents omit the source reduction, cooling, tubing gas
+    mixture, closure and sterilization context. Nitrogen and hydrogen are represented
+    as generic VARIABLE ingredient placeholders, although the source specifies their
+    preparation-atmosphere proportions. Preserve the exact source preparation in suitable
+    fields, without a liquid gas dose or guessed pressure. The current TOGO primary-section/comment
+    path already retains these comments; the old records remain stale relative to
+    that capability.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:009245
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cm4_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a4
+  description: No ingredient or stock quantity has an attached literal source claim
+    in the current documents. Two October5 reports explicitly performed no source
+    checks. Add newly verified batch-unit, conditional and preparation evidence with
+    the actual present source capture, preserving those historical reports as incomplete
+    assessments; do not relabel old events as verified. Both solution.name values
+    remain "Unknown solution" although their preferred_term and the primary source
+    identify the FeSO4 and resazurin stocks. Replace those placeholder names with
+    the source-specific names while retaining unresolved percentage bases and empty
+    compositions until supported.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:009245
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cm4_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+limitations:
+- Complete one-page ATCC PDF was read visually and as exact extracted text. The source
+  provides no measured final volume, pH, full stock formulation, percent basis or
+  specified salt hydrates; these remain unresolved rather than guessed.
+- Only the two exact report files and declared input surfaces were treated as historical
+  evidence. Ignored-inclusive report filename search found no additional exact CM4
+  report; no global literature absence is asserted.
+- No strain-growth claim, optimization or experimental recommendation is inferred
+  from the medium name or general source identity.
+- The MIM snapshot commit is 6643131b0f12ab40b66f98135245fca04027e0e9; present/absent
+  rows do not establish a historical or live-catalog result.
+- Input water is not measured final volume. Explicit provider g_l rates are assessed
+  only on their declared normalization basis; unspecified percent bases and hydrate
+  numbers remain unresolved.
+- No source changes, formal review validation/save, Git mutation or publication was
+  performed by this author.
+```
