@@ -1,0 +1,2217 @@
+# Source and formulation review: anaerobic_natural_seawater_medium (CultureMech:007701)
+
+- Review: 20261021T194735Z-culturemech-007701-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T19:40:00Z
+- Finished UTC: 2026-10-21T19:47:35Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The generated target is stale relative to its maintained JCM 1102-2 owner: it retains gram-unit water, seawater, resazurin and reducer doses and loses the 10 mM pyruvate branch and preparation. The owner restores much of the source structure but asserts w/v for unqualified 5% stocks and overstates primary-table amounts as explicit per-liter rates.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 359; batch 036 item 9 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding thirty-five task batches contain 350 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 353 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:007701 | data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml | generated | anaerobic_natural_seawater_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:007701 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:007701 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-036/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch036/359/strict.tsv |
+| validate-terms | passed | True | CultureMech:007701 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:007701 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:007701 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: mediadiveJ1102 | unavailable | False | CultureMech:007701 | Optional MediaDive J1102 attempt is unavailable; the exact current JCM primary and TOGO variant are available, so this does not require partial completion. |
+| Exact source content access: mediadiveJ1102retry | unavailable | False | CultureMech:007701 | Optional MediaDive J1102 attempt is unavailable; the exact current JCM primary and TOGO variant are available, so this does not require partial completion. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:007701.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:007701.
+
+19 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "quantity_id": "q1",
+    "component_or_context": "Basal: Distilled water",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "250",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "250.0",
+          "unit": "ML_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1176original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1176",
+        "source_locator": "$.components[0].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 250,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "dba36a9762d10d9e4cb6c29d2363551ec36972f8d04f8075c43fb94a51750343"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_amount": 250,
+      "source_unit": "ml",
+      "nominal_listed_liquid_ml": 1000,
+      "measured_final_volume_ml": null
+    },
+    "rationale": "The generated gram unit is wrong for water/seawater/milligram indicator. The owner restores the appropriate unit dimension but its notes claim the primary explicitly lists /L; the table gives batch inputs. A nominal one-liter basis may be documented as an inference, not a measured final volume or literal source wording."
+  },
+  {
+    "quantity_id": "q2",
+    "component_or_context": "Basal: Yeast extract",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "1.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1176original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1176",
+        "source_locator": "$.components[0].items[1]",
+        "exact_source_quote": "\"component_name\": \"Yeast extract\",\n          \"volume\": 1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "dba36a9762d10d9e4cb6c29d2363551ec36972f8d04f8075c43fb94a51750343"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_amount": 1,
+      "source_unit": "g",
+      "nominal_listed_liquid_ml": 1000,
+      "measured_final_volume_ml": null
+    },
+    "rationale": "The generated gram unit is wrong for water/seawater/milligram indicator. The owner restores the appropriate unit dimension but its notes claim the primary explicitly lists /L; the table gives batch inputs. A nominal one-liter basis may be documented as an inference, not a measured final volume or literal source wording."
+  },
+  {
+    "quantity_id": "q3",
+    "component_or_context": "Basal: Resazurin",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "MG_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1176original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1176",
+        "source_locator": "$.components[0].items[2]",
+        "exact_source_quote": "\"component_name\": \"Resazurin\",\n          \"volume\": 0.5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "dba36a9762d10d9e4cb6c29d2363551ec36972f8d04f8075c43fb94a51750343"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_amount": 0.5,
+      "source_unit": "mg",
+      "nominal_listed_liquid_ml": 1000,
+      "measured_final_volume_ml": null
+    },
+    "rationale": "The generated gram unit is wrong for water/seawater/milligram indicator. The owner restores the appropriate unit dimension but its notes claim the primary explicitly lists /L; the table gives batch inputs. A nominal one-liter basis may be documented as an inference, not a measured final volume or literal source wording."
+  },
+  {
+    "quantity_id": "q4",
+    "component_or_context": "Basal: Natural seawater (filtrated)",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "750",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "750.0",
+          "unit": "ML_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1176original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1176",
+        "source_locator": "$.components[0].items[3]",
+        "exact_source_quote": "\"component_name\": \"Natural seawater (filtrated)\",\n          \"volume\": 750,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "dba36a9762d10d9e4cb6c29d2363551ec36972f8d04f8075c43fb94a51750343"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_amount": 750,
+      "source_unit": "ml",
+      "nominal_listed_liquid_ml": 1000,
+      "measured_final_volume_ml": null
+    },
+    "rationale": "The generated gram unit is wrong for water/seawater/milligram indicator. The owner restores the appropriate unit dimension but its notes claim the primary explicitly lists /L; the table gives batch inputs. A nominal one-liter basis may be documented as an inference, not a measured final volume or literal source wording."
+  },
+  {
+    "quantity_id": "q5",
+    "component_or_context": "Basal: Tryptone",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1176original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1176",
+        "source_locator": "$.components[0].items[4]",
+        "exact_source_quote": "\"component_name\": \"Tryptone\",\n          \"volume\": 5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "dba36a9762d10d9e4cb6c29d2363551ec36972f8d04f8075c43fb94a51750343"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_amount": 5,
+      "source_unit": "g",
+      "nominal_listed_liquid_ml": 1000,
+      "measured_final_volume_ml": null
+    },
+    "rationale": "The generated gram unit is wrong for water/seawater/milligram indicator. The owner restores the appropriate unit dimension but its notes claim the primary explicitly lists /L; the table gives batch inputs. A nominal one-liter basis may be documented as an inference, not a measured final volume or literal source wording."
+  },
+  {
+    "quantity_id": "q6",
+    "component_or_context": "Basal: N2",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1176original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1176",
+        "source_locator": "$.components[0].items[5]",
+        "exact_source_quote": "\"component_name\": \"N2\"",
+        "snapshot_sha256": "dba36a9762d10d9e4cb6c29d2363551ec36972f8d04f8075c43fb94a51750343"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_amount": null,
+      "source_unit": null,
+      "nominal_listed_liquid_ml": 1000,
+      "measured_final_volume_ml": null
+    },
+    "rationale": "Nitrogen is a preparation atmosphere without stated absolute amount or percentage."
+  },
+  {
+    "quantity_id": "q7",
+    "component_or_context": "JCM 32399 pyruvate branch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "10.0",
+          "unit": "MILLIMOLAR"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1176original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1176",
+        "source_locator": "$.components[1].items[2]",
+        "exact_source_quote": "\"component_name\": \"sodium pyruvate\",\n          \"conc_value\": 10,\n          \"conc_unit\": \"mM\"",
+        "snapshot_sha256": "dba36a9762d10d9e4cb6c29d2363551ec36972f8d04f8075c43fb94a51750343"
+      },
+      {
+        "source_key": "jcm1102",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1102",
+        "source_locator": "Comment: JCM 32399 branch",
+        "exact_source_quote": "For strain JCM 32399, supplement with 10 mM sodium pyruvate.",
+        "snapshot_sha256": "ae2a790642297c1544b23a2d90cc7716311b69ed6f05373adcc4fd8a6b9db521",
+        "parsed_text_sha256": "5885f301309841e8463a5fba4f26099df7ea57380052c34069f75fa4fb81bd58",
+        "accessed_at": "2026-10-21T19:24:04.275291Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "strain_context": "JCM 32399",
+      "concentration_mM": 10,
+      "growth_assertion": false
+    },
+    "rationale": "The selected provider variant and maintained owner preserve 10 mM, whereas the target has VARIABLE. Keep the branch condition; a collection recipe instruction is not a new growth assay."
+  },
+  {
+    "quantity_id": "q8",
+    "component_or_context": "5% Na2S・9H2O solution receiving dose",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "6",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "solutions[1].concentration",
+        "stored": {
+          "value": "6.0",
+          "unit": "ML_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1176original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1176",
+        "source_locator": "$.components[1].items[0]",
+        "exact_source_quote": "\"component_name\": \"5% Na2S・9H2O solution\",\n          \"volume\": 6,\n          \"unit\": \"ml\",\n          \"conc_value\": 5,\n          \"conc_unit\": \"%\"",
+        "snapshot_sha256": "dba36a9762d10d9e4cb6c29d2363551ec36972f8d04f8075c43fb94a51750343"
+      },
+      {
+        "source_key": "jcm1102",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1102",
+        "source_locator": "Preparation after cooling",
+        "exact_source_quote": "add per liter the following solutions",
+        "snapshot_sha256": "ae2a790642297c1544b23a2d90cc7716311b69ed6f05373adcc4fd8a6b9db521",
+        "parsed_text_sha256": "5885f301309841e8463a5fba4f26099df7ea57380052c34069f75fa4fb81bd58",
+        "accessed_at": "2026-10-21T19:24:04.275291Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "dose_ml_per_L": 6,
+      "stage": "after cooling; separately autoclaved and stored under nitrogen"
+    },
+    "rationale": "Unlike the basal table, this receiving dose is explicitly per liter. Owner 6 ML_PER_L is supported but lacks attached claim evidence; target 6 G_PER_L must change."
+  },
+  {
+    "quantity_id": "q9",
+    "component_or_context": "5% Na2S・9H2O solution stock percentage",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "solutions[0].preferred_term",
+        "stored": "5% Na2S・9H2O solution",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "solutions[1].composition[0].concentration",
+        "stored": {
+          "value": "5.0",
+          "unit": "PERCENT_W_V"
+        },
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1176original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1176",
+        "source_locator": "$.components[1].items[0]",
+        "exact_source_quote": "\"component_name\": \"5% Na2S・9H2O solution\",\n          \"volume\": 6,\n          \"unit\": \"ml\",\n          \"conc_value\": 5,\n          \"conc_unit\": \"%\"",
+        "snapshot_sha256": "dba36a9762d10d9e4cb6c29d2363551ec36972f8d04f8075c43fb94a51750343"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_percent": 5,
+      "percentage_basis": null,
+      "source_hydrate_preserved": true
+    },
+    "rationale": "The target preserves only the bare percentage label. Owner PERCENT_W_V and notes add an unprovided basis. Retain 5% without deriving w/v, stock mass per volume or a delivered mass."
+  },
+  {
+    "quantity_id": "q10",
+    "component_or_context": "5% L-Cysteine・HCl・H2O solution receiving dose",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "solutions[1].concentration",
+        "stored": {
+          "value": "6",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "6.0",
+          "unit": "ML_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1176original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1176",
+        "source_locator": "$.components[1].items[1]",
+        "exact_source_quote": "\"component_name\": \"5% L-Cysteine・HCl・H2O solution\",\n          \"volume\": 6,\n          \"unit\": \"ml\",\n          \"conc_value\": 5,\n          \"conc_unit\": \"%\"",
+        "snapshot_sha256": "dba36a9762d10d9e4cb6c29d2363551ec36972f8d04f8075c43fb94a51750343"
+      },
+      {
+        "source_key": "jcm1102",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1102",
+        "source_locator": "Preparation after cooling",
+        "exact_source_quote": "add per liter the following solutions",
+        "snapshot_sha256": "ae2a790642297c1544b23a2d90cc7716311b69ed6f05373adcc4fd8a6b9db521",
+        "parsed_text_sha256": "5885f301309841e8463a5fba4f26099df7ea57380052c34069f75fa4fb81bd58",
+        "accessed_at": "2026-10-21T19:24:04.275291Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "dose_ml_per_L": 6,
+      "stage": "after cooling; separately autoclaved and stored under nitrogen"
+    },
+    "rationale": "Unlike the basal table, this receiving dose is explicitly per liter. Owner 6 ML_PER_L is supported but lacks attached claim evidence; target 6 G_PER_L must change."
+  },
+  {
+    "quantity_id": "q11",
+    "component_or_context": "5% L-Cysteine・HCl・H2O solution stock percentage",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "solutions[1].preferred_term",
+        "stored": "5% L-Cysteine・HCl・H2O solution",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "solutions[0].composition[0].concentration",
+        "stored": {
+          "value": "5.0",
+          "unit": "PERCENT_W_V"
+        },
+        "decision": "correct"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1176original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1176",
+        "source_locator": "$.components[1].items[1]",
+        "exact_source_quote": "\"component_name\": \"5% L-Cysteine・HCl・H2O solution\",\n          \"volume\": 6,\n          \"unit\": \"ml\",\n          \"conc_value\": 5,\n          \"conc_unit\": \"%\"",
+        "snapshot_sha256": "dba36a9762d10d9e4cb6c29d2363551ec36972f8d04f8075c43fb94a51750343"
+      }
+    ],
+    "proposed_source_representation": {
+      "stock_percent": 5,
+      "percentage_basis": null,
+      "source_hydrate_preserved": true
+    },
+    "rationale": "The target preserves only the bare percentage label. Owner PERCENT_W_V and notes add an unprovided basis. Retain 5% without deriving w/v, stock mass per volume or a delivered mass."
+  },
+  {
+    "quantity_id": "q12",
+    "component_or_context": "Base pH",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "ph_value",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "ph_value",
+        "stored": 7.0,
+        "decision": "evidence_only"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "jcm1102",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1102",
+        "source_locator": "Default header, basal preparation or explicit JCM 32399 branch as named",
+        "exact_source_quote": "adjust pH to 7.0",
+        "snapshot_sha256": "ae2a790642297c1544b23a2d90cc7716311b69ed6f05373adcc4fd8a6b9db521",
+        "parsed_text_sha256": "5885f301309841e8463a5fba4f26099df7ea57380052c34069f75fa4fb81bd58",
+        "accessed_at": "2026-10-21T19:24:04.275291Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "base_pH": 7
+    },
+    "rationale": "The generated preparation field is absent. Preserve supported owner information with claim-level evidence; the 10 ml aliquot is an optional source example missing from the owner, not a required scale or final volume."
+  },
+  {
+    "quantity_id": "q13",
+    "component_or_context": "Autoclave temperature",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "sterilization.temperature",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "sterilization.temperature",
+        "stored": {
+          "value": 121.0,
+          "unit": "CELSIUS"
+        },
+        "decision": "evidence_only"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "jcm1102",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1102",
+        "source_locator": "Default header, basal preparation or explicit JCM 32399 branch as named",
+        "exact_source_quote": "121°C",
+        "snapshot_sha256": "ae2a790642297c1544b23a2d90cc7716311b69ed6f05373adcc4fd8a6b9db521",
+        "parsed_text_sha256": "5885f301309841e8463a5fba4f26099df7ea57380052c34069f75fa4fb81bd58",
+        "accessed_at": "2026-10-21T19:24:04.275291Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "temperature_C": 121
+    },
+    "rationale": "The generated preparation field is absent. Preserve supported owner information with claim-level evidence; the 10 ml aliquot is an optional source example missing from the owner, not a required scale or final volume."
+  },
+  {
+    "quantity_id": "q14",
+    "component_or_context": "Autoclave duration",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "sterilization.duration",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "sterilization.duration",
+        "stored": "15 min",
+        "decision": "evidence_only"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "jcm1102",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1102",
+        "source_locator": "Default header, basal preparation or explicit JCM 32399 branch as named",
+        "exact_source_quote": "15 min",
+        "snapshot_sha256": "ae2a790642297c1544b23a2d90cc7716311b69ed6f05373adcc4fd8a6b9db521",
+        "parsed_text_sha256": "5885f301309841e8463a5fba4f26099df7ea57380052c34069f75fa4fb81bd58",
+        "accessed_at": "2026-10-21T19:24:04.275291Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "duration_min": 15
+    },
+    "rationale": "The generated preparation field is absent. Preserve supported owner information with claim-level evidence; the 10 ml aliquot is an optional source example missing from the owner, not a required scale or final volume."
+  },
+  {
+    "quantity_id": "q15",
+    "component_or_context": "Example vessel aliquot",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "preparation_steps[3].description",
+        "stored": "Distribute the medium in culture vessels under N2 and seal with butyl rubber stoppers.",
+        "decision": "add"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "jcm1102",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1102",
+        "source_locator": "Default header, basal preparation or explicit JCM 32399 branch as named",
+        "exact_source_quote": "10 ml in Balch tubes",
+        "snapshot_sha256": "ae2a790642297c1544b23a2d90cc7716311b69ed6f05373adcc4fd8a6b9db521",
+        "parsed_text_sha256": "5885f301309841e8463a5fba4f26099df7ea57380052c34069f75fa4fb81bd58",
+        "accessed_at": "2026-10-21T19:24:04.275291Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "example_aliquot_ml": 10,
+      "vessel": "Balch tube",
+      "example_only": true
+    },
+    "rationale": "The generated preparation field is absent. Preserve supported owner information with claim-level evidence; the 10 ml aliquot is an optional source example missing from the owner, not a required scale or final volume."
+  },
+  {
+    "quantity_id": "q16",
+    "component_or_context": "Pyruvate branch preparation",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "preparation_steps[6].description",
+        "stored": "Supplement the JCM 32399 variant with 10 mM sodium pyruvate.",
+        "decision": "evidence_only"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "jcm1102",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1102",
+        "source_locator": "Default header, basal preparation or explicit JCM 32399 branch as named",
+        "exact_source_quote": "10 mM sodium pyruvate",
+        "snapshot_sha256": "ae2a790642297c1544b23a2d90cc7716311b69ed6f05373adcc4fd8a6b9db521",
+        "parsed_text_sha256": "5885f301309841e8463a5fba4f26099df7ea57380052c34069f75fa4fb81bd58",
+        "accessed_at": "2026-10-21T19:24:04.275291Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "mM": 10,
+      "strain_context": "JCM 32399"
+    },
+    "rationale": "The generated preparation field is absent. Preserve supported owner information with claim-level evidence; the 10 ml aliquot is an optional source example missing from the owner, not a required scale or final volume."
+  },
+  {
+    "quantity_id": "q17",
+    "component_or_context": "Reducer receiving-dose preparation",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "preparation_steps[5].description",
+        "stored": "After cooling, aseptically and anaerobically add 6.0 ml/L each 5% L-Cysteine HCl H2O and 5% Na2S x 9H2O solutions autoclaved and stored under N2.",
+        "decision": "evidence_only"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "jcm1102",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1102",
+        "source_locator": "Default header, basal preparation or explicit JCM 32399 branch as named",
+        "exact_source_quote": "add per liter the following solutions",
+        "snapshot_sha256": "ae2a790642297c1544b23a2d90cc7716311b69ed6f05373adcc4fd8a6b9db521",
+        "parsed_text_sha256": "5885f301309841e8463a5fba4f26099df7ea57380052c34069f75fa4fb81bd58",
+        "accessed_at": "2026-10-21T19:24:04.275291Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "dose_ml_per_L_each": 6,
+      "two_distinct_stocks": true
+    },
+    "rationale": "The generated preparation field is absent. Preserve supported owner information with claim-level evidence; the 10 ml aliquot is an optional source example missing from the owner, not a required scale or final volume."
+  },
+  {
+    "quantity_id": "q18",
+    "component_or_context": "Owner pH prose",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Adjust to pH 7.0.",
+        "decision": "evidence_only"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "jcm1102",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1102",
+        "source_locator": "Basal preparation",
+        "exact_source_quote": "adjust pH to 7.0",
+        "snapshot_sha256": "ae2a790642297c1544b23a2d90cc7716311b69ed6f05373adcc4fd8a6b9db521",
+        "parsed_text_sha256": "5885f301309841e8463a5fba4f26099df7ea57380052c34069f75fa4fb81bd58",
+        "accessed_at": "2026-10-21T19:24:04.275291Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "pH": 7
+    },
+    "rationale": "Existing matching prose needs source evidence; do not replace with a generic growth optimum."
+  },
+  {
+    "quantity_id": "q19",
+    "component_or_context": "Owner autoclave prose",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml",
+        "field_path": "preparation_steps[4].description",
+        "stored": "Autoclave at 121 degrees C for 15 min.",
+        "decision": "evidence_only"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "jcm1102",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1102",
+        "source_locator": "JCM default header",
+        "exact_source_quote": "autoclaving at 121°C for 15 min.",
+        "snapshot_sha256": "ae2a790642297c1544b23a2d90cc7716311b69ed6f05373adcc4fd8a6b9db521",
+        "parsed_text_sha256": "5885f301309841e8463a5fba4f26099df7ea57380052c34069f75fa4fb81bd58",
+        "accessed_at": "2026-10-21T19:24:04.275291Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "temperature_C": 121,
+      "duration_min": 15
+    },
+    "rationale": "This default applies to the stated autoclaved stage and is already retained in the owner."
+  }
+]
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: supported. Targets: CultureMech:007701.
+
+6 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 4/7 primary and 3/7 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Source forms are assessed separately.
+
+Instance coverage on a 0–100 percent scale, denominator 7: primary 57.14%; secondary 42.86%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:007701.
+
+22 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Selected source variant and owner identity
+
+identity: supported. Targets: CultureMech:007701.
+
+CultureMech:007701 has the exact TOGO_M1176 bacterial owner, with source accession JCM_M1102-2 and the JCM 32399 pyruvate branch. JCM 33129 omission of indicator/reducers and JCM 33131 vitamin supplementation are different source branches and are excluded. No taxonomy ID or new organism growth assertion is proposed.
+
+### Chemical forms and natural mixtures
+
+grounding: supported. Targets: CultureMech:007701.
+
+The owner correctly retains explicit L-cysteine hydrochloride monohydrate and sodium sulfide nonahydrate in separate stocks. Sodium pyruvate and neutral resazurin terms match their source identities. Natural seawater, tryptone and yeast extract are mixtures with unresolved composition, not missing pure-compound identities to invent. All asserted current CHEBI-based secondary labels/keys match the pinned metadata; no legacy secondary key is asserted.
+
+### Stale target versus retained owner preparation
+
+completeness: concern. Targets: CultureMech:007701.
+
+The owner retains pH 7, nitrogen preparation, sealing, the 121°C/15 min JCM default, separately autoclaved reducer additions after cooling and the JCM 32399 pyruvate condition. These are absent from the generated target. Add the source example of 10 ml in Balch tubes only as an example. Both reducer percentages remain unqualified in the source; no inferred mass dose is justified.
+
+### Complex natural medium and classification drift
+
+scope: supported. Targets: CultureMech:007701.
+
+COMPLEX/LIQUID agrees with natural seawater, tryptone and yeast extract. Target UNDEFINED and owner SEMI_DEFINED differ; neither may be read as a chemically defined formulation. Preserve explicit mixture uncertainty and apply a documented composition policy during regeneration rather than inferring a phenotype or nutrient-defined recipe from a score-repair label.
+
+### Repair evidence and generated freshness
+
+provenance: concern. Targets: CultureMech:007701.
+
+Owner source fields and reference URLs identify the source, but no claim-level amount excerpts are attached. The generated target still reflects earlier units and loses the later variant/preparation repair. The dedicated current writer demonstrates the remaining w/v and literal-/L assumptions; history alone is not a source validation.
+
+## Findings
+
+### f1: Generated units and pyruvate concentration remain stale
+
+blocker / open / confirmed; issue key: culturemech.007701.stale-units-variant.
+
+The target encodes 250 ml water, 750 ml seawater, 0.5 mg resazurin and two 6 ml/L reducer doses with gram units, and pyruvate remains VARIABLE instead of the selected 10 mM branch. The owner has repaired these dimensions and the branch, although basal /L notes still overstate literal source wording.
+
+### f2: Owner stock percentages assume an unstated w/v basis
+
+major / open / confirmed; issue key: culturemech.007701.percent-basis-assumption.
+
+Both owner reducer compositions use 5 PERCENT_W_V, and their notes explicitly derive w/v from the stock label. JCM and TOGO give only 5%. The target preserves bare names but has no composition.
+
+### f3: Generated preparation omits the maintained source branch
+
+major / open / confirmed; issue key: culturemech.007701.preparation-provenance-drift.
+
+The owner retains source pH, sterilization and staged nitrogen/reducer handling plus the pyruvate condition, but the target omits all preparation and sterilization fields. Source URLs alone do not attach quantity evidence.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Retain exact source batch and per-liter distinctions, attach evidence and preserve the JCM 32399 condition. Correct remaining owner basis assertions before authorized regeneration; do not manually repair the generated file.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Retain the literal 5% label with unknown basis unless authoritative source evidence establishes w/v. Remove unsupported basis claims in the maintained stock representations and update the writer if separately authorized; preserve hydrates and the explicit 6 ml/L receiving doses.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Preserve and evidence supported owner preparation, qualify the optional vessel example and basal amount basis, then regenerate through the established owner pipeline. Exclude the other source strain branches and append a clarification event without altering prior history.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch036/359/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-036/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch036/359/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml:1:id: CultureMech:007701<br>./data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml:1:id: CultureMech:007701<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch036/source-preflight-bound/359/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 12 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| bound-context | /private/tmp/culturemech-review-work-batch036/source-preflight-bound/359/evidence-context-original.json; Complete frozen source context and full local objects | context_only | Frozen target/owner objects match freshly inspected records. Source interpretations are assessed against actual bound capture bytes; historical limitations remain separate. |
+| primary | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1102; Complete basal table, preparation and explicit strain comments | supports | The primary has 750 ml seawater plus 250 ml water, milligram indicator, an explicitly per-liter pair of reducer doses and the JCM 32399 10 mM pyruvate branch. Other strain branches are not this selected variant. |
+| provider | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1176; meta.original_media_id JCM_M1102-2; components and comments | supports | Provider variant identifies sodium pyruvate 10 mM, while basal amounts remain literal table inputs and the 5% stock basis is unspecified. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch036/359/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:15377 resolves to water. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi17997 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17997; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:17997 resolves to dinitrogen. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi50144 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_50144; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:50144 resolves to sodium pyruvate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi76209 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:76209 resolves to sodium sulfide nonahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:8806 resolves to Resazurin. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi91248 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91248; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:91248 resolves to L-cysteine hydrochloride hydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:15377": [{"label": "Distilled water", "match_type": "preferred_term", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17997": [{"label": "Nitrogen gas", "match_type": "preferred_term", "identifier": "CHEBI:17997", "preferred_term": "Nitrogen gas", "ontology_id": "CHEBI:17997", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:50144": [{"label": "Na-pyruvate", "match_type": "preferred_term", "identifier": "CHEBI:50144", "preferred_term": "Na-pyruvate", "ontology_id": "CHEBI:50144", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:76209": [{"label": "Na2S x 9 H2O", "match_type": "preferred_term", "identifier": "CHEBI:76209", "preferred_term": "Na2S x 9 H2O", "ontology_id": "CHEBI:76209", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:8806": [{"label": "Resazurin", "match_type": "preferred_term", "identifier": "CHEBI:8806", "preferred_term": "Resazurin", "ontology_id": "CHEBI:8806", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:91248": [{"label": "L-Cysteine HCl x H2O", "match_type": "preferred_term", "identifier": "CHEBI:91248", "preferred_term": "L-Cysteine HCl x H2O", "ontology_id": "CHEBI:91248", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| history-metadata | data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml; data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 11, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml", "events": 11, "timestamp_issues": []}] |
+| writer-0 | scripts/repair_togo_m1176_m1178_score15.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | The current dedicated repair writer explicitly emits _percent_stock PERCENT_W_V from bare stock labels and _listed_component per-liter notes from batch table rows. The maintained September repair postdates the generated August merge event. Correct the remaining owner basis/evidence assertions first; regenerate only after separate authorization. Preserve both historical events, appending clarification rather than rewriting them. |
+| writer-1 | src/culturemech/merge/merge_recipes.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | The current dedicated repair writer explicitly emits _percent_stock PERCENT_W_V from bare stock labels and _listed_component per-liter notes from batch table rows. The maintained September repair postdates the generated August merge event. Correct the remaining owner basis/evidence assertions first; regenerate only after separate authorization. Preserve both historical events, appending clarification rather than rewriting them. |
+| writer-2 | src/culturemech/import/togo_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | The current dedicated repair writer explicitly emits _percent_stock PERCENT_W_V from bare stock labels and _listed_component per-liter notes from batch table rows. The maintained September repair postdates the generated August merge event. Correct the remaining owner basis/evidence assertions first; regenerate only after separate authorization. Preserve both historical events, appending clarification rather than rewriting them. |
+| mediadiveJ1102-attempt | https://mediadive.dsmz.de/rest/medium/J1102; Preserved exact public retrieval result | context_only | Optional MediaDive J1102 attempt is unavailable; the exact current JCM primary and TOGO variant are available, so this does not require partial completion. |
+| mediadiveJ1102retry-attempt | https://mediadive.dsmz.de/rest/medium/J1102; Preserved exact public retrieval result | context_only | Optional MediaDive J1102 attempt is unavailable; the exact current JCM primary and TOGO variant are available, so this does not require partial completion. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Optional MediaDive J1102 attempt is unavailable; the exact current JCM primary and TOGO variant are available, so this does not require partial completion.
+- Optional MediaDive J1102 attempt is unavailable; the exact current JCM primary and TOGO variant are available, so this does not require partial completion.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T194735Z-culturemech-007701-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: anaerobic_natural_seawater_medium (CultureMech:007701)'
+started_at: '2026-10-21T19:40:00Z'
+finished_at: '2026-10-21T19:47:35Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: 'The generated target is stale relative to its maintained JCM 1102-2 owner:
+  it retains gram-unit water, seawater, resazurin and reducer doses and loses the
+  10 mM pyruvate branch and preparation. The owner restores much of the source structure
+  but asserts w/v for unqualified 5% stocks and overstates primary-table amounts as
+  explicit per-liter rates.'
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml
+    sha256: a3b2d8eb8ed7ccc57fa1a7f5de50a3f6b103b70eb81b0a719edc5fafa979530f
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml
+    sha256: 47bbd520021f151ee4089609cc461ece680b60a8c9aaa1646f39031b17982a11
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_togo_m1176_m1178_score15.py
+    sha256: 10ad100728dc7f12a5e9057e0b0e1ccd112d0334c65b2c3a5226b7d36cc57db1
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/togo_raw_yaml.py
+    sha256: ce5e73545c9ecde54724259d2fd475676c0f3cb44dcfd283950e89fd49c10993
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/togo_fetcher.py
+    sha256: 7aac40fe1d47e30810ae0be02f6e369ddb9bf657d630072595c62f46fb0bf339
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 359; batch 036 item 9 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirty-five task batches
+    contain 350 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 353 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:007701
+targets:
+- target_id: CultureMech:007701
+  path: data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml
+  label: anaerobic_natural_seawater_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:007701
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch036/359/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-036/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch036/359/strict.tsv"
+  target_ids:
+  - CultureMech:007701
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:007701
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:007701
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:007701
+- check_id: mediadiveJ1102-source-access
+  name: 'Exact source content access: mediadiveJ1102'
+  required: false
+  status: unavailable
+  summary: Optional MediaDive J1102 attempt is unavailable; the exact current JCM
+    primary and TOGO variant are available, so this does not require partial completion.
+  target_ids:
+  - CultureMech:007701
+  evidence_ids:
+  - mediadiveJ1102-attempt
+- check_id: mediadiveJ1102retry-source-access
+  name: 'Exact source content access: mediadiveJ1102retry'
+  required: false
+  status: unavailable
+  summary: Optional MediaDive J1102 attempt is unavailable; the exact current JCM
+    primary and TOGO variant are available, so this does not require partial completion.
+  target_ids:
+  - CultureMech:007701
+  evidence_ids:
+  - mediadiveJ1102retry-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T19:47:34Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T19:47:34Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T19:41:23.962624Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch036/359/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T19:41:26.234391Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-036/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch036/359/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T19:41:29.250460Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T19:41:30.813152Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T19:47:34Z'
+  support: supports
+  summary: './data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml:1:id:
+    CultureMech:007701
+
+    ./data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml:1:id:
+    CultureMech:007701
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch036/source-preflight-bound/359/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T19:47:34Z'
+  support: supports
+  summary: 12 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: fdd935effcfb298804915a6f537e55e39cb220e7bff8afa7f7ab11828a896239
+- evidence_id: bound-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch036/source-preflight-bound/359/evidence-context-original.json
+  locator: Complete frozen source context and full local objects
+  accessed_at: '2026-10-21T19:47:34Z'
+  support: context_only
+  summary: Frozen target/owner objects match freshly inspected records. Source interpretations
+    are assessed against actual bound capture bytes; historical limitations remain
+    separate.
+  snapshot_sha256: 3afcd8dc3a0897cacfcb37e1f8fdb6c2ee7325749bec6bba3e9b468dd2b4380f
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1102
+  locator: Complete basal table, preparation and explicit strain comments
+  accessed_at: '2026-10-21T19:24:04.275291Z'
+  support: supports
+  summary: The primary has 750 ml seawater plus 250 ml water, milligram indicator,
+    an explicitly per-liter pair of reducer doses and the JCM 32399 10 mM pyruvate
+    branch. Other strain branches are not this selected variant.
+  snapshot_sha256: ae2a790642297c1544b23a2d90cc7716311b69ed6f05373adcc4fd8a6b9db521
+- evidence_id: provider
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1176
+  locator: meta.original_media_id JCM_M1102-2; components and comments
+  accessed_at: '2026-10-21T19:24:02.871388Z'
+  support: supports
+  summary: Provider variant identifies sodium pyruvate 10 mM, while basal amounts
+    remain literal table inputs and the 5% stock basis is unspecified.
+  snapshot_sha256: dba36a9762d10d9e4cb6c29d2363551ec36972f8d04f8075c43fb94a51750343
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch036/359/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T19:47:34Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: a93fff39744fe85b6d086bed202fbf091ea108dabe2b09313cd67d350ef01c9e
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.097802Z'
+  support: supports
+  summary: CHEBI:15377 resolves to water. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi17997
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17997
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:27.385647Z'
+  support: supports
+  summary: CHEBI:17997 resolves to dinitrogen. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: ea4b3f90994884c49607689e3f3939cfec804c7d17905bbeecfc0ef7f80ead43
+- evidence_id: chebi50144
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_50144
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:22:07.440767Z'
+  support: supports
+  summary: CHEBI:50144 resolves to sodium pyruvate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 457ed29adfdea68c420ea0c094d7d75593958fc70f908f6809348e4e12e7e15d
+- evidence_id: chebi76209
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:04.847843Z'
+  support: supports
+  summary: CHEBI:76209 resolves to sodium sulfide nonahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: f74d2c85574a4e28bdf71a78e4263f7e4c211036cd6d63b1f8282aca1d255e5c
+- evidence_id: chebi8806
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.774007Z'
+  support: supports
+  summary: CHEBI:8806 resolves to Resazurin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: chebi91248
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91248
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:32.136441Z'
+  support: supports
+  summary: CHEBI:91248 resolves to L-cysteine hydrochloride hydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 7ef9e26cec1a5833d216a01df066c0b6a0bfba77bad16db354c690a7a814a683
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T19:47:34Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:15377":
+    [{"label": "Distilled water", "match_type": "preferred_term", "identifier": "CHEBI:15377",
+    "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:17997": [{"label": "Nitrogen gas", "match_type":
+    "preferred_term", "identifier": "CHEBI:17997", "preferred_term": "Nitrogen gas",
+    "ontology_id": "CHEBI:17997", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:50144": [{"label": "Na-pyruvate", "match_type": "preferred_term", "identifier":
+    "CHEBI:50144", "preferred_term": "Na-pyruvate", "ontology_id": "CHEBI:50144",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:76209": [{"label":
+    "Na2S x 9 H2O", "match_type": "preferred_term", "identifier": "CHEBI:76209", "preferred_term":
+    "Na2S x 9 H2O", "ontology_id": "CHEBI:76209", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:8806": [{"label": "Resazurin", "match_type": "preferred_term",
+    "identifier": "CHEBI:8806", "preferred_term": "Resazurin", "ontology_id": "CHEBI:8806",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:91248": [{"label":
+    "L-Cysteine HCl x H2O", "match_type": "preferred_term", "identifier": "CHEBI:91248",
+    "preferred_term": "L-Cysteine HCl x H2O", "ontology_id": "CHEBI:91248", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml; data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T19:47:34Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 11, "timestamp_issues": []}, {"input":
+    "data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml",
+    "events": 11, "timestamp_issues": []}]'
+- evidence_id: writer-0
+  kind: record_content
+  reference: scripts/repair_togo_m1176_m1178_score15.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T19:47:34Z'
+  support: context_only
+  summary: The current dedicated repair writer explicitly emits _percent_stock PERCENT_W_V
+    from bare stock labels and _listed_component per-liter notes from batch table
+    rows. The maintained September repair postdates the generated August merge event.
+    Correct the remaining owner basis/evidence assertions first; regenerate only after
+    separate authorization. Preserve both historical events, appending clarification
+    rather than rewriting them.
+  snapshot_sha256: 10ad100728dc7f12a5e9057e0b0e1ccd112d0334c65b2c3a5226b7d36cc57db1
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/merge/merge_recipes.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T19:47:34Z'
+  support: context_only
+  summary: The current dedicated repair writer explicitly emits _percent_stock PERCENT_W_V
+    from bare stock labels and _listed_component per-liter notes from batch table
+    rows. The maintained September repair postdates the generated August merge event.
+    Correct the remaining owner basis/evidence assertions first; regenerate only after
+    separate authorization. Preserve both historical events, appending clarification
+    rather than rewriting them.
+  snapshot_sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T19:47:34Z'
+  support: context_only
+  summary: The current dedicated repair writer explicitly emits _percent_stock PERCENT_W_V
+    from bare stock labels and _listed_component per-liter notes from batch table
+    rows. The maintained September repair postdates the generated August merge event.
+    Correct the remaining owner basis/evidence assertions first; regenerate only after
+    separate authorization. Preserve both historical events, appending clarification
+    rather than rewriting them.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: mediadiveJ1102-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J1102
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T19:24:00.842536Z'
+  support: context_only
+  summary: Optional MediaDive J1102 attempt is unavailable; the exact current JCM
+    primary and TOGO variant are available, so this does not require partial completion.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadiveJ1102retry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J1102
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T19:24:46.970472Z'
+  support: context_only
+  summary: Optional MediaDive J1102 attempt is unavailable; the exact current JCM
+    primary and TOGO variant are available, so this does not require partial completion.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:007701
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 19 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:007701
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"component_or_context\": \"\
+    Basal: Distilled water\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"250\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"250.0\",\n          \"unit\": \"ML_PER_L\"\n     \
+    \   },\n        \"decision\": \"unsupported\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM1176original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1176\",\n\
+    \        \"source_locator\": \"$.components[0].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 250,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\": \"\
+    dba36a9762d10d9e4cb6c29d2363551ec36972f8d04f8075c43fb94a51750343\"\n      }\n\
+    \    ],\n    \"proposed_source_representation\": {\n      \"source_amount\": 250,\n\
+    \      \"source_unit\": \"ml\",\n      \"nominal_listed_liquid_ml\": 1000,\n \
+    \     \"measured_final_volume_ml\": null\n    },\n    \"rationale\": \"The generated\
+    \ gram unit is wrong for water/seawater/milligram indicator. The owner restores\
+    \ the appropriate unit dimension but its notes claim the primary explicitly lists\
+    \ /L; the table gives batch inputs. A nominal one-liter basis may be documented\
+    \ as an inference, not a measured final volume or literal source wording.\"\n\
+    \  },\n  {\n    \"quantity_id\": \"q2\",\n    \"component_or_context\": \"Basal:\
+    \ Yeast extract\",\n    \"decision\": \"unsupported\",\n    \"local_fields\":\
+    \ [\n      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.0\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM1176original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1176\",\n\
+    \        \"source_locator\": \"$.components[0].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Yeast extract\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"dba36a9762d10d9e4cb6c29d2363551ec36972f8d04f8075c43fb94a51750343\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"source_amount\"\
+    : 1,\n      \"source_unit\": \"g\",\n      \"nominal_listed_liquid_ml\": 1000,\n\
+    \      \"measured_final_volume_ml\": null\n    },\n    \"rationale\": \"The generated\
+    \ gram unit is wrong for water/seawater/milligram indicator. The owner restores\
+    \ the appropriate unit dimension but its notes claim the primary explicitly lists\
+    \ /L; the table gives batch inputs. A nominal one-liter basis may be documented\
+    \ as an inference, not a measured final volume or literal source wording.\"\n\
+    \  },\n  {\n    \"quantity_id\": \"q3\",\n    \"component_or_context\": \"Basal:\
+    \ Resazurin\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n    \
+    \  {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"MG_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM1176original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1176\",\n\
+    \        \"source_locator\": \"$.components[0].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Resazurin\\\",\\n          \\\"volume\\\": 0.5,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"dba36a9762d10d9e4cb6c29d2363551ec36972f8d04f8075c43fb94a51750343\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"source_amount\"\
+    : 0.5,\n      \"source_unit\": \"mg\",\n      \"nominal_listed_liquid_ml\": 1000,\n\
+    \      \"measured_final_volume_ml\": null\n    },\n    \"rationale\": \"The generated\
+    \ gram unit is wrong for water/seawater/milligram indicator. The owner restores\
+    \ the appropriate unit dimension but its notes claim the primary explicitly lists\
+    \ /L; the table gives batch inputs. A nominal one-liter basis may be documented\
+    \ as an inference, not a measured final volume or literal source wording.\"\n\
+    \  },\n  {\n    \"quantity_id\": \"q4\",\n    \"component_or_context\": \"Basal:\
+    \ Natural seawater (filtrated)\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"750\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"750.0\",\n          \"unit\": \"ML_PER_L\"\n     \
+    \   },\n        \"decision\": \"unsupported\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM1176original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1176\",\n\
+    \        \"source_locator\": \"$.components[0].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Natural seawater (filtrated)\\\",\\n         \
+    \ \\\"volume\\\": 750,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\"\
+    : \"dba36a9762d10d9e4cb6c29d2363551ec36972f8d04f8075c43fb94a51750343\"\n     \
+    \ }\n    ],\n    \"proposed_source_representation\": {\n      \"source_amount\"\
+    : 750,\n      \"source_unit\": \"ml\",\n      \"nominal_listed_liquid_ml\": 1000,\n\
+    \      \"measured_final_volume_ml\": null\n    },\n    \"rationale\": \"The generated\
+    \ gram unit is wrong for water/seawater/milligram indicator. The owner restores\
+    \ the appropriate unit dimension but its notes claim the primary explicitly lists\
+    \ /L; the table gives batch inputs. A nominal one-liter basis may be documented\
+    \ as an inference, not a measured final volume or literal source wording.\"\n\
+    \  },\n  {\n    \"quantity_id\": \"q5\",\n    \"component_or_context\": \"Basal:\
+    \ Tryptone\",\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n \
+    \     {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5.0\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM1176original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1176\",\n\
+    \        \"source_locator\": \"$.components[0].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Tryptone\\\",\\n          \\\"volume\\\": 5,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"dba36a9762d10d9e4cb6c29d2363551ec36972f8d04f8075c43fb94a51750343\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"source_amount\"\
+    : 5,\n      \"source_unit\": \"g\",\n      \"nominal_listed_liquid_ml\": 1000,\n\
+    \      \"measured_final_volume_ml\": null\n    },\n    \"rationale\": \"The generated\
+    \ gram unit is wrong for water/seawater/milligram indicator. The owner restores\
+    \ the appropriate unit dimension but its notes claim the primary explicitly lists\
+    \ /L; the table gives batch inputs. A nominal one-liter basis may be documented\
+    \ as an inference, not a measured final volume or literal source wording.\"\n\
+    \  },\n  {\n    \"quantity_id\": \"q6\",\n    \"component_or_context\": \"Basal:\
+    \ N2\",\n    \"decision\": \"not_quantified\",\n    \"local_fields\": [\n    \
+    \  {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"not_quantified\"\n      },\n      {\n     \
+    \   \"input\": \"data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"not_quantified\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM1176original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1176\",\n\
+    \        \"source_locator\": \"$.components[0].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"N2\\\"\",\n        \"snapshot_sha256\": \"dba36a9762d10d9e4cb6c29d2363551ec36972f8d04f8075c43fb94a51750343\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"source_amount\"\
+    : null,\n      \"source_unit\": null,\n      \"nominal_listed_liquid_ml\": 1000,\n\
+    \      \"measured_final_volume_ml\": null\n    },\n    \"rationale\": \"Nitrogen\
+    \ is a preparation atmosphere without stated absolute amount or percentage.\"\n\
+    \  },\n  {\n    \"quantity_id\": \"q7\",\n    \"component_or_context\": \"JCM\
+    \ 32399 pyruvate branch\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10.0\",\n          \"unit\": \"MILLIMOLAR\"\n    \
+    \    },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM1176original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1176\",\n\
+    \        \"source_locator\": \"$.components[1].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"sodium pyruvate\\\",\\n          \\\"conc_value\\\
+    \": 10,\\n          \\\"conc_unit\\\": \\\"mM\\\"\",\n        \"snapshot_sha256\"\
+    : \"dba36a9762d10d9e4cb6c29d2363551ec36972f8d04f8075c43fb94a51750343\"\n     \
+    \ },\n      {\n        \"source_key\": \"jcm1102\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1102\",\n        \"source_locator\"\
+    : \"Comment: JCM 32399 branch\",\n        \"exact_source_quote\": \"For strain\
+    \ JCM 32399, supplement with 10 mM sodium pyruvate.\",\n        \"snapshot_sha256\"\
+    : \"ae2a790642297c1544b23a2d90cc7716311b69ed6f05373adcc4fd8a6b9db521\",\n    \
+    \    \"parsed_text_sha256\": \"5885f301309841e8463a5fba4f26099df7ea57380052c34069f75fa4fb81bd58\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:24:04.275291Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"strain_context\": \"JCM 32399\"\
+    ,\n      \"concentration_mM\": 10,\n      \"growth_assertion\": false\n    },\n\
+    \    \"rationale\": \"The selected provider variant and maintained owner preserve\
+    \ 10 mM, whereas the target has VARIABLE. Keep the branch condition; a collection\
+    \ recipe instruction is not a new growth assay.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q8\",\n    \"component_or_context\": \"5% Na2S・9H2O solution receiving dose\"\
+    ,\n    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml\",\n\
+    \        \"field_path\": \"solutions[0].concentration\",\n        \"stored\":\
+    \ {\n          \"value\": \"6\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"6.0\",\n          \"unit\": \"ML_PER_L\"\n       \
+    \ },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM1176original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1176\",\n\
+    \        \"source_locator\": \"$.components[1].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"5% Na2S・9H2O solution\\\",\\n          \\\"volume\\\
+    \": 6,\\n          \\\"unit\\\": \\\"ml\\\",\\n          \\\"conc_value\\\": 5,\\\
+    n          \\\"conc_unit\\\": \\\"%\\\"\",\n        \"snapshot_sha256\": \"dba36a9762d10d9e4cb6c29d2363551ec36972f8d04f8075c43fb94a51750343\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1102\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1102\",\n        \"source_locator\"\
+    : \"Preparation after cooling\",\n        \"exact_source_quote\": \"add per liter\
+    \ the following solutions\",\n        \"snapshot_sha256\": \"ae2a790642297c1544b23a2d90cc7716311b69ed6f05373adcc4fd8a6b9db521\"\
+    ,\n        \"parsed_text_sha256\": \"5885f301309841e8463a5fba4f26099df7ea57380052c34069f75fa4fb81bd58\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:24:04.275291Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"dose_ml_per_L\": 6,\n    \
+    \  \"stage\": \"after cooling; separately autoclaved and stored under nitrogen\"\
+    \n    },\n    \"rationale\": \"Unlike the basal table, this receiving dose is\
+    \ explicitly per liter. Owner 6 ML_PER_L is supported but lacks attached claim\
+    \ evidence; target 6 G_PER_L must change.\"\n  },\n  {\n    \"quantity_id\": \"\
+    q9\",\n    \"component_or_context\": \"5% Na2S・9H2O solution stock percentage\"\
+    ,\n    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml\",\n\
+    \        \"field_path\": \"solutions[0].preferred_term\",\n        \"stored\"\
+    : \"5% Na2S・9H2O solution\",\n        \"decision\": \"evidence_only\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[0].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"5.0\",\n          \"unit\": \"PERCENT_W_V\"\
+    \n        },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM1176original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1176\",\n\
+    \        \"source_locator\": \"$.components[1].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"5% Na2S・9H2O solution\\\",\\n          \\\"volume\\\
+    \": 6,\\n          \\\"unit\\\": \\\"ml\\\",\\n          \\\"conc_value\\\": 5,\\\
+    n          \\\"conc_unit\\\": \\\"%\\\"\",\n        \"snapshot_sha256\": \"dba36a9762d10d9e4cb6c29d2363551ec36972f8d04f8075c43fb94a51750343\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"stock_percent\"\
+    : 5,\n      \"percentage_basis\": null,\n      \"source_hydrate_preserved\": true\n\
+    \    },\n    \"rationale\": \"The target preserves only the bare percentage label.\
+    \ Owner PERCENT_W_V and notes add an unprovided basis. Retain 5% without deriving\
+    \ w/v, stock mass per volume or a delivered mass.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q10\",\n    \"component_or_context\": \"5% L-Cysteine・HCl・H2O solution receiving\
+    \ dose\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"6\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"6.0\",\n          \"unit\": \"ML_PER_L\"\n       \
+    \ },\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM1176original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1176\",\n\
+    \        \"source_locator\": \"$.components[1].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"5% L-Cysteine・HCl・H2O solution\\\",\\n       \
+    \   \\\"volume\\\": 6,\\n          \\\"unit\\\": \\\"ml\\\",\\n          \\\"\
+    conc_value\\\": 5,\\n          \\\"conc_unit\\\": \\\"%\\\"\",\n        \"snapshot_sha256\"\
+    : \"dba36a9762d10d9e4cb6c29d2363551ec36972f8d04f8075c43fb94a51750343\"\n     \
+    \ },\n      {\n        \"source_key\": \"jcm1102\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1102\",\n        \"source_locator\"\
+    : \"Preparation after cooling\",\n        \"exact_source_quote\": \"add per liter\
+    \ the following solutions\",\n        \"snapshot_sha256\": \"ae2a790642297c1544b23a2d90cc7716311b69ed6f05373adcc4fd8a6b9db521\"\
+    ,\n        \"parsed_text_sha256\": \"5885f301309841e8463a5fba4f26099df7ea57380052c34069f75fa4fb81bd58\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:24:04.275291Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"dose_ml_per_L\": 6,\n    \
+    \  \"stage\": \"after cooling; separately autoclaved and stored under nitrogen\"\
+    \n    },\n    \"rationale\": \"Unlike the basal table, this receiving dose is\
+    \ explicitly per liter. Owner 6 ML_PER_L is supported but lacks attached claim\
+    \ evidence; target 6 G_PER_L must change.\"\n  },\n  {\n    \"quantity_id\": \"\
+    q11\",\n    \"component_or_context\": \"5% L-Cysteine・HCl・H2O solution stock percentage\"\
+    ,\n    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml\",\n\
+    \        \"field_path\": \"solutions[1].preferred_term\",\n        \"stored\"\
+    : \"5% L-Cysteine・HCl・H2O solution\",\n        \"decision\": \"evidence_only\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition[0].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"5.0\",\n          \"unit\": \"PERCENT_W_V\"\
+    \n        },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM1176original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1176\",\n\
+    \        \"source_locator\": \"$.components[1].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"5% L-Cysteine・HCl・H2O solution\\\",\\n       \
+    \   \\\"volume\\\": 6,\\n          \\\"unit\\\": \\\"ml\\\",\\n          \\\"\
+    conc_value\\\": 5,\\n          \\\"conc_unit\\\": \\\"%\\\"\",\n        \"snapshot_sha256\"\
+    : \"dba36a9762d10d9e4cb6c29d2363551ec36972f8d04f8075c43fb94a51750343\"\n     \
+    \ }\n    ],\n    \"proposed_source_representation\": {\n      \"stock_percent\"\
+    : 5,\n      \"percentage_basis\": null,\n      \"source_hydrate_preserved\": true\n\
+    \    },\n    \"rationale\": \"The target preserves only the bare percentage label.\
+    \ Owner PERCENT_W_V and notes add an unprovided basis. Retain 5% without deriving\
+    \ w/v, stock mass per volume or a delivered mass.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q12\",\n    \"component_or_context\": \"Base pH\",\n    \"decision\": \"add\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 7.0,\n        \"\
+    decision\": \"evidence_only\"\n      }\n    ],\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"jcm1102\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1102\"\
+    ,\n        \"source_locator\": \"Default header, basal preparation or explicit\
+    \ JCM 32399 branch as named\",\n        \"exact_source_quote\": \"adjust pH to\
+    \ 7.0\",\n        \"snapshot_sha256\": \"ae2a790642297c1544b23a2d90cc7716311b69ed6f05373adcc4fd8a6b9db521\"\
+    ,\n        \"parsed_text_sha256\": \"5885f301309841e8463a5fba4f26099df7ea57380052c34069f75fa4fb81bd58\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:24:04.275291Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"base_pH\": 7\n    },\n   \
+    \ \"rationale\": \"The generated preparation field is absent. Preserve supported\
+    \ owner information with claim-level evidence; the 10 ml aliquot is an optional\
+    \ source example missing from the owner, not a required scale or final volume.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q13\",\n    \"component_or_context\": \"Autoclave\
+    \ temperature\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml\"\
+    ,\n        \"field_path\": \"sterilization.temperature\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml\"\
+    ,\n        \"field_path\": \"sterilization.temperature\",\n        \"stored\"\
+    : {\n          \"value\": 121.0,\n          \"unit\": \"CELSIUS\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1102\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1102\",\n        \"source_locator\"\
+    : \"Default header, basal preparation or explicit JCM 32399 branch as named\"\
+    ,\n        \"exact_source_quote\": \"121°C\",\n        \"snapshot_sha256\": \"\
+    ae2a790642297c1544b23a2d90cc7716311b69ed6f05373adcc4fd8a6b9db521\",\n        \"\
+    parsed_text_sha256\": \"5885f301309841e8463a5fba4f26099df7ea57380052c34069f75fa4fb81bd58\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:24:04.275291Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"temperature_C\": 121\n   \
+    \ },\n    \"rationale\": \"The generated preparation field is absent. Preserve\
+    \ supported owner information with claim-level evidence; the 10 ml aliquot is\
+    \ an optional source example missing from the owner, not a required scale or final\
+    \ volume.\"\n  },\n  {\n    \"quantity_id\": \"q14\",\n    \"component_or_context\"\
+    : \"Autoclave duration\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml\"\
+    ,\n        \"field_path\": \"sterilization.duration\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml\"\
+    ,\n        \"field_path\": \"sterilization.duration\",\n        \"stored\": \"\
+    15 min\",\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1102\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1102\",\n        \"source_locator\"\
+    : \"Default header, basal preparation or explicit JCM 32399 branch as named\"\
+    ,\n        \"exact_source_quote\": \"15 min\",\n        \"snapshot_sha256\": \"\
+    ae2a790642297c1544b23a2d90cc7716311b69ed6f05373adcc4fd8a6b9db521\",\n        \"\
+    parsed_text_sha256\": \"5885f301309841e8463a5fba4f26099df7ea57380052c34069f75fa4fb81bd58\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:24:04.275291Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"duration_min\": 15\n    },\n\
+    \    \"rationale\": \"The generated preparation field is absent. Preserve supported\
+    \ owner information with claim-level evidence; the 10 ml aliquot is an optional\
+    \ source example missing from the owner, not a required scale or final volume.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q15\",\n    \"component_or_context\": \"Example\
+    \ vessel aliquot\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n   \
+    \   {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[3].description\",\n        \"stored\"\
+    : \"Distribute the medium in culture vessels under N2 and seal with butyl rubber\
+    \ stoppers.\",\n        \"decision\": \"add\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1102\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1102\",\n        \"source_locator\"\
+    : \"Default header, basal preparation or explicit JCM 32399 branch as named\"\
+    ,\n        \"exact_source_quote\": \"10 ml in Balch tubes\",\n        \"snapshot_sha256\"\
+    : \"ae2a790642297c1544b23a2d90cc7716311b69ed6f05373adcc4fd8a6b9db521\",\n    \
+    \    \"parsed_text_sha256\": \"5885f301309841e8463a5fba4f26099df7ea57380052c34069f75fa4fb81bd58\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:24:04.275291Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"example_aliquot_ml\": 10,\n\
+    \      \"vessel\": \"Balch tube\",\n      \"example_only\": true\n    },\n   \
+    \ \"rationale\": \"The generated preparation field is absent. Preserve supported\
+    \ owner information with claim-level evidence; the 10 ml aliquot is an optional\
+    \ source example missing from the owner, not a required scale or final volume.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q16\",\n    \"component_or_context\": \"Pyruvate\
+    \ branch preparation\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[6].description\",\n        \"stored\"\
+    : \"Supplement the JCM 32399 variant with 10 mM sodium pyruvate.\",\n        \"\
+    decision\": \"evidence_only\"\n      }\n    ],\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"jcm1102\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1102\"\
+    ,\n        \"source_locator\": \"Default header, basal preparation or explicit\
+    \ JCM 32399 branch as named\",\n        \"exact_source_quote\": \"10 mM sodium\
+    \ pyruvate\",\n        \"snapshot_sha256\": \"ae2a790642297c1544b23a2d90cc7716311b69ed6f05373adcc4fd8a6b9db521\"\
+    ,\n        \"parsed_text_sha256\": \"5885f301309841e8463a5fba4f26099df7ea57380052c34069f75fa4fb81bd58\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:24:04.275291Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"mM\": 10,\n      \"strain_context\"\
+    : \"JCM 32399\"\n    },\n    \"rationale\": \"The generated preparation field\
+    \ is absent. Preserve supported owner information with claim-level evidence; the\
+    \ 10 ml aliquot is an optional source example missing from the owner, not a required\
+    \ scale or final volume.\"\n  },\n  {\n    \"quantity_id\": \"q17\",\n    \"component_or_context\"\
+    : \"Reducer receiving-dose preparation\",\n    \"decision\": \"add\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Anaerobic_Natural_Seawater_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[5].description\",\n        \"stored\"\
+    : \"After cooling, aseptically and anaerobically add 6.0 ml/L each 5% L-Cysteine\
+    \ HCl H2O and 5% Na2S x 9H2O solutions autoclaved and stored under N2.\",\n  \
+    \      \"decision\": \"evidence_only\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1102\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1102\",\n        \"source_locator\"\
+    : \"Default header, basal preparation or explicit JCM 32399 branch as named\"\
+    ,\n        \"exact_source_quote\": \"add per liter the following solutions\",\n\
+    \        \"snapshot_sha256\": \"ae2a790642297c1544b23a2d90cc7716311b69ed6f05373adcc4fd8a6b9db521\"\
+    ,\n        \"parsed_text_sha256\": \"5885f301309841e8463a5fba4f26099df7ea57380052c34069f75fa4fb81bd58\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:24:04.275291Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"dose_ml_per_L_each\": 6,\n\
+    \      \"two_distinct_stocks\": true\n    },\n    \"rationale\": \"The generated\
+    \ preparation field is absent. Preserve supported owner information with claim-level\
+    \ evidence; the 10 ml aliquot is an optional source example missing from the owner,\
+    \ not a required scale or final volume.\"\n  },\n  {\n    \"quantity_id\": \"\
+    q18\",\n    \"component_or_context\": \"Owner pH prose\",\n    \"decision\": \"\
+    evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Adjust to pH 7.0.\",\n        \"decision\": \"evidence_only\"\n      }\n \
+    \   ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm1102\"\
+    ,\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1102\"\
+    ,\n        \"source_locator\": \"Basal preparation\",\n        \"exact_source_quote\"\
+    : \"adjust pH to 7.0\",\n        \"snapshot_sha256\": \"ae2a790642297c1544b23a2d90cc7716311b69ed6f05373adcc4fd8a6b9db521\"\
+    ,\n        \"parsed_text_sha256\": \"5885f301309841e8463a5fba4f26099df7ea57380052c34069f75fa4fb81bd58\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:24:04.275291Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"pH\": 7\n    },\n    \"rationale\"\
+    : \"Existing matching prose needs source evidence; do not replace with a generic\
+    \ growth optimum.\"\n  },\n  {\n    \"quantity_id\": \"q19\",\n    \"component_or_context\"\
+    : \"Owner autoclave prose\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[4].description\",\n        \"stored\"\
+    : \"Autoclave at 121 degrees C for 15 min.\",\n        \"decision\": \"evidence_only\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm1102\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1102\"\
+    ,\n        \"source_locator\": \"JCM default header\",\n        \"exact_source_quote\"\
+    : \"autoclaving at 121°C for 15 min.\",\n        \"snapshot_sha256\": \"ae2a790642297c1544b23a2d90cc7716311b69ed6f05373adcc4fd8a6b9db521\"\
+    ,\n        \"parsed_text_sha256\": \"5885f301309841e8463a5fba4f26099df7ea57380052c34069f75fa4fb81bd58\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:24:04.275291Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"temperature_C\": 121,\n  \
+    \    \"duration_min\": 15\n    },\n    \"rationale\": \"This default applies to\
+    \ the stated autoclaved stage and is already retained in the owner.\"\n  }\n]"
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: supported
+  summary: '6 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 4/7 primary
+    and 3/7 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Source forms are assessed separately.'
+  target_ids:
+  - CultureMech:007701
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi15377
+  - chebi17997
+  - chebi50144
+  - chebi76209
+  - chebi8806
+  - chebi91248
+  details: 'Instance coverage on a 0–100 percent scale, denominator 7: primary 57.14%;
+    secondary 42.86%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 22 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:007701
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: identity
+  area: identity
+  topic: Selected source variant and owner identity
+  outcome: supported
+  summary: CultureMech:007701 has the exact TOGO_M1176 bacterial owner, with source
+    accession JCM_M1102-2 and the JCM 32399 pyruvate branch. JCM 33129 omission of
+    indicator/reducers and JCM 33131 vitamin supplementation are different source
+    branches and are excluded. No taxonomy ID or new organism growth assertion is
+    proposed.
+  target_ids:
+  - CultureMech:007701
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - primary
+  - provider
+- assessment_id: forms
+  area: grounding
+  topic: Chemical forms and natural mixtures
+  outcome: supported
+  summary: The owner correctly retains explicit L-cysteine hydrochloride monohydrate
+    and sodium sulfide nonahydrate in separate stocks. Sodium pyruvate and neutral
+    resazurin terms match their source identities. Natural seawater, tryptone and
+    yeast extract are mixtures with unresolved composition, not missing pure-compound
+    identities to invent. All asserted current CHEBI-based secondary labels/keys match
+    the pinned metadata; no legacy secondary key is asserted.
+  target_ids:
+  - CultureMech:007701
+  evidence_ids:
+  - primary
+  - provider
+  - chebi91248
+  - chebi76209
+  - chebi50144
+  - chebi8806
+  - mim
+- assessment_id: preparation
+  area: completeness
+  topic: Stale target versus retained owner preparation
+  outcome: concern
+  summary: The owner retains pH 7, nitrogen preparation, sealing, the 121°C/15 min
+    JCM default, separately autoclaved reducer additions after cooling and the JCM
+    32399 pyruvate condition. These are absent from the generated target. Add the
+    source example of 10 ml in Balch tubes only as an example. Both reducer percentages
+    remain unqualified in the source; no inferred mass dose is justified.
+  target_ids:
+  - CultureMech:007701
+  evidence_ids:
+  - primary
+  - provider
+  - record
+  - owner-0
+  - quantity-inventory
+- assessment_id: classification
+  area: scope
+  topic: Complex natural medium and classification drift
+  outcome: supported
+  summary: COMPLEX/LIQUID agrees with natural seawater, tryptone and yeast extract.
+    Target UNDEFINED and owner SEMI_DEFINED differ; neither may be read as a chemically
+    defined formulation. Preserve explicit mixture uncertainty and apply a documented
+    composition policy during regeneration rather than inferring a phenotype or nutrient-defined
+    recipe from a score-repair label.
+  target_ids:
+  - CultureMech:007701
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+- assessment_id: provenance
+  area: provenance
+  topic: Repair evidence and generated freshness
+  outcome: concern
+  summary: Owner source fields and reference URLs identify the source, but no claim-level
+    amount excerpts are attached. The generated target still reflects earlier units
+    and loses the later variant/preparation repair. The dedicated current writer demonstrates
+    the remaining w/v and literal-/L assumptions; history alone is not a source validation.
+  target_ids:
+  - CultureMech:007701
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - history-metadata
+  - writer-0
+  - writer-1
+  - writer-2
+findings:
+- finding_id: f1
+  issue_key: culturemech.007701.stale-units-variant
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Generated units and pyruvate concentration remain stale
+  description: The target encodes 250 ml water, 750 ml seawater, 0.5 mg resazurin
+    and two 6 ml/L reducer doses with gram units, and pyruvate remains VARIABLE instead
+    of the selected 10 mM branch. The owner has repaired these dimensions and the
+    branch, although basal /L notes still overstate literal source wording.
+  target_ids:
+  - CultureMech:007701
+  field_paths:
+  - ingredients
+  - solutions
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - provider
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.007701.percent-basis-assumption
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Owner stock percentages assume an unstated w/v basis
+  description: Both owner reducer compositions use 5 PERCENT_W_V, and their notes
+    explicitly derive w/v from the stock label. JCM and TOGO give only 5%. The target
+    preserves bare names but has no composition.
+  target_ids:
+  - CultureMech:007701
+  field_paths:
+  - solutions[0].composition
+  - solutions[1].composition
+  evidence_ids:
+  - primary
+  - provider
+  - quantity-inventory
+  - writer-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.007701.preparation-provenance-drift
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generated preparation omits the maintained source branch
+  description: The owner retains source pH, sterilization and staged nitrogen/reducer
+    handling plus the pyruvate condition, but the target omits all preparation and
+    sterilization fields. Source URLs alone do not attach quantity evidence.
+  target_ids:
+  - CultureMech:007701
+  field_paths:
+  - preparation_steps
+  - sterilization
+  - ph_value
+  - notes
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Retain exact source batch and per-liter distinctions, attach evidence
+    and preserve the JCM 32399 condition. Correct remaining owner basis assertions
+    before authorized regeneration; do not manually repair the generated file.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:007701
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Retain the literal 5% label with unknown basis unless authoritative
+    source evidence establishes w/v. Remove unsupported basis claims in the maintained
+    stock representations and update the writer if separately authorized; preserve
+    hydrates and the explicit 6 ml/L receiving doses.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:007701
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Preserve and evidence supported owner preparation, qualify the optional
+    vessel example and basal amount basis, then regenerate through the established
+    owner pipeline. Exclude the other source strain branches and append a clarification
+    event without altering prior history.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:007701
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1176_Anaerobic_Natural_Seawater_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Optional MediaDive J1102 attempt is unavailable; the exact current JCM primary and
+  TOGO variant are available, so this does not require partial completion.
+- Optional MediaDive J1102 attempt is unavailable; the exact current JCM primary and
+  TOGO variant are available, so this does not require partial completion.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-036
+- generated-medium
+```

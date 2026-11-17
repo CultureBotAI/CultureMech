@@ -1,0 +1,5545 @@
+# Source and formulation review: alkaliphilic_sulphur_respiring_strains_medium (CultureMech:009037)
+
+- Review: 20261021T194803Z-culturemech-009037-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T19:39:55Z
+- Finished UTC: 2026-10-21T19:48:03Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+Exact DSMZ 925 and TOGO M2459 retain a mineral base, a separately sterilized trace stock and selected DSM 13531 KSCN growth additions. Local records flatten stocks, turn nine milligram amounts into g/L numerals and misrepresent liquid additions. The linked solution 6129 is a different formula with five derivative-only historical claims. Separate primary strain branches and the unavailable historical raw response keep source scope explicit.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 352; batch 036 item 2 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding thirty-five task batches contain 350 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 353 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:009037 | data/merge_yaml/merged/Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml | generated | alkaliphilic_sulphur_respiring_strains_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:009037 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:009037 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-036/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch036/352/strict.tsv |
+| validate-terms | passed | True | CultureMech:009037 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:009037 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:009037 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: solution6129 | unavailable | False | CultureMech:009037 | Exact current solution 6129 access returned HTTP 503; original failed attempts are retained and do not prove source nonexistence. |
+| Exact source content access: solution6129_retry | unavailable | False | CultureMech:009037 | Exact current solution 6129 access returned HTTP 503; original failed attempts are retained and do not prove source nonexistence. |
+| Required historical solution 6129 raw correspondence | unavailable | True | CultureMech:009037 | Five unique existing claims match decoded derivative report objects only. The exact cited historical raw response remains unavailable within the documented bounded search. |
+| Exact source content access: mediadive925api | unavailable | False | CultureMech:009037 | Current exact MediaDive 925 API returned 503; the full current DSMZ primary is available, so this optional provider failure does not make primary amounts unavailable. |
+| Exact source content access: mediadive925api_retry | unavailable | False | CultureMech:009037 | The separately preserved exact API retry also returned 503; it does not supersede or authenticate any successful historical payload. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:009037.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: concern. Targets: CultureMech:009037.
+
+16 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 16/17 primary and 16/17 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Exact supplied-form mismatch is addressed separately; valid IDs and labels do not establish correct source grounding.
+
+Instance coverage on a 0–100 percent scale, denominator 17: primary 94.12%; secondary 94.12%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:009037.
+
+26 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Source branch and maintained ownership
+
+identity: supported. Targets: CultureMech:009037.
+
+The maintained TOGO M2459 owner and generated CultureMech:009037 share their exact identity. TOGO selects the DSM 13531 KSCN growth branch from a broader DSMZ 925 primary. The primary’s other strains and electron-donor/acceptor conditions remain distinct source context, not additional ingredients of this selected formulation.
+
+### Mineral, trace and KSCN stages
+
+consistency: concern. Targets: CultureMech:009037.
+
+Nine printed trace amounts in mg were retained as G_PER_L numerals, including literal EDTA 5 mg and FeSO4·7H2O 2 mg; none is silently replaced by a customary g-scale formula. Trace and KSCN water were merged with basal water; the 2 mL/L trace and 1 mL/L magnesium doses became mass rates. KSCN 194 g/L stock is flattened beside its selected 15 mM working condition.
+
+### Source-specific salt forms
+
+grounding: concern. Targets: CultureMech:009037.
+
+Cobalt chloride hexahydrate CHEBI:53503 is correct in this record, unlike anhydrous cobalt assignments elsewhere. Nickel chloride hexahydrate is incorrectly assigned anhydrous CHEBI:34887 in both primary and secondary slots. The source’s other explicit hydrates match their asserted identities. EDTA hydration is not printed and is not inferred.
+
+### Distinct cycles and selected conditions
+
+completeness: concern. Targets: CultureMech:009037.
+
+Both local layers omit mineral-base 110 °C/20 min closed-vessel sterilization and approximate post-cycle pH 10, trace-stock pH 3 with unquantified HCl and separate 120 °C/20 min cycle, and post-sterilization additions. The selected DSM 13531 branch specifies up to 15 mM KSCN, 30 °C, static conical flasks with a 1/10 liquid-to-air ratio and about one week. Alternate shaking/gas regimes remain separate primary branches.
+
+### Defined inorganic recipe and derived metal label
+
+scope: concern. Targets: CultureMech:009037.
+
+The named mineral/KSCN formulation contains specified chemicals; COMPLEX/UNDEFINED lacks source support, while LIQUID is supported. No source-defined complex material is listed. Reassess high_metal only after repairing mg units and stock scope, using both inspected writers and a current corpus distribution; this review does not simply flip the Boolean. Strain mentions are source-specific context, not newly asserted taxonomy or experimentally verified growth. No KG match or DOI/PMID is asserted.
+
+### Historical stock claims and claim-level evidence
+
+evidence: unknown. Targets: CultureMech:009037.
+
+Main layers have no attached amount support. Five separate solution 6129 claims match decoded local reports only; current requests fail and cited historical raw remains unrecovered. The local five-solute formula differs from the required trace stock. Its two timezone-naive history events and placeholder remain intact as historical/unresolved data; no verified amount decision is assigned.
+
+### Stale merge and append-only repair
+
+provenance: supported. Targets: CultureMech:009037.
+
+The generated 3000 G_PER_L water versus owner 1000 G_PER_L reflects a later duplicate-collapse repair in the owner, but neither is a valid representation of the three separate water stages. Correct the maintained source representation before regeneration. Preserve all historical events and source access times, appending a later authorized clarification rather than rewriting them.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:009037.
+
+52 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "quantity_id": "q1",
+    "ingredient_or_context": "Distilled water",
+    "field_path": "ingredients[0].concentration",
+    "local": {
+      "value": "3000.0",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 1000,
+    "source_unit": "ml",
+    "source_stage": "Mineral base batch",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2459original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459",
+        "source_locator": "$.components[0].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1000,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "3000.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "1000 mL water belongs to the mineral base, distinct from trace-stock and KSCN-stock water. Generated 3000 G_PER_L and maintained 1000 G_PER_L collapse stages and turn volume into mass; duplicate repair alone is insufficient."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1000.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "1000 mL water belongs to the mineral base, distinct from trace-stock and KSCN-stock water. Generated 3000 G_PER_L and maintained 1000 G_PER_L collapse stages and turn volume into mass; duplicate repair alone is insufficient."
+      }
+    ],
+    "arithmetic_and_scope": "1000 mL water belongs to the mineral base, distinct from trace-stock and KSCN-stock water. Generated 3000 G_PER_L and maintained 1000 G_PER_L collapse stages and turn volume into mass; duplicate repair alone is insufficient."
+  },
+  {
+    "quantity_id": "q2",
+    "ingredient_or_context": "NaCl",
+    "field_path": "ingredients[1].concentration",
+    "local": {
+      "value": "5",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 5,
+    "source_unit": "g",
+    "source_stage": "Mineral base batch",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2459original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459",
+        "source_locator": "$.components[0].items[1]",
+        "exact_source_quote": "\"component_name\": \"NaCl\",\n          \"volume\": 5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Preserve this mineral-base batch mass. Water 1000 mL is an addition, not a measured final medium volume after stocks; no final g/L denominator is independently established."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Preserve this mineral-base batch mass. Water 1000 mL is an addition, not a measured final medium volume after stocks; no final g/L denominator is independently established."
+      }
+    ],
+    "arithmetic_and_scope": "Preserve this mineral-base batch mass. Water 1000 mL is an addition, not a measured final medium volume after stocks; no final g/L denominator is independently established."
+  },
+  {
+    "quantity_id": "q3",
+    "ingredient_or_context": "K2HPO4",
+    "field_path": "ingredients[2].concentration",
+    "local": {
+      "value": "1",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 1,
+    "source_unit": "g",
+    "source_stage": "Mineral base batch",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2459original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459",
+        "source_locator": "$.components[0].items[2]",
+        "exact_source_quote": "\"component_name\": \"K2HPO4\",\n          \"volume\": 1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Preserve this mineral-base batch mass. Water 1000 mL is an addition, not a measured final medium volume after stocks; no final g/L denominator is independently established."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Preserve this mineral-base batch mass. Water 1000 mL is an addition, not a measured final medium volume after stocks; no final g/L denominator is independently established."
+      }
+    ],
+    "arithmetic_and_scope": "Preserve this mineral-base batch mass. Water 1000 mL is an addition, not a measured final medium volume after stocks; no final g/L denominator is independently established."
+  },
+  {
+    "quantity_id": "q4",
+    "ingredient_or_context": "NaHCO3",
+    "field_path": "ingredients[3].concentration",
+    "local": {
+      "value": "10",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 10,
+    "source_unit": "g",
+    "source_stage": "Mineral base batch",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2459original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459",
+        "source_locator": "$.components[0].items[3]",
+        "exact_source_quote": "\"component_name\": \"NaHCO3\",\n          \"volume\": 10,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Preserve this mineral-base batch mass. Water 1000 mL is an addition, not a measured final medium volume after stocks; no final g/L denominator is independently established."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Preserve this mineral-base batch mass. Water 1000 mL is an addition, not a measured final medium volume after stocks; no final g/L denominator is independently established."
+      }
+    ],
+    "arithmetic_and_scope": "Preserve this mineral-base batch mass. Water 1000 mL is an addition, not a measured final medium volume after stocks; no final g/L denominator is independently established."
+  },
+  {
+    "quantity_id": "q5",
+    "ingredient_or_context": "Na2CO3",
+    "field_path": "ingredients[4].concentration",
+    "local": {
+      "value": "20",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 20,
+    "source_unit": "g",
+    "source_stage": "Mineral base batch",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2459original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459",
+        "source_locator": "$.components[0].items[4]",
+        "exact_source_quote": "\"component_name\": \"Na2CO3\",\n          \"volume\": 20,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Preserve this mineral-base batch mass. Water 1000 mL is an addition, not a measured final medium volume after stocks; no final g/L denominator is independently established."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Preserve this mineral-base batch mass. Water 1000 mL is an addition, not a measured final medium volume after stocks; no final g/L denominator is independently established."
+      }
+    ],
+    "arithmetic_and_scope": "Preserve this mineral-base batch mass. Water 1000 mL is an addition, not a measured final medium volume after stocks; no final g/L denominator is independently established."
+  },
+  {
+    "quantity_id": "q6",
+    "ingredient_or_context": "Distilled water",
+    "field_path": "ingredients[0].concentration",
+    "local": {
+      "value": "3000.0",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 1000,
+    "source_unit": "ml",
+    "source_stage": "Separate trace stock before acid adjustment and sterilization",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2459original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459",
+        "source_locator": "$.components[1].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1000,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "3000.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Trace-stock 1000 mL water is separate from mineral and KSCN water. Preserve the stock preparation volume without claiming an independently measured final volume."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1000.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Trace-stock 1000 mL water is separate from mineral and KSCN water. Preserve the stock preparation volume without claiming an independently measured final volume."
+      }
+    ],
+    "arithmetic_and_scope": "Trace-stock 1000 mL water is separate from mineral and KSCN water. Preserve the stock preparation volume without claiming an independently measured final volume."
+  },
+  {
+    "quantity_id": "q7",
+    "ingredient_or_context": "Na2MoO4 x 2 H2O",
+    "field_path": "ingredients[5].concentration",
+    "local": {
+      "value": "30",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 30,
+    "source_unit": "mg",
+    "source_stage": "Separate trace stock before acid adjustment and sterilization",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2459original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459",
+        "source_locator": "$.components[1].items[1]",
+        "exact_source_quote": "\"component_name\": \"Na2MoO4 x 2 H2O\",\n          \"volume\": 30,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is a separately prepared trace-stock amount. The source prints milligrams; divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not establish measured final stock volume."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is a separately prepared trace-stock amount. The source prints milligrams; divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not establish measured final stock volume."
+      }
+    ],
+    "arithmetic_and_scope": "This is a separately prepared trace-stock amount. The source prints milligrams; divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not establish measured final stock volume."
+  },
+  {
+    "quantity_id": "q8",
+    "ingredient_or_context": "H3BO3",
+    "field_path": "ingredients[6].concentration",
+    "local": {
+      "value": "300",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 300,
+    "source_unit": "mg",
+    "source_stage": "Separate trace stock before acid adjustment and sterilization",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2459original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459",
+        "source_locator": "$.components[1].items[2]",
+        "exact_source_quote": "\"component_name\": \"H3BO3\",\n          \"volume\": 300,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "300",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is a separately prepared trace-stock amount. The source prints milligrams; divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not establish measured final stock volume."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "300",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is a separately prepared trace-stock amount. The source prints milligrams; divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not establish measured final stock volume."
+      }
+    ],
+    "arithmetic_and_scope": "This is a separately prepared trace-stock amount. The source prints milligrams; divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not establish measured final stock volume."
+  },
+  {
+    "quantity_id": "q9",
+    "ingredient_or_context": "FeSO4 x 7 H2O",
+    "field_path": "ingredients[7].concentration",
+    "local": {
+      "value": "2",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 2,
+    "source_unit": "mg",
+    "source_stage": "Separate trace stock before acid adjustment and sterilization",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2459original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459",
+        "source_locator": "$.components[1].items[3]",
+        "exact_source_quote": "\"component_name\": \"FeSO4 x 7 H2O\",\n          \"volume\": 2,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is a separately prepared trace-stock amount. The source prints milligrams; divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not establish measured final stock volume."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is a separately prepared trace-stock amount. The source prints milligrams; divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not establish measured final stock volume."
+      }
+    ],
+    "arithmetic_and_scope": "This is a separately prepared trace-stock amount. The source prints milligrams; divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not establish measured final stock volume."
+  },
+  {
+    "quantity_id": "q10",
+    "ingredient_or_context": "MnCl2 x 4 H2O",
+    "field_path": "ingredients[8].concentration",
+    "local": {
+      "value": "30",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 30,
+    "source_unit": "mg",
+    "source_stage": "Separate trace stock before acid adjustment and sterilization",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2459original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459",
+        "source_locator": "$.components[1].items[4]",
+        "exact_source_quote": "\"component_name\": \"MnCl2 x 4 H2O\",\n          \"volume\": 30,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is a separately prepared trace-stock amount. The source prints milligrams; divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not establish measured final stock volume."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is a separately prepared trace-stock amount. The source prints milligrams; divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not establish measured final stock volume."
+      }
+    ],
+    "arithmetic_and_scope": "This is a separately prepared trace-stock amount. The source prints milligrams; divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not establish measured final stock volume."
+  },
+  {
+    "quantity_id": "q11",
+    "ingredient_or_context": "CoCl2 x 6 H2O",
+    "field_path": "ingredients[9].concentration",
+    "local": {
+      "value": "200",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 200,
+    "source_unit": "mg",
+    "source_stage": "Separate trace stock before acid adjustment and sterilization",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2459original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459",
+        "source_locator": "$.components[1].items[5]",
+        "exact_source_quote": "\"component_name\": \"CoCl2 x 6 H2O\",\n          \"volume\": 200,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "200",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is a separately prepared trace-stock amount. The source prints milligrams; divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not establish measured final stock volume."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "200",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is a separately prepared trace-stock amount. The source prints milligrams; divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not establish measured final stock volume."
+      }
+    ],
+    "arithmetic_and_scope": "This is a separately prepared trace-stock amount. The source prints milligrams; divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not establish measured final stock volume."
+  },
+  {
+    "quantity_id": "q12",
+    "ingredient_or_context": "NiCl2 x 6 H2O",
+    "field_path": "ingredients[10].concentration",
+    "local": {
+      "value": "20",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 20,
+    "source_unit": "mg",
+    "source_stage": "Separate trace stock before acid adjustment and sterilization",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2459original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459",
+        "source_locator": "$.components[1].items[6]",
+        "exact_source_quote": "\"component_name\": \"NiCl2 x 6 H2O\",\n          \"volume\": 20,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is a separately prepared trace-stock amount. The source prints milligrams; divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not establish measured final stock volume."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is a separately prepared trace-stock amount. The source prints milligrams; divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not establish measured final stock volume."
+      }
+    ],
+    "arithmetic_and_scope": "This is a separately prepared trace-stock amount. The source prints milligrams; divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not establish measured final stock volume."
+  },
+  {
+    "quantity_id": "q13",
+    "ingredient_or_context": "ZnSO4 x 7 H2O",
+    "field_path": "ingredients[11].concentration",
+    "local": {
+      "value": "100",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 100,
+    "source_unit": "mg",
+    "source_stage": "Separate trace stock before acid adjustment and sterilization",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2459original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459",
+        "source_locator": "$.components[1].items[7]",
+        "exact_source_quote": "\"component_name\": \"ZnSO4 x 7 H2O\",\n          \"volume\": 100,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "100",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is a separately prepared trace-stock amount. The source prints milligrams; divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not establish measured final stock volume."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "100",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is a separately prepared trace-stock amount. The source prints milligrams; divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not establish measured final stock volume."
+      }
+    ],
+    "arithmetic_and_scope": "This is a separately prepared trace-stock amount. The source prints milligrams; divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not establish measured final stock volume."
+  },
+  {
+    "quantity_id": "q14",
+    "ingredient_or_context": "CuCl2 x 2 H2O",
+    "field_path": "ingredients[12].concentration",
+    "local": {
+      "value": "10",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 10,
+    "source_unit": "mg",
+    "source_stage": "Separate trace stock before acid adjustment and sterilization",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2459original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459",
+        "source_locator": "$.components[1].items[8]",
+        "exact_source_quote": "\"component_name\": \"CuCl2 x 2 H2O\",\n          \"volume\": 10,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is a separately prepared trace-stock amount. The source prints milligrams; divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not establish measured final stock volume."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is a separately prepared trace-stock amount. The source prints milligrams; divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not establish measured final stock volume."
+      }
+    ],
+    "arithmetic_and_scope": "This is a separately prepared trace-stock amount. The source prints milligrams; divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not establish measured final stock volume."
+  },
+  {
+    "quantity_id": "q15",
+    "ingredient_or_context": "EDTA",
+    "field_path": "ingredients[13].concentration",
+    "local": {
+      "value": "5",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 5,
+    "source_unit": "mg",
+    "source_stage": "Separate trace stock before acid adjustment and sterilization",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2459original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459",
+        "source_locator": "$.components[1].items[9]",
+        "exact_source_quote": "\"component_name\": \"EDTA\",\n          \"volume\": 5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is a separately prepared trace-stock amount. The source prints milligrams; divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not establish measured final stock volume."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This is a separately prepared trace-stock amount. The source prints milligrams; divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not establish measured final stock volume."
+      }
+    ],
+    "arithmetic_and_scope": "This is a separately prepared trace-stock amount. The source prints milligrams; divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not establish measured final stock volume."
+  },
+  {
+    "quantity_id": "q16",
+    "ingredient_or_context": "HCl",
+    "field_path": "ingredients[14].concentration",
+    "local": {
+      "value": "variable",
+      "unit": "VARIABLE"
+    },
+    "source_amount": null,
+    "source_unit": null,
+    "source_stage": "Separate trace stock before acid adjustment and sterilization",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2459original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459",
+        "source_locator": "$.components[1].items[10]",
+        "exact_source_quote": "\"component_name\": \"HCl\"",
+        "snapshot_sha256": "386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "correct",
+        "rationale": "HCl is added only as needed to trace-stock pH 3. VARIABLE correctly avoids a numerical dose, but its present main-ingredient placement is wrong; restore stock scope and do not invent an amount."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "correct",
+        "rationale": "HCl is added only as needed to trace-stock pH 3. VARIABLE correctly avoids a numerical dose, but its present main-ingredient placement is wrong; restore stock scope and do not invent an amount."
+      }
+    ],
+    "arithmetic_and_scope": "HCl is added only as needed to trace-stock pH 3. VARIABLE correctly avoids a numerical dose, but its present main-ingredient placement is wrong; restore stock scope and do not invent an amount."
+  },
+  {
+    "quantity_id": "q17",
+    "ingredient_or_context": "MgCl2 x 6 H2O (200.0 g/l)",
+    "field_path": "ingredients[15].concentration",
+    "local": {
+      "value": "1",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 1,
+    "source_unit": "ml/l",
+    "source_stage": "Post-sterilization magnesium stock addition",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2459original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459",
+        "source_locator": "$.components[2].items[0]",
+        "exact_source_quote": "\"component_name\": \"MgCl2 x 6 H2O (200.0 g/l)\",\n          \"volume\": 1,\n          \"unit\": \"ml/l\"",
+        "snapshot_sha256": "386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Source explicitly gives 1 mL/L of a 200 g/L magnesium chloride hexahydrate stock, not 1 g/L reagent. The stated dose would deliver 0.2 g per stated litre basis; this does not establish the measured final volume of the entire recipe."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Source explicitly gives 1 mL/L of a 200 g/L magnesium chloride hexahydrate stock, not 1 g/L reagent. The stated dose would deliver 0.2 g per stated litre basis; this does not establish the measured final volume of the entire recipe."
+      }
+    ],
+    "arithmetic_and_scope": "Source explicitly gives 1 mL/L of a 200 g/L magnesium chloride hexahydrate stock, not 1 g/L reagent. The stated dose would deliver 0.2 g per stated litre basis; this does not establish the measured final volume of the entire recipe."
+  },
+  {
+    "quantity_id": "q18",
+    "ingredient_or_context": "Trace elements solution",
+    "field_path": "solutions[0].concentration",
+    "local": {
+      "value": "2",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 2,
+    "source_unit": "ml/l",
+    "source_stage": "Post-sterilization trace-stock addition",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2459original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459",
+        "source_locator": "$.components[2].items[1]",
+        "exact_source_quote": "\"component_name\": \"Trace elements solution\",\n          \"volume\": 2,\n          \"unit\": \"ml/l\"",
+        "snapshot_sha256": "386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Source gives 2 mL/L of its exact nine-solute trace stock. Local 2 G_PER_L and solution 6129 are unsupported; that other five-solute stock has different compounds and rates."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Source gives 2 mL/L of its exact nine-solute trace stock. Local 2 G_PER_L and solution 6129 are unsupported; that other five-solute stock has different compounds and rates."
+      }
+    ],
+    "arithmetic_and_scope": "Source gives 2 mL/L of its exact nine-solute trace stock. Local 2 G_PER_L and solution 6129 are unsupported; that other five-solute stock has different compounds and rates."
+  },
+  {
+    "quantity_id": "q19",
+    "ingredient_or_context": "KSCN solution (2 M -194 g/l)",
+    "field_path": "solutions[1].concentration",
+    "local": {
+      "value": "15",
+      "unit": "MILLIMOLAR"
+    },
+    "source_amount": 15,
+    "source_unit": "mM",
+    "source_stage": "DSM 13531 / ARh1 selected growth condition",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2459original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459",
+        "source_locator": "$.components[3].items[0]",
+        "exact_source_quote": "\"component_name\": \"KSCN solution (2 M -194 g/l)\",\n          \"volume\": 15,\n          \"unit\": \"mM\"",
+        "snapshot_sha256": "386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[1].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "MILLIMOLAR"
+        },
+        "decision": "correct",
+        "rationale": "15 mM is a working KSCN concentration (up to 15 mM in primary prose), not the concentration or volume dose of the 2 M stock. Preserve the numerical working limit with strain-specific scope, and represent the stock separately."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "solutions[1].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "MILLIMOLAR"
+        },
+        "decision": "correct",
+        "rationale": "15 mM is a working KSCN concentration (up to 15 mM in primary prose), not the concentration or volume dose of the 2 M stock. Preserve the numerical working limit with strain-specific scope, and represent the stock separately."
+      }
+    ],
+    "arithmetic_and_scope": "15 mM is a working KSCN concentration (up to 15 mM in primary prose), not the concentration or volume dose of the 2 M stock. Preserve the numerical working limit with strain-specific scope, and represent the stock separately."
+  },
+  {
+    "quantity_id": "q20",
+    "ingredient_or_context": "Distilled water",
+    "field_path": "ingredients[0].concentration",
+    "local": {
+      "value": "3000.0",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 1000,
+    "source_unit": "ml",
+    "source_stage": "Separate KSCN stock preparation",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2459original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459",
+        "source_locator": "$.components[4].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1000,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "3000.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "1000 mL water belongs to the separately prepared KSCN stock. It is not another main water mass or a contribution to a 3000 g/L total."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1000.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "1000 mL water belongs to the separately prepared KSCN stock. It is not another main water mass or a contribution to a 3000 g/L total."
+      }
+    ],
+    "arithmetic_and_scope": "1000 mL water belongs to the separately prepared KSCN stock. It is not another main water mass or a contribution to a 3000 g/L total."
+  },
+  {
+    "quantity_id": "q21",
+    "ingredient_or_context": "KSCN",
+    "field_path": "ingredients[16].concentration",
+    "local": {
+      "value": "194",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 194,
+    "source_unit": "g",
+    "source_stage": "KSCN stock, source declares 2 M / 194 g/L",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM2459original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459",
+        "source_locator": "$.components[4].items[1]",
+        "exact_source_quote": "\"component_name\": \"KSCN\",\n          \"volume\": 194,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "194",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "194 g is the stock batch mass and 194 g/L is the separately stated stock strength. It is not the main working concentration, which the selected branch bounds at 15 mM. Do not retain an undiluted main ingredient."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "194",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "194 g is the stock batch mass and 194 g/L is the separately stated stock strength. It is not the main working concentration, which the selected branch bounds at 15 mM. Do not retain an undiluted main ingredient."
+      }
+    ],
+    "arithmetic_and_scope": "194 g is the stock batch mass and 194 g/L is the separately stated stock strength. It is not the main working concentration, which the selected branch bounds at 15 mM. Do not retain an undiluted main ingredient."
+  },
+  {
+    "quantity_id": "q22",
+    "ingredient_or_context": "Mineral-base sterilization",
+    "field_path": "preparation_steps",
+    "local": null,
+    "source_amount": "110; 20",
+    "source_unit": "°C; min",
+    "source_stage": "Mineral base in closed vessel",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "togoM2459original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459",
+        "source_locator": "$.comments[2]",
+        "exact_source_quote": "110°C 20 min",
+        "snapshot_sha256": "386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Add the exact base cycle and closed-vessel scope, not the trace-stock cycle."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Add the exact base cycle and closed-vessel scope, not the trace-stock cycle."
+      }
+    ],
+    "arithmetic_and_scope": "Add the exact base cycle and closed-vessel scope, not the trace-stock cycle."
+  },
+  {
+    "quantity_id": "q23",
+    "ingredient_or_context": "Mineral-base pH",
+    "field_path": "preparation_steps",
+    "local": null,
+    "source_amount": "about 10",
+    "source_unit": "pH",
+    "source_stage": "After base sterilization",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "togoM2459original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459",
+        "source_locator": "$.comments[2]",
+        "exact_source_quote": "pH after sterilization will about 10",
+        "snapshot_sha256": "386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Approximate post-sterilization pH, not a precisely adjusted final value."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Approximate post-sterilization pH, not a precisely adjusted final value."
+      }
+    ],
+    "arithmetic_and_scope": "Approximate post-sterilization pH, not a precisely adjusted final value."
+  },
+  {
+    "quantity_id": "q24",
+    "ingredient_or_context": "Trace-stock final pH",
+    "field_path": "preparation_steps",
+    "local": null,
+    "source_amount": "3",
+    "source_unit": "pH",
+    "source_stage": "Trace stock acid adjustment",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "togoM2459original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459",
+        "source_locator": "$.comments[5]",
+        "exact_source_quote": "Final pH should be 3, add HCl if needed",
+        "snapshot_sha256": "386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Only the stock is acidified to pH 3; the HCl dose is unquantified."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Only the stock is acidified to pH 3; the HCl dose is unquantified."
+      }
+    ],
+    "arithmetic_and_scope": "Only the stock is acidified to pH 3; the HCl dose is unquantified."
+  },
+  {
+    "quantity_id": "q25",
+    "ingredient_or_context": "Trace-stock sterilization",
+    "field_path": "preparation_steps",
+    "local": null,
+    "source_amount": "120; 20",
+    "source_unit": "°C; min",
+    "source_stage": "Trace stock only",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "togoM2459original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459",
+        "source_locator": "$.comments[5]",
+        "exact_source_quote": "120°C 20 min",
+        "snapshot_sha256": "386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Preserve this separate stock cycle and the subsequent aseptic stock additions."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Preserve this separate stock cycle and the subsequent aseptic stock additions."
+      }
+    ],
+    "arithmetic_and_scope": "Preserve this separate stock cycle and the subsequent aseptic stock additions."
+  },
+  {
+    "quantity_id": "q26",
+    "ingredient_or_context": "Selected incubation temperature",
+    "field_path": "preparation_steps",
+    "local": null,
+    "source_amount": "30",
+    "source_unit": "°C",
+    "source_stage": "DSM 13531 / ARh1 branch",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "togoM2459original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459",
+        "source_locator": "$.comments[10]",
+        "exact_source_quote": "incubation -30°C",
+        "snapshot_sha256": "386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Add only within this selected source branch, not all strains or stocks."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Add only within this selected source branch, not all strains or stocks."
+      }
+    ],
+    "arithmetic_and_scope": "Add only within this selected source branch, not all strains or stocks."
+  },
+  {
+    "quantity_id": "q27",
+    "ingredient_or_context": "Selected vessel ratio",
+    "field_path": "preparation_steps",
+    "local": null,
+    "source_amount": "1/10",
+    "source_unit": "liquid/air ratio",
+    "source_stage": "DSM 13531 / ARh1 branch",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "togoM2459original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459",
+        "source_locator": "$.comments[10]",
+        "exact_source_quote": "1/10 liquid to air ratio",
+        "snapshot_sha256": "386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Preserve the literal liquid-to-air ratio and static conical-flask context; it is not a gas composition."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Preserve the literal liquid-to-air ratio and static conical-flask context; it is not a gas composition."
+      }
+    ],
+    "arithmetic_and_scope": "Preserve the literal liquid-to-air ratio and static conical-flask context; it is not a gas composition."
+  },
+  {
+    "quantity_id": "q28",
+    "ingredient_or_context": "Selected growth duration",
+    "field_path": "preparation_steps",
+    "local": null,
+    "source_amount": "about 1",
+    "source_unit": "week",
+    "source_stage": "DSM 13531 / ARh1 branch",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "togoM2459original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459",
+        "source_locator": "$.comments[10]",
+        "exact_source_quote": "about 1 week",
+        "snapshot_sha256": "386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Approximate source growth time, not a measured result from this review."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Approximate source growth time, not a measured result from this review."
+      }
+    ],
+    "arithmetic_and_scope": "Approximate source growth time, not a measured result from this review."
+  },
+  {
+    "quantity_id": "q29",
+    "ingredient_or_context": "Thiosulfate sterile stock",
+    "field_path": "solutions",
+    "local": [
+      {
+        "preferred_term": "Trace elements solution",
+        "term": {
+          "id": "mediadive.solution:6129",
+          "label": "Trace elements solution"
+        },
+        "concentration": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "notes": "See mediadive_6129_Trace_elements_solution.yaml for composition",
+        "name": "Unknown solution"
+      },
+      {
+        "preferred_term": "KSCN solution (2 M -194 g/l)",
+        "composition": [],
+        "concentration": {
+          "value": "15",
+          "unit": "MILLIMOLAR"
+        },
+        "name": "Unknown solution"
+      }
+    ],
+    "source_amount": "2; 496",
+    "source_unit": "M; g/L",
+    "source_stage": "Primary stock definition",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "dsmz925",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf",
+        "source_locator": "PDF page 1 sterile stocks or page 2 explicitly named Growth branch: Primary stock definition",
+        "exact_source_quote": "Sodium thiosulfate pentahydrate (2 M - 496 g/l)",
+        "snapshot_sha256": "7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb",
+        "parsed_text_sha256": "127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": [
+          {
+            "preferred_term": "Trace elements solution",
+            "term": {
+              "id": "mediadive.solution:6129",
+              "label": "Trace elements solution"
+            },
+            "concentration": {
+              "value": "2",
+              "unit": "G_PER_L"
+            },
+            "notes": "See mediadive_6129_Trace_elements_solution.yaml for composition",
+            "name": "Unknown solution"
+          },
+          {
+            "preferred_term": "KSCN solution (2 M -194 g/l)",
+            "composition": [],
+            "concentration": {
+              "value": "15",
+              "unit": "MILLIMOLAR"
+            },
+            "name": "Unknown solution"
+          }
+        ],
+        "decision": "add",
+        "rationale": "Stock-only rates; no dose is assigned to the selected KSCN branch."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "solutions",
+        "stored": [
+          {
+            "preferred_term": "Trace elements solution",
+            "term": {
+              "id": "mediadive.solution:6129",
+              "label": "Trace elements solution"
+            },
+            "concentration": {
+              "value": "2",
+              "unit": "G_PER_L"
+            },
+            "notes": "See mediadive_6129_Trace_elements_solution.yaml for composition",
+            "name": "Unknown solution"
+          },
+          {
+            "preferred_term": "KSCN solution (2 M -194 g/l)",
+            "composition": [],
+            "concentration": {
+              "value": "15",
+              "unit": "MILLIMOLAR"
+            },
+            "name": "Unknown solution"
+          }
+        ],
+        "decision": "add",
+        "rationale": "Stock-only rates; no dose is assigned to the selected KSCN branch."
+      }
+    ],
+    "arithmetic_and_scope": "Stock-only rates; no dose is assigned to the selected KSCN branch."
+  },
+  {
+    "quantity_id": "q30",
+    "ingredient_or_context": "KSCN sterile stock",
+    "field_path": "solutions",
+    "local": [
+      {
+        "preferred_term": "Trace elements solution",
+        "term": {
+          "id": "mediadive.solution:6129",
+          "label": "Trace elements solution"
+        },
+        "concentration": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "notes": "See mediadive_6129_Trace_elements_solution.yaml for composition",
+        "name": "Unknown solution"
+      },
+      {
+        "preferred_term": "KSCN solution (2 M -194 g/l)",
+        "composition": [],
+        "concentration": {
+          "value": "15",
+          "unit": "MILLIMOLAR"
+        },
+        "name": "Unknown solution"
+      }
+    ],
+    "source_amount": "2; 194",
+    "source_unit": "M; g/L",
+    "source_stage": "Primary stock definition",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "dsmz925",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf",
+        "source_locator": "PDF page 1 sterile stocks or page 2 explicitly named Growth branch: Primary stock definition",
+        "exact_source_quote": "KSCN solution (2 M - 194 g/l)",
+        "snapshot_sha256": "7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb",
+        "parsed_text_sha256": "127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": [
+          {
+            "preferred_term": "Trace elements solution",
+            "term": {
+              "id": "mediadive.solution:6129",
+              "label": "Trace elements solution"
+            },
+            "concentration": {
+              "value": "2",
+              "unit": "G_PER_L"
+            },
+            "notes": "See mediadive_6129_Trace_elements_solution.yaml for composition",
+            "name": "Unknown solution"
+          },
+          {
+            "preferred_term": "KSCN solution (2 M -194 g/l)",
+            "composition": [],
+            "concentration": {
+              "value": "15",
+              "unit": "MILLIMOLAR"
+            },
+            "name": "Unknown solution"
+          }
+        ],
+        "decision": "add",
+        "rationale": "Explicit stock strengths, distinct from the working 15 mM concentration."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "solutions",
+        "stored": [
+          {
+            "preferred_term": "Trace elements solution",
+            "term": {
+              "id": "mediadive.solution:6129",
+              "label": "Trace elements solution"
+            },
+            "concentration": {
+              "value": "2",
+              "unit": "G_PER_L"
+            },
+            "notes": "See mediadive_6129_Trace_elements_solution.yaml for composition",
+            "name": "Unknown solution"
+          },
+          {
+            "preferred_term": "KSCN solution (2 M -194 g/l)",
+            "composition": [],
+            "concentration": {
+              "value": "15",
+              "unit": "MILLIMOLAR"
+            },
+            "name": "Unknown solution"
+          }
+        ],
+        "decision": "add",
+        "rationale": "Explicit stock strengths, distinct from the working 15 mM concentration."
+      }
+    ],
+    "arithmetic_and_scope": "Explicit stock strengths, distinct from the working 15 mM concentration."
+  },
+  {
+    "quantity_id": "q31",
+    "ingredient_or_context": "NH4Cl sterile stock",
+    "field_path": "solutions",
+    "local": [
+      {
+        "preferred_term": "Trace elements solution",
+        "term": {
+          "id": "mediadive.solution:6129",
+          "label": "Trace elements solution"
+        },
+        "concentration": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "notes": "See mediadive_6129_Trace_elements_solution.yaml for composition",
+        "name": "Unknown solution"
+      },
+      {
+        "preferred_term": "KSCN solution (2 M -194 g/l)",
+        "composition": [],
+        "concentration": {
+          "value": "15",
+          "unit": "MILLIMOLAR"
+        },
+        "name": "Unknown solution"
+      }
+    ],
+    "source_amount": "1; 53.5",
+    "source_unit": "M; g/L",
+    "source_stage": "Primary stock definition",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "dsmz925",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf",
+        "source_locator": "PDF page 1 sterile stocks or page 2 explicitly named Growth branch: Primary stock definition",
+        "exact_source_quote": "NH4Cl - (1 M - 53.5 g/l)",
+        "snapshot_sha256": "7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb",
+        "parsed_text_sha256": "127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": [
+          {
+            "preferred_term": "Trace elements solution",
+            "term": {
+              "id": "mediadive.solution:6129",
+              "label": "Trace elements solution"
+            },
+            "concentration": {
+              "value": "2",
+              "unit": "G_PER_L"
+            },
+            "notes": "See mediadive_6129_Trace_elements_solution.yaml for composition",
+            "name": "Unknown solution"
+          },
+          {
+            "preferred_term": "KSCN solution (2 M -194 g/l)",
+            "composition": [],
+            "concentration": {
+              "value": "15",
+              "unit": "MILLIMOLAR"
+            },
+            "name": "Unknown solution"
+          }
+        ],
+        "decision": "add",
+        "rationale": "A stock used by named alternate branches; no universal main addition."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "solutions",
+        "stored": [
+          {
+            "preferred_term": "Trace elements solution",
+            "term": {
+              "id": "mediadive.solution:6129",
+              "label": "Trace elements solution"
+            },
+            "concentration": {
+              "value": "2",
+              "unit": "G_PER_L"
+            },
+            "notes": "See mediadive_6129_Trace_elements_solution.yaml for composition",
+            "name": "Unknown solution"
+          },
+          {
+            "preferred_term": "KSCN solution (2 M -194 g/l)",
+            "composition": [],
+            "concentration": {
+              "value": "15",
+              "unit": "MILLIMOLAR"
+            },
+            "name": "Unknown solution"
+          }
+        ],
+        "decision": "add",
+        "rationale": "A stock used by named alternate branches; no universal main addition."
+      }
+    ],
+    "arithmetic_and_scope": "A stock used by named alternate branches; no universal main addition."
+  },
+  {
+    "quantity_id": "q32",
+    "ingredient_or_context": "KNO3 sterile stock",
+    "field_path": "solutions",
+    "local": [
+      {
+        "preferred_term": "Trace elements solution",
+        "term": {
+          "id": "mediadive.solution:6129",
+          "label": "Trace elements solution"
+        },
+        "concentration": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "notes": "See mediadive_6129_Trace_elements_solution.yaml for composition",
+        "name": "Unknown solution"
+      },
+      {
+        "preferred_term": "KSCN solution (2 M -194 g/l)",
+        "composition": [],
+        "concentration": {
+          "value": "15",
+          "unit": "MILLIMOLAR"
+        },
+        "name": "Unknown solution"
+      }
+    ],
+    "source_amount": "1; 101",
+    "source_unit": "M; g/L",
+    "source_stage": "Primary stock definition",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "dsmz925",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf",
+        "source_locator": "PDF page 1 sterile stocks or page 2 explicitly named Growth branch: Primary stock definition",
+        "exact_source_quote": "KNO3 - (1 M - 101 g/l)",
+        "snapshot_sha256": "7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb",
+        "parsed_text_sha256": "127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": [
+          {
+            "preferred_term": "Trace elements solution",
+            "term": {
+              "id": "mediadive.solution:6129",
+              "label": "Trace elements solution"
+            },
+            "concentration": {
+              "value": "2",
+              "unit": "G_PER_L"
+            },
+            "notes": "See mediadive_6129_Trace_elements_solution.yaml for composition",
+            "name": "Unknown solution"
+          },
+          {
+            "preferred_term": "KSCN solution (2 M -194 g/l)",
+            "composition": [],
+            "concentration": {
+              "value": "15",
+              "unit": "MILLIMOLAR"
+            },
+            "name": "Unknown solution"
+          }
+        ],
+        "decision": "add",
+        "rationale": "A stock used by named alternate branches; no universal main addition."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "solutions",
+        "stored": [
+          {
+            "preferred_term": "Trace elements solution",
+            "term": {
+              "id": "mediadive.solution:6129",
+              "label": "Trace elements solution"
+            },
+            "concentration": {
+              "value": "2",
+              "unit": "G_PER_L"
+            },
+            "notes": "See mediadive_6129_Trace_elements_solution.yaml for composition",
+            "name": "Unknown solution"
+          },
+          {
+            "preferred_term": "KSCN solution (2 M -194 g/l)",
+            "composition": [],
+            "concentration": {
+              "value": "15",
+              "unit": "MILLIMOLAR"
+            },
+            "name": "Unknown solution"
+          }
+        ],
+        "decision": "add",
+        "rationale": "A stock used by named alternate branches; no universal main addition."
+      }
+    ],
+    "arithmetic_and_scope": "A stock used by named alternate branches; no universal main addition."
+  },
+  {
+    "quantity_id": "q33",
+    "ingredient_or_context": "Magnesium stock strength and dose",
+    "field_path": "variants",
+    "local": null,
+    "source_amount": "200; 1",
+    "source_unit": "g/L; mL/L",
+    "source_stage": "Primary late addition",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "dsmz925",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf",
+        "source_locator": "PDF page 1 sterile stocks or page 2 explicitly named Growth branch: Primary late addition",
+        "exact_source_quote": "MgCl2 x 6 H2O (200.0 g/l) 1 ml/l",
+        "snapshot_sha256": "7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb",
+        "parsed_text_sha256": "127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "variants",
+        "stored": null,
+        "decision": "add",
+        "rationale": "The strength and dose imply 0.2 g per stated litre basis only; do not infer measured final medium volume."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "variants",
+        "stored": null,
+        "decision": "add",
+        "rationale": "The strength and dose imply 0.2 g per stated litre basis only; do not infer measured final medium volume."
+      }
+    ],
+    "arithmetic_and_scope": "The strength and dose imply 0.2 g per stated litre basis only; do not infer measured final medium volume."
+  },
+  {
+    "quantity_id": "q34",
+    "ingredient_or_context": "DSM 13532 KSCN branch",
+    "field_path": "variants",
+    "local": null,
+    "source_amount": "15",
+    "source_unit": "mM",
+    "source_stage": "DSM 13532 / ARh2",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "dsmz925",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf",
+        "source_locator": "PDF page 1 sterile stocks or page 2 explicitly named Growth branch: DSM 13532 / ARh2",
+        "exact_source_quote": "Growth with 15 mM KSCN: same conditions as for DSM 13531 = ARh1.",
+        "snapshot_sha256": "7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb",
+        "parsed_text_sha256": "127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "variants",
+        "stored": null,
+        "decision": "add",
+        "rationale": "The primary explicitly transfers DSM 13531 conditions to this separate branch; it does not add a second KSCN dose."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "variants",
+        "stored": null,
+        "decision": "add",
+        "rationale": "The primary explicitly transfers DSM 13531 conditions to this separate branch; it does not add a second KSCN dose."
+      }
+    ],
+    "arithmetic_and_scope": "The primary explicitly transfers DSM 13531 conditions to this separate branch; it does not add a second KSCN dose."
+  },
+  {
+    "quantity_id": "q35",
+    "ingredient_or_context": "DSM 13541 branch concentrations and vessel ratio",
+    "field_path": "variants",
+    "local": null,
+    "source_amount": "40; 5; 1/10",
+    "source_unit": "mM; mM; liquid/air",
+    "source_stage": "DSM 13541 / ARh1 thiosulfate branch",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "dsmz925",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf",
+        "source_locator": "PDF page 1 sterile stocks or page 2 explicitly named Growth branch: DSM 13541 / ARh1 thiosulfate branch",
+        "exact_source_quote": "Growth with thiosulfate (40 mM) and NH4Cl (5 mM); in conical flasks 1/10 liquid/air ratio",
+        "snapshot_sha256": "7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb",
+        "parsed_text_sha256": "127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "variants",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Alternate thiosulfate/ammonium branch; do not add these to selected KSCN medium."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "variants",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Alternate thiosulfate/ammonium branch; do not add these to selected KSCN medium."
+      }
+    ],
+    "arithmetic_and_scope": "Alternate thiosulfate/ammonium branch; do not add these to selected KSCN medium."
+  },
+  {
+    "quantity_id": "q36",
+    "ingredient_or_context": "DSM 13541 shaking",
+    "field_path": "variants",
+    "local": null,
+    "source_amount": "200",
+    "source_unit": "rpm",
+    "source_stage": "DSM 13541 branch",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "dsmz925",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf",
+        "source_locator": "PDF page 1 sterile stocks or page 2 explicitly named Growth branch: DSM 13541 branch",
+        "exact_source_quote": "on shaker 200 rpm. Heavy sulfur formation",
+        "snapshot_sha256": "7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb",
+        "parsed_text_sha256": "127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "variants",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Shaking belongs to the thiosulfate branch, unlike static KSCN cultivation; continue until sulfur is utilized."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "variants",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Shaking belongs to the thiosulfate branch, unlike static KSCN cultivation; continue until sulfur is utilized."
+      }
+    ],
+    "arithmetic_and_scope": "Shaking belongs to the thiosulfate branch, unlike static KSCN cultivation; continue until sulfur is utilized."
+  },
+  {
+    "quantity_id": "q37",
+    "ingredient_or_context": "DSM 13542 branch concentrations and ratio",
+    "field_path": "variants",
+    "local": null,
+    "source_amount": "40; 10; 1/5",
+    "source_unit": "mM; mM; liquid/air",
+    "source_stage": "DSM 13542 / ARh2 thiosulfate branch",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "dsmz925",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf",
+        "source_locator": "PDF page 1 sterile stocks or page 2 explicitly named Growth branch: DSM 13542 / ARh2 thiosulfate branch",
+        "exact_source_quote": "Growth with thiosulfate (40 mM) and nitrate (10 mM); in conical flasks 1/5 liquid/air",
+        "snapshot_sha256": "7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb",
+        "parsed_text_sha256": "127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "variants",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Keep this branch and its nitrate identity separate."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "variants",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Keep this branch and its nitrate identity separate."
+      }
+    ],
+    "arithmetic_and_scope": "Keep this branch and its nitrate identity separate."
+  },
+  {
+    "quantity_id": "q38",
+    "ingredient_or_context": "DSM 13542 shaking and duration",
+    "field_path": "variants",
+    "local": null,
+    "source_amount": "200; 3–4",
+    "source_unit": "rpm; days",
+    "source_stage": "DSM 13542 branch",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "dsmz925",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf",
+        "source_locator": "PDF page 1 sterile stocks or page 2 explicitly named Growth branch: DSM 13542 branch",
+        "exact_source_quote": "ratio on shaker 200 rpm. Growth takes 3-4 days",
+        "snapshot_sha256": "7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb",
+        "parsed_text_sha256": "127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "variants",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Source-specific conditions, not universal medium parameters."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "variants",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Source-specific conditions, not universal medium parameters."
+      }
+    ],
+    "arithmetic_and_scope": "Source-specific conditions, not universal medium parameters."
+  },
+  {
+    "quantity_id": "q39",
+    "ingredient_or_context": "DSM 13533 additions",
+    "field_path": "variants",
+    "local": null,
+    "source_amount": "40; 5",
+    "source_unit": "mM; mM",
+    "source_stage": "DSM 13533 / ALRh",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "dsmz925",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf",
+        "source_locator": "PDF page 1 sterile stocks or page 2 explicitly named Growth branch: DSM 13533 / ALRh",
+        "exact_source_quote": "Strain ALRh: grows with 40 mM thiosulfate and 5 mM KSCN in",
+        "snapshot_sha256": "7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb",
+        "parsed_text_sha256": "127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "variants",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Separate combined thiosulfate/KSCN branch."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "variants",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Separate combined thiosulfate/KSCN branch."
+      }
+    ],
+    "arithmetic_and_scope": "Separate combined thiosulfate/KSCN branch."
+  },
+  {
+    "quantity_id": "q40",
+    "ingredient_or_context": "DSM 13533 vessel ratio and shaking",
+    "field_path": "variants",
+    "local": null,
+    "source_amount": "1/5; 200",
+    "source_unit": "liquid/air; rpm",
+    "source_stage": "DSM 13533 / ALRh",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "dsmz925",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf",
+        "source_locator": "PDF page 1 sterile stocks or page 2 explicitly named Growth branch: DSM 13533 / ALRh",
+        "exact_source_quote": "conical flasks 1/5 liquid to air ratio at 200 rpm.",
+        "snapshot_sha256": "7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb",
+        "parsed_text_sha256": "127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "variants",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Keep the branch-specific vessel and shaking conditions."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "variants",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Keep the branch-specific vessel and shaking conditions."
+      }
+    ],
+    "arithmetic_and_scope": "Keep the branch-specific vessel and shaking conditions."
+  },
+  {
+    "quantity_id": "q41",
+    "ingredient_or_context": "DSM 14477 additions",
+    "field_path": "variants",
+    "local": null,
+    "source_amount": "40; 5",
+    "source_unit": "mM; mM",
+    "source_stage": "DSM 14477 / ALM1",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "dsmz925",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf",
+        "source_locator": "PDF page 1 sterile stocks or page 2 explicitly named Growth branch: DSM 14477 / ALM1",
+        "exact_source_quote": "Strain ALM1 grows with 40 mM thiosulphate and 5 mM KNO3",
+        "snapshot_sha256": "7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb",
+        "parsed_text_sha256": "127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "variants",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Separate thiosulfate/nitrate branch."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "variants",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Separate thiosulfate/nitrate branch."
+      }
+    ],
+    "arithmetic_and_scope": "Separate thiosulfate/nitrate branch."
+  },
+  {
+    "quantity_id": "q42",
+    "ingredient_or_context": "DSM 13738 / 13741 / 13742 additions",
+    "field_path": "variants",
+    "local": null,
+    "source_amount": "40; 5; 0.5",
+    "source_unit": "mM; mM; mM",
+    "source_stage": "Explicit three-strain primary branch",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "dsmz925",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf",
+        "source_locator": "PDF page 1 sterile stocks or page 2 explicitly named Growth branch: Explicit three-strain primary branch",
+        "exact_source_quote": "Use 40 mM thiosulphate, 5 mM KNO3, reduce the amount of MgCl2 to 0.5 mM",
+        "snapshot_sha256": "7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb",
+        "parsed_text_sha256": "127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "variants",
+        "stored": null,
+        "decision": "add",
+        "rationale": "The reduced magnesium condition belongs only to the three named strains; no universal overwrite."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "variants",
+        "stored": null,
+        "decision": "add",
+        "rationale": "The reduced magnesium condition belongs only to the three named strains; no universal overwrite."
+      }
+    ],
+    "arithmetic_and_scope": "The reduced magnesium condition belongs only to the three named strains; no universal overwrite."
+  },
+  {
+    "quantity_id": "q43",
+    "ingredient_or_context": "DSM 13739 / 13740 additions",
+    "field_path": "variants",
+    "local": null,
+    "source_amount": "80; 5; 0.5",
+    "source_unit": "mM; mM; mM",
+    "source_stage": "Explicit two-strain primary branch",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "dsmz925",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf",
+        "source_locator": "PDF page 1 sterile stocks or page 2 explicitly named Growth branch: Explicit two-strain primary branch",
+        "exact_source_quote": "Use 80 mM thiosulphate, 5 mM KNO3, reduce the amount of MgCl2 to 0.5 mM",
+        "snapshot_sha256": "7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb",
+        "parsed_text_sha256": "127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "variants",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Retain the different thiosulfate condition and reduced magnesium separately."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "variants",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Retain the different thiosulfate condition and reduced magnesium separately."
+      }
+    ],
+    "arithmetic_and_scope": "Retain the different thiosulfate condition and reduced magnesium separately."
+  },
+  {
+    "quantity_id": "q44",
+    "ingredient_or_context": "DSM 14786 gas mixture",
+    "field_path": "variants",
+    "local": null,
+    "source_amount": "1",
+    "source_unit": "% oxygen in nitrogen gas phase; basis unqualified",
+    "source_stage": "DSM 14786 / ALEN1",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "dsmz925",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf",
+        "source_locator": "PDF page 1 sterile stocks or page 2 explicitly named Growth branch: DSM 14786 / ALEN1",
+        "exact_source_quote": "with 1% oxygen in the gas phase.",
+        "snapshot_sha256": "7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb",
+        "parsed_text_sha256": "127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "variants",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Retain the literal gas-phase percentage, without imposing a mass or volume concentration enum."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "variants",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Retain the literal gas-phase percentage, without imposing a mass or volume concentration enum."
+      }
+    ],
+    "arithmetic_and_scope": "Retain the literal gas-phase percentage, without imposing a mass or volume concentration enum."
+  },
+  {
+    "quantity_id": "q45",
+    "ingredient_or_context": "DSM 14786 / 14788 additions",
+    "field_path": "variants",
+    "local": null,
+    "source_amount": "30; up to 5",
+    "source_unit": "mM; mM",
+    "source_stage": "Two separately named primary branches, same printed limits",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "dsmz925",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf",
+        "source_locator": "PDF page 1 sterile stocks or page 2 explicitly named Growth branch: Two separately named primary branches, same printed limits",
+        "exact_source_quote": "Use 30 mM thiosulphate and up to a maximum of 5 mM NH4Cl",
+        "snapshot_sha256": "7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb",
+        "parsed_text_sha256": "127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "variants",
+        "stored": null,
+        "decision": "add",
+        "rationale": "This identical clause occurs for ALEN1 and ALED; retain each source branch rather than infer equivalent taxonomy or growth."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "variants",
+        "stored": null,
+        "decision": "add",
+        "rationale": "This identical clause occurs for ALEN1 and ALED; retain each source branch rather than infer equivalent taxonomy or growth."
+      }
+    ],
+    "arithmetic_and_scope": "This identical clause occurs for ALEN1 and ALED; retain each source branch rather than infer equivalent taxonomy or growth."
+  },
+  {
+    "quantity_id": "q46",
+    "ingredient_or_context": "DSM 14787 additions",
+    "field_path": "variants",
+    "local": null,
+    "source_amount": "30–40; 5–10",
+    "source_unit": "mM; mM",
+    "source_stage": "DSM 14787 / ALEN2",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "dsmz925",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf",
+        "source_locator": "PDF page 1 sterile stocks or page 2 explicitly named Growth branch: DSM 14787 / ALEN2",
+        "exact_source_quote": "Use 30 - 40 mM thiosulphate and 5-10 mM KNO3",
+        "snapshot_sha256": "7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb",
+        "parsed_text_sha256": "127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "variants",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Preserve both working ranges only for this branch."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+        "field_path": "variants",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Preserve both working ranges only for this branch."
+      }
+    ],
+    "arithmetic_and_scope": "Preserve both working ranges only for this branch."
+  },
+  {
+    "quantity_id": "q47",
+    "ingredient_or_context": "ZnSO4 x 7 H2O",
+    "field_path": "composition[0].concentration",
+    "local": {
+      "value": "8.82",
+      "unit": "G_PER_L"
+    },
+    "source_amount": "8.82",
+    "source_unit": "g/L (historical derivative assertion only)",
+    "source_stage": "Separate asserted solution 6129; no transfer to this medium",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "togoM2459original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459",
+        "source_locator": "$.components[1].items[1]",
+        "exact_source_quote": "\"component_name\": \"Na2MoO4 x 2 H2O\",\n          \"volume\": 30,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5"
+      },
+      {
+        "source_key": "solution6129",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/6129",
+        "source_locator": "Current failed access response; no formulation content",
+        "exact_source_quote": "503 Service Unavailable",
+        "snapshot_sha256": "7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286",
+        "parsed_text_sha256": "faaab31b60bbf7b70ce42f09e877323f089d642869fc97f1df61bd705662e46b"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/mediadive_6129_Trace_elements_solution.yaml",
+        "field_path": "composition[0].concentration",
+        "stored": {
+          "value": "8.82",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "Retain the historical assertion pending exact raw recovery. Decoded local report agreement is not raw/hash authentication, and this five-solute formula differs from the required primary trace stock. No receiving-medium concentration or independent final-volume claim is supported."
+      }
+    ],
+    "arithmetic_and_scope": "Retain the historical assertion pending exact raw recovery. Decoded local report agreement is not raw/hash authentication, and this five-solute formula differs from the required primary trace stock. No receiving-medium concentration or independent final-volume claim is supported.",
+    "historical_claim": {
+      "reference": "https://mediadive.dsmz.de/rest/solution/6129",
+      "supports": "SUPPORT",
+      "snippet": "{\n                \"recipe_order\": 2,\n                \"compound\": \"ZnSO4 x 7 H2O\",\n                \"compound_id\": 35,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 8.82,\n                \"unit\": \"g\",\n                \"g_l\": 8.82,\n                \"mmol_l\": 30.6718,\n                \"optional\": 0\n            }",
+      "explanation": "Concentration evidence for composition[0].concentration (ZnSO4 x 7 H2O) in MediaDive solution 6129; locator=$.data.recipe[0] (compound_id=35). Provider explicitly reports g_l=8.82. Arithmetic check: 8.82 g * 1 g/g / (1000 ml / 1000 ml per L) = 8.82 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T10:00:25.970726+00:00; response SHA256=4ee096d7a46e81f2dc9699c9abd6b7d4721d60dd543b419c417ca5bd818bff99."
+    },
+    "historical_derivative_path": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-4500-4770/records/bacterial/mediadive_6129_Trace_elements_solution.yaml.md",
+    "historical_derivative_sha256": "6329f7f95876e28ae96ba1f6856876696b1d82132fa11b2368d1b84535ec16d3"
+  },
+  {
+    "quantity_id": "q48",
+    "ingredient_or_context": "MnCl2 x 4 H2O",
+    "field_path": "composition[1].concentration",
+    "local": {
+      "value": "1.44",
+      "unit": "G_PER_L"
+    },
+    "source_amount": "1.44",
+    "source_unit": "g/L (historical derivative assertion only)",
+    "source_stage": "Separate asserted solution 6129; no transfer to this medium",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "togoM2459original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459",
+        "source_locator": "$.components[1].items[1]",
+        "exact_source_quote": "\"component_name\": \"Na2MoO4 x 2 H2O\",\n          \"volume\": 30,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5"
+      },
+      {
+        "source_key": "solution6129",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/6129",
+        "source_locator": "Current failed access response; no formulation content",
+        "exact_source_quote": "503 Service Unavailable",
+        "snapshot_sha256": "7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286",
+        "parsed_text_sha256": "faaab31b60bbf7b70ce42f09e877323f089d642869fc97f1df61bd705662e46b"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/mediadive_6129_Trace_elements_solution.yaml",
+        "field_path": "composition[1].concentration",
+        "stored": {
+          "value": "1.44",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "Retain the historical assertion pending exact raw recovery. Decoded local report agreement is not raw/hash authentication, and this five-solute formula differs from the required primary trace stock. No receiving-medium concentration or independent final-volume claim is supported."
+      }
+    ],
+    "arithmetic_and_scope": "Retain the historical assertion pending exact raw recovery. Decoded local report agreement is not raw/hash authentication, and this five-solute formula differs from the required primary trace stock. No receiving-medium concentration or independent final-volume claim is supported.",
+    "historical_claim": {
+      "reference": "https://mediadive.dsmz.de/rest/solution/6129",
+      "supports": "SUPPORT",
+      "snippet": "{\n                \"recipe_order\": 3,\n                \"compound\": \"MnCl2 x 4 H2O\",\n                \"compound_id\": 36,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1.44,\n                \"unit\": \"g\",\n                \"g_l\": 1.44,\n                \"mmol_l\": 7.27622,\n                \"optional\": 0\n            }",
+      "explanation": "Concentration evidence for composition[1].concentration (MnCl2 x 4 H2O) in MediaDive solution 6129; locator=$.data.recipe[1] (compound_id=36). Provider explicitly reports g_l=1.44. Arithmetic check: 1.44 g * 1 g/g / (1000 ml / 1000 ml per L) = 1.44 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T10:00:25.970726+00:00; response SHA256=4ee096d7a46e81f2dc9699c9abd6b7d4721d60dd543b419c417ca5bd818bff99."
+    },
+    "historical_derivative_path": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-4500-4770/records/bacterial/mediadive_6129_Trace_elements_solution.yaml.md",
+    "historical_derivative_sha256": "6329f7f95876e28ae96ba1f6856876696b1d82132fa11b2368d1b84535ec16d3"
+  },
+  {
+    "quantity_id": "q49",
+    "ingredient_or_context": "MoO3",
+    "field_path": "composition[2].concentration",
+    "local": {
+      "value": "0.71",
+      "unit": "G_PER_L"
+    },
+    "source_amount": "0.71",
+    "source_unit": "g/L (historical derivative assertion only)",
+    "source_stage": "Separate asserted solution 6129; no transfer to this medium",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "togoM2459original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459",
+        "source_locator": "$.components[1].items[1]",
+        "exact_source_quote": "\"component_name\": \"Na2MoO4 x 2 H2O\",\n          \"volume\": 30,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5"
+      },
+      {
+        "source_key": "solution6129",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/6129",
+        "source_locator": "Current failed access response; no formulation content",
+        "exact_source_quote": "503 Service Unavailable",
+        "snapshot_sha256": "7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286",
+        "parsed_text_sha256": "faaab31b60bbf7b70ce42f09e877323f089d642869fc97f1df61bd705662e46b"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/mediadive_6129_Trace_elements_solution.yaml",
+        "field_path": "composition[2].concentration",
+        "stored": {
+          "value": "0.71",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "Retain the historical assertion pending exact raw recovery. Decoded local report agreement is not raw/hash authentication, and this five-solute formula differs from the required primary trace stock. No receiving-medium concentration or independent final-volume claim is supported."
+      }
+    ],
+    "arithmetic_and_scope": "Retain the historical assertion pending exact raw recovery. Decoded local report agreement is not raw/hash authentication, and this five-solute formula differs from the required primary trace stock. No receiving-medium concentration or independent final-volume claim is supported.",
+    "historical_claim": {
+      "reference": "https://mediadive.dsmz.de/rest/solution/6129",
+      "supports": "SUPPORT",
+      "snippet": "{\n                \"recipe_order\": 4,\n                \"compound\": \"MoO3\",\n                \"compound_id\": 235,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.71,\n                \"unit\": \"g\",\n                \"g_l\": 0.71,\n                \"mmol_l\": 4.93227,\n                \"optional\": 0\n            }",
+      "explanation": "Concentration evidence for composition[2].concentration (MoO3) in MediaDive solution 6129; locator=$.data.recipe[2] (compound_id=235). Provider explicitly reports g_l=0.71. Arithmetic check: 0.71 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.71 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T10:00:25.970726+00:00; response SHA256=4ee096d7a46e81f2dc9699c9abd6b7d4721d60dd543b419c417ca5bd818bff99."
+    },
+    "historical_derivative_path": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-4500-4770/records/bacterial/mediadive_6129_Trace_elements_solution.yaml.md",
+    "historical_derivative_sha256": "6329f7f95876e28ae96ba1f6856876696b1d82132fa11b2368d1b84535ec16d3"
+  },
+  {
+    "quantity_id": "q50",
+    "ingredient_or_context": "CuSO4 x 5 H2O",
+    "field_path": "composition[3].concentration",
+    "local": {
+      "value": "1.57",
+      "unit": "G_PER_L"
+    },
+    "source_amount": "1.57",
+    "source_unit": "g/L (historical derivative assertion only)",
+    "source_stage": "Separate asserted solution 6129; no transfer to this medium",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "togoM2459original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459",
+        "source_locator": "$.components[1].items[1]",
+        "exact_source_quote": "\"component_name\": \"Na2MoO4 x 2 H2O\",\n          \"volume\": 30,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5"
+      },
+      {
+        "source_key": "solution6129",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/6129",
+        "source_locator": "Current failed access response; no formulation content",
+        "exact_source_quote": "503 Service Unavailable",
+        "snapshot_sha256": "7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286",
+        "parsed_text_sha256": "faaab31b60bbf7b70ce42f09e877323f089d642869fc97f1df61bd705662e46b"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/mediadive_6129_Trace_elements_solution.yaml",
+        "field_path": "composition[3].concentration",
+        "stored": {
+          "value": "1.57",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "Retain the historical assertion pending exact raw recovery. Decoded local report agreement is not raw/hash authentication, and this five-solute formula differs from the required primary trace stock. No receiving-medium concentration or independent final-volume claim is supported."
+      }
+    ],
+    "arithmetic_and_scope": "Retain the historical assertion pending exact raw recovery. Decoded local report agreement is not raw/hash authentication, and this five-solute formula differs from the required primary trace stock. No receiving-medium concentration or independent final-volume claim is supported.",
+    "historical_claim": {
+      "reference": "https://mediadive.dsmz.de/rest/solution/6129",
+      "supports": "SUPPORT",
+      "snippet": "{\n                \"recipe_order\": 5,\n                \"compound\": \"CuSO4 x 5 H2O\",\n                \"compound_id\": 121,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1.57,\n                \"unit\": \"g\",\n                \"g_l\": 1.57,\n                \"mmol_l\": 6.2879,\n                \"optional\": 0\n            }",
+      "explanation": "Concentration evidence for composition[3].concentration (CuSO4 x 5 H2O) in MediaDive solution 6129; locator=$.data.recipe[3] (compound_id=121). Provider explicitly reports g_l=1.57. Arithmetic check: 1.57 g * 1 g/g / (1000 ml / 1000 ml per L) = 1.57 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T10:00:25.970726+00:00; response SHA256=4ee096d7a46e81f2dc9699c9abd6b7d4721d60dd543b419c417ca5bd818bff99."
+    },
+    "historical_derivative_path": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-4500-4770/records/bacterial/mediadive_6129_Trace_elements_solution.yaml.md",
+    "historical_derivative_sha256": "6329f7f95876e28ae96ba1f6856876696b1d82132fa11b2368d1b84535ec16d3"
+  },
+  {
+    "quantity_id": "q51",
+    "ingredient_or_context": "Co(NO3)2 x 6 H2O",
+    "field_path": "composition[4].concentration",
+    "local": {
+      "value": "0.49",
+      "unit": "G_PER_L"
+    },
+    "source_amount": "0.49",
+    "source_unit": "g/L (historical derivative assertion only)",
+    "source_stage": "Separate asserted solution 6129; no transfer to this medium",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "togoM2459original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459",
+        "source_locator": "$.components[1].items[1]",
+        "exact_source_quote": "\"component_name\": \"Na2MoO4 x 2 H2O\",\n          \"volume\": 30,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5"
+      },
+      {
+        "source_key": "solution6129",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/6129",
+        "source_locator": "Current failed access response; no formulation content",
+        "exact_source_quote": "503 Service Unavailable",
+        "snapshot_sha256": "7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286",
+        "parsed_text_sha256": "faaab31b60bbf7b70ce42f09e877323f089d642869fc97f1df61bd705662e46b"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/mediadive_6129_Trace_elements_solution.yaml",
+        "field_path": "composition[4].concentration",
+        "stored": {
+          "value": "0.49",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "Retain the historical assertion pending exact raw recovery. Decoded local report agreement is not raw/hash authentication, and this five-solute formula differs from the required primary trace stock. No receiving-medium concentration or independent final-volume claim is supported."
+      }
+    ],
+    "arithmetic_and_scope": "Retain the historical assertion pending exact raw recovery. Decoded local report agreement is not raw/hash authentication, and this five-solute formula differs from the required primary trace stock. No receiving-medium concentration or independent final-volume claim is supported.",
+    "historical_claim": {
+      "reference": "https://mediadive.dsmz.de/rest/solution/6129",
+      "supports": "SUPPORT",
+      "snippet": "{\n                \"recipe_order\": 6,\n                \"compound\": \"Co(NO3)2 x 6 H2O\",\n                \"compound_id\": 541,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.49,\n                \"unit\": \"g\",\n                \"g_l\": 0.49,\n                \"mmol_l\": 1.68365,\n                \"optional\": 0\n            }",
+      "explanation": "Concentration evidence for composition[4].concentration (Co(NO3)2 x 6 H2O) in MediaDive solution 6129; locator=$.data.recipe[4] (compound_id=541). Provider explicitly reports g_l=0.49. Arithmetic check: 0.49 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.49 g/L, consistent with the reported value at its precision. Evidence supports the provider-declared concentration within this solution, not a concentration in a receiving medium or an independently measured final volume. Water addition alone is not used to infer a final volume. Additional exact excerpt at $.data.volume: \"volume\": 1000. Retrieved 2026-10-07T10:00:25.970726+00:00; response SHA256=4ee096d7a46e81f2dc9699c9abd6b7d4721d60dd543b419c417ca5bd818bff99."
+    },
+    "historical_derivative_path": "reports/ingredient_concentration_curation/20261007-mediadive-solutions-4500-4770/records/bacterial/mediadive_6129_Trace_elements_solution.yaml.md",
+    "historical_derivative_sha256": "6329f7f95876e28ae96ba1f6856876696b1d82132fa11b2368d1b84535ec16d3"
+  },
+  {
+    "quantity_id": "q52",
+    "ingredient_or_context": "See source for composition placeholder",
+    "field_path": "ingredients[0].concentration",
+    "local": {
+      "value": "variable",
+      "unit": "VARIABLE"
+    },
+    "source_amount": null,
+    "source_unit": null,
+    "source_stage": "Separate solution 6129 placeholder",
+    "primary_source_evidence_id": "dsmz925",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "togoM2459original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459",
+        "source_locator": "$.components[1].items[1]",
+        "exact_source_quote": "\"component_name\": \"Na2MoO4 x 2 H2O\",\n          \"volume\": 30,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5"
+      },
+      {
+        "source_key": "solution6129",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/6129",
+        "source_locator": "Current failed access response; no formulation content",
+        "exact_source_quote": "503 Service Unavailable",
+        "snapshot_sha256": "7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286",
+        "parsed_text_sha256": "faaab31b60bbf7b70ce42f09e877323f089d642869fc97f1df61bd705662e46b"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/mediadive_6129_Trace_elements_solution.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "unsupported",
+        "rationale": "VARIABLE is an unquantified placeholder, not another solute or quantified dose. The source request supplies no formula; preserve its unresolved status separately from the five derivative composition claims."
+      }
+    ],
+    "arithmetic_and_scope": "VARIABLE is an unquantified placeholder, not another solute or quantified dose. The source request supplies no formula; preserve its unresolved status separately from the five derivative composition claims."
+  }
+]
+
+## Findings
+
+### f1: Stock batches, milligram units and working doses are conflated
+
+blocker / open / confirmed; issue key: culturemech.009037.stock-unit-collapse.
+
+The trace stock’s nine mg quantities appear as g/L numerals in the main recipe; three separate water stages collapse into a mass concentration. The late 1 mL/L magnesium and 2 mL/L trace doses are mass rates, the trace identity points to an incompatible five-solute stock, and undiluted KSCN stock remains a main ingredient.
+
+### f2: Nickel hexahydrate is assigned an anhydrous salt
+
+major / open / confirmed; issue key: culturemech.009037.nickel-hydrate.
+
+Both layers explicitly name NiCl2 x 6H2O but use CHEBI:34887 nickel dichloride in primary and secondary slots. Cobalt CHEBI:53503 is correctly hydrated and must not be flagged by analogy.
+
+### f3: Separate preparation cycles and strain conditions are omitted
+
+major / open / confirmed; issue key: culturemech.009037.preparation-branches.
+
+Neither local layer preserves the distinct mineral/trace sterilization cycles, pH endpoints or selected static DSM 13531 conditions. Broad primary strain branches cannot be merged into one recipe.
+
+### f4: Defined chemical formulation is labeled complex and undefined
+
+minor / open / confirmed; issue key: culturemech.009037.classification.
+
+COMPLEX/UNDEFINED conflicts with the explicitly named inorganic/KSCN components. The high_metal derivation also needs reassessment after unit and stock repair, without assuming its eventual Boolean result.
+
+### f5: Linked stock amounts are only derivatively authenticated
+
+minor / open / confirmed; issue key: culturemech.009037.stock-history-unresolved.
+
+Five historical solution 6129 snippets agree with the local decoded report; their cited raw response is not recovered, and the current endpoint fails. No amount from that separate stock may be treated as verified or transferred into the DSMZ trace formula.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore the exact mineral base, separately prepared nine-solute trace stock, late stock doses and selected KSCN working concentration. Preserve literal EDTA/iron mg values, unspecified acid dose and unknown physical final volume; reconcile the wrong linked stock before regeneration.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Verify and assign the source-matching nickel hexahydrate identity while retaining the corrected 20 mg stock-batch amount. Attach exact form evidence; leave correct cobalt hydration intact.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Add source-stage preparation and the selected KSCN branch with exact evidence. Retain other primary branches as separately scoped variants/context, including their separate gas, shaking and reduced-magnesium conditions; do not assert growth or taxonomy without the required evidence.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Reconcile the defined/complex classification against the selected formulation and rerun authorized metal derivation only after corrected source quantities are in place.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a5
+
+Preserve original claims/times and recover exact historical raw if needed; otherwise document the unresolved correspondence while correcting the medium to its available primary stock definition.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch036/352/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-036/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch036/352/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml:1:id: CultureMech:009037<br>./data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml:1:id: CultureMech:009037<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch036/source-preflight-bound/352/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 28 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| dsmz925 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf; PDF pages 1–2; mineral base, trace stock, late additions, sterile stocks and individual Growth branches | supports | The full primary table prints EDTA 5.0 mg and FeSO4 x 7 H2O 2.0 mg. These unusual literal values are retained; no customary stock recipe is substituted. |
+| togo2459 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459; $.components[0:5]; comments[2,5,7,8,10,12] | supports | The exact provider preserves DSM 13531 selected KSCN conditions and separate trace/KSCN stock tables; other DSMZ branches are not universal medium instructions. |
+| dependency6129 | data/normalized_yaml/bacterial/mediadive_6129_Trace_elements_solution.yaml; Complete composition, placeholder, references and seven historical events | context_only | Five attached amount objects are historical derivative claims for this separate stock; they do not establish that it is the medium’s required trace solution. |
+| historical6129-report | reports/ingredient_concentration_curation/20261007-mediadive-solutions-4500-4770/records/bacterial/mediadive_6129_Trace_elements_solution.yaml.md; Five composition rows, exact HTML-decoded snippets and original access/hash statements | context_only | All five existing snippets are literal in the decoded local report. The report is a derivative; the cited raw response 4ee096d7a46e81f2dc9699c9abd6b7d4721d60dd543b419c417ca5bd818bff99 was not recovered within the documented bounded source search. |
+| solution6129-attempt | https://mediadive.dsmz.de/rest/solution/6129; Preserved exact public retrieval result | context_only | Exact current solution 6129 access returned HTTP 503; original failed attempts are retained and do not prove source nonexistence. |
+| solution6129_retry-attempt | https://mediadive.dsmz.de/rest/solution/6129; Preserved exact public retrieval result | context_only | Exact current solution 6129 access returned HTTP 503; original failed attempts are retained and do not prove source nonexistence. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:15377 resolves to water. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi17883 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17883; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:17883 resolves to hydrogen chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:26710 resolves to sodium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:29377 resolves to sodium carbonate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi30951 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30951; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:30951 resolves to potassium thiocyanate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32139 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32139 resolves to sodium hydrogencarbonate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32312 resolves to zinc sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:33118 resolves to boric acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:34887 resolves to nickel dichloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi4735 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_4735; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:4735 resolves to ethylenediaminetetraacetic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi53503 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:53503 resolves to cobalt chloride hexahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi75836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:75836 resolves to iron(2+) sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86318 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86318 resolves to copper(II) chloride dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131527": [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15377": [{"label": "Distilled water", "match_type": "preferred_term", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17883": [{"label": "HCl", "match_type": "preferred_term", "identifier": "CHEBI:17883", "preferred_term": "HCl", "ontology_id": "CHEBI:17883", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:29377": [{"label": "Na2CO3", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Na2CO3", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium carbonate solution", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Sodium carbonate solution", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:30951": [{"label": "KSCN", "match_type": "preferred_term", "identifier": "CHEBI:30951", "preferred_term": "KSCN", "ontology_id": "CHEBI:30951", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32139": [{"label": "NaHCO3", "match_type": "preferred_term", "identifier": "CHEBI:32139", "preferred_term": "NaHCO3", "ontology_id": "CHEBI:32139", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32312": [{"label": "ZnSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:34887": [{"label": "NiCl2", "match_type": "preferred_term", "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:4735": [{"label": "EDTA", "match_type": "preferred_term", "identifier": "CHEBI:4735", "preferred_term": "EDTA", "ontology_id": "CHEBI:4735", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:53503": [{"label": "Cobalt chloride hexahydrate", "match_type": "preferred_term", "identifier": "CHEBI:53503", "preferred_term": "Cobalt chloride hexahydrate", "ontology_id": "CHEBI:53503", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75836": [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86318": [{"label": "CuCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86318", "preferred_term": "CuCl2 x 2 H2O", "ontology_id": "CHEBI:86318", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86368": [{"label": "MnCl2 x 4 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86368", "preferred_term": "MnCl2 x 4 H2O", "ontology_id": "CHEBI:86368", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| history-metadata | data/merge_yaml/merged/Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml; data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 13, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml", "events": 13, "timestamp_issues": []}] |
+| mediadive925api-attempt | https://mediadive.dsmz.de/rest/medium/925; Preserved exact public retrieval result | context_only | Current exact MediaDive 925 API returned 503; the full current DSMZ primary is available, so this optional provider failure does not make primary amounts unavailable. |
+| mediadive925api_retry-attempt | https://mediadive.dsmz.de/rest/medium/925; Preserved exact public retrieval result | context_only | The separately preserved exact API retry also returned 503; it does not supersede or authenticate any successful historical payload. |
+| writer-0 | src/culturemech/import/togo_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current import logic distinguishes stock references and source batch units; current duplicate handling no longer sums conflicting rows. Metal analysis uses direct ingredient concentrations with approximate unit conversion and a corpus percentile, then the label writer applies filename membership. These writers do not independently establish supplied chemical forms, measured final volumes or the historical raw source. |
+| writer-1 | scripts/cleanup_media_quality.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current import logic distinguishes stock references and source batch units; current duplicate handling no longer sums conflicting rows. Metal analysis uses direct ingredient concentrations with approximate unit conversion and a corpus percentile, then the label writer applies filename membership. These writers do not independently establish supplied chemical forms, measured final volumes or the historical raw source. |
+| writer-2 | scripts/analyze_metal_concentrations.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current import logic distinguishes stock references and source batch units; current duplicate handling no longer sums conflicting rows. Metal analysis uses direct ingredient concentrations with approximate unit conversion and a corpus percentile, then the label writer applies filename membership. These writers do not independently establish supplied chemical forms, measured final volumes or the historical raw source. |
+| writer-3 | scripts/add_metal_ree_labels.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current import logic distinguishes stock references and source batch units; current duplicate handling no longer sums conflicting rows. Metal analysis uses direct ingredient concentrations with approximate unit conversion and a corpus percentile, then the label writer applies filename membership. These writers do not independently establish supplied chemical forms, measured final volumes or the historical raw source. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch036/352/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| grounding-inventory | /private/tmp/culturemech-review-work-batch036/352/grounding-inventory.json; Complete manually assessed local layers and deterministic exact-field serialization | context_only | Exact field paths, original values and historical objects retained; provenance is not primary authentication. |
+| history-inventory | /private/tmp/culturemech-review-work-batch036/352/history-inventory.json; Complete manually assessed local layers and deterministic exact-field serialization | context_only | Exact field paths, original values and historical objects retained; provenance is not primary authentication. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Exact current solution 6129 access returned HTTP 503; original failed attempts are retained and do not prove source nonexistence.
+- Exact current solution 6129 access returned HTTP 503; original failed attempts are retained and do not prove source nonexistence.
+- Current exact MediaDive 925 API returned 503; the full current DSMZ primary is available, so this optional provider failure does not make primary amounts unavailable.
+- The separately preserved exact API retry also returned 503; it does not supersede or authenticate any successful historical payload.
+- This scientific assessment preceded formal validation and saving; their results are recorded separately.
+- Required historical solution 6129 raw correspondence remains unavailable. Current DSMZ primary and TOGO selected branch are available; failed optional API requests do not invalidate those sources. No measured final main or acid-adjusted stock volume is inferred.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T194803Z-culturemech-009037-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: alkaliphilic_sulphur_respiring_strains_medium
+  (CultureMech:009037)'
+started_at: '2026-10-21T19:39:55Z'
+finished_at: '2026-10-21T19:48:03Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: Exact DSMZ 925 and TOGO M2459 retain a mineral base, a separately sterilized
+  trace stock and selected DSM 13531 KSCN growth additions. Local records flatten
+  stocks, turn nine milligram amounts into g/L numerals and misrepresent liquid additions.
+  The linked solution 6129 is a different formula with five derivative-only historical
+  claims. Separate primary strain branches and the unavailable historical raw response
+  keep source scope explicit.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml
+    sha256: dfa567ffda0721980a9a44b22a360c8fa5941ac3e6511ad7730ad78d3214c98a
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml
+    sha256: 1960f96ad25090f856db12b9a1831832008c79775c3449bf7f1eec0aa470d6f7
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_6129_Trace_elements_solution.yaml
+    sha256: f8dc196d75f0176cd99b8125f6ca3f9d8377422a189e6808d16c04340109cd05
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-solutions-4500-4770/plan.json
+    sha256: 2679e61f2f0f09cc4becc645dea566cd0c93feb1b0d7f13d7e197411d2051cd3
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-solutions-4500-4770/records/bacterial/mediadive_6129_Trace_elements_solution.yaml.md
+    sha256: 6329f7f95876e28ae96ba1f6856876696b1d82132fa11b2368d1b84535ec16d3
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/add_metal_ree_labels.py
+    sha256: f4d45eaf1e633af60de15629b7b85371ea6d509052b6161fad63f7b607853b10
+    role: context
+  - path: scripts/analyze_metal_concentrations.py
+    sha256: d9e414741123d14bf7350f57bd280eb2188bc9fc1a87917ce3d96a45c9d826cf
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/togo_raw_yaml.py
+    sha256: ce5e73545c9ecde54724259d2fd475676c0f3cb44dcfd283950e89fd49c10993
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/togo_fetcher.py
+    sha256: 7aac40fe1d47e30810ae0be02f6e369ddb9bf657d630072595c62f46fb0bf339
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 352; batch 036 item 2 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirty-five task batches
+    contain 350 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 353 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:009037
+targets:
+- target_id: CultureMech:009037
+  path: data/merge_yaml/merged/Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml
+  label: alkaliphilic_sulphur_respiring_strains_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:009037
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch036/352/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-036/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch036/352/strict.tsv"
+  target_ids:
+  - CultureMech:009037
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:009037
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:009037
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:009037
+- check_id: solution6129-source-access
+  name: 'Exact source content access: solution6129'
+  required: false
+  status: unavailable
+  summary: Exact current solution 6129 access returned HTTP 503; original failed attempts
+    are retained and do not prove source nonexistence.
+  target_ids:
+  - CultureMech:009037
+  evidence_ids:
+  - solution6129-attempt
+- check_id: solution6129_retry-source-access
+  name: 'Exact source content access: solution6129_retry'
+  required: false
+  status: unavailable
+  summary: Exact current solution 6129 access returned HTTP 503; original failed attempts
+    are retained and do not prove source nonexistence.
+  target_ids:
+  - CultureMech:009037
+  evidence_ids:
+  - solution6129_retry-attempt
+- check_id: historical6129-raw-correspondence
+  name: Required historical solution 6129 raw correspondence
+  required: true
+  status: unavailable
+  summary: Five unique existing claims match decoded derivative report objects only.
+    The exact cited historical raw response remains unavailable within the documented
+    bounded search.
+  target_ids:
+  - CultureMech:009037
+  evidence_ids:
+  - dependency6129
+  - historical6129-report
+  - solution6129-attempt
+  - solution6129_retry-attempt
+- check_id: mediadive925api-source-access
+  name: 'Exact source content access: mediadive925api'
+  required: false
+  status: unavailable
+  summary: Current exact MediaDive 925 API returned 503; the full current DSMZ primary
+    is available, so this optional provider failure does not make primary amounts
+    unavailable.
+  target_ids:
+  - CultureMech:009037
+  evidence_ids:
+  - mediadive925api-attempt
+- check_id: mediadive925api_retry-source-access
+  name: 'Exact source content access: mediadive925api_retry'
+  required: false
+  status: unavailable
+  summary: The separately preserved exact API retry also returned 503; it does not
+    supersede or authenticate any successful historical payload.
+  target_ids:
+  - CultureMech:009037
+  evidence_ids:
+  - mediadive925api_retry-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T19:48:02Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T19:48:02Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T19:40:48.877745Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch036/352/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T19:40:50.047567Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-036/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch036/352/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T19:40:51.406220Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T19:40:52.296764Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T19:48:02Z'
+  support: supports
+  summary: './data/merge_yaml/merged/Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml:1:id:
+    CultureMech:009037
+
+    ./data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml:1:id:
+    CultureMech:009037
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch036/source-preflight-bound/352/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T19:48:02Z'
+  support: supports
+  summary: 28 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 917da2adfb85661b9edad13add147123c32ddd856e69fb802e0b45ec62192d0b
+- evidence_id: dsmz925
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf
+  locator: PDF pages 1–2; mineral base, trace stock, late additions, sterile stocks
+    and individual Growth branches
+  accessed_at: '2026-10-21T19:22:05.285641Z'
+  support: supports
+  summary: The full primary table prints EDTA 5.0 mg and FeSO4 x 7 H2O 2.0 mg. These
+    unusual literal values are retained; no customary stock recipe is substituted.
+  quote: EDTA 5.0 mg
+  snapshot_sha256: 7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb
+- evidence_id: togo2459
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459
+  locator: $.components[0:5]; comments[2,5,7,8,10,12]
+  accessed_at: '2026-10-21T19:22:04.829961Z'
+  support: supports
+  summary: The exact provider preserves DSM 13531 selected KSCN conditions and separate
+    trace/KSCN stock tables; other DSMZ branches are not universal medium instructions.
+  snapshot_sha256: 386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5
+- evidence_id: dependency6129
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_6129_Trace_elements_solution.yaml
+  locator: Complete composition, placeholder, references and seven historical events
+  accessed_at: '2026-10-21T19:48:02Z'
+  support: context_only
+  summary: Five attached amount objects are historical derivative claims for this
+    separate stock; they do not establish that it is the medium’s required trace solution.
+  snapshot_sha256: f8dc196d75f0176cd99b8125f6ca3f9d8377422a189e6808d16c04340109cd05
+- evidence_id: historical6129-report
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-solutions-4500-4770/records/bacterial/mediadive_6129_Trace_elements_solution.yaml.md
+  locator: Five composition rows, exact HTML-decoded snippets and original access/hash
+    statements
+  accessed_at: '2026-10-21T19:48:02Z'
+  support: context_only
+  summary: All five existing snippets are literal in the decoded local report. The
+    report is a derivative; the cited raw response 4ee096d7a46e81f2dc9699c9abd6b7d4721d60dd543b419c417ca5bd818bff99
+    was not recovered within the documented bounded source search.
+  snapshot_sha256: 6329f7f95876e28ae96ba1f6856876696b1d82132fa11b2368d1b84535ec16d3
+- evidence_id: solution6129-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/6129
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T19:22:02.343355Z'
+  support: context_only
+  summary: Exact current solution 6129 access returned HTTP 503; original failed attempts
+    are retained and do not prove source nonexistence.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: solution6129_retry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/6129
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T19:22:49.290824Z'
+  support: context_only
+  summary: Exact current solution 6129 access returned HTTP 503; original failed attempts
+    are retained and do not prove source nonexistence.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.097802Z'
+  support: supports
+  summary: CHEBI:15377 resolves to water. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi17883
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17883
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:37:25.439020Z'
+  support: supports
+  summary: CHEBI:17883 resolves to hydrogen chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 1c4c2e8e3474319ab5fb79041b19cabfae42f4360729a7569f8a943a503d2f6a
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi29377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:31:16.500548Z'
+  support: supports
+  summary: CHEBI:29377 resolves to sodium carbonate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 21ae6468f9d087fd7930a263fc44728e31a8babde3576135686278a13bc1d6e1
+- evidence_id: chebi30951
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30951
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T19:22:05.626326Z'
+  support: supports
+  summary: CHEBI:30951 resolves to potassium thiocyanate. Identifier existence and
+    label metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: f7fe93dd061ea1c87e530da8d541308473aa8ba9795cd85bf5f6d99acc2153d3
+- evidence_id: chebi32139
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:16:24.226823Z'
+  support: supports
+  summary: CHEBI:32139 resolves to sodium hydrogencarbonate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 2a41873aa455dc8563a47d36add836fffb6fb758ce7a2d1c28295e77646315fe
+- evidence_id: chebi32312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.879505Z'
+  support: supports
+  summary: CHEBI:32312 resolves to zinc sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.364390Z'
+  support: supports
+  summary: CHEBI:33118 resolves to boric acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi34887
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:04:44.093348Z'
+  support: supports
+  summary: CHEBI:34887 resolves to nickel dichloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: chebi4735
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_4735
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:33:28.659368Z'
+  support: supports
+  summary: CHEBI:4735 resolves to ethylenediaminetetraacetic acid. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: ef8713e257a5e52aa813d8a43a26ed321ff04a475591ff238c00a47758f96717
+- evidence_id: chebi53503
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:04:44.349630Z'
+  support: supports
+  summary: CHEBI:53503 resolves to cobalt chloride hexahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: c33e304a0a565068c592ba0970e501052981599ef69cd2cb901e88f27931389d
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi75836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:07.038393Z'
+  support: supports
+  summary: CHEBI:75836 resolves to iron(2+) sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: chebi86318
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:43:12.592415Z'
+  support: supports
+  summary: CHEBI:86318 resolves to copper(II) chloride dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 9bbecfe37d67d923ee070067aebdf1abf21048cdb2cbdff9de0e3d21f68ea1ae
+- evidence_id: chebi86368
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.657545Z'
+  support: supports
+  summary: CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Identifier
+    existence and label metadata do not establish source-specific hydrate, stereochemistry
+    or product identity.
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T19:48:02Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131527":
+    [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527",
+    "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:15377": [{"label": "Distilled water", "match_type":
+    "preferred_term", "identifier": "CHEBI:15377", "preferred_term": "Distilled water",
+    "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:17883": [{"label": "HCl", "match_type": "preferred_term", "identifier":
+    "CHEBI:17883", "preferred_term": "HCl", "ontology_id": "CHEBI:17883", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:26710": [{"label": "NaCl", "match_type":
+    "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id":
+    "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:29377":
+    [{"label": "Na2CO3", "match_type": "preferred_term", "identifier": "CHEBI:29377",
+    "preferred_term": "Na2CO3", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "Sodium carbonate solution", "match_type": "preferred_term",
+    "identifier": "CHEBI:29377", "preferred_term": "Sodium carbonate solution", "ontology_id":
+    "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:30951":
+    [{"label": "KSCN", "match_type": "preferred_term", "identifier": "CHEBI:30951",
+    "preferred_term": "KSCN", "ontology_id": "CHEBI:30951", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:32139": [{"label": "NaHCO3", "match_type": "preferred_term",
+    "identifier": "CHEBI:32139", "preferred_term": "NaHCO3", "ontology_id": "CHEBI:32139",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32312": [{"label":
+    "ZnSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:32312",
+    "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type":
+    "preferred_term", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id":
+    "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:34887":
+    [{"label": "NiCl2", "match_type": "preferred_term", "identifier": "CHEBI:34887",
+    "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:4735": [{"label": "EDTA", "match_type": "preferred_term",
+    "identifier": "CHEBI:4735", "preferred_term": "EDTA", "ontology_id": "CHEBI:4735",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:53503": [{"label":
+    "Cobalt chloride hexahydrate", "match_type": "preferred_term", "identifier": "CHEBI:53503",
+    "preferred_term": "Cobalt chloride hexahydrate", "ontology_id": "CHEBI:53503",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75213": [{"label":
+    "Na2MoO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75213",
+    "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:75836": [{"label": "FeSO4 x 7 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:75836", "preferred_term":
+    "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:86318": [{"label": "CuCl2 x 2 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:86318", "preferred_term": "CuCl2 x 2 H2O", "ontology_id":
+    "CHEBI:86318", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86368":
+    [{"label": "MnCl2 x 4 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86368",
+    "preferred_term": "MnCl2 x 4 H2O", "ontology_id": "CHEBI:86368", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml;
+    data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T19:48:02Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 13, "timestamp_issues": []}, {"input":
+    "data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml",
+    "events": 13, "timestamp_issues": []}]'
+- evidence_id: mediadive925api-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/925
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T19:22:02.342707Z'
+  support: context_only
+  summary: Current exact MediaDive 925 API returned 503; the full current DSMZ primary
+    is available, so this optional provider failure does not make primary amounts
+    unavailable.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadive925api_retry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/925
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T19:22:49.290698Z'
+  support: context_only
+  summary: The separately preserved exact API retry also returned 503; it does not
+    supersede or authenticate any successful historical payload.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T19:48:02Z'
+  support: context_only
+  summary: Current import logic distinguishes stock references and source batch units;
+    current duplicate handling no longer sums conflicting rows. Metal analysis uses
+    direct ingredient concentrations with approximate unit conversion and a corpus
+    percentile, then the label writer applies filename membership. These writers do
+    not independently establish supplied chemical forms, measured final volumes or
+    the historical raw source.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: writer-1
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T19:48:02Z'
+  support: context_only
+  summary: Current import logic distinguishes stock references and source batch units;
+    current duplicate handling no longer sums conflicting rows. Metal analysis uses
+    direct ingredient concentrations with approximate unit conversion and a corpus
+    percentile, then the label writer applies filename membership. These writers do
+    not independently establish supplied chemical forms, measured final volumes or
+    the historical raw source.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer-2
+  kind: record_content
+  reference: scripts/analyze_metal_concentrations.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T19:48:02Z'
+  support: context_only
+  summary: Current import logic distinguishes stock references and source batch units;
+    current duplicate handling no longer sums conflicting rows. Metal analysis uses
+    direct ingredient concentrations with approximate unit conversion and a corpus
+    percentile, then the label writer applies filename membership. These writers do
+    not independently establish supplied chemical forms, measured final volumes or
+    the historical raw source.
+  snapshot_sha256: d9e414741123d14bf7350f57bd280eb2188bc9fc1a87917ce3d96a45c9d826cf
+- evidence_id: writer-3
+  kind: record_content
+  reference: scripts/add_metal_ree_labels.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T19:48:02Z'
+  support: context_only
+  summary: Current import logic distinguishes stock references and source batch units;
+    current duplicate handling no longer sums conflicting rows. Metal analysis uses
+    direct ingredient concentrations with approximate unit conversion and a corpus
+    percentile, then the label writer applies filename membership. These writers do
+    not independently establish supplied chemical forms, measured final volumes or
+    the historical raw source.
+  snapshot_sha256: f4d45eaf1e633af60de15629b7b85371ea6d509052b6161fad63f7b607853b10
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch036/352/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T19:48:02Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 75024a167b776b071b0c1ee7514971b4ac71dfd1bfba8f32c27034b0353a4073
+- evidence_id: grounding-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch036/352/grounding-inventory.json
+  locator: Complete manually assessed local layers and deterministic exact-field serialization
+  accessed_at: '2026-10-21T19:48:02Z'
+  support: context_only
+  summary: Exact field paths, original values and historical objects retained; provenance
+    is not primary authentication.
+  snapshot_sha256: 1b53856f55dc6d43d87d8b8b8b0fe725219e9c23d19bad416b42a53dea149244
+- evidence_id: history-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch036/352/history-inventory.json
+  locator: Complete manually assessed local layers and deterministic exact-field serialization
+  accessed_at: '2026-10-21T19:48:02Z'
+  support: context_only
+  summary: Exact field paths, original values and historical objects retained; provenance
+    is not primary authentication.
+  snapshot_sha256: 3f758d0fe39414d1b4e533e4d2fde820b1a8dd6a171af314ec44edd3624031a4
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:009037
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: concern
+  summary: '16 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 16/17
+    primary and 16/17 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Exact supplied-form mismatch is addressed separately; valid IDs and labels do
+    not establish correct source grounding.'
+  target_ids:
+  - CultureMech:009037
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi131527
+  - chebi15377
+  - chebi17883
+  - chebi26710
+  - chebi29377
+  - chebi30951
+  - chebi32139
+  - chebi32312
+  - chebi33118
+  - chebi34887
+  - chebi4735
+  - chebi53503
+  - chebi75213
+  - chebi75836
+  - chebi86318
+  - chebi86368
+  details: 'Instance coverage on a 0–100 percent scale, denominator 17: primary 94.12%;
+    secondary 94.12%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 26 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:009037
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: identity
+  area: identity
+  topic: Source branch and maintained ownership
+  outcome: supported
+  summary: The maintained TOGO M2459 owner and generated CultureMech:009037 share
+    their exact identity. TOGO selects the DSM 13531 KSCN growth branch from a broader
+    DSMZ 925 primary. The primary’s other strains and electron-donor/acceptor conditions
+    remain distinct source context, not additional ingredients of this selected formulation.
+  target_ids:
+  - CultureMech:009037
+  evidence_ids:
+  - record
+  - dsmz925
+  - togo2459
+  - owner-0
+- assessment_id: source-stage-consistency
+  area: consistency
+  topic: Mineral, trace and KSCN stages
+  outcome: concern
+  summary: Nine printed trace amounts in mg were retained as G_PER_L numerals, including
+    literal EDTA 5 mg and FeSO4·7H2O 2 mg; none is silently replaced by a customary
+    g-scale formula. Trace and KSCN water were merged with basal water; the 2 mL/L
+    trace and 1 mL/L magnesium doses became mass rates. KSCN 194 g/L stock is flattened
+    beside its selected 15 mM working condition.
+  target_ids:
+  - CultureMech:009037
+  evidence_ids:
+  - record
+  - dsmz925
+  - togo2459
+  - quantity-inventory
+  - owner-0
+- assessment_id: forms
+  area: grounding
+  topic: Source-specific salt forms
+  outcome: concern
+  summary: Cobalt chloride hexahydrate CHEBI:53503 is correct in this record, unlike
+    anhydrous cobalt assignments elsewhere. Nickel chloride hexahydrate is incorrectly
+    assigned anhydrous CHEBI:34887 in both primary and secondary slots. The source’s
+    other explicit hydrates match their asserted identities. EDTA hydration is not
+    printed and is not inferred.
+  target_ids:
+  - CultureMech:009037
+  evidence_ids:
+  - dsmz925
+  - chebi53503
+  - chebi34887
+  - chebi4735
+- assessment_id: preparation
+  area: completeness
+  topic: Distinct cycles and selected conditions
+  outcome: concern
+  summary: Both local layers omit mineral-base 110 °C/20 min closed-vessel sterilization
+    and approximate post-cycle pH 10, trace-stock pH 3 with unquantified HCl and separate
+    120 °C/20 min cycle, and post-sterilization additions. The selected DSM 13531
+    branch specifies up to 15 mM KSCN, 30 °C, static conical flasks with a 1/10 liquid-to-air
+    ratio and about one week. Alternate shaking/gas regimes remain separate primary
+    branches.
+  target_ids:
+  - CultureMech:009037
+  evidence_ids:
+  - dsmz925
+  - togo2459
+  - quantity-inventory
+  - owner-0
+- assessment_id: classification
+  area: scope
+  topic: Defined inorganic recipe and derived metal label
+  outcome: concern
+  summary: The named mineral/KSCN formulation contains specified chemicals; COMPLEX/UNDEFINED
+    lacks source support, while LIQUID is supported. No source-defined complex material
+    is listed. Reassess high_metal only after repairing mg units and stock scope,
+    using both inspected writers and a current corpus distribution; this review does
+    not simply flip the Boolean. Strain mentions are source-specific context, not
+    newly asserted taxonomy or experimentally verified growth. No KG match or DOI/PMID
+    is asserted.
+  target_ids:
+  - CultureMech:009037
+  evidence_ids:
+  - record
+  - dsmz925
+  - writer-2
+  - writer-3
+  - owner-0
+- assessment_id: claim-history
+  area: evidence
+  topic: Historical stock claims and claim-level evidence
+  outcome: unknown
+  summary: Main layers have no attached amount support. Five separate solution 6129
+    claims match decoded local reports only; current requests fail and cited historical
+    raw remains unrecovered. The local five-solute formula differs from the required
+    trace stock. Its two timezone-naive history events and placeholder remain intact
+    as historical/unresolved data; no verified amount decision is assigned.
+  target_ids:
+  - CultureMech:009037
+  evidence_ids:
+  - record
+  - dependency6129
+  - historical6129-report
+  - solution6129-attempt
+  - owner-0
+- assessment_id: ownership
+  area: provenance
+  topic: Stale merge and append-only repair
+  outcome: supported
+  summary: The generated 3000 G_PER_L water versus owner 1000 G_PER_L reflects a later
+    duplicate-collapse repair in the owner, but neither is a valid representation
+    of the three separate water stages. Correct the maintained source representation
+    before regeneration. Preserve all historical events and source access times, appending
+    a later authorized clarification rather than rewriting them.
+  target_ids:
+  - CultureMech:009037
+  evidence_ids:
+  - record
+  - history-metadata
+  - writer-0
+  - writer-1
+  - owner-0
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 52 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:009037
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"ingredient_or_context\": \"\
+    Distilled water\",\n    \"field_path\": \"ingredients[0].concentration\",\n  \
+    \  \"local\": {\n      \"value\": \"3000.0\",\n      \"unit\": \"G_PER_L\"\n \
+    \   },\n    \"source_amount\": 1000,\n    \"source_unit\": \"ml\",\n    \"source_stage\"\
+    : \"Mineral base batch\",\n    \"primary_source_evidence_id\": \"dsmz925\",\n\
+    \    \"decision\": \"correct\",\n    \"source_snippets\": [\n      {\n       \
+    \ \"source_key\": \"togoM2459original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459\"\
+    ,\n        \"source_locator\": \"$.components[0].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1000,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\":\
+    \ \"386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5\"\n     \
+    \ }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3000.0\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\",\n        \"rationale\": \"1000 mL water\
+    \ belongs to the mineral base, distinct from trace-stock and KSCN-stock water.\
+    \ Generated 3000 G_PER_L and maintained 1000 G_PER_L collapse stages and turn\
+    \ volume into mass; duplicate repair alone is insufficient.\"\n      },\n    \
+    \  {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1000.0\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\",\n        \"rationale\": \"1000 mL water\
+    \ belongs to the mineral base, distinct from trace-stock and KSCN-stock water.\
+    \ Generated 3000 G_PER_L and maintained 1000 G_PER_L collapse stages and turn\
+    \ volume into mass; duplicate repair alone is insufficient.\"\n      }\n    ],\n\
+    \    \"arithmetic_and_scope\": \"1000 mL water belongs to the mineral base, distinct\
+    \ from trace-stock and KSCN-stock water. Generated 3000 G_PER_L and maintained\
+    \ 1000 G_PER_L collapse stages and turn volume into mass; duplicate repair alone\
+    \ is insufficient.\"\n  },\n  {\n    \"quantity_id\": \"q2\",\n    \"ingredient_or_context\"\
+    : \"NaCl\",\n    \"field_path\": \"ingredients[1].concentration\",\n    \"local\"\
+    : {\n      \"value\": \"5\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 5,\n    \"source_unit\": \"g\",\n    \"source_stage\": \"Mineral base batch\"\
+    ,\n    \"primary_source_evidence_id\": \"dsmz925\",\n    \"decision\": \"correct\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM2459original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459\"\
+    ,\n        \"source_locator\": \"$.components[0].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NaCl\\\",\\n          \\\"volume\\\": 5,\\n  \
+    \        \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[1].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"correct\",\n        \"rationale\": \"Preserve\
+    \ this mineral-base batch mass. Water 1000 mL is an addition, not a measured final\
+    \ medium volume after stocks; no final g/L denominator is independently established.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Preserve this mineral-base\
+    \ batch mass. Water 1000 mL is an addition, not a measured final medium volume\
+    \ after stocks; no final g/L denominator is independently established.\"\n   \
+    \   }\n    ],\n    \"arithmetic_and_scope\": \"Preserve this mineral-base batch\
+    \ mass. Water 1000 mL is an addition, not a measured final medium volume after\
+    \ stocks; no final g/L denominator is independently established.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q3\",\n    \"ingredient_or_context\": \"K2HPO4\",\n  \
+    \  \"field_path\": \"ingredients[2].concentration\",\n    \"local\": {\n     \
+    \ \"value\": \"1\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 1,\n    \"source_unit\": \"g\",\n    \"source_stage\": \"Mineral base batch\"\
+    ,\n    \"primary_source_evidence_id\": \"dsmz925\",\n    \"decision\": \"correct\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM2459original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459\"\
+    ,\n        \"source_locator\": \"$.components[0].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"K2HPO4\\\",\\n          \\\"volume\\\": 1,\\n\
+    \          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[2].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"correct\",\n        \"rationale\": \"Preserve\
+    \ this mineral-base batch mass. Water 1000 mL is an addition, not a measured final\
+    \ medium volume after stocks; no final g/L denominator is independently established.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Preserve this mineral-base\
+    \ batch mass. Water 1000 mL is an addition, not a measured final medium volume\
+    \ after stocks; no final g/L denominator is independently established.\"\n   \
+    \   }\n    ],\n    \"arithmetic_and_scope\": \"Preserve this mineral-base batch\
+    \ mass. Water 1000 mL is an addition, not a measured final medium volume after\
+    \ stocks; no final g/L denominator is independently established.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q4\",\n    \"ingredient_or_context\": \"NaHCO3\",\n  \
+    \  \"field_path\": \"ingredients[3].concentration\",\n    \"local\": {\n     \
+    \ \"value\": \"10\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 10,\n    \"source_unit\": \"g\",\n    \"source_stage\": \"Mineral base batch\"\
+    ,\n    \"primary_source_evidence_id\": \"dsmz925\",\n    \"decision\": \"correct\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM2459original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459\"\
+    ,\n        \"source_locator\": \"$.components[0].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NaHCO3\\\",\\n          \\\"volume\\\": 10,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[3].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"Preserve\
+    \ this mineral-base batch mass. Water 1000 mL is an addition, not a measured final\
+    \ medium volume after stocks; no final g/L denominator is independently established.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Preserve this mineral-base\
+    \ batch mass. Water 1000 mL is an addition, not a measured final medium volume\
+    \ after stocks; no final g/L denominator is independently established.\"\n   \
+    \   }\n    ],\n    \"arithmetic_and_scope\": \"Preserve this mineral-base batch\
+    \ mass. Water 1000 mL is an addition, not a measured final medium volume after\
+    \ stocks; no final g/L denominator is independently established.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q5\",\n    \"ingredient_or_context\": \"Na2CO3\",\n  \
+    \  \"field_path\": \"ingredients[4].concentration\",\n    \"local\": {\n     \
+    \ \"value\": \"20\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 20,\n    \"source_unit\": \"g\",\n    \"source_stage\": \"Mineral base batch\"\
+    ,\n    \"primary_source_evidence_id\": \"dsmz925\",\n    \"decision\": \"correct\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM2459original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459\"\
+    ,\n        \"source_locator\": \"$.components[0].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2CO3\\\",\\n          \\\"volume\\\": 20,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[4].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"Preserve\
+    \ this mineral-base batch mass. Water 1000 mL is an addition, not a measured final\
+    \ medium volume after stocks; no final g/L denominator is independently established.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Preserve this mineral-base\
+    \ batch mass. Water 1000 mL is an addition, not a measured final medium volume\
+    \ after stocks; no final g/L denominator is independently established.\"\n   \
+    \   }\n    ],\n    \"arithmetic_and_scope\": \"Preserve this mineral-base batch\
+    \ mass. Water 1000 mL is an addition, not a measured final medium volume after\
+    \ stocks; no final g/L denominator is independently established.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q6\",\n    \"ingredient_or_context\": \"Distilled water\"\
+    ,\n    \"field_path\": \"ingredients[0].concentration\",\n    \"local\": {\n \
+    \     \"value\": \"3000.0\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 1000,\n    \"source_unit\": \"ml\",\n    \"source_stage\": \"Separate trace\
+    \ stock before acid adjustment and sterilization\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz925\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"togoM2459original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459\",\n\
+    \        \"source_locator\": \"$.components[1].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1000,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\":\
+    \ \"386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5\"\n     \
+    \ }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3000.0\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\",\n        \"rationale\": \"Trace-stock\
+    \ 1000 mL water is separate from mineral and KSCN water. Preserve the stock preparation\
+    \ volume without claiming an independently measured final volume.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1000.0\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\",\n        \"rationale\": \"Trace-stock\
+    \ 1000 mL water is separate from mineral and KSCN water. Preserve the stock preparation\
+    \ volume without claiming an independently measured final volume.\"\n      }\n\
+    \    ],\n    \"arithmetic_and_scope\": \"Trace-stock 1000 mL water is separate\
+    \ from mineral and KSCN water. Preserve the stock preparation volume without claiming\
+    \ an independently measured final volume.\"\n  },\n  {\n    \"quantity_id\": \"\
+    q7\",\n    \"ingredient_or_context\": \"Na2MoO4 x 2 H2O\",\n    \"field_path\"\
+    : \"ingredients[5].concentration\",\n    \"local\": {\n      \"value\": \"30\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\": 30,\n    \"source_unit\"\
+    : \"mg\",\n    \"source_stage\": \"Separate trace stock before acid adjustment\
+    \ and sterilization\",\n    \"primary_source_evidence_id\": \"dsmz925\",\n   \
+    \ \"decision\": \"correct\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"togoM2459original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459\"\
+    ,\n        \"source_locator\": \"$.components[1].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2MoO4 x 2 H2O\\\",\\n          \\\"volume\\\"\
+    : 30,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This is a separately\
+    \ prepared trace-stock amount. The source prints milligrams; divide by 1000 only\
+    \ to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram\
+    \ numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not\
+    \ establish measured final stock volume.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This is a separately\
+    \ prepared trace-stock amount. The source prints milligrams; divide by 1000 only\
+    \ to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram\
+    \ numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not\
+    \ establish measured final stock volume.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"This is a separately prepared trace-stock amount. The source prints milligrams;\
+    \ divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L\
+    \ preserves the milligram numeral as grams and loses stock scope. Its 1000 mL\
+    \ water plus HCl does not establish measured final stock volume.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q8\",\n    \"ingredient_or_context\": \"H3BO3\",\n   \
+    \ \"field_path\": \"ingredients[6].concentration\",\n    \"local\": {\n      \"\
+    value\": \"300\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 300,\n    \"source_unit\": \"mg\",\n    \"source_stage\": \"Separate trace stock\
+    \ before acid adjustment and sterilization\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz925\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"togoM2459original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459\",\n\
+    \        \"source_locator\": \"$.components[1].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"H3BO3\\\",\\n          \\\"volume\\\": 300,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[6].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"300\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"This\
+    \ is a separately prepared trace-stock amount. The source prints milligrams; divide\
+    \ by 1000 only to express the same stock-batch mass in grams. Local G_PER_L preserves\
+    \ the milligram numeral as grams and loses stock scope. Its 1000 mL water plus\
+    \ HCl does not establish measured final stock volume.\"\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"300\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This is a separately\
+    \ prepared trace-stock amount. The source prints milligrams; divide by 1000 only\
+    \ to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram\
+    \ numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not\
+    \ establish measured final stock volume.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"This is a separately prepared trace-stock amount. The source prints milligrams;\
+    \ divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L\
+    \ preserves the milligram numeral as grams and loses stock scope. Its 1000 mL\
+    \ water plus HCl does not establish measured final stock volume.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q9\",\n    \"ingredient_or_context\": \"FeSO4 x 7 H2O\"\
+    ,\n    \"field_path\": \"ingredients[7].concentration\",\n    \"local\": {\n \
+    \     \"value\": \"2\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 2,\n    \"source_unit\": \"mg\",\n    \"source_stage\": \"Separate trace stock\
+    \ before acid adjustment and sterilization\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz925\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"togoM2459original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459\",\n\
+    \        \"source_locator\": \"$.components[1].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"FeSO4 x 7 H2O\\\",\\n          \\\"volume\\\"\
+    : 2,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This is a separately\
+    \ prepared trace-stock amount. The source prints milligrams; divide by 1000 only\
+    \ to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram\
+    \ numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not\
+    \ establish measured final stock volume.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This is a separately\
+    \ prepared trace-stock amount. The source prints milligrams; divide by 1000 only\
+    \ to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram\
+    \ numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not\
+    \ establish measured final stock volume.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"This is a separately prepared trace-stock amount. The source prints milligrams;\
+    \ divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L\
+    \ preserves the milligram numeral as grams and loses stock scope. Its 1000 mL\
+    \ water plus HCl does not establish measured final stock volume.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q10\",\n    \"ingredient_or_context\": \"MnCl2 x 4 H2O\"\
+    ,\n    \"field_path\": \"ingredients[8].concentration\",\n    \"local\": {\n \
+    \     \"value\": \"30\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 30,\n    \"source_unit\": \"mg\",\n    \"source_stage\": \"Separate trace stock\
+    \ before acid adjustment and sterilization\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz925\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"togoM2459original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459\",\n\
+    \        \"source_locator\": \"$.components[1].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MnCl2 x 4 H2O\\\",\\n          \\\"volume\\\"\
+    : 30,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This is a separately\
+    \ prepared trace-stock amount. The source prints milligrams; divide by 1000 only\
+    \ to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram\
+    \ numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not\
+    \ establish measured final stock volume.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This is a separately\
+    \ prepared trace-stock amount. The source prints milligrams; divide by 1000 only\
+    \ to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram\
+    \ numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not\
+    \ establish measured final stock volume.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"This is a separately prepared trace-stock amount. The source prints milligrams;\
+    \ divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L\
+    \ preserves the milligram numeral as grams and loses stock scope. Its 1000 mL\
+    \ water plus HCl does not establish measured final stock volume.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q11\",\n    \"ingredient_or_context\": \"CoCl2 x 6 H2O\"\
+    ,\n    \"field_path\": \"ingredients[9].concentration\",\n    \"local\": {\n \
+    \     \"value\": \"200\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 200,\n    \"source_unit\": \"mg\",\n    \"source_stage\": \"Separate trace stock\
+    \ before acid adjustment and sterilization\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz925\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"togoM2459original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459\",\n\
+    \        \"source_locator\": \"$.components[1].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CoCl2 x 6 H2O\\\",\\n          \\\"volume\\\"\
+    : 200,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"200\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This is a separately\
+    \ prepared trace-stock amount. The source prints milligrams; divide by 1000 only\
+    \ to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram\
+    \ numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not\
+    \ establish measured final stock volume.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"200\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This is a separately\
+    \ prepared trace-stock amount. The source prints milligrams; divide by 1000 only\
+    \ to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram\
+    \ numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not\
+    \ establish measured final stock volume.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"This is a separately prepared trace-stock amount. The source prints milligrams;\
+    \ divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L\
+    \ preserves the milligram numeral as grams and loses stock scope. Its 1000 mL\
+    \ water plus HCl does not establish measured final stock volume.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q12\",\n    \"ingredient_or_context\": \"NiCl2 x 6 H2O\"\
+    ,\n    \"field_path\": \"ingredients[10].concentration\",\n    \"local\": {\n\
+    \      \"value\": \"20\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 20,\n    \"source_unit\": \"mg\",\n    \"source_stage\": \"Separate trace stock\
+    \ before acid adjustment and sterilization\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz925\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"togoM2459original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459\",\n\
+    \        \"source_locator\": \"$.components[1].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NiCl2 x 6 H2O\\\",\\n          \\\"volume\\\"\
+    : 20,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This is a separately\
+    \ prepared trace-stock amount. The source prints milligrams; divide by 1000 only\
+    \ to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram\
+    \ numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not\
+    \ establish measured final stock volume.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This is a separately\
+    \ prepared trace-stock amount. The source prints milligrams; divide by 1000 only\
+    \ to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram\
+    \ numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not\
+    \ establish measured final stock volume.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"This is a separately prepared trace-stock amount. The source prints milligrams;\
+    \ divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L\
+    \ preserves the milligram numeral as grams and loses stock scope. Its 1000 mL\
+    \ water plus HCl does not establish measured final stock volume.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q13\",\n    \"ingredient_or_context\": \"ZnSO4 x 7 H2O\"\
+    ,\n    \"field_path\": \"ingredients[11].concentration\",\n    \"local\": {\n\
+    \      \"value\": \"100\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 100,\n    \"source_unit\": \"mg\",\n    \"source_stage\": \"Separate trace stock\
+    \ before acid adjustment and sterilization\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz925\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"togoM2459original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459\",\n\
+    \        \"source_locator\": \"$.components[1].items[7]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"ZnSO4 x 7 H2O\\\",\\n          \\\"volume\\\"\
+    : 100,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"100\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This is a separately\
+    \ prepared trace-stock amount. The source prints milligrams; divide by 1000 only\
+    \ to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram\
+    \ numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not\
+    \ establish measured final stock volume.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"100\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This is a separately\
+    \ prepared trace-stock amount. The source prints milligrams; divide by 1000 only\
+    \ to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram\
+    \ numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not\
+    \ establish measured final stock volume.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"This is a separately prepared trace-stock amount. The source prints milligrams;\
+    \ divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L\
+    \ preserves the milligram numeral as grams and loses stock scope. Its 1000 mL\
+    \ water plus HCl does not establish measured final stock volume.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q14\",\n    \"ingredient_or_context\": \"CuCl2 x 2 H2O\"\
+    ,\n    \"field_path\": \"ingredients[12].concentration\",\n    \"local\": {\n\
+    \      \"value\": \"10\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 10,\n    \"source_unit\": \"mg\",\n    \"source_stage\": \"Separate trace stock\
+    \ before acid adjustment and sterilization\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz925\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"togoM2459original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459\",\n\
+    \        \"source_locator\": \"$.components[1].items[8]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CuCl2 x 2 H2O\\\",\\n          \\\"volume\\\"\
+    : 10,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This is a separately\
+    \ prepared trace-stock amount. The source prints milligrams; divide by 1000 only\
+    \ to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram\
+    \ numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not\
+    \ establish measured final stock volume.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This is a separately\
+    \ prepared trace-stock amount. The source prints milligrams; divide by 1000 only\
+    \ to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram\
+    \ numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not\
+    \ establish measured final stock volume.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"This is a separately prepared trace-stock amount. The source prints milligrams;\
+    \ divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L\
+    \ preserves the milligram numeral as grams and loses stock scope. Its 1000 mL\
+    \ water plus HCl does not establish measured final stock volume.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q15\",\n    \"ingredient_or_context\": \"EDTA\",\n   \
+    \ \"field_path\": \"ingredients[13].concentration\",\n    \"local\": {\n     \
+    \ \"value\": \"5\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 5,\n    \"source_unit\": \"mg\",\n    \"source_stage\": \"Separate trace stock\
+    \ before acid adjustment and sterilization\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz925\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"togoM2459original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459\",\n\
+    \        \"source_locator\": \"$.components[1].items[9]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"EDTA\\\",\\n          \\\"volume\\\": 5,\\n  \
+    \        \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[13].concentration\",\n      \
+    \  \"stored\": {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"This\
+    \ is a separately prepared trace-stock amount. The source prints milligrams; divide\
+    \ by 1000 only to express the same stock-batch mass in grams. Local G_PER_L preserves\
+    \ the milligram numeral as grams and loses stock scope. Its 1000 mL water plus\
+    \ HCl does not establish measured final stock volume.\"\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This is a separately\
+    \ prepared trace-stock amount. The source prints milligrams; divide by 1000 only\
+    \ to express the same stock-batch mass in grams. Local G_PER_L preserves the milligram\
+    \ numeral as grams and loses stock scope. Its 1000 mL water plus HCl does not\
+    \ establish measured final stock volume.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"This is a separately prepared trace-stock amount. The source prints milligrams;\
+    \ divide by 1000 only to express the same stock-batch mass in grams. Local G_PER_L\
+    \ preserves the milligram numeral as grams and loses stock scope. Its 1000 mL\
+    \ water plus HCl does not establish measured final stock volume.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q16\",\n    \"ingredient_or_context\": \"HCl\",\n    \"\
+    field_path\": \"ingredients[14].concentration\",\n    \"local\": {\n      \"value\"\
+    : \"variable\",\n      \"unit\": \"VARIABLE\"\n    },\n    \"source_amount\":\
+    \ null,\n    \"source_unit\": null,\n    \"source_stage\": \"Separate trace stock\
+    \ before acid adjustment and sterilization\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz925\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"togoM2459original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459\",\n\
+    \        \"source_locator\": \"$.components[1].items[10]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"HCl\\\"\",\n        \"snapshot_sha256\": \"386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[14].concentration\",\n      \
+    \  \"stored\": {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"HCl\
+    \ is added only as needed to trace-stock pH 3. VARIABLE correctly avoids a numerical\
+    \ dose, but its present main-ingredient placement is wrong; restore stock scope\
+    \ and do not invent an amount.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"correct\",\n        \"rationale\": \"HCl is\
+    \ added only as needed to trace-stock pH 3. VARIABLE correctly avoids a numerical\
+    \ dose, but its present main-ingredient placement is wrong; restore stock scope\
+    \ and do not invent an amount.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"HCl is added only as needed to trace-stock pH 3. VARIABLE correctly avoids\
+    \ a numerical dose, but its present main-ingredient placement is wrong; restore\
+    \ stock scope and do not invent an amount.\"\n  },\n  {\n    \"quantity_id\":\
+    \ \"q17\",\n    \"ingredient_or_context\": \"MgCl2 x 6 H2O (200.0 g/l)\",\n  \
+    \  \"field_path\": \"ingredients[15].concentration\",\n    \"local\": {\n    \
+    \  \"value\": \"1\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 1,\n    \"source_unit\": \"ml/l\",\n    \"source_stage\": \"Post-sterilization\
+    \ magnesium stock addition\",\n    \"primary_source_evidence_id\": \"dsmz925\"\
+    ,\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"togoM2459original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459\"\
+    ,\n        \"source_locator\": \"$.components[2].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MgCl2 x 6 H2O (200.0 g/l)\\\",\\n          \\\"\
+    volume\\\": 1,\\n          \\\"unit\\\": \\\"ml/l\\\"\",\n        \"snapshot_sha256\"\
+    : \"386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5\"\n     \
+    \ }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Source explicitly\
+    \ gives 1 mL/L of a 200 g/L magnesium chloride hexahydrate stock, not 1 g/L reagent.\
+    \ The stated dose would deliver 0.2 g per stated litre basis; this does not establish\
+    \ the measured final volume of the entire recipe.\"\n      },\n      {\n     \
+    \   \"input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Source explicitly\
+    \ gives 1 mL/L of a 200 g/L magnesium chloride hexahydrate stock, not 1 g/L reagent.\
+    \ The stated dose would deliver 0.2 g per stated litre basis; this does not establish\
+    \ the measured final volume of the entire recipe.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Source explicitly gives 1 mL/L of a 200 g/L magnesium chloride hexahydrate\
+    \ stock, not 1 g/L reagent. The stated dose would deliver 0.2 g per stated litre\
+    \ basis; this does not establish the measured final volume of the entire recipe.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q18\",\n    \"ingredient_or_context\": \"\
+    Trace elements solution\",\n    \"field_path\": \"solutions[0].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"2\",\n      \"unit\": \"G_PER_L\"\n  \
+    \  },\n    \"source_amount\": 2,\n    \"source_unit\": \"ml/l\",\n    \"source_stage\"\
+    : \"Post-sterilization trace-stock addition\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz925\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"togoM2459original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459\",\n\
+    \        \"source_locator\": \"$.components[2].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace elements solution\\\",\\n          \\\"\
+    volume\\\": 2,\\n          \\\"unit\\\": \\\"ml/l\\\"\",\n        \"snapshot_sha256\"\
+    : \"386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5\"\n     \
+    \ }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Source gives 2 mL/L\
+    \ of its exact nine-solute trace stock. Local 2 G_PER_L and solution 6129 are\
+    \ unsupported; that other five-solute stock has different compounds and rates.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Source gives 2 mL/L\
+    \ of its exact nine-solute trace stock. Local 2 G_PER_L and solution 6129 are\
+    \ unsupported; that other five-solute stock has different compounds and rates.\"\
+    \n      }\n    ],\n    \"arithmetic_and_scope\": \"Source gives 2 mL/L of its\
+    \ exact nine-solute trace stock. Local 2 G_PER_L and solution 6129 are unsupported;\
+    \ that other five-solute stock has different compounds and rates.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q19\",\n    \"ingredient_or_context\": \"KSCN solution\
+    \ (2 M -194 g/l)\",\n    \"field_path\": \"solutions[1].concentration\",\n   \
+    \ \"local\": {\n      \"value\": \"15\",\n      \"unit\": \"MILLIMOLAR\"\n   \
+    \ },\n    \"source_amount\": 15,\n    \"source_unit\": \"mM\",\n    \"source_stage\"\
+    : \"DSM 13531 / ARh1 selected growth condition\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz925\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"togoM2459original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459\",\n\
+    \        \"source_locator\": \"$.components[3].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"KSCN solution (2 M -194 g/l)\\\",\\n         \
+    \ \\\"volume\\\": 15,\\n          \\\"unit\\\": \\\"mM\\\"\",\n        \"snapshot_sha256\"\
+    : \"386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5\"\n     \
+    \ }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"solutions[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"MILLIMOLAR\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"15 mM is a\
+    \ working KSCN concentration (up to 15 mM in primary prose), not the concentration\
+    \ or volume dose of the 2 M stock. Preserve the numerical working limit with strain-specific\
+    \ scope, and represent the stock separately.\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"MILLIMOLAR\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"15 mM is a\
+    \ working KSCN concentration (up to 15 mM in primary prose), not the concentration\
+    \ or volume dose of the 2 M stock. Preserve the numerical working limit with strain-specific\
+    \ scope, and represent the stock separately.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"15 mM is a working KSCN concentration (up to 15 mM in primary prose), not\
+    \ the concentration or volume dose of the 2 M stock. Preserve the numerical working\
+    \ limit with strain-specific scope, and represent the stock separately.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q20\",\n    \"ingredient_or_context\": \"Distilled\
+    \ water\",\n    \"field_path\": \"ingredients[0].concentration\",\n    \"local\"\
+    : {\n      \"value\": \"3000.0\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"\
+    source_amount\": 1000,\n    \"source_unit\": \"ml\",\n    \"source_stage\": \"\
+    Separate KSCN stock preparation\",\n    \"primary_source_evidence_id\": \"dsmz925\"\
+    ,\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"togoM2459original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459\"\
+    ,\n        \"source_locator\": \"$.components[4].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1000,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\":\
+    \ \"386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5\"\n     \
+    \ }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3000.0\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\",\n        \"rationale\": \"1000 mL water\
+    \ belongs to the separately prepared KSCN stock. It is not another main water\
+    \ mass or a contribution to a 3000 g/L total.\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1000.0\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\",\n        \"rationale\": \"1000 mL water\
+    \ belongs to the separately prepared KSCN stock. It is not another main water\
+    \ mass or a contribution to a 3000 g/L total.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"1000 mL water belongs to the separately prepared KSCN stock. It is not another\
+    \ main water mass or a contribution to a 3000 g/L total.\"\n  },\n  {\n    \"\
+    quantity_id\": \"q21\",\n    \"ingredient_or_context\": \"KSCN\",\n    \"field_path\"\
+    : \"ingredients[16].concentration\",\n    \"local\": {\n      \"value\": \"194\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\": 194,\n    \"source_unit\"\
+    : \"g\",\n    \"source_stage\": \"KSCN stock, source declares 2 M / 194 g/L\"\
+    ,\n    \"primary_source_evidence_id\": \"dsmz925\",\n    \"decision\": \"correct\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM2459original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459\"\
+    ,\n        \"source_locator\": \"$.components[4].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"KSCN\\\",\\n          \\\"volume\\\": 194,\\n\
+    \          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[16].concentration\",\n      \
+    \  \"stored\": {\n          \"value\": \"194\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"194\
+    \ g is the stock batch mass and 194 g/L is the separately stated stock strength.\
+    \ It is not the main working concentration, which the selected branch bounds at\
+    \ 15 mM. Do not retain an undiluted main ingredient.\"\n      },\n      {\n  \
+    \      \"input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"194\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"194 g is the stock\
+    \ batch mass and 194 g/L is the separately stated stock strength. It is not the\
+    \ main working concentration, which the selected branch bounds at 15 mM. Do not\
+    \ retain an undiluted main ingredient.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"194 g is the stock batch mass and 194 g/L is the separately stated stock strength.\
+    \ It is not the main working concentration, which the selected branch bounds at\
+    \ 15 mM. Do not retain an undiluted main ingredient.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q22\",\n    \"ingredient_or_context\": \"Mineral-base sterilization\",\n \
+    \   \"field_path\": \"preparation_steps\",\n    \"local\": null,\n    \"source_amount\"\
+    : \"110; 20\",\n    \"source_unit\": \"°C; min\",\n    \"source_stage\": \"Mineral\
+    \ base in closed vessel\",\n    \"primary_source_evidence_id\": \"dsmz925\",\n\
+    \    \"decision\": \"add\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM2459original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459\"\
+    ,\n        \"source_locator\": \"$.comments[2]\",\n        \"exact_source_quote\"\
+    : \"110°C 20 min\",\n        \"snapshot_sha256\": \"386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"Add the exact\
+    \ base cycle and closed-vessel scope, not the trace-stock cycle.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Add the exact base cycle\
+    \ and closed-vessel scope, not the trace-stock cycle.\"\n      }\n    ],\n   \
+    \ \"arithmetic_and_scope\": \"Add the exact base cycle and closed-vessel scope,\
+    \ not the trace-stock cycle.\"\n  },\n  {\n    \"quantity_id\": \"q23\",\n   \
+    \ \"ingredient_or_context\": \"Mineral-base pH\",\n    \"field_path\": \"preparation_steps\"\
+    ,\n    \"local\": null,\n    \"source_amount\": \"about 10\",\n    \"source_unit\"\
+    : \"pH\",\n    \"source_stage\": \"After base sterilization\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz925\",\n    \"decision\": \"add\",\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"togoM2459original\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459\",\n    \
+    \    \"source_locator\": \"$.comments[2]\",\n        \"exact_source_quote\": \"\
+    pH after sterilization will about 10\",\n        \"snapshot_sha256\": \"386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"Approximate\
+    \ post-sterilization pH, not a precisely adjusted final value.\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Approximate post-sterilization\
+    \ pH, not a precisely adjusted final value.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Approximate post-sterilization pH, not a precisely adjusted final value.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q24\",\n    \"ingredient_or_context\": \"\
+    Trace-stock final pH\",\n    \"field_path\": \"preparation_steps\",\n    \"local\"\
+    : null,\n    \"source_amount\": \"3\",\n    \"source_unit\": \"pH\",\n    \"source_stage\"\
+    : \"Trace stock acid adjustment\",\n    \"primary_source_evidence_id\": \"dsmz925\"\
+    ,\n    \"decision\": \"add\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"togoM2459original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459\"\
+    ,\n        \"source_locator\": \"$.comments[5]\",\n        \"exact_source_quote\"\
+    : \"Final pH should be 3, add HCl if needed\",\n        \"snapshot_sha256\": \"\
+    386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n \
+    \       \"decision\": \"add\",\n        \"rationale\": \"Only the stock is acidified\
+    \ to pH 3; the HCl dose is unquantified.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Only the stock is acidified\
+    \ to pH 3; the HCl dose is unquantified.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Only the stock is acidified to pH 3; the HCl dose is unquantified.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q25\",\n    \"ingredient_or_context\": \"Trace-stock\
+    \ sterilization\",\n    \"field_path\": \"preparation_steps\",\n    \"local\"\
+    : null,\n    \"source_amount\": \"120; 20\",\n    \"source_unit\": \"°C; min\"\
+    ,\n    \"source_stage\": \"Trace stock only\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz925\",\n    \"decision\": \"add\",\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"togoM2459original\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459\",\n    \
+    \    \"source_locator\": \"$.comments[5]\",\n        \"exact_source_quote\": \"\
+    120°C 20 min\",\n        \"snapshot_sha256\": \"386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"Preserve this\
+    \ separate stock cycle and the subsequent aseptic stock additions.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Preserve this separate\
+    \ stock cycle and the subsequent aseptic stock additions.\"\n      }\n    ],\n\
+    \    \"arithmetic_and_scope\": \"Preserve this separate stock cycle and the subsequent\
+    \ aseptic stock additions.\"\n  },\n  {\n    \"quantity_id\": \"q26\",\n    \"\
+    ingredient_or_context\": \"Selected incubation temperature\",\n    \"field_path\"\
+    : \"preparation_steps\",\n    \"local\": null,\n    \"source_amount\": \"30\"\
+    ,\n    \"source_unit\": \"°C\",\n    \"source_stage\": \"DSM 13531 / ARh1 branch\"\
+    ,\n    \"primary_source_evidence_id\": \"dsmz925\",\n    \"decision\": \"add\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM2459original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459\"\
+    ,\n        \"source_locator\": \"$.comments[10]\",\n        \"exact_source_quote\"\
+    : \"incubation -30°C\",\n        \"snapshot_sha256\": \"386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"Add only within\
+    \ this selected source branch, not all strains or stocks.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Add only within this\
+    \ selected source branch, not all strains or stocks.\"\n      }\n    ],\n    \"\
+    arithmetic_and_scope\": \"Add only within this selected source branch, not all\
+    \ strains or stocks.\"\n  },\n  {\n    \"quantity_id\": \"q27\",\n    \"ingredient_or_context\"\
+    : \"Selected vessel ratio\",\n    \"field_path\": \"preparation_steps\",\n   \
+    \ \"local\": null,\n    \"source_amount\": \"1/10\",\n    \"source_unit\": \"\
+    liquid/air ratio\",\n    \"source_stage\": \"DSM 13531 / ARh1 branch\",\n    \"\
+    primary_source_evidence_id\": \"dsmz925\",\n    \"decision\": \"add\",\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"togoM2459original\",\n\
+    \        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459\"\
+    ,\n        \"source_locator\": \"$.comments[10]\",\n        \"exact_source_quote\"\
+    : \"1/10 liquid to air ratio\",\n        \"snapshot_sha256\": \"386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"Preserve the\
+    \ literal liquid-to-air ratio and static conical-flask context; it is not a gas\
+    \ composition.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Preserve the literal\
+    \ liquid-to-air ratio and static conical-flask context; it is not a gas composition.\"\
+    \n      }\n    ],\n    \"arithmetic_and_scope\": \"Preserve the literal liquid-to-air\
+    \ ratio and static conical-flask context; it is not a gas composition.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q28\",\n    \"ingredient_or_context\": \"Selected\
+    \ growth duration\",\n    \"field_path\": \"preparation_steps\",\n    \"local\"\
+    : null,\n    \"source_amount\": \"about 1\",\n    \"source_unit\": \"week\",\n\
+    \    \"source_stage\": \"DSM 13531 / ARh1 branch\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz925\",\n    \"decision\": \"add\",\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"togoM2459original\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459\",\n    \
+    \    \"source_locator\": \"$.comments[10]\",\n        \"exact_source_quote\":\
+    \ \"about 1 week\",\n        \"snapshot_sha256\": \"386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"Approximate\
+    \ source growth time, not a measured result from this review.\"\n      },\n  \
+    \    {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Approximate source growth\
+    \ time, not a measured result from this review.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Approximate source growth time, not a measured result from this review.\"\n\
+    \  },\n  {\n    \"quantity_id\": \"q29\",\n    \"ingredient_or_context\": \"Thiosulfate\
+    \ sterile stock\",\n    \"field_path\": \"solutions\",\n    \"local\": [\n   \
+    \   {\n        \"preferred_term\": \"Trace elements solution\",\n        \"term\"\
+    : {\n          \"id\": \"mediadive.solution:6129\",\n          \"label\": \"Trace\
+    \ elements solution\"\n        },\n        \"concentration\": {\n          \"\
+    value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"notes\"\
+    : \"See mediadive_6129_Trace_elements_solution.yaml for composition\",\n     \
+    \   \"name\": \"Unknown solution\"\n      },\n      {\n        \"preferred_term\"\
+    : \"KSCN solution (2 M -194 g/l)\",\n        \"composition\": [],\n        \"\
+    concentration\": {\n          \"value\": \"15\",\n          \"unit\": \"MILLIMOLAR\"\
+    \n        },\n        \"name\": \"Unknown solution\"\n      }\n    ],\n    \"\
+    source_amount\": \"2; 496\",\n    \"source_unit\": \"M; g/L\",\n    \"source_stage\"\
+    : \"Primary stock definition\",\n    \"primary_source_evidence_id\": \"dsmz925\"\
+    ,\n    \"decision\": \"add\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz925\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf\"\
+    ,\n        \"source_locator\": \"PDF page 1 sterile stocks or page 2 explicitly\
+    \ named Growth branch: Primary stock definition\",\n        \"exact_source_quote\"\
+    : \"Sodium thiosulfate pentahydrate (2 M - 496 g/l)\",\n        \"snapshot_sha256\"\
+    : \"7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb\",\n    \
+    \    \"parsed_text_sha256\": \"127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"solutions\",\n        \"stored\": [\n   \
+    \       {\n            \"preferred_term\": \"Trace elements solution\",\n    \
+    \        \"term\": {\n              \"id\": \"mediadive.solution:6129\",\n   \
+    \           \"label\": \"Trace elements solution\"\n            },\n         \
+    \   \"concentration\": {\n              \"value\": \"2\",\n              \"unit\"\
+    : \"G_PER_L\"\n            },\n            \"notes\": \"See mediadive_6129_Trace_elements_solution.yaml\
+    \ for composition\",\n            \"name\": \"Unknown solution\"\n          },\n\
+    \          {\n            \"preferred_term\": \"KSCN solution (2 M -194 g/l)\"\
+    ,\n            \"composition\": [],\n            \"concentration\": {\n      \
+    \        \"value\": \"15\",\n              \"unit\": \"MILLIMOLAR\"\n        \
+    \    },\n            \"name\": \"Unknown solution\"\n          }\n        ],\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Stock-only rates; no\
+    \ dose is assigned to the selected KSCN branch.\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": [\n          {\n\
+    \            \"preferred_term\": \"Trace elements solution\",\n            \"\
+    term\": {\n              \"id\": \"mediadive.solution:6129\",\n              \"\
+    label\": \"Trace elements solution\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"2\",\n              \"unit\": \"G_PER_L\"\n  \
+    \          },\n            \"notes\": \"See mediadive_6129_Trace_elements_solution.yaml\
+    \ for composition\",\n            \"name\": \"Unknown solution\"\n          },\n\
+    \          {\n            \"preferred_term\": \"KSCN solution (2 M -194 g/l)\"\
+    ,\n            \"composition\": [],\n            \"concentration\": {\n      \
+    \        \"value\": \"15\",\n              \"unit\": \"MILLIMOLAR\"\n        \
+    \    },\n            \"name\": \"Unknown solution\"\n          }\n        ],\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Stock-only rates; no\
+    \ dose is assigned to the selected KSCN branch.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Stock-only rates; no dose is assigned to the selected KSCN branch.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q30\",\n    \"ingredient_or_context\": \"KSCN sterile\
+    \ stock\",\n    \"field_path\": \"solutions\",\n    \"local\": [\n      {\n  \
+    \      \"preferred_term\": \"Trace elements solution\",\n        \"term\": {\n\
+    \          \"id\": \"mediadive.solution:6129\",\n          \"label\": \"Trace\
+    \ elements solution\"\n        },\n        \"concentration\": {\n          \"\
+    value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"notes\"\
+    : \"See mediadive_6129_Trace_elements_solution.yaml for composition\",\n     \
+    \   \"name\": \"Unknown solution\"\n      },\n      {\n        \"preferred_term\"\
+    : \"KSCN solution (2 M -194 g/l)\",\n        \"composition\": [],\n        \"\
+    concentration\": {\n          \"value\": \"15\",\n          \"unit\": \"MILLIMOLAR\"\
+    \n        },\n        \"name\": \"Unknown solution\"\n      }\n    ],\n    \"\
+    source_amount\": \"2; 194\",\n    \"source_unit\": \"M; g/L\",\n    \"source_stage\"\
+    : \"Primary stock definition\",\n    \"primary_source_evidence_id\": \"dsmz925\"\
+    ,\n    \"decision\": \"add\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz925\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf\"\
+    ,\n        \"source_locator\": \"PDF page 1 sterile stocks or page 2 explicitly\
+    \ named Growth branch: Primary stock definition\",\n        \"exact_source_quote\"\
+    : \"KSCN solution (2 M - 194 g/l)\",\n        \"snapshot_sha256\": \"7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb\"\
+    ,\n        \"parsed_text_sha256\": \"127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"solutions\",\n        \"stored\": [\n   \
+    \       {\n            \"preferred_term\": \"Trace elements solution\",\n    \
+    \        \"term\": {\n              \"id\": \"mediadive.solution:6129\",\n   \
+    \           \"label\": \"Trace elements solution\"\n            },\n         \
+    \   \"concentration\": {\n              \"value\": \"2\",\n              \"unit\"\
+    : \"G_PER_L\"\n            },\n            \"notes\": \"See mediadive_6129_Trace_elements_solution.yaml\
+    \ for composition\",\n            \"name\": \"Unknown solution\"\n          },\n\
+    \          {\n            \"preferred_term\": \"KSCN solution (2 M -194 g/l)\"\
+    ,\n            \"composition\": [],\n            \"concentration\": {\n      \
+    \        \"value\": \"15\",\n              \"unit\": \"MILLIMOLAR\"\n        \
+    \    },\n            \"name\": \"Unknown solution\"\n          }\n        ],\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Explicit stock strengths,\
+    \ distinct from the working 15 mM concentration.\"\n      },\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": [\n          {\n\
+    \            \"preferred_term\": \"Trace elements solution\",\n            \"\
+    term\": {\n              \"id\": \"mediadive.solution:6129\",\n              \"\
+    label\": \"Trace elements solution\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"2\",\n              \"unit\": \"G_PER_L\"\n  \
+    \          },\n            \"notes\": \"See mediadive_6129_Trace_elements_solution.yaml\
+    \ for composition\",\n            \"name\": \"Unknown solution\"\n          },\n\
+    \          {\n            \"preferred_term\": \"KSCN solution (2 M -194 g/l)\"\
+    ,\n            \"composition\": [],\n            \"concentration\": {\n      \
+    \        \"value\": \"15\",\n              \"unit\": \"MILLIMOLAR\"\n        \
+    \    },\n            \"name\": \"Unknown solution\"\n          }\n        ],\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Explicit stock strengths,\
+    \ distinct from the working 15 mM concentration.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Explicit stock strengths, distinct from the working 15 mM concentration.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q31\",\n    \"ingredient_or_context\": \"\
+    NH4Cl sterile stock\",\n    \"field_path\": \"solutions\",\n    \"local\": [\n\
+    \      {\n        \"preferred_term\": \"Trace elements solution\",\n        \"\
+    term\": {\n          \"id\": \"mediadive.solution:6129\",\n          \"label\"\
+    : \"Trace elements solution\"\n        },\n        \"concentration\": {\n    \
+    \      \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n      \
+    \  \"notes\": \"See mediadive_6129_Trace_elements_solution.yaml for composition\"\
+    ,\n        \"name\": \"Unknown solution\"\n      },\n      {\n        \"preferred_term\"\
+    : \"KSCN solution (2 M -194 g/l)\",\n        \"composition\": [],\n        \"\
+    concentration\": {\n          \"value\": \"15\",\n          \"unit\": \"MILLIMOLAR\"\
+    \n        },\n        \"name\": \"Unknown solution\"\n      }\n    ],\n    \"\
+    source_amount\": \"1; 53.5\",\n    \"source_unit\": \"M; g/L\",\n    \"source_stage\"\
+    : \"Primary stock definition\",\n    \"primary_source_evidence_id\": \"dsmz925\"\
+    ,\n    \"decision\": \"add\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz925\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf\"\
+    ,\n        \"source_locator\": \"PDF page 1 sterile stocks or page 2 explicitly\
+    \ named Growth branch: Primary stock definition\",\n        \"exact_source_quote\"\
+    : \"NH4Cl - (1 M - 53.5 g/l)\",\n        \"snapshot_sha256\": \"7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb\"\
+    ,\n        \"parsed_text_sha256\": \"127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"solutions\",\n        \"stored\": [\n   \
+    \       {\n            \"preferred_term\": \"Trace elements solution\",\n    \
+    \        \"term\": {\n              \"id\": \"mediadive.solution:6129\",\n   \
+    \           \"label\": \"Trace elements solution\"\n            },\n         \
+    \   \"concentration\": {\n              \"value\": \"2\",\n              \"unit\"\
+    : \"G_PER_L\"\n            },\n            \"notes\": \"See mediadive_6129_Trace_elements_solution.yaml\
+    \ for composition\",\n            \"name\": \"Unknown solution\"\n          },\n\
+    \          {\n            \"preferred_term\": \"KSCN solution (2 M -194 g/l)\"\
+    ,\n            \"composition\": [],\n            \"concentration\": {\n      \
+    \        \"value\": \"15\",\n              \"unit\": \"MILLIMOLAR\"\n        \
+    \    },\n            \"name\": \"Unknown solution\"\n          }\n        ],\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"A stock used by named\
+    \ alternate branches; no universal main addition.\"\n      },\n      {\n     \
+    \   \"input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": [\n          {\n\
+    \            \"preferred_term\": \"Trace elements solution\",\n            \"\
+    term\": {\n              \"id\": \"mediadive.solution:6129\",\n              \"\
+    label\": \"Trace elements solution\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"2\",\n              \"unit\": \"G_PER_L\"\n  \
+    \          },\n            \"notes\": \"See mediadive_6129_Trace_elements_solution.yaml\
+    \ for composition\",\n            \"name\": \"Unknown solution\"\n          },\n\
+    \          {\n            \"preferred_term\": \"KSCN solution (2 M -194 g/l)\"\
+    ,\n            \"composition\": [],\n            \"concentration\": {\n      \
+    \        \"value\": \"15\",\n              \"unit\": \"MILLIMOLAR\"\n        \
+    \    },\n            \"name\": \"Unknown solution\"\n          }\n        ],\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"A stock used by named\
+    \ alternate branches; no universal main addition.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"A stock used by named alternate branches; no universal main addition.\"\n\
+    \  },\n  {\n    \"quantity_id\": \"q32\",\n    \"ingredient_or_context\": \"KNO3\
+    \ sterile stock\",\n    \"field_path\": \"solutions\",\n    \"local\": [\n   \
+    \   {\n        \"preferred_term\": \"Trace elements solution\",\n        \"term\"\
+    : {\n          \"id\": \"mediadive.solution:6129\",\n          \"label\": \"Trace\
+    \ elements solution\"\n        },\n        \"concentration\": {\n          \"\
+    value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"notes\"\
+    : \"See mediadive_6129_Trace_elements_solution.yaml for composition\",\n     \
+    \   \"name\": \"Unknown solution\"\n      },\n      {\n        \"preferred_term\"\
+    : \"KSCN solution (2 M -194 g/l)\",\n        \"composition\": [],\n        \"\
+    concentration\": {\n          \"value\": \"15\",\n          \"unit\": \"MILLIMOLAR\"\
+    \n        },\n        \"name\": \"Unknown solution\"\n      }\n    ],\n    \"\
+    source_amount\": \"1; 101\",\n    \"source_unit\": \"M; g/L\",\n    \"source_stage\"\
+    : \"Primary stock definition\",\n    \"primary_source_evidence_id\": \"dsmz925\"\
+    ,\n    \"decision\": \"add\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz925\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf\"\
+    ,\n        \"source_locator\": \"PDF page 1 sterile stocks or page 2 explicitly\
+    \ named Growth branch: Primary stock definition\",\n        \"exact_source_quote\"\
+    : \"KNO3 - (1 M - 101 g/l)\",\n        \"snapshot_sha256\": \"7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb\"\
+    ,\n        \"parsed_text_sha256\": \"127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"solutions\",\n        \"stored\": [\n   \
+    \       {\n            \"preferred_term\": \"Trace elements solution\",\n    \
+    \        \"term\": {\n              \"id\": \"mediadive.solution:6129\",\n   \
+    \           \"label\": \"Trace elements solution\"\n            },\n         \
+    \   \"concentration\": {\n              \"value\": \"2\",\n              \"unit\"\
+    : \"G_PER_L\"\n            },\n            \"notes\": \"See mediadive_6129_Trace_elements_solution.yaml\
+    \ for composition\",\n            \"name\": \"Unknown solution\"\n          },\n\
+    \          {\n            \"preferred_term\": \"KSCN solution (2 M -194 g/l)\"\
+    ,\n            \"composition\": [],\n            \"concentration\": {\n      \
+    \        \"value\": \"15\",\n              \"unit\": \"MILLIMOLAR\"\n        \
+    \    },\n            \"name\": \"Unknown solution\"\n          }\n        ],\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"A stock used by named\
+    \ alternate branches; no universal main addition.\"\n      },\n      {\n     \
+    \   \"input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": [\n          {\n\
+    \            \"preferred_term\": \"Trace elements solution\",\n            \"\
+    term\": {\n              \"id\": \"mediadive.solution:6129\",\n              \"\
+    label\": \"Trace elements solution\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"2\",\n              \"unit\": \"G_PER_L\"\n  \
+    \          },\n            \"notes\": \"See mediadive_6129_Trace_elements_solution.yaml\
+    \ for composition\",\n            \"name\": \"Unknown solution\"\n          },\n\
+    \          {\n            \"preferred_term\": \"KSCN solution (2 M -194 g/l)\"\
+    ,\n            \"composition\": [],\n            \"concentration\": {\n      \
+    \        \"value\": \"15\",\n              \"unit\": \"MILLIMOLAR\"\n        \
+    \    },\n            \"name\": \"Unknown solution\"\n          }\n        ],\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"A stock used by named\
+    \ alternate branches; no universal main addition.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"A stock used by named alternate branches; no universal main addition.\"\n\
+    \  },\n  {\n    \"quantity_id\": \"q33\",\n    \"ingredient_or_context\": \"Magnesium\
+    \ stock strength and dose\",\n    \"field_path\": \"variants\",\n    \"local\"\
+    : null,\n    \"source_amount\": \"200; 1\",\n    \"source_unit\": \"g/L; mL/L\"\
+    ,\n    \"source_stage\": \"Primary late addition\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz925\",\n    \"decision\": \"add\",\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"dsmz925\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf\"\
+    ,\n        \"source_locator\": \"PDF page 1 sterile stocks or page 2 explicitly\
+    \ named Growth branch: Primary late addition\",\n        \"exact_source_quote\"\
+    : \"MgCl2 x 6 H2O (200.0 g/l) 1 ml/l\",\n        \"snapshot_sha256\": \"7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb\"\
+    ,\n        \"parsed_text_sha256\": \"127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"variants\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"The strength and dose\
+    \ imply 0.2 g per stated litre basis only; do not infer measured final medium\
+    \ volume.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"variants\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\",\n        \"rationale\": \"The strength and dose imply 0.2\
+    \ g per stated litre basis only; do not infer measured final medium volume.\"\n\
+    \      }\n    ],\n    \"arithmetic_and_scope\": \"The strength and dose imply\
+    \ 0.2 g per stated litre basis only; do not infer measured final medium volume.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q34\",\n    \"ingredient_or_context\": \"\
+    DSM 13532 KSCN branch\",\n    \"field_path\": \"variants\",\n    \"local\": null,\n\
+    \    \"source_amount\": \"15\",\n    \"source_unit\": \"mM\",\n    \"source_stage\"\
+    : \"DSM 13532 / ARh2\",\n    \"primary_source_evidence_id\": \"dsmz925\",\n  \
+    \  \"decision\": \"add\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz925\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf\"\
+    ,\n        \"source_locator\": \"PDF page 1 sterile stocks or page 2 explicitly\
+    \ named Growth branch: DSM 13532 / ARh2\",\n        \"exact_source_quote\": \"\
+    Growth with 15 mM KSCN: same conditions as for DSM 13531 = ARh1.\",\n        \"\
+    snapshot_sha256\": \"7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb\"\
+    ,\n        \"parsed_text_sha256\": \"127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"variants\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"The primary explicitly\
+    \ transfers DSM 13531 conditions to this separate branch; it does not add a second\
+    \ KSCN dose.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"variants\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\",\n        \"rationale\": \"The primary explicitly transfers\
+    \ DSM 13531 conditions to this separate branch; it does not add a second KSCN\
+    \ dose.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"The primary explicitly\
+    \ transfers DSM 13531 conditions to this separate branch; it does not add a second\
+    \ KSCN dose.\"\n  },\n  {\n    \"quantity_id\": \"q35\",\n    \"ingredient_or_context\"\
+    : \"DSM 13541 branch concentrations and vessel ratio\",\n    \"field_path\": \"\
+    variants\",\n    \"local\": null,\n    \"source_amount\": \"40; 5; 1/10\",\n \
+    \   \"source_unit\": \"mM; mM; liquid/air\",\n    \"source_stage\": \"DSM 13541\
+    \ / ARh1 thiosulfate branch\",\n    \"primary_source_evidence_id\": \"dsmz925\"\
+    ,\n    \"decision\": \"add\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz925\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf\"\
+    ,\n        \"source_locator\": \"PDF page 1 sterile stocks or page 2 explicitly\
+    \ named Growth branch: DSM 13541 / ARh1 thiosulfate branch\",\n        \"exact_source_quote\"\
+    : \"Growth with thiosulfate (40 mM) and NH4Cl (5 mM); in conical flasks 1/10 liquid/air\
+    \ ratio\",\n        \"snapshot_sha256\": \"7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb\"\
+    ,\n        \"parsed_text_sha256\": \"127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"variants\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Alternate thiosulfate/ammonium\
+    \ branch; do not add these to selected KSCN medium.\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"variants\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\",\n        \"rationale\": \"Alternate thiosulfate/ammonium\
+    \ branch; do not add these to selected KSCN medium.\"\n      }\n    ],\n    \"\
+    arithmetic_and_scope\": \"Alternate thiosulfate/ammonium branch; do not add these\
+    \ to selected KSCN medium.\"\n  },\n  {\n    \"quantity_id\": \"q36\",\n    \"\
+    ingredient_or_context\": \"DSM 13541 shaking\",\n    \"field_path\": \"variants\"\
+    ,\n    \"local\": null,\n    \"source_amount\": \"200\",\n    \"source_unit\"\
+    : \"rpm\",\n    \"source_stage\": \"DSM 13541 branch\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz925\",\n    \"decision\": \"add\",\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"dsmz925\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf\"\
+    ,\n        \"source_locator\": \"PDF page 1 sterile stocks or page 2 explicitly\
+    \ named Growth branch: DSM 13541 branch\",\n        \"exact_source_quote\": \"\
+    on shaker 200 rpm. Heavy sulfur formation\",\n        \"snapshot_sha256\": \"\
+    7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb\",\n        \"\
+    parsed_text_sha256\": \"127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"variants\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Shaking belongs to the\
+    \ thiosulfate branch, unlike static KSCN cultivation; continue until sulfur is\
+    \ utilized.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"variants\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\",\n        \"rationale\": \"Shaking belongs to the thiosulfate\
+    \ branch, unlike static KSCN cultivation; continue until sulfur is utilized.\"\
+    \n      }\n    ],\n    \"arithmetic_and_scope\": \"Shaking belongs to the thiosulfate\
+    \ branch, unlike static KSCN cultivation; continue until sulfur is utilized.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q37\",\n    \"ingredient_or_context\": \"\
+    DSM 13542 branch concentrations and ratio\",\n    \"field_path\": \"variants\"\
+    ,\n    \"local\": null,\n    \"source_amount\": \"40; 10; 1/5\",\n    \"source_unit\"\
+    : \"mM; mM; liquid/air\",\n    \"source_stage\": \"DSM 13542 / ARh2 thiosulfate\
+    \ branch\",\n    \"primary_source_evidence_id\": \"dsmz925\",\n    \"decision\"\
+    : \"add\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz925\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf\"\
+    ,\n        \"source_locator\": \"PDF page 1 sterile stocks or page 2 explicitly\
+    \ named Growth branch: DSM 13542 / ARh2 thiosulfate branch\",\n        \"exact_source_quote\"\
+    : \"Growth with thiosulfate (40 mM) and nitrate (10 mM); in conical flasks 1/5\
+    \ liquid/air\",\n        \"snapshot_sha256\": \"7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb\"\
+    ,\n        \"parsed_text_sha256\": \"127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"variants\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Keep this branch and\
+    \ its nitrate identity separate.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"variants\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\",\n        \"rationale\": \"Keep this branch and its nitrate\
+    \ identity separate.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"Keep\
+    \ this branch and its nitrate identity separate.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q38\",\n    \"ingredient_or_context\": \"DSM 13542 shaking and duration\"\
+    ,\n    \"field_path\": \"variants\",\n    \"local\": null,\n    \"source_amount\"\
+    : \"200; 3–4\",\n    \"source_unit\": \"rpm; days\",\n    \"source_stage\": \"\
+    DSM 13542 branch\",\n    \"primary_source_evidence_id\": \"dsmz925\",\n    \"\
+    decision\": \"add\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz925\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf\"\
+    ,\n        \"source_locator\": \"PDF page 1 sterile stocks or page 2 explicitly\
+    \ named Growth branch: DSM 13542 branch\",\n        \"exact_source_quote\": \"\
+    ratio on shaker 200 rpm. Growth takes 3-4 days\",\n        \"snapshot_sha256\"\
+    : \"7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb\",\n    \
+    \    \"parsed_text_sha256\": \"127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"variants\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Source-specific conditions,\
+    \ not universal medium parameters.\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"variants\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\",\n        \"rationale\": \"Source-specific conditions, not\
+    \ universal medium parameters.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Source-specific conditions, not universal medium parameters.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q39\",\n    \"ingredient_or_context\": \"DSM 13533 additions\"\
+    ,\n    \"field_path\": \"variants\",\n    \"local\": null,\n    \"source_amount\"\
+    : \"40; 5\",\n    \"source_unit\": \"mM; mM\",\n    \"source_stage\": \"DSM 13533\
+    \ / ALRh\",\n    \"primary_source_evidence_id\": \"dsmz925\",\n    \"decision\"\
+    : \"add\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz925\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf\"\
+    ,\n        \"source_locator\": \"PDF page 1 sterile stocks or page 2 explicitly\
+    \ named Growth branch: DSM 13533 / ALRh\",\n        \"exact_source_quote\": \"\
+    Strain ALRh: grows with 40 mM thiosulfate and 5 mM KSCN in\",\n        \"snapshot_sha256\"\
+    : \"7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb\",\n    \
+    \    \"parsed_text_sha256\": \"127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"variants\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Separate combined thiosulfate/KSCN\
+    \ branch.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"variants\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\",\n        \"rationale\": \"Separate combined thiosulfate/KSCN\
+    \ branch.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"Separate combined\
+    \ thiosulfate/KSCN branch.\"\n  },\n  {\n    \"quantity_id\": \"q40\",\n    \"\
+    ingredient_or_context\": \"DSM 13533 vessel ratio and shaking\",\n    \"field_path\"\
+    : \"variants\",\n    \"local\": null,\n    \"source_amount\": \"1/5; 200\",\n\
+    \    \"source_unit\": \"liquid/air; rpm\",\n    \"source_stage\": \"DSM 13533\
+    \ / ALRh\",\n    \"primary_source_evidence_id\": \"dsmz925\",\n    \"decision\"\
+    : \"add\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz925\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf\"\
+    ,\n        \"source_locator\": \"PDF page 1 sterile stocks or page 2 explicitly\
+    \ named Growth branch: DSM 13533 / ALRh\",\n        \"exact_source_quote\": \"\
+    conical flasks 1/5 liquid to air ratio at 200 rpm.\",\n        \"snapshot_sha256\"\
+    : \"7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb\",\n    \
+    \    \"parsed_text_sha256\": \"127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"variants\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Keep the branch-specific\
+    \ vessel and shaking conditions.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"variants\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\",\n        \"rationale\": \"Keep the branch-specific vessel\
+    \ and shaking conditions.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"\
+    Keep the branch-specific vessel and shaking conditions.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q41\",\n    \"ingredient_or_context\": \"DSM 14477 additions\",\n    \"field_path\"\
+    : \"variants\",\n    \"local\": null,\n    \"source_amount\": \"40; 5\",\n   \
+    \ \"source_unit\": \"mM; mM\",\n    \"source_stage\": \"DSM 14477 / ALM1\",\n\
+    \    \"primary_source_evidence_id\": \"dsmz925\",\n    \"decision\": \"add\",\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz925\",\n \
+    \       \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf\"\
+    ,\n        \"source_locator\": \"PDF page 1 sterile stocks or page 2 explicitly\
+    \ named Growth branch: DSM 14477 / ALM1\",\n        \"exact_source_quote\": \"\
+    Strain ALM1 grows with 40 mM thiosulphate and 5 mM KNO3\",\n        \"snapshot_sha256\"\
+    : \"7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb\",\n    \
+    \    \"parsed_text_sha256\": \"127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"variants\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Separate thiosulfate/nitrate\
+    \ branch.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"variants\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\",\n        \"rationale\": \"Separate thiosulfate/nitrate branch.\"\
+    \n      }\n    ],\n    \"arithmetic_and_scope\": \"Separate thiosulfate/nitrate\
+    \ branch.\"\n  },\n  {\n    \"quantity_id\": \"q42\",\n    \"ingredient_or_context\"\
+    : \"DSM 13738 / 13741 / 13742 additions\",\n    \"field_path\": \"variants\",\n\
+    \    \"local\": null,\n    \"source_amount\": \"40; 5; 0.5\",\n    \"source_unit\"\
+    : \"mM; mM; mM\",\n    \"source_stage\": \"Explicit three-strain primary branch\"\
+    ,\n    \"primary_source_evidence_id\": \"dsmz925\",\n    \"decision\": \"add\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz925\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf\"\
+    ,\n        \"source_locator\": \"PDF page 1 sterile stocks or page 2 explicitly\
+    \ named Growth branch: Explicit three-strain primary branch\",\n        \"exact_source_quote\"\
+    : \"Use 40 mM thiosulphate, 5 mM KNO3, reduce the amount of MgCl2 to 0.5 mM\"\
+    ,\n        \"snapshot_sha256\": \"7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb\"\
+    ,\n        \"parsed_text_sha256\": \"127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"variants\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"The reduced magnesium\
+    \ condition belongs only to the three named strains; no universal overwrite.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"variants\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\",\n        \"rationale\": \"The reduced magnesium condition\
+    \ belongs only to the three named strains; no universal overwrite.\"\n      }\n\
+    \    ],\n    \"arithmetic_and_scope\": \"The reduced magnesium condition belongs\
+    \ only to the three named strains; no universal overwrite.\"\n  },\n  {\n    \"\
+    quantity_id\": \"q43\",\n    \"ingredient_or_context\": \"DSM 13739 / 13740 additions\"\
+    ,\n    \"field_path\": \"variants\",\n    \"local\": null,\n    \"source_amount\"\
+    : \"80; 5; 0.5\",\n    \"source_unit\": \"mM; mM; mM\",\n    \"source_stage\"\
+    : \"Explicit two-strain primary branch\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz925\",\n    \"decision\": \"add\",\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"dsmz925\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf\"\
+    ,\n        \"source_locator\": \"PDF page 1 sterile stocks or page 2 explicitly\
+    \ named Growth branch: Explicit two-strain primary branch\",\n        \"exact_source_quote\"\
+    : \"Use 80 mM thiosulphate, 5 mM KNO3, reduce the amount of MgCl2 to 0.5 mM\"\
+    ,\n        \"snapshot_sha256\": \"7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb\"\
+    ,\n        \"parsed_text_sha256\": \"127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"variants\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Retain the different\
+    \ thiosulfate condition and reduced magnesium separately.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"variants\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\",\n        \"rationale\": \"Retain the different thiosulfate\
+    \ condition and reduced magnesium separately.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Retain the different thiosulfate condition and reduced magnesium separately.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q44\",\n    \"ingredient_or_context\": \"\
+    DSM 14786 gas mixture\",\n    \"field_path\": \"variants\",\n    \"local\": null,\n\
+    \    \"source_amount\": \"1\",\n    \"source_unit\": \"% oxygen in nitrogen gas\
+    \ phase; basis unqualified\",\n    \"source_stage\": \"DSM 14786 / ALEN1\",\n\
+    \    \"primary_source_evidence_id\": \"dsmz925\",\n    \"decision\": \"add\",\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz925\",\n \
+    \       \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf\"\
+    ,\n        \"source_locator\": \"PDF page 1 sterile stocks or page 2 explicitly\
+    \ named Growth branch: DSM 14786 / ALEN1\",\n        \"exact_source_quote\": \"\
+    with 1% oxygen in the gas phase.\",\n        \"snapshot_sha256\": \"7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb\"\
+    ,\n        \"parsed_text_sha256\": \"127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"variants\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Retain the literal gas-phase\
+    \ percentage, without imposing a mass or volume concentration enum.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"variants\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\",\n        \"rationale\": \"Retain the literal gas-phase percentage,\
+    \ without imposing a mass or volume concentration enum.\"\n      }\n    ],\n \
+    \   \"arithmetic_and_scope\": \"Retain the literal gas-phase percentage, without\
+    \ imposing a mass or volume concentration enum.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q45\",\n    \"ingredient_or_context\": \"DSM 14786 / 14788 additions\",\n\
+    \    \"field_path\": \"variants\",\n    \"local\": null,\n    \"source_amount\"\
+    : \"30; up to 5\",\n    \"source_unit\": \"mM; mM\",\n    \"source_stage\": \"\
+    Two separately named primary branches, same printed limits\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz925\",\n    \"decision\": \"add\",\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"dsmz925\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf\"\
+    ,\n        \"source_locator\": \"PDF page 1 sterile stocks or page 2 explicitly\
+    \ named Growth branch: Two separately named primary branches, same printed limits\"\
+    ,\n        \"exact_source_quote\": \"Use 30 mM thiosulphate and up to a maximum\
+    \ of 5 mM NH4Cl\",\n        \"snapshot_sha256\": \"7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb\"\
+    ,\n        \"parsed_text_sha256\": \"127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"variants\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"This identical clause\
+    \ occurs for ALEN1 and ALED; retain each source branch rather than infer equivalent\
+    \ taxonomy or growth.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"variants\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\",\n        \"rationale\": \"This identical clause occurs for\
+    \ ALEN1 and ALED; retain each source branch rather than infer equivalent taxonomy\
+    \ or growth.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This identical\
+    \ clause occurs for ALEN1 and ALED; retain each source branch rather than infer\
+    \ equivalent taxonomy or growth.\"\n  },\n  {\n    \"quantity_id\": \"q46\",\n\
+    \    \"ingredient_or_context\": \"DSM 14787 additions\",\n    \"field_path\":\
+    \ \"variants\",\n    \"local\": null,\n    \"source_amount\": \"30–40; 5–10\"\
+    ,\n    \"source_unit\": \"mM; mM\",\n    \"source_stage\": \"DSM 14787 / ALEN2\"\
+    ,\n    \"primary_source_evidence_id\": \"dsmz925\",\n    \"decision\": \"add\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz925\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium925.pdf\"\
+    ,\n        \"source_locator\": \"PDF page 1 sterile stocks or page 2 explicitly\
+    \ named Growth branch: DSM 14787 / ALEN2\",\n        \"exact_source_quote\": \"\
+    Use 30 - 40 mM thiosulphate and 5-10 mM KNO3\",\n        \"snapshot_sha256\":\
+    \ \"7383cc1cfa06ef7604dfaf2c4452b8fb737310e9742395dd8dee507f2e0ad8eb\",\n    \
+    \    \"parsed_text_sha256\": \"127686fe133e6285278c64843357a2f88cbd305df2aab4a575c1db373bab408b\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"variants\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Preserve both working\
+    \ ranges only for this branch.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml\"\
+    ,\n        \"field_path\": \"variants\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\",\n        \"rationale\": \"Preserve both working ranges only\
+    \ for this branch.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"Preserve\
+    \ both working ranges only for this branch.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q47\",\n    \"ingredient_or_context\": \"ZnSO4 x 7 H2O\",\n    \"field_path\"\
+    : \"composition[0].concentration\",\n    \"local\": {\n      \"value\": \"8.82\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\": \"8.82\",\n   \
+    \ \"source_unit\": \"g/L (historical derivative assertion only)\",\n    \"source_stage\"\
+    : \"Separate asserted solution 6129; no transfer to this medium\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz925\",\n    \"decision\": \"unsupported\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM2459original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459\",\n\
+    \        \"source_locator\": \"$.components[1].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2MoO4 x 2 H2O\\\",\\n          \\\"volume\\\"\
+    : 30,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5\"\n      },\n\
+    \      {\n        \"source_key\": \"solution6129\",\n        \"source_url\": \"\
+    https://mediadive.dsmz.de/rest/solution/6129\",\n        \"source_locator\": \"\
+    Current failed access response; no formulation content\",\n        \"exact_source_quote\"\
+    : \"503 Service Unavailable\",\n        \"snapshot_sha256\": \"7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286\"\
+    ,\n        \"parsed_text_sha256\": \"faaab31b60bbf7b70ce42f09e877323f089d642869fc97f1df61bd705662e46b\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/mediadive_6129_Trace_elements_solution.yaml\",\n\
+    \        \"field_path\": \"composition[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"8.82\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"Retain\
+    \ the historical assertion pending exact raw recovery. Decoded local report agreement\
+    \ is not raw/hash authentication, and this five-solute formula differs from the\
+    \ required primary trace stock. No receiving-medium concentration or independent\
+    \ final-volume claim is supported.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Retain the historical assertion pending exact raw recovery. Decoded local\
+    \ report agreement is not raw/hash authentication, and this five-solute formula\
+    \ differs from the required primary trace stock. No receiving-medium concentration\
+    \ or independent final-volume claim is supported.\",\n    \"historical_claim\"\
+    : {\n      \"reference\": \"https://mediadive.dsmz.de/rest/solution/6129\",\n\
+    \      \"supports\": \"SUPPORT\",\n      \"snippet\": \"{\\n                \\\
+    \"recipe_order\\\": 2,\\n                \\\"compound\\\": \\\"ZnSO4 x 7 H2O\\\
+    \",\\n                \\\"compound_id\\\": 35,\\n                \\\"solution\\\
+    \": null,\\n                \\\"solution_id\\\": null,\\n                \\\"\
+    condition\\\": null,\\n                \\\"attribute\\\": null,\\n           \
+    \     \\\"amount\\\": 8.82,\\n                \\\"unit\\\": \\\"g\\\",\\n    \
+    \            \\\"g_l\\\": 8.82,\\n                \\\"mmol_l\\\": 30.6718,\\n\
+    \                \\\"optional\\\": 0\\n            }\",\n      \"explanation\"\
+    : \"Concentration evidence for composition[0].concentration (ZnSO4 x 7 H2O) in\
+    \ MediaDive solution 6129; locator=$.data.recipe[0] (compound_id=35). Provider\
+    \ explicitly reports g_l=8.82. Arithmetic check: 8.82 g * 1 g/g / (1000 ml / 1000\
+    \ ml per L) = 8.82 g/L, consistent with the reported value at its precision. Evidence\
+    \ supports the provider-declared concentration within this solution, not a concentration\
+    \ in a receiving medium or an independently measured final volume. Water addition\
+    \ alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:\
+    \ \\\"volume\\\": 1000. Retrieved 2026-10-07T10:00:25.970726+00:00; response SHA256=4ee096d7a46e81f2dc9699c9abd6b7d4721d60dd543b419c417ca5bd818bff99.\"\
+    \n    },\n    \"historical_derivative_path\": \"reports/ingredient_concentration_curation/20261007-mediadive-solutions-4500-4770/records/bacterial/mediadive_6129_Trace_elements_solution.yaml.md\"\
+    ,\n    \"historical_derivative_sha256\": \"6329f7f95876e28ae96ba1f6856876696b1d82132fa11b2368d1b84535ec16d3\"\
+    \n  },\n  {\n    \"quantity_id\": \"q48\",\n    \"ingredient_or_context\": \"\
+    MnCl2 x 4 H2O\",\n    \"field_path\": \"composition[1].concentration\",\n    \"\
+    local\": {\n      \"value\": \"1.44\",\n      \"unit\": \"G_PER_L\"\n    },\n\
+    \    \"source_amount\": \"1.44\",\n    \"source_unit\": \"g/L (historical derivative\
+    \ assertion only)\",\n    \"source_stage\": \"Separate asserted solution 6129;\
+    \ no transfer to this medium\",\n    \"primary_source_evidence_id\": \"dsmz925\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"togoM2459original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459\"\
+    ,\n        \"source_locator\": \"$.components[1].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2MoO4 x 2 H2O\\\",\\n          \\\"volume\\\"\
+    : 30,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5\"\n      },\n\
+    \      {\n        \"source_key\": \"solution6129\",\n        \"source_url\": \"\
+    https://mediadive.dsmz.de/rest/solution/6129\",\n        \"source_locator\": \"\
+    Current failed access response; no formulation content\",\n        \"exact_source_quote\"\
+    : \"503 Service Unavailable\",\n        \"snapshot_sha256\": \"7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286\"\
+    ,\n        \"parsed_text_sha256\": \"faaab31b60bbf7b70ce42f09e877323f089d642869fc97f1df61bd705662e46b\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/mediadive_6129_Trace_elements_solution.yaml\",\n\
+    \        \"field_path\": \"composition[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.44\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"Retain\
+    \ the historical assertion pending exact raw recovery. Decoded local report agreement\
+    \ is not raw/hash authentication, and this five-solute formula differs from the\
+    \ required primary trace stock. No receiving-medium concentration or independent\
+    \ final-volume claim is supported.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Retain the historical assertion pending exact raw recovery. Decoded local\
+    \ report agreement is not raw/hash authentication, and this five-solute formula\
+    \ differs from the required primary trace stock. No receiving-medium concentration\
+    \ or independent final-volume claim is supported.\",\n    \"historical_claim\"\
+    : {\n      \"reference\": \"https://mediadive.dsmz.de/rest/solution/6129\",\n\
+    \      \"supports\": \"SUPPORT\",\n      \"snippet\": \"{\\n                \\\
+    \"recipe_order\\\": 3,\\n                \\\"compound\\\": \\\"MnCl2 x 4 H2O\\\
+    \",\\n                \\\"compound_id\\\": 36,\\n                \\\"solution\\\
+    \": null,\\n                \\\"solution_id\\\": null,\\n                \\\"\
+    condition\\\": null,\\n                \\\"attribute\\\": null,\\n           \
+    \     \\\"amount\\\": 1.44,\\n                \\\"unit\\\": \\\"g\\\",\\n    \
+    \            \\\"g_l\\\": 1.44,\\n                \\\"mmol_l\\\": 7.27622,\\n\
+    \                \\\"optional\\\": 0\\n            }\",\n      \"explanation\"\
+    : \"Concentration evidence for composition[1].concentration (MnCl2 x 4 H2O) in\
+    \ MediaDive solution 6129; locator=$.data.recipe[1] (compound_id=36). Provider\
+    \ explicitly reports g_l=1.44. Arithmetic check: 1.44 g * 1 g/g / (1000 ml / 1000\
+    \ ml per L) = 1.44 g/L, consistent with the reported value at its precision. Evidence\
+    \ supports the provider-declared concentration within this solution, not a concentration\
+    \ in a receiving medium or an independently measured final volume. Water addition\
+    \ alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:\
+    \ \\\"volume\\\": 1000. Retrieved 2026-10-07T10:00:25.970726+00:00; response SHA256=4ee096d7a46e81f2dc9699c9abd6b7d4721d60dd543b419c417ca5bd818bff99.\"\
+    \n    },\n    \"historical_derivative_path\": \"reports/ingredient_concentration_curation/20261007-mediadive-solutions-4500-4770/records/bacterial/mediadive_6129_Trace_elements_solution.yaml.md\"\
+    ,\n    \"historical_derivative_sha256\": \"6329f7f95876e28ae96ba1f6856876696b1d82132fa11b2368d1b84535ec16d3\"\
+    \n  },\n  {\n    \"quantity_id\": \"q49\",\n    \"ingredient_or_context\": \"\
+    MoO3\",\n    \"field_path\": \"composition[2].concentration\",\n    \"local\"\
+    : {\n      \"value\": \"0.71\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : \"0.71\",\n    \"source_unit\": \"g/L (historical derivative assertion only)\"\
+    ,\n    \"source_stage\": \"Separate asserted solution 6129; no transfer to this\
+    \ medium\",\n    \"primary_source_evidence_id\": \"dsmz925\",\n    \"decision\"\
+    : \"unsupported\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM2459original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459\"\
+    ,\n        \"source_locator\": \"$.components[1].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2MoO4 x 2 H2O\\\",\\n          \\\"volume\\\"\
+    : 30,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5\"\n      },\n\
+    \      {\n        \"source_key\": \"solution6129\",\n        \"source_url\": \"\
+    https://mediadive.dsmz.de/rest/solution/6129\",\n        \"source_locator\": \"\
+    Current failed access response; no formulation content\",\n        \"exact_source_quote\"\
+    : \"503 Service Unavailable\",\n        \"snapshot_sha256\": \"7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286\"\
+    ,\n        \"parsed_text_sha256\": \"faaab31b60bbf7b70ce42f09e877323f089d642869fc97f1df61bd705662e46b\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/mediadive_6129_Trace_elements_solution.yaml\",\n\
+    \        \"field_path\": \"composition[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.71\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"Retain\
+    \ the historical assertion pending exact raw recovery. Decoded local report agreement\
+    \ is not raw/hash authentication, and this five-solute formula differs from the\
+    \ required primary trace stock. No receiving-medium concentration or independent\
+    \ final-volume claim is supported.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Retain the historical assertion pending exact raw recovery. Decoded local\
+    \ report agreement is not raw/hash authentication, and this five-solute formula\
+    \ differs from the required primary trace stock. No receiving-medium concentration\
+    \ or independent final-volume claim is supported.\",\n    \"historical_claim\"\
+    : {\n      \"reference\": \"https://mediadive.dsmz.de/rest/solution/6129\",\n\
+    \      \"supports\": \"SUPPORT\",\n      \"snippet\": \"{\\n                \\\
+    \"recipe_order\\\": 4,\\n                \\\"compound\\\": \\\"MoO3\\\",\\n  \
+    \              \\\"compound_id\\\": 235,\\n                \\\"solution\\\": null,\\\
+    n                \\\"solution_id\\\": null,\\n                \\\"condition\\\"\
+    : null,\\n                \\\"attribute\\\": null,\\n                \\\"amount\\\
+    \": 0.71,\\n                \\\"unit\\\": \\\"g\\\",\\n                \\\"g_l\\\
+    \": 0.71,\\n                \\\"mmol_l\\\": 4.93227,\\n                \\\"optional\\\
+    \": 0\\n            }\",\n      \"explanation\": \"Concentration evidence for\
+    \ composition[2].concentration (MoO3) in MediaDive solution 6129; locator=$.data.recipe[2]\
+    \ (compound_id=235). Provider explicitly reports g_l=0.71. Arithmetic check: 0.71\
+    \ g * 1 g/g / (1000 ml / 1000 ml per L) = 0.71 g/L, consistent with the reported\
+    \ value at its precision. Evidence supports the provider-declared concentration\
+    \ within this solution, not a concentration in a receiving medium or an independently\
+    \ measured final volume. Water addition alone is not used to infer a final volume.\
+    \ Additional exact excerpt at $.data.volume: \\\"volume\\\": 1000. Retrieved 2026-10-07T10:00:25.970726+00:00;\
+    \ response SHA256=4ee096d7a46e81f2dc9699c9abd6b7d4721d60dd543b419c417ca5bd818bff99.\"\
+    \n    },\n    \"historical_derivative_path\": \"reports/ingredient_concentration_curation/20261007-mediadive-solutions-4500-4770/records/bacterial/mediadive_6129_Trace_elements_solution.yaml.md\"\
+    ,\n    \"historical_derivative_sha256\": \"6329f7f95876e28ae96ba1f6856876696b1d82132fa11b2368d1b84535ec16d3\"\
+    \n  },\n  {\n    \"quantity_id\": \"q50\",\n    \"ingredient_or_context\": \"\
+    CuSO4 x 5 H2O\",\n    \"field_path\": \"composition[3].concentration\",\n    \"\
+    local\": {\n      \"value\": \"1.57\",\n      \"unit\": \"G_PER_L\"\n    },\n\
+    \    \"source_amount\": \"1.57\",\n    \"source_unit\": \"g/L (historical derivative\
+    \ assertion only)\",\n    \"source_stage\": \"Separate asserted solution 6129;\
+    \ no transfer to this medium\",\n    \"primary_source_evidence_id\": \"dsmz925\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"togoM2459original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459\"\
+    ,\n        \"source_locator\": \"$.components[1].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2MoO4 x 2 H2O\\\",\\n          \\\"volume\\\"\
+    : 30,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5\"\n      },\n\
+    \      {\n        \"source_key\": \"solution6129\",\n        \"source_url\": \"\
+    https://mediadive.dsmz.de/rest/solution/6129\",\n        \"source_locator\": \"\
+    Current failed access response; no formulation content\",\n        \"exact_source_quote\"\
+    : \"503 Service Unavailable\",\n        \"snapshot_sha256\": \"7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286\"\
+    ,\n        \"parsed_text_sha256\": \"faaab31b60bbf7b70ce42f09e877323f089d642869fc97f1df61bd705662e46b\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/mediadive_6129_Trace_elements_solution.yaml\",\n\
+    \        \"field_path\": \"composition[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.57\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"Retain\
+    \ the historical assertion pending exact raw recovery. Decoded local report agreement\
+    \ is not raw/hash authentication, and this five-solute formula differs from the\
+    \ required primary trace stock. No receiving-medium concentration or independent\
+    \ final-volume claim is supported.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Retain the historical assertion pending exact raw recovery. Decoded local\
+    \ report agreement is not raw/hash authentication, and this five-solute formula\
+    \ differs from the required primary trace stock. No receiving-medium concentration\
+    \ or independent final-volume claim is supported.\",\n    \"historical_claim\"\
+    : {\n      \"reference\": \"https://mediadive.dsmz.de/rest/solution/6129\",\n\
+    \      \"supports\": \"SUPPORT\",\n      \"snippet\": \"{\\n                \\\
+    \"recipe_order\\\": 5,\\n                \\\"compound\\\": \\\"CuSO4 x 5 H2O\\\
+    \",\\n                \\\"compound_id\\\": 121,\\n                \\\"solution\\\
+    \": null,\\n                \\\"solution_id\\\": null,\\n                \\\"\
+    condition\\\": null,\\n                \\\"attribute\\\": null,\\n           \
+    \     \\\"amount\\\": 1.57,\\n                \\\"unit\\\": \\\"g\\\",\\n    \
+    \            \\\"g_l\\\": 1.57,\\n                \\\"mmol_l\\\": 6.2879,\\n \
+    \               \\\"optional\\\": 0\\n            }\",\n      \"explanation\"\
+    : \"Concentration evidence for composition[3].concentration (CuSO4 x 5 H2O) in\
+    \ MediaDive solution 6129; locator=$.data.recipe[3] (compound_id=121). Provider\
+    \ explicitly reports g_l=1.57. Arithmetic check: 1.57 g * 1 g/g / (1000 ml / 1000\
+    \ ml per L) = 1.57 g/L, consistent with the reported value at its precision. Evidence\
+    \ supports the provider-declared concentration within this solution, not a concentration\
+    \ in a receiving medium or an independently measured final volume. Water addition\
+    \ alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:\
+    \ \\\"volume\\\": 1000. Retrieved 2026-10-07T10:00:25.970726+00:00; response SHA256=4ee096d7a46e81f2dc9699c9abd6b7d4721d60dd543b419c417ca5bd818bff99.\"\
+    \n    },\n    \"historical_derivative_path\": \"reports/ingredient_concentration_curation/20261007-mediadive-solutions-4500-4770/records/bacterial/mediadive_6129_Trace_elements_solution.yaml.md\"\
+    ,\n    \"historical_derivative_sha256\": \"6329f7f95876e28ae96ba1f6856876696b1d82132fa11b2368d1b84535ec16d3\"\
+    \n  },\n  {\n    \"quantity_id\": \"q51\",\n    \"ingredient_or_context\": \"\
+    Co(NO3)2 x 6 H2O\",\n    \"field_path\": \"composition[4].concentration\",\n \
+    \   \"local\": {\n      \"value\": \"0.49\",\n      \"unit\": \"G_PER_L\"\n  \
+    \  },\n    \"source_amount\": \"0.49\",\n    \"source_unit\": \"g/L (historical\
+    \ derivative assertion only)\",\n    \"source_stage\": \"Separate asserted solution\
+    \ 6129; no transfer to this medium\",\n    \"primary_source_evidence_id\": \"\
+    dsmz925\",\n    \"decision\": \"unsupported\",\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"togoM2459original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459\",\n\
+    \        \"source_locator\": \"$.components[1].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2MoO4 x 2 H2O\\\",\\n          \\\"volume\\\"\
+    : 30,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5\"\n      },\n\
+    \      {\n        \"source_key\": \"solution6129\",\n        \"source_url\": \"\
+    https://mediadive.dsmz.de/rest/solution/6129\",\n        \"source_locator\": \"\
+    Current failed access response; no formulation content\",\n        \"exact_source_quote\"\
+    : \"503 Service Unavailable\",\n        \"snapshot_sha256\": \"7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286\"\
+    ,\n        \"parsed_text_sha256\": \"faaab31b60bbf7b70ce42f09e877323f089d642869fc97f1df61bd705662e46b\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/mediadive_6129_Trace_elements_solution.yaml\",\n\
+    \        \"field_path\": \"composition[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.49\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"Retain\
+    \ the historical assertion pending exact raw recovery. Decoded local report agreement\
+    \ is not raw/hash authentication, and this five-solute formula differs from the\
+    \ required primary trace stock. No receiving-medium concentration or independent\
+    \ final-volume claim is supported.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Retain the historical assertion pending exact raw recovery. Decoded local\
+    \ report agreement is not raw/hash authentication, and this five-solute formula\
+    \ differs from the required primary trace stock. No receiving-medium concentration\
+    \ or independent final-volume claim is supported.\",\n    \"historical_claim\"\
+    : {\n      \"reference\": \"https://mediadive.dsmz.de/rest/solution/6129\",\n\
+    \      \"supports\": \"SUPPORT\",\n      \"snippet\": \"{\\n                \\\
+    \"recipe_order\\\": 6,\\n                \\\"compound\\\": \\\"Co(NO3)2 x 6 H2O\\\
+    \",\\n                \\\"compound_id\\\": 541,\\n                \\\"solution\\\
+    \": null,\\n                \\\"solution_id\\\": null,\\n                \\\"\
+    condition\\\": null,\\n                \\\"attribute\\\": null,\\n           \
+    \     \\\"amount\\\": 0.49,\\n                \\\"unit\\\": \\\"g\\\",\\n    \
+    \            \\\"g_l\\\": 0.49,\\n                \\\"mmol_l\\\": 1.68365,\\n\
+    \                \\\"optional\\\": 0\\n            }\",\n      \"explanation\"\
+    : \"Concentration evidence for composition[4].concentration (Co(NO3)2 x 6 H2O)\
+    \ in MediaDive solution 6129; locator=$.data.recipe[4] (compound_id=541). Provider\
+    \ explicitly reports g_l=0.49. Arithmetic check: 0.49 g * 1 g/g / (1000 ml / 1000\
+    \ ml per L) = 0.49 g/L, consistent with the reported value at its precision. Evidence\
+    \ supports the provider-declared concentration within this solution, not a concentration\
+    \ in a receiving medium or an independently measured final volume. Water addition\
+    \ alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:\
+    \ \\\"volume\\\": 1000. Retrieved 2026-10-07T10:00:25.970726+00:00; response SHA256=4ee096d7a46e81f2dc9699c9abd6b7d4721d60dd543b419c417ca5bd818bff99.\"\
+    \n    },\n    \"historical_derivative_path\": \"reports/ingredient_concentration_curation/20261007-mediadive-solutions-4500-4770/records/bacterial/mediadive_6129_Trace_elements_solution.yaml.md\"\
+    ,\n    \"historical_derivative_sha256\": \"6329f7f95876e28ae96ba1f6856876696b1d82132fa11b2368d1b84535ec16d3\"\
+    \n  },\n  {\n    \"quantity_id\": \"q52\",\n    \"ingredient_or_context\": \"\
+    See source for composition placeholder\",\n    \"field_path\": \"ingredients[0].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"variable\",\n      \"unit\": \"VARIABLE\"\
+    \n    },\n    \"source_amount\": null,\n    \"source_unit\": null,\n    \"source_stage\"\
+    : \"Separate solution 6129 placeholder\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz925\",\n    \"decision\": \"unsupported\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM2459original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2459\",\n\
+    \        \"source_locator\": \"$.components[1].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2MoO4 x 2 H2O\\\",\\n          \\\"volume\\\"\
+    : 30,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    386f37584a86f172f2328355c806d74dc49be9699229b79e5094a0af44292ec5\"\n      },\n\
+    \      {\n        \"source_key\": \"solution6129\",\n        \"source_url\": \"\
+    https://mediadive.dsmz.de/rest/solution/6129\",\n        \"source_locator\": \"\
+    Current failed access response; no formulation content\",\n        \"exact_source_quote\"\
+    : \"503 Service Unavailable\",\n        \"snapshot_sha256\": \"7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286\"\
+    ,\n        \"parsed_text_sha256\": \"faaab31b60bbf7b70ce42f09e877323f089d642869fc97f1df61bd705662e46b\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/mediadive_6129_Trace_elements_solution.yaml\",\n\
+    \        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"VARIABLE\
+    \ is an unquantified placeholder, not another solute or quantified dose. The source\
+    \ request supplies no formula; preserve its unresolved status separately from\
+    \ the five derivative composition claims.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"VARIABLE is an unquantified placeholder, not another solute or quantified\
+    \ dose. The source request supplies no formula; preserve its unresolved status\
+    \ separately from the five derivative composition claims.\"\n  }\n]"
+findings:
+- finding_id: f1
+  issue_key: culturemech.009037.stock-unit-collapse
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Stock batches, milligram units and working doses are conflated
+  description: The trace stock’s nine mg quantities appear as g/L numerals in the
+    main recipe; three separate water stages collapse into a mass concentration. The
+    late 1 mL/L magnesium and 2 mL/L trace doses are mass rates, the trace identity
+    points to an incompatible five-solute stock, and undiluted KSCN stock remains
+    a main ingredient.
+  target_ids:
+  - CultureMech:009037
+  field_paths:
+  - ingredients
+  - solutions
+  evidence_ids:
+  - dsmz925
+  - togo2459
+  - quantity-inventory
+  - dependency6129
+  - owner-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.009037.nickel-hydrate
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Nickel hexahydrate is assigned an anhydrous salt
+  description: Both layers explicitly name NiCl2 x 6H2O but use CHEBI:34887 nickel
+    dichloride in primary and secondary slots. Cobalt CHEBI:53503 is correctly hydrated
+    and must not be flagged by analogy.
+  target_ids:
+  - CultureMech:009037
+  field_paths:
+  - ingredients[10].term
+  - ingredients[10].mediaingredientmech_chebi_term
+  evidence_ids:
+  - dsmz925
+  - chebi34887
+  - chebi53503
+  - owner-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.009037.preparation-branches
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Separate preparation cycles and strain conditions are omitted
+  description: Neither local layer preserves the distinct mineral/trace sterilization
+    cycles, pH endpoints or selected static DSM 13531 conditions. Broad primary strain
+    branches cannot be merged into one recipe.
+  target_ids:
+  - CultureMech:009037
+  field_paths:
+  - preparation_steps
+  - solutions
+  - variants
+  evidence_ids:
+  - dsmz925
+  - togo2459
+  - quantity-inventory
+  - owner-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: culturemech.009037.classification
+  category: scope
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Defined chemical formulation is labeled complex and undefined
+  description: COMPLEX/UNDEFINED conflicts with the explicitly named inorganic/KSCN
+    components. The high_metal derivation also needs reassessment after unit and stock
+    repair, without assuming its eventual Boolean result.
+  target_ids:
+  - CultureMech:009037
+  field_paths:
+  - medium_type
+  - composition_type
+  - high_metal
+  evidence_ids:
+  - record
+  - dsmz925
+  - writer-2
+  - writer-3
+  - owner-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f5
+  issue_key: culturemech.009037.stock-history-unresolved
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Linked stock amounts are only derivatively authenticated
+  description: Five historical solution 6129 snippets agree with the local decoded
+    report; their cited raw response is not recovered, and the current endpoint fails.
+    No amount from that separate stock may be treated as verified or transferred into
+    the DSMZ trace formula.
+  target_ids:
+  - CultureMech:009037
+  field_paths:
+  - solutions[0].term
+  evidence_ids:
+  - dependency6129
+  - historical6129-report
+  - solution6129-attempt
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4.3
+  native_severity: P4
+  normalization_reason: P4 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Restore the exact mineral base, separately prepared nine-solute trace
+    stock, late stock doses and selected KSCN working concentration. Preserve literal
+    EDTA/iron mg values, unspecified acid dose and unknown physical final volume;
+    reconcile the wrong linked stock before regeneration.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:009037
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Verify and assign the source-matching nickel hexahydrate identity while
+    retaining the corrected 20 mg stock-batch amount. Attach exact form evidence;
+    leave correct cobalt hydration intact.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:009037
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Add source-stage preparation and the selected KSCN branch with exact
+    evidence. Retain other primary branches as separately scoped variants/context,
+    including their separate gas, shaking and reduced-magnesium conditions; do not
+    assert growth or taxonomy without the required evidence.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:009037
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Reconcile the defined/complex classification against the selected formulation
+    and rerun authorized metal derivation only after corrected source quantities are
+    in place.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:009037
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a5
+  description: Preserve original claims/times and recover exact historical raw if
+    needed; otherwise document the unresolved correspondence while correcting the
+    medium to its available primary stock definition.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:009037
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Exact current solution 6129 access returned HTTP 503; original failed attempts are
+  retained and do not prove source nonexistence.
+- Exact current solution 6129 access returned HTTP 503; original failed attempts are
+  retained and do not prove source nonexistence.
+- Current exact MediaDive 925 API returned 503; the full current DSMZ primary is available,
+  so this optional provider failure does not make primary amounts unavailable.
+- The separately preserved exact API retry also returned 503; it does not supersede
+  or authenticate any successful historical payload.
+- This scientific assessment preceded formal validation and saving; their results
+  are recorded separately.
+- Required historical solution 6129 raw correspondence remains unavailable. Current
+  DSMZ primary and TOGO selected branch are available; failed optional API requests
+  do not invalidate those sources. No measured final main or acid-adjusted stock volume
+  is inferred.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-036
+- generated-medium
+```
